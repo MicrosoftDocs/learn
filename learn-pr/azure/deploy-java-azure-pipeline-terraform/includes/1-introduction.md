@@ -1,25 +1,27 @@
-Imagine you're an infrastructure manager and have been asked to provision your Azure resources using Terraform. Once you've created your project, you plan to build/deploy your application with GitHub Actions.
+Imagine that you're an infrastructure manager and you've been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application with GitHub Actions.
 
-## Provision, Build, and Deploy tracks
+## Provision, build, and deploy tracks
 
-Automation typically uses three tracks - **Provision**, **Build**, and **Deploy**.
-Each track can have one or more **Pipelines**.
-In the below image, there are multiple pipelines in the "Provision" track with each pipeline focusing on the infrastructure for a team.
+Automation ordinarily uses three tracks: *Provision*, *Build*, and *Deploy*. Each track can have one or more *pipelines*. 
 
-![track types.](../media/1-tracks.png)
+The following image displays multiple pipelines in the **Provision** track, with each pipeline focusing on the infrastructure for a team.
 
-In this module's scenario, you'll use all three tracks - **PROVISIONING**, **BUILD**, and **DEPLOY** by implementing multiple pipelines.
+![Screenshot highlighting the Provision pipeline elements for the various teams.](../media/1-tracks.png)
 
-There are several tools available to help you achieve these pipelines. As you're already using GitHub for your code repository, you'll use GitHub Actions with Terraform to provide the automation you need.
+In this module's scenario, you'll use all three tracks by implementing multiple pipelines.
 
-## Learning Goals
+Several tools are available to help you work with these pipelines. Because you're already using GitHub for your code repository, you can use GitHub Actions with Terraform to provide the automation you need.
 
-By the end of this module, you can:
+## Learning objectives
 
-- Create a Terraform configuration for your Azure resources
-- Provision your Infrastructure and deploy your application to Azure
-- Set up your project for Continuous Integration and Deployment (CI/CD)
+In this module, you will:
+- Create a Terraform configuration for your Azure resources.
+- Provision your infrastructure and deploy it to Azure.
+- Set up your project for continuous integration and continuous delivery (CI/CD) by using GitHub Actions.
 
 ## Prerequisites
 
-As you complete the exercises in this module, you'll use a personal Azure and GitHub account.
+- An Azure subscription
+- A GitHub account
+- Basic knowledge of software development
+- Basic knowledge of managing and provisioning Azure resources
