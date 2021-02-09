@@ -27,7 +27,7 @@ az ad sp delete --id <your Service Principal Name>
 ```
 
 > [!IMPORTANT]
-> To avoid accruing unwanted charges, you must de-provision the Azure resources and service principal that you used in this module.
+> To avoid accruing unwanted charges, you must deprovision the Azure resources and service principal that you used in this module.
 
 ## Additional resources
 
