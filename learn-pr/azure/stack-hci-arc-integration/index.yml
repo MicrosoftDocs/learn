@@ -8,6 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Integrate Azure Arc and Azure Stack HCI
 summary: In this module, you will learn the fundamentals of Azure Arc and how is it used to bring new capabilities to the management and monitoring of your Azure Stack HCI clusters at scale.
 abstract: |

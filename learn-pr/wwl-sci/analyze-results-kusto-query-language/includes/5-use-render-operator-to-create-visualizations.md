@@ -11,9 +11,7 @@ The supported visualizations are:
 
 ```kusto
 SecurityEvent 
-
 | summarize count() by Account
-
 | render barchart
 
 ```
@@ -24,9 +22,7 @@ The bin() function rounds values down to an integer multiple of the given bin si
 
 ```kusto
 SecurityEvent 
-
 | summarize count() by bin(TimeGenerated, 1d) 
-
 | render timechart
 
 ```

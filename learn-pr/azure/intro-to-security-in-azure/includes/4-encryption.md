@@ -6,11 +6,11 @@ Contoso Shipping knows that encryption is the only protection its data has once 
 
 Encryption is the process of making data unreadable and unusable to unauthorized viewers. To use or read the encrypted data, it must be *decrypted*, which requires the use of a secret key. There are two top-level types of encryption: **symmetric** and **asymmetric**.
 
-**Symmetric encryption** uses the same key to encrypt and decrypt the data. Consider a desktop password manager application. You enter your passwords and they are encrypted with your own personal key (your key is often derived from your master password). When the data needs to be retrieved, the same key is used, and the data is decrypted.
+**Symmetric encryption** uses the same key to encrypt and decrypt the data. Consider a desktop password manager application. You enter your passwords, and they are encrypted with your own personal key (your key is often derived from your master password). When the data needs to be retrieved, the same key is used, and the data is decrypted.
 
-**Asymmetric encryption** uses a public key and private key pair. Either key can encrypt but a single key can't decrypt its own encrypted data. To decrypt, you need the paired key. Asymmetric encryption is used for things like Transport Layer Security (TLS) (used in HTTPS) and data signing.
+**Asymmetric encryption** uses a public key and private key pair. Either key can encrypt, but a single key can't decrypt its own encrypted data. To decrypt, you need the paired key. Asymmetric encryption is used for things like Transport Layer Security (TLS) (used in HTTPS) and data signing.
 
-Both symmetric and asymmetric encryption play a role in properly securing your data. Encryption is typically approached in two ways:
+Both symmetric and asymmetric encryption plays a role in properly securing your data. Encryption is typically approached in two ways:
 
 1. Encryption at rest
 1. Encryption in transit
@@ -27,11 +27,11 @@ Here's a diagram that shows what encrypted customer data might look like as it s
 
 ## Encryption in transit
 
-Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. Secure transfer can be handled by several different layers. It could be done by encrypting the data at the application layer prior to sending it over a network. HTTPS is an example of application layer in transit encryption.
+Data in transit is the data actively moving from one location to another, such as across the internet or through a private network. The secure transfer can be handled by several different layers. It could be done by encrypting the data at the application layer prior to sending it over a network. HTTPS is an example of an application layer in-transit encryption.
 
 You can also set up a secure channel, like a virtual private network (VPN), at a network layer, to transmit data between two systems.
 
-Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting risk of exposure.
+Encrypting data in transit protects the data from outside observers and provides a mechanism to transmit data while limiting the risk of exposure.
 
 This diagram shows the process. Here, customer data is encrypted as it's sent over the network. Only the receiver has the secret key that can decrypt the data to a usable form.
 
@@ -48,7 +48,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column span="3":::
 **Encrypt raw storage**
 
-**Azure Storage Service Encryption** for data at rest helps you protect your data to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
+**Azure Storage Service Encryption** for data at rest helps you protect your data in order to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
 
   :::column-end:::
 :::row-end:::
@@ -60,7 +60,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column span="3":::
 **Encrypt virtual machine disks**
 
-Storage Service Encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If malicious attackers gained access to your Azure subscription and got the VHDs of your virtual machines, how would you ensure they would be unable to access the stored data?
+Storage Service Encryption provides low-level encryption protection for data written to a physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If malicious attackers gained access to your Azure subscription and got the VHDs of your virtual machines, how would you ensure they would be unable to access the stored data?
   :::column-end:::
 :::row-end:::
 
@@ -100,15 +100,15 @@ Azure Key Vault is a centralized cloud service for storing your application secr
 
 - *Secrets management*. You can use Key Vault to securely store and tightly control access to tokens, passwords, certificates, *Application Programming Interface* (API) keys, and other secrets.
 - *Key management*. You also can use Key Vault as a key management solution. Key Vault makes it easier to create and control the encryption keys used to encrypt your data.
-- *Certificate management*. Key Vault lets you provision, manage, and deploy your public and private *Secure Sockets Layer/ Transport Layer Security* (SSL/ TLS) certificates for your Azure, and internally connected, resources more easily.
-- *Store secrets backed by hardware security modules* (HSMs). The secrets and keys can be protected either by software, or by FIPS 140-2 Level 2 validated HSMs.
+- *Certificate management*. Key Vault lets you provision, manage, and deploy your public and private *Secure Sockets Layer/ Transport Layer Security* (SSL/ TLS) certificates for your Azure and internally connected resources more easily.
+- *Store secrets backed by hardware security modules* (HSMs). The secrets and keys can be protected either by software or by FIPS 140-2 Level 2 validated HSMs.
 
 The benefits of using Key Vault include:
 
-- *Centralized application secrets*. Centralizing storage for application secrets allows you to control their distribution, and reduces the chances that secrets may be accidentally leaked.
+- *They have centralized application secrets*. Centralizing storage for application secrets allows you to control their distribution and reduces the chances that secrets may be accidentally leaked.
 - *Securely stored secrets and keys*. Azure uses industry-standard algorithms, key lengths, and HSMs, and access requires proper authentication and authorization.
 - *Monitor access and use*. Using Key Vault, you can monitor and control access to company secrets.
-- *Simplified administration of application secrets*. Key Vault makes it easier to enroll and renew certificates from public Certificate Authorities (CAs). You can also scale up and replicate content within regions, and use standard certificate management tools.
+- *Simplified administration of application secrets*. Key Vault makes it easier to enroll and renew certificates from public Certificate Authorities (CAs). You can also scale up and replicate content within regions and use standard certificate management tools.
 - *Integrate with other Azure services*. You can integrate Key Vault with storage accounts, container registries, event hubs, and many more Azure services.
 
 Because Azure AD identities can be granted access to use Azure Key Vault secrets, applications with managed service identities enabled can automatically and seamlessly acquire the secrets they need.

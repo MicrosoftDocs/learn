@@ -22,7 +22,6 @@ roles:
 products:
 - m365-ems
 - windows
-- mdatp
 modules:
 - learn-m365.m365-security-threat-protect
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment

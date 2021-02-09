@@ -37,9 +37,9 @@ quiz:
     - content: 'Combine classical and quantum operations in the same program.'
       isCorrect: true
       explanation: 'Quantum computers perform specialized tasks. Q# enables you to write classical code that resembles programming languages you already know. Averaging a set of numbers is a good use of classical code.'
-    - content: 'Write the quantum computation as well as the averaging computation all as quantum operations.'
+    - content: 'Write the quantum computation and the averaging computation all as quantum operations.'
       isCorrect: false
-      explanation: "Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for basic tasks like averaging a set of numbers, classical computers work just fine."
+      explanation: "Quantum computers perform specialized tasks. You don't use a quantum computer for everything because, for basic tasks like averaging a set of numbers, classical computers work fine."
 
   - content: "You're ready to run your algorithm on Azure Quantum. What's the best way to choose which hardware runs your code most efficiently?"
     choices:
@@ -49,6 +49,6 @@ quiz:
     - content: 'Combine the simulator with the resource estimator to understand the resources that your code would require.'
       isCorrect: true
       explanation: "Using these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the types of quantum gates you use, the number of operations performed, or the number of qubits you need."
-    - content: "There isn't a need to choose. All quantum hardware utilizes resources in the exact same way."
+    - content: "There isn't a need to choose. All quantum hardware uses resources in the exact same way."
       isCorrect: false
       explanation: "Different workloads can require different hardware capabilities. Azure Quantum provides tools that help you understand the resources that your code would require."
