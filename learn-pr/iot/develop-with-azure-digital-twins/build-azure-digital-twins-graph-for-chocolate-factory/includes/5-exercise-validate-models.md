@@ -55,9 +55,9 @@ In this section, you'll deliberately add errors to a DTDL model to test the vali
 1. Open the **ProductionStepGrinding - Copy.json** file. Double-check that you've opened the copy, and not the original.
 
 1. Edit the file by making the following changes:
-    - Locate the field `@type` on line 4, and change it to `@typo`.
-    - Locate the field `name` on line 30, and delete the line.
-    - Locate the field `schema` on line 19, and add a line before it:
+    - Locate the field <b>@type</b> on line 3, and change it to <b>@typo</b>.
+    - Locate the field **name** on line 29, and delete the line.
+    - Locate the field **schema** on line 18, and add a line before it:
 
         ```json
         "glitch" : "nonsense",
@@ -65,21 +65,23 @@ In this section, you'll deliberately add errors to a DTDL model to test the vali
 
 1. Save the edited **ProductionStepGrinding - Copy.json**, but leave it open in your text editor.
 
-1. Back in the Visual Studio Code terminal, use the up arrow to locate the `dotnet run -d <your folder>` entry, and hit return.
+1. Back in the Visual Studio Code terminal, use the up arrow to locate the `dotnet run -d <your folder>` command, and hit return.
 
-1. You should notice that you get an error that there are multiple definitions of a model. You'll also notice that you only get one error message before the app exits.
+1. You'll get one red error message in the output. Correct the `missing required @type` error in file by changing "typo" back to "type" on line 3.
 
-1. Correct the duplicate error by changing the ID. Change `grinding` to `crunching`, on line 3.
+1. In the command window, use the up arrow to run the app again.
 
-1. Save off **ProductionStepGrinding - Copy.json**, leaving it open for editing.
+1. Next you'll receive two errors: one that mentions that `glitch` is an improper property, and another that requires a `name` property for items within the `contents` array.
+
+1. Fix the errors and save off **ProductionStepGrinding - Copy.json**, leaving it open for editing.
 
 1. In the command prompt window, use the up arrow to run the app again.
 
-1. You'll get one error message (in red) in the output. Correct the `missing required @type` error in file by changing "typo" back to "type" on line 4.
+1. You should notice that you get an error that there are multiple definitions of a model.
 
-1. Save off **ProductionStepGrinding - Copy.json**, leaving it open for editing.
+1. Correct the duplicate error by changing the ID. Change "grinding" to "crunching", on line 2.
 
-1. Repeat this process, until all the errors in the copied version of the model file are corrected.
+1. Save off **ProductionStepGrinding - Copy.json** and run the command again. You shouldn't receive any more errors.
 
 1. To clean up your models folder, delete the **ProductionStepGrinding - Copy.json** file. There's no further use for it.
 

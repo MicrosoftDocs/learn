@@ -104,6 +104,10 @@ You should now see all the relationships between the digital twins in the graph 
 
 ## Explore the graph layout options
 
+1. The button to switch graph layouts is grayed out until a query is run. To enable it, run the default query `select * FROM digitaltwins`:
+
+    :::image type="content" source="../media/explorer-run-query.png" alt-text="Screenshot showing the layout of the ADT Explorer sample" lightbox="../media/explorer-run-query.png":::
+
 1. Locate the icon in the graph view that gives a range of layout options, with names such as "Cola" and "Klay":
 
     :::image type="content" source="../media/explorer-graph-layout.png" alt-text="Screenshot showing the graph icon for changing layout options in the explorer sample." lightbox="../media/explorer-graph-layout.png":::

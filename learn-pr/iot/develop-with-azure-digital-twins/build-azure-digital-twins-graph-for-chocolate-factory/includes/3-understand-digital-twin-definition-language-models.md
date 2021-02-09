@@ -43,7 +43,7 @@ In addition to Celsius, `degreeFarenheit` and even `degreeKelvin` are acceptable
 The `type`, `name`, and `schema` entries are the only ones required for a property. There's a range of optional entries, including `@id`, `description`, and  `displayName`. The `writable` entry is optional, and defaults to false.
 
 > [!Note]
-> For more information about DTDL, a full list of required/optional entries, and the complete list of acceptable units, see [the DTDL spec](/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md).
+> For more information about DTDL, a full list of required/optional entries, and the complete list of acceptable units, see [the DTDL spec](https://github.com/Azure/opendigitaltwins-dtdl/blob/master/DTDL/v2/dtdlv2.md).
 
 Most models contain a range of properties.
 

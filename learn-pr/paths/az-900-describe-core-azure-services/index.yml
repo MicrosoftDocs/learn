@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-core-azure-services
 metadata:
-  title: "Azure Fundamentals part 2: Describe core Azure services"
-  description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database."
+  title: "Azure Fundamentals part 2: Describe core Azure services (AZ-900)"
+  description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database. Prepare for AZ-900."
   brand: azure
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 2: Describe core Azure services"
@@ -63,7 +63,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe core Azure services"
-  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4M4X7
+  url: https://www.microsoft.com/videoplayer/embed/RE4M4X7
 iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
 levels:
 - beginner

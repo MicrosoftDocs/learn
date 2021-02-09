@@ -1,6 +1,6 @@
-Now you're ready to look at the layout and features of the Azure Digital Twins explorer sample application on a conceptual level. In the next unit, you'll apply these features to your chocolate factory digital twin.
+In this unit, you'll get an overview of the layout and features of the Azure Digital Twins explorer sample application on a conceptual level before applying these features to your chocolate factory digital twin in the next unit.
 
-You run this sample from a terminal window after installing a number of dependencies.
+The explorer sample app is run from a terminal window after installing a number of dependencies.
 
 ## Sign in
 

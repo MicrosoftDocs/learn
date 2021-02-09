@@ -17,7 +17,7 @@ abstract: |
   - Work with qubits and superposition to build a quantum random number generator.
   - Learn how Azure Quantum enables you to run your programs on quantum hardware.
 prerequisites: |
-  - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+  - [.NET Core 3.1](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
 iconUrl: /learn/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:

@@ -1,4 +1,4 @@
-If you took some of the earlier modules in the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you might have learned the basic concepts of quantum computing and how quantum algorithms can solve some of our problems such as security or delivery-route searching.
+If you took some of the earlier modules in the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), you will already be familiar with the fundamental concepts of quantum computing and how quantum algorithms were able solve some of the problems you and your crew encountered on the spaceship.
 
 In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms inspired by quantum computing that are applied to solve optimization problems on traditional hardware. Throughout the learning path, you have been working on a spaceship. One of your missions is an asteroid mining expedition. To illustrate the optimization method, let's look at how the logistics division efficiently loads cargo vessels.
 
@@ -17,8 +17,8 @@ In this module you'll:
 
 ## Prerequisites
 
-* The latest version of the [Python SDK for Azure Quantum](https://pypi.org/project/azure-quantum/?azure-portal=true)
-* [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html?azure-portal=true)
+* The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
+* [Jupyter Notebook](https://jupyter.org/install?azure-portal=true)
 * An Azure Quantum workspace
 
 If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.

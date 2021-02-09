@@ -8,6 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Plan for Azure Stack HCI workloads
 durationInMinutes: 10
 content: |

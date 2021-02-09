@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-failover-clustering.define-cluster-sets
+title: Define cluster sets
+metadata:
+  title: Define cluster sets
+  description: "Define cluster sets"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-define-cluster-sets.md)]

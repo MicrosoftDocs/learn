@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-core-solutions-management-tools-azure
 metadata:
-  title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
-  description: "Learn how to choose the best services from Azure to build and manage cloud solutions."
+  title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure (AZ-900)"
+  description: "Learn how to choose the best services from Azure to build and manage cloud solutions. Prepare for AZ-900."
   brand: azure
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
@@ -65,7 +65,7 @@ prerequisites: |
   - An understanding of cloud computing is helpful, but isn't necessary.
 video:
   title: "Azure Fundamentals video: Describe core solutions and management tools on Azure"
-  url: https://www.microsoft.com/en-us/videoplayer/embed/RE4M6Z1
+  url: https://www.microsoft.com/videoplayer/embed/RE4M6Z1
 iconUrl: /learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
 levels:
 - beginner
