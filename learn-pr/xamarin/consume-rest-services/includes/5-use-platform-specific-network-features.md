@@ -106,15 +106,15 @@ Finally, if you can't identify all your endpoints, disable App Transport Securit
 </dict>
 ```
 
-There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS documentation](https://docs.microsoft.com/xamarin/ios/app-fundamentals/ats).
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](https://docs.microsoft.com/xamarin/ios/app-fundamentals/ats).
 
-## What is Android Network Security Configuration
+## What is Android Network Security Configuration?
 
-Like iOS, Android has a similar security model around network communication that was introduced with Android 9 (API level 28). Cleartext (non-HTTPS) traffic is disabled by default when your application is run on and targeting Android 9 (API Level 28) or higher. This policy may have an impact on your development cycle if your app needs to download an image or file on a server hasn’t been configured for HTTPS. Also, you may just be trying to debug your application locally and don’t want to install development certs. You may have strong business requirements that all web traffic on all versions of Android is always HTTPS. This is where the new Network Security Configuration feature of Android comes in, to help us finely tune network traffic security in our app.
+Like iOS, Android has a similar security model around network communication that was introduced with Android 9 (API level 28). Cleartext (non-HTTPS) traffic is disabled by default when your application is run on and targeting Android 9 (API Level 28) or higher. This policy may have an impact on your development cycle if your app needs to download an image or file on a server hasnâ€™t been configured for HTTPS. Also, you may just be trying to debug your application locally and donâ€™t want to install development certs. You may have strong business requirements that all web traffic on all versions of Android is always HTTPS. This is where the new Network Security Configuration feature of Android comes in, to help us finely tune network traffic security in our app.
 
 ### Permit Cleartext Traffic
 
-To permit cleartext traffic you will need to create a network security configuration. First, uou will create a new xml file under `Resources/xml` named `network_security_config.xml`. Inside of this file you will add a `network-security-config` with `dommain-config` settings. The following configuration will enable cleartext traffice to be allowed for a specific domain and for an IP address:
+To permit cleartext traffic you will need to create a network security configuration. First, you will create a new xml file under `Resources/xml` named `network_security_config.xml`. Inside of this file you will add a `network-security-config` with `domain-config` settings. The following configuration will enable cleartext traffic to be allowed for a specific domain and for an IP address:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,7 +128,7 @@ To permit cleartext traffic you will need to create a network security configura
 
 You can strengthen the security of your app by also restricting cleartext traffic on all versions of Android regardless of the compile and target framework. This is accomplished by setting `cleartextTrafficPermitted` to `false`. Enabling this will restrict any traffic that is non-HTTPS at all times.
 
-The last thing that needs to be done is to configure the `networkSecurityConfig` property on the `application` node in the `AndroidManifest.xml` located in the Properties folder:
+The last thing that needs to be done is to configure the `networkSecurityConfig` property on the `application` node in the `AndroidManifest.xml` located in the **Properties** folder:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -139,17 +139,17 @@ The last thing that needs to be done is to configure the `networkSecurityConfig`
 </manifest>
 ```
 
-There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on [Google's website](https://developer.android.com/training/articles/security-config).
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented in [Google's network security configuration guide](https://developer.android.com/training/articles/security-config).
 
 ## Debug service and apps locally
 
-Finally, a benefit of building mobile applications with C# and .NET is that you can shared code and knowledge with other .NET applications such as the ASP.NET Core Web API backend that was provided here. Additonally, mobile applications running in the iOS simulator or Android emulator can consume ASP.NET Core web services that are running locally, and exposed over HTTP, as follows:
+Finally, a benefit of building mobile applications with C# and .NET is that you can shared code and knowledge with other .NET applications such as the ASP.NET Core Web API backend that was provided here. Additionally, mobile applications running in the iOS Simulator or Android emulator can consume ASP.NET Core web services that are running locally, and exposed over HTTP, as follows:
 
-Applications running in the iOS simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS simulator can consume the operation by sending a GET request to http://localhost:<port>/api/todoitems/.
+Applications running in the iOS Simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS Simulator can consume the operation by sending a GET request to http://localhost:<port>/api/todoitems/.
 
-Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be setup for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:<port>/api/todoitems/.
+Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be set up for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:<port>/api/todoitems/.
 
-ASP.NET Core web services must disable Https redirects by commenting out `app.UseHttpsRedirection();` in the `Startup.cs` file. 
+ASP.NET Core web services must disable HTTPS redirects by commenting out `app.UseHttpsRedirection();` in the **Startup.cs** file. 
 
 ### Detect the operating system
 
@@ -161,5 +161,4 @@ public static string BaseAddress =
 public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 ```
 
-To learn more by visiting the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
-
+To learn more, visit the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
