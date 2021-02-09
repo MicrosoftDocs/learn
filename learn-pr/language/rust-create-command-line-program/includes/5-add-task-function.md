@@ -1,4 +1,4 @@
-The `add_task` function has to append a new `Task` value to a possibly existing collection of tasks encoded in a JSON file.
+The `add_task` function needs to append a new `Task` value to a possibly existing collection of tasks encoded in a JSON file.
 
 So, before inserting a task into that collection, we must first read that file and assemble a vector of tasks from its contents.
 
@@ -57,23 +57,23 @@ fn function_2() -> Result(Success, Failure) {
 }
 ```
 
-That pattern is used a lot in code that needs to perform multiple I/O operations, as we do in this program.
+That pattern is used a lot in code that needs to do multiple I/O operations, as we do in this program.
 
 ## Build a reader and consume its contents as a vector of tasks
 
 The second step is to actually read the file. To read the file, `serde_json` asks for any type that implements the `Reader` trait. The `File` type implements that trait, so we just pass it as a parameter to the `serde_json.from_reader` function while declaring that we expect to receive a `Vec<Task>` from it.
 
-Keep in mind that accessing the file system is an I/O action that can fail for various reasons, so we need to take into account how our program should behave (and possibly recover) in some specific cases. For example, `serde_json` will return an error when it reaches the end of a file without having found anything to parse. This event will always happen in an empty file, and we need to be able to recover from it.
+Keep in mind that accessing the file system is an I/O action that can fail for various reasons. So we need to consider how our program should behave (and possibly recover) in some specific cases. For example, `serde_json` will return an error when it reaches the end of a file without having found anything to parse. This event will always happen in an empty file, and we need to be able to recover from it.
 
-To recover from specific kinds of errors, we use `guards` in our `match` expression to build an empty `Vec` when that specific error occurs, representing an empty to-do list.
+To recover from specific kinds of errors, we use `guards` in the `match` expression to build an empty `Vec` when the specific error occurs. The `Vec` represents an empty to-do list.
 
 Note that `serde_json::Error` can be easily converted to the `std::io::Error` type because [it
-implements the `From` trait](https://docs.serde.rs/serde_json/error/struct.Error.html#impl-From%3CError%3E?azure-portal=true), making it possible for us to use the `?` operator to unpack or early return them.
+implements the `From` trait](https://docs.serde.rs/serde_json/error/struct.Error.html#impl-From%3CError%3E?azure-portal=true). That makes it possible for us to use the `?` operator to unpack or early return them.
 
 ## Rewind the file after reading from it
 
-Because we have moved the cursor to the end of our file, we must rewind it before writing over it again. If we don't, we would begin writing at the cursor's last position, causing a malformed JSON file. The `Seek` trait and the `SeekFrom` enum from the `std::io` module are used to make that happen.
+Because we moved the cursor to the end of the file, we need to rewind the file before we write over it again. If we don't rewind the file, we'd begin writing at the cursor's last position, which would cause a malformed JSON file. We use the `Seek` trait and the `SeekFrom` enum from the `std::io` module to rewind the file.
 
 ## Write the modified task list back into the file
 
-Last but not least, we push the `Task` value received as a function parameter to the task list and use `serde_json` to write our task vector into our file. We then return the empty tuple value inside an `Ok` to inform that everything went according to our plans.
+Finally, we push the `Task` value received as a function parameter to the task list and use `serde_json` to write the task vector into the file. We then return the empty tuple value inside an `Ok` to indicate that everything went according to our plans.
