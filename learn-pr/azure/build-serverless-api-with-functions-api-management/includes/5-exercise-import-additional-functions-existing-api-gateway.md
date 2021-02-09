@@ -10,11 +10,11 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. In the left nav bar, under the **Functions** section, select **Functions**, and then select **OrderDetails**.
 
-1. In the left nav bar, select **Code + Test**.
+1. In the left nav bar, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="Order details code is displayed.":::
 
-1. In the upper menu bar, select **Test/Run**. The Input/Output panel appears.
+    The Input/Output panel appears.
 
 1. On the **Input** tab, in the **HTTP method** dropdown, select **GET**, and then under **Query**, select **Add parameter**.
 
@@ -74,7 +74,7 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 
 1. In the **HTTP response** section, notice that the details of an order have been returned in JSON format. Also, notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different than the **azurewebsites.net** domain where the original function app is hosted.
 
-## Test our combined API
+## Test the combined API
 
 We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
 
@@ -82,7 +82,7 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
 1. In the **Overview** pane,  select the **Copy to clipboard** icon to the right of the **URL** value.
 
-1. In the Cloud Shell, enter the following command, paste the **Gateway URL** value that you copied in place of the token, and then press Enter.
+1. In the Cloud Shell, run the following command, paste the **Gateway URL** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
 
     ```bash
     GATEWAY_URL=<paste the URL here>
@@ -96,13 +96,13 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
 1. To the right of **Primary key** field, select the **Copy to clipboard** icon.
 
-1. In the Cloud Shell, enter the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
+1. In the Cloud Shell, run the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
 
     ```bash
     SUB_KEY=<paste the key here>
     ```
 
-1. To request the details of a product, execute the following command in the Cloud Shell.
+1. To request the details of a product, run the following command in the Cloud Shell.
 
     ```bash
     curl -X GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"
