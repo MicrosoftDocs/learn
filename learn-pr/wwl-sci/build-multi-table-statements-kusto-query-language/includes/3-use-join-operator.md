@@ -6,23 +6,14 @@ LeftTable | join [JoinParameters] ( RightTable ) on Attributes
 
 ```kusto
 SecurityEvent 
-
 | where EventID == "4624" 
-
 | summarize LogOnCount=count() by EventID, Account 
-
 | project LogOnCount, Account 
-
 | join kind = inner (
-
      SecurityEvent 
-
      | where EventID == "4634" 
-
      | summarize LogOffCount=count() by EventID, Account 
-
      | project LogOffCount, Account 
-
 ) on Account
 
 ```

@@ -14,7 +14,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="javascript"
 
-1. From the previous exercise, when your function app successfully deploys, select **Go to Resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to Resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
 1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
@@ -180,7 +180,7 @@ The function and master keys are found in the **Function Keys** in the left-hand
 
     ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
-1. At the bottom of the screen, scroll to the left to see your function. At the top-right, under the **Essentials** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
+1. At the bottom of the screen, scroll to the left to see your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
 1. Next, from the left nav bar, select **Functions**, and then select the **HttpTrigger1**.
 

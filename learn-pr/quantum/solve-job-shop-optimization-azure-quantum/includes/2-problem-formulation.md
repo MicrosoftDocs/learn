@@ -94,19 +94,19 @@ To make it easier to code up later, all operations are identified with a continu
 
 Below, you see how these definitions combine to give us a mathematical formulation for the jobs:
 
-$$J_{0} = \{O_{0}, O_{1}\}$$
-$$J_{1} = \{O_{2}, O_{3}\}$$
-$$J_{2} = \{O_{4}, O_{5}\}$$
+$$J_{0} = \\{O_{0}, O_{1}\\}$$
+$$J_{1} = \\{O_{2}, O_{3}\\}$$
+$$J_{2} = \\{O_{4}, O_{5}\\}$$
 
 **More generally:**
 
-$$J_{0} = \{O_{0}, O_{1}, \ldots , O_{k_{0}-1}\} \text{, where } k_{0} = n_{0} \text{, the number of operations in job } J_{0}$$
+$$J_{0} = \\{O_{0}, O_{1}, \ldots , O_{k_{0}-1}\\} \text{, where } k_{0} = n_{0} \text{, the number of operations in job } J_{0}$$
 
-$$J_{1} = \{O_{k_{0}}, O_{k_{0}+1}, \ldots , O_{k_{1}-1}\} \text{, where } k_{1} = n_{0} + n_{1} \text{, the number of operations in jobs } J_{0} \text{ and } J_{1} \text{ combined}$$
+$$J_{1} = \\{O_{k_{0}}, O_{k_{0}+1}, \ldots , O_{k_{1}-1}\\} \text{, where } k_{1} = n_{0} + n_{1} \text{, the number of operations in jobs } J_{0} \text{ and } J_{1} \text{ combined}$$
 
 $$\vdots$$
 
-$$J_{n-1} = \{O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1}\} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
+$$J_{n-1} = \\{O_{k_{n-2}}, O_{k_{n-2}+1}, \ldots , O_{k_{n-1}-1}\\} \text{, where } k_{n-1} = \text{ the total number of operations across all jobs }$$
 
 The next piece of notation you will need is a binary variable, which will be called $x_{i, t}$.
 

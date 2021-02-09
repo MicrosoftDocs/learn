@@ -12,36 +12,28 @@ To access the strings within a Dynamic field, use the dot notation.  The Propert
 
 ```kusto
 AzureActivity
-
 | project Properties_d.eventCategory
 
 ```
 
 The following example shows the use of Dynamic fields with the SigninLogs table.
 
+> [!NOTE]
+> This example is not available in the demo environment.
+
 ```kusto
 // Example query for SigninLogs showing how to break out packed fields.
 
 SigninLogs 
-
 | where TimeGenerated >= ago(1d)
-
 | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser
-
 | extend ConditionalAccessPol0Name = tostring(ConditionalAccessPolicies[0].displayName), ConditionalAccessPol0Result = tostring(ConditionalAccessPolicies[0].result)
-
 | extend ConditionalAccessPol1Name = tostring(ConditionalAccessPolicies[1].displayName), ConditionalAccessPol1Result = tostring(ConditionalAccessPolicies[1].result)
-
 | extend ConditionalAccessPol2Name = tostring(ConditionalAccessPolicies[2].displayName), ConditionalAccessPol2Result = tostring(ConditionalAccessPolicies[2].result)
-
 | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails)
-
 | extend State = tostring(LocationDetails.state), City = tostring(LocationDetails.city)
-
 | extend Date = startofday(TimeGenerated), Hour = datetime_part("Hour", TimeGenerated)
-
 | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails, ConditionalAccessPol0Name, ConditionalAccessPol0Result, ConditionalAccessPol1Name, ConditionalAccessPol1Result, ConditionalAccessPol2Name, ConditionalAccessPol2Result, Location, State, City
-
 | sort by Date
 
 ```
@@ -76,21 +68,15 @@ Run each query separately to see the results.
 
 ```kusto
 SecurityAlert
-
 | extend ExtendedProperties = todynamic(ExtendedProperties) 
-
 | extend ActionTaken = ExtendedProperties.ActionTaken
-
 | extend AttackerIP = ExtendedProperties["Attacker IP"]
 
 SecurityAlert
-
 | mv-expand entity = todynamic(Entities)
 
 SecurityAlert
-
 | mv-apply entity = todynamic(Entities) on 
-
 ( where entity.Type == "account" | extend account = strcat (entity.NTDomain, "\\", entity.Name))
 
 ```
