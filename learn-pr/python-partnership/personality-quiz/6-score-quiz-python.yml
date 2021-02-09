@@ -3,7 +3,7 @@ uid: learn.python-partnership.personality-quiz.score-quiz
 metadata:
   title: Choose a WONDER WOMAN 1984 character based on personality quiz score
   description: This unit walks you through scoring a quiz and assigning characters based on personality questions in Python.
-  ms.date: 9/21/20
+  ms.date: 09/21/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

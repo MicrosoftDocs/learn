@@ -1,39 +1,38 @@
-The following exercise units require that you have an Azure Digital Twins instance set up for the Chocolate Factory Production Line. The instance should have already been updated several times through a connection to an IoT source of data, which streams sensor and actuator data connected to the factory assets to closely monitor the underlying processes and operations.
+To complete the following exercise units, you need to have an Azure Digital Twins instance set up for the chocolate factory production line. The instance needs to have been updated several times through a connection to an IoT source of data. The data source streams sensor and actuator data connected to the factory assets to closely monitor the underlying processes and operations.
 
-This pattern relies on the twin updates, rather than forwarding telemetry from an IoT device. This set up gives you the flexibility to change the underlying data source without needing to update your Time Series Insights logic.
+This pattern relies on the twin updates rather than forwarding telemetry from an IoT device. This setup gives you the flexibility to change the underlying data source without needing to update your Time Series Insights logic.
 
-To proceed, choose one of the following options:
+To continue, choose one of these options:
 
-- If you have been following the "Develop with Azure Digital Twins" Learning Path modules in sequence, have successfully completed all exercises in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689), and retained the solution resources in your Azure Subscription, skip to [**Create a route and filter to twin update notifications**](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
+- If you've been following the **Develop with Azure Digital Twins** learning path modules in sequence, have successfully completed all exercises in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/), and have kept the solution resources in your Azure subscription, skip to [Create a route and filter for twin update notifications](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
 
-- Otherwise, if you haven't completed the previous modules and would still like to proceed with the exercises in this module, continue with the following steps.
+- If you haven't completed the previous modules and you still want to proceed with the exercises in this module, continue with the following steps.
 
 ## Deploy an ARM template
 
-This step is required to re-provision the resources created in [Module 3: Ingest Data into Azure Digital Twins](https://review.docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/1-introduction?branch=pr-en-us-13689).
+This step is required to re-provision the resources created in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/).
 
-[![homepage](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fdigital-twins-samples%2Fmaster%2FHandsOnLab%2Fdeployment%2FMSLearnModule3%2Fadt-hol-pt1-arm-template.json "Deploy template")
+1. Select **Deploy to Azure**: 
 
-1. Click "Deploy to Azure" and complete the following custom deployment template steps to start the deployment:
-    - Select the subscription where you'd like to deploy the resources to
-    - Create a new resource group and give it a unique name
-    - Select a **Region**, ideally nearest to your location
-    - Leave **Location** and **Utc Value** as defaults
-    - Run the following command in PowerShell (do not forget to replace ID with your Azure Subscription ID) and paste the output in the **Userid** field:
+   [![homepage](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fdigital-twins-samples%2Fmaster%2FHandsOnLab%2Fdeployment%2FMSLearnModule3%2Fadt-hol-pt1-arm-template.json "Deploy template")
+1. Complete these custom-deployment template steps to start the deployment:
+    - Select the **Subscription** in which you want to deploy the resources.
+    - Create a **Resource group** and give it a unique name.
+    - Select a **Region**, ideally the one closest to your location.
+    - Leave the default values in the **Location** and **Utc Value** boxes.
+    - Run the following command in PowerShell. (Don't forget to replace `id` with your Azure subscription ID.) Paste the output into the **Userid** box.
 
         ```powershell
         az ad user show --id jdoe@contoso.com --query objectId -o tsv
         ```
 
-    :::image type="content" source="../media/custom-template-deployment.png" alt-text="Customizing the ARM template deployment":::
+    :::image type="content" source="../media/custom-template-deployment.png" alt-text="Screenshot of the Custom deployment page.":::
 
-1. Now the deployment is underway, wait a few minutes until the deployment is complete.
+1. The deployment will take a few minutes to complete. When it's done, select **Outputs** in the left pane. Copy the result and paste it into Notepad.
 
-1. The deployment will take a few minutes to complete. When it's done, click **Outputs** from the left-side bar, and copy and paste the result in Notepad.
+    :::image type="content" source="../media/custom-template-deployment-complete.png" alt-text="Screenshot that shows the Outputs option.":::
 
-    :::image type="content" source="../media/custom-template-deployment-complete.png" alt-text="Navigating to the output of an ARM template deployment after it completed deploying":::
-
-1. Format the output into a list of variables like the following example:
+1. Format the output into a list of variables, as you see in this example:
 
     ```powershell
     $random = 'a2gtf4b'
@@ -46,7 +45,7 @@ This step is required to re-provision the resources created in [Module 3: Ingest
     $username = 'replaceme@contoso.com'
     ```
 
-1. In PowerShell, login and set your Azure Subscription using the following commands:
+1. In PowerShell, sign in to Azure and set your Azure subscription by using these commands:
 
     ```powershell
     az login
@@ -54,30 +53,30 @@ This step is required to re-provision the resources created in [Module 3: Ingest
     az account set --subscription "<your-Azure-subscription-ID>"
     ```
 
-1. Copy and paste the list of variables you had in Notepad and run these variables in PowerShell in order to continue working locally on the next exercises.
+1. Copy the list of variables you had in Notepad and run them in PowerShell to continue working locally in the next exercises.
 
-1. Now you have an Azure Digital Twin of a factory production line! You can view your Digital Twin using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides more twin capabilities like uploading models, creating twins, relationships, and updating twin properties.
+You now have an Azure digital twin of a factory production line! You can view your digital twin by using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides capabilities like uploading models, creating twins, creating relationships, and updating twin properties.
 
-:::image type="content" source="../media/azure-digital-twins-explorer.png" alt-text="A screenshot showing the Azure Digital Twins explorer user interface":::
+:::image type="content" source="../media/azure-digital-twins-explorer.png" alt-text="Screenshot that shows Azure Digital Twins Explorer.":::
 
-Additionally, you have provisioned the IoT Hub and an Azure function that is connected and configured to ingest telemetry from the IoT Hub.
+You've also provisioned the IoT hub and an Azure function that's connected, and configured ingestion of telemetry from the IoT hub.
 
 ## Create a device and send data from a simulated local client
 
-1. In Azure portal, go to the resource group you created for these exercises. Select your IoT Hub and navigate to IoT devices.
+1. In the Azure portal, go to the resource group you created for these exercises. Select your IoT hub and then go to **IoT devices**:
 
-    :::image type="content" source="../media/azure-iot-hub-devices.png" alt-text="Opening the IoT Hub devices in the Azure portal":::
+    :::image type="content" source="../media/azure-iot-hub-devices.png" alt-text="Screenshot that shows IoT hub devices in the Azure portal.":::
 
-1. In the IoT devices page, click **New** at the top to create a new device and refer to the following steps to customize the device:
-    - In **Device ID**, provide the name "GrindingStep"
-    - Leave **Authentication type** as "Symmetric Key"
-    - Leave all other values as defaults and click **Save**
-    - Click the new device listed under **IoT devices**
-    - Copy the **connection string** and save it, as it will be needed in the next steps
+1. At the top of the IoT devices page, select **New**  to create a device. Customize the device by completing these steps:
+    - In the **Device ID** box, enter **GrindingStep**.
+    - In **Authentication type**, keep the default value: **Symmetric Key**.
+    - Keep the other default values and select **Save**.
+    - Under **IoT devices**, select the new device. 
+    - Copy the **Primary Connection String** and save it. You'll need it in one of the following steps.
 
     :::image type="content" source="../media/iot-device-connection-string.png" alt-text="Getting the connection string for an IoT device in the Azure portal":::
 
-1. On your local machine, create a directory and clone the **Digital Twins Samples** GitHub repo by pasting the following code lines in PowerShell and replacing "username" with a valid directory:
+1. On your local computer, create a directory and clone the Digital Twins Samples GitHub repo by pasting the following code into PowerShell. (Replace `username` with a valid directory.)
 
     ```powershell
     mkdir c:\users\username\repos
@@ -85,23 +84,23 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     git clone https://github.com/Azure-Samples/digital-twins-samples/ 
     ```
 
-1. From your cloned repo, open the file "~\digital-twins-samples\HandsOnLab\SimulatedClient\Sensor.js" in a text editor.
+1. From your cloned repo, open the file ~\digital-twins-samples\HandsOnLab\SimulatedClient\Sensor.js in a text editor.
 
-1. Find the line `const deviceConnectionString = ""` and update it with the device connection saved earlier from deploying the script in the previous section.
+1. Find the line `const deviceConnectionString = ""`. Update it with the device connection string that you saved earlier:
 
     ```javascript
-    // String containing Hostname, Device Id & Device Key in the following formats:
+    // String containing host name, device ID, and device key in the following formats:
     // "HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
     const deviceConnectionString = "";
     let sendInterval;
     ```
 
     > [!NOTE]
-    > If you lost the device connection string, you can retrieve it by running the command: `az iot hub device-identity connection-string show -d GrindingStep --hub-name $dtname -o tsv`
+    > If you don't have the device connection string, you can retrieve it by running this command: `az iot hub device-identity connection-string show -d GrindingStep --hub-name $dtname -o tsv`
 
 1. Save and close the file.
 
-1. In PowerShell, navigate to the SimulatedClient folder in the cloned repo and run the simulated client:
+1. In PowerShell, go to the SimulatedClient folder in the cloned repo and run the simulated client:
 
     ```powershell
     cd C:\Users\username\repos\digital-twins-samples\handsonlab\SimulatedClient
@@ -109,7 +108,7 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     node ./Sensor.js
     ```
 
-1. The simulated device should start sending data. Let the script run for a couple of minutes, then hit `Ctrl`+`C` to break the operation. The output from the SimulatedClient should look similar to the following example:
+1. The simulated device should start sending data. Let the script run for a couple minutes, and then select **Ctrl+C** to break the operation. The output from SimulatedClient should look similar to this example:
 
     ```powershell
     Sending message: {"DeviceType":"GrindingSensor","FanSpeed":11.239450994067955,"Force":304.7945237204837,"ChasisTemperature":205.1585276634945,"
@@ -143,24 +142,24 @@ Additionally, you have provisioned the IoT Hub and an Azure function that is con
     send status: MessageEnqueued
     ```
 
-1. Validate that Azure Digital Twins is receiving data by looking at the values being updated in the Twin GrindingSensor by running the following command:
+1. Confirm that Azure Digital Twins is receiving data by looking at the values being updated in the twin GrindingSensor by running the following command:
 
     ```powershell
     az dt twin show -n $dtname --twin-id GrindingStep
     ```
 
-## Challenge: Simulate fanning, roasting, and molding devices
+## Challenge: Simulate the fanning, roasting, and molding devices
 
-The Sensor.js script can be edited to send data as other devices. The Azure Function has logic that evaluates the device type specified in the payload. Change the value stored in the deviceType and deviceConnection string to send as Fanning and Molding sensors.
+You can edit the Sensor.js script so that it sends data as other devices. The Azure function has logic that evaluates the device type specified in the payload. Change the values stored in `deviceType` and `deviceConnectionString` to send data as fanning and molding sensors:
 
-:::image type="content" source="../media/sensor-type.png" alt-text="A screenshot showing which deployment script value to change to simulate sending data as a different sensor type":::
+:::image type="content" source="../media/sensor-type.png" alt-text="Screenshot that shows the script value to change to simulate sending data as a different sensor type.":::
 
 ```javascript
-// String containing Hostname, Device Id & Device Key in the following formats:
+// String containing host name, device ID, and device key in the following formats:
 // "HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>"
 const deviceConnectionString = "";
 let sendInterval;
 ```
 
 > [!NOTE]
-> Remember that the Azure Function assumes the `--device-id` matches the `--twin-id` created when a Twin is initialized.
+> Remember that the Azure function expects the `--device-id` to match the `--twin-id` that's created when a twin is initialized.

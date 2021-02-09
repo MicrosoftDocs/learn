@@ -4,7 +4,7 @@ As part of the drive to establishing your organization's online presence, you ne
 
 Now that the search service has been created, you'll look at how to load data into an index.
 
-## Loading data into Azure Cognitive Search
+## Load data into Azure Cognitive Search
 
 Azure Cognitive Search lets you create empty indexes. In order for indexes to be queried, data must be loaded. The search queries run over the content loaded and saved to an index. There are two approaches for loading data into an index:
 
@@ -57,22 +57,22 @@ To push documents into the index in C#, after importing the `Microsoft.Azure.Sea
 - Creates an `IndexBatch` object to contain JSON search documents
 - Calls the `Documents.Index` method to upload the batch of documents
 
-### Data Source Inputs
+### Data source inputs
 
 If you are programmatically generating your search documents, the data sources are only limited to your ability to generate JSON documents.
 
-If you want to use the Import data wizard in the Azure portal, you are restricted to the list of supported sources above. There are some caveats for each data source:
+If you want to use the Import data wizard in the Azure portal, you are restricted to the previous list of supported sources. There are some caveats for each data source:
 
 - For the Azure SQL databases and SQL Server databases in a VM, only a flattened dataset is allowed, so create a table, or view, for use by the wizard.
-- For a Cosmos DB you need to specify the collection to be imported, and all the documents in that collection will be included.
+- For a Cosmos DB, you need to specify the collection to be imported, and all the documents in that collection will be included.
 - For Blob storage, there is a specified list of supported document types. You can restrict which files are indexed using the `indexedFileNameExtensions` property of your indexer.
-- For Table storage, you can restrict the import to a specific subset of tables
+- For Table storage, you can restrict the import to a specific subset of tables.
 
 ### Index attributes
 
 ![Example of how documents are stored in the search index, along with other options](../media/what-is-an-index.png)
 
-An Azure Cognitive Search index can be thought of as a container of searchable documents. In database terms, the index is a table in the database, and each document is a row. Tables have columns, the columns can be thought of as equivalent to the fields in a document. Columns have data types, just as the fields do on the documents.
+An Azure Cognitive Search index can be thought of as a container of searchable documents. In database terms, the index is a table in the database, and each document is a row. Tables have columns, and the columns can be thought of as equivalent to the fields in a document. Columns have data types, just as the fields do on the documents.
 
 Azure Cognitive Search needs to know how you'd like to search and display the fields in the documents, and you specify that by assigning attributes, or behaviors, to these fields.
 
@@ -80,7 +80,7 @@ An index can also offer additional features, like suggesters, or allow cross-sit
 
 ### Data import monitoring and verification
 
-The search services overview page has a dashboard that lets you quickly see the health of the search service. On the dashboard you can see how many documents are in the search service, how may indexes have been used, and how much storage is in use.
+The search services overview page has a dashboard that lets you quickly see the health of the search service. On the dashboard, you can see how many documents are in the search service, how may indexes have been used, and how much storage is in use.
 
 ![text](../media/search-dashboard.png)
 
@@ -90,30 +90,29 @@ When loading new documents into an index, the progress can be monitored by click
 
 Indexers only import new or updated documents, so it is normal to see zero documents indexed.
 
-The Search explorer can be used to perform quick searches to check the contents of an index, and that you are getting expected search results. Having this tool available in the portal allows you to easily check the index by reviewing the results that are returned as JSON documents.
+The Search explorer can perform quick searches to check the contents of an index, and ensure that you are getting expected search results. Having this tool available in the portal enables you to easily check the index by reviewing the results that are returned as JSON documents.
 
-### Rebuilding indexes
+### Rebuild indexes
 
-There are only a few ways an index can be edited after it's been created. The REST API and SDK do offer *create or update* methods, but realistically these methods delete an existing index, and then recreate it. You can't change the name of an existing field, change its type, or add additional behaviors like sortable or filterable.
+There are only a few ways an index can be edited after it's been created. The REST API and SDK do offer *create or update* methods, but realistically these methods delete an existing index, and then recreate it. You can't change the name of an existing field, change its type, or add additional behaviors, like sortable or filterable.
 
 The changes that can be made are limited to adding new fields, or changing the options on the index like setting up CORS, or changing scoring profiles.
 
 Programmatically rebuilding an index will take it offline, with response times possibly being affected for several minutes after the index has been updated.
 
-An approach to updating an index without effecting your end users is to create a new index under a different name. You can use the same indexer and data source. After importing data, you can switch your app to use the new index.  
+An approach to updating an index without affecting your users is to create a new index under a different name. You can use the same indexer and data source. After importing data, you can switch your app to use the new index.  
 
-### Handling large data volumes
+### Handle large data volumes
 
-When you create a search service on a billable pricing tier, by default you start with a single replica (used for data ingestion and queries) and partition (used for data storage). There are quota limits on the size of storage, number of indexes and indexers, and data sources that vary by tier.
+When you create a search service on a billable pricing tier, by default, you start with a single replica (used for data ingestion and queries) and partition (used for data storage). There are quota limits on the size of storage, number of indexes and indexers, and data sources that vary by tier.
 
-If you start to hit the quota limits, or require better guarantees on availability, the portal, and REST API allow you to scale up the number of replicas and partitions. Azure will start to guarantee a 99.9% uptime after you've increased the replicas to at least 3.
+If you start to hit the quota limits, or require better guarantees on availability, the portal, and REST API enable you to scale up the number of replicas and partitions. Azure will start to guarantee a 99.9% uptime after you've increased the replicas to at least 3.
 
-Increasing the partitions, each gives you an extra 25 GB of storage, not only increases the total storage available for indexes, it also allows you to set up indexers to run in parallel. You will need to create an indexer per partition, and partition the data set by the number of those partitions. For example, if your video catalog contained 1000 videos, you could split the single JSON document into five separate documents containing 200 videos each, storing the files in their own blob containers. Then set up five indexers and schedule them to start at the same time. The indexers will run and import the documents into the search index.
+Increasing the partitions, (each gives you an extra 25 GB of storage), not only increases the total storage available for indexes, it also enables you to set up indexers to run in parallel. You will need to create an indexer per partition, and partition the data set by the number of those partitions. For example, if your video catalog contained 1000 videos, you could split the single JSON document into five separate documents containing 200 videos each, storing the files in their own blob containers. Next, you could set up five indexers, and schedule them to start at the same time. The indexers will run and import the documents into the search index.
 
-It isn't necessary to set up parallel indexers for the JSON data used in the examples for this module. As indexing  text files is quick, and has relatively low CPU requirements. However, it's a recommended approach to improve the time to complete data ingestion into your index. For example, if your company in the future wanted to do some image processing, which is more CPU intensive.
+It isn't necessary to set up parallel indexers for the JSON data used in the examples for this module. As indexing  text files is quick, and has relatively low CPU requirements. However, it's a recommended approach to improve the time to complete data ingestion into your index, (for example, if your company, in the future, wanted to do some image processing, which is more CPU intensive).
 
-
-## Enhancing Azure Cognitive Search indexes with AI
+## Enhance Azure Cognitive Search indexes with AI
 
 Azure Cognitive Search has embedded AI. It works by using Azure Cognitive Services (Cognitive Search) to add skills that include image processing, content extraction, or natural language processing (NLP). This makes it possible to index previously unsearchable, or unstructured content.
 

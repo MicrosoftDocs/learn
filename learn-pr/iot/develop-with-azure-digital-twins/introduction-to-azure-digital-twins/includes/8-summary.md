@@ -9,10 +9,10 @@ In this module, you learned about:
 ## Resources
 
 - [Learn more about Azure Digital Twins](https://azure.microsoft.com/en-us/services/digital-twins/)
-- [Get started with Azure Digital Twins technical resources](https://docs.microsoft.com/en-us/azure/digital-twins/overview)
+- [Get started with Azure Digital Twins technical resources](https://docs.microsoft.com/azure/digital-twins/overview)
 - [Watch Azure Digital Twins demo video](https://aka.ms/ADTSupplyChainVideo)
 - [Read Azure Digital Twins customer stories](https://customers.microsoft.com/en-us/search?sq=azure%20digital%20twins&ff=&p=2&so=story_publish_date%20desc)
-- Watch IoT shows:
+- Watch IoT Shows:
   - [Deep Dive: Azure Digital Twins Updated Capabilities](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Deep-Dive-Azure-Digital-Twins-Updated-Capabilities)
   - [Ansys Twin Builder Integration with Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Ansys-Twin-Builder-Integration-with-Azure-Digital-Twins)
   - [Bentley iTwin and iModel.js Integration with Azure Digital Twins](https://channel9.msdn.com/Shows/Internet-of-Things-Show/Bentley-iTwin-and-iModeljs-Integration-with-Azure-Digital-Twins)

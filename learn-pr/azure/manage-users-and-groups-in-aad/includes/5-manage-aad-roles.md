@@ -12,10 +12,10 @@ Each role is a set of properties defined in a JavaScript Object Notation (JSON) 
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
-You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. Try entering the following command into the Cloud Shell on the right.
+You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. 
 
 ```powershell
-Get-AzRmRoleDefinition -Name Owner
+Get-AzRoleDefinition
 ```
 
 This code should produce the following output:

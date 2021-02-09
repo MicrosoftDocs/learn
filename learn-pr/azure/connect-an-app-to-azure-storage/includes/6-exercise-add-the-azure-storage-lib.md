@@ -9,13 +9,13 @@ The Azure Storage Blobs client library for .NET is distributed with NuGet. You'l
 
 1. Add the **Azure.Storage.Blobs** package to the application.
 
-    ```bash
+    ```dotnetcli
     dotnet add package Azure.Storage.Blobs
     ```
 
 1. This should result in some console activity while the client library, and all the required dependencies are downloaded. After it's done, go ahead and build and run the app again to make sure everything is ready to go.
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
