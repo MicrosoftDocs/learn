@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.oxford.deploy-iot-edge-kubernetes
+metadata:
+  title: "Deploy IoT Edge on Kubernetes"
+  description: "University of Oxford"
+  ms.date: 02/02/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
+summary: ""
+abstract: |
+    In this module, you will:
+    - Use a pre-trained image classification module with Azure Cognitive Services
+    - Deploy your solution to the IoT Edge using VS Code
+    - Verify a module that running successfully
+
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: |
+    - Basic knowledge of IoT Edge
+    - Basic knowledge of Cognitive Services
+    - Azure subscription
+    - Simulated Azure IoT Edge device (such as a PC)
+    - USB Camera
+iconUrl: /learn/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognive-services.svg
+badge:
+  uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.badge
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-edge
+units:
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.introduction
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.design-computer-vision-solution
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-install-edge-runtime-linux
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.create-fruit-classification-model
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-build-deploy-solution

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.design-computer-vision-solution
+title: Exercise - Design Computer Vision solution
+metadata:
+  title: Exercise - Design Computer Vision solution
+  description: In this section, we help the learner to how to design the solution.
+  ms.date: 02/09/21
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 8 # dummy number at present
+content: |
+  [!include[](includes/2-design-computer-vision-solution.md)]
