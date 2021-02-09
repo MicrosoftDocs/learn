@@ -30,7 +30,7 @@ Event notification is the notification of a specific happening or event. Each ev
 
 _1. Event: Alex buys a coffee._
 
-_2. Event Alex buys a cappuccino._
+_2. Event: Alex buys a cappuccino._
 
 One barista would have to listen carefully to all events to get Alex's whole order. But two baristas could also prepare and serve the drinks independently.
 
