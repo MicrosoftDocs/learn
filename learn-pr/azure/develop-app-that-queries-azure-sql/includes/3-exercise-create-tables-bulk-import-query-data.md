@@ -154,7 +154,7 @@ Let's create the database and server to store the data for the app.
 
 You can now create the tables to store the data from the .csv files.
 
-1. Navigate to the Azure portal **Home** page rom the upper-left link, search for, and select **SQL databases**.
+1. Navigate to the Azure portal **Home** page from the upper-left link, search for, and select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 

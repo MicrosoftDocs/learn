@@ -110,7 +110,7 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrol+Q</kbd>.
+1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the code editor by pressing <kbd>Ctrl+Q</kbd>.
 
 1. Use the code editor to open the **DataAccessController.cs** file.
 
