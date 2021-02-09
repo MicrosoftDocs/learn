@@ -6,7 +6,7 @@ As an infrastructure manager, you need your build and deployment workflows to be
 
 By using GitHub Actions, you can run a continuous integration and continuous delivery (CI/CD) process that's linked to your GitHub repositories.
 
-With Github Actions, you can build, test, and deploy your code right from GitHub. You can also assign code reviews, manage branches, and triage issues.
+With GitHub Actions, you can build, test, and deploy your code right from GitHub. You can also assign code reviews, manage branches, and triage issues.
 
 ## GitHub Actions components
 
