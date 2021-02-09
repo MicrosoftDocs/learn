@@ -40,7 +40,7 @@ With event carried state transfer, all the needed information is stored in a sin
 
 _1. Event: Alex buys a coffee._
 
-_2. Event Alex buys, additionally to the coffee, a cappuccino._
+_2. Event: Alex buys, in addition to the coffee, a cappuccino._
 
 With one barista, listening only to the second event might be enough. With two baristas, the second one would have to look at the first one. The order could be served together, but the process might take longer than doing it completely decoupled.
 
@@ -56,7 +56,7 @@ _1. Event: Alex buys a coffee._
 
 _Cashier: (First) order (for Alex): Coffee_
 
-_2. Event Alex buys a cappuccino._
+_2. Event: Alex buys a cappuccino._
 
 _Cashier: (Second) order (for Alex): Cappuccino_
 

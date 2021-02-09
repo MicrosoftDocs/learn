@@ -14,13 +14,13 @@ quiz:
   questions:
   - content: "How fast is real time?"
     choices:
-    - content: "Two seconds."
+    - content: "Two seconds"
       isCorrect: false
       explanation: "Two seconds are too much for real-time requirements."
-    - content: "An instant, more properly defined by your specific use case."
+    - content: "An instant, more properly defined by your specific use case"
       isCorrect: true
       explanation: "Correct. Real-time tasks are performed with almost no delay. The execution time should be defined in advance and monitored properly."
-    - content: "Under 1 millisecond."
+    - content: "Under 1 millisecond"
       isCorrect: false
       explanation: "Wow, that's fast. Could be, but the execution time depends on your specific use case."
   - content: 'Which of the following databases are best to perform event-driven workloads?'
@@ -34,14 +34,14 @@ quiz:
     - content: Azure Database for PostgreSQL
       isCorrect: false
       explanation: "Azure Database for PostgreSQL is a relational database service based on the open-source PostgreSQL database engine. It's a fully managed database as a service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability. But aren't you missing one?"
-    - content: All of them.
+    - content: All of them
       isCorrect: true
       explanation: "Yes. Using an event-driven workload doesn't limit you to a specific database. Choose the one that best fits your scenario."
   - content: "How should events be built?"
     choices:
     - content: "Events should be built generically."
       isCorrect: false
-      explanation: "Generic events might look like a good idea for improved maintainability but likely result in large events and disable loose coupling."
+      explanation: "Generic events might look like a good idea for improved maintainability but will likely result in large events and disable loose coupling."
     - content: "Events should be precise and lightweight."
       isCorrect: true
       explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
