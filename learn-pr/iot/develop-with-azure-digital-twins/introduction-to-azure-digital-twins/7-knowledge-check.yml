@@ -55,12 +55,12 @@ quiz:
       explanation: Good guess, but the connections have a more specific name!
     - content: 'Telemetry'
       isCorrect: false
-      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into an IoT hub.
+      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into Azure IoT Hub.
  
 
   - content: "After you create a knowledge graph of your digital twin models and connect the models with relationships, what's the best method of gaining insights into the future of your business?"
     choices: 
-    - content: 'A. Connect the telemetry output from an IoT hub, via event routes, to the knowledge graph.'
+    - content: 'A. Connect the telemetry output from Azure IoT Hub, via event routes, to the knowledge graph.'
       isCorrect: false
       explanation: Connecting live telemetry will certainly bring your knowledge graph to life, but you'll need to use another technology to gain insights.
     - content: 'B. Store the Azure Digital Twins data in Azure Data Lake.'
