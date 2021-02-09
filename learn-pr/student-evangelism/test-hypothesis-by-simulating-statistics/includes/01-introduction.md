@@ -11,7 +11,7 @@ In data science, a "model" is a set of assumptions about data. Often,
 models include assumptions about chance processes used to generate data.
 
 Sometimes, data scientists have to decide whether or not their models
-are good. In this section, we will discuss an examples of making such
+are good. In this section, we will discuss an example of making such
 decisions. In later sections, we will use the methods developed here as
 the building blocks of a general framework for testing hypotheses.
 
