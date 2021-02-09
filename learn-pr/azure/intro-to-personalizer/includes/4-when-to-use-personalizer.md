@@ -1,8 +1,8 @@
 How do you know when, or where, to use Personalizer? Microsoft offers some recommendations on scenarios such as:
 
-- You want to select and display content to users for enhancing their experience with your services. Perhaps you want to help guide users through a web site experience to ensure they can successfully navigate your offerings. If you are selling mobile phones, you may want to help the user discover how to make selections for size, color, storage, etc.
-- Achieve better business results through upsell opportunities or driving revenues through targeted advertisements on your site.
-- Improving productivity by guiding employees through complex processes. Perhaps you want to ensure that all expense reports are completed accurately the first time, which reduces delays in payment of expenses.
+- You want to select and display content to users for enhancing their experience with your services. If you are selling mobile phones, you may want to help the user discover how to make selections for size, color, storage, etc.
+- Achieve better business results through targeted advertisements on your site.
+- Improving productivity by guiding employees through complex processes. 
 
 The list represents a small sample of opportunities for implementing Personalizer in your environment. You may consider Personalizer as a good choice for any service or application that can benefit from offering recommendations and suggestions that make the user feel as through the service or application has been tailored to their needs.
 
