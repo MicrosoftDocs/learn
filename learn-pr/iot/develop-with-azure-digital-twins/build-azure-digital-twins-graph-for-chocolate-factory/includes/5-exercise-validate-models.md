@@ -1,4 +1,4 @@
-In this unit, you download the DTDL validator sample. This is a command line sample application that parses and validates a DTDL hierarchy of models, given a root folder. You'll also deliberately add errors to a copy of a model file to demonstrate the benefits of using the validation sample application.
+In this unit, you download the DTDL validator sample. This is a command-line sample application that parses and validates a DTDL hierarchy of models, given a root folder. You'll also deliberately add errors to a copy of a model file to demonstrate the benefits of using the validation sample application.
 
 ## Download the DTDL validator sample application
 
