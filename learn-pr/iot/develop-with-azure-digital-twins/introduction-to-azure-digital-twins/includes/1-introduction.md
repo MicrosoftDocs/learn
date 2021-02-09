@@ -1,10 +1,10 @@
 We hear the term "digital twin" used frequently in many contexts. The term has been around for a while, but the definition has broadened as companies continue to evolve along with technology. With the availability of cloud technology, advances in simulation, modeling capabilities, IoT platforms, and better interoperability with IoT sensors, companies have started to invest heavily in digital twin solutions.
 
-How can a business address their digital twin needs?
+How can a business address its digital twin needs?
 
 And how can Microsoft help?
 
-On completing this module, you will be able to:
+On completing this module, you'll be able to:
 
 - Describe how Microsoft defines digital twins, the core concepts, and the building blocks to implement a digital twin solution.
 - List customer goals for digital twin applications.
