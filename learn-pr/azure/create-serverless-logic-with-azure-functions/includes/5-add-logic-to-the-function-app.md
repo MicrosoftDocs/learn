@@ -14,7 +14,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="javascript"
 
-1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to Resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
 1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
@@ -78,21 +78,17 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function App page appears.
 
-1. In the left-hand menu, select **All resources**, and then select "**<rgn>[sandbox resource group name]</rgn>**" for the resource group you created in the first exercise.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page appears for your Function App.
 
-1. The resources for the group appear. Select the name of the function app that you created in the previous exercise -  **escalator-functions-xxxxxxx** (also indicated by the lightning bolt Function icon).
-
-    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
-
-1. Select **Functions** from the left nav bar, and then select **+ Add** from the top menu bar. The **Add function** panel appears that starts the function creation process.
+1. From the top menu bar, select (**+ Add**). The **Add function** panel appears that starts the function creation process.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
 1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Add** to create the function.
 
-1. When your function creation completes, the code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, in the left nav bar, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -127,7 +123,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
     Our function expects a name to be passed in either through the HTTP request query string, or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message **Hello $name**, echoing back the name that was sent in the request.
 
-    On the right-hand side of the source view, you'll see two tabs. The **View files** tab lists the code and config file for your function. Select **function.json** to view the configuration of the function, which should look like the following.
+1. From the source dropdown, select **function.json** to view the configuration of the function, which should look like the following.
 
     ```json
     {
@@ -145,10 +141,9 @@ As we described in the preceding unit, Azure provides templates that help you ge
         {
           "type": "http",
           "direction": "out",
-          "name": "Response"
+          "name": "res"
         }
       ],
-      "disabled": false
     }
     ```
 
