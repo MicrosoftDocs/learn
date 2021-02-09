@@ -220,6 +220,19 @@ In Visual Studio Code, be sure that the <i>app.py</i> file is open in the editor
 
 :::image type="content" source="../media/debug-flask-combined.png" lightbox="../media/debug-flask-combined.png" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
 
+
+:::image type="content" source="../media/composite-test-1.gif" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
+:::image type="content" source="../media/composite-test-1.gif" border="false" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
+:::image type="content" source="../media/composite-test-2.png" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
+:::image type="content" source="../media/composite-test-2.png" border="false" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
+:::image type="content" source="../media/composite-test-3.jpg" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
+:::image type="content" source="../media/composite-test-3.jpg" border="false" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
+
 > [!Note]
 > If you don’t see a new file named *launch.json* in the *.vscode* folder in your application code folder, you can manually create the configuration file.
 >
