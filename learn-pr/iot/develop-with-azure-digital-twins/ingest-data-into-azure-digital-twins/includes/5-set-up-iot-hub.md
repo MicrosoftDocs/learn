@@ -1,4 +1,4 @@
-In this unit, you'll create and configure an instance of Azure IoT Hub.
+In this unit, you'll create and configure an instance of Azure IoT Hub.  IoT Hub is used to receive telemetry from IoT Devices.  A node.js application will be used to simulate machines in a chocolate factory (IoT Devices).
 
 ## Create an IoT hub
 
@@ -83,8 +83,9 @@ In this section, you configure your IoT hub to publish events as they occur.
 
 ## Verify that the twin is updated
 
-To see the values being updated in the twin Thermostat67, run this command:
+To see the values being updated in the twin GrindingStep, run this command:
 
 ```azurecli
 az dt twin show -n $dtname --twin-id GrindingStep
 ```
+The values shown for ChasisTemperature should match the values being sent by the devices simulator.
