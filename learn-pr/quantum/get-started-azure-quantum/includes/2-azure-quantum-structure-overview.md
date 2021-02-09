@@ -1,4 +1,4 @@
-Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs and solving optimization problems. In this unit, you will become familiar with the core elements of the Azure Quantum platform. You will learn how to use the different quantum services and create and submit projects to the cloud to use the hardware available. 
+Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs and solving optimization problems. In this unit, you will become familiar with the core elements of the Azure Quantum platform. You will learn how to use the different quantum services and create and submit projects to the cloud to use the hardware available.
 
 ## What is an Azure subscription?
 
@@ -20,14 +20,13 @@ To store your jobs and results, you will need an Azure storage account. It is on
 
 When you run a quantum computing program or solve an optimization problem in Azure Quantum, you create and run a *job*.
 
-The steps to create and run a job depend on
-the job type and the provider and target that you configure for the Workspace.  All jobs, however, have the following properties in common:
+The steps to create and run a job depend on the job type and the provider and target that you configure for the Workspace. All jobs, however, have the following properties in common:
 
-|Property |Description|
+|Property|Description|
 |-----|----|
-|**ID**|A unique identifier for the job. It must be unique within the Workspace.    |
-|**Provider**|_Who_ you want to run your job. For example, the Microsoft Quantum Solution provider, or a third-party provider. |
-|**Target**| _What_ you want to run your job on. For example, the exact quantum hardware or quantum simulator offered by the provider. |
+|**ID**|A unique identifier for the job. It must be unique within the Workspace.|
+|**Provider**|*Who* you want to run your job. For example, the Microsoft Quantum Solution provider, or a third-party provider.|
+|**Target**|*What* you want to run your job on. For example, the exact quantum hardware or quantum simulator offered by the provider.|
 |**Name**|A user-defined name to help organize your jobs.|
 |**Parameters**|Optional input parameters for targets. See the documentation for the selected target for a definition of available parameters.|
 

@@ -29,7 +29,7 @@ The information below summarizes the fields and settings required when provision
 
 The **Basics** tab, prompts for the following details:
 
-- **Subscription**. Select your Azure subscription. 
+- **Subscription**. Select your Azure subscription.
 
 - **Resource Group**. Either pick an existing resource group, or select **Create new** to build a new one.
 
@@ -41,7 +41,7 @@ The **Basics** tab, prompts for the following details:
 
 - **Version**. The version of MySQL or PostgreSQL to deploy.
 
-- **Compute + storage**. The compute, storage, and backup configurations for your new server. The **Configure server** link enables you to select the resources required to support you database workloads. These resources include the amount of computing power, memory, backups, and redundancy options (for high availability). 
+- **Compute + storage**. The compute, storage, and backup configurations for your new server. The **Configure server** link enables you to select the resources required to support your database workloads. These resources include the amount of computing power, memory, backups, and redundancy options (for high availability).
 
     > [!NOTE]
     > The term *compute* refers to the amount of processor power available, but in terms of size and number of CPUs allocated to the service.
