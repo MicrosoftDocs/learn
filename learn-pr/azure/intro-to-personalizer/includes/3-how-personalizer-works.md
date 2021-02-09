@@ -1,13 +1,25 @@
 To understand how Personalizer works, consider the concept of reinforcement learning. You may recall experiments showing a cat or dog learning how to get a treat by activating some mechanism. In a sense, we consider that a reinforcement learning concept. Applied to artificial intelligence, reinforcement learning is considered a *closed-loop* model. The term refers to a model where the actions influence later inputs. The model learns behaviors to use based on feedback collected from its use.
 
+To explore reinforcement learning further, consider an interaction with a web site.
+
+1. The user is viewing a product on an e-commerce site. The Rank API takes in the user information, context, and features.
+1. The Personalizer service performs evaluation of the data it receives.
+1. A rank response is returned, which results in a set of products displayed to the user.
+1. When the user selects an item (action), a reward score is selected and passed to the Reward API. This information is used in the training of the model for future actions.
+
 Personalizer uses this model to *learn* how to map the appropriate item to display, based on the users' actions to that item. The learning is realized when the reward score is highest. In other words, if a user is currently viewing hiking shoes on a web site, Personalizer may also display a suggestion for hiking socks and show laces. If users choose the socks item but not the laces item, the reward scores will be different for those items leading to the socks item having a higher reward score.
 
 ## Terminology
 
-To better understand the concepts discussed in this introduction to Personalizer, it helps to have a grasp of the terminology that will be used.  The following definitions will provide context.
+Consider the following terms:
 
 - Learning loop - a Personalizer resource created for each part of your application.
 - Model - the unit that captures all data learned about user behavior, getting training data from the combination of the arguments you send to Rank and Reward calls, and with a training behavior determined by the Learning Policy
+
+## Modes
+
+Personalizer has two primary modes.
+
 - Online mode - The default learning behavior for Personalizer where your learning loop, uses machine learning to build the model that predicts the top action for your content.
 - Apprentice mode - A learning behavior that helps warm-start a Personalizer model to train without impacting the applications outcomes and actions.
 
@@ -18,7 +30,11 @@ The selection of the *best* item is accomplished using the collective behavior a
 - Action features provide metadata about that action. For example, using socks as the action (item), features might include foot, comfort, shoe accessories, cushioning, etc.
 - Context features can include the users (previous shopping history), users' environment (mobile device or desktop browser), or the category they are shopping in (hiking, walking, swimming, etc.).
 
+## Ranking
+
 The Personalizer service will use a **Rank** call when working with action and context features. The **Rank** call considers the action and its features, along with the context features, to help select the top action item to display. The Rank call returns the ID of which content item, action, to show to the user, in the Reward Action ID field. The action shown to the user is chosen with machine learning models, that try to maximize the total number of rewards over time.
+
+## Scenarios
 
 Consider the scenario presented in this table to understand the process:
 
