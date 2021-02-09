@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
-  - Basic familiarity with Azure Cognitive services
+  - Basic familiarity with Azure Cognitive Services
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
