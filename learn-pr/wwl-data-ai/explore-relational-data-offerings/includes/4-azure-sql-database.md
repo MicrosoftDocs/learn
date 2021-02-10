@@ -7,7 +7,7 @@ Azure SQL Database is a PaaS offering from Microsoft. You create a managed datab
 > [!NOTE] 
 > A SQL Database server is a logical construct that acts as a central administrative point for multiple single or pooled databases, logins, firewall rules, auditing rules, threat detection policies, and failover groups.
 
-Azure SQL Database is available with several options: *Single Database*, *Elastic Pool*, and *Managed Instance*. The following sections describe Single Instance and Elastic Pool. Managed Instance is the subject of the next unit.
+Azure SQL Database is available with several options: *Single Database*, *Elastic Pool*, and *Managed Instance*. The following sections describe Single Database and Elastic Pool. Managed Instance is the subject of the next unit.
 
 ### Single Database
 

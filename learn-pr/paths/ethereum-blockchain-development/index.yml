@@ -35,5 +35,6 @@ modules:
 - learn.reactors.blockchain-solidity-ethereum-smart-contracts
 - learn.reactors.blockchain-tokens
 - learn.reactors.blockchain-create-ui-decentralized-apps
+- learn.reactors.blockchain-ethereum-networks
 trophy:
   uid: learn.ethereum-blockchain-development.trophy
