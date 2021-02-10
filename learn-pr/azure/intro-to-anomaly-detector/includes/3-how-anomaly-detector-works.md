@@ -1,11 +1,13 @@
-The Anomaly Detector API supports batch processing of time series data or last-point anomaly detection for real-time data. Also included in the time series batch processing, is the ability to find trend change points. All three options are available via a REST API or SDKs targeting .NET, Python, Node.js, and Go.
+The Anomaly Detector API supports batch processing of time series data or last-point anomaly detection for real-time data. Also included in batch processing, is the ability to find trend change points. All three options are available via a REST API or SDKs targeting .NET, Python, Node.js, and Go.
 
-When using the batch detection mode, Anomaly Detector creates a single statistical model based on the entire data set that is passed to the service.  From this model, each data point in the data set is evaluated and anomalies are identified. Batch detection is best used when your data has the following characteristics:
+When using the batch detection mode, Anomaly Detector creates a single statistical model based on the entire data set that you pass to the service.  From this model, each data point in the data set is evaluated and anomalies are identified. Batch detection is best used when your data has the following characteristics:
 
 - Seasonal time series with occasional anomalies
-- Flat trend times series with occasional spikes or dips
+- Flat trend time series with occasional spikes or dips
 
-Seasonal times series is considered to be a pattern in your data, that occurs at regular intervals. Examples would be hourly, daily, or monthly patterns. Using seasonal data, and specifying a period for that pattern, can help to reduce the latency in detection.
+Seasonality is considered to be a pattern in your data, that occurs at regular intervals. Examples would be hourly, daily, or monthly patterns. Using seasonal data, and specifying a period for that pattern, can help to reduce the latency in detection.
+
+## How anomalies are identified
 
 The Anomaly Detector API identifies anomalies that exist outside the scope of a boundary. The boundary is set using a sensitivity value. By default, the upper and lower boundaries for anomaly detection are calculated using concepts known as **expectedValue**, **upperMargin**, and **lowerMargin**. The upper and lower boundaries are calculated using these three values. If a value exceeds either boundary, it will be identified as an anomaly. You can adjust the boundaries by applying a **marginScale** to the upper and lower margins as demonstrated by the following formula.
 

@@ -4,7 +4,7 @@ A pharmaceutical company stores medications in long-term storage facilities. The
 
 Your task is to investigate a solution that you have heard about, called anomaly detection. You want to verify if the Anomaly Detector service is the right choice. You will evaluate if it is capable of monitoring the temperature sensor readings in real time, but also to see if it can evaluate historical data as well.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 
