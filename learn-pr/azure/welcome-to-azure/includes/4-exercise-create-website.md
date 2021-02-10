@@ -16,13 +16,13 @@ The Microsoft Azure Marketplace is an online store that hosts applications that
 
 We're going to use one of the WordPress application options from the Azure Marketplace for our website.
 
-## Creating resources in Azure
+## Create resources in Azure
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
 In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, eliminating the need to create resources independently.
 
-## Choosing a location
+## Select a location
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -59,9 +59,12 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     | **Resource Group** | From the dropdown, select the **<rgn>[sandbox resource group name]</rgn>** resource group. |
     | **Database Provider** | Select **MySQL in App**. |
     | **App Service plan/Location** | In the **App Service plan** panel, select the dropdown. The **App Service plan** panel appears. Select **Create new**. The **New App Service Plan** panel appears. The App Service plan specifies the compute resources and location for the web app. Enter the following values for each setting. |
-        | **App Service plan** | Enter a *name* for the new service plan. |
-        | **Location** | Select **Central US** to make sure we pick a region that allows the service plan you will pick. Normally, you would pick the region that is closest to your customers while offering the services you need. |
-        | **Pricing tier** | Select the dropdown. The **Spec Picker** panel appears. The **Spec Picker** enables us to select a new pricing tier for our application. This panel opens to the *Production* tab, with the S1 pricing tier selected. Select the **Dev / Test** tab, and then select the **F1** pricing tier for our website. Then select **Apply**. |
+
+    | Setting | Value |
+    | --- | --- |
+    | **App Service plan** | Enter a *name* for the new service plan. |
+    | **Location** | Select **Central US** to make sure we pick a region that allows the service plan you will pick. Normally, you would pick the region that is closest to your customers while offering the services you need. |
+    | **Pricing tier** | Select the dropdown. The **Spec Picker** panel appears. The **Spec Picker** enables us to select a new pricing tier for our application. This panel opens to the *Production* tab, with the S1 pricing tier selected. Select the **Dev / Test** tab, then select the **F1** pricing tier for our website, and then select **Apply**. |
 
 1. The **New App Service Plan** panel reappears. Select **OK**. The **WordPress** *Create* panel reappears.
 
@@ -74,8 +77,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Select **Create** to start the deployment of your new site.
 
-> [!NOTE]
-> If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating this WordPress site.
+    > [!NOTE]
+    > If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating this WordPress site.
 
 ## Verify your website is running
 
@@ -99,10 +102,10 @@ We can track the progress of the deployment at any time.
 
     ![Screenshot of Azure portal showing deployment notification, stating "Deployment succeeded".](../media/4-deployment-complete.png)
 
-1. Find the URL in the Overview section.
+1. Find the URL in the Overview section. Copy the **URL** information from the *Copy to clipboard* icon.
 
     [![Screenshot of Azure portal showing App Service overview pane with URL location highlighted.](../media/4-website-url.png)](../media/4-website-url-expanded.png#lightbox)
 
-    Copy the **URL** information from the *Copy to clipboard* icon. Open a new tab in your browser, and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
+1. Open a new tab in your browser to browse to your new WordPress site. You can now configure your WordPress website, and add content.
 
     :::image type="content" source="../media/4-configure-wordpress.png" alt-text="Screenshot showing pre-configured WordPress website waiting on language/location selection." loc-scope="third-party":::
