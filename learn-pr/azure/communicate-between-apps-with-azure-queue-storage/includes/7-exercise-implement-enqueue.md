@@ -5,7 +5,7 @@ Now that all the requirements are in place, you can write code that creates a ne
 Let's start by adding the **Azure Storage Client Library for .NET** to our app. It can be installed with NuGet (a .NET package manager). 
 
   > [!NOTE] 
-  > WindowsAzure.Storage is the old version of Azure.Storage.Queues.  We aree working on updating this content. 
+  > WindowsAzure.Storage is the old version of Azure.Storage.Queues.  We are working on updating this content. 
 
 1. Install the `WindowsAzure.Storage` package to the project with the `dotnet add package` command. You can do this in the terminal window _below_ the Cloud Shell, or if you are working on your local computer, in a terminal/console window in the same folder as the project.
 
