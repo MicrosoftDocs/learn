@@ -113,7 +113,7 @@ Now things get a bit more complex. You need to define a model for a production l
 | --------- | ---- | ----------- |
 Line ID | Property | A unique ID for the production line. Perhaps a floor contains more than one line.
 `LineOperationStatus` | Property with schema | A property that indicates whether the production line is online (running), or not.
-Runs steps  | Relationship | The production lines runs production steps, identified by the `dtmi:com:microsoft:iot:e2e:digital_factory:production_line:rel_runs_steps;1` ID. The steps also have an online or offline status property.
+Runs steps  | Relationship | The production steps for the production lines' runs, identified by the `dtmi:com:microsoft:iot:e2e:digital_factory:production_line:rel_runs_steps;1` ID. The steps also have an online or offline status property.
 
 1. Look over the production line model. Note the use of the status schema for both the production line and for each production step:
 

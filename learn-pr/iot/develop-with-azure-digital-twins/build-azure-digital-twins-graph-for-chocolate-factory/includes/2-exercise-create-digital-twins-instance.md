@@ -6,7 +6,7 @@ In this unit, you create an instance of an Azure Digital Twins resource. Then yo
 
 1. Select **+ Create a resource**.
 
-1. In the **Search the marketplace** text box, enter "Azure Digital Twins".
+1. In the **Search the marketplace** text box, enter **Azure Digital Twins**.
 
 1. Select **Azure Digital Twins** > **Create**.
 

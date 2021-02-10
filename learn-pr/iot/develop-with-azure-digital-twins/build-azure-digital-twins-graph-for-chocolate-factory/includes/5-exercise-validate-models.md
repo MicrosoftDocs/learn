@@ -1,4 +1,4 @@
-In this unit, you download the DTDL validator sample. This is a command line sample application that parses and validates a DTDL hierarchy of models, given a root folder. You'll also deliberately add errors to a copy of a model file to demonstrate the benefits of using the validation sample application.
+In this unit, you download the DTDL validator sample. This is a command-line sample application that parses and validates a DTDL hierarchy of models, given a root folder. You'll also deliberately add errors to a copy of a model file to demonstrate the benefits of using the validation sample application.
 
 ## Download the DTDL validator sample application
 
@@ -79,7 +79,7 @@ In this section, you'll deliberately add errors to a DTDL model to test the vali
 
 1. You should notice that you get an error that there are multiple definitions of a model.
 
-1. Correct the duplicate error by changing the ID. Change "grinding" to "crunching", on line 2.
+1. Correct the duplicate error by changing the ID. Change "grinding" to "crunching" on line 2.
 
 1. Save off **ProductionStepGrinding - Copy.json** and run the command again. You shouldn't receive any more errors.
 

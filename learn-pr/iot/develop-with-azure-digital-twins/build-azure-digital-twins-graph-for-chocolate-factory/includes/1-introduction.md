@@ -17,18 +17,18 @@ To summarize, in this module, you will:
 ## Prerequisites
 
 - Familiarity with the Azure portal.
-- Introductory knowledge of Azure IoT is recommended. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) learning path.
-- A basic understanding of the Azure CLI. Following [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended.
-- [Azure Command Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli).
-  - It is recommended to install AZ CLI locally.
-  - It is not recommended to use the Azure Cloud Shell as it will timeout due to the length of the lab. 
+- We recommend introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) learning path.
+- A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module.
+- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+  - We recommend installing the Azure CLI locally.
+  - We don't recommend using Azure Cloud Shell, because it will time out due to the length of the lab. 
 - macOS: [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6&preserve-view=true).
-- Windows OS: PowerShell is built-in.
-- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory Tenant to complete the exercise units.
+- Windows OS: PowerShell is built in.
+- Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory tenant to complete the exercise units.
 - [Visual Studio Code](https://code.visualstudio.com/).
 - [Node.js](https://nodejs.org/en/download/) version 14.
 - [.NET Core 3.1](https://dotnet.microsoft.com/download).
-- [C# VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
+- [C# Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ## The scenario
 

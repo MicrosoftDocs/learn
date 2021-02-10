@@ -9,7 +9,7 @@ With all the digital twins in view on the graph, set the production step propert
 
 1. Select one or more properties, and enter values by using the keyboard.
 
-1. Select the **Save** icon at the top-right. Verify that the properties have been updated in the dialog box that shows the new values.
+1. Select the **Save** icon at the top right. Verify that the properties have been updated in the dialog box that shows the new values.
 
     :::image type="content" source="../media/explorer-graph-save-properties.png" alt-text="Screenshot of where to find the icon to save properties for a digital twin." lightbox="../media/explorer-graph-save-properties.png":::
 
@@ -133,6 +133,6 @@ Now run through a range of queries. Copy and paste the following queries into th
 
 ## Next steps
 
-Great work, you've completed all the exercises in this module! The next unit summarizes what you've learned.
+Great work! You've completed all the exercises in this module. The next unit summarizes what you've learned.
 
 To finish this module and earn your rewards, complete a final knowledge check.
