@@ -17,3 +17,6 @@ Some models are too complex to render at interactive frame rates, even for a hig
 ## Hybrid rendering
 
 Most likely, your application requires some variation of custom UI to provide functionality to users. Azure Remote Rendering supports **Hybrid Rendering** which automatically combines locally rendered content with the remote image at the end of a frame. The flexibility to use your desired UI enables you to create suitable UI for your application without limiting yourself to a dedicated UI framework.
+
+> [!NOTE]
+> To learn more about pricing, refer to Remote Rendering Pricing available in the resources of this module.
