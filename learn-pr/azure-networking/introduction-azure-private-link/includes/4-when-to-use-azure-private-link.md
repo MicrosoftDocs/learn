@@ -47,7 +47,7 @@ Now suppose that the user is a malicious infiltrator who has taken control of th
 
 This scenario is an example of *data exfiltration*. Private Link lowers the risk of data exfiltration by  mapping a Private Endpoint to a single instance of an Azure resource. An attacker might still be able view the data, but has no way to copy or move it to another resource.
 
-:::image type="content" source="../media/4-using-private-link.png" alt-text="Network diagram of an Azure virtual network accessing a single instance of an Azure SQL database via a private IP address mapped by Private Endpoint and not allowing access to other instances of Azure SQL Database.":::
+:::image type="content" source="../media/4-using-private-link.png" alt-text="Network diagram of an Azure virtual network accessing a single instance of an Azure SQL database via a private IP address mapped by Private Endpoint and not allowing access to other instances of Azure SQL Database." border="false":::
 
 ## Offering customers private access to company-created Azure services
 
