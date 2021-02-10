@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-web-application-firewall.2-what-is-azure-web-application-firewall
+title: What is Azure Web Application Firewall?
+metadata:
+  title: What is Azure Web Application Firewall?
+  description: Learn the basics of Azure Web Application Firewall including key features and common attacks it protects against.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-azure-web-application-firewall.md)]
