@@ -1,8 +1,10 @@
-Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed through the Azure portal, CLI, or PowerShell. AVS includes VMware vSphere, vCenter, vSAN, and NSX software. AVS private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram depicts the adjacency of an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to.
+Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed through the Azure portal, CLI, or PowerShell. AVS includes VMware vSphere, vCenter, vSAN, and NSX software. AVS private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram depicts the relationship between an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to.
 
-:::image type="content" source="../media/2-avs-simple-overview.png" alt-text="Simple overview of Azure VMware Solution":::
+:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Illustration that shows the relationship of an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to like Azure Machine Learning, PowerApps, and so on.":::
 
-AVS will allow your company to run native VMware workloads on Azure. VMs can be to migrateds directly from the on-premises VMware environment to AVS. The VMs in AVS will run like VMs do on-premises. In order to deploy AVS, some planning steps need to occur. You'll need to evaluate required Azure components, review eligibility criteria, assess the migration pattern, plan the network topology, and evaluate the AVS solution components.
+AVS will allow your company to run native VMware workloads on Azure. VMs can be migrated directly from the on-premises VMware environment to AVS. The VMs in AVS run like VMs do on-premises.
+
+In order to deploy AVS, you need to plan the deployment. You'll need to evaluate required Azure components, review eligibility criteria, assess the migration pattern, plan the network topology, and evaluate the AVS solution components.
 
 ## Evaluate Azure components
 

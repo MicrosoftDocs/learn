@@ -2,15 +2,15 @@ The AVS environment can be built once all pre-planning steps are complete. AVS w
 
 ## Register the resource provider
 
-The resource provider must first be registered within the subscription. We discussed this task in the last unit. Registering the resource provider can be done through the portal, AZ-CLI, or PowerShell.
+The resource provider must first be registered within the subscription. We discussed this task in the last unit. Registering the resource provider can be done through the Azure portal, Azure CLI, or PowerShell.
 
-Launch a cloud shell session directly to the subscription and use the following command for the AZ-CLI:
+Launch Azure Cloud Shell, sign in to your Azure subscription, and run the following command for Azure CLI:
 
-```bash
+```azurecli
 az provider register -n Microsoft.AVS --subscription <your subscription ID>    
 ```
 
-Launch a cloud shell session directly to the subscription and use the following command for PowerShell:
+Launch Azure Cloud Shell, sign in to your Azure subscription, and run the following command for PowerShell:
 
 ```powershell
 Register-AzResourceProvider -ProviderNamespace Microsoft.AVS
@@ -18,7 +18,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.AVS
 
 If you use the Azure portal, search for **Subscriptions** and select the subscription you need to register the provider for. Select **Resource providers** and enter Microsoft.AVS into the search.If the resource provider is not registered, select **Register**.
 
-:::image type="content" source="../media/3-register-resource-provider.png" alt-text="Screenshot showcasing where to register the resource provider.":::
+:::image type="content" source="../media/3-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page.":::
 
 ## Deploy Azure VMware Solution
 
@@ -52,7 +52,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
 ## Create Azure Bastion host
 
-After AVS is deployed, you'll create an Azure Bastion host. Azure Bastion will connect to the AVS vCenter and NSX environments. Once ExpressRoute circuits and ExpressRoute Global Reach are configured, the Azure Bastion host isn't needed. A design consideration could be made to keep the resource in the event something ever happens with ExpressRoute connectivity.
+After AVS is deployed, you'll create an Azure Bastion host. The Azure Bastion host provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion host isn't needed. Your comapany may want to keep the resource as a back up in case you have connectivity issues with ExpressRoute in the future.
 
 1. In the Azure portal, search for and create a **Bastion** host.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
