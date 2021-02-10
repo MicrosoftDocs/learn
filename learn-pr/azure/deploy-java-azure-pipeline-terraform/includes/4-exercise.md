@@ -24,7 +24,7 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
 Inside the project directory for the repository you've just created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
 
-Let's look at some sections that define your module's configuration:
+Let's look at a few sections that you might use define your module's configuration:
 
 - Provider: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (azurerm) in the provider block.
 - **Terraform**: The Terraform version that you're working with.
