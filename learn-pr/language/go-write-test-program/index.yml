@@ -21,7 +21,7 @@ abstract:  |
 prerequisites: | 
   - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and installed [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
   - The ability to create and modify `.go` files.
-  - The ability to run Go applications by using the terminal prompt.
+  - The ability to run Go programs by using the terminal prompt.
   - Knowledge of basic data types like `string`, `int`, and `boolean`.
   - Knowledge of how to write basic data control flows like `if` and `for` statements.
   - Knowledge of how to write functions.
