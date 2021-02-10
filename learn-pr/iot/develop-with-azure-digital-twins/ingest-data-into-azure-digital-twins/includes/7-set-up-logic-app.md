@@ -1,4 +1,7 @@
-In this unit, you'll create a custom Azure Logic Apps connector and use it within a logic app. The logic app will periodically update the **Logic App** property of the model and digital twin.
+In this unit, we'll show how a Logic App can be used as the external compute that publishes data into Azure Digital Twins. You'll create a custom Azure Logic Apps connector and use it within a logic app. The logic app will periodically update the **Logic App** property of the GrindingStep digital twin.
+
+> [!Note]
+        > We'll be reusing the client id and client secret that were created for the REST API calls in the previous unit.
 
 ## Create a custom Logic Apps connector
 
@@ -51,8 +54,8 @@ In this unit, you'll create a custom Azure Logic Apps connector and use it withi
 
     - **OAuth 2.0**:
         - **Identity provider**: Azure Active Directory
-        - **Client ID**: The application (client) ID for your Azure AD app registration.
-        - **Client secret**: The client secret you created in Prerequisites for your Azure AD app registration.
+        - **Client ID**: The application (client) ID created in the REST API unit
+        - **Client secret**: The client secret created in the REST API unit
         - **Login URL**: https://login.windows.net (Accept the default value.)
         - **Tenant ID**: The Directory (tenant) ID for your Azure AD app registration.
         - **Resource URL**: 0b07f429-9f4b-4714-9392-cc5e8e80c8b0
