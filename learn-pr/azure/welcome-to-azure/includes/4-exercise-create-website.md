@@ -78,7 +78,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 1. Select **Create** to start the deployment of your new site.
 
     > [!NOTE]
-    > If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating this WordPress site.
+    > If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating our WordPress site.
 
 ## Verify your website is running
 
