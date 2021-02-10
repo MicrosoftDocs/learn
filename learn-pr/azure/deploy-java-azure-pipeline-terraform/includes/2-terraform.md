@@ -18,7 +18,7 @@ By using template-based Terraform configuration files, you can define, provision
 
 As a resource topology becomes increasingly complex, it can be difficult to understand the meaning and effect of infrastructure changes.
 
-By using Terraform, you can validate and preview infrastructure changes before you apply them. Team members can collaborate more effectively by understanding proposed changes and their effect early in the development process. 
+By using Terraform, you can validate and preview infrastructure changes before you apply them. Team members can collaborate more effectively by understanding the proposed changes and their effect early in the development process. 
 
 ## Terraform configuration files
 
@@ -44,12 +44,12 @@ Modules offer many benefits. For example, modules:
 
 - Help organize your project.
 - Encapsulate complexity.
-- Allow you to reuse common tasks
+- Allow you to reuse common tasks.
 - Provide consistency and ensure that you're following good practices.
 
 ### The main.tf file
 
-Your *main.tf* file contains the main set of configuration details for your module. This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need. You can name this file whatever you want, but it's often named *main.tf*.
+Your *main.tf* file contains the main set of configuration details for your module. This file is often called a Terraform _plan_. Your Terraform plan specifies the infrastructure resources that you need. You can name this file whatever you want, but it's usually named *main.tf*.
 
 ## Terraform workflow
 
@@ -71,7 +71,7 @@ Terraform uses state to create plans and make changes to your infrastructure. Be
 
 State is stored by default in a local text file named *terraform.tfstate*. Terraform manages this file by using the workflow actions that you define in your modules.
 
-You can also store state remotely, an approach that works better in a team environment. For more information about managing state remotely, see the "Summary" unit at the end of this module.
+You can also store state remotely, an approach that works better in a team environment. For more information about managing state remotely, see the Summary unit at the end of this module.
 
 ## Next steps
 

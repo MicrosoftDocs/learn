@@ -1,4 +1,4 @@
-In this exercise, you'll configure GitHub actions to provision your Terraform resources.
+In this exercise, you'll configure GitHub Actions to provision your Terraform resources.
 
 ## Access the sample application
 
@@ -14,7 +14,7 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
     ![Screenshot of the "Use this template" button on the mslearn-java-petclinic-simplified main page.](../media/4-template.png)
 
-1. Under **Repository name**, enter a unique name for your repository, following the naming convention for GitHub repositories.
+1. In the **Repository name** box, enter a unique name for your repository. Be sure to follow the naming convention for GitHub repositories.
 
 1. Ensure that the **Private** option is selected, and then select **Create repository from template**.
 
@@ -22,18 +22,18 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
 ## Workflow
 
-Inside the project directory for the repository you've just created, you'll see a directory called *terraform* and a file called *main.tf* in it.
+Inside the project directory for the repository you've just created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
 
-Let's look at some sections that define your module's configuration:
+Let's look at a few sections that you might use define your module's configuration:
 
 - Provider: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (azurerm) in the provider block.
-- Terraform: The Terraform version you're working with.
-- Data: Get data from existing services.
-- Locals: Generates new variables by using functions and expressions.
-- Resource: Describes resources and dependencies.
-- Module: Reusability and complexity abstraction.
+- **Terraform**: The Terraform version that you're working with.
+- **Data**: Gets data from existing services.
+- **Locals**: Generates new variables by using functions and expressions.
+- **Resource**: Describes resources and dependencies.
+- **Module**: Reusability and complexity abstraction.
 
-Let's look at which sections you need in your *main.tf* file:
+Let's look at the sections you need in your *main.tf* file:
 
 ```yml
 provider "azurerm" {
@@ -148,7 +148,7 @@ In the Azure CLI, create a service principal by running the following command:
 az ad sp create-for-rbac --name "<yourServicePrincipalName>" --role contributor --sdk-auth
 ```
 
-The preceding command will return the following JSON. Copy it for use in the next step:
+The preceding command returns the following JSON. Copy it for use in the next step:
 
 ```bash
 {
@@ -175,15 +175,15 @@ For this exercise, you need to store the following secrets:
 To store the secrets, go to your forked GitHub repository, select **Settings** and then, on the left pane, select **Secrets**.
 Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
 
-Be sure to store the secrets without the quotation marks (""), as shown in the following screenshot:
+Be sure to store the secrets without the quotation marks (" "), as shown in the following screenshot:
 
 ![Screenshot showing stored secrets on the Secrets pane under GitHub Settings.](../media/4-secrets.png)
 
 ## Workflow file
 
-Inside your project directory is a directory called *.github/workflows* and a file called *main.yml* within it.
+Inside your project directory is a directory called *.github/workflows* and, within it, a file called *main.yml*.
 
-The *main.yml* file is a GitHub workflow. It will use the secret you've just configured to deploy your application to your Azure subscription.
+The *main.yml* file is a GitHub workflow. It uses the secret you've just configured to deploy your application to your Azure subscription.
 
 In the *main.yml* workflow file is the following content:
 
@@ -244,8 +244,9 @@ This workflow performs the following actions:
 Next, in your repository, trigger your GitHub action by doing the following:
 
 1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
-   * Change `"<CHANGE_ME_RESOURCE_GROUP>"` to your intended resource group name. 
-   * Change `"<CHANGE_ME_APP_NAME>"` to your intended application name. Make sure that your application name is unique.
+
+   a. Change `"<CHANGE_ME_RESOURCE_GROUP>"` to your intended resource group name.  
+   b. Change `"<CHANGE_ME_APP_NAME>"` to your intended application name. Make sure that your application name is unique.
 
     ```yaml
     variable "resource_group" {
@@ -270,11 +271,11 @@ Next, in your repository, trigger your GitHub action by doing the following:
 
 1. In your repository, select **Actions** and then, on the left pane, select the **TERRAFORM** workflow.
 
-1. Verify that the **Terraform Init**, **Terraform Plan**, and **Terraform Validate** steps have been triggered:
+1. In the list of steps, verify that **Terraform Init**, **Terraform Plan**, and **Terraform Validate** have been triggered.
 
     ![Screenshot displaying the results of the Terraform workflow run.](../media/4-terraform-run.png)
 
-1. In the results list, expand the **Terraform Apply** step, and verify that:
+1. In the list of steps, expand **Terraform Apply**, and verify that:
   
     * Terraform has created the resources and displays the Azure instance URL.
     * Your Azure app instance is publicly available.

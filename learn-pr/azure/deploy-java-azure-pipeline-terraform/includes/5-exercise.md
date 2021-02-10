@@ -26,7 +26,7 @@ The Azure App Service Deployment Center automatically generates a GitHub Actions
 
 1. On the final page, review your selections and preview the workflow file that will be committed to the repository. 
 
-   Except for the application name (`APP-NAME`) and publishing profile (`publish-profile`), the contents of your YAML workflow file will be similar to the following:
+   Except for the application name (`APP-NAME`) and publishing profile (`publish-profile`), the contents of your YAML workflow file are similar to the following:
 
     ```yml
     name: Build and deploy JAR app to Azure Web App - APP_NAME
@@ -64,7 +64,7 @@ The Azure App Service Deployment Center automatically generates a GitHub Actions
 1. Select **Save** to commit the workflow file to the repository, and immediately start building and deploying your app.
 
     > [!NOTE]
-    > You can also trigger the GitHub Actions workflow in your repository by selecting the **Actions** tab, selecting the **build-and-deploy** workflow, and then selecting **Re-run Jobs**.
+    > You can also trigger the GitHub Actions workflow in your repository by selecting the **Actions** tab, selecting the **build-and-deploy** workflow, and then selecting **Re-run jobs**.
 
 ## Confirm the GitHub Actions build
 
@@ -87,7 +87,7 @@ Each time you enter a `git push` command to commit your code, your build-and-dep
 > [!IMPORTANT]
 > Re-running the provisioning of your GitHub action won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the GitHub action.
 >
-> Re-running your build=and-deploy GitHub action will replace your application.
+> Re-running your build-and-deploy GitHub action will replace your application.
 >
 > If you re-create your App Service instance, you also need to change to the new publishing profile. You need to change only the following line:
 

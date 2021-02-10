@@ -6,7 +6,7 @@ As an infrastructure manager, you need your build and deployment workflows to be
 
 By using GitHub Actions, you can run a continuous integration and continuous delivery (CI/CD) process that's linked to your GitHub repositories.
 
-With Github Actions, you can build, test, and deploy your code right from GitHub. You can also assign code reviews, manage branches, and triage issues.
+With GitHub Actions, you can build, test, and deploy your code right from GitHub. You can also assign code reviews, manage branches, and triage issues.
 
 ## GitHub Actions components
 
@@ -14,10 +14,10 @@ Let's describe the various GitHub Actions components, as shown in the following 
 
 ![Diagram showing the relationship of GitHub Actions workflows to their component jobs, steps, and actions.](../media/3-actions.png)
 
-- **Workflow**: Triggered by certain events or activities, a workflow is a collection of jobs and steps that automate software development life-cycle tasks.
+- **Workflow**: Triggered by certain events or activities, a workflow is a collection of jobs and steps that automate software development lifecycle tasks.
 - **Job**: A set of steps that execute on a runner.
 - **Step**: A task that can run one or more commands or actions. Each step is made up of individual actions that run after a specific event occurs, such as a pull request. 
-- **Action**: Standalone commands that can be combined into steps. Multiple steps can be combined to create a job. Individual actions are packaged scripts that automate software development tasks. To create a workflow, you add actions to a YAML file in the .github/workflows directory in your GitHub repository.
+- **Action**: Standalone commands that can be combined into steps. Multiple steps can be combined to create a job. Individual actions are packaged scripts that automate software development tasks. To create a workflow, you add actions to a YAML file in the *.github/workflows* directory in your GitHub repository.
 
 ## A Terraform GitHub action
 
@@ -32,7 +32,7 @@ The `hashicorp/setup-terraform` action sets up the Terraform CLI in your GitHub 
 Terraform supports several options for authenticating with Azure:
 
 - When you use Terraform interactively, we recommend that you authenticate via a Microsoft account.
-- When you use Terraform from code or by automation, we recommend that you authenticate via Azure service principal.
+- When you use Terraform from code or by automation, we recommend that you authenticate via an Azure service principal.
 
 An Azure service principal is an identity that you create for use with applications, hosted services, and automated tools to access Azure resources.
 
