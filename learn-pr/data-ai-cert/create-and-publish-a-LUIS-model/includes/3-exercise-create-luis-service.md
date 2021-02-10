@@ -33,7 +33,7 @@ Our application might have several intents: finding pictures, sharing pictures, 
 
 1. After the deployment has successfully completed, select **Go the resource** for the service. The **Quick start** page appears for LUIS Cognitive Services.
 
-1. You'll need one of the displayed subscription keys for later exercises. In the left nav bar, under **RESOURCE MANAGEMENT**, select **Keys and Endpoint**. You'll see the two keys your created.
+1. You'll need one of the displayed subscription keys for later exercises. In the left nav bar, under **RESOURCE MANAGEMENT**, select **Keys and Endpoint**. You'll see the two keys you created.
 
 ## Create a LUIS app
 
@@ -56,17 +56,17 @@ Azure requires you to create the LUIS app in the same geographic location where 
 
 1. Select **+ New app**.
 
->[!Note]
->The portal pages are updated resulting in different titles for the options and actions. You are creating a new app so select that option.
+    >[!Note]
+    >The portal pages are updated resulting in different titles for the options and actions. You are creating a new app so select that option.
 
-1. Give your LUIS app a name, for example, **PictureBotLUIS**.
+1. Enter a name for your LUIS app, for example, **PictureBotLUIS**.
 
 1. For **Culture**, select the appropriate choice.
 
-1. Give your LUIS app a description to clearly define the app's purpose.
+1. Provide your LUIS app a description to clearly define its purpose.
 
 1. Select the **Prediction resource** dropdown, and select the resource you created earlier in this exercise.
 
-1. Select **Done**. The newly created app will open to the Dashboard.
+1. Select **Done**. The newly created app opens on the Dashboard.
 
 1. To switch to the Build view for editing your app, on the top menu bar, select **Build**.
