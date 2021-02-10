@@ -65,7 +65,7 @@ Browsers only understand JavaScript, so when you write your application in TypeS
 
 :::image type="content" source="../media/m01-compiler.png" alt-text="Diagram describes the relationship between JavaScript and TypeScript, where JavaScript can be used directly by TypeScript, but TypeScript must pass through a compiler to become JavaScript." border="false":::
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > When working with TypeScript it is important to remember in almost all situations the TypeScript will be compiled (or transpiled) into JavaScript, and the JavaScript is actually executed by the runtime. You can use TypeScript on **any** project where you use JavaScript.
 
 ## Migrating from JavaScript to TypeScript
