@@ -26,7 +26,7 @@ Inside the project directory for the repository you've just created, you'll see 
 
 Let's look at a few sections that you might use define your module's configuration:
 
-- Provider: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (azurerm) in the provider block.
+- **Provider**: A Terraform configuration file starts with the specification of the provider. When you use Azure, you specify the Azure provider (azurerm) in the provider block.
 - **Terraform**: The Terraform version that you're working with.
 - **Data**: Gets data from existing services.
 - **Locals**: Generates new variables by using functions and expressions.
@@ -172,7 +172,7 @@ For this exercise, you need to store the following secrets:
 * `AZURE_SUBSCRIPTION_ID`
 * `AZURE_TENANT_ID`
 
-To store the secrets, go to your forked GitHub repository, select **Settings** and then, on the left pane, select **Secrets**.
+To store the secrets, go to your forked GitHub repository, select **Settings**, and then select **Secrets** on the left pane.
 Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
 
 Be sure to store the secrets without the quotation marks (" "), as shown in the following screenshot:
@@ -269,7 +269,7 @@ Next, in your repository, trigger your GitHub action by doing the following:
 
 ## Verify the GitHub Actions build
 
-1. In your repository, select **Actions** and then, on the left pane, select the **TERRAFORM** workflow.
+1. In your repository, select **Actions**, and then select the **TERRAFORM** workflow on the left pane.
 
 1. In the list of steps, verify that **Terraform Init**, **Terraform Plan**, and **Terraform Validate** have been triggered.
 
