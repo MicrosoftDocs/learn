@@ -3,7 +3,7 @@ uid: introduction-azure-private-link
 metadata:
   title: "Introduction to Azure Private Link"
   description: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
-  ms.date: 02/28/2021
+  ms.date: 02/10/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
