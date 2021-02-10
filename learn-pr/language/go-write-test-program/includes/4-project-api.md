@@ -29,7 +29,7 @@ func main() {
 }
 ```
 
-Run the application with `go run main.go` to make sure you don't have any errors. The application does nothing else for now, so let's add the logic to create a Web API.
+Run the program with `go run main.go` to make sure you don't have any errors. The program doesn't do anything else for now, so let's add the logic to create a Web API.
 
 ## Expose the statement method
 
