@@ -25,8 +25,6 @@ All traffic to and from the internet is denied by default. Traffic is only allow
 > [!NOTE]
 > Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
-<!-- Insert concept video here -->
-
 ### Key features of Azure Firewall
 
 The following table lists key features of Azure Firewall.
@@ -74,7 +72,8 @@ The following table lists key features of Azure Firewall Manager.
 |Manage multiple firewalls     |Deploy, configure, and monitor any number of firewalls from a single interface.         |
 |Supports multiple network architectures     |Protects both standard Azure virtual networks and Azure Virtual WAN Hubs.         |
 |Automated traffic routing     |Network traffic is automatically routed to the firewall (when used with Azure Virtual WAN Hub only).         |
-|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         ||Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's internet connection.         |
+|Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         |
+|Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's internet connection.         |
 
 > [!NOTE]
 > By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor internet traffic.
