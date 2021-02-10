@@ -30,7 +30,7 @@ On many SQL systems, the double dashes (`--`) mark the start of a comment. Every
 
 Assuming there's a user named `admin`, this command will sign in the attacker as the admin user—a serious breach!
 
-:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in.":::
+:::image type="content" source="../media/3-how-web-application-firewall-works.png" alt-text="Network diagram depicting two sign-in attempts, with Azure Web Application Firewall allowing the authorized sign-in and denying the unauthorized sign-in." border="false":::
 
 The previous example is an instance of an exploit called *SQL injection*. Attackers can take advantage of SQL injection and other exploits in web apps that trust all input.
 
