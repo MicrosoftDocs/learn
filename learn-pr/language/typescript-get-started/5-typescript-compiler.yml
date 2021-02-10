@@ -4,7 +4,7 @@ title: Compile a TypeScript file
 metadata:
   title: Compile a TypeScript file
   description: Learn about how the compiler transforms TypeScript code to JavaScript and identify the compiler options.
-  ms.date: 02/22/2021
+  ms.date: 02/10/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

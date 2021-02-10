@@ -3,7 +3,7 @@ uid: learn.language.typescript-get-started
 metadata:
   title: Get started with TypeScript
   description: Take your first steps with TypeScript.
-  ms.date: 02/22/2021
+  ms.date: 02/10/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract:  |
   - Set up a TypeScript project in Visual Studio Code.
 prerequisites: |
   - JavaScript
- iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

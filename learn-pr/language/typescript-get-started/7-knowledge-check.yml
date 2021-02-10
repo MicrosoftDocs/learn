@@ -3,12 +3,12 @@ uid: learn.language.typescript-get-started.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 02/22/2021
+  ms.date: 02/10/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-Title: Knowledge check
+title: Knowledge check
 durationInMinutes: 2
 content: |
   Choose the best response for each of the questions below. Then select **Check your answers**.
