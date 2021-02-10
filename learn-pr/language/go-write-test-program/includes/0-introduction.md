@@ -2,7 +2,7 @@ We've come to the final module, where we'll write a simple application that uses
 
 We'll start by writing the core of the application, which will be for an online bank. Users will interact with your application through an API. We'll create two projects in Go to practice how to reference local packages from another program. Finally, to make sure our core application logic always works, we'll create a set of tests that we can run before testing the application manually in the browser.
 
-Like other modules, you'll have to extend the application by solving a challenge that will help you be more confident when writing Go application in the future.
+Like other modules, you'll have to extend the program by solving a challenge that will help you be more confident when writing other Go programs in the future.
 
 ## Learning objectives
 
