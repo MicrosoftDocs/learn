@@ -1,6 +1,4 @@
 Microsoft offers DDoS Basic protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Standard protection.
-<!-- Link to concept video here - A short video like the following example to explain what a DDoS attack is and the various types of DDoS attacks.
-[DDoS Attack Explained](https://www.youtube.com/watch?v=ilhGh9CEIwM) -->
 
 ## Azure DDoS Basic or Standard Protection
 
@@ -54,7 +52,6 @@ The following list describes the features and benefits of DDoS Protection Standa
 - It helps secure layers 3 and 4 at the network layer and provide application (layer 7) protection with Azure Web Application Firewall, which is included with Azure Gateway. Because the Azure Gateway and Web Application Firewall are internet-facing, DDoS Protection Standard protects their network interfaces. This is an example of multilayered or defense-in-depth protection.
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
 - It includes support for the integration of mitigation logs with Azure Security Center, Azure Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
-- Microsoft provides an SLA guarantee that the application availability/performance will not be impacted during a DDoS attack as well as cost protection in the form of Azure credits back for any scale of resources during an attack.
 - Azure Monitor collects monitoring telemetry from DDoS Protection Standard for access to summarized attack metrics.
 
 Cost guarantee and DDoS rapid response support are two of the other important DDoS Standard Protection features.

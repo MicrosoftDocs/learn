@@ -3,8 +3,8 @@ uid: learn.introduction-azure-ddos-protection.3-how-azure-ddos-protection-works
 title: How Azure DDoS Protection service works
 metadata:
   title: How Azure DDoS Protection service works
-  description: TBD.
-  ms.date: 01/4/2021
+  description: Learn about the features of DDoS Protection Standard and how it works.
+  ms.date: 02/10/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
