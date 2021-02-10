@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.language.typescript-get-started
+metadata:
+  title: Get started with TypeScript
+  description: Take your first steps with TypeScript.
+  ms.date: 02/22/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with TypeScript
+summary: This module introduces you to the TypeScript language, why it was created, and how you can benefit by using it for JavaScript development. You'll also set up a TypeScript development environment to prepare you to complete future exercises.
+abstract:  | 
+  In this module, you will:
+  - Learn how TypeScript improves your web development over using JavaScript.
+  - Select a TypeScript editor.
+  - Install TypeScript.
+  - Set up a TypeScript project in Visual Studio Code.
+prerequisites: |
+  - JavaScript
+ iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- typescript
+- visual-studio-code
+units:
+- learn.language.typescript-get-started.1-introduction
+- learn.language.typescript-get-started.2-typescript-overview
+- learn.language.typescript-get-started.3-select-typescript-editor
+- learn.language.typescript-get-started.4-install-typescript-compiler
+- learn.language.typescript-get-started.5-typescript-compiler
+- learn.language.typescript-get-started.6-typescript-project
+- learn.language.typescript-get-started.7-knowledge-check
+- learn.language.typescript-get-started.8-summary-resources
+badge:
+  uid: learn.language.typescript-get-started.badge 

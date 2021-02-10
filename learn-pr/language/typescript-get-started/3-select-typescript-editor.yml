@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-get-started.3-select-typescript-editor
+title: Exercise - Select a TypeScript editor
+metadata:
+  title: Exercise - Select a TypeScript editor
+  description: Learn about TypeScript Playground, select an integrated development environment (IDE) that supports TypeScript, and install Visual Studio Code.
+  ms.date: 02/22/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-select-typescript-editor.md)]
