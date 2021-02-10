@@ -25,8 +25,7 @@ roles:
 - developer
 - student
 products:
-- typescript
-- visual-studio-code
+- vs-code
 units:
 - learn.language.typescript-get-started.1-introduction
 - learn.language.typescript-get-started.2-typescript-overview

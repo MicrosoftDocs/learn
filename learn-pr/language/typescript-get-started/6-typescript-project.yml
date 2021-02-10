@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-typescript-project)]
+  [!include[](includes/6-typescript-project.md)]
