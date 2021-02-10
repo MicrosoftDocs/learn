@@ -47,7 +47,7 @@ The following table describes the three types of rules you can create for an Azu
 |Application     |Filter traffic based on an FQDN. For example, you might use an application rule to allow outbound traffic to access an Azure SQL Database instance using the FQDN *server10.database.windows.net*.         |
 |Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, you might use a network rule to allow outbound traffic to access a particular DNS server at a specified IP address using port **53**.  |
 
-:::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram of an external computer requesting a remote desktop connection with a virtual machine and Azure Firewall translating its public IP address to the virtual machine's private IP address.":::
+:::image type="content" source="../media/3-firewall-operation.png" alt-text="Network diagram of an external computer requesting a remote desktop connection with a virtual machine and Azure Firewall translating its public IP address to the virtual machine's private IP address." border="false":::
 
 > [!IMPORTANT]
 > Azure Firewall applies rules in priority order. Rules based on threat intelligence are always given the highest priority and are processed first. After that, rules are applied by type: NAT rules, then network rules, then application rules. Within each type, rules are processed according to the priority values you assign when you create the rule, from lowest value to highest value.
