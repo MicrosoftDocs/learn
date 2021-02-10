@@ -42,7 +42,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure Marketplace categories in a left column and popular options in a right column.":::
 
-1. The Azure Marketplace has many services, solutions, and resources available for you to use. Because we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** searchbox above the listed application options, enter **WordPress**. Select the default *WordPress* option from the list of options available.
+1. The Azure Marketplace has many services, solutions, and resources available for you to use. Because we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** search box above the listed application options, enter **WordPress**. Select the default *WordPress* option from the list of options available.
 
     :::image source="../media/4-search-select-wordpress.png" alt-text="Screenshot of Azure portal showing search results for the term WordPress with the WordPress option highlighted.":::
 
@@ -103,6 +103,6 @@ We can track the progress of the deployment at any time.
 
     [![Screenshot of Azure portal showing App Service overview pane with URL location highlighted.](../media/4-website-url.png)](../media/4-website-url-expanded.png#lightbox)
 
-    Copy the **URL** information from the *Copt to clipboard* icon. Open a new tab in your browser, and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
+    Copy the **URL** information from the *Copy to clipboard* icon. Open a new tab in your browser, and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
 
     :::image type="content" source="../media/4-configure-wordpress.png" alt-text="Screenshot showing pre-configured WordPress website waiting on language/location selection." loc-scope="third-party":::
