@@ -1,4 +1,4 @@
-In this module, you published a serverless API with two Azure Functions apps in an instance of Azure API Management. This approach enables you to implement a microservices architecture by coding Azure Functions as serverless components. Use API Management to assemble these microservices into a single API product at a single URL with consistent behavior imposed by using API Management policies. 
+In this module, you published a serverless API with two Azure Functions apps in an instance of Azure API Management. This approach enables you to implement a microservices architecture by coding Azure Functions as serverless components. API Management assembles these microservices into a single API product using a single URL, all while generating consistent behavior imposed by using API Management policies.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

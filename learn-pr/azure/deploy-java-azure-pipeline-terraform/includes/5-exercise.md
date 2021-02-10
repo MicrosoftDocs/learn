@@ -1,25 +1,32 @@
 In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
 
-## Set up your Maven Build/Deploy GitHub Action
+## Set up your Maven build and deploy the GitHub action
 
-Now that we've provisioned our Azure resources we can deploy your sample Spring Boot application.
-To create our Maven GitHub workflow, we'll use the built-in CI/CD wizard tool that is available in the Azure App Service portal - The **Deployment Center**.
+Now that you've provisioned your Azure resources, you can deploy your sample Spring Boot application.
 
-![Deployment Center.](../media/4-deployment.png)
+To create your Maven GitHub workflow, you'll use the built-in continuous integration and continuous delivery (CI/CD) wizard tool that's available at the Deployment Center in the Azure App Service portal.
 
-The Azure App Service Deployment Center will automatically generate a GitHub Actions workflow file based on your application stack and commit it to your GitHub repository in the correct directory. It will also link your GitHub Action to an Azure App Service publishing profile.
+![Screenshot of the Azure App Service Deployment Center.](../media/4-deployment.png)
 
-1. Navigate to your Azure App Service webapp in the Azure portal
+The Azure App Service Deployment Center automatically generates a GitHub Actions workflow file that's based on your application stack. The Deployment Center then commits the file to your GitHub repository in the correct directory. The Deployment Center also links your GitHub action to an Azure App Service publishing profile.
 
-1. On the left side, select **Deployment Center**
+1. In the Azure portal, go to your Azure App Service web app.
 
-1. Under **Continuous Deployment (CI / CD)**, select **GitHub**
+1. On the left pane, select **Deployment Center**.
 
-1. Next, select **GitHub Actions**
+1. Under **Continuous Deployment (CI/CD)**, select **GitHub**.
 
-1. On the right, under **Settings**, use the dropdowns to select your GitHub repository, **main** branch, and **JAVA 8** as the application stack
+1. Select **GitHub Actions**.
 
-1. On the final screen, you can review your selections and preview the workflow file that will be committed to the repository. Your Workflow file will be created similar to the below. You'll have a different application name (APP_NAME) and publishing profile:
+1. Under **Settings**, in the drop-down lists, do the following:
+
+   a. Select your GitHub repository.  
+   b. For branch, select **main**.  
+   c. For application stack, select **JAVA 8**.
+
+1. On the final page, review your selections and preview the workflow file that will be committed to the repository. 
+
+   Except for the application name (`APP-NAME`) and publishing profile (`publish-profile`), the contents of your YAML workflow file are similar to the following:
 
     ```yml
     name: Build and deploy JAR app to Azure Web App - APP_NAME
@@ -54,35 +61,38 @@ The Azure App Service Deployment Center will automatically generate a GitHub Act
             package: '${{ github.workspace }}/target/*.jar'
     ```
 
-1. Select **Save** to commit the workflow file to the repository, and immediately start to build and deploy your app.
+1. Select **Save** to commit the workflow file to the repository, and immediately start building and deploying your app.
 
     > [!NOTE]
-    > You also trigger the GitHub Actions workflow by going to "Actions", then select the "build-and-deploy" workflow and "Re-run Jobs".
+    > You can also trigger the GitHub Actions workflow in your repository by selecting the **Actions** tab, selecting the **build-and-deploy** workflow, and then selecting **Re-run jobs**.
 
-## Confirm the GitHub Action build
+## Confirm the GitHub Actions build
 
-1. Go to the "Actions" tab on your repository, then select the "build-and-deploy" workflow.
+1. In your repository, select the **Actions** tab and then, for workflow, select **build-and-deploy**.
 
-1. Expand the "Deploy to Azure Web App" step. Terraform has deployed the Java Web App and displayed the Azure Instance URL.
+1. Under **build-and-deploy**, in the list of steps, expand **Deploy to Azure Web App**. 
 
-1. Verify your Java application is deployed, connection to your MySQL database, and returning data.
+    ![Screenshot of the "Deploy to Azure Web App" step in the Maven build process.](../media/4-maven-run.png)
 
-    ![Maven GitHubAction run.](../media/4-maven-run.png)
+   As shown in the preceding screenshot, Terraform has deployed the Java web app and displayed the Azure instance URL.
+
+1. Verify that your Java application is deployed, is connected to your MySQL database, and is returning data.
 
 ## Next steps
 
-Congratulations! You now have two GitHub actions workflows - a provisioning action and a build/deploy action.
-Each time you `git push` your code, your build/deploy action is triggered and your application is deployed.
+Congratulations! You now have two GitHub Actions workflows: a provisioning action and a build-and-deploy action.
+
+Each time you enter a `git push` command to commit your code, your build-and-deploy action is triggered and your application is deployed.
 
 > [!IMPORTANT]
-> Re-running your provision GitHub action will not recreate your resources if they already exist. You will need to delete your resource group or resources manually and then re-run the GitHub action.
+> Re-running the provisioning of your GitHub action won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the GitHub action.
 >
-> Re-running your build/deploy GitHub action will replace your application.
+> Re-running your build-and-deploy GitHub action will replace your application.
 >
-> If you re-create your App Service Instance you will need to also change to the new publishing profile  - the following is the only line that needs to be changed to your new Publish Profile:
+> If you re-create your App Service instance, you also need to change to the new publishing profile. You need to change only the following line:
 
 ```yml
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
 ```
 
-In the next unit, we'll do a knowledge check and then summarize what we learnt.
+The next unit is a knowledge check to see what you've learned in this module.
