@@ -1,4 +1,4 @@
-A Remote Rendering service resource must be created in Azure to get access to the service. The Remote Rendering service resource will later be used to render a model in the app. Here, you'll learn how to create a Remote Rendering resource and locate the account ID and Primary key.
+A Remote Rendering service resource must be created in Azure to get access to the service. The Remote Rendering service resource will later be used to render a model in the app. Here, you'll learn how to create a Remote Rendering resource and locate the account ID, account domain, and Primary key.
 
 ## Create a Remote Rendering service resource
 
@@ -14,7 +14,7 @@ A Remote Rendering service resource must be created in Azure to get access to th
 
     |Field  |Value  |Details  |
     |---------|---------|---------|
-    |**Resourc**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
+    |**Resource**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
     |**Subscription**    |   Your Azure subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
     |**Resource group**     |   Your resource group      |    The resource group to which the Remote Rendering service will belong. All Azure resources must belong to a resource group. If necessary, create a new resource group with a unique name.     |
     |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
@@ -34,6 +34,10 @@ A notification will appear after deployment is complete. Your new Remote Renderi
 1. Select the Remote Rendering service resource from the list.
 
     :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the remote dash rendering dash demo resource.":::
+
+1. In the **Overview** tab, note the **Account Domain**.
+
+    :::image type="content" source="../media/account-domain.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account domain.":::
 
 1. In the **Overview** tab, note the **Account ID**.
 
