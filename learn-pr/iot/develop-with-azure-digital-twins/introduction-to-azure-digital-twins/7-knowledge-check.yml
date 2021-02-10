@@ -2,7 +2,7 @@
 uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
 metadata:
   title: Knowledge check
-  description: Check that you understand the introduction to Azure Digital Twins
+  description: Check that you understand the introduction to Azure Digital Twins.
   ms.date: 11/4/2020
   author: raniabayoumy
   ms.author: bamut
@@ -15,25 +15,25 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'True or false: Digital twins is a good technology to represent equipment and processes, but is not suitable for representing people?'
+  - content: "Digital twins is a good technology to represent equipment and processes, but it isn't suitable for representing people."
     choices: 
     - content: 'True'
       isCorrect: false
-      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. For example, passengers on a train, operators of equipment, people involved in a manual step in a process, and so on.
+      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. Some examples are passengers on a train, operators of equipment, and people involved in a manual step in a process.
     - content: 'False'
       isCorrect: true
-      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. For example, passengers on a train, operators of equipment, people involved in a manual step in a process, and so on.
+      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. Some examples are passengers on a train, operators of equipment, and people involved in a manual step in a process.
 
-  - content: 'True of false: The primary focus of digital twins technology is the representation of smart spaces?'
+  - content: 'The primary focus of digital twins technology is the representation of smart spaces.'
     choices: 
     - content: 'True'
       isCorrect: false
-      explanation: Smart spaces were the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces are still a good use of the technology.
+      explanation: Smart spaces were the focus of earlier digital twins technology, but feedback from the community shows it has far wider applications. Smart spaces are still a good use of the technology.
     - content: 'False'
       isCorrect: true
-      explanation: Smart spaces were the focus of earlier digital twins technology, however, feedback from the community shows it has far wider applications. Though smart spaces are still a good use of the technology.
+      explanation: Smart spaces were the focus of earlier digital twins technology, but feedback from the community shows it has far wider applications. Smart spaces are still a good use of the technology.
 
-  - content: 'True or false: Azure Digital Twins uses role-based access control (RBAC) to provide security?'
+  - content: 'Azure Digital Twins uses role-based access control (RBAC) to provide security.'
     choices:     
     - content: 'True'
       isCorrect: true
@@ -46,30 +46,30 @@ quiz:
     choices:     
     - content: 'Verbs'
       isCorrect: false
-      explanation: Close. Thinking of the connections as verbs can be a valuable thing to do. Though the technical name for the connections is not verbs.
+      explanation: Close. Thinking of the connections as verbs can be a valuable thing to do, although the technical name for the connections isn't verbs.
     - content: 'Relationships'
       isCorrect: true
-      explanation: Think of the models as nouns in a description of your world, and the relationships as verbs. 
+      explanation: Think of the models as nouns in a description of your world and the relationships as verbs. 
     - content: 'Connections'
       isCorrect: false
       explanation: Good guess, but the connections have a more specific name!
     - content: 'Telemetry'
       isCorrect: false
-      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into an IoT Hub.
+      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into Azure IoT Hub.
  
 
-  - content: 'After creating a knowledge graph of your digital twin models, and connecting the models with relationships, what is the best method of gaining insights into the future of your business?'
+  - content: "After you create a knowledge graph of your digital twin models and connect the models with relationships, what's the best method of gaining insights into the future of your business?"
     choices: 
-    - content: 'A. Connect the telemetry output from an IoT Hub, via event routes, to the knowledge graph.'
+    - content: 'A. Connect the telemetry output from Azure IoT Hub, via event routes, to the knowledge graph.'
       isCorrect: false
-      explanation: Connecting live telemetry will certainly bring your knowledge graph to life, but you will need to use another technology to gain insights.
-    - content: 'B. Store the Azure Digital Twins data in an Azure Data Lake.'
+      explanation: Connecting live telemetry will certainly bring your knowledge graph to life, but you'll need to use another technology to gain insights.
+    - content: 'B. Store the Azure Digital Twins data in Azure Data Lake.'
       isCorrect: false
-      explanation: Storing the data in a data lake makes good sense for archiving the data, but does not on its own provide insights.
-    - content: 'C. Analyze the digital twins data with Time Series Insights.'
+      explanation: Storing the data in a data lake makes good sense for archiving the data, but doesn't on its own provide insights.
+    - content: 'C. Analyze the digital twins data with Azure Time Series Insights.'
       isCorrect: false
-      explanation: Time Series Insights will give you, as the name suggests, insights. However, it might not give the best results on its own.
-    - content: 'D. Extract insights from the live execution environment, using the Azure Digital Twins powerful query API.'
+      explanation: Time Series Insights will give you insights, as the name suggests. But it might not give the best results on its own.
+    - content: 'D. Extract insights from the live execution environment by using the Azure Digital Twins powerful query API.'
       isCorrect: false
       explanation: The Query API will give you valuable insights. Is there a better possibility?
     - content: 'E. Use a combination of A (live telemetry), C (Time Series Insights), and D (the query API).'
@@ -80,14 +80,14 @@ quiz:
     choices: 
     - content: 'C#'
       isCorrect: false
-      explanation: C# may well be used to write a client app for digital twins, but is not the language used to create a model.
+      explanation: C# might be used to write a client app for digital twins, but it isn't the language used to create a model.
     - content: 'SQL'
       isCorrect: false
-      explanation: The digital twin query language is SQL-like, but is not the language used to create a model.
+      explanation: The digital twin query language is SQL-like, but it isn't the language used to create a model.
     - content: 'DTDL'
       isCorrect: true
-      explanation: Models for Azure Digital Twins are defined using the Digital Twins Definition language (DTDL). DTDL is based on JSON-LD and is programming-language independent.
+      explanation: Models for Azure Digital Twins are defined by using the Digital Twins Definition Language (DTDL). DTDL is based on JSON-LD and is programming-language independent.
     - content: 'IoT'
       isCorrect: false
-      explanation: The Internet of Things (IoT) is a great companion technology to digital twins, but is not the tech used to create models.
+      explanation: The Internet of Things (IoT) is a great companion technology to digital twins, but it isn't the technology used to create models.
 
