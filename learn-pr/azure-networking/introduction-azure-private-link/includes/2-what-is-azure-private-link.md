@@ -22,8 +22,6 @@ Private Link provides secure access to Azure services. Private Link achieves tha
 * The connection to the resource now uses the Microsoft Azure backbone network instead of the public internet.
 * You can configure the Azure resource to no longer expose its public IP address, which eliminates that potential security risk.
 
-<!-- insert video here -->
-
 ## What is Azure Private Endpoint?
 
 Private Endpoint is the key technology behind Private Link. Private Endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. In other words, Private Endpoint is the network interface that replaces the resource's public endpoint.
@@ -55,40 +53,4 @@ Private Link working together with Private Endpoint and Private Link Service pro
 
 ## Private Link availability
 
-Private Link and Private Endpoint work with many Azure services, including those in the following list:
-
-Service| Available regions
---------|----------------
-Azure Automation | All public regions
-Azure App Configuration | All public regions
-Azure Backup | All public regions, all government regions
-Azure Batch | All public regions except: Germany Central, Germany Northeast, all government regions
-Azure Blob storage | All public regions, all government regions
-Azure Container Registry | All public regions, all government regions
-Azure Cosmos DB | All public regions, all government regions, all China regions
-Azure Data Factory | All public regions, all government regions, all China regions
-Azure Database for PostgreSQL | All public regions, all government regions, all China regions
-Azure Database for MySQL | All public regions, all government regions, all China regions
-Azure Database for MariaDB | All public regions, all government regions, all China regions
-Azure Event Grid | All public regions, all government regions
-Azure Event Hub | All public regions, all government regions
-Azure Files | All public regions, all government regions
-Azure File Sync | All public regions
-Azure IoT Hub | All public regions
-Azure Key Vault | All public regions, all government regions
-Azure Kubernetes Service | All public regions
-Azure Machine Learning | All public regions
-Azure Managed Disks | All public regions, all government regions, all China regions
-Azure Monitor | All public regions
-Azure Queue storage | All public regions, all government regions
-Azure Relay | All public regions
-Azure Search | All public regions, all government regions
-Azure Service Bus | All public regions, all government regions
-Azure SQL Database | All public regions, all government regions, all China regions
-Azure Synapse Analytics | All public regions, all government regions
-Azure Table storage | All public regions, all government regions
-Azure Web Apps | All public regions
-Azure SignalR | East US, South Central US, West US 2, all China regions
-
-> [!NOTE]
-> Microsoft is gradually rolling out Private Link and Private Endpoint to its services and regions. To keep up to date on the latest services and regions that support Private Link, refer to [Azure updates](https://azure.microsoft.com/updates/?product=private-link).
+Private Link and Private Endpoint work with many Azure services. To keep up to date on the latest services and regions that support Private Link, refer to [Azure updates](https://azure.microsoft.com/updates/?product=private-link).
