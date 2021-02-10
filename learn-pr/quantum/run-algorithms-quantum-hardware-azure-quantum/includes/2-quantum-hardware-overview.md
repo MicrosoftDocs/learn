@@ -4,8 +4,7 @@ In this unit, you'll learn about the challenges of building a quantum computer. 
 
 ## Harness quantum systems to perform computations
 
-To build quantum computers, we need full access to the controllable quantum systems that will represent the qubits that we'll use to store and process the quantum information. A qubit can be represented by any physical system with two *states* or *levels* that can be prepared in a quantum superposition. In
-general, a functional quantum computer should fulfill the following criteria:
+To build quantum computers, we need full access to the controllable quantum systems that will represent the qubits that we'll use to store and process the quantum information. A qubit can be represented by any physical system with two *states* or *levels* that can be prepared in a quantum superposition. In general, a functional quantum computer should fulfill the following criteria:
 
 - **Scalability:** Quantum computers are based on the manipulation of quantum information by using qubits. We need a system that allows scalability to a large number of qubits.
 - **Ability to initialize the qubits in a specific state:** Having many qubits isn't useful if we can't trust their initial state. A fundamental characteristic of a quantum computer is its ability to initialize the qubits reliably to a specific state (usually, the state $|0\rangle$).
@@ -15,8 +14,7 @@ general, a functional quantum computer should fulfill the following criteria:
 
 These five criteria are often known as the *DiVincenzo* criteria for quantum computation.
 
-Building devices that meet these five criteria is one of the most demanding engineering challenges ever faced by humankind. However, recent years have seen astounding advances in condensed matter physics and quantum optics. These advances are allowing companies and universities to build the first working versions of quantum
-computers. Microsoft is partnering with some of the best-in-class quantum computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
+Building devices that meet these five criteria is one of the most demanding engineering challenges ever faced by humankind. However, recent years have seen astounding advances in condensed matter physics and quantum optics. These advances are allowing companies and universities to build the first working versions of quantum computers. Microsoft is partnering with some of the best-in-class quantum computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
 
 Here's an overview of the different technologies used to create quantum computers, accessible via Azure Quantum.
 
@@ -55,9 +53,9 @@ Since superconducting properties appear at very low temperatures and higher temp
 
 Trapped ion and superconducting quantum computers aren't the only options for quantum computing, although they're implemented the most in industry so far. Here are several other approaches that are currently subjected to active research:
 
-- **Quantum dot computers:** Quantum dots are small clusters of semiconductor atoms that behave like macroscopic atoms and can be prepared into superposed states.
-- **Photonic quantum computers:** Polarized photons used to represent qubits and photon waveguides to implement quantum operations.
-- **Topological quantum computers:** A new type of particles called *anyons*, first proposed theoretically. Anyons are now in active research and development to create qubits resilient to noise.
+- **Quantum dot computers**: Quantum dots are small clusters of semiconductor atoms that behave like macroscopic atoms and can be prepared into superposed states.
+- **Photonic quantum computers**: Polarized photons used to represent qubits and photon waveguides to implement quantum operations.
+- **Topological quantum computers**: A new type of particles called *anyons*, first proposed theoretically. Anyons are now in active research and development to create qubits resilient to noise.
 
 There are many other proposals for quantum computers, since the field is still under development. With Azure Quantum, you have access to an ever-growing collection of quantum computers to run your own quantum algorithms.
 
