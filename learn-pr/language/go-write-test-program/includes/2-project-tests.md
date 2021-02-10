@@ -1,4 +1,4 @@
-Before we jump into writing our application, let's talk about testing and create our first test. Package testing provides support for automated testing of Go packages. Testing is important to ensure that code works as expected. Generally, there should be at least one test for each function in a package to confirm the functionality. 
+Before we jump into writing our program, let's talk about testing and create our first test. Package testing provides support for automated testing of Go packages. Testing is important to ensure that code works as expected. Generally, there should be at least one test for each function in a package to confirm the functionality. 
 
 A good practice to follow when coding is to use the test-driven development (TDD) approach. With this approach, we'll write our tests first. We'll make sure those tests fail because the code that they test doesn't yet exist. And then we'll write the code that satisfies the tests.
 
@@ -49,7 +49,7 @@ func TestAccount(t *testing.T) {
         Customer: Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number:  1001,
         Balance: 0,

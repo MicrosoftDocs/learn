@@ -11,7 +11,7 @@ func TestTransfer(t *testing.T) {
 		Customer: Customer{
 			Name:    "John",
 			Address: "Los Angeles, California",
-			Phone:   "(555) 314 8947",
+			Phone:   "(213) 555 0147",
 		},
 		Number:  1001,
 		Balance: 0,
@@ -20,8 +20,8 @@ func TestTransfer(t *testing.T) {
 	accountB := Account{
 		Customer: Customer{
 			Name:    "Mark",
-			Address: "Irvine, Californi",
-			Phone:   "(555) 385 4448",
+			Address: "Irvine, California",
+			Phone:   "(949) 555 0198",
 		},
 		Number:  1001,
 		Balance: 0,
@@ -97,7 +97,7 @@ func main() {
 			Customer: bank.Customer{
 				Name:    "John",
 				Address: "Los Angeles, California",
-				Phone:   "(555) 314 8947",
+				Phone:   "(213) 555 0147",
 			},
 			Number: 1001,
 		},
@@ -107,8 +107,8 @@ func main() {
 		Account: &bank.Account{
 			Customer: bank.Customer{
 				Name:    "Mark",
-				Address: "Irvine, Californi",
-				Phone:   "(555) 385 4448",
+				Address: "Irvine, California",
+				Phone:   "(949) 555 0198",
 			},
 			Number: 1002,
 		},

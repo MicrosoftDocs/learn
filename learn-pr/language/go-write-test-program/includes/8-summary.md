@@ -1,4 +1,4 @@
-What a ride! We've come to the end of learning the fundamentals in Go, and you've been writing several applications to practice. Now you're equipped to continue your learning journey in Go and start writing more complex applications. 
+What a ride! We've come to the end of learning the fundamentals in Go, and you've been writing several programs to practice. Now you're equipped to continue your learning journey in Go and start writing more complex programs. 
 
 For several topics, like concurrency, we looked at basics and didn't go in depth. We suggest that you go deeper to understand how to write better code that's easy to change and that runs fast.
 

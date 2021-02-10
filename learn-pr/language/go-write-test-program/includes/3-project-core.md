@@ -47,7 +47,7 @@ func TestDeposit(t *testing.T) {
         Customer: Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number:  1001,
         Balance: 0,
@@ -104,7 +104,7 @@ func TestDepositInvalid(t *testing.T) {
         Customer: Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number:  1001,
         Balance: 0,
@@ -130,7 +130,7 @@ ok      github.com/msft/bank    0.197s
 ```
 
 > [!NOTE]
-> From here on, we'll write one test case for each method. But you should write as many tests to your applications as you feel comfortable with, so you can cover both expected and unexpected scenarios. For example, in this case, the error-handling logic is tested.
+> From here on, we'll write one test case for each method. But you should write as many tests to your programs as you feel comfortable with, so you can cover both expected and unexpected scenarios. For example, in this case, the error-handling logic is tested.
 
 ## Implement the withdraw method
 
@@ -142,7 +142,7 @@ func TestWithdraw(t *testing.T) {
         Customer: Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number:  1001,
         Balance: 0,
@@ -210,7 +210,7 @@ func TestStatement(t *testing.T) {
         Customer: Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number:  1001,
         Balance: 0,

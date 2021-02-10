@@ -4,7 +4,7 @@ Additionally, we'll skip the testing part to avoid keeping this guide too long. 
 
 ## Set up an account in memory
 
-Instead of using a database to persist data, we'll use a memory map for the accounts that we'll create when the application starts. Additionally, we'll use a map to access the account information by using the account number.
+Instead of using a database to persist data, we'll use a memory map for the accounts that we'll create when the program starts. Additionally, we'll use a map to access the account information by using the account number.
 
 Go to the `$GOPATH/src/bankapi/main.go` file and add the following code to create the global `accounts` variable and initialize it with an account. (This code is similar to what we did when we created the tests previously.)
 
@@ -22,7 +22,7 @@ func main() {
         Customer: bank.Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number: 1001,
     }
@@ -73,7 +73,7 @@ func main() {
         Customer: bank.Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number: 1001,
     }
@@ -83,7 +83,7 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the application (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/statement?number=1001`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/statement?number=1001`, or run the following command:
 
 ```sh
 curl http://localhost:8000/statement\?number=1001
@@ -141,7 +141,7 @@ func main() {
         Customer: bank.Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number: 1001,
     }
@@ -152,7 +152,7 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the application (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/deposit?number=1001&amount=100`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/deposit?number=1001&amount=100`, or run the following command:
 
 ```sh
 curl http://localhost:8000/deposit\?number=1001&amount=100
@@ -164,7 +164,7 @@ You should see the following output:
 1001 - John - 100
 ```
 
-If you make the same call several times, the account balance will continue to increase. Give it a try to confirm that the `accounts` map in memory is updated at runtime. If you stop the application, all the deposits you did will get lost, but that's expected in this initial version.
+If you make the same call several times, the account balance will continue to increase. Give it a try to confirm that the `accounts` map in memory is updated at runtime. If you stop the program, all the deposits you did will get lost, but that's expected in this initial version.
 
 ## Expose the withdraw method
 
@@ -208,7 +208,7 @@ func main() {
         Customer: bank.Customer{
             Name:    "John",
             Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
+            Phone:   "(213) 555 0147",
         },
         Number: 1001,
     }
@@ -220,7 +220,7 @@ func main() {
 }
 ```
 
-If you don't see any error or output when you run the application (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/withdraw?number=1001&amount=100`, or run the following command:
+If you don't see any error or output when you run the program (`go run main.go`), it's working correctly. Open a web browser and enter the URL `http://localhost:8000/withdraw?number=1001&amount=100`, or run the following command:
 
 ```sh
 curl http://localhost:8000/withdraw\?number=1001&amount=100
@@ -232,7 +232,7 @@ You should see the following output:
 the amount to withdraw should be greater than the account's balance
 ```
 
-Notice that the error we're getting comes from the core package. When the application starts, the account balance is zero. Therefore, you can't withdraw any amount of money. Call the `/deposit` endpoint a few times to add funds, and call the `/withdraw` endpoint again to confirm that's working:
+Notice that the error we're getting comes from the core package. When the program starts, the account balance is zero. Therefore, you can't withdraw any amount of money. Call the `/deposit` endpoint a few times to add funds, and call the `/withdraw` endpoint again to confirm that's working:
 
 ```sh
 curl http://localhost:8000/deposit\?number=1001&amount=100
