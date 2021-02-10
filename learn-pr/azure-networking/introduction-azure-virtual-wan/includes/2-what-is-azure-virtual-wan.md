@@ -54,7 +54,7 @@ In a single virtual WAN that spans multiple regions, with multiple hubs deployed
 
 The following image depicts an Azure Virtual WAN deployment with two Virtual hubs in different Azure regions and the network traffic flow.
 
-:::image type="content" source="../media/6-united-framework-for-networking.png" alt-text="Azure Virtual WAN provides any-to-any connectivity, custom routing, and security.":::
+:::image type="content" source="../media/6-united-framework-for-networking.png" alt-text="Azure Virtual WAN provides any-to-any connectivity, custom routing, and security." border="false":::
 
 ## Secure virtual hub
 
