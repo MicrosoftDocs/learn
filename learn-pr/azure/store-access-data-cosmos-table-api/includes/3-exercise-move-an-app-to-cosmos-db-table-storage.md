@@ -14,26 +14,27 @@ Let's start by creating a storage account. Later, you'll configure the app to st
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Storage**, and then click **Storage account**.
+1. Select **Storage**, search for **Storage account**, and then select **Create**.
 
-1. In the **Create storage account** wizard, complete the **Basics** page with these values, and then click <nobr>**Next:&nbsp;Advanced&nbsp;&gt;**</nobr>.
+1. In the **Create storage account** wizard, enter the following values.
 
    | Field | Value |
    | --- | --- |
+   | In the **Basics** tab, under **Project details** section: | 
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
+   | Under **Instance details** section: | 
    | Storage account name | Use a globally unique value. For example, "lensesstorage" with your own initials postfixed. |
-   | Location | Choose a region near you from the above list. |
+   | Location | Choose a region near you from the previous list. |
    | Performance | Standard |
    | Account kind | StorageV2 (general-purpose v2) |
-   | Replication | Locally redundant storage (LRS) |
+   | Replication | Locally-redundant storage (LRS) |
 
+1. Go to the **Advanced** tab, and under the **Security** section, set **Secure transfer required** to **Disabled**.
 
-1. Click **Review + create**.
+1. Select **Review + create**. You should see a *Validation passed* notification at the top of the wizard.
 
-1. Check your configuration, and then click **Create**.  It might take a few minutes for Azure to create your new storage account.
-
-1. Click **Configuration** on the left hand menu. Select **Secure transfer required** set to **Disabled**.
+1. Check your configuration, and then select **Create**. It might take a few minutes for Azure to create your new storage account.
 
 ## Clone the Lenses app
 
@@ -57,11 +58,11 @@ The Lenses App is a sample command-line program that stores information about ca
 
 Next, you will configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the storage account you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Under **Settings**, click **Access Keys**.
+1. Under **Settings**, select **Access keys**.
 
-1. To the right of the **key1 Connection string** textbox, click the **Copy** button. Save this in a note pad for latter use. 
+1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select **Copy**. Save this in a note pad for later use.
 
    ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
 
@@ -81,11 +82,15 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
-We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses and then add our own lens entry.
+We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses, and then add our own lens entry.
+
+1. Install the specified framework and/or SDK at:
+
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. To create and populate a table, run this command.
 
@@ -104,7 +109,9 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
    ```bash
    dotnet run DisplayTable
    ```
+
    You should see a display that is similar to the following.
+
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -115,9 +122,9 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
    |      Zoom |     X357035 |      35-70mm |     f3.5 |
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the storage account you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Click **Storage Explorer**, expand **Tables**, and then click **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
+1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
 
    ![Lenses in the Storage Account table](../media/3-lenses-in-storage-table.png)
 
@@ -129,11 +136,11 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
 Next, you will configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the storage account you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Under **Settings**, click **Access Keys**.
+1. Under **Settings**, select **Access keys**.
 
-1. To the right of the **key1 Connection string** textbox, click the **Copy** button.
+1. To the right of the **key1 Connection string** textbox, select the **Copy** button.
 
    ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
 
@@ -153,7 +160,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Paste in the value of the connection string to the right of the equals sign on the first line.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
@@ -182,7 +189,9 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    ```bash
    node app.js DisplayTable
    ```
+
    You should see a display that is similar to the following.
+
    ```
    DisplayTable
    Reading the contents of the Lenses table...
@@ -193,9 +202,9 @@ Let's use the app to populate a table with lenses and then add our own lens entr
    |      Zoom |     X357035 |      35-70mm |     f3.5 |
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the storage account you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Click **Storage Explorer**, expand **Tables**, and then click **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
+1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
 
    ![Lenses in the Storage Account table](../media/3-lenses-in-storage-table.png)
 
@@ -205,25 +214,27 @@ Let's use the app to populate a table with lenses and then add our own lens entr
 
 Next, create an Azure Cosmos DB database in your Azure subscription, and select the **Azure Table** API.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **Create a resource**.
 
-1. Click **Databases**, and then click **Azure Cosmos DB**.
+1. Select **Databases**, and then select **Azure Cosmos DB**.
 
-1. In the **Create Azure Cosmos DB Account** wizard, complete the **Basics** page with these values, and then click **Review + create**.
+1. In the **Create Azure Cosmos DB Account** wizard, complete the following fields.
 
    | Field | Value |
    | --- | --- |
+   | On the **Basics** tab, under **Project Details**: |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Account name | Use a globally unique value. For example, "lensesdb" with your own initials postfixed. |
+   | Under **Instance Details** section: | 
+   | Account Name | Use a globally unique value. For example, "lensesdb" with your own initials postfixed. |
    | API | Azure Table |
-   | Location | Choose a region near you from the above list. |
+   | Location | Choose a region near you from the dropdown. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
 
    ![Create a Cosmos database](../media/3-create-cosmos-db.png)
 
-1. If your settings are correct, click **Create**.
+1. Ensure your settings are correct, and select **Review + create**.
 
 It might take a few minutes for Azure to create your new Azure Cosmos DB account.
 
@@ -233,15 +244,15 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
 To change the lenses app to use the new Azure Cosmos DB database, you must change the connection string.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Under **Settings**, click **Connection String**.
+1. Under **Settings**, select **Connection String**.
 
-1. To the right of the **PRIMARY CONNECTION STRING** textbox, click the **Copy** button.
+1. To the right of the **PRIMARY CONNECTION STRING** textbox, select **Copy**.
 
     ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
 
-1. In the Cloud Shell on the right, to start the code editor, type this command.
+1. In the Cloud Shell on the right, to start the code editor, run this command.
 
     ```bash
     code .
@@ -251,7 +262,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Investigate the contents of the Cosmos Database
 
@@ -262,20 +273,26 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```bash
    dotnet run DisplayTable
    ```
+
    There should be no entries in the table, because you have not yet migrated the data.
+   
    ```
    DisplayTable
    Reading the contents of the Lenses table...
    | Lens Type | Part Number | Focal Length | Aperture |
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Click **Data Explorer**, and then next to **TABLE API**, click the refresh button. Again, no tables or entities are yet present.
+1. Select **Data Explorer**, and then next to **TABLE API**, select the refresh button. Again, no tables or entities are yet present.
 
 ## Test the Azure Cosmos DB database
 
 Finally, let's populate the table in Azure Cosmos DB and view the results.
+
+1. Install the specified framework and/or SDK at:
+
+    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. In the Cloud Shell, to create and populate a table, run the following command.
 
@@ -288,7 +305,8 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    ```bash
    dotnet run DisplayTable
    ```
-   You should see a table displayed like you saw with the Azure Storage Table.
+
+   A table appears similar to the Azure Storage Table.
 
 1. To add your own lens to the table, run a command like the following example.
 
@@ -296,9 +314,9 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    dotnet run AddLens Superwide X1856 18mm f5.6
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Click **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then click **Entities**. The data explorer displays your list of camera lenses.
+1. Select **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then select **Entities**. The Data Explorer displays your list of camera lenses.
 
    ![Lenses data in Azure Cosmos DB](../media/3-view-cosmos-db-data.png)
 
@@ -310,11 +328,11 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 To change the lenses app to use the new Azure Cosmos DB database, you must change the connection string.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Under **Settings**, click **Connection String**.
+1. Under **Settings**, select **Connection String**.
 
-1. To the right of the **PRIMARY CONNECTION STRING** textbox, click the **Copy** button.
+1. To the right of the **PRIMARY CONNECTION STRING** textbox, select the **Copy** button.
 
     ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
 
@@ -328,9 +346,9 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Replace the existing value of the **AZURE_STORAGE_CONNECTION_STRING** variable with the new Cosmos DB connection string that you just copied.
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
-## Investigate the contents of the Cosmos Database
+## Investigate the contents of the Cosmos database
 
 Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 
@@ -339,16 +357,18 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    ```bash
    node app.js DisplayTable
    ```
+
    The app will display an error: you have not created the table in Cosmos DB yet, so there is nothing there to query.
-   ```
+
+   ````
    Reading the contents of the Lenses table...
    Error: The specified resource does not exist.
    RequestID:a45f5e70-d387-11e9-9fe4-7d2558c62514
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Click **Data Explorer**, and then next to **TABLE API**, click the refresh button. Again, no tables or entities are yet present.
+1. Select **Data Explorer**, and then next to **AZURE TABLE API**, select the refresh button. Again, no tables or entities are yet present.
 
 ## Test the Azure Cosmos DB database
 
@@ -365,7 +385,8 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    ```bash
    node app.js DisplayTable
    ```
-   You should see a table displayed like you saw with the Azure Storage Table.
+
+   You should see a table displayed like you saw with the Azure Storage table.
 
 1. To add your own lens to the table, run a command like the following example.
 
@@ -373,9 +394,9 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
    node app.js AddLens Superwide X1856 18mm f5.6
    ```
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then click the Cosmos database you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
-1. Click **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then click **Entities**. The data explorer displays your list of camera lenses.
+1. Select **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then select **Entities**. The Data Explorer displays your list of camera lenses.
 
    ![Lenses data in Azure Cosmos DB](../media/3-view-cosmos-db-data.png)
 

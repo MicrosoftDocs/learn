@@ -51,7 +51,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 1. Select **Connect**.
 
 > [!NOTE]
-> When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Use the Azure Portal **password** form the **Resources** tab, then select **Sign in**, choose your Azure credentials and then select **OK**.
+> When you first try to sign in to an Azure SQL database your client IP address needs to be added to the firewall. SQL Server Management Studio can do this for you. Use the Azure Portal **password** from the **Resources** tab, then select **Sign in**, choose your Azure credentials and then select **OK**.
 > :::image type="content" source="../media/new-firewall-rule.png" alt-text="Screenshot of adding the client IP address.":::
 
 ## Manage access to database objects
@@ -140,6 +140,6 @@ In this task you will manage access to the database and its objects. The first t
 
     :::image type="content" source="../media/sql-statement-suceeds.png" alt-text="Screenshot showing the returned rows of data from the stored procedure.":::
 
-In this exercise you've seen how you can use Azure Active Directory to rant Azure credentials  access to a SQL Server hosted in Azure. You've also used T-SQL statement to create new database users and granted them permissions to run stored procedures.
+In this exercise you've seen how you can use Azure Active Directory to grant Azure credentials  access to a SQL Server hosted in Azure. You've also used T-SQL statement to create new database users and granted them permissions to run stored procedures.
 
-To finish this exercise select **End** below.
+To finish this exercise select **Done** below.

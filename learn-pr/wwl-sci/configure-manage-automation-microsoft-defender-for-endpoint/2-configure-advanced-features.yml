@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.configure-advanced-features
+title: Configure advanced features
+metadata:
+  title: Configure advanced features
+  description: "Configure advanced features"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-configure-advanced-features.md)]

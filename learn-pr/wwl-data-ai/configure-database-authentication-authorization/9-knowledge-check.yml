@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/26/2020
+  ms.date: 12/30/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -70,7 +70,7 @@ quiz:
       explanation: "That's correct. Tables can have data inserted into them."
     - content: "Procedures"
       isCorrect: false
-      explanation: "That's incorrect. While procedures can insert data into a table, they cannot themselves be grated insert permissions."
+      explanation: "That's incorrect. While procedures can insert data into a table, they cannot themselves be granted insert permissions."
   - content: "What feature allows a user to execute a stored procedure even if she doesn't have permission to access the tables referenced in the stored procedure?"
     choices:
     - content: "Ownership chaining"

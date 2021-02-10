@@ -8,7 +8,6 @@ metadata:
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
   zone_pivot_groups: aspnet-core-identity-data-store
 title: Exercise - Customize Identity
 azureSandbox: true

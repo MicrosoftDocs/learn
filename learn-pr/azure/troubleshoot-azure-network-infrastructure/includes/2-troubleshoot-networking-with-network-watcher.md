@@ -31,7 +31,7 @@ Suppose you have to troubleshoot a virtual network created by your colleagues. U
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. On the Azure portal menu, select **All services**. Then, go to **Networking** > **Network Watcher**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and select **All services**. Then, search for **Network Watcher**.
 
 1. Select **Topology**.
 
@@ -104,7 +104,7 @@ You can also use the tool to spot vulnerabilities for your VM caused by unnecess
 
 ### What is the packet capture tool?
 
-You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the captured to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
+You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
 
 The packet capture tool is a virtual machine extension that is remotely started through Network Watcher and happens automatically when you start a packet capture session.
 
@@ -116,7 +116,7 @@ Packet capture has a dependency on the *Network Watcher Agent VM Extension* inst
 
 You use the connection troubleshoot tool to check TCP connectivity between a source and destination VM. You can specify the destination VM by using an FQDN, a URI, or an IP address.
 
-If the connection is successful, information about the communication is displayed, including:
+If the connection is successful, information about the communication appears, including:
 
 - The latency in milliseconds.
 - The number of probe packets sent.
@@ -135,7 +135,7 @@ If the connection is unsuccessful, you'll see details of the fault. Fault types 
 
 You can use the VPN troubleshoot tool to diagnose problems with virtual network gateway connections. This tool runs diagnostics on a virtual network gateway connection and returns a health diagnosis.
 
-When you start the VPN troubleshoot tool, Network Watcher diagnoses the health of the gateway or connection and returns the appropriate results. The request is a long-running transaction.
+When you start the VPN troubleshoot tool, Network Watcher diagnoses the health of the gateway or connection, and returns the appropriate results. The request is a long-running transaction.
 
 The following table shows examples of different fault types.
 
@@ -159,7 +159,7 @@ Your colleagues have deployed a VM in Azure and are having network connectivity 
 
 To troubleshoot this issue, use the IP flow verify tool. This tool lets you specify a local and remote port, the protocol (TCP/UDP), the local IP, and the remote IP to check the connection status. It also lets you specify the direction of the connection (inbound or outbound). IP flow verify runs a logical test on the rules in place on your network.
 
-In this case, use IP flow verify to specify the VM's IP address and the RDP port 3389. Then specify the remote VM's IP address and port. Choose the TCP protocol and then select **Check**.
+In this case, use IP flow verify to specify the VM's IP address and the RDP port 3389. Then, specify the remote VM's IP address and port. Choose the TCP protocol, and then select **Check**.
 
 Suppose the result shows that access was denied because of the NSG rule **DefaultInboundDenyAll**. The solution is to change the NSG rule.
 
@@ -167,9 +167,9 @@ Suppose the result shows that access was denied because of the NSG rule **Defaul
 
 Your colleagues have deployed VMs in two virtual networks and can't connect between them.
 
-To troubleshoot a VPN connection, use Azure VPN troubleshoot. This tool runs diagnostics on a virtual network gateway connection and returns a health diagnosis. You can run this tool from the Azure portal, PowerShell, or the Azure CLI.
+To troubleshoot a VPN connection, use Azure VPN troubleshoot. This tool runs diagnostics on a virtual network gateway connection, and returns a health diagnosis. You can run this tool from the Azure portal, PowerShell, or the Azure CLI.
 
-When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis will show whether the VPN connection is working or not working. If the VPN connection isn't working, VPN troubleshoot will suggest ways to resolve the issue.
+When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis will show whether the VPN connection is working. If the VPN connection isn't working, VPN troubleshoot will suggest ways to resolve the issue.
 
 Suppose the diagnosis shows a key mismatch. To resolve the problem, reconfigure the remote gateway to make sure the keys match on both ends. Pre-shared keys are case-sensitive.
 
@@ -179,6 +179,6 @@ Your colleagues have deployed VMs in a single virtual network and can't connect 
 
 Use the connection troubleshoot tool to troubleshoot this issue. In this tool, you specify the local and remote VMs. In the probe setting, you can choose a specific port.
 
-Suppose the results show the remote server is **Unreachable**, along with the message "Traffic blocked due to virtual machine firewall configuration." On the remote server, disable the firewall and then test the connection again.
+Suppose the results show the remote server is **Unreachable**, along with the message "Traffic blocked due to virtual machine firewall configuration." On the remote server, disable the firewall, and then test the connection again.
 
-Suppose the server is now reachable. This result indicates that firewall rules on the remote server are the problem and must be corrected to permit the connection.
+Suppose the server is now reachable. This result indicates that firewall rules on the remote server are the issue, and must be corrected to permit the connection.

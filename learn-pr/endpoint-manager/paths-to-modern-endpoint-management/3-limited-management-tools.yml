@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.paths-to-modern-endpoint-management.3-limited-management-tools
+title: Understand migration from a limited endpoint management solution
+metadata:
+  title: Understand migration from a limited endpoint management solution
+  description: Understand the endpoint management migration path when your organization uses limited or no existing endpoint management tools.
+  ms.date: 01/04/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-limited-management-tools.md)]
+  

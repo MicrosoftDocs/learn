@@ -9,7 +9,7 @@ To evaluate a regression model, you could simply compare the predicted labels to
 > [!div class="centered"]
 > ![Evaluate Model module added to Score Model module](../media/evaluate.png)
 
-4. Select **Submit**, and run the pipeline using the existing experiment named **auto-price-training**.
+4. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.
 5. Wait for the experiment run to complete.
 6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + logs** tab, under **Data outputs** in the **Evaluation results** section, use the **Visualize** icon to view the results. These include the following regression performance metrics:
     - **Mean Absolute Error (MAE)**: The average difference between predicted values and true values. This value is based on the same units as the label, in this case dollars. The lower this value is, the better the model is predicting.

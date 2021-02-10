@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.output-from-adt-to-downstream-services.exercise-create-configure-deploy-azure-function
+metadata:
+  title: Create, configure, and deploy an Azure function
+  description: This unit guides you through creating, configuring, and deploying an Azure function to receive data from Azure Digital Twins and send it to Time Series Insights. 
+  ms.date: 11/30/2020
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create, configure, and deploy an Azure function
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-create-configure-deploy-azure-function.md)]

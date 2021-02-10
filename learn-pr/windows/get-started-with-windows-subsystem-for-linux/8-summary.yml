@@ -51,7 +51,7 @@ quiz:
       explanation: "For help with how to use the Nano text editor, see [Nano docs](https://help.ubuntu.com/community/Nano)."
     - content: "Zune"
       isCorrect: true
-      explanation: "The Microsoft Zune was a portable media player launched in 2006 and was discontinued in 2011. You can still [download Zune software](https://www.microsoft.com/download/details.aspx?id=27163) though!"
+      explanation: "The Microsoft Zune was a portable media player launched in 2006 and was discontinued in 2011. You can still [download Zune software](https://www.microsoft.com/download/details.aspx?id=30468) though!"
 
   - content: "You can use Linux commands in PowerShell by using all of the following methods, except:"
     choices:

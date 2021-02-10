@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.stack-hci-arc-integration.1-introduction
+metadata:
+  title: Introduction
+  description: Over the course of this module, you'll review features of Azure Arc and the benefits it brings to customers like Contoso. By the end of this module, you'll be able to describe how these benefits contribute to management and monitoring of Azure Stack HCI at scale.
+  ms.date: 12/09/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

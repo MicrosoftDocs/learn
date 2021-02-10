@@ -75,7 +75,7 @@ In the **InitPeripheralAndHandlers** a call is made to **lp_interCoreCommunicati
 The inter-core callback function will be called when a message is received from the real-time core.
 
 ```c
-lp_interCoreCommunicationsEnable(lp_config.rtComponentId, InterCoreHandler);
+lp_interCoreCommunicationsEnable(REAL_TIME_COMPONENT_ID, InterCoreHandler);  // Initialize Inter Core Communications
 ```
 
 ## Sending a request to the real-time core application

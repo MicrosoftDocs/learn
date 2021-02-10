@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/25/2020
+  ms.date: 12/28/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -62,7 +62,7 @@ quiz:
       explanation: "That's correct. A managed instance comes with the benefit of automatic backups and the ability to restore to a point in time."
   - content: "What is the best way to transfer the data in a PostgreSQL database running on-premises into a database running Azure Database for PostgreSQL service?"
     choices:
-    - content: "Export the data form the on-premises database and import it manually into the database running in Azure"
+    - content: "Export the data from the on-premises database and import it manually into the database running in Azure"
       isCorrect: false
       explanation: "While this method may work, it isn't the simplest approach as it requires a lot of manual work."
     - content: "Upload a PostgreSQL database backup file to the database running in Azure"

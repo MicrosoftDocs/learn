@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+title: Summary
+uid: learn-windows.introduction-to-web-development.7-summary-and-knowledge-check
+metadata:
+  title: Summary
+  description: Review what you've learned and where to learn more.
+  ms.date: 12/4/2020
+  author: mmpadget
+  ms.author: quradic
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+  
+durationInMinutes: 5
+content: |
+    [!include[](includes/7-summary.md)]
