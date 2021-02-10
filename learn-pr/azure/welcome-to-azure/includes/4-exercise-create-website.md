@@ -73,7 +73,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     [![Screenshot of Azure portal showing the new WordPress app service configured as instructed.](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
 
     > [!NOTE]
-    > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the configuration above.
+    > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in this configuration.
 
 1. Select **Create** to start the deployment of your new site.
 
@@ -82,7 +82,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 ## Verify your website is running
 
-The deployment of the new website can take a few minutes to complete, and you're welcome to explore the Azure portal further on your own.
+The deployment of our new website can take a few minutes to complete. You're welcome to explore the Azure portal further on your own.
 
 We can track the progress of the deployment at any time.
 
