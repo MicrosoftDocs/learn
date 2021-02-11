@@ -46,7 +46,7 @@ Although this is an operation, note that the pages for functions and types are l
 
 ## What does it tell me?
 
-Video explanation talking through the page goes here.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxup4]
 
 ### What's next?
 
