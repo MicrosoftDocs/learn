@@ -42,14 +42,14 @@ quiz:
       isCorrect: false
       explanation: 'This statement is false. Ion trapped quantum computers allow to apply a universal set of quantum operations.'
       
-  - content: 'Which of the following statements is *true*?'
+  - content: 'Which of the following statements is true?'
     choices:
-    - content: 'This code *can* run in a target with the *No control flow* profile: `if (M(qubit) == One) { ... }`'
+    - content: 'This code *can* run in a target with the No Control Flow profile: `if (M(qubit) == One) { ... }`'
       isCorrect: false
       explanation: "This statement is false. For No Control Flow targets, values of type `Result` don't support equality comparison."
-    - content: "This code *can't* run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) { X(qubit); }`"
+    - content: "This code *can't* run in a target with the Basic Measurement Feedback profile: `if (M(qubit) == One) { X(qubit); }`"
       isCorrect: false
       explanation: 'This statement is false. For Basic Measurement Feedback targets, values of type `Result` do support equality comparisons as part of conditions within `if` statements in operations.'
-    - content: "This code *can't* run in a target with the *Basic Measurement Feedback* profile: `if (M(qubit) == One) { return M(qubit); }`"
+    - content: "This code *can't* run in a target with the Basic Measurement Feedback profile: `if (M(qubit) == One) { return M(qubit); }`"
       isCorrect: true
       explanation: "This statement is false. Although the Basic Measurement Feedback profile allows for comparison of values of the type `Result` as part of conditions within `if` statements, it doesn't allow to return values within the `if` block."

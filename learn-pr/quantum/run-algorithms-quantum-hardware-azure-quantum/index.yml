@@ -18,8 +18,8 @@ abstract: |
   - Adapt and create Q# applications to run them in Azure Quantum.  
   - Submit and manage quantum computing jobs in Azure Quantum in your preferred environment: Python, Jupyter, or the Azure CLI.
 prerequisites: |
-  - Module: [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
-  - Module: [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
+  - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
+  - [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
