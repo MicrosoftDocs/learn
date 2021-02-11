@@ -7,7 +7,7 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
 Run the following command in the command shell:
 
 ```bash
-. <(wget -q -O - https://aka.ms/build-web-api-aspnet-core-setup)
+. <(wget -q -O - https://aka.ms/create-web-api-aspnet-core-setup)
 ```
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
