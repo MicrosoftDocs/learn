@@ -4604,6 +4604,181 @@
       "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/3-optimization-basics",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/2-what-is-azure-ddos-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/2-what-is-azure-ddos-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/3-how-azure-ddos-protection-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/3-how-azure-ddos-protection-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/4-when-to-use-azure-ddos-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/4-when-to-use-azure-ddos-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-ddos-protection/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-ddos-protection/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/2-what-is-azure-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/2-what-is-azure-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/3-how-azure-firewall-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/3-how-azure-firewall-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/4-when-to-use-azure-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/4-when-to-use-azure-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-firewall/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-firewall/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/2-what-is-azure-private-link.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/2-what-is-azure-private-link",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/3-how-azure-private-link-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/3-how-azure-private-link-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/4-when-to-use-azure-private-link.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/4-when-to-use-azure-private-link",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-private-link/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-private-link/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/2-what-is-azure-virtual-wan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/2-what-is-azure-virtual-wan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/3-how-azure-virtual-wan-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/3-how-azure-virtual-wan-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/4-when-to-use-azure-virtual-wan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/4-when-to-use-azure-virtual-wan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-virtual-wan/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-virtual-wan/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/2-what-is-azure-web-application-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/2-what-is-azure-web-application-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/3-how-azure-web-application-firewall-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/3-how-azure-web-application-firewall-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/4-when-to-use-azure-web-application-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/4-when-to-use-azure-web-application-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/6-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure-networking/introduction-azure-web-application-firewall/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-azure-web-application-firewall/index",
+      "redirect_document_id": true
     }
   ]
 }
