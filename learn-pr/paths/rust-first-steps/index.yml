@@ -22,10 +22,8 @@ summary: |
     - Set up modules for packages and crates.
     - Write and run automated tests.
     - Create a command-line program.    
-prerequisites: |
-  - Some programming basics in general
-  - Familiarity with at least one programming language
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: None
+iconUrl: /learn/achievements/take-your-first-steps-with-rust.svg
 levels:
 - beginner
 roles:
