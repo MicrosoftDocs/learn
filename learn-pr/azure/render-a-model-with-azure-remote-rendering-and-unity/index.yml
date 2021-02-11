@@ -14,8 +14,8 @@ summary: >
 abstract: | 
   By the end of this module, you'll be able to:
   - Create a Remote Rendering session
+  - Load a 3D model
   - Render a 3D model 
-  - Use a cut plane to reveal the inside of meshes 
 prerequisites: |
   - A Windows 10 PC that meets the [system requirements](https://docs.microsoft.com/azure/remote-rendering/overview/system-requirements) and is configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later

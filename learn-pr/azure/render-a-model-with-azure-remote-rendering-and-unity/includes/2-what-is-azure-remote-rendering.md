@@ -6,7 +6,7 @@ Azure Remote Rendering (ARR) solves this problem by moving the rendering workl
 
 ## Quality
 
-A traditional approach to viewing 3D content on untethered devices is called decimation, which compresses the models and removes polygons. This simplifies the model to a point where it can run on slower GPU hardware. The following example provides a side-by-side comparison of an engine model at full detail and a decimated model.
+A traditional approach to viewing 3D content on untethered devices is called decimation, which compresses the models and removes polygons. Decimation simplifies the model to a point where it can run on slower GPU hardware. The following example provides a side-by-side comparison of an engine model at full detail and a decimated model.
 
 :::image type="content" source="../media/engine-model-decimated.png" alt-text="A screenshot of two engine models. The engine model on the left is at full detail. The engine model on the right is decimated.":::
 
@@ -16,7 +16,7 @@ Some models are too complex to render at interactive frame rates, even for a hig
 
 ## Hybrid rendering
 
-Most likely, your application requires some variation of custom UI to provide functionality to users. Azure Remote Rendering supports **Hybrid Rendering** which automatically combines locally rendered content with the remote image at the end of a frame. The flexibility to use your desired UI enables you to create suitable UI for your application without limiting yourself to a dedicated UI framework.
+Most likely, your application requires some variation of custom UI to provide functionality to users. Azure Remote Rendering supports **Hybrid Rendering** which combines locally rendered content with the remote image at the end of a frame. The flexibility to use your preferred UI enables you to create suitable UI for your application without limiting yourself to a dedicated UI framework.
 
 > [!NOTE]
 > To learn more about pricing, refer to Remote Rendering Pricing available in the resources of this module.

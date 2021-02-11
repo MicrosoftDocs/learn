@@ -15,7 +15,7 @@ A Remote Rendering service resource must be created in Azure to get access to th
     |Field  |Value  |Details  |
     |---------|---------|---------|
     |**Resource**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
-    |**Subscription**    |   Your Azure subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
+    |**Subscription**    |   Your Azure subscription      |    The resource you're creating must belong to a resource group. Select the Azure subscription to which the resource group belongs or will belong.     |
     |**Resource group**     |   Your resource group      |    The resource group to which the Remote Rendering service will belong. All Azure resources must belong to a resource group. If necessary, create a new resource group with a unique name.     |
     |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
 
@@ -45,4 +45,4 @@ A notification will appear after deployment is complete. Your new Remote Renderi
 
 1. In the **Settings** section, select **Access Keys**. In the next exercise, you'll need the value for **Primary key** to render the model in the app.
 
-    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around access keys within the settings section. There is also a red box around the primary key.":::
+    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around access keys within the settings section. There's also a red box around the primary key.":::

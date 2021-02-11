@@ -1,13 +1,13 @@
-A sample project is available which includes a built-in model of the truck engine to render. To render the model, the Unity scene must first be configured. Afterwards, your Remote Rendering resource credentials must be entered for the **RemoteRendering** game object.
+A sample project is available, which includes a built-in model of the truck engine to render. To render the model, the Unity scene must first be configured. Afterwards, your Remote Rendering resource credentials must be entered for the **RemoteRendering** game object.
 	
-Here, you will configure the Unity project and scene to render the truck engine in Unity.
+Here, you'll configure the Unity project and scene to render the truck engine in Unity.
 
 ## Clone the sample project and configure the Unity scene
 
 > [!NOTE]
 > If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
 
-1. In the command prompt (type **cmd** in Windows start menu), run the following commands to clone the GitHub repository which contains the Unity project.
+1. In the command prompt (type **cmd** in Windows start menu), run the following commands to clone the GitHub repository, which contains the Unity project.
 
     ```bash
     mkdir ARR
@@ -15,7 +15,7 @@ Here, you will configure the Unity project and scene to render the truck engine 
     git clone https://github.com/Azure/azure-remote-rendering
     ```
 
-1. In the Unity Hub, add the sample project which is the **ARR/azure-remote-rendering/Unity/Quickstart** folder. If necessary, allow Unity to upgrade the project to your installed version. Once added, open the project in Unity.
+1. In the Unity Hub, add the sample project, which is the **ARR/azure-remote-rendering/Unity/Quickstart** folder. If necessary, allow Unity to upgrade the project to your installed version. Once added, open the project in Unity.
 
 1. Go to **File** > **Build Settings** to switch **Build Platform** to **Universal Windows Platform**.
 
@@ -39,7 +39,7 @@ Here, you will configure the Unity project and scene to render the truck engine 
 
 1. In the **Hierarchy** window, select the **RemoteRendering** game object.
 
-1. In the **Inspector** window, enter the following in the **Remote Rendering (Script)** component:
+1. In the **Inspector** window, enter your credentials in the **Remote Rendering (Script)** component:
 
 - **Account Domain**: The **Account Domain** for the Remote Rendering resource.
 - **Account Authentication Domain**: The **Account Domain** for the Remote Rendering resource.

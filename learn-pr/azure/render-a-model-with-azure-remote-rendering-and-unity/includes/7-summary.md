@@ -1,4 +1,4 @@
-The automotive engineering team needed a solution for rendering a 3D model of a truck engine at full detail on an untethered device. By creating a Remote Rendering resource and configuring a remote rendering object in Unity, you were able to load and render the truck engine model at full detail. If you have a HoloLens device, you can build the Unity project and deploy to view the model in your real-world environment.
+The automotive engineering team needed a solution for rendering a 3D model of a truck engine at full detail on an untethered device. You created a Remote Rendering resource and then configured a remote rendering object in Unity. After completing those steps, you were able to load and render the truck engine model at full detail. If you have a HoloLens device, you can build the Unity project and deploy to view the model in your real-world environment.
 
 ## Clean up
 

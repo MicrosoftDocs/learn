@@ -1,14 +1,14 @@
-You work for a truck manufacturer that is currently in the process of designing a new engine to replace the prior model used in production. Your role as a mixed reality engineer is to create solutions that support manufacturing logistics. A 3D model of the engine has been created which enables the automotive engineering lead to view and refine the engine design specifications. Unfortunately, viewing the model on a computer screen doesn't provide a full-scale detailed 3D view of the engine and its internal mechanics. Such an application that provides this capability would be helpful for completing a design review of the engine.
+You work for a truck manufacturer that is currently designing a new engine to replace the prior model used in production. Your role as a mixed reality engineer is to create solutions that support manufacturing logistics. A 3D model of the engine has been created which enables the automotive engineering lead to view and refine the engine design specifications. Unfortunately, viewing the model on a computer screen doesn't provide a full-scale detailed 3D view of the engine and its internal mechanics. Such an application that provides this capability would be helpful for completing a design review of the engine.
 
-In this module, you'll create a remote rendering session that renders an engine model in Unity. After remote rendering is initialized and a session is created, the application will connect the local runtime to the remote session. The model is then loaded for viewing untethered at full detail.
+In this module, you'll create a remote rendering session that renders an engine model in Unity. After you initialize remote rendering, a session is created. Next, the app connects the local runtime to the remote session. The model is then loaded for viewing untethered at full detail.
 
 By the end of this module, you'll be able to create a remote rendering session and load a model into the session.
 
 ## Learning objectives
 
 - Create an Azure Remote Rendering session
+- Load a 3D model
 - Render a 3D model
-- Use a cut plane to reveal the inside of meshes
 
 ## Prerequisites
 
