@@ -10,4 +10,4 @@ The Intune App Protection Policies data protection framework is organized into t
 - **Enterprise enhanced data protection** (Level 2) introduces App Protection Policies data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
 - **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and App Protection Policies Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data.
 
-Each level has specific recommendations about how and what to set to meet each level of app protection.
+Each level has specific recommendations about how and what to set to meet each level of app protection. For more information in Intune, see [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework?azure-portal=true).

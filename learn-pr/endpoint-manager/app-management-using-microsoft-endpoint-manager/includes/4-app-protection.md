@@ -19,3 +19,5 @@ The following illustration shows the layers of protection that an MDM service an
 There are additional benefits to using an MDM service with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee that uses both a tablet issued by the company, and their own personal phone. The company tablet is enrolled in MDM and protected by app protection policies while their personal phone is protected by app protection policies only.
 
 ![Devices using app protection policies without enrollment - Microsoft Endpoint Manager](../media/intro-to-endpoint-manager-22.png)
+
+For more information about app protection in Intune, see [App protection policies overview](https://docs.microsoft.com/mem/intune/apps/app-protection-policy?azure-portal=true).
