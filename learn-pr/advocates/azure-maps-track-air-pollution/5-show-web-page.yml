@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.use-azure-maps-to-track-air-pollution.5-show-web-page
-title: Exercise - Use the Azure Maps web SDK on a webpage
+title: Exercise - Build the Python app and the webpage
 metadata:
-  title: Exercise - Use the Azure Maps web SDK on a webpage
-  description: Use Flask to create a Python app, and then show the app in a webpage by using the Azure Maps web SDK.
+  title: Exercise - Build the Python app and the webpage
+  description: Use Flask to create a Python app and create a webpage that will show your map app.
   author: jimbobbennett
   ms.author: jabenn
   ms.date: 02/05/2021
