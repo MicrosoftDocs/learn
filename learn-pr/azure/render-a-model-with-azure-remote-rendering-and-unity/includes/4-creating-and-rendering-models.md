@@ -20,7 +20,7 @@ You can create, observe and shut down as many sessions as you like from a single
 
 The session can be stopped either manually or when the maximum lease time expires. To manually stop a session, ``RenderingSession.StopAsync`` must be called. The session may also be stopped because of some failure. In any case, once the session stops, you are no longer billed for the service. Furthermore, when a session stops, all previous state (loaded models and such) is discarded.
 
-However, after a session stops the persistent **sessionID** can be queried via ``RenderingSession.SessionUuid()`` and cached locally. With this ID, an application can call ``RemoteRenderingClient.OpenRenderingSessionAsync`` to bind to that session. When ``RenderingSession.IsConnected`` is true, ``RenderingSession.Connection`` returns an instance of ``RenderingConnection``, which contains the functions to load models, manipulate entities, and query information about the rendered scene.
+However, after a session stops the persistent **sessionID** can be queried via ``RenderingSession.SessionUuid()`` and cached locally. With this ID, an application can call ``RemoteRenderingClient.OpenRenderingSessionAsync`` to bind to that session. When ``RenderingSession.IsConnected`` is ``true``, ``RenderingSession.Connection`` returns an instance of ``RenderingConnection``, which contains the functions to load models, manipulate entities, and query information about the rendered scene.
 
 ## Models
 
