@@ -131,4 +131,4 @@ terms = c1 + c2 + c3 + c4
 ```
 
 > [!NOTE]
-> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our samples repo.
+> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true).

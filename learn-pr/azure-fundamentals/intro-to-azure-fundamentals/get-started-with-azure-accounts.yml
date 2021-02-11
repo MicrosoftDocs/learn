@@ -5,8 +5,8 @@ metadata:
   title: Get started with Azure accounts
   description: In this unit, you'll learn how to get started with Azure accounts.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

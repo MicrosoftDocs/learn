@@ -69,7 +69,7 @@ Tim shrugs.
 
 Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains the concepts of infrastructure as code.
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LB5O]
 
 When you need to change something, like a firewall setting, you update the configuration file and run it one time to update all of the servers. You can see why this makes scaling out a lot easier.
 

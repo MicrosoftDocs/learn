@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-identity-governance-privacy-compliance-features
 metadata:
-  title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features"
-  description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards.
+  title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features (AZ-900)"
+  description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features"
@@ -55,7 +55,7 @@ summary: |
   :::column-end:::
   :::row-end:::
 
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx).
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
