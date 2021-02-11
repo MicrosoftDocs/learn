@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-create-command-line-program.complete-task-function
 metadata:
-  title: Implement the function to complete tasks
-  description: Write the function body to complete tasks.
+  title: Write a function that completes tasks
+  description: Write the function that completes tasks.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement the function to complete tasks
+title: Write a function that completes tasks
 durationInMinutes: 6
 content: |
   [!include[](includes/6-complete-task-function.md)]

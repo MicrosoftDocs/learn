@@ -2,7 +2,7 @@
 uid: learn.language.rust-create-command-line-program.application-outline
 metadata:
   title: Outline the application
-  description: Identify what the command line application will do and the approach to implement it.
+  description: Identify what the command-line application will do and how to implement it.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama
