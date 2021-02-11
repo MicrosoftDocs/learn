@@ -88,16 +88,16 @@ The preceding command installs a specific version of the .NET Core SDK in the Cl
     ```json
     [
       {
-        "date": "2020-05-19T21:18:21.0596135+00:00",
-        "temperatureC": 18,
-        "temperatureF": 64,
-        "summary": "Bracing"
+        "date": "2021-02-12T20:36:01.4678814+00:00",
+        "temperatureC": 33,
+        "temperatureF": 91,
+        "summary": "Scorching"
       },
       {
-        "date": "2020-05-20T21:18:21.0599683+00:00",
-        "temperatureC": 27,
-        "temperatureF": 80,
-        "summary": "Hot"
+        "date": "2021-02-13T20:36:01.4682337+00:00",
+        "temperatureC": -8,
+        "temperatureF": 18,
+        "summary": "Cool"
       },
       // ...
     ]

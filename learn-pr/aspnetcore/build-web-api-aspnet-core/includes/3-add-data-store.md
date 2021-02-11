@@ -114,6 +114,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
     ```csharp
+    using Contoso.Api.Models;
     using System.Linq;
 
     namespace ContosoPets.Api.Data
@@ -125,8 +126,18 @@ An in-memory database is used in this unit for simplicity. Choose a different da
                 if (!context.Products.Any())
                 {
                     context.Products.AddRange(
-                        new Product(0, "Squeaky Bone", 20.99m),
-                        new Product(0, "Knotted Rope", 12.99m)
+                        new Product 
+                        {
+                            Id = 0,
+                            Name = "Squeaky Bone",
+                            Price = 20.99m
+                        },
+                        new Product
+                        {
+                            Id = 0,
+                            Name = "Knotted Rope",
+                            Price = 12.99m
+                        }
                     );
 
                     context.SaveChanges();
@@ -136,7 +147,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     }
     ```
 
-    The preceding code defines a static `SeedData` class. The class's `Initialize` method seeds the in-memory database with two dog toys. Each dog toy object is created with a C# target-typed `new` expression. This C# language feature allows you to omit the explicit `Product` type. The `Product` type is known because the objects are added to `context.Products`, which is a collection of type `DbSet<Product>`.
+    The preceding code defines a static `SeedData` class. The class's `Initialize` method seeds the in-memory database with two dog toys. The `Product` objects are added to `context.Products`, which is a collection of type `DbSet<Product>`.
 
 1. Replace the code in *:::no-loc text="Program.cs":::* with the following code. Save your changes.
 
@@ -146,33 +157,33 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-
+    
     namespace ContosoPets.Api
     {
         public class Program
         {
             public static void Main(string[] args) =>
                 CreateHostBuilder(args).Build().SeedDatabase().Run();
-
+    
             private static IHostBuilder CreateHostBuilder(string[] args) =>
                 Host.CreateDefaultBuilder(args)
                     .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>());
-
-            public static class IHostExtensions
-            {
-                public static IHost SeedDatabase(this IHost host)
-                {
-                    var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
-                    using var scope = scopeFactory.CreateScope();
-                    var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
-        
-                    if (context.Database.EnsureCreated())
-                        SeedData.Initialize(context);
-        
-                    return host;
-                }
-            }
         }
+    
+        public static class IHostExtensions
+        {
+            public static IHost SeedDatabase(this IHost host)
+            {
+                var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
+                using var scope = scopeFactory.CreateScope();
+                var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
+    
+                if (context.Database.EnsureCreated())
+                    SeedData.Initialize(context);
+    
+                return host;
+            }
+        }    
     }
     ```
 
