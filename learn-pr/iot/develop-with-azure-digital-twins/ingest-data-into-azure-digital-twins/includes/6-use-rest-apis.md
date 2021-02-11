@@ -1,35 +1,119 @@
+In this unit, learn about the Azure Digital Twins REST APIs: what they're for and how to use them.
+
 ## Why REST APIs?
 
-Some application architectures will not support using the Azure Digital Twin SDK. In this scenario, the Azure Digital Twin REST APIs are used to perform both Control Plane operations (ex: Create Azure digital twin instances) and Data Plane operations (ex: ingesting telemetry / modifying Azure digital twin instance properties).
+Some application architectures don't support the Azure Digital Twins SDK. In such cases, you can use the Azure Digital Twins REST APIs to perform both control-plane operations (for example, to create Azure Digital Twins instances) and data-plane operations (for example, ingesting telemetry or modifying Azure Digital Twins instance properties).
 
-More information on Azure digital twin REST APIs is found in the documentation.
-
- [Azure Digital Twins REST APIs](https://docs.microsoft.com/en-us/rest/api/azure-digitaltwins/)
+For more information, see the [Azure Digital Twins REST APIs documentation](https://docs.microsoft.com/rest/api/azure-digitaltwins/).
 
 ## API authentication
 
-Use the OAuth 2.0 client credentials grant specified in RFC 6749, sometimes called two-legged OAuth, to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often referred to as daemons or service accounts.
+Use the OAuth 2.0 client-credentials grant, specified in RFC 6749 and sometimes called "two-legged OAuth," to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often called daemons or service accounts.
 
-More information on the different authentication patterns is found in the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types)
+For more information on different authentication patterns, see the [Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
 
-### Admin consent
+### Grant admin consent
 
-It's possible that your organization requires extra actions from subscription Owners/administrators to successfully set up an app registration. The steps required may vary depending on your organization's specific settings.
+Your organization might require extra actions from subscription owners or administrators to successfully set up an app registration. The steps required might vary depending on your organization's specific settings. Admins perform such operations on the [Azure Active Directory App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) page in the Azure portal.
 
-Here are some common potential activities that an Owner/administrator on the subscription may need to perform. These and other operations are performed from the [Azure AD App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps) page in the Azure portal.
+The **Grant admin consent for [*company*]** action is often required for app registration. Your organization might have **Admin Consent Required** turned on globally in Azure Active Directory (Azure AD) for all app registrations within your subscription. If so, for the app registration to be valid, the owner or administrator must select the button for your company on the API permissions page for that app registration:
 
-Grant admin consent for the app registration. Your organization may have Admin Consent Required globally turned on in Azure AD for all app registrations within your subscription. If so, the Owner/administrator will need to select this button for your company on the app registration's API permissions page for the app registration to be valid:
+:::image type="content" source= "../media/grant-admin-consent.png" alt-text="Screenshot of API permissions page for Contoso, with Grant-consent button highlighted.":::
 
-:::image type="content" source= "../media/grant-admin-consent.png" alt-text="Admin Consent":::
+## Setup App Registration
+
+In order to leverage the Azure Digital Twins APIs, an application will need to be defined with permissions to use the ADT APIs.
+
+1. Create the manifest.json file for later use:
+
+    ```azurecli
+    touch manifest.json
+    cat > manifest.json
+    ```
+
+    Now you're editing manifest.json.
+
+1. Paste the following JSON code into PowerShell and then use Ctrl+C to close the file.
+
+    ```json
+    [{
+        "resourceAppId": "0b07f429-9f4b-4714-9392-cc5e8e80c8b0",
+        "resourceAccess": [
+         {
+           "id": "4589bd03-58cb-4e6c-b17f-b580e39652f8",
+           "type": "Scope"
+         }
+        ]
+    }]
+    
+    ```
+
+1. Create an Azure Active Directory (Azure AD) application with permissions to connect to Azure Digital Twins. You'll use this application in later units.
+
+    ```azurecli
+    az ad app create --display-name $aaddtapp --native-app --required-resource-accesses ./manifest.json --reply-url http://localhost -o json 
+    ```
+
+1. The following command will output the application ID. Save this ID for later use.
+
+    ```azurecli
+    $appid = $(az ad app list --display-name $aaddtapp --query '[0].appId' -o json)
+    ```
+
+1. Create a service principal for the application by using the application ID from the preceding step:
+
+    ```azurecli
+    az ad sp create --id $appid
+    ```
+
+1. The next command gives the application you just created permissions to the Azure Digital Twins instance. Add the application ID from the preceding steps to the command before you run it:
+
+    ```azurecli
+    az dt role-assignment create --dt-name $dtname --assignee $appid --role "Azure Digital Twins Data Owner"
+    ```
+
+1. Create a password for the application:
+
+    > [!NOTE]
+    > Make sure to copy the password from the output because you can't retrieve it later. If you lose your password, you'll have to create a new one.
+    >
+
+    ```azurecli
+    az ad app credential reset --id $appid --append
+    ```
+
+## Collect important values
+
+You'll need several important values from the resources set as you continue working with your Azure Digital Twins instance.
+
+> [!NOTE]
+> Save these values for later use.
+>
+
+### Collect instance values
+
+Get the host name of the Azure Digital Twins instance. Copy the output to Notepad for later use.
+
+```azurecli
+az dt show -n $dtname --query 'hostName'
+```
+
+### Collect app-registration values
+
+Get the Azure AD tenant ID:
+
+```azurecli
+az account show --query 'tenantId'
+```
 
 ### Retrieve token
 
-In order to use the Azure Digital Twin APIs, we'll need to get an Authorization Token from Azure Active Directory:
+To use the Azure Digital Twins APIs, you'll need to get an authorization token from Azure AD:
 
-1. The command below will issue a POST request to the /oauth/v2.0/token endpoint for your AAD Tenant, which will respond with a bearer token
+1. Use the following command to issue a POST request to the /oauth/v2.0/token endpoint for your Azure AD tenant:
 
     > [!NOTE]
-    > Update the values for tenant_id, client_id, and client_secret
+    > Supply the values for *tenant_id*, *client_id*, and *client_secret* as appropriate for your configuration.
     >
 
     ```azurecli
@@ -41,15 +125,15 @@ In order to use the Azure Digital Twin APIs, we'll need to get an Authorization 
     --data-urlencode 'grant_type=client_credentials'
     ```
 
-1. Azure Active Directory will respond with a Bearer Token that will be used in the next section:
-    :::image type="content" source= "../media/bearertoken.png" alt-text="Bearer Token":::
+1. Azure AD responds with a bearer token that will be used in the next section:
+    :::image type="content" source= "../media/bearertoken.png" alt-text="Partial screenshot of bearer-token text displayed in a console window.":::
 
 ## Use REST APIs
 
-Run the command below to update the REST API property in the thermostat67 digital twin.
+Run the following command to update the REST API property in the thermostat67 digital twin.
 
 > [!NOTE]
-> Update the values for adt_hostname, aad_token
+> Supply the values for *adt_hostname* and *aad_token*.
 >
 
 ```azurecli
@@ -62,10 +146,21 @@ Run the command below to update the REST API property in the thermostat67 digita
     }'
 ```
 
-## Query twin to see the update
+## Query the twin to see the update
 
  To view the data added by the REST API call, run the following command:
 
+> [!NOTE]
+> Supply the values for *adt_hostname* and *aad_token*.
+>
+
 ```azurecli
-az dt twin show -n $dtname --twin-id GrindingStep
+    curl -i --location --request POST 'https://adt_hostname/digitaltwins/query?api-version=2020-10-31' \
+    --header 'Authorization: Bearer aad_token' \
+    --header 'Content-Type: application/json' \
+    --header 'Message-Id: 12345' \
+    --data-raw '{
+        "query": "SELECT * FROM DIGITALTWINS"
+    }'
 ```
+

@@ -7,7 +7,7 @@ metadata:
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Validate your DTDL models
+title: Exercise - Validate your models
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-validate-models.md)]

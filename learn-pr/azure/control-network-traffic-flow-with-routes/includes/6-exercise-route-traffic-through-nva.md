@@ -31,7 +31,6 @@ The next steps deploy a virtual machine into the public and private subnets:
         --name public \
         --vnet-name vnet \
         --subnet publicsubnet \
-        --subnet-address-prefix 10.0.2.0/24 \
         --image UbuntuLTS \
         --admin-username azureuser \
         --no-wait \

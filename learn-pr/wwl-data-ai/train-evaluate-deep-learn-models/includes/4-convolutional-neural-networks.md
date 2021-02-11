@@ -53,7 +53,7 @@ Now the filter is moved along (*convolved*), typically using a *step* size of 1 
 ```
 255 255 255      1  -1   1    (255 x 1)+(255 x -1)+(255 x 1) +
 255 100 255  x  -1   0  -1  = (255 x -1)+(100 x 0)+(255 x -1) +   = -155
-200 100 100      1  -1   1    (100 x1 )+(100 x -1)+(100 x 1)
+100 100 100      1  -1   1    (100 x1 )+(100 x -1)+(100 x 1)
 ```
 
 So now we can fill in the next value of the new matrix.
