@@ -117,7 +117,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll > ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll > ContosoPets.Api.log &
     ```
 
     The web API is running and is ready for testing via `curl`.
