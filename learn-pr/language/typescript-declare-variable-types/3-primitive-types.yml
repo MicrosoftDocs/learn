@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.3-primitive-types
+title: Primitive types in TypeScript
+metadata:
+  title: Primitive types in TypeScript
+  description: Learn how to apply primitive types to variables.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-primitive-types.md)]

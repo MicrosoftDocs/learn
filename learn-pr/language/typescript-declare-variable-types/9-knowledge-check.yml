@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "The `boolean`, `number`, `string`, and `enum` types are examples of which category of subtype of `any`?"
+    choices:
+    - content: "Type parameters."
+      isCorrect: false
+      explanation: "Incorrect. Type parameters are their own subtype under the `any` type."
+    - content: "Object types."
+      isCorrect: false
+      explanation: "Incorrect. Object types are their own subtype under `any` and include classes, interfaces, arrays, and literal types."
+    - content: "Primitive types."
+      isCorrect: true
+      explanation: "Correct! The `boolean`, `number`, `string`, and `enum` types are examples of the primitive subtype of the `any` type."
+  - content: "Which of the following types is an example of an object type?"
+    choices:
+    - content: "`Array`."
+      isCorrect: true
+      explanation: "Correct! `Array` is an example of an object type."
+    - content: "`void`."
+      isCorrect: false
+      explanation: "Incorrect. `void` is an example of a primitive type."
+    - content: "Type parameters."
+      isCorrect: false
+      explanation: "Incorrect. Type parameters are their own subtype under the `any` type."
+  - content: "What is the primary difference between the `any` and `unknown` types?"
+    choices:
+    - content: "You can assign any value to `unknown`, but the `any` type has some constraints."
+      isCorrect: false
+      explanation: "Incorrect. There are no constraints when using the `any` type."
+    - content: "You can access the properties of an `unknown` type but not an `any` type."
+      isCorrect: false
+      explanation: "Incorrect. You can't access any properties, or call or construct them, when using the `unknown` type."
+    - content: "You can access the properties of an `any` type but not an `unknown` type."
+      isCorrect: true
+      explanation: "Correct! You can access any properties, as well as call or construct them, when using the `any` type."
+  - content: "What is the name of the feature in TypeScript that tells the compiler *I know what I'm doing*?"
+    choices:
+    - content: "Literal narrowing."
+      isCorrect: false
+      explanation: "Incorrect. Literal narrowing is process of going from an infinite number of potential cases to a smaller, finite number of potential cases."
+    - content: "Type assertion."
+      isCorrect: true
+      explanation: "Correct! A type assertion tells TypeScript that you have performed any special checks that you need before calling the statement."
+    - content: "Type guard."
+      isCorrect: false
+      explanation: "Incorrect. A type guard examines the type of an expression at runtime."
+  - content: "What is a Tuple?"
+    choices:
+    - content: "An array with an infinite number of elements of the same type."
+      isCorrect: false
+      explanation: "Incorrect. The is the definition of a standard array."
+    - content: "An array with specific number of elements of the same type."
+      isCorrect: false
+      explanation: "Incorrect. While a Tuple might contain elements of the same type, this is not required. All elements can be a different type."
+    - content: "An array with a specific number of elements of one or more types."
+      isCorrect: true
+      explanation: "Correct! A Tuple is an array that has a specific number of elements. Each element is of a specific type and must appear in the exact same order when values are assigned to it."

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.language.typescript-declare-variable-types
+metadata:
+  title: 'Declare variable types in TypeScript'
+  description: Learn about the available types and how to associate them with variables.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Declare variable types in TypeScript'
+summary: JavaScript is a dynamically typed language. While this makes declaring variables easy, it can in some cases lead to unexpected results. The static type system in TypeScript enables you to describe the shape of an object, providing better documentation, and allowing TypeScript to validate that your code is working correctly. In TypeScript, declarations of namespaces, classes, properties, functions, variables, and other language entities associate types with those entities. The way that a type is formed and associated with a language entity depends on the kind of entity. This module introduces some of the available types and shows how to associate them with variables. Later modules examine how interfaces, functions, and classes use static typing.
+abstract:  | 
+  In this module, you will learn how to:
+  - Explain the advantages of declaring typed variables in TypeScript.
+  - Declare variables using primitive types.
+  - Declare variables using object types.
+  - Declare variables using union and intersection types.
+prerequisites: |
+  - Familiarity with JavaScript.
+  - Familiarity with declaring variables using `let` and `const` in JavaScript.
+  - Basic knowledge of TypeScript.
+  - Installed software:
+    - [Git](https://git-scm.com/?azure-portal=true)
+    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+    - [Node.js](https://nodejs.org/?azure-portal=true)
+    - TypeScript 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.language.typescript-declare-variable-types.1-introduction
+- learn.language.typescript-declare-variable-types.2-types-overview
+- learn.language.typescript-declare-variable-types.3-primitive-types
+- learn.language.typescript-declare-variable-types.4-enums
+- learn.language.typescript-declare-variable-types.5-any-unknown
+- learn.language.typescript-declare-variable-types.6-unions-intersections
+- learn.language.typescript-declare-variable-types.7-collection-types
+- learn.language.typescript-declare-variable-types.8-types-lab
+- learn.language.typescript-declare-variable-types.9-knowledge-check
+- learn.language.typescript-declare-variable-types.10-summary-resources
+badge:
+  uid: learn.language.typescript-declare-variable-types.badge 

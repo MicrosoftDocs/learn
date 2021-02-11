@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.2-types-overview
+title: Overview of types in TypeScript
+metadata:
+  title: Overview of types in TypeScript
+  description: Learn about the difference between let and const variables, how type inference works, and identify type categories.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-types-overview.md)]

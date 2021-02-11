@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.7-collection-types
+title: Collection types in TypeScript
+metadata:
+  title: Collection types in TypeScript
+  description: Learn how to define an array type and a tuple type.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-collection-types.md)]
