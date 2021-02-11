@@ -15,14 +15,36 @@
   quiz:
     title: Knowledge check
     questions:
-    - content: "TBD:"
+    - content: "What is decimation and how does it impact viewing 3D content on untethered devices?"
       choices:
-        - content: ""
+        - content: "Decimation compresses a model and removes textures. Decimated models are not rendered with full detail."
           isCorrect: false
-          explanation: ""
-        - content: ""
+          explanation: "Decimation does not remove model textures."
+        - content: "Decimation compresses a model and removes polygons. Decimated models are rendered with full detail."
+          isCorrect: false
+          explanation: "When a model is decimated, the rendering quality is diminished."
+        - content: "Decimation compresses a model and removes polygons. Decimated models are not rendered with full detail."
           isCorrect: true
-          explanation: ""
-        - content: ""
+          explanation: "Decimation reduces the quality of a model. Therefore, when the model is rendered, it is not rendered with full detail."
+    - content: "How long does a sessionID persist?"
+      choices:
+        - content: "	The sessionID persists for 24 hours."
           isCorrect: false
-          explanation: ""
+          explanation: "The sessionID persists for longer than 24 hours."
+        - content: "The sessionID persists for 30 days."
+          isCorrect: true
+          explanation: "The sessionID persists for 30 days. Within those 30 days, the sessionID can be used to query information about the scene."
+        - content: "The sessionID persists for 12 months."
+          isCorrect: false
+          explanation: "The sessionID expires in less than 12 months."
+    - content: "How many devices can connect to a session at a time?"
+      choices:
+        - content: "Only 1 device can connect to a session at a time."
+          isCorrect: true
+          explanation: "Only a single device may connect to a session at a time. Every Azure Remote Rendering host only serves one client device at a time. Therefore, when a client connects to a session, it has exclusive control over the rendered content."
+        - content: "Up to 5 devices can connect to a session at a time."
+          isCorrect: false
+          explanation: "Attempts by multiple to connect will fail."
+        - content: "Any number of devices can connect to a session at a time."
+          isCorrect: false
+          explanation: "Attempts by multiple to connect will fail."
