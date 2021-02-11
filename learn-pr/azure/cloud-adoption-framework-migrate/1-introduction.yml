@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-adopt.1-introduction
+uid: learn.azure.cloud-adoption-framework-migrate.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: TBD.
-  ms.date: 09/22/2020
-  author: jamcneil
+  ms.date: 03/01/2021
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
