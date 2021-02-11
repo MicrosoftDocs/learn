@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
-  title: Render a Model with Azure Remote Rendering
+  title: Render a model with Azure Remote Rendering
   description: Create an Azure Remote Rendering session and render a 3D model.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Render a Model with Azure Remote Rendering
+title: Render a model with Azure Remote Rendering
 summary: >
   Create an Azure Remote Rendering session and render a 3D model.
 abstract: | 
