@@ -25,7 +25,7 @@ prerequisites: |
   - Knowledge of how to write basic data control flows like `if` and `for` statements.
   - Knowledge of how to write functions.
   - Knowledge of how to use libraries like `net/http`.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-concurrency.svg
 levels:
 - beginner
 roles:

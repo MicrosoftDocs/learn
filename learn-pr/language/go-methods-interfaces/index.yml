@@ -24,7 +24,7 @@ prerequisites: |
   - Knowledge of writing basic data control flows such as `if` and `for` statements.
   - Knowledge of writing functions.
   - Knowledge of creating structs. 
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-methods-interfaces.svg
 levels:
 - beginner
 roles:

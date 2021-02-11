@@ -27,7 +27,7 @@ prerequisites: |
   - Knowledge of how to write functions.
   - Knowledge of how to create structures and methods.
   - Knowledge of how to use libraries like `net/http`.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/go-write-test-program.svg
 levels:
 - beginner
 roles:
