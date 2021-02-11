@@ -9,4 +9,4 @@ If you want to use a graphical user interface to build applications by using C#,
 
 If you want to start by using a command-line interface, download and install both the [.NET SDK](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true).
 
-Finally, if you need to learn more about C# before you continue, check out the [Take your first steps with C#](https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?azure-portal=true) learning path.
+Finally, if you need to learn more about C# before you continue, check out the [Take your first steps with C#](https://docs.microsoft.com/learn/paths/csharp-first-steps/?azure-portal=true) learning path.
