@@ -2,7 +2,7 @@
 uid: learn.languages.go-first-steps
 metadata:
   title: Take your first steps with Go
-  description: Take your first steps with Go.
+  description: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
   brand: azure
   ms.date: 01/21/2021
   author: meaghanlewis
@@ -10,18 +10,28 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Take your first steps with Go
-summary: In this learning path, you'll take your first steps with Go.
+summary: |
+  Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
+  
+  In this learning path, you'll:
+    - Install the tools you need to write your first lines of Go code.
+    - Learn how to use control flows in Go.
+    - Learn about data types in Go.
+    - Learn how to handle errors.
+    - Use methods and interfaces
+    - Learn how concurrency works in Go.
+    - Write and test a program.
 prerequisites: |
-  - Programming basics in general
-  - Knowledge with at least one programming language
-  - Download / Install Software from the Internet
+  - Some programming basics in general
+  - Familiarity with at least one programming language
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
+- developer
 - student
 products:
-- azure
+- vs-code
 modules:
 - learn.language.go-get-started
 - learn.language.go-control-flow
