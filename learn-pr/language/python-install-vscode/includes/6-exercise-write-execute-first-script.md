@@ -53,7 +53,7 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 ### Step 4 - Address pop-up messages
 
-When working with `.py` files which you will use to write Python code, you might see several pop-up messages. The most critical of these messages is the following:
+When working with `.py` files which you will use to write Python code, you might see several pop-up messages. The most critical of these messages follows.
 
 "No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
 
