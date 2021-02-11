@@ -1,4 +1,4 @@
-In this unit, you'll view, update, and delete the custom Azure role you created in the previous exercise.
+In this unit, you'll view, update, and delete the Azure custom role you created in the previous exercise.
 
 ## View custom roles within the portal
 
@@ -9,11 +9,11 @@ Let's use the Azure portal to see the custom roles in your subscription.
 1. Select the subscription that you associated your custom role to.
 1. Select **Access control (IAM)** > **Roles**.
 
-    ![Screenshot that how to get to Access control (IAM) and Roles](../media/5-subscription-iam-roles.png)
+    ![Screenshot that how to get to Access control (IAM) and Roles.](../media/5-subscription-iam-roles.png)
 
 1. Select **Type** > **CustomRole**.
 
-    ![Screenshot that shows custom roles selected from drop-down list](../media/5-custom-roles.png)
+    ![Screenshot that shows custom roles selected from drop-down list.](../media/5-custom-roles.png)
 
     You see all the custom roles in your organization.
 
@@ -22,7 +22,7 @@ Let's use the Azure portal to see the custom roles in your subscription.
 We need to update the Virtual Machine Operator role to add permissions for a monitoring operation. We'll update that custom role to include the action _Microsoft.Insights/diagnosticSettings/_.
 
 1. Select **Cloud Shell** from the top right-hand side of the Azure portal.
-1. Type **code** into the cloud shell.
+1. Type **code** into the Cloud Shell.
 1. Paste the definition below into the editor.
 
 
@@ -52,7 +52,7 @@ We need to update the Virtual Machine Operator role to add permissions for a mon
      ]
    }
     ```
-1. In the `AssignableScopes` section, replace **subscriptionId** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
+1. In the `AssignableScopes` section, replace **subscriptionId1** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```

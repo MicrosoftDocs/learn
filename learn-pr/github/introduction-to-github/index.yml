@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.introduction-to-github
+metadata:
+  title: "Introduction to GitHub"
+  description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to GitHub"
+summary: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
+abstract: |
+  In this module, you will:
+  - Communicate with the project community in issues
+  - Manage notifications for project events
+  - Create branches to manage work in parallel
+  - Make commits to update project source
+  - Introduce changes with pull requests
+  - Deploy a web page to GitHub Pages
+prerequisites: |
+  - A GitHub account
+iconUrl: /learn/achievements/github/introduction-to-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+- azure
+units:
+- learn.github.introduction-to-github.1-introduction
+- learn.github.introduction-to-github.2-what-is-github
+- learn.github.introduction-to-github.3-introduction-to-github
+- learn.github.introduction-to-github.4-knowledge-check
+- learn.github.introduction-to-github.5-summary
+badge:
+  uid: learn.github.introduction-to-github.badge

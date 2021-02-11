@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.join-clean-data-deep-dive.7-prepare-more-data
+title: Prepare for more data
+metadata:
+  title: Prepare for more data
+  description: Prepare for more data.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-prepare-more-data.md)]

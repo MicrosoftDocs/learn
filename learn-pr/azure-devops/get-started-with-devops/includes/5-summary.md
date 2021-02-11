@@ -12,9 +12,11 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 * [DevOps at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft?azure-portal=true)
 * [What features and services do I get with Azure DevOps?](https://docs.microsoft.com/azure/devops/user-guide/services?view=azure-devops?azure-portal=true)
 
-## Recommendations for KPIs and quality metrics
+## Appendix: Recommendations for KPIs and quality metrics
 
- DevOps encourages teams to have goals that are specific, measurable, and time-bound. To ensure that these goals are measurable, it's important for the team to agree on appropriate metrics and Key Performance Indicators (KPIs). It's important to choose metrics that focus on specific business outcomes, and that achieve a return on investment and increased business value. Here is a list of commonly used metrics and KPIs that apply to all DevOps teams:
+The following sections are optional. They provide additional information beyond what's covered in this module.
+
+DevOps encourages teams to have goals that are specific, measurable, and time-bound. To ensure that these goals are measurable, it's important for the team to agree on appropriate metrics and Key Performance Indicators (KPIs). It's important to choose metrics that focus on specific business outcomes, and that achieve a return on investment and increased business value. Here is a list of commonly used metrics and KPIs that apply to all DevOps teams:
 
 ### Faster Outcomes
 

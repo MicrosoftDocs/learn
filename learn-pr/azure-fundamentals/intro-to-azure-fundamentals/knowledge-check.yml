@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following statements is *not* true about cloud computing?"
+      choices:
+        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+          isCorrect: false
+          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
+        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          isCorrect: true
+          explanation: "Most cloud computing resources can be distributed to global datacenters."
+        - content: "Cloud computing typically decreases your operating expenses."
+          isCorrect: false
+          explanation: "Cloud computing typically decreases your operating expenses."
+        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          isCorrect: false
+          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+    - content: "True or false: You need to purchase an Azure account before you can use any Azure resources."
+      choices:
+        - content: "False"
+          isCorrect: true
+          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
+        - content: "True"
+          isCorrect: false
+          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
+    - content: "True or false: In an IaaS environment, the cloud tenant is responsible for routine hardware maintenance."
+      choices:
+        - content: "True"
+          isCorrect: false
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+        - content: "False"
+          isCorrect: true
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."

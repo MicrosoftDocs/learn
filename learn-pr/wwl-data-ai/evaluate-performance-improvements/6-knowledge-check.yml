@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-performance-improvements.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of index is best used on a data warehouse fact table?"
+    choices:
+    - content: "Clustered Columnstore"
+      isCorrect: true
+      explanation: "That's correct. A clustered columnstore index will provide the best performance for a data warehouse fact table."
+    - content: "Nonclustered Columnstore"
+      isCorrect: false
+      explanation: "That's incorrect. Nonclustered columnstore indexes will consume unnecessary space."
+    - content: "Clustered b-tree"
+      isCorrect: false
+      explanation: "That's incorrect. A b-tree index will not match the performance of a columnstore index for scan operations."
+  - content: "Which DMV provides information about server level wait statistics?"
+    choices:
+    - content: "sys.dm_db_index_physical_stats"
+      isCorrect: false
+      explanation: "That's incorrect. This view shows fragmentation for indexes."
+    - content: "sys.dm_os_wait_stats"
+      isCorrect: true
+      explanation: "That's correct. This shows the wait stats across the server."
+    - content: "sys.dm_exec_session_wait_stats"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV shows waits for a given session, but not across sessions."
+  - content: "Which DMV can you use to capture the last Actual Execution Plan for a given query?"
+    choices:
+    - content: "sys.dm_exec_cached_plans"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV has the information needed to retrieve the plan from cache."
+    - content: "sys.dm_exec_query_plan"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV just has the estimated execution plans that are in the plan cache."
+    - content: "sys.dm_exec_query_plan_stats"
+      isCorrect: true
+      explanation: "That's correct. In SQL Server 2019 you can query sys.dm_exec_query_plan_stats to get the last actual execution plan for a query."

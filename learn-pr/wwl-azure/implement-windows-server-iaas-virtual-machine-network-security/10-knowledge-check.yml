@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-network-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following features would an administrator use to monitor, diagnose, review metrics, and enable or disable logs for resources in a Microsoft Azure virtual network?"
+    choices:
+    - content: "Azure Firewall"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources."
+    - content: "Azure Network Watcher"
+      isCorrect: true
+      explanation: "That's correct. Network Watcher is designed to monitor and repair the network health of IaaS products, which includes VMs, VNets, Application Gateways, and load balancers."
+    - content: "Adaptive Network Hardening"
+      isCorrect: false
+      explanation: "That's incorrect. Adaptive Network Hardening provides recommendations to further harden the network security group rules. It uses a machine-learning algorithm that factors in actual traffic, known trusted configurations, threat intelligence, and other indicators of compromise, and then provides recommendations."
+  - content: "How could an administrator use service tags when configuring network security?"
+    choices:
+    - content: "They use them to define network access controls on NSGs or on Azure Firewall."
+      isCorrect: true
+      explanation: "That's correct. They use service tags in place of specific IP addresses when you create security rules. By specifying the service tag name (for example, AzureBackup) in the appropriate source or destination field of a rule, They deny or allow the traffic for that service."
+    - content: "They use them to enable the ability to configure network security as a natural extension of an application's structure, allowing them to group VMs and define network security policies based on those groups."
+      isCorrect: false
+      explanation: "That's incorrect. It's application security groups that enable that functionality."
+    - content: "They use them to filter egress virtual network traffic to Azure Storage accounts over a service endpoint, and allow data exfiltration to only specific Azure Storage accounts."
+      isCorrect: false
+      explanation: "That's incorrect. It's VNet service endpoint policies that support that functionality."
+  - content: "Which of the following options is first evaluated for inbound network traffic?"
+    choices:
+    - content: "The NSG applied to the network interface."
+      isCorrect: false
+      explanation: "That's incorrect. Inbound traffic is first evaluated by the NSG applied to the subnet."
+    - content: "The NSG applied to the subnet."
+      isCorrect: true
+      explanation: "That's correct. Inbound traffic is first evaluated by the NSG applied to the subnet. However, outbound traffic from a VM is first evaluated by the application security group applied to the network interface."
+    - content: "The NSG applied to the network appliance."
+      isCorrect: false
+      explanation: "That's incorrect. Inbound traffic is first evaluated by the NSG applied to the subnet."

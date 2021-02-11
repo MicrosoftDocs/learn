@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.implement-azure-backup-policies
+title: Implement Azure Backup policies
+metadata:
+  title: Implement Azure Backup policies
+  description: "Implement Azure Backup policies"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-azure-backup-policies.md)]

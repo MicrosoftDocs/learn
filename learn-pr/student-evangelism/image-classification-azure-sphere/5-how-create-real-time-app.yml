@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.image-classification-azure-sphere.how-create-real-time-app
-title: How to create a real time image classification application
+title: How to create a real-time image classification application
 metadata:
-  title: How to create a real time image classification application
-  description: In this section, we guide learner how to create a real time application using VS Code.
+  title: How to create a real-time image classification application
+  description: In this section, we guide the learner in how to create a real-time application using Visual Studio Code.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

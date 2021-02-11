@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.reactors.machine-learning-three-basic-pillars
+metadata:
+  title: 'Machine learning: Regression, classification, and clustering'
+  description: Learn how to TBD.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+title: 'Machine learning: Regression, classification, and clustering'
+summary: |
+  Welcome to the Machine Learning: Regression, Classification, and Clustering Learning Path! The content in this learning path pairs with in person workshops that run in Microsoft Reactors and are standalone learning resources (you don't have to come to a workshop to benefit from these modules).
+  Throughout this Learning Path you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
+
+  In this learning path, you'll:
+    - Learn ways to prepare data for analysis 
+    - Make predictive models with variations of linear regression
+    - Make predictions on non-linear data with regression
+    - Build logistic regression and support vector machine models
+    - Learn about results obtained with the k-means algorithm
+
+  Complementary content for Microsoft Reactor Workshops.
+  
+prerequisites: |
+  None.
+iconUrl: /learn/achievements/reactors/machine-learning-three-basic-pillars.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+modules:
+- learn.reactors.join-clean-data-deep-dive
+- learn.reactors.supervised-learning-regression
+- learn.reactors.unsupervised-learning-clustering
+trophy:
+  uid: learn.reactors.machine-learning-three-basic-pillars.trophy

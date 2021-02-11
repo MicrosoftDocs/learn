@@ -3,7 +3,7 @@ uid: learn.wwl.explore-analyze-data-with-python
 metadata:
   title: Explore and analyze data with Python
   description: "Data exploration and analysis is at the core of data science. Data scientists require skills in languages like Python to explore, visualize, and manipulate data."
-  ms.date: 06/27/2020
+  ms.date: 11/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Knowledge of basic mathematics
   - Some experience programming in Python
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-and-analyze-data-with-python.svg
 levels:
 - intermediate
 roles:

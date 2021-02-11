@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.2-security-capabilities
+metadata:
+  title: Security capabilities and tasks
+  description: Security capabilities and tasks
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security capabilities and tasks
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-security-capabilities.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "What is the recommended, most secure way to protect your network for Azure SQL Database?"
+      choices:
+      - content: "Allow access to Azure services"
+        isCorrect: false
+        explanation: "This will allow all services in Azure to connect."
+      - content: "Firewall rules"
+        isCorrect: false
+        explanation: "This still maintains a public DNS hierarchy."
+      - content: "Virtual network rules"
+        isCorrect: false
+        explanation: "This still maintains a public DNS hierarchy."
+      - content: "Private Link"
+        isCorrect: true
+        explanation: "This will create a DNS hierarchy without information related to the Azure SQL Database logical server, and will create a truly private endpoint."
+    - content: "Consider the example from the unit where the Azure VM public IP address is 174.17.218.16 and the Azure VM private IP address is 10.0.0.2. When you use virtual network rules to configure network access to Azure SQL Database, what will be returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
+      choices:
+      - content: "174.17.218.16"
+        isCorrect: false
+        explanation: "This would be returned if firewall rules and/or Allow Azure Services is enabled."
+      - content: "10.0.0.2"
+        isCorrect: true
+        explanation: "This will be returned if virtual network rules or private endpoints are enabled."
+      - content: "Both IP addresses"
+        isCorrect: false
+        explanation: "Only one IP address will be returned."
+      - content: "Neither IP address"
+        isCorrect: false
+        explanation: "Review the unit again for more information."

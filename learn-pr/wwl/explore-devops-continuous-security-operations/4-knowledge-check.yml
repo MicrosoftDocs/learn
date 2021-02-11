@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2020
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
@@ -16,39 +16,39 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about remediating security breaches is optimal?"
+  - content: "What should a continuous security approach include?"
     choices:
-    - content: "Manual remediation is a viable option in environments with combined legacy and modern application platforms."
+    - content: "Manual remediation in environments with combined legacy and modern application platforms"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn’t an optimal statement about remediating security breaches."
-    - content: "Remediation must be automated as much as possible."
+      explanation: "Sorry, that’s incorrect. This isn’t what a continuous security approach should include."
+    - content: "Secure software delivery, secure infrastructure and secure automation"
       isCorrect: true
-      explanation: "That’s correct. This is an optimal statement about remediating security breaches."
-    - content: "Determining the source of the breach is more important than rapid remediation."
+      explanation: "That’s correct. A continuous security approach should include secure software delivery, secure infrastructure and secure automation."
+    - content: "Distributed denial of service, mobile malware, DNS"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn’t an optimal statement about remediating security breaches."
-  - content: "Which of the following provides the best basic description of the defense-in-depth security concept?"
+      explanation: "Sorry, that’s incorrect. This isn’t what a continuous security approach should include."
+  - content: "Which defensive mindset is appropriate to take?"
     choices:
-    - content: "Valuable data and information are located within extremely complex, or deep, data structures."
+    - content: "With enough automation of security checks in the continuous delivery system, you will be able to protect the majority of threats."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn’t the best basic description of defense-in-depth."
+      explanation: "Sorry, that’s incorrect. This isn’t an appropriate defensive mindset."
     - content: "Defensive mechanisms are layered to protect valuable data and information."
       isCorrect: true
-      explanation: "That’s correct. This is the best basic description of defense-in-depth."
-    - content: "Different attack vectors are prioritized and the use of redundant security mechanisms is de-emphasized."
+      explanation: "That’s correct. This is an appropriate defensive mindset."
+    - content: "High tech companies are less likely to be attacked."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn’t the best basic description of defense-in-depth."
-  - content: "The costs of a security breach often go well beyond the loss of sales and trust in a company. Which items in the following list are non-obvious potential effects of a breach?"
+      explanation: "Sorry, that’s incorrect. This isn’t an appropriate defensive mindset."
+  - content: "What are three principles of DevOps that most apply to continuous security?"
     choices:
-    - content: "Regulatory fines and responses, and brand recovery costs"
+    - content: "Shift left, automation and continuous improvement"
       isCorrect: true
-      explanation: "That’s correct. Regulatory fines and responses, and brand recovery costs are non-obvious potential effects of a breach."
-    - content: "Good publicity from news headlines and regulatory fines and responses"
+      explanation: "That’s correct. These are the three principles that most apply to continuous security."
+    - content: "Customer-focused design, OKRs, metrics"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. Good publicity from news headlines and regulatory fines and responses aren't non-obvious potential effects of a breach."
-    - content: "Brand recovery costs and good publicity from news headlines"
+      explanation: "Sorry, that’s incorrect. These aren't the three principles that most apply to continuous security."
+    - content: "Continuous operations, lean product and shift-right testing"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. Brand recovery costs and good publicity from news headlines aren't non-obvious potential effect of a breach."
+      explanation: "Sorry, that’s incorrect. These aren't the three principles that most apply to continuous security."
   - content: "Continuous Operations reduces or eliminates the need for planned downtimes or interruptions, such as scheduled maintenance. What should continuous monitoring of infrastructure, applications, and services be tied to, if possible?"
     choices:
     - content: "Security scanning"

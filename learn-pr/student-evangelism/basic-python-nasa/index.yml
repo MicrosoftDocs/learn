@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.basic-python-nasa
+metadata:
+  title: Write basic Python in Notebooks in Visual Studio Code
+  description: Learn the basics of Python.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write basic Python in Notebooks in Visual Studio Code
+summary: Learn the basics of Python.
+abstract: |
+  In this module, you will learn:
+  - How and when to use comments
+  - How to use math in Python
+  - How to create variables
+  - How to use pre-made functions
+  - How to output data
+prerequisites: |
+  - Visual Studio Code installed
+  - Python installed
+  - Python extension installed
+iconUrl: /learn/achievements/student-evangelism/basic-python-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+units:
+- learn.student-evangelism.basic-python-nasa.1-introduction
+- learn.student-evangelism.basic-python-nasa.2-comments
+- learn.student-evangelism.basic-python-nasa.3-arithmetic
+- learn.student-evangelism.basic-python-nasa.4-variables
+- learn.student-evangelism.basic-python-nasa.5-strings
+- learn.student-evangelism.basic-python-nasa.6-lists
+- learn.student-evangelism.basic-python-nasa.7-output
+- learn.student-evangelism.basic-python-nasa.7a-knowledge-check
+- learn.student-evangelism.basic-python-nasa.8-summary
+badge:
+  uid: learn.student-evangelism.basic-python-nasa.badge

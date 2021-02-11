@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -40,9 +40,9 @@ quiz:
       explanation: "That's incorrect. Tables within SQL Server Database are all structured datasets, they have pre-defined columns and structure."
   - content: "What of the following is an example of a streaming dataset?"
     choices:
-    - content: "Data from Twitter feeds"
+    - content: "Data from sensors and devices"
       isCorrect: true
-      explanation: "That's correct. Twitter feeds are an example of a streaming dataset as the tweets are published continuously."
+      explanation: "That's correct. Sensor and data feeds are examples of streaming datasets as they are published continuously."
     - content: "Sales data for the past month"
       isCorrect: false
       explanation: "That's incorrect. Sales data for the past month is not an example of a streaming dataset as this data is a point in time dataset."

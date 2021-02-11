@@ -3,12 +3,13 @@ uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: "Introduction"
+  ms.date: 01/07/2021
+  author: wwlpublish
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

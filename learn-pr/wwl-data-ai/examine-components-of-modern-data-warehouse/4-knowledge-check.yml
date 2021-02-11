@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.exercise-explore-azure-data-services-azure-portal
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When should you use Azure Synapse Analytics?"
+    choices:
+    - content: "To perform very complex queries and aggregations"
+      isCorrect: true
+      explanation: "That's correct. Azure Synapse Analytics is suitable for performing compute-intensive tasks such as these."
+    - content: "To create dashboards from tabular data"
+      isCorrect: false
+      explanation: "That's incorrect. Use Azure Analysis Services to create dashboards."
+    - content: "To enable large number of users to query analytics data"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Synapse Analytics is designed to support compute-intensive operations rather than high levels of query concurrency."
+  - content: "What is the primary difference between a *data lake* and a *data warehouse*?"
+    choices:
+    - content: "A data lake contains *structured information*, but a data warehouse holds *raw business data*"
+      isCorrect: false
+      explanation: "That's incorrect. A data warehousing solution converts the raw data in a data lake into meaningful business information in a data warehouse."
+    - content: "A data lake holds *raw data*, but a data warehouse holds *structured information*"
+      isCorrect: true
+      explanation: "That's correct. A data warehousing solution converts the raw data in a data lake into meaningful business information in a data warehouse."
+    - content: "Data stored in a data lake is dynamic, but information stored in a data warehouse is static"
+      isCorrect: false
+      explanation: "That's incorrect. The information held in both repositories will change over time as new data is ingested and processed."

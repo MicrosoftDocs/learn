@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.secret-message.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Answer the following questions to see what you've learned.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Answer the following questions to see what you've learned."
+  questions:
+  
+  - content: "ASCII is a way to represent what characters as numbers?"
+    choices:
+    - content: "English letters"
+      isCorrect: false
+      explanation: "Incorrect. English letters are represented as numbers in ASCII, but they aren't the only characters that are represented as numbers."
+    - content: "Numbers 0-9"
+      isCorrect: false
+      explanation: "Incorrect. Numbers 0-9 are represented as numbers in ASCII, but they aren't the only characters that are."
+    - content: "Punctuation"
+      isCorrect: false
+      explanation: "Incorrect. Punctuation is represented as numbers in ASCII, but they aren't the only characters that are represented as numbers."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "English letters, numbers 0-9, and punctuation are all represented as numbers in ASCII."
+  
+  - content: "If you call your `lassoLetter()` function and pass in `p` as the `letter` parameter and `-2` as the `shiftAmount` parameter, what letter is returned?"
+    choices:  
+    - content: "`Error`"
+      isCorrect: false
+      explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backwards."
+    - content: "`o`"
+      isCorrect: false
+      explanation: "Incorrect. For a return value of `o`, you would pass in a `shiftAmount` value of `-1`."
+    - content: "`n`"
+      isCorrect: true
+      explanation: "Correct. The code you wrote takes the ASCII number value of `p` and adds `-2` to it, which basically subtracts 2!"
+    - content: "`P`"
+      isCorrect: false
+      explanation: "Incorrect. The code you wrote can't convert a lowercase letter to uppercase."
+  
+  - content: "The secret time and place inspired by the WONDER WOMAN 1984 film is when and where?"
+    choices:  
+    - content: "June in Washington, USA"
+      isCorrect: false
+      explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
+    - content: "January in Montevideo, Uruguay"
+      isCorrect: false
+      explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
+    - content: "October in London, England"
+      isCorrect: false
+      explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
+    - content: "July in Washington, D.C., USA"
+      isCorrect: true
+      explanation: "Correct! When you decipher the secret message by using your code, you get the answer `jul washington dc`."

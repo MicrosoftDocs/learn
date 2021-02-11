@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-key-phrases-text-analytics-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the maximum character count in each document that you send to the Key Phrase Extraction service?"
+    choices:
+    - content: "256 characters."
+      isCorrect: false
+      explanation: "Incorrect. The service can handle more than 256 characters per document."
+    - content: "65,536 characters."
+      isCorrect: false
+      explanation: "Incorrect. This value is to high for each document's character count."
+    - content: "5,120 characters."
+      isCorrect: true
+      explanation: "Correct. Each document size must be 5,120 characters or less."
+  - content: "What is the maximum number of documents (IDs) that you can submit in call to the service?"
+    choices:
+    - content: "One document."
+      isCorrect: false
+      explanation: "Incorrect. You can submit more than one document in the JSON request."
+    - content: "1,000 documents."
+      isCorrect: true
+      explanation: "Correct. Each document size must be 5,120 characters or less and you can have up to 1,000 documents per collection (1,000 IDs)."
+    - content: "500 documents."
+      isCorrect: false
+      explanation: "Incorrect. You can submit more than 500 documents in one request."

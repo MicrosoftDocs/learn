@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
+metadata:
+  title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
+  description: "Develop highly secure IoT solutions with Azure Sphere, Azure RTOS and Azure IoT Hub"
+  ms.date: 12/11/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
+summary: "Deploy an Azure Sphere device application to monitor ambient conditions for laboratory conditions. The application will monitor the room environment conditions, connect to IoT Hub, and send telemetry data from the device to the cloud. You'll control cloud-to-device communications and undertake actions as needed."
+abstract: | 
+  In this module, you will:
+  - Create an Azure IoT hub and a Device Provisioning Services
+  - Configure your Azure Sphere device application to send telemetry to Azure IoT Hub
+  - Build and deploy the Azure Sphere device application
+  - View the environment telemetry using Azure Iot Explorer
+  - Control an Azure Sphere device application by using Azure IoT Hub device twins and direct methods
+  - Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
+  - Read the data from the new sensor running on the real-time core and send the data to IoT Hub
+     
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+
+prerequisites: |
+  - Azure Sphere kit
+  - Visual Studio Code installed on your computer
+  - Ability to use Visual Studio Code
+  - Git installed on your computer
+  - Ability to use Git/GitHub
+  - Basic knowledge of Azure Sphere
+  - Basic knowledge of Azure IoT
+iconUrl: /learn/achievements/student-evangelism/develop-secure-iot-solutions-for-azure-sphere-with-iot-hub.svg
+badge:
+  uid: learn.develop-secure-iot-solutions-with-azure-sphere-iot-hub.badge
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-hub
+units:
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.introduction
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.design-secure-iot-solution
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.gpio-hardware-interfaces
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-setup-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-setup-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-connect-monitor-iot-hub
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-connect-room-environment-monitor
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-azure-sphere-security
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-deploy-your-first-application
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-deploy-your-first-application
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-set-virtual-thermostat-iot-device-twins
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-set-room-virtual-thermostat-azure-iot-device-twins
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-azure-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-partnering-with-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-partnering-with-rtos-environment
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledge-check
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.summary

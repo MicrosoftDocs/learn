@@ -1,7 +1,7 @@
 Companies that use an on-premises Windows Server Active Directory solution can integrate their existing users and groups with Azure Active Directory with **Azure AD Connect**. This is a free tool you can download and install to synchronize your local AD with your Azure directory.
 
 With Azure AD Connect, you can provide your
-users with a common identity for Office 365, Azure, and SaaS applications integrated with Azure AD in a hybrid identity environment.
+users with a common identity for Microsoft 365, Azure, and SaaS applications integrated with Azure AD in a hybrid identity environment.
 
 ![A picture containing object Description automatically generated](../media/M1-AAD-Connect1.png)
 
@@ -19,7 +19,7 @@ Azure AD Connect provides several components that you can install to create a hy
 
 Integrating your on-premises directories with Azure AD makes your users more productive by supplying a common identity for accessing both cloud and on-premises resources. Users and organizations get the following advantages:
 
-* Users can use a single identity to access both on-premises applications and cloud services, such as Office 365.
+* Users can use a single identity to access both on-premises applications and cloud services, such as Microsoft 365.
 * A single tool provides an easy deployment experience for synchronization and sign-in.
 * Integration provides the newest capabilities for your scenarios. Azure AD Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, see [Hybrid Identity directory integration tools comparison](https://docs.microsoft.com/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
 

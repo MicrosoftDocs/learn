@@ -88,7 +88,7 @@ For learning purposes, here you'll provide the values as command-line arguments.
     PASSWORD=$(openssl rand -base64 32)
     ```
 
-    There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
+    There are many ways to generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
 
 1. Generate a unique DNS label prefix.
 

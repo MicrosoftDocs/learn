@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Machine Learning: Regression, Classification, and Clustering/unsupervised-learning-clustering</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-8">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-11">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-12">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Machine-Learning:-Regression,-Classification,-and-Clustering" transform="translate(-159.000000, -509.000000)">
+            <g id="Machine-Learning:-Regression,-Classification,-and-Clustering/unsupervised-learning-clustering" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(20.500000, 21.000000)">
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="32.5" cy="4.5" r="4.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="45" cy="29" r="6"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="22.5" cy="16" r="5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="4.5" cy="36.5" r="4.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="55.5" cy="22" r="4"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="3.5" cy="24" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="30.5" cy="52" r="6"></circle>
+                    <line x1="22.5" y1="34.5" x2="50.5" y2="8.5" id="Path-128" stroke="url(#linearGradient-9)" stroke-width="3"></line>
+                    <line x1="6.5" y1="53.8604253" x2="24.5926133" y2="33" id="Path-128" stroke="url(#linearGradient-10)" stroke-width="3"></line>
+                    <polyline id="Path-129" stroke="url(#linearGradient-11)" stroke-width="3" points="8 8.5 23 35 51.5 44"></polyline>
+                    <circle id="Oval" fill="url(#linearGradient-12)" transform="translate(23.000000, 34.500000) rotate(-180.000000) translate(-23.000000, -34.500000) " cx="23" cy="34.5" r="10.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" transform="translate(50.000000, 8.500000) rotate(-180.000000) translate(-50.000000, -8.500000) " cx="50" cy="8.5" r="8.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" transform="translate(53.000000, 44.500000) rotate(-180.000000) translate(-53.000000, -44.500000) " cx="53" cy="44.5" r="8.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" transform="translate(8.000000, 7.500000) rotate(-180.000000) translate(-8.000000, -7.500000) " cx="8" cy="7.5" r="7.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" transform="translate(7.500000, 53.000000) rotate(-180.000000) translate(-7.500000, -53.000000) " cx="7.5" cy="53" r="6"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

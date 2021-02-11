@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-temporal-tables-azure-sql-database
+title: Describe temporal tables in Azure SQL Database
+metadata:
+  title: Describe temporal tables in Azure SQL Database
+  description: "Describe temporal tables in Azure SQL Database"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-describe-temporal-tables-azure-sql-database.md)]

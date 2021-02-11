@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.aspnet-configurationbuilder
+metadata:
+  title: Externalize the configuration of an ASP.NET app by using an Azure key vault
+  description: Learn how to use ConfigurationBuilder to dynamically configure an ASP.NET web app to retrieve secrets from an Azure key vault. 
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Externalize the configuration of an ASP.NET app by using an Azure key vault
+summary: Learn how to use ConfigurationBuilder to dynamically configure an ASP.NET web app to retrieve secrets from an Azure key vault.
+abstract: |
+  In this module, you will:
+  - Use ConfigurationBuilder to retrieve access keys from an Azure key vault at runtime.
+prerequisites: |
+  - Some C# programming experience
+  - Familiarity with ASP.NET development
+  - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+  - Git for Windows installed on your desktop 
+iconUrl: /learn/achievements/aspnet-configurationbuilder.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- aspnet
+- azure-key-vault
+- azure-web-apps
+- dotnet
+units:
+- learn.azure.aspnet-configurationbuilder.1-introduction
+- learn.azure.aspnet-configurationbuilder.2-exercise-setup-app-deploy-resources
+- learn.azure.aspnet-configurationbuilder.3-aspnet-configurationbuilder-overview
+- learn.azure.aspnet-configurationbuilder.4-exercise-aspnet-configurationbuilder
+- learn.azure.aspnet-configurationbuilder.5-summary
+badge:
+  uid: learn.azure.aspnet-configurationbuilder.badge

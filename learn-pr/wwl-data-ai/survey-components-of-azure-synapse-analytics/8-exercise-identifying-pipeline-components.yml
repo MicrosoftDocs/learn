@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.exercise-identifying-pipeline-components
+title: Exercise-Identifying Azure Synapse pipeline components
+metadata:
+  title: Exercise-Identifying Azure Synapse pipeline components
+  description: "Exercise-Identifying Azure Synapse pipeline components"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-exercise-identifying-pipeline-components.md)]

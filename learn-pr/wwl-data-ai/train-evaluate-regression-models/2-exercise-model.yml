@@ -4,12 +4,12 @@ title: Exercise - Train and evaluate a regression model
 metadata:
   title: Exercise - Train and evaluate a regression model
   description: "Exercise - Train and evaluate a regression model"
-  ms.date: 06/27/2020
+  ms.date: 11/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 20
+durationInMinutes: 45
 content: |
   [!include[](includes/2-exercise-model.md)]

@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-app-to-azure-storage.10-exercise-connect-with-your-azure-storage-configuration
-title: Exercise - Connect with your Azure Storage configuration
+title: Exercise - Upload an image to your Azure Storage account
 metadata:
-  title: Exercise - Connect with your Azure Storage configuration
-  description: Exercise - Connect with your Azure Storage configuration
-  ms.date: 01/15/2019
+  title: Exercise - Upload an image to your Azure Storage account
+  description: Exercise - Upload an image to your Azure Storage account
+  ms.date: 11/28/2020
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
   zone_pivot_groups: dev-lang-csharp-javascript
 interactive: bash
 azureSandbox: true
-durationInMinutes: 15
+durationInMinutes: 5
 content: |
   [!include[](includes/10-exercise-connect-with-your-azure-storage-configuration.md)]

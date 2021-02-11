@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.cosmos-db-java-app
+metadata:
+  title: Build a Java app with cloud-scale NoSQL Cosmos DB
+  description: Learn how to create a Java application to store and query data in Azure Cosmos DB
+  ms.date: 09/13/2020
+  author: anfeldma-ms
+  ms.author: anfeldma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a Java app with cloud-scale NoSQL Cosmos DB
+summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
+abstract: |
+  In this module, you will:
+  - Learn how to send requests to Azure Cosmos DB from a Java application
+  - Create an application to store and query data in Azure Cosmos DB
+prerequisites: |
+  - Beginner-level familiarity with and local installations of the following tools: [Apache Maven](https://maven.apache.org/), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), Java JDK 8 or later, and a Java IDE or text editor
+  - Experience creating and managing resources in Azure Cosmos DB, including creation and configuration of Cosmos DB accounts, databases, and containers
+iconUrl: /learn/achievements/cosmos-db-java-app.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+units:
+- learn.cosmos-db-java-app.1-introduction
+- learn.cosmos-db-java-app.2-setup
+- learn.cosmos-db-java-app.3-crud-operations
+- learn.cosmos-db-java-app.4-query
+- learn.cosmos-db-java-app.5-knowledge-check
+- learn.cosmos-db-java-app.6-summary
+badge:
+  uid: learn.cosmos-db-java-app.badge

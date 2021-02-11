@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/25/2020
+  ms.date: 12/28/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -35,7 +35,7 @@ quiz:
     - content: "Software installation and maintenance are automated, but you must do your own backups"
       isCorrect: false
       explanation: "That's incorrect. You're responsible for all the management and administration of SQL Server running on a virtual machine."
-    - content: "You're responsible for all software installation and maintenance, and performing back ups."
+    - content: "You're responsible for all software installation and maintenance, and performing back ups"
       isCorrect: true
       explanation: "That's correct. With SQL Server running on a virtual machine, you're responsible for patching and backing up."
   - content: "Which of the following statement is true about Azure SQL Database?"
@@ -62,12 +62,12 @@ quiz:
       explanation: "That's correct. A managed instance comes with the benefit of automatic backups and the ability to restore to a point in time."
   - content: "What is the best way to transfer the data in a PostgreSQL database running on-premises into a database running Azure Database for PostgreSQL service?"
     choices:
-    - content: "Export the data form the on-premises database and import it manually into the database running in Azure."
+    - content: "Export the data from the on-premises database and import it manually into the database running in Azure"
       isCorrect: false
       explanation: "While this method may work, it isn't the simplest approach as it requires a lot of manual work."
     - content: "Upload a PostgreSQL database backup file to the database running in Azure"
       isCorrect: false
-      explanation: "That's incorrect. Whilst this way may work, it isn'tthe simplest as it requires many manual work."
+      explanation: "That's incorrect. While this way may work, it isn't the simplest option as it requires manual work."
     - content: "Use the Azure Database Migration Services"
       isCorrect: true
       explanation: "That's correct. The Database Migration Service offers the safest way to push your on-premises PostgreSQL database into Azure."

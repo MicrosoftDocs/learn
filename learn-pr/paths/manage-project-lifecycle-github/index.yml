@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.manage-project-lifecycle-github
+metadata:
+  title: Manage the lifecycle of your projects on GitHub
+  description: Through work planning and tracking, effective branching strategies, and extending GitHub through its API, manage releases all the way from idea to working software in the hands of your users.
+  brand: github
+  ms.date: 07/02/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+title: Manage the lifecycle of your projects on GitHub
+summary: |
+  Take full control of your GitHub projects. Through work planning and tracking, effective branching strategies, and extending GitHub through its API, manage releases all the way from idea to working software in the hands of your users.
+
+  In this learning path, you'll learn how to:
+  
+  - Use GitHub project boards to plan and track work.
+  - Package, version, and deliver software releases to consumers.
+  - Choose a branching strategy that enables team members to work in parallel.
+  - Resolve conflicts in code changes from multiple contributors.
+  - Use the GitHub API and GitHub Apps to build tools that improve your processes.
+  - Explore the history of your GitHub repository through issues, pull requests, and search.
+prerequisites: |
+ - A [GitHub](https://github.com?azure-portal=true) account
+iconUrl: /learn/achievements/github/manage-project-lifecycle-github.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+modules:
+- learn.github.introduction-to-github
+- learn.github.release-based-workflow-github
+- learn.github.manage-changes-pull-requests-github
+- learn.github.merge-conflict-resolution-github
+- learn.github.automate-devops-github-apps
+- learn.github.search-organize-repository-history-github
+trophy:
+  uid: learn.manage-project-lifecycle-github.trophy

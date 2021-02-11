@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-nodejs-project-dependencies.6-dependency-management
+title: Manage dependency updates in your Node.js project
+metadata:
+  title: Manage dependency updates in your Node.js project
+  description: This unit explains how to update the dependencies in your app and how to do so in a predictable way.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 06/25/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-dependency-management.md)]

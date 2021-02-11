@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.6-string-index
+title: String indexing
+metadata:
+  title: String indexing in Python for data science
+  description: Understand string indexing in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-string-index.md)] 

@@ -73,14 +73,14 @@ On the page for the container, in the toolbar, select **Upload**. In the **Uploa
 
 ### Use the Azure CLI
 
-Use the `az storage blob upload` command to upload a file to a blob in a container. The details describing the parameters for this command are available on the [az storage blob upload](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-upload) page on the Microsoft website. The following example uploads a local file named *racer_black_large.gif* in the *data* folder to a blob called *racer_black* in the **bikes* folder in the *images* container in the *contosodata* storage account.
+Use the `az storage blob upload` command to upload a file to a blob in a container. The details describing the parameters for this command are available on the [az storage blob upload](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-upload) page on the Microsoft website. The following example uploads a local file named *racer_green_large.gif* in the *data* folder to a blob called *racer_green* in the **bikes* folder in the *images* container in the *contosodata* storage account.
 
 ```azurecli
 az storage blob upload \
   --container-name images \
   --account-name contosodata \
-  --file "\data\racer_black_large.gif" \
-  --name "bikes\racer_black"
+  --file "\data\racer_green_large.gif" \
+  --name "bikes\racer_green"
 ```
 
 If you need to upload several files, use the `az storage blob upload-batch` command. This command takes the name of a local folder rather than a file name, and uploads the files in that folder to separate blobs. The example below uploads all *gif* files in the *data* folder to the *bikes* folder in the *images* container.
@@ -102,8 +102,8 @@ Get-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Set-AzStorageBlobContent `
     -Container "images" `
-    -File "\data\racer_black_large.gif" `
-    -Blob "bikes\racer_black"
+    -File "\data\racer_green_large.gif" `
+    -Blob "bikes\racer_green"
 ```
 
 Azure PowerShell doesn't currently include a batch blob upload command. If you need to upload multiple files, you can write your own PowerShell script (use the `Get-ChildItem` cmdlet) to iterate through the files and upload each one individually.
@@ -153,14 +153,14 @@ If you're using the Azure portal, go to the page for your storage account and se
 
 ### Use the Azure CLI
 
-The Azure CLI provides the [`az storage blob download`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download) and [`az storage blob download-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download-batch) commands. These commands are analogous to those available for uploading blobs. The example below retrieves the *racer_black"* blob from the *bikes* folder in the *images* container.
+The Azure CLI provides the [`az storage blob download`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download) and [`az storage blob download-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-download-batch) commands. These commands are analogous to those available for uploading blobs. The example below retrieves the *racer_green"* blob from the *bikes* folder in the *images* container.
 
 ```azurecli
 az storage blob download \
   --container-name images \
   --account-name contosodata \
-  --file "racer_black_large.gif" \
-  --name "bikes\racer_black"
+  --file "racer_green_large.gif" \
+  --name "bikes\racer_green"
 ```
 ### Use Azure PowerShell
 
@@ -171,8 +171,8 @@ Get-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Get-AzStorageBlobContent `
     -Container "images" `
-    -Blob "bikes\racer_black_large.gif" `
-    -Destination "racer_black_large.gif" 
+    -Blob "bikes\racer_green_large.gif" `
+    -Destination "racer_green_large.gif" 
 ```
 
 ## Delete a blob from a container
@@ -199,25 +199,25 @@ If you've enabled soft delete for the storage account, the blobs page listing th
 
 ### Use the Azure CLI
 
-You can delete a single blob with the [`az storage blob delete`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-black* blob from the *bikes* folder in the *images* container:
+You can delete a single blob with the [`az storage blob delete`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete) command, or a set of blobs with the [`az storage blob delete-batch`](https://docs.microsoft.com/cli/azure/storage/blob?view=azure-cli-latest#az-storage-blob-delete-batch) command. The command below removes the *racer-green* blob from the *bikes* folder in the *images* container:
 
 ```azurecli
 az storage blob delete ^
   --account-name contosodata ^
   --container-name "images" ^
-  --name "bikes\racer_black"
+  --name "bikes\racer_green"
 ```
 
 ### Use Azure PowerShell
 
-Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion is silent. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
+Use the [`Remove-AzStorageBlob`](https://docs.microsoft.com/powershell/module/az.storage/remove-azstorageblob) cmdlet to delete a storage blob from Azure PowerShell. By default, deletion runs without prompts. You can add the `-Confirm` flag to prompt the user to confirm that they really want to delete the blob:
 
 ```PowerShell
 Get-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Remove-AzStorageBlob `
     -Container "images" `
-    -Blob "bikes\racer_black" `
+    -Blob "bikes\racer_green" `
     -Confirm
 ```
 

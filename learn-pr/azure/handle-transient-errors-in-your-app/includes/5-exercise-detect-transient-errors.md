@@ -36,9 +36,9 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
       --db-name chat-app
     ```
 
-    The option `--db-name chat-app` creates a database named chat-app to store your chat documents in. 
+    The option `--db-name chat-app` creates a database named chat-app to store your chat documents in.
 
-1. Finally, run the following command in the Azure Cloud Shell to retrieve the connection strings for our new database. 
+1. Finally, run the following command in the Azure Cloud Shell to retrieve the connection strings for our new database.
 
     ```azurecli
     az cosmosdb list-connection-strings \
@@ -46,8 +46,8 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
       --name $COSMOS_DB_NAME  | sed -n -e '4 p' | sed -E -e 's/.*mongo(.*)true.*/mongo\1true/'
     ```
 
-    This command `az cosmosdb list-connection-strings` returns a json object with connection information, piping `|` the JSON into two `sed` commands to strip out just the MongoDB connection string. 
-1. Save the connection string as it's needed for the rest of the module. 
+    This command `az cosmosdb list-connection-strings` returns a json object with connection information, piping `|` the JSON into two `sed` commands to strip out just the MongoDB connection string.
+1. Save the connection string as it's needed for the rest of the module.
 
 ::: zone pivot="csharp"
 
@@ -92,7 +92,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     ![The chat console app interface at startup, showing the New, Read All, and Quit commands.](../media/5-app-interface.png)
 
-1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and the restart, notice that the messages you typed  in the last session are available. That's because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data. 
+1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and the restart, notice that the messages you typed  in the last session are available. That's because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data.
 
 Let's see what happens when we break the connection to the backend database.
 
@@ -104,11 +104,11 @@ Let's see what happens when we break the connection to the backend database.
     code Program.cs
     ```
 
-1. Scroll down to the getAllChats method. It should look the same as the following method. 
+1. Scroll down to the getAllChats method. It should look the same as the following method.
 
     [!code-csharp[](../src/csharp-chatapp/Program.cs?range=69-78&highlight=72)]
 
-    The Find method queries all the documents in the Azure Cosmos DB. But, what if a transient error occurs while we try that operation? Let's start by catching that error. 
+    The Find method queries all the documents in the Azure Cosmos DB. But, what if a transient error occurs while we try that operation? Let's start by catching that error.
 
 1. Replace the `getAllChats()` implementation with the code in the following block. Notice that we include a small helper method called `diagnose()` to print the exception message.
 
@@ -156,8 +156,8 @@ Let's see what happens when we break the connection to the backend database.
     dotnet run
     ```
 
-1. The example messages you created previously are listed. 
-1. Leave the app running, so we can demonstrate a transient error in the following section. 
+1. The example messages you created previously are listed.
+1. Leave the app running, so we can demonstrate a transient error in the following section.
 
 ::: zone-end
 ::: zone pivot="java"
@@ -290,36 +290,36 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
 
-1. To navigate to our Node.js app in the browser, we have to open port 8000 in the sandbox. To open port 8000, run the following `curl` command in the Cloud Shell. 
+1. To navigate to our Node.js app in the browser, we have to open port 8000 in the sandbox. To open port 8000, run the following `curl` command in the Cloud Shell.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
     ```
 
-    When the port is opened successfully, you'll see a message similar to the following message. 
+    When the port is opened successfully, you'll see a message similar to the following message.
 
     ```json
     {"message":"Port 8000 is open","url":"https://gateway03.westus.console.azure.com/n/cc-604c-74cb7fc3/cc-604c-74cb7fc3/proxy/8000/"}
     ```
-1. Note the url value in the message that was returned from the curl command. This is the url of our app. 
+1. Note the url value in the message that was returned from the curl command. This is the url of our app.
 1. Compile and run the Node.js app.
 
     ```bash
     npm install
     npm start
     ```
-1. Open the url you saved previously in your favorite browser. You should see a user interface similar to the following screenshot. 
+1. Open the url you saved previously in your favorite browser. You should see a user interface similar to the following screenshot.
 
     ![The chat node app interface at startup, showing fields to enter name and message and buttons to send and delete a message.](../media/5-node-app-interface.png)
 
-    
+
 1. Test the app by adding messages to the chat board through the interface.
 
 1. Stop the server by pressing Ctrl+S in the Cloud Shell window.
 
 ## Add code to detect errors
 
-1. Run the following command to edit **server.js** in the code editor of the Cloud Shell. 
+1. Run the following command to edit **server.js** in the code editor of the Cloud Shell.
 
     ```bash
     code server.js
@@ -345,7 +345,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     ```javascript
     // Save a message
     app.post('/messages', (req, res) => {
-      var message = new Message(req.body);
+      let message = new Message(req.body);
       message.save()
         .then( () => {
           res.sendStatus(200);
@@ -408,7 +408,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. When the firewall configuration update has finished successfully, return to the chat app and select **R** to refresh all the messages. This calls our `getAllChats()` method. After a few seconds, the call to find all messages times out and you should see that the code handled a System.TimeoutException and printed that to the console. The app is still running. If you now try to add a new message, you get another System.TimeoutException. However, this time the app crashes. Why? If you look closely at the code in Program.cs,** you can see that we only handle the exception gracefully in the `getAllChats()` method. `Main()` doesn't handle the exception so the app crashes instead. 
+1. When the firewall configuration update has finished successfully, return to the chat app and select **R** to refresh all the messages. This calls our `getAllChats()` method. After a few seconds, the call to find all messages times out and you should see that the code handled a System.TimeoutException and printed that to the console. The app is still running. If you now try to add a new message, you get another System.TimeoutException. However, this time the app crashes. Why? If you look closely at the code in Program.cs,** you can see that we only handle the exception gracefully in the `getAllChats()` method. `Main()` doesn't handle the exception so the app crashes instead.
 
 To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
@@ -420,10 +420,10 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
-1. Select **All networks** and then select **Save** at the bottom of the screen. 
+1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end
 
@@ -462,10 +462,10 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
-1. Select **All networks** and then select **Save** at the bottom of the screen. 
+1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end
 
@@ -504,9 +504,9 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
-1. Select **All networks** and then select **Save** at the bottom of the screen. 
+1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end

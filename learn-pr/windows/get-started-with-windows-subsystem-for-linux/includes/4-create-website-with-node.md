@@ -24,13 +24,13 @@ Open your Ubuntu command line and use the following commands to try the various 
 
 1) Use apt to ensure that you have a recent version of cURL: `sudo apt install curl`.
 
-2) Use cURL to ensure that you get a recent version of Node.js and npm: `curl -sL https://deb.nodesource.com/setup_12.x | sudo-E bash - `.
+2) Use cURL to ensure that you get a recent version of Node.js and npm: `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - `.
 
 3) Use apt-get to install Node.js (as recommended in the download instructions that will appear after you run the cURL command): `sudo apt-get install -y nodejs`.
 
 4) Install Express by using npm: `sudo npm install express-generator -g`.
 
-5) Use `--version` to check that each package manager is installed and to get the version number, like this: `nodejs --version`, `npm --version`, and `express --version`.
+5) Use `--version` to check that each package manager is installed and to get the version number, like this: `node --version`, `npm --version`, and `express --version`.
 
 ## Try using a Node.js module
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.define-foundation-pillars.explore-third-foundation-pillar
-title: Explore the third foundation pillar of DevOps, Architecture
+title: Explore DevOps Architecture
 metadata:
-  title: explore the third foundation pillar of devops architecture
-  description: "explore the third foundation pillar of devops architecture"
-  ms.date: 03/06/2020
+  title: Explore DevOps Architecture
+  description: "Explore the third foundation pillar of DevOps, architecture."
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial

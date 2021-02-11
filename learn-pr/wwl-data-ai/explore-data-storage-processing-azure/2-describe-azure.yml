@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-storage-processing-azure.describe-with-azure
+title: Describe data storage and processing with Azure
+metadata:
+  title: Describe data storage and processing with Azure
+  description: "Describe data storage and processing with Azure"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-describe-azure.md)]

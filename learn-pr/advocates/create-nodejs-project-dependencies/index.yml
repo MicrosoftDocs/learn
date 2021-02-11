@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.create-nodejs-project-dependencies
+metadata:
+  title: Create a new Node.js project and work with package dependencies 
+  description: Create a Node.js project and learn to add packages and manage package dependencies in your project. Use the NPM CLI and registry to add libraries and tools to your JavaScript/TypeScript applications using Visual Studio Code.
+  ms.date: 06/25/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a new Node.js project and work with dependencies  
+summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Initialize Node.js projects
+  - Understand what the manifest file package.json consists of and use it to your advantage
+  - Add packages to and remove packages from your Node.js project
+  - Manage your package dependencies and update them in a predictable way
+iconUrl: /learn/achievements/create-nodejs-project-dependencies.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+prerequisites: |
+  - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+  - Familiarity with editing text and code files in any text editor
+units:
+- learn.azure.create-nodejs-project-dependencies.1-introduction
+- learn.azure.create-nodejs-project-dependencies.2-package-json
+- learn.azure.create-nodejs-project-dependencies.3-exercise-package-json
+- learn.azure.create-nodejs-project-dependencies.4-dependency
+- learn.azure.create-nodejs-project-dependencies.5-exercise-dependency
+- learn.azure.create-nodejs-project-dependencies.6-dependency-management
+- learn.azure.create-nodejs-project-dependencies.7-exercise-dependency-management
+- learn.azure.create-nodejs-project-dependencies.8-knowledge-check
+- learn.azure.create-nodejs-project-dependencies.9-summary
+
+badge:
+  uid: learn.azure.create-nodejs-project-dependencies.badge

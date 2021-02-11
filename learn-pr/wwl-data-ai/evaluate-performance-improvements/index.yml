@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-performance-improvements
+metadata:
+  title: Evaluate performance improvements
+  description: "Evaluate performance improvements"
+  ms.date: 01/19/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Evaluate performance improvements
+summary: Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore relevant Dynamic Management Objects.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Dynamic Manage Objects to extract query performance information
+  - Determine when changing indexes or defining new ones can affect performance
+  - Evaluate wait statistics as an aid in finding areas for performance improvement
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Basic understanding of structure and usage of SQL Server indexes.
+  - Basic understanding of relational database concepts.
+iconUrl: /learn/achievements/evaluate-performance-improvements.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.evaluate-performance-improvements.introduction
+- learn.wwl.evaluate-performance-improvements.describe-dynamic-management-views-functions
+- learn.wwl.evaluate-performance-improvements.describe-wait-statistics
+- learn.wwl.evaluate-performance-improvements.tune-indexes
+- learn.wwl.evaluate-performance-improvements.maintain-indexes
+- learn.wwl.evaluate-performance-improvements.exercise-isolate-problem-areas-poor-performing-queries
+- learn.wwl.evaluate-performance-improvements.knowledge-check
+- learn.wwl.evaluate-performance-improvements.summary
+badge:
+  uid: learn.wwl.evaluate-performance-improvements.badge

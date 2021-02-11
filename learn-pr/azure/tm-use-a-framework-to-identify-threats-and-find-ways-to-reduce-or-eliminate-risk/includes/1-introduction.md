@@ -1,19 +1,19 @@
-## What It's About
-
 A threat modeling framework helps you generate a list of potential threats and find ways to reduce or eliminate risk.
 
 As long as you have a working knowledge of information security, the framework takes you through the major categories of threats to make sure they're tackled appropriately.
 
-## When to Use Them
+## When to use the framework
 
 This framework should be applied to every data-flow diagram created for a new or existing system.
 
 > [!NOTE]
-> The goal is to find and fix as many issues earlier in the development lifecycle. The longer you wait, the greater the risk for your customers.
+> The goal is to find and fix as many issues early in the development lifecycle. The longer you wait, the greater the risk for your customers.
 
-## What to Expect
+## What to expect
 
-The framework takes you through six major threat categories, with countless potential threats under each one. By using the framework, you'll be able to answer questions like:
+The framework takes you through six major threat categories, with countless potential threats under each one.
+
+By using the framework, you'll be able to answer questions like:
 
 - Are both sides of the communication authenticated?
 - How do I know someone can't change data in-transit, in-use or at-rest?
@@ -26,7 +26,7 @@ In this module, you'll learn about each threat category with their corresponding
 
 ## Learning objectives
 
-In this module, you will be able to:
+In this module, you'll be able to:
 
 - Discuss each threat category in the threat modeling framework
 - Learn about the security controls to help reduce or eliminate risk

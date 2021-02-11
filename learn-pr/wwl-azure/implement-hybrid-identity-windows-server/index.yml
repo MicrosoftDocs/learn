@@ -1,0 +1,66 @@
+### YamlMime:Module
+uid: learn.wwl.implement-hybrid-identity-with-windows-server
+metadata:
+  title: Implement hybrid identity with Windows Server
+  description: "Implement hybrid identity with Windows Server"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement hybrid identity with Windows Server
+summary: In this module, you’ll learn to configure an Azure environment so that Windows IaaS workloads requiring Active Directory are supported. You’ll also learn to integrate on-premises Active Directory Domain Services (AD DS) environment into Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Select an Azure AD integration model.
+  - Plan for Azure AD integration.
+  - Prepare on-premises AD DS for directory synchronization.
+  - Install and configure directory synchronization using Azure AD Connect.
+  - Implement Seamless Single Sign-on (SSO).
+  - Enable Azure AD login for an Azure Windows virtual machine (VM).
+  - Describe Azure AD DS.
+  - Implement and configure Azure AD DS.
+  - Manage Windows Server 2019 in an Azure AD DS instance.
+  - Join a Windows Server VM to a managed domain.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Hyper-V, and file and storage services.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server-based compute and storage technologies.
+  - Implementing and managing IaaS services in Microsoft Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/implement-hybrid-identity-with-windows-server.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.implement-hybrid-identity-with-windows-server.introduction
+- learn.wwl.implement-hybrid-identity-with-windows-server.select-azure-ad-integration-model
+- learn.wwl.implement-hybrid-identity-with-windows-server.plan-azure-ad-integration
+- learn.wwl.implement-hybrid-identity-with-windows-server.prepare-premises-active-directory-directory-synchronization
+- learn.wwl.implement-hybrid-identity-with-windows-server.install-configure-directory-synchronization-with-azure-ad-connect
+- learn.wwl.implement-hybrid-identity-with-windows-server.implement-seamless-single-sign-on
+- learn.wwl.implement-hybrid-identity-with-windows-server.enable-azure-ad-login-for-windows-vm-azure
+- learn.wwl.implement-hybrid-identity-with-windows-server.knowledge-check-1
+- learn.wwl.implement-hybrid-identity-with-windows-server.describe-azure-ad-ds
+- learn.wwl.implement-hybrid-identity-with-windows-server.implement-configure-azure-ad-ds
+- learn.wwl.implement-hybrid-identity-with-windows-server.manage-2019-azure-ad-ds-environment
+- learn.wwl.implement-hybrid-identity-with-windows-server.create-configure-azure-active-directory-domain-services-instance
+- learn.wwl.implement-hybrid-identity-with-windows-server.join-vm-managed-domain
+- learn.wwl.implement-hybrid-identity-with-windows-server.knowledge-check-2
+- learn.wwl.implement-hybrid-identity-with-windows-server.summary
+badge:
+  uid: learn.wwl.implement-hybrid-identity-with-windows-server.badge

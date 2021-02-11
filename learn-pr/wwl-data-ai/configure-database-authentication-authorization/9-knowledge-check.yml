@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-database-authentication-authorization.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which protocol is used by Azure Active Directory for Authorization?"
+    choices:
+    - content: "Kerberos"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+    - content: "LDAP"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+    - content: "OAuth"
+      isCorrect: true
+      explanation: "That's correct. Azure Active Directory uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+  - content: "Which database stores the information about logins in SQL Server?"
+    choices:
+    - content: "master"
+      isCorrect: true
+      explanation: "That's correct. Logins are stored in the master database."
+    - content: "model"
+      isCorrect: false
+      explanation: "That's incorrect. The model database doesn't store any user or job information."
+    - content: "msdb"
+      isCorrect: false
+      explanation: "That's incorrect. The MSDB database stores data related to the SQL Server Agent."
+  - content: "Which role allows users to create users within a database?"
+    choices:
+    - content: "db_datareader"
+      isCorrect: false
+      explanation: "That's incorrect. This role only allows users to read all of the data in a given database, but not write any data."
+    - content: "db_accessadmin"
+      isCorrect: true
+      explanation: "That's correct. Access admin can add users to the database and create them."
+    - content: "db_securityadmin"
+      isCorrect: false
+      explanation: "That's incorrect. The security admin role is privileged, but can't create logins and users."
+  - content: "Which permission allows the user to perform any option against a database object?"
+    choices:
+    - content: "Control"
+      isCorrect: true
+      explanation: "That's correct. Control allows the user to drop or modify an object."
+    - content: "Delete"
+      isCorrect: false
+      explanation: "That's incorrect. The delete permission only allows for deletion of data in a table."
+    - content: "View Definition"
+      isCorrect: false
+      explanation: "That's incorrect. View definition only allows the user to see the DDL for the object."
+  - content: "Which database object can be granted insert access?"
+    choices:
+    - content: "Functions"
+      isCorrect: false
+      explanation: "That's incorrect. Functions can only be executed or created."
+    - content: "Tables"
+      isCorrect: true
+      explanation: "That's correct. Tables can have data inserted into them."
+    - content: "Procedures"
+      isCorrect: false
+      explanation: "That's incorrect. While procedures can insert data into a table, they cannot themselves be grated insert permissions."
+  - content: "What feature allows a user to execute a stored procedure even if she doesn't have permission to access the tables referenced in the stored procedure?"
+    choices:
+    - content: "Ownership chaining"
+      isCorrect: true
+      explanation: "That's correct. Ownership chaining effectively gives the user temporary access to the objects called by the procedure."
+    - content: "Principle of least privilege"
+      isCorrect: false
+      explanation: "That's incorrect. The principal of least privilege is a concept and not a functional action ."
+    - content: "Granular security"
+      isCorrect: false
+      explanation: "That's incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."

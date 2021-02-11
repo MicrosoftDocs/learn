@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-models-with-azure-machine-learning.capturing-viewing-telemetry
-title: Capturing and viewing telemetry
+title: Capture and view telemetry
 metadata:
-  title: Capturing and viewing telemetry
-  description: "Learn how to capture and view telemetry in an Azure Machine Learning service."
-  ms.date: 06/07/2020
+  title: Capture and view telemetry
+  description: "Capture and view telemetry"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -14,7 +14,7 @@ Start by creating a virtual machine, and use an image that includes SQL Server 2
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name UbuntuSQLServer \
-        --image "MicrosoftSQLServer:sql2019-ubuntu1804:sqldev:15.0.200317" \
+        --image "MicrosoftSQLServer:sql2019-ubuntu1804:sqldev:latest" \
         --size Standard_D2s_v3 \
         --admin-username ubuntuadmin \
         --admin-password $PASSWORD \
@@ -25,7 +25,7 @@ Start by creating a virtual machine, and use an image that includes SQL Server 2
 1. Store the public IP address of your server and make a note of the administrator's password.
 
     ```bash
-    export IPADDRESS = $(az vm show -d \
+    export IPADDRESS=$(az vm show -d \
         --name UbuntuSQLServer \
         --query publicIps --output tsv \
         --resource-group <rgn>[sandbox resource group name]</rgn>)
@@ -214,7 +214,7 @@ Four stored procedures are used in this module. In this section, you'll create t
 You'll create a global temporary table that stores the values of the **Batch Requests/sec** counter. Follow these steps:
 
 1. In Azure Data Studio, on the **File** menu, click **Open File**.
-1. Browse to the **~/automatically-tune-sql-server-linux/** folder.
+1. Browse to the **~/mslearn-automatically-tune-sql-server-linux/** folder.
 1. Click **batchrequests_perf_collector.sql**, and then click **Open**. Examine the contents of the script, which creates a global temporary table that stores the way a performance counter varies over time. The script continues to populate that table with measurements of the **Batch Requests/sec** counter.
 1. In the top-left of the script window, click **Run**.
 

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.knowledge-checks
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure tool or resource enables you to plan your future costs?"
+    choices:
+    - content: "Pricing calculator."
+      isCorrect: true
+      explanation: "That's correct. You can use the Pricing calculator to get an estimate of your expected costs."
+    - content: "Azure Advisor."
+      isCorrect: false
+      explanation: "That's incorrect. Advisor analyzes your deployed resources and services, and identifies ways to improve your environment across each of these areas, which includes costs."
+    - content: "Azure Cost Management."
+      isCorrect: false
+      explanation: "That's incorrect. You can use Azure Cost Management to gain greater insights into where your greatest Azure resource costs are."
+  - content: "When you create a Spot VM instance, you can choose between two eviction policies. Which of the following is a valid eviction policy option?"
+    choices:
+    - content: "Capacity only."
+      isCorrect: false
+      explanation: "That's incorrect. This is an Eviction type."
+    - content: "Price or capacity."
+      isCorrect: false
+      explanation: "That's incorrect. This is an Eviction type."
+    - content: "Stop/Deallocate."
+      isCorrect: true
+      explanation: "That's correct. The other eviction policy option is Delete."

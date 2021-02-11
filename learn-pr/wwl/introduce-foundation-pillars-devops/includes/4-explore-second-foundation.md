@@ -1,121 +1,69 @@
 
 
-The next pillar in our view of DevOps is **Lean Product**.
+According to Richard Banfield, author of *Design Sprint: A Practical Guidebook for Building Great Digital Products* and Product Leadership: How Top Product Managers Launch Awesome Products and Build Successful Teams), great product companies have four things in common:
 
-According to Richard Banfield, great product companies have four things in common:
+- Speed to market
+- Agility when faced with change
+- The move to digital business
+- Customer satisfaction
 
-- **Vision** is about creating a vivid story of the future we envision with our product in the world in 2-5 years.
-- **Strategy** is the set of steps that we believe we need to get there. And, our plan is to change course as we learn more along the way.
-- **Priorities** help us focus on delivering the highest business value items first, and on executing in an incremental fashion.
-- Measuring **outcomes** aligns our hypotheses with reality and helps us make better data-driven decisions.
+### Why adopt a product-centric model?
+
+> By 2024, more than three-quarters of digital business leaders will have benefited from product management practices, up from a third that have already done so in 2018.
+> 
+> By 2024, 80% of IT organizations will undergo radical restructuring and changes to their missions as they embrace product-centric operating models.
+> 
+> [Gartner "A Day in the Life of a Digital Product Manager,"](https://www.gartner.com/en/documents/3955809/a-day-in-the-life-of-a-digital-product-manager) Deacon D.K Wan, July 31, 2019 – ID G00400672
+
+> [!div class="centered"]
+> ![Diagram depicts product-centric model adoption over time. In total, 85% of the respondents have adopted or plan to adopt a product-centric model. Full adoption over time happens for 54% of the respondents, and partial adoption for 32%. 15% of the respondents say they have fully adopted a product-centric model. 31% expect it to be fully adopted within the next three years. 5% expect to adopt the product-centric model in the next three to five years. 3% expect the adoption process to take longer than five years. 32% of the respondents expect some use of a product-centric model, but not to fully move to one. 15% of the respondents do not have plans to move to a product-centric model. The survey was conducted on 129 Gartner Research Circle members. The question was: What are your organization’s plans for using a product-centric model for software delivery (versus a project-centric model)? Please select one response.](../media/1-4-gartner.png)
+
+Image credit: [Gartner: "Survey Analysis: IT Is Moving Quickly From Projects to Products,"](https://www.gartner.com/document/3891887?ref=lib) Bill Swanton, Matthew Hotel, and Deacon D.K. Wan, October 23, 2018 - ID G00373896
+
+> [!IMPORTANT]
+> According to the well-respected author and international public speaker Martin Fowler, "product-mode" is a way of working. It is a way of funding and organizing software development that differs significantly from the projects way of doing it. Although generally applicable to digital-age enterprise IT, this way of working is especially suited to those who aim to drive business through a digital platform.
+
+**Potential benefits of operating in product-mode**
+
+- Ability to reorient quickly 
+- Reduced end-to-End cycle time 
+- Ability to truly iterate
+- Knowledge retention
+- Architectural integrity
+- Team motivation and dynamics
+- Economies of flow and iteration
+
+
+### What is the product-centric model?
+
+> [!IMPORTANT]
+> A business-centric strategy for delivering software and digital experiences in which a product is developed that delivers an ongoing business capability (as opposed to a limited time project-based project). Generally, a product manager owns this product and is responsible for its ongoing development and its budget. This product may exist on a platform, which is essentially a product on which other products are built.
+>
+> - Definition by Gartner
 
 > [!TIP]
-> Lean Product Management arose from the need for a clear product vision and a product strategy.
-
-When envisioning a product, we all tend to like our own ideas, but we can't assess how good those ideas actually are. Moreover, all of us are susceptible to confirmation bias - our beliefs are often focused on the information that upholds them while at the same time tending to ignore the information that challenges them. We need a scientific method to test and measure the value a product improvement would bring.
-
-> [!IMPORTANT]
-> Using Lean Product Discovery focuses on solving the right problems, finding value, and confirming that our product roadmaps align with customer needs.
-
-### Why Lean Product Management?
-
-The highest form of waste is building a product that no one will buy or use!
-
-> [!IMPORTANT]
-> Lean Product Management is critical because the impact of building the wrong product has an exponential impact on waste as it is planned and executed.
-
-If the right problems aren’t being solved for our customers, we aren't building based on value.
-
-![Diagram shows that unless you apply the principles of Lean Product Management, the likelihood of generating waste increases. Lean Product Management offers three ways of reducing waste during product development. First, how the product is built: Agile and scrum help minimize the amount of failure. Second, what the product is: Product management helps us define the right product. And last, why the product matters. Product discovery ensures we don't build a product that nobody needs.](../media/1-4-why.png)
-
-Consider a discussion between a consultant and the customer, where the ever-confident consultant provides a precise estimate:
-
->**Consultant:** We can build this product for you in 44,562.524 hours. Our delivery team is standing by to start.
+> Projects are used to manage occasional endeavors. 
 >
->**Customer:** Great! Which problem are you trying to solve?
+> The product-development process is not an occasional endeavor. It’s a continuous process of improvement of the product through the delivery of new features.
+ 
+A product is not a project because there is no clear definition of what needs to be delivered. A product in the software development industry is any customer-facing system. Because customer needs evolve over time and new technologies are made available, the customer expects that the software they use will evolve as well, hence there’s no clear definition of what needs to be delivered. There's no reason to have a one-year plan for all features to be delivered in a certain sequence if requirements may change every month or even every week. A product development process needs to be adaptable to this change in customer needs.
 
-When defining the scope of a product in a Services world, a precise solution to an approximate problem is very dangerous. It’s impossible to estimate the solution to a problem that has no prior answer or isn’t well understood. Products need to be discovered, not just defined.
-
-Innovation can’t be easily estimated. As a team gets deeper into problem solving, they'll have a better understanding of the problem and the possible solutions or tradeoffs. The more innovation required, the more uncertain the scope.
-
-Just because you have a precise estimate, don’t assume it’s accurate. Make sure the estimate is supported by discovery.
+There’s no clear definition of the date when products need to be delivered. Therefore, products cannot suffer the burden of the project-management process. The product-development process must be much leaner than the traditional project-management process, because delivering new functionalities to a product is always the same project for each new feature: discovery, design, implementation, test, deployment.
 
 > [!IMPORTANT]
-> Lean Product Management prevents you from creating false precision.
+> The product-centric model
+> - Can serve external and internal customers
+> - Is clearly defined by its business capabilities
+> - Delivers capabilities that have customers value
+> - Can be a repeatable service or a platform
+> - Can be bought, sold, subscribed. and/or funded
+> - Has competition in the market and a product lifecycle
 
-### What is Lean Product Management?
+Aligning a development team to a product requires a fundamental change to the skillsets within the team itself. Instead of deep specialization, the team needs to convert to a full-stack methodology in order to support a product end to end.
 
-> [!IMPORTANT]
-> **Lean Product Management** refers to a way of discovering products that embraces user-centrism. It acknowledges that product teams are on a continuous journey of solving well-understood user problems in as lean a manner as possible.
->
-> Lean Product Management separates the concerns of **why** a product matters, **what** the product is, and **how** it is built.
+Product organizations are flatter with fewer overheads.
 
-**The Lean Product Management manifesto** values:
+> [!div class="centered"]
+> ![Diagram depicts the full-stack product team, which includes the following roles: product owner, scrum master, engineer, site reliability engineer. The full-stack team collaborates with the product manager and agile architect.](../media/1-4-fullstack.png)
 
-- Customer problems and needs over internal requirements
-- Data-driven experiments over preconceived solutions
-- Customer problem roadmaps over feature roadmaps
-- Idea generation and collaboration over solution mandates
-
-### Big concepts and principles of Lean Product Management
-
-:::row:::
-   :::column span="":::
-      A principle is a fundamental truth or proposition that serves as the foundation for a system of belief or behavior or for a chain of reasoning.
-
-There are six principles of Lean Product Management:
-
-1. Start with vision
-1. Product strategy
-1. Ideas and opportunities
-1. Lean experiments
-1. Single team, dual tracks
-1. Finding product market fit.
-
-![Diagram shows the six principles of Lean Product Management](../media/1-4-principles.png)
-
-#### Principle #1: Start with vision
-
-The first Lean Product Management principle is that it’s important to **start with a vision**. Tell a **vivid story**, perhaps in a diagram or a video. Then use the story to spark ideas, set a clear destination, and unite the team.
-
-#### Principle #2: Product strategy
-
-The second Lean Product Management principle is that **product strategy** is the expected path to get from today to the vision. But because nothing ever goes as planned, plan for detours and alternate routes and focus on delivering business outcomes.
-
-#### Principle #3: Ideas and opportunities
-
-The third Lean Product Management principle uses the Lean Discovery framework, which helps sort the generated ideas and opportunities to validate and align the product roadmap with customers.
-
-A backlog is usually just an organized list of ideas, some good, and some bad. But will they drive toward well-identified business outcomes?
-
-An opportunity backlog is an organized set of **ideas and opportunities** for the team to explore in Product Discovery.
-
-The output of Product Discovery is the product backlog, which is an organized set of work that is **value-tested** for the team to build in delivery.
-
-#### Principle #4: Lean experiments
-
-The fourth Lean Product Management principle advocates lean experiments.
-
-Using hypothesis-driven experimentation during the development process helps validate the business impact of changes by doing small experiments and collecting user data.
-
-#### Principle #5: Single team, dual tracks
-
-The fifth Lean Product Management principle is about the **dual tracks of discovery and delivery**.
-
-Dual-track agile is a development methodology that builds on agile, with a discovery and a delivery track running in parallel. 
-
-The **discovery track** runs one or two sprints ahead of the delivery track. You run experiments to invalidate ideas that might otherwise contribute to developing a product that's not as useful as it could be, and you discover potential challenges.
-
-The **delivery track** executes agile product development sprints to build on the successful findings from the discovery track.
-
-You focus on running experiments to invalidate ideas that might otherwise pass as valid and contribute to developing a product that's not as useful as it could be. Experiments that validate ideas become prototypes, which can be used as a specification.
-
-Using the Lean Discovery process as part of a product sprint helps to maximize feature impact and minimize waste before diving into delivery.
-
-#### Principle # 6: Finding product market fit
-
-Finally, the sixth Lean Product Management principle says that understanding your customer also means knowing where the market is in its lifecycle.
-
-Assessing **product market fit** requires patience and tracking as your customers react in various phases of adoption. For example, a Minimum Viable Product (MVP) is an important milestone, but it's tough to prove if it was enough. Product market fit is about reaching real adoption targets, such as revenue target, number of subscriptions, and so on.
-
-Innovators influence early adopters, early adopters influence early majority, and so on. Partner with innovators to help discover the early product, and to bring credibility to the later users.
+Image credit: [Gartner “Overcome Objections and Sell the Benefits of Moving From Projects to Products and Agile,”](https://www.gartner.com/document/3901563?ref=solrAll&refval=248377772) Bill Swanton, 12 February 2019, - ID: G00383228

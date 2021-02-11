@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.create-host-web-sites-github-pages
+metadata:
+  title: "Create and host web sites by using GitHub Pages"
+  description: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Create and host web sites by using GitHub Pages"
+summary: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
+abstract: |
+  In this module, you will:
+  - Enable GitHub Pages
+  - Choose a theme with Jekyll
+  - Use YAML front matter
+  - Customize your site
+  - Create and edit blog posts
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/github/create-host-web-sites-github-pages.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+- azure
+units:
+- learn.github.create-host-web-sites-github-pages.1-introduction
+- learn.github.create-host-web-sites-github-pages.2-what-is-github-pages
+- learn.github.create-host-web-sites-github-pages.3-introduction-to-github-pages
+- learn.github.create-host-web-sites-github-pages.4-knowledge-check
+- learn.github.create-host-web-sites-github-pages.5-summary
+badge:
+  uid: learn.github.create-host-web-sites-github-pages.badge

@@ -2,10 +2,10 @@
 uid: learn.iot.create-your-first-iot-central-app.monitor-a-simulated-device
 metadata:
   title: Exercise - Create a rich dashboard and a real device
-  description: Use the IoT Central portal to build a rich dashboard from an array of tiles. The center piece of the dashboard is the location map. Following this, create a real IoT device, and record its connection keys. Finish the unit with a short knowledge check.
+  description: Use the IoT Central portal to build a rich dashboard from an array of tiles. Also create a real IoT device and record its connection keys. Finish the unit with a short knowledge check.
   ms.date: 10/17/2019
-  author: olivierbloch
-  ms.author: Olivier.Bloch
+  author: PeterTurcan
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a rich dashboard and a real device
@@ -17,56 +17,56 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following lists all of the Capability types in a Device Template?'
+  - content: 'Which option includes all of the capability types available in a device template?'
     choices: 
-    - content: 'Telemetry, Commands, Properties'
+    - content: 'Telemetry, commands, properties'
       isCorrect: true
-      explanation: These elements are the three types of capability.
-    - content: 'Telemetry, State, Event, Location'
+      explanation: Correct. These elements are the three capability types.
+    - content: 'Telemetry, state, event, location'
       isCorrect: false
-      explanation: Events and Location are types of Telemetry.
-    - content: 'Telemetry, State, Commands'
+      explanation: Incorrect. Event and location are types of telemetry.
+    - content: 'Telemetry, state, commands'
       isCorrect: false
-      explanation: State is a type of Telemetry.
+      explanation: Incorrect. State is a type of telemetry.
 
-  - content: 'What is the purpose of the Name attribute that appears in all Device Template elements?'
+  - content: 'What is the purpose of the Name attribute that appears in all device template elements?'
     choices: 
-    - content: 'To appear in the IoT Central portal UI, naming the element being displayed.'
+    - content: 'It names the element in the IoT Central portal UI.'
       isCorrect: false
-      explanation: This purpose applies to the Display Name.
-    - content: 'To act as a description of the element.'
+      explanation: Incorrect. This purpose applies to the display name.
+    - content: 'It describes the element.'
       isCorrect: false
-      explanation: Sometimes a description field is available, but Name isn't the name of this field.
-    - content: 'To match the entries in the code running on the IoT device, to enable communications.'
+      explanation: Incorrect. Sometimes a description field is available, but the Name attribute isn't the title of this field.
+    - content: 'It enables communication by matching the entries in the code that runs on the IoT device.'
       isCorrect: true
-      explanation: Names must be copied exactly in the code running on the device.
-    - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
+      explanation: Correct. Names must exactly match the names in the code that runs on the device.
+    - content: 'It appears in tooltips when the operator selects an element in the app UI.'
       isCorrect: false
-      explanation: Names aren't descriptive text.
+      explanation: Incorrect. Names aren't descriptive text.
 
-  - content: 'What is meant by a Writable Property?'
+  - content: 'What is a writeable property?'
     choices: 
-    - content: 'A property that can be written to in the device app, but not changed by the IoT Central app.'
+    - content: 'A property that can be written to in the device app but not changed by the IoT Central app.'
       isCorrect: false
-      explanation: IoT Central can change a writable property. 
-    - content: 'A property that can be written to by the IoT Central app, but not by the device app.'
+      explanation: Incorrect. IoT Central can change a writeable property. 
+    - content: 'A property that can be written to by the IoT Central app but not by the device app.'
       isCorrect: false
-      explanation: A device app can change any of its own properties.
-    - content: 'A Property that can be written to by the IoT Central app, that will be picked up by the device app.'
+      explanation: Incorrect. A device app can change any of its own properties.
+    - content: 'A property that can be written to by the IoT Central app. It is picked up by the device app.'
       isCorrect: true
-      explanation: A property such as optimal temperature can be set with a default value, but the IoT Central app can write a new value, if needed.
+      explanation: Correct. A property such as optimal temperature can be set by using a default value. But the IoT Central app can write a new value if needed.
   
   - content: 'What control makes a device template available for use?'
     choices: 
     - content: 'Publish'
       isCorrect: true
-      explanation: Publishing a template makes it available in your IoT app.
+      explanation: Correct. Publishing a template makes it available in your IoT app.
     - content: 'Save'
       isCorrect: false
-      explanation: Save does save the elements of your interface, but does not make it available for use.
+      explanation: Incorrect. The Save control saves the elements of your interface. But it doesn't make a device template available for use.
     - content: 'Views'
       isCorrect: false
-      explanation: The Views control is used to create dashboards.
+      explanation: Incorrect. The Views control is used to create dashboards.
     - content: 'Delete'
       isCorrect: false
-      explanation: Delete is a very useful key.
+      explanation: Incorrect. The Delete control deletes the device template from the application.

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.interactive-deep-learning
+hidden: true
 metadata:
   title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
   description: Learn to use Azure DSVM deep learning frameworks and tools for AI apps to gain flexibility for your software and hardware development.
   ms.date: 09/24/2018
-  author: aribornstein
-  ms.author: abornst
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
 summary: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
 abstract: |

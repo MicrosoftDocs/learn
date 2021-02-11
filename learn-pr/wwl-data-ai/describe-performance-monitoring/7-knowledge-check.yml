@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Intelligent Insights options provides SQL Insights?"
+    choices:
+    - content: "Log Analytics"
+      isCorrect: true
+      explanation: "That's correct. Storing data in Azure Log Analytics allows you to gain further intelligence on the events in your database."
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "That's incorrect. Azure storage stores the files as extended events, and they have to be analyzed using Azure SQL."
+    - content: "Event Hub"
+      isCorrect: false
+      explanation: "That's incorrect. Event hub allows you to forward events to another consumer, but does not perform analysis."
+  - content: "Which Performance Monitor counter reflects how long SQL Server expects to retain data in memory?"
+    choices:
+    - content: "Page Life Expectancy"
+      isCorrect: true
+      explanation: "That's correct. PLE is how long the engine expects a given page to live in memory."
+    - content: "Processor Queue Length"
+      isCorrect: false
+      explanation: "That's incorrect. Process queue length is an indication of CPU pressure."
+    - content: "Paging File Usage"
+      isCorrect: false
+      explanation: "That's incorrect. Page file usage is an OS metric that indicates memory pressure in the OS ."
+  - content: "If you want to see the sizes of your SQL Server Databases running in an Azure VM which tool should you use?"
+    choices:
+    - content: "The SQL VM Resource Provider"
+      isCorrect: true
+      explanation: "That's correct. The SQL VM resource provider has an agent in your SQL Server VM, which provides this information."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Monitor does not include data from within the VM resource."
+    - content: "Intelligent Insights"
+      isCorrect: false
+      explanation: "That's incorrect. Intelligent insights provide some other data, but does not include SQL Server information."

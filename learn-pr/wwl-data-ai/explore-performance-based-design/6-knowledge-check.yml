@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-performance-based-design.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of database design should you use for a data warehouse when you want to reduce the data volume of your dimensions?"
+    choices:
+    - content: "Snowflake schema"
+      isCorrect: true
+      explanation: "That's correct. Snowflake schema would reduce the data volume."
+    - content: "Star Schema"
+      isCorrect: false
+      explanation: "That's incorrect. Star schema would increase the size of your data volume."
+    - content: "3rd normal form"
+      isCorrect: false
+      explanation: "That's incorrect. 3rd normal form would not be a good fit for a data warehouse structure."
+  - content: "What is the minimum number of rows you need to bulk insert into a columnstore index?"
+    choices:
+    - content: "102,400"
+      isCorrect: true
+      explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows will use a normal insert operation."
+    - content: "1,000,000"
+      isCorrect: false
+      explanation: "That's incorrect. While this row count would be bulk inserted it is well above the minimum."
+    - content: "1000"
+      isCorrect: false
+      explanation: "That's incorrect. This row count would not be bulk loaded."
+  - content: "Which compression type offers the highest level of compression?"
+    choices:
+    - content: "Columnstore Archival"
+      isCorrect: true
+      explanation: "That's correct. Columnstore archival provides the highest level of compression in SQL Server."
+    - content: "Page Compression"
+      isCorrect: false
+      explanation: "That's incorrect. Page compression, while compressing more than row compression will not compress more than columnstore archival."
+    - content: "Row Compression"
+      isCorrect: false
+      explanation: "That's incorrect. Row compression will not deduplicate data which means it has a lower rate of compression."

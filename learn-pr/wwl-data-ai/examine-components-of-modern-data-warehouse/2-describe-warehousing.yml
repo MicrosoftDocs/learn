@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.describe-warehousing
+title: Describe modern data warehousing
+metadata:
+  title: Describe modern data warehousing
+  description: "Describe modern data warehousing"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-warehousing.md)]

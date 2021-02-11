@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure
+metadata:
+  title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
+  description: "Deploy MariaDB, MySQL, and PostgreSQL on Azure"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
+summary: Compare Open Source Azure Database offerings with Azure SQL offerings. Configure an Open Source database and configure high availability and security options.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand the service tiers available for open source database platforms
+  - Deploy MySQL, MariaDB, and PostgreSQL
+  - Configure high availability option for MySQL and MariaDB
+  - Configure Scale Out reads for MySQL and MariaDB
+  - Describe the SSL Options for MySQL and MariaDB
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal.
+  - Experience with an Open Source data platform, such as PostgreSQL, MySQL, or MariaDB.
+  - Ability to write SQL statements at a beginner level.
+iconUrl: /learn/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.introduction
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.describe-open-source-offerings
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-how-to-deploy-postgresql-to-azure
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.deploy-mysql-mariadb-to-azure
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-database-migration-options
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.exercise-deploy-azure-database-postgresql
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.knowledge-check
+- learn.wwl.deploy-mariadb-mysql-postgresql-azure.summary
+badge:
+  uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.badge

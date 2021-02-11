@@ -2,10 +2,6 @@
 
 Continuous Collaboration is one of the eight capabilities in the DevOps taxonomy.
 
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Collaboration: Culture collaboration, alignment and autonomy, Kanban collaboration, Wiki and Teams collaboration, ChatOps collaboration, and Feature team and SRE.](../media/6-2-capabilities.png)
-
-Each capability identifies example practices. They aren't exhaustive lists.
-
 ### Discover why Continuous Collaboration is necessary
 
 Often, communication challenges affect the ability to resolve an incident. For example, a ticket might get created but a support engineer might not be monitoring email. Or a support engineer’s work transitions to a colleague when their shift ends, and context can be lost as the new engineer sorts through all the communication that occurred.
@@ -26,7 +22,7 @@ Often, communication challenges affect the ability to resolve an incident. For e
 
 **Continuous Collaboration** is a practice that supports the cultural shifts that are key to any DevOps journey. Continuous Collaboration enables teams to innovate outside of the boundaries of planned meetings, and fosters innovation within the team by creating an integrated experience.
 
-Breaking down silos using technologies and practices such as ChatOps make it possible for teams to work together even if no ideal co-location exists.
+Silos can be broken down using technologies and practices that make it possible for teams to work together even if no ideal co-location exists.
 
 Review The Agile Manifesto from the perspective of Continuous Collaboration and you will realize that it really is all about the value of collaborating and having personal interactions in order to truly innovate. Continuous Collaboration encourages you to value:  
 
@@ -37,7 +33,7 @@ Review The Agile Manifesto from the perspective of Continuous Collaboration and 
 
 According to *Accelerate*: "The organizational culture predicts the way information flows through an organization. Good informational flow is critical to the safe and effective operation of high-tempo and high-consequence environments, including technology organizations."
 
-Culture and cross-functional collaboration have many beneficial impacts on performance, including:
+[Culture](https://docs.microsoft.com/learn/modules/introduce-foundation-pillars-devops/3-explore-first-foundation) and cross-functional collaboration have many beneficial impacts on performance, including:
 
 - Different perspectives, which can spur innovation
 - Buy-in and trust, which can help increase the momentum of change
@@ -48,7 +44,7 @@ Culture and cross-functional collaboration have many beneficial impacts on perfo
 Collaboration relies on communication, and how you communicate is how you build your software. Looking at communications through the lens of Conway’s Law shows us that:
 
 - Siloed functional teams create specialized, siloed solutions.
-- Cross-functional teams create solutions that provide capabilities.
+- [Cross-functional teams create solutions that provide capabilities](https://docs.microsoft.com/learn/modules/introduce-foundation-pillars-devops/4-explore-second-foundation).
 
 Therefore, designing teams and architecture around micro-services is an effective way to focus teams on capabilities.
 

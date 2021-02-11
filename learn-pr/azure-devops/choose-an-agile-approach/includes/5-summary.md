@@ -2,7 +2,6 @@ In this module, the Tailspin team took their first steps towards adopting DevOps
 
 * Create projects
 * Create work items
-* Assign work items to team members
 * Associate work items with a sprint, or iteration
 
 ## Learn more

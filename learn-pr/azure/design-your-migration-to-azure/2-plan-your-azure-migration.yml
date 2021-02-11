@@ -8,36 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Plan your Azure migration
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-your-azure-migration.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "What service can you use to migrate large quantities of data to Azure?"
-    choices:
-    - content: "Azure TCO Calculator"
-      isCorrect: false
-      explanation: "Azure TCO Calculator is used to estimate costs on Azure."
-    - content: "Azure Data Box"
-      isCorrect: true
-      explanation: "Correct. Azure Data Box can be used to migrate large amounts of data to Azure."
-    - content: "Azure Advisor"
-      isCorrect: false
-      explanation: "Azure Advisor recommends best practices to improve your environment."
-    - content: "Azure Sentinel"
-      isCorrect: false
-      explanation: "Azure Sentinel is a SIEM service on Azure."
-  - content: "In your scenario, which two tools will your company use in the Migrate stage?"
-    choices:  
-    - content: "Azure Site Recovery, Azure Database Migration Service"
-      isCorrect: true
-      explanation: "This is the correct answer, because you have VMware workloads and relational databases to migrate." 
-    - content: "Azure Migrate, Azure Data Box"
-      isCorrect: false
-      explanation: "Incorrect. You'll use Azure Migrate in the Assess stage, not the Migrate stage, and Azure Data Box isn't required in your scenario."
-    - content: "Data Migration Tool, Azure Backup"
-      isCorrect: false
-      explanation: "Incorrect. The Data Migration Tool is used to migrate data into Azure Cosmos DB, and Azure Backup is used in the Monitor stage."

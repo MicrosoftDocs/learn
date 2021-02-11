@@ -67,7 +67,7 @@ The focus of this learning path is on building applications and receiving build 
 
 ## Continue the journey
 
-You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
+You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 

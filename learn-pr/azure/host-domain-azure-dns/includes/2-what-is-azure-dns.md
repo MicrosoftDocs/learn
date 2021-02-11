@@ -29,7 +29,7 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 - Checks to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When a match is found, the DNS server updates the local cache and resolves the request.
-- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* (404) error.
+- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* error.
 
 ### IPv4 and IPv6
 
@@ -54,7 +54,7 @@ The configuration information for your DNS server is stored as a file within a z
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
 - **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, you would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
-- **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Office 365 use TXT records to verify domain ownership.
+- **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Microsoft 365 use TXT records to verify domain ownership.
 
 Additionally, there are the following record types:
 

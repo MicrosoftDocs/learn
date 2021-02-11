@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-cognitive-services.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/13/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which property related to your Cognitive Services instance is most important to keep secret?"
+    choices:
+    - content: "Subscription Key"
+      isCorrect: true
+      explanation: "Correct. This is like your password to authenticate to the service and should be kept hidden from anyone who does not need it."
+    - content: "Endpoint"
+      isCorrect: false
+      explanation: "Incorrect. The Endpoint is unique to your service but others cannot access your service with just the endpoint."
+    - content: "Resource Group"
+      isCorrect: false
+      explanation: "Incorrect. The service is created within a Resource Group but this value does not need to be kept secret."
+    - content: "Service Name"
+      isCorrect: false
+      explanation: "Incorrect. The Service Name is part of the endpoint but does not need to be kept secret."
+  - content: "When running code on your computer that connects to Cognitive Services, you receive an error that access is denied due to Virtual Network/Firewall rules. What configuration do you need to set in the Cognitive Services instance?"
+    choices:
+    - content: "In the Networking properties, configure Selected Networks and Private Endpoints."
+      isCorrect: false
+      explanation: "Incorrect. This is another component of network security that will enable access from other Azure services, not from your computer."
+    - content: "In Networking properties, add your client IP address to the Firewall allowed list."
+      isCorrect: true
+      explanation: "Correct. The public IP address for your computer can be allowed access in the Firewall settings."
+    - content: "In Access control, add your Azure Active Directory user account to a role."
+      isCorrect: false
+      explanation: "Incorrect. The Access control sets access for viewing or managing the service, not the network access."
+  - content: "What is the purpose of an assigned Azure Policy?"
+    choices:
+    - content: "Deny users access to resources."
+      isCorrect: false
+      explanation: "Incorrect. Each resource has access controls separate from Azure Policy."
+    - content: "Automate security configuration."
+      isCorrect: false
+      explanation: "Incorrect. You should set security configuration correctly at time of creation rather than rely on Azure Policy to remediate issues."
+    - content: "Configure network security."
+      isCorrect: false
+      explanation: "Incorrect. You should set network security on resources at time of creation rather than rely on Azure Policy to remediate issues."
+    - content: "Audit compliance of resources to the policy."
+      isCorrect: true
+      explanation: "Correct. An assigned Azure Policy will regularly check that resources comply with the rules in the policy."

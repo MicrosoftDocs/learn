@@ -674,7 +674,7 @@ between chocolate consumption and Nobel Prizes in a group of countries.
 The [Scientific
 American](http://blogs.scientificamerican.com/the-curious-wavefunction/chocolate-consumption-and-nobel-prizes-a-bizarre-juxtaposition-if-there-ever-was-one/)
 responded seriously whereas
-[others](http://www.reuters.com/article/2012/10/10/us-eat-chocolate-win-the-nobel-prize-idUSBRE8991MS20121010#vFdfFkbPVlilSjsB.97)
+[others](https://www.reuters.com/article/us-eat-chocolate-win-the-nobel-prize-idUSBRE8991MS20121010)
 were more relaxed. You are welcome to make your own decision! The
 following graph, provided in the paper, should motivate you to take a look.
 

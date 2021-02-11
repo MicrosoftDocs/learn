@@ -32,6 +32,7 @@ Push your local Git repository to GitHub. To do so, you add a remote that points
     git add azure_rm.yml users.yml
     git commit -m "Initial"
     ```
+
 1. Add a remote named *origin* that points to your GitHub repository. Replace `<you>` with your GitHub username.
 
     ```bash
@@ -55,18 +56,6 @@ Push your local Git repository to GitHub. To do so, you add a remote that points
 1. Select **New project**.
 1. Name your project *Microsoft Learn - Ansible*, and then select **Create**.
 
-## Turn off the new service connections experience in Azure DevOps
-
-The new service connections experience is a preview feature of Azure Pipelines. Preview features provide early access to features that might soon become part of Azure DevOps. For now, you need to ensure this feature is turned off.
-
-From Azure DevOps:
-
-1. Select your profile from the upper-right corner.
-1. Select the ellipsis (...) button, select **User settings**, and then select **Preview features**.
-1. Turn off **New service connections experience**.
-
-    ![Screenshot of turning off the new service connections experience from Azure DevOps](../media/9-new-service-connection-experience.png)
-
 ## Create a service connection
 
 Create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to securely connect to your control machine.
@@ -74,20 +63,21 @@ Create a service connection that enables Azure Pipelines to access your Azure su
 1. In Azure DevOps, go to your **Microsoft Learn - Ansible** project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, and then choose **SSH**.
+1. Select **Create service connection**, then choose **SSH**, then choose **Next**.
 
     The **New SSH service connection** dialog box appears.
 1. In the dialog box, fill in these fields:
 
     | Field               | Value |
     |---------------------|-------|
-    | **Connection name** | **SSH - Ansible VM** |
-    | **Host name**       | Your control machine's hostname. For example, *test1234.northeurope.cloudapp.azure.com* |
-    | **Port number**     | **22** |
-    | **User name**       | **azureuser** |
-    | **Password or passphrase**        | Leave blank |
-    | **Private key**     | The contents of your SSH private key, *ansible_rsa*. |
+    | **Host name**       | Your control machine's IP address, for example, *40.113.7.63* |
+    | **Port number**     | *22* |
+    | **Private key**     | The contents of your SSH private key, *ansible_rsa* |
+    | **User name**       | *azureuser* |
+    | **Password/Passphrase** | (Leave blank) |
+    | **Connection name** | *SSH - Ansible VM* |
 
+1. Ensure that **Grant access permission to all pipelines** is selected.
 1. Select **OK**.
 
 ## Install the Ansible extension for Azure Pipelines
@@ -214,3 +204,5 @@ This process helps you see how Ansible can repair your configuration if it's acc
     ![Screenshot of the Ansible task in Azure Pipelines showing a repaired configuration](../media/9-pipeline-ansible-task-repair.png)
 
     Ansible doesn't make configuration changes to *vm2*, because you removed *testuser1* only from the first VM, *vm1*.
+
+    As an optional step, return to Cloud Shell and verify that the user *testuser1* exists on *vm1*.

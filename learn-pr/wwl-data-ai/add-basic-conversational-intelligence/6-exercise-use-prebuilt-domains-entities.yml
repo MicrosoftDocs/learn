@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-conversational-intelligence-luis.exercise-use-prebuilt-domains-entities
+title: Exercise – Use prebuilt domains and entities
+metadata:
+  title: Exercise – Use prebuilt domains and entities
+  description: "Exercise – Use prebuilt domains and entities"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-use-prebuilt-domains-entities.md)]

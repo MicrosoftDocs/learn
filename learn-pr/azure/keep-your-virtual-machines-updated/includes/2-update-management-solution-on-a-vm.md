@@ -35,7 +35,7 @@ The following configurations are used to perform assessment and update deploymen
 
 The following diagram shows a conceptual view of the behavior and data flow with how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace.
 
-![Conceptual View of Data flow](../media/2-conceptual-view-data-flow50.png "Conceptual View of Data Flow")
+:::image type="content" source="../media/2-conceptual-view-data-flow.png" alt-text="Diagram that shows how the solution assesses and applies security updates to all connected Windows Server and Linux computers in a workspace." border="false":::
 
 ### Hybrid Worker Groups
 
@@ -44,6 +44,7 @@ The following diagram shows a conceptual view of the behavior and data flow with
 ## Operations Manager Management Packs
 
 If your System Center Operations Manager management group is connected to a Log Analytics workspace, the following management packs are installed in Operations Manager. These management packs are also installed on directly connected Windows computers after you add the solution. You don't need to configure or manage these management packs.
+
 - Microsoft System Center Advisor Update Assessment Intelligence Pack 
 - Microsoft.IntelligencePack.UpdateAssessment.Configuration
 - Update Deployment MP

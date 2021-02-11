@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/17/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You need to migrate a set of databases that use distributed transactions from on-premises SQL Server. Which of the following options should you choose?"
+    choices:
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL managed instance is the only offering here that supports cross-database transactions."
+    - content: "Azure SQL Database Hyperscale"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL managed instance is the only offering here that supports cross-database transactions."
+    - content: "Azure SQL managed instance"
+      isCorrect: true
+      explanation: "That's correct. Azure SQL managed instance is the only offering here that supports cross-database transactions."
+  - content: "You are building a new cloud database that you expect to grow to 50 TB. Which is the best option for your database?"
+    choices:
+    - content: "Azure SQL Database managed instance"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL Database Hyperscale is the only option that supports 50 TB of data."
+    - content: "Azure SQL Database Serverless"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL Database Hyperscale is the only option that supports 50 TB of data."
+    - content: "Azure SQL Database Hyperscale"
+      isCorrect: true
+      explanation: "That's correct. Azure SQL Database Hyperscale is the only option that supports 50 TB of data."
+  - content: "You are building a database for testing purposes that will be used less than 8 hours a day. It is expected to be 20 GB in size. What is your most cost-effective option?"
+    choices:
+    - content: "Azure SQL Database Serverless"
+      isCorrect: true
+      explanation: "That's correct. Serverless will reduce the cost significantly for a database that is only used during business hours."
+    - content: "Azure SQL Database Elastic Pools"
+      isCorrect: false
+      explanation: "That's incorrect. Serverless will reduce the cost significantly for a database that is only used during business hours."
+    - content: "Azure SQL Database managed instance"
+      isCorrect: false
+      explanation: "That's incorrect. Serverless will reduce the cost significantly for a database that is only used during business hours."
+  - content: "How often do differential backups occur with Azure SQL managed instance?"
+    choices:
+    - content: "Every 1 hour"
+      isCorrect: false
+      explanation: "That's incorrect. With Azure SQL managed instance, differential backups occur every 12 hours."
+    - content: "Every 12 hours"
+      isCorrect: true
+      explanation: "That's correct. With Azure SQL managed instance, differential backups occur every 12 hours."
+    - content: "Every 24 hours"
+      isCorrect: false
+      explanation: "That's incorrect. With Azure SQL managed instance, differential backups occur every 12 hours."

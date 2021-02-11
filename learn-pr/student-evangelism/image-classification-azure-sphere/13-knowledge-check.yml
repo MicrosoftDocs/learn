@@ -3,7 +3,7 @@ uid: learn.oxford.image-classification-azure-sphere.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
   ms.date: 6/22/2020
   author: leestott
   ms.author: leestott
@@ -18,13 +18,13 @@ quiz:
     - content: "Quantization creates a larger model"
       isCorrect: false
       explanation: "Quantization doesn't create a larger model"
-    - content: "Quantization creates a more compact model "
+    - content: "Quantization creates a more compact model"
       isCorrect: true
-      explanation: "Quantization creates a more compact model "
+      explanation: "Quantization creates a more compact model"
     - content: "Quantization creates a more accurate model"
       isCorrect: false
-      explanation: "Quantization could create a less accurate model "
-  - content: "The CIFAR-10 dataset contains sixty thousand 32x32 color images in the 10 classes. For this dataset to be used for classification, which criteria must be  fulfilled?"
+      explanation: "Quantization could create a less accurate model"
+  - content: "The CIFAR-10 dataset contains sixty thousand 32x32 color images in the 10 classes. For this dataset to be used for classification, which criterion must be fulfilled?"
     choices:
     - content: "CIFAR-10 must be very efficient"
       isCorrect: false
@@ -39,11 +39,11 @@ quiz:
     choices:
     - content: "You can deploy a machine learning model on an IoT Edge device even when the device is offline"
       isCorrect: true
-      explanation: "A machine learning model can be deployed on an Edge device and can be operational even when the device is offline"
-    - content: "You can use the IoT Edge device to capture images"
+      explanation: "A machine learning model can be deployed on an IoT Edge device and can be operational even when the device is offline"
+    - content: "You can use an IoT Edge device to capture images"
       isCorrect: false
       explanation: "The ability to capture images isn't a characteristic of IoT Edge devices"
-    - content: "IoT Edge devices and perform real-time processing"
+    - content: "You can use an IoT Edge device to perform real-time processing"
       isCorrect: false
       explanation: "Real-time processing isn't a characteristic of IoT Edge devices"
     

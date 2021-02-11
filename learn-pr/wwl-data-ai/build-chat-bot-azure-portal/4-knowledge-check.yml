@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-chat-bot-with-azure-portal.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "How do we define conversational AI?"
+    choices:
+    - content: "The ability to predict what the user will ask next and cache a response."
+      isCorrect: false
+      explanation: "Incorrect. While this ability may be possible in future iterations of the bot framework, it does not currently exist today."
+    - content: "Automatic correction of grammar in the user phrases."
+      isCorrect: false
+      explanation: "Incorrect. Many word processing applications can offer assistance for grammatical rules in different languages, but that is not how we define conversational AI."
+    - content: "A term used to describe solutions where AI agents participate in conversations with humans."
+      isCorrect: true
+      explanation: "Correct. The AI agent in this module is the bot that we created in the Azure portal."
+  - content: "Which activity handles greeting the user when they connect to your bot?"
+    choices:
+    - content: "The UserGreeting() or userGreeting() activity."
+      isCorrect: false
+      explanation: "Incorrect. There is no UserGreeting/userGreeting activity."
+    - content: "The OnMembersAdded() or onMembersAdded() activity."
+      isCorrect: true
+      explanation: "Correct. In this activity, a message is prepared for the greeting. The send activity event is initiated and the message is sent to the bot interface or channel."
+    - content: "The OnMessage() or onMessage() activity."
+      isCorrect: false
+      explanation: "Incorrect. This activity is responsible for the ongoing conversation activity with the user."
+  - content: "When downloading the bot source code, what are the app settings that may be included with the source code?"
+    choices:
+    - content: "The endpoint URL and the secure key for the bot."
+      isCorrect: false
+      explanation: "Incorrect. These values are not present in the app settings."
+    - content: "MicrosoftAppId and MicrosoftAppPassword."
+      isCorrect: true
+      explanation: "Correct. These two values are what the application code will use to authenticate to the bot resource on Azure."
+    - content: "The Azure subscription and the bot handle."
+      isCorrect: false
+      explanation: "Incorrect. These are not options that are included in the app settings."

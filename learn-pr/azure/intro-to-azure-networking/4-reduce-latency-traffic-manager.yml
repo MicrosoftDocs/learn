@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/4-reduce-latency-traffic-manager.md)]
@@ -31,10 +30,10 @@ quiz:
     choices:
     - content: 'It chooses only the fastest networks between endpoints.'
       isCorrect: false
-      explanation: "Choosing the server that's closest to the user is a good way to reduce latency."
-    - content: "It chooses the endpoint that's closest to the user's DNS server."
+      explanation: "Traffic Manager enables you to control the distribution of traffic across your application endpoints."
+    - content: "It can route traffic to the closest endpoint."
       isCorrect: true
-      explanation: "Choosing the server that's closest to the user is a good way to reduce latency."
+      explanation: "You can have Traffic Manager route traffic by geography or by network performance."
     - content: 'It caches content, similar to how content delivery networks work.'
       isCorrect: false
-      explanation: "Choosing the server that's closest to the user is a good way to reduce latency."
+      explanation: "Traffic Manager enables you to control the distribution of traffic across your application endpoints."

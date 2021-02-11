@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings
+metadata:
+  title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+  description: "Use data from basketball players in the film *Space Jam: A New Legacy* to create a machine learning model to cleanse data and explore bimodal data distributions."
+  ms.date: 11/11/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
+summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."
+abstract:  |
+  In this module, you will:
+  - Use Python, pandas, and Visual Studio Code.
+  - Cleanse and manipulate data that requires critical analysis.
+  - Use machine learning to cleanse and complete data.
+  - Prepare data to be used for multiple customer-facing purposes.
+
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
+  © 2020 Warner Bros. Ent. All Rights Reserved.
+prerequisites: |
+  - [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode)
+  - A local Python environment, such as the one used in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+iconUrl: /learn/achievements/student-evangelism/predict-basketball-player-efficiency-ratings.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- vs-code
+units:
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.1-introduction
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.2-set-up-local-environment
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.3-find-missing-values
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.4-drop-data
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.5-check-for-outliers
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.6-check-data-distribution
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.7-discover-bimodal-populations
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.8-create-player-columns
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.9-impute-missing-data-part-1
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.10-impute-missing-data-part-2
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.11-knowledge-check
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings.12-summary
+
+badge:
+  uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.badge

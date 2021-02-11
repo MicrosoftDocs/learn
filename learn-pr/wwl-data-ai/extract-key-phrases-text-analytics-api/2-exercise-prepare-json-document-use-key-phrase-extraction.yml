@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extract-key-phrases-text-analytics-api.exercise-prepare-json-document-use-key-phrase-extraction
+title: Exercise – Prepare a JSON document for use in key phrase extraction
+metadata:
+  title: Exercise – Prepare a JSON document for use in key phrase extraction
+  description: "Exercise – Prepare a JSON document for use in key phrase extraction"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-exercise-prepare-json-document-use-key-phrase-extraction.md)]

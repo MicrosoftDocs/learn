@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Image representing Azure App Service](../media/5-appservice.png)
+    :::image type="icon" source="../media/5-appservice.png" border="false":::
   :::column-end:::
   :::column span="3":::
 Azure App Service enables you to build and host web apps, background jobs, mobile backends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports both Windows and Linux, and enables automated deployments from GitHub, Azure DevOps, or any Git repo to support a continuous deployment model.

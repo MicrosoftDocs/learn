@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.manage-costs-partner-cost-management.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Review what you've learned
+  ms.date: 08/25/2020
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following roles is used to manage costs in Fabrikam's billing hierarchy?"
+    choices:
+    - content: Global admin agent
+      isCorrect: true
+      explanation: The global admin agent role can manage costs for Fabrikam. The admin agent role can also manage costs.
+    - content: Owner
+      isCorrect: false
+      explanation: Owner is an Azure role-based access control (RBAC) role. It isn't applicable to the billing hierarchy.
+    - content: Billing profile admin
+      isCorrect: false
+      explanation: The billing profile admin isn't a role in any Azure hierarchy.
+  - content: "What filter should you use in cost analysis to determine the costs for a specific bill within the billing profile scope?"
+    choices:
+    - content: InvoiceID
+      isCorrect: true
+      explanation: This filter includes only costs that roll up to the specified invoice ID.
+    - content: MyInvoice
+      isCorrect: false
+      explanation: MyInvoice isn't a dimensional filter that cost analysis supports.
+    - content: BillID
+      isCorrect: false
+      explanation: BillID isn't a dimensional filter that cost analysis supports.
+  - content: "What dimension can you use in cost analysis to determine whether a resource charge has received partner earned credit?"
+    choices:
+      - content: PartnerCredit
+        isCorrect: false
+        explanation: PartnerCredit isn't a dimension that you use to filter costs in cost analysis.
+      - content: PartnerEarnedCreditApplied
+        isCorrect: true
+        explanation: In cost analysis, the PartnerEarnedCreditApplied dimension is shown as True when the credit is applicable. It's shown as False when it isn't applicable.
+      - content: IsPartnerCreditApplied
+        isCorrect: false
+        explanation: IsPartnerCreditApplied isn't a dimension that you use to filter costs in cost analysis.
+  - content: "What happens when you enable the policy that allows Fabrikam's customers to see costs?"
+    choices:
+      - content: Customers can see costs at Fabrikam's reduced rates.
+        isCorrect: false
+        explanation: Customers can't see Fabrikam's reduced partner pricing.
+      - content: Customers can see costs depending on their role in the Fabrikam billing hierarchy.
+        isCorrect: false
+        explanation: Customer roles aren't in the Fabrikam billing hierarchy. Their roles are determined by Azure RBAC.
+      - content: Customers can see costs in their own tenant at pay-as-you-go rates.
+        isCorrect: true
+        explanation: When the policy is enabled, customers can view costs based on the retail (pay-as-you-go) rates instead of the costs that are billed to Fabrikam directly.
+  - content: "Which of the following choices are all the supported budget evaluation periods?"
+    choices:
+      - content: Weekly, hourly, and monthly
+        isCorrect: false
+        explanation: Although monthly is a supported budget period, weekly and hourly budgets aren't supported.
+      - content: Monthly, quarterly, and annual
+        isCorrect: true
+        explanation: A budget can be created with any of these evaluation periods.
+      - content: Monthly and quarterly
+        isCorrect: false
+        explanation: Although both of these evaluation periods are supported, the annual period is also supported.

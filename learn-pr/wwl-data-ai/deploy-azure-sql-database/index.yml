@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-azure-sql-database
+metadata:
+  title: Deploy Azure SQL Database
+  description: "Deploy Azure SQL Database"
+  ms.date: 12/17/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure SQL Database
+summary: Provision and deploy Azure SQL Database and Azure SQL managed instance. Select the appropriate options when performing a migration to the SQL PaaS  platform.
+abstract: |
+  After completing this module, you will be able to:
+  - Gain an understanding SQL Server in a Platform as a Service (PaaS) offering
+  - Understand PaaS provisioning and deployment options
+  - Understand elastic pools
+  - Examine Managed Instances
+  - Configure a template for PaaS deployment
+prerequisites: |
+  - Ability to create an on-premises SQL Server database, including the configuration of data files and log files.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/deploy-azure-sql-database.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.deploy-azure-sql-database.introduction
+- learn.wwl.deploy-azure-sql-database.explain-paas-options-for-deploying-sql-server-azure
+- learn.wwl.deploy-azure-sql-database.deploy-single
+- learn.wwl.deploy-azure-sql-database.deploy-elastic-pool
+- learn.wwl.deploy-azure-sql-database.deploy-sql-managed-instance
+- learn.wwl.deploy-azure-sql-database.exercise-deploy-azure-sql-database
+- learn.wwl.deploy-azure-sql-database.knowledge-check
+- learn.wwl.deploy-azure-sql-database.summary
+badge:
+  uid: learn.wwl.deploy-azure-sql-database.badge

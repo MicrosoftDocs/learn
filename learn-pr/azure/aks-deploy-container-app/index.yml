@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.aks-deploy-container-app
+metadata:
+  title: Deploy a containerized application on Azure Kubernetes Service
+  description: Explore how to create and deploy a containerized application by using Azure Kubernetes Service declarative manifest files.
+  ms.date: 07/31/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a containerized application on Azure Kubernetes Service
+summary: Rapidly deploy a containerized application hosted on Azure Container Services or any other registrar to Azure Kubernetes Service by using declarative manifest files.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create and set up an Azure Kubernetes Service cluster.
+  - Deploy Kubernetes workloads by using deployment YAML files.
+  - Expose Kubernetes workloads by using services and ingress.
+prerequisites: |
+  - An Azure subscription
+  - Ability to use the Azure CLI
+  - Ability to create a Docker container
+  - Ability to navigate the Azure portal
+  - Basic knowledge of Kubernetes and its concepts
+iconUrl: /learn/achievements/aks-deploy-container-app.svg
+levels:
+  - beginner
+roles:
+  - solution-architect
+  - developer
+  - devops-engineer
+products:
+  - azure
+  - azure-kubernetes-service
+  - azure-container-registry
+units:
+  - learn.aks-deploy-container-app.1-introduction
+  - learn.aks-deploy-container-app.2-create-aks-cluster
+  - learn.aks-deploy-container-app.3-exercise-create-aks-cluster
+  - learn.aks-deploy-container-app.4-deploy-app
+  - learn.aks-deploy-container-app.5-exercise-deploy-app
+  - learn.aks-deploy-container-app.6-expose-app
+  - learn.aks-deploy-container-app.7-exercise-expose-app
+  - learn.aks-deploy-container-app.8-summary
+badge:
+  uid: learn.aks-deploy-container-app.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.implement-azure-dns
+title: Implement Azure DNS
+metadata:
+  title: Implement Azure DNS
+  description: "Implement Azure DNS"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-implement-azure-domain-name-system.md)]

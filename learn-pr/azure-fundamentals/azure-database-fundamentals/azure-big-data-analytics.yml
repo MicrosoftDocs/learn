@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-database-fundamentals.azure-big-data-analytics
+title: Explore big data and analytics
+metadata:
+  title: Explore big data and analytics
+  description: In this unit, you'll learn the fundamentals about big data and analytics services in Azure.
+  ms.date: 09/14/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/azure-big-data-analytics.md)]

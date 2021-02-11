@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.explore-causes-of-performance-issues
+metadata:
+  title: Explore causes of performance issues
+  description: "Explore causes of performance issues"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore causes of performance issues
+summary: Explore the Query Store for tracking down problematic queries. Understand how SQL Server and Azure SQL manage currency by locking and blocking, or by using snapshots. Implement fragmentation checks and defragmentation.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand the purpose and benefits of the Query Store
+  - Investigate the available reports and data in the Query Store
+  - Observe the impact of forcing execution plan selection
+  - Learn how blocking and locking work in the SQL Server database engine
+  - Learn about database isolation levels
+  - Gain understanding of database fragmentation and its impact
+prerequisites: |
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+  - Basic understanding of SQL Server file storage.
+iconUrl: /learn/achievements/explore-causes-of-performance-issues.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.explore-causes-of-performance-issues.introduction
+- learn.wwl.explore-causes-of-performance-issues.describe-sql-server-query-store
+- learn.wwl.explore-causes-of-performance-issues.describe-blocking-locking-sql-server
+- learn.wwl.explore-causes-of-performance-issues.describe-data-file-fragmentation
+- learn.wwl.explore-causes-of-performance-issues.exercise
+- learn.wwl.explore-causes-of-performance-issues.knowledge-check
+- learn.wwl.explore-causes-of-performance-issues.summary
+badge:
+  uid: learn.wwl.explore-causes-of-performance-issues.badge

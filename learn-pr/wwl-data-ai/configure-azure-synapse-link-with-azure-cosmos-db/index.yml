@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db
+metadata:
+  title: Configure Azure Synapse Link with Azure Cosmos DB
+  description: "Configure Azure Synapse Link with Azure Cosmos DB"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure Azure Synapse Link with Azure Cosmos DB
+summary: Learn how to configure and enable Azure Synapse Link to interact with Azure Cosmos DB.
+abstract: |
+  After completing this module, you'll be able to:
+  - Enable Cosmos DB Account to use Azure Synapse Link
+  - Create an analytical store enabled container
+  - Implement Synapse Link for Cosmos DB
+  - Validate connectivity from Spark
+  - Validate connectivity from SQL Serverless
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+iconUrl: /learn/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.introduction
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.enable-cosmos-db-account-to-use
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-analytical-store-enabled-container
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.implement-synapse-link-for
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.create-resources
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.validate-connectivity-from-spark-sql-serverless
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
+- learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.badge

@@ -1,14 +1,14 @@
-In the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies and then planning their initial set of tasks on Azure Boards.
+In the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
 
-In this module, you help the team with their first task: setting up a continuous integration (CI) pipeline for their application.
+In this module, you help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
-The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
+The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-She also remembers that they picked three of the problems to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
+She also remembers that they picked three of the issues to fix within the next two weeks. (Of course, everyone else has forgotten about them.)
 
 ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
@@ -18,10 +18,10 @@ Mara decides to take an initial pass on the biggest issue, **Stabilize the build
 
 In this module, you will:
 
-- Create a build pipeline in Azure Pipelines
-- Map the manual build steps to automated build tasks
-- Publish your builds so others can access them
-- Use templates to build multiple configurations
+- Create a build pipeline in Azure Pipelines.
+- Map the manual build steps to automated build tasks.
+- Publish your builds so others can access them.
+- Use templates to build multiple configurations.
 
 ## Prerequisites
 
@@ -57,4 +57,4 @@ You met the *Space Game* web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Microsoft Azure DevOps.
+Mara has prior experience with DevOps, and is helping the team adopt a more streamlined process by using Microsoft Azure DevOps.

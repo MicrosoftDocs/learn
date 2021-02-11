@@ -10,18 +10,20 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is non-critical, and a local replication policy is sufficient. True or false: To satisfy these constraints, the two blobs will need to be in separate storage accounts."
+  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is non-critical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity consideration."
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
-    - content: "False"
+    - content: "Create a single storage account that makes use of Local-redundant storage (LRS) and host both videos from here."
       isCorrect: false
-      explanation: "Replication policy is a characteristic of a storage account. Every member in the storage account must use the same policy. If you need some data to use the geo-replication strategy and other data to use the local replication strategy, then you will need two storage accounts."
+      explanation: "The usage of single storage account to host both videos in a single LRS enabled storage account takes cost savings into consideration, but doesn't consider the data diversity storage requirements for business-critical content."
+    - content: "Create a single storage account that makes use of Geo-redundant storage (GRS) and host both videos from here."
+      isCorrect: false
+      explanation: "The usage of single storage account to host both videos in a single RRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for non-critical content."
+    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the non-critical video content."
+      isCorrect: true
+      explanation: "In general, increased diversity means an increased number of storage accounts. A storage account by itself has no financial cost. However, the settings you choose for the account do influence the cost of services in the account. Use multiple storage accounts to reduce costs."
   - content: "The name of a storage account must be:"
     choices:
     - content: "Unique within the containing resource group."
@@ -37,10 +39,10 @@ quiz:
     choices:
     - content: "At the beginning, during project setup."
       isCorrect: true
-      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are stable for the lifetime of a project. It's common to create them at the start of a project."
     - content: "After deployment, when the project is running."
       isCorrect: false
-      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are stable for the lifetime of a project. It's common to create them at the start of a project."
     - content: "At the end, during resource cleanup."
       isCorrect: false
-      explanation: "Storage accounts are usually stable for the lifetime of a project. It is common to create them at the start of a project."
+      explanation: "Storage accounts are stable for the lifetime of a project. It's common to create them at the start of a project."

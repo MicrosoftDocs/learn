@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/3-knowledge-check.md)]
@@ -42,10 +41,10 @@ quiz:
     choices:
     - content: "Global scope for the API Management instance"
       isCorrect: false
-      explanation: "Do not use the <json-to-xml> policy with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
+      explanation: "Do not use the `<json-to-xml>` policy with global scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses."
     - content: "Product scope for the Sales product"
       isCorrect: false
-      explanation: "Do not use the <json-to-xml> policy with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
+      explanation: "Do not use the `<json-to-xml>` policy with product scope, because this change would force all responses from the Sales API to use XML, but the website expects JSON responses. Also, this scope does not apply to the Board Pricing API, which is not part of the Sales product."
     - content: "API scope for the Board Pricing API"
       isCorrect: true
-      explanation: "Use the <json-to-xml> policy with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."
+      explanation: "Use the `<json-to-xml>` policy with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."

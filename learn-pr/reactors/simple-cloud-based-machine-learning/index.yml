@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.reactors.simple-cloud-based-machine-learning 
+metadata:
+  title: Simple cloud-based machine learning 
+  description: Learn about simple cloud-based machine learning for data science operations.
+  ms.date: 06/30/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Simple cloud-based machine learning  
+summary: Learn about simple cloud-based machine learning for data science operations.
+abstract: |
+  In this module, you will:
+  - Create and connect to an Azure Machine Learning Studio workspace.
+  - Explore bank-marketing data.
+  - Transfer data to Azure Machine Learning Studio.
+  - Create a machine learning model.
+  - Deploy a machine learning model as a web service.
+  - Learn how to consume a web service.
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Review the steps to manipulate and clean data.
+  - Understand machine learning models for data science.
+iconUrl: /learn/achievements/reactors/simple-cloud-based-machine-learning.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.simple-cloud-based-machine-learning.1-introduction
+- learn.reactors.simple-cloud-based-machine-learning.2-connect-azure-ml-studio-workspace
+- learn.reactors.simple-cloud-based-machine-learning.3-initiate-automl-run
+- learn.reactors.simple-cloud-based-machine-learning.4-deploy-model-web-service
+badge:
+  uid: learn.reactors.simple-cloud-based-machine-learning.badge 

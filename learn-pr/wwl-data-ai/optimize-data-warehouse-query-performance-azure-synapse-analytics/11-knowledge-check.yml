@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which is the default distribution used for a table in Synapse Analytics?"
+    choices:
+    - content: "HASH."
+      isCorrect: false
+      explanation: "Incorrect. Hash distributions are explicitly defined and require a hashing columns to be defined for the distribution function. Hash distributions are best used for larger Fact tables."
+    - content: "Round-Robin."
+      isCorrect: true
+      explanation: "Correct. Round-Robin is the default distribution created for a table and delivers fast performance when used for loading data but may negatively impact larger queries."
+    - content: "Replicated Table."
+      isCorrect: false
+      explanation: "Incorrect. Replicated tables are explicitly defined and result in a copy of the table being made on each compute node."
+  - content: "Which Index Type offers the highest compression?"
+    choices:
+    - content: "Columnstore."
+      isCorrect: true
+      explanation: "Correct. This is the default index type created for a table. It works on segments of rows that get compressed and optimized by column."
+    - content: "Rowstore."
+      isCorrect: false
+      explanation: "Incorrect. Rowstore indexes write multiple data types and values per row of data and so compression functions are less likely to be able to reduce the size through pattern matching and offsets."
+    - content: "Heap."
+      isCorrect: false
+      explanation: "Incorrect. Heaps offer a fast method of writing since not additional operations need to  be performed on the data, they do not perform well for queries as the are unsorted and generally uncompressed."
+  - content: "How do column statistics improve query performance?"
+    choices:
+    - content: "By keeping track of which columns are being queried."
+      isCorrect: false
+      explanation: "Incorrect. There is no function that tracks which columns are participating in a query."
+    - content: "By keeping track of how much data exists between ranges in columns."
+      isCorrect: true
+      explanation: "Correct. It tracks cardinality and range density to determine which data access paths return the fewest rows for speed."
+    - content: "By caching column values for queries."
+      isCorrect: false
+      explanation: "Incorrect. This is similar to but exactly describing Result-set caching."

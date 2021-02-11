@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-provisioning-azure-sql-database
+title: Describe provisioning Azure SQL Database
+metadata:
+  title: Describe provisioning Azure SQL Database
+  description: "Describe provisioning Azure SQL Database"
+  ms.date: 01/08/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-provision-sql-database.md)]

@@ -28,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: "A DTU is a compute scale unit of Azure SQL Database."
 
-  - content: "You have an Azure Synapse Analytics database. Within the database, you have a dimension table named Stores that contains store information. You have a total of 263 stores nationwide. Store information is retrieved in more than half of the queries that are issued against this database. These queries include staff information per store, sales information per store, and finance information. You want to improve the query performance of these queries by configuring the table geometry of the Stores table. Which is the appropriate table geometry to select for the Stores table?"
+  - content: "You have an Azure Synapse Analytics database. Within the database, you have a dimension table named Stores that contains store information in three columns: StoreID as an integer, StoreName as varchar(200), and Category as as varchar(40). You have a total of 263 stores nationwide. Store information is retrieved in more than half of the queries that are issued against this database. These queries include staff information per store, sales information per store, and finance information. You want to improve the query performance of these queries by configuring the table geometry of the Stores table. Which is the appropriate table geometry to select for the Stores table?"
     choices: 
     - content: "Round-robin"
       isCorrect: false
@@ -38,4 +38,4 @@ quiz:
       explanation: "Non-clustered is not a valid table geometry in Azure Synapse Analytics."
     - content: "Replicated table"
       isCorrect: true
-      explanation: "A replicated table is an appropriate table geometry choice because the size of the data in the table is less than 200 MB. The table will be replicated to every distribution node of a data warehouse in Azure Synapse Analytics to improve performance."
+      explanation: "A replicated table is an appropriate table geometry choice because the size of the data in the table is less than 2 GB compressed. The table will be replicated to every distribution node of a data warehouse in Azure Synapse Analytics to improve performance."

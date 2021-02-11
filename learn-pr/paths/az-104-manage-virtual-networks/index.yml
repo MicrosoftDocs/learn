@@ -1,19 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.az-104-manage-virtual-networks
 metadata:
-  title: AZ-104 Configure and manage virtual networks for Azure administrators
-  description: Learn how to configure key Azure network capabilities and prepare for Exam AZ-104 Microsoft Azure Administrator.
+  title: "AZ-104: Configure and manage virtual networks for Azure administrators"
+  description: "Learn how to configure key Azure network capabilities and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
   ms.date: 05/15/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: AZ-104 Configure and manage virtual networks for Azure administrators
+title: "AZ-104: Configure and manage virtual networks for Azure administrators"
 summary: |
   Learn how to configure and manage Azure network capabilities like connectivity services, application protection, application delivery, and network monitoring services. This learning path helps prepare you for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104). 
 prerequisites: |
-  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Azure Fundamentals Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  - [Azure Fundamentals Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  - [Azure Fundamentals Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
   - [Prerequisites for Azure administrators](../az-104-administrator-prerequisites/index.yml)
 iconUrl: /learn/achievements/az-104-manage-virtual-networks.svg
 levels:
@@ -29,18 +34,20 @@ products:
 - azure-expressroute
 - azure-application-gateway
 - azure-load-balancer
+- azure-bastion
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure
-- learn.azure.host-domain-azure-dns
 - learn.integrate-vnets-with-vnet-peering
+- learn.secure-and-isolate-with-nsg-and-service-endpoints
+- learn.connect-vm-with-azure-bastion
+- learn.azure.host-domain-azure-dns
 - learn.control-network-traffic-flow-with-routes
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute
-- learn.secure-and-isolate-with-nsg-and-service-endpoints
-- learn.load-balance-web-traffic-with-application-gateway
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - troubleshoot-inbound-network-connectivity-azure-load-balancer
+- learn.load-balance-web-traffic-with-application-gateway
 - learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.az-104-manage-virtual-networks.trophy

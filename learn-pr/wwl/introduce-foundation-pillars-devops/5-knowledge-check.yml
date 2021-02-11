@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2020
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
@@ -16,20 +16,20 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are two primary benefits that DevOps provides?"
+  - content: "What are the primary benefits that DevOps provides?"
     choices:
     - content: "A framework for creating multidisciplinary teams and a means of measuring coders’ effectiveness."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. These aren't primary benefits of DevOps."
-    - content: "The ability to deliver more features to market faster and to improve system stability."
+    - content: "The ability to deliver more features to market faster and to increase agility when faced with change."
       isCorrect: true
-      explanation: "That’s correct. These are two of the primary benefits that DevOps provides."
+      explanation: "That’s correct. These are primary benefits that DevOps provides."
     - content: "Processes to facilitate code deployment and minimize coding errors."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. These aren't primary benefits of DevOps."
   - content: "Why is culture considered an essential foundation for DevOps?"
     choices:
-    - content: "Because studies have shown, it’s impossible to improve software delivery performance in organizations that lack a culture of improvement."
+    - content: "Because studies have shown, it’s impossible to improve software delivery performance in the absence of a bureaucratic organizational culture."
       isCorrect: false
       explanation: "Sorry, that’s incorrect. This isn't why culture is considered an essential foundation for DevOps."
     - content: "Because the emergence of social media has enhanced communication flow, which was previously understood to be the sole essential foundation for DevOps."
@@ -38,36 +38,36 @@ quiz:
     - content: "Because DevOps needs a growth and continuous learning mindset to succeed, which requires a strong cultural foundation supported by leadership."
       isCorrect: true
       explanation: "That’s correct. This answer states why culture is considered an essential foundation for DevOps."
-  - content: "What is one of the primary reasons why DevOps initiatives fail?"
+  - content: "Which statement describing the product definition is false?"
     choices:
-    - content: "Limitations of management approaches to enabling DevOps cultures."
+    - content: "A product can be a repeatable service or platform."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This is an accurate statement regarding products."
+    - content: "A product delivers capabilities that customers value."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This is an accurate statement regarding products."
+    - content: "Product management is made to serve external customers."
       isCorrect: true
-      explanation: "That’s correct. This has been identified as one of the primary reasons why DevOps initiatives fail."
-    - content: "Limited availability of bandwidth between on-premises and cloud-based resources."
-      isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't one of the primary reasons why DevOps initiatives fail."
-    - content: "Inability of DevOps initiatives to comply with service level agreements (SLAs)."
-      isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't one of the primary reasons why DevOps initiatives fail."
-  - content: "Why is Lean Product Discovery an important aspect of Lean Product Management?"
+      explanation: "That’s correct. This isn't a true statement regarding product definition."
+  - content: "What is the main difference between a product and a project?"
     choices:
-    - content: "It builds a sense of awareness about products in the marketplace."
-      isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't why Lean Product Discovery is an important aspect of Lean Product Management."
-    - content: "It helps identify confirmation bias."
+    - content: "Only a product evolves over time."
       isCorrect: true
-      explanation: "That’s correct. This is why Lean Product Discovery is an important aspect of Lean Product Management."
-    - content: "It establishes an objective baseline of meaningful product functionality."
+      explanation: "That’s correct. Unlike projects, products evolve over time."
+    - content: "A product has a clear definition of what needs to be delivered."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't why Lean Product Discovery is an important aspect of Lean Product Management."
-  - content: "When defining scope, why should false precision be avoided?"
+      explanation: "Sorry, that’s incorrect. This isn't the main difference between projects and products."
+    - content: "A product has a date when it needs to be delivered."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't the main difference between projects and products."
+  - content: "Why is a full stack team needed to support a product?"
     choices:
-    - content: "Because the more innovation required, the more uncertain the scope."
+    - content: "So that multiple development teams can support a product."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."
+    - content: "To be able to support the product end to end."
       isCorrect: true
-      explanation: "That’s correct. This is why false precision should be avoided."
-    - content: "Because true precision is the ultimate arbiter of estimation in information technology environments."
+      explanation: "That’s correct. This is why a full stack team is needed to support the product."
+    - content: "To develop specialized skillsets."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't why false precision should be avoided."
-    - content: "Because false precision is based on previous estimation efforts, which might not apply."
-      isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't why false precision should be avoided."
+      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."

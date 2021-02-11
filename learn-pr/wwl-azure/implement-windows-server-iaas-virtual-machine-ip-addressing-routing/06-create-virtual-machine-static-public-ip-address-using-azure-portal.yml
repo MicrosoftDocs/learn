@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.create-virtual-machine-static-public-ip-address-using-azure-portal
+title: Create a virtual machine with a static public IP address using the Azure portal
+metadata:
+  title: Create a virtual machine with a static public IP address using the Azure portal
+  description: "Create a virtual machine with a static public IP address using the Azure portal"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/06-create-virtual-machine-static-public-ip-address-using-azure-portal.md)]

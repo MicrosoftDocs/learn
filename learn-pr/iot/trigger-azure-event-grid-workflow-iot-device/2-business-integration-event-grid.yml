@@ -6,7 +6,7 @@ metadata:
   description: Business integration with Event Grid
   ms.date: 03/20/2020
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

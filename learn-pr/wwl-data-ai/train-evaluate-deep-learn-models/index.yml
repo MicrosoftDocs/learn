@@ -2,8 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models
 metadata:
   title: Train and evaluate deep learning models
-  description: "Deep learning is an advanced form of machine learning that emulates the way the human brain learns through networks of connected neurons."
-  ms.date: 06/27/2020
+  description: "Train and evaluate deep learning models"
+  ms.date: 01/19/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,16 +15,16 @@ abstract: |
   - Basic principles of deep learning
   - How to train  a deep neural network (DNN) using PyTorch or Tensorflow
   - How to train  a convolutional neural network (CNN) using PyTorch or Tensorflow
+  - How to use transfer learning to train a convolutional neural network (CNN) with PyTorch or Tensorflow
 prerequisites: |
   - Basic mathematical concepts
   - Understanding of classical machine learning techniques.
   - Programming with Python
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/train-and-evaluate-deep-learning-models.svg
 levels:
 - advanced
 roles:
 - data-scientist
-- student
 products:
 - vs-code
 units:
@@ -33,6 +33,8 @@ units:
 - learn.wwl.train-evaluate-deep-learn-models.exercise-train-deep-neural-network
 - learn.wwl.train-evaluate-deep-learn-models.convolutional-neural-networks
 - learn.wwl.train-evaluate-deep-learn-models.exercise-train-convolutional-neural-network
+- learn.wwl.train-evaluate-deep-learn-models.transfer-learning
+- learn.wwl.train-evaluate-deep-learn-models.use-transfer-learning
 - learn.wwl.train-evaluate-deep-learn-models.knowledge-check
 - learn.wwl.train-evaluate-deep-learn-models.summary
 badge:

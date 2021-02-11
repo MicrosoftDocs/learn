@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.configure-azure-virtual-wan
+title: Configure Azure Virtual WAN
+metadata:
+  title: Configure Azure Virtual WAN
+  description: "Configure Azure Virtual WAN"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-configure-azure-virtual-wide-area-network.md)]

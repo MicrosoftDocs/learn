@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.add-conversational-intelligence-luis
+metadata:
+  title: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  description: "Learn to identify valuable information in conversations with LUIS for interpreting user goals (intents) and distill valuable information from sentences (entities)."
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+summary: Learn to identify valuable information in conversations with LUIS for interpreting user goals (intents) and distill valuable information from sentences (entities).
+abstract: |
+  Upon completion of this module, you will be able to:
+  * Create a LUIS Service Resource
+  * Add Intents
+  * Add utterances
+  * Work with Entities
+  * Use Prebuilt Domains and Entities
+  * Train and Publish the LUIS Model
+prerequisites: |
+  - Knowledge of navigating the Azure portal
+  - Knowledge of at least one programming language such as C# or Python
+  - Basic understanding of REST APIs and JSON
+iconUrl: /learn/achievements/add-conversational-intelligence-with-luis.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.add-conversational-intelligence-luis.introduce-language-understanding-intelligent-service
+- learn.wwl.add-conversational-intelligence-luis.create-luis-service-resource
+- learn.wwl.add-conversational-intelligence-luis.exercise-add-intents
+- learn.wwl.add-conversational-intelligence-luis.exercise-work-entities
+- learn.wwl.add-conversational-intelligence-luis.exercise-add-utterances
+- learn.wwl.add-conversational-intelligence-luis.exercise-use-prebuilt-domains-entities
+- learn.wwl.add-conversational-intelligence-luis.exercise-train-publish-luis-model
+- learn.wwl.add-conversational-intelligence-luis.knowledge-check
+- learn.wwl.add-conversational-intelligence-luis.summary
+badge:
+  uid: learn.wwl.add-conversational-intelligence-luis.badge

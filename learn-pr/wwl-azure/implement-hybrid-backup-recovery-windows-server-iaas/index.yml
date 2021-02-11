@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas
+metadata:
+  title: Implement hybrid backup and recovery with Windows Server IaaS
+  description: "You'll learn about Azure Backup before learning to implement Recovery Vaults and Azure Backup Policies. You’ll learn to implement Windows IaaS VM recovery, perform backup and restore of on-premises workloads, and manage Azure VM backups."
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement hybrid backup and recovery with Windows Server IaaS
+summary: You'll learn about Azure Backup before learning to implement Recovery Vaults and Azure Backup Policies. You’ll learn to implement Windows IaaS VM recovery, perform backup and restore of on-premises workloads, and manage Azure VM backups.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure Backup.
+  - Implement Recovery Vaults.
+  - Implement Azure Backup policies.
+  - Recover Windows IaaS VMs.
+  - Perform file and folder recovery.
+  - Perform backup and recovery of on-premises workloads.
+  - Explain how to manage Azure VM backups with Azure Backup.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including Active Directory Domain Services (AD DS), Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server–based compute and storage technologies
+  - Implementing and managing IaaS services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/implement-hybrid-backup-and-recovery-with-windows-server-iaas.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.introduction
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.describe-azure-backup
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.implement-recovery-vaults
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.implement-azure-backup-policies
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.recover-windows-iaas-vms
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.perform-file-folder-recovery
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.perform-of-premises-workloads
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.manage-azure-vm-backups-with-azure-backup-service
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.knowledge-check
+- learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.summary
+badge:
+  uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.badge

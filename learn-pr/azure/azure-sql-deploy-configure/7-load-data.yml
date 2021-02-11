@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-deploy-configure.7-load-data
+metadata:
+  title: Load data into Azure SQL
+  description: Load data into Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Load data into Azure SQL
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-load-data.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Which Azure SQL deployment options support natively restoring a database?"
+      choices:
+      - content: "SQL Server on an Azure VM"
+        isCorrect: false
+        explanation: "Yes, it's just SQL Server. But are there other options?"
+      - content: "Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "Azure SQL Managed Instance does support native restore (from a URL). But are there other options?"
+      - content: "Azure SQL Database"
+        isCorrect: false
+        explanation: "This capability is not currently supported in Azure SQL Database."
+      - content: "SQL Server on an Azure VM and Azure SQL Managed Instance"
+        isCorrect: true
+        explanation: "In an Azure VM, it's just SQL Server, so it is supported. In Azure SQL Managed Instance, native restore from a URL is supported."
+    - content: "What is not an example of how you can more efficiently load data into Azure SQL Database and Azure SQL Managed Instance?"
+      choices:
+      - content: "Use clustered columnstore indexes"
+        isCorrect: false
+        explanation: "Loading into a clustered columnstore index might help in avoiding transaction log limits, depending on your scenario."
+      - content: "Use batching with appropriately sized batches"
+        isCorrect: false
+        explanation: "Loading in batches can help decrease network latency, but they need to be sized appropriately so they don't trigger log governance limits."
+      - content: "Use simple recovery mode"
+        isCorrect: true
+        explanation: "This capability is not currently supported in Azure SQL Database or Azure SQL Managed Instance. Full recovery mode is required to meet the SLA."
+      - content: "All of the above will help in Azure SQL Database and Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "One of the options is not supported in Azure SQL Database or Azure SQL Managed Instance."

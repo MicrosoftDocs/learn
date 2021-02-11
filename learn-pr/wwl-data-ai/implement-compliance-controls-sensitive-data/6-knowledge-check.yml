@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-compliance-controls-for-sensitive-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is the data from data classification stored in SQL Server 2019?"
+    choices:
+    - content: "In the extended properties for each object"
+      isCorrect: false
+      explanation: "That's incorrect. This was the case in older versions of SQL Server, but not in SQL Server 2019."
+    - content: "In the sys.sensitivity_classifications catalog view"
+      isCorrect: true
+      explanation: "That's correct. This is the correct view."
+    - content: "In the sys.all_columns catalog view"
+      isCorrect: false
+      explanation: "That's incorrect. This view does contain classification."
+  - content: "Which of the following threats is analyzed by Advanced Threat Protection?"
+    choices:
+    - content: "Weak passwords"
+      isCorrect: false
+      explanation: "That's incorrect. ATP does not inspect user passwords."
+    - content: "Open Firewall rules"
+      isCorrect: false
+      explanation: "That's incorrect. The scope of ATP is connections or brute force attacks of the database."
+    - content: "SQL Injection"
+      isCorrect: true
+      explanation: "That's correct. One of the key features of ATP is SQL Injection inspection."
+  - content: "Which attack type is commonly associated with dynamic SQL?"
+    choices:
+    - content: "SQL Injection"
+      isCorrect: true
+      explanation: "That's correct. SQL Injection attacks are common with poorly coded dynamic SQL."
+    - content: "Brute Force"
+      isCorrect: false
+      explanation: "That's incorrect. Brute Force attacks occur when a number of credentials are tried to gain access to a database in a repeated fashion."
+    - content: "Data Exfiltration"
+      isCorrect: false
+      explanation: "That's incorrect.Data exfiltration occurs when a user downloads a great deal of data from a database."

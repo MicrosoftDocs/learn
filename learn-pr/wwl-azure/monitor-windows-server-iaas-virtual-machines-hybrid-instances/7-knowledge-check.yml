@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Maria at Contoso has been tasked with enabling Azure Monitor on an on-premises VM workload. What information does Maria need to complete the process of installing the Log Analytics agent?"
+    choices:
+    - content: "Maria needs ONLY the Workspace ID."
+      isCorrect: false
+      explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
+    - content: "Maria needs ONLY the Primary key."
+      isCorrect: false
+      explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
+    - content: "Maria needs BOTH the Workspace ID and the Primary key."
+      isCorrect: true
+      explanation: "That's correct. Maria needs both of these to configure the agent."
+  - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she cannot enable monitoring. Which of the following options is the most likely reason?"
+    choices:
+    - content: "Maria must install the Log Analytics agent first."
+      isCorrect: false
+      explanation: "That's incorrect. Maria doesn't need to install this agent."
+    - content: "Maria must install the Dependency agent."
+      isCorrect: true
+      explanation: "That's correct. Without this agent, you cannot enable monitoring."
+    - content: "Maria must start the VM first."
+      isCorrect: false
+      explanation: "That's incorrect. Although the VM must be running, it's not the most likely cause of the failure."

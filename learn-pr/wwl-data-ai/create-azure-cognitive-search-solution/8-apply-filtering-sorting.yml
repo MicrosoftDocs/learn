@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-cognitive-search-solution.apply-filtering-sorting
+title: Apply filtering and sorting
+metadata:
+  title: Apply filtering and sorting
+  description: "Filter and sort search results."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-apply-filtering-sorting.md)]

@@ -1,0 +1,84 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What component in Azure needs to be configured for the listener in an AG to work properly?"
+    choices:
+    - content: "The NIC"
+      isCorrect: false
+      explanation: "That's incorrect. The virtual network card does not affect the AG configuration ."
+    - content: "The NSG"
+      isCorrect: false
+      explanation: "That's incorrect. The NSG allows traffic, but does not affect the listener."
+    - content: "A load balancer"
+      isCorrect: true
+      explanation: "That's correct. The listener requires the creation of an Azure load balancer and has some additional configuration in the WSFC related to the load balancer."
+  - content: "What tool can be used to enable a WSFC in Azure for AGs and FCIs?"
+    choices:
+    - content: "Wizard in Failover Cluster Manager"
+      isCorrect: false
+      explanation: "That's incorrect. The Failover Cluster feature can be enabled using Server Manager, or via PowerShell."
+    - content: "PowerShell"
+      isCorrect: true
+      explanation: "That's correct. The Failover Cluster feature can be enabled using Server Manager, or via PowerShell."
+    - content: "WMI"
+      isCorrect: false
+      explanation: "That's incorrect. The Failover Cluster feature can be enabled using Server Manager, or via PowerShell."
+  - content: "What Azure feature for testing disaster recovery without bringing the production system down?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "That's correct. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "That's incorrect. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
+    - content: "Azure Load Balancer"
+      isCorrect: false
+      explanation: "That's incorrect. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
+  - content: "What feature creates a replica of the database in another region that is synchronously kept up to date.?"
+    choices:
+    - content: "Failover group"
+      isCorrect: false
+      explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
+    - content: "Secondary replica that is readable"
+      isCorrect: false
+      explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
+    - content: "Active geo-replication"
+      isCorrect: true
+      explanation: "That's incorrect. Active geo-replication creates a replica of the database in another region that is synchronously kept up to date."
+  - content: "What functionality do Temporal Tables provide with Azure SQL Database?"
+    choices:
+    - content: "Recover deleted data"
+      isCorrect: true
+      explanation: "That's correct. The Temporal Table feature allows you to use the history table to recover data that may have been deleted or updated. Recovering."
+    - content: "Scale out reads"
+      isCorrect: false
+      explanation: "That's incorrect. Temporal tables do not allow for scale out reads."
+    - content: "Temporarily process additional data"
+      isCorrect: false
+      explanation: "That's incorrect. Temporal tables do not allow for additional processing."
+  - content: "What setting for auto-failover groups must be changed to ensure a low RPO?"
+    choices:
+    - content: "RPOZero"
+      isCorrect: false
+      explanation: "That's incorrect. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."
+    - content: "AlwaysBeInSync"
+      isCorrect: false
+      explanation: "That's incorrect. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."
+    - content: "GracePeriodWithDataLossHours"
+      isCorrect: true
+      explanation: "That's correct. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."

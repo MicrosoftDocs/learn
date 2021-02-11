@@ -10,7 +10,7 @@ Let's create a new Azure VM with PowerShell.
 
 1. Use the `New-AzVm` cmdlet to create a VM.
     - Use the Resource Group **<rgn>[sandbox resource group name]</rgn>**.
-    - Give the VM a name - typically you want to use something meaningful that identifies the purposes of the VM, location, and (if there is more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
+    - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there is more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
     - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the below example command if you are using copy and paste.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
@@ -34,7 +34,7 @@ Let's create a new Azure VM with PowerShell.
 1. This will take a few minutes to complete. Once it does, you can query it and assign the VM object to a variable (`$vm`).
 
     ```powershell
-    $vm = Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    $vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>)
     ```
 
 1. Then query the value to dump out the information about the VM:
@@ -116,7 +116,7 @@ Microsoft.Network/publicIPAddresses
 Microsoft.Network/virtualNetworks
 ```
 
-This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't cleanup any of the other resources! At this point, we'd likely just delete the Resource Group itself and be done with it. However, let's just run through the exercise to clean it up manually. You should see a pattern in the commands.
+This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources! At this point, we'd likely just delete the Resource Group itself and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
 
 1. Delete the Network Interface.
 
@@ -148,4 +148,4 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
     Get-AzPublicIpAddress -ResourceGroup $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
-We should have caught all the created resources; check the resource group just to be sure. We did a lot of manual commands here but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
+We should have caught all the created resources; check the resource group just to be sure. We performed many manual commands here but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.

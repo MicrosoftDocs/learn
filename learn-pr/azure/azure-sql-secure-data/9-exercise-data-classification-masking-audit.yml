@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-secure-data.9-exercise-data-classification-masking-audit
+metadata:
+  title: Exercise - Data classification, dynamic data masking, and SQL audit
+  description: Exercise - Data classification, dynamic data masking, and SQL audit
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Data classification, dynamic data masking, and SQL audit
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/9-exercise-data-classification-masking-audit.md)]

@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.azure.cloud-adoption-framework-govern
+metadata:
+  title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
+  description: Any technical change introduces risk into your cloud environment. Learn how to evaluate those risks and implement guardrails to keep you safe as you adopt the cloud.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Address tangible risks with the Govern methodology of the Cloud Adoption Framework for Azure
+summary: Without proper governance, it can be difficult and laborious to maintain consistent control across a portfolio of workloads. Fortunately, cloud-native tools such as Azure Policy and Azure Blueprints provide convenient means of establishing those controls. The CAF Govern methodology helps to evaluate and establish corporate policies and disciplines to mitigate tangible risks.
+abstract: |
+  In this module, you will:
+  - Establish processes to properly govern cloud adoption. 
+  - Classify tangible risks based on the reference cloud adoption plan.
+  - Integrate corporate policies to mitigate tangible risks.
+  - List implementation strategies to mitigate those risks.
+  - Demonstrate one or more Azure policy additions that implement those strategies.
+  - Prioritize future governance investments.
+
+prerequisites: |
+  - A foundational understanding of IT governance processes.
+  - An understanding of your organization’s governance requirements as relevant to your cloud adoption plan.
+
+iconUrl: /learn/achievements/address-risks-caf-govern.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+units:
+- learn.azure.cloud-adoption-framework-govern.1-introduction
+- learn.azure.cloud-adoption-framework-govern.2-customer-narrative
+- learn.azure.cloud-adoption-framework-govern.3-methodology
+- learn.azure.cloud-adoption-framework-govern.4-corporate-policies
+- learn.azure.cloud-adoption-framework-govern.5-governance-disciplines
+- learn.azure.cloud-adoption-framework-govern.6-knowledge-check
+- learn.azure.cloud-adoption-framework-govern.7-deploy-governance-foundation
+- learn.azure.cloud-adoption-framework-govern.8-mature-cost-management
+- learn.azure.cloud-adoption-framework-govern.9-summary
+badge:
+  uid: learn.azure.cloud-adoption-framework-govern.badge

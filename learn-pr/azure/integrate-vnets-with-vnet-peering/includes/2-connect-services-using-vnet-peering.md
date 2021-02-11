@@ -36,7 +36,7 @@ You can configure transitive connections on-premises if you use virtual network 
 To enable gateway transit, configure the **Allow gateway transit** option in the hub virtual network where you deployed the gateway connection to your on-premises network. Also configure the **Use remote gateways** option in any spoke virtual networks.
 
 > [!NOTE]
-> If you want to enable the **Use remote gateways** option in a spoke network peering, you can't deploy a virtual network gateway in the spoke virtual network. Additionally, gateway transit currently isn't supported with global virtual network peering.
+> If you want to enable the **Use remote gateways** option in a spoke network peering, you can't deploy a virtual network gateway in the spoke virtual network.
 
 ## Overlapping address spaces
 

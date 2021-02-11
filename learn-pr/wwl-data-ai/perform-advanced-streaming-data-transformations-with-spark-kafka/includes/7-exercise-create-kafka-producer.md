@@ -123,7 +123,7 @@ Next, you need to retrieve the Kafka broker URLs by using ssh on the headnode an
 
 15.	Back in the ssh connection window, use the following command to create a topic. 
     ```
-    /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic test --zookeeper $KAFKAZKHOSTS
+    /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic stockVals --zookeeper $KAFKAZKHOSTS
     ```
 
 This command connects to Zookeeper using the host information stored in $KAFKAZKHOSTS. It then creates an Apache Kafka topic named stockVals, to match the topic name in python-producer-simulator-template.py.

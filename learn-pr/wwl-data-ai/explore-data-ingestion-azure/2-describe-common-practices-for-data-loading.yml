@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-ingestion-azure.describe-common-practices-for-data-loading
+title: Describe common practices for data loading
+metadata:
+  title: Describe common practices for data loading
+  description: "Describe common practices for data loading"
+  ms.date: 12/02/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-describe-common-practices-for-data-loading.md)]

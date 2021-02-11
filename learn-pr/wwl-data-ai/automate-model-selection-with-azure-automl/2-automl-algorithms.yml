@@ -3,8 +3,8 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-algorithms
 title: Automated machine learning tasks and algorithms
 metadata:
   title: Automated machine learning tasks and algorithms
-  description: "Learn about the tasks and algorithms supported for automated machine learning in Azure Machine Learning."
-  ms.date: 06/07/2020
+  description: "Automated machine learning tasks and algorithms"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

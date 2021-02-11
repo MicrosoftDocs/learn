@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.implement-cicd-iot-edge.exercise-create-release-pipeline-iot-edge
+title: Exercise - Create a CD release pipeline for IoT Edge with a smoke test
+metadata:
+  title: Exercise - Create a CD release pipeline for IoT Edge with a smoke test
+  description: In this section, we help the learner to create a release pipeline with a smoke test.
+  ms.date: 06/22/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 15 
+content: |
+  [!include[](includes/6-exercise-create-release-pipeline-iot-edge.md)]

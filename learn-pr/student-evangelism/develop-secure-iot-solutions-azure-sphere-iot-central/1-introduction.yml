@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this section, we help the learner to decide if the product meets their needs. We'll explain when to use the product and how it works.
+  ms.date: 06/26/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/1-introduction.md)]

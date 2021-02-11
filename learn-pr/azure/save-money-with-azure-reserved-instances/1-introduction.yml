@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.save-money-with-azure-reserved-instances.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/13/2020
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

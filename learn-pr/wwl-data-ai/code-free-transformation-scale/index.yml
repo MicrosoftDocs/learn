@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
+metadata:
+  title: Code-free transformation at scale with Azure Data Factory
+  description: "Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline
+summary: In this module, you will learn how to perform common data transformation and cleansing activities within Azure Data Factory without using code.
+abstract: |
+  * Introduction
+  * Explain Data Factory transformation methods
+  * Describe Data Factory transformation types
+  * Use Data Factory mapping data flow
+  * Debug mapping data flow
+  * Use Data Factory wrangling data
+  * Use compute transformations within Data Factory
+  * Integrate SQL Server Integration Services packages within Data Factory
+  * Knowledge check
+  * Summary
+prerequisites: |
+  The student should be able to:
+  - Log into the Azure portal
+  - Explain and create resource groups
+  - Describe Azure Data Factory core components
+  - Ingest data into Azure Data Factory using the Copy Activity
+iconUrl: /learn/achievements/perform-code-free-transformation-scale-azure-data-factory.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-data-factory
+- azure-synapse-analytics
+units:
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.introduction
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.explain-transformation-methods
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.describe-transformation-types
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-mapping-data-flow
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.debug-mapping-data-flow
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-wrangling-data
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-compute-transformations
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.integrate-ssis-packages-within
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.knowledge-check
+- learn.wwl.perform-code-free-transformation-scale-azure-data-factory.summary
+badge:
+  uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.badge

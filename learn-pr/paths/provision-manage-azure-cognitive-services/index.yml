@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.provision-manage-azure-cognitive-services
+metadata:
+  title: Provision and manage Azure Cognitive Services
+  description: Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Provision and manage Azure Cognitive Services
+prerequisites: |
+  * Learners should have an Azure account and be able to navigate the Azure portal.
+  * Learners should also have experience with Docker and containers.
+summary: |
+  Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
+iconUrl: /learn/achievements/provision-and-manage-azure-cognitive-services.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- devops-engineer
+- solution-architect
+- student
+products:
+- azure
+- azure-cognitive-services
+- azure-container-instances
+- azure-portal
+modules:
+- learn.wwl.create-manage-cognitive-services
+- learn.wwl.investigate-container-for-use-with-cognitive-services
+- learn.wwl.secure-cognitive-services
+trophy:
+  uid: learn.wwl.provision-manage-azure-cognitive-services.trophy

@@ -18,17 +18,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "On which of the following operating systems does Docker for desktop run?"
+  - content: "Docker Desktop is an app for building and sharing containerized apps and microservices available on which of the following operating systems?"
     choices:
-    - content: "Windows only"
+    - content: "macOS only"
       isCorrect: false
-      explanation: "The desktop version of Docker runs on Windows, but it's not the only supported desktop operating system."
-    - content: "Linux and Windows only"
+      explanation: "Docker Desktop runs on macOS, but it's not the only supported desktop operating system."
+    - content: "Linux only"
       isCorrect: false
-      explanation: "The desktop version of Docker runs on Linux and Windows, but they're not the only supported desktop operating systems."
-    - content: "Linux, macOS, and Windows"
+      explanation: "Docker Desktop currently is not available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
+    - content: "Windows, macOS, and Windows Subsystem for Linux (WSL)"
       isCorrect: true
-      explanation: "The desktop version of Docker runs on Linux, macOS, and Windows."
+      explanation: "While Docker Desktop is only available for Windows and macOS, it does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
 
   - content: "Which is correct Docker command to rebuild a container image?"
     choices:

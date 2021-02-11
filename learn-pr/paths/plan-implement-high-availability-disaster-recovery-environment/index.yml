@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.plan-implement-ha-dr-environment
+metadata:
+  title: Plan and implement an high availability and disaster recovery environment
+  description: Data must be available when needed. Configure, test and manage a solution for high availability and disaster recovery using Azure tools and SQL Server tools.
+  ms.date: 09/11/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and implement a high availability and disaster recovery environment
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal
+  - Basic understanding of SQL Server file storage
+  - Familiarity with SQL Server database files for data and log
+  - Familiarity with purpose and management of SQL Server transaction log
+summary: |
+  Data must be available when needed. Configure, test and manage a solution for high availability and disaster recovery using Azure tools and SQL Server tools.
+iconUrl: /learn/achievements/plan-and-implement-a-ha-dr-environment.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+modules:
+- learn.wwl.describe-high-availability-disaster-recovery-strategies
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
+- learn.wwl.backup-restore-databases
+trophy:
+  uid: learn.wwl.plan-implement-ha-dr-environment.trophy

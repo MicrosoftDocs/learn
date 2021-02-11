@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-language-text-analytics-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/05/2021
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What response is returned from the language detection service if the content in a document has mixed languages?"
+    choices:
+    - content: "Multiple language identifiers for each detected language."
+      isCorrect: false
+      explanation: "Incorrect. Only one language code is returned for each document submitted."
+    - content: "The detected language that also matches the current locale setting for the region used."
+      isCorrect: false
+      explanation: "Incorrect. The returned language values are not dependent on the region selected."
+    - content: "The predominant language with a confidence score less than 1."
+      isCorrect: true
+      explanation: "Correct. Mixed language content within the same document returns the language with the largest representation in the content, but with a lower positive rating, reflecting the marginal strength of that assessment."
+  - content: "What score value is returned if the text in a document cannot be analyzed correctly?"
+    choices:
+    - content: "Zero."
+      isCorrect: false
+      explanation: "Incorrect. a value of Zero would indicate a confidence level for content that was analyzed correctly."
+    - content: "NaN."
+      isCorrect: true
+      explanation: "Correct. When content cannot be correctly analyzed and a language determination made, results will show unknown for language name and ISO code, and the score will be NaN."
+    - content: "0.50."
+      isCorrect: false
+      explanation: "Incorrect. A score of 0.50 merely indicates a 50 percent positive confidence."

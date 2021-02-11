@@ -43,7 +43,6 @@ A view can also join tables together. If you regularly needed to find the detail
 
 ```SQL
 CREATE VIEW CustomersProducts AS
-SQL
 SELECT Customers.CustomerName, Orders.QuantityOrdered, Products.ProductName
 FROM Customers JOIN Orders
 ON Customers.CustomerID = Orders.CustomerID

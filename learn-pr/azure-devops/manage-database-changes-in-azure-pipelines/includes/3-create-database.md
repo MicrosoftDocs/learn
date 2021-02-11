@@ -4,13 +4,13 @@ Mara has created a whiteboard drawing of the database tables and the relationshi
 
 ![Whiteboard drawing of the database tables and the relationships between them.](../media/3-database-diagram.png)
 
-The **Profiles** table ![Callout 1](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2](../../shared/media/callout-02.png) holds all of the possible achievements for this game.
+The **Profiles** table ![Callout 1 on the whiteboard drawing.](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2 on the whiteboard drawing.](../../shared/media/callout-02.png) holds all of the possible achievements for this game.
 
 **Profiles** have a many-to-many relationship with achievements. That is, many profiles can have many achievements, and many achievements can be in many profiles.
 
-We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table ![Callout 3](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
+We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table ![Callout 3 on the whiteboard drawing.](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
 
-The **Scores** table ![Callout 4](../../shared/media/callout-04.png) holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
+The **Scores** table ![Callout 4 on the whiteboard drawing.](../../shared/media/callout-04.png) holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
 
 For learning purposes, here you bring up one instance of Azure SQL Database. The instance is connected to each App Service environment for the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move toward _Staging_, instead of working with a small set of fictitious data, you might start working with a full copy of the real data that you run in production.
 
@@ -36,8 +36,12 @@ Mara creates the development database and populates it with test data. She expor
 1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true) to your computer.
 
     You'll upload this file to your storage account later.
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). On the left, select **Storage accounts**.
-1. On the **Storage accounts** page, select **+ Add**.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). 1. On the top left, select **+ Create a resource**.
+1. Type **Storage accounts** in the *Search the Marketplace* box.
+1. You see this. Select **Create**.
+
+    :::image type="content" source="../media/3-create-storage-account.png" alt-text="A screenshot of the storage account page highlighting the create button.":::
+
 1. On the **Basics** tab, fill in these fields:
 
     | Property  | Value  |
@@ -51,9 +55,9 @@ Mara creates the development database and populates it with test data. She expor
 
 1. Select **Review + create** > **Create**.
 1. Wait for the storage account to be created and then select **Go to resource**.
-1. Under **Services**, select **containers**.
+1. Select **containers**.
 
-   ![Screenshot of the services section of the Containers page](../media/3-select-containers.png)
+    :::image type="content" source="../media/3-select-containers.png" alt-text="A screenshot of the storage account page with containers highlighted.":::
 
 1. On the **Containers** page, select **+ Container**.
 1. In the **Name** field, enter *bacpac* and select **Create**.
@@ -81,8 +85,8 @@ Here you create the SQL Server that holds your new database.
 
 1. Select **Review + create** > **Create**.
 1. After the server is created, select **Go to resource**.
-1. On the right side of the overview page, select **Show firewall settings**.
-1. On the firewall settings page, make sure that **Allow Azure services and resources to access this server** is switched **On**. Select **Save** > **OK**.
+1. On the right side of the overview page, select **Show firewall and virtual networks**.
+1. On the firewall settings page, make sure that **Allow Azure services and resources to access this server** is switched to **Yes**. Select **Save** > **OK**.
 
     Azure creates the tables and inserts the data that you need.
 
@@ -93,11 +97,11 @@ Here you import the *bacpac* file that you uploaded to Blob storage. You import 
 1. On the menu on the left, select **Overview** to go back to your **SQL server** overview page.
 1. Select **Import database**.
 
-   ![Screenshot of the "Import database" menu selection](../media/3-import-database-menu.png)
+   ![The "Import database" menu selection.](../media/3-import-database-menu.png)
 
 1. On the **Import database** page, select your subscription and then select **Storage - Configure required settings**.
 
-    ![Screenshot of the "Import database" page, highlighting the configure storage settings](../media/3-configure-storage-settings.png)
+    ![The "Import database" page, highlighting the configure storage settings.](../media/3-configure-storage-settings.png)
 
 1. On your **Storage accounts** page, select **spacegamedbstorageNNN**, where *NNN* is your number.
 1. On the **Containers** page, select **bacpac**.
@@ -113,16 +117,10 @@ Before you explore your database, you need to set a firewall rule that permits d
 1. Choose **tailspindatabase**.
 1. At the top of the **tailspindatabase** page, select **Set server firewall**.
 
-    Your current IP address appears next to **Client IP address**. For example, **123.12.123.123**.
-1. Enter the following rule:
+    Select **+ Add Client IP**.
+1. Save the new rule.
 
-    | Property  | Value  |
-    |---|---|
-    | Rule name| **LocalIP** |
-    | Start IP | Your IP address. Change the last octet to `0`. For example, 123.12.123.*0* |
-    | End IP | Your IP address. Change the last octet to `255`. For example, 123.12.123.*255* |
-
-1. Ensure that **Allow Azure services and resources to access this server** is set to **On**.
+1. Ensure that **Allow Azure services and resources to access this server** is set to **Yes**.
 1. At the top, select **Save** > **OK**.
 
 ## Explore the database
@@ -153,7 +151,7 @@ The _Space Game_ web application reads from these tables to get the latest leade
 
 1. Expand **Tables** and then expand each table. You see four tables: **dbo.Profiles**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**. You also see the columns and keys for each table.
 
-    ![Screenshot of the tables in the tailspin database](../media/3-database-tables.png)
+    ![The tables in the tailspin database in a list.](../media/3-database-tables.png)
 
 1. In the **Query 1** pane, enter the following SQL statement. Then select **Run**.
 
@@ -163,7 +161,7 @@ The _Space Game_ web application reads from these tables to get the latest leade
 
     This statement retrieves data from the **Profiles** table. The **Results** window displays the first 20 rows.
 
-    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/3-select-all-profiles.png)
+    ![The query editor in the Azure portal showing the data retrieved from the Profiles table.](../media/3-select-all-profiles.png)
 
 1. Change the query as follows. Then select **Run**.
 

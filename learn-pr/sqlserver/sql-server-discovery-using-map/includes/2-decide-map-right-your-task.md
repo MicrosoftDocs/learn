@@ -53,7 +53,7 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
     PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name ReportingServer \
-        --image "MicrosoftWindowsDesktop:office-365:19h2-evd-o365pp:18363.657.2002091847" \
+        --image "MicrosoftWindowsDesktop:office-365:20h1-evd-o365pp:latest" \
         --size Standard_D2s_v3 \
         --admin-username azureadmin \
         --admin-password $PASSWORD \

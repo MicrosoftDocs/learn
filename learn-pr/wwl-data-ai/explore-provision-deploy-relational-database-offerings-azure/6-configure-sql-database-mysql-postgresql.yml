@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-configuring-azure-sqldb
+title: Describe configuring Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL
+metadata:
+  title: Describe configuring Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL
+  description: "Describe configuring Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL"
+  ms.date: 01/08/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-configure-sql-database-mysql-postgresql.md)]

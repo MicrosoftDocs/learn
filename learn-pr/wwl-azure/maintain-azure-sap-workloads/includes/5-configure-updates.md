@@ -1,4 +1,4 @@
-You can use the Update Management solution to manage updates and patches for your virtual machines. For details, refer to [https://docs.microsoft.com/azure/automation/automation-tutorial-update-management](https://docs.microsoft.com/azure/automation/automation-tutorial-update-management) 
+You can use the Update Management solution to manage updates and patches for your virtual machines. For details, refer to [https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview) 
 
 ## Update the monitoring configuration for SAP
 

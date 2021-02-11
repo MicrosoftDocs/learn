@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-network-security.azure-firewall-windows-iaas-vms
+title: Implement Azure Firewall and Windows IaaS VMs
+metadata:
+  title: Implement Azure Firewall and Windows IaaS VMs
+  description: "Implement Azure Firewall and Windows IaaS VMs"
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/04-implement-azure-firewall.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Azure Firewall supports rules and rule collections. There are three types of rule collections: Application, network, and NAT. Which rules type defines which FQDNs that can be accessed from a subnet?"
+    choices:
+    - content: "Application rules."
+      isCorrect: true
+      explanation: "That's correct. Application rules configure FQDNs that can be accessed from a subnet."
+    - content: "Network rules."
+      isCorrect: false
+      explanation: "That's incorrect. Network rules contain source addresses, protocols, destination ports, and destination addresses as a means to control the flow of network traffic."
+    - content: "NAT rules."
+      isCorrect: false
+      explanation: "That's incorrect. You use NAT rules to configure DNAT rules to allow incoming Internet connections."

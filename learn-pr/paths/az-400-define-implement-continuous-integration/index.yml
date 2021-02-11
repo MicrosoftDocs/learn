@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.az-400-define-implement-continuous-integration
+metadata:
+  title: "AZ-400: Define and implement continuous integration"
+  description: "Create automated pipelines that continuously build, test, and deploy your applications and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  brand: azure
+  ms.date: 06/25/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-400: Define and implement continuous integration"
+summary: |
+  Create automated pipelines that continuously build, test, package, and deploy your applications.
+
+  Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
+prerequisites: None
+iconUrl: /learn/achievements/az-400-define-implement-continuous-integration.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+- azure-virtual-machines
+- azure-automation
+modules:
+- learn.azdo.create-a-build-pipeline
+- learn.azdo.run-quality-tests-build-pipeline
+- learn.azdo.manage-build-dependencies
+- learn.azdo.host-build-agent
+- learn.azdo.create-release-pipeline
+- learn.azdo.create-multi-stage-pipeline
+- learn.azdo.run-functional-tests-azure-pipelines
+- learn.azdo.run-non-functional-tests-azure-pipelines
+- learn.azdo.configure-infrastructure-azure-pipelines
+- learn.azure.protect-vm-settings-with-dsc
+- learn.github.github-actions-ci
+trophy:
+  uid: az-400-define-implement-continuous-integration.trophy

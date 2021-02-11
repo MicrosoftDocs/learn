@@ -9,7 +9,7 @@ Just as a blueprint allows an engineer or an architect to sketch a project's des
   :::column-end:::
 :::row-end:::
 
-![Screenshot showing the Azure Blueprints creation screen in the Azure portal](../media/5-azure-portal-blueprints.png)
+![Screenshot of Azure portal showing the Azure Blueprints creation screen with the Create button highlighted.](../media/5-azure-portal-blueprints.png)
 
 Azure Blueprints is a declarative way to orchestrate the deployment of various resource templates and other artifacts, such as:
 
@@ -35,7 +35,7 @@ The Azure Blueprints service is backed by the globally distributed Azure Cosmos 
 
 The Azure Blueprints service is designed to help with environment setup. This setup often consists of a set of resource groups, policies, role assignments, and Resource Manager template deployments. A blueprint is a package to bring each of these artifact types together and allow you to compose and version that package&mdash;including through a CI/CD pipeline. Ultimately, each setup is assigned to a subscription in a single operation that can be audited and tracked.
 
-Nearly everything that you want to include for deployment in Blueprints can be accomplished with a Resource Manager template. However, a Resource Manager template is a document that doesn't exist natively in Azure. Resource Manager templates are stored either locally or in source control. The template gets used for deployments of one or more Azure resources, but once those resources deploy there's no active connection or relationship to the template.
+Nearly everything that you want to include for deployment in Blueprints can be accomplished with a Resource Manager template. A Resource Manager template is a document stored inside Azure Templates Service. The template gets used for deployments of one or more Azure resources, but once those resources deploy, there's no active connection or relationship to the template.
 
 With Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved. This connection supports improved tracking and auditing of deployments. Blueprints can also upgrade several subscriptions at once that are governed by the same blueprint.
 

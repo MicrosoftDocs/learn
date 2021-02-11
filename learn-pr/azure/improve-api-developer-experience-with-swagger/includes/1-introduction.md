@@ -11,12 +11,12 @@ In this module, you'll learn how to document an existing ASP.NET Core API using 
 
 In this module, you will:
 
-- Learn about Swagger/Open API and Swashbuckle
-- Enable Swagger for an C#/ASP.NET Core API
-- Enable Swashbuckle for an C#/ASP.NET Core API
-- Generate and view API documentation, with Swagger
+- Learn about Swagger/Open API and Swashbuckle.
+- Enable Swagger for an C#/ASP.NET Core API.
+- Enable Swashbuckle for an C#/ASP.NET Core API.
+- Generate and view API documentation, with Swagger.
 
 ## Prerequisites
 
-- Experience with REST API design and implementation
-- Experience developing basic ASP.NET Core apps
+- Experience with REST API design and implementation.
+- Experience developing basic ASP.NET Core apps.

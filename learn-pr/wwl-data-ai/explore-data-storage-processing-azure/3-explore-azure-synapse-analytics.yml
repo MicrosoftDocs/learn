@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-storage-processing-azure.explore-azure-synapse-analytics
+title: Explore Azure Synapse Analytics
+metadata:
+  title: Explore Azure Synapse Analytics
+  description: "Explore Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-explore-azure-synapse-analytics.md)]

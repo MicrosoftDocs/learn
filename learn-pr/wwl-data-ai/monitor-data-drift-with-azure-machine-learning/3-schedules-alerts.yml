@@ -3,8 +3,8 @@ uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.scheduling-alerts
 title: Scheduling alerts
 metadata:
   title: Scheduling alerts
-  description: "Learn how to schedule data drift monitoring runs and alerts."
-  ms.date: 06/25/2020
+  description: "Scheduling alerts"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

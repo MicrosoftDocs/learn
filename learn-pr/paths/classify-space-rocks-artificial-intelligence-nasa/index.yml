@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.classify-space-rocks-artificial-intelligence-nasa
+metadata:
+  title: Classify space rocks by using Python and artificial intelligence
+  description: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+  brand: vs-code
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Classify space rocks by using Python and artificial intelligence
+summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+prerequisites: |
+ - The [Role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true) learning path
+ - A basic understanding of Python for Data Science
+iconUrl: /learn/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+levels:
+- beginner
+roles:
+- student
+- data-scientist
+products:
+- vs-code
+modules:
+- learn.student-evangelism.research-space-rocks-ai-nasa
+- learn.student-evangelism.introduction-artificial-intelligence-nasa
+- learn.student-evangelism.analyze-rock-images-ai-nasa
+- learn.student-evangelism.train-test-predictive-ai-model-nasa
+trophy:
+  uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy

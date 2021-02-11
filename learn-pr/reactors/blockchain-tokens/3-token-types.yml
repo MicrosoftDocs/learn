@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-tokens.3-token-types
+metadata:
+  title: Learn about contract standards
+  description: Learn about the four primary token standards.
+  ms.date: 10/16/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about contract standards
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-token-types.md)]

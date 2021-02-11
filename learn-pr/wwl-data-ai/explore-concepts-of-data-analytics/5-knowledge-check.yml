@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/25/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -18,34 +18,34 @@ quiz:
   questions:
   - content: "What is data ingestion?"
     choices:
-    - content: "The process of transforming raw data into models containing meaningful information,"
+    - content: "The process of transforming raw data into models containing meaningful information"
       isCorrect: false
       explanation: "That's incorrect. This is the description of data processing."
     - content: "Analyzing data for anomalies,"
       isCorrect: false
       explanation: "That's incorrect. This is part of the role that a data analysts performs once data has been ingested and transformed into a set of analytical models"
-    - content: "Capturing raw data streaming from various sources and storing it."
+    - content: "Capturing raw data streaming from various sources and storing it"
       isCorrect: true
       explanation: "That's correct. The purpose of data ingestion is to receive raw data and save it as quickly as possible. The data can then be processed and analyzed."
   - content: "Which one of the following visuals displays the major contributors to a selected result or value?"
     choices:
-    - content: "Key influencers,"
+    - content: "Key influencers"
       isCorrect: true
       explanation: "That's correct. A key influencer chart displays the major contributors to a selected result or value. Key influencers are a great choice to help you understand the factors that influence a key metric."
-    - content: "Column and bar chart,"
+    - content: "Column and bar chart"
       isCorrect: false
       explanation: "That's incorrect. You use a bar chart to see how a set of variables change over time."
-    - content: "Matrix chart,"
+    - content: "Matrix chart"
       isCorrect: false
       explanation: "That's incorrect. A matrix chart summarizes data across multiple dimensions."
   - content: "Which type of analytics helps answer questions about what has happened in the past?"
     choices:
-    - content: "Descriptive analytics,"
+    - content: "Descriptive analytics"
       isCorrect: true
       explanation: "That's correct. Descriptive analytics helps answer questions about what happened."
-    - content: "Prescriptive analytics,"
+    - content: "Prescriptive analytics"
       isCorrect: false
       explanation: "That's incorrect. Prescriptive analytics helps answer questions about what actions should be taken to achieve a goal or target."
-    - content: "Predictive analytics,"
+    - content: "Predictive analytics"
       isCorrect: false
       explanation: "That's incorrect. Predictive analytics helps answer questions about what will happen in the future."

@@ -6,25 +6,25 @@ Make sure that:
 - Your Azure Sphere device is connected to the internet.
 - You have set up your development environment.
 
-In this module, you aren't using a camera to capture images. You'll generate your input image by converting the images to pixel values using python script.
+In this module, you aren't using a camera to capture images. You'll generate your input image by converting the images to pixel values using a Python script.
 
 ## Generate your image data
 
-In this exercise, you'll test input image of deer.
+In this exercise, you'll test an input image of a deer.
 
 ![The illustration shows the input image.](../media/deer.jpg)
 
-The pixel values of the image are converted by python script defined in [scripts folder](add link!) in the repository you cloned.
+The pixel values of the image are converted by the Python script defined in the [scripts folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere) in the repository you cloned.
 
-![The illustration shows the python script of converting the image to pixel values.](../media/input-data.png)
+![The illustration shows the Python script of converting the image to pixel values.](../media/input-data.png)
 
 1. Open the deer.jpg.h file and copy the pixel values.
 
    ![The illustration shows pixel values converted from the image.](../media/pixel-values.png)
 
-2. Add evaluation image data in include\arm_nnexamples_cifar10_inputs.h to test. The image data is defined in the arm_nnexamples_cifar10_inputs.h.
+2. Add evaluation image data in include\arm_nnexamples_cifar10_inputs.h to test. The image data is defined in arm_nnexamples_cifar10_inputs.h.
 
-   ![input-image-vscode](../media/input-image-vscode.png)
+   ![The illustration shows image data in Visual Studio Code](../media/input-image-vscode.png)
 
 3. By default, the values are added in arm_nnexamples_cifar10_inputs.h to test. You can comment and test different images.
 
@@ -43,7 +43,7 @@ To recap label data in CIFAR10:
 - ship: 8
 - truck: 9
 
-1. Press **F5** to debug the project. If the project hasn't previously been built, or if files have changed and rebuild is required, Visual Studio Code will build the project before debugging starts.
+1. Press **F5** to debug the project. If the project hasn't previously been built, or if files have changed and a rebuild is required, Visual Studio Code will build the project before debugging starts.
 
 2. The Azure Sphere output window should show "Deploying image..." followed by the paths to the SDK and compiler.
 
@@ -70,8 +70,8 @@ To recap label data in CIFAR10:
     9: 0
     Complete.
     ``` 
-   With a 32x32 pixel color image as the input, which then been classified into one of the 10 output classes by the model.
+   With a 32x32 pixel color image as the input, which has then been classified into one of the 10 output classes by the model.
    
-   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label has the highest number that means the model found a deer in the input image.
+   As the value is the output of the softmax layer, each number denotes the probability for one of the 10 image classes. In the following case, label 4 corresponds to the "deer" label and has the highest number. That means the model found a deer in the input image.
 
 4. Set a breakpoint somewhere in main.c and step through the application, so that you can explore the Visual Studio Code debugging features for Azure Sphere.

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
+metadata:
+  title: Petabyte-scale ingestion with Azure Data Factory
+  description: "Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline
+summary: In this module, you will learn the various methods that can be used to ingest data between various data stores using Azure Data Factory.
+abstract: |
+  * Introduction
+  * List the data factory ingestion methods
+  * Describe data factory connectors
+  * Use the data factory copy activity
+  * Manage the self hosted integration runtime
+  * Setup the Azure integration runtime
+  * Understand data ingestion security considerations
+  * Knowledge check
+  * Summary
+prerequisites: |
+  The student should be able to:
+  - Log into the Azure portal
+  - Explain and create resource groups
+  - Describe Azure Data Factory and it's core components
+iconUrl: /learn/achievements/petabyte-scale-ingestion-azure-data-factory.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-data-factory
+- azure-synapse-analytics
+units:
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.introduction
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.list-ingestion-methods
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.describe-connectors
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.use-copy-activity
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.manage-self-hosted-integration-runtime
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.set-up-azure-integration-runtime
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.understand-data-ingestion-security-considerations
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.knowledge-check
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.summary
+badge:
+  uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.badge

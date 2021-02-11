@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="190px" viewBox="0 0 180 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Machine Learning: Regression, Classification, and Clustering/machine-learning-regression-classification-and-clustering</title>
+    <defs>
+        <path d="M100.206168,6.55621559 L158.148455,40.9384601 C164.220022,44.5412538 167.942286,51.0782575 167.942286,58.1382893 L167.942286,127.861711 C167.942286,134.921743 164.220022,141.458746 158.148455,145.06154 L100.206168,179.443784 C93.9142272,183.177345 86.0857728,183.177345 79.7938316,179.443784 L21.8515452,145.06154 C15.7799781,141.458746 12.0577137,134.921743 12.0577137,127.861711 L12.0577137,58.1382893 C12.0577137,51.0782575 15.7799781,44.5412538 21.8515452,40.9384601 L79.7938316,6.55621559 C86.0857728,2.82265458 93.9142272,2.82265458 100.206168,6.55621559 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#99D3FF" offset="0%"></stop>
+            <stop stop-color="#0FA6FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M88.2061684,3.05621559 L146.148455,37.4384601 C152.220022,41.0412538 155.942286,47.5782575 155.942286,54.6382893 L155.942286,124.361711 C155.942286,131.421743 152.220022,137.958746 146.148455,141.56154 L88.2061684,175.943784 C81.9142272,179.677345 74.0857728,179.677345 67.7938316,175.943784 L9.85154523,141.56154 C3.77997814,137.958746 0.0577136594,131.421743 0.0577136594,124.361711 L0.0577136594,54.6382893 C0.0577136594,47.5782575 3.77997814,41.0412538 9.85154523,37.4384601 L67.7938316,3.05621559 C74.0857728,-0.677345417 81.9142272,-0.677345417 88.2061684,3.05621559 Z M85.6546263,7.3561729 C81.0429194,4.61964239 75.3306135,4.55744852 70.6688793,7.16959128 L70.3453737,7.3561729 L12.4030873,41.7384174 C7.95060481,44.3804661 5.18265925,49.1264521 5.06183821,54.2858887 L5.05771366,54.6382893 L5.05771366,124.361711 C5.05771366,129.539067 7.72671515,134.341394 12.1021306,137.078203 L12.4030873,137.261583 L70.3453737,171.643827 C74.9570806,174.380358 80.6693865,174.442551 85.3311207,171.830409 L85.6546263,171.643827 L143.596913,137.261583 C148.049395,134.619534 150.817341,129.873548 150.938162,124.714111 L150.942286,124.361711 L150.942286,54.6382893 C150.942286,49.4609326 148.273285,44.6586065 143.897869,41.9217974 L143.596913,41.7384174 L85.6546263,7.3561729 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-6">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-7">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-8">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.5565878%" id="linearGradient-9">
+            <stop stop-color="#14C2D2" offset="0%"></stop>
+            <stop stop-color="#0396A4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.179476351%" x2="50%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#008078" offset="0%"></stop>
+            <stop stop-color="#00675F" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-11">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#ECECEC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100.2%" y2="50%" id="linearGradient-12">
+            <stop stop-color="#50C7E8" offset="0%"></stop>
+            <stop stop-color="#4CC3E4" offset="25%"></stop>
+            <stop stop-color="#41B6DA" offset="51%"></stop>
+            <stop stop-color="#2FA2C8" offset="77%"></stop>
+            <stop stop-color="#1989B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Machine-Learning:-Regression,-Classification,-and-Clustering" transform="translate(-120.000000, -35.000000)">
+            <g id="Machine-Learning:-Regression,-Classification,-and-Clustering/machine-learning-regression-classification-and-clustering" transform="translate(156.000000, 80.000000)">
+                <g id="Trophy-Plates/Hex" transform="translate(4.000000, 0.000000)">
+                    <g id="BG" transform="translate(-40.000000, -43.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M101.481939,4.40623694 C97.9427226,2.30610887 93.9713613,1.25604484 90,1.25604484 C86.0286387,1.25604484 82.0572774,2.30610887 78.5180605,4.40623694 L20.5757742,38.7884814 C13.7452612,42.8416243 9.55771366,50.1957535 9.55771366,58.1382893 L9.55771366,127.861711 C9.55771366,135.804246 13.7452612,143.158376 20.5757742,147.211519 L78.5180605,181.593763 C82.0572774,183.693891 86.0286387,184.743955 90,184.743955 C93.9713613,184.743955 97.9427226,183.693891 101.481939,181.593763 L159.424226,147.211519 C166.254739,143.158376 170.442286,135.804246 170.442286,127.861711 L170.442286,58.1382893 C170.442286,50.1957535 166.254739,42.8416243 159.424226,38.7884814 L101.481939,4.40623694 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-1" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <g transform="translate(0.000000, 0.500000)" id="Rectangle">
+                                <rect x="0" y="0" width="180" height="185"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-28.000000, -39.500000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <g transform="translate(-12.000000, -3.000000)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="180" height="185"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(0.000000, 7.000000)">
+                    <g id="Computer" fill-rule="nonzero">
+                        <rect id="Rectangle" fill="url(#linearGradient-6)" x="0" y="0" width="104" height="72" rx="0.6"></rect>
+                        <path d="M74.7588005,93.9524838 C64.2766219,92.2591793 63.8644014,84.5183585 63.8644014,72 L43.07671,72 C43.07671,84.5183585 42.7233781,92.2591793 32.2411995,93.9524838 C29.2441506,94.2930503 26.9818179,96.9034797 27,100 L80,100 C80.0181821,96.9034797 77.7558494,94.2930503 74.7588005,93.9524838 Z" id="Path" fill="url(#linearGradient-7)"></path>
+                    </g>
+                    <g id="Group-2" transform="translate(7.000000, 7.000000)" fill="#3D3D3D">
+                        <rect id="Rectangle" x="0" y="0" width="4" height="56"></rect>
+                        <polygon id="Rectangle" transform="translate(45.000000, 56.500000) rotate(90.000000) translate(-45.000000, -56.500000) " points="43 12 47 12 47 101 43 101"></polygon>
+                    </g>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="30" cy="13" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="43" cy="10" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="47" cy="21" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="57" cy="11" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="34" cy="28" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="21" cy="22" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-8)" cx="20" cy="34" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="69" cy="44" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="62" cy="54" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="49" cy="53" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="79" cy="53" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="88" cy="45" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="82" cy="35" r="3"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-9)" cx="96" cy="31" r="3"></circle>
+                    <polygon id="Path-110" fill="url(#linearGradient-10)" opacity="0.274716332" points="10.8605551 48.3614603 87.8589125 5 98 20.806562 19.1614933 63 9 63"></polygon>
+                    <line x1="9" y1="59" x2="91" y2="13" id="Path-111" stroke="#3C5350" stroke-linecap="round" stroke-dasharray="3"></line>
+                    <circle id="Oval" fill="url(#linearGradient-11)" cx="93" cy="61" r="20"></circle>
+                    <g id="Icon-machinelearning-166-Machine-Learning-Service-Workspaces" transform="translate(82.000000, 48.000000)" fill-rule="nonzero">
+                        <polygon id="bc892891-989d-4c43-80d3-d2b4546a974f" fill="#198AB3" points="20.5379747 23 2.46202532 23 1 17 22 17"></polygon>
+                        <polygon id="Path" fill="url(#linearGradient-12)" points="7.54 0 7.54 8.65882353 0 17.4529412 1.43 23 13 8.65882353 13 0"></polygon>
+                        <polygon id="e6be01d6-345d-4df4-bbdb-151aa8edaa1f" fill="#32BEDD" points="20.4931507 23 12 14.8297872 15.5616438 11 22 17.7659574"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

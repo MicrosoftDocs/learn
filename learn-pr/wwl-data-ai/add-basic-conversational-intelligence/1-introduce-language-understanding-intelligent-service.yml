@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.add-conversational-intelligence-luis.introduce-language-understanding-intelligent-service
+title: Introduce Language Understanding Intelligent Service (LUIS)
+metadata:
+  title: Introduce Language Understanding Intelligent Service (LUIS)
+  description: "Introduce Language Understanding Intelligent Service (LUIS)"
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduce-language-understanding-intelligent-service.md)]

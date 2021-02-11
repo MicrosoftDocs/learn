@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.2-space-rocks-importance
+metadata:
+  title: Why space rocks are important
+  description: Learn why research into space rocks is important and how we use space rocks on Earth.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Why space rocks are important
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-space-rocks-importance.md)]

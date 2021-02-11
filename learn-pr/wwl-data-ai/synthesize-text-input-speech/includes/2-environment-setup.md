@@ -4,8 +4,6 @@ For you to be successful in completing the exercises for this module, you must h
 
 You will require an Azure subscription in order to complete this exercise.  With the Azure subscription, you can create the necessary Speech Service resource. If you do not have an Azure subscription, [create one here](https://azure.microsoft.com/free).
 
-Microsoft also provides the ability to try some of the Cognitive Services without an Azure subscription.  You can choose to use the free trial by getting an API key on the [Try Cognitive Service](https://azure.microsoft.com/try/cognitive-services/) page. If you choose the free option, you can skip the following section on creating an Azure resource.  You will use the API key in the later parts of the exercises.
-
 ### Using an azure subscription
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).

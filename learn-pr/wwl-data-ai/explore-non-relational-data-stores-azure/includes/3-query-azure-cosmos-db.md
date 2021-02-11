@@ -1,6 +1,6 @@
 Although Azure Cosmos DB is described as a NoSQL database management system, the SQL API enables you to run *SQL-like* queries against Cosmos DB databases. These queries use a syntax similar to that of SQL, but there are some differences. This is because the data in a Cosmos DB is structured as documents rather than tables.
 
-In this unit, you'll learn about the dialect of SQL implemented by the SQL API. You'll see how to use the **Data Explorer** in the Azure portal to run queries.
+In this lesson, you'll learn about the dialect of SQL implemented by the SQL API. You'll see how to use the **Data Explorer** in the Azure portal to run queries.
 
 ## Use the SQL API to query documents
 
@@ -12,9 +12,11 @@ A SQL API SELECT query includes the following clauses:
 
 1. **SELECT clause**. The clause starts with the keyword SELECT followed by a comma-separated list of properties to return. The keyword “*” means all the properties in the document.
 
-2. **FROM clause**. This clause starts with the keyword FROM followed by an identifier, representing the source of the records, and an alias that you can use for this identifier in other clauses (the alias is optional). In an relational database query, the FROM clause would contain a table name. In the SQL API, all queries are limited to the scope of a container, so the identifier represents the name of the container.
+2. **FROM clause**. This clause starts with the keyword FROM followed by an identifier, representing the source of the records, and an alias that you can use for this identifier in other clauses (the alias is optional). In a relational database query, the FROM clause would contain a table name. In the SQL API, all queries are limited to the scope of a container, so the identifier represents the name of the container.
 
 3. **WHERE clause**. This clause is optional. It starts with the keyword WHERE followed by one or more logical conditions that must be satisfied by a document returned by the query. You use the WHERE clause to filter the results of a query.
+    > [!NOTE]
+    > A logical condition results in a true or false. For example "City=Paris" might evaluate to true, but "Price > $10.00" might evaluate to false.
 
 4. **ORDER BY clause**. This clause is also optional. It starts with the phrase ORDER BY followed by one or more properties used to order the output result set.
 

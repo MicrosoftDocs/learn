@@ -2,6 +2,9 @@ Suppose you're a new database administrator for a law firm with branch offices a
 
 In this exercise, you'll install the MAP toolkit on a test computer, then restore the sample backup database.
 
+> [!NOTE]
+> Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if MAP is right for your task**.
+
 ## Download the RDP connection file from Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
@@ -25,8 +28,12 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 
 1. On the Start menu, select **Microsoft Edge**.
 1. Go to [https://www.microsoft.com/download/details.aspx?id=7826](https://www.microsoft.com/download/details.aspx?id=7826).
+
+> [!IMPORTANT]
+> Due to sandbox restrictions you need to download a backed up version of the MAP toolkit form this git repo instead.
+> Go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe) and click the **Download** link.
+
 1. On the **Microsoft Assessment and Planning Toolkit** page, select **Download**.
-1. In the pop-up, select **MAPSetup.exe**, then select **Next**.
 1. In the pop-up, select **Save**.
 
 ## Install the MAP toolkit
@@ -44,7 +51,7 @@ Start by using the installer to set up the MAP toolkit.
 
 ## Download the sample MAP database
 
-1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sql-server-map-discovery/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sql-server-map-discovery/blob/master/MAP_updatedDB.bak).
+1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak).
 1. Select **Download**, and in the pop-up select **Save**.
 
 ## Connect to the sample MAP database

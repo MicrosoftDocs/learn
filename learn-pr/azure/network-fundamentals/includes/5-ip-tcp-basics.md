@@ -1,4 +1,4 @@
-When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
+When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles. 
 
 In this unit, you'll learn about the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
 
@@ -35,7 +35,7 @@ Today, there are two Internet Protocol versions that work within networks.
 
 ### IPv4
 
-Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,293,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
+Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,294,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
 
 ### Structure of an IPv4 address
 
@@ -45,7 +45,7 @@ The structure of an IPv4 address is four decimal numbers in the range of 0 to 25
 
 There are two parts to an IP address, the network and the host. Let's use the address `192.168.0.1` as an example.
 
-The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. The are a number of network classes available, which we'll discuss next.
+The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. There are a number of network classes available, described next.
 
 The host part of the IP address covers the next set of decimal numbers. In the example, that's `1`. This number represents the device and has to be unique within the network to avoid address conflicts. Each device on a network segment must have a unique address.
 
@@ -136,9 +136,9 @@ The structure of IPv6 is different from IPv4. Instead of four decimal numbers, i
 The new standard allows for the address to be simplified by using the following rules:
 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
-- Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
+- Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address.
 
-The shortened version of the IPv6 example is `2001:db8:::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
+The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
 
 ## DNS
 

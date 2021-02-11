@@ -3,9 +3,9 @@ uid: learn.wwl.migrate-cassandra-workloads-cosmos-db
 metadata:
   title: Migrate Cassandra workloads to Cosmos DB
   description: "Migrate Cassandra workloads to Cosmos DB"
-  ms.date: 01/31/2020
+  ms.date: 08/01/2020
   author: wwlpublish
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate Cassandra workloads to Cosmos DB

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-sql-database.explain-paas-options-for-deploying-sql-server-azure
+title: Explain PaaS options for deploying SQL Server in Azure
+metadata:
+  title: Explain PaaS options for deploying SQL Server in Azure
+  description: "Explain PaaS options for deploying SQL Server in Azure"
+  ms.date: 12/17/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-explain-paas-options-deploy-sql-server-azure.md)]

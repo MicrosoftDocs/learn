@@ -6,19 +6,24 @@ In this unit, you'll learn about the benefits of Durable Functions. You'll learn
 
 ## Durable functions
 
-Durable functions are an extension of Azure Functions. Whereas Azure Functions operate in a stateless environment, Durable Functions can retain state between function calls. This approach enables you to simplify complex stateful executions in a serverless-environment.
+Durable Functions is an extension of Azure Functions. Whereas Azure Functions operate in a stateless environment, Durable Functions can retain state between function calls. This approach enables you to simplify complex stateful executions in a serverless-environment.
 
 Durable Functions scales as needed, and provides a cost effective means of implementing complex workflows in the cloud. Some benefits of using Durable Functions include:
 
 - They enable you to write event driven code. A durable function can wait asynchronously for one or more external events, and then perform a series of tasks in response to these events.
+
 - You can chain functions together. You can implement common patterns such as fan-out/fan-in, which uses one function to invoke others in parallel, and then accumulate the results.
+
 - You can orchestrate and coordinate functions, and specify the order in which functions should execute.
+
 - The state is managed for you. You don't have to write your own code to save state information for a long-running function.
 
-Durable functions allows you to define stateful workflows using an `Orchestration function`. An orchestration function provides these extra benefits:
+Durable functions allows you to define stateful workflows using an _orchestration function_. An orchestration function provides these extra benefits:
 
 - You can define the workflows in code. You don't need to write a JSON description or use a workflow design tool.
+
 - Functions can be called both synchronously and asynchronously. Output from the called functions is saved locally in variables and used in subsequent function calls.
+
 - Azure checkpoints the progress of a function automatically when the function awaits. Azure may choose to dehydrate the function and save its state while the function waits, to preserve resources and reduce costs. When the function starts running again, Azure will rehydrate it and restore its state. 
 
 ## Function types
@@ -64,7 +69,7 @@ The following table lists some of the key differences between Azure Durable Func
 |  | Azure Durable Functions | Azure Logic Apps |
 |--|--|--|
 | Development | Code-first (imperative) | Design-first (declarative) |
-| Connectivity |  About a dozen built-in binding types. You can write code for custom bindings. | Large collection of connectors. Enterprise Integration Pack for B2B.You can also build custom connectors. |
+| Connectivity |  About a dozen built-in binding types. You can write code for custom bindings. | Large collection of connectors. Enterprise Integration Pack for B2B. You can also build custom connectors. |
 | Actions | Each activity is an Azure Function. You write the code for activity functions. |  Large collection of ready-made actions. You integrate custom logic through custom connectors.  |
 | Monitoring | Azure Application Insights | Azure portal,  Azure Monitor logs |
 | Management | REST API, Visual Studio | Azure portal,  REST API,  PowerShell,  Visual Studio |

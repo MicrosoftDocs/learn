@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.examine-components-of-modern-data-warehouse
+metadata:
+  title: Examine components of a modern data warehouse
+  description: "Examine components of a modern data warehouse"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Examine components of a modern data warehouse
+summary: Examine the components of a modern data warehouse. Understand the role of services like Azure Databricks, Azure Synapse Analytics, and Azure HDInsight. See how to use Azure Synapse Analytics to load and process data.
+abstract: |
+  In this module, you will:
+  * Describe Azure data services for modern data warehousing
+  * Describe modern data warehousing architecture and workload
+  * Explore Azure data services in the Azure portal
+prerequisites: |
+  None
+iconUrl: /learn/achievements/examine-components-of-modern-data-warehouse.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.examine-components-of-modern-data-warehouse.introduction
+- learn.wwl.examine-components-of-modern-data-warehouse.describe-warehousing
+- learn.wwl.examine-components-of-modern-data-warehouse.explore-azure-data-services-for-warehousing
+- learn.wwl.examine-components-of-modern-data-warehouse.exercise-explore-azure-data-services-azure-portal
+- learn.wwl.examine-components-of-modern-data-warehouse.summary
+badge:
+  uid: learn.wwl.examine-components-of-modern-data-warehouse.badge

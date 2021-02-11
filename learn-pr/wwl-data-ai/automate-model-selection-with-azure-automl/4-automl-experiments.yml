@@ -3,8 +3,8 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-experiments
 title: Running automated machine learning experiments
 metadata:
   title: Running automated machine learning experiments
-  description: "Learn how to use automated machine learning to recommend a model"
-  ms.date: 06/07/2020
+  description: "Running automated machine learning experiments"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

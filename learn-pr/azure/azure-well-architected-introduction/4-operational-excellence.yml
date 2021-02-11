@@ -20,23 +20,23 @@ quiz:
     - content: 'Waiting for users to reach out to you with reports of errors in your application.'
       isCorrect: false
       explanation: 'This is a poor practice and will result in a bad user experience.'
-    - content: 'Performing different functional tests in development and production environments.'
+    - content: 'Performing different tests for functionality in development versus production environments.'
       isCorrect: false
       explanation: 'You should perform the same functional tests between environments to ensure you are identifying issues early in your development process rather than in production.'
     - content: 'Omitting infrastructure deployment from test plans.'
       isCorrect: false
-      explanation: 'Infrastructure deployment should be included in test plans to avoid introducing error or issues due to misconfigured infrastructure.'
+      explanation: 'Infrastructure deployment should be included in test plans to avoid introducing errors or issues due to misconfigured infrastructure.'
     - content: 'Performing regular security tests of your application code in development and production environments.'
       isCorrect: true
-      explanation: 'Regular security tests are a key element to ensure your application is secure and can help identify security defects and issues.'
+      explanation: 'Regular security tests are a key element of security for your application and can help identify security defects and issues.'
   - content: 'Which of the following is a good example of using automation to improve operational excellence?'
     choices:
     - content: 'Manually provisioning development environments every day for your development teams.'
       isCorrect: false
-      explanation: 'This is an excellent opportunity to provide automated deployments that your development team could self-service.'
+      explanation: 'This is an excellent opportunity to provide automated deployments that your development team can use for self-service.'
     - content: 'Logging on Linux VMs after deployment and installing the software packages that are required for the application.'
       isCorrect: false
-      explanation: 'Post deployment configuration should be included in an automated build process to reduce error and variance.'
+      explanation: 'Post-deployment configuration should be included in an automated build process to reduce error and variance.'
     - content: 'Using a configuration template to deploy infrastructure in each environment.'
       isCorrect: true
       explanation: 'By using a configuration template to deploy infrastructure, you can be sure to have consistent, repeatable environments.'

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.numpy-data-science.13-boolean-arrays-masks
+title: Boolean arrays as masks
+metadata:
+  title: Boolean arrays as masks
+  description: Learn how to use Boolean arrays as masks.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/13-boolean-arrays-masks.md)]

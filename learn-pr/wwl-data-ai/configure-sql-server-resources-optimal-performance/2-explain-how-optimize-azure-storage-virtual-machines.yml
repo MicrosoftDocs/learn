@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.explain-how-to-optimize-azure-storage-for-virtual-machines
+title: Explain how to optimize Azure storage for SQL Server virtual machines
+metadata:
+  title: Explain how to optimize Azure storage for SQL Server virtual machines
+  description: "Explain how to optimize Azure storage for SQL Server virtual machines"
+  ms.date: 10/14/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-explain-how-optimize-azure-storage-virtual-machines.md)]

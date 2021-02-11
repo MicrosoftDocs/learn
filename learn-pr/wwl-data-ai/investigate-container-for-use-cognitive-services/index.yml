@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.investigate-container-for-use-with-cognitive-services
+metadata:
+  title: Investigate container for use with Cognitive Services
+  description: "Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers."
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Investigate container for use with Cognitive Services
+summary: Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
+abstract: |
+  After completing this module, learners will be able to:
+  * Create Containers for Reuse
+  * Deploy to a Container
+  * Secure a Container
+  * Consume Cognitive Services from a Container
+prerequisites: |
+  * Learners should have an Azure account and be familiar with navigating the Azure portal.
+  * Learners should also have experience with Docker and containers.
+iconUrl: /learn/achievements/investigate-container-for-use-with-cognitive-services.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-engineer
+- data-scientist
+- developer
+- devops-engineer
+- solution-architect
+- student
+products:
+- azure
+- azure-container-instances
+units:
+- learn.wwl.investigate-container-for-use-with-cognitive-services.introduction-to-containerization-of
+- learn.wwl.investigate-container-for-use-with-cognitive-services.create-containers-for-reuse
+- learn.wwl.investigate-container-for-use-with-cognitive-services.deploy-to-container
+- learn.wwl.investigate-container-for-use-with-cognitive-services.secure-container
+- learn.wwl.investigate-container-for-use-with-cognitive-services.consume-from-container
+- learn.wwl.investigate-container-for-use-with-cognitive-services.knowledge-check
+- learn.wwl.investigate-container-for-use-with-cognitive-services.summary
+badge:
+  uid: learn.wwl.investigate-container-for-use-with-cognitive-services.badge

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database
+metadata:
+  title: Configure automatic deployment for Azure SQL Database
+  description: "Configure automatic deployment for Azure SQL Database"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure automatic deployment for Azure SQL Database
+summary: Utilize Azure Resource Manager templates for deploying Azure SQL resources.
+abstract: |
+  After completing this module, you will be able to:
+  - Deploy an Azure Resource Manager template using PowerShell and CLI
+  - Deploy an Azure Resource Manager template using Azure DevOps
+  - Explore the structure of an Azure Resource Manager template
+prerequisites: |
+  - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/configure-automatic-deployment-for-azure-sql-database.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.introduction
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.describe-deployment-models-azure
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.create-azure-rm-template
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.deploy-azure-rm-template
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.exercise-deploy-azure-database-using-template
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.knowledge-check
+- learn.wwl.configure-automatic-deployment-for-azure-sql-database.summary
+badge:
+  uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.badge

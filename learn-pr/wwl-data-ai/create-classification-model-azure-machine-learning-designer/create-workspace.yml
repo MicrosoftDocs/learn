@@ -2,9 +2,9 @@
 uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-azure-machine-learning-workspace
 title: Create an Azure Machine Learning workspace
 metadata:
-  title: Create an Azure machine learning workspace
-  description: "Get ready to train machine learning models by creating an Azure Machine Learning workspace."
-  ms.date: 06/26/2020
+  title: Create an Azure Machine Learning workspace
+  description: "Create an Azure Machine Learning workspace"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

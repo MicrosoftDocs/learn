@@ -9,7 +9,6 @@ metadata:
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)] 
@@ -30,9 +29,10 @@ quiz:
     - content: "Improve the marketing skills of sales personnel."
       isCorrect: false
       explanation: "Incorrect. This may be a by-product of the project as sales personnel gain skills with AI tools, but it was not a stated purpose of the project."
-  - content: "When the Marketing team at Microsoft implemented AI technology in their operations, they discovered that it required three important players to work together.  
+  - content: |
+      When the Marketing team at Microsoft implemented AI technology in their operations, they discovered that it required three important players to work together.  
   
-Who were those players?"
+      Who were those players?
     choices:
     - content: "Marketing Leadership, AI Integrators, Data Scientists."
       isCorrect: false

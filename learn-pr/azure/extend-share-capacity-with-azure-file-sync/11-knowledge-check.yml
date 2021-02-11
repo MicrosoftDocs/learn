@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 05/18/20
+  ms.date: 05/18/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
     - content: It's installed on an Azure file share to control on-premises file and folder replication traffic.
       isCorrect: false
       explanation: The Azure File Sync agent isn't installed on an Azure file share.
-  - content: "How do you access your server's compatibility with Azure File Sync?"
+  - content: "How do you assess your server's compatibility with Azure File Sync?"
     choices:
     - content: Download and run the Azure File Sync agent to assess the file share and server.
       isCorrect: false

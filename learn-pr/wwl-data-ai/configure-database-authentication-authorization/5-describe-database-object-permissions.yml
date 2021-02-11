@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
+title: Describe database and object permissions
+metadata:
+  title: Describe database and object permissions
+  description: "Describe database and object permissions"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-database-object-permissions.md)]

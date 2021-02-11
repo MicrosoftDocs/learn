@@ -1,0 +1,1 @@
+In this module, you learned about the decision tree machine learning algorithm. You also learned why and how to separate data. And you began to train your own machine learning model and assess its accuracy.

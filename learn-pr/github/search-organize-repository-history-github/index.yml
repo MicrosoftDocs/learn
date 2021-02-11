@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.github.search-organize-repository-history-github
+metadata:
+  title: "Search and organize repository history by using GitHub"
+  description: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Search and organize repository history by using GitHub"
+summary: "Learn to search and organize repository history by using filters, blame, and cross-linking on GitHub."
+abstract: |
+  In this module, you will:
+  - Find relevant issues and pull requests
+  - Search history to find context
+  - Make connections within GitHub to help others find things
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/github/search-organize-repository-history-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.search-organize-repository-history-github.1-introduction
+- learn.github.search-organize-repository-history-github.2-search-organize-repository-history-github
+- learn.github.search-organize-repository-history-github.3-connect-dots
+- learn.github.search-organize-repository-history-github.4-knowledge-check
+- learn.github.search-organize-repository-history-github.5-summary
+badge:
+  uid: learn.github.search-organize-repository-history-github.badge

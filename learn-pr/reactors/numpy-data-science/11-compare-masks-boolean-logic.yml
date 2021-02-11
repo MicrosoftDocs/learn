@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.numpy-data-science.11-compare-masks-boolean-logic
+title: Comparisons, masks, and Boolean logic in NumPy
+metadata:
+  title: Comparisons, masks, and Boolean logic in NumPy
+  description: Understand how to use Boolean masking in NumPy in order to answer basic questions about your data.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 9
+content: |
+  [!include[](includes/11-compare-masks-boolean-logic.md)]

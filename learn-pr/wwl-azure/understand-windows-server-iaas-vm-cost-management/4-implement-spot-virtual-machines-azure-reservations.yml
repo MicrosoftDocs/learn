@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.implement-spot-vms-azure-reservations
+title: Implement Azure Spot Virtual Machines and Azure Reservations
+metadata:
+  title: Implement Azure Spot Virtual Machines and Azure Reservations
+  description: "Implement Azure Spot Virtual Machines and Azure Reservations"
+  ms.date: 10/15/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-implement-spot-virtual-machines-azure-reservations.md)]

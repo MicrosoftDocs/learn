@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.implement-cicd-iot-edge.how-monitor-devices
+title: How to monitor devices with Application Insights
+metadata:
+  title: How to monitor devices with Application Insights
+  description: In this section, we help the learner to monitor devices with Application Insights.
+  ms.date: 6/23/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 2 
+content: |
+  [!include[](includes/7-how-monitor-devices.md)]

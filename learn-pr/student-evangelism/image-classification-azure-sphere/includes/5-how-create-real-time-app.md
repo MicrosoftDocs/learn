@@ -12,6 +12,6 @@ The steps you'll follow:
 
 1. Clone the [Azure Sphere samples repository](https://github.com/Azure/azure-sphere-samples).
 2. Create a new project based on [HelloWorld_RTApp_MT3620_BareMetal](https://github.com/Azure/azure-sphere-samples/tree/master/Samples/HelloWorld/HelloWorld_RTApp_MT3620_BareMetal).
-3. Adjust configuration in your source code as required.
+3. Adjust the configuration in your source code as required.
 
-After completing this unit, you'll be able to create a real-time application and you'll update the source code and the configuration for your real time image classification application in the next step.
+After completing this unit, you'll be able to create a real-time application. You'll update the source code and the configuration for your real-time image classification application in the next step.

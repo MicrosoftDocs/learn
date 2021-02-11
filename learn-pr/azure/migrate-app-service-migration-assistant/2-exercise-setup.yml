@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-app-service-migration-assistant.exercise-setup
+title: Exercise - Set up the environment
+metadata:
+  title: Exercise - Set up the environment
+  description: Launch the Azure sandbox to prepare for the exercises in this module.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/2-exercise-setup.md)]

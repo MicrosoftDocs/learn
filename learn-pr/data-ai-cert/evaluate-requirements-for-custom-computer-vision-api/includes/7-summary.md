@@ -1,3 +1,5 @@
+
+
 Your product assurance team needed a more efficient way to perform the final visual inspection of your products before shipping. You needed to design the solution for an automated process that would accurately evaluate the physical characteristics of your products to ensure your quality standard. The approach also needed to meet your architectural requirements and had to be something that the software development team could implement.
 
 The Azure Custom Vision service enabled you to design a solution that automates the visual inspection of your products. The service is compatible with your existing network/solution architecture and works with the software language and tools that your developer team is familiar with. By evaluating the requirements for the Custom Vision API, you were able to plan the image workflows for both Training and Prediction. You were also able to design the right solution for your problem.

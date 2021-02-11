@@ -31,7 +31,7 @@ These conditions include:
 - Natural disasters
 - System maintenance, both planned and unplanned, including software updates and security patches.
 - Spikes in traffic to your site
-- Threats made by malicious parties, such as distributed denial of service, or DDoS, attacks
+- Threats made by malicious parties, such as distributed denial of service (DDoS) attacks
   :::column-end:::
 :::row-end:::
 
@@ -56,7 +56,7 @@ The answer is to use a _load balancer_ to distribute traffic. The load balancer 
 
 The following illustration shows the role of a load balancer.
 
-![An illustration showing the web tier of a three-tier architecture. The web tier has multiple virtual machines to service user requests. There is a load balancer that distributes user requests among the virtual machines.](../media/3-load-balancer.png)
+![An illustration showing a three-tier load balancing architecture.](../media/3-load-balancer.png)
 
 The load balancer receives the user's request and directs the request to one of the VMs in the web tier. If a VM is unavailable or stops responding, the load balancer stops sending traffic to it. The load balancer then directs traffic to one of the responsive servers.
 
@@ -74,7 +74,7 @@ If instead, however, you use Azure Load Balancer, there's no infrastructure or s
 
 The following illustration shows  the role of Azure load balancers in a multi-tier architecture.
 
-![An illustration showing the web tier of a three-tier architecture. The web tier has multiple virtual machines to service user requests. There is a load balancer that distributes user requests among the virtual machines.](../media/3-azure-load-balancer.png)
+![An illustration showing a multi-tier load balancing architecture](../media/3-azure-load-balancer.png)
 
 ## Azure Application Gateway
 

@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.az-400-facilitate-communication-collaboration
+metadata:
+  title: "AZ-400: Facilitate communication and collaboration"
+  description: "Explore DevOps capabilities such as continuous planning and continuous collaboration and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  brand: azure
+  ms.date: 06/25/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-400: Facilitate communication and collaboration"
+summary: |
+  Learn how DevOps capabilities such as continuous planning and continuous collaboration help you communicate deployment and release information with business stakeholders.
+
+  Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
+prerequisites: None
+iconUrl: /learn/achievements/az-400-facilitate-communication-collaboration.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+modules:
+- learn.wwl.analyze-devops-continuous-planning-intergration
+- learn.wwl.introduce-foundation-pillars-devops
+- learn.wwl.characterize-devops-continous-collaboration-improvement
+- learn.wwl.explain-devops-continous-delivery-quality
+- learn.azure.plan-manage-azure-costs
+- learn.azdo.route-system-feedback
+trophy:
+  uid: az-400-facilitate-communication-collaboration.trophy

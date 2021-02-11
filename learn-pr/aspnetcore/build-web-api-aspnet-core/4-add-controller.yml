@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.4-add-controller
+metadata:
+  title: Exercise - Add a controller
+  description: Learn how to add a controller to the web API.
+  ms.date: 11/12/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Exercise - Add a controller
+azureSandbox: true
+interactive: bash
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-add-controller.md)]

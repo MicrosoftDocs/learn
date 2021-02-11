@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Monitor SQL performance in Linux
   description: In this exercise, you will install Azure Data Studio on your Linux server and use it to monitor the performance of SQL Server counters.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 15

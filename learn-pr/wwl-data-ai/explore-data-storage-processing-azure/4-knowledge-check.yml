@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-data-storage-processing-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have a large amount of data held in files in Azure Data Lake storage. You want to retrieve the data in these files and use it to populate tables held in Azure Synapse Analytics. Which processing option is most appropriate?"
+    choices:
+    - content: "Use Azure Synapse Link to connect to Azure Data Lake storage and download the data"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Synapse Link enables you to connect to Azure Cosmos DB, not Data Lake storage."
+    - content: "Synapse SQL pool"
+      isCorrect: true
+      explanation: "That's correct. You can use PolyBase from a SQL pool to connect to the files in Azure Data Lake as external tables, and then ingest the data."
+    - content: "Synapse Spark pool"
+      isCorrect: false
+      explanation: "That's incorrect. You could use a Spark notebook to extract the data from Data Lake storage, but it is not the optimal solution for this scenario."
+  - content: "Which of the components of Azure Synapse Analytics allows you to train AI models using AzureML?"
+    choices:
+    - content: "Synapse Studio"
+      isCorrect: false
+      explanation: "That's incorrect. It is true that the you will likely use Synapse Studio as the interface, but it isn't the actual component that component that will do the training."
+    - content: "Synapse Pipelines"
+      isCorrect: false
+      explanation: "That's incorrect. Synapse Pipelines is the orchestration component of Azure Synapse Analytics."
+    - content: "Synapse Spark"
+      isCorrect: true
+      explanation: "That's correct. You would use a notebook to ingest and shape data, and then use SparkML and AzureML to train models with it."
+  - content: "In Azure Databricks how do you change the language a cell uses?"
+    choices:
+    - content: "The first line in the cell is %language. For example, %scala."
+      isCorrect: true
+      explanation: "That's correct. Each cell can start with a language definition."
+    - content: "Change the notebook language before writing the commands."
+      isCorrect: false
+      explanation: "That's incorrect. You can control the default language used in all the cells by setting the default. This doesn't allow you to change the language for each cell."
+    - content: "Wrap the command in the cell with ##language##."
+      isCorrect: false
+      explanation: "That's incorrect. This isn't the correct syntax."

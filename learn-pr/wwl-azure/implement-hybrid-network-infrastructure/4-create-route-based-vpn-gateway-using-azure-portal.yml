@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.create-route-based-vpn-gateway-using-azure-portal
+title: Create a route-based VPN gateway using the Azure portal
+metadata:
+  title: Create a route-based VPN gateway using the Azure portal
+  description: "Create a route-based VPN gateway using the Azure portal"
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-create-route-based-vpn-gateway-using-azure-portal.md)]

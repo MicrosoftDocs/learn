@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.configure-databases-for-performance
+metadata:
+  title: Configure databases for performance
+  description: "Control database-level configuration options. Explore Intelligent Query Processing. Configure Open Source databases for optimum performance."
+  ms.date: 08/23/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure databases for performance
+summary: Control database-level configuration options. Explore Intelligent Query Processing. Configure Open Source databases for optimum performance.
+abstract: |
+  After completing this module, you will be able to:
+  - Configure Database Scoped Configuration Options
+  - Understand the features of Intelligent Query Processing
+  - Explore performance monitoring options in Azure Database for PostgreSQL and MySQL
+prerequisites: |
+  - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+  - Experience creating and configuring resources using the Azure portal.
+  - Ability to set options for a SQL Server database.
+iconUrl: /learn/achievements/configure-databases-for-performance.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.configure-databases-for-performance.introduction
+- learn.wwl.configure-databases-for-performance.describe-database-scoped-configuration-options
+- learn.wwl.configure-databases-for-performance.describe-intelligent-query-processing
+- learn.wwl.configure-databases-for-performance.describe-query-store-azure-database-for-mysql-postgresql
+- learn.wwl.configure-databases-for-performance.knowledge-check
+- learn.wwl.configure-databases-for-performance.summary
+badge:
+  uid: learn.wwl.configure-databases-for-performance.badge

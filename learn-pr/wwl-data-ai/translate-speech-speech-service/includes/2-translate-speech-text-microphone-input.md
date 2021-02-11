@@ -154,7 +154,7 @@ You will also require [Visual Studio Code](https://code.visualstudio.com/). Down
         }
     }
 
-    ```    
+    ```
 
 1. You may notice that there are some code issues with squiggly lines.  This is because we need to add the appropriate package to the project.  Type the following command to add the Speech package, ```dotnet add package Microsoft.CognitiveServices.Speech```
 1. Once you import the package, ensure that your computer has a default microphone input configured and working.
@@ -166,7 +166,6 @@ You will also require [Visual Studio Code](https://code.visualstudio.com/). Down
 1. Explore other language options by changing the **from** and **to** language attributes.
 
 ::: zone-end
-
 
 ::: zone pivot="python"
 
@@ -220,7 +219,7 @@ If you do not already have Python and Visual Studio Code installed on your local
         # Check the result
         if result.reason == speechsdk.ResultReason.TranslatedSpeech:
             print("RECOGNIZED '{}': {}".format(fromLanguage, result.text))
-            print("TRANSLATED into {}: {}".format(toLanguage, result.translations['de']))
+            print("TRANSLATED into {}: {}".format(toLanguage, result.translations[toLanguage]))
         elif result.reason == speechsdk.ResultReason.RecognizedSpeech:
             print("RECOGNIZED: {} (text could not be translated)".format(result.text))
         elif result.reason == speechsdk.ResultReason.NoMatch:

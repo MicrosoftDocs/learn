@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sql-server-virtual-machine.provision-to-azure-virtual-machines
+title: Provision and deploy SQL Server to Azure virtual machines
+metadata:
+  title: Provision and deploy SQL Server to Azure virtual machines
+  description: "Provision and deploy SQL Server to Azure virtual machines"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-provision-azure-virtual-machines.md)]

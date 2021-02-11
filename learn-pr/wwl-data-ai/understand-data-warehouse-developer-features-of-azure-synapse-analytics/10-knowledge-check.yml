@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which language can be used to define Spark job definitions?"
+    choices:
+    - content: "Transact-SQL"
+      isCorrect: false
+      explanation: "Incorrect. Transact-SQL is a language used to query modify databases and data."
+    - content: "PowerShell"
+      isCorrect: false
+      explanation: "Incorrect. PowerShell is a cross-platform task automation and configuration management framework."
+    - content: "PySpark"
+      isCorrect: true
+      explanation: "Correct. Pyspark can be used to define spark job definitions."
+  - content: "What Transact-SQL function verifies if a piece of text is valid JSON?"
+    choices:
+    - content: "JSON_QUERY"
+      isCorrect: false
+      explanation: "Incorrect. JSON_QUERY extracts a JSON object or array from a JSON string."
+    - content: "JSON_VALUE"
+      isCorrect: false
+      explanation: "Incorrect. JSON_VALUE extracts a scalar value from a JSON string."
+    - content: "ISJSON"
+      isCorrect: true
+      explanation: "Correct. ISJSON is a Transact-SQL function that verifies if a piece of text is valid JSON."
+  - content: "What Transact-SQL function is used to perform a HyperLogLog function?"
+    choices:
+    - content: "APPROX_COUNT_DISTINCT"
+      isCorrect: true
+      explanation: "Correct. The APPROX_COUNT_DISTINCT function  is used to perform a HyperLogLog function."
+    - content: "COUNT_DISTINCT_APPROX"
+      isCorrect: false
+      explanation: "Incorrect. This is an invalid function."
+    - content: "COUNT"
+      isCorrect: false
+      explanation: "Incorrect. The COUNT function performs a count of all the objects in a range."

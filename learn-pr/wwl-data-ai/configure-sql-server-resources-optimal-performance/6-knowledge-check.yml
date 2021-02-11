@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/14/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which type of storage should be used in conjunction with Azure VMs for SQL Server data files?"
+    choices:
+    - content: "Table storage"
+      isCorrect: false
+      explanation: "That's incorrect. Table storage is a key value store and does not support file storage."
+    - content: "Blob storage"
+      isCorrect: false
+      explanation: "That's incorrect. Blob storage is an option for storing data files but is not as flexible or performant as disk storage."
+    - content: "Disk storage"
+      isCorrect: true
+      explanation: "That's correct. Disk storage is designed for VMs and is the best storage option."
+  - content: "Which of the following can be limited using Resource Governor?"
+    choices:
+    - content: "Buffer pool allocation"
+      isCorrect: false
+      explanation: "That's incorrect. Query memory grants can be controlled but buffer pool allocation cannot."
+    - content: "Write IOPs"
+      isCorrect: true
+      explanation: "That's correct. Write IOPs can be controlled by RG."
+    - content: "Recompilation"
+      isCorrect: false
+      explanation: "That's incorrect. RG has no control over compilation."
+  - content: "Which is an option from the SQL Server Resource Provider for Azure VMs?"
+    choices:
+    - content: "Storage configuration"
+      isCorrect: true
+      explanation: "That's correct. The resource provider will configure your storage pool."
+    - content: "Changing max degree of parallelism"
+      isCorrect: false
+      explanation: "That's incorrect. This option is not configured by the provider."
+    - content: "Maintenance plan"
+      isCorrect: false
+      explanation: "That's incorrect. While you can configure backups, you cannot configure maintenance plans."

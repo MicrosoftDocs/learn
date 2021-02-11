@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-setup-azure-sphere
+title: Exercise - Set up Azure Sphere 
+metadata:
+  title: Exercise - Set up Azure Sphere
+  description: In this section, you learn how to set up Azure Sphere.
+  ms.date: 6/26/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 10 # dummy number at present
+content: |
+  [!include[](includes/6-exercise-setup-azure-sphere.md)]

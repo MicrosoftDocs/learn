@@ -4,9 +4,9 @@ Her next goal is to convince the Tailspin team to take their first DevOps steps 
 
 In this module, you will:
 
-- Create an Azure DevOps project
-- Add work items to Azure Boards by using the Basic process
-- Assign work items to team members
+- Learn how adopting an Agile mindset can help your team to better collaborate, plan, and learn.
+- Create a project in Azure DevOps.
+- Add work items to Azure Boards using the Basic process.
 
 ## Prerequisites
 

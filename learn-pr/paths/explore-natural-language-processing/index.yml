@@ -3,7 +3,7 @@ uid: learn.wwl.explore-natural-language-processing
 metadata:
   title: Explore Natural Language Processing in Microsoft Azure
   description: Natural language processing supports applications that can see, hear, speak with, and understand users.  They permit the user to interact with your application in natural ways without requiring the user to adapt to the computer model.  Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
-  ms.date: 04/24/2020
+  ms.date: 07/03/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

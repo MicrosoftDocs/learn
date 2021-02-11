@@ -17,13 +17,13 @@ Next, in the Azure portal, navigate to cost analysis.
 1. In the list of subscriptions, select a subscription.
 1. In the Cost Management area, select **Cost analysis**.
 
-## Group by resource
+## Group results by resource
 
-Next, group your results to resources.
+Next, group your results to view resources.
 
-- Select the **Group by** list item to view a list of values to filter by and then select **Resource**.
+- Select the **Group by** list to view a list of values to filter by and then select **Resource**.
 
-##  Adjust date range and granularity
+## Adjust date range and granularity
 
 Lastly, adjust results to find your most expensive resources.
 

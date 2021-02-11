@@ -1,18 +1,18 @@
-The Swagger UI allows you to interact and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your Swagger/OpenAPI specification, and makes it easier for other developers to build applications that consume your APIs.
+The Swagger UI enables you to interact and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your Swagger/OpenAPI specification, and makes it easier for other developers to build apps that consume your APIs.
 
-The Swagger UI visualizes operations and methods clearly, as shown in the image below.
+The Swagger UI visualizes operations and methods clearly, as shown in the following image.
 
 :::image type="content" source="../media/Swagger_UI.png" alt-text="Operations of API in Swagger UI." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
-The Swagger also UI allows you to interact and even try out each operation.
+The Swagger also UI enables you to interact, and even try out each operation.
 
 :::image type="content" source="../media/Swagger_UI_interact.png" alt-text="Interaction with API Operation in Swagger UI." loc-scope="third-party":::
 
-Automatically creating your API documentation with Swagger and Swashbuckle can really help third parties to understand your API's resources. But what if you wanted to go a little further and provide even more detailed information? If you're using an API for the first time, you want as much information as possible.
+Automatically creating your API documentation with Swagger and Swashbuckle can help third parties understand your API's resources. But what if you wanted to go a little further and provide even more detailed information? If you're using an API for the first time, you want as much information as possible.
 
 ## XML comments
 
-You can create documentation for your code by including XML Comments. You would typically place these comments directly before the code block about which you're commenting.
+You can create documentation for your code by including XML comments. You would typically place these comments directly before the code block about which you're commenting.
 
 ```csharp
 /// <summary>
