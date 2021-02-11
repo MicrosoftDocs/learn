@@ -10,9 +10,9 @@ metadata:
   ms.prod: learning-m365
 title: 'SC-400 part 3: Implement Information Governance in Microsoft 365'
 prerequisites: |
-  Understanding of cloud computing concepts.
-  Understanding of Microsoft 365 product and services.
-  Basic understanding of Microsoft 365 compliance features.
+  - Understanding of cloud computing concepts.
+  - Understanding of Microsoft 365 product and services.
+  - Basic understanding of Microsoft 365 compliance features.
 summary: |
   Learn how to plan and implement information governance strategies for an organization.  This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
 iconUrl: /learn/achievements/generic-trophy.svg
