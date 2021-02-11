@@ -18,7 +18,7 @@ abstract:  |
   - Rust's pointer types, commonly called *references*.
 prerequisites: | 
   - You should have a basic understanding of Rust's primitive and collection types, as covered in the previous modules.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/rust-memory-management.svg 
 levels:
 - beginner
 roles:

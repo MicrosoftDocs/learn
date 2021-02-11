@@ -20,7 +20,7 @@ prerequisites: |
   - Be familiar with using third-party crates.
   - Understand common concepts including variables, data types and functions.
   - Have an understanding of generic data types.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/rust-create-command-line-program.svg 
 levels:
 - beginner
 roles:

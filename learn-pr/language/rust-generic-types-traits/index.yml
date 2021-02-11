@@ -20,7 +20,7 @@ abstract:  |
   - How to implement an *Iterator* trait to iterate through collections.
 prerequisites: | 
   - A solid understanding of Rust's types, ownerships, and moves. If you have any questions about those subjects, review the module *Understand how Rust manages memory*.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/rust-generic-types-traits.svg 
 levels:
 - beginner
 roles:
