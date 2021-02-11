@@ -6,7 +6,7 @@ By the end of this module, you'll be able to create a remote rendering session a
 
 ## Learning objectives
 
-- Create a Remote Rendering session
+- Create an Azure Remote Rendering session
 - Render a 3D model
 - Use a cut plane to reveal the inside of meshes
 
