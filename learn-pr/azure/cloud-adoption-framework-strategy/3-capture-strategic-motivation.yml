@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.3-capture-strategic-motivation
+metadata:
+  title: Capture strategic motivation 
+  description: TBD
+  ms.date: 03/01/2021
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Capture strategic motivation 
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-capture-strategic-motivation.md)]

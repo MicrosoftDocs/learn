@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.prepare-cloud-adoption-strategy.1-introduction
+uid: learn.cloud-adoption-framework-strategy.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 12/03/2019
-  author: jamcneil
+  ms.date: 03/01/2021
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

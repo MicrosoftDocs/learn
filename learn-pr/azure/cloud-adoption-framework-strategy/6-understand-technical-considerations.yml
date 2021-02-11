@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.prepare-cloud-adoption-strategy.5-understand-technical-considerations
+uid: learn.cloud-adoption-framework-strategy.6-understand-technical-considerations
 metadata:
   title: Understand technical considerations 
   description: TBD
-  ms.date: 12/03/2019
-  author: jamcneil
+  ms.date: 03/01/2021
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand technical considerations 
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-understand-technical-considerations.md)]
+  [!include[](includes/6-understand-technical-considerations.md)]
 quiz:
   title: Check your knowledge
   questions:
