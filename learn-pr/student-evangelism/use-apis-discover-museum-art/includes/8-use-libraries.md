@@ -64,11 +64,35 @@ $response | ConvertTo-Json
 
 ::: zone-end
 
+::: zone pivot="csharp"
+
+```csharp
+using System.Net.Http;
+
+HttpClient client = new HttpClient();
+
+HttpRequestMessage request = new HttpRequestMessage(
+    method: HttpMethod.Get, 
+    requestUri: "https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=clock%20radio&page=1&per_page=100&access_token=yourtoken"
+);
+
+HttpResponseMessage response = await client.SendAsync(request);
+
+if (response.IsSuccessStatusCode)
+{
+    Console.WriteLine(
+        await response.Content.ReadAsStringAsync()
+    );
+}
+```
+
+::: zone-end
+
 By using libraries appropriate to your preferred programming language, you can have more control over how you use APIs from within your code as you script functions based on user interactions like button clicks.
 
 ## Write to an endpoint by using a method
 
-Many third-party endpoints like these museum examples don't allow you to write to their databases by using POST. These databases aren't transactional. But you can practice using methods to write to your own data. 
+Many third-party endpoints like these museum examples don't allow you to write to their databases by using POST. These databases aren't transactional. But you can practice using methods to write to your own data.
 
 Let's return to the `db.json` file you created earlier in this module. You can write data to this database.
 
@@ -131,6 +155,38 @@ $body = "{`n        `"id`": 5,`n        `"item`": `"The Fiancés`",`n        `"a
 
 $response = Invoke-RestMethod 'localhost:3000/objects' -Method 'POST' -Headers $headers -Body $body
 $response | ConvertTo-Json
+```
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+```csharp
+HttpClient client = new HttpClient();
+
+HttpRequestMessage request = new HttpRequestMessage(
+    method: HttpMethod.Post,
+    requestUri: "http://localhost:3000/objects"
+);
+
+string payload = @"{""id"":5,""item"":""The Fiancés"",""artist"":""Pierre Auguste Renoir"",""collection"":""Wallraf–Richartz Museum, Cologne, Germany"",""date"":""1868""}";
+
+StringContent requestData = new StringContent(
+    content: payload, 
+    encoding: System.Text.Encoding.UTF8,
+    mediaType: "application/json"
+);
+
+request.Content = requestData;
+
+HttpResponseMessage response = await client.SendAsync(request);
+
+if (response.IsSuccessStatusCode)
+{
+    Console.WriteLine(
+        await response.Content.ReadAsStringAsync()
+    );
+}
 ```
 
 ::: zone-end
