@@ -47,7 +47,7 @@ Your network architect would like to ensure customers have the best performance.
 
 1. Run this command to go to the Traffic Manager profiles fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the lowest latency.
 
-    ```bash
+    ```azurecli
     echo http://$(az network traffic-manager profile show \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Performance \
@@ -61,7 +61,7 @@ Your network architect would like to ensure customers have the best performance.
 
 1. Run the following `nslookup` command to resolve the Traffic Manager profile domain name.
 
-    ```bash
+    ```azurecli
     nslookup $(az network traffic-manager profile show \
             --resource-group <rgn>Sandbox resource group </rgn> \
             --name TM-MusicStream-Performance \

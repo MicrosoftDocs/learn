@@ -54,6 +54,7 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
    The membership of this group now depends on whether the user is in the United States.
 
+1. Select another field to enable **Save**.
 1. Select **Save**.
 
 1. Under **Manage**, select **Members**. You see that the **Add members** button is now disabled.

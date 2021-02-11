@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.introduction-azure-networking-services
+metadata:
+  title: 'Introduction to key Azure networking services'
+  description: Decide what Azure networking services are right for you with this introduction to key Azure networking services.
+  ms.date: 02/11/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to key Azure networking services
+prerequisites: |
+  - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
+  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
+  - Beginner-level knowledge of cloud computing, including scalability and availability. 
+summary: |
+  To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- azure-firewall
+- azure-firewall-manager
+- azure-ddos-protection
+- azure-private-link
+- azure-virtual-wan
+- azure-web-application-firewall
+modules:
+- introduction-azure-private-link
+- introduction-azure-virtual-wan
+- introduction-azure-firewall
+- introduction-azure-web-application-firewall
+- introduction-azure-ddos-protection
+trophy:
+  uid: learn.introduction-azure-networking-services.trophy

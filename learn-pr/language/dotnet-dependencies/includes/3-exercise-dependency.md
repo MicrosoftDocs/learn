@@ -84,7 +84,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
     ```xml
     <ItemGroup>
-        <PackageReference Include="Humanizer" Version="2.7.9 />
+        <PackageReference Include="Humanizer" Version="2.7.9" />
     </ItemGroup>
     ```
 
