@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.get-started-azure-quantum.5-case-study-optimization
-title: Case study for optimization
+title: Case studies for optimization
 metadata:
-  title: Case study for optimization
+  title: Case studies for optimization
   description: Discover how Azure Quantum can be used to provide solutions to modern-day optimization problems.
   ms.date: 01/01/2021
   author: KittyYeungQ

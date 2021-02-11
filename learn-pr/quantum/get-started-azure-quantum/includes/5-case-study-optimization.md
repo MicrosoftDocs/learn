@@ -1,4 +1,4 @@
-Azure Quantum offers solutions that enable some divisions of the space team to run optimization algorithms by using classical hardware. For example, the logistics and maintenance divisions need this optimization capability for cargo vessel loading. 
+Azure Quantum offers solutions that enable some divisions of the space team to run optimization algorithms by using classical hardware. For example, the logistics and maintenance divisions need this optimization capability for loading cargo vessels. 
 
 There are other optimization problems of interest, such as optimizing travel time between planets, prioritizing job schedules, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
 
@@ -12,9 +12,9 @@ Emulating quantum effects on classical computers has led to the development of n
 
 Using quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
 
-## Application case studies
+The following sections describe case studies in applications of optimization.
 
-### Traffic optimization
+## Traffic optimization
 
 Traffic congestion results in a significant time and cost burden in many metropolitan areas. Another important use case for vehicle routing is the efficient evacuation of large urban areas.
 
@@ -24,7 +24,7 @@ One example of applying quantum-inspired optimization is to significantly reduce
 
 Larger problems might also be accelerated through the use of specialized hardware, such as field-programmable gate arrays (FPGAs) available in Azure, by at least two orders of magnitude. This acceleration enables the speed required to address the scale of real-world routing complexity.
 
-### Material design
+## Material design
 
 Staples of modern life include compact electronics, energy-efficient transportation, and innovative buildings and construction techniques. They're owed to advancements in science that allow researchers to create materials whose chemical structures maximize certain physical properties, such as strength, electrical characteristics, and weight. 
 
@@ -48,7 +48,7 @@ In addition to solving complex optimization problems, quantum computers might be
 
 Simulating the characteristics of complex molecules is difficult. So the development of new materials with specific properties, like next-generation batteries, poses huge computational challenges. With quantum breakthroughs in material science, lower emissions and better efficiencies begin to come into focus.
 
-### Aerodynamics and energy
+## Aerodynamics and energy
 
 Simulating aerodynamics is another area that requires heavy computation. On a windmill farm, the placement of windmill locations is critical. Windmills harness power from the wind but can also disrupt airflow and hinder the farm from utilizing the wind's maximum power.
 
@@ -58,7 +58,7 @@ Microsoft Quantum Network member Qubit Engineering is creating rotor models to s
 
 By understanding environmental factors and adding how the windmills might interact with each other, Qubit Engineering has created an abstract modeling scoring system to find the optimal placement for maximum energy production under a variety of circumstances.
 
-### Signal processing
+## Signal processing
 
 Magnetic resonance imaging (MRI) is a key diagnostic tool in healthcare. It has played a pivotal role in the treatment of the most harming diseases for humanity, such as cancer, heart disease, and Alzheimer's. Although much progress has been made in recent decades, improvements in imaging and scan times have been incremental. Computational challenges have limited improvements.
 

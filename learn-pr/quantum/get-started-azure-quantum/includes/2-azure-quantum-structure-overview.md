@@ -1,20 +1,20 @@
 Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs and solving optimization problems. In this unit, you'll become familiar with the core elements of the Azure Quantum platform. You'll learn how to use quantum services, and how to create and submit projects to the cloud by using the available hardware.
 
-## What is an Azure subscription?
+## Azure subscription
 
 The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources. 
 
 A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/learn/modules/create-an-azure-account/?azure-portal=true)
 
-## How do I use quantum services on Azure?
+## Workspace
 
-Azure Quantum is a service on Azure. To use it, you create a *workspace*. A workspace is an Azure resource that stores all the quantum programs and optimization problems (called *jobs*) that you submit to the Azure Quantum service.
+To use quantum services on Azure, you create a *workspace*. A workspace is an Azure resource that stores all the quantum programs and optimization problems (called *jobs*) that you submit to the Azure Quantum service.
 
 The workspace also contains a list of *providers* and *targets* that you've selected. Every provider publishes a set of targets. Each target allows you to either run a quantum program or solve an optimization problem. Simulators, quantum computers, and optimization solvers are examples of targets.
 
 ## Storage account
 
-To store your jobs and results, you need an Azure storage account. It's one of the properties that you configure when you set up a Quantum workspace.
+To store your jobs and results, you need an Azure storage account. It's one of the properties that you configure when you set up an Azure Quantum workspace.
 
 ## Jobs
 

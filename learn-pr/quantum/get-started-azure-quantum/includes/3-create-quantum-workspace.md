@@ -1,8 +1,4 @@
-With an active Azure subscription, your crew is ready to create an Azure Quantum workspace.
-
-## Create an Azure Quantum workspace
-
-You can use the Azure Quantum service by adding a workspace resource to your Azure subscription in the Azure portal:
+With an active Azure subscription, your crew is ready to create an Azure Quantum workspace:
 
 1. Open the main page of the [Azure portal](https://ms.portal.azure.com/?azure-portal=true).
 
@@ -31,7 +27,7 @@ You can use the Azure Quantum service by adding a workspace resource to your Azu
    ![Screenshot that shows providers for Azure Quantum.](../media/3-azure-quantum-preview-providers.png)
 
    >[!NOTE]
-   > By default, the Azure Quantum service adds the Microsoft quantum solution provider (Microsoft QIO) to every workspace.
+   > By default, the Azure Quantum service adds the Microsoft quantum solution provider to every workspace.
 
 1. After you add the providers that you want to use, select **Review + create**.
 
@@ -42,4 +38,4 @@ You can use the Azure Quantum service by adding a workspace resource to your Azu
    >[!NOTE]
    > Your jobs will be uploaded to your Azure storage account and will be subject to storage charges.
 
-Congratulations, you're set up to start using the Azure Quantum service. Let's see some case studies of what you can do with Azure Quantum.
+Congratulations! You're set up to start using the Azure Quantum service. Let's see some case studies of what you can do with Azure Quantum.

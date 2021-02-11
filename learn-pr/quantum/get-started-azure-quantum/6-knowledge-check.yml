@@ -29,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "Quantum computing and optimization address different kinds of problems."
 
-  - content: 'Which of the following statements about Azure Quantum is **false**?'
+  - content: 'Which of the following statements about Azure Quantum is *false*?'
     choices:
     - content: 'Simulators, quantum computers, and optimization solvers are examples of targets of Azure Quantum.'
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
       isCorrect: true
       explanation: "This statement is false. You must own an Azure storage account to create a quantum workspace and submit jobs."
 
-  - content: 'Which of the following statements about quantum-inspired optimization in Azure Quantum is **true**?'
+  - content: 'Which of the following statements about quantum-inspired optimization in Azure Quantum is *true*?'
     choices:
     - content: 'Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run on classical hardware, also called quantum-inspired algorithms.'
       isCorrect: true
