@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which criteria does Application Gateway use to route requests to a web server?"
-    choices: 
-    - content: "The IP address of the web server that is the target of the request"
-      isCorrect: false
-      explanation: "The listener routes requests based on the hostname, port, and path in the URL of the request"
-    - content: "The region in which the servers hosting the web application are located."
-      isCorrect: false
-      explanation: "The listener routes requests based on the hostname, port, and path in the URL of the request"
-    - content: "The hostname, port, and path in the URL of the request"
-      isCorrect: true
-      explanation: "Correct!"
-  - content: "Which load balancing strategy does Application Gateway implement?"
+  - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
     choices:
-    - content: "Application Gateway selects the server in the backend pool that currently has the lightest load."
-      isCorrect: false
-      explanation: "The Application Gateway load balancer uses a round robin strategy to distribute requests."
-    - content: "Application Gateway polls each server in the backend pool in turn, and sends the request to the first server that responds."
-      isCorrect: false
-      explanation: "The Application Gateway load balancer uses a round robin strategy to distribute requests."
-    - content: "Application Gateway follows a round-robin approach, distributing requests to each available server in a backend pool in turn."
+    - content: "/22"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "AVS needs a /22 CIDR network address block for IP segments."
+    - content: "/30"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+    - content: "/31"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+  - content: "What is the minimum number of nodes required for Azure VMware Solution?"
+    choices:
+    - content: "4"
+      isCorrect: false
+      explanation: "In terms of a minimum deployment, AVS requires fewer than four nodes."
+    - content: "8"
+      isCorrect: false
+      explanation: "In terms of a minimum deployment, AVS requires fewer than eight nodes."
+    - content: "3"
+      isCorrect: true
+      explanation: "In terms of a minimum deployment, AVS requires three nodes."
