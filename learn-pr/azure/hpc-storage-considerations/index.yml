@@ -2,14 +2,14 @@
 uid: learn.hpc-storage-considerations
 metadata:
   title: Understand factors that influence HPC storage selection in Azure
-  description: TODO this field is not rendered, but is critical for SEO. It should be similar to the summary and be composed of complete, grammatically-correct sentences, but should also contain lots of key search terms.
+  description: We will discuss various factors that influence HPC storage selection in Azure. We will review NFS, file access, directory services, parallel file systems and hybrid file access considerations.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand factors that influence HPC storage selection in Azure
-summary: TODO this is the text rendered on the title page under the title. It should be 2-3 complete sentences.
+summary: This module will cover various factors that influence HPC storage selection in Azure. We will review NFS, file access, directory services, parallel file systems and hybrid file access considerations.
 abstract: |
   In this module, you will:
   - Document the desired file access architecture for your HPC use case
