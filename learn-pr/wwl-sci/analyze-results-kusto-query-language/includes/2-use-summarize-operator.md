@@ -68,7 +68,7 @@ SigninLogs
 | where TimeGenerated >= ago(timeframe)
 | where ResultType == "50057"
 | where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
-| summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
+| summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
 | where applicationCount >= threshold
 
 ```

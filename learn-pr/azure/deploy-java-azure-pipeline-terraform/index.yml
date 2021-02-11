@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-azure-pipeline-terraform
 metadata:
-  title: Rapidly develop and deploy Java apps using GitHub Actions
-  description: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+  title: Rapidly develop and deploy Java apps by using GitHub Actions
+  description: Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using GitHub Actions.
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Rapidly develop and deploy Java apps using GitHub Actions
-summary: Create a Terraform configuration, provision your Azure resources, and set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+title: Rapidly develop and deploy Java apps by using GitHub Actions
+summary: Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using GitHub Actions.
 abstract: |
   In this module, you will:
-  - Create a Terraform configuration for your Azure resources
-  - Provision your Infrastructure and deploy to Azure
-  - Set up your project for Continuous Integration and Deployment (CI/CD) with GitHub Actions.
+  - Create a Terraform configuration for your Azure resources.
+  - Provision your infrastructure and deploy it to Azure.
+  - Set up your project for continuous integration and continuous delivery (CI/CD) by using GitHub Actions.
 prerequisites: | 
-  - An Azure Subscription
+  - An Azure subscription
   - A GitHub account
-  - Basic knowledge of Software Development
-  - Basic knowledge of managing and provisioning Azure Resources
+  - Basic knowledge of software development
+  - Basic knowledge of managing and provisioning Azure resources
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
