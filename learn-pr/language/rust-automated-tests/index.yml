@@ -20,7 +20,7 @@ prerequisites: |
   - Know how to create, edit, and run Rust code by using Cargo.
   - Know how to create functions.
   - Understand how control flow, specifically `if`, statements work in Rust. 
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/rust-automated-tests.svg 
 levels:
 - beginner
 roles:
