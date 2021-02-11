@@ -1,4 +1,4 @@
-Now that you understand some of the basics, it's your turn to build a quantum random number generator. 
+Now that you understand some of the basics, it's your turn to build a quantum random number generator.
 
 Before using quantum computers to solve important problems, your first task is to improve current security protocols by creating random passwords.
 
@@ -18,7 +18,7 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements. 
+If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements.
 
 You build out your quantum random number generator in two phases. In this chapter, you build out the first phase, which is to generate a single random bit.
 
