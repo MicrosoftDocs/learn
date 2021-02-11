@@ -2,7 +2,7 @@ One of the services that Azure Quantum offers is a solution to quantum computing
 
 Quantum mechanics is the underlying "operating system" of our universe. It describes how the fundamental building blocks of nature behave. Nature's behaviors, such as chemical reactions, biological reactions, and material formations, often involve many-body quantum interactions. To understand these behaviors, we rely on the ability to simulate them with state-of-the-art computation. 
 
-Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we have seen throughout the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
+Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
 
 ![Figure of Azure Quantum computing with Q D K.](../media/4-azure-quantum-computing-with-qdk.png)
 
@@ -32,7 +32,7 @@ However, at this time, the largest speedup known is only power 2, exhibited by G
 
 The proof technique used in [Robin Kothari et al.](https://www.microsoft.com/research/publication/quantum-implications-of-huangs-sensitivity-theorem/?azure-portal=true)  can be used to resolve an old conjecture about quantum speedups for graph problems. A [graph](https://wikipedia.org/wiki/Graph_theory?azure-portal=true) is a mathematical structure that's used to model pairwise relations between objects. It's defined by a set of vertices and edges, where the edges establish the relations among the vertices. 
 
-Graph problems are a common source of algorithmic problems in computer science. We can study different properties of a graph, such as the shortest path between two points, or identify groups of relationships. The funny thing about theoretical proofs and mathematics is that you never know when you will find a connection with another unsolved problem. 
+Graph problems are a common source of algorithmic problems in computer science. We can study different properties of a graph, such as the shortest path between two points, or identify groups of relationships. The funny thing about theoretical proofs and mathematics is that you never know when you'll find a connection with another unsolved problem. 
 
 The query complexity of monotone graph properties remains unsolved to this day. However, their quantum analog has been resolved. If you haven't explored it already, there is a module on [solving graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true).
 
