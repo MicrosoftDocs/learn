@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to key Azure networking services
 prerequisites: |
-  To get the best learning experience from this module, you should have: 
   - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
   - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
   - Beginner-level knowledge of cloud computing, including scalability and availability. 
