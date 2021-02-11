@@ -13,9 +13,9 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Familiarity with JavaScript
+- Familiarity with JavaScript.
 - Familiarity with declaring variables using `let` and `const` in JavaScript.
-- Basic knowledge of TypeScript
+- Basic knowledge of TypeScript.
 - Installed software:
   - [Git](https://git-scm.com/?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
