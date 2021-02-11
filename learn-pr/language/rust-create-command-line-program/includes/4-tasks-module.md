@@ -55,7 +55,7 @@ Before we continue, we should cover some recommended practices for encoding and 
 
 When we need to persist structs and enum instances, we need to think about *serialization*. When we need to get that data back into a program, we’re talking about *deserialization*.
 
-Serialization and deserialization are the processes of storing data in a stream of bytes and then retrieving it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device. You can learn more about [serialization and deserlization from this OWASP cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html?azure-portal=true).
+Serialization and deserialization are the processes of storing data in a stream of bytes and then retrieving it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device. You can learn more about [serialization and deserialization from this OWASP cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html?azure-portal=true).
 
 The Rust community recommends the `serde` crate for handling most serialization and deserialization of Rust data structures efficiently and generically, ours included. By using this preexisting crate, we can be even more productive and idiomatic.
 
