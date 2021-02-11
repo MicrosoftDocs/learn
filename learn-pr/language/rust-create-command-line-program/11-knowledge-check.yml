@@ -14,20 +14,20 @@ content: |
   Answer the following questions to demonstrate what you've learned:
 quiz:
   questions:
-  - content: "What is the purpose of the `structopt` third-party crate, used in the `cli` module of the command-line program?"
+  - content: "What's the purpose of the `structopt` third-party crate that's used in the `cli` module of the command-line program?"
     choices:
-    - content: "Parse the command-line arguments provided by the user and place them in a struct."
+    - content: "Parse command-line arguments provided by the user and place them in a struct."
       isCorrect: true
-      explanation: "Correct. `structopt` will parse command-line arguments by defining a struct."
+      explanation: "Correct. `structopt` parses command-line arguments by defining a struct."
     - content: "Parse the contents of the journal file into a vector of `Tasks`."
       isCorrect: false
       explanation: "Incorrect. This answer describes the role of the `serde_json` crate."
     - content: "Handle different types of errors seamlessly and display friendly error messages to users."
       isCorrect: false
       explanation: "Incorrect. This answer describes the role of the `anyhow` crate."
-  - content: "What is the purpose of the `serde_json` third-party crate, used in the `tasks` module of the command-line program?"
+  - content: "What's the purpose of the `serde_json` third-party crate that's used in the `tasks` module of the command-line program?"
     choices:
-    - content: "Parse the command-line arguments provided by the user and place them in a struct."
+    - content: "Parse command-line arguments provided by the user and place them in a struct."
       isCorrect: false
       explanation: "Incorrect. This answer describes the role of the `structopt` crate."
     - content: "Handle different types of errors seamlessly and display friendly error messages to users."
@@ -36,14 +36,14 @@ quiz:
     - content: "Parse the contents of the journal file into a vector of `Tasks`."
       isCorrect: true
       explanation: "Correct. `serde_json` serializes and deserializes tasks in the journal file."
-  - content: "What is the purpose of the `anyhow` third-party crate, used in the `main` module of the command-line program?"
+  - content: "What's the purpose of the `anyhow` third-party crate that's used in the `main` module of the command-line program?"
     choices:
     - content: "Parse the contents of the journal file into a vector of `Tasks`."
       isCorrect: false
-      explanation: "Incorrect. This answer describes the role for the `serde_json` crate."
-    - content: "Parse the command-line arguments provided by the user and place them in a struct."
+      explanation: "Incorrect. This answer describes the role of the `serde_json` crate."
+    - content: "Parse command-line arguments provided by the user and place them in a struct."
       isCorrect: false
-      explanation: "Incorrect. This answer describes the role for the `structopt` crate."
+      explanation: "Incorrect. This answer describes the role of the `structopt` crate."
     - content: "Handle different types of errors seamlessly and display friendly error messages to users."
       isCorrect: true
-      explanation: "Correct. `anyhow` is a great crate to handle errors in Rust."         
+      explanation: "Correct. `anyhow` is a great crate for handling errors in Rust."         

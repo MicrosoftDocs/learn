@@ -1,29 +1,29 @@
-The `cli` module will be responsible for handling user input, which will be via a command-line
-interface *(hence the name)*. To add it to our project, we must create a file named `src/cli.rs` inside
-our project root and add the following line to our `main.rs` file:
+The `cli` module will handle user input, which users will enter via a command-line
+interface (hence the name). To add the module to our project, we need to create a file named `src/cli.rs` at
+the project root and add the following line to the `main.rs` file:
 
 ```rust
 mod cli;
 ```
 
-Our new module currently doesn't contain any code, but let's change that.
+The new module doesn't contain any code. Let's change that.
 
-## Handle command-line parameters with `structopt`
+## Handle command-line parameters by using `structopt`
 
-Parsing and handling command-line arguments can be done using Rust's standard library, but it would
-require a tremendous amount of code and effort to do it reasonably well, so we'll resort to a third-party crate called [`structopt`](https://crates.io/crates/structopt) that will make this chore easy as defining a simple struct.
+You could parse and handle command-line arguments by using Rust's standard library. But it would
+require a tremendous amount of code and effort to do that reasonably well. We'll use a third-party crate called [`structopt`](https://crates.io/crates/structopt) that will make this task as easy as defining a simple struct.
 
-By running the command `cargo search structopt`, we can find if it is available and which is its most
+By running the command `cargo search structopt`, you can check whether it's available and determine the most
 recent version:
 
 ```sh
 $ cargo search structopt
-structopt = "0.3.21"                  # Parse command line argument by defining a struct.
+structopt = "0.3.21"                  # Parse command-line argument by defining a struct.
 ...
 ```
 
-Let's use it as a dependency to our project by adding the following entry to the `[dependencies]`
-section of our `Cargo.toml` file:
+Let's add it as a dependency for our project by adding the following entry to the `[dependencies]`
+section of the `Cargo.toml` file:
 
 ```toml
 [dependencies]
@@ -34,16 +34,16 @@ From now on, we can refer to it directly from any part of our code.
 
 ## Create the `CommandLineArgs` struct
 
-The next step we must take is to create a struct to represent all the possible actions our program
-can perform. In previous sections, we've defined that those actions should be:
+Next, we need to create a struct to represent all the possible actions our program
+can perform. In the previous unit, we defined those actions:
 
-- **add** a task
-- **remove** a task
-- **print** the task list
+- *Add* a task.
+- *Remove* a task.
+- *Print* the task list.
 
-After thoughtfully reading the [`structopt` README page](https://github.com/TeXitoi/structopt?azure-portal=true), we can tell that the best way to express those alternating options is to use an `enum` to hold all those three actions.
+If you thoughtfully read the [`structopt` README page](https://github.com/TeXitoi/structopt?azure-portal=true), you might decide that the best way to express those alternating options is to use an `enum` to hold all three actions.
 
-Before we actually use `structopt`, let us first look at our types that will represent our command-line arguments:
+Before we use `structopt`, let's look at the types that will represent our command-line arguments:
 
 ```rust
 use std::path::PathBuf;
@@ -62,23 +62,23 @@ pub struct CommandLineArgs {
 
 The `Action` enum has one variant for each kind of action we'll need in our program:
 
-- `Action::Add` holds a `String` describing the task being added, like `"buy milk"` or `"take the dog
+- `Action::Add` holds a `String` that describes the task being added, like `"buy milk"` or `"take the dog
   on a walk"`.
-- `Action::Done` holds the number of the task we will mark as done, so a `2` will cross out the
-  second task in our numbered to-do list.
-- `Action::List` will be used to print the task list in the terminal.
+- `Action::Done` holds the number of a task that we'll mark as done. For example, a `2` will cross out the
+  second task in the numbered to-do list.
+- `Action::List` will print the task list in the terminal.
 
-Next, our `CommandLineArgs` struct will hold our `Action` enum as a wrapper, along with an optional
-argument *(mind the `Option` type)* named `journal_file`, for when the user wants to point a journal
-file other than the default.
+Next, our `CommandLineArgs` struct holds the `Action` enum as a wrapper. It also holds an optional
+argument (note the `Option` type) named `journal_file`. This argument is for when a user wants to point to a journal
+file that isn't the default one.
 
 Wrapping the `action` and the `journal_file` types together allows us to apply the `journal_file`
 optional argument to all nested subcommands declared in the `Action` enum.
 
-## Derive StructOpt
+## Derive `StructOpt`
 
-But those types won't be of any use until we annotate them the `structopt` attributes. The final
-source code will be like this:
+Those types won't be of any use until we annotate them by using the `structopt` attributes. The final
+source code will look like this:
 
 ```rust
 use std::path::PathBuf;
@@ -86,18 +86,18 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 pub enum Action {
-    /// Write tasks to the journal file
+    /// Write tasks to the journal file.
     Add {
-        /// The task description text
+        /// The task description text.
         #[structopt()]
         text: String,
     },
-    /// Remove an entry from the journal file by position
+    /// Remove an entry from the journal file by position.
     Done {
         #[structopt()]
         position: usize,
     },
-    /// List all tasks in the journal file
+    /// List all tasks in the journal file.
     List,
 }
 
@@ -110,20 +110,20 @@ pub struct CommandLineArgs {
     #[structopt(subcommand)]
     pub action: Action,
 
-    /// Use a different journal file
+    /// Use a different journal file.
     #[structopt(parse(from_os_str), short, long)]
     pub journal_file: Option<PathBuf>,
 }
 ```
 
-In the final version of our `cli.rs` file, we'd used the `#[derive(StructOpt)]` and the several
-`#[structopt]` attributes to tell Rust to generate a command-line argument parser using our
-`CommandLineArgs` struct. The documentation strings (`///`) will also be used to provide helpful
-descriptions for each aspect of our command-line interface.
+In the final version of the `cli.rs` file, we used `#[derive(StructOpt)]` and several
+`#[structopt]` attributes to instruct Rust to generate a command-line argument parser by using our
+`CommandLineArgs` struct. The documentation strings (`///`) are used to provide
+descriptions for each aspect of the command-line interface.
 
-## Try out our CLI
+## Run the CLI program
 
-It's about time to take our program for a test drive. But first, modify the `main.rs` source file to look like
+It's time to take the program for a test drive. But first, modify the `main.rs` source file to look like
 this:
 
 ```rust
@@ -135,7 +135,7 @@ fn main() {
 }
 ```
 
-When you hit the `cargo run` command you will be greeted by the help message that `structopt`
+When you use the `cargo run` command, you'll be greeted by the Help message that `structopt`
 generated from our `CommandLineArgs` struct. Impressive, isn't it?
 
 ```output
@@ -163,16 +163,16 @@ generated from our `CommandLineArgs` struct. Impressive, isn't it?
         list    List all tasks in the journal file
 ```
 
-It even produces errors when subcommands are called with the wrong arguments. Give it a try!
+The program even produces errors when subcommands are called with the wrong arguments. Give it a try!
 
 ## Use the parsed results
 
-The whole point of using `structopt` as our argument parser is that every valid invocation of our
-command-line interface will produce a `CommandLineArgs` value that we can use within our program to
-invoke the specific behavior our user wants.
+The point of using `structopt` as the argument parser is that every valid invocation of the
+command-line interface will produce a `CommandLineArgs` value. We can use these values in the program to
+invoke the specific behavior that the user wants.
 
-Take a quick look at how some different usages of our app result in different values for our struct.
-First, modify our `main.rs` file to print the result of the `from_args()` and then try to call our
+Take a look at how some different uses of the app result in different values for the struct.
+First, modify the `main.rs` file to print the result of `from_args()`. Then try to call the
 program with different arguments.
 
 ```rust
@@ -184,7 +184,7 @@ fn main() {
 }
 ```
 
-Note how each different invocation instantiates a different value for our struct.
+Notice how each different invocation instantiates a different value for the struct.
 
 ```rust
 // $ cargo run -- add "buy milk"
@@ -212,6 +212,6 @@ CommandLineArgs {
 }
 ```
 
-We can now use those values in our `main.rs` file to guide our program execution.
+We can now use those values in the `main.rs` file to guide program execution.
 
-Now let's take a look at our `tasks` module file.
+Next, let's look at the `tasks` module file.

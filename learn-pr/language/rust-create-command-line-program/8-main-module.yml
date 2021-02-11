@@ -2,7 +2,7 @@
 uid: learn.language.rust-create-command-line-program.main-module
 metadata:
   title: Complete the main module
-  description: Finish implementing the main module to include the functions to create, add and list tasks.
+  description: Finish the main module to include the functions that create, add, and list tasks.
   ms.date: 01/26/2021
   author: meaghanlewis
   ms.author: shanama

@@ -31,7 +31,6 @@ roles:
 - student
 products:
 - vs-code
-- azure
 modules:
 - learn.language.rust-get-started
 - learn.language.rust-understand-common-concepts
