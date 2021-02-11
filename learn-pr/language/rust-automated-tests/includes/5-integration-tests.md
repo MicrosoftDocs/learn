@@ -1,10 +1,10 @@
-While unit and documentation tests provide concise and specific tests, it is generally a good idea to test our crate as a whole, confirming that the many parts of our code work correctly together.
+While unit and documentation tests provide concise and specific tests, it's generally a good idea to test our crate as a whole to confirm that the many parts of our code work together correctly.
 
-The Rust test suite also has *integration tests* so that we can test our library in the same way any other code would, meaning we can only call functions that are part of our library’s public API.
+The Rust test suite also has *integration tests* so that we can test our library in the same way any other code would, which means we can only call functions that are part of our library's public API.
 
 What's unique about these tests is that they exist in a separate directory and file, so they can externally test the library code. Cargo looks for integration tests in the *tests* directory (next to the *src* directory) and will run each source file in it.
 
-Lets now write some integration tests by creating a new small project. Run the following commands in your terminal:
+Let's write some integration tests by creating a new small project. Run the following commands in your terminal:
 
 ```sh
 $ cargo new --lib rusty_pizza
@@ -37,9 +37,9 @@ impl Pizza {
 }
 ```
 
-The snippet above features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely in the private method `Pizza::bake` to prepare our pizzas.
+The preceding snippet features a `Pizza` struct with two public methods, `Pizza::pepperoni` and `Pizza::mozzarella`, that rely on the private method `Pizza::bake` to prepare our pizzas.
 
-Create a new directory named `tests` alongside the `src` directory and place a new file named `pizzas.rs` in it, with the following contents:
+Create a new directory named `tests` alongside the `src` directory. Place a new file named `pizzas.rs` in it with the following contents:
 
 ```rust
 use rusty_pizza::Pizza;
@@ -81,8 +81,8 @@ running 0 tests
  test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 ```
 
-Inspecting the output reveals that Rust places each kind of test is a different section: unit tests, integration tests, and documentation tests.
+Inspecting the output reveals that Rust places each kind of test in a different section: unit tests, integration tests, and documentation tests.
 
-In the integration tests section we can see that our two tests inside the `tests/pizzas.rs` file were collected and executed by the test suite.
+In the integration tests section, we can see that our two tests inside the `tests/pizzas.rs` file were collected and executed by the test suite.
 
-Keep in mind that only library crates can be tested via integration tests because binary crates don't expose any functionality that other crates can use. Nonetheless, many Rust crates that provide a binary have a succinct `src/main.rs` file that calls logic that lives in a `src/lib.rs` file. Using that structure, integration tests can test the important parts of the code.
+Only library crates can be tested via integration tests because binary crates don't expose any functionality that other crates can use. But, many Rust crates that provide a binary have a succinct `src/main.rs` file that calls logic that lives in a `src/lib.rs` file. Using that structure, integration tests can test the important parts of the code.

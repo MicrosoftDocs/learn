@@ -1,4 +1,4 @@
-You might have noticed that our custom types are a little difficult to use in practice. This simple `Point` struct cannot be compared to other `Point` instances or displayed in the terminal. Because of this, we might want to use the **derive** attribute to allow new items to automatically be generated for the struct.
+You might have noticed that our custom types are a little difficult to use in practice. This simple `Point` struct can't be compared to other `Point` instances or displayed in the terminal. Because of this difficulty, we might want to use the *derive* attribute to allow new items to automatically be generated for the struct.
 
 ## Downside of generic types
 
@@ -26,7 +26,7 @@ fn main() {
 }
 ```
 
-The preceding code will fail for three reasons. See the output below:
+The preceding code will fail for three reasons. See this output:
 
 ```output
     error[E0277]: `Point` doesn't implement `std::fmt::Display`
@@ -64,16 +64,16 @@ The preceding code will fail for three reasons. See the output below:
     error: aborting due to 3 previous errors#+end_example
 ```
 
-This code fails to compile because our `Point` type does not implement the following traits:
+This code fails to compile because our `Point` type doesn't implement the following traits:
 
-- The `Debug` trait, that allows a type to be formatted using the `{:?}` format specifier, used in a programmer-facing, debugging context.
-- The `Display` trait, that allows a type to be formatted using the `{}` format specifier, is
-similar to `Debug`, but Display is better suited for user-facing output.
-- The `PartialEq` trait, that allows implementors to be compared for equality.
+- The `Debug` trait, which allows a type to be formatted by using the `{:?}` format specifier, is used in a programmer-facing, debugging context.
+- The `Display` trait, which allows a type to be formatted by using the `{}` format specifier, is
+similar to `Debug`. But `Display` is better suited for user-facing output.
+- The `PartialEq` trait, which allows implementors to be compared for equality.
 
-## Using derive
+## Use derive
 
-Luckily, the `Debug` and `PartialEq` traits can be automatically implemented for us by the Rust compiler using the `#[derive(Trait)]` attribute, provided that each of its fields implements the trait:
+Luckily, the `Debug` and `PartialEq` traits can be automatically implemented for us by the Rust compiler by using the `#[derive(Trait)]` attribute, if each of its fields implements the trait:
 
 ```rust
 #[derive(Debug, PartialEq)]
@@ -83,8 +83,8 @@ struct Point {
 }
 ```
 
-Our code will still fail to compile because Rust's standard library does not provide automatic
-implementation for the `Display` trait, since it is meant for end users, but if we comment out that line our code would now produce this output:
+Our code will still fail to compile because Rust's standard library doesn't provide automatic
+implementation for the `Display` trait, because it's meant for end users. But if we comment out that line, our code now produces this output:
 
 ```output
     Point { x: 1, y: 2 }
@@ -103,7 +103,7 @@ impl fmt::Display for Point {
 }
 ```
 
-and our code will then compile just fine:
+Our code will then compile just fine:
 
 ```output
     (1, 2)

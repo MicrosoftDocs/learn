@@ -1,6 +1,6 @@
 When modules get too large, we might consider moving their contents to a separate file to make the code easier to navigate.
 
-Let’s move the code from our previous example to its own file called `src/authentication.rs` and then change the crate root file.
+Let's move the code from our previous example to its own file called `src/authentication.rs` and then change the crate root file.
 
 *Filename: src/main.rs*
 ```rust

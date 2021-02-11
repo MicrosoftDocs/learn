@@ -4,13 +4,13 @@ This pattern relies on the twin updates rather than forwarding telemetry from an
 
 To continue, choose one of these options:
 
-- If you've been following the **Develop with Azure Digital Twins** learning path modules in sequence, have successfully completed all exercises in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/en-us/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/), and have kept the solution resources in your Azure subscription, skip to [Create a route and filter for twin update notifications](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
+- If you've been following the **Develop with Azure Digital Twins** learning path modules in sequence, have successfully completed all exercises in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/), and have kept the solution resources in your Azure subscription, skip to [Create a route and filter for twin update notifications](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
 
 - If you haven't completed the previous modules and you still want to proceed with the exercises in this module, continue with the following steps.
 
 ## Deploy an ARM template
 
-This step is required to re-provision the resources created in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/en-us/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/).
+This step is required to re-provision the resources created in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/).
 
 1. Select **Deploy to Azure**: 
 

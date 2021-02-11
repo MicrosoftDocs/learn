@@ -80,16 +80,16 @@ In this module, you will:
 
 ## Prerequisites
 
-- (Recommended.) Introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/en-us/learn/paths/introduction-to-azure-iot/) learning path.
-- A basic understanding of the Azure CLI. We recommend that you complete the [Control Azure services with the CLI](https://docs.microsoft.com/en-us/learn/modules/control-azure-services-with-cli/) module. 
-- [The Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+- (Recommended.) Introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) learning path.
+- A basic understanding of the Azure CLI. We recommend that you complete the [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module. 
+- [The Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
   - We recommend that you install Azure CLI locally. 
   - We don't recommend that you use Azure Cloud Shell. It will time out because of the length of the lab.
 - PowerShell. 
   - On Windows, PowerShell is built in.
-  - On macOS, you need to install [PowerShell for Mac](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).
+  - On macOS, you need to install [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).
 - (For the exercise units.) Access to an Azure subscription in which you have the Global Administrator role for your account and an Azure Active Directory tenant.
-- (Recommended.) Some experience working with Time Series Insights. You can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/en-us/learn/modules/explore-analyze-time-series-insights/) module.
+- (Recommended.) Some experience working with Time Series Insights. You can learn more by completing the [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/learn/modules/explore-analyze-time-series-insights/) module.
 - [Node.js](https://nodejs.org/en/download/) to run the device simulator application.  
 - [Git](https://git-scm.com/downloads).
 - [Visual Studio Code](https://code.visualstudio.com/).

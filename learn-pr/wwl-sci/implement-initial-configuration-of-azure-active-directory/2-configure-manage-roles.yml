@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles
+title: Configure and manage Azure Active Directory roles
+metadata:
+  title: Configure and manage Azure Active Directory roles
+  description: "Configure and manage Azure Active Directory roles"
+  ms.date: 01/29/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-configure-manage-roles.md)]

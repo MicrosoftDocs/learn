@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-azure-cost-management-service-level-agreements
 metadata:
-  title: "Azure Fundamentals part 6: Describe Azure cost management and service level agreements"
-  description: Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions.
+  title: "Azure Fundamentals part 6: Describe Azure cost management and service level agreements (AZ-900)"
+  description: Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
   author: tpetchel
@@ -63,6 +63,9 @@ summary: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe Azure cost management and service level agreements"
+  url: https://www.microsoft.com/videoplayer/embed/RE4MhQI
 iconUrl: /learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
 levels:
 - beginner

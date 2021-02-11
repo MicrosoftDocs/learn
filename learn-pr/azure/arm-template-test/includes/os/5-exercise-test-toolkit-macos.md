@@ -1,4 +1,4 @@
-1. Follow the instructions in [Installing PowerShell on macOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true).
+1. Follow the instructions in [Installing PowerShell on macOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?azure-portal=true).
 
 1. Run `pwsh` in the terminal, to verify the installation:
 

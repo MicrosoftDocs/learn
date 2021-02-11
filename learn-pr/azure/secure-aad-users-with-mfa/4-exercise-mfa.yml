@@ -8,7 +8,6 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Enable Azure AD Multi-Factor Authentication
 durationInMinutes: 8
 content: |

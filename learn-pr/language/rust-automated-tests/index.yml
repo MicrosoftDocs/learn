@@ -12,15 +12,15 @@ title: Write automated tests
 summary: "Learn about the types of testing you can do with Rust."
 abstract:  |
   In this module, you'll learn:
-  - How to write unit tests
-  - How to write integration tests
-  - How to write documentation tests
+  - How to write unit tests.
+  - How to write integration tests.
+  - How to write documentation tests.
 prerequisites: | 
   - Have your Rust development environment set up.
   - Know how to create, edit, and run Rust code by using Cargo.
   - Know how to create functions.
-  - Understand how control flow, specifically `if` statements work in Rust. 
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+  - Understand how control flow, specifically `if`, statements work in Rust. 
+iconUrl: /learn/achievements/rust-automated-tests.svg 
 levels:
 - beginner
 roles:

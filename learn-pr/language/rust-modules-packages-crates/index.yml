@@ -8,11 +8,11 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore modules, packages and third-party crates
+title: Explore modules, packages, and third-party crates
 summary: "Learn about how to effectively use modules and how to integrate with packages and third-party crates."
 abstract:  |
   In this module, you'll learn:
-  - How to organize your code in files, modules and packages.
+  - How to organize your code in files, modules, and packages.
   - How those concepts interact.
   - How to use third-party packages from the [Crates.io](https://crates.io?azure-portal=true) repository.
 prerequisites: | 
