@@ -1,8 +1,8 @@
 As more organizations implement mobile device strategies for accessing work or school data, protecting against data leakage becomes paramount. Intune's mobile application management solution for protecting against data leakage is App Protection Policies (APP). App Protection Policies are rules that ensure an organization's data remains safe or contained in a managed app, regardless of whether the device is enrolled. 
 
-When configuring App Protection Policies, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Microsoft has introduced a new taxonomy for security configurations in Windows 10. Intune is leveraging a similar taxonomy for its data protection framework for mobile app management.
+When configuring App Protection Policies, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Microsoft has introduced a new taxonomy for security configurations in Windows 10. Intune leverages a similar taxonomy for its data protection framework for mobile app management.
 
-## Choose a level of app protection 
+## Choose a level of app protection
 
 The Intune App Protection Policies data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
 

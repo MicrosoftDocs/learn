@@ -1,4 +1,4 @@
-Intune supports a number of protected Microsoft apps and partner apps that specially incorporate mobile app management capabilities. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
+Intune supports several protected Microsoft apps and partner apps that specially incorporate mobile app management capabilities. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
 
 - Restrict copy-and-paste and save-as functions
 - Configure web links to open inside the secure Microsoft browser
@@ -8,7 +8,7 @@ Intune supports a number of protected Microsoft apps and partner apps that speci
 - Enable app protection on devices managed with third-party EMM tools
 
 > [!NOTE]
-> To better understand the available protect apps that integrate with Intune, see a list of [Microsoft Intune protected apps](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps?azure-portal=true).
+> To better understand the available protected apps that integrate with Intune, see a list of [Microsoft Intune protected apps](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps?azure-portal=true).
 
 ## Create protected apps using tools
 
