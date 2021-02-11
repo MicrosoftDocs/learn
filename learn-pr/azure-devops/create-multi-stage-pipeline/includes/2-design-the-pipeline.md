@@ -131,7 +131,7 @@ In YAML, you use the pipe (`|`) syntax to define a string that spans multiple li
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
-For a more complete description of conditions in Azure Pipelines, see [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?view=azure-devops&azure-portal=true#job-status-functions).
+For a more complete description of conditions in Azure Pipelines, see [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?azure-portal=true#job-status-functions).
 
 **Mara:** Conditions let us control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
@@ -170,7 +170,7 @@ CI and PR triggers let you control which branches participate in the overall pro
 
 ### What are scheduled triggers?
 
-A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
+A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
 
 On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval, or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 

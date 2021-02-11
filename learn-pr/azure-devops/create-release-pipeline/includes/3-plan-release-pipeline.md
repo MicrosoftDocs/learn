@@ -103,7 +103,7 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 1. Provide a way for Azure Pipelines to authenticate access to that environment.
 1. Use Azure Pipelines tasks to deploy the build artifact to that environment.
 
-**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it will be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact@2](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?view=azure-devops&azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?view=azure-devops?azure-portal=true).
+**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it will be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact@2](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true).
 
 **Andy:** I have the tasks here. Let's see what they do for us.
 
