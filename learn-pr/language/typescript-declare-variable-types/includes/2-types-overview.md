@@ -49,7 +49,7 @@ Before diving into using types for variable declaration, let's look at the types
 
 All types in TypeScript are subtypes of a single top type called the `any` type. The `any` type is the one type that can represent any JavaScript value with no constraints. All other types are categorized as primitive types, object types, or type parameters. These types introduce various static constraints on their values.
 
-![The TypeScript type hierarchy, with any s the top type, and primitive types (boolean, number, string, enum, void), object types (class, interface, array, and literals), and type parameters as subtypes. The primitive types null and undefined are subtypes of all other types.](../media/m02-types.png)
+:::image type="content" source="../media/m02-types.png" alt-text="Type hierarchy with any as the top type, and primitive types, object types, and type parameters as subtypes. Primitive types null and undefined are subtypes of all other types." border="false":::
 
 ### Primitive types
 
