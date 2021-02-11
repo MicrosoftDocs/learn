@@ -3,8 +3,8 @@ uid: learn.wwl.create-pipelines-in-aml.pipeline-data
 title: Pass data between pipeline steps
 metadata:
   title: Pass data between pipeline steps
-  description: "Learn how to use a PipelineData object to pass data between pipeline steps."
-  ms.date: 09/06/2020
+  description: "Pass data between pipeline steps"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

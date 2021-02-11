@@ -1,4 +1,4 @@
-Azure Synapse Analytics uses Azure Storage to store data. Since the data is stored and managed by Azure Storage, Azure Synapse Analytics charges separately for the storage consumption. The data itself is sharded into distributions to optimize the performance of the system. One can choose which sharding pattern to use to distribute the data when one defines the table. Azure Synapse Analytics supports these sharding patterns:
+Azure Synapse Analytics uses Azure Storage to store data. Because the data is stored and managed by Azure Storage, Azure Synapse Analytics charges separately for the storage consumption. The data itself is sharded into distributions to optimize the performance of the system. You can choose which sharding pattern to use to distribute the data when you define the table. Azure Synapse Analytics supports these sharding patterns:
 
 - Hash
 - Round Robin
@@ -6,7 +6,7 @@ Azure Synapse Analytics uses Azure Storage to store data. Since the data is stor
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny]
 
-You can use the following strategies to determine which pattern is most suitable for your scenario:
+You can use the following strategies to determine which pattern is most suitable for your scenario.
 
 | Type | Great fit for... | Watch out if... |
 |------|------------------|-----------------|
@@ -71,11 +71,11 @@ WITH
 ;
 ```
 
-## Replicated Tables
+## Replicated tables
 
 A replicated table provides the fastest query performance for small tables.
 
-A table that is replicated caches a full copy on each compute node. Consequently, replicating a table removes the need to transfer data among compute nodes before a join or aggregation. Replicated tables are best utilized with small tables. Extra storage is required, and there are additional overheads that are incurred when writing data which make large tables impractical.
+A table that is replicated caches a full copy on each compute node. Consequently, replicating a table removes the need to transfer data among compute nodes before a join or aggregation. Extra storage is required, and there are additional overheads that are incurred when writing data which make large tables impractical.
 
 The following is an example of a create table statement that defines a replicate distribution.
 

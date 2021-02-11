@@ -32,7 +32,7 @@ Site Recovery copies data stored in the cache and syncs it with either the targe
 
 Site Recovery can use accelerated networking for Azure VMs, reducing jitter and CPU usage.
 
-### Disaster recovery (DR) drills
+### Disaster recovery drills
 
 Site Recovery enables you to do disaster recovery drills after all the prerequisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment and are a way to test that you have correctly configured everything.
 

@@ -17,13 +17,13 @@ abstract: |
   - Learn about the data protection framework using app protection policies.
 prerequisites: None
 iconUrl: /learn/achievements/app-management-with-microsoft-endpoint-manager.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:
 - administrator
 products:
-- azure
+- mem
 units:
 - learn.app-management-using-microsoft-endpoint-manager.1-introduction
 - learn.app-management-using-microsoft-endpoint-manager.2-app-lifecycle

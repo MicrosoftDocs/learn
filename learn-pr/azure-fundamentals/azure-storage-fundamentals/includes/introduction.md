@@ -1,6 +1,6 @@
-Suppose your company, Tailwind Traders, has a number of product brochures, datasheets, product images, and other files related that are related to marketing, sales, and support. In the past, your company has been hosting these files on standalone web servers in your datacenter.
+Suppose your company, Tailwind Traders, has a number of product brochures, datasheets, product images, and other files that are related to marketing, sales, and support. In the past, your company has been hosting these files on standalone web servers in your datacenter.
 
-Your company is now in the process of migrating its applications to the cloud, and your development team is currently architecting new applications. Your Chief Technology Officer (CTO) wants to migrate all of your marketing, sales, and support files to the cloud in order to take advantage of geographic distribution of your files. This move also reduces the number of physical servers that your company must maintain in your datacenter. As part of your migration strategy, you need to determine the correct approach for your cloud-based storage infrastructure.
+Your company is now in the process of migrating its applications to the cloud, and your development team is currently architecting new applications. Your Chief Technology Officer (CTO) wants to migrate all of your marketing, sales, and support files to the cloud in order to take advantage of geographic distribution of your files. This move also reduces the number of physical servers that your company maintains in your datacenter. As part of your migration strategy, you need to determine the correct approach for your cloud-based storage infrastructure.
 
 ![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
@@ -16,8 +16,8 @@ After completing this module, you'll be able to describe the benefits and usage 
 
 - Azure Blob Storage
 - Azure Disk Storage
-- Azure Files
-- Azure Storage tiers
+- Azure Files Storage
+- Azure Blob Access tiers
 
 ## Prerequisites
 

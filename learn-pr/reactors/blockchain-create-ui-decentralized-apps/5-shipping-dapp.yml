@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-create-ui-decentralized-apps.5-shipping-dapp
+metadata:
+  title: Exercise - Create a dapp for a shipping contract
+  description: Use Drizzle to create a dapp for a shipping contract.
+  ms.date: 11/30/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create a dapp for a shipping contract
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-shipping-dapp.md)]

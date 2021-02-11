@@ -1,30 +1,31 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.3-knowledge-check-rbac-overview
 metadata:
-  title: Knowledge check - What is RBAC?
-  description: Knowledge check - What is RBAC?
+  title: Knowledge check - What is Azure RBAC?
+  description: Knowledge check - What is Azure RBAC?
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Knowledge check - What is RBAC?
+title: Knowledge check - What is Azure RBAC?
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: A role definition in Azure is a collection of permissions?"
+  - content: "What is a role definition in Azure?"
     choices:
-    - content: "True"
+    - content: "A collection of permissions with a name that is assignable to a user, group, or application"
       isCorrect: true
       explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application."
-    - content: "False"
+    - content: "The collection of users, groups, or applications that have permissions to a role"
       isCorrect: false
-      explanation: "A role definition in Azure is a collection of permissions with a name that you can assign to a user, group, or application"
-  
-  - content: "Suppose you want to assign a role to allow a user to create and manage Azure resources but not be able to grant access to others. Which of the following built-in roles would support this?"
+      explanation: "You can view role assignments to see the list of users, groups, or applications that have permissions to a role."
+    - content: " The binding of a role to a security principal at a specific scope, to grant access"
+      isCorrect: false
+      explanation: "A role assignment is the process of binding a role to a security principal at a particular scope, for the purpose of granting access."
+  - content: "Suppose an administrator wants to assign a role to allow a user to create and manage Azure resources but not be able to grant access to others. Which of the following built-in roles would support this?"
     choices:
     - content: "Owner"
       isCorrect: false
@@ -38,7 +39,6 @@ quiz:
     - content: "User Access Administrator"
       isCorrect: false
       explanation: "A user access administrator can only manage access of Azure resources."
-
   - content: "What is the inheritance order for scope in Azure?"
     choices:
     - content: "Management group, Resource group, Subscription, Resource"

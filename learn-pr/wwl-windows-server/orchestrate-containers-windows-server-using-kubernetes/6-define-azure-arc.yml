@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-azure-arc
+title: Define Azure Arc
+metadata:
+  title: Define Azure Arc
+  description: "Define Azure Arc"
+  ms.date: 01/18/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-define-azure-arc.md)]

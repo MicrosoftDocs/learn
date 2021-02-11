@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.student-evangelism.unix-shell-wrangle-data
+metadata:
+  title: Use the UNIX shell to wrangle log data
+  description: |
+    Have you ever needed to transform data from one format to another? Transforming data is a common task for developers. Whether you're trying to extract some information from some logs or incoming streams, you'll often need to deal with raw data and transform it before it's usable.
+    In this module, you'll learn how to wrangle (transform) data by using the UNIX shell. You'll be introduced to some commonly used tools and to the basics of regular expressions.
+  ms.date: 12/09/2020
+  author: trallard
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use the UNIX shell to wrangle log data
+summary: Learn how to use the UNIX shell to wrangle data and inspect data files.
+abstract: |
+  In this module, you'll learn how to:
+  - Do basic file inspection with commands such as `head`, `tail`, `wc`, `less`, and `sort`.
+  - Use `cat` to create, append, display, and concatenate files.
+  - Write and use `regex` (regular expressions) for text pattern matching.
+  - Use `grep` to search files or `stdin` for pattern matching along with `regex`.
+  - Do basic text transformations on input streams by using `sed` and `regex`.
+  - Use pipes and filters for data wrangling.
+prerequisites: |
+  - Basic knowledge of the command line and basic shell commands
+iconUrl: /learn/achievements/student-evangelism/unix-shell-wrangle-data.svg
+levels:
+  - beginner
+roles:
+  - student
+  - data-scientist
+  - data-engineer
+  - developer
+products:
+  - vs-code
+units:
+  - learn.student-evangelism.unix-shell-wrangle-data.0-introduction
+  - learn.student-evangelism.unix-shell-wrangle-data.1-file-inspection
+  - learn.student-evangelism.unix-shell-wrangle-data.2-cat-tool
+  - learn.student-evangelism.unix-shell-wrangle-data.3-regular-expressions
+  - learn.student-evangelism.unix-shell-wrangle-data.4-grep-tool
+  - learn.student-evangelism.unix-shell-wrangle-data.5-sed-and-regex
+  - learn.student-evangelism.unix-shell-wrangle-data.6-pipes-and-filters
+  - learn.student-evangelism.unix-shell-wrangle-data.7-knowledge-check
+  - learn.student-evangelism.unix-shell-wrangle-data.8-summary
+badge:
+  uid: learn.student-evangelism.unix-shell-wrangle-data.badge

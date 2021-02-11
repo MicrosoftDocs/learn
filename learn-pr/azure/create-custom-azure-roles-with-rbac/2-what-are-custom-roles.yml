@@ -28,12 +28,12 @@ quiz:
       explanation: "The scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
   - content: "What commands help you determine what operations to add to a custom role definition?"
     choices:
-    - content: "Use 'az provider show' to find resource provider operations."
-      isCorrect: false
+    - content: "Use 'az provider operation show' to find resource provider operations."
+      isCorrect: true
       explanation: "This command shows information about the provider, but doesn't list the operations."
     - content: "Use 'List-AzRoleDefinition' to view a built-in role."
       isCorrect: false
       explanation: "Use 'Get-AzRoleDefinition' to view a built-in role in Azure PowerShell."
     - content: "Use 'az role definition list' to view a built-in role."
-      isCorrect: true
+      isCorrect: false
       explanation: "Use 'az role definition list' to view a built-in role in Azure CLI."

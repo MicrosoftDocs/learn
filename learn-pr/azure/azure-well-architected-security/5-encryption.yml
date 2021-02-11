@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-security.5-encryption
 title: Encryption
 metadata:
   title: Encryption
-  description: In this unit we'll discuss how to use encryption to secure your architecture
+  description: In this unit, we'll discuss how to use encryption to secure your architecture
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'True or false: only Windows virtual machines can use Azure Disk Encryption'
+  - content: 'True or false: only Windows virtual machines can use Azure Disk Encryption.'
     choices:
     - content: 'True'
       isCorrect: false
@@ -24,18 +24,18 @@ quiz:
       isCorrect: true
       explanation: 'Azure Disk Encryption is available for both Windows and Linux virtual machines.'
 
-  - content: 'When classifying data, which of the following is a factor?'
+  - content: "When you're classifying data, which of the following is a factor?"
     choices:
     - content: 'Level of risk posed to customers if exposed'
       isCorrect: true
-      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
     - content: 'Method of data transport'
       isCorrect: false
-      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
     - content: 'Whether the data is stored on virtual machines or in a database'
       isCorrect: false 
-      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'  
+      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."  
     - content: 'The amount of data stored'
       isCorrect: false
-      explanation: 'Classifying data that should be encrypted is commonly based on the impact it can have to customers if it is exposed.'
+      explanation: "Classifying data that should be encrypted is commonly based on the impact it can have to customers if it's exposed."
 

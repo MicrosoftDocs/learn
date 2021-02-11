@@ -17,9 +17,9 @@ You'll run all of the commands by using the integrated Cloud Shell instance to y
 
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
-    $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
+    $server = Get-AzSqlServer -ResourceGroupName $resourceGroup
     $logical_server = $server.ServerName
-    $databaseName = Get-AzureRmSqlDatabase `
+    $databaseName = Get-AzSqlDatabase `
                         -ResourceGroupName $resourceGroup `
                         -ServerName $logical_server `
                         | Where DatabaseName -like Adventure*

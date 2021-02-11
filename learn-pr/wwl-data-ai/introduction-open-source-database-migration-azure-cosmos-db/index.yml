@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 metadata:
-  title: Introduction to open-source database migration to Azure Cosmos DB
-  description: "An introduction to migrating an open-source database to Azure Cosmos DB"
-  ms.date: 08/01/2020
+  title: Introduction to open source database migration to Azure Cosmos DB
+  description: "Introduction to open source database migration to Azure Cosmos DB"
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to open source database migration to Azure Cosmos DB
-summary: In this module, the learner will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
+summary: In this module, you will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
 abstract: |
   By the end of this module, you'll be able to:
-  - Describe the key features OF Cosmos DB.
+  - Describe the key features of Cosmos DB.
   - Describe the Cosmos DB architecture and APIs.
   - Plan a NoSQL to Cosmos DB migration.
   - Plan Cosmos DB throughput.

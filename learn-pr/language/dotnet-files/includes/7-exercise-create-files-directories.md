@@ -8,7 +8,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
 1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each file name returned from the `FindFiles` function.
 
-1. In the 'Main' function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
+1. In the `Main` function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
 
     ```csharp
     static void Main(string[] args)
@@ -67,7 +67,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
     :::image type="content" source="../media/refresh-file-explorer.png" alt-text="Screenshot of the Refresh icon in the Files explorer of the Cloud Shell editor.":::
 
-You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next you'll learn how to read and parse data inside files.
+You're almost finished. The last step is to read the sales files, add up the totals, and write the grand total to the new *totals.txt* file. Next, you'll learn how to read and parse data inside files.
 
 ## Got stuck?
 

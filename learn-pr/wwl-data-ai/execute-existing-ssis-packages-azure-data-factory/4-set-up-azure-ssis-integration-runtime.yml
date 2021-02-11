@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.set-up-azure-ssis-integration-runtime
+title: Set-up Azure SSIS Integration Runtime
+metadata:
+  title: Set-up Azure SSIS Integration Runtime
+  description: "Set-up Azure SSIS Integration Runtime"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-set-up-azure-ssis-integration-runtime.md)]

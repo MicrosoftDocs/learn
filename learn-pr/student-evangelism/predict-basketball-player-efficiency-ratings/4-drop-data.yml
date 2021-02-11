@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.4-drop-data
+metadata:
+  title: 'Data cleansing part 2 - Drop columns and rows'
+  description: Drop columns and rows depending on the number of null values to create a more accurate dataset.
+  ms.date: 11/11/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Data cleansing part 2 - Drop columns and rows'
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-drop-data.md)]

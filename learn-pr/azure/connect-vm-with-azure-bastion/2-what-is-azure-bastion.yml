@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-vm-with-azure-bastion.what-is-azure-bastion
+title: What is Azure Bastion?
+metadata:
+  title: What is Azure Bastion?
+  description: What is Azure Bastion?
+  ms.date: 11/12/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-azure-bastion.md)]

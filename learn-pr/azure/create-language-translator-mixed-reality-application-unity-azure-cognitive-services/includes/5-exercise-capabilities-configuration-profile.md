@@ -1,4 +1,4 @@
-In Unity, you must enable specific capabilities to use APIs and resources such as a microphone in a mixed-reality experience. Recall that in the example of collaboration tools, there's a need for a microphone to capture speech. The example also needs the internet for using the Azure Cognitive Services Speech service. 
+In Unity, you must enable specific capabilities to use APIs and resources such as a microphone in a mixed reality experience. Recall that in the example of collaboration tools, there's a need for a microphone to capture speech. The example also needs the internet for using the Azure Cognitive Services Speech service. 
 
 Here, you'll configure a Unity project to use the Azure Cognitive Services Speech SDK for speech translation.
 

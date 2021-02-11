@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
+metadata:
+  title: Connect Microsoft services to Azure Sentinel
+  description: "Connect Microsoft services to Azure Sentinel"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Microsoft services to Azure Sentinel
+summary: Learn how to connect Microsoft 365 and Azure service logs to Azure Sentinel.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Connect Microsoft service connectors
+  - Explain how connectors auto-create incidents in Azure Sentinel
+prerequisites: |
+  Basic experience with Azure services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.introduction
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.plan-for-connectors
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-office-365-connector
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-connector
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.connect-azure-active-directory-identity-protection-connector
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.knowledge-check
+- learn.wwl.connect-microsoft-services-to-azure-sentinel.summary-resources
+badge:
+  uid: learn.wwl.connect-microsoft-services-to-azure-sentinel.badge

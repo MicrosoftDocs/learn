@@ -4,7 +4,7 @@ title: Sink dataset into Azure Synapse Analytics using Azure Data Factory
 metadata:
   title: Sink dataset into Azure Synapse Analytics using Azure Data Factory
   description: "Sink dataset into Azure Synapse Analytics using Azure Data Factory"
-  ms.date: 10/16/2020
+  ms.date: 11/10/2020
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.advocates.cv-classify-bird-species
 metadata:
   title: Classify endangered bird species with Custom Vision
   description: Learn how to use Azure Cognitive Services Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
-  ms.date: 04/30/2020
+  ms.date: 01/19/2021
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
@@ -12,11 +12,11 @@ title:  Classify endangered bird species with Custom Vision
 summary: As an ornithologist, you study the behavior, physiology, and conservation of birds and bird habitat. Your work often involves surveying, recording, and reporting on bird activity. You want to build a machine learning model that will identify a bird in an image by species, to help with gathering data. In this module, you use Azure Cognitive Services Custom Vision to create a model to identify species of birds!
 abstract: |
   In this module, you will:
-  - Get an introduction to machine learning.
-  - Learn how to use pretrained machine learning models in Azure Cognitive Services.
-  - Learn how to use the Custom Vision service in Azure.
-  - Build a custom machine learning model.
-  - Deploy the model created by using Custom Vision.
+  - Get an introduction to machine learning
+  - Learn how to use pretrained machine learning models in Azure Cognitive Services
+  - Learn how to use the Custom Vision service in Azure
+  - Build a custom machine learning model
+  - Deploy the model created by using Custom Vision
 prerequisites: |
   - An Azure account
   - A basic understanding of how to create resources on Azure
@@ -36,6 +36,8 @@ units:
   - learn.advocates.cv-classify-bird-species.1-introduction
   - learn.advocates.cv-classify-bird-species.2-machine-learning-process
   - learn.advocates.cv-classify-bird-species.3-build-model
+  - learn.advocates.cv-classify-bird-species.3a-upload-images
+  - learn.advocates.cv-classify-bird-species.3b-train-model
   - learn.advocates.cv-classify-bird-species.4-understand-results-test
   - learn.advocates.cv-classify-bird-species.5-deploy-model
   - learn.advocates.cv-classify-bird-species.6-knowledge-check

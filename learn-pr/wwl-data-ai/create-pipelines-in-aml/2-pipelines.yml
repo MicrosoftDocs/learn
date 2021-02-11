@@ -3,8 +3,8 @@ uid: learn.wwl.create-pipelines-in-aml.pipelines
 title: Introduction to pipelines
 metadata:
   title: Introduction to pipelines
-  description: "Learn how to create and run a multi-step pipeline."
-  ms.date: 09/06/2020
+  description: "Introduction to pipelines"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.9-demand-shaping
+title: "Principle 7: Demand shaping"
+metadata:
+  title: "Principle 7: Demand shaping"
+  description: The seventh principle of sustainable software engineering is to build carbon-aware applications. This unit discusses the difference between carbon aware and carbon efficient applications, and the option of using eco-modes in your application.
+  ms.date: 10/26/2020
+  author: ashussai
+  ms.author: ashussai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-demand-shaping.md)]

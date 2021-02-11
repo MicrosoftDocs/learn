@@ -8,7 +8,7 @@ Here, you'll see how the DEA compares a typical workload between an existing and
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you'll: 
 
 - Decide if DEA is the right tool for your workload testing
 - Install DEA on your client machine

@@ -15,7 +15,7 @@ prerequisites: |
   - Local installation of [.NET Core SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/build-dotnet-applications-csharp.svg
 levels:
 - beginner
 roles:

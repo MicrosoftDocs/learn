@@ -10,4 +10,3 @@ Plan the cloud IP schema well in advance. Each Azure region should get its own e
 
 Make sure to stick with private IP space. Use public IPs only if you own them and are out of private IP space. 
 
-Finally, don't use overly large single virtual networks like a /16, to avoid wasting private IP space.

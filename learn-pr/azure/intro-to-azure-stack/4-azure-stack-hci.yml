@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-stack.4-azure-stack-hci
+metadata:
+  title: What is Azure Stack HCI?
+  description: Describe the basic architecture of Azure Stack HCI, core capabilities of Azure Stack HCI, and the primary use cases of Azure Stack HCI.
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: What is Azure Stack HCI?
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-azure-stack-hci.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following workloads does Azure Stack HCI support?"
+    choices:
+    - content: "Hyper-V VMs running Linux."
+      isCorrect: true
+      explanation: "That's correct. Azure Stack HCI allows you to deploy Windows and Linux-based virtualized and containerized workloads."
+    - content: "Azure Key Vault."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI does not support Azure PaaS services."
+    - content: "Azure virtual machine scale set."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI does not support Azure IaaS services."
+
+  - content: "Which of the following technologies is mandatory in Azure Stack HCI?"
+    choices:
+    - content: "Network Controller"
+      isCorrect: false
+      explanation: "That's incorrect. Software-Defined Networking (SDN)-based virtualized networking using the Network Controller Windows Server role is optional in Azure Stack HCI."
+    - content: "Azure IoT Hub."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI does not depend in any way on Azure IoT Hub."
+    - content: "Storage Spaces Direct."
+      isCorrect: true
+      explanation: "That's correct. Storage Spaces Direct provides virtualized storage in Azure Stack HCI."
