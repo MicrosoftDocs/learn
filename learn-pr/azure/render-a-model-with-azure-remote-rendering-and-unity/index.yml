@@ -38,7 +38,7 @@ units:
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.3-exercise-create-an-azure-remote-rendering-resource
-- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-creating-and-rendering-models
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-managing-a-session-and-rendering-models
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.6-knowledge-check
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.7-summary
