@@ -23,7 +23,7 @@ structopt = "0.3.21"                  # Parse command-line argument by defining 
 ```
 
 Let's add it as a dependency for our project by adding the following entry to the `[dependencies]`
-section of the `Cargo.toml` file:
+section of the Cargo.toml file:
 
 ```toml
 [dependencies]
@@ -123,7 +123,7 @@ descriptions for each aspect of the command-line interface.
 
 ## Test the CLI
 
-It's time to take the program for a test drive. But first, modify the `main.rs` source file to look like
+It's time to take the program for a test drive. But first, modify the main.rs source file to look like
 this:
 
 ```rust
@@ -172,7 +172,7 @@ command-line interface will produce a `CommandLineArgs` value. We can use these 
 invoke the specific behavior that the user wants.
 
 Take a look at how some different uses of the app result in different values for the struct.
-First, modify the `main.rs` file to print the result of `from_args()`. Then try to call the
+First, modify the main.rs file to print the result of `from_args()`. Then try to call the
 program with different arguments.
 
 ```rust
@@ -212,6 +212,6 @@ CommandLineArgs {
 }
 ```
 
-We can now use those values in the `main.rs` file to guide program execution.
+We can now use those values in the main.rs file to guide program execution.
 
 Next, let's look at the `tasks` module file.

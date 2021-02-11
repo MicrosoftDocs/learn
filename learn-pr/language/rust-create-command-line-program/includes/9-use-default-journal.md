@@ -1,12 +1,12 @@
-It is common for some command-line applications to put their user-owned files *(such as dotfiles and config files)* in their home directory, so we might place our default journal file there too.
+It's common for some command-line applications to put their user-owned files, like dotfiles and config files, in their home directories. So we might want to place our default journal file there too.
 
-Since home directories will vary depending on the user's operating system, we will rely on a third-party crate called `home` to infer that directory for us.
+Because home directories vary depending on the user's operating system, we'll rely on a third-party crate called `home` to determine the directory.
 
-Add it to our `Cargo.toml` file:
+First, add it to the Cargo.toml file:
 
 ```toml
 [dependencies]
-home = "0.5" # <--- add `home` to our project dependencies
+home = "0.5" # <--- Add `home` to our project dependencies.
 serde_json = "1.0"
 structopt = "0.3"
 
@@ -19,7 +19,7 @@ features = ["derive"]
 version = "1.0"
 ```
 
-And now we can update our `main.rs` file to use its `home::home_dir()` function, that will look for the user's home directory and return it inside an `Option<PathBuf>` type, just like our `journal_file` field from our `CommandLineArgs` type.
+We can now update the main.rs file to use the `home::home_dir()` function. This function will look for the user's home directory and return it in an `Option<PathBuf>` type, just like the `journal_file` field from our `CommandLineArgs` type:
 
 ```rust
 // ...
@@ -48,14 +48,14 @@ fn main() {
 }
 ```
 
-We created a new function, called `find_default_journal_file` that takes no input arguments and will return an `Option<PathBuf>`.
+We created a new function called `find_default_journal_file`. It takes no input arguments and returns an `Option<PathBuf>`.
 
-Inside that function we try to build the full path to our default journal file, by taking an
+Inside that function, we try to build the full path to our default journal file. We build the path by taking an
 `Option` type from the `home::home_dir` function output and calling its `map` method with an
-anonymous function that pushes the string `".rusty-journal.json"` to the path. If the output of `home::home_dir` is `None`, no action is taken, since `map` will only work with a `Some` variant.
+anonymous function that pushes the string `".rusty-journal.json"` to the path. If the output of `home::home_dir` is `None`, no action is taken, because `map` will work only with a `Some` variant.
 
-Later, inside our `main` function, we *shadow* our `journal_file` variable to only be updated with a call to `find_default_journal_file` if its original value was a `None`. The `.or_else` method does the opposite of the `map` method: it only calls the function it holds if the variant is a `None`.
+Then, in the `main` function, we *shadow* the `journal_file` variable to be updated with a call to `find_default_journal_file` only if its original value was `None`. The `.or_else` method does the opposite of the `map` method: it calls the function it holds only if the variant is `None`.
 
-If neither the user informed a target journal file nor `find_default_journal_file` could find a
-suitable file, we will cause our program to panic, since it's impossible for it to do anything
+If the user hasn't provided a target journal file and `find_default_journal_file` can't find a
+suitable file, we cause the program to panic because it's impossible for it to do anything
 without a journal file.

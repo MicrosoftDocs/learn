@@ -6,17 +6,17 @@ Right now, if we try to read from a journal file that doesn't exist, our program
     thread 'main' panicked at 'Failed to perform action: Os { code: 2, kind: NotFound, message: "No such file or directory" }'
 ```
 
-This error is rather verbose to present to our end users, so we should make it more presentable. We could write lots of code to handle that, but there is an excellent crate for displaying useful and pretty errors to end users, called `anyhow`.
+This error is a little verbose for our users, so we should make it more presentable. We could write lots of code to handle that task, but there's an excellent crate for displaying useful and pretty errors to users. It's called `anyhow`.
 
-The logic behind the `anyhow` crate is that it gives us its own error type, which has
-pretty-printing properties and can easily be converted from another errors, such as
-`std::io::Error`. It is really easy to add `anyhow` to our project, since all we have to do is place it as the return type of our `main` function.
+The logic behind the `anyhow` crate is that it provides its own error type. This type has
+pretty-printing properties and can easily be converted from other errors, like
+`std::io::Error`. It's easy to add `anyhow` to our project. All we have to do is place it as the return type of the `main` function.
 
-But fist, declare it in your `Cargo.toml` file:
+First, declare it in the Cargo.toml file:
 
 ```toml
 [dependencies]
-anyhow = "1.0" # <--- add `anyhow` to our project dependencies
+anyhow = "1.0" # <--- Add `anyhow` to our project dependencies.
 home = "0.5"
 serde_json = "1.0"
 structopt = "0.3"
@@ -30,7 +30,7 @@ features = ["derive"]
 version = "1.0"
 ```
 
-And update the `main` function signature so it returns the type `anyhow::Result<()>`:
+Now update the `main` function signature so it returns the type `anyhow::Result<()>`:
 
 ```rust
 use anyhow::anyhow;
@@ -68,7 +68,7 @@ fn main() -> anyhow::Result<()> {
 }
 ```
 
-Since most error types can be converted to `anyhow::Error`, we can use the `?` syntax to remove all those `expect` calls from our code. Also note that we are using the `anyhow!` macro to produce an `anyhow::Error` on the fly with the provided error message.
+Because most error types can be converted to `anyhow::Error`, we can use `?` syntax to remove the `expect` calls from our code. Also, note that we're using the `anyhow!` macro to produce an `anyhow::Error` on the fly that contains the provided error message.
 
 Now every panic message caused by an IO error being returned from within our program will be
 displayed to our users like this:
@@ -78,4 +78,4 @@ displayed to our users like this:
     Error: No such file or directory (os error 2)
 ```
 
-Which is quite an improvement for a few extra lines of code.
+That's quite an improvement for a few extra lines of code.

@@ -23,7 +23,7 @@ We won't add a `status` or `is_complete` field because we'll represent the to-do
 You might have noticed that we're using a third-party crate, `chrono`. We've specified the `Utc` parameter for its `DateTime` struct. `chrono` is a good crate to use if you need to
 handle date and time data in Rust. It provides an easy API for representing a moment in time.
 
-Because we're using it, we need to declare it in the `Cargo.toml` file:
+Because we're using it, we need to declare it in the Cargo.toml file:
 
 ```toml
 [dependencies]
@@ -71,7 +71,7 @@ To get started with serializing our `Task` type, we'll need two crates:
 - `serde_json`. The crate that will implement those traits into our chosen file specification
 format, JSON.
 
-As always, the first step is to include `serde_json` and `serde` in the `[dependencies]` section of our `Cargo.toml`. This time we're going to use a different notation to specify them because we'll need to conditionally compile some `serde` features. Your file should look like this:
+As always, the first step is to include `serde_json` and `serde` in the `[dependencies]` section of our Cargo.toml file. This time we're going to use a different notation to specify them because we'll need to conditionally compile some `serde` features. Your file should look like this:
 
 ```toml
 [dependencies]

@@ -56,4 +56,4 @@ We then write the `Task` representation to the `Formatter` value `f` by using th
 That concludes our journey into the `tasks.rs` module file. The last step we should take is to bind the user input captured by `cli::CommandLineArgs` with the three functions defined in this
 module.
 
-In the next section, we'll connect those ends in the `main.rs` file and finish our application.
+In the next section, we'll connect those ends in the main.rs file and finish our application.
