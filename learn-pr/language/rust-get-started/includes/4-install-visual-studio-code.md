@@ -21,7 +21,7 @@ Here's how to download the installer from the Visual Studio Code website.
 
 ### Step 1 - Download the installer
 
-Go to the [Visual Studio Code download page](http://code.visualstudio.com/download?azure-portal=true). The webpage displays logos for Windows, Linux, and Mac.
+Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true). The webpage displays logos for Windows, Linux, and Mac.
 
 Download the Windows installer. Most browsers give you the option to save the file to your local computer (usually in your **Downloads** folder), or to immediately run the installer file.
 
@@ -45,7 +45,7 @@ Here's how to download and install Visual Studio Code.
 
 ### Step 1 - Download Visual Studio Code
 
-Go to the [Visual Studio Code download page](http://code.visualstudio.com/download?azure-portal=true).
+Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true).
 
 The webpage displays logos for Windows, Linux, and Mac. Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your **Downloads** folder), or to immediately run the file.
 
@@ -72,7 +72,7 @@ Here's how to download the installer from the Visual Studio Code website. You ca
 
 ### Step 1 - Download the installer
 
-Go to the [Visual Studio Code download page](http://code.visualstudio.com/download?azure-portal=true).
+Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true).
 
 The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, select either the .deb installer (for Debian or Ubuntu distributions) or the .rpm installer (for Red Hat, Fedora, or SUSE distributions).
 
