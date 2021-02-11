@@ -70,7 +70,7 @@ In this unit, we'll show how a Logic App can be used as the external compute tha
     :::image type="content" source= "..\media\update-connector.png" alt-text="Partial screenshot of the Edit Logic Apps Custom Connector page with the Update connector button highlighted.":::
 
 1. In the **Redirect URL** field, copy the value that has been generated.
-    :::image type="content" source= "..\media\logicapp-redirect.png" alt-text="Copy the redirect url.":::
+    :::image type="content" source= "..\media\logic-app-redirect.png" alt-text="Copy the redirect url.":::
 
 1. Close the **Edit Logic Apps Custom Connector** pane.
 
