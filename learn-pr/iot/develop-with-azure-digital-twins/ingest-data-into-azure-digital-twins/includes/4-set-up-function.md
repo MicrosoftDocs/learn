@@ -1,4 +1,4 @@
-You can ingest data into Azure Digital Twins through external compute resources: Virtual Machines, Azure Functions, Logic Apps, etc... In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
+You can ingest data into Azure Digital Twins through external compute resources such as Virtual Machines, Azure Functions, and Logic Apps. In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
 
 Additionally, when choosing what type of external compute to use, remember to factor in the additional cost. Virtual Machines, Functions, and Logic Apps all have different cost models.
 

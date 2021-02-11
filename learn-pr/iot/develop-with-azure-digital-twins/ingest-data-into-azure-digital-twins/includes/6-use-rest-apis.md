@@ -88,7 +88,6 @@ You'll need several important values from the resources set as you continue work
 
 > [!NOTE]
 > Save these values for later use.
->
 
 ### Collect instance values
 

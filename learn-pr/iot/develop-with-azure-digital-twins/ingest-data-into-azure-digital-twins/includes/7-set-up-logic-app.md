@@ -1,7 +1,7 @@
 In this unit, we'll show how a Logic App can be used as the external compute that publishes data into Azure Digital Twins. You'll create a custom Azure Logic Apps connector and use it within a logic app. The logic app will periodically update the **Logic App** property of the GrindingStep digital twin.
 
 > [!Note]
-        > We'll be reusing the client id and client secret that were created for the REST API calls in the previous unit.
+> We'll be reusing the client id and client secret that were created for the REST API calls in the previous unit.
 
 ## Create a custom Logic Apps connector
 
