@@ -42,9 +42,9 @@ pub fn complete_task(journal_path: PathBuf, task_position: usize) -> Result<()> 
 
 Before we start writing this function, we can see that the same code for reading the file that we used in the `add_task` function is required here. It will also be required again when we implement the `list_tasks` function. This need for duplication indicates that we should refactor our code and encapsulate that behavior in a dedicated function. We can then reuse the code in the logic for all of our three actions.
 
-## Refactor `Task` collection
+## Refactor the `Task` collection
 
-We can create a `collect_tasks` function that handles the file parsing:
+We can create a `collect_tasks` function that handles file parsing:
 
 ```rust
 fn collect_tasks(mut file: &File) -> Result<Vec<Task>> {

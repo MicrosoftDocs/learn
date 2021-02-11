@@ -5,7 +5,7 @@ We still need to polish some things, like using a default journal file and prese
 
 ## Complete the main module and run the program
 
-The next thing we should do is connect the `Actions` struct to the three public functions defined in the `tasks` module. Open the main.rs file and make it look like this:
+The next thing we should do is connect the `Actions` struct to the three public functions defined in the `tasks` module. Open the `main.rs` file and make it look like this:
 
 ```rust
 use structopt::StructOpt;
@@ -36,7 +36,7 @@ fn main() {
 
 ```
 
-Our main.rs outline looks really simple.
+Our `main.rs` outline looks really simple.
 
 We start by *destructuring* our `CommandLineArgs` struct into its fields, so we can pass those
 values independently to our task-handling functions.
@@ -72,7 +72,7 @@ We started by calling `cargo run --` to ensure that all the arguments passed aft
 
 Then we added three tasks in a row by using the subcommand `add` followed by a task name string. The `list` subcommand then displayed our three tasks, in order, with their timestamps on the far right. We then called the `done 2` subcommand to mark the second task complete. When we called `list` again, that task was gone. Pretty amazing, don't you think?
 
-If we peek inside the test-journal.json file, we see the following content:
+If we peek inside the `test-journal.json` file, we see the following content:
 
 ```js
 [{"text":"buy milk","created_at":1610134741},{"text":"water the plants","created_at":1610134762}]

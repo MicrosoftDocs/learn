@@ -12,7 +12,7 @@ The logic behind the `anyhow` crate is that it provides its own error type. This
 pretty-printing properties and can easily be converted from other errors, like
 `std::io::Error`. It's easy to add `anyhow` to our project. All we have to do is place it as the return type of the `main` function.
 
-First, declare it in the Cargo.toml file:
+First, declare it in the `Cargo.toml` file:
 
 ```toml
 [dependencies]
@@ -70,8 +70,8 @@ fn main() -> anyhow::Result<()> {
 
 Because most error types can be converted to `anyhow::Error`, we can use `?` syntax to remove the `expect` calls from our code. Also, note that we're using the `anyhow!` macro to produce an `anyhow::Error` on the fly that contains the provided error message.
 
-Now every panic message caused by an IO error being returned from within our program will be
-displayed to our users like this:
+Now every panic message caused by an I/O error being returned from within our program will be
+displayed to users like this:
 
 ```output
     $ cargo run -- -j missing-journal done 2

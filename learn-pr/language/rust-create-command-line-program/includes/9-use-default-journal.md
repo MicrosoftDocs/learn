@@ -2,7 +2,7 @@ It's common for some command-line applications to put their user-owned files, li
 
 Because home directories vary depending on the user's operating system, we'll rely on a third-party crate called `home` to determine the directory.
 
-First, add it to the Cargo.toml file:
+First, add it to the `Cargo.toml` file:
 
 ```toml
 [dependencies]
@@ -19,7 +19,7 @@ features = ["derive"]
 version = "1.0"
 ```
 
-We can now update the main.rs file to use the `home::home_dir()` function. This function will look for the user's home directory and return it in an `Option<PathBuf>` type, just like the `journal_file` field from our `CommandLineArgs` type:
+We can now update the `main.rs` file to use the `home::home_dir()` function. This function will look for the user's home directory and return it in an `Option<PathBuf>` type, just like the `journal_file` field from our `CommandLineArgs` type:
 
 ```rust
 // ...

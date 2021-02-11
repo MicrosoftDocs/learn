@@ -1,4 +1,4 @@
-The `add_task` function needs to append a new `Task` value to a possibly existing collection of tasks encoded in a JSON file.
+The `add_task` function needs to append a new `Task` value to a possibly existing collection of tasks that's encoded in a JSON file.
 
 So, before inserting a task into that collection, we must first read that file and assemble a vector of tasks from its contents.
 
@@ -42,7 +42,7 @@ Let's go over this function in four steps:
 
 First, we open the file by using `OpenOptions`, which allows us to specify some modes for operating on the file, like `read`, `write`, and `create` (for when the file doesn't yet exist).
 
-The question mark symbol (`?`) after that statement is used to propagate errors without writing too much boilerplate code. It's syntax sugar for early returning an error if that error matches with the return type of the function it's in. So both these snippets are equivalent:
+The question mark symbol (`?`) after that statement is used to propagate errors without writing too much boilerplate code. It's syntax sugar for early returning an error if that error matches with the return type of the function it's in. So these snippets are equivalent:
 
 ```rust
 fn function_1() -> Result(Success, Failure) {
@@ -67,7 +67,7 @@ Keep in mind that accessing the file system is an I/O action that can fail for v
 
 To recover from specific kinds of errors, we use `guards` in the `match` expression to build an empty `Vec` when the specific error occurs. The `Vec` represents an empty to-do list.
 
-Note that `serde_json::Error` can be easily converted to the `std::io::Error` type because [it
+Note that `serde_json::Error` can easily be converted to the `std::io::Error` type because [it
 implements the `From` trait](https://docs.serde.rs/serde_json/error/struct.Error.html#impl-From%3CError%3E?azure-portal=true). That makes it possible for us to use the `?` operator to unpack or early return them.
 
 ## Rewind the file after reading from it
