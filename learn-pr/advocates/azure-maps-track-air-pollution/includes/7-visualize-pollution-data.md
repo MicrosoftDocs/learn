@@ -107,7 +107,7 @@ When you have the WAQI API token, add the token key value to the environment var
 
 1.	In the <i>app.py</i> code, find the statement that loads the `MAP_KEY` value. After that statement, add the following statements to load the WAQI API key. The code defines the `WAQI_API_KEY` constant for the API URL:
 
-    ```console
+    ```python
     # Load the World Air Quality Index key from the .env file.
     WAQI_API_KEY = os.environ["WAQI_API_KEY"]
     WAQI_API_URL = https://api.waqi.info/map/bounds/?latlng={},{},{},{}&token={}

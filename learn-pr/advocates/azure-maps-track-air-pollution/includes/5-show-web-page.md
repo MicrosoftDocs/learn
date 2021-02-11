@@ -218,9 +218,7 @@ You can set up Visual Studio Code to run and debug a Flask app. Then, use your b
 
 In Visual Studio Code, be sure that the <i>app.py</i> file is open in the editor. (Debug options vary based on the file you have open.) In the Activity Bar, select the **Run** icon. Under the **Run and Debug** button, select the **create and launch.json file** link. In the selection drop-down, choose the **Flask** link.
 
-:::image type="content" source="../media/second.png" alt-text="Screenshot that shows the steps to take to debug a Flask app, with a border.":::
-
-:::image type="content" source="../media/second.png" border="false" alt-text="Screenshot that shows the steps to take to debug a Flask app, without a border.":::
+:::image type="content" source="../media/run-app-combined.png" alt-text="Screenshot that shows the steps to take to debug a Flask app.":::
 
 > [!NOTE]
 > If you don’t see a new file named *launch.json* in the *.vscode* folder in your application code folder, you can manually create the configuration file.
