@@ -105,10 +105,19 @@ Get the Azure AD tenant ID:
 ```azurecli
 az account show --query 'tenantId'
 ```
+### POSTMAN
+
+[Postman](https://www.getpostman.com/) is a REST testing tool that provides key HTTP request functionalities in a desktop and plugin-based GUI. You can use it to craft HTTP requests and submit them to the Azure Digital Twins REST APIs.
+
+In the steps below, curl commands are provided. These commands can be imported into Postman by using the Import functionality.
+
+Alternatively, install curl for windows or use a bash shell.
+    
+:::image type="content" source= "../media/postman-import.png" alt-text="Import":::
 
 ### Retrieve token
 
-To use the Azure Digital Twins APIs, you'll need to get an authorization token from Azure AD:
+To use the Azure Digital Twins APIs, you'll need to get an authorization token from Azure AD. 
 
 1. Use the following command to issue a POST request to the /oauth/v2.0/token endpoint for your Azure AD tenant:
 
@@ -130,28 +139,31 @@ To use the Azure Digital Twins APIs, you'll need to get an authorization token f
 
 ## Use REST APIs
 
-Run the following command to update the REST API property in the thermostat67 digital twin.
+Run the following command to update the REST API property in the GrindingStep digital twin.
 
 > [!NOTE]
-> Supply the values for *adt_hostname* and *aad_token*.
+> Supply the values for *adt_hostname* and *aad_token*. Modify these values before importing into Postman
 >
 
-```azurecli
-    curl -i --location --request POST 'https://adt_hostname/digitaltwins/GrindingStep/telemetry?api-version=2020-10-31&dt-id=1' \
+    ```azurecli
+    curl --location --request PATCH 'https://adt_hostname/digitaltwins/GrindingStep?api-version=2020-10-31' \
     --header 'Authorization: Bearer aad_token' \
     --header 'Content-Type: application/json' \
-    --header 'Message-Id: 12345' \
-    --data-raw '{
-        "GrindingStep": 63.2
-    }'
-```
+    --data-raw '[
+      {
+        "op": "replace",
+        "path": "/ChasisTemperature",
+        "value": 62.3
+      }
+    ]'
+    ```
 
 ## Query the twin to see the update
 
  To view the data added by the REST API call, run the following command:
 
 > [!NOTE]
-> Supply the values for *adt_hostname* and *aad_token*.
+> Supply the values for *adt_hostname* and *aad_token*. Modify these values before importing into postman.
 >
 
 ```azurecli

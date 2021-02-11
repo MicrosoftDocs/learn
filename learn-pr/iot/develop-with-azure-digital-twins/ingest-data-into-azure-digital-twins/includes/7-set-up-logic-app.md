@@ -70,6 +70,8 @@ In this unit, we'll show how a Logic App can be used as the external compute tha
     :::image type="content" source= "..\media\update-connector.png" alt-text="Partial screenshot of the Edit Logic Apps Custom Connector page with the Update connector button highlighted.":::
 
 1. In the **Redirect URL** field, copy the value that has been generated.
+    :::image type="content" source= "..\media\logicapp-redirect.png" alt-text="Copy the redirect url.":::
+
 1. Close the **Edit Logic Apps Custom Connector** pane.
 
 ## Update the Azure AD app
@@ -96,14 +98,14 @@ az ad app update --id <application ID> --reply-urls http://localhost <redirect U
 1. In the Logic Apps Designer page that follows, change the Internal to 1, so that the event is triggered every 1 minute.
 1. Select **+ New step**. This action opens the **Choose an operation** dialog box.
 1. Switch to the **Custom** tab.
-1. In the top box, you should see your custom connector from earlier. Select it to display the list of APIs contained in that connector. Use the search bar or scroll through the list to select **DigitalTwins_SendTelemetry**.
+1. In the top box, you should see your custom connector from earlier. Select it to display the list of APIs contained in that connector. Use the search bar or scroll through the list to select **DigitalTwins_Update**.
 
    :::image type="content" source= "..\media\custom-action.png" alt-text="Screenshot of the Choose an operation dialog box with the custom connector highlighted.":::
 
-1. In the new **DigitalTwins SendTelemetry** box, fill in the fields as follows:
+1. After selected the choices above you'll be prompted to authenticate and consent
+1. In the new **DigitalTwins Update** box, fill in the fields as follows:
     - **id**: GrindingStep
-    - **telemetry**: The body that the chosen API request requires. For **SendTelemetry**, this body is in JavaScript Object Notation (JSON) format. (See example JSON in the screenshot in the next step.)
-    - **Message-Id**: A unique message identifier (in the scope of the digital twin ID) that is commonly used for deduplicating messages.
+    - **item**: Enter the JSON payload required by the [Digital Twins Update API](https://docs.microsoft.com/en-us/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
     - **api-version**: The latest API version. Currently, this value is 2020-10-31.
 1. Select **Save**.
 

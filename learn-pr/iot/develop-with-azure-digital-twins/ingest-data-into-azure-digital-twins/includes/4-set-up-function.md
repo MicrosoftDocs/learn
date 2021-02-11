@@ -35,7 +35,8 @@ In this section, we'll create a system-managed identity. We'll then assign the f
 1. Use the following command to create the system-managed identity and save the *principalId* to a variable for later use:
 
     ```azurecli	
-    az functionapp identity assign -g $rgname -n $telemetryfunctionname $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
+    az functionapp identity assign -g $rgname -n $telemetryfunctionname 
+    $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
     ```
 
 1. Use the *principalId* value in the following command to assign the function app's identity to the **Azure Digital Twins Data Owner** role for your Azure Digital Twins instance:
@@ -143,7 +144,7 @@ namespace My.Function
 
                     //Update twin by using device temperature.
                     var patch = new Azure.JsonPatchDocument();
-                    patch.AppendReplace<double>("/ChasisTemperature", chasistemperature.value<double>()); 
+                    patch.AppendReplace<double>("/ChasisTemperature", chasistemperature.Value<double>()); 
 
                     await client.UpdateDigitalTwinAsync(deviceId, patch); 
                 }
