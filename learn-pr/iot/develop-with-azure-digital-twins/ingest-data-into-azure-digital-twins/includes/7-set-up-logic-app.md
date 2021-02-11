@@ -105,7 +105,7 @@ az ad app update --id <application ID> --reply-urls http://localhost <redirect U
 1. After selected the choices above you'll be prompted to authenticate and consent
 1. In the new **DigitalTwins Update** box, fill in the fields as follows:
     - **id**: GrindingStep
-    - **item**: Enter the JSON payload required by the [Digital Twins Update API](https://docs.microsoft.com/en-us/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
+    - **item**: Enter the JSON payload required by the [Digital Twins Update API](https://docs.microsoft.com/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
     - **api-version**: The latest API version. Currently, this value is 2020-10-31.
 1. Select **Save**.
 
