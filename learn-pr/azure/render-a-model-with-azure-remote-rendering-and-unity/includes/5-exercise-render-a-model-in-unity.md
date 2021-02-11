@@ -29,7 +29,7 @@ Here, you will configure the Unity project and scene to render the truck engine 
 - Select the Windows Mixed Reality **Enable Depth Buffer Sharing** check box.
 - Set **Stereo Rendering Mode** to **Single Pass Instanced**.
 
-:::image type="content" source="../media/optimize-xr-settings.png" alt-text="    Screenshot of the X R settings. The Virtual Reality S D K section and Stereo Rendering Mode section are highlighted. Depth Format is set to 16-bit depth. The Enable Depth Sharing box is selected. Stereo Rendering Mode is set to Single Pass Instanced.":::
+    :::image type="content" source="../media/optimize-xr-settings.png" alt-text="    Screenshot of the X R settings. The Virtual Reality S D K section and Stereo Rendering Mode section are highlighted. Depth Format is set to 16-bit depth. The Enable Depth Sharing box is selected. Stereo Rendering Mode is set to Single Pass Instanced.":::
 
 ## Configure the RemoteRendering game object
 
