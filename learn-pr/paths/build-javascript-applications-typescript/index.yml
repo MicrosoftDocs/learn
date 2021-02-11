@@ -13,15 +13,15 @@ title: Build JavaScript applications using TypeScript
 summary: TypeScript offers all the features of JavaScript, plus an additional layer on top of these - the TypeScript type system. In this learning path, you’ll learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
 prerequisites: |
   - Familiarity with basic HTML and JavaScript ES6/2015, including:
-  - Conditionals
-  - Functions
-  - Scope
-  - Arrays
-  - Loops
-  - Iterators
-  - Objects
-  - Classes
-  - Modules
+    - Conditionals
+    - Functions
+    - Scope
+    - Arrays
+    - Loops
+    - Iterators
+    - Objects
+    - Classes
+    - Modules
   - Installed software:
     - [Git](https://git-scm.com/?azure-portal=true)
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
