@@ -1,4 +1,4 @@
-In this unit, you'll use the Flask web application framework to create a Python app. Then, you'll use the Azure Maps web SDK with your app to show a map on a webpage.
+In this unit, you'll use the Flask web application framework to create a Python app. You'll also create a webpage that the Azure Maps web SDK can use to display your map app.
 
 ## Build the app
 
@@ -206,7 +206,7 @@ To create the environment file:
     > [!NOTE]
     > Azure Maps uses longitude and latitude for map coordinates. Longitude measures around the Earth from east to west at 0° at the prime meridian (a line from the North Pole to the South Pole that runs through the United Kingdom). It goes east to 180° on the opposite side of the globe, roughly between Alaska and Russia, and west to the same place at -180°. Latitude goes north to south, with the North Pole at 90°, the equator at 0°, and the South Pole at -90°.
 
-    The map control is then loaded into the `div` element. The Azure Maps key is set to `{{ data.map_key }}`. This is the Flask notation to render data in the HTML file. When this page is returned to the user's web browser, the value `{{ data.map_key }}` is replaced by the value of `map_key` set on the `data` object. This object was passed to the `render_template` call in the <i>app.py</i> file, and `map_key` is set to the Azure Maps primary key that loads from the *.env* file.
+    The map control is then loaded into the `div` element. The Azure Maps key is set to `{{ data.map_key }}`, the Flask notation to render data in the HTML file. When this page is returned to the user's web browser, the value `{{ data.map_key }}` is replaced by the value of `map_key` set on the `data` object. This object was passed to the `render_template` call in the <i>app.py</i> file, and `map_key` is set to the Azure Maps primary key that loads from the *.env* file.
 
     When the control is ready, the map view is centered over the user's location by using a virtual camera. The zoom value shows how far above Earth the camera should be, and it determines how many meters of the map are shown per pixel on the screen. You can read more about the different zoom values in [Zoom levels and tile grid](/azure/azure-maps/zoom-levels-and-tile-grid?azure-portal=true).
 

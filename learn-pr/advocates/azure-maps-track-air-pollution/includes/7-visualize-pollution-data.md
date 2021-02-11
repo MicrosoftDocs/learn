@@ -255,5 +255,4 @@ You should see colored circles (bubbles) on the map that show the WAQI data:
 
 Move around the map and you'll see the bubbles update to match the area you're viewing.
 
-Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some reasons are obvious, like in areas with large numbers of fossil fuel-burning power stations or factories. Others are not so obvious. Find ones near you and think about what might cause the pollution.
-
+Have a look at the different colors to see the areas of bad or hazardous air quality. Think about why the air quality is so poor in these areas. Some reasons are obvious, like in areas with large numbers of fossil fuel-burning power stations or factories. Others aren't so obvious. Find ones near you and think about what might cause the pollution.

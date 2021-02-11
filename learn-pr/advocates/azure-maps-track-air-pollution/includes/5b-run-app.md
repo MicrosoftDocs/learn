@@ -1,4 +1,4 @@
-In this unit, you'll run the app and view it on the webpage you created. Then, take a look at troubleshooting common experiences.
+In this unit, you'll run the app and view it on the webpage you created. Then, take a look at how to troubleshoot common experiences.
 
 ## Run the app
 

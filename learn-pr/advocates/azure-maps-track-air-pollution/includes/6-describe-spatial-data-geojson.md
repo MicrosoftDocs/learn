@@ -1,7 +1,7 @@
 GeoJSON is an internet-standard geospatial data format that's based on JavaScript Object Notation (JSON). To add layers to a map control, you need to define a data source that contains GeoJSON data. The map control uses the data to create overlays based on locations. For example, you'd use a GeoJSON data source to define the placement of features in a bubble layer on a map.
 
 > [!NOTE]
-> GeoJSON is defined as a standard in Internet Engineering Task Force (IETF)) [RFC 7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
+> GeoJSON is defined as a standard in Internet Engineering Task Force (IETF) [RFC 7946](https://tools.ietf.org/html/rfc7946?azure-portal=true).
 
 ## GeoJSON objects
 
