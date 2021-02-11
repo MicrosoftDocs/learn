@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - A Windows, Mac, or Linux computer
   - Knowledge of how to download programs from the internet
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/rust-get-started.svg 
 levels:
 - beginner
 roles:
