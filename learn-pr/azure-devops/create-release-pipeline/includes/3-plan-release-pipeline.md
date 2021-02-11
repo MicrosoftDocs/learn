@@ -204,7 +204,7 @@ Andy and Mara are ready to begin. They're going to:
 * Define a build stage that creates the artifact.
 * Define a deployment stage that deploys the artifact to App Service.
 
-![A hand-drawn illustration of a deployment pipeline that contains two stages](../media/3-whiteboard-4.png)
+![A hand-drawn illustration of a deployment pipeline that contains two stages. The deployment stage deploys the artifact to App Service.](../media/3-whiteboard-4.png)
 
 **Andy:** Is this drawing correct? We use ![Callout 1](../../shared/media/callout-01.png) Azure Pipelines to deploy to ![Callout 2](../../shared/media/callout-02.png) App Service. To do that, we take the ![Callout 3](../../shared/media/callout-03.png) build artifact as the input to the ![Callout 4](../../shared/media/callout-04.png) deployment stage. The tasks in the deployment stage ![Callout 5](../../shared/media/callout-05.png) download the artifact and use a service connection to ![Callout 6](../../shared/media/callout-06.png) deploy the artifact to App Service.
 
