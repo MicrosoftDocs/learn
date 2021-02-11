@@ -25,11 +25,11 @@ quiz:
       - content: "DELETE"
         isCorrect: false
         explanation: "The DELETE verb is intended for use when removing a product."
-    - content: "Suppose you have successfully created a product via the POST verb. The response contains a `Location` header. What's the purpose of that `Location` header?"
+    - content: "Suppose you have successfully created a product via the POST verb. The response contains a `location` header. What's the purpose of that `location` header?"
       choices:
       - content: "To identify the location of the new resource that was created by the request."
         isCorrect: true
-        explanation: "The `Location` response header contains the URL to the newly created product. It typically resolves to a `GetById` type of action method."
+        explanation: "The `location` response header contains the URL to the newly created product. It typically resolves to a `GetById` type of action method."
       - content: "To provide the client with a URL for the POST action."
         isCorrect: false
         explanation: "The client already used POST to create the product. This header is found in the response to that action."

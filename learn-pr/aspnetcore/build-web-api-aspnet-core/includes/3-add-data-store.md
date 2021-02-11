@@ -114,7 +114,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
     ```csharp
-    using Contoso.Api.Models;
+    using ContosoPets.Api.Models;
     using System.Linq;
 
     namespace ContosoPets.Api.Data
