@@ -5,7 +5,7 @@ It's time to test the CRUD actions that were added to the web API. A quality ass
 Run the following command:
 
 ```bash
-. <(wget -q -O - https://aka.ms/build-web-api-aspnet-core-test)
+. <(wget -q -O - https://aka.ms/create-web-api-aspnet-core-test)
 ```
 
 The command downloads and runs a script that sends seven sequential requests to the web API. See the Cloud Shell for the individual `curl` commands that were sent.
