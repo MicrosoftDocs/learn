@@ -16,38 +16,38 @@ quiz:
     choices:
     - content: "plan"
       isCorrect: false
-      explanation: "The plan command is used to create an execution plan."
+      explanation: "Incorrect. The plan command is used to create an execution plan."
     - content: "apply"
       isCorrect: false
-      explanation: "The apply command is used to apply the changes required to reach the wanted state."
+      explanation: "Incorrect. The apply command is used to apply the changes required to reach the wanted state."
     - content: "destroy"
       isCorrect: false
-      explanation: "The destroy command is used to destroy the Terraform-managed infrastructure."
-    - content: "None of the Above"
+      explanation: "Incorrect. The destroy command is used to destroy the Terraform-managed infrastructure."
+    - content: "None of the above"
       isCorrect: true
-      explanation: "The init command is used to initialize a working directory containing Terraform configuration files."      
-  - content: 'What is the recommended way to restrict access to Azure resources?'
+      explanation: "The init command is used to initialize a working directory that contains Terraform configuration files."      
+  - content: "What is the recommended way to restrict access to Azure resources?"
     choices:
-    - content: Service Principal
+    - content: "Use an Azure service principal."
       isCorrect: true
       explanation: "An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
-    - content: GitHub Secrets
+    - content: "Use GitHub secrets."
       isCorrect: false
-      explanation: Secrets are encrypted environment variables that you create in a repository or organization
-    - content: Plain Text Passwords
+      explanation: "Incorrect. Secrets are encrypted environment variables that you create in a repository or organization."
+    - content: "Use a plain text password."
       isCorrect: false
-      explanation: "A Password is an insecure mechanism."
+      explanation: "Incorrect. A password is an insecure mechanism."
   - content: "Which of the following options are benefits of automating infrastructure?"
     choices:
     - content: "Lowers the potential for human errors while deploying and managing infrastructure."
       isCorrect: false
-      explanation: Automation does lower the potential for human error, but that's not the only benefit.
+      explanation: "Automation does lower the potential for human error, but that's not the only benefit."
     - content: "Deploys the same template multiple times to create identical development, test, and production environments."
       isCorrect: false
-      explanation: Automation does help establish consistency between environments, but that's not the only benefit.
-    - content: "Reduces the cost of development and test environments by creating them on-demand."
+      explanation: "Automation does help establish consistency between environments, but that's not the only benefit."
+    - content: "Reduces the cost of development and test environments by creating them on demand."
       isCorrect: false
-      explanation:  Automation does reduce costs by increasing velocity and flexibility, but that's not the only benefit.
-    - content: All of the Above
+      explanation:  "Automation does reduce costs by increasing velocity and flexibility, but that's not the only benefit."
+    - content: "All of the above"
       isCorrect: true
-      explanation: Automation is an effective way of reducing errors, establishing consistency, and increasing speed and flexibility of development.
+      explanation: "Automation is an effective way of reducing errors, establishing consistency, and increasing speed and flexibility of development."
