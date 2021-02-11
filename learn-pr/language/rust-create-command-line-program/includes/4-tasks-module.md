@@ -61,7 +61,7 @@ According to [OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Deserializat
 
 - **Deserialization** is the reverse of that process, taking data structured from some format, and rebuilding it into an object. Today, the most popular data format for serializing data is JSON. Before that, it was XML.
 
-In short, that means you can store data in a stream of bytes and then retrieve it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device.
+In short, that means you can store data in a stream of bytes and then retrieve it for later use, without any loss of information. You can then send those bytes over a connection or store them in a file in a storage device. You can learn more about [serialization and deserlization from this OWASP cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html?azure-portal=true)
 
 The Rust community recommends the `serde` crate for handling most serialization and deserialization of Rust data structures efficiently and generically, ours included. By using this preexisting crate, we can be even more productive and idiomatic.
 

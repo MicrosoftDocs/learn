@@ -121,7 +121,7 @@ In the final version of the `cli.rs` file, we used `#[derive(StructOpt)]` and se
 `CommandLineArgs` struct. The documentation strings (`///`) are used to provide
 descriptions for each aspect of the command-line interface.
 
-## Test the CLI
+## Run the CLI program
 
 It's time to take the program for a test drive. But first, modify the `main.rs` source file to look like
 this:
