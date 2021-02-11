@@ -8,7 +8,7 @@ The following diagram shows the high-level steps for ordering a device from the 
 
 ![Diagram that shows the high-level Azure Data Box workflow](../media/3-import-azure-data-box-process.png)
 
-For clarity, let's break these workflow stages out into discrete steps:
+For clarity, let's break out these workflow stages into discrete steps:
 
 1. Create an order in the Azure portal or by using Azure CLI or PowerShell.
 1. Receive the device from the Azure datacenter. Connect to and unlock the device.
@@ -70,3 +70,15 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
 ## Clone a Data Box order
 
 Because you'll need to periodically ship telemetry data from the autonomous vehicles, you'll need an easy way to repeat the process described here. The best way is to clone the previous Azure Data Box Disk order in the portal. When you select **Clone** within an order, all the details of the previous order remain the same, and the name becomes the original order name but appended with **-Clone**.
+
+## Export data by using Data Box
+
+You can export data from Azure by using Data Box. Data Box Disk and Data Box Heavy don't support exporting data from Azure.
+
+Though we won't need to export data from Azure for our scenario, you should be aware of the workflow. The steps to order and use Data Box to export data is similar to the import workflow. At a high level, the workflow typically includes the following steps:
+
+1. Create an order in the Azure portal.
+1. Receive the device from the Azure datacenter. Connect to and unlock the device. The device will have data that the Azure datacenter copied from your Azure storage account.
+1. Copy data from the device.
+1. Return the device to Azure. The Azure datacenter securely erases the device disks as per the National Institute of Standards and Technology (NIST) guidelines.
+

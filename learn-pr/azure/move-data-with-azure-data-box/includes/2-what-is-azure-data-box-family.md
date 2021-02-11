@@ -44,3 +44,20 @@ Data Box and Data Box Heavy have the following security protections:
 - Once the data from your import order is uploaded to Azure, the disks on the device are wiped clean in accordance with NIST 800-88r1 standards. 
 
 For Data Box export orders, the disks are erased after the device reaches the Azure datacenter.
+
+## Track and audit your orders
+
+At each step in the ordering process, you can take actions to control the access to the order, audit the events, track the order, and interpret the various logs that are generated.
+
+
+The following table shows a summary of the Data Box or Data Box Heavy import order steps and the tools available to track and audit the order during each step.
+
+| Data Box import order stage       | Tool to track and audit                                                                        |
+|----------------------------|------------------------------------------------------------------------------------------------|
+| Create order               | Set up access control on the order by using Azure role-based access control (Azure RBAC)                                                   |
+| Order processed            | Track the order through <ul><li> Azure portal </li><li> Shipping carrier website </li><li>Email notifications</ul> |
+| Set up device              | View Activity logs to see device credentials access                                             |
+| Data copy to device        | View *error.xml* files for data copy                                                           |
+| Prepare to ship            | Inspect the BOM files or the manifest files on the device                                      |
+| Data upload to Azure       | Review copy logs for errors during data upload at Azure datacenter                      |
+| Data erasure from device   | View chain of custody logs including audit logs and order history|

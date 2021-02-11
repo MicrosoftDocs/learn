@@ -17,15 +17,19 @@ Here are the various scenarios where Data Box devices can be used to import data
 
 - **Periodic uploads** - when large amount of data is generated periodically and needs to be moved to Azure. For example in energy exploration, where video content is generated on oil rigs and windmill farms. 
 
-Here are the various scenarios where Data Box can be used to export data from Azure.
+Here are the various scenarios where Data Box can be used to export data from Azure. Data Box Disk and Data Box Heavy don't support exporting data from Azure.
 
 - **Disaster recovery** - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
 
-- **Security requirements** - when you need to be able to export data out fo Azure due to government or security requirements. For example, Azure Storage is available in US Secret and Top Secret clouds, and you can use Data Box to export data out of Azure. 
+- **Security requirements** - when you need to be able to export data out of Azure due to government or security requirements. For example, Azure Storage is available in US Secret and Top Secret clouds, and you can use Data Box to export data out of Azure.
 
 - **Migrate back to on-premises or to another cloud service provider** - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
 
 ## Offline transfer options 
+
+The offline options to move your data to Azure include Data Box devices and Azure Import/Export.
+
+### Data Box devices
 
 To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, three Data Box products work this way:
 
@@ -43,9 +47,11 @@ The setup procedure to import data using Azure Import/Export is more difficult t
 
 ## Network transfer options
 
-Another general method to get data into Azure is to send it across the internet. As you saw in unit 2, Data Box Gateway works this way.
+Another way to get data into Azure is to send it across the internet. There are several tools you can use to transfer data across the network.
 
-There are several other tools you can use to transfer data across the network.
+### Data Box Gateway
+
+As discussed in unit 2, Data Box Gateway is a virtual appliance. It's based on a virtual machine that you provision in your on-premises environment. You write data to the virtual device by using the NFS and SMB protocols. The device then transfers your data to Azure block blob, page blob, or Azure Files.
 
 ### Azure Storage Explorer
 
