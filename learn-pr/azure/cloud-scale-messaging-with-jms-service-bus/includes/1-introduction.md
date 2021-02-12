@@ -11,4 +11,3 @@ In this module, you will:
    * Learn about Java Message Service (JMS) 2.0 and how to use it to interact with Azure Service Bus.
    * Write a Spring Boot application to send messages to Azure Service Bus.
    * Write a Spring Boot application to receive messages from Azure Service Bus.
-   * 
