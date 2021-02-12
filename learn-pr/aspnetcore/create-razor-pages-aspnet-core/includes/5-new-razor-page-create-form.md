@@ -108,7 +108,7 @@ The Partial Tag Helper's `name` attribute accepts the partial view name without 
 
 This Tag Helper syntax is an alternative to the following HTML Helper syntax:
 
-```cstml
+```cshtml
 @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 ```
 
