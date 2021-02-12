@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-iot-edge-kubernetes
 metadata:
-  title: "Deploy IoT Edge on Kubernetes"
-  description: "University of Oxford"
-  ms.date: 02/02/2021
+  title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
+  description: "This is a computer vision solution using Azure IoT Edge"
+  ms.date: 02/12/2021
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial

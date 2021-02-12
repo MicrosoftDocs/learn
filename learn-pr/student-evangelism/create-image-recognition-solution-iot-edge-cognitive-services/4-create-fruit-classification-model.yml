@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services
+uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.create-fruit-classification-model
 title: Create the fruit classification model
 metadata:
   title: Create the fruit classification model
   description: In this section, we help the learner to how to create a classification model.
-  ms.date: 02/09/21
+  ms.date: 02/12/21
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
