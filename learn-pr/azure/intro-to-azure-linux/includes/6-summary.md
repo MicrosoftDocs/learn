@@ -8,7 +8,7 @@ Regardless of your choice, Azure provides many services, features, and tools you
 
 ## Additional reading
 
-The [Azure Fundamentals learning path](https://docs.microsoft.com/learn/paths/azure-fundamentals/) on Microsoft Learn provides a comprehensive overview of cloud concepts and Azure services.
+[Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) provides a comprehensive overview of cloud concepts and Azure services.
 
 ### Linux on Azure
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.2-install-go
+metadata:
+  title: Exercise - Install Go
+  description: Install Go on your operating system.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: os
+title: Exercise - Install Go
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-install-go.md)]

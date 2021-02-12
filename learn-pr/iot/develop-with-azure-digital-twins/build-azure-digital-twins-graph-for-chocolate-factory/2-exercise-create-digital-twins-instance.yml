@@ -8,7 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 ###  zone_pivot_groups: vs-vscode-language
-title: Create an Azure Digital Twins instance
+title: Create an instance of Azure Digital Twins
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-create-digital-twins-instance.md)]
