@@ -1,4 +1,4 @@
-Remote rendering requires a 3D model and a session which manages the tasks involved for interacting with the cloud server. In the truck engine design example, a session would be created to enable viewing the engine model and query information about the scene. Here, you'll learn how to manage a session, convert models, and load models for rendering.
+Remote rendering requires a session which manages the tasks involved for interacting with the cloud server. In the truck engine design example, a session would be created to enable viewing the engine model and query information about the scene. Here, you'll learn how to manage a session.
 
 ## Create a session
 
@@ -21,26 +21,3 @@ You can create, observe, and shut down as many sessions as you like from a singl
 The session can be stopped either manually or when the maximum lease time expires. To manually stop a session, ``RenderingSession.StopAsync`` must be called. The session may also be stopped because of some failure. In any case, once the session stops, you're no longer billed for the service. Furthermore, when a session stops, all previous state (loaded models and such) is discarded.
 
 However, after a session stops the persistent **sessionID** can be queried via ``RenderingSession.SessionUuid()`` and cached locally. With this ID, an application can call ``RemoteRenderingClient.OpenRenderingSessionAsync`` to bind to that session. When ``RenderingSession.IsConnected`` is ``true``, ``RenderingSession.Connection`` returns an instance of ``RenderingConnection``, which contains the functions to load models, manipulate entities, and query information about the rendered scene.
-
-## Models
-
-A model in Azure Remote Rendering refers to a full object representation, made up of entities and components. Models are the main way to get custom data into the remote rendering service. The renderer on the server requires the model to be in a proprietary format.  Creating models for runtime is achieved by converting input models from file formats such as FBX and GLTF. The conversion process extracts all the resources, such as textures, materials and meshes, and converts them to optimized runtime formats. It will also extract the structural information and convert that into Azure Remote Rendering's entity/component graph structure. 
-
-Conversion is achieved in one of three ways:
-
-- The Azure Remote Rendering Tool (ARRT)
-- A PowerShell Script
-- API calls
-
-An Azure Blob storage resource is required for conversion. Models are consumed from Azure Blob Storage and the service writes converted models back to a provided Azure Blob Storage container.
-
-Once a model is converted, it can be loaded from Azure Blob Storage into the runtime. You can load models with one of two functions:
-- ``LoadModelAsync`` with parameter ``LoadModelOptions``
-- ``LoadModelFromSasAsync`` with the parameter ``LoadModelFromSaSOptions``
-
-``LoadModelAsync`` addresses the model by blog storage parameters directly, in case the blog storage account is linked. ``LoadModelFromSasAsync`` enables you to address the model by its SaS URI. This variant is used when loading built-in models. Alternately, you can load a model using a SaS token.
-
-Loading the same model multiple times creates multiple instances, each with their own copy of the entity/component structure. Since meshes, materials, and textures are shared resources, their data won't be loaded again. So instantiating a model more than once incurs relatively little memory overhead.
-
-> [!TIP]
-> The Khronos Group maintains a set of glTF sample models for testing. ARR supports the glTF format both in text (.gltf) and in binary (.glb) form. We suggest using the PBR models for best visual results. To learn more, refer to the repository available in the module Resources.
