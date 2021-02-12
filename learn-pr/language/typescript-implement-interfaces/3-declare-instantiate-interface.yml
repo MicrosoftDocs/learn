@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-implement-interfaces.3-declare-instantiate-interface
+title: Exercise - Declare and instantiate an interface in TypeScript
+metadata:
+  title: Exercise - Declare and instantiate an interface in TypeScript
+  description: Learn how to declare an interface and implement an interface in a function.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-declare-instantiate-interface.md)]
