@@ -14,9 +14,5 @@ The reduced model consists of approximately 200,000 triangles (including the det
 
 Some models are too complex to render at interactive frame rates, even for a high-end GPU. In this case, Azure Remote Rendering can distribute the workload to multiple GPUs. The results are merged into a single image, making the process entirely transparent to the user.
 
-## Hybrid rendering
-
-Most likely, your application requires some variation of custom UI to provide functionality to users. Azure Remote Rendering supports **Hybrid Rendering** which combines locally rendered content with the remote image at the end of a frame. The flexibility to use your preferred UI enables you to create suitable UI for your application without limiting yourself to a dedicated UI framework.
-
 > [!NOTE]
 > To learn more about pricing, refer to Remote Rendering Pricing available in the resources of this module.
