@@ -1,8 +1,8 @@
 If you've studied earlier modules in the [Quantum computing foundations](/learn/paths/quantum-computing-fundamentals/?azure-portal=true) learning path, you're already familiar with the fundamentals of quantum computing and how quantum algorithms can solve some of the problems you and your crew have encountered on the spaceship.
 
-Throughout this learning path, your crew has been working aboard a spaceship. One of your missions is an asteroid mining expedition. 
+In this learning path, one mission of your spaceship crew is an asteroid mining expedition. 
 
-In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). It refers to a class of algorithms that are applied to solve optimization problems on traditional hardware. 
+In this module, you'll learn about a *classical* computing method called quantum-inspired optimization (QIO). QIO refers to a class of algorithms that are applied to solve optimization problems on traditional hardware. 
 
 To illustrate the QIO method, let's look at how the crew's logistics division efficiently loads cargo vessels.
 
@@ -10,7 +10,7 @@ To illustrate the QIO method, let's look at how the crew's logistics division ef
 
 Your spaceship is transporting a rare mineral you've mined from a recently discovered asteroid. However, two competing galactic federations have laid claim to the asteroid. To avoid a political crisis, the crew is tasked with delivering the mineral supply to the two federations in approximately equal amounts. 
 
-To complicate the problem, the mineral supply has been mined in massive chunks of varying sizes, so it's not easy to divide them equally. 
+To complicate the problem, the mineral supply has been extracted in massive chunks of varying sizes, so it's not easy to divide them equally. 
 
 How can you optimize the distribution of the mineral and avert an intergalactic crisis?
 
