@@ -15,9 +15,9 @@ Azure Quantum uses the quantum extension for the Azure CLI to enable submitting 
    az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
    ```
 
-## Create a quantum workspace
+## Create a workspace
 
-First, you need to create a Quantum workspace in your Azure subscription and select the providers you want to use, if you haven't already. Follow these steps:
+First, you need to create an Azure Quantum workspace in your Azure subscription and select the providers you want to use, if you haven't already. Follow these steps:
 
 1. Open the [Azure portal](https://ms.portal.azure.com/?azure-portal=true), and sign in to your account.
 
@@ -25,14 +25,14 @@ First, you need to create a Quantum workspace in your Azure subscription and sel
 
    :::image type="content" source="../media/3-azure-quantum-preview-search.png" alt-text="Tile for the Azure Quantum preview service." border="false":::
 
-1. Select **Azure Quantum**, and then select **Create**. A form opens where you can create a Quantum workspace.
+1. Select **Azure Quantum**, and then select **Create**. A form opens where you can create a workspace.
 
    :::image type="content" source="../media/3-azure-quantum-preview-create.png" alt-text="Screenshot showing option to create resource for the Azure Quantum preview service." border="false":::
 
 1. Fill out the details of your workspace:
    - **Subscription**: The subscription that you want to associate with this workspace.
    - **Resource group**: The resource group that you want to assign this workspace to.
-   - **Name**: The name of your Quantum workspace.
+   - **Name**: The name of your workspace.
    - **Region**: The region for the workspace.
    - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
 
@@ -45,7 +45,7 @@ First, you need to create a Quantum workspace in your Azure subscription and sel
 
 1. Add at least the IonQ provider, and then select **Review + create**.
 
-1. Review the settings and approve the *Terms and Conditions of Use* of the selected providers. If everything is correct, select **Create** to create your Quantum workspace.
+1. Review the settings and approve the *Terms and Conditions of Use* of the selected providers. If everything is correct, select **Create** to create your workspace.
 
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the workspace." border="false":::
 
@@ -65,7 +65,7 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. You should see two files: the project file and *Program.qs*, which contains starter code.
 
-1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code
+1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code:
 
     ```xml
     <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
@@ -76,7 +76,7 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
     </Project>
     ```
 
-   with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
+   The `yy.yy.yyyyyyyy` part is the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
 
 1. Replace the contents of *Program.qs* with the program:
 
@@ -103,7 +103,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
 
    ```
 
-1. In your quantum workspace, there are different targets available from the providers that you added when you created the workspace. You can display a list of all the available targets with the command `az quantum target list -o table`:
+1. In your Azure Quantum workspace, there are different targets available from the providers that you added when you created the workspace. You can display a list of all the available targets with the command `az quantum target list -o table`:
 
    ```azurecli
    az quantum target list -o table
