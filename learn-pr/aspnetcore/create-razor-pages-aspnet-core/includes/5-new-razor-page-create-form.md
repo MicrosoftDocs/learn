@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* p
 
 ## Create a page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET CLI command in the command shell:
+The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET Core CLI command in the command shell:
 
 ```dotnetcli
 dotnet new page --name Create \
