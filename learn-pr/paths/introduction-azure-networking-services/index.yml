@@ -14,7 +14,7 @@ prerequisites: |
   - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
   - Beginner-level knowledge of cloud computing, including scalability and availability. 
 summary: |
-  To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+  Decide what Azure networking services are right for you with this introduction to key Azure networking services.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner

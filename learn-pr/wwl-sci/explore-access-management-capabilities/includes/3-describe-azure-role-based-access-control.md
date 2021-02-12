@@ -10,9 +10,9 @@ A few of the most common built-in roles are:
 
 There are many built-in roles for different areas of responsibility.  All built-in roles are preconfigured bundles of permissions designed for specific tasks.
 
-## Custom roles (preview)
+## Custom roles
 
-Although there are many built-in admin roles in Azure AD, custom roles give flexibility when granting access. This feature is currently in preview, with the first release including the ability to create a role to assign permissions for app registrations.
+Although there are many built-in admin roles in Azure AD, custom roles give flexibility when granting access. 
 
 Granting permission using custom Azure AD roles is a two-step process that involves creating a custom role definition, consisting of a collection of permissions that you add from a preset list. These permissions are the same ones used in the built-in roles.  When you’ve created your role definition, you can assign it to a user by creating a role assignment. 
 

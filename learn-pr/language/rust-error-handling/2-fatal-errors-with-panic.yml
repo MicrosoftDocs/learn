@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-error-handling.2-fatal-errors-with-panic
+metadata:
+  title: Learn about fatal errors with panic!
+  description: Understand how the the simplest error handling mechanism works in Rust.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about fatal errors with panic!
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-fatal-errors-with-panic.md)]

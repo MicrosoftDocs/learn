@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-error-handling.6-exercise-use-result-type
+metadata:
+  title: Exercise - Use the Result type to handle errors
+  description: Use what you've learned about the Result type to handle errors that result in reading files from a computer.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use the Result type to handle errors
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-use-result-type.md)]
