@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-install-edge-runtime-linux
+title: Exercise - Install Edge runtime for Linux
+metadata:
+  title: Exercise - Install Edge runtime for Linux
+  description: In this section, we help the learner to how to install edge runtime on Linux computer.
+  ms.date: 02/12/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/3-exercise-install-edge-runtime-linux.md)]
