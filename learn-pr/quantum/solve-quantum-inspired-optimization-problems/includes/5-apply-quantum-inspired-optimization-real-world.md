@@ -152,7 +152,7 @@ mineralWeights = [1, 5, 9, 21, 35, 5, 3, 5, 10, 11]
 problem = createProblemForMineralWeights(mineralWeights)
 ```
 
-### Submit to Azure Quantum
+### Submit the problem to Azure Quantum
 
 You're now ready to submit your problem to Azure Quantum by using the following `ParallelTempering` solver:
 
