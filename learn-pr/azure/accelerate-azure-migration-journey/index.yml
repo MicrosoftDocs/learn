@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.accelerate-migration-journey
+metadata:
+  title: Accelerate your migration journey to Azure
+  description: There are many reasons for moving to Azure and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides a guidance, tools and programs you can use to ensure success. 
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Accelerate your migration journey to Azure
+summary: Migrating to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand and focus on more important tasks. There are many reasons for moving to Azure and a proven, methodical approach can help you navigate that journey successfully. Microsoft provides a guidance, tools and programs you can use to ensure success. 
+abstract: |
+  In this module, you will:
+  - List the drivers and benefits of moving to Azure 
+  - Describe the phases of a cloud migration journey and common migration projects 
+  - List the Azure migration tools and programs that enable successful migrations 
+prerequisites: |
+  - General understanding of Cloud platforms 
+  - Understanding of your organization’s migration plan and the types of workloads you will need to migrate 
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+- azure-migrate
+units:
+- learn.azure.accelerate-migration-journey.1-introduction
+- learn.azure.accelerate-migration-journey.2-azure-benefits
+- learn.azure.accelerate-migration-journey.3-azure-migration-drivers
+- learn.azure.accelerate-migration-journey.4-cloud-journey-phases
+- learn.azure.accelerate-migration-journey.5-common-migration-projects
+- learn.azure.accelerate-migration-journey.6-azure-migration-tools
+- learn.azure.accelerate-migration-journey.7-azure-migration-programs
+- learn.azure.accelerate-migration-journey.8-summary
+badge:
+  uid: learn.azure.accelerate-migration-journey.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.2-azure-benefits
+title: Benefits of moving to Azure
+metadata:
+  title: Benefits of moving to Azure
+  description: The primary benefits of moving to Azure. 
+  ms.date: 02/12/2021
+  author: Bjamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-benefits.md)]
+  

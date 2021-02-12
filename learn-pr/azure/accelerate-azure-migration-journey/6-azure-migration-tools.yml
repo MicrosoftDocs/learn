@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.6-azure-migration-tools
+title: Azure migration tools
+metadata:
+  title: Azure migration tools
+  description: This unit examines tools provided by Microsoft to enable successful migration to Azure. 
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-azure-migration-tools.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.

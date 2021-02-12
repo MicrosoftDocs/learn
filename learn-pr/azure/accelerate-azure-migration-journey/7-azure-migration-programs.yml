@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.7-azure-migration-programs
+title: Azure Migration Programs 
+metadata:
+  title: Azure Migration Programs 
+  description: This unit examines the programs provided by Microsoft to provide expert help for successful migrations to Azure. 
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-azure-migration-programs.md)]

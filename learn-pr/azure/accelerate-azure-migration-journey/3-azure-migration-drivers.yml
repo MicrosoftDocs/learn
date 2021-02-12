@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.3-azure-migration-drivers
+title: Azure migration drivers
+metadata:
+  title: Azure migration drivers
+  description: Understand the primary drivers for an Azure migration.
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-migration-drivers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.
+  - content: TBD?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: explain.
+    - content: B.
+      isCorrect: True
+      explanation: explain.
+    - content: C.
+      isCorrect: false
+      explanation: explain.
