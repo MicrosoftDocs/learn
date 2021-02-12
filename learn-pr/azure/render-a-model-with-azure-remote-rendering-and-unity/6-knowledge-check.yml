@@ -28,7 +28,7 @@
           explanation: "Decimation reduces the quality of a model. Therefore, when the model is rendered, it isn't rendered with full detail."
     - content: "How long does a sessionID persist?"
       choices:
-        - content: "	The sessionID persists for 24 hours."
+        - content: "The sessionID persists for 24 hours."
           isCorrect: false
           explanation: "The sessionID persists for longer than 24 hours."
         - content: "The sessionID persists for 30 days."
