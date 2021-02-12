@@ -437,7 +437,7 @@ We'll use a simple console application so we can focus on the Redis implementati
 1. Our app is going to use the following npm packages:
 
     - **redis**: The most commonly used JavaScript package for connecting to redis.
-    - **bluebird**: Used to convert the callback-style methods in the `redis` package to awaitable Promises.
+    - **bluebird**: Used to convert the callback-style methods in the `redis` package to a waitable Promise.
     - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
 
     Let's install them now. Run this command to add them to our app.
@@ -489,7 +489,7 @@ Now it's time to write the code for our application.
     var redis = require("redis");
    ```
 
-1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to awaitable Promises. Paste in the following code.
+1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to a waitable Promise. Paste in the following code.
 
    ```javascript
     require("dotenv").config();
