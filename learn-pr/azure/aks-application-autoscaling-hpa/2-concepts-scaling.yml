@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: aks-application-autoscaling-hpa.2-concepts-scaling
+metadata:
+  title: Scalability Concepts
+  description: Scalability Concepts
+  ms.date: 17/02/2021
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Scalability Concepts
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-concepts-scaling.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "question?"
+      choices:
+        - content: "Choice"
+          isCorrect: true
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+    - content: "question?"
+      choices:
+        - content: "Choice"
+          isCorrect: true
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+    - content: "question?"
+      choices:
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: false
+          explanation: "Choice"
+        - content: "Choice"
+          isCorrect: true
+          explanation: "Choice"

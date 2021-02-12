@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: aks-application-autoscaling-hpa
+metadata:
+  title: Application Scalability on AKS with HorizontalPodAutoscalers
+  description: Explore how to scale your deployed applications with HorizontalPodAutoscalers in AKS.
+  ms.date: 02/17/2021
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Application Scalability on AKS with HorizontalPodAutoscalers
+summary: Scale your applications to match your load by using native scalability features present in Kubernetes.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the concept of scalability and how it applies to Kubernetes
+  - Create and set up native scalability within AKS
+  - Choose how to configure and fine tune HPAs
+prerequisites: |
+  - An Azure subscription
+  - Ability to use the Azure CLI
+  - Ability to create a Docker container
+  - Ability to navigate the Azure portal
+  - Basic knowledge of Kubernetes and its concepts
+iconUrl: /learn/achievements/aks-application-autoscaling-hpa.svg
+levels:
+  - beginner
+roles:
+  - solution-architect
+  - developer
+  - devops-engineer
+products:
+  - azure
+  - azure-kubernetes-service
+units:
+  - aks-application-autoscaling-hpa.1-introduction
+  - aks-application-autoscaling-hpa.2-concepts-scaling
+  - aks-application-autoscaling-hpa.3-exercise-scaling
+  - aks-application-autoscaling-hpa.4-concepts-scaling-fine-tune
+  - aks-application-autoscaling-hpa.5-summary
+badge:
+  uid: aks-application-autoscaling-hpa.badge
