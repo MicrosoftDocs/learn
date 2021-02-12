@@ -20,7 +20,7 @@
         - content: "Decimation compresses a model and removes textures. Decimated models aren't rendered with full detail."
           isCorrect: false
           explanation: "Decimation doesn't remove model textures."
-        - content: "Decimation compresses a model and removes polygons. Decimated models aren't rendered with full detail."
+        - content: "Decimation improves the quality of a model for rendering on an untethered device."
           isCorrect: false
           explanation: "When a model is decimated, the rendering quality is diminished."
         - content: "Decimation compresses a model and removes polygons. Decimated models aren't rendered with full detail."
