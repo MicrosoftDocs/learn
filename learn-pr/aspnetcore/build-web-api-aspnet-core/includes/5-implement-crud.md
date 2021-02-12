@@ -29,7 +29,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`Ok` is implied              |200             |A product matching the provided `id` parameter exists in the database.<br>The product is included in the response body in the media type as defined in the `Accept` HTTP request header (JSON by default).|
+|`Ok` is implied              |200             |A product matching the provided `id` parameter exists in the database.<br>The product is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
 |`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
 
 ## Add a product
@@ -46,13 +46,13 @@ The preceding action:
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `product` parameter will be found in the request body.
 
-The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `Location` HTTP response header with a URL to the newly created product.
+The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created product.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`CreatedAtAction`            |201             |The product was added to the database.<br>The product is included in the response body in the media type as defined in the `Accept` HTTP request header (JSON by default).|
+|`CreatedAtAction`            |201             |The product was added to the database.<br>The product is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
 |`BadRequest` is implied      |400             |The request body's `Product` object is invalid.|
 
 ## Modify a product
@@ -117,7 +117,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll > ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll > ContosoPets.Api.log &
     ```
 
     The web API is running and is ready for testing via `curl`.

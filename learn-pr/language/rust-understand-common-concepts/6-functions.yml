@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.6-functions
+metadata:
+  title: Create reusable functionality with functions
+  description: Learn about how to implement and call functions.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create reusable functionality with functions
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-functions.md)]
