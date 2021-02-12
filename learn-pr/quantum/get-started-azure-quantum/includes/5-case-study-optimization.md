@@ -70,6 +70,6 @@ Microsoft Quantum has teamed up with Case Western Reserve University to use besp
 
 * Faster imaging, as well as imaging with better precision at a fixed scan time, can lead to new diagnostic tools. These tools can help tackle today's medical challenges while reducing the cost and side effects of the scans.
 
-Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies](https://azure.microsoft.com/en-us/resources/whitepapers/search/?term=quantum).
+Read more about applications of quantum-inspired optimizations in the [Quantum Impact case studies](https://azure.microsoft.com/resources/whitepapers/search/?term=quantum).
 
 By understanding the power of quantum-inspired optimization, you'll work with your crew in the module [Solve Quantum inspired optimization problems](/learn/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true) to help the logistics division efficiently load cargo vessels. In the module [Solve the job shop scheduling problem](/learn/modules/solve-job-shop-optimization-azure-quantum/?azure-portal=true), you'll work with the maintenance division to prioritize different kinds of jobs on the spaceship.
