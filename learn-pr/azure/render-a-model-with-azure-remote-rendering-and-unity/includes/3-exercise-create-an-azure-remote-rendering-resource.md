@@ -41,7 +41,7 @@ A notification will appear after deployment is complete. Your new Remote Renderi
 
 1. In the **Overview** tab, note the **Account ID**.
 
-    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account i d.":::
+    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account ID.":::
 
 1. In the **Settings** section, select **Access Keys**. In the next exercise, you'll need the value for **Primary key** to render the model in the app.
 

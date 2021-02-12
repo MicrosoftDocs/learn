@@ -46,7 +46,7 @@ Here, you'll configure the Unity project and scene to render the truck engine in
 - **Account ID**: The **Account ID** for the Remote Rendering resource.
 - **Account Key**: The **Primary key** for the Remote Rendering resource.
 
-    :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the remote rendering script. The account domain, account authentication domain, account i d and account key are highlighted.":::
+    :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the remote rendering script. The account domain, account authentication domain, account ID and account key are highlighted.":::
 
 > [!WARNING]
 > Be sure to not check the project with your saved credentials into a repository.
