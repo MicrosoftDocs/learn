@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: cloud-scale-messaging-with-jms-service-bus.4-receiving-messages-from-service-bus
+uid: cloud-scale-messaging-with-jms-service-bus.5-receiving-messages-from-service-bus
 title: Receiving messages to Azure Service Bus
 metadata:
   title: Receiving messages to Azure Service Bus
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-receiving-messages-from-service-bus.md)]
+  [!include[](includes/5-receiving-messages-from-service-bus.md)]

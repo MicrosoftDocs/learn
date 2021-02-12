@@ -28,9 +28,11 @@ products:
 - azure-service-bus
 units:
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.1-introduction
-- learn.azure.cloud-scale-messaging-with-jms-service-bus.2-messaging-with-jms-and-service-bus
-- learn.azure.cloud-scale-messaging-with-jms-service-bus.3-sending-messaging-to-service-bus
-- learn.azure.cloud-scale-messaging-with-jms-service-bus.4-receiving-messages-from-service-bus
-- learn.azure.cloud-scale-messaging-with-jms-service-bus.5-summary
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.2-create-your-service-bus-premium-namespace (checkout accelerate-java-apps module)
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.3-messaging-with-jms-and-service-bus
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.4-sending-messaging-to-service-bus
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.5-receiving-messages-from-service-bus
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.6-knowledge-check (3 questions with 4 options each)
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.7-summary (with cleanup)
 badge:
   uid: learn.azure.cloud-scale-messaging-with-jms-service-bus.badge

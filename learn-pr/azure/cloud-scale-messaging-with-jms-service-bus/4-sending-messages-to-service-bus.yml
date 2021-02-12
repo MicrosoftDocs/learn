@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: cloud-scale-messaging-with-jms-service-bus.3-sending-messages-to-service-bus
+uid: cloud-scale-messaging-with-jms-service-bus.4-sending-messages-to-service-bus
 title: Sending messages to Azure Service Bus
 metadata:
   title: Sending messages to Azure Service Bus
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-sending-messages-to-service-bus.md)]
+  [!include[](includes/4-sending-messages-to-service-bus.md)]
