@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.run-quantum-algorithms-hardware.3-submit-job-azure-quantum
-title: Exercise ― Submit a job to Azure Quantum
+title: Exercise – Submit a job to Azure Quantum
 metadata:
-  title: Exercise ― Submit a job to Azure Quantum
+  title: Exercise – Submit a job to Azure Quantum
   description: A guide to submitting a quantum computing job to Azure Quantum.
   ms.date: 01/01/2020
   author: geduardo
