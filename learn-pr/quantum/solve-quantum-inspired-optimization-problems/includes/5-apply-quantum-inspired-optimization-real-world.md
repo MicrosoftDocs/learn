@@ -2,14 +2,14 @@ Now that you understand the basics of QIO, let's come back to our mineral shipme
 
 The two sets correspond to the mineral chunks to be loaded onto container A or container B, and we define $\Delta$ as the weight difference between the two containers.
 
-This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
+This short animation shows one possible way that an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, the animation shows the best solution found so far.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFtm]
 
-In this next part, we'll use quantum-inspired optimization to solve the problem.
+In the next section, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it's classified as NP-hard, in practice other efficient algorithms exist that can provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight-balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, because it's a familiar and easily understood example. In a later module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
 
 ## Express the problem
 
@@ -37,9 +37,9 @@ By introducing the variable $x_i$, we can simplify the equation as follows:
 
 ## Refine the problem again
 
-There's one last change we need to make before we can solve our problem.
+There's one last change we need to make before we can solve this problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container B by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it can't be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container B by setting all of the $x_i$ variables equal to *-1*. But that's not correct. To fix this, we square the right side of the equation to ensure that it can't be negative.
 
 ![An equation that squares the previous computation to ensure that the cost function is not negative.](../media/cost-function-4.svg)
 
@@ -54,7 +54,7 @@ Now that you've learned how our combinatorial optimization problem can be cast i
 
 ### Setup
 
-First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the settings below which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by running `az quantum workspace show` through the Azure CLI.
+First, we must instantiate a `Workspace` object, which allows you to connect to the workspace you've previously deployed in Azure. Return to the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum?azure-portal=true) module if you don't have a workspace set up yet. Be sure to fill in the following settings, which can be retrieved from the [web interface](https://ms.portal.azure.com#home?azure-portal=true) or by running `az quantum workspace show` through the Azure CLI.
 
 ```python
 from azure.quantum import Workspace
@@ -74,7 +74,7 @@ workspace.login()
 
 To submit a problem to the Azure Quantum services, we first need to create a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and the kind of problem we are modeling.
 
-Some problem types, such as the PUBO, QUBO, or Ising types, were already introduced in a previous unit. In this example, we'll use the Ising type, which is available via `ProblemType.ising`.
+We've already introduced some problem types, such as PUBO, QUBO, and Ising. In this example, we'll use the Ising type, which is available via `ProblemType.ising`.
 
 To represent cost functions, we'll apply a formulation that uses `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten in the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
 
@@ -88,7 +88,7 @@ Let's run through an example by using the cost function we derived earlier. For 
 
 $$ H(x) = \left(\sum_{i} w_{i} \cdot x_{i}\right)^2 $$
 
-After expanding the square we get a double summation, where $j$ also indexes the $n$ chunks:
+After we expand the square, we get a double summation where $j$ also indexes the $n$ chunks:
 
 $$ H(x) = \sum_i \sum_j (w_i \cdot w_j) \cdot (x_i \cdot x_j) $$
 
@@ -96,7 +96,7 @@ While it may not look like it, this double sum is just another way to write a la
 
 $$ H(x) = \sum_{k=0}^{n^2-1} \alpha_k \cdot p_k(x_0, \cdots, x_{n-1}) $$
 
-Let's plug in some numbers. We'll use three mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \\{0,1,2\\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
+Let's plug in some numbers. We'll use three mineral chunks with the weights $w_i \in [2,4,7]$ and, thus, with indices $i,j \in \\{0,1,2\\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
 
 $$ H(x) = (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) $$
 $$ \hspace{25pt} +\ (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) $$
@@ -115,7 +115,7 @@ In Python, we would thus introduce the following `Terms`:
 - `Term(c = 14, indices = [2, 0])`
 - `Term(c = 28, indices = [2, 1])`
 
-The following function generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object that contains the cost function.
+The following function generalizes the `Term` creation for any number of weights by using some for loops. It takes an array of mineral weights and returns a `Problem` object that contains the cost function.
 
 ```python
 from typing import List
@@ -142,7 +142,7 @@ def createProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
     return Problem(name="Freight Balancing Problem", problem_type=ProblemType.ising, terms=terms)
 ```
 
-Before submission to Azure Quantum, we instantiate a problem by defining a list of mineral chunks via their weights:
+Before we submit the problem to Azure Quantum, we instantiate it by defining a list of mineral chunks via their weights:
 
 ```python
 # This array contains the weights of all the mineral chunks
@@ -154,10 +154,10 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit to Azure Quantum
 
-You're now ready to submit your problem to Azure by using the `ParallelTempering` solver:
+You're now ready to submit your problem to Azure Quantum by using the following `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free *parallel tempering solver* with a timeout of 100 seconds. For more information about available solvers, see the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use a parameter-free *parallel tempering* solver with a timeout of 100 seconds. For more information about available solvers, see the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
@@ -222,7 +222,7 @@ Total weights:
     Container b: 53 tons
 ```
 
-Great! The solver found a partition such that the containers are within 1 ton of each other. This outcome is satisfactory, because a perfectly balanced solution doesn't exist for this problem instance.
+Great! The solver found a partition such that the containers are within 1&nbsp;ton of each other. This outcome is satisfactory, because a perfectly balanced solution doesn't exist for this problem instance.
 
 ## Improve the cost function
 
@@ -238,9 +238,9 @@ The problem has 90 terms for 10 mineral chunks:
 [{'c': 5, 'ids': [0, 1]}, {'c': 9, 'ids': [0, 2]}, {'c': 21, 'ids': [0, 3]}, {'c': 35, 'ids': [0, 4]}, {'c': 5, 'ids': [0, 5]}, {'c': 3, 'ids': [0, 6]}, {'c': 5, 'ids': [0, 7]}, {'c': 10, 'ids': [0, 8]}, {'c': 11, 'ids': [0, 9]}, {'c': 5, 'ids': [1, 0]}, {'c': 45, 'ids': [1, 2]}, {'c': 105, 'ids': [1, 3]}, {'c': 175, 'ids': [1, 4]}, {'c': 25, 'ids': [1, 5]}, {'c': 15, 'ids': [1, 6]}, {'c': 25, 'ids': [1, 7]}, {'c': 50, 'ids': [1, 8]}, {'c': 55, 'ids': [1, 9]}, {'c': 9, 'ids': [2, 0]}, {'c': 45, 'ids': [2, 1]}, {'c': 189, 'ids': [2, 3]}, {'c': 315, 'ids': [2, 4]}, {'c': 45, 'ids': [2, 5]}, {'c': 27, 'ids': [2, 6]}, {'c': 45, 'ids': [2, 7]}, {'c': 90, 'ids': [2, 8]}, {'c': 99, 'ids': [2, 9]}, {'c': 21, 'ids': [3, 0]}, {'c': 105, 'ids': [3, 1]}, {'c': 189, 'ids': [3, 2]}, {'c': 735, 'ids': [3, 4]}, {'c': 105, 'ids': [3, 5]}, {'c': 63, 'ids': [3, 6]}, {'c': 105, 'ids': [3, 7]}, {'c': 210, 'ids': [3, 8]}, {'c': 231, 'ids': [3, 9]}, {'c': 35, 'ids': [4, 0]}, {'c': 175, 'ids': [4, 1]}, {'c': 315, 'ids': [4, 2]}, {'c': 735, 'ids': [4, 3]}, {'c': 175, 'ids': [4, 5]}, {'c': 105, 'ids': [4, 6]}, {'c': 175, 'ids': [4, 7]}, {'c': 350, 'ids': [4, 8]}, {'c': 385, 'ids': [4, 9]}, {'c': 5, 'ids': [5, 0]}, {'c': 25, 'ids': [5, 1]}, {'c': 45, 'ids': [5, 2]}, {'c': 105, 'ids': [5, 3]}, {'c': 175, 'ids': [5, 4]}, {'c': 15, 'ids': [5, 6]}, {'c': 25, 'ids': [5, 7]}, {'c': 50, 'ids': [5, 8]}, {'c': 55, 'ids': [5, 9]}, {'c': 3, 'ids': [6, 0]}, {'c': 15, 'ids': [6, 1]}, {'c': 27, 'ids': [6, 2]}, {'c': 63, 'ids': [6, 3]}, {'c': 105, 'ids': [6, 4]}, {'c': 15, 'ids': [6, 5]}, {'c': 15, 'ids': [6, 7]}, {'c': 30, 'ids': [6, 8]}, {'c': 33, 'ids': [6, 9]}, {'c': 5, 'ids': [7, 0]}, {'c': 25, 'ids': [7, 1]}, {'c': 45, 'ids': [7, 2]}, {'c': 105, 'ids': [7, 3]}, {'c': 175, 'ids': [7, 4]}, {'c': 25, 'ids': [7, 5]}, {'c': 15, 'ids': [7, 6]}, {'c': 50, 'ids': [7, 8]}, {'c': 55, 'ids': [7, 9]}, {'c': 10, 'ids': [8, 0]}, {'c': 50, 'ids': [8, 1]}, {'c': 90, 'ids': [8, 2]}, {'c': 210, 'ids': [8, 3]}, {'c': 350, 'ids': [8, 4]}, {'c': 50, 'ids': [8, 5]}, {'c': 30, 'ids': [8, 6]}, {'c': 50, 'ids': [8, 7]}, {'c': 110, 'ids': [8, 9]}, {'c': 11, 'ids': [9, 0]}, {'c': 55, 'ids': [9, 1]}, {'c': 99, 'ids': [9, 2]}, {'c': 231, 'ids': [9, 3]}, {'c': 385, 'ids': [9, 4]}, {'c': 55, 'ids': [9, 5]}, {'c': 33, 'ids': [9, 6]}, {'c': 55, 'ids': [9, 7]}, {'c': 110, 'ids': [9, 8]}]
 ```
 
-That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicate terms. These terms are the result of having squared the right-hand side of the equation when we built our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
+That's a lot of terms for just 10 chunks! On closer inspection, you'll note that there are essentially duplicate terms. These terms are the result of having squared the right side of the equation when we built our cost function. For example, look at the last term: `{'w': 110, 'ids': [9, 8]}`. If you look through the rest of the terms, you'll find a symmetrical copy of it: `{'w': 110, 'ids': [8, 9]}`.
 
-This duplicate encodes the exact same information in our cost function. However, because we don't actually care about the value of the cost function (just the shape), we can omit these terms as follows:
+This duplicate encodes the exact same information in our cost function. However, because we don't care about the value of the cost function, only the shape, we can omit these terms, as shown here:
 
 ![An equation that reduces the number of terms in the previous cost function.](../media/cost-function-5.svg)
 
@@ -310,4 +310,4 @@ Total weights:
     Container B: 53 tons
 ```
 
-As you can see, the quality of the solution is the same for both cost functions. The containers are loaded within 1 ton of each other. This reveals an important fact about using QIO solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions. The container loads are within 1&nbsp;ton of each other. This reveals an important fact about using QIO solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.
