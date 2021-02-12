@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.8-exercise-indexing
+metadata:
+  title: Exercise - Indexing
+  description: Use what you've learned about indexing with arrays and tuples to complete the code.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Indexing
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-exercise-indexing.md)]

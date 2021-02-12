@@ -9,7 +9,7 @@ This short animation shows one possible way an optimizer might distribute the mi
 In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 > [!NOTE]
-> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](/learn/modules/solve-job-shop-scheduling-optimization-problem?azure-portal=true), we'll tackle a more challenging problem where QIO might provide a practical advantage.
+> This problem is known as a *number partitioning problem*. Although it is classified as NP-hard, in practice there exist other efficient algorithms able to provide approximate solutions much faster than QIO might. Nevertheless, we'll use the freight balancing problem to illustrate QIO concepts and how to use the Azure Quantum service, as it is a familiar and easily understood example. In a later [module](/learn/modules/solve-job-shop-optimization-azure-quantum/), we'll tackle a more challenging problem where QIO might provide a practical advantage.
 
 ## Express the problem
 
