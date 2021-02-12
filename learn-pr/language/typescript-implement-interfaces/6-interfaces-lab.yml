@@ -9,6 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 20
 content: |
   [!include[](includes/6-interfaces-lab.md)]
