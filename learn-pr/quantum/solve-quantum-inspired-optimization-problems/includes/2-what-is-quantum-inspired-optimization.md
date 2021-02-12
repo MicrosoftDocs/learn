@@ -8,9 +8,9 @@ When you apply that theorem to solve a problem, you:
 
 1. Next, slowly transform that system into a more complex one that describes the problem you're trying to solve. The adiabatic theorem states that, as long as this transformation happens slowly enough, the system has time to adapt and will stay in that lowest energy configuration. When you're done with your transformations, you've solved your problem.
 
-For a good analogy, imagine a glass of water on a table top. If you move the glass slowly across the surface, the contents won't spill because the system has time to adapt to its new configuration. If you move the glass quickly, however, the system is forced to change too quickly, and you have water everywhere.
+As an analogy, imagine a glass of water sitting on a table top. If you move the glass slowly across the surface, the contents won't spill because the system has time to adapt to its new configuration. If you move the glass quickly, however, the system is forced to adapt too quickly, and you have water everywhere.
 
-Although this module focuses on QIO, it's important to remember that quantum-inspired isn't limited to optimization. Similarly, there are quantum optimization algorithms that might not have a quantum-inspired counterpart.
+Although this module focuses on QIO, it's important to remember that the quantum-inspired idea isn't limited to optimization. Similarly, some quantum optimization algorithms might not have a quantum-inspired counterpart.
 
 ## Where can QIO be applied?
 
