@@ -4604,6 +4604,41 @@
       "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/3-optimization-basics",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/00-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/00-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/01-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/01-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/02-inference-for-true-slope.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/02-inference-for-true-slope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/03-prediction-intervals.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/03-prediction-intervals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/04-mini-labs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/04-mini-labs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/05-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/05-summary",
+      "redirect_document_id": false
     }
   ]
 }
