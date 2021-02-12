@@ -1,4 +1,4 @@
-Quantum-inspired algorithms are, put simply, classical algorithms where the essential quantum phenomena that would provide the speed-up can be classically emulated.
+Quantum-inspired algorithms are, put simply, classical algorithms where the essential quantum phenomena that would provide the speedup can be classically emulated.
 
 Quantum-inspired optimization (QIO) is a method that's based on emulating quantum tunneling, as used in the adiabatic quantum optimization algorithm, which we'll explain later. A number of techniques have been developed to simulate this type of physics, and one such approach uses a concept from quantum physics known as [the adiabatic theorem](https://wikipedia.org/wiki/Adiabatic_theorem?azure-portal=true). 
 
