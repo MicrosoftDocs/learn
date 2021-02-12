@@ -1,7 +1,5 @@
 In this unit, you will learn how to remote restart an Azure Sphere from Azure IoT Central.
 
-
-
 ## Understanding IoT Central commands
 
 Azure IoT Central uses commands to invoke an action on a device. Commands are often used for interactive control of devices, such as turning on a fan, a light, or in the case of this unit, to restart the Azure Sphere.
@@ -10,8 +8,6 @@ IoT Central is built on Azure IoT Hub and it sends commands to a device using Io
 
 > [!NOTE]
 > There are a number of reasons why you might need to remote restart a Azure Sphere. Device certificates, OS updates, and application updates are done on a 24 hour cycle or after the device has been restarted. You may have an operational reason why you need to restart the device to force an update.
-
-
 
 ## Remote restarting an Azure Sphere
 
@@ -29,8 +25,6 @@ The following steps outline how an Azure IoT Central command uses Azure IoT Hub 
 1. The direct method responds with an HTTP status code and a response message.
 1. The Azure Sphere is then restarted.
 1. Azure IoT Central queries and displays the device **ReportedRestartUTC** property .
-
-
 
 ## Getting started with Direct method bindings
 
@@ -87,8 +81,6 @@ static LP_DIRECT_METHOD_RESPONSE_CODE RestartDeviceHandler(JSON_Value* json, LP_
 }
 ```
 
-
-
 ## Azure Sphere PowerControls Capability
 
 The RestartDeviceHandler function sets up a one shot timer that invokes the **DelayRestartDeviceTimerHandler** function after the specified restart period measured in seconds. In the DelayRestartDeviceTimerHandler function a call is made to the **PowerManagement_ForceSystemReboot** API. The PowerManagement_ForceSystemReboot API requires the **PowerControls** capability to be declared in the app_manifest.json file.
@@ -99,8 +91,6 @@ The RestartDeviceHandler function sets up a one shot timer that invokes the **De
 ]
 ```
 
-
-
 ## How direct methods are mapped to handlers
 
 All declared direct method bindings must be added by reference to the directMethodBindingSet array. When a direct method message is received by the device from Azure IoT Hub it is checked for a matching *methodName* name in the directMethodBindingSet array. When a match is found, the corresponding handler function is called.
@@ -109,26 +99,27 @@ All declared direct method bindings must be added by reference to the directMeth
 LP_DIRECT_METHOD_BINDING* directMethodBindingSet[] = { &dm_restartDevice };
 ```
 
-### Opening the device twin binding set
+### Opening the direct method binding set
 
-Direct method binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The direct method binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetOpen(directMethodBindingSet, NELEMS(directMethodBindingSet));
 ```
 
-### Closing the device twin binding set
+### Closing the direct method binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The direct method bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_directMethodSetClose();
 ```
 
-
-
 ## Azure IoT Central commands
 
 IoT Central commands are defined in the device template interface. In this example, the **RestartDevice** command schema type is **Integer**. The direct method payload is an integer which defines the number of seconds before restarting the device. The command name must match the RestartDevice Direct Method Binding declaration on the Azure Sphere.
 
-![The illustration shows a device template interface.](../media/iot-central-device-template-interface-restart-device.png)
+<!-- > [!div class="mx-imgBorder"]
+> ![The illustration shows a device template interface.](../media/iot-central-device-template-interface-restart-device.png) -->
+
+:::image type="content" source="../media/iot-central-device-template-interface-restart-device.png" alt-text="The illustration shows a device template interface.":::

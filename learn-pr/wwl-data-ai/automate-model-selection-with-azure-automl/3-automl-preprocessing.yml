@@ -3,8 +3,8 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-preprocessi
 title: Preprocessing and featurization
 metadata:
   title: Preprocessing and featurization
-  description: "Learn about options for automatic preprocessing and featurization."
-  ms.date: 07/16/2020
+  description: "Preprocessing and featurization"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -1,0 +1,59 @@
+### YamlMime:LearningPath
+uid: learn.java-on-azure
+metadata:
+  title: Java on Azure
+  description: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  ms.date: 02/01/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Java on Azure
+summary: |
+  Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+prerequisites: |
+  - An Azure subscription
+  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](https://docs.microsoft.com/cli/azure/install-azure-cli)
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- developer
+- devops-engineer
+- maker
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-app-service
+- azure-app-service-web
+# - azure-application-insights
+#- azure-automation
+- azure-cache-redis
+- azure-clis
+- azure-cosmos-db
+- azure-database-mysql
+#- azure-devops
+- azure-spring-cloud
+- azure-web-apps
+#- msal-java
+#- azure-service-bus
+modules:
+- learn.azure.intro-to-java-azure
+- learn.java-target-destinations
+- learn.azure.deploy-java-spring-boot-app-service-mysql
+- learn.azure.build-webapp-java-tomcat
+- learn.azure-spring-cloud-workshop
+- learn.azure.deploy-event-driven-real-time
+- learn.azure.deploy-java-ee-app-to-app-service
+- learn.azure.deploy-java-azure-pipeline-terraform
+- learn.accelerate-scale-spring-boot-application-azure-cache-redis
+- learn.cosmos-db-java-app
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
+- learn.develop-azure-functions-app-with-maven-plugin
+trophy:
+  uid: learn.java-on-azure.trophy

@@ -2,8 +2,8 @@
 uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning
 metadata:
   title: Detect and mitigate unfairness in models with Azure Machine Learning
-  description: "Machine learning models can often encapsulate unintentional bias that results in unfairness. With Fairlearn and Azure Machine Learning, you can detect and mitigate unfairness in your models."
-  ms.date: 11/10/2020
+  description: "Detect and mitigate unfairness in models with Azure Machine Learning"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

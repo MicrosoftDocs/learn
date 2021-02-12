@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.copy
+title: Create multiple resource instances by using the copy element
+metadata:
+  title: Create multiple resource instances by using the copy element
+  description: A great way to manage repetitive code is by using the _copy_ element. It allows you to express a repeating pattern with very little code.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-copy.md)]

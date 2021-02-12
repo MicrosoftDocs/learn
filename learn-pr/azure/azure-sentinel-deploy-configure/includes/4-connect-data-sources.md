@@ -89,7 +89,7 @@ After you connect your data sources to Azure Sentinel, you'll want to be notifie
 
 Rules that are created from these templates automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, as needed.
 
-Azure Sentinel uses a fusion technique to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and build queries in Log Analytics to investigate the data.
+Azure Sentinel uses a fusion technology to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and build queries in Log Analytics to investigate the data.
 
 ### Built-in workbooks
 

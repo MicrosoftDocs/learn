@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.7-collection-types
+metadata:
+  title: Use collection types
+  description: "Learn about the three collection types used most commonly in Rust programs: arrays, vectors, and hash maps."
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use collection types
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-collection-types.md)]

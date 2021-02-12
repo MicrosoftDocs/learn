@@ -4,12 +4,11 @@ title: Interact with the Azure Storage APIs
 metadata:
   title: Interact with the Azure Storage APIs
   description: Interact with the Azure Storage APIs
-  ms.date: 09/24/2018
+  ms.date: 11/28/2020
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/5-interact-with-azure-storage-apis.md)]

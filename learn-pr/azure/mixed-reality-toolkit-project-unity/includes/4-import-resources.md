@@ -39,7 +39,7 @@ The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** 
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The **MixedRealityToolkit** object contains the active profile and can be viewed in the Inspector window. When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
-:::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected.":::
+:::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default Mixed Reality Toolkit configuration profile is selected.":::
 
 MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it isn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 

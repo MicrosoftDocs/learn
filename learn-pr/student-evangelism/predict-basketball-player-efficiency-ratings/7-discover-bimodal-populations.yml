@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.7-discover-bimodal-populations
+metadata:
+  title: 'Data exploration part 3 - Discover data that represents more than one population'
+  description: Use histograms to define multiple populations in a bimodal distribution of data.
+  ms.date: 11/11/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Data exploration part 3 - Discover data that represents more than one population'
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-discover-bimodal-populations.md)]

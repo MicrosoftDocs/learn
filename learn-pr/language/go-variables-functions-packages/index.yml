@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.language.go-variables-functions-packages
+metadata:
+  title: Understand how to use packages, variables, and functions
+  description: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
+  ms.date: 12/15/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand how to use packages, variables, and functions
+summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
+abstract:  | 
+  In this module, you will:
+  - Declare variables and constants
+  - Learn about the basic data types available in Go
+  - Write functions
+  - Create and use packages
+  
+prerequisites: |
+  - A Go environment that's ready to create applications.
+  - [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
+  - The ability to create and modify `.go` files.
+  - The ability to run Go applications by using the terminal.
+  
+iconUrl: /learn/achievements/go-variables-functions-packages.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.language.go-variables-functions-packages.0-introduction
+- learn.language.go-variables-functions-packages.1-variables
+- learn.language.go-variables-functions-packages.2-data-types
+- learn.language.go-variables-functions-packages.3-functions
+- learn.language.go-variables-functions-packages.4-packages
+- learn.language.go-variables-functions-packages.5-knowledge-check
+- learn.language.go-variables-functions-packages.6-summary
+badge:
+  uid: learn.language.go-variables-functions-packages.badge 

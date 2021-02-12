@@ -1,12 +1,12 @@
-In this part, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, what kinds of packages you can create, where you can host the packages, and how you access them when they are hosted. You'll also learn about package versioning, as well as Azure Artifacts.
+In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, what kinds of packages you can create, where you can host the packages, and how you access them when they are hosted. You'll also learn about package versioning, as well as Azure Artifacts.
 
-But first, let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
+First, let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
 
-**Andy:** Hi everyone. I was chatting with the team who's working on the back-end system for _Space Game_. They could use the models we use for the website in a back-end application they plan to write.
+**Andy:** Hi everyone. I was chatting with the team who's working on the back end system for _Space Game_. They could use the models we use for the website in a back end app they plan to write.
 
 **Amita:** What do you mean by models?
 
-**Andy:** As you know, the _Space Game_ website is an ASP.NET Core application. It uses the Model-View-Controller, or MVC, pattern to separate data from how that data is displayed in the user interface. I was thinking we could create a package that contains our model classes so that any application can use them.
+**Andy:** As you know, the _Space Game_ website is an ASP.NET Core application. It uses the Model-View-Controller, or MVC, pattern to separate data from how that data is displayed in the user interface. I was thinking we could create a package that contains our model classes so that any app can use them.
 
 **Amita:** What exactly is the goal?
 
@@ -32,19 +32,19 @@ Packages also often contain one or more files that provide metadata, or informat
 
 There are advantages to building a package as opposed to duplicating the code.
 
-One reason to create a package instead of duplicating code is to prevent _drift_. When code is duplicated, each copy can quickly diverge to satisfy the requirements of a particular application. It becomes difficult to migrate changes from one copy to the others. In other words, you lose the ability to improve the code in ways that benefit everyone.
+One reason to create a package instead of duplicating code is to prevent _drift_. When code is duplicated, each copy can quickly diverge to satisfy the requirements of a particular app. It becomes difficult to migrate changes from one copy to the others. In other words, you lose the ability to improve the code in ways that benefit everyone.
 
-Packages also group related functionality into one reusable component. Depending on the programming language, a package can provide applications with access to certain types and functions, while restricting access to their implementation details.
+Packages also group related functionality into one reusable component. Depending on the programming language, a package can provide apps with access to certain types and functions, while restricting access to their implementation details.
 
-Another reason to build a package is to provide a consistent way to build and test that package's functionality. When code is duplicated, each application might build and test that code in different ways. One set of tests might include checks that another set could benefit from.
+Another reason to build a package is to provide a consistent way to build and test that package's functionality. When code is duplicated, each app might build and test that code in different ways. One set of tests might include checks that another set could benefit from.
 
-One tradeoff is that with a package, you have another codebase to test and maintain. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of applications. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is an extremely popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
+One tradeoff is that with a package, you have another codebase to test and maintain. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is an extremely popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
 
-When multiple applications can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
+When multiple apps can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
 
 ## What kinds of packages are there?
 
-Each programming language or framework provides its own way to build packages. Popular package systems provide documentation on how the process works.
+Each programming language or framework provides its own way to build packages. Popular package systems provide documentation about how the process works.
 
 You might already be familiar with these popular package systems:
 
@@ -58,7 +58,7 @@ You might already be familiar with these popular package systems:
 
 You can host packages on your own network, or you can use a hosting service. A hosting service is often called a _package repository_ or _package registry_. Many of these services provide free hosting for open source projects.
 
-Here are popular hosting services for the package types we just discussed:
+Here are popular hosting services for the package types we just described:
 
 * **NuGet**: [nuget.org](https://www.nuget.org?azure-portal=true)
 * **Maven**: [apache.org](https://www.apache.org?azure-portal=true)
@@ -66,7 +66,7 @@ Here are popular hosting services for the package types we just discussed:
 * **Chocolatey**: [chocolatey.org](https://chocolatey.org?azure-portal=true)
 * **RubyGems**: [rubygems.org](https://rubygems.org?azure-portal=true)
 
-A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall, on your network. For example, you can [host your own NuGet feeds](https://docs.microsoft.com/nuget/hosting-packages/overview?azure-portal=true) by using hosting products such as Azure Artifacts and MyGet. You can also host packages on a file share.
+A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](https://docs.microsoft.com/nuget/hosting-packages/overview?azure-portal=true) by using hosting products, such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
 When you host packages behind the firewall, you can include feeds to your own packages. You can also cache packages that you trust on your network when your systems can't connect to the internet.
 
@@ -88,7 +88,7 @@ Semantic Versioning is a popular versioning scheme. Here's the format:
 
 Here is what each of these parameters means:
 
-* A new **Major** version introduces breaking changes. Applications typically need to update how they use the package to work with a new major version.
+* A new **Major** version introduces breaking changes. Apps typically need to update how they use the package to work with a new major version.
 * A new **Minor** version introduces new features, but is backward compatible with earlier versions.
 * A new **Patch** introduces backward compatible bug fixes, but not new features.
 
@@ -104,7 +104,7 @@ Install-Package -Name "Json.NET" -Version 12.0.2
 
 ## What happens when the package changes?
 
-When you reference a package from your application, you typically _pin_, or specify, the version of that package you want to use.
+When you reference a package from your app, you typically _pin_, or specify, the version of that package you want to use.
 
 Many frameworks enable you to specify allowable ranges of package versions to install. Some also enable you to specify wildcards, which we call a _floating version_.
 
@@ -119,7 +119,7 @@ Here are a few other examples:
 | (1.0,2.0)      | The first version that's greater than 1.0 and less than 2.0                         |
 | [1.0,2.0)      | The first version that's greater than or equal to 1.0, and less than 2.0             |
 
-As each maintainer releases a new package version, you can evaluate what's changed and test your application against it. When you're ready, you can update the package's version number in your configuration, and submit the change to your build pipeline.
+As each maintainer releases a new package version, you can evaluate what's changed and test your app against it. When you're ready, you can update the package's version number in your configuration, and submit the change to your build pipeline.
 
 Here's an example of the package dependencies from our Tailspin-SpaceGame-Web project file. In this project, we depend on packages such as Newtonsoft.Json, and you can see that we specify version 12.0.1 of that package.
 
@@ -141,7 +141,7 @@ Here's an example of the package dependencies from our Tailspin-SpaceGame-Web pr
 
 ## How do I create a package and use it in the pipeline?
 
-**Tim:** So if I am understanding right, the application code uses packages from NuGet already. We're going to create our own package and host it in Azure Artifacts. Can you draw out the pieces and how they'll work together? I'm having a hard time picturing the whole process.
+**Tim:** So if I am understanding right, the app code uses packages from NuGet already. We're going to create our own package and host it in Azure Artifacts. Can you draw out the pieces and how they'll work together? I'm having a hard time picturing the whole process.
 
 **Andy:** Sure. Let's go over the process of creating a package and using it in our Azure DevOps pipeline.
 
@@ -155,17 +155,17 @@ First, we need to create a project in Azure Artifacts. ![Callout 1](../../shared
 
 Then, we create a pipeline in Azure Pipelines that connects to the GitHub repo for the package code. Then the pipeline builds the code, packages it, and pushes the package to Azure Artifacts. ![Callout 2](../../shared/media/callout-02.png)
 
-We need to update the application that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media/callout-03.png)
+We need to update the app that consumes this package to point to the Azure Artifacts feed that we created. ![Callout 3](../../shared/media/callout-03.png)
 
-After that, we update the pipeline that creates our application. The update allows us to use our Azure Artifacts feed to pull the new package dependency, and build as normal. ![Callout 4](../../shared/media/callout-04.png)
+After that, we update the pipeline that creates our app. The update enables us to use our Azure Artifacts feed to pull the new package dependency, and build as normal. ![Callout 4](../../shared/media/callout-04.png)
 
 ### Update the package
 
 **Tim:** What if someone updates the package?
 
-**Andy:** When you update the package with a new feature or bug fix, and run tests to make sure it works correctly, bump up the version number of the package. Then commit the change. The pipeline for the package sees the commit, and creates a new artifact in Azure Artifacts with the new version number. Don't worry, the old package with the lower version number is still there for applications that depend on that version. For this reason, you don't typically unlist a package.
+**Andy:** When you update the package with a new feature or bug fix, and run tests to make sure it works correctly, bump up the version number of the package. Then, commit the change. The pipeline for the package sees the commit, and creates a new artifact in Azure Artifacts with the new version number. Don't worry, the old package with the lower version number is still there for apps that depend on that version. For this reason, you don't typically unlist a package.
 
-Our application might want to use this newer version of the package. In that case, we update the application to reference the newer version, and run the tests locally to make sure this new version works with our application. When we're satisfied that everything works, we submit the application change to the pipeline. It builds with the new version of the package dependency.
+Our app might want to use this newer version of the package. In that case, we update the app to reference the newer version, and run the tests locally to make sure this new version works with our app. When we're satisfied that everything works, we submit the app change to the pipeline. It builds with the new version of the package dependency.
 
 **Amita:** This sounds like a good plan, and it will help the other team too. And it will keep the code from *drifting*, as you put it. That will help QA as well.
 

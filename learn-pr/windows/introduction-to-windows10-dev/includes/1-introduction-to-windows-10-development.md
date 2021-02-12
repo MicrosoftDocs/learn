@@ -22,7 +22,7 @@ As needs and technologies change over the years, a variety of platforms and fram
 
 Which development platform should you use? Well, that's really up to you. You may already have written an app by using Windows Presentation Foundation (WPF), in which case you'll probably want to continue using it. You can now add to WPF new features that are available from the Universal Windows Platform (UWP). If you're starting a new project from scratch, using UWP is an attractive option. With UWP you get immediate access to the latest Fluent Design System components for making modern user interfaces.
 
-This module discusses UWP, WPF, and Windows Forms examples, but other platforms, such as [Progressive Web Apps](https://docs.microsoft.com/microsoft-edge/progressive-web-apps/get-started) (PWAs), are available as well.
+This module discusses UWP, WPF, and Windows Forms examples, but other platforms, such as [Progressive Web Apps](https://docs.microsoft.com/microsoft-edge/progressive-web-apps-chromium/get-started) (PWAs), are available as well.
 
 ## Common terms you will see
 

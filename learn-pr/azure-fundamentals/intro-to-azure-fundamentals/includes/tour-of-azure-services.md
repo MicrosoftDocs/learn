@@ -42,13 +42,13 @@ Compute services are often one of the primary reasons why companies move to the 
 > [!div class="mx-tableFixed"]
 > | Service name | Service function |
 > |--------------|------------------|
-> | Azure Virtual Machines    | Windows or Linux virtual machines (VMs) hosted in Azure                  |
-> | Azure Virtual Machine Scale Sets | Scaling for Windows or Linux VMs hosted in Azure                  |
-> | Azure Kubernetes Service  | Cluster management for VMs that run containerized services   |
-> | Azure Service Fabric      | Distributed systems platform that runs in Azure or on-premises              |
-> | Azure Batch               | Managed service for parallel and high-performance computing applications |
-> | Azure Container Instances | Containerized apps run on Azure without provisioning servers or VMs      |
-> | Azure Functions           | An event-driven, serverless compute service                              |
+> | Azure Virtual Machines    | Windows or Linux virtual machines (VMs) hosted in Azure.                  |
+> | Azure Virtual Machine Scale Sets | Scaling for Windows or Linux VMs hosted in Azure.                  |
+> | Azure Kubernetes Service  | Cluster management for VMs that run containerized services.   |
+> | Azure Service Fabric      | Distributed systems platform that runs in Azure or on-premises.              |
+> | Azure Batch               | Managed service for parallel and high-performance computing applications. |
+> | Azure Container Instances | Containerized apps run on Azure without provisioning servers or VMs.      |
+> | Azure Functions           | An event-driven, serverless compute service.                              |
 
 ### Networking
 
@@ -59,18 +59,18 @@ Here are some examples of networking services in Azure.
 > [!div class="mx-tableFixed"]
 > | Service name | Service function |
 > |--------------|------------------|
-> | Azure Virtual Network     | Connects VMs to incoming virtual private network (VPN) connections                   |
-> | Azure Load Balancer       | Balances inbound and outbound connections to applications or service endpoints       |
-> | Azure Application Gateway | Optimizes app server farm delivery while increasing application security             |
-> | Azure VPN Gateway         | Accesses Azure Virtual Networks through high-performance VPN gateways                |
-> | Azure DNS                 | Provides ultra-fast DNS responses and ultra-high domain availability                 |
-> | Azure Content Delivery Network  | Delivers high-bandwidth content to customers globally                          |
-> | Azure DDoS Protection     | Protects Azure-hosted applications from distributed denial of service (DDOS) attacks |
-> | Azure Traffic Manager     | Distributes network traffic across Azure regions worldwide                           |
-> | Azure ExpressRoute        | Connects to Azure over high-bandwidth dedicated secure connections                   |
-> | Azure Network Watcher     | Monitors and diagnoses network issues by using scenario-based analysis                  |
-> | Azure Firewall            | Implements high-security, high-availability firewall with unlimited scalability      |
-> | Azure Virtual WAN         | Creates a unified wide area network (WAN) that connects local and remote sites         |
+> | Azure Virtual Network     | Connects VMs to incoming virtual private network (VPN) connections.                   |
+> | Azure Load Balancer       | Balances inbound and outbound connections to applications or service endpoints.       |
+> | Azure Application Gateway | Optimizes app server farm delivery while increasing application security.             |
+> | Azure VPN Gateway         | Accesses Azure Virtual Networks through high-performance VPN gateways.                |
+> | Azure DNS                 | Provides ultra-fast DNS responses and ultra-high domain availability.                 |
+> | Azure Content Delivery Network  | Delivers high-bandwidth content to customers globally.                          |
+> | Azure DDoS Protection     | Protects Azure-hosted applications from distributed denial of service (DDOS) attacks. |
+> | Azure Traffic Manager     | Distributes network traffic across Azure regions worldwide.                           |
+> | Azure ExpressRoute        | Connects to Azure over high-bandwidth dedicated secure connections.                   |
+> | Azure Network Watcher     | Monitors and diagnoses network issues by using scenario-based analysis.               |
+> | Azure Firewall            | Implements high-security, high-availability firewall with unlimited scalability.      |
+> | Azure Virtual WAN         | Creates a unified wide area network (WAN) that connects local and remote sites.       |
 
 ### Storage
 
@@ -79,10 +79,10 @@ Azure provides four main types of storage services.
 > [!div class="mx-tableFixed"]
 > | Service name | Service function |
 > |--------------|------------------|
-> | Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps               |
-> | Azure File storage  | File shares that can be accessed and managed like a file server                        |
-> | Azure Queue storage | A data store for queuing and reliably delivering messages between applications       |
-> | Azure Table storage | A NoSQL store that hosts unstructured data independent of any schema                 |
+> | Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps.              |
+> | Azure File storage  | File shares that can be accessed and managed like a file server.                     |
+> | Azure Queue storage | A data store for queuing and reliably delivering messages between applications.      |
+> | Azure Table storage | Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design..                |
 
 These services all share several common characteristics:
 
@@ -110,15 +110,15 @@ Azure provides multiple database services to store a wide variety of data types 
 > [!div class="mx-tableFixed"]
 > | Service name | Service function |
 > | --- | --- |
-> | Azure Cosmos DB | Globally distributed database that supports NoSQL options |
-> | Azure SQL Database | Fully managed relational database with auto-scale, integral intelligence, and robust security |
-> | Azure Database for MySQL | Fully managed and scalable MySQL relational database with high availability and security |
-> | Azure Database for PostgreSQL | Fully managed and scalable PostgreSQL relational database with high availability and security |
-> | SQL Server on Azure Virtual Machines | Service that hosts enterprise SQL Server apps in the cloud |
-> | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost |
-> | Azure Database Migration Service | Service that migrates databases to the cloud with no application code changes |
-> | Azure Cache for Redis | Fully managed service caches frequently used and static data to reduce data and application latency |
-> | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security |
+> | Azure Cosmos DB | Globally distributed database that supports NoSQL options. |
+> | Azure SQL Database | Fully managed relational database with auto-scale, integral intelligence, and robust security. |
+> | Azure Database for MySQL | Fully managed and scalable MySQL relational database with high availability and security. |
+> | Azure Database for PostgreSQL | Fully managed and scalable PostgreSQL relational database with high availability and security. |
+> | SQL Server on Azure Virtual Machines | Service that hosts enterprise SQL Server apps in the cloud. |
+> | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost. |
+> | Azure Database Migration Service | Service that migrates databases to the cloud with no application code changes. |
+> | Azure Cache for Redis | Fully managed service caches frequently used and static data to reduce data and application latency. |
+> | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security. |
 
 ### Web
 
@@ -143,9 +143,9 @@ Many services can assist and drive end-to-end solutions for IoT on Azure.
 > [!div class="mx-tableFixed"]
 > | Service name | Description |
 > |--------------|-------------|
-> | IoT Central | Fully managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage IoT assets at scale |
-> | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
-> | IoT Edge | Fully managed service that allows data analysis models to be pushed directly onto IoT devices, which allows them to react quickly to state changes without needing to consult cloud-based AI models
+> | IoT Central | Fully managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage IoT assets at scale. |
+> | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices. |
+> | IoT Edge | Fully managed service that allows data analysis models to be pushed directly onto IoT devices, which allows them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big data
 
@@ -172,7 +172,7 @@ Here are some of the most common AI and machine learning service types in Azure.
 > | Service name | Description |
 > |--------------|-------------|
 > | Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud. |
-> | Azure Machine Learning Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
+> | Azure ML Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
 
 A closely related set of products are the _cognitive services_. You can use these prebuilt APIs in your applications to solve complex problems.
 

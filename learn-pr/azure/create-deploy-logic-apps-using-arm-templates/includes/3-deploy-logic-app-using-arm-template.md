@@ -12,18 +12,18 @@ Think about the financial models you run for your analysts. To run a model, you 
 
 A Resource Manager _template_ precisely defines all the Resource Manager resources in a deployment. You can deploy a Resource Manager template into a resource group as a single operation.
 
-A Resource Manager template is a JSON file, making it a form of _declarative automation_. Declarative automation means that you define _what_ resources you need but not _how_ to create them. Put another way, you define what you need and it is Resource Manager's responsibility to ensure that resources are deployed correctly.
+A Resource Manager template is a JSON file, making it a form of _declarative automation_. Declarative automation means that you define _what_ resources you need but not _how_ to create them. Put another way, you define what you need, and it is the Resource Manager's responsibility to ensure that resources are deployed correctly.
 
 You can think of declarative automation similar to how web browsers display HTML files. The HTML file describes _what_ elements appear on the page, but doesn't describe _how_ to display them. The "how" is the web browser's responsibility.
 
 > [!NOTE]
-> You may hear others refer to Resource Manager templates as "ARM templates". We prefer the full names "Azure Resource Manager templates" or "Resource Manager templates".
+> You may hear Resource Manager templates referred to as "ARM templates". We prefer the full names "Azure Resource Manager templates" or "Resource Manager templates".
 
 ## Why use Resource Manager templates?
 
 Using Resource Manager templates will make your deployments faster and more repeatable. For example, you no longer have to create a VM in the portal, wait for it to finish, then create the next VM, and so on. Resource Manager takes care of the entire deployment for you.
 
-Here are some other benefits to consider.
+Here are some other benefits to consider:
 
 * **Templates improve consistency**
 
@@ -31,7 +31,7 @@ Here are some other benefits to consider.
 
 * **Templates help express complex deployments**
 
-    Templates enable you to deploy multiple resources in the correct order. For example, you wouldn't want to deploy a virtual machine before creating OS disk or network interface. Resource Manager maps out each resource and its dependent resources and creates dependent resources first. Dependency mapping helps ensure that the deployment is carried out in the correct order.
+    Templates enable you to deploy multiple resources in the correct order. For example, you wouldn't want to deploy a virtual machine before creating an OS disk or network interface. Resource Manager maps out each resource and its dependent resources, and creates dependent resources first. Dependency mapping helps ensure that the deployment is carried out in the correct order.
 
 * **Templates reduce manual, error-prone tasks**
 
@@ -47,20 +47,20 @@ Here are some other benefits to consider.
 
 * **Templates are linkable**
 
-    Resource Manager templates can be linked together to make the templates themselves modular. You can write small templates that each define a piece of a solution and combine them to create a complete system.
+    Resource Manager templates can be linked together to make the templates themselves modular. You can write small templates that each define a piece of a solution, and combine them to create a complete system.
 
 The models your financial analysts run are unique, but you see patterns in the underlying infrastructure. For example, most models require a database to store data. Many models use the same programming languages, frameworks, and operating systems to carry out the details. You can define templates that describe each individual component (compute, storage, networking, and so on), and combine them to meet each analyst's specific needs.
 
 ## What's in a Resource Manager template?
 
 > [!NOTE]
-> Here you'll see a few code examples to give you a sense of how each section is structured. Don't worry if what you see is unfamiliar to you &mdash; you'll be able to read others' templates and write your own as you gain hands-on experience with them.
+> Here, you'll see a few code examples to give you a sense about how each section is structured. Don't worry if what you see is unfamiliar to you &mdash; you'll be able to read others' templates and write your own as you gain hands-on experience with them.
 
-You may have used JSON, or JavaScript Object Notation, to send data between servers and web applications. JSON is also a popular way to describe how applications and infrastructure are configured. 
+You may have used JavaScript Object Notation (JSON) to send data between servers and web applications. JSON is also a popular way to describe how applications and infrastructure are configured. 
 
 JSON allows us to express data stored as an object (such as a virtual machine) in text. A JSON document is essentially a collection of key-value pairs. Each key is a string; its value can be a string, a number, a Boolean expression, a list of values, or an object (which is a collection of other key-value pairs).
 
-A Resource Manager template can contain the following sections. These sections are expressed using JSON notation, but are not related to the JSON language itself.
+A Resource Manager template can contain the following sections. These sections are expressed using JSON, but are not related to the JSON language itself.
 
 ```json
 {
@@ -79,7 +79,7 @@ Let's look at each of these sections in a little more detail.
 
 This is where you specify which values are configurable when the template runs. For example, you might allow users of your template to specify a username, password, or domain name.
 
-Here's an example that illustrates two parameters &ndash; one for a VM's username and one for its password.
+Here's an example that illustrates two parameters &ndash; one for a VM's username, and one for its password.
 
 ```json
 "parameters": {
@@ -100,7 +100,7 @@ Here's an example that illustrates two parameters &ndash; one for a VM's usernam
 
 ### Variables 
 
-This is where you define values that are used throughout the template. Variables can help make your templates easier to maintain. For example, you might define a storage account name one time as a variable and use that variable throughout the template. If the storage account name changes, you need to only update the variable.
+This is where you define values that are used throughout the template. Variables can help make your templates easier to maintain. For example, you might define a storage account name one time as a variable, and use that variable throughout the template. If the storage account name changes, you need to only update the variable.
 
 Here's an example that illustrates a few variables that describe networking features for a VM.
 
@@ -183,16 +183,16 @@ Here's an example that illustrates an output named "hostname". The FQDN value is
 
 ## How do I deploy a Logic Apps workflow in a template?
 
-A Logic Apps workflow is a resource in Azure. Therefore, it can be deployed in a template by adding it to the list of resources to deploy in the `resources` section of Resource Manager template. What exactly do we add to the resources section so the workflow is defined? We add the JSON workflow definition of the workflow in question to the resources section. In fact, the following JSON snippet shows a Resource Manager template to deploy the basic workflow we described in the preceding unit. As you can see from the highlight, the resources section contains the complete WorkFlow definition. 
+A Logic Apps workflow is a resource in Azure. Therefore, it can be deployed in a template by adding it to the list of resources to deploy in the `resources` section of Resource Manager template. What exactly do we add to the resources section so the workflow is defined? We add the JSON workflow definition of the workflow in question to the resources section. In fact, the following JSON snippet shows a Resource Manager template to deploy the basic workflow we described in the preceding unit. As you can see from the highlight, the resources section contains the complete workFlow definition.
 
 [!code-json[](../code/basic-template/template.json?highlight=7-43)]
 
-We can deploy this template using one of the following methods.
+We can deploy this template using one of the following methods:
 - Deploy using the Azure portal
 - Deploy using the PowerShell Az module
 - Deploy from the Azure Command Line Interface (CLI).
 
-In this module, we'll deploy templates using the Azure CLI and the `az group deployment` commands. 
+In this module, we'll deploy templates using the Azure CLI and the `az deployment group` commands.
 
 ## How do I write a Resource Manager template?
 
@@ -200,12 +200,12 @@ There are many approaches to writing Resource Manager templates. Although you ca
 
 Here are a few ways you can get a starter template:
 
-* Use the Azure portal to create a template based on the resources in an existing resource group. 
+* Use the Azure portal to create a template based on the resources in an existing resource group.
 * Start with a template you or your team built that serves a similar purpose.
-* Start with an Azure Quickstart template. You'll see how in the next part.
+* Start with an Azure QuickStart template. You'll see how in the next part.
 
-Whatever your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for the task of creating templates. This extension makes it easier to navigate your template code and provides autocompletion for many common tasks.
+Whatever your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for the task of creating templates. This extension makes it easier to navigate your template code, and provides autocompletion for many common tasks.
 
 As you explore and write your templates, you'll want to [refer to the documentation](https://docs.microsoft.com/azure/templates?azure-portal=true) to understand what resource types are available and how to use them.
 
-In the next unit, we'll examine and existing template in more detail and then deploy it from the Azure CLI. 
+In the next unit, we'll examine and existing template in more detail and then deploy it from the Azure CLI.

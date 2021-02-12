@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-file-server-high-availability.define-cluster-shared-volumes
+title: Define Cluster Shared Volumes
+metadata:
+  title: Define Cluster Shared Volumes
+  description: "Define Cluster Shared Volumes"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-define-cluster-shared-volumes.md)]

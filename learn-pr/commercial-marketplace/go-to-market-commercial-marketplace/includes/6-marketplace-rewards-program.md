@@ -2,7 +2,7 @@ Marketplace Rewards is a program that gives you access to sales, technical and m
 
 Marketplace Rewards benefits are tiered, which means you’ll unlock new benefits when your offer hits certain milestones. As you reach new milestones, you’re able to choose your benefits from a menu of options in Partner Center.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Marketplace-Rewards/player#EndOfVideo=false]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ICN3]
 
 ## Marketplace Rewards benefits
 

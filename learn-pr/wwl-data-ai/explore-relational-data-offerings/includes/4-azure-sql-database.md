@@ -7,7 +7,7 @@ Azure SQL Database is a PaaS offering from Microsoft. You create a managed datab
 > [!NOTE] 
 > A SQL Database server is a logical construct that acts as a central administrative point for multiple single or pooled databases, logins, firewall rules, auditing rules, threat detection policies, and failover groups.
 
-Azure SQL Database is available with several options: *Single Database*, *Elastic Pool*, and *Managed Instance*. The following sections describe Single Instance and Elastic Pool. Managed Instance is the subject of the next unit.
+Azure SQL Database is available with several options: *Single Database*, *Elastic Pool*, and *Managed Instance*. The following sections describe Single Database and Elastic Pool. Managed Instance is the subject of the next unit.
 
 ### Single Database
 
@@ -17,7 +17,7 @@ This option enables you to quickly set up and run a single SQL Server database. 
 
 ### Elastic Pool
 
-This option is similar to *Single Database*, except that by default multiple databases can share the same resources, such as memory, data storage space, and processing power. The resources are referred to as a *pool*. You create the pool, and only your databases can use the pool. This model is useful if you have databases with resource requirements that vary over time, and can help you to reduce costs. For example, your payroll database might require plenty of CPU power at the end of each month as you handle payroll processing, but at other times the database might become much less active. You might have another database that is used for running reports. This database might become active for several days in the middle of the month as management reports are generated, but with a lighter load at other times. Elastic Pool enables you to use the resources available in the pool, and then release the resources once processing has completed. 
+This option is similar to *Single Database*, except that by default multiple databases can share the same resources, such as memory, data storage space, and processing power through multiple-tenancy. The resources are referred to as a *pool*. You create the pool, and only your databases can use the pool. This model is useful if you have databases with resource requirements that vary over time, and can help you to reduce costs. For example, your payroll database might require plenty of CPU power at the end of each month as you handle payroll processing, but at other times the database might become much less active. You might have another database that is used for running reports. This database might become active for several days in the middle of the month as management reports are generated, but with a lighter load at other times. Elastic Pool enables you to use the resources available in the pool, and then release the resources once processing has completed. 
 
 ![Image showing the resources managed by Azure SQL Database using the Elastic Pool deployment option](../media/4-elastic-pool.png)
 
@@ -46,6 +46,6 @@ Advanced threat protection provides advanced security capabilities, such as vuln
 
 Auditing tracks database events and writes them to an audit log in your Azure storage account. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that might indicate business concerns or suspected security violations. 
 
-SQL Database helps secure your data by providing encryption. For data in motion, it uses transport layer security. For data at rest, it uses transparent data encryption. For data in use, it uses always encrypted.
+SQL Database helps secure your data by providing encryption. For data in motion, it uses Transport Layer Security. For data at rest, it uses Transparent Data Encryption. For data in use, it uses Always Encrypted. For more information on Transport Layer Security, Transparent Data Encryption, and Always Encrypted, see the links in the Summary unit.
 
 In the Wide World Importers scenario, linked servers are used to perform distributed queries. However, neither Single Database nor Elastic Pool support linked servers. If you want to use Single Database or Elastic Pool, you may need to modify the queries that use linked servers and rework the operations that depend on these features.

@@ -3,7 +3,7 @@ uid: learn.wwl.survey-components-of-azure-synapse-analytics
 metadata:
   title: Survey the Components of Azure Synapse Analytics
   description: "Survey the Components of Azure Synapse Analytics"
-  ms.date: 11/12/2020
+  ms.date: 11/19/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -21,7 +21,6 @@ abstract: |
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
 iconUrl: /learn/achievements/survey-the-components-of-azure-synapse-analytics.svg
-hidden: true
 levels:
 - beginner
 roles:

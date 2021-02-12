@@ -33,7 +33,7 @@ The following steps create an IoT Central application and generate an API token 
     az iot central app create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $APP_NAME --sku ST2 --location centralus \
-    --subdomain $APP_NAME --template iotc-pnp-preview@1.0.0 \
+    --subdomain $APP_NAME --template iotc-pnp-preview \
     --display-name 'Store Management'
     echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/admin/tokens"
 

@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-create-custom-docker-image.md)]

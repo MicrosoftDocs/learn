@@ -1,12 +1,12 @@
-Now that you know how enabling managed identities for Azure resources creates an identity for our app to use for authentication, we'll create an app that uses that identity to access secrets in the vault.
+Now that you know how enabling-managed identities for Azure resources creates an identity for your app to use for authentication, you'll create an app that uses that identity to access secrets in the vault.
 
 ::: zone pivot="csharp"
 
-## Reading secrets in an ASP.NET Core app
+## Read secrets in an ASP.NET Core app
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for .NET Core is the `KeyVaultClient` class in the Microsoft.Azure.KeyVault NuGet package. You don't need to use it directly, though &mdash; with ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
+The official Key Vault client for .NET Core is the `SecretClient` class in the Azure.Security.KeyVault.Secrets NuGet package; however, you don't need to use it directly. With ASP.NET Core's `AddAzureKeyVault` method, you can load all the secrets from a vault into the Configuration API at startup. This technique enables you to access all of your secrets by name using the same `IConfiguration` interface you use for the rest of your configuration. Apps that use `AddAzureKeyVault` require both **Get** and **List** permissions to the vault.
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
@@ -17,22 +17,29 @@ The official Key Vault client for .NET Core is the `KeyVaultClient` class in the
 
 ::: zone pivot="javascript"
 
-## Reading secrets in a Node.js app
+## Read secrets in a Node.js app
 
 The Azure Key Vault API is a REST API that handles all management and usage of keys and vaults. Each secret in a vault has a unique URL, and secret values are retrieved with HTTP GET requests.
 
-The official Key Vault client for Node.js apps is the `KeyVaultClient` class in the `azure-keyvault` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `getSecrets` method, which loads a list of secrets and requires the **List** permission.
+The official Key Vault client for Node.js apps is the `SecretClient` class in the `@azure/keyvault-secrets` npm package. Apps that include secret names in their configuration or code will generally only need to use its `getSecret` method, which loads a secret value given its name. `getSecret` requires your app's identity to have the **Get** permission on the vault. Apps designed to load all secrets from a vault will also use the `listPropertiesOfSecrets` method, which loads a list of secrets and requires the **List** permission.
 
-Before your app can create a `KeyVaultClient` instance, it must get a credential object by authenticating to the vault. To authenticate, use the one of the login functions provided by the `ms-rest-azure` npm package. Each of these functions will return a credential object that can be used to create a `KeyVaultClient`. The `loginWithAppServiceMSI` function will automatically use the managed identity credentials that App Service makes available to your app via environment variables. For test environments or other non-App Service environments where your app does not have access to a managed identity, you can manually create a service principal for your app and use the `loginWithServicePrincipalSecret` function to authenticate.
+Before your app can create a `SecretClient` instance, it must get a credential object for authenticating to the vault. To authenticate, use the `DefaultAzureCredential` provided by the `@azure/identity` npm package. The `DefaultAzureCredential` is appropriate for most scenarios where the application is intended to ultimately be run in the Azure Cloud. This is because the `DefaultAzureCredential` combines credentials commonly used to authenticate when deployed, with credentials used to authenticate in a development environment. The `DefaultAzureCredential` will attempt to authenticate via the following mechanisms in order:
+
+* Environment - The `DefaultAzureCredential` will read account information specified via environment variables and use it to authenticate.
+* Managed Identity - If the application is deployed to an Azure host with Managed Identity enabled, the `DefaultAzureCredential` will authenticate with that account.
+* Visual Studio Code - If the developer has authenticated via the Visual Studio Code Azure Account plugin, the `DefaultAzureCredential` will authenticate with that account.
+* Azure CLI - If the developer has authenticated an account via the Azure CLI az login command, the `DefaultAzureCredential` will authenticate with that account.
+
+For more information, see the [documentation](https://github.com/Azure/azure-sdk-for-js/blob/master/sdk/identity/identity/README.md#defaultazurecredential).
 
 > [!TIP]
 > Regardless of the framework or language you use to build your app, you should design it to cache secret values locally or load them into memory at startup unless you have a specific reason not to. Reading them directly from the vault every time you need them is unnecessarily slow and expensive.
 
 ::: zone-end
 
-## Handling secrets in an app
+## Handle secrets in an app
 
-Once a secret is loaded into your app, it's up to your app to handle it securely. In the app we build in this module, we write our secret value out to the client response and view it in a web browser to demonstrate that it has been loaded successfully. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you'll use secrets to do things like initialize client libraries for databases or remote APIs.
+After a secret is loaded into your app, it's up to your app to handle it securely. In the app you build in this module, you'll write your secret value out to the client response, and to demonstrate that it has been loaded successfully, you'll view it in a web browser. **Returning a secret value to the client is *not* something you'd normally do!** Usually, you'll use secrets to do things like initialize client libraries for databases or remote APIs.
 
 > [!IMPORTANT]
 > Always carefully review your code to ensure that your app never writes secrets to any kind of output, including logs, storage, and responses.
@@ -41,11 +48,11 @@ Once a secret is loaded into your app, it's up to your app to handle it securely
 
 ::: zone pivot="csharp"
 
-We'll create a new ASP.NET Core web API and use `AddAzureKeyVault` to load the secret from our vault.
+To load the secret from our vault, you'll create a new ASP.NET Core web API, and use `AddAzureKeyVault`.
 
 ### Create the app
 
-In the Azure Cloud Shell terminal, run the following to create a new ASP.NET Core web API application and open it in the editor.
+In the Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
 
 ```console
 dotnet new webapi -o KeyVaultDemoApp
@@ -53,10 +60,11 @@ cd KeyVaultDemoApp
 code .
 ```
 
-After the editor loads, run the following commands in the shell to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies.
+After the editor loads, to add the NuGet package containing `AddAzureKeyVault` and restore all of the app's dependencies, in the Azure Cloud Shell, run the following commands.
 
 ```console
-dotnet add package Microsoft.Extensions.Configuration.AzureKeyVault -v 2.1.1
+dotnet add package Azure.Identity
+dotnet add package Azure.Extensions.AspNetCore.Configuration.Secrets
 dotnet restore
 ```
 
@@ -67,6 +75,7 @@ To demonstrate good usage of Key Vault, we will modify our app to load secrets f
 First, the app startup: Open `Program.cs`, delete the contents and replace them with the following code:
 
 ```csharp
+using Azure.Identity;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -80,8 +89,12 @@ namespace KeyVaultDemoApp
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                })
                 .ConfigureAppConfiguration((context, config) =>
                 {
                     // Build the current set of configuration to load values from
@@ -89,16 +102,16 @@ namespace KeyVaultDemoApp
                     var builtConfig = config.Build();
 
                     // Use VaultName from the configuration to create the full vault URL.
-                    var vaultUrl = $"https://{builtConfig["VaultName"]}.vault.azure.net/";
+                    var vaultName = builtConfig["VaultName"];
+                    Uri vaultUri = new Uri($"https://{vaultName}.vault.azure.net/");
 
                     // Load all secrets from the vault into configuration. This will automatically
                     // authenticate to the vault using a managed identity. If a managed identity
                     // is not available, it will check if Visual Studio and/or the Azure CLI are
                     // installed locally and see if they are configured with credentials that can
                     // access the vault.
-                    config.AddAzureKeyVault(vaultUrl);
-                })
-                .UseStartup<Startup>();
+                    config.AddAzureKeyVault(vaultUri, new DefaultAzureCredential());
+                });
     }
 }
 ```
@@ -111,7 +124,7 @@ The only change from the starter code is the addition of `ConfigureAppConfigurat
 Next, the controller: Create a new file in the `Controllers` folder called `SecretTestController.cs` and paste the following code into it.
 
 > [!TIP]
-> To create a new file, use the `touch` command in the shell. In this case, use `touch Controllers/SecretTestController.cs`. You'll need to click the refresh button in the Files pane of the editor to see it there.
+> To create a new file, use the `touch` command in the shell. In this case, use `touch Controllers/SecretTestController.cs`. To see it there, in the Files pane of the editor, click the refresh button.
 
 ```csharp
 using System;
@@ -163,31 +176,31 @@ Run `dotnet build` in the shell to make sure everything compiles. The app is rea
 
 ::: zone pivot="javascript"
 
-We'll create a new web API with Express.js and use the `azure-keyvault` and `ms-rest-azure` packages to load the secret from our vault.
+We'll create a new web API with Express.js and use the `@azure/keyvault-secrets` and `@azure/identity` packages to load the secret from our vault.
 
 ### Create the app
 
-In the Azure Cloud Shell terminal, run the following to initialize a new Node.js application, install the needed packages, and open a new file in the editor.
+In the Azure Cloud Shell terminal, to initialize a new Node.js app, install the needed packages, and open a new file in the editor, run the following code.
 
 ```console
 mkdir KeyVaultDemoApp
 cd KeyVaultDemoApp
 npm init -y
-npm install ms-rest-azure azure-keyvault express
+npm install @azure/identity @azure/keyvault-secrets express
 touch app.js
 code app.js
 ```
 
 ### Add code to load and use secrets
 
-To demonstrate good usage of Key Vault, our app will load secrets from the vault at startup. To demonstrate that our secrets have been loaded, we'll create an endpoint that displays the value of the **SecretPassword** secret.
+To demonstrate good usage of Key Vault, your app will load secrets from the vault at startup. To demonstrate that your secrets have been loaded, you'll create an endpoint that displays the value of the **SecretPassword** secret.
 
-First, paste the following code into the editor to set up the application. This will import the necessary packages, set up the port and vault URL configuration, and create a new object to hold the secret names and values.
+First, to set up the app, paste the following code into the editor. This will import the necessary packages, set up the port and vault URL configuration, and create a new object to hold the secret names and values.
 
 ```javascript
 // Importing dependencies
-const msRestAzure = require('ms-rest-azure');
-const keyVault = require('azure-keyvault');
+const { DefaultAzureCredential } = require("@azure/identity");
+const { SecretClient } = require("@azure/keyvault-secrets");
 const app = require('express')();
 
 // Initialize port
@@ -203,41 +216,24 @@ let vaultSecretsMap = {};
 > [!IMPORTANT]
 > Make sure to save files as you work on them, especially when you're finished. You can do this either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
-Next, we'll add the code to authenticate to the vault and load the secrets. We'll add this as two separate functions. Insert a couple of blank lines after the code you previously added and then paste in the following code:
+Next, you'll add the code to authenticate to the vault and load the secrets. You'll add this as two separate functions. Insert a couple of blank lines after the code you previously added, and then paste in the following code.
 
 ```javascript
-const authenticateToKeyVault = async () => {
+const getKeyVaultSecrets = async () => {
+  // Create a key vault secret client
+  let secretClient = new SecretClient(vaultUri, new DefaultAzureCredential());
   try {
-    let credentials;
-    if (process.env.NODE_ENV === 'production') {
-      credentials = await msRestAzure.loginWithAppServiceMSI({ resource: 'https://vault.azure.net' });
-    } else {
-      // For non-App Service environments. Set the APP_ID, APP_SECRET and TENANT_ID environment
-      // variables to use.
-      const appId = process.env.APP_ID;
-      const appSecret = process.env.APP_SECRET;
-      const tenantId = process.env.TENANT_ID;
-      credentials = await msRestAzure.loginWithServicePrincipalSecret(appId, appSecret, tenantId);
-    }
-    return credentials;
-  } catch(err) {
-    throw err.message;
-  }
-}
-
-const getKeyVaultSecrets = async credentials => {
-  // Create a key vault client
-  let keyVaultClient = new keyVault.KeyVaultClient(credentials);
-  try {
-    let secrets = await keyVaultClient.getSecrets(vaultUrl);
-    // For each secret name, get the secret value from the vault
-    for (const secret of secrets) {
+    // Iterate through each secret in the vault
+    listPropertiesOfSecrets = client.listPropertiesOfSecrets();
+    while (true) {
+      let { done, value } = await listPropertiesOfSecrets.next();
+      if (done) {
+        break;
+      }
       // Only load enabled secrets - getSecret will return an error for disabled secrets
-      if (secret.attributes.enabled) {
-        let secretId = secret.id;
-        let secretName = secretId.substring(secretId.lastIndexOf('/') + 1);
-        let secretValue = await keyVaultClient.getSecret(vaultUrl, secretName, '');
-        vaultSecretsMap[secretName] = secretValue.value;
+      if (value.enabled) {
+        const secret = await client.getSecret(value.name);
+        vaultSecretsMap[value.name] = secret.value;
       }
     }
   } catch(err) {
@@ -246,7 +242,7 @@ const getKeyVaultSecrets = async credentials => {
 }
 ```
 
-Now create the Express endpoint we'll use to test whether our secret was loaded. Paste in this code next:
+To test whether our secret was loaded, create the Express endpoint. Paste in this code.
 
 ```javascript
 app.get('/api/SecretTest', (req, res) => {
@@ -262,18 +258,17 @@ app.get('/api/SecretTest', (req, res) => {
 });
 ```
 
-Finally, we'll call our functions to load the secrets from our vault, then start the app. Paste in this last snippet to complete the application:
+Lastly, you'll call our functions to load the secrets from our vault, then start the app. To complete the app, paste in this last snippet.
 
 ```javascript
 (async () =>  {
-  let credentials = await authenticateToKeyVault();
-  await getKeyVaultSecrets(credentials);
+  await getKeyVaultSecrets();
   app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
   });
 })().catch(err => console.log(err));
 ```
 
-We're finished writing code, so make sure to save the file. The app is ready to run &mdash; now let's get it into Azure!
+You're finished writing code, so make sure to save the file. The app is ready to run &mdash; now let's get it into Azure!
 
 ::: zone-end
