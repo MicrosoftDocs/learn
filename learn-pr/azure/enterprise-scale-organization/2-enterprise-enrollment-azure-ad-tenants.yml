@@ -36,6 +36,6 @@ quiz:
     - content: Multiple Azure AD tenants can't function in the same enrollment.
       isCorrect: false
       explanation: Multiple Azure AD tenants can function in the same enrollment.
-    - content: Don't start by implementing an Azure AD-only identity deployment if your organization already has an identity infrastructure.
+    - content: Start by implementing an Azure AD-only identity deployment if your organization already has an identity infrastructure.
       isCorrect: false
       explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for software as a service (SaaS) applications, enterprise applications, and devices.

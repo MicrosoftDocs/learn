@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.5-lead-management
+title: Commercial marketplace lead management
+metadata:
+  title: Commercial marketplace lead management
+  description: Overview of receiving customer leads from your commercial marketplace listing, including resources to configure your CRM
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-lead-management.md)]

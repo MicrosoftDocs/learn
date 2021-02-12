@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics
+hidden: true
 metadata:
   title: Test hypothesis by simulating statistics
   description: learn how to test hypothesis by simulating statistics

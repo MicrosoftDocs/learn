@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-failover-clustering.implement-windows-server-failover-clustering
+title: Implement Windows Server failover clustering
+metadata:
+  title: Implement Windows Server failover clustering
+  description: "Implement Windows Server failover clustering"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 16
+content: |
+  [!include[](includes/4-implement-windows-server-failover-cluster.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What type of a failover cluster witness was implemented in the demonstration video?"
+    choices:
+    - content: "Disk"
+      isCorrect: false
+      explanation: "That's incorrect. The demonstration video illustrated implementation of a file share witness."
+    - content: "File share"
+      isCorrect: true
+      explanation: "That's correct. The demonstration video illustrated implementation of a file share witness."
+    - content: "Cloud"
+      isCorrect: false
+      explanation: "That's incorrect. The demonstration video illustrated implementation of a file share witness."

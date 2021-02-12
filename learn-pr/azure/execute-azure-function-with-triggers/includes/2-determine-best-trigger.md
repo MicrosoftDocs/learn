@@ -1,10 +1,10 @@
-An Azure function app doesn't do work until something tells it to execute. For example, we could create an Azure function to send out a reminder text message to our customers before an appointment. If we don't tell the function when it should run, our customers will never receive a message. 
+An Azure Functions app doesn't do work until something tells it to execute. For example, we could create an Azure Function to send out a reminder text message to our customers before an appointment. If we don't tell the function when it should run, our customers will never receive a message. 
 
 Here, you'll examine triggers at a high level and explore the most common types of triggers.
 
 ## What is a trigger?
 
-A trigger is an object that defines how an Azure function is invoked. For example, if you want a function to execute every 10 minutes, you could use a timer trigger.
+A trigger is an object that defines how an Azure Function is invoked. For example, if you want a function to execute every 10 minutes, you could use a timer trigger.
 
 Every function must have exactly one trigger associated with it. If you want to execute a piece of logic that runs under multiple conditions, you need to create multiple functions that share the same core function code.
 

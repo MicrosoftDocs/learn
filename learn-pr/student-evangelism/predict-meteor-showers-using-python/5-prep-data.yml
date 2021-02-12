@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-meteor-showers-using-python.5-prep-data
 metadata:
   title: Cleanse meteor data
   description: Learn how to cleanse meteor data by using Python and pandas.
-  ms.date: 10/20/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama 
   ms.topic: interactive-tutorial

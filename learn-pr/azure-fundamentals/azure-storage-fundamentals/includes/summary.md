@@ -8,7 +8,6 @@ In addition, Azure provides several access tiers that you can use to balance you
 
 ## Learn more
 
-- [Azure data storage options](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/?azure-portal=true)
 - [Azure Files documentation](https://docs.microsoft.com/azure/storage/files/?azure-portal=true)
 - [Azure Storage documentation](https://docs.microsoft.com/azure/storage/?azure-portal=true)
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)

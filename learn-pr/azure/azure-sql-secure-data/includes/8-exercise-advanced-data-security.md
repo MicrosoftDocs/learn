@@ -7,7 +7,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. On the left pane, under **Security**, select **Azure Defender**. Azure Defender should already be enabled. If it isn't, select **ON**, and then select **Save**.
+1. On the left pane, under **Security**, select **Security Center**. Azure Defender should already be enabled. Select **Configure**.
 
 1. Review the selections you've made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
 
@@ -47,9 +47,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Vulnerability Assessment
 
-1. Select the **X** at the upper right of the **Data Discovery & Classification** pane, then select the **Security Center** tab under Security to view the Azure Defender dashboard. 
+1. Select the **X** at the upper right of the **Data Discovery & Classification** pane, then select the **Security Center** tab under Security to view the **Security Center** dashboard for your SQL Database. 
 
-1. To begin reviewing the Vulnerability Assessment capabilities, select the **Vulnerability Assessment** tile.  
+1. To begin reviewing the Vulnerability Assessment capabilities, under **Vulnerability assessment findings**, select **View additional findings in Vulnerability Assessment**.  
 
 1. Select **Scan** to get the most current Vulnerability Assessment results. This process takes a few moments while Vulnerability Assessment scans all the databases in your Azure SQL Database logical server.
 
@@ -78,9 +78,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Advanced Threat Protection
 
-1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Azure Defender** dashboard. Select the **Advanced Threat Protection** tile to display more detail and review the results. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
+1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Security Center** dashboard for your SQL Database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** has not detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
 
-    You aren't likely to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
+    You aren't expected to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
     Advanced Threat Protection can be used to identify threats and alert you when it suspects that any of the following things is occurring:  
 
@@ -123,9 +123,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Security Center**. 
 
-    The **Advanced Threat Protection** tile now displays an alert.  
+    Under **Security incidents and alerts**, select **Check Azure Defender Alerts on this resource in Security Center**.  
 
-1. Select the **Advanced Threat Protection** tile to see the overall security alerts.  
+1. You can now see the overall security alerts.  
 
     :::image type="content" source="../media/8-security-alerts.png" alt-text="Screenshot of the security alerts." lightbox="../media/8-security-alerts.png":::
 

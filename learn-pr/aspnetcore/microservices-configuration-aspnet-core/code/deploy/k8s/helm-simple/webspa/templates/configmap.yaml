@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webspa-cm
+  labels:
+    app: eshop
+    service: webspa
+data:
+  ASPNETCORE_ENVIRONMENT: Docker
+  ASPNETCORE_URLS: http://0.0.0.0:80
+  CallBackUrl: {{ .Values.protocol }}://{{ .Values.host }}
+  DPConnectionString: basketdata
+  BasketUrl: {{ .Values.protocol }}://{{ .Values.host }}/apigateway
+  CallBackUrl: {{ .Values.protocol }}://{{ .Values.host }}/
+  IdentityUrl: {{ .Values.protocol }}://{{ .Values.host }}/identity
+  IdentityUrlHC: http://identity-api/hc
+  IsClusterEnv: "True"
+  OrchestratorType: K8S
+  PATH_BASE: /
+  PurchaseUrl: {{ .Values.protocol }}://{{ .Values.host }}/apigateway
+  PurchaseUrlHC: http://ordering-api/hc
+  SignalrHubUrl: {{ .Values.protocol }}://{{ .Values.host }}/apigateway
+  UseCustomizationData: "True"
+  UseLoadTest: "False"
+  UseFeatureManagement: "True"
+  FeatureManagement__Coupons: "True"
+  #AppConfig__Endpoint: <connection-string>
+  

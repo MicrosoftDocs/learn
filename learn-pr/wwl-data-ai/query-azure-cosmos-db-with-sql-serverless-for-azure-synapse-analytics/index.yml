@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics
+metadata:
+  title: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+  description: "Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics"
+  ms.date: 12/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+summary: In this module you learn how to use the Synapse serverless SQL pools to query the Azure Cosmos DB data made available by Azure Synapse Link.
+abstract: |
+  After completing this module, you'll be able to:
+  - Write basic queries against a single container
+  - Perform cross dataset queries in Cosmos DB
+  - Work with windowing function
+  - Perform complex queries with JSON data
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.introduction
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.write-basic-queries-against-single-container
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.perform-cross-container-queries
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.perform-complex-queries-with-json-data
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.work-with-windowing-functions-other-aggregations
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.knowledge-check
+- learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.badge

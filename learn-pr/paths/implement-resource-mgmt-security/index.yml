@@ -30,8 +30,8 @@ products:
 - azure-policy
 - azure-rbac
 modules:
-- learn.introduction-to-security
-- learn.intro-to-governance
+- learn.azure.protect-against-security-threats-azure
+- learn.azure.build-cloud-governance-strategy-azure
 - learn.control-and-organize-with-resource-manager
 - learn.secure-azure-resources-with-rbac
 - learn.azure.manage-subscription-access-azure-rbac

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.6-design-3d
+title: Design and develop in mixed reality
+metadata:
+  title: Design and develop in mixed reality
+  description: Learn about design and development processes that are useful for mixed reality and 3D content. Explore bodystorming, acting, storyboarding, and the Mixed Reality Toolkit.
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-design-3d.md)]

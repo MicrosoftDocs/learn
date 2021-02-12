@@ -97,6 +97,19 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "azure-networking",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
              {
                 "src": "cela-accessibility",
                 "files": [
@@ -371,6 +384,19 @@
                 "dest": "modules"
             },
             {
+                "src": "wwl-sci",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "xamarin",
                 "files": [
                     "**/*.yml",
@@ -404,6 +430,19 @@
                 ],
                 "exclude": [
                     "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "powershell",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -848,6 +887,12 @@
                     "zh-tw"
                 ],
                 "wwl-windows-server/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-sci/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

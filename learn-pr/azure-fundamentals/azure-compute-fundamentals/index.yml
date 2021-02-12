@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.azure-compute-fundamentals
 metadata:
-  title: Explore Azure compute services
-  description: Learn about the different services that are available in Azure compute.
+  title: Explore Azure compute services (AZ-900)
+  description: Learn about the different services that are available in Azure compute Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure compute services
@@ -36,7 +36,6 @@ products:
 - azure-container-instances
 - azure-container-registry
 - azure-kubernetes-service
-- windows-virtual-desktop
 units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.overview

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-templates-command-line-github-actions.7-exercise-github-actions
-title: Exercise - Deploying your ARM templates as part of your CI/CD efforts with GitHub Actions
+title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
 metadata:
-  title: Exercise - Deploying your ARM templates as part of your CI/CD efforts with GitHub Actions
+  title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
   description: Deploying your ARM templates as part of your CI/CD efforts with GitHub Actions
   ms.date: 10/15/2020
   author: pierreroman

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Which version control software does Azure Data Factory integrate with?"
+    choices:
+    - content: "Team Foundation Server."
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Factory does not integrate with Team Foundation Server."
+    - content: "Source Safe ."
+      isCorrect: false
+      explanation: "Incorrect. Source Safe does not integrate with Team Foundation Server."
+    - content: "Git repositories."
+      isCorrect: true
+      explanation: "Correct. Azure Data Factory allows you to configure a Git repository with either Azure Repos or GitHub, and is a version control system that allows for easier change tracking and collaboration."
+  - content: "Which feature commits the changes of Azure Data Factory work in a custom branch created with the main branch in a Git repository?"
+    choices:
+    - content: "Repo."
+      isCorrect: false
+      explanation: "Incorrect. Repo is the shorthand term for a repository, which is a location in which your source code for Azure Data Factory solutions are stored."
+    - content: "Pull request."
+      isCorrect: true
+      explanation: "Correct. After a developer is satisfied with their changes, they create a pull request from their feature branch to the master or collaboration branch to get their changes reviewed by peers."
+    - content: "Commit."
+      isCorrect: false
+      explanation: "Incorrect. A commit is an aspect of working with a Git repository that will commit the work that you do to the repository that you are working on."
+  - content: "Which feature in alerts can be used to determine how an alert is fired?"
+    choices:
+    - content: "Add rule."
+      isCorrect: false
+      explanation: "Incorrect. A rule is the main definition of the alert that includes a rule name and description."
+    - content: "Add severity."
+      isCorrect: false
+      explanation: "Incorrect. Severity is a mandatory field in the Alert window that enables you to assign the severity level of the alert being defined."
+    - content: "Add criteria."
+      isCorrect: true
+      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"

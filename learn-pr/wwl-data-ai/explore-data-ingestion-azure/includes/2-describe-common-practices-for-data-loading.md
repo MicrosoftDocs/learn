@@ -1,4 +1,4 @@
- Data ingestion is the first part of any data warehousing solution. It is arguably the most important part. If you lose any data at this point, then any resulting information can be inaccurate, failing to represent the facts on which you might base your business decisions. In a big data system, data ingestion has to be fast enough to capture the large quantities data that may be heading your way, and have enough compute power to process this data in a timely manner. 
+Data ingestion is the first part of any data warehousing solution. It is arguably the most important part. If you lose any data at this point, then any resulting information can be inaccurate, failing to represent the facts on which you might base your business decisions. In a big data system, data ingestion has to be fast enough to capture the large quantities of data that may be heading your way, and have enough compute power to process this data in a timely manner. 
  
  Azure provides several services you can use to ingest data. These services can operate with almost any source. In this unit, you'll examine some of the more popular tools used with Azure: Azure Data Factory, PolyBase, SQL Server Integration Services, and Azure Databricks.
 
@@ -58,7 +58,7 @@ PolyBase is a feature of SQL Server and Azure Synapse Analytics that enables you
 > [!NOTE]
 > Spark is a parallel-processing engine that supports large-scale analytics.
 
-PolyBase enables you to transfer data from an external data source into a table, as well as copy data from an external data source in Azure SYnapse Analytics or SQL Server. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores. 
+PolyBase enables you to transfer data from an external data source into a table, as well as copy data from an external data source in Azure Synapse Analytics or SQL Server. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores.
 
 > [!NOTE]
 > Azure SQL Database does not support PolyBase.
@@ -83,7 +83,7 @@ SSIS is an on-premises utility. However, Azure Data factory allows you to run yo
 The SSIS Feature Pack for Azure is an extension that provides  components that connect to Azure services, transfer data between Azure and on-premises data sources, and process data stored in Azure. The components in the feature pack support transfer to or from Azure storage, Azure Data Lake, and Azure HDInsight. Using these components, you can perform large-scale processing of ingested data.
 
 > [!div class="mx-imgBorder"]
-> ![Image showing SQL Database using PolyBase to access external data](../media/2-azure-connector-bigdata-scenario.png)
+> ![Showing SQL Database using PolyBase to access external data](../media/2-azure-connector-bigdata-scenario.png)
 
 ## Ingest data using Azure Databricks
 

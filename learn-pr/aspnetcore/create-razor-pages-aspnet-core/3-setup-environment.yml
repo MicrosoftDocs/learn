@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.3-setup-environment
 metadata:
-  title: Set up the environment and explore the Razor Pages project example ContosoPets.UI
+  title: Exercise - Set up the environment
   description: Set up the environment, provision Azure resources, download the ASP.NET Core starter project, and tour the starter project.
-  ms.date: 07/31/2019
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
-title: Set up the environment
+title: Exercise - Set up the environment
 azureSandbox: true
 interactive: bash
 durationInMinutes: 10
