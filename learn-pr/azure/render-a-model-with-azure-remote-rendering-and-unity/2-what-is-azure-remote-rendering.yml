@@ -9,6 +9,6 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-remote-rendering.md)]
