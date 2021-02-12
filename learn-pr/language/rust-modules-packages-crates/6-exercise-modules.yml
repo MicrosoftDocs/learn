@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-modules-packages-crates.6-exercise-modules
+metadata:
+  title: Exercise - Modules
+  description: Use what you've learned about modules to fix the code.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Modules
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-exercise-modules.md)]

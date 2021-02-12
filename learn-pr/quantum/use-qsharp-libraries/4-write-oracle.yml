@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.use-qsharp-libraries.4-write-oracle
+title: Exercise - Write an oracle to validate ISBNs
+metadata:
+  title: Exercise - Write an oracle to validate ISBNs
+  description: Write the oracle for later use in Grover's algorithm, which performs an arithmetic mapping to a target register in order to flag the states corresponding to a valid ISBN.
+  ms.date: 09/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-write-oracle.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-concurrency.4-challenge
+metadata:
+  title: Challenge
+  description: Calculate Fibonacci numbers faster with concurrency.
+  ms.date: 01/25/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-challenge.md)]
