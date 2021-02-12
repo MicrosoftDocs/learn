@@ -272,3 +272,53 @@ achievements:
   title: Review planning and managing Azure costs
   summary: Review planning and managing Azure costs
   iconUrl: /learn/achievements/review-planning-managing-costs.svg
+- uid: learn.explore-azure-infrastructure.badge
+  type: badge
+  title: Core Cloud Services - Azure architecture and service guarantees
+  summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
+  iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+- uid: learn.intro-to-compute.badge
+  type: badge
+  title: Core Cloud Services - Azure compute options
+  summary: Review the Azure compute services and explore how they can solve common business needs.
+  iconUrl: /learn/achievements/intro-to-azure-compute.svg
+- uid: learn.intro-to-azure-networking.badge
+  type: badge
+  title: Core Cloud Services - Azure networking options
+  summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
+  iconUrl: /learn/achievements/intro-to-azure-networking.svg
+- uid: learn.intro-to-data-in-azure.badge
+  type: badge
+  title: Core Cloud Services - Azure data storage options
+  summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
+  iconUrl: /learn/achievements/intro-to-data-in-azure.svg
+- uid: learn.intro-to-governance.badge
+  type: badge
+  title: Apply and monitor infrastructure standards with Azure Policy
+  summary: Learn about governance and management in Azure services.
+  iconUrl: /learn/achievements/intro-to-governance.svg
+- uid: learn.introduction-to-security.badge
+  type: badge
+  title: Security, responsibility, and trust in Azure
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+  iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+- uid: learn.predict-costs-and-optimize-spending.badge
+  type: badge
+  title: Predict costs and optimize spending for Azure 
+  summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+  iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+- uid: learn.principles-cloud-computing.badge
+  type: badge
+  title: Cloud Concepts - Principles of cloud computing
+  summary: Explore the core concepts of cloud computing and how it can help your business.
+  iconUrl: /learn/achievements/principles-cloud-computing.svg
+- uid: learn.welcome-to-azure.badge
+  type: badge
+  title: Core Cloud Services - Introduction to Azure
+  summary: Get started with Azure by creating and configuring your first website in the cloud.
+  iconUrl: /learn/achievements/welcome-to-azure.svg
+- uid: learn.cloud-foundations.trophy
+  type: trophy
+  title: Azure fundamentals
+  summary: New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  iconUrl: /learn/achievements/azure-fundamentals.svg
