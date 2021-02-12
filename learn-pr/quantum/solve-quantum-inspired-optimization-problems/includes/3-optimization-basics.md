@@ -9,11 +9,11 @@ Let's explore a few landscapes and see which are good candidates for QIO.
 
 ## A single, smooth landscape
 
-Consider the following plot of a cost function, which looks like a single smooth valley:
+Consider the following plot of a cost function, which looks like a single, smooth valley:
 
 ![A plot of an optimization landscape that looks like a single smooth valley.](../media/plot-simple.png)
 
-This kind of problem is easily solved with techniques such as *gradient descent*, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point in the optimization landscape. QIO offers no advantages over other techniques with these straightforward problems.
+This kind of problem is easily solved with techniques such as *gradient descent*, where you begin from an initial starting point and greedily move to any solution with a lower cost. After a few moves, the solution converges to the *global minimum*. The global minimum is the lowest point in the optimization landscape. QIO offers no advantages over other techniques to solve these straightforward problems.
 
 ## A structured, rugged landscape
 
@@ -21,7 +21,7 @@ QIO works best with problems where the landscape is rugged, with many hills and 
 
 ![A plot of an optimization landscape that shows many peaks and valleys.](../media/plot-rugged.png)
 
-In this scenario, one of the greatest challenges is to avoid getting stuck at any of the sub-optimal *local minima*. A rugged landscape can have multiple valleys. Each of these valleys has a lowest point, which is the local minimum. One of these points will be the lowest of them all, and that point is known as the global minimum. 
+In this scenario, one of the greatest challenges is to avoid getting stuck at any of the sub-optimal *local minima*. A rugged landscape can have multiple valleys. Each of these valleys has a lowest point, which is a local minimum. One of these points will be the lowest of them all, and that point is known as the global minimum. 
 
 Such rugged landscapes present situations where QIO can outperform other techniques.
 
@@ -41,13 +41,13 @@ The key to generating a cost function for your problem is in recognizing what pa
 
 In principle, the cost function could be any mathematical function $f = f(x_0, x_1, \dots)$, where the function variables $x_1, x_2, \dots$ encode the various configurations. 
 
-For example, you could generate the previously shown smooth landscape by using a quadratic function of two continuous variables $f(x, y) = x^2 + y^2$. However, certain optimization methods might expect the cost function to take a particular form. For instance, the Azure Quantum solvers expect a *binary optimization problem*. For this problem type, configurations must be expressed via binary variables with $x_i \in \\{0, 1\\}$. 
+For example, you could generate the previously discussed smooth landscape by using a quadratic function of two continuous variables $f(x, y) = x^2 + y^2$. However, certain optimization methods might expect the cost function to take a particular form. For instance, the Azure Quantum solvers expect a *binary optimization problem*. For this problem type, configurations must be expressed via binary variables with $x_i \in \\{0, 1\\}$. 
 
 Many problems are naturally suited to be expressed in this form, such as whether a certain mineral chunk is loaded on the first or the second container.
 
-The term *polynomial unconstrained binary optimization* (PUBO) refers to cost functions that are polynomials over the binary variables. The term *unconstrained* implies that we do not impose additional restrictions on which variable assignments are valid, which simplifies the solver's task. 
+The term *polynomial unconstrained binary optimization* (PUBO) refers to cost functions that are polynomials over the binary variables. The term *unconstrained* implies that we don't impose additional restrictions on which variable assignments are valid, which simplifies the solver's task. 
 
-In the [next module](/learn/modules/solve-job-shop-optimization-azure-quantum?azure-portal=true), you'll learn how to get around this restriction and express constraints in a PUBO setting. A special subset of PUBO problems is the *quadratic unconstrained binary optimization* (QUBO) problems, which employ polynomial cost functions of degree 2. The Azure Quantum solvers natively work on PUBOs of any degree, but other providers that are available on Azure might work only with QUBO problems.
+In the next module, [Solve a job shop scheduling optimization problem by using Azure Quantum](/learn/modules/solve-job-shop-optimization-azure-quantum?azure-portal=true), you'll learn how to get around this restriction and express constraints in a PUBO setting. A special subset of PUBO problems is the *quadratic unconstrained binary optimization* (QUBO) problems, which employ polynomial cost functions of degree 2. The Azure Quantum solvers natively work on PUBOs of any degree, but other providers that are available on Azure might work only with QUBO problems.
 
 You might also have come across problems referred to as *Ising* problems. It's sometimes more convenient to give our binary variables the values $\\{-1, 1\\}$ instead of $\\{0, 1\\}$. Otherwise, these problems function identically to PUBO problems.
 
