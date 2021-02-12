@@ -1,6 +1,6 @@
 In this unit, you'll run the app and view it on the webpage you created. Then, take a look at how to troubleshoot common experiences.
 
-## Run the app
+## Run and debug the app
 
 You can set up Visual Studio Code to run and debug a Flask app. Then, use your browser to see the app in action.
 
