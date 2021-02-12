@@ -9,49 +9,49 @@ Another potential use for Speech-to-Text is to perform the translation operation
 ## Exercise - convert audio from a microphone
 
 1. Create a local folder where you will store the project for this exercise.
-1. Start Visual Studio Code and open the folder you created in step 1.
+2. Start Visual Studio Code and open the folder you created in step 1.
 
 ::: zone pivot="python"
 
-1. Create a new file in your folder called **microphoneinput.py**.
-1. Paste the following code into the newly created file.
+3. Create a new file in your folder called **microphoneinput.py**.
+4. Paste the following code into the newly created file.
 
-```python
-import azure.cognitiveservices.speech as speechsdk
+    ```python
+    import azure.cognitiveservices.speech as speechsdk
 
-speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
-speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+    speech_key, service_region = "YourSubscriptionKey", "YourServiceRegion"
+    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 
-speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
+    speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
 
-print("Begin speaking...")
+    print("Begin speaking...")
 
-result = speech_recognizer.recognize_once()
-if result.reason == speechsdk.ResultReason.RecognizedSpeech:
-    print("Recognized: {}".format(result.text))
-elif result.reason == speechsdk.ResultReason.NoMatch:
-    print("No speech could be recognized: {}".format(result.no_match_details))
-elif result.reason == speechsdk.ResultReason.Canceled:
-    cancellation_details = result.cancellation_details
-    print("Speech Recognition canceled: {}".format(cancellation_details.reason))
-    if cancellation_details.reason == speechsdk.CancellationReason.Error:
-        print("Error details: {}".format(cancellation_details.error_details))
-```
+    result = speech_recognizer.recognize_once()
+    if result.reason == speechsdk.ResultReason.RecognizedSpeech:
+        print("Recognized: {}".format(result.text))
+    elif result.reason == speechsdk.ResultReason.NoMatch:
+        print("No speech could be recognized: {}".format(result.no_match_details))
+    elif result.reason == speechsdk.ResultReason.Canceled:
+        cancellation_details = result.cancellation_details
+        print("Speech Recognition canceled: {}".format(cancellation_details.reason))
+        if cancellation_details.reason == speechsdk.CancellationReason.Error:
+            print("Error details: {}".format(cancellation_details.error_details))
+    ```
 
-1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Codespaces and select it to run the code.
-1. Begin speaking so the application can collect the streaming audio.
-1. When you finish, you should see transcribed text output in the terminal.
+5. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Codespaces and select it to run the code.
+6. Begin speaking so the application can collect the streaming audio.
+7. When you finish, you should see transcribed text output in the terminal.
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-1. Open a terminal window in VS Code by pressing CTRL+`, the Control key plus the back tick.   Optionally, you can choose the View menu and then Terminal.
-1. type the command ```dotnet new console``` and press Enter.
-1. A project structure is created for you in the folder and a Program.cs file is also added.
-1. In the terminal window, enter the following command, ```dotnet add package Microsoft.CognitiveServices.Speech```, and press Enter.
-1. The necessary package will be added to your project and is required to access the Speech SDK.
-1. Paste the following code into Program.cs, replacing the existing code.
+3. Open a terminal window in VS Code by pressing CTRL+`, the Control key plus the back tick.   Optionally, you can choose the View menu and then Terminal.
+4. type the command ```dotnet new console``` and press Enter.
+5. A project structure is created for you in the folder and a Program.cs file is also added.
+6. In the terminal window, enter the following command, ```dotnet add package Microsoft.CognitiveServices.Speech```, and press Enter.
+7. The necessary package will be added to your project and is required to access the Speech SDK.
+8. Paste the following code into Program.cs, replacing the existing code.
 
     ```csharp
     //
@@ -109,13 +109,13 @@ elif result.reason == speechsdk.ResultReason.Canceled:
     }
     ```
 
-1. Replace **"YourSubscriptionKey"** with the key from your Speech Service you created in this module.
-1. Replace **"YourServiceRegion"** with the region in which you created your Speech Service, such as *westus*.
-1. Ensure you have a microphone connected to your local computer and that it is working.
-1. In the terminal, type ```dotnet run``` to start the application.
-1. Begin speaking so the application can collect the streaming audio.
-1. When you finish, you should see transcribed text output in the terminal.
-1. When prompted, press <kbd>Enter</kbd> to quit the application.
+9. Replace **"YourSubscriptionKey"** with the key from your Speech Service you created in this module.
+10. Replace **"YourServiceRegion"** with the region in which you created your Speech Service, such as *westus*.
+11. Ensure you have a microphone connected to your local computer and that it is working.
+12. In the terminal, type ```dotnet run``` to start the application.
+13. Begin speaking so the application can collect the streaming audio.
+14. When you finish, you should see transcribed text output in the terminal.
+15. When prompted, press <kbd>Enter</kbd> to quit the application.
 
 ::: zone-end
 

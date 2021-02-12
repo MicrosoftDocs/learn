@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
+metadata:
+  title: Perform device investigations in Microsoft Defender for Endpoint
+  description: "Perform device investigations in Microsoft Defender for Endpoint"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Perform device investigations in Microsoft Defender for Endpoint
+summary: Microsoft Defender for Endpoint provides detailed device information, including forensics information. Learn about information available to you through Microsoft Defender for Endpoint that will aid in your investigations.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Use the device page in Microsoft Defender for Endpoint
+  - Describe device forensics information collected by Microsoft Defender for Endpoint
+  - Describe behavioral blocking by Microsoft Defender for Endpoint
+prerequisites: |
+  Intermediate understanding of Windows 10.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- m365
+- m365-threat-protection
+units:
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.introduction
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.use-device-inventory-list
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.investigate-device
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.use-behavioral-blocking
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.knowledge-check
+- learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.summary-resources
+badge:
+  uid: learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints.badge

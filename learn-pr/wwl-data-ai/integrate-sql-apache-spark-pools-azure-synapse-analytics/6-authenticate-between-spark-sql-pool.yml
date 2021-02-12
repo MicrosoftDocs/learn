@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.authenticate-between-spark-sql-pool
+title: Authenticate between spark and SQL pool in Azure Synapse Analytics
+metadata:
+  title: Authenticate between spark and SQL pool in Azure Synapse Analytics
+  description: "Authenticate between spark and SQL pool in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-authenticate-between-spark-sql-pool.md)]

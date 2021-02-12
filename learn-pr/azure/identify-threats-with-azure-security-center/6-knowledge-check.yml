@@ -36,7 +36,7 @@ quiz:
         isCorrect: false
       - content: Security policies can be configured at the subscription level.
         isCorrect: false
-      - content: Security policies can be configured at the subscription and resource group level.
+      - content: Security policies can be configured at the subscription and management groups level.
         isCorrect: true
         explanation: "Correct. You can turn security policies (and the corresponding recommendations) on/off at either the subscription or resource group level."
     - content: Select the best description of the Secure Score shown on the dashboard.

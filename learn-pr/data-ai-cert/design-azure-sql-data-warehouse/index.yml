@@ -19,6 +19,7 @@ abstract: |
   - Create a data warehouse in Azure Synapse Analytics
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/design-azure-sql-data-warehouse-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

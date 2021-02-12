@@ -2,13 +2,12 @@
 uid: learn.secure-azure-resources-with-rbac.1-introduction
 metadata:
   title: Introduction
-  description: Learn how to use RBAC to manage access to resources in Azure.
+  description: Learn how to use Azure RBAC to manage access to resources in Azure.
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Introduction
 durationInMinutes: 2
 content: |

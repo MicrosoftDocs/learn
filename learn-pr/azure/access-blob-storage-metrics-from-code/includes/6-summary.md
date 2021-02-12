@@ -1,8 +1,8 @@
-In this module, you learned about two different types of APIs that you can use in order to create applications that access the metrics which Azure Storage accounts send to Azure Monitor when you use Blob storage:
+In this module, you learned about two different types of APIs that you can use to create applications that access the metrics, which Azure Storage accounts send to Azure Monitor when you use Blob storage:
 
-- The Azure Storage REST API is a web service that you can access through HTTP requests through port 80. In unit 3, you learned how to use the **curl** tool to send such requests from the Cloud Shell and view the results.
+- The Azure Storage REST API is a web service that you can access through HTTP requests through port 80. In unit 3, you learned how to use the **curl** tool to send such requests from the Cloud Shell, and view the results.
 
-- In unit 5, you learned how to use the Azure Storage .NET API to make a similar request. You can use this API to interact with Azure Monitor and access storage metrics for display in mobile apps, web applications, and many other types of custom project.
+- In unit 5, you learned how to use the Azure Storage .NET API to make a similar request. You can use this API to interact with Azure Monitor, and access storage metrics for display in mobile apps, web applications, and many other types of custom project.
 
 ## Clean up
 

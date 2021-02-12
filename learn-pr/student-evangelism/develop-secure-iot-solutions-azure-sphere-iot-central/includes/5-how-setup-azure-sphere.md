@@ -17,8 +17,6 @@ The components you'll need to know are:
 - **Azure Sphere OS:** is a custom Linux-based microcontroller operating system created to run on an Azure Sphere-certified chip and to connect to the Azure Sphere Security Service.
 - **Azure Sphere Security Service:** communicates securely with devices and deploys both the Azure Sphere OS and your engineering team's software updates to the Azure Sphere devices. -->
 
-
-
 ## Configuration steps
 
 The steps you follow are:

@@ -1,39 +1,39 @@
-First, let's create a SQL pool named **DemoDW** in Azure SQL Data Warehouse.
+First, let's create a Data Lake Storage named **demodw** in Azure Synapse Analytics.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to create a blank data warehouse.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+
 1. Select **Create a resource** in the upper-left corner of the Azure portal.
-1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)**.
 
-    ![Creating a data warehouse](../media/3-create-azure-data-warehouse.png)
+1. Select **Databases**, search for and select **Azure Synapse Analytics**. Select **Create**.
 
-1. From the **Azure Synapse Analytics** blade, create an Azure Synapse Analytics with the following settings:
+1. In the **Create Synapse workspace** panel, create an Azure Synapse Analytics workspace with the following settings:
 
-    - Subscription: the name of the subscription you are using in this lab.
+    | Field       | Value |
+    | ----------- | ----------- |
+    | **Basics** tab > **Project details** section |
+    | Subscription     | Name of the subscription you are using in this exercise. |
+    | Resource group        | Select **Create new**, enter **mslearn-demodw**, and then select **OK**. |
+    | **Workspace details** |
+    | Workspace name | **sampledatawhxx**, where *xx* are your initials. |
+    | Region | Select a region near to you. |
+    | Select Data Lake Storage Gen2 | From subscription |
+    | Account name | Select **Create new**, and enter *demodw*. |
+    | File system name | Select **Create new**, and enter *demodw*. |
+    
+1. Select **Next: Security**. Enter the following settings:
 
-    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab.
+    | Field       | Value |
+    | ----------- | ----------- |
+    | **Security** tab > **SQL administrator credentials** section |
+    | Admin username   | dwdbadmin |
+    | Password         | Pa55w.rd |
+    | Confirm password | Pa55w.rd |
 
-    - Resource group name: **mslearn-demodw**.
+1. Select **Review + create**. The **Create Synapse workspace** pane reappears with a *Validation succeeded* notification.
 
-    - SQL pool name: **DemoDW**.
+1. In the **Create Synapse workspace** panel, select **Create** to start the deployment process. Deployment can take a few minutes.
 
-    - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-        - Server name: **sampledatawhxx**, where **xx** are your initials
-        - Server admin login: **dwdbadmin**.
-        - Password: **Pa55w.rd**
-        - Confirm Password: **Pa55w.rd**
-        - Location: choose a **location** near to you.
-        - Select the checkbox to Allow Azure services to access server
-        - click on **OK**
-
-        - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
-
-1. In the **Azure Synapse Analytics** blade, click **Review + create**.
-
-    ![Database settings for new a data warehouse](../media/3-create-db.png)
-
-1. In the **Azure Synapse Analytics** blade, click **Create**. Provisioning takes a few minutes.
-
-Monitor the deployment process through the notifications icon. You successfully create a SQL pool after it deploys.
+Monitor the deployment process by selecting the notifications (bell) icon in the toolbar. You've successfully created an Azure Synapse Analytics workspace after it deploys.

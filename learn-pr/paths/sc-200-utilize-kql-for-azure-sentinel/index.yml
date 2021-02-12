@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel
+metadata:
+  title: 'SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)'
+  description: 'SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)'
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)'
+prerequisites: |
+  Basic understanding of scripting concepts.
+summary: |
+  Write Kusto Query Language (KQL) statements to query log data to perform detections, analysis, and reporting in Azure Sentinel. This learning path will focus on the most used operators.  The example KQL statements will showcase security related table queries.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+modules:
+- learn.wwl.construct-kql-statements
+- learn.wwl.analyze-results-kql
+- learn.wwl.build-multi-table-statements-kql
+- learn.wwl.work-with-data-kql
+trophy:
+  uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel.trophy

@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-principles-concepts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of security risk does a phishing scam pose?"
+    choices:
+    - content: "Ethical risk."
+      isCorrect: false
+      explanation: "That's incorrect. Phishing scams aren't ethical but aren't an ethical risk to the organization."
+    - content: "Physical risk."
+      isCorrect: false
+      explanation: "That's incorrect. Phishing scams are not a physical risk to the organization."
+    - content: "Identity risk."
+      isCorrect: true
+      explanation: "That's correct. A phishing scam is an example of an identity attack."
+  - content: "What is a benefit of single sign-on?"
+    choices:
+    - content: "A central identity provider can be used."
+      isCorrect: false
+      explanation: "That's incorrect. Although a central identity provider can be used by an organization, it isn't a benefit of single sign-on."
+    - content: "The user signs in once and can then access many applications or resources."
+      isCorrect: true
+      explanation: "That's correct. With single sign-on, a user signs in once and can then access a number of applications or resources."
+    - content: "Passwords always expire after 72 days."
+      isCorrect: false
+      explanation: "That's incorrect. The expiration of a password isn't a benefit of single sign-on."
+  - content: "Which relationship allows federated services to access resources?"
+    choices:
+    - content: "Claim relationship."
+      isCorrect: false
+      explanation: "That's incorrect. A claim relationship isn't used to gain access to resources with federated services."
+    - content: "Shared access relationship."
+      isCorrect: false
+      explanation: "That's incorrect. A shared relationship isn't used to allow access to resources with federated services."
+    - content: "Trust relationship."
+      isCorrect: true
+      explanation: "That's correct. Federated services use a trust relationship to allow access to resources."
+  - content: "Authentication is the process of doing what?"
+    choices:
+    - content: "Verifying that a user or device is who they say they are."
+      isCorrect: true
+      explanation: "That's correct. Authentication is the process of verifying that a user or device is who they say they are."
+    - content: "The process of profiling user behavior."
+      isCorrect: false
+      explanation: "That's incorrect. The process of profiling user behavior is auditing, not authentication."
+    - content: "Enabling federated services."
+      isCorrect: false
+      explanation: "That's incorrect. Authentication doesn't enable federated services."

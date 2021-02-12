@@ -10,7 +10,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 quiz:
   title: Check your knowledge
   questions:
@@ -22,7 +21,7 @@ quiz:
     - content: "Create a single storage account that makes use of Geo-redundant storage (GRS) and host both videos from here."
       isCorrect: false
       explanation: "The usage of single storage account to host both videos in a single RRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for non-critical content."
-    - content: "Create a two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the non-critical video content."
+    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the non-critical video content."
       isCorrect: true
       explanation: "In general, increased diversity means an increased number of storage accounts. A storage account by itself has no financial cost. However, the settings you choose for the account do influence the cost of services in the account. Use multiple storage accounts to reduce costs."
   - content: "The name of a storage account must be:"

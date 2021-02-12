@@ -50,17 +50,17 @@ Helm charts are stored in Helm chart repositories. The official chart repository
 
 You're now ready to install the MonogoDB instance. Recall from earlier, that you configured your cluster with a `ratingsapp` namespace. You'll specify the namespace as part of the `helm install` command, and a name for the database release. The release is called `ratings` and is deployed into the `ratingsapp` namespace.
 
-1. Run the `helm install` command below. Make sure to replace `<username>` and `<password>` with appropriate values, and note them for later use.
+1. Run the `helm install` command below. Make sure to replace `<username>` and `<password>` with appropriate values of your choice, and note them for later use.
 
     Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
     ```bash
-    helm install ratings bitnami/mongodb \ 
-        --namespace ratingsapp \ 
+    helm install ratings bitnami/mongodb \
+        --namespace ratingsapp \
         --set auth.username=<username>,auth.password=<password>,auth.database=ratingsdb
     ```
 
-    You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword`, and `mongodbDatabase` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities.
+    You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `auth.username`, `auth.password`, and `auth.database` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities.
 
 1. After the installation is finished, you should get an output similar to this example. Make a note of the MongoDB host, which should be `ratings-mongodb.ratingsapp.svc.cluster.local`, if you used the same parameters.
 
@@ -81,7 +81,7 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 
     export MONGODB_ROOT_PASSWORD=$(kubectl get secret --namespace ratingsapp ratings-mongodb -o jsonpath="{.data.mongodb-root-password}" |  base64 --decode)
 
-    To get the password for "chris" run:
+    To get the password for "aksclusteradmin" run:
 
     export MONGODB_PASSWORD=$(kubectl get secret --namespace ratingsapp ratings-mongodb -o jsonpath="{.data.mongodb-password}" | base64 --decode)
 

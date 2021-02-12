@@ -3,7 +3,7 @@ uid: learn.student-evangelism.train-custom-vision-ai.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 10/15/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -14,45 +14,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The Custom Vision service requires a significant amount of code to use."
+  - content: "How much code is required to use the Custom Vision service?"
     choices:
-    - content: "True. To use the Custom Vision service on Azure, you need to write an entire artificial intelligence algorithm."
+    - content: "To use the Custom Vision service, you need to write an entire artificial intelligence algorithm."
       isCorrect: false
-      explanation: "This is incorrect. You can write code to call the Custom Vision service, but the AI algorithm is a part of the service and not something you have to write."
-    - content: "True. You can only call the Custom Vision service from C# code."
+      explanation: "Incorrect. You can write code to call the Custom Vision service, but the AI algorithm is a part of the service, not something you have to write."
+    - content: "You can call the Custom Vision service only by using C# code."
       isCorrect: false
-      explanation: "This is incorrect. You can call the Custom Vision service from C# code, Go, Java, JavaScript, and Python, and you can also use the browser portal."
-    - content: "False. It only takes 50 lines of code to use the Custom Vision Service."
-      isCorrect: false
-      explanation: "This is incorrect. You can use the Custom Vision service in about 50 lines of code, but you can also use the portal and not write any code."
-    - content: "False. There is a browser option where you can use it without any code."
+      explanation: "Incorrect. You can call the Custom Vision service from C# code, Go, Java, JavaScript, and Python, and you can also use the browser portal."
+    - content: "There's a browser option where you can use it without any code."
       isCorrect: true
-      explanation: "This is correct. While calling the Custom Vision service with C#, Go, Java, JavaScript, and Python is an option, it is not required."
+      explanation: "Correct. Although calling the Custom Vision service with C#, Go, Java, JavaScript, and Python is an option, it isn't required."
+    - content: "It takes only 50 lines of code to use the Custom Vision Service."
+      isCorrect: false
+      explanation: "Incorrect. You can use the Custom Vision service in about 50 lines of code, but you can also use the portal and not write any code."
   - content: "How many images do you need, at a minimum, to use to train the Custom Vision service to identify an object in an image?"
     choices:
     - content: "1,000"
       isCorrect: false
-      explanation: "The more images you have to train your AI the better, but you do not *need* 1,000 images to get started with the Custom Vision service."
+      explanation: "Incorrect. The more images you have to train your AI the better, but you don't need 1,000 images to get started with the Custom Vision service."
     - content: "1"
       isCorrect: false
-      explanation: "You need more than one image to train the Custom Vision service AI on a tagged object."
+      explanation: "Incorrect. You need more than 1 image to train the Custom Vision service AI on a tagged object."
     - content: "15"
       isCorrect: true
-      explanation: "You need at least 15 images per tag to have the Custom Vision service be able to train to identify that object."
+      explanation: "Correct. You need at least 15 images per tag to train the Custom Vision service to identify that object."
     - content: "100"
       isCorrect: false
-      explanation: "The more images you have to train your AI the better, but you do not *need* 100 images to get started with the Custom Vision service."
-  - content: "If you are using cloud resources in the East US Region to train your Custom Vision model, which region do you need to provision resources to run the predictions?"
+      explanation: "Incorrect. The more images you have to train your AI the better, but you don't need 100 images to get started with the Custom Vision service."
+  - content: "If you're using cloud resources in the East US Region to train your Custom Vision model, which region do you need to provision resources in to run the predictions?"
     choices:
-    - content: "East US"
-      isCorrect: false
-      explanation: "You could choose East US, but you do not have to."
-    - content: "West US 2"
-      isCorrect: false
-      explanation: "You could choose West US 2, but you do not have to."
-    - content: "East US 2"
-      isCorrect: false
-      explanation: "You could choose East US 2, but you do not have to."
     - content: "Any available region"
       isCorrect: true
-      explanation: "You can choose any region that supports Custom Vision, but it's best to choose the region closest to where the majority of predictions will be made."
+      explanation: "Correct. You can choose any region that supports Custom Vision, but it's best to choose the region closest to where the majority of predictions will be made."
+    - content: "East US"
+      isCorrect: false
+      explanation: "Incorrect. You could choose East US, but you don't have to."
+    - content: "West US 2"
+      isCorrect: false
+      explanation: "Incorrect. You could choose West US 2, but you don't have to."
+    - content: "East US 2"
+      isCorrect: false
+      explanation: "Incorrect. You could choose East US 2, but you don't have to."

@@ -2,31 +2,16 @@
 
 It works by calculating group metrics for the sensitive features you specify. The metrics themselves are based on standard **scikit-learn**  model evaluation metrics, such as *accuracy*, *precision*, or *recall* for classification models.
 
-The Fairlearn API is extensive, offering multiple ways to explore disparity in metrics across sensitive feature groupings. For a binary classification model, you might start by comparing the selection rate (the number of positive predictions for each group) by using the **selection_rate_group_summary** function. This function returns an **sklearn.utils.bunch** object (an extended **dictionary**) containing the overall selection rate for the test dataset, and the selection rate for each sensitive feature group. In a binary classification model for loan repayment prediction, where the sensitive feature **Age** consists of two possible categorical values (**25-and-under** and **over-25**), a selection rate group summary might be similar to the following output (formatted to improve readability):
+The Fairlearn API is extensive, offering multiple ways to explore disparity in metrics across sensitive feature groupings. For a binary classification model, you might start by comparing the selection rate (the number of positive predictions for each group) by using the **selection_rate** function. This function returns the overall selection rate for the test dataset. You can also use standard **sklearn.metrics** functions (such as **accuracy_score**, **precision_score**, or **recall_score**) to get an overall view of how the model performs.
 
-```
-{
-    'overall': 0.454545,
-    'by_group':
-    {
-        '25-and-under': 0.363636,
-        'Over-25': 0.545454
-    }
-}
-```
+Then, you can define one or more *sensitive features* in your dataset with which you want to group subsets of the population and compare selection rate and predictive performance. Fairlearn includes a **MetricFrame** function that enables you to create a dataframe of multiple metrics by the group.
 
-To explore disparity in prediction performance, you can use the  **group_summary** function, which enables you to calculate group metrics based on any relevant **sklearn.metrics** metric enumeration (such as **accuracy_score**, **precision_score**, or **recall_score**). A group summary for the loan repayment model based on *recall* might look similar to the following output:
+For example, in a binary classification model for loan repayment prediction, where the sensitive feature **Age** consists of two possible categorical values (**25-and-under** and **over-25**), a MetricFrame for these groups might be similar to the following table:
 
-```
-{
-    'overall': 0.666667,
-    'by_group':
-    {
-        '25-and-under': 0.500000,
-        'Over-25': 0.833333
-    }
-}
-```
+| Age | selection_rate | accuracy | recall | precision |
+| --- | -------------- | -------- | -------| -------- |
+| 50 or younger | 0.298178 | 0.89619 | 0.825926 | 0.825926 |
+| Over 50 | 0.708995 | 0.888889 | 0.937984 | 0.902985 |
 
 ## Visualizing metrics in a dashboard
 

@@ -1,18 +1,18 @@
-You're ready to do an action based on receiving a published event within your logic app.
+You're ready to perform an action based on receiving a published event within your logic app.
 
 You've finished the initial setup of the logic app. You now need to send an email notification that details any change to the virtual machines in your resource group.
 
-You're going to learn how to set up a condition that allows you to inspect an event, respond with a logic app action, and send an email.
+You're going to learn how to set up a condition that enables you to inspect an event, respond with a logic app action, and send an email.
 
 ## Add a condition
 
-First, let's create a condition that runs the logic app only when a certain event is published.
+First, let's create a condition that runs the logic app only when a certain event is published. Select the Logic app you just created > Logic app designer from the left-hand menu.
 
 1. In Logic App Designer, under the **Event Grid** trigger, select **New step**.
 
     ![Button for a new logic app step](../media/5-choose-new-step-condition.png)
 
-1. Under **Choose an action**, in the search box, enter **condition** as your filter. From the **Actions** list, select **Condition**.
+1. Under **Choose an operation**, in the search box, enter **condition** as your filter. On the **Actions** tab, select **Condition**.
 
     ![Selections for choosing an action](../media/5-select-condition.png)
 
@@ -46,7 +46,7 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
     ![Button for adding an action](../media/5-condition-true-add-action.png)
 
-1. Under **Choose an action**, in the search box, enter **send an email** as your filter and select the **Office 365 Outlook** provider.
+1. Under **Choose an operation**, in the search box, enter **send an email** as your filter, and select the **Office 365 Outlook** provider.
 
     ![Selections for sending an email action](../media/5-logic-app-send-email.png)
 
@@ -74,7 +74,7 @@ You've created and configured a logic app to listen for virtual machine events a
 
 The final step is to test the complete workflow.
 
-1. In the search bar at the top of the Azure portal, search for **vm1** and select the virtual machine in the results.
+1. In the search bar at the top of the Azure portal, search for **vm1**, and select the virtual machine in the results.
 
 1. In the **Settings** section of the left menu, select **Size**.
 

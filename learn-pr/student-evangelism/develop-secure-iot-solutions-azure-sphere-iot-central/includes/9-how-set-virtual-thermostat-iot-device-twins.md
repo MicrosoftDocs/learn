@@ -47,7 +47,7 @@ static LP_DEVICE_TWIN_BINDING dt_desiredTemperature = {
 The following is the implementation of the handler function `DeviceTwinSetTemperatureHandler`. The handler function is called when the device receives a `DesiredTemperature` desired property message from Azure IoT Hub.
 
 > [!NOTE]
-> As part of the [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/concepts-convention) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
+> As part of the [IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/concepts-convention?azure-portal=true) conventions, the device should acknowledge the device twin update with a call to **lp_deviceTwinAckDesiredState**.
 
 ```c
 /// <summary>
@@ -103,7 +103,7 @@ LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_r
 
 ### Opening the device twin binding set
 
-Device twin binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The device twin binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
@@ -111,16 +111,18 @@ lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 
 ### Closing the device twin binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The device twin bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetClose();
+```eviceTwinSetClose();
 ```
-
-
 
 ## Azure IoT Central device properties
 
 IoT Central properties are defined in the device template interface. In this example, the **DesiredTemperature** property schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for cloud-to-device updates. The property name must match the DesiredTemperature Device Twin Binding declaration on the Azure Sphere.
 
-[![The illustration shows device properties.](../media/iot-central-device-template-interface-led1.png)](../media/iot-central-device-template-interface-led1.png)
+<!-- > [!div class="mx-imgBorder"]
+> [![The illustration shows device properties.](../media/iot-central-device-template-interface-led1.png)](../media/iot-central-device-template-interface-led1.png) -->
+
+:::image type="content" source="../media/iot-central-device-template-interface-led1.png" alt-text="The illustration shows device properties.":::

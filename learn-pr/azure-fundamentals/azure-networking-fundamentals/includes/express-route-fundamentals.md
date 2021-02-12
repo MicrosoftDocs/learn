@@ -1,4 +1,6 @@
-Azure ExpressRoute lets you seamlessly extend your on-premises networks into the Microsoft cloud. This connection between your organization and Azure is dedicated and private. Establishing an ExpressRoute connection enables you to connect to Microsoft cloud services like Azure, Office 365, and Dynamics 365. Security is enhanced, connections are more reliable, latency is minimal, and throughput is greatly increased.
+ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
+
+Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet. This allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet. For information on how to connect your network to Microsoft using ExpressRoute, see ExpressRoute connectivity models.
 
 [![Visualization that shows a high-level overview of the Azure ExpressRoute service.](../media/azure-expressroute-overview.png)](../media/azure-expressroute-overview-expanded.png#lightbox)
 
@@ -12,6 +14,13 @@ Throughout this unit, we'll focus on two different layers of the Open Systems In
 ## Features and benefits of ExpressRoute
 
 There are several benefits to using ExpressRoute as the connection service between Azure and on-premises networks.
+- Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider. Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange.
+- Connectivity to Microsoft cloud services across all regions in the geopolitical region.
+- Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on.
+- Dynamic routing between your network and Microsoft via BGP.
+- Built-in redundancy in every peering location for higher reliability.
+- Connection uptime SLA.
+- QoS support for Skype for Business.
 
 ### Layer 3 connectivity
 
