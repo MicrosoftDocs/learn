@@ -78,7 +78,7 @@ By default, a deployment slot is accessible from the internet. In practice, you 
 
 ## Swap deployment slots in Staging
 
-Here you use the [AzureAppServiceManage@0](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops?azure-portal=true) task to swap deployment slots in your _Staging_ environment.
+Here you use the [AzureAppServiceManage@0](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?azure-portal=true) task to swap deployment slots in your _Staging_ environment.
 
 You can also use this task to start, stop, or delete a slot. Or you can use it to install site extensions or to enable continuous monitoring on App Service.
 

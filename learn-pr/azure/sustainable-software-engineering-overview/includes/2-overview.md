@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IlK6]
+
 ## Eight principles of Sustainable Software Engineering
 
 There are eight principles of Sustainable Software Engineering that form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module will provide a basic introduction to each of these principles.

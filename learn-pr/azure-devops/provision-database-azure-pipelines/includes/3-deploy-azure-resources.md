@@ -4,7 +4,7 @@ In this exercise, you use a template that creates a SQL Server logical instance,
 
 Here, you open Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
 
-You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
+You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true).
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
