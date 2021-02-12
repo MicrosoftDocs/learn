@@ -44,19 +44,3 @@ Loading the same model multiple times creates multiple instances, each with thei
 
 > [!TIP]
 > The Khronos Group maintains a set of glTF sample models for testing. ARR supports the glTF format both in text (.gltf) and in binary (.glb) form. We suggest using the PBR models for best visual results. To learn more, refer to the repository available in the module Resources.
-
-## Rendering models
-
-Remote Rendering offers two main modes of operation:
--  ``TileBasedComposition``
--  ``DepthBasedComposition``
-
-These modes determine how the workload is distributed across multiple GPUs on the server. The mode is specified at connection time and cannot be changed during runtime. 
-
-The rendering quality in ``TileBasedComposition`` mode is slightly better since multisample anti-aliasing (MSAA) can work on a full set of geometry for every GPU. 
-
-:::image type="content" source="../media/tile-based-composition.png" alt-text="A screenshot of objects in an 3D environment rendered in tile-based composition mode. The render quality of the models is significantly detailed. ":::
-
-In ``DepthBasedComposition`` mode, every involved GPU renders at full screen resolution but only a subset of meshes. Every single GPU uses MSAA to antialias local content. Although the final image is post-processed, MSAA quality is still worse than in ``TileBasedComposition`` mode.
-
-:::image type="content" source="../media/depth-based-composition.png" alt-text="A screenshot of 3 D objects rendered in-depth based composition mode. The render quality of the models isn't distinctively detailed.":::
