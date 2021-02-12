@@ -1,6 +1,6 @@
-Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated to it, and you would like to partition these weights into two sets: $W_A$ and $W_B$.
+Now that you understand the basics of QIO, let's come back to our mineral shipment problem. Your spaceship has to optimize how it distributes the mineral chunks between the two container shipments. In other words, each chunk has a weight, $w$, associated with it, and you want to partition these weights into two sets: $W_A$ and $W_B$.
 
-Those two sets correspond to whether a mineral chunk is loaded onto container *A* or container *B*, and we define $\Delta$ as the weight difference between the two containers.
+The two sets correspond to the mineral chunks to be loaded onto container A or container B, and we define $\Delta$ as the weight difference between the two containers.
 
 This short animation shows one possible way an optimizer might distribute the mineral. The running time of the optimizer is measured in steps. At each step, we show the best solution found so far.
 
@@ -13,23 +13,23 @@ In this next part, we'll use quantum-inspired optimization to solve the problem.
 
 ## Express the problem
 
-Let's start by coming up with an expression for the weight of a given container. This is simply the sum of all the mineral chunks it contains. The sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
+Let's start by coming up with an expression for the weight of a given container. This is simply the sum of the weights of all the mineral chunks it contains. The sum is expressed in the following equation, where $w_i$ is the weight of chunk *i*:
 
 ![An equation that shows the sum of mineral weights.](../media/cost-function-1.svg)
 
 Ideally, we want a solution where the weight difference between the containers, $\Delta$, is as small as possible.
 
-![An equation that subtracts the total weights on one container from the total weights on the other container to produce a cost function.](../media/cost-function-2.svg)
+![An equation that subtracts the weight of one container from the weight of the other to produce a cost function.](../media/cost-function-2.svg)
 
-This equation subtracts the sum of weights on container *B* from the sum of weights on container *A*.
+This equation subtracts the sum of weights on container B from the sum of weights on container A.
 
-The letter *H* is used to represent a cost function. This notation originates from the model we're using to define our optimization problem, known as the *Ising model*. In this model, the energy (which represents the cost) is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
+The letter *H* is used to represent a cost function. This notation originates from the model we're using to define our optimization problem, known as the *Ising model*. In this model, the energy, which represents the cost, is given by a Hamiltonian, whose variables take the value of +1 or -1. Our goal is to map the optimization to this form.
 
 ## Refine the problem
 
-We now introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to container *A* or container *B*.
+We now introduce a variable, $x_i$, to represent whether an individual mineral chunk *i* is assigned to container A or container B.
 
-Because we assign the chunk *i* to either of two containers, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* corresponds the mineral chunk being placed on container *A*, and *-1* to the chunk being placed on container *B*. Because of our decision to make $x_i$ be either *1* or *-1*, our optimization problem is called an *Ising problem*.
+Because we assign the chunk *i* to either of two containers, the variable $x_i$ can take on two different values, which makes it a binary variable. For convenience, we say the two values it can take on are *1* and *-1*. The value *1* corresponds to the mineral chunk being placed on container A, and *-1* to the chunk being placed on container B. Because of our decision to make $x_i$ either *1* or *-1*, our optimization problem is called an *Ising problem*.
 
 By introducing the variable $x_i$, we can simplify the equation as follows:
 
@@ -39,13 +39,13 @@ By introducing the variable $x_i$, we can simplify the equation as follows:
 
 There's one last change we need to make before we can solve our problem.
 
-If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container *B* by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
+If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign the entirety of the extracted mineral to container B by setting all of the $x_i$ variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it can't be negative.
 
 ![An equation that squares the previous computation to ensure that the cost function is not negative.](../media/cost-function-4.svg)
 
 This final model gives us a cost function with the required properties.
 
-- If all the mineral is on one container, the function is at its highest value. This is the least optimal solution.
+- If all the mineral is in one container, the function is at its highest value. This is the least optimal solution.
 - If the freight containers are perfectly balanced, the value of the summation inside the square is *0*. This means the function is at its lowest, or optimal, value.
 
 ## Solve the problem with Azure Quantum
@@ -59,7 +59,7 @@ First, we must instantiate a `Workspace` object, which allows you to connect to 
 ```python
 from azure.quantum import Workspace
 
-# Copy the settings for your workspace below
+# Copy the following settings for your workspace
 workspace = Workspace(
     subscription_id=    "", # add your subscription_id
     resource_group=     "", # add your resource_group
@@ -72,19 +72,19 @@ workspace.login()
 
 ### Problem instantiation
 
-In order to submit a problem to the Azure Quantum services, we first need to create a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and what kind of problem we are modeling.
+To submit a problem to the Azure Quantum services, we first need to create a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and the kind of problem we are modeling.
 
-Some problem types were already introduced in a previous unit, such as the PUBO, QUBO, or Ising problem types. In this example, we'll be using the Ising type, which is available via `ProblemType.ising`.
+Some problem types, such as the PUBO, QUBO, or Ising types, were already introduced in a previous unit. In this example, we'll use the Ising type, which is available via `ProblemType.ising`.
 
-To represent cost functions, we'll make use of a formulation using `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten to have the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
+To represent cost functions, we'll apply a formulation that uses `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten in the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
 
 $$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
 
 $$ \text{e.g. } H(x) = 5 \cdot (x_0) + 2 \cdot (x_1 \cdot x_2) - 3 \cdot ({x_3}^2) $$
 
-In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `c` - corresponding to the coefficient, and `indices` - corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables appearing in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(c=2, indices=[1,2])`.
+In this form, every term in the sum has a coefficient $\alpha_k$ and a product $p_k$. In the `Problem` instance, each term in the sum is represented by a `Term` object, with parameters `c`, corresponding to the coefficient, and `indices`, corresponding to the product. Specifically, the `indices` parameter is populated with the indices of all variables that appear in the term. For instance, the term $2 \cdot (x_1 \cdot x_2)$ translates to the following object: `Term(c=2, indices=[1,2])`.
 
-Let's run through an example using the cost function we derived earlier, which we show again below. For $n$ mineral chunks, the index $i$ runs from $0$ to $n-1$ :
+Let's run through an example by using the cost function we derived earlier. For $n$ mineral chunks, the index $i$ runs from $0$ to $n-1$ :
 
 $$ H(x) = \left(\sum_{i} w_{i} \cdot x_{i}\right)^2 $$
 
@@ -96,13 +96,13 @@ While it may not look like it, this double sum is just another way to write a la
 
 $$ H(x) = \sum_{k=0}^{n^2-1} \alpha_k \cdot p_k(x_0, \cdots, x_{n-1}) $$
 
-Let's plug in some numbers! We will use 3 mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \\{0,1,2\\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
+Let's plug in some numbers. We'll use three mineral chunks with the weights $w_i \in [2,4,7]$, and thus with indices $i,j \in \\{0,1,2\\}$. The double summation form is easier to work with, so let's use that one. For every value of $i$, we add three terms, one for each value of $j$:
 
 $$ H(x) = (2 \cdot 2) \cdot (x_0 \cdot x_0) + (2 \cdot 4) \cdot (x_0 \cdot x_1) + (2 \cdot 7) \cdot (x_0 \cdot x_2) $$
 $$ \hspace{25pt} +\ (4 \cdot 2) \cdot (x_1 \cdot x_0) + (4 \cdot 4) \cdot (x_1 \cdot x_1) + (4 \cdot 7) \cdot (x_1 \cdot x_2) $$
 $$ \hspace{25pt} +\ (7 \cdot 2) \cdot (x_2 \cdot x_0) + (7 \cdot 4) \cdot (x_2 \cdot x_1) + (7 \cdot 7) \cdot (x_2 \cdot x_2) $$
 
-Because this is an Ising problem, the variables $x_i$ can take on a value of either $1$ or $-1$, which implies that $x_i^2$ will always equal $1$. As we do not care what the actual value of $H$ is, only that it is minimized, we can safely remove these terms. The final form, now containing six instead of nine terms, is then given by:
+Because this is an Ising problem, the variables $x_i$ can take on a value of either $1$ or $-1$, which implies that $x_i^2$ will always equal $1$. Because we don't care what the actual value of $H$ is, only that it's minimized, we can safely remove these terms. The final form, now containing six instead of nine terms, is then given by:
 
 $$ H(x) = 8 \cdot (x_0 \cdot x_1) + 14 \cdot (x_0 \cdot x_2) + 8 \cdot (x_1 \cdot x_0) + 28 \cdot (x_1 \cdot x_2) + 14 \cdot (x_2 \cdot x_0) + 28 \cdot (x_2 \cdot x_1) $$
 
@@ -115,7 +115,7 @@ In Python, we would thus introduce the following `Terms`:
 - `Term(c = 14, indices = [2, 0])`
 - `Term(c = 28, indices = [2, 1])`
 
-The function below generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object containing the cost function.
+The following function generalizes the `Term` creation for any number of weights using some for loops. It takes an array of mineral weights and returns a `Problem` object that contains the cost function.
 
 ```python
 from typing import List
@@ -154,16 +154,16 @@ problem = createProblemForMineralWeights(mineralWeights)
 
 ### Submit to Azure Quantum
 
-We're ready to submit our problem to Azure using the `ParallelTempering` solver:
+You're now ready to submit your problem to Azure by using the `ParallelTempering` solver:
 
 > [!NOTE]
-> Here we use a parameter-free Parallel Tempering solver with a timeout of 100 seconds. For more information about available solvers, you can visit the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
+> Here we use a parameter-free *parallel tempering solver* with a timeout of 100 seconds. For more information about available solvers, see the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page. However, solver selection and tuning is beyond the scope of this module.
 
 ```python
 from azure.quantum.optimization import ParallelTempering
 import time
 
-# Instantiate a solver to solve the problem.
+# Instantiate a solver to solve the problem
 solver = ParallelTempering(workspace, timeout=100)
 
 # Optimize the problem
@@ -180,7 +180,7 @@ Submitting problem...
 Result in 35.41556143760681 seconds:  {'version': '1.0', 'configuration': {'0': 1, '1': -1, '2': 1, '3': 1, '4': -1, '5': -1, '6': -1, '7': -1, '8': 1, '9': 1}, 'cost': -2052.0, 'parameters': {'all_betas': [0.00020408163265306123, 0.0010031845282727856, 0.004931258069052868, 0.024240112818991428, 0.00020408163265306123, 0.00041416312947479666, 0.0008405023793001501, 0.0017057149691356173, 0.0034615768230851457, 0.007024921700835206, 0.014256371424073268, 0.028931870679351317, 0.058714319100389226, 0.00020408163265306123, 0.0003216601955060876, 0.000506979878727771, 0.0007990687098552142, 0.0012594401274306443, 0.001985047612326009, 0.003128702935041415, 0.0049312580690528685, 0.007772328229454337, 0.012250238227336452, 0.019308028713685834, 0.030432059025318557, 0.04796503207311015, 0.07559936381105262, 0.00020408163265306123, 0.0002853639172320586, 0.0003990195697643234, 0.0005579423586529702, 0.000780161423569038, 0.0010908866075247, 0.0015253684103382742, 0.0021328970135012235, 0.0029823940494438134, 0.004170231478526455, 0.0058311645933360684, 0.008153619454858395, 0.011401069057563778, 0.015941923261808107, 0.022291323383991948, 0.031169582869598398, 0.043583903904173556, 0.06094264037716683, 0.08521506986401543, 0.00020408163265306123, 0.0002661133962019146, 0.0003470000642267741, 0.0004524726913109797, 0.0005900043184095882, 0.0007693394594342792, 0.0010031845282727856, 0.001308108124995844, 0.0017057149691356171, 0.002224176656606702, 0.002900227698828882, 0.0037817682692016645, 0.004931258069052867, 0.006430141778288393, 0.0083846196467327, 0.010933172089261346, 0.01425637142407326, 0.018589675944162696, 0.02424011281899142, 0.031608031858238926, 0.04121547145476594, 0.05374314651596505, 0.0700786790855087, 0.09137948893466513], 'replicas': 70, 'sweeps': 600}}
 ```
 
-Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the function below to print a summary of what the solution means:
+Notice that the solver returned the results in the form of a Python dictionary, along with some metadata. For a more human-readable format, use the following function to print a summary of what the solution means:
 
 ```python
 def printResultSummary(result):
@@ -222,11 +222,11 @@ Total weights:
     Container b: 53 tons
 ```
 
-Great! The solver found a partition such that the containers are within 1 ton of each other. A satisfactory outcome, as a perfectly balanced solution doesn't exist for this problem instance.
+Great! The solver found a partition such that the containers are within 1 ton of each other. This outcome is satisfactory, because a perfectly balanced solution doesn't exist for this problem instance.
 
 ## Improve the cost function
 
-The cost function we've built works well so far, but let's take a closer look at the `Problem` that was generated:
+The cost function you've built works well so far, but let's take a closer look at the `Problem` that was generated:
 
 ```python
 print(f'The problem has {len(problem.terms)} terms for {len(mineralWeights)} mineral chunks:')
@@ -244,9 +244,9 @@ This duplicate encodes the exact same information in our cost function. However,
 
 ![An equation that reduces the number of terms in the previous cost function.](../media/cost-function-5.svg)
 
-Notice that we've expanded the square in our previous cost function to a summation over two indices, $i$ and $j$. With the constraint $i<j$, we exclude the symmetric copies of terms mentioned above. As a bonus, "constant" $i=j$ terms are excluded as well, which don't contribute to the solution.
+Notice that we've expanded the square in our previous cost function to a summation over two indices, $i$ and $j$. With the constraint $i<j$, we exclude the symmetric copies of terms mentioned above. As a bonus, "constant" $i=j$ terms, which don't contribute to the solution, are excluded as well.
 
-Modify your `createProblemForMineralWeights` function as follows to implement the improved cost function:
+To implement the improved cost function, modify your `createProblemForMineralWeights` function as follows:
 
 ```python
 def createSimplifiedProblemForMineralWeights(mineralWeights: List[int]) -> Problem:
@@ -310,4 +310,4 @@ Total weights:
     Container B: 53 tons
 ```
 
-As you can see, the quality of the solution is the same for both cost functions - the containers are loaded within 1 ton of each other. This reveals an important fact about using QIO solvers: it is often possible (and necessary) to optimize the cost function in order to generate more optimal solutions more quickly.
+As you can see, the quality of the solution is the same for both cost functions. The containers are loaded within 1 ton of each other. This reveals an important fact about using QIO solvers: it's often possible (and necessary) to optimize the cost function to generate more optimal solutions more quickly.
