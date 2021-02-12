@@ -13,7 +13,7 @@ You now have a basic understanding of QIO and some of the problems it can solve.
 
 In this module, we mentioned a number of concepts and techniques that support QIO.
 
-To learn more, see these additional resources:
+To learn more, see these resources:
 
 * [Adiabatic quantum computation](https://wikipedia.org/wiki/Adiabatic_quantum_computation?azure-portal=true)
 * [Gradient descent](https://wikipedia.org/wiki/Gradient_descent?azure-portal=true)
