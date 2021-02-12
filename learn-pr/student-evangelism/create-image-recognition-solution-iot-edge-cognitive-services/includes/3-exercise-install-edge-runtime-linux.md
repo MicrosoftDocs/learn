@@ -1,4 +1,5 @@
-Before you start, you'll need the following:A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free ](about:blank). If you are a student then sign up for an [Azure for Students](about:blank) account.
+Before you start, you'll need the following:
+- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free ](about:blank). If you are a student, then sign up for an [Azure for Students](about:blank) account.
 
 ## Create cloud resources
 
@@ -6,9 +7,9 @@ Before you start, you'll need the following:A Microsoft Azure subscription. If y
 
 Perform the following steps in the Azure Cloud Shell environment.
 
-1. Select ‘Bash' from the top left as the environment for your cloud shell.
+1. Select ‘Bash' from the top left as the environment for your Cloud Shell.
 
-2. Add the Azure IoT extension to the cloud shell instance.
+2. Add the Azure IoT extension to the Cloud Shell instance.
 
    ```
    az extension add --name azure-cli-iot-ext 
@@ -18,11 +19,11 @@ Perform the following steps in the Azure Cloud Shell environment.
 
    ```
    # Pick a unique string to append to your resources
-   export UNIQUESTRING=replace-with-your-unique-string  
+   export UNIQUESTRING=<replace-with-your-unique-string>  
    export RGLOC=westus2   
    
    az group create \
-   --name iotlab-k8s-resources-$UNIQUESTRING \
+   --name iot-resources-$UNIQUESTRING \
    --location $RGLOC   
    ```
 
@@ -32,18 +33,18 @@ Perform the following steps in the Azure Cloud Shell environment.
 
    ```
    az iot hub create \
-   --resource-group iotlab-k8s-resources-$UNIQUESTRING \
-   --name iotlab-k8s-hub-$UNIQUESTRING \
+   --resource-group iot-resources-$UNIQUESTRING \
+   --name iot-hub-$UNIQUESTRING \
    --sku S1 \
    --partition-count 2   
    ```
 
-2. Create an edge-enabled device in your IoT Hub.  In this exercise we only use a single device.
+2. Create an edge-enabled device in your IoT Hub.  In this exercise, we only use a single device.
 
    ```
    az iot hub device-identity create \
-   --device-id edge-k8s-device-$UNIQUESTRING \
-   --hub-name iotlab-k8s-hub-$UNIQUESTRING \
+   --device-id edge-device-$UNIQUESTRING \
+   --hub-name iot-hub-$UNIQUESTRING \
    --edge-enabled   
    ```
 
@@ -116,12 +117,12 @@ sudo apt-get install iotedge
 
 ## Set edge workloads
 
-1. Download the deployment configuration file that describes the Azure IoT Edge Modules and Routes for this solution. Open the [deployment.arm32v7.json](https://raw.githubusercontent.com/gloveboxes/Creating-an-image-recognition-solution-with-Azure-IoT-Edge-and-Azure-Cognitive-Services/master/config/deployment.arm32v7.json) link and save the deployment.arm32v7.json in a known location on your computer.
+1. Download the deployment configuration file that describes the Azure IoT Edge Modules and Routes for this solution. Open the [deployment.amd64.json](https://raw.githubusercontent.com/gloveboxes/Creating-an-image-recognition-solution-with-Azure-IoT-Edge-and-Azure-Cognitive-Services/master/config/deployment.arm32v7.json) link and save the deployment.arm32v7.json in a known location on your computer.
 2. Open a command line console/terminal and change directory to the location where you saved the deployment.arm32v7.json file.
 3. Finally, from the command line run the following command, be sure to substitute [device id] and the [hub name] values.
 
 ```
-az iot edge set-modules --device-id [device id] --hub-name [hub name] --content deployment.arm32v7.json
+az iot edge set-modules --device-id [device id] --hub-name [hub name] --content deployment.amd64.json
 ```
 
-The modules will now start to deploy to your Raspberry Pi, the Raspberry Pi green activity LED will flicker until the deployment completes. Approximately 1.5 GB of Dockers modules will be downloaded and decompressed on the Raspberry Pi. This is a one off operation.
+The modules will now start to deploy to your Linux computer. Approximately 1.5 GB of Dockers modules will be downloaded and decompressed on the computer. This is a one off operation.
