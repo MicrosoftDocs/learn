@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.rust-memory-management.4-exercise-lifetimes
+metadata:
+  title: Exercise - Lifetimes
+  description: Use what you've learned to implement a function by using lifetimes.
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Lifetimes
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-lifetimes.md)]
