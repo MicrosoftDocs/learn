@@ -3,7 +3,7 @@ uid: learn.build-web-api-net-core
 metadata:
   title: Create a web API with ASP.NET Core
   description: Create a RESTful service with ASP.NET Core that supports Create, Read, Update, Delete (CRUD) operations.
-  ms.date: 11/12/2020
+  ms.date: 02/11/2021
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
