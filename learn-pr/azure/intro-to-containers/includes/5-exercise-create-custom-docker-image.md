@@ -2,8 +2,8 @@ A Dockerfile contains the steps for building a custom Docker image.
 
 You now decide to deploy one of your organization's web apps using Docker. You select a simple web app that implements a web API for a hotel reservations website. The web API exposes HTTP POST and GET operations that create and retrieve customer's bookings.
 
-    > [!NOTE]
-    > In this version of the web app, the bookings are not actually persisted, and queries return dummy data.
+> [!NOTE]
+> In this version of the web app, the bookings are not actually persisted, and queries return dummy data.
 
 In this exercise, you'll create a Dockerfile for an app that doesn't have one. Then, you'll build the image and run it locally.
 
@@ -31,7 +31,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     > [!NOTE]
     > With this previous command, you'll be offered a textfile to save. However, if you use this method you may still need to go to the folder, and remove the .txt extension. Save it as **Dockerfile** (NOT Dockerfile.txt)
 
-1. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
+4. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
 
     ```Dockerfile
     FROM mcr.microsoft.com/dotnet/core/sdk:2.2
@@ -41,7 +41,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet restore "HotelReservationSystem/HotelReservationSystem.csproj"
     ```
 
-1. Append the following commands to the Dockerfile. These commands copy the source code for the web app to the container, and then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
+5. Append the following commands to the Dockerfile. These commands copy the source code for the web app to the container, and then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
 
     ```Dockerfile
     COPY . .
@@ -49,13 +49,13 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet build "HotelReservationSystem.csproj" -c Release -o /app
     ```
 
-1. Add the following command to the Dockerfile. The `dotnet publish` command copies the executables for the website to a new folder and removes any interim files. The files in this folder can then be deployed to a website.
+6. Add the following command to the Dockerfile. The `dotnet publish` command copies the executables for the website to a new folder and removes any interim files. The files in this folder can then be deployed to a website.
 
     ```Dockerfile
     RUN dotnet publish "HotelReservationSystem.csproj" -c Release -o /app
     ```
 
-1. Add the following commands to the Dockerfile. The first command opens port 80 in the container. The second command moves to the `/app` folder containing the published version of the web app. The final command specifies that when the container runs it should execute the command `dotnet HotelReservationSystem.dll`. This library contains the compiled code for the web app.
+7. Add the following commands to the Dockerfile. The first command opens port 80 in the container. The second command moves to the `/app` folder containing the published version of the web app. The final command specifies that when the container runs it should execute the command `dotnet HotelReservationSystem.dll`. This library contains the compiled code for the web app.
 
     ```Dockerfile
     EXPOSE 80
@@ -63,7 +63,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     ENTRYPOINT ["dotnet", "HotelReservationSystem.dll"]
     ```
 
-1. Save the file and close your text editor.
+8. Save the file and close your text editor.
 
 ## Build and deploy the image using the Dockerfile
 
