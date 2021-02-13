@@ -33,16 +33,16 @@ A notification will appear after deployment is complete. Your new Remote Renderi
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. Select the Remote Rendering service resource from the list.
 
-    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the remote dash rendering dash demo resource.":::
+    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the remote dash rendering dash demo resource." lightbox="../media/all-resources.png":::
 
 1. In the **Overview** tab, note the **Account Domain**.
 
-    :::image type="content" source="../media/account-domain.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account domain.":::
+    :::image type="content" source="../media/account-domain.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account domain." lightbox="../media/account-domain.png":::
 
 1. In the **Overview** tab, note the **Account ID**.
 
-    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account ID.":::
+    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around the account ID." lightbox="../media/account-id.png":::
 
 1. In the **Settings** section, select **Access Keys**. In the next exercise, you'll need the value for **Primary key** to render the model in the app.
 
-    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around access keys within the settings section. There's also a red box around the primary key.":::
+    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the remote rendering service resource page. There's a red box around access keys within the settings section. There's also a red box around the primary key." lightbox="../media/access-keys.png":::

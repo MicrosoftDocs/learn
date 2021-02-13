@@ -25,9 +25,9 @@ Here, you'll configure the Unity project and scene to render the truck engine in
 
 1. Optimize XR Settings as follows:
 
-- Set Windows Mixed Reality **Depth Format** to **16-bit depth**.
-- Select the Windows Mixed Reality **Enable Depth Buffer Sharing** check box.
-- Set **Stereo Rendering Mode** to **Single Pass Instanced**.
+    - Set Windows Mixed Reality **Depth Format** to **16-bit depth**.
+    - Select the Windows Mixed Reality **Enable Depth Buffer Sharing** check box.
+    - Set **Stereo Rendering Mode** to **Single Pass Instanced**.
 
     :::image type="content" source="../media/optimize-xr-settings.png" alt-text="    Screenshot of the X R settings. The Virtual Reality S D K section and Stereo Rendering Mode section are highlighted. Depth Format is set to 16-bit depth. The Enable Depth Sharing box is selected. Stereo Rendering Mode is set to Single Pass Instanced.":::
 
@@ -41,10 +41,10 @@ Here, you'll configure the Unity project and scene to render the truck engine in
 
 1. In the **Inspector** window, enter your credentials in the **Remote Rendering (Script)** component:
 
-- **Account Domain**: The **Account Domain** for the Remote Rendering resource.
-- **Account Authentication Domain**: The **Account Domain** for the Remote Rendering resource.
-- **Account ID**: The **Account ID** for the Remote Rendering resource.
-- **Account Key**: The **Primary key** for the Remote Rendering resource.
+    - **Account Domain**: The **Account Domain** for the Remote Rendering resource.
+    - **Account Authentication Domain**: The **Account Domain** for the Remote Rendering resource.
+    - **Account ID**: The **Account ID** for the Remote Rendering resource.
+    - **Account Key**: The **Primary key** for the Remote Rendering resource.
 
     :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the remote rendering script. The account domain, account authentication domain, account ID and account key are highlighted.":::
 
