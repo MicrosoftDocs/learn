@@ -58,7 +58,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker container stop <NAME>
     ```
 
-1. Verify that the container is no longer running. The following command shows the status of the container as *Exited*. The *-a* flag indicates that the command shows the status of all containers, not just those that are still running.
+1. Verify that the container is no longer running. Run the following command to show the status of the container as *Exited*. The *-a* flag indicates that the command shows the status of all containers, not just those that are still running.
 
     ```bash
     docker ps -a
@@ -68,7 +68,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
 ## Remove the container and image from the local registry
 
-1. Although the container has stopped, it's still loaded and can be restarted. Remove it using the following command. As before, replace `<NAME>` with the name of your container.
+1. Although the container has stopped, it's still loaded and can be restarted. Remove it by running the following command. As before, replace `<NAME>` with the name of your container.
 
     ```bash
     docker container rm <NAME>

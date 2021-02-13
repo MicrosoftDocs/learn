@@ -92,7 +92,7 @@ Use the `docker run` command to start a container. Specify the image to run with
 docker run mcr.microsoft.com/dotnet/core/samples:aspnetapp
 ```
 
-In this example, the command will respond with the following message:
+In this example, the command responds with the following message.
 
 ```console
 warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
@@ -100,7 +100,7 @@ warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
 Hosting environment: Production
 Content root path: /app
 Now listening on: http://[::]:80
-Application started. Press Ctrl+C to shut down.
+Application started. Press <kbd>Ctrl+C</kbd> to shut down.
 ```
 
 This image contains a web app, so it's now listening for requests to arrive on HTTP port 80. However, if you open a web browser and navigate to `http://localhost:80`, you won't see the app.
@@ -109,7 +109,7 @@ By default, Docker doesn't allow inbound network requests to reach your containe
 
 Additionally, the web app in this image isn't meant to be used interactively from the command line. When we start it, we want Docker to start it in the background and just let it run. Use the `-d` flag to instruct Docker to start the web app in the background.
 
-You can press Ctrl-C to stop the image and then restart it as shown by the following example.
+You can press <kbd>Ctrl+C</kbd> to stop the image and then restart it as shown by the following example.
 
 ```bash
 docker run -p 8080:80 -d mcr.microsoft.com/dotnet/core/samples:aspnetapp
@@ -182,7 +182,7 @@ docker container rm -f elegant_ramanujan
 
 ## Remove Docker images
 
-You can remove an image from the local computer with the `docker image rm` command. Specify the image ID of the image to remove. This example removes the image for the sample web app:
+You can remove an image from the local computer with the `docker image rm` command. Specify the image ID of the image to remove. The following example removes the image for the sample web app.
 
 ```bash
 docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
