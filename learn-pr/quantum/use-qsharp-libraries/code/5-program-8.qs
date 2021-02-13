@@ -27,53 +27,52 @@
         let phaseOracle = IsbnOracle(constants, _);
 
         // Allocate 4-qubit register necessary to represent the possible values (digits 0-9)
-        using (digitReg = Qubit[4]) {
-            mutable missingDigit = 0;
-            mutable resultISBN = new Int[10];
-            mutable attempts = 0;
+        use digitReg = Qubit[4];
+        mutable missingDigit = 0;
+        mutable resultISBN = new Int[10];
+        mutable attempts = 0;
 
-            // Repeat the algorithm until the result forms a valid ISBN
-            repeat{
-                RunGroversSearch(digitReg, phaseOracle, numIterations);
-                // print the resulting state of the system and then measure
-                DumpMachine(); 
-                set missingDigit = MeasureInteger(LittleEndian(digitReg));
-                set resultISBN = MakeResultIsbn(missingDigit, inputISBN);
-                // keep track of the number of attempts
-                set attempts = attempts  + 1;
-            } 
-            until (IsIsbnValid(resultISBN));
+        // Repeat the algorithm until the result forms a valid ISBN
+        repeat{
+            RunGroversSearch(digitReg, phaseOracle, numIterations);
+            // print the resulting state of the system and then measure
+            DumpMachine(); 
+            set missingDigit = MeasureInteger(LittleEndian(digitReg));
+            set resultISBN = MakeResultIsbn(missingDigit, inputISBN);
+            // keep track of the number of attempts
+            set attempts = attempts  + 1;
+        } 
+        until IsIsbnValid(resultISBN);
 
-            // print the results
-            Message($"Missing digit: {missingDigit}");
-            Message($"Full ISBN: {resultISBN}");
-            if(attempts==1){
-                Message($"The missing digit was found in {attempts} attempt.");
-            }
-            else {
-                Message( $"The missing digit was found in {attempts} attempts.");
-            }
+        // print the results
+        Message($"Missing digit: {missingDigit}");
+        Message($"Full ISBN: {resultISBN}");
+        if attempts == 1 {
+            Message($"The missing digit was found in {attempts} attempt.");
+        }
+        else {
+            Message( $"The missing digit was found in {attempts} attempts.");
         }
     }
 
 
     operation ComputeIsbnCheck(constants : (Int, Int), digitReg : Qubit[], targetReg : Qubit[]) : Unit is Adj + Ctl {
-        let (a, b) = constants; 
+        let (a, b) = constants;
         ApplyXorInPlace(b, LittleEndian(targetReg));
         MultiplyAndAddByModularInteger(a, 11, LittleEndian(digitReg), LittleEndian(targetReg));
     }
 
 
     operation IsbnOracle(constants : (Int, Int), digitReg : Qubit[]) : Unit is Adj + Ctl {
-        using ((targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit()) ) {
-            within {
-                X(flagQubit);
-                H(flagQubit);
-                ComputeIsbnCheck(constants, digitReg, targetReg);
-            } apply {  
-                ApplyControlledOnInt(0, X, targetReg, flagQubit);
-            }
-        }   
+        use (targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit());
+        within {
+            // Initialize flag qubit to |-⟩ 
+            X(flagQubit);
+            H(flagQubit);
+            ComputeIsbnCheck(constants, digitReg, targetReg);
+        } apply {
+            ApplyControlledOnInt(0, X, targetReg, flagQubit);
+        }
     }
 
 
@@ -81,8 +80,8 @@
         EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
         mutable a = 0;
         mutable b = 0;
-        for ((idx, digit) in Enumerated(digits)) {
-            if (digit < 0) {
+        for (idx, digit) in Enumerated(digits) {
+            if digit < 0 {
                 set a = 10 - idx;
             }
             else {
@@ -117,9 +116,8 @@
 
     function IsIsbnValid(digits : Int[]) : Bool {
         EqualityFactI(Length(digits), 10, "Expected a 10-digit number.");
-
         mutable acc = 0;
-        for ((idx, digit) in Enumerated(digits)) {
+        for (idx, digit) in Enumerated(digits) {
             set acc += (10 - idx) * digit;
         }
         return acc % 11 == 0;
@@ -128,8 +126,8 @@
 
     function MakeResultIsbn(missingDigit : Int, inputISBN : Int[]) : Int[] {
         mutable resultISBN = new Int[Length(inputISBN)];
-        for (i in 0..Length(inputISBN) - 1) {
-            if (inputISBN[i] < 0) {
+        for i in 0..Length(inputISBN) - 1 {
+            if inputISBN[i] < 0 {
                 set resultISBN w/= i <- missingDigit;
             }
             else {
@@ -142,7 +140,7 @@
 
     operation RunGroversSearch(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
         PrepareUniformSuperpositionOverDigits(register);
-        for (_ in 1 .. iterations) {
+        for _ in 1 .. iterations {
             phaseOracle(register);
             ReflectAboutUniform(register);
         }
