@@ -9,6 +9,7 @@ metadata:
   ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

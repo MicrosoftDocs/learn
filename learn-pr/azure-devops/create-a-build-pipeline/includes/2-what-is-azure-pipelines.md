@@ -36,7 +36,7 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSx]
 
 **Amita:** Give me the 5-minute rundown on continuous integration.
 
@@ -116,7 +116,7 @@ You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines.
 
 #### Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&azure-portal=true) to see the criteria.
+If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. Microsoft charges based on the number of jobs you want to run at a time, not the number of agents registered.
 

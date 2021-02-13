@@ -15,7 +15,7 @@ The ‘sell through Microsoft’ selection you make in this step determines the 
 When you get to the properties tab of the publishing process, you’ll be asked to define the categories and industries that will be used to index your offering in the commercial marketplace. You’ll select your choices from a pre-populated list of options.
 
 > [!Important]
-> The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT & developer applications are published to Microsoft AppSource.
+> The categories you select to describe your offer will determine your SaaS offer’s placement in Azure Marketplace or Microsoft AppSource. As a reminder, business applications are published to Microsoft AppSource, while IT & developer applications are published to Azure Marketplace.
 
 The properties tab is also where you provide the legal terms and conditions that govern the use of your SaaS application by customers. You can use the commercial marketplace standard contract, or you can define your own terms and conditions. If you choose the standard contract, you’ll be given the option to supplement it with amendments that you define. For more detail on terms and conditions, you can reference our [standard contract for Microsoft commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/standard-contract).
 
@@ -51,7 +51,7 @@ You’ll choose which markets your SaaS offer will be available in from a list o
 > [!TIP]
 > If you choose the flat rate pricing model, you’ll also be given the opportunity to add meters to your plan.
 
-You finish this page by telling us whether or not you want to offer customers a one-month free trial and indicating whether this plan is public private. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers that you choose.
+You finish this page by telling us whether or not you want to offer customers a one-month free trial and indicating whether this plan is public or private. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers that you choose.
 
 For more detailed guidance on creating plans for your SaaS offer, reference our [documentation on SaaS offer plans](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer-plans).
 > [!TIP]
