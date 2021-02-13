@@ -34,6 +34,8 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
 
+1. On the menu bar, select **+ Add**. This action starts the function creation process. The **Add function** panel appears.
+
 1. In the **Select a template** section, select **HTTP trigger**.
 
 1. In the **Template details** section, in **New Function** text box, enter a name for the function. In the **Authorization level** dropdown, select *Anonymous*, and then select **Add**.
