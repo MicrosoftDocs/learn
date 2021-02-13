@@ -20,7 +20,7 @@ prerequisites: |
   - A GitHub account
   - Basic knowledge of software development
   - Basic knowledge of managing and provisioning Azure resources
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-java-azure-pipeline-terraform.svg
 levels:
 - intermediate
 roles:
