@@ -31,7 +31,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
-5. Open a web browser and go to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
+5. Open a web browser, and navigate to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
 
     :::image type="content" source="../media/3-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser." loc-scope="other"::: <!--no-loc -->
 
@@ -43,7 +43,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
    docker ps
    ```
 
-   The output should look similar to this:
+   The output should look similar to this.
 
    ```console
    CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
@@ -64,7 +64,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker ps -a
     ```
 
-1. Return to the web browser and refresh the page for the sample web app. It should fail with a *Connection Refused* error.
+1. Return to the web browser, and refresh the page for the sample web app. It should fail with a *Connection Refused* error.
 
 ## Remove the container and image from the local registry
 
@@ -74,7 +74,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker container rm <NAME>
     ```
 
-1. Verify that the container has been removed with the following command. The command should no longer list the container.
+1. Verify that the container has been removed by running the following command. The command should no longer list the container.
 
     ```bash
     docker ps -a

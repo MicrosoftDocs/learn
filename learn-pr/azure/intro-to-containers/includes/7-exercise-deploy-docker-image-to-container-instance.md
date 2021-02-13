@@ -16,9 +16,9 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
     :::image type="content" source="../media/7-search-container-registry.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
 
-1. Specify the values in the following table for each of the properties, and then select **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
+1. Specify the values in the following table for each of the settings, and then select **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
     | Name | Choose a unique name |
     | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
