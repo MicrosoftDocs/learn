@@ -30,7 +30,7 @@ units:
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.1-introduction
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.2-create-your-service-bus-premium-namespace
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.3-messaging-with-jms-and-service-bus
-- learn.azure.cloud-scale-messaging-with-jms-service-bus.4-sending-messaging-to-service-bus
+- learn.azure.cloud-scale-messaging-with-jms-service-bus.4-sending-messages-to-service-bus
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.5-receiving-messages-from-service-bus
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.6-knowledge-check
 - learn.azure.cloud-scale-messaging-with-jms-service-bus.7-summary
