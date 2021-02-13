@@ -1,4 +1,8 @@
-You can introduce and put the scenario here
+Migrating to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand and focus on more critical tasks. 
+
+There are many reasons for moving to Azure, and a proven, systematic approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success.
+
+## You can introduce and put the scenario here
 
 ## Learning Objectives
 
