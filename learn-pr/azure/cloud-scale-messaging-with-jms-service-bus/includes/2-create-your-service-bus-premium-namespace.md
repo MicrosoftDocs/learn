@@ -14,27 +14,28 @@ You can use the Azure CLI to create and manage Azure resources. The CLI allows a
 
 To utilize the Azure CLI to create an Azure Service Bus Premium namespace use the below commands:
 
-### Login to Azure
+### Set up the Azure CLI
+
+If the Azure CLI isn't already installed on your machine, [install it now](https://docs.microsoft.com/cli/azure/install-azure-cli). You can check the version of your current Azure CLI installation by running:
+
+```bash
+az --version
+```
+
+Ensure that the Azure CLI installation is signed into your Azure subscription.
 
 ```bash
 az login
+az account show --output table
 ```
 
-This will take you to a login process through the Azure browser where you must login. After login the Azure CLI will be authenticated to run your commands.
-
-### Pick the appropriate subscription
-
-To list your subscriptions, run the below command.
+Ensure that your default subscription is the one you want to use for this lab. If not, set the subscription by using:
 
 ```bash
-az account list --output table
+az account set --subscription SUBSCRIPTION_ID
 ```
 
-To pick the specific subscription, run the below command.
-
-```bash
-az account set --subscription "<PICK YOUR SUBSCRIPTION>"
-```
+Congratulations, the Azure CLI is now ready to create your first Azure Service Bus Premium namespace.
 
 ### Create a resource group
 
@@ -46,11 +47,37 @@ az group create --name MSLearn_JMS_ServiceBus_Course --location eastus
 
 ### Create an Azure Service Bus namespace
 
-We will then create an Azure Service Bus namespace in the resource group we just created.
+In this section, you'll create an Azure Service Bus namespace by using the Azure CLI. It's possible to do exactly the same configuration by using the Azure portal. For this configuration, you will need to setup the three environment variables.
+
+   * Create a resource group. To limit typing, set the variable `AZ_RESOURCE_GROUP` to the name of the resource group that you want to create.
+   * Set the variable `AZ_LOCATION` to the name of the Azure region that you want to use. The default location is eastus, but you can choose a region closer to you for better performance. (Use az account list-locations to list all available regions.)
+   * Choose a name for your Azure Service Bus Premium namespace in the `AZ_SB_PREMIUM_NAMESPACE` variable.
+
+> [!NOTE]
+> Be sure to substitute your own values for `AZ_RESOURCE_GROUP`, `AZ_LOCATION`, and `AZ_SB_PREMIUM_NAMESPACE` in the following example configuration.
+>
 
 ```bash
-az servicebus queue create --resource-group MSLearn_JMS_ServiceBus_Course --namespace-name "<PICK YOUR NAMESPACE NAME>" --sku Premium -- capacity 1
+AZ_RESOURCE_GROUP=<xxxxxxx>
+AZ_LOCATION=eastus
+AZ_SB_PREMIUM_NAMESPACE=<xxxxxxx>
 ```
+
+With these variables set, you can now create your Azure Service Bus Premium namespace.
+
+```bash
+az group create \
+    --name $AZ_RESOURCE_GROUP \
+    --location $AZ_LOCATION
+
+az servicebus namespace create \
+    --resource-group $AZ_RESOURCE_GROUP \
+    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
+    --sku Premium \
+    -- capacity 1
+```
+
+This command takes a few minutes to finish. You can continue to the next unit while it finishes.
 
 > [!IMPORTANT]
 > Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources.
@@ -58,8 +85,12 @@ az servicebus queue create --resource-group MSLearn_JMS_ServiceBus_Course --name
 > The command to delete and clean up the resources are available on the Summary page, but they are available below if you are ending the course now.
 >
 >   ```bash
->   az servicebus namespace delete --resource-group MSLearn_JMS_ServiceBus_Course --namespace-name "<PICK YOUR NAMESPACE NAME>"
+>   az servicebus namespace delete \
+>    --resource-group $AZ_RESOURCE_GROUP \
+>    --namespace-name $AZ_SB_PREMIUM_NAMESPACE
 >   
->   az group create --name MSLearn_JMS_ServiceBus_Course --location eastus
+>   az group delete \
+>    --name $AZ_RESOURCE_GROUP \
+>    --location $AZ_LOCATION
 >   ```
 >
