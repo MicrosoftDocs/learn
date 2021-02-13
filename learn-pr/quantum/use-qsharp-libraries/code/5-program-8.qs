@@ -66,7 +66,6 @@
     operation IsbnOracle(constants : (Int, Int), digitReg : Qubit[]) : Unit is Adj + Ctl {
         use (targetReg, flagQubit) = (Qubit[Length(digitReg)], Qubit());
         within {
-            // Initialize flag qubit to |-⟩ 
             X(flagQubit);
             H(flagQubit);
             ComputeIsbnCheck(constants, digitReg, targetReg);
