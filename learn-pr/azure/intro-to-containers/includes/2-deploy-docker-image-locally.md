@@ -100,7 +100,7 @@ warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
 Hosting environment: Production
 Content root path: /app
 Now listening on: http://[::]:80
-Application started. Press `Ctrl+C` to shut down.
+Application started. Press Ctrl+C to shut down.
 ```
 
 This image contains a web app, so it's now listening for requests to arrive on HTTP port 80. However, if you open a web browser and navigate to `http://localhost:80`, you won't see the app.
