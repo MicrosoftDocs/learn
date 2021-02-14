@@ -75,7 +75,7 @@ When you fetch an image, Docker stores it locally and makes it available for run
 docker image list
 ```
 
-The output looks like the example below.
+The output looks like the following example.
 
 ```console
 REPOSITORY TAG IMAGE ID CREATED SIZE
@@ -137,7 +137,7 @@ docker ps
 
 The output includes the status of the container. *Up* if it is running, *Exited* if it has terminated, among other values such as the command line flags specified when the image was started, and additional information. Docker lets you run multiple containers from the same image simultaneously, so each container is assigned a unique ID as well as a unique human-readable name. Most Docker commands used to manage individual containers can use either the ID or the name to refer to a specific container.
 
-In the output below, you can see two containers. The *PORTS* field shows that the container with ID `elegant_ramanujan` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
+In the following output, you can see two containers. The *PORTS* field shows that the container with ID `elegant_ramanujan` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
 
 ```console
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
@@ -188,7 +188,7 @@ You can remove an image from the local computer with the `docker image rm` comma
 docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
 ```
 
-Containers running the image must be terminated before the image can be removed. If the image is still in use by a container, you'll get an error message like the one shown below. In this example, the error occurs because the *youthful_hesienburg* container is still using the image.
+Containers running the image must be terminated before the image can be removed. If the image is still in use by a container, you'll get an error message like the one that follows. In this example, the error occurs because the *youthful_hesienburg* container is still using the image.
 
 ```console
 Error response from daemon: conflict: unable to delete 575d85b4a69b (cannot be forced) - image is being used by running container c13165988cfe
