@@ -11,6 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
 quiz:
   questions:
   - content: "What is the primary job of an interface?"
