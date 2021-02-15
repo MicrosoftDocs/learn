@@ -105,9 +105,9 @@ Now, we're ready to load in our **user data** `users.csv`, and **payment event d
     \copy payment_events from 'events.csv' WITH CSV;
     ```
 
-    ### Run queries
+### Run queries
 
-    Our data is now loaded and distributed. Let's run a couple queries.
+Our data is now loaded and distributed. Let's run a couple queries.
 
 1. Run the following query in the Cloud Shell to see how many events we've stored.
 
