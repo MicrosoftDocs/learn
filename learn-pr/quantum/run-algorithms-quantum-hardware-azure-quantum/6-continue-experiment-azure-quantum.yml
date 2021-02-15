@@ -3,10 +3,10 @@ uid: learn.quantum.run-quantum-algorithms-hardware.6-continue-experimenting-azur
 title: Continue experimenting with Azure Quantum
 metadata:
   title: Continue experimenting with Azure Quantum
-  description: Collection of action items to expand the quantum computing experience for the users.
+  description: Collection of action items to expand the quantum computing experience for users.
   ms.date: 05/19/2020
   author: geduardo
-  ms.author: v-edsanc
+  ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

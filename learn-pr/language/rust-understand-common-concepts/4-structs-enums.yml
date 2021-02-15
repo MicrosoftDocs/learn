@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.4-structs-enums
+metadata:
+  title: Learn about structs and enums
+  description: Learn about the data types structs and enums, and how to use them.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about structs and enums
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-structs-enums.md)]

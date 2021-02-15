@@ -60,7 +60,7 @@ Under the Linux logo, select either the **.deb** installer (for .deb-based packa
 
 If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
 
-Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select the **Install** button.
+Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 
 You might be asked to authenticate by using your account password.
 
@@ -88,7 +88,7 @@ Go to the [Visual Studio Code download page](https://code.visualstudio.com/Downl
 
 The web page displays logos for Windows, Linux, and Mac.
 
-Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder) or immediately run the file.
+Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder), or immediately run the file.
 
 You should move the file to the Applications folder before you open it, as described in the next step.
 
@@ -101,6 +101,6 @@ Open Finder. Drag the Visual Studio Code file from the Downloads stack on the Do
 Double-click the **Visual Studio Code** app from the Applications folder.  
 
 > [!IMPORTANT]
-> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
+> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
 
 ::: zone-end

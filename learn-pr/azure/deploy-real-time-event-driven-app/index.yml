@@ -21,7 +21,7 @@ prerequisites: |
   - An Azure subscription
   - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
   - Azure Functions Core Tools (2.6.66 or later)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-event-driven-real-time.svg
 levels:
 - intermediate
 roles:

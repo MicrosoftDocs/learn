@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-high-availability-of-windows-server-vms.select-options-for-hyper-v
+title: Select high-availability options for Hyper-V
+metadata:
+  title: Select high-availability options for Hyper-V
+  description: "Select high-availability options for Hyper-V"
+  ms.date: 02/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-select-high-availability-options-hyper-v.md)]
