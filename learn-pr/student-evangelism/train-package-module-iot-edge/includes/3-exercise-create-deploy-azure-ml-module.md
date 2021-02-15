@@ -9,7 +9,7 @@ You'll need:
 
 - A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com/) or a Student Subscription at [https://aka.ms/azureforstudents].
 
-- A Github Codespace environment. This provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises.
+- A GitHub Codespace environment. This provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises.
 
   To set up this environment:
 
