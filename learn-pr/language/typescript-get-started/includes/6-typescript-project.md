@@ -96,7 +96,7 @@ As a final step, add an HTML file to the project so you can run and test the Jav
 
 ## Exercise solution
 
-You can download the completed Visual Studio Code workspace from the [GitHub code repo](https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-01/m01-end). To run the solution, you must first install the following software on your machine:
+You can download the completed Visual Studio Code workspace from the [GitHub code repo](https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-01/m01-end?azure-portal=true). To run the solution, you must first install the following software on your machine:
 
 - Visual Studio Code (or IDE of your choice)
 - Node Package Manager (npm)
