@@ -18,7 +18,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
     > [!NOTE]
     > Once increased and saved, the number of worker nodes cannot be decreased using the slider.
 
-1. At the bottom of the page, select **Save**, then select **Continue**.
+1. At the bottom of the page, select **Save**, and then select **Continue**.
 
     To take advantage of newly added nodes, we must rebalance distributed table shards. You need to **wait** until the deployment of the new nodes is complete, though.
 
@@ -26,7 +26,7 @@ In this exercise, we're going to double the number of worker nodes. Then we'll r
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com?azure-portal=true)
 
-1. Connect to your Hyperscale instance by running the following command, using your password:
+1. Connect to your Hyperscale instance by running the following command, and using your password.
 
     ```psql
     psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"

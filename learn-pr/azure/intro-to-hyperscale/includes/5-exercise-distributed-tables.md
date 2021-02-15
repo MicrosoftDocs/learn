@@ -30,7 +30,7 @@
        psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
     ```
 
-1. At the prompt, enter your password, then press <kbd>Enter</kbd> to connect to your Hyperscale server group.
+1. At the prompt, enter your password, and then press <kbd>Enter</kbd> to connect to your Hyperscale server group.
 
     > [!NOTE]
     > You can reset your password in the [Azure Portal](https://portal.azure.com?azure-portal=true). Select the server resource you created in the previous exercise (such as `payment-server-demo`), and then select `Reset password`.
@@ -40,10 +40,10 @@
 Now that you know how to connect to your Hyperscale server group, we can start to fill out the database. We'll:
 
 - Create two tables.
-- Tell Hyperscale to shard the two tables across the worker nodes.
+- Inform Hyperscale to shard the two tables across the worker nodes.
 - Insert payment and user data into the tables.
 
-First, create the event and user tables.
+First, let's create the event and user tables.
 
 1. In the Cloud Shell, run the following query to create our payment_events and payment_users tables.
 
