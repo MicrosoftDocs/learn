@@ -13,23 +13,23 @@ Creating an interactive application requires the ability to modify data and resp
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
 - [Node.js](https://nodejs.org/?azure-portal=true) installed locally
 - [Git](https://git-scm.com/downloads/?azure-portal=true) installed locally
-- The [starter project](#clone-the-project/?azure-portal=true)
+- The [starter project](#clone-the-project)
 
-## Clone the project and open the code in Visual Studio Code
+## Clone the project
 
-This module uses a starter project.
+This module uses a starter project. Clone the starter and open it in Visual Studio Code.
 
 1. To obtain the starter project, execute the following steps in a command or terminal window to clone the repository and open the starter folder in Visual Studio Code:
 
     ````bash
     # Windows
-    git clone https://github.com/GeekTrainer/learn-react
-    cd learn-react\\code\\3-state-events\\starter
+    git clone https://github.com/MicrosoftDocs/mslearn-react
+    cd mslearn-react\\code\\3-state-events\\starter
     code .
 
     # macOS or Linux
-    git clone https://github.com/GeekTrainer/learn-react
-    cd learn-react/code/3-state-events/starter
+    git clone https://github.com/MicrosoftDocs/mslearn-react
+    cd mslearn-react/code/3-state-events/starter
     code .
     ````
 
