@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-work-external-libraries.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "What is the primary job of an interface?"
+    choices:
+    - content: "Define the implementation details for an object."
+      isCorrect: false
+      explanation: "Incorrect. A function or class that implements the interface are responsible for the implementation details."
+    - content: "Describe the properties and return types of an object."
+      isCorrect: true
+      explanation: "Correct! An interface describes the properties and return types, while a function or class defines the implementation details."
+    - content: "Fulfill the code contract for an object."
+      isCorrect: false
+      explanation: "Incorrect. A function or class that implements the interface are responsible for fulfilling the code contract for an object."
+  - content: "How can you prevent the type system from raising an error when a property in an interface is omitted?"
+    choices:
+    - content: "Make the property optional."
+      isCorrect: true
+      explanation: "Correct! Optional properties may be omitted without raising an error."
+    - content: "Make the property required."
+      isCorrect: false
+      explanation: "Incorrect. TypeScript will raise an error when a required property is omitted."
+    - content: "Make the property read only."
+      isCorrect: false
+      explanation: "Incorrect. TypeScript will raise an error when a read-only property is omitted, unless it is also optional."
+  - content: "What happens when you extend one interface with another interface?"
+    choices:
+    - content: "Multiple interfaces can have the same property if the property has the exact same name."
+      isCorrect: false
+      explanation: "Incorrect. Multiple interfaces can have the same property if the property has the exact same name, but they must also be the same type."
+    - content: "If two interfaces have a property with the same name but different types, TypeScript ignores the property completely."
+      isCorrect: false
+      explanation: "Incorrect. If the property has the same name but different type, you must declare a new property such that the resulting property is a subtype of both interfaces."
+    - content: "You must implement all the required properties from all interfaces."
+      isCorrect: true
+      explanation: "Correct! Any required properties in any of the interfaces must be implemented in the combined interface."
+  
