@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. Both namespaces and modules use the `export` keyword to designate a component as available outside of the scope of the namespace or module."
     - content: "Compile multiple TypeScript files into a single JavaScript file."
       isCorrect: true
-      explanation: "Correct! The `--outFile` compiler option combines mutliple namespace files to a single JavaScript file."
+      explanation: "Correct! The `--outFile` compiler option combines multiple namespace files to a single JavaScript file."
     - content: "Declaring dependencies."
       isCorrect: false
       explanation: "Incorrect. Namespaces cannot declaire their dependencies."
