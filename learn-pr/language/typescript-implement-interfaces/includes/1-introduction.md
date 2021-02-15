@@ -24,4 +24,4 @@ After completing this module, you will be able to:
       npm install -g typescript
       ```
 
-For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [Module 01: Get started with TypeScript](../../../language/typescript-get-started/index.yml). After setting up your environment, you can run any of the Lab setup or solution files in the "Developing JavaScript applications using TypeScript" [Build JavaScript applications by using TypeScript](../../../paths/build-javascript-applications-typescript/index.yml) learning path.
+For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in [Module 01: Get started with TypeScript](../../../language/typescript-get-started/index.yml). After setting up your environment, you can run any of the Lab setup or solution files in the  [Build JavaScript applications by using TypeScript](../../../paths/build-javascript-applications-typescript/index.yml) learning path.
