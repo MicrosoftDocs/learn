@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription
   - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deploy-java-spring-boot-app-service-mysql.svg
 levels:
 - intermediate
 roles:

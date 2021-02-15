@@ -8,9 +8,9 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
-- [Apply and monitor infrastructure standards with Azure Policy](https://docs.microsoft.com/learn/modules/intro-to-governance/?azure-portal=true)
+- [Build a cloud governance strategy on Azure](https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/?azure-portal=true)
 - [Azure Resource Manager template documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/?azure-portal=true)
-- [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/learn/modules/explore-azure-infrastructure/?azure-portal=true)
+- [Describe core Azure architectural components](https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/?azure-portal=true)
 - [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true)
 - [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/?azure-portal=true)
 - [Regions and availability zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
