@@ -32,7 +32,7 @@ Organizations include:
 - The ability for organization owners to view members' two-factor authentication (2FA) status.
 - The option to require all organization members to use two-factor authentication.
 
-### The purpose of teams
+### Purpose of teams
 
 Teams are groups of organization members that reflect your company or group's structure with cascading access permissions and mentions.
 
