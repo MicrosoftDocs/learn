@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-variables-functions-packages.5-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/15/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do you declare and initialize a variable?"
+    choices:
+    - content: "var firstName string"
+      isCorrect: false
+      explanation: "This statement declares a variable."
+    - content: "firstName := \"John\""
+      isCorrect: true
+      explanation: "Correct! This statement declares and initializes a variable."
+    - content: "string firstName = \"John\""
+      isCorrect: false
+      explanation: "This statement will cause a syntax error. And you don't need to specify a type because Go will infer that the type is string."
+    - content: "firstName = \"John\""
+      isCorrect: false
+      explanation: "This answer is close, but this statement will cause an error because firstName is undefined. The declaration syntax (`:=`) is missing here."
+  - content: "What happens when you declare a variable but don't use it?"
+    choices:
+    - content: "You get a warning."
+      isCorrect: false
+      explanation: "You won't get a warning, but something else will happen."
+    - content: "Nothing. There's no problem if you have unused objects."
+      isCorrect: false
+      explanation: "There is, in fact, a problem when a declared variable isn't used."
+    - content: "You get a warning, but the next time the code won't compile."
+      isCorrect: false
+      explanation: "You'll get something other than a warning."
+    - content: "You get an error. The program won't compile."
+      isCorrect: true
+      explanation: "Correct. Go requires that variables are used in programs. It will throw an error stating that the variable was declared but not used."
+  - content: "How do data conversion types work in Go?"
+    choices:
+    - content: "You have to do conversion explicitly. Implicit conversion doesn't work in Go."
+      isCorrect: true
+      explanation: "Correct. With Go, you need to be explicit when you convert a value from one type to another."
+    - content: "You can do implicit casting from `int` to `int32`."
+      isCorrect: false
+      explanation: "If you try to do implicit casting, the program will throw an 'invalid operation' error."
+    - content: "You can only do it through external libraries."
+      isCorrect: false
+      explanation: "Conversions don't need to be done in external libraries. You can use a built-in function or package instead."
+    - content: "You can't convert from `int` to `string` or vice-versa."
+      isCorrect: false
+      explanation: "You can use either the strconv package or the fmt package to convert from an int to string."
+  - content: "Why would you use pointers in Go?"
+    choices:
+    - content: "Go doesn't support pointers."
+      isCorrect: false
+      explanation: "Go does in fact support pointers. A pointer is a variable that contains the memory address of another variable."
+    - content: "To free up memory."
+      isCorrect: false
+      explanation: "When you send a pointer to a function, you're not passing the value but an address memory. So the variable and its value still exist and are taking up memory."
+    - content: "To change variable values from the function caller."
+      isCorrect: true
+      explanation: "Correct. Pointers make it possible to change a variable's value in a function because the function passes a copy of the value."
+  - content: "How do you differentiate between a package and a standalone application?"
+    choices:
+    - content: "A standalone application uses the package main. A package (library) uses a different name."
+      isCorrect: true
+      explanation: "Correct. The main package indicates that your program will produce a standalone executable program."
+    - content: "You have to run either `go create library` or `go create program`."
+      isCorrect: false
+      explanation: "This answer isn't correct. `go create library` and `go create program` aren't valid commands."
+    - content: "It doesn't matter. It depends on how you use the code after you're done programming."
+      isCorrect: false
+      explanation: "This answer isn't correct. There's a clear way to differentiate between a package and a standalone application."      
+  

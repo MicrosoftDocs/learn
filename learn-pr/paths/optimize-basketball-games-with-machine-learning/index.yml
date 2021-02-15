@@ -1,0 +1,67 @@
+### YamlMime:LearningPath
+uid: learn.student-evangelism.optimize-basketball-games-with-machine-learning
+metadata:
+  title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by the new film SPACE JAM: A NEW LEGACY"
+  description: "This *Space Jam: A New Legacy* - inspired learning path aims to equip you with data science, web development skills, and coding strategies to impact a game of basketball in real time, ensuring victory for the Tune Squad in their next game."
+  brand: vs-code
+  ms.date: 12/14/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Use basketball stats to optimize game play with Visual Studio Code, inspired by SPACE JAM: A NEW LEGACY"
+summary: |
+  Inspired by the new film _Space Jam: A New Legacy_, this learning path shows basketball fans how an understanding of data science and coding can support their passions, create opportunities, and even open doors to possible careers. Develop skills in Visual Studio Code, Azure, GitHub, JavaScript, and Python, to gain insights into how individual moments throughout a player's history can lead to a critical game decision in the finals.
+
+  _Welcome to the Jam!  Basketball champion and global icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny in the animated/live-action event "Space Jam: A New Legacy," from director Malcolm D. Lee and an innovative filmmaking team including Ryan Coogler and Maverick Carter._
+
+  <details>
+  <summary>
+  Expand to see more about the film.
+  </summary>
+  <br />
+
+  _This transformational journey is a manic mashup of two worlds that reveals just how far some parents will go to connect with their kids. When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safely by leading Bugs, Lola Bunny, and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court: a powered-up roster of basketball stars as you’ve never seen them before.  It's Tunes versus Goons in the highest-stakes challenge of his life, that will redefine LeBron’s bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents and surprise even “King” James by playing the game their own way._
+
+
+  </details>
+
+  And don't forget to watch _Space Jam: A New Legacy_ coming Summer 2021!
+
+  In this learning path you will:
+  - Use Python, Pandas, and Visual Studio Code to understand basketball stats
+  - Use machine learning to cleanse and impute missing data from datasets
+  - Discover how to identify bimodal data across human and Tune Squad basketball players
+  - Explore the CodeTour extension in Visual Studio Code for code writing guidance
+  - Create a Water Break App with JavaScript and Azure static web apps
+  - Use GitHub Actions to deploy your app to the cloud
+
+  >[!TIP]
+  > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
+
+  © 2020 Warner Bros. Ent. All Rights Reserved.
+prerequisites: |
+  - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
+  - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+  - [Azure Static Web Apps extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
+  - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
+  - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
+  - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
+iconUrl: /learn/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+- student
+products:
+- vs-code
+- azure
+- azure-app-service-static
+- github
+modules:
+- learn.student-evangelism.predict-basketball-player-efficiency-ratings
+- learn.student-evangelism.optimize-basketball-player-rest-breaks
+- learn.student-evangelism.python-flask-build-ai-web-app
+trophy:
+  uid: learn.optimize-basketball-games-with-machine-learning.trophy

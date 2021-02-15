@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.contribute-opensource.2-identify
+title: Identify where you can help
+metadata:
+  title: Identify where you can help
+  description: This unit describes how to find projects and start contributing to open source.
+  author: trallard
+  ms.author: taallard
+  ms.date: 11/12/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-identify.md)]

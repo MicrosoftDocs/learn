@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.exercise-work-with-windowing-functions
+title: Exercise - work with windowing functions
+metadata:
+  title: Exercise - work with windowing functions
+  description: "Exercise - work with windowing functions"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-work-windowing-functions.md)]

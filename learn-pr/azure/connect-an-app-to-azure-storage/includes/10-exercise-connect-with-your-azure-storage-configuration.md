@@ -1,304 +1,198 @@
+Let's add code to upload an image to our Azure Storage account. In this example, we're going to upload the following image to our Azure Storage container.  
+
+![An image of the Microsoft Docs and Azure mascots taking a selfie](../media/docs-and-friends-selfie-stick.png)
+
+If you're working on your local machine, right-click on this image, and save it to the same folder as where you have your application.
+
+1. If you're working in the Microsoft Learn Sandbox environment, run the following command in the same folder as you have your application to download the image into your sandbox.
+
+    ```bash
+    wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
+    ```
+
+    In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
+
 ::: zone pivot="csharp"
-Let's add code to retrieve the connection string from the configuration file and use it to connect to the Azure storage account.
 
-## Retrieve the connection string
+## Upload an image to blob storage
 
-1. Open **Program.cs** in the code editor.
+To work with individual blob objects in your Azure Storage account, you use a `BlobClient` object. To get a `BlobClient` object is, call the `GetBlobClient` method on the `BlobContainerClient` object of the container where the blob will be stored. When calling the `GetBlobClient` method, you also supply a name for the blob in the container. For our example, the name of the blob will be the same as the name of our file.
 
-1. Add a `using` statement at the top of the file to reference the `Microsoft.WindowsAzure.Storage` namespace:
-
-    ```csharp
-    using Microsoft.WindowsAzure.Storage;
-    ```
-1. At the end of the `Main` method, add the following line to retrieve the Azure storage account connection string from the configuration file. The passed _key_ must match the name used in your **appsettings.json** file.
+1. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage.
 
     ```csharp
-    var connectionString = configuration["StorageAccountConnectionString"];
+    string blobName = "docs-and-friends-selfie-stick";
+    string fileName = "docs-and-friends-selfie-stick.png";
+    BlobClient blobClient = container.GetBlobClient(blobName);
+    blobClient.Upload(fileName, true);
     ```
 
-## Create a blob client
+    The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
 
-1. Use the static `CloudStorageAccount.TryParse` method to create a `CloudStorageAccount` object - it takes the connection string and an `out` parameter to return the created object. It returns a `bool` value indicating whether it successfully parsed the string.
-    - If it fails, output a message to the console and return from the method.
+## List objects in an Azure Blob Storage container
+
+To validate that our program worked, we'll exercise another capability of the **Azure Storage Blobs SDK** to list the objects stored in a container in blob storage. This can be done by calling the `GetBlobs` method on a `BlobContainerClient` object. The `GetBlobs` method returns a pageable list of `BlobItem` objects that contain data about each blob in the container.
+
+1. Add the following code to your program after the code you previously added.
 
     ```csharp
-    if (!CloudStorageAccount.TryParse(connectionString,
-            out CloudStorageAccount storageAccount))
+    var blobs = container.GetBlobs();
+    foreach (var blob in blobs)
     {
-        Console.WriteLine("Unable to parse connection string");
-        return;
+        Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
     }
     ```
 
-1. Use the returned `CloudStorageAccount` object to create a blob client.
+    This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
+
+1. The final **Program.cs** file should look like this if you want to check your work.
 
     ```csharp
-    var blobClient = storageAccount.CreateCloudBlobClient();
-    ```
+    using System;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+    using Azure.Storage.Blobs;
 
-1. Next, use the blob client to retrieve a reference to a container named "photoblobs." Much like the account names, the Blob container names must be lowercase and composed of letters and numbers.
-
-    ```csharp
-    var blobContainer = blobClient.GetContainerReference("photoblobs");
-    ```
-
-1. Use the `CreateIfNotExistsAsync` method to create the container. This returns a `bool` indicating whether the container was created. Store this in a variable named `created`.
-    - Notice that this is an **async** method - that means it will perform an actual network call.
-    - You will need to use the `await` keywords to get the `bool` result.
-
-    ```csharp
-    bool created = await blobContainer.CreateIfNotExistsAsync();
-    ```
-
-1. Because we are using the `await` keyword, go ahead and change the signature for the `Main` method to be `async` and return a `Task`.
-
-    ```csharp
-    static async Task Main(string[] args)
+    namespace PhotoSharingApp
     {
-        ...
-    }
-    ```
-
-    You'll also need to add a new `using` statement at the top:
-
-    ```csharp
-    using System.Threading.Tasks;
-    ```
-
-1. Finally, output whether we created the Blob container.
-
-    ```csharp
-    Console.WriteLine(created ? "Created the Blob container" : "Blob container already exists.");
-    ```
-
-1. Save the file.
-
-The final file should look like this if you'd like to check your work.
-
-```csharp
-using System;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-using Microsoft.WindowsAzure.Storage;
-using System.Threading.Tasks;
-
-namespace PhotoSharingApp
-{
-    class Program
-    {
-        static async Task Main(string[] args)
+        class Program
         {
+            static void Main(string[] args)
+            {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
 
             var configuration = builder.Build();
-            var connectionString = configuration["StorageAccountConnectionString"];
 
-            if (!CloudStorageAccount.TryParse(connectionString, out CloudStorageAccount storageAccount))
+            Console.WriteLine("Hello World!");
+
+            // Get a connection string to our Azure Storage account.
+            var connectionString = configuration.GetConnectionString("StorageAccount");
+
+            // Get a reference to the container client object so you can create the "photos" container
+            string containerName = "photos";
+            BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
+            container.CreateIfNotExists();
+
+            // Uploads the image to Blob storage.  If a blb already exists with this name it will be overwritten
+            string blobName = "docs-and-friends-selfie-stick";
+            string fileName = "docs-and-friends-selfie-stick.png";
+            BlobClient blobClient = container.GetBlobClient(blobName);
+            blobClient.Upload(fileName, true);
+
+            // List out all the blobs in the container
+            var blobs = container.GetBlobs();
+            foreach (var blob in blobs)
             {
-                Console.WriteLine("Unable to parse connection string");
-                return;
+                Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
             }
-
-            var blobClient = storageAccount.CreateCloudBlobClient();
-            var blobContainer = blobClient.GetContainerReference("photoblobs");
-            bool created = await blobContainer.CreateIfNotExistsAsync();
-
-            Console.WriteLine(created ? "Created the Blob container" : "Blob container already exists.");
+        }
         }
     }
-}
-```
-
-## Use C# 7.1 to build our app
-
-Support for `async` and `await` on `Main` methods was added to C# 7.1. This might not be the default version of the compiler you are using. Let's make sure we use that version of the compiler by setting it in our configuration file.
-
-1. Open the `PhotoSharingApp.csproj` and add `<LangVersion>7.1</LangVersion>` to the `PropertyGroup` that specifies the `TargetFramework`. It should look like this when you're finished:
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <LangVersion>7.1</LangVersion>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
-      </PropertyGroup>
-      ...
-    </Project>
     ```
-
-1. Save the file.
 
 ## Run the app
 
-1. Build and run the application. **Note:** make sure you're in the correct working directory.
+1. Build and run the application to verify everything works, and upload your image to Azure Blob Storage.
 
-    ```bash
-    dotnet run
-    ```
+    > [!NOTE]
+    > Make sure you're in the PhotoSharingApp directory.
+    
+     ```dotnetcli
+     dotnet run
+     ```  
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+## Congratulations
+
+You have learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
 
 ::: zone-end
 
 ::: zone pivot="javascript"
-Let's add code to connect to the Azure storage account using our stored connection string. The Azure client library will automatically use the **AZURE_STORAGE_CONNECTION_STRING** environment variable to get the connection string.
 
-## Create a blob client
+## Upload an image to blob storage
 
-1. Open **index.js** in the code editor.
+To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-1. Start by including the **azure-storage** module. Store the module in a variable named **storage**.
+1. Add this code to your program immediately after the code that creates the container.
+
+    ```javascript
+    const filename = 'docs-and-friends-selfie-stick.png';
+    const blockBlobClient = containerClient.getBlockBlobClient(filename);
+    blockBlobClient.uploadFile(filename);
+    ```
+
+## List objects in an Azure Blob Storage container
+
+1. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
+
+    ```javascript
+    let blobs = containerClient.listBlobsFlat();
+    for await (const blob of blobs) {
+    console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+    }
+    ```
+    
+    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
+
+1. The final file should look like this.
 
     ```javascript
     #!/usr/bin/env node
     require('dotenv').config();
 
-    const storage = require('azure-storage');
-    ```
+    const { BlobServiceClient } = require("@azure/storage-blob");
 
-1. Next, right after that, use the **storage** object to create the `BlobService` object and store it in a global named **blobService**. Remember, these are lightweight objects representing access to the storage account.
+    const storageAccountConnectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
+    const blobServiceClient = BlobServiceClient.fromConnectionString(storageAccountConnectionString);
 
-    ```javascript
-    const blobService = storage.createBlobService();
-    ```
-
-1. Add a constant to represent the container we want to create. We'll name the container "photoblobs".
-
-    ```javascript
-    const containerName = 'photoblobs';
-    ```
-
-## Create a container
-
-We can use the `BlobService` object to work with blob APIs in Azure storage. As mentioned before, all the APIs that make network calls are asynchronous to keep the app responsive. The `createContainerIfNotExists` method is one such method. We'll use _promises_ to handle the callback that contains the response.
-
-1. Add a `util` constant at the top of the file (after the initial `require` you added) to load the `util` package.
-
-    ```javascript
-    #!/usr/bin/env node
-    require('dotenv').config();
-    
-    const util = require('util');
-    const storage = require('azure-storage');
-    const blobService = storage.createBlobService();
-    const containerName = 'photoblobs';
-    ```
-    
-1. Next, after all the constants, use `util.promisify` to take the callback version of `createContainerIfNotExists` and turn it into a promise-returning method.
-    - Since the callback method is on an object, make sure to add a `bind` call at the end to connect it to that context.
-    - Assign the return value to a constant at the top of the file named `createContainerAsync`, as shown below.
-    - You'll also need a `require` for the `util` module near the top of the file.
-
-    ```javascript
-    const util = require('util');
-    const storage = require('azure-storage');
-    const blobService = storage.createBlobService();
-    const containerName = 'photoblobs';
-
-    const createContainerAsync = util.promisify(blobService.createContainerIfNotExists).bind(blobService);
-    ```
-
-2. Remove the "Hello, World!" output from `main()`.
-
-3. Call your new `createContainerAsync` promise.
-    - Pass it the **containerName** constant.
-    - Apply the `await` keyword to the call.
-    - Wrap the call in a `try` / `catch` construct and output any error.
-
-    ```javascript
-    try {
-        await createContainerAsync(containerName);
+    async function main() {
+    // Create a container (folder) if it does not exist
+    const containerName = 'photos';    
+    const containerClient = blobServiceClient.getContainerClient(containerName);
+    if ( !containerClient.exists()) {
+        const createContainerResponse = await containerClient.createIfNotExists();
+        console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
     }
-    catch (err) {
-        console.log(err.message);
+    else {
+        console.log(`Container ${containerName} already exists`);
     }
+
+    // Upload the file
+    const filename = 'docs-and-friends-selfie-stick.png';
+    const blockBlobClient = containerClient.getBlockBlobClient(filename);
+    blockBlobClient.uploadFile(filename);
+
+    // Get a list of all the blobs in the container
+    let blobs = containerClient.listBlobsFlat();
+    for await (const blob of blobs) {
+      console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`)
+    }
+    }
+    main();
     ```
-
-1. The `createContainerAsync` promise returns the first value from the underlying `createContainerIfNotExists`, which is the container result. This includes information on whether the container was created or not. Capture the result in a variable, and output whether the container was created based on the `result.created` property.
-
-    ```javascript
-    try {
-        var result = await createContainerAsync(containerName);
-        if (result.created) {
-            console.log(`Blob container ${containerName} created`);
-        }
-        else {
-            console.log(`Blob container ${containerName} already exists.`);
-        }
-    }
-    catch (err) {
-        console.log(err.message);
-    }
-    ```
-
-1. Finally, decorate the `main` function with the `async` keyword.
-
-1. Save the file.
-
-The final file should look like this, if you'd like to check your work.
-
-```javascript
-#!/usr/bin/env node
-
-require('dotenv').config();
-
-const util = require('util');
-
-const storage = require('azure-storage');
-const blobService = storage.createBlobService();
-const createContainerAsync = util.promisify(blobService.createContainerIfNotExists).bind(blobService);
-
-const containerName = 'photoblobs';
-
-async function main() {
-    try {
-        var result = await createContainerAsync(containerName);
-        if (result.created) {
-            console.log(`Blob container ${containerName} created`);
-        }
-        else {
-            console.log(`Blob container ${containerName} already exists.`);
-        }
-    }
-    catch (err) {
-        console.log(err.message);
-    }
-}
-
-main();
-```
 
 ## Run the app
 
-1. Build and run the application. **Note:** make sure you're in the PhotoSharingApp directory.
+1. Build and run the application.
+
+    > [!NOTE]
+    > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-    node index.js
+        node index.js
     ```
 
     > [!TIP]
-    > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the instructions above.
+    > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
+
+## Congratulations
+
+You have learned the essentials of working the **Azure Storage Blob Client Library for JavaScript** and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. The [Azure Storage Blob Client Library for JavaScript npm.js page](https://www.npmjs.com/package/@azure/storage-blob) gives many examples of how to use the library.
 
 ::: zone-end
-
-It should report that the blob container was created. If you run it a second time, it should tell you it already exists.
-
-To verify the container:
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
-1. Navigate to your storage account. You can use the **All Resources** section to find the storage account or search by name from the _search box_ at the top of the portal window.
-
-1. Select the **Blobs** entry of the storage account in the **Blob services** section.
-
-1. You should see your **photoblobs** container in the Blobs panel. You can delete the container through the "..." menu on the right-hand side of the entry to try recreating it with your app.
-
-> [!NOTE]
-> The container will disappear from the portal very quickly, but it takes a few minutes to delete. If you attempt to recreate it before it's been completely de-provisioned, you will get an error.
-
-## Delete the app
-If you decide you don't want to keep the application source code in your Cloud Shell environment, you can use the following command to remove the folder and all the contents.
-
-```bash
-rm -r PhotoSharingApp/
-```

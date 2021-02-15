@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-querying-digital-twin-graphs
+metadata:
+  description: In this final exercise, you create custom queries for your digital twin graph.
+  ms.date: 01/28/2021
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:  Exercise - Querying digital twin graphs
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-exercise-querying-digital-twin-graphs.md)]

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-data-loss-prevention-policies.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/11/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Microsoft Cloud App Security (MCAS) built-in DLP engine performs content inspection by extracting text from all common file types including which of these file types?"
+    choices:
+    - content: "BTML"
+      isCorrect: false
+      explanation: "This answer is not correct. This isn't one of the file types."
+    - content: "All file types"
+      isCorrect: false
+      explanation: "This answer is not correct.  Not all file types are inspected."
+    - content: "XML and HTML"
+      isCorrect: true
+      explanation: "This answer is correct.  These are two of the files types."
+  - content: "Which type of DLP policy may be configured in the Microsoft 365 Compliance center?"
+    choices:
+    - content: "Exchange DLP policies"
+      isCorrect: true
+      explanation: "This answer is correct. Exchange Policies can be configured in the Microsoft 365 Compliance Center."
+    - content: "PowerPlatform DLP policies"
+      isCorrect: false
+      explanation: "This answer is not correct. PowerPlatform DLP policies can only be configured in the PowerPlatform portal."
+    - content: "Azure Information Protection policies"
+      isCorrect: false
+      explanation: "This answer is not correct.  These policies are configured in Azure."
+  - content: "How can a DLP policy for non-Microsoft cloud apps be configured?"
+    choices:
+    - content: "Policies may be created in the Microsoft Exchange Online portal."
+      isCorrect: false
+      explanation: "This answer is not correct. These policies may not be created in the Exchange Online portal."
+    - content: "Policies can be created in the Microsoft cloud app security portal."
+      isCorrect: true
+      explanation: "This answer is correct.  These policies are created in the Microsoft cloud app security portal."
+    - content: "Policies can be created in the Microsoft 365 Security portal."
+      isCorrect: false
+      explanation: "This answer is not correct. These policies are not created in the Microsoft 365 security portal."

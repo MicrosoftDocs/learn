@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.deploy-java-ee-app-to-app-service
+metadata:
+  title: Deploy a Java EE (Jakarta EE) application to Azure
+  description: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
+  ms.date: 02/01/2021
+  author: yoshioterada
+  ms.author: yoterada
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a Java EE (Jakarta EE) application to Azure
+summary: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create and manage an Azure Database for MySQL instance
+  - Deploy a Java EE application to JBoss EAP on App Service
+  - Create a data source and bind the Java EE application to MySQL
+  - Access and manage the Java EE application on JBoss
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+prerequisites: |
+  - Azure subscription
+  - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
+  - [Java SE 8 (or 11)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+  - [Git CLI](https://git-scm.com/downloads)
+  - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
+  - [jq utility](https://stedolan.github.io/jq/)
+units:
+  - learn.azure.deploy-java-ee-app-to-app-service.1-introduction
+  - learn.azure.deploy-java-ee-app-to-app-service.2-deploy-azure-database-mysql
+  - learn.azure.deploy-java-ee-app-to-app-service.3-exercise-deploy-azure-database-mysql
+  - learn.azure.deploy-java-ee-app-to-app-service.4-deploy-jakarta-ee-app-to-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.5-exercise-deploy-jakarta-ee-app-to-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.6-admin-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.7-exercise-admin-jboss-eap
+  - learn.azure.deploy-java-ee-app-to-app-service.8-knowledge-check
+  - learn.azure.deploy-java-ee-app-to-app-service.9-summary
+
+badge:
+  uid: learn.azure.deploy-java-ee-app-to-app-service.badge

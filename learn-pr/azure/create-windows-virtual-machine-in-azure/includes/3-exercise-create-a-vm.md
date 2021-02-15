@@ -14,13 +14,14 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
     :::image type="content" source="../media/3-marketplace-search.png" border="true" alt-text="Screenshot showing the virtual machine image search options.":::
 
-1. The result will show several *Windows Server* related images. Choose the **Windows Server** image.
+1. The result will show several *Windows Server* related images. Select the **Windows Server** image.
 
     :::image type="content" source="../media/3-marketplace-windows-server.png" border="true" alt-text="Screenshot showing the virtual machine image search result that highlights the Windows Server option.":::
 
-1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2019 Datacenter** option.
 
-1. Click the **Create** button to start configuring the VM.
+1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, from the **Select a plan** dropdown, select the **[smalldisk] Windows Server 2019 Datacenter** option.
+
+1. Select **Create** to start configuring the VM.
 
 ## Configure the VM settings
 
@@ -50,7 +51,7 @@ We'll start with the **Basics** section.
 
 1. Leave **Availability options** as "No Infrastructure redundancy required". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
 
-1. Ensure the image is set to "[smalldisk] Windows Server 2019 Datacenter". You can open the drop-down list to see all the options available.
+1. Ensure the image is set to "[smalldisk] Windows Server 2019 Datacenter - Gen1". You can open the dropdown to see all the options available.
 
 1. The **Size** field is not directly editable and has a DS1 default size. Click the **Change size** link to explore other VM sizes. The resulting dialog allows you to filter based on # of CPUs, Name, and Disk Type. Select "Standard DS1 v2" (normally the default) when you are done. That will give the VM 1 CPU and 3.5 GB of memory.
 
@@ -63,49 +64,49 @@ We'll start with the **Basics** section.
 
 1. Confirm the **password**.
 
-1. In the **Inbound Port Rules** section, open the list and choose _Allow selected ports_. Since this is a Windows VM, we want to be able to access the desktop using RDP. Scroll the list if necessary until you find RDP (3389) and select it. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
+1. In the **Inbound port rules** section, for **Public inbound ports**, select *Allow selected ports*. Since this is a Windows VM, we want to be able to access the desktop using RDP. For **Select inbound ports**, select *RDP (3389)* from the dropdown. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
 
     ![Screenshot showing the drop-down for opening the port for RDP access on the Windows VM.](../media/3-open-ports.png)
 
 ## Configure Disks for the VM
 
-1. Click **Next** to move to the Disks section.
+1. Click **Next : Disks >** to move to the Disks tab.
 
     ![Screenshot showing the configure disks section for the VM.](../media/3-configure-disks.png)
 
-1. Choose "Premium SSD" for the **OS disk type**.
+1. Choose *Premium SSD* for the **OS disk type**.
 
-1. Use managed disks so we don't have to work with storage accounts. You can flip the switch in the GUI to see the difference in information that Azure needs if you like.
+1. For **encryption type**, select the *(Default) Encryption at-rest with a platform-managed key* from the dropdown.
 
 ### Create a data disk
 
 Recall we will get an OS disk (C:) and Temporary disk (D:). Let's add a data disk as well.
 
-1. Click the **Create and attach a new disk** link in the **DATA DISKS** section.
+1. Click the **Create and attach a new disk** link in the **Data disks** section.
 
     ![Screenshot showing the new VM disk creation dialog in the portal.](../media/3-add-data-disk.png)
 
-1. You can take all the defaults: Premium SSD, 1023 GB, and None (empty disk); although notice that here is where we could use a snapshot, or Storage Blob to create a VHD.
+1. You can take all the defaults: *Name*; *None (empty disk)*; *1024 GiB Premium SSD*; *(Default) Encryption at-rest with a platform-managed key*; and *No* for **Enable shared disk**. Note that here is where we could use a snapshot, or Storage Blob to create a VHD.
 
-1. Click **OK** to create the disk and go back to the **DATA DISKS** section.
+1. Click **OK** to create the disk and go back to the **Data disks** section.
 
-1. There should now be a new disk in the first row.
+1. Under **Data disks**, there should now be a new disk in the first row.
 
     ![Screenshot showing the newly added disk in the VM.](../media/3-new-disk.png)
 
-## Configure the Network
+## Configure the network
 
-1. Click **Next** to move to the Networking section.
+1. Click **Next : Networking >** to move to the Networking section.
 
 1. In a production system, where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
     - **Address space**: the overall IPV4 space available to this network.
     - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
-1. Let's change the default ranges to use the `172.xxx` IP address space. Click **Create New** under Virtual Network.
+1. Let's change the default ranges to use the `172.xxx` IP address space. Click **Create new** under **Virtual network**.
 
     In the **Address space** section:
     
-    - Change the **Address space** field to be `172.16.0.0/16` to give it the full range of addresses
+    - Change the **Address range** field to be `172.16.0.0/16` to give it the full range of addresses
     
     In the **Subnets** section:
     - Leave the **Subnet name** set as *default*.

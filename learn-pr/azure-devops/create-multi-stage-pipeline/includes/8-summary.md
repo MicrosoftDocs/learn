@@ -2,7 +2,7 @@ Nice job. Your pipeline is taking shape. You and the Tailspin team have moved fr
 
 In this module, you learned ways to control how changes move from one stage of a pipeline to the next. Let's review the pipeline you built in this module. This image shows your pipeline's overall shape:
 
-![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
+![A whiteboard showing the final pipeline, which includes the Build, Dev, Test, and Staging stages.](../media/2-add-staging-stage-approval.png)
 
 The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to their own Azure App Service environment.
 
@@ -19,9 +19,9 @@ Although the Tailspin team is improving their release cadence, there's room for 
 
 In this module, you worked with conditions, triggers, and approvals. To learn more, explore these resources.
 
-* [Conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Approvals and other checks](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&azure-portal=true)
+* [Conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?tabs=yaml&azure-portal=true)
+* [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?tabs=yaml&azure-portal=true)
+* [Approvals and other checks](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?azure-portal=true)
 
 ## Appendix: Explore additional build options
 
@@ -37,7 +37,7 @@ As a developer, you can build apps on Azure Stack Hub. You can then deploy them 
 
 ### Implement multi-agent builds
 
-You can use multiple build agents to support multiple build machines, either to distribute the load, to run builds in parallel, or to use different agent capabilities. As an example, components of an app might require different incompatible versions of a library or dependency. To learn more, see the [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml?azure-portal=true) documentation.
+You can use multiple build agents to support multiple build machines, either to distribute the load, to run builds in parallel, or to use different agent capabilities. As an example, components of an app might require different incompatible versions of a library or dependency. To learn more, see the [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml?azure-portal=true) documentation.
 
 ### Implement a container build strategy
 
@@ -65,7 +65,7 @@ As we've mentioned before, Jenkins is a popular third-party CI tool. We've also 
 * Track work items and related code changes.
 * Get end-to-end traceability for your CI/CD workflow.
 
-A typical approach is to use Jenkins to build an app from source code hosted in a Git repository such as GitHub and then deploy it to Azure by using Azure Pipelines. If you want a procedure for integrating the two tools, see [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true).
+A typical approach is to use Jenkins to build an app from source code hosted in a Git repository such as GitHub and then deploy it to Azure by using Azure Pipelines. If you want a procedure for integrating the two tools, see [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?tabs=yaml&azure-portal=true).
 
 ## Scale your release pipeline
 
@@ -77,13 +77,13 @@ A deployment group is a logical set of deployment target machines, where each ma
 
 You create deployment groups on the **Deployment Groups** tab of the **Azure Pipelines** section, and install the agent on each server in the group. You specify the security context and runtime targets for the agents. You can add users and give them appropriate permissions to administer, manage, view, and use the group.
 
-For more information about creating deployment groups, see [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/?view=azure-devops?azure-portal=true).
+For more information about creating deployment groups, see [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/?azure-portal=true).
 
 ### Azure Kubernetes Service
 
 You can set up continuous deployment of your containerized app to an Azure Kubernetes Service (AKS) using Azure Pipelines. After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
 
-For a step-by-step procedure, see [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&tabs=java?azure-portal=true).
+For a step-by-step procedure, see [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?tabs=java?azure-portal=true).
 
 ## Manage and modularize tasks and variable groups
 
@@ -145,4 +145,4 @@ Secret variables are often used to store secrets, such as connection strings, an
 
 Another option for securing passwords and secrets is to use an Azure Key Vault. Key Vault enables you to keep the secrets outside of the pipeline. Then, if you have the appropriate permissions, you can retrieve them with a variable group that you created. If you don't want to use a variable group to access the secret variables in the vault, you can also use a dedicated build task.
 
-To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault).
+To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/azure/devops/pipelines/library/variable-groups?tabs=yaml#link-secrets-from-an-azure-key-vault).

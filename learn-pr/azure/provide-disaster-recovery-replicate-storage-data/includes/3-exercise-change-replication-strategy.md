@@ -12,9 +12,9 @@ Create a storage account with geo-zone-redundant storage (GZRS).
     ```bash
     export RESOURCEGROUP=learn-storage-replication-rg
     ```
-1. Run the following command to set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name.
+1. To set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name, run this command.
 
-    ```Bash
+    ```bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 
@@ -34,15 +34,16 @@ Create a storage account with geo-zone-redundant storage (GZRS).
     - centralus
     - eastus2
     - westus2
-1. Run the following command to create a resource group.
 
-    ```bash
+1. To create a resource group, run this command.
+
+    ```azurecli
     az group create --name $RESOURCEGROUP --location $LOCATION
     ```
 
-1. Run the following command to create a storage account:
+1. To create a storage account, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account create \
     --name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -52,9 +53,9 @@ Create a storage account with geo-zone-redundant storage (GZRS).
     --kind StorageV2
     ```
 
-1. For the rest of the steps in this exercise, you'll need your storage credentials. Run the following command to list your storage account keys:
+1. For the rest of the steps in this exercise, you'll need your storage credentials. To list your storage account keys, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account keys list \
     --account-name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -62,31 +63,31 @@ Create a storage account with geo-zone-redundant storage (GZRS).
     ```
 
 1. Copy the keys listed.
-1. Set an environment variable to hold your storage key. Replace *account-key* and the brackets with one of your key values.
+1. To hold your storage key, set an environment variable. Replace *account-key* and the brackets with one of your key values.
 
-    ```Bash
+    ```bash
     export AZURE_STORAGE_KEY="<account-key>"
     ```
 
 ## Create a blob container
 
-You need a container to upload blobs to Azure Storage. You use containers to logically group your blobs. A container helps you organize blobs, like a folder organizes files on your computer.
+To upload blobs to Azure Storage, you need a container. You use containers to logically group your blobs. A container helps you organize blobs, like a folder organizes files on your computer.
 
-1. Run the following command to set a container name where you replace *blob-container-name* and the brackets with another name.
+1. To set a container name where you replace *blob-container-name* and the brackets with another name, run this command.
 
-    ```Bash
+    ```bash
     export BLOB_CONTAINER_NAME=<blob-container-name>
     ```
 
 1. Run the following command to create a container for your storage account:
 
-    ```Bash
-    az storage container create --account-key $storageKey --account-name $sa --name $blobname
+    ```azurecli
+    az storage container create --account-key $AZURE_STORAGE_KEY --account-name $AZURE_STORAGE_ACCOUNT --name $BLOB_CONTAINER_NAME
     ```
 
-1. You'll see the following message returned in your terminal when your storage account container has been created:
+1. When your storage account container has been created, you'll see this message returned in your terminal.
 
-    ```Bash
+    ```output
     {
         "created": true
     }
@@ -96,7 +97,7 @@ You need a container to upload blobs to Azure Storage. You use containers to log
 
 Your company uploads its music files as blobs in the container. A blob can represent a file of any type. For the purposes of this exercise, you'll upload a text file as a blob.
 
-1. Run the following command to create a file you can upload to your storage account:
+1. To create a file you can upload to your storage account, run this command.
 
     ```bash
     cat > song.mp3
@@ -104,7 +105,7 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 1. An empty file is created that you can write to. Enter **This is a song!**, select <kbd>Enter</kbd>, and then select <kbd>Ctrl+D</kbd>.
 
-1. Run the following command to see the contents of your `song.mp3` file:
+1. To see the contents of your `song.mp3` file, run this command.
 
     ```bash
     cat song.mp3
@@ -116,18 +117,18 @@ Your company uploads its music files as blobs in the container. A blob can repre
 
 Upload the file to your storage account via your container.
 
-1. Run the following command to upload your file:
+1. To upload your file, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob upload \
         --container-name $BLOB_CONTAINER_NAME \
         --name song \
         --file song.mp3
     ```
 
-1. When the upload is complete, you verify the file is in your storage account by running the following command:
+1. When the upload is complete, to verify the file is in your storage account, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob list \
     --container-name $BLOB_CONTAINER_NAME  \
     --output table
@@ -143,7 +144,7 @@ Upload the file to your storage account via your container.
 1. Select the storage account you created from the list of resources in your resource group.
 1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as **available** for a region, it means your region is responsive.
 
-1. Select **Refresh** to ensure you're seeing the latest status updates.
+1. To ensure you're seeing the latest status updates, select **Refresh**.
 
    :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 

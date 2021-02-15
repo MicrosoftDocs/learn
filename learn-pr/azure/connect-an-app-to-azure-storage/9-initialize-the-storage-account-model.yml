@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-app-to-azure-storage.9-initialize-the-storage-account-model
-title: Initialize the storage account model
+title: Exercise - Connect your application to your Azure Storage account
 metadata:
-  title: Initialize the storage account model
-  description: Initialize the storage account model
-  ms.date: 09/24/2018
+  title: Exercise - Connect your application to your Azure Storage account
+  description: Exercise - Connect your application to your Azure Storage account
+  ms.date: 11/28/2020
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
-  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/9-initialize-the-storage-account-model.md)]

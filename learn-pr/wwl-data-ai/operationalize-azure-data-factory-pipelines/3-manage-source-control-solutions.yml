@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.manage-source-control-of-solutions
+title: Manage source control of Azure Data Factory solutions
+metadata:
+  title: Manage source control of Azure Data Factory solutions
+  description: "Manage source control of Azure Data Factory solutions"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-manage-source-control-solutions.md)]

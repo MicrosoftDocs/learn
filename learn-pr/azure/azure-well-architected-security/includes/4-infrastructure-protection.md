@@ -10,7 +10,7 @@ System administrators can be responsible for a large number of users, systems, a
 
 ## Role-based access control
 
-Role-based access control (RBAC) offers a slightly different approach. Roles are defined as collections of access permissions. Security principles are mapped to roles directly or through group membership. Separating security principles, access permissions, and resources provides simplified access management and more detailed control.
+Role-based access control (RBAC) offers a slightly different approach. Roles are defined as collections of access permissions. Security principals are mapped to roles directly or through group membership. Separating security principals, access permissions, and resources provides simplified access management and more detailed control.
 
 On Azure, users, groups, and roles are all stored in Azure Active Directory (Azure AD). The Azure Resource Manager API uses role-based access control to secure all resource access management within Azure.
 
@@ -56,22 +56,22 @@ To use PIM, you need one of the following paid or trial licenses:
 
 It's often valuable for services to have identities. Often, and against best practices, credential information is embedded in configuration files. With no security around these configuration files, anyone with access to the systems or repositories can access these credentials and risk exposure.
 
-Azure AD addresses this problem through two methods: service principles and managed identities for Azure services.
+Azure AD addresses this problem through two methods: service principals and managed identities for Azure services.
 
-### Service principles
+### Service principals
 
-To understand service principles, it's useful to first understand the words *identity* and *principle* as they're used in the world of identity management.
+To understand service principals, it's useful to first understand the words *identity* and *principal* as they're used in the world of identity management.
 
 An *identity* is just a thing that can be authenticated. Obviously, this includes users with usernames and passwords. But it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an *account* is data associated with an identity.
 
-A *principle* is an identity that acts with certain roles or claims. Consider the use of Sudo on a Bash prompt or on Windows via **Run as administrator**. In both of those cases, you're still signed in as the same identity as before, but you've changed your role.
+A *principal* is an identity that acts with certain roles or claims. Consider the use of Sudo on a Bash prompt or on Windows via **Run as administrator**. In both of those cases, you're still signed in as the same identity as before, but you've changed your role.
 
-So, a *service principle* is literally named. It's an identity that a service or application uses. Like other identities, it can be assigned roles.
+So, a *service principal* is literally named. It's an identity that a service or application uses. Like other identities, it can be assigned roles.
 
-For example, your organization can assign its deployment scripts to run authenticated as a service principle. If that's the only identity that has permission to perform destructive actions, your organization has gone a long way toward making sure that it doesn't repeat the accidental resource deletion.
+For example, your organization can assign its deployment scripts to run authenticated as a service principal. If that's the only identity that has permission to perform destructive actions, your organization has gone a long way toward making sure that it doesn't repeat the accidental resource deletion.
 
 ### Managed identities for Azure resources
 
-The creation of service principles can be a tedious process. There are also many touch points that can make maintaining service principles difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
+The creation of service principals can be a tedious process. There are also many touch points that can make maintaining service principals difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it. (The list is constantly growing.) When you create a managed identity for a service, you're creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Active Directory account, including letting the authenticated service securely access other Azure resources.

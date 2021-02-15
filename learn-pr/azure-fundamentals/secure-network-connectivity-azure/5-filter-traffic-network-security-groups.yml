@@ -4,8 +4,8 @@ title: Filter network traffic by using network security groups
 metadata:
   description: Learn how network security groups enable you to filter network traffic to and from Azure resources within an Azure virtual network.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

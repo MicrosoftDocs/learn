@@ -1,6 +1,6 @@
 In Logic Apps, you can create custom connectors to call  Web APIs. Those APIs must be published and must implement an OpenAPI definition.
 
-Your company wants to build a workflow using Logic Apps that accesses the company's PrintFramer API. The API is hosted in Azure as a REST API.
+Your company wants to build a workflow using Logic Apps that access the company's PrintFramer API. The API is hosted in Azure as a REST API.
 
 In this unit, we'll deploy our test API to the Azure sandbox activated for this module.
 
@@ -38,7 +38,7 @@ To save time, let's start by running a script to host our test API in Azure. The
     bash setup-exercise.sh
     ```
 
-    The  script takes a couple of minutes to run. When the script finishes, it will display two URLS that you can use to test the app deployment.  Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service at this point.
+    The  script takes a couple of minutes to run. When the script finishes, it will display two URLs that you can use to test the app deployment.  Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service at this point.
 
 1. To test that our app deployed successfully, copy and paste the value for **Example URL** from the Cloud Shell output into your favorite browser. The browser displays the value `20.0`, which is the dollar value the API calculated for a frame with dimensions 6x7 inches. You can try other values by replacing `6` and `7` in the URL.
 1. Keep note of this URL, because you'll need it in the next exercise.

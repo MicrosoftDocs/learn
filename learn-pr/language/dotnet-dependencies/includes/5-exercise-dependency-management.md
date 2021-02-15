@@ -1,12 +1,12 @@
-Dependencies that you use in your apps can be updated often and may contain new features, bug fixes, and critical security updates. The app that you created is small, and has only a single dependency. Updating it should be straightforward. See if you can update the app to take advantage of the latest features.
+Dependencies that you use in your apps can be updated often and may contain new features, bug fixes, and critical security updates. The app that you created is small, and has only a single dependency. Updating it should be straightforward. To take advantage of the latest features, see if you can update the app.
 
 ## Upgrade app dependencies
 
-1. In the **DotNetDependencies.csproj** file, look at the `dependencies`. It should look like this code:
+1. In the **DotNetDependencies.csproj** file, look at the `dependencies`. It should look like this code.
 
     ```xml
     <ItemGroup>
-        <PackageReference Include="Humanizer" Version="2.7.9 />
+        <PackageReference Include="Humanizer" Version="2.7.9" />
     </ItemGroup>
     ```
 
@@ -38,7 +38,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	   > Humanizer            2.7.9       2.7.9      2.8.26
 	```
 
-	By default, this command will check for the latest stable version. To check for pre-release packages, append the following to the command:
+	By default, this command will check for the latest stable version. To check for pre-release packages, append the following to the command.
 
 	```dotnetcli
 	--include-prerelease
@@ -49,7 +49,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 	```dotnetcli
 	dotnet add package Humanizer 
 	```
-	Your output should look like this output:
+	Your output should look like this output.
 
 	```output
 	info : PackageReference for package 'Humanizer' version '2.8.26' updated in file 'C:\Users\jamont\Desktop\DotNetDependencies\DotNetDependencies.csproj'.

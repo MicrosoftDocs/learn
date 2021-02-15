@@ -6,7 +6,7 @@ You can build applications with Visual Studio or Visual Studio Code or integrate
 
 ## What is Azure Sphere
 
-[Azure Sphere](https://azure.microsoft.com/en-au/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
+[Azure Sphere](https://azure.microsoft.com/services/azure-sphere?azure-portal=true) is a comprehensive IoT security solution – including hardware, OS, and cloud components – to actively protect your devices, your business, and your customers.
 
 Azure Sphere is made up of the following components:
 
@@ -20,15 +20,15 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ## Azure Sphere Architecture
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a Real-time operating system such as Azure RTOS or FreeRTOS.
+The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
 
-High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with Real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
+High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
 
 ![Azure Sphere architecture](../media/azure-sphere-architecture.png)
 
 ## Developer tools
 
-You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com). On Linux, you use [Visual Studio Code](https://code.visualstudio.com). You can simultaneously develop and debug applications running on all three cores.
+You can develop Azure Sphere applications from Windows and Linux. On Windows you can use either [Visual Studio 2019 or later](https://visualstudio.microsoft.com/downloads?azure-portal=true) (free community edition or better) or [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). On Linux, you use [Visual Studio Code](https://code.visualstudio.com?azure-portal=true). You can simultaneously develop and debug applications running on all three cores.
 
 This learning module supports developers on Linux and Windows using Visual Studio Code. If you are a Windows user comfortable using Visual Studio, then use Visual Studio appreciating the IDE screenshots included in this module will be different.
 
@@ -68,8 +68,8 @@ In this module, you will:
 * Build and deploy the Azure Sphere application
 * Display environment data in the Azure IoT Central dashboard
 * Control an Azure Sphere application by using Azure IoT Central properties and commands
-* Deploy a new more sensitive room sensor onto an Azure Sphere Real-time core running Azure RTOS
-* Read the data from the new sensor running on the Real-time core and send the data to IoT Central
+* Deploy a new more sensitive room sensor onto an Azure Sphere real-time core running Azure RTOS
+* Read the data from the new sensor running on the real-time core and send the data to IoT Central
 
 ## Prerequisites
 

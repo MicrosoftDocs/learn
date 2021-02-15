@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.classification-and-protection.5-classification-integrate-protection
+title: How does data classification integrate with data protection?
+metadata:
+  title: How does data classification integrate with data protection?
+  description: How does data classification integrate with data protection?
+  ms.date: 11/13/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-classification-integrate-protection.md)]

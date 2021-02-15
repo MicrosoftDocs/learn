@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-ad-ds.define-ous
+title: Define OUs
+metadata:
+  title: Define OUs
+  description: "Define OUs"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-define-organizational-units.md)]

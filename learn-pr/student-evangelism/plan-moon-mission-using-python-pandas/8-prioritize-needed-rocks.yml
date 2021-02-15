@@ -3,7 +3,7 @@ uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.8-prioritize
 metadata:
   title: Prioritize Moon rock sample gathering based on data
   description: Prioritize the rocks that the Artemis astronauts should collect based on the data gathered so far.
-  ms.date: 10/20/2020
+  ms.date: 11/24/2020
   author: sguthals
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -8,7 +8,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Run Azure Container Instances
 durationInMinutes: 5
 content: |
