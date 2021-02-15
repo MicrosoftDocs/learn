@@ -15,7 +15,7 @@ Creating an interactive application requires the ability to modify data and resp
 - [Git](https://git-scm.com/downloads/?azure-portal=true) installed locally
 - The [starter project](#clone-the-project)
 
-## Clone the project
+### Clone the project
 
 This module uses a starter project. Clone the starter and open it in Visual Studio Code.
 

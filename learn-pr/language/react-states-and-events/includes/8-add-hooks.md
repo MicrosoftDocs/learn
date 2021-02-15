@@ -5,7 +5,7 @@ Keeping an eye on the state of your application, and executing code in response 
 Our application allows the user to tap on individual items to mark them as prepared. If there is still preparation to be completed we want to display the message "Just keep chopping"; upon completion we want to display "Prep work done!". We will do this by adding a new state object which we will update from our Effect Hook.
 
 > [!IMPORTANT]
-> In our example we are modifying state inside `useEffect`. Remember `useEffect` by default executes whenever **any** stateful object is modified. This can create an endless loop where we modify state, the hook is executed, which modifies state, which executes the hook...
+> In our example we are modifying state inside `useEffect`. Remember `useEffect` by default executes whenever **any** stateful object is modified. This can create an endless loop where we modify state, the hook is executed, which modifies state, which executes the hook, and so on.
 >
 > To avoid this we can use the dependency parameter on `useEffect` to only look at one particular object. We will do this when creating our code to avoid this endless loop.
 
