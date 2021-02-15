@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-namespaces-organize-code.5-use-interfaces
+title: Other ways to use interfaces in Typescript
+metadata:
+  title: Other ways to use interfaces in Typescript
+  description: Learn how to create indexable types and describe a JavaScript API using an interface.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-use-interfaces.md)]
