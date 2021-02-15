@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-generic-types-traits.3-derive
+metadata:
+  title: Use the derive trait
+  description: Learn how to use the derive trait.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use the derive trait
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-derive.md)]

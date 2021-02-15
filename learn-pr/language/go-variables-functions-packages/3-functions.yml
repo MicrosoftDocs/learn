@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-variables-functions-packages.3-functions
+metadata:
+  title: Create functions
+  description: Learn how to create custom functions that contain reusable code and how to better work with pre-built functions in Go.
+  ms.date: 12/15/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create functions
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-functions.md)]

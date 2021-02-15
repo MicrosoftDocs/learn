@@ -12,29 +12,33 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Containers**, and then click **Container Registry**.
+1. Select **Containers**, and select **Container Registry**. The **Create container registry** panel appears.
 
     :::image type="content" source="../media/7-search-container-registry.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
 
-1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
+1. On the **Basics** tab, specify the values in the following table for each of the settings.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
-    | Name | Choose a unique name |
+    | **Project details** |
     | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
-    | Resource Group | Create a new resource group with the name **learn-deploy-container-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | Resource group | Create a new resource group with the name **learn-deploy-container-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | **Instance details** |
+    | Registry name | select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
     | Location | Select a location that is close to you. |
-    | Admin user | **Enable** |
+    | Availability zones | **Enabled** (*checked*) |
     | SKU | **Standard** |
 
+1. Select **Review + Create**. When the *Validation passed* notification appears, select **Create**. Wait until the container registry has been deployed before continuing.
+
+1. Select **Go to resource**. Your container registry panel appears.
+
+1. In the left nav bar, under **Settings**, select **Access keys**.
+
+1. Make a note of the **Registry name**, **Login server**, **Username**, and **passwords** for your registry. For **Admin user**, select **Enabled**.
+
     > [!NOTE]
-    > This exercise enables the admin account, for uploading images and testing the registry. In a production environment, you should disable the admin account and switch to Azure Active Directory Identities once you are satisfied that the registry is operating as expected.
-
-1. Wait until the container registry has been deployed before continuing.
-
-1. Select **All resources**, select your registry, and then click **Access keys**.
-
-1. Make a note of the **Registry name**, **Login server**, **Username**, and **password** for your registry.
+    > In this exercise, we enable the admin account for uploading images and testing the registry. In a production environment, you should disable the admin account, and switch to Azure Active Directory Identities after you're satisfied that the registry is operating as expected.
 
     :::image type="content" source="../media/7-access-keys.png" alt-text="Screenshot that shows the Access Key information for the registry.":::
 
@@ -61,7 +65,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
     microsoft/dotnet                              2.1-sdk             ff665cc04279        14 hours ago        1.73GB
     ```
 
-3. Sign in to your registry in Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password for the registry when prompted
+3. Sign in to your registry in Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password for the registry when prompted.
 
     ```bash
     docker login <login-server>
@@ -79,26 +83,28 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 For the rest of the exercise, you'll return to the Azure portal running in the sandbox.
 
-1. In the Azure portal return to your registry.
+1. In the Azure portal, return to your container registry.
 
-1. Under **Services**, click **Repositories**. Verify that the **reservationsystem** repository appears. Click the **reservationsystem** repository and verify that the repository contains an image with the tag **latest**.
+1. Under **Services**, select **Repositories**. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository and verify that the repository contains an image with the tag **latest**.
 
     :::image type="content" source="../media/7-repository.png" alt-text="Screenshot showing the repository and tagged reservation system container image in the registry.":::
 
 ## Load and run an image using Azure Container Instance
 
-1. In the Azure portal, Choose **Create a resource**, select **Containers**, and then click **Container Instance**
+1. In the Azure portal, select **Create a resource**, then select **Containers**, and then select **Container Instance**.
 
     :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
 
-    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Then we'll configure the container's network options and restart policy.
+    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Next, we'll configure the container's network options and restart policy.
 
-1. On the **Basics** page, specify the values in the following table for each of the properties, and then click **Next: Networking &gt;**.
+1. On the **Basics** tab, specify the values in the following table for each of the settings.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
+    | **Project details** |
     | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources.  |
     | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
+    | **Instance details** |
     | Container Name | hotelsysteminstance |
     | Region | Use the default location |
     | Image type | Private |
@@ -107,30 +113,36 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry |
     | OS Type | Linux |
-    | Size | Leave the default *Size* set a **1 vcpu, 1.5 Gib memory, 0 gpus** |
+    | Size | Leave the default *Size* set to **1 vcpu, 1.5 Gib memory, 0 gpus** |
 
-1. On the **Networking** page, specify the values in the following table for each of the properties, and then click **Next: Advanced &gt;**.
+1. Select **Next: Networking**.
 
-    | Property  | Value  |
+1. On the **Networking** tab, specify the values in the following table for each of the settings.
+
+    | Setting  | Value  |
     |---|---|
-    | Include public IP address | Yes  |
+    | Include public IP address | Yes |
     | Port | 80 |
     | Open additional ports | No |
     | Port protocol | TCP |
     | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
 
-1. On the **Advanced** page, specify the values in the following table for each of the properties, and then click **Review + create**.
+1. Select **Next: Advanced**.
 
-    | Property  | Value  |
+1. On the **Advanced** tab, specify the values in the following table for each of the settings.
+
+    | Setting  | Value  |
     |---|---|
     | Restart policy | Always |
     | Environment variable | *leave blank* |
     | Add additional environment variables | No |
-    | Command override | *leave blank *|
+    | Command override | *leave blank*|
 
-1. On the **Summary** page, wait for validation to complete, and correct any errors if necessary. Click **Create**.
+1. Select **Review + create**.
 
-1. When the container instance has been created, click **All resources**, and go to the page for the container instance.
+1. On the **Summary** page, wait for validation to complete, and correct any errors, if necessary. Select **Create**.
+
+1. When the container instance has been created, select **Go to resource**. Your container instance panel appears.
 
 1. On the **Overview** page, find the fully qualified domain name of the container instance.
 

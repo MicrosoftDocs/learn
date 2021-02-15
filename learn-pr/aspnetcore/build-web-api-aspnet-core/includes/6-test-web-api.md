@@ -5,7 +5,7 @@ It's time to test the CRUD actions that were added to the web API. A quality ass
 Run the following command:
 
 ```bash
-. <(wget -q -O - https://aka.ms/build-web-api-aspnet-core-test)
+. <(wget -q -O - https://aka.ms/create-web-api-aspnet-core-test)
 ```
 
 The command downloads and runs a script that sends seven sequential requests to the web API. See the Cloud Shell for the individual `curl` commands that were sent.
@@ -19,17 +19,16 @@ The following headings appear in the order in which the seven requests were sent
 An HTTP POST request was sent with an invalid `Product` object. The following response is generated:
 
 ```console
-HTTP/1.1 400 Bad Request
-Date: Sat, 14 Nov 2020 00:46:38 GMT
-Content-Type: application/problem+json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 400
+date: Thu, 11 Feb 2021 21:10:37 GMT
+content-type: application/problem+json; charset=utf-8
+server: Kestrel
 
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
   "title": "One or more validation errors occurred.",
   "status": 400,
-  "traceId": "00-fb97d3526ca9cf4188968a12e97ebe79-8e78d7197b8a1449-00",
+  "traceId": "|af98c13-40a6004c5194c147.",
   "errors": {
     "Price": [
       "The field Price must be between 0.01 and 9999.99."
@@ -40,19 +39,18 @@ Transfer-Encoding: chunked
 
 An HTTP 400 status code is returned because the controller's `[ApiController]` attribute triggers Model validation on the request body. ASP.NET Core MVC's Model binder attempts to serialize the `curl` command's `-d` JSON to a `Product` object. Model validation fails because the request's `Price` value is less than the minimum value of 0.01.
 
-An error result has a status code of 400 or higher. ASP.NET Core MVC transforms an error result to a :::no-loc text="[ProblemDetails](/dotnet/api/microsoft.aspnetcore.mvc.problemdetails)"::: type. `ProblemDetails` provides a machine-readable error format that adheres to the [RFC 7807 specification](https://tools.ietf.org/html/rfc7807). The `application/problem+json` media type in the `Content-Type` response header indicates the response is of type `ProblemDetails`.
+An error result has a status code of 400 or higher. ASP.NET Core MVC transforms an error result to a :::no-loc text="[ProblemDetails](/dotnet/api/microsoft.aspnetcore.mvc.problemdetails)"::: type. `ProblemDetails` provides a machine-readable error format that adheres to the [RFC 7807 specification](https://tools.ietf.org/html/rfc7807). The `application/problem+json` media type in the `content-type` response header indicates the response is of type `ProblemDetails`.
 
 ### HTTP POST: Add a valid product
 
 An HTTP POST request was sent with a valid `Product` object. The following response is generated:
 
 ```console
-HTTP/1.1 201 Created
-Date: Sat, 14 Nov 2020 00:46:39 GMT
-Content-Type: application/json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
-Location: https://localhost:5001/Products/3
+HTTP/2 201
+date: Thu, 11 Feb 2021 21:10:37 GMT
+content-type: application/json; charset=utf-8
+location: https://localhost:5001/Products/3
+server: Kestrel
 
 {"id":3,"name":"Plush Squirrel","price":12.99}
 ```
@@ -63,7 +61,7 @@ The successful creation of the product results in:
 
   :::code language="csharp" source="../code/controllers/productscontroller.cs" id="snippet_Post" highlight="7":::
 
-* A `Location` response header with a URL to retrieve the newly created product.
+* A `location` response header with a URL to retrieve the newly created product.
 * A JSON representation of the newly created product.
 
 ### HTTP GET: Retrieve an invalid product
@@ -71,17 +69,16 @@ The successful creation of the product results in:
 An HTTP GET request was sent to retrieve a product that doesn't exist. The following `ProblemDetails` response is generated:
 
 ```console
-HTTP/1.1 404 Not Found
-Date: Sat, 14 Nov 2020 00:46:39 GMT
-Content-Type: application/problem+json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 404
+date: Thu, 11 Feb 2021 21:10:37 GMT
+content-type: application/problem+json; charset=utf-8
+server: Kestrel
 
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.4",
   "title": "Not Found",
   "status": 404,
-  "traceId": "00-52c8b28c2ea99f4cb194520607521a9a-132737a6fd002240-00"
+  "traceId": "|af98c16-40a6004c5194c147."
 }
 ```
 
@@ -94,11 +91,10 @@ The successful retrieval of the product results in an HTTP 404 status code in th
 An HTTP GET request was sent to retrieve the Plush Squirrel product by its unique identifier, which is 3. The following response is generated:
 
 ```console
-HTTP/1.1 200 OK
-Date: Sat, 14 Nov 2020 00:46:39 GMT
-Content-Type: application/json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 200
+date: Thu, 11 Feb 2021 21:10:37 GMT
+content-type: application/json; charset=utf-8
+server: Kestrel
 
 {
   "id": 3,
@@ -120,9 +116,9 @@ The successful retrieval of the product results in:
 An HTTP PUT request was sent to change the Knotted Rope product's price from 12.99 to 14.99. The following response is generated:
 
 ```console
-HTTP/1.1 204 No Content
-Date: Sat, 14 Nov 2020 00:46:39 GMT
-Server: Kestrel
+HTTP/2 204
+date: Thu, 11 Feb 2021 21:10:37 GMT
+server: Kestrel
 ```
 
 The HTTP 204 status code was generated by the following highlighted line:
@@ -134,9 +130,9 @@ The HTTP 204 status code was generated by the following highlighted line:
 An HTTP DELETE request was sent to remove the product with a unique identifier of 1. The following response is generated:
 
 ```console
-HTTP/1.1 204 No Content
-Date: Sat, 14 Nov 2020 00:46:39 GMT
-Server: Kestrel
+HTTP/2 204
+date: Thu, 11 Feb 2021 21:10:37 GMT
+server: Kestrel
 ```
 
 The HTTP 204 status code was generated by the following highlighted line:
@@ -148,11 +144,10 @@ The HTTP 204 status code was generated by the following highlighted line:
 An HTTP GET request was sent to retrieve all products in the inventory. The following response is generated:
 
 ```console
-HTTP/1.1 200 OK
-Date: Sat, 14 Nov 2020 00:46:40 GMT
-Content-Type: application/json; charset=utf-8
-Server: Kestrel
-Transfer-Encoding: chunked
+HTTP/2 200
+date: Thu, 11 Feb 2021 21:10:37 GMT
+content-type: application/json; charset=utf-8
+server: Kestrel
 
 [
   {

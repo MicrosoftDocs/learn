@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.4-install-visual-studio-code
+metadata:
+  title: Exercise - Install Visual Studio Code and the Go extension
+  description: Finish setting up your development environment by installing Visual Studio Code and the Go language extension.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: os
+title: Exercise - Install Visual Studio Code and the Go extension
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-install-visual-studio-code.md)]

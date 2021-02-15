@@ -4,7 +4,7 @@ Your organization wants to use Azure to run its web apps. For this reason, it ma
 
 In this unit, you'll learn how to upload a Docker image to Azure Container Registry, and run an image using the Azure Container Instance service.
 
-## Using Azure Container Registry to store a container
+## Use Azure Container Registry to store a container
 
 Azure Container Registry is a registry hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*: they require authentication to push or pull images. Azure Container Registry runs in the cloud, and provides similar levels of scalability and availability to many other Azure services.
 
@@ -57,7 +57,7 @@ az acr repository show --repository myapp --name myregistry
 > [!NOTE]
 > You will see at least two tags for each image in a repository. One tag will be value you specified in the *acr build* command (*v1* in the example above). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
 
-## Using Azure Container Instance to run an image
+## Use Azure Container Instance to run an image
 
 The Azure Container Instance service can load an image from Azure Container Registry and run it in Azure.
 
