@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.language.react-states-and-events
+metadata:
+  title: React state and events
+  description: Description #TODO
+  ms.date: 02/03/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: React state and events
+summary: Work with state and events in React.
+abstract: | 
+  In this module, you will:
+  - Explore the concepts of state
+  - Changing state values
+  - Responding to events
+  - Using hooks to respond to updates
+prerequisites: You will need knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.react-states-and-events.1-introduction
+- learn.language.react-states-and-events.2-concepts
+- learn.language.react-states-and-events.3-add-state
+- learn.language.react-states-and-events.4-events
+- learn.language.react-states-and-events.5-update-state
+- learn.language.react-states-and-events.6-add-events
+- learn.language.react-states-and-events.7-hooks
+- learn.language.react-states-and-events.8-add-hooks
+- learn.language.react-states-and-events.9-knowledge-check
+- learn.language.react-states-and-events.10-summary
+badge:
+  uid: learn.language.react-states-and-events.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-states-and-events.6-add-events
+metadata:
+  title: Add events
+  description: Description #TODO
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-add-events.md)]
