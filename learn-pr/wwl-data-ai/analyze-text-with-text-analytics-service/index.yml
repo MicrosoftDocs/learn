@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
-  title: Analyze Text with the Text Analytics Service
-  description: "The Text Analytics service is a cloud-based service that provides advanced natural language processing over raw text for sentiment analysis, key phrase extraction, named entity recognition, and language detection."
-  ms.date: 09/13/2020
+  title: Analyze text with the Text Analytics service
+  description: "Analyze text with the Text Analytics service"
+  ms.date: 02/15/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
