@@ -3,7 +3,7 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Build a bot with QnA Maker and Azure Bot Service
   description: "Build a bot with QnA Maker and Azure Bot Service"
-  ms.date: 02/10/2021
+  ms.date: 02/15/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
