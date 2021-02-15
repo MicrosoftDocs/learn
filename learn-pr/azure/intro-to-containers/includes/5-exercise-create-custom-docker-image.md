@@ -1,6 +1,6 @@
 A Dockerfile contains the steps for building a custom Docker image.
 
-You now decide to deploy one of your organization's web apps using Docker. You select a simple web app that implements a web API for a hotel reservations web site. The web API exposes HTTP POST and GET operations that create and retrieve customer's bookings.
+You now decide to deploy one of your organization's web apps using Docker. You select a simple web app that implements a web API for a hotel reservations website. The web API exposes HTTP POST and GET operations that create and retrieve customer's bookings.
 
 > [!NOTE]
 > In this version of the web app, the bookings are not actually persisted, and queries return dummy data.
@@ -15,22 +15,21 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
     ```
 
-2. Move to the `src` folder.
+1. Move to the `src` folder.
 
     ```bash
     cd mslearn-hotel-reservation-system/src
     ```
 
-3. In this directory, create a new file named `Dockerfile` with no file extension and open it in a text editor. On Windows, you can run the following commands:
+1. In this directory, create a new file named `Dockerfile` with no file extension and open it in a text editor. In Windows, you can run the following commands.
 
     ```bash
     copy NUL Dockerfile
     notepad Dockerfile
     ```
 
-  > [!NOTE] 
-  > With the above command, you will be offered a textfile to save.  However, if you use this method you may still need to go to the folder and remove the .txt extension.  Save it as **Dockerfile** (NOT Dockerfile.txt)
-
+    > [!NOTE]
+    > With this previous command, you'll be offered a textfile to save. However, if you use this method you may still need to go to the folder, and remove the .txt extension. Save it as **Dockerfile** (NOT Dockerfile.txt)
 
 4. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
 
@@ -42,7 +41,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet restore "HotelReservationSystem/HotelReservationSystem.csproj"
     ```
 
-5. Append the following commands to the Dockerfile. These commands copy the source code for the web app to the container and then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
+5. Append the following commands to the Dockerfile. These commands copy the source code for the web app to the container, and then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
 
     ```Dockerfile
     COPY . .
@@ -50,13 +49,13 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     RUN dotnet build "HotelReservationSystem.csproj" -c Release -o /app
     ```
 
-6. Add the following command to the Dockerfile. The `dotnet publish` command copies the executables for the web site to a new folder and removes any interim files. The files in this folder can then be deployed to a web site.
+6. Add the following command to the Dockerfile. The `dotnet publish` command copies the executables for the website to a new folder and removes any interim files. The files in this folder can then be deployed to a website.
 
     ```Dockerfile
     RUN dotnet publish "HotelReservationSystem.csproj" -c Release -o /app
     ```
 
-7. Add the following commands to the Dockerfile. The first command opens port 80 in the container. The second command moves to the `/app` folder containing the published version of the web app. The final command specifies that when the container runs it should execute the command `dotnet HotelReservationSystem.dll`. This library contains the compiled code for the web app
+7. Add the following commands to the Dockerfile. The first command opens port 80 in the container. The second command moves to the `/app` folder containing the published version of the web app. The final command specifies that when the container runs it should execute the command `dotnet HotelReservationSystem.dll`. This library contains the compiled code for the web app.
 
     ```Dockerfile
     EXPOSE 80
@@ -74,7 +73,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker build -t reservationsystem .
     ```
 
-1. Run the following command to verify that the image has been created and stored in the local registry. 
+1. Run the following command to verify that the image has been created and stored in the local registry.
 
     ```bash
     docker image list
@@ -96,11 +95,11 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker run -p 8080:80 -d --name reservations reservationsystem
     ```
 
-1. Start a web browser and navigate to `http://localhost:8080/api/reservations/1`. You should see a JSON document containing the data for reservation number 1 returned by the web app. You can replace the "1" with any reservation number, and you'll see the corresponding reservation details.
+1. Start a web browser, and navigate to `http://localhost:8080/api/reservations/1`. You should see a JSON document containing the data for reservation number 1 returned by the web app. You can replace the "1" with any reservation number, and you'll see the corresponding reservation details.
 
     :::image type="content" source="../media/5-hotel-web-app.png" alt-text="Screenshot of the hotel reservations system web app running in a browser.":::
 
-1. Examine the status of the container using the following command.
+1. Examine the status of the container by running the following command.
 
     ```bash
     docker ps -a
@@ -113,7 +112,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     07b0d1de4db7        reservationsystem   "dotnet HotelReserva…"   5 minutes ago       Up 5 minutes        0.0.0.0:8080->80/tcp   reservations
     ```
 
-1. Stop the *reservations* container with the following command.
+1. Stop the *reservations* container by running the following command.
 
     ```bash
     docker container stop reservations
@@ -125,6 +124,6 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker rm reservations
     ```
 
-1. Leave the *reservationsystem* in the local registry. You will use this image in the next exercise.
+1. Leave the *reservationsystem* in the local registry. You'll use this image in the next exercise.
 
 You've now created an image for your web app and run it using a Docker container.

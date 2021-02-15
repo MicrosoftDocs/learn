@@ -2,7 +2,34 @@ Azure Data Box family devices aren't the only ways to get data into Azure. For y
 
 In this unit, you'll learn when to use a Data Box device and when to use some other solution.
 
-## Offline transfer
+## Use cases for Data Box devices
+
+Data Box is ideally suited to transfer terabytes of data in scenarios with no to limited network connectivity. The data movement can be one-time, periodic, or an initial bulk data transfer followed by periodic transfers. 
+
+Here are the various scenarios where Data Box devices can be used to import data to Azure.
+
+ - **One time migration** - when large amount of on-premises data is moved to Azure. 
+     - Moving a media library from offline tapes into Azure to create an online media library.
+     - Migrating your VM farm, SQL server, and applications to Azure
+     - Moving historical data to Azure for in-depth analysis and reporting using HDInsight
+
+ - **Initial bulk transfer** - when an initial bulk transfer is done using Data Box (seed) followed by incremental transfers over the network. 
+
+- **Periodic uploads** - when large amount of data is generated periodically and needs to be moved to Azure. For example in energy exploration, where video content is generated on oil rigs and windmill farms. 
+
+Here are the various scenarios where Data Box can be used to export data from Azure. Data Box Disk and Data Box Heavy don't support exporting data from Azure.
+
+- **Disaster recovery** - when a copy of the data from Azure is restored to an on-premises network. In a typical disaster recovery scenario, a large amount of Azure data is exported to a Data Box. Microsoft then ships this Data Box, and the data is restored on your premises in a short time.
+
+- **Security requirements** - when you need to be able to export data out of Azure due to government or security requirements. For example, Azure Storage is available in US Secret and Top Secret clouds, and you can use Data Box to export data out of Azure.
+
+- **Migrate back to on-premises or to another cloud service provider** - when you want to move all the data back to on-premises, or to another cloud service provider, export data via Data Box to migrate the workloads.
+
+## Offline transfer options 
+
+The offline options to move your data to Azure include Data Box devices and Azure Import/Export.
+
+### Data Box devices
 
 To get data into Azure, you can load your data onto physical devices and send them to an Azure datacenter. There, the data is copied into your Azure subscription. As you saw in unit 2, three Data Box products work this way:
 
@@ -10,28 +37,42 @@ To get data into Azure, you can load your data onto physical devices and send th
 - Data Box Disk
 - Data Box Heavy
 
-If you're not in a region supported by Azure Data Box family, consider using Azure Import/Export to import data into Azure. Azure Data Box family doesn't support export of data from Azure.
+If you're not in a region supported by Azure Data Box family, consider using Azure Import/Export to import data into Azure.
 
 ### Azure Import/Export
 
-The other service that uses physical devices to transfer data into Azure is Azure Import/Export. Azure Import/Export allows you to use your own disks. You can do offline transfers of data from Blob storage to disks. Azure Import/Export also exports data from Azure back to your own datacenters and allows data to cross international borders. 
+The other service that uses physical devices to transfer data into Azure is Azure Import/Export. Azure Import/Export allows you to use your own disks.  You can do offline transfers of data from Blob storage to disks. Azure Import/Export also exports data from Azure back to your own datacenters and allows data to cross international borders. 
 
 The setup procedure to import data using Azure Import/Export is more difficult than Azure Data Box family. You have to handle all the shipping details and device preparation. We recommend using Azure Data Box, a done-for-you service that minimizes the effort required to move huge volumes of data inexpensively and securely into Azure.
 
-## Network transfer
+## Network transfer options
 
-Another general method to get data into Azure is to send it across the internet. As you saw in unit 2, two Data Box products work this way:
+Another way to get data into Azure is to send it across the internet. There are several tools you can use to transfer data across the network.
 
-- Data Box Edge
-- Data Box Gateway
+### Data Box Gateway
 
-There are several other tools you can use to transfer data across the network.
+As discussed in unit 2, Data Box Gateway is a virtual appliance. It's based on a virtual machine that you provision in your on-premises environment. You write data to the virtual device by using the NFS and SMB protocols. The device then transfers your data to Azure block blob, page blob, or Azure Files.
 
 ### Azure Storage Explorer
 
 Azure Storage Explorer is a free, downloadable application that you can run on Windows, Mac, or Linux. It provides a graphical user interface (GUI) that you can use to explore blobs, files, queues, and tables in Azure storage accounts. If you transfer only a few files at a time and you don't need to automate transfers, Storage Explorer is an ideal solution.
 
 If you don't want to install an application, but you have a browser, you can use the Storage Explorer page in the Azure portal to transfer files.
+
+### Azure Stack Edge
+
+Azure Stack Edge also uses physical devices to transfer data into Azure. Unlike Data Box devices, Azure Stack Edge devices provide Azure capabilities like compute, storage, networking, and hardware-accelerated machine learning to any edge location. Use an Azure Stack Edge device for the following scenarios:
+
+- **Inference with Azure Machine Learning** - Run ML models to get quick results that can be acted on before the data is sent to the cloud. The full data set can optionally be transferred to continue to retrain and improve your ML models.
+
+- **Preprocess data** - Transform data via compute options such as containers or virtual machines before sending it to Azure to create a more actionable dataset. Preprocessing can be used to:
+
+    - Aggregate data.
+    - Modify data, for example to remove personal data.
+    - Subset data to optimize storage and bandwidth, or for further analysis.
+    - Analyze and react to IoT Events.
+
+- **Transfer data over network to Azure** - Easily and quickly transfer data to Azure to do further compute and analytics or for archival purposes.
 
 ### Azure Data Factory
 
@@ -61,7 +102,7 @@ If you want to transfer a few files occasionally, choose Azure Storage Explorer 
 
 If network bandwidth is low or expensive to use, and you have a large volume of data, use a physical device to transfer data. If you want to use your own disks, choose Azure Import/Export. If you prefer the convenience of using Microsoft hardware, choose an Azure Data Box product. Choose from Data Box, Data Box Disk, and Data Box Heavy according to their maximum data volumes.
 
-If you have plenty of available network bandwidth and you want to transfer data regularly or continuously, choose a network transfer method. If you want to transform the data as you transfer it, without using code, consider Azure Data Factory. If you can invest the time and have the skills to write code, use scripting tools or developed compiled code against the REST APIs. If you want to transfer large datasets over the network and you have high available bandwidth, choose Data Box Edge or Data Box Gateway.
+If you have plenty of available network bandwidth and you want to transfer data regularly or continuously, choose a network transfer method. If you want to transform the data as you transfer it, without using code, consider Azure Data Factory. If you can invest the time and have the skills to write code, use scripting tools or developed compiled code against the REST APIs. If you want to transfer large datasets over the network and you have high available bandwidth, choose Data Box Gateway or an Azure Stack Edge device.
 
 ## Data transfer for the autonomous vehicles
 

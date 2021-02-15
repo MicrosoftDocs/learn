@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-concurrency.2-channels
+metadata:
+  title: Use channels as a communication mechanism
+  description: Learn how channels work to communicate between goroutines.
+  ms.date: 01/25/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use channels as a communication mechanism
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-channels.md)]
