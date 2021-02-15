@@ -4,12 +4,13 @@ title: Exercise - Detect and analyze faces with the Face service
 metadata:
   title: Exercise - Detect and analyze faces with the Face service
   description: "Exercise - Detect and analyze faces with the Face service"
-  ms.date: 01/18/2021
+  ms.date: 02/15/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88761
 durationInMinutes: 15
 content: |
   [!include[](includes/3-create-face-solutions.md)]
