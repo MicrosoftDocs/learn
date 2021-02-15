@@ -5,7 +5,7 @@ metadata:
   title: Any and unknown types in TypeScript
   description: Learn about the any type and the unknown type, how type assertion works and how to determine the type of a variable by using a type guard.
   ms.date: 02/11/2021
-  author: shanamatthews
+  author: GeekTrainer
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -5,7 +5,7 @@ metadata:
   title: Overview of types in TypeScript
   description: Learn about the difference between let and const variables, how type inference works, and identify type categories.
   ms.date: 02/11/2021
-  author: shanamatthews
+  author: GeekTrainer
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -5,7 +5,7 @@ metadata:
   title: Lab - Use types in TypeScript
   description: Apply what you've learned to modify JavaScript code, implement an enum type, and declare an array type.
   ms.date: 02/11/2021
-  author: shanamatthews
+  author: GeekTrainer
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

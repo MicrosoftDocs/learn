@@ -2,10 +2,10 @@ In this lab, you'll write the JavaScript in each of the exercises below in TypeS
 
 ### Exercise 1: Modify existing JavaScript code to have strongly typed variables
 
-1. Clone the starting repository by entering the following at the command prompt. [TO DO: REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-02\m02-start] 
+1. Clone the starting repository by entering the following at the command prompt. 
 
     ```bash
-    git clone <url>
+    git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-02/m02-start
     cd <folder name>
     code .
     ```
@@ -118,10 +118,10 @@ For an added challenge, take some existing JavaScript that you may have written 
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. [TO DO: REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-02\m02-end] 
+Clone the ending repository by entering the following at the command prompt. 
 
 ```bash
-git clone <url>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-02/m02-end
 cd <folder name>
 code .
 ```
