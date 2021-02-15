@@ -3,8 +3,8 @@
         // |(b + a x) mod 11 ⟩
         mutable a = 0;
         mutable b = 0;
-        for ((idx, digit) in Enumerated(digits)) {
-            if (digit < 0) {
+        for (idx, digit) in Enumerated(digits) {
+            if digit < 0 {
                 set a = 10 - idx;
             }
             else {
