@@ -2,7 +2,7 @@ There are a few ways to manage state in React and we're going to focus on one of
 
 ## Scenario
 
-One common technique many cooks use is mise en place, which is from the French "putting in place". Cooks ensure all items are prepared before they begin cooking. We would like to allow a user of the recipe application to tap on ingredients to mark them as prepped. We will start by creating the state, and passing the necessary information to the component for display on the page. In the next unit we will explore how to handle events.
+One common technique many cooks use is *mise en place*, which is from the French "putting in place". Cooks ensure all items are prepared before they begin cooking. We would like to allow a user of the recipe application to tap on ingredients to mark them as prepped. We will start by creating the state, and passing the necessary information to the component for display on the page. In the next unit we will explore how to handle events.
 
 ## Add state
 
@@ -33,4 +33,4 @@ Any JavaScript object or data type can be registered as stateful in React. The f
 1. Save all files.
 1. Return to your browser and hit refresh; you should now see the Recipe metadata displayed on the page.
 
-    ![Screenshot of recipe metadata.](/media/recipe-metadata.png)
+    ![Screenshot of recipe metadata.](media/recipe-metadata.png)

@@ -2,7 +2,7 @@ Hooks are a common pattern in frameworks where values change or other events occ
 
 ## Effect hook
 
-Hooks were introduced in React 16.8. We're going to focus on the **Effect** Hook, which is raised whenever the state value is set, including the initial value and all subsequent updates. It allows you to execute code in response. The code you execute can have side effects, meaning you can update values as needed.
+Hooks were introduced in an earlier unit. We're going to focus on the **Effect** Hook, which is raised whenever the state value is set, including the initial value and all subsequent updates. It allows you to execute code in response. The code you execute can have side effects, meaning you can update values as needed.
 
 ## When to use the Effect Hook
 

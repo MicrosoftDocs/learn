@@ -7,7 +7,7 @@ We want to allow the user of the application to tap on the ingredient list as th
 ## Add the method for click events
 
 1. Open **App.jsx**
-1. Create an event listener named `ingredientClick` under the comment which reads `TODO: Create ingredientClick event listener`
+1. Create an event listener named `ingredientClick` under the comment which reads `TODO: Create ingredientClick event listener`.
 
     ```javascript
     function ingredientClick(index) {

@@ -8,7 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
-title: Introduction
-durationInMinutes: 1
+title: Update state
+durationInMinutes: 4
 content: |
   [!include[](includes/5-update-state.md)]

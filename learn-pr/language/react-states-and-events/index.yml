@@ -12,10 +12,10 @@ title: React state and events
 summary: Work with state and events in React.
 abstract: | 
   In this module, you will:
-  - Explore the concepts of state
-  - Changing state values
-  - Responding to events
-  - Using hooks to respond to updates
+  - Explore the concepts of state and events
+  - Change state values
+  - Respond to events
+  - Use hooks to respond to updates
 prerequisites: You will need knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false

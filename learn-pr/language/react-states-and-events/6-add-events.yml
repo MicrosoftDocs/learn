@@ -8,7 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
-title: Introduction
-durationInMinutes: 1
+title: Add events
+durationInMinutes: 5
 content: |
   [!include[](includes/6-add-events.md)]

@@ -8,7 +8,7 @@ metadata:
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
-title: Introduction
-durationInMinutes: 1
+title: Add hooks
+durationInMinutes: 2
 content: |
   [!include[](includes/8-add-hooks.md)]

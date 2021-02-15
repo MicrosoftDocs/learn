@@ -2,9 +2,9 @@ Creating an interactive application requires the ability to modify data and resp
 
 ## Objectives
 
-- Add state to an application
-- Add event handlers
-- Use the Effect Hook to respond to state changes
+- Add state to an application.
+- Add event handlers.
+- Use the Effect Hook to respond to state changes.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ This module uses a starter project. Clone the starter and open it in Visual Stud
     code .
     ````
 
-1. Open the integrated terminal inside Visual Studio Code by selecting **View** > **Terminal** (or **Ctl-\`** or **Cmd-\`** on a Mac)
+1. Open the integrated terminal inside Visual Studio Code by selecting **View** > **Terminal** (or **Ctl-\`** or **Cmd-\`** on a Mac).
 1. Execute the following code in the newly opened terminal inside Visual Studio Code to install the necessary packages and start the development server:
 
     ```bash
