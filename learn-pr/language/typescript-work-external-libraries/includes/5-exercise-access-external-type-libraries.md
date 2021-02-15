@@ -8,9 +8,9 @@ In JavaScript, you use external libraries in your code by using the `requires` s
 
 Static typing is a primary reason to use TypeScript. External type libraries are available for almost all common libraries, providing this information for libraries that don't contain it (such as those written in JavaScript). The TypeScript compiler can raise an error message if you attempt to use a library that doesn't have type definitions. You’ll also notice that Intellisense is not available when you lack these definitions.
 
-While some JavaScript libraries will have type definitions, you will discover many do not. The open-source project [DefinitelyTyped](https://definitelytyped.org/) is a repository of TypeScript type definitions for many popular JavaScript libraries. You install type definitions by using the **@types** prefix.
+While some JavaScript libraries will have type definitions, you will discover many do not. The open-source project [DefinitelyTyped](https://definitelytyped.org/?azure-portal=true) is a repository of TypeScript type definitions for many popular JavaScript libraries. You install type definitions by using the **@types** prefix.
 
-Because the type definitions are only used by TypeScript during design-time, they are **not** required to be part of the published project. As a result, you can install them as [devDependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies).
+Because the type definitions are only used by TypeScript during design-time, they are **not** required to be part of the published project. As a result, you can install them as [devDependencies](https://nodejs.dev/learn/npm-dependencies-and-devdependencies?azure-portal=true).
 
 ```bash
 npm install --save-dev @types/<library-name>
@@ -21,7 +21,7 @@ npm install --save-dev @types/<library-name>
 
 ## Exercise
 
-In this exercise, you'll install and implement a type library called [dotenv](https://www.npmjs.com/package/dotenv). This commonly used library loads environment variables from a **.env** file into `process.env`, enabling you to store configuration details in separate from your code and access them. You can use **dotenv** to manage things like connection strings and other values which may need to change depending on where your code is executing.
+In this exercise, you'll install and implement a type library called [dotenv](https://www.npmjs.com/package/dotenv?azure-portal=true). This commonly used library loads environment variables from a **.env** file into `process.env`, enabling you to store configuration details in separate from your code and access them. You can use **dotenv** to manage things like connection strings and other values which may need to change depending on where your code is executing.
 
 1. Open a new workspace in Visual Studio Code.
 2. Add a new file called **Main.ts**.
@@ -31,7 +31,7 @@ In this exercise, you'll install and implement a type library called [dotenv](ht
     tsc --init
     ```
 
-4. Go to [DefinitelyTyped](https://definitelytyped.org/) and search for the **dotenv** type library. DefinitelyTyped will provide the name of the library to install and other implementation details.
+4. Go to [DefinitelyTyped](https://definitelytyped.org/?azure-portal=true) and search for the **dotenv** type library. DefinitelyTyped will provide the name of the library to install and other implementation details.
 5. From the terminal, use `npm` to install the **dotenv** type library in your project folder.
 
     ```bash
@@ -85,14 +85,14 @@ In this exercise, you'll install and implement a type library called [dotenv](ht
     console.log(process.env.WEB_HOST);
     ```
 
-This exercise provides an example of using **dotenv**. See [dotenv](https://www.npmjs.com/package/dotenv) to learn more about using it in your code.
+This exercise provides an example of using **dotenv**. See [dotenv](https://www.npmjs.com/package/dotenv?azure-portal=true) to learn more about using it in your code.
 
 ## Exercise solution
 
-To see the solution to this exercise, clone the repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-07\m07-exercise-02-end]
+To see the solution to this exercise, clone the repository by entering the following at the command prompt.
 
 ```bash
-git clone <url>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/module07-exercise-02-end
 cd <folder name>
 code .
 ```

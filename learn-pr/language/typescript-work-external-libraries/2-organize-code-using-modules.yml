@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.typescript-work-external-libraries.2-organize-code-using-modules
-title: Overview of interfaces in TypeScript
+uid: learn.language.typescript-work-external-libraries.2-organize-code-with-modules
+title: Organize code with modules
 metadata:
-  title: Overview of interfaces in TypeScript
-  description: Learn about the purpose of an interface, identify the reasons for using an interface, and explain how an interface is different from a type alias.
+  title: Organize code with modules
+  description: Learn how to organize code by using modules.
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: shanama
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-organize-code-using-modules.md)]
+  [!include[](includes/2-organize-code-with-modules.md)]

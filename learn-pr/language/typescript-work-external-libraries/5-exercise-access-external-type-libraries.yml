@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.typescript-work-external-libraries.5-exercise-access-external-type-libraries
-title: Other ways to use interfaces in Typescript
+title: Exercise - Access external type libraries
 metadata:
-  title: Other ways to use interfaces in Typescript
-  description: Learn how to create indexable types and describe a JavaScript API using an interface.
+  title: Exercise - Access external type libraries
+  description: Learn how to install an external type library and access it from code.
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: shanama

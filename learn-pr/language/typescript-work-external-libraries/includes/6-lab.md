@@ -7,9 +7,10 @@ In this exercise, you'll organize the code in a project using modules. The proje
 - **module07_main.ts** - Contains the main code of the application.
 - **module07_loans.ts** - Contains two interfaces, `Loan` and `ConventionalLoan`.
 - **module07_loan-programs.ts** - Contains three functions:
-   - `calculateInterestOnlyLoanPayment`, which calculates the payment for an interest only loan.
-   - `calculateConventionalLoanPayment`, which calculates the payment for a  conventional loan.
-   - `calculateInterestRate`, a worker function that calculates the monthly interest rate of the loan.
+
+  - `calculateInterestOnlyLoanPayment`, which calculates the payment for an interest only loan.
+  - `calculateConventionalLoanPayment`, which calculates the payment for a conventional loan.
+  - `calculateInterestRate`, a worker function that calculates the monthly interest rate of the loan.
 
 The `calculateInterestOnlyLoanPayment` and `calculateConventionalLoanPayment` functions accept `principle` and `interestRate` parameters. The difference between them is that the `calculateConventionalLoanPayment` function accepts a third property, `months` that the `calculateInterestOnlyLoanPayment` function does not.
 
@@ -21,10 +22,10 @@ The `calculateInterestOnlyLoanPayment` and `calculateConventionalLoanPayment` fu
 
 Add the required code to define the relationships between the modules.
 
-1. Clone the starting repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-07\m07-start] 
+1. Clone the starting repository by entering the following at the command prompt.
 
    ```bash
-   git clone <url>
+   git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/m07-start
    cd <folder name>
    code .
    ```
@@ -104,10 +105,10 @@ Select a JavaScript library that you are familiar with and try importing it into
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-07\m07-end] 
+Clone the ending repository by entering the following at the command prompt.
 
 ```bash
-git clone <url>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/m07-end
 cd <folder name>
 code .
 ```

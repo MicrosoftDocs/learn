@@ -1,7 +1,7 @@
 Let's see how to organize variable, class, interface, and function declarations into multiple modules and then use these components in code.
 
 > [!NOTE]
-> You must use an IDE, such as Visual Studio Code, to implement modules. It is not possible to do this in the TypeScript Playground. 
+> You must use an IDE, such as Visual Studio Code, to implement modules. It is not possible to do this in the TypeScript Playground.
 
 ## Export a module component
 
@@ -75,7 +75,7 @@ In next part of the exercise, you'll import components from each of the two modu
     ```
 
     > [!IMPORTANT]
-    > If you want to run the resulting JavaScript in a web browser, you must append the **.js** file extension to the file name in the `import` statement. To learn more, see [Compiled JavaScript import is missing file extension](https://github.com/microsoft/TypeScript/issues/40878).
+    > If you want to run the resulting JavaScript in a web browser, you must append the **.js** file extension to the file name in the `import` statement. To learn more, see [Compiled JavaScript import is missing file extension](https://github.com/microsoft/TypeScript/issues/40878?azure-portal=true).
 
 1. Now, you can use the `returnGreetings` functions in your code.
 

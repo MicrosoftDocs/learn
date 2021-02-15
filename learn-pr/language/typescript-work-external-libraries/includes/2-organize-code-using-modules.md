@@ -7,4 +7,4 @@ You can export any declaration (such as a variable, function, class, type alias,
 
 The `export` statement explicitly makes a component in one module available to other modules, while the `import` statement allows you to consume that component from another module. Modules are declarative; the `import` and `export` statements at the file level describe the relationships between them.
 
-![Modules are connected to each other through a series of export and import statements. ](../media/m07_modules.jpg)
+:::image type="content" source="../media/modules.png" alt-text="Modules are connected to each other through a series of export and import statements":::

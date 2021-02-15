@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.typescript-work-external-libraries.3-exercise-export-import-module-components
-title: Exercise - Declare and instantiate an interface in TypeScript
+title: Exercise - Export and import module components
 metadata:
-  title: Exercise - Declare and instantiate an interface in TypeScript
-  description: Learn how to declare an interface and implement an interface in a function.
+  title: Exercise - Export and import module components
+  description: Learn how to export and import a module component.
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: shanama

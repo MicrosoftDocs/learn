@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.typescript-work-external-libraries.6-lab
-title: Lab - Use interfaces in TypeScript
+title: Lab - Export and import module components
 metadata:
-  title: Lab - Use interfaces in TypeScript
-  description: Apply what you've learned to declare and implement interfaces.
+  title: Lab - Export and import module components
+  description: Apply what you've learned to export and import module components.
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: shanama
