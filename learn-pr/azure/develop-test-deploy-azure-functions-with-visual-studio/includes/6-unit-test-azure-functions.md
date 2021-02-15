@@ -6,7 +6,7 @@ In this unit, you'll see how to use the `xUnit` test framework with Visual Studi
 
 ## Create a unit test project
 
-The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure functions app. Use the following steps to create a unit test project for testing the *WatchInfo* function.
+The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure Function App. Use the following steps to create a unit test project for testing the *WatchInfo* function.
 
 1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, select **Add**, and then select **New Project**.
 
@@ -84,7 +84,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     response.Wait();
     ```
 
-1. Add the following code to the method. This code checks that the response from the Azure function is correct. In this case, the function should return an *OK* response, containing the expected body data.
+1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected body data.
 
     ```csharp
     // Check that the response is an "OK" response
@@ -97,7 +97,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     Assert.Equal(watchInfo, result.Value);
     ```
 
-    The complete method should look like this:
+    The complete method should look like the following.
   
     ```csharp
     [Fact]
@@ -199,7 +199,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     string model = req.Query["model"];
     ```
 
-1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code:
+1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code.
 
     ```csharp
     string model = req.Query["modelll"];

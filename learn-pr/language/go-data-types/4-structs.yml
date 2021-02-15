@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.4-structs
+metadata:
+  title: Exercise - Use structs
+  description: Learn about structs and how to use them in Go programs.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use structs
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-structs.md)]
