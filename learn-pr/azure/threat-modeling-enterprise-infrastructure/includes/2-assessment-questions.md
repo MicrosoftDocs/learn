@@ -6,7 +6,7 @@ An infrastructure threat model helps you visualize how the enterprise is accesse
 
 It makes it easier to identify which security controls to use to help reduce or eliminate risk.
 
-This list of assessment questions is a great starting point. You may add more questions depending on your industry and technologies used.
+This list of assessment questions is a great starting point. You may add more questions depending on your industry and technologies.
 
 > [!NOTE]
 > Questions are grouped by their respective domains.
@@ -20,16 +20,16 @@ These questions allow you to:
 - Know who is authorized to access enterprise resources, like admins, vendors, or users.
 - Understand what is required to restrict access, like Role-based Access Control (RBAC), Access Control Lists (ACL), or least-privilege access.
 - Investigate identity management systems used, like Azure Active Directory (AAD).
-- Learn what is used to authenticate, like Multi-Factor Authentication (MFA) and Single-Sign-On (SSO).
+- Learn what is used to authenticate, like Multi-Factor Authentication (MFA), or Single-Sign-On (SSO).
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe your physical and logical access controls.**|<ul><li>Usage of an Active Directory.</li><li>Process to grant access to assets and resources.</li><li>Federations used to help enable SSO experiences.</li><li>Trusts established between two or more separate domains to understand potential relationship risks.</li><li>Complete workflows for provisioning and de-provisioning of access.</li><li>People who manage access workflows.</li></ul>|
-|**How do you establish and verify the identity of each person?**|<ul><li>Process to create and manage aliases for each user type.</li><li>Access controls used, like SSO, 2FA, and MFA.</li><li>Authentication factors used, like biometric scanning, phone authentication, smart cards, and Trusted Platform Modules (TPM).</li><li>People who manage identity and access controls.</li></ul>|
-|**How do you know what people can and cannot access?**|<ul><li>Enforced permissions and access restrictions, like least-privilege, segregation of duties, RBAC, glass-break scenarios, vendor access restrictions, and group memberships.</li><li>People who manage access restrictions and permissions.</li></ul>|
-|**Describe the password policy for each user type.**|<ul><li>Password requirements for each user type.</li><li>Password requirement differences between users, elevated users, smart cards, shared accounts, and service accounts.</li><li>Password lifecycle guidelines on creation, modification, and reset.</li><li>Logging and monitoring mechanisms used to track password actions.</li><li>Password expiration policies for each user type.</li><li>Unsuccessful password attempt limits.</li><li>Password sharing restrictions.</li></ul>|
+|**Describe your physical and logical access controls.**|<ul><li>Use of an Active Directory.</li><li>Process to grant access to assets and resources.</li><li>Federations used to help enable SSO experiences.</li><li>Trusts established between two or more separate domains to understand potential relationship risks.</li><li>Complete workflows for access provisioning and de-provisioning.</li><li>People who manage access workflows.</li></ul>|
+|**How do you establish and verify the identity of each person?**|<ul><li>Process to create and manage aliases for each user type.</li><li>Access controls used, like SSO or MFA.</li><li>Authentication factors used, like biometric scanning, phone authentication, smart cards, or Trusted Platform Modules (TPM).</li><li>People who manage identity and access controls.</li></ul>|
+|**How do you know what people can and cannot access?**|<ul><li>Enforced permissions and access restrictions, like least-privilege access, segregation of duties, RBAC, glass-break scenarios, vendor access restrictions, and group memberships.</li><li>People who manage access restrictions and permissions.</li></ul>|
+|**Describe the password policy for each user type.**|<ul><li>Password requirements for each user type.</li><li>Password requirement differences between users, elevated users, smart cards, shared accounts, and service accounts.</li><li>Password lifecycle guidelines for creation, modification, and reset.</li><li>Logging and monitoring mechanisms used to track password actions.</li><li>Password expiration policies for each user type.</li><li>Unsuccessful password attempt limits.</li><li>Password sharing restrictions.</li></ul>|
 |**How do you securely manage access to your online social presence?**|<ul><li>Prefix requirements used for social media branding.</li><li>People who manage social media accounts.</li><li>Social media access guidelines.</li><li>Access audit cadence.</li></ul>|
-|**How do you manage elevated, shared, alternate, and system accounts?**|<ul><li>Approval process for each account type.</li><li>Expiration or deactivation dates.</li><li>People who manage these accounts.</li><li>Process used to monitor, log, and handle suspicious activity.</li><li>Accounts used for remote access.</li><li>Security controls used, like just-in-time access.</li><li>Local administrative account usage and security.</li><li>Administrative account usage restrictions, like secured environment use only.</li></ul>|
+|**How do you manage elevated, shared, alternate, and system accounts?**|<ul><li>Approval process for each account type.</li><li>Expiration or deactivation dates.</li><li>People who manage these types of accounts.</li><li>Process used to monitor, log, and handle suspicious activity.</li><li>Accounts used for remote access.</li><li>Security controls used, like just-in-time access.</li><li>Local administrative account usage and security.</li><li>Administrative account usage restrictions, like using those accounts only in secured environments.</li></ul>|
 |**Describe the process used to approve, audit, and manage access requests.**|<ul><li>Initial request handling, review process, initial training requirements, and audits.</li><li>People who manage access requests.</li></ul>|
 
 ## Secure development
@@ -94,6 +94,8 @@ These questions allow you to:
 |**What happens if an asset is lost, missing, or shipped outside of the enterprise?**|<ul><li>Workflow used for each scenario.</li><li>Data security process before and after each workflow is completed.</li></ul>|
 |**Describe how data is encrypted across all stages.**|<ul><li>Data encryption at-rest, in-use, and in-transit.</li><li>Use of digital signatures, hashes, and HMACs.</li><li>Use of blockchain and off-chain encryption to prevent collusion.</li></ul>|
 |**What are the mechanisms in place to prevent unauthorized sharing and downloading of data?**|<ul><li>Security controls used to prevent unauthorized data sharing and downloading, like notifications, logs, sharing review process, or other restrictions.</li></ul>|
+|**Describe the process used to time out working sessions across assets and services.**|<ul><li>Automatically time out sessions designed to prevent unauthorized access.</li></ul>|
+
 
 ## Legal
 
@@ -106,9 +108,9 @@ These questions allow you to:
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe any limitations to global sales due to encryption capabilities that are part of the product.**|<ul><li>Markets that prohibit the sale of a product due to its encryption capabilities.</li></ul>|
+|**Describe any global sales limitations due to encryption capabilities that are part of the product.**|<ul><li>Markets that prohibit the sale of a product due to its encryption capabilities.</li></ul>|
 |**How do employees and vendors adhere to security policies?**|<ul><li>Terms and conditions, NDAs, policies, agreements, and other contracts signed by employees and vendors.</li></ul>|
-|**Describe the process used to meet all industry, legal, contractual, and regulatory compliance as it relates to enterprise assets.**|<ul><li>How the enterprise meets compliance requirements.<li><li>People responsible for meeting those requirements.</li><li>Compliance risk assessment reviews.</li><li>Logging and monitoring mechanisms in place.</li><li>Access controls used for each user type.</li><li>Asset security baselines used.</li><li>How each endpoint connecting to the network meets security compliance.</li><li>Detection and protection systems in place to enforce compliance.</li><li>Specialized facility operations to meet regulatory compliance.</li></ul>|
+|**Describe the process used to meet all industry, legal, contractual, and regulatory compliance as it relates to enterprise assets.**|<ul><li>How the enterprise meets compliance requirements.</li><li>People responsible for meeting those requirements.</li><li>Compliance risk assessment reviews.</li><li>Logging and monitoring mechanisms in place.</li><li>Access controls used for each user type.</li><li>Asset security baselines used.</li><li>How each endpoint connecting to the network meets security compliance.</li><li>Detection and protection systems in place to enforce compliance.</li><li>Specialized facility operations to meet regulatory compliance.</li></ul>|
 
 ## Incident response
 
@@ -153,7 +155,6 @@ These questions allow you to:
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe the process used to time out working sessions across assets and services.**|<ul><li>Automatically time out sessions designed to prevent unauthorized access.</li></ul>|
 |**Describe how malicious activity is detected, prevented, and removed across all endpoints.**|<ul><li>Tools used by the enterprise, such as Antivirus (AV) software and Mobile Device Management (MDM) solutions.</li><li>Implementation and enforcement of each tool.</li><li>Security patch delivery process to all endpoints.</li><li>Vulnerability and penetration testing programs, including third-party vendors.</li><li>Security event identification, logging, and monitoring.</li><li>Intelligence platform usage and configuration to ingest security events.</li><li>Mobile Device Management (MDM) solutions configuration and usage.</li></ul>|
 |**Describe your security operations processes as they relate to changes in the production environment.**|<ul><li>How changes to the production environment are documented, accessed, and updated.</li><li>Change management policy details.</li><li>How and when employees can access security operation policies.</li></ul>|
 

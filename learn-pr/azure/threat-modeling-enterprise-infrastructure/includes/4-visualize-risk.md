@@ -7,15 +7,15 @@ Now that you have the answers, the next step in the infrastructure threat modeli
 
 |Category|Summary|
 |--------|-------|
-|![Access Control domain](../media/AccessControl-small.svg)<br>Access control|<ul><li>Users: users, admins, vendors.</li><li>Corporate network access with generic VPN.</li><li>NAS - sensitive files (code, system config, backups), READ - all, READ/WRITE - admins.</li><li>Build servers - READ - all, WRITE - admins.</li><li>File share server - READ - all, WRITE - admins.</li><li>Access given according to need for individual users.</li><li>O365 - single factor authentication, no password expiration.</li><li>Github - single factor authentication, no password expiration.</li><li>Domain Controller - used for local machine access only, no group policy.</li><li>No password requirements.</li><li>Local credentials for Linux machine access.</li><li>Shared accounts - for conference rooms, shared passwords, same permissions as users.</li><li>AAD used for O365 access.</li><li>Decentralized identities - each system uses a different credential.</li><li>No enforced 2FA/MFA.</li><li>No separate accounts used to make sensitive system changes.</li></ul>|
+|![Access Control domain](../media/AccessControl-small.svg)<br>Access control|<ul><li>Users: employees, admins, vendors.</li><li>Corporate network access with generic VPN.</li><li>NAS - sensitive files (code, system config, backups), READ - all, READ/WRITE - admins.</li><li>Build servers - READ - all, WRITE - admins.</li><li>File share server - READ - all, WRITE - admins.</li><li>Access given according to need for individual users.</li><li>O365 - single factor authentication, no password expiration.</li><li>Github - single factor authentication, no password expiration.</li><li>Domain Controller - used for local machine access only, no group policy.</li><li>No password requirements.</li><li>Local credentials for Linux machine access.</li><li>Shared accounts - for conference rooms, shared passwords, same permissions as users.</li><li>AAD used for O365 access.</li><li>Decentralized identities - each system uses a different credential.</li><li>No enforced 2FA/MFA.</li><li>No separate accounts used to make sensitive system changes.</li></ul>|
 |![Secure Development domain](../media/SecureDevelopment-small.svg)<br>Secure development|<ul><li>SDL not implemented formally.</li><li>Potentially unsafe open-source bug management solution.</li><li>Weak authentication for GitHub.</li></ul>|
 |![Business Continuity domain](../media/BusinessContinuity-small.svg)<br>Business continuity|<ul><li>Critical systems backup - NAS (weekly, not encrypted), removable drive (monthly, not encrypted).</li><li>No formalized business continuity and disaster recovery plan.</li><li>No audits or recovery tests on backups.</li></ul>|
 |![Cryptography domain](../media/Cryptography-small.svg)<br>Cryptography|<ul><li>Self-signed certificates on dev environment.</li><li>Verisign certificates for public facing websites.</li><li>No key rotation.</li></ul>|
-|![Asset Management domain](../media/Asset-small.svg)<br>Asset management|<ul><li>No data retention.</li><li>No classification or labeling.</li><li>Folders treated as labeling mechanism.</li><li>Folder access is unrestricted.</li><li>No asset disposal or deprecation plan exists.</li><li>Data is not encrypted on shared drives and servers.</li><li>No Data Leakage Prevention (DLP) mechanisms.</li><li>NAS - stores code artifacts, configuration files, and short-term backups (SQL server, domain controller, and build servers).</li><li>OneDrive currently being implemented to replace shared storage.</li><li>Enterprise machines are not disk encrypted.</li><li>Stations not locked when employees leave their stations.</li></ul>|
-|![Legal domain](../media/Legal-small.svg)<br>Legal|<ul><li>Non-Disclosure Agreements (NDA) and asset use agreements signed.</li><li>Background checks conducted.Specialized team handles financial regulatory compliance.</li></ul>|
+|![Asset Management domain](../media/Asset-small.svg)<br>Asset management|<ul><li>No data retention.</li><li>No classification or labeling.</li><li>Folders treated as labeling mechanism.</li><li>Folder access is unrestricted.</li><li>No asset disposal or deprecation plan.</li><li>Data is not encrypted on shared drives and servers.</li><li>No Data Leakage Prevention (DLP) mechanisms.</li><li>NAS - stores code artifacts, configuration files, and short-term backups (SQL server, domain controller, and build servers).</li><li>OneDrive currently being implemented to replace shared storage.</li><li>Enterprise machines are not disk encrypted.</li><li>Stations not locked when employees leave their stations.</li></ul>|
+|![Legal domain](../media/Legal-small.svg)<br>Legal|<ul><li>Non-Disclosure Agreements (NDA) and asset use agreements signed.</li><li>Background checks conducted.</li><li>Specialized team handles financial regulatory compliance.</li></ul>|
 |![Incident Response domain](../media/IncidentResponse-small.svg)<br>Incident response|<ul><li>No incident response program for enterprise.</li><li>No incident response program for product.</li></ul>|
 |![Network domain](../media/Network-small.svg)<br>Network|<ul><li>Network is unsegmented.</li><li>Firewall has a basic set of inbound and outbound rules.</li><li>VPN takes credentials and a token, which is pre-generated by the IT administrator, to create a secure connection to the corporate network.</li></ul>|
-|![Operations domain](../media/Operations-small.svg)<br>Operations|<ul><li>Manual, unplanned patches and updates done on assets by the IT administrators.</li><li>Basic Antivirus (AV) solution installed on every machine, but no way to enforce or verify.</li><li>No group policy exists to enforce timeout sessions on machines.</li><li>No Mobile Device Management (MDM) solution exists.</li><li>Logging and monitoring is minimal, made up of only of basic VPN and firewall actions.</li><li>No intelligence platform or analytics service used.</li><li>Only default rules are used for the firewall.</li><li>Firewall logs are kept locally for seven days, and then erased to make space for the more recent logs.</li><li>Changes to the production environment require management approval.</li></ul>|
+|![Operations domain](../media/Operations-small.svg)<br>Operations|<ul><li>Manual, unplanned patches and updates done on assets by the IT administrators.</li><li>Basic Antivirus (AV) solution installed on every machine, but no way to enforce or verify.</li><li>No group policy exists to enforce timeout sessions on machines.</li><li>No Mobile Device Management (MDM) solution.</li><li>Logging and monitoring is minimal, made up of only of basic VPN and firewall actions.</li><li>No intelligence platform or analytics service.</li><li>Only default rules are used for the firewall.</li><li>Firewall logs are kept locally for seven days, and then erased to make space for the more recent logs.</li><li>Changes to the production environment require management approval.</li></ul>|
 |![Physical and environmental domain](../media/Physical-small.svg)<br>Physical and environmental|<ul><li>5 build servers, 1 domain controller, 1 NAS in an unlocked IT room.</li><li>No cameras or access records for the IT room.</li><li>RFID for building access.</li><li>Building owner has access to all rooms and floors.</li><li>No building cameras or guards.</li><li>Visitors are escorted by the employee, but there is no official check-in or front desk.</li></ul>|
 |![Governance domain](../media/Governance-small.svg)<br>Governance|<ul><li>No information security policy or risk management program.</li><li>No security training offerings.</li></ul>|
 |![Security architecture domain](../media/SecurityArchitecture-small.svg)<br>Security architecture|<ul><li>Virtual Machines (VM) are created using default images.</li><li>Security baselines not configured.</li><li>Hybrid infrastructure can lead to holes in the firewall and access control issues if implemented incorrectly.</li><li>No IoT or container used in the enterprise.</li></ul>|
@@ -30,3 +30,39 @@ To build this diagram, we make the following assumptions:
 more in-depth diagrams as needed. Refer to the [Provide context with the right depth layer module](https://docs.microsoft.com/en-us/learn/modules/tm-provide-context-with-the-right-depth-layer/) from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/) learning path for more information.
 
 ## Data-flow diagram
+
+Let's revisit what each shape means:
+
+### Element definition
+
+|Element|Shape|Definition|Example|
+|-------|-----|----------|-------|
+|Process|![Process](../media/process50.png)|Task that receives, modifies, or redirects input to output|Services|
+|Data store|![Data Store](../media/data-store50.png)|Permanent and temporary data storage|NAS, AD Store, Removable Drive|
+|External entity|![External Entity](../media/external-entity50.png)|Task, entity, or data store outside of your direct control|Users, third-party APIs|
+|Data-flow|![Data-flow](../media/data-flow50.png)|Data movement between processes, data stores, and external entities|Credentials, files, connection strings, payloads|
+|Trust boundary|![Trust Boundary Box](../media/trust-boundary-box50.png) ![Trust Boundary Line](../media/trust-boundary-line50.png)|Trust zone changes as data flows through the system|User connection to the corporate network, corporate firewall connecting to Azure|
+
+### Woodgrove elements
+
+Now, let's enumerate all the processes, data stores, external entities, data-flows, and trust boundaries for Woodgrove:
+
+|Element|Component|
+|-------|---------|
+|![Process](../media/process50.png)</br>Process|<ul><li>O365</li><li>Open-source bug management service</li><li>SaaS offerings (grouped)</li><li>GitHub</li><li>Machine</li><li>Firewall service</li><li>VPN service</li><li>NAS file share service</li><li>Logging and monitoring service</li><li>NAS backup service</li><li>SQL server</li><li>Build servers (grouped)</li><li>Active directory service</li><li>Removable drive backup service</li><li>Azure Iaas</li></ul>|
+|![Data Store](../media/data-store50.png)</br>Data store|<ul><li>Credentials and tokens VPN store</li><li>NAS store</li><li>Logging and monitoring store</li><li>Active directory store</li><li>Removable drive store</li></ul>|
+|![External Entity](../media/external-entity50.png)</br>External entity|<ul><li>User</li></ul>|
+|![Data-flow](../media/data-flow50.png)</br>Data-flow|<ul><li>Request and responses between element connections</li></ul>|
+|![Trust Boundary Box](../media/trust-boundary-box50.png)</br>![Trust Boundary Line](../media/trust-boundary-line50.png)</br>Trust boundary|<ul><li>Woodgrove Corporate Boundary</li><li>Azure IaaS Boundary</li></ul>|
+
+### Connected elements
+
+Once the elements are fleshed out, it's time to create the connections. Here's a preliminary list:
+
+|Source|Destination|Flow|
+|------|-----------|----|
+|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>O365|<ul><li>Authentication tokens</li><li>Requests and responses</li></ul>|
+|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>Bug management service||
+|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>SaaS offerings (grouped)||
+|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>GitHub||
+|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>Machine||
