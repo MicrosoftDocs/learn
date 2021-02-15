@@ -19,7 +19,8 @@ You'll need:
   4. Choose a repository which you cloned in the previous step.
   5. Click **Create codespace**.
   6. Sign in using the Microsoft account associated with your Azure subscription.
-  7. Wait for the environment to be created. This will open a browser-based instance of Visual Studio Code. Additionally you can open this codespace on your desktop in VisualStudio Code.
+  7. Wait for the environment to be created. This will open a browser-based instance of Visual Studio Code.
+  8. It will prompt to open this codespace in Visual Studio Code and Click on **Open**.
 
 After you've completed the setup steps above, you can use your Visual Studio Codespace environment to complete the module.
 
