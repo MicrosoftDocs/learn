@@ -16,10 +16,10 @@ In this exercise, you will:
 
 ## Exercise 1 - Declare the interfaces
 
-1. Clone the starting repository by entering the following at the command prompt. [TO DO: REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-03\m03-start] 
+1. Clone the starting repository by entering the following at the command prompt. 
 
    ```bash
-   git clone <url>
+   git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-03/m03-start
    cd <folder name>
    code .
    ```
@@ -92,10 +92,10 @@ In this exercise, you will:
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-03\m03-end] 
+Clone the ending repository by entering the following at the command prompt.  
 
 ```bash
-git clone <url>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-03/m03-end
 cd <folder name>
 code .
 ```
