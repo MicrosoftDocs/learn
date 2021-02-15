@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.typescript-work-external-libraries.6-interfaces-lab
+uid: learn.language.typescript-work-external-libraries.6-lab
 title: Lab - Use interfaces in TypeScript
 metadata:
   title: Lab - Use interfaces in TypeScript
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-interfaces-lab.md)]
+  [!include[](includes/6-lab.md)]

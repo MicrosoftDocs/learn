@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.typescript-work-external-libraries.2-interfaces-typescript
+uid: learn.language.typescript-work-external-libraries.2-organize-code-using-modules
 title: Overview of interfaces in TypeScript
 metadata:
   title: Overview of interfaces in TypeScript
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-interfaces-typescript.md)]
+  [!include[](includes/2-organize-code-using-modules.md)]
