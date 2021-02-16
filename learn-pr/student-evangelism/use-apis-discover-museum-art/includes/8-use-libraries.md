@@ -66,12 +66,18 @@ $response | ConvertTo-Json
 
 ::: zone pivot="csharp"
 
+Prerequisites:
+
+- Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/Download)
+- [C# extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
+- Experience with using the command line
+
 ```csharp
 using System.Net.Http;
 
-HttpClient client = new HttpClient();
+var client = new HttpClient();
 
-HttpRequestMessage request = new HttpRequestMessage(
+var request = new HttpRequestMessage(
     method: HttpMethod.Get, 
     requestUri: "https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.search.objects&query=clock%20radio&page=1&per_page=100&access_token=yourtoken"
 );
@@ -80,9 +86,9 @@ HttpResponseMessage response = await client.SendAsync(request);
 
 if (response.IsSuccessStatusCode)
 {
-    Console.WriteLine(
-        await response.Content.ReadAsStringAsync()
-    );
+    string responseContent = await response.Content.ReadAsStringAsync();
+
+    Console.WriteLine(responseContent);
 }
 ```
 
@@ -162,16 +168,16 @@ $response | ConvertTo-Json
 ::: zone pivot="csharp"
 
 ```csharp
-HttpClient client = new HttpClient();
+var client = new HttpClient();
 
-HttpRequestMessage request = new HttpRequestMessage(
+var request = new HttpRequestMessage(
     method: HttpMethod.Post,
     requestUri: "http://localhost:3000/objects"
 );
 
 string payload = @"{""id"":5,""item"":""The Fiancés"",""artist"":""Pierre Auguste Renoir"",""collection"":""Wallraf–Richartz Museum, Cologne, Germany"",""date"":""1868""}";
 
-StringContent requestData = new StringContent(
+var requestData = new StringContent(
     content: payload, 
     encoding: System.Text.Encoding.UTF8,
     mediaType: "application/json"
@@ -183,9 +189,9 @@ HttpResponseMessage response = await client.SendAsync(request);
 
 if (response.IsSuccessStatusCode)
 {
-    Console.WriteLine(
-        await response.Content.ReadAsStringAsync()
-    );
+    string responseContent = await response.Content.ReadAsStringAsync();
+
+    Console.WriteLine(responseContent);
 }
 ```
 
