@@ -2,11 +2,15 @@ In this unit, you use a Xamarin.Forms application to consume a basic REST servic
 
 ## Create a book REST service
 
-First, you create the REST service so that you can consume it from your application. The REST service that you use is a basic book service. You use it to get a list of books, add new books, and update existing books. The service is already written and deployed to the following web address:
+First, you create the REST service so that you can consume it from your application. The REST service that you use is a basic book service. You use it to get a list of books, add new books, and update existing books. You will deploy this service using the Azure Cloud Shell sandbox, which will give you a unique URL to use in the mobile app.
 
+Run the following command in the command shell:
+
+```bash
+. <(wget -q -O - https://aka.ms/mslearn-xamarin-consume-rest-services-setup)
 ```
-https://something.azurewebsites.net
-```
+
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 This service is configured to store and return user specific book data based on the authorization token that is used when making REST calls. After 1 hour the data for the user will be deleted for the authorization token.
 
