@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-get-started.5-typescript-compiler
+title: Compile a TypeScript file
+metadata:
+  title: Compile a TypeScript file
+  description: Learn about how the compiler transforms TypeScript code to JavaScript and identify the compiler options.
+  ms.date: 02/10/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-typescript-compiler.md)]
