@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.determine-endpoint-management-implementation.6-create-endpoint-rollout-plan
+title: Create an endpoint management rollout plan
+metadata:
+  title: Create an endpoint management rollout plan
+  description: Create an endpoint management rollout plan.
+  ms.date: 02/16/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-create-endpoint-rollout-plan.md)]

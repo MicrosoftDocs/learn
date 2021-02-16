@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.determine-endpoint-management-implementation.8-prepare-support-help-desk
+title: Prepare your endpoint management support and help desk 
+metadata:
+  title: Prepare your endpoint management support and help desk
+  description: Prepare your endpoint management support and help desk.
+  ms.date: 02/16/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-prepare-support-help-desk.md)]

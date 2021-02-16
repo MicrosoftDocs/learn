@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.determine-endpoint-management-implementation.5-review-endpoint-policies-infrastructure
+title: Review existing endpoint management policies and infrastructure
+metadata:
+  title: Review existing endpoint management policies and infrastructure
+  description: Review existing endpoint management policies and infrastructure.
+  ms.date: 02/16/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-review-endpoint-policies-infrastructure.md)]
