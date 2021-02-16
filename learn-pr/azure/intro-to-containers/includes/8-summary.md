@@ -1,4 +1,4 @@
-Packaging an app in a Docker image gives you a convenient way to deploy and run the app. You can automate the process of building a Docker image by defining the steps in a Dockerfile. Once you've created an image, you can upload it to a registry such as the Azure Container Registry. From there, you can create a container instance that runs the application.
+Packaging an app in a Docker image gives you a convenient way to deploy and run the app. You can automate the process of building a Docker image by defining the steps in a Dockerfile. After you've created an image, you can upload it to a registry such as the Azure Container Registry. From there, you can create a container instance that runs the application.
 
 ## Clean up resources
 
@@ -8,9 +8,13 @@ In this module, you created resources by using your Azure subscription. You want
 
 1. Find the **learn-deploy-container-aci-rg** resource group, or whatever resource group name you used, and select it.
 
-1. In the **Overview** tab of the resource group, select **Delete resource group**.
+1. In the **Overview** tab of the resource group, select **Delete resource group**. A new dialog appears.
 
+<<<<<<< HEAD
 1. This opens a new dialog. Enter the name of the resource group again, and then select **Delete**. This action deletes all of the resources we created in this module.
+=======
+1. Enter the name of the resource group again, and then select **Delete**. All of the resources we created in this module will be deleted.
+>>>>>>> 8daf1a39677eb57b439c140592f2b5e1b416bdc8
 
 ## Learn More
 

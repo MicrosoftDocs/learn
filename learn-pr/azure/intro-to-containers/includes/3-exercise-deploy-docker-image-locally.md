@@ -43,7 +43,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
    docker ps
    ```
 
-   The output should look similar to this:
+   The output should look similar to this.
 
    ```console
    CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
