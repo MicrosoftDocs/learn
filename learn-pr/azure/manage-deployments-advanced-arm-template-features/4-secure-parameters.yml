@@ -2,7 +2,7 @@
 uid: learn.azure.manage-deployments-advanced-arm-template-features.secure-parameters
 title: Manage secrets in your ARM template by reading from Azure Key Vault
 metadata:
-  description: This unit talks about why you should use an Azure Key Vault to store your secrets. Additionally, the unit covers how to integrate the Key Vault for use with the deployment process, using an ARM template. The idea is to read a secret from the Key Vault during deployment and use its value to set password on a resource.
+  description: Why you should use Azure Key Vault to store your secrets. Includes how to integrate the key vault for use with the deployment process, by using an ARM template. You read a secret from the key vault during deployment and use its value to set the password on a resource.
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020

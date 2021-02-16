@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.5-grant-access
 metadata:
-  title: Exercise - Grant access using RBAC and the Azure portal
-  description: Exercise - Grant access using RBAC and the Azure portal
+  title: Exercise - Grant access using Azure RBAC and the Azure portal
+  description: Exercise - Grant access using Azure RBAC and the Azure portal
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Exercise - Grant access using RBAC and the Azure portal
+title: Exercise - Grant access using Azure RBAC and the Azure portal
 labId: 46468
 labModal: true
 durationInMinutes: 8

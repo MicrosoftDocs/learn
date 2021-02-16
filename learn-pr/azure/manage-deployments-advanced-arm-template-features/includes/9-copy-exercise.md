@@ -1,6 +1,6 @@
-In this final exercise, you continue to work with storage accounts. This time, you use copy to provision multiple storage accounts from a single definition.
+In this final exercise, you continue to work with storage accounts. This time, you use the `copy` construct to provision multiple storage accounts from a single definition.
 
-The copy construct gives you a single, central location that you need to update when your requirements change.
+`Copy` gives you a single, central location that you need to update when your requirements change.
 
 ::: zone pivot="powershell"
 

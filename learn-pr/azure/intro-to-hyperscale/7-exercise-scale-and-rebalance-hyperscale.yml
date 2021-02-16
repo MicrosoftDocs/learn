@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hyperscale.7-exercise-scale-and-rebalance-hyperscale
+title: Exercise - Scale and rebalance your database
+metadata:
+  title: Exercise - Scale and rebalance your database
+  description: We connect your app to your database
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-exercise-scale-and-rebalance-hyperscale.md)]

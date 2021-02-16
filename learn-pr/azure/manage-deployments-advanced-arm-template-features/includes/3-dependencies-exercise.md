@@ -2,7 +2,7 @@ In this part, you start by performing a few basic setup tasks. In Visual Studio 
 
 Then, you run a basic ARM template that provisions a Linux virtual machine (VM). After the deployment completes, you verify that the VM is running and connectable.
 
-Although working with VMs is a common task, you discover that a VM resource requires networking and storage components that must exist before the VM can be created. You see how the _dependsOn_ construct enables you to set the order in which resources are provisioned.
+Although working with VMs is a common task, you discover that a VM resource requires networking and storage components that must exist before the VM can be created. You see how the `dependsOn` construct enables you to set the order in which resources are provisioned.
 
 ::: zone pivot="powershell"
 

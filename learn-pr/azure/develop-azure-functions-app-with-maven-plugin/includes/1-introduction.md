@@ -2,6 +2,8 @@ Your company uses Java as its primary development language, and Apache Maven to 
 
 In this module, you'll use a Maven archetype to create a function project. You'll develop and test the function locally, and then you'll deploy the function using the Maven Plugin for Azure Functions. After you've tested your function in the cloud, you'll update your function with custom logging features, and then redeploy it to Azure.
 
+> If you are using Gradle, there is also a similar [Gradle plugin for Azure Functions](https://github.com/microsoft/azure-gradle-plugins).
+
 ## Learning objectives
 
 In this module, you will:

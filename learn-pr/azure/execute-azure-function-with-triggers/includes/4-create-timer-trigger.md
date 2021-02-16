@@ -36,7 +36,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Under **Plan**, for your **Plan type**, select **Consumption (Serverless)**. When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.
 
-1. Select **Review + create**, and then select **Create**. After the function app is deployed, in the Azure portal, go to **All resources**. The function app will be listed with type **App Service** and has the name you gave it. Select it.
+1. Select **Review + create**, and then select **Create**. After the function app is deployed, in the Azure portal, go to **All resources**. The function app will be listed with type **Function App** and has the name you gave it. Select it.
 
 ## Create a timer-triggered function
 
@@ -137,7 +137,7 @@ Now that we've configured the timer, it will invoke the function on the interval
 
 1. In the left nav bar, under **Developer**, select **Code + Test**. The **Code + Test** page appears.
 
-1. Select **Test/Run**. From the left-hand panel, select **Run**. The **Logs** panel appears at the bottom of the page.
+1. Select **Test/Run**. From the right-hand panel, select **Run**. The **Logs** panel appears at the bottom of the page.
 
 1. Observe new messages arrive every 20 seconds in the log window.
 

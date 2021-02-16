@@ -60,13 +60,25 @@ Resource ID         : /subscriptions/xyz/providers/Microsoft.KeyVault/vaults/Vau
 With the name of the vault and the key, you can retrieve the secret value:
 
 ```powershell
-(Get-AzKeyVaultSecret -vaultName "VaultamortDiary" -name "HiddenLocation").SecretValueText
+Get-AzKeyVaultSecret -VaultName 'VaultamortDiary' -Name 'HiddenLocation'
 ```
 
 This returns our set value:
 
 ```output
-Third star on the right
+Vault Name   : vaultamortdiary
+Name         : VaultamortDiary
+Version      : ff4b23af35bf4ba9a5c8792227d00ff6
+Id           : https://vaultamortdiary1972.vault.azure.net:44
+               3/secrets/VaultamortDiary/ff4b23af35bf4ba9
+               a5c8792227d00ff6
+Enabled      : True
+Expires      :
+Not Before   :
+Created      : 12/17/2020 7:54:03 PM
+Updated      : 12/17/2020 7:54:03 PM
+Content Type : text
+Tags         :
 ```
 
 > [!NOTE]

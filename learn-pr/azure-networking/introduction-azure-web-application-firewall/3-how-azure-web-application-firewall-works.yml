@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-web-application-firewall.3-how-azure-web-application-firewall-works
+title: How Azure Web Application Firewall works
+metadata:
+  title: How Azure Web Application Firewall works
+  description: Learn how Azure Web Application Firewall works. In particular, learn about core rule sets and rule groups.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-how-azure-web-application-firewall-works.md)]

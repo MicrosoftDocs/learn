@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.7-knowledge-check-rbac
 metadata:
-  title: Knowledge check - Using RBAC
-  description: Knowledge check - Using RBAC
+  title: Knowledge check - Using Azure RBAC
+  description: Knowledge check - Using Azure RBAC
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Knowledge check - Using RBAC
+title: Knowledge check - Using Azure RBAC
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

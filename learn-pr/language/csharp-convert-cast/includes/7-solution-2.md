@@ -15,7 +15,7 @@ float result3 = value3 / value1;
 Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
 ```
 
-This code is merely "*one possible solution*" because there's likely several ways to solve this challenge.  The proposed solution (above) relies on casting alone, however it's possible you have another approach that works equally well.  Just make sure your result matches the following output:
+This code is merely "*one possible solution*" because there's likely several ways to solve this challenge. The proposed solution (above) relies on casting alone; however, it's possible you have another approach that works equally well. Just make sure your result matches the following output.
 
 ```output
 Divide value1 by value2, display the result as an int: 2
@@ -23,7 +23,7 @@ Divide value2 by value3, display the result as a decimal: 1.44186046511627906976
 Divide value3 by value1, display the result as a float: 0.3583333
 ```
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we describe in other modules will depend on your understanding of the ideas that were presented in this module.

@@ -1,4 +1,4 @@
-Now that we understand the classical problem that we're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's search algorithm and run on a quantum computer.
+Now that you understand the classical problem that you're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's search algorithm and run on a quantum computer.
 
 
 ## How to do computations on a superposition state?
@@ -16,11 +16,11 @@ There are two common ways to encode the effects of computing a function for a su
 
 Let's say that we want to implement a quantum operator $U$ that computes a function $f(x)$, which takes a single bit as an input and produces a single bit as an output. We start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$.
 
-1. We can encode the values $f(0)$ and $f(1)$ in the *relative phases* of basis states $|0\rangle$ and $|1\rangle$, respectively.  
+* We can encode the values $f(0)$ and $f(1)$ in the *relative phases* of basis states $|0\rangle$ and $|1\rangle$, respectively.  
 In this case, applying the operator $U_\textrm{phase}$ converts the state $a_0 |0\rangle + a_1 |1\rangle$ into a state $(-1)^{f(0)} a_0 |0\rangle + (-1)^{f(1)} a_1 |1\rangle$. In other words, the operator $U_\textrm{phase}$ doesn't change the phase of the basis states for which $f(x) = 0$, but multiplies the phase of the basis states for which $f(x) = 1$ by $-1$.  
 The operator $U_\textrm{phase}$ is called a *phase oracle*.
 
-2. Alternatively, we can allocate an extra qubit $y$ and encode the values $f(0)$ and $f(1)$ in the state of that qubit.  
+* Alternatively, we can allocate an extra qubit $y$ and encode the values $f(0)$ and $f(1)$ in the state of that qubit.  
 In this case, we split the joint state of our data qubit and the extra qubit into a linear combination of basis states $a_{00} |0\rangle_x|0\rangle_y + a_{01} |0\rangle_x|1\rangle_y + a_{10} |1\rangle_x|0\rangle_y + a_{11} |1\rangle_x|1\rangle_y$ and apply the operator $U_\textrm{mark}$ to each of the basis states separately. 
 This operator transforms a basis state $|x\rangle|y\rangle$ into $|x\rangle|y \oplus f(x)\rangle$ ($\oplus$ is addition modulo 2). 
 In other words, the operator $U_\textrm{mark}$ doesn't change the basis states for which $f(x) = 0$, and flips the state of the extra qubit for the states for which $f(x) = 1$. 
@@ -33,7 +33,7 @@ The operator $U_\textrm{mark}$ is called a *marking oracle*.
 > Recall that quantum measurements limit the amount of information we can extract from a quantum system, so in both cases, we won't be able to extract all of the function values from such a computation. 
 > We need to construct a clever algorithm that takes advantage of performing the computation in superposition to find the answer.
 
-The best way to represent classical computations in a quantum algorithm depends on the goals. 
+The best way to represent classical computations in a quantum algorithm depends on the goals: 
 
 * Many quantum algorithms call for using the first approach, encoding the classical function values in phases of basis states, since this approach simplifies expressing the algorithm. 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.

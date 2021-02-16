@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.language.go-methods-interfaces
+metadata:
+  title: Use methods and interfaces
+  description: Learn about best practices for writing methods and interfaces in Go.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use methods and interfaces
+summary: Learn about best practices for writing methods and interfaces in Go.
+abstract:  |
+  In this module, you'll learn about:
+  - How Go implements OOP principles such as encapsulation and composition.
+  - How to write methods and why you use them.
+  - How to write embedding and overloading methods.
+  - How to write and use interfaces, and why they differ from interfaces in other programming languages.
+prerequisites: |
+  - A Go environment that's ready to create applications. Ideally, you've installed and configured Go and [Visual Studio Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go).
+  - Ability to create and modify `.go` files.
+  - Ability to run Go applications by using the terminal prompt.
+  - Knowledge of basic data types such as `string`, `int`, and `boolean`.
+  - Knowledge of writing basic data control flows such as `if` and `for` statements.
+  - Knowledge of writing functions.
+  - Knowledge of creating structs. 
+iconUrl: /learn/achievements/go-methods-interfaces.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.language.go-methods-interfaces.0-introduction
+- learn.language.go-methods-interfaces.1-methods
+- learn.language.go-methods-interfaces.2-interfaces
+- learn.language.go-methods-interfaces.3-challenge
+- learn.language.go-methods-interfaces.4-solution
+- learn.language.go-methods-interfaces.5-knowledge-check
+- learn.language.go-methods-interfaces.6-summary
+badge:
+  uid: learn.language.go-methods-interfaces.badge

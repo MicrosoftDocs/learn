@@ -10,11 +10,11 @@ You can start right in the Azure portal and use the **+ Create New Resource** su
 
     ![Screenshot of three DSVM edition options.](../media/2-DSVM-editions.png)
 
-1. Select the **Data Science Virtual Machine – Windows 2016** link.
+1. Select the **Data Science Virtual Machine – Windows 2019** link.
 
 1. On the description screen, select the **Get it now** button.
 
-    ![Screenshot of the Data Science Virtual Machine - Windows 2016 offering in Azure Marketplace.](../media/2-DSVM-windows2016.png)
+    ![Screenshot of the Data Science Virtual Machine - Windows 2019 offering in Azure Marketplace.](../media/2-DSVM-windows2016.png)
 
 1. When you see the **Create this app in Azure** dialog, select **Continue**.
 
@@ -28,17 +28,17 @@ You can start right in the Azure portal and use the **+ Create New Resource** su
     1. Select **All Directories** and make sure **Microsoft Learn Sandbox** is the selected choice.
     1. Verify the directory is changed under your profile picture.
 
-1. The portal should be on the **Data Science Virtual Machine – Windows 2016** screen.
+1. The portal should be on the **Data Science Virtual Machine – Windows 2019** screen.
 
-    ![Screenshot of the Azure portal, Data Science Virtual Machine – Windows 2016.](../media/2-create-DSVM-azure-portal.png)
+    ![Screenshot of the Azure portal, Data Science Virtual Machine – Windows 2019.](../media/2-create-DSVM-azure-portal.png)
 
 1. Select **Create** to begin configuring a virtual machine (VM). Set the appropriate values into each of the fields using the following suggestions.
     - **Subscription**. Verify that _Concierge Subscription_ is selected. If it's not present in the list, make sure you activated the Sandbox and are logged in with the same credentials.
     - **Resource group**. A *resource group* is a container that holds related resources for an Azure solution. Make sure the pre-created Sandbox resource group <rgn>[Sandbox Resource Group Name]</rgn> is selected.
-    - **Virtual Machine name**. Enter a name for the data science server you are creating. For this example, we'll use **Win2016**.
+    - **Virtual Machine name**. Enter a name for the data science server you are creating. For this example, we'll use **Win2019**.
     - **Region**.
         [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-    - **Image**: Do not change this setting, but verify that it says **Data Science Virtual Machine – Windows 2016**.
+    - **Image**: Do not change this setting, but verify that it says **Data Science Virtual Machine – Windows 2019**.
     - **Size**. Normally you would leave this setting alone - you want a lot of CPUs and memory to perform data science tasks. However, for this exercise, change the size to be **DS2_v2 (Standard)**.
     - **User Name**. Enter an administration account ID. You will need this later to access the VM.
     - **Password**. Enter the administration account password. You will need this later as well to access the VM.

@@ -6,14 +6,14 @@ You've already implemented the necessary objects in your Azure subscription. Now
 
 In this unit, you'll build two console applications. The first application places messages into a Service Bus queue and the second retrieves them. The applications are part of a single .NET Core solution.
 
-1. Start by cloning the solution: run the following commands in the Cloud Shell:
+1. Start by cloning the solution. Run the following commands in the Cloud Shell.
 
 ```bash
 cd ~
 git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
 ```
 
-2. Next, change directories into the starter folder and open the Cloud Shell editor.
+1. Next, change directories into the starter folder, and open the Cloud Shell editor.
 
 ```bash
 cd mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -22,17 +22,17 @@ code .
 
 ## Configure a connection string to a Service Bus namespace
 
-In order to access a Service Bus namespace and use a queue, you must configure two pieces of information in your console apps:
+To access a Service Bus namespace and use a queue, you must configure two pieces of information in your console apps:
 
-* The endpoint for your namespace
-* The shared access key for authentication
+* Endpoint for your namespace
+* Shared access key for authentication
 
 Both of these values can be obtained from the Azure portal in the form of a complete connection string.
 
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or even Azure Key Vault to store the connection string.
 
-1. Run the following command in the CloudShell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. Run the following command in the Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \

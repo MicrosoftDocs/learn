@@ -51,15 +51,15 @@ Don't add this code quite yet, but here's an example that loads AngularJS from a
 
 ## How will I build the application?
 
-Here you'll use a basic process. You'll write application code from Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
+Here, you'll use a basic process. You'll write application code from the Cloud Shell and then use SCP, or secure copy protocol, to copy the files to your VM. Then you'll start the Node.js application and see the results in your browser.
 
-In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a revision control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
+In practice, you would typically write and test your web application in a more local environment, such as from your laptop or from a virtual machine you run locally. You might then store your code in a version control system such as Git and use a continuous integration and continuous delivery, or CI/CD, system such as Azure DevOps to test your changes and upload them to your VM. We'll point you to more resources at the end of this module.
 
 ## Create the Books web application
 
 Here you'll create all the code, script, and HTML files that make up your web application. For brevity, we'll highlight the important parts of each file but won't go into complete details.
 
-If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to Cloud Shell.
+If you're still connected to your VM over SSH, run `exit` to leave the SSH session and return to the Cloud Shell.
 
 ```bash
 exit
@@ -69,7 +69,7 @@ You're now back at your Cloud Shell session.
 
 ### Create the files
 
-1. From Cloud Shell, run these commands to create the folders and files for your web application.
+1. From the Cloud Shell, run these commands to create the folders and files for your web application.
 
     ```bash
     cd ~
@@ -387,7 +387,7 @@ The application also requires Express and the body-parser packages. body-parser 
 
 Let's connect to your VM and install the packages you specified in `package.json`.
 
-1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run these commands from Cloud Shell to retrieve it.
+1. Before you connect to your VM, make sure you have your VM's IP address handy. If you don't have it, run these commands from the Cloud Shell to retrieve it.
 
     ```azurecli
     ipaddress=$(az vm show \
@@ -417,6 +417,7 @@ Let's connect to your VM and install the packages you specified in `package.json
 1. Run `npm install` to install the dependent packages.
 
     ```bash
+    sudo apt install npm
     npm install
     ```
 

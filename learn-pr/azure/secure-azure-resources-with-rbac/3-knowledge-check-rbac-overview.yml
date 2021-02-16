@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.3-knowledge-check-rbac-overview
 metadata:
-  title: Knowledge check - What is RBAC?
-  description: Knowledge check - What is RBAC?
+  title: Knowledge check - What is Azure RBAC?
+  description: Knowledge check - What is Azure RBAC?
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Knowledge check - What is RBAC?
+title: Knowledge check - What is Azure RBAC?
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
