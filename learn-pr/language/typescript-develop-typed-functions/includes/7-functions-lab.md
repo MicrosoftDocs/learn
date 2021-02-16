@@ -12,8 +12,8 @@ Convert the functions to TypeScript with strongly typed parameters and return ty
 1. Clone the starting repository by entering the following at the command prompt. 
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-04/m04-start
-   cd <folder name>
+   git clone https://github.com/MicrosoftDocs/mslearn-typescript
+   cd mslearn-typescript/code/module-04/m04-start
    code .
    ```
 
@@ -138,11 +138,10 @@ For an added challenge, take some existing JavaScript that you may have written 
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. 
+View the final version of the code by entering the following at the command prompt. 
 
 ```bash
-git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-04/m04-end
-cd <folder name>
+cd ../m04-end
 code .
 ```
 
