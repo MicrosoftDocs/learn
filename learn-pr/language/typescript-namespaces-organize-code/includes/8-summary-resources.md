@@ -1,13 +1,13 @@
 Now that you have reviewed this module, you should be able to:
 
-- Explain the reasons for using an interface in TypeScript.
-- Declare an interface.
-- Implement an interface.
-- Declare an interface with custom array types.
+- Explain the purpose of namespaces.
+- Implement single-file namespaces.
+- Implement multi-file namespaces.
+- Explain the design considerations for using namespaces and modules.
 
 ## Resources
 
 Use these resources to discover more.
 
-- See the [TypeScript Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html?azure-portal=true) for more information about interfaces.
-
+- See [TypeScript Handbook: Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html?azure-portal=true) for more information about namespaces.
+- See [TypeScript Handbook: Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html?azure-portal=true) to learn more about the differences between namespaces and modules.

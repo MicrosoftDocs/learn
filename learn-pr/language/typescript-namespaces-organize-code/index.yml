@@ -1,25 +1,24 @@
 ### YamlMime:Module
 uid: learn.language.typescript-namespaces-organize-code
 metadata:
-  title: 'Implement interfaces in TypeScript'
-  description: Learn how to use interfaces to define object types.
+  title: 'Organize code using TypeScript namespaces'
+  description: Learn how to use TypeScript namespaces' to organize code.
   ms.date: 02/11/2021
   author: GeekTrainer
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Implement interfaces in TypeScript'
-summary: JavaScript doesn't support interfaces so, as a JavaScript developer, you may or may not have experience with them. In TypeScript, you can use interfaces as you would in traditional object-oriented programming. You can also use interfaces to define object types and this is the primary focus of this module.
+title: 'Organize code using TypeScript namespaces'
+summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
 abstract:  | 
   In this module, you will learn how to:
-  - Explain the reasons for using an interface in TypeScript.
-  - Declare and instantiate an interface.
-  - Extend an interface.
-  - Declare an interface with custom array types.
+  - Explain the purpose of namespaces.
+  - Implement single-file namespaces.
+  - Implement multi-file namespaces.
+  - Explain the design considerations for using namespaces and modules.
 prerequisites: |
   - Knowledge of TypeScript
   - Familiarity with JavaScript
-  - Familiarity with functions and arrays in JavaScript
   - Installed software:
     - [Git](https://git-scm.com/?azure-portal=true)
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
@@ -29,18 +28,18 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- developer
 - student
+- developer
 products:
 - azure
 - vs-code
 units:
 - learn.language.typescript-namespaces-organize-code.1-introduction
-- learn.language.typescript-namespaces-organize-code.2-interfaces-typescript
-- learn.language.typescript-namespaces-organize-code.3-declare-instantiate-interface
-- learn.language.typescript-namespaces-organize-code.4-extend-interface
-- learn.language.typescript-namespaces-organize-code.5-use-interfaces
-- learn.language.typescript-namespaces-organize-code.6-interfaces-lab
+- learn.language.typescript-namespaces-organize-code.2-organize-code-namespaces
+- learn.language.typescript-namespaces-organize-code.3-exercise-single-file-namespace
+- learn.language.typescript-namespaces-organize-code.4-multi-file-namespaces
+- learn.language.typescript-namespaces-organize-code.5-design-considerations
+- learn.language.typescript-namespaces-organize-code.6-lab
 - learn.language.typescript-namespaces-organize-code.7-knowledge-check
 - learn.language.typescript-namespaces-organize-code.8-summary-resources
 badge:
