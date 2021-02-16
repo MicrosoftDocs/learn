@@ -78,7 +78,7 @@ To opt out of App Transport Security, add a new key to your **Info.plist** file 
 <dict>
    <key>NSExceptionDomains</key>
       <dict>
-      <key>xam150.azurewebsites.net</key>
+      <key>dotnet.microsoft.com</key>
       <dict>
          <!-- specific options here -->
       </dict>
@@ -86,7 +86,7 @@ To opt out of App Transport Security, add a new key to your **Info.plist** file 
 </dict>
 ```
 
-In this example, we added an exception to the endpoint at `xam150.azurewebsites.net`. If you are debugging a service locally on your development machine you can opt-out for local traffic with the `NSAllowsLocalNetworking` key.
+In this example, we added an exception to the endpoint at `dotnet.microsoft.com`. If you are debugging a service locally on your development machine you can opt-out for local traffic with the `NSAllowsLocalNetworking` key.
 
 ```xml
 <key>NSAppTransportSecurity</key>    
