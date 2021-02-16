@@ -102,4 +102,4 @@ You can download the completed Visual Studio Code workspace from the [GitHub cod
 - Node Package Manager (npm)
 - TypeScript Compiler (tsc)
 
-For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in this module. After setting up your environment, you can run any of the Lab setup or solution files in the [Build JavaScript applications by using TypeScript](../../../paths/build-javascript-applications-typescript/index.yml) learning path.
+For best results, follow the complete instructions for setting up your environment and using the TypeScript compiler in this module. After setting up your environment, you can run any of the Lab setup or solution files in the [Build JavaScript applications by using TypeScript](/learn/paths/build-javascript-applications-typescript/) learning path.
