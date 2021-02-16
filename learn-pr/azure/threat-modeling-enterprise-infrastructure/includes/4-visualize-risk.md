@@ -49,20 +49,162 @@ Now, let's enumerate all the processes, data stores, external entities, data-flo
 
 |Element|Component|
 |-------|---------|
-|![Process](../media/process50.png)</br>Process|<ul><li>O365</li><li>Open-source bug management service</li><li>SaaS offerings (grouped)</li><li>GitHub</li><li>Machine</li><li>Firewall service</li><li>VPN service</li><li>NAS file share service</li><li>Logging and monitoring service</li><li>NAS backup service</li><li>SQL server</li><li>Build servers (grouped)</li><li>Active directory service</li><li>Removable drive backup service</li><li>Azure Iaas</li></ul>|
-|![Data Store](../media/data-store50.png)</br>Data store|<ul><li>Credentials and tokens VPN store</li><li>NAS store</li><li>Logging and monitoring store</li><li>Active directory store</li><li>Removable drive store</li></ul>|
-|![External Entity](../media/external-entity50.png)</br>External entity|<ul><li>User</li></ul>|
-|![Data-flow](../media/data-flow50.png)</br>Data-flow|<ul><li>Request and responses between element connections</li></ul>|
-|![Trust Boundary Box](../media/trust-boundary-box50.png)</br>![Trust Boundary Line](../media/trust-boundary-line50.png)</br>Trust boundary|<ul><li>Woodgrove Corporate Boundary</li><li>Azure IaaS Boundary</li></ul>|
+|![Process](../media/process25.png)</br>Process|<ul><li>O365</li><li>Open-source bug management service</li><li>SaaS offerings (grouped)</li><li>GitHub</li><li>Machine</li><li>Firewall service</li><li>VPN service</li><li>NAS file share service</li><li>Logging and monitoring service</li><li>NAS backup service</li><li>SQL server</li><li>Build servers (grouped)</li><li>Active directory service</li><li>Removable drive backup service</li><li>Azure Iaas</li></ul>|
+|![Data Store](../media/data-store25.png)</br>Data store|<ul><li>Credentials and tokens VPN store</li><li>NAS store</li><li>Logging and monitoring store</li><li>Active directory store</li><li>Removable drive store</li></ul>|
+|![External Entity](../media/external-entity25.png)</br>External entity|<ul><li>User</li></ul>|
+|![Data-flow](../media/data-flow25.png)</br>Data-flow|<ul><li>Request and responses between element connections</li></ul>|
+|![Trust Boundary Box](../media/trust-boundary-box25.png)</br>![Trust Boundary Line](../media/trust-boundary-line25.png)</br>Trust boundary|<ul><li>Woodgrove Corporate Boundary</li><li>Azure IaaS Boundary</li></ul>|
 
 ### Connected elements
 
-Once the elements are fleshed out, it's time to create the connections. Here's a preliminary list:
+Once the elements are fleshed out, it's time to create the flows between them. Here's the list:
 
-|Source|Destination|Flow|
-|------|-----------|----|
-|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>O365|<ul><li>Authentication tokens</li><li>Requests and responses</li></ul>|
-|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>Bug management service||
-|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>SaaS offerings (grouped)||
-|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>GitHub||
-|![External Entity](../media/external-entity25.png)</br>User|![Process](../media/process25.png)</br>Machine||
+#### User interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![External Entity](../media/external-entity25.png)</br>User|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>O365||<ul><li>Authentication tokens</li><li>Data requests and responses</li></ul>|
+|![External Entity](../media/external-entity25.png)</br>User|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Bug management service|||
+|![External Entity](../media/external-entity25.png)</br>User|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>SaaS offerings (grouped)|||
+|![External Entity](../media/external-entity25.png)</br>User|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>GitHub|||
+|![External Entity](../media/external-entity25.png)</br>User|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Machine|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/user-tm-screenshot.PNG" alt-text="User interactions in data-flow diagram":::
+
+#### Machine and Github service interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>GitHub|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![External entity](../media/external-entity25.png)</br>User|||
+|![Process](../media/process25.png)</br>GitHub|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Firewall service|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Internet - Corporate</li></ul>|
+|![Process](../media/process25.png)</br>Machine|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![External entity](../media/external-entity25.png)</br>User||
+|![Process](../media/process25.png)</br>Machine|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Firewall service|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Internet - Corporate</li></ul>|
+|![Process](../media/process25.png)</br>Machine|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Active Directory service|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Internet - Corporate</li></ul>|
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/machine-github-tm-screenshot.PNG" alt-text="Machine and Github interactions in data-flow diagram":::
+
+#### Firewall Service interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Machine|![Checkmark](../media/check25.png)||
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>GitHub|![Checkmark](../media/check25.png)||
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>VPN service|||
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Build servers (grouped)|||
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Logging and monitoring service|||
+|![Process](../media/process25.png)</br>Firewall service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Azure IaaS|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Corporate - Azure</li></ul>|
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/firewall-tm-screenshot.PNG" alt-text="Firewall interactions in data-flow diagram":::
+
+#### VPN interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>VPN service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/data-store25.png)</br>Firewall service|||
+|![Process](../media/process25.png)</br>VPN service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Credentials and tokens VPN store|||
+|![Process](../media/process25.png)</br>VPN service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS file share service|||
+|![Process](../media/process25.png)</br>VPN service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>SQL server|||
+|![Data store](../media/data-store25.png)</br>Credentials and tokens VPN store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>VPN service|||
+|![Data store](../media/data-store25.png)</br>Credentials and tokens VPN store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/vpn-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### NAS interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>NAS file share service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/data-store25.png)</br>VPN service|||
+|![Process](../media/process25.png)</br>NAS file share service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>NAS store|||
+|![Data store](../media/data-store25.png)</br>NAS store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS file share service|||
+|![Data store](../media/data-store25.png)</br>NAS store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>NAS store|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Credentials and tokens VPN store|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Active Directory store|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Logging and monitoring store|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>SQL server|||
+|![Process](../media/process25.png)</br>NAS backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Build servers (grouped)|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/nas-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### Server interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>SQL server|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Removable drive backup service|||
+|![Process](../media/process25.png)</br>SQL server|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+|![Process](../media/process25.png)</br>SQL server|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>VPN service|||
+|![Process](../media/process25.png)</br>Build servers (grouped)|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Removable drive backup service|||
+|![Process](../media/process25.png)</br>Build servers (grouped)|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+|![Process](../media/process25.png)</br>Build servers (grouped)|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Firewall service|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/servers-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### Logging and monitoring interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>Logging and monitoring service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Firewall service|||
+|![Process](../media/process25.png)</br>Logging and monitoring service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Logging and monitoring store|||
+|![Process](../media/data-store25.png)</br>Logging and monitoring store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+|![Process](../media/data-store25.png)</br>Logging and monitoring store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Logging and monitoring service|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/logging-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### Active Directory interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Data store](../media/data-store25.png)</br>Active directory store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Active directory service|||
+|![Data store](../media/data-store25.png)</br>Active directory store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>NAS backup service|||
+|![Process](../media/process25.png)</br>Active directory service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Removable drive backup service|||
+|![Process](../media/process25.png)</br>Active directory service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Machine|||
+|![Process](../media/process25.png)</br>Active directory service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Active Directory store|||
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/ad-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### Removable drive interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>Removable drive backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Data store](../media/data-store25.png)</br>Removable drive store|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Corporate - Internet</li></ul>|
+|![Process](../media/process25.png)</br>Removable drive backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>SQL server||<ul><li><strong>Boundary:</strong> Corporate - Internet</li></ul>|
+|![Process](../media/process25.png)</br>Removable drive backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Build servers (grouped)||<ul><li><strong>Boundary:</strong> Corporate - Internet</li></ul>|
+|![Process](../media/process25.png)</br>Removable drive backup service|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Active directory service||<ul><li><strong>Boundary:</strong> Corporate - Internet</li></ul>|
+|![Data store](../media/data-store25.png)</br>Removable drive store|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Removable drive backup service|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Corporate - Internet</li></ul>|
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/removable-drive-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+#### Azure interactions
+
+|Element one|Data-flow direction|Element two|Crosses boundary|Details|
+|-----------|-------------------|-----------|----------------|-------|
+|![Process](../media/process25.png)</br>Azure IaaS|![Bi-directional Flow](../media/biflow25.png)</br>Bi-directional|![Process](../media/process25.png)</br>Firewall service|![Checkmark](../media/check25.png)|<ul><li><strong>Boundary:</strong> Corporate - Azure</li></ul>|
+
+Here's an example of what the interactions would look like:
+
+:::image type="content" source="../media/azure-tm-screenshot.PNG" alt-text="VPN interactions in data-flow diagram":::
+
+### Finished diagram
+
+Here's what the finished data-flow diagram looks like:
+
+:::image type="content" source="../media/infra-tm.PNG" alt-text="VPN interactions in data-flow diagram":::
+
