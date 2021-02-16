@@ -6,7 +6,7 @@ In this lab, you'll write the JavaScript in each of the exercises below in TypeS
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-typescript
-    cd code/module-02/m02-start
+    cd mslearn-typescript/code/module-02/m02-start
     code .
     ```
 
