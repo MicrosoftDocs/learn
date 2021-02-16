@@ -62,10 +62,10 @@ To validate your setup, make a new Blazor WebAssembly client web app that uses t
 
 1. At the command prompt, enter **dotnet run** to run the app.
 
-1. In a web browser, go to https://localhost:5001.
+1. In a web browser, go to https://localhost:5000.
 
     ![Screenshot showing the default Blazor WebAssembly client app running in a browser](../media/hello-blazor.png)
 
-1. Return to the terminal in Visual Studio code and select Ctrl+C to stop the app.
+1. Return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
 
 You'll use this Blazor app in the following exercises.
