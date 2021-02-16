@@ -16,7 +16,7 @@ To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: t
 
 1. Open Visual Studio Code on your local machine.
 
-1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. Search for "C# for Visual Studio Code".
 
@@ -26,7 +26,7 @@ To develop Blazor WebAssembly apps, install two Visual Studio Code extensions: t
 
 The JavaScript debugger extension is currently in preview. Here you'll install the latest build.
 
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. Search for "JavaScript debugger".
 
@@ -34,7 +34,7 @@ The JavaScript debugger extension is currently in preview. Here you'll install t
 
 ### Configure the JavaScript debugger extension
 
-1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select Ctrl+Shift+X.
+1. Open the extensions browser in Visual Studio Code by selecting the **Extensions** symbol on the leftmost pane. Or in Windows, select <kbd>Ctrl+Shift+X</kbd>.
 
 1. From the list of enabled extensions, select **JavaScript Debugger (Nightly)**.
 
