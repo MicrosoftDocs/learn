@@ -53,7 +53,7 @@ We will start with an empty directory, and install the necessary components usin
     npm install react react-dom
     ```
 
-    > ![NOTE]
+    > [!NOTE]
     > You will notice Snowpack is a "dev dependency", meaning it's not required for production. Snowpack generates the necessary JavaScript and HTML files during the build process. As a result, it's not needed for production.
 
 1. Open the directory in Visual Studio Code by executing the following command
@@ -85,5 +85,5 @@ This tells Snowpack to use our **public** folder as the root of the application.
 
 To support our development work we will use two scripts with Snowpack. The first will launch the dev server, which will automatically refresh our page whenever we make a change to our application. The second will be used when we're ready to build all our files for deployment.
 
-1. Open **package.json** in Visual Studio Code
-1. Locate the second to last `}` at the bottom of **package.json** (this should be line 12)
+1. Open **package.json** in Visual Studio Code.
+1. Locate the second to last `}` at the bottom of **package.json** (this should be line 12).

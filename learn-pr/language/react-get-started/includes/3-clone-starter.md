@@ -6,12 +6,12 @@ We'll use a starter project to allow us to get to writing code as quickly as pos
 
     ```bash
     # Linux or macOS
-    git clone https://github.com/geektrainer/learn-react
-    cd learn-react/0-starter
+    git clone https://github.com/MicrosoftDocs/mslearn-react
+    cd mslearn-react/code/0-starter
 
     # Windows
-    git clone https://github.com/geektrainer/learn-react
-    cd learn-react\\0-starter
+    git clone https://github.com/MicrosoftDocs/mslearn-react
+    cd mslearn-react\code\0-starter
     ```
 
 1. Install the required packages by using the following command in the same terminal or command window:

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.react-get-started.3-clone-starter
 metadata:
-  title: Clone the repository and explore the starter package
-  description: Use a starter project to get familiar with React.
+  title: Create a starter project
+  description: Clone the repository and explore the starter package.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
-title: Clone the repository and explore the starter package
+title: Create a starter project
 durationInMinutes: 3
 content: |
   [!include[](includes/3-clone-starter.md)]
