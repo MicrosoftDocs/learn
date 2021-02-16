@@ -118,11 +118,10 @@ For an added challenge, take some existing JavaScript that you may have written 
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. 
+View the final version of the code by entering the following at the command prompt. 
 
 ```bash
-git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-02/m02-end
-cd <folder name>
+cd ../m02-end
 code .
 ```
 
