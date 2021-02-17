@@ -3,13 +3,14 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.create-bot
 title: Exercise - Create a bot
 metadata:
   title: Exercise - Create a bot
-  description: "Get hands-on and create a bot."
-  ms.date: 09/13/2020
+  description: "Exercise - Create a bot"
+  ms.date: 02/15/2021
   author: benjiang
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88768
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-bot.md)]
