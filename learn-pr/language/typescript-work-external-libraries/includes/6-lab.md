@@ -25,8 +25,8 @@ Add the required code to define the relationships between the modules.
 1. Clone the starting repository by entering the following at the command prompt.
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/m07-start
-   cd <folder name>
+   git clone https://github.com/MicrosoftDocs/mslearn-typescript
+   cd mslearn-typescript/code/module-07/m07-start
    code .
    ```
 
