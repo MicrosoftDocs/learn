@@ -8,7 +8,7 @@ To create our Spring Boot project, we'll use [Spring Initializr](https://start.s
 curl https://start.spring.io/starter.tgz -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
-## Add code to send data to Azure Service Bus queue
+## Send messages to an Azure Service Bus queue
 
 ### Add the maven dependency for Azure Service Bus Spring Boot Starter
 
