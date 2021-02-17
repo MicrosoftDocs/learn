@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-work-with-components-and-data.8-challenge
+uid: learn.language.react-work-with-components-and-data.7-challenge
 metadata:
   title: Challenge
-  description: Description #TODO
+  description: Add a new component to test your understanding of props and map.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
@@ -11,4 +11,4 @@ metadata:
 title: Challenge
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-challenge.md)]
+  [!include[](includes/7-challenge.md)]
