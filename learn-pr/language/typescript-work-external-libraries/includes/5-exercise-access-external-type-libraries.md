@@ -92,7 +92,7 @@ This exercise provides an example of using **dotenv**. See [dotenv](https://www.
 To see the solution to this exercise, clone the repository by entering the following at the command prompt.
 
 ```bash
-git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/module07-exercise-02-end
-cd <folder name>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript
+cd mslearn-typescript/code/module-07/module07-exercise-02-end
 code .
 ```
