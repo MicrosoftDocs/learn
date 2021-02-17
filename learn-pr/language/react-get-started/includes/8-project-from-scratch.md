@@ -1,4 +1,8 @@
-Just as there are numerous bundlers available, there are numerous ways to create a React project. You can use a templating tool to generate starter code and files automatically for you. From a learning perspective, it's often best to start from scratch so you can see the different parts. This knowledge allows you to confidently make changes as needed in the future.
+In this module we used a starter project to get up and running quickly, allowing us to focus on React and some of the new syntax. You are of course free to use the starter project for your own work!
+
+Of course, you might want to build a project completely from scratch. If you want to explore how you could start from an empty folder we have provided these steps. We use Snowpack, just as we did in the starter. This provides you with the steps we performed when we built the starter.
+
+This unit is completely optional, and here for informational purposes.
 
 ## Initial project structure
 
@@ -24,7 +28,7 @@ We need three key packages for our application:
 - **React**, which will be used to create our components
 - **ReactDOM**, which will be used to mount our application
 
-## Creating the initial structure
+## Create the initial structure
 
 We will start with an empty directory, and install the necessary components using `npm`. We will then configure Snowpack, and add the scripts to **package.json**.
 
@@ -37,7 +41,6 @@ We will start with an empty directory, and install the necessary components usin
     md public
     touch package.json
     echo "{}" > package.json
-
     # Linux or macOS
     mkdir react-recipes && cd react-recipes
     mkdir src
@@ -62,7 +65,7 @@ We will start with an empty directory, and install the necessary components usin
     code .
     ```
 
-## Configuring Snowpack
+## Configure Snowpack
 
 One of the great advantages of using a tool like Snowpack is it's generally self-configuring. However, we do need to indicate the folder structure we will be using for our code. We do this by setting options in a file named **snowpack.config.json**.
 

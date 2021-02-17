@@ -2,7 +2,7 @@
 uid: learn.language.react-get-started.4-hello-world-test
 metadata:
   title: Hello world!
-  description: Use React to display 'Hello world'.
+  description: Tradition says all introduction courses should start with Hello, World. We will follow the tradition, and create an application to display Hello, World on the page.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar

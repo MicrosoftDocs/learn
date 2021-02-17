@@ -37,7 +37,8 @@ units:
 - learn.language.react-get-started.5-create-first-component
 - learn.language.react-get-started.6-dynamic-data-exercise
 - learn.language.react-get-started.7-add-style
-- learn.language.react-get-started.8-knowledge-check
-- learn.language.react-get-started.9-summary
+- learn.language.react-get-started.8-project-from-scratch
+- learn.language.react-get-started.9-knowledge-check
+- learn.language.react-get-started.10-summary
 badge:
   uid: learn.language.react-get-started.badge

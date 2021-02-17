@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.8-project-from-scratch
+metadata:
+  title: Create a React project from scratch
+  description: While you can use templating tools to create React projects for you, you may want to build it from scratch. In this unit we will see how you can start with an empty folder and create a React application.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Create a React project from scratch
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-project-from-scratch.md)]

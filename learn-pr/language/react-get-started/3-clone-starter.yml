@@ -2,7 +2,7 @@
 uid: learn.language.react-get-started.3-clone-starter
 metadata:
   title: Create a starter project
-  description: Clone the repository and explore the starter package.
+  description: We will use a starter project to create our first application. This will allow us to focus on React rather than the process of the initial setup.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
