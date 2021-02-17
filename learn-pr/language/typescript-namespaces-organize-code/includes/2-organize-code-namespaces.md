@@ -4,7 +4,7 @@ When code is inside a namespace, it is pulled from the global scope and into the
 
 For example, `namespace A` and `namespace B` both share a function called `functionName`. Any attempt to access the function without referencing the containing namespace results in an error because the variable declarations are in the global namespace, while the two functions are contained within the scope of their respective namespaces.
 
-![Two namespace declarations, A and B, each have a function called functionName, but are they are removed from the global namespace of namespaces.ts so there are no name conflicts.](../media/namespaces.png)
+:::image type="content" source="../media/namespaces.png" alt-text="Two namespace declarations, A and B, each have a function called functionName, but are they are removed from the global namespace of namespaces.ts so there are no name conflicts":::
 
 You can use namespaces to:
 

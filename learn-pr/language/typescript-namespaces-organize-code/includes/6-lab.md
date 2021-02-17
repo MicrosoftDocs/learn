@@ -18,11 +18,11 @@ The `calculateInterestOnlyLoanPayment` and `calculateConventionalLoanPayment` fu
 
 In this exercise, you'll organize the code using namespaces in a single TypeScript file.
 
-1. Clone the starting repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-08\m08-start] 
+1. Clone the starting repository by entering the following at the command prompt.
 
    ```bash
-   git clone <url>
-   cd <folder name>
+   git clone https://github.com/MicrosoftDocs/mslearn-typescript
+   cd mslearn-typescript/code/module-08/m08-start
    code .
    ```
 
@@ -140,11 +140,11 @@ In this exercise, you'll reorganize the namespaces into multiple TypeScript file
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt. [REPLACE THE URL PLACEHOLDER WITH A LINK TO \code\module-08\m08-end] 
+Clone the ending repository by entering the following at the command prompt.
 
 ```bash
-git clone <url>
-cd <folder name>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript
+cd mslearn-typescript/code/module-08/m08-end
 code .
 ```
 

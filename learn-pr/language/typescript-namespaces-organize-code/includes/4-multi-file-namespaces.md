@@ -6,7 +6,7 @@ You can extend namespaces by sharing them across multiple TypeScript files. When
 
 To inform TypeScript of the relationship between **interfaces.ts** and **functions.ts**, you add a `reference` to **interfaces.ts** using the triple slash (`///`) syntax to the top of **functions.ts**. And then in **main.ts**, which has a relationship with both **interfaces.ts** and **functions.ts**, you add a `reference` to both files.
 
-![Two files that use namespaces are able to describe the relationship using reference statements. The file functions.ts has a relationship with interfaces.ts and main.ts has a relationship with interfaces.ts and functions.ts.](../media/multi-file-namespaces.png)
+:::image type="content" source="../media/multi-file-namespaces.png" alt-text="Two files that use namespaces are able to describe the relationship using reference statements. The file functions.ts has a relationship with interfaces.ts and main.ts has a relationship with interfaces.ts and functions.ts.":::
 
 When there is a reference to more than one file, start with the highest-level namespace and then work your way down. TypeScript will use this order when compiling the files.
 
