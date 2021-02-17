@@ -37,5 +37,12 @@ products:
 - vs-code
 modules:
 - learn.language.typescript-get-started
+- learn.language.typescript-declare-variable-types
+- learn.language.typescript-implement-interfaces
+- learn.language.typescript-develop-typed-functions
+- learn.language.typescript-declare-instantiate-classes
+- learn.language.typescript-generics
+- learn.language.typescript-work-external-libraries
+
 trophy:
   uid: learn.language.typescript-get-started.trophy
