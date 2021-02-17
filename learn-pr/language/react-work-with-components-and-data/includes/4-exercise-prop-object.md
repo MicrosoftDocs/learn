@@ -79,4 +79,4 @@ We will update `RecipeTitle` to set the `feedback` attribute.
 
 Save all files. The browser should automatically refresh with the updated display.
 
-![Screenshot of the recipe display](media/reviews.png)
+![Screenshot of the recipe display](../media/reviews.png)

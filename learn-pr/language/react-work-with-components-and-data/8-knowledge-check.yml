@@ -29,17 +29,22 @@ quiz:
     - content: Reverse
       isCorrect: false
       explanation: Reverse reverses the contents of an array, but does not provide the ability to generate JSX
-  - content: What package is typically used to create a React application?
+  - content: How do you access `props` in a function-based React component?
     choices:
-    - content: generate-cool-app
+    - content: "`this.props`"
       isCorrect: false
-      explanation: generate-cool-app is not used to create React applications.
-    - content: create-react-app
+      explanation: "`this` is not mapped to the component in a component function."
+    - content: "`this`"
+      isCorrect: false
+      explanation: "`this` is not mapped to the component in a component function."
+    - content: Add a parameter to the function.
       isCorrect: true
-      explanation: create-react-app is used to create React applications.
-    - content: go-react
+      explanation: Adding a parameter to a function-based component is how you add properties.
+  - content: "`?` can be used as a shorthand for creating `if...else` statements."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "`?` is the ternary operator and is used for this purpose."
+    - content: "False"
       isCorrect: false
-      explanation: go-react is not used to create React applications.
-    - content: start-react
-      isCorrect: false
-      explanation: start-react is not used to create React applications.
+      explanation: "`?` is the ternary operator and is used for this purpose."

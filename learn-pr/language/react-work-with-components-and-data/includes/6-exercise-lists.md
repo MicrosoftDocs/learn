@@ -77,4 +77,4 @@ Let's display our list of ingredients!
 
 Save all the files. The browser will automatically update and display the new updates. Notice the list of ingredients, with the last two items shown as prepared with a line through them.
 
-![Screenshot of list of ingredients](media/ingredients.png)
+![Screenshot of list of ingredients](../media/ingredients.png)

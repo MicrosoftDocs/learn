@@ -2,7 +2,7 @@
 uid: learn.language.react-work-with-components-and-data.1-introduction
 metadata:
   title: Introduction
-  description: Learn what you'll need to start using React components.
+  description: Components allow you to create reusable entities. We can make these more dynamic by adding logic and data.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
