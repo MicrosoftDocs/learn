@@ -24,7 +24,7 @@ Some MRTK prefabs and assets require TextMesh Pro. TextMesh Pro is Unity's defau
 
 ## MRTK Unity Foundation Package
 
-MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found on the MRTK Releases page. The **Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage** is the only **required** package that must be downloaded, imported and configured to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found in the Mixed Reality Feature Tool. The **Mixed Reality Toolkit Foundation** package is the only **required** package that must be imported and configured to use MRTK with your project. This package includes the core components required to create a mixed reality application.
 
 After MRTK is added to the scene and configured, two new objects are added to the Scene hierarchy window:
 
@@ -34,6 +34,9 @@ After MRTK is added to the scene and configured, two new objects are added to th
 The **MixedRealityToolkit** object contains the toolkit itself. The **MixedRealityPlayspace** object ensures the headset/controllers and other required systems are managed correctly in the scene.
 
 The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** object. This allows the playspace to manage the camera simultaneously with the SDKs.
+
+> [!NOTE]
+> The Mixed Reality Feature Tool enables developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. If you've never worked with a manifest file before, it's a JSON file containing all your projects packages. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
 
 ## Configuration Profile
 
