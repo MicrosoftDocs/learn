@@ -10,11 +10,15 @@ Azure Advisor is a free service built into Azure that provides best practice rec
 
 The Azure Well-Architected Framework is a set of guiding principles that can be used to improve the quality of a workload. The framework consists of these five pillars of architecture excellence:
 
+:::image type="content" source="../media/well-architected-framework-pillars.svg" alt-text="Diagram showing the five pillars - cost optimization, operational excellence, performance efficiency, reliability, and security." border="false":::
+
+<!--
 - Cost Optimization
 - Operational Excellence
 - Performance Efficiency
 - Reliability
 - Security
+-->
 
 Advisor continuously analyzes your resources and cloud usage and then recommends solutions that can help you improve your workloads against these five pillars.
 

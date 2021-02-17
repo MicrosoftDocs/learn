@@ -47,6 +47,8 @@ You can track your progress over time by seeing how much your overall score and 
 
 You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score.
 
+:::image type="content" source="../media/advisor-score-workflow.png" alt-text="Diagram showing the 4 steps of the Azure Advisor Score workflow - check, analyze, review, apply." border="false":::
+
 Once you set a target goal for your overall Advisor Score, you can:
 
 - Check in to your Advisor Score dashboard to see if your target goal is being met
