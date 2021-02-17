@@ -81,7 +81,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 ## Verify the contents of the registry
 
-For the rest of the exercise, you'll return to the Azure portal running in the sandbox.
+For the rest of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 

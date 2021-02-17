@@ -134,109 +134,152 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 Now, to set up Network Watcher in the same region as the infrastructure, let's use the Azure CLI.
 
-To enable Network Watcher, run this command.
+To enable Network Watcher, run this command. Replace (match) `<location>` with the Azure region you created your resource group.
 
 ```azurecli
 az network watcher configure \
-    --locations "" (*Match the creation of the resource group*) \
+    --locations <location> \
     --enabled true \
     --resource-group $RG
 ```
 
-
 ## Use Network Watcher to show the topology
 
-Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
+Now, you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS between the two VMs. First, investigate the network topology.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All services**. Then, search for **Network Watcher**. The **Network Watcher** page appears.
+1. On the Azure portal menu, select **All services**. Then, search for **Network Watcher**. The **Network Watcher** panel appears.
 
-1. In the left nav bar, in the **Monitoring** section, select **Topology**.
+1. In the left nav bar, in the **Monitoring** section, select **Topology**. The **Network Watcher | Topology** panel appears.
 
-1. In the dropdowns, select the **Subscription** and **Resource Group**. Network Watcher displays your network topology:
+1. In the dropdowns, select your **Subscription** and **Resource Group** for this exercise. Network Watcher displays your network topology.
 
     [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
 ## Use Connection Monitor to run tests from the back end to the front end
 
-The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating two tests from the back end VM to the front end VM:
+The topology appears to be correct. To get more information, let's set up some tests in Connection Monitor. Start by creating a test from the back-end VM to the front-end VM.
 
-1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Create**. The **Create Connection Monitor** page appears.
+1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** panel appears.
 
-1. Configure Connection Monitor with these values, and then select **Add**.
+1. From the top menu bar, select **Create**. The **Create Connection Monitor** page appears.
 
-    | Setting | Value |
-    | --- | --- |
-    | Name | Back-to-front-RDP-test |
-    | Subscription | Select your subscription |
-    | Virtual machine | BackendVM |
-    | Destination virtual machine | FrontendVM |
-    | Port | 3389 |
-    | Probing interval (seconds) | 30 |
-    | | |
-
-    ![Back-to-front RDP test](../media/3-back-to-front-rdp-test.png)
-
-1. Select **+ Add**. Configure a second test with these values, and then select **Add**.
+1. On the **Basics** tab, fill in the following values.
 
     | Setting | Value |
     | --- | --- |
-    | Name | Back-to-front-HTTP-test |
-    | Subscription | Select your subscription |
-    | Virtual machine | BackendVM |
-    | Destination virtual machine | FrontendVM |
-    | Port | 80 |
-    | Probing interval (seconds) | 30 |
-    | | |
+    | Connection Monitor Name | Back-to-front-HTTP-test |
+    | Subscription | From the dropdown, select your subscription |
+    | Region | Select the Azure region you deployed your resources in |
 
-1. In the list of tests, select **Back-to-front-RDP-test**, select the ellipsis (**...**), and then select **Start**.
+1. Select **Next : Test groups**. The **Add test group details** panel appears.
 
-1. Examine the results.
+1. Fill in the following values.
 
-1. In the list of tests, select **Back-to-front-HTTP-test**, select **...**, and then select **Start**.
+    | Setting | Value |
+    | --- | --- |
+    | Test group name | Back-to-front-HTTP-test-group |
+    | Sources box | Select **Add sources** |
 
-1. Examine the results.
+1. The **Add Sources** panel appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
 
-The results should show that, because the NSG is associated to the back-end subnet, traffic flows without issues from the back-end VM to the front-end VM.
+1. At the bottom of the panel, expand **Selected sources (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
+
+1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
+
+1. Select **BackendVM** from the expanded Azure endpoint list.
+
+1. Select **Add endpoints**. The **Add test group details** panel reappears with the BackendSubnet identified as your source.
+
+1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** panel appears.
+
+1. On the **New configuration** tab, fill in the following values.
+
+    | Setting | Value |
+    | --- | --- |
+    | Test configuration name | Back-to-front-HTTP-test-configuration |
+    | Protocol | HTTP |
+    | Destination port | 80 |
+    | Test Frequency | Every 30 seconds |
+    | *Maintain the default values for the remaining settings* |
+
+1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
+
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** panel appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+
+1. At the bottom of the panel, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
+
+1. Select **FrontendVM** from the expanded Azure endpoint list.
+
+1. Select **Add endpoints**. The **Add test group details** reappears with your with the FrontendSubnet identified as your destination.
+
+1. At the bottom of the panel, select **Add Test Group**. The **Create Connection Monitor** panel reappears.
+
+1. On the **Test groups** tab, notice that your test group is now listed.
+
+The results should show that, because the NSG is associated with the back-end subnet, traffic flows without issues from the back-end VM to the front-end VM.
 
 ## Use Connection Monitor to run tests from the front end to the back end
 
-Run the same tests in the opposite direction.
+Run the same test in the opposite direction. Let's set up a test in Connection Monitor. Start by creating a test from the front-end VM to the back-end VM.
 
-1. Under **Monitoring**, select **Connection monitor**, and then select **+ Add**.
+1. Under **Monitoring**, select **Connection monitor**. The **Network Watcher | Connection monitor** panel appears.
 
-1. Configure Connection Monitor with these values, and then select **Add**.
+1. From the top menu bar, select **Create**. The **Create Connection Monitor** page appears.
 
-    | Setting | Value |
-    | --- | --- |
-    | Name | front-to-back-RDP-test |
-    | Subscription | Select your subscription |
-    | Virtual machine | FrontendVM |
-    | Destination virtual machine | BackendVM |
-    | Port | 3389 |
-    | Probing interval (seconds) | 30 |
-    | | |
-
-1. Select **+ Add**. Configure a second test with these values, and then select **Add**.
+1. On the **Basics** tab, fill in the following values.
 
     | Setting | Value |
     | --- | --- |
-    | Name | Front-to-back-HTTP-test |
-    | Subscription | Select your subscription |
-    | Virtual machine | FrontendVM |
-    | Destination virtual machine | BackendVM |
-    | Port | 80 |
-    | Probing interval (seconds) | 30 |
-    | | |
+    | Connection Monitor Name | Front-to-back-HTTP-test |
+    | Subscription | From the dropdown, select your subscription |
+    | Region | Select the Azure region you deployed your resources in |
 
-1. In the list of tests, select **Front-to-back-RDP-test**, select **...**, and then select **Start**.
+1. Select **Next : Test groups**. The **Add test group details** panel appears.
 
-1. Examine the results.
+1. Fill in the following values.
 
-1. In the list of tests, select **Front-to-back-HTTP-test**, select **...**, and then select **Start**.
+    | Setting | Value |
+    | --- | --- |
+    | Test group name | Front-to-back-HTTP-test-group |
+    | Sources box | Select **Add sources** |
 
-1. Examine the results.
+1. The **Add Sources** panel appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+
+1. At the bottom of the panel, expand **Selected sources (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
+
+1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
+
+1. Select **FrontendVM** from the expanded Azure endpoint list.
+
+1. Select **Add endpoints**. The **Add test group details** panel reappears with the FrontendSubnet identified as your source.
+
+1. In the **Test configurations** box, select **Add Test configuration**. The **Add Test configuration** panel appears.
+
+1. On the **New configuration** tab, fill in the following values.
+
+    | Setting | Value |
+    | --- | --- |
+    | Test configuration name | Front-to-back-HTTP-test-configuration |
+    | Protocol | HTTP |
+    | Destination port | 80 |
+    | Test Frequency | Every 30 seconds |
+    | *Maintain the default values for the remaining settings* |
+
+1. Select **Add Test configuration**. The **Add test group details** reappears with your test configuration identified.
+
+1. In the **Destinations** box, select **Add destinations**. The **Add Destinations** panel appears. On the **Azure endpoints** tab, select **VNET**, ensure your subscription is selected, and then select **MyVNet1** from the list.
+
+1. At the bottom of the panel, expand **Selected destinations (2 Azure endpoints)**. The *BackendVM* and *FrontendVM* Azure endpoints appear.
+
+1. Select **BackendVM** from the expanded Azure endpoint list.
+
+1. Select **Add endpoints**. The **Add test group details** reappears with your with the BackendSubnet identified as your destination.
+
+1. At the bottom of the panel, select **Add Test Group**. The **Create Connection Monitor** panel reappears.
+
+1. On the **Test groups** tab, notice that your test group is now listed.
 
 The results should show that, because the NSG is associated with the back-end subnet, no traffic flows from the front-end VM to the back-end VM.
 
@@ -244,7 +287,7 @@ The results should show that, because the NSG is associated with the back-end su
 
 Let's use the IP flow verify tool to get more information.
 
-1. Under **Network diagnostic tools**, select **IP flow verify**.
+1. On the **Connection monitor** panel, in the left nav bar, under **Network diagnostic tools**, select **IP flow verify**.
 
 1. Configure the test with these values, and then select **Check**.
 

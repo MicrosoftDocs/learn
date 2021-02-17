@@ -24,7 +24,7 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
 
     ![Completing the Azure AD tenant creation](../media/4-create-directory.png)
 
-1. When directory creation is complete, select **Click here to manage your new directory**.
+1. When directory creation is complete, select **The directory you just created** to manage your new directory.
 
 ## Register an application
 
