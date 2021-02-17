@@ -32,7 +32,7 @@ To run a module from a web page, remember to set the `type` option to `"module"`
 To see the solution to this exercise, clone the repository by entering the following at the command prompt.
 
 ```bash
-git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/module07-exercise-01-end
-cd <folder name>
+git clone https://github.com/MicrosoftDocs/mslearn-typescript
+cd mslearn-typescript/code/module-07/module07-exercise-01-end
 code .
 ```
