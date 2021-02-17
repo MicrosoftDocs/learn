@@ -105,11 +105,10 @@ Select a JavaScript library that you are familiar with and try importing it into
 
 ## Lab solution
 
-Clone the ending repository by entering the following at the command prompt.
+View the final version of the code by entering the following at the command prompt. 
 
 ```bash
-git clone https://github.com/MicrosoftDocs/mslearn-typescript/tree/main/code/module-07/m07-end
-cd <folder name>
+cd ../m07-end
 code .
 ```
 
