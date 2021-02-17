@@ -32,7 +32,7 @@ Looking for a specific operation, function, or type?
 Use the *Filter by title* box above the table of contents—it includes the API references and can take you straight to the right page.
 Suppose we wanted to find the `ControlledOnInt` function:
 
-:::image type="content" source="../media/3-filter-by-title.png" alt-text="Screen grab showing filter by title Controlled On Int." border="false":::
+:::image type="content" source="../media/3-filter-by-title-1.png" alt-text="Screen grab showing filter by title Controlled On Int." border="false":::
 
 ## Where does it come from?
 
