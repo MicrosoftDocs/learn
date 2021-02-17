@@ -26,7 +26,7 @@ We need three key packages for our application:
 
 - **Snowpack**, which will be used to render **JSX** to HTML and JavaScript
 - **React**, which will be used to create our components
-- **ReactDOM**, which will be used to mount our application
+- **React-DOM**, which will be used to mount our application
 
 ## Create the initial structure
 
