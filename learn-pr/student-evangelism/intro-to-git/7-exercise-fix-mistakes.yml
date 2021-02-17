@@ -3,8 +3,8 @@ uid: learn.student-evangelism.introduction-to-git.7-exercise-fix-mistakes
 title: Exercise - Fix mistakes using Git
 metadata:
   title: Exercise - Fix mistakes using Git
-  description: Use some of Git's tools for correcting mistakes
-  ms.date: 06/24/2019
+  description: Use some of the Git tools for correcting mistakes.
+  ms.date: 02/16/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

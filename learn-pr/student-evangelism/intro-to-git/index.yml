@@ -2,16 +2,17 @@
 uid: learn.student-evangelism.introduction-to-git
 metadata:
   title: Introduction to Git
-  description: Use Git to track changes and collaborate with other developers
-  ms.date: 01/30/2021
+  description: Use Git to track changes and collaborate with other developers.
+  ms.date: 02/16/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+hidden: true
 title: Introduction to Git
-summary: Find out what source control is, and get an introduction to Git - the world's most popular version control system.
+summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.
 abstract:  |
-  In this module, you will:
+  In this module, you'll:
   - Learn what version control is
   - Understand distributed version control systems, like Git
   - Create a new Git project and configure it
