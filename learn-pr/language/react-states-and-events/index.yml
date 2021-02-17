@@ -2,7 +2,7 @@
 uid: learn.language.react-states-and-events
 metadata:
   title: React state and events
-  description: Description #TODO
+  description: Creating an application typically requires working with data which will change while the user interacts with the app. This is typically managed through some form of state and events. We will explore the concepts of state and events, and the tools React provides for management.
   ms.date: 02/03/2021
   author: GeekTrainer
   ms.author: chrhar
