@@ -34,11 +34,11 @@ units:
 - learn.determine-endpoint-management-implementation.1-introduction
 - learn.determine-endpoint-management-implementation.2-determine-endpoint-objectives
 - learn.determine-endpoint-management-implementation.3-inventory-endpoint-devices
-- learn.determine-endpoint-management-implementation.4-determine-endpoint-licensing
+- learn.determine-endpoint-management-implementation.4-determine-endpoint-license
 - learn.determine-endpoint-management-implementation.5-review-endpoint-policies-infrastructure
 - learn.determine-endpoint-management-implementation.6-create-endpoint-rollout-plan
 - learn.determine-endpoint-management-implementation.7-determine-endpoint-communication
-- learn.determine-endpoint-management-implementation.8-prepare-support-help-desk
+- learn.determine-endpoint-management-implementation.8-prepare-support-helpdesk
 - learn.determine-endpoint-management-implementation.9-knowledge-check
 - learn.determine-endpoint-management-implementation.10-summary
 badge:
