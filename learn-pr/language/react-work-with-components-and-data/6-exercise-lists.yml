@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-react
 title: Display list data
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-lists.md)]

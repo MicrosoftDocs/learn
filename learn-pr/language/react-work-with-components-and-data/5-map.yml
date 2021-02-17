@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-react
 title: Use map to display data inside an array
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
   [!include[](includes/5-map.md)]

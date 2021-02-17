@@ -2,7 +2,7 @@ JSX is a combination of HTML and JavaScript. As a result, whenever we need logic
 
 ## Ternary operator
 
-One of the most popular ways of injecting boolean logic into an application is the [ternary](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) operator. The ternary operator is a shorthand way of creating an `if...else` statement in a single line of code. There are three components of the ternary syntax - the boolean expression, the return value if the expression is true, and the return value if the expression is false.
+One of the most popular ways of injecting boolean logic into an application is the [ternary](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator/?azure-portal=true) operator. The ternary operator is a shorthand way of creating an `if...else` statement in a single line of code. There are three components of the ternary syntax - the boolean expression, the return value if the expression is true, and the return value if the expression is false.
 
 If we wanted to display a message if a number is even or odd we could write the following:
 

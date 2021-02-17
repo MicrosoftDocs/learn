@@ -18,9 +18,9 @@ Components are reusable self-contained units, and makeup the core of any React a
 
 ### Locally installed software
 
-- [Node.js](https://nodejs.org)
-- A code editor, such as [Visual Studio Code](https://code.visualstudio.com)
-- [git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/?azure-portal=true)
+- A code editor, such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
+- [git](https://git-scm.com/?azure-portal=true)
 
 ## Clone the project and open the code in Visual Studio Code
 
@@ -48,4 +48,4 @@ This module uses a starter project.
     npm start
     ```
 
-1. Your default browser should automatically open. If it doesn't, open your browser and go to [http://locahost:8080](http://locahost:8080). The starter page appears.
+1. Your default browser should automatically open. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page appears.
