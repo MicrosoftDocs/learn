@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-get-started.9-summary
+uid: learn.language.react-get-started.10-summary
 metadata:
   title: Summary
   description: In this module, you explored the basics of React by creating a starter project.
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/10-summary.md)]
