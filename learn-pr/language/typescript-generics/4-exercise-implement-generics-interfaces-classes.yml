@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.4-exercise-implement-generics-interfaces-classes
+title: Exercise - Implement generics with interfaces and classes
+metadata:
+  title: Exercise - Implement generics with interfaces and classes
+  description: Learn how to declare a generic interface, declare a generic interface as a function type and as a class type, and define a generic class.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-implement-generics-interfaces-classes.md)]
