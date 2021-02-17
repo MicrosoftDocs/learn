@@ -40,11 +40,11 @@ quiz:
     choices:
     - content: "`--multifile`"
       isCorrect: false
-      explanation: "Incorrect. This is not the correct option to use in this situation."
+      explanation: "Incorrect. Don't use `--multifile` in this situation."
     - content: "`--outfile`"
       isCorrect: true
       explanation: "Correct! The `--outfile` option instructs the compiler to output a single JavaScript file."
-    - content: "No option is required. The Typescript compiler does this by default."
+    - content: "No option is required. The Typescript compiler does this operation by default."
       isCorrect: false
       explanation: "Incorrect. By default, the TypeScript compiler produces on JavaScript file for each input file."
  
