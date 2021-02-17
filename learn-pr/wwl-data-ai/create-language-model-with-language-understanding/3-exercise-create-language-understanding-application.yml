@@ -3,13 +3,14 @@ uid: learn.wwl.create-language-model-with-luis.exercise-create-luis-application
 title: Exercise - Create a Language Understanding application
 metadata:
   title: Exercise - Create a Language Understanding application
-  description: "Get hands-on with LUIS."
-  ms.date: 09/13/2020
+  description: "Exercise - Create a Language Understanding application"
+  ms.date: 02/15/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88767
 durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-create-language-understanding-application.md)]
