@@ -122,7 +122,7 @@ Now that *index.html* has been added to the index, the next step is to commit it
     <h1>Our Feline Friends</h1>
     ```
 
-1. Save and close the file. You can click the ellipses "..." in the right corner of the Cloud Shell editor or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save and close the file. You can select the ellipsis "..." in the right corner of the Cloud Shell editor or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
 1. Use a `git status` command to check the status of the working tree:
 

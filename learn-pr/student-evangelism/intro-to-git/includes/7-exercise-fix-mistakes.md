@@ -30,7 +30,7 @@ Now, let's get some hands-on practice fixing our mistakes!
 
 1. Use `ls` again to check the contents of the current directory. Has *index.html* been restored?
 
-1. Yes! Now, the output should have an *index.html* file and an *CSS* directory:
+1. Yes! Now, the output should have an *index.html* file and a *CSS* directory:
 
     ```output
     CSS  index.html

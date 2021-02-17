@@ -14,14 +14,14 @@ durationInMinutes: 5
 quiz:
   title: ''
   questions:
-  - content: 'Which one of the following is *not* a common use case for version control systems?'
+  - content: 'Which one of the following use cases is *not* a common use case for version control systems?'
     choices:
     - content: "Rolling back changes to a project or file."
       isCorrect: false
       explanation: "Incorrect. Version control systems are great for retrieving past versions of a file or of an entire project."    
     - content: "Gathering and communicating feature requirements for a large project to stakeholders."
       isCorrect: true
-      explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well-suited for this type of work."            
+      explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well suited for this type of work."            
     - content: "Making experimental changes to your project in an isolated branch."
       isCorrect: false
       explanation: "Incorrect. Using branches to create different sets of changes to a project is a key use case for version control."
