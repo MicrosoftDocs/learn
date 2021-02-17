@@ -4,23 +4,19 @@ Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-port
 
 - Type "advisor" in the search bar at the top of the portal. Then select **Advisor** from the list of services.
 
-   > [!div class="mx-imgBorder"]
-   > [ ![Screenshot showing how to find Advisor by using the search bar.](../media/advisor-from-search-bar.png) ](../media/advisor-from-search-bar.png#lightbox)
+   :::image type="content" source="../media/advisor-from-search-bar.png" alt-text="Screenshot showing how to find Advisor by using the search bar." lightbox="../media/advisor-from-search-bar.png":::
 
 - Select **Advisor** from the left pane of the portal.
 
-   > [!div class="mx-imgBorder"]
-   > [ ![Screenshot showing how to find Advisor from the portal left pane.](../media/advisor-from-azure-portal.png) ](../media/advisor-from-azure-portal.png#ligthbox)
+   :::image type="content" source="../media/advisor-from-azure-portal.png" alt-text="Screenshot showing how to find Advisor from the portal left pane." lightbox=".../media/advisor-from-azure-portal.png":::
 
 - Select **All services** from the left pane of the portal. Then select **Advisor** under **Management + governance**
 
-   > [!div class="mx-imgBorder"]
-   > [ ![Screenshot showing where to find Advisor under All services.](../media/advisor-from-all-services.png) ](../media/advisor-from-all-services.png#lightbox)
+   :::image type="content" source="../media/advisor-from-all-services.png" alt-text="Screenshot showing where to find Advisor under All services." lightbox="../media/advisor-from-all-services.png":::
 
 After you do any one of these three, the Advisor dashboard is displayed.
 
-> [!div class="mx-imgBorder"]
-> [ ![Screenshot of Advisor dashboard.](../media/azure-advisor-overview.png) ](../media/azure-advisor-overview.png#lightbox)
+:::image type="content" source="../media/azure-advisor-overview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
 
 ### Areas where Advisor can help
 
@@ -86,8 +82,7 @@ You'll notice that each of the five category tiles shows:
 - The number of impacted resources
 - Their impact level: low, medium, or high.
 
-> [!div class="mx-imgBorder"]
-> [ ![Screenshot of Advisor dashboard showing five recommendation tiles.](../media/azure-advisor-five-categories.png) ](../media/azure-advisor-five-categories.png#lightbox)
+:::image type="content" source="../media/azure-advisor-five-categories.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-five-categories.png":::
 
 After you make your selection, a new page opens showing details about the recommendations for the chosen category. Under a summary of the recommendations, you'll see a table that provides more information, such as:
 
@@ -98,8 +93,7 @@ After you make your selection, a new page opens showing details about the recomm
 
 In addition, on the left side of the page under **Recommendations**, you can select a different category (or **All recommendations**) to quickly open a page where you can see the Advisor recommendations for that  selection.
 
-> [!div class="mx-imgBorder"]
-> [ ![Screenshot of Advisor Performance window with recommendation details.](../media/azure-advisor-cost-recommendations.png) ](../media/azure-advisor-cost-recommendations.png#lightbox)
+:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details" lightbox="../media/azure-advisor-cost-recommendations.png":::
 
 After you select a linked description for a recommendation, a window opens showing some suggestions for actions you can take. At this point in the flow, you have several options for how you want to handle the recommendation.
 
@@ -107,5 +101,4 @@ After you select a linked description for a recommendation, a window opens showi
 - If you choose to deal with the recommendation later on, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if it sees that the issue hasn't been resolved.
 - Or if you know this is an issue you don't want to resolve, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource.
 
-   > [!div class="mx-imgBorder"]
-   > [ ![Screenshot showing how to find Advisor by using search.](../media/azure-advisor-vm-resize-postpone-dismiss.png) ](../media/azure-advisor-vm-resize-postpone-dismiss.png#lightbox)
+   :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing how to find Advisor by using search." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
