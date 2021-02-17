@@ -39,4 +39,4 @@ In addition to the cards on the home page, there’s a navigation pane on the le
 
 In this interactive guide, you'll explore some of the capabilities of the Microsoft 365 compliance center, your home for managing compliance needs using integrated solutions for information protection, information governance, insider risk management, discovery, and more:
 
-[![Interactive guide](../media/-compliance-center-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Center/index.html?azure-portal=true)
+[![Interactive guide](../media/3-compliance-center-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Center/index.html?azure-portal=true)
