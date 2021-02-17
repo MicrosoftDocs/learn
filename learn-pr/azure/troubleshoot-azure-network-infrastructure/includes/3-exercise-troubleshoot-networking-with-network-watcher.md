@@ -188,6 +188,8 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
 
+    ![Screenshot that shows enabling of Network Watcher](../media/3-enable-network-watcher.png)
+
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
 1. Select **Add endpoints**. The **Add test group details** panel reappears with the BackendSubnet identified as your source.
