@@ -159,3 +159,4 @@ Now that *index.html* has been added to the index, the next step is to commit it
      ```
 
 The change to *index.html* has been committed. There are now two versions of the file in the repo, although you see only one of them (the current one). One of the benefits of using Git is that you can roll back the changes you have made, or you can go backward in time and see previous versions. More on this important topic later.
+
