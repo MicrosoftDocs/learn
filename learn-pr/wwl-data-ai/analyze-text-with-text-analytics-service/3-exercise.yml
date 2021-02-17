@@ -3,13 +3,14 @@ uid: learn.wwl.analyze-text-with-text-analytics-service.exercise
 title: Exercise - Analyze text with the Text Analytics service
 metadata:
   title: Exercise - Analyze text with the Text Analytics service
-  description: "Get hands-on with the Text Analytics service"
-  ms.date: 09/13/2020
+  description: "Exercise - Analyze text with the Text Analytics service"
+  ms.date: 02/17/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88764
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise.md)]
