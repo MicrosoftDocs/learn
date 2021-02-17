@@ -2,8 +2,8 @@
 uid: learn.wwl.recognize-synthesize-speech
 metadata:
   title: Recognize and synthesize speech
-  description: "Learn how to recognize and synthesize speech by using Azure Cognitive Services."
-  ms.date: 09/13/2020
+  description: "Recognize and synthesize speech"
+  ms.date: 02/15/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
