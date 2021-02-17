@@ -8,7 +8,7 @@ Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-port
 
 - Select **Advisor** from the left pane of the portal.
 
-   :::image type="content" source="../media/advisor-from-azure-portal.png" alt-text="Screenshot showing how to find Advisor from the portal left pane." lightbox=".../media/advisor-from-azure-portal.png":::
+   :::image type="content" source="../media/advisor-from-azure-portal.png" alt-text="Screenshot showing how to find Advisor from the portal left pane." lightbox="../media/advisor-from-azure-portal.png":::
 
 - Select **All services** from the left pane of the portal. Then select **Advisor** under **Management + governance**
 
