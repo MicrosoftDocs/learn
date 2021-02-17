@@ -29,31 +29,26 @@ quiz:
     - content: useEffect
       isCorrect: true
       explanation: useEffect allows you to register an event listener for the Effect Hook
-  - content: Question 2
+  - content: What function do you use to register an object as stateful in React?
     choices:
-    - content: Wrong answer 1
-      isCorrect: false
-      explanation: explanation
-    - content: Correct answer
+    - content: "`useState`"
       isCorrect: true
-      explanation: explanation
-    - content: Wrong answer 2
+      explanation: "`useState` allows you to register a stateful object."
+    - content: "`useEffect`"
       isCorrect: false
-      explanation: explanation
-    - content: Wrong answer 3
+      explanation: "`useEffect` is raised when state changes."
+    - content: "`props`"
       isCorrect: false
-      explanation: explanation
-  - content: Question 3
+      explanation: "`props` is commonly used to access properties for a component."
+  - content: What does **immutable** mean in programming?
     choices:
-    - content: Wrong answer 1
+    - content: A value cannot be logged.
       isCorrect: false
-      explanation: explanation
-    - content: Correct answer
+      explanation: Logging is not impacted by immutability.
+    - content: A value cannot be altered.
       isCorrect: true
-      explanation: explanation
-    - content: Wrong answer 2
+      explanation: Immutability means a value can be replaced, but not altered.
+    - content: A project cannot be debugged.
       isCorrect: false
-      explanation: explanation
-    - content: Wrong answer 3
-      isCorrect: false
-      explanation: explanation
+      explanation: Immutability has no impact on debugging.
+      

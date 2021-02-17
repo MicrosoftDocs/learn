@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.react-states-and-events.3-add-state
 metadata:
-  title: Add state
-  description: Description #TODO
+  title: Add state to an application
+  description: Learn how to add state, display the values on the page, and test the results.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-react
-title: Add state
+title: Add state to an application
 durationInMinutes: 2
 content: |
   [!include[](includes/3-add-state.md)]

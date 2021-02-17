@@ -33,4 +33,4 @@ Any JavaScript object or data type can be registered as stateful in React. The f
 1. Save all files.
 1. Return to your browser and hit refresh; you should now see the Recipe metadata displayed on the page.
 
-    ![Screenshot of recipe metadata.](/media/recipe-metadata.png)
+:::image type="content" source="/media/recipe-metadata.png" alt-text="Screenshot of recipe metadata.":::

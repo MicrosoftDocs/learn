@@ -2,7 +2,7 @@
 uid: learn.language.react-states-and-events.7-hooks
 metadata:
   title: Hooks
-  description: Description #TODO
+  description: Use hooks to respond to state value changes.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
