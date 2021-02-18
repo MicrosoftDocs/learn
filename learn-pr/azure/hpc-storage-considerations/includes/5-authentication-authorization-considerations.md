@@ -62,9 +62,9 @@ NOTE: while a directory service is not mandatory when using NFS, the problem of 
 
 **Home directories**
 
-Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Further, say those researchers are continuously modifying their own data and adding to their data. Offering them researchers their own home directories is an efficient way of segregating their data.
+Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Further, say those researchers are continuously modifying and adding to their own data. Offering researchers their own home directories is an efficient way of segregating their data.
 
-Permissions within the home directory would be handled by the researcher, allowing them the ability to collaborate when desired. 
+Permissions within the home directory would be handled by the researcher, enabling them to collaborate when desired.
 
 One of the main challenges in this environment is storage space. Say you have a 500TB NAS environment. What stops one researcher from consuming it all?
 

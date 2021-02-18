@@ -1,4 +1,4 @@
-Storage access is an important part of planning for HPC workload performance. You need to make sure that the required data gets to HPC cluster machines at the right time. You also need to make sure results from those individual machines are quickly saved and available for further analysis.
+Storage access is an important part of planning for HPC workload performance. You need to make sure that the required data gets to the HPC cluster machines at the right time. You also need to make sure results from those individual machines are quickly saved and available for further analysis.
 
 Files can be a variety of data, including but not limited to these:
 
@@ -21,7 +21,7 @@ The data in question may be created locally by analysts, artists, researchers, o
 
 The general file access use cases we will discuss in this module are limited to the following activities:
 
-- Loading and running job code, libraries, and/or toolchains on HPC cluster machines.
+- Loading and running job code, libraries, and/or toolchains on the HPC cluster machines.
 - Reading source data for the job. Examples of this could be daily pricing data, genomic data, or satellite data.
 - Intermediate,  or *scratch*, writes. Certain jobs require that initial data be processed, and the output of that processing become new input for downstream activity.
 - Finally, writing out the results of the job. This involves placing the data in a desirable location for further consumption. For example, rendering a video and placing the rendered results in a shared volume for use.

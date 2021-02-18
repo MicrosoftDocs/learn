@@ -83,3 +83,16 @@ You will want to add your authentication/authorization requirement to the checkl
 - Local (UID/GID on file server only)
 - Directory (LDAP, Active Directory)
 - UID/GID Mapping to Active Directory users (Y/N)
+
+## Further Reading ##
+
+IETF NFS RFCs:
+
+- [RFC 1813: NFS Version 3 Protocol Specification](https://tools.ietf.org/html/rfc1813)
+- [RFC 2203: RPCSEC_GSS Protocol Specification](https://tools.ietf.org/html/rfc2203)
+- [RFC 3530: Network File System (NFS) Version 4 Protocol](https://tools.ietf.org/html/rfc3530)
+- [RFC 5661: Network File System (NFS) Version 4 Minor Version 1 Protocol](https://tools.ietf.org/html/rfc5661)
+- [RFC 5331: RPC: Remote Procedure Call Protocol Specification Version 2](https://tools.ietf.org/html/rfc5531)
+- [Lustre File System](https://www.lustre.org)
+- [IBM Spectrum Scale (GPFS)](https://www.ibm.com/products/spectrum-scale)
+- [BeeGFS](www.beegfs.io)

@@ -20,9 +20,10 @@ They can both be scaled by adding or upgrading storage hardware technologies, ad
 
 Parallel file systems break up files into discrete blocks or stripes and distribute these files across multiple storage servers. While there are distributed file systems that stripe data, the difference is that parallel file systems then expose stripes directly to clients, via communication with the hosting storage servers themselves. Striping allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. Clients accessing a single server causes issues when the number of *concurrent requests* grow beyond what that server can handle. Further, parallel file systems approach to parallel access and striping makes them a great fit for workloads where the need to is access large files across large numbers of concurrent clients.
 
-Two major parallel file systems are IBM's GPFS (known as Spectrum Scale) and Lustre (which is open source with some commercial implementations). These systems achieve parallel I/O differently, with GPFS using servers known as Network Storage Devices (NSDs) that connect to a high-performance Storage Area Network (SAN), which means GPFS servers have raw disk I/O as their backing storage.
+Three major parallel file systems are IBM's GPFS (known as Spectrum Scale), Lustre (which is open source with some commercial implementations) and BeeGFS. These systems achieve parallel I/O differently, with GPFS using servers known as Network Storage Devices (NSDs) that connect to a high-performance Storage Area Network (SAN), which means GPFS servers have raw disk I/O as their backing storage. BeeGFS has many of the same architectural components as Lustre, but also has a robust distributed metadata architecture. BeeOND, shorthand for "BeeGFS On Demand" enables on-demand BeeGFS environments that use storage on each client. Such temporary file system environments can be used for burst buffering.
 
 In both cases however, parallel file systems can scale by adding more storage servers, which in turn offer more parallel I/O to clients. It also means that total client count can be significant, ranging into the tens of thousands.
+
 
 #### Metadata ####
 
