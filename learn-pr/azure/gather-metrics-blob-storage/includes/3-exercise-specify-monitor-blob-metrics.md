@@ -171,12 +171,12 @@ Splitting a chart enables you to view additional dimensions in the data, dependi
 
 1. View the output in the chart window. You should now have the following splits of the monitoring data:
 
-- ListBlobs - note this value
-- BlobPreflightRequest
-- PutBlockList
-- PutBlock
-- ListContainers
-- GetBlobproperties
+    - ListBlobs - note this value
+    - BlobPreflightRequest
+    - PutBlockList
+    - PutBlock
+    - ListContainers
+    - GetBlobproperties
 
 1. Select the **X** to the right of the **SPLITTING** oval.
 
