@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.1-introduction
+metadata:
+  title: Introduction to React
+  description: Modern web development is almost always done by using existing frameworks. We explore how React can make it easier to create a browser-based application and the core skills a developer needs to use the framework.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Introduction to React
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

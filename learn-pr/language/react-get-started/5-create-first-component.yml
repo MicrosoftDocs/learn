@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.5-create-first-component
+metadata:
+  title: Create your first component
+  description: React is centered around components, which are reusable entities. Components typically contain a user interface and other functionality. We will see how we can create a component, and import it into our application.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Create your first component
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-create-first-component.md)]

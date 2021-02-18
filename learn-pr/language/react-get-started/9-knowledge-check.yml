@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+quiz:
+  questions:
+  - content: What is JSX?
+    choices:
+    - content: A combination of JavaScript and XML
+      isCorrect: true
+      explanation: JSX is a blend of JavaScript and XML
+    - content: A combination of JavaScript and HTML
+      isCorrect: false
+      explanation: While you can use HTML in JSX, it must follow XML rules. JSX is a combination of JavaScript and XML.
+    - content: A new version of JavaScript
+      isCorrect: false
+      explanation: JSX is a hybrid of JavaScript and XML
+    - content: The output of a React project
+      isCorrect: false
+      explanation: JSX is used to create React, however it is converted into JavaScript for the browser to execute.
+  - content: JSX is required for React applications
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: While you will likely always use JSX when creating React applications, it is not required.
+    - content: "False"
+      isCorrect: true
+      explanation: While you will likely always use JSX when creating React applications, it is not required.
+  - content: What is the purpose of a bundler in web development?
+    choices:
+    - content: To generate JSX
+      isCorrect: false
+      explanation: Bundlers convert JSX and other file types into the appropriate JavaScript for the browser to read.
+    - content: Convert JSX and other resources into JavaScript
+      isCorrect: true
+      explanation: Bundlers convert JSX and other file types into the appropriate JavaScript for the browser to read.
+    - content: Bootstrap an application
+      isCorrect: false
+      explanation: While some bundlers may include bootstrapping utilities, their primary goal is to convert JSX and other file types into the appropriate JavaScript for the browser to read.

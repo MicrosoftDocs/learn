@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.7-add-style
+metadata:
+  title: Add style
+  description: Style is an important part of any web application. React allows you to add style into a component, help making them completely self-contained. We will explore how to add style to a component.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Add style
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-add-style.md)]
