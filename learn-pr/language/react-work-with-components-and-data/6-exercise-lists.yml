@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.6-exercise-lists
+metadata:
+  title: Display list data
+  description: We will use the skills we learned to display a list.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Display list data
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-lists.md)]

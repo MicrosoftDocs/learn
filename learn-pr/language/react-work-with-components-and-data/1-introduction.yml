@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.1-introduction
+metadata:
+  title: Introduction
+  description: Components allow you to create reusable entities. We can make these more dynamic by adding logic and data.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Introduction
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

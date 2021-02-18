@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.3-logic
+metadata:
+  title: Work with logic in JSX files
+  description: JSX allows you to incorporate JavaScript and your display. We will see how to use JavaScript to make our display dynamic.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Work with logic in JSX files
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-logic.md)]
