@@ -80,7 +80,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     
     1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
-1. Switch back to **Azure**. In **Development Tools** on the left-hand menue, open **Console**, enter the following command:
+1. Switch back to **Azure**. In **Development Tools** on the left-hand menu, open **Console**, enter the following command:
 
     ```bash
     npm install durable-functions
@@ -94,7 +94,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 ## Create the client function for submitting a design proposal
 
-1. On the left menue, under **Functions**, click **Functions**, and then click **+ Add**.
+1. On the left menu, under **Functions**, click **Functions**, and then click **+ Add**.
 
 1. Select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request.
 
