@@ -35,14 +35,3 @@ quiz:
     - content: "df.write.format(\"com.databricks.spark.sqldw\").mode(\"overwrite\").option(\"...\").option(\"...\").save()"
       isCorrect: true
       explanation: "The key is to specify the correct format, intended write mode, and options that specify the Azure Synapse Analytics properties."
-  - content: "When connecting to Azure Cosmos DB from a Databricks notebook, what information is required?"
-    choices:
-    - content: "The database name, container name, account name, and port"
-      isCorrect: false
-      explanation: "The list only includes a portion of the information required."
-    - content: "The database name, container name, URI, and key"
-      isCorrect: true
-      explanation: "The URI contains the path to the account and the port. The key authorizes the connection for reading or reading and writing."
-    - content: "The account name, database name, container name, and key"
-      isCorrect: false
-      explanation: "The account name does not contain the fully qualified path, including the port."

@@ -1,19 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-azure-databricks-other-azure-services
 metadata:
-  title: Integrate Azure Databricks with other Azure services
-  description: "Integrate Azure Databricks with other Azure services"
+  title: Integrate Azure Databricks with Azure Synapse
+  description: "Integrate Azure Databricks with Azure Synapse"
   ms.date: 05/15/2020
   author: b-dstrod
   ms.author: b-dstrod
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate Azure Databricks with other Azure services
-summary: Azure Databricks is just one of many powerful data services in Azure. Learn how to integrate with other services, such as Azure Synapse Analytics and Azure Cosmos DB as part of your data architecture.
+title: Integrate Azure Databricks with Azure Synapse
+summary: Azure Databricks is just one of many powerful data services in Azure. Learn how to integrate with Azure Synapse Analytics as part of your data architecture.
 abstract: |
   In this module, you will:
   - Access Azure Synapse Analytics from Azure Databricks by using the - SQL Data Warehouse connector.
-  - Read from and write to Azure Cosmos DB from Azure Databricks.
 prerequisites: |
   None
 iconUrl: /learn/achievements/integrate-azure-databricks-other-azure-services.svg
@@ -26,7 +25,6 @@ products:
 units:
 - learn.wwl.integrate-azure-databricks-other-azure-services.introduction
 - learn.wwl.integrate-azure-databricks-other-azure-services.integrate-azure-synapse-analytics
-- learn.wwl.integrate-azure-databricks-other-azure-services.integrate-azure-cosmos-db
 - learn.wwl.integrate-azure-databricks-other-azure-services.knowledge-check
 - learn.wwl.integrate-azure-databricks-other-azure-services.summary
 badge:

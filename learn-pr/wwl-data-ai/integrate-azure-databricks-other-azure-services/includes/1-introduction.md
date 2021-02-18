@@ -1,15 +1,12 @@
 Suppose you work in the analytics department of a large retail warehouse. Your organization's IT infrastructure is cloud-based, and all data, including customer orders and product information, is stored in Azure Synapse Analytics. Your department analyzes customer shopping trends and proposes promotions based on your findings. You've heard about the robust machine learning and deep learning functions of Azure Databricks, but you don't know if it's compatible with Azure Synapse Analytics. Your manager asks you explore Azure Synapse Analytics and Azure Databricks connectivity options.
 
-Another new requirement you and your team must contend with is to store and read product ratings from customers around the world. Leadership wants customers to be able to access the ratings system closest to their geographic location for both reads and writes. Your team has decided to use Azure Cosmos DB for its ability to easily replicate data around the world and for its flexible NoSQL storage and API options. Your manager asks you to validate that you are able to read from and write to Azure Cosmos DB from Azure Databricks as part of your analysis workflow.
-
-Azure Databricks is an Apache Spark–based analytics platform that supports SQL analytics and can be integrated with SQL Data Warehouse to run high-performance analytics. It allows faster interactive processing of batch and streaming data and has built-in functions for machine learning and big data processing.
+Azure Databricks is an Apache Spark–based analytics platform that supports SQL analytics and can be integrated with Azure Synapse to run high-performance analytics. It allows faster interactive processing of batch and streaming data and has built-in functions for machine learning and big data processing.
 
 ## Learning objectives 
 
 In this module, you will:
 
 - Access Azure Synapse Analytics from Azure Databricks by using the SQL Data Warehouse connector.
-- Read from and write to Azure Cosmos DB from Azure Databricks.
 
 ## Prerequisites
 
@@ -17,9 +14,9 @@ None
 
 ## Setup the environment
 
-You understand that using Azure Databricks to connect to your Azure Synapse Analytics instance is the best way forward. Also, you have decided to use Azure Cosmos DB for storing product ratings. Now you want to try to establish connections to sample databases so you completely understand all the required steps. In this module, you'll work through the procedures for end-to-end connectivity.
+You understand that using Azure Databricks to connect to your Azure Synapse Analytics instance is the best way forward. Now you want to try to establish connections to sample databases so you completely understand all the required steps. In this module, you'll work through the procedures for end-to-end connectivity.
 
-Let's start by setting up the environment. Setup includes provisioning a sample Azure Synapse Analytics instance, creating an Azure Cosmos DB account with a new container, and setting up resources.
+Let's start by setting up the environment. Setup includes provisioning a sample Azure Synapse Analytics instance and setting up resources.
 
 ## Set up Azure Synapse Analytics
 
@@ -139,35 +136,3 @@ In this step, we create a Master Key and a new table. However, before we use the
 1. Select **Access keys** in the left-hand menu. In the Access keys blade, copy the **Storage account name** and **Key** under `key1`. *Save these values in a text editor for later*.
 
     ![Access keys.](../media/access-keys.png)
-
-## Create Azure Cosmos DB account
-
-1. Select the button below to launch the Azure Cosmos DB account creation form:
-
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-cosmosdb-create-account%2Fazuredeploy.json" target="_blank">
-        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
-    </a>
-
-1. Provide the following information, then select **Purchase**:
-
-   - _Subscription_: Select the subscription you're using for this module.
-   - _Resource group_: Select the resource group you're using for this module.
-   - _Location_: Select the same location as the other resources in this module.
-
-1. Navigate to the Azure Cosmos DB account after it deploys.
-
-1. Select **Data Explorer** in the left-hand menu, then select **New Container**. Enter the following in the Add Container form, then select **OK**:
-
-    - _Database id_: Select **Create new** and enter `AdventureWorks`.
-    - _Provision database throughput_: Uncheck this option.
-    - _Container id_: Enter `ratings`.
-    - _Partition key_: Enter `/rating`.
-    - _Throughput_: Select **Manual** and enter `1000`.
-
-        ![The Add Container form is displayed.](../media/add-container.png)
-
-## Retrieve the Azure Cosmos DB Read-Write Key
-
- In your Azure Cosmos DB account, select **Keys** in the left-hand menu. Copy the **URI** value and the **Primary Key** value and *save both of them to a text editor for later*.
-
-![The Azure Cosmos DB Keys blade is displayed.](../media/cosmos-keys.png)

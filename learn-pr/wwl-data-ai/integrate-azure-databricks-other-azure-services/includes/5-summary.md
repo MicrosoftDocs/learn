@@ -1,4 +1,4 @@
-In this module, you learned how you can connect to Azure Synapse Analytics with Azure Databricks to take advantage of the analytical functions of Azure Databricks. You also connected to Azure Cosmos DB to write data to and read data from a new container.
+In this module, you learned how you can connect to Azure Synapse Analytics with Azure Databricks to take advantage of the analytical functions of Azure Databricks.
 
 ## Clean up
 
