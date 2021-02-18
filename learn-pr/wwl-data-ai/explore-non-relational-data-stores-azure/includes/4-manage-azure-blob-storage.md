@@ -236,7 +236,7 @@ In the Azure portal, select **Containers** under **Blob service**, select the co
 
 In the Azure CLI, use the [`az storage container delete`](https://docs.microsoft.com/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-delete) command. The following example deletes the *images* container referenced in previous examples.
 
-```azure cli
+```azurecli
 az storage container delete \
   --account-name contosodata \
   --name "images"
