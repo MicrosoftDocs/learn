@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-states-and-events.4-events
+metadata:
+  title: Work with user events
+  description: Learn the concepts you'll need to create event handlers and some common patterns.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Work with user events
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-events.md)]

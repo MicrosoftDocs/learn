@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-states-and-events.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+
+quiz:
+  questions:
+  - content: What function do you use to register an event listener for the Effect Hook?
+    choices:
+    - content: useRef
+      isCorrect: false
+      explanation: useRef does not provide access to the Effect Hook
+    - content: useMemo
+      isCorrect: false
+      explanation: useMemo does not provide access to the Effect Hook
+    - content: useState
+      isCorrect: false
+      explanation: useState is used to create a new stateful object
+    - content: useEffect
+      isCorrect: true
+      explanation: useEffect allows you to register an event listener for the Effect Hook
+  - content: What function do you use to register an object as stateful in React?
+    choices:
+    - content: "`useState`"
+      isCorrect: true
+      explanation: "`useState` allows you to register a stateful object."
+    - content: "`useEffect`"
+      isCorrect: false
+      explanation: "`useEffect` is raised when state changes."
+    - content: "`props`"
+      isCorrect: false
+      explanation: "`props` is commonly used to access properties for a component."
+  - content: What does **immutable** mean in programming?
+    choices:
+    - content: A value cannot be logged.
+      isCorrect: false
+      explanation: Logging is not impacted by immutability.
+    - content: A value cannot be altered.
+      isCorrect: true
+      explanation: Immutability means a value can be replaced, but not altered.
+    - content: A project cannot be debugged.
+      isCorrect: false
+      explanation: Immutability has no impact on debugging.
+      

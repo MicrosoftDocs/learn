@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-states-and-events.5-update-state
+metadata:
+  title: Update state
+  description: Use a function to update state values.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Update state
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-update-state.md)]
