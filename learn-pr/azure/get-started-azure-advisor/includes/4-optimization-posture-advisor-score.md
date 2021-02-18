@@ -27,9 +27,9 @@ As an example, for a single subscription, the Advisor Score is the simple mean o
 - Operational excellence = 77
 - Performance = 100
 
-The Advisor Score would be 0.84 or 84% as shown in the following equation:
+The Advisor Score would be 0.84 or **84 %** as shown in the following equation:
 
-$$\frac{73 + 85 + 77 + 100}{4 x 100} = 0.84$$
+<!-- $$\frac{73 + 85 + 77 + 100}{4 x 100} = 0.84$$ -->
 
 :::image type="content" source="../media/advisor-equation.png" alt-text="(73 + 85 + 77 + 100)/(4 x 100) = 0.84 " border="false":::
 
@@ -55,9 +55,9 @@ You can tailor your use of Advisor Score to fit your particular needs, but here 
 
 Once you set a target goal for your overall Advisor Score, you can:
 
-- Check in to your Advisor Score dashboard to see if your target goal is being met
-- If the score falls below your target, analyze the category scores to see what is most in need of addressing
-- Look at the category score impact for each recommendation to see which ones will produce the most benefit when addressed
-- Apply the recommendations that will get you back to your goal as quickly as possible
+- **Check** in to your Advisor Score dashboard to see if your target goal is being met.
+- **Analyze** the category scores to see what needs to be addressed (if the score falls below your target).
+- **Review** the category score impact for each recommendation to see which ones will produce the most benefit when addressed.
+- **Apply** the recommendations that will get you back to your goal as quickly as possible.
 
 That's it! Then just repeat this process regularly to make sure you are achieving your goals.
