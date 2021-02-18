@@ -2,7 +2,7 @@
 uid: learn.language.react-get-started.7-add-style
 metadata:
   title: Add style
-  description: Style is an important part of any web application. React allows you to add style into a component, help making them completely self-contained. We will explore how to add style to a component.
+  description: Style is an important part of any web application. In React, we'll add style in a component, making it self-contained. 
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar

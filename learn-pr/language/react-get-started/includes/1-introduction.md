@@ -17,7 +17,7 @@ In this module, we'll create a starter project for React. We'll introduce JSX an
 To complete this module, you'll need to know about:
 
 - HTML, CSS, and JavaScript.
-- Package management in Node.js and the npm package manager.
+- Package management in Node.js and npm.
 - Git.
 
 Make sure you have the following software installed on your local machine:
