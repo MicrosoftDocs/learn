@@ -1,17 +1,19 @@
-Components are reusable self-contained units, and makeup the core of any React application. Components can have their own properties (or props), which allow you to pass data into a component, making it reusable across different scenarios. You are also able to use complex data beyond strings and primitive types, giving your components even more power.
+Components are reusable, self-contained units, and make up the core of any React application. Components can have their own properties (or *props*), which allow you to pass data into a component, making it reusable across different scenarios. You're also able to use complex data beyond strings and primitive types, giving your components even more power.
 
 ## Objectives
 
-- Display dynamic data
-- Display lists of data
-- Add properties (props) to components
-- Use objects and complex data types
+In this module, you learn how to:
+
+- Display dynamic data.
+- Display lists of data.
+- Add properties (props) to components.
+- Use objects and complex data types.
 
 ## Prerequisites
 
 ### Skills
 
-- Knowledge of HTML, CSS and JavaScript
+- Knowledge of HTML, CSS, and JavaScript
 - Basic knowledge of React and React components
 - Knowledge of package management with Node.js and `npm`
 - Knowledge of Git
@@ -20,13 +22,13 @@ Components are reusable self-contained units, and makeup the core of any React a
 
 - [Node.js](https://nodejs.org/?azure-portal=true)
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
-- [git](https://git-scm.com/?azure-portal=true)
+- [Git](https://git-scm.com/?azure-portal=true)
 
 ## Clone the project and open the code in Visual Studio Code
 
 This module uses a starter project.
 
-1. To get the starter project, execute the following steps in a command or terminal window to clone the repository and open the starter folder in Visual Studio Code:
+1. To get the starter project, run the following in a command or terminal window to clone the repository and open the starter folder in Visual Studio Code:
 
     ````bash
     # Windows
