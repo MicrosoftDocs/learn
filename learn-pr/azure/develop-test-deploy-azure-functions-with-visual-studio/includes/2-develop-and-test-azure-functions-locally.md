@@ -14,15 +14,15 @@ The **Modifying - Visual Studio** page appears. Under the **Workloads** tab, sel
 
 :::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio Modifying page with Workloads tab." loc-scope="vs":::
 
-## Azure Functions tools extension for Visual Studio
+## Azure Functions Tools extension for Visual Studio
 
-The Azure Functions tools are a Visual Studio extension that enable you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Functions app, this extension provides a template that you can use. You can then deploy an Azure Function directly to Azure from Visual Studio. The **Azure Functions and Web Jobs Tools** extension is included in Visual Studio 2019.
+The Azure Functions Tools are a Visual Studio extension that enable you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Function App, this extension provides a template that you can use. You can then deploy an Azure Function directly to Azure from Visual Studio. The **Azure Functions and Web Jobs Tools** extension is included in Visual Studio 2019.
 
-## Azure Functions app
+## Azure Function App
 
-An Azure Functions app hosts one or more Azure Functions. It provides the environment and runtime for the functions.
+An Azure Function App hosts one or more Azure Functions. It provides the environment and runtime for the functions.
 
-An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your function app. The events available include:
+An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your Azure Function App. The events available include:
 
 - **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
 - **Event Hub trigger**. An Event Hub trigger runs the function when an Event Hub receives a message.
@@ -37,7 +37,7 @@ An Azure Function is triggered by an event rather than being called directly fro
 
 Azure currently provides three versions of the runtime environment required to run Azure Functions. Version 1 (v1) uses the .NET Framework 4.7; version 2 (v2x) runs using .NET Core 2; version 3  (v3x) contains JavaScript and .NET changes. Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
 
-An Azure Functions app stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
+An Azure Function App stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
 
 An Azure Function can perform privileges or sensitive operations. An Azure Function triggered by an HTTP request could be exposed publicly. You might need to limit the ability to run this function to selected groups of users. You protect an Azure Function by specifying the access rights required to trigger the function. An Azure Function triggered by an HTTP request supports three levels of access rights:
 
@@ -97,9 +97,9 @@ In all cases, an Azure Function is passed an *ILogger* parameter. The function c
 
 An Azure Function also contains metadata that specify the type of the trigger and any other specific information and security requirements. You can modify this metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes the function is an identifier for the function used by the function app. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
 
-## Test an Azure Functions app locally
+## Test an Azure Function App locally
 
-You can use the Visual Debugger to build and test the Functions App locally. Press *F5*, or on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting the *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
+You can use the Visual Debugger to build and test the Azure Function App locally. Press <kbd>F5</kbd>, or on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting the *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
 
 ![Screenshot showing the Azure Function Runtime](../media/2-function-runtime.png)
 

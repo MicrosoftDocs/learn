@@ -1,4 +1,4 @@
-In this unit, you'll create and configure an instance of Azure IoT Hub.
+In this unit, you'll create and configure an instance of Azure IoT Hub.  IoT Hub is used to receive telemetry from IoT Devices.  A node.js application will be used to simulate machines in a chocolate factory (IoT Devices).
 
 ## Create an IoT hub
 
@@ -6,7 +6,7 @@ Use the Azure CLI to create a resource group and then add an IoT hub. Use the re
 
 1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
 
-   ```azurecli-interactive
+   ```azurecli
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
 
@@ -36,7 +36,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 1. Save and close the file.
 1. In the PowerShell window, go to the SimulatedClient folder in the repo and run the simulated client:
 
-    ```Azure CLI
+    ```azurecli
     cd ~\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js
@@ -83,8 +83,9 @@ In this section, you configure your IoT hub to publish events as they occur.
 
 ## Verify that the twin is updated
 
-To see the values being updated in the twin Thermostat67, run this command:
+To see the values being updated in the twin GrindingStep, run this command:
 
 ```azurecli
 az dt twin show -n $dtname --twin-id GrindingStep
 ```
+The values shown for ChasisTemperature should match the values being sent by the devices simulator.

@@ -2,8 +2,8 @@
 uid: learn.wwl.read-text-computer-vision
 metadata:
   title: Read text with the Computer Vision service
-  description: "Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text."
-  ms.date: 09/13/2020
+  description: "Read text with the Computer Vision service"
+  ms.date: 02/15/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
