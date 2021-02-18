@@ -8,6 +8,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
+hidden: true
 title: Collaborate with Git
 summary: Use Git to track changes to source code and collaborate with other developers
 abstract:  |

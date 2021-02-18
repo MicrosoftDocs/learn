@@ -9,9 +9,8 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-durationInMinutes: 10      
-content: |
-  [!include[](includes/4a-knowledge-check.md)]
+durationInMinutes: 3      
+
 quiz:
   title: ''
   questions:
