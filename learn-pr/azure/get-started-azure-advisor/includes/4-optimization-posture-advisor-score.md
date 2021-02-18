@@ -27,13 +27,11 @@ As an example, for a single subscription, the Advisor Score is the simple mean o
 - Operational excellence = 77
 - Performance = 100
 
-The Advisor Score would be:
+The Advisor Score would be 0.84 or 84% as shown in the following equation:
 
 $$\frac{73 + 85 + 77 + 100}{4 x 100} = 0.84$$
 
 :::image type="content" source="../media/advisor-equation.png" alt-text="(73 + 85 + 77 + 100)/(4 x 100) = 0.84 " border="false":::
-
-or 84%.
 
 The scores for multiple subscriptions are calculated a bit differently. Each category score is aggregated according to resources consumed by each subscription.
 
