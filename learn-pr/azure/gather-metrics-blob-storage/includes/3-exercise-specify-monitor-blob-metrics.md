@@ -4,7 +4,7 @@ As a proof of concept exercise, you want to move some simple files into Azure Bl
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
-1. In the Azure portal, select **Create a sesource**.
+1. In the Azure portal, select **Create a resource**.
 
 1. In the *Search the Marketplace* search box, search for and select **Storage account**. The **Storage account** panel appears.
 
