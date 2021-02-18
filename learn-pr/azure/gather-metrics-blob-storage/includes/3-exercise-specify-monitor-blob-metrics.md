@@ -53,11 +53,9 @@ Notice that you can change the storage account to another resource group.
 
 Before you can add blobs to a Storage Account, you need to create a blob container.
 
-1. To add a blob container, under **Blob service**, select **Blobs**.
+1. On the Overview panel of your storage account, to add a blob container, select the **Containers** box. The **Containers** panel appears. Select **Container**. The **New container** pane appears.
 
-1. In the Blobs pane, select **Container**.
-
-1. In the **Name** field, enter **monitor-blobs-container**, and then select **OK**. When you select your new container, notice the **No blobs found** status message.
+1. In the **Name** field, enter **monitor-blobs-container**, and then select **Create**. When you select your new container, notice the *No results* status message.
 
 You are now ready to upload files to the blob container.
 
@@ -65,7 +63,7 @@ You are now ready to upload files to the blob container.
 
 1. To upload a single file to the blob container, select **Upload**.
 
-1. In the **Upload blob** panel, select the folder icon.
+1. In the **Upload blob** pane, select the folder icon.
 
 1. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
 
