@@ -3,20 +3,20 @@ uid: learn.azure.get-started-azure-advisor
 metadata:
   title: Get started with Azure Advisor
   description: Learn how to use Azure Advisor to optimize your Azure usage, lower costs, and increase efficiency. 
-  ms.date: 01/15/2021
+  ms.date: 02/18/2021
   author: Jak-MS
   ms.author: darasera
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with Azure Advisor
-summary: Learn how to use Azure Advisor to optimize your Azure usage, lower costs, and increase efficiency.
+summary: Learn how to use Azure Advisor to optimize your Azure workload usage, lower costs, increase efficiency, and improve security.
 abstract: |
   After completing this module, you'll be able to:
-  - bullet 1
-  - bullet 2
+  - Identify the areas that Advisor analyzes when making recommendations
+  - View and remediate issues that Advisor’s recommendations have identified
+  - Understand the Advisor Score and how it helps prioritize recommendations
 prerequisites: |
-  - 1
-  - 2
+  - Read access or better to one Azure subscription with active subscriptions and provisioned resources
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
