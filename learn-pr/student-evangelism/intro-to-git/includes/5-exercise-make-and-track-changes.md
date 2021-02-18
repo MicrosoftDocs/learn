@@ -1,10 +1,10 @@
-Most development projects are iterative. You write some code, then you test the code and make sure it works. Then, you write more code, and invite other people to contribute code. Iteration means many changes: code additions, bug fixes, deletions, and replacements.
+Most development projects are iterative. You write some code, then you test the code and make sure it works. Then, you write more code and invite other people to contribute code. Iteration means many changes: code additions, bug fixes, deletions, and replacements.
 
 As you work on your project, Git helps keep track of the changes you make. It also lets you undo mistakes. In the next exercises, you continue building out the website you're working on and learn some important new commands, like `git diff`.
 
 ## Modify index.html
 
-The website's home page, *index.html*, currently contains just one line of HTML. Let's update it to do more and commit the change to Git.
+The website's home page, *index.html*, currently contains just one line of HTML. Let's update it to do more, and then commit the change to Git.
 
 1. Reopen the *index.html* file in the online editor for Cloud Shell (`code index.html`) and replace the file contents with the following HTML:
 
@@ -33,9 +33,9 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     The output format is the same as the Unix `diff` command, and the Git command has many of the same options. A plus sign appears in front of lines that were added, and a minus sign indicates lines that were deleted.
 
-    The default is for `git diff` to compare the working tree to the index. In other words, it shows you all of the changes that haven't been staged (added to the index) yet. To compare the working tree to the last commit, you can use `git diff HEAD`.
+    The default is for `git diff` to compare the working tree to the index. In other words, it shows you all the changes that haven't been staged (added to Git's index) yet. To compare the working tree to the last commit, you can use `git diff HEAD`.
 
-1. Exit the *git diff* view by typing **q**.
+1. Exit the `git diff` view by entering **q**.
 
 1. Next, commit the change. Instead of using the `-a` flag, you can explicitly name a file to be staged and committed if Git already has the file in the index (the  `commit` command looks only for the existence of a file).
 
@@ -43,11 +43,11 @@ The website's home page, *index.html*, currently contains just one line of HTML.
     git commit -m "Add HTML boilerplate to index.html" index.html
     ```
 
-1. Use `git diff` again to compare the working tree to the index. This time, `git diff` produces no output because the working tree, index, and `HEAD `are all in agreement.
+1. Use `git diff` again to compare the working tree to the index. This time, `git diff` produces no output because the working tree, index, and `HEAD` are all in agreement.
 
 1. Let's say you decide "furry" sounds friendlier than "feline." Replace the two occurrences of "Feline" in *index.html* with "Furry." Then, save the file.
 
-    If you used the built-in code editor by using the `code` command, you won't see anything unusual. But, if you happened to use another editor, including `sed`, the editor probably created an *index.html.bak* file that you don't want to commit. Editors like Vim and Emacs create backup files with names like *index.html~* and *index.html.\~1\~*, depending on how they're configured.
+    If you used the built-in code editor by using the `code` command, you won't see anything unusual. But, if you happened to use another editor, including an editor called *sed*, the editor probably created an *index.html.bak* file that you don't want to commit. Editors like Vim and Emacs create backup files with names like *index.html~* and *index.html.\~1\~*, depending on how they're configured.
 
 1. Use the following command to create and open a file named *.gitgnore* in the built-in code editor:
 
@@ -79,7 +79,7 @@ If you do a `git diff` right now, the output will be empty because the changes h
 
 ## Add a subdirectory
 
-Most websites use CSS style sheets _and_ HTML, and the site you're building is no exception. Style sheets typically are stored in a subdirectory, so let's create a subdirectory named *CSS* and add it to the repo.
+Most websites use HTML *and* CSS style sheets, and the site you're building is no exception. Style sheets typically are stored in a subdirectory, so let's create a subdirectory named *CSS* and add it to the repo.
 
 1. Begin by creating a subdirectory named *CSS* in the project directory:
 
@@ -87,17 +87,17 @@ Most websites use CSS style sheets _and_ HTML, and the site you're building is n
     mkdir CSS
     ```
 
-1. Then do a `git status`.
+1. Then, do a `git status`:
 
     ```bash
     git status
     ```
 
-    Why does it report that there's nothing to commit?
+    Why does Git report that there's nothing to commit?
 
-    People often are surprised to learn that Git doesn't consider adding an empty directory to be a change. That's because Git tracks only changes to *files*, not directories.
+    People often are surprised to learn that Git doesn't consider adding an empty directory to be a change. That's because Git tracks only changes to *files*, not changes to directories.
 
-    Sometimes, especially in the initial stages of development, you *want* to have empty directories as placeholders. A common convention is to create an empty file in placeholder directories. It's often called *.git-keep*.
+    Sometimes, especially in the initial stages of development, you *want* to have empty directories as placeholders. A common convention is to create an empty file, often called *.git-keep*, in a placeholder directory.
 
 1. Use the following commands to create an empty file with that name in the *CSS* subdirectory and add the contents of the subdirectory to the index:
 
@@ -138,14 +138,14 @@ Now, let's replace *.git-keep* with a CSS file and update *index.html* to refere
     <link rel="stylesheet" href="CSS/site.css">
     ```
 
-1. Use `git status` to see a summary of the files that have changed. Then use the following commands to stage untracked files to version control and commit your changes to *site.css* and *index.html*:
+1. Use `git status` to see a summary of the files that have changed. Then, use the following commands to stage untracked files to version control and commit your changes to *site.css* and *index.html*:
 
     ```bash
     git add .
     git commit -m "Add a simple stylesheet"
     ```
 
-Unlike most version control systems, Git records the contents of your files rather than the deltas between them. That's a large part of what makes committing, branching, and switching between branches so fast in Git. Other VCSes have to apply a list of changes to get between one version of a file and another. Git just unzips the other version.
+Unlike most VCSes, Git records the contents of your files rather than the deltas (changes) between them. That's a large part of what makes committing, branching, and switching between branches so fast in Git. Other VCSes have to apply a list of changes to get between one version of a file and another. Git just unzips the other version.
 
 ## List commits
 
@@ -191,6 +191,6 @@ Now that you have a reasonable number of changes recorded, you can use `git log`
     a69fe78 Create an empty index.html file
     ```
 
-You can see why, when you're hundreds (or thousands) of commits into a project, the `--oneline` option might be your best friend. Another useful option is `-nX`, where X is a commit number: 1 for the latest commit, 2 for the one before that, and so on. To see for yourself, try a `git log -n2` command.
+You can see why, when you're hundreds (or thousands) of commits into a project, the `--oneline` option might be your best friend. Another useful option is `-nX`, where `X` is a commit number: 1 for the latest commit, 2 for the one before that, and so on. To see for yourself, try a `git log -n2` command.
 
-We've made substantial progress using the basic functionality of Git. Next up: Step it up a level and learn how to use Git to recover from common mistakes.
+We've made substantial progress by using the basic functionality of Git. Next up: Step it up a level and learn how to use Git to recover from common mistakes.

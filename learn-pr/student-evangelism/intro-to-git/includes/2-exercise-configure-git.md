@@ -36,7 +36,7 @@ Before you can create your first repo, you must make sure that Git is installed 
     git config --list
     ```
 
-1. Confirm that the output includes two lines that are similar to the following example. Note that your name and e-mail address will be different from what's shown in this example:
+1. Confirm that the output includes two lines that are similar to the following example. Note that your name and e-mail address will be different from what's shown in the example.
 
     ```output
     user.name=User Name
@@ -49,7 +49,7 @@ Git works by checking for changes to files within a certain folder. We'll create
 
 Start by creating an empty project directory, and then initialize a Git repository inside it.
 
-1. Create a folder named *Cats*. This folder will be the *working tree* where your website is stored and the files that comprise it are located.
+1. Create a folder named *Cats*. This folder will be the working tree where your website and the files that comprise it are stored.
 
     ```bash
     mkdir Cats

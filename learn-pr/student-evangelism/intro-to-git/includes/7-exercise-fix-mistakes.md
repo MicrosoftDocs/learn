@@ -54,7 +54,7 @@ When you want to recover deleted files, things are a little more complicated if 
     git checkout -- index.html
     ```
 
-1. This time, Git complains that it knows nothing about *index.html*. That's because Git not only deleted the file, it recorded the deletion in the index.
+1. This time, Git complains that it knows nothing about *index.html*. That's because Git not only deleted the file, it recorded the deletion in the index:
 
     ```output
     error: pathspec 'index.html' did not match any file(s) known to git.
@@ -118,13 +118,13 @@ One solution to this problem is to revert the previous commit.
     git checkout -- index.html
     ```
 
-1. Open *index.html* by using the editor.
+1. Open *index.html* by using the editor:
 
     ```bash
     code index.html
     ```
 
-    Which version of *index.html* do you see? The old or the new?
+    Which version of *index.html* do you see? The old version or the new version?
 
     In this situation, the best course of action is to _revert_ the change by making another commit that cancels out the first one. That's a job for `git revert`.
 
@@ -134,7 +134,7 @@ One solution to this problem is to revert the previous commit.
     git revert --no-edit HEAD
     ```
 
-    > The `--no-edit` flag tells Git that we don't want to add a commit message for this action.
+    The `--no-edit` flag tells Git that we don't want to add a commit message for this action.
 
 1. You should see output similar to this example:
 

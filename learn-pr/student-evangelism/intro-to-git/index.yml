@@ -16,7 +16,7 @@ abstract:  |
   - Learn what version control is
   - Understand distributed version control systems, like Git
   - Create a new Git project and configure it
-  - Make and track changes to code using Git
+  - Make and track changes to code by using Git
   - Use Git to recover from simple mistakes
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/introduction-to-git-badge.svg

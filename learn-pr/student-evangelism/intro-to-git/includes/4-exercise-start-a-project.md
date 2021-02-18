@@ -2,7 +2,7 @@ It's time to get your website project off the ground. In the exercises that foll
 
 ## Create and add (stage) a file
 
-Git doesn't do much with empty directories, so let's add a file to the working tree to serve as the home page for the website.
+Git doesn't do much with empty directories, so let's add a file to the working tree to serve as the home page for the cat photo website.
 
 1. Make sure your Cloud Shell session is still active and that you're in your repo folder named *Cats*.
 
@@ -35,13 +35,13 @@ Git doesn't do much with empty directories, so let's add a file to the working t
 
     Notice that `git status` gives you hints about what you can do next. Git can be configured to be less wordy, but at this stage, more is better.
 
-1. Use `git add` to add the new file to Git's *index*, followed by `git status` to check the status. *Don't forget the period at the end of the command*. It tells Git to index all of the files in the current directory that have been added or modified.
+1. Use `git add` to add the new file to Git's *index*, followed by `git status` to check the status. *Don't forget the period at the end of the command*. It tells Git to index all the files in the current directory that have been added or modified.
 
     ```bash
     git add .
     ```
 
-    A commit has now been staged. Git's *index* is a staging area for commits. It's a list of all the file versions that will be part of the *next* commit you make.
+    A commit has now been staged. Git's index is a staging area for commits. It's a list of all the file versions that will be part of the *next* commit you make.
 
     Rather than use `git add .`, you could have used `git add index.html` because *index.html* was the only new file in the directory. But if several files had been added, `git add .` would have covered them all.
 

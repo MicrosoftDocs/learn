@@ -14,12 +14,12 @@ durationInMinutes: 5
 quiz:
   title: ''
   questions:
-  - content: 'Which one of the following use cases is *not* a common use case for version control systems?'
+  - content: 'Which one of the following scenarios is *not* a common use case for a version control system?'
     choices:
     - content: "Rolling back changes to a project or file."
       isCorrect: false
       explanation: "Incorrect. Version control systems are great for retrieving past versions of a file or of an entire project."    
-    - content: "Gathering and communicating feature requirements for a large project to stakeholders."
+    - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
       isCorrect: true
       explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well suited for this type of work."            
     - content: "Making experimental changes to your project in an isolated branch."
@@ -44,17 +44,17 @@ quiz:
     - content: "Git is a distributed version control system (DVCS) that runs in the cloud. GitHub is an interface layer that provides access to Git technology."
       isCorrect: false
       explanation: "Incorrect. Users have access to both Git and GitHub. GitHub is a cloud platform that uses the Git DVCS."
-    - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development."
+    - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development work."
       isCorrect: false
       explanation: "Incorrect. Both Git and GitHub are used by individual contributors and by teams to facilitate working together."            
   - content: 'What Git command gives information about how to use Git?'
     choices:
     - content: "`git init`"
       isCorrect: false
-      explanation: "Incorrect. The command `git init` is used to initialize a new Git repository."    
+      explanation: "Incorrect. The `git init` command is used to initialize a new Git repository."    
     - content: "`git status`"
       isCorrect: false
-      explanation: "Incorrect. The command `git status` lets you see which changes are currently being tracked by Git."
+      explanation: "Incorrect. The `git status` command lets you see which changes are currently being tracked by Git."
     - content: "`git help`"
       isCorrect: true
       explanation: "Correct!"

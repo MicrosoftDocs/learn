@@ -1,8 +1,8 @@
-A version control system (VCS) is a program (or a set of programs) that tracks changes to a collection of files. One goal is to easily recall earlier versions of individual files or of the entire project. Another is to allow several team members to work on a project, even on the same files, at the same time without affecting each other.
+A version control system (VCS) is a program (or a set of programs) that tracks changes to a collection of files. One goal of a VCS is to easily recall earlier versions of individual files or of the entire project. Another goal is to allow several team members to work on a project, even on the same files, at the same time, without affecting each other.
 
 Another name for a VCS is a software configuration management (SCM) system. The two terms often are used interchangeably—in fact, Git's official documentation is located at [git-scm.com](https://git-scm.com/?azure-portal=true). Technically, version control is just one of the practices involved in SCM. A VCS can be used for projects other than software, including books and online tutorials.
 
-With a version control system, you can:
+With a VCS, you can:
 
 - See all the changes made to your project, when the changes were made, and who made them.
 - Include a message with every change to explain the reasoning behind it.
@@ -10,13 +10,13 @@ With a version control system, you can:
 - Create *branches*, where changes can be made experimentally. This feature allows several different sets of changes (for example, features or bug fixes) to be worked on at the same time, possibly by different people, without affecting the main branch. Later, you can merge the changes you want to keep back into main.
 - Attach a tag to a version—for example, to mark a new release.
 
-Git is a fast, versatile, highly scalable, free, open-source version control system. Its primary author is Linus Torvalds, the creator of Linux.
+Git is a fast, versatile, highly scalable, free, open-source VCS. Its primary author is Linus Torvalds, the creator of Linux.
 
 ## Distributed version control
 
 Earlier instances of the VCS, including CVS, Subversion (SVN), and Perforce, used a centralized server to store a project's history. This centralization meant that that one server was also a single point of failure.
 
-Git is _distributed_, which means that a project's complete history is stored on the client and on the server. You can edit files without a network connection, check them in locally, and sync with the server when a connection becomes available. If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server. Changes could be passed around in e-mail or shared by using removable media, but no one uses Git this way in practice.
+Git is _distributed_, which means that a project's complete history is stored on the client *and* on the server. You can edit files without a network connection, check them in locally, and sync with the server when a connection becomes available. If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server. Changes could be passed around in e-mail or shared by using removable media, but no one uses Git this way in practice.
 
 ## Git terminology
 
@@ -24,7 +24,7 @@ To understand Git, you have to understand the terminology. Here's a short list o
 
 - **Working tree**: The set of nested directories and files that contain the project being worked on.
 
-- **Repository (repo)**: The directory, located at the top level of a working tree, where Git keeps all of the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that is not part of a working tree; it's used for sharing or backup. A bare repo is usually a directory with a name ending in *.git*—for example, *project.git*.
+- **Repository (repo)**: The directory, located at the top level of a working tree, where Git keeps all the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that is not part of a working tree; it's used for sharing or backup. A bare repo is usually a directory with a name that ends in *.git*—for example, *project.git*.
 
 - **Hash**: A number produced by a hash function that represents the contents of a file or another object to a fixed number of digits. Git uses hashes that are 160 bits long. One advantage to using hashes is that Git can tell whether a file has changed by hashing its contents and comparing the result to the previous hash. If the file time-and-date stamp is changed, but the file hash isn’t changed, Git knows the file contents aren’t changed.
 
@@ -32,9 +32,9 @@ To understand Git, you have to understand the terminology. Here's a short list o
 
 - **Commit**: When used as a verb, *commit* means to make a commit object. This action takes its name from commits to a database. It means you are committing the changes you have made so that others can eventually see them, too.
 
-- **Branch**: A named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is commonly named `main`. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the default branch.
+- **Branch**: A branch is a named series of linked commits. The most recent commit on a branch is called the *head*. The default branch, which is created when you initialize a repository, is commonly named `main`. The head of the current branch is named `HEAD`. Branches are an incredibly useful feature of Git because they allow developers to work independently (or together) in branches and later merge their changes into the default branch.
 
-- **Remote**: A named reference to another Git repository. When you create a repo, Git creates a remote named `origin` that is the default remote for push and pull operations.
+- **Remote**: A remote is a named reference to another Git repository. When you create a repo, Git creates a remote named `origin` that is the default remote for push and pull operations.
 
 - **Commands**, **subcommands**, and **options**: Git operations are performed by using commands like `git push` and `git pull`. `git` is the command, and `push` or `pull` is the subcommand. The subcommand specifies the operation you want Git to perform. Commands frequently are accompanied by options, which use hyphens (-) or double hyphens (--). For example, `git reset --hard`.
 
@@ -42,7 +42,7 @@ These terms and others, like `push` and `pull`, will make more sense shortly. Bu
 
 ## The Git command line
 
-There are several different GUIs available for Git, including GitHub Desktop. Many program editors like Microsoft [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) also have an interface to Git. They all work differently and they have different limitations. None of them implement _all_ of Git's functionality.
+There are several different GUIs available for Git, including GitHub Desktop. Many programming editors, like Microsoft [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true), also have an interface to Git. They all work differently and they have different limitations. None of them implement _all_ of Git's functionality.
 
 The exercises in this module use the Git command line—specifically, Git commands executed in Azure Cloud Shell. However, Git's command-line interface works the same, no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and they have to resort to the command line to get going again.
 
@@ -52,7 +52,7 @@ As you work with Git, you might wonder about the difference between the features
 
 As mentioned earlier, Git is a distributed version control system (DVCS) that multiple developers and other contributors can use to work on a project. It provides a way to work with one or more local branches, and then push them to a remote repository.  
 
-GitHub is a cloud platform that uses Git as its core technology. It simplifies the process of collaborating on projects and provides a website, more command-line tools, and overall flow that developers and users can use to work together. GitHub acts as the "remote repository" mentioned earlier.
+GitHub is a cloud platform that uses Git as its core technology. GitHub simplifies the process of collaborating on projects and provides a website, more command-line tools, and overall flow that developers and users can use to work together. GitHub acts as the "remote repository" mentioned earlier.
 
 Key features provided by GitHub include:
 
