@@ -28,7 +28,7 @@ quiz:
       explanation: Map allows you to generate JSX from the contents of an array.
     - content: Reverse
       isCorrect: false
-      explanation: Reverse reverses the contents of an array, but does not provide the ability to generate JSX
+      explanation: Reverse reverses the contents of an array, but does not provide the ability to generate JSX.
   - content: How do you access `props` in a function-based React component?
     choices:
     - content: "`this.props`"

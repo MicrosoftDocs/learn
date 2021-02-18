@@ -2,7 +2,7 @@
 uid: learn.language.react-work-with-components-and-data.4-exercise-prop-object
 metadata:
   title: Use complex data types as props
-  description: We will work through an exercise to add logic to a component.
+  description: This exercise demonstrates how to add logic to a component.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
