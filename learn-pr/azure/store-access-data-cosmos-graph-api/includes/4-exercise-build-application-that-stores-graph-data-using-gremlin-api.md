@@ -14,11 +14,10 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    ![Select Azure Cosmos DB](../media/4-select-database-azure-cosmos-db.png)
 
-1. In the **Create Azure Cosmos DB Account** wizard, enter the following values.
+1. In the **Create Azure Cosmos DB Account** wizard, enter the following values on the **Basics** tab under **Project Details**:
 
    | Field | Value |
    | --- | --- |
-   | On the **Basics** tab, under **Project Details**: |
    | Subscription | Concierge Subscription |
    | Resource Group | <rgn>[Sandbox resource group]</rgn> |
    | Account Name | Use a globally unique value for your Azure Cosmos DB account. |
