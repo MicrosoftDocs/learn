@@ -16,11 +16,10 @@ Let's start by creating a storage account. Later, you'll configure the app to st
 
 1. Select **Storage**, search for **Storage account**, and then select **Create**.
 
-1. In the **Create storage account** wizard, enter the following values.
+1. In the **Create storage account** wizard, enter the following values in the **Basics** tab, under the **Project details** section:
 
    | Field | Value |
    | --- | --- |
-   | In the **Basics** tab, under **Project details** section: | 
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
    | Under **Instance details** section: | 
