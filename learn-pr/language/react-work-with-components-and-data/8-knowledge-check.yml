@@ -19,16 +19,16 @@ quiz:
     choices:
     - content: Sort
       isCorrect: false
-      explanation: Sort will reorder the contents of an array, but does not provide the ability to generate JSX.
+      explanation: Sort will reorder the contents of an array, but doesn't provide the ability to generate JSX.
     - content: Filter
       isCorrect: false
-      explanation: Filter will limit the contents of an array, but does not provide the ability to generate JSX.
+      explanation: Filter will limit the contents of an array, but doesn't provide the ability to generate JSX.
     - content: Map
       isCorrect: true
       explanation: Map allows you to generate JSX from the contents of an array.
     - content: Reverse
       isCorrect: false
-      explanation: Reverse reverses the contents of an array, but does not provide the ability to generate JSX.
+      explanation: Reverse reverses the contents of an array, but doesn't provide the ability to generate JSX.
   - content: How do you access `props` in a function-based React component?
     choices:
     - content: "`this.props`"
