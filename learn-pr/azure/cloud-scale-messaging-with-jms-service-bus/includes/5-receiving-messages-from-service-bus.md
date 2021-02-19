@@ -42,7 +42,14 @@ spring.jms.servicebus.idle-timeout=20000
 > [!NOTE]
 > Please be sure to insert custom values for the configuration.
 >
-> To obtain the Service Bus connection string, refer to the [documentation](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-quickstart-portal#get-the-connection-string).
+> To obtain the Service Bus connection string, run the below command on the Azure CLI and use the `Primary Connection String`.
+>
+>   ```bash
+>    az servicebus namespace authorization-rule keys list \
+>    --name RootManageSharedAccessKey \
+>    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
+>    --resource-group $AZ_RESOURCE_GROUP \
+>   ```
 >
 
 ### Add code to receive messages from Azure Service Bus
