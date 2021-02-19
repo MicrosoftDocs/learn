@@ -1,4 +1,4 @@
-Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads. Those tools start with Azure Migrate, but includes a number of integrated first and third party tools.
+Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads ("Cut Over"). Those tools start with Azure Migrate, but includes a number of integrated first and third party tools.
 
 ## Azure Migrate
 

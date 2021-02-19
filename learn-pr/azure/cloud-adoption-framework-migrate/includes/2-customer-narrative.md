@@ -1,8 +1,12 @@
-We started sharing the narrative for Tailwind Traders in the Getting Started module and other Cloud Adoption Framework (CAF) Learn modules. The Tailwind Traders cloud strategy team has defined an executive-level strategy that addressed their financial and technical considerations. A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure Landing Zone that meets their short-term compliance and operations needs. We resume the Tailwind story, just as the migration team is preparing to start migrating workloads into the cloud.
+In the Getting Started module, we shared a few of Tailwind Traders objectives. The Tailwind Traders cloud strategy team has defined an executive-level strategy that addressed their financial and technical considerations.
+
+A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure Landing Zone that meets their short-term compliance and operations needs.
+
+Most relevant to this module, is their effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
+
+We resume the Tailwind story, just as the migration team is preparing to start migrating workloads into the cloud.
 
 ## Tailwind Traders' migration plan
-
-In the Getting Started module, we shared a few of Tailwind Traders objectives. Most relevant to this module, is their effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
 
 In the Plan module, we rationalized their digital estate using Azure Migrate and created a backlog to guide the migration in Azure Devops. Now the team is ready to begin migrating their existing data centers to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen a migration factory approach:
 

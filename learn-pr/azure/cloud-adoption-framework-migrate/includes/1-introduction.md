@@ -9,8 +9,8 @@ In this module, you learn the tools, the processes, and the options. From there,
 In this module, you will:
 
 - Understand the tools commonly used in migration
-- Learn about the migration processes required migrate effectively
-- Demonstrate a simple migration (hands-on if possible)
+- Learn about the migration processes required to migrate effectively
+- Demonstrate a simple migration (hands-on)
 - Understand options for properly migrating a variety of platforms and workloads 
 - Choose the best learning path to continue on with learning paths to migrate a specific platform or workload
 

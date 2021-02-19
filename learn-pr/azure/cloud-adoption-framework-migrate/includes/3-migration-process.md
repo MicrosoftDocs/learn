@@ -1,6 +1,8 @@
 Migration is a highly repeatable process. Today, you have a collection of binary assets (VMs, Apps, and Data) that reside in a local datacenter. Tomorrow, you want to replicate those binary assets to the cloud and shift your production traffic to use the new copy of the same assets. On the surface this is a simple, repeatable process.
 
-Like most repeatable processes, most of the work can be automated, reducing repetitive human tasks. Automation of that process led to the first iterations of the Azure Migrate product. But as most migration teams quickly discover, the repeatable process is the easy part. Hidden within this repeatable process is a change management effort that requires decisions and human intervention. The following disciplines of migration outlines how the Azure Migrate tool and the Cloud Adoption Framework work together to shape the required human intervention into a repeatable process.
+Like most repeatable processes, most of the work can be automated, reducing repetitive human tasks. Azure Migrate allows migration teams to easily automate that process. But as most migration teams quickly discover, the repeatable process is the easy part. Hidden within this repeatable process is a change management effort that requires decisions and human intervention.
+
+The following disciplines of migration outlines how the Azure Migrate tool and the Cloud Adoption Framework work together to shape the required human intervention into a repeatable process.
 
 ## Mass migration vs iterative migration
 
@@ -16,15 +18,20 @@ In any iterative migration process, the team will complete three sets of tasks o
 
 **Assess workloads:** During assessment of the workloads in each wave, the architects are looking primarily for cloud compatibility and dependencies between assets. But, they will also be looking for compatibility with modernization and optimization opportunities. At times they will get very close to the architecture of individual workloads to perform advanced optimization tasks with the Well-Architected Review.
 
-**Migrate workloads** During migration, the team will use a migration tool to complete the replication of assets (VMs, Apps, and Data) to the cloud. In this step, the team is largely directing and supervising the repeatable process to ensure accurate replication of the selected workloads' assets.
+**Migrate workloads:** During migration, the team will use a migration tool to complete the replication of assets (VMs, Apps, and Data) to the cloud. In this step, the team is largely directing and supervising the repeatable process to ensure accurate replication of the selected workloads' assets.
 
-**Release workloads**  Once each technology platform and workload is migrated to the cloud, the team will need to test, optimize, and release production traffic to their newly migrated workloads. This may also require an evaluation of end user routing and optimization of the network path to the newly deployed workloads.
+**Release workloads:**  Once each technology platform and workload is migrated to the cloud, the team will need to test, optimize before releasing production traffic to their newly migrated workloads (cutover). This may also require an evaluation of end user routing and optimization of the network path to the newly deployed workloads.
 
 Repeating these three disciplines for each workload in the migration plan will ensure a successful migration to the cloud.
 
 ## Sprint planning
 
 When planning migration efforts, one of the first step is to break down the list of workloads to be migrated into smaller groups. As you learn about your team's velocity (how many workload they can move in a sprint), we suggest starting with the Power of 10 approach. In that approach, you define groups of common like & kind workloads consistently of 10 workloads in each wave. Then map those groups of 10 workloads to 2 week iterations or sprints, using your cloud adoption plan in Azure DevOps. See the CAF Plan learn module for step-by-step guidance.
+
+To prioritize migration order, you can use strategic factors such as complexity, time-to-migrate, business urgency, production/non-production considerations, compliance, security requirements, application knowledge, etc. A few recommendations:
+
+- Prioritize quick wins: Use the assessment reports to identify low-hanging fruit, including servers and databases that are fully ready, and require minimal effort to migrate to Azure.
+- Start small, then go big: Start by moving apps and workloads that present minimal risk and complexity, to build confidence in your migration process. Analyze the output of your assessments together with your CMDB repository, to find and migrate dev/test workloads that might be candidates for pilot migrations. Feedback and learnings from pilot migrations can be helpful as you begin migrating production workloads.
 
 Before each sprint, the migration team should evaluate the next wave of workloads to be migrated. The objective of this evaluation is to ensure that the team has all of the necessary information and access required to be successful in the current sprint. It also gives the team a chance to adjust the next 10 workloads based on what they've learned from past sprints. Once the team is committed to the sprint, the actual work can begin.
 
