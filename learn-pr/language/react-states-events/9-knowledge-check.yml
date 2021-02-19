@@ -11,44 +11,44 @@ metadata:
 title: Knowledge check
 durationInMinutes: 1
 content: |
-  Choose the best response for each question. Then select **Check your answers.**
+  Choose the best response for each question. Then select **Check your answers**.
 
 quiz:
   questions:
-  - content: What function do you use to register an event listener for the Effect Hook?
+  - content: Which function should you use to register an event listener for the Effect Hook?
     choices:
-    - content: useRef
+    - content: "`useRef`"
       isCorrect: false
-      explanation: useRef does not provide access to the Effect Hook
-    - content: useMemo
+      explanation: "Incorrect. The `useRef` function doesn't provide access to the Effect Hook."
+    - content: "`useMemo`"
       isCorrect: false
-      explanation: useMemo does not provide access to the Effect Hook
-    - content: useState
+      explanation: "Incorrect. The `useMemo` function doesn't provide access to the Effect Hook."
+    - content: "`useState`"
       isCorrect: false
-      explanation: useState is used to create a new stateful object
-    - content: useEffect
+      explanation: "Incorrect. The `useState` function is used to create a new stateful object."
+    - content: "`useEffect`"
       isCorrect: true
-      explanation: useEffect allows you to register an event listener for the Effect Hook
-  - content: What function do you use to register an object as stateful in React?
+      explanation: "Correct. The `useEffect` function allows you to register an event listener for the Effect Hook."
+  - content: In React, which function should you use to register an object as stateful?
     choices:
     - content: "`useState`"
       isCorrect: true
-      explanation: "`useState` allows you to register a stateful object."
+      explanation: "Correct. The `useState` function allows you to register a stateful object."
     - content: "`useEffect`"
       isCorrect: false
-      explanation: "`useEffect` is raised when state changes."
+      explanation: "Incorrect. The `useEffect` function is raised when state changes."
     - content: "`props`"
       isCorrect: false
-      explanation: "`props` is commonly used to access properties for a component."
-  - content: What does **immutable** mean in programming?
+      explanation: "Incorrect. The `props` function is commonly used to access properties for a component."
+  - content: In programming, what does *immutable* mean?
     choices:
-    - content: A value cannot be logged.
+    - content: "A value can't be logged."
       isCorrect: false
-      explanation: Logging is not impacted by immutability.
-    - content: A value cannot be altered.
+      explanation: "Incorrect. Immutability doesn't affect logging."
+    - content: "A value can't be altered."
       isCorrect: true
-      explanation: Immutability means a value can be replaced, but not altered.
-    - content: A project cannot be debugged.
+      explanation: "Correct. *Immutability* means a value can be replaced but not altered."
+    - content: "A project can't be debugged."
       isCorrect: false
-      explanation: Immutability has no impact on debugging.
+      explanation: Incorrect. Immutability doesn't affect debugging.
       

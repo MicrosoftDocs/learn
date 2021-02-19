@@ -2,21 +2,23 @@
 uid: learn.language.react-states-events
 metadata:
   title: React state and events
-  description: Creating an application typically requires working with data which will change while the user interacts with the app. This is typically managed through some form of state and events. We will explore the concepts of state and events, and the tools React provides for management.
+  description: Work with state and events in React.
   ms.date: 02/03/2021
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: React state and events
-summary: Work with state and events in React.
+summary: Applications typically involve data that will be changed by user interactions. These changes are often managed through some form of state and events. In this module, we explore the concepts of state and events. We also look at the tools React provides for management.
 abstract: | 
   In this module, you'll:
-  - Explore the concepts of state and events
-  - Change state values
-  - Respond to events
-  - Use hooks to respond to updates
-prerequisites: You will need knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
+  - Explore the concepts of state and events.
+  - Change state values.
+  - Respond to events.
+  - Use Hooks to respond to updates.
+prerequisites: |
+  - Knowledge of HTML, CSS, JavaScript, Git, and npm
+  - Some experience with React
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:

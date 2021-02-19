@@ -2,7 +2,7 @@
 uid: learn.language.react-states-events.1-introduction
 metadata:
   title: Introduction
-  description: State is a core concept in any application. As values change through user interactions or other events the application must respond; this is done through state. We will explore how to create and manage state in React, and how to handle user events.
+  description: State is a core concept in any application. When values change through user interactions or other events, the application must respond. It responds through state. We'll explore how to create and manage state in React and how to handle user events.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
