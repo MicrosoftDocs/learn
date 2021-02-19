@@ -3,7 +3,7 @@ uid: learn.language.typescript-get-started.2-typescript-overview
 title: Overview of TypeScript
 metadata:
   title: Overview of TypeScript
-  description: Learn about TypeScript, its compatibility with JavaScript and the typical migration path from JavaScript to TypeScript.
+  description: Learn about TypeScript, its compatibility with JavaScript, and the typical migration path from JavaScript to TypeScript.
   ms.date: 02/10/2021
   author: GeekTrainer
   ms.author: shanama
