@@ -1,6 +1,6 @@
 React development is based on *components*. These self-contained units are designed for reuse and modularity. React projects typically contain many components.
 
-A component can be either a function or a class. Most React developers prefer to create components with functions, so we'll focus on this style. 
+A component can be either a function or a class. Most React developers prefer to create components by using functions, so we'll focus on this style.
 
 Applications generally have one core component, commonly called an `App`. The `App` acts as the root of the application. We'll start by creating our `App` component.
 

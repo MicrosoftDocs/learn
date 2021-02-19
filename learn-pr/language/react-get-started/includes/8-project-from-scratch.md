@@ -1,6 +1,6 @@
 In this module, we used a starter project to get up and running quickly. This setup allowed us to focus on React and some of the new syntax. You're free to use the starter project for your own work!
 
-Of course, you might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project. 
+Of course, you might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project.
 
 This unit is optional. If you don't need to create your own project, continue to the next unit.
 
@@ -88,3 +88,35 @@ To support our development work, we'll use two scripts with Snowpack. The first 
 
 1. In Visual Studio Code, open *package.json*.
 1. Locate the second-to-last curly bracket (`}`) at the bottom of the *package.json* file (it should be on line 12).
+1. Above the last curly bracket (`}`), add the following code to create the start and build scripts:
+
+    ```json
+    {
+        "scripts": [
+            "start": "snowpack dev",
+            "build": "snowpack build"
+        ]
+    }
+    ```
+
+    Your **entire** *package.json* file should now look like the following:
+
+    ```json
+    {
+      "devDependencies": {
+        "snowpack": "^2.18.5"
+      },
+      "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+      },
+      "scripts": {
+          "start": "snowpack dev",
+          "build": "snowpack build"
+      }
+    }
+    ```
+
+1. Save all files by clicking **File** > **Save all**
+
+You have now setup your starter! You can add your *index.html*, *App.jsx* and other files just as we did in the earlier units.
