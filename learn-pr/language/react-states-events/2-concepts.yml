@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.2-concepts
+uid: learn.language.react-states-events.2-concepts
 metadata:
   title: Explore the concepts of state
-  description: Learn the definitions you'll need and how state is different from props.
+  description: Learn important terminology and find out how state differs from props.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar

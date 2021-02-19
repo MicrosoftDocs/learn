@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.10-summary
+uid: learn.language.react-states-events.10-summary
 metadata:
   title: Summary
-  description: We explored the concepts of state and events. We now have a page which is fully interactive, and capable of responding to updates of data and user events
+  description: We explored the concepts of state and events. Our page is now fully interactive and can respond to updates of data and user events.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
