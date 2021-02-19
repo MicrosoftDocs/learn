@@ -1,18 +1,20 @@
-Keeping an eye on the state of your application, and executing code in response to updates, can be done by using the Effect Hook. We register the function we wish to execute in response to changes with `useEffect`.
+You can use the Effect Hook to keep an eye on the state of your application and run code in response to updates. We register the function we want to run in response to changes by using `useEffect`.
 
 ## Scenario
 
-Our application allows the user to tap on individual items to mark them as prepared. If there is still preparation to be completed we want to display the message "Just keep chopping"; upon completion we want to display "Prep work done!". We will do this by adding a new state object which we will update from our Effect Hook.
+Our application allows the user to tap individual items to mark them as prepared. If some items aren't prepared yet, we want to display the message **Just keep chopping.** When all items are finished, we want to display **Prep work done!** 
+
+We'll set up this behavior by adding a new state object. We'll update the object from our Effect Hook.
 
 > [!IMPORTANT]
-> In our example we are modifying state inside `useEffect`. Remember `useEffect` by default executes whenever **any** stateful object is modified. This can create an endless loop where we modify state, the hook is executed, which modifies state, which executes the hook, and so on.
+> In our example, we modify state inside `useEffect`. By default, `useEffect` runs whenever *any* stateful object is modified. This behavior can create an endless loop. In this loop, we modify state and the Hook is run, which modifies state, which runs the Hook, and so on.
 >
-> To avoid this we can use the dependency parameter on `useEffect` to only look at one particular object. We will do this when creating our code to avoid this endless loop.
+> To avoid the endless loop, we can use the dependency parameter on `useEffect` to look at only one object. We'll do this when we create our code.
 
 ## Add the new state property
 
-1. Open **App.jsx**
-1. Add the new state property by adding the following code below the line which reads `TODO: Add new state property`
+1. Open the *App.jsx* file.
+1. To add the new state property, insert the following code below the line that reads, `TODO: Add new state property`.
 
     ```javascript
     // TODO: Add new state property
@@ -21,7 +23,7 @@ Our application allows the user to tap on individual items to mark them as prepa
 
 ## Add the Effect Hook listener
 
-Add the Effect Hook listener by adding the following code below the line which reads `TODO: Add the effect hook`:
+To add the Effect Hook listener, insert the following code below the line that reads, `TODO: Add the effect hook`.
 
 ```javascript
 // TODO: Add the effect hook
@@ -30,22 +32,23 @@ useEffect(() => {
 }, [recipe]);
 ```
 
-The code uses `setPrepared` to update `prepared` by using the [every](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/every/?azure-portal=true) method which returns a boolean based on every item matching the criteria we specify. In our case we are looking to see if every item is prepared; if not it will return false.
+The code uses `setPrepared` to update `prepared`. It uses the [every](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/every/?azure-portal=true) method, which returns a Boolean value based on every item that matches the criteria we specify. In our case, we're checking whether every item is prepared. If not, the method returns false.
 
-The second parameter on `useEffect` is set to `[recipe]`. This provides the dependency to ensure our code **only** runs when changes occur to the `recipe` object.
+The second parameter on `useEffect` is set to `[recipe]`. This setting provides the dependency to ensure our code runs *only* when the `recipe` object changes.
 
 ## Add the display
 
-Add the code to display the message to the user if the prep work is done by adding the following code below the line which reads `TODO: Add the prep work display`:
+Now display the message to the user if the preparation work is done. To do so, add the following code below the line that reads, `TODO: Add the prep work display`.
 
 ```javascript
 {/* TODO: Add the prep work display */}
-{ prepared ? <h2>Prep work done!</h2> : <h2>Just keep chopping</h2>}
+{ prepared ? <h2>Prep work done!</h2> : <h2>Just keep chopping.</h2>}
 ```
 
-We look at the `prepared` object; if it is true we display **Prep work done!**, otherwise it's **Just keep chopping**.
+We look at the `prepared` object. If it's true, we display **Prep work done!** Otherwise, we display **Just keep chopping.**
 
 ## Test the page
 
-1. Save all files.
-1. Return to your browser. Click refresh. Select the ingredients until they are all marked as prepared (there is a line through them all). Notice the display updates at the bottom of the page.
+1. Save all of the files.
+1. Return to your browser and refresh the page. 
+1. Select the ingredients to mark them all prepared. (They should all be crossed off the list.) The text is updated at the bottom of the page.
