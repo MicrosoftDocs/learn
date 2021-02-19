@@ -22,7 +22,11 @@ Let's start by creating a storage account. Later, you'll configure the app to st
    | --- | --- |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Under **Instance details** section: | 
+
+1. Enter the following values in the **Basics** tab, under the **Instance details** section:
+
+   | Field | Value |
+   | --- | --- |
    | Storage account name | Use a globally unique value. For example, "lensesstorage" with your own initials postfixed. |
    | Location | Choose a region near you from the previous list. |
    | Performance | Standard |
