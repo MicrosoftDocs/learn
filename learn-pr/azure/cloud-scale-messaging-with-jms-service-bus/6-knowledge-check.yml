@@ -9,6 +9,27 @@ metadata:
   ms.author: aschhab
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+durationInMinutes: 2
+quiz:
+  questions:
+    - content: "What is Java Message Service (JMS) 2.0?"
+      choices:
+      - content: "A SDK that I can add as a dependency to my Java application."
+        isCorrect: false
+        explanation: "JMS is simply an API specification. It is implemented as part of various SDKs and Spring Boot starter kits." 
+      - content: "An API that enables Java applications to communicate with enterprise messaging brokers."
+        isCorrect: true
+        explanation: "Java Message Service (JMS) 2.0 is an API specification that enables Java/Java EE/Spring applications to communicate with enterprise messaging brokers."
+      - content: "An Azure product"
+        isCorrect: false
+        explanation: "JMS is an API defined and managed by the Java community and supported by Azure Service Bus."
+    - content: "What is Azure Service Bus?"
+      choices:
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+
+      

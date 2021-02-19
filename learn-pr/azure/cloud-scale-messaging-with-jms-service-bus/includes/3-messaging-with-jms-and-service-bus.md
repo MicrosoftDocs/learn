@@ -52,4 +52,3 @@ Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/),
    * Receive messages from the Azure Service Bus queue.
 
 This setup will utilize 2 Spring Boot applications - one sender, and one receiver.
-
