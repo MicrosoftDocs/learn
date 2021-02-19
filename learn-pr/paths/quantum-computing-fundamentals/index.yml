@@ -49,6 +49,7 @@ modules:
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
 - learn.quantum.solve-graph-coloring-problems-grovers-search
+- learn.quantum.use-qsharp-libraries
 - learn.quantum.run-quantum-algorithms-hardware
 - learn.quantum.solve-quantum-inspired-optimization-problems
 - learn.quantum.solve-job-shop-optimization-azure-quantum

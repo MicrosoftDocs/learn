@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-methods-interfaces.2-interfaces
+metadata:
+  title: Use interfaces in Go
+  description: Learn how to use interfaces in Go.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use interfaces in Go
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-interfaces.md)]

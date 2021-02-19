@@ -58,7 +58,7 @@ You can use queues to loosely connect different parts of your application togeth
 
 To access any of these services from an application, you have to create a _storage account_. The storage account provides a unique namespace in Azure to store and access your data objects. A storage account contains any blobs, files, queues, tables, and VM disks that you create under that account.
 
-### Creating a storage account
+### Create a storage account
 
 You can create an Azure storage account using the Azure portal, Azure PowerShell, or Azure CLI. Azure Storage provides three distinct account options with different pricing and features supported.
 

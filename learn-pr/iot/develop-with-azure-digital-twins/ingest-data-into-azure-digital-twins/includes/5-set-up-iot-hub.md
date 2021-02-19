@@ -6,7 +6,7 @@ Use the Azure CLI to create a resource group and then add an IoT hub. Use the re
 
 1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
 
-   ```azurecli-interactive
+   ```azurecli
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
 
@@ -36,7 +36,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 1. Save and close the file.
 1. In the PowerShell window, go to the SimulatedClient folder in the repo and run the simulated client:
 
-    ```Azure CLI
+    ```azurecli
     cd ~\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js
