@@ -64,11 +64,11 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
     ```
-    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/14-Integrating-with-other-Azure-Services.dbc?raw=true
+    https://github.com/MicrosoftDocs/mslearn_databricks/blob/main/synapse/1.1.0/Labs.dbc?raw=true
     ```
 
 5. Select **Import**.
-6. Click on the folder **14-Integrating-with-other-Azure-Services** that appears.
+6. Click on the folder **synapse** that appears.
 
 ## Complete the following notebook
 
