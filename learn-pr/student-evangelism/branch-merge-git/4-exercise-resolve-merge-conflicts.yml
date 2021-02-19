@@ -3,8 +3,8 @@ uid: learn.student-evangelism.branch-merge-git.4-exercise-resolve-merge-conflict
 title: Exercise - Resolve merge conflicts
 metadata:
   title: Exercise - Resolve merge conflicts
-  description: Modify unmerged branches and resolve merge conflicts
-  ms.date: 06/24/2019
+  description: Modify unmerged branches and resolve merge conflicts.
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

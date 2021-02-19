@@ -1,21 +1,21 @@
-Alice wants to add some CSS to style the cat pictures, and she'll want to work in her own branch to do so.
+Alice wants to add some CSS to style the cat pictures on the website, and she'll want to do this work in her own branch.
 
 ## Setup
 
-Before we can practice being Alice, we must do some work to set up a bare repo for everyone to share, and add some files.
+Before we can assume the role of Alice, we must do some work to set up a bare repo for everyone to share, and then add some files.
 
 Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud Shell to the right.
 
 ### Create a bare shared repo
 
-1. Create a new directory named "Shared.git" to hold the bare repo.
+1. Create a new directory named *Shared.git* to hold the bare repo:
 
     ```bash
     mkdir Shared.git
     cd Shared.git
     ```
 
-1. Now use the following command to create a bare repo in the shared directory:
+1. Now, use the following command to create a bare repo in the shared directory:
 
     ```bash
     git init --bare

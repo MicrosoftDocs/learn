@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.branch-merge-git
 metadata:
   title: Edit code through branching and merging in Git
-  description: Level up your Git knowledge by learning about how to keep code separate using branches and how to merge them later
-  ms.date: 01/30/2021
+  description: Level up your Git knowledge by learning how to keep code separate by using branches and how to merge them later.
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 title: Edit code through branching and merging in Git
-summary: Level up your Git knowledge by learning about how to keep code separate using branches and how to merge them later
+summary: Level up your Git knowledge by learning how to keep code separate by using branches and how to merge them later.
 abstract:  |
   In this module, you will:
   - Understand what Git branches are
@@ -17,8 +17,8 @@ abstract:  |
   - Merge branches together
   - Learn basic techniques for resolving merge conflicts
 prerequisites: |
-  A basic knowledge of Git, like:
-  - Terminology like repository, working tree, index
+  A basic knowledge of Git, including:
+  - Terminology, like <i>repository</i>, <i>working tree</i>, and <i>index</i>
   - Creating repos
   - Staging and committing changes
   - Resetting and reverting from simple mistakes 
