@@ -50,4 +50,4 @@ This module uses a starter project.
     npm start
     ```
 
-1. Your default browser should automatically open. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page appears.
+1. Your default browser automatically opens. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page appears.
