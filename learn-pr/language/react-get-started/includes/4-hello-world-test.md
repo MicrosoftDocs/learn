@@ -70,7 +70,7 @@ The ability to use HTML inside our JavaScript coding is part of the power of JSX
 Now that we've created our code, let's see our site in action!
 
 1. Open the integrated terminal in Visual Studio Code by selecting **View** > **Terminal** or by selecting **Ctrl+\`**. On a Mac, select **Cmd+\`** instead.
-1. Use the following command to start Snowpack's dev server:
+1. Use the following command to start Snowpack's development server:
 
     ```bash
     npm start

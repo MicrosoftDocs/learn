@@ -17,7 +17,7 @@ abstract: |
   - Create a React project.
   - Create a React component.
   - Work with dynamic data.
-  - Work with CSS and style.
+  - Work with CSS.
 prerequisites: |
   - Knowledge of HTML, CSS, JavaScript, and Git
   - Knowledge of package management with Node.js and npm

@@ -84,7 +84,7 @@ This code tells Snowpack to use our *public* folder as the root of the applicati
 
 ## Create the npm scripts
 
-To support our development work, we'll use two scripts with Snowpack. The first script starts the dev server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
+To support our development work, we'll use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
 
 1. In Visual Studio Code, open *package.json*.
 1. Locate the second-to-last curly bracket (`}`) at the bottom of the *package.json* file (it should be on line 12).

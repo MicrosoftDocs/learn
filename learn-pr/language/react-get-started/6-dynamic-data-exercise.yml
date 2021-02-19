@@ -2,7 +2,7 @@
 uid: learn.language.react-get-started.6-dynamic-data-exercise
 metadata:
   title: Display dynamic data
-  description: Components are most reusable when you can pass data into them, making them dynamic. We'll see how to use props in React components to pass in data.
+  description: Components are most reusable when you can pass data into them, making them dynamic. We'll see how to use props (properties) in React components to pass in data.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
