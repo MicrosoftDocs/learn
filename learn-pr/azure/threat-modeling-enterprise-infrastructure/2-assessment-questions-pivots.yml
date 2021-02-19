@@ -1,0 +1,32 @@
+# YamlMime:ZonePivotGroups
+groups:
+- id: 2-assessment-questions-pivots
+  title: Infrastructure security assessment question categories
+  prompt: Choose which security assessment category you want to learn more about
+  pivots:
+  - id: access-control-pivot-selection
+    title: Access control
+  - id: secure-development-pivot-selection
+    title: Secure development
+  - id: business-continuity-pivot-selection
+    title: Business continuity
+  - id: cryptography-pivot-selection
+    title: Cryptography
+  - id: asset-management-pivot-selection
+    title: Asset management
+  - id: Legal-pivot-selection
+    title: Legal
+  - id: incident-response-pivot-selection
+    title: Incident response
+  - id: network-pivot-selection
+    title: Network
+  - id: operations-pivot-selection
+    title: Operations
+  - id: physical-pivot-selection
+    title: Physical and environmental
+  - id: governance-pivot-selection
+    title: Governance
+  - id: security-architecture-pivot-selection
+    title: Security architecture 
+  - id: supplier-pivot-selection
+    title: Supplier 

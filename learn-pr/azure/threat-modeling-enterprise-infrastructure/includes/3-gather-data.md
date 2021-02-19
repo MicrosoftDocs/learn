@@ -1,3 +1,15 @@
+---
+title: Infrastructure threat modeling security assessment answers
+description: Capture the state of security for your infrastructure by collecting the answers to each question.
+author: rodrigosantos
+ms.author: rodsan
+ms.date: 03/01/2021
+ms.prod: non-product-specific
+ms.topic: how-to
+ms.custom: infrastructure-threat-modeling-security-guide
+ms.customer.intent: As an IT professional, I need to collect the answers to each security assessment question to help secure my infrastructure by using threat modeling.
+---
+
 To help you navigate the infrastructure threat modeling module, we created a fictitious company, called Woodgrove Bank.
 
 ## Company background
@@ -29,3 +41,6 @@ To help you navigate the infrastructure threat modeling module, we created a fic
 |![Governance domain](../media/Governance-small.svg)<br>Governance|<ul><li>There is no formalized information security policy or risk management program.</li><li>There are no specialized security training offerings for employees at this time.</li></ul>|
 |![Security architecture domain](../media/SecurityArchitecture-small.svg)<br>Security architecture|<ul><li>Virtual machines are created using default images that have not been checked against a security baseline.</li><li>Woodgrove Bank's internal infrastructure is a hybrid of both on-premises and cloud systems. However, it is rapidly moving to a cloud-only infrastructure in Azure.</li><li>There are no IoT devices or container usage in the company.</li><li>IT administrators do not have baselines of Operating Systems they use.</li></ul>|
 |![Supplier risk domain](../media/Supplier-small.svg)<br>Supplier|<ul><li>They rely on many third-party SaaS offerings to help run the business but there is no established way to measure security maturity levels or enforce an SLA.</li></ul>|
+
+> [!NOTE]
+> It is good practice to condense your original notes to use for threat modeling. [Here's an example](3-gather-data-summary.md) of what it would look like.

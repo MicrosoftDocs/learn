@@ -1,0 +1,16 @@
+# YamlMime:ZonePivotGroups
+groups:
+- id: 4-visualize-risk-element-pivots
+  title: Element pivots
+  prompt: Choose which element you want to learn more about
+  pivots:
+  - id: process-pivot-selection
+    title: Process
+  - id: data-store-pivot-selection
+    title: Data store
+  - id: external-entity-pivot-selection
+    title: External entity
+  - id: data-flow-pivot-selection
+    title: Data-flow
+  - id: trust-boundary-pivot-selection
+    title: Trust boundary
