@@ -1,8 +1,17 @@
 As well as the Massively Parallel Processing architecture at limitless scale, there are additional features of SQL Analytics that can be beneficial in Modern Data Warehousing use cases, including:
 
+    - Workload management
+    - Result-set cache
+    - Materialized views
+    - Continuous Integration/Continuous Delivery (CI/CD) support through SQL Server Data Tools (SSDT)
+
 ## Workload management
 
 Azure Synapse Analytics provides the capability to prioritize the query workloads that take place on the server using Workload Management. Workload Management is managed by three related areas:
+
+     - Workload groups
+     - Workload classification
+     - Workload importance
 
 ### Workload groups
 
@@ -53,11 +62,11 @@ WITH
 
 ### Workload importance
 
-Workload importance is defined in the CREATE WORKLOAD CLASSIFIER command, and allows higher priority queries to receive resources ahead of lower priority queries that are in the queue. By default, queries are released from the queue on a first-in, first-out basis as resources become available, but workload importance overrides this qualifier.
+Workload importance is defined in the CREATE WORKLOAD CLASSIFIER command, and enables higher priority queries to receive resources ahead of lower priority queries that are in the queue. By default, queries are released from the queue on a first-in, first-out basis as resources become available, but workload importance overrides this qualifier.
 
 ## Result-set cache
 
-In scenarios where the same results are requested on a regular basis, result-set caching can be used to improve the performance of the queries that retrieve these results. When result-set caching is enabled, the results of the query are cached in the SQL pool storage.
+In scenarios where the same results are requested on a regular basis, result-set caching can improve the performance of the queries that retrieve these results. When result-set caching is enabled, the results of the query are cached in the SQL pool storage.
 
 Result-set cache enables interactive response times for repetitive queries against tables with infrequent data changes.
 The result-set cache persists even if SQL pool is paused and resumed later, although the query cache is invalidated and refreshed when the underlying table data or query code changes. To ensure that the cache is fresh, the result cache is evicted on a regular basis on a time-aware least recently used algorithm (TLRU). You can set result-set caching on at the database level or at a session level using the following code.
@@ -75,7 +84,7 @@ SET RESULT_SET_CACHING {ON | OFF}
 
 ## Materialized views
 
-A materialized view will pre-compute, store, and maintain data like a table. They are automatically updated when data in underlying tables are changed. Updating materialized views is a synchronous operation that occurs as soon as the data is changed. This auto-caching functionality allows Azure Synapse Analytics Query Optimizer to consider using an indexed view even if the view is not referenced in the query. They also support the following aggregations: **MAX, MIN, AVG, COUNT, COUNT_BIG, SUM, VAR, STDEV**.
+A materialized view can pre-compute, store, and maintain data like a table. These views are automatically updated when data in underlying tables are changed. Updating materialized views is a synchronous operation that occurs as soon as the data is changed. This auto-caching functionality enables Azure Synapse Analytics Query Optimizer to consider using an indexed view, even if the view is not referenced in the query. They also support the following aggregations: **MAX, MIN, AVG, COUNT, COUNT_BIG, SUM, VAR, STDEV**.
 
 ## Continuous Integration/Continuous Delivery (CI/CD) support through SQL Server Data Tools (SSDT)
 
