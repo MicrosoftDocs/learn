@@ -28,7 +28,9 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    ![Screenshot showing creating a new Azure Cosmos DB Account](../media/4-azure-cosmos-db-create-new-account.png)
 
-1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**. It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
+1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**.
+
+   It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
 
 1. Select **Go to resource**. Your Azure Cosmos DB account appears.
 
@@ -75,7 +77,6 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    ```bash
    dotnet add package Gremlin.net
    dotnet add package Microsoft.Extensions.Configuration
-   dotnet add package Microsoft.Extensions.Configuration.FileExtensions
    dotnet add package Microsoft.Extensions.Configuration.Json
    dotnet restore
    ```
@@ -126,7 +127,6 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    using Gremlin.Net.Driver.Exceptions;
    using Gremlin.Net.Structure.IO.GraphSON;
    using Microsoft.Extensions.Configuration;
-   using Microsoft.Extensions.Configuration.FileExtensions;
    using Microsoft.Extensions.Configuration.Json;
    ```
 
