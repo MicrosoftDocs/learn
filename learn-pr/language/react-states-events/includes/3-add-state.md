@@ -1,4 +1,6 @@
-React manages state in a few ways. We're going to focus on one of the main ways, *React Hooks*. When we create state by using the `useState` Hook, for example, we get the state object and an updater function to update the Hook value.
+React manages state in a few ways. We'll focus on one of the main ways, *React Hooks*. 
+
+A *Hook* is a mechanism that allows you to access the inner workings of React. You can use Hooks to run code when something changes in React. Or use them to register something with React, such as state. When we create state by using the `useState` Hook, for example, we get the state object and an updater function to update the Hook value.
 
 ## Scenario
 

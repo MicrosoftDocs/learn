@@ -1,4 +1,4 @@
-Storing state in the core component of our application (`Recipe`) allows us to read the current values of all important properties. We don't have to interact with each component. We can also centralize events, ensuring data is modified in only one location.
+Storing state in the core component of our application (`App`) allows us to read the current values of all important properties. We don't have to interact with each component. We can also centralize events, ensuring data is modified in only one location.
 
 ## Scenario
 

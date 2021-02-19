@@ -4,7 +4,7 @@ Hooks are a common pattern in frameworks where values change or other events occ
 
 In this unit, we'll focus on the *Effect* Hook. This Hook is raised whenever the state value is set. It's raised when the initial value and all subsequent updates are set. 
 
-The Effect Hook allows you to run code in response to the setting of the value. The code you run can have side effects. So you can update values as needed.
+The Effect Hook allows you to run code in response to the setting of the value. The code you run can have side effects, so you can update values as needed.
 
 ## When to use the Effect Hook
 
@@ -14,7 +14,7 @@ You wouldn't want each event listener to examine the state to see if the data is
 
 ## useEffect
 
-To register a listener for the Effect Hook, use `useEffect`. `useEffect` accepts a parameter-less function to be run.
+To register a listener for the Effect Hook, use `useEffect`. `useEffect` accepts a parameter-less function to run when state changes.
 
 ```javascript
 useEffect(() => {

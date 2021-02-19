@@ -2,7 +2,7 @@ Because state in React is immutable, to modify the value of a stateful object, w
 
 ## Copy objects
 
-Primitive types, such as Boolean values or numbers, are value-based objects as opposed to reference. So any change automatically replaces the entire object. 
+Primitive types, such as Boolean values or numbers, are value-based objects as opposed to reference objects. So any change automatically replaces the entire object. 
 
 Strings behave similarly because they're immutable. We modify a string by replacing it with a new value.
 
