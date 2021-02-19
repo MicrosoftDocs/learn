@@ -73,7 +73,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     </html>
     ```
 
-1. Save and close the file. You can click the ellipsis "..." in the right corner of the cloud editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save and close the file. You can select the ellipsis "..." in the right corner of the cloud editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
 1. Change directories to the *CSS* directory and open *site.css* in the editor:
 
@@ -117,7 +117,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ## Clone a repository
 
-Now, let's pretend we're Alice and practice cloning a repository to collaborate on.
+Now, let's assume the role of Alice and practice cloning a repository to collaborate on.
 
 To simulate Alice cloning your repo onto her computer, you'll create a directory named *Alice* on your computer and clone your project directory into it. In real life, you would accomplish this collaboration by setting up a network share or a remote that's reachable by URL.
 

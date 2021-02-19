@@ -3,8 +3,8 @@ uid: learn.student-evangelism.collaborate-with-git.4-exercise-use-shared-repo
 title: Exercise - Collaborate using a shared repo
 metadata:
   title: Exercise - Collaborate using a shared repo
-  description: Set up a bare repo that changes can be pushed to as well as pulled from
-  ms.date: 06/24/2019
+  description: Set up a bare repo that changes can be pushed to and pulled from.
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

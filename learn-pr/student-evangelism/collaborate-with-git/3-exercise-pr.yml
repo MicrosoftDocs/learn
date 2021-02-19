@@ -3,13 +3,13 @@ uid: learn.student-evangelism.collaborate-with-git.3-exercise-pr
 title: Exercise - Make a pull request
 metadata:
   title: Exercise - Make a pull request
-  description: Make changes to another person's code and share them with a pull request
-  ms.date: 06/24/2019
+  description: Make changes to another person's code and share the changes with a pull request.
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-durationInMinutes: 10
+durationInMinutes: 4
 azureSandbox: true
 interactive: bash
 content: |

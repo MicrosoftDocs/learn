@@ -1,11 +1,11 @@
 Congratulations! In this module, you learned how to use Git to collaborate with other developers.
 
-You learned:
+In this module, you learned:
 
-- How to clone a repository.
-- What pull requests are and how to initiate them.
-- How to stash changes.
-- How to push your changes and update your repo by pulling.
+- How to clone a repository
+- What pull requests are and how to initiate them
+- How to stash changes
+- How to push your changes and update your repo by pulling
 
 At this point, you know enough about Git to collaborate in a simple way, but there's still much more to learn!
 

@@ -3,12 +3,12 @@ uid: learn.student-evangelism.collaborate-with-git.1-collaborate-using-pull
 title: Collaborate using pull
 metadata:
   title: Collaborate using pull
-  description: Collaborate with another developer by pulling changes from one another's trees
-  ms.date: 06/24/2019
+  description: Collaborate with another developer by pulling changes from the other user's tree.
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/1-collaborate-using-pull.md)]

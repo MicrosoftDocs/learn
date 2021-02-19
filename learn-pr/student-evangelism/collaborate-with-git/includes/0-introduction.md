@@ -8,13 +8,13 @@ In this module, you accomplish all these things and more with Git.
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
-- Clone a repository.
-- Learn about pull requests and make one.
-- Stash changes.
-- Push your changes and update your repo by pulling.
+- Clone a repository
+- Learn about pull requests and make one
+- Stash changes
+- Push your changes and update your repo by pulling
  
 ## Prerequisites
 
-None.
+None
