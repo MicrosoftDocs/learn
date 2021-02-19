@@ -1,38 +1,36 @@
-In this module we used a starter project to get up and running quickly, allowing us to focus on React and some of the new syntax. You are of course free to use the starter project for your own work!
+In this module, we used a starter project to get up and running quickly. This setup allowed us to focus on React and some of the new syntax. You're free to use the starter project for your own work!
 
-Of course, you might want to build a project completely from scratch. If you want to explore how you could start from an empty folder we have provided these steps. We use Snowpack, just as we did in the starter. This provides you with the steps we performed when we built the starter.
+Of course, you might want to try building a project from scratch. To start from an empty folder, follow the steps in this unit. The steps use Snowpack, just like in the starter project.
 
-This unit is completely optional, and here for informational purposes.
+This unit is optional. If you don't need to create your own project, continue to the next unit.
 
-## Initial project structure
+## Understand the project structure
 
-Our core setup will have two main folders for storing code:
+Our core setup has two main folders that store code:
 
 - **public**
-  - Contains any HTML, CSS, images or other static files
-  - Will store our **index.html** and **index.css** files
+  - Contains any HTML, CSS, images, or other static files
+  - Stores our *index.html* and *index.css* files
 - **src**
-  - Contains any files which need to be rendered
-  - Will store all **.jsx** files
+  - Contains any files that need to be rendered
+  - Stores all *.jsx* files
 
 We'll also create two files to configure our application:
 
-- **package.json**
-  - Contains the list of packages and scripts for our application
-- **snowpack.config.js**
-  - Contains configuration options for Snowpack
+- **package.json**: Contains the list of packages and scripts for our application
+- **snowpack.config.js**: Contains configuration options for Snowpack
 
-We need three key packages for our application:
+We need three main packages for our application:
 
-- **Snowpack**, which will be used to render **JSX** to HTML and JavaScript
-- **React**, which will be used to create our components
-- **React-DOM**, which will be used to mount our application
+- **Snowpack**: Used to render JSX to HTML and JavaScript
+- **React**: Used to create our components
+- **React-DOM**: Used to mount our application
 
 ## Create the initial structure
 
-We will start with an empty directory, and install the necessary components using `npm`. We will then configure Snowpack, and add the scripts to **package.json**.
+In an empty directory, start by installing the necessary components by using npm. Then configure Snowpack and add the scripts to the *package.json* file.
 
-1. Open a terminal or command window, and execute the following command to create the directory and **package.json** file for `npm`.
+1. Open a terminal or command window. Then run the following command to create the directory and the *package.json* file for npm.
 
     ```bash
     # Windows
@@ -49,7 +47,7 @@ We will start with an empty directory, and install the necessary components usin
     echo "{}" > package.json
     ```
 
-1. Execute the following code in the same terminal or command window
+1. Run the following code in the same terminal or command window.
 
     ```bash
     npm install --save-dev snowpack
@@ -57,21 +55,21 @@ We will start with an empty directory, and install the necessary components usin
     ```
 
     > [!NOTE]
-    > You will notice Snowpack is a "dev dependency", meaning it's not required for production. Snowpack generates the necessary JavaScript and HTML files during the build process. As a result, it's not needed for production.
+    > Snowpack is a *dev dependency*. That is, it's not required for production, because it generates the necessary JavaScript and HTML files during the build process.
 
-1. Open the directory in Visual Studio Code by executing the following command
+1. Open the directory in Visual Studio Code by running the following command.
 
     ```bash
     code .
     ```
 
-## Configure Snowpack
+## Set up Snowpack
 
-One of the great advantages of using a tool like Snowpack is it's generally self-configuring. However, we do need to indicate the folder structure we will be using for our code. We do this by setting options in a file named **snowpack.config.json**.
+One of the advantages of a tool like Snowpack is that it's generally self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.json* file.
 
-1. Create a new file in Visual Studio Code by clicking **New File**
-1. Name the file **snowpack.config.json**
-1. Add the following to **snowpack.config.json**
+1. In Visual Studio Code, create a new file by selecting **File** > **New File**.
+1. Name the file *snowpack.config.json*.
+1. In the new file, add the following code.
 
     ```javascript
     module.exports = {
@@ -82,11 +80,42 @@ One of the great advantages of using a tool like Snowpack is it's generally self
     }
     ```
 
-This tells Snowpack to use our **public** folder as the root of the application. It also sets the **src** directory as the virtual location for the JavaScript and HTML files it will generate.
+This code tells Snowpack to use our *public* folder as the root of the application. It also sets the *src* directory as the virtual location for the JavaScript files and HTML files it will generate.
 
 ## Create the npm scripts
 
-To support our development work we will use two scripts with Snowpack. The first will launch the dev server, which will automatically refresh our page whenever we make a change to our application. The second will be used when we're ready to build all our files for deployment.
+To support our development work, we'll use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
 
-1. Open **package.json** in Visual Studio Code.
-1. Locate the second to last `}` at the bottom of **package.json** (this should be line 12).
+1. In Visual Studio Code, open the *package.json* file.
+1. At the bottom of the file, above the last curly bracket (`}`), add the following code. This code creates the start and build scripts.
+
+    ```json
+    {
+        "scripts": [
+            "start": "snowpack dev",
+            "build": "snowpack build"
+        ]
+    }
+    ```
+
+    Your *entire* file should now look like this code:
+
+    ```json
+    {
+      "devDependencies": {
+        "snowpack": "^2.18.5"
+      },
+      "dependencies": {
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+      },
+      "scripts": {
+          "start": "snowpack dev",
+          "build": "snowpack build"
+      }
+    }
+    ```
+
+1. Save all files by selecting **File** > **Save all**.
+
+You have now set up your starter project! You can add *index.html*, *App.jsx*, and other files just as you did in the previous units.

@@ -1,11 +1,13 @@
-As highlighted in the overview of JSX, the core of React development is based around components. Components are self-contained units, designed for reuse and modularity. React projects will typically contain numerous components.
+React development is based on *components*. These self-contained units are designed for reuse and modularity. React projects typically contain many components.
 
-A component can either be a function or a class. Most React developers prefer using creating components with functions, and we'll focus on this style. Most applications have one core component, commonly called `App`, which acts as the root of the application. We're going to start by creating our `App` component.
+A component can be either a function or a class. Most React developers prefer to create components by using functions, so we'll focus on this style.
+
+Applications generally have one core component, commonly called an `App`. The `App` acts as the root of the application. We'll start by creating our `App` component.
 
 ## Create the component
 
 1. Open Visual Studio Code.
-1. Create a new file in **src** named **App.jsx**.
+1. Create a new file in *src*. Name it *App.jsx*.
 1. Add the following code:
 
     ```javascript
@@ -22,37 +24,37 @@ A component can either be a function or a class. Most React developers prefer us
     export default App;
     ```
 
-### Exploring the code
+### Explore the code
 
-We start by importing `React`, which allows us to use JSX syntax. We then create a function named `App`, like we would any other function in JavaScript. At the end we export the function using the standard JavaScript syntax.
+We start the *App.jsx* file by importing `React` so we can use JSX syntax. We then create a function named `App`, like we would create any other function in JavaScript. Finally, we export the function by using the standard JavaScript syntax. The core of our component is contained in the `return` statement. 
 
-The core of our component is contained in the `return` statement. Notice that we're using HTML (or technically XML) embedded in JavaScript. This is the power of JSX. This allows us to use the logic and power of JavaScript as needed, and create self-contained units of work (or components).
+Notice that we're using HTML (technically XML) embedded in JavaScript. This functionality shows the power of JSX. We can use the logic and power of JavaScript to create self-contained units of work (components).
 
-The HTML returned by the function (or component) is what is displayed on the page. The display is a header containing the text **Recipe Manager**.
+The HTML returned by the function (or component) is displayed on the page. The heading contains the text **Recipe Manager**.
 
 > [!NOTE]
-> Notice that the `h1` element is contained inside an HTML 5 `article` element. Because JSX uses XML, we are required to always have one root element. `article` serves as the root for this component. This allows us to add HTML and other React components as our application continues to grow.
+> The `h1` element nests inside an HTML 5 `article` element. Because JSX uses XML, we must have one root element. The `article` element is the root for this component. This structure allows us to add HTML and other React components as our application grows.
 
-## Update our application to use our core component
+## Update the application to use the core component
 
 Let's update our application to use our new component.
 
-1. Open **index.jsx**.
-1. After the line that reads `import ReactDOM from 'react-dom';` (this should be line 3), add the following:
+1. Open *index.jsx*.
+1. After the line that reads `import ReactDOM from 'react-dom';` (it should be line 3), add the following code:
 
     ```javascript
     import App from './App';
     ```
 
-1. Replace the initial message, which is the code that reads `<h1>Hello, world!</h1>`, with a call to the `App` component:
+1. Find the code that reads `<h1>Hello, world!</h1>`. Replace this initial message with a call to the `App` component:
 
     ```jsx
     <App />
     ```
 
-### Exploring the code
+### Explore the code
 
-The complete contents of **index.jsx** are now:
+Here are the complete contents of *index.jsx* now:
 
 ```jsx
 import React from 'react';
@@ -65,13 +67,13 @@ ReactDOM.render(
 );
 ```
 
-Our `import` statement imports our component using the same syntax we would for any other module. We're now able to use the component as if it were HTML.
+Our `import` statement imports our component by using the same syntax we would use for any other module. We can now use the component as if it were HTML.
 
 > [!NOTE]
-> Because JSX uses XML syntax, we're required to close the `App` tag. We can do this by either using the long-form syntax of `<App></App>`, or the "self-closing" short-hand `<App />`. Both options are the same, but most developers use the short-hand option.
+> Because JSX uses XML syntax, we must close the `App` tag. We can do this by using either the long-form syntax `<App></App>` or the "self-closing" shorthand `<App />`. Both options work the same, but most developers use the shorthand option.
 
 ## See the results
 
-Save all files. The browser automatically refreshes with the results!
+Save all of the files. The browser automatically refreshes with the results!
 
-![Screenshot of Recipe Manager](../media/recipe-manager.png)
+![Screenshot of the Recipe Manager heading in the browser window.](../media/recipe-manager.png)

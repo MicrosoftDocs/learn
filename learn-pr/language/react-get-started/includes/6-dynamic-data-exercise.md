@@ -1,8 +1,10 @@
-Components allow you to break an application down into logical components. We might want to create a component for the title of a recipe. Let's explore both how to create and import components into `App`, and also how we can display data dynamically.
+Components allow you to break down an application into logical pieces. In this unit, we'll explore this functionality by creating a component for the title of a recipe. We'll create components and import them into `App`. We'll also explore how to display data dynamically.
 
 ## Display dynamic data
 
-If you want to display dynamic data inside a component, you use the syntax `{ }`, sometimes known as handlebars. This style of syntax is relatively common with HTML templating tools. With `{ }` you're effectively switching into JavaScript mode, which allows you to execute almost any valid JavaScript. If you wanted to display the current time, you could use the following code:
+To display dynamic data inside a component, use the syntax `{ }`, sometimes called *handlebars*. This style of syntax is relatively common in HTML templating tools. Use these handlebars to effectively switch to JavaScript mode and run almost any valid JavaScript. 
+
+For example, to display the current time, you could use the following code:
 
 ```javascript
 <div>{ Date.now() }</div>
@@ -10,10 +12,10 @@ If you want to display dynamic data inside a component, you use the syntax `{ }`
 
 ## Create a RecipeTitle component
 
-In our example, we create a component for the title of a recipe. We use a JavaScript variable for the title of the recipe to demonstrate how React can display dynamic data. In future units you'll see how you can work with more complex data.
+In our example, we'll create a component for the title of a recipe. We'll use a JavaScript variable for the title to show how React can display dynamic data. Future units will show you how to work with more complex data.
 
-1. Create a new file in the **src** folder named **RecipeTitle.jsx**.
-1. Add the following code to **RecipeTitle.jsx**:
+1. Create a new file in the *src* folder. Name it *RecipeTitle.jsx*.
+1. Add the following code to *RecipeTitle.jsx*:
 
     ```jsx
     import React from 'react';
@@ -27,16 +29,16 @@ In our example, we create a component for the title of a recipe. We use a JavaSc
     export default RecipeTitle;
     ```
 
-### Exploring the code
+### Explore the code
 
-Notice that we create a constant named `title`. We then use the `{ }` or handlebar syntax to tell React we want to display the value of `title` inside the `<h2>` element. This is one of the great features of JSX, allowing us to mix JavaScript and HTML.
+Notice that we create a constant named `title`. We then use the handlebar syntax `{ }` to tell React we want to display the value of `title` inside the `<h2>` element. This feature of JSX allows us to mix JavaScript and HTML.
 
 ## Use the RecipeTitle component
 
 Let's display `RecipeTitle` in our application by adding it to `App`.
 
-1. Open **src/App.jsx**.
-1. Below the line that reads `import React from 'react';` (which should be line 2), add the following:
+1. Open *src/App.jsx*.
+1. Below the line that reads `import React from 'react';` (it should be line 2), add the following code:
 
     ```javascript
     import RecipeTitle from './RecipeTitle'
@@ -48,9 +50,9 @@ Let's display `RecipeTitle` in our application by adding it to `App`.
     <RecipeTitle />
     ```
 
-### Exploring the code
+### Explore the code
 
-The entire contents of **src/App.jsx** should now be:
+Here are the entire contents of the *src/App.jsx* file now:
 
 ```jsx
 import React from 'react';
@@ -68,10 +70,10 @@ function App() {
 export default App;
 ```
 
-Much in the same way we were able to use `<App />` as if it were an HTML element, we can use `RecipeTitle`. This is the core to creating React applications - creating and using components to build your application.
+In much the same way we used `<App />` like an HTML element, we can use `RecipeTitle`. This example shows the essence of creating React applications: you create and use components to build your application.
 
 ## See the results
 
-Save all files. The browser should automatically refresh and display the updated page, with **Mashed potatoes** now displayed.
+Save all of the files. The browser should automatically refresh and display the updated page. The heading **Mashed potatoes** appears at the top of the page.
 
-![Screenshot of page displaying title](../media/title.png)
+![Screenshot of a webpage that displays a recipe title.](../media/title.png)

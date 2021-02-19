@@ -2,7 +2,7 @@
 uid: learn.language.react-get-started.8-project-from-scratch
 metadata:
   title: Create a React project from scratch
-  description: While you can use templating tools to create React projects for you, you may want to build it from scratch. In this unit we will see how you can start with an empty folder and create a React application.
+  description: In this optional unit, you'll learn how to build a project from scratch. You'll start with an empty folder and create a React application.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
