@@ -86,9 +86,8 @@ This code tells Snowpack to use our *public* folder as the root of the applicati
 
 To support our development work, we'll use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
 
-1. In Visual Studio Code, open *package.json*.
-1. Locate the second-to-last curly bracket (`}`) at the bottom of the *package.json* file (it should be on line 12).
-1. Above the last curly bracket (`}`), add the following code to create the start and build scripts:
+1. In Visual Studio Code, open the *package.json* file.
+1. At the bottom of the file, above the last curly bracket (`}`), add the following code. This code creates the start and build scripts.
 
     ```json
     {
@@ -99,7 +98,7 @@ To support our development work, we'll use two scripts with Snowpack. The first 
     }
     ```
 
-    Your **entire** *package.json* file should now look like the following:
+    Your *entire* file should now look like this code:
 
     ```json
     {
@@ -117,6 +116,6 @@ To support our development work, we'll use two scripts with Snowpack. The first 
     }
     ```
 
-1. Save all files by clicking **File** > **Save all**
+1. Save all files by selecting **File** > **Save all**.
 
-You have now setup your starter! You can add your *index.html*, *App.jsx* and other files just as we did in the earlier units.
+You have now set up your starter project! You can add *index.html*, *App.jsx*, and other files just as you did in the previous units.

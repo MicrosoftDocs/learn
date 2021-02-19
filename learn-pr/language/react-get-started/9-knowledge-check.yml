@@ -18,35 +18,35 @@ quiz:
     choices:
     - content: A combination of JavaScript and XML
       isCorrect: true
-      explanation: JSX is a blend of JavaScript and XML.
+      explanation: Correct. JSX is a blend of JavaScript and XML.
     - content: A combination of JavaScript and HTML
       isCorrect: false
-      explanation: You can use HTML in JSX, but the HTML must follow XML rules. JSX combines JavaScript with XML.
+      explanation: Incorrect. You can use HTML in JSX, but the HTML must follow XML rules. JSX combines JavaScript with XML.
     - content: A new version of JavaScript
       isCorrect: false
-      explanation: JSX is a hybrid of JavaScript and XML.
+      explanation: Incorrect. JSX is a hybrid of JavaScript and XML.
     - content: The output of a React project
       isCorrect: false
-      explanation: JSX is used to create React. JSX is converted into JavaScript code that the browser runs.
-  - content: Why would you use JSX when creating a React application?
+      explanation: Incorrect. JSX is used to create React. JSX is converted into JavaScript code that the browser runs.
+  - content: Why would you use JSX to create a React application?
     choices:
-    - content: JSX is the only supported method for creating React applications
+    - content: JSX is the only supported method for creating React applications.
       isCorrect: false
-      explanation: While you will likely always use JSX for creating React applications, it's not required.
-    - content: To allow for better management of your code, injecting the necessary logic with your HTML.
+      explanation: "Incorrect. You'll likely always use JSX to create React applications, but JSX isn't required."
+    - content: JSX allows for good code management. It injects the necessary logic with your HTML.
       isCorrect: true
-      explanation: JSX allows you to combine logic and HTML, and is the preferred method for creating React components and applications.
-    - content: JSX is supported by all browsers
+      explanation: "Correct. JSX allows you to combine logic and HTML. It's the preferred method for creating React components and applications."
+    - content: JSX is supported by all browsers.
       isCorrect: false
-      explanation: JSX is not supported natively in browsers; it is a development tool to create React applications and components
+      explanation: "Incorrect. JSX isn't supported natively in browsers. It's a development tool to create React applications and components."
   - content: What is the purpose of a bundler in web development?
     choices:
     - content: To generate JSX
       isCorrect: false
-      explanation: Bundlers convert JSX and other file types into JavaScript code that the browser can read.
+      explanation: Incorrect. Bundlers convert JSX and other file types into JavaScript code that the browser can read.
     - content: To convert JSX and other resources into JavaScript
       isCorrect: true
-      explanation: Bundlers convert JSX and other file types into JavaScript code that the browser can read.
+      explanation: Correct. Bundlers convert JSX and other file types into JavaScript code that the browser can read.
     - content: To bootstrap an application
       isCorrect: false
-      explanation: Some bundlers might include bootstrapping tools. But their primary goal is to convert JSX and other file types into JavaScript code that the browser can read.
+      explanation: Incorrect. Some bundlers might include bootstrapping tools. But their primary goal is to convert JSX and other file types into JavaScript code that the browser can read.
