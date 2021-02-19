@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.react
+metadata:
+  title: React
+  description: Get started with your first React project, create custom components, and manage state and events.
+  brand: azure
+  ms.date: 02/20/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: React
+summary: | 
+  React.js is the most popular front-end JavaScript framework. Through JSX, a combination of HTML and JavaScript, developers are able to create views in a natural fashion. Developers can also create components for reusable blocks across their applications. This learning path will introduce you to React, and the core skills you need as a developer to use this powerful framework.
+prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+products:
+- azure-app-service-static
+- vs-code
+modules:
+- learn.language.react-get-started
+- learn.language.react-work-with-components-and-data
+- learn.language.react-states-and-events
+trophy:
+  uid: learn.react.trophy
