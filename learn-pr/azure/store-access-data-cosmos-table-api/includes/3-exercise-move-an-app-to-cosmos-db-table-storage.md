@@ -79,6 +79,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
    ```bash
    dotnet add package Microsoft.Azure.KeyVault.Core
+   dotnet restore
    ```
 
 1. Enter the following command to start the code editor.
