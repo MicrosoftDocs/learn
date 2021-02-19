@@ -20,7 +20,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the below under d
         <dependency>
             <groupId>com.microsoft.azure</groupId>
             <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
-            <version>2.3.3-dev.20200703.1</version>
+            <version>2.3.3</version>
         </dependency>
     ...
 </dependencies>
