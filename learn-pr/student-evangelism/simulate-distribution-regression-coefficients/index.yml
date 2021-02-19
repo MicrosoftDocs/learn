@@ -26,6 +26,7 @@ abstract: |
   - Understand variability of predictions and usage of Bootstrap prediction intervals.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/simulate-distribution-regression-coefficients.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -28,6 +28,7 @@ abstract: |
   - Expose to and work with numerous numpy (np) functions arithmetic operations on arrays.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+hidden: true
 levels:
 - beginner
 roles:

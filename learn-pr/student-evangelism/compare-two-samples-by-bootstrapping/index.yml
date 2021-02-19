@@ -27,6 +27,7 @@ abstract: |
   - Learn about confidence intervals: understanding confidence levels, generating confidence intervals, and how to use them to estimate unknown parameters.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
+hidden: true
 levels:
 - beginner
 roles:

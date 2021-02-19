@@ -27,6 +27,7 @@ abstract: |
   - Learn how to make decisions with uncertain results through P-values & P-value cutoffs.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+hidden: true
 levels:
 - beginner
 roles:

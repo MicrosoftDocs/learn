@@ -27,6 +27,7 @@ abstract: |
   - Understand Residuals and residual diagnostics through residual plots.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+hidden: true
 levels:
 - beginner
 roles:

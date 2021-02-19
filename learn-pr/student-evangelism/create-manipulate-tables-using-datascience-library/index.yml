@@ -27,6 +27,7 @@ abstract: |
   - Manipulate Tables & Wrangle data using various datascience Library functions.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+hidden: true
 levels:
 - beginner
 roles:

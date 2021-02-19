@@ -27,6 +27,7 @@ abstract: |
   - Explore various components of a simulation and simulate a statistic.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/simulate-generate-empirical-distributions-python.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -26,6 +26,7 @@ abstract: |
   - Familiarize yourself with concepts of randomization, experiments and causation.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
+hidden: true
 levels:
 - beginner
 roles:
