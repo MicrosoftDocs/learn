@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.8-add-hooks
+uid: learn.language.react-states-events.8-add-hooks
 metadata:
   title: Add hooks
   description: Add code to register a hook even handler.

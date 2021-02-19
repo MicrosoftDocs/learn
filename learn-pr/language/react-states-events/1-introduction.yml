@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.1-introduction
+uid: learn.language.react-states-events.1-introduction
 metadata:
   title: Introduction
   description: State is a core concept in any application. As values change through user interactions or other events the application must respond; this is done through state. We will explore how to create and manage state in React, and how to handle user events.

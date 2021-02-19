@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.6-add-events
+uid: learn.language.react-states-events.6-add-events
 metadata:
   title: Add event handlers and update state
   description: Add a method to handle clicks, code to update state, and test your results.

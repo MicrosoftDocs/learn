@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.5-update-state
+uid: learn.language.react-states-events.5-update-state
 metadata:
   title: Update state
   description: Use a function to update state values.

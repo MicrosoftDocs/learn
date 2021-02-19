@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.4-events
+uid: learn.language.react-states-events.4-events
 metadata:
   title: Work with user events
   description: Learn the concepts you'll need to create event handlers and some common patterns.

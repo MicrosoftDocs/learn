@@ -1,12 +1,12 @@
-Storing state in the core component of our application (`Recipe`) allows us to read the current values of all important properties without having to interact with each individual component. We can also centralize events, ensuring data is only modified in one location.
+Storing state in the core component of our application (`Recipe`) allows us to read the current values of all important properties. We don't have to interact with each component. We can also centralize events, ensuring data is modified in only one location.
 
 ## Scenario
 
-We want to allow the user of the application to tap on the ingredient list as they complete each item. We will mark the item as `prepared` in the state, which will be reflected across the entire application. When the values change, the component will detect the updates and reevaluate as needed.
+We want to allow users of the application to tap an item in the ingredient list when they complete it. We'll mark the item as `prepared` in the state. This setting will be reflected across the application. When the values change, the component detects the updates and reevaluates as needed.
 
 ## Add the method for click events
 
-1. Open **App.jsx**
+1. Open the *App.jsx* file.
 1. Create an event listener named `ingredientClick` under the comment which reads `TODO: Create ingredientClick event listener`.
 
     ```javascript
@@ -31,7 +31,7 @@ We want to allow the user of the application to tap on the ingredient list as th
 
 In React, properties (or props) can be any JavaScript type, including functions. As a result, we can setup an event handler as a prop. This allows us to centralize event handling. Let's update `IngredientList` to use `ingredientClick` we created earlier.
 
-1. Open **IngredientList.jsx**. Notice the existing component. We will use this to demonstrate how to use events.
+1. Open the *IngredientList.jsx* file. Notice the existing component. We will use this to demonstrate how to use events.
 1. Below the comment which reads `TODO: Add onClick event` add the following JSX:
 
     ```jsx

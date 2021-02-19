@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.react-states-and-events.7-hooks
+uid: learn.language.react-states-events.7-hooks
 metadata:
   title: Hooks
   description: Use hooks to respond to state value changes.
