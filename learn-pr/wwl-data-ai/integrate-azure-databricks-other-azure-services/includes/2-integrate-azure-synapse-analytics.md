@@ -32,15 +32,25 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 ### Create a cluster
 
 1. When your Azure Databricks workspace creation is complete, select the link to go to the resource.
+
 1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
+
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
+
 1. Select **Create Cluster** to add a new cluster.
-    > [!div class="mx-imgBorder"]
-    > ![The create cluster page](../media/create-cluster.png)
+
+    ![The create cluster page](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
-1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime and **Scala 2.11**.
-1. Select the default values for the cluster configuration.
+
+1. Select the **Cluster Mode**: **Single Node**.
+
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS (Scala 2.12, Spark 3.0.1)**.
+
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
+
+1. Select the **Node Type**: **Standard_DS3_v2**.
+
 1. Select **Create Cluster**.
 
 ## Clone the Databricks archive
