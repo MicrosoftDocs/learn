@@ -1,4 +1,4 @@
-In your Azure Databricks workspace, open the **09-MLflow** folder that you imported within your user folder.
+In your Azure Databricks workspace, open the **mlflow** folder that you imported within your user folder.
 
 Open the **2. Exercise MLflow** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 
