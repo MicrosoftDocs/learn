@@ -1,16 +1,20 @@
-Hooks are a common pattern in frameworks where values change or other events occur. They are a centralized mechanism for injecting your own code to execute when state changes or other steps in an application's lifecycle.
+Hooks are a common pattern in frameworks where values change or other events occur. In a centralized way, they inject your own code to run when state changes or at other stages in an application's life cycle.
 
-## Effect hook
+## Effect Hook
 
-Hooks were introduced in an earlier unit. We're going to focus on the **Effect** Hook, which is raised whenever the state value is set, including the initial value and all subsequent updates. It allows you to execute code in response. The code you execute can have side effects, meaning you can update values as needed.
+In this unit, we'll focus on the *Effect* Hook. This Hook is raised whenever the state value is set. It's raised when the initial value and all subsequent updates are set. 
+
+The Effect Hook allows you to run code in response to the setting of the value. The code you run can have side effects. So you can update values as needed.
 
 ## When to use the Effect Hook
 
-You can use the Effect Hook whenever you need to centralize code to respond to state being changed. Imagine a complex form with numerous values. You typically want to disable the Submit button until the data to be sent to the server is in a valid state. You may have events for individual values being changed in the data (such as retrieving a list of states or provinces from the server after a country has been selected). Having each individual event listener examine the state to see if the data is ready to be sent to the server would be inefficient. With an Effect Hook, can create one function which can look at the data, and if it is in a valid state enable the submit button.
+You can use the Effect Hook whenever you need to centralize code to respond to a state change. Imagine a complex form that includes many values. You should typically disable the **Submit** button until the data that needs to be sent to the server is in a valid state. Let's say you have events for individual values that are changed in the data. After a user selects a country in your application, you need to retrieve a list of provinces from the server. 
+
+You wouldn't want each event listener to examine the state to see if the data is ready to be sent to the server. This setup would be inefficient. Instead, you could use an Effect Hook. An Effect Hook can create one function that looks at the data. If the data is in a valid state, it can enable the **Submit** button.
 
 ## useEffect
 
-To register a listener for the Effect Hook you use `useEffect`. `useEffect` accepts a parameter-less function to be executed.
+To register a listener for the Effect Hook, use `useEffect`. `useEffect` accepts a parameter-less function to be run.
 
 ```javascript
 useEffect(() => {
@@ -18,7 +22,7 @@ useEffect(() => {
 });
 ```
 
-By default, `useEffect` executes whenever state is changed on any stateful object. You can provide a dependency to only enable the hook for a particular group of objects.
+By default, `useEffect` runs whenever state is changed on any stateful object. You can provide a dependency to enable the Hook for only a particular group of objects.
 
 ```javascript
 useEffect(() => {
