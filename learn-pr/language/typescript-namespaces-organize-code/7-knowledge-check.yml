@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-namespaces-organize-code.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "What happens when you add code to a namespace?"
+    choices:
+    - content: "Declarations are removed from the global namespace."
+      isCorrect: true
+      explanation: "Correct! Namespaces remove declarations form the global namespace, providing a context for names and helping to reduce naming collisions."
+    - content: "Declarations are removed from the global namespace only if the namespace is in a separate file."
+      isCorrect: false
+      explanation: "Incorrect. Namespaces don't have to be in separate files to be removed from the global namespace."
+    - content: "Declarations contribute to 'global scope pollution'."
+      isCorrect: false
+      explanation: "Incorrect. Namespaces help avoid this problem rather than contributing to it."
+  - content: "How do you make a component available outside the scope of a namespace?"
+    choices:
+    - content: "Add the `import` keyword to the file that will use the component."
+      isCorrect: false
+      explanation: "Incorrect. The `import` keyword can be used to create an alias that describes nested namespaces."
+    - content: "Add the `export` keyword to the declaration."
+      isCorrect: true
+      explanation: "Correct! Adding the `export` keyword makes the component available for use outside of the namespace."
+    - content: "Add a `reference` statement to the file that will use the component."
+      isCorrect: false
+      explanation: "Incorrect. A `reference` statement describes the relationship between TypeScript files that contain namespaces and those that will use them."
+  - content: "What is the option that tells the TypeScript compiler to output multiple files using and containing namespaces into a single JavaScript file?"
+    choices:
+    - content: "`--multifile`"
+      isCorrect: false
+      explanation: "Incorrect. Don't use `--multifile` in this situation."
+    - content: "`--outfile`"
+      isCorrect: true
+      explanation: "Correct! The `--outfile` option instructs the compiler to output a single JavaScript file."
+    - content: "No option is required. The Typescript compiler does this operation by default."
+      isCorrect: false
+      explanation: "Incorrect. By default, the TypeScript compiler produces on JavaScript file for each input file."
+ 
