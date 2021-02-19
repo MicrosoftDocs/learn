@@ -75,6 +75,12 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
+1. Add the necessary packages to your app for Microsoft.Azure.KeyVault.
+
+   ```bash
+   dotnet add package Microsoft.Azure.KeyVault.Core
+   ```
+
 1. Enter the following command to start the code editor.
 
    ```bash
@@ -85,15 +91,17 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
 
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file.
+
+1. In the **Files** list, double-click **LensesApp.csproj**.
+
+1. Replace the value of the **TargetFramework** element with `netcoreapp3.1`.
+
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
 ## Run the lenses app to populate the lenses table
 
 We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's use it to populate a table with lenses, and then add our own lens entry.
-
-1. Install the specified framework and/or SDK at:
-
-    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
 
 1. To create and populate a table, run this command.
 
