@@ -1,5 +1,19 @@
 Congratulations! In this module, you used Azure Service Bus to decouple your sender and receiver Spring Boot applications.
 
+## Clean up resources
+
+ The below command will delete and clean up the resources you created for the purposes of this module.
+
+```bash
+az servicebus namespace delete \
+   --resource-group $AZ_RESOURCE_GROUP \
+   --namespace-name $AZ_SB_PREMIUM_NAMESPACE
+
+az group delete \
+   --name $AZ_RESOURCE_GROUP \
+   --location $AZ_LOCATION
+```
+
 ## Extra resources
 
 We recommend the following materials to learn about Java Message Service (JMS) 2.0 and how it works with Azure Service Bus:

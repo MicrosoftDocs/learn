@@ -35,6 +35,8 @@ spring.jms.servicebus.connection-string=<xxxxx>
 spring.jms.servicebus.idle-timeout=20000
 ```
 
+[REPLACE WITH AZ CLI COMMAND]
+
 > [!NOTE]
 > Please be sure to insert custom values for the configuration.
 >
@@ -102,11 +104,11 @@ The browser will display whatever is passed as the message query string paramete
 > These messages will be received in the next step of this tutorial.
 >
 
-You can proceed to view the messages in the [Service Bus explorer](https://docs.microsoft.com/azure/service-bus-messaging/explorer) in the Azure portal.
+You can proceed to view the messages in the Service Bus explorer in the Azure portal.
 
 The steps for this are as below :
 
-1. Visit the [Azure portal](https://portal.azure.com) in your browser.
+1. Visit the [https://portal.azure.com](https://portal.azure.com) in your browser.
 2. Navigate to the specific Service Bus namespace.
 3. In the left menu navigation, click on **Queues**, and then select the appropriate queue (i.e. test-queue-jms for this demo).
 4. Then click on **Service Bus explorer** on the left navigation menu.

@@ -16,7 +16,7 @@ To utilize the Azure CLI to create an Azure Service Bus Premium namespace use th
 
 ### Set up the Azure CLI
 
-If the Azure CLI isn't already installed on your machine, [install it now](https://docs.microsoft.com/cli/azure/install-azure-cli). You can check the version of your current Azure CLI installation by running:
+You will need the Azure CLI to create your service bus premium namespace. You can check the version of your current Azure CLI installation by running:
 
 ```bash
 az --version
@@ -79,18 +79,8 @@ az servicebus namespace create \
 
 This command takes a few minutes to finish. You can continue to the next unit while it finishes.
 
-> [!IMPORTANT]
-> Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources.
+> [!WARNING]
+> There is a nominal fee to use the Azure Service Bus Premium namespace - please review [Service Bus Pricing](https://azure.microsoft.com/pricing/details/service-bus/) for more details.
 >
-> The command to delete and clean up the resources are available on the Summary page, but they are available below if you are ending the course now.
->
->   ```bash
->   az servicebus namespace delete \
->    --resource-group $AZ_RESOURCE_GROUP \
->    --namespace-name $AZ_SB_PREMIUM_NAMESPACE
->   
->   az group delete \
->    --name $AZ_RESOURCE_GROUP \
->    --location $AZ_LOCATION
->   ```
+> Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources, by using the steps mentioned in the [Summary](7-summary.md#clean-up-resources).
 >
