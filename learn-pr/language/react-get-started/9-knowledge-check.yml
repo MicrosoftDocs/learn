@@ -28,14 +28,17 @@ quiz:
     - content: The output of a React project
       isCorrect: false
       explanation: JSX is used to create React. JSX is converted into JavaScript code that the browser runs.
-  - content: JSX is required for React applications
+  - content: Why would you use JSX when creating a React application?
     choices:
-    - content: "True"
+    - content: JSX is the only supported method for creating React applications
       isCorrect: false
-      explanation: You'll likely always use JSX when you create React applications, but it's not required.
-    - content: "False"
+      explanation: While you will likely always use JSX for creating React applications, it's not required.
+    - content: To allow for better management of your code, injecting the necessary logic with your HTML.
       isCorrect: true
-      explanation: You'll likely always use JSX when you create React applications, but it's not required.
+      explanation: JSX allows you to combine logic and HTML, and is the preferred method for creating React components and applications.
+    - content: JSX is supported by all browsers
+      isCorrect: false
+      explanation: JSX is not supported natively in browsers; it is a development tool to create React applications and components
   - content: What is the purpose of a bundler in web development?
     choices:
     - content: To generate JSX
