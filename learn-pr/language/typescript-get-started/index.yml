@@ -2,22 +2,22 @@
 uid: learn.language.typescript-get-started
 metadata:
   title: Get started with TypeScript
-  description: Take your first steps with TypeScript.
+  description: This module introduces you to the TypeScript language and shows you how to set up a TypeScript development environment.
   ms.date: 02/10/2021
   author: GeekTrainer
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with TypeScript
-summary: This module introduces you to the TypeScript language, why it was created, and how you can benefit by using it for JavaScript development. You'll also set up a TypeScript development environment to prepare you to complete future exercises.
+summary: This module introduces you to the TypeScript language, why it was created, and how to use it for JavaScript development. You'll also set up a TypeScript development environment for future exercises.
 abstract:  | 
-  In this module, you will:
-  - Learn how TypeScript improves your web development over using JavaScript.
+  In this module, you'll:
+  - Learn how TypeScript is an improvement over JavaScript for web development.
   - Select a TypeScript editor.
   - Install TypeScript.
   - Set up a TypeScript project in Visual Studio Code.
 prerequisites: |
-  - JavaScript
+  - Knowledge of JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
