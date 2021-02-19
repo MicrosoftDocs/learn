@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Working with data and properties in React components
-summary: The goal of React components is to create reusable blocks of code and UI. To support reusability you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
+summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.
 abstract: | 
   In this module, you will:
   - Work with props in a component.
   - Add logic to a JSX file.
   - Use map to work with lists of items.
-prerequisites: You will need knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
+prerequisites: Knowledge of HTML/CSS, JavaScript, Git, npm, and some experience with React.
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:

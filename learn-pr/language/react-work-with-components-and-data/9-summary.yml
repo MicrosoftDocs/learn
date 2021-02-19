@@ -2,7 +2,7 @@
 uid: learn.language.react-work-with-components-and-data.9-summary
 metadata:
   title: Summary
-  description: We explored how to create a component with properties. We added both a complex object and an array. We then added logic to display information dynamically.
+  description: You explored how to create a component with properties. You added both a complex object and an array. You then added logic to display information dynamically.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar

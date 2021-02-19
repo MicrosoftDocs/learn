@@ -2,7 +2,7 @@
 uid: learn.language.react-work-with-components-and-data.3-logic
 metadata:
   title: Work with logic in JSX files
-  description: JSX allows you to incorporate JavaScript and your display. We will see how to use JavaScript to make our display dynamic.
+  description: With JSX, you can incorporate JavaScript and your display. Learn how to use JavaScript to make your display dynamic.
   ms.date: 02/03/2021 
   author: GeekTrainer
   ms.author: chrhar
