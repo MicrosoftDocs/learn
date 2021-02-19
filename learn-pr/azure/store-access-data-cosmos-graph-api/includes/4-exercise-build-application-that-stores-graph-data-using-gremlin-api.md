@@ -25,6 +25,8 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
+   
+   Leave the default values for the remaining fields.
 
    ![Screenshot showing creating a new Azure Cosmos DB Account](../media/4-azure-cosmos-db-create-new-account.png)
 
