@@ -11,8 +11,8 @@ You can start the Access Review process from the notification email or by going 
 
     a. Look for an email from Microsoft asking you to review access. Here is an example email to review the access for a group.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot that shows an example email from Microsoft to review access to a group](../media/access-review-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot that shows an example email from Microsoft to review access to a group](../media/access-review-email.png)
 
     b. Click the **Start review** link to open the access review.
 
