@@ -2,9 +2,9 @@ In this module, you explored the benefits of using Azure Cognitive Search to cre
 
 You've learned how to:
 
-1. Create a search index
-2. Import data to the index
-3. Query the search index
+- Create a search index.
+- Import data to the index.
+- Query the search index.
 
 Azure Cognitive Search easily adds sophisticated cloud search capabilities to your organization using Microsoft's natural language stack that's used in Bing and Office.
 
@@ -27,5 +27,5 @@ Follow these links to find out how to incorporate search into your apps:
 
 Follow these links for guidance on performance:
 
-- [High availability and scaling](https://docs.microsoft.com/azure/search/search-capacity-planning)
-- [Search performance optimization](https://docs.microsoft.com/azure/search/search-performance-optimization)
+- [High availability](https://docs.microsoft.com/azure/search/search-capacity-planning)
+- [Search performance optimization and scaling](https://docs.microsoft.com/azure/search/search-performance-optimization)

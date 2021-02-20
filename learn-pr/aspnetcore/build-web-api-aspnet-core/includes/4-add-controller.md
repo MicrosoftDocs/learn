@@ -72,7 +72,7 @@ A *Controller* is a public class with one or more public methods known as *actio
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet ./bin/Debug/net5.0/ContosoPets.Api.dll > ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.1/ContosoPets.Api.dll > ContosoPets.Api.log &
     ```
 
 1. Run the following command:

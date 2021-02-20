@@ -10,7 +10,7 @@ If you're working on your local machine, right-click on this image, and save it 
     wget https://github.com/MicrosoftDocs/mslearn-connect-app-to-azure-storage/blob/main/images/docs-and-friends-selfie-stick.png?raw=true -O docs-and-friends-selfie-stick.png
     ```
 
-In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
+    In both cases, the name of the image should be _docs-and-friends-selfie-stick.png_.
 
 ::: zone pivot="csharp"
 
@@ -18,7 +18,7 @@ In both cases, the name of the image should be _docs-and-friends-selfie-stick.pn
 
 To work with individual blob objects in your Azure Storage account, you use a `BlobClient` object. To get a `BlobClient` object is, call the `GetBlobClient` method on the `BlobContainerClient` object of the container where the blob will be stored. When calling the `GetBlobClient` method, you also supply a name for the blob in the container. For our example, the name of the blob will be the same as the name of our file.
 
-2. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage.
+1. After you have a `BlobClient` object, you can call the `Upload` method to upload a file to Azure Blob Storage.
 
     ```csharp
     string blobName = "docs-and-friends-selfie-stick";
@@ -27,13 +27,13 @@ To work with individual blob objects in your Azure Storage account, you use a `B
     blobClient.Upload(fileName, true);
     ```
 
-The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
+    The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
 
 ## List objects in an Azure Blob Storage container
 
 To validate that our program worked, we'll exercise another capability of the **Azure Storage Blobs SDK** to list the objects stored in a container in blob storage. This can be done by calling the `GetBlobs` method on a `BlobContainerClient` object. The `GetBlobs` method returns a pageable list of `BlobItem` objects that contain data about each blob in the container.
 
-3. Add the following code to your program after the code you previously added.
+1. Add the following code to your program after the code you previously added.
 
     ```csharp
     var blobs = container.GetBlobs();
@@ -43,9 +43,9 @@ To validate that our program worked, we'll exercise another capability of the **
     }
     ```
 
-This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
+    This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ container. It then iterates through each blob, printing out the name of the blob, the date and time the blob was created, and the size of the blob. When you run your program, this code should appear as a single line for the one image that has been uploaded.
 
-4. The final **Program.cs** file should look like this if you want to check your work.
+1. The final **Program.cs** file should look like this if you want to check your work.
 
     ```csharp
     using System;
@@ -94,14 +94,14 @@ This code calls `GetBlobs` on the `BlobContainerClient` object for the _photos_ 
 
 ## Run the app
 
-5. Build and run the application to verify everything works, and upload your image to Azure Blob Storage.
+1. Build and run the application to verify everything works, and upload your image to Azure Blob Storage.
 
-> [!NOTE]
-> Make sure you're in the PhotoSharingApp directory.
-    
-   ```dotnetcli
-        dotnet run
-   ```  
+    > [!NOTE]
+    > Make sure you're in the PhotoSharingApp directory.
+
+     ```dotnetcli
+     dotnet run
+     ```  
 
 ::: zone-end
 
@@ -119,7 +119,7 @@ You have learned the essentials of working with **Azure Storage Blobs** SDK pack
 
 To work with blob objects in your Azure Storage container, you use a `BlockBlobClient` object. The `BlockBlobClient` object has methods to upload, download, list, and delete blob objects in a container. To get a `BlockBlobObject`, call the method `getBlockBlobClient` on the `ContainerClient` object.  Then, you can use the `uploadFile` method to upload your image to Azure Storage.
 
-2. Add this code to your program immediately after the code that creates the container.
+1. Add this code to your program immediately after the code that creates the container.
 
     ```javascript
     const filename = 'docs-and-friends-selfie-stick.png';
@@ -129,7 +129,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
 ## List objects in an Azure Blob Storage container
 
-3. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
+1. To verify that our code is working, we can call the `listBlobsFlat` method on the `ContainerClient` object in our program.
 
     ```javascript
     let blobs = containerClient.listBlobsFlat();
@@ -138,9 +138,9 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     }
     ```
 
-This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
+    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
 
-4. The final file should look like this.
+1. The final file should look like this.
 
     ```javascript
     #!/usr/bin/env node
@@ -179,13 +179,13 @@ This code will print all the blobs in our Azure Blob Storage container with the 
 
 ## Run the app
 
-5. Build and run the application.
+1. Build and run the application.
 
     > [!NOTE]
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-        node index.js
+    node index.js
     ```
 
     > [!TIP]

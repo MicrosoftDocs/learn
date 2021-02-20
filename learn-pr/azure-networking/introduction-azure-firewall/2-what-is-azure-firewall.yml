@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-firewall.2-what-is-azure-firewall
+title: What is Azure Firewall?
+metadata:
+  title: What is Azure Firewall?
+  description: Learn the basics and features Azure Firewall and Azure Firewall Manager.
+  ms.date: 12/28/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-what-is-azure-firewall.md)]

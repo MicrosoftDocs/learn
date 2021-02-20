@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.user-accounts-azure-active-directory
+title: Manage external user accounts in Azure Active Directory
+metadata:
+  title: Manage external user accounts in Azure Active Directory
+  description: "Manage external user accounts in Azure Active Directory"
+  ms.date: 02/18/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-user-accounts-azure-active-directory.md)]

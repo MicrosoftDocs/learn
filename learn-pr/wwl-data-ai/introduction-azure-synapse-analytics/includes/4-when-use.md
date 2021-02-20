@@ -20,11 +20,11 @@ Azure Synapse Analytics can capture, store and analyze data in real-time or near
 
 Azure Synapse Pipelines enables you to ingest, prepare, model and serve the data to be used by downstream systems. This can be used by components of Azure Synapse Analytics exclusively.
  
-![Modern data warehouse process pre Azure Synapse Analytics](../media/synapse-azure-process.png)
+![Modern data warehouse process with Azure Synapse Analytics](../media/synapse-only-process.png)
 
 It can also interact with existing Azure services that you may already have in place for your existing analytical solutions.
  
-![Modern data warehouse process with Azure Synapse Analytics](../media/synapse-only-process.png)
+![Modern data warehouse process pre Azure Synapse Analytics](../media/synapse-azure-process.png)
 
 ## Integrated analytics
 

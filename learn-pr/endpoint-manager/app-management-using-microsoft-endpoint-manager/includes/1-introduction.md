@@ -30,8 +30,8 @@ When apps are managed in Intune, administrators can:
 
   In this module, you will:
 
-  - Understand the how your organization's apps can be can be configured and protected.
-  - Understand about the app lifecycle.
+  - Understand how your organization's apps can be configured and protected.
+  - Understand the app lifecycle.
   - Learn about the data protection framework using app protection policies.
 
 ## Prerequisites

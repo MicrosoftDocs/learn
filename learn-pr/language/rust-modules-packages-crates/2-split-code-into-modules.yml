@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-modules-packages-crates.2-split-code-into-modules
+metadata:
+  title: Split code into modules
+  description: Organize your code better by splitting code into modules.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Split code into modules
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-split-code-into-modules.md)]
