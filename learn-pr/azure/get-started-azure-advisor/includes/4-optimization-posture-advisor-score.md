@@ -1,19 +1,22 @@
+As you've learned, Azure Advisor continually analyzes your cloud environment to determine whether your workloads are following documented best practices for cost, security, reliability, performance, and operational excellence.
+
 ## What is Advisor Score?
 
-As you've learned, Azure Advisor continually analyzes your cloud environment to determine whether your workloads are following documented best practices for cost, security, reliability, performance, and operational excellence. As part of the process, Advisor then aggregates its findings into a single score – the **Advisor Score**.
+Advisor aggregates its findings into a single score – the **Advisor Score**.
 
-The Advisor Score consists of an overall score of your entire workload. It is also further broken down into five individual category scores, each representing one of the five pillars of the Azure Well-Architected Framework.
+The Advisor Score consists of an overall score for your entire workload. It is also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
 
 With just a quick glance, Advisor Score helps you to:
 
-- Understand where you are in your workload optimization process
-- Know which services or resources are consumed well and which are not
-- Prioritize your actions, based on recommendations, to maximize the outcome
-- Track and report the progress you're making
+- Understand how well you're following the best practices defined by Advisor and the Well-Architected Framework
+- Prioritize which optimizations you should act on first to maximize your impact
+- Track and report on the progress you're making
 
-### How is an Advisor Score calculated?
+### How is your Advisor Score calculated?
 
 Advisor displays your category scores and your overall Advisor Score as percentages.
+
+:::image type="content" source="../media/azure-advisor-score-page.png" alt-text="Screenshot showing your Advisor score page." lightbox="../media/azure-advisor-score-page.png":::
 
 - A score of 100% in any category means all your resources, assessed by Advisor, follow the best practices that Advisor recommends.
 - By contrast, a score of 0% means that none of your resources, assessed by Advisor, follows Advisor recommendations.
@@ -35,19 +38,33 @@ The Advisor Score would be 0.84 or **84 %** as shown in the following equation:
 
 The scores for multiple subscriptions are calculated a bit differently. Each category score is aggregated according to resources consumed by each subscription.
 
+### Scoring methodology
+
+How Advisor calculates your score can be summarized in four steps. At the category level:
+
+1. Advisor calculates the retail cost of impacted resources. These resources are the ones in your subscriptions that have at least one recommendation in Advisor.
+1. Advisor calculates the retail cost of assessed resources. These resources are the ones monitored by Advisor, whether they have any recommendations or not.
+1. For each recommendation type, Advisor calculates the healthy resource ratio. This ratio is the retail cost of impacted resources divided by the retail cost of assessed resources.
+1. Advisor applies these additional weights to the healthy resource ratio in each category:
+    - Resources that you spend more on are weighted heavier than those you spend less on (since they're probably more important to you)
+    - Resources with long-standing recommendations will count more against your score.
+    - Recommendations with greater impact are weighted heavier than recommendations with lower impact.
+    - Resources that you postpone or dismiss in Advisor are removed from your score calculation entirely.
+
+
 ## Use Advisor Score to prioritize your workflow
 
 As we've learned, the higher the Advisor Score, the more in line your workloads and subscriptions are with Azure best practices for optimization. Understanding the different components of Advisor Score helps you to prioritize the actions you take when addressing the issues that are raised by Azure Advisor.
 
-- The **Advisor Score** gives you a baseline for how your workload or subscriptions are doing overall. You can also see the historical trends to understand and track your progress.
-- The **Score by category** tells you how each individual category rates on it's own and lets you see which categories are most impacting your overall score.
+- The **Advisor Score** gives you a baseline for how your workloads or subscriptions are doing overall. You can also see the historical trends to understand and track your progress.
+- The **Score by category** tells you how each individual category rates on its own and lets you see which categories are most impacting your overall score.
 - The **Category score impact** lets you quickly see which outstanding recommendations will improve your score the most. This value reflects both the importance of the recommendation and how easy it would be to apply the recommendation.
 
 Your Advisor Score changes as you remediate issues by adopting the best practices that Advisor recommends. Focusing on applying Advisor recommendations that will have the greatest impact on your Advisor Score will help you make the most progress as you address these issues.
 
 ### Monitor your progress over time
 
-You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. This lets you set benchmarks to help you achieve your goals.
+You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. This lets you set baselines to help you achieve your goals.
 
 You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score.
 

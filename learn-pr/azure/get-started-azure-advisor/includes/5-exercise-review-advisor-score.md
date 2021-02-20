@@ -34,7 +34,7 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 
 1. Select a recommendation from the **Description** list to review it in more detail and to see ways in which you can remediate the issue that was flagged. For this exercise, we are looking at the recommendation for **Right-size or shutdown underutilized virtual machines** because its **Cost score impact** is greatest. But feel free to select any active recommendation you see.
 
-   After making your selection, a more detailed page opens showing the resources affected and recommended actions you can take to resolve the issues. You can work on resolving the issues right now, or if you’re not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources.
+   After making your selection, a more detailed page opens showing the resources affected and recommended actions you can take to resolve the issues. You can work on resolving the issues right now, or if you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources.
 
 When you do apply any of the recommendations, your Advisor Score will improve! It can take up to 24 hours for the score to change, so check back in a day or so to see how much higher it is.
 

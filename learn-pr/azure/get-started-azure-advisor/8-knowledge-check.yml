@@ -9,7 +9,7 @@ metadata:
   ms.author: darasera
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 10
 quiz:
   questions:
   - content: "Azure Advisor provides recommendations for _________."
@@ -27,16 +27,16 @@ quiz:
     choices:
     - content: "Postpone the recommendation and deal with it later"
       isCorrect: false
-      explanation: "While this is one option you can choose, you could also follow the link to resolve the issue now or just dismiss it all together."
+      explanation: "You could choose this option, but you could also follow the link to resolve the issue now or just dismiss it altogether."
     - content: "Follow the link to take steps to resolve the issue"
       isCorrect: false
-      explanation: "This is one of several options to choose from. You could also decide to postpone or dismiss the recommendation."
+      explanation: "You could choose this option, but you could also decide to postpone or dismiss the recommendation."
     - content: "Dismiss the recommendation all together so it doesn't show up again"
       isCorrect: false
-      explanation: "Although this is one option, you could also follow the link to resolve the issue now or postpone it and handle it later."
+      explanation: "You could choose this option, but you could also follow the link to resolve the issue now or postpone it and handle it later."
     - content: "All of the above"
       isCorrect: true
-      explanation: "You have several options for handling recommendations. You can follow the provided link for steps on how to fix the issue. Or you can choose to either postpone or dismiss the recommendation."
+      explanation: "You have several options for handling recommendations. You can follow the provided link for steps on how to fix the issue, or you can choose to either postpone or dismiss the recommendation."
   - content: "What is the highest possible Advisor Score you can receive in any of the five categories that Advisor checks?"
     choices:
     - content: "10, since the Advisor score is based on a scale of 1 to 10."
@@ -48,7 +48,7 @@ quiz:
     - content: "100%, since you can score 100% in each of the five categories."
       isCorrect: true
       explanation: "Each of the five categories has a highest potential score of 100. A score of 100% in any category means all your resources follow the best practices that Advisor recommends."
-  - content: "Which of these is **not** recommended as part of a good general workflow for how to manage your Advisor Score?"
+  - content: "Which of these actions is **not** recommended as part of a good general workflow for how to manage your Advisor Score?"
     choices:
     - content: "If your Advisor Score falls below your target goal, analyze the category scores to see what is most in need of addressing."
       isCorrect: false
@@ -61,12 +61,12 @@ quiz:
       explanation: "That's right! Looking at the category score impact for each recommendation to see which ones will produce the most benefit when addressed is absolutely part of a good general workflow for how to manage your Advisor Score."
   - content: "What is the difference between Advisor Alerts and Advisor Recommendation Digests?"
     choices:
-    - content: "Alerts periodically sends you a summary of all your active recommendations while Recommendation Digests only notifies you when a new recommendation is available."
+    - content: "Alerts periodically send you a summary of all your active recommendations while Recommendation Digests only notify you when a new recommendation is available."
       isCorrect: false
-      explanation: "Alerts sends you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests sends notifications that summarize all your active recommendations, across different categories."
-    - content: "Alerts only notifies you when a new recommendation is available while Recommendation Digests periodically sends you a summary of all your active recommendations."
+      explanation: "Alerts send you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests send notifications that summarize all your active recommendations, across different categories."
+    - content: "Alerts only notify you when a new recommendation is available while Recommendation Digests periodically send you a summary of all your active recommendations."
       isCorrect: true
-      explanation: "Alerts sends you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests sends notifications that summarize all your active recommendations, across different categories."
-    - content: "Nothing, really. There is essentially no difference between the two."
+      explanation: "Alerts send you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests send notifications that summarize all your active recommendations, across different categories."
+    - content: "Nothing. There's essentially no difference between the two."
       isCorrect: false
-      explanation: "Alerts sends you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests sends notifications that summarize all your active recommendations, across different categories."
+      explanation: "Alerts send you an alert notification whenever a new recommendation is available for one of your resources. Recommendation Digests send notifications that summarize all your active recommendations, across different categories."

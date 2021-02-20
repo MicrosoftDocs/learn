@@ -13,7 +13,7 @@ summary: Learn how to use Azure Advisor to optimize your Azure workload usage, l
 abstract: |
   After completing this module, you'll be able to:
   - Identify the areas that Advisor analyzes when making recommendations
-  - View and remediate issues that Advisor’s recommendations have identified
+  - View and remediate issues that Advisor's recommendations have identified
   - Understand the Advisor Score and how it helps prioritize recommendations
 prerequisites: |
   - Read access or better to one Azure subscription with active subscriptions and provisioned resources

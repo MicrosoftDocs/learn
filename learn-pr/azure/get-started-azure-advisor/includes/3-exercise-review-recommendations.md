@@ -14,7 +14,7 @@ Now, let's walk through a real world example to see how Advisor can work in your
 
     For this exercise, we'll use an example from the cost category. If you have at least one recommendation in the cost category, go ahead select the **Cost** tile. Otherwise, select a tile that shows at least one recommendation.
 
-    If you don’t have any recommendations, it could mean that you are already following all our best practices for your deployed resources. Or it might mean that you don’t have any Azure subscriptions or resources or sufficient permissions to access them.
+    If you don't have any recommendations, it could mean that you are already following all our best practices for your deployed resources. Or it might mean that you don't have any Azure subscriptions or resources or sufficient permissions to access them.
 
     :::image type="content" source="../media/azure-advisor-select-cost.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-select-cost.png":::
 
@@ -41,4 +41,4 @@ Now, let's walk through a real world example to see how Advisor can work in your
    :::image type="content" source="../media/advisor-details-dashboard-postpone-dismiss.png" alt-text="Screenshot highlighting postpone and dismiss options." lightbox="../media/advisor-details-dashboard-postpone-dismiss.png":::
 
 > [!NOTE]
-> If you’re not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources.
+> If you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources.

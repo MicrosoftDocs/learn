@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.get-started-azure-advisor.7-share-recommendations-best-practices
-title: Share recommendations and maintain best practices
+title: Share recommendations and stay on top of best practices
 metadata:
-  title: Share recommendations and maintain best practices
-  description: TBA
+  title: Share recommendations and stay on top of best practices
+  description: Learn how to manage your Azure Advisor recommendations and apply documented best practices.
   ms.date: 02/18/2021
   author: danterasera
   ms.author: darasera

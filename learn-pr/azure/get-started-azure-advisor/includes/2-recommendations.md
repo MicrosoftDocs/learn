@@ -1,6 +1,8 @@
+Let's get started by going to your Azure account on the Azure portal.
+
 ## Where can I find Advisor?
 
-Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-portal=true). Here are a few different ways you can get to it:
+Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a few different ways you can get to it:
 
 - Type "advisor" in the search bar at the top of the portal. Then select **Advisor** from the list of services.
 
@@ -14,7 +16,7 @@ Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-port
 
    :::image type="content" source="../media/advisor-from-all-services.png" alt-text="Screenshot showing where to find Advisor under All services." lightbox="../media/advisor-from-all-services.png":::
 
-After you do any one of these three, the Advisor dashboard is displayed.
+After you take one of the previous three steps, you'll see the Advisor dashboard.
 
 :::image type="content" source="../media/azure-advisor-overview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
 
@@ -35,6 +37,8 @@ As you'll notice in the image above, Advisor gives you recommendations for the f
 Think of Azure Advisor as your personalized cloud consultant. It gives you messages that provide information on best practices to optimize the setup of your Azure services.
 
 Advisor analyzes your *resource configuration* and *usage telemetry* and then gives you actionable recommendations  that can help you improve the cost effectiveness, performance, reliability, and security of your Azure resources, as well as your operational excellence.
+
+:::image type="content" source="../media/how-advisor-works.svg" alt-text="Diagram showing how Azure Advisor makes custom recommendations for resource optimization based on your workloads.":::
 
 ### Examples of Advisor recommendations
 

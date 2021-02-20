@@ -41,7 +41,7 @@ That's it! Once the alert is configured and saved, you'll be notified whenever a
 
 ## Recommendation digests
 
-Another useful tool in managing your Advisor recommendations is through recommendation digests. This feature lets you configure periodic notifications that summarize all your active recommendations, across different categories. And similar to Advisor alerts, you can choose how you want to be notified, such as through email, sms or action groups.
+Another useful tool in managing your Advisor recommendations is through recommendation digests. This feature lets you configure periodic notifications that summarize all your active recommendations, across different categories. And similar to Advisor alerts, you can choose how you want to be notified, such as through email, SMS or action groups.
 
 ### How do I set up a recommendation digest?
 
@@ -61,6 +61,18 @@ Specify similar configurations as you did for Advisor Alerts:
 :::image type="content" source="../media/azure-advisor-recommendation-digest.png" alt-text="Screenshot showing the Add and Advisor recommendation digest page." lightbox="../media/azure-advisor-recommendation-digest.png":::
 
 After you've configured and saved the recommendation digest, you'll receive your notification as often as you indicated. The recommendation digest will provide you a summary of all your active recommendations, across the different categories you specified.
+
+## Export Advisor reports
+
+Quite often, remediating the issues that Advisor identifies is a “team sport” in that multiple people and groups must be involved to review, approve, and act on Advisor recommendations.
+
+Advisor helps with this by letting you download a summary of your recommendations as either a PDF or CSV file. In this way, you can easily share Advisor findings with your colleagues or perform your own analysis on top of the recommendation data.
+
+From the Advisor dashboard, select **Download as CSV** or **Download as PDF** on the action bar.
+
+:::image type="content" source="../media/azure-advisor-export-recommendations.png" alt-text="Screenshot showing how to export Advisor recommendations." lightbox="../media/azure-advisor-export-recommendations.png":::
+
+The downloaded file includes any filters you applied to the Advisor dashboard. In addition, if you select the download option while viewing a specific recommendation category or recommendation, the downloaded summary only includes information for that category or recommendation.
 
 ## API
 
