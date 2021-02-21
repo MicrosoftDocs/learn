@@ -1,4 +1,10 @@
-Migrate to the cloud securely and efficiently—on your own terms.
+
+
+- Increase performance
+- Scale Applications and Workloads on demand
+- Reliability
+- Optimize costs
+- Security
 
 
 ## Increase performance
@@ -52,6 +58,8 @@ Confidently migrate your data and workloads to Azure with best practices, expert
 
 ![Optimize IT Spend using the Cloud.](../media/optimize-it-spend.png)
 
+https://azure.microsoft.com/en-us/resources/forrester-economic-impact-azure-iaas/
+
 ## Security
 
 Azure provides a strong secure foundation to strengthen your security posture across operations, technology and partnerships.
@@ -59,8 +67,6 @@ Azure provides a strong secure foundation to strengthen your security posture ac
 - Invest $1B annually in cybersecurity
 - Have over 3500 global security experts to monitor and secure the environment Azure resources.
 - Benefit from the Microsoft Intelligent Security Graph, which uses trillions of signals from Microsoft services and systems around the globe to identify new and evolving threats.
-
-
 
 Protect workloads across your hybrid environments with intelligent security services backed by 3,500 cybersecurity professionals. Reduce costs and complexity with a highly secure cloud foundation managed by Microsoft. Use multi-layered, built-in security controls and unique threat intelligence from Azure to help identify and protect against rapidly evolving threats.
 

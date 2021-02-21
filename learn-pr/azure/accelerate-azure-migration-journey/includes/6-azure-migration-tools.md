@@ -1,6 +1,6 @@
 This unit examines tools provided by Microsoft to enable successful migrations to Azure. 
 
-The learner will gain introductory knowledge of the tools available to support their Azure migration. 
+tools available to support their Azure migration. 
 
 ## Azure Migrate
 A central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud.
@@ -46,9 +46,34 @@ Execute a complete migration with near-zero downtime:
 
 ## Azure App Service Migration Assistant
 
+Bring your web apps to the cloud with minimal or no code changes using the Azure App Service Migration Assistant - a free and simple tool to automatically migrate .NET web applications from on-premises to the cloud.
+
+
+Get a free compatibility report for your external app
+Run a scan on your web app’s public URL for a report of the technologies it uses and whether App Service fully supports them. If compatible, you’ll be guided to download the migration assistant to simplify your migration.
+
+
+
+Assess and migrate your on-premises .NET, Java, and Linux web apps to Azure
+Download the App Service migration assistant—a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
+
+- Migrate .NET web apps from Windows OS to App Service.
+- App Service migration assistant—for Java on Apache Tomcat Preview (Linux)
+- App Service migration assistant—for Java on Apache Tomcat Preview (Windows)
+
+Download prerelease software to migrate Java web apps running on Apache Tomcat web servers to App Service. Or, migrate on-premises Docker containers running on Linux to App Service using Docker Hub or Azure Container Registry.
+
+
+Simplify the migration of your web apps to the cloud with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance on how to move your web app to App Service.
+
+
+Run a scan on your web app’s public URL for a report of the technologies it uses and whether App Service fully supports them. If compatible, you’ll be guided to download the migration assistant to simplify your migration.
+https://azure.microsoft.com/en-us/services/app-service/migration-assistant/
+
 ## Azure Arc
 
 ## Smart Tool
+
 From business planning to training to security and governance, find out what you need to do to prepare for your Microsoft Azure migration with SMART—the Strategic Migration Assessment and Readiness Tool.
 
 https://docs.microsoft.com/en-us/assessments/?mode=pre-assessment&session=local
