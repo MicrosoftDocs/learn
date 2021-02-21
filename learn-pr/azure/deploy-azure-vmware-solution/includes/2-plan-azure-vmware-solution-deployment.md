@@ -25,8 +25,8 @@ The following Azure components need to be factored in prior to AVS deployment:
 
 Use an Azure account in an Azure subscription to deploy AVS. The Azure subscription must meet one of the two criteria listed below:
 
-1. A subscription under an Azure Enterprise Agreement (EA) with Microsoft.
-1. A Cloud Solution Provider (CSP) managed subscription under an existing CSP Azure offers contract or an Azure plan.
+- A subscription under an Azure Enterprise Agreement (EA) with Microsoft.
+- A Cloud Solution Provider (CSP) managed subscription under an existing CSP Azure offers contract or an Azure plan.
 
 For EA customers, a support ticket needs to be open for host allocation. It may take up to five business days to confirm the request.
 
@@ -36,7 +36,7 @@ The Microsoft.AVS resource provider needs to be registered before provisioning h
 
 ## Assess migration pattern using Azure Migrate
 
-Azure Migrate can be used to assess the on-premises VMware environment for AVS readiness. The Azure Migrate appliance for VMware needs to be set up. The appliance will then discover on-premises VMs. The appliance sends metadata and performance information to the Azure Migrate project. 
+Azure Migrate can be used to assess the on-premises VMware environment for AVS readiness. The Azure Migrate appliance for VMware needs to be set up. The appliance will then discover on-premises VMs. The appliance sends metadata and performance information to the Azure Migrate project.
 
 There are two types of sizing criteria to create AVS assessments within the Azure Migrate project:
 

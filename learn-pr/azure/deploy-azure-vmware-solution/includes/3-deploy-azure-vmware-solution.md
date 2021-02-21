@@ -52,7 +52,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
 ## Create Azure Bastion host
 
-After AVS is deployed, you'll create an Azure Bastion host. The Azure Bastion host provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion host isn't needed. Your comapany may want to keep the resource as a back up in case you have connectivity issues with ExpressRoute in the future.
+After AVS is deployed, you'll create an Azure Bastion host. The Azure Bastion host provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion host isn't needed. Your company may want to keep the resource as a back up in case you have connectivity issues with ExpressRoute in the future.
 
 1. In the Azure portal, search for and create a **Bastion** host.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:

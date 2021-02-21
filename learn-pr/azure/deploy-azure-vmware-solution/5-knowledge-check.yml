@@ -13,45 +13,36 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following best describes Linux infrastructure as a service (IaaS) on Azure?
+  - content: When you try to deploy Azure VMware Solution, you receive an error stating "NoRegisteredProviderFound." What should you try next?
     choices:  
-    - content: Azure virtual machines running Linux, provisioned within a virtual network infrastructure
+    - content: Try to redeploy and see if the same error message displays.
+      isCorrect: false
+      explanation: Redeploying AVS will not help your AVS environment as the error is about a separate configuration component.
+    - content: Register Microsoft.AVS resource provider for the subscription.
       isCorrect: true
-      explanation: With IaaS, you define and provision your own virtual machines and virtual infrastructure within Azure.
-    - content: A distributed, multitenant Linux deployment maintained by Microsoft and powered by Azure servers
+      explanation: In order to deploy AVS, the Microsoft.AVS resource provider must be registered with the subscription for deployment.
+    - content: Try deploying Azure VMware Solution in a different region.
       isCorrect: false
-      explanation: IaaS is based on virtual machines and infrastructure, not a single shared host.
-    - content: A collection of platform services to which you can deploy Linux-based applications
-      isCorrect: false
-      explanation: This is a description of platform as a service (PaaS) computing.
-    - content: A set of Microsoft datacenter services that can host and manage your hardware infrastructure
-      isCorrect: false
-      explanation: Azure is a cloud computing service, not a datacenter provider or hardware colocation service.
-  - content: Which of the following Azure services is a platform as a service (PaaS) that can host Linux applications?
+      explanation: Switching regions will not help your deployment as the error does not relate to a regional issue.
+  - content: If you can't connect to your Azure VMware Solution environment from on-premises, what would be a good configuration step to take or inspect?
     choices:  
-    - content: Azure Cognitive Services search APIs
+    - content: Delete Azure VMware Solution deployment and redeploy service.
       isCorrect: false
-      explanation: Cognitive Services provides search APIs that are powered by AI, and that can be used by applications on any platform. It doesn't host applications.
-    - content: Virtual machines
-      isCorrect: false
-      explanation: Virtual machines are a component of infrastructure as a service (IaaS) computing.
-    - content: Azure Migrate
-      isCorrect: false
-      explanation: Azure Migrate is a set of tools to help migrate workloads to Azure. It can help you to migrate Linux-based workloads and applications, but it isn't a hosting service.
-    - content: Azure App Service
+      explanation: Redeploying the service with the same configuration will not ensure you have network connectivity to your on-premises VMware environment.
+    - content: Ensure all gateways, including the ExpressRoute provider's service, support 4-byte Autonomous System Number (ASN).
       isCorrect: true
-      explanation: Azure App Service is a managed web application hosting platform that can host applications on Linux.
-  - content: Which of the following is *not* a benefit of using an endorsed Linux distribution on Azure?
+      explanation: AVS uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute and the AVS ExpressRoute.
+    - content: Check permissions on the subscription and resource group.
+      isCorrect: false
+      explanation: If you were able to deploy AVS, you already have the right permissions on the private cloud.
+  - content: When you try to deploy Azure VMware Solution, you receive an error message highlighting there are steps to take before node deployment. How do you resolve the error so you can continue with the deployment?
     choices:  
-    - content: Availability of optimized, regularly-updated VM images
+    - content: Use a different region.
       isCorrect: false
-      explanation: Microsoft works with partners to provide VM images optimized for Azure, and requires them to publish updates to their images regularly.
-    - content: SLA connectivity guarantees
+      explanation: Picking a different region will result in the same error message. There's a step you forgot before deploying your AVS environment.
+    - content: Check permissions on the subscription and resource group.
       isCorrect: false
-      explanation: The VM platform SLA of Azure applies to Linux virtual machines only when endorsed images are used.
-    - content: Enhanced compatibility with additional programming languages
+      explanation: If you were able to try and deploy the service without issues, you have the right permissions already assigned.
+    - content: Open up a new support ticket to have hosts allocated.
       isCorrect: true
-      explanation: Endorsed distributions don't provide any benefits related to specific programming languages.
-    - content: Distribution-specific benefits like SAP integration
-      isCorrect: false
-      explanation: Microsoft and its endorsed distribution partners have created unique benefits, such as SAP integration and Azure Oracle Interconnect.
+      explanation: In order to deploy AVS, you must open up a support request so your bare metal hosts are allocated to your subscription.
