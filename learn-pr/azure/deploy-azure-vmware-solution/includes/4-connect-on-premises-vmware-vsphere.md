@@ -108,7 +108,7 @@ If NSX-T is used to host the DHCP server, a DHCP server needs to be created. A n
 1. In NSX-T Manager, select **Networking > DHCP** and then select **Add Server**.
 1. Select **DHCP** for the **Server Type**, provide the server name and IP address, and then select **Save**.
 
-    :::image type="content" source="../media/4-dhcp-server-settings.png" alt-text="Screenshot demonstrating where the DHCP server is specified, the IP address is configured, and where the settings are saved.":::
+    :::image type="content" source="../media/4-dhcp-server-settings.png" alt-text="Screenshot demonstrating where the DHCP server is specified, the IP address that's configured, and where the settings are saved.":::
 
 1. Select **Tier 1 Gateways**.
 1. Select the vertical ellipsis on the Tier-1 gateway.
