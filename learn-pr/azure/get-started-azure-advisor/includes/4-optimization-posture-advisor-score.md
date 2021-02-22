@@ -1,16 +1,16 @@
 As you've learned, Azure Advisor continually analyzes your cloud environment to determine whether your workloads are following documented best practices for cost, security, reliability, performance, and operational excellence.
 
-## What is Advisor Score?
+## What is  Advisor Score?
 
-Advisor aggregates its findings into a single score – the **Advisor Score**.
+Advisor aggregates its findings into a single number – **Advisor Score**.
 
-The Advisor Score consists of an overall score for your entire workload. It is also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
+Advisor Score consists of an overall rating for your entire workload. It's also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
 
 With just a quick glance, Advisor Score helps you to:
 
 - Understand how well you're following the best practices defined by Advisor and the Well-Architected Framework
-- Prioritize which optimizations you should act on first to maximize your impact
-- Track and report on the progress you're making
+- Prioritize which optimizations you should make to maximize your impact
+- Track and report on your progress
 
 ### How is your Advisor Score calculated?
 
@@ -30,7 +30,7 @@ As an example, for a single subscription, the Advisor Score is the simple mean o
 - Operational excellence = 77
 - Performance = 100
 
-The Advisor Score would be 0.84 or **84 %** as shown in the following equation:
+The Advisor Score would be 0.84 or **84%** as shown in the following equation:
 
 <!-- $$\frac{73 + 85 + 77 + 100}{4 x 100} = 0.84$$ -->
 
@@ -45,12 +45,11 @@ How Advisor calculates your score can be summarized in four steps. At the catego
 1. Advisor calculates the retail cost of impacted resources. These resources are the ones in your subscriptions that have at least one recommendation in Advisor.
 1. Advisor calculates the retail cost of assessed resources. These resources are the ones monitored by Advisor, whether they have any recommendations or not.
 1. For each recommendation type, Advisor calculates the healthy resource ratio. This ratio is the retail cost of impacted resources divided by the retail cost of assessed resources.
-1. Advisor applies these additional weights to the healthy resource ratio in each category:
-    - Resources that you spend more on are weighted heavier than those you spend less on (since they're probably more important to you)
-    - Resources with long-standing recommendations will count more against your score.
-    - Recommendations with greater impact are weighted heavier than recommendations with lower impact.
+1. Advisor applies these more weights to the healthy resource ratio in each category:
+    - Resources with a higher spend are weighted more heavily than resources with a lower spend (since they're probably more important to you).
+    - Resources with long-standing recommendations count more against your score.
+    - Recommendations with greater impact are weighted more heavily than recommendations with lower impact.
     - Resources that you postpone or dismiss in Advisor are removed from your score calculation entirely.
-
 
 ## Use Advisor Score to prioritize your workflow
 
@@ -60,15 +59,15 @@ As we've learned, the higher the Advisor Score, the more in line your workloads 
 - The **Score by category** tells you how each individual category rates on its own and lets you see which categories are most impacting your overall score.
 - The **Category score impact** lets you quickly see which outstanding recommendations will improve your score the most. This value reflects both the importance of the recommendation and how easy it would be to apply the recommendation.
 
-Your Advisor Score changes as you remediate issues by adopting the best practices that Advisor recommends. Focusing on applying Advisor recommendations that will have the greatest impact on your Advisor Score will help you make the most progress as you address these issues.
+Your Advisor Score changes as you remediate issues by adopting the best practices that Advisor recommends. By focusing on the Advisor recommendations that most affect your Advisor Score, you'll make the most progress as you address these issues.
 
 ### Monitor your progress over time
 
-You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. This lets you set baselines to help you achieve your goals.
+You can track your progress over time by seeing how much your overall score and your category scores change on a daily, weekly, and monthly basis. That way, you can set baselines to help you achieve your goals.
 
 You can tailor your use of Advisor Score to fit your particular needs, but here is a recommended general workflow for how to manage your Advisor Score.
 
-:::image type="content" source="../media/advisor-score-workflow.png" alt-text="Diagram showing the 4 steps of the Azure Advisor Score workflow - check, analyze, review, apply." border="false":::
+:::image type="content" source="../media/advisor-score-workflow.png" alt-text="Diagram showing the four steps of the Azure Advisor Score workflow - check, analyze, review, apply." border="false":::
 
 Once you set a target goal for your overall Advisor Score, you can:
 
@@ -77,4 +76,4 @@ Once you set a target goal for your overall Advisor Score, you can:
 - **Review** the category score impact for each recommendation to see which ones will produce the most benefit when addressed.
 - **Apply** the recommendations that will get you back to your goal as quickly as possible.
 
-That's it! Then just repeat this process regularly to make sure you are achieving your goals.
+That's it! Then just repeat this process regularly to make sure you're achieving your goals.
