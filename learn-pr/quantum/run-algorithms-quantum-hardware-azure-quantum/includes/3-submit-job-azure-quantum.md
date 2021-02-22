@@ -70,7 +70,7 @@ select the providers you desire to use, in case you haven't already. Follow thes
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the Workspace." border="false":::
 
 > [!NOTE] 
-> To complete this tutorial you must have access to IonQ targets
+> This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/en-us/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets
 > on your subscription. If your subscription doesn't have access to quantum
 > computing providers but you still want to try quantum computing programs, you
 > can simulate a quantum computer locally using the Quantum Development Kit. For
@@ -174,7 +174,7 @@ supporting up to 29 qubits with the same characteristics than the QPU, making it
 perfect to test jobs before running them on actual quantum hardware.
 
 > [!NOTE]
-> Keep in mind that this code will work only on quantum computing targets.
+> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/en-us/azure/quantum/concepts-targets-in-azure-quantum).
 > Optimization solvers won't be able to run this code. Specifically, any target
 > whose identifier ends with `.cpu` or `.fpga` is an optimization target and
 > won't be able to run this code. You can learn how to use optimization targets
