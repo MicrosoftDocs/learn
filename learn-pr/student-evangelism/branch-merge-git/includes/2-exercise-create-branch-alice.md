@@ -1,4 +1,4 @@
-Alice wants to add some CSS to style the cat pictures on the website, and she'll want to do this work in her own branch.
+Alice wants to add some CSS to style the cat pictures on the website, and Alice will want to do this work in their own branch.
 
 ## Setup
 
@@ -21,7 +21,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git init --bare
     ```
 
-1. Set the name of the default branch for the new repo. To accomplish this task, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
+1. Set the name of the default branch for the new repo. To accomplish this step, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
 
     ```bash
     git symbolic-ref HEAD refs/heads/main
@@ -29,7 +29,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Clone the shared repo for Alice and Bob
 
-1. Move out of this directory, and create directories for Alice and Bob to store their repos:
+1. Move up one level from this directory, and create directories for Alice and Bob to store their repos:
 
     ```bash
     cd ..
@@ -37,9 +37,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     mkdir Bob
     ```
 
-1. Clone the repo for Alice, and configure it:
+1. Clone the repo for Alice, and then configure it:
 
-    ```Bash
+    ```bash
     cd Alice
     git clone ../Shared.git .
     git config user.name Alice
@@ -48,7 +48,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 1. Clone and configure the repo for Bob:
 
-    ```Bash
+    ```bash
     cd ..
     cd Bob
     git clone ../Shared.git .
@@ -58,9 +58,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Add base files
 
-As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the *Bob8 directory.
+As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the *Bob* directory.
 
-1. Create some files by using the Linux `touch` command, and then stage them and commit by using Git:
+1. Create some files by using the Linux `touch` command, and then stage and commit them by using Git:
 
     ```bash
     touch index.html
@@ -70,7 +70,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     git commit -m "Create empty index.html, site.css files"
     ```
 
-1. Now, add some HTML to your file by using the Cloud Shell code editor, which you can open by using the `code` command. Open *index.html* in the online editor by typing `code index.html` at the terminal prompt:
+1. Now, add some HTML to your file by using the Cloud Shell code editor. You can open the editor by using the `code` command. Open *index.html* in the online editor by typing `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
@@ -95,7 +95,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     </html>
     ```
 
-1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor. Or, you can use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor. Or, you can use the accelerator key (Ctrl+S on Windows and Linux; Cmd+S on macOS).
 
 1. Change directories to the *Assets* directory, and then open *site.css* in the editor:
 
@@ -112,7 +112,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     nav, footer { background-color: #C0D8DF; }
     ```
 
-1. Save and close the file. Go back to the *Bob* directory and commit again.
+1. Save and close the file. Go back to the *Bob* directory and commit again:
 
     ```bash
     cd ..
@@ -146,13 +146,13 @@ As a final setup step, we'll add our base website files and push them to the sha
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type this command:
+    The warning is just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type this command:
 
     ```bash
     git config --global push.default simple
     ```
 
-1. You should see this output, indicating success:
+1. You should see this output, which indicates success:
 
     ```output
     Counting objects: 12, done.
@@ -166,9 +166,9 @@ As a final setup step, we'll add our base website files and push them to the sha
 
 ## Create a branch for Alice
 
-Alice wants to create a _topic branch_ named `add-style` to do her work. Let's assume the role of Alice, and then create the branch and add some code to this branch.
+Alice wants to create a _topic branch_ named `add-style` to do their work in. Let's assume the role of Alice, and then create the branch and add some code to this branch.
 
-1. Go back to the *Alice* directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
+1. Go back to the *Alice* directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date.
 
     ```bash
     cd ../Alice
@@ -186,14 +186,14 @@ Alice wants to create a _topic branch_ named `add-style` to do her work. Let's a
      * [new branch]      main     -> origin/main
     ```
 
-1. Then use the `git branch` command to create a branch named `add-style`. Then, use the `git checkout` command to switch to that branch (make it the *current branch*):
+1. Use the `git branch` command to create a branch named `add-style`. Then, use the `git checkout` command to switch to that branch (make it the *current branch*).
 
     ```bash
     git branch add-style
     git checkout add-style
     ```
 
-1. Open *site.css* in the *Alice/Assets* directory and add the following CSS class definition to the bottom of the file:
+1. In the *Alice/Assets* directory, open *site.css*. Add the following CSS class definition to the bottom of the file:
 
     ```css
     .cat { max-width: 40%; padding: 5 }
@@ -205,14 +205,14 @@ Alice wants to create a _topic branch_ named `add-style` to do her work. Let's a
     git commit -a -m "Add style for cat pictures"
     ```
 
-1. At this point, Alice wants to make her style available to everyone else, so she switches back to `main` and does a pull in case anyone else has made changes:
+1. At this point, Alice wants to make their style available to everyone else, so they switch back to `main` and do a pull in case anyone else has made changes:
 
     ```bash
     git checkout main
     git pull
     ```
 
-1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then, Alice pushes `main` from her repo to the shared repo:
+1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then, Alice pushes `main` from their repo to the shared repo.
 
     ```bash
     git merge --ff-only add-style
