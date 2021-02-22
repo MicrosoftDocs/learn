@@ -70,11 +70,7 @@ select the providers you desire to use, in case you haven't already. Follow thes
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the Workspace." border="false":::
 
 > [!NOTE] 
-> This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/en-us/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets
-> on your subscription. If your subscription doesn't have access to quantum
-> computing providers but you still want to try quantum computing programs, you
-> can simulate a quantum computer locally using the Quantum Development Kit. For
-> more information, go to the [Quantum Development Kit set up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
+> This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
 
 ## Set up the project and write your program
 
