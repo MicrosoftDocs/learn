@@ -27,10 +27,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git symbolic-ref HEAD refs/heads/main
     ```
 
-
 ### Clone the shared repo for Alice and Bob
 
-1. Move back up out of this directory, and create directories for Alice and Bob to store their repos:
+1. Move out of this directory, and create directories for Alice and Bob to store their repos:
 
     ```bash
     cd ..
@@ -38,7 +37,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     mkdir Bob
     ```
 
-1. Clone the repo for Alice, and configure:
+1. Clone the repo for Alice, and configure it:
 
     ```Bash
     cd Alice
@@ -59,9 +58,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Add base files
 
-As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the "Bob" directory.
+As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the *Bob8 directory.
 
-1. Create some files with the Linux `touch` command, then stage them and commit by using Git:
+1. Create some files by using the Linux `touch` command, and then stage them and commit by using Git:
 
     ```bash
     touch index.html
@@ -71,7 +70,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     git commit -m "Create empty index.html, site.css files"
     ```
 
-1. Now add some HTML to your file using Cloud Shell's code editor, which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
+1. Now, add some HTML to your file by using the Cloud Shell code editor, which you can open by using the `code` command. Open *index.html* in the online editor by typing `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
@@ -96,16 +95,16 @@ As a final setup step, we'll add our base website files and push them to the sha
     </html>
     ```
 
-1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor. Or, you can use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
-1. Change directories to the **Assets** directory and open **site.css** in the editor:
+1. Change directories to the *Assets* directory, and then open *site.css* in the editor:
 
     ```bash
     cd Assets
     code site.css
     ```
 
-1. Add the following CSS to it:
+1. Add the following CSS to the file:
 
     ```css
     h1, h2, h3, h4, h5, h6 { font-family: sans-serif; }
@@ -113,7 +112,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     nav, footer { background-color: #C0D8DF; }
     ```
 
-1. Save and close the file. Navigate back up to the **Bob** directory and commit again.
+1. Save and close the file. Go back to the *Bob* directory and commit again.
 
     ```bash
     cd ..
@@ -122,7 +121,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     git push
     ```
 
-1. If you see a warning like this, don't worry:
+1. If you see a warning like this example, don't worry:
 
     ```output
     warning: push.default is unset; its implicit value has changed in
@@ -147,13 +146,13 @@ As a final setup step, we'll add our base website files and push them to the sha
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type
+    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type this command:
 
     ```bash
     git config --global push.default simple
     ```
 
-1. You should see this output indicating success:
+1. You should see this output, indicating success:
 
     ```output
     Counting objects: 12, done.
@@ -167,16 +166,16 @@ As a final setup step, we'll add our base website files and push them to the sha
 
 ## Create a branch for Alice
 
-Alice wants to create a _topic branch_ named `add-style` to do her work. Let's assume the role of Alice, and then create the branch and add some code into this branch.
+Alice wants to create a _topic branch_ named `add-style` to do her work. Let's assume the role of Alice, and then create the branch and add some code to this branch.
 
-1. Navigate back to the **Alice** directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
+1. Go back to the *Alice* directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
 
     ```bash
     cd ../Alice
     git pull
     ```
 
-1. You should see a success message that looks like this:
+1. You should see a success message that looks like this example:
 
     ```output
     remote: Counting objects: 8, done.
@@ -187,20 +186,20 @@ Alice wants to create a _topic branch_ named `add-style` to do her work. Let's a
      * [new branch]      main     -> origin/main
     ```
 
-1. Then use the `git branch` command to create a branch named `add-style`, and the `git checkout` command to switch to that branch (make it the *current branch*):
+1. Then use the `git branch` command to create a branch named `add-style`. Then, use the `git checkout` command to switch to that branch (make it the *current branch*):
 
     ```bash
     git branch add-style
     git checkout add-style
     ```
 
-1. Open **site.css** in the **Alice/Assets** directory and add the following CSS class definition to the bottom of the file:
+1. Open *site.css* in the *Alice/Assets* directory and add the following CSS class definition to the bottom of the file:
 
     ```css
     .cat { max-width: 40%; padding: 5 }
     ```
 
-1. Save the changes to the file, close, and commit the change:
+1. Save the changes to the file, close the file, and then commit the change:
 
     ```bash
     git commit -a -m "Add style for cat pictures"
@@ -213,11 +212,11 @@ Alice wants to create a _topic branch_ named `add-style` to do her work. Let's a
     git pull
     ```
 
-1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then Alice pushes `main` from their repo to the shared repo:
+1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then, Alice pushes `main` from her repo to the shared repo:
 
     ```bash
     git merge --ff-only add-style
     git push
     ```
 
-Performing a fast-forward merge because the `main` branch had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit to get into because an `--ff-only` merge fails if `main` has changed, making you acutely aware that changes have occurred.
+Performing a fast-forward merge because the `main` branch had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit because an `--ff-only` merge fails if `main` has changed, making you acutely aware that changes have occurred.

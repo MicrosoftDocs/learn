@@ -9,7 +9,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     git checkout -b add-cat
     ```
 
-1. Download the zip file containing the [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip), then unzip them with these commands:
+1. Download the zip file containing the [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true), then unzip them with these commands:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip

@@ -22,7 +22,6 @@ Let's begin by creating a branch for Alice and a branch for Bob. They're both up
 
 Now let's make some changes in the branches.
 
-
 ## Make a change as Alice
 
 Start by assuming the role of Alice and make a change to the website home page. Replace the picture of Bob's cat with a picture of Alice's.
