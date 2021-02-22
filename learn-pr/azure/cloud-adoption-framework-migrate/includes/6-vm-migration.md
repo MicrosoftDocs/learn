@@ -1,12 +1,18 @@
-In this unit, you'll review Azure Migrate and how to use it to migrate Virtual Machines to Azure.
+In this unit, you'll review Azure Migrate and how to use it to migrate specific workloads to Azure.
 
 ## Virtual machine replication
 
-Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the CAF Plan module.
+Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carries over machines and insights from the assessment completed during the Cloud Adoption Framework Plan module. You can begin your replication by clicking Replicate in the tool window. Azure Migrate performs concurrent replication for up to 500 virtual machines (VMs) and can manage up to 200 concurrent migrations. If you need to do more, it’s recommended to create multiple batches. Times for replication will vary based on number and size of virtual machines along with connection speeds between your datacenter and Azure.
 
 Prepare on-premises machines for migration to Azure by following the steps described here: [Verify required changes before migrating](https://docs.microsoft.com/en-us/azure/migrate/prepare-for-migration#verify-required-changes-before-migrating).
 
 Once you had completed the previous step, you can begin your replication by clicking Replicate in the Server Migration tool window. Note: In the portal, you can select up to 10 VMs at once for migration. To migrate more machines, add them to groups in batches of 10.
+
+During the replication setup phase you can use the migration settings that your earlier Azure Migrate assessment has suggested in terms of Azure virtual machines sizes or you can specify the settings yourself.  This gives you the option to configure the VM size and storage disk settings that you feel is appropriate to the workload being migration. 
+
+Also at this stage you are asked to specifcy which subscription, resource group and virtual network your VMs will reside in after migration.  You are also able to configure availability options such as Availability Zones or Availability Sets, helping to protect your apps and data from datacenter outages and maintenance events. 
+
+Once the replication has been started you are able to track and monitor the replication of each of your VMs. 
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Azure Migrate Servers page in Azure Admin center](../media/6-vm-replication.png)

@@ -8,7 +8,7 @@ After Contoso's competitor has a data breach, Contoso tasks the network administ
 - Control who can access data
 - Audit storage access
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Exploring-Azure-Storage-Account-security-features/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHrz]
 
 ## Encryption at rest
 

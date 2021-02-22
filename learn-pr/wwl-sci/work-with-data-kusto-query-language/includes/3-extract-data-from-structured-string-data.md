@@ -18,6 +18,9 @@ AzureActivity
 
 The following example shows the use of Dynamic fields with the SigninLogs table.
 
+> [!NOTE]
+> This example is not available in the demo environment.
+
 ```kusto
 // Example query for SigninLogs showing how to break out packed fields.
 

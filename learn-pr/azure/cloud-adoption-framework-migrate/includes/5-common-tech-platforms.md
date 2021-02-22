@@ -1,6 +1,6 @@
-During migration of any organization, you will need to be prepared for a variety of technology platforms. Most migrations start with Windows and SQL server assets. But there are very few datacenters in operation today that don't also have a number of non-windows based platforms. This unit will outline Microsoft's One Migrate approach which ensures that all workloads have a clear path to cloud migration, regardless of the underlying technology platform.
+During migration of any organization, you will need to be prepared for a variety of technology platforms. Most migrations start with Windows and SQL server assets. But there are very few datacenters in operation today that don't also have a number of non-windows based platforms. This unit will outline Microsoft's unified migration approach which ensures that all workloads have a clear path to cloud migration, regardless of the underlying technology platform.
 
-## One Migrate focus
+## Unified migration focus
 
 Most migration teams are aware of the capabilities of Azure Migrate and the Azure Migrate Hub to facilitate migration of Windows and SQL Server assets. But before beginning a migration, it is important to familiarize yourself with the other technology platforms that can be completed using the same migration factory approach or the same migration process.
 
@@ -23,15 +23,15 @@ Each technology platform may have subtle differences in how the migration should
 
 **Assess workloads:** During assessment of the workloads in each wave, the architects are looking primarily for Azure compatibility and dependencies between assets. But, they should also be looking for compatibility with modernization and optimization opportunities.
 
-In the Tailwind story, the team will be evaluating each of their databases for compatibility with Azure SQL to minimize the amount of infrastructure dedicated to data hosting. The OSS databases will provide a number of potential modernizations, thanks to the various database formats supported by Azure SQL.
+In the Tailwind Traders story, the team will be evaluating each of their databases for compatibility with Azure SQL to minimize the amount of infrastructure dedicated to data hosting. The OSS databases will provide a number of potential modernizations, thanks to the various database formats supported by Azure SQL.
 
 **Migrate workloads** During migration, the team will primarily use the Azure Migrate tool to migrate the assets (VMs, Apps, and Data) to Azure. But, some technology platforms may require additional tooling.
 
-When the Tailwind team migrates their SAP platform, they will add **SAP Database Migration Option (DMO)** to their migration toolbox to ensure a smooth migration to SAP/Hana in Azure.
+When the Tailwind Traders team migrates their SAP platform, they will add **SAP Database Migration Option (DMO)** to their migration toolbox to ensure a smooth migration to SAP/Hana in Azure.
 
 **Release workloads**  Once each technology platform and workload is migrated to Azure, the team will need to test, optimize, and release production traffic to their newly migrated workloads. Some platforms may require a bit of diversity in the monitoring tools required to gain necessary clarity and get visibility into workload operations.
 
-When the Tailwind team migrates their virtual desktops, they'll likely use one of the Azure Migrate partner solutions, like Lakeside Software, to help provide a great user experience by tracking performance and identifying additional workloads for migration.
+When the Tailwind Traders team migrates their virtual desktops, they'll likely use one of the Azure Migrate partner solutions, like Lakeside Software, to help provide a great user experience by tracking performance and identifying additional workloads for migration.
 
 ## Preparing for diverse technology platforms in your sprint plan
 

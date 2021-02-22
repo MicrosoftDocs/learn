@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-firewall.3-how-azure-firewall-works
+title: How Azure Firewall works
+metadata:
+  title: How Azure Firewall works
+  description: Learn how Azure Firewall and Azure Firewall Manager protect Azure virtual networks.
+  ms.date: 12/28/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-azure-firewall-works.md)]

@@ -84,7 +84,7 @@ To run MicroK8s on macOS, use Multipass. Multipass is a lightweight VM manager f
 1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or to install Multipass with the `brew cask install multipass` command, use Homebrew.
 
     ```bash
-    brew cask install multipass
+    brew install --cask multipass
     ```
 
 1. In a command console, run the multipass launch command to configure and run the microk8s-vm image. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
