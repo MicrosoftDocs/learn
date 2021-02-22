@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect; this statement is true. The purpose of branches is to be able to isolate some changes from other changes in the same project. Git supports the ability to add as many branches and sub-branches as your project requires."            
     - content: "The default branch in a Git repo is named `master` and this branch name can never be changed."
       isCorrect: true
-      explanation: "Correct! This statement is false. By default, Git names the default branch `master, but you can rename this branch as you would any other branch." 
+      explanation: "Correct! This statement is false. By default, Git names the default branch `master`, but you can rename this branch as you would any other branch." 
   
   - content: 'Which of the following Git commands creates a new branch, and then changes your working location to the new branch?'
     choices:
@@ -63,4 +63,4 @@ quiz:
       explanation: "Incorrect. Check the location of the content that has conflicts. Git should show the incoming changes above the separator and the existing content in the `main` branch below the line."
     - content: ":::code source=\"./resources/quiz-sample-3.html\" range=\"1-11\" highlight=\"4,6,9\":::"
       isCorrect: true
-      explanation: "Correct! Git shows the entire file. Angle brackets show the content that has conflicts. A line of double dashes separates the conflicting versions. The incoming changes are shown above the separator line and the existing content in the `main` branch are shown below."
+      explanation: "Correct! Git always shows you the entire file. Git uses left and right angle brackets to surround the sections of content that have a conflict. Note that there can be more than one conflict in a file. Git uses a line of equal signs to separate two versions of content that are in conflict."
