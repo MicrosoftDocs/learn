@@ -71,7 +71,7 @@ select the providers you desire to use, in case you haven't already. Follow thes
 
 > [!NOTE] 
 > To complete this tutorial you must have access to IonQ targets
-> in your subscription. If your subscription doesn't have access to quantum
+> on your subscription. If your subscription doesn't have access to quantum
 > computing providers but you still want to try quantum computing programs, you
 > can simulate a quantum computer locally using the Quantum Development Kit. For
 > more information, go to the [Quantum Development Kit set up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
