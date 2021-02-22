@@ -20,7 +20,7 @@ You can also further specify your alerts by choosing from the following properti
 > [!NOTE]
 > Advisor alerts are currently not supported for **Security** recommendations.
 
-### How do I set up alerts
+### How do I set up alerts?
 
 You can set up alerts from the Advisor dashboard by first selecting **Alerts (Preview)** from the left panel.
 
