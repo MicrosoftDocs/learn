@@ -3,8 +3,8 @@ uid: learn.wwl.classify-images-custom-vision.get-started
 title: Get started with image classification on Azure
 metadata:
   title: Get started with image classification on Azure
-  description: "Learn about options for creating image classification solutions on Azure"
-  ms.date: 09/13/2020
+  description: "Get started with image classification on Azure"
+  ms.date: 02/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial

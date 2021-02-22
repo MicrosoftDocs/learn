@@ -48,19 +48,19 @@ The procedure to create and configure a key vault using Azure CLI is as follows.
 
      1. First, enable the vault for disk encryption. This is required:
 
-         ```Azure CLI
+         ```azurecli
          az keyvault update --name "ContosoADEKeyVault" --resource-group "ContosoResourceGroup" --enabled-for-disk-encryption "true"
          ```
 
      2. Next, run the following command to enable the key vault for deployment, if needed. This option enables the Microsoft.Compute resource provider to retrieve secrets from the key vault when it's referenced in resource creation, such as when creating a VM:
 
-         ```Azure CLI
+         ```azurecli
          az keyvault update --name "ContosoADEKeyVault" --resource-group "ContosoResourceGroup" --enabled-for-deployment "true"
          ```
 
      3. Finally, you can enable the key vault for template deployment, if needed, by allowing Resource Manager to retrieve secrets from the vault. Use the following code to enable the key vault for template deployment:
 
-         ```Azure CLI
+         ```azurecli
          az keyvault update --name "ContosoADEKeyVault" --resource-group "ContosoResourceGroup" --enabled-for-template-deployment "true"
          ```
 
