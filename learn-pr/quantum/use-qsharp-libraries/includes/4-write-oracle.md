@@ -7,7 +7,7 @@ In the next few units, you'll write a Q# program to do just that by using Grover
 Fortunately, an ISBN isn't simply a random sequence of digits. 
 Instead, the system uses check digits, a type of redundancy check historically used to detect simple errors when digits are entered manually.
 
-In the ISBN 10 system, each ISBN is a ten-digit sequence, and the last digit serves as the check. The full sequence $(x_0, x_1, \ldots, x_9)$ should satisfy the following condition: 
+In the ISBN 10 system, each ISBN is a 10-digit sequence, and the last digit serves as the check. The full sequence $(x_0, x_1, \ldots, x_9)$ should satisfy the following condition: 
 
 $$
 \left ( \sum_{i=0}^{9} (10-i) x_i \right ) \bmod 11 = 0

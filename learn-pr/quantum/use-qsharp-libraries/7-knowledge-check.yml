@@ -29,12 +29,12 @@ quiz:
       isCorrect: true
       explanation: "Correct!"
 
-  - content: "How can I use additional Q# libraries besides the standard library?" 
+  - content: "How can you use additional Q# libraries besides the standard library?" 
     choices:
-    - content: "Simply create my a Q# project and start programming."
+    - content: "Simply create a Q# project and start programming."
       isCorrect: false
       explanation: "New Q# projects automatically include the standard library by default, but using other libraries requires adding the corresponding NuGet package to the project." 
-    - content: "Add the corresponding NuGet package to my Q# project."
+    - content: "Add the corresponding NuGet package to a Q# project."
       isCorrect: true
       explanation: "Correct!"
 
