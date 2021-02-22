@@ -1,8 +1,12 @@
+
 Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads. Those tools start with Azure Migrate, but includes a number of integrated first and third party tools.
 
 ## Azure Migrate
 
-Azure Migrate provides a centralized hub to assess, migrate, and release to from on-premises servers, virtual machines from other clouds, applications, and data. It provides the following:
+Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads ("Cut Over"). 
+Azure Migrate provides a centralized hub to assess, migrate, and release to from on-premises servers, virtual machines from other clouds, applications, and data. In addition to Azure Migrate teams also often include a number of integrated first and third party tools.
+
+Azure Migrate provides the following:
 
 - **Unified migration platform**: A single portal to start, run, and track your migration to Azure.
 - **Range of tools**: A range of tools for assessment and migration. Azure Migrate tools include Azure Migrate: Discovery and Assessment and Azure Migrate: Server Migration. Azure Migrate also integrates with other Azure services and tools, and with independent software vendor (ISV) offerings.
@@ -56,7 +60,7 @@ Here's what the tool does:
 - **Azure cost estimation**: Estimates costs for running on-premises servers in Azure.
 - **Dependency analysis**: Identifies cross-server dependencies and optimization strategies for moving interdependent servers to Azure. 
 
-Azure Migratel: Discovery and Assessment uses a lightweight Azure Migrate appliance that you deploy on-premises.
+Azure Migrate: Discovery and Assessment uses a lightweight Azure Migrate appliance that you deploy on-premises.
 
 - The appliance runs on a VM or physical server. You can install it easily using a downloaded template.
 - The appliance discovers on-premises machines. It also continually sends machine metadata and performance data to Azure Migrate.

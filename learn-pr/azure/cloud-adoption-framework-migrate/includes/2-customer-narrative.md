@@ -1,10 +1,14 @@
-We started sharing the narrative for Tailwind Traders in the Getting Started module and other Cloud Adoption Framework (CAF) Learn modules. The Tailwind Traders cloud strategy team has defined an executive-level strategy that addressed their financial and technical considerations. A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure Landing Zone that meets their short-term compliance and operations needs. We resume the Tailwind story, just as the migration team is preparing to start migrating workloads into the cloud.
+In the Getting Started module, we shared a few of Tailwind Traders objectives. The Tailwind Traders cloud strategy team has defined an executive-level strategy that addressed their financial and technical considerations.
+
+A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure Landing Zone that meets their short-term compliance and operations needs.
+
+Most relevant to this module, is their effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
+
+We resume the Tailwind story, just as the migration team is preparing to start migrating workloads into the cloud.
 
 ## Tailwind Traders' migration plan
 
-In the Getting Started module, we shared a few of Tailwind Traders objectives. Most relevant to this module, is their effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
-
-In the Plan module, we rationalized their digital estate using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now the team is ready to begin migrating their existing datacenters to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen a migration factory approach:
+In the Plan module, we rationalized their digital estate using Azure Migrate and created a backlog to guide the migration in Azure Devops. Now the team is ready to begin migrating their existing data centers to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen a migration factory approach:
 
 :::image type="content" source="../media/methodology-effort-only.png" alt-text="Visual of the three common task groups in a migration process." border="false":::
 _Figure 1: Common tasks required in each sprint of a migration process._
@@ -18,8 +22,8 @@ _Figure 1: Common tasks required in each sprint of a migration process._
 
 ## Preparing for technology platform diversity
 
-Like most customers, Tailwind Traders supports a diverse collection of technology platforms. Their top of mind concern, is the large and growing collection of open-source solutions running on linux and OSS data platforms. They are also evaluating how to host their Windows Virtual Desktop (WVD) solution in the cloud. At some point, they will also need to migrate their SAP/HANA solution to the cloud.
+Like most customers, Tailwind Traders supports a diverse collection of technology platforms. Their top of mind concern, is the large and growing collection of open-source solutions running on linux and OSS data platforms. They are also evaluating how to host their windows virtual desktop solution in the cloud. At some point, they will also need to migrate their SAP/HANA solution to the cloud.
 
-As the team prepares for this migration project, they will need to ensure they have the skills required to migrate and modernize windows and SQL assets but also to be able to handle other technology platforms in the same processes.
+As the team prepares for this migration project, they will need to ensure they have the skills required to migrate and modernize windows and sql assets but also to be able to handle other technology platforms in the same processes.
 
 The remaining units of this learn module will demonstrate the processes, tools, and approaches needed to be successful in a variety of team structures and across several technology platforms.
