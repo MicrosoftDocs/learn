@@ -170,11 +170,7 @@ supporting up to 29 qubits with the same characteristics than the QPU, making it
 perfect to test jobs before running them on actual quantum hardware.
 
 > [!NOTE]
-> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/en-us/azure/quantum/concepts-targets-in-azure-quantum).
-> Optimization solvers won't be able to run this code. Specifically, any target
-> whose identifier ends with `.cpu` or `.fpga` is an optimization target and
-> won't be able to run this code. You can learn how to use optimization targets
-> with our module [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/).
+> Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/).
 
 
 ## Simulate the program
