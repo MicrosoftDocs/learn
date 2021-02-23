@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-migrate.3-migration-process
+title: Migration process
+metadata:
+  title: Migration process
+  description: Tailwind Traders is preparing their cloud environment. Learn more about their cloud portfolio to help them find the best governance solutions for their workloads.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-migration-process.md)]
+  

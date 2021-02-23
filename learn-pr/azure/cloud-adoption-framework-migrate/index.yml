@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.cloud-adoption-framework-migrate
+metadata:
+  title: "CAF Migrate: Migrate to Azure through repeatable processes and common tools. - Learn"
+  description: Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
+  ms.date: 03/01/2021
+  author: BrianBlanchard
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Migrate to Azure through repeatable processes and common tools."
+summary: Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
+abstract: |
+  In this module, you will:
+  - Understand the tools commonly used in migration
+  - Learn about the migration processes required migrate effectively
+  - Demonstrate a simple migration (hands-on if possible)
+  - Understand options for properly migrating a variety of platforms and workloads 
+  - Choose the best learning path to continue on with learning paths to migrate a specific platform or workload
+
+prerequisites: |
+  - Foundational understanding of cloud migration
+  - Understanding of your organization’s migration plan and the types of workloads you’ll need to migrate
+
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.cloud-adoption-framework-migrate.1-introduction
+- learn.azure.cloud-adoption-framework-migrate.2-customer-narrative
+- learn.azure.cloud-adoption-framework-migrate.3-migration-process
+- learn.azure.cloud-adoption-framework-migrate.4-migration-tools
+- learn.azure.cloud-adoption-framework-migrate.5-common-tech-platforms
+- learn.azure.cloud-adoption-framework-migrate.6-vm-migration
+- learn.azure.cloud-adoption-framework-migrate.7-knowledge-check
+- learn.azure.cloud-adoption-framework-migrate.8-summary
+badge:
+  uid: learn.azure.cloud-adoption-framework-migrate.badge
