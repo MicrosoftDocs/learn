@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.ensure-stable-operations-azure-workloads.4-protection-and-recovery
+uid: learn.cloud-adoption-framework-manage.5-enhance-operations-baseline
 metadata:
-  title: Protect and recovery
+  title: Enhance operations baseline
   description: TBD
   ms.date: 12/03/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Protect and recovery
+title: Enhance operations baseline
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-protection-and-recovery.md)]
+  [!include[](includes/5-enhance-operations-baseline.md)]
