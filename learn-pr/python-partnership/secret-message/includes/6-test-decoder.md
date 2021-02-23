@@ -1,24 +1,24 @@
 Here's the secret message that you need to decipher:
 
-![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
+![Graphic of the encoded secret message.](../media/encoded-secret-message.png)
 
 After our analysis in this module, here's what you need to do to decode the message:
-1. The word "WHY" needs to be shifted by 13.
-1. The word "oskza" needs to be shifted by -18.
-1. The word "ohupo" needs to be shifted by -1.
-1. The word "ED" needs to be shifted by 25.
+1. The word "Ncevy" needs to be shifted by 13.
+1. The word "gpvsui" needs to be shifted by 25.
+1. The word "ugflgkg" needs to be shifted by -18.
+1. The word "wjmmf" needs to be shifted by -1.
+
 
 ## Add print statements
 
 Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your **decrypt.py** file to print all the decoded words.
 
 ```python
-print( "Shifting WHY by 13 gives: \n" + lassoWord( "WHY", 13 ) )
-print( "Shifting oskza by -18 gives: \n" + lassoWord( "oskza", -18 ) )
-print( "Shifting ohupo by -1 gives: \n" + lassoWord( "ohupo", -1 ) )
-print( "Shifting ED by 25 gives: \n" + lassoWord( "ED", 25 ) )
+print( "Shifting Ncevy by 13 gives: \n" + lassoWord( "WHY", 13 ) )
+print( "Shifting gpvsui by 25 gives: \n" + lassoWord( "gpvsui", 25 ) )
+print( "Shifting ugflgkgby -18 gives: \n" + lassoWord( "ugflgkg", -18 ) )
+print( "Shifting wjmmf by -1 gives: \n" + lassoWord( "wjmmf", -1 ) )
 ```
 
-Now press the **Play** button. You should see the final clue to the true meeting place and time!
+Now press the **Run** button. You should see the final clue to the meeting location and date to find the hidden treasure! 
 
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

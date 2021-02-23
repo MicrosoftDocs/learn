@@ -4,7 +4,7 @@ title: 'Part 2: Decode one letter with a Caesar cipher by wrapping around the En
 metadata:
   title: 'Part 2: Decode one letter with a Caesar cipher by wrapping around the English alphabet'
   description: Expand your Caesar cipher that decodes one letter at a time to correctly wrap around the entire alphabet.
-  ms.date: 09/21/2020
+  ms.date: Python basics for creating a secret message decoder
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

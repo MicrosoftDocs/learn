@@ -1,11 +1,10 @@
 Remember the secret message you're trying to decode:
 
-![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
+![Graphic of the encoded secret message.](../media/encoded-secret-message.png)
 
-It looks like the message might be encrypted with something called a *Caesar cipher,* where all the letters are shifted in the alphabet by some amount. Similar to Wonder Woman's golden lasso, we'll need to give Python the power to find the true meaning of the words "WHY," "oskza," "ohupo," and "ED."
+It looks like the message might be encrypted with something called a *Caesar cipher,* where all the letters are shifted in the alphabet by some amount. We'll need to give Python the power to find the true meaning of the words "Ncevy," "gpvsui," "ugflgkg," and "wjmmf".
 
 If you're not familiar with Caesar ciphers, you can explore more on [Smithsonian Learning Labs](https://learninglab.si.edu/collections/decode-a-secret-message/Y4F5099N4wjRAEmz#r/?azure-portal=true).
-
 
 To decipher this message, we need to start by giving our code the power to shift a single letter. First, we create a function called `lassoLetter()` that takes in two parameters. The first parameter is `letter`, and it holds the letter to decode. The second parameter is `shiftAmount`, and it says how far to shift the letter.
 
@@ -150,5 +149,3 @@ The code won't return the expected result because a Caesar cipher loops back to 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
 
 We'll take a look at that formula in the next unit.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

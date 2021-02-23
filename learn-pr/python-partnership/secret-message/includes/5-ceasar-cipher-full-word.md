@@ -138,7 +138,7 @@ def lassoWord( word, shiftAmount ):
 
 ## Test your functions
 
-Press the green **Play** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
+Press the green **Run** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
 
 Test your new code by invoking the `lassoWord()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shiftAmount` parameter. 
 
@@ -147,7 +147,7 @@ Test your new code by invoking the `lassoWord()` function with `terra` as the va
 print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
-Now when you press the **Play** button, you should see the word **green** printed on the console:
+Now when you press the **Run** button, you should see the word **green** printed on the console:
 
 ![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-functions.png)
 
@@ -202,5 +202,3 @@ print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
 Now you're ready to decode the secret message!
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

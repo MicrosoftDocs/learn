@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.secret-message.introduction
-title: Introduction to the WONDER WOMAN 1984 secret message decoder
+title: Introduction to using a secret message decoder
 metadata:
-  title: Introduction to the WONDER WOMAN 1984 secret message decoder
-  description: Introduction to the secret message decoder module inspired by the WONDER WOMAN 1984 film, coming to theaters.
-  ms.date: 09/21/2020
+  title: Introduction to using a secret message decoder
+  description: Learn how to use a secret message decoder and solve a cipher.
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

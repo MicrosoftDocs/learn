@@ -120,5 +120,3 @@ def lassoLetter( letter, shiftAmount ):
 ```
 
 Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

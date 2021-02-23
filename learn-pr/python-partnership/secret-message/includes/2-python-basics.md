@@ -20,26 +20,28 @@ Coding is essentially the movement and manipulation of data. Imagine writing a m
 
 In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as code names for information that we want our program to remember and have access to later.
 
-The following command tells Python to associate the code name or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
+The following command tells Python to associate the code name or variable `town` with the name of a town called "Contosoville." (This is also a clue to the mystery of the secret, encoded message.)
+
+To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `town`, it will substitute the value "Contsoville"! Contosoville just might be the mystery location you are looking for.
 
 ```python
-# Associate variable diana with the value "WONDER WOMAN 1984"
-diana = "WONDER WOMAN 1984"
+# Associate variable town with the value "Contosoville"
+town = "Contosoville"
 ```
 
 Try it out! Replace the following commands in your **decrypt.py** file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
-# Associate the variable diana with the value "WONDER WOMAN 1984"
-diana = "WONDER WOMAN 1984"
+# Associate the variable town with the value "Contosoville"
+town = "Contosoville"
 
-# Print a message with the true identity of Diana
-print( "I believe Diana is actually " + diana )
+# Print a message with the mystery location
+print( "The town I am looking for is " + town )
 ```
 
-Press the green **Play** button, and you should see Diana's identity revealed.
+Press the green **Run** button, and you should see the town revealed.
 
-![Screenshot of the output of the command to print the string value of the variable diana.](../media/output-string-variables.png)
+![Screenshot of the output of the command to print the string value of the variable town.](../media/town-output.png)
  
 ## Functions
 
@@ -67,14 +69,16 @@ def chant( phrase ):
     print( phrase + phrase + phrase )
 
 
-# Invoke the power chant on the phrase "WONDER WOMAN 1984!"
-chant( "WONDER WOMAN 1984!" )
+# Invoke the power chant on the phrase "Contosoville!"
+chant( "Contosoville!" )
 ```
 
-Press the green **Play** button. You should see the chant printed in the console at the bottom of the Visual Studio Code window.
+Press the green **Run** button. 
+
+![Screenshot of the code to call the chant function.](../media/chant-code.png)
+
+You should see the chant printed in the console at the bottom of the Visual Studio Code window.
 
 ![Screenshot of the output from the call to the chant function.](../media/chant-output.png)
 
 Great! Now that you know the basics, let's go decrypt the note.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

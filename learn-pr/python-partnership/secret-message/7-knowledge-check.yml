@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Answer the following questions to see what you've learned.
-  ms.date: 09/21/2020
+  ms.date: Python basics for creating a secret message decoder
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -46,17 +46,17 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The code you wrote can't convert a lowercase letter to uppercase."
   
-  - content: "The secret time and place inspired by the WONDER WOMAN 1984 film is when and where?"
+  - content: "The secret location and date to find the hidden treasure is when and where?"
     choices:  
-    - content: "June in Washington, USA"
+    - content: "June 22nd in Seattle"
       isCorrect: false
       explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
-    - content: "January in Montevideo, Uruguay"
+    - content: "January 8th in Montevideo"
       isCorrect: false
       explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
-    - content: "October in London, England"
+    - content: "October 30th in London"
       isCorrect: false
       explanation: "Incorrect. Check your code again and make sure you put in your secret message correctly!"
-    - content: "July in Washington, D.C., USA"
+    - content: "April 4th in Contosoville"
       isCorrect: true
-      explanation: "Correct! When you decipher the secret message by using your code, you get the answer `jul washington dc`."
+      explanation: "Correct! When you decipher the secret message by using your code, you get the answer `april fourth contosoville`."

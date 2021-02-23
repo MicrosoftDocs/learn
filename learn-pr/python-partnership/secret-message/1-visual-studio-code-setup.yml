@@ -4,7 +4,7 @@ title: Check that Visual Studio Code is ready to decode messages
 metadata:
   title: Check that Visual Studio Code is ready to decode messages
   description: This unit helps you to make sure Visual Studio Code is ready to write the decoder code.
-  ms.date: 09/21/2020
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
