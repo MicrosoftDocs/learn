@@ -69,23 +69,26 @@ Over time if you realize you need additional compute power to keep up with deman
 
    ![Screenshot of the Azure portal showing the Create a resource pane with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
 
-1. Use these values to fill out the rest of the form.
+1. Use these values on the **Basics** tab, under **Project details**.
 
-    | Setting      | Value |
-    | ------------ | ----- |
-    | On the **Basics** tab, under **Project details**: |
+    | Setting | Value |
+    | --- | --- |
     | **Subscription** | *Concierge Subscription* |
     | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
-    | Under the **Database details** section: |
+
+1. Use these values in  the **Database details** section.
+
+    | Setting | Value |
+    | --- | --- |
     | **Database name** | *Logistics* |
-    | **Server** | _[See step 4]_ |
+    | **Server** | _[See step 5]_ |
     | **Want to use SQL elastic pool?** | *No* |
-    | **Compute + storage** | _[See step 5]_ |
+    | **Compute + storage** | _[See step 6]_ |
 
 1. Under **Server**, select **Create new**. The **New Server** panel appears. Fill out the settings using information from the following table.
 
-    | Setting      | Value |
-    | ------------ | ----- |
+    | Setting | Value |
+    | --- | --- |
     | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
     | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
@@ -105,8 +108,8 @@ Over time if you realize you need additional compute power to keep up with deman
 
 1. Select the **Additional settings** tab, and then use these values to fill out the settings.
 
-    | Setting      | Value |
-    | ------------ | ----- |
+    | Setting | Value |
+    | --- | --- |
     | **Data source** section > **Use existing data** | *None* |
     | **Database Collation** section > **Collation** | *SQL_Latin1_General_CP1_CI_AS* |
     | **Azure Defender for SQL** section > **Enable Azure Defender for SQL** | *Not now* |
