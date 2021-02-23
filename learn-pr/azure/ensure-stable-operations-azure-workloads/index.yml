@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.ensure-stable-operations-azure-workloads
+metadata:
+  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
+  description: As workloads are deployed to the cloud, operations is critical to success. 
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
+summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you will learn how to deploy an operations baseline to manage workloads in your environment. The module will also cover how to enhance the baseline, both for workloads and platforms.
+abstract: | 
+  In this module, you will:
+  - Evaluate levels of business commitment across your portfolio of workloads 
+  - Deploy an operations baseline 
+  - Customize the baseline to meet operations needs 
+  - Centralize operations for core platforms 
+  - Partner with workload teams for richer decentralized operations 
+prerequisites: | 
+  - Foundational understanding of cloud adoption 
+  - Understanding of your organization’s operations management requirements 
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- auditor
+- business analyst
+- business owner
+- data engineer
+- database administrator 
+- developer
+- DevOps engineer
+- functional consultant
+- privacy manager
+- risk practitioner
+- security engineer
+- solution architect
+- student
+- technology manager 
+products:
+- azure
+- Aloud Adoption Framework 
+- Azure Monitor 
+- Azure Arc 
+- Azure ARM 
+units:
+- learn.ensure-stable-operations-azure-workloads.1-introduction
+- learn.ensure-stable-operations-azure-workloads.2-business-alignment
+- learn.ensure-stable-operations-azure-workloads.3-operational-compliance
+- learn.ensure-stable-operations-azure-workloads.4-protection-and-recovery
+- learn.ensure-stable-operations-azure-workloads.5-enhance-operations-baseline
+- learn.ensure-stable-operations-azure-workloads.6-manage-platform-and-workload-specialization
+- learn.ensure-stable-operations-azure-workloads.7-summary
+badge:
+  uid: learn.ensure-stable-operations-azure-workloads.badge
