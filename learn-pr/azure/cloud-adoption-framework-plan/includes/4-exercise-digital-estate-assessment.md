@@ -66,19 +66,15 @@ Start by identifying your on-premises infrastructure, applications, and dependen
 - Make sure you:
     - Have an Azure Migrate project. If you don't, [create](https://docs.microsoft.com/azure/migrate/create-manage-projects?azure-portal=true) one now.
     - Check that you've [added](https://docs.microsoft.com/azure/migrate/how-to-assess?azure-portal=true) the Azure Migrate:Server Assessment tool to the project.
-    - Set up an [Azure Migrate appliance](https://docs.microsoft.com/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines. The appliance discovers on-premises machines, and sends metadata and performance data to Azure Migrate:Server Assessment. Set up an appliance for:
+    - Set up an [Azure Migrate appliance](https://docs.microsoft.com/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines, applications, and data using an agentless appliance. The appliance discovers on-premises machines, and sends metadata and performance data to Azure Migrate:Server Assessment. Set up an appliance for:
         - [VMware](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-vmware?azure-portal=true) VMs.
         - [Hyper-V](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-hyper-v?azure-portal=true) VMs.
         - [Physical servers](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-physical?azure-portal=true).
-- To use dependency visualization, you associate a [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access?azure-portal=true) with an Azure Migrate project:
-    - You can attach a workspace only after setting up the Azure Migrate appliance, and discovering machines in the Azure Migrate project.
-    - Make sure you have a workspace in the subscription that contains the Azure Migrate project.
-    - The workspace must reside in the East US, Southeast Asia, or West Europe regions. Workspaces in other regions can't be associated with a project.
-    - The workspace must be in a region in which [Service Map is supported](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-configure-workspace?azure-portal=true#supported-regions).
-    - You can associate a new or existing Log Analytics workspace with an Azure Migrate project.
-    - You attach the workspace the first time that you set up dependency visualization for a machine. The workspace for an Azure Migrate project can't be modified after it's added.
-    - In Log Analytics, the workspace associated with Azure Migrate is tagged with the Migration Project key, and the project name.
-
+- Next, you'll use the Azure Migrate: Discovery and Assessment tool discovers and assesses on-premises VMware VMs, Hyper-V VMs, VMs hosted on other public clouds and physical servers for migration to Azure. The discovery and assessment tool will pull data from the Azure Migrate appliance, which will help you complete the following:
+    - Azure readiness: Assesses whether on-premises machines are ready for migration to Azure.
+    - Azure sizing: Estimates the size of Azure VMs or number of Azure VMware nodes after migration.
+    - Azure cost estimation: Estimates costs for running on-premises servers in Azure.
+    - Dependency analysis: Identifies cross-server dependencies and optimization strategies for moving interdependent servers to Azure.
 
 ### Workloads in use
 
