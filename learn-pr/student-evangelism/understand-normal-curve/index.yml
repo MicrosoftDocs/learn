@@ -27,6 +27,7 @@ abstract: |
   - Examine the Central Limit Theorem through simulations and studied some use cases.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+hidden: true
 levels:
 - beginner
 roles:

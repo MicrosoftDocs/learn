@@ -20,6 +20,7 @@ summary: |
   ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner [Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
+hidden: true
 levels:
 - beginner
 roles:

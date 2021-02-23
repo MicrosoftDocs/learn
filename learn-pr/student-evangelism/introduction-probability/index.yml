@@ -26,6 +26,7 @@ abstract: |
   - Update old predictions with new data and importance of keeping assumptions in mind as you make decisions.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/introduction-to-probability.svg
+hidden: true
 levels:
 - beginner
 roles:

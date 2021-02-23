@@ -26,6 +26,7 @@ abstract: |
   - Compare two different datasets through Overlaid Graphs in the datascience Library.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/design-plot-graphs-python.svg
+hidden: true
 levels:
 - beginner
 roles:
