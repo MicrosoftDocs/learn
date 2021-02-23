@@ -32,3 +32,8 @@ In this module, you created resources by using your Azure subscription. The foll
     ```output
     deleted context learn-aks-scalability from /home/user/.kube/config
     ```
+
+## Learn more
+
+- [Scalability concepts](https://docs.microsoft.com/azure/aks/concepts-scale)
+- [HPA official docs](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
