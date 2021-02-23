@@ -3,7 +3,7 @@ uid: learn.python-partnership.secret-message
 metadata:
   title: Crack the code and reveal a secret with Python and Visual Studio Code
   description: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
-  ms.date: 09/21/2020
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Write your first lines of Python code
   - Create a function to decode a character with a cipher
   - Create a function to decode a full word with a cipher
-  - Discover the location of the hidden treasure
+  - Discover the location that will reveal the hidden treasure
 
   <strong>No coding experience is required to complete this Microsoft Learn module.</strong>
 prerequisites: |

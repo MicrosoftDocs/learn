@@ -72,7 +72,8 @@ Now you're invoking a function that you wrote, `lassoLetter()`, from a new funct
 
 With the code that you just wrote, you'll have one value in the `decodedLetter` variable. When the loop runs again, the variable gets updated. 
 
-You can trace the code to see how this works:  
+You can trace the code to see how this works:
+
 - `word` = "hello"  
 - `shiftAmount` = 1
 
@@ -138,7 +139,7 @@ def lassoWord( word, shiftAmount ):
 
 ## Test your functions
 
-Press the green **Run** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
+Press the green **Run** button, and . . . nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
 
 Test your new code by invoking the `lassoWord()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shiftAmount` parameter. 
 

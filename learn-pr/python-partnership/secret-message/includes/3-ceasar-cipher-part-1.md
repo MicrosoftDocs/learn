@@ -73,15 +73,13 @@ ord('a')
 
 The output is `97`. The number `97` is the ASCII character code for the character `a`.
 
-
-If we call the `ord()` function and pass in the uppercase letter `W`:
+If we call the `ord()` function and pass in the uppercase letter `N`:
 
 ```python
-ord('W')
+ord('N')
 ```
 
-The output is `87`. The number `87` is the ASCII character code for the character `W`.
-
+The output is `78`. The number `78` is the ASCII character code for the character `N`.
 
 If we call the `ord()` function and pass in the number `6`:
 
@@ -90,7 +88,6 @@ ord('6')
 ```
 
 The output is `54`. The number `54` is the ASCII character code for the number `6`.
-
 
 We couldn't add a letter and number together (`a + 2`), but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. The number `99` is the ASCII representation for the character `c`. The output makes sense!
 
@@ -107,10 +104,10 @@ def lassoLetter( letter, shiftAmount ):
 > [!Important]
 > When you add the new code to your file, be sure to use the same indentation as in this example. Indent the new code from the left margin as shown. If the indentation isn't correct, Python won't read the new code as part of the function.
 
-To decode this message, we need to shift the letter `W` by `13`. To do this shift, here are the values for our parameters:
-- `letter` = 'W'
+To decode this message, the message tells us that we need to shift the letter `N` by `13`. To do this shift, here are the values for our parameters:
+- `letter` = 'N'
 - `shiftAmount` = 13
-- `letterCode` = `ord('w')` = 119
+- `letterCode` = `ord('n')` = 110
 
 ## Calculate a decoded character: The simple way
 
@@ -134,15 +131,15 @@ decodedLetter = chr(decodedLetterCode)
 return decodedLetter
 ```
 
-Let's see what would happen if you ran this code with the first letter of the actual secret message, `W`, and the shift amount, `13`.
+Let's see what would happen if you ran this code with the first letter of the actual secret message, `N`, and the shift amount, `13`.
 
 | Variable | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:---------|:------|-------|
-| `letter` | W | |
+| `letter` | N | |
 | `shiftAmount` | 13 | |
-| `letterCode` | `ord('W')` = 119 | |
-| `decodedLetterCode` | 119 + 13 = 132 | |
-| `decodedLetter` | chr(132) = `error` | |
+| `letterCode` | `ord('n')` = 110 | |
+| `decodedLetterCode` | 110 + 13 = 123 | |
+| `decodedLetter` | chr(123) = `error` | |
 
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
 

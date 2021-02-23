@@ -11,12 +11,12 @@ After our analysis in this module, here's what you need to do to decode the mess
 
 ## Add print statements
 
-Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your **decrypt.py** file to print all the decoded words.
+Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your <br>decrypt.py</b> file to print all the decoded words.
 
 ```python
 print( "Shifting Ncevy by 13 gives: \n" + lassoWord( "WHY", 13 ) )
 print( "Shifting gpvsui by 25 gives: \n" + lassoWord( "gpvsui", 25 ) )
-print( "Shifting ugflgkgby -18 gives: \n" + lassoWord( "ugflgkg", -18 ) )
+print( "Shifting ugflgkg by -18 gives: \n" + lassoWord( "ugflgkg", -18 ) )
 print( "Shifting wjmmf by -1 gives: \n" + lassoWord( "wjmmf", -1 ) )
 ```
 

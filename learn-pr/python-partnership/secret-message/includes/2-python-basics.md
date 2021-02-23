@@ -1,18 +1,18 @@
-Before you can uncover the true meaning of the secret message, let's walk through the basics for commanding the Python language. If you already know how to use comments, variables, functions, and conditionals, you can skip to the [next unit](../3-ceasar-cipher-part-1.yml) in this module.
+Before you can uncover the true meaning of the secret message and what it reveals, let's walk through the basics for commanding the Python language. If you already know how to use comments, variables, functions, and conditionals, you can skip to the [next unit](../3-ceasar-cipher-part-1.yml) in this module.
 
 ## Comments
 
 We can write comments to ourselves that Python will ignore. On any line where we use the number (or *hash*) symbol (`#`), Python ignores everything after the symbol.
 
-Try adding the following code to your **decrypt.py** file:
+Try adding the following code to your <b>decrypt.py</b> file:
 
 ```python
 # This is a comment that won't be interpreted as a command.
 ```
 
-Press the **Play** button, and you should see the same behavior as before.
+Press the **Run** button, and you should see the same behavior as before.
 
-![Screenshot that shows that comments in Python do not change code execution.](../media/python-comments.png)
+![Screenshot that shows that comments in Python do not change code execution.](../media/comment.png)
  
 ## Variables
 
@@ -29,7 +29,7 @@ To do this, you use the assignment equal sign (`=`) operator. Anytime after this
 town = "Contosoville"
 ```
 
-Try it out! Replace the following commands in your **decrypt.py** file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
+Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
 # Associate the variable town with the value "Contosoville"
@@ -60,7 +60,7 @@ def chant( phrase ):
 
 In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but which is available to you as part of the Python language `print()` capability. If you invoke this function, the value you pass in as the parameter is printed to the console three times.
 
-Try it out! Update the commands in your **decrypt.py** file to call the power chant.
+Try it out! Update the commands in your <b>decrypt.py</b> file to call the power chant.
 
 ```python
 # Define a power (function) to chant a phrase

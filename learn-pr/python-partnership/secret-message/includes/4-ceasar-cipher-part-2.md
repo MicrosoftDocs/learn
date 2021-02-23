@@ -62,31 +62,31 @@ You can review the formula for `trueLetterCode` just as you would any other math
 > 97 + 2
 > 99
 
-### Example 2: Letter 'W' and shift by 13
+### Example 2: Letter 'N' and shift by 13
 
 Start with these two values:
-- `letter` = 'W'
+- `letter` = 'N'
 - `shiftAmount` = 13
 
 | Variable | Formula | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |----------|---------|-------|-------|
-| `letter`         |            | 'W' | |
+| `letter`         |            | 'N' | |
 | `shiftAmount`    |            | 13  | |
-| `letterCode`     | `ord('w')` | 119 | |
+| `letterCode`     | `ord('w')` | 110 | |
 | `aAscii`         | `ord('a')` | 97  | |
 | `alphabetSize`   |            | 26  | |
-| `trueLetterCode` | 97 + (((119 - 97) + 13) % 26)  | 106 <br>**Note:** See the detailed explanation for this calculation after the table. | |
-| `decodedLetter`  | `chr(106)` | `j` | |
+| `trueLetterCode` | 97 + (((110 - 97) + 13) % 26)  | 97 <br>**Note:** See the detailed explanation for this calculation after the table. | |
+| `decodedLetter`  | `chr(97)` | `a` | |
 
 You can review the formula for `trueLetterCode` just as you would any other math formula (remember PEMDAS):
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
-> 97 + (((119 - 97) + 13) % 26)
-> 97 + ((22 + 13) % 26)
-> 97 + (35 % 26)
-> 97 + 9
-> 106
+> 97 + (((110 - 97) + 13) % 26)
+> 97 + ((13 + 13) % 26)
+> 97 + (26 % 26)
+> 97 + 0
+> 97
 
 ## Final code
 

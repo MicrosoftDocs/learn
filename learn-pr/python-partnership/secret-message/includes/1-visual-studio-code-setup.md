@@ -6,7 +6,7 @@ Next, open Visual Studio Code. From the **Start** screen, select **Open folder**
 
 ![Screenshot that shows how to open a folder in Visual Studio Code.](../media/open-folder-visual-studio-code.png)
 
-Now create a file called *decrypt.py*.
+Now create a file called <b>decrypt.py</b>.
 
 ![Screenshot of how to create a new file called decrypt dot p y.](../media/create-decrypt-file.png)
 
@@ -15,7 +15,9 @@ Feel free to close the Visual Studio Code **Welcome** tab now.
 > [!Note]
 > As you write Python code, Visual Studio Code suggests other capabilities to add to the development environment, such as "Linters." You don't need these extras for this project. Feel free to ignore them.
 
-The first thing we'll do is make sure our command center (also called a _code editor_) works. We'll give a simple command to Python and tell it to print a message. Copy the following command into your **decrypt.py** file to say hello to the fictional town Contosoville.
+The first thing we'll do is make sure our command center (also called a _code editor_) works. We'll give a simple command to Python and tell it to print a message. This is also a clue to revealing the meaning of the secret message . . .
+
+Copy the following command into your <b>decrypt.py</b> file to say hello to the fictional town Contosoville.
 
 ```python
 print( "Hello, Contosoville!" )
