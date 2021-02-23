@@ -32,7 +32,7 @@ You can add individual user accounts through the Azure portal, Azure PowerShell,
 
 If you want to use the Azure CLI, use the following cmdlet:
 
-```Azure CLI
+```azurecli
 # create a new user
 az ad user create
 ```

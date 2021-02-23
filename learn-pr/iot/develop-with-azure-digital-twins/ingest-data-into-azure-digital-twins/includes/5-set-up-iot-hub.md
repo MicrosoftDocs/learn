@@ -36,7 +36,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 1. Save and close the file.
 1. In the PowerShell window, go to the SimulatedClient folder in the repo and run the simulated client:
 
-    ```Azure CLI
+    ```azurecli
     cd ~\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js

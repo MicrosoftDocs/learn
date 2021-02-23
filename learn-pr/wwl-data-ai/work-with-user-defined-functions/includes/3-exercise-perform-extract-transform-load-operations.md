@@ -1,4 +1,4 @@
-In your Azure Databricks workspace, open the **05-User-Defined-Function** folder that you imported within your user folder.
+In your Azure Databricks workspace, open the **udf** folder that you imported within your user folder.
 
 Open the **2. Exercise User Defined Functions** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 
