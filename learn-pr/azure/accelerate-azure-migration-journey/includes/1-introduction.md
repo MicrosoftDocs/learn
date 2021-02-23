@@ -1,10 +1,10 @@
 Microsoft Azure provides access to a comprehensive set of cloud services that, as developers and IT professionals, you use to build, deploy, and manage applications, through a global network of data centers. 
 
-Migrating to Azure can help you optimize costs and stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand and focus on more critical tasks.
+Migrating to Azure can help you optimize costs, stay secure and resilient by avoiding costly business interruptions. You can take advantage of fully managed services in Azure to reduce operational burden, scale on demand and focus on more critical tasks.
 
 There are many reasons for moving to Azure, and a proven, systematic approach can help you navigate that journey successfully. Microsoft provides guidance, tools, and programs you can use to ensure success.
 
-Suppose, for example, that you are a solution architect for Contoso. The CIO has asked you to join a newly formed cloud migration team. This team is responsible for understanding how Azure will be used to meet the business and technical needs of the company.
+Suppose, for example, that you are a solution architect for Contoso. The CIO has asked you to join a newly formed cloud migration team. This team is responsible for understanding how Azure will be used to meet both the business and technical needs of the company.
 
 Your role is to evaluate the following:
 
