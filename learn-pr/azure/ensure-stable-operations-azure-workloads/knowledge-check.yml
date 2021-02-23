@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 10
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which are the three key words when working with business alignment?"
+    choices:
+    - content: "Criticality, impact, and commitment"
+      isCorrect: true
+      explanation: "Criticality, impact, and commitment are the three key words to align with the business."
+    - content: "Criticality, responsibility, and respond"
+      isCorrect: false
+      explanation: "The three keywords in a management baseline does not include responsibility or respond."
+    - content: "Criticality, impact, and owners"
+      isCorrect: false
+      explanation: "The three keywords in a management baseline does not include owners."
+  - content: "What is a management baseline?"
+    choices:
+    - content: "A policy to control a management a tool for a specific Azure resource"
+      isCorrect: false
+      explanation: "A management baseline is often one or more tools, applied to all resources in the environment."
+    - content: "It is a free version of Azure Management suite."
+      isCorrect: false
+      explanation: "A management baseline is often one or more tools, applied to all resources in the environment."
+    - content: "A management baseline is the minimum set of tools applied to all resources in the environment."
+      isCorrect: true
+      explanation: "The first step in creating business alignment is to ensure term alignment."
+  - content: "What is often impact measured in?"
+    choices:
+    - content: "The most common time/value metric is Impact per hour"
+      isCorrect: true
+      explanation: "time/value metric measures operating revenue losses per hour of outage"
+    - content: "The most common time/value metric is Impact per workload"
+      isCorrect: false
+      explanation: "In this scenario, when looking at impact measure it is for the business, not workload or platform specific."
+    - content: "The most common time/value metric is Impact per platform"
+      isCorrect: false
+      explanation: "In this scenario, when looking at impact measure it is for the business, not workload or platform specific."
+  - content: "How would you describe Commitment as part of a management baseline?"
+    choices:
+    - content: "Business commitments are about finding the balance between the level of operational management and operating cost."
+      isCorrect: true
+      explanation: "Commitments, criticality, and impact are the key words in business alignment."
+    - content: "Commitments is the SLA for each management baseline"
+      isCorrect: false
+      explanation: "The three keywords in a management baseline does not include SLA."
+    - content: "Commitments is the SLA for each management tool in a management baseline"
+      isCorrect: false
+      explanation: "The three keywords in a management baseline does not include SLA."
+  - content: "When is Application Insights a recommended tool?"
+    choices:
+    - content: "When working with data protection"
+      isCorrect: false
+      explanation: "Azure Backup and Azure Site Recovery are the primary data protection services in Azure."
+    - content: "When working with workload-specific management"
+      isCorrect: true
+      explanation: "Application Insight can give deep insight into applications."
+    - content: "When working with an essential management baseline"
+      isCorrect: false
+      explanation: "An essential management baseline often only includes a basic set of tools applied to all resources. Application Insight is a deep insight tool."

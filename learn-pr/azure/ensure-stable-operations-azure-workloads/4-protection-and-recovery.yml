@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.4-protection-and-recovery
+metadata:
+  title: Protect and recovery
+  description: TBD
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect and recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-protection-and-recovery.md)]
