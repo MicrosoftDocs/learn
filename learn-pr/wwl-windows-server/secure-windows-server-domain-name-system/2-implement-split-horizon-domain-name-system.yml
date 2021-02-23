@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-dns.implement-split-horizon-dns
+title: Implement split-horizon DNS
+metadata:
+  title: Implement split-horizon DNS
+  description: "Implement split-horizon DNS"
+  ms.date: 02/23/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-implement-split-horizon-domain-name-system.md)]
