@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.ensure-stable-operations-azure-workloads
+uid: learn.cloud-adoption-framework-manage
 metadata:
   title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
   description: As workloads are deployed to the cloud, operations is critical to success. 
@@ -46,12 +46,12 @@ products:
 - Azure Arc 
 - Azure ARM 
 units:
-- learn.ensure-stable-operations-azure-workloads.1-introduction
-- learn.ensure-stable-operations-azure-workloads.2-business-alignment
-- learn.ensure-stable-operations-azure-workloads.3-operational-compliance
-- learn.ensure-stable-operations-azure-workloads.4-protection-and-recovery
-- learn.ensure-stable-operations-azure-workloads.5-enhance-operations-baseline
-- learn.ensure-stable-operations-azure-workloads.6-manage-platform-and-workload-specialization
-- learn.ensure-stable-operations-azure-workloads.7-summary
+- learn.cloud-adoption-framework-manage.1-introduction
+- learn.cloud-adoption-framework-manage.2-business-alignment
+- learn.cloud-adoption-framework-manage.3-operational-compliance
+- learn.cloud-adoption-framework-manage.4-protection-and-recovery
+- learn.cloud-adoption-framework-manage.5-enhance-operations-baseline
+- learn.cloud-adoption-framework-manage.6-manage-platform-and-workload-specialization
+- learn.cloud-adoption-framework-manage.7-summary
 badge:
-  uid: learn.ensure-stable-operations-azure-workloads.badge
+  uid: learn.cloud-adoption-framework-manage.badge
