@@ -9,8 +9,8 @@ Also at this stage you are asked to specify which subscription, resource group, 
 
 Once the replication has been started, you are able to track and monitor the replication of each of your VMs. 
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure Migrate Servers page in Azure Admin center](../media/6-vm-replication.png)
+:::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate Servers page in Azure Admin center" border="false":::
+_Figure 1: Screenshot of the Azure Migrate Servers page in Azure Admin center_
 
 ## Test migrated virtual machines
 
@@ -31,8 +31,9 @@ The process will prompt you to shutdown the machine before migration, which is a
 
 Since this step could impact production systems, migration should be completed during off peak business hours to minimize disruption to the business.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the Server migration replicating machines page in Azure Admin center](../media/6-vm-machines.png)
+
+:::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of the Server migration replicating machines page in Azure Admin center" border="false":::
+_Figure 2: Screenshot of the Server migration replicating machines page in Azure Admin center_
 
 Now it will run through the production migration process and you can check the status as it validates the pre-requisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
