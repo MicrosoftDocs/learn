@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.encrypt-sector-data
+metadata:
+  title: Encrypt public sector data in Azure
+  description: Overview of the options available for managing encryption keys and encrypting data throughout its lifecycle, with special attention to public sector.
+  ms.date: 02/02/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Encrypt public sector data in Azure
+summary: Data encryption in the cloud is an important risk mitigation requirement expected by government customers worldwide. Learn how to protect data through its entire lifecycle, whether at rest, in transit, or in use. Control encryption keys in the cloud using comprehensive encryption key management, explore the various encryption options to keep data secure in the public sector.
+abstract: | 
+  In this module, you will:
+  - Describe the options for key management in Microsoft Azure.
+  - Identify various scenarios in which encryption is used to protect data throughout its lifecycle.
+  - Choose between the various encryption options in Azure.
+prerequisites: PENDING
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- intermediate
+roles: 
+- business-user
+products: 
+- azure
+- azure-key-vault
+- azure-dedicated-hsm
+- azure-virtual-network
+- azure-expressroute
+- azure-storage
+- azure-vpn-gateway
+- azure-sql-database
+- azure-disk-encryption
+- azure-iot-edge
+units: 
+- learn.azure.encrypt-sector-data.1-introduction
+- learn.azure.encrypt-sector-data.2-sector-key-management
+- learn.azure.encrypt-sector-data.3-data-encryption-transit
+- learn.azure.encrypt-sector-data.4-data-encryption-rest
+- learn.azure.encrypt-sector-data.5-data-encryption-use
+- learn.azure.encrypt-sector-data.6-knowledge-check
+- learn.azure.encrypt-sector-data.7-summary
+badge: 
+  uid: learn.azure.encrypt-sector-data.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.encrypt-sector-data.5-data-encryption-use
+title: Data encryption in use
+metadata:
+  title: Data encryption in use
+  description: Explanation of the available options for encrypting data while it's being processed in the cloud. The two techniques addressed are Azure confidential computing and homomorphic encryption.
+  ms.date: 02/02/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/5-data-encryption-use.md)] 

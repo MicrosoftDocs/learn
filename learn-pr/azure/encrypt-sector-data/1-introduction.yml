@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.encrypt-sector-data.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Encrypt public sector data in Azure
+  ms.date: 02/02/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/1-introduction.md)]

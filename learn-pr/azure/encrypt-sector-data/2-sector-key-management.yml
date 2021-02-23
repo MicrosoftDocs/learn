@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.encrypt-sector-data.2-public-sector-key-management
+title: Key management
+metadata:
+  title: Key management
+  description: Overview of solutions for key management, either multi-tenant (Azure Key Vault) and multi-tenant (Azure Dedicated HSM).
+  ms.date: 02/02/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/2-public-sector-key-management.md)] 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.encrypt-sector-data.4-data-encryption-rest
+title: Data encryption at rest
+metadata:
+  title: Data encryption at rest
+  description: Explanation of the concepts of DEK and KEK and introduction to the options provided by Azure to encrypt data at rest.
+  ms.date: 02/02/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/4-data-encryption-rest.md)] 
