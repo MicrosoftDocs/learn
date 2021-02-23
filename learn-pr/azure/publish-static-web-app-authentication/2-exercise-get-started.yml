@@ -2,13 +2,14 @@
 uid: learn.azure.publish-static-web-app-authentication.2-exercise-get-started
 title: Unit
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Exercise - Get started
+  description: Get started by running and deploying a static web app
   ms.date: 02/26/2020
   author: sinedied
   ms.author: sinedied
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+  zone_pivot_groups: dev-javascript-framework
+durationInMinutes: 7
 content: |
   [!include[](includes/2-exercise-get-started.md)]
