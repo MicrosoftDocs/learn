@@ -22,4 +22,4 @@ Trust Boundary refers to trust zone changes as data flows through the system.
 
 ### Trust boundary labeling example
 
-**NAS** - TODO
+**Azure IaaS boundary** - boundary box that identifies when data flows from Woodgrove corporate boundary into Azure.

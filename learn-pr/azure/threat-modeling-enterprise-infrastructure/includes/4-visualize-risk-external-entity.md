@@ -25,4 +25,4 @@ External entity is a task, entity, or data store outside of your direct control.
 
 ### External entity labeling example
 
-**User** - TODO
+**User** - User/AD (FTE)

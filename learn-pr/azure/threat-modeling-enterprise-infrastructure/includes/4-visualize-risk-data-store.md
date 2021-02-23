@@ -25,4 +25,4 @@ Data store refers to either permanent and temporary data storage.
 
 ### Data store labeling example
 
-**NAS** - TODO
+**NAS** - (file share, backup, creds, secrets)

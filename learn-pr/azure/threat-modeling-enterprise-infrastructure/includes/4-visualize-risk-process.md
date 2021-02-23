@@ -28,4 +28,4 @@ Process is a task that receives, modifies, or redirects input to output.
 
 ### Process labeling example
 
-**O365** - O365/SaaS/AAD auth
+**O365** - O365/SaaS/AADauth (user creds, session token, request/response)

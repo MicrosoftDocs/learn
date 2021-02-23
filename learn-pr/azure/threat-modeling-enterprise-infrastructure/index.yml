@@ -26,11 +26,10 @@ products:
 - azure
 units:
 - learn.azure.threat-modeling-enterprise-security.1-introduction
-- learn.azure.threat-modeling-enterprise-security.2-company
+- learn.azure.threat-modeling-enterprise-security.2-assessment-questions
 - learn.azure.threat-modeling-enterprise-security.3-gather-data
 - learn.azure.threat-modeling-enterprise-security.4-visualize-risk
-- learn.azure.threat-modeling-enterprise-security.5-find-threats
-- learn.azure.threat-modeling-enterprise-security.6-eliminate-risk
-- learn.azure.threat-modeling-enterprise-security.7-summary
+- learn.azure.threat-modeling-enterprise-security.5-eliminate-risk
+- learn.azure.threat-modeling-enterprise-security.6-summary
 badge:
   uid: learn.azure.threat-modeling-enterprise-security.badge
