@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-authentication.6-exercise-block
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  ms.date: 02/26/2020
+  author: sinedied
+  ms.author: sinedied
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-block.md)]

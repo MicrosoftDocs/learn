@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-authentication.4-exercise-add-authentication
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 02/26/2020
+  author: sinedied
+  ms.author: sinedied
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-exercise-add-authentication.md)]
