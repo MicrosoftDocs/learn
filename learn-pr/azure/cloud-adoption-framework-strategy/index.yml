@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.prepare-cloud-adoption-strategy
+uid: learn.cloud-adoption-framework-strategy
 metadata:
   title: Prepare for successful cloud adoption with a well-defined strategy. 
   description: Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success. 
-  ms.date: 12/03/2019
-  author: jamcneil
+  ms.date: 03/01/2021
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,7 +17,8 @@ abstract: |
   - Evaluate financial considerations to understand the value of cloud adoption  
   - Evaluate technical considerations to help the team prepare for successful cloud adoption projects 
 prerequisites: | 
-  - Foundational understanding of cloud adoption  
+  - Foundational understanding of cloud adoption
+  - You will be exposed to business and financial terminology that may a require additional learning after this module is completed.  
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -38,11 +39,12 @@ products:
 - azure-arc
 - azure-resource-manager
 units:
-- learn.prepare-cloud-adoption-strategy.1-introduction
-- learn.prepare-cloud-adoption-strategy.2-capture-strategic-motivation
-- learn.prepare-cloud-adoption-strategy.3-define-objective-key-result
-- learn.prepare-cloud-adoption-strategy.4-evaluate-financial-considerations
-- learn.prepare-cloud-adoption-strategy.5-understand-technical-considerations
-- learn.prepare-cloud-adoption-strategy.6-summary
+- learn.cloud-adoption-framework-strategy.1-introduction
+- learn.cloud-adoption-framework-strategy.2-customer-narrative
+- learn.cloud-adoption-framework-strategy.3-capture-strategic-motivation
+- learn.cloud-adoption-framework-strategy.4-define-objective-key-result
+- learn.cloud-adoption-framework-strategy.5-evaluate-financial-considerations
+- learn.cloud-adoption-framework-strategy.6-understand-technical-considerations
+- learn.cloud-adoption-framework-strategy.7-summary
 badge:
-  uid: learn.prepare-cloud-adoption-strategy.badge
+  uid: learn.cloud-adoption-framework-strategy.badge

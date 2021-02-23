@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.prepare-cloud-adoption-strategy.6-summary
+uid: learn.cloud-adoption-framework-strategy.7-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/01/2021
+  author: BrianBlanchard
+  ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]
