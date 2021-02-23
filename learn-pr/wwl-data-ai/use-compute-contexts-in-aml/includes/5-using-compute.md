@@ -11,7 +11,7 @@ training_env = Environment.get(workspace=ws, name='training_environment')
 
 script_config = ScriptRunConfig(source_directory='my_dir',
                                 script='script.py',
-                                environment=env,
+                                environment=training_env,
                                 compute_target=compute_name)
 ```
 
@@ -31,5 +31,5 @@ training_env = Environment.get(workspace=ws, name='training_environment')
 
 script_config = ScriptRunConfig(source_directory='my_dir',
                                 script='script.py',
-                                environment=env,
+                                environment=training_env,
                                 compute_target=training_cluster)

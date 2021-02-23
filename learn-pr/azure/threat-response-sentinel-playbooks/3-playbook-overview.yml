@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.threat-response-sentinel-playbooks.3-playbook-overview
+metadata:
+  title: What are Azure Sentinel playbooks?
+  description: Explore Azure Sentinel playbooks.
+  ms.date: 12/17/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What are Azure Sentinel playbooks?
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-playbook-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An administrator needs to create a Azure Sentinel playbook. The administrator creates a logic app and starts Logic Apps Designer. Which of the following connector should the administrator use as a trigger to your playbook?"
+    choices:
+    - content: "Office 365 connector"
+      isCorrect: false
+      explanation: "Azure Sentinel playbooks use an Azure Sentinel Logic Apps connector to trigger logic app actions."
+    - content: "Azure Sentinel Connector"
+      isCorrect: true
+      explanation: "Azure Sentinel playbooks use an Azure Sentinel Logic Apps connector to trigger logic app actions."
+    - content: "Azure Active Directory Connector"
+      isCorrect: false
+      explanation: "Azure Sentinel playbooks use an Azure Sentinel Logic Apps connector to trigger logic app actions."
+  - content: "Which one of the following statements describes a feature of Azure Sentinel playbooks?"
+    choices:
+    - content: "Azure Sentinel playbooks contain a set of continuous activities that always run in response to alerts."
+      isCorrect: false
+      explanation: "Azure Sentinel Playbooks contain logic apps actions that must be configured to automatically respond to an alert."
+    - content: "The Game catalog contains the latest Microsoft games."
+      isCorrect: false
+      explanation: "Azure Sentinel Playbooks contain logic apps actions that must be configured to automatically respond to an alert."
+    - content: "Collections of procedures based on Azure Logic Apps that run in response to an alert."
+      isCorrect: true
+      explanation: "Azure Sentinel Playbooks contain logic apps action that are collections of procedures that run in response to an alert"

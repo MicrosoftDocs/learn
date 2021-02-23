@@ -26,13 +26,13 @@ quiz:
       explanation: "A driver manages work sent to one or more executors. A Cluster cannot have multiple drivers running in parallel."
   - content: "Spark is a distributed computing environment. Therefore, work is parallelized across executors. At which two levels does this parallelization occur?"
     choices:
-    - content: "The Executor and the Slot"
+    - content: "The executor and the slot"
       isCorrect: true
-      explanation: "The first level of parallelization is the Executor - a Java virtual machine running on a node, typically, one instance per node. Each Executor has a number of Slots to which parallelized Tasks can be assigned to it by the Driver."
+      explanation: "The first level of parallelization is the executor - a Java virtual machine running on a node, typically, one instance per node. Each executor has a number of slots to which parallelized tasks can be assigned to it by the driver."
     - content: "The Driver and the Executor"
       isCorrect: false
       explanation: "There is only one driver in a cluster. Therefore, work cannot be parallelized at this level."
-    - content: "The Slot and the Task"
+    - content: "The slot and the task"
       isCorrect: false
       explanation: "Tasks represent the work that is being parallelized across executors."
   - content: "What type of process are the driver and the executors?"

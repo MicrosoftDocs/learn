@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.exercise-add-guest-users-to-directory
+title: Exercise - add guest users to directory
+metadata:
+  title: Exercise - add guest users to directory
+  description: "Exercise - add guest users to directory"
+  ms.date: 02/18/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-add-guest-users-to-directory.md)]

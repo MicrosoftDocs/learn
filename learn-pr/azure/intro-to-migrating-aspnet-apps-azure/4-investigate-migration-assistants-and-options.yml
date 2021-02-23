@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-migrating-aspnet-apps-azure.4-investigate-migration-assistants-and-options
+title: Investigate migration assistants
+metadata:
+  title: Investigate migration assistants
+  description: Content
+  ms.date: 01/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-investigate-migration-assistants-and-options.md)]

@@ -7,13 +7,19 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 ## Create the pipeline
 
 1. In Azure DevOps, go to your project.
+
 1. Either from the project page or from the left pane, select **Pipelines**.
+
 1. Select **Create Pipeline**.
+
 1. On the **Connect** tab, select **GitHub**.
 
     When prompted, enter your GitHub credentials.
+
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
+
 1. To install the Azure Pipelines app, you might be redirected to GitHub. If so, scroll to the bottom, and select **Approve and install**.
+
 1. On the **Configure** tab, select **ASP.NET Core**.
 
     > [!NOTE]
@@ -54,6 +60,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 > You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
 
 1. In Visual Studio Code, go to the integrated terminal.
+
 1. To fetch the latest changes from GitHub and update your `master` branch, run this `git pull` command.
 
     ```bash

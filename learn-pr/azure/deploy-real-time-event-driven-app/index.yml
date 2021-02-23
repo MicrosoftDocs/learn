@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure.deploy-event-driven-real-time
+metadata:
+  title: Build a real-time event-driven Java solution in Azure
+  description: Send event-based telemetric data in real time to Azure Cosmos DB by using Azure Functions and an event hub.
+  ms.date: 02/01/2021
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a real-time event-driven Java solution in Azure
+summary: Send event-based telemetric data in real time to Azure Cosmos DB by using Azure Functions and an event hub.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain event-driven and real-time workloads.
+  - Create a scenario with simulated telemetric data.
+  - Send the telemetric data with an Azure function to an event hub.
+  - Connect another function to this event hub to trigger storage in Azure Cosmos DB.
+  - Have a look at the metrics in Application Insights to measure the performance and identify potential bottlenecks.
+prerequisites: | 
+  - An Azure subscription
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+  - Azure Functions Core Tools (2.6.66 or later)
+iconUrl: /learn/achievements/deploy-event-driven-real-time.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-functions
+- azure-event-hubs
+- azure-cosmos-db
+- azure-storage
+units:
+- learn.azure.deploy-event-driven-real-time.1-introduction
+- learn.azure.deploy-event-driven-real-time.2-event-driven-example
+- learn.azure.deploy-event-driven-real-time.3-exercise-eventhub
+- learn.azure.deploy-event-driven-real-time.4-cosmosdb
+- learn.azure.deploy-event-driven-real-time.5-exercise-cosmosdb
+- learn.azure.deploy-event-driven-real-time.6-monitoring
+- learn.azure.deploy-event-driven-real-time.7-exercise-monitoring
+- learn.azure.deploy-event-driven-real-time.8-knowledge-check
+- learn.azure.deploy-event-driven-real-time.9-summary
+badge:
+  uid: learn.azure.deploy-event-driven-real-time.badge

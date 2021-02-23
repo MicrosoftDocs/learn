@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.5-hello-world
+metadata:
+  title: Exercise - Hello World
+  description: Write your first Go program in Visual Studio Code.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Hello World
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-hello-world.md)]

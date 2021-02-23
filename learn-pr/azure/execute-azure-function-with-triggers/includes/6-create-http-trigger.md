@@ -10,14 +10,15 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select your function app.
+1. Select your function app. Your **Function App** page appears.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
 
-1. In the list of all templates available to this function app, select **HTTP trigger** .
+1. On the menu bar, select **+ Add**. This action starts the function creation process. The **Add function** panel appears.
 
-1. In the **New Function** dialog, choose a name for the function and select  *Anonymous* from the **Authorization level** dropdown.
-1. Select **Create** to create the function. 
+1. In the **Select a template** section, select **HTTP trigger**.
+
+1. In the **Template details** section, in **New Function** text box, enter a name for the function. In the **Authorization level** dropdown, select *Anonymous*, and then select **Add**.
 
 1. Take a quick look at the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does, we return a greeting. Otherwise, we return an error message.
 
@@ -29,14 +30,15 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select your function app.
+1. Select your function app.  Your **Function App** page appears.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
 
-1. In the list of all templates available to this function app, select **HTTP trigger** .
+1. On the menu bar, select **+ Add**. This action starts the function creation process. The **Add function** panel appears.
 
-1. In the **New Function** dialog, choose a name for the function and select  *Anonymous* from the **Authorization level** dropdown.
-1. Select **Create** to create the function. 
+1. In the **Select a template** section, select **HTTP trigger**.
+
+1. In the **Template details** section, in **New Function** text box, enter a name for the function. In the **Authorization level** dropdown, select *Anonymous*, and then select **Add**.
 
 1. Take a quick look at the auto-generated code to get an idea about what's going on. The `$Request` parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does, we use `Push-OutputBinding` to write a greeting to the response. Otherwise, we write an error message to the response.
 
@@ -46,9 +48,9 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 Now that we've created the HTTP trigger, let's get the function URL so we can begin to make a request.
 
-1. To the right of **Run**, select **Get function URL**.
+1. To the right of **Delete**, select **Get Function Url**. The **Get Function Url** dialog appears.
 
-1. Select **Copy**, then close the function URL popup.
+1. Select **Copy** (clipboard), and select **OK** to close the function URL dialog.
 
 ## Issue a GET request to your HTTP trigger
 
@@ -62,7 +64,7 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
 
-1. Press <kbd>ENTER</kbd> to submit the request.
+1. Press <kbd>Enter</kbd> to submit the request.
 
 ::: zone-end
 
@@ -72,8 +74,8 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTrigger1?name=Jesse`
+1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
 
-1. Press <kbd>ENTER</kbd> to submit the request.
+1. Press <kbd>Enter</kbd> to submit the request.
 
 ::: zone-end

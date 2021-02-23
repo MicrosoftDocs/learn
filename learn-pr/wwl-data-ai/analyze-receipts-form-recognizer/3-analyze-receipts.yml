@@ -2,14 +2,15 @@
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
 title: Exercise - Analyze receipts with Form Recognizer
 metadata:
-  title: Introduction
-  description: "Get hands-on with the Form Recognizer service, and use its built-in receipt analysis model"
-  ms.date: 09/13/2020
+  title: Exercise - Analyze receipts with Form Recognizer
+  description: "Exercise - Analyze receipts with Form Recognizer"
+  ms.date: 02/15/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88763
 durationInMinutes: 15
 content: |
   [!include[](includes/3-analyze-receipts.md)]

@@ -16,7 +16,7 @@ For the finance company, you've decided that GRS is the best choice. This decisi
 
 There are only two other required arguments for the command, `--name` and --`resource-group`.
 
-The full command you'll use is:
+You'll run the following full command.
 
 ```azurecli
 az storage account create \
@@ -40,7 +40,7 @@ There are interesting optional arguments that you might find useful in some situ
 
 The defaults for these arguments are acceptable in our scenario. So, the full command takes the following form:
 
-```azurelci
+```azurecli
 az storage share create \
 --account-name <unique account name> \
 --account-key <account key> \

@@ -130,6 +130,18 @@ groups:
       title: JavaScript
     - id: powershell
       title: PowerShell
+- id: dev-lang-javascript-powershell-python-csharp
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: javascript
+      title: JavaScript
+    - id: powershell
+      title: PowerShell
+    - id: python
+      title: Python
+    - id: csharp
+      title: C#
 - id: dev-lang-csharp-powershell
   title: Development language
   prompt: Choose your development language

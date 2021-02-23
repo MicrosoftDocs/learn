@@ -1,6 +1,6 @@
-You can create complex and flexible setups in Azure that connect many virtual machines (VMs) together to meet your needs. But just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose network problems in Azure, use Azure Network Watcher.
+You can create complex and flexible setups in Azure that connect many virtual machines (VMs) to meet your needs. Just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose network problems in Azure, use Azure Network Watcher.
 
-Suppose you're the Azure architect for an engineering company. You have deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so that you can help your colleagues to do the same if they face similar issues in the future.
+Suppose you're the Azure architect for an engineering company. You have deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so that you can help your colleagues to do the same, if they face similar issues in the future.
 
 In this module, you'll learn about the core Network Watcher features. Engineers use Network Watcher to monitor, diagnose, and gain insight into their network health and performance with metrics. The elements can be broken down into four areas: monitoring, network diagnostic tools, metrics, and logs.
 

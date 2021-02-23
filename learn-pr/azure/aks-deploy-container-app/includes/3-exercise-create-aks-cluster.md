@@ -35,12 +35,12 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
         --name $CLUSTER_NAME \
         --node-count 2 \
         --enable-addons http_application_routing \
-        --dns-name-prefix contoso-kubernetes-$RANDOM \
+        --enable-managed-identity \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s
     ```
 
-    The previous command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as `Standard_B2s`-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. Finally, the command sets the DNS name for your cluster to `contoso-kubernetes` by using the `--dns-name-prefix` parameter.
+    The previous command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as `Standard_B2s`-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag.
 
 > [!CAUTION]
 > The HTTP application routing add-on is not recommended for production use. For production-ready ingress deployments that include multiple replicas and TLS support, see the **AKS HTTPS ingress controller docs** link at the end of this module.

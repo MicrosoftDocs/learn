@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.construct-kql-statements
+metadata:
+  title: Construct KQL statements for Azure Sentinel
+  description: "Construct KQL statements for Azure Sentinel"
+  ms.date: 02/17/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Construct KQL statements for Azure Sentinel
+summary: KQL is the query language used to perform analysis on data to create analytics, workbooks, and perform hunting in Azure Sentinel.  Learn how basic KQL statement structure provides the foundation to build more complex statements.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Construct KQL statements
+  - Search log files for security events using KQL
+  - Filter searches based on event time, severity, domain, and other relevant data using KQL
+prerequisites: |
+  none
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.construct-kql-statements.introduction
+- learn.wwl.construct-kql-statements.understand-kql-statement-structure
+- learn.wwl.construct-kql-statements.use-let-statement
+- learn.wwl.construct-kql-statements.use-search-operator
+- learn.wwl.construct-kql-statements.use-where-operator
+- learn.wwl.construct-kql-statements.use-extend-operator
+- learn.wwl.construct-kql-statements.use-order-by-operator
+- learn.wwl.construct-kql-statements.use-project-operators
+- learn.wwl.construct-kql-statements.knowledge-check
+- learn.wwl.construct-kql-statements.summary-resources
+badge:
+  uid: learn.wwl.construct-kql-statements.badge

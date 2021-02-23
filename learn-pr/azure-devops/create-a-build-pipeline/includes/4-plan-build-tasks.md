@@ -117,7 +117,7 @@ _Pipeline as code_ refers to the concept of expressing your build definitions as
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Pipeline-as-Code--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LB7y]
 
 To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipelines tasks that she'll use to replace the existing script commands.
 
@@ -128,9 +128,9 @@ To define her build, Mara chooses to use Visual Studio Code to create a YAML fil
 
 Now, you'll follow along as Mara maps commands from her script to Azure Pipelines tasks.
 
-To map each command, Mara refers to the [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
+To map each command, Mara refers to the [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
 
-For example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
+For example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
 
 This table associates the script commands with the new Azure Pipelines tasks:
 

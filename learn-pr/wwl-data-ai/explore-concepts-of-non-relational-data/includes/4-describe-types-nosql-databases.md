@@ -70,7 +70,7 @@ In most column family databases, the column-families are stored separately. In t
 > [!div class="mx-imgBorder"]
 > ![The physical structure of a column family database](../media/4-column-family-physical.png)
 
-The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-familiy approach through the Cassandra API.
+The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-family approach through the Cassandra API.
 
 ## What is a graph database?
 

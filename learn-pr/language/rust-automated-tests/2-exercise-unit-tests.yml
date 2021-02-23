@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-automated-tests.exercise-unit-tests
+metadata:
+  title: Exercise - Write unit tests
+  description: Use what you've learned about unit tests to complete two test functions.
+  ms.date: 01/26/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Write unit tests
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-exercise-unit-tests.md)]

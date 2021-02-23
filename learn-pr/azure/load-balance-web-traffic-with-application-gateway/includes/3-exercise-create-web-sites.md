@@ -10,9 +10,11 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
+    > [!NOTE]
+    > If you need to find the location name, you can use the following command: az account list-locations -o table
+
     ```azurecli
     RG=<resource group name>
-
     az group create --name $RG --location <location>
     ```
 
@@ -51,7 +53,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --custom-data module-files/scripts/vmconfig.sh \
       --no-wait
     ```
-    
+
     ```azurecli
     az vm create \
       --resource-group $RG \

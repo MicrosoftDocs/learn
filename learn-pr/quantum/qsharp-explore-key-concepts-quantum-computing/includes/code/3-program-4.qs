@@ -8,12 +8,12 @@ namespace ExploringSuperposition {
 
     @EntryPoint()
     operation GenerateUniformState() : Int {
-        using (qubits = Qubit[3]){
+        use qubits = Qubit[3];
         ApplyToEach(H, qubits);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
         mutable results = new Result[0];
-        for (q in qubits) {
+        for q in qubits {
                Message(" ");
                set results += [M(q)];
                DumpMachine();
@@ -21,6 +21,5 @@ namespace ExploringSuperposition {
         Message(" ");
         Message("Your random number is: ");
         return BoolArrayAsInt(ResultArrayAsBoolArray(results));
-        }
     }
 }

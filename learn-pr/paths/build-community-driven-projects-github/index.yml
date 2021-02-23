@@ -19,6 +19,7 @@ summary: |
   - Choose whether your idea is a good candidate for an open-source project.
   - Move an existing project to GitHub from your personal computer or from a legacy version control system.
   - Keep your GitHub repository secure.
+  - Contribute to an open-source project.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
 iconUrl: /learn/achievements/github/build-community-driven-projects-github.svg
@@ -37,5 +38,6 @@ modules:
 - learn.github.upload-project-github
 - learn.github.migrate-repository-github
 - learn.github.maintain-secure-repository-github
+- learn.github.contribute-opensource
 trophy:
   uid: learn.build-community-driven-projects-github.trophy

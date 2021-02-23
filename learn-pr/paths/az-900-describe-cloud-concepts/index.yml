@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-cloud-concepts
 metadata:
-  title: "Azure Fundamentals part 1: Describe core Azure concepts"
-  description: "This learning path provides you with an introduction to the basics of Azure cloud computing and Azure architecture."
+  title: "Azure Fundamentals part 1: Describe core Azure concepts (AZ-900)"
+  description: "This learning path provides you with an introduction to the basics of Azure cloud computing and Azure architecture. Prepare for AZ-900."
   brand: azure
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 1: Describe core Azure concepts"
@@ -58,10 +58,13 @@ summary: |
   :::column-end:::
   :::row-end:::
 
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx).
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe cloud concepts"
+  url: https://www.microsoft.com/videoplayer/embed/RE4M6Yh
 iconUrl: /learn/achievements/az-900-describe-cloud-concepts.svg
 levels:
 - beginner

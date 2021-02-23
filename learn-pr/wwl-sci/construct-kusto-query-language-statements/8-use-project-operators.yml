@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.use-project-operators
+title: Use the project operators
+metadata:
+  title: Use the project operators
+  description: "Use the project operators"
+  ms.date: 02/17/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-use-project-operators.md)]

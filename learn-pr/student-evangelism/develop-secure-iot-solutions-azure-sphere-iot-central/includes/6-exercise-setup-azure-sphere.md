@@ -65,17 +65,17 @@ sudo apt install git
 
 Install the GNU Arm Embedded Toolchain for Linux
 
-1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true). At the time of writing this was *Version 9-2020-q2-update*.
+1. Download the [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true). At the time of writing this is *Version 10-2020-q4-major*.
 2. Install the downloaded package. The following installs the toolchain in the /opt directory.
 
     ```bash
-    sudo tar -xjvf gcc-arm-none-eabi-9-2020-q2-update-x86_64-linux.tar.bz2 -C /opt
+    sudo tar -xjvf gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 -C /opt
     ```
 
 3. Update your path. Open ~/.bashrc and add to the end.
 
     ```bash
-    export PATH=$PATH:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin
+    export PATH=$PATH:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin
     ```
 
 4. Optional: The real-time core debugger relies on the *libncurses.so.5* library. Depending on your system setup, this library may already be install, if not, then run the following commands.

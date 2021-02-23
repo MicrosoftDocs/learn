@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-threat-hunting-azure-sentinel.understand-cybersecurity
+title: Understand cybersecurity threat hunts
+metadata:
+  title: Understand cybersecurity threat hunts
+  description: "Understand cybersecurity threat hunts"
+  ms.date: 02/15/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-cybersecurity-threat-hunts.md)]

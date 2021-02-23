@@ -1,6 +1,6 @@
 You've verified that your deployment was successful, and you know what resources are available. You might now want to configure your SQL managed instance, SQL database, or databases within a managed instance. These are called *managed databases*.
 
-## Configuration of Azure SQL Managed Instance
+## Configure Azure SQL Managed Instance
 
 Azure SQL Managed Instance is essentially a managed SQL Server instance. Many configurations available in SQL Server apply here. For example, you can configure using sp_configure and certain global trace flags. You also have options available around tempdb, model, and master. And you have control over your network connectivity and configuration, which will be discussed shortly.
 
@@ -18,7 +18,7 @@ In Azure SQL Database specifically, "stale" page detection is enabled and the de
 * CHECKSUM
 * QUERY_STORE
 * TDE
-* ACCERATED_DATABASE_RECOVERY
+* ACCELERATED_DATABASE_RECOVERY
 
 ## Job management
 
@@ -43,7 +43,7 @@ The Azure SQL Managed Instance and Azure SQL Database services restrict the foll
 * You can't stop or restart servers.
 * You can't use:
   * Instant file initialization.
-  * Locked pages in memory.
+  * Locked pages in memory (we may configure Locked pages in some SLO deployments)
   * `FILESTREAM` and availability groups. (We use availability groups internally.)
   * Server collation. (In SQL Managed Instance, you can select this during deployment but not change it.)
   * Startup parameters.
@@ -58,15 +58,15 @@ Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) off
 
 ## Storage management
 
-For Azure SQL Managed Instance, there is a maximum storage allowed for the instance. The number of vCores affects the maximum storage. (For example, the Business Critical tier has a lower maximum storage.) If you reach the maximum, you might get Message 1105 for a managed database or Message 1133 for the instance.
+For Azure SQL Managed Instance, there is a possible maximum storage size allowed for the instance based on your chosen SLO. You choose a maximum storage for the instance up to this possible maximum size. If you reach the maximum storage, you might get Message 1105 for a managed database or Message 1133 for the instance.
 
 Just like SQL Server, the size of any new database will be based on the size of the model database. The model database is a 100-Mb data file and an 8-Mb log file. Also like SQL Server, the size of model is configurable. You can alter the size and the number of files, but you don't have control over the physical location of them. Microsoft has commitments on I/O performance based on your deployment choice. Additionally, because remote storage is used in the General Purpose service tier, the data file and log file size can affect performance.
 
-For Azure SQL Database, **Data max size** is the maximum possible size of a single database file, and only one is allowed. **Maxsize** for the database file (as defined by the `sys.database_files.max_size` column) can grow to **Data max size**. 
+For Azure SQL Database, there is a possible maximum size of database files based on your chosen SLO. You choose a **Data max size** up to this possible maximum size. **Maxsize** for database files (as defined by the `sys.database_files.max_size` column) can grow to **Data max size**. 
 
-To understand this idea of **Data max size** versus **Maxsize**, let's consider an example where a 1-TB (**Data max size**) General Purpose database is deployed. When you do this, your database requires only ~500 GB, not 1 TB. As your database grows and approaches **Data max size**, **Maxsize** for the database file will also grow up to the 1-TB level.
+To understand this idea of **Data max size** versus **Maxsize**, let's consider an example where a 1-TB (**Data max size**) General Purpose database is deployed. When you do this, your database requires only ~500 GB, not 1 TB. As your database grows and approaches **Data max size**, **Maxsize** for database files will also grow up to the 1-TB level.
 
-The transaction log is in addition to the data size. It's truncated regularly due to automatic backups because Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
+The transaction log is in addition to the data size and is included in what you pay for storage. It's truncated regularly due to automatic backups because Accelerated Database Recovery is on by default. The log's maximum size is always 30 percent of **Data max size**. For example, if **Data max size** is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of **Data max size** and log size is 1.3 TB.
 
 The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database that's initially 40 GB and grows automatically in size to the limit of 100 TB. The transaction log has a fixed size restriction of 1 TB.  
 

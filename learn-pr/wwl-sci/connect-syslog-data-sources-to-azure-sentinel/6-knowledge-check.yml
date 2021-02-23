@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/18/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What field contains the unstructured event data?"
+    choices:
+    - content: "SyslogData"
+      isCorrect: false
+      explanation: "Incorrect. The SyslogMessage field contains unstructured data."
+    - content: "SyslogEvent"
+      isCorrect: false
+      explanation: "Incorrect. The SyslogMessage field contains unstructured data."
+    - content: "SyslogMessage"
+      isCorrect: true
+      explanation: "Correct. This field contains unstructured data."
+  - content: "To create a parser in the Log query window, save the query as which of the following?"
+    choices:
+    - content: "Module"
+      isCorrect: false
+      explanation: "Incorrect.  A Function is a named KQL query that is access like a regular table."
+    - content: "Function"
+      isCorrect: true
+      explanation: "Correct.  A Function is a named KQL query that is access like a regular table."
+    - content: "Table"
+      isCorrect: false
+      explanation: "Incorrect.  A Function is a named KQL query that is access like a regular table."
+  - content: "The Syslog connector can be deployed on which platform?"
+    choices:
+    - content: "Azure Windows Virtual Machine"
+      isCorrect: false
+      explanation: "Incorrect. Linux is required."
+    - content: "On-premise Windows Host"
+      isCorrect: false
+      explanation: "Incorrect. Linux is required."
+    - content: "Azure Linux Virtual Machine"
+      isCorrect: true
+      explanation: "Correct. Linux is required."

@@ -17,7 +17,7 @@ run = Run.get_context()
 
 # Prepare the dataset
 diabetes = pd.read_csv('data.csv')
-X, y = data[['Feature1','Feature2','Feature3']].values, data['Label'].values
+X, y = diabetes[['Feature1','Feature2','Feature3']].values, diabetes['Label'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30)
 
 # Train a logistic regression model

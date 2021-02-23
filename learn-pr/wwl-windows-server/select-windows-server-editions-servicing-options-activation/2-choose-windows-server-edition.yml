@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-windows-server-editions-servicing-options-activation.choose-edition
+title: Choose a Windows Server edition
+metadata:
+  title: Choose a Windows Server edition
+  description: "Choose a Windows Server edition"
+  ms.date: 01/18/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-choose-windows-server-edition.md)]

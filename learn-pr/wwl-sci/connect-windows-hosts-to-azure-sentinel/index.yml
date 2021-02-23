@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.connect-windows-hosts-to-azure-sentinel
+metadata:
+  title: Connect Windows hosts to Azure Sentinel
+  description: "Connect Windows hosts to Azure Sentinel"
+  ms.date: 02/18/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Windows hosts to Azure Sentinel
+summary: One of the most common logs to collect is Windows security events.  Learn how Azure Sentinel makes this easy with the Security Events connector.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Connect Azure Windows Virtual Machines to Azure Sentinel
+  - Connect non-Azure Windows hosts to Azure Sentinel
+  - Configure Log Analytics agent to collect Sysmon events
+prerequisites: |
+  Basic knowledge of operational concepts such as monitoring, logging, and alerting.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.connect-windows-hosts-to-azure-sentinel.introduction
+- learn.wwl.connect-windows-hosts-to-azure-sentinel.plan-for-security-events-connector
+- learn.wwl.connect-windows-hosts-to-azure-sentinel.collect-sysmon-event-logs
+- learn.wwl.connect-windows-hosts-to-azure-sentinel.knowledge-check
+- learn.wwl.connect-windows-hosts-to-azure-sentinel.summary-resources
+badge:
+  uid: learn.wwl.connect-windows-hosts-to-azure-sentinel.badge
