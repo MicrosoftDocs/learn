@@ -85,7 +85,7 @@ Here, you use the `az` utility to list your databases and show some information 
     az sql db show --name Logistics | jq '{name: .name, maxSizeBytes: .maxSizeBytes, status: .status}'
     ```
 
-    You see that the database is online and can hold around 2 GB of data.
+    You see that the database is online and the maximum amount data that the database can store.
 
     ```json
     {
