@@ -2,15 +2,15 @@
 uid: learn.student-evangelism.intro-to-vc-git
 metadata:
   title: Introduction to version control with Git
-  description: Git is the leading version control tool and essential for developers. Learn how to leverage Git to track your own changes and collaborate with others.
+  description: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
   brand: azure
-  ms.date: 03/15/2019
+  ms.date: 02/19/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to version control with Git
-summary: Git is the leading version control tool and essential for developers. Learn how to leverage Git to track your own changes and collaborate with others.
+summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/intro-to-vc-git-badge.svg
 levels:
