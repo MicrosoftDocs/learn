@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.ensure-stable-operations-azure-workloads.6-manage-platform-and-workload-specialization
+metadata:
+  title: Manage platform and workload specialization
+  description: TBD
+  ms.date: 12/03/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage platform and workload specialization
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-manage-platform-and-workload-specialization.md)]
