@@ -39,6 +39,7 @@ units:
 - learn.azure.cloud-adoption-framework-migrate.4-migration-tools
 - learn.azure.cloud-adoption-framework-migrate.5-common-tech-platforms
 - learn.azure.cloud-adoption-framework-migrate.6-vm-migration
-- learn.azure.cloud-adoption-framework-migrate.7-summary
+- learn.azure.cloud-adoption-framework-migrate.7-knowledge-check
+- learn.azure.cloud-adoption-framework-migrate.8-summary
 badge:
   uid: learn.azure.cloud-adoption-framework-migrate.badge

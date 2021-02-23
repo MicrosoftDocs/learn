@@ -1,10 +1,10 @@
 In this module, you completed the following learning objectives:
 
 - Understand the tools commonly used in migration
-- Learn about the migration processes required migrate effectively
+- Learn about the migration processes required to migrate effectively at scale
 - Demonstrate a simple migration (hands-on if possible)
-- Understand options for properly migrating a variety of platforms and workloads 
-- Choose the best learning path to continue on with learning paths to migrate a specific platform or workload
+- Understand options for properly migrating a variety of platforms and workloads
+- Choose the best learning path to migrate a specific platform or workload
 
 ## Next steps
 
