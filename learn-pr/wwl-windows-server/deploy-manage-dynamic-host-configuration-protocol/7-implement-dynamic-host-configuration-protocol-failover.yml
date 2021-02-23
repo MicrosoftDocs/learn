@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-dhcp.implement-dhcp-failover
+title: Implement DHCP Failover
+metadata:
+  title: Implement DHCP Failover
+  description: "Implement DHCP Failover"
+  ms.date: 02/23/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-implement-dynamic-host-configuration-protocol-failover.md)]
