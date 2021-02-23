@@ -1,0 +1,13 @@
+uid: learn.azure.design-secure-env-government.4-design-data-classifications
+title: Design a conceptual architecture for you data classifications
+metadata:
+  title: Design a conceptual architecture for you data classifications
+  description: Overview of the available services on Azure for protecting data based on a typical data classification.
+  ms.date: 02/08/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/4-design-data-classifications.md)] 

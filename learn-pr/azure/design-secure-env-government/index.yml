@@ -1,0 +1,33 @@
+uid: learn.azure.design-secure-env-government
+metadata:
+  title: Design cloud solutions for the public sector
+  description: Introduction to the stakes and options for implementing Azure to safeguard public sector data.
+  ms.date: 02/08/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design cloud solutions for the public sector
+summary: Governments around the world are in the process of a digital transformation. Explore digital solutions and select architectures that will allow you to move your workload into the cloud while keeping data of all classification levels safe. As you consider the features and services the cloud has to offer, explore how you can integrate various Azure solutions to bring value to your agency while maintaining control of your data.
+abstract: | 
+  In this module, you will learn to: 
+  - Explain the basic concept and benefits of multi-tenant cloud services.
+  - Describe a conceptual architecture that protects data at various classification levels.
+  - Explain how residency and encryption features keep data of all classification levels safe. 
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- intermediate
+roles: 
+- business-user
+products: 
+- azure
+units: 
+- learn.azure.design-secure-env-government.1-introduction
+- learn.azure.design-secure-env-government.2-discover-cloud-solutions.md
+- learn.azure.design-secure-env-government.3-safeguard-data-azure
+- learn.azure.design-secure-env-government.4-design-data-classifications
+- learn.azure.design-secure-env-government.5-knowledge-check
+- learn.azure.design-secure-env-government.6-summary
+badge: 
+  uid: learn.azure.design-secure-env-government.badge
