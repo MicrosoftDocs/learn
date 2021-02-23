@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-event-driven-real-time.6-monitoring
-title: Monitoring and Logging
+title: Monitoring and logging
 metadata:
-  title: Exercise - Monitoring and Logging
-  description: Let's discuss what monitoring and logging solutions are needed or useful for the given event-driven scenario.
+  title: Exercise - Monitoring and logging
+  description: We discuss what monitoring and logging solutions are needed or useful for the event-driven scenario.
   ms.date: 02/01/2021
   author: SandraAhlgrimm
   ms.author: sakriema
