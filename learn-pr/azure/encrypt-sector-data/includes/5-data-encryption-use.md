@@ -1,1 +1,42 @@
-**Enter content here**
+Microsoft enables customers to protect their data throughout its entire lifecycle: at rest, in transit, and in use. Azure confidential computing and homomorphic encryption are two techniques that safeguard customer data while it’s processed in the cloud.
+
+## Azure confidential computing
+
+:::row:::
+:::column span="2":::
+Azure confidential computing is a set of data security capabilities that offers encryption of data while in use. This means that data can be processed in the cloud with the assurance that it’s always under customer control. Confidential computing ensures that when data is in the clear, which is needed for efficient data processing in memory, the data is protected inside a Trusted Execution Environment (TEE, also known as an enclave). TEE helps ensure that there's no way to view data or the operations from outside the enclave and that only the application designer has access to TEE data. Access is denied to everyone else, including Azure administrators. TEE also helps ensure that only authorized code is permitted to access data. If the code is altered or tampered with, the operations are denied and the environment is disabled.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/PENDING.png" alt-text="Trusted Execution Environment protection.":::
+Pending
+:::image-end:::
+:::column-end:::
+:::row-end:::
+
+Azure supports two TEEs: Virtualization-Based Security (VBS), which is a software-based TEE that’s implemented by the Hyper-V hypervisor, and Intel SGX, which is a hardware-based TEE available on a new family of Azure [DC-series Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general#dc-series) that have the latest generation of Intel Xeon processors with [Intel Software Guard Extensions](https://software.intel.com/sgx) (SGX) technology. Intel SGX isolates a portion of physical memory to create an enclave where select code and data are protected from viewing or modification. The protection offered by Intel SGX, when used appropriately by application developers, can prevent compromise due to attacks from privileged software and many hardware-based attacks. An application leveraging Intel SGX [needs to be refactored into trusted and untrusted components](https://software.intel.com/sites/default/files/managed/c3/8b/intel-sgx-product-brief-2019.pdf). The untrusted part of the application sets up the enclave, which then allows the trusted part to run inside the enclave. No other code, irrespective of the privilege level, has access to the code executing within the enclave or the data associated with enclave code. Design best practices call for the trusted partition to contain just the minimum amount of content required to protect customer’s secrets.
+
+Microsoft published the [Open Enclave](https://aka.ms/oesdk) SDK as an open-source code on GitHub, which developers can use to build C/C++ enclave applications targeting Intel SGX technology. The Open Enclave SDK is intended to be [portable across enclave technologies](https://azure.microsoft.com/blog/protect-data-in-use-with-the-public-preview-of-azure-confidential-computing/), cross-platform – cloud, hybrid, edge, or on-premises, and designed with architectural flexibility in mind. In addition, Microsoft is working on tooling and debugging support for developing and testing confidential applications.
+
+Customers can now build, deploy, and run applications that protect data confidentiality and integrity through the entire data lifecycle, whether at rest, in transit, or in use. To get started, customers can deploy a DC-series VM through the custom deployment flow in [Azure Marketplace](https://aka.ms/ccvm). The custom deployment flow deploys and configures the VM and installs the [Open Enclave](https://aka.ms/oesdk) SDK for Linux VMs if selected. Many of the basic VM deployment configurations are [supported through the confidential computing](https://azure.microsoft.com/blog/protect-data-in-use-with-the-public-preview-of-azure-confidential-computing/) VM Deployment workflow, including:
+
+* Windows/Linux VM.
+* New or existing resource group.
+* New or existing VNet.
+* Storage/disk type.
+* Enabled diagnostics.
+* Other properties.
+
+Based on the feedback from private preview customers, Microsoft has started to invest in higher-level scenarios of confidential computing, including:
+
+* **Confidential querying in databases:** Existing [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) technology in SQL Server and Azure SQL Database will be extended using [Always Encrypted with Secure Enclaves](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-enclaves) to allow computations on plaintext data inside a secure enclave on the server side. While existing Always Encrypted technology offers protection from malware and high-privileged unauthorized users (for example, database administrators, cloud admins, and so on), it restricts SQL Server operations on encrypted columns inside the database as data encryption originally takes place on the client side without allowing the data or the corresponding cryptographic keys to appear in plaintext inside the SQL Server engine.
+* **Secure the intelligent edge:** [Azure IoT Edge security with enclaves](https://azure.microsoft.com/blog/simplifying-confidential-computing-azure-iot-edge-security-with-enclaves-public-preview/) helps customers solve a challenging security problem in the Internet of Things (IoT): protecting code and data while in use at the edge. The solution includes securing compute workloads within the TEE confines by leveraging a platform for developing edge applications that execute in enclaves.
+* **Creating confidential consortium networks that scale:** The [Confidential Consortium Blockchain Framework](https://azure.microsoft.com/blog/announcing-microsoft-s-coco-framework-for-enterprise-blockchain-networks/) is an open-source system that enables high-scale, confidential blockchain networks that meet key enterprise requirements such as performance, enhanced confidentiality, and distributed governance. Leveraging the power of existing blockchain protocols, TEEs, distributed systems, and cryptography, the Confidential Consortium Blockchain Framework offers a trusted foundation for blockchain protocols to digitally transform business.
+* **Secure multi-party machine learning:** Privacy-preserving multi-party machine learning allows multiple organizations to perform collaborative data analytics while guaranteeing the privacy of their individual datasets. Using Intel SGX technology, multiple parties can agree on a joint machine learning task to be executed on their aggregate data. Although they don’t trust one another, they can each review the corresponding machine learning code, deploy the code into a TEE, upload their encrypted data just for this task, perform remote attestation, securely upload their encryption key in the enclave, run machine learning code, and finally download the encrypted machine learning model.
+
+## Homomorphic encryption
+
+[Homomorphic encryption](https://www.microsoft.com/research/project/homomorphic-encryption/) refers to a special type of encryption technology that allows for computations to be performed on encrypted data without requiring access to a key needed to decrypt the data. The results of the computation are encrypted and can be revealed only by the owner of the encryption key. This way, only the encrypted data are processed in the cloud and only the customer can reveal the results of the computation.
+
+To help customers adopt homomorphic encryption, [Microsoft SEAL](https://www.microsoft.com/research/project/microsoft-seal/) provides a set of encryption libraries that allow computations to be performed directly on encrypted data. This approach enables customers to build end-to-end encrypted data storage and compute services where the customer never needs to share their encryption keys with the cloud service. Microsoft SEAL aims to make homomorphic encryption easy to use and available to everyone. It provides a simple and convenient API and comes with several detailed examples demonstrating how the library can be used correctly and securely.
+
+Now, let’s review what you’ve learned with a brief knowledge check.

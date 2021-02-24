@@ -1,1 +1,22 @@
-**Enter content here**
+Proper protection and management of encryption keys is essential for data security. Government customers can use Azure Key Vault, a multi-tenant key management service, to manage and control access to encryption keys when seamless integration with Azure services is required. For public sector customers who require single-tenant key management service, Microsoft provides Azure Dedicated HSM.
+
+## Azure Key Vault
+
+[Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview) is a multi-tenant secrets management service that uses Hardware Security Modules (HSMs) to store and control access to [secrets, encryption keys, and certificates](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates). Key Vault HSMs are validated according to the [FIPS 140-2](https://csrc.nist.gov/publications/detail/fips/140/2/final) standard and have an overall Security Level 2 rating (certificate [#2643](https://csrc.nist.gov/Projects/cryptographic-module-validation-program/Certificate/2643)), which includes requirements for physical tamper evidence and role-based authentication. With Azure Key Vault, customers can import or [generate encryption keys](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys) in HSMs that never leave the HSM boundary to support Bring Your Own Key (BYOK) scenarios. Keys generated inside the Azure Key Vault HSMs aren't exportable – there can be no clear version of the key outside the HSMs. This binding is enforced by the underlying HSM. Azure Key Vault supports RSA keys of sizes 2048, 3072 and 4096, as well as Elliptic Curve key types P-256, P-384, P-521, and P-256K (SECP256K1).
+
+To access a key vault, all callers must be authenticated and authorized by Azure AD, which enforces tenant isolation and implements strong measures to prevent access by unauthorized parties, including Microsoft insiders. As described in [Azure Active Directory Data Security Considerations](https://aka.ms/AADDataWhitePaper), tenant isolation involves two primary elements:
+
+* Preventing data leakage and access across tenants, which means that data belonging to Tenant A can't in any way be accessed by users in Tenant B without explicit authorization by Tenant A.
+* Resource access isolation across tenants, which means that operations performed by Tenant A can't in any way impact access to resources for Tenant B.
+
+Access to Azure Active Directory by Microsoft personnel, contractors, and vendors is highly restricted. Whenever possible, human intervention is replaced by an automated, tool-based process, including routine functions such as deployment, debugging, diagnostic collection, and restarting services. Controls are in place to restrict insider access to production systems and customer data, including the Just-in-Time (JIT) privileged access management system. Azure Key Vault is designed, deployed, and operated such that Microsoft and its agents don't see or extract customer keys.
+
+## Azure Dedicated HSM
+
+The HSMs behind Azure Key Vault are by default multi-tenant. For customers who require single-tenant HSMs, Microsoft provides [Azure Dedicated HSM](https://docs.microsoft.com/azure/dedicated-hsm/overview), which has FIPS 140-2 Level 3 validation (certificate [#3205](https://csrc.nist.gov/projects/cryptographic-module-validation-program/Certificate/3205)), as well as [Common Criteria](http://www.commoncriteriaportal.org/) EAL4+ certification and conformance with the [Electronic Identification Authentication and Trust Services](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG) (eIDAS) requirements. Operating in FIPS mode imposes a minimum RSA key length of 2048 bits, but the maximum supported RSA key length is 8192 bits.
+
+Azure Dedicated HSM is a good fit for scenarios where customers require full administrative control and sole access to their HSM device for administrative purposes. Dedicated HSMs are provisioned directly on customer's Virtual Network (VNet) and can be used by applications running inside that VNet. After a device is provisioned, only the customer has administrative or application-level access to the device. Customers are responsible for the management of the device, and they can get full activity logs directly from their devices.
+
+Microsoft has no administrative control after the customer accesses the device for the first time, at which point the customer changes the password. Microsoft doesn't have any access to the keys stored in customer allocated Dedicated HSM.
+
+Next, let’s take a look at how data is protected throughout its lifecycle, starting with data in transit.
