@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.django.get-started
+metadata:
+  title: Get started with Django
+  description: Django is one of the most popular Python web frameworks. Explore its benefits, learn how to install it, and create your first project.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Django
+summary: Django is one of the most popular Python web frameworks. It is especially powerful when working with a data-driven application, where the main goal is to provide a front end to a database. Django comes with numerous features built-in to streamline the development process. In this module we explore the benefits of Django, how to install it, and create your first project.
+abstract:  | 
+  In this module, you'll learn:
+  - How to install Django.
+  - Why Django is great for rapid deployments.
+  - The difference between Django and Flask.
+  - The best types of applications for Django.
+  - How to create a simple program.
+prerequisites:  | 
+  - Visual Studio Code
+  - Git
+  - Understanding of HTML and CSS
+  - Intermediate understanding of Python, including the following concepts:
+    - [Package management](https://docs.python.org/3/installing/index.html)
+    - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
+    - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure
+- vs-code
+- azure-app-service
+units:
+- learn.django.get-started.introduction
+- learn.django.get-started.define-django
+- learn.django.get-started.exercise-install-django
+- learn.django.get-started.django-concepts
+- learn.django.get-started.exercise-first-project
+- learn.django.get-started.paths-views
+- learn.django.get-started.exercise-create-paths-views
+- learn.django.get-started.knowledge-check
+- learn.django.get-started.summary
+badge:
+  uid: learn.django.get-started.badge
