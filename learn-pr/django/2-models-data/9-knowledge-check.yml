@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.django.models-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+ questions:
+ - content: 'What keyword tells Django there is a relationship between two classes?'
+   choices:
+   - content: 'schema'
+     isCorrect: false
+     explanation: 'Incorrect. This term is used to refer to the structure of a database.'
+   - content: 'INSTALLED_APPS'
+     isCorrect: false
+     explanation: 'This answer is not correct. This is a section within the settings.py file that includes all apps within the project.'
+   - content: 'ForeignKey'
+     isCorrect: true
+     explanation: 'This answer is correct. This keyword lets Django know there is a relationship between two classes.'
+ - content: 'What Django command is the same as the INSERT statement in SQL?'
+   choices:
+   - content: 'Question.objects.all()'
+     isCorrect: false
+     explanation: 'This answer is not correct. This query returns all objects within the database.'
+   - content: 'save'
+     isCorrect: true
+     explanation: 'This answer is correct. This is the Django command that is the same as the INSERT statement in SQL.'
+   - content: 'q.question_text'
+     isCorrect: false
+     explanation: 'This answer is not correct. This statement is used to update objects within a database.'
