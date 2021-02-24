@@ -3,7 +3,7 @@ Digital collaboration has changed. Your employees and partners now need to colla
 Enterprise security needs to adapt to this new reality. The security perimeter can no longer be viewed as the on-premises network. It now extends to:
 
 - SaaS applications for business-critical workloads that might be hosted outside the corporate network.
-- The personal devices that employees are using to access corporate resources (BOYD, or bring your own device) while working from home.
+- The personal devices that employees are using to access corporate resources (BYOD, or bring your own device) while working from home.
 - The unmanaged devices used by partners or customers when interacting with corporate data or collaborating with employees
 - IoT devices installed throughout your corporate network and inside customer locations.
 
