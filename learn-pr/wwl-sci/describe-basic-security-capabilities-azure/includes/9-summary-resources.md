@@ -21,4 +21,3 @@ To find out more about any of the topics covered in this module, go to:
 - [Azure Firewall](https://docs.microsoft.com/azure/firewall/)
 - [Azure Bastion](https://docs.microsoft.com/azure/bastion/)
 - [Web Application firewall](https://docs.microsoft.com/azure/web-application-firewall/)
-- [Encryption](https://docs.microsoft.com/learn/modules/intro-to-security-in-azure/4-encryption)

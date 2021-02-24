@@ -24,4 +24,4 @@ You'll need to isolate some services. Isolation of services provides an addition
 
 When you know the requirements, you'll have a greater understanding of the total number of devices on the network per subnet and how many subnets you'll need.  CIDR allows more flexible allocation of IP addresses than was possible with the original system of IP address classes. Depending on your requirements, you'll slice the IP block into the required subnets and hosts.
 
-Remember that Azure uses the first three addresses on each subnet. The first and last IP addresses of the subnets also are reserved for protocol conformance. Therefore, the number of possible addresses on an Azure subnet is **2^n-5**, where **n** represents the number of host bits.
+Remember that Azure uses the first three addresses on each subnet. The first and last IP addresses of the subnets also are reserved for protocol conformance. Therefore, the number of possible addresses on an Azure subnet is **(2^n)-5**, where **n** represents the number of host bits.

@@ -3,7 +3,7 @@ uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel
 metadata:
   title: Connect syslog data sources to Azure Sentinel
   description: "Connect syslog data sources to Azure Sentinel"
-  ms.date: 01/26/2021
+  ms.date: 02/18/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial

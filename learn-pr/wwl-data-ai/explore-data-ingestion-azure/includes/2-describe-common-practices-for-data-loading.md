@@ -58,7 +58,7 @@ PolyBase is a feature of SQL Server and Azure Synapse Analytics that enables you
 > [!NOTE]
 > Spark is a parallel-processing engine that supports large-scale analytics.
 
-PolyBase enables you to transfer data from an external data source into a table, as well as copy data from an external data source in Azure SYnapse Analytics or SQL Server. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores. 
+PolyBase enables you to transfer data from an external data source into a table, as well as copy data from an external data source in Azure Synapse Analytics or SQL Server. You can also run queries that join tables in a SQL database with external data, enabling you to perform analytics that span multiple data stores.
 
 > [!NOTE]
 > Azure SQL Database does not support PolyBase.

@@ -3,8 +3,8 @@ uid: learn.wwl.read-text-computer-vision.get-started
 title: Get started with OCR on Azure
 metadata:
   title: Get started with OCR on Azure
-  description: "Learn how the Computer Vision service enables you to build applications that read text in images."
-  ms.date: 09/13/2020
+  description: "Get started with OCR on Azure"
+  ms.date: 02/15/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial

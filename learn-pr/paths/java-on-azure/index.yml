@@ -2,19 +2,19 @@
 uid: learn.java-on-azure
 metadata:
   title: Java on Azure
-  description: Start here and learn how you can build, migrate and scale Java applications on Azure leveraging Azure services, and using tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform etc.
-  ms.date: 11/6/2020
+  description: Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  ms.date: 02/01/2021
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Java on Azure
 summary: |
-  Start here and learn how you can build, migrate and scale Java applications on Azure leveraging Azure services, and using tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform etc.
+  Start here and learn how you can build, migrate and scale Java applications on Azure using Azure services. Use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
 prerequisites: |
   - An Azure subscription
-  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-iconUrl: /learn/achievements/generic-trophy.svg
+  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](https://docs.microsoft.com/cli/azure/install-azure-cli)
+iconUrl: /learn/achievements/java-on-azure.svg
 levels:
 - beginner
 - intermediate
@@ -48,6 +48,9 @@ modules:
 - learn.azure.deploy-java-spring-boot-app-service-mysql
 - learn.azure.build-webapp-java-tomcat
 - learn.azure-spring-cloud-workshop
+- learn.azure.deploy-event-driven-real-time
+- learn.azure.deploy-java-ee-app-to-app-service
+- learn.azure.deploy-java-azure-pipeline-terraform
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis
 - learn.cosmos-db-java-app
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps

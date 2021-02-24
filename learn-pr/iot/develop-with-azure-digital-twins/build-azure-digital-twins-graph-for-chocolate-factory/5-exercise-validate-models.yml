@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.exercise-validate-models
 metadata:
-  description: In this exercise, you download and install a sample to validate DTDL models. You use the sample first to validate the chocolate factory production line models. Then, you deliberately introduce errors into a copy of a model and check if the sample finds the errors.
-  ms.date: 10/1/2020
+  description: In this exercise, you download a sample to validate DTDL models. You use the sample first to validate the chocolate factory production line models. Then, you deliberately introduce errors into a copy of a model and check if the sample finds the errors.
+  ms.date: 01/28/2021
   author: raniabayoumy
   ms.author: rabayoum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Validate your DTDL models
+title: Exercise - Validate your models
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-validate-models.md)]

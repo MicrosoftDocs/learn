@@ -6,7 +6,7 @@ In this exercise, you'll see how to write an application that can migrate blobs 
 
 We'll start by downloading and building an existing .NET Core application. You may have cloned the sample git repository in a previous exercise.
 
-1. Before we begin, you need to repopulate your hot storage account using the command you ran in a previous exercise. Run this command in the Cloud Shell window to give yourself new blobs to manage.
+1. Before we begin, you need to repopulate your hot storage account using the command you ran in the previous exercise. Run this command in the Cloud Shell window to give yourself new blobs to manage.
 
     ```azurecli
     az storage blob upload-batch \
@@ -23,13 +23,13 @@ We'll start by downloading and building an existing .NET Core application. You m
     git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
     ```
 
-1. Move to the samples folder:
+1. Move to the samples folder.
 
     ```bash
     cd sample/code
     ```
 
-1. Build the sample application:
+1. Build the sample application.
 
     ```bash
     dotnet build
@@ -62,11 +62,11 @@ We'll start by downloading and building an existing .NET Core application. You m
 
     The *ArchiveBlobs* application takes the following command-line parameters:
 
-    - A connection string for accessing the source storage account,
-    - The name of the container in the source storage account containing the blobs that you want to move,
-    - A connection string for accessing the destination storage account,
+    - A connection string for accessing the source storage account
+    - The name of the container in the source storage account containing the blobs that you want to move
+    - A connection string for accessing the destination storage account
     - The name of the container in the destination storage account for holding the blobs after they've been moved
-    - A date/time string. Blobs in the source container that haven't been modified since this date and time will be moved to the destination.
+    - A date/time string. Blobs in the source container that haven't been modified since this date and time will be moved to the destination
 
     > [!NOTE]
     > This application performs no validation or error handling. This is to keep the code short and concise. In a production system, you should validate all input carefully, and implement error handling for all storage account operations.
@@ -84,7 +84,7 @@ We'll start by downloading and building an existing .NET Core application. You m
 
     This block of code creates `CloudStorageAccount` objects for the source and destination accounts, and then creates `CloudBlobClient` objects that you can use to access blobs in these accounts. The *sourceBlobContainer* variable is a reference to the container in the source account, containing the blobs to be moved.
 
-1. Scroll down to the method `FindMatchingBlobsAsync`:
+1. Scroll down to the method `FindMatchingBlobsAsync`.
 
     ```C#
     // Find all blobs that haven't been modified since the specified date and time
@@ -119,14 +119,14 @@ We'll start by downloading and building an existing .NET Core application. You m
 
     This method takes a blob container and a `DateTime` object. The method iterates through the container to find all blobs that have a last modified date before the value specified in the `DateTime` object. The *blobList* collection is populated with a reference to each matching blob. When the method finishes, the *blobList* collection is passed back to the caller.
 
-    In the *Main* method, this method is invoked by the following statement:
+    In the *Main* method, this method is invoked by the following statement.
 
     ```C#
     // Find all blobs that haven't changed since the specified date and time
      Enumerable<ICloudBlob> sourceBlobRefs = FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsNotModifiedSince).Result;
     ```
 
-1. Scroll down to the `MoveMatchingBlobsAsync` method:
+1. Scroll down to the `MoveMatchingBlobsAsync` method.
 
     ```C#
     // Iterate through the list of source blobs, and transfer them to the destination container
@@ -166,19 +166,19 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
-1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. Under **Blob service**, click **Containers**.
+1. Under **Blob service**, select **Containers**.
 
-1. Click the **specifications** container.
+1. Select the **specifications** container.
 
-In order to have some blobs with a different modified date from the batch upload time, you will modify a few of them.
+To have some blobs with a different modified date from the batch upload time, you'll modify a few of them.
 
-1. From the **specifications** container, click one of the specification files (for example, _specifications04.md_).
+1. From the **specifications** container, select one of the specification files (for example, _specifications04.md_).
 
-1. Click **Edit** from the blob panel and add adding any text you wish.
+1. Select the **Edit** tab from the blob panel, and add any text you want.
 
-1. Click **Save** to commit the changes to the blob.
+1. select **Save** to commit the changes to the blob.
 
 1. Repeat this for one or two additional blob files.
 
@@ -186,13 +186,13 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
-1. Using the portal, move to your destination (cold) storage account.
+1. Using the portal, move to your destination (cool) storage account.
 
-1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
+1. Under **Settings**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
 1. In the **Blob service** section, click **Containers**.
 
-1. Click **+ Container**, and create a new container named **archive-test**.
+1. Select **+ Container**, and create a new container named **archive-test**.
 
 1. In the Cloud Shell window, run the following command. Replace *\<source connection string>* and *\<destination connection string>* with the connection strings you recorded in notepad. Replace *\<selected date and time>* with the date and time for your blobs, in the same format as it appeared in the Azure portal. Enclose the connection strings and date/time in double quotes, to prevent them being interpreted by the Bash shell:
 
@@ -204,7 +204,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. When the application has finished, return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Move to your destination (cold) storage account.
+1. Move to your destination (cool) storage account.
 
 1. Browse the **archive-test** folder. Verify it contains the blobs that were moved.
 

@@ -8,6 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |

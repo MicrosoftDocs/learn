@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-identity-management-solution
+metadata:
+  title: 'SC-300 part 1: Implement an identity management solution'
+  description: 'SC-300 part 1: Implement an identity management solution'
+  ms.date: 02/17/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-300 part 1: Implement an identity management solution'
+prerequisites: |
+  None
+summary: |
+  Learn to create and manage your initial Azure Active Directory (Azure AD) implementation and configure the users, groups, and external identities you will use to run your solution. Aligned to SC-300 Exam.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-active-directory
+modules:
+- learn.wwl.implement-initial-configuration-of-azure-active-directory
+- learn.wwl.create-configure-manage-identities
+- learn.wwl.implement-manage-external-identities
+- learn.wwl.implement-manage-hybrid-identity
+trophy:
+  uid: learn.wwl.implement-identity-management-solution.trophy

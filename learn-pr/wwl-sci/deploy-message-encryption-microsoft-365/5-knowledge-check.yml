@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-message-encryption-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/16/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many templates does Office Message Encryption support?"
+    choices:
+    - content: "One"
+      isCorrect: true
+      explanation: "One is correct. Advanced Message Encryption is required to support more than one template."
+    - content: "Unlimited"
+      isCorrect: false
+      explanation: "Unlimited is not correct.  There is a limit."
+    - content: "Five."
+      isCorrect: false
+      explanation: "Five is not correct. The limit is not this high."
+  - content: "What must be activated on your tenant before you can use Office Message Encryption?"
+    choices:
+    - content: "BitLocker"
+      isCorrect: false
+      explanation: "BitLocker is not correct. BitLocker is not a requirement of Office Message Encryption."
+    - content: "Information Rights Management"
+      isCorrect: true
+      explanation: "Information Rights Management is correct. You must have activate Information Rights Management to use Office Message Encryption"
+    - content: "Microsoft 365 Compliance center"
+      isCorrect: false
+      explanation: "Microsoft 365 Compliance center is not correct. The Compliance center is not a requirement of Office Message Encryption."
+  - content: "Which solution is the technology behind Office Message Encryption?"
+    choices:
+    - content: "Azure RMS."
+      isCorrect: true
+      explanation: "Azure RMS is correct. Azure RMS and IRM functionality is the technology supporting OME functionality."
+    - content: "Service Encryption."
+      isCorrect: false
+      explanation: "Service Encryption is not correct. Service Encryption is the application or tenant layer in between an organizations data saved in Microsoft 365 and servers in Microsoft 365 datacenters."
+    - content: "BitLocker."
+      isCorrect: false
+      explanation: "BitLocker is not correct. BitLocker is required to encrypt data at rest in Microsoft datacenters and hard disks in Windows 10 devices."
