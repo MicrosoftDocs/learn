@@ -3,10 +3,11 @@ uid: learn.wwl.describe-microsoft-security-compliance-principles
 metadata:
   title: Describe Microsoft security and compliance principles
   description: "Describe Microsoft security and compliance principles"
-  ms.date: 01/25/2021
+  ms.date: 02/24/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Describe Microsoft security and compliance principles
 summary: The Microsoft Cloud is built on the principles of security, privacy, compliance, and transparency. Learn about Microsoft’s privacy principles, information, and offerings available through the Service Trust Portal, and where to find Azure compliance documentation.
 abstract: |
