@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.discover-azure-government.2-cloud-solutions-azure
+title: Discover cloud solutions with Microsoft Azure
+metadata:
+  title: Discover cloud solutions with Microsoft Azure
+  description: Overview of the benefits of working on the cloud for the public sector. 
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/2-cloud-solutions-azure.md)] 

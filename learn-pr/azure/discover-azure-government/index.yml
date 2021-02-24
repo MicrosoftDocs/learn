@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.discover-azure-government
+metadata:
+  title: Discover the potential of Azure for government
+  description: Discussion of the benefits of the public cloud for public sector agencies, with special attention to how Azure can be helpful to them. 
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover the potential of Azure for government
+summary: Governments around the world are in the process of a digital transformation, actively investigating solutions and selecting architectures that will help them transition many of their workloads to the cloud. Begin this transformation by exploring why Azure is the right platform for your agency and the value Azure can bring. See how Azure enables you to engage citizens, empower employees, transform government services, and optimize government operations. 
+abstract: | 
+  In this module, you will learn to: 
+  - Explain the basic concept and benefits of multi-tenant cloud services.
+  - Describe how Microsoft Azure helps customers follow data security requirements in the public sector.
+  - Identify scenarios in which Microsoft Azure could provide solutions for data in the public sector. 
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- business-user
+products: 
+- azure
+- azure-blueprints
+- azure-iot-hub
+- azure-stack-hub
+- azure-farmbeats
+units: 
+- learn.azure.discover-azure-government.1-introduction
+- learn.azure.discover-azure-government.2-cloud-solutions-azure
+- learn.azure.discover-azure-government.3-transparency-public-sector
+- learn.azure.discover-azure-government.4-workloads-use-cases
+- learn.azure.discover-azure-government.5-knowledge-check
+- learn.azure.discover-azure-government.6-summary
+badge: 
+  uid: learn.azure.discover-azure-government.badge

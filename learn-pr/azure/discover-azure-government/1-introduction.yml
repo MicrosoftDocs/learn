@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.discover-azure-government.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Discover the potential of Azure for government.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/1-introduction.md)] 

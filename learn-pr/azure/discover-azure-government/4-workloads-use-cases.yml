@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.discover-azure-government.4-workloads-use-cases
+title: Select workloads and use cases
+metadata:
+  title: Select workloads and use cases
+  description: Review of several scenarios in which Microsoft Azure helps public sector agencies comply with different data protection requirements.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/4-workloads-use-cases.md)] 
