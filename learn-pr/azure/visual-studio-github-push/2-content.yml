@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio-github-push.2-content
+title: Content
+metadata:
+  title: Content
+  description: Content
+  ms.date: 02/24/2021
+  author: prnadago
+  ms.author: prnadago
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-content.md)]

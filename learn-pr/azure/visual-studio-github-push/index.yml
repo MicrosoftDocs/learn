@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.visual-studio-github-push
+metadata:
+  title: TODO index.yml:metadata.title # Should be same as `title`.
+  description: TODO index.yml:metadata.description # This field's contents are not rendered anywhere, but it's used for SEO and for searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
+  ms.date: 02/24/2021
+  author: prnadago
+  ms.author: prnadago
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: TODO index.yaml:title #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
+summary: TODO index.yaml:summary #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
+abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. This section is used to declare learning objectives only, as shown in the example.
+  TODO index.yaml:abstract
+
+  By the end of this module, you will be able to:
+
+  - One
+  - Two
+  - Three
+prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
+  TODO index.yaml:prerequisites
+
+  - One
+  - Two
+  - Three
+iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
+levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.visual-studio-github-push.1-introduction
+- learn.visual-studio-github-push.2-content
+- learn.visual-studio-github-push.3-exercise
+- learn.visual-studio-github-push.4-knowledge-check
+- learn.visual-studio-github-push.5-summary
+badge:
+  uid: learn.visual-studio-github-push.badge
