@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-authentication.4-exercise-add-authentication
-title: Knowledge check
+title: Exercise - Add user authentication
 metadata:
-  title: Knowledge check
-  description: Four multiple-choice questions
+  title: Exercise - Add user authentication
+  description: Integrate user authentication in an your web app
   ms.date: 02/26/2020
   author: sinedied
   ms.author: sinedied

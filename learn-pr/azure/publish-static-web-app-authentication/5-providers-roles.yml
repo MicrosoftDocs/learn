@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-authentication.5-providers-roles
-title: Unit
+title: Configure access for providers and roles
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Configure access for providers and roles
+  description: Learn how to prevent unwanted access in your static web app by restricting providers and unauthenticated users
   ms.date: 02/26/2020
   author: sinedied
   ms.author: sinedied
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/5-providers-roles.md)]
