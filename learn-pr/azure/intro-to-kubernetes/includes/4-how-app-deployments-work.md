@@ -1,4 +1,4 @@
-The drone tracking app has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here you'll look at some of the deployment options available to you to deploy these components.
+The drone tracking app has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here, you'll look at some of the deployment options available to you to deploy these components.
 
 :::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that shows the drone tracking solution components." border="false":::
 
@@ -23,7 +23,7 @@ You can use templates to deploy pods manually. However, a manually-deployed pod 
 
 A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod, and ensures pods are always running on one or more nodes in the cluster. The controller replaces running pods in this way with new pods if they fail, are deleted, or are terminated.
 
-For example, assume you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure your website is always available.
+For example, assume you deploy the drone tracking front-end website, and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure your website is always available.
 
 ## What is a replica set?
 
@@ -141,6 +141,6 @@ Recall from earlier that Kubernetes doesn't provide any of the following service
 - Caches
 - Cluster storage systems
 
-In the example drone tracking solution, there are three services that provide middleware functionality - a NoSQL database, an in-memory cache service, and a message queue. You might select MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
+In this drone tracking solution, there are three services that provide middleware functionality - a NoSQL database, an in-memory cache service, and a message queue. You might select MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
 
 When you're using a cloud environment such as Azure, it's a best practice to use services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Cache for Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.
