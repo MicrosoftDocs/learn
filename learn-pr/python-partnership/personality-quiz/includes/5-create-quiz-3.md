@@ -13,7 +13,7 @@ Make sure your code matches this code:
 # ask the candidate a question
 activity = input( "How would you like to spend your evening?\n(A) Reading a book\n(B) Attending a party\n" )
 if activity == "A":
-    print( "Reading a book, cice choice!" )
+    print( "Reading a book, nice choice!" )
 elif activity == "B":
     print( "Attending a party? Sounds fun!" )
 else:

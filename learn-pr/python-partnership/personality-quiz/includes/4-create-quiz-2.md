@@ -47,11 +47,15 @@ else:
     print( "Sounds fun!" )
 ```
 
+The output will look like this example:
+
+:::image type="content" source="../media/expanded-response-output.png" alt-text="Screenshot that shows output with an expanded response to user input.":::
+
 This approach will work the same as the two `if` statements in the previous section, if the user enters either **A** or **B**. The only difference is that now if the user chooses **A**, the code won't even check if they chose **B**. So code isn't run unnecessarily. It's an *optimization*.
 
 The only issue here is that if the user enters **C**, the program will still print "Sounds fun!" because the code doesn't check what value `activity` has. It just prints "Sounds fun!" if `activity` is anything but `A`.
 
-## An `elif` statement
+## An elif statement
 
 The last way to handle this situation is to use an `elif` statement, also called an "else-if statement." With an `elif` statement, you get the benefit of stopping the code from running if a choice was already identified. But it also ensures that the user did enter either **A** or **B**:
 
@@ -69,6 +73,10 @@ elif activity == "B":
 else:
     print("You must type A or B, let's just say you like to read.")
 ```
+
+The output will look like this example:
+
+:::image type="content" source="../media/if-else-output.png" alt-text="Screenshot of the output when neither A nor B is the user input.":::
 
 A few things to note with `elif` statements:
 

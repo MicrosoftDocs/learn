@@ -3,7 +3,7 @@ Now it's time to create the outline of your quiz code!
 To start, you'll ask five questions and have only two options for each:
 
 1. How would you prefer to spend your evening?
-   1. Solving a cipher
+   1. Reading a book
    1. Attending a party
 
 1. What's your dream job?
@@ -50,13 +50,11 @@ print( f"You chose {activity}.")
 
 Press the **Run** button, and you should see the question print out, along with the options. In the **TERMINAL** area, try typing **A** and then selecting the Enter key to see what happens.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows question 1 printed in the console.](../media/question-1-output.png)
+:::image type="content" source="../media/question-one.png" alt-text="Screenshot that shows question 1 printed in the console.":::
 
 Notice that the activity variable simply stores whatever you entered. Try entering **lion** instead and see what happens.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows answering with lion instead of A or B.](../media/lion-answer.png)
+:::image type="content" source="../media/lion-answer.png" alt-text="Screenshot that shows answering with lion instead of A or B.":::
 
 For now, let's assume the user understands that they should enter either **A** or **B**, whichever corresponds with their choice. Let's also assume that they should capitalize it correctly.
 
@@ -70,7 +68,6 @@ if activity == "A":
 
 Press the **Run** button and try entering **A** as your choice. Make sure it's capitalized.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that demonstrates the execution of an if statement.](../media/chosing-a.png)
+:::image type="content" source="../media/choose-a.png" alt-text="Screenshot that demonstrates the execution of an if statement.":::
 
 What do you think will happen if you choose **B** instead? Try writing some code to see if you can account for that, and then go to the next unit to see different ways of doing it!
