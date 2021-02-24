@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-manage
 metadata:
   title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
   description: As workloads are deployed to the cloud, operations is critical to success. 
-  ms.date: 12/03/2019
+  ms.date: 02/22/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -20,31 +20,30 @@ abstract: |
 prerequisites: | 
   - Foundational understanding of cloud adoption 
   - Understanding of your organization’s operations management requirements 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-adoption-framework-manage.svg
 ratingEnabled: true
 levels:
 - intermediate
 roles:
 - auditor
-- business analyst
-- business owner
-- data engineer
-- database administrator 
+- business-analyst
+- business-owner
+- data-engineer
+- database-administrator 
 - developer
-- DevOps engineer
-- functional consultant
-- privacy manager
-- risk practitioner
-- security engineer
-- solution architect
+- devops-engineer
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
 - student
-- technology manager 
+- technology-manager 
 products:
 - azure
-- Aloud Adoption Framework 
-- Azure Monitor 
-- Azure Arc 
-- Azure ARM 
+- azure-monitor 
+- azure-arc 
+- azure-resource-manager
 units:
 - learn.cloud-adoption-framework-manage.1-introduction
 - learn.cloud-adoption-framework-manage.2-business-alignment
@@ -52,6 +51,7 @@ units:
 - learn.cloud-adoption-framework-manage.4-protection-and-recovery
 - learn.cloud-adoption-framework-manage.5-enhance-operations-baseline
 - learn.cloud-adoption-framework-manage.6-manage-platform-and-workload-specialization
+- learn.cloud-adoption-framework-manage.knowledge-check
 - learn.cloud-adoption-framework-manage.7-summary
 badge:
   uid: learn.cloud-adoption-framework-manage.badge

@@ -1,5 +1,3 @@
-## Summary
-
 In this module have walked through the principles for a management baseline.
 
 You first learned how to align to the business by setting up a common foundation for criticality, impact, and commitment. We then talked about what a management baseline is. We looked into tools that can be included in a minimum management baseline for all workloads. 
