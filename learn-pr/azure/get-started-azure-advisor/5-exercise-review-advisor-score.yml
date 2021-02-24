@@ -3,9 +3,9 @@ uid: learn.azure.get-started-azure-advisor.5-exercise-review-advisor-score
 title: 'Exercise - Review your Advisor Score'
 metadata:
   title: 'Exercise - Review your Advisor Score'
-  description: TBA
-  ms.date: 01/15/2021
-  author: Jak-MS
+  description: Learn how to review your Azure Advisor Score.
+  ms.date: 02/18/2021
+  author: danterasera
   ms.author: darasera
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

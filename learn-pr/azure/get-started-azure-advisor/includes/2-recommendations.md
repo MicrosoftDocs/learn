@@ -1,6 +1,8 @@
+Let's get started by going to your Azure account on the Azure portal.
+
 ## Where can I find Advisor?
 
-Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-portal=true). Here are a few different ways you can get to it:
+Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a few different ways you can get to it:
 
 - Type "advisor" in the search bar at the top of the portal. Then select **Advisor** from the list of services.
 
@@ -14,13 +16,13 @@ Advisor is available on the [Azure portal.](https://portal.azure.com/?azure-port
 
    :::image type="content" source="../media/advisor-from-all-services.png" alt-text="Screenshot showing where to find Advisor under All services." lightbox="../media/advisor-from-all-services.png":::
 
-After you do any one of these three, the Advisor dashboard is displayed.
+After you take one of the previous three steps, you'll see the Advisor dashboard.
 
 :::image type="content" source="../media/azure-advisor-overview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
 
 ### Areas where Advisor can help
 
-As you'll notice in the image above, Advisor gives you recommendations for the five categories that are the basis of the Azure Well-Architected Framework:
+The Advisor dashboard gives you recommendations for the five categories that are the basis of the Azure Well-Architected Framework:
 
 | Category | Description |
 |---------|---------|
@@ -34,7 +36,9 @@ As you'll notice in the image above, Advisor gives you recommendations for the f
 
 Think of Azure Advisor as your personalized cloud consultant. It gives you messages that provide information on best practices to optimize the setup of your Azure services.
 
-Advisor analyzes your *resource configuration* and *usage telemetry* and then gives you actionable recommendations  that can help you improve the cost effectiveness, performance, reliability, and security of your Azure resources, as well as your operational excellence.
+Advisor analyzes your *resource configuration* and *usage telemetry* and then gives you actionable recommendations that can help you improve the cost effectiveness, performance, reliability, and security of your Azure resources, as well as your operational excellence.
+
+:::image type="content" source="../media/how-advisor-works.svg" alt-text="Diagram showing how Azure Advisor makes custom recommendations for resource optimization based on your workloads.":::
 
 ### Examples of Advisor recommendations
 
@@ -42,39 +46,40 @@ Advisor gives you several recommendations for each of these categories. Here are
 
 #### Cost
 
-- Resize or shut down underutilized virtual machine instances
-- Eliminate unprovisioned ExpressRoute circuits
-- Delete or reconfigure idle virtual network gateways
+- Resize or shut down underutilized virtual machine instances.
+- Eliminate unprovisioned ExpressRoute circuits.
+- Delete or reconfigure idle virtual network gateways.
 
 #### Reliability
 
-- Ensure application gateway fault tolerance
-- Enable backup to protect your virtual machine data from accidental deletion
-- Configure Traffic Manager endpoints for resiliency
+- Ensure application gateway fault tolerance.
+- Enable backup to protect your virtual machine data from accidental deletion.
+- Configure Traffic Manager endpoints for resiliency.
 
 #### Operational excellence
 
-- Create Azure Service Health alerts to be notified when Azure problems affect you
-- Design your storage accounts to prevent reaching the maximum subscription limit
-- No validation environment enabled
+- Create Azure Service Health alerts to notify you when Azure problems affect you.
+- Design your storage accounts to prevent reaching the maximum subscription limit.
+- Check if validation environment is enabled.
 
 #### Performance
 
-- Improve App Service performance and reliability
-- Use managed disks to prevent disk I/O throttling
-- Improve MySQL connection management
+- Improve App Service performance and reliability.
+- Use managed disks to prevent disk I/O throttling.
+- Improve MySQL connection management.
 
 #### Security
 
 Advisor integrates with [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab.
 
-Security Center periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities, such as overdue system updates. Security Center then creates recommendations, and Advisor guides you through the process of resolving them.
+- Security Center periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities, such as overdue system updates.
+- Advisor guides you through the process of resolving any recommendations created by Security Center during its analysis.
 
 ## Remediating issues found by Advisor recommendations
 
 Now that you've learned a little about your Advisor recommendations, we'll show you the typical process you follow to resolve them:
 
-First, on your Advisor dashboard, you can select a category that shows recommendations to resolve. You can also choose to see **All recommendations**, which shows a list of every Advisor recommendation across all five categories.
+First, on your Advisor dashboard, you can select a category that shows recommendations to resolve. You can also choose to see **All recommendations, which show a list of every Advisor recommendation across all five categories.
 
 You'll notice that each of the five category tiles shows:
 
@@ -84,12 +89,12 @@ You'll notice that each of the five category tiles shows:
 
 :::image type="content" source="../media/azure-advisor-five-categories.png" alt-text="Screenshot of Advisor dashboard showing five recommendation tiles." lightbox="../media/azure-advisor-five-categories.png":::
 
-After you make your selection, a new page opens showing details about the recommendations for the chosen category. Under a summary of the recommendations, you'll see a table that provides more information, such as:
+By making a selection, you open a new page that shows  details about the recommendations for the chosen category. Under a summary of the recommendations, you'll see a table that provides more information, such as:
 
 - A linked description of each recommendation
 - The impact level of each recommendation
 - The potential annual savings for fixing each issue
-- The number of resources impacted
+- The number of resources affected
 
 In addition, on the left side of the page under **Recommendations**, you can select a different category (or **All recommendations**) to quickly open a page where you can see the Advisor recommendations for that  selection.
 
@@ -98,7 +103,7 @@ In addition, on the left side of the page under **Recommendations**, you can sel
 After you select a linked description for a recommendation, a window opens showing some suggestions for actions you can take. At this point in the flow, you have several options for how you want to handle the recommendation.
 
 - You can select a linked **Recommended action** and another page opens that lets you take the necessary steps to resolve the issue.
-- If you choose to deal with the recommendation later on, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if it sees that the issue hasn't been resolved.
-- Or if you know this is an issue you don't want to resolve, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource.
+- If you'd prefer to handle the recommendation at a later time, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if the issue hasn't been resolved.
+- If you know that you don't want to resolve that issue, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource.
 
    :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing how to find Advisor by using search." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::
