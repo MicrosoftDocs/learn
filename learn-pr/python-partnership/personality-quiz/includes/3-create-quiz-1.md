@@ -1,11 +1,9 @@
 Now it's time to create the outline of your quiz code!
 
-![Quiz promo with four movie characters.](../media/edu-02-github-program-quiz.png)
-
 To start, you'll ask five questions and have only two options for each:
 
 1. How would you prefer to spend your evening?
-   1. Reading a book
+   1. Solving a cipher
    1. Attending a party
 
 1. What's your dream job?
@@ -18,18 +16,18 @@ To start, you'll ask five questions and have only two options for each:
 
 1. What's your favorite decade?
    1. 1910s
-   1. 1980s
+   1. 2010s
 
 1. What's your favorite way to travel?
    1. Driving
    1. Flying
 
-We'll use these questions to determine which of the following four characters you're most like:
+We'll use these questions to determine which of the following four super sleuth characters you're most like:
 
-- Diana Prince / Wonder Woman
-- Barbara Minerva
-- Steve Trevor
-- Max Lord
+- Sharp-Eyed Sam
+- Curious Cam
+- Keen Kai
+- Inquisitive Indy
 
 ## Ask the quiz taker for input
 
@@ -50,7 +48,7 @@ activity = input( "How would you like to spend your evening?\n(A) Reading a book
 print( f"You chose {activity}.")
 ```
 
-Press the **Play** button, and you should see the question print out, along with the options. In the **TERMINAL** area, try typing **A** and then selecting the Enter key to see what happens.
+Press the **Run** button, and you should see the question print out, along with the options. In the **TERMINAL** area, try typing **A** and then selecting the Enter key to see what happens.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows question 1 printed in the console.](../media/question-1-output.png)
@@ -70,11 +68,9 @@ if activity == "A":
     print( "Nice choice!" )
 ```
 
-Press the **Play** button and try entering **A** as your choice. Make sure it's capitalized.
+Press the **Run** button and try entering **A** as your choice. Make sure it's capitalized.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that demonstrates the execution of an if statement.](../media/chosing-a.png)
 
 What do you think will happen if you choose **B** instead? Try writing some code to see if you can account for that, and then go to the next unit to see different ways of doing it!
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

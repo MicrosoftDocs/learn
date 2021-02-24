@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.python-partnership.personality-quiz
 metadata:
-  title: What is your super sleuth character?
-  description: Which fictional super sleuth character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
-  ms.date: 02/24/2021
+  title: What is your super sleuth personality?
+  description: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: What is your super sleuth character?
-summary: Which fictional super sleuth character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+title: What is your super sleuth personality?
+summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
 abstract: |
  In this module, you'll discover how to: 
   - Write your first lines of Python code

@@ -3,7 +3,7 @@ uid: learn.python-partnership.personality-quiz.set-up-visual-studio-code
 metadata:
   title: Ensure that Visual Studio Code is ready to create a personality quiz
   description: This unit ensures that learners have Visual Studio Code ready to write the quiz code.
-  ms.date: 09/21/2020
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

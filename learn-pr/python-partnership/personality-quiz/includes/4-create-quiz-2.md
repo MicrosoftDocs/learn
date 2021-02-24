@@ -2,7 +2,7 @@ So far, your code asks one question to the user and stores their response. If th
 
 To account for the user choosing **B** instead of **A**, you can use multiple `if` statements, an `else` statement, or an `elif` statement.
 
-## Multiple `if` statements
+## Multiple if statements
 
 The first way you can handle the user choosing **B** is to have a second `if` statement after the one that checks for **A**:
 
@@ -30,7 +30,7 @@ That sounds right and does work, but it also does some unnecessary work. For exa
 
 That's where the other two methods come in.
 
-## An `else` statement
+## An else statement
 
 You've already seen an `else` statement in the Python basics unit in this module. It was written in English and not in code. You can write `else` statements in code too:
 
@@ -77,5 +77,3 @@ A few things to note with `elif` statements:
 - If you want to give the user a chance to choose a correct answer, it's a much more complicated solution that is beyond the scope of this module.
 
 Now you're ready to ask all of the questions!
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

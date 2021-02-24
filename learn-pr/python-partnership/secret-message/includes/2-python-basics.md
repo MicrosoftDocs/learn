@@ -12,7 +12,7 @@ Try adding the following code to your <b>decrypt.py</b> file:
 
 Press the **Run** button, and you should see the same behavior as before.
 
-![Screenshot that shows that comments in Python do not change code execution.](../media/comment.png)
+:::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows that comments in Python do not change code execution.":::
  
 ## Variables
 
@@ -35,13 +35,13 @@ Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If y
 # Associate the variable town with the value "Contosoville"
 town = "Contosoville"
 
-# Print a message with the mystery location
+# Print a message about the secret location
 print( "The town I am looking for is " + town )
 ```
 
 Press the green **Run** button, and you should see the town revealed.
 
-![Screenshot of the output of the command to print the string value of the variable town.](../media/town-output.png)
+:::image type="content" source="../media/town-output.png" alt-text="Screenshot of the output of the command to print the string value of the variable town.":::
  
 ## Functions
 

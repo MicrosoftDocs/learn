@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.personality-quiz.introduction
 metadata:
-  title: Create your own Super Quiz inspired by WONDER WOMAN 1984, coming to theaters
-  description: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
-  ms.date: 09/21/2020
+  title: Use Python to create your own personality quiz
+  description: Which super sleuth character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  ms.date: 02/24/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create your own Super Quiz inspired by WONDER WOMAN 1984, coming to theaters
+title: Use Python to create your own personality quiz
 durationInMinutes: 5
 content: |
   [!include[](includes/0-introduction.md)]

@@ -13,7 +13,7 @@ Make sure your code matches this code:
 # ask the candidate a question
 activity = input( "How would you like to spend your evening?\n(A) Reading a book\n(B) Attending a party\n" )
 if activity == "A":
-    print( "Reading a book, Nice choice!" )
+    print( "Reading a book, cice choice!" )
 elif activity == "B":
     print( "Attending a party? Sounds fun!" )
 else:
@@ -23,7 +23,7 @@ else:
 # ask the candidate a second question
 job = input( "What's your dream job?\n(A) Curator at the Smithsonian\n(B) Running a business\n" )
 if job == "A":
-    print( "Curator, Nice choice!" )
+    print( "Curator, nice choice!" )
 elif job =="B":
     print( "Running a business? Sounds fun!" )
 else:
@@ -33,7 +33,7 @@ else:
 # ask the candidate a third question
 value = input( "What's more important?\n(A) Money\n(B) Love\n" )
 if value == "A":
-    print( "Money, Nice choice!" )
+    print( "Money, nice choice!" )
 elif value =="B":
     print( "Love? Sounds fun!" )
 else:
@@ -41,11 +41,11 @@ else:
     value = "A"
 
 # ask the candidate a fourth question
-decade = input( "What's your favorite decade?\n(A) 1910s\n(B) 1980s\n" )
+decade = input( "What's your favorite decade?\n(A) 1910s\n(B) 2010s\n" )
 if decade == "A":
-    print( "1910s, Nice choice!" )
+    print( "1910s, nice choice!" )
 elif decade =="B":
-    print( "1980s? Sounds fun!" )
+    print( "2010s? Sounds fun!" )
 else:
     print("You must type A or B, let's just say the 1910s is your favorite decade.")
     decade = "A"
@@ -53,7 +53,7 @@ else:
 # ask the candidate a fifth question
 travel = input( "What's your favorite way to travel?\n(A) Driving\n(B) Flying\n" )
 if travel == "A":
-    print( "Driving, Nice choice!" )
+    print( "Driving, nice choice!" )
 elif travel =="B":
     print( "Flying? Sound fun!" )
 else:
@@ -64,6 +64,4 @@ else:
 print( f"You chose {activity}, then {job}, then {value}, then {decade}, then {travel}.")
 ```
 
-Press the **Play** button and make sure your responses are recorded correctly.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
+Press the **Run** button and make sure your responses are recorded correctly.

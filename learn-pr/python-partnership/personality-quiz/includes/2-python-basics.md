@@ -10,42 +10,41 @@ Try adding the following line to your file:
 # this is a comment that won't be interpreted as a command
 ```
 
-Press the **Play** button, and you should see the same behavior as before.
+Press the **Run** button, and you should see the same behavior as before.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows a Python comment and the unchanged result.](../media/comments.png)
+:::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows a Python comment and the unchanged result.":::
 
 ## Variables
 
 If you want Python to remember something, you can command it to "write it down" by using a variable.
 
-The following command tells Python to remember the value `1984` by using a variable named `year` with the special assignment (`=`) operator. Anytime after this command, when Python sees `year`, it will substitute the current value.
+The following command tells Python to remember the value `2050` by using a variable named `year` with the special assignment (`=`) operator. Anytime after this command, when Python sees `year`, it will substitute the current value.
 
 ```python
-# use a variable named year to "remember" the value 1984
-year = 1984
+# use a variable named year to "remember" the value 2050
+year = 2050
 ```
 
 Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print out the value of the variable.
 
 ```python
-# use a variable named year to "remember" the value 1984
-year = 1984
+# use a variable named year to "remember" the value 2050
+year = 2050
 
 # print a message to see what year it is
 print( f"The year is {year}..." )
 ```
 
-Press the **Play** button, and you should see the year print out.
+Press the **Run** button, and you should see the year print out.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows the output to printing the value of a variable.](../media/quiz-print-variable.png)
 
-We can update the value of a variable by using the same assignment (`=`) operator. Python will figure out the right side before storing it in the variable. Because `year` already has a value, this command will ask Python to first substitute the current value of `year` (which is `1984`), add 36 to it, and then store that value in the variable `year`. This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
+We can update the value of a variable by using the same assignment (`=`) operator. Python will figure out the right side before storing it in the variable. Because `year` already has a value, this command will ask Python to first substitute the current value of `year` (which is `2050`), add 36 to it, and then store that value in the variable `year`. This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
 
 ```python
-# use a variable named year to "remember" the value 1984
-year = 1984
+# use a variable named year to "remember" the value 2050
+year = 2050
         
 # print a message to see what year it is
 print( f"The year is {year}..." )
@@ -56,7 +55,7 @@ year = year + 36
 print( f"The year is now {year}..." )
 ```
 
-Press the **Play** button, and you should see the years print out.
+Press the **Run** button, and you should see the years print out.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows updating a variable in Python.](../media/updating-variable.png)
@@ -107,15 +106,15 @@ There are a few more possible scenarios, but let's move on to how we can use con
 Python expects a particular *syntax* (formulation of the commands). We won't go in depth here. Instead, just try out this example by adding the following to your file. (If you're wondering what the `==` is doing, that is how we quiz if two numbers are equal. Remember that a single `=` means assignment of a variable, so the computer would be confused.)
 
 ```python
-# if we're in 1984
-if year == 1984:
+# if we're in 1980
+if year == 1980:
     print( "I left you a message on your answering machine!" )
-# if we're in 2020
-if year == 2020:
+# if we're in 2021
+if year == 2021:
     print( "I left you a voicemail!" )
 ```
 
-Press the **Play** button, and you should see state-of-the-art messaging.
+Press the **Run** button, and you should see state-of-the-art messaging.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows output from the conditional statement.](../media/quiz-output-conditionals.png)
@@ -133,5 +132,3 @@ In Boolean logic, Boolean values (true or false) are operated on to produce othe
 Similarly, we could use the OR operator to indicate that if either operand is true, the next part should execute. For example we might say, "If it's cold outside OR its raining, then grab a parka. " In this case, if it's cold outside but not raining, it's hot outside and raining, or it's cold outside and raining then you should grab a parka. 
 
 Now that we have a handle on some of the basics, let's move on to making the quiz.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
