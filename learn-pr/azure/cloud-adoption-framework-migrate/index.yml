@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-migrate
 metadata:
   title: "CAF Migrate: Migrate to Azure through repeatable processes and common tools. - Learn"
   description: Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
-  ms.date: 03/01/2021
+  ms.date: 02/22/2021
   author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Foundational understanding of cloud migration
   - Understanding of your organization’s migration plan and the types of workloads you’ll need to migrate
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-adoption-framework-migrate.svg
 ratingEnabled: true
 levels:
 - beginner

@@ -3,7 +3,7 @@ Azure includes a number of native tools to facilitate the disciplines or phases 
 
 ## Azure Migrate
 
-Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads ("Cut Over"). 
+Azure includes a number of native tools to facilitate the disciplines or phases of the migration process: Assess workloads, Migrate workloads, and Release workloads ("Cut Over").
 Azure Migrate provides a centralized hub to assess, migrate, and release to from on-premises servers, virtual machines from other clouds, applications, and data. In addition to Azure Migrate teams also often include a number of integrated first and third party tools.
 
 Azure Migrate provides the following:
@@ -11,11 +11,11 @@ Azure Migrate provides the following:
 - **Unified migration platform**: A single portal to start, run, and track your migration to Azure.
 - **Range of tools**: A range of tools for assessment and migration. Azure Migrate tools include Azure Migrate: Discovery and Assessment and Azure Migrate: Server Migration. Azure Migrate also integrates with other Azure services and tools, and with independent software vendor (ISV) offerings.
 - **Assessment and migration**: In the Azure Migrate hub, you can assess and migrate:
-    - **Servers**: Assess on-premises servers or VMs running on other clouds and migrate them to Azure virtual machines or Azure VMware Solution (AVS) (Preview).
-    - **Databases**: Assess on-premises databases and migrate them to Azure SQL Database or to SQL Managed Instance.
-    - **Web applications**: Assess on-premises web applications and migrate them to Azure App Service by using the Azure App Service Migration Assistant.
-    - **Virtual desktops**: Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Windows Virtual Desktop (WVD) in Azure.
-    - **Data**: Migrate large amounts of data to Azure quickly and cost-effectively using Azure Data Box products.
+  - **Servers**: Assess on-premises servers or VMs running on other clouds and migrate them to Azure virtual machines or Azure VMware Solution (AVS) (Preview).
+  - **Databases**: Assess on-premises databases and migrate them to Azure SQL Database or to SQL Managed Instance.
+  - **Web applications**: Assess on-premises web applications and migrate them to Azure App Service by using the Azure App Service Migration Assistant.
+  - **Virtual desktops**: Assess your on-premises virtual desktop infrastructure (VDI) and migrate it to Windows Virtual Desktop (WVD) in Azure.
+  - **Data**: Migrate large amounts of data to Azure quickly and cost-effectively using Azure Data Box products.
 
 ## Integrated tools
 
