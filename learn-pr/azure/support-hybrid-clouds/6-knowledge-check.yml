@@ -1,0 +1,58 @@
+uid: learn.azure.support-hybrid-clouds.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for the Support data classification with private and hybrid clouds module.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is NOT a feature of Tactical Azure Stack Hub?"
+    choices:
+    - content: "It addresses tactical edge deployments for limited or no connectivity."
+      isCorrect: false
+      explanation: "Incorrect. Tactical Azure Stack Hub is designed for tactical edge deployments for limited or no connectivity."
+    - content: "It allows customers to upload information or models directly to Azure."
+      isCorrect: true
+      explanation: "Correct. Azure Stack Edge allows customers to upload information or models directly to Azure."
+    - content: "It meets fully mobile requirements."
+      isCorrect: false
+      explanation: "Incorrect. Tactical Azure Stack Hub meets fully mobile, or high portability (“2-person lift”) requirements."
+    - content: "It is appropriate for harsh conditions requiring military specifications solutions."
+      isCorrect: false
+      explanation: "Incorrect. Tactical Azure Stack Hub is a ruggedized product that can withstand harsh conditions."
+  - content: "Which service provides physical servers that are used for only one Azure subscription?"
+    choices:
+    - content: "Azure Dedicated Host."
+      isCorrect: true
+      explanation: "Correct. Azure Dedicated Host provides physical servers that can host one or more Azure VMs and are dedicated to one Azure subscription."
+    - content: "Confidential computing."
+      isCorrect: false
+      explanation: "Confidential computing offers encryption of data while it's in use, ensuring that data is always under customer control."
+    - content: "Azure Stack Edge."
+      isCorrect: false
+      explanation: "Incorrect. Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities."
+    - content: "Customer Lockbox."
+      isCorrect: false
+      explanation: "Incorrect. Customer Lockbox allows customers to approve are deny elevated access requests for customer data in support scenarios."
+  - content: "Which of the following is a use case for Azure Stack Edge?"
+    choices:
+    - content: "Lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
+      isCorrect: false
+      explanation: "Incorrect. Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
+    - content: "Run initial Machine Learning algorithms and act of them before sending data to the cloud to improve the model."
+      isCorrect: true
+      explanation: "Correct. With Azure Stack Edge, customers can run machine learning models to get results quickly and act on them before the data is sent to the cloud."
+    - content: "Store encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers."
+      isCorrect: false
+      explanation: "Incorrect. User-provided hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers."
+    - content: "Run workloads using the same architecture and APIs as in Azure while having a physically isolated network for the highest classification data."
+      isCorrect: false
+      explanation: "Incorrect. Azure Stack Hub enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data."

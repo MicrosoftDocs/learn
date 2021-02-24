@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.support-hybrid-clouds.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Support data classification with private and hybrid clouds.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1 
+content: |
+  [!include[](includes/1-introduction.md)] 
