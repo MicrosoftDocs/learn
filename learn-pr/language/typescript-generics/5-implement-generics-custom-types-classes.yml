@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.5-implement-generics-custom-types-classes
+title: Implement generics with custom types and classes
+metadata:
+  title: Implement generics with custom types and classes
+  description: Learn how to declare a generic with custom types and classes and use generic constraints with custom types and classes.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-implement-generics-custom-types-classes.md)]
