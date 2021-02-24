@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.best-practices-azure-migration
+metadata:
+  title: Best practices for Azure migration
+  description: Cloud migration is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration journey. Dive deeper into steps and best practices for planning and executing migration.
+  brand: azure
+  ms.date: 02/22/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Best practices for Azure migration
+summary: |
+  Cloud migration is top of mind for most of the organizations. Explore how you can confidently and efficiently navigate every step of the migration journey. Dive deeper into steps and best practices for planning and executing migration.
+  
+  In this learning path, you'll:
+  - Understand the benefits of cloud
+  - Explore the cloud migration journey and common migration scenarios
+  - Learn about migration tools and programs
+  - Get best practices and how-to guidance for Azure migration
+prerequisites: |
+  - Basic understanding of cloud computing, Azure fundamentals and workloads being migrated
+iconUrl: /learn/achievements/generic-trophy.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+- azure-migrate
+modules:
+- learn.azure.accelerate-migration-journey
+- learn.cloud-adoption-framework-plan
+- learn.cloud-adoption-framework-migrate
+trophy:
+  uid: learn.best-practices-azure-migration.trophy
