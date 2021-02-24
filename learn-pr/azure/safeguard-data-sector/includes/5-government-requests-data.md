@@ -1,1 +1,23 @@
-**Enter content here**
+When deploying sensitive data in a multi-tenant cloud, worldwide public sector customers look for assurances about data security in scenarios involving government and law enforcement requests for customer data. Microsoft takes strong measures to protect customer data from inappropriate access or use by unauthorized persons and ensures that all government requests for customer data follow a strict procedure.
+
+## Responding to government requests for data
+
+Microsoft restricts access by employees and subcontractors and carefully defines requirements for responding to government requests for customer data. There are no back-door channels and no direct or unfettered government access to customer data. Microsoft imposes special requirements for government and law enforcement requests for customer data.
+
+As stated in the Microsoft Online Services [Data Protection Addendum](https://aka.ms/DPA) (DPA), Microsoft won't disclose customer data to law enforcement unless required by law. If law enforcement contacts Microsoft with a demand for customer data, Microsoft will try to redirect the law enforcement agency to request that data directly from the customer. If compelled to disclose customer data to law enforcement, Microsoft will promptly notify the customer and provide a copy of the demand, unless legally prohibited from doing so.
+
+Government requests for customer data must follow applicable laws. A subpoena or its local equivalent is required to request non-content data, and a warrant, court order, or its local equivalent is required for content data. Every year, Microsoft rejects law enforcement requests for customer data. Challenges to government requests can take many forms. In many of these cases, Microsoft simply informs the requesting government that it's unable to disclose the requested information and explains the reason for rejecting the request. Where appropriate, Microsoft challenges requests in court. Customers should review relevant [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/law-enforcement-requests-report) information, including detailed reports that Microsoft publishes twice a year.
+
+## CLOUD Act provisions
+
+The **CLOUD Act** is a United States law enacted in March 2018. Customers may read Microsoft [blog post](https://blogs.microsoft.com/on-the-issues/2018/04/03/the-cloud-act-is-an-important-step-forward-but-now-more-steps-need-to-follow/) for more information. The [follow-up blog post](https://blogs.microsoft.com/on-the-issues/2018/09/11/a-call-for-principle-based-international-agreements-to-govern-law-enforcement-access-to-data/) describes Microsoft's call for principle-based international agreements governing law enforcement access to data. Key points of interest to government customers considering Azure services are outlined below.
+
+* The CLOUD Act allows governments to negotiate new government-to-government agreements that will result in greater transparency and certainty for how information is disclosed to law enforcement agencies across international borders.
+* The CLOUD Act isn't a mechanism for greater government surveillance. It's a mechanism toward ensuring that customer data is protected by the laws of each customer's home country while continuing to allow lawful access to evidence for legitimate criminal investigations. Law enforcement in the US still needs to obtain a warrant demonstrating probable cause of a crime from an independent court before requesting the contents of communications. The CLOUD Act requires similar protections for other countries seeking bilateral agreements.
+* While the CLOUD Act creates new rights under new international agreements, it also preserves the common law right of cloud service providers to go to court to challenge search warrants when there's a conflict of laws, even without these new treaties in place.
+* Microsoft retains the legal right to object to a law enforcement order in the United States where the order clearly conflicts with the laws of the country where customer data is hosted. Microsoft will continue to carefully evaluate every law enforcement request and exercise its rights to protect customers where appropriate.
+* For legitimate enterprise customers, US law enforcement will, in most instances, go directly to the customer rather than Microsoft for information requests.
+
+Microsoft doesn't disclose additional data because of the CLOUD Act. This law doesn't change any of the legal and privacy protections that previously applied to law enforcement requests for data, and those protections continue to apply. Microsoft keeps to the same principles and customer commitments related to government demands for user data.
+
+Next, let's look at how Microsoft Azure detects and prevents threats to data security.
