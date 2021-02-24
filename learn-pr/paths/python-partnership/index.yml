@@ -1,23 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn.python-partnership
 metadata:
-  title: Learn Python basics with Wonder Woman
-  description: 1984 is bold, grand, and electric. It’s an era of excess and corruption, where Wonder Woman must harness the power of technology to restore balance to the world. And Microsoft is partnering with the WONDER WOMAN 1984 film to empower coders and creators to learn technology skills they can use for greater good.
+  title: Use Python basics to solve mysteries and find answers
+  description: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions and answers to things you wonder about.
   brand: azure
-  ms.date: 09/21/2020
+  ms.date: 02/23/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn Python basics with Wonder Woman
+title: Use Python basics to solve mysteries and find answers
 summary: |
-  1984 is bold, grand, and electric. It’s an era of excess and corruption, where Wonder Woman must harness the power of technology to restore balance to the world. And Microsoft is partnering with the WONDER WOMAN 1984 film to empower coders and creators to learn technology skills they can use for greater good.
+  You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions and answers to things you wonder about.
   
   In this learning path, you'll:
-    - Discover ways you can engage with the WONDER WOMAN 1984 film with code
+    - Discover ways you can engage with code to solve basic problems
     - Write your first lines in Python
     - Build a message decoder program
-    - Create a personality quiz to determine which character you're most like from the WONDER WOMAN 1984 film
+    - Create a personality quiz to determine your super sleuth character
   
   <strong>No coding experience is required to complete this Microsoft Learn learning path.</strong>
   
