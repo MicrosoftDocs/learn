@@ -2,7 +2,7 @@ Microsoft Azure supports a wide variety of public sector use cases. These use ca
 
 ## Processing highly sensitive or regulated data on Azure Stack Hub
 
-Microsoft provides Azure Stack Hub as an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment. Azure Stack Hub offers IaaS and PaaS services and shares the same APIs as the public Azure cloud. Azure Stack Hub is available in scale units of 4, 8, and 16 servers in a single-server rack, as well as 4 servers in a military-specification, ruggedized set of transit cases, or multiple racks in a modular datacenter configuration.
+Microsoft provides Azure Stack Hub as an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment. Azure Stack Hub offers IaaS and PaaS services and shares the same APIs as the global Azure cloud. Azure Stack Hub is available in scale units of 4, 8, and 16 servers in a single-server rack, as well as 4 servers in a military-specification, ruggedized set of transit cases, or multiple racks in a modular datacenter configuration.
 
 Azure Stack is a solution for customers who operate in scenarios where:
 

@@ -20,6 +20,6 @@ Azure compliance and certification resources are intended to help customers addr
 
 ## Transparency and audit
 
-Microsoft makes all independent third-party audit reports and other related documentation available to customers under a non-disclosure agreement to download and examine from the [Service Trust Portal](https://aka.ms/stp). It also offers a Regulator Right to Examine, a program Microsoft implemented to provide regulators with direct right to examine Azure. This right includes the ability to conduct an on-site examination, to meet with Microsoft personnel and Microsoft external auditors, and to access any related information, records, reports, and documents.
+Microsoft makes all independent third-party audit reports and other related documentation available to customers to download and examine from the [Service Trust Portal](https://aka.ms/stp). It also offers a Regulator Right to Examine, a program Microsoft implemented to provide regulators with direct right to examine Azure. This right includes the ability to conduct an on-site examination, to meet with Microsoft personnel and Microsoft external auditors, and to access any related information, records, reports, and documents.
 
 Next, let's explore a few select workloads and use cases for Azure in the public sector.
