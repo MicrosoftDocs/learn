@@ -1,0 +1,13 @@
+uid: learn.azure.safeguard-data-sector.2-data-residency-sovereignty
+title: Data residency and sovereignty
+metadata:
+  title:  Data residency and sovereignty
+  description: Conceptual discussion of data residency and sovereignty in the context of public sector agencies using Azure.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/2-data-residency-sovereignty.md)] 

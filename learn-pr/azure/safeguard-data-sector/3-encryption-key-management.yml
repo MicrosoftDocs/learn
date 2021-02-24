@@ -1,0 +1,13 @@
+uid: learn.azure.safeguard-data-sector.3-encryption-key-management
+title: Data encryption and key management
+metadata:
+  title: Data encryption and key management
+  description: Overview of how Azure encrypts data, covering data at rest and in transit, encryption key management, and Azure confidential computing.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/3-encryption-key-management.md)] 

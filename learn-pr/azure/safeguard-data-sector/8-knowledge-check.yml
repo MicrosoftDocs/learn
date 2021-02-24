@@ -1,0 +1,58 @@
+uid: learn.azure.safeguard-data-sector.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for Safeguard data with public sector in Azure.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following accurately describes data residency in Azure?"
+    choices:
+    - content: "All Azure services enable the customer to specify the region into which the service will be deployed."
+      isCorrect: false
+      explanation: "Incorrect. Non-regional Azure services don't enable the customer to specify the region where the services will be deployed."
+    - content: "Azure Active Directory deployments in Europe will store all Active Directory data in Europe."
+      isCorrect: false
+      explanation: "Incorrect. Most Active Directory data for deployments in Europe are stored in Europe, but some are stored in the United States."
+    - content: "Data sovereignty is another term that describes data residency."
+      isCorrect: false
+      explanation: "Incorrect. Data sovereignty implies data residency, but it also introduces rules and requirements that define who has control over and access to customer data stored in the cloud."
+    - content: "Azure Active Directory deployments in the United States will store all Active Directory data in the United States."
+      isCorrect: true
+      explanation: "Correct. All Active Directory data for deployments in the United States are stored in the United States."
+  - content: "Which of the following is a way that Azure reduces the risk of insider threat?"
+    choices:
+    - content: "All data is encrypted using customer-managed encryption keys."
+      isCorrect: false
+      explanation: "Incorrect. Data is encrypted with the option for customer-managed encryption keys."
+    - content: "Microsoft engineers and support personnel are granted long term access to the data for customers specifically assigned the them, and cannot access data from other customers."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft engineers can be granted access to customer data using temporary credentials via Just-in-Time (JIT) access."
+    - content: "Customer Lockbox keeps customer data secure until Microsoft engineers or support personnel determine that it’s needed for a support or troubleshooting scenario."
+      isCorrect: false
+      explanation: "Incorrect. Customer Lockbox puts customers in charge of approving insider access in support and troubleshooting scenarios."
+    - content: "Customers can monitor external access to their provisioned Azure resources."
+      isCorrect: true
+      explanation: "Correct. Customers can monitor external access to their provisioned Azure resources, including through security alerts."
+  - content: "Which of the following accurately describes how Microsoft responds to government requests for data?"
+    choices:
+    - content: "Law enforcement and government officials may use back door channels to access data in special circumstances."
+      isCorrect: false
+      explanation: "Incorrect. There are no back-door channels and no direct or unfettered government access to customer data."
+    - content: "Microsoft complies with all law enforcement requests for data."
+      isCorrect: false
+      explanation: "Incorrect. Every year, Microsoft rejects law enforcement requests for customer data."
+    - content: "The CLOUD Act provides the US government with broader surveillance powers."
+      isCorrect: false
+      explanation: "Incorrect. The CLOUD Act isn't a mechanism for greater government surveillance."
+    - content: "Microsoft may choose to challenge government requests in court."
+      isCorrect: true
+      explanation: "Correct. Where appropriate, Microsoft challenges law enforcement and other government requests in court."

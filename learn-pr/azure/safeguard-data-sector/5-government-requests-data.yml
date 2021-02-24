@@ -1,0 +1,13 @@
+uid: learn.azure.safeguard-data-sector.5-government-requests-data
+title: Government requests for data
+metadata:
+  title: Government requests for data
+  description: Discussion of the approach and key principles of how Microsoft handles government request for data, with focus on CLOUD Act.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/5-government-requests-data.md)] 

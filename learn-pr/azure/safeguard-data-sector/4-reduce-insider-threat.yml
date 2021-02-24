@@ -1,0 +1,13 @@
+uid: learn.azure.safeguard-data-sector.4-reduce-insider-threat
+title: Reduce insider threat
+metadata:
+  title: Reduce insider threat
+  description: Discussion of the controls that ensure data protection in Azure and prevent back-door attacks.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: PENDING
+content: |
+  [!include[](includes/4-reduce-insider-threat.md)] 
