@@ -19,7 +19,7 @@ To create an AKS cluster, complete the following steps:
     | Kubernetes cluster name | Enter a name. |
     | Region | Select the same region as your resource group. |
     | Availability zones | *default* |
-    | Kubernetes version |  *default* 
+    | Kubernetes version |  *default* |
     | **Primary node pool** |
     | Node size | *default* for the AKS nodes. |
     | Node count | *default* |
@@ -102,8 +102,9 @@ To create an AKS cluster, complete the following steps:
       ```
       spAppUrl=$(spAppUrl),spPassword=$(spPassword),tenantId=$(tenantId),subscriptionId=$(subscriptionId),iothub_name=$(iothub_name),environment=$(environment),replicaCount=2 
       ```
+
     - Ensure that the **Install if release not present**, **Recreate Pods**, **Force**, and **Wait** checkboxes are checked.
-    
+
 1. Start a new release, and when it's complete, view your AKS cluster dashboard.
 
 1. Go to the Azure portal, open Azure Cloud Shell, and run the following command.
@@ -131,7 +132,7 @@ Make sure that the device has been deployed and is running. You can monitor the 
 1. Add the following values to monitor block I/O for all edge modules.
 
    ![The illustration shows chart details.](../media/ai-block-io.png)
-   
+
 1. Add the following values to monitor the network traffic for all Edge modules.
 
    ![The illustration shows chart details.](../media/ai-network-traffic.png)
