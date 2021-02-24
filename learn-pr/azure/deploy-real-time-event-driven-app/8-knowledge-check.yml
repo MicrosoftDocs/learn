@@ -14,38 +14,38 @@ quiz:
   questions:
   - content: "How fast is real time?"
     choices:
-    - content: "Two seconds."
+    - content: "Two seconds"
       isCorrect: false
       explanation: "Two seconds are too much for real-time requirements."
-    - content: "An instant, more properly defined by your specific use case."
+    - content: "An instant, more properly defined by your specific use case"
       isCorrect: true
-      explanation: "Correct. Real-time tasks are performing with almost no delay. The execution time should be defined in advanced and monitored properly."
-    - content: "Under 1 millisecond."
+      explanation: "Correct. Real-time tasks are performed with almost no delay. The execution time should be defined in advance and monitored properly."
+    - content: "Under 1 millisecond"
       isCorrect: false
       explanation: "Wow, that's fast. Could be, but the execution time depends on your specific use case."
-  - content: 'Which of the following databases are best to perform event driven workloads?'
+  - content: 'Which of the following databases are best to perform event-driven workloads?'
     choices:
-    - content: Cosmos DB
+    - content: Azure Cosmos DB
       isCorrect: false
-      explanation: "Yes, Cosmos DB ensures single-digit millisecond response times, and automatic and instant scalability. But aren't you missing one?"
-    - content: MySQL
+      explanation: "Yes, Azure Cosmos DB ensures single-digit millisecond response times and automatic and instant scalability. But aren't you missing one?"
+    - content: Azure Database for MySQL
       isCorrect: false
-      explanation: "Azure Mysql Database is a fully managed database service that lets developers quickly develop and deploy secure cloud-native applications also for event driven workloads. But aren't you missing one?"
-    - content: PostgreSQL
+      explanation: "Azure Database for MySQL is a fully managed database service that lets developers quickly develop and deploy secure cloud-native applications also for event-driven workloads. But aren't you missing one?"
+    - content: Azure Database for PostgreSQL
       isCorrect: false
-      explanation: "Azure Database for PostgreSQL is a relational database service based on the open-source Postgres database engine. It's a fully managed database-as-a-service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability. But aren't you missing one?"
-    - content: All of them.
+      explanation: "Azure Database for PostgreSQL is a relational database service based on the open-source PostgreSQL database engine. It's a fully managed database as a service that can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability. But aren't you missing one?"
+    - content: All of them
       isCorrect: true
-      explanation: "Yes, using an event-driven workload does not limit you from a specific database. Choose the one fitting best to your given scenario."
-  - content: "How should events be build?"
+      explanation: "Yes. Using an event-driven workload doesn't limit you to a specific database. Choose the one that best fits your scenario."
+  - content: "How should events be built?"
     choices:
-    - content: "Events should be build generic."
+    - content: "Events should be built generically."
       isCorrect: false
-      explanation: "Generic events might look like a good idea for improved maintainability, but result to likely in large events and disable loose coupling."
-    - content: "Event should be precise and lightweight."
+      explanation: "Generic events might look like a good idea for improved maintainability but will likely result in large events and disable loose coupling."
+    - content: "Events should be precise and lightweight."
       isCorrect: true
       explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
     - content: "Events should always follow a convention."
       isCorrect: false
-      explanation: "Naming conventions might be helpful, but for the overall event building other things are more important."
+      explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."
 
