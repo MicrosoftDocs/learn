@@ -8,7 +8,6 @@ After our analysis in this module, here's what you need to do to decode the mess
 1. The word "ugflgkg" needs to be shifted by -18.
 1. The word "wjmmf" needs to be shifted by -1.
 
-
 ## Add print statements
 
 Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your <br>decrypt.py</b> file to print all the decoded words.

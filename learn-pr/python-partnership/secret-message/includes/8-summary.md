@@ -1,4 +1,4 @@
-With your **decrypt.py** file, you can now decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
+With your <b>decrypt.py</b> file, you can now decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
 
 Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/people/audrey-stjohn?azure-portal=true) for the inspiration for this lesson! 
 

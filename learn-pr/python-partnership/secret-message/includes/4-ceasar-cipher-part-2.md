@@ -72,7 +72,7 @@ Start with these two values:
 |----------|---------|-------|-------|
 | `letter`         |            | 'N' | |
 | `shiftAmount`    |            | 13  | |
-| `letterCode`     | `ord('w')` | 110 | |
+| `letterCode`     | `ord('n')` | 110 | |
 | `aAscii`         | `ord('a')` | 97  | |
 | `alphabetSize`   |            | 26  | |
 | `trueLetterCode` | 97 + (((110 - 97) + 13) % 26)  | 97 <br>**Note:** See the detailed explanation for this calculation after the table. | |

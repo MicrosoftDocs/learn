@@ -150,11 +150,11 @@ print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 
 Now when you press the **Run** button, you should see the word **green** printed on the console:
 
-![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-functions.png)
+![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-function.png)
 
-## Review the complete decrypt.py file
+## Review the complete file
 
-Now that you've written two lasso functions, your complete **decrypt.py** file should look like this:
+Now that you've written two lasso functions, your complete <b>decrypt.py</b> file should look like this:
 
 ```python
 # Define a function to find the truth by shifting the letter by a specified amount
