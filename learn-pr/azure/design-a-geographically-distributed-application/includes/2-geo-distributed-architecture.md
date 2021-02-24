@@ -44,7 +44,7 @@ The tracking portal uses the following services to support code, cache, and inte
 
 ### Data storage components
 
-The tracking portal uses the following persisted storage services:
+The tracking portal uses the following persisted storage services.
 
 | Service | Description |
 | ---| ---|
