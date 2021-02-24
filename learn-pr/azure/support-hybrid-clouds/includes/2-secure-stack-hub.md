@@ -1,1 +1,40 @@
-**Enter content here**
+Azure Stack Hub and Tactical Azure Stack Hub allow customers to take advantage of Azure services on premises or in remote environments with limited to no connectivity. Confidential and sensitive data can be processed in secure, isolated infrastructure within the public multi-tenant cloud, and highly sensitive data at the edge under the customer's full operational control. 
+
+## Azure Stack Hub
+
+Azure Stack Hub (formerly Azure Stack) is an integrated system of software and validated hardware that customers can purchase from Microsoft hardware partners, deploy in their own datacenter, and then operate entirely on their own or with the help from a managed service provider.  With Azure Stack Hub, the customer is always fully in control of access to their data.
+
+Azure Stack Hub can accommodate up to 16 physical servers per Azure Stack Hub scale unit. It represents an extension of Azure, enabling customers to provision a variety of IaaS and PaaS services and effectively bring multi-tenant cloud technology to on-premises and edge environments.
+
+Customers can run many types of VM instances, App Services, Containers (including Cognitive Services containers), Functions, Azure Monitor, Key Vault, Event Hubs, and other services while using the same development tools, APIs, and management processes they use in Azure. Azure Stack Hub isn’t dependent on connectivity to Azure to run deployed applications and enable operations via local connectivity.
+
+## Tactical Azure Stack Hub
+
+While Azure Stack Hub is intended for on-premises deployment (such as in a datacenter), a ruggedized and field-deployable version called [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/tactical_azs_spec_sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and more.
+
+Azure Stack Hub can be [operated disconnected](https://docs.microsoft.com/azure-stack/operator/azure-stack-disconnected-deployment) from Azure or the internet. Customers can run the next generation of AI-enabled hybrid applications where their data lives. For example, government agencies can rely on Azure Stack to bring a trained AI model to the edge and integrate it with their applications for low-latency intelligence, with no tool or process changes for local applications.
+
+## Scenarios and use cases
+
+:::row:::
+:::column span="2":::
+Azure and Azure Stack can help government customers unlock new hybrid use cases for business applications, including edge and disconnected scenarios, cloud applications intended to meet data sovereignty and compliance requirements, and cloud applications deployed on-premises in customer datacenter. These uses cases include mobile scenarios or fixed deployments in highly secure datacenter facilities. Figure 2 shows Azure Stack Hub capabilities and key usage scenarios.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/PENDING.png" alt-text="Azure Stack capabilities.":::
+PENDING
+:::image-end:::
+:::column-end:::
+:::row-end:::
+
+Azure Stack Hub includes [important features](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) for several of these key scenarios:
+
+* **Edge and disconnected solutions:** Address latency and connectivity requirements by processing data locally in Azure Stack Hub and then aggregating in Azure for further analytics, with common application logic across both, connected or disconnected. Aircraft, ship, or truck-delivered, Azure Stack Hub meets the tough demands of exploration, construction, agriculture, oil and gas, manufacturing, disaster response, government, and military efforts in the most extreme conditions and remote locations. Government customers can use Azure Stack Hub architecture for [edge and disconnected solutions](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/ai-at-the-edge-disconnected). For example, they can bring the next generation of AI-enabled hybrid applications to the edge where the data lives and integrate it with existing applications for low-latency intelligence.
+* **Cloud applications to meet data sovereignty:** Deploy a single application differently depending on the country or region. Customers can develop and deploy applications in Azure, with full flexibility to deploy on-premises with Azure Stack Hub based on the need to meet data sovereignty or custom compliance requirements. Customers can use Azure Stack Hub architecture for [data sovereignty](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/data-sovereignty-and-gravity). For example, they can transmit data from Azure VNet to Azure Stack Hub VNet over private connection and ultimately store data in SQL Server database running in a VM on Azure Stack Hub. Government customers can use Azure Stack Hub to meet even more restrictive requirements such as the need to deploy solutions in a **disconnected environment** managed by security-cleared, in-country personnel. These disconnected environments may not be allowed to connect to the internet for any purpose because of the security classification they operate at.
+* **Cloud application model on-premises:** Use Azure Stack Hub to update and extend legacy applications and make them cloud-ready. With App Service on Azure Stack Hub, customers can create a web front end to consume modern APIs with modern clients while taking advantage of consistent programming models and skills. Customers can use Azure Stack architecture for [legacy system modernization](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/unlock-legacy-data). For example, they may apply a consistent DevOps process, Azure Web Apps, containers, serverless computing, and microservices architectures to modernize legacy applications while integrating and preserving legacy data in mainframe and core line-of-business systems.
+
+Azure Stack Hub uses either Azure Active Directory (Azure AD) or Active Directory Federation Services as an [identity provider](https://docs.microsoft.com/azure-stack/operator/azure-stack-identity-overview). Customers can use [role-based access control](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) to grant system access to authorized users, groups, and services by assigning them roles at a subscription, resource group, or individual resource level. Each role defines the access level a user, group, or service has over Azure Stack Hub resources.
+
+Azure Stack Hub protects customer data at the storage subsystem level using [encryption at rest](https://docs.microsoft.com/azure-stack/operator/azure-stack-security-bitlocker). By default, Azure Stack Hub's storage subsystem is encrypted using BitLocker with 128-bit AES encryption. BitLocker keys are persisted in an internal secret store. At deployment time, it is also possible to configure BitLocker to use 256-bit AES encryption. Customers can store and manage their secrets including cryptographic keys using [Key Vault in Azure Stack Hub](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-intro).
+
+Now, let's take a look at Azure Stack Edge.
