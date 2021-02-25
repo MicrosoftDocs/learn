@@ -113,9 +113,9 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
 
    | Field | Description |
    |---|---|
-   | `HostName` | Replace the example value with just the domain name from the **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
-   | `Port` | Replace the example value with just the port from the **Gremlin Endpoint** value; this value should be *443*. |
-   | `AuthKey` | Replace the example value with the **PRIMARY KEY** value. |
+   | `HostName` | Replace the example value with just the domain name from your **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
+   | `Port` | Replace the example value with just the port from your **Gremlin Endpoint** value; this value should be *443*. |
+   | `AuthKey` | Replace the example value with your **PRIMARY KEY** value. |
    | `Database` | Replace the example value with your **Database ID** value; for example: *sample-database*. |
    | `Collection` | Replace the example value with your **Graph ID** value; for example: *sample-graph*. |
 
@@ -234,8 +234,7 @@ Now you'll create a Node.js application that will allow you to run Gremlin API q
    const config = {};
 
    config.endpoint = "wss://endpoint.gremlin.cosmos.azure.com:443";
-   config.authKey =
-     "slZk8ETEWB9preGsM9gIWKG9Jmr8T6DqY5BMsnNym4Q4Wgj3t2Z9gC5olfdvc7wX9kTrPcShQmxwjGiDCYWBKw==";
+   config.authKey = "AbCdEfGhIjKlMnOpQrStUvWxYz==";
    config.database = "sample-database";
    config.collection = "sample-graph";
 
