@@ -23,12 +23,12 @@ quiz:
     - content: "Application Gateway"
       isCorrect: false
       explanation: "An Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. This is not required to peer the AVS environment to on-premises."
-    - content: "Network Virtual Appliance"
+    - content: "Network virtual appliance"
       isCorrect: false
-      explanation: "A network virtual appliance (NVA) is a virtual appliance primarily focused on performing network functions via virtualization. This is not required to peer the AVS environment to on-premises."
+      explanation: "A network virtual appliance (NVA) is a virtual appliance that primarily performs network functions through virtualization. This appliance isn't required to peer the AVS environment to on-premises."
   - content: "In order for on-premises network traffic to reach Azure VMware Solution, which component is required?"
     choices: 
-    - content: "Virtual Private Network"
+    - content: "Virtual private network"
       isCorrect: false
       explanation: "A virtual private network provides site-to-site connectivity over the public internet. AVS requires dedicated site-to-site connectivity."
     - content: "ExpressRoute Global Reach"

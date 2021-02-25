@@ -24,7 +24,7 @@ quiz:
     - content: Try deploying Azure VMware Solution in a different region.
       isCorrect: false
       explanation: Switching regions won't help your deployment as the error doesn't relate to a regional issue.
-  - content: If you can't connect to your Azure VMware Solution environment from on-premises, what would be a good configuration step to take or inspect?
+  - content: If you can't connect to your Azure VMware Solution environment from on-premises, what configuration step should you do?
     choices:  
     - content: Delete Azure VMware Solution deployment and redeploy service.
       isCorrect: false

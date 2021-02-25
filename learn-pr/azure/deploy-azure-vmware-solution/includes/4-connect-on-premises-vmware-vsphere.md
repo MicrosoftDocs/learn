@@ -1,4 +1,4 @@
-After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto bare metal hosts. The bare metal hosts need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit is needed, along with an ExpressRoute Global Reach configuration. 
+After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit is needed, along with an ExpressRoute Global Reach configuration. 
 
 ## Create an ExpressRoute virtual network gateway for AVS
 
@@ -52,198 +52,89 @@ You'll need to connect the AVS ExpressRoute to Azure. This connection allows acc
 
 ## Use Azure Bastion and sign into vCenter and NSX-T
 
-Log into the Azure Bastion host created in the last unit. Once logged in, open a web browser. Navigate to and log into both vCenter and NSX-T Manager.
+Use Azure Bastion to log into the jump host VM you created in the last unit. Once logged in, open a web browser. Navigate and log into both vCenter and NSX-T Manager. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. From there, select the AVS private cloud. Then select **Identity > Default** in the **Overview** view.
 
-The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Select the AVS private cloud. Then select **Identity > Default** in the **Overview** view.
+## Configure NSX-T Manager components
 
-## Create the first network segment on AVS in NSX-T Manager
+AVS deploys with NSX-T Manager as the software-defined network layer. The networking environment has two gateways:
+    - NSX-T Tier-0 gateway configured in Active/Active mode.
+    - NSX-T Tier-1 gateway configured in Active/Standby mode.
 
-NSX-T Manager is used to create new network segments in the AVS private cloud. The defined CIDR network address block shouldn't overlap with anything in Azure or on-premises.
+Both gateways allow connections between logical switch segments. Additionally, these gateways provide East-West and North-South connectivity.
 
-1. Select **Networking > Segments** and then select **Add Segment** in NSX-T Manager.
+After AVS is deployed, the NSX-T components are configured under **Workload Networking** in the Azure portal. Use of the Azure portal provides a simplified view of the management pane for NSX-T operations. If you're unfamiliar with NSX-T Manager, configure AVS networking using this method. If you're familiar with the NSX-T Manager, the console view within vSphere can be used to configure the advanced network settings and features.
 
-    :::image type="content" source="../media/4-nsxt-segments-overview.png" alt-text="Screenshot demonstrating how to add a network segment into NSX-T Manager.":::
+There are four options that can be configured for NSX-T Manager in AVS using the Azure portal:
 
-1. Select **Add Segment**.
-1. Enter a name for the network segment.
-1. Select the Tier-1 Gateway (TNTxx-T1) as the **Connected Gateway**. 
-1. Leave the **Type** as Flexible.
-1. Select the pre-configured overlay **Transport Zone** (TNTxx-OVERLAY-TZ).
-1. Then select **Set Subnets**.
+- **Segments** - Network segments can be created that display in NSX-T Manager and vCenter.
+- **DHCP** - A DHCP server or DHCP relay can be created if DHCP will be in use.
+- **Port mirroring** – Port mirroring can be created to help troubleshoot network issues.
+- **DNS** – A DNS forwarder can be created to send DNS requests to a DNS server for resolution.
 
-    :::image type="content" source="../media/4-nsxt-create-segment-specs.png" alt-text="Screenshot demonstrating how to create NSX-T Manager segment specifications.":::
+:::image type="content" source="../media/4-nsxt-workload-networking.png" alt-text="Screenshot showing where to configure NSX-T in the Azure portal.":::
 
-1. Enter the IP address of the gateway.
-1. Select **Add**. The IP address needs to be on a non-overlapping RFC1918 address block, which ensures connection to the VMs on the new segment.
+## Create an NSX-T Manager network segment in the Azure portal
 
-    :::image type="content" source="../media/4-nsxt-create-segment-gateway.png" alt-text="Screenshot of how to create an NSX-T Manager network segment gateway.":::
+VMs either created in or migrated to AVS should be attached to an NSX-T networking segment. An NSX-T segment can be created from the AVS console within the Azure portal. These NSX-T networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. After the segment is created, it displays in NSX-T Manager and vCenter.
 
-1. Select **Apply**.
-1. Select **Save**.
-1. Select **No** to decline the option that configures the segment.
+1. In the AVS private cloud under **Workload Networking**, select **Segments > Add**.
 
-    :::image type="content" source="../media/4-nsxt-create-segment-continue-no.png" alt-text="Screenshot showcasing that the segment is successfully created and that you must select no to continue.":::
+    :::image type="content" source="../media/4-add-new-nsxt-segment.png" alt-text="Screenshot of how to add an NSX-T Manager network segment in the Azure portal.":::
 
-1. Confirm the presence of the new network segment. **ls01** is the new network segment in the following example.
-    - In NSX-T Manager, select **Networking > Segments**.
+1. Provide details for the new logical networking segment:
 
-    :::image type="content" source="../media/4-nsxt-new-segment-overview-2.png" alt-text="Screenshot showing the new network segment created in NSX-T Manager.":::
+    :::image type="content" source="../media/4-create-new-segment-details.png" alt-text="Screenshot showing where to provide details for the network segment.":::
 
-    - in vCenter, select **Networking > SDDC-Datacenter**.
+    | Field | Value |
+    | ----- | ----- |
+    | **Segment name** | Name of the logical switch visible in vCenter. |
+    | **Subnet gateway** | Gateway IP address for the logical switch's subnet with a subnet mask. VMs are attached to the logical switch and all VMs connecting to this switch belong in the same subnet. Additionally, all VMs attached to this logical networking segment must carry an IP address from the same networking segment.
+    | **DHCP (optional)** | DHCP ranges for the logical networking segment. A DHCP server or DHCP relay must be configured to use DHCP on the logical networking segments.
+    | **Connected gateway** | This gateway is selected by default and read only. |
+    | **T1** | Name of the Tier-1 gateway in NSX-T Manager. Segments created through ASV only connect to the default Tier-1 gateway. Workloads of these segments have East-West and North-South connectivity. More Tier-1 gateways can only be created through NSX-T Manager. Tier-1 gateways created in NSX-T Manager are not visible in the Azure VMware Solution console. |
+    | **Type** | Overlay network segment supported by AVS. |
 
-    :::image type="content" source="../media/4-vcenter-with-ls01-2.png" alt-text="Screenshot showing how to select the networking segments of the software defined datacenter":::
+1. Select **OK** to create and attach the logical networking segment to the Tier-1 gateway. This segment will now be visible in AVS, NSX-T Manger, and vCenter.
 
-## Configure DHCP services to advertise to the NSX-T segment - optional task
+## Create a DHCP server or DHCP relay in the Azure portal
 
-DHCP services may be required for IP address assignments in applications and workloads.
-DHCP can be created and managed in AVS using one of two ways:
+A DHCP server or relay can be created directly from the AVS console within the Azure portal. The DHCP server or relay will connect to the Tier-1 gateway, which is created when AVS is deployed. All segments where DHCP ranges are provided will be part of the DHCP components of NSX-T. After a DHCP server or DHCP relay has been created, a subnet or range must be defined on an NSX-T segment level to consume the DHCP services.
 
-- If NSX-T hosts the DHCP server, create a DHCP server so traffic can be relayed.
+1. In the AVS private cloud, under **Workload Networking**, select **DHCP > Add**.
 
-- If using a third-party or external DHCP server, a DHCP relay service will need to be created. A DHCP IP address range must be specified. DHCP doesn't work for VMs on the VMware HCX L2 stretch network when the DHCP server is in the on-premises datacenter. By default, NSX blocks all DHCP requests from traversing the L2 stretch.
+1. Select either **DHCP Server** or **DHCP Relay**. Provide a name for the server or relay and provide three IP addresses. For a DHCP relay, only one IP address is required.
 
-### Create a DHCP server for NSX-T Manager
-If NSX-T is used to host the DHCP server, a DHCP server needs to be created. A network segment is added where the DHCP IP address range is specified.
+    :::image type="content" source="../media/4-add-dhcp-server-relay.png" alt-text="Screenshot showing how to add either a DHCP server or a DHCP relay into the AVS private cloud.":::
 
-1. In NSX-T Manager, select **Networking > DHCP** and then select **Add Server**.
-1. Select **DHCP** for the **Server Type**, provide the server name and IP address, and then select **Save**.
+1. Complete the DHCP configuration by providing DHCP ranges on the logical segments like previously configured and then select **OK**.
 
-    :::image type="content" source="../media/4-dhcp-server-settings.png" alt-text="Screenshot demonstrating where the DHCP server is specified, the IP address that's configured, and where the settings are saved.":::
+## Configure port mirroring in the portal
 
-1. Select **Tier 1 Gateways**.
-1. Select the vertical ellipsis on the Tier-1 gateway.
-1. Select **Edit**.
+Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding a copy of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source, a VM, or a group of VMs, and then sends the traffic to a destination.
 
-    :::image type="content" source="../media/4-edit-tier-1-gateway.png" alt-text="Screenshot showing how to edit the Tier 1 gateway for the new DHCP segment.":::
+To set up port mirroring in the AVS console, you'll create source and destination VMs or VM groups. The source group either has a single VM or multiple VMs where the network traffic is mirrored.
 
-1. Select **No IP Allocation Set** to add a subnet.
+1. In the AVS private cloud, under **Workload Networking**, select **Port mirroring > VM groups > Add**.
+1. Name the VM group, select the VMs, and then **Ok**.
+1. Repeat these steps to create the destination VM group.
 
-    :::image type="content" source="../media/4-add-subnet.png" alt-text="Screenshot showing how to add a subnet to the no IP allocation set.":::
+    :::image type="content" source="../media/4-add-port-mirroring-vm-groups.png" alt-text="Screenshot showing where to configure port mirroring related to destination VMs or VM groups.":::
 
-1. Select **DHCP Local Server** for **Type**.
-1. Select **Default DHCP** for the **DHCP Server**.
-1. Select **Save** twice.
-1. Select **Close Editing**.
+1. Create a port mirroring profile next by defining the traffic direction for source and destination VM groups.
+1. Make sure both the source and destination VM groups are created.
+1. Select **Port mirroring >** Add and then provide:
 
-### Add a network segment in NSX-T Manager
+    :::image type="content" source="../media/4-add-port-mirroring-profile.png" alt-text="Screenshot showing how to add the port mirroring profile.":::
 
-1. Select **Networking > Segments** and then select **Add Segment** in NSX-T Manager.
+    | Field   | Value |
+    | :---------- | :------------------ |
+    | Port mirroring name | Name for the profile. |
+    | Direction | Select ingress, egress, or bi-directional. |
+    | Source | Select source VM group. |
+    | Destination | Select destination VM group. |
+    | Description | Provide a description for the port mirroring configuration. |
 
-    :::image type="content" source="../media/4-nsxt-segments-overview.png" alt-text="Screenshot showing how to add a new networking segment into NSX-T Manager.":::
-
-1. Select **Add Segment**.
-1. Enter a name for the network segment.
-1. Select the Tier-1 Gateway (TNTxx-T1) as the **Connected Gateway**.
-1. Leave the **Type** as Flexible.
-1. Select the pre-configured overlay **Transport Zone** (TNTxx-OVERLAY-TZ).
-1. Then select **Set Subnets**.
-
-    :::image type="content" source="../media/4-nsxt-create-segment-specs.png" alt-text="Create segment specs.":::
-
-1. Enter the IP address of the gateway.
-1. Select **Add**. The IP address needs to be on a non-overlapping RFC1918 address block, which ensures network connectivity to VMs on the new segment.
-
-    :::image type="content" source="../media/4-nsxt-create-segment-gateway.png" alt-text="Screenshot showing how to create a segment gateway for the new networking segments in NSX-T Manager.":::
-
-1. Select **Apply**.
-1. Select **Save**.
-1. Select **No** to decline the option to continue configuring the segment.
-
-    :::image type="content" source="../media/4-nsxt-create-segment-continue-no.png" alt-text="Screenshot showing how to decline the option to continue configuring the new networking segment within NSX-T Manager":::
-
-1 Confirm the presence of the new network segment. In this example, ls01 is the new network segment.
-- Select **Networking > Segments** in NSX-T Manager.
-    :::image type="content" source="../media/4-nsxt-new-segment-overview-2.png" alt-text="Screenshot showing the new network segment within NSX-T Manager.":::
-
-- Select **Networking > SDDC-Datacenter** in vCenter.
-    :::image type="content" source="../media/4-vcenter-with-ls01-2.png" alt-text="Screenshot showing the new networking segment within the vSphere software defined datacenter.":::
-
-### Create DHCP relay service for a third-party external DHCP server
-
-If a third-party external DHCP server is used, a DHCP relay service needs to be created. The DHCP IP address range must be specified in NSX-T Manager.
-
-1. Select **Networking > DHCP**.
-1. Select **Add Server** in NSX-T Manager.
-1. Select **DHCP Relay** for the **Server Type**.
-1. Provide the server name and IP address.
-1. Select **Save**.
-
-    :::image type="content" source="../media/4-create-dhcp-relay.png" alt-text="Screenshot of showing how to create a third-party external DHCP relay service in NSX-T Manager.":::
-
-1. Select **Tier 1 Gateways**.
-1. Select the vertical ellipsis on the Tier-1 gateway.
-1. Select **Edit**.
-
-    :::image type="content" source="../media/4-edit-tier-1-gateway.png" alt-text="Screenshot showing how to edit the Tier 1 Gateway to add the DHCP relay service in NSX-T Manager.":::
-
-1. Select **No IP Allocation Set** to define the IP address allocation.
-
-    :::image type="content" source="../media/4-edit-ip-address-allocation.png" alt-text="Screenshot showing how the Tier 1 Gateway is configured for the third-party DHCP relay service in NSX-T Manager.":::
-
-1. Select **DHCP Server** for **Type**.
-1. For the **DHCP Server**, select **DHCP Relay**.
-1. Select **Save**.
-1. Select **Save** again.
-1. Select **Close Editing**.
-
-### Configure the DHCP IP address range to use
-
-1. Select **Networking > Segments** in NSX-T Manager.
-1. Select the vertical ellipsis on the segment name.
-1. Select **Edit**.
-1. Select **Set Subnets** to specify the DHCP IP address for the subnet.
-
-    :::image type="content" source="../media/4-network-segments.png" alt-text="Screenshot showing where to set subnets for the DHCP IP address range to use.":::
-
-1. Modify the gateway IP address and enter the DHCP range IP.
-
-    :::image type="content" source="../media/4-edit-subnet.png" alt-text="Screenshot of showing how to edit the gateway IP address and the DHCP range IP.":::
-
-1. Select **Apply**.
-1. Select **Save** and note the segment is assigned a DHCP server pool.
-
-    :::image type="content" source="../media/4-assigned-to-segment.png" alt-text="Screenshot showing that the segment is assigned to a DHCP server pool.":::
-
-### Send DHCP requests to an on-premises DHCP server
-
-A security segment profile may need to be created for specific DHCP requests. Requests may need to be sent from AVS VMs to an on-premises DHCP server. If that's needed, you'll need to follow these instructions:
-
-1. Sign in to the on-premises vCenter.
-1. Under **Home** select **HCX**.
-1. Select **Network Extension** under **Services**.
-1. Select the network extension to support DHCP requests from AVS to on-premises.
-1. Take note of the destination network name.
-
-    :::image type="content" source="../media/4-hcx-find-destination-network.png" alt-text="Screenshot of a network extension in VMware vSphere Client.":::
-
-1. Select **Networking > Segments > Segment Profiles** in NSX-T Manager.
-1. Select **Add Segment Profile**.
-1. Select **Segment Security**.
-
-    :::image type="content" source="../media/4-add-segment-profile.png" alt-text="Screenshot of how to add a segment profile in NSX-T Manager.":::
-
-1. Provide a name and a tag.
-1. Set the **BPDU Filter** toggle to ON.
-1. Set all the DHCP toggles to OFF.
-
-    :::image type="content" source="../media/4-add-segment-profile-bpdu-filter-dhcp-options.png" alt-text="Screenshot showing the BPDU Filter toggled on and the DHCP toggles off.":::
-
-1. Remove all the MAC addresses under the **BPDU Filter Allow List**.
-1. Select **Save**.
-
-    :::image type="content" source="../media/4-add-segment-profile-bpdu-filter-allow-list.png" alt-text="Screenshot showing MAC addresses in the BPDU Filter Allow List.":::
-
-1. Under **Networking > Segments > Segments**, enter the definition network name.
-
-    :::image type="content" source="../media/4-networking-segments-search.png" alt-text="Screenshot showcasing where to enter name of networking segment security segment for vSphere in NSX-T Manager.":::
-
-1. Select the vertical ellipsis on the segment name and select **Edit**.
-
-    :::image type="content" source="../media/4-edit-network-segment.png" alt-text="Screenshot showing where to edit the NSX-T Manager network segment.":::
-
-1. Change the **Segment Security** to the segment profile created earlier.
-
-    :::image type="content" source="../media/4-edit-segment-security.png" alt-text="Screenshot showing how to change the segment security to the segment profile created earlier.":::
+1. Select **Ok** to complete the profile. The profile and VM groups will now be visible in the AVS console.
 
 ## Add a VM on an NSX-T network segment
 
@@ -256,6 +147,34 @@ Deploy a VM to test network connectivity in the AVS vCenter. This VM will help v
 Deploy the VM as you would in any vSphere environment:
 - Attach the VM to one of the network segments previously created in NSX-T Manager. 
 - VMs can receive network configuration from a DHCP server or the network configuration can be statically configured.
+
+## Configure a DNS forwarder in the Azure portal
+You'll configure a DNS forwarder. Specific DNS requests will be forwarded to a designated DNS server for resolution. A DNS forwarder is associated with a default DNS zone and up to three FQDN zones.
+
+To set up a DNS forwarder in the Azure VMware Solution console, you'll:
+
+1. Configure a default DNS zone and FQDN zone. When a DNS query is received, a DNS forwarder compares the domain name with the domain names in the FQDN DNS zone.
+1. You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the FQDN DNS zones' domain names. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
+1. In your Azure VMware Solution private cloud, under Workload Networking, select DNS > DNS zones > Add.
+
+    :::image type="content" source="../media/4-nsxt-workload-networking-dns-zones.png" alt-text="Screenshot showcasing where to configure DNS zones under workload networking.":::
+
+1. Select either **Default DNS zone** or **FQDN zone** and provide:
+
+    - **DNS zone**: a name and up to three DNS server Ip addresses in the format of 8.8.8.8
+    - **FQDN zone**: a name, the FQDN domain, and up to three DNS server IP addresses in the format of 8.8.8.8
+
+1. To configure the DNS service, select the **DNS service** tab, select **Add**, and then provide:
+
+    :::image type="content" source="../media/4-nsxt-workload-networking-configure-dns-service-2.png" alt-text="Screenshot showing how to configure the DNS service.":::
+
+    - A name for the DNS service.
+    - Enter the IP address for the DNS service.
+    - Select the default DNS zone that you created under the DNS zones tab.
+    - Select the FQDN zones that you added under the DNS zones tab.
+    - Select the **Log level**.
+
+1. Select **Ok**. The DNS service was added successfully.
 
 ## Test the NSX-T segment connectivity
 
