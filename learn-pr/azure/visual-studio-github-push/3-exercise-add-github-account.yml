@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio-github-push.3-exercise-add-github-account
+title: Exercise
+metadata:
+  title: Exercise
+  description: Exercise
+  ms.date: 02/24/2021
+  author: prnadago
+  ms.author: prnadago
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise.md)]

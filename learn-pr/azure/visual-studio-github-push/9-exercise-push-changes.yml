@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-github-push.5-summary
-title: Summary
+uid: learn.visual-studio-github-push.9-exercise-push-changes
+title: Exercise
 metadata:
-  title: Summary
-  description: Summary
+  title: Exercise
+  description: Exercise
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/3-exercise.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-github-push.3-exercise
-title: Exercise
+uid: learn.visual-studio-github-push.4-create-repo
+title: Content
 metadata:
-  title: Exercise
-  description: Exercise
+  title: Content
+  description: Content
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/2-content.md)]

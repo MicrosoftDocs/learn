@@ -58,8 +58,6 @@ Identify the subtasks of *module title*
 
     *Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)*
 
-    Suppose you are creating a tictactoe game. You want to make sure your code is backed up so that you don't lose it. You also want to share the game with your friends so they can also see what you've created.
-
     Suppose you join a new software development team working in C# and .NET using Visual Studio 2019.  While some team members are comfortable with using git from the command line, others are less confident with working in the command line and would prefer a more visual, integrated experience.  Your management team asks you to evaluate which tools are available to help developers work effectively with git repositories and execute git commands. You heard that there’s new tooling from Microsoft that could help developers work worry free and mistake-free right from within Visual Studio 2019.
 
 1. **Add a GitHub account to Visual Studio**

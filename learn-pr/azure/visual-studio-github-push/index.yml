@@ -1,41 +1,52 @@
 ### YamlMime:Module
 uid: learn.visual-studio-github-push
 metadata:
-  title: TODO index.yml:metadata.title # Should be same as `title`.
-  description: TODO index.yml:metadata.description # This field's contents are not rendered anywhere, but it's used for SEO and for searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
+  title: Push to GitHub with Visual Studio 2019 # Should be same as `title`.
+  description: In this module, we'll authenticate to GitHub, create a new local Git repository and push it to GitHub using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote. # This field's contents are not rendered anywhere, but it's used for SEO and for searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO index.yaml:title #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
-summary: TODO index.yaml:summary #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
+title: Push to GitHub with Visual Studio 2019 #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
+summary: Authenticate to GitHub and create a new repository on GitHub using the Git tooling experience in Visual Studio 2019. Add and modify files, stage and commit changes, and then finally push to your remote.  #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
 abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. This section is used to declare learning objectives only, as shown in the example.
-  TODO index.yaml:abstract
-
   By the end of this module, you will be able to:
 
-  - One
-  - Two
-  - Three
+  - Add a GitHub account to sign into Visual Studio 2019
+  - Initialize a Git repository and push it to GitHub with Visual Studio 2019
+  - Make and push commits to your remote branch
 prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
   TODO index.yaml:prerequisites
 
-  - One
-  - Two
-  - Three
+  - Basic understanding of Git concepts
+  - Familiarity with beginner Git commands
+  - A GitHub account
+  - Visual Studio 2019 (min version 16.9) installed
 iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
 levels: # TODO, talk to your contact on the Learn team about setting tags for levels, roles and products
 - beginner
 roles:
 - developer
+- devops-engineer
+- solution-architect
+- technology-manager
+- administrator
+- student
 products:
-- azure
+- github
+- vs
 units:
 - learn.visual-studio-github-push.1-introduction
-- learn.visual-studio-github-push.2-content
-- learn.visual-studio-github-push.3-exercise
-- learn.visual-studio-github-push.4-knowledge-check
-- learn.visual-studio-github-push.5-summary
+- learn.visual-studio-github-push.2-add-github-account
+- learn.visual-studio-github-push.3-exercise-add-github-account
+- learn.visual-studio-github-push.4-create-repo
+- learn.visual-studio-github-push.5-exercise-create-repo
+- learn.visual-studio-github-push.6-commit-changes
+- learn.visual-studio-github-push.7-exercise-commit-changes
+- learn.visual-studio-github-push.8-push-changes
+- learn.visual-studio-github-push.9-exercise-push-changes
+- learn.visual-studio-github-push.10-knowledge-check
+- learn.visual-studio-github-push.11-summary
 badge:
   uid: learn.visual-studio-github-push.badge

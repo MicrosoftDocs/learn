@@ -30,8 +30,14 @@ Guidance for content and exercise units:
 
 By the end of this module, you will be able to:
 
-<!--  Bullet list copied from index.yml -->
+  - Add a GitHub account to sign into Visual Studio 2019
+  - Initialize a Git repository and push it to GitHub with Visual Studio 2019
+  - Make and push commits to your remote branch
 
 ## Prerequisites
 
 <!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
+  - Basic understanding of Git concepts
+  - Familiarity with beginner Git commands
+  - A GitHub account
+  - Visual Studio 2019 (min version 16.9) installed
