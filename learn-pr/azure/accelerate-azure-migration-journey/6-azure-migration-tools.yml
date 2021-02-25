@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: TBD?
+  - content: When modernizing an application the team will need to select a method for changing the application to make it run in Azure. Which of the following are options for Modernizing?
     choices:
-    - content: A.
+    - content: Refactor, Rearchitect, Rebuild
+      isCorrect: true
+      explanation:  These are the options for a modernization of your application to run in Azure. Rehosting is for Migration of your application.
+    - content: Rehost
       isCorrect: false
-      explanation: explain.
-    - content: B.
-      isCorrect: True
-      explanation: explain.
+      explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Rehosting is for Migration of your application.
     - content: C.
-      isCorrect: false
-      explanation: explain.
-  - content: TBD?
+      isCorrect: Replace
+      explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Replace removes the application from your care and leverages a Software as a Service (SaaS) product.
+  - content: Can Linux and open-source databases run IaaS and PaaS solutions in Azure ?
     choices:
-    - content: A.
+    - content: Yes, there are many Linux open-source databases that run on Azure IaaS as VMs and PaaS solutions such as Azure Database and Azure App Service.
+      isCorrect: true
+      explanation: Yes, there are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
+    - content: Yes, but only on IaaS using VMs. There are no PaaS services that support Linux or open-source databases.
       isCorrect: false
-      explanation: explain.
-    - content: B.
-      isCorrect: True
-      explanation: explain.
-    - content: C.
+      explanation: There are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
+    - content: Yes, but only as PaaS services. Linux isn't supported on Azure IaaS.
       isCorrect: false
-      explanation: explain.
-  - content: TBD?
+      explanation: There are many Linux distributions and open-source databases that run on Azure IaaS and PaaS solutions.
+  - content: Can VMware workloads run natively on Azure?
     choices:
-    - content: A.
+    - content: No, VMware VMs can't run on Azure. They must be moved to the cloud using Azure Migrate.
       isCorrect: false
-      explanation: explain.
-    - content: B.
-      isCorrect: True
-      explanation: explain.
-    - content: C.
+      explanation: VMware workloads run natively using the Azure VMware Solutions Service. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+    - content: No, VMware workloads have to be migrated to PaaS services by refactoring the applications.
       isCorrect: false
-      explanation: explain.
+      explanation: VMware workloads run natively using the Azure VMware Solutions Service. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+    - content: VMware workloads run natively using the Azure VMware Solutions Service.
+      isCorrect: true
+      explanation: VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
