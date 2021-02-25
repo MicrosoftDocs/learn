@@ -247,11 +247,24 @@ EOF
 
 Now configure your App Service instance to invoke the startup script:
 
+# [Linux/Mac OS X](#tab/linux)
+
 ```azurecli
 az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
+
+# [Git BASH for Windows](#tab/windows)
+
+```azurecli
+export MSYS_NO_PATHCONV=1
+az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+-n ${WEBAPP_NAME} \
+-g ${RESOURCEGROUP_NAME}
+```
+---
+
 
 After the script runs, it will be invoked every time the application server is restarted.
 
