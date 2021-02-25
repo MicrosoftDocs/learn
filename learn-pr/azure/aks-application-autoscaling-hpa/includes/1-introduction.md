@@ -48,3 +48,5 @@ Then execute the following command.
 ```bash
 curl -L https://aka.ms/learn-scalability-init?v=$RANDOM | bash
 ```
+
+By the end of the command, you should have a cluster created with the `contoso-website` application deployed to it.
