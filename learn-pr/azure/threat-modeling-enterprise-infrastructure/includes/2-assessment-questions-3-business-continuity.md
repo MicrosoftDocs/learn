@@ -1,6 +1,6 @@
 ## Business continuity
 
-![Business Continuity category](../media/BusinessContinuity.svg)
+![Business Continuity category](../media/policies/BusinessContinuity.svg)
 
 ### Why ask these questions
 
@@ -14,5 +14,9 @@ These questions allow you to:
 
 |Question|Areas to cover|
 |--------|--------------|
-|**Describe your business continuity plans.**|<ul><li>Backup and recovery process for all critical assets.</li><li>Backup and recovery cadence.</li><li>Backup data retention timelines.</li><li>Process to identify what needs to be backed up.</li><li>Short-term and long-term backup options used.</li><li>Monitoring and reporting mechanisms used for all backup and recovery activities.</li><li>Availability and resiliency test cadence.</li><li>Encryption used to protect backups.</li></ul>|
-|**Describe your disaster recovery plans.**|<ul><li>Recovery and restore audit cadence.</li><li>Hot-sites and other high-availability mechanisms.</li></ul>|
+|**How do you determine each critical asset in the enterprise?**|<ul><li>Process to identify what needs to be backed up.</li><li>High-level list of critical assets.</li></ul>|
+|**Describe the backup and recovery process**|<ul><li>End-to-end backup and recovery processes.</li><li>Backup and recovery cadence.</li><li>Backup retention periods.</li><li>Short-term and long-term backup options used.</li><li>Monitoring and reporting mechanisms used for backup and recovery activities.</li><li>Encryption used to protect backups.</li></ul>|
+|**Describe your disaster recovery plans.**|<ul><li>Availability and resiliency test cadence.</li><li>Recovery and restore audit cadence.</li><li>Hot-sites and other high-availability mechanisms.</li></ul>|
+
+> [!TIP]
+> Check out [Azure backup](https://docs.microsoft.com/azure/backup/guidance-best-practices) for tips on securely backing up your infrastructure.

@@ -1,14 +1,8 @@
----
-author: Rodrigo Santos
-ms.service: non-product-specific
-ms.topic: include
-ms.date: 03/01/2021
-ms.author: rodsan
----
+![Data store](../media/elements/data-store50.png)
 
 ### What is data store?
 
-Data store refers to either permanent and temporary data storage.
+Data store refers to either permanent and temporary storing of data.
 
 ### Data store context to include
 
@@ -17,7 +11,7 @@ Data store refers to either permanent and temporary data storage.
 |Type|Does the system use Azure SQL, cookies, local or some other type of storage? If so, what is it?|
 |Function|How is the storage used? Is it used to share data, store backups, security logs, credentials, secrets?|
 |Permission level|How is access control implemented? Who has read and write permissions?|
-|Additional controls|Is data encrypted? What about the disk? Are digital signatures used?|
+|Extra controls|Is data encrypted? What about the disk? Are digital signatures used?|
 
 ### Woodgrove data store elements
 
@@ -25,4 +19,4 @@ Data store refers to either permanent and temporary data storage.
 
 ### Data store labeling example
 
-**NAS** - (file share, backup, creds, secrets)
+**NAS** - (file share, backup, credentials, secrets)

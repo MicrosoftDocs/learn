@@ -1,14 +1,13 @@
----
-author: Rodrigo Santos
-ms.service: non-product-specific
-ms.topic: include
-ms.date: 03/01/2021
-ms.author: rodsan
----
+![Trust boundary line](../media/elements/trust-boundary-line50.png)&nbsp; 
+![Trust boundary box](../media/elements/trust-boundary-box50.png)
 
 ### What is trust boundary?
 
 Trust Boundary refers to trust zone changes as data flows through the system.
+
+Lines are generally used to represent large trust zone changes like the internet.
+
+Boxes are generally used to represent smaller trust zone changes, like a corporate network.
 
 ### Trust boundary context to include
 

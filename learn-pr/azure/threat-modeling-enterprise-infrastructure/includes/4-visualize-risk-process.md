@@ -1,10 +1,4 @@
----
-author: Rodrigo Santos
-ms.service: non-product-specific
-ms.topic: include
-ms.date: 03/01/2021
-ms.author: rodsan
----
+![Process](../media/elements/process50.png)
 
 ### What is process?
 
@@ -28,4 +22,4 @@ Process is a task that receives, modifies, or redirects input to output.
 
 ### Process labeling example
 
-**O365** - O365/SaaS/AADauth (user creds, session token, request/response)
+**O365** - O365/SaaS/AADauth (user credentials, session token, request/response)

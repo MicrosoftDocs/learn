@@ -1,6 +1,6 @@
 ## Physical and environmental
 
-![Physical category](../media/Physical.svg)
+![Physical category](../media/policies/Physical.svg)
 
 ### Why ask these questions
 
@@ -18,3 +18,6 @@ These questions allow you to:
 |**Is there a special process to handle enterprise devices that are lost or left unattended?**|<ul><li>Engagement process.</li><li>Guidelines to wipe devices or take them to a holding location.</li></ul>|
 |**Describe the process for visitors.**|<ul><li>Visitor registration process.</li><li>Special badges.</li><li>Chaperoning requirements.</li></ul>|
 |**How is the enterprise prepared against natural disasters?**|<ul><li>Use of hot sites.</li><li>High-availability controls.</li></ul>|
+
+> [!TIP]
+> Check out [Azure physical](https://docs.microsoft.com/azure/security/fundamentals/physical-security) for tips on securing your physical infrastructure.

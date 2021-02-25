@@ -1,10 +1,4 @@
----
-author: Rodrigo Santos
-ms.service: non-product-specific
-ms.topic: include
-ms.date: 03/01/2021
-ms.author: rodsan
----
+![External entity](../media/elements/external-entity50.png)
 
 ### What is external entity?
 

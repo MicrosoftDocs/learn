@@ -1,0 +1,290 @@
+﻿Question (Based on SaaS Wording),Type,Severity,SaaS,COTS/Server,Client
+"Is the Information security program for your organization formally reviewed after periodic time intervals and modeled on a governance framework (e.g., COBIT, NIST or ISO) addressing the following requirements of systems supporting your information infrastructure?
+• Protect the confidentiality, integrity and availability of Microsoft's information infrastructure and resources
+• Create, administer, and oversee policies to ensure the prevention, detection, containment and correction of security breaches",Security,Critical,Yes,No,No
+"Is there information security awareness training for your organization covering the following aspects?
+• Password and User ID practices
+• Social engineering, phishing, and email usage
+• Internet access and social networking usage guidelines
+• Information classification guidelines and sensitive information (such as PII,PHI, Financial) usage guidelines
+• Internal monitoring policies and incident reporting
+• Legal responsibilities
+• Elevated access usage training/guidelines",Security,Moderate,Yes,No,No
+"Is there a defined backup policy with detailed procedures for the solution covering the following aspects?
+• Backup/restoration guidelines outlining the installation of backup systems, backup intervals, storage locations and transportation
+• Backup of files that are in use
+• Backup storage and systems will be located at a secure physical location other than the location of your organisation's primary system(s) and be updated and tested at least annually",Security,Critical,Yes,No,No
+"Is there a record retention policy for the solution covering the following aspects?
+• Process to determine retention period for data and disposal of information adhering to the timelines established for the asset
+• Retention and preservation of assets when there are litigations and/or other legal, regulatory, or investigative actions in process",Security,Important,Yes,No,No
+"Is there an Enterprise Business Continuity Management (EBCM) plan for your organization covering the following aspects?
+• Defined unique EBCM scenarios based on specific risks
+• Dependency Mapping
+• Detailed recovery procedures for every EBCM scenario including all critical processes
+• Periodic validation of recovery capabilities based on minimum success criteria for Disaster Recovery tests
+• Training and education schedule for all affected or involved personnel",Security,Critical,Yes,No,No
+"Are all applicable legal, statutory, contractual, or regulatory requirements and compliance plans documented, approved by management, maintained as part of the compliance management process and reviewed periodically?",Security,Critical,Yes,No,No
+"Are Privacy concerns for the solution addressed through the following?
+• A privacy notice, provided when any privacy impacting experience is facilitated
+• Defined data collection mechanism and standards impacting privacy
+• Implemented guidelines for data use, transfer, retention, and disposal
+• Monitoring and enforcement through periodic privacy review",Privacy,Critical,Yes,No,No
+"If the solution collects, stores, or uses personal data, is the data flow documented for the solution addressing the following?
+• Data collection methods
+• Third party access to personal data
+• Geographic location of personal data (origin and destination)
+• Location of internal employees with access to personal data
+• Categories of personal data",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, is the user interface for the solution designed to minimize the collection of personal data by addressing the following?
+• Do not collect or otherwise process data that is not relevant and necessary to the intended and disclosed purpose in the Privacy Notice
+• Do not use personal data for purposes that are not communicated to the user unless user has given consent for such processing
+• Use the least sensitive type of personal data to satisfy the identified business purpose
+• Mark mandatory data in the UI with mandatory field markers and do not require data unless appropriate for the stated business purpose
+• Mask passwords or PINS during collection or display, unless an exemption applies
+• Avoid collection and storage of so called special categories of personal data (e.g., data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade-union membership, and the processing of data concerning health or sex life)",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution have a mechanism in place to collect user’s country of residence when obtaining consent at data collection?",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the use of identifiers or other internet-tracking mechanisms for data collection by the solution limit the impacts on privacy by addressing the following?
+• Unique Identifiers may be passed to Microsoft by web beacons, action tags, or similar such methods so long as the identifier is pseudonymous to Microsoft
+• Persistent Unique Identifiers may be stored on the user’s system so long as the identifier is essential for the ongoing performance of the product or service or the user is provided the requisite notice and consent.
+• Web beacons, action tags, or similar technologies cannot be used to collect any PII
+• Persistent cookies cannot be used when a session-cookie would satisfy the business purpose
+• Persistent cookies cannot have an expiration date that is longer than necessary to fulfill the business purpose, and no longer than 2 years after last log-in
+• Cookie inventory is required and must meet enhanced notice requirements in EU & EEA Markets",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution contain privacy notices on all web-facing interfaces that process personal data? Does the solution use reasonable measures to make the applicable privacy statement known to the data subject where personal data is collected outside the web or mobile domain?",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution provide appropriate notice for modern and mobile apps, regardless of whether or not the app collects, uses or stores PII? Such notice must be provided to users before they download the app and thus there must be a link to the privacy notice in the store description.",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution obtain opt-in or opt-out consents before processing personal data based on country specific laws (e.g., by requiring the data subject to check a box or sign a form in order to obtain consent prior to collection of personal data) that are communicated by the controller?",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, if the solution is collecting or using marketing preferences, is consent obtained and maintained with the PII so that it is not misused downstream? Collection must include user’s country of residence, and the date/time contact preference was collected.",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution give notice and collect explicit consent where it captures precise location data?
+Precise location data is defined as Information about a customer’s location at a level precise enough to determine their current location, typically determined by GPS or by comparing Wi-Fi and/or cellular tower beacons with Microsoft’s Orion location database (subject to China Security Module in China). This does not include reverse IP lookup.",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution restrict the use of production data in non-production environments?",Privacy,Important,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution have configurations to retain personal data in accordance with documented retention schedule or in accordance with specific customer commitments?",Privacy,Important,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution have the capability to process requests by individuals to access, change, and delete PII for customer and employee personal data?",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution provide appropriate access and controls to a user based on the context of the privacy impacting experience?",Privacy,Critical,Yes,Yes,No
+"If the solution collects, stores, or uses personal data, does the solution give notice and collect explicit consent where information will be shared with a third party?",Privacy,Critical,Yes,Yes,No
+Do all communications sent to an external audience get reviewed and approved by a privacy manager prior to sending for the solution?,Privacy,Important,Yes,No,No
+"If data is being transferred across borders, does the solution store customer data only in the US, unless individual customer consent has been provided, except as approved by the applicable risk organization. If data is originally (physically) located in EEA or EU, transfer of data outside of these locations must meet privacy requirements?",Privacy,Critical,Yes,Yes,No
+"If information is collected from Russian Citizens, does the solution maintain personal data of Russian citizens by processeing by means of information databases that are physically located in the Russian Territory? The first instance of russian citizen personal data must be stored in Russia.",Privacy,Critical,Yes,Yes,No
+"Is a data classification process defined for your organization covering the following aspects?
+• Defined data classification levels and activities to be performed per data classification
+• Implemented labeling procedures to document the classification level of information contained within electronic media",Security,Moderate,Yes,No,No
+"Is encryption employed using NIST recommended methods to protect sensitive data in files, databases, and cache when being stored or handled by the solution? This data may includes the following.
+• Government personal identification
+• Bank accounts, credit card numbers
+• Usernames, passwords, location data
+• Database or other system credentials, application keys/secrets
+• Cryptographic keys etc.",Security,Critical,Yes,Yes,Yes
+Is encryption employed using NIST recommended methods to protect the confidentiality of sensitive information when being transmitted by the solution? The solution should only have TLS 1.2 or higher enabled.,Security,Critical,Yes,Yes,No
+"Are data loss prevention mechanisms (covering oversharing by internal employees, intentional malicious information leakage by internal employees, oversharing or intentional malicious information leakage by non employees, or external criminal intent to discover and access information) supported by the solution?",Security,High,Yes,No,No
+Does the solution use the latest and secure versions of all dependencies and frameworks?,Security,Important,Yes,Yes,Yes
+Is there anti-malware and anti-virus software configured for all equipment connected to the network?,Security,High,Yes,No,No
+"Are the following anti-malware processes in place for the solution?
+• Malware scans or integrity checks are performed on all permanent media
+• Malware scans or integrity checks are performed on all removable media received prior to the files being read
+• Malware or spam scans are performed on all electronic mail and attachments prior to being received or transmitted",Security,High,Yes,No,No
+Are independent audits conducted periodically to test the effectiveness of the implemented security controls of your organization?,Security,Moderate,Yes,No,No
+"Are the following activities and events logged for the solution?
+• All logoff and logon attempts including failed logins
+• Additions, deletions and modifications to user accounts/privileges
+• Activities performed by privileged accounts including modifications to system settings (parameters)
+• User account management activities
+• File access creation, deletion, and modification
+• Application or system shutdown, reboot, errors, and security events",Security,Critical,Yes,Yes,No
+"Are audit log protection procedures implemented for the solution covering the following aspects?
+• Audit logs are scalable and cannot be overwritten until backed up
+• Audit logs are secured and stored off the system 
+• Appropriate controls are in place to ensure no tampering with logs is possible",Security,Important,yes,No,No
+"Can configuration reports, such as changes to the subscription or group permissions, be generated for the following?
+• Centralized and standardized system that automates network management (e.g: Active Directory (AD) schema changes)
+• Domain trust, Replication, Audit and log configuration changes
+• Account (user, system, machine) and security group creation, deletion and group membership changes
+• Group Policy Object (GPO) creation, deletion and changes in security settings",Security,Moderate,Yes,No,No
+"Is there an Intrusion detection system deployed on all Information systems covering the following capabilities?
+• Real time detection and alerting mechanism for known and unknown attacks
+• Centralized repository for all generated events
+• Periodic review of IDS design",Security,High,Yes,No,No
+"Is there a review process of system logs and monitoring systems for the solution including the following?
+• Administrator review of logs for all production information systems on a regular basis
+• Modification of security controls based on detailed analysis of logs
+• Defined escalation procedures",Security,High,Yes,No,No
+"Is there a program for your organization to track and communicate the status of issues both internally and externally covering the following aspects?
+• Communicating relevant information related to all incidents
+• Summarizing all ongoing investigations or remediation activities and periodically reporting it to Microsoft as pertaining to Microsoft data or systems
+• Monitoring and controlling any third party service provider being used on an ongoing basis",Security,High,Yes,No,No
+"Is there a process for incident response and remediation for your organization covering the following?
+• Identified Incident management team (IMT) to perform, coordinate and support responses to security incidents
+• Defined scope of activities and procedures to be performed by the IMT
+• Identification of recurring or high impact incidents or malfunctions based on analysis of incidents
+• Testing of incident response capabilities on a periodic basis",Security,High,yes,No,No
+"Are there investigation procedures defining identification of incidents and notification to the following subscribers as appropriate?
+• Data Owner or designated property group contact
+• Legal department
+• Corporate security team
+• Appropriate security compliance contacts",Security,High,yes,No,No
+"Are there Incident Response Teams performing the following detection and analysis activities for the solution?
+• Use monitor, alert, and notification systems for incidents
+• Identify and document incidents as they occur 
+• Analyze and prioritize incidents based on criticality and severity",Security,High,yes,No,No
+"Are the following controls implemented to restrict access to datacenter(s) for the solution?
+• Access is granted to only those employees, third party consultants, contractors and vendors who have legitimate business responsibilities in the facility
+• Electronic access control systems are implemented to prevent unauthorized access
+• Only one active building access card is issued
+• Physical access audit logs are maintained in either electronic or printed form",Security,High,Yes,No,No
+"Is segmentation of network traffic supported for your organization through the following controls?
+• Security standards for firewalls connecting to untrusted networks and required use of network firewalls
+• Spam protection mechanisms to effectively identify legitimate communications traffic",Security,Moderate,Yes,No,No
+"Are the network access points between your network and the Microsoft network secured through the following controls?
+• Explicit authorization by Information Security team is required for all new connections, or changes to existing connections
+• Functions, services, utilities or commands which are inessential are disabled, restricted or secured",Security,Moderate,Yes,No,No
+"Are data integrations with external/3rd party applications supported by the solution addressing the following?
+• All Electronic Data Interchange (EDI) connections are reviewed and authorized and meet the minimum security requirements
+• Data Acquisition Systems authenticate the data prior to sharing between applications
+• All network connections to third party networks are configured using an approved network design",Security,Moderate,Yes,No,No
+"Are the following security practices followed for the solution
+• Performing risk assessments prior to implementing or purchasing software
+• Adherence to the Security Development Life Cycle
+• Manual and automated security testing prior to deployment",Security,High,Yes,No,No
+"Are the below procedures followed when a penetration test is conducted on your solution?
+• Document, review, and approve PenTest Plan
+• Analyzing results and enforcing remediation",Security,High,Yes,No,No
+"Are the following engineering practices adhered to for the solution?
+• Source code is appropriately classified, stored in the source code repository, and version controlled
+• Encryption keys are not stored within the same access control perimeter as the source code",Security,High,Yes,No,No
+"Are all client and server-side downloadable code signed by a well-known, external signing authority?",Security,Critical,Yes,Yes,Yes
+"Does the solution place limits on resource intensive operations such as the following?
+• Network or component failure to respond
+• File uploads
+• Malicious markup processing
+• Large queries or report generation
+• Events that cause large amounts of log data to be collected (including server 500 errors)
+• Individual DoS through locked account, password reset, etc.",Security,Important,Yes,Yes,No
+"Does the solution prevent read-only values in form fields, hidden parameters, cookies, and etc. from being edited and updated?",Security,Critical,Yes,Yes,No
+"If the solution performs cross-domain communications, are they secured through the following?
+• Cross-domain communications are constrained to known and trust worthy subdomains via use of clientaccesspolicy.xlm or other method
+• Document.domain is NOT set to a shared top-level domain when using Javascript",Security,Important,Yes,Yes,No
+Is debugging and tracing disabled in all production configuration builds?,Security,Moderate,Yes,Yes,No
+"Does the solution follow secure XML practices such as the following?
+• Ensure DTD processing is not explicitly enabled
+• Ensure limit on size of document to process
+• Ensure use of the anti-XSS libraries when rendering output.
+• Ensure processing constraints on XML documents when using XmlReader
+• Ensure processing constraints on XML documents when using WriteRaw and WriteDocType methods",Security,Important,Yes,Yes,No
+"Do all web server responses return the following security headers?
+• Strict-Transport-Security
+• x-content-type-options: nosniff
+• x-frame-options: SAMEORIGIN
+• x-xss-protection: 1; mode=block
+• x-content-security-policy",Security,Moderate,Yes,Yes,No
+"Does your solution federate or allow Single Sign-On with Microsoft's AAD instance to log in Microsoft's users? If not, please indicate in the comments whether solution supports PBKDF.",Security,Critical,Yes,Yes,No
+Is 2FA supported by the solution?,Security,Critical,Yes,Yes,No
+"Is there an enterprise identity provider, such as AD/AAD, used for your organization for system administrators?",Security,High,Yes,No,No
+"If the solution delegates privileges, does it adhere to the following?
+• Delegation is temporary and requires explicit renewal
+• Delegated privilege is specific to the task being performed
+• Delegation is recorded to a secure log?
+• The solution prevents the privilege from being edited by the person(s) to whom it is delegated",Security,Critical,Yes,Yes,No
+"Are access control rules defined for the solution considering the following?
+• Access to resources is granted based on user roles or groups
+• Access is granted based on the minimum level of access required to complete the job
+• Use of system administrator accounts or other high privilege accounts is avoided
+• Segregation of Duties is implemented while granting access",Security,High,Yes,Yes,Yes
+"Are privileges, rights, and access levels are monitored and checked at a minimum of every three months to ensure users have not obtained unauthorized privileges to the solution",Security,High,Yes,No,Yes
+"If you have administrators assigned to the solution, do they adhere to the following rules?
+• Administrative tasks are performed only through privileged accounts
+• Service accounts are assigned to more than one individual and are used for running infrastructure related services
+• Administrators are responsible for protecting information resources by monitoring and controlling access to sensitive assets and configurations
+• Administrator account credentials are protected by a Privileged Account Management (PAM) tool and any form of 2FA",Security,Critical,Yes,No,No
+Does the solution AVOID use of a shared user or service account for backend services?,Security,Important,Yes,Yes,No
+"Does the solution perform necessary authorization checks prior to granting access to a resource?
+• Does the solution prevent forceful access of URL belonging to another account?
+• Does the solution fail securely by not granting a privilege until authorization is verified?
+• If roles exist in the solution, then does separation of privileges exist based on the roles and permissions?",Security,Critical,Yes,Yes,No
+"Are the following standards adhered to for the organization in assigning and managing usernames and passwords?
+• User IDs are unique across all systems and forever connected with the single user",Security,Critical,Yes,No,Yes
+"Are the following default password parameters defined for the solution?
+• Password length: MUST be at least 8 characters long
+• Composition: MUST contain at least 3 of the following: upper and/or lower case letters, numbers, symbols, and punctuation marks. 
+• Restrictions: MUST not be the same as the User ID
+• Initial password assignments: MUST be unique to each user and the user MUST be forced to change the password upon login
+• Password Change: MUST be forced to change at a minimum of every seventy (70) days
+• Password Change: MUST NOT be able to construct passwords that are identical to passwords that they have previously employed, at a minimum, in the last twenty-four (24) times they have changed their password",Security,Critical,Yes,No,No
+"Is an authentication mechanism defined for the solution covering the following aspects?
+• Information systems invalidate the session identifier upon user logout or session termination
+• Message authentication is used to secure critical applications, transactions, network services and network components that execute, transmit and process TCP/IP based sensitive messages",Security,Critical,Yes,No,No
+"Are the following password storing guidelines adhered to for the solution?
+• Passwords are stored using one way hashing
+• Passwords are not stored in readable form in any physical or logical location and are not dispayed or printed without masking",Security,Critical,Yes,No,No
+"Does the solution AVOID use of managing auth/credentials directly?
+• Obtains and processes user credentials directly for authentication (as opposed to using AD, Azure AD, LDAP, OPENID)?
+• Caches credentials used for user authentication e.g. Windows PasswordVault
+• Uses CredentialPicker?",Security,Important,Yes,No,No
+"If the solution has registration functionality, is self-registration avoided through the following?
+• Prevent auto-approval of new users
+• Prevent registration via unverfied email
+• Prevent unauthorized modifications to approval workflows",Security,Critical,Yes,Yes,No
+"Is a key management process defined for the solution addressing the following parameters?
+• Private and secret keys are classified at the highest level and must be protected accordingly
+• Cryptographic keys are used for a single purpose to reduce impact of an exposure
+• Encryption keys are backed up or escrowed to ensure data or device accessibility in case the original key is lost
+• Encryption keys expire and are renewed periodically
+• Symmetric Keys are used for transmission
+• Defined procedures are followed if a key is compromised and processes are in place to secure these procedures
+• Users are made aware of their responsibilities of protecting authenticators like PINs, Private Key passwords, TPM Passwords etc. and managing their own cryptographic keys
+• Keys are unique per subscriber",Security,Critical,Yes,No,Yes
+"Does the solution support secret and key rotation without recompiling where applicable?
+• Service account passwords
+• Certificates
+• Pre-shared keys 
+• Symmetric keys 
+• Azure storage services keys (Blob, Queue, Table, and File) ",Security,Important,Yes,Yes,No
+"Does the solution use cryptographic algorithms that are FIPS 140-2 compliant such as the following?
+• Only MAC or HMAC for for message authentication of at least 128 bits using SHA256, SHA384, or SHA512
+• Symetric block ciphers AES-128, AES-192, or AES-256 with mode CBC or CTS and a cryptographically random  (IV)
+• Does not use a stream cipher
+• RSA with >=2048-bit keys is required for new code
+• RSA <1024-bit keys may only be used for decrypting/verifying old data, and must be replaced if used for encryption or signing operations
+• ECC with >=256 bit keys using NIST approved curves (P-256, P-384, or P521)
+• Diffie-Hellman with >=2048 bit keys with SHA-2",Security,Critical,Yes,Yes,Yes
+"Does the IT Key Protection for Certificate Authorities for the solution cover the following aspects? In the case that you do not run a Certificate Authority, select N/A.
+• Hardware Security Modules (HSMs) are used for the key protection and storage of CA keys
+• Multiparty control is used for Root and Intermediate CA key pair generation
+• CA signature keys are backed up according to the same controls that are used to generate and protect the original signature keys
+• At least two operator tokens are required before any access to root or intermediate keys is provided",Security,Moderate,Yes,No,Yes
+"Does the solution prevent information leakage of errors, stack traces, diagnostic data and application/processing data through the following?
+• Trap/handle potential application/system error messages and  abstract away specific details from user responses
+• Avoids displaying the contents of an exception class directly to the user",Security,Moderate,Yes,Yes,No
+"Does the solution validate file access and upload paths i.e. uses a file cannonization method such as the following?
+• Fixed file names and locations i.e. does not accept file paths and names blindly as input or can be coerced into accessing arbitrary files
+• It ensures that user-supplied file names do not include invalid characters such as: % .. \ / ",Security,Critical,Yes,Yes,No
+"Does the solution validate all inputs and treat ALL surfaces as untrusted?
+• User inputs through the application are validated on the server side before consuming including query strings, posts, cookies, and headers
+• Inputs from other services, files or components are validated before consuming?
+• String data is validated for length and format, regular expressions and/or white list of approved values
+• Numeric data is validated for range bounds and type (signed vs. unsigned). 
+• Data from databases is validated and/or output encoded before display to users",Security,Important,Yes,Yes,No
+"Does the solution access SQL databases using safe methods such as the following to prevent SQL injection attacks?
+• Use of parameterized inline queries / LINQ to SQL
+• Use of stored procedures (activated through parameterized queries or LINQ)
+• Prohibition of SQL EXEC or EXECUTE commands
+• Prohibition of the sp_executesql stored procedure",Security,Critical,Yes,Yes,No
+"Does this solution deserialize untrusted data using safe methods?
+• Type safe classes with catch improper conversion inputs i.e. initializes deserializer classes with a named or whitelist of allowed serialization/deserialization types",Security,Moderate,Yes,Yes,No
+Does the solution sanitize/validate the user controlled values used in the Redirect method against a whitelist?,Security,Important,Yes,Yes,No
+"Does the solution use output encoding for web content i.e. HTML entity encoding, JavaScript escaping, CSS escaping, and URL encoding?
+• User input that is reflected back as content to a browser
+• Values read from a database
+• Values written to a log file which are expected to be read in a browser application",Security,Important,Yes,Yes,No
+"Does the solution implement an anti-forgery header/token/other method such as the following to prevent Cross-Site Request Forgery?
+• The token changes for each new session or exchange
+• The token is not be predictable i.e. uses a cryptographically random value
+• The token is not stored in a cookie ",Security,Important,Yes,Yes,No
+"Does the solution secure all authentication or PII cookies?
+• All cookies have the secure flag and httponly flag set to true
+• All cookies are set to an appropriately restricted domain i.e. not domain root
+• All cookies are deleted or set to empty upon session termination
+• No cookies have a set expiration longer than 72 hours",Security,Moderate,Yes,Yes,No
+"Does the solution enforce session timeouts?
+• The session will timeout after a short idle time
+• The session will timeout after a specified amount of time, regardless of activity
+• The web application will explicitly destroy the session by using the framework’s session management mechanisms such as Session.Abandon (ASP.NET), HttpSession.invalidate() (J2EE) or reset_session (Ruby on Rails)
+• The client-side token value is cleared out by setting a new value for sessionID and setting the “Expires” or “Max-Age” attribute to a date in the past
+• The new sessionID is associated with an unauthenticated session on the server",Security,Important,Yes,Yes,No

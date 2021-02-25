@@ -1,6 +1,6 @@
 ## Supplier
 
-![Supplier category](../media/Supplier.svg)
+![Supplier category](../media/policies/Supplier.svg)
 
 ### Why ask these questions
 
@@ -16,3 +16,6 @@ These questions allow you to:
 |--------|--------------|
 |**Describe the third-party vetting process to help you decide who to do business with.**|<ul><li>How the company handles third-party security risk.</li><li>Communication process of issues with the supplier.</li><li>Questionnaire sent to the supplier to learn more about their security process.</li></ul>|
 |**What does the service level agreement look like for each supplier?**|<ul><li>How long it takes for the supplier to update their service.</li><li>How long it takes to hear back from their support team.</li></ul>|
+
+> [!TIP]
+> Check out the [sample supplier questionnaire spreadsheet](../media/sample_supplier_questionnaire.csv) to help you develop a supplier management program.
