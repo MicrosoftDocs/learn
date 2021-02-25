@@ -10,7 +10,7 @@ Scalability is the word used to describe the ability of an application or system
 
 Vertical scalability is when a system is scaled by adding more physical resources to it, like memory or CPU power. For example, if the company's website is consuming too much memory, you could update your VM instance to include more memory while keeping the same underlying application.
 
-![](../media/1-draft-vertical-scaling.png)
+:::image type="content" source="../media/1-vertical-scaling.png" alt-text="Vertical scaling diagram":::
 
 In short, scaling vertically is increasing the VM size while keeping the number of applications the same. This approach is valuable when you're dealing with monolithic applications that require too much compute power but are too costly to break up into smaller parts, these applications are mostly hosted in VMs as opposed to distributed systems as Kubernetes.
 
@@ -20,7 +20,7 @@ Despite the cost being manageable, huge VMs can be too expensive because the cos
 
 On the other hand, horizontal scalability is the most used type of scalability when you have distributed applications, such as those deployed in AKS. It consists in duplicating the whole application and balancing the load among them.
 
-![](../media/2-draft-horizontal-scaling.png)
+:::image type="content" source="../media/2-horizontal-scaling.png" alt-text="Horizontal scaling diagram":::
 
 Scaling horizontally is called *scaling out*, it's widely used in stateless systems since you can spin up several containers with the same application in a single VM, this way you can extract most resources while paying a single instance instead of multiple VMs.
 
@@ -38,7 +38,51 @@ You can also control the number of replicas in a deployment through the `kubectl
 
 ## HorizontalPodAutoscaler
 
-The HPA is the native Kubernetes resource that provides horizontal scalability to pods in the cluster.
+The HPA is the native Kubernetes 1.8+ resource that provides horizontal scalability to pods in the cluster. It monitors the metrics API every 30 seconds for any changes in the desired replica count, if the desired replica count is different from the current replica count, then the controller manager, which manages HPA objects, scales the deployment in or out.
 
-<!-- Add content from https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/ -->
-<!-- https://docs.microsoft.com/en-us/azure/aks/concepts-scale -->
+:::image type="content" source="../media/2-hpa-design.png" alt-text="HorizontalPodAutoscaling design diagram":::
+
+HPAs work with the `autoscaling` API group in Kubernetes. There are two versions to this API group. The `v1` version allows the deployment to scale only based on CPU metrics, while the `v2beta2` version, which will eventually become `v2`, allows native monitoring of both CPU and Memory. In this learn module we'll work with the `v2beta2` version.
+
+Every HPA is attached to a *scale reference*, which is defined in the `spec.scaleTargetRef` key of the HPA manifest. This scale reference must have underlying pods to be scaled, otherwise the HPA will not work, since it cannot apply scaling to objects that cannot be scaled, like DaemonSets.
+
+It's also important that each pod has a resource request set in its spec, otherwise the metrics will not be correctly calculated because the resource utilization won't be determined by the HPA algorithm. This can be done through the `spec.template.spec.containers[].resources` key in the deployment manifest, like so:
+
+```yml
+spec:
+  template:
+    spec:
+      containers:
+        - resources:
+            requests:
+              cpu: 250m
+              memory: 256M
+            limits:
+              cpu: 500m
+              memory: 512M
+```
+
+This is an example HPA manifest:
+
+```yml
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: php-apache
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: php-apache
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 50
+```
+
+Along with that, the `v2beta2` version allow a fine tunning of the scaling behavior, which allows you to control how your application will behave when scaled in or out. It also supports scaling through custom metrics, though this learning path will not provide instructions on how to do it.
