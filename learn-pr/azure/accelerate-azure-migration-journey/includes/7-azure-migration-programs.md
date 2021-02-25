@@ -66,7 +66,7 @@ For a complete list of supported solutions, visit azure.com/FastTrack
 
 ## Azure Expert managed service providers (MSPs)
 
-As production systems are migrated to Azure, operations will become critical. Microsoft has built the[ Azure Expert managed service providers (MSPs) program](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) to ensure customers have a partner to meet their operational needs. You will work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
+As production systems are migrated to Azure, operations will become critical. Microsoft has built the[Azure Expert managed service providers (MSPs) program](https://www.microsoft.com/azure/partners/azureexpertmsp?filters=all) to ensure customers have a partner to meet their operational needs. You will work with a trusted advisor that can offer repeatable, highly automated solutions to enable and support hyper-scale cloud implementations.
 
 ### MSP qualifications
 
