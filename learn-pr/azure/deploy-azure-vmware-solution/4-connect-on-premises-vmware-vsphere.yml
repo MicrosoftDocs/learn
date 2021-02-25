@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which resource is required to peer the Azure VMware Solution private cloud to on-premises?"
+  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to on-premises?"
     choices:
     - content: "Customer provided ExpressRoute"
       isCorrect: true
