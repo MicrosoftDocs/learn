@@ -55,7 +55,7 @@ travel = input( "What's your favorite way to travel?\n(A) Driving\n(B) Flying\n"
 if travel == "A":
     print( "Driving, nice choice!" )
 elif travel =="B":
-    print( "Flying? Sound fun!" )
+    print( "Flying? Sounds fun!" )
 else:
     print("You must type A or B, let's just say your favorite way to travel is by driving")
     travel = "A"

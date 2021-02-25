@@ -25,8 +25,8 @@ To start, you'll ask five questions and have only two options for each:
 We'll use these questions to determine which of the following four super sleuth characters you're most like:
 
 - Sharp-Eyed Sam
-- Curious Cam
 - Keen Kai
+- Curious Cam
 - Inquisitive Indy
 
 ## Ask the quiz taker for input

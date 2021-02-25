@@ -2,7 +2,7 @@
 uid: learn.python-partnership
 metadata:
   title: Use Python basics to solve mysteries and find answers
-  description: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions and answers to things you wonder about.
+  description: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions programmatically and resolve intrigue.
   brand: azure
   ms.date: 02/23/2021
   author: sguthals
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Use Python basics to solve mysteries and find answers
 summary: |
-  You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions and answers to things you wonder about.
+  You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions  programmatically and resolve intrigue.
   
   In this learning path, you'll:
     - Discover ways you can engage with code to solve basic problems

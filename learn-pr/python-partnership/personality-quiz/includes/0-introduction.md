@@ -31,6 +31,15 @@ You can see that it really doesn't matter what kind of food the quiz taker choos
 
 With [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
 
+:::image type="content" source="../media/sleuth-graphic.png" alt-text="Green question mark.":::
+
+We'll use five questions to determine which of the following four super sleuth characters you're most like:
+
+- Sharp-Eyed Sam
+- Keen Kai
+- Curious Cam
+- Inquisitive Indy
+
 If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ## Learning objectives
