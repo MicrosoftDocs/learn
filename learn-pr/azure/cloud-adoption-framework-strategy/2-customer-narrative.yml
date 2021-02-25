@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.2-customer-narrative
 metadata:
-  title: Capture strategic motivation 
+  title: Capture strategic motivation
   description: Capture strategic motivation.
-  ms.date: 03/01/2021
-  author: BrianBlanchard
+  ms.date: 02/22/2021
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Capture strategic motivation 
+title: Capture strategic motivation
 durationInMinutes: 10
 content: |
   [!include[](includes/2-customer-narrative.md)]

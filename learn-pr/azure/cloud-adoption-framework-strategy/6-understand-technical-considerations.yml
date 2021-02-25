@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.6-understand-technical-considerations
 metadata:
-  title: Understand technical considerations 
+  title: Understand technical considerations
   description: Understand technical considerations.
   ms.date: 02/22/2021
-  author: BrianBlanchard
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Understand technical considerations 
+title: Understand technical considerations
 durationInMinutes: 10
 content: |
   [!include[](includes/6-understand-technical-considerations.md)]

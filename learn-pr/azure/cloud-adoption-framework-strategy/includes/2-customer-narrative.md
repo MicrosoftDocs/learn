@@ -27,7 +27,6 @@ Tailwind Traders currently has three datacenters. The leases for two of their da
 The CIO of Tailwind Traders has recently retired. The new CIO is focused on improving technical operations in a number of areas to fuel greater innovation throughout the company while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
 :::image type="content" source="../media/ccoe-paradigm-shift.png" alt-text="An analogy using traffic routing to demonstrate the shift in IT operations." border="false":::
-_Figure 4: The shift in IT operations._
 
 A cornerstone of this strategy will be a shift in the operating model, moving from a centralized command and control operating model to a model that focuses on delegated responsibilities led by a cloud center of excellence team. This transition is expected to take several years. The CIO will be looking for small incremental steps to transition in each of the coming projects.
 

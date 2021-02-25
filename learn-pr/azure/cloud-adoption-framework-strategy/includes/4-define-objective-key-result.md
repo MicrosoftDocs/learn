@@ -40,8 +40,6 @@ OKRs help to create alignment and accountability within organizations.
 
 ![How OKRs increase alignment and accountability within organizations to help them meet goals faster.](../media/okr.jpg)
 
-_Figure 1: How OKRs increase alignment and accountability within organizations to help them meet goals faster._
-
 ## Examples of OKRs
 
 The principles of OKRs can help your organization to understand how useful OKRs take form. Objectives need to inspire your company and its teams to fully understand your mission. Key results need to be specific and measurable within the quarter.

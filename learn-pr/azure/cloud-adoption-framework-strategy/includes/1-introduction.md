@@ -1,4 +1,4 @@
-All great efforts start with a simple question; Why? Digital transformation is disrupting entire industries. Some organizations embrace transformation & reshape their future. Others use transformation to improve margins and hold onto existing market share. Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success. 
+All great efforts start with a simple question; Why? Digital transformation is disrupting entire industries. Some organizations embrace transformation & reshape their future. Others use transformation to improve margins and hold onto existing market share. Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success.
 
 In this executive-level module, you'll compare motivations, define business objectives and key results, and evaluate your financial and technical considerations.
 

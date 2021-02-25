@@ -96,18 +96,18 @@ In some cases, retired assets can be sold as a source of revenue. This revenue i
 
 Recurring expenses required to operate a business are often called operating expenses. This is a broad category. In most accounting models, it includes:
 
-- Software licensing.
-- Hosting expenses.
-- Electric bills.
-- Real estate rentals.
-- Cooling expenses.
-- Temporary staff required for operations.
-- Equipment rentals.
-- Replacement parts.
-- Maintenance contracts.
-- Repair services.
-- Business continuity and disaster recovery (BCDR) services.
-- Other expenses that don't require capital expense approvals.
+- Software licensing
+- Hosting expenses
+- Electric bills
+- Real estate rentals
+- Cooling expenses
+- Temporary staff required for operations
+- Equipment rentals
+- Replacement parts
+- Maintenance contracts
+- Repair services
+- Business continuity and disaster recovery (BCDR) services
+- Other expenses that don't require capital expense approvals
 
 This category provides one of the highest earning deltas. When you're considering a cloud migration, time invested in making this list exhaustive is rarely wasted. Ask the CIO and finance team questions to ensure all operational costs are accounted for.
 

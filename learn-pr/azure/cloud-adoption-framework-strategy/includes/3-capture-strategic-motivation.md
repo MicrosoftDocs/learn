@@ -17,11 +17,11 @@ The majority of digital transformation “failures” end in technological succe
 
 Throughout this conversation, be prepared to engage various personas. below are a few of the types of roles involved in establishing strategic vision & each persona's most common focus area.
 
-- **Finance leadership:** Increase profitability while driving compliance.
-- **Marketing:** Acquire and retain customers, build reputation.
-- **Sales:** Accelerate sales, improve customer lifetime value.
-- **Human resources:** Retain, recruit, and empower employees.
-- **Executive leadership/Board of directors:** Meeting market growth requirements and environmental sustainability metrics.
+- **Finance leadership:** Increase profitability while driving compliance
+- **Marketing:** Acquire and retain customers, build reputation
+- **Sales:** Accelerate sales, improve customer lifetime value
+- **Human resources:** Retain, recruit, and empower employees
+- **Executive leadership/Board of directors:** Meeting market growth requirements and environmental sustainability metrics
 
 ## Motivations
 
@@ -53,13 +53,13 @@ The _migration_ motivations listed near the top of the motivations table are the
 
 Some motivations align well with a migrate strategy. The motives at the top of this list will likely have significantly less business impact than those toward the bottom of the list.
 
-- Cost savings.
-- Reduction in vendor or technical complexity.
-- Optimization of internal operations.
-- Increasing business agility.
-- Preparing for new technical capabilities.
-- Scaling to meet market demands.
-- Scaling to meet geographic demands.
+- Cost savings
+- Reduction in vendor or technical complexity
+- Optimization of internal operations
+- Increasing business agility
+- Preparing for new technical capabilities
+- Scaling to meet market demands
+- Scaling to meet geographic demands
 
 ### Innovation
 
@@ -67,17 +67,17 @@ Data is the new commodity. Modern applications are the supply chain that drives 
 
 The following list includes motivations that cause an IT organization to focus more on an innovate strategy than a migrate strategy.
 
-- Increasing business agility.
-- Preparing for new technical capabilities.
-- Building new technical capabilities.
-- Scaling to meet market demands.
-- Scaling to meet geographic demands.
-- Improving customer experiences and engagements.
-- Transforming products or services.
+- Increasing business agility
+- Preparing for new technical capabilities
+- Building new technical capabilities
+- Scaling to meet market demands
+- Scaling to meet geographic demands
+- Improving customer experiences and engagements
+- Transforming products or services
 
 ## Cloud adoption horizons
 
-It is common for organizations to have competing motivations. Those competing motivations create a divide in the financial investments the company can make in any one objective. This leads to an overall reduction in the amount of change or transformation any effort can deliver. 
+It is common for organizations to have competing motivations. Those competing motivations create a divide in the financial investments the company can make in any one objective. This leads to an overall reduction in the amount of change or transformation any effort can deliver.
 
 Stratification is a sound principal in macro-economics. But within the limited budget of most technology-driven change management projects, this approach leads to confusing & distracting signals within the program. More noticeably, multiple simultaneous investments in competing strategies leads to misalignment of people, processes, and projects required for the overall programs success. For digital transformation to succeed, organizations must prioritize motivations based on timeline expectations, organizational alignment, and capacity for investment.
 

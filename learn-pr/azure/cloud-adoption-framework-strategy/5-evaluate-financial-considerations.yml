@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.5-evaluate-financial-considerations
 metadata:
-  title: Evaluate financial considerations 
+  title: Evaluate financial considerations
   description: Evaluate financial considerations.
   ms.date: 02/22/2021
-  author: BrianBlanchard
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Evaluate financial considerations 
+title: Evaluate financial considerations
 durationInMinutes: 10
 content: |
   [!include[](includes/5-evaluate-financial-considerations.md)]
