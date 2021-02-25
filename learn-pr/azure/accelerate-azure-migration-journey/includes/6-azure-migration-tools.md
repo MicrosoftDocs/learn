@@ -3,11 +3,14 @@ This unit examines tools provided by Microsoft to enable successful migrations t
 tools available to support their Azure migration. 
 
 ## Azure Migrate
+
 A central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud.
 
 Get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud—and track your progress using a central dashboard that provides intelligent insights.
 
 ![Azure Migrate](../media/azure-migrate.jpg)
+
+As part of the hybrid cloud strategy, Azure provides growing solutions for migrating on-premises applications and workloads to the cloud. With simple steps, you can comprehensively assess your on-premises resources to figure out how they'll run in the Azure platform. Then, with a deep assessment in hand, you can confidently migrate resources to Azure. When resources are up and running in Azure, you can optimize them to retain and improve access, flexibility, security, and reliability.
 
 Support for key migration scenarios across servers, data, databases, web apps, and virtual desktops
 
@@ -30,6 +33,7 @@ Migrate efficiently with rapid lift-and-shift migration tools, all included in y
 
 
 ## Azure Database Migration Service
+
 Azure Database Migration Service is a tool that helps you simplify, guide, and automate your database migration to Azure. Easily migrate your data, schema, and objects from multiple sources to the cloud at scale. Migrate your database and server objects—including user accounts, agent jobs, and SQL Server Integration Services (SSIS) packages—all at once with almost no downtime.
 
 Execute a complete migration with near-zero downtime:
@@ -70,15 +74,38 @@ Simplify the migration of your web apps to the cloud with minimal or no code cha
 Run a scan on your web app’s public URL for a report of the technologies it uses and whether App Service fully supports them. If compatible, you’ll be guided to download the migration assistant to simplify your migration.
 https://azure.microsoft.com/en-us/services/app-service/migration-assistant/
 
-## Azure Arc
+## SMART Tool
 
-## Smart Tool
+Check your migration readiness
 
 From business planning to training to security and governance, find out what you need to do to prepare for your Microsoft Azure migration with SMART—the Strategic Migration Assessment and Readiness Tool.
 
+A great first step is to help customers understand their readiness to migrate. We have released a readiness heatmap tool to help customers do this by distilling our real life experience running migration engagements. The heatmaps help us identify the areas where customers need help.
+
+This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you’ll get a customized report that will help you plan and close gaps.
+
+
 https://docs.microsoft.com/en-us/assessments/?mode=pre-assessment&session=local
 
+![SMART Assessment Tool](../media/smart-tool.png)
+
+To evaluate the potential cost savings of migrating to Azure, calculate and compare your total cost of ownership (TCO) for Azure with that of a comparable on-premises deployment. Additionally, create an estimate of costs for the migration project, including professional services, development, and training for your team.
+The TCO estimate and business case should be essential to the assumptions for migration planning. You can always refine these later as the team works through migration.
+
+
 ## Cloud Economics
+Cloud economics guidance and offerings are now available to help you understand your cloud investment with detailed financial analysis upfront. 
+
+ 
+We recently launched cloud economics guidance where you’ll find technical and financial tips from Azure experts on going about your case. Cloud economics can help get the most value for your cloud investment. 
+ 
+These tips can help you understand how moving to the cloud will shape your company’s overall financial posture and KPIs as well as new processes to ensure that budget and ROI control are met.
+ 
+ 
+Guidance was pulled for many of our customer engagements. Here are some customers who have benefited from this approach. 
+
+
+Azure.com/cloudeconomics
 
 https://azure.microsoft.com/en-us/pricing/tco/calculator/
 
