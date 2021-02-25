@@ -11,14 +11,14 @@ As a part of the migration team at Tailwind Traders, it is essential to learn th
 
 ## Azure Migration Program (AMP)
 
-The [Azure Migration Program (AMP)](https://azure.microsoft.com/migration/migration-program/?azure-portal=true) helps accelerate your migration journey. It includes prescriptive guidance and tools customers need for a path to the cloud from start to finish. Using proven cloud adoption methodologies, tools, resources, and best practices, AMP will enable your move to the cloud, working hand in hand with Microsoft experts and specialized migration partners.
+The [Azure Migration Program (AMP)](https://azure.microsoft.com/migration/migration-program/?azure-portal=true) helps you simplify your journey to the cloud.  Wherever you are in your journey, AMP can help accelerate your progress. The program offers proactive guidance and the right mix of expert help at every stage to ensure you can migrate and modernize applications, infrastructure, and databases with confidence. All customers can access resources, partners, and tools such as free migration tools, step-by-step technical guidance, training and help in finding a migration partner.  
 
 Here are some of the benefits available from AMP:
 
 - Curated, step-by-step guidance from Microsoft experts and specialized migration partners based on the proven Microsoft Cloud Adoption Framework for Azure.
 - Technical skill building with foundational and role-specific courses to develop new Azure skills and long-term organizational readiness.
-- Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and free Azure Cost Management to optimize costs.
-- Offers to reduce migration costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
+- Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Azure Cost Management to optimize costs.
+- Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
 
 ![AMP Project Phases](../media/amp-phases.png)
 
@@ -37,11 +37,11 @@ Begin your migration journey with [AMP](https://azure.microsoft.com/en-us/migrat
 
 ## FastTrack for Azure
 
-FastTrack for Azure is a customer success program that helps with rapid and effective design and cloud solutions deployment. It includes tailored guidance from Azure engineers to provide proven practices and architectural advice.
+FastTrack for Azure is a customer success program that helps with direct assistance and architectural advice from Azure engineers for your move to Azure.
 
 ### How does FastTrack for Azure work?
 
-First, a Microsoft partner must nominate you as a qualified customer for consideration. Once accepted into the program, you will work with a FastTrack for Azure program manager to identify stakeholders, validate the cloud migration vision, establish goals and requirements, and evaluate the Azure solution's architectural needs. After qualifying the project, Azure engineers join the project to assist in developing the engagement from solution enablement through deployment.
+Ask your Microsoft account team or Microsoft partner to nominate you. If your project meets the eligibility requirements, you will work with a FastTrack for Azure program manager to identify stakeholders, validate your cloud migration vision, establish goals and requirements, and evaluate the Azure solution's architectural needs. Azure engineers then join the project to assist with strategy and discovery, solution enablement, and rapid deployment.
 
 ### How does a project qualify for FastTrack for Azure?
 
@@ -61,6 +61,8 @@ FastTrack for Azure can help with many solutions including:
 - App modernization
 - Data analytics
 - Windows Virtual Desktop
+
+For a complete list of supported solutions, visit azure.com/FastTrack
 
 ## Azure Expert managed service providers (MSPs)
 
