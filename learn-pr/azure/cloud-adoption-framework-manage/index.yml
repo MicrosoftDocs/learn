@@ -51,7 +51,7 @@ units:
 - learn.cloud-adoption-framework-manage.4-protection-and-recovery
 - learn.cloud-adoption-framework-manage.5-enhance-operations-baseline
 - learn.cloud-adoption-framework-manage.6-manage-platform-and-workload-specialization
-- learn.cloud-adoption-framework-manage.knowledge-check
-- learn.cloud-adoption-framework-manage.7-summary
+- learn.cloud-adoption-framework-manage.7-knowledge-check
+- learn.cloud-adoption-framework-manage.8-summary
 badge:
   uid: learn.cloud-adoption-framework-manage.badge

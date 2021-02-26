@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-manage.7-summary
+uid: learn.cloud-adoption-framework-manage.8-summary
 metadata:
   title: Summary
   description: Summary
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]

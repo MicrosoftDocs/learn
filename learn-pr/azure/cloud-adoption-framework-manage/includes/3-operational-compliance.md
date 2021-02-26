@@ -13,7 +13,7 @@ The following table lists some of the operation and compliance discipline tools 
 
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
-| Azure Automation Update Management | Management and scheduling of updates. | [More information at Microsoft Docs](https://docs.microsoft.com/en-us/azure/automation/update-management/overview) |
-| Azure Policy | Policy enforcement to ensure environmental and guest compliance. |  [More information at Microsoft Docs](https://docs.microsoft.com/en-us/azure/governance/policy/overview) |
-| Azure Blueprints | Automated compliance for core services. |  [More information at Microsoft Docs](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) |
-| Desired State Configuration| Automated configuration on the guest OS and some aspects of the environment. | [More information at Microsoft Docs](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview) |
+| Azure Automation Update Management | Management and scheduling of updates. | [More information at Microsoft Docs](https://docs.microsoft.com/azure/automation/update-management/overview) |
+| Azure Policy | Policy enforcement to ensure environmental and guest compliance. |  [More information at Microsoft Docs](https://docs.microsoft.com/azure/governance/policy/overview) |
+| Azure Blueprints | Automated compliance for core services. |  [More information at Microsoft Docs](https://docs.microsoft.com/azure/governance/blueprints/overview) |
+| Desired State Configuration| Automated configuration on the guest OS and some aspects of the environment. | [More information at Microsoft Docs](https://docs.microsoft.com/azure/automation/automation-dsc-overview) |
