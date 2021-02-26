@@ -1,10 +1,12 @@
-![Process](../media/elements/process50.png)
+### Process
 
-### What is process?
+![Process](../media/elements/process-50.png)
+
+#### What is process?
 
 Process is a task that receives, modifies, or redirects input to output.
 
-### Process context to include
+#### Process context to include
 
 |Context|Questions|
 |-------|---------|
@@ -16,10 +18,10 @@ Process is a task that receives, modifies, or redirects input to output.
 |Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
-### Woodgrove process elements
+#### Woodgrove process elements
 
 <ul><li>O365</li><li>Open-source bug management service</li><li>SaaS offerings (grouped)</li><li>GitHub</li><li>Machine</li><li>Firewall service</li><li>VPN service</li><li>NAS file share service</li><li>Logging and monitoring service</li><li>NAS backup service</li><li>SQL server</li><li>Build servers (grouped)</li><li>Active directory service</li><li>Removable drive backup service</li><li>Azure Iaas</li></ul>
 
-### Process labeling example
+#### Process labeling example
 
 **O365** - O365/SaaS/AADauth (user credentials, session token, request/response)

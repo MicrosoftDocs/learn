@@ -1,6 +1,6 @@
 ## Operations
 
-![Operations category](../media/policies/Operations.svg)
+![Operations category](../media/policies/operations.svg)
 
 ### Why ask these questions
 

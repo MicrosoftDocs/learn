@@ -1,6 +1,6 @@
 ## Network
 
-![Network category](../media/policies/Network.svg)
+![Network category](../media/policies/network.svg)
 
 ### Why ask these questions
 

@@ -1,6 +1,6 @@
 ## Physical and environmental
 
-![Physical category](../media/policies/Physical.svg)
+![Physical category](../media/policies/physical.svg)
 
 ### Why ask these questions
 

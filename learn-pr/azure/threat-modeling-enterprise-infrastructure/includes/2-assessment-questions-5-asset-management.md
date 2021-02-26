@@ -1,6 +1,6 @@
 ## Asset management
 
-![Asset category](../media/policies/Asset.svg)
+![Asset category](../media/policies/asset.svg)
 
 ### Why ask these questions
 

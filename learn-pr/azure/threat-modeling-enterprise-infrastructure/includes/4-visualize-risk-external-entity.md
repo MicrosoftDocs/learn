@@ -1,10 +1,12 @@
-![External entity](../media/elements/external-entity50.png)
+### External entity
 
-### What is external entity?
+![External entity](../media/elements/external-entity-50.png)
+
+#### What is external entity?
 
 External entity is a task, entity, or data store outside of your direct control.
 
-### External entity context to include
+#### External entity context to include
 
 |Context|Questions|
 |-------|---------|
@@ -13,10 +15,10 @@ External entity is a task, entity, or data store outside of your direct control.
 |Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
 |Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
 
-### Woodgrove external entity elements
+#### Woodgrove external entity elements
 
 <ul><li>User</li></ul>
 
-### External entity labeling example
+#### External entity labeling example
 
 **User** - User/AD (FTE)

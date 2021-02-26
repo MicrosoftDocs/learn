@@ -6,7 +6,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Access control
 
-![Access Control domain](../media/policies/AccessControl-small.svg)
+![Access Control domain](../media/policies/access-control-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -19,7 +19,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Secure development
 
-![Secure Development domain](../media/policies/SecureDevelopment-small.svg)
+![Secure Development domain](../media/policies/secure-development-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -27,7 +27,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Business continuity
 
-![Business Continuity domain](../media/policies/BusinessContinuity-small.svg)
+![Business Continuity domain](../media/policies/business-continuity-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -38,7 +38,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Cryptography
 
-![Cryptography domain](../media/policies/Cryptography-small.svg)
+![Cryptography domain](../media/policies/cryptography-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -47,7 +47,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Asset management
 
-![Asset Management domain](../media/policies/Asset-small.svg)
+![Asset Management domain](../media/policies/asset-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -64,13 +64,13 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ## Legal
 
-![Legal domain](../media/policies/Legal-small.svg)
+![Legal domain](../media/policies/legal-small.svg)
 
 No other action needed.
 
 ## Incident response
 
-![Incident Response domain](../media/policies/IncidentResponse-small.svg)
+![Incident Response domain](../media/policies/incident-response-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -78,7 +78,7 @@ No other action needed.
 
 ## Network
 
-![Network domain](../media/policies/Network-small.svg)
+![Network domain](../media/policies/network-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -89,7 +89,7 @@ No other action needed.
 
 ## Operations
 
-![Operations domain](../media/policies/Operations-small.svg)
+![Operations domain](../media/policies/operations-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -103,7 +103,7 @@ No other action needed.
 
 ## Physical and environmental
 
-![Physical and environmental domain](../media/policies/Physical-small.svg)
+![Physical and environmental domain](../media/policies/physical-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -115,7 +115,7 @@ No other action needed.
 
 ## Governance
 
-![Governance domain](../media/policies/Governance-small.svg)
+![Governance domain](../media/policies/governance-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -125,7 +125,7 @@ No other action needed.
 
 ## Security architecture
 
-![Security architecture domain](../media/policies/SecurityArchitecture-small.svg)
+![Security architecture domain](../media/policies/security-architecture-small.svg)
 
 |Risk|Solution|
 |----|--------|
@@ -135,7 +135,7 @@ No other action needed.
 
 ## Supplier
 
-![Supplier risk domain](../media/policies/Supplier-small.svg)
+![Supplier risk domain](../media/policies/supplier-small.svg)
 
 |Risk|Solution|
 |----|--------|

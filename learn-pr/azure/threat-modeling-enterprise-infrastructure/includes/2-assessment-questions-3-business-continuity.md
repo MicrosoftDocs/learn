@@ -1,6 +1,6 @@
 ## Business continuity
 
-![Business Continuity category](../media/policies/BusinessContinuity.svg)
+![Business Continuity category](../media/policies/business-continuity.svg)
 
 ### Why ask these questions
 

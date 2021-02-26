@@ -1,10 +1,12 @@
-![Data store](../media/elements/data-store50.png)
+### Data-store
 
-### What is data store?
+![Data store](../media/elements/data-store-50.png)
+
+#### What is data store?
 
 Data store refers to either permanent and temporary storing of data.
 
-### Data store context to include
+#### Data store context to include
 
 |Context|Questions|
 |-------|---------|
@@ -13,10 +15,10 @@ Data store refers to either permanent and temporary storing of data.
 |Permission level|How is access control implemented? Who has read and write permissions?|
 |Extra controls|Is data encrypted? What about the disk? Are digital signatures used?|
 
-### Woodgrove data store elements
+#### Woodgrove data store elements
 
 <ul><li>Credentials and tokens VPN store</li><li>NAS store</li><li>Logging and monitoring store</li><li>Active directory store</li><li>Removable drive store</li></ul>
 
-### Data store labeling example
+#### Data store labeling example
 
 **NAS** - (file share, backup, credentials, secrets)

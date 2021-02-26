@@ -1,6 +1,6 @@
 ## Legal
 
-![Legal category](../media/policies/Legal.svg)
+![Legal category](../media/policies/legal.svg)
 
 ### Why ask these questions
 
