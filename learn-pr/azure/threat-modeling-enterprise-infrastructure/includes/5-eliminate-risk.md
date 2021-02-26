@@ -31,7 +31,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 |Risk|Solution|
 |----|--------|
-|Unencrypted backup|Use [Azure Backup](https://azure.microsoft.com/services/backup/), which has a robust set of features, including encryption.|
+|Unencrypted backup|Use [Azure Backup](https://azure.microsoft.com/services/backup/), which has a robust set of features, including encryption. [Azure SQL Transparent Data Encryption](https://docs.microsoft.com/azure/azure-sql/database/transparent-data-encryption-byok-overview) can be used too.|
 |No business continuity plan|Use [Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions).|
 |No disaster recovery plan|Use [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/).|
 |No tests or audits|Follow [Azure Backup](https://docs.microsoft.com/azure/backup/guidance-best-practices) best practices.|
@@ -51,7 +51,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 |Risk|Solution|
 |----|--------|
-|No data retention policy|Use [Azure Data Retention](https://docs.microsoft.com/azure/azure-sql-edge/data-retention-overview) practices and [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-concepts-retention). You may also need to create a security policy for the enterprise highlighting how long to keep each resource.|
+|No data retention policy|Use [Azure Data Retention](https://docs.microsoft.com/azure/azure-sql-edge/data-retention-overview) practices and [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-concepts-retention). You may also need to create a security policy for the enterprise highlighting how long to keep each resource. Use [Long-term retention](https://docs.microsoft.com/azure/azure-sql/database/long-term-retention-overview) with Azure SQL.|
 |No data classification or labeling|Use [Azure Data Discovery & Classification](https://docs.microsoft.com/azure/azure-sql/database/data-discovery-and-classification-overview), [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) for emails and documents, [Azure Purview](https://docs.microsoft.com/azure/purview/apply-classifications), and built-in capabilities in Azure SQL Database, like [dynamic data masking](https://docs.microsoft.com/azure/azure-sql/database/dynamic-data-masking-overview). Also, check out [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)|
 |No folder restrictions|Assign file level permissions using [role-based access control](https://docs.microsoft.com/mem/configmgr/core/understand/fundamentals-of-role-based-administration).|
 |No asset disposal or deprecation plan|Use [Azure inventory and asset management](https://docs.microsoft.com/azure/security/benchmarks/security-control-inventory-asset-management) guidelines to come up with an asset disposal or deprecation plan.|
