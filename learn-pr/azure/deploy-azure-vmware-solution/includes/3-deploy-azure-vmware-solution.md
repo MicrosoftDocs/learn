@@ -2,7 +2,7 @@ The AVS environment can be built once all pre-planning steps are complete. AVS w
 
 ## Register the resource provider
 
-The resource provider must first be registered within the subscription. We discussed this task in the last unit. Registering the resource provider can be done through the Azure portal, Azure CLI, or PowerShell.
+The resource provider must be registered within the subscription. We discussed this task in the last unit. Registering the resource provider can be done through the Azure portal, Azure CLI, or PowerShell.
 
 Launch Azure Cloud Shell, sign in to your Azure subscription, and run the following command for Azure CLI:
 
@@ -16,7 +16,7 @@ Launch Azure Cloud Shell, sign in to your Azure subscription, and run the follow
 Register-AzResourceProvider -ProviderNamespace Microsoft.AVS
 ```
 
-If you use the Azure portal, search for **Subscriptions** and select the subscription you need to register the provider for. Select **Resource providers** and enter Microsoft.AVS into the search.If the resource provider is not registered, select **Register**.
+If you use the Azure portal, search for **Subscriptions** and select the subscription you need to register the provider for. Select **Resource providers** and enter Microsoft.AVS into the search bar. If the resource provider is not registered, select **Register**.
 
 :::image type="content" source="../media/3-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page.":::
 
@@ -26,7 +26,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
 1. On the Azure portal menu, select **Create a resource**.
 1. In the **Search the Marketplace** text box, type ```Azure VMware Solution```, select the resource, and select **Create**.
-1. On the **Azure VMware Solution** blade, select **Create**.
+1. On the **Azure VMware Solution**, select **Create**.
 1. On the **Basics** tab, enter values for the fields.
 
     :::image type="content" source="../media/3-create-private-cloud.png" alt-text="Screenshot of how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
@@ -50,11 +50,11 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
     :::image type="content" source="../media/3-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
 
-## Create Azure Bastion host
+## Create Azure Bastion
 
-After AVS is deployed, you'll create an Azure Bastion host. The Azure Bastion host provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion host isn't needed. Your comapany may want to keep the resource as a back up in case you have connectivity issues with ExpressRoute in the future.
+After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion resource isn't needed. Your company may want to keep the resource as a back-up in case you have connectivity issues with ExpressRoute in the future.
 
-1. In the Azure portal, search for and create a **Bastion** host.
+1. In the Azure portal, search for and create a **Bastion** resource.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
 
     :::image type="content" source="../media/3-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
@@ -66,10 +66,12 @@ After AVS is deployed, you'll create an Azure Bastion host. The Azure Bastion ho
     | Name | The name of the new Bastion resource. |
     | Region | Select the same region where AVS is deployed. |
     | Virtual network | Select the virtual network created when you deployed AVS. |
-    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the AVS deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet** and create a subnet with the following configurations: the subnet needs to be named **AzureBastionSubnet** and the subnet must be at least /27 or larger. |
-    | Public IP address | The public IP will allow RDP and SSH over port 443 to the Bastion host. Create a new public IP and place the resource in the same region as both AVS and the Bastion host. This new public IP is separate from the AVS deployment. |
+    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the AVS deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet** and create a subnet with the following configurations: the subnet name needs to be **AzureBastionSubnet** and the subnet must be at least /27 or larger. |
+    | Public IP address | The public IP will allow RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both AVS and Azure Bastion. This new public IP is separate from the AVS deployment. |
     | Public IP address name | Provide a name of the public IP address resource. |
     | Public IP address SKU | This setting is pre-populated by default to **Standard** because Bastion only supports the Standard Public IP SKU. |
     | Assignment | This setting is pre-populated by default to **Static**. Best practice is to leave assignment at static. |
 
-After AVS and the Azure Bastion host are deployed, you'll be able to configure network connectivity. AVS connectivity will require configurations to both communicate with Azure resources and the on-premises VMware environment. In the next unit, we'll go through the configuration steps to take so you can successfully connect to the AVS environment, both from within Azure and from on-premises.
+After AVS and the Azure Bastion resource are deployed, a jump host needs to be created for access to the private cloud. The jump host must be located in the same virtual network/subscription as AVS and the Azure Bastion resource. The jump host can either be a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
+
+Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter. AVS connectivity will require configurations to communicate with Azure resources and the on-premises VMware environment. In the next unit, we'll go through network configuration steps to take so you can successfully connect to the AVS environment, both from within Azure and from on-premises.
