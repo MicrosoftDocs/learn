@@ -27,8 +27,7 @@
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Guidance)](id-guidance-learning-objectives.md)*
-1. Deploy and configure Azure Firewall
+1. Deploy and configure Azure Firewall protect network traffic for Windows Virtual Desktop
 
 ## Chunk your content into subtasks
 
@@ -58,33 +57,32 @@ Identify the subtasks of *module title*
 
     *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
 
-1. **What is Azure Firewall**
+1. **Plan Azure Firewall deployment**
 
-    List the content that will enable the learner to *subtask*:
+   Planning considerations
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+   - Azure Firewall rules needed; rules needed for WVD
+   Overview of general steps to deploy Azure Firewall
 
-1. **Knowledge check**
+1. **Exercise- Set up the network and deploy Azure Firewall**
 
-    What types of questions will test *learning objective*?
+   Set up initial resources needed:
 
-    - Question type
-    - Question type
+   1. Create virtual network.
+   1. Create VM that'll act as host (https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal). (WVD pretend set up.)
 
-1. **Exercise - Deploy Azure Firewall**
+1. **Use Azure Firewall to protect Window Virtual Desktop deployments**
+
+    - Why use Azure Firewall with WVD
+    - How Azure Firewall is used with WVD
+    - Architecture of Azure Firewall + WVD
+    - Overview of steps to deploy Azure Firewall for WVD 
+      - Rules and configurations needed host outbound for WVD and for internet
+
+1. **Exercise - Route network traffic for Windows Virtual Desktop through Azure Firewall**
 
     List the steps which apply the learning content from previous unit:
 
-    1. Have WVD setup
-    1. Deploy firewall
     1. Configure WVD host pool subnet User Defined Route all traffic via Firewall (default route now points to firewall)
     1. Create application rule collection & 
         1. add rule to enable Windows VirtualDesktop FQDN tag
@@ -95,7 +93,14 @@ Identify the subtasks of *module title*
 	   - Allow https access from host pool subnet to specific URLs (in article).
 	   - Use log analytics query to get exact ones.
     1. Create network rule collection with specific rules…(see article).
+    1. Test connection.
 
+1. **Knowledge check**
+
+    What types of questions will test *learning objective*?
+
+    - Question type
+    - Question type
 
 1. **Summary**
 
