@@ -65,7 +65,7 @@ To change the default HttpClient handler for Xamarin.Android, open the Android p
 
 ## What is App Transport Security?
 
-Before we wrap up this unit, there's one more thing to keep in mind when you use the native networking stack on iOS. App Transport Security is a feature that requires every network communication done through the native network stack to use TLS 1.2 or above. Modern encryption algorithms won't disclose information if one of the long-term keys is compromised.
+Before we wrap up this unit, there's one more thing to keep in mind when you use the native networking stack on iOS. App Transport Security (ATS) is a feature that requires every network communication done through the native network stack to use TLS 1.2 or above. Modern encryption algorithms won't disclose information if one of the long-term keys is compromised.
 
 If your app doesn't adhere to these rules, it's denied network access. If your application has this problem, you have two options. First, you can change your endpoint to adhere to the App Transport Security policy. Second, you can opt out of App Transport Security by setting some keys in your **Info.plist** file.
 
@@ -78,7 +78,7 @@ To opt out of App Transport Security, add a new key to your **Info.plist** file 
 <dict>
    <key>NSExceptionDomains</key>
       <dict>
-      <key>xam150.azurewebsites.net</key>
+      <key>dotnet.microsoft.com</key>
       <dict>
          <!-- specific options here -->
       </dict>
@@ -86,7 +86,15 @@ To opt out of App Transport Security, add a new key to your **Info.plist** file 
 </dict>
 ```
 
-In this example, we added an exception to the endpoint at `xam150.azurewebsites.net`. There are options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on Apple's website.
+In this example, we added an exception to the endpoint at `dotnet.microsoft.com`. If you are debugging a service locally on your development machine you can opt-out for local traffic with the `NSAllowsLocalNetworking` key.
+
+```xml
+<key>NSAppTransportSecurity</key>    
+<dict>
+    <key>NSAllowsLocalNetworking</key>
+    <true/>
+</dict>
+```
 
 Finally, if you can't identify all your endpoints, disable App Transport Security for all unspecified endpoints by using the `NSAllowsArbitraryLoads` key. Here's an example in code:
 
@@ -97,3 +105,60 @@ Finally, if you can't identify all your endpoints, disable App Transport Securit
    <true/>
 </dict>
 ```
+
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](https://docs.microsoft.com/xamarin/ios/app-fundamentals/ats).
+
+## What is Android Network Security Configuration?
+
+Like iOS, Android has a similar security model around network communication that was introduced with Android 9 (API level 28). Cleartext (non-HTTPS) traffic is disabled by default when your application is run on and targeting Android 9 (API Level 28) or higher. This policy may have an impact on your development cycle if your app needs to download an image or file on a server hasn’t been configured for HTTPS. Also, you may just be trying to debug your application locally and don’t want to install development certs. You may have strong business requirements that all web traffic on all versions of Android is always HTTPS. This is where the new Network Security Configuration feature of Android comes in, to help us finely tune network traffic security in our app.
+
+### Permit Cleartext Traffic
+
+To permit cleartext traffic you will need to create a network security configuration. First, you will create a new xml file under `Resources/xml` named `network_security_config.xml`. Inside of this file you will add a `network-security-config` with `domain-config` settings. The following configuration will enable cleartext traffic to be allowed for a specific domain and for an IP address:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">10.0.2.2</domain> <!-- Debug port -->
+    <domain includeSubdomains="true">xamarin.com</domain>
+  </domain-config>
+</network-security-config>
+```
+
+You can strengthen the security of your app by also restricting cleartext traffic on all versions of Android regardless of the compile and target framework. This is accomplished by setting `cleartextTrafficPermitted` to `false`. Enabling this will restrict any traffic that is non-HTTPS at all times.
+
+The last thing that needs to be done is to configure the `networkSecurityConfig` property on the `application` node in the `AndroidManifest.xml` located in the **Properties** folder:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <application android:networkSecurityConfig="@xml/network_security_config">
+        ...
+    </application>
+</manifest>
+```
+
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented in [Google's network security configuration guide](https://developer.android.com/training/articles/security-config).
+
+## Debug service and apps locally
+
+Finally, a benefit of building mobile applications with C# and .NET is that you can shared code and knowledge with other .NET applications such as the ASP.NET Core Web API backend that was provided here. Additionally, mobile applications running in the iOS Simulator or Android emulator can consume ASP.NET Core web services that are running locally, and exposed over HTTP, as follows:
+
+Applications running in the iOS Simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS Simulator can consume the operation by sending a GET request to http://localhost:<port>/api/todoitems/.
+
+Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be set up for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:<port>/api/todoitems/.
+
+ASP.NET Core web services must disable HTTPS redirects by commenting out `app.UseHttpsRedirection();` in the **Startup.cs** file. 
+
+### Detect the operating system
+
+The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows:
+
+```csharp
+public static string BaseAddress =
+    DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:5000" : "http://localhost:5000";
+public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
+```
+
+To learn more, visit the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
