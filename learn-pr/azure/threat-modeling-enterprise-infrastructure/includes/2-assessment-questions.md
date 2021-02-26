@@ -8,85 +8,79 @@ It makes it easier to identify which security controls can be used to help reduc
 
 This list of assessment questions is a great starting point. You may add more questions depending on specific needs.
 
-> [!NOTE] To get started, select a security assessment category from the options above.
-
-::: zone pivot="access-control-pivot-selection"
-
 [!INCLUDE [Access control category](../includes/2-assessment-questions-1-access-control.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="secure-development-pivot-selection"
+---
 
 [!INCLUDE [Secure development category](../includes/2-assessment-questions-2-secure-development.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="business-continuity-pivot-selection"
+---
 
 [!INCLUDE [Business continuity category](../includes/2-assessment-questions-3-business-continuity.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="cryptography-pivot-selection"
+---
 
 [!INCLUDE [Cryptography category](../includes/2-assessment-questions-4-cryptography.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="asset-management-pivot-selection"
+---
 
 [!INCLUDE [Asset management category](../includes/2-assessment-questions-5-asset-management.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="legal-pivot-selection"
+---
 
 [!INCLUDE [Legal category](../includes/2-assessment-questions-6-legal.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="incident-response-pivot-selection"
+---
 
 [!INCLUDE [Incident response category](../includes/2-assessment-questions-7-incident-response.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="network-pivot-selection"
+---
 
 [!INCLUDE [Network category](../includes/2-assessment-questions-8-network.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="operations-pivot-selection"
+---
 
 [!INCLUDE [Operations category](../includes/2-assessment-questions-9-operations.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="physical-pivot-selection"
+---
 
 [!INCLUDE [Physical category](../includes/2-assessment-questions-10-physical.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="governance-pivot-selection"
+---
 
 [!INCLUDE [Governance category](../includes/2-assessment-questions-11-governance.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="security-architecture-pivot-selection"
+---
 
 [!INCLUDE [Security architecture category](../includes/2-assessment-questions-12-security-architecture.md)]
 
-::: zone end
+</br>
 
-::: zone pivot="supplier-pivot-selection"
+---
 
 [!INCLUDE [Supplier category](../includes/2-assessment-questions-13-supplier.md)]
-
-::: zone end
 
 > [!IMPORTANT]
 > Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/benchmarks/overview) to learn about each security category and associated requirements in Azure.

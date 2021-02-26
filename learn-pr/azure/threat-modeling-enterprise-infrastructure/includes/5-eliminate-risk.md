@@ -139,4 +139,4 @@ No other action needed.
 
 |Risk|Solution|
 |----|--------|
-|No supplier management program|Consider using the [supplier questionnaire spreadsheet](../media/sample_supplier_questionnaire.csv) as the basis for your supplier program.|
+|No supplier management program|Consider using a supplier management questionnaire as the basis for your supplier program.|

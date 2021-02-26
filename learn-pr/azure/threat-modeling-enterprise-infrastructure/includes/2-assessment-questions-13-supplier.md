@@ -18,4 +18,4 @@ These questions allow you to:
 |**What does the service level agreement look like for each supplier?**|<ul><li>How long it takes for the supplier to update their service.</li><li>How long it takes to hear back from their support team.</li></ul>|
 
 > [!TIP]
-> Check out the [sample supplier questionnaire spreadsheet](../media/sample_supplier_questionnaire.csv) to help you develop a supplier management program.
+> Use the same assessment questions from the other categories to help you develop your supplier management program.

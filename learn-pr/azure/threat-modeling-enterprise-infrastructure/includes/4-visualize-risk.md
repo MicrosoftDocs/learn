@@ -7,40 +7,33 @@ To build this diagram, we make the following assumptions:
 - **Zero trust** - data-flow initiates from outside of the corporate network and cannot be trusted.
 - **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Refer to the [Provide context with the right depth layer](https://docs.microsoft.com/en-us/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/) learning path for more information.
 
-> [!NOTE]
-> To get started, select an element from the options above.
-
 ## Elements
-
-::: zone pivot="process-pivot-selection"
 
 [!INCLUDE [Process](../includes/4-visualize-risk-process.md)]
 
-::: zone-end
+</br>
 
-::: zone pivot="data-store-pivot-selection"
+---
 
 [!INCLUDE [Data store](../includes/4-visualize-risk-data-store.md)]
 
-::: zone-end
+</br>
 
-::: zone pivot="external-entity-pivot-selection"
+---
 
 [!INCLUDE [External entity](../includes/4-visualize-risk-external-entity.md)]
 
-::: zone-end
+</br>
 
-::: zone pivot="data-flow-pivot-selection"
+---
 
 [!INCLUDE [Data-flow](../includes/4-visualize-risk-data-flow.md)]
 
-::: zone-end
+</br>
 
-::: zone pivot="trust-boundary-pivot-selection"
+---
 
 [!INCLUDE [Trust boundary](../includes/4-visualize-risk-trust-boundary.md)]
-
-::: zone-end
 
 > [!NOTE]
 > Check out the [Create a threat model using data-flow diagram elements](https://docs.microsoft.com/en-us/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/) module from our [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/) learning path for an in-depth review of each element.
