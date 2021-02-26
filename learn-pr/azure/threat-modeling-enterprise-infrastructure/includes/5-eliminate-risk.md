@@ -27,7 +27,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |No password or group policy|Configure [security policy settings](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/security-policy-settings) for all endpoints with group policy or [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy).|
 |No shared account protection|Avoid using shared accounts wherever possible. If engineering teams require a service account as part of automation or engineering, use [Group Managed Service Accounts](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts).|
 |No dedicated administrator account use|Use [Microsoft Identity Manager](https://docs.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-2016) for on-premises or [Azure Active Directory Privilege Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) for cloud privileged access management.|
-|Decentralized identities|Integrate each SaaS offering with [Microsoft Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) (if federation is available).|
+|Decentralized identities|Integrate each SaaS offering with [Microsoft Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) (if federation is available). Rotate passwords on all service accounts.|
 
 ## Secure development
 
@@ -35,7 +35,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 |Risk|Solution|
 |----|--------|
-|No SDL practices found|Implement [Microsoft SDL](https://www.microsoft.com/securityengineering/sdl), [Operational Security Assurance](https://www.microsoft.com/securityengineering/osa), and [Secure DevOps](https://www.microsoft.com/securityengineering/devsecops) practices.|
+|No SDL practices found|Implement [Microsoft SDL](https://www.microsoft.com/securityengineering/sdl), [Operational Security Assurance](https://www.microsoft.com/securityengineering/osa), and [Secure DevOps](https://www.microsoft.com/securityengineering/devsecops) practices. Move all development to cloud build servers, like GitHub enterprise.|
 
 ## Business continuity
 
@@ -65,20 +65,20 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |----|--------|
 |No data retention policy|Use [Azure Data Retention](https://docs.microsoft.com/azure/azure-sql-edge/data-retention-overview) practices and [Azure Time Series Insights](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-concepts-retention). You may also need to create a security policy for the enterprise highlighting how long to keep each resource.|
 |No data classification or labeling|Use [Azure Data Discovery & Classification](https://docs.microsoft.com/azure/azure-sql/database/data-discovery-and-classification-overview), [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) for emails and documents, [Azure Purview](https://docs.microsoft.com/azure/purview/apply-classifications), and built-in capabilities in Azure SQL Database, like [dynamic data masking](https://docs.microsoft.com/azure/azure-sql/database/dynamic-data-masking-overview). Also, check out [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)|
-|No folder restrictions||
-|No asset disposal or deprecation plan||
-|No data encryption on shared drives and servers|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). https://docs.microsoft.com/en-us/azure/security/fundamentals/encryption-atrest|
-|No Data Leakage Prevention (DLP)||
-|NAS used for both backups and file shares||
-|OneDrive not fully adopted||
-|No disk encryption on enterprise machines|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices). https://docs.microsoft.com/en-us/azure/security/fundamentals/data-encryption-best-practices|
-|No station lock policy||
+|No folder restrictions|Assign file level permissions using [role-based access control](https://docs.microsoft.com/mem/configmgr/core/understand/fundamentals-of-role-based-administration).|
+|No asset disposal or deprecation plan|Use [Azure inventory and asset management](https://docs.microsoft.com/azure/security/benchmarks/security-control-inventory-asset-management) guidelines to come up with an asset disposal or deprecation plan.|
+|No data encryption on shared drives and servers|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).|
+|No Data Leakage Prevention (DLP)|Use [Microsoft data leakage prevention practices](https://docs.microsoft.com/cloud-app-security/governance-actions).|
+|NAS used for both backups and file shares|First, separate the NAS by either migrating file shares completely to OneDrive, or adding a secondary NAS just for file sharing. You may also leverage Use [Azure Backup](https://azure.microsoft.com/services/backup/) for your back up needs.|
+|OneDrive not fully adopted|Develop and enforce timelines to give teams time to move their files. You may also use the [migration center tool](https://docs.microsoft.com/sharepointmigration/migrating-content-to-onedrive-for-business).|
+|No disk encryption on enterprise machines|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).|
+|No station lock policy|Enforce [Azure group policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).|
 
 ## Legal
 
 ![Legal domain](../media/policies/Legal-small.svg)
 
-Based on the assessment answers, employees sign non-disclosure agreements, have their backgrounds checked, and receive the software and hardware use policy. A specialized team handles financial regulatory compliance, so no other recommendations are needed.
+No additional action needed.
 
 ## Incident response
 
@@ -86,8 +86,7 @@ Based on the assessment answers, employees sign non-disclosure agreements, have 
 
 |Risk|Solution|
 |----|--------|
-|No incident response program for enterprise||
-|No incident response program for product|Incident management - ServiceNow (ITSM tool for tracking)|
+|No incident response program for enterprise or product|Use [Azure incident response best practices](https://docs.microsoft.com/azure/security/benchmarks/security-control-incident-response) to create an incident response program for the enterprise and its product offerings.|
 
 ## Network
 
@@ -95,10 +94,10 @@ Based on the assessment answers, employees sign non-disclosure agreements, have 
 
 |Risk|Solution|
 |----|--------|
-|No network segmentation|Segment the network into multiple subnets. If needed, consider adding a DMZ to secure more sensitive resources.|
-|No custom firewall rules|Harden firewall rules by identifying and setting only outbound rules. Consider implementing Azure Firewall in a hub vnet.|
-|Weak VPN authentication mechanism|Set VPN to have dedicated connectivity to Azure IaaS.|
-|Limited data encryption|Enforce secure communication protocols, like TLS 1.2.|
+|No network segmentation|Segment the network into multiple subnets. If needed, consider adding a DMZ to secure more sensitive resources. Visit [Azure segmentation](https://docs.microsoft.com/azure/architecture/framework/security/design-segmentation) for information on segmenting your infrastructure in Azure.|
+|No custom firewall rules|Harden firewall rules by identifying and setting only outbound rules. Check out [Microsoft firewall design guidelines](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/basic-firewall-policy-design) and consider implementing a [firewall in Azure](https://docs.microsoft.com//azure/security/fundamentals/network-best-practices) using a hub vnet.|
+|Weak VPN authentication mechanism|Connect to Azure using a [site-to-site VPN](https://docs.microsoft.com/microsoft-365/enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network?view=o365-worldwide). Upgrade your VPN to a [validated device](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices). Check out the [Azure VPN gateway](https://azure.microsoft.com/services/vpn-gateway/) service.|
+|Limited data encryption|Enforce [secure communication protocols](https://docs.microsoft.com/azure/storage/common/transport-layer-security-configure-minimum-version) in Azure, like TLS 1.2.|
 
 ## Operations
 
@@ -106,17 +105,13 @@ Based on the assessment answers, employees sign non-disclosure agreements, have 
 
 |Risk|Solution|
 |----|--------|
-|No automated process for security patches and updates|Patching - Cloud Service - Azure Kubernetes Service|
-|No Antivirus (AV) enforcement|Use [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection)|
-|No timeout session enforcement on machines||
+|No automated process for security patches and updates|Use [Azure Kubernetes](https://azure.microsoft.com/en-us/overview/kubernetes-on-azure/).|
+|No Antivirus (AV) enforcement|Use [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).|
+|No timeout session enforcement on machines|Enforce [Azure group policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).|
 |No Mobile Device Management (MDM) solution|Use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) for all Windows devices and [Microsoft Intune](https://docs.microsoft.com/mem/intune/) for Android and iOS.|
 |Limited logging and monitoring|Use Azure Monitor [Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview).|
 |No intelligence platform or analytics service|Use [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
-|Limited logging history||
-
-Dev – move to cloud build server, GitHub enterprise, implement SDL
-
-Service account password rotation
+|Limited logging history|[Follow Azure logging guidelines](https://docs.microsoft.com/azure/security/fundamentals/log-audit).|
 
 ## Physical and environmental
 
@@ -124,11 +119,11 @@ Service account password rotation
 
 |Risk|Solution|
 |----|--------|
-|IT room is unlocked|Lock IT room.|
-|No cameras or access records for the IT room||
-|Building owner has access to all rooms and floors||
-|No building cameras or guards||
-|No formal visitor registration process||
+|IT room is unlocked|Add a lock to the IT room. Examples include lock and key, code entry, and key fobs. As you proceed with your investigation, consider adding a lock that also provides a logging mechanism to keep track of traffic.|
+|No cameras or access records for the IT room|Consider adding a camera pointed directly at the IT room. It works well if combined with a lock that keep a log of all entries.|
+|Building owner has access to all rooms and floors|Depending on the contract signed by the company, consider excluding access to the IT room. If that's not possible, add locked cages to the network equipment to prevent unauthorized access.|
+|No building cameras or guards|Consider adding cameras pointed at each exit. It not already implemented, add doors that automatically lock upon exit.|
+|No formal visitor registration process|Create a logging system to keep track of all visitors, their sponsors, and reason for visit. Consider using visitor badges to distinguish them from employees.|
 
 ## Governance
 
@@ -136,9 +131,9 @@ Service account password rotation
 
 |Risk|Solution|
 |----|--------|
-|No information security policy|Create information security policy.|
-|No risk management program|Create risk management program.|
-|No security training|Create security training.|
+|No information security policy|Create an information security policy by leveraging the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
+|No risk management program|Create risk management program by leveraging the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
+|No security training|Consider leveraging [Microsoft end-user security awareness](https://www.microsoft.com/security/blog/2020/05/13/empowering-remote-workforce-security-training/) training as the starting point for your training program.|
 
 ## Security architecture
 
@@ -146,9 +141,9 @@ Service account password rotation
 
 |Risk|Solution|
 |----|--------|
-|No secure template images||
-|No security baselines||
-|No formal audit to ensure hybrid infrastructure security|https://docs.microsoft.com/en-us/azure/security/fundamentals/iaas|
+|No secure template images|Create a set of templates to be used on each VM, server, and user machine. Leverage [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
+|No security baselines|Create a set of security baselines for each OS and its security configuration. Leverage [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
+|No formal audit to ensure hybrid infrastructure security|Follow the guidance provided by [Azure best practices and patterns](https://docs.microsoft.com/azure/security/fundamentals/best-practices-and-patterns).|
 
 ## Supplier
 
@@ -156,4 +151,4 @@ Service account password rotation
 
 |Risk|Solution|
 |----|--------|
-|No supplier management program||
+|No supplier management program|Consider using the [supplier questionnaire spreadsheet](../media/sample_supplier_questionnaire.csv) as the basis for your supplier program.|
