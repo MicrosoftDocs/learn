@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: Optimize Costs, Serverless, Linux, Mobile Applications
       isCorrect: false
-      explanation: Only Optimize Costs if a benefit of Azure in this list. The others are features of Azure.
+      explanation: Only Optimize Costs is a benefit of Azure in this list. The others are features of Azure.
     - content: Optimize costs, Build resilience and security, Scale applications and workloads on demand, Application innovation
       isCorrect: True
-      explanation: These are the main benefits of moving to Azure. The cloud delivers these fundamental technology benefits that can help your enterprise.
+      explanation: The benefits of Azure are listed here. The cloud delivers these fundamental technology benefits that can help your enterprise.
     - content: Optimize Costs, Build resilience and security, Kubernetes, Massive Storage
       isCorrect: false
-      explanation: Only Optimize Costs if a benefit of Azure in this list. The others are features of Azure.
+      explanation: Only Optimize Costs is a benefit of Azure in this list. The others are features of Azure.
   - content: Which of the following are common Migration triggers?
     choices:
     - content: Datacenter failures, Disaster Recovery, Security
@@ -33,18 +33,18 @@ quiz:
       explanation: These are all important reasons to move to the cloud, but the triggers are Datacenter contract expiration, Cash flow challenges & resource constraints, Business continuity, Cybersecurity threats.
     - content: Datacenter contract expiration, Lack of disk space
       isCorrect: false
-      explanation: Although Datacenter contract expiration is a migration trigger it is only one. The others are Cash flow challenges & resource constraints, Business continuity, Cybersecurity threats.
+      explanation: Datacenter contract expiration is only migration trigger listed here. The others are Cash flow challenges & resource constraints, Business continuity, Cybersecurity threats.
     - content: Datacenter contract expiration, Cash flow challenges & resource constraints, Business continuity, Cybersecurity threats
       isCorrect: true
-      explanation: Migration triggers are typically IT-oriented or based on timelines. The migration to the cloud is driven by the need to quickly reduce on-premises costs, stay secure and simplify operations.
-  - content: When considering if you should migrate or modernize your applications and creating a workflow for that decision, which is the first question you should ask during the evaluation?
+      explanation: Migration triggers are typically IT-oriented or based on timelines. The migration to the cloud is driven by the need to quickly reduce on-premises costs, stay secure, and simplify operations.
+  - content: When considering if you should migrate or modernize your applications, which is the first question you should ask during the evaluation?
     choices:
-    - content: Will our team pursue "future development" on this application?
+    - content: Will there be future development on this application?
       isCorrect: true
-      explanation: Before moving forward with your approach to an application the question of will your team continue development should be asked first. This will help you to decide on the approach and if IaaS or PaaS is the correct path forward.
+      explanation: If an application will have future development then the application should be moved to a PaaS solution.
     - content: Should our team use containers for this application? 
       isCorrect: false
-      explanation: Before moving forward with your approach to an application the question of will your team continue development should be asked first. This will help you to decide on the approach and if IaaS or PaaS is the correct path forward.
+      explanation: Containers is one of many technical implementations which could be used for an application. Don't focus on the solution, focus on the questions will there be further development on the application.
     - content: Should our team use Serverless for this application? 
       isCorrect: false
-      explanation: explain.
+      explanation: Serverless is one of many technical implementations which could be used for an application. Don't focus on the solution, focus on the questions will there be further development on the application.
