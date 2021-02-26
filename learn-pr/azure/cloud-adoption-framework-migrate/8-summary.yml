@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-migrate.8-summary
+uid: learn.cloud-adoption-framework-migrate.8-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary
   ms.date: 02/22/2021
-  author: BrianBlanchard
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

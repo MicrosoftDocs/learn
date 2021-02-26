@@ -7,7 +7,6 @@ Most migration teams are aware of the capabilities of Azure Migrate and the Azur
 The following diagram and table outline several scenarios that follow the same iterative Migrate methodology for migration and modernization. The summary to this learn module, will include links for continued learning on each of these different technology platforms.
 
 :::image type="content" source="../media/one-migrate.png" alt-text="Variety of technology platforms supported in the migration process" border="false":::
-_Figure 1: Variety of technology platforms supported in the migration process_
 
 | | | | |
 |---------|---------|---------|---------|

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-migrate.4-migration-tools
+uid: learn.cloud-adoption-framework-migrate.4-migration-tools
 title: Migration tools
 metadata:
   title: Migration tools
   description: Tailwind Traders is preparing their cloud environment. Learn more about their cloud portfolio to help them find the best governance solutions for their workloads.
   ms.date: 02/22/2021
-  author: BrianBlanchard
+  author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -5,9 +5,9 @@ Add Azure Migrate: Server Migration to your Azure Migrate dashboard, which carri
 
 During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment has suggested in terms of Azure virtual machines sizes or you can specify the settings yourself.  This step gives you the option to configure the VM size and storage disk settings that you feel is appropriate to the workload being migration. 
 
-Also at this stage you are asked to specify which subscription, resource group, and virtual network your VMs will reside in after migration.  You are also able to configure availability options such as Availability Zones or Availability Sets, helping to protect your apps and data from datacenter outages and maintenance events. 
+Also at this stage you are asked to specify which subscription, resource group, and virtual network your VMs will reside in after migration.  You are also able to configure availability options such as Availability Zones or Availability Sets, helping to protect your apps and data from datacenter outages and maintenance events.
 
-Once the replication has been started, you are able to track and monitor the replication of each of your VMs. 
+Once the replication has been started, you are able to track and monitor the replication of each of your VMs.
 
 :::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate Servers page in Azure Admin center" border="false":::
 _Figure 1: Screenshot of the Azure Migrate Servers page in Azure Admin center_
@@ -15,13 +15,13 @@ _Figure 1: Screenshot of the Azure Migrate Servers page in Azure Admin center_
 ## Test migrated virtual machines
 
 Once all your targeted virtual machines are replicated and into Azure, before you migrate them into production, you can test your virtual machines to ensure everything works. 
-The process runs a prerequisite check, prepares for the test, creates a new test virtual machine, and starts it. This process will take a few minutes. 
+The process runs a prerequisite check, prepares for the test, creates a new test virtual machine, and starts it. This process will take a few minutes.
 
 The test migration functionality within Azure Migrate: Server Migration runs without impacting on-premises machines.  It allows you to test the migration process and perform any app testing, and address any issues before a full migration.
 
 Testing your migration is a great feature that allows you to become comfortable regarding the migration process and understand any tasks that need to be carried out post migration.  You can carry out this test migration as many times as you need in order to refine the process and confirm the steps.
 
-One thing to note is that after the test migration, ensure you clean up the test resources to ensure you don't incur any additional costs. 
+One thing to note is that after the test migration, ensure you clean up the test resources to ensure you don't incur any additional costs.
 
 ## Migrating the virtual machines into production
 
@@ -31,9 +31,7 @@ The process will prompt you to shutdown the machine before migration, which is a
 
 Since this step could impact production systems, migration should be completed during off peak business hours to minimize disruption to the business.
 
-
 :::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of the Server migration replicating machines page in Azure Admin center" border="false":::
-_Figure 2: Screenshot of the Server migration replicating machines page in Azure Admin center_
 
 Now it will run through the production migration process and you can check the status as it validates the pre-requisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
