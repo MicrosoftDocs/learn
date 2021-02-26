@@ -44,7 +44,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### User
 
-:::image type="content" source="../media/screenshots/user-threat-model.png" alt-text="User interactions in data-flow diagram":::
+![User threat model](../media/screenshots/user-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -56,7 +56,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Initial services
 
-:::image type="content" source="../media/screenshots/initial-services-threat-model.png" alt-text="Machine and GitHub interactions in data-flow diagram":::
+![Initial services threat model](../media/screenshots/initial-services-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -71,7 +71,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Firewall
 
-:::image type="content" source="../media/screenshots/firewall-threat-model.png" alt-text="Firewall interactions in data-flow diagram":::
+![Firewall threat model](../media/screenshots/firewall-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -84,7 +84,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### VPN
 
-:::image type="content" source="../media/screenshots/vpn-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![VPN threat model](../media/screenshots/vpn-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -96,7 +96,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Network attached storage (NAS)
 
-:::image type="content" source="../media/screenshots/nas-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![NAS threat model](../media/screenshots/nas-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -111,7 +111,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Servers
 
-:::image type="content" source="../media/screenshots/servers-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Servers threat model](../media/screenshots/servers-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -124,7 +124,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Logging and monitoring
 
-:::image type="content" source="../media/screenshots/logging-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Logging and monitoring threat model](../media/screenshots/logging-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -134,7 +134,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Active directory
 
-:::image type="content" source="../media/screenshots/active-directory-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Active directory threat model](../media/screenshots/active-directory-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -145,7 +145,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Removable drive
 
-:::image type="content" source="../media/screenshots/removable-drive-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Removable drive threat model](../media/screenshots/removable-drive-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -156,7 +156,7 @@ The next step is to capture the data-flow between each interaction:
 
 ### Azure
 
-:::image type="content" source="../media/screenshots/azure-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Azure threat model](../media/screenshots/azure-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
@@ -164,4 +164,4 @@ The next step is to capture the data-flow between each interaction:
 
 ## Finished diagram
 
-:::image type="content" source="../media/screenshots/infrastructure-threat-model.png" alt-text="VPN interactions in data-flow diagram":::
+![Infrastructure threat model](../media/screenshots/infrastructure-threat-model.png)
