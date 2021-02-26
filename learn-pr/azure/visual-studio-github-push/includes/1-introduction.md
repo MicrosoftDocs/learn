@@ -3,6 +3,14 @@
 For guidance on writing a scenario, see https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios?branch=master
 
 -->
+Visual Studio is a fully integrated development environment that many software developers use around the world. GitHub is a version control platform for hosting development projects. Visual Studio provides an integrated GitHub experience, making it easier for you to manage projects from inside your code editor.
+
+Suppose you join a new software development team working in C# and .NET using Visual Studio 2019.  While some team members are comfortable with using git from the command line, others are less confident with working in the command line and would prefer a more visual, integrated experience.  Your management team asks you to evaluate which tools are available to help developers work effectively with git repositories and execute git commands. 
+
+You heard that there’s new tooling from Microsoft that could help developers work worry free and mistake-free right from within Visual Studio 2019. In this module, you'll use the GitHub integration inside Visual Studio 2019 to sign in to GitHub, create a new repository, and push commits - all without leaving the IDE.
+
+
+By the end of this module, you'll know how to use GitHub and source control features inside Visual Studio 2019.
 
 <!--
 
@@ -16,7 +24,7 @@ Guidance for all content:
 - Video: Work with your contact on the Learn team.
 - Zone pivots: See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-zone-pivots?branch=master
 - Think carefully about the knowledge prerequisites you declare for your content, and use them to shape the content and keep the scope reasonable. In both conceptual content and exercise steps, don't dwell on things you expect the reader to already know and understand.
-- Feel free to use HTML comments like these during authoring. They show up in published content as HTML comments - the platform doesn't render them on the page, but they are present in the pae source, so remove them all before publishing.
+- Feel free to use HTML comments like these during authoring. They show up in published content as HTML comments - the platform doesn't render them on the page, but they are present in the page source, so remove them all before publishing.
 
 Guidance for content and exercise units:
 
@@ -41,3 +49,5 @@ By the end of this module, you will be able to:
   - Familiarity with beginner Git commands
   - A GitHub account
   - Visual Studio 2019 (min version 16.9) installed
+
+

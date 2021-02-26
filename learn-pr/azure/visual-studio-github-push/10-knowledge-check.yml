@@ -3,12 +3,12 @@ uid: learn.visual-studio-github-push.10-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-github
 durationInMinutes: 5
 # Modules generally must include a form of interactive validation - either sandbox task validation (see the guidance link in the exercise unit template) or a knowledge check.
 # From an instructional design perspective, knowledge checks are intended to aid retention, not to actually test the user. Questions should not be overly difficult and should focus on the broad concepts covered in the module, not fine details.

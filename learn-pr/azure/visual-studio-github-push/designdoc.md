@@ -1,6 +1,6 @@
 # Title
 
-Push a commit to a new GitHub repository with Visual Studio 2019 [(Title guidance)](/help/learn/id-guidance-title)
+Push to GitHub with Visual Studio 2019 [(Title guidance)](/help/learn/id-guidance-title)
 
 ## Role(s)
 

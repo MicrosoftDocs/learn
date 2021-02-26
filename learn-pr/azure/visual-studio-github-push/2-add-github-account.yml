@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-github-push.2-add-github-account
-title: Content
+title: Lesson - Sign in to GitHub
 metadata:
-  title: Content
-  description: Content
+  title: Lesson - Sign in to GitHub
+  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-github
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-content.md)]
+  [!include[](includes/2-add-github-account.md)]

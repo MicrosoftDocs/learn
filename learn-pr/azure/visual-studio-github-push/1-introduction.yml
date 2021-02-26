@@ -3,12 +3,12 @@ uid: learn.visual-studio-github-push.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-github
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
