@@ -9,7 +9,7 @@ These questions allow you to:
 - Come up with a complete list of user types, like employees, administrators, and vendors.
 - Know who is authorized to access resources.
 - Learn which security controls are used to restrict access, like Role-based Access Control (RBAC), Access Control Lists (ACL), or least-privilege access.
-- Find out which identity management system is used by the enterprise, like Azure Active Directory (AAD).
+- Find out which identity management system is used by the enterprise, like Azure Active Directory (Azure AD).
 - Learn which security controls are used to authenticate users, like Multi-Factor Authentication (MFA) or Single-Sign-On (SSO).
 
 ### What questions to ask

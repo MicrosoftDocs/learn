@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Check how popular the application is"
       isCorrect: false
-      explanation: "The supplier management program is geared more towards security related areas."
+      explanation: "The supplier management program is geared more towards security-related areas."
     - content: "Understand how long they take to fix a hypothetical security issue"
       isCorrect: true
       explanation: "A supplier management program is designed to show you how many days it takes for the supplier to fix a security issue."

@@ -1,4 +1,4 @@
-As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/en-us/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It can also help secure your company infrastructure.
+As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It can also help secure your company infrastructure.
 
 Infrastructure threat modeling uses a data-flow diagram to show how data flows in the enterprise. It also shows how it's protected at each stage in the lifecycle.
 
@@ -6,7 +6,7 @@ The process helps you find ways to reduce or eliminate risk using security polic
 
 ## Threat Modeling Framework
 
-The threat modeling framework is flexible, and can be easily used for your infrastructure. Let's revisit the framework, which is primarily found in our [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/en-us/learn/modules/tm-introduction-to-threat-modeling):
+The threat modeling framework is flexible, and can be easily used for your infrastructure. Let's revisit the framework, which is primarily found in our [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling):
 
 ### Threats
 
@@ -68,4 +68,4 @@ In this module, you'll explore the four steps in the infrastructure threat model
 
 ## Prerequisites
 
-- [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/en-us/learn/modules/tm-introduction-to-threat-modeling)
+- [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling)

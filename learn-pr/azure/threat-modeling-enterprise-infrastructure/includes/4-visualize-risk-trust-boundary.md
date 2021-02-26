@@ -19,7 +19,9 @@ Boxes are used to represent smaller trust zone changes, like a corporate network
 
 #### Woodgrove trust boundary elements
 
-<ul><li>Woodgrove Corporate Boundary</li><li>Azure IaaS Boundary</li><li>Internet</li></ul>
+- Woodgrove corporate boundary
+- Azure IaaS boundary
+- Internet boundary
 
 #### Trust boundary labeling example
 

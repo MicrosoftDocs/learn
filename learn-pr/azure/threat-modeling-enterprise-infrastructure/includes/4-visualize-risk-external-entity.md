@@ -17,7 +17,7 @@ External entity is a task, entity, or data store outside of your direct control.
 
 #### Woodgrove external entity elements
 
-<ul><li>User</li></ul>
+- User
 
 #### External entity labeling example
 

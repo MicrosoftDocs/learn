@@ -17,7 +17,11 @@ Data store refers to either permanent and temporary storing of data.
 
 #### Woodgrove data store elements
 
-<ul><li>Credentials and tokens VPN store</li><li>NAS store</li><li>Logging and monitoring store</li><li>Active directory store</li><li>Removable drive store</li></ul>
+- Credentials and tokens VPN store
+- NAS store
+- Logging and monitoring store
+- Active directory store
+- Removable drive store
 
 #### Data store labeling example
 

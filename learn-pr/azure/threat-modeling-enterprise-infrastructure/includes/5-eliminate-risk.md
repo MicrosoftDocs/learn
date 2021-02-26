@@ -14,7 +14,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |No MFA|Enable MFA across each SaaS offering. Integrate with [Microsoft Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) (if federation is available).|
 |No password or group policy|Configure [security policy settings](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/security-policy-settings) for all endpoints with group policy or [Azure Active Directory Domain Services](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy).|
 |No shared account protection|Avoid using shared accounts wherever possible. If engineering teams require a service account as part of automation or engineering, use [Group Managed Service Accounts](https://docs.microsoft.com/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts).|
-|No dedicated administrator account use|Use [Microsoft Identity Manager](https://docs.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-2016) for on-premises or [Azure Active Directory Privilege Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) for cloud privileged access management.|
+|No dedicated administrator account use|Use [Microsoft Identity Manager](https://docs.microsoft.com/microsoft-identity-manager/microsoft-identity-manager-2016) for on-premises or [Azure Active Directory Privilege Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) for cloud privileged access management.|
 |Decentralized identities|Integrate each SaaS offering with [Microsoft Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) (if federation is available). Rotate passwords on all service accounts.|
 
 ## Secure development
@@ -42,7 +42,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 |Risk|Solution|
 |----|--------|
-|Use of self-signed certificates on dev environment|Use [Microsoft Azure Directory Services](https://docs.microsoft.com/en-us/windows-server/identity/identity-and-access) to manage your on-premise Public Key Infrastructure (PKI) and [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) to manage APIs, passwords, certificates, and other secrets.|
+|Use of self-signed certificates on dev environment|Use [Microsoft Azure Directory Services](https://docs.microsoft.com/windows-server/identity/identity-and-access) to manage your on-premise Public Key Infrastructure (PKI) and [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) to manage APIs, passwords, certificates, and other secrets.|
 |No key rotation|Use [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) for key rotation.|
 
 ## Asset management
@@ -93,11 +93,11 @@ No other action needed.
 
 |Risk|Solution|
 |----|--------|
-|No automated process for security patches and updates|Use [Azure Kubernetes](https://azure.microsoft.com/en-us/overview/kubernetes-on-azure/).|
+|No automated process for security patches and updates|Use [Azure Kubernetes](https://azure.microsoft.com/overview/kubernetes-on-azure/).|
 |No Antivirus (AV) enforcement|Use [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).|
 |No timeout session enforcement on machines|Enforce [Azure group policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).|
 |No Mobile Device Management (MDM) solution|Use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/) for all Windows devices and [Microsoft Intune](https://docs.microsoft.com/mem/intune/) for Android and iOS.|
-|Limited logging and monitoring|Use Azure Monitor [Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview).|
+|Limited logging and monitoring|Use Azure Monitor [Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview).|
 |No intelligence platform or analytics service|Use [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
 |Limited logging history|[Follow Azure logging guidelines](https://docs.microsoft.com/azure/security/fundamentals/log-audit).|
 

@@ -8,7 +8,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Eiminate risk
+title: Eliminate risk
 durationInMinutes: 15
 content: |
   [!include[](includes/5-eliminate-risk.md)]

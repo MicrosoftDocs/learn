@@ -38,6 +38,3 @@ After meeting with various employees from different departments and asking them 
 |![Governance domain](../media/policies/governance-small.svg)<br>Governance|<ul><li>No formalized information security policy or risk management program.</li><li>There are no specialized security training offerings for employees at this time.</li></ul>|
 |![Security architecture domain](../media/policies/security-architecture-small.svg)<br>Security architecture|<ul><li>Virtual machines are created using default images.</li><li>No security baselines used.</li><li>Woodgrove Bank's internal infrastructure is a hybrid of both on-premises and cloud systems.</li><li>Woodgrove is moving to a cloud-only infrastructure in Azure.</li><li>There are no IoT devices or container usage in the company.</li><li>No operating system baselines.</li></ul>|
 |![Supplier risk domain](../media/policies/supplier-small.svg)<br>Supplier|<ul><li>They use many third-party SaaS offerings.</li><li>No formal way to measure security maturity levels or enforce SLAs.</li></ul>|
-
-> [!NOTE]
-> It is good practice to condense your original notes to use for threat modeling. [Here's an example](3-gather-data-summary.md) of what it would look like.

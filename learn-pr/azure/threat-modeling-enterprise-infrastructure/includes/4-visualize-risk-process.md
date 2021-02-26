@@ -20,8 +20,22 @@ Process is a task that receives, modifies, or redirects input to output.
 
 #### Woodgrove process elements
 
-<ul><li>O365</li><li>Open-source bug management service</li><li>SaaS offerings (grouped)</li><li>GitHub</li><li>Machine</li><li>Firewall service</li><li>VPN service</li><li>NAS file share service</li><li>Logging and monitoring service</li><li>NAS backup service</li><li>SQL server</li><li>Build servers (grouped)</li><li>Active directory service</li><li>Removable drive backup service</li><li>Azure Iaas</li></ul>
+- O365
+- Open-source bug management service
+- SaaS offerings (grouped)
+- GitHub
+- Machine
+- Firewall service
+- VPN service
+- NAS file share service
+- Logging and monitoring service
+- NAS backup service
+- SQL server
+- Build servers (grouped)
+- Active directory service
+- Removable drive backup service
+- Azure Iaas
 
 #### Process labeling example
 
-**O365** - O365/SaaS/AADauth (user credentials, session token, request/response)
+**O365** - O365/SaaS/Azure ADauth (user credentials, session token, request/response)

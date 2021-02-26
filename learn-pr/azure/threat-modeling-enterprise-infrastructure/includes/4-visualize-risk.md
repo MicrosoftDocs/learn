@@ -5,7 +5,7 @@ The next step in the infrastructure threat modeling process is to create a data-
 To build this diagram, we make the following assumptions:
 
 - **Zero trust** - data-flow initiates from outside of the corporate network and cannot be trusted.
-- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Refer to the [Provide context with the right depth layer](https://docs.microsoft.com/en-us/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/) learning path for more information.
+- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Refer to the [Provide context with the right depth layer](https://docs.microsoft.com/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/learn/paths/tm-threat-modeling-fundamentals/) learning path for more information.
 
 ## Elements
 
@@ -36,7 +36,7 @@ To build this diagram, we make the following assumptions:
 [!INCLUDE [Trust boundary](../includes/4-visualize-risk-trust-boundary.md)]
 
 > [!NOTE]
-> Check out the [Create a threat model using data-flow diagram elements](https://docs.microsoft.com/en-us/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/) module from our [Threat Modeling Security Fundamentals](https://docs.microsoft.com/en-us/learn/paths/tm-threat-modeling-fundamentals/) learning path for an in-depth review of each element.
+> Check out the [Create a threat model using data-flow diagram elements](https://docs.microsoft.com/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/) module from our [Threat Modeling Security Fundamentals](https://docs.microsoft.com/learn/paths/tm-threat-modeling-fundamentals/) learning path for an in-depth review of each element.
 
 ## Interactions
 
@@ -48,7 +48,7 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>O365|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>HTTPS</li><li>AAD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>O365|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>HTTPS</li><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 |![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>Bug management service|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>HTTPS</li><li>Service authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 |![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>SaaS offerings (grouped)|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>HTTPS</li><li>SaaS authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 |![External Entity](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>GitHub|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>HTTPS</li><li>GitHub authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
@@ -160,7 +160,7 @@ The next step is to capture the data-flow between each interaction:
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Process](../media/elements/process-25.png)</br>Azure IaaS|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>Firewall service|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>IPSec tunnel</li><li>AAD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![Process](../media/elements/process-25.png)</br>Azure IaaS|![Bi-directional Flow](../media/elements/bi-flow-25.png)</br>Bi-directional|![Process](../media/elements/process-25.png)</br>Firewall service|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>IPSec tunnel</li><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 
 ## Finished diagram
 
