@@ -1,16 +1,3 @@
----
-title: Infrastructure threat modeling security assessment questions
-description: Assess the state of security for your infrastructure by asking the right questions.
-author: rodrigosantos
-ms.author: rodsan
-ms.date: 03/01/2021
-ms.prod: non-product-specific
-ms.topic: how-to
-ms.custom: infrastructure-threat-modeling-security-guide
-ms.customer.intent: As an IT professional, I need to learn which questions to ask so I can help secure my infrastructure by using threat modeling.
-zone_pivot_groups: 2-assessment-questions-pivots
----
-
 The most effective way to find security gaps in the enterprise is to create an infrastructure threat model.
 
 It begins with a set of assessment questions, which feed directly into the threat modeling creation process.

@@ -1,15 +1,3 @@
----
-title: Introduction to infrastructure threat modeling
-description: Get started with threat modeling your infrastructure.
-author: rodrigosantos
-ms.author: rodsan
-ms.date: 03/01/2021
-ms.prod: non-product-specific
-ms.topic: how-to
-ms.custom: infrastructure-threat-modeling-security-guide
-ms.customer.intent: As an IT professional, I need to learn how to secure my infrastructure by using threat modeling.
----
-
 As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/en-us/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It can also help secure your company infrastructure.
 
 Infrastructure threat modeling uses a data-flow diagram to show how data flows in the enterprise. It also shows how it's protected at each stage in the lifecycle.

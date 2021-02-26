@@ -1,14 +1,40 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-modeling-enterprise-security.2-company
 metadata:
-  title: TODO
-  description: TODO
-  ms.date: 12/15/2020
-  author: TODO
-  ms.author: micrum
+  title: Infrastructure threat modeling security assessment questions
+  description: Assess the state of security for your infrastructure by asking the right questions.
+  ms.date: 03/01/2021
+  author: rodrigosantos
+  ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: TODO
-durationInMinutes: 20
+  ms.prod: learning-threat-modeling
+  zone_pivot_groups: 2-assessment-questions-pivots
+title: Assessment questions
+durationInMinutes: 15
 content: |
-  [!include[](includes/2-company.md)]
+  [!include[](includes/2-assessment-questions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A supplier management program gives me the ability to"
+    choices:
+    - content: "Check how popular the application is"
+      isCorrect: false
+      explanation: "The supplier management program is geared more towards security related areas."
+    - content: "Understand how long they take to fix a hypothetical security issue"
+      isCorrect: true
+      explanation: "A supplier management program is designed to show you how many days it takes for the supplier to fix a security issue."
+    - content: "How much I'll have to pay"
+      isCorrect: false
+      explanation: "The supplier management program helps you identify security promises and existing security issues with the supplier, not necessarily financial details."
+  - content: "What can you find out by asking questions from the Operations category?"
+    choices:
+    - content: "How often machines are patched."
+      isCorrect: true
+      explanation: "Patches and security updates are part of operations."
+    - content: "The firewall rules in place."
+      isCorrect: false
+      explanation: "Firewall appliances and rules are part of the Network category, not operations."
+    - content: "How long to keep financial documents for."
+      isCorrect: false
+      explanation: "Data retention is part of Asset management, not operations."

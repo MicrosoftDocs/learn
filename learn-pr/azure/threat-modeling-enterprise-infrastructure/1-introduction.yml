@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-modeling-enterprise-security.1-introduction
 metadata:
-  title: Introduction
-  description: TODO
-  ms.date: 12/15/2020
-  author: TODO
-  ms.author: micrum
+  title: Introduction to infrastructure threat modeling
+  description: Get started with threat modeling your infrastructure.
+  ms.date: 03/01/2021
+  author: rodrigosantos
+  ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-threat-modeling
 title: Introduction
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]

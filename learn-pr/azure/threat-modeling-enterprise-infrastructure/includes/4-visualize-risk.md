@@ -1,15 +1,3 @@
----
-title: Introduction to infrastructure threat modeling
-description: Visualize the state of security for your infrastructure by creating a data-flow diagram.
-author: rodrigosantos
-ms.author: rodsan
-ms.date: 03/01/2021
-ms.prod: non-product-specific
-ms.topic: how-to
-ms.custom: infrastructure-threat-modeling-security-guide
-ms.customer.intent: As an IT professional, I understand how to visualize risk in the infrastructure by using threat modeling.
----
-
 The next step in the infrastructure threat modeling process is to create a data-flow diagram.
 
 ## General assumptions

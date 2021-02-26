@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: TODO
-durationInMinutes: 4
+durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]

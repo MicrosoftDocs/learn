@@ -1,15 +1,3 @@
----
-title: Infrastructure threat modeling security assessment answers
-description: Capture the state of security for your infrastructure by collecting the answers to each question.
-author: rodrigosantos
-ms.author: rodsan
-ms.date: 03/01/2021
-ms.prod: non-product-specific
-ms.topic: how-to
-ms.custom: infrastructure-threat-modeling-security-guide
-ms.customer.intent: As an IT professional, I need to collect the answers to each security assessment question to help secure my infrastructure by using threat modeling.
----
-
 To help you navigate the infrastructure threat modeling module, we created a fictitious company, called Woodgrove Bank.
 
 ## Company background
