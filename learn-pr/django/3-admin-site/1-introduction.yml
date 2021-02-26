@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.admin-site.introduction
+title: Introduction to the Django admin site 
+metadata:
+  title: Introduction to the Django admin site
+  description: The Django admin site is a powerful utility for allowing business users to modify data. Django includes all the necessary tools for creating users and managing permissions.
+  ms.date: 2/26/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
