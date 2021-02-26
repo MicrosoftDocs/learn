@@ -57,7 +57,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |No asset disposal or deprecation plan|Use [Azure inventory and asset management](https://docs.microsoft.com/azure/security/benchmarks/security-control-inventory-asset-management) guidelines to come up with an asset disposal or deprecation plan.|
 |No data encryption on shared drives and servers|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).|
 |No Data Leakage Prevention (DLP)|Use [Microsoft data leakage prevention practices](https://docs.microsoft.com/cloud-app-security/governance-actions).|
-|NAS used for both backups and file shares|First, separate the NAS by either migrating file shares completely to OneDrive, or adding a secondary NAS just for file sharing. You may also leverage Use [Azure Backup](https://azure.microsoft.com/services/backup/) for your back up needs.|
+|NAS used for both backups and file shares|First, separate the NAS by either migrating file shares completely to OneDrive, or adding a secondary NAS just for file sharing. You may also use [Azure Backup](https://azure.microsoft.com/services/backup/) for your backup needs.|
 |OneDrive not fully adopted|Develop and enforce timelines to give teams time to move their files. You may also use the [migration center tool](https://docs.microsoft.com/sharepointmigration/migrating-content-to-onedrive-for-business).|
 |No disk encryption on enterprise machines|Follow [data encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices).|
 |No station lock policy|Enforce [Azure group policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).|
@@ -66,7 +66,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 
 ![Legal domain](../media/policies/Legal-small.svg)
 
-No additional action needed.
+No other action needed.
 
 ## Incident response
 
@@ -108,7 +108,7 @@ No additional action needed.
 |Risk|Solution|
 |----|--------|
 |IT room is unlocked|Add a lock to the IT room. Examples include lock and key, code entry, and key fobs. As you proceed with your investigation, consider adding a lock that also provides a logging mechanism to keep track of traffic.|
-|No cameras or access records for the IT room|Consider adding a camera pointed directly at the IT room. It works well if combined with a lock that keep a log of all entries.|
+|No cameras or access records for the IT room|Consider adding a camera pointed directly at the IT room. It works well if combined with a lock that keeps a log of all entries.|
 |Building owner has access to all rooms and floors|Depending on the contract signed by the company, consider excluding access to the IT room. If that's not possible, add locked cages to the network equipment to prevent unauthorized access.|
 |No building cameras or guards|Consider adding cameras pointed at each exit. It not already implemented, add doors that automatically lock upon exit.|
 |No formal visitor registration process|Create a logging system to keep track of all visitors, their sponsors, and reason for visit. Consider using visitor badges to distinguish them from employees.|
@@ -119,9 +119,9 @@ No additional action needed.
 
 |Risk|Solution|
 |----|--------|
-|No information security policy|Create an information security policy by leveraging the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
-|No risk management program|Create risk management program by leveraging the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
-|No security training|Consider leveraging [Microsoft end-user security awareness](https://www.microsoft.com/security/blog/2020/05/13/empowering-remote-workforce-security-training/) training as the starting point for your training program.|
+|No information security policy|Create an information security policy by using the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
+|No risk management program|Create risk management program by using the [Azure governance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/guides/standard/prescriptive-guidance) guidelines.|
+|No security training|Consider using [Microsoft end-user security awareness](https://www.microsoft.com/security/blog/2020/05/13/empowering-remote-workforce-security-training/) training as the starting point for your training program.|
 
 ## Security architecture
 
@@ -129,8 +129,8 @@ No additional action needed.
 
 |Risk|Solution|
 |----|--------|
-|No secure template images|Create a set of templates to be used on each VM, server, and user machine. Leverage [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
-|No security baselines|Create a set of security baselines for each OS and its security configuration. Leverage [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
+|No secure template images|Create a set of templates to be used on each VM, server, and user machine. Use [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
+|No security baselines|Create a set of security baselines for each OS and its security configuration. Use [Azure architecture guidelines](https://docs.microsoft.com/azure/security/fundamentals/iaas).|
 |No formal audit to ensure hybrid infrastructure security|Follow the guidance provided by [Azure best practices and patterns](https://docs.microsoft.com/azure/security/fundamentals/best-practices-and-patterns).|
 
 ## Supplier
