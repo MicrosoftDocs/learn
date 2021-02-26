@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-work-external-libraries.2-organize-code-with-modules
+title: Organize code with modules
+metadata:
+  title: Organize code with modules
+  description: Learn how to organize code by using modules.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-organize-code-with-modules.md)]
