@@ -48,7 +48,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
     | Username | Enter a username |
     | Password | Enter a password |
 
-        [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
+    [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
 
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
