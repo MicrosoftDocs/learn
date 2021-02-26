@@ -85,7 +85,7 @@ Identify the subtasks of *module title*
     List the content that will enable the learner to *Create a new local project*, *Create a local Git repo*, and *Push the repo to GitHub* :
 
     - Add local code to source control
-        - why to start with creating projects in VS
+        - what are the steps to publish
         - what does VS add to your folder when creating a Git repo
     
 1.  **Exercise - Create a Git repository**
@@ -96,6 +96,7 @@ Identify the subtasks of *module title*
     1. Add the project to Git by creating a new Git repo through VS
     1. Push the repo to the GitHub account you are signed into
     1. Verify the repo on GitHub.com
+    1. Verify the commits added to your repo history
 
 1. **Commit your changes**
 
