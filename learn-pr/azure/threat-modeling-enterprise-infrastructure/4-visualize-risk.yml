@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.threat-modeling-enterprise-security.4-visualize-risk
 metadata:
-  title: TODO
-  description: TODO
-  ms.date: 12/15/2020
-  author: TODO
-  ms.author: micrum
+  title: Identifying infrastructure risks with threat modeling
+  description: Visualize the state of security for your infrastructure by creating a data-flow diagram.
+  ms.date: 03/01/2021
+  author: rodrigosantos
+  ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: TODO
-durationInMinutes: 5
+  ms.prod: learning-threat-modeling
+title: Visualize risk
+durationInMinutes: 20
 content: |
   [!include[](includes/4-visualize-risk.md)]
