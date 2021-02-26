@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-plan
 metadata:
   title: "CAF Plan: Prepare for cloud adoption with a data-driven plan - Learn"
   description: Prepare for cloud adoption with a data driven, cloud adoption plan from CAF. For new innovations, learn from others who have used the target platforms. For migrations, understand how to evaluate your assets and plan the efforts required to move them to the cloud.
-  ms.date: 02/01/2021
+  ms.date: 02/22/2021
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - Foundational understanding of cloud adoption
   - Understanding of your organization’s adoption strategy and the types of efforts you need to complete
   - Basic familiarity with Azure DevOps or other tools used to manage tasks to create a plan
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-adoption-framework-plan.svg
 ratingEnabled: true
 levels:
 - beginner

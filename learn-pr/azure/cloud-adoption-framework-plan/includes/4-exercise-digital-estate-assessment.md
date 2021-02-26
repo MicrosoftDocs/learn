@@ -11,33 +11,33 @@ It is surprisingly common for organizations to have little more than surface kno
 ### What we know about Tailwind's digital estate
 
 - 3 datacenters
-    - 1 is owned by the organization
-    - 2 are leased through multi-year contracts
+  - 1 is owned by the organization
+  - 2 are leased through multi-year contracts
 - Virtualization is inconsistent
-    - Multiple hypervisor vendors has lead to cost and process complexity
+  - Multiple hypervisor vendors has lead to cost and process complexity
 - Lack of operating system standardization
-    - Mixture of Windows Server 2008 R2, 2012, 2016 and 2019
-    - A number of linux OSs and versions are deployed across the environment
-    - Most linux OSs are appliance based or are the result of LAMP stack deployments from the dev team
+  - Mixture of Windows Server 2008 R2, 2012, 2016 and 2019
+  - A number of linux OSs and versions are deployed across the environment
+  - Most linux OSs are appliance based or are the result of LAMP stack deployments from the dev team
 - Operations management is inconsistent
-    - Patching is inconsistent
-    - Basic data center sprawl has data center resource consumption at 25% over planned targets
-    - Back up appliances are past storage capacity. Backups for low priority workloads are local backups only
-    - Active monitoring and optimization is limited to mission critical workloads
-    - The operations team is over taxed & understaffed
-    - The Service Now expert on the team left three years ago, shortly after a vendor completed configuration of the CMDB. Since then, there has been no new discovery or mapping of assets.
+  - Patching is inconsistent
+  - Basic data center sprawl has data center resource consumption at 25% over planned targets
+  - Back up appliances are past storage capacity. Backups for low priority workloads are local backups only
+  - Active monitoring and optimization is limited to mission critical workloads
+  - The operations team is over taxed & understaffed
+  - The Service Now expert on the team left three years ago, shortly after a vendor completed configuration of the CMDB. Since then, there has been no new discovery or mapping of assets.
 - IT is viewed as a cost center
-    - The business undervalues the role of IT
-    - The high cost of the leased data centers is difficult to justify
-    - The business continues to place pressure on IT to reduce cost, after years of budget and staff reductions
+  - The business undervalues the role of IT
+  - The high cost of the leased data centers is difficult to justify
+  - The business continues to place pressure on IT to reduce cost, after years of budget and staff reductions
 - Retail Innovation Team is considered a high value add & source of innovation
-    - Each innovation is transitioned to the IT team upon release, adding to the continued cost burdens
+  - Each innovation is transitioned to the IT team upon release, adding to the continued cost burdens
 - Workloads across the data centers consist of the following:
-    - **Retail Innovation:** New innovations that push the boundaries of the retail environment, spanning in-store, online, and throughout the customers' mobile experiences.
-    - **Smart storefronts:** Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and over 500 point of sales systems.
-    - **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, etc.
-    - **End-user workstations:** Mostly desktop-based with a growing percentage of employees opting for mobile, BYOD (bring you own device), in-store kiosks, and virtual desktop solutions.
-    - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovations assets.
+  - **Retail Innovation:** New innovations that push the boundaries of the retail environment, spanning in-store, online, and throughout the customers' mobile experiences.
+  - **Smart storefronts:** Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and over 500 point of sales systems.
+  - **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, etc.
+  - **End-user workstations:** Mostly desktop-based with a growing percentage of employees opting for mobile, BYOD (bring you own device), in-store kiosks, and virtual desktop solutions.
+  - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovations assets.
 
 ### What we don't know
 
@@ -60,21 +60,21 @@ Start by identifying your on-premises infrastructure, applications, and dependen
 ### Before your start
 
 - Review the support and deployment requirements for agent-based dependency analysis for:
-    - [VMware VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware?azure-portal=true#dependency-analysis-requirements-agent-based)
-    - [Physical servers](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-physical?azure-portal=true#agent-based-dependency-analysis-requirements)
-    - [Hyper-V VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v?azure-portal=true#agent-based-dependency-analysis-requirements).
+  - [VMware VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware?azure-portal=true#dependency-analysis-requirements-agent-based)
+  - [Physical servers](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-physical?azure-portal=true#agent-based-dependency-analysis-requirements)
+  - [Hyper-V VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v?azure-portal=true#agent-based-dependency-analysis-requirements).
 - Make sure you:
-    - Have an Azure Migrate project. If you don't, [create](https://docs.microsoft.com/azure/migrate/create-manage-projects?azure-portal=true) one now.
-    - Check that you've [added](https://docs.microsoft.com/azure/migrate/how-to-assess?azure-portal=true) the Azure Migrate:Server Assessment tool to the project.
-    - Set up an [Azure Migrate appliance](https://docs.microsoft.com/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines, applications, and data using an agentless appliance. The appliance discovers on-premises machines, and sends metadata and performance data to Azure Migrate:Server Assessment. Set up an appliance for:
-        - [VMware](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-vmware?azure-portal=true) VMs.
-        - [Hyper-V](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-hyper-v?azure-portal=true) VMs.
-        - [Physical servers](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-physical?azure-portal=true).
+  - Have an Azure Migrate project. If you don't, [create](https://docs.microsoft.com/azure/migrate/create-manage-projects?azure-portal=true) one now.
+  - Check that you've [added](https://docs.microsoft.com/azure/migrate/how-to-assess?azure-portal=true) the Azure Migrate:Server Assessment tool to the project.
+  - Set up an [Azure Migrate appliance](https://docs.microsoft.com/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines, applications, and data using an agentless appliance. The appliance discovers on-premises machines, and sends metadata and performance data to Azure Migrate:Server Assessment. Set up an appliance for:
+    - [VMware](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-vmware?azure-portal=true) VMs.
+    - [Hyper-V](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-hyper-v?azure-portal=true) VMs.
+    - [Physical servers](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-physical?azure-portal=true).
 - Next, you'll use the Azure Migrate: Discovery and Assessment tool discovers and assesses on-premises VMware VMs, Hyper-V VMs, VMs hosted on other public clouds and physical servers for migration to Azure. The discovery and assessment tool will pull data from the Azure Migrate appliance, which will help you complete the following:
-    - Azure readiness: Assesses whether on-premises machines are ready for migration to Azure.
-    - Azure sizing: Estimates the size of Azure VMs or number of Azure VMware nodes after migration.
-    - Azure cost estimation: Estimates costs for running on-premises servers in Azure.
-    - Dependency analysis: Identifies cross-server dependencies and optimization strategies for moving interdependent servers to Azure.
+  - Azure readiness: Assesses whether on-premises machines are ready for migration to Azure.
+  - Azure sizing: Estimates the size of Azure VMs or number of Azure VMware nodes after migration.
+  - Azure cost estimation: Estimates costs for running on-premises servers in Azure.
+  - Dependency analysis: Identifies cross-server dependencies and optimization strategies for moving interdependent servers to Azure.
 
 ### Workloads in use
 
@@ -123,14 +123,14 @@ After a machine is marked as ready for Azure, Server Assessment makes sizing rec
 
 ### Get compute costs
 
-Performance-based sizing option in Azure Migrate assessments helps you to right-size VMs, and should be used as a best practice for optimizing workloads in Azure. In addition to right-sizing, there are a few other options to help save Azure costs: 
+Performance-based sizing option in Azure Migrate assessments helps you to right-size VMs, and should be used as a best practice for optimizing workloads in Azure. In addition to right-sizing, there are a few other options to help save Azure costs:
 
 - **Reserved Instances**: With [reserved instances(RI)](https://azure.microsoft.com/pricing/reserved-vm-instances/?azure-portal=true), you can significantly reduce costs compared to [pay-as-you-go pricing](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/?azure-portal=true).
 - **Azure Hybrid Benefit**: With [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/?azure-portal=true), you can bring on-premises Windows Server licenses with active Software Assurance, or Linux subscriptions, to Azure, and combine with reserved instances options.
 - **Enterprise Agreement**: Azure [Enterprise Agreements (EA)](https://docs.microsoft.com/azure/cost-management-billing/manage/ea-portal-agreements?azure-portal=true) can offer savings for Azure subscriptions and services.
 - **Offers**: There are multiple [Azure Offers](https://azure.microsoft.com/support/legal/offer-details/?azure-portal=true). For example, [Pay-As-You-Go Dev/Test](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true), or [Enterprise Dev/Test offer](https://azure.microsoft.com/offers/ms-azr-0148p/?azure-portal=true), to provide lower rates for dev/test VMs
 - **VM uptime**: You can review days per month and hours per day in which Azure VMs run. Shutting off machines when they're not in use can reduce your costs   (not applicable for RIs).
-- **Target region**: You can create assessments in different regions, to figure out whether migrating to a specific region might be more cost effective. 
+- **Target region**: You can create assessments in different regions, to figure out whether migrating to a specific region might be more cost effective.
 
 ### Visualize data
 
@@ -140,13 +140,13 @@ You can view Server Assessment reports (with Azure readiness information, and mo
 
 ### Evaluate gaps/blockers
 
-As you figure out the apps and workloads you want to migrate, identify downtime constraints for them, and look for any operational dependencies between your apps and the underlying infrastructure. This analysis helps you to plan migrations that meet your recovery time objective (RTO), and ensure minimal to zero data loss. Before you migrate, we recommend that you review and mitigate any compatibility issues, or unsupported features, that may block server/SQL database migration. The Azure Migrate Server Assessment report, and Azure Migrate Database Assessment, can help with this. 
+As you figure out the apps and workloads you want to migrate, identify downtime constraints for them, and look for any operational dependencies between your apps and the underlying infrastructure. This analysis helps you to plan migrations that meet your recovery time objective (RTO), and ensure minimal to zero data loss. Before you migrate, we recommend that you review and mitigate any compatibility issues, or unsupported features, that may block server/SQL database migration. The Azure Migrate Server Assessment report, and Azure Migrate Database Assessment, can help with this.
 
 ### Prioritize workloads
 
 After you've collected information about your inventory, you can identify which apps and workloads to migrate first. Develop an “apply and learn” approach to migrate apps in a systematic and controllable way, so that you can iron out any flaws before starting a full-scale migration.
 
-To prioritize migration order, you can use strategic factors such as complexity, time-to-migrate, business urgency, production/non-production considerations, compliance, security requirements, application knowledge, etc. 
+To prioritize migration order, you can use strategic factors such as complexity, time-to-migrate, business urgency, production/non-production considerations, compliance, security requirements, application knowledge, etc.
 
 A few recommendations:
 
@@ -195,16 +195,16 @@ To improve your odds of success, plan a series of subsequent waves of migrations
 As a first wave, the following workloads were identified by Tailwind Traders due to the low impact on the business & limited technical complexity:
 
 - **Retail Innovation:**
-    - Mobile coupon, an application consisting of a small website and a single independent database running on 3 servers.
+  - Mobile coupon, an application consisting of a small website and a single independent database running on 3 servers.
 - **Smart storefronts:**
-    - Video shelf, a video distribution system that pushes video down to a tracked set of displays in a small number of pilot stores. This system uses 20 servers to manage and distribute video.
-    - Remote store POS, instances of the POS systems used by remote locations that aren't able to connect to the organizations MPLS for high-speed transactions. This system uses 15 servers.
+  - Video shelf, a video distribution system that pushes video down to a tracked set of displays in a small number of pilot stores. This system uses 20 servers to manage and distribute video.
+  - Remote store POS, instances of the POS systems used by remote locations that aren't able to connect to the organizations MPLS for high-speed transactions. This system uses 15 servers.
 - **Corporate headquarters:**
-    - Employee scheduling app, is a simple app for managing and displaying employee schedules. This system only uses 2 servers, but must connect back to central ERP and HR systems for personally identifiable information.
+  - Employee scheduling app, is a simple app for managing and displaying employee schedules. This system only uses 2 servers, but must connect back to central ERP and HR systems for personally identifiable information.
 - **End-user workstations:**
-    - Virtual desktops require a 30 server solution to support as many as 500 desktops. Current business demands would suggest a 3x growth of demand, if it were available.
-- **Central operations:** 
-    - Current backup solution limitations inject a great deal of risk into technology operations. A new solution is required to future proof the organization's operations.
+  - Virtual desktops require a 30 server solution to support as many as 500 desktops. Current business demands would suggest a 3x growth of demand, if it were available.
+- **Central operations:**
+  - Current backup solution limitations inject a great deal of risk into technology operations. A new solution is required to future proof the organization's operations.
 
 This is a very small subset of the overall digital estate, but it creates a set of measurable and actionable workloads that can be migrated, tested, and deployed to production. This first iteration will build skills for the team & prepare them for larger migration efforts.
 
