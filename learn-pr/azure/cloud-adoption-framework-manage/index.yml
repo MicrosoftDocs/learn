@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.cloud-adoption-framework-manage
 metadata:
-  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
-  description: As workloads are deployed to the cloud, operations is critical to success. 
+  title: Ensure stable operations and optimization across all supported workloads deployed to the cloud.
+  description: As workloads are deployed to the cloud, operations is critical to success.
   ms.date: 02/22/2021
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Ensure stable operations and optimization across all supported workloads deployed to the cloud. 
+title: Ensure stable operations and optimization across all supported workloads deployed to the cloud.
 summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you will learn how to deploy an operations baseline to manage workloads in your environment. The module will also cover how to enhance the baseline, both for workloads and platforms.
-abstract: | 
+abstract: |
   In this module, you will:
-  - Evaluate levels of business commitment across your portfolio of workloads 
-  - Deploy an operations baseline 
-  - Customize the baseline to meet operations needs 
-  - Centralize operations for core platforms 
-  - Partner with workload teams for richer decentralized operations 
-prerequisites: | 
-  - Foundational understanding of cloud adoption 
-  - Understanding of your organization’s operations management requirements 
+  - Evaluate levels of business commitment across your portfolio of workloads
+  - Deploy an operations baseline
+  - Customize the baseline to meet operations needs
+  - Centralize operations for core platforms
+  - Partner with workload teams for richer decentralized operations
+prerequisites: |
+  - Foundational understanding of cloud adoption
+  - Understanding of your organization’s operations management requirements
 iconUrl: /learn/achievements/cloud-adoption-framework-manage.svg
 ratingEnabled: true
 levels:
