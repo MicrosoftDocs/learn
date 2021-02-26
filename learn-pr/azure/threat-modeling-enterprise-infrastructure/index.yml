@@ -1,29 +1,39 @@
 ### YamlMime:Module
 uid: learn.azure.threat-modeling-enterprise-security
 metadata:
-  title: TODO
-  description: TODO
-  ms.date: 12/15/2020
-  author: TODO
-  ms.author: micrum
+  title: Secure your infrastructure with threat modeling
+  description: Learn how to use the foundation of threat modeling to identify enterprise risks and find ways to reduce or eliminate them.
+  ms.date: 03/01/2021
+  author: rodrigosantos
+  ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: TODO
-summary: TODO
+  ms.prod: learning-threat-modeling
+title: Secure your infrastructure with threat modeling
+summary: Learn how to use the foundation of threat modeling to identify enterprise risks and find ways to reduce or eliminate them.
 abstract: |
   In this module, you will:
-  - TODO
-  - TODO
+  - Understand the importance of a well defined, open-ended questionnaire to get a better view of the infrastructure.
+  - Visualize how each component interacts with the other with a detailed data-flow diagram.
+  - Identify infrastructure security gaps using a combination of security policies and the threat modeling framework.
+  - Reduce or eliminate risk with known security requirements and controls.
 prerequisites: |
-  - Basic knowledge of Azure services
-  - TODO
+  - Threat modeling security fundamentals
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
+- intermediate
 roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
 - solution-architect
 products:
 - azure
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
 units:
 - learn.azure.threat-modeling-enterprise-security.1-introduction
 - learn.azure.threat-modeling-enterprise-security.2-assessment-questions

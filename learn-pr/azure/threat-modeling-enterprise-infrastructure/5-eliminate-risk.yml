@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.threat-modeling-enterprise-security.6-eliminate-risk
+uid: learn.azure.threat-modeling-enterprise-security.5-eliminate-risk
 metadata:
-  title: TODO
-  description: TODO
-  ms.date: 12/15/2020
-  author: TODO
-  ms.author: micrum
+  title: Reduce or eliminate risk in the infrastructure with threat modeling
+  description: Improve the state of security for your infrastructure by finding ways to reduce or eliminate risk.
+  ms.date: 03/01/2021
+  author: rodrigosantos
+  ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: TODO
-durationInMinutes: 8
+  ms.prod: learning-threat-modeling
+title: Eiminate risk
+durationInMinutes: 15
 content: |
-  [!include[](includes/6-eliminate-risk.md)]
+  [!include[](includes/5-eliminate-risk.md)]

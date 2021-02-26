@@ -1,15 +1,3 @@
----
-title: Introduction to infrastructure threat modeling
-description: Improve the state of security for your infrastructure by finding ways to reduce or eliminate risk.
-author: rodrigosantos
-ms.author: rodsan
-ms.date: 03/01/2021
-ms.prod: non-product-specific
-ms.topic: how-to
-ms.custom: infrastructure-threat-modeling-security-guide
-ms.customer.intent: As an IT professional, I understand how to reduce or eliminate risk in the infrastructure by using threat modeling.
----
-
 Use the completed data-flow diagram, answers from the security assessment, and existing security requirements to identify potential solutions to enterprise threats and security gaps.
 
 In this example, we used many [security services](https://docs.microsoft.com/azure/security/fundamentals/overview) available in Azure.
