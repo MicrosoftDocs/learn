@@ -8,8 +8,8 @@ Your transportation logistics application requires stored procedures that run ba
 
 You consider two choices for your database:
 
-    - Host SQL Server on-premises. Your IT team runs a small in-house data center to support the finance department and a few other teams. You can work with IT to host a SQL Server deployment in their data center.
-    - Host Azure SQL Database in the cloud. Azure SQL Database is based on SQL Server, and provides the relational database functionality you need.
+- Host SQL Server on-premises. Your IT team runs a small in-house data center to support the finance department and a few other teams. You can work with IT to host a SQL Server deployment in their data center.
+- Host Azure SQL Database in the cloud. Azure SQL Database is based on SQL Server, and provides the relational database functionality you need.
 
 You've decided to build the web and application tiers for your logistics app on Azure. So, it makes sense to also host your database there. But there are some other reasons why Azure SQL Database is a smart choice, and why it's even easier than using virtual machines.
 
