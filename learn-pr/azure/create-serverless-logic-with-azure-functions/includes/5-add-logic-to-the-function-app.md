@@ -165,7 +165,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. From the top menu bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
-![Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.](../media/5-get-function-url.png)
+    ![Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.](../media/5-get-function-url.png)
 
 ### Secure HTTP triggers
 
