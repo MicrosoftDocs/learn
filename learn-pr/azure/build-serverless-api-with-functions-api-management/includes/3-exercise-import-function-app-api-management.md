@@ -1,14 +1,14 @@
-You can add Functions to Azure API Management, to present them to users as parts of a single API.
+To present Functions to users as parts of a single API, you can add them to Azure API Management.
 
 In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into single API.
 
-Here, you will create a new API Management instance and then add a Product Details function to it.
+In this exercise, you will create a new API Management instance and then add a Product Details function to it.
 
 ## Create functions
 
-In this exercise, you will add an Azure Functions app to Azure API Management. Later you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
+In the following steps, you will add an Azure Functions app to Azure API Management. Later you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
 
-1. To clone the functions project, in the Cloud Shell on the right, run the following command.
+1. To clone the functions project, run the following command in the Cloud Shell on the right.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-apim-and-functions.git ~/OnlineStoreFuncs
@@ -27,13 +27,13 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 
 ## Test the product details function
 
-Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management.
+Now, let's test the ProductDetails function to see how it behaves before we add it to API Management.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select the App Service whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
+1. Select the Function App whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
 
 1. Select **Functions** in the menu, and then select **ProductDetails**.
 
@@ -66,7 +66,7 @@ Now, let's test the ProductDetails function, to see how it behaves before we add
 
 Now that we have our function app deployed and tested, we'll expose the functionality as an API using Azure API Management so that the function can be called from other apps and services.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**, and select the App Service whose name begins with **ProductFunction**.
+1. On the Azure portal menu, or from the **Home** page, select **All resources**, and select the Function App whose name begins with **ProductFunction**.
 
 1. In the left nav bar, under the **API** section, select **API Management**.
 
@@ -112,7 +112,7 @@ You now have a functional product details API in the API Management instance tha
 
 1. With the API Management page still open, select the **Test** tab.
 
-1. Select **Get ProductDetails** as the operation that we want to test.
+1. Select **GET ProductDetails** as the operation that we want to test.
 
 1. Under **Query parameters**, select **Add parameter**.
 
