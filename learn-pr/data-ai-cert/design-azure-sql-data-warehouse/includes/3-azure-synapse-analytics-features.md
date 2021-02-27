@@ -1,17 +1,17 @@
 As well as the Massively Parallel Processing architecture at limitless scale, there are additional features of SQL Analytics that can be beneficial in Modern Data Warehousing use cases, including:
 
-    - Workload management
-    - Result-set cache
-    - Materialized views
-    - Continuous Integration/Continuous Delivery (CI/CD) support through SQL Server Data Tools (SSDT)
+- Workload management
+- Result-set cache
+- Materialized views
+- Continuous Integration/Continuous Delivery (CI/CD) support through SQL Server Data Tools (SSDT)
 
 ## Workload management
 
 Azure Synapse Analytics provides the capability to prioritize the query workloads that take place on the server using Workload Management. Workload Management is managed by three related areas:
 
-     - Workload groups
-     - Workload classification
-     - Workload importance
+- Workload groups
+- Workload classification
+- Workload importance
 
 ### Workload groups
 
