@@ -36,7 +36,7 @@ Guidance for content and exercise units:
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
   - Add a GitHub account to sign into Visual Studio 2019
   - Initialize a Git repository and push it to GitHub with Visual Studio 2019
