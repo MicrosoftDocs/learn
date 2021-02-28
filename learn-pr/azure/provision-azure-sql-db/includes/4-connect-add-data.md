@@ -136,7 +136,7 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > It may take up to five minutes for this change to take effect.
     > ```
     >
-If this happens, you will need to add another firewall rule for your client. To do so, preform the following steps:
+If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
 
 - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 - Search for and select your database.
