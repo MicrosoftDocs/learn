@@ -173,4 +173,4 @@ You can then review and change settings in further sub-panes. These settings inc
 
 You can also monitor and troubleshoot virtual networks, or create an automation script to generate the current virtual network.
 
-Virtual networks are powerful and highly-configurable mechanisms for connecting entities in Azure. You can connect Azure resources to one another, or to resources you have on-premises. You can isolate, filter, and route your network traffic, and Azure enables you to increase security where you feel you need it.
+Virtual networks are powerful and highly configurable mechanisms for connecting entities in Azure. You can connect Azure resources to one another, or to resources you have on-premises. You can isolate, filter, and route your network traffic, and Azure enables you to increase security where you feel you need it.
