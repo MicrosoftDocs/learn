@@ -113,7 +113,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     You can ignore the output of this command. The Functions host is now running exactly as before, but its output is being sent to the file `~/output.txt`, and we can continue to use the command line while it's running.
 
-1. Run this command to send an HTTP GET request to our locally-running function.
+1. Run this command to send an HTTP GET request to our locally running function.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest" -w "\n"
