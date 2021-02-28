@@ -58,7 +58,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 
 1. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Select **Go to resource** to go to the VM overview page.
 
-1. Here, you can see all the information and configuration options for your newly-created Ubuntu VM. One of the pieces of information is the **Public IP address**.
+1. Here, you can see all the information and configuration options for your newly created Ubuntu VM. One of the pieces of information is the **Public IP address**.
 
     ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)
 
