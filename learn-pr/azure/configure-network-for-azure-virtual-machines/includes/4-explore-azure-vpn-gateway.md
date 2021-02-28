@@ -97,7 +97,7 @@ The type of VPN gateway you create will depend on your architecture. Options are
 
 - RouteBased
 
-    Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or virtual tunnel interface (VTI)).
+    Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or virtual tunnel interface (VTI).
 
 - PolicyBased
 
