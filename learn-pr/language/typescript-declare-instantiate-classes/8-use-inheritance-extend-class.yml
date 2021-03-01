@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.8-use-inheritance-extend-class
+title: Extend a class using inheritance
+metadata:
+  title: Extend a class using inheritance
+  description: Learn about how inheritance can establish relationships between classes, how to identify the difference between the base class and a subclass, and about the purpose of a method override.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-use-inheritance-extend-class.md)]
