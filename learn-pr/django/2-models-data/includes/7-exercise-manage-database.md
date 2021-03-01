@@ -25,7 +25,7 @@ Let's tell Django that new models are added and we would like for the changes to
 
 After running the command you should see something similar to below stating it has stored both models as a migration.
 
-![Database migration](../Module2/Module2_Images/Module2_ModelMigration.PNG)
+![Database migration](../images/model-migration.png)
 
 ## Update the database
 
@@ -46,7 +46,7 @@ Now that we completed the necessary setup for our SQLite database, let's use the
 
 1. Click the **Extensions** button on the workbench, and search for **SQLite**
 
-    ![Extensions pane with SQLite](images/install-sqlite-extension.png)
+    ![Extensions pane with SQLite](../images/install-sqlite-extension.png)
 
 1. Click **Install** on **SQLite**
 
@@ -56,12 +56,12 @@ Now that we completed the necessary setup for our SQLite database, let's use the
 1. Open the command pallet by hitting **Ctl-Shift-P** (or **Cmd-Shift-P** on a Mac)
 1. Type **SQLite** and choose **SQLite: Open Database**
 
-    ![SQLite command pallet](images/sqlite-command.png)
+    ![SQLite command pallet](../images/sqlite-command.png)
 
 1. Choose **db.sqlite3**
 1. At the bottom of your workbench on the left side, click the arrow next to **SQLITE EXPLORER**
 
-    ![SQLite explorer](images/sqlite-explorer.png)
+    ![SQLite explorer](../images/sqlite-explorer.png)
 
 1. You can now see the list of all the created tables. If you expand each one you will see the various columns. If you explore your **shelter** and **dog** tables you will notice the various columns you created, including the **id** column which is automatically created on each table.
 

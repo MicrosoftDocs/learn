@@ -34,3 +34,14 @@ quiz:
    - content: 'q.question_text'
      isCorrect: false
      explanation: 'This answer is not correct. This statement is used to update objects within a database.'
+ - content: 'What command should you use to update the database schema?'
+   choices:
+   - content: makemigrations
+     isCorrect: false
+     explanation: Incorrect. The makemigrations command creates new migrations, but it does not update the database.
+   - content: sqlmigrate
+     isCorrect: false
+     explanation: Incorrect. The sqlmigrate command generates the associated SQL files, but it does not update the database.
+   - content: migrate
+     isCorrect: true
+     explanation: Correct. The migrate command updates the database.
