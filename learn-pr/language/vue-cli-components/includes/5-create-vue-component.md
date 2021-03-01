@@ -1,11 +1,11 @@
-You want to create an application which allows a user to create bookings on a cruise to the moon. Over the course of a couple of exercises, you will create a component for the form the user will complete, to create a booking, and another to display the list of created bookings. The first component you will create, will host both of child components.
+You want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a couple of exercises, you will create a component for the form the user will complete, to create a booking, and another to display the list of created bookings. The first component you will create, will host both of child components.
 
 ## Install Visual Studio Code extensions
 
 Visual Studio Code has numerous extensions the [marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to aid you in your development endeavors. We will take advantage of two:
 
-- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur/?azure-portal=true) which enables support for *.vue* files in Visual Studio Code.
-- [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets/?azure-portal=true) from Sarah Drasner to enable snippets in Visual Studio Code.
+- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur/?azure-portal=true) enables support for *.vue* files in Visual Studio Code.
+- [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets/?azure-portal=true) from Sarah Drasner enable snippets in Visual Studio Code.
 
 1. Inside Visual Studio Code, open the *Extensions* workbench.
     ![Screenshot of the extensions icon.](./images/extensions.png)
@@ -62,7 +62,7 @@ The snippet creates the `script` element for us with `export default` already cr
 
 With our data registered, let's add the HTML to the `template` element to display the core information. We will also add a couple of placeholders for the future.
 
-1. Inside the `template` element in *Host.vue*, add the following HTML to display the name and description of the cruise, as well as a placeholder for two components we will create later:
+1. Inside the `template` element in *Host.vue*, add the following HTML to display the name and description of the cruise and a placeholder for two components we will create later:
 
     ```html
     <section>
@@ -126,9 +126,9 @@ Inside the `style` element inside *Host.vue*, add the following CSS:
 
 ## Set the Host component as the entry point into the application
 
-Vue CLI creates a *main.js* file which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. We will update *main.js* to use our component.
+Vue CLI creates a *main.js* file, which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. We will update *main.js* to use our component.
 
-Open *main.js* and *replace* the contents with the following:
+Open *main.js* and *replace* the contents by using the following code:
 
     ```javascript
     import { createApp } from 'vue'

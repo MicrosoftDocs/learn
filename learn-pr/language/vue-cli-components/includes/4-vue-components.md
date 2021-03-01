@@ -1,4 +1,4 @@
-By definition, a component is "a part or element of a larger whole". When you think about creating an application, you typically work with smaller parts and combine them into a larger whole - your application. Vue allows you to create components which we can then use to create a full application.
+By definition, a component is "a part or element of a larger whole". When you think about creating an application, you typically work with smaller parts and combine them into a larger whole - your application. Vue allows you to create components that we can then use to create a full application.
 
 ## Vue components
 
@@ -8,11 +8,11 @@ When creating components, you are essentially creating new tags you can use in y
 
 ## Vue component structure
 
-Vue components contain three main sections, `template`, `script` and `style`. `style` contains any CSS or other style syntax and `script` contains any scripting code for the component. `template` contains the HTML used for the display of information. This allows for a logical breakdown of your component.
+Vue components contain three main sections, `template`, `script`, and `style`. `style` contains any CSS or other style syntax and `script` contains any scripting code for the component. `template` contains the HTML used for the display of information, which allows for a logical breakdown of your component.
 
 ### style
 
-`style` can contain any valid CSS or the syntax of any pre-processor you may be using. You can also *scope* your CSS to that specific component by using the `scoped` attribute. This means the styles will apply to only that component, which allows you to create classes and other settings without worrying about accidentally modifying other parts of the page.
+`style` can contain any valid CSS or the syntax of any pre-processor you might be using. You can also *scope* your CSS to that specific component by using the `scoped` attribute. This means the styles will apply to only that component, which allows you to create classes and other settings without worrying about accidentally modifying other parts of the page.
 
 ```html
 <style>
@@ -43,7 +43,7 @@ export default {
 
 ### template
 
-`template` houses the HTML template you wish to use to display information and allow the user to interact with the data. When using a JavaScript based component, this is typically inside the *.html* file or as a string literal in a JavaScript file. The HTML syntax used in `template` is the same as with JavaScript based components, including using handlebars (`{{}}`) to display data.
+`template` houses the HTML template you wish to use to display information and allow the user to interact with the data. When you use a JavaScript based component, `template` is typically inside the *.html* file or as a string literal in a JavaScript file. The HTML syntax used in `template` is the same as with JavaScript based components, including using handlebars (`{{}}`) to display data.
 
 ```html
 <template>
@@ -59,7 +59,7 @@ export default {
 
 ## Loading and components
 
-As highlighted earlier, single-file components are saved with a *.vue* extension. You can load these in a similar fashion to other modules by using the `import` statement, and register them by using the `components` property. Once registered they become available for use as a tag inside of `template`.
+As highlighted earlier, single-file components are saved with a *.vue* extension. You can load these in a similar fashion to other modules by using the `import` statement, and register them by using the `components` property. Once registered, they become available for use as a tag inside of `template`.
 
 > [!NOTE]
 > When importing a library with `import`, it's standard to use PascalCase (or upper camel case) for the name, where the first letter for each word is capitalized, like `PascalCase`. However, in HTML, the convention is for tag names to use kebab-case with each word in lowercase letters and a dash (`-`) between them. Vue will automatically manage the two different conventions.
@@ -77,13 +77,13 @@ export default {
 }
 ```
 
- In the code above, the component `ProductDisplay` is imported and added to the `components` property. What this will do, is to ensure that when `ProductDisplay` is used in the template, Vue's compiler is able to tell that this is something it needs to parse and not a regular HTML element
+ In the code above, the component `ProductDisplay` is imported and added to the `components` property so that when `ProductDisplay` is used in the template, Vue's compiler can tell that this is something it needs to parse and not a regular HTML element
 
 ## Separation of concerns
 
 Placing the HTML, CSS and JavaScript into one file may appear to be a departure from best practices where you typically create separate files for each of the different types. However, in practice, switching between these files can cause development to slow as there are invariably interdependencies between them. There's also a cognitive load associated with having to switch between files.
 
-Single-file components does allow you to create separate files for your `script` and `style` sections by using the `src` attribute.
+Single-file components do allow you to create separate files for your `script` and `style` sections by using the `src` attribute.
 
 ```html
 <template>
