@@ -26,9 +26,9 @@ All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/clou
 - [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough?WT.mc_id=deploycontainerapps_intro-learn-ludossan#connect-to-the-cluster)
 - If you're on Windows, install [WSL](https://docs.microsoft.com/windows/wsl/install-win10)
 
-## Set up the project
+## Before you begin
 
-Before you start the module, you'll need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-application-scalability) has a script that will create the cluster, get the credentials and deploy the application to it. You'll need to run it before you begin with the following steps.
+This module assumes you already have a running cluster, to do that, you'll need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-application-scalability) has a script that will create the cluster, get the credentials and deploy the application to it. You'll need to run it before you begin with the following steps.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
