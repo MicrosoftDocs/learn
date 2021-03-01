@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.schema
+title: Manage AD DS schema
+metadata:
+  title: Manage AD DS schema
+  description: "Manage AD DS schema"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-manage-schema.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which tool can you use to trigger an AD DS schema update?"
+    choices:
+    - content: "ADSI.MSC"
+      isCorrect: true
+      explanation: "That's correct. In the ADSI.MSC console, you can right-click or access the context menu on the Schema container, and then select **Update Schema now**. This will trigger an update."
+    - content: "Active Directory Schema console"
+      isCorrect: false
+      explanation: "That's incorrect. You can use Active Directory Schema console to make changes to schema, but not to trigger their update."
+    - content: "Active Directory Users and Computers console"
+      isCorrect: false
+      explanation: "That's incorrect. You can use Active Directory Users and Computers console to make changes to AD DS objects, but not to trigger the update of the underlying schema."

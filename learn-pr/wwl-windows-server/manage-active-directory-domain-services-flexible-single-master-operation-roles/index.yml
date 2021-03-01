@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles
+metadata:
+  title: Manage AD DS domain controllers and FSMO roles
+  description: "Manage AD DS domain controllers and FSMO roles"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Manage AD DS domain controllers and FSMO roles
+summary: Learn about essential AD DS domain controllers management and maintenance tasks, including their deployment, backup and recovery, and schema management. Find out about design considerations for optimal number, roles, and location of domain controllers.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy AD DS domain controllers.
+  - Maintain AD DS domain controllers.
+  - Describe the AD DS global catalog role and its placement considerations.
+  - Describe AD DS operations master roles, their placement considerations, and their management tasks.
+  - Describe AD DS schema and its management tasks.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Active Directory Domain Services (AD DS).
+iconUrl: /learn/achievements/manage-ad-ds-domain-controllers-and-fsmo-roles.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.introduction
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.deploy
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.maintain
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.global-catalog-role
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.operations-masters
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.schema
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.knowledge-check
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.summary
+badge:
+  uid: learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles.badge
