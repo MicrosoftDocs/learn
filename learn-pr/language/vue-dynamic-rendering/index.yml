@@ -1,23 +1,24 @@
 ### YamlMime:Module
 uid: learn.language.vue-dynamic-rendering
 metadata:
-  title: Learn to use dynamic rendering with Vue
-  description: Description #TODO
+  title: Dynamic page displays with Vue.js
+  description: Learn to use dynamic rendering with Vue.
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn to use dynamic rendering with Vue
-summary: Summary #TODO
+title: Dynamic page displays with Vue.js
+summary: One of the goals of any web framework is to update the display based on data values. We will explore how you can make your page dynamic based on the values, and display lists of information.
 abstract: | 
   In this module, you will:
-  - 
+  - Learn to display lists
+  - Learn about conditional rendering
 prerequisites: HTML/CSS, Git, npm, and JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
-- beginner
+- intermediate
 roles:
 - student
 - developer

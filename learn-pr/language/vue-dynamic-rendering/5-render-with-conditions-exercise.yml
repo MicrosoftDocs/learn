@@ -2,7 +2,7 @@
 uid: learn.language.vue-dynamic-rendering.5-render-with-conditions-exercise
 metadata:
   title: Practice using conditions
-  description: Description #TODO
+  description: Let's implement conditional rendering.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
