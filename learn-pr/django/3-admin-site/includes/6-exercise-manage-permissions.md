@@ -8,16 +8,16 @@ As highlighted earlier, you can add users with permissions to modify data throug
 1. Ensure **Staff status** is selected
 1. Scroll down to **User permissions**
 1. Select the following permissions
-  - dog_shelters | dog | Can add dog
-  - dog_shelters | dog | Can change dog
-  - dog_shelters | dog | Can view dog
+   - dog_shelters | dog | Can add dog
+   - dog_shelters | dog | Can change dog
+   - dog_shelters | dog | Can view dog
 
-    > ![NOTE]
+    > [!NOTE]
     > The page highlights you can select multiple permissions by using **Control** or **Command** and clicking on each item
 
 1. Click the **Choose** button
 
-    ![Dialog showing selected permissions](Module3_Images/set-permissions.png)
+    :::image type="content" source="../media/set-permissions.png" alt-text="Dialog box showing selected permissions." lightbox="../media/set-permissions.png":::
 
 1. Click **SAVE**
 
@@ -29,12 +29,12 @@ Let's see the difference between a superuser and staff user by logging in as a s
 1. Click **Login again**
 1. Login as **staffuser** using the password you created earlier
 
-    > ![NOTE]
+    > [!NOTE]
     > If you forgot the password, you can login as your superuser and reset the password
 
 1. Notice the admin page only allows access to **Dogs**
 
-    ![Staff user page showing dogs as only administrative option](Module3_Images/staff-user-display.png)
+    :::image type="content" source="../media/staff-user-display.png" alt-text="Staff user page showing dogs as only administrative option." lightbox="../media/staff-user-display.png":::
 
 1. Click **Dogs**
 1. Click the dog you created earlier

@@ -6,9 +6,9 @@ Django is the perfect framework for this project, as it provided a route for qui
 
 You will need the following installed on your computer to complete the exercises:
 
-- [Python](https://python.org)
-- [Git](https://git-scm.com/)
-- A code editor such as [Visual Studio Code](https://code.visualstudio.com)
+- [Python](https://python.org?azure-portal=true)
+- [Git](https://git-scm.com/?azure-portal=true)
+- A code editor such as [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 
 ## Clone the starter repository
 
@@ -22,7 +22,7 @@ You will need the following installed on your computer to complete the exercises
 
 ## Open the project in Visual Studio Code
 
-We will be using [Visual Studio Code](https://code.visualstudio.com) as our code editor.
+We will be using [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) as our code editor.
 
 In the same command or terminal window, enter the following command to open the folder in Visual Studio Code
 
@@ -32,7 +32,7 @@ code .
 
 ## Create the virtual environment
 
-We will follow the best practice of working with [virtual environments](https://docs.python.org/3/tutorial/venv.html) for our project.
+We will follow the best practice of working with [virtual environments](https://docs.python.org/3/tutorial/venv.html?azure-portal=true) for our project.
 
 1. Inside Visual Studio Code, open the terminal window by clicking **View** > **terminal**
 1. In the new **terminal** window, execute the following commands to create and activate a virtual environment
@@ -49,7 +49,7 @@ We will follow the best practice of working with [virtual environments](https://
 
 ## Installing Django
 
-The starter project uses a [requirements.txt](https://pip.pypa.io/en/latest/user_guide/#requirements-files) file to contain the list of all necessary packages. We can install them by using `pip`.
+The starter project uses a [requirements.txt](https://pip.pypa.io/en/latest/user_guide/?azure-portal=true#requirements-files) file to contain the list of all necessary packages. We can install them by using `pip`.
 
 In the same **terminal** window, execute the following command to install the required packages
 

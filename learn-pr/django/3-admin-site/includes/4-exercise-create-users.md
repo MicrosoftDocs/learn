@@ -2,7 +2,7 @@ When creating projects, the admin interface is automatically created, but it doe
 
 ## Creating a superuser
 
-1. Open a new **terminal** window in Visual Studio Code by selecting **Terminal** > **New terminal**
+1. Open a new **terminal** window in Visual Studio Code by selecting **Terminal** > **New terminal**.
 1. Ensure the virtual environment is activated by executing the following code:
 
     ```bash

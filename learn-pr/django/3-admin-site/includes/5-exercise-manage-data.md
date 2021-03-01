@@ -17,7 +17,7 @@ As highlighted before, the admin site does not provide access to your data by de
 1. Return to your browser and refresh the page
 1. Notice you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**
 
-    ![Django Admin New Models](../media/Module3_DjangoAdminNewModels.PNG)
+    :::image type="content" source="../media/Module3_DjangoAdminNewModels.PNG" alt-text="Django Admin New Models." lightbox="../media/Module3_DjangoAdminNewModels.PNG":::
 
 ## Accessing our data
 
@@ -29,11 +29,11 @@ Let's create a new `Dog` to explore how the admin site functions for data.
 
 1. Click **Add** next to **Dogs**
 
-    ![Add dog dialog with Shelter dropdown selected](Module3_Images/add-dog.png)
+    :::image type="content" source="../media/add-dog.png" alt-text="Add dog dialog with Shelter dropdown selected." lightbox="../media/add-dog.png":::
 
 1. Notice when you select the dropdown for **Shelter** no shelters are listed because we haven't created one
 
-    > ![NOTE]
+    > [!NOTE]
     > If you are continuing with a project you started earlier you may see a shelter if you created one.
 
     The dropdown exists to allow us to select the Shelter into which we would register the dog. We can create a new one by clicking the **+** sign
@@ -41,7 +41,7 @@ Let's create a new `Dog` to explore how the admin site functions for data.
 1. Click the **+**
 1. A new window opens allowing you to create a **Shelter**
 
-    ![New shelter screen](Module3_Images/new-shelter.png)
+    :::image type="content" source="../media/new-shelter.png" alt-text="New shelter screen." lightbox="../media/new-shelter.png":::
 
 1. Provide a **Name** and **Location** for the shelter, such as **Contoso** and **Redmond, WA**
 1. Click **Save**
@@ -50,9 +50,9 @@ Let's create a new `Dog` to explore how the admin site functions for data.
 1. Click **Save**
 1. The screen returns to the list of dogs, showing you the newly created dog
 
-    ![Screenshot of list of dogs](Module3_Images/new-dog.png)
+    :::image type="content" source="../media/new-dog.png" alt-text="Screenshot of list of dogs." lightbox="../media/new-dog.png":::
 
 1. If you click the dog you will be taken to the details page where you can update any values or delete the entry
 
-    > ![NOTE]
+    > [!NOTE]
     > You will notice the display is the name of the dog (or shelter if you navigate to the Shelters portion of the admin site). This is because we set the `__str__` method on our objects. The default display of any objects is the value returned by `__str__`.

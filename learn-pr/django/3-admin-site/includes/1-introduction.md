@@ -10,13 +10,13 @@ In this module you will learn:
 Prerequisites
 
 - Software
-  - [Visual Studio Code](https://code.visualstudio.com)
-  - [Git](https://git-scm.com/)
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - [Git](https://git-scm.com/?azure-portal=true)
 - Coding skills
   - Understanding of HTML and CSS
   - Basic understanding of Django
   - Basic understanding of relational databases
   - Intermediate level knowledge of Python, including
-    - [Package Management](https://docs.python.org/3/installing/index.html)
-    - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
-    - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+    - [Package Management](https://docs.python.org/3/installing/index.html?azure-portal=true)
+    - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/?azure-portal=true#creating-virtual-environments)
+    - [Inheritance](https://docs.python.org/3/tutorial/classes.html?azure-portal=true#inheritance)
