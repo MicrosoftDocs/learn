@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-dynamic-rendering.6-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+quiz:
+  questions:
+  - content: What directive do you use to iterate through a list of items?
+    choices:
+    - content: "`v-for`"
+      isCorrect: true
+      explanation: "`v-for` allows you to iterate through an array of items."
+    - content: "`v-show`"
+      isCorrect: false
+      explanation: "`v-show` allows you to toggle display, but not iterate through items."
+    - content: "`v-else`"
+      isCorrect: false
+      explanation: "`v-else` is used with v-if to add Boolean logic."
+    - content: "`v-if`"
+      isCorrect: false
+      explanation: "`v-if` is used to add Boolean logic."
+  - content: What directive do you use to determine if you should display data?
+    choices:
+    - content: "`v-for`"
+      isCorrect: false
+      explanation: "`v-for` allows you to iterate through an array of items."
+    - content: "`v-show`"
+      isCorrect: true
+      explanation: "`v-show` allows you to toggle display."
+    - content: "`v-bind`"
+      isCorrect: false
+      explanation: "`v-bind` allows you to bind attribute values."
+  - content: What directive is used to implement Boolean logic?
+    choices:
+    - content: "`v-for`"
+      isCorrect: false
+      explanation: "`v-for` is used to iterate through an array of items."
+    - content: "`v-bind`"
+      isCorrect: false
+      explanation: "`v-bind` is used to bind values to attributes."
+    - content: "`v-if`"
+      isCorrect: true
+      explanation: "`v-if` is used to implement Boolean logic."

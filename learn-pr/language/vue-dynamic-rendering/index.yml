@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.language.vue-dynamic-rendering
+metadata:
+  title: Learn to use dynamic rendering with Vue
+  description: Description #TODO
+  ms.date: 03/01/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn to use dynamic rendering with Vue
+summary: Summary #TODO
+abstract: | 
+  In this module, you will:
+  - 
+prerequisites: HTML/CSS, Git, npm, and JavaScript
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.vue-dynamic-rendering.1-introduction
+- learn.language.vue-dynamic-rendering.2-render-lists
+- learn.language.vue-dynamic-rendering.3-render-lists-exercise
+- learn.language.vue-dynamic-rendering.4-render-with-conditions
+- learn.language.vue-dynamic-rendering.5-render-with-conditions-exercise
+- learn.language.vue-dynamic-rendering.6-knowledge-check
+- learn.language.vue-dynamic-rendering.7-summary
+badge:
+  uid: learn.language.vue-get-started.badge

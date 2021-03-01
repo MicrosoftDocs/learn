@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-dynamic-rendering.4-render-with-conditions
+metadata:
+  title: Use conditional rendering
+  description: Description #TODO
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Use conditional rendering
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-render-with-conditions.md)]
