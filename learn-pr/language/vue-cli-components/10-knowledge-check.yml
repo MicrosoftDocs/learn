@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.10-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+quiz:
+  questions:
+  - content: What property is used to register custom events for a component?
+    choices:
+    - content: "`events`"
+      isCorrect: false
+      explanation: "`events` is not a property for components."
+    - content: "`emits`"
+      isCorrect: true
+      explanation: "`emits` is used to register custom events for a component."
+    - content: "`props`"
+      isCorrect: false
+      explanation: "`props` is used to add property values you can pass into a component."
+    - content: "`methods`"
+      isCorrect: false
+      explanation: "`methods` is used to store functions available to the component."
+  - content: What command is used in Vue CLI to create a new web application?
+    choices:
+    - content: create
+      isCorrect: true
+      explanation: create is used to create new applications.
+    - content: help
+      isCorrect: false
+      explanation: help will display the help screen for Vue CLI.
+    - content: info
+      isCorrect: false
+      explanation: info will print debugging information for a Vue application
+  - content: What to steps are required to import a component?
+    choices:
+    - content: "`import ComponentName from 'ComponentName.vue'"
+      isCorrect: true
+      explanation: "You must import the component using `import`."
+    - content: "List the name of the component in `methods`."
+      isCorrect: false
+      explanation: "`methods` stores a list of methods not components."
+    - content: "List the name of the component in `props`."
+      isCorrect: false
+      explanation: "`props` stores a list of props for a component."
+    - content: "List the name of the component in `components`."
+      isCorrect: true
+      explanation: "You must list the component in `components`."

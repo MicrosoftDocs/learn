@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.5-create-vue-component
+metadata:
+  title: Create a component
+  description: Let's create our first component.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Create a component
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-create-vue-component.md)]

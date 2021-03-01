@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.3-vue-cli-exercise
+metadata:
+  title: Create an application with Vue CLI
+  description: Let's create an application with Vue CLI.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Create an application with Vue CLI
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-vue-cli-exercise.md)]

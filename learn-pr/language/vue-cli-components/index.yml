@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.language.vue-cli-components
+metadata:
+  title: Getting started with Vue CLI and single-file components in Vue.js.
+  description: Description #TODO
+  ms.date: 03/01/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Getting started with Vue CLI and single-file components in Vue.js.
+summary: While it is possible to create Vue.js applications using purely JavaScript, most developers need more power and flexibility. By using Vue CLI and single-file components you can use more robust tooling to enhance the development experience. We will see how to use Vue CLI to bootstrap an application, and how to create reusable components in Vue.
+abstract: | 
+  In this module, you will:
+  - Use Vue CLI
+  - Create components
+prerequisites: HTML/CSS, Git, npm, JavaScript, and some knowledge of Vue.js
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.vue-cli-components.1-summary
+- learn.language.vue-cli-components.2-vue-cli
+- learn.language.vue-cli-components.3-vue-cli-exercise
+- learn.language.vue-cli-components.4-vue-components
+- learn.language.vue-cli-components.5-create-vue-component
+- learn.language.vue-cli-components.6-props
+- learn.language.vue-cli-components.7-props-exercise
+- learn.language.vue-cli-components.8-events
+- learn.language.vue-cli-components.9-events-exercise
+- learn.language.vue-cli-components.10-knowledge-check
+- learn.language.vue-cli-components.11-summary
+badge:
+  uid: learn.language.vue-cli-components.badge
