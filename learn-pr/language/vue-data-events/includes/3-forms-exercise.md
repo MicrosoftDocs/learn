@@ -7,8 +7,8 @@ You've been provided a starter repository for this module. This will allow you t
 1. Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code
 
     ```bash
-    git clone [INSERT REPOSITORY LINK]
-    cd [INSERT FOLDER NAME]
+    git clone https://github.com/MicrosoftDocs/mslearn-vue/
+    cd mslearn-vue/code/3-forms-events
     code .
     ```
 
@@ -16,7 +16,7 @@ You've been provided a starter repository for this module. This will allow you t
 
 ## Create the form
 
-Let's create the form the user will use to setup their reservation.
+Let's create the form the user will use to set up their reservation.
 
 1. Inside Visual Studio Code, open *index.html*
 1. Below the comment which reads `TODO: Add booking form`, add the following HTML
@@ -49,7 +49,7 @@ Let's create the form the user will use to setup their reservation.
 
 Let's walk through HTML code you added to the page.
 
-### form element
+### The form element
 
 ```html
 <form v-show="!booking.completed">
@@ -57,7 +57,7 @@ Let's walk through HTML code you added to the page.
 
 The `form` element is a normal HTML form element. The key attribute you've added is `v-show`, which allows you to toggle the display of an item in Vue.js. If `booking.completed` is false we will display the form (making note of the `!` at the beginning of our string), otherwise we will hide it.
 
-### select element for cabin
+### The select element for cabin
 
 ```html
 <select id="product-cabin" v-model="booking.cabinIndex">
@@ -69,7 +69,7 @@ The `form` element is a normal HTML form element. The key attribute you've added
 
 You display the list of available cabins by using a `select` element. You want to bind the selected value, which will be the index, to `booking.cabinIndex`. The list of available cabins is in `product.cabins`, so you use `v-for` to create the list of options for the dropdown. You set the `value` of each one to the `index`, and create a display of the `name` of the cabin and its `price`.
 
-### textarea for notes
+### The textarea element for notes
 
 ```html
 <textarea v-model="booking.notes" rows="3"></textarea>
