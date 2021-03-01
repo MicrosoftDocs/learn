@@ -82,7 +82,7 @@ Extended events can be used for Azure SQL Database, just like SQL Server, by cre
 You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. 
 
 > [!NOTE]
-> Note that the ability with SSMS to view live data isn't available for Azure SQL Database.
+> It is not possible to use SSMS to view active data for Azure SQL Database.
 
 It's important to know that any extended events fired for your sessions are specific to your database, and don't apply across the logical server.
 
