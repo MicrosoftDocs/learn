@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-get-started.5-attribute-binding-exercise
+metadata:
+  title: Practice attribute binding
+  description: Description #TODO
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Practice attribute binding
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-attribute-binding-exercise.md)]

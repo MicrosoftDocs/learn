@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-get-started.7-summary
+metadata:
+  title: Summary
+  description: Description #TODO
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
