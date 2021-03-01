@@ -21,7 +21,7 @@ prerequisites: |
   - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3)
   - [Visual Studio Code with the Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script)
 
-iconUrl: /learn/achievements/python-partnership/personality-quiz.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
