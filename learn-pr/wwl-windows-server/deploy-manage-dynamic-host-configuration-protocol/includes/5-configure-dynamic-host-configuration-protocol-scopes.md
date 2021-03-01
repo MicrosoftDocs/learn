@@ -36,13 +36,13 @@ To create and configure a scope, you must define the following properties:
 
 You can use Windows PowerShell to configure DHCP scopes and retrieve information. This is useful when you want to create scripts that automate scope management tasks. The following table lists five common Windows PowerShell cmdlets that you can use for scope management.
 
-| Cmdlet name                     | Description                                                  |
-| - |  |
-| Add-DhcpServerv4Scope           | Adds an IPv4 scope on the DHCP server.                       |
-| Get-DhcpServerv4Scope           | Returns the IPv4 scope configuration of the specified scopes. |
-| Get-DhcpServerv4ScopeStatistics | Gets the IPv4 scope statistics corresponding to the IPv4 scope identifiers specified for a DHCP server service. |
-| Remove-DhcpServerv4Scope        | Deletes the specified IPv4 scopes from the DHCP server service. |
-| Set-DhcpServerv4Scope           | Sets the properties of an existing IPv4 scope on the DHCP server. |
+|Cmdlet name|Description|
+|--|--|
+|Add-DhcpServerv4Scope|Adds an IPv4 scope on the DHCP server.|
+|Get-DhcpServerv4Scope|Returns the IPv4 scope configuration of the specified scopes.|
+|Get-DhcpServerv4ScopeStatistics|Gets the IPv4 scope statistics corresponding to the IPv4 scope identifiers specified for a DHCP server service.|
+|Remove-DhcpServerv4Scope| Deletes the specified IPv4 scopes from the DHCP server service.|
+|Set-DhcpServerv4Scope|Sets the properties of an existing IPv4 scope on the DHCP server.|
 
 ## DHCP reservations
 

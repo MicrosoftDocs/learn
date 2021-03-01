@@ -7,7 +7,7 @@ Contoso IT staff can apply DHCP options at the server, scope, class, and reserva
 The following table lists common option codes that Windows DHCP clients use.
 
 |Option code|Name|
-|||
+|--|--|
 |001|Subnet mask|
 |003|Router|
 |006|DNS servers|
