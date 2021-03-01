@@ -2,7 +2,7 @@
 uid: learn.language.vue-get-started.4-attribute-binding
 metadata:
   title: Attribute binding
-  description: Description #TODO
+  description: Beyond displaying data on the page, you can also bind data to attributes. We will discuss the various options and syntax available to you.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar

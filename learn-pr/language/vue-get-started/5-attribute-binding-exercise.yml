@@ -2,7 +2,7 @@
 uid: learn.language.vue-get-started.5-attribute-binding-exercise
 metadata:
   title: Practice attribute binding
-  description: Description #TODO
+  description: Let's see how you can bind values to attributes.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
