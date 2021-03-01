@@ -19,29 +19,29 @@ quiz:
      explanation: 'Incorrect. This term is used to refer to the structure of a database.'
    - content: 'INSTALLED_APPS'
      isCorrect: false
-     explanation: 'This answer is not correct. This is a section within the settings.py file that includes all apps within the project.'
+     explanation: 'Incorrect. This is a section within the settings.py file that includes all apps within the project.'
    - content: 'ForeignKey'
      isCorrect: true
-     explanation: 'This answer is correct. This keyword lets Django know there is a relationship between two classes.'
+     explanation: 'Correct. This keyword lets Django know there is a relationship between two classes.'
  - content: 'What Django command is the same as the INSERT statement in SQL?'
    choices:
    - content: 'Question.objects.all()'
      isCorrect: false
-     explanation: 'This answer is not correct. This query returns all objects within the database.'
+     explanation: 'Incorrect. This query returns all objects within the database.'
    - content: 'save'
      isCorrect: true
-     explanation: 'This answer is correct. This is the Django command that is the same as the INSERT statement in SQL.'
+     explanation: 'Correct. This is the Django command that is the same as the INSERT statement in SQL.'
    - content: 'q.question_text'
      isCorrect: false
-     explanation: 'This answer is not correct. This statement is used to update objects within a database.'
+     explanation: 'Incorrect. This statement is used to update objects within a database.'
  - content: 'What command should you use to update the database schema?'
    choices:
-   - content: makemigrations
+   - content: "`makemigrations`"
      isCorrect: false
-     explanation: Incorrect. The makemigrations command creates new migrations, but it does not update the database.
-   - content: sqlmigrate
+     explanation: "Incorrect. The `makemigrations` command creates new migrations, but it doesn't update the database."
+   - content: "`sqlmigrate`"
      isCorrect: false
-     explanation: Incorrect. The sqlmigrate command generates the associated SQL files, but it does not update the database.
-   - content: migrate
+     explanation: "Incorrect. The `sqlmigrate` command generates the associated SQL files, but it doesn't update the database."
+   - content: "`migrate`"
      isCorrect: true
-     explanation: Correct. The migrate command updates the database.
+     explanation: "Correct. The `migrate` command updates the database."
