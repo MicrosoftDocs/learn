@@ -73,7 +73,7 @@ In order for Vue.js to use the created app object, it must be *mounted*. By moun
 </script>
 ```
 
-At runtime, the element with id `app` will now have its content replaced with that of the Vue.js application.
+At runtime, the element with `id= 'app'` will now have its content replaced with that of the Vue.js application.
 
 ## Display data
 
