@@ -40,7 +40,7 @@ Identify the subtasks of *module title*
 | ---- | ---- | ---- | ---- | ---- |
 | Add a GitHub account to VS | GitHub account is required to backup your code on GitHub | Knowledge Check | 1 | Yes |
 | Create a new local project | New projects are used to start coding in VS | Exercise | 2 | No, combine with 'Create a local Git repo' |
-| Create a local Git repo | Local Git repos store version history | Exercise | 2 | Yes |
+| Create a local Git repo | Local Git repositories store version history | Exercise | 2 | Yes |
 | Push the repo to GitHub | Once code is pushed, GitHub stores a copy | Exercise | 2 | No, combine with 'Create a local Git repo' |
 | Make a change to the code | Explore the Git Changes window | Exercise | 3 | No, combine with 'Commit the change' |
 | Commit the change | save the code you added | Exercise | 3 | Yes |
