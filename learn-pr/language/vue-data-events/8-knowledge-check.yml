@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-data-events.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+quiz:
+  questions:
+  - content: What is the shortcut to bind functions to events in Vue.js?
+    choices:
+    - content: "`:`"
+      isCorrect: false
+      explanation: "`:` is not the shortcut for binding functions to events."
+    - content: "`v-bind`"
+      isCorrect: false
+      explanation: "`v-bind` is not used for binding events."
+    - content: "`@`"
+      isCorrect: true
+      explanation: "`@` is the shortcut for binding functions to events."
+    - content: "`v-for`"
+      isCorrect: false
+      explanation: "`v-for` is used to iterate through arrays."
+  - content: What directive is used to create a two-way binding between data and a form control?
+    choices:
+    - content: "`v-for`"
+      isCorrect: false
+      explanation: "`v-for` is used to iterate through arrays."
+    - content: "`v-model`"
+      isCorrect: true
+      explanation: "`v-model` creates a two-way binding."
+    - content: "`v-bind`"
+      isCorrect: false
+      explanation: "`v-bind` creates a one-way binding."
+    - content: "`v-if`"
+      isCorrect: false
+      explanation: "`v-if` is used for Boolean logic."
+  - content: What HTML control is best suited for working with Boolean values?
+    choices:
+    - content: "`textarea`"
+      isCorrect: false
+      explanation: "`textarea` is designed for larger amounts of text."
+    - content: "`checkbox`"
+      isCorrect: true
+      explanation: "`checkbox` is designed for Boolean values."
+    - content: "`input type=''text''`"
+      isCorrect: false
+      explanation: "`input type=''text''` is designed for smaller amounts of text."
+    - content: "`input type=''email''`"
+      isCorrect: false
+      explanation: "`input type=''email''` is designed for email addresses."

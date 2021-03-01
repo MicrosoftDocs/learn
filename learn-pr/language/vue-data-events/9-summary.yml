@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-data-events.9-summary
+metadata:
+  title: Summary
+  description: We saw how to allow the user to interact with the page.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

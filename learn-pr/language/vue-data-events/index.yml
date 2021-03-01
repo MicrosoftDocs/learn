@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.language.vue-data-events
+metadata:
+  title: Work with data and events in Vue.js
+  description: Description #TODO
+  ms.date: 03/01/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Working with data and events in Vue.js
+summary: Creating dynamic web applications typically allows users to interact with the page and data. In this module we will see how to add forms to a Vue.js page, and respond to user events. We will also see how we can add computed values to calculate values based on updates to the data.
+abstract: | 
+  In this module, you will:
+  - Work with forms
+  - Add events
+  - Compute properties
+prerequisites: HTML/CSS, Git, npm, and JavaScript
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.vue-data-events.1-introduction
+- learn.language.vue-data-events.2-forms
+- learn.language.vue-data-events.3-forms-exercise
+- learn.language.vue-data-events.4-event-handlers
+- learn.language.vue-data-events.5-event-handlers-exercise
+- learn.language.vue-data-events.6-computed-properties
+- learn.language.vue-data-events.7-computed-properties-exercise
+- learn.language.vue-data-events.8-knowledge-check
+- learn.language.vue-data-events.9-summary
+badge:
+  uid: learn.language.vue-get-started.badge
