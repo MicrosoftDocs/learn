@@ -7,7 +7,7 @@ You will start by creating your component.
 1. Inside Visual Studio Code, create a new file inside *src/components* named *BookingList.vue*.
 1. Inside *BookingList.vue*, type `vue`, and select *\<vue\> with default.vue* from the snippets menu.
 
-    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](./images/vue-create.png)
+    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](./media/vue-create.png)
 
     The default structure will be created by the snippet.
 
@@ -107,6 +107,6 @@ With your component registered and configured, let's test the page!
 1. Return to your browser window with `http://localhost:8080` and hit refresh.
 1. The page will now display the sample booking.
 
-    ![Screenshot of updated page showing sample booking displayed on right side.](./images/booking-list.png)
+    ![Screenshot of updated page showing sample booking displayed on right side.](./media/booking-list.png)
 
 Congratulations! You have created a component with props.

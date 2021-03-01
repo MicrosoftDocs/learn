@@ -7,7 +7,7 @@ You will start by creating the component.
 1. Inside Visual Studio Code, create a new file in *src/components* named *BookingForm.vue*
 1. Inside *BookingForm.vue*, type `vue`, and select *\<vue\> with default.vue* from the snippets menu
 
-    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](./images/vue-create.png)
+    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](./media/vue-create.png)
 
     The default structure will be created by the snippet.
 
@@ -121,6 +121,6 @@ With all the code added, let's test the page!
 1. Select a cabin from the dropdown list and click the button.
 1. Your new booking will be displayed on the right.
 
-    ![Screenshot of the final application with the form shown on the left and list on the right.](./images/list-component.png)
+    ![Screenshot of the final application with the form shown on the left and list on the right.](./media/list-component.png)
 
 You have now created and called a component with a custom event!
