@@ -6,7 +6,7 @@ The phases of your migration journey at Tailwind Traders include:
 - Execution
 - Production
 
-![Phases of the Cloud Journey](../media/cloud-journey.png)
+![Graphic showing the Phases of the Cloud Journey](../media/cloud-journey.png)
 
 > [!IMPORTANT]
 > The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
@@ -34,7 +34,7 @@ Making the business case for migration is likely to be an iterative conversation
 
 At the highest level, the formula for business justification is simple. But the subtle data points required to populate the formula can be difficult to align. On a basic level, the business justification focuses on the return on investment (ROI) associated with the proposed technical change. The generic formula for ROI is:
 
-![Return on Investment](../media/formula-roi.png)
+![Graphic showing the Return on Investment calculation](../media/formula-roi.png)
 
 ### Discover and assess
 
@@ -84,7 +84,8 @@ The [Azure Migration Program](https://azure.microsoft.commigration/migration-pro
 
 The preceding steps create actionable approaches to deliver on the Cloud Adoption Framework's Manage methodology.
 
-![CAF Management](../media/caf-manage.png)
+![Graphic showing Business Alignment in the Cloud Adoption Framework](../media/caf-manage.png)
+
 ### Governance
 
 Governance is a key factor to the long-term success of any migration effort. Speed to migration and business impact is important. But speed without governance can be dangerous. Your organization needs to make decisions about governance that align to your adoption patterns and your governance and compliance needs.
@@ -95,4 +96,4 @@ Governance is a key factor to the long-term success of any migration effort. Spe
 
 [Azure policy](https://docs.microsoft.com/azure/governance/policy/overview?azure-portal=true) is a important tool when implementing the policies of your business at Tailwind Traders. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource, per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-![Azure Policy](../media/select-assignments.png)
+![Screen show of the Azure Portal showing the Policy dashboard](../media/select-assignments.png)

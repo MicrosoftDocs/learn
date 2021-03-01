@@ -9,7 +9,7 @@ Some of the common migration projects that Tailwind Traders will encounter inclu
 - SAP
 - Virtual Desktop Infrastructure (VDI)
   
-![Common migration & modernization scenarios](../media/migration-patterns.png)
+![Graphic showing the common migration & modernization scenarios](../media/migration-patterns.png)
 
 > [!NOTE]
 > Connect to the Cloud Adoption Framework for more information about all these migration [scenarios](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
@@ -24,7 +24,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 A typical application to be moved to Azure is a two-tier Windows .NET front-end application connected to SQL Server running on VMs. When migrating or **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Migrate Window & SQL Server](../media/migrate-win-sql.png)
+![Graphic showing how to migrate Window & SQL Server to Azure IaaS](../media/migrate-win-sql.png)
 
 **Deep dive on migration scenarios:**
 
@@ -40,7 +40,7 @@ When modernizing an application, you will be using additional cloud provider ser
 - **Rearchitect**
 - **Rebuild**
 
-![Migration R's](../media/the-rs.png)
+![Graphic showing the migration methods know as the R's](../media/the-rs.png)
 
 #### Refactor
 
@@ -54,7 +54,7 @@ The rearchitect strategy is also known as “redesigning” an application to mo
 
 The rebuild strategy revises the existing application by aggressively adopting PaaS or even SaaS architecture. The advantages of this strategy include: building new applications using cloud-native technologies, faster development if your existing application is slowing you down, innovation opportunities that take advantage of advancements in technology like AI, blockchain, and IoT.
 
-![Modernize .NET apps on Azure](../media/modernize-dotnet.png)
+![Graphic showing how to modernize .NET apps on Azure](../media/modernize-dotnet.png)
 
 **Deep dive on migration scenarios:**
 
@@ -71,7 +71,7 @@ Azure has broad support for Linux and open-source databases. Tailwind Traders ca
 
 When migrating Linux and open-source applications to Azure, the experience is much like Windows. When you **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Migrate Linux & OSS Databases](../media/migrate-linux-ossdb.png)
+![Gracphic showing how to migrate Linux & OSS Databases](../media/migrate-linux-ossdb.png)
 
 **Deep dive on migration scenarios:**
 
@@ -101,7 +101,7 @@ Azure is a great choice for running DevTest workloads in the cloud. Tailwind Tra
 
 When migrating or **Rehost** your DevTest environment to Azure, they will run on VMs in the cloud. The VMs can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Migrate DevTest to Azure](../media/migrate-devtest.png)
+![Gracphic showing how to migrate DevTest to Azure](../media/migrate-devtest.png)
 
 **Deep dive on migration scenarios:**
 
@@ -111,7 +111,7 @@ Rehost an [on-premises dev/test environment](https://docs.microsoft.com/azure/cl
 
 Tailwind Traders can empower your team to quickly provision dev/test and pre-production environments to deliver quality products, applications, and services. Use purpose-built managed developer services like [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/?azure-portal=true).
 
-![Modernize using DevTest Labs](../media/modernize-dtlabs.png)
+![Gracphic showing how to modernize using DevTest Labs](../media/modernize-dtlabs.png)
 
 - Migrate a dev/test environment to [Azure DevTest Labs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true)
 
@@ -130,7 +130,7 @@ Using [Azure VMWare Solution](https://azure.microsoft.com/services/azure-vmware/
 > [!IMPORTANT]
 > Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.
 
-![Migrate VMWare VMs to Azure](../media/migrate-vmware.png)
+![Graphic showing how to migrate VMWare VMs to Azure](../media/migrate-vmware.png)
 
 Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools that are supported by VMware for workload migration. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know: vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
 
@@ -138,7 +138,7 @@ Once deployed to Azure VMware Solution, you can create vSphere VMs in the Azure 
 
 VMWare VMs running on Azure VMWare Solution are made accessible using [ExpressRoute](https://azure.microsoft.com/services/expressroute/?azure-portal=true), so services or users on-premises can access the VMs which have been migrated to Azure. These VMs will also have connectivity to other Azure Services such as Azure Databases, Azure Key Vault, and Azure Storage.
 
-![Azure VMWare Solutions Connection](../media/vmware-azure.png)
+![Graphic showing how to migrate to Azure VMWare Solutions Connection](../media/vmware-azure.png)
 
 Learn more about [deploying Azure VMware Solutions](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true)
 
@@ -146,7 +146,7 @@ Learn more about [deploying Azure VMware Solutions](https://docs.microsoft.com/a
 
 Azure is SAP-certified to run your mission-critical SAP applications. Azure is the industry's most performant and scalable SAP cloud infrastructure, offering 192-gigabyte to 12-terabyte SAP HANA–certified virtual machines in more regions than any other public cloud provider.
 
-![Migrate SAP to Azure](../media/migrate-sap.png)
+![Graphic showing how to migrate to SAP to Azure](../media/migrate-sap.png)
 
 A commissioned [Forrester Consulting TEI study](https://azure.microsoft.com/resources/sap-on-azure-forrester-tei/?azure-portal=true) showed that organizations can experience a three-year ROI of more than 100 percent after moving their legacy SAP infrastructure to Azure, with investment payback in nine months.
 
@@ -162,7 +162,7 @@ Moving an organization's end-user desktops to the cloud is a common scenario in 
 
 There are two options for VDI in Azure: one option is to move your current Remove Desktop Services VMs to Azure running in IaaS. Most will choose to modernize their VDI implementation where existing Citrix, VMware, or Remote Desktop Services farms are replaced with a platform as a service (PaaS) solution called [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/?azure-portal=true).
 
-![Modernize VDI in Azure](../media/migrate-vdi.png)
+![Graphic showing how to modernize VDI in Azure](../media/migrate-vdi.png)
 
 Tailwind Traders can set up Windows Virtual Desktop in minutes to enable secure remote work. Provide the familiarity and compatibility of Windows 10 with the new scalable multi-session experience for your end-users and save costs using the same Windows licenses. Along with managing the end-to-end Windows Virtual Desktop deployment alongside other Azure services within the Azure portal.
 

@@ -7,7 +7,7 @@ As a part of the migration team at Tailwind Traders, it is essential to learn th
 - FastTrack for Azure
 - Azure Expert managed service providers (MSPs)
 
-![Path to the Cloud Programs](../media/path-to-cloud.png)
+![Graphic showing the path to the Cloud Programs](../media/path-to-cloud.png)
 
 ## Azure Migration Program (AMP)
 
@@ -20,7 +20,7 @@ Here are some of the benefits available from AMP:
 - Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Azure Cost Management to optimize costs.
 - Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
 
-![AMP Project Phases](../media/amp-phases.png)
+![Graphic showing the Azure Migration Program Project Phases](../media/amp-phases.png)
 
 ### Self-Guided Digital Support
 
@@ -47,7 +47,7 @@ Ask your Microsoft account team or Microsoft partner to nominate you. If your pr
 
 To qualify, customers must be working with a Microsoft partner and meet the criteria of the program:
 
-![AMP Project Phases](../media/fast-track.png)
+![Graphic showing the FastTrack program requirements](../media/fast-track.png)
 
 ### What qualifies as an Azure project?
 
