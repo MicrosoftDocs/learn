@@ -2,9 +2,10 @@ AI has the potential to disrupt every industry and business - and it will enable
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe the primary technological components of an AI strategy.
-* Describe the methods of Machine Learning.
-* Articulate how AI technology can solve business problems.
+* Understand why is AI making an impact in businesses now
+* Understand What AI is
+* Understand how to use Prebuilt AI with no machine learning expertise
+* Understand the basics of machine learn and how to apply it solve business problems.
 
 ## Use these resources to discover more
 
