@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.advocates.communication-services-sms
+metadata:
+  title: Use Azure Communication Services to send an SMS message with a C# console application
+  description: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  ms.date: 01/25/2021
+  author: mikben
+  ms.author: mikben
+  ms.topic: tutorial
+  ms.prod: learning-azure
+title: Use Azure Communication Services to send an SMS message with a C# console application
+summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+abstract: |
+  In this module you will:
+  - Create an Azure Communication Services resource.
+  - Provision a phone number using Azure Communication Services.
+  - Send an SMS message using this phone number from a C# console application.
+
+iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure-communication-services
+- azure
+prerequisites: | 
+  - Basic familiarity with C#.
+  - An active Azure Subscription.
+
+units:
+- learn.advocates.communication-services-sms.1-introduction
+- learn.advocates.communication-services-sms.2-create-communication-services-account
+- learn.advocates.communication-services-sms.3-send-sms
+- learn.advocates.communication-services-sms.4-summary
+
+badge:
+  uid: learn.advocates.communication-services.badge
