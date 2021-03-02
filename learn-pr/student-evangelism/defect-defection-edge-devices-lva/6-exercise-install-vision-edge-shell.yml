@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.defect-detection-edge-device-lva.design
-title: Introduction
+uid: learn.oxford.defect-detection-edge-devices-lva.exercise-install-vision-edge-shell
+title: Exercise - Install Vision Edge Shell
 metadata:
-  title: Introduction
-  description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
-  ms.date: 03/01/2021
+  title: Exercise - Install Vision Edge Shell
+  description: In this section, we help learner to install Vision Edge Shell.
+  ms.date: 03/01/21
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 1 # dummy number at present
 content: |
-  [!include[](includes/1-design.md)]
+  [!include[](includes/6-exercise-install-vision-edge-shell.md)]

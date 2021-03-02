@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.oxford.defect-detection-edge-devices-lva
+metadata:
+  title: "Defect detection on Edge devices with Live Video Analytics"
+  description: "University of Oxford"
+  ms.date: 03/01/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Defect detection on Edge devices with Live Video Analytics"
+summary: ""
+abstract: |
+    In this module, you will:
+    
+
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+prerequisites: |
+    - Familiarity with Azure
+    - Basic understanding of IoT Edge
+  
+    
+iconUrl: /learn/achievements/student-evangelism/defect-detection-edge-devices-lva.svg
+badge:
+  uid: learn.oxford.defect-detection-edge-devices-lva.badge
+levels:
+- intermediate
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-hub
+units:
+- learn.oxford.defect-detection-edge-devices-lva.exercise-deploy-edge-device
+- learn.oxford.defect-detection-edge-devices-lva.exercise-install-vision-edge-shell
+- learn.oxford.defect-detection-edge-devices-lva.exercise-run-defect-detection-scenario
