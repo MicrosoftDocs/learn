@@ -1,4 +1,4 @@
-As your company deals with highly-sensitive data, and has large amounts of information it will store in Azure, there are some concerns about the security and reliability of connections over the public internet. The company isn't willing to migrate wholesale to Azure unless it can demonstrate higher levels of connectivity, security, and reliability.
+As your company deals with highly sensitive data, and has large amounts of information it will store in Azure, there are some concerns about the security and reliability of connections over the public internet. The company isn't willing to migrate wholesale to Azure unless it can demonstrate higher levels of connectivity, security, and reliability.
 
 Here, we'll go beyond connections that run over the internet to dedicated lines direct into the Azure datacenters.
 
