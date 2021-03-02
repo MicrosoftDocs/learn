@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.defect-detection-edge-devices-lva.exercise-install-vision-edge-shell
+title: Exercise - Install Vision Edge Shell
+metadata:
+  title: Exercise - Install Vision Edge Shell
+  description: In this section, we help learner to install Vision Edge Shell.
+  ms.date: 03/01/21
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/6-exercise-install-vision-edge-shell.md)]

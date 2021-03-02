@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.defect-detection-edge-devices-lva.exercise-run-defect-detection-scenario
+title: Exercise - Run defect detection scenario
+metadata:
+  title: Exercise - Run defect detection scenario
+  description: In this section, we help learner to connect to web app and run the scenario that detects defect.
+  ms.date: 03/01/21
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/8.exercise-run-defect-detection-scenario.md)]
