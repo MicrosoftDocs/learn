@@ -5054,6 +5054,11 @@
       "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/05-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/05-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-windows-server/select-windows-server-editions-servicing-options-activation/4-license-and-activate-windows-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/select-windows-server-editions-servicing-options-activation/4-license-activate-windows-server",
+      "redirect_document_id": false
     }
   ]
 }
