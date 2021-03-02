@@ -2,7 +2,7 @@
 
 Perform the following steps in the Azure Cloud Shell environment.
 
-1. Run the following command to download installer (acs.zip) from github.
+1. Run the following command to download installer (acs.zip) from GitHub.
 
    ```
    wget -O acs.zip https://github.com/Azure-Samples/azure-intelligent-edge-patterns/raw/master/factory-ai-vision/Installer/acs.zip
