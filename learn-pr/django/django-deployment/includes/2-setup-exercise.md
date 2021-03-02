@@ -1,5 +1,5 @@
 [1]: https://git-scm.com/downloads "Git website downloads"
-[2]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Clone GutHub repository"
+[2]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Clone GitHub repository"
 [3]: https://www.python.org/  "Install Python"
 
 In this module we will work on a website for dog shelters. This project focuses on collecting information of all existing dog shelters and the dogs they are hoping to adopt across the United States. The fictional hope for this app is dogs would be able to find suitable homes faster because they would have individuals looking to adopt them from around the U.S. and not just their local area.
