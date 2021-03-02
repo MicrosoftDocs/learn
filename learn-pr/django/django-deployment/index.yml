@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.django.deployment
+metadata:
+  title: Deploy a Django application to Azure with PostgreSQL
+  description: Description #TODO
+  ms.date: 03/01/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a Django application to Azure with PostgreSQL
+summary: To make our application available to the world we need to host it somewhere. We are going to deploy our application to Azure, and create a database for our data.
+abstract: | 
+  In this module, you will:
+  - Configure a project for deployment
+  - Deploy the project
+prerequisites: H
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure-app-service-web
+- vs-code
+units:
+- learn.django.deployment.1-introduction
+- learn.django.deployment.2-setup-exercise
+- learn.django.deployment.3-deployment-considerations
+- learn.django.deployment.4-prepare-for-deployment
+- learn.django.deployment.5-cloud-resources
+- learn.django.deployment.6-deploy-azure
+- learn.django.deployment.7-knowledge-check
+- learn.django.deployment.8-summary
+badge:
+  uid: learn.django.deployment.badge

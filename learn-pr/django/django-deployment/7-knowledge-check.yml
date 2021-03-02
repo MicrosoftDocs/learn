@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then select **Check your answers.**
+quiz: 
+  questions: 
+    - content: 'What symbol was added to "ALLOWED_HOSTS = []" in order for Azure to host our Django project?'
+      choices:
+      - content: '-'
+        isCorrect: false
+        explanation: This answer is not correct.
+      - content: '*'
+        isCorrect: true
+        explanation: This answer is correct. By adding this symbol it allowed Azure access to host the Django project.
+      - content: '?'
+        isCorrect: false
+        explanation: This answer is not correct.
+    - content: What section in Azure services did you have search out in order to change the Python version for the Django project?
+      choices:
+      - content: 'Extensions'
+        isCorrect: true
+        explanation: 'This answer is correct. The Extensions section was used to change the Python version for the Django project.'
+      - content: 'Deployment Center'
+        isCorrect: false
+        explanation: 'This answer is not correct. The Deployment Center was used to set up and deploy the Django project.'
+      - content: 'Web App'
+        isCorrect: false
+        explanation: 'This answer is not correct. This selection was used in the beginning of the process to create the Django project in Azure services.'
+    - content: Question 3?
+      choices:
+      - content: Answer 1
+        isCorrect: false
+        explanation: explanation
+      - content: Answer 2
+        isCorrect: true
+        explanation: explanation

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.2-setup-exercise
+metadata:
+  title: Get the starter
+  description: To streamline this module, we provided a starter project you can use.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Get the starter
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-setup-exercise.md)]
