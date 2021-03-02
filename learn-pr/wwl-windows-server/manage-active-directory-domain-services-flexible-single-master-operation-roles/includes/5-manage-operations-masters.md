@@ -115,4 +115,4 @@ The main steps in the process are:
 1. Transfer operations master roles between domain controllers by using the GUI tools. Use the GUI tools to transfer the operations masters roles from the domain controller you identified in the previous step to the other one.
 1. Transfer operations master roles between domain controllers by using command-line tools. Use the command-line tools to transfer the operations masters roles back to the first domain controller.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McId]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McId]
