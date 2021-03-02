@@ -2,7 +2,7 @@
 uid: learn.django.deployment
 metadata:
   title: Deploy a Django application to Azure with PostgreSQL
-  description: Description #TODO
+  description: Learn how to deploy a Django application.
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chrhar
@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Configure a project for deployment
   - Deploy the project
-prerequisites: H
+prerequisites: HTML/CSS, Git, npm, and Python
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
