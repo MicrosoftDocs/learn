@@ -1,16 +1,16 @@
 You can use the Core Tools to publish your functions to Azure.
 
-Now that you've built and tested your simple interest function, you'd like to get it published to Azure. It would be great to see it up and running on the web and provide the URL to your colleagues so they can see how it can be called from anywhere.
+Now that you've built and tested your simple interest function, you'd like to get it published to Azure. It would be great to see it up and running on the web, and provide the URL to your colleagues so they can see how it can be called from anywhere.
 
 In this unit, you'll see how to create a function app in Azure and use the Core Tools to publish your functions project to it.
 
-## Creating a function app
+## Create a function app
 
 Before you can use the Core Tools to publish a project, you need to create a function app in Azure. This is not a capability of the Core Tools: creating function apps is one of the responsibilities of the Azure management tools, which include the Azure portal, Azure CLI and Azure PowerShell. In the next exercise, we'll use the Azure CLI's `az functionapp create` command to create a function app to which we can publish our code.
 
 Within the scope of this tutorial, the most important option to consider when creating a function app is the language runtime. A given function app only supports a single language runtime. If you already have a local functions project you want to publish, make sure to create the function app with the same language runtime. If you try to deploy a project to an app with a different runtime, publishing will halt with an error.
 
-## Publishing to Azure
+## Publish to Azure
 
 To publish a functions project to Azure, run `func azure functionapp publish <app_name>` from the functions project folder. `<app_name>` is the name of the target function app in Azure, not the name of your project folder, which can be different.
 
