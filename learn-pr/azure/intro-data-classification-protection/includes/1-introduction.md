@@ -1,4 +1,4 @@
-Learn and understand the concepts of sensitive data and data classification, the most common types and methods of data classification, and data loss prevention (DLP). At a high level, describe the key Microsoft technologies for data classification and DLP.
+Learn and understand the concepts of sensitive data and data classification, and the most common types and methods of data classification and data loss prevention (DLP). At a high level, describe the key Microsoft technologies for data classification and DLP. 
 
 Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its environment runs on-premises on Windows Server, while its cloud services are under evaluation.
 
