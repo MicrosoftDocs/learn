@@ -36,4 +36,4 @@ You should see this in your terminal:
          Running `target/debug/hello-cargo`
     Hello, world!
 
-Congratulations, you've just learned how to initialize your first Rust project with Cargo!
+Cargo has built and executed your executable. Congratulations, you've just learned how to initialize your first Rust project with Cargo!
