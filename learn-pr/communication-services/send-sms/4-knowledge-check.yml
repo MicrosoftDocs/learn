@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.communication-services-sms.4-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Knowledge check
+  description: Review concepts around using Azure Communication Services to send an SMS message
+  ms.date: 09/10/2020
+  author: mikben
+  ms.author: mikben
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'How can you send an SMS message using Microsoft Azure?'
+    choices:
+    - content: 'You can create a Communication Services resource using the Azure portal'
+      isCorrect: false
+      explanation: 'Azure Communication Services resources can be provisioned through the Azure portal and allow you to configure telephony solutions, including SMS.'
+    - content: 'You can provision a phone number using the Azure portal'
+      isCorrect: false
+      explanation: 'Phone numbers can be provisioned using the Azure portal by navigating to your Communication Services resource.'
+    - content: 'You can send an SMS using the Communication Services client library'
+      isCorrect: false
+      explanation: 'Phone numbers can be used to send SMS messages via the Communication Services client libraries.'
+    - content: 'All of the above'
+      isCorrect: true
+      explanation: 'Great job! You know how to use Azure Communication Services to send an SMS message.'
+  

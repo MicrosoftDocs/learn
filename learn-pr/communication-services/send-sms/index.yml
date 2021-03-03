@@ -33,7 +33,8 @@ units:
 - learn.advocates.communication-services-sms.1-introduction
 - learn.advocates.communication-services-sms.2-create-communication-services-account
 - learn.advocates.communication-services-sms.3-send-sms
-- learn.advocates.communication-services-sms.4-summary
+- learn.advocates.communication-services-sms.4-knowledge-check
+- learn.advocates.communication-services-sms.5-summary
 
 badge:
   uid: learn.advocates.communication-services.badge
