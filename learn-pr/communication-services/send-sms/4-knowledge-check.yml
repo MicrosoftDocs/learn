@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.communication-services-sms.4-knowledge-check
+uid: learn.azure.communication-service-send-sms-console-app.4-knowledge-check
 title: Check your knowledge
 metadata:
   title: Knowledge check
   description: Review concepts around using Azure Communication Services to send an SMS message
-  ms.date: 09/10/2020
+  ms.date: 03/03/2021
   author: mikben
   ms.author: mikben
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ durationInMinutes: 1
 quiz:
   title: 'Knowledge check'
   questions:
-  - content: 'How can you send an SMS message using Microsoft Azure?'
+  - content: 'What do you need to do to send an SMS message using Azure Communication Services?'
     choices:
     - content: 'You can create a Communication Services resource using the Azure portal'
       isCorrect: false

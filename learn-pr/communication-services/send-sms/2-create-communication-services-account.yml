@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.communication-services-sms.2-create-communication-services-account
+uid: learn.azure.communication-service-send-sms-console-app.2-create-communication-services-account
 title: Exercise - Create an Azure Communication Services account
 metadata:
   title: Exercise - Create an Azure Communication Services account
   description: Use the Azure Portal to create a Communication Services account
   author: mikben
   ms.author: mikben
-  ms.date: 01/25/2021
-  ms.topic: tutorial
+  ms.date: 03/03/2021
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
 durationInMinutes: 3
 content: |
   [!include[](includes/2-create-communication-services-account.md)]
