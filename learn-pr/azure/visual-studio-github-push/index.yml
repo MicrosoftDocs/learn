@@ -11,13 +11,12 @@ metadata:
 title: Push to GitHub with Visual Studio 2019 #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title?branch=master. Capture the *terminal learning objective* (the task the user will learn to complete) and the enabling technology.
 summary: Authenticate to GitHub and create a new repository on GitHub using the Git tooling experience in Visual Studio 2019. Add and modify files, stage and commit changes, and then finally push to your remote.  #See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master. 35 words or less in complete sentences about what the learner will do and how they will do it.
 abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. This section is used to declare learning objectives only, as shown in the example.
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
 
   - Add a GitHub account to sign into Visual Studio 2019
   - Initialize a Git repository and push it to GitHub with Visual Studio 2019
   - Make and push commits to your remote branch
 prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
-  TODO index.yaml:prerequisites
 
   - Basic understanding of Git concepts
   - Familiarity with beginner Git commands
