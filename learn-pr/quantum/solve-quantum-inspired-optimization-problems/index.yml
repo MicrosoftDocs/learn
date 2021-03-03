@@ -13,15 +13,15 @@ summary: Learn how quantum-inspired algorithms mimic quantum physics to solve di
 abstract: |
   In this module, you'll:
   - Learn about the origins of quantum-inspired algorithms.
-  - See which kinds of problems are best suited to these techniques.
+  - See which kinds of problems are best suited to this method.
   - Understand how algorithms inspired by physical processes are used to solve difficult problems.
-  - Solve a combinatorial optimization problem using the Azure Quantum optimization service.
+  - Solve a combinatorial optimization problem by using the Azure Quantum optimization service.
 prerequisites: |
   - The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
   - [Jupyter Notebook](https://jupyter.org/install.html?azure-portal=true)
   - An Azure Quantum workspace
 
-  If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
+  If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 iconUrl: /learn/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
 ratingEnabled: true
 levels:

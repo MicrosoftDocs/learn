@@ -1,14 +1,14 @@
-To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the Internet or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments.
+To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the internet, or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments.
 
 You have set up an Azure virtual network and need to ensure that any data transfers from Azure to your site and between Azure virtual networks are encrypted. You also need to know how to connect virtual networks between regions and subscriptions.
 
 ## What is a VPN gateway?
 
-An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet. A VPN gateway is a specific type of virtual network gateway that can be an endpoint for encrypted connections. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration allows you to link virtual machines and services in different regions securely.
+An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet. A VPN gateway is a specific type of virtual network gateway that can be an endpoint for encrypted connections. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration enables you to link virtual machines and services in different regions securely.
 
 Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth.
 
-Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly and should not deploy any additional resources into the gateway subnet.
+Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the _gateway subnet_. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly, and should not deploy any additional resources into the gateway subnet.
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
@@ -26,8 +26,8 @@ Now, let's look at the factors you need to consider for planning your VPN gatewa
 
 When you're planning a VPN gateway, there are three architectures to consider:
 
-- Point to site over the Internet
-- Site to site over the Internet
+- Point to site over the internet
+- Site to site over the internet
 - Site to site over a dedicated network, such as Azure ExpressRoute
 
 ### Planning factors
@@ -42,7 +42,7 @@ Factors that you need to cover during your planning process include:
 - VPN gateway type
 - Azure VPN Gateway SKU
 
-The following table summarizes some of these planning issues. The remainder are discussed later.
+The following table summarizes some of these planning issues. The remainder are described later.
 
 |                           |  Point to site            | Site to site                          |  ExpressRoute                 |
 | -------------             | -------------             | -------------                         | ---------                     |
@@ -55,7 +55,7 @@ The following table summarizes some of these planning issues. The remainder are 
 
 ### Gateway SKUs
 
-It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
+It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down, and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
 
 ## Workflow
 
@@ -97,7 +97,7 @@ The type of VPN gateway you create will depend on your architecture. Options are
 
 - RouteBased
 
-    Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or VTI (virtual tunnel interface).
+    Route-based VPN devices use any-to-any (wildcard) traffic selectors, and let routing/forwarding tables direct traffic to different IPsec tunnels. Route-based connections are typically built on router platforms where each IPsec tunnel is modeled as a network interface or virtual tunnel interface (VTI).
 
 - PolicyBased
 
@@ -105,36 +105,36 @@ The type of VPN gateway you create will depend on your architecture. Options are
 
 ## Set up a VPN gateway
 
-The steps you need to take will depend on the type of VPN gateway that you are installing. For example, to create a point-to-site VPN gateway by using the Azure portal, you would carry out the following steps:
+The steps you need to take will depend on the type of VPN gateway that you are installing. For example, to create a point-to-site VPN gateway by using the Azure portal, you would perform the following steps:
 
-1. Create a virtual network
+1. Create a virtual network.
 
-2. Add a gateway subnet
+2. Add a gateway subnet.
 
-3. Specify a DNS server (optional)
+3. Specify a DNS server (optional).
 
-4. Create a virtual network gateway
+4. Create a virtual network gateway.
 
-5. Generate certificates
+5. Generate certificates.
 
-6. Add the client address pool
+6. Add the client address pool.
 
-7. Configure the tunnel type
+7. Configure the tunnel type.
 
-8. Configure the authentication type
+8. Configure the authentication type.
 
-9. Upload the root certificate public certificate data
+9. Upload the root certificate public certificate data.
 
-10. Install an exported client certificate
+10. Install an exported client certificate.
 
-11. Generate and install the VPN client configuration package
+11. Generate and install the VPN client configuration package.
 
-12. Connect to Azure
+12. Connect to Azure.
 
 As there are several configuration paths with Azure VPN gateways, each with multiple options, it is not possible to cover every setup in this course. For more information, see the Additional Resources section.
 
 ## Configure the gateway
 
-Once your gateway is created, you'll need to configure it.  There are several configuration settings you will need to provide, such as the name, location, DNS server, etc. We will go into these in more detail in the exercise.
+After your gateway is created, you'll need to configure it. There are several configuration settings you'll need to provide, such as the name, location, DNS server, and so on. We'll explore these in more detail in the exercise.
 
 Azure VPN gateways are a component in Azure virtual networks that enable point-to-site, site-to-site, or network-to-network connections. Azure VPN gateways enable individual client computers to connect to resources in Azure, extend on-premises networks into Azure, or facilitate connections between virtual networks in different regions and subscriptions.

@@ -1,6 +1,6 @@
-In this unit, you'll use the .NET CLI to compile and run a web app within the Cloud Shell's command shell. The app will be deployed to a public endpoint on Azure. Finally, you'll tour the running app to understand the UI experience it provides.
+In this unit, you'll use the .NET Core CLI to compile and run a web app within the Cloud Shell's command shell. The app will be deployed to a public endpoint on Azure. Finally, you'll tour the running app to understand the UI experience it provides.
 
-The .NET CLI:
+The .NET Core CLI:
 
 * Offers the simplest way to create, compile, and run an ASP.NET Core web app.
 * Is already installed in the Cloud Shell environment.
@@ -10,7 +10,7 @@ The .NET CLI:
 
 ### Compile and run the project
 
-1. Run the following .NET CLI command in the command shell:
+1. Run the following .NET Core CLI command in the command shell:
 
     ```dotnetcli
     dotnet run

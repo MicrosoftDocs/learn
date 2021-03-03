@@ -34,7 +34,7 @@ First, let's store some resource names so we can use them later.
     
     ```powershell
     $myRgName = "<rgn>[sandbox resource group name]</rgn>"
-    $myVMName = "fotoshareVM"
+    $myVMName = "fotoshare-rg"
     ```
     
     > [!TIP]

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-dhcp.install-configure-dhcp-role
+title: Install and configure the DHCP role
+metadata:
+  title: Install and configure the DHCP role
+  description: "Install and configure the DHCP role"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-install-configure-dynamic-host-configuration-protocol.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What are the minimum permissions required to authorize a DHCP server in a multiple domain AD DS forest?"
+    choices:
+    - content: "Member of Enterprise Admins group"
+      isCorrect: true
+      explanation: "That's correct. In an AD DS forest with multiple domains, you need permissions in all domains to authorize DHCP servers in all the domains."
+    - content: "Member of Domain Admins group"
+      isCorrect: false
+      explanation: "That's incorrect. In an AD DS forest with multiple domains, you need permissions in all domains to authorize DHCP servers in all the domains."
+    - content: "Member of local Administrators group on the DHCP server"
+      isCorrect: false
+      explanation: "That's incorrect. In an AD DS forest with multiple domains, you need permissions in all domains to authorize DHCP servers in all the domains."
