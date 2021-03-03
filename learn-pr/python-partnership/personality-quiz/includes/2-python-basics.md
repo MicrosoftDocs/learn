@@ -25,7 +25,7 @@ The following command tells Python to remember the value `1990` by using a varia
 year = 1990
 ```
 
-Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print out the value of the variable.
+Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print the value of the variable.
 
 ```python
 # use a variable named year to "remember" the value 1990
@@ -35,7 +35,7 @@ year = 1990
 print( f"The year is {year}..." )
 ```
 
-Press the **Run** button, and you should see the year print out.
+Press the **Run** button, and you should see the year in the output.
 
 :::image type="content" source="../media/print-year.png" alt-text="Screenshot that shows the output to printing the value of a variable.":::
 
@@ -54,7 +54,7 @@ year = year + 36
 print( f"The year is now {year}..." )
 ```
 
-Press the **Run** button, and you should see the years print out.
+Press the **Run** button, and you should see the years in the output.
 
 :::image type="content" source="../media/print-year-change.png" alt-text="Screenshot that shows updating a variable in Python.":::
 
@@ -62,7 +62,7 @@ Press the **Run** button, and you should see the years print out.
 
 Python can perform commands depending on some condition. We're used to conditionals in the real world: "If you've been lassoed, then you're compelled to tell the truth." The keyword here is `if`, which is followed by a condition where we check whether or not the lasso of truth is around you. When the condition is met, the subsequent command must be followed. Python code expects a condition to either be met or not—it's either true or false.
 
-To get a little more comfortable, consider the following strategy for how to spend a day. (The following is not code. It's just plain text to explain a scenario.)
+To get a little more comfortable, consider the following strategy for how to spend a day. (The following text isn't code. It's only plain text to explain a scenario.)
 
 ```txt
 if it's raining cats and dogs
@@ -77,7 +77,7 @@ else
     frolic outside
 ```
 
-How might this play out? It might be the case that:
+How might this conditional play out? It might be the case that:
 
 - It's raining cats and dogs.
 - The cat that you find is hungry.
@@ -126,6 +126,6 @@ You might be comfortable with arithmetic, where numbers are operated on to produ
 
 In Boolean logic, Boolean values (true or false) are operated on to produce other Boolean values. We might say, "If it's cold outside AND it's raining, then grab a parka." Then both conditions must be met (must be true) for us to grab a parka. Here the operands are whether or not it's cold outside and whether or not it's raining; the AND operator indicates that BOTH must be true to execute the next part. 
 
-Similarly, we could use the OR operator to indicate that if either operand is true, the next part should execute. For example we might say, "If it's cold outside OR its raining, then grab a parka. " In this case, if it's cold outside but not raining, it's hot outside and raining, or it's cold outside and raining then you should grab a parka. 
+Similarly, we could use the OR operator to indicate that if either operand is true, the next part should execute. For example we might say, "If it's cold outside OR it's raining, then grab a parka. " In this case, if it's cold outside but not raining, it's hot outside and raining, or it's cold outside and raining then you should grab a parka. 
 
 Now that we have a handle on some of the basics, let's move on to making the quiz.

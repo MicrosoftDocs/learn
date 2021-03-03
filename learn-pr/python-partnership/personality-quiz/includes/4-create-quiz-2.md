@@ -1,4 +1,4 @@
-So far, your code asks one question to the user and stores their response. If the response was **A**, the code prints out a message. In this unit, you'll explore how to handle the user choosing **B** and create the rest of the questions for your quiz.
+So far, your code asks one question to the user and stores their response. If the response was **A**, the code prints a message. In this unit, you'll explore how to handle the user choosing **B** and create the rest of the questions for your quiz.
 
 To account for the user choosing **B** instead of **A**, you can use multiple `if` statements, an `else` statement, or an `elif` statement.
 

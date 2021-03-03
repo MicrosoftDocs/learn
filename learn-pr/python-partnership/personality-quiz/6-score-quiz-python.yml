@@ -3,7 +3,7 @@ uid: learn.python-partnership.personality-quiz.score-quiz
 metadata:
   title: Choose a super sleuth character based on personality quiz score
   description: This unit walks you through scoring a quiz and assigning characters based on personality questions in Python.
-  ms.date: 02/23/2021
+  ms.date: 03/03/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

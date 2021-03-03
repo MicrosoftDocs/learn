@@ -2,7 +2,7 @@ With your <b>quiz.py</b> file, you can now truly know who your friends and famil
 
 Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/people/audrey-stjohn?azure-portal=true), which inspired this lesson from the "active learning module" developed by Emily Craig and Sarah Robinson for the [MaGE](https://sites.google.com/a/mtholyoke.edu/mage/?azure-portal=true) inclusive peer mentoring program at Mount Holyoke College.
 
-## Additional challenges for your quiz code
+## More challenges for your quiz code
 
 As an added challenge, you can start exploring how you might:
 

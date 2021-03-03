@@ -2,7 +2,7 @@ It's finally time to ask the user all of your questions.
 
 For now, you'll just confirm what the user chose with print statements. In the next unit, you'll assign values to each choice and present the user with their character!
 
-One additional piece included in this code is that when the user chose something other than **A** or **B**, you'll also assign that value so that they can still get their character.
+One more piece included in this code is that when the user chose something other than **A** or **B**, you'll also assign that value so that they can still get their character.
 
 Make sure your code matches this code:
 

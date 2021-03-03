@@ -15,7 +15,7 @@ Feel free to close the Visual Studio Code **Welcome** tab now.
 > [!Note]
 > As you write Python code, Visual Studio Code suggests other capabilities to add to the development environment, such as "Linters." You don't need these extras for this project. Feel free to ignore them.
 
-The first thing we'll do is make sure our command center (also called a _code editor_) works. We'll give a simple command to Python and tell it to print a message. This is also a clue to revealing the meaning of the secret message . . .
+The first thing we'll do is make sure our command center (also called a _code editor_) works. We'll give a simple command to Python and tell it to print a message. This code is also a clue to revealing the meaning of the secret message . . .
 
 Copy the following command into your <b>decrypt.py</b> file to say hello to the fictional town Contosoville.
 

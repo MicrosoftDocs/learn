@@ -3,7 +3,7 @@ uid: learn.python-partnership.personality-quiz.introduction
 metadata:
   title: Use Python to create your own personality quiz
   description: Which super sleuth character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
-  ms.date: 02/24/2021
+  ms.date: 03/03/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
