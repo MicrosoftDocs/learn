@@ -28,5 +28,3 @@ You can use Azure Communication Services to send and receive text messages progr
 
    - Your Communication Services phone number
    - Your Communication Services resource connection string and endpoint (available via the **Keys** blade of your Communication Services resource)
-
-In this unit, you created a Communication Services resource that you'll use to send and receive text messages. Next, you'll learn how to create and deploy a function app in Azure.
