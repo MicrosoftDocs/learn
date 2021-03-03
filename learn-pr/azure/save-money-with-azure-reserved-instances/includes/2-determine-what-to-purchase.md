@@ -18,9 +18,13 @@ When you select **See details** for a recommendation, you'’ll see the past usa
 
 The following chart shows a sample usage pattern in yellow over last 29 days. The recommended quantity based on the usage pattern is shown in green.
 
+The mentioned prices are for example purposes only. They are not intended to imply actual costs.
+
 :::image type="content" source="../media/2-usage-over-time-chart.png" alt-text="Screenshot showing usage over time and recommended quantity." lightbox="../media/2-usage-over-time-chart.png" :::
 
 You can also see how your savings would change, if you purchase a different quantity on the **Savings by quantity** tab.
+
+The mentioned prices are for example purposes only. They are not intended to imply actual costs.
 
 :::image type="content" source="../media/2-savings-by-quantity.png" alt-text="Screenshot showing the savings by quantity tab." lightbox="../media/2-savings-by-quantity.png" :::
 

@@ -29,7 +29,7 @@ If your reservation is consistently underutilized, consider exchanging the unuse
 
 :::image type="content" source="../media/6-exchange-reservation.png" alt-text="Screenshot showing the Exchange option." lightbox="../media/6-exchange-reservation.png" :::
 
-- VM reservations exchanges are interchangeable. So, you can exchange Azure virtual machines, Azure Dedicated Hosts, or Azure VM Ware Solution reservations interchangeably.
+- VM reservations exchanges are interchangeable. So, you can exchange Azure virtual machines, Azure Dedicated Hosts, or Azure VMware Solution reservations interchangeably.
 - You can also exchange other reservations within the same product type. For example, a SQL reservation can be exchanged for another SQL product.
 - You can change the product, region, term, and payment option when you make an exchange. For example, you can return a quantity for 30 for a Ds1_v3 – West US with a 1-year term that was originally purchased for a quantity of 100. Then purchase a quantity of 20 Es4_v3 – East US with a 3 year term, as part of the exchange.
 - When exchanging, the prorated reservation amount is refunded and you're charged fully for the new purchase. The prorated reservation amount is the daily prorated residual value of the reservation being returned.

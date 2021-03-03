@@ -2,8 +2,8 @@ This unit covers some of the key reports that you might want to create or use af
 
 It's important to understand two concepts: actual cost data and amortized cost data.
 
-- Actual cost data shows the resource usage costs as 0$ when reservation is applied to the usage. This data also has reservation transactions in it. For example, if a resource’s on-demand cost is 1$ per hour and a reservation applies to it, the cost will show as 0$ in the actual cost data.
-- Amortized data provides the effective cost of a resource when a reservation applies to it. For example, if resource’s on-demand cost is 1$ per hour and a reservation provides 50% discount to the resource, then the effective cost will show as .5$ per hour in the amortized data.
+- Actual cost data shows the resource usage costs as zero when reservation is applied to the usage. This data also has reservation transactions in it. For example, if a resource’s on-demand cost is 1 USD per hour and a reservation applies to it, the cost will show as zero in the actual cost data.
+- Amortized data provides the effective cost of a resource when a reservation applies to it. For example, if resource’s on-demand cost is 1 USD per hour and a reservation provides 50% discount to the resource, then the effective cost will show as .5 USD per hour in the amortized data.
 
 You can review reservation savings in Power BI. Amortized cost data is only available to Enterprise Agreement and Microsoft Customer Agreement customers.
 
