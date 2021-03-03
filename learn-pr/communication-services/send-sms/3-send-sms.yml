@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.communication-services-sms.3-send-sms
+uid: learn.azure.communication-service-send-sms-console-app.3-send-sms
 title: Exercise - Send an SMS using Azure Communication Services
 metadata:
   title: Exercise - Send an SMS using Azure Communication Services
   description: Send an SMS with an SMS-enabled telephone number provisioned via Azure Communication Services.
   author: mikben
   ms.author: mikben
-  ms.date: 01/25/2021
-  ms.topic: tutorial
+  ms.date: 03/03/2021
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
