@@ -11,5 +11,6 @@ In this module, you'll:
 ## Prerequisites
 
 - Basic familiarity with C#
+- The latest version of the [.NET Core client library](https://dotnet.microsoft.com/download/dotnet-core)
 - An Azure account with an active subscription and a billing address in the United States
 . [Create an account for free](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F)
