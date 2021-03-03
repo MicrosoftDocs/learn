@@ -29,7 +29,7 @@ prerequisites: |
       - Virtual environments
       - Inheritance
 iconUrl: /learn/achievements/generic-badge.svg
-
+levels:
   - intermediate
 roles:
   - student
@@ -48,4 +48,4 @@ units:
 - learn.django.admin-site.knowledge-check
 - learn.django.admin-site.summary
 badge:
-  uid: learn.django.admin-site
+  uid: learn.django.admin-site.badge
