@@ -18,18 +18,18 @@ Press the **Run** button, and you should see the same behavior as before.
 
 If you want Python to remember something, you can command it to "write it down" by using a variable.
 
-The following command tells Python to remember the value `2050` by using a variable named `year` with the special assignment (`=`) operator. Anytime after this command, when Python sees `year`, it will substitute the current value.
+The following command tells Python to remember the value `1990` by using a variable named `year` with the special assignment (`=`) operator. Anytime after this command, when Python sees `year`, it will substitute the current value.
 
 ```python
-# use a variable named year to "remember" the value 2050
-year = 2050
+# use a variable named year to "remember" the value 1990
+year = 1990
 ```
 
 Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print out the value of the variable.
 
 ```python
-# use a variable named year to "remember" the value 2050
-year = 2050
+# use a variable named year to "remember" the value 1990
+year = 1990
 
 # print a message to see what year it is
 print( f"The year is {year}..." )
@@ -37,14 +37,13 @@ print( f"The year is {year}..." )
 
 Press the **Run** button, and you should see the year print out.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows the output to printing the value of a variable.](../media/quiz-print-variable.png)
+:::image type="content" source="../media/print-year.png" alt-text="Screenshot that shows the output to printing the value of a variable.":::
 
-We can update the value of a variable by using the same assignment (`=`) operator. Python will figure out the right side before storing it in the variable. Because `year` already has a value, this command will ask Python to first substitute the current value of `year` (which is `2050`), add 36 to it, and then store that value in the variable `year`. This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
+We can update the value of a variable by using the same assignment (`=`) operator. Python will figure out the right side before storing it in the variable. Because `year` already has a value, this command will ask Python to first substitute the current value of `year` (which is `1990`), add 36 to it, and then store that value in the variable `year`. This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
 
 ```python
-# use a variable named year to "remember" the value 2050
-year = 2050
+# use a variable named year to "remember" the value 1990
+year = 1990
         
 # print a message to see what year it is
 print( f"The year is {year}..." )
@@ -57,8 +56,7 @@ print( f"The year is now {year}..." )
 
 Press the **Run** button, and you should see the years print out.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows updating a variable in Python.](../media/updating-variable.png)
+:::image type="content" source="../media/print-year-change.png" alt-text="Screenshot that shows updating a variable in Python.":::
 
 ## Conditionals
 
@@ -106,18 +104,17 @@ There are a few more possible scenarios, but let's move on to how we can use con
 Python expects a particular *syntax* (formulation of the commands). We won't go in depth here. Instead, just try out this example by adding the following to your file. (If you're wondering what the `==` is doing, that is how we quiz if two numbers are equal. Remember that a single `=` means assignment of a variable, so the computer would be confused.)
 
 ```python
-# if we're in 1980
-if year == 1980:
+# if we're in 1990
+if year == 1990:
     print( "I left you a message on your answering machine!" )
-# if we're in 2021
-if year == 2021:
-    print( "I left you a voicemail!" )
+# if we're in 2026
+if year == 2026:
+    print( "I sent you a text!" )
 ```
 
 Press the **Run** button, and you should see state-of-the-art messaging.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot that shows output from the conditional statement.](../media/quiz-output-conditionals.png)
+:::image type="content" source="../media/conditionals-output.png" alt-text="Screenshot that shows output from the conditional statement.":::
 
 How would you change the year so that you get a message on your answering machine instead?
 
