@@ -32,7 +32,7 @@ In this unit, you'll use your Communication Services phone number to send an SMS
 
 # Send an SMS
 
-1. Replace the body of the `Main` method with code to initialize an `SmsClient` with your connection string. The code below retrieves the connection string for the resource from an environment variable named COMMUNICATION_SERVICES_CONNECTION_STRING. Learn how to [manage you resource's connection string](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource?tabs=windows&pivots=platform-azp#store-your-connection-string).
+1. Replace the body of the `Main` method with code to initialize an `SmsClient` with your connection string.
 
 1. Send an SMS message by calling the `Send` method. Add this code to the end of `Main` method in `Program.cs`:
 
