@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-configure-your-azure-sentinel-environment
 metadata:
   title: 'SC-200 part 5: Configure your Azure Sentinel environment'
   description: 'SC-200 part 5: Configure your Azure Sentinel environment'
-  ms.date: 01/27/2021
+  ms.date: 03/02/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   - Ability to use KQL in Azure Sentinel like you could learn from SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)
 summary: |
   Get started with Azure Sentinel by properly configuring the Azure Sentinel workspace. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/configure-your-azure-sentinel-environment.svg
 levels:
 - intermediate
 roles:

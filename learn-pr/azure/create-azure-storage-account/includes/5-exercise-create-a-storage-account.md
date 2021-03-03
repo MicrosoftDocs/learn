@@ -14,15 +14,13 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. In the left-hand **Azure Marketplace** nav bar, select **Storage**.
+1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** panel appears.
 
-1. In the search box, select **Storage account**.
+1. Select **Create**. The **Create storage account** panel appears.
 
-    :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. For **Storage account**, select **Create**. The **Create a storage account** window appears. In the **Basics** tab, enter the following information.
-
-    | Property | Value |
+    | Setting | Value |
     | ---- | ---- |
     | **Project details**| |
     | Subscription | Concierge Subscription |
@@ -36,7 +34,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
     [!INCLUDE [Sandbox Regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next : Networking**. Enter the following information.
+1. Select **Next : Networking**. Enter the following values for each setting.
 
     | Property | Value |
     |---|---|
@@ -45,7 +43,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | **Network routing**| |
     | Routing preference | *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
-1. Select **Next : Data protection**. Enter the following information.
+1. Select **Next : Data protection**. Enter the following values for each setting.
 
     | Property | Value |
     |---|---|
@@ -53,7 +51,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
     | Turn on soft delete for file shares | *Disabled*. File share soft delete lets you recover your blob data more easily at the folder level. |
 
-1. Select **Next : Advanced**. Enter the following information.
+1. Select **Next : Advanced**. Enter the following values for each setting.
 
     | Property | Value |
     |---|---|
@@ -75,7 +73,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
 
-1. After you've reviewed the settings, select **Create** to provision the storage account.
+1. After validation successfully passes, and you've reviewed the settings, select **Create** to provision the storage account.
 
    It may take two minutes to deploy the account.
 

@@ -9,40 +9,42 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
 
 1. In the upper-left corner, select **+ Create a resource**.
 
-1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
-   
-   ![Screenshots of creating an Azure data warehouse](../media/6-create-azure-data-warehouse.png)
-   
-1. From the **Azure Synapse Analytics** blade, create an Azure Synapse Analytics  with the following settings:
+1. Select **Databases**, search for and select **Dedicated SQL pool (formerly SQL DW)** to start the creation process. The **Dedicated SQL pool (formerly SQL DW)** panel appears.
 
-    - Subscription: the name of the subscription you are using in this lab
+1. Select **Create**. The **Create dedicated SQL pool (formerly SQL DW)** panel appears.
 
-    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab
+1. On the **Basics** tab, entering the following values for each setting.
 
-    - Resource group name: **mslearn-demodw**.
+    | Setting  | Value |
+    |---|---|
+    | **Project details** |
+    | Subscription | Name of the subscription you are using in this lab |
+    | Resource group | Select **Create new**, and in the **Name** field, enter **mslearn-demodw**, and then select **OK**. |
+    | **SQL pool details** |
+    | SQL pool name | **sampleDataWH** |
+    | Server | Select **Create new**. The **New server** panel appears. Enter the following values for each setting. |
 
-    - SQL pool name: **sampleDataWH**.
+    | Setting  | Value |
+    |---|---|
+    | Server name | **SQLServicexx**, where *xx* are your initials |
+    | Server admin login | **dwdbadmin** |
+    | Password | **Pa55w.rd** |
+    | Location | Select a location near to you |
+    | Allow Azure services to access server | *check* |
 
-    - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-        - Server name: **sampledatawhxx**, where **xx** are your initials
-        - Server admin login: **dwdbadmin**.
-        - Password: **Pa55w.rd**
-        - Confirm Password: **Pa55w.rd**
-        - Location: choose a **location** near to you.
-        - Select the checkbox to Allow Azure services to access server
-        - click on **OK**
+1. Select **OK**. The **Create dedicated SQL pool (formerly SQL DW)** panel reappears. Continue entering the following value.
 
-    - Server: **SQLServicexx**
+    | Setting  | Value |
+    |---|---|
+    | Performance level | **Gen2** |
 
-    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
+1. Select the **Additional settings** tab. Enter the following values for each setting.
 
-1. In the **Azure Synapse Analytics** blade, click **Review + create**.
+    | Setting  | Value |
+    |---|---|
+    | **Data source** |
+    | Use existing data | **Sample** |
 
-    ![Screenshot of the new database server pane](../media/6-create-sql-db.png)
-
-1. In the **Azure Synapse Analytics** blade, click **Create**.
-
-
-1. Select **Create** to provision the database. Provisioning takes a few minutes.
+1. Select **Review + create**, and then select **Create**. Deployment takes a few minutes.
 
 You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occurring. When the data warehouse is deployed, you have successfully created a SQL pool in Azure Synapse Analytics.
