@@ -1,6 +1,9 @@
 
 # Create a resource
 
+> [!IMPORTANT]
+> Activities in this module will result in a billed charge. Be sure to perform the cleanup steps in the final module to avoid recurring charges, even if you don't finish the whole module.
+
 You can use Azure Communication Services to send and receive text messages programmatically. In this unit, you'll create a Communication Services resource and provision the phone number that you'll later use to send an SMS message.
 
 1. Go to [the Azure Portal](https://portal.azure.com/).
