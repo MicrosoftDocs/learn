@@ -1,0 +1,36 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "30 1 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        days-before-pr-stale: 90
+        days-before-pr-close: 30
+        stale-pr-label: stale
+        close-pr-label: auto-close
+        exempt-pr-labels: keep-open
+        stale-pr-message: >
+          This pull request has been inactive for 90 days. 
+          If you are finished with your changes don’t forget to add `#sign-off` to a comment in your PR to publish your changes.
+          If this PR is inactive/stale for 30 more days, it will be closed automatically. Thank you! 
+          
+          Learn Team
+          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=master)
+          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=master)
+        close-pr-message: >
+          This pull request has been inactive for 120 days. 
+          At this time, we are closing the PR.
+          If you decide to continue working on your change, you can reopen the PR and continue working. Thank you! 
+          
+          Learn Team
+          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=master)
+          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=master)
