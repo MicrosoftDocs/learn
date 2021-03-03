@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.access-data-with-cosmos-db-and-sql-api.2-setup-cosmosdb
 metadata:
-  title: Exercise - set up your Azure Cosmos DB database and container
+  title: Exercise - Set up your Azure Cosmos DB database and container
   description: Set up your Azure Cosmos DB database and container
   ms.date: 5/15/2019
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - set up your Azure Cosmos DB database and container
+title: Exercise - Set up your Azure Cosmos DB database and container
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

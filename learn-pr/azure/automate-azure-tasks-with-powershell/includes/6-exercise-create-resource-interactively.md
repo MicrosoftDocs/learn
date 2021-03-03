@@ -19,8 +19,8 @@ Let's create a new Azure VM with PowerShell.
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter.
       > [!IMPORTANT]
       > See the [Linux VM FAQ](https://docs.microsoft.com/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length, and meet 3 out of the following 4 complexity requirements:
-      > - Have lower-case characters
-      > - Have upper-case characters
+      > - Have lowercase characters
+      > - Have uppercase characters
       > - Have a digit
       > - Have a special character (Regex match [\W_])
     - Add the `-OpenPorts` parameter, and pass "22" as the port. This will let us SSH into the machine.

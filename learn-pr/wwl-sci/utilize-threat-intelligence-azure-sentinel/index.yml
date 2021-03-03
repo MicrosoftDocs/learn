@@ -3,7 +3,7 @@ uid: learn.wwl.utilize-threat-intelligence-azure-sentinel
 metadata:
   title: Utilize threat intelligence in Azure Sentinel
   description: "Utilize threat intelligence in Azure Sentinel"
-  ms.date: 01/22/2021
+  ms.date: 02/19/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Use KQL to access threat indicators in Azure Sentinel
 prerequisites: |
   Basic knowledge of security operational concepts such as monitoring, logging, and alerting.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/utilize-threat-intelligence-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

@@ -136,13 +136,17 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > It may take up to five minutes for this change to take effect.
     > ```
     >
-If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
+    > If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
+    
+    > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-- Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-- Search for and select your database.
-- Select **Set server firewall**.
-- Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
-- Select **Save**.
+    > 1. Search for and select your database.
+
+    > 1. Select **Set server firewall**.
+
+    > 1. Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
+    
+    > 1. Select **Save**.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
 
