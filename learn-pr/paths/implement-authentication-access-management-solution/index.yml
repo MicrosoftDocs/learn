@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-authentication-access-management-solution
+metadata:
+  title: 'SC-300 part 2: Implement an Authentication and Access Management solution'
+  description: 'SC-300 part 2: Implement an Authentication and Access Management solution'
+  ms.date: 02/17/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-300 part 2: Implement an Authentication and Access Management solution'
+prerequisites: |
+  None
+summary: |
+  Implement and administer your access management using Azure AD.  Use MFA, conditional access, and identity protection to manager your identity solution.  Aligned to SC-300 exam.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-active-directory
+modules:
+- learn.azure-security.secure-aad-users-with-mfa
+- learn.wwl.manage-user-authentication
+- learn.wwl.plan-implement-administer-conditional-access
+- learn.wwl.manage-azure-ad-identity-protection
+trophy:
+  uid: learn.wwl.implement-authentication-access-management-solution.trophy

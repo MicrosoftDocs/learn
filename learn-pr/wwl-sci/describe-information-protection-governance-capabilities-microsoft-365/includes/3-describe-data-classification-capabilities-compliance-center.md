@@ -84,8 +84,8 @@ Admins can use more than 30 filters for data including:
 
 The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
 
-## Compliance center tour
+## Explore data classification in the compliance center
 
-The video below gives you a detailed tour and additional information on the various data classification capabilities available in the compliance center:
+The video below walks you through the various data classification capabilities available in the compliance center.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx8x]

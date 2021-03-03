@@ -36,7 +36,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you used to activate the sandbox.
 
-1. On the top left of the Azure portal pane, select **Create a resource**.
+1. On the top left of the Azure portal panel, select **Create a resource**.
 
     [![Screenshot of the Azure portal showing the left pane with Create a resource option highlighted.](../media/create-resource.png)](../media/create-resource-expanded.png#lightbox)
 
@@ -48,13 +48,13 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     [![Screenshot of the Azure portal showing search results for the term WordPress with the WordPress option highlighted.](../media/search-select-wordpress.png)](../media/search-select-wordpress-expanded.png#lightbox)
 
-1. In the pane that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app.
+1. In the panel that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app. The **WordPress/Create** panel appears.
 
     [![Screenshot of the Azure portal showing WordPress resource type summary.](../media/create-site.png)](../media/create-site-expanded.png#lightbox)
 
-1. Several options to configure your deployment appear. Enter the following information:
+1. Several options appear to configure your deployment. Enter the following values for each setting.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
     | App name | Choose a unique value for the app name. It will form part of a fully qualified domain name (FQDN). |
     | Subscription | Make sure **Concierge Subscription** is selected. |
@@ -70,25 +70,27 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     > [!NOTE]
     > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the preceding configuration.
 
-1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**.
+1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**. The **App Service plan** panel appears.
     
     :::image type="content" source="../media/config-app-service-plan.png" alt-text="Screenshot of the Azure portal showing WordPress App Service creation with App Service plan/Location button highlighted.":::
 
-1. In the **App Service plan** pane, select **Create new**.
+1. Select **Create new**. The **New App Service Plan** panel appears.
 
     [![Screenshot of the Azure portal showing the App Service plan pane with the Create new button highlighted.](../media/new-app-service-plan.png)](../media/new-app-service-plan-expanded.png#lightbox)
 
-1. In the **New App Service plan** pane, enter a name for the new service plan.
+1. Enter the following values for each setting.
 
-1. For **Location**, select **Central US** to make sure we choose a region that allows the service plan you'll choose. Normally, you'll select the region that's closest to your customers while offering the services you need.
-
-1. Select **Pricing tier** to see the performance and feature options of the various types of service plans.
+    | Setting  | Value  |
+    |---|---|
+    | App Service plan | Choose a unique name for the new app service plan. |
+    | Location | Select **Central US** to make sure we choose a region that allows the service plan you'll choose. Normally, you'll select the region that's closest to your customers while offering the services you need. |
+    | Pricing tier | Select this option to see the performance and feature options of the various types of app service plans. The **Spec Picker** panel appears.
 
     [![Screenshot of the Azure portal showing New App Service plan configuration with the Pricing tier button highlighted.](../media/new-service-plan-config.png)](../media/new-service-plan-config-expanded.png#lightbox)
 
-1. The **Spec Picker** enables us to select a new pricing tier for our application. This screen opens to the **Production** tab, with the S1 pricing tier selected. We'll select a new pricing tier from the **Dev / Test** tab for our website.
+1. The **Spec Picker** enables us to select a new pricing tier for our application. The panel opens to the **Production** tab, with the S1 pricing tier selected. Select a new pricing tier from the **Dev / Test** tab for our website.
 
-    Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**.
+1. Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**.
 
     [![Screenshot of the Azure portal showing the App Service plan Spec Picker pane with the Dev / Test section selected and the free F1 tier and the Apply button highlighted.](../media/select-pricing-tier.png)](../media/select-pricing-tier-expanded.png#lightbox)
 

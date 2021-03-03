@@ -3,5 +3,5 @@ operation MarkingNumber (
     inputQubits : Qubit [],
     target : Qubit
 ) : Unit is Adj+Ctl {
-    (ControlledOnInt(idxMarked, X))(inputQubits, target);
+    ControlledOnInt(idxMarked, X)(inputQubits, target);
 }

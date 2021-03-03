@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.use-qsharp-libraries.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.date: 09/19/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What are the domain-specific Q# libraries provided with the QDK?" 
+    choices:
+    - content: "The Standard library, Chemistry, Numerics, and Machine Learning."
+      isCorrect: false
+      explanation: "The domain-specific libraries are Chemistry, Numerics, and Machine Learning. They must be explicitly added to Q# projects, whereas the contents of the Standard library are automatically accessible." 
+    - content: "Arithmetic, Preparation, Diagnostics"
+      isCorrect: false
+      explanation: "Those are `Microsoft.Quantum.<>` namespaces. The domain-specific libraries are Chemistry, Numerics, and Machine Learning." 
+    - content: "Chemistry, Numerics, and Machine Learning" 
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "How can I use additional Q# libraries besides the Standard library?" 
+    choices:
+    - content: "Simply create my Q# project and get started programming."
+      isCorrect: false
+      explanation: "New Q# projects automatically include the Standard library by default, but using other libraries requires adding the corresponding NuGet package to the project." 
+    - content: "Add the corresponding NuGet package to my Q# project."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "The Q# API documentation is..." 
+    choices:
+    - content: "something only experts should use as a reference."
+      isCorrect: false
+      explanation: "It is a valuable resource that can help both beginners and experts alike." 
+    - content: "neither worth exploring nor using as a reference when writing programs."
+      isCorrect: false
+      explanation: "The Q# API documentation is a valuable resource that should absolutely be explored."
+    - content: "automatically generated from documentation comments in the source code, and is published on the Microsoft Quantum Documentation website."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Documentation comments are denoted with _____ slashes, and should go immediately _____ the callable or type declaration to be interpreted as such by the compiler." 
+    choices:
+    - content: "two; before"
+      isCorrect: false
+      explanation: "Two slashes `//` delineate *general* comments, which can be written anywhere in Q# files and are simply ignored by the compiler. The lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration, otherwise the compiler will ignore them as general comments."
+    - content: "two; after"
+      isCorrect: false
+      explanation: "Two slashes `//` delineate *general* comments, which can be written anywhere in Q# files and are simply ignored by the compiler. The lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration, otherwise the compiler will ignore them as general comments."
+    - content: "three; before"
+      isCorrect: true
+      explanation: "Correct! In contrast to general comments, which are delineated by two slashes `//` and can be written anywhere in Q# files, the lines of documentation comments must begin with `///` to be treated as such by the compiler. They must be placed outside and immediately preceding the declaration, otherwise the compiler will ignore them as general comments." 
+    - content: "three; after"
+      isCorrect: false
+      explanation: "In contrast to general comments, which are delineated by two slashes `//` and can be written anywhere in Q# files, the lines of documentation comments must begin with `///` and are treated specially by the compiler. They must be placed outside and immediately preceding the declaration, otherwise the compiler will ignore them as general comments."
+
+      

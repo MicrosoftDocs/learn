@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.ingest-data-into-azure-digital-twins.use-rest-apis
-title: Use Azure Digital Twins REST APIs
+title: Use REST APIs with Azure Digital Twins
 metadata:
-  title: Use Azure Digital Twins REST APIs
-  description: Ingest data into Azure Digital Twins using REST APIs
+  title: Use REST APIs with Azure Digital Twins
+  description: Ingest data into Azure Digital Twins by using REST APIs.
   ms.date: 10/30/2020
   author: teodelas
   ms.author: teodelas

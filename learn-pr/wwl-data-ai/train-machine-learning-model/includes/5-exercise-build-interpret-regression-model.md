@@ -1,4 +1,4 @@
-In your Azure Databricks workspace, open the **08-Train-a-ML-model** folder that you imported within your user folder.
+In your Azure Databricks workspace, open the **ml-model** folder that you imported within your user folder.
 
 Open the **4. Exercise Regression Modeling** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 

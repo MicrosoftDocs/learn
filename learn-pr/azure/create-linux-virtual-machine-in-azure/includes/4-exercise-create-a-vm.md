@@ -10,7 +10,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. In the search box, enter  **Ubuntu Server**.
 
-1. Select **Ubuntu Server 18.04 LTS**, published by Canonical, from the list.
+1. Select **Nginx on Ubuntu Server 18.04**, from the list.
 
 1. Select the **Create** button to start configuring the VM.
 
@@ -40,7 +40,7 @@ It's considered best practice to standardize your resource names, so you can qui
 
 1. Set **Availability options** to **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service.
 
-1. Ensure that the image is set to **Ubuntu Server 18.04 LTS**. You can open the drop-down list to see all the options available.
+1. NOW: Ensure that the image is set to **Ubuntu Server 18.04 LTS**. You can open the drop-down list to see all the options available.
 
 1. Leave the **Size** field with the default of **D2s v3** choice, which gives you two vCPUs with 8 GB of RAM.
 

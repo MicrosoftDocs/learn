@@ -98,7 +98,7 @@ To validate that our program worked, we'll exercise another capability of the **
 
     > [!NOTE]
     > Make sure you're in the PhotoSharingApp directory.
-    
+
      ```dotnetcli
      dotnet run
      ```  
@@ -137,7 +137,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
     }
     ```
-    
+
     This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
 
 1. The final file should look like this.
@@ -185,7 +185,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-        node index.js
+    node index.js
     ```
 
     > [!TIP]
