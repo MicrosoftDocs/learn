@@ -1,10 +1,10 @@
-As your company deals with highly sensitive data and has large amounts of information it will store in Azure, there are some concerns about the security and reliability of connections over the public Internet. The company isn't willing to migrate wholesale to Azure unless it can demonstrate higher levels of connectivity, security, and reliability.
+As your company deals with highly sensitive data, and has large amounts of information it will store in Azure, there are some concerns about the security and reliability of connections over the public internet. The company isn't willing to migrate wholesale to Azure unless it can demonstrate higher levels of connectivity, security, and reliability.
 
-Here, we'll go beyond connections that run over the Internet to dedicated lines direct into the Azure datacenters.
+Here, we'll go beyond connections that run over the internet to dedicated lines direct into the Azure datacenters.
 
 ## Azure ExpressRoute
 
-Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the Internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
+Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
 
 Advantages that ExpressRoute provides include:
 
@@ -36,9 +36,9 @@ Connections into ExpressRoute can be through the following mechanisms:
 
 - IP VPN network (any-to-any)
 
-- Virtual cross-connection through an Ethernet exchange
+- Virtual cross-connection through an ethernet exchange
 
-- Point-to-point Ethernet connection
+- Point-to-point ethernet connection
 
  ExpressRoute capabilities and features are all identical across all of the above connectivity models.
 
@@ -50,13 +50,13 @@ Microsoft uses an industry-standard dynamic routing protocol (BGP) to exchange r
 
 IPVPN providers typically provide connectivity between branch offices and your corporate datacenter over managed layer 3 connections. With ExpressRoute, the Azure datacenters appear as if they were another branch office.
 
-### Virtual cross-connection through an Ethernet Exchange
+### Virtual cross-connection through an ethernet exchange
 
-If your organization is co-located with a cloud exchange facility, you request cross-connections to the Microsoft Cloud through your provider's Ethernet exchange. These cross-connections to the Microsoft Cloud can operate at either layer 2 or layer 3 managed connections, as in the networking OSI model.
+If your organization is co-located with a cloud exchange facility, you request cross-connections to the Microsoft Cloud through your provider's ethernet exchange. These cross-connections to the Microsoft Cloud can operate at either layer 2 or layer 3 managed connections, as in the networking OSI model.
 
-### Point-to-point Ethernet connection
+### Point-to-point ethernet connection
 
-Point-to-point Ethernet links can provide layer 2 or managed layer 3 connections between your on-premises datacenters or offices to the Microsoft Cloud.
+Point-to-point ethernet links can provide layer 2 or managed layer 3 connections between your on-premises datacenters or offices to the Microsoft Cloud.
 
 ## How ExpressRoute works
 
@@ -75,7 +75,7 @@ Each circuit can have up to two peerings, which are a pair of BGP sessions that 
 
 ### Routing domains
 
-ExpressRoute circuits then map to routing domains, with each ExpressRoute circuit having multiple routing domains. These domains are the same as the two peerings listed above. In an active-active configuration, each pair of routers would have each routing domain configured identically, thus providing high availability. The Azure private peering names represent the IP addressing schemes.
+ExpressRoute circuits then map to routing domains, with each ExpressRoute circuit having multiple routing domains. These domains are the same as the two peerings previously listed. In an active-active configuration, each pair of routers would have each routing domain configured identically, thus providing high availability. The Azure private peering names represent the IP addressing schemes.
 
 #### Azure private peering
 
@@ -97,4 +97,4 @@ As with most features in Microsoft Azure, you can monitor ExpressRoute connectio
 
 The key tool for this monitoring activity is Network Performance Monitor, particularly NPM for ExpressRoute.
 
-Azure ExpressRoute is used to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public Internet, and they offer more reliability, faster speeds, and lower latencies than typical Internet connections.
+Azure ExpressRoute is used to create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment. ExpressRoute connections don't go over the public internet, and they offer more reliability, faster speeds, and lower latencies than typical internet connections.

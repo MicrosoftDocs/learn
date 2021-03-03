@@ -7,7 +7,7 @@ The number of RUs that a specific operation uses depends on the following factor
 - Whether the operation is a read or a write
 - Number of fields in your database that are indexed, and the indexing mode
 - Complexity of the operation for queries
-- Data consistency for geographically-replicated collections
+- Data consistency for geographically replicated collections
 
 We don't address geo-replication in this module.
 

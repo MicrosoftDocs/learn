@@ -126,7 +126,7 @@ This repository contains an Azure DevOps build definition, which is preconfigure
 
 1. With a successful build definition in place, we can now enforce continuous integration by applying a branch policy to the master branch. In the left menu pane, select **Repos**, and again, in the left menu pane, select **Branches**. Select the vertical ellipsis at the far end of the row for the master branch, and from the dropdown, select **Branch policies**.
 
-1. In the middle of the **master** panel, select **Build Validation**, and then select the **+** icon (Add new build policy), and select the newly-created build pipeline. Keep everything with their default values, and then select **Save**.
+1. In the middle of the **master** panel, select **Build Validation**, and then select the **+** icon (Add new build policy), and select the newly created build pipeline. Keep everything with their default values, and then select **Save**.
 
    ![The illustration shows the branch policy added for the pipeline.](../media/branch-policy.png)
 

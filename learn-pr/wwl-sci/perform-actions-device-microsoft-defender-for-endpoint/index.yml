@@ -3,7 +3,7 @@ uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint
 metadata:
   title: Perform actions on a device using Microsoft Defender for Endpoint
   description: "Perform actions on a device using Microsoft Defender for Endpoint"
-  ms.date: 01/22/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -24,7 +24,6 @@ roles:
 - security-engineer
 products:
 - m365
-- m365-threat-protection
 units:
 - learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.introduction
 - learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.understand-device-actions
