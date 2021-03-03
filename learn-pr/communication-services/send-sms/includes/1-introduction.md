@@ -1,6 +1,14 @@
 ## Learning objectives
 
-You can use Azure Communication Services to provision a phone number and send SMS messages. You might want to send an SMS message when a package delivery is delayed or completed, for example.
+Azure Communication Services allows you to easily add real-time multimedia voice, video, and telephony-over-IP communications features to your applications. The Communication Services client libraries also allow you to add chat and SMS functionality to your communications solutions.
+
+You can use Communication Services for voice, video, text, and data communication in a variety of scenarios:
+
+- Browser-to-browser, browser-to-app, and app-to-app communication
+- Users interacting with bots or other services
+- Users and bots interacting over the public switched telephony network
+
+The objective of this module is to learn about the Azure Communication Services SMS capability. Sending SMS messages from code can be useful if you want to text-message a user when certain events are triggered, for example.
 
 In this module, you'll:
 
