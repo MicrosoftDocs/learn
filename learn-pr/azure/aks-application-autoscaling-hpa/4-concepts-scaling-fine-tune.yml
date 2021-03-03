@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "question?"
+    - content: "What does the stabilization window mean?"
       choices:
-        - content: "Choice"
+        - content: "The amount of time the HPA will look back to the metrics API to get stable data."
           isCorrect: true
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "Correct."
+        - content: "The cooldown period before scaling up or down again."
           isCorrect: false
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "Incorrect. The cooldown period is not defined by the stabilization window."
+        - content: "The amount of seconds to wait before the HPA can start working."
           isCorrect: false
-          explanation: "Choice"
-    - content: "question?"
+          explanation: "HPAs will start working as soon as they're created."
+    - content: "What are the three values for selectPolicies?"
       choices:
-        - content: "Choice"
+        - content: "Average, Disabled, and Max"
           isCorrect: false
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "Incorrect. there's no average value."
+        - content: "Min, Max, and Deactivated"
           isCorrect: false
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "Incorrect. HPAs have no Deactvated value."
+        - content: "Min, Max and Disabled"
           isCorrect: true
-          explanation: "Choice"
-    - content: "question?"
+          explanation: "Correct."
+    - content: "When should you define behavior to your HPA?"
       choices:
-        - content: "Choice"
+        - content: "On every created HPA since the key is required."
           isCorrect: false
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "The behavior key is not required."
+        - content: "When we want to fine tune the HPA behavior."
           isCorrect: true
-          explanation: "Choice"
-        - content: "Choice"
+          explanation: "Correct."
+        - content: "To fine tune the deployment behavior when scaling."
           isCorrect: false
-          explanation: "Choice"
+          explanation: "Deployments are not fine tuned in the HPA."
