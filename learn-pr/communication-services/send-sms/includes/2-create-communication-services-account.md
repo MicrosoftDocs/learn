@@ -15,7 +15,7 @@ You can use Azure Communication Services to send and receive text messages progr
 1. Select the **Get** button to launch the phone number provisioning wizard. Be sure to enable the SMS capability for your phone number while provisioning.
 
 > [!NOTE]
-> Phone number availability is currently restricted to Azure subscriptions that have a billing address in the United States. For more information, visit the [Phone number types](https://docs.microsoft.com/en-us/azure/communication-services/concepts/telephony-sms/plan-solution) documentation.
+> Phone number availability is currently restricted to Azure subscriptions that have a billing address in the United States. For more information, visit the [Phone number types](https://docs.microsoft.com/azure/communication-services/concepts/telephony-sms/plan-solution) documentation.
 
 
 1. Copy and save the following values to use later:
