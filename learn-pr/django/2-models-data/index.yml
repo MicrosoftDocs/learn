@@ -19,16 +19,16 @@ abstract:  |
   - Create and query data in your database.
 prerequisites:  | 
   - Software:
-    - [Visual Studio Code](https://code.visualstudio.com)
-    - [Git](https://git-scm.com/)
+    - Visual Studio Code
+    - Git
   - Coding skills:
     - Understanding of HTML and CSS
     - Basic understanding of Django
     - Basic understanding of relational databases
     - Intermediate understanding of Python, including:
-      - [Package management](https://docs.python.org/3/installing/index.html)
-      - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
-      - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+      - Package management
+      - Virtual environments
+      - Inheritance
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
