@@ -30,19 +30,19 @@ With the admin user has been created it is time for our first login to the Djang
 
 1. Navigate to http://localhost:8000/admin 
 
-    ![Django Admin Login](../media/Module3_DjangoAdminLogin.PNG)
+    ![Django Admin Login] <Missing media: ../media/Module3_DjangoAdminLogin.PNG>
 
 1. Enter the username and password you created earlier
 
     Once you have successfully logged into the admin site you should see a screen that looks like below.
 
-    ![Django Admin Interface](../media/Module3_DjangoAdmin.PNG)
+    ![Django Admin Interface] <Missing media: Module3_DjangoAdmin.PNG>
 
 1. Click **users**
 
     You will now see the list of users, which will include the one you created.
 
-    ![Django Admin Users](../media/Module3_DjangoAdminSeeUsers.PNG)
+    ![Django Admin Users] <Missing media: Module3_DjangoAdminSeeUsers.PNG>
 
 ## Create a staff user
 
@@ -52,6 +52,6 @@ With the admin user has been created it is time for our first login to the Djang
 1. Click **SAVE**
 1. On the next screen, select **Staff status** to make the new user a staff user
 
-    ![User options screen](Module3_Images/staff-user.png)
+    ![User options screen](../media/staff-user.png)
 
 1. Click **SAVE**

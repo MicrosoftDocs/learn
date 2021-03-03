@@ -18,8 +18,8 @@ abstract: |
     - Set user permissions.
 prerequisites: |
   - Software:
-    - [Visual Studio Code](https://code.visualstudio.com)
-    - [Git](https://git-scm.com/)
+    - Visual Studio Code
+    - Git
   - Coding skills:
     - Understanding of HTML and CSS
     - Basic understanding of Django
@@ -28,8 +28,8 @@ prerequisites: |
       - Package management
       - Virtual environments
       - Inheritance
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels:
+iconUrl: /learn/achievements/generic-badge.svg
+
   - intermediate
 roles:
   - student
@@ -39,11 +39,13 @@ products:
   - vs-code
   - azure-app-service
 units:  
-- undefined.introduction
-- undefined.what-is-{product}
-- undefined.how-{product}-works
-- undefined.when-to-use-{product}
-- undefined.knowledge-check
-- undefined.summary
+- learn.django.admin-site.introduction
+- learn.django.admin-site.exercise-setup
+- learn.django.admin-site.admin-permissions 
+- learn.django.admin-site.exercise-create-users
+- learn.django.admin-site.exercise-manage-data
+- learn.django.admin-site.exercise-manage-permissions
+- learn.django.admin-site.knowledge-check
+- learn.django.admin-site.summary
 badge:
   uid: learn.django.admin-site

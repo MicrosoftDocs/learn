@@ -17,7 +17,7 @@ As highlighted before, the admin site does not provide access to your data by de
 1. Return to your browser and refresh the page
 1. Notice you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**
 
-    :::image type="content" source="../media/Module3_DjangoAdminNewModels.PNG" alt-text="Django Admin New Models." lightbox="../media/Module3_DjangoAdminNewModels.PNG":::
+    :::image type="content" source="<Missing media: Module3_DjangoAdminNewModels.PNG>" alt-text="Django Admin New Models." lightbox="<Missing media: Module3_DjangoAdminNewModels.PNG>":::
 
 ## Accessing our data
 
