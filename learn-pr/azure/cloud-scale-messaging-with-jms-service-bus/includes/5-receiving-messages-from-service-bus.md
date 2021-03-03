@@ -94,7 +94,7 @@ This indicates that the Spring Boot application has successfully received messag
 
 ## See the entire workflow in action
 
-If your sender application (from [Unit 4](4-sending-messages-to-service-bus.md#run-the-application-locally)) is still running, you can click on the below link to send a message to the Azure Service Bus queue, 
+If your sender application (from unit 4) is still running, you can click on the below link to send a message to the Azure Service Bus queue, 
 
 ```html
 http://localhost:8080/messages?message=HelloOnceAgainAndAgain

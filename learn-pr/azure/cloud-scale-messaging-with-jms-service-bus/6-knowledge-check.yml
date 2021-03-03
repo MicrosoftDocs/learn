@@ -23,11 +23,3 @@ quiz:
       - content: "An Azure product"
         isCorrect: false
         explanation: "JMS is an API defined and managed by the Java community and supported by Azure Service Bus."
-    - content: "What is Azure Service Bus?"
-      choices:
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
