@@ -2,7 +2,7 @@ In this unit, you'll use your Communication Services phone number to send an SMS
 
 In a console window (such as cmd, PowerShell, or Bash), use the `dotnet new` command to create a new console app with the name `SmsQuickstart`. This command creates a simple "Hello World" C# project with a single source file: `Program.cs`.
 
-    ```console
+    ``` console
     dotnet new console -o SmsQuickstart
     ```
 
