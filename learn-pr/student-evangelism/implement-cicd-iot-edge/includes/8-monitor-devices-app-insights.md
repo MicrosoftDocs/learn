@@ -65,19 +65,23 @@ To create an AKS cluster, complete the following steps:
 
 1. Rename this stage to **Integration**.
 
-1. From the top menu bar, select **Tasks**, and then select **Integration**.
+1. From the top menu bar, select **Tasks**, and then select **Integration**.  Modify the top-level parameters for this stage by supplying the appropriate values for the **Azure Subscription**, **Resource group**, and **Kubernetes cluster**. These should be the values that were used when deploying your Kubernetes cluster.
 
-1. Open the **Install Helm** task, and specify the Helm version as 2.9.1 instead of the latest. You'll notice that the **Helm init** and **Helm upgrade** tasks require some additional configuration.
-
-1. Provide the Azure subscription, resource group, and Kubernetes cluster that you created in the previous step for **Helm init** and **Helm upgrade**.
+![The Top Level Parameter](../media/top-parameters.png)
 
 1. Configure the agent job to run on the **Hosted Ubuntu 1604** agent pool.
 
-1. Configure the **Helm init** task to upgrade/install Tiller.
+![The Agent Job](../media/agent-job.png)
 
-    ![The illustration shows how to update/install Tiller.](../media/upgrade-tiller.png)
+1. Open the **Install Helm** task, and specify the Helm version as 3.5.2 instead of the latest. 
 
-1. Configure the **Helm upgrade** task to deploy the Helm chart for  **azure-iot-edge-device-container**. Begin by adding a new **Bash** task right before the **Helm upgrade** task. Configure the type to **inline** and add the following code.
+![The Install Helm Task](../media/install-helm.png)
+
+1. You will notice that the **Helm init** task requires some additional configuration.  Helm version 3 and above no longer requires "Helm init", so we will remove this task.  To do this, right-click the task item and choose **Remove selected task(s)**.
+
+![The Helm Init Task](../media/helm-init.png)
+
+1. Next, we'll create a new task to add the Helm chart for the **azure-iot-edge-device-container**. Begin by adding a new **Bash** task right before the **Helm upgrade** task. Configure the type to **inline** and add the following code.
 
     ```
     helm repo add azure-iot-edge-device-container https://toolboc.github.io/azure-iot-edge-device-container
@@ -85,7 +89,17 @@ To create an AKS cluster, complete the following steps:
     helm repo update
     ```
 
-1. Configure the Helm upgrade task:
+![The Bash Task](../media/bash-task.png)
+
+1. Next, we want to ensure that our Helm deployment does not recycle existing pods on consecutive runs, and instead deploys brand new instances of the "azure-iot-edge-device-container" for testing. Add a new **kubectl** task after the **Bash** task, then modify the **Service Connection Type** to **Azure Resource Manager**, select the Azure subscription that contains your Kubernetes Cluster, then choose the resource group and name of your cluster as done previously.  
+
+![The Kubectl Task Part 1](../media/kubectl-task1.png)
+
+1. In this same section, scroll down and modify the **Namespace** to "iot-edge-qa", set the **Command** to "delete , and set **Arguments** field to "pods --all".
+
+![The Kubectl Task Part 2](../media/kubectl-task2.png)
+
+1. Finally, configure the Helm upgrade task:
 
     - Set the **Namespace** value to **iot-edge-qa**.
 
@@ -103,17 +117,17 @@ To create an AKS cluster, complete the following steps:
       spAppUrl=$(spAppUrl),spPassword=$(spPassword),tenantId=$(tenantId),subscriptionId=$(subscriptionId),iothub_name=$(iothub_name),environment=$(environment),replicaCount=2 
       ```
 
-    - Ensure that the **Install if release not present**, **Recreate Pods**, **Force**, and **Wait** checkboxes are checked.
+    - Ensure that the **Install if release not present** and **Wait** checkboxes are checked.
 
-1. Start a new release, and when it's complete, view your AKS cluster dashboard.
+![The Helm Upgrade Task](../media/helm-upgrade.png)
 
-1. Go to the Azure portal, open Azure Cloud Shell, and run the following command.
+1. Start a new release and when complete, navigate your AKS service within the Azure Portal, then select **Namespaces**.  You will notice that the iot-edge-qa deployment has been deployed to the cluster.
 
-    ```
-    az aks browse --resource-group <kube-cluster-resource-group> --name <kube-cluster-name>
-    ```
+![The AKS Namespaces](../media/aks-namespaces.png)
 
-    You'll notice that QA devices have been deployed to the cluster.
+1.  To view the individual pods, you can select "Workloads" where you should see that two instances have been deployed.
+
+![The AKS Workloads](../media/aks-workloads.png)
 
 ### Monitor devices with Application Insights
 
