@@ -11,4 +11,5 @@ In this module, you'll:
 ## Prerequisites
 
 - Basic familiarity with C#
-- An Azure account with an active subscription. [Create an account for free](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F)
+- An Azure account with an active subscription and a billing address in the United States
+. [Create an account for free](https://azure.microsoft.com/en-us/free/?WT.mc_id=A261C142F)
