@@ -3,7 +3,7 @@ uid: learn.app-management-using-microsoft-endpoint-manager
 metadata:
   title: Understand app management using Microsoft Endpoint Manager
   description: In this module, you'll learn about app management using Microsoft Endpoint Manager. 
-  ms.date: 10/26/2020
+  ms.date: 02/11/2021
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ title: Understand app management using Microsoft Endpoint Manager
 summary: As part of application management, Microsoft Endpoint Manager helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
 abstract: | 
   In this module, you will:
-  - Understand the how your organization's apps can be can be configured and protected.
+  - Understand the how your organization's apps can be configured and protected.
   - Understand the app management lifecycle.
   - Learn about the data protection framework using app protection policies.
 prerequisites: None

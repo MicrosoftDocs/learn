@@ -1,4 +1,4 @@
-You can use automated machine learning in Azure Machine Learning to train models for the following types of machine learning task:
+You can use automated machine learning in Azure Machine Learning to train models for the following types of machine learning tasks:
 
 * Classification
 * Regression
@@ -42,7 +42,7 @@ Azure Machine Learning includes support for numerous commonly used algorithms fo
 * XGBoost
 * Others...
 
-    **More Information**: For a full list of supported algorithms, see [How to define a machine learning task](https://aka.ms/AA70rrr).
+**More Information**: For a full list of supported algorithms, see [How to define a machine learning task](https://aka.ms/AA70rrr).
 
 ## Restrict algorithm selection
 

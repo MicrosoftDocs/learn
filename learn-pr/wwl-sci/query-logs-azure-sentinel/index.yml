@@ -3,7 +3,7 @@ uid: learn.wwl.query-logs-azure-sentinel
 metadata:
   title: Query logs in Azure Sentinel
   description: "Query logs in Azure Sentinel"
-  ms.date: 01/22/2021
+  ms.date: 02/19/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Query the most used tables using Azure Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/query-logs-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.13-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "How many `constructor` functions can you include in a class definition?"
+    choices:
+    - content: "One."
+      isCorrect: true
+      explanation: "Correct! You can declare one `constructor` function in a class definition. If omitted, an automatic constructor will be provided for you."
+    - content: "Any number."
+      isCorrect: false
+      explanation: "Incorrect. Multiple `constructor` declarations are not allowed in a class definition."
+    - content: "None."
+      isCorrect: false
+      explanation: "Incorrect. All classes require a `constructor` function."
+  - content: "What happens if you omit the `get` accessor for a class property?"
+    choices:
+    - content: "You will not be able to set its value from your code."
+      isCorrect: false
+      explanation: "Incorrect. If you omit the `set` accessor, you will not be able to set the value from your code."
+    - content: "Nothing. TypeScript automatically provides `get` accessor functionality if it is omitted."
+      isCorrect: false
+      explanation: "Incorrect. TypeScript does not automatically provide getter or setter functionality."
+    - content: "You will not be able to return its value from your code."
+      isCorrect: true
+      explanation: "Correct! The property becomes inaccessible if the `get` accessor is omitted."
+  - content: "Which access modifier should you use if you don't want a method to be accessible from code outside the class but also want to make it available inside other classes that derive from the class?"
+    choices:
+    - content: "`readonly`"
+      isCorrect: false
+      explanation: "Incorrect. The `readonly` modifier applies to properties. It prevents you from changing the value of a property after it has been initialized."
+    - content: "`protected`"
+      isCorrect: true
+      explanation: "Correct! The `protected` modifier prevents the method from being visible outside of the class, while also allowing derived classes to use it."
+    - content: "`private`"
+      isCorrect: false
+      explanation: "Incorrect. The `private` modifier makes the method visible only within the class in which it is defined."
+  - content: "When extending a class, what is the purpose of the `super` keyword?"
+    choices:
+    - content: "It initializes the properties in the subclass."
+      isCorrect: false
+      explanation: "Incorrect. Properties of the subclass are initialized using the syntax `this.property = parameter` syntax."
+    - content: "It overrides the properties of the base class."
+      isCorrect: false
+      explanation: "Incorrect. It is not possible to override the properties of the base class from the subclass."
+    - content: "It executes the `constructor` of the base class when it runs."
+      isCorrect: true
+      explanation: "Correct! Before initializing the properties in the subclass, the `super` keyword executes the `constructor` of the base class. It must appear before any instance of `this.`."

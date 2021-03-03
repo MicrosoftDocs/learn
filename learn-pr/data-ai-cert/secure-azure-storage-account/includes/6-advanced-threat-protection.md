@@ -6,7 +6,7 @@ Azure Defender for Storage is currently available for Blob storage, Azure Files,
 
 Accounts with hierarchical namespaces enabled for Data Lake Storage support transactions using both the Azure Blob storage APIs and the Data Lake Storage APIs. Azure file shares support transactions over SMB.
 
-You can turn on Azure Defender for Storage in the Azure portal through the configuration page of the Azure Storage account, or in the advanced security section of the Azure portal:
+You can turn on Azure Defender for Storage in the Azure portal through the configuration page of the Azure Storage account, or in the advanced security section of the Azure portal. Follow these steps.
 
 1. Launch the Azure portal.
 
@@ -27,7 +27,7 @@ When storage activity anomalies occur, you receive an email notification with in
 - Potential causes
 - Investigation steps
 - Remediation steps
-- Email also includes details about possible causes and recommended actions to investigate and mitigate the potential threat.
+- Email also includes details about possible causes and recommended actions to investigate and mitigate the potential threat
 
     ![Viewing security anomolies in Azure Defender for Security](../media/view-security-anomolies-in-azure-defender-for-security.png)
 

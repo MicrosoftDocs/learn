@@ -69,9 +69,9 @@ A .NET Core application requires additional NuGet packages to read a JSON config
 
 In the command prompt section of the window, add a reference to the  **Microsoft.Extensions.Configuration.Json** NuGet package.
 
-    ```bash
+   ```bash
     dotnet add package Microsoft.Extensions.Configuration.Json
-    ```
+   ```
 
 ## Add code to read the configuration file
 
@@ -82,8 +82,8 @@ Now that we have added the required libraries to enable reading configuration, w
 1. At the top of the file, a `using System` line is present. Underneath that line, add the following lines of code.
 
     ```csharp
-    using Microsoft.Extensions.Configuration;
-    using System.IO;
+     using Microsoft.Extensions.Configuration;
+     using System.IO;
     ```
 
 1. Replace the contents of the **Main** method with the following code. This code initializes the configuration system to read from the **appsettings.json** file.
@@ -97,7 +97,7 @@ Now that we have added the required libraries to enable reading configuration, w
 
 Your **Program.cs** file should now look like the following example.
 
-    ```csharp
+   ```csharp
     using System;
     using Microsoft.Extensions.Configuration;
     using System.IO;
@@ -115,7 +115,7 @@ Your **Program.cs** file should now look like the following example.
             }
         }
     }
-    ```
+   ```
 
 ## Get the connection string from configuration
 
@@ -123,9 +123,9 @@ In **Program.cs**, at the end of the **Main** method, use the new **config** var
 
 The **config** variable has an indexer where you can pass in a string to retrieve from your **appSettings.json** file.
 
-    ```csharp
+   ```csharp
     string connectionString = config["CacheConnection"];
-    ```
+   ```
 
 ## Add support for the Redis cache .NET client
 
@@ -133,15 +133,15 @@ Next, let's configure the console application to use the **StackExchange.Redis**
 
 1. Add the **StackExchange.Redis** NuGet package to the project using the command prompt at the bottom of the Cloud Shell editor.
 
-    ```bash
+   ```bash
     dotnet add package StackExchange.Redis
-    ```
+   ```
 
 1. Select **Program.cs** in the editor, and add a `using` for the namespace **StackExchange.Redis**
 
-    ```csharp
+   ```csharp
     using StackExchange.Redis;
-    ```
+   ```
 
 After the installation is completed, the Redis cache client is available to use with your project.
 
@@ -155,14 +155,14 @@ Let's add the code to connect to the cache.
 
 1. Because the created connection is _disposable_, wrap it in a `using` block. Your code should look something like the following.
 
-    ```csharp
+   ```csharp
     string connectionString = config["CacheConnection"];
     
     using (var cache = ConnectionMultiplexer.Connect(connectionString))
     {
         
     }
-    ```
+   ```
 
 > [!NOTE] 
 > The connection to Azure Cache for Redis is managed by the `ConnectionMultiplexer` class. This class should be shared and reused throughout your client application. We do _not_ want to create a new connection for each operation. Instead, we want to store it off as a field in our class, and reuse it for each operation. Here, we are only going to use it in the **Main** method, but in a production application, it should be stored in a class field, or a singleton.
@@ -173,9 +173,9 @@ Now that we have the connection, let's add a value to the cache.
 
 1. Inside the `using` block after the connection has been created, use the `GetDatabase` method to retrieve an `IDatabase` instance.
 
-    ```csharp
+   ```csharp
     IDatabase db = cache.GetDatabase();
-    ```
+   ```
 
 1. Call `StringSet` on the `IDatabase` object to set the key "test:key" to the value "some value".
 
@@ -183,10 +183,10 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
 
 1. Display the return value from `StringSet` onto the console.
 
-    ```csharp
+   ```csharp
     bool setValue = db.StringSet("test:key", "some value");
     Console.WriteLine($"SET: {setValue}");
-    ```
+   ```
 
 ## Get a value from the cache
 
@@ -194,14 +194,14 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
 
 1. Output the returned value.
 
-    ```csharp
+   ```csharp
     string getValue = db.StringGet("test:key");
     Console.WriteLine($"GET: {getValue}");
-    ```
+   ```
 
 1. Your code should look like this.
 
-    ```csharp
+   ```csharp
     using System;
     using Microsoft.Extensions.Configuration;
     using System.IO;
@@ -233,13 +233,13 @@ The return value from `StringSet` is a `bool` indicating whether the key was add
             }
         }
     }
-    ```
+   ```
 
 1. Run the application to see the result. Enter `dotnet run` in the terminal window below the editor. Make sure you are in the project folder or it won't find your code to build and run.
 
-    ```bash
+   ```bash
     dotnet run
-    ```
+   ```
 
 > [!TIP] 
 > If the program doesn't do what you expect, but compiles, it may be because you have not saved changes in the editor. Always remember to save changes as you switch between the terminal and the editor windows.
@@ -258,7 +258,7 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
 
 1. Add `<LangVersion>7.1</LangVersion>` into the first `PropertyGroup` in the build file. It should look like the following when you are finished.
 
-    ```xml
+   ```xml
     <Project Sdk="Microsoft.NET.Sdk">
     
       <PropertyGroup>
@@ -267,7 +267,7 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
         <LangVersion>7.1</LangVersion> 
       </PropertyGroup>
     ...
-    ```
+   ```
 
 ### Apply the async keyword
 
@@ -279,7 +279,7 @@ Next, apply the `async` keyword to the **Main** method. We will have to do three
 
 1. Add a `using` statement to include `System.Threading.Tasks`.
 
-    ```csharp
+   ```csharp
     using System;
     using Microsoft.Extensions.Configuration;
     using System.IO;
@@ -293,7 +293,7 @@ Next, apply the `async` keyword to the **Main** method. We will have to do three
             static async Task Main(string[] args)
             {
             ...
-    ```
+   ```
 
 ### Get and set values asynchronously
 
@@ -305,14 +305,14 @@ We can leave the synchronous methods in place. Let's add a call to the `StringSe
 
 1. Output the results to the console window, just as you did with the synchronous versions.
 
-    ```csharp
+   ```csharp
     // Simple get and put of integral data types into the cache
     setValue = await db.StringSetAsync("test", "100");
     Console.WriteLine($"SET: {setValue}");
     
     getValue = await db.StringGetAsync("test");
     Console.WriteLine($"GET: {getValue}");
-    ```
+   ```
 
 1. Run the application again. It should still work and now have two values.
 
@@ -339,17 +339,17 @@ Finally, let's try executing a few additional methods with the `ExecuteAsync` su
 
 1. Execute "FLUSHDB" to clear the database values. It should respond with "OK".
 
-    ```csharp
+   ```csharp
     var result = await db.ExecuteAsync("ping");
     Console.WriteLine($"PING = {result.Type} : {result}");
     
     result = await db.ExecuteAsync("flushdb");
     Console.WriteLine($"FLUSHDB = {result.Type} : {result}");
-    ```
+   ```
     
 The final code should look something like the following.
 
-    ```csharp
+   ```csharp
     using System;
     using Microsoft.Extensions.Configuration;
     using System.IO;
@@ -394,7 +394,7 @@ The final code should look something like the following.
             }
         }
     }
-    ```
+   ```
 
 ## Challenge
 
@@ -427,24 +427,24 @@ We'll use a simple console application so we can focus on the Redis implementati
 
 1. In the Cloud Shell, create a new directory called `redisapp`, and initialize a new Node.js app there.
 
-    ```bash
+   ```bash
     mkdir redisapp
     cd redisapp
     npm init -y
     touch app.js
-    ```
+   ```
 
 1. Our app is going to use the following npm packages:
 
     - **redis**: The most commonly used JavaScript package for connecting to redis.
-    - **bluebird**: Used to convert the callback-style methods in the `redis` package to awaitable Promises.
+    - **bluebird**: Used to convert the callback-style methods in the `redis` package to awaitable Promise.
     - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
 
     Let's install them now. Run this command to add them to our app.
 
-    ```bash
+   ```bash
     npm install redis bluebird dotenv
-    ```
+   ```
     
 ## Add configuration
 
@@ -452,27 +452,27 @@ Let's add the connection information we got from the Azure portal into a `.env` 
 
 1. Create a new **.env** file to the project.
 
-    ```bash
+   ```bash
     touch .env
-    ```
+   ```
 
 1. Open the code editor by entering `code .` in the project folder. If you are working locally, we recommend using **Visual Studio Code**. The steps here will mostly align with its usage.
 
 1. Select the **.env** file in the editor, and paste in the following text.
 
-    ```
+   ```
     REDISHOSTNAME=
     REDISKEY=
     REDISPORT=
-    ```
+   ```
 
 1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example.
 
-    ```
+   ```
     REDISHOSTNAME=myredishost.redis.cache.windows.net
     REDISKEY=K21mLSMN++z8d1FvIeMGy3VOAgoOmqaNYCqeE44eMDc=
     REDISPORT=6380
-    ```
+   ```
 
 1. Save the file with <kbd>Ctrl+S</kbd> on Windows and Linux or <kbd>Cmd+S</kbd> on macOS.
 
@@ -484,21 +484,21 @@ Now it's time to write the code for our application.
 
 1. First, we'll add our `require` statements. Paste in the following code at the top of the file.
 
-    ```javascript
+   ```javascript
     var Promise = require("bluebird");
     var redis = require("redis");
-    ```
+   ```
 
-1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to awaitable Promises. Paste in the following code.
+1. Next, we'll load our `.env` configuration, and use bluebird's `promisifyAll` function to convert the `redis` package's functions and methods to awaitable Promise. Paste in the following code.
 
-    ```javascript
+   ```javascript
     require("dotenv").config();
     Promise.promisifyAll(redis);
-    ```
+   ```
 
 1. Now, we'll initialize a Redis client. Paste in the boilerplate code from the previous unit (using `process.env` to access our host name, port and key) to create the client.
 
-    ```javascript
+   ```javascript
     const client = redis.createClient(
       process.env.REDISPORT,
       process.env.REDISHOSTNAME,
@@ -507,7 +507,7 @@ Now it's time to write the code for our application.
         tls: { servername: process.env.REDISHOSTNAME }
       }
     );
-    ```
+   ```
 
 ## Use the client to work with the cache
 
@@ -515,46 +515,46 @@ We're ready to write code to interact with our Redis cache.
 
 1. First, add an `async` function wrapper at the bottom of the file to contain our main code. We need this to be able to `await` the asynchronous function calls we'll be using. All of the rest of the code you'll be adding in this unit will be in this wrapper.
 
-    ```javascript
+   ```javascript
     (async () => {
 
       // The rest of the code you'll paste in goes here.
 
     })();
-    ```
+   ```
 
 1. Add a value to the cache with the `setAsync` method, and read it back with `getAsync`.
 
-    ```javascript
+   ```javascript
     console.log("Adding value to the cache");
     await client.setAsync("myKey", "myValue");
 
     console.log("Reading value back:");
     console.log(await client.getAsync("myKey"));
-    ```
+   ```
 
 1. Send a ping to the cache with `pingAsync`.
 
-    ```javascript
+   ```javascript
     console.log("Pinging the cache");
     console.log(await client.pingAsync());
-    ```
+   ```
 
 1. Delete all the keys in the cache with `flushdbAsync`.
 
-    ```javascript
+   ```javascript
     await client.flushdbAsync();
-    ```
+   ```
 
 1. Finally, close the connection with `quitAsync`.
 
-    ```javascript
+   ```javascript
     await client.quitAsync();
-    ```
+   ```
 
 1. Save the file. Your finished application should look like this.
 
-    ```javascript
+   ```javascript
     var Promise = require("bluebird");
     var redis = require("redis");
 
@@ -581,22 +581,22 @@ We're ready to write code to interact with our Redis cache.
       await client.flushdbAsync();
       await client.quitAsync();
     })();
-    ```
+   ```
 
 1. Run the application. In the Cloud Shell, execute the following command.
 
-    ```bash
+   ```bash
     node app.js
-    ```
+   ```
 
     You'll see the following results.
 
-    ```output
+   ```output
     Adding value to the cache
     Reading value back:
     myValue
     Pinging the cache
     PONG
-    ```
+   ```
 
 ::: zone-end
