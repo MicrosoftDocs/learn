@@ -25,6 +25,6 @@ products:
 modules:
 - learn.language.react-get-started
 - learn.language.react-work-with-components-and-data
-- learn.language.react-states-and-events
+- learn.language.react-states-events
 trophy:
   uid: learn.react.trophy
