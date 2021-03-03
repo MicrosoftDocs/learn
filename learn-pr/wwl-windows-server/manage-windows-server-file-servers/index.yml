@@ -3,7 +3,7 @@ uid: learn.wwl.manage-windows-server-file-servers
 metadata:
   title: Manage Windows Server file servers
   description: "Manage Windows Server file servers"
-  ms.date: 01/20/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   To get the best experience from this module, you should have knowledge and experience of:
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-windows-server-file-servers.svg
 levels:
 - beginner
 roles:

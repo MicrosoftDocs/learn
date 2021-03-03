@@ -1,4 +1,4 @@
-Before you connect the database to your app, you want to verify that you can connect to it, add a basic table, and work with sample data.
+Before you connect the database to your app, you'll want to verify that you can connect to it, add a basic table, and work with sample data.
 
 We maintain the infrastructure, software updates, and patches for your Azure SQL database. Beyond that, you can treat your Azure SQL database like you would any other SQL Server installation. For example, you can use Visual Studio, SQL Server Management Studio, Azure Data Studio, or other tools to manage your Azure SQL database.
 
@@ -32,7 +32,7 @@ Before you connect to your database, it's a good idea to verify that it exists a
 
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
-1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save typing, run this `azure configure` command to specify them as default values.
+1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save keystrokes, run this `azure configure` command to specify them as default values.
 
     Replace `[server-name]` with the name of your Azure SQL logical server.
 
@@ -43,21 +43,22 @@ Here, you use the `az` utility to list your databases and show some information 
     > [!NOTE]
     > Depending on the pane you are on in the portal, your SQL server name may be displayed as a FQDN (e.g. servername.database.windows.net). However, for this command, you only need the logical name without the .database.windows.net suffix.
 
-1. Run `az sql db list` to list all databases on your Azure SQL logical server.
+1. Run this `az sql db list` command to list all databases on your Azure SQL logical server.
 
     ```azurecli
     az sql db list
     ```
+
     You see a large block of JSON as output.
 
 1. Because we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to print out only the name fields.
-   
+
      ```azurecli
     az sql db list | jq '[.[] | {name: .name}]'
     ```
-    
+
     You should see this output.
-    
+
     ```json
     [
       {
@@ -99,7 +100,7 @@ Here, you use the `az` utility to list your databases and show some information 
 
 Now that you understand a bit about your database, let's connect to it using `sqlcmd`, create a table that holds information about transportation drivers, and perform a few basic CRUD operations.
 
-Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These terms refer to operations you perform on table data and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
+Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These terms refer to operations you perform on table data, and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
 
 1. Run this `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use.
 
@@ -135,12 +136,16 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > It may take up to five minutes for this change to take effect.
     > ```
     >
-    > If this happens, you will need to add another firewall rule for your client. To do so, use the following steps:
+    > If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
     >
     > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
     > 1. Search for and select your database.
+
     > 1. Select **Set server firewall**.
+
     > 1. Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
+
     > 1. Select **Save**.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
@@ -259,4 +264,4 @@ Cloud Shell makes it easy to access and work with your Azure resources. Because 
 
 You gained some hands-on experience running Azure CLI commands to get information about your Azure SQL database. As a bonus, you practiced your T-SQL skills.
 
-In the next unit, we'll wrap up this module and discuss how to tear down your database.
+In the next unit, we'll wrap up this module and describe how to tear down your database.

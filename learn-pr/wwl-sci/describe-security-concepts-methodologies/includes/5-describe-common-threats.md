@@ -24,7 +24,7 @@ A Distributed Denial of Service (DDoS) attack attempts to exhaust an application
 
 Other common threats include coin miners, rootkits, trojans, worms, and exploits and exploit kits. Rootkits intercept and change standard operating system processes. After a rootkit infects a device, you can’t trust any information that the device reports about itself.
 
-Trojans are a common type of malware, which, unlike viruses, can’t spread on their own. This means they either have to be downloaded manually or another malware needs to download and install them. Trojans often use the same file names as real and legitimate apps so it's easy to accidentally download a trojan thinking that it is legitimate.
+Trojans are a common type of malware which can’t spread on their own. This means they either have to be downloaded manually or another malware needs to download and install them. Trojans often use the same file names as real and legitimate apps so it's easy to accidentally download a trojan thinking that it is legitimate.
 
 A worm is a type of malware that can copy itself and often spreads through a network by exploiting security vulnerabilities. It can spread through email attachments, text messages, file-sharing programs, social networking sites, network shares, removable drives, and software vulnerabilities.
 
