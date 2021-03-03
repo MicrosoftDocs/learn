@@ -52,6 +52,5 @@ With the admin user has been created it is time for our first login to the Djang
 1. Click **SAVE**
 1. On the next screen, select **Staff status** to make the new user a staff user
 
-    ![User options screen](../media/staff-user.png)
-
+    :::image type="content" source="../media/staff-user.png" alt-text="Screenshot showing the User options window.":::
 1. Click **SAVE**
