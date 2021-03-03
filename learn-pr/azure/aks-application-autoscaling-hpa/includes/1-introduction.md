@@ -1,16 +1,16 @@
 Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion. They're looking for ways to scale the product to provide a better experience to all customers. Since the application is already deployed to a Kubernetes cluster, management tasked you to find solutions to scale the application without the need of many changes.
 
-You knew that AKS provides scalability tooling from Kubernetes straight out of the box, but you need to better understand the aspects of scalability and how to tune this tooling to your needs.
+You knew that AKS provides scalability tooling from Kubernetes straight out of the box. However, you need a better understanding of aspects of scalability and how to tune this tooling to your needs.
 
-In this module, you'll learn what scalability is and how to scale a Kubernetes application up and down using the native autoscaler provided by Kubernetes without the need of many changes in your infrastructure.
+In this module, you'll learn what scalability is and how to scale a Kubernetes application up and down using the native autoscaler that is provided by Kubernetes without the need of changes in your infrastructure.
 
-## Learning objectives
+## Learning goals
 
 By the end of this module, you'll be able to:
 
 - Understand the concept of scalability and how it applies to Kubernetes
 - Create and set up native scalability within AKS
-- Choose how to configure and fine tune HPAs
+- Choose how to configure and fine-tune HPAs
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/clou
 
 ## Before you begin
 
-This module assumes you already have a running cluster, to do that, you'll need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-application-scalability) has a script that will create the cluster, get the credentials and deploy the application to it. You'll need to run it before you begin with the following steps.
+This module assumes you already have a running cluster. You'll need to create the cluster with the required resources. The [GitHub repository for this sample](https://github.com/Azure-Samples/mslearn-aks-application-scalability) has a script that will create the cluster, get the credentials, and deploy the application to it. You'll need to run it before you begin with the following steps.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 

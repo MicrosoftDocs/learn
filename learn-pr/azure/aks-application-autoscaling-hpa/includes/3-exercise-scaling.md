@@ -2,7 +2,7 @@ The init script has already created all the application resources, it's now up t
 
 ## Create an HPA
 
-To start the scalability process, you'll need to create a HorizontalPorAutoscaler resource in the cluster which will point to the website deployment.
+To start the scalability process, you'll need to create a HorizontalPorAutoscaler resource in the cluster, which will point to the website deployment.
 
 > [!NOTE]
 > **If your AKS cluster version is less than 1.10**, the required Metrics Server will not be installed by default. HPAs can only work if they have a valid Metrics Server installation, you can install the Metrics Server on your cluster by downloading the [`components.yaml` file on the latest release](https://github.com/kubernetes-sigs/metrics-server/releases/latest/components.yaml).
@@ -13,7 +13,7 @@ To start the scalability process, you'll need to create a HorizontalPorAutoscale
 > kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 > ```
 
-As all Kubernetes resources, you can create a new HPA by writing an YAML file called `hpa.yaml`.
+As all Kubernetes resources, you can create a new HPA by writing a YAML file called `hpa.yaml`.
 
 ```yml
 apiVersion: autoscaling/v2beta2
@@ -61,13 +61,15 @@ spec:
           averageUtilization: 20
 ```
 
-This HPA is configured to query the native CPU metric, if this metrics goes above it's average of 20% for a specified amount of time, then it will scale the deploy out in a unit. The algorithm used to calculate this metric is based on this mathematical equation:
+This HPA is configured to query the native CPU metric, if this metric goes above it's average of 20% for a specified amount of time, then it will scale the deploy out in a unit.
+
+The algorithm used to calculate this metric is based on this mathematical equation:
 
 ```output
 desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricValue )]
 ```
 
-Since this is a website, it's a good practice to monitor the memory usage of the deployment. For this you'll need to add another item to the `metrics` array:
+Since the application is a website, it's a good practice to monitor the memory usage of the deployment. To calculate these metrics, you'll need to add another item to the `metrics` array:
 
 ```yml
 apiVersion: autoscaling/v2beta2
@@ -100,7 +102,7 @@ Create the HPA by running `kubectl apply -f hpa.yaml` in the same directory as t
 
 ## Check the results
 
-Now that the HPA is created, you can query it's metrics and usage by getting the HPA resource itself with `kubectl get hpa contoso-website`.
+Now that the HPA is created, you can query its metrics and usage by getting the HPA resource itself with `kubectl get hpa contoso-website`.
 
 ```output
 NAME              REFERENCE                    TARGETS          MINPODS   MAXPODS   REPLICAS   AGE
@@ -110,9 +112,9 @@ contoso-website   Deployment/contoso-website   5%/50%, 0%/20%   1         10    
 > [!NOTE]
 > It's possible that the HPA shows `unknown` metrics for the first few seconds as it's trying to reach the metrics API to fetch those from the server.
 
-If you generate enough web traffic, you'll be able to see the the scalability taking place when one of the metrics defined goes above the defined threshold.
+If you generate enough web traffic, you'll see the scalability taking place when one of the metrics defined goes above the defined threshold.
 
-For example, let's generate traffic using a tool called [hey](https://github.com/rakyll/hey), we'll run the command `hey -n 100000 -c 100 -m GET <your ingress URL>` to check the scalability, this will generate 100k requests from 100 different clients. If you monitor your HPA with `kubectl get hpa contoso-website -w` and do the same with the deployment with `kubectl get deploy contoso-website -w` you'll notice the fluctuation in CPU usage:
+For example, let's generate traffic using a tool called [hey](https://github.com/rakyll/hey), we'll run the command `hey -n 100000 -c 100 -m GET <your ingress URL>` to check the scalability, this tool will generate 100k requests from 100 different clients. If you monitor your HPA with `kubectl get hpa contoso-website -w`, and do the same with the deployment with `kubectl get deploy contoso-website -w` you'll notice the fluctuation in CPU usage:
 
 ```output
 NAME              REFERENCE                    TARGETS          MINPODS   MAXPODS   REPLICAS   AGE
