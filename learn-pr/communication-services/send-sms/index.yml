@@ -16,7 +16,7 @@ abstract: |
   - Provision a phone number using Azure Communication Services.
   - Send an SMS message using this phone number from a C# console application.
 
-iconUrl: /learn/achievements/advocates/send-crop-weather-alerts.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
