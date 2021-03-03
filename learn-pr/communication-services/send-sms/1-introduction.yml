@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.communication-services-sms.1-introduction
+uid: learn.azure.communication-service-send-sms-console-app.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Create a console application that sends SMS messages using Azure Communication Services.
   author: mikben
   ms.author: mikben
-  ms.date: 01/25/2021
-  ms.topic: tutorial
+  ms.date: 03/03/2021
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

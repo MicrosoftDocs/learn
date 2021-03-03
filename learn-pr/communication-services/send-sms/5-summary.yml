@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.communication-services-sms.5-summary
+uid: learn.azure.communication-service-send-sms-console-app.5-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary of what you learned in the module and next steps for learning.
   author: mikben
   ms.author: mikben
-  ms.date: 01/25/2021
-  ms.topic: tutorial
+  ms.date: 03/03/2021
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |

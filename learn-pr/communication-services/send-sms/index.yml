@@ -1,20 +1,20 @@
 ### YamlMime:Module
-uid: learn.advocates.communication-services-sms
+uid: learn.azure.communication-service-send-sms-console-app
 metadata:
-  title: Use Azure Communication Services to send an SMS message with a C# console application
+  title: Send an SMS message from a C# console application with Azure Communication Services
   description: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
-  ms.date: 01/25/2021
+  ms.date: 03/03/2021
   author: mikben
   ms.author: mikben
-  ms.topic: tutorial
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use Azure Communication Services to send an SMS message with a C# console application
+title: Send an SMS message from a C# console application with Azure Communication Services
 summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
 abstract: |
-  In this module you will:
-  - Create an Azure Communication Services resource.
-  - Provision a phone number using Azure Communication Services.
-  - Send an SMS message using this phone number from a C# console application.
+  By the end of this module, you'll be able to:
+  - Create and configure an Azure Communication Services resource
+  - Provision a phone number using the Azure portal
+  - Send a text message from a console application
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -26,15 +26,16 @@ products:
 - azure-communication-services
 - azure
 prerequisites: | 
-  - Basic familiarity with C#.
-  - An active Azure Subscription.
+  - Basic familiarity with C#
+  - The latest version of the [.NET Core client library](https://dotnet.microsoft.com/download/dotnet-core)
+  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
 
 units:
-- learn.advocates.communication-services-sms.1-introduction
-- learn.advocates.communication-services-sms.2-create-communication-services-account
-- learn.advocates.communication-services-sms.3-send-sms
-- learn.advocates.communication-services-sms.4-knowledge-check
-- learn.advocates.communication-services-sms.5-summary
+- learn.azure.communication-service-send-sms-console-app.1-introduction
+- learn.azure.communication-service-send-sms-console-app.2-create-communication-services-account
+- learn.azure.communication-service-send-sms-console-app.3-send-sms
+- learn.azure.communication-service-send-sms-console-app.4-knowledge-check
+- learn.azure.communication-service-send-sms-console-app.5-summary
 
 badge:
-  uid: learn.advocates.communication-services.badge
+  uid: learn.azure.communication-service-send-sms-console-app.badge
