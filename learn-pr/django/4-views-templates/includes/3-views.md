@@ -17,7 +17,7 @@ You can use the Django ORM to load any data needed from the registered database.
 
 #### 404 errors
 
-A 404 error in web applications means "not found". As a best practice, you should return a 404 whenever a request is made for an object which does not exist. Django provides a shortcut for attempting to load data, `get_object_or_404` and `get_list_or_404`. `get_object_or_404` will load an object by a primary key, or return a 404 to the user if one is not found. `get_list_or_404` will perform the same operation, except it accepts a filter parameter. We will use `get_object_or_404` in our exercise.
+A 404 error in web applications means "not found". As a best practice, you should return a 404 whenever a request is made for an object that doesn't exist. Django provides a shortcut for attempting to load data, `get_object_or_404` and `get_list_or_404`. `get_object_or_404` will load an object by a primary key, or return a 404 to the user if one is not found. `get_list_or_404` will perform the same operation, except it accepts a filter parameter. We will use `get_object_or_404` in our exercise.
 
 ### Rendering the template
 
