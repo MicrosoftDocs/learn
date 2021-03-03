@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.exercise-create-views 
+title: Exercise - Create views 
+metadata:
+  type: exercise  
+  title: Exercise - Create views
+  description: Create views to list the shelters in our database.
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-create-views.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.templates 
+title: Get started with Django templates 
+metadata:
+  type: exercise  
+  title: Get started with Django templates
+  description: Find out how to use templates to dynamically create HTML.
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-templates.md)]

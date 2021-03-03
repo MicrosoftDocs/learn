@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.introduction  
+title: Introduction  
+metadata:
+  type: introduction  
+  title: Introduction to templates and views
+  description: Templates allow you to dynamically create HTML. Use views to send the appropriate template to the user. 
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

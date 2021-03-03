@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.django.views-templates
+metadata:
+  type: standard  
+  title: Create views and templates in Django
+  description: Learn about the templating engine in Django to create dynamic HTML. In this module, you'll create views and use template variables, inheritance, and tags. 
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create views and templates in Django 
+summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information the user wants to access is created by this engine and presented through views. We will explore how the engine works, and the process of creating views in Django.
+abstract: | 
+  In this module, you will: 
+  - Work with views
+  - Use template variables and tags
+  - Add dynamic data to Django templates
+  - Use template inheritance
+prerequisites: | 
+  - Software:
+    - Visual Studio Code
+    - Git
+  - Coding skills:
+    - Understanding of HTML and CSS
+    - Basic understanding of Django
+    - Basic understanding of relational databases
+    - Intermediate level knowledge of Python, including:
+      - Package Management
+      - Virtual Environments
+      - Inheritance
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - student
+  - developer
+products:  
+  - azure
+  - vs-code
+  - azure-app-service
+units:  
+- learn.django.views-templates.introduction 
+- learn.django.views-templates.exercise-setup 
+- learn.django.views-templates.views 
+- learn.django.views-templates.exercise-create-views 
+- learn.django.views-templates.templates 
+- learn.django.views-templates.exercise-templates
+- learn.django.views-templates.knowledge-check
+- learn.django.views-templates.knowledge-check
+badge:  
+  uid: learn.django.views-templates.badge

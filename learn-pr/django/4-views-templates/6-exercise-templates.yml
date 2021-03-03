@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.exercise-templates
+title: Exercise - Create templates
+metadata:
+  type: exercise  
+  title: Exercise - Create templates
+  description: Create templates for the views you created earlier.
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-exercise-templates.md)]

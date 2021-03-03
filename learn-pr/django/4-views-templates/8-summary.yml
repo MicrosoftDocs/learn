@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.django.views-templates.knowledge-check
+title: Summary  
+metadata:
+  type: summary  
+  title: Summary
+  description: Summary.
+  ms.date: 3/2/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

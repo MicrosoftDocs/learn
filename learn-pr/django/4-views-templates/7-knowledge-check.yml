@@ -1,0 +1,35 @@
+uid: learn.django.views-templates.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding.
+  ms.date: 03/02/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+ questions:
+ - content: 'What can be a combination of alphanumeric characters and can include an underscore as long as it is not placed at the beginning?'
+   choices:
+   - content: 'tags'
+     isCorrect: false
+     explanation: 'This answer is not correct. Tags are used to add logic such as loops to an app template.'
+   - content: 'variables'
+     isCorrect: true
+     explanation: 'This answer is correct. Variables can be a combination of alphanumeric characters and can include an underscore as long as it is not placed at the beginning.'
+   - content: 'filters'
+     isCorrect: false
+     explanation: 'This answer is not correct. Filters are used to control how the data appears when requested.'
+ - content: 'When used as a filter what returns a number of elements in a list?'
+   choices:
+   - content: 'capfirst'
+     isCorrect: false
+     explanation: 'This answer is not correct. When used as a filter it capitalizes the first letter in every word.'
+   - content: 'block title'
+     isCorrect: false
+     explanation: 'This answer is not correct. This signifies to the Django template engine this information can be over written by a child template.'
+   - content: 'length'
+     isCorrect: true
+     explanation: 'This answer is correct. When used as a filter length can return the number of elements in a list.'
