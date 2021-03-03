@@ -135,7 +135,7 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > on the master database to create a firewall rule for this IP address or address range.
     > It may take up to five minutes for this change to take effect.
     > ```
-    >
+
 If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
 
 - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.

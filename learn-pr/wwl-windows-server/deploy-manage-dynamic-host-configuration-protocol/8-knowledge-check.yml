@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-dhcp.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about installing DHCP is true? Select one."
+    choices:
+    - content: "To install the DHCP server role, the installer must be a member of Enterprise Admins."
+      isCorrect: false
+      explanation: "That's incorrect. To install DHCP, you must belong to the local Administrators group on the target server."
+    - content: "The DHCP server must have a static IP address."
+      isCorrect: true
+      explanation: "That's correct. A DHCP must have a manually assigned static IP address."
+    - content: "To authorize a newly deployed server, you must use Windows PowerShell."
+      isCorrect: false
+      explanation: "That's incorrect. You can also authorize a DHCP server using Server Manager and Windows Admin Center."
+  - content: "Which of the following options is rarely, if ever, assigned as a Server level option?"
+    choices:
+    - content: "003: Router"
+      isCorrect: true
+      explanation: "That's correct. A router, or default gateway, is a subnet specific value. You would not configure this value at the Server level."
+    - content: "015: DNS domain name"
+      isCorrect: false
+      explanation: "That's incorrect. The DNS domain name is likely common for most client computers in an AD DS domain. Therefore, configuring this at the Server level is likely."
+    - content: "006: DNS servers"
+      isCorrect: false
+      explanation: "That's incorrect. The DNS client settings configured with this value are often assigned at the Server level."
+  - content: "Which DHCP high availability option supports hot standby to provide the DHCP service."
+    choices:
+    - content: "DHCP clustering"
+      isCorrect: false
+      explanation: "That's incorrect. In this scenario, the DHCP configuration information is stored on shared storage."
+    - content: "DHCP split scopes"
+      isCorrect: false
+      explanation: "That's incorrect. In this case, each DHCP server controls a part of the entire range of IP addresses, and both servers are active on the same network."
+    - content: "DHCP Failover"
+      isCorrect: true
+      explanation: "That's correct. The DHCP Failover feature allows two DHCP servers to work together to provide IP address information to clients. They can operate in two modes: Hot standby and Load balance."

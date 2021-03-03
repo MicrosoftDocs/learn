@@ -34,7 +34,7 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
 
 1. In the top menu bar, select **New registration**. The **Register an application** pane appears.
 
-1. Enter the following values for each field. then 
+1. Enter the following values for each field.
 
     | Field | Value |
     | --- | --- |
