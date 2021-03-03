@@ -34,6 +34,10 @@ In this unit, you'll use your Communication Services phone number to send an SMS
 
 1. Replace the body of the `Main` method with code to initialize an `SmsClient` with your connection string.
 
+   ```c-sharp
+   string connectionString = <your-connection-string>;
+   SmsClient smsClient = new SmsClient(connectionString);
+
 1. Send an SMS message by calling the `Send` method. Add this code to the end of `Main` method in `Program.cs`:
 
     ```c-sharp
