@@ -11,7 +11,7 @@ cam_like = 0
 kai_like = 0
 indy_like = 0
 
-# update scoring variables based on the weapon choice
+# update scoring variables based on the activity choice
 if activity == "A":
     sam_like = sam_like + 1
     indy_like = indy_like + 1

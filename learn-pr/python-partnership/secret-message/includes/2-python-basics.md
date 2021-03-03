@@ -20,9 +20,9 @@ Coding is essentially the movement and manipulation of data. Imagine writing a m
 
 In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as code names for information that we want our program to remember and have access to later.
 
-The following command tells Python to associate the code name or variable `town` with the name of a town called "Contosoville." (This is also a clue to the mystery of the secret, encoded message.)
+The following command tells Python to associate the code name or variable `town` with the name of a town called "Contosoville."
 
-To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `town`, it will substitute the value "Contsoville"! Contosoville just might be the mystery location you are looking for.
+To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `town`, it will substitute the value "Contosoville"! Contosoville just might be the mystery location you are looking for.
 
 ```python
 # Associate variable town with the value "Contosoville"

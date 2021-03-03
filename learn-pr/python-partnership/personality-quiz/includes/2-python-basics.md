@@ -109,7 +109,7 @@ if year == 1990:
     print( "I left you a message on your answering machine!" )
 # if we're in 2026
 if year == 2026:
-    print( "I sent you a text!" )
+    print( "I sent you a text message!" )
 ```
 
 Press the **Run** button, and you should see state-of-the-art messaging.
