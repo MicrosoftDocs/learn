@@ -23,8 +23,8 @@ quiz:
     - content: Rehost
       isCorrect: false
       explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Rehosting is for Migration of your application.
-    - content: C.
-      isCorrect: Replace
+    - content: Replace
+      isCorrect: false
       explanation: Refactor, Rearchitect, Rebuild are the options for a modernization of your application to run in Azure. Replace removes the application from your care and leverages a Software as a Service (SaaS) product.
   - content: Can Linux and open-source databases run IaaS and PaaS solutions in Azure ?
     choices:
