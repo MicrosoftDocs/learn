@@ -61,7 +61,7 @@ We will use the integrated terminal in Visual Studio Code to avoid changing wind
 
 ## Django installation
 
-The most common way to manage Python packages is through the use of a [requirements or requirements.txt file](https://pip.pypa.io/en/latest/user_guide/?azure-portal=true#requirements-files). **requirements.txt** is a text file which lists the packages your application uses. Let's create our **requirements.txt** file, add Django, and then install the library.
+The most common way to manage Python packages is through the use of a [requirements or requirements.txt file](https://pip.pypa.io/en/latest/user_guide/?azure-portal=true#requirements-files). **requirements.txt** is a text file that lists the packages your application uses. Let's create our **requirements.txt** file, add Django, and then install the library.
 
 1. Inside Visual Studio Code, create a new file named **requirements.txt** inside your **hello_django** folder
 1. Add the following to **requirements.txt**
