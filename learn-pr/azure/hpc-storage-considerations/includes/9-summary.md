@@ -95,4 +95,4 @@ IETF NFS RFCs:
 - [RFC 5331: RPC: Remote Procedure Call Protocol Specification Version 2](https://tools.ietf.org/html/rfc5531)
 - [Lustre File System](https://www.lustre.org)
 - [IBM Spectrum Scale (GPFS)](https://www.ibm.com/products/spectrum-scale)
-- [BeeGFS](www.beegfs.io)
+- [BeeGFS](https://www.beegfs.io)
