@@ -4,7 +4,7 @@ title: License and activate Windows Server
 metadata:
   title: License and activate Windows Server
   description: "License and activate Windows Server"
-  ms.date: 01/18/2021
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-license-and-activate-windows-server.md)]
+  [!include[](includes/4-license-activate-windows-server.md)]

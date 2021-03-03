@@ -5,7 +5,7 @@ Microsoft's cybersecurity group in conjunction with the Center for Internet Secu
 Microsoft initially partnered with CIS for the development of an off-the-shelf [hardened Azure VM](https://www.cisecurity.org/hardened-images/). An initiative then began to use the CIS Benchmarks (their term for best practices) with Azure security services and tools to facilitate security and compliance for customer applications running on Azure services.
 
 > [!TIP]
-> The [CIS Microsoft Azure Foundations Security Benchmark](https://azure.microsoft.com/resources/cis-microsoft-azure-foundations-security-benchmark/) guide provides prescriptive guidance for establishing a secure baseline configuration for Azure. This guide was tested against the listed Azure services as of March 2018. The scope of this benchmark is to establish the foundational level of security for anyone adopting Azure.
+> The [CIS Microsoft Azure Foundations Security Benchmark](https://www.cisecurity.org/benchmark/azure/) guide provides prescriptive guidance for establishing a secure baseline configuration for Azure. This guide was tested against the listed Azure services as of March 2018. The scope of this benchmark is to establish the foundational level of security for anyone adopting Azure.
 
 ## Create a platform security baseline
 
