@@ -32,7 +32,6 @@ if value == "A":
     sam_like = sam_like - 1
     kai_like = kai_like + 2
 else:
-    sam_like = sam_like + 1
     cam_like = cam_like + 2
     indy_like = indy_like + 1
 
