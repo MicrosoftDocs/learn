@@ -1,5 +1,7 @@
 ## Learning objectives
 
+You can use Azure Communication Services to provision a phone number and send SMS messages. You might want to send an SMS message when a package delivery is delayed or completed, for example.
+
 In this module, you'll:
 
 - Create and configure a Communication Services resource
