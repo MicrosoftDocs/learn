@@ -13,11 +13,7 @@ durationInMinutes: 1
 quiz:
   title: 'Knowledge check'
   questions:
-<<<<<<< HEAD
   - content: 'How can Azure Communication Services be used to send an SMS message?'
-=======
-  - content: 'What do you need to do to send an SMS message using Azure Communication Services?'
->>>>>>> cf3c2729e3db7d2fbf483ae83380f3fd3114bbbd
     choices:
     - content: 'I can create a Communication Services resource using the Azure portal. This allows me to provision phone numbers.'
       isCorrect: false
