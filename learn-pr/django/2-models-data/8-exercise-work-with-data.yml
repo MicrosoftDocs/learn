@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.work-with-data
+title: Exercise - Work with data
+metadata:
+  title: Exercise - Work with data
+  description: Create and retrieve data from a database in Azure.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-exercise-work-with-data.md)] 

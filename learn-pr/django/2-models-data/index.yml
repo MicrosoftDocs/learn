@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.django.models-data
+metadata:
+  title: Work with models and data in Django
+  description: Explore models and data in Django. Learn about the objection-relational mapper, create your own models, and set up a database.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with models and data in Django
+summary: Django is focused on data-driven applications, so it provides its own objection-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.
+abstract:  | 
+  In this module, you'll learn how to:
+  - Describe an object relational mapping (ORM).
+  - Create a SQLite database in Django.
+  - Create and activate Django models.
+  - Explain the purpose of the `__str__` method in classes.
+  - Create and query data in your database.
+prerequisites:  | 
+  - Software:
+    - Visual Studio Code
+    - Git
+  - Coding skills:
+    - Understanding of HTML and CSS
+    - Basic understanding of Django
+    - Basic understanding of relational databases
+    - Intermediate understanding of Python, including:
+      - Package management
+      - Virtual environments
+      - Inheritance
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure
+- vs-code
+- azure-app-service
+units:
+- learn.django.models-data.introduction
+- learn.django.models-data.exercise-get-starter
+- learn.django.models-data.orm-introduction
+- learn.django.models-data.models
+- learn.django.exercise-create-models
+- learn.django.manage-database
+- learn.django.exercise-manage-database
+- learn.django.work-with-data
+- learn.django.models-data.knowledge-check
+- learn.django.models-data.summary
+badge:
+  uid: learn.django.models-data.badge

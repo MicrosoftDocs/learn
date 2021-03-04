@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.models-data.orm-introduction
+title: Django objection-relational mapper
+metadata:
+  title: Django objection-relational mapper
+  description: Explore the concepts of an objection-relational mapper and how it works in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-orm-introduction.md)] 

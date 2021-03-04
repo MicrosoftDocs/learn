@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.models-data.exercise-get-starter
+title: Exercise - Set up the project and install Django
+metadata:
+  title: Exercise - Set up the project and install Django
+  description: Get the starter project and install Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-exercise-get-starter.md)] 
