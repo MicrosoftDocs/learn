@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-administer-conditional-access
 metadata:
   title: Plan, implement, and administer conditional access
   description: "Plan, implement, and administer conditional access"
-  ms.date: 03/03/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -26,6 +26,8 @@ levels:
 - advanced
 roles:
 - administrator
+- identity-access-admin
+- security-engineer
 products:
 - azure
 - azure-active-directory
