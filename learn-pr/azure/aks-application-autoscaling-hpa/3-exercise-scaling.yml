@@ -3,7 +3,7 @@ uid: aks-application-autoscaling-hpa.3-exercise-scaling
 metadata:
   title: Exercise - Create your HorizontalPodAutoscaler
   description: Exercise - Create your HorizontalPodAutoscaler
-  ms.date: 03/20/2021
+  ms.date: 03/04/2021
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
