@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-data-protection-and-privacy.6-how-microsoft-support-protection-and-privacy
+uid: learn.azure.introduction-data-protection-and-privacy.5-how-microsoft-support-protection-and-privacy
 title: How does Microsoft support data protection and privacy?
 metadata:
   title: How does Microsoft support data protection and privacy?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-how-microsoft-support-protection-and-privacy.md)]
+  [!include[](includes/5-how-microsoft-support-protection-and-privacy.md)]
