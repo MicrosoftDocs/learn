@@ -54,4 +54,4 @@ quiz:
       explanation: 'Azure Communication Services supports users and bots interacting over the public switched telephony network.'
     - content: 'All of the above'
       isCorrect: true
-      explanation: 'Great job! You've learned about the Azure Communication Services scenarios.'
+      explanation: "Great job! You've learned about the Azure Communication Services scenarios."
