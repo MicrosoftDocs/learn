@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.3-performance-considerations
+title: File system performance considerations
+metadata:
+  title: File system performance considerations
+  description: A discussion of the five performance factors that impact storage and how to determine what tools to use to determine your HPC workload's performance requirements
+  ms.date: 12/29/2020
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-performance-considerations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Small block sizes will reduce performance your file sizes are:"
+    choices:
+    - content: "Small files"
+      isCorrect: false
+      explanation: "Small block sizes combined with small file sizes will not impair performance"
+    - content: "Large Files"
+      isCorrect: true
+      explanation: "Small block sizes combined with large files results in lower performance due to breaking down large files to fit the smaller block size"
+  - content: "If you have a disk that supports 5000 IOPS and your block size is 4K, your total possible throughput is"
+    choices:
+    - content: "9 MB/s"
+      isCorrect: false
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"
+    - content: "15 MB/s"
+      isCorrect: false
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"
+    - content: "20 MB/s"
+      isCorrect: true
+      explanation: "5000 IOPS * 4K block size = 20 MB/s"
