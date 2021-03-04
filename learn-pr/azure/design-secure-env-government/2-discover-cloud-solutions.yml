@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 1
 content: |
   [!include[](includes/2-discover-cloud-solutions.md)] 

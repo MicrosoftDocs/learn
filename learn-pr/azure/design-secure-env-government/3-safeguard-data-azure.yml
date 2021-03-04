@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 1
 content: |
   [!include[](includes/3-safeguard-data-azure.md)] 
