@@ -8,7 +8,7 @@ A management baseline is the minimum set of tools applied to all resources in th
 
 The module will then discuss how to enhance the management baseline. In the end of the module we will talk about how the specialization principles and platform specialization. Both workload specialization and platform specialization can support our most critical workloads and platforms. The start of the module will look into business alignment to make sure everyone uses the same terms. The image below shows the components of a management baseline that this module will cover.
 
-:::image type="content" source="../media/overview001.png" alt-text="Overview of business alignment showing criticality, impact, and commitment." border="false":::
+:::image type="content" source="../media/overview-001.png" alt-text="Overview of business alignment showing criticality, impact, and commitment." border="false":::
 
 ### Module Scenario
 
