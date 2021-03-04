@@ -3,7 +3,7 @@ uid: learn.wwl.implement-group-policy-objects
 metadata:
   title: Implement Group Policy Objects
   description: "Implement Group Policy Objects"
-  ms.date: 01/20/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ prerequisites: |
   - Core networking technologies.
   - Windows client operating systems such as Windows 10.
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-group-policy-objects.svg
 levels:
 - intermediate
 roles:
