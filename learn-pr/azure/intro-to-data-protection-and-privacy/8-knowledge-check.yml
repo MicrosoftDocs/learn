@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-data-protection-and-privacy.8-knowledge-check
+uid: learn.azure.introduction-data-protection-and-privacy.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -31,23 +31,23 @@ quiz:
 
   - content: "What is CCPA?"
     choices:
-    - content: "Data protection policy"
+    - content: "A data protection policy"
       isCorrect: false
       explanation: "That's incorrect. CCPA is not a data protection policy."
-    - content: "Comprehensive privacy law"
+    - content: "A comprehensive privacy law"
       isCorrect: true
       explanation: "That's correct. CCPA is the first comprehensive privacy law in the United States."
-    - content: "Data encryption policy"
+    - content: "A data encryption policy"
       isCorrect: false
       explanation: "That's incorrect. CCPA is not a data encryption policy."
 
 
   - content: "What is a processor?"
     choices:
-    - content: "A person, public authority, agency, or other body that alone or jointly with others determines the purposes and means of the processing of personal data."
+    - content: "A person, public authority, agency, or other body that alone or jointly with others, determines the purposes and means of the processing of personal data."
       isCorrect: false
       explanation: "That's incorrect. A processor does not determine the purpose of processing of personal data."
-    - content: "A part of a data protection technology that processes users' data."
+    - content: "A part of a data-protection technology that processes users' data."
       isCorrect: false
       explanation: "That's incorrect. A processor is not part of a data protection technology."
     - content: "A natural or legal person, public authority, agency, or other body that processes personal data on behalf of the controller."
@@ -65,7 +65,7 @@ quiz:
       explanation: "That's incorrect. Not using content-based targeting is one of the key privacy principles that Microsoft follows when dealing with customer data."
     - content: "Sharing"
       isCorrect: true
-      explanation: "That's correct. Microsoft never shares your data."
+      explanation: "That's correct. The six key principles that Microsoft follows when dealing with customer data are: control, transparency, security, strong legal protections, no content-based targeting and benefit to you."
 
 
   - content: "Which Microsoft resources help an administrator learn how Microsoft implements and supports security, privacy, compliance, and transparency in all its cloud products and services?"
