@@ -1,0 +1,2 @@
+> [!NOTE]
+> This exercise is optional. If you want to complete this exercise, you will need to create an Azure subscription before you begin. If you don't have an Azure account or you don't want to create one at this time, you can read through the instructions so you understand the information that is being presented.
