@@ -1,4 +1,4 @@
-Here you'll set up the resources you'll need for use throughout this module. Let's envision a basic architecture consisting of a server hosting an application that your customers use, which connects to a database for the storage of its data. The application runs on a virtual machine, and the database has been recently migrated from a SQL Server database running on a VM to a database on the Azure SQL Database service. To show how you can secure your database, we're going to set up the following resources for use throughout this module:
+Here, you'll set up the resources you'll need for use throughout this module. Let's envision a basic architecture consisting of a server hosting an application that your customers use, which connects to a database for the storage of its data. The application runs on a virtual machine, and the database has been recently migrated from a SQL Server database running on a VM to a database on the Azure SQL Database service. To show how you can secure your database, we're going to set up the following resources for use throughout this module:
 
 - A Linux VM named _appServer_. This server will act as the application server that users would be connecting to, and will need to connect to the database. We'll install `sqlcmd` on the VM to simulate an application running on _appServer_ making connections to the database.
 - An Azure SQL Database logical server. This logical server is needed to host one or more databases.
@@ -29,10 +29,10 @@ Let's get things set up!
         --resource-group $RESOURCEGROUP \
         --location $LOCATION \
         --admin-user $ADMINLOGIN \
-        --admin-password "$PASSWORD"
+        --admin-password $PASSWORD
     ```
 
-1. Now run the following to create the database called **marketplaceDb** on the logical server you just created. This will use the _AdventureWorksLT_ database as a template so we'll have some pre-populated tables to work with.
+1. Now, run the following to create the database called **marketplaceDb** on the logical server you just created. This will use the _AdventureWorksLT_ database as a template so we'll have some pre-populated tables to work with.
 
     ```azurecli
     az sql db create --resource-group $RESOURCEGROUP \
@@ -56,7 +56,7 @@ Let's get things set up!
 
 ## Create and configure a Linux virtual machine
 
-Now let's create the Linux VM that we'll use through some examples.
+Let's create the Linux VM that we'll use through some examples.
 
 1. Run the following command to create the VM; this might take several minutes to complete.
 
@@ -69,7 +69,7 @@ Now let's create the Linux VM that we'll use through some examples.
       --generate-ssh-keys
     ```
 
-    When this command completes, you should see output that resembles the following example:
+    When this command completes, you should see output that resembles the following example.
 
     ```json
     {
@@ -85,7 +85,7 @@ Now let's create the Linux VM that we'll use through some examples.
     }
     ```
 
-1. Once your VM is successfully created, connect to its public IP address using SSH.
+1. After your VM is successfully created, connect to its public IP address using SSH.
 
     ```azurecli
     ssh nnn.nnn.nnn.nnn
@@ -96,7 +96,7 @@ Now let's create the Linux VM that we'll use through some examples.
     > [!NOTE]
     > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, on the initial shell connection into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
 
-1. Now let's finish things up by installing mssql-tools on the Linux VM so we'll be able to connect to our database through sqlcmd.
+1. Let's finish things up by installing mssql-tools on the Linux VM so we'll be able to connect to our database through sqlcmd.
 
     ```bash
     echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bash_profile
@@ -109,6 +109,6 @@ Now let's create the Linux VM that we'll use through some examples.
     ```
 
     > [!NOTE]
-    > A lot of text will scroll by for some of these commands, so make sure you hit enter after the final command to ensure it runs.
+    > A lot of text will scroll by for some of these commands, so make sure you press <kbd>Enter</kbd> after the final command to ensure it runs.
 
 We've created an Azure SQL Database logical server, a database on that logical server, and a virtual machine called _appServer_ that we'll use to simulate network connectivity from an application server. Let's take a look at how we can properly secure our database.

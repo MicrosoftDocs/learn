@@ -3,7 +3,7 @@ uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
   title: Use watchlists in Azure Sentinel
   description: "Use watchlists in Azure Sentinel"
-  ms.date: 02/17/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -15,11 +15,11 @@ abstract: |
   - Create a watchlist in Azure Sentinel
   - Use KQL to access the watchlist in Azure Sentinel
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/use-watchlists-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel

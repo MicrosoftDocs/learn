@@ -1,6 +1,6 @@
 Now that your Azure SQL database is up and running, you can connect it to your favorite SQL Server management tool to populate it with real data.
 
-You initially considered whether to run your database on-premises or in the cloud. With Azure SQL Database, you configure a few basic options and you have a fully functional SQL database that you can connect to your apps.
+You initially considered whether to run your database on-premises or in the cloud. With Azure SQL Database, you configure a few basic options, and you have a fully functional SQL database that you can connect to your apps.
 
 There's no infrastructure or software patches to maintain. You're now free to focus more on getting your transportation logistics app prototype up and running and less on database administration. Your prototype won't be a throw-away demo, either. Azure SQL Database provides production-level security and performance features.
 
