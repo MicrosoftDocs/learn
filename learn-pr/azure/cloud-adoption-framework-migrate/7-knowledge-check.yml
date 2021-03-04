@@ -36,7 +36,7 @@ quiz:
       explanation: A team of people who understand the Azure platform should be formed as part of the migration project but this is not necessarily the objective of the "assess workloads" part of the project. 
     - content: Gather information regarding cloud compatibility and dependencies between servers and assets. 
       isCorrect: true
-      explanation: The "Assess workloads" phase of the migration project should be focussed on information gathering that can help your organization understand the migration path for each workload or asset. 
+      explanation: The "Assess workloads" phase of the migration project should be focused on information gathering that can help your organization understand the migration path for each workload or asset. 
     - content: Test and release production traffic to the migrated workloads.
       isCorrect: false
       explanation: The release of production to workloads in the cloud should only after proper planning and migration. 
@@ -56,4 +56,4 @@ quiz:
       explanation: An example of a technical blocker would be a workload that is not suitable for migration to the cloud. 
     - content: Strategy blocker.
       isCorrect: true
-      explanation: Setting the correct expectations across your organization in terms of timeframe, budget requirements, etc when embarking on a migration project can help avoid confusion and delays. 
+      explanation: Setting the correct expectations across your organization in terms of timeframe, budget requirements, etc. when embarking on a migration project can help avoid confusion and delays. 

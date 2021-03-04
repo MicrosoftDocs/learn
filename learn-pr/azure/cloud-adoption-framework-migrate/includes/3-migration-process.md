@@ -49,6 +49,6 @@ Technology is seldom the blocker to the migration process flow. Most of the bloc
 
 **Technical blockers to migration disciplines:** Occasionally, workloads may be blocked due to increased needs in remediation, modernization, or changes to the rationalization strategy. When individual workloads are blocked, they can be addressed by technical spikes, which remove problematic workloads from the standard flow.
 
-Technical spikes are usually addressed in a parallel sprint by a seperate team. Many of the technical issues around remediation and modernization can be addressed using the CAF migration scenarios to be shared at the end of this module.
+Technical spikes are usually addressed in a parallel sprint by a separate team. Many of the technical issues around remediation and modernization can be addressed using the CAF migration scenarios to be shared at the end of this module.
 
 When a workload requires comprehensive changes that impact the application architecture, workload teams should review the [Well-Architected Framework](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction/) Learn module for additional guidance.
