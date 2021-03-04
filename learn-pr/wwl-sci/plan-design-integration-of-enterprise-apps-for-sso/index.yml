@@ -3,7 +3,7 @@ uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
   title: Plan and design the integration of enterprise apps for SSO
   description: "Plan and design the integration of enterprise apps for SSO"
-  ms.date: 01/29/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -23,6 +23,7 @@ levels:
 - advanced
 roles:
 - administrator
+- identity-access-admin
 - security-engineer
 products:
 - azure
