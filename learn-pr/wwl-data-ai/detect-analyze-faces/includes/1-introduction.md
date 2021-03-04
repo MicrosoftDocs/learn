@@ -1,6 +1,6 @@
 Face detection and analysis is an area of artificial intelligence (AI) in which we use algorithms to locate and analyze human faces in images or video content.
 
-## Face detection     
+## Face detection         
 
 Face detection involves identifying regions of an image that contain a human face, typically by returning *bounding box* coordinates that form a rectangle around the face, like this:
 
