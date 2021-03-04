@@ -8,7 +8,7 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Plan an Azure VMware Solution deployment
+title: Plan network topology for Azure VMware Solution deployment
 durationInMinutes: 10
 content: |
   [!include[](includes/3-plan-network-topology.md)]
