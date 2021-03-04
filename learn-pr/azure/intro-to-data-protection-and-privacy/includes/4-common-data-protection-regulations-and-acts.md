@@ -25,7 +25,7 @@ When learning about GDPR, some additional important terms to know include:
 
 - Legal basis for processing.  Under the GDPR, organizations must be able to point to a “legal basis” for processing personal data. The GDPR provides six grounds for processing, including where the processing is necessary to perform a contract, where an individual has consented to the processing of their data, or where the processing is in the organization’s “legitimate interest,” provided that interest is not outweighed by the individual’s rights.
 
-- Data subject rights. The GDPR establishes data subject rights which, in certain circumstances, give individuals certain rights with respect to an organization’s or data controller’s use of their personal data. Data subject rights under GDPR include the right to:
+- Data subject rights. The GDPR establishes data subject rights which, *in certain circumstances*, give individuals certain rights with respect to an organization’s or data controller’s use of their personal data. Data subject rights under GDPR include the right to:
 
   - Have access to their data. Individuals have a right to know whether an organization is processing their data and, if so, to have access to that data.
 
@@ -76,4 +76,4 @@ Similarities between GDPR and CCPA include:
 
 - They both provide individuals with unique rights over how their data is processed.
 
-One significant difference between the GDPR and CCPA is that the CCPA includes the right for consumers to opt-out from the sale of their personal data to third parties. The term sale has a specific meaning under the CCPA, so you should work with your legal team to understand whether or not your organization might be selling data.
+One significant difference between the GDPR and CCPA is that the CCPA includes the right for consumers to opt-out from the sale of their personal data to third parties. The term *sale* has a specific meaning under the CCPA, so you should work with your legal team to understand whether or not your organization might be selling data.
