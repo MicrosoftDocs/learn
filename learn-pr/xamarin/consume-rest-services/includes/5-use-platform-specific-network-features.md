@@ -158,6 +158,10 @@ The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to dete
 ```csharp
 public static string BaseAddress =
     DeviceInfo.Platform == DevicePlatform.Android ? "``http://10.0.2.2:5000``" : "``http://localhost:5000``";
+<<<<<<< HEAD
+=======
+public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
+>>>>>>> ff5c6310bd5237475a7ee99f1310dd56edc7716c
 ```
 
 To learn more, visit the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
