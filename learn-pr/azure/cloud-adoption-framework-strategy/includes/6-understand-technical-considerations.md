@@ -50,4 +50,4 @@ Additional examples of first adoption projects include:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Fill in the section under the "First Adoption Project" header. Use the technical considerations discussed in this unit to define a first project for the team to use to evaluate technical considerations.
+If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the "First Adoption Project" header. Use the technical considerations discussed in this unit to define a first project for the team to use to evaluate technical considerations.

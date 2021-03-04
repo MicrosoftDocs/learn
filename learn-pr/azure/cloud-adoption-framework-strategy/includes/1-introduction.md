@@ -11,7 +11,7 @@ In this module, you will:
 - Evaluate financial considerations to understand the value of cloud adoption
 - Evaluate technical considerations to help the team prepare for successful cloud adoption projects
 
-To support these learning objective, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx) to record strategic decisions made during the completion of this module.
+To support these learning objective, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true) to record strategic decisions made during the completion of this module.
 
 ## Prerequisites
 
