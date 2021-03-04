@@ -66,15 +66,15 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
 
-1.  The **Function App (Windows)** window appears. Maintain all the default selections, and select **Create**.
+1.  The **Function App (Windows)** window appears. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
 
     :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
 
-1. The **Publish** window reappears with the Azure Function App appearing. Select **Finish**.
+1. The **Publish** window reappears with the Azure Function App displayed. Select **Finish**.
 
     :::image type="content" source="../media/5-function-app-publish.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Finish." loc-scope="vs":::
 
-1. In Visual Studio, select **Publish**.
+1. On the **Publish** window, select **Publish**.
 
     :::image type="content" source="../media/5-visual-studio-publish.png" alt-text="[Screenshot of Visual Studio. The user to select Finish." loc-scope="vs":::
 

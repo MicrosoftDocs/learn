@@ -11,13 +11,13 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
+To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs, and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
 
-On the main page of your repository, click the *Actions* tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node, and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
+On the main page of your repository, select the *Actions* tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node; and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 
 :::image type="content" source="../media/2-workflow-template.png" alt-text="GitHub Actions tab with the New Workflow button highlighted and the Node.js template selected." border="true":::
 
-Take a look at the Node.js template workflow below.
+Take a look at the following Node.js template workflow.
 
 ```yml
 name: Node.js CI
@@ -48,11 +48,11 @@ jobs:
     - run: npm test
 ```
 
-Notice the ```on:``` attribute. This workflow is triggered on a push to the repository as well as when a pull request is made against the master branch.
+Notice the ```on:``` attribute. This workflow is triggered on a push to the repository, as well as when a pull request is made against the master branch.
 
-There is one ```job``` in this workflow. Let's go over what it does.
+There is one ```job``` in this workflow. Let's review what it does.
 
-The ```runs-on:``` attribute specifies that, for the operating system, the workflow runs on ```ubuntu-latest```. The ```node-version:``` attribute specifies that there will be two builds, one for Node version 10.x and one for Node version 12.x. We'll discuss the ```matrix``` portion in depth later, when we customize the workflow.
+The ```runs-on:``` attribute specifies that, for the operating system, the workflow runs on ```ubuntu-latest```. The ```node-version:``` attribute specifies that there will be two builds, one for Node version 10.x and one for Node version 12.x. We'll describe the ```matrix``` portion in depth later, when we customize the workflow.
 
 The ```steps``` in the job use the GitHub Actions [actions/checkout@v2](https://github.com/actions/checkout?azure-portal=true) action to get the code from your repository into the VM, and the [actions/setup-node@v1](https://github.com/actions/setup-node?azure-portal=true) action to set up the right version of Node.js. We specify that we're going to test two versions of Node.js with the ```${{ matrix.node-version }}``` attribute. This attribute points to the matrix we defined at the top of the file.
 
@@ -73,9 +73,9 @@ If there is an error or if a test has failed, you see a red X rather than a gree
 
 In the exercise, you identify failed tests by examining the details in the logs. You can access the logs from the *Actions* tab.
 
-## Customizing workflow templates
+## Customize workflow templates
 
-Recall that, at the beginning of this module, we described a scenario where you need to set up CI for your team. The Node.js template is a great start but you want to customize it to better suit your own team's requirements. You want to target different versions of Node and different operating systems. You will probably also want to separate the build and test steps into separate jobs.
+Recall that, at the beginning of this module, we described a scenario where you need to set up CI for your team. The Node.js template is a great start, but you want to customize it to better suit your own team's requirements. You want to target different versions of Node and different operating systems. You'll probably also want to separate the build and test steps into separate jobs.
 
 Let's take a look at how you customize a workflow.
 
@@ -121,7 +121,7 @@ Storing an artifact helps to preserve it between jobs. Each job uses a fresh ins
 
 Artifacts are stored in storage space on GitHub. The space is free for public repositories and some amount is free for private repositories, depending on the account. GitHub stores your artifact for 90 days.
 
-In the workflow snippet below, notice that in the ```actions/upload-artifact@master``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it was just a file that we wanted to upload, we could use something like *public/mytext.txt*.
+In the following workflow snippet, notice that in the ```actions/upload-artifact@master``` action there is a ```path:``` attribute. This is the path to store the artifact. Here, we specify *public/* to upload everything to a directory. If it was just a file that we wanted to upload, we could use something like *public/mytext.txt*.
 
 ```yml
   build:
@@ -138,7 +138,7 @@ In the workflow snippet below, notice that in the ```actions/upload-artifact@mas
           path: public/
 ```
 
-In order to download the artifact for testing, the build must have completed successfully and uploaded the artifact. Below, we specify that the test job depends on the build job.
+To download the artifact for testing, the build must have completed successfully and uploaded the artifact. In the following code, we specify that the test job depends on the build job.
 
 ```yml
 test:
@@ -146,7 +146,7 @@ test:
     runs-on: ubuntu-latest
 ```
 
-In the workflow snippet below, you see we download the artifact. Now the test job can use the artifact for testing.
+In the following workflow snippet, you see we download the artifact. Now the test job can use the artifact for testing.
 
 ```yml
 steps:
@@ -157,13 +157,13 @@ steps:
         path: public
 ```
 
-For more information on using artifacts in workflows see [Persisting workflow data using artifacts](https://help.github.com/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts?azure-portal=true) in the GitHub documentation.
+For more information about using artifacts in workflows see [Persisting workflow data using artifacts](https://help.github.com/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts?azure-portal=true) in the GitHub documentation.
 
 ## Automate reviews in GitHub using workflows
 
-So far, we've talked about starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule or on some event outside of GitHub.
+So far, we've described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule or on some event outside of GitHub.
 
-Sometimes we want to run the workflow after something a human needs to do. For example, we might only want to run a workflow after a reviewer has approved the pull request. For this scenario, we can trigger on ```pull-request-review```.
+Sometimes, we want to run the workflow after something a human needs to do. For example, we might only want to run a workflow after a reviewer has approved the pull request. For this scenario, we can trigger on ```pull-request-review```.
 
 Another action we could take is to add a label to the pull request. In this case, we use the [pullreminders/label-when-approved-action](https://github.com/pullreminders/label-when-approved-action?azure-portal=true) action.
 
