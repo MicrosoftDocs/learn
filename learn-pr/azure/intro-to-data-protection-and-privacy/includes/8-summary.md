@@ -1,4 +1,4 @@
-You’ve learned about general concepts and key components of data protection. Having reviewed common data-protection regulations, you've gained knowledge about how Microsoft supports these regulations in its cloud products and technologies. You’ve also discovered Azure tools and resources that'll help Contoso implement more compliant and secure data-protection and privacy practices. You now have enough information to present to your legal department to help address their concerns.
+You’ve learned about general concepts and key components of data protection. Having reviewed common data-protection laws and regulations, you've gained knowledge about how Microsoft supports these regulations in its cloud products and technologies. You’ve also discovered Azure tools and resources that'll help Contoso implement more compliant and secure data-protection and privacy practices.
 
 ## Learn more
 
