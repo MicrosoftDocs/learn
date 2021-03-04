@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.3-knowledge-selecting-the-right-hpc-sku
+title: Knowledge check - Select the appropriate HPC SKU
+metadata:
+  title: Knowledge check - Select the appropriate HPC SKU
+
+  description: Test your knowledge for selecting the appropriate HPC SKU for each type of HPC application.
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-knowledge-selecting-the-right-hpc-sku.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: One of the R&D teams simulation code runs on &lt; four processes per node and is highly optimized for AVX 512. Which Azure HPC SKU should they choose?
+    choices:
+    - content: HB120_v2
+      isCorrect: false
+      explanation: HB120_v2 does not support AVX 512.
+    - content: HC44
+      isCorrect: true
+      explanation: HC44 is the only HPC SKU to support AVX 512.
+    - content: HB60
+      isCorrect: false
+      explanation: HB60 does not support AVX 512
+  - content: Another tightly coupled HPC application is memory bandwidth bound, but not floating-point intensive, and typically runs on &lt; 40 processes per VM. Which Azure HPC SKU should they choose?
+    choices:
+    - content: HB120_v2
+      isCorrect: false
+      explanation: HB120_v2 would not be the most cost effective option for this type of HPC application.
+    - content: HC44
+      isCorrect: false
+      explanation: HC44 is not the most cost effective option for this type of HPC application and its memory bandwidth is not a good as other options.
+    - content: HB60
+      isCorrect: true
+      explanation: HB60 is the most cost effective option for this type of HPC application.
+  - content: The R&D team's final tightly coupled HPC application is floating-point and memory bandwidth bound, and has good parallel scaling. Which Azure HPC SKU should they choose?
+    choices:
+    - content: HB120_v2
+      isCorrect: true
+      explanation: HB120_v2 has the best floating-point, memory bandwidth and network performance and is a good choice for this HPC application.
+    - content: HC44
+      isCorrect: false
+      explanation: HC44 does not have sufficient memory bandwidth or floating-point performance other HPC SKUs would be a better option.
+    - content: HB60
+      isCorrect: false
+      explanation: HB60 does not have sufficient floating-point and parallel scaling performance for this HPC application.

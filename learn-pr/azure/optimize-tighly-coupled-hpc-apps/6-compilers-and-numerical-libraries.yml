@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.6-compilers-and-numerical-libraries
+title: Compilers and numerical libraries
+metadata:
+  title: Compilers and numerical libraries
+  description: Discussion about what compilers and math libraries to use when building optimized HPC applications
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-compilers-and-numerical-libraries.md)]

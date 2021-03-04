@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.7-knowledge-selecting-the-right-compiler-and-numerical-libraries
+title: Knowledge check - Select the right compiler and numerical libraries
+metadata:
+  title: Knowledge check - Select the right compiler and numerical libraries
+  description: Learn how to select the appropriate compiler and numerical libraries to build an optimized HPC application
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-selecting-the-right-compiler-and-numerical-libraries.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which is the recommended HPC image?
+    choices:
+    - content: Custom image built with Azure image builder or packer
+      isCorrect: false
+      explanation: A custom image may be a good choice, but you will need to take care of installing the right drivers to get infiniBand working and also to install the MPI library you want to use. This is all done automatically with other image choices.
+    - content: CentOS 7.8+ Marketplace image
+      isCorrect: false
+      explanation: This is a Marketplace image but this image does not support infiniBand or have all MPI libraries and tuned numerical libraries pre-installed.
+    - content: CentOS-HPC 7.8+ Marketplace image
+      isCorrect: true
+      explanation:  Yes, this is an HPC Marketplace image, supporting infiniBand and has all the MPI libraries and tuned numerical libraries preinstalled.
+  - content: Which tuned BLAS library should they select for HB120_v2 VM?
+    choices:
+    - content: AMD BLIS
+      isCorrect: true
+      explanation: AMD BLIS is a tuned BLAS library contained in the AMD Optimizing CPU Libraries (AOCL). It's optimized specifically for AMD processors, and it's suitable to use on HB120_v2.
+    - content: Intel MKL
+      isCorrect: false
+      explanation: Intel MKL does contain tuned BLAS libraries, which will perform well on HB120_v2, but there are better options.
+    - content: Tuned OpenBLAS
+      isCorrect: false
+      explanation:  Tuned OpenBLAS is an optimized BLAS library, which will perform well on HB120_v2, but there are better options. 
+  - content: Which tuned FFTW library should they select for HC44 VM? 
+    choices:
+    - content: AMD FFTW
+      isCorrect: false
+      explanation: AMD FFTW is tuned specifically for AMD processors and will not be suitable for HC44 (Intel Skylake processor).
+    - content: Intel MKL tuned FFT library
+      isCorrect: false
+      explanation: The MKL tuned FFT library is tuned specifically for HC44 but it has a different API compared to FFTW so it will not work in this case.
+    - content: FFTW wrapper in Intel MKL library
+      isCorrect: true
+      explanation: The MKL FFTW wrapper will use the correct FFTW API and tuned FFT library for HC44. This is the best choice.
