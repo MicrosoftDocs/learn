@@ -4,10 +4,10 @@ You’ve learned about general concepts and key components of data protection. H
 
 You can learn more by reviewing the following articles:
 
-- [General Data Protection Regulation Summary](https://docs.microsoft.com/microsoft-365/compliance/gdpr?view=o365-worldwide?azure-portal=true)
+- [General Data Protection Regulation Summary](https://docs.microsoft.com/microsoft-365/compliance/gdpr?azure-portal=true)
 
 - [Microsoft’s GDPR Commitments to Customers of our Generally Available Enterprise Software Products](https://docs.microsoft.com/legal/gdpr?azure-portal=true)
 
-- [California Consumer Privacy Act (CCPA)](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide?azure-portal=true)
+- [California Consumer Privacy Act (CCPA)](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?azure-portal=true)
 
-- [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide?azure-portal=true)
+- [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true)
