@@ -21,7 +21,7 @@ A 404 error in web applications means "not found". As a best practice, you shoul
 
 ### Rendering the template
 
-Django's templating engine will take the HTML template we build, combine it with any data we provide, and emit the HTML for the browser. The helper function to perform this task is `render`. `render` needs the object which represents the request, which is the `request` parameter we highlighted earlier. You also pass in the name of the template, typically an HTML file which will reside in a folder named **templates**. 
+Django's templating engine will take the HTML template we build, combine it with any data we provide, and emit the HTML for the browser. The helper function to perform this task is `render`. `render` needs the object that represents the request, which is the `request` parameter we highlighted earlier. You also pass in the name of the template, typically an HTML file which will reside in a folder named **templates**. 
 
 To pass data into the template, you provide `render` with a `context` dictionary object. `context` will contain a set of key/value pairs, where each key becomes a variable in the template.
 
