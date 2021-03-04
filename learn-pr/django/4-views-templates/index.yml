@@ -47,6 +47,5 @@ units:
 - learn.django.views-templates.templates 
 - learn.django.views-templates.exercise-templates
 - learn.django.views-templates.knowledge-check
-- learn.django.views-templates.knowledge-check
 badge:  
   uid: learn.django.views-templates.badge
