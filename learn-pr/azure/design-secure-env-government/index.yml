@@ -1,3 +1,4 @@
+### YamlMime:Module
 uid: learn.azure.design-secure-env-government
 metadata:
   title: Design cloud solutions for the public sector
@@ -24,7 +25,7 @@ products:
 - azure
 units: 
 - learn.azure.design-secure-env-government.1-introduction
-- learn.azure.design-secure-env-government.2-discover-cloud-solutions.md
+- learn.azure.design-secure-env-government.2-discover-cloud-solutions
 - learn.azure.design-secure-env-government.3-safeguard-data-azure
 - learn.azure.design-secure-env-government.4-design-data-classifications
 - learn.azure.design-secure-env-government.5-knowledge-check

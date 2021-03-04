@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.azure.design-secure-env-government.2-discover-cloud-solutions
 title: Discover cloud solutions with Microsoft Azure
 metadata:
@@ -8,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 1
 content: |
   [!include[](includes/2-discover-cloud-solutions.md)] 
