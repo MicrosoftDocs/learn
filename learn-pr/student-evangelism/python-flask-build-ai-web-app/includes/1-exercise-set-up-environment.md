@@ -1,92 +1,113 @@
-The first order of business is to set up a development environment for a website that's written by using Python and Flask. You can use the environment to build and test Contoso Travel locally before you deploy it to Azure and make it publicly available.
+To get started writing our Flask application with Python, we need to set up our development environment, which will require a couple of items to be installed. Fortunately, the tools we'll use are relatively common, so they'll serve you well even beyond this module. You might even have them installed! We'll use these tools to develop and test your application locally.
 
-In this unit, you install Python on your computer if it isn't already installed. Then you create a virtual Python environment and install Flask and the Python SDK for the Computer Vision API in Azure Cognitive Services. The SDK makes it easy to call the Computer Vision API from Python applications. Finally, you install the Azure CLI. The Azure CLI provides a command-line interface to Azure.
+In this unit, you'll learn how to install Python tooling and create a virtual Python environment. You'll install Flask, which is the framework we'll use for creating the website.
 
-## Create a virtual Python environment
+> [!Important]
+> In this module, you install and configure a variety of software packages and create a Python virtual environment. After the virtual environment is activated in your Command Prompt window or terminal, keep the window or terminal open. If you close your window or terminal, be sure to restart your *same* Python virtual environment in the new window or terminal. It's important to do all of your work in the same Python virtual environment that you create at the beginning of this module.
 
-To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from other items on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
+At a high level, we'll perform the following steps:
 
-1. If Python 3.6 or later isn't installed on your computer, go to [the Python website](https://www.python.org/) and install it now. You can determine whether it's installed on Windows by running the following command in a Command Prompt window:
+1. Install Visual Studio Code (if not already installed)
+1. Install Python (if not already installed)
+1. Create a directory for your code
+1. Create a virtual environment
+1. Install Flask and other libraries
 
-    ```bash
-    python --version
-    ```
+## Install Visual Studio Code
 
-    Similarly, you can check to see whether it's installed on macOS or Linux by running the following command in a terminal:
+Visual Studio Code is an open-source code editor that allows you to create almost any type of application you might like. It's backed by a robust extension marketplace where you can find add-ons to help make your life as a developer easier.
 
-    ```bash
-    python3 --version
-    ```
+- [Install Visual Studio Code](https://code.visualstudio.com?WT.mc_id=python-11210-chrhar&azure-portal=true)
 
-    If Python is installed, the version number will appear in the output. If you install Python and are asked during the installation process whether Python should be added to the system's PATH, answer yes.
+## Install Python
 
-    ![Add Python to the PATH](../media/add-to-path.png)
+To complete this unit, you must have Python 3.6 or later installed on your computer. There's a chance you might already have Python installed, especially if you've already used it. You can confirm whether it's installed by executing one of the following commands:
 
-    _Add Python to the PATH_
+```bash
+# Windows:
+python --version
 
-1. If you're running Windows, run the following command to install the latest version of pip, the Python package manager:
+#macOS or Linux
+python3 --version
+```
 
-    ```bash
-    python -m pip install --upgrade pip
-    ```
+If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install Python 3](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true&WT.mc_id=python-11210-chrhar&azure-portal=true) documentation for Visual Studio Code. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
 
-    If you're running macOS or Linux, use this command:
+> [!IMPORTANT]
+> If you're using Windows, make sure you select the **Add to PATH** option on the installer. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation.
 
-    ```bash
-    python3 -m pip install --user --upgrade pip
-    ```
+## Create the project directory
 
-    This command is important because older versions of pip might miss some of the dependencies needed to run Python in Azure.
+Create a directory in the location of your choice. This directory will be your **project directory**, and will contain all of the code we'll create. You can create a directory from a command or terminal window with one of the following commands:
 
-1. Create a directory on your hard disk in the location of your choice. The directory will be the *project directory* and will hold all of the files that compose the Contoso Travel website. It's also where your virtual Python environment will be created.
+```bash
+# Windows
+md contoso
+cd contoso
 
-1. In a Command Prompt window or terminal, change (`cd`) to the project directory. If you're running Windows, use the following commands to create a virtual environment in the **env** subdirectory and activate the environment:
+## macOS or Linux
+mkdir contoso
+cd contoso
+```
 
-    ```bash
-    python -m venv env
-    env\scripts\activate
-    ```
+> [!IMPORTANT]
+> Keep your command or terminal window open for the entirety of the module.
 
-    If you're running macOS or Linux, use these commands:
+## Create a Python virtual environment
 
-    ```bash
-    python3 -m venv env
-    source env/bin/activate
-    ```
+A Python virtual environment isn't necessarily as complex as it sounds. Rather than creating a virtual machine or container, a virtual environment is a folder that contains all of the libraries we need to run our application, including the Python runtime itself. By using a virtual environment, we make our applications modular, allowing us to keep them separate from one another and avoid versioning issues. As a best practice you should always use virtual environments when working with Python.
 
-1. Now run the following commands to install Flask and the Python SDK for the Azure Cognitive Services Computer Vision API in the virtual environment:
+To use a virtual environment, we'll create and activate it. We create it by using the `venv` module, which you installed as part of your Python installation instructions earlier. When we activate it, we tell our system to use the folder we created for all of its Python needs.
 
-    ```bash
-    pip install Flask
-    pip install azure-cognitiveservices-vision-computervision
-    ```
+```bash
+# Windows
+# Create the environment
+python -m venv venv
+# Activate the environment
+.\\venv\\scripts\\activate
 
-Leave the Command Prompt window or terminal open so you can easily return to it later. When you run the website, you'll want to run it from this directory with the virtual environment active.
+# macOS or Linux
+# Create the environment
+python3 -m venv venv
+# Activate the environment
+source ./venv/bin/activate
+```
 
-## Install the Azure CLI
+## Install Flask and other libraries
 
-The Azure CLI is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In later units, you'll use the Azure CLI to create various Azure resources, including an Azure App Service instance to host a website. In this exercise, you install the Azure CLI and sign in to it for the first time.
+With our virtual environment created and activated, we can now install Flask, the library we need for our website. We'll install Flask by following a common convention, which is to create a **requirements.txt** file. The **requirements.txt** file isn't special in and of itself; it's a text file where we list the libraries required for our application. But it's the convention typically used by developers, and makes it easier to manage applications where numerous libraries are dependencies. 
 
-1. If the Azure CLI isn't installed on your computer, go to [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and install it now. You can determine whether it's installed by running an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
+During later exercises, we'll use a couple of other libraries, including **requests** (to call Translator service) and **python-dotenv** (to manage our keys). While we don't need them yet, we're going to make our lives a little easier by installing them now.
 
-1. In a Command Prompt window or terminal, sign in to Azure by using the following command:
-
-    ```bash
-    az login
-    ```
-
-    In the ensuing browser window, sign in by using your Microsoft account. Then close the browser and return to the CLI.
-
-1. Enter the following command to list the Azure subscriptions associated with your Microsoft account:
-
-    ```bash
-    az account list
-    ```
-
-    The default subscription—the one used to create resources created with the CLI—is marked `isDefault=true`. If that's the subscription you want to use, or if it's the only subscription in the list, you're done. Otherwise, use the following command to designate one of the other subscriptions as the default. Replace `SUBSCRIPTION_ID` with the ID of that subscription. 
+1. In the command or terminal window, run the following command to open the directory in Visual Studio Code:
 
     ```bash
-    az account set -s SUBSCRIPTION_ID
-    ```
+       code .
+       ```
 
-If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands that it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the Azure CLI or through the Azure portal. Power users tend to prefer the Azure CLI, in part because Azure CLI commands can be used in scripts to automate repetitive tasks.
+2. In Visual Studio Code, in the **Explorer** window, select **New File**
+
+   > [!div class="mx-imgBorder"]
+   > ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
+
+3. Name the file **requirements.txt**, and add the following text:
+
+   ```text
+   flask
+   python-dotenv
+   requests
+   ```
+
+4. Save the file by clicking **Ctrl-S**, or **Cmd-S** on a Mac
+5. Return to the command or terminal window and perform the installation by using **pip** to run the following command:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+The command downloads the necessary libraries and their dependencies.
+
+> [!NOTE]
+> You may receive an error message if your version of **pip** is not the most recent. Follow the instructions on the error message to perform the upgrade. The upgrade isn't required for this module.
+
+Congratulations! You've now setup your environment for development!

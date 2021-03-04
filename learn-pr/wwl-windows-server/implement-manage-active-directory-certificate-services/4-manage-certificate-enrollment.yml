@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-enrollment
+title: Manage certificate enrollment
+metadata:
+  title: Manage certificate enrollment
+  description: "Manage certificate enrollment"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-manage-certificate-enrollment.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which tool can be used to allow certificate enrollment by using an already configured template?"
+    choices:
+    - content: "The Certification Authority console"
+      isCorrect: true
+      explanation: "That's correct. To accomplish this, from the Certification Authority console, right-click or access the context menu on Certificate Templates and select Certificate Template to Issue."
+    - content: "The Certificate Templates console"
+      isCorrect: false
+      explanation: "That's incorrect. This console allows you to configure templates, however, not to make them available for usage."
+    - content: "The Active Directory Sites and Services console"
+      isCorrect: false
+      explanation: "That's incorrect. This console allows you to configure AD DS sites and services, however, not to manage templates."

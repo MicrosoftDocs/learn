@@ -1,4 +1,4 @@
-In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
+In this unit, you'll create an Azure Cosmos DB account, and use a console application to populate the database.
 
 ## Create your database account
 
@@ -10,17 +10,32 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. Create an Azure Cosmos DB account by using the following command:
+1. A sandbox resource group has been created for you, which the following command will store in an environment variable that you'll use for the rest of the code samples in this exercise.
+
+    ```bash
+    export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
+    ```
+
+    > [!NOTE]
+    > If you were using your own Azure account instead of the sandbox, you would configure a static resource name in this variable.
+
+1. Create an Azure Cosmos DB account using the following command.
 
     ```azurecli
     az cosmosdb create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --name $COSMOS_NAME
     ```
 
-The database account can take 4 to 5 minutes to provision. Keep reading while the account is being created.
+The database account can take 10 minutes to provision. You can continue reading this unit while the account is being created.
 
 ## Azure Cosmos DB concepts
+
+Azure Cosmos DB concepts consist of:
+
+- Resources
+- Partitioning
+- Indexing
 
 ### Resources
 
@@ -38,7 +53,7 @@ An effective partitioning strategy distributes data and access evenly across par
 
 You choose how to partition your data at design time. The partitioning configuration can't be changed after a collection is provisioned.
 
-We examine partitioning concepts and examples in detail in units 4 and 5.
+We examine partitioning concepts and examples in detail in subsequent units.
 
 ### Indexing
 
@@ -46,7 +61,7 @@ An index is a catalog of document properties and their values. It includes links
 
 Unlike partitioning, you can change indexing at runtime.
 
-We look at indexing in units 6 and 7.
+We look at indexing in subsequent units.
 
 ## Set environment variables for endpoint and keys
 
@@ -54,7 +69,7 @@ We look at indexing in units 6 and 7.
 
     ```bash
     export ENDPOINT=$(az cosmosdb list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --output tsv \
         --query [0].documentEndpoint)
     ```
@@ -63,7 +78,7 @@ We look at indexing in units 6 and 7.
 
     ```bash
     export KEY=$(az cosmosdb keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group $RESOURCE_GROUP  \
         --name $COSMOS_NAME \
         --output tsv \
         --query primaryMasterKey)
@@ -75,7 +90,7 @@ We look at indexing in units 6 and 7.
 
     ```azurecli
     az cosmosdb sql database create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --name mslearn
     ```
@@ -84,11 +99,11 @@ We look at indexing in units 6 and 7.
 
     We're going to create three collections to compare different partitioning strategies and workloads.
 
-    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition.
+    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition. In addition, this first collection is configured for 400 request units per second (RU/s), which is less than the next two collections.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name Small \
@@ -98,11 +113,11 @@ We look at indexing in units 6 and 7.
 
 1. Create the second collection.
 
-    This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module.
+    This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module. This second collection is configured for 7000 RU/s, which is more than the first collection.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name HotPartition \
@@ -112,11 +127,11 @@ We look at indexing in units 6 and 7.
 
 1. Create a third collection.
 
-    This collection partitions the documents by the order item's unique product identifier.
+    This collection partitions the documents by the order item's unique product identifier. This last collection is also configured for 7000 RU/s.
 
     ```azurecli
     az cosmosdb sql container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --account-name $COSMOS_NAME \
         --database-name mslearn \
         --name Orders \
@@ -126,7 +141,7 @@ We look at indexing in units 6 and 7.
 
 ## Populate your collections
 
-We'll use an open-source C# console application to populate your collections. This application generates random order documents and inserts them into your collections. We'll also use this application in later units to query the collections.
+We'll use an open-source C# console application to populate your collections. This application generates random order documents and inserts them into your collections. We'll also use this application in subsequent units to query the collections.
 
 1. Clone the console application repository from GitHub. Run the following command in the sandbox environment.
 
@@ -140,24 +155,20 @@ We'll use an open-source C# console application to populate your collections. Th
     cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
 
-1. Check your environment variables. The console application needs the environment variables to connect to the database. If Azure Cloud Shell times out, you need to set these and the `COSMOS_NAME` variable again. You can reset the `COSMOS_NAME` value by running the following command.
+1. Check your environment variables. The console application needs the environment variables to connect to the database. If Azure Cloud Shell times out, you need to set these and the `COSMOS_NAME` variable again. You can reset your `COSMOS_NAME`, `RESOURCE_GROUP`, `ENDPOINT` and `KEY` variables by running the following commands.
 
     ```bash
     export COSMOS_NAME=$(az cosmosdb list --output tsv --query [0].name)
-    ```
 
-    You can reset your `ENDPOINT` and `KEY` variables by running the following commands.
+    export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
 
-    ```bash
     export ENDPOINT=$(az cosmosdb list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $RESOURCE_GROUP \
         --output tsv \
         --query [0].documentEndpoint)
-    ```
 
-    ```bash
     export KEY=$(az cosmosdb keys list \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group $RESOURCE_GROUP  \
         --name $COSMOS_NAME \
         --output tsv \
         --query primaryMasterKey)
@@ -195,3 +206,5 @@ We'll use an open-source C# console application to populate your collections. Th
     ```bash
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10
     ```
+
+Notice that the throughput changes for each of the different collections; the data populates the `Small` collection at a slower rate than the remaining collections because it was configured to use 400 RU/s, whereas the `HotPartition` and `Orders` were configured for 7000 RU/s.

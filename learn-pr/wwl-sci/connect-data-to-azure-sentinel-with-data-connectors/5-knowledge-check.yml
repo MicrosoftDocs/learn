@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-data-to-azure-sentinel-with-data-connectors.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where can you see the number of connected Windows hosts?"
+    choices:
+    - content: "On the CEF Connector page"
+      isCorrect: false
+      explanation: "Incorrect.  This will not show the number of Windows hosts connected."
+    - content: "On the Agent Management page in Log Analytics"
+      isCorrect: true
+      explanation: "Correct.  This page will display the hosts connected."
+    - content: "On the Data connectors page"
+      isCorrect: false
+      explanation: "Incorrect. This will show the number of connectors, not the number of hosts."
+  - content: "Which connector provides the log data in an unparsed field?"
+    choices:
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "Incorrect.  The Azure Active Directory provides parsed data."
+    - content: "Syslog"
+      isCorrect: true
+      explanation: "Correct.  The data is stored in the SyslogMessage"
+    - content: "CEF"
+      isCorrect: false
+      explanation: "Incorrect.  The CEF connector provides parsed data."
+  - content: "The vendor-provided connectors primarily use which of the following?"
+    choices:
+    - content: "Azure Activity Connector"
+      isCorrect: false
+      explanation: "Incorrect.  Vendors don't use the Azure Activity connector."
+    - content: "Security Events Connector"
+      isCorrect: false
+      explanation: "Incorrect.  The Security Events connector is for sending Windows event logs."
+    - content: "CEF Connector"
+      isCorrect: true
+      explanation: "Correct.  Most Vendor-provided connectors use the CEF connector."

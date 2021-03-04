@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-windows-server-secure-administration.implement-delegated-privileges
+title: Implement delegated privileges
+metadata:
+  title: Implement delegated privileges
+  description: "Implement delegated privileges"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-implement-delegated-privileges.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "One of the administrators in Contoso IT wants to delegate computer management to a small team in IT support. The computers are all in the Sales department, and their accounts reside in the Sales OU. Adhering to best practice, how should the administrator proceed?"
+    choices:
+    - content: "Create a group for the sales computer management team, and then create a custom task delegation for that team on the Sales OU. The custom task will be for Computer objects."
+      isCorrect: true
+      explanation: "That's correct. This approach adheres to best practices."
+    - content: "Create a group for the sales computer management team, and then create a common task delegation for that team on the Sales OU."
+      isCorrect: false
+      explanation: "That's incorrect. Computer objects management is not a common task, but a custom task delegation."
+    - content: "Create a custom task delegation for the users in the sales computer management team on the Sales OU. The custom task will be for Computer objects."
+      isCorrect: false
+      explanation: "That's incorrect. Although this approach will work, it is best practice to use groups to assign delegations. Start by adding the users to a group."

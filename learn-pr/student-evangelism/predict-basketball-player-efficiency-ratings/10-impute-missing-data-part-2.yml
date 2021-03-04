@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.10-impute-missing-data-part-2
+metadata:
+  title: 'Data manipulation part 3 - Impute missing values by using machine learning'
+  description: Use a linear regression machine learning model to impute data in complex columns.
+  ms.date: 11/11/2020
+  author: sguthals
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Data manipulation part 3 - Impute missing values by using machine learning'
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-impute-missing-data-part-2.md)]

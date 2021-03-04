@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-logging-aspnet-core.8-summary
+metadata:
+  title: Summary
+  description: Summary
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 10/14/2020
+  ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

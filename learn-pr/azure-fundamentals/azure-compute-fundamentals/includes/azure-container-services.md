@@ -1,25 +1,25 @@
-While virtual machines are an excellent way to reduce costs versus the investments that are necessary for physical hardware, they are still limited to a single operating system per virtual machine. If you wish to run multiple instances of an application on a single host machine, containers are an excellent choice.
+While virtual machines are an excellent way to reduce costs versus the investments that are necessary for physical hardware, they're still limited to a single operating system per virtual machine. If you want to run multiple instances of an application on a single host machine, containers are an excellent choice.
 
 ## What are containers?
 
-Containers are a virtualization environment, and much like running multiple virtual machines on a single physical host, you can run multiple containers on a single physical or virtual host. However, unlike virtual machines, you do not manage the operating system for a container. Whereas virtual machines appear to be an instance of an operating system that you can connect to and manage, containers are lightweight and are designed to be created, scaled out, and stopped dynamically. While it is possible to create and deploy virtual machines as application demand increases, containers are designed to allow you to respond to changes on demand, and quickly restart in case of a crash or hardware interruption. One of the most popular container engines is Docker, which is supported by Microsoft Azure.
+Containers are a virtualization environment. Much like running multiple virtual machines on a single physical host, you can run multiple containers on a single physical or virtual host. Unlike virtual machines, you don't manage the operating system for a container. Virtual machines appear to be an instance of an operating system that you can connect to and manage, but containers are lightweight and designed to be created, scaled out, and stopped dynamically. While it's possible to create and deploy virtual machines as application demand increases, containers are designed to allow you to respond to changes on demand. With containers, you can quickly restart in case of a crash or hardware interruption. One of the most popular container engines is Docker, which is supported by Azure.
 
-## Comparing virtual machines to containers
+## Compare virtual machines to containers
 
 The following video highlights several of the important differences between virtual machines and containers.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
 
-## Managing containers
+## Manage containers
 
-Containers are managed through a container orchestrator, which can start, stop, and scale out application instances as needed. There are two ways to manage both Docker and Microsoft-based containers in Azure: _Azure Container Instances_ and _Azure Kubernetes Service_.
+Containers are managed through a container orchestrator, which can start, stop, and scale out application instances as needed. There are two ways to manage both Docker and Microsoft-based containers in Azure: Azure Container Instances and Azure Kubernetes Service (AKS).
 
 :::row:::
   :::column span="3":::
 
-### Azure Container Instances (ACI)
+### Azure Container Instances
 
-[Azure Container Instances](https://azure.microsoft.com/services/container-instances?azure-portal=true) offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It is a PaaS offering that allows you to upload your containers, which it will run for you. 
+[Azure Container Instances](https://azure.microsoft.com/services/container-instances?azure-portal=true) offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It's a platform as a service (PaaS) offering that allows you to upload your containers, which it runs for you.
 
   :::column-end:::
   :::column:::
@@ -33,9 +33,9 @@ Containers are managed through a container orchestrator, which can start, stop, 
   :::column-end:::
   :::column span="3":::
 
-### Azure Kubernetes Service (AKS)
+### Azure Kubernetes Service
 
-The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact. 
+The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact.
 
   :::column-end:::
 :::row-end:::
@@ -48,9 +48,13 @@ The following video discusses some important details about Kubernetes container 
 
 ## Use containers in your solutions
 
-Containers are often used to create solutions using a _microservice architecture_. This architecture is where you break solutions into smaller, independent pieces. For example, you may split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
+Containers are often used to create solutions by using a _microservice architecture_. This architecture is where you break solutions into smaller, independent pieces. For example, you might split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
 
-Imagine your website backend has reached capacity but the front end and storage aren't being stressed. You could scale the back end separately to improve performance, or you could decide to use a different storage service, or you could even replace the storage container without affecting the rest of the application.
+Imagine your website back-end has reached capacity but the front end and storage aren't being stressed. You could:
+
+* Scale the back end separately to improve performance.
+* Decide to use a different storage service.
+* Replace the storage container without affecting the rest of the application.
 
 ### What is a microservice?
 

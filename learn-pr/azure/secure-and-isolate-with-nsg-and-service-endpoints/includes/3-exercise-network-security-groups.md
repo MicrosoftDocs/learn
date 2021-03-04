@@ -1,6 +1,6 @@
-As the solution architect for the manufacturing company, you now want to start moving the ERP application and database servers to Azure. As a first step, you're going to test out your network security plan, using two of your servers.
+As the solution architect for the manufacturing company, you now want to start moving the ERP app and database servers to Azure. As a first step, you're going to test out your network security plan, using two of your servers.
 
-In this unit, you'll configure a network security group and security rules to restrict network traffic to specific servers. You want your application server to be able to connect to your database server over HTTP. You don't want the database server to be able to use HTTP to connect to the application server.
+In this unit, you'll configure a network security group and security rules to restrict network traffic to specific servers. You want your app server to be able to connect to your database server over HTTP. You don't want the database server to be able to use HTTP to connect to the app server.
 
 ![Diagram of exercise scenario network security groups](../media/3-exercise-first-task.svg)
 
@@ -12,15 +12,23 @@ First, you'll create a resource group, the virtual network, and subnets for your
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in. Use the Bash version of Cloud Shell.
 
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+2. To create a variable to store your resource group name, and a resource group for your resources, in the Cloud Shell, run the following command. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
-    ```azurecli
+Find the location name with the following command.
+
+```azurecli
+    az account list-locations -o table
+```
+
+3. Next, create the resource group.
+
+```azurecli
     rg=<resource group name>
 
     az group create --name $rg --location <location>
-    ```
+```
 
-1. Run the following command in Azure Cloud Shell to create the **ERP-servers** virtual network and the **Applications** subnet.
+4. To create the **ERP-servers** virtual network and the **Applications** subnet, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network vnet create \
@@ -31,7 +39,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
         --subnet-prefix 10.0.0.0/24
     ```
 
-1. Run the following command in Cloud Shell to create the **Databases** subnet.
+5. To create the **Databases** subnet, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network vnet subnet create \
@@ -41,7 +49,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
         --name Databases
     ```
 
-1. Run the following command in Cloud Shell to create the **ERP-SERVERS-NSG** network security group. 
+6. To create the **ERP-SERVERS-NSG** network security group, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network nsg create \
@@ -49,11 +57,11 @@ First, you'll create a resource group, the virtual network, and subnets for your
         --name ERP-SERVERS-NSG
     ```
 
-## Create virtual machines running Ubuntu
+## Create VMs running Ubuntu
 
-Next, you create two virtual machines called **AppServer** and **DataServer**. You deploy **AppServer** to the **Applications** subnet, and **DataServer** to the **Databases** subnet. Add the virtual machine network interfaces to the **ERP-SERVERS-NSG** network security group. Then use these virtual machines to test your network security group.
+Next, you'll create two VMs called **AppServer** and **DataServer**. You deploy **AppServer** to the **Applications** subnet, and **DataServer** to the **Databases** subnet. Add the VM network interfaces to the **ERP-SERVERS-NSG** network security group. Then, to test your network security group, use these VMs.
 
-1. Run the following command in Cloud Shell to build the **AppServer** virtual machine. Define a `<password>` for the admin account.
+1. To build the **AppServer** VM, in the Cloud Shell, run the following command. For the admin account, define a `<password>`.
 
     ```azurecli
     wget -N https://raw.githubusercontent.com/MicrosoftDocs/mslearn-secure-and-isolate-with-nsg-and-service-endpoints/master/cloud-init.yml && \
@@ -71,7 +79,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --admin-password <password>
     ```
 
-1. Run the following command in Cloud Shell to build the **DataServer** virtual machine. Define a `<password>` for the admin account.
+1. To build the **DataServer** VM, in the Cloud Shell, run the following command. For the admin account, define a `<password>`.
 
     ```azurecli
     az vm create \
@@ -87,7 +95,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --admin-password <password>
     ```
 
-1. It can take several minutes for the virtual machines to be in a running state. To confirm that the virtual machines are running, run the following command in Cloud Shell.
+1. It can take several minutes for the VMs to be in a running state. To confirm that the VMs are running, in the Cloud Shell, run the following command.
 
     ```azurecli
     az vm list \
@@ -97,7 +105,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --output table
     ```
 
-   When virtual machine creation is complete, you should see the following output.
+   When your VM creation is complete, you should see the following output.
 
     ```output
     Name        Provisioned    Power
@@ -108,9 +116,9 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
 
 ## Check default connectivity
 
-Now, you'll try to open a Secure Shell (SSH) session to each of your virtual machines. Remember, so far you've deployed a network security group with default rules.
+Now, you'll try to open a Secure Shell (SSH) session to each of your VMs. Remember, so far you've deployed a network security group with default rules.
 
-1. To connect to your virtual machines, use SSH directly from Cloud Shell. To do this, you need the public IP addresses that have been assigned to your virtual machines. Run the following command in Cloud Shell to list the IP addresses that you'll use to connect to the virtual machines.
+1. To connect to your VMs, use SSH directly from Cloud Shell. To do this, you need the public IP addresses that have been assigned to your VMs. To list the IP addresses that you'll use to connect to the VMs, in the Cloud Shell, run the following command.
 
     ```azurecli
     az vm list \
@@ -120,7 +128,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
         --output table
     ```
 
-1. To make it easier to connect to your virtual machines during the rest of this exercise, assign the public IP addresses to variables. Run the following command in Cloud Shell to save the public IP address of **AppServer** and **DataServer** to a variable.
+1. To make it easier to connect to your VMs during the rest of this exercise, assign the public IP addresses to variables. To save the public IP address of **AppServer** and **DataServer** to a variable, in the Cloud Shell, run the following command.
 
    ```bash
    APPSERVERIP="$(az vm list-ip-addresses \
@@ -136,7 +144,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
                     --output tsv)"
    ```
 
-1. Run the following command in Cloud Shell to check whether you can connect to your **AppServer** virtual machine.
+1. To check whether you can connect to your **AppServer** VM, in the Cloud Shell, run the following command.
 
     ```bash
     ssh azureuser@$APPSERVERIP -o ConnectTimeout=5
@@ -144,7 +152,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
 
    You'll get a `Connection timed out` message.
 
-1. Run the following command in Cloud Shell to check whether you can connect to your **DataServer** virtual machine.
+1. To check whether you can connect to your **DataServer** VM, in the Cloud Shell, run the following command.
 
     ```bash
     ssh azureuser@$DATASERVERIP -o ConnectTimeout=5
@@ -152,7 +160,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
 
    You'll get the same connection failure message.
 
-Remember that the default rules deny all inbound traffic into a virtual network, unless this traffic is coming from another virtual network. The **Deny All Inbound** rule blocked the inbound SSH connections you just attempted.
+Remember that the default rules deny all inbound traffic into a virtual network, unless this traffic is coming from the same virtual network. The **Deny All Inbound** rule blocked the inbound SSH connections you just attempted.
 
 **Inbound**
 
@@ -165,7 +173,7 @@ Remember that the default rules deny all inbound traffic into a virtual network,
 
 As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network security group include a **Deny All Inbound** rule. You'll now add a rule so that you can use SSH to connect to **AppServer** and **DataServer**.
 
-1. Run the following command in Cloud Shell to create a new inbound security rule to enable SSH access.
+1. To create a new inbound security rule to enable SSH access, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network nsg rule create \
@@ -183,7 +191,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
         --description "Allow inbound SSH"
     ```
 
-1. Run the following command in Cloud Shell to check whether you can now connect to your **AppServer** virtual machine.
+1. To check whether you can now connect to your **AppServer** VM, in the Cloud Shell, run the following command.
 
     ```bash
     ssh azureuser@$APPSERVERIP -o ConnectTimeout=5
@@ -191,34 +199,34 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
     The network security group rule might take a minute or two to take effect. If you receive a connection failure message, try again.
 
-1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, type `yes`.
+1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, enter `yes`.
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
-1. Type `exit` to close the **AppServer** session.
+1. Close the **AppServer** session, enter `exit`.
 
-1. Run the following command in Cloud Shell to check whether you can now connect to your **DataServer** virtual machine.
+1. To check whether you can now connect to your **DataServer** VM, in the Cloud Shell, run the following command.
 
     ```bash
     ssh azureuser@$DATASERVERIP -o ConnectTimeout=5
     ```
 
-1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, type `yes`.
+1. You should now be able to connect. After the `Are you sure you want to continue connecting (yes/no)?` message, enter `yes`.
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
-1. Type `exit` to close the **DataServer** session.
+1. To close the **DataServer** session, enter `exit`.
 
 ## Create a security rule to prevent web access
 
-Now add a rule so that **AppServer** can communicate with **DataServer** over HTTP, but **DataServer** can't communicate with **AppServer** over HTTP. These are the internal IP addresses for these servers:
+Now, add a rule so that **AppServer** can communicate with **DataServer** over HTTP, but **DataServer** can't communicate with **AppServer** over HTTP. These are the internal IP addresses for these servers:
 
 | Server name | IP address |
 | ---- | ---- |
 | AppServer | 10.0.0.4 |
 | DataServer | 10.0.1.4 |
 
-1. Run the following command in Cloud Shell to create a new inbound security rule to deny HTTP access over port 80.
+1. To create a new inbound security rule to deny HTTP access over port 80, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network nsg rule create \
@@ -238,35 +246,35 @@ Now add a rule so that **AppServer** can communicate with **DataServer** over HT
 
 ## Test HTTP connectivity between virtual machines
 
-Here, you check if your new rule works. **AppServer** should be able to communicate with **DataServer** over HTTP. **DataServer** shouldn't be able to communicate with **AppServer** over HTTP.
+Here, you'll check if your new rule works. **AppServer** should be able to communicate with **DataServer** over HTTP. **DataServer** shouldn't be able to communicate with **AppServer** over HTTP.
 
-1. Run the following command in Cloud Shell to connect to your **AppServer** virtual machine, and check if **AppServer** can communicate with **DataServer** over HTTP.
+1. To connect to your **AppServer** VM, in the Cloud Shell, run the following command. Check if **AppServer** can communicate with **DataServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$APPSERVERIP 'wget http://10.0.1.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
 1. The response should include a `200 OK` message.
 
-1. Run the following command in Cloud Shell to connect to your **DataServer** virtual machine, and check if **DataServer** can communicate with **AppServer** over HTTP.
+1. To connect to your **DataServer** VM, in the Cloud Shell, run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
-1. This shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. Press Ctrl+C to stop the command prior to the timeout.
+1. This shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press Ctrl+C.
 
-## Deploy an application security group
+## Deploy an app security group
 
-Next, create an application security group for database servers, so that all servers in this group can be assigned the same settings. You're planning to deploy more database servers, and want to prevent these servers from accessing application servers over HTTP. By assigning sources in the application security group, you don't need to manually maintain a list of IP addresses in the network security group. Instead, you assign the network interfaces of the virtual machines you want to manage to the application security group.
+Next, create an app security group for database servers, so that all servers in this group can be assigned the same settings. You're planning to deploy more database servers, and want to prevent these servers from accessing app servers over HTTP. By assigning sources in the app security group, you don't need to manually maintain a list of IP addresses in the network security group. Instead, you assign the network interfaces of the VMs you want to manage to the app security group.
 
-![Diagram of exercise scenario application security groups](../media/3-exercise-second-task.svg)
+![Diagram of exercise scenario app security groups](../media/3-exercise-second-task.svg)
 
-1. Run the following command in Cloud Shell to create a new application security group called **ERP-DB-SERVERS-ASG**.
+1. To create a new app security group called **ERP-DB-SERVERS-ASG**, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network asg create \
@@ -274,7 +282,7 @@ Next, create an application security group for database servers, so that all ser
         --name ERP-DB-SERVERS-ASG
     ```
 
-1. Run the following command in Cloud Shell to associate **DataServer** with the application security group.
+1. To associate **DataServer** with the app security group, in the Cloud Shell, run the following command.
 
     ```azurecli
     az network nic ip-config update \
@@ -286,7 +294,7 @@ Next, create an application security group for database servers, so that all ser
         --subnet Databases
     ```
 
-1. Run the following command in Cloud Shell to update the HTTP rule in the **ERP-SERVERS-NSG** network security group. It should reference the **ERP-DB-Servers** application security group.
+1. To update the HTTP rule in the **ERP-SERVERS-NSG** network security group, in the Cloud Shell, run the following command. It should reference the **ERP-DB-Servers** app security group.
 
     ```azurecli
     az network nsg rule update \
@@ -307,24 +315,24 @@ Next, create an application security group for database servers, so that all ser
 
 ## Test the updated HTTP security rule
 
-1. Run the following command in Cloud Shell to connect to your **AppServer** virtual machine, and check if **AppServer** can communicate with **DataServer** over HTTP.
+1. To connect to your **AppServer** VM. in the Cloud Shell, run the following command. Check if **AppServer** can communicate with **DataServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$APPSERVERIP 'wget http://10.0.1.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
-1. As before, the response should include a `200 OK` message. The application security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
+1. As before, the response should include a `200 OK` message. The app security group settings can take a minute or two to take effect. If you don't initially receive the `200 OK` message, wait a minute and try again.
 
-1. Run the following command in Cloud Shell to connect to your **DataServer** virtual machine, and check if **DataServer** can communicate with **AppServer** over HTTP.
+1. To connect to your **DataServer** in the Cloud Shell (at the top-right in Azure; the box with the >_) , run the following command. Check if **DataServer** can communicate with **AppServer** over HTTP.
 
     ```bash
     ssh -t azureuser@$DATASERVERIP 'wget http://10.0.0.4; exit; bash'
     ```
 
-1. Enter the password you used when you created the virtual machine.
+1. Enter the password you used when you created the VM.
 
-1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. Press Ctrl+C to stop the command prior to the timeout.
+1. As before, this shouldn't succeed, because you've blocked access over port 80. After several minutes, you should get a `Connection timed out` message. To stop the command before the timeout, press Ctrl+C.
 
-You've now confirmed that your network security group rule works using an application security group, in the same way as when you used a source IP address. If we were to add additional data servers, we can easily ensure they have the proper network security by adding the new servers to the **ERP-DB-SERVERS-ASG**.
+You've now confirmed that your network security group rule works using an app security group, in the same way as when you used a source IP address. If we were to add additional data servers, you can easily ensure they have the proper network security by adding the new servers to the **ERP-DB-SERVERS-ASG**.

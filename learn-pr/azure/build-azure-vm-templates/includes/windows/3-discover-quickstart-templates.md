@@ -58,7 +58,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
     You see that:
 
     * The resource's type is `Microsoft.Compute/virtualMachines`.
-    * It's location, or Azure region, comes from the template parameter named `location`.
+    * Its location, or Azure region, comes from the template parameter named `location`.
     * The VM's size comes from the template variable `vmSize`.
     * The computer name, username, and password for the VM are read from template parameters.
 

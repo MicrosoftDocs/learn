@@ -4,12 +4,12 @@ title: Identify the need for data solutions
 metadata:
   title: Identify the need for data solutions
   description: "Identify the need for data solutions"
-  ms.date: 10/02/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/2-identify-need-data-solutions.md)]

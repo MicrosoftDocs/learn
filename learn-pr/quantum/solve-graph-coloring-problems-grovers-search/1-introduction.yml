@@ -9,6 +9,7 @@ metadata:
   ms.author: mamykhai
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
+  show_latex: true
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

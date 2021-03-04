@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.3-exercise-add-dev-container
+title: Exercise - Add a dev container to an existing project
+metadata:
+  title: Exercise - Add a dev container to an existing project
+  description: Use the Remote - Containers extension to add a development container to an existing Python project.
+  ms.date: 11/13/2020
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-add-development-container.md)]

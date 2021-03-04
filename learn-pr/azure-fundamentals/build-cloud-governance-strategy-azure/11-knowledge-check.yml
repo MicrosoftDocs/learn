@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
     choices:
-    - content: Create a role assignment through Azure RBAC.
+    - content: Create a role assignment through Azure role-based access control (Azure RBAC).
       isCorrect: true
-      explanation: Azure RBAC enables you to create roles that define access permissions. You might crate one role that limits access only to virtual machines and a second role that provides administrators with access to everything.
+      explanation: Azure RBAC enables you to create roles that define access permissions. You might create one role that limits access only to virtual machines and a second role that provides administrators with access to everything.
     - content: Create a policy in Azure Policy that audits resource usage.
       isCorrect: false
       explanation: Although you might be able to audit how your resources are used, is there a way to _prevent_ users from changing resources they're not meant to access?
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: Create a policy in Azure Policy that specifies the allowed SKU sizes.
       isCorrect: true
-      explanation: After you enable this policy, that policy is applied when you create new VMs or resize existing ones. Azure Policy also evaluates any current VMs in your environment.
+      explanation: After you enable this policy, that policy is applied when you create new virtual machines or resize existing ones. Azure Policy also evaluates any current virtual machines in your environment.
     - content: Periodically inspect the deployment manually to see which SKU sizes are used.
       isCorrect: false
       explanation: Is there a more automated way to verify that allowed SKU sizes are used before virtual machines are deployed?

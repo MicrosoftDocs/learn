@@ -20,7 +20,7 @@ This code is merely "*one possible solution*" because you may have added line fe
 
 The biggest changes to the problematic code included:
 - moving the `total` and `found` variables outside of the `foreach` statement
-- initializing both the `total` and `found` variables with logical default values
+- initializing both the `total` and `found` variables with sensible default values
 - removing the code blocks and extra line feeds from the `if` statements
 
 No matter how you formatted the code, when you run the code, you should see the following output.

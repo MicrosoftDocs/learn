@@ -5,15 +5,15 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A company wants to build a new voting kiosk for sales to governments around the world. Which IoT technologies should they choose to ensure the highest degree of security?"
+  - content: "A company wants to build a new voting kiosk for sales to governments around the world. Which IoT technologies should the company choose to ensure the highest degree of security?"
     choices:
     - content: "IoT Hub"
       isCorrect: false
@@ -24,11 +24,11 @@ quiz:
     - content: "Azure Sphere"
       isCorrect: true
       explanation: "Azure Sphere provides the highest degree of security to ensure the device has not been tampered with."
-  - content: "A company wants to quickly manage their individual IoT devices using a web-based user interface. Which IoT technology should they choose?"
+  - content: "A company wants to quickly manage its individual IoT devices by using a web-based user interface. Which IoT technology should it choose?"
     choices:
     - content: "IoT Hub"
       isCorrect: false
-      explanation: "IoT Hub does not provide a graphical user interface for device management."
+      explanation: "An IoT hub does not provide a graphical user interface for device management."
     - content: "IoT Central"
       isCorrect: true
       explanation: "IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "IoT Hub"
       isCorrect: true
-      explanation: "IoT Hub communicates to IoT devices sending and receiving messages."
+      explanation: "An IoT hub communicates to IoT devices by sending and receiving messages."
     - content: "IoT Central"
       isCorrect: false
-      explanation: "IoT Central is not concerned with communication between device and cloud, though it can initiate this communication via a web-based portal."
+      explanation: "IoT Central is not concerned with communication between devices and the cloud, though it can initiate this communication via a web-based portal."
     - content: "Azure Sphere"
       isCorrect: false
-      explanation: "Azure Sphere is not primarily concerned with communication between device and cloud."
+      explanation: "Azure Sphere is not primarily concerned with communication between devices and the cloud."

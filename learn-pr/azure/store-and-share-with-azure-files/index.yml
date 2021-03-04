@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.store-and-share-with-azure-files
 metadata:
-  title: Store and share files in your application with Azure Files
-  description: Azure Files provides a cloud-based file share for storing and sharing files to applications. Whether it's an application hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
+  title: Store and share files in your app with Azure Files
+  description: Azure Files provides a cloud-based file share for storing and sharing files to apps. Whether it's an app hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
   ms.date: 03/17/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Store and share files in your application with Azure Files
-summary: Azure Files provides a cloud-based file share for storing and sharing files to applications. Whether it's an application hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
+title: Store and share files in your app with Azure Files
+summary: Azure Files provides a cloud-based file share for storing and sharing files to apps. Whether it's an app hosted in Azure App Service, an Azure VM, or an on-premises app, Azure Files can store and share file access between one or more applications and systems in a secure and failure-resilient manner.
 abstract: | 
   In this module, you will:
   - Identify the features and use cases for Azure Files.

@@ -2,10 +2,10 @@
 uid: learn.azure.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
 title: Design your application to meet your SLA
 metadata:
-  description: "Learn how technology choices can impact your application SLA."
+  description: "Learn how technology choices can affect your application SLA."
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

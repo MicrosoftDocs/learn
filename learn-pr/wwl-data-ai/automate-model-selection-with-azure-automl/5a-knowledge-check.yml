@@ -3,8 +3,8 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge"
-  ms.date: 07/16/2020
+  description: "Knowledge check"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You are using automated machine learning to train a model that predicts the species of an iris based on its petal and sepal measurements. Which kind of task should you specify for automated machine learning?"
+  - content: "You are using automated machine learning to train a model that predicts the species of a penguin based on its bill and flipper measurements. Which kind of task should you specify for automated machine learning?"
     choices:
     - content: "Regression"
       isCorrect: false
@@ -24,14 +24,14 @@ quiz:
     - content: "Classification"
       isCorrect: true
       explanation: "This is correct. Predicting a class requires a classification task."
-  - content: "You have submitted an automated machine learning run using the Python SDk for Azure Machine Learning. When the run completes, which method of the run object should you use to retrieve the best model?"
+  - content: "You want to use automated machine learning to find the model with the best AUC_weighted metric. Which parameter of the AutoMLConfig object should you set?"
     choices:
-    - content: "get_output()"
+    - content: "task='AUC_weighted'"
+      isCorrect: false
+      explanation: "That is incorrect. Set the primary metric to the performance score for which you want to optimize the model."
+    - content: "label_column_name= 'AUC_weighted'"
+      isCorrect: false
+      explanation: "That is incorrect. Set the primary metric to the performance score for which you want to optimize the model."
+    - content: "primary_metric='AUC_weighted'"
       isCorrect: true
-      explanation: "That is correct. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."
-    - content: "load_model()"
-      isCorrect: false
-      explanation: "That is incorrect. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."
-    - content: "get_metrics()"
-      isCorrect: false
-      explanation: "That is incorrect. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."
+      explanation: "That is correct. Set the primary metric to the performance score for which you want to optimize the model."

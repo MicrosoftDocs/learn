@@ -6,10 +6,9 @@ metadata:
   description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]
@@ -43,12 +42,12 @@ quiz:
 
   - content: "Which Azure service detects anomalies in account activities and notifies you of potential harmful attempts to access your account?"
     choices: 
-    - content: "Advanced Threat Protection"
+    - content: "Microsoft Defender for Storage"
       isCorrect: true
-      explanation: "Advanced Threat Protection, detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Azure Storage Account Security Feature"
       isCorrect: false
-      explanation: "Incorrect. Azure Storage Account Security Feature does not exist. Advanced Threat Protection, detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Incorrect. Azure Storage Account Security Feature does not exist. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
     - content: "Encryption in transit"
       isCorrect: false
-      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Advanced Threat Protection, detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."
+      explanation: "Incorrect. Encryption in transit uses security algorithms to protect data on the network. Microsoft Defender for Storage detects anomalies in account activity. It then notifies you of potentially harmful attempts to access your account."

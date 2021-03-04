@@ -5,7 +5,7 @@ Logic Apps is a powerful technology for defining workflows. Azure Resource Manag
 
 ## Learning objectives
 
-- Define a Logic Apps workflow declaratively in Workflow Definition Language 
+- Define a Logic Apps workflow declaratively in Workflow Definition Language
 - Deploy a Logic App definition as a Resource Manager template using the Azure CLI
 - Define a more configurable template using parameters
 

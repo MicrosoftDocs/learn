@@ -1,12 +1,12 @@
-The first step towards an Azure landing zone deployment is the implementation of a Cloud Adoption Framework landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
+The first step towards an Azure landing zone deployment is the implementation of a Cloud Adoption Framework (CAF) landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
 
 ## Deploy the blueprint sample
 
 Starting with an empty Azure subscription, you will deploy the blueprint sample using the following steps:
 
-- Create a new blueprint from the sample
-- Mark your copy of the sample as **Published**
-- Assign your copy of the blueprint to an existing subscription
+- Create a new blueprint from the sample.
+- Mark your copy of the sample as **Published**.
+- Assign your copy of the blueprint to a current subscription.
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
 
@@ -18,13 +18,13 @@ First, implement the blueprint sample by creating a new blueprint in your enviro
 
 1. From the **Getting started** page on the left, select the **Create** button under **Create a blueprint**.
 
-1. Find the **CAF Migration landing zone** blueprint sample under *Other Samples* and select **Use this sample**.
+1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples** and select **Use this sample**.
 
 1. Enter the *Basics* of the blueprint sample:
    - **Blueprint name** provide a name for your copy of the CAF Migration landing zone blueprint sample.
-   - **Definition location** use the ellipsis and select the management group to save your copy of the sample to.
+   - **Definition location** use the ellipsis and select the management group to which you'll save your copy of the sample.
 
-1. Select the *Artifacts* tab at the top of the page or **Next: Artifacts** at the bottom of the page.
+1. Select the **Artifacts** tab at the top of the page or **Next: Artifacts** at the bottom of the page.
 
 1. Review the list of artifacts that make up the blueprint sample. Many of the artifacts have parameters that we'll define later. Select **Save Draft** when you've finished reviewing the blueprint sample.
 
@@ -52,8 +52,8 @@ Once the copy of the blueprint sample has been successfully published, it can be
    - Basics
      - **Subscriptions:** Select one or more of the subscriptions that are in the management group you saved your copy of the blueprint sample to. If you select more than one subscription, an assignment will be created for each using the parameters entered.
      - **Assignment name:** The name is pre-populated for you based on the name of the blueprint. Change as needed or leave as is.
-     - **Location:** Select a region for the managed identity to be created in.
-     - Azure blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
+     - **Location:** Select a region in which to create the managed identity.
+     - Azure Blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
      - **Blueprint definition version:** Pick a **Published** version of your copy of the blueprint sample.
    - Lock assignment
      - Select the blueprint lock setting for your environment.
@@ -62,7 +62,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
    - Blueprint parameters
      - The parameters defined in this section are used by many of the artifacts in the blueprint definition to provide consistency.
 
-       - **Organization:** Enter your organization name such as Contoso or Fabrikam, must be unique.
+       - **Organization:** Enter your organization's name; for example, Contoso or Fabrikam. It must be unique.
        - **AzureRegion:** Select one Azure region for deployment.
 
    - Artifact parameters
@@ -72,7 +72,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
 1. Once all parameters have been entered, select **Assign** at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly five minutes. To check on the status of deployment, open the blueprint assignment.
 
 > [!WARNING]
-> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing/). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate the cost of running resources deployed by this blueprint sample.
+> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing?azure-portal=true). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to estimate the cost of running resources deployed by this blueprint sample.
 
 ## Artifact parameters table
 
@@ -80,8 +80,8 @@ The following table provides a list of the blueprint artifact parameters:
 
 |Artifact name|Artifact type|Parameter name|Description|
 |-|-|-|-|
-| Deploy VNet landing zone | Resource Manager template | `IPAddress_space` | **Locked** - Provide first two octets example, 10.0 |
+| Deploy VNet landing zone | Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets example, 10.0 |
 | Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - Group or user object ID to grant permissions to in Key Vault |
-| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - Number of days that data will be retained in Log Analytics |
-| Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - Region used when establishing the workspace |
+| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The umber of days that data will be retained in Log Analytics |
+| Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
 | Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |

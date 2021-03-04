@@ -3,12 +3,11 @@ uid: learn.advocates.azure-functions-and-signalr.2-analyze-limitations-of-pollin
 metadata:
   title: Analyze the limitations of a polling-based web app
   description: Discuss the drawbacks of a web application that relies on polling to keep the UI updated.
-  ms.date: 05/31/19
+  ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Analyze the limitations of a polling-based web app
 durationInMinutes: 6
 content: |

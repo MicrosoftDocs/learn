@@ -2,10 +2,10 @@
 uid: learn.azure.plan-manage-azure-costs.4-purchase-azure-services
 title: Purchase Azure services
 metadata:
-  description: Learn how to purchase Azure services as well as get a sense for other factors that affect cost.
+  description: Learn how to purchase Azure services and get a sense for other factors that affect cost.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

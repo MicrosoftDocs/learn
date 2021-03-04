@@ -3,10 +3,10 @@ uid: learn.azure.azure-architecture-fundamentals.overview
 title: Overview of Azure subscriptions, management groups, resources, and regions
 metadata:
   title: Overview of Azure subscriptions, management groups, resources, and regions
-  description: In this unit, you'll learn that basics of Azure subscriptions, management groups, resources, and regions.
+  description: In this unit, you'll learn the basics of Azure subscriptions, management groups, resources, and regions.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

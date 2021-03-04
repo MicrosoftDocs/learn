@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is Microsoft's Cloud Access Security Broker solution?"
+    choices:
+    - content: "Microsoft Cloud App Security"
+      isCorrect: true
+      explanation: "Correct. Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy."
+    - content: "Microsoft Cloud Computing Services"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Azure is Microsoft's cloud computing services."
+    - content: "Microsoft Security Center"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft 365 security center is intended to help security admins and security operations teams manage and protect their organization."
+  - content: "By default, who has the ability to create application registrations or consent to applications in Azure Active Directory?"
+    choices:
+    - content: "All Azure AD Users"
+      isCorrect: true
+      explanation: "Correct. In Azure AD all users can register application registrations and manage all aspects of applications they create. Everyone also has the ability to consent to apps accessing company data on their behalf."
+    - content: "All Azure AD and Guest users"
+      isCorrect: false
+      explanation: "Guest users do not have the ability to create applications by default."
+    - content: "Only users assigned the Global Administrator role"
+      isCorrect: false
+      explanation: "Incorrect. Global admin role users have global access to most management features and data across an organization's estate. By default, the Global administrators can create app registrations, however, they are not the only users who have permission to do so."
+  - content: "Which statement best describes the Cloud Application Administrator role?"
+    choices:
+    - content: "Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. Users assigned to this role are not added as owners when creating new application registrations or enterprise applications."
+      isCorrect: true
+      explanation: "Correct. Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. Users assigned to this role are not added as owners when creating new application registrations or enterprise applications."
+    - content: "Users in this role have the same permissions as the Application Management role, excluding the ability to manage application proxy. Users assigned to this role are not added as owners when creating new application registrations or enterprise applications."
+      isCorrect: false
+      explanation: "Incorrect. The Application Management role is not a valid role in Microsoft 365."
+    - content: "Users in this role have the same permissions as the Site Administrator role, including the ability to manage application proxy."
+      isCorrect: false
+      explanation: "Incorrect. A site administrator is a permission used in SharePoint and SharePoint Online."

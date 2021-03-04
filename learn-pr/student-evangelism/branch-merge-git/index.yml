@@ -33,6 +33,7 @@ roles:
 - developer
 products:
 - azure
+- github
 units:
 - learn.student-evangelism.branch-merge-git.0-introduction
 - learn.student-evangelism.branch-merge-git.1-branch-and-merge

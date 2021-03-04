@@ -2,8 +2,8 @@
 uid: learn.wwl.train-evaluate-deep-learn-models
 metadata:
   title: Train and evaluate deep learning models
-  description: "Deep learning is an advanced form of machine learning that emulates the way the human brain learns through networks of connected neurons."
-  ms.date: 09/25/2020
+  description: "Train and evaluate deep learning models"
+  ms.date: 02/02/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

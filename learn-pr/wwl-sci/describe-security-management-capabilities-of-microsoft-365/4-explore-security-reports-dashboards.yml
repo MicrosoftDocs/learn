@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365.explore-security-reports-dashboards
+title: Explore security reports and dashboards
+metadata:
+  title: Explore security reports and dashboards
+  description: "Explore security reports and dashboards"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-explore-security-reports-dashboards.md)]

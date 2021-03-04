@@ -4,12 +4,12 @@ title: Configure Azure Cosmos DB, and Azure Storage
 metadata:
   title: Configure Azure Cosmos DB, and Azure Storage
   description: "Configure Azure Cosmos DB, and Azure Storage"
-  ms.date: 09/05/2020
+  ms.date: 02/08/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/6-configure-non-relational-data-services.md)]

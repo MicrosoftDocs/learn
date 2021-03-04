@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-azure-sentinel-workspaces.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is your log data stored?"
+    choices:
+    - content: "Azure Sentinel Workspace"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Sentinel Workspace is a solution in a Log Analytics workspace"
+    - content: "Azure Lighthouse"
+      isCorrect: false
+      explanation: "Incorrect.  Azure Lighthouse enables cross tenant security"
+    - content: "Log Analytics workspace"
+      isCorrect: true
+      explanation: "Correct.  Log Analytics workspace is where the data resides"
+  - content: "Which Azure Sentinel security role can create workbooks?"
+    choices:
+    - content: "Azure Sentinel Responder"
+      isCorrect: false
+      explanation: "Incorrect. The Contributor role can create workbooks."
+    - content: "Azure Sentinel Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Contributor role can create workbooks."
+    - content: "Azure Sentinel Contributor"
+      isCorrect: true
+      explanation: "Correct. The Contributor role can create workbooks."
+  - content: "Why is it important to set the region when creating the Log Analytics workspace?"
+    choices:
+    - content: "Specifies where the log data will be stored."
+      isCorrect: true
+      explanation: "Correct.  Region is the data center where your log data is stored"
+    - content: "Specifies the timezone the data will be displayed in."
+      isCorrect: false
+      explanation: "Incorrect.  Region is the data center where your log data is stored"
+    - content: "Specifies the log retention period"
+      isCorrect: false
+      explanation: "Incorrect.  Region is the data center where your log data is stored"

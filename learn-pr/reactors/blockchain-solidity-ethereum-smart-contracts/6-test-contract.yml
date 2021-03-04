@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.6-test-contract
+metadata:
+  title: Exercise - Test your smart contract
+  description: Learn how to test your smart contract.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Test your smart contract
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-test-contract.md)]

@@ -2,7 +2,7 @@
 uid: learn.azdo.deploy-nodejs
 metadata:
   title: Automate Node.js deployments with Azure Pipelines
-  description: Implement CI/CD pipeline for Node.js applications.
+  description: Implement CI/CD pipeline for Node.js applications. Automate deployment of Vue, React, Angular or webpack apps with Azure Pipelines.
   ms.date: 04/24/2020
   author: tpetchel
   ms.author: thpetche

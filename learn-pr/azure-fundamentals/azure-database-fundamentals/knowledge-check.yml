@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -37,7 +37,7 @@ quiz:
       isCorrect: false
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-  - content: "Tailwind Traders millions of log entires that they would like to analyze. Which option would be ideal for analysis?"
+  - content: "Tailwind Traders has millions of log entries that it wants to analyze. Which option would be ideal for analysis?"
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false
@@ -47,4 +47,4 @@ quiz:
       isCorrect: false
     - content: "Azure Synapse Analytics"
       isCorrect: true
-      explanation: "Azure HDInsight is the logical choice for analyzing large volumes of data."
+      explanation: "Azure Synapse Analytics is the logical choice for analyzing large volumes of data."

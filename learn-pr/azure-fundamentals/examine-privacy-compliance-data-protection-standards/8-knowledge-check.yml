@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: Where can the team access details about the personal data Microsoft processes and how they process it, including for Cortana?
+  - content: Where can the team access details about the personal data Microsoft processes and how the company processes it, including for Cortana?
     choices:
     - content: Microsoft Privacy Statement
       isCorrect: true
@@ -30,21 +30,21 @@ quiz:
     choices:
     - content: Microsoft Privacy Statement
       isCorrect: false
-      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how they process it.
+      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how the company processes it.
     - content: Trust Center
       isCorrect: true
-      explanation: The Trust Center is a great resource for people in your organization who may play a role in security, privacy, and compliance.
-    - content: Online Services Terms (OST)
+      explanation: The Trust Center is a great resource for people in your organization who might play a role in security, privacy, and compliance.
+    - content: Online Services Terms
       isCorrect: false
-      explanation: The OST is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
-  - content: Where can the IT department find reference blueprints that they can apply directly to their Azure subscriptions?
+      explanation: The Online Services Terms is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
+  - content: Where can the IT department find reference blueprints that it can apply directly to its Azure subscriptions?
     choices:
-    - content: Online Services Terms (OST)
+    - content: Online Services Terms
       isCorrect: false
-      explanation: The OST is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
+      explanation: The Online Services Terms is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
     - content: Azure compliance documentation
       isCorrect: true
       explanation: The compliance documentation provides reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription.
     - content: Microsoft Privacy Statement
       isCorrect: false
-      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how they process it.
+      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how the company processes it.

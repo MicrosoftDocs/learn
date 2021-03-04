@@ -2,8 +2,8 @@
 uid: learn.wwl.create-bot-with-bot-framework-composer
 metadata:
   title: Create a Bot with the Bot Framework Composer
-  description: "User the Bot Framework Composer to quickly and easily build sophisticated conversational bots without writing code."
-  ms.date: 09/06/2020
+  description: "Create a Bot with the Bot Framework Composer"
+  ms.date: 12/21/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   Knowledge of how to use the Azure portal
   Knowledge of REST and HTTPS requests
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-a-bot-with-the-bot-framework-composer.svg
 levels:
 - intermediate
 roles:

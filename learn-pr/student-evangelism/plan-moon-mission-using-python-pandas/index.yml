@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas
+metadata:
+  title: Plan a Moon mission by using Python pandas
+  description: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan a Moon mission by using Python pandas
+summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+abstract:  |
+  In this module, you will:
+    - Create a clear representation of data from many sources.
+    - Use Python and pandas to explore data. 
+    - Use data cleansing techniques to get a clear representation of data.
+    - Hypothesize how much rock sample astronauts might bring back on the Artemis missions.
+
+  >[!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
+
+prerequisites: |
+    - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
+    - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+iconUrl: /learn/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+- student
+products:
+- vs-code
+units:
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.1-introduction
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.2-rock-samples
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.3-setup-import-data
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.4-setup-cleanse.data
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.5-add-modules
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.6-understand-modules
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.7-artemis-capacity
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.8-prioritize-needed-rocks
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.9-develop-recommendation
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.10-knowledge-check
+- learn.student-evangelism.plan-moon-mission-using-python-pandas.11-summary
+badge:
+  uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.badge

@@ -39,7 +39,7 @@ As you access the LUIS app in this container, the endpoint hits will result in a
     - change ```the --mount type=bind,src=c:\input, target=/input``` line to include the path to the input folder you created earlier
     - change the ```--mount type=bind,src=c:\output\,target=/output``` line to include the path to the output folder you created earlier
     - depending on your host computer, you may be able to modify the amount of memory and CPUs.  The current values are the recommended usage
-    - paste your endpoint URI and key in the placeholders.  The3 values are taken from your LUIS resource in Azure.
+    - paste your endpoint URI and key in the placeholders.  These values are taken from your LUIS resource in Azure.
 
     >[!WARNING]
     >You may receive a series of errors if Docker is not setup for proper file sharing.  To ensure Docker has access to the folders you created, follow the steps outlined here.

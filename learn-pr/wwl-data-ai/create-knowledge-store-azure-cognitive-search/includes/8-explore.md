@@ -4,7 +4,7 @@ After you have run an indexer that uses a skillset to create a knowledge store, 
 
 The *object* projections defined in the Margie's Travel skillset consist of a JSON file for each indexed document. These files are stored in a blob container in the Azure Storage account specified in the skillset definition.
 
-1. In another browser tab, open the [Azure portal](https://portal.azure.com?portal=true) and view the Azure Storage account you created at the beginning of this module (its name is similar to *store1234abcd5678efgh*).
+1. Open the [Azure portal](https://portal.azure.com?portal=true) and view the Azure Storage account you created at the beginning of this module (its name is similar to *store1234abcd5678efgh*).
 2. Select the **Storage explorer** tab (in the pane on the left) to view the storage account in the storage explorer interface in the Azure portal.
 2. Expand **BLOB CONTAINERS** to view the containers in the storage account. In addition to the **margies** container where the source data is stored, there should be two new containers: **margies-images** and **margies-knowledge**. These were created by the indexing process.
 3. Select the **margies-knowledge** container. It should contain a folder for each indexed document.
@@ -79,7 +79,7 @@ With the enriched document data persisted in the relational tables, you can use 
 
 Now that you have finished the exercises, you can delete the Azure resources.
 
-1. In Right-click (Ctrl+click if using a Mac) the **03-Create-a-knowledge-store** folder and select **Open in Integrated Terminal**. This will open a new bash terminal pane.
+1. Right-click (Ctrl+click if using a Mac) the **03-Create-a-knowledge-store** folder and select **Open in Integrated Terminal**. This will open a new bash terminal pane.
 2. In the terminal pane, enter the following command to delete the resources used in this module:
 
     ```bash

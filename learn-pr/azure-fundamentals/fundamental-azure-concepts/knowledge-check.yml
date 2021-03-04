@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.fundamental-azure-concepts.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: Knowledge Check
+  title: Knowledge check
+  description: Knowledge check
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following choices is not a cloud computing category?"
+  - content: "Which of the following choices isn't a cloud computing category?"
     choices:
     - content: "Platform-as-a-Service (PaaS)"
       isCorrect: false
       explanation: "PaaS is a valid cloud computing category."
     - content: "Networking-as-a-Service (NaaS)"
       isCorrect: true
-      explanation: "NaaS is not a cloud computing category."
+      explanation: "NaaS isn't a cloud computing category."
     - content: "Infrastructure-as-a-Service (IaaS)"
       isCorrect: false
       explanation: "IaaS is a valid cloud computing category."
@@ -31,7 +31,7 @@ quiz:
       explanation: "SaaS is a valid cloud computing category."
   - content: "Which of the following statements is true?"
     choices:
-    - content: "With Operating Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
+    - content: "With Operating Expenses (OpEx), you are responsible for purchasing and maintaining your computing resources."
       isCorrect: false
       explanation: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
     - content: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
@@ -39,21 +39,21 @@ quiz:
     - content: "With Capital Expenses (CapEx), you are only responsible for the computing resources that you use."
       isCorrect: false
       explanation: "With Capital Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
-  - content: "Which of the following options is not a type of cloud computing?"
+  - content: "Which of the following options isn't a type of cloud computing?"
     choices:
     - content: "Distributed cloud"
       isCorrect: true
-      explanation: "A distributed cloud is not a valid type of cloud computing."
+      explanation: "A distributed cloud isn't a valid type of cloud computing."
     - content: "Hybrid cloud"
       isCorrect: false
-      explanation: "A hybrid cloud is a valid type of cloud computing"
+      explanation: "A hybrid cloud is a valid type of cloud computing."
     - content: "Private cloud"
       isCorrect: false
-      explanation: "A private cloud is a valid type of cloud computing"
+      explanation: "A private cloud is a valid type of cloud computing."
     - content: "Public cloud"
       isCorrect: false
-      explanation: "A public cloud is a valid type of cloud computing"
-  - content: "Which of the following choices is not a benefit of using cloud services?"
+      explanation: "A public cloud is a valid type of cloud computing."
+  - content: "Which of the following choices isn't a benefit of using cloud services?"
     choices:
     - content: "Scalability"
       isCorrect: false
@@ -61,9 +61,9 @@ quiz:
     - content: "Geographic isolation"
       isCorrect: true
       explanation: "You can choose to create resources in a single region; however, one of the primary advantages to cloud computing is geographic distribution."
-    - content: "Disaster Recovery"
+    - content: "Disaster recovery"
       isCorrect: false
       explanation: "Cloud computing provides a wealth of different technologies that enable disaster recovery."
-    - content: "High Availability"
+    - content: "High availability"
       isCorrect: false
-      explanation: "One of the primary advantages to cloud computing is that it enables your applications to provide a continuous user experience with no apparent downtime even when things go wrong."
+      explanation: "One of the primary advantages to cloud computing is that it enables your applications to provide a continuous user experience with no apparent downtime, even when things go wrong."

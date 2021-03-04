@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-privileged-access-management
+title: Describe privileged access management
+metadata:
+  title: Describe privileged access management
+  description: "Describe privileged access management"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-describe-privileged-access-management.md)]

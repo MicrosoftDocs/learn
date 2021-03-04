@@ -2,29 +2,30 @@
 uid: learn.azure.intro-to-azure-hybrid-services
 metadata:
   title: Introduction to Azure hybrid cloud services
-  description: Get an introductory overview of various hybrid-cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
+  description: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
   ms.date: 09/21/2020
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Introduction to Azure hybrid cloud services
-summary: Get an introductory overview of various hybrid-cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
+summary: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
 abstract: | 
   In this module, you will:
-  - Describe the elements of an Azure hybrid-cloud deployment.
+  - Describe the elements of an Azure hybrid cloud deployment.
   - Explain methods of connecting on-premises networks to workloads in Azure.
   - Understand how to use the same set of identities in hybrid environments.
-  - List the types of Azure hybrid-cloud compute workloads.
-  - Explain hybrid cloud application infrastructure.
+  - List the types of compute workloads for hybrid clouds.
+  - Explain the application infrastructure of hybrid clouds.
   - Describe the services that support files and data in hybrid clouds.
-  - Explain technologies that support hybrid-cloud security.
+  - Explain technologies that support the security of hybrid clouds.
 prerequisites: | 
   - Basic understanding of Azure networking fundamentals
   - Basic understanding of Azure compute fundamentals
   - Basic understanding of Azure security fundamentals
-  - Basic understanding of On-premises workload fundamentals
-iconUrl: /learn/achievements/generic-badge.svg
+  - Basic understanding of on-premises workload fundamentals
+iconUrl: /learn/achievements/intro-to-azure-hybrid-services.svg
 levels:
 - beginner
 roles:

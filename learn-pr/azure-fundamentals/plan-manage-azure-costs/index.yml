@@ -1,10 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.plan-manage-azure-costs
 metadata:
-  description: Migration to the cloud presents new ways to think about your IT expenses. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+  title: Plan and manage your Azure costs (AZ-900)
+  description: Migration to the cloud presents new ways to think about your IT expenses. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend. Prepare for AZ-900.
   ms.date: 07/03/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and manage your Azure costs
@@ -12,13 +13,13 @@ summary: Learn about the factors that influence cost and tools you can use to he
 abstract: |
   After completing this module, you'll be able to:
 
-  * Use the Total Cost of Ownership (TCO) Calculator to compare your current datacenter costs to running the same workloads on Azure.
+  * Use the Total Cost of Ownership Calculator to compare your current datacenter costs to running the same workloads on Azure.
   * Describe the different ways you can purchase Azure products and services.
   * Use the Pricing calculator to estimate the monthly cost of running your cloud workloads.
   * Define some of the major factors that affect total cost and apply recommended practices to minimize cost.
 prerequisites: |
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/review-planning-managing-costs.svg
 levels:
 - beginner

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint
+metadata:
+  title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
+  description: "Perform evidence and entities investigations using Microsoft Defender for Endpoint"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
+summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that will provide you insight to understand the overall impact to your environment.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Investigate files in Microsoft Defender for Endpoint
+  - Investigate domains and IP addresses in Microsoft Defender for Endpoint
+  - Investigate user accounts in Microsoft Defender for Endpoint
+prerequisites: |
+  Intermediate understanding of Windows 10.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- m365
+units:
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.introduction
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-file
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-user-account
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-ip-addresses
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-domain
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.knowledge-check
+- learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.summary-resources
+badge:
+  uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.badge

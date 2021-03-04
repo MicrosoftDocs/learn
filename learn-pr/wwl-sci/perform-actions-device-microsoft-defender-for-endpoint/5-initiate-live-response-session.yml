@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.initiate-live-response-session
+title: Initiate live response session
+metadata:
+  title: Initiate live response session
+  description: "Initiate live response session"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-initiate-live-response-session.md)]

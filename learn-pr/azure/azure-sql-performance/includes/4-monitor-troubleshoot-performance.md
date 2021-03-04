@@ -82,7 +82,7 @@ Extended events can be used for Azure SQL Database, just like SQL Server, by cre
 You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. 
 
 > [!NOTE]
-> Note that the ability with SSMS to view live data isn't available for Azure SQL Database.
+> It is not possible to use SSMS to view active data for Azure SQL Database.
 
 It's important to know that any extended events fired for your sessions are specific to your database, and don't apply across the logical server.
 
@@ -104,7 +104,7 @@ To decide how to apply monitoring and troubleshooting performance tools and capa
 
 A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). The following diagram shows a decision tree to determine if a SQL Server performance issue is running or waiting, and how to use performance tools to determine the cause and solution.
 
-:::image type="content" source="../media/4-running-vs-waiting.svg" alt-text="Diagram of running versus waiting." border="false":::
+:::image type="content" source="../media/4-running-vs-waiting-january-21.svg" alt-text="Diagram of running versus waiting." border="false":::
 
 Let's dive more into the details of each aspect of the diagram.
 
@@ -123,6 +123,14 @@ First, look at overall resource usage. For a standard SQL Server deployment you 
 - `sys.server_resource_stats`
 
     This DMV behaves just like `sys.dm_db_resource_stats`, but it's used to see resource usage for the SQL Managed Instance for CPU, memory, and I/O. This DMV also takes a snapshot every 15 seconds.
+
+- `sys.dm_user_db_resource_governance`
+
+    For Azure SQL Database, this DMV returns the actual configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool.
+
+- `sys.dm_instance_resource_governance`
+
+    For Azure SQL Managed Instance, this DMV returns similar information as `sys.dm_user_db_resource_governance` but for the current SQL Managed Instance.
 
 #### Running
 

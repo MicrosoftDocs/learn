@@ -30,7 +30,7 @@ The ability to change history is one of Git's most powerful features. As with mo
 
 ## Recover a deleted file with `git checkout`
 
-Imagine you made a change to a source-code file that broke the entire project, so you want to revert to the previous version of that file. Or perhaps you accidentally deleted a file altogether. Git makes it easy to retrieve an earlier version, even if the current version no longer exists. Your best friend in this situation is the [`git checkout`](https://git-scm.com/docs/git-checkout) command.
+Imagine you made a change to a source-code file that broke the entire project, so you want to revert to the previous version of that file. Or perhaps you accidentally deleted a file altogether. Git makes it easy to retrieve an earlier version, even if the current version no longer exists. Your best friend in this situation is the [`git checkout`](https://git-scm.com/docs/git-checkout?azure-portal=true) command.
 
 `git checkout` has multiple uses, but in the next exercise, we're going to use it to recover a deleted file. `git checkout` will update files in the working tree to match the version in the index or the specified tree.
 

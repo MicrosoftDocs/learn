@@ -8,7 +8,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     echo http://$(az network public-ip show \
-      --resource-group $rg \
+      --resource-group $RG \
       --name appGatewayPublicIp \
       --query dnsSettings.fqdn \
       --output tsv)
@@ -30,7 +30,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     az vm deallocate \
-      --resource-group $rg \
+      --resource-group $RG \
       --name webServer1
     ```
 
@@ -40,7 +40,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     az vm start \
-      --resource-group $rg \
+      --resource-group $RG \
       --name webServer1
     ```
 

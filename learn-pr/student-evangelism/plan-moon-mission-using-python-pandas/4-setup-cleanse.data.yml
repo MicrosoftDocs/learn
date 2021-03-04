@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.4-setup-cleanse.data
+metadata:
+  title: Determine the question to ask to inform data cleansing
+  description: Determine what information you want to gather from the data to inform how to cleanse the data.
+  ms.date: 11/24/2020
+  author: sguthals
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Determine the question to ask to inform data cleansing
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-setup-cleanse.data.md)]

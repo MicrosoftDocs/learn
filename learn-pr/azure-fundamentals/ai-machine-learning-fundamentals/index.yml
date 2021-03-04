@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.ai-machine-learning-fundamentals
 metadata:
-  title: Choose the best artificial intelligence service for your needs
-  description: Examine Azure's artificial intelligence services choose the right service for your scenario.
+  title: Choose the best AI service for your needs (AZ-900)
+  description: Examine Azure's AI services, and choose the right one for your company. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best artificial intelligence service for your needs
-summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
+title: Choose the best AI service for your needs
+summary: Examine Azure's AI services, and choose the right one for your company.
 abstract: |
-  After completing this module, you'll be able to:
-  - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
+  After you've completed this module, you will be able to:
+  - Choose the Azure AI services that best address your company's business challenges.
 prerequisites: | 
-  - You should be familiar with the idea of an Application Programming Interface, or API. Programmers use APIs to utilize functionality contained in code libraries.
-  - You should be familiar with what a "web API" is. You should understand that a web API is an API that is accessible from servers that accept requests via HTTP. Also, you should understand that a "web API endpoint" is the location of the code library and that REST APIs refer to the design of the URL style used to expose the API's functionality.
+  - Familiarity with the concept of *application programming interfaces*, or APIs. Programmers use APIs to interact with the functionality that's contained in code libraries.
+  - Familiarity with the following additional concepts:
+     - *Web API*: An API that's accessible from servers that accept requests via HTTP. 
+     - *Web API endpoint*: The location of the code library.
+     - *REST API*: The design of the URL style that's used to expose the API's functionality.
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
 levels:
 - beginner
 roles:

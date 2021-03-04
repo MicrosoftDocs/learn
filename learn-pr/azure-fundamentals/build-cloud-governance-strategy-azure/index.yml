@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.build-cloud-governance-strategy-azure
 metadata:
-  title: Build a cloud governance strategy on Azure
-  description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy.
+  title: Build a cloud governance strategy on Azure (AZ-900)
+  description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a cloud governance strategy on Azure
@@ -13,15 +13,15 @@ summary: Learn how access policies, resource locks, and tags, as well as Azure s
 abstract: |
   After completing this module, you'll be able to:
 
-  * Make organizational decisions about your cloud environment by using the Cloud Adoption Framework.
-  * Define who can access cloud resources by using Azure RBAC.
+  * Make organizational decisions about your cloud environment by using the Cloud Adoption Framework for Azure.
+  * Define who can access cloud resources by using Azure role-based access control.
   * Apply a resource lock to prevent accidental deletion of your Azure resources.
   * Apply tags to your Azure resources to help describe their purpose.
   * Control and audit how your resources are created by using Azure Policy.
   * Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
 prerequisites: |
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
 levels:
 - beginner

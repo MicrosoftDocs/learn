@@ -3,8 +3,8 @@ uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.exercise
 title: Exercise - Tune hyperparameters
 metadata:
   title: Exercise - Tune hyperparameters
-  description: "Get hands-on experience of running a hyperparameter tuning experiment."
-  ms.date: 07/16/2020
+  description: "Exercise - Tune hyperparameters"
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

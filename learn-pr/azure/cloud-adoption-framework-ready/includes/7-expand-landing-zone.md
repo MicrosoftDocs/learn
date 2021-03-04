@@ -4,15 +4,15 @@ With your CAF Migration landing zone blueprint deployed, it's time to begin expa
 
 To accelerate your early adoption efforts, we suggest minimizing the number of blocking steps. The following approach allows for rapid landing zone configuration to meet minimum technical requirements to deploy low risk workloads.
 
-- Assign the initial landing zone (the previous unit of this Learn module)
-- Validate subscription scaling decisions
-- Adhere to naming and tagging conventions
-- Review networking options
-- Implement additional identity and access management considerations
-- Plan for parallel maturity of Govern, Security, and Manage methodologies
+- Assign the initial landing zone (the previous unit of this Learn module).
+- Validate subscription scaling decisions.
+- Adhere to naming and tagging conventions.
+- Review networking options.
+- Implement additional identity and access management considerations.
+- Plan for parallel maturity of Govern, Security, and Manage methodologies.
 
 > [!CAUTION]
-> While this approach meets minimum technical standards, it may not initially meet your mininum operational standards. If security, governance, or operations management requirements must be met prior to your first adoption effort, you'll likely need to begin execution of that methodology prior to adoption. For an accelerated approach to an enterprise-ready environment, you may want to consider the **Start with Enterprise-Scale** implementation options.
+> While this approach meets minimum technical standards, it may not initially meet your minimum operational standards. If security, governance, or operations management requirements must be met prior to your first adoption effort, then you might need to start executing that methodology prior to adoption. For an accelerated approach to an enterprise-ready environment, consider the options within **Start with Enterprise-scale** implementation.
 
 ## Validate subscription scaling decisions
 
@@ -23,8 +23,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 At a minimum, you'll likely need two subscriptions: production and nonproduction.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="An initial subscription model showing keys next to boxes labeled production and nonproduction." border="false":::
-
-_Figure 1: An initial subscription model with keys next to boxes labeled "production" and "nonproduction"._
+_Figure 1: An initial subscription model with keys next to **production** and **nonproduction** boxes._
 
 - Create one Azure subscription to contain your production workloads.
 - Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) for lower pricing.
@@ -43,15 +42,13 @@ This approach has many benefits:
 If innovation goals are part of your cloud adoption strategy, consider creating one or more sandbox subscriptions. You can apply security policies to keep these test subscriptions isolated from your production and nonproduction environments. Users can easily experiment with Azure capabilities in these isolated environments. Use an Azure Dev/Test offer to create these subscriptions.
 
 :::image type="content" source="../media/initial-subscription-model-with-sandboxes.png" alt-text="Image showing an initial subscription model showing keys next to boxes labeled production, nonproduction, and sandboxes." border="false":::
-
 _Figure 2: A subscription model with sandbox subscriptions._
 
 ### Shared services subscription
 
-If you're planning to host **more than 1,000 VMs or compute instances in the cloud within 24 months**, create another Azure subscription to host shared services. This will prepare you to support your end-state enterprise architecture. If you plan to implement enterprise operations, you may wish to further subdivide your shared services subscriptions to be feature-specific. For more information, see the **Start with enterprise-scale** Learn modules.
+If you're planning to host **more than 1,000 virtual machines or compute instances in the cloud within 24 months**, create another Azure subscription to host shared services. This will prepare you to support your end-state enterprise architecture. If you plan to implement enterprise operations, you may wish to further subdivide your shared services subscriptions to be feature-specific. For more information, see the **Start with enterprise-scale** Learn modules.
 
 :::image type="content" source="../media/initial-subscription-model-with-shared-services.png" alt-text="An image showing an initial subscription model showing keys next to boxes labeled production and shared services." border="false":::
-
 _Figure 3: A subscription model with shared services._
 
 ### Plan for subscription scaling
@@ -77,7 +74,7 @@ The CAF Migration landing zone blueprint demonstrates network configuration, but
 
 ## Implement additional identity and access management considerations
 
-Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [Role-based access control (RBAC) considerations](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true)
+Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [RBAC considerations](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true).
 
 ## Plan for parallel maturity of Govern, Security, and Manage methodologies
 

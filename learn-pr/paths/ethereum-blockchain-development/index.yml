@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.ethereum-blockchain-development
+metadata:
+  title: Get started with blockchain development
+  description: Learn about blockchain and development on the Ethereum platform. Discover what skills you need to begin building your own blockchain networks at scale.
+  ms.date: 10/05/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with blockchain development
+summary: |
+  This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+
+  In this learning path, you will:
+    - Learn the foundations of blockchain and how blockchain technology works.
+    - Gain an understanding of the tools to develop on the Ethereum blockchain.
+    - Create smart contracts and decentralized applications.
+    - Deploy to local and test Ethereum networks.
+prerequisites: |
+  - Previous experience with any programming language like C, Python, or JavaScript
+  - Basic knowledge of programming concepts
+  - Familiarity with the command line to create new directories
+  - Visual Studio Code installed
+iconUrl: /learn/achievements/ethereum-blockchain-development.svg 
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+modules:
+- learn.azure-intro-to-blockchain
+- learn.reactors.blockchain-learning-solidity
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts
+- learn.reactors.blockchain-tokens
+- learn.reactors.blockchain-create-ui-decentralized-apps
+- learn.reactors.blockchain-ethereum-networks
+trophy:
+  uid: learn.ethereum-blockchain-development.trophy

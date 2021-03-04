@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.manage-devices-with-microsoft-endpoint-manager
+metadata:
+  title: Understand device management using Microsoft Endpoint Manager
+  description: In this module, you'll learn about how your organization's devices can be provisioned and managed. Additionally, you will learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
+  ms.date: 10/23/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand device management using Microsoft Endpoint Manager
+summary: As part of device management, Endpoint Manager helps you protect device data, manage policy assignments, ensure proper device access, implement device security rules, and resolve device compliance issues.
+abstract: | 
+  In this module, you will:
+  - Understand the how your organization's devices can be provisioned.
+  - Understand the device management lifecycle.
+  - Learn about the different types of enrollment methods available using Microsoft Endpoint Manager.
+prerequisites: None
+iconUrl: /learn/achievements/device-management-with-microsoft-endpoint-manager.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+units:
+- learn.manage-devices-with-microsoft-endpoint-manager.1-introduction
+- learn.manage-devices-with-microsoft-endpoint-manager.2-understand-provisioning
+- learn.manage-devices-with-microsoft-endpoint-manager.3-enroll-devices
+- learn.manage-devices-with-microsoft-endpoint-manager.4-configure-devices
+- learn.manage-devices-with-microsoft-endpoint-manager.5-protect-devices
+- learn.manage-devices-with-microsoft-endpoint-manager.6-retire-devices
+- learn.manage-devices-with-microsoft-endpoint-manager.7-device-enrollment-methods
+- learn.manage-devices-with-microsoft-endpoint-manager.8-knowledge-check
+- learn.manage-devices-with-microsoft-endpoint-manager.9-summary
+badge:
+  uid: learn.manage-devices-with-microsoft-endpoint-manager.badge

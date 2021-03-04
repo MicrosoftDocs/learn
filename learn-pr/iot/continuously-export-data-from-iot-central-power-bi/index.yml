@@ -4,7 +4,7 @@ metadata:
   description: This module covers continuous data export from IoT Central. You use the scenario from your previously completed "Create your first Azure IoT Central app" Learn module, where you controlled a refrigerated truck. Here, in this module, you add continuous data export to both Azure Blob storage and an event hub. You then build a Power BI app to read and display the telemetry data on a mobile phone.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up continuous data export from Azure IoT Central to a Power BI app

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "In which version of SQL Server was SSIS Projects introduced?"
+    choices:
+    - content: "SQL Server 2008."
+      isCorrect: false
+      explanation: "Incorrect. SQL Server 2008 has SSIS packages. SSIS Projects was introduced in SQL Server 2012 and is the unit of deployment for SSIS solutions."
+    - content: "SQL Server 2012."
+      isCorrect: true
+      explanation: "Correct. SSIS Projects was introduced in SQL Server 2012 and is the unit of deployment for SSIS solutions."
+    - content: "SQL Server 2016."
+      isCorrect: false
+      explanation: "Incorrect. SSIS Projects was introduced in SQL Server 2012 and is the unit of deployment for SSIS solutions."
+  - content: "Which tool is used to perform an assessment of migrating SSIS packages to Azure SQL Database services?"
+    choices:
+    - content: "Data Migration Assistant."
+      isCorrect: true
+      explanation: "Correct. The Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
+    - content: "Data Migration Assessment."
+      isCorrect: false
+      explanation: "Incorrect. Data Migration Assessment does not exist. Instead Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
+    - content: "Data Migration Service."
+      isCorrect: false
+      explanation: "Incorrect. The Data Migration Service is used to migrate database objects. The Data Migration Assistant is used to perform an assessment of migrating SSIS packages to Azure SQL Database services."
+  - content: "Which tool is used to create and deploy SQL Server Integration Packages on an Azure-SSIS integration runtime, or for on-premises SQL Server?"
+    choices:
+    - content: "SQL Server Data Tools."
+      isCorrect: true
+      explanation: "Correct. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
+    - content: "SQL Server Management Studio."
+      isCorrect: false
+      explanation: "Incorrect. SQL Server Management Studio is used to manage database instances and databases. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
+    - content: "dtexec."
+      isCorrect: false
+      explanation: "Incorrect. The dtexec command prompt utility is used to configure and execute SQL Server Integration Services packages. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."

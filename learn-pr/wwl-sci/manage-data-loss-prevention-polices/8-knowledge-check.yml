@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-loss-prevention-polices.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A security operations analyst wants to fine-tune their DLP policies before activating policy tips. Which report should they use to gather information?"
+    choices:
+    - content: "DLP incidents"
+      isCorrect: false
+      explanation: "This is not correct. This report is used to identify items with a high volume of matches."
+    - content: "DLP policy matches"
+      isCorrect: true
+      explanation: "This is correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning."
+    - content: "DLP false positives and overrides"
+      isCorrect: false
+      explanation: "This is not correct. This report allows you to fine-tune policies based on user input."
+  - content: "A security operations analyst wants to fine-tune their DLP policies based on user input. Which report should they use to gather information?"
+    choices:
+    - content: "DLP false positives and overrides"
+      isCorrect: true
+      explanation: "This is correct. You can allow users to report false positives and override protective actions. You can use the information of these actions to reduce the number of false positives or interruptions of legitimate business processes."
+    - content: "DLP incidents"
+      isCorrect: false
+      explanation: "This is not correct. This report is used to identify items with a high volume of matches."
+    - content: "DLP policy matches"
+      isCorrect: false
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning but it is not based on user input."
+  - content: "A security operations analyst wants to identify items in their organization that might contain a high volume of sensitive information based on your DLP policies. Which report should they use to gather information?"
+    choices:
+    - content: "DLP false reports and overrides"
+      isCorrect: false
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning but it is not based on user input."
+    - content: "DLP incidents"
+      isCorrect: true
+      explanation: "This is correct. This report is used to identify items with a high volume of matches which can indicate a high volume of sensitive information."
+    - content: "DLP policy matches"
+      isCorrect: false
+      explanation: "This is not correct. This report shows you all rule matches and allows you to review the accuracy of matches for fine-tuning and to identify business processes"
+  - content: "Which default role can you assign if you want to grant someone read-only permissions on DLP reports without allowing them to make changes?"
+    choices:
+    - content: "Security Reader"
+      isCorrect: true
+      explanation: "This is correct. The role only grants read-only permission to Compliance reports."
+    - content: "Security Administrator"
+      isCorrect: false
+      explanation: "This is not correct. Security Administrator allows ability to read and manage security configuration and reports."
+    - content: "Compliance Administrator"
+      isCorrect: false
+      explanation: "This is not correct. This role has full access to the Compliance Center and can make changes."

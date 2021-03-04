@@ -17,7 +17,7 @@ ws = Workspace.from_config()
 compute_name = 'aml-cluster'
 
 # Define compute configuration
-compute_config = AmlCompute.provisioning_configuration(vm_size='STANDARD_DS12_V2',
+compute_config = AmlCompute.provisioning_configuration(vm_size='STANDARD_DS11_V2',
                                                        min_nodes=0, max_nodes=4,
                                                        vm_priority='dedicated')
 
@@ -78,7 +78,7 @@ try:
     print('Found existing cluster.')
 except ComputeTargetException:
     # If not, create it
-    compute_config = AmlCompute.provisioning_configuration(vm_size='STANDARD_DS12_V2',
+    compute_config = AmlCompute.provisioning_configuration(vm_size='STANDARD_DS11_V2',
                                                            max_nodes=4)
     aml_cluster = ComputeTarget.create(ws, compute_name, compute_config)
 

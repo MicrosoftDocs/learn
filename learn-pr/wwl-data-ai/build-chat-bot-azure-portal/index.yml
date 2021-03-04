@@ -3,7 +3,7 @@ uid: learn.wwl.build-chat-bot-with-azure-portal
 metadata:
   title: Build a Chat Bot with the Azure portal
   description: "Create and test a basic chat bot using the Azure portal"
-  ms.date: 09/09/2020
+  ms.date: 10/21/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Knowledge of Azure
   Ability to use the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-a-chat-bot-with-the-azure-portal.svg
 levels:
 - beginner
 roles:

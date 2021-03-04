@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following artifact types has an investigation page?"
+    choices:
+    - content: "Domain"
+      isCorrect: true
+      explanation: "correct. There is an investigation page for Domain."
+    - content: "Hunter"
+      isCorrect: false
+      explanation: "Incorrect. There is not an investigation page for Hunter."
+    - content: "Threat Actor"
+      isCorrect: false
+      explanation: "Incorrect. Threat Actor is not a forensic artifact that can be collected."
+  - content: "What information is provided by a deep file analysis?"
+    choices:
+    - content: "Command history"
+      isCorrect: false
+      explanation: "Incorrect. The command history is not reported."
+    - content: "Registry Modifications"
+      isCorrect: true
+      explanation: "Correct. Registry modifications are reported."
+    - content: "Code change history"
+      isCorrect: false
+      explanation: "Incorrect. The code change history is not reported."
+  - content: "Which information is provided on the user account page?"
+    choices:
+    - content: "Associated alerts"
+      isCorrect: true
+      explanation: "Correct. This is provided."
+    - content: "Security groups"
+      isCorrect: false
+      explanation: "Incorrect.  The security groups the user accounts belongs is not shown."
+    - content: "Threat hunt ID"
+      isCorrect: false
+      explanation: "Incorrect.  The Threat hunt ID is not shown."

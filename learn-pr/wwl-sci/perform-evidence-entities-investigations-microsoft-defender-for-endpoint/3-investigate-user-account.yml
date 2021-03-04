@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-user-account
+title: Investigate a user account
+metadata:
+  title: Investigate a user account
+  description: "Investigate a user account"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-investigate-user-account.md)]

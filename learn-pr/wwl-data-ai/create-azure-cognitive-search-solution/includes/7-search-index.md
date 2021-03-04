@@ -30,7 +30,7 @@ To search the Margie's Travel index, you will use a web application that include
 
 1. In the **01-Create-a-search-solution/C-Sharp** folder, expand the **search-client** folder. This folder contains a simple ASP&#46;NET Core web application for the Margie's Travel web site.
 2. Open the **appsettings.json** file in the **search-client** folder. This file contains configuration values for the web application.
-3. Modify the values in the **appsettings.json** file to reflect the service name (<u>without</u> the .*search&#46;windows&#46;net* suffix) and query key for your Azure Cognitive Search service) and the  (be sure to specify the *query* key, and not the *admin* key!).
+3. Modify the values in the **appsettings.json** file to reflect the service name (<u>without</u> the .*search&#46;windows&#46;net* suffix) and query key for your Azure Cognitive Search service) and the (be sure to specify the *query* key, and not the *admin* key!). Then save the **appsettings.json** file.
 4. In the **Pages** folder for the web application, open the **Index.cshtml** code file. This file defines the main page of the web application. The page contains a form in which users can submit search terms, and code to render the search results.
 5. Open the **Index.cshtml.cs** code file, which contains C# code to support the web page. Review the **OnGet** function, which is called when the page is requested. It extracts parameters passed in the request, and then uses a **SearchServiceClient** object to submit a query to Azure Cognitive Search. The query includes the following parameters:
     - **Select**: The index fields to be included in the query results.
@@ -54,13 +54,13 @@ To search the Margie's Travel index, you will use a web application that include
     info: Microsoft.Hosting.Lifetime[0]
     Content root path: /root/workspace/km/01-Create-a-search-solution/C-Sharp/search-client
    ```
-10. Wait for the web site to open (the web site is being run in the Visual Studio Codespaces environment, and port forwarding is used to make it available as a locally hosted site in your browser session).
+10. Wait for the web site to open (the web site is being run in the development container, and port forwarding is used to make it available as a locally hosted site in your browser session - you may need to allow access through your firewall).
 11. In the Margie's Travel website, enter **London hotel** into the search box and click **Search**.
 12. Review the search results. They include the file name (with a hyperlink to the file URL), author, size, last modified date, and an extract of the file content with the search terms (*London* and *hotel*) emphasized.
 13. Observe that the **author** facets have been used to create user interface elements for filtering based on the author (the documents in the Margie's Travel data source have two possible author values: **Margies Travel** and **Reviewer**). You'll explore this feature in a later exercise.
 14. Try another search by entering **"New York"** (including the quotation marks) in the search box at the top of the page and clicking **Search**. This time the results reflect a search for the complete phrase "New York".
 15. Try another search by entering new search terms (for example **Luxury hotel in Las Vegas**) in the search box at the top of the page and clicking **Search**.
-16. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the terminal for the **search-client** folder (where the dotnet process is running), enter Ctrl+C to stop the app.
+16. Close the browser tab containing the Margie's Travel web site and return to Visual Studio Code. Then in the terminal for the **search-client** folder (where the dotnet process is running), enter Ctrl+C to stop the app.
 
 :::zone-end
 
@@ -68,7 +68,7 @@ To search the Margie's Travel index, you will use a web application that include
 
 1. In the **01-Create-a-search-solution/Python** folder, expand the **search-client** folder. This folder contains a simple Flask-based web application for the Margie's Travel web site.
 2. Open the **.env** file in the **search-client** folder. This file contains environment variables for the web application.
-3. Modify the values in the **.env** file to reflect the endpoint and query key for your Azure Cognitive Search resources (be sure to specify the *query* key, and not the *admin* key!).
+3. Modify the values in the **.env** file to reflect the endpoint and query key for your Azure Cognitive Search resources (be sure to specify the *query* key, and not the *admin* key!). Then save the **.env** file.
 4. Open the **app&#46;py** code file. This file contains the code for the Flask web application. The code:
     - Loads the required Azure Cognitive Search credentials from environment variables.
     - Defines a function named **azsearch_query** that submits a query as a REST request to an Azure Cognitive Search endpoint.
@@ -101,13 +101,13 @@ To search the Margie's Travel index, you will use a web application that include
    * Debug mode: off
    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
    ```
-10. Wait for the web site to open (the web site is being run in the Visual Studio Codespaces environment, and port forwarding is used to make it available as a locally hosted site in your browser session).
+10. Wait for the web site to open (the web site is being run in the development container, and port forwarding is used to make it available as a locally hosted site in your browser session - you may need to allow access through your firewall).
 11. In the Margie's Travel website, enter **London hotel** into the search box and click **Search**.
 12. Review the search results. They include the file name (with a hyperlink to the file URL), author, size, last modified date, and an extract of the file content with the search terms (*London* and *hotel*) emphasized.
 13. Observe that the **author** facets have been used to create user interface elements for filtering based on the author (the documents in the Margie's Travel data source have two possible author values: **Margies Travel** and **Reviewer**). You'll explore this feature in a later exercise.
 14. Try another search by entering **"New York"** (including the quotation marks) in the search box at the top of the page and clicking **Search**. This time the results reflect a search for the complete phrase "New York".
 15. Try another search by entering new search terms (for example **Luxury hotel in Las Vegas**) in the search box at the top of the page and clicking **Search**.
-16. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the Python terminal for the **search-client** folder (where the flask application is running), enter Ctrl+C to stop the app.
+16. Close the browser tab containing the Margie's Travel web site and return to Visual Studio Code. Then in the Python terminal for the **search-client** folder (where the flask application is running), enter Ctrl+C to stop the app.
 
 :::zone-end
 

@@ -24,3 +24,12 @@ Provide a new server name and specify which Azure region it should reside in, as
 :::image type="content" source="../media/module-22-plan-implement-final-29.png" alt-text="Configuring a replica in MySQL":::
 
 Click **OK**.
+
+## SSL Options for MySQL and MariaDB
+
+Azure Database for MySQL and MariaDB both support the use of SSL to encrypt network traffic between the database and the client application. In order to implement this encryption, you must both change the setting Enforce SSL Connection for your database, as shown in the image below.
+
+> [!div class="mx-imgBorder"]
+> [![Enforce SSL Connection](../media/module-22-plan-implement-final-99.png)](../media/module-22-plan-implement-final-99.png#lightbox)
+
+You also need to download the public root certificate and include the path to the certificate in your client connection.  After completing both of these tasks your network traffic will be encrypted. 

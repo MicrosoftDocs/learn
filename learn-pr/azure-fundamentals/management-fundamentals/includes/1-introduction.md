@@ -1,16 +1,21 @@
-Management tools allow administrators, developers, and managers interact with the cloud environment to perform tasks like deploying dozens or hundreds of resources at a time, configuring individual services programmatically, or viewing rich reports across usage, health, costs, and more.  Microsoft Azure provides a mix of management tooling options to choose from, depending on the situation.
+By using Azure management tools, administrators, developers, and managers can interact with the cloud environment to perform such tasks as:
+- Deploying dozens or hundreds of resources at a time.
+- Configuring individual services programmatically.
+- Viewing rich reports across usage, health, costs, and more.  
 
-Tailwind Traders, a traditional brick-and-mortar retailer who has found explosive growth due to selling products online, owes much of their success to their ability to quickly and efficiently manage their cloud environment.  However, when they were getting started with their cloud journey, they initially had to choose the right management tool for each unique scenario.
+Microsoft Azure provides a collection of management tooling options to choose from, depending on the situation.
 
-In this module, you will learn about Microsoft Azure's different management tools, and will analyze decision criteria that experts use to select the right tool for a given scenario.
+Tailwind Traders, a traditional brick-and-mortar retailer, is now experiencing explosive growth by selling products online. The company owes much of its success to an ability to quickly and efficiently manage its cloud environment. As it began its cloud journey, Tailwind Traders initially had to choose the right management tools for its business needs.
+
+In this module, you'll explore the array of Azure management tools and the decision criteria that experts use to select the right ones for their specific scenarios.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Choose the correct Azure management tool to address different kinds of technical needs and challenges.
+- Choose the Azure management tools that best address your organization's technical needs and challenges.
 
 ## Prerequisites
 
-- You should be familiar with basic computing concepts and terminology
-- You should be familiar with cloud computing is helpful, but isn't necessary
+- Familiarity with basic computing concepts and terminology
+- Familiarity with cloud computing is helpful but not necessary

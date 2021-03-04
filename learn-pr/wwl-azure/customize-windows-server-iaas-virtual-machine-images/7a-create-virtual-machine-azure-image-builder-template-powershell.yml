@@ -4,7 +4,7 @@ title: Create a Windows Virtual Machine with Azure Image Builder using PowerShel
 metadata:
   title: Create a Windows Virtual Machine with Azure Image Builder using PowerShell
   description: "Create a Windows Virtual Machine with Azure Image Builder using PowerShell"
-  ms.date: 09/25/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

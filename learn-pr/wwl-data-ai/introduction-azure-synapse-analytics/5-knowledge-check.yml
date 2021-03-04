@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/08/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which type of analytics answers the question “What is likely to happen in the future based on previous trends and patterns?”"
+    choices:
+    - content: "Descriptive."
+      isCorrect: false
+      explanation: "Incorrect. Descriptive analytics answers the question “What is happening in my business?”"
+    - content: "Diagnostic."
+      isCorrect: false
+      explanation: "Incorrect. Diagnostic analytics answers the question “Why is it happening?”."
+    - content: "Predictive."
+      isCorrect: true
+      explanation: "Correct. Predictive analytics “What is likely to happen in the future based on previous trends and patterns?”."
+  - content: "You have a requirement to occasionally prepare data for ad hoc data exploration and analysis. Which resource model in Azure Synapse Analytics is the most effective to use to meet this requirement?"
+    choices:
+    - content: "Serverless."
+      isCorrect: true
+      explanation: "Correct. The serverless resource model is the ideal resource model in this scenario as it makes use of the resources when required."
+    - content: "Dedicated."
+      isCorrect: false
+      explanation: "Incorrect. The dedicated resource model reserves processing power for data stored in SQL tables and is not an ideal resource model to use for ad hoc data preparation."
+    - content: "Pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Pipelines are a component of Azure Synapse Analytics that enables you to ingest, prepare, and serve data to other Azure Synapse Components or Azure services."
+  - content: "Where can you develop TSQL scripts and notebooks in Azure Synapse Analytics?"
+    choices:
+    - content: "Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal is where you can collect information about your Azure Synapse Analytics service including the Primary ADLS Gen2 account URL, the SQL endpoint and SQL on-demand endpoint, the Workspace web URL, and the available resources, such as SQL pools and Apache Spark pools."
+    - content: "Azure Synapse Studio."
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Studio is where you can develop TSQL scripts and notebooks."
+    - content: "Data Lake."
+      isCorrect: false
+      explanation: "Incorrect. The Data Lake is primary storage location for source files that can be used within the various analytical engines."

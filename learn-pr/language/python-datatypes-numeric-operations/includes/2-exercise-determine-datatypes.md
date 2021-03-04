@@ -126,6 +126,6 @@ This is an important distinction in Python, and a key difference from other prog
 You learned some important ideas in this unit:
 
 - The `type()` function returns the data type of a specified value.
-- The `instanceof()` function allows you to check to see whether a value is an instance of a specified data type.
+- The `isinstance()` function allows you to check to see whether a value is an instance of a specified data type.
 - The `float` data type is for numeric values containing fractional values that are represented as numbers after the decimal point.
 - Values have data types, and variables do not.  A variable is merely pointed to a value, and it can point to any value of any data type.

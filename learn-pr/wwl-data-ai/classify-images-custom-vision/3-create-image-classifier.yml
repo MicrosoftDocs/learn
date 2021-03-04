@@ -3,13 +3,14 @@ uid: learn.wwl.classify-images-custom-vision.exercise
 title: Exercise - Create an image classification solution
 metadata:
   title: Exercise - Create an image classification solution
-  description: "Get hands-on with the Custom Vision service and create an image classification solution"
-  ms.date: 09/13/2020
+  description: "Exercise - Create an image classification solution"
+  ms.date: 02/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88759
 durationInMinutes: 25
 content: |
   [!include[](includes/3-create-image-classifier.md)]

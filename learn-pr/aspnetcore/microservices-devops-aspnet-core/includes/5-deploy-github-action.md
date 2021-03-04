@@ -77,7 +77,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 1. From the **:::no-loc text="Code":::** tab, edit the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
-    :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/chart.yaml" highlight="8":::
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/coupon/chart.yaml" highlight="8":::
 
     It's important that you update the app version in the Helm chart. This change causes the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
 1. Commit and push this change to the `main` branch.

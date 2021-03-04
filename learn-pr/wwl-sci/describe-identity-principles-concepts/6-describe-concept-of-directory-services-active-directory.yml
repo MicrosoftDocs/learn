@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-principles-concepts.describe-concept-of-directory-services-active-directory
+title: Describe the concept of directory services and active directory
+metadata:
+  title: Describe the concept of directory services and active directory
+  description: "Describe the concept of directory services and active directory"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-describe-concept-of-directory-services-active-directory.md)]

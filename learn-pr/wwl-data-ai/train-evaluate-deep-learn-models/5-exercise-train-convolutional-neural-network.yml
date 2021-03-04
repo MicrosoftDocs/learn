@@ -4,12 +4,12 @@ title: Exercise - Train a convolutional neural network
 metadata:
   title: Exercise - Train a convolutional neural network
   description: "Exercise - Train a convolutional neural network"
-  ms.date: 09/25/2020
+  ms.date: 02/02/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-train-convolutional-neural-network.md)]

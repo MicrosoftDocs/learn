@@ -4,7 +4,7 @@ Solution architecture is concerned with the planning, design, implementation, an
 
 ## Azure Well-Architected Framework
 
-The Azure Well-Architected Framework is a set of guiding tenants to build high-quality solutions on Azure. There's no one-size-fits-all approach to designing an architecture. But there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. 
+The Azure Well-Architected Framework is a set of guiding tenets to build high-quality solutions on Azure. There's no one-size-fits-all approach to designing an architecture. But there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. 
 
 These concepts are not all-inclusive. But focusing on them will help you build a reliable, secure, and flexible foundation for your application.
 

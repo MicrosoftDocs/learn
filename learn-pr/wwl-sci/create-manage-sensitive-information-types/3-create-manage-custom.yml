@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-sensitive-information-types.create-manage-custom
+title: Create and manage custom sensitive information types
+metadata:
+  title: Create and manage custom sensitive information types
+  description: "Create and manage custom sensitive information types"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-manage-custom.md)]

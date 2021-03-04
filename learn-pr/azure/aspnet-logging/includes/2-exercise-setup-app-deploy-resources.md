@@ -60,7 +60,7 @@ First, you'll download and test the application locally, and then you'll create 
 1. In the Azure Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace *\<your-password\>* with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group *[sandbox resource group name]* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
+    > The resource group *<rgn>[sandbox resource group name]</rgn>* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
 
     ```powershell
     $useralias = "<your-initals-with-suffix>"
@@ -71,7 +71,7 @@ First, you'll download and test the application locally, and then you'll create 
     ```
 
     ```powershell
-    $resourcegroupname = "[sandbox resource group name]"
+    $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
 1. Run the following commands to define more variables that will be used to create the resources used by this module:

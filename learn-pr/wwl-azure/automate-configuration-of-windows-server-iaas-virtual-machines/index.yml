@@ -3,7 +3,7 @@ uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms
 metadata:
   title: Automate the configuration of Windows Server IaaS Virtual Machines
   description: "You'll be able to deploy Desired State Configuration (DSC) extensions, implement those extensions to remediate noncompliant servers, and use custom script extension."
-  ms.date: 08/22/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/automate-the-configuration-of-windows-server-iaaa-vms.svg
 levels:
 - intermediate
 roles:

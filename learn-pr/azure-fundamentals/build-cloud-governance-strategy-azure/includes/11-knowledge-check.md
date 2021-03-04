@@ -1,8 +1,8 @@
-Consider the following scenario. Then choose the best response for each question that follows and select "Check your answers."
+Consider the following scenario. Then choose the best response for each question that follows, and select **Check your answers**.
 
-Tailwind Traders has created environments for development and testing for their e-commerce system.
+Tailwind Traders has created environments for development and testing for its e-commerce system.
 
-Here's a diagram that shows the basic compute, database, and networking components found in each environment:
+Here's a diagram that shows the basic compute, database, and networking components found in each environment.
 
 :::image type="content" source="../media/7-dev-test-environments.svg" alt-text="A diagram of the development and test environments. Each environment contains virtual machines, a database, and a virtual network. The development environment includes three virtual machines. The test environment contains six virtual machines." border="false":::
 

@@ -39,11 +39,17 @@ GitHub offers a visual experience for reviewing code that allows reviewers to se
 
 ![Reviewing a pull request](../media/2-reviewing-pull-request.png)
 
-As the name implies, reviewers are responsible for reviewing changes. When feedback is minor, such as typos, reviewers may leave comments or edit the files directly to incorporate fixes. To recommend more substantive changes, a pull request should be opened against the author's branch.
+As the name implies, reviewers are responsible for reviewing changes. When feedback is minor, such as typos, reviewers may leave comments, edit the files directly, or suggest changes within specific files being modified. To recommend more substantive changes, a pull request should be opened against the author's branch.
 
 Reviewers may be automatically assigned to a pull request by using a [CODEOWNERS file](https://help.github.com/github/creating-cloning-and-archiving-repositories/about-code-owners?azure-portal=true). This file uses the same path syntax as `.gitignore` to map parts of the codebase to users or teams responsible for reviewing their changes. Learn how to [make these reviews mandatory](https://help.github.com/github/administering-a-repository/enabling-required-reviews-for-pull-requests?azure-portal=true).
 
 Learn more about [Reviewing changes in pull requests](https://help.github.com/github/collaborating-with-issues-and-pull-requests/reviewing-changes-in-pull-requests?azure-portal=true).
+
+### Applying suggested changes
+
+When reviewers suggest changes in a pull request, the author or assigned individual with write access to the repository can incorporate the changes into the pull request. You can commit a single suggestion or batch multiple suggestions into a single commit. When suggested changes are added to the pull request, both the author of the suggested change and the person who applies the suggested change will be co-authors of the commit, but it's the person who applies the suggested change who is also the committer of the commit.
+
+:::image type="content" source="../media/2-add-suggestion-batch.png" alt-text="Some suggestions for changes with a button to add the suggestions to the batch.":::
 
 ### Assignee responsibilities
 

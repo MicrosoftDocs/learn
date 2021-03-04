@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-ee-app-to-app-service.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 02/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+    - content: What is the current name and version of the enterprise Java platform?
+      choices:
+        - content: Java 2 Platform, Enterprise Edition (J2EE)
+          isCorrect: false
+          explanation: That's not correct. J2EE was used until version 4.
+        - content: Jakarta Enterprise Edition (Jakarta EE)
+          isCorrect: true
+          explanation: Correct. Starting with Jakarta EE 8, the project was moved to The Jakarta Project under the Eclipse Foundation.
+        - content: Java Platform, Enterprise Edition (Java EE)
+          isCorrect: false
+          explanation: That's not correct. Java EE was used in versions 5 through 8.
+        - content: All of the above
+          isCorrect: false
+          explanation: You can select only one.
+    - content: How do you manage data sources for JBoss EAP on Azure App Service?
+      choices:
+        - content: "JBoss command-line interface (CLI)"
+          isCorrect: false
+          explanation: "It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to run the CLI, and the settings disappear after a system restart."
+        - content: "JBoss graphical user interface (GUI)"
+          isCorrect: false
+          explanation: "It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to run the CLI, and the settings disappear after a system restart."
+        - content: "Startup shell script"
+          isCorrect: true
+        - content: "All of the above"
+          isCorrect: false
+          explanation: "We don't recommend some of the above options."
+    - content: How can you access your application logs for JBoss on Azure App Service?
+      choices:
+        - content: Signing in to the JBoss EAP container instance
+          isCorrect: false
+          explanation: This choice is correct. You can sign in to the container by using a TCP tunnel and access the logs. However, this isn't the only correct option.
+        - content: Azure Log Analytics
+          isCorrect: false
+          explanation: This choice is correct. If you configure the Log Analytics workspace, you can access the logs. However, this isn't the only correct option.
+        - content: Log stream in the Azure portal
+          isCorrect: false
+          explanation: This choice is correct. If you access the JBoss EAP on Azure App Service, you can select the log stream. However, this isn't the only correct option.
+        - content: Azure CLI
+          isCorrect: false
+          explanation: This choice is correct. When you run the Azure CLI command, you can access the logs. However, this isn't the only correct option.
+        - content: All of the above
+          isCorrect: true

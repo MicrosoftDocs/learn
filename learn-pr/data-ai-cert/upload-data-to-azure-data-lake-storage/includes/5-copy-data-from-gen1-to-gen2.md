@@ -21,13 +21,15 @@ The first step is to provision a data factory in the Azure portal.
     ![Screenshot showing where to select Data Factory](../media/6-select-data-factory.png)
 
 1. On the **New data factory** page, provide values for each of the required fields:
-    - **Name**: Enter a globally unique name for your data factory. Try using your initials with a suffix such as **ADFTutorialDataFactory**.
-    - **Subscription**: Select your subscription.
-    - **Resource Group**: Select **mslearn-datalake-test**.
-    - **Version**: Select **V2**.
-    - **Location**: The list displays only supported locations. The data stores that the data factory uses can be in other locations and regions.
+    - **Subscription**: The subscription in which the ADF instance is created
+    - **Resource group**: The resource group where the ADF instance will reside
+    - **Region**: The datacenter location in which the instance is stored
+    - **Name**: The name of the Azure Data Factory instance
+    - **Version**: select V2 for the latest features
 
       ![Screenshot showing how to set up a data factory](../media/6-create-data-factory.png)
+
+1. Click on the **Git configuration** tab, and choose to set it up later. 
 
 1. Select **Create**.
 
@@ -132,7 +134,7 @@ Set permissions to allow the data factory to access the data in your Data Lake S
     ![Screenshot showing how to select the destination](../media/6-select-destination.png)
 
 1. On the **Specify Azure Data Lake Storage Gen2 connection** page:
-    - In the **Storage account name** list, select your Data Lake Storage Gen2 account.
+    - In the **Storage account name** list, select your Data Lake Storage Gen2 account, this will automatically populate the access key.
     - To create the connection, select **Finish** > **Next**.
 
 1. On the **Choose the output file or folder** page, next to **Folder path**, enter **copyfromadlsgen1**. Then select **Next**.

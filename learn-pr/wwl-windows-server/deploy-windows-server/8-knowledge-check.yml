@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-windows-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following server management tools can be run on Server Core?"
+    choices:
+    - content: "Server Manager"
+      isCorrect: false
+      explanation: "That's incorrect. You cannot run Server Manager on Server Core as Server Manager is a graphical tool."
+    - content: "System Information"
+      isCorrect: true
+      explanation: "That's correct. This tool enables you to observe system information about the Server Core deployment."
+    - content: "Windows Admin Center"
+      isCorrect: false
+      explanation: "That's incorrect. You cannot run Windows Admin Center on Server Core as it requires a web browser interface."
+  - content: "What's the minimum memory an administrator should initially allocate to a Windows Server VM?"
+    choices:
+    - content: "1 GB"
+      isCorrect: false
+      explanation: "That's incorrect. VMs can run with less memory."
+    - content: "512 MB"
+      isCorrect: false
+      explanation: "That's incorrect. Although VMs can run with 512 MB, they require more memory to start."
+    - content: "800 MB"
+      isCorrect: true
+      explanation: "That's correct. VMs require at least 800 MB of RAM during installation, which you can reduce to 512 MB when installation is complete."
+  - content: "When working with MDT, what is the name and location of the original install image?"
+    choices:
+    - content: "*x:*\\Sources\\install.wim"
+      isCorrect: true
+      explanation: "That's correct. This is the default installation image."
+    - content: "*x:*\\Sources\\boot.wim"
+      isCorrect: false
+      explanation: "That's incorrect. This is the default boot image."
+    - content: "*x:*\\Sources\\install.iso"
+      isCorrect: false
+      explanation: "That's incorrect. Although you can use ISO images with MDT, this is not the default install image."

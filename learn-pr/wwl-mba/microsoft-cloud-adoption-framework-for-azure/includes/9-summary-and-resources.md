@@ -57,12 +57,8 @@ Use these resources to discover more.
 
 ### Skill-readiness paths:
 
-- [Azure fundamentals](https://docs.microsoft.com/learn/paths/azure-fundamentals?branch=master)
-
-- [Principles of cloud computing](https://docs.microsoft.com/learn/modules/principles-cloud-computing?branch=master)
-
+- [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/)
 - [Microsoft Certified: Azure Solutions Architect Expert](https://www.microsoft.com/learning/azure-solutions-architect.aspx)
-
 - [Solutions Architect: Learning path](https://docs.microsoft.com/learn/browse/?roles=solution-architect&resource_type=learning%20path)
 
 ### Cloud migration:

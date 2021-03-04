@@ -1,4 +1,8 @@
+![Environments, in containers, in compute targets](../media/05-compute-contexts.png)
+
 Python code runs in the context of a *virtual environment* that defines the version of the Python runtime to be used as well as the installed packages available to the code. In most Python installations, packages are installed and managed in environments using **Conda** or **pip**.
+
+To improve portability, we usually create environments in docker containers that are in turn be hosted in compute targets, such as your development computer, virtual machines, or clusters in the cloud.
 
 ## Environments in Azure Machine Learning
 
@@ -61,6 +65,38 @@ deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','numpy']
 env.python.conda_dependencies = deps
 ```
 
+## Configuring environment containers
+
+Usually, you should create environments in containers (this is the default unless the **docker.enabled** property is set to **False**, in which case the environment is created directly in the compute target)
+
+```Python
+env.docker.enabled = True
+deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','pip'],                      
+                                pip_packages=['azureml-defaults']
+env.python.conda_dependencies = deps
+```
+
+Azure Machine Learning uses a library of base images for containers, choosing the appropriate base for the compute target you specify (for example, including Cuda support for GPU-based compute). If you have created custom container images and registered them in a container registry, you can override the default base images and use your own.
+
+```Python
+env.docker.base_image='my-base-image'
+env.docker.base_image_registry='myregistry.azurecr.io/myimage'
+```
+
+Alternatively, you can have an image created on-demand based on the base image and additional settings in a dockerfile.
+
+```Python
+env.docker.base_image = None
+env.docker.base_dockerfile = './Dockerfile'
+```
+
+By default, Azure machine Learning handles Python paths and package dependencies. If your image already includes an installation of Python with the dependencies you need, you can override this behavior by setting **python.user_managed_dependencies** to **True** and setting an explicit Python path for your installation.
+
+```Python
+env.python.user_managed_dependencies=True
+env.python.interpreter_path = '/opt/miniconda/bin/python'
+```
+
 ## Registering and reusing environments
 
 After you've created an environment, you can register it in your workspace and reuse it for future experiments that have the same Python dependencies.
@@ -85,19 +121,19 @@ for env_name in env_names:
 
 ### Retrieving and using an environment
 
-You can retrieve a registered environment by using the **get** method of the **Environment** class, and then assign it to a **ScriptRunConfig** or **Estimator**.
+You can retrieve a registered environment by using the **get** method of the **Environment** class, and then assign it to a **ScriptRunConfig**.
 
-For example, the following code sample retrieves the *training_environment* registered environment, and assigns it to an estimator:
+For example, the following code sample retrieves the *training_environment* registered environment, and assigns it to a script run configuration:
 
 ```python
-from azureml.core import Environment
-from azureml.train.estimator import Estimator
+
+from azureml.core import Environment, ScriptRunConfig
 
 training_env = Environment.get(workspace=ws, name='training_environment')
-estimator = Estimator(source_directory='experiment_folder'
-                      entry_script='training_script.py',
-                      compute_target='local',
-                      environment_definition=training_env)
+
+script_config = ScriptRunConfig(source_directory='my_dir',
+                                script='script.py',
+                                environment=training_env)
 ```
 
 When an experiment based on the estimator is run, Azure Machine Learning will look for an existing environment that matches the definition, and if none is found a new environment will be created based on the registered environment specification.

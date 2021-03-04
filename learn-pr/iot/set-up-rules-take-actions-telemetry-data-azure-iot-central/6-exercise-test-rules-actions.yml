@@ -5,7 +5,7 @@ metadata:
   description: With the device app running, test all the rules created in the previous unit. 
   ms.date: 1/20/2020
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Exercise - Test the rules and actions

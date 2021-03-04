@@ -2,10 +2,10 @@
 uid: learn.iot.create-your-first-iot-central-app.create-a-real-device-in-nodejs
 metadata:
   title: Exercise - Create a programming project for a real device
-  description: Create an app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
+  description: Create an app that simulates a refrigerated truck. Set it up to communicate with both Azure Maps and Azure IoT Central.
   ms.date: 10/17/2019
   author: PeterTurcan
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language

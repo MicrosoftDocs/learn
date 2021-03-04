@@ -10,6 +10,7 @@ In this module, you will:
 
 - Learn what version control is
 - Understand distributed version control systems, like Git
+- Recognize the differences between Git and GitHub and the roles they play in the software development lifecycle
 - Create a new Git project and configure it
 - Make and track changes to code using Git
 - Use Git to recover from simple mistakes

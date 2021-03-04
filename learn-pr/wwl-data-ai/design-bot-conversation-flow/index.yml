@@ -3,7 +3,7 @@ uid: learn.wwl.design-bot-conversation-flow
 metadata:
   title: Design a bot conversation flow
   description: "Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human."
-  ms.date: 09/06/2020
+  ms.date: 10/21/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Azure portal
   - Knowledge of C#, Python, or JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-a-bot-conversation-flow.svg
 levels:
 - intermediate
 roles:

@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,29 +15,29 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following statements is NOT true about cloud computing?"
+    - content: "Which of the following statements is *not* true about cloud computing?"
       choices:
         - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
           isCorrect: false
-          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models, and are respectively Infrastructure-as-a-Service, Platform-as-a-Service, and Software-as-a-Service."
+          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
         - content: "Cloud computing resources are usually limited to specific geographic regions."
           isCorrect: true
           explanation: "Most cloud computing resources can be distributed to global datacenters."
         - content: "Cloud computing typically decreases your operating expenses."
           isCorrect: false
-          explanation: "Cloud computing typically increases your operating expenses."
+          explanation: "Cloud computing typically decreases your operating expenses."
         - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
           isCorrect: false
           explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
-    - content: "True or False: You need to purchase an Azure account before using any Azure resources."
+    - content: "True or false: You need to purchase an Azure account before you can use any Azure resources."
       choices:
         - content: "False"
           isCorrect: true
-          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
+          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
         - content: "True"
           isCorrect: false
-          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
-    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenant is responsible for routine hardware maintenance."
+          explanation: "You can use a free Azure account or a Microsoft Learn sandbox to create resources."
+    - content: "True or false: In an IaaS environment, the cloud tenant is responsible for routine hardware maintenance."
       choices:
         - content: "True"
           isCorrect: false

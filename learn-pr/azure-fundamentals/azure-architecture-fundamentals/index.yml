@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.azure-architecture-fundamentals
 metadata:
-  title: Describe core Azure architectural components
-  description: Learn about Azure Subscriptions, Management Groups, Resource Groups, Resource Manager, Azure Regions, and Availability zones.
+  title: Describe core Azure architectural components (AZ-900)
+  description: Learn about Azure subscriptions, management groups, resource groups, Azure Resource Manager, Azure regions, and availability zones. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe core Azure architectural components
-summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure Architecture. For example, you'll learn about Azure Subscriptions and Management Groups, Resource Groups and the Azure Resource Manager, as well as Azure Regions and Availability zones.
+summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure architecture. For example, you'll learn about Azure subscriptions and management groups, resource groups and Azure Resource Manager, as well as Azure regions and availability zones.
 abstract: | 
   After completing this module, you'll be able to describe the benefits and usage of:
-  - Azure Subscriptions and Management Groups
-  - Azure Resources, Resource Groups, and the Azure Resource Manager
-  - Azure Regions, Region Pairs, and Availability zones
+  - Azure subscriptions and management groups.
+  - Azure resources, resource groups, and Azure Resource Manager.
+  - Azure regions, region pairs, and availability zones.
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/azure-architecture-fundamentals.svg
 levels:
 - beginner

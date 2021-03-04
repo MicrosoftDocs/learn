@@ -10,7 +10,7 @@
 
     operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
-            for ((q0, q1) in Zip(c0, c1)) {
+            for (q0, q1) in Zipped(c0, c1) {
                 CNOT(q0, q1);
             }
         } apply {
@@ -26,14 +26,13 @@
     ) : Unit is Adj+Ctl {
         let nEdges = Length(edges);
         let colors = Chunks(2, colorsRegister);
-        using (conflictQubits = Qubit[nEdges]) {
-            within {
-                for (((start, end), conflictQubit) in Zip(edges, conflictQubits)) {
-                    MarkColorEquality(colors[start], colors[end], conflictQubit);
-                }
-            } apply {
-                (ControlledOnInt(0, X))(conflictQubits, target);
+        use conflictQubits = Qubit[nEdges];
+        within {
+            for ((start, end), conflictQubit) in Zipped(edges, conflictQubits) {
+                MarkColorEquality(colors[start], colors[end], conflictQubit);
             }
+        } apply {
+            (ControlledOnInt(0, X))(conflictQubits, target);
         }
     }
 
@@ -42,13 +41,12 @@
         markingOracle : ((Qubit[], Qubit) => Unit is Adj), 
         register : Qubit[]
     ) : Unit is Adj {
-        using (target = Qubit()) {
-            within {
-                X(target);
-                H(target);
-            } apply {
-                markingOracle(register, target);
-            }
+        use target = Qubit();
+        within {
+            X(target);
+            H(target);
+        } apply {
+            markingOracle(register, target);
         }
     }
 
@@ -56,7 +54,7 @@
     operation RunGroversSearch(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
         ApplyToEach(H, register);
         
-        for (_ in 1 .. iterations) {
+        for _ in 1 .. iterations {
             phaseOracle(register);
             within {
                 ApplyToEachA(H, register);
@@ -94,25 +92,23 @@
         let nIterations = Round(PI() / 4.0 * Sqrt(IntAsDouble(searchSpaceSize) / IntAsDouble(nSolutions)));
 
         mutable answer = new Bool[nQubits];
-        using ((register, output) = (Qubit[nQubits], Qubit())) {
-            mutable isCorrect = false;
-            repeat {
-                RunGroversSearch(register, phaseOracle, nIterations);
-                let res = MultiM(register);
-                // Check whether the result is correct.
-                markingOracle(register, output);
-                if (MResetZ(output) == One) {
-                    set isCorrect = true;
-                    set answer = ResultArrayAsBoolArray(res);
-                }
-                ResetAll(register);
-            } until (isCorrect);
-        }
-
+        use (register, output) = (Qubit[nQubits], Qubit());
+        mutable isCorrect = false;
+        repeat {
+            RunGroversSearch(register, phaseOracle, nIterations);
+            let res = MultiM(register);
+            // Check whether the result is correct.
+            markingOracle(register, output);
+            if (MResetZ(output) == One) {
+                set isCorrect = true;
+                set answer = ResultArrayAsBoolArray(res);
+            }
+            ResetAll(register);
+        } until (isCorrect);
         // Convert the answer to readable format (actual graph coloring).
         let colorBits = Chunks(2, answer);
         Message("The resulting graph coloring:");
-        for (i in 0 .. nVertices - 1) {
+        for i in 0 .. nVertices - 1 {
             Message($"Vertex {i} - color {BoolArrayAsInt(colorBits[i])}");
         }
     }

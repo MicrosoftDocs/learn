@@ -1,8 +1,8 @@
 Imagine you’re working at an innovative technology company. One day, in a meeting to talk about company growth strategy, your executive leadership team asks you to evaluate sales channels for finding new customers and identifying sources for revenue growth.
 
-Coincidentally, you’ve recently read an industry blog post about Microsoft AppSource and Azure Marketplace, Microsoft’s commercial marketplace, penned by a colleague from another company.
+Coincidentally, you’ve recently read an industry blog post about Microsoft AppSource and Azure Marketplace, also known as the Microsoft commercial marketplace.
 
-You decide to do a little more research—let’s look at what Microsoft’s commercial marketplace is and how it can be used to accelerate your business.
+You decide to do a little more research let’s look at what Microsoft’s commercial marketplace is and how it can be used to accelerate your business.
 
 ## Learning objectives
 

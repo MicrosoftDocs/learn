@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: Which Azure service should be used to enforce the controls necessary for an organization to meet their compliance requirements?
+  - content: Which Azure service do you use to enforce the controls that an organization needs to meet its compliance requirements?
     choices:
     - content: Azure Monitor
       isCorrect: false
@@ -26,22 +26,22 @@ quiz:
       explanation: Azure Policy helps to enforce organizational standards and to assess compliance at scale.
     - content: Azure Policy
       isCorrect: true
-      explanation: Azure Policy helps to enforce organizational standards and to assess compliance at scale.
+      explanation: Correct. Azure Policy helps to enforce organizational standards and to assess compliance at scale.
     - content: Azure Security Center
       isCorrect: false
       explanation: Azure Policy helps to enforce organizational standards and to assess compliance at scale.
 
-  - content: At what level within the organizational hierarchy should compliance standards for workloads be defined?
+  - content: At what level in the organizational hierarchy should compliance standards for workloads be defined?
     choices:
     - content: Root management group
       isCorrect: false
-      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.
+      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing-zone level.
     - content: Landing zone
       isCorrect: true
-      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.
+      explanation: Correct. The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing-zone level.
     - content: Subscription
       isCorrect: false
-      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.
+      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing-zone level.
     - content: Resource group
       isCorrect: false
-      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.
+      explanation: The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing-zone level.

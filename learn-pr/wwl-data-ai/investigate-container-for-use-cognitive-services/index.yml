@@ -3,7 +3,7 @@ uid: learn.wwl.investigate-container-for-use-with-cognitive-services
 metadata:
   title: Investigate container for use with Cognitive Services
   description: "Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers."
-  ms.date: 09/13/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * Learners should have an Azure account and be familiar with navigating the Azure portal.
   * Learners should also have experience with Docker and containers.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/investigate-container-for-use-with-cognitive-services.svg
 levels:
 - beginner
 roles:

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.9-develop-recommendation
+metadata:
+  title: Develop a recommendation of Moon rock samples to be collected
+  description: Develop a recommendation of Moon rock samples for Artemis astronauts to collect.
+  ms.date: 11/24/2020
+  author: sguthals 
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Develop a recommendation of Moon rock samples to be collected
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-develop-recommendation.md)]
