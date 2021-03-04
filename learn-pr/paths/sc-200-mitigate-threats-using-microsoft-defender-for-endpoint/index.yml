@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-defender-for-endpoint
 metadata:
   title: 'SC-200 part 1: Mitigate threats using Microsoft Defender for Endpoint'
   description: 'SC-200 part 1: Mitigate threats using Microsoft Defender for Endpoint'
-  ms.date: 03/03/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - windows
 modules:
