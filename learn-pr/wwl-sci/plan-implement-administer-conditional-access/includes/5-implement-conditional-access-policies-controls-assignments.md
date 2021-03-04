@@ -95,9 +95,6 @@ Some may choose to use device state instead of location in step 6 above:
 
    5. Select **Done** on the **Conditions** blade.
 
-> [!WARNING]
-> If you use device state as a condition in your policy, this may impact guest users in the directory. Report-only mode can help determine the impact of policy decisions. Note that report-only mode is not applicable for Conditional Access policies with "User Actions" scope.
-
 ## Block access by location
 
 With the location condition in Conditional Access, you can control access to your cloud apps based on the network location of a user. The location condition is commonly used to block access from countries/regions where your organization knows traffic should not come from.
