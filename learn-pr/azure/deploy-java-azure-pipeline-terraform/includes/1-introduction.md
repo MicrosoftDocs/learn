@@ -2,11 +2,13 @@ Imagine that you're an infrastructure manager who's been asked to provision your
 
 ## Provision, build, and deploy tracks
 
-Automation ordinarily uses three tracks: *Provision*, *Build*, and *Deploy*. Each track can have one or more *pipelines*. 
+Automation ordinarily uses three tracks: *Provision*, *Build*, and *Deploy*. Each track can have one or more *pipelines*.
 
 The following image displays multiple pipelines in the **Provision** track, with each pipeline focusing on the infrastructure for a team.
 
 ![Screenshot highlighting the Provision pipeline elements for the various teams.](../media/1-tracks.png)
+
+::: zone pivot="github-actions"
 
 In this module's scenario, you'll use all three tracks by implementing multiple pipelines.
 
@@ -25,3 +27,5 @@ In this module, you will:
 - A GitHub account
 - Basic knowledge of software development
 - Basic knowledge of managing and provisioning Azure resources
+
+::: zone-end
