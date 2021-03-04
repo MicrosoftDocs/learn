@@ -18,13 +18,13 @@ Resource records distribute the public key, while the private key remains on the
 
 The following table describes the additional resource records used with DNSSEC.
 
-| Resource record | Purpose                                                      |
-|  |  |
-| RRSIG           | Holds a signature for a set of DNS records. DNS clients can use it to check the authority of a response. When a resource record is resolved, a Resource Record Signature (RRSIG) record is sent for verification. |
-| DNSKEY          | Publishes the public keys for the zone. It allows clients to validate signatures created by the private key held by the DNS server. |
-| NSEC            | When the DNS response has no data to provide to the client, the Next Secure (NSEC) record authenticates that the host does not exist. |
-| NSEC3           | A hashed version of the NSEC record, which prevents attacks by enumerating the zone. |
-| DS              | A delegation record that contains the hash of the public key of a child zone. This record is signed by the parent zone’s private key. If a child zone of a signed parent is also signed, you must manually add the Delegation Signer (DS) records from the child to the parent to create a *chain of trust*. |
+|Resource record|Purpose|
+|--|--|
+|RRSIG|Holds a signature for a set of DNS records. DNS clients can use it to check the authority of a response. When a resource record is resolved, a Resource Record Signature (RRSIG) record is sent for verification.|
+|DNSKEY|Publishes the public keys for the zone. It allows clients to validate signatures created by the private key held by the DNS server.|
+|NSEC|When the DNS response has no data to provide to the client, the Next Secure (NSEC) record authenticates that the host does not exist.|
+|NSEC3|A hashed version of the NSEC record, which prevents attacks by enumerating the zone.|
+|DS|A delegation record that contains the hash of the public key of a child zone. This record is signed by the parent zone’s private key. If a child zone of a signed parent is also signed, you must manually add the Delegation Signer (DS) records from the child to the parent to create a *chain of trust*.|
 
 ## Sign the DNS zone
 
