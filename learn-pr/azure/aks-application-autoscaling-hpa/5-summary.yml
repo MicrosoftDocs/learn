@@ -3,7 +3,7 @@ uid: aks-application-autoscaling-hpa.5-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 02/17/2021
+  ms.date: 03/20/2021
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: aks-application-autoscaling-hpa.4-concepts-scaling-fine-tune
 metadata:
   title: Understand scaler configurations
   description: Understand scaler configurations
-  ms.date: 17/02/2021
+  ms.date: 03/20/2021
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
