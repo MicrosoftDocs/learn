@@ -3,7 +3,7 @@ uid: learn.wwl.use-watchlists-azure-sentinel
 metadata:
   title: Use watchlists in Azure Sentinel
   description: "Use watchlists in Azure Sentinel"
-  ms.date: 02/19/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ iconUrl: /learn/achievements/use-watchlists-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel
