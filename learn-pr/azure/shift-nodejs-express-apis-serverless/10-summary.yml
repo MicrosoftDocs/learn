@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.shift-express-api-azure-functions.12-summary
+uid: learn.azure.shift-express-api-azure-functions.10-summary
 metadata:
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/10-summary.md)]
