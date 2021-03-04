@@ -42,7 +42,7 @@ The next step is to save some important data used to connect other resources to 
 
 1. Locate and select the **Access control (IAM)** entry, in the left menu.
 
-1. If you select **Role assignments**, you should see your name with the **Owner** role. This is *not* the role that you need to access the resource. The role you need is **Azure Digital Twins Data Owner**.
+1. If you select **Role assignments**, you may see your name with the **Owner** role by default. This is *not* the role that you need to access the resource. The role you need is **Azure Digital Twins Data Owner**.
 
     > [!NOTE]
     > If you get the following warning message, ignore it. You don't need to see other role assignments.
@@ -60,6 +60,6 @@ The next step is to save some important data used to connect other resources to 
 
 1. Select **Save**. After a few seconds, you should see your details added to the role assignments, but now with the correct role.
 
-    :::image type="content" source="../media/create-role-assignment.png" alt-text="Screenshot showing the correct role assignments for a digital twins instance" lightbox="../media/create-role-assignment.png":::
+    :::image type="content" source="../media/create-role-assignment.png" alt-text="Screenshot showing the correct role assignments for a digital twins instance." lightbox="../media/create-role-assignment.png":::
 
 Great work. You have completed the bulk of the setup for this module. Next, you'll go over the format and purpose of the digital twin models.

@@ -12,4 +12,4 @@ To view the connector page:
 
 - Then select **Connect**.
 
-:::image type="content" source="../media/taxii-connector.png" alt-text="Threat Intelligence Platform connector page" lightbox="../media/taxii-connector.png":::
+:::image type="content" source="../media/threat-intelligence-platform-connector.png" alt-text="Threat Intelligence Platform connector page" lightbox="../media/threat-intelligence-platform-connector.png":::

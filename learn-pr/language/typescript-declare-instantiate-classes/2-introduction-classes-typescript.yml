@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.2-introduction-classes-typescript
+title: Introduction to classes in TypeScript
+metadata:
+  title: Introduction to classes in TypeScript
+  description: Learn about the components of a class, including properties, methods, constructor, and accessors.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-introduction-classes-typescript.md)]

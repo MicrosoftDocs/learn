@@ -43,28 +43,19 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
-1. Select the **Databricks RuntimeVersion**: **Runtime: 6.4 ML (Scala 2.11, Spark 2.4.5)** (remember to select the **ML** version).
+1. Select the **Cluster Mode**: **Single Node**
 
-1. Select the values for the cluster configuration.
-    - **Enable autoscaling**: **Uncheck** this option.
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS ML (Scala 2.12, Spark 3.0.1)** (remember to select the **ML** version).
 
-    - **Auto Termination**: Leave **checked** and in the text box enter `120`.
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
 
-    - **Worker Type**: **Standard_DS3_v2**
-
-    - **Workers**: `1`
-
-    - **Driver Type**: **Same as worker**
+1. Select the **Node Type**: **Standard_DS3_v2**
 
 1. Select **Create Cluster**.
 
 ## Install required libraries
 
 1. From the cluster configuration page, select the **Libraries** link and then select **Install New**.
-
-1. In the `Library Source`, select **PyPi** and in the `Package` text box type `mlflow==1.7.0` and select **Install**.
-
-    ![Install required library](../media/install-lib-1.png)
 
 1. In the `Library Source`, select **PyPi** and in the `Package` text box type `azureml-sdk==1.2.0` and select **Install**.
 
@@ -80,10 +71,10 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-     `https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-science/12-Azure-Machine-Learning-Deployment.dbc?raw=true`
+     `https://github.com/MicrosoftDocs/mslearn_databricks/blob/main/azure-ml/1.1.0/Labs.dbc`
 
 1. Select **Import**.
-1. Select the **12-Azure-Machine-Learning-Deployment** folder that appears.
+1. Select the **azure-ml** folder that appears.
 
 ## Complete the following notebook
 

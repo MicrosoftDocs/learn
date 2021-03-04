@@ -10,9 +10,9 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
 
-1. In the Azure portal, search for and select **Subscriptions**.
+1. In the Azure portal, search for, select **Subscriptions**, and then select your subscription.
 
-1. Select your subscription. Then under **Settings**, select **Resource providers**.
+1. In the left nav bar, under the **Settings** section, select **Resource providers**.
 
 1. In the search bar, enter **microsoft.insights**.
 
@@ -24,55 +24,59 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 Now, create a storage account for the NSG flow logs.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**. Select **Create**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**, and then select **Create**. The **Create storage account** panel appears.
 
-1. On the **Create storage account** page, fill in these settings:
+1. On the **Basics** tab, fill in the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | On **Basics** tab, under **Project details** section: |
+    | **Project details** |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Under **Instance details** section: |
+    | **Instance details** |
     | Storage account name | Create a unique name |
     | Location | Select the same region as your resource group |
     | Performance | Standard |
     | Account kind | StorageV2 |
     | Replication | Read-access geo-redundant storage |
 
-1. Go to the **Advanced** tab, and fill in this setting:
+1. Go to the **Advanced** tab, and fill in this value.
 
     | Setting | Value |
     | --- | --- |
-    | Under **Blob storage** section: |
+    | **Blob storage** |
     | Blob access tier (default) | Hot |
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and when validation passes, select **Create**.
 
 ## Create a Log Analytics workspace
 
 To view the NSG flow logs, you'll use Log Analytics.
 
-1. In the Azure portal, search for and select **Log Analytics Workspace**.
+1. On the Azure portal menu or from the **Home** page, search for, and select **Log Analytics workspaces**. The **Log Analytics workspaces** panel appears.
 
-1. Select **+ Create**, complete the page with these values, and then select **Review + Create**.
+1. On the top menu bar, select **New**. The **Create Log Analytics workspace** panel appears.
+
+1. On the **Basics** tab, fill in these values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | On **Basics** tab, under **Project details** section: |
+    | **Project details** |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Under **Instance details** section: |
+    | **Instance details** |
     | Name | testsworkspace |
     | Region | Select the same region as your resource group |
 
-1. Select **Next : Pricing tier**.
+1. Select **Next : Pricing tier**. On the **Pricing tier** tab, fill in the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | On **Pricing tier** tab, under **Pricing tier** section: |
+    | **Pricing tier** |
     | Pricing tier | Pay-as-you-go (Per GB) |
     | | |
+
+1. Select **Review + Create**, and then select **Create**.
 
 ## Enable flow logs
 

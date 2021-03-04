@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-external-identities
 metadata:
   title: Implement and manage external identities
   description: "Implement and manage external identities"
-  ms.date: 02/02/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -23,6 +23,7 @@ levels:
 - advanced
 roles:
 - administrator
+- identity-access-admin
 - security-engineer
 products:
 - azure

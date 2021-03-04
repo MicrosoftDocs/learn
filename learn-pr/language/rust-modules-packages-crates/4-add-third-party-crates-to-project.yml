@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-modules-packages-crates.4-add-third-party-crates-to-project
+metadata:
+  title: Add third-party crates to your project
+  description: Learn how to add third-party crates to your project with Cargo.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Add third-party crates to your project
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-add-third-party-crates-to-project.md)]

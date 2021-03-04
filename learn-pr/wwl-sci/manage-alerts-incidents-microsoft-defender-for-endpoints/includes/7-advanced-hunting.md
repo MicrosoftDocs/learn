@@ -83,13 +83,9 @@ The sample query below counts the number of unique devices (DeviceId) with antiv
 
 ```kusto
 DeviceEvents
-
 | where Timestamp > ago(7d)
-
 | where ActionType == "AntivirusDetection"
-
 | summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
-
 | where count_ > 5
 
 ```

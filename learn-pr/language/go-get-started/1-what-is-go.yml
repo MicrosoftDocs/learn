@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.1-what-is-go
+metadata:
+  title: What is Go?
+  description: Learn about the history and use cases of the Go programming language. 
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Go?
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-what-is-go.md)]
