@@ -67,8 +67,7 @@ For more information, see the Microsoft [Log analytics tutorial](https://docs.mi
 You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
 
 > [!NOTE]
-
-Azure Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.
+> Azure Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.
 
 ## Azure Sentinel repository on GitHub
 
