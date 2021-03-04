@@ -11,7 +11,7 @@ metadata:
 title: Deploy Azure VMware Solution
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-deploy-azure-vmware-solution.md)]
+  [!include[](includes/4-deploy-azure-vmware-solution.md)]
 quiz:
   title: Check your knowledge
   questions:

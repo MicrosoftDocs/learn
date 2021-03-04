@@ -30,7 +30,9 @@ products:
 units:
 - learn.deploy-azure-vmware-solution.introduction
 - learn.deploy-azure-vmware-solution.plan-azure-vmware-solution
+- learn.deploy-azure-vmware-solution.plan-network-topology
 - learn.deploy-azure-vmware-solution.deploy-azure-vmware-solution
 - learn.deploy-azure-vmware-solution.connect-on-premises-vmware
+- learn.deploy-azure-vmware-solution.configure-nsx-t-network-segments
 - learn.deploy-azure-vmware-solution.knowledge-check
 - learn.deploy-azure-vmware-solution.summary

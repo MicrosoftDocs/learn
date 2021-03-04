@@ -18,7 +18,7 @@ Register-AzResourceProvider -ProviderNamespace Microsoft.AVS
 
 If you use the Azure portal, search for **Subscriptions** and select the subscription you need to register the provider for. Select **Resource providers** and enter Microsoft.AVS into the search bar. If the resource provider is not registered, select **Register**.
 
-:::image type="content" source="../media/3-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page.":::
+:::image type="content" source="../media/4-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page.":::
 
 ## Deploy Azure VMware Solution
 
@@ -29,7 +29,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 1. On the **Azure VMware Solution**, select **Create**.
 1. On the **Basics** tab, enter values for the fields.
 
-    :::image type="content" source="../media/3-create-private-cloud.png" alt-text="Screenshot of how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
+    :::image type="content" source="../media/4-create-private-cloud.png" alt-text="Screenshot of how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
 
     | Field | Value |
     | ----- | ----- |
@@ -48,7 +48,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 1. The AVS deployment may take up to two full hours for deployment.
 1. After deployment, select the resource group and select the private cloud. The status will show **Succeeded** when the deployment is finished.
 
-    :::image type="content" source="../media/3-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
+    :::image type="content" source="../media/4-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
 
 ## Create Azure Bastion
 
@@ -57,7 +57,7 @@ After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastio
 1. In the Azure portal, search for and create a **Bastion** resource.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
 
-    :::image type="content" source="../media/3-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
+    :::image type="content" source="../media/4-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
 
     | Field | Value |
     | ----------- | -------- |
@@ -72,6 +72,8 @@ After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastio
     | Public IP address SKU | This setting is pre-populated by default to **Standard** because Bastion only supports the Standard Public IP SKU. |
     | Assignment | This setting is pre-populated by default to **Static**. Best practice is to leave assignment at static. |
 
-After AVS and the Azure Bastion resource are deployed, a jump host needs to be created for access to the private cloud. The jump host must be located in the same virtual network/subscription as AVS and the Azure Bastion resource. The jump host can either be a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
+## Create Azure Virtual Machine to use as jump host
+
+After AVS and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as AVS and the Azure Bastion resource. The jump host can either be a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
 
 Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter. AVS connectivity will require configurations to communicate with Azure resources and the on-premises VMware environment. In the next unit, we'll go through network configuration steps to take so you can successfully connect to the AVS environment, both from within Azure and from on-premises.

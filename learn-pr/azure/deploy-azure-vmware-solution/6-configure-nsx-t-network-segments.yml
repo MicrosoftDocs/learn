@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
+uid: learn.deploy-azure-vmware-solution.configure-nsx-t-network-segments
 metadata:
-  title: Connect to an on-premises VMware vSphere environment
-  description: Connect to an on-premises VMware vSphere environment
+  title: Configure NSX-T network segments
+  description: Configure NSX-T network segments
   ms.date: 01/21/2021
   author: sbkuehn
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connect to an on-premises VMware vSphere environment
+title: Configure NSX-T network segments
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-connect-on-premises-vmware-vsphere.md)]
+  [!include[](includes/6-configure-nsx-t-network-segments.md)]
 quiz:
   title: Check your knowledge
   questions:

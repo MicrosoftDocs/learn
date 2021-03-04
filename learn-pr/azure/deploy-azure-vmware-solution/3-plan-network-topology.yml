@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-azure-vmware-solution.plan-network-topology
+metadata:
+  title: Plan network topology for Azure VMware Solution deployment
+  description: Plan network topology for Azure VMware Solution deployment
+  ms.date: 01/21/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan an Azure VMware Solution deployment
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-plan-network-topology.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
+    choices:
+    - content: "/22"
+      isCorrect: true
+      explanation: "AVS needs a /22 CIDR network address block for IP segments."
+    - content: "/30"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+    - content: "/31"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+  - content: "What is the minimum number of nodes required for Azure VMware Solution?"
+    choices:
+    - content: "4"
+      isCorrect: false
+      explanation: "In terms of a minimum deployment, AVS requires fewer than four nodes."
+    - content: "8"
+      isCorrect: false
+      explanation: "In terms of a minimum deployment, AVS requires fewer than eight nodes."
+    - content: "3"
+      isCorrect: true
+      explanation: "In terms of a minimum deployment, AVS requires three nodes."
