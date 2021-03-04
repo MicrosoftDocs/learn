@@ -32,10 +32,13 @@ Use an Azure account in an Azure subscription to deploy AVS. The Azure subscript
 
 - A subscription under an Azure Enterprise Agreement (EA) with Microsoft.
 - A Cloud Solution Provider (CSP) managed subscription under an existing CSP Azure offers contract or an Azure plan.
+- A subscription under a Microsoft Customer Agreement (MCA) with Microsoft.
 
-For EA customers, a support ticket needs to be open for host allocation. It may take up to five business days to confirm the request.
+For EA customers, a support ticket needs to be opened for additional host quota. It may take up to five business days to confirm and allocate hosts for the request.
 
-For CSPs, assign an Azure Plan to a customer using the Partner Center. Then use Partner Center to open up a support ticket for host allocation. It may take up to five business days to confirm the request.
+For CSPs, assign an Azure Plan to a customer using the Partner Center. Then use Partner Center to open up a support ticket for additional host quota. It may take up to five business days to confirm and allocate hosts for the request.
+
+For MCA customers, a support ticket needs to be opened for additional host quota. It may take up to five business days to confirm and allocate hosts for the request.
 
 The Microsoft.AVS resource provider must be registered before provisioning hosts. Register the resource provider by using the Azure portal, PowerShell, or the AZ-CLI.
 
