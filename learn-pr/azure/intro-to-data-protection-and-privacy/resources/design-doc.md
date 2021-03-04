@@ -109,21 +109,7 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 - Overview of General Data Protection Regulation
 - Overview of California Consumer Privacy Act
 
-### Unit 5: Key concepts of data processing
-
-**Type of unit:** Learning content unit
-
-**Estimate unit duration:** 10 minutes
-
-**Key content per learning objective**
-
-- Data processing definition
-- Data controller
-- Processor
-- Personal data and data subject
-- Customer data
-
-### Unit 6: How does Microsoft support data protection and privacy?
+### Unit 5: How does Microsoft support data protection and privacy?
 
 **Type of unit:** Learning content unit
 
@@ -132,8 +118,8 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 **Key content per learning objective**
 
 - Key activities that Microsoft performs to support data protection and privacy for its services
-<!--LM: The following heading should use sentence-case capitalization. Please only use caps if these are UI terms and revert my edits if they are.-->
-### Unit 7: What are the security, privacy, and compliance options in Microsoft Azure?
+
+### Unit 6: What are the security, privacy, and compliance options in Microsoft Azure?
 
 **Type of unit:** Learning content unit
 
@@ -144,13 +130,13 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 - Data security and privacy technologies in Azure
 - Compliance technologies in Azure
 
-### Unit 8: Knowledge check
+### Unit 7: Knowledge check
 
 **Type of unit:** Knowledge check unit
 
 **Estimate unit duration:** 5 minutes
 
-### Unit 9: Summary
+### Unit 8: Summary
 
 **Type of unit:** Summary unit
 
