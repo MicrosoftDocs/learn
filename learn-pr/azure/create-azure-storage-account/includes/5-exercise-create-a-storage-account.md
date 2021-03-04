@@ -16,7 +16,8 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** pane appears.
 
-    :::image type="content" source="../media/5-portal-storage-select.png" border="true" alt-text="Screenshot of the Azure portal showing the Create a resource pane with the Storage category and Storage account option highlighted.":::
+
+1. On the **Basics** tab, enter the following values for each setting.
 
 1. Select **Create**. The **Create storage account** pane appears. On the **Basics** tab, enter the following values for each setting.
 
