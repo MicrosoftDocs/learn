@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.shift-express-api-azure-functions.9-solution
+uid: learn.azure.shift-express-api-azure-functions.7-review-your-azure-function-application
 metadata:
   title: Review your Azure Functions application
   description: Review your Azure Functions application
@@ -11,4 +11,4 @@ metadata:
 title: Review your Azure Functions application
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-solution.md)]
+  [!include[](includes/7-review-your-azure-function-application.md)]

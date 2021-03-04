@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.shift-express-api-azure-functions.5-exercise-create-a-function-app
+metadata:
+  title: Exercise - Create a function app
+  description: Create a function app
+  ms.date: 04/10/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create a function app
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-create-a-function-app.md)]
