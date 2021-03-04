@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.cloud-adoption-framework-migrate
 metadata:
-  title: "CAF Migrate: Migrate to Azure through repeatable processes and common tools."
+  title: "Migrate to Azure through repeatable processes and common tools"
   description: Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
   ms.date: 02/22/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: BrianBlanchard
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Migrate to Azure through repeatable processes and common tools."
+title: "Migrate to Azure through repeatable processes and common tools"
 summary: Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
 abstract: |
   In this module, you will:
