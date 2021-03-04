@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-microsoft-defender-for-endpoints-environment
 metadata:
   title: Deploy the Microsoft Defender for Endpoint environment
   description: "Deploy the Microsoft Defender for Endpoint environment"
-  ms.date: 01/22/2021
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -25,7 +25,6 @@ roles:
 products:
 - m365
 - windows
-- m365-threat-protection
 units:
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.introduction
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment.create-your-environment

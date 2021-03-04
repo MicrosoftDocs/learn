@@ -16,29 +16,32 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. From the Azure portal menu, select **Create a resource**.
 
-    ![Screenshot of Azure portal menu and Create a resource option.](../media/7-create-a-resource.png)
+1. In the left menu pane, select **Web**, and then search for and select **Web App**. The **Web App** panel appears.
 
-1. Select **Web**, and then select **Web App**.
+1. Select **Create**. The **Create Web App** panel appears.
 
-    ![Screenshot of the Azure Marketplace with a callout highlighting navigation from Web to Web App option.](../media/7-search-web-app-annotated.png)
-
-1. Specify the values in the following table for the properties of the web app.
+1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The web app must have a unique name. We suggest using something like **\<*your name or initials*\>hotelsystem**. Use this name wherever you see *\<your-webapp-name\>* in this exercise.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
-    | Name | *\<your-webapp-name\>* |
+    | **Project Details** |
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
-    | Resource Group | Create a new resource group called **mslearn-autoscale** |
-    | Runtime stack | .NET Core 2.1 |
-    | OS | Windows |
+    | Resource Group | Select the **Create new** link, and in the **Name** dialog, enter **mslearn-autoscale** |
+    | **Instance Details** |
+    | Name | *\<your-webapp-name\>* |
     | Publish | Code |
+    | Runtime stack | .NET Core 2.1 |
+    | Operating System | Windows |
+    | Region | Select a region close to you |
 
-1. Select **Create**.
+1. Select **Review + create**, and then select **Create**.
 
-1. To open the Cloud Shell in the Azure portal, to download the source code for the hotel reservation system, run the following command.
+1. In the top right menu bar of the Azure portal, open the Cloud Shell (first icon in row of menu choices).
+
+1. To download the source code for the hotel reservation system, run the following command.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -83,7 +86,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
    cd ~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient
    ```
 
-1. Using the **code** editor, edit the App.config file in this folder.
+1. In the Cloud Shell, select the **code** editor (icon with curly brackets), and edit the App.config file in this folder.
 
     ```bash
     code App.config
@@ -104,7 +107,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
     > The **NumClients** setting in this file specifies the number of simultaneous clients that will attempt to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of a reservation – all of the data used is fake and is not actually persisted anywhere. Leave this value set to 100.
 
-1. Save the file, and close the code editor.
+1. Save the file by selecting the ellipsis in the upper right hand corner of the editor, and then close the code editor.
 
 1. Rebuild the test client app with the new configuration.
 
@@ -120,7 +123,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
    ![Screenshot of a client app running, showing the responses and error messages that occur.](../media/7-web-client-annotated.png)
 
-1. To stop the client app, press Enter.
+1. To stop the client app, press <kbd>Enter</kbd>.
 
 ## Enable autoscaling and create a scale condition
 

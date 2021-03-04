@@ -3,7 +3,7 @@ uid: learn.wwl.windows-server-hyper-v-virtualization
 metadata:
   title: Windows Server Hyper-V and Virtualization
   description: Windows Server Hyper-V and Virtualization
-  ms.date: 01/27/2021
+  ms.date: 03/02/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Working with virtualization technologies.
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/windows-server-hyper-v-and-virtualization.svg
 levels:
 - intermediate
 roles:
