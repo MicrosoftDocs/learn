@@ -77,7 +77,7 @@ As you add products to your catalog, you can select the approved plans under eac
 
 ### Purchasing approved products
 
-When accessing your Private Azure Marketplace, users will be alerted that a Private Azure Marketplace has been enabled by their Marketplace Admin (assigned role). This will ensure purchases by users in your organization align to your company’s procurement and governance guidelines.
+When you access your Private Azure Marketplace, users are alerted that a Private Azure Marketplace has been enabled by their Marketplace Admin (assigned role). The action ensures purchases by users in your organization align to your company’s procurement and governance guidelines.
 
 Once you have selected the set of products from your company’s approved software vendors, all users browsing in the Private Marketplace experience will see whether a product is approved for purchase. Approved products are marked with the ‘approved’ badge on the product tile card. Microsoft products will always be approved for purchase.
 
