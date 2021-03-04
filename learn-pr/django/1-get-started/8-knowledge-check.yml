@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.django.get-started.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+ questions:
+ - content: 'What is the command-line utility automatically created in every Django project?'
+   choices:
+   - content: 'init.py'
+     explanation: 'Incorrect. This file signals to Python that this directory is a package.'
+     isCorrect: false
+   - content: 'manage.py'
+     isCorrect: true
+     explanation: Correct!
+   - content: 'urls.py'
+     explanation: 'Incorrect. This file contains all of the URLs within the project and acts as a table of contents.'
+     isCorrect: false
+ - content: 'What was referred to as a table of contents in the Django app.'
+   choices:
+   - content: 'URLconf'
+     explanation: Correct!
+     isCorrect: true
+   - content: 'runserver'
+     isCorrect: false
+     explanation: 'Incorrect. This is a command used to start the development server.'
+   - content: 'project'
+     explanation: 'Incorrect. The project contains all of the necessary settings or apps for a specific website.'
+     isCorrect: false
