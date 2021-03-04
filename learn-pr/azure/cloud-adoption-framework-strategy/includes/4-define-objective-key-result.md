@@ -50,25 +50,25 @@ Here are some example of OKRs:
 
 **Key results:**
 
-1. 45 percent of K-12 schools using our platform
-1. A 12-percent increase in student engagement, as measured through internal systems
-1. A 95-percent satisfaction rate from quarterly parent surveys
+- 45 percent of K-12 schools using our platform
+- A 12-percent increase in student engagement, as measured through internal systems
+- A 95-percent satisfaction rate from quarterly parent surveys
 
 **Objective 2:** Build a technology platform that supports every person in our business to innovate and create.
 
 **Key results:**
 
-1. Five new applications developed and adopted across the organization
-1. Every team with at least two members using the Microsoft Power Platform
-1. Including new cloud technologies like data analytics and machine learning in all customer-facing applications
+- Five new applications developed and adopted across the organization
+- Every team with at least two members using the Microsoft Power Platform
+- Including new cloud technologies like data analytics and machine learning in all customer-facing applications
 
 **Objective 3:** Transform our approach from sales-driven to data-driven.
 
 **Key results:**
 
-1. Increasing pipeline coverage from 50 percent to 200 percent
-1. Increasing closing rates for sales engagements by 5 percent
-1. Reducing the time to close deals by 8 percent
+- Increasing pipeline coverage from 50 percent to 200 percent
+- Increasing closing rates for sales engagements by 5 percent
+- Reducing the time to close deals by 8 percent
 
 ## Next steps
 
@@ -86,4 +86,4 @@ Five steps can help your organization to move forward with OKRs:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Fill in the boxes found under the "Business outcomes" header. Use the OKRs discussed in this unit to shape your first business outcomes.
+If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the boxes found under the "Business outcomes" header. Use the OKRs discussed in this unit to shape your first business outcomes.

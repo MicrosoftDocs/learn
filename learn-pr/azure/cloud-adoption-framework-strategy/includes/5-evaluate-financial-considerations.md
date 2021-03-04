@@ -135,4 +135,4 @@ If a refresh cycle is approved and budgeted, the cloud transformation could help
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx). Fill in the section under the "Business justification" header. Use the financial considerations discussed in this unit to describe the business justification or financial considerations.
+If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the "Business justification" header. Use the financial considerations discussed in this unit to describe the business justification or financial considerations.
