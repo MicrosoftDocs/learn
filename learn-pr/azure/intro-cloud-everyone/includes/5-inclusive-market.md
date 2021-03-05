@@ -10,7 +10,9 @@ There are several reasons to use Inclusive Marketing:
 - It drives purchase intent: 60% of millennials and Gen Z express a preference for brands that support a social cause.
 - It improves brand perception: 92% of consumers say they have a more positive image of a company when it supports a social or environmental issue.
 
-![Diversity](../media/4-inclusive-market.png)
+:::image type="complex" source="../media/4-inclusive-market.png" alt-text="Diagram of the the different layers and dimensions of diversity based on the Gardenswartz & Rowe model":::
+    Diagram showing the layers of diversity based on the Gardenswartz & Rowe model, which are: personality, inherent dimensions, cultural dimensions, organizational dimensions and behavioral dimensions. The first layer of diversity is personality. The second layer includes inherent dimensions such as race, gender, ethnicity, age/generation, sexual orientation/gender identity and physical/mental ability. Cultural dimensions such as appearance, language/accent, social/economic status, marital/partner/parental status, miliary/veteran status, work experience, education, nationality and location make up the third layer of diversity. The next layer is the organizational layer. This layer includes industry, markets, function, business/division, manager/individual contributor status, geographic location, tenure or position. The last layer shown is the behavioral layer. The behavioral layer is characterized by how we communicate, how we see ourselves (group/individual), what we focus on (task/relationship), how we process information, how we give explanations, the mental model we use, how we make conclusions, how much we try to control, how we engage people, how we organize power and how we see time.
+:::image-end:::
 
 This image beautifully illustrates the many layers and dimensions of what makes us diverse. Ultimately, it's people who matter. At Microsoft, we care about our customers by valuing and practicing inclusivity. We understand that the additional benefit can mean the difference between attracting a customer for a day, and gaining their loyalty for life.
 

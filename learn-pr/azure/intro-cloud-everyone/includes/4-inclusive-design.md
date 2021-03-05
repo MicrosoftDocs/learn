@@ -30,7 +30,9 @@ Everyone has abilities and limits to those abilities. Designing for individuals 
 
 Seeing disability differently, and understanding exclusion, helps benefit more people by our mindfulness of the continuation from permanent disabilities to situation impairments. It's helping us rethink how our designs can scale to more people in new ways. In the United States, 26,000 people a year suffer from loss of upper extremities. But when we include people with a temporary and situational impairment, the number is greater than 20 million.
 
-![Disabilities](../media/3-inclusive-design.png)
+:::image type="complex" source="../media/3-inclusive-design.png" alt-text="Diagram of disabilities and impairments categorized by type and the affected sense":::
+   Diagram showing motor, visual, auditory and speech disabilities and impairments. A person with one arm has a permanent motor disability, an arm injury is a temporary motor disability and being a new parent creates a situational motor disability. A person who is blind has a permanent visual disability, a cataract causes a temporary visual disability and being a distracted driver is a situational visual disability. A person who is deaf or hard of hearing has an auditory disability, an ear infection is a temporary auditory disability and a situational disability can occur when a person works as a bartender. A non-verbal person has a permanent speech disability, laryngitis causes a temporary speech disability and having a heavy accent is an example of a situational speech disability.
+:::image-end:::
 
 ### Learn from diversity
 
