@@ -133,7 +133,7 @@ training_env = Environment.get(workspace=ws, name='training_environment')
 
 script_config = ScriptRunConfig(source_directory='my_dir',
                                 script='script.py',
-                                environment=env)
+                                environment=training_env)
 ```
 
 When an experiment based on the estimator is run, Azure Machine Learning will look for an existing environment that matches the definition, and if none is found a new environment will be created based on the registered environment specification.

@@ -25,6 +25,7 @@ roles:
 - security-engineer
 products:
 - azure
+- azure-monitor
 units:
 - learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
 - learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log

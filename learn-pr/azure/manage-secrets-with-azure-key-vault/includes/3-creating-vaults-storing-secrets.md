@@ -1,4 +1,4 @@
-## Creating Key Vaults for your applications
+## Create key vaults for your applications
 
 Good practice is to create a separate vault for each deployment environment of each of your applications, such as development, test, and production. You can use a single vault to store secrets for multiple apps and environments, but the impact of an attacker gaining read access to a vault increases with the number of secrets in the vault.
 
@@ -15,9 +15,9 @@ To start, you'll create a vault and store one secret in it.
 
 ### Create the vault
 
-**Key Vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
+**Key vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
 
-To create your vault, in the Cloud Shell, run the following command.
+To create your vault, in the Cloud Shell, run the following command. Make sure to enter your unique vault name to the `--name` parameter.
 
 ```azurecli
 az keyvault create \
@@ -33,7 +33,7 @@ When it finishes, you'll see JSON output describing the new vault.
 
 ### Add the secret
 
-Now, add the secret: our secret will be named **SecretPassword** with a value of **reindeer_flotilla**.
+Now, add the secret: our secret will be named **SecretPassword** with a value of **reindeer_flotilla**. Make sure to enter your unique vault name to the `--vault-name` parameter.
 
 ```azurecli
 az keyvault secret set \
