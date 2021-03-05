@@ -21,7 +21,7 @@ Azure Load Balancer includes a number of components:
 
 The diagram shows how the various elements used by Load Balancer operate together.
 
-![Diagram showing the components of Azure Load Balancer](../media/2-LoadBalancer.png)
+![Diagram that shows the components of Azure Load Balancer.](../media/2-LoadBalancer.png)
 
 ### Front-end IP address and back-end pool
 
