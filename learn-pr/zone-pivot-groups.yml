@@ -345,8 +345,8 @@ groups:
     - id: spring
       title: Spring Data
 - id: azure-devops-actions
-  title: Choose a DevOps environment
-  prompt: Choose a DevOps environment
+  title: Choose an Automation Platform
+  prompt: Choose an Automation Platform
   pivots:
     - id: azure-devops
       title: Azure DevOps
