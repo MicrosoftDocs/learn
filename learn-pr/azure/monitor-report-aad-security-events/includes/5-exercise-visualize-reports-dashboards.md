@@ -17,19 +17,27 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
 1. In the results list, select **Log Analytics workspaces**.
 
-1. Select **Add** to create a new Log Analytics workspace.
+1. Select **New**. The **Create Log Analytics workspace** pane appears.
 
-   ![Screenshot of the Log Analytics page, with the Add option highlighted.](../media/3-log-analytics-workspace.png)
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. To create a new Log Analytics workspace, do the following:
+    | Setting | Value |
+    | --- | --- |
+    | **Project Details** |
+    | Subscription | Enter your subscription  |
+    | Resource group | select **Create new**, and enter a unique resource name |
+    | **Instance Details** |
+    | Name | enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters |
+    | Region     | Select the location nearest to you |
 
-   a. Select **Create New**. This workspace will be unique to each user who signs in.  
-   b. In the **Name** box, enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters.  
-   c. For the **Resource group**, select **Create new**, and enter a unique resource name.  
-   d. In the **Location** drop-down list, select the location nearest to you.  
-   e. For **Pricing tier**, leave it automatically assigned as **pay-as-you-go** and based on a per-gigabyte (GB) cost.
+1. Select **Next : Pricing tier**, and enter the following value for the setting.
 
-1. Select **OK** to create the workspace.
+    | Setting | Value |
+    | --- | --- |
+    | **Pricing tier** |
+    | Pricing tier | Leave it automatically assigned as **Pay-as-you-go** and based on a per-gigabyte (GB) cost  |
+
+1. Select **Review + Create**. After validation succeeds, select **Create** to create the workspace.
 
 You've now created a Log Analytics workspace that you can use to store your logging data and run queries.  In the next section, you stream data to this workspace.
 
@@ -39,18 +47,16 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 
 1. Open Azure Active Directory.
 
-1. Under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics settings**.
+1. In the middle menu pane, Under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics setting**.
 
    Here, you create a connection between the two log files and your Log Analytics workspace.
 
-1. On the **Add diagnostics settings** page, do the following;
+1. On the **Diagnostics setting** pane, do the following:
 
-    a. In the **Name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
-    b. Select the **Send to Log Analytics** check box.  
+    a. In the **Diagnostic setting name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
+    b. Under **Destination details**, select the **Send to Log Analytics workspace** check box.  
     c. Select the Log Analytics workspace that you created earlier, **ContosoWorkspace**.  
-    d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit log** and **Sign-up logs**.
-
-     ![Screenshot of the diagnostics settings for streaming audit and sign-in logs to your Log Analytics workspace.](../media/3-log-analytics-send-to.png)
+    d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit** and **AllMetrics**.
 
 1. Select **Save**.  
 
@@ -70,7 +76,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 
 1. Select the Log Analytics workspace that you created earlier.
 
-1. Under **General**, select **Workbooks**.
+1. In the middle menu pane, under **General**, select **Workbooks**.
 
 1. Select **Import**, select **File**, and then browse to your desktop.
 
@@ -90,11 +96,11 @@ In the next section, you set up a dashboard that your security team can begin to
 
    ![Screenshot of the "New dashboard" button.](../media/4-dashboard-new.png)
 
-1. At the prompt, name the dashboard **Security Dashboard**, and then select **Done**.  For now, leave the dashboard blank.  In the next few steps, you'll be adding a report query to the dashboard.
+1. At the prompt, name the dashboard **Security Dashboard**, and then select **Done**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
 
    To make the dashboard accessible to your workspace, you need to share it. Even though the dashboard contains no data, you can still share it.  
 
-1. Select the **Share** button.
+1. Select **Share**.
 
    ![Screenshot of the Share button.](../media/4-dashboard-share-option.png)
 
