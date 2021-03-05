@@ -3,7 +3,7 @@ You've successfully created a console app that sends SMS messages using Azure Co
 In this module you learned:
 
 * What Azure Communication Services is and how to create an Azure Communication Services resource.
-* How to provision an SMS-enabled phone number using the Azure Portal.
+* How to provision an SMS-enabled phone number using the Azure portal.
 * How to send an SMS message using this phone number from a C# console app.
 
 ## Clean up

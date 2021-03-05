@@ -5,7 +5,7 @@ You can use Azure Communication Services to send and receive text messages progr
 > [!IMPORTANT]
 > Activities in this module will result in a billed charge. Be sure to perform the cleanup steps in the final module to avoid recurring charges, even if you don't finish the whole module.
 
-1. Go to [the Azure Portal](https://portal.azure.com/?azure-portal=true).
+1. Go to [the Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. Select the red **Create a resource** button in the upper-left corner.
 
@@ -15,7 +15,7 @@ You can use Azure Communication Services to send and receive text messages progr
 
 1. Specify your subscription, resource group, geography, and the name of your Communication Services resource.
 
-1. When your resource has been created, select your Communication Services resource within the Azure Portal and navigate to the Phone Numbers blade.
+1. When your resource has been created, select your Communication Services resource within the Azure portal and navigate to the Phone Numbers blade.
 
 1. Select the **Get** button to launch the phone number provisioning wizard. Be sure to enable the SMS capability for your phone number while provisioning.
 
