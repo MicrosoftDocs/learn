@@ -19,8 +19,7 @@ Some common messaging scenarios are:
    * *Transactions*. Allows you to do several operations, all in the scope of an atomic transaction.
    * *Message sessions*. Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
 
-If you're familiar with other message brokers like **Apache ActiveMQ**,**Rabbit MQ**, **TIBCO EMS**, and **IBM MQ**, Service Bus concepts are similar to what you know.
-
+If you're familiar with other message brokers like **Apache ActiveMQ**, **Rabbit MQ**, **TIBCO EMS**, and **IBM MQ**, Service Bus concepts are similar to what you know.
 
 ## Create your Azure Service Bus Premium namespace using the Azure CLI
 
