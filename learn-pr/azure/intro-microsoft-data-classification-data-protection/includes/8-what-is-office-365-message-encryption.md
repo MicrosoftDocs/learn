@@ -6,11 +6,11 @@ With Office 365 Message Encryption (OME), your organization can send and receive
 
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the Do Not Forward option, and the encrypt-only option.
 
-Users can then encrypt email messages and a variety of attachments by using these options.
+Users can then encrypt email messages and various attachments by using these options.
 
-As an administrator, you can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific words in the subject line, and specify that recipients can't copy or print the contents of the message.
+As an administrator, you can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient or that contains specific words in the subject line. You can specify that recipients can't copy or print the contents of the message.
 
-Unlike the previous version of OME, the new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Microsoft 365. In addition, recipients who receive a protected email message sent to a Microsoft 365 account in Outlook 2016 and newer, or Outlook on the web, don't have to take any additional action to observe the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience.
+Unlike the previous version of OME, the new capabilities provide a unified sender experience whether you're sending mail inside your organization or to recipients outside of Microsoft 365. Also, recipients who receive a protected email message sent to a Microsoft 365 account in Outlook 2016 and newer, or Outlook on the web, don't have to take any other action to observe the message. It works seamlessly. Recipients using other email clients and email service providers also have an improved experience.
 
 ## How Office 365 Message Encryption works
 
