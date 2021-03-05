@@ -1,4 +1,4 @@
-While your Azure Service Bus namespace is being created, let's have a look at what Azure Service Bus is and what it's recommended use cases are. We will also look at what Java Message Service (JMS) 2.0 is.
+While your Azure Service Bus namespace is being created, let's have a look at what Java Message Service (JMS) 2.0 is.
 
 ## What is Java Message Service (JMS)?
 
