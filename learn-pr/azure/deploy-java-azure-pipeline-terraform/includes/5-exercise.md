@@ -1,4 +1,6 @@
-In this exercise, you'll use GitHub Actions to deploy a Spring Boot sample application.
+In this exercise, you'll use devOps to build/deploy your Spring Boot sample application.
+
+::: zone pivot="github-actions"
 
 ## Set up a GitHub action to deploy the sample application
 
@@ -94,5 +96,7 @@ Each time you enter a `git push` command to commit your code, your build-and-dep
 ```yml
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
 ```
+
+::: zone-end
 
 The next unit is a knowledge check to see what you've learned in this module.

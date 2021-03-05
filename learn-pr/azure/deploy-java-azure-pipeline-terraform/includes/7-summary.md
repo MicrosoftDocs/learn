@@ -1,5 +1,7 @@
 Congratulations! You've learned how to use Terraform with DevOps to create multiple pipelines.
 
+::: zone pivot="github-actions"
+
 You've created an Azure App Service application and a MySQL database, and you've deployed a Spring Boot web application.
 
 Your company wanted to learn how to provision its existing Spring Boot Java web applications to Azure App Service.
@@ -36,3 +38,5 @@ For more information about Terraform on Azure, see [Terraform on Azure documenta
 For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
 For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
+
+::: zone-end

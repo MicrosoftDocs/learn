@@ -1,4 +1,6 @@
-In this exercise, you'll configure GitHub Actions to provision your Terraform resources.
+In this exercise, you'll configure devOps to provision your Terraform resources.
+
+::: zone pivot="github-actions"
 
 ## Access the sample application
 
@@ -287,3 +289,5 @@ Next, in your repository, trigger your GitHub action by doing the following:
 ## Next steps
 
 In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
+
+::: zone-end
