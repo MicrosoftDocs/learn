@@ -103,7 +103,7 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
 1. On the **Add cognitive search (Optional)** tab, select **Skip to: Customize target index**.
 
-    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed.](../media/5-exercise-screenshot-6.png)
+    ![Screenshot of the Azure portal, showing the import data form.](../media/5-exercise-screenshot-6.png)
 
 1. The **Customize target index** tab enables you to change the automatically-generated index schema created by the Import data wizard. The fields are populated by the wizard after reading the file in blob storage. Use the following table to complete the named fields:
 
@@ -135,7 +135,7 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
 1. At the top of **azureblob-indexer** page, select **Run**, and then select **Yes**.
 
-    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed.](../media/5-exercise-screenshot-10.png)
+    ![Screenshot of the Azure portal, showing the azureblob-indexer page.](../media/5-exercise-screenshot-10.png)
 
 1. The indexer should import the video catalog, and show that 19 documents have been imported into the index.
 
