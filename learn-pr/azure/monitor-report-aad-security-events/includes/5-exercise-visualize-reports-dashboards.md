@@ -47,7 +47,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 
 1. Open Azure Active Directory.
 
-1. In the middle menu pane, Under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics setting**.
+1. In the middle menu pane, under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics setting**.
 
    Here, you create a connection between the two log files and your Log Analytics workspace.
 
