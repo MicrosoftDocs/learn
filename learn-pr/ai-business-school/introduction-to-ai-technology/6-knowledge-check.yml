@@ -4,8 +4,8 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: A knowledge check for the introduction to AI technology module.
-  ms.date: 04/26/2019
-  author: Adriamen
+  ms.date: 03/05/2021
+  author: ruyakubu
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -60,18 +60,15 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. A machine learning is only a small part of an AI solution."
   - content: |
-      Last year a large national freight company incorporated pre-built AI services into some customer-facing products and some business processes for employees. Now the COO needs to enable all employees to utilize AI in their daily tasks.  
-      How can the COO’s need be met?
+      A local weather station wants to use machine learning to accurately predict rainfall.  They have daily historical data with the following numeric data: time of the year, temperature, humidity, wind speed and raindays.  What type of machine learning algorithm should they use for this problem?
     choices:
-    - content: "Democratize data and knowledge."
+    - content: "Classification"
       isCorrect: false
-      explanation: "Incorrect. This makes data available to employees but it doesn’t fully enable AI in their daily tasks. Something in addition is required, like creating new AI models and/or pre-built AI services."
-    - content: "Develop conversational agents."
+      explanation: "Incorrect. This problem is not trying to find the distinction between classes or categories."
+    - content: "Cluster"
       isCorrect: false
-      explanation: "Incorrect. Conversational agents may be a part of the AI offering, but those would be an outcome of new AI model creation."
-    - content: "Create new AI models."
+      explanation: "Incorrect. This problem is not trying to find groups that the data belongs in."
+    - content: "Regression"
       isCorrect: true
-      explanation: "Correct. This would allow them to create custom AI capabilities to help them do their jobs. Sharing those new models with other employees helps them increase productivity."
-    - content: "Utilize pre-built AI services."
-      isCorrect: false
-      explanation: "Incorrect. Pre-built AI services aren’t intended to be used on a personalized basis by employees to perform their daily tasks. They are meant to integrate with existing customer-facing systems or products."
+      explanation: "Correct. This problem is using a continuous numeric data that you can find patterns over time."
+   
