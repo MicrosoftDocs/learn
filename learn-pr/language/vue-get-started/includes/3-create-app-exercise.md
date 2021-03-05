@@ -7,8 +7,8 @@ We have provided a starter site for the application which includes images and a 
 Open a terminal or command window and execute the following commands:
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-vue/
-    cd mslearn-vue/code/1-vue-get-started
+    git clone https://github.com/MicrosoftDocs/mslearn-vue-get-started/
+    cd mslearn-vue-get-started/code/1-vue-get-started
     code .
     ```
 
