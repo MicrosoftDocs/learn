@@ -1,4 +1,4 @@
-Imagine that you're an infrastructure manager who's been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application by using GitHub Actions.
+Imagine that you're an infrastructure manager who's been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application by using GitHub Actions or Azure DevOps.
 
 ## Provision, build, and deploy tracks
 
@@ -24,6 +24,29 @@ In this module, you will:
 ## Prerequisites
 
 - An Azure subscription
+- A GitHub account
+- Basic knowledge of software development
+- Basic knowledge of managing and provisioning Azure resources
+
+::: zone-end
+
+::: zone pivot="azure-devops"
+
+In this module's scenario, you'll use all three tracks by implementing multiple pipelines.
+
+Several tools are available to help you work with these pipelines. We'll be using GitHub for your code repository, and Azure DevOps Pipelines with Terraform, to provide the automation you need.
+
+## Learning objectives
+
+In this module, you will:
+- Create a Terraform configuration for your Azure resources.
+- Provision your infrastructure and deploy it to Azure.
+- Set up your project for continuous integration and continuous delivery (CI/CD) by using Azure DevOps.
+
+## Prerequisites
+
+- An Azure subscription
+- An Azure DevOps account
 - A GitHub account
 - Basic knowledge of software development
 - Basic knowledge of managing and provisioning Azure resources
