@@ -10,11 +10,11 @@ It is important to know how well your HPC application scales running the problem
 
 The following parallel speed-up formula is used to measure how well your parallel application performance improves as you add more parallel processes.
 
-$${Parallel\ speed-up\ =\ }{\dfrac{Wall\ time \(1\ process)}{Wall\ time \(n\ processes)}}$$
+$${Parallel\ speed-up\ =\ }{\dfrac{Wall\ time\ (1\ process)}{Wall\ time\ (n\ processes)}}$$
 
 The following parallel efficiency formula illustrates how efficiently you are using computational resources as you add more processes to improve the parallel applications performance.
 
-$${Parallel\ efficiency\ =\ }{\dfrac{Parallel\ speed-up}{N\ processes}}$$
+$${Parallel\ e\f\ficiency\ =\ }{\dfrac{Parallel\ speed-up}{N\ processes}}$$
 
 If you're unsure of the parallel scaling performance for your tightly coupled HPC application, then run a scaling study. In other words, run your application on 1, 2, 4, 8, 16, etc., parallel processes. Compute the parallel speed-up and parallel efficiency, and then decide based on these results how many parallel processes you want to use.
 
