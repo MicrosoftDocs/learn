@@ -31,22 +31,17 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Speech recognition is one of the products and capabilities of AI: cognition, learning, and perception."
   - content: |
-      A professional baseball team wants to apply state-of-the-art AI technology to batting practice. They believe that through advanced AI capabilities like deep learning algorithms they can learn from thousands of at-bats to gain an understanding of the art of hitting a baseball.   
-      Information about the pitcher’s pitch plus the batter’s stance and swing recorded by on-field cameras provide the input data. The goal is to successfully predict the results based the data. It will also enable them to teach pitchers and batters the best techniques based on the data.  
-      Which of the three major capabilities of AI is able to make these predictions based on thousands of recorded at-bats?
+      What method of AI needs to give a machine a lot of data with price, year, make, model, mileage, and other features of a car before it can find patterns and be able to predict car prices?
     choices:
-    - content: "Cognition"
+    - content: "Machine Memorizing"
+      isCorrect: false
+      explanation: "Incorrect. Machine Learning trains a machine to learn differentiating features about data and find patterns. Not to memorize data"
+    - content: "Machine Learning"
       isCorrect: true
-      explanation: "Correct. Cognition is the ability to make predictions based on learned inputs."
-    - content: "Learning"
+      explanation: "Correct.  Machine Learning trains a machine to learn differentiating features about data and find patterns to make predictions."      
+    - content: "Deep Learning"
       isCorrect: false
-      explanation: "Incorrect. Learning is the AI capability that observes thousands of at-bats as input and learns what results come from the different inputs. It provides the basis of perception and cognition. It doesn’t make the predictions."
-    - content: "Perception"
-      isCorrect: false
-      explanation: "Incorrect. This is the ability to understand what the inputs mean. The pitcher’s stance, type of pitch, batter stance, swings trajectory, etc. This also provides the basis to predicting the outcome of the at-bat (cognition). It doesn’t make the prediction."
-    - content: "Interpretation"
-      isCorrect: false
-      explanation: "Incorrect. Interpretation in the form of real-time translation or speech/hand-writing recognition comes as a result of the three major capabilities. It is not one of the three major capabilities of AI."
+      explanation: "Incorrect. Deep Learning automatically finds differentiating features from data on its own."
   - content: |
       A company that provides continuing professional education for nurses is attempting to integrate AI into their existing products to ensure that the education is tailored for the learners’ needs. They have invested millions of dollars into the online software that delivers these training modules.   
       They do not want to throw it all away and start from scratch to include AI technology.  
