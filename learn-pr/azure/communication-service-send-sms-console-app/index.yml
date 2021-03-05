@@ -15,7 +15,7 @@ abstract: |
   - Create and configure an Azure Communication Services resource
   - Provision a phone number using the Azure portal
   - Send a text message from a console application
-
+hidden: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
