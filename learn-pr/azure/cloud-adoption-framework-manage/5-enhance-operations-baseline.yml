@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-manage.5-enhance-operations-baseline
+metadata:
+  title: Enhance operations baseline
+  description: Enhance operations baseline
+  ms.date: 02/22/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enhance operations baseline
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-enhance-operations-baseline.md)]

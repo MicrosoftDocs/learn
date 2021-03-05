@@ -6,7 +6,7 @@ Here, you will create a new API Management instance and then add a Product Detai
 
 ## Create functions
 
-In this exercise, you will add an Azure Functions app to Azure API Management. Later you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
+In this exercise, you will add an Azure Functions app to Azure API Management. Later, you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
 
 1. To clone the functions project, in the Cloud Shell on the right, run the following command.
 
@@ -76,7 +76,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     The **API Management service** page appears.
 
-1. Enter the following API Management values as specified in the following table, and then select **Create** to create the API Management instance. This may take several minutes.
+1. Enter the following API Management values for each setting, and then select **Create** to create the API Management instance. This may take several minutes.
 
     | Setting | Value |
     | --- | --- |

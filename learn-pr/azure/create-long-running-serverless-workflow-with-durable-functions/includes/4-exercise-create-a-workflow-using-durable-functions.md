@@ -88,7 +88,11 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
     1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
+<<<<<<< HEAD
 1. In the console window, run the following command.
+=======
+1. Switch back to **Azure**. In **Development Tools** on the left-hand menu, open **Console**, enter the following command:
+>>>>>>> 183054ec6cb80ee2cd232eaa37e39841ff7527cb
 
     ```bash
     npm install durable-functions
@@ -96,15 +100,19 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
     This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore.
 
-1. Wait until all packages have finished installing, then switch back to your browser window with the Azure portal.
+1. Wait until all packages have finished installing.
 
 1. Select **Overview**, then select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing.
 
 ## Create the client function for submitting a design proposal
 
+<<<<<<< HEAD
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
 1. In the Azure portal, under **Functions**, select **Functions**, and then select **Add**.
+=======
+1. On the left menu, under **Functions**, click **Functions**, and then click **+ Add**.
+>>>>>>> 183054ec6cb80ee2cd232eaa37e39841ff7527cb
 
 1. Select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request.
 

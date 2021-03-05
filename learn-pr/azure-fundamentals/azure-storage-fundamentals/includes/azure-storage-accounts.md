@@ -1,6 +1,6 @@
 The Chief Technology Officer (CTO) for your company, Tailwind Traders, has tasked your team with migrating all of your files to the cloud. Your team has chosen [Azure Storage](https://azure.microsoft.com/product-categories/storage?azure-portal=true), which is a service that you can use to store files, messages, tables, and other types of information. Clients such as websites, mobile apps, desktop applications, and many other types of custom solutions can read data from and write data to Azure Storage. Azure Storage is also used by infrastructure as a service virtual machines, and platform as a service cloud services.
 
-The following video introduces the different services that available with Azure Storage.
+The following video introduces the different services that should be available with Azure Storage.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAbS]
 
