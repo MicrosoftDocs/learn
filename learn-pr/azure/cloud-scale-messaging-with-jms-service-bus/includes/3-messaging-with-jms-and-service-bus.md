@@ -1,28 +1,5 @@
 While your Azure Service Bus namespace is being created, let's have a look at what Azure Service Bus is and what it's recommended use cases are. We will also look at what Java Message Service (JMS) 2.0 is.
 
-## What is Azure Service Bus?
-
-Microsoft Azure Service Bus is a fully managed enterprise message broker providing point-to-point semantics with message queues and publish-subscribe semantics with topics.
-
-Azure Service Bus is used to decouple applications and services from each other, providing the following benefits:
-
-  * Load-balancing work across competing workers
-  * Safely routing and transferring data and control across service and application boundaries
-  * Coordinating transactional work that requires a high-degree of reliability
-
-## Messaging scenarios
-
-Some common messaging scenarios are:
-
-   * *Messaging* Transfer business data, such as sales or purchase orders, journals, or inventory movements.
-   * *Decouple applications*. Improve reliability and scalability of applications and services. Producer and consumer don't have to be online or readily available at the same time. The load is leveled such that traffic spikes don't overtax a service.
-   * *Load Balancing*. Allow for multiple competing consumers to read from a queue at the same time, each safely obtaining exclusive ownership to specific messages.
-   * *Topics and subscriptions*. Enable 1:n relationships between publishers and subscribers, allowing subscribers to select particular messages from a published message stream.
-   * *Transactions*. Allows you to do several operations, all in the scope of an atomic transaction.
-   * *Message sessions*. Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
-
-If you're familiar with other message brokers like **Apache ActiveMQ**,**Rabbit MQ**, **TIBCO EMS**, and **IBM MQ**, Service Bus concepts are similar to what you know.
-
 ## What is Java Message Service (JMS)?
 
 Java Message service (JMS) is an application programming interface which acts as a messaging pseudo-standard for Java and Spring application deployments. It allows applications to perform the below operations:

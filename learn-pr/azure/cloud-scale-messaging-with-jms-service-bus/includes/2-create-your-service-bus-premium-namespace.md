@@ -8,6 +8,20 @@ Azure Service Bus is a fully managed enterprise message broker with message queu
    * Safely routing and transferring data and control across service and application boundaries
    * Coordinating transactional work that requires a high-degree of reliability
 
+## Messaging scenarios
+
+Some common messaging scenarios are:
+
+   * *Messaging* Transfer business data, such as sales or purchase orders, journals, or inventory movements.
+   * *Decouple applications*. Improve reliability and scalability of applications and services. Producer and consumer don't have to be online or readily available at the same time. The load is leveled such that traffic spikes don't overtax a service.
+   * *Load Balancing*. Allow for multiple competing consumers to read from a queue at the same time, each safely obtaining exclusive ownership to specific messages.
+   * *Topics and subscriptions*. Enable 1:n relationships between publishers and subscribers, allowing subscribers to select particular messages from a published message stream.
+   * *Transactions*. Allows you to do several operations, all in the scope of an atomic transaction.
+   * *Message sessions*. Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
+
+If you're familiar with other message brokers like **Apache ActiveMQ**,**Rabbit MQ**, **TIBCO EMS**, and **IBM MQ**, Service Bus concepts are similar to what you know.
+
+
 ## Create your Azure Service Bus Premium namespace using the Azure CLI
 
 You can use the Azure CLI to create and manage Azure resources. The CLI allows administrators and developers to run commands using a terminal or command-line promt (or script) instead of a web browser.
