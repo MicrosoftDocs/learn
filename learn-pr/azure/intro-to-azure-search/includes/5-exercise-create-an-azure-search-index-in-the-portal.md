@@ -73,23 +73,23 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
 1. On the **northwindfitness** search Overview page, select **Import data**.
 
-    ![Screenshot of the Azure portal, highlighting the Import data link](../media/5-exercise-screenshot-1.png)
+    ![Screenshot of the Azure portal, highlighting the Import data link.](../media/5-exercise-screenshot-1.png)
 
 1. On the **Import data** page, complete the following fields.
 
-    | Setting      | Value |
-    | ------------ | ----- |
+    | Setting | Value |
+    | --- | --- |
     | **Connect to your data** |
     | **Data Source** | From the dropdown, select **Azure Blob Storage** |
     | **Data source name** | Enter *videocatalog* |
     | **Parsing mode** | From the dropdown, select **JSON array** |
     | **Connection string** |  Select **Choose an existing connection** link |
 
-    ![Screenshot of the Azure portal, showing the Connect to your data page with the fields completed](../media/5-exercise-screenshot-2.png)
+    ![Screenshot of the Azure portal, showing the Connect to your data page with the fields completed.](../media/5-exercise-screenshot-2.png)
 
 1. On the **Storage accounts** page, select the video storage account.
 
-    ![Screenshot of the Azure portal, showing the storage container](../media/5-exercise-screenshot-4.png)
+    ![Screenshot of the Azure portal, showing the storage container.](../media/5-exercise-screenshot-4.png)
 
 1. Select the video storage account.
 
@@ -97,13 +97,13 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
 1. At the bottom of the page, select **Next: Add cognitive skills (Optional)**.
 
-    ![Screenshot of the Azure portal, showing the dialog shown while an index is being created](../media/5-exercise-screenshot-5.png)
+    ![Screenshot of the Azure portal, showing the dialog shown while an index is being created.](../media/5-exercise-screenshot-5.png)
 
     Azure Cognitive Search will read the contents of the JSON file, and create an index schema automatically.
 
 1. On the **Add cognitive search (Optional)** tab, select **Skip to: Customize target index**.
 
-    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-6.png)
+    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed.](../media/5-exercise-screenshot-6.png)
 
 1. The **Customize target index** tab enables you to change the automatically-generated index schema created by the Import data wizard. The fields are populated by the wizard after reading the file in blob storage. Use the following table to complete the named fields:
 
@@ -129,23 +129,23 @@ In this exercise, you'll use the Import data wizard to create an index, and impo
 
     When the process completes, the portal returns to the Search service overview.
 
-    ![Screenshot of the Azure portal, showing the overview](../media/5-exercise-screenshot-9.png)
+    ![Screenshot of the Azure portal, showing the overview.](../media/5-exercise-screenshot-9.png)
 
 1. Select the **Indexers** tab, and then select **azureblob-indexer**.
 
 1. At the top of **azureblob-indexer** page, select **Run**, and then select **Yes**.
 
-    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-10.png)
+    ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed.](../media/5-exercise-screenshot-10.png)
 
 1. The indexer should import the video catalog, and show that 19 documents have been imported into the index.
 
 ## Test the index
 
-![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
+![Screenshot of the Azure portal, showing the search service overview page.](../media/5-exercise-screenshot-7.png)
 
 1. Scroll to the search service overview, and from the top menu bar, select **Search explorer**.
 
-    ![Screenshot of the Azure portal, showing the Search explorer](../media/5-exercise-screenshot-8.png)
+    ![Screenshot of the Azure portal, showing the Search explorer.](../media/5-exercise-screenshot-8.png)
 
 1. In the **Query string** field, enter `search=*&$count=true`, and then select **Search**.
 
