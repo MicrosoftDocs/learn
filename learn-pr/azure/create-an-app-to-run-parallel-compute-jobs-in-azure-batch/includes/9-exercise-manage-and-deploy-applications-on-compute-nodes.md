@@ -62,7 +62,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
     }
     ```
 
-    The code above uses the batch client to create a job. The method assigns the given job id and information about the pool.
+    The code above uses the batch client to create a job. The method assigns the given job ID and information about the pool.
 
 ## Add a task
 
