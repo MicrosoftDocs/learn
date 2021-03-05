@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription
   - A GitHub account
-  - (Optionally) An Azure Devops Account 
+  - (Optionally) An Azure DevOps Account 
   - Basic knowledge of software development
   - Basic knowledge of managing and provisioning Azure resources
 iconUrl: /learn/achievements/deploy-java-azure-pipeline-terraform.svg

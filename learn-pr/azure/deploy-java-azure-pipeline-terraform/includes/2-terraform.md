@@ -75,4 +75,4 @@ You can also store state remotely, an approach that works better in a team envir
 
 ## Next steps
 
-In the next unit, we'll discuss using DevOps along with Terraform, to provision and deploy your applications.
+In the next unit, we'll discuss using either GitHub Actions or Azure DevOps along with Terraform, to provision and deploy your applications.
