@@ -72,7 +72,7 @@ If you want to use the Import data wizard in the Azure portal, you are restricte
 
 An Azure Cognitive Search index can be thought of as a container of searchable documents. In database terms, the index is a table in the database, and each document is a row. Tables have columns, and the columns can be thought of as equivalent to the fields in a document. Columns have data types, just as the fields do on the documents.
 
-![Example of how documents are stored in the search index, along with other options.](../media/what-is-an-index.png)
+![Diagram that illustrates how documents are stored in the search index with associated fields.](../media/what-is-an-index.png)
 
 Azure Cognitive Search needs to know how you'd like to search and display the fields in the documents, and you specify that by assigning attributes, or behaviors, to these fields.
 
