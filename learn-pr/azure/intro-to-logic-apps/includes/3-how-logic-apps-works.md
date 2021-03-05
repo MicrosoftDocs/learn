@@ -83,8 +83,6 @@ The following illustration shows the use of a *condition* statement in the socia
 
 The Logic Apps Designer is a graphical tool for creating your workflows. It gives you a design canvas that you use to add a trigger and actions to your app. For example, the social-media monitor app uses the **When a new tweet is posted** trigger, a _condition_ to branch, and the **Detect sentiment**, **Insert row**, and **Send an email** actions. The following screenshot shows the social-media monitor logic app displayed in the designer.
 
-![Screenshot showing an example logic app in the Logic Apps Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.](../media/social-media-complete-in-the-designer.png)
-
 :::image type="complex" source="../media/social-media-complete-in-the-designer.png" alt-text="Screenshot showing the social-media monitor app in the Logic Apps Designer.":::
 Screenshot showing an example logic app in the Logic Apps Designer. The app is displayed using rectangular areas to represent the starting trigger and each of the actions. Arrows connect the rectangles to show the execution flow through the app.
 :::image-end:::
