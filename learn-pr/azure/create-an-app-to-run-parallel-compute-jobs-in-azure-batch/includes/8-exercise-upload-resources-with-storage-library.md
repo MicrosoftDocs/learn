@@ -6,7 +6,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 ## Add the storage account connection details
 
-1. In the Cloud Shell, add the Azure Blob storage Nuget package.
+1. In the Cloud Shell, add the Azure Blob storage NuGet package.
 
     ```bash
     dotnet add package Microsoft.Azure.Storage.Blob
