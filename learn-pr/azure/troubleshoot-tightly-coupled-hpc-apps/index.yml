@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps
+metadata:
+  title: Troubleshoot tightly coupled HPC applications on HBv2, HC and HB series virtual machines
+  description: Troubleshoot underperforming tightly coupled HPC applications and runtime failures.
+  ms.date: 03/01/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot tightly coupled HPC applications on HBv2, HC and HB series virtual machines
+summary: Provide guidance on troubleshooting tightly coupled HPC application runtime failures and performance bottlenecks.
+abstract: |
+  In this module, you'll learn how to:
+  - Troubleshoot run-time failures for tightly coupled HPC applications.
+  - Troubleshoot underperforming tightly coupled HPC applications.
+prerequisites: |
+  - Basic knowledge of High Performance Computing (HPC) concepts.
+  - Familiarity with building and running tightly coupled HPC applications on Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- developer
+- student
+products:
+- azure
+units:
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.1-introduction
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.2-hpc-vm-health-checks
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.3-knowledge-check-selecting-health-check-tools
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.4-debugging-performance-bottlenecks
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.5-knowledge-check-troubleshoot-performance-bottlenecks
+- learn.azure.troubleshoot-tightly-coupled-hpc-apps.6-summary
+badge:
+  uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.badge
