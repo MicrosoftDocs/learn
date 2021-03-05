@@ -31,11 +31,11 @@ prerequisites: |
   - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
 
 units:
-- learn.azure.communication-service-send-sms-console-app.1-introduction
-- learn.azure.communication-service-send-sms-console-app.2-create-communication-services-account
-- learn.azure.communication-service-send-sms-console-app.3-send-sms
-- learn.azure.communication-service-send-sms-console-app.4-knowledge-check
-- learn.azure.communication-service-send-sms-console-app.5-summary
+- learn.azure.communication-service-send-sms-console-app.introduction
+- learn.azure.communication-service-send-sms-console-app.exercise-create-account
+- learn.azure.communication-service-send-sms-console-app.exercise-send
+- learn.azure.communication-service-send-sms-console-app.knowledge-check
+- learn.azure.communication-service-send-sms-console-app.summary
 
 badge:
   uid: learn.azure.communication-service-send-sms-console-app.badge

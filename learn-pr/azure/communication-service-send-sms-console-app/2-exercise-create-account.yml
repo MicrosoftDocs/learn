@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.communication-service-send-sms-console-app.2-create-communication-services-account
+uid: learn.azure.communication-service-send-sms-console-app.exercise-create-account
 title: Exercise - Create an Azure Communication Services account
 metadata:
   title: Exercise - Create an Azure Communication Services account
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-create-communication-services-account.md)]
+  [!include[](includes/2-exercise-create-account.md)]
