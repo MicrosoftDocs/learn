@@ -10,7 +10,7 @@ Azure Service Bus is a fully managed enterprise message broker with message queu
 
 ## Create your Azure Service Bus Premium namespace using the Azure CLI
 
-You can use the Azure CLI to create and manage Azure resources. The CLI allows adminsitrators and developers to run commands using a terminal or command-line promt (or script) instead of a web browser.
+You can use the Azure CLI to create and manage Azure resources. The CLI allows administrators and developers to run commands using a terminal or command-line promt (or script) instead of a web browser.
 
 To utilize the Azure CLI to create an Azure Service Bus Premium namespace use the below commands:
 
@@ -82,5 +82,5 @@ This command takes a few minutes to finish. You can continue to the next unit wh
 > [!IMPORTANT]
 > There is a nominal fee to use the Azure Service Bus Premium namespace - please review [Service Bus Pricing](https://azure.microsoft.com/pricing/details/service-bus/) for more details.
 >
-> Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources, by using the steps mentioned in the [Summary](7-summary.md#clean-up-resources).
+> Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources, by using the steps mentioned in the Summary unit at the end of this module.
 >
