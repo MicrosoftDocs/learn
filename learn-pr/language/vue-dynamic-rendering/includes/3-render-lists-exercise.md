@@ -7,8 +7,8 @@ You've been provided a starter repository for this module.
 1. Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code.
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-vue/
-    cd mslearn-vue/code/2-dynamic-rendering
+    git clone https://github.com/MicrosoftDocs/mslearn-vue-dynamic-render/
+    cd mslearn-vue-dynamic-render/2-dynamic-render
     code .
     ```
 
