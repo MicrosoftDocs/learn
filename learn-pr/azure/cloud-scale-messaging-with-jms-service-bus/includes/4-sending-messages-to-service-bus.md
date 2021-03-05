@@ -35,8 +35,6 @@ spring.jms.servicebus.connection-string=<xxxxx>
 spring.jms.servicebus.idle-timeout=20000
 ```
 
-[REPLACE WITH AZ CLI COMMAND]
-
 > [!NOTE]
 > Please be sure to insert custom values for the configuration.
 >
@@ -46,7 +44,7 @@ spring.jms.servicebus.idle-timeout=20000
 >    az servicebus namespace authorization-rule keys list \
 >    --name RootManageSharedAccessKey \
 >    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
->    --resource-group $AZ_RESOURCE_GROUP \
+>    --resource-group $AZ_RESOURCE_GROUP
 >   ```
 >
 
@@ -54,7 +52,7 @@ spring.jms.servicebus.idle-timeout=20000
 
 Next we will add the business logic to send messages to an Azure Service Bus queue.
 
-In the directory `src/main/java/com/example/demo`, create a `SendController` class that has the below content:
+In the directory `src/main/java/com/example/demo`, create a `SendController.java` file that has the below content:
 
 ```java
 package com.example.demo;
@@ -83,7 +81,7 @@ public class SendController {
 
 ## Run the application locally
 
-You can now run your Spring Boot application, either by running the executable DemoApplication within your IDE or by running the Spring Boot Maven plug-in:
+You can now run your Spring Boot application by running the below command:
 
 ```bash
 ./mvnw spring-boot:run

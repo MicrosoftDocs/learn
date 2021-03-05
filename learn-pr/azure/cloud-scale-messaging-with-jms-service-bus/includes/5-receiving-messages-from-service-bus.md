@@ -48,7 +48,7 @@ spring.jms.servicebus.idle-timeout=20000
 >    az servicebus namespace authorization-rule keys list \
 >    --name RootManageSharedAccessKey \
 >    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
->    --resource-group $AZ_RESOURCE_GROUP \
+>    --resource-group $AZ_RESOURCE_GROUP
 >   ```
 >
 
@@ -56,7 +56,7 @@ spring.jms.servicebus.idle-timeout=20000
 
 Next we will add business logic to receive messages from an Azure Service Bus queue.
 
-In the directory `src/main/java/com/example/demo`, create a `ReceiveController` class that has the below content:
+In the directory `src/main/java/com/example/demo`, create a `ReceiveController.java` file that has the below content:
 
 ```java
 package com.example.demo;
@@ -76,7 +76,7 @@ public class Receiver {
 
 ## Run the application locally
 
-You can now run your Spring Boot application, either by running the executable DemoApplication within your IDE or by running the Spring Boot Maven plug-in:
+You can now run your Spring Boot application by running the below command:
 
 ```bash
 ./mvnw spring-boot:run
@@ -94,7 +94,7 @@ This indicates that the Spring Boot application has successfully received messag
 
 ## See the entire workflow in action
 
-If your sender application (from [Unit 4](4-sending-messages-to-service-bus.md#run-the-application-locally)) is still running, you can click on the below link to send a message to the Azure Service Bus queue, 
+If your sender application (from [Unit 4](4-sending-messages-to-service-bus.md#run-the-application-locally)) is still running, you can click on the below link to send a message to the Azure Service Bus queue,
 
 ```html
 http://localhost:8080/messages?message=HelloOnceAgainAndAgain

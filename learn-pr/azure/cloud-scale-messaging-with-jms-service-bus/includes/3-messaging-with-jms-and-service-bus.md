@@ -21,25 +21,16 @@ Some common messaging scenarios are:
    * *Transactions*. Allows you to do several operations, all in the scope of an atomic transaction.
    * *Message sessions*. Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
 
-If you're familiar with other message brokers like **Apache ActiveMQ**,**Rabbit MQ**, and **IBM MQ**, Service Bus concepts are similar to what you know.
+If you're familiar with other message brokers like **Apache ActiveMQ**,**Rabbit MQ**, **TIBCO EMS**, and **IBM MQ**, Service Bus concepts are similar to what you know.
 
 ## What is Java Message Service (JMS)?
 
-Java Message service (JMS) is an application programming interface which acts as a messaging pseudo-standard for Java and Spring application deployments. It allows applications based on the Java Enterprise Edition to perform the below operations:
+Java Message service (JMS) is an application programming interface which acts as a messaging pseudo-standard for Java and Spring application deployments. It allows applications to perform the below operations:
 
    * Management operations - Create, Read, Update and Delete Queues, Topics and Subscriptions.
    * Data operations - Create, send, read, and receive/delete messages.
 
 JMS API enables applications to interface with enterprise messaging brokers (much like Azure Service Bus) in an asynchronous manner.
-
-## Use Azure Service Bus in Java
-
-For Java developers, Azure Service Bus offers multiple ways to perform management and data plane operations -
-
-   * Native SDKs - Java developers can leverage the native Azure Service Bus Java SDKs
-      * [azure-servicebus](https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus)
-      * [azure-messaging-servicebus](https://mvnrepository.com/artifact/com.azure/azure-messaging-servicebus)
-   * [Java Messaging Service (JMS) API](https://mvnrepository.com/artifact/com.microsoft.azure/azure-servicebus-jms) - Java developers can utilize the Azure Service Bus JMS maven library.
 
 ## Azure Service Bus with JMS and Spring Boot
 
