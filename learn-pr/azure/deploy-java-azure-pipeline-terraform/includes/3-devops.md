@@ -1,4 +1,6 @@
-In this unit, you'll learn about GitHub Actions and how they integrate with Terraform and Azure.
+In this unit, you'll learn about DevOps and how it integrates with Terraform and Azure.
+
+::: zone pivot="github-actions"
 
 ## About GitHub Actions
 
@@ -39,3 +41,5 @@ An Azure service principal is an identity that you create for use with applicati
 ## Next steps
 
 In the next unit, we'll set up a sample project and use GitHub Actions with Terraform to deploy it to Azure.
+
+::: zone-end
