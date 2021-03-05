@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned so far about Git.
-  ms.date: 02/16/2021
+  ms.date: 03/05/2021
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/8-summary.md)]
