@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-scale-messaging-with-jms-service-bus.2-create-your-service-bus-premium-namespace
-title: Create your Azure Service Bus Premium namespace
+title: Exercise - Create your Azure Service Bus Premium namespace
 metadata:
-  title: Create your Azure Service Bus Premium namespace
+  title: Exercise - Create your Azure Service Bus Premium namespace
   description: Use the CLI to create your Azure Service Bus Premium namespace
   ms.date: 1/29/2021
   author: axisc

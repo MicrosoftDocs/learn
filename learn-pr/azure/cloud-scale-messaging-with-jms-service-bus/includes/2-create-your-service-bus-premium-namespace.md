@@ -74,7 +74,7 @@ az servicebus namespace create \
     --resource-group $AZ_RESOURCE_GROUP \
     --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
     --sku Premium \
-    -- capacity 1
+    --capacity 1
 ```
 
 This command takes a few minutes to finish. You can continue to the next unit while it finishes.

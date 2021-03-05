@@ -113,7 +113,7 @@ You can proceed to view the messages in the Service Bus explorer in the Azure po
 
 The steps for this are as below :
 
-1. Visit the [https://portal.azure.com](https://portal.azure.com) in your browser.
+1. Browse to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 2. Navigate to the specific Service Bus namespace.
 3. In the left menu navigation, click on **Queues**, and then select the appropriate queue (i.e. test-queue-jms for this demo).
 4. Then click on **Service Bus explorer** on the left navigation menu.
@@ -121,5 +121,4 @@ The steps for this are as below :
 
 Following the above steps should give the below view.
 
-:::image type="content" source="../media/SB_Explorer_peek_view.png" alt-text="View of the Service Bus explorer peek experience." border="false":::
-_Figure : Service Bus explorer peek view._
+:::image type="content" source="../media/SB_Explorer_peek_view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/SB_Explorer_peek_view.png":::

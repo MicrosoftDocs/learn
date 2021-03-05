@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-scale-messaging-with-jms-service-bus.4-sending-messages-to-service-bus
-title: Sending messages to Azure Service Bus
+title: Exercise - Send messages to Azure Service Bus
 metadata:
-  title: Sending messages to Azure Service Bus
+  title: Exercise - Send messages to Azure Service Bus
   description: Write a Spring Boot app to send messages to Azure Service Bus
   ms.date: 1/29/2021
   author: axisc

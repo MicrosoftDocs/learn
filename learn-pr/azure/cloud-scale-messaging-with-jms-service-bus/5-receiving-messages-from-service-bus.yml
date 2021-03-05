@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-scale-messaging-with-jms-service-bus.5-receiving-messages-from-service-bus
-title: Receiving messages to Azure Service Bus
+title: Exercise - Receive messages from Azure Service Bus
 metadata:
-  title: Receiving messages to Azure Service Bus
+  title: Exercise - Receive messages from Azure Service Bus
   description: Write a Spring Boot app to receive messages to Azure Service Bus
   ms.date: 1/29/2021
   author: axisc
