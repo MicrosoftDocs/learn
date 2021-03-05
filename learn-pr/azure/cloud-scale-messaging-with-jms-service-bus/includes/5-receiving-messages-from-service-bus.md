@@ -2,7 +2,7 @@ You will now create a Spring Boot application that will receive messages from a 
 
 ## Create a Spring Boot project
 
-Just like we did with the sender Spring Boot application, we will utilize the  [Spring Initializr](https://start.spring.io/) to create a Spring Boot project:
+Let's open up a **new terminal window** and just like we did with the sender Spring Boot application, we will utilize the  [Spring Initializr](https://start.spring.io/) to create a Spring Boot project:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web -d baseDir=spring-receiver-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -

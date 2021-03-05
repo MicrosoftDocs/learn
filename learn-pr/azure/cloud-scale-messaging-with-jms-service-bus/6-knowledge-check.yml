@@ -20,14 +20,32 @@ quiz:
       - content: "An API that enables Java applications to communicate with enterprise messaging brokers."
         isCorrect: true
         explanation: "Java Message Service (JMS) 2.0 is an API specification that enables Java/Java EE/Spring applications to communicate with enterprise messaging brokers."
-      - content: "An Azure product"
+      - content: "An Azure product or service"
         isCorrect: false
         explanation: "JMS is an API defined and managed by the Java community and supported by Azure Service Bus."
-    - content: "What is Azure Service Bus?"
+    - content: "Where can you use JMS with Azure Service BUs?"
       choices:
-        - content: ""
+        - content: "POJOs"
           isCorrect: false
-          explanation: ""
-        - content: ""
+          explanation: "Not just POJOs. It can be used with Spring Boot and Java EE as well."
+        - content: "Spring Boot"
           isCorrect: false
-          explanation: ""
+          explanation: "Not just Spring Boot. It can be used with POJOs and Java EE as well."
+        - content: "Java EE"
+          isCorrect: false
+          explanation: "Not just Java EE. It can be used with POJOs and Spring Boot as well."
+        - content: "All of the above"
+          isCorrect: true
+          explanation: "The JMS API works with POJOs, Spring Boot, and Java EE."
+    - content: "What Spring Boot object do you need to send and/or receive a JMS message?"
+      choices:
+        - content: "Message"
+          isCorrect: false
+          explanation: "The Message object holds the actual message payload."
+        - content: "Session"
+          isCorrect: false
+          explanation: "The session object is a context used to create other JMS objects."
+        - content: "JmsTemplate"
+          isCorrect: true
+          explanation: "JmsTemplate is a helper object that simplifies the JMS functionality."
+
