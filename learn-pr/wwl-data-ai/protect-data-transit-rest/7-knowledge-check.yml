@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which security object is required in order to enable transparent data encryption?"
+    choices:
+    - content: "Credential"
+      isCorrect: false
+      explanation: "That's incorrect. A credential is not used with TDE."
+    - content: "Master Key"
+      isCorrect: true
+      explanation: "That's correct. A master key is required in order to encrypt databases."
+    - content: "Login"
+      isCorrect: false
+      explanation: "That's incorrect. A login is not required to enable TDE."
+  - content: "Which feature prevents members of the sysadmin role from viewing the values of data in a table?"
+    choices:
+    - content: "Always Encrypted"
+      isCorrect: true
+      explanation: "That's correct. Always Encrypted only stores encrypted data in the SQL Server so the data is never visible to a user of the database without the column key, held by the application."
+    - content: "Dynamic Data Masking"
+      isCorrect: false
+      explanation: "That's incorrect. Dynamic masking does not work with admin users, as they can see the data."
+    - content: "Transparent Data Encryption"
+      isCorrect: false
+      explanation: "That's incorrect. TDE does not encrypt the data in the tables."
+  - content: "Which is a valid location for Always Encrypted keys?"
+    choices:
+    - content: "Azure Key Vault"
+      isCorrect: true
+      explanation: "That's correct. Azure Key Vault allows for the storage of both Always Encrypted and TDE keys."
+    - content: "Azure Automation"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Automation does have credentials, but does not support key storage."
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Blob Storage does not support key storage."
+  - content: "Which feature provides a private IP address for an Azure SQL Database?"
+    choices:
+    - content: "Network Endpoints"
+      isCorrect: false
+      explanation: "That's incorrect. Network endpoints allow connectivity from a vNet, but do not provide a private IP address."
+    - content: "Private Link"
+      isCorrect: true
+      explanation: "That's correct. Private link provides a private IP address in an Azure vNet for an Azure SQL Database."
+    - content: "Database Firewall"
+      isCorrect: false
+      explanation: "That's incorrect. Database firewalls allow for public IP addresses to access your Azure SQL Database."
+  - content: "Which technique can be used to create database firewall rules in Azure SQL Database?"
+    choices:
+    - content: "Running a PowerShell script"
+      isCorrect: false
+      explanation: "That's incorrect. PowerShell only supports creating server level firewall rules."
+    - content: "Running a Azure CLI script"
+      isCorrect: false
+      explanation: "That's incorrect. CLI only supports creating server level firewall rules."
+    - content: "Executing a T-SQL statement"
+      isCorrect: true
+      explanation: "That's correct. This is the only way to create a database firewall rule."

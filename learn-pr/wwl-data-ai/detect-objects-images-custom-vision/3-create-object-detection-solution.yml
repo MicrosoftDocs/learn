@@ -3,13 +3,14 @@ uid: learn.wwl.detect-objects-images-custom-vision.exercise
 title: Exercise - Create an object detection solution
 metadata:
   title: Exercise - Create an object detection solution
-  description: "Get hands-on with the Custom Vision service and create an object detection solution"
-  ms.date: 06/07/2020
+  description: "Exercise - Create an object detection solution"
+  ms.date: 02/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88760
 durationInMinutes: 30
 content: |
   [!include[](includes/3-create-object-detection-solution.md)]

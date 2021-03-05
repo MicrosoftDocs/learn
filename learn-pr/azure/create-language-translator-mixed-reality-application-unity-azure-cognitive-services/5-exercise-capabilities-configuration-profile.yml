@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.5-exercise-capabilities-configuration-profile
+title: Exercise - Configure capabilities and the configuration profile
+metadata:
+  title: Exercise - Configure capabilities and the configuration profile
+  description: Configure a Unity project to use the Azure Cognitive Services Speech SDK for speech translation
+  ms.date: 10/06/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-capabilities-configuration-profile.md)]

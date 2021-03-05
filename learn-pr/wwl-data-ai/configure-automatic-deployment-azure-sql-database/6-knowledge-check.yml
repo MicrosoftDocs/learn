@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What language are Azure Resource Manager templates written in?"
+    choices:
+    - content: "JSON"
+      isCorrect: true
+      explanation: "That's correct. An Azure Resource Manager template is a JSON (JavaScript Object Notation) document that describes the resources that will be deployed within an Azure Resource Group."
+    - content: "C#"
+      isCorrect: false
+      explanation: "That's incorrect. While templates can be called by C# programs it is not their native format."
+    - content: "T-SQL"
+      isCorrect: false
+      explanation: "That's incorrect. Templates do not support T-SQL."
+  - content: "If you want to specify the region for a resource group deployment which option should you include in your template?"
+    choices:
+    - content: "Parameter"
+      isCorrect: true
+      explanation: "That's correct. Parameters are values that are provided to the template in order to customize resources at deployment time."
+    - content: "Variable"
+      isCorrect: false
+      explanation: "That's incorrect. Variables are values that are used as JSON fragments to simplify template language expressions."
+    - content: "Output"
+      isCorrect: false
+      explanation: "That's incorrect. Output passes information back to downstream processes."
+  - content: "Which element of a template allows for you to build dependencies into resources?"
+    choices:
+    - content: "dependsOn"
+      isCorrect: true
+      explanation: "That's correct. DependsOn allows you to build a dependency structure into your template."
+    - content: "concat"
+      isCorrect: false
+      explanation: "That's incorrect. Concat simply concatenates values."
+    - content: "apiVersion"
+      isCorrect: false
+      explanation: "That's incorrect. ApiVersion specifics the version of the API to deploy a resource, but not dependencies."

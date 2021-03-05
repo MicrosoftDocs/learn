@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.optimize-common-queries-with-result-set-caching
+title: Optimize common queries with result-set caching
+metadata:
+  title: Optimize common queries with result-set caching
+  description: "Optimize common queries with result-set caching"
+  ms.date: 02/07/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-optimize-common-queries.md)]

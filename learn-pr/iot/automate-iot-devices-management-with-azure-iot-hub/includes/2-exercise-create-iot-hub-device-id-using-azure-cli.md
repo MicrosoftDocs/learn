@@ -7,15 +7,15 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     > [!NOTE]
     > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
     
-    ```Azure CLI
-    az extension add --name azure-cli-iot-ext
+    ```azurecli
+    az extension add --name azure-iot
     ```
 
 1. Run this command to create a new IoT Hub instance
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL. You can use a name like *cheesecavesmanager-anID*
 
-    ```Azure CLI
+    ```azurecli
     az iot hub create --name {your iot hub name} --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
     ```
     
@@ -26,13 +26,13 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 
 1. Now that the hub is created, let's add a new device ID to be used to securely connect our device simulator. Run the following command:
 
-    ```Azure CLI
+    ```azurecli
     az iot hub device-identity create --hub-name {your iot hub name} --device-id {your device id}
     ```
 
 2. Let's get the connection string we will need for our device simulator. Run the following command and write down the output
 
-    ```Azure CLI
+    ```azurecli
     az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id {your device id}
     ```
 

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-namespaces-organize-code.5-design-considerations
+title: Design considerations
+metadata:
+  title: Design considerations
+  description: Learn how to identify key differences between namespaces and modules.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-design-considerations.md)]

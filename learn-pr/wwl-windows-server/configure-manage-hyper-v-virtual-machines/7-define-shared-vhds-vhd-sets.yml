@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-hyper-v-virtual-machines.define-shared-vhds-vhd-sets
+title: Define shared VHDs and VHD Sets
+metadata:
+  title: Define shared VHDs and VHD Sets
+  description: "Define shared VHDs and VHD Sets"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-define-shared-vhds-vhd-sets.md)]

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.microservices-devops-aspnet-core
+metadata:
+  title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
+  description: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
+  ms.date: 09/16/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
+summary: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
+abstract: |
+  In this module, you will:
+  - Authenticate GitHub Actions to a container registry.
+  - Securely store sensitive information used by the GitHub Actions.
+  - Implement a GitHub Action to build the container image for a microservice.
+  - Modify and commit the microservice code to trigger a build.
+  - Implement a GitHub Action to deploy a container to a Kubernetes cluster.
+  - Modify and commit a Helm chart to trigger a deployment.
+  - Revert the microservice to a previous deployment.  
+prerequisites: |
+  - Conceptual knowledge of DevOps practices at the beginner level
+  - Conceptual knowledge of containers and AKS at the beginner level
+  - Access to an Azure subscription with **Owner** privilege
+  - Access to a GitHub account
+levels:
+  - intermediate
+roles:
+  - developer
+  - devops-engineer
+  - solution-architect
+products:
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-container-registry
+  - azure-kubernetes-service
+  - github
+units:
+  - learn.microservices-devops-aspnet-core.1-introduction
+  - learn.microservices-devops-aspnet-core.2-setup-environment
+  - learn.microservices-devops-aspnet-core.3-permissions-secrets
+  - learn.microservices-devops-aspnet-core.4-build-github-action
+  - learn.microservices-devops-aspnet-core.5-deploy-github-action
+  - learn.microservices-devops-aspnet-core.6-knowledge-check
+  - learn.microservices-devops-aspnet-core.7-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
+badge:
+  uid: learn.microservices-devops-aspnet-core.badge

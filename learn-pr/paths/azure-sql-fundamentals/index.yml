@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.azure-sql-fundamentals
+metadata:
+  title: Azure SQL fundamentals
+  description: Learn how to deploy, secure, monitor and troubleshoot Azure SQL database.
+  brand: azure
+  ms.date: 08/05/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure SQL fundamentals
+summary: "Learn how to translate your existing SQL Server expertise to Azure SQL including Azure SQL Database and Azure SQL managed instance. After completing this learning path, you will have a foundational knowledge of what to use when, as well as how to configure, secure, monitor, and troubleshoot Azure SQL."
+prerequisites: |
+  - Experience working with, maintaining, and developing with SQL Server
+  - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-fundamentals.svg
+levels: 
+- beginner
+roles: 
+- database-administrator
+- administrator
+- solution-architect
+products: 
+- azure
+- azure-sql-database
+modules:
+- learn.azure-sql-intro
+- learn.azure-sql-deploy-configure
+- learn.azure-sql-secure-data
+- learn.azure-sql-performance
+- learn.azure-sql-high-availability
+- learn.azure-sql-case-studies
+trophy:
+  uid: learn.azure-sql-fundamentals.trophy

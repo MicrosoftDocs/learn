@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-arc.2-describe-azure-arc
+metadata:
+  title: Describe Azure Arc
+  description: Describe Azure Arc
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Describe Azure Arc
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-azure-arc.md)]

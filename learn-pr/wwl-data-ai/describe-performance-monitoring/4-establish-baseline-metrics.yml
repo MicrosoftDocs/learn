@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.establish-baseline-metrics
+title: Establish baseline metrics
+metadata:
+  title: Establish baseline metrics
+  description: "Establish baseline metrics"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-establish-baseline-metrics.md)]

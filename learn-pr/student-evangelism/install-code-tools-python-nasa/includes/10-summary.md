@@ -1,0 +1,1 @@
+In this module, you learned about programming languages and how developers use specific tools, such as Visual Studio Code, to edit code. You also installed some of the tools you need to start coding and even programmed a computer to print out words you told it to.

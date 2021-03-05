@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-causes-of-performance-issues.describe-data-file-fragmentation
+title: Describe data file fragmentation
+metadata:
+  title: Describe data file fragmentation
+  description: "Describe data file fragmentation"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-describe-data-file-fragmentation.md)]

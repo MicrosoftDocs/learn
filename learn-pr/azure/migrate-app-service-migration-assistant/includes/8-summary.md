@@ -1,24 +1,24 @@
-Our goal in this module was to move an ASP.NET web application from our company's hosting environment to Azure App Service.
+Our goal in this module was to move an ASP.NET web application from a company's hosting environment to Azure App Service.
 
-Using a simulated environment, you used the Azure App Service Migration Assistant to first perform an assessment of our application to check for dependencies on lower-level services available from Windows Server and Internet Information Services. The Azure App Service Migration Assistant determined that there was nothing preventing you from migrating the application  to Azure App Service, so you supplied the Migration Assistant with details like the target Resource Group, the URL, and so on, and it performed the migration for you.
+Using a simulated environment, you used the Azure App Service Migration Assistant to first perform an assessment of an application to check for dependencies on lower-level services available from Windows Server and Internet Information Services (IIS). The Migration Assistant determined that nothing was preventing you from migrating the application to Azure App Service. So you supplied the Migration Assistant with details like the target resource group and the URL, and it performed the migration for you.
 
-Without the Azure App Service Migration Assistant, you may have needed to manually review the web application's source code and compare against a list of known issues that might prevent a legacy ASP.NET web application from being deployed to Azure App Service.  This entire process could take days or weeks, depending on your familiarity with the code base, Windows Server, Internet Information Services, and more.
+Without the Migration Assistant, you might have needed to manually review the web application's source code and compare against a list of known issues that might prevent an ASP.NET web application from being deployed to Azure App Service. This entire process might take days or weeks, depending on your familiarity with the code base, Windows Server, IIS, and more.
 
-The Azure App Service Migration Wizard provides dramatic business impact, speeding your efforts in moving to the cloud.
+The Azure App Service Migration Assistant provides dramatic business impact, speeding your efforts in moving to the cloud.
 
 [!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Next steps
 
-If you are using this as a guide to perform your own web application migration, you will definitely want to think about those steps we did not perform in the exercise, namely:
+If you're using this as a guide to perform your own web application migration, you'll want to think about the following steps that we didn't perform in the exercise:
 
-- Manually moving application settings and connection strings in your web.config file to App Service Application Settings.
-- Migrating data from an on-premises SQL server to an Azure SQL database.
-- Setting up an SSL certificate.
-- Setting up custom domain names.
-- Setting up permissions in Azure Active Directory.
+- Manually moving application settings and connection strings in your web.config file to App Service application settings
+- Migrating data from an on-premises SQL Server database to an Azure SQL database
+- Setting up an SSL certificate
+- Setting up custom domain names
+- Setting up permissions in Azure Active Directory
 
-If your next step is to migrate your data from an on-premises SQL Server to an Azure SQL database, you may find the following module useful:
+If your next step is to migrate your data from an on-premises SQL Server database to an Azure SQL database, you might find the following module useful:
 
 [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/)
 

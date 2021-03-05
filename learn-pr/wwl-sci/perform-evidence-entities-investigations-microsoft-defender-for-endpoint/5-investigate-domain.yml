@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint.investigate-domain
+title: Investigate a domain
+metadata:
+  title: Investigate a domain
+  description: "Investigate a domain"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-investigate-domain.md)]

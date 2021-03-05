@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
+metadata:
+  title: Describe Azure Arc enabled Kubernetes
+  description: Describe Azure Arc enabled Kubernetes
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Describe Azure Arc enabled Kubernetes
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-describe-azure-arc-enabled-kubernetes.md)]

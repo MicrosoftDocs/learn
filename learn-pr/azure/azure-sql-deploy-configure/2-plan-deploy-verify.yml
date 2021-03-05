@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-deploy-configure.2-plan-deploy-verify
+metadata:
+  title: Plan, deploy, and verify Azure SQL
+  description: Plan, deploy, and verify Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan, deploy, and verify Azure SQL
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-deploy-verify.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Which of the following options have limits depending on your deployment option and service tier?"
+      choices:
+      - content: "Size of tempdb"
+        isCorrect: false
+        explanation: "This is correct, but do other options face resource limits?"
+      - content: "Max log size"
+        isCorrect: false
+        explanation: "This is correct, but do other options face resource limits?"
+      - content: "Backup retention"
+        isCorrect: false
+        explanation: "This is correct, but do other options face resource limits?"
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Resource limits include memory, max log size, size of tempdb, max concurrent workers, and backup retention."
+    - content: "For verifying deployments, some new queries are specific to Azure SQL Database and Azure SQL Managed Instance. Which of the following queries are available only for Azure SQL?"
+      choices:
+      - content: "SELECT * FROM sys.dm_os_schedulers"
+        isCorrect: false
+        explanation: "This is supported in all Azure SQL and SQL Server options."
+      - content: "SELECT * FROM sys.dm_user_db_resource_governance"
+        isCorrect: true
+        explanation: "This query will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool."
+      - content: "SELECT * FROM sys.dm_exec_requests"
+        isCorrect: false
+        explanation: "This is supported in all Azure SQL and SQL Server options."
+      - content: "SELECT * FROM sys.dm_os_process_memory"
+        isCorrect: false
+        explanation: "This is not supported in Azure SQL Database."

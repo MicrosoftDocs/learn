@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.secret-message.ceasar-cipher-part-1
+title: 'Part 1: Decode one letter at a time with a Caesar cipher'
+metadata:
+  title: 'Part 1: Decode one letter at a time with a Caesar cipher'
+  description: Build a simple Caesar cipher in Python and learn how to decode one letter in a word at time.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-ceasar-cipher-part-1.md)]

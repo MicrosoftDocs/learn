@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.protect-against-security-threats-azure.1-introduction
+title: Introduction
+metadata:
+  description: Introduction
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

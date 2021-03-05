@@ -4,7 +4,7 @@ As we continue to think about automating our proposal approval process, we need 
 
 Escalation steps are useful to the business, as they move along a task when a deadline has been reached. They ensure tasks are completed, and not forgotten. An escalation step could involve sending out reminders or even reassigning a task to someone higher up the managerial hierarchy.
 
-In this unit, you'll design a workflow based on Durable Functions. In the next exercise, you'll apply this knowledge to create an app with Azure Durable Functions.
+In this unit, you'll design an approval process workflow based on Durable Functions. In the next exercise, you'll apply this knowledge to create an app with Azure Durable Functions.
 
 ## Description of the design approval process
 

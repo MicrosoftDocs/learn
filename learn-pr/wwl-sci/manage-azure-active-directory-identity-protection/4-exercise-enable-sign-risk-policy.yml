@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-ad-identity-protection.enable-sign-in-risk-policy
+title: Exercise enable sign-in risk policy
+metadata:
+  title: Exercise enable sign-in risk policy
+  description: "Exercise enable sign-in risk policy"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-enable-sign-risk-policy.md)]

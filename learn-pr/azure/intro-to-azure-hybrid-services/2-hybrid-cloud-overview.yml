@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-hybrid-services.2-hybrid-cloud-overview
+metadata:
+  title: What is a hybrid cloud?
+  description: What is a hybrid cloud?
+  ms.date: 09/21/2020
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: What is a hybrid cloud?
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-hybrid-cloud-overview.md)]

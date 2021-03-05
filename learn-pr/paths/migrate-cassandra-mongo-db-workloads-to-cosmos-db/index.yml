@@ -2,10 +2,10 @@
 uid: learn.wwl.migrating-cassandra-mongo-db-workloads-cosmos-db
 metadata:
   title: Migrating Cassandra and MongoDB workloads to Cosmos DB
-  description: The focus of this learning path is to migrate MongoDB and Cassandra databases to Azure Cosmos DB.
+  description: Migrating Cassandra and MongoDB workloads to Cosmos DB
+  ms.date: 02/02/2021
   author: wwlpublish
-  ms.date: 1/28/2020
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrating Cassandra and MongoDB workloads to Cosmos DB

@@ -39,7 +39,7 @@ summary: |
     - Learn the process of implementing models to edge devices using containers
     - Explore the use of DevOps for edge devices
 
-  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***
+  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
 
 prerequisites: None
 iconUrl: /learn/achievements/ai-edge-engineer.svg
@@ -57,7 +57,7 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-resource-manager
 - azure-virtual-machines
 modules:
@@ -73,5 +73,7 @@ modules:
 - learn.oxford.implement-cicd-iot-edge
 - learn.oxford.intro-azure-sphere
 - learn.oxford.image-classification-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

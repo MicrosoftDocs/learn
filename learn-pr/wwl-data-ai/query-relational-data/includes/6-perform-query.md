@@ -66,6 +66,9 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     > [!div class="mx-imgBorder"]
     >![The SQL Database Query Editor](../media/6-simple-ui-query.png)
 
+> [!TIP]
+> Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7,  disable any VPN connections or add the additional IP address manually from any errors displayed.
+
 ## Run queries against the database
 
 1. Copy the following SQL statement into the editor. Select **Run**, to check everything is working. You should see a list of four inventory items
@@ -111,7 +114,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
     
     > [!div class="mx-imgBorder"]
-    >![Run an ORDER query in SQL Database Query Editor](../media/6-select-join-sql-databases.png)
+    >![Run a JOIN query in SQL Database Query Editor](../media/6-select-join-sql-databases.png)
 
 1. Change the query to find the names of all customers who have ordered oranges.
 
@@ -151,7 +154,6 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```sql
     SELECT SUM(CustomerOrder.Quantity) 
     FROM CustomerOrder
-    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
     ```
 
     The answer should be 29.

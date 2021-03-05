@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-post-installation-configuration-of-windows-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which component in DSC is responsible for applying the desired configuration to the target computer?"
+    choices:
+    - content: "Configurations"
+      isCorrect: false
+      explanation: "That's incorrect. Configurations are declarative PowerShell scripts that configure and define your resources."
+    - content: "LCM"
+      isCorrect: true
+      explanation: "That's correct. The LCM is the engine that DSC uses to apply the configurations."
+    - content: "Resources"
+      isCorrect: false
+      explanation: "That's incorrect. Resources contain the code that defines and applies the desired configuration state of the resource."
+  - content: "An administrator at Contoso is using answer files to configure server settings during deployment. In which section of the answer file should the administrator define the Windows Server roles and features that should be deployed?"
+    choices:
+    - content: "Components"
+      isCorrect: false
+      explanation: "That's incorrect. This section contains all the component settings that your answer file applies during setup, and configures the core settings in the operating system."
+    - content: "Packages"
+      isCorrect: true
+      explanation: "That's correct. This section defines the packages that are used to distribute updates, service packs, and language packs, and also Windows roles and features."
+  - content: "When using Windows Admin Center, when might an administrator choose to configure trusted hosts?"
+    choices:
+    - content: "When the Windows Admin Center workstation is not in the same AD DS forest as the resources it manages."
+      isCorrect: true
+      explanation: "That's correct. When you connect to a remote computer, you must authenticate to that computer. Where Windows Admin Center isn't in the same AD DS forest as target hosts, you must configure the target computers as trusted hosts."
+    - content: "When the Windows Admin Center workstation is in the same AD DS forest as the resources it manages."
+      isCorrect: false
+      explanation: "That's incorrect. If Windows Admin Center and its managed resources are in the same AD DS forest, Kerberos is used for authentication, and trusted hosts are not configured."
+    - content: "In all circumstances, the administrator must configure trusted hosts."
+      isCorrect: false
+      explanation: "That's incorrect. You only configure trusted hosts in some situations."

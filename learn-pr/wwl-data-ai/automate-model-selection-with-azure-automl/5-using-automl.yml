@@ -3,8 +3,8 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl.using-automl
 title: Exercise - Using automated machine learning
 metadata:
   title: Exercise - Using automated machine learning
-  description: "Use this hands-on exercise to learn how to run an automated machine learning experiment."
-  ms.date: 06/07/2020
+  description: "Exercise - Using automated machine learning"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

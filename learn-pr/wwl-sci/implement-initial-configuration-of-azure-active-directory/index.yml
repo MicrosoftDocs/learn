@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
+metadata:
+  title: Implement initial configuration of Azure Active Directory
+  description: "Implement initial configuration of Azure Active Directory"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement initial configuration of Azure Active Directory
+summary: Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use.  This module explores how to build and configure an Azure AD system.
+abstract: |
+  By the end of this module, you will be able to:
+  - Implement initial configuration of Azure Active Directory
+  - Create, configure, and manage identities
+  - Implement and manage external identities (excluding B2C scenarios)
+  - Implement and manage hybrid identity
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+- security-engineer
+products:
+- azure
+- azure-active-directory-domain
+units:
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.introduction
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-manage-users-roles
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-custom-domains
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-device-registration
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-delegation-by-using-administrative-units
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-tenant-wide-setting
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-setting-tenant-wide-properties
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
+- learn.wwl.implement-initial-configuration-of-azure-active-directory.summary-resources
+badge:
+  uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.badge

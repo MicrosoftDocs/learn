@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.benefits-microsoft-endpoint-manager
+metadata:
+  title: Benefits of Microsoft Endpoint Manager
+  description: In this module, you'll learn about Microsoft Endpoint Manager benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment. 
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Benefits of Microsoft Endpoint Manager
+summary: Learn about Microsoft Endpoint Manager benefits, including how it increases security and productivity, provides flexibility, and maximizes your investment.
+abstract: | 
+  In this module, you will:
+  - Learn about intelligent and unified endpoint security.
+  - Learn about flexible and unified endpoint management.
+  - Learn about protecting data without device enrollment.
+  - Understand how Microsoft Endpoint Manager increases your end users' productivity.
+  - Learn about the benefits of co-management.  
+  - Learn how Microsoft Endpoint Manager helps you maximize your return on investment.  
+prerequisites: None
+iconUrl: /learn/achievements/benefits-microsoft-endpoint-manager.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+- m365
+units:
+- learn.benefits-microsoft-endpoint-manager.1-introduction
+- learn.benefits-microsoft-endpoint-manager.2-secure-and-intelligent
+- learn.benefits-microsoft-endpoint-manager.3-streamlined-and-flexible
+- learn.benefits-microsoft-endpoint-manager.4-protect-without-enrollment
+- learn.benefits-microsoft-endpoint-manager.5-increases-productivity
+- learn.benefits-microsoft-endpoint-manager.6-benefits-of-co-management
+- learn.benefits-microsoft-endpoint-manager.7-maximizes-investment
+- learn.benefits-microsoft-endpoint-manager.8-knowledge-check
+- learn.benefits-microsoft-endpoint-manager.9-summary
+badge:
+  uid: learn.benefits-microsoft-endpoint-manager.badge

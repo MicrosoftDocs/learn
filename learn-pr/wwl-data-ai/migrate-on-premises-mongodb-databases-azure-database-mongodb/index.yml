@@ -2,14 +2,14 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb
 metadata:
   title: Migrate on-premises MongoDB databases to Cosmos DB
-  description: "Migrate MongoDB workloads to Cosmos DB"
-  ms.date: 01/31/2020
+  description: "Migrate on-premises MongoDB databases to Cosmos DB"
+  ms.date: 02/03/2021
   author: wwlpublish
-  ms.author: v-gea
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate on-premises MongoDB databases to Cosmos DB
-summary: Learners will be able to demonstrate the benefits and processes for moving a MongoDB database to the Azure Cosmos DB for MongoDB API.
+summary: You will learn to demonstrate the benefits and processes for moving a MongoDB database to the Azure Cosmos DB for MongoDB API.
 abstract: |
   By the end of this module, you'll be able to:
   - List the benefits of migrating a MongoDB database to Azure Cosmos DB.
@@ -32,6 +32,7 @@ units:
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-migration-planning
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-data-migration
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-application-migration
+- learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.exercise-migrate-mongodb-workloads-cosmosdb
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.knowledge-check
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.summary
 badge:

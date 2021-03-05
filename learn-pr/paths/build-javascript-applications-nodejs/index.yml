@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.build-javascript-applications-nodejs
+metadata:
+  title: Build JavaScript applications with Node.js
+  description: Node.js provides a large set of built-in APIs that help you build various types of applications, command-line apps, web apps, servers, and more. It also offers testing and debugging capabilities and a rich ecosystem of third-party packages that you can easily add to your application. Use Node.js with JavaScript/TypeScript to create all kind of applications using Visual Studio Code.
+  brand: azure
+  ms.date: 07/17/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build JavaScript applications with Node.js
+summary: |
+  Node.js provides a large set of built-in APIs that help you build various types of applications, command-line apps, web apps, and more. It also offers testing and debugging capabilities and a rich ecosystem of third-party packages that you can easily add to your application.
+prerequisites: None
+iconUrl: /learn/achievements/build-javascript-applications-nodejs.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.azure.intro-to-nodejs
+- learn.azure.create-nodejs-project-dependencies
+- learn.azure.debug-nodejs
+- learn.azure.nodejs-files
+- learn.azure.build-web-api-nodejs-express
+trophy:
+  uid: learn.build-javascript-applications-nodejs.trophy

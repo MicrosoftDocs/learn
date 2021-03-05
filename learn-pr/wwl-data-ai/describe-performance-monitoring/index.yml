@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.describe-performance-monitoring
+metadata:
+  title: Describe performance monitoring
+  description: "Describe performance monitoring"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe performance monitoring
+summary: Compare Azure and on-premises tools for monitoring and measuring performance. Determine critical metrics. Understand the purpose of a baseline for comparative analysis.
+abstract: |
+  After completing this module, you will be able to:
+  - Review potential performance issues
+  - Identify critical Azure metrics
+  - Learn how to collect metrics for an established baseline
+  - Understand Azure SQL Database Intelligent Insights
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal.
+  - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
+iconUrl: /learn/achievements/describe-performance-monitoring.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.describe-performance-monitoring.introduction
+- learn.wwl.describe-performance-monitoring.tools
+- learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
+- learn.wwl.describe-performance-monitoring.establish-baseline-metrics
+- learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
+- learn.wwl.describe-performance-monitoring.exercise
+- learn.wwl.describe-performance-monitoring.knowledge-check
+- learn.wwl.describe-performance-monitoring.summary
+badge:
+  uid: learn.wwl.describe-performance-monitoring.badge

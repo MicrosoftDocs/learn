@@ -3,7 +3,7 @@ uid: learn.oxford.image-classification-azure-sphere.exercise-setup-display-outpu
 title: Exercise - Set up display output
 metadata:
   title: Exercise - Set up display output
-  description: In this section, we help the learner to set up terminal emulator to display output from the app
+  description: In this section, we help the learner to set up a terminal emulator to display output from the app.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

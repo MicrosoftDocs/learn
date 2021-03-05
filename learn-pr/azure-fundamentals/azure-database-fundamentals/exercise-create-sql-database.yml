@@ -1,0 +1,22 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-database-fundamentals.exercise-create-sql-database
+title: Exercise - Create a SQL database
+metadata:
+  title: Exercise - Create a SQL database
+  description: In this unit, you'll create an Azure SQL database by using the Azure portal.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/exercise-create-sql-database.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Sql/servers"
+  hint: "Make sure you have followed all the steps to create your SQL database."

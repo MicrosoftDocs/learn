@@ -21,11 +21,11 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     You see a number of popular and recently updated templates. These templates work with both Azure resources and popular software packages.
 
-    ![A portion of the Azure Quickstart template gallery web page.](../../media/3-gallery-homepage.png)
+    ![Screenshot of a portion of the Azure Quickstart template gallery web page.](../../media/3-gallery-homepage.png)
 
 1. Let's say you come across the [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true) template.
 
-    ![The gallery page for a Windows VM template](../../media/3-gallery-page-windows.png)
+    ![Screenshot of the gallery page for a Windows VM template.](../../media/3-gallery-page-windows.png)
 
     The name sounds like exactly what you need. But let's take a closer look to see what this template accomplishes.
 
@@ -35,7 +35,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     You see this.
 
-    :::image type="content" source="../../media/3-github-page-windows.png" alt-text="The GitHub README for the Resource Manager template." loc-scope="third-party"::: <!-- GitHub, no-loc -->
+    :::image type="content" source="../../media/3-github-page-windows.png" alt-text="Screenshot of the GitHub README for the Resource Manager template." loc-scope="third-party"::: <!-- GitHub, no-loc -->
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal, just like you saw on the gallery page.
 
@@ -43,24 +43,24 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     You see the resources that make up the deployment, including a VM, a storage account, and network resources.
 
-    You can use your mouse to arrange the resources. You can also use your mouse's scroll wheel to zoom in an out.
+    You can use your mouse to arrange the resources. You can also use your mouse's scroll wheel to zoom in and out.
 
-    :::image type="content" source="../../media/3-armviz-windows.png" alt-text="The Azure Resource Manager Visualizer showing Azure resources visually." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
+    :::image type="content" source="../../media/3-armviz-windows.png" alt-text="Screenshot of the Azure Resource Manager Visualizer that shows Azure resources visually." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
 
-1. Click on the **Virtual Machine** resource labeled **SimpleWinVM**.
+1. Click on the **Virtual Machine** resource labeled **simple-vm**.
 
     You see the source code that defines the VM resource.
 
-    :::image type="content" source="../../media/3-armviz-vm-windows.png" alt-text="The Azure Resource Manager Visualizer showing the template's source code." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
+    :::image type="content" source="../../media/3-armviz-vm-windows.png" alt-text="Screenshot of the Azure Resource Manager Visualizer that shows the template's source code." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
 
     You'll have more time to inspect the source code in just a bit. But for now, take a moment to review it briefly.
 
     You see that:
 
     * The resource's type is `Microsoft.Compute/virtualMachines`.
-    * It's location, or Azure region, comes from the template parameter named `location`.
+    * Its location, or Azure region, comes from the template parameter named `location`.
     * The VM's size comes from the template variable `vmSize`.
-    * The computer name is read from a template variable and the username and password for the VM are read from template parameters.
+    * The computer name, username, and password for the VM are read from template parameters.
 
 In practice, you might review the **README.md** file on GitHub and further inspect the source code to see whether this template suits your needs.
 

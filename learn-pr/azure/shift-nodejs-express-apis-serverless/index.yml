@@ -2,7 +2,7 @@
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
   title: Refactor Node.js and Express APIs to serverless APIs with Azure Functions
-  description: Refactor Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
+  description: Refactor Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions. Create a new Azure Functions application with TypeScript/JavaScript using Visual Studio Code.
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa

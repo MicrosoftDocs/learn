@@ -2,15 +2,13 @@
 uid: learn.iot.create-your-first-iot-central-app.create-a-device-set-dashboard
 metadata:
   title: Exercise - Create multiple devices
-  description: An optional unit, to create and test multiple devices.
+  description: In this optional unit, create and test multiple devices.
   ms.date: 10/17/2019
-  author: olivierbloch
-  ms.author: Olivier.Bloch
+  author: PeterTurcan
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: vs-vscode-language
 title: Create multiple devices
-# azureSandbox: true
 durationInMinutes: 2
 content: |
   [!include[](includes/8-create-device-set-dashboard.md)]

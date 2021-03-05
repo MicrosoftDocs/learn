@@ -1,8 +1,6 @@
 
 
-Another DevOps capability is Continuous Integration.
-
-![Diagram shows the eight DevOps capabilities. It lists example practices for Continuous Integration: Behavior-driven development (BDD), Test-driven development(TDD), Microservices & container development, Multi-repo vs. Mono repo, Unit test/code coverage, Version control, GIT pull request, Trunk-based policies, Security static code scan, CredScan, OSS component compliance, Build pipeline – parallel or serial.](../media/3-3-cont-integration.png)
+Continuous Integration is one of the eight capabilities in the DevOps taxonomy.
 
 ### Discover why Continuous Integration is necessary
 
@@ -26,11 +24,14 @@ When done right, this approach leads to reduced integration problems by catching
 
 The **goals** of Continuous Integration are to:
 
-- Harness collaboration
+- Harness [collaboration](https://docs.microsoft.com/learn/modules/characterize-devops-continous-collaboration-improvement/2-explore-continuous-collaboration)
 - Enable parallel development
 - Minimize integration debt
-- Act as a quality gate
-- Automate everything!
+- Act as a [quality gate](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/3-explore-continuous-quality)
+- [Automate everything!](https://docs.microsoft.com/learn/modules/explain-devops-continous-delivery-quality/2-use-continuous-delivery-release-faster)
+
+> [!NOTE]
+> Note how the goals of Continuous Integration include Continuous Collaboration, Continuous Delivery and Continuous Quality!
 
 But what happens when there’s no Continuous Integration? A lack of continuous integration efforts can often result in:
 

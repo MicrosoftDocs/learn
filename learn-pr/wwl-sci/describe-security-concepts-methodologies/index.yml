@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.describe-security-concepts-methodologies
+metadata:
+  title: Describe security concepts and methodologies
+  description: "Describe security concepts and methodologies"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe security concepts and methodologies
+summary: Learn about the common security threats and way to protect though the defense in depth model. Also, learn about security concepts and methodologies that are foundational to Microsoft solutions.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the Zero-Trust and shared responsibility models.
+  - Describe common security threats and ways to protect through defense in depth.
+  - Describe the concept of encryption, hashing, and signing
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/describe-security-concepts-and-methodologies.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- m365
+units:
+- learn.wwl.describe-security-concepts-methodologies.introduction
+- learn.wwl.describe-security-concepts-methodologies.describe-zero-trust-methodology
+- learn.wwl.describe-security-concepts-methodologies.describe-shared-responsibility-model
+- learn.wwl.describe-security-concepts-methodologies.describe-defense-depth
+- learn.wwl.describe-security-concepts-methodologies.describe-common-threats
+- learn.wwl.describe-security-concepts-methodologies.describe-ways-encryption,-hashing,-signing-can-secure-your-data
+- learn.wwl.describe-security-concepts-methodologies.knowledge-check
+- learn.wwl.describe-security-concepts-methodologies.summary-resources
+badge:
+  uid: learn.wwl.describe-security-concepts-methodologies.badge

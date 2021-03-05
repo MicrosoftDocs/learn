@@ -5,7 +5,7 @@ metadata:
   description: Learn how to perform inclusive product design for users with diverse capabilities
   ms.date: 04/16/2020
   author: asajohnson
-  ms.author: asajohnson
+  ms.author: asjohnso
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design with inclusivity in mind 
@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 - m365
-- dynamics
+- dynamics-365
 units:
 - learn.azure.inclusive-design-principles.1-introduction
 - learn.azure.inclusive-design-principles.2-inclusive-product-design

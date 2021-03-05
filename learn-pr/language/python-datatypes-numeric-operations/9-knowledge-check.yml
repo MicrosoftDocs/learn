@@ -21,9 +21,9 @@ quiz:
     - content: "The `type()` function"
       isCorrect: false
       explanation: "The `type()` function returns only the type.  It doesn't evaluate the type to see whether it matches some type, such as `str`."
-    - content: "The `instanceof()` function"
+    - content: "The `isinstance()` function"
       isCorrect: true
-      explanation: "Choose `instanceof()` when you want to evaluate whether a value is of a certain type."
+      explanation: "Choose `isinstance()` when you want to evaluate whether a value is of a certain type."
     - content: "The `isnumeric()` function"
       isCorrect: false
       explanation: "The `isnumeric()` function doesn't allow you to evaluate whether a value is of type string."

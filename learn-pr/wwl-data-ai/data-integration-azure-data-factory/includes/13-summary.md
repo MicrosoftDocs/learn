@@ -1,0 +1,4 @@
+In this section, you have learned how Azure Data Factory can be used to manage a regular process of data movement as part of a wider enterprise analytical solution. In this introductory section you have learned how Azure Data Factory meets that need through its component parts and the Azure Data Factory process. You also now understand the security groups required to provision and manage the service.
+
+> [!Important]
+> Should you be working in your own subscription while running through this content, it is best practice at the end of a project to identify whether or not you still need the resources you created. Resources left running can cost you money. You can delete resources one by one, or just delete the resource group to get rid of the entire set.

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.create-configure-manage-identities
+metadata:
+  title: Create, configure, and manage identities
+  description: "Create, configure, and manage identities"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create, configure, and manage identities
+summary: Access to cloud-based workloads needs to be controlled centrally by providing a definitive identity for each user and resource. You can ensure employees and vendors have just enough access to do their job.
+abstract: |
+  At the end of this module, you will be able to:
+  - Create, configure, and manage users
+  - Create, configure, and manage groups
+  - Manage licenses
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- identity-access-admin
+- security-engineer
+products:
+- azure
+- azure-active-directory
+units:
+- learn.wwl.create-configure-manage-identities.introduction
+- learn.wwl.create-configure-manage-identities.users
+- learn.wwl.create-configure-manage-identities.exercise-assign-licenses-to-users
+- learn.wwl.create-configure-manage-identities.exercise-restore-remove-deleted-users
+- learn.wwl.create-configure-manage-identities.groups
+- learn.wwl.create-configure-manage-identities.exercise-adding-groups-azure-active-directory
+- learn.wwl.create-configure-manage-identities.manage-licenses
+- learn.wwl.create-configure-manage-identities.exercise-change-group-license-assignments
+- learn.wwl.create-configure-manage-identities.exercise-change-user-license-assignments
+- learn.wwl.create-configure-manage-identities.knowledge-check
+- learn.wwl.create-configure-manage-identities.summary-resources
+badge:
+  uid: learn.wwl.create-configure-manage-identities.badge

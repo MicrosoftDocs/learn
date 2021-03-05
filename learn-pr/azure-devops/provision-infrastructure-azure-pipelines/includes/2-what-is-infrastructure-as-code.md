@@ -69,7 +69,7 @@ Tim shrugs.
 
 Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains the concepts of infrastructure as code.
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LB5O]
 
 When you need to change something, like a firewall setting, you update the configuration file and run it one time to update all of the servers. You can see why this makes scaling out a lot easier.
 
@@ -100,7 +100,7 @@ Infrastructure as code is a best practice in DevOps because it helps bring teams
 
 **Tim:** Sounds great. But I have one question first. You mentioned that we can run the provisioning process through Azure Pipelines. Won't the process re-create our existing environments? I don't think we would want that.
 
-**Andy:** They key here is *idempotency*.
+**Andy:** The key here is *idempotency*.
 
 ## What is idempotency?
 

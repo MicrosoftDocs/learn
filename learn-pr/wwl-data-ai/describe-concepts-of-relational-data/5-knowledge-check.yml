@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2020
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -35,7 +35,7 @@ quiz:
     - content: "A virtual table based on the result set of a query"
       isCorrect: false
       explanation: "That's incorrect. This statement is the description of a view."
-    - content: "A structure comprising rows and columns that you use for storing data."
+    - content: "A structure comprising rows and columns that you use for storing data"
       isCorrect: false
       explanation: "That's incorrect. This statement is the description of a relational table."
   - content: "Which one of the following statements is a benefit of using a PaaS service, instead of an on-premises system, to run your database management systems?"

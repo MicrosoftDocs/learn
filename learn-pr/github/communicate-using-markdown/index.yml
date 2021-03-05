@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.communicate-using-markdown
 metadata:
-  title: "Communicate effectively on GitHub by using Markdown - Learn"
+  title: "Communicate effectively on GitHub by using Markdown"
   description: Learn to use Markdown to communicate with brevity, clarity, and expression.
   ms.date: 06/26/2020
   author: tpetchel
@@ -27,6 +27,7 @@ roles:
 - administrator
 - developer
 - solution-architect
+- student
 products:
 - github
 - azure

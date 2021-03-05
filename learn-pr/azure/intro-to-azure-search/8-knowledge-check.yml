@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: Azure Data Lake 
       isCorrect: false
-      explanation: Azure Data Lake is not a supported external data source. It is however entirely possible to write code to use the REST API and push data from Azure Data Lake to Azure Cognitive Search.
+      explanation: Azure Data Lake is not a supported external data source. It is, however, entirely possible to write code to use the REST API, and push data from Azure Data Lake to Azure Cognitive Search.
     - content: Azure Virtual Machines
       isCorrect: false
       explanation: Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however.

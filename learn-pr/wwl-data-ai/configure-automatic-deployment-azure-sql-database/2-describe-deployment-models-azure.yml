@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.describe-deployment-models-azure
+title: Describe deployment models in Azure
+metadata:
+  title: Describe deployment models in Azure
+  description: "Describe deployment models in Azure"
+  ms.date: 12/15/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-deployment-models-azure.md)]

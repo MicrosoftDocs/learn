@@ -1,20 +1,13 @@
-This unit covers some of the key reports that you might want to create or use after you buy a reservation to analyze and perform reporting. One of the first things you should do is analyze the Reservation savings report to look at unused reservation costs and savings. If you want to charge back, create a chargeback report to distribute costs to whoever uses the reservation. 
+This unit covers some of the key reports that you might want to create or use after you buy a reservation to analyze and perform reporting.
 
 It's important to understand two concepts: actual cost data and amortized cost data.
 
-- Actual cost data is used for purchases and to audit resources that don't show cost because of reservation application.
-- Amortized data is used in charge back reports, savings reports, and unused reservation reports. Amortized cost is the consumption value based on the discounted price for any instances that are covered by reservations. Amortized costs are shown in reports evenly distributed over the duration of the reservation term.
+- Actual cost data shows the resource usage costs as zero when reservation is applied to the usage. This data also has reservation transactions in it. For example, if a resource’s on-demand cost is 1 USD per hour and a reservation applies to it, the cost will show as zero in the actual cost data.
+- Amortized data provides the effective cost of a resource when a reservation applies to it. For example, if resource’s on-demand cost is 1 USD per hour and a reservation provides 50% discount to the resource, then the effective cost will show as .5 USD per hour in the amortized data.
 
-## Review reservation savings in Power BI
+You can review reservation savings in Power BI. Amortized cost data is only available to Enterprise Agreement and Microsoft Customer Agreement customers.
 
-Enterprise Agreement and Microsoft Customer Agreement customers can view the RI Savings report in the Power BI Cost Management App to view reservation transactions. The report takes the on-demand cost of resources and subtracts your purchased reservation costs to show savings. If you have unused reservations, they reduce your savings.
-
-1. Get the [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
-2. Review the RI Savings report.
-
-[![Example showing the RI Savings report in the Cost Management app](../media/7-ri-savings-report.png)](../media/7-ri-savings-report.png#lightbox)
-
-## Charge back reservation costs
+## Charge back data
 
 The following sections describe different ways to prepare for reservation chargeback.
 
@@ -22,7 +15,7 @@ The following sections describe different ways to prepare for reservation charge
 
 Cost analysis shows charges as they appear on your bill. The charges are shown as actual costs or amortized over the course of your reservation period.
 
-1. In the Azure portal, navigate to cost analysis for your scope. For example,  **Cost Management + Billing** > **Cost Management** > **Cost analysis**.
+1. In the Azure portal, navigate to cost analysis for your scope. For example, **Cost Management + Billing** > **Cost Management** > **Cost analysis**.
 1. Change the view from **Actual cost** to **Amortized cost**.  
     ![Example showing Amortized cost selection](../media/7-change-amortized-cost.png)
 1. Apply the following filters:
@@ -33,16 +26,15 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 ## Create a chargeback report from usage details data
 
-You can create a charge back reservation report to charge internal cost centers at different grains: subscription, resource groups, or tags. The information needed to perform chargeback is contained in your usage data. Amortized cost data provides the monetary value of a reservation's utilization for the following data types:
+You can create a charge back report to charge internal cost centers using amortized data. In amortized data, the cost of a reservation is the consumption value based on the discounted price for the instances covered by reservations. Amortized cost data provides the monetary value of a reservation's utilization for:
 
 - Resources, such as a VM
 - Resource group
 - Tags
 - Subscription
 
-Which data dimension should you use to calculate reservation costs for chargeback? It depends on how you've structured your costs in Azure. For example, if you have a different subscription for each team or resource-use scenario then using the Subscription dimension should meet your needs. If you have teams or workloads that share resources across multiple Cost Management scopes, consider tagging those resources and then using those tags in your chargeback analysis.
-
-Download your reservation [usage details CSV file](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#download-the-usage-csv-file-with-new-data) from the Azure portal or get it [using APIs](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+To view amortized data, navigate to Cost Management + Billing > Exports and select the **Amortized Data** in the dimension.
+You can also get the amortized data [using APIs](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
 
 ### Chargeback with Power BI
 
@@ -51,9 +43,7 @@ Enterprise Agreement and Microsoft Customer Agreement customers can view the RI 
 1. Get the [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
 2. Review the RI Chargeback report.
 
-## Review unused reservations
-
-There are a few ways to review unused reservations: cost analysis, usage data, and Power BI.
+## Unused reservation cost
 
 The unused reservation view in cost analysis shows the monetary value of underutilized reservations. Use the report to view reservation waste so you can prioritize fixing it.
 

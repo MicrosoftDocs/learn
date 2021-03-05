@@ -84,6 +84,32 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "azure-fundamentals",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "azure-networking",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
              {
                 "src": "cela-accessibility",
                 "files": [
@@ -138,6 +164,19 @@
             },
             {
                 "src": "databricks",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "endpoint-manager",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -319,6 +358,45 @@
                 "dest": "modules"
             },  
             {
+                "src": "wwl-iot",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-windows-server",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-sci",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "xamarin",
                 "files": [
                     "**/*.yml",
@@ -331,6 +409,56 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "security",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },       
+            {
+                "src": "cmu-cloud-developer",
+                "files": [
+                    "**.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "powershell",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "python-partnership",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
             {
                 "files": [
                     "**/*.md",
@@ -358,6 +486,18 @@
                     "**/*.svg",
                     "**/*.jpg",
                     "**/*.jpeg"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "student-evangelism",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.txt"
                 ],
                 "dest": "modules"
             },
@@ -390,6 +530,25 @@
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "azure-fundamentals/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
@@ -457,6 +616,63 @@
                     "zh-cn",
                     "zh-tw"
                 ],
+                "cmu-cloud-admin/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "cmu-cloud-developer/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "commercial-marketplace/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
                 "data-ai-cert/**/*.yml": [
                     "de-de",
                     "es-es",
@@ -477,6 +693,25 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "endpoint-manager/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
@@ -533,7 +768,45 @@
                     "tr-tr",
                     "sv-se"
                 ],
+               "language/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
                 "quantum/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "reactors/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
@@ -602,6 +875,24 @@
                     "zh-tw"
                 ],
                 "wwl/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-iot/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-windows-server/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-sci/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

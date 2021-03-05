@@ -1,10 +1,12 @@
-Azure Synapse Analytics uses Azure Storage to store data. Since the data is stored and managed by Azure Storage, Azure Synapse Analytics charges separately for the storage consumption. The data itself is sharded into distributions to optimize the performance of the system. One can choose which sharding pattern to use to distribute the data when one defines the table. Azure Synapse Analytics supports these sharding patterns:
+Azure Synapse Analytics uses Azure Storage to store data. Because the data is stored and managed by Azure Storage, Azure Synapse Analytics charges separately for the storage consumption. The data itself is sharded into distributions to optimize the performance of the system. You can choose which sharding pattern to use to distribute the data when you define the table. Azure Synapse Analytics supports these sharding patterns:
 
 - Hash
 - Round Robin
 - Replicate
 
-You can use the following strategies to determine which pattern is most suitable for your scenario:
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny]
+
+You can use the following strategies to determine which pattern is most suitable for your scenario.
 
 | Type | Great fit for... | Watch out if... |
 |------|------------------|-----------------|
@@ -22,11 +24,11 @@ Here are some tips that can help you choose a strategy:
 
 ## Hash-distributed tables
 
-A hash distributed table can deliver the highest query performance for joins and aggregations on large tables.
+A hash-distributed table can deliver the highest query performance for joins and aggregations on large tables.
 
 To shard data into a hash-distributed table, Azure Synapse Analytics uses a hash function to assign each row to one distribution deterministically. In the table definition, one of the columns is designated as the distribution column. The hash function uses the values in the distribution column to assign each row to a distribution.
 
-The following is an example of a create table statement that defines a hash distribution.
+The following example shows a create table statement that defines a hash distribution.
 
 ```sql
 CREATE TABLE [dbo].[EquityTimeSeriesData](
@@ -45,11 +47,11 @@ WITH
 
 ## Round-robin distributed tables
 
-A round-robin table is the most straightforward table to create and delivers fast performance when used as a staging table for loads.
+A round-robin table is the most straightforward table to create and deliver fast performance when used as a staging table for loads.
 
-A round-robin distributed table distributes data evenly across the nodes but without any further optimization. A distribution is first chosen at random, and then buffers of rows are assigned to distributions sequentially. It is quick to load data into a round-robin table, but query performance can often be better with hash distributed tables. Joins on round-robin tables require reshuffling data, and this takes additional time.
+A round-robin distributed table distributes data evenly across the nodes, but without any further optimization. A distribution is first chosen at random, and then buffers of rows are assigned to distributions sequentially. It is quick to load data into a round-robin table, but query performance can often be better with hash distributed tables. Joins on round-robin tables require reshuffling data, and this takes additional time.
 
-The following is an example of a create table statement that defines a round robin distribution.
+The following example shows a create table statement that defines a round robin distribution.
 
 ```sql
 CREATE TABLE [dbo].[Dates](
@@ -69,13 +71,13 @@ WITH
 ;
 ```
 
-## Replicated Tables
+## Replicated tables
 
 A replicated table provides the fastest query performance for small tables.
 
-A table that is replicated caches a full copy on each compute node. Consequently, replicating a table removes the need to transfer data among compute nodes before a join or aggregation. Replicated tables are best utilized with small tables. Extra storage is required, and there are additional overheads that are incurred when writing data which make large tables impractical.
+A table that is replicated caches a full copy on each compute node. Consequently, replicating a table removes the need to transfer data among compute nodes before a join or aggregation. Extra storage is required, and there are additional overheads that are incurred when writing data which make large tables impractical.
 
-The following is an example of a create table statement that defines a replicate distribution.
+The following example shows a create table statement that defines a replicate distribution.
 
 ```sql
 CREATE TABLE [dbo].[BusinessHierarchies](

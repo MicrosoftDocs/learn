@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.intro-to-endpoint-manager
+metadata:
+  title: Introduction to Microsoft Endpoint Manager
+  description: In this module, you'll learn about the basics of Microsoft Endpoint Manager. 
+  ms.date: 10/15/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Microsoft Endpoint Manager
+summary: Microsoft Endpoint Manager is your strategic infrastructure for managing and protecting your organization's devices, apps, and data. In addition, Microsoft Endpoint Manager helps to ensure your end users have the best experience for productivity. This module helps explain endpoints that you need to protect, as well as the products and services that encompass Microsoft Endpoint Manager.
+abstract: | 
+  In this module, you will:
+  - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
+  - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-endpoint-manager.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+- m365
+units:
+- learn.intro-to-endpoint-manager.1-introduction
+- learn.intro-to-endpoint-manager.2-what-is-endpoint-manager
+- learn.intro-to-endpoint-manager.3-intune
+- learn.intro-to-endpoint-manager.4-endpoint-configuration-manager
+- learn.intro-to-endpoint-manager.5-cloud-attach
+- learn.intro-to-endpoint-manager.6-desktop-analytics
+- learn.intro-to-endpoint-manager.7-endpoint-analytics
+- learn.intro-to-endpoint-manager.8-windows-autopilot
+- learn.intro-to-endpoint-manager.9-knowledge-check
+- learn.intro-to-endpoint-manager.10-summary
+badge:
+  uid: learn.intro-to-endpoint-manager.badge

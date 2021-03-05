@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.describe-azure-network-topologies
+title: Describe Azure network topologies
+metadata:
+  title: Describe Azure network topologies
+  description: Describe Azure network topologies
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-azure-network-topologies.md)]

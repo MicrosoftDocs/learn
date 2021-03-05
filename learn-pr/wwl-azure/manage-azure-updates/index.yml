@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-updates
+metadata:
+  title: Manage Azure updates
+  description: "You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs."
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Azure updates
+summary: You'll be able to enable Azure Update Management, deploy updates, review an update assessment, and manage updates for your Azure VMs.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure updates.
+  - Enable Update Management.
+  - Deploy updates.
+  - Review an update assessment.
+  - Manage updates for your Azure VMs.
+prerequisites: |
+  In order to get the best learning experience from this module, it's important that you have knowledge and experience of:
+  - Windows Server operating system and workloads in on-premises scenarios.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - On-premises resiliency Windows Server-based compute and storage technologies.
+  - Implementing and managing IaaS services in Microsoft Azure.
+  - Azure AD.
+  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/manage-azure-updates.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.manage-azure-updates.introduction
+- learn.wwl.manage-azure-updates.describe-update-management
+- learn.wwl.manage-azure-updates.enable-update-management
+- learn.wwl.manage-azure-updates.deploy-updates
+- learn.wwl.manage-azure-updates.view-update-assessments
+- learn.wwl.manage-azure-updates.manage-updates-for-your-azure-vms
+- learn.wwl.manage-azure-updates.knowledge-check
+- learn.wwl.manage-azure-updates.summary
+badge:
+  uid: learn.wwl.manage-azure-updates.badge

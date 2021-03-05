@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-language-text-analytics-api.exercise-structure-submit-request
+title: Exercise – Structure and submit the request
+metadata:
+  title: Exercise – Structure and submit the request
+  description: "Exercise – Structure and submit the request"
+  ms.date: 01/05/2021
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-structure-submit-request.md)]

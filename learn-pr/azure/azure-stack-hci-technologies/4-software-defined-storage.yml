@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-stack-hci-technologies.4-software-defined-storage
+metadata:
+  title: What is Windows Server software-defined storage?
+  description: Provide an introduction to software-defined storage.
+  ms.date: 12/09/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: What is Windows Server software-defined storage?
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-software-defined-storage.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which software-defined storage feature implements virtualized, highly available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster?"
+    choices:
+    - content: "Storage Spaces Direct"
+      isCorrect: true
+      explanation: "That's correct. Storage Spaces Direct leverages Storage Spaces, failover clustering, CSVs, and SMB 3.x to implement virtualized, highly available clustered storage by using local disks on each node of a Windows Server 2019 failover cluster."
+    - content: "SMB Direct"
+      isCorrect: false
+      explanation: "That's incorrect. SMB Direct optimizes the use of RDMA network adapters for SMB traffic, which allows them to function at full speed with very low latency and low CPU utilization."
+    - content: "Storage Replica "
+      isCorrect: false
+      explanation: "That's incorrect. Storage Replica enables storage-agnostic, block-level, synchronous and asynchronous replication between servers or clusters across different physical locations."
+
+  - content: "What is the minimum number of Windows Server failover clusters that the disaggregated deployment model of Storage Spaces Direct requires?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "That's incorrect. The cluster hosting Hyper-V VMs must be separate from the cluster hosting storage."
+    - content: "2"
+      isCorrect: true
+      explanation: "That's correct. In the disaggregated model, the Hyper-V hosts (compute) are in a separate cluster from the Storage Spaces Direct hosts (storage)."
+    - content: "3"
+      isCorrect: false
+      explanation: "That's incorrect. You need at the minimum two clusters."

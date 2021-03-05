@@ -2,8 +2,8 @@
 uid: learn.wwl.analyze-receipts-form-recognizer
 metadata:
   title: Analyze receipts with the Form Recognizer service
-  description: "Processing invoices and receipts is a common task in many business scenarios. Increasingly, organizations are turning to artificial intelligence (AI) to automate data extraction from scanned receipts."
-  ms.date: 06/07/2020
+  description: "Analyze receipts with the Form Recognizer service"
+  ms.date: 02/19/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

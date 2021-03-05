@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure-sql-secure-data
+metadata:
+  title: Secure your data with Azure SQL
+  description: Secure your data with Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure your data with Azure SQL
+summary: Ensuring the security and compliance of data is always a top priority. In this module, you'll learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We'll also cover some of the networking considerations for securing SQL.
+abstract: | 
+  In this module, you will learn how to:
+  - Make an informed decision about securing your network.
+  - Manage and deliver access management and authorization.  
+  - Protect, encrypt, and mask data.
+  - Manage and monitor security for your Azure SQL Database instance and Azure SQL managed instance.
+prerequisites: | 
+  - Experience working with, maintaining, and developing with SQL Server
+  - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-secure-data.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- database-administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.azure-sql-secure-data.1-introduction
+- learn.azure-sql-secure-data.2-security-capabilities
+- learn.azure-sql-secure-data.3-exercise-configure-auditing
+- learn.azure-sql-secure-data.4-exercise-network-security
+- learn.azure-sql-secure-data.5-exercise-configure-authentication
+- learn.azure-sql-secure-data.6-data-protection
+- learn.azure-sql-secure-data.7-security-management
+- learn.azure-sql-secure-data.8-exercise-advanced-data-security
+- learn.azure-sql-secure-data.9-exercise-data-classification-masking-audit
+- learn.azure-sql-secure-data.10-summary
+badge:
+  uid: learn.azure-sql-secure-data.badge

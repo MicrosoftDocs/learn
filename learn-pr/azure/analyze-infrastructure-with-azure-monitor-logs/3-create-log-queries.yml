@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Create basic Azure Monitor log queries to extract information from log data
 durationInMinutes: 10
 content: |

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-package-management-using-helm.summary
+title: Summary
+metadata:
+  description: Summary
+  title: Summary
+  author: cryophobia
+  ms.author: chrvaw
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 9/30/2020
+
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

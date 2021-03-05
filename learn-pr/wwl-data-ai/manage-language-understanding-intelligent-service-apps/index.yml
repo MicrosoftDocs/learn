@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.manage-language-understanding-intelligent-service-apps
+metadata:
+  title: Managing your Language Understanding Intelligent Service (LUIS) Apps
+  description: "Learn to manage LUIS apps through versioning, key management, handling data, and improving predictions."
+  ms.date: 09/26/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage your Language Understanding Intelligent Service (LUIS) Apps
+summary: Learn to manage LUIS apps through versioning, key management, handling data, and improving predictions.
+abstract: |
+  Upon completion of this module, you will be able to:
+  * Manage authoring and runtime keys
+  * Manage versioning
+  * Manage the data in a LUIS app
+  * Improve prediction accuracy
+  * Add patterns to improve predictions
+prerequisites: |
+  - Knowledge of navigating the Azure portal
+  - Knowledge of at least one programming language such as C# or Python
+  - Basic understanding of REST APIs and JSON
+iconUrl: /learn/achievements/manage-your-language-understanding-intelligent-service-luis-apps.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+products:
+- azure
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.manage-language-understanding-intelligent-service-apps.introduction
+- learn.wwl.manage-language-understanding-intelligent-service-apps.manage-authoring-runtime-keys
+- learn.wwl.manage-language-understanding-intelligent-service-apps.manage-versioning
+- learn.wwl.manage-language-understanding-intelligent-service-apps.managing-data-luis-app
+- learn.wwl.manage-language-understanding-intelligent-service-apps.improve-prediction-accuracy
+- learn.wwl.manage-language-understanding-intelligent-service-apps.add-patterns-improve-predictions
+- learn.wwl.manage-language-understanding-intelligent-service-apps.knowledge-check
+- learn.wwl.manage-language-understanding-intelligent-service-apps.summary
+badge:
+  uid: learn.wwl.manage-language-understanding-intelligent-service-apps.badge

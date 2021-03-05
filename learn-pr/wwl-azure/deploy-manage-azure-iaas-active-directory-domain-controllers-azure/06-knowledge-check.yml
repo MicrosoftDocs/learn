@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/30/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso want to deploy an LDAP-aware LOB application in Azure. Which of the following deployment models best suits this scenario?"
+    choices:
+    - content: "Deploy a separate AD forest that's trusted by domains in their on-premises AD forest."
+      isCorrect: false
+      explanation: "That's incorrect. It's necessary deploy AD DS in an on-premises infrastructure and on an Azure VM."
+    - content: "Deploy AD DS only on an Azure VM."
+      isCorrect: false
+      explanation: "That's incorrect. This scenario is common for supporting apps that depend on Kerberos authentication but don't have any requirements that are related to on-premises directory services."
+    - content: "Deploy AD DS in an on-premises infrastructure and on an Azure VM."
+      isCorrect: true
+      explanation: "That's correct. This scenario is common for apps that are LDAP–aware and that support Windows-integrated authentication."
+  - content: "When planning deployment for AD domain controllers in Azure, how can an administrator at Contoso control Active Directory replication?"
+    choices:
+    - content: "They must establish the appropriate trust relationships."
+      isCorrect: false
+      explanation: "That's incorrect. A trust relationship is required in the scenario where their on-premises AD domain<!-- Andy, can we change this to \"Active Directory domain?\" --> is contained within a different AD forest from their AD domain in Azure."
+    - content: "They must configure sites in AD DS."
+      isCorrect: true
+      explanation: "That's correct. They must configure sites in AD DS so that they can control replication traffic between the on-premises and Azure-based domain controllers."
+    - content: "Configure a static IP address for each VM."
+      isCorrect: false
+      explanation: "That's incorrect. They must configure the VM NIC for each AD DS server with a static private IP address for full DNS support."
+  - content: "Which of the following options reduces the amount of egress traffic when deploying AD domain controllers in Azure?"
+    choices:
+    - content: "Active Directory sites."
+      isCorrect: false
+      explanation: "That's incorrect. You must configure sites in AD DS so that you can control replication traffic between the on-premises and Azure-based domain controllers."
+    - content: "Add trust relationships."
+      isCorrect: false
+      explanation: "That's incorrect. A trust relationship is required in scenarios where the on-premises AD domain is contained within a different AD forest from the AD domain in Azure."
+    - content: "Read-only domain controllers."
+      isCorrect: true
+      explanation: "That's correct. RODCs reduce the amount of egress traffic and the resulting Azure service charges. Because changes to directory objects are not allowed on RODCs, replication of directory objects from RODCs to other domain controllers don't occur."

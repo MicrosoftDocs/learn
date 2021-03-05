@@ -1,6 +1,6 @@
 So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create a variety of views and reports for your security team.
 
-You want to implement a dashboard for the security team so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. 
+You want to implement a dashboard for the security team so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior.
 
 In this exercise, you create a Log Analytics workspace in your Azure sandbox by using the Azure portal. You then direct the audit and sign-in log files to your workspace. Next, you download and install the prebuilt user sign-in and audit log views from GitHub. Finally, you create a dashboard for your security team that displays reports that are built into it from the workspace.
 
@@ -16,19 +16,28 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
    ![Screenshot of Log Analytics search results.](../media/3-log-analytics.png)
 
 1. In the results list, select **Log Analytics workspaces**.
-1. Select **Add** to create a new Log Analytics workspace.
 
-   ![Screenshot of the Log Analytics page, with the Add option highlighted.](../media/3-log-analytics-workspace.png)
+1. Select **New**. The **Create Log Analytics workspace** pane appears.
 
-1. To create a new Log Analytics workspace, do the following:
+1. On the **Basics** tab, enter the following values for each setting.
 
-   a. Select **Create New**. This workspace will be unique to each user who signs in.  
-   b. In the **Name** box, enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters.  
-   c. For the **Resource group**, select **Create new**, and enter a unique resource name.  
-   d. In the **Location** drop-down list, select the location nearest to you.  
-   e. For **Pricing tier**, leave it automatically assigned as **pay-as-you-go** and based on a per-gigabyte (GB) cost.
+    | Setting | Value |
+    | --- | --- |
+    | **Project Details** |
+    | Subscription | Enter your subscription  |
+    | Resource group | select **Create new**, and enter a unique resource name |
+    | **Instance Details** |
+    | Name | enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters |
+    | Region     | Select the location nearest to you |
 
-1. Select **OK** to create the workspace.
+1. Select **Next : Pricing tier**, and enter the following value for the setting.
+
+    | Setting | Value |
+    | --- | --- |
+    | **Pricing tier** |
+    | Pricing tier | Leave it automatically assigned as **Pay-as-you-go** and based on a per-gigabyte (GB) cost  |
+
+1. Select **Review + Create**. After validation succeeds, select **Create** to create the workspace.
 
 You've now created a Log Analytics workspace that you can use to store your logging data and run queries.  In the next section, you stream data to this workspace.
 
@@ -37,18 +46,17 @@ You've now created a Log Analytics workspace that you can use to store your logg
 To stream the audit and sign-in logs to your Log Analytics workspace, do the following:
 
 1. Open Azure Active Directory.
-1. Under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics settings**.
+
+1. In the middle menu pane, Under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics setting**.
 
    Here, you create a connection between the two log files and your Log Analytics workspace.
 
-1.  On the **Add diagnostics settings** page, do the following;
+1. On the **Diagnostics setting** pane, do the following:
 
-    a. In the **Name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
-    b. Select the **Send to Log Analytics** check box.  
+    a. In the **Diagnostic setting name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
+    b. Under **Destination details**, select the **Send to Log Analytics workspace** check box.  
     c. Select the Log Analytics workspace that you created earlier, **ContosoWorkspace**.  
-    d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit log** and **Sign-up logs**.
-
-     ![Screenshot of the diagnostics settings for streaming audit and sign-in logs to your Log Analytics workspace.](../media/3-log-analytics-send-to.png)
+    d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit** and **AllMetrics**.
 
 1. Select **Save**.  
 
@@ -57,7 +65,9 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 1. In a new browser tab, go to [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview?azure-portal=true).
 
 1. Right-click **Raw**, select **Save link as**, and then select your desktop as the destination.
+
 1. Go to [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview?azure-portal=true).
+
 1. Right-click **Raw**, select **Save link as**, and then select your desktop as the destination.
 
 ## Install prebuilt views in your Azure Log Analytics workspace
@@ -65,13 +75,18 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 1. In the Azure portal, select **All resources**.
 
 1. Select the Log Analytics workspace that you created earlier.
-1. Under **General**, select **View Designer**.
+
+1. In the middle menu pane, under **General**, select **Workbooks**.
+
 1. Select **Import**, select **File**, and then browse to your desktop.
+
 1. Select the *Azure AD Account Provisioning Events.omsview* file, and then select **Save**.
+
 1. Repeat steps 3 and 4, but, in step 4, select the *AzureADSignins.omsview* file.
+
 1. Select **Save**.
 
-You've now imported the prebuilt workspace views to your workspace. You can use them to display common views of your audit and sign-in data. 
+You've now imported the prebuilt workspace views to your workspace. You can use them to display common views of your audit and sign-in data.
 
 In the next section, you set up a dashboard that your security team can begin to use.
 
@@ -81,11 +96,11 @@ In the next section, you set up a dashboard that your security team can begin to
 
    ![Screenshot of the "New dashboard" button.](../media/4-dashboard-new.png)
 
-1. At the prompt, name the dashboard **Security Dashboard**, and then select **Done**.  For now, leave the dashboard blank.  In the next few steps, you'll be adding a report query to the dashboard.
+1. At the prompt, name the dashboard **Security Dashboard**, and then select **Done**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
 
    To make the dashboard accessible to your workspace, you need to share it. Even though the dashboard contains no data, you can still share it.  
-   
-1. Select the **Share** button.
+
+1. Select **Share**.
 
    ![Screenshot of the Share button.](../media/4-dashboard-share-option.png)
 
@@ -102,10 +117,12 @@ In the next section, you set up a dashboard that your security team can begin to
 ## Build a query for the dashboard
 
 1. Select **All resources**.
-1. Select the Log Analytics workspace that you created earlier.
-1. Under **General**, select **Logs**. 
 
-1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
+1. Select the Log Analytics workspace that you created earlier.
+
+1. Under **General**, select **Logs**.
+
+1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query.
 
     ```kusto
     AuditLogs
@@ -114,7 +131,8 @@ In the next section, you set up a dashboard that your security team can begin to
     | sort by auditCount desc
     ```
 
-1. In the menu bar, select the **Run** to ensure that the query returns data.
+1. In the menu bar, select **Run** to ensure that the query returns data.
+
 1. When you're satisfied that you have the data you want, select **Save**.
 
    ![Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.](../media/4-save-query.png)
@@ -131,11 +149,14 @@ In the next section, you set up a dashboard that your security team can begin to
 
 To change the title of the report in the dashboard, do the following:
 
-1. Select the **Edit** button (pencil icon) in the report tile.
+1. Select **Edit** (pencil icon) in the report tile.
 
-1. Select the title, and change it to **Top User Events past seven days**.  
+1. Select the title, and change it to **Top User Events past seven days**.
+
 1. Remove the subtitle, which you don't need for this report.
-1. Select **Update**.  
-1. At the prompt, you can choose to publish or discard your changes.  Select **Publish**.
+
+1. Select **Update**.
+
+1. At the prompt, you can choose to publish or discard your changes. Select **Publish**.
 
 You've now created a dashboard with a query report embedded in it.

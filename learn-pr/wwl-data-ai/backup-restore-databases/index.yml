@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.backup-restore-databases
+metadata:
+  title: Back up and restore databases
+  description: "Back up and restore databases"
+  ms.date: 02/12/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Back up and restore databases
+summary: Plan and implement policy for recovering data if user errors occur or the technology fails. Explore various options for how and where to back up and restore databases.
+abstract: |
+  In this module, you will:
+  - Explore backup and restore options for IaaS
+  - Implement backup and restore for PaaS
+prerequisites: |
+  - Experience creating and configuring resources using the Azure portal.
+  - Basic understanding of SQL Server file storage.
+  - Familiarity with SQL Server database files for data and log.
+  - Familiarity with purpose and management of SQL Server transaction log.
+iconUrl: /learn/achievements/backup-and-restore-databases.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.backup-restore-databases.introduction
+- learn.wwl.backup-restore-databases.backup-restore-sql-server-running-azure-virtual-machines
+- learn.wwl.backup-restore-databases.backup-sql-server-virtual-machine
+- learn.wwl.backup-restore-databases.backup-restore-database-using-azure-sql-database
+- learn.wwl.backup-restore-databases.exercise
+- learn.wwl.backup-restore-databases.knowledge-check
+- learn.wwl.backup-restore-databases.summary
+badge:
+  uid: learn.wwl.backup-restore-databases.badge

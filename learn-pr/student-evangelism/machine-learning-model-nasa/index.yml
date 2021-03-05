@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.machine-learning-model-nasa
+metadata:
+  title: Build a machine learning model
+  description: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a machine learning model
+summary: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+abstract: |
+ In this module, you'll begin to discover: 
+ - The importance of column choosing.
+ - How to split data to effectively train and test a machine learning algorithm.
+ - How to train, test, and score a machine learning algorithm.
+ - How to visualize a tree classification model.
+prerequisites: |
+ - Basic Python experience
+ - Have clean data about rocket launches
+iconUrl: /learn/achievements/student-evangelism/machine-learning-model-nasa.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- vs-code
+units:
+- learn.student-evangelism.machine-learning-model-nasa.1-introduction
+- learn.student-evangelism.machine-learning-model-nasa.2-prepare-data
+- learn.student-evangelism.machine-learning-model-nasa.3-choose-algorithm
+- learn.student-evangelism.machine-learning-model-nasa.4-split-data
+- learn.student-evangelism.machine-learning-model-nasa.5-train-model
+- learn.student-evangelism.machine-learning-model-nasa.6-score-model
+- learn.student-evangelism.machine-learning-model-nasa.7-visualize-model
+- learn.student-evangelism.machine-learning-model-nasa.8-test-model
+- learn.student-evangelism.machine-learning-model-nasa.8a-knowledge-check
+- learn.student-evangelism.machine-learning-model-nasa.9-summary
+badge:
+  uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge 

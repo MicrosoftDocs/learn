@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.migrate-file-servers-by-using-storage-migration-service
+title: Migrate file servers by using Storage Migration Service
+metadata:
+  title: Migrate file servers by using Storage Migration Service
+  description: "Migrate file servers by using Storage Migration Service"
+  ms.date: 10/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-migrate-file-servers-using-storage-migration-service.md)]

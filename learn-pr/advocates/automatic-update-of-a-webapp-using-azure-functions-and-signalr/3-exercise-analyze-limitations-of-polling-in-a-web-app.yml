@@ -3,12 +3,11 @@ uid: learn.advocates.azure-functions-and-signalr.3-exercise-analyze-limitations-
 metadata:
   title: Exercise - Analyze the limitations of a polling-based web app
   description: Review the implementation of polling website and run the app on your machine.
-  ms.date: 05/31/19
+  ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Analyze the limitations of a polling-based web app
 interactive: bash
 azureSandbox: true

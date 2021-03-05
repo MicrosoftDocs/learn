@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.oxford.implement-cicd-iot-edge
 metadata:
-  title: "Implement CICD for IoT Edge"
+  title: "Implement CI/CD for IoT Edge"
   description: "University of Oxford"
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
-title: "Implement CICD for IoT Edge"
-summary: "Define a solution for smoke testing for virtual IoT Edge devices. Your solution will employ a CI/CD (Continuous Integration/ Continuous Deployment) strategy using Azure DevOps, Azure Pipelines, and Azure Application Insights on a Kubernetes cluster."
+title: "Implement CI/CD for IoT Edge"
+summary: "Define a solution for smoke testing for virtual Azure IoT Edge devices. Your solution will employ a CI/CD (continuous integration/continuous deployment) strategy using Azure DevOps, Azure Pipelines, and Azure Monitor Application Insights on a Kubernetes cluster."
 abstract: |
     In this module, you will:
     - Create a pipeline that deploys a smoke test using virtual IoT Edge devices
-    - Monitor the performance of  the solution using a CI/CD strategy
+    - Monitor the performance of the solution using a CI/CD strategy
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Basic knowledge of Azure DevOps
     - Basic knowledge of CI/CD

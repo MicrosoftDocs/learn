@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
+title: Describe Azure Intelligent Insights
+metadata:
+  title: Describe Azure Intelligent Insights
+  description: "Describe Azure Intelligent Insights"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-describe-azure-intelligent-insights.md)]

@@ -2,9 +2,9 @@
 uid: learn.wwl.use-automated-machine-learning.create-azure-machine-learning-workspace
 title: Create an Azure Machine Learning workspace
 metadata:
-  title: Exercise - Create an Azure Machine Learning workspace
-  description: "Get ready to create a machine learning solution by creating an Azure machine learning workspace."
-  ms.date: 06/10/2020
+  title: Create an Azure Machine Learning workspace
+  description: "Create an Azure Machine Learning workspace"
+  ms.date: 02/25/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

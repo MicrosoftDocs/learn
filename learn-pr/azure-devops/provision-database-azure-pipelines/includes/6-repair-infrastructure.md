@@ -12,7 +12,7 @@ Manually delete your App Service instance from the Azure portal to simulate a pr
 1. Select **tailspin-spacegame-web-rg**.
 1. From the list of resources, select your App Service instance.
 
-    ![Selecting the App Service resource in the Azure portal](../media/6-portal-select-app-service.png)
+    ![Selecting the App Service resource in the Azure portal.](../media/6-portal-select-app-service.png)
 
     > [!NOTE]
     > You can also select other resources if you want. Just be sure not to select your key vault or the database. Your Resource Manager template requires data from the key vault to provision your infrastructure, and your database has data in it that you don't want to lose.
@@ -39,11 +39,11 @@ Manually trigger the pipeline to run so that Resource Manager can repair your in
 1. Go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines showing the completed stages](../media/6-pipeline-stages-overview.png)
+    ![Azure Pipelines showing the completed stages.](../media/6-pipeline-stages-overview.png)
 
     You see that the deployment finished successfully. Notice that the *Apply database schema changes* stage was skipped. This is because the changes were applied in the last pipeline run, and there are no database schema changes to be approved for this pipeline run.
 1. Refresh the web browser tab that shows the _Space Game_ website.
 
     You see that the _Space Game_ website is redeployed to App Service.
 
-    ![The Space Game website](../media/5-space-game-home-page.png)
+    ![The Space Game website.](../media/5-space-game-home-page.png)

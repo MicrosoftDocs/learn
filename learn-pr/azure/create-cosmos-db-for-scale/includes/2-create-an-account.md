@@ -25,9 +25,11 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
    ![Create a resource from Azure portal menu](../media/2-create-a-resource-azure-cosmos-db.png)
 
-1. Select **Databases** > **Azure Cosmos DB**.
+1. Select **Databases**, then **Azure Cosmos DB**, and then click **Create**.
 
    ![Select Azure Cosmos DB](../media/2-select-database-azure-cosmos-db.png)
+   
+   If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
@@ -38,10 +40,11 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | **Subscription** | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
     | **Resource Group** | *<rgn>[sandbox resource group name]</rgn>* | Here you would either create a new resource group, or select an existing one in your subscription. |
     | **Account Name** | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
-    | **API** | *Core (SQL)* | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select *Core (SQL)* because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API. |
+    | **API** | *Core (SQL)* | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (relational database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select *Core (SQL)* because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API. |
     | **Notebooks** | *Off* | Notebooks are not necessary for this module. |
-    | **Apply Free Tier Discount** | *Apply* | You will use the free tier to complete this module. |
     | **Location** | *Select the region closest to you from the list above* | Select the location where the database should be located. |
+    | **Capacity mode** | *Provisioned throughput* | This is the default, and there is no need to change it. |
+    | **Apply Free Tier Discount** | *Do Not Apply* | The free tier is not necessary for this module. |
     | **Account Type** | *Non-Production* | This module is for learning, so your database is not meant for production use. |
     | **Geo-Redundancy** | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
     | **Multi-region Writes** | *Enable* | This setting enables you to write to multiple regions at the same time. |

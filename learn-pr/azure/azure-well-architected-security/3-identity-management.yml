@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-security.3-identity-management
 title: Identity management
 metadata:
   title: Identity management
-  description: In this unit we'll discuss how to protect your identities
+  description: In this unit, we'll discuss how to protect your identities
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,32 +15,32 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is NOT a benefit of single sign-on?'
+  - content: 'Which of the following is *not* a benefit of single sign-on?'
     choices:
-    - content: 'Increased complexity assigning permissions to users'
+    - content: 'Increased complexity in assigning permissions to users'
       isCorrect: true
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
     - content: 'Fewer IDs and passwords for users to remember'
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
     - content: 'Lower administration effort when users change roles or leave an organization'
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
-    - content: 'Ensures a consistent password policy across applications'
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
+    - content: 'Ensuring a consistent password policy across applications'
       isCorrect: false
-      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are fewer identities to manage.'
 
-  - content: 'Which of the following would be a valid second element for MFA, when combined with a password?'
+  - content: 'Which of the following would be a valid second element for multifactor authentication, when combined with a password?'
     choices:
-    - content: 'A drivers license'
+    - content: "A driver's license"
       isCorrect: false
-      explanation: "A drivers license can't be used for MFA."
+      explanation: "A driver's license can't be used for multifactor authentication."
     - content: 'A time-based one-time password'
       isCorrect: true
-      explanation: 'Applications that generate time-based one-time passwords are great to use for MFA.'
+      explanation: 'Applications that generate time-based one-time passwords are great to use for multifactor authentication.'
     - content: 'Your account number'
       isCorrect: false
-      explanation: "Your account number can't be used for MFA."
+      explanation: "Your account number can't be used for multifactor authentication."
     - content: 'Your car keys'
       isCorrect: false
-      explanation: "Your car keys can't be used for MFA."
+      explanation: "Your car keys can't be used for multifactor authentication."

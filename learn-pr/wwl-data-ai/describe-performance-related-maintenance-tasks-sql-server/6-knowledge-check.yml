@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which platform supports automatic index management?"
+    choices:
+    - content: "Azure SQL Managed Instance"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL Managed instance does not support automatic index management."
+    - content: "Azure SQL Database"
+      isCorrect: true
+      explanation: "That's correct. SQL Database does support automatic indexing creation and removal."
+    - content: "SQL Server in an Azure VM"
+      isCorrect: false
+      explanation: "That's incorrect. SQL Server in a VM does not currently support automatic index management."
+  - content: "Which statistics option allows statistics to be updated while a query executes against the object the statistics are based on?"
+    choices:
+    - content: "Auto Create Incremental Statistics"
+      isCorrect: false
+      explanation: "That's incorrect. With this option, update of statistics will be blocked by query execution."
+    - content: "Auto Create Statistics"
+      isCorrect: false
+      explanation: "That's incorrect. With this option, update of statistics will be blocked by query execution."
+    - content: "Auto Update Statistics Asynchronously"
+      isCorrect: true
+      explanation: "That's correct. The 'Auto Update Statistics Asynchronously' option allows for statistics to be updated during query execution."
+  - content: "Which DVM shows the status of a plan updated by automatic tuning?"
+    choices:
+    - content: "sys.dm_db_tuning_recommendations"
+      isCorrect: true
+      explanation: "That's correct. This DMV shows the recommendations and the status."
+    - content: "sys.dm_db_automatic_tuning_options"
+      isCorrect: false
+      explanation: "That's incorrect. This catalog view shows the configuration of the feature."
+    - content: "sys.query_store_query"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV will just show the history of query executions."

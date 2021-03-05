@@ -17,6 +17,7 @@ abstract: |
   - Apply policies to enforce standards in your Azure environments
   - Use resource locks to protect critical Azure resources from accidental deletion
 iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
+hidden: false
 levels:
 - intermediate
 prerequisites: |
@@ -24,7 +25,6 @@ prerequisites: |
 roles:
 - solution-architect
 - administrator
-- student
 products:
 - azure
 - azure-resource-manager

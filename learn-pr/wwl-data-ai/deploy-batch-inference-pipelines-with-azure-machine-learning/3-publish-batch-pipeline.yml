@@ -3,8 +3,8 @@ uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.3-pu
 title: Publishing a batch inference pipeline
 metadata:
   title: Publishing a batch inference pipeline
-  description: "Learn how to publish a batch inference pipeline as a REST service."
-  ms.date: 07/02/2020
+  description: "Publishing a batch inference pipeline"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

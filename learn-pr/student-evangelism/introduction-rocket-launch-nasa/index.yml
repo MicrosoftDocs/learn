@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.introduction-rocket-launch-nasa
+metadata:
+  title: Introduction to rocket launches
+  description: Get an introduction to how NASA chooses dates for a rocket launch and learn about some machine learning fundamentals.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to rocket launches
+summary: Get an introduction to how NASA chooses dates for a rocket launch and learn about some machine learning fundamentals.
+abstract: |
+ In this module, you'll begin to discover: 
+ - The challenges weather can pose on rocket launches
+ - The data science lifecycle
+ - How machine learning works
+ - What role ethics plays in machine learning
+prerequisites: |
+ - A Windows, Mac, or Linux computer
+ - Some Python skills
+iconUrl: /learn/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- vs-code
+units:
+- learn.student-evangelism.introduction-rocket-launch-nasa.1-introduction
+- learn.student-evangelism.introduction-rocket-launch-nasa.2-predict-weather-for-launch
+- learn.student-evangelism.introduction-rocket-launch-nasa.3-analyze-data
+- learn.student-evangelism.introduction-rocket-launch-nasa.4-basics-machine-learning
+- learn.student-evangelism.introduction-rocket-launch-nasa.5-gather-data
+- learn.student-evangelism.introduction-rocket-launch-nasa.6-choose-model
+- learn.student-evangelism.introduction-rocket-launch-nasa.7-train-test-model
+- learn.student-evangelism.introduction-rocket-launch-nasa.8-ethics-machine-learning
+- learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
+- learn.student-evangelism.introduction-rocket-launch-nasa.10-summary
+badge:
+  uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge 

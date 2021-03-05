@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-network-security.capture-network-traffic-with-network-watcher
+title: Capture network traffic with network watcher
+metadata:
+  title: Capture network traffic with network watcher
+  description: "Capture network traffic with network watcher"
+  ms.date: 09/25/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/08-capture-network-traffic-network-watcher.md)]

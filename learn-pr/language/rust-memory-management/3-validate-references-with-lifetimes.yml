@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.rust-memory-management.3-validate-references-with-lifetimes
+metadata:
+  title: Validate references by using lifetimes
+  description: Learn about how to use lifetimes to prevent dangling references.
+  ms.date: 01/21/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Validate references by using lifetimes
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-validate-references-with-lifetimes.md)]

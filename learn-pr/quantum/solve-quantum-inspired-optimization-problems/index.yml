@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.quantum.solve-quantum-inspired-optimization-problems
 metadata:
-  title: Solve optimization problems by using quantum-inspired optimization - Learn
+  title: Solve optimization problems by using quantum-inspired optimization
   description: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
   ms.date: 05/19/2020
   author: KittyYeungQ
@@ -12,12 +12,16 @@ title: Solve optimization problems by using quantum-inspired optimization
 summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
 abstract: |
   In this module, you'll:
-
   - Learn about the origins of quantum-inspired algorithms.
-  - See which kinds of problems are best suited to these techniques.
+  - See which kinds of problems are best suited to this method.
   - Understand how algorithms inspired by physical processes are used to solve difficult problems.
-  - Apply quantum-inspired optimization to a real-world problem.
-prerequisites: None
+  - Solve a combinatorial optimization problem by using the Azure Quantum optimization service.
+prerequisites: |
+  - The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true)
+  - [Jupyter Notebook](https://jupyter.org/install.html?azure-portal=true)
+  - An Azure Quantum workspace
+
+  If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 iconUrl: /learn/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
 ratingEnabled: true
 levels:
@@ -29,7 +33,7 @@ products:
 units:
 - learn.quantum.solve-quantum-inspired-optimization-problems.1-introduction
 - learn.quantum.solve-quantum-inspired-optimization-problems.2-what-are-quantum-inspired-algorithms
-- learn.quantum.solve-quantum-inspired-optimization-problems.3-when-is-quantum-inspired-optimization-useful
+- learn.quantum.solve-quantum-inspired-optimization-problems.3-optimization-basics
 - learn.quantum.solve-quantum-inspired-optimization-problems.4-how-quantum-inspired-optimization-solves-problems
 - learn.quantum.solve-quantum-inspired-optimization-problems.5-apply-quantum-inspired-optimization-real-world
 - learn.quantum.solve-quantum-inspired-optimization-problems.6-knowledge-check

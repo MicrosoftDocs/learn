@@ -1,0 +1,55 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: tcNickolas
+  ms.author: mamykhai
+  ms.date: 09/19/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+  show_latex: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'You apply a marking oracle that implements the check "Are two bits of the input different?" to a state $\frac12 (|00\rangle + |01\rangle + |10\rangle + |11\rangle) \otimes |1\rangle$, where the first two qubits are the input register and the last qubit is the output qubit. What will the state be after the oracle application?'
+    choices:
+    - content: '$\frac12 (|00\rangle \otimes |1\rangle + |01\rangle \otimes |0\rangle + |10\rangle \otimes |0\rangle + |11\rangle \otimes |1\rangle)$'
+      isCorrect: true
+      explanation: "Indeed, to apply the oracle to a superposition state you need to split the expression into a linear combination of basis states and apply the oracle to each term individually. This will flip the state of the third qubit for input states |01⟩ and |10⟩."
+    - content: '$\frac12 (|00\rangle - |01\rangle - |10\rangle + |11\rangle) \otimes |1\rangle$'
+      isCorrect: false
+      explanation: 'Applying a phase oracle that implements this check would indeed yield this state. A marking oracle stores the computation result in the target qubit.'
+    - content: '$\frac12 (|00\rangle \otimes |0\rangle + |01\rangle \otimes |1\rangle + |10\rangle \otimes |1\rangle + |11\rangle \otimes |0\rangle)$'
+      isCorrect: false
+      explanation: "Remember that the oracle doesn't overwrite the state of the target qubit with the computation result, but rather flips the state if the computation result is 1."
+
+  - content: "You're trying to solve a problem, and it turns out that exactly half of the possible inputs are solutions to the problem. How will the number of iterations affect the success probability of Grover's algorithm?"
+    choices:
+    - content: 'The success probability first increases to nearly 100%, then decreases to nearly 0%, then increases again, and so on.'
+      isCorrect: false
+      explanation: 'This is the success probability behavior in a typical case. Is there anything special about this problem that would cause a different behavior? You might want to think about the algorithm visualization from unit 5.'
+    - content: 'The success probability remains the same regardless of the number of iterations.'
+      isCorrect: true
+      explanation: "Indeed, if you recall the circle visualization from unit 5, you'll see that the angle θ will be exactly 45 degrees. Each iteration will rotate the state by 90 degrees, keeping the success probability constant and equal to 50%."
+    - content: 'The success probability first decreases to nearly 0%, then increases to nearly 100%, then decreases again, and so on.'
+      isCorrect: false
+      explanation: 'This is the success probability behavior if the solutions comprise more than half of the possible inputs.'
+
+  - content: "Which of these problems would benefit the most from a quantum speedup offered by Grover's search algorithm?"
+    choices:
+    - content: 'A database search, such as checking whether a table contains the given element'
+      isCorrect: false
+      explanation: 'Searching databases has efficient classical approaches, such as indexes and distributed databases, and is hard to implement on a quantum computer.'
+    - content: 'A 2-SAT problem: Boolean satisfiability problem with at most two literals per clause'
+      isCorrect: false
+      explanation: "2-SAT problem has a classical solution that runs in polynomial time. Grover's algorithm has exponential complexity, so it doesn't offer a speedup over the classical solution."
+    - content: 'A cryptographic problem, such as decrypting symmetric cryptography keys'
+      isCorrect: true
+      explanation: 'These problems are indeed a candidate for a practical application of quantum search, though smaller instances can be solved using massively parallel classical computation. The field of post-quantum cryptography researches cryptosystems that will be secure from quantum algorithms.'

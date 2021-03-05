@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-user-authentication.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these authentication methods offers the highest level of security?"
+    choices:
+    - content: "SMS verification"
+      isCorrect: false
+      explanation: "Incorrect. SMS text message verification offers a moderate level of security, but there are other options that provide better security."
+    - content: "Microsoft Authenticator App"
+      isCorrect: true
+      explanation: "Correct. Microsoft recommends using the Microsoft Authenticator app, which provides the best user experience and multiple authentication mode."
+    - content: "Voice call verification"
+      isCorrect: false
+      explanation: "Incorrect. Voice call verification offers a moderate level of security, but there are other options that provide better security."
+  - content: "Which of the following is a security group used by Hybrid Windows Hello for Business when no Windows Server 2016 or later domain controllers are deployed?"
+    choices:
+    - content: "KeyCredential Admins"
+      isCorrect: true
+      explanation: "Correct. To use Windows Hello for Business, you must create the KeyCredential Admins security group and the Windows Hello for Business Users security groups."
+    - content: "Enterprise Key Admins"
+      isCorrect: false
+      explanation: "Incorrect. The security groups used by Windows Hello for Business are the KeyCredential Admins security group and the Windows Hello for Business Users security group."
+    - content: "Windows Authorization Access Group"
+      isCorrect: false
+      explanation: "Incorrect. The security groups used by Windows Hello for Business are the KeyCredential Admins security group and the Windows Hello for Business Users security group."
+  - content: "Which is the recommended mode to start with when deploying Azure AD Password Protection?"
+    choices:
+    - content: "Audit mode"
+      isCorrect: true
+      explanation: "Correct. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."
+    - content: "None"
+      isCorrect: false
+      explanation: "Incorrect. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."
+    - content: "Enforced mode"
+      isCorrect: false
+      explanation: "Incorrect. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."

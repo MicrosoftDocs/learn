@@ -14,7 +14,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. The article [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. The article [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -46,13 +46,13 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint or work iteration.
+In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on these top issues for the current sprint.
 
-![Azure Boards item showing the tasks for this sprint](../media/4-boards.png)
+![Azure Boards item showing the tasks for this sprint.](../media/4-boards.png)
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -63,14 +63,14 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    ![Azure DevOps showing the Boards menu.](../../shared/media/azure-devops-boards-menu.png)
 
 1. From the **Provision a database in each environment** work item, select the arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    ![Assigning the work item to yourself.](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/4-boards-2.png)
+    ![Azure Boards showing the card in the Doing column.](../media/4-boards-2.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 

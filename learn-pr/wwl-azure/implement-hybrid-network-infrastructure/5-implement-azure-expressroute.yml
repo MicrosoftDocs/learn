@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.implement-azure-expressroute
+title: Implement Azure ExpressRoute
+metadata:
+  title: Implement Azure ExpressRoute
+  description: Implement Azure ExpressRoute
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-implement-azure-expressroute.md)]

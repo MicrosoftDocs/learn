@@ -1,33 +1,26 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.devops-dojo-white-belt-foundation
 metadata:
-  title: DevOps dojo white belt foundations
-  description: Familiarize yourself with DevOps basic concepts and principles.
-  ms.date: 03/06/2020
+  title: 'Introduce DevOps Dojo: Create efficiencies that support your business'
+  description: Start your DevOps Dojo journey.  Create multidisciplinary DevOps teams by using shared tools and processes that are designed to make your organization’s software development and implementation projects more efficient.
+  ms.date: 09/17/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn about DevOps dojo white belt foundation
+title: 'Introduce DevOps Dojo: Create efficiencies that support your business'
 prerequisites: |
   none
 summary: |
-  The DevOps dojo white belt foundation course aims to provide you with:
-  - A high-level understanding of DevOps
-  - A DevOps taxonomy to help familiarize and provide you with an understanding of DevOps concepts and principles
+  Start your DevOps Dojo journey.  Learn how to create multidisciplinary DevOps teams by using shared tools and processes designed to make your organization’s software development and implementation projects more efficient.
 iconUrl: /learn/achievements/devops-dojo-white-belt-foundation.svg
 levels:
 - beginner
 roles:
 - administrator
-- ai-edge-engineer
-- ai-engineer
 - business-analyst
 - business-owner
 - business-user
-- data-analyst
-- data-engineer
-- data-scientist
 - developer
 - devops-engineer
 - functional-consultant

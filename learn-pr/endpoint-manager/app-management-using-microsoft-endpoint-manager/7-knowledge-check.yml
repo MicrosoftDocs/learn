@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.app-management-using-microsoft-endpoint-manager.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 02/11/2021
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+title: Knowledge Check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are app configuration policies verses app protection policies?"
+    choices:
+    - content: "App configuration policies and app protection policies are essentially the same thing."
+      isCorrect: false
+      explanation: "App configuration policies provide app configuration settings for both iOS/iPadOS and Android apps. App protection policies help secure access on devices by restricting actions users can take with organizational data."
+    - content: "App configuration policies help secure access on devices by restricting actions users can take with organizational data. App protection policies provide a method to configure how apps are set up."
+      isCorrect: false
+      explanation: "App configuration policies provide app configuration settings for both iOS/iPadOS and Android apps. App protection policies help secure access for devices by restricting actions users can take with organizational data."
+    - content: "App configuration policies provide app configuration settings for both iOS/iPadOS and Android apps. App protection policies help secure your devices."
+      isCorrect: true
+      explanation: ""      
+  - content: "What are protected apps?"
+    choices:
+    - content: "Protected apps are all apps that end users may be using on their device that are managed by a mobile device management (MDM) service."
+      isCorrect: false
+      explanation: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android. Microsoft documentation lists the most commonly available protected apps."
+    - content: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android."
+      isCorrect: true
+      explanation: ""
+    - content: "Protected apps are the apps that can be run on an end user's device that are managed by a mobile device management (MDM) service."
+      isCorrect: false
+      explanation: "Protected apps incorporate special mobile app management capabilities using the Intune App Software Development Kit (SDK) or the App Wrapping Tool for either iOS or Android."  
+  - content: "Can app protection policies be deployed on devices that are not enrolled in any MDM service?"
+    choices:
+    - content: "Yes. Your organization can use app protection policies as part of application management with and without using a mobile device management (MDM) service."
+      isCorrect: true
+      explanation: ""
+    - content: "No. Your organization can only use app protection policies with the Intune mobile device management (MDM) service."
+      isCorrect: false
+      explanation: "Your organization can use app protection policies as part of application management with and without using a mobile device management (MDM) service."

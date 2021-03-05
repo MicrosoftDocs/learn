@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/17/2019
-  author: olivierbloch
-  ms.author: Olivier.Bloch
+  author: PeterTurcan
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
@@ -16,41 +16,41 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What ID is identical for all devices connected to one IoT Central app?'
+  - content: 'Which ID is identical for all devices that connect to one IoT Central app?'
     choices: 
-    - content: 'Scope ID'
+    - content: 'ID scope'
       isCorrect: true
-      explanation: The Scope ID identifies the IoT Central app.
+      explanation: Correct. The ID scope identifies the IoT Central app.
     - content: 'Device ID'
       isCorrect: false
-      explanation: The Device ID is unique to each device.
-    - content: 'Primary Key'
+      explanation: Incorrect. The device ID is unique to each device.
+    - content: 'Primary key'
       isCorrect: false
-      explanation: The Primary Key is unique to each device.
+      explanation: Incorrect. The primary key is unique to each device.
 
-  - content: 'What is the process of authenticating devices to IoT Central known as?'
+  - content: 'In the IoT Central portal, what is the name of the process for authenticating devices to IoT Central?'
     choices: 
     - content: 'Authenticating'
       isCorrect: false
-      explanation: Good try, but no, there's a specific name for authenticating devices.
+      explanation: Good try, but no. There's a specific name for device authentication.
     - content: 'Servicing'
       isCorrect: false
-      explanation: Servicing is a broader term than authenticating devices.
+      explanation: Incorrect. Servicing is broader than device authentication.
     - content: 'Provisioning'
       isCorrect: true
-      explanation: This term is what you'll see in the IoT Central portal.
+      explanation: Correct. This term is what you'll see in the IoT Central portal.
       
-  - content: 'Internally, what elements make up a Geopoint?'
+  - content: 'Internally, what elements make up a geopoint?'
     choices: 
-    - content: 'Latitude, Longitude, Altitude'
+    - content: 'Latitude, longitude, and altitude'
       isCorrect: true
-      explanation: Altitude isn't needed in our scenario, but some applications will certainly require it.
-    - content: 'Latitude, Longitude'
+      explanation: Correct. Our scenario doesn't use altitude, but some applications require it.
+    - content: 'Latitude and longitude'
       isCorrect: false
-      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geopoint.
+      explanation: Incorrect. Our refrigerated truck scenario requires only these two values, but a geopoint includes more than just these values.
     - content: 'X and Y coordinates'
       isCorrect: false
-      explanation: X and Y coordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
-    - content: 'Latitude, Longitude, Time'
+      explanation: Incorrect. X and Y coordinates work best on 2D rectangular graphs. They don't work as well on a spheroid such as Earth.
+    - content: 'Latitude, longitude, and time'
       isCorrect: false
-      explanation: The space-time dimension isn't part of a Geopoint.
+      explanation: Incorrect. The space-time dimension isn't part of a geopoint.

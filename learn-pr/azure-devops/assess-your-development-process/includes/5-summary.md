@@ -13,7 +13,9 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 * [Azure DevOps](https://azure.com/devops?azure-portal=true)
 * [DevOps Resource Center](https://docs.microsoft.com/azure/devops/learn?azure-portal=true)
 
-## General recommendations for migrating and consolidating tools to Azure DevOps
+## Appendix: General recommendations for migrating and consolidating tools to Azure DevOps
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
 
 You've seen how analyzing all your existing artifacts and tools is the first step toward designing a DevOps strategy. Once you've done that, here are a few recommendations for developing migration and integration strategies you can use if you're using Azure DevOps.
 
@@ -71,8 +73,6 @@ If you decide to try to write the migration code yourself, the following blog po
 ### Migrating and integrating test tools
 
 [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/?azure-portal=true) are used to track manual testing for sprints and milestones. This allows you to track when that testing is complete.
-
-[Apache JMeter](https://docs.microsoft.com/azure/devops/test/load-test/get-started-jmeter-test?view=azure-devops&viewFallbackFrom=vsts&azure-portal=true) is open source software written in Java and designed to load test functional behavior and measure performance.
 
 [Pester](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-PesterRunner-Task&azure-portal=true) is a tool that can be used to automate the testing of PowerShell code.
 

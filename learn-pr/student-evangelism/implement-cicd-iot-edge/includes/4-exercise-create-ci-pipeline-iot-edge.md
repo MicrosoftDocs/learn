@@ -1,69 +1,86 @@
 ## Create Azure resources
 
-DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need to create cloud services that will be used for the module.
+Azure DevOps Projects creates a CI/CD pipeline in Azure DevOps. First, you'll need to create cloud services that will be used for the module.
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com/).
 
-2. Click on **Deploy to Azure** button below.
+1. Select the following **Deploy to Azure** button. The **Custom deployment** panel appears.
 
-   [![The illustration shows how to create Azure resources.](https://camo.githubusercontent.com/9285dd3998997a0835869065bb15e5d500475034/687474703a2f2f617a7572656465706c6f792e6e65742f6465706c6f79627574746f6e2e706e67)](https://azuredeploy.net/)
+   [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-oxford-implement-cicd-iot-edge%2Fmaster%2Fazuredeploy.json)
 
-3. On the web page, provide required information.
+1. On the **Basics** tab, fill in the following values for each setting.
 
-   1. Select **directory**
-   2. Select your **subscription**
-   3. Select "Create New" for **resource group**
-   4. Give a name to your **resource group name** or keep it as default
-   5. Provide a globally unique value for the **Resource Name Suffix** parameter
+    | Setting | Value |
+    | --- | --- |
+    | **Deployment scope** |
+    | Subscription | Select your subscription |
+    | Resource group | Select a name from the dropdown, or select the **Create New** link, and in the **Name** text box, enter a name. |
+    | **Parameters** |
+    | Region | Select the same region as your resource group |
+    | Resource Name Suffix | Enter a globally unique value |
 
-4. Review and deploy your resources to Azure
+1. Select **Review + create**, and then select **Create** to deploy your resources to Azure.
 
    > [!NOTE]
-   > If you encounter any issues in the deployment, it is advised to delete the created Resource Group (if any) and retry with a new value for the `Resource Name Suffix` parameter.
+   > If you encounter any issues in the deployment, we advise deleting the created resource group (if any), and retrying with a new value for the **Resource Name Suffix** parameter.
 
-5. Go to Azure portal to review your resources.
+1. After deployment successfully completes, select **Go to resource group** to review your resources.
 
-## Create Azure DevOps project
+## Create an Azure DevOps project
 
 1. If you don't have an Azure DevOps organization, you should follow the steps to create one for free.
 
    1. Open [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines) and choose **Start free**.
-   2. Sign in/up Microsoft
-   3. Give a name to your organization and create it.
+   1. Sign in/up with Microsoft.
+   1. Give a name to your organization, and create it.
 
-2. Create a new project in your organization. Give it a descriptive name and you can choose private or public. Then it will take you **Overview page** of your project.
+1. From the **Azure DevOps** page, on the upper right corner, select **New project**. The **Create new project** pane appears.
 
-3. Next step is to navigate to **Repos** then click the `Import` button underneath **Import a repository** and provide this url:
+1. In the **Project name** text box, enter a project name.
 
-   ```
-   https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge.git
-   ```
+1. In the **Description** text box, enter descriptive text about your new project.
 
-4. Begin import process of the repository into your Azure DevOps project.
+1. Under **Visibility**, select either private or public.
+
+1. Select **Create**. The project's welcome page appears.
+
+1. In the left menu pane, select **Repos**, and in the **Import a repository** box, select **Import**. The **Import a Git repository** pane appears.
+
+1. In the **Clone URL** field, enter this URL, and select **Import**.
+
+    ```
+    https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge.git
+    ```
 
 ## Create a CI pipeline
 
-This repository contains an Azure DevOps build definition which is preconfigured to build the included EdgeSolution in [azure-pipelines.yml](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/.azure-pipelines.yml). This build definition relies on an external plugin [Replace Tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens).
+This repository contains an Azure DevOps build definition, which is preconfigured to build the included EdgeSolution in [azure-pipelines.yml](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/.azure-pipelines.yml). This build definition relies on an external plugin called [Replace Tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens).
 
-1. Begin by installing the **Replace Tokens** task from the Visual Studio Marketplace by visiting this [link](https://marketplace.visualstudio.com/items?itemName=qetza.replacetoken&wt.mc_id=iotedgedevops-github-pdecarlo) and clicking the "Get it free" button, then install into the organization which contains your newly created Azure DevOps project.
+1. Begin by installing the **Replace Tokens** task from the Visual Studio Marketplace by visiting [this link](https://marketplace.visualstudio.com/) and selecting **Get it free**. Then, select **Install** to install the token into the organization that contains your newly created Azure DevOps project.
 
-2. Once this task is successfully installed, return to the Azure DevOps project and select **Repos** > Files then edit the `.azure-pipelines.yml` file.
+1. After this task is successfully installed, return to the Azure DevOps project, and select **Repos** > **Files**. Select the edit icon to edit the `.azure-pipelines.yml` file.
 
-3. Add the following comment to the top of the file as shown below.
+1. Add the following comment to the top of the file, as shown below.
 
    ```
    # This repository is built using Azure DevOps.
    ```
 
-   ![This illustration shows how to edit Azure pipeline.](../media/edit-pipeline.png)
+   ![This illustration shows how to edit an Azure pipeline.](../media/edit-pipeline.png)
 
-4. Commit your change and go back to **Files**.
+1. Select **Commit** to commit your change. The **Commit** pane appears. Select **Commit**.
 
-5. Set up Build. You should see that a build has kicked off upon editing the Build Definition.
+1. Return to the **Files** panel.
 
-6. Go to **Pipelines**. You will see the build will fail. This is to be expected as Azure DevOps will create the build definition with a name that contains spaces which cause a conflict in the "Azure IoT Edge - Build module images" task. To fix this, select **Pipelines** > Builds then "Rename" the newly created build definition so that it does not contain spaces.
+1. In the upper right corner, select **Set up build**, and then select **Run**. You should see that a build has kicked off upon editing the build definition.
 
-   ![The illustration shows how to fix build fail.](../media/rename-pipeline.png)
+1. In the left menu pane, select **Pipelines**. You will see the build will fail. This is to be expected, as Azure DevOps will create the build definition with a name that contains spaces, which cause a conflict in the "Azure IoT Edge - Build module images" task.
+
+1. To fix this, select **Pipelines**. The **Pipelines** panel appears.
+
+1. From the *Recently run pipelines*, at the far right, select the vertical ellipsis for your pipeline, and select **Rename/move**. The **Rename/move pipeline** dialog appears. In the **Name** text box, and rename the newly created build definition so that it does not contain spaces. Select **Save**.
+
+   ![The illustration shows how to fix a build failure.](../media/rename-pipeline.png)
 
 ### Create build definition variables
 
@@ -71,42 +88,46 @@ This repository contains an Azure DevOps build definition which is preconfigured
 
    - Azure Container Registry host name as `acr.host`
    - Azure Container Registry username as `acr.user`
-   - Azure Container Registry password as `acr.password`.
+   - Azure Container Registry password as `acr.password`
 
-2. Go to Azure portal and navigate to resource group you created for this module.
+1. Go to the Azure portal, and navigate to the resource group you created for this module.
 
-3. Select Container Registry resource and go to **Access keys** under **Settings**.
+1. Select the **Container Registry** resource.
 
-4. Copy the name of Login server, username and password.
+1. From the left menu pane, under **Settings**, select **Access keys**.
 
-   ![The illustration shows the access keys of Container Registry](../media/access-keys.png)
+1. Copy the **registry name**, **Login server**, **Username**, and **password**.
 
-5. Also you need to obtain the Application Insights instrumentation key which will be represented by `appinsights.instrumentationkey`.
+   ![The illustration shows the access keys of Container Registry.](../media/access-keys.png)
 
-6. Go to Azure portal and navigate to resource group you created for this module.
+1. Obtain the Application Insights instrumentation key, which will be represented by `appinsights.instrumentationkey`. Go to the Azure portal, and navigate to the resource group you created for this module.
 
-7. Select the Application Insights and copy the `Instrumentation key` in the Overview page.
+1. In the left menu pane, select **Overview**. Under the **Resources** tab, select the **Application Insights** resource.
 
-   ![The illustration shows the instrumentation key of Application Insight.](../media/instrumentation-key.png)
+1. In the **Essentials** section, copy the **Instrumentation Key**.
 
-8. Go back to Azure DevOps project and navigate to **Pipelines**.
+   ![The illustration shows the instrumentation key of Application Insights.](../media/instrumentation-key.png)
 
-9. Select the pipeline you run earlier and edit pipeline. Click Variables and start adding new variables.
+1. Go back to Azure DevOps project, and navigate to **Pipelines**.
+
+1. In the pipeline you ran earlier, select the far left vertical ellipsis, and then select **Edit**.
+
+1. In the upper left, select **Variables**. The **New variable** pane appears.
 
     ![The illustration shows adding new variables to the pipeline.](../media/add-variables.png)
 
-10. When you add four variables above with values, save and run the pipeline.
+1. Add four variables with names and values by slecting **OK** after each entry. When all four variables have been entered, select **Save**, and then select **Run**. The **Run pipeline** pane appears. Select **Run**.
 
-11. You review the status of pipeline by going back **Pipelines**. The build should complete successfully as shown below.
+1. Review the status of the pipeline by going back to **Pipelines**. The build should finish successfully as follows.
 
-    ![The illustration shows successful build.](../media/successful-build.png)
+    ![The illustration shows a successful build.](../media/successful-build.png)
 
-### Apply branch policy
+### Apply a branch policy
 
-1. With a successful build definition in place, we can now enforce continuous integration by applying a branch policy to the master branch. Start with selecting **Repos** > **Branches** then click the "..." on the row for the master branch and select "Branch policies".
+1. With a successful build definition in place, we can now enforce continuous integration by applying a branch policy to the master branch. In the left menu pane, select **Repos**, and again, in the left menu pane, select **Branches**. Select the vertical ellipsis at the far end of the row for the master branch, and from the dropdown, select **Branch policies**.
 
-2. Navigate to Build validation, click "Add build policy" and select the newly created Build pipeline. Keep everything as default then click the "Save" button.
+1. In the middle of the **master** panel, select **Build Validation**, and then select the **+** icon (Add new build policy), and select the newly created build pipeline. Keep everything with their default values, and then select **Save**.
 
    ![The illustration shows the branch policy added for the pipeline.](../media/branch-policy.png)
 
-   While this policy is enabled, all commits to feature branches will kick off an execution of the newly created Build pipeline and it must succeed in order for a pull request of those changes to be made to the master branch.
+   While this policy is enabled, all commits to feature branches will kick off an execution of the newly created build pipeline. It must succeed in order for a pull request of those changes to be made to the master branch.

@@ -3,8 +3,8 @@ uid: learn.wwl.monitor-models-with-azure-machine-learning.enabling-application-i
 title: Enable Application Insights
 metadata:
   title: Enable Application Insights
-  description: "Learn how to enable Application Insights for a model deployed as an Azure Machine Learning service."
-  ms.date: 07/02/2020
+  description: "Enable Application Insights"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

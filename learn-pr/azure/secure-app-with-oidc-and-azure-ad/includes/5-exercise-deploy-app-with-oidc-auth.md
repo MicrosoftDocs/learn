@@ -28,11 +28,11 @@ In this exercise, you'll configure an application to authenticate users against 
 
     |   |   |
     | - | - |
-    | `<domain-name>` | Your Azure AD tenant name |
-    | `<TenantID-GUID>` | The directory (tenant) ID that you noted in the previous exercise |
-    | `<ClientID-GUID>` | The application (client) ID that you noted in the previous exercise |
+    | `<domain-name>` | Your Azure AD tenant name. |
+    | `<TenantID-GUID>` | The directory (tenant) ID that you copied in the previous exercise. |
+    | `<ClientID-GUID>` | The application (client) ID that you copied in the previous exercise. |
 
-    Your completed file will look similar to this:
+    Your completed file will look similar to this.
 
     ```json
     {
@@ -52,7 +52,7 @@ In this exercise, you'll configure an application to authenticate users against 
     }
     ```
 
-1. Select **Ctrl+S** to save the file and **Ctrl+Q** to close the code editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file, and press <kbd>Ctrl+Q</kbd> to close the code editor.
 
 1. Run the following command to build and deploy the initial web app.
 
@@ -70,11 +70,11 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL of the web service:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select your user name in the upper-right corner, and then select **Switch directory**. Choose the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select your user name in the upper-right corner, and then select **Switch directory**. Select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
 
-1. In the left pane, select **Azure Active Directory**.
+1. In the left menu pane, select **Azure Active Directory**.
 
-1. Under **Manage**, select **App registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
+1. Under **Manage**, select **App registrations**. Then, select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
 
 1. Select **Authentication**.
 
@@ -102,4 +102,4 @@ Now let's configure the app registration to authorize the URL of the web service
 
 You've now created both the application registration and the web app itself. You've configured these objects with the information that they need to locate each other.
 
-Now that the web app is configured to authenticate against Azure AD, you can use that directory to manage all the user accounts that can access your application. The same accounts that grant users access to services like Office 365 can now be used to access your app. Users have to remember only one set of credentials for both systems. Administrators have less work to do because each user has only one account.
+Now that the web app is configured to authenticate against Azure AD, you can use that directory to manage all the user accounts that can access your application. The same accounts that grant users access to services like Microsoft 365 can now be used to access your app. Users have to remember only one set of credentials for both systems. Administrators have less work to do because each user has only one account.

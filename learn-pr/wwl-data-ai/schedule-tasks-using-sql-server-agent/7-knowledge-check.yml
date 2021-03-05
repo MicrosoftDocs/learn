@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.schedule-tasks-using-sql-server-agent.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/02/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What has to be configured before the SQL Server Agent can send email?"
+    choices:
+    - content: "a mail profile"
+      isCorrect: true
+      explanation: "That's correct. To send email to an operator you need to enable the email profile of the SQL Server Agent."
+    - content: "An agent job"
+      isCorrect: false
+      explanation: "That's incorrect. An agent job does not in and of itself send mail."
+    - content: "An alert"
+      isCorrect: false
+      explanation: "That's incorrect. While an alert can send an email, it is not a requirement for mail to be sent."
+  - content: "Which system database stores SQL Server Agent jobs and their information?"
+    choices:
+    - content: "msdb"
+      isCorrect: true
+      explanation: "That's correct. The msdb database acts as the data store for the SQL Server Agent."
+    - content: "Master"
+      isCorrect: false
+      explanation: "That's incorrect. Master stores information about logins and databases."
+    - content: "Model"
+      isCorrect: false
+      explanation: "That's incorrect. Model is used to provide a database to copy for new database creation."
+  - content: "Which operation recalculates the statistics on an index?"
+    choices:
+    - content: "Rebuild"
+      isCorrect: true
+      explanation: "That's correct. Rebuilding an index updates the statistics on the index."
+    - content: "Reorganize"
+      isCorrect: false
+      explanation: "That's incorrect. Reorganize rearranges pages, but does not calculate statistics."
+    - content: "Shrinking a file group"
+      isCorrect: false
+      explanation: "That's incorrect. Shrinking a file group does not have an impact on stats."
+  - content: "Which Extended Events target only writes to memory?"
+    choices:
+    - content: "Ring Buffer"
+      isCorrect: true
+      explanation: "That's correct. Ring Buffer is used to hold data in memory. Data is not persisted to disk and maybe frequently flushed from the buffer."
+    - content: "Target File"
+      isCorrect: false
+      explanation: "That's incorrect. The target file is persist storage of session data to disk."
+    - content: "Event Tracing for Windows"
+      isCorrect: false
+      explanation: "That's incorrect. ETW also persists data to disk."
+  - content: "Where do you implement a filter in your Extended Event Session?"
+    choices:
+    - content: "On the Event"
+      isCorrect: true
+      explanation: "That's correct. It is recommended that you configure a filter for each event that you are capturing."
+    - content: "On the Storage Target"
+      isCorrect: false
+      explanation: "That's incorrect. There is no predicate option on the storage target."
+    - content: "On a Global Field"
+      isCorrect: false
+      explanation: "That's incorrect. The fields do not fully define the data collection."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.run-antivirus-scan-devices
+title: Run Microsoft Defender antivirus scan on devices
+metadata:
+  title: Run Microsoft Defender antivirus scan on devices
+  description: "Run Microsoft Defender antivirus scan on devices"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-run-microsoft-defender-antivirus-scan-on-devices.md)]

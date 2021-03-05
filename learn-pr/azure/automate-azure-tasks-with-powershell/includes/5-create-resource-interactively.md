@@ -2,7 +2,7 @@ PowerShell lets you write commands and execute them immediately. This is known a
 
 Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
 
-When you type a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
+When you enter a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
 
 ## What are PowerShell cmdlets?
 
@@ -53,16 +53,16 @@ The Az module is available from a global repository called the PowerShell Galler
 
 To install the latest Azure PowerShell module, run the following commands:
 
-1. Open the **Start** menu and type **Windows PowerShell**.
+1. Open the **Start** menu, and enter **Windows PowerShell**.
 
 1. Right-click the **Windows PowerShell** icon and select **Run as administrator**.
 
 1. In the **User Account Control** dialog, select **Yes**.
 
-1. Type the following command, and then press Enter:
+1. Enter the following command, and then press <kbd>Enter</kbd>.
 
     ```powershell
-    Install-Module -Name Az -AllowClobber
+    Install-Module -Name Az -AllowClobber -SkipPublisherCheck
     ```
 
 This installs the module for all users by default (controlled by the scope parameter).
@@ -104,6 +104,7 @@ At line:1 char:1
 This normally indicates that the execution policy is "restricted", meaning you can't execute modules you download from an external source - including the PowerShell gallery. You can check whether this is the case by executing the command `Get-ExecutionPolicy`. If it returns "Restricted", then do the following:
 
 1. Open an elevated PowerShell command prompt.
+
 1. Use the `SetExecutionPolicy` cmdlet to change the policy to "RemoteSigned":
 
 ```powershell
@@ -127,7 +128,7 @@ You should then be able to use `Import-Module` to load the cmdlets.
 
 We use the same commands to install the Azure PowerShell on either Linux or macOS.
 
-1. In a terminal, type the following command to launch PowerShell Core with elevated privileges.
+1. In a terminal, run the following command to launch PowerShell Core with elevated privileges.
 
     ```bash
     sudo pwsh
@@ -165,7 +166,7 @@ There are four steps we need to perform:
 
 1. Create the resource group.
 
-1. Verify that creation was successful (see below).
+1. Verify that creation was successful (see the following).
 
 The following illustration shows an overview of these steps.
 
@@ -198,7 +199,7 @@ Connect-AzAccount
 
 You'll need to repeat these steps for every new PowerShell session you start since this module is not part of the core set.
 
-### Working with subscriptions
+### Work with subscriptions
 
 If you are new to Azure, you probably only have a single subscription. But if you have been using Azure for a while, you may have created multiple Azure subscriptions. You can configure Azure PowerShell to execute commands against a particular subscription.
 
@@ -209,12 +210,14 @@ You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to
 2. Change the subscription by passing the name of the one to select.
 
 ```powershell
-Select-AzSubscription -Subscription "Visual Studio Enterprise"
+Select-AzSubscription -SubscriptionId '53dde41e-916f-49f8-8108-558036f826ae'
 ```
 
-### Get a list of all Resource Groups
+If you need to look up the **Subscription ID** > open Azure, and on the home page, select **Subscriptions**.
 
-You can retrieve a list of all Resource Groups in the active subscription:
+### Get a list of all resource groups
+
+You can retrieve a list of all Resource Groups in the active subscription.
 
 ```powershell
 Get-AzResourceGroup
@@ -226,7 +229,7 @@ To get a more concise view, you can send the output from the `Get-AzResourceGrou
 Get-AzResourceGroup | Format-Table
 ```
 
-This will output something like:
+The output will look something like this.
 
 ```output
 ResourceGroupName                  Location       ProvisioningState Tags TagsTable ResourceId
@@ -235,7 +238,7 @@ cloud-shell-storage-southcentralus southcentralus Succeeded                     
 ExerciseResources                  eastus         Succeeded                        /subscriptions/xxxxxxxx-d3ce-4172...
 ```
 
-### Create a Resource Group
+### Create a resource group
 
 As you know, when you are creating resources in Azure, you will always place them into a resource group for management purposes. A resource group is often one of the first things you will create when starting a new application.
 
@@ -268,7 +271,7 @@ You can also filter it to specific resource groups to only list resources associ
 Get-AzResource -ResourceGroupName ExerciseResources
 ```
 
-### Creating an Azure Virtual Machine
+### Create an Azure Virtual Machine
 
 Another common task that could be done with PowerShell is to create VMs.
 
@@ -307,7 +310,7 @@ The `AzVM` suffix is specific to VM-based commands in PowerShell. There are seve
 | `Restart-AzVM` | Restart a VM. |
 | `Update-AzVM` | Updates the configuration for a VM. |
 
-#### Example: getting the information for a VM
+#### Example: Getting information for a VM
 
 You can list the VMs in your subscription with the `Get-AzVM -Status` command. This can also specify a VM with the `-Name` property. Here we assign it to a PowerShell variable:
 

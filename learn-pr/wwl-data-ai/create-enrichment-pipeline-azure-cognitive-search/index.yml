@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search
+metadata:
+  title: Create an enrichment pipeline
+  description: "Use the power of artificial intelligence to enrich your data and find new insights."
+  ms.date: 10/29/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an enrichment pipeline with Azure Cognitive Search
+summary: Use the power of artificial intelligence to enrich your data and find new insights.
+abstract: |
+  In this module you will learn how to:
+  - Use built-in cognitive skills to enrich an index
+  - Implement custom skills
+prerequisites: |
+  - Familiarity with with Microsoft Azure
+  - Application development experience with C# or Python
+  - Experience of building a basic search solution with Azure Cognitive Search
+iconUrl: /learn/achievements/create-an-enrichment-pipeline.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+products:
+- azure-cognitive-services
+- azure-functions
+- azure-storage
+- vs-code
+- azure-cognitive-search
+units:
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.introduction
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.get-ready-to-develop-search-solution
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-azure-resources-for-search
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-data-source
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-skillset
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-index
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-run-indexer
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.search-enriched-index
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.create-custom-skill
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.update-index
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.search-updated-index
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.knowledge-check
+- learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.summary
+badge:
+  uid: learn.wwl.create-enrichment-pipeline-with-azure-cognitive-search.badge

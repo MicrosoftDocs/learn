@@ -3,8 +3,8 @@ uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.featu
 title: Feature importance
 metadata:
   title: Feature importance
-  description: "Learn how to interpret feature importance."
-  ms.date: 07/02/2020
+  description: "Feature importance"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

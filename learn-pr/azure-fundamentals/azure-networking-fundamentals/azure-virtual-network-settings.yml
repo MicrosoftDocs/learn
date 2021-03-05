@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-networking-fundamentals.azure-virtual-network-settings
+title: Azure Virtual Network settings
+metadata:
+  title: Azure Virtual Network settings
+  description: In this unit, you'll learn about several settings for Azure Virtual Network.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/azure-virtual-network-settings.md)]

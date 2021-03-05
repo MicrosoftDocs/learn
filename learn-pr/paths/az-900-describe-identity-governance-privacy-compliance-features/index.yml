@@ -1,0 +1,88 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-identity-governance-privacy-compliance-features
+metadata:
+  title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features (AZ-900)"
+  description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards. Prepare for AZ-900.
+  brand: azure
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features"
+summary: |
+  With the rise of remote work, bring your own device (BYOD), mobile applications, and cloud applications, the primary security boundary has shifted from firewalls and physical access controls to _identity_.
+
+  Understanding who is using your systems and what they have permission to do are critical to keeping your data safe from attackers. To stay organized, manage costs, and meet your compliance goals, you need a good cloud governance strategy.
+
+  Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards.
+
+  Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  :::column-end:::
+  :::row-end:::
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" role="presentation"></img>
+
+    Part 5: Describe identity, governance, privacy, and compliance features
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+  :::column-end:::
+  :::row-end:::
+
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe identity, governance, privacy, and compliance features"
+  url: https://www.microsoft.com/videoplayer/embed/RE4McuP
+iconUrl: /learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
+levels:
+- beginner
+roles:
+- administrator
+- data-engineer
+- developer
+- devops-engineer
+- business-analyst
+- business-user
+- solution-architect
+products:
+- azure
+- azure-active-directory
+- azure-policy
+- azure-blueprints
+- azure-rbac
+modules:
+- learn.azure.intro-to-azure-fundamentals
+- learn.azure.secure-access-azure-identity-services
+- learn.azure.build-cloud-governance-strategy-azure
+- learn.azure.examine-privacy-compliance-data-protection-standards
+trophy:
+  uid: learn.az-900-describe-identity-governance-privacy-compliance-features.trophy

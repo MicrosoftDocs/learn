@@ -1,5 +1,23 @@
-Deployments to devices need to be done under tight control in production environments. To achieve this, you'll create a release pipeline that deploys to QA devices and smoke tests the edge runtime in a containerized device. This is accomplished by running an instance of the [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container), which is configured as a QA device then probing the IoT Hub to ensure QA device receives the desired deployment configuration and is able to successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
+Create a release pipeline that deploys to QA devices and smoke tests the edge runtime in a containerized device.
 
-Once you've created a release, you need to add a scalable integration test to the release pipeline. Integration testing is vital for IoT Edge solutions that rely on services to accomplish desired functionality. You'll set up a scalable deployment of QA Devices using an Azure Kubernetes cluster. You'll monitor these devices using the dockerappinsights module, which is configured in deployment.template.json. Completion of this step will require the configuration of an Azure Kubernetes Service.
+The steps to achieve this are:
 
-You begin by creating an Azure Kubernetes Service cluster in the Azure portal. Once you've completed this step, head back to the release pipeline and add a new stage after the "Smoke Test" based on "Deploy an application to a Kubernetes cluster by using its Helm chart" template. In Kubernetes, Helm helps you manage Kubernetes applications. Helm Charts help you define, install, and upgrade the Kubernetes application.
+1. Run an instance of [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container), which is configured as a QA device.
+
+1. Probe the IoT hub to ensure the QA device receives the correct deployment configuration and can successfully run all configured modules. This test is contained in [edgeSmokeTest.sh](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/scripts/edgeSmokeTest.sh).
+
+## Add tests
+
+Integration testing is vital for Azure IoT Edge solutions that rely on services to accomplish their functionality.
+
+1. Set up deployment of QA devices using an Azure Kubernetes cluster.
+
+1. Monitor these devices using the dockerappinsights module, which is configured in deployment.template.json. Completion of this step will require the configuration of Azure Kubernetes Service.
+
+## Configure an Azure Kubernetes Service
+
+1. Create an Azure Kubernetes Service cluster in the Azure portal.
+
+1. Add a new stage after **Smoke Test** to the pipeline. Use the **Deploy an application to a Kubernetes cluster by using its Helm chart** template.
+
+In Kubernetes, Helm helps you manage Kubernetes applications. Helm charts help you define, install, and upgrade the Kubernetes application.

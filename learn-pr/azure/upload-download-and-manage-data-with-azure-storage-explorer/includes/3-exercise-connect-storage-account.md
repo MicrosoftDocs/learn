@@ -42,9 +42,9 @@ When you first open Storage Explorer, it displays the Connect to Azure Storage w
 
     ![Screenshot that shows the account management panel after signing in to an Azure account](../media/3-account-panel-subscriptions-apply.png)
 
-   Confirm that the subscription and account details are correct, and then select **Apply**.
+   Confirm that the **Concierge Subscription** subscription is slected and account details are correct, and then select **Apply**.
 
-You've now connected Storage Explorer to your Azure subscription. Don't close the Storage Explorer application.
+You've now connected Storage Explorer to your Azure subscription. Leave Storage Explorer open while you work through the next steps.
 
 ## Create a storage account and add a blob
 
@@ -60,9 +60,9 @@ You've now connected Storage Explorer to your Azure subscription. Don't close th
 
     In the output, note the name of the storage account. After the storage account is created, switch back to Storage Explorer.
 
-1. Toggle the **EXPLORER** view so that the pane is shown.
+1. If it isn't currently visible, toggle the **EXPLORER** view so that the pane is shown.
 
-1. In the **EXPLORER** pane, locate and expand **Concierge Subscription**.
+1. In the **EXPLORER** pane, select **Refresh All**, then locate and expand **Concierge Subscription**.
 
     ![Screenshot that shows the expansion of Concierge Subscription](../media/3-storage-explorer-create-blob-1.png)
 

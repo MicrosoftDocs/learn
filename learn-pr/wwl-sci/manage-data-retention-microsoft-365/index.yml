@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.manage-data-retention-microsoft-365
+metadata:
+  title: Manage data retention in Microsoft 365 workloads
+  description: "Manage data retention in Microsoft 365 workloads"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Manage data retention in Microsoft 365 workloads
+summary: Learn how to manage retention for Microsoft 365, and how retention solutions are implemented in the individual Microsoft 365 services.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the retention features in Microsoft 365 workloads.
+  - Configure retention settings in Microsoft Teams and SharePoint Online.
+  - Recover content protected by retention settings.
+  - Implement retention for Exchange Mailbox items.
+  - Apply mailbox holds on Exchange Mailboxes.
+  - Regain protected items from Exchange Mailboxes.
+prerequisites: |
+  - Basic understanding of Microsoft 365 services
+  - Basic understanding of Microsoft 365 compliance features
+  - Basic understanding of how to create and publish retention labels
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- ip-admin
+products:
+- m365
+- m365-information-protection
+units:
+- learn.wwl.manage-data-retention-microsoft-365.introduction
+- learn.wwl.manage-data-retention-microsoft-365.apply-retention-to-microsoft-sharepoint-onedrive
+- learn.wwl.manage-data-retention-microsoft-365.apply-retention-to-microsoft-teams
+- learn.wwl.manage-data-retention-microsoft-365.compare-use-of-preservation-lock,-preservation-hold-pegulatory-retention-policie
+- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-teams,-sharepoint,-onedrive
+- learn.wwl.manage-data-retention-microsoft-365.implement-retention-policies-tags-microsoft-exchange
+- learn.wwl.manage-data-retention-microsoft-365.apply-mailbox-holds-microsoft-exchange
+- learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-exchange
+- learn.wwl.manage-data-retention-microsoft-365.knowledge-check
+- learn.wwl.manage-data-retention-microsoft-365.summary-resources
+badge:
+  uid: learn.wwl.manage-data-retention-microsoft-365.badge

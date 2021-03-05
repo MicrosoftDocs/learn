@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.create-host-web-sites-github-pages
 metadata:
-  title: "Create and host web sites by using GitHub Pages - Learn"
+  title: "Create and host web sites by using GitHub Pages"
   description: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
   ms.date: 06/26/2020
   author: tpetchel
@@ -29,6 +29,7 @@ roles:
 - administrator
 - developer
 - solution-architect
+- student
 products:
 - github
 - azure

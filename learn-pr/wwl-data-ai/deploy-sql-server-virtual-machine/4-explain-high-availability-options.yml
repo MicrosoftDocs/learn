@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sql-server-virtual-machine.explain-high-availability-options
+title: Explain SQL Server high availability options
+metadata:
+  title: Explain SQL Server high availability options
+  description: "Explain SQL Server high availability options"
+  ms.date: 02/05/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-explain-high-availability-options.md)]

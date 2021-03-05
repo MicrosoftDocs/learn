@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2020
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -43,7 +43,7 @@ quiz:
     - content: "A key-value store"
       isCorrect: true
       explanation: "That's correct. A key-value store can ingest large volumes of data rapidly. A thermometer in each room can send the data to the database."
-    - content: "A column family database."
+    - content: "A column family database"
       isCorrect: false
       explanation: "That's incorrect. A column family database is best suited for *wide* rows that can contain many thousands of columns."
     - content: "Write the temperatures to a blob in Azure Blob storage"

@@ -2,7 +2,7 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
 
 The following video shows how to create the Azure resources you'll need. Use the steps in this exercise to continue following along in your Azure subscription.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit6/player?format=ny]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBmt]
 
 ## Create the storage account
 
@@ -23,7 +23,7 @@ The following video shows how to create the Azure resources you'll need. Use the
 
 1. Wait for the storage account to be created.
 1. When you get the notification, select **Go to resource**.
-1. On the **Overview** page, under **Services**, select **Files**.
+1. On the **Overview** page, select **File shares**.
 1. Select **File share**.
 1. Enter these values:
 

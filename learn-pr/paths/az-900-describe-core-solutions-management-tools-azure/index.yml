@@ -1,0 +1,104 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-core-solutions-management-tools-azure
+metadata:
+  title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure (AZ-900)"
+  description: "Learn how to choose the best services from Azure to build and manage cloud solutions. Prepare for AZ-900."
+  brand: azure
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
+summary: |
+  Core solutions encompass a wide array of tools and services from Microsoft Azure. In this learning path, you'll be introduced to many of these tools and services and will be asked to help choose the best one for a given business scenario.
+  
+  By the end of this learning path, you'll be able to:
+  - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
+  - Choose the best software development process tools and services for a given business scenario.
+  - Choose the correct cloud monitoring service to address different kinds of business challenges.
+  - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
+  - Choose the right serverless computing technology for your business scenario.
+  - Choose the best Azure IoT service for a given business scenario.
+
+  Here are the learning paths in this series:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" role="presentation"></img>
+
+    Part 3: Describe core solutions and management tools on Azure
+  :::column-end:::
+  :::row-end:::
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+  :::column-end:::
+  :::row-end:::
+
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe core solutions and management tools on Azure"
+  url: https://www.microsoft.com/videoplayer/embed/RE4M6Z1
+iconUrl: /learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- student
+- technology-manager
+products:
+- azure
+- azure-cognitive-services
+- azure-machine-learning
+- azure-bot-service
+- azure-devops
+- azure-advisor
+- azure-monitor
+- azure-service-health
+- azure-portal
+- azure-clis
+- azure-resource-manager
+- azure-functions
+- azure-logic-apps
+- azure
+- azure-iot-hub
+- azure-iot-central
+modules:
+- learn.azure.intro-to-azure-fundamentals
+- learn.azure.ai-machine-learning-fundamentals
+- learn.azure.azure-devops-devtest-labs
+- learn.azure.monitoring-fundamentals
+- learn.azure.management-fundamentals
+- learn.azure.serverless-fundamentals
+- learn.azure.iot-fundamentals
+trophy:
+  uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy

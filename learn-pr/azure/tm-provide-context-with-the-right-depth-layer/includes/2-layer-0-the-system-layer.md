@@ -1,16 +1,21 @@
-The System Layer is the **starting ground** for any system and must be created for all your systems. 
+The system layer of data-flow diagrams is the starting point for any system and must be created for all your systems. 
 
-## What Does This Layer Contain?
+**Goal:** Represent **major system parts** with enough context to help you understand how they work and interact with each other.
 
-Data-flow diagrams in this layer contain major system parts with enough context to help you understand how they work and interact with each other.
+The system layer diagrams should fit in a single page. It should also contain only major processes handled by the system. Provide as much as context as possible and clearly label each element so anyone understands how it works.
 
-## When Should I Use This Layer?
+> [!TIP]
+> The **system layer** is also called the **context layer**.
 
-The System Layer should be required for every system you create. The high-level context helps anyone learn more about your system to engage in more meaningful discussions.
+## When to use the system layer
 
-## What If I Need to Deep Dive Into a System Part?
+The system layer should be required for every system you create. The high-level context helps anyone learn more about your system to engage in more meaningful discussions.
 
-In most cases, system parts **will** require a deeper dive because of the risk they introduce. Examples include:
+## Deep diving into a system part
+
+In most cases, system parts **will** require a deeper dive because of the risk they introduce. 
+
+Examples include:
 
 - **Any** new system that introduces unknown risks to the environment
 - New parsers, protocols, and file formats
@@ -24,15 +29,8 @@ If that's the case, create additional data-flow diagrams for each system part. F
 
 |Step|Guidance|
 |----|--------|
-|1|Create a process element with a clear description label, such as "Web Service Name"|
-|2|Create a new file and name it exactly the same way as the description label|
-|3|Focus the data-flow diagram only on the system part you're "zooming into"|
+|1|Create a process element with a clear description label, such as "Web Service Name."|
+|2|Create a new file and name it exactly the same way as the description label.|
+|3|Focus the data-flow diagram only on the system part you're "zooming into."|
 
-The result will be a series of data-flow diagrams in the **Process Layer**, known as Layer 1.
-
-## Remember
-
-The System Layer diagrams should fit in a single page. It should also contain only major processes handled by the system. Provide as much as context as possible and clearly label each element so anyone understands how it works.
-
-> [!TIP]
-> The **System Layer** is also called the **Context Layer**
+The result will be a series of data-flow diagrams in the **process layer**, known as layer 1.

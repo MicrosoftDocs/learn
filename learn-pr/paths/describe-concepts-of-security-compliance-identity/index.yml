@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-concepts-of-security-compliance-identity
+metadata:
+  title: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
+  description: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
+  ms.date: 02/15/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
+prerequisites: |
+  - None
+summary: |
+  Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, our privacy principles, and more. Also learn about threats and how to protect against them.
+iconUrl: /learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- m365
+modules:
+- learn.wwl.describe-security-concepts-methodologies
+- learn.wwl.describe-microsoft-security-compliance-principles
+trophy:
+  uid: learn.wwl.describe-concepts-of-security-compliance-identity.trophy

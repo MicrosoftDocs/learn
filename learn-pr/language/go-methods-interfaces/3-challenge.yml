@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-methods-interfaces.3-challenge
+metadata:
+  title: Challenge - Methods and interfaces
+  description: Practice what you've learned about methods, interfaces, and more by creating a custom package.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge - Methods and interfaces
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-challenge.md)]

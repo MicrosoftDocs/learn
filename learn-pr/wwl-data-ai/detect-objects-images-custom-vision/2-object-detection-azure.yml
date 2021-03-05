@@ -3,8 +3,8 @@ uid: learn.wwl.detect-objects-images-custom-vision.get-started
 title: Get started with object detection on Azure
 metadata:
   title: Get started with object detection on Azure
-  description: "Learn how to use the Custom Vision service to create an object detection solution."
-  ms.date: 06/07/2020
+  description: "Get started with object detection on Azure"
+  ms.date: 02/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial

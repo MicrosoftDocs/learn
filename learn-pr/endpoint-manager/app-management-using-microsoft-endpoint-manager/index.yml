@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.app-management-using-microsoft-endpoint-manager
+metadata:
+  title: Understand app management using Microsoft Endpoint Manager
+  description: In this module, you'll learn about app management using Microsoft Endpoint Manager. 
+  ms.date: 02/11/2021
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand app management using Microsoft Endpoint Manager
+summary: As part of application management, Microsoft Endpoint Manager helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
+abstract: | 
+  In this module, you will:
+  - Understand the how your organization's apps can be configured and protected.
+  - Understand the app management lifecycle.
+  - Learn about the data protection framework using app protection policies.
+prerequisites: None
+iconUrl: /learn/achievements/app-management-with-microsoft-endpoint-manager.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+products:
+- mem
+- m365
+units:
+- learn.app-management-using-microsoft-endpoint-manager.1-introduction
+- learn.app-management-using-microsoft-endpoint-manager.2-app-lifecycle
+- learn.app-management-using-microsoft-endpoint-manager.3-app-configuration
+- learn.app-management-using-microsoft-endpoint-manager.4-app-protection
+- learn.app-management-using-microsoft-endpoint-manager.5-protected-apps
+- learn.app-management-using-microsoft-endpoint-manager.6-data-protection-framework
+- learn.app-management-using-microsoft-endpoint-manager.7-knowledge-check
+- learn.app-management-using-microsoft-endpoint-manager.8-summary
+badge:
+  uid: learn.app-management-using-microsoft-endpoint-manager.badge

@@ -3,8 +3,8 @@ uid: learn.wwl.create-pipelines-in-aml.publishing-pipelines
 title: Publish pipelines
 metadata:
   title: Publish pipelines
-  description: "Learn how to publish a pipeline."
-  ms.date: 06/07/2020
+  description: "Publish pipelines"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

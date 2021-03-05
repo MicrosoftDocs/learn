@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.work-with-data-kql
+metadata:
+  title: Work with data in Azure Sentinel using Kusto Query Language
+  description: "Work with data in Azure Sentinel using Kusto Query Language"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with data in Azure Sentinel using Kusto Query Language
+summary: Learn how to use the Kusto Query Language (KQL) to manipulate string data ingested from log sources.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Extract data from unstructured string fields using KQL
+  - Extract data from structured string data using KQL
+  - Create Functions using KQL
+prerequisites: ""
+iconUrl: /learn/achievements/work-with-data-in-kql.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure-sentinel
+units:
+- learn.wwl.work-with-data-kql.introduction
+- learn.wwl.work-with-data-kql.extract-data-from-unstructured-string-fields
+- learn.wwl.work-with-data-kql.extract-data-from-structured-string-data
+- learn.wwl.work-with-data-kql.integrate-external-data
+- learn.wwl.work-with-data-kql.create-parsers-with-functions
+- learn.wwl.work-with-data-kql.knowledge-check
+- learn.wwl.work-with-data-kql.summary-resources
+badge:
+  uid: learn.wwl.work-with-data-kql.badge

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2020
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -27,17 +27,6 @@ quiz:
     - content: "To enable large number of users to query analytics data"
       isCorrect: false
       explanation: "That's incorrect. Azure Synapse Analytics is designed to support compute-intensive operations rather than high levels of query concurrency."
-  - content: "What is the purpose of data ingestion?"
-    choices:
-    - content: "To perform complex data transformations over data received from external sources"
-      isCorrect: false
-      explanation: "That's incorrect. Data ingestion has to run quickly, and shouldn't perform work that requires time and computation power."
-    - content: "To capture data flowing into a data warehouse system as quickly as possible"
-      isCorrect: true
-      explanation: "That's correct. Data ingestion can receive data from multiple sources, including streams, and must run quickly enough so that it doesn't lose any incoming data."
-    - content: "To visualize the results of data analysis"
-      isCorrect: false
-      explanation: "That's incorrect. Data ingestion is concerned with receiving data, not processing or visualizing that data."
   - content: "What is the primary difference between a *data lake* and a *data warehouse*?"
     choices:
     - content: "A data lake contains *structured information*, but a data warehouse holds *raw business data*"

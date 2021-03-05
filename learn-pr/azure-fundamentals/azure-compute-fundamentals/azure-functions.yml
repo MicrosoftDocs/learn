@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-compute-fundamentals.azure-functions
+title: When to use Azure Functions
+metadata:
+  title: When to use Azure Functions
+  description: In this unit, you'll learn about Azure Functions.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/azure-functions.md)]

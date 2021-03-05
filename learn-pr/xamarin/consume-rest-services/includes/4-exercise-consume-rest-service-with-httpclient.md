@@ -2,59 +2,17 @@ In this unit, you use a Xamarin.Forms application to consume a basic REST servic
 
 ## Create a book REST service
 
-First, you create the REST service so that you can consume it from your application. The REST service that you use is a basic book service. You use it to get a list of books, add new books, and update existing books. The service is already written, you just need to create a web app to host it.
+First, you create the REST service so that you can consume it from your application. The REST service that you use is a basic book service. You use it to get a list of books, add new books, and update existing books. You will deploy this service using the Azure Cloud Shell sandbox, which will give you a unique URL to use in the mobile app.
 
-You use Azure to create a web app to host the service. The web app is free and available over the internet. It lasts as long as the Azure sandbox is active.
+Run the following command in the command shell:
 
-Run the following commands in the Azure Cloud Shell on the right to create the web app.
+```bash
+. <(wget -q -O - https://aka.ms/mslearn-xamarin-consume-rest-services-setup)
+```
 
-1. Define a variable called **gitrepo** to store the location of the REST service code. The URL to the repository is https://github.com/MicrosoftDocs/mslearn-xamarin-consume-rest-services.
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-    ```bash
-    gitrepo=https://github.com/MicrosoftDocs/mslearn-xamarin-consume-rest-services
-    ```
-
-1. Define a variable called **gitpath** to store the location of the **BookServer** project file. The path is **src/webservice/BookServer/BookServer.csproj**.
-
-    ```bash
-    gitpath=src/webservice/BookServer/BookServer.csproj
-    ```
-
-1. Define a variable called **webappname** to store the name of the web app. Set the value to **bookserver$RANDOM**.
-
-    ```bash
-    webappname=bookserver$RANDOM
-    ```
-
-1. Create an Azure App Service plan in the free tier.
-
-    ```bash
-    az appservice plan create --name $webappname --resource-group <rgn>[sandbox resource group name]</rgn> --sku FREE
-    ```
-
-1. Create a web app to host the REST service.
-
-    ```bash
-    az webapp create --name $webappname --resource-group <rgn>[sandbox resource group name]</rgn> --plan $webappname
-    ```
-
-1. Add the project file path to your application settings.
-
-    ```bash
-    az webapp config appsettings set -g <rgn>[sandbox resource group name]</rgn> -n $webappname --settings PROJECT=$gitpath
-    ```
-
-1. Deploy the REST service from GitHub.
-
-    ```bash
-    az webapp deployment source config --name $webappname --resource-group <rgn>[sandbox resource group name]</rgn> --repo-url $gitrepo --branch master --manual-integration
-    ```
-
-1. Save the result of the following command. You use it later in your Xamarin.Forms application to connect to the REST service.
-
-    ```bash
-    echo https://$webappname.azurewebsites.net
-    ```
+This service is configured to store and return user specific book data based on the authorization token that is used when making REST calls. After 1 hour the data for the user will be deleted for the authorization token.
 
 ## Open the starter solution
 
@@ -81,7 +39,8 @@ The REST service requires you to sign in first to get a token. There's no user a
 1. Add the following field to your code. The value should be the URL that you saved previously followed by `/api/books/`.
 
     ```csharp
-    const string Url = "{Url from before}/api/books/";
+    static readonly string BaseAddress = "{Url from before}";
+    static readonly string Url = $"{BaseAddress}/api/books/";
     ```
 
 1. Add the following field to hold the token.
@@ -197,7 +156,7 @@ Your application can display all books and add new books. What happens if you cr
     public async Task Update(Book book)
     {
         HttpClient client = await GetClient();
-        await client.PutAsync(Url + "/" + book.ISBN,
+        await client.PutAsync(Url + book.ISBN,
             new StringContent(
                 JsonConvert.SerializeObject(book),
                 Encoding.UTF8, "application/json"));

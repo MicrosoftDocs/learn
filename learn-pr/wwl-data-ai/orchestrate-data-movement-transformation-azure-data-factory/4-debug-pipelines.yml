@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.debug-pipelines
+title: Debug data factory pipelines
+metadata:
+  title: Debug data factory pipelines
+  description: "Debug data factory pipelines"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-debug-pipelines.md)]

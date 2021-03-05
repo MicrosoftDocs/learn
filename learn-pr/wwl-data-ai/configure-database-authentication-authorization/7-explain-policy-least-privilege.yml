@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-database-authentication-authorization.explain-policy-of-least-privilege
+title: Explain the policy of least privilege
+metadata:
+  title: Explain the policy of least privilege
+  description: "Explain the policy of least privilege"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-explain-policy-least-privilege.md)]

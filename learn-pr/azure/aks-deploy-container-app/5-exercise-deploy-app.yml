@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deploy-container-app.5-exercise-deploy-app
+metadata:
+  title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
+  description: In this exercise, you'll create and push a Kubernetes workload to an Azure Container Registry instance. You'll then deploy the workload from the container registry to an Azure Kubernetes Service cluster by creating a deployment manifest file. 
+  ms.date: 07/31/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-deploy-app.md)]

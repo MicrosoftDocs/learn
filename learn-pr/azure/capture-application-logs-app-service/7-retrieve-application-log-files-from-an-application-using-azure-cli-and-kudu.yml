@@ -9,8 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-javascript
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

@@ -3,7 +3,7 @@ uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
   title: Explore provisioning and deploying non-relational data services in Azure
   description: "Explore provisioning and deploying non-relational data services in Azure"
-  ms.date: 06/29/2020
+  ms.date: 02/08/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -25,7 +25,6 @@ roles:
 - administrator
 - business-user
 - data-engineer
-- student
 products:
 - azure
 units:

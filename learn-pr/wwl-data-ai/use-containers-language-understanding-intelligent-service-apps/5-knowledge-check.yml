@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/04/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What value is required in the **Billing** argument for the docker run command?"
+    choices:
+    - content: "Valid credit card information."
+      isCorrect: false
+      explanation: "Incorrect. The arguments do not require credit card information."
+    - content: "The Azure subscription GUID where the LUIS authoring resource resides."
+      isCorrect: false
+      explanation: "Incorrect. Billing is associated with a subscription but the subscription ID is not required in this argument."
+    - content: "The LUIS authoring endpoint URI."
+      isCorrect: true
+      explanation: "Correct. The LUIS authoring endpoint URI is the value that is expected in the Billing argument of the docker run command."
+  - content: "What is the importance of the --mount type=bind,src=c:\\output\\,target=/output argument in the docker run command?"
+    choices:
+    - content: "Used to indicate where the docker error information is written to."
+      isCorrect: false
+      explanation: "Incorrect. This argument does not specify the error output location for Docker."
+    - content: "Indicates the directory where the LUIS app will store log files."
+      isCorrect: true
+      explanation: "Correct. The LUIS app will save log files to the output directory.  The log files contain the phrases entered when users hit the endpoint with queries."
+    - content: "It is the directory where the exported LUIS container file is placed."
+      isCorrect: false
+      explanation: "Incorrect. The exported LUIS container file goes into the input directory so docker can access it and add it to the container."

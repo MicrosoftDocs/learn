@@ -1,4 +1,4 @@
-Non-relational data is an all-encompassing term that means *anything not structured as a set of tables*. There are many different types of non-structured data, and the information is used for a wide variety of purposes. Consequently, there a number of different types of non-relational database management systems, each oriented towards a specific set of scenarios.
+Non-relational data is an all-encompassing term that means *anything not structured as a set of tables*. There are many different types of non-structured data, and the information is used for a wide variety of purposes. Consequently, there are many different types of non-relational database management systems, each oriented towards a specific set of scenarios.
 
 In this unit, you'll learn about some of the most common types of non-relational databases.
 
@@ -28,7 +28,7 @@ Azure Table storage is an example of a key-value store. Cosmos DB also implement
 
 ## What is a document database?
 
-A document database represents the opposite end of the NoSQL spectrum from a key-value store. In a document database, each document has a unique ID, but the fields in the documents are transparent to the database management system. Document databases typically store data in JSON format, as described in the previous unit, or they could be encoded using other formats such XML, YAML, JSON, BSON. Documents could even be stored as plain text. The fields in documents are exposed to the storage management system, enabling an application to query and filter data by using the values in these fields.
+A document database represents the opposite end of the NoSQL spectrum from a key-value store. In a document database, each document has a unique ID, but the fields in the documents are transparent to the database management system. Document databases typically store data in JSON format, as described in the previous unit, or they could be encoded using other formats such as XML, YAML, JSON, BSON. Documents could even be stored as plain text. The fields in documents are exposed to the storage management system, enabling an application to query and filter data by using the values in these fields.
 
 Typically, a document contains the entire data for an entity. What items constitute an entity are application-specific. For example, an entity could contain the details of a customer, an order, or a combination of both. A single document may contain information that would be spread across several relational tables in an RDBMS (relational database management system).
 
@@ -58,7 +58,7 @@ For example, if you need to store information about customers and their addresse
 
 The relational model supports a very generalized approach to implementing this type of relationship, but to find the address of any given customer an application needs to run a query that joins two tables. If this is the most common query performed by the application, then the overhead associated with performing this join operation can quickly become significant if there are a large number of requests and the tables themselves are large.
 
-The purpose of a column family database is to efficiently handle situations such as this. You can think of a column family database as holding tabular data comprising rows and columns, but you can divide the columns into groups known as column-families. Each column family holds a set of columns that are logically related together. THe image below shows one way of structuring the same information as the previous image, by using a column family database to group the data into two column-families holding the customer name and address information. Other ways of organizing the columns are possible, but you should implement your column-families to optimize the most common queries that your application performs. In this case, queries that retrieve the addresses of customers can fetch the data with fewer reads than would be required in the corresponding relational database; these queries can fetch the data directly from the **AddressInfo** column family.
+The purpose of a column family database is to efficiently handle situations such as this. You can think of a column family database as holding tabular data comprising rows and columns, but you can divide the columns into groups known as column-families. Each column family holds a set of columns that are logically related together. The image below shows one way of structuring the same information as the previous image, by using a column family database to group the data into two column-families holding the customer name and address information. Other ways of organizing the columns are possible, but you should implement your column-families to optimize the most common queries that your application performs. In this case, queries that retrieve the addresses of customers can fetch the data with fewer reads than would be required in the corresponding relational database; these queries can fetch the data directly from the **AddressInfo** column family.
 
 > [!div class="mx-imgBorder"]
 > ![Example of a column family database](../media/4-column-family.png)
@@ -70,7 +70,7 @@ In most column family databases, the column-families are stored separately. In t
 > [!div class="mx-imgBorder"]
 > ![The physical structure of a column family database](../media/4-column-family-physical.png)
 
-The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-familiy approach through the Cassandra API.
+The most widely used column family database management system is Apache Cassandra. Azure Cosmos DB supports the column-family approach through the Cassandra API.
 
 ## What is a graph database?
 

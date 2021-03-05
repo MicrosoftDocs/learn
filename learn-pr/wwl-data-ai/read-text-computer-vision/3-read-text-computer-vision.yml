@@ -3,13 +3,14 @@ uid: learn.wwl.read-text-computer-vision.exercise
 title: Exercise - Read text with the Computer Vision service
 metadata:
   title: Exercise - Read text with the Computer Vision service
-  description: "Get hands-on with the Computer Vision service and use it to read text in images."
-  ms.date: 06/19/2020
+  description: "Exercise - Read text with the Computer Vision service"
+  ms.date: 03/02/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88762
 durationInMinutes: 15
 content: |
   [!include[](includes/3-read-text-computer-vision.md)]

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-causes-of-performance-issues.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/10/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which isolation level should you choose if you want to prevent users reading data from blocking users writing data?"
+    choices:
+    - content: "Serializable"
+      isCorrect: false
+      explanation: "That's incorrect. This level will block writes from occurring while data is being read."
+    - content: "Read Committed Snapshot Isolation"
+      isCorrect: true
+      explanation: "That's correct. The level allows each reader to have their own version of the data and prevents readers from blocking writers."
+    - content: "Repeatable Read"
+      isCorrect: false
+      explanation: "That's incorrect. This level also blocks writes from occurring while data is being read."
+  - content: "Which DMV shows sessions holding locks?"
+    choices:
+    - content: "Sys.query_store_queries"
+      isCorrect: false
+      explanation: "That's incorrect. This DMV shows the queries that have been run against the database."
+    - content: "Sys.dm_tran_locks"
+      isCorrect: true
+      explanation: "That's correct. This DMV shows the active locks in a given database at the point of time in the query."
+    - content: "Sys.databases"
+      isCorrect: false
+      explanation: "That's incorrect. This catalog view provides information about databases."
+  - content: "Which Query Store catalog view provides the Query ID to allow for query tracking?"
+    choices:
+    - content: "Sys.query_store_plan"
+      isCorrect: false
+      explanation: "That's incorrect. This view stores the execution plans for queries."
+    - content: "Sys.query_store_runtime_statistics"
+      isCorrect: false
+      explanation: "That's incorrect. This view stores the performance history for each query."
+    - content: "Sys.query_store_queries"
+      isCorrect: true
+      explanation: "That's correct. This view contains the queryID and can be joined to other views for other information."

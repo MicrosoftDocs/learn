@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-network-infrastructure.implement-azure-vpn-options
+title: Implement Azure VPN options
+metadata:
+  title: Implement Azure VPN options
+  description: Implement Azure VPN options
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-implement-azure-vpn-options.md)]

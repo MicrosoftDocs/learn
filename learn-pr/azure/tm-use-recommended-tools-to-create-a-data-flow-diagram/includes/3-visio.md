@@ -2,7 +2,7 @@ Owned by Microsoft, Visio is recognized for its robust set of features to help a
 
 ## Pros
 
-Visio provides drag-and-drop functionality, as well as the ability to annotate diagrams, which are helpful when creating one for your system.
+Visio provides drag-and-drop functionality and the ability to annotate diagrams. Both are helpful when creating one for your system.
 
 ## Cons
 

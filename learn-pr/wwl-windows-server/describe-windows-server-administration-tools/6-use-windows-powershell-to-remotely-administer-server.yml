@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-windows-server-administration-tools.use-windows-powershell-to-remotely-administer-server
+title: Use Windows PowerShell to remotely administer a server
+metadata:
+  title: Use Windows PowerShell to remotely administer a server
+  description: "Use Windows PowerShell to remotely administer a server"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-use-windows-powershell-to-remotely-administer-server.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What cmdlet can be run on a remote Windows Server computer to enable PowerShell remoting?"
+    choices:
+    - content: "Enable-PSRemoting."
+      isCorrect: true
+      explanation: "That's correct. You use the `Enable-PSRemoting` cmdlet to enable Windows Remote Management firewall exceptions and enable the WinRM listener service."
+    - content: "New-PSSession."
+      isCorrect: false
+      explanation: "That's incorrect. You use the `New-PSSession` cmdlet to create a persistent session."
+    - content: "Enter-PSSession."
+      isCorrect: false
+      explanation: "That's incorrect. You use the `Enter-PSSession` cmdlet to connect to and start an interactive session."

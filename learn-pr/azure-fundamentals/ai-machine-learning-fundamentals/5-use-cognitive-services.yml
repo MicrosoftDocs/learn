@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ai-machine-learning-fundamentals.use-cognitive-services
+title: Use Cognitive Services for data analysis
+metadata:
+  title: Use Cognitive Services for data analysis
+  description: Evaluate possible solutions for your data analysis requirements.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+azureSandbox: false
+content: |
+  [!include[](includes/5-use-cognitive-services.md)]

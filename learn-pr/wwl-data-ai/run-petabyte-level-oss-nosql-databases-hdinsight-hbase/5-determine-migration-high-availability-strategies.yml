@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-migration-high-availability-strategies
+title: Determine migration and high availability strategies in HDInsight HBase
+metadata:
+  title: Determine migration and high availability strategies in HDInsight HBase
+  description: "Determine migration and high availability strategies in HDInsight HBase"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-determine-migration-high-availability-strategies.md)]

@@ -10,8 +10,8 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* Interested in understanding where your organization happens to be on its journey? Start the online assessment [here](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
+* [Download PDF](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4DIvg) of "AI Maturity and organizations: Understanding AI maturity."
 * [Download PDF](https://aka.ms/AIBSCULTFRAINTDWL) of "Discover the characteristics that foster an AI-Ready culture."
 * [Download PDF](https://aka.ms/AIBSCULTFRAFRADWL) of "Understand how Prosci's ADKAR framework can help you lead organizational change."
 * For more detailed information on these concepts, check out [Prosci’s article on the topic](https://www.prosci.com/resources/articles/seven-change-concepts).
-* For more information about the Five Levers of Change Management, go [here](https://www.prosci.com/resources/articles/five-levers-of-organizational-change-management).
+* See the [Five Levers of Change Management](https://www.prosci.com/resources/articles/five-levers-of-organizational-change-management) for more information.

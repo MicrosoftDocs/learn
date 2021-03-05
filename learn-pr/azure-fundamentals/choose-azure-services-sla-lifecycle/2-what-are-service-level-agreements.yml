@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-azure-services-sla-lifecycle.2-what-are-service-level-agreements
+title: What are service-level agreements (SLAs)?
+metadata:
+  description: "Learn what a service-level agreement (SLA) is, why it's important, and what you'll find in a typical SLA."
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-are-service-level-agreements.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.configure-always-availability-groups
+title: Configure Always-on availability groups
+metadata:
+  title: Configure Always-on availability groups
+  description: "Configure Always-on availability groups"
+  ms.date: 02/05/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-configure-always-availability-groups.md)]

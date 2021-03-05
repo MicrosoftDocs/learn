@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.deploy-mysql-mariadb-to-azure
+title: Deploy MySQL and MariaDB to Azure
+metadata:
+  title: Deploy MySQL and MariaDB to Azure
+  description: "Deploy MySQL and MariaDB to Azure"
+  ms.date: 12/16/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-deploy-mysql-mariadb-azure.md)]

@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage resources in Azure
-summary: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+summary:  |
+  Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](https://docs.microsoft.com/learn/certifications/azure-developer).
 prerequisites: None
 iconUrl: /learn/achievements/manage-resources-in-azure.svg
 levels:
@@ -28,7 +29,7 @@ modules:
 - learn.align-requirements-in-azure
 - learn.control-azure-services-with-cli
 - learn.automate-azure-tasks-with-powershell
-- learn.predict-costs-and-optimize-spending
+- learn.azure.plan-manage-azure-costs
 - learn.control-and-organize-with-resource-manager
 - learn.azure.move-azure-resources-to-another-resource-group
 trophy:

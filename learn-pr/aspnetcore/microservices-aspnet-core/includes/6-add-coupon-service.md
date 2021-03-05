@@ -122,21 +122,13 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
                         name: coupon-cm
         ```
 
-1. Set your current location to the coupon service project directory by using the following command:
+1. Run the following command to build the coupon service project:
 
-    ```bash
-    pushd src/Services/Coupon/Coupon.API/
+    ```dotnetcli
+    dotnet build src/Services/Coupon/Coupon.API/
     ```
 
-    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/src/Services/Coupon/Coupon.API":::*.
-
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
-
-1. Return to your previous location by using the following command:
-
-    ```bash
-    popd
-    ```
+    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
 
 1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Azure Cloud Shell editor. Notice the following things in this *:::no-loc text="Dockerfile":::*:
 

@@ -29,29 +29,29 @@ quiz:
       explanation: Azure is a cloud computing service, not a datacenter provider or hardware colocation service.
   - content: Which of the following Azure services is a platform as a service (PaaS) that can host Linux applications?
     choices:  
-    - content: Cognitive Search
+    - content: Azure Cognitive Services search APIs
       isCorrect: false
-      explanation: Cognitive Search is an AI-powered search service that can be used by applications on any platform. It does not host applications.
+      explanation: Cognitive Services provides search APIs that are powered by AI, and that can be used by applications on any platform. It doesn't host applications.
     - content: Virtual machines
       isCorrect: false
       explanation: Virtual machines are a component of infrastructure as a service (IaaS) computing.
     - content: Azure Migrate
       isCorrect: false
-      explanation: Azure Migrate is a set of tools to help migrate workloads to Azure. It can help you to migrate Linux-based workloads and applications, but it is not a hosting service.
-    - content: App Service
+      explanation: Azure Migrate is a set of tools to help migrate workloads to Azure. It can help you to migrate Linux-based workloads and applications, but it isn't a hosting service.
+    - content: Azure App Service
       isCorrect: true
-      explanation: App Service is a managed web application hosting platform that can host applications on Linux.
+      explanation: Azure App Service is a managed web application hosting platform that can host applications on Linux.
   - content: Which of the following is *not* a benefit of using an endorsed Linux distribution on Azure?
     choices:  
     - content: Availability of optimized, regularly-updated VM images
       isCorrect: false
-      explanation: Microsoft works with partners to provide VM images optimized for Azure and requires them to publish updates to their images on a regular cadence.
+      explanation: Microsoft works with partners to provide VM images optimized for Azure, and requires them to publish updates to their images regularly.
     - content: SLA connectivity guarantees
       isCorrect: false
-      explanation: Azure's VM platform SLA applies to Linux virtual machines only when endorsed images are used.
+      explanation: The VM platform SLA of Azure applies to Linux virtual machines only when endorsed images are used.
     - content: Enhanced compatibility with additional programming languages
       isCorrect: true
-      explanation: Endorsed distributions do not provide any benefits related to specific programming languages.
+      explanation: Endorsed distributions don't provide any benefits related to specific programming languages.
     - content: Distribution-specific benefits like SAP integration
       isCorrect: false
-      explanation: Microsoft's partnership with its endorsed distribution partners has created unique benefits such as SAP integration and Azure Oracle Interconnect.
+      explanation: Microsoft and its endorsed distribution partners have created unique benefits, such as SAP integration and Azure Oracle Interconnect.

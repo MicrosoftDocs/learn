@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.automate-github-using-github-script
 metadata:
-  title: "Automate GitHub by using GitHub Script - Learn"
+  title: "Automate GitHub by using GitHub Script"
   description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
   ms.date: 06/26/2020
   author: tpetchel

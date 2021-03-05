@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a protection provided by Azure Defender for DNS?"
+    choices:
+    - content: "Malware communicating with C&C server"
+      isCorrect: true
+      explanation: "Correct.  Command and Control detection over DNS is detected."
+    - content: "Malware encrypting data on a Device"
+      isCorrect: false
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+    - content: "Malware enumerating users on a Device"
+      isCorrect: false
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+  - content: "When does Azure Defender for Container Registries scan an image?"
+    choices:
+    - content: "Weekly"
+      isCorrect: false
+      explanation: "Incorrect.  Schedule scans are not an option."
+    - content: "Nightly"
+      isCorrect: false
+      explanation: "Incorrect.  Schedule scans are not an option."
+    - content: "Recently pulled"
+      isCorrect: true
+      explanation: "Correct. Azure Defender for container registries also scans any image that has been pulled within the last 30 days."
+  - content: "Which feature of Azure Defender for Servers examines files and registries of the operating system, application software, and others for changes that might indicate an attack?"
+    choices:
+    - content: "Adaptive application controls"
+      isCorrect: false
+      explanation: "Incorrect. This option is related to Applications."
+    - content: "Adaptive network hardening"
+      isCorrect: false
+      explanation: "Incorrect. This option is related to Network Security Groups."
+    - content: "File integrity monitoring"
+      isCorrect: true
+      explanation: "Correct. File integrity monitoring examines files."

@@ -17,7 +17,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -61,7 +61,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each *sprint*, or work iteration.
+Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 

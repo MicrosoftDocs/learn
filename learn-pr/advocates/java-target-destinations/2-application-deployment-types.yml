@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.java-target-destinations.2-application-deployment-types
+title: Application deployment types
+metadata:
+  title: Application deployment types
+  description: Learn about application deployment types for Java applications.
+  author: judubois
+  ms.author: judubois
+  ms.date: 11/16/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-application-deployment-types.md)]

@@ -1,0 +1,19 @@
+# beginning of file omitted for brevity
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-gw-cp
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /webshoppingagg/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      proxy_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
+      grpc_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;    
+  labels:
+    app: eshop
+spec:
+  # remainder of file omitted for brevity

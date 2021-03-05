@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-app-service-migration-assistant
 metadata:
-  title: Migrate an on-premises web application to Azure with the App Service Migration Assistant
+  title: Migrate an on-premises web application to Azure App Service
   description: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
   ms.date: 05/21/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate an on-premises web application to Azure with the App Service Migration Assistant
+title: Migrate an on-premises web application to Azure App Service
 summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
 abstract: |
   By the end of this module, you will be able to:
@@ -16,8 +16,8 @@ abstract: |
   - Assess the migration readiness of an on-premises web application with the Azure App Service Migration Assistant.
   - Use the Migration Assistant to migrate an on-premises web application to Azure App Service.
 prerequisites: |
-  - You should have some familiarity in working with Virtual Machines, Windows Server and Internet Information Services
-  - You should have some basic understanding of how Internet Information Services works, and its extensibility points, and how it hosts ASP.NET applications
+  - Some familiarity in working with virtual machines, Windows Server, and IIS
+  - A basic understanding of how IIS works, what its extensibility points are, and how it hosts ASP.NET applications
   - A Remote Desktop Protocol (RDP) client (included with all versions of Windows)
 ratingEnabled: true
 iconUrl: /learn/achievements/migrate-app-service-migration-assistant.svg
@@ -27,6 +27,7 @@ roles:
 - developer
 products:
 - azure
+- azure-app-service
 units:
 - learn.azure.migrate-app-service-migration-assistant.introduction
 - learn.azure.migrate-app-service-migration-assistant.exercise-setup

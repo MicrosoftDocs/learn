@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.8-windows-autopilot
+title: Understand Windows Autopilot
+metadata:
+  title: Understand Windows Autopilot
+  description: Learn how Windows Autopilot simplifies enrolling devices in Intune.
+  ms.date: 10/15/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-windows-autopilot.md)]

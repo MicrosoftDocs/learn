@@ -27,7 +27,7 @@ For more information, explore the [Accessibility overview of Microsoft Teams](ht
 
 ## PowerPoint Designer
 
-PowerPoint Designer improves your slides by automatically generating design ideas that you can choose from. While you*'*re putting content like images and text on a slide, Designer works in the background to match that content to *professionally designed layouts.
+PowerPoint Designer improves your slides by automatically generating design ideas that you can choose from. While you're putting content like images and text on a slide, Designer works in the background to match that content to *professionally designed layouts.
 
 Designer can be useful for anyone looking to take their presentation to the next level. The feature can also make it easier for people with disabilities to use PowerPoint. For example, people with mobility disabilities like reduced movement of arms or hands can use PowerPoint Designer to create professional-looking slides with fewer clicks of the mouse or keyboard commands.
 

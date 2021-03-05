@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-networking-fundamentals.azure-virtual-network-fundamentals
+title: Azure Virtual Network fundamentals
+metadata:
+  title: Azure Virtual Network fundamentals
+  description: In this unit, you'll learn about Azure Virtual Network.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/azure-virtual-network-fundamentals.md)]

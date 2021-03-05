@@ -34,7 +34,7 @@ The Azure portal features a functions editor experience, but in most cases it do
 
 Let's start with the Core Tools by taking a closer look at how to create functions and run them locally. We'll look at how to publish to Azure later on in this tutorial.
 
-## Creating functions locally
+## Create functions locally
 
 ### Function apps and functions projects
 
@@ -46,7 +46,7 @@ To get started developing, you need to create a functions project folder that's 
 
 With the Azure Functions Core Tools, you'll never need to do this! You can use the Core Tools to generate function projects and functions from scratch.
 
-### Creating a new functions project with `func init`
+### Create a new functions project with `func init`
 
 To create a new functions project, run `func init` on the command line.
 
@@ -61,7 +61,7 @@ When you create a new functions project, the files included in the project folde
 
 Functions projects that `func init` generates don't have any functions in them. Let's find out how to add one.
 
-### Creating a new function with `func new`
+### Create a new function with `func new`
 
 Each individual function in a project requires code and configuration to define its behavior. Running `func new` in a functions project folder will create a new function and all the files you need to get started developing.
 
@@ -71,12 +71,12 @@ After asking you which kind of function trigger you want to use and what you'd l
 
 In the next part of this tutorial, we'll use `func new` to create an HTTP-triggered function and modify the starter implementation to perform a simple interest calculation.
 
-## Running functions locally
+## Run functions locally
 
 Functions aren't programs that can be run on their own: they must be hosted by the functions host. The host is what powers everything outside of your function code: it loads configuration, listens for triggers and HTTP requests, starts the worker process for the language your functions are written in, writes log output and more. In Azure, function apps run the function host automatically when they start.
 
 You can use the Core Tools to run your own instance of the functions host and try out your functions locally before you publish them. By running your functions before publishing them, you can make sure your configuration and code loads correctly and test out your functions by making real HTTP calls to them without the need for Azure resources.
 
-To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools will display local URLs you can use to call of each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools will write any log output produced by the host to the terminal in real time.
+To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools will display local URLs you can use to call each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools will write any log output produced by the host to the terminal in real time.
 
 :::image type="content" source="../media/2-func-start-output.png" alt-text="func start output showing a function invocation URL." loc-scope="other":::

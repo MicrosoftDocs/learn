@@ -3,14 +3,14 @@ uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.8-exercise-rev
 title: Exercise - Review a trace analysis report in DEA
 metadata:
   title: Exercise - Review a trace analysis report in DEA
-  description: Exercise - Review a trace analysis report in DEA
-  ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  description: "Exercise - Review a trace analysis report in DEA"
+  ms.date: 01/07/2021
+  author: wwlpublish
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true
-interactive: bash 
 durationInMinutes: 7
 content: |
   [!include[](includes/8-exercise-review-trace-analysis-report.md)]
+interactive: bash

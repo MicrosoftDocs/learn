@@ -157,3 +157,238 @@ achievements:
   title: Predict numeric values with regression
   summary: Predict numeric values with regression
   iconUrl: /learn/achievements/introduction-to-regression.svg
+- uid: learn.data-ai.classify-images-with-vision-services.trophy
+  type: trophy
+  title: Process and classify images with the Azure Cognitive Vision Services
+  summary: Process and classify images with the Azure Cognitive Vision Services
+  iconUrl: /learn/achievements/data-ai/classify-images-with-vision-services.svg
+- uid: learn.wwl.explore-microsoft-azure-cloud-concepts.trophy
+  type: trophy
+  title: Explore Microsoft Azure cloud concepts (AZ-900)
+  summary: Explore Microsoft Azure cloud concepts (AZ-900)
+  iconUrl: /learn/achievements/explore-microsoft-azure-cloud-concepts.svg
+- uid: learn.wwl.distinguish-microsoft-azure-core-services.trophy
+  type: trophy
+  title: Distinguish Microsoft Azure Core Services (AZ-900)
+  summary: Distinguish Microsoft Azure Core Services (AZ-900)
+  iconUrl: /learn/achievements/distinguish-microsoft-azure-core-services.svg 
+- uid: learn.wwl.examine-microsoft-azure-security-privacy-compliance-trust.trophy
+  type: trophy
+  title: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  summary: Examine Microsoft Azure security, privacy, compliance, and trust (AZ-900)
+  iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg 
+- uid: learn.wwl.review-microsoft-azure-pricing-slas-lifecycles.trophy
+  type: trophy
+  title: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  summary: Review Microsoft Azure pricing, service level agreements, and lifecycles (AZ-900)
+  iconUrl: /learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
+- uid: learn.wwl.get-started-with-azure-fundamentals.badge
+  type: badge
+  title: Get started with Azure Fundamentals
+  summary: This module walks through the basics of Azure and how to get started on the path to completing the AZ-900 exam certification.
+  iconUrl: /learn/achievements/get-started-with-azure-fundamentals.svg
+- uid: learn.wwl.discuss-why-cloud-services.badge
+  type: badge
+  title: Discuss why cloud services
+  summary: Interested in the cloud, but aren't sure what it can do for you? Come explore cloud concepts, the benefits of cloud computing in Azure, and learn how Azure can save you time and money.
+  iconUrl: /learn/achievements/discuss-why-cloud-services.svg
+- uid: learn.wwl.distinguish-types-cloud-models.badge
+  type: badge
+  title: Distinguish types of cloud models
+  summary: There are three different cloud deployment models 'Public Cloud, Private Cloud, and Hybrid Cloud'. This module will enable you to decide how to work with different types of cloud deployments.
+  iconUrl: /learn/achievements/distinguish-types-cloud-models.svg
+- uid: learn.wwl.explore-types-cloud-services.badge
+  type: badge
+  title: Explore types of cloud services
+  summary: When talking about cloud computing, there are three major categories 'IaaS, SaaS, and PaaS'. This module will assist with using them in conversation, documentation, and training.
+  iconUrl: /learn/achievements/explore-types-cloud-services.svg
+- uid: learn.wwl.discuss-core-azure-architectural-components.badge
+  type: badge
+  title: Discuss core Azure architectural components
+  summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
+  iconUrl: /learn/achievements/discuss-core-azure-architectural-components.svg
+- uid: learn.wwl.define-core-azure-services-products.badge
+  type: badge
+  title: Define core Azure services and products
+  summary: In this module we'll learn about compute services, the use of virtual machines, and containers. We'll identify networking services such as Virtual Network, Azure Load Balancer, VPN Gateway, Application Gateway, and Azure Content Delivery Network.
+  iconUrl: /learn/achievements/define-core-azure-services-products.svg
+- uid: learn.wwl.identify-azure-solutions.badge
+  type: badge
+  title: Identify Azure solutions
+  summary: In this module we’ll discuss solutions such as IoT, Azure IoT Hub, and Microsoft IoT Central. We’ll also explore big data analytics services (Azure SQL Data Warehouse, HDInsight, Azure Data Lake Analytics).
+  iconUrl: /learn/achievements/identify-azure-solutions.svg
+- uid: learn.wwl.differentiate-azure-management-tools.badge
+  type: badge
+  title: Differentiate Azure management tools
+  summary: In this module, we'll showcase Azure portal, Azure PowerShell, Azure CLI, and Azure Cloud Shell. We'll also look at Azure Advisor, which provides recommendations on high availability, security, performance, and cost.
+  iconUrl: /learn/achievements/differentiate-azure-management-tools.svg
+- uid: learn.wwl.secure-network-connectivity.badge
+  type: badge
+  title: Secure network connectivity
+  summary: Secure network connectivity
+  iconUrl: /learn/achievements/secure-network-connectivity.svg
+- uid: learn.wwl.examine-core-identity-services.badge
+  type: badge
+  title: Examine core identity services
+  summary: Examine core identity services
+  iconUrl: /learn/achievements/examine-core-identity-services.svg
+- uid: learn.wwl.examine-azure-subscriptions.badge
+  type: badge
+  title: Examine Azure subscriptions
+  summary: Picking the right subscription for you business needs will help you track and control costs as you build solutions in the cloud.
+  iconUrl: /learn/achievements/examine-azure-subscriptions.svg
+- uid: learn.wwl.explore-azure-service-level-agreements.badge
+  type: badge
+  title: Explore Azure service level agreements (SLAs)
+  summary: You are placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
+  iconUrl: /learn/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.examine-service-lifecycle-azure.badge
+  type: badge
+  title: Examine service lifecycle in Azure
+  summary: Everyone wants to use the next great feature in their solutions before their competitors. Explore features designed to help you know what is coming next.
+  iconUrl: /learn/achievements/examine-service-lifecycle-azure.svg
+- uid: learn.wwl.review-security-tools-features.badge
+  type: badge
+  title: Review security tools and features
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. This module will help you understand the core security tools available to support you.
+  iconUrl: /learn/achievements/review-security-tools-features.svg
+- uid: learn.wwl.describe-azure-governance-methodologies.badge
+  type: badge
+  title: Describe Azure governance methodologies
+  summary: Governance of your resources in Azure is a major decision as you move into the cloud. There are several tools from Azure Policy, to Blueprints, to Resource Locks that can help with that governance.
+  iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
+- uid: learn.wwl.explore-monitoring-reporting.badge
+  type: badge
+  title: Explore monitoring and reporting
+  summary: Monitoring your solutions once you have built and deployed them in Azure is a necessary work item.  Azure provides a solid set of tools to support you in the process.
+  iconUrl: /learn/achievements/explore-monitoring-reporting.svg
+- uid: learn.wwl.examine-privacy-compliance-data-protection-standards.badge
+  type: badge
+  title: Examine privacy, compliance, and data protection standards
+  summary: Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider.
+  iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
+- uid: learn.wwl.review-planning-managing-costs.badge
+  type: badge
+  title: Review planning and managing Azure costs
+  summary: Review planning and managing Azure costs
+  iconUrl: /learn/achievements/review-planning-managing-costs.svg
+- uid: learn.explore-azure-infrastructure.badge
+  type: badge
+  title: Core Cloud Services - Azure architecture and service guarantees
+  summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
+  iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+- uid: learn.intro-to-compute.badge
+  type: badge
+  title: Core Cloud Services - Azure compute options
+  summary: Review the Azure compute services and explore how they can solve common business needs.
+  iconUrl: /learn/achievements/intro-to-azure-compute.svg
+- uid: learn.intro-to-azure-networking.badge
+  type: badge
+  title: Core Cloud Services - Azure networking options
+  summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
+  iconUrl: /learn/achievements/intro-to-azure-networking.svg
+- uid: learn.intro-to-data-in-azure.badge
+  type: badge
+  title: Core Cloud Services - Azure data storage options
+  summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
+  iconUrl: /learn/achievements/intro-to-data-in-azure.svg
+- uid: learn.intro-to-governance.badge
+  type: badge
+  title: Apply and monitor infrastructure standards with Azure Policy
+  summary: Learn about governance and management in Azure services.
+  iconUrl: /learn/achievements/intro-to-governance.svg
+- uid: learn.introduction-to-security.badge
+  type: badge
+  title: Security, responsibility, and trust in Azure
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+  iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+- uid: learn.predict-costs-and-optimize-spending.badge
+  type: badge
+  title: Predict costs and optimize spending for Azure 
+  summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+  iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+- uid: learn.principles-cloud-computing.badge
+  type: badge
+  title: Cloud Concepts - Principles of cloud computing
+  summary: Explore the core concepts of cloud computing and how it can help your business.
+  iconUrl: /learn/achievements/principles-cloud-computing.svg
+- uid: learn.welcome-to-azure.badge
+  type: badge
+  title: Core Cloud Services - Introduction to Azure
+  summary: Get started with Azure by creating and configuring your first website in the cloud.
+  iconUrl: /learn/achievements/welcome-to-azure.svg
+- uid: learn.cloud-foundations.trophy
+  type: trophy
+  title: Azure fundamentals
+  summary: New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  iconUrl: /learn/achievements/azure-fundamentals.svg
+- uid: learn.foundations-data-science.trophy
+  type: trophy
+  title: "Foundations of data science"
+  summary: "Foundations of data science"
+  iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
+- uid: learn.learn-data-science-method.badge
+  type: badge
+  title: "Learn the data science method"
+  summary: "Learn the data science method"
+  iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
+- uid: learn.introduction-python-using-datascience-library.badge
+  type: badge
+  title: "Introduction to python using the datascience library"
+  summary: "Introduction to python using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+- uid: learn.create-manipulate-tables-using-datascience-library.badge
+  type: badge
+  title: "Create and manipulate tables using the datascience library"
+  summary: "Create and manipulate tables using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+- uid: learn.design-plot-graphs-python.badge
+  type: badge
+  title: "Design and plot graphs in Python"
+  summary: "Design and plot graphs in Python"
+  iconUrl: /learn/achievements/student-evangelism/design-plot-graphs-python.svg
+- uid: learn.introduction-probability.badge
+  type: badge
+  title: "Introduction to probability"
+  summary: "Introduction to probability"
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-probability.svg
+- uid: learn.simulate-generate-empirical-distributions-python.badge
+  type: badge
+  title: "Simulate and generate empirical distributions in Python"
+  summary: "Simulate and generate empirical distributions in Python"
+  iconUrl: /learn/achievements/student-evangelism/simulate-generate-empirical-distributions-python.svg
+- uid: learn.test-hypothesis-by-simulating-statistics.badge
+  type: badge
+  title: "Test hypothesis by simulating statistics"
+  summary: "Test hypothesis by simulating statistics"
+  iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+- uid: learn.compare-two-samples-by-bootstrapping.badge
+  type: badge
+  title: "Compare two samples by bootstrapping"
+  summary: "Compare two samples by bootstrapping"
+  iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
+- uid: learn.understand-normal-curve.badge
+  type: badge
+  title: "Understand the normal curve"
+  summary: "Understand the normal curve"
+  iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+- uid: learn.make-predictions-with-linear-regression.badge
+  type: badge
+  title: "Make predictions with linear regression"
+  summary: "Make predictions with linear regression"
+  iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+- uid: learn.simulate-distribution-regression-coefficients.badge
+  type: badge
+  title: "Simulate the distribution of regression coefficients"
+  summary: "Simulate the distribution of regression coefficients"
+  iconUrl: /learn/achievements/student-evangelism/simulate-distribution-regression-coefficients.svg
+- uid: learn.predict-classes-with-knn-classifier.badge
+  type: badge
+  title: "Predict  classes with a knn classifier"
+  summary: "Predict  classes with a knn classifier"
+  iconUrl: /learn/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+  type: badge
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
+  iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg

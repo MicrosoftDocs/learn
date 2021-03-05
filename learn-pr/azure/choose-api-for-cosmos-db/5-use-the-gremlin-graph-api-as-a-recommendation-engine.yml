@@ -9,7 +9,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/5-use-the-gremlin-graph-api-as-a-recommendation-engine.md)]

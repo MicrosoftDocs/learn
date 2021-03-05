@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.maintain-secure-repository-github
 metadata:
-  title: "Maintain a secure repository by using GitHub best practices - Learn"
+  title: "Maintain a secure repository by using GitHub best practices"
   description: Learn best practices for building, hosting, and maintaining a secure repository on GitHub.
   ms.date: 06/26/2020
   author: tpetchel

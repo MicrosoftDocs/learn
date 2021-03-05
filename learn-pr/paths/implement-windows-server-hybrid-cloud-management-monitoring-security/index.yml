@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-windows-server-hybrid-cloud-management-monitoring-security
+metadata:
+  title: Implement Windows Server hybrid cloud management, monitoring, and security
+  description: This learning path addresses problems related to managing, monitoring, and securing a hybrid environment. After completing the learning path, you’ll be able to manage and maintain hybrid Azure and on-premises workloads.
+  ms.date: 09/24/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Windows Server hybrid cloud management, monitoring, and security
+prerequisites: |
+  - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS (Active Directory Domain Services), DNS, DFS, Hyper-V, and File and Storage Services.
+  - Experience with common Windows Server management tools (implied by the first prerequisite).
+  - Basic knowledge of core Microsoft compute, storage, networking, and virtualization technologies (implied by the first prerequisite).
+  - Basic knowledge of on-premises resiliency Windows Server-based compute and storage technologies (Failover Clustering, Storage Spaces).
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  - Basic knowledge of Azure Active Directory.
+  - Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  - Basic knowledge of PowerShell scripting.
+  - An understanding of the following concepts as related to Windows Server technologies:
+    - High Availability and Disaster Recovery
+    - Automation
+    - Monitoring
+summary: |
+  This learning path addresses problems related to managing, monitoring, and securing a hybrid environment. After completing the learning path, you’ll be able to manage and maintain hybrid Azure and on-premises workloads.
+iconUrl: /learn/achievements/implement-windows-server-hybrid-cloud-management-monitoring-and-security.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-monitor
+- azure-portal
+modules:
+- learn.wwl.manage-hybrid-workloads-with-azure-arc
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
+- learn.wwl.audit-security-of-windows-server-iaas-vms
+- learn.wwl.manage-azure-updates
+trophy:
+  uid: learn.wwwl.implement-windows-server-hybrid-cloud-management-monitoring-security.trophy

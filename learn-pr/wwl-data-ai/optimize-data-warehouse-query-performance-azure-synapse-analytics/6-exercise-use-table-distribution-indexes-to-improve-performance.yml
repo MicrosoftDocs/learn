@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-use-table-distribution-indexes-to-improve-performance
+title: Exercise - Use table distribution and indexes to improve performance
+metadata:
+  title: Exercise - Use table distribution and indexes to improve performance
+  description: "Exercise - Use table distribution and indexes to improve performance"
+  ms.date: 02/07/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-use-table-distribution-indexes-to-improve-performance.md)]

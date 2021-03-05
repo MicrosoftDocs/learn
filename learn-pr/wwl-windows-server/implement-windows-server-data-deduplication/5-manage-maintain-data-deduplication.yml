@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-data-deduplication.manage-maintain
+title: Manage and maintain Data Deduplication
+metadata:
+  title: Manage and maintain Data Deduplication
+  description: "Manage and maintain Data Deduplication"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-manage-maintain-data-deduplication.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What workload type was implemented in the demonstration?"
+    choices:
+    - content: "Hyper-V storage"
+      isCorrect: false
+      explanation: "That's incorrect. The demonstration illustrated the implementation of general-purpose file server."
+    - content: "General-purpose file server"
+      isCorrect: true
+      explanation: "That's correct. The demonstration illustrated the implementation of general-purpose file server."
+    - content: "Backup server"
+      isCorrect: false
+      explanation: "That's incorrect. The demonstration illustrated the implementation of general-purpose file server."

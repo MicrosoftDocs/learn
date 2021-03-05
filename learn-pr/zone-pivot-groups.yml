@@ -130,6 +130,18 @@ groups:
       title: JavaScript
     - id: powershell
       title: PowerShell
+- id: dev-lang-javascript-powershell-python-csharp
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: javascript
+      title: JavaScript
+    - id: powershell
+      title: PowerShell
+    - id: python
+      title: Python
+    - id: csharp
+      title: C#
 - id: dev-lang-csharp-powershell
   title: Development language
   prompt: Choose your development language
@@ -316,3 +328,19 @@ groups:
       title: Windows
     - id: linux
       title: Linux
+- id: azure-shell-interface
+  title: Shell
+  prompt: Choose your Azure shell
+  pivots:
+    - id: powershell
+      title: PowerShell
+    - id: cli
+      title: Azure CLI
+- id: cosmos-db-programming-model-java-spring
+  title: Cosmos DB programming model
+  prompt: Choose a Cosmos DB programming model
+  pivots:
+    - id: java
+      title: Java SDK for Azure Cosmos DB
+    - id: spring
+      title: Spring Data

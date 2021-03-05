@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.create-open-source-program-github
 metadata:
-  title: "Create an open-source program by using GitHub best practices - Learn"
+  title: "Create an open-source program by using GitHub best practices"
   description: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and leveraging community standards.
   ms.date: 06/26/2020
   author: tpetchel
@@ -24,20 +24,21 @@ prerequisites: |
 iconUrl: /learn/achievements/github/create-open-source-program-github.svg
 ratingEnabled: true
 levels:
-- beginner
+  - beginner
 roles:
-- devops-engineer
-- administrator
-- developer
-- solution-architect
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
 products:
-- github
-- azure
+  - github
+  - azure
 units:
-- learn.github.create-open-source-program-github.1-introduction
-- learn.github.create-open-source-program-github.2-establish-open-source-program
-- learn.github.create-open-source-program-github.3-create-open-source-program
-- learn.github.create-open-source-program-github.4-knowledge-check
-- learn.github.create-open-source-program-github.5-summary
+  - learn.github.create-open-source-program-github.1-introduction
+  - learn.github.create-open-source-program-github.2-establish-open-source-program
+  - learn.github.create-open-source-program-github.3-create-open-source-program
+  - learn.github.create-open-source-program-github.4-describe-benefits-open-source-community
+  - learn.github.create-open-source-program-github.5-knowledge-check
+  - learn.github.create-open-source-program-github.6-summary
 badge:
   uid: learn.github.create-open-source-program-github.badge

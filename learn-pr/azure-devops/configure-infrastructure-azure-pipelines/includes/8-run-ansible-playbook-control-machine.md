@@ -4,9 +4,11 @@ In the last part, you ran Ansible commands from Azure Cloud Shell, to get a sens
 
 But in practice, you typically use a _control machine_ to manage your systems. A control machine includes the Ansible software, Python, your inventory file, and the playbooks you need to run.
 
-You can set up a control machine manually, either in the cloud or in your datacenter. Or you can use the [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true) image from Azure Marketplace.
+You can set up a control machine manually, either in the cloud or in your datacenter. If you need multiple control machines, you can create an image that has everything configured.
 
-Here, you create a control machine VM by using the marketplace image. To enable the VM to authenticate with Azure, you create a service principal. A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can perform automated tasks on your behalf. You create a service principal in Cloud Shell, and then add details about your service principal to a credentials file that you upload to your control machine.
+You can set up a control machine on most popular Linux distributions. Here, you create a control machine VM on CentOS and install the required software by running the Custom Script Extension. Recall that the Custom Script Extension is a way to download and run scripts on your Azure VMs. You can run the extension when you create a VM, or any time after the VM is in use.
+
+To enable the VM to authenticate with Azure, you create a service principal. A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can perform automated tasks on your behalf. You create a service principal in Cloud Shell, and then add details about your service principal to a credentials file that you upload to your control machine.
 
 ## Create a service principal
 
@@ -93,7 +95,7 @@ A service principal's name must be unique across Azure. Here, you use a random n
     echo $ARM_TENANT_ID
     ```
 
-    Each value is a GUID, or a long series of letters and numbers.
+    Each value is a GUID or a long series of letters and numbers.
 
     Store these values somewhere safe for later.
 
@@ -126,61 +128,75 @@ A service principal's name must be unique across Azure. Here, you use a random n
 
 ## Create the control machine
 
-Create the control machine by using the Red Hat Ansible instance on Linux image on  Azure Marketplace.
+Create the control machine by creating a CentOS VM on Azure and then running the Custom Script Extension on that VM. The Custom Script Extension runs a Bash script that we provide for you on GitHub.
 
-1. From Cloud Shell, print out the SSH public key that you created earlier.
+1. In Visual Studio Code, go to your Cloud Shell session.
+1. Run the following `az group create` command to create a resource group that's named **learn-ansible-control-machine-rg**.
 
-    ```bash
-    cat ~/.ssh/ansible_rsa.pub
+    ```azurecli
+    az group create --name learn-ansible-control-machine-rg
     ```
 
-    Copy the output somewhere safe, or keep your Cloud Shell session available for the next step.
+    Recall that your inventory file specifies that each VM in the `learn-ansible-rg` resource group belongs to the inventory. In the next step, you'll bring up your control machine under this new resource group so that the control machine doesn't configure itself when it runs Ansible on your inventory.
 
-1. Go to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in.
-1. Select **Create a resource**.
-1. In the search bar, enter *Ansible*.
-1. Select **Create**.
+1. Run the following `az vm create` command to create a CentOS VM:
 
-    ![Screenshot of creating the Ansible control machine in the Azure portal](../media/8-portal-ansible.png)
+    ```azurecli
+    az vm create \
+     --resource-group learn-ansible-control-machine-rg \
+     --name ansiblehost \
+     --admin-username azureuser \
+     --image OpenLogic:CentOS:7.7:latest \
+     --ssh-key-values ~/.ssh/ansible_rsa.pub
+    ```
 
-1. Under **Basics**, fill in these fields:
+    Just like when you set up your Ubuntu VMs to manage, the `--ssh-key-values` argument specifies your SSH public key. The VM stores this file. Later, you use the private key to connect.
 
-    * **Name** - *ansiblehost*
-    * **User name** - *azureuser*
-    * **Authentication type** - *SSH public key*
-    * **SSH public key** - Enter your SSH public key.
-    * **Subscription** - Select your Azure subscription.
-    * **Resource group** - Select **Create new**. Then enter *learn-ansible-control-machine-rg*, and select **OK**.
-    * **Location** - Choose a location. You can use the same location that you used earlier to create your VMs to manage.
+1. Run the following `az vm extension set` command to run the Custom Script Extension. The script configures Ansible on your VM.
 
-    Select **OK**.
+    ```azurecli
+    az vm extension set \
+      --resource-group learn-ansible-control-machine-rg \
+      --vm-name ansiblehost \
+      --name customScript \
+      --publisher Microsoft.Azure.Extensions \
+      --version 2.1 \
+      --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-ansible-control-machine/master/configure-ansible-centos.sh"]}' \
+      --protected-settings '{"commandToExecute": "./configure-ansible-centos.sh"}'
+    ```
 
-1. Under **Additional Settings**, enter a unique name in the **Domain name label** field, such as *test1234*. In practice, you'd choose a domain name that matches your team's naming convention. Then select **OK**.
-1. Under **Integration Settings**, select **Off**. Then select **OK**.
-1. Under **Summary**, wait for the validation process to finish, and then select **OK**.
-1. Under **Buy**, scroll to the end, and then select **Create**.
-1. Wait a few minutes for your deployment to finish.
+    The command can take a few minutes to run. While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-ansible-control-machine/master/configure-ansible-centos.sh?azure-portal=true) from a separate browser tab if you'd like.
 
-    You can monitor your deployment's progress from the **Notifications** tab at the top of the page.
+1. Run the following command to store your VM's public IP address in a Bash variable:
 
-    ![Screenshot of monitoring deployment progress in the Azure portal](../media/8-notifications-deployment.png)
+    ```azurecli
+    IPADDRESS=$(az vm list-ip-addresses \
+      --resource-group learn-ansible-control-machine-rg \
+      --name ansiblehost \
+      --query [0].virtualMachine.network.publicIpAddresses[0].ipAddress \
+      --output tsv)
+    ```
 
-## Get your control machine's hostname
+1. Run the following command to verify that Ansible is configured.
 
-Run this command to get your control machine's hostname, so that you can connect to it from Visual Studio Code and then later from Azure Pipelines.
+    ```bash
+    ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      azureuser@$IPADDRESS "which ansible"
+    ```
 
-```azurecli
-az network public-ip list \
-  --resource-group learn-ansible-control-machine-rg \
-  --query [].dnsSettings.fqdn \
-  --output tsv
+    The `which ansible` command prints the path to the `ansible` executable file on your VM. You see this:
+
+    ```output
+    /usr/local/bin/ansible
+    ```
+
+## Get your control machine's public IP address
+
+Earlier, you saved your control machine's public IP address to a Bash variable. Print this variable and save the output somewhere for later.
+
+```bash
+echo $IPADDRESS
 ```
-
-```output
-test1234.northeurope.cloudapp.azure.com
-```
-
-Copy the output somewhere for later.
 
 ## Copy files to your control machine
 
@@ -192,17 +208,7 @@ Copy the following information from your Cloud Shell session to your control mac
 * Your Ansible inventory file, *azure_rm.yml*.
 * Your Ansible playbook, *users.yml*.
 
-1. In Cloud Shell, get your control machine's IP address:
-
-    ```bash
-    IPADDRESS=$(az vm list-ip-addresses \
-      --resource-group learn-ansible-control-machine-rg \
-      --name ansiblehost \
-      --query [0].virtualMachine.network.publicIpAddresses[0].ipAddress \
-      --output tsv)
-    ```
-
-1. Run this `ssh` command to create a directory named *.azure* in the home directory on your control machine:
+1. In Cloud Shell, run this `ssh` command to create a directory named *.azure* in the home directory on your control machine:
 
     ```bash
     ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
@@ -264,21 +270,20 @@ Before you run the extension, there are a few additional options that you need t
 
     A tab appears that displays your current settings.
 
-1. In the **User Settings** pane, add this line:
+1. Under the **User** tab, enter *Ansible: Custom Options* in the search box.
+1. Under **Ansible: Custom Options**, enter the following option:
 
-    ```json
-    "ansible.customOptions": "--private-key ~/.ssh/ansible_rsa -i /home/azureuser/azure_rm.yml"
+    ```bash
+    --private-key ~/.ssh/ansible_rsa -i /home/azureuser/azure_rm.yml
     ```
+
     Both path names refer to locations on your control machine.
-
-    > [!TIP]
-    > User setting are in JSON format. Be sure to add a comma (**,**) to the end of the last setting listed before you add yours.
-
-1. Select **File** > **Save** to save your settings.
 
     Your settings resemble this:
 
     ![Screenshot of Visual Studio Code showing user settings for Ansible](../media/8-vs-code-user-settings.png)
+
+    Visual Studio Code automatically saves your settings.
 
 ### Run Ansible
 
@@ -296,7 +301,8 @@ You're now ready to run Ansible from your control machine. To do that:
       }
     ]
     ```
-1. Replace `your host` with your Ansible control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
+
+1. Replace `your host` with your Ansible control machine's public IP address, such as *40.113.7.63*.
 1. Replace `your private key` with the full path to your SSH private key file, *ansible_rsa*, on your local computer.
 
     An easy way to get the full path is to run this command from your local Bash session:
@@ -312,7 +318,7 @@ You're now ready to run Ansible from your control machine. To do that:
     ```json
     [
       {
-        "host": "test1234.northeurope.cloudapp.azure.com",
+        "host": "40.113.7.63",
         "port": 22,
         "user": "azureuser",
         "key": "/Users/jane/.ssh/ansible_rsa"
@@ -326,7 +332,10 @@ You're now ready to run Ansible from your control machine. To do that:
 1. When prompted, specify:
 
     * The full path to your playbook file, *users.yml*.
-    * Your control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
+    * Your control machine's IP address, such as *40.113.7.63*.
+
+    > [!NOTE]
+    > In Visual Studio Code, if you see a prompt that asks "Copy workspace to remote host?", select **no, not show this again**.
 
     From the output, you see that the run succeeded, but Ansible made no changes to your VMs.
 

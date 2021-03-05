@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.introduction-to-github
 metadata:
-  title: "Introduction to GitHub - Learn"
+  title: "Introduction to GitHub"
   description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
   ms.date: 06/26/2020
   author: tpetchel
@@ -29,6 +29,7 @@ roles:
 - administrator
 - developer
 - solution-architect
+- student
 products:
 - github
 - azure

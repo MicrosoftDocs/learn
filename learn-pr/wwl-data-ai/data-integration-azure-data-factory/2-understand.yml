@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-data-azure-data-factory.understand
+title: Understand Azure Data Factory
+metadata:
+  title: Understand Azure Data Factory
+  description: "Understand Azure Data Factory"
+  ms.date: 03/02/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand.md)]

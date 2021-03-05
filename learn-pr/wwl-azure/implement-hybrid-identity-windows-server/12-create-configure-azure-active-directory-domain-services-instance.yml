@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.create-configure-azure-active-directory-domain-services-instance
+title: Create and configure an Azure Active Directory Domain Services instance
+metadata:
+  title: Create and configure an Azure Active Directory Domain Services instance
+  description: "Create and configure an Azure Active Directory Domain Services instance"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/12-create-configure-azure-active-directory-domain-services-instance.md)]

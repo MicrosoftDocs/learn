@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps.install-run-luis-containers
+title: Install and run LUIS containers
+metadata:
+  title: Install and run LUIS containers
+  description: "Install and run LUIS containers"
+  ms.date: 12/04/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-install-run-language-understanding-intelligent-service-containers.md)]

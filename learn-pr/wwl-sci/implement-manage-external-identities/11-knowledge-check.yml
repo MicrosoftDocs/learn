@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-external-identities.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Users who are assigned limited administrator directory roles can use the Azure portal to invite B2B collaboration users. In addition to being invited to a directory or to a group, what else can B2B collaboration users be invited to?"
+    choices:
+    - content: "Limited self-service functionality for modifying their profiles."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. B2B collaboration users cannot be invited to limited self-service functionality for modifying their profiles."
+    - content: "Network resources such as printers."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. B2B collaboration users cannot be invited to network resources such as printers."
+    - content: "An application."
+      isCorrect: true
+      explanation: "That's correct. B2B collaboration users can also be invited to an application."
+  - content: "Azure AD B2B can be configured to federate with identity providers that use either of two protocols. One protocol is Security Assertion Markup Language (SAML); what is the other protocol?"
+    choices:
+    - content: "WS-Federation (WS-Fed)"
+      isCorrect: true
+      explanation: "That's correct. WS-Fed is one of two protocols that Azure AD B2B can make use of to federate with identity providers."
+    - content: "Layer Two Tunneling Protocol (L2TP)"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. L2TP cannot be configured to federate with identity providers."
+    - content: "Resource Location Protocol (RLP)"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. RLP cannot be configured to federate with identity providers."
+  - content: "What are dynamic groups?"
+    choices:
+    - content: "Dynamic groups are Microsoft 365 groups whose memberships consist of Dynamics 365 users, who require special attribute configurations."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Dynamic groups are not Microsoft 365 groups whose memberships consist of Dynamics 365 users."
+    - content: "Dynamic groups are security groups whose memberships are based on user attributes (such as userType, department, or country/region)."
+      isCorrect: true
+      explanation: "That's correct. Dynamic groups are security groups whose memberships are based on user attributes."
+    - content: "Dynamic groups are groups whose membership numbers fluctuate significantly within a given timeframe."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Dynamic groups are not groups whose membership numbers fluctuate significantly."

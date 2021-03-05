@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-language-model-with-luis.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/18/2021
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "You need to provision an Azure resource that will be used to author a new Language Understanding application. What kind of resource should you create?"
+    choices:
+    - content: "Text Analytics"
+      isCorrect: false
+      explanation: "Incorrect. A Text Analytics resource can't be used to author a Language Understanding model."
+    - content: "Language Understanding"
+      isCorrect: true
+      explanation: "Correct. To author a Language Understanding model, you need a Language Understanding resource."
+    - content: "Cognitive Services"
+      isCorrect: false
+      explanation: "Incorrect. You can use a Cognitive Service resource for Language Understanding prediction, but not for authoring."
+  - content: "You are authoring a Language Understanding application to support an international clock. You want users to be able to ask for the current time in a specified city, for example \"What is the time in London?\". What should you do?"
+    choices:
+    - content: "Define a \"city\" entity and a \"GetTime\" intent with utterances that indicate the city intent."
+      isCorrect: true
+      explanation: "Correct. The intent encapsulates the task (getting the time) and the entity specifies the item to which the intent is applied (the city)."
+    - content: "Create an intent for each city, each with an utterance that asks for the time in that city."
+      isCorrect: false
+      explanation: "Incorrect. The intent is the same (get the time), the city varies and can be identified as an entity."
+    - content: "Add the utterance \"What time is it in city\" to the \"None\" intent."
+      isCorrect: false
+      explanation: "Incorrect. The None intent is used as a fallback for intents your application doesn't support."
+  - content: "You have published your Language Understanding application. What information does a client application developer need to get predictions from it?"
+    choices:
+    - content: "The endpoint and key for the application's prediction resource"
+      isCorrect: true
+      explanation: "Correct. Client applications must connect to the endpoint of the prediction resource, specifying an associated authentication key."
+    - content: "The endpoint and key for the application's authoring resource"
+      isCorrect: false
+      explanation: "Incorrect. The authoring resource is used for authoring; not prediction."
+    - content: "The Azure credentials of the user who published the Language Understanding application"
+      isCorrect: false
+      explanation: "Incorrect. You should not share individual user credentials with other users."

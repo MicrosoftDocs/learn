@@ -6,7 +6,7 @@ metadata:
   description: In this unit you will learn what the challenges and risks are and how to manage large groups of IoT devices.
   ms.date: 12/17/2019
   author: olivierbloch
-  ms.author: Olivier.Bloch
+  ms.author: obloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automated firmware update at scale

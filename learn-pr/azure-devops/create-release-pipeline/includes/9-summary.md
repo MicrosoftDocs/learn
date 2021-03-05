@@ -12,7 +12,7 @@ Here are some additional resources you can use to learn more about Azure resourc
 
 In this module, you deployed a website to App Service. You can use Azure Pipelines to deploy to just about any kind of environment, including a virtual machine or containerized environment.
 
-The [Core Cloud Services - Azure compute options](/learn/modules/intro-to-azure-compute?azure-portal=true) module goes into further detail about the kinds of compute options Azure provides.
+The [Explore Azure compute services](/learn/modules/azure-compute-fundamentals/?azure-portal=true) module goes into further detail about the kinds of compute options Azure provides.
 
 You'll work more with App Service in the modules that follow. You can also learn about App Service in the [Deploy a website to Azure with Azure App Service](/learn/paths/deploy-a-website-with-azure-app-service?azure-portal=true) learning path.
 
@@ -20,17 +20,17 @@ You'll work more with App Service in the modules that follow. You can also learn
 
 After you choose where to deploy your applications, learn how to use Azure Pipelines to deploy to that environment.
 
-* [Deploy an Azure web app](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Deploy to a Linux virtual machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups?view=azure-devops&azure-portal=true)
-* [Deploy to a Windows virtual machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?view=azure-devops&azure-portal=true)
-* [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&azure-portal=true)
-* [Build and deploy Java to Azure Functions](https://docs.microsoft.com/azure/devops/pipelines/languages/java-function?view=azure-devops&azure-portal=true)
+* [Deploy an Azure web app](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?tabs=yaml&azure-portal=true)
+* [Deploy to a Linux virtual machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups?azure-portal=true)
+* [Deploy to a Windows virtual machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?azure-portal=true)
+* [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?azure-portal=true)
+* [Build and deploy Java to Azure Functions](https://docs.microsoft.com/azure/devops/pipelines/languages/java-function?azure-portal=true)
 
 ### Integrate with other CI/CD tools
 
 Azure DevOps enables you to build on your investment with other CI/CD tools. Learn how Azure DevOps integrates with Jenkins, CircleCI, and GitLab.
 
-* [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?tabs=yaml&azure-portal=true)
 * [CircleCI artifacts for Release pipeline](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-circleci-extension&azure-portal=true)
 * [GitLab integration for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true)
 
@@ -39,16 +39,18 @@ Azure DevOps enables you to build on your investment with other CI/CD tools. Lea
 These resources provide more information about some of the topics in this module.
 
 * [When should you right-click publish?](https://devblogs.microsoft.com/aspnet/when-should-you-right-click-publish?azure-portal=true)
-* [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&azure-portal=true)
-* [Environments](https://docs.microsoft.com/azure/devops/pipelines/process/environments?view=azure-devops&azure-portal=true)
+* [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?tabs=yaml&azure-portal=true)
+* [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?azure-portal=true)
+* [Environments](https://docs.microsoft.com/azure/devops/pipelines/process/environments?azure-portal=true)
 * [Design for security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/?azure-portal=true)
 * [Secure your Azure resources with RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/?azure-portal=true)
-* [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops&azure-portal=true)
-* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops&azure-portal=true)
+* [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?tabs=yaml&azure-portal=true)
+* [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?azure-portal=true)
+* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?azure-portal=true)
 
-## Implement a mobile DevOps strategy
+## Appendix: Implement a mobile DevOps strategy
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
 
 So far, you've deployed the _Space Game_ website to Azure App Service but there are, of course, other opportunities for deploying your app and one of them is to mobile devices. You'll need the same commitment and cultural changes as with any other DevOps project and, of course, you'll also need the right toolset. Microsoft offers this toolset through Visual Studio Mobile Center (also called App Center), which brings together multiple services commonly used by mobile developers into an integrated cloud solution. Let's look at some of these services.
 

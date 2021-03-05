@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.explain-encryption
+title: Explain encryption at rest
+metadata:
+  title: Explain encryption at rest
+  description: "Explain encryption at rest"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explain-encryption.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-relational-data-offerings
 metadata:
-  title: Explore relational data offerings in Azure
-  description: "Explore relational data offerings in Azure"
-  ms.date: 06/25/2020
+  title: Explore relational data services in Azure
+  description: "Explore relational data services in Azure"
+  ms.date: 12/28/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore relational data offerings in Azure
+title: Explore relational data services in Azure
 summary: Explore Azure SQL Database, Azure Database for PostgreSQL, Azure Database for MySQL, and Azure Database for MariaDB. Explore scenarios for using these database management systems.
 abstract: |
   In this module, you will:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.deploy-azure-file-sync2
+title: Deploy Azure File Sync 2
+metadata:
+  title: Deploy Azure File Sync 2
+  description: "Deploy Azure File Sync 2"
+  ms.date: 11/27/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-deploy-azure-file-synchronization-2.md)]

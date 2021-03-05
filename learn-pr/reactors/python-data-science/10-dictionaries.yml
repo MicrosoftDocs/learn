@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.10-dictionaries
+title: Dictionaries
+metadata:
+  title: Dictionaries in Python for data science
+  description: Learn how to use dictionaries in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-dictionaries.md)] 

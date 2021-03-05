@@ -18,7 +18,7 @@ You've learned about the various deep-learning techniques supported by Azure Dat
     ```
 
 1. Select **Import**.
-1. A folder named after the archive should appear. Select that folder. The folder contains one or more notebooks that you'll use in completing this lab.
+1. A folder named after the archive should appear (04 Deep Learning). Select that folder. The folder contains one or more notebooks that you'll use in completing this lab.
 
 ## Complete the following notebooks
 

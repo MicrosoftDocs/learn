@@ -3,21 +3,23 @@ uid: learn.automate-workflow-github-actions
 metadata:
   title: Automate your workflow with GitHub Actions
   description: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
-  brand: azure
-  ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  brand: github
+  ms.date: 07/02/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-github
 title: Automate your workflow with GitHub Actions
 summary: |
   Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
 
   In this learning path, you'll:
-    - Plan automation of your software development life cycle with GitHub Actions workflows
-    - Use GitHub Actions to automatically build your application
-    - Deploy to Microsoft Azure with GitHub Actions
 
+  - Plan automation of your software development life cycle with GitHub Actions workflows.
+  - Use GitHub Actions to automatically build your application.
+  - Deploy to Microsoft Azure with GitHub Actions.
+  - Use GitHub Script to interact with the GitHub API.
+  - Publish automatically and securely your code libraries or Docker images with GitHub Packages.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
  - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
@@ -31,10 +33,14 @@ roles:
 - developer
 - solution-architect
 products:
+- github
 - azure
 modules:
+- learn.github.introduction-to-github
 - learn.github.github-actions-automate-tasks
 - learn.github.github-actions-ci
 - learn.github.github-actions-cd
+- learn.github.automate-github-using-github-script
+- learn.github.github-actions-packages 
 trophy:
   uid: learn.automate-workflow-github-actions.trophy

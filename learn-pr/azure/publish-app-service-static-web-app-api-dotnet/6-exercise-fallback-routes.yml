@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api-dotnet.6-exercise-fallback-routes
+metadata:
+  title: Exercise - Create your fallback routes
+  description: Exercise - Create your fallback routes
+  ms.date: 09/22/2020
+  author: aaronpowell
+  ms.author: aapowell
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+title: Exercise - Create your fallback routes
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-fallback-routes.md)]

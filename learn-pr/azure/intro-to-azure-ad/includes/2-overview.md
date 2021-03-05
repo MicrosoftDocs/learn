@@ -7,7 +7,7 @@ Here, you'll get an overview of Azure AD and see why you would use it. You'll le
 
 Azure AD is a cloud-based identity management solution. It helps your company's internal users to:
 
-- Access external resources, like Azure services, Office 365, and third-party SaaS applications.
+- Access external resources, like Azure services, Microsoft 365, and third-party SaaS applications.
 
 - Access internal resources such as applications on your corporate network, and cloud-based applications that your company builds.
 
@@ -23,13 +23,13 @@ Azure AD meets the needs of many types of users. For instance, an IT administrat
 
 Application developers can use Azure AD to enable users to use preexisting credentials to access applications. Developers also use Azure AD to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Azure AD.
 
-If you subscribe to services like Office 365, Azure, or Microsoft 365, you're already taking advantage of Azure AD. You could use Azure AD to further manage access to your cloud applications.
+If you subscribe to services like Azure or Microsoft 365, you're already taking advantage of Azure AD. You could use Azure AD to further manage access to your cloud applications.
 
 ## Identity secure score in Azure AD
 
 If you're an administrator, you need to know how secure your Azure AD tenant is. The identity secure score can help you understand. Azure AD gives an overall value between 1 and 223. This value represents how well you match the recommendations and best practices that Microsoft suggests for tenant security. The identity secure score reveals how effective your security is and helps you implement improvements.
 
-You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant and then open the identity secure score dashboard.
+You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant, select **Security**, and then select the **Identity Secure Score** dashboard.
 
 ![Secure identity score](../media/2-secure-identity-score.png)
 
@@ -46,7 +46,7 @@ Azure AD is a cloud-based identity solution that helps you manage users and appl
 |Service|Authentication  |Structure  |What it's used for  
 |---------|---------|---------|---------|
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units | Authentication and authorization for on-premises printers, applications, file services, and more
-|Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Office 365, Azure services, and third-party SaaS applications
+|Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Microsoft 365, Azure services, and third-party SaaS applications
 
 ![A comparison between Active Directory and Azure AD](../media/2-azure-ad-compared-active-directory.svg)
 
@@ -79,10 +79,10 @@ Use the following table as a reference for which options to use for particular s
 
 ## European identity data storage
 
-When you subscribe to a service like Azure or Office 365, all of your identity data is stored based on the address that you provide during the subscription process. If you're a customer who uses an address in Europe, Azure AD stores most of your data in European datacenters. However, some data is stored outside Europe by services that you use with Azure AD. Here are a few examples of some of the data that's stored outside Europe:
+When you subscribe to a service like Azure or Microsoft 365, all of your identity data is stored based on the address that you provide during the subscription process. If you're a customer who uses an address in Europe, Azure AD stores most of your data in European datacenters. However, some data is stored outside Europe by services that you use with Azure AD. Here are a few examples of some of the data that's stored outside Europe:
 
 |Azure AD-based service |Data location  |
 |---------|---------|
 |Azure Active Directory B2B (Azure AD B2B)| Guest users access applications through a link in an invitation email or a link shared directly with them. These redemption links are stored in US datacenters. If a user unsubscribes from invitation messages, their email address is also stored in US datacenters.  |
 |Azure Active Directory B2C (Azure AD B2C)|No personal data is stored outside of Europe, but policy configuration data is stored in US datacenters.|
-|Azure Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|
+|Azure AD Multi-Factor Authentication|Phone calls and text messages come from US datacenters, and global providers handle the routing. OAuth code validation happens in the US. Push notifications for the Microsoft Authenticator app come from US datacenters.|

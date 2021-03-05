@@ -3,8 +3,8 @@ uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.configuring-earl
 title: Configuring early termination
 metadata:
   title: Configuring early termination
-  description: "Learn how to configure early termination for a hyperparameter tuning iteration."
-  ms.date: 07/02/2020
+  description: "Configuring early termination"
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

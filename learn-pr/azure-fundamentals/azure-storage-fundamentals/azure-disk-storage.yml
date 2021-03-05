@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-storage-fundamentals.azure-disk-storage
+title: Disk storage fundamentals
+metadata:
+  title: Disk storage fundamentals
+  description: In this unit, you'll learn about Azure Disk Storage.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/azure-disk-storage.md)]

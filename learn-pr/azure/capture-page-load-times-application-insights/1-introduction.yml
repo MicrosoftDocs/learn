@@ -6,10 +6,9 @@ metadata:
   description: Introduction
   ms.date: 01/08/2019
   author: adrianstevens
-  ms.author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

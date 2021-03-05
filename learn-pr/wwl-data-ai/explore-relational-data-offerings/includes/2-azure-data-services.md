@@ -7,11 +7,19 @@ Before delving into Azure Data Services, you need to understand some common term
 **IaaS** is an acronym for *Infrastructure-as-a-Service*. Azure enables you to create a virtual infrastructure in the cloud that mirrors the way an on-premises data center might work. You can create a set of virtual machines, connect them together using a virtual network, and add a range of virtual devices. You take responsibility for installing and configuring the software, such as the DBMS, on these virtual machines. In many ways, this approach is similar to the way in which you run your systems inside an organization, except that you don't have to concern yourself with buying or maintaining the hardware.
 
 > [!NOTE]
-> An Azure Virtual Network is a representation of your own network in the cloud. A virtual network enables you to connect virtual machines and Azure services together, in much the same way that you might use a physical network on-premises. Azure ensures that each virtual network is isolated from other virtual networks created by other users, and from the Internet. Azure enables you to specify wich machines (real and virtual), and services, are allowed to access resources on the virtual network, and which ports they can use.
+> An Azure Virtual Network is a representation of your own network in the cloud. A virtual network enables you to connect virtual machines and Azure services together, in much the same way that you might use a physical network on-premises. Azure ensures that each virtual network is isolated from other virtual networks created by other users, and from the Internet. Azure enables you to specify which machines (real and virtual), and services, are allowed to access resources on the virtual network, and which ports they can use.
 
 **PaaS** stands for *Platform-as-a-service*. Rather than creating a virtual infrastructure, and installing and managing the database software yourself, a PaaS solution does this for you. You specify the resources that you require (based on how large you think your databases will be, the number of users, and the performance you require), and Azure automatically creates the necessary virtual machines, networks, and other devices for you. You can usually scale up or down (increase or decrease the size and number of resources) quickly, as the volume of data and the amount of work being done varies; Azure handles this scaling for you, and you don't have to manually add or remove virtual machines, or perform any other form of configuration.
 
-**SaaS** is short for *Software-as-a-Service*. SaaS offerings are typically specific software packages that are installed and run on virtual hardware in the cloud. SaaS packages are typically hosted applications rather than more generalized software such as a DBMS. Common SaaS packages available on Azure include Microsoft 365 (formerly Office 365).
+**SaaS** is short for *Software-as-a-Service*. SaaS services are typically specific software packages that are installed and run on virtual hardware in the cloud. SaaS packages are typically hosted applications rather than more generalized software such as a DBMS. Common SaaS packages available on Azure include Microsoft 365 (formerly Office 365).
+
+|      | Example               | Includes                                                                        |
+|------|-----------------------|---------------------------------------------------------------------------------|
+| IaaS | Azure virtual network | Servers, storage, networking, and physical data center.                         |
+| PaaS | Azure SQL Databases   | IaaS plus database management (or other server systems), and operating systems. |
+| SaaS | Office 365            | PaaS plus apps.                                                                 |
+
+:::image type="content" source="../media/2-saas-paas-iaas.png" alt-text="IaaS, PaaS, and Saas":::
 
 ## What are Azure Data Services?
 

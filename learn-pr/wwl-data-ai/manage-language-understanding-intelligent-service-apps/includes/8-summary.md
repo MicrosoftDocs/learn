@@ -1,0 +1,3 @@
+The lifecycle for a LUIS application involves many steps. Once the app is created, you shift to the task of managing the application.  Controlling the keys is critical for authentication to the app and to help collaborators support the authoring of your app.
+
+As users interact with the LUIS application you have built, you will review the performance and make changes, generating new versions and improving prediction performance.  Understanding all of these aspects helps to ensure that your LUIS application will continue to evolve and remain relevant for the intended usage.

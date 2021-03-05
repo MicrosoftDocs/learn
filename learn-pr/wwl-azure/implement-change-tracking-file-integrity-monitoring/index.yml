@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms
+metadata:
+  title: Implement change tracking and file integrity monitoring for Windows IaaS VMs
+  description: "Implement change tracking and file integrity monitoring for Windows IaaS VMs"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement change tracking and file integrity monitoring for Windows IaaS VMs
+summary: In this module, you’ll learn how to monitor Windows Server Azure IaaS VMs for changes in files and the registry, as well as other monitor modifications made to application software.
+abstract: |
+  After completing this module, you will be able to:
+  - Implement Change Tracking and Inventory
+  - Manage Change Tracking and Inventory
+  - Manage tracked files
+  - Implement File Integrity Monitoring
+  - Select and monitor entities
+  - Use File Integrity Monitoring
+prerequisites: |
+  To get the best learning experience from this module, it's important that you have knowledge and experience in the following areas:
+  - Managing Windows Server operating systems (OSs) and Windows Server workloads in on-premises scenarios, including AD DS, Domain Name System (DNS), the Distributed File System (DFS), Microsoft Hyper-V, and file and storage services
+  - Common Windows Server management tools
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Azure
+  - Azure Active Directory (Azure AD)
+  - Security-related technologies (firewalls, encryption, multi-factor authentication)
+  - Windows PowerShell scripting
+  - Automation and monitoring
+iconUrl: /learn/achievements/implement-change-tracking-and-file-integrity-monitoring-for-windows-iaas-vms.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.introduction
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.inventory
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.manage-inventory
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.manage-tracked-files
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.implement
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.select-monitor-entities
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.use
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.knowledge-check
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.summary
+badge:
+  uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.badge

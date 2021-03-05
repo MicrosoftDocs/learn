@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.fundamental-azure-concepts.categories-of-cloud-services
+title: Describe the different categories of cloud services
+metadata:
+  title: Describe the different categories of cloud services
+  description: In this unit, you'll learn about the different categories of cloud services.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/categories-of-cloud-services.md)]

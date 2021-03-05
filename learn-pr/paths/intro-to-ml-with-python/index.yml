@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to machine learning with Python and Azure Notebooks
-summary: Python has become a dominant language for doing data analysis with machine learning. Learn how to leverage Python and associated libraries in Jupyter Notebooks run on Azure Notebooks to predict patterns and identify trends.
+summary:  |
+  Python has become a dominant language for doing data analysis with machine learning. Learn how to leverage Python and associated libraries in Jupyter Notebooks run on Azure Notebooks to predict patterns and identify trends. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](https://docs.microsoft.com/learn/certifications/azure-developer).
 prerequisites: Basic Python programming knowledge
 iconUrl: /learn/achievements/student-evangelism/intro-to-ml-with-python-badge.svg
 hidden: true

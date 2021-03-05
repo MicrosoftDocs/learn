@@ -144,7 +144,7 @@ To create the Blob storage account:
     ```azurecli
     az storage account list \
       --resource-group tf-storage-rg \
-      --query [].name \
+      --query '[].name' \
       --output tsv
     ```
 
@@ -382,7 +382,7 @@ During the process, you collect information about your service principal that yo
     echo $ARM_TENANT_ID
     ```
 
-    Each value is a GUID, or a long series of letters and numbers.
+    Each value is a GUID or a long series of letters and numbers.
 
 1. Export the variables so that Terraform can access them.
 

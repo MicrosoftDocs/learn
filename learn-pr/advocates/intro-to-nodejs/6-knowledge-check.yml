@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-nodejs.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of the Node.js runtime and its development environment.
+  ms.date: 03/23/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is Node.js?"
+      choices:
+        - content: "A Java framework"
+          isCorrect: false
+          explanation: "Node.js isn't a framework or a Java runtime."
+        - content: "A JavaScript framework"
+          isCorrect: false
+          explanation: "Node.js isn't a framework but is sometimes incorrectly described as one."
+        - content: "A JavaScript runtime"
+          isCorrect: true
+          explanation: "Node.js is a runtime that runs JavaScript applications."
+        - content: "A JavaScript server"
+          isCorrect: false
+          explanation: "Node.js isn't a server but can be used to implement one."
+    - content: "How does Node.js handle concurrent tasks?"
+      choices:
+        - content: "Node.js can't handle concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js was designed to handle concurrent operations."
+        - content: "Node.js uses multiple threads for concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js doesn't use multiple threads."
+        - content: "Node.js uses a single event loop for concurrent tasks."
+          isCorrect: true
+          explanation: "Node.js uses a single thread and an event loop to handle concurrent, non-blocking I/O tasks."
+        - content: "Node.js uses multiple event loops for concurrent tasks."
+          isCorrect: false
+          explanation: "Node.js uses only a single event loop."
+    - content: "For which of these scenarios would a Node.js app be a good fit?"
+      choices:
+        - content: "The app requires a non-blocking, event-driven server."
+          isCorrect: true
+          explanation: "Node.js works well for implementing back-end API services and real-time applications."
+        - content: "The app needs a Java runtime."
+          isCorrect: false
+          explanation: "Node.js apps are written in JavaScript, not Java."
+        - content: "You need to build a mobile app."
+          isCorrect: false
+          explanation: "You can build mobile apps by using many languages, including JavaScript. Node.js is a runtime, not a language."
+        - content: "The app requires CPU-intensive computations."
+          isCorrect: false
+          explanation: "Node.js works well for I/O but isn't well optimized for CPU-intensive computations."

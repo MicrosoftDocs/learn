@@ -1,19 +1,13 @@
 To complete this exercise, you'll need the following:
 
-- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
-- A Visual Studio Codespace based on the **MicrosoftDocs/ai-fundamentals** GitHub repository. This service provides a hosted instance of Visual Studio Code, in which you'll be able to run the notebooks for the lab exercises.
+- **A Microsoft Azure subscription**. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true).
+- **A Python environment** in which you can run the Jupyter notebooks in the [MicrosoftLearning/mslearn-ai900](https://github.com/MicrosoftLearning/mslearn-ai900) GitHub repository. Launch a virtual lab environment from the gray box above which will provide you with a Python environment in Visual Studio Code. 
+    - Alternatively, you can clone the lab files from GitHub into your own environment and follow these [instructions](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/00%20-%20Local%20development.md) to set up your environment.  
 
-If you haven't already created a Visual Studio Codespace based on the **MicrosoftDocs/ai-fundamentals** repository, follow these steps to create one:
+## Using the virtual lab environment
 
-1. Open <a href = "https://online.visualstudio.com/environments/new?azure-portal=true&name=ai-fundamentals&repo=MicrosoftDocs/ai-fundamentals" target="_blank" rel="noopener">Visual Studio Codespaces</a> in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
-2. Create a Codespace with the following settings (if you don't already have a Visual Studio Codespaces billing plan, you'll be prompted to create one):
-    - **Codespace Name**: *A name for your codespace - for example, **ai-fundamentals**.*
-    - **Git Repository**: MicrosoftDocs/ai-fundamentals
-    - **Instance Type**: Standard (Linux) 4 cores, 8GB RAM
-    - **Suspend idle Codespace after**: 30 minutes
-3. Wait for the codespace to be created. This will take around 3 minutes. You'll see the following things happen:
-    - A script will initialize and configure your codespace.
-    - A list of notebook (.ipynb) files will appear in the pane on the left.
-    - After a few minutes, a file named **z REFRESH NOW!** will appear at the bottom of the list of files. This is your indication that everything has been installed.
-5. After the **z REFRESH NOW!** file has appeared, ***refresh the web page*** to ensure all of the required extensions are loaded and set the color scheme to a light background. Then you're ready to start.
-6. After you have refreshed the web page, you can close the **Welcome** panes and delete the **z REFRESH NOW** file if you want to. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme is recommended to make it easier to read the Python code in the notebooks.
+1. Click on the button **"Sign in to launch VM mode"** above. 
+
+2. Follow the directions on the right-hand pane. You will be guided through sign-in to Visual Studio Code, and directed to the lab for this module. 
+
+3. When you are done with the entire lab, end it by clicking on **End >** at the bottom right hand corner. When you end the lab, you _do not_ keep changes made to files. You _do_ keep the resources created with your Azure subscription unless you follow the clean-up steps below.

@@ -39,7 +39,7 @@ At the other end of the spectrum, there's _Eventual_ consistency. In this scenar
 
 [![Screenshot showing the Eventual consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-eventual.png)](../media/lambda-consistency-eventual.png#lightbox)
 
-These two consistency strategies are the most established in the data propagation world. However, three variations are available in Cosmos DB.
+These two consistency strategies are the most established in the data propagation world. However, three other variations are available in Cosmos DB.
 
 With _Bounded_ consistency, you set a time threshold, or version update count threshold. This threshold is the tolerance of each location for stale data. If a location reads data, only to find the data is outside of the threshold, then the system will wait until a value is available that is within the threshold. For example, if a threshold is set at 20 seconds, then only data that is stale by 20 seconds or less, is acceptable. Set this threshold to zero, and you have _Strong_ consistency.
 

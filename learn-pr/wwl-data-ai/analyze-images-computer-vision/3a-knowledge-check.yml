@@ -3,8 +3,8 @@ uid: learn.wwl.analyze-images-computer-vision.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 06/07/2020
+  description: "Knowledge check"
+  ms.date: 02/18/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -35,14 +35,14 @@ quiz:
     - content: "Categories"
       isCorrect: false
       explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."
-  - content: "You want to use the Computer Vision service to determine whether an image is back-and-white or color? What should you do?"
+  - content: "You want to use the Computer Vision service to analyze images of locations and identify well-known buildings? What should you do?"
     choices:
-    - content: "Generate a thumbnail"
+    - content: "Retrieve the objects in the image."
       isCorrect: false
-      explanation: "Incorrect. This would create a small version of the image."
-    - content: "Retrieve the Image Type feature"
+      explanation: "Incorrect. The objects might identify buildings as buildings, but not a specific well-known landmarks."
+    - content: "Retrieve the categories for the image, specifying the celebrities domain"
       isCorrect: false
-      explanation: "Incorrect. This feature would indicate if the image was likely to be clip art."
-    - content: "Retrieve the Color feature"
+      explanation: "Incorrect. The celebrities domain includes well-known people, not buildings."
+    - content: "Retrieve the categories for the image, specifying the landmarks domain"
       isCorrect: true
-      explanation: "Correct. The Color feature response includes a value that indicates whether or not the image is black-and-white."
+      explanation: "Correct. The landmarks domain includes many well-known buildings around the world."

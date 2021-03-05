@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.use-action-center
+title: Use the action center
+metadata:
+  title: Use the action center
+  description: "Use the action center"
+  ms.date: 03/05/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-action-center.md)]

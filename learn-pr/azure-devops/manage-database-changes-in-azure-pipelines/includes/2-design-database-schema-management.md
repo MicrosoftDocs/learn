@@ -20,7 +20,7 @@ Here the team discusses how to add a database as the data storage solution for t
 
 _Andy shows the_ Space Game _site that's running on Azure App Service._
 
-![The Space Game leaderboard](../../assess-your-development-process/media/2-space-game-leaderboard.png)
+![A web page showing the Space Game leaderboard.](../../assess-your-development-process/media/2-space-game-leaderboard.png)
 
 **Andy:** After the database is in place, we can modify the website to read from the database instead of from local files. This setup is a significant milestone for us, so we need to discuss a few things. First, let's choose a database technology. We'll need to consider numerous things, so bear with me.
 
@@ -121,13 +121,13 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-databases-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSo]
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 
 SQL Server Data Tools, which runs on Windows, provides a project type that you can use to define a database schema from Visual Studio. This kind of project produces a _dacpac_ file. When you unpack the _dacpac_, you see the SQL scripts that create the database schema. For example, you might see a `CREATE TABLE` script for each table that the database project defines. SQL Database can unpack the _dacpac_ and apply the schema changes.
 
-![The database project in Visual Studio on Windows](../media/2-database-project.png)
+![The database project open in Visual Studio on Windows.](../media/2-database-project.png)
 
 Let's go back to the team discussion and see how they plan to handle any changes to their database schema.
 
@@ -135,7 +135,7 @@ Let's go back to the team discussion and see how they plan to handle any changes
 
 Andy types on his laptop.
 
-**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) task generates a file that identifies the schema differences between the current database schema and the _dacpac_.
+**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?azure-portal=true) task generates a file that identifies the schema differences between the current database schema and the _dacpac_.
 
 ## Approve database schema changes in Azure Pipelines
 
@@ -167,13 +167,13 @@ Let's listen in on the team's discussion.
 
 Andy moves to the whiteboard and sketches out the plan.
 
-![Whiteboard image of the pipeline with the two database stages](../media/2-whiteboard-pipeline.png)
+![Whiteboard drawing of the pipeline with the two database stages.](../media/2-whiteboard-pipeline.png)
 
-**Andy:** Here's what we need to build. First we add a job to the _Build_ stage to build the database project. ![Callout 1](../../shared/media/callout-01.png) This job produces a _.dacpac_ file that we treat as a build artifact.
+**Andy:** Here's what we need to build. First we add a job to the _Build_ stage to build the database project. ![Callout 1 on the whiteboard drawing.](../../shared/media/callout-01.png) This job produces a _.dacpac_ file that we treat as a build artifact.
 
-We then add a stage that ![Callout 2](../../shared/media/callout-02.png) scripts the database changes. The ![Callout 3](../../shared/media/callout-03.png) DBA uses the script output to verify the changes before they're applied.
+We then add a stage that ![Callout 2 on the whiteboard drawing.](../../shared/media/callout-02.png) scripts the database changes. The ![Callout 3 on the whiteboard drawing.](../../shared/media/callout-03.png) DBA uses the script output to verify the changes before they're applied.
 
-We add an ![Callout 4](../../shared/media/callout-04.png) approval to another stage. The approval ![Callout 5](../../shared/media/callout-05.png) applies the database changes. Then we ![Callout 6](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ just like we did before.
+We add an ![Callout 4 on the whiteboard drawing.](../../shared/media/callout-04.png) approval to another stage. The approval ![Callout 5 on the whiteboard drawing.](../../shared/media/callout-05.png) applies the database changes. Then we ![Callout 6 on the whiteboard drawing.](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ just like we did before.
 
 **Tim:** I'll get started on the PowerShell script.
 

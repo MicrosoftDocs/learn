@@ -12,4 +12,4 @@ Upon completion of this module you'll be able to:
 
 - Describe DevOps architecture.
 - Identify the skills of a software architect.
-- Characterize Azure DevOps Services. 
+- Characterize Azure DevOps Services.

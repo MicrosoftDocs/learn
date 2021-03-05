@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.describe-role-of-firewalls
+title: Describe the role of firewalls
+metadata:
+  title: Describe the role of firewalls
+  description: "Describe the role of firewalls"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-role-firewalls.md)]

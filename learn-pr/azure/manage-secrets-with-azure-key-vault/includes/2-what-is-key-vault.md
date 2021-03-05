@@ -1,20 +1,20 @@
-Azure Key Vault is a *secret store*: a centralized cloud service for storing application secrets - configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
+Azure Key Vault is a *secret store*: a centralized cloud service for storing app secrets - configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your apps' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-Key-Vault-Overview/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHck]
 
 The main benefits of using Key Vault are:
 
-- Separation of sensitive application information from other configuration and code, reducing risk of accidental leaks
-- Restricted secret access with access policies tailored to the applications and individuals that need them
+- Separation of sensitive app information from other configuration and code, reducing the risk of accidental leaks
+- Restricted secret access with access policies tailored to the apps and individuals that need them
 - Centralized secret storage, allowing required changes to happen in only one place
 - Access logging and monitoring to help you understand how and when secrets are accessed
 
 Secrets are stored in individual *vaults*, which are Azure resources used to group secrets together. Secret access and vault management is accomplished via a REST API, which is also supported by all of the Azure management tools as well as client libraries available for many popular languages. Every vault has a unique URL where its API is hosted.
 
 > [!IMPORTANT]
-> **Key Vault is designed to store configuration secrets for server applications.** It's not intended for storing data belonging to your app's users, and it shouldn't be used in the client-side part of an app. This is reflected in its performance characteristics, API, and cost model.
+> **Key Vault is designed to store configuration secrets for server apps.** It's not intended for storing data belonging to your app's users, and it shouldn't be used in the client-side part of an app. This is reflected in its performance characteristics, API, and cost model.
 >
-> User data should be stored elsewhere, such as in an Azure SQL database with Transparent Data Encryption, or a storage account with Storage Service Encryption. Secrets used by your application to access those data stores can be kept in Key Vault.
+> User data should be stored elsewhere, such as in an Azure SQL database with Transparent Data Encryption, or a storage account with Storage Service Encryption. Secrets used by your app to access those data stores can be kept in Key Vault.
 
 ## What is a secret in Key Vault?
 
@@ -28,7 +28,7 @@ In Key Vault, a secret is a name-value pair of strings. Secret names must be 1-1
 
 ## Vault authentication and permissions
 
-Azure Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
+Azure Key Vault's API uses Azure Active Directory to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
 
 *All* actions performed on a vault require authentication and authorization &mdash; there is no way to grant any kind of anonymous access.
 

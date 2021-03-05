@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms.use
+title: Use File Integrity Monitoring
+metadata:
+  title: Use File Integrity Monitoring
+  description: "Use File Integrity Monitoring"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/07-use-file-integrity-monitoring.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "At 1:40 to 2:00 minutes in the demonstration, the instructor changes the configuration of a Log Analytics workspace. What does the instructor do and why?"
+    choices:
+    - content: "The instructor selects **ENABLE** on the workspace to allow its use with File Integrity Monitoring."
+      isCorrect: false
+      explanation: "That's incorrect. The instructor does perform this task, but first, he must upgrade the workspace."
+    - content: "The instructor selects **Install agents** on the workspace to deploy agents to all the VMs associated with the workspace."
+      isCorrect: false
+      explanation: "That's incorrect. Although agents must be installed, that process begins with upgrading the pricing tier."
+    - content: "The instructor selects **UPGRADE PLAN** on the workspace to change the workspace to Standard Tier pricing. Unless the workspace is on this pricing tier, it cannot be used for File Integrity Monitoring."
+      isCorrect: true
+      explanation: "That's correct. Both the Security Center and the Log Analytics workspace must be on Standard Tier pricing."

@@ -1,45 +1,47 @@
-## Overview 
+The steps below summarize the process of setting up and configuring IoT Edge, an IoT Hub, and the IoT device to deploy our module to it.
 
-In this module, we use an existing Ubuntu-based virtual machine to act as your IoT Edge device. Alternately, you could run the Azure IoT Edge runtime on your own physical Linux device (X64, ARM32, or ARM64). Below we consider only the scenario of a virtual device.  
+1. Define the resource group or use an existing one.
+1. Create an Azure IoT Edge device.
+1. Create an Azure IoT Hub or use an existing one.
+1. Register the IoT Edge device to the IoT Hub.
 
-We set up communications between IoT Edge and IoT Hub so that we can deploy our module to the IoT device.  To set up communications between the IoT Hub and IoT Edge, you start by creating a Microsoft provided Ubuntu virtual device by using the scripts provided. This virtual device has all the prerequisites installed. You then create an IoT Hub using the Cloud Shell. Next, you register the IoT Edge device to the IoT Hub and retrieve the connection string. We'll need this string to configure the IoT Edge device in later steps. 
+Although you could execute the Azure IoT Edge runtime on your own physical Linux device, we deploy an Ubuntu-based virtual machine to Azure to act as the IoT Edge device.
 
-To summarize the process - to register an IoT Edge device to your IoT Hub, you first create a device identity for your Edge device. This device identity enables you to communicate with your IoT Hub. The device identity lives in the cloud and uses a unique device connection string to associate a physical device to a device identity. Your IoT Edge device connects to the IoT Hub – either to an existing hub or a newly created hub.  The connection string links the IoT device with its identity in the IoT Hub.  Thus, the process of registration for a device involves retrieving the connection string associated with an edge device that represents the device identity in the IoT Hub. After this, you set up the connection string on the IoT Edge device. 
+As a consequence, you need an active Azure subscription to follow the exercises. Either create a free account that comes with a 30 days trial or use your pay-as-you-go subscription.
 
-Before you begin, if you don't have an active Azure subscription, you need to create a free account, and you can use 30 days free trial, or you can create your own pay-as-you-go subscription.
+## What is a resource group?
 
-Hence, the steps we follow are:  
+A resource group is a container to logically group Azure resources. These resources can be, for example, storage accounts, virtual networks, and virtual machines (VMs) you want to treat as a single entity. The resource group stores metadata about the resources. Therefore, when you specify a location for the resource group, you're selecting where that metadata is stored. For compliance reasons, you may need to keep your data in a particular region.
 
-1)	Define the resource group or use a pre-existing one  
+## Create an Azure IoT Edge device
 
-2)	Create an Azure IoT Edge device
+IoT Edge devices have the IoT Edge runtime installed on them. The Azure "IoT Edge on Ubuntu" virtual machine is an IoT device ready for use.
 
-3)	Create Azure IoT Hub or use an existing one
+The **IoT Edge runtime** is a collection of programs that turn a device into an IoT Edge device. Collectively, the IoT Edge runtime components enable IoT Edge devices to receive code to run at the edge and communicate the results with an IoT Hub.
 
-4)	Register the IoT Edge device to IoT Hub 
+* **IoT Edge security daemon:** starts each time an IoT Edge device boots and bootstraps the device by running the IoT Edge agent.
+* **IoT Edge agent:** facilitates deployment and monitoring of modules on the IoT Edge device, including the IoT Edge hub.
+* **IoT Edge hub:** manages communications between modules on the IoT Edge device and between the device and IoT Hub. 
 
-## What is a Resource Group
+## Create an IoT Hub
 
-A Resource group is a container that holds related resources for a solution. The resource group includes those resources that you want to manage as a group. You logically group-related resources such as storage accounts, virtual networks, and virtual machines (VMs) to deploy, manage, and maintain them as a single entity. The resource group stores metadata about the resources. Therefore, when you specify a location for the resource group, you're specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
+Azure IoT Hub enables the communication between the virtual device and the cloud. To create a new Azure IoT Hub with the Azure CLI, you'll use the `az IoT hub create` command set.
 
-## How to create an IoT Edge device
-
-After the Resource group has been created, you can create a preconfigured IoT Virtual device within this resource group.  Creating a new virtual edge device involves two required properties:  Defining a name of the virtual device and choosing the resource group to be deployed. Because you're using the Azure IoT Edge on Ubuntu virtual machine as described in the prerequisites, your device already has the IoT Edge runtime installed. The **IoT Edge runtime** is a collection of programs that turn a device into an IoT Edge device. Collectively, the IoT Edge runtime components enable IoT Edge devices to receive code to run at the edge and to communicate the results with the IoT hub.
-
-The IoT Edge runtime is deployed on all IoT Edge devices. It has three components. **The IoT Edge security daemon** starts each time an IoT Edge device boots and bootstraps the device by starting the IoT Edge agent. **The IoT Edge agent** facilitates deployment and monitoring of modules on the IoT Edge device, including the IoT Edge hub. **The IoT Edge hub** manages communications between modules on the IoT Edge device and between the device and IoT Hub. You can use the **az IoT hub device-identity create** command to create an IoT Edge device.
-
-## How to create IoT Hub
-
-Azure IoT Hub enables communication between the virtual device and the cloud. Creating an IoT Hub involves the following required properties: 	Defining a unique name of the IoT Hub and Choosing the resource group to be deployed. To create a new Azure IoT Hub with the Azure CLI, you'll use the **az IoT hub create** command set. Note that only one free IoT hub instance is allowed in each subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.  
+> [!NOTE]
+> Only one **free** IoT hub instance is allowed in a subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.
 
 ## Register the IoT Edge device to IoT Hub
 
-The process of registration of an IoT device involves retrieving the connection string for your device. The device identity lives in the cloud, and you use a unique device connection string to associate a physical device to a device identity. Use the **az iot hub device-identity show-connection-string** command to retrieve the connection string. Copy the value of the connectionString key from the JSON output and save it. You'll use this connection string to configure the IoT Edge runtime.
+1. Use the `az IoT hub device-identity create` command to create a device identity for your Edge device on Azure. The device identity enables you to communicate with your IoT Hub.
+1. Retrieve the connection string with the `az iot hub device-identity show-connection-string` command. Every device identity uses a unique device connection string to associate it with a physical device.
+1. Set up the connection string on the IoT Edge device so it can connect to the IoT Hub. You can do this remotely without connection to the virtual machine by running a script on the device. Use the `az vm run-command` to invoke a script on the edge device and pass the connection string as a parameter.  
 
-## How to configure your IoT Edge device
+## Ensure the IoT Edge device is ready to run pre-built modules
 
-The process of configuration of your IoT Edge device involves setting the connection string on the IoT Edge device. You can set the connection string remotely without having to connect to the virtual machine by running a script on the device. You use the **az vm run-command** to invoke a script on the edge device and passing the connection string as a parameter.  
+Once the edge device is configured, check if it is ready to run a pre-built module.
 
-## How to ensure that your IoT Edge device is ready to run pre-built modules
+* Log on to the edge device using the public IP address for the device and run the `ssh command`.
+* With `iotedge` commands, you can check if the IoT Edge security daemon is running as a system service.
 
-Once the edge device has been configured, you should check if the IoT Edge device is ready to run a pre-built module.  To do so, you should first log on to the edge device using the public IP address for the device and the **ssh command**. You'll check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.
+> [!NOTE]
+> You need elevated privileges to run `iotedge` commands.

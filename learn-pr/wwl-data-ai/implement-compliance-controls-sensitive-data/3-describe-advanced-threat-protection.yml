@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-compliance-controls-for-sensitive-data.describe-advanced-threat-protection
+title: Describe advanced threat protection
+metadata:
+  title: Describe advanced threat protection
+  description: "Describe advanced threat protection"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-advanced-threat-protection.md)]

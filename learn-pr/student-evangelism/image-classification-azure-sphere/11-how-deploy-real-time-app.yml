@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.image-classification-azure-sphere.how-deploy-real-time-app
-title: How to deploy a real time image classification application to Azure Sphere
+title: How to deploy a real-time image classification application to Azure Sphere
 metadata:
-  title: How to deploy a real time image classification application to Azure Sphere
-  description: In this section, we guide the learner how to deploy a real time application to Azure Sphere device
+  title: How to deploy a real-time image classification application to Azure Sphere
+  description: In this section, we guide the learner in how to deploy a real-time application to an Azure Sphere device.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

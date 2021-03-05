@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-prebuilt-module-edge-device
 metadata:
-  title: "Deploy a prebuilt module to the Edge device"
+  title: "Deploy a pre-built module to the Edge device"
   description: "University of Oxford"
   ms.date: 12/5/2019
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-title: "Deploy a prebuilt module to the Edge device"
-summary: "Deploy a pre-built temperature simulator module to the edge using a container. The pre-built module will be deployed to an IoT edge device. You will check that the module was successfully created and deployed to the edge. You will view the simulated data from the deployed module."
+title: "Deploy a pre-built module to the Edge device"
+summary: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
 abstract: |
     In this module, you will:  
     - Launch a module from Azure portal to IoT Edge 
     - Generate simulated data from an edge device
     - Verify data generated from the edge device
    
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Ability to use IoT Hub in Azure
     - Ability to use Azure Cloud Shell

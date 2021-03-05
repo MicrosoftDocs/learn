@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.3-sales-channels
+title: Commercial marketplace sales channels
+metadata:
+  title: Commercial marketplace sales channels
+  description: Overview of the different ways that customers can find your solution in the commercial marketplace
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-sales-channels.md)]

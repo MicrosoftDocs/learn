@@ -88,7 +88,7 @@ The **sku** is combination of the performance tier and replication options. It c
 > [!NOTE]
 > ZRS in some of these skus stands for *Zone redundant storage*. Zone-redundant storage replicates your Azure Storage data synchronously across three Azure availability zones in the primary region. Each availability zone is a separate physical location with independent power, cooling, and networking. This is useful for applications requiring high availability. 
 >
-> The ZRS options aren't available in the Azure portal.
+
 
 The **kind** parameter should be one of BlobStorage, BlockBlobStorage, FileStorage, Storage, or StorageV2.
 

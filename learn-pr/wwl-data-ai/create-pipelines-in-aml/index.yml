@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.create-pipelines-in-aml
 metadata:
-  title: Orchestrating machine learning with pipelines
-  description: "Create pipelines in Azure Machine Learning"
-  ms.date: 06/07/2020
+  title: Orchestrate machine learning with pipelines
+  description: "Orchestrate machine learning with pipelines"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Orchestrating machine learning with pipelines
+title: Orchestrate machine learning with pipelines
 summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
 abstract: |
   - Create Pipeline steps
@@ -23,10 +23,9 @@ levels:
 - beginner
 roles:
 - data-scientist
-- student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 units:
 - learn.wwl.create-pipelines-in-aml.introduction
 - learn.wwl.create-pipelines-in-aml.pipelines

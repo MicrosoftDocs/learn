@@ -19,8 +19,6 @@ Cloud migration is the process of moving existing digital assets to a cloud plat
 
 The strategy and tools you use to migrate an application to Azure largely depend on your business motivations, technology strategies, and timelines. Your decisions are also based on a deep understanding of the application and the assets to be migrated. These assets include infrastructure, apps, and data. This decision tree serves as high-level guidance to help you select the best tools to use based on migration decisions.
 
-To guide incremental execution during the transition to the end state, this model separates migration into two areas of focus.
-
 **Migration preparation** - establish a rough migration backlog based largely on the current state and desired outcomes:
 - **Business outcomes:** The key business objectives that drive this migration. They're defined in the Plan stage.
 - **Digital estate estimate:** A rough estimate of the number and condition of workloads to be migrated. It's defined in the Plan stage.

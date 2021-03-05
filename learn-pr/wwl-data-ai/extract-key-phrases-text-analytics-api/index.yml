@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.extract-key-phrases-text-analytics-api
+metadata:
+  title: Extract key phrases from text with the text analytics API
+  description: "Automatically extract key phrases to quickly identify the main points in documents or text."
+  ms.date: 11/03/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extract key phrases from text with the text analytics API
+summary: Automatically extract key phrases to quickly identify the main points in documents or text.
+abstract: |
+  Upon completion of this module, you will be able to:
+  * Prepare a JSON Document for use in Key Phrase Extraction
+  * Structure and Submit the Request
+  * Evaluate the key phrases extracted from the text
+prerequisites: |
+  - Knowledge of navigating the Azure portal
+  - Knowledge of at least one programming language such as C# or Python
+  - Basic understanding of REST APIs and JSON
+iconUrl: /learn/achievements/extract-key-phrases-from-text-with-the-text-analytics-api.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.extract-key-phrases-text-analytics-api.introduction
+- learn.wwl.extract-key-phrases-text-analytics-api.exercise-prepare-json-document-use-key-phrase-extraction
+- learn.wwl.extract-key-phrases-text-analytics-api.exercise-structure-submit-request
+- learn.wwl.extract-key-phrases-text-analytics-api.exercise-evaluate-results
+- learn.wwl.extract-key-phrases-text-analytics-api.knowledge-check
+- learn.wwl.extract-key-phrases-text-analytics-api.summary
+badge:
+  uid: learn.wwl.extract-key-phrases-text-analytics-api.badge

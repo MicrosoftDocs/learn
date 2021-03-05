@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-bot-with-bot-framework-composer.use-cards-your-bot
+title: Use cards in your Bot
+metadata:
+  title: Use cards in your Bot
+  description: "Use cards in your Bot"
+  ms.date: 12/21/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-use-cards-bot.md)]

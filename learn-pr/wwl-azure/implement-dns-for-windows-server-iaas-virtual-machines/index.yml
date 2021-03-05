@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms
+metadata:
+  title: Implement DNS for Windows Server IaaS VMs
+  description: "Implement DNS for Windows Server IaaS VMs"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement DNS for Windows Server IaaS VMs
+summary: In this module, you’ll learn to configure DNS for Windows Server IaaS VMs, choose the appropriate DNS solution for your organization’s needs, and run a DNS server in a Windows Server Azure IaaS VM.
+abstract: |
+  After completing this module, you will be able to:
+  - Implement DNS in Azure
+  - Describe DNS options for Azure IaaS VMs
+  - Implement split-horizon DNS in Azure
+  - Troubleshoot DNS in Azure
+  - Create and configure an Azure DNS zone
+prerequisites: |
+  To get the best learning experience from this module, it's important that you have knowledge and experience of the following areas:
+  - Managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, Distributed File System (DFS), Microsoft Hyper-V, and file and storage services.
+  - Common Windows Server management tools.
+  - Core Microsoft compute, storage, networking, and virtualization technologies.
+  - Implementing and managing IaaS services in Microsoft Azure.
+  - Azure Active Directory (Azure AD).
+  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Windows PowerShell scripting.
+  - Automation and monitoring.
+iconUrl: /learn/achievements/implement-dns-for-windows-server-iaas-vm.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-cloud-shell
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.introduction
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.understand-azure-dns
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.implement-azure-dns
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.create-an-azure-dns-zone-record-using-azure-portal
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.implement-dns-azure-iaas-virtual-machines
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.implement-split-horizon-dns-azure
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.troubleshoot-dns
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.knowledge-check
+- learn.wwl.implement-dns-for-windows-server-iaas-vms.summary
+badge:
+  uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.badge

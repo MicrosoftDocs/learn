@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-database-authentication-authorization.describe-security-principals
+title: Describe Security Principals
+metadata:
+  title: Describe Security Principals
+  description: "Describe Security Principals"
+  ms.date: 12/30/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 18
+content: |
+  [!include[](includes/4-describe-security-principals.md)]

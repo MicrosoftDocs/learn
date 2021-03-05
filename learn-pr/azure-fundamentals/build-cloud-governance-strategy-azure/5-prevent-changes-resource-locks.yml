@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
+title: Prevent accidental changes by using resource locks
+metadata:
+  description: Learn how resource locks prevent accidental deletion of your Azure resources.
+  ms.date: 09/14/2020
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-prevent-changes-resource-locks.md)]

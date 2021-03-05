@@ -1,4 +1,4 @@
-Here, we discuss the key considerations for establishing an open-source program. 
+Here, we discuss the key considerations for establishing an open-source program.
 
 ## What do we mean by "open-source"?
 
@@ -38,7 +38,7 @@ Many projects are not destined for open-source greatness. While your criteria ma
 
 - Is your project useful to people outside of your company? If not, then you probably won't get any participation.
 
-- Will people outside your company be able to contribute? They will need access to all project dependencies, build processes, and whatever else is needed to run the project. If they can't run it, then they can't contribute. 
+- Will people outside your company be able to contribute? They will need access to all project dependencies, build processes, and whatever else is needed to run the project. If they can't run it, then they can't contribute.
 
 - Does your team have the bandwidth to support an open-source program? If not, then wait until you do. If you open-source a project and then don't support it, you might lose your opportunity to build a trusting community.
 
@@ -48,7 +48,7 @@ These questions are just a few of the most common considerations. Your organizat
 
 Running an open-source program is similar to running an InnerSource program, but for a public audience. As a result, there are a few additional considerations.
 
-### Setting community expectations 
+### Setting community expectations
 
 Files like `README.md` and `CONTRIBUTING.md` are even more important because they are being exposed to people who don't have your organizational context. They will need to be evaluated from the perspective of someone outside the company to ensure clarity.
 
@@ -56,18 +56,18 @@ In addition, your **code of conduct** is an important policy to express. The sta
 
 ### Preparing employees to maintain a repository
 
-Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides the cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
+Employees may not have experience working with the open-source community. To help them prepare, it is recommended that the company offer a set of guides that cover the key things everyone should know before they get started. These guides should be posted to an internal repository or portal that is only accessible to company employees and regularly maintained. A few of the most important guides are listed below.
 
-- A **"Should we open-source this?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
+- A **"Should we open-source this project?" guide** that provides a framework for deciding whether or not a candidate project should be open-sourced. This guide could be structured as a flowchart, set of questions, or list of considerations.
 
-- A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](http://ivantomic.com/projects/ospnc/?azure-portal=true) to ensure there isn't a naming conflict, and so on.
+- A **setup checklist** that includes all of the work items a team needs to complete before and after the launch of an open-sourced project. This list should include acquiring approval to open-source the project, code reviews to ensure sensitive data is removed before the project goes live, a trademark or [open-source project search](https://opensource.google/projects/search) to ensure there isn't a naming conflict, and so on.
 
-- A **contact list** for key people in your organization that may need to be contacted in a hurry if something goes sideways. This list should include people from software security, site security, legal, public relations, and so on. 
+- A **contact list** for key people in your organization that may need to be contacted in case direct support from the maintainers is required. This list should include people from software security, site security, legal, public relations, and so on.
 
 - A link to a **starter repository** that can be cloned as a starting point. It should contain a sample README, license, code of conduct, contributing guide, and any other supporting files every open-source project from your company needs to have. It shouldn't contain anything you wouldn't want accidentally pushed to a public audience.
 
 - A **maintainer's guide** that explains the responsibilities a maintainer has in keeping the repository healthy. These responsibilities will include keeping repository documentation up to date, ensuring issues and pull requests get the attention of the right people in a timely manner, and so on.
- 
+
 - A **communications guide** that offers repository maintainers guidance for some of the topics you would prefer not to include in public files like `README.md`, `CONTRIBUTING.md`, or `CODE_OF_CONDUCT.md`. These subjects may be sensitive business topics, such as not discussing competitors, or more general conduct topics, like how to appropriately recognize top contributors.
 
 - An **internal FAQ** that provides approved answers to common questions. This list is especially useful if there are legal subtleties to the topics your company may discuss in the course of maintaining an open-source program.

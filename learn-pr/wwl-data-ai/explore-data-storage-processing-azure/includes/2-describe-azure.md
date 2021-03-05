@@ -4,7 +4,7 @@ The most common options for processing data in Azure include Azure Databricks, A
 
 ## What is Azure Synapse Analytics?
 
-Azure Synapse Analytics is generalized analytics service. You can use it to read data from many sources, process this data, generate various analyses and models, and save the results.
+Azure Synapse Analytics is a generalized analytics service. You can use it to read data from many sources, process this data, generate various analyses and models, and save the results.
 
 You can select between two technologies to process data:
 
@@ -34,14 +34,14 @@ The processing engine is provided by Apache Spark. Spark is a parallel-processin
 
 You can write the Spark application code using several languages, such as Python, R, Scala, Java, and SQL. Spark has a number of libraries for these languages, providing complex analytical routines that have been optimized for the clustered environment. These libraries include modules for machine learning, statistical analysis, linear and non-linear modeling, predictive analytics, and graphics.
 
-You write Databricks applications using a *Notebook*. A notebook contains a series of steps (*cells*), each of which contains a block of code. For example, one cell might contain the code that connects to a data source, the next cell reads the data from that source and converts it into a model in-memory, the next cell plots a graph, and a final cell saves the data from the in-memory model to a repository.
+You write Databricks applications using a *Notebook*. A notebook contains a series of steps (*cells*), each of which contains a block of code. For example, one cell might contain the code that connects to a data source, the next cell reads the data from that source and converts it into a model in-memory, the next cell plots a graph, and a final cell saves the data from the in-memory model to a repository. The first line in the cell is %language. For example, %scala.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing the elements of Azure Databricks](../media/2-databricks.png)
 
 For more information, read [What is Azure Databricks?](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)
 
-### What is Azure HDInisght? 
+### What is Azure HDInsight? 
 
 Azure HDInsight is a managed analytics service in the cloud. It's based on Apache Hadoop, a collection of open-source tools and utilities that enable you to run processing tasks over large amounts of data. HDInsight uses a clustered model, similar to that of Synapse Analytics. HDInsight stores data using Azure Data Lake storage. You can use HDInsight to analyze data using frameworks such as Hadoop Map/Reduce, Apache Spark, Apache Hive, Apache Kafka, Apache Storm, R, and more.
 
@@ -49,7 +49,7 @@ Hadoop Map/Reduce uses a simple framework to split a task over a large dataset i
 
 Like Map/Reduce jobs, Spark jobs are parallelized into a series of subtasks tasks that run on the cluster. You can write Spark jobs as part of an application, or you can use interactive notebooks. These notebooks are the same as those that you can run from Azure Databricks. Spark includes libraries that you can use to read and write data in a wide variety of data stores (not just HDFS). For example, you can connect to relational databases such as Azure SQL Database, and other services such as Azure Cosmos DB.
 
-Apache Hive provides interactive SQL-like facilities for querying, aggregating, and summarizing data. The data can come from many different sources. Queries are converted into tasks, and parallelized. Each task can run on a separate node in the HDInisght cluster, and the results are combined before being returned to the user.
+Apache Hive provides interactive SQL-like facilities for querying, aggregating, and summarizing data. The data can come from many different sources. Queries are converted into tasks, and parallelized. Each task can run on a separate node in the HDInsight cluster, and the results are combined before being returned to the user.
 
 Apache Kafka is a clustered streaming service that can ingest data in real time. It's a highly scalable solution that offers publish and subscribe features.
 
@@ -68,7 +68,7 @@ For example, imagine a gaming company that collects petabytes of game logs that 
 
 To analyze these logs, the company needs to use reference data such as customer information, game information, and marketing campaign information that is in an on-premises data store. The company wants to utilize this data from the on-premises data store, combining it with additional log data that it has in a cloud data store.
 
-To extract insights, the company wants to process the joined data by using a Spark cluster in the cloud (using Azure HDInsight), and publish the transformed data into a cloud data warehouse such as Azure Synapse Analytics. The company can use the information in the data warehouse generate and publish reports. They want to automate this workflow, and monitor and manage it on a daily schedule. They also want to execute it when files land in a blob store container.
+To extract insights, the company wants to process the joined data by using a Spark cluster in the cloud (using Azure HDInsight), and publish the transformed data into a cloud data warehouse such as Azure Synapse Analytics. The company can use the information in the data warehouse to generate and publish reports. They want to automate this workflow, and monitor and manage it on a daily schedule. They also want to execute it when files land in a blob store container.
 
 Using Azure Data Factory, you can create and schedule data-driven workflows (called pipelines) that can ingest data from the disparate data stores used by the gaming company. You can build complex ETL processes that transform data visually with data flows or by using compute services such as Azure HDInsight, Azure Databricks, and Azure SQL Database. You can then publish the transformed data to Azure Synapse Analytics for business intelligence applications to consume. 
 
@@ -84,7 +84,7 @@ Azure Data Lake is a collection of analytics and storage services that you can c
 
 - Data Lake Store
 - Data Lake Analytics
-- HDInisght
+- HDInsight
 
 ### What is Data Lake Store?
 

@@ -2,8 +2,8 @@
 uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning
 metadata:
   title: Explain machine learning models with Azure Machine Learning
-  description: "Many decisions made by organizations and automated systems today are based on predictions made by machine learning models. It's increasingly important to be able to understand the factors that influence the predictions models make."
-  ms.date: 07/02/2020
+  description: "Explain machine learning models with Azure Machine Learning"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,10 +20,9 @@ levels:
 - intermediate
 roles:
 - data-scientist
-- student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-portal
 units:
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.introduction

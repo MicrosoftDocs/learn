@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.backup-restore-databases.backup-sql-server-virtual-machine
+title: Back up a SQL Server virtual machine
+metadata:
+  title: Back up a SQL Server virtual machine
+  description: "Back up a SQL Server virtual machine"
+  ms.date: 02/12/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-backup-sql-server-virtual-machine.md)]

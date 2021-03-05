@@ -3,13 +3,14 @@ uid: learn.wwl.analyze-images-computer-vision.exercise
 title: Exercise - Analyze images with the Computer Vision service
 metadata:
   title: Exercise - Analyze images with the Computer Vision service
-  description: "Get hands-on with the Computer Vision service"
-  ms.date: 06/07/2020
+  description: "Exercise - Analyze images with the Computer Vision service"
+  ms.date: 02/18/2021
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88758
 durationInMinutes: 20
 content: |
   [!include[](includes/3-analyze-images.md)]

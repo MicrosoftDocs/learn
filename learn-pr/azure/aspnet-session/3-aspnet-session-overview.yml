@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-session.3-aspnet-session-overview
+title: Store session state information in an ASP.NET web app
+metadata:
+  title: Store session state information in an ASP.NET web app
+  description: Summarize the purpose of session state, and describe how to store session state information in an ASP.NET web app.
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-aspnet-session-overview.md)]
+  

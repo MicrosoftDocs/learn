@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
@@ -46,7 +45,7 @@ quiz:
       explanation: "Azure private peering lets you directly connect to virtual machines and cloud services on their private IP addresses."
     - content: "Microsoft peering"
       isCorrect: false
-      explanation: "Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365."
+      explanation: "Microsoft peering supports connections to cloud-based SaaS offerings, such as Microsoft 365 and Dynamics 365."
   - content: 'Which protocol provides dynamic routing for Azure ExpressRoute?'
     choices:
     - content: "IPVPN"

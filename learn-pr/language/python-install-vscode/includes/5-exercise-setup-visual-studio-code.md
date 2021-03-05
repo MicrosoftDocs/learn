@@ -6,7 +6,7 @@ As an aspiring Python developer, you'll probably prefer to write a Python *scrip
 
 You typically write Python syntax in a text file and save it to your local hard drive. You can write code by using a simple text file editor, like Notepad in Windows. Notepad edits ASCII text, a simple standard text file format.  
 
-You always want to avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs will include additional formatting instructions that the Python compiler will understand.
+You always want to avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs will include additional formatting instructions that the Python compiler won't understand.
 
 Although you can use a text editor, you'll probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
 
@@ -60,7 +60,7 @@ Under the Linux logo, select either the **.deb** installer (for .deb-based packa
 
 If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
 
-Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select the **Install** button.
+Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 
 You might be asked to authenticate by using your account password.
 
@@ -88,7 +88,7 @@ Go to the [Visual Studio Code download page](https://code.visualstudio.com/Downl
 
 The web page displays logos for Windows, Linux, and Mac.
 
-Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder) or immediately run the file.
+Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder), or immediately run the file.
 
 You should move the file to the Applications folder before you open it, as described in the next step.
 
@@ -101,6 +101,6 @@ Open Finder. Drag the Visual Studio Code file from the Downloads stack on the Do
 Double-click the **Visual Studio Code** app from the Applications folder.  
 
 > [!IMPORTANT]
-> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
+> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
 
 ::: zone-end

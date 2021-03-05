@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.backup-restore-databases.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/12/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How does backup to URL in SQL Server or Azure SQL Server Database Managed Instance store the backup file?"
+    choices:
+    - content: "As a URL"
+      isCorrect: false
+      explanation: "That's incorrect. The URL just defines where the data is stored but not the storage."
+    - content: "As a blob"
+      isCorrect: true
+      explanation: "That's correct. Backup to URL requires an Azure storage account and uses the Azure blob storage service."
+    - content: "As a pointer"
+      isCorrect: false
+      explanation: "That's incorrect. A pointer is not used in the backup process."
+  - content: "Which platforms can an Azure Database for PostgreSQL database backup be restored to?"
+    choices:
+    - content: "PostgreSQL only"
+      isCorrect: false
+      explanation: "That's incorrect. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
+    - content: "Azure Database for PostgreSQL only"
+      isCorrect: true
+      explanation: "That's correct. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
+    - content: "PostgreSQL or Azure Database for PostgreSQL"
+      isCorrect: false
+      explanation: "That's incorrect. Similar to all other Azure PaaS offerings, these backups can only be used by Azure Database for PostgreSQL and not a standard installation of PostgreSQL."
+  - content: "What is the cost for backup storage for both Azure Database for MySQL and Azure Database for PostgreSQL?"
+    choices:
+    - content: "Free up to the size of the database"
+      isCorrect: true
+      explanation: "That's correct. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
+    - content: "Double the cost of the service"
+      isCorrect: false
+      explanation: "That's incorrect. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
+    - content: "Half the cost of the service"
+      isCorrect: false
+      explanation: "That's incorrect. One nice thing about the backups is that there is no cost; if a server is provisioned with 100 GB of storage, you get the equivalent amount of backup space included with what you are already paying."
