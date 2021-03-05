@@ -159,7 +159,7 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 1. In the Azure portal, on the **Dashboard** select the Batch account beginning `cutify`.
 
-    ![Screenshot of the Overview page of the Batch account](../media/9-batch-results.png)
+    ![Screenshot of the Overview page of the Batch account.](../media/9-batch-results.png)
 
 1. The health dashboard is shown on the Overview page, from here you can check the status of the current running job and the pool of nodes.
 
@@ -169,13 +169,12 @@ By the end of this exercise, you'll have a working Batch process that can conver
 
 1. On the left select **Blobs**, then select the **output** folder.
 
-    ![Screenshot of the created containers in blob storage](../media/9-containers-created-successfully.png)
+    ![Screenshot of the created containers in blob storage.](../media/9-containers-created-successfully.png)
 
 1. The folder contains the converted animated gif files.
 
-    ![Screenshot of the converted files in blob storage](../media/9-output-files.png)
+    ![Screenshot of the converted files in blob storage.](../media/9-output-files.png)
 
 1. Download a file to check the cutest pet video.
-
 
     <!-- TODO replace the above with the cutest pet video -->
