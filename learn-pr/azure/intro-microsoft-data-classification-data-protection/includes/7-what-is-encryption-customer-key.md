@@ -16,4 +16,4 @@ Using keys you provide, Customer Key encrypts:
 - Files uploaded to OneDrive for Business.
 - Exchange Online mailbox content including email body content, calendar entries, and the content within email attachments.
 
-Customer Key only encrypts data at rest in the cloud. Customer Key doesn’t work to protect your on-premises mailboxes and files. You can encrypt your on-premises data using another method, such as BitLocker.
+Customer Key only encrypts data at rest in the cloud. Customer Key doesn’t work to help protect your on-premises mailboxes and files. You can encrypt your on-premises data using another method, such as BitLocker.

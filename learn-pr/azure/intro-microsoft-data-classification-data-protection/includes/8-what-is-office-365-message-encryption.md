@@ -16,7 +16,7 @@ Unlike the previous version of OME, the new capabilities provide a unified sende
 
 When someone sends an email message that matches an encryption mail flow rule, the message is encrypted before it's sent. All Microsoft 365 end users that use Outlook clients to read mail receive native, first-class reading experiences for encrypted and rights-protected mail even if they're not in the same organization as the sender. Supported Outlook clients include Outlook desktop, Outlook Mac, Outlook mobile on iOS and Android, and Outlook on the web (formerly known as Outlook Web App).
 
-Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail that directs them to the OME portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
+Recipients of encrypted messages who receive encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo! accounts receive a wrapper mail that directs them to the OME portal where they can easily authenticate using a Microsoft account, Gmail, or Yahoo! credentials.
 
 :::image type="content" source="../media/8-One-Time-Passcode.png" alt-text="Screenshot of wrapper mail for recipient of encrypted message.":::
 

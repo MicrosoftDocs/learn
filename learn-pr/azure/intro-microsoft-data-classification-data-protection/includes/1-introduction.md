@@ -6,7 +6,7 @@ Contoso’s IT director realizes that Contoso has an outdated operational model 
 
 As part of the initial design, the Contoso IT team asked you to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. Ensure that these services have the capabilities to address the legal department's concerns.
 
-In this module, you’ll learn how to use Microsoft technologies, including Azure Information Protection and Microsoft Information Protection, to classify and protect sensitive data.
+In this module, you’ll learn how to use Microsoft technologies, including Azure Information Protection and Microsoft Information Protection, to help classify and protect sensitive data.
 
 ## Learning objectives
 
@@ -14,7 +14,7 @@ After completing this module, you'll know more about:
 
 - Azure Information Protection and Microsoft Information Protection.
 - Sensitivity labels.
-- How to use sensitivity labels to protect data.
+- How to use sensitivity labels to help protect data.
 - Unified labeling scanner.
 - Microsoft Cloud App Security.
 - Service encryption with Customer Key.
