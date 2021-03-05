@@ -14,7 +14,7 @@ The vCore-based purchasing model gives you flexibility and control over individu
 
 The chart below provides a comparison of the two pricing models:
 
-![Illustration comparing the DTU versus the vCore Pricing Model.](../media/DTUvCore.png)
+![Diagram comparing the DTU versus the vCore Pricing Model.](../media/DTUvCore.png)
 
 ## Review cost estimates
 
@@ -22,8 +22,8 @@ The Azure portal displays the results of your pool settings as an estimated mont
 
 **DTU-based Pricing Model**
 
-![Illustration showing the DTU Pricing Model.](../media/DTUPricing.png)
+![Screenshot showing the DTU Pricing Model.](../media/DTUPricing.png)
 
 **vCore-based Pricing Model**
 
-![Illustration showing the vCore Pricing Model.](../media/VCorePricing.png)
+![Screenshot showing the vCore Pricing Model.](../media/VCorePricing.png)
