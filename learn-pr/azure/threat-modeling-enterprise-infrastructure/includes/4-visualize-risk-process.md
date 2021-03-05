@@ -1,6 +1,6 @@
 ### Process
 
-![Process](../media/elements/process-50.png)
+![Process element](../media/elements/process-50.png)
 
 #### What is process?
 

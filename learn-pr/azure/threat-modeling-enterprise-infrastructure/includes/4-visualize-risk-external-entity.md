@@ -1,6 +1,6 @@
 ### External entity
 
-![External entity](../media/elements/external-entity-50.png)
+![External entity element](../media/elements/external-entity-50.png)
 
 #### What is external entity?
 
