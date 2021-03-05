@@ -49,7 +49,7 @@ Git works by checking for changes to files within a certain folder. We'll create
 
 Start by creating an empty project directory, and then initialize a Git repository inside it.
 
-1. Create a folder named *Cats*. This folder will be the working tree where your website and the files that comprise it are stored.
+1. Create a folder named *Cats*. This folder will be the working tree where your website and the files that create the website and its contents are stored.
 
     ```bash
     mkdir Cats
@@ -83,7 +83,7 @@ Start by creating an empty project directory, and then initialize a Git reposito
     git status
     ```
 
-    Git responds by saying "nothing to commit." It also says `On branch main`, indicating that `main` is the current branch. (It's also the only branch.) So far, so good.
+    Git responds by saying that it `Initialized empty Git repository`. It also says `Switched to a new branch 'main'`, indicating that `main` is the current branch. (It's also the only branch.) So far, so good.
 
 1. Use an `ls` command to show the contents of the working tree:
 
@@ -91,7 +91,7 @@ Start by creating an empty project directory, and then initialize a Git reposito
     ls -a
     ```
 
-    Confirm that the directory contains a subdirectory named *.git*. (Using the `-a` option with `ls` is important, because Linux normally hides file and directory names that start with a period.) This folder is the Git *repository*—the directory in which Git stores metadata and history for the working tree.
+    Confirm that the directory contains a subdirectory named *.git*. (Using the `-a` option with `ls` is important because Linux normally hides file and directory names that start with a period.) This folder is the Git *repository*—the directory in which Git stores metadata and history for the working tree.
 
     You typically don't do anything with the *.git* directory directly. Git updates the metadata there as the status of the working tree changes to keep track of what's changed in your files. This directory is hands-off for you, but it's incredibly important to Git.
 
@@ -152,6 +152,6 @@ Git, like most command-line tools, has a built-in help function that you can use
     to read about a specific subcommand or concept.
     ```
 
-Read through the different options available with Git and note that each command comes with its own help page, for when you start digging deeper. Not all of these commands will make sense yet, but some might look familiar if you have experience using a VCS.
+Read through the different options available with Git and note that each command comes with its own help page, for when you start digging deeper. Not all these commands will make sense yet, but some might look familiar if you have experience using a VCS.
 
 In the next lesson, you learn more about the commands you just tried and the basics of Git.
