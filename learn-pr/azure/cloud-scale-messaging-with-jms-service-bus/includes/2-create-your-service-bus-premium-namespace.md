@@ -93,8 +93,6 @@ az servicebus namespace create \
 
 This command takes a few minutes to finish. You can continue to the next unit while it finishes.
 
-> [!IMPORTANT]
-> There is a nominal fee to use the Azure Service Bus Premium namespace - please review [Service Bus Pricing](https://azure.microsoft.com/pricing/details/service-bus/) for more details.
->
-> Please be sure to delete the namespace and the resource group you created in the above steps to avoid being billed for the resources, by using the steps mentioned in the Summary unit at the end of this module.
+> [!NOTE]
+> Make sure to delete your Azure Service Bus Premium namespace when you're finished with it to avoid an ongoing charge to your Azure subscription. Even if you don't finish the module, follow the cleanup steps in the final Summary unit to remove the namespace and stop billing. See [Service Bus Pricing](https://azure.microsoft.com/pricing/details/service-bus/) for more details about pricing.
 >
