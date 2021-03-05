@@ -215,7 +215,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     ```bash
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/1.mp4 > ./InputFiles/1.mp4
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/2.mp4 > ./InputFiles/2.mp4
-    curl -L  https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/3.mp4 > ./InputFiles/3.mp4
+    curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/3.mp4 > ./InputFiles/3.mp4
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/4.mp4 > ./InputFiles/4.mp4
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/5.mp4 > ./InputFiles/5.mp4
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/6.mp4 > ./InputFiles/6.mp4
@@ -251,12 +251,12 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 1. Return to the Azure portal, on the left select Storage accounts, then select the storage account your created in the first exercise.
 
-    ![Screenshot of a users storage accounts](../media/8-storage-account.png)
+    ![Screenshot of a user's storage accounts.](../media/8-storage-account.png)
 
 1. In the Azure portal, on the left select Blobs, then select the input folder.
 
-    ![Screenshot of the created containers in blob storage](../media/8-containers-created-successfully.png)
+    ![Screenshot of the created containers in blob storage.](../media/8-containers-created-successfully.png)
 
 1. The folder contains the uploaded videos.
 
-    ![Screenshot of the two uploaded video files](../media/8-videos-uploaded.png)
+    ![Screenshot of the two uploaded video files.](../media/8-videos-uploaded.png)
