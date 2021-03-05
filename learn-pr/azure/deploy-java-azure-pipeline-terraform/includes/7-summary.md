@@ -1,4 +1,4 @@
-Congratulations! You've learned how to use Terraform with GitHub Actions to create multiple pipelines.
+Congratulations! You've learned how to use Terraform with DevOps to create multiple pipelines.
 
 You've created an Azure App Service application and a MySQL database, and you've deployed a Spring Boot web application.
 
