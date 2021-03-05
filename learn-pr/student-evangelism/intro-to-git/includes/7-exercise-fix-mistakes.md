@@ -110,7 +110,7 @@ One solution to this problem is to revert the previous commit.
     git log -n1
     ```
 
-    > The `-n1` flag here tells Git that we want only the most recent commit entry.
+    The `-n1` flag here tells Git that we want only the most recent commit entry.
 
 1. Use the following commands to attempt to restore *index.html*:
 
@@ -118,7 +118,7 @@ One solution to this problem is to revert the previous commit.
     git checkout -- index.html
     ```
 
-1. Open *index.html* by using the editor:
+1. Open *index.html* in the editor:
 
     ```bash
     code index.html

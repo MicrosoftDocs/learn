@@ -1,10 +1,10 @@
-Sometimes, things go wrong. You might forget to add a new file, or maybe you add one by mistake. Perhaps you made a spelling error in your latest commit, or you committed something you didn't intend to. Perhaps you accidentally _deleted_ a file.
+Sometimes, things go wrong. You might forget to add a new file, or maybe you add a file by mistake. Perhaps you made a spelling error in your latest commit or you committed something you didn't intend to. Perhaps you accidentally _deleted_ a file.
 
 Git lets you make changes fearlessly, because it *always* offers a way to get back to where you were. You can even change Git's commit history as long as you only change commits that haven't been shared.
 
 ## Amend a commit: --amend flag
 
-In the previous exercise, you updated the *index.html* file to modify the path to the style sheet. You should have added the following statement:
+In the preceding exercise, you updated the *index.html* file to modify the path to the style sheet. You should have added the following statement:
 
 ```html
 <link rel="stylesheet" href="CSS/site.css">
@@ -24,7 +24,7 @@ So, you update *index.html* with the correct path to the style sheet. At this po
 git commit --amend --no-edit
 ```
 
-The `--no-edit` option tells Git to make the change without changing the commit message. You can also use `--amend` to edit a commit message, to add files accidentally left out of the commit, or to remove files that were added by mistake.
+The `--no-edit` option tells Git to make the change without changing the commit message. You can also use `--amend` to edit a commit message, to add files that were accidentally left out of the commit, or to remove files that were added by mistake.
 
 The ability to change history is one of Git's most powerful features. As with most power tools, you must use it carefully. In particular, it's a bad idea to change any commits that have been shared with another developer, or which were published in a shared repository, like GitHub.
 
@@ -32,7 +32,7 @@ The ability to change history is one of Git's most powerful features. As with mo
 
 Imagine that you made a change to a source code file that broke the entire project, so you want to revert to the previous version of that file. Or perhaps you accidentally deleted a file altogether. Git makes it easy to retrieve an earlier version, even if the current version no longer exists. Your best friend in this situation is the [git checkout](https://git-scm.com/docs/git-checkout?azure-portal=true) command.
 
-`git checkout` has multiple uses, but in the next exercise, we'll use it to recover a deleted file. `git checkout` updates files in the working tree to match the version in the index or the specified tree.
+`git checkout` has multiple uses, but in the next exercise, we'll use it to recover a deleted file. `git checkout` updates files in the working tree to match the version in the index or in the specified tree.
 
 If you've accidentally deleted a file, you can recover it by bringing the version from the index back into the working tree by using this command:
 
@@ -42,7 +42,7 @@ git checkout -- <file_name>
 
 You can also check out a file from an earlier commit (typically, the head of another branch), but the default is to get the file from the index. The `--` in the argument list serves to separate the commit from the list of file paths. It's not strictly needed in this case, but if you had a branch named <file_name> (perhaps because that's the name of the file being worked on in that branch), `--` would prevent Git from getting confused.
 
-Later, you'll learn that `checkout` also is used to switch branches.
+Later, you'll learn that you also use `checkout` to switch branches.
 
 ## Recover files: git reset
 
@@ -78,12 +78,12 @@ Here's another "Aha!" moment for new Git users. Many VCSes make files read-only 
 
 The last important command to know for fixing mistakes with Git is `git revert`. `git checkout` works only in situations where the changes to undo are in the index. After you've committed changes, you need to use a different strategy to undo them. In this case, we can use `git revert` to revert our previous commit. It works by making _another_ commit that cancels out the first commit.
 
-We can use `git revert HEAD` to make a commit that's the exact _opposite_ of our last commit, undoing the previous commit, while leaving all history intact. The `HEAD` part of the command just tells Git that we want to "undo" only the last commit.
+We can use `git revert HEAD` to make a commit that's the exact _opposite_ of our last commit, undoing the previous commit while leaving all history intact. The `HEAD` part of the command just tells Git that we want to "undo" only the last commit.
 
-As an aside, you can also remove the most recent commit with the `git reset` command:
+As an aside, you can also remove the most recent commit by using the `git reset` command:
 
 ```bash
 git reset --hard HEAD^
 ```
 
-Git offers several types of resets. The default is `--mixed`, which resets the index but not the working tree; it also moves HEAD, if you specify a different commit. The `--soft` option moves HEAD only, and it leaves both the index and the working tree unchanged. This option leaves all your changes as "changes to be committed", as `git status` would put it. A `--hard` reset changes both the index and the working tree to match the specified commit; any changes that you made to tracked files are discarded.
+Git offers several types of resets. The default is `--mixed`, which resets the index but not the working tree; it also moves HEAD, if you specify a different commit. The `--soft` option moves `HEAD` only, and it leaves both the index and the working tree unchanged. This option leaves all your changes as "changes to be committed", as `git status` would put it. A `--hard` reset changes both the index and the working tree to match the specified commit; any changes that you made to tracked files are discarded.

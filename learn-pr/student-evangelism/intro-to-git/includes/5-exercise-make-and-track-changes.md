@@ -1,4 +1,4 @@
-Most development projects are iterative. You write some code, then you test the code and make sure it works. Then, you write more code and invite other people to contribute code. Iteration means many changes: code additions, bug fixes, deletions, and replacements.
+Most development projects are iterative. You write some code, and then you test the code and make sure it works. Then, you write more code and invite other people to contribute code. Iteration means many changes: code additions, bug fixes, deletions, and replacements.
 
 As you work on your project, Git helps keep track of the changes you make. It also lets you undo mistakes. In the next exercises, you continue building out the website you're working on and learn some important new commands, like `git diff`.
 
@@ -35,8 +35,6 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     The default is for `git diff` to compare the working tree to the index. In other words, it shows you all the changes that haven't been staged (added to Git's index) yet. To compare the working tree to the last commit, you can use `git diff HEAD`.
 
-1. Exit the `git diff` view by entering **q**.
-
 1. Next, commit the change. Instead of using the `-a` flag, you can explicitly name a file to be staged and committed if Git already has the file in the index (the  `commit` command looks only for the existence of a file).
 
     ```bash
@@ -66,14 +64,14 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     *.gitignore* is a very important file in the Git world because it prevents extraneous files from being submitted to version control. Boilerplate *.gitignore* files are available for popular programming environments and languages.
 
-1. Save and close the file, and then use these commands to commit the changes:
+1. Save and close the editor, and then use these commands to commit the changes:
 
     ```bash
     git add -A
     git commit -m "Make small wording change; ignore editor backups"
     ```
 
-    This example uses the `-A` option with `git add` to add all untracked (and not ignored) file, in addition to ones that have changed, to the files that are already under Git control.
+    This example uses the `-A` option with `git add` to add all untracked (and not ignored) files, and the files that have changed, to the files that are already under Git control.
 
 If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. Try it and see. Don't forget to include the `^` character at the end of the command.
 
@@ -151,13 +149,13 @@ Unlike most VCSes, Git records the contents of your files rather than the deltas
 
 Now that you have a reasonable number of changes recorded, you can use `git log` to look at them. As with most Git commands, there are plenty of options to choose from. One of the most useful is `--oneline`.
 
-1. Use the following command to review all of your commits:
+1. Use the following command to review all your commits:
 
     ```bash
     git log
     ```
 
-1. The output should look something like this example:
+1. The output should look similar to this example:
 
     ```output
     commit ae3f99c45db2547e59d8fcd8a6723e81bbc03b70

@@ -78,7 +78,7 @@ Now that *index.html* has been added to the index, the next step is to commit it
 
     There are many different ways to phrase commit messages, but a good guideline is to write the first line so that it says *what the commit does to the tree*. It's also common to capitalize the first letter, and to leave off the closing period to save space. Imagine that the first line of the message completes the sentence starting with "When pushed, this commit will..."
 
-    A commit message can have multiple lines. The first line should have no more than 50 characters and should be followed by a blank line. Subsequent lines should have no more than 72 characters. These requirements aren't hard, and they harken back to the days of punch cards and dumb terminals, but they do make `git log` output look better.
+    A commit message can have multiple lines. The first line should have no more than 50 characters and should be followed by a blank line. Subsequent lines should have no more than 72 characters. These requirements aren't firm, and they harken back to the days of punch cards and "dumb" terminals, but they do make `git log` output look better.
 
 1. Git responds with a confirmation of what you did:
 
@@ -122,7 +122,7 @@ Now that *index.html* has been added to the index, the next step is to commit it
     <h1>Our Feline Friends</h1>
     ```
 
-1. Save and close the file. You can select the ellipsis "..." in the right corner of the Cloud Shell editor or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save the file and close the online editor. You can select the ellipsis "..." in the right corner of the Cloud Shell editor or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
 1. Use a `git status` command to check the status of the working tree:
 

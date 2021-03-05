@@ -8,7 +8,7 @@ You learned:
 - How to recover from simple mistakes by using Git.
 - The differences between Git and GitHub.
 
-At this point, you know enough about Git to use version control by yourself on a little project. Version control shines in collaboration with other developers. Check out the other modules in this learning path for more about using Git with others!
+At this point, you know enough about Git to use version control by yourself on a basic project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
 
 ### Resources
 
