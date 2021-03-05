@@ -10,11 +10,11 @@ You'll use the DMA, as this tool can migrate multiple databases in parallel, mig
 
 The DMA automates the process of upgrading your databases, by migrating the database schema, data, qualified Windows logins, SQL logins, and database users, to the target server. By choosing to use the DMA over another method of upgrading, you ensure all requisite database users are included. You can then switch over appropriate applications after the migration. If you need to, you can select only the logins you wish to migrate. If you're migrating to Azure SQL Database, the DMA enables you to choose between migrating the schema and data together, just the schema, or just the data.
 
-![Data Migration Assistant migration](../media/7-dma-migrate.png "Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with no database connected.")
+![Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with no database connected.](../media/7-dma-migrate.png "Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with no database connected.")
 
 DMA also enables you to select one or more databases on a single instance to migrate to the target server. When you start the migration, the databases are copied in parallel, speeding up the time needed to finish the migration. This approach is useful if you've a large number of databases on a single instance, or a small window of opportunity, if users are offline, when you can do the migration.
 
-![Data Migration Assistant migration](../media/7-dma-migrate-connect.png "Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with a connection to an example database.")
+![Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with a connection to an example database.](../media/7-dma-migrate-connect.png "Screenshot of Data Migration Assistant migration tab selected displaying step one, Select source, with a connection to an example database.")
 
 After migration, your source database might continue to change if users remain connected, or development on the database continues. You'll need to capture these changes and apply them to the migrated database before the final switch over. If you can do the upgrade when users aren't connected, you just need to switch over the instance name in application connection strings.  
 
