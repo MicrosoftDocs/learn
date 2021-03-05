@@ -18,13 +18,13 @@ By using template-based Terraform configuration files, you can define, provision
 
 As a resource topology becomes increasingly complex, it can be difficult to understand the meaning and effect of infrastructure changes.
 
-By using Terraform, you can validate and preview infrastructure changes before you apply them. Team members can collaborate more effectively by understanding the proposed changes and their effect early in the development process. 
+By using Terraform, you can validate and preview infrastructure changes before you apply them. Team members can collaborate more effectively by understanding the proposed changes and their effect early in the development process.
 
 ## Terraform configuration files
 
 Configuration files generate an execution plan and what the plan will do to reach the wanted state. Terraform can then build the described infrastructure. As the configuration changes, Terraform can determine what changed and then create incremental execution plans.
 
-Terraform configuration files use their own configuration language, similar to YAML, that's designed to allow a description of the infrastructure. 
+Terraform configuration files use their own configuration language, similar to YAML, that's designed to allow a description of the infrastructure.
 
 You create configuration files by using HashiCorp Configuration Language (HCL) syntax. HCL is declarative, describing an intended goal rather than the steps to reach that goal. HCL syntax allows you to specify the cloud provider, such as Azure, and the elements that make up your cloud infrastructure.
 
@@ -53,7 +53,7 @@ Your *main.tf* file contains the main set of configuration details for your modu
 
 ## Terraform workflow
 
-Terraform recommends its core initialize, plan, and apply workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated GitHub pull requests.
+Terraform recommends its core initialize, plan, and apply workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated Git pull requests.
 
 ![Diagram of the Terraform workflow, displaying the core actions Init, Plan, and Apply.](../media/3-workflow.png)
 
@@ -75,4 +75,4 @@ You can also store state remotely, an approach that works better in a team envir
 
 ## Next steps
 
-In the next unit, we'll discuss using GitHub Actions, along with Terraform, to provision and deploy your applications.
+In the next unit, we'll discuss using DevOps along with Terraform, to provision and deploy your applications.
