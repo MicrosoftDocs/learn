@@ -19,7 +19,7 @@ prerequisites: |
   - An Azure Subscription
   - Azure CLI
   - Local installations of Java JDK (1.8+), and the Azure CLI (2.12+)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-scale-messaging-with-jms-service-bus.svg
 levels:
 - intermediate
 roles:
