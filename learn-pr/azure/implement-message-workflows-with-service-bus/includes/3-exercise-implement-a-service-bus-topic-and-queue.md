@@ -42,7 +42,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
     :::image type="content" source="../media/3-create-namespace-2.png" alt-text="Screenshot of the Service bus Create namespace pane with the Review + create button highlighted":::
 
-1. Review the details, and select **Create** to create the Service Bus namespace.
+1. Review the details, and then select **Create** to create the Service Bus namespace.
 
     :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Service bus Review namespace pane with the Create button highlighted":::
 
@@ -52,7 +52,7 @@ Now that you have a namespace, you can create a queue for messages about individ
 
 1. Under the **Deployment** pane, select **Go to resource**. The namespace you just created appears.
 
-1. In the top left of the namespace pane, select **+ Queue**.
+1. In the top left of the namespace pane, select **Queue**.
 
 1. In the **Create queue** pane, in the **Name** text box, enter **salesmessages**, and then select **Create**. Azure creates the queue in your namespace.
 
@@ -64,19 +64,19 @@ You also want to create a topic that will be used for messages that relate to sa
 
 Follow these steps:
 
-1. In the **Service Bus Namespace** pane, select **+ Topic**.
+1. In the **Service Bus Namespace** pane, select **Topic**.
 
 1. In the **Create topic** pane, in the **Name** text box, enter **salesperformancemessages**, and then select **Create**. Azure creates the topic in your namespace.
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with the Create button highlighted":::
 
-1. When the topic has been created, at the bottom of the page, **Queues** and **Topics** tabs appear. Select **Topics**.
+1. When the topic has been created, at the bottom of the pane, **Queues** and **Topics** tabs appear. Select **Topics**.
 
-1. In the list of topics, select **salesperformancemessages**, and then select **+ Subscription**.
+1. In the list of topics, select **salesperformancemessages**, and then select **Subscription**.
 
 1. Enter **Americas** for the **Name**, then **100** for the **Max delivery count**, and then select **Create**.
 
-1. Select **+ Subscription**.
+1. Select **Subscription**.
 
 1. Enter **EuropeAndAfrica** for the **Name**, then **100** for the **Max delivery count**, and then select **Create**.
 

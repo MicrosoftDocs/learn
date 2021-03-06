@@ -85,7 +85,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 
-1. Under **Services**, select **Repositories**. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository and verify that the repository contains an image with the tag **latest**.
+1. Under **Services**, select **Repositories**. Verify that the **reservationsystem** repository appears. Select the **reservationsystem** repository, and verify that the repository contains an image with the tag **latest**.
 
     :::image type="content" source="../media/7-repository.png" alt-text="Screenshot showing the repository and tagged reservation system container image in the registry.":::
 

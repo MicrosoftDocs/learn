@@ -3,7 +3,7 @@ uid: learn.wwl.perform-post-installation-configuration-of-windows-server
 metadata:
   title: Perform post-installation configuration of Windows Server
   description: "Perform post-installation configuration of Windows Server"
-  ms.date: 01/21/2021
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server.
   - Working with command-line tools.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/perform-post-installation-configuration-of-windows-server.svg
 levels:
 - intermediate
 roles:
