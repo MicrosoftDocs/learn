@@ -1,7 +1,7 @@
 > [!NOTE]
-> When the VM lab environment opens, you see a **LabUser** profile that asks for a password. To sign in, select the **Resources** tab above the instructions. Then select the **Microsoft Learn - Windows - Win10 1809** password. It autopopulates in your sign-in screen. Select the **Submit** button and return to the **Instructions** tab. 
+> When the VM lab environment opens, you see a **LabUser** profile that asks for a password. To sign in, select the **Resources** tab above the instructions. Then select the **Microsoft Learn - Windows - Win10 1809** password. It autopopulates in your sign-in screen. Select the **Submit** button and return to the **Instructions** tab.
 >
-> ![Resources tab with lab password for sign in](../media/vm-login.png)
+> :::image type="content" source="../media/vm-login.png" alt-text="Screen shot of the resources tab with lab password for sign in.":::
 
 For this course, we provide a UWP C# template app for your use. The template already has the following XAML controls and events implemented:
 
@@ -16,19 +16,19 @@ For this course, we provide a UWP C# template app for your use. The template alr
 
     Inside the **Windows Learn** folder, open the **Machine-Learning** folder. Then open the **Add_Machine_Learning_to_your_UWP_App** folder. You'll find the **MNIST_Demo.sln** project solution file. Double-click to open it with Visual Studio inside the sandbox. 
 
-2. After the Visual Studio project solution opens, select Alt+Enter to open the **Properties** window. 
+2. After the Visual Studio project solution opens, select Alt+Enter to open the **Properties** window.
 
     On the **Application** tab, check that the **Target version** and **Min version** are set to match your Windows 10 OS and SDK. Both should be set to **Windows 10, version 1809 (10.0; Build 17763)**. Using an earlier version of Windows won't work. The required Windows ML API wasn't supported yet. To change these properties, close and reopen the project solution.
 
-    ![Properties window](../media/target_version.png)
+    ![Screen shot of the Visual Studio Properties window showing target and min version.](../media/target_version.png)
 
 3. In the Visual Studio toolbar, make sure the Solution Platform is set to x64 or x86. Those platforms run the project on your local machine. Packages won't run under the ARM platform.
 
-    ![Visual Studio toolbar](../media/platform.png)
+    ![Screen shot of Visual Studio toolbar depicting the platform drop down options.](../media/platform.png)
 
 4. Now let's run the sample app project. Select the **Start Debugging** button on the toolbar, or select **F5**. 
 
-    ![Build button](../media/build_button.png)
+    ![Screen shot showing the Build button on the Visual Studio toolbar.](../media/build_button.png)
 
     The application should build and open. It shows these things:
 
@@ -37,7 +37,7 @@ For this course, we provide a UWP C# template app for your use. The template alr
     * An empty label field where the interpreted digit displays as text.
     * A **Clear Digit** button to clear the InkCanvas. The **Recognize** button isn't hooked up to anything yet. So selecting it won't have any effect.
 
-    ![Application](../media/MNIST_app_screenshot.png)
+    ![Screen shot showing the application user interface.](../media/MNIST_app_screenshot.png)
 
 > [!WARNING]
 > We've experienced an issue with error messages that appear the first time this sample app opens. If you receive these errors, close Visual Studio and reopen the **MNIST_Demo.sln** solution. When the solution opens, select the **Local Machine** button on the top menu bar. Or select F5 to try opening the app again. 
@@ -65,7 +65,7 @@ The project contains these main code files:
     :::column-end:::
     :::column:::
     
-        ![Visual Studio Solution Explorer with project files](../media/MNIST_VS_screenshot.png)
+        ![Screen shot of the Visual Studio Solution Explorer with project files depicted.](../media/MNIST_VS_screenshot.png)
     :::column-end:::
 :::row-end:::
 

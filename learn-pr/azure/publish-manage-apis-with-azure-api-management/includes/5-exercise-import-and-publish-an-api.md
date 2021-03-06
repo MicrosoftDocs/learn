@@ -17,7 +17,7 @@ The first part of the exercise is to import Northwind Shoes into an API Manageme
 1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** box, paste the swagger JSON URL that you saved at the end of the first exercise.
    > [!NOTE]
    > You'll notice that when you tab out of the box, some of the other fields will be populated for you. This is because we have used OpenAPI which specifies all of the required connection details.
-1. Leave the other settings at their defaults.
+1. Add **Display Name**.
 1. Click **Create**.
 
 ## Visualize the API
