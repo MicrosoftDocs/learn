@@ -41,17 +41,17 @@ Identify strategies to manage relationships between data entitles like customers
 
     In this section we are going to look at our product table from our relational database and model it for a NoSQL database. While we do this we are also going to look at the Many:Many relationship our Product table has with ProductTags.
 
-    :::image type="content" source="../media-advanced/product-model.png" alt-text="product model":::
+    :::image type="content" source="../media/product-model.png" alt-text="product model":::
 
     Our initial model for Product just includes the fields from our relational table. However, our e-commerce application needs to display the product tags when we display a product page. We also will want to be able to query for products by product tags. This can be accommodated in one of two ways. We can store products in a product tags container or we could embed our tags in the product container.
 
     Given there are far fewer tags per product than products per tags, it makes more sense to embed the product tags in the product table. There is a 1:few relationship between each product and tags so this makes it a good candidate for embedding. We will also store our product data with embedded tags in our new product container. So our new product model will look like this.
 
-    :::image type="content" source="../media-advanced/product-tags-model-container.png" alt-text="product tags model container":::
+    :::image type="content" source="../media/product-tags-model-container.png" alt-text="product tags model container":::
 
     Next we will select a partition key for the product container. Again, we need to look at the operations to be performed to decide on a partition key. This includes created and edit a product. As customers navigate the e-commerce site they will often do so by product category. This requires a query that filters products to display by category id. In order to make this a single-partition query with all products by category we will use `categoryId` as our partition key for our product container.
 
-    :::image type="content" source="../media-advanced/product-container-categoryId.png" alt-text="product container with category id":::
+    :::image type="content" source="../media/product-container-categoryId.png" alt-text="product container with category id":::
 
     So `categoryId` is a good partition key that will allow us to retrieve all products in a category very efficiently and embedding tag ids allows us get the id's in our Many:Many relationship between products and tags easily. However, when we query for products, I not only need the product data but I also want to display the category name and we also need to display the tag names as well. How can we return the category name for each product, as well as the names for the product tags when we query for products?
 
@@ -60,7 +60,7 @@ Identify strategies to manage relationships between data entitles like customers
     - Run a second query to return the product category's name.
     - Then for every product returned by the first query, run a third query to get each product tag's name.
 
-    :::image type="content" source="../media-advanced/product-category-and-tags-queries.png" alt-text="product category and tags queries":::
+    :::image type="content" source="../media/product-category-and-tags-queries.png" alt-text="product category and tags queries":::
 
     Now this could work for us. However, it is not very scalable. Remember that in a NoSQL database there are no joins between containers so these are not an option for us. Also remember, for a NoSQL database, the objective is to reduce the number of requests by modeling data such that all the data needed by the application can be fetched in as few requests as possible.
 
@@ -68,7 +68,7 @@ Identify strategies to manage relationships between data entitles like customers
 
     To denormalize our data here we will add additional properties including the name of the category as well as the name for each tag in our tags array. By doing this we now are able to retrieve all of the data we need to return to our clients in just a single request.
 
-    :::image type="content" source="../media-advanced/product-denormalized.png" alt-text="product denormalized":::
+    :::image type="content" source="../media/product-denormalized.png" alt-text="product denormalized":::
 
     1. **Exercise - Set up environment and measure performance and cost when denormalizing data**
 
@@ -92,17 +92,17 @@ Identify strategies to manage relationships between data entitles like customers
 
     - **product**: `SELECT * FROM c where c.categoryId = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"`
 
-    :::image type="content" source="../media-advanced/product-query-v2.png" alt-text="product query in exercise":::
+    :::image type="content" source="../media/product-query-v2.png" alt-text="product query in exercise":::
 
 1. **Manage referential integrity by using Change feed**
 
     In the last section we showed how denormalizing data can drastically improve performance and lower cost by providing the data needed by our e-commerce application in a single request. However when data is denormalized like this we need a way to maintain referential integrity between the master data in the productCategory and productTag containers and the product container.
 
-    :::image type="content" source="../media-advanced/product-category-tag-sync.png" alt-text="product category tag sync":::
+    :::image type="content" source="../media/product-category-tag-sync.png" alt-text="product category tag sync":::
 
     Luckily Cosmos DB has a feature that can manage this called, Change Feed. Change Feed is an API that lives within every Cosmos DB container. Whenever data is inserted or updated to Cosmos DB, Change Feed streams these changes to an API that you can listen to. Then when an event is triggered, you can use that to execute code to respond to the data that was changed. In our e-commerce application here, we would use Change Feed to listen to the productCategory and propagate changes to the product container. Then have a second Change Feed listening to the productTag container and doing the same thing.
 
-    :::image type="content" source="../media-advanced/change-feed.png" alt-text="change feed":::
+    :::image type="content" source="../media/change-feed.png" alt-text="change feed":::
 
     1. **Exercise - Manage referential integrity** (Why we're doing it + what we're doing)
 
@@ -127,21 +127,21 @@ Identify strategies to manage relationships between data entitles like customers
 
     Just like with the other entities we want to look at our operations and then make a decision on whether to embed or reference our related data. In this scenario sales order details makes a great candidate for embedding because the items in the order is not unbounded and also the data is always inserted and read together. So we will embed this as an array within our sales order entity and we will store our data in a new container called, salesOrder.
 
-    :::image type="content" source="../media-advanced/sales-order-model.png" alt-text="sales order model":::
+    :::image type="content" source="../media/sales-order-model.png" alt-text="sales order model":::
 
     Next we will decide upon a partition key. Since we will always search for sales order by customer, customer id makes a suitable partition key for our container. This will give us single partition query for an operation that will be run frequently, even with additional filters to narrow down which orders the customer wants to view.
 
-    :::image type="content" source="../media-advanced/sales-order-partition-key.png" alt-text="sales order partition key":::
+    :::image type="content" source="../media/sales-order-partition-key.png" alt-text="sales order partition key":::
 
     At this point we've modeled all of our relational entities for our NoSQL database. So let's look at where we can make further optimizations.
 
     One thing you may have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of id and salesOrder has a partition key of customerId. When data share the same partition key and have similar access patterns they are candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic so mixing entities with completely different schema is not only possible, under these conditions it is another best practice. But combine the data from these two containers we will need to make some additional changes in our schema.
 
-    :::image type="content" source="../media-advanced/sales-orders-customers.png" alt-text="sales orders and customers":::
+    :::image type="content" source="../media/sales-orders-customers.png" alt-text="sales orders and customers":::
 
     First we need to add a customerId property to each customer document. Customers will now have the same value for id and customerId. Next, we need a way to distinguish a sales order from a customer in the container. So we will add a "type" property that has a value of 'customer' and 'salesOrder' for each entity.
 
-    :::image type="content" source="../media-advanced/sales-orders-customers-query.png" alt-text="sales orders query":::
+    :::image type="content" source="../media/sales-orders-customers-query.png" alt-text="sales orders query":::
 
     With those changes we can now store both the customer and sales order data in our new customer container. Each customer is in its own logical partition and will have one customer item with all of their sales orders. For our second operation here we now have a query we can run to list all sales orders for a customer.
 
@@ -164,11 +164,11 @@ Identify strategies to manage relationships between data entitles like customers
 
     The solution here is to denormalize and create a new property in the customer document, 'salesOrderCount'. This will allow us to now write a query like this one below to get this data.
 
-    :::image type="content" source="../media-advanced/sales-order-count.png" alt-text="sales order count by customer":::
+    :::image type="content" source="../media/sales-order-count.png" alt-text="sales order count by customer":::
 
     Next we now need a way where every time a customer creates a new sales order and a new sales order is inserted into our customer container, we update the customer document and increment the salesOrderCount property by one. To do this we need a transaction. Azure Cosmos DB supports transactions when the data sits within the same logical partition. Since the customer and sales order all reside in the same logical partition we can take advantage of this and put the insert of the new sales order and update of the customer document within a transaction. There are two choices for implementing transactions in Azure Cosmos DB, stored procedures or using a feature called Transactional Batch available in both .NET or Java SDKs.
 
-    :::image type="content" source="../media-advanced/sales-order-customer-transaction.png" alt-text="sales order and customer transaction":::
+    :::image type="content" source="../media/sales-order-customer-transaction.png" alt-text="sales order and customer transaction":::
 
 
     1. **Exercise - Denormalizing aggregates and Transactions**
@@ -197,7 +197,7 @@ Identify strategies to manage relationships between data entitles like customers
 
     We are nearly complete remodeling our database. So far we've created the following containers, taking our original nine relational database tables and made into four containers for our NoSQL database. There is our customer container which contains our customer and sales order data. A product container that contains our products and Many:Many product tags and a container for product tag and product category.
 
-    :::image type="content" source="../media-advanced/design-near-final.png" alt-text="near final design":::
+    :::image type="content" source="../media/design-near-final.png" alt-text="near final design":::
 
     There is one final optimization though we could make. Notice that both productCategory and productTag share the same partition key? As you may have guessed, because they share the same partition key, we can also put these into the same contain and give it a more generic name like 'productMeta'.
 
@@ -205,7 +205,7 @@ Identify strategies to manage relationships between data entitles like customers
 
     Here then is our final design. With the merging of the product categories and tags we have gone from nine relational tables to just three containers. All of them optimized to serve our e-commerce application efficiently and with the ability to scale to any size we need.
 
-    :::image type="content" source="../media-advanced/design-final.png" alt-text="design final":::
+    :::image type="content" source="../media/design-final.png" alt-text="design final":::
 
 1.  **Summary**
 
