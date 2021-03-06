@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.language.react-get-started
+metadata:
+  title: Get started with React
+  description: Learn what you need to know to start building with React.
+  ms.date: 02/03/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with React
+summary: React.js is the most popular front-end JavaScript framework. Developers use JSX, a combination of HTML and JavaScript, to create views in a natural way. Developers can also create components for blocks that can be reused across their applications. This module introduces React and the core skills developers need to use this powerful framework.
+abstract: | 
+  In this module, you'll:
+  - Learn how to define JSX.
+  - Install React.
+  - Create a React project.
+  - Create a React component.
+  - Work with dynamic data.
+  - Work with CSS.
+prerequisites: |
+  - Knowledge of HTML, CSS, JavaScript, and Git
+  - Knowledge of package management with Node.js and npm
+  - A code editor, such as Visual Studio Code
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure-app-service-static
+- vs-code
+units:
+- learn.language.react-get-started.1-introduction
+- learn.language.react-get-started.2-javascript-xml
+- learn.language.react-get-started.3-clone-starter
+- learn.language.react-get-started.4-hello-world-test
+- learn.language.react-get-started.5-create-first-component
+- learn.language.react-get-started.6-dynamic-data-exercise
+- learn.language.react-get-started.7-add-style
+- learn.language.react-get-started.8-project-from-scratch
+- learn.language.react-get-started.9-knowledge-check
+- learn.language.react-get-started.10-summary
+badge:
+  uid: learn.language.react-get-started.badge

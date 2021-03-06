@@ -445,6 +445,6 @@ Now that you've created a PowerShell script that contains the configuration step
 
 Open a web browser, and browse to the IP address that you copied from the JSON response when Azure created your virtual machine; you should see the dynamic home page that contains the output from the `phpinfo()` function.
 
-![Screenshot of the webpage you'll see](../media/5-success-page.png)
+![Screenshot of webpage showing the output of the phpinfo() function.](../media/5-success-page.png)
 
 Congratulations! You have installed and configuration a web server with PHP on an Azure virtual machine using the Azure CLI.

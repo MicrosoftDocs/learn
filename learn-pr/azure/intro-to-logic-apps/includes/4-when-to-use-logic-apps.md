@@ -42,4 +42,6 @@ Logic Apps could work for all of these tasks. The online sales process is the on
 
 The following flowchart summarizes the key questions to ask when you're considering using Logic Apps.
 
-![A flowchart to help you decide if Logic Apps is appropriate for your work. The flowchart summarizes the key questions to ask when evaluating Logic Apps for your work. First, does your project involve integrating multiple systems? Second, do you need low latency? Third, does your process include complex logic. Fourth, are there connectors for all the systems you need to access.](../media/decide-whether-to-use-logic-apps-flowchart.png)
+:::image type="complex" source="../media/decide-whether-to-use-logic-apps-flowchart.png" alt-text="Flowchart of the key questions to ask when evaluating Logic Apps for your work":::
+A flowchart to help you decide if Logic Apps is appropriate for your work. The flowchart summarizes the key questions to ask when evaluating Logic Apps for your work. First, does your project involve integrating multiple systems? Second, do you need low latency? Third, does your process include complex logic. Fourth, are there connectors for all the systems you need to access.
+:::image-end:::
