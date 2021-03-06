@@ -1,26 +1,26 @@
-Learn and understand the concepts of sensitive data and data classification, and the most common types and methods of data classification and data loss prevention (DLP). At a high level, describe the key Microsoft technologies for data classification and DLP. 
+Learn and understand several concepts about sensitive data and data classification. Discover common types and methods of data classification and data loss prevention (DLP). At a high level, describe key Microsoft technologies for data classification and DLP. 
 
-Contoso, Ltd. is a medium-size financial services company in London with a branch office in New York. Most of its environment runs on-premises on Windows Server, while its cloud services are under evaluation.
+Contoso, Ltd. is a medium-size financial-services company in London with a New York branch office. Most of its environment runs on-premises on Windows Server. However, the organization is evaluating its cloud services.
 
-Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring the capabilities of Microsoft Azure and the Microsoft 365 platform. They want to determine whether Contoso can use Azure services to help modernize its current operational model through automation and virtualization. They’re also considering the use of Microsoft 365 productivity services instead of locally deployed services, such as email, intranet portals, or storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
+Contoso has an outdated operational model with limited automation, and it relies on dated technology. The Contoso IT Engineering team is exploring the capabilities of Microsoft Azure and the Microsoft 365 platform. They want to determine whether Contoso can use Azure services to help modernize its current operational model through automation and virtualization. They’re also considering using Microsoft 365 productivity services. These services would replace Contoso's locally deployed services such as email, intranet portals, or storage. However, the Contoso legal department has serious concerns about using cloud services. It's concerned about data privacy, compliance, and data protection.
 
-As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should make sure that these services have the capabilities to address the legal department's concerns.
+You are Contoso's lead system engineer and server administrator. You've been asked to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You must ensure these services will address your legal department's concerns.
 
-In this module, you’ll learn about data classification, DLP, and the management of sensitive data. You’ll learn about the most commonly used Microsoft technologies for data classification, data protection, and DLP.
+In this module, you’ll learn about data classification, DLP, and managing sensitive data. You’ll learn about the commonly used Microsoft technologies for data classification and protection, and DLP.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
+After completing this module, you'll know more about how to describe:
 
-- Describe sensitive information.
+- Sensitive information.
 
-- Describe data classification.
+- Data classification.
 
-- Describe common scenarios for using data classification.
+- Common scenarios for using data classification.
 
-- Describe DLP.
+- DLP.
 
-- Describe Microsoft technologies for data classification and protection, and DLP.
+- Microsoft technologies for data classification and protection, and DLP.
 
 ## Prerequisites
 
@@ -29,4 +29,3 @@ After completing this module, you'll be able to:
 - Basic experience with security technologies
 
 - Basic experience with Microsoft 365 or Microsoft Office 365 services
-

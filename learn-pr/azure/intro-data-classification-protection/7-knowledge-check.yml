@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which phases are included in the Microsoft approach to sensitive data protection?"
+  - content: "Which phases are included in the Microsoft approach to sensitive data protection?" 
     choices:
     - content: "Protect, Encrypt, Monitor, and Destroy"
       isCorrect: false
@@ -29,31 +29,31 @@ quiz:
       explanation: "That's correct. The Microsoft approach includes the Discover, Classify, Protect, and Monitor phases."
 
 
-  - content: "When an administrator implements data classification, what's the metadata that's added after the data is classified?"
+  - content: "When an administrator implements data classification, what's the metadata added after the data is classified?"
     choices:
     - content: "Permission list"
       isCorrect: false
-      explanation: "That's incorrect. A permission list is not metadata that's added as a result of classification."
+      explanation: "That's incorrect. A permission list isn't metadata added because of classification."
     - content: "Label"
       isCorrect: true
-      explanation: "That's correct. The classification label is metadata that's added as a result of classification."
+      explanation: "That's correct. The classification label is metadata added because of classification."
     - content: "Digital signature"
       isCorrect: false
-      explanation: "That's incorrect. A digital signature is not metadata that's added as a result of classification."
+      explanation: "That's incorrect. A digital signature isn't metadata added because of classification."
 
   - content: "An administrator has chosen to perform content-based classification on their data. What condition can they use to automate this process?"
     choices:
     - content: "Permissions on the data"
       isCorrect: false
-      explanation: "That's incorrect. You cannot use data permissions to automatically recognize and classify data."
+      explanation: "That's incorrect. You can't use data permissions to automatically recognize and classify data."
     - content: "Application that produced the data"
       isCorrect: false
-      explanation: "That's incorrect. You cannot use the application to automatically recognize and classify data."
+      explanation: "That's incorrect. You can't use the application to automatically recognize and classify data."
     - content: "Keywords"
       isCorrect: true
       explanation: "That's correct. You can use keywords to automatically recognize and classify data."
 
-  - content: "To prevent data loss, an administrator wants to search for sensitive data across Office 365 services in their organization. What should they configure to be able to do this?"
+  - content: "To prevent data loss, an administrator wants to search for sensitive data across Office 365 services in their organization. What should they configure to do this?"
     choices:
     - content: "File and folder permissions"
       isCorrect: false
@@ -63,13 +63,13 @@ quiz:
       explanation: "That's incorrect. You don't need to configure a keyword search for sensitive data."
     - content: "DLP policy"
       isCorrect: true
-      explanation: "That's correct. You need to configure a DLP policy in the Security & Compliance Center."
+      explanation: "That's correct.Configure a DLP policy in the Security & Compliance Center."
 
-  - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To do this, which technology should they choose?"
+  - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To classify and help protect the files, which technology should they choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: true
-      explanation: "That's correct. You should use Azure Information Protection to classify and help protect the Word documents."
+      explanation: "That's correct. Use Azure Information Protection to classify and help protect the Word documents."
     - content: "Office 365 Message Encryption"
       isCorrect: false
       explanation: "That's incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the Word documents."
