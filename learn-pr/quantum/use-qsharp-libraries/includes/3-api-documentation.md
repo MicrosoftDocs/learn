@@ -31,7 +31,7 @@ In the **Q# libraries** drop-down list, you can find the documentation for all o
 
 Are you looking for a specific operation, function, or type? Use the **Filter by title** box above the table of contents. It includes the API references and can take you straight to the right page. The following example shows how you would filter the table of contents if you wanted to find the `ControlledOnInt` function:
 
-:::image type="content" source="../media/3-filter-by-title.png" alt-text="Screenshot that shows filtering titles for a specific function." border="false":::
+:::image type="content" source="../media/3-filter-by-title-1.png" alt-text="Screenshot that shows filtering titles for a specific function." border="false":::
 
 ## Where does it come from?
 
