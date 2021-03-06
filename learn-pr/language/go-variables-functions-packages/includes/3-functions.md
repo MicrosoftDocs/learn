@@ -69,8 +69,8 @@ func main() {
 }
 
 func sum(number1 string, number2 string) int {
-    int1, _ := strconv.Atoi(os.Args[1])
-    int2, _ := strconv.Atoi(os.Args[2])
+    int1, _ := strconv.Atoi(number1)
+    int2, _ := strconv.Atoi(number2)
     return int1 + int2
 }
 ```
@@ -81,8 +81,8 @@ In Go, you can also set a name to the return value of a function, as though it w
 
 ```go
 func sum(number1 string, number2 string) (result int) {
-    int1, _ := strconv.Atoi(os.Args[1])
-    int2, _ := strconv.Atoi(os.Args[2])
+    int1, _ := strconv.Atoi(number1)
+    int2, _ := strconv.Atoi(number2)
     result = int1 + int2
     return
 }
@@ -98,8 +98,8 @@ For example, say you want to create a function that sums two numbers but also mu
 
 ```go
 func calc(number1 string, number2 string) (sum int, mul int) {
-    int1, _ := strconv.Atoi(os.Args[1])
-    int2, _ := strconv.Atoi(os.Args[2])
+    int1, _ := strconv.Atoi(number1)
+    int2, _ := strconv.Atoi(number2)
     sum = int1 + int2
     mul = int1 * int2
     return
