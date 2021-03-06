@@ -2,29 +2,29 @@ Now let’s use the Face API subscription you just created to detect faces in im
 
 ## Environment setup
 
-The environment for this exercise will make use of Visual Studio Code as the editor. Depending on the programming language you choose, the setup will differ. Follow the steps outlined here to configure your local computer for completion of the exercises.
+The environment for this exercise will make use of Visual Studio Code as the editor. Depending on the programming language you choose, the setup will differ. Follow the steps outlined here to configure your local computer to complete these exercises.
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
-
+- Install [Visual Studio Code](https://code.visualstudio.com/) for your operating system.
 
 ### Python
 
 1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
-1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+
+1. After you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
 
 ### C#
 
 1. If you will be using C# as your code language, start by installing the latest [.NET Core](https://docs.microsoft.com/dotnet/core/install/windows?tabs=netcore31) package for your platform. You can choose Windows, Linux, or macOS from the drop-down on this page.
-1. Once you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left nav pane, or press **CTRL+SHIFT+X** and enter C# in the search dialog.
 
-With your environment setup, you are now ready to begin the coding exercise.
+1. After you have .NET Core installed, you will need to add the C# Extension to VS Code. Select the **Extensions** option in the left menu pane, or press <kbd>Ctrl+Shift+X</kbd>, and enter C# in the search dialog box.
 
-
+With your environment set up, you are now ready to begin the coding exercise.
 
 ## Set environment variables
 
 1. Set two environment variables, replacing <subscription_key> and <endpoint> with your own values. Your code will reference these values so make sure they are set within the same session you run the code.
-1. Choose you environment from the below options of **bash**, **Windows shell**, or **PowerShell**.
+
+1. Select your environment from the following options: **bash**, **Windows shell**, or **PowerShell**.
 
     ```bash
     export COGNITIVE_SERVICE_KEY=<subscription_key>
@@ -41,14 +41,17 @@ With your environment setup, you are now ready to begin the coding exercise.
     $env:COGNITIVE_SERVICE_ENDPOINT = '<endpoint>'
     ```
 
-## Detect Faces using FaceClient
+## Detect faces using FaceClient
 
 :::zone pivot="python"
 
 1. Create a new folder to hold your application called **Detect_Faces_Python**.
-1. Open the folder in Visual Studio code.
+
+1. Open the folder in Visual Studio Code.
+
 1. Create a new Python file called **facedetect.py**.
-1. Install the Cognitive Services FaceClient library by opening a terminal and entering this command.
+
+1. Install the Cognitive Services FaceClient library by opening a terminal, and running the following command.
 
     ```python
     pip install azure-cognitiveservices-vision-face
@@ -62,7 +65,7 @@ With your environment setup, you are now ready to begin the coding exercise.
     from azure.cognitiveservices.vision.face import FaceClient
     ```
 
-1. Create method to get credential and setup client. This reads in the environment variables for **Subscription Key** and **Endpoint**.
+1. Create a method to get credential and set up client. This reads in the environment variables for **Subscription Key** and **Endpoint**.
 
     ```python
     def get_face_client():
@@ -73,7 +76,7 @@ With your environment setup, you are now ready to begin the coding exercise.
         return FaceClient(ENDPOINT, credential)
     ```
 
-1. Call the face detect operation and print results as JSON. Set the url value to an image you choose or just use the value in this example.
+1. Call the face detect operation, and print results as JSON. Set the url value to an image you choose, or just use the value in this example.
 
     ```python
     face_client = get_face_client()
@@ -92,8 +95,9 @@ With your environment setup, you are now ready to begin the coding exercise.
     print(detected_faces.response.json())
     ```
 
-1. Select the **Run Python File in Terminal** (green arrow) or right-click in the Python file editor and select **Run Python File in Terminal**.
-1. View the output. If your image has one face you will see one entry in the JSON array with elements faceId and faceRectangle. It also includes a few face attributes since we passed in the attributes array. If you were to change the third parameter from false to true it would also include face landmarks.
+1. Select the **Run Python File in Terminal** (green arrow), or right-click in the Python file editor, and select **Run Python File in Terminal**.
+
+1. View the output. If your image has one face, you will see one entry in the JSON array with elements faceId and faceRectangle. It also includes a few face attributes because we passed in the attributes array. If you were to change the third parameter from false to true, it would also include face landmarks.
 
     ```json
     [
@@ -123,23 +127,27 @@ With your environment setup, you are now ready to begin the coding exercise.
 
 :::zone pivot="csharp"
 
-1. Open Visual Studio code.
+1. Open Visual Studio Code.
+
 1. Create a new folder to hold your application called **Detect_Faces_Csharp**.
-1. Right-click the folder name in Visual Studio Code and choose **Open in integrated terminal**.
-1. You will use a .NET Core application for this exercise so enter the following command and pressing Enter.
+
+1. Right-click the folder name in Visual Studio Code, and select **Open in integrated terminal**.
+
+1. You will use a .NET Core application for this exercise so enter the following command, and then press <kbd>Enter</kbd>.
 
     ```csharp
     dotnet new console
     ```
 
-1. Install the Cognitive Services FaceClient library by using this command, in the terminal window.
+1. Install the Cognitive Services FaceClient library by running this command in the terminal window.
 
     ```csharp
     dotnet add package Microsoft.Azure.CognitiveServices.Vision.Face --version 2.5.0-preview.1
     ```
 
 1. Select **Program.cs** in the file list, in case it isn't already open in the editor window.
-1. Import the required libraries
+
+1. Import the required libraries.
 
     ```csharp
     using System;
@@ -163,7 +171,7 @@ With your environment setup, you are now ready to begin the coding exercise.
     }
     ```
 
-1. Call the face detect operation and print results as JSON. Set the url value to an image you choose or just use the value in this example.
+1. Call the face detect operation, and print results as JSON. Set the url value to an image you choose, or just use the value in this example.
 
     ```csharp
     static async Task Main(string[] args)
@@ -192,7 +200,7 @@ With your environment setup, you are now ready to begin the coding exercise.
     dotnet run
     ```
 
-1. View the output. If your image has one face you will see one entry in the JSON array with elements faceId and faceRectangle. It also includes a few face attributes since we passed in the attributes array. If you were to change the third parameter from false to true it would also include face landmarks.
+1. View the output. If your image has one face, you will see one entry in the JSON array with elements faceId and faceRectangle. It also includes a few face attributes because we passed in the attributes array. If you were to change the third parameter from false to true, it would also include face landmarks.
 
     ```json
     [

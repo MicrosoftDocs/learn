@@ -76,7 +76,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     The **API Management service** page appears.
 
-1. Enter the following API Management values as specified in the following table, and then select **Create** to create the API Management instance. This may take several minutes.
+1. Enter the following API Management values for each setting, and then select **Create** to create the API Management instance. This may take several minutes.
 
     | Setting | Value |
     | --- | --- |
