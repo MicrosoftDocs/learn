@@ -230,21 +230,22 @@ Next, create an Azure Cosmos DB database in your Azure subscription, and select 
 
 1. Select **Databases**, and then select **Azure Cosmos DB**.
 
-1. In the **Create Azure Cosmos DB Account** wizard, complete the following fields.
+1. In the **Create Azure Cosmos DB Account** wizard, enter the following values in the **Basics** tab, under the **Project details** section:
 
    | Field | Value |
    | --- | --- |
-   | On the **Basics** tab, under **Project Details**: |
    | Subscription | Concierge Subscription |
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
-   | Under **Instance Details** section: | 
+
+1. Enter the following values in the **Basics** tab, under the **Instance details** section:
+
+   | Field | Value |
+   | --- | --- |
    | Account Name | Use a globally unique value. For example, "lensesdb" with your own initials postfixed. |
    | API | Azure Table |
    | Location | Choose a region near you from the dropdown. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
-
-   ![Create a Cosmos database](../media/3-create-cosmos-db.png)
 
 1. Ensure your settings are correct, and select **Review + create**.
 
