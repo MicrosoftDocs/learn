@@ -145,7 +145,7 @@ There are additional options that you can add to be more specific about how you 
 
 Finally, a benefit of building mobile applications with C# and .NET is that you can shared code and knowledge with other .NET applications such as the ASP.NET Core Web API backend that was provided here. Additionally, mobile applications running in the iOS Simulator or Android emulator can consume ASP.NET Core web services that are running locally, and exposed over HTTP, as follows:
 
-Applications running in the iOS Simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS Simulator can consume the operation by sending a GET request to http://localhost:<port>/api/todoitems/.
+Applications running in the iOS Simulator can connect to local HTTP web services via your machines IP address, or via the localhost hostname. The application must opt-out of ATS specifying a minimum of `NSAllowsLocalNetworking`. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the iOS Simulator can consume the operation by sending a GET request to ``http://localhost:<port>/api/todoitems/``.
 
 Applications running in the Android emulator can connect to local HTTP web services via the 10.0.2.2 address, which is an alias to your host loopback interface (127.0.0.1 on your development machine). A network security configuration must also be set up for this specific IP address. For example, given a local HTTP web service that exposes a GET operation via the /api/todoitems/ relative URI, an application running in the Android emulator can consume the operation by sending a GET request to http://10.0.2.2:<port>/api/todoitems/.
 
@@ -153,11 +153,11 @@ ASP.NET Core web services must disable HTTPS redirects by commenting out `app.Us
 
 ### Detect the operating system
 
-The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows:
+The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows.
 
 ```csharp
 public static string BaseAddress =
-    DeviceInfo.Platform == DevicePlatform.Android ? "http://10.0.2.2:5000" : "http://localhost:5000";
+    DeviceInfo.Platform == DevicePlatform.Android ? "``http://10.0.2.2:5000``" : "``http://localhost:5000``";
 public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 ```
 

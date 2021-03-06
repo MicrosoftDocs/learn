@@ -134,7 +134,7 @@ private void clearButton_Click(object sender, RoutedEventArgs e)
 
 To build and open the application, select the **▶ Local Machine** button on your Visual Studio top menu bar. After the application opens, we draw a number on the **InkCanvas** by using the mouse, touchscreen, or pen. Then select the **Recognize** button to ask our MNIST machine learning model to evaluate and identify the number drawn based on our 0 to 9 scale of digits. 
 
-![Finish application](../media/MNIST_app_screenshot2.png)
+![Screen shot depicting the finished application running with results displayed in the U I.](../media/MNIST_app_screenshot2.png)
 
 ### Finished code file
 

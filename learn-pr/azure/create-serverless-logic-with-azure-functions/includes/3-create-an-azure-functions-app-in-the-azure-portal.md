@@ -28,7 +28,7 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the top search bar, select **Compute**, and then select **Function App**.
+1. In the top search bar, select **Compute**, and then select **Function App**. The **Create Function App** page appears. 
 
 1. When the **Create Function App** page appears, enter the following values on the **Basics** tab in the **Project Details** section:
 

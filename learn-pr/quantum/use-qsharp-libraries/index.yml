@@ -2,22 +2,22 @@
 uid: learn.quantum.use-qsharp-libraries
 metadata:
   title: Use the Q# libraries
-  description: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm using the Standard and Numerics libraries, and document your own code.
+  description: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm by using the standard library, and write documentation for your own code.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
 title: Use the Q# libraries
-summary: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm using the Standard library, and write documentation for your own code.
+summary: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm by using the standard library, and write documentation for your own code.
 abstract: |
-  In this module you will:
-  - Learn about libraries in Q#, specifically how they are distributed and how to add them to your projects
-  - Use the Q# Standard Library to express quantum algorithms at a high level
-  - Get to know the API documentation and integrated help capabilities to more efficiently find and use Q# functionality
-  - Write API documentation comments to help document and explain your Q# programs
+  In this module, you will:
+  - Learn about libraries in Q#, specifically how they're distributed and how to add them to your projects.
+  - Use the Q# standard library to express quantum algorithms at a high level.
+  - Get to know the API documentation and integrated help capabilities to more efficiently find and use Q# functionality.
+  - Write API documentation comments to help document and explain your Q# programs.
 prerequisites: |
-  - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), you are all set, but otherwise the overview can be found at the [Grover Search Algorithm unit](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) therein.
+  - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), you're all set. Otherwise, you can find the overview in the [Grover's search algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) unit of that module.
   - A functioning QDK environment in [Visual Studio Code for command-line applications](https://docs.microsoft.com/quantum/quickstarts/install-command-line?tabs=tabid-vscode?azure-portal=true).
 iconUrl: /learn/achievements/quantum/use-quantum-libraries.svg
 levels:

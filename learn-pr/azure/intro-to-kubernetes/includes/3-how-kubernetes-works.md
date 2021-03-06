@@ -76,7 +76,7 @@ The controller manager launches and monitors the controllers configured for a cl
 
 Kubernetes uses controllers to track the state of objects in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
-The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, then the controller will take action to ensure the wanted state.
+The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, the controller will take action to ensure the wanted state.
 
 Assume that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
 
@@ -104,7 +104,7 @@ The kubelet monitors the nodes and makes sure that the containers scheduled on e
 
 ### What is kube-proxy?
 
-The kube-proxy component is responsible for local cluster networking and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
+The kube-proxy component is responsible for local cluster networking, and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
 
 This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
 

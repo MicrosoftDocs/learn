@@ -14,7 +14,7 @@ You can run the assessment on one or more databases and on one or more instances
 
 It's best practice to run assessments on a development or test version of the database. After assessments are complete, run the same checks on the production database. When you need to run the assessment in production, ensure you do it at the time of lowest activity so as not to impact users.
 
-![Data Migration Assistant assessment](../media/5-dma-assess.png "Data Migration Assistant assessment")
+![Screenshot of the Data Migration Assistant with the New assessment dialog open.](../media/5-dma-assess.png "Screenshot of the Data Migration Assistant with the New assessment dialog open.")
 
 By default, the DMA saves each assessment project, and you can reopen the assessment to view the results. You run it again if you have made changes since the last check. DMA saves the credentials so you don't need to reconfigure the setup. You can also delete any assessments that you no longer need.
 
@@ -26,7 +26,7 @@ The **New features' recommendation** assessment can be run alongside the **Compa
 - Security
 - Storage
 
-![Data Migration Assistant assessment](../media/5-dma-report-options.png "Data Migration Assistant assessment")
+![Screenshot of the Data Migration Assistant assessment tab opened to the first step requiring user to select options.](../media/5-dma-report-options.png "Screenshot of the Data Migration Assistant assessment tab opened to the first step requiring user to select options.")
 
 Migrating your database to a newer version of SQL Server doesn't guarantee improved performance. Changes to the query engine may mean source queries don't run optimally on the target, if no changes are made to the database during or after migration. Existing indexes might no longer be sufficient, as new index enhancements can bring faster results to large datasets. 
 

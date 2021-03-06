@@ -1,8 +1,8 @@
-A type of class called a *Model* is needed to represent a dog toy in inventory. The Model contains properties that represent characteristics of a product. The Model is used to pass data in the web API and to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](/ef/core/providers/in-memory/).
+A type of class called a *model* is needed to represent a dog toy in inventory. The model contains properties that represent characteristics of a product. The model is used to pass data in the web API and to persist dog toys in a data store. In this unit, that data store will be created as an [in-memory EF Core database](/ef/core/providers/in-memory/).
 
 An in-memory database is used in this unit for simplicity. Choose a different data store, such as SQL Server or Azure SQL Database, for production environments.
 
-## Create a product Model
+## Create a product model
 
 1. Run the following command:
 

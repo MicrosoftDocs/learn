@@ -159,7 +159,7 @@ The pipeline is scheduled to execute on a monthly basis, and will attempt to exe
                     "concurrency": 1,
                     "retry": 3
                 },
-              "scheduler": {
+                "scheduler": {
                     "frequency": "Month",
                     "interval": 1
               },
