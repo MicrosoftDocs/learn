@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps
 metadata:
-  title: Troubleshoot tightly coupled HPC applications on HBv2, HC and HB series virtual machines
+  title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
   description: Troubleshoot underperforming tightly coupled HPC applications and runtime failures.
   ms.date: 03/01/2021
   author: garvct
   ms.author: cogarvey
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Troubleshoot tightly coupled HPC applications on HBv2, HC and HB series virtual machines
+title: Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: Provide guidance on troubleshooting tightly coupled HPC application runtime failures and performance bottlenecks.
 abstract: |
   In this module, you'll learn how to:
