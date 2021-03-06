@@ -50,14 +50,6 @@ az account set --subscription SUBSCRIPTION_ID
 
 Congratulations, the Azure CLI is now ready to create your first Azure Service Bus Premium namespace.
 
-### Create a resource group
-
-For the purpose of this course, we will proceed to place the Azure Service Bus namespace under the resource group `MSLearn_JMS_ServiceBus_Course` in the East US region.
-
-```bash
-az group create --name MSLearn_JMS_ServiceBus_Course --location eastus
-```
-
 ### Create an Azure Service Bus namespace
 
 In this section, you'll create an Azure Service Bus namespace by using the Azure CLI. It's possible to do exactly the same configuration by using the Azure portal. For this configuration, you will need to setup the three environment variables.
