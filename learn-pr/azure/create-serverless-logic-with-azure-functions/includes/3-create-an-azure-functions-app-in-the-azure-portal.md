@@ -30,14 +30,17 @@ Let's create a function app in the Azure portal.
 
 1. In the top search bar, select **Compute**, and then select **Function App**. The **Create Function App** page appears. 
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. When the **Create Function App** page appears, enter the following values on the **Basics** tab in the **Project Details** section:
 
-    | Setting | Value  |
-    | ------ | ------- |
-    | **Project Details**  |
+    | Setting | Value |
+    | --- | --- |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-    | **Instance Details** |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+
+1. Enter the following values on the **Basics** tab in the **Instance Details** section:
+
+    | Setting | Value |
+    | --- | --- |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
@@ -58,16 +61,19 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the top search bar, search for **Function App**.
+1. In the top search bar, select **Compute**, and then select **Function App**.
 
-    The **Create Function App** page appears. On the **Basics** tab, enter the following values.
+1. When the **Create Function App** page appears, enter the following values on the **Basics** tab in the **Project Details** section:
 
-    | Setting | Value  |
-    | ------ | ------- |
-    | **Project Details** |
+    | Setting | Value |
+    | --- | --- |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-    | **Instance Details** |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+
+1. Enter the following values on the **Basics** tab in the **Instance Details** section:
+
+    | Setting | Value |
+    | --- | --- |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
@@ -78,12 +84,8 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
-::: zone pivot="javascript"
-
 ## Verify your Azure function app
 
 1. When deployment completes, select **Go to resource**. Your Function App page appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
-
-::: zone-end
