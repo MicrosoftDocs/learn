@@ -1,6 +1,6 @@
 The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead.
 
-## Create a New Function App
+## Create a new function app
 In this exercise, you'll create the Azure Functions application using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa). Install the extension and follow these steps to create an Azure Functions app on your computer.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
@@ -22,7 +22,7 @@ The Azure Functions app is what serves the application's API endpoints.
 
 Next you'll create the function that will fetch and return the list of vacations.
 
-## Create a New Function
+## Create a new function
 
 You may recall that there are four endpoints in the Node.js Express app. In this exercise, you'll create the function for the first of these endpoints. We'll come back and create the other endpoints in a future exercise.
 
@@ -31,13 +31,13 @@ Create a new function in your Azure Functions application.
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 
-    :::image type="content" source="../media/5-create-function.png" alt-text="Screenshot of VS Code when creating a new function":::
+    :::image type="content" source="../media/5-create-function.png" alt-text="Screenshot of VS Code when creating a new function.":::
 
 1. Choose **HTTP Trigger** as the type of function
 1. Enter **vacations-get** as the name of the function
 1. Select **Anonymous** as the authentication level
 
-## Set the HTTP Method and Route Endpoint Names
+## Set the HTTP method and route endpoint names
 
 Notice that there's now a folder _functions/vacations-get_ that contains a few files.
 

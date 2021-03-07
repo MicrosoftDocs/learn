@@ -12,7 +12,7 @@ Why would you make this shift? Overall there's less to think about when building
 
 You will be making use of a [starter project on GitHub](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless). The end goal is to migrate the project's API Express server to Azure Functions.
 
-![Vacation Wish List sample application](../media/vacation-wish-list-app.png)
+![Vacation Wish List sample application.](../media/vacation-wish-list-app.png)
 
 The app begins as a Node.js Express application in TypeScript that you'll shift to an Azure Functions app.
 

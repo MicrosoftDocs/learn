@@ -37,11 +37,11 @@ products:
   - azure-functions
 units:
   - learn.azure.shift-express-api-azure-functions.1-introduction
-  - learn.azure.shift-express-api-azure-functions.2-analyze-a-migration-to-serverless
+  - learn.azure.shift-express-api-azure-functions.2-analyze-migration-serverless
   - learn.azure.shift-express-api-azure-functions.3-exercise-setup
-  - learn.azure.shift-express-api-azure-functions.4-plan-the-migration-from-nodejs-and-express-to-azure-functions
-  - learn.azure.shift-express-api-azure-functions.5-exercise-create-a-function-app
-  - learn.azure.shift-express-api-azure-functions.6-exercise-migrate-the-services-to-azure-functions
+  - learn.azure.shift-express-api-azure-functions.4-plan-migration-from-nodejs-express-azure-functions
+  - learn.azure.shift-express-api-azure-functions.5-exercise-create-function-app
+  - learn.azure.shift-express-api-azure-functions.6-exercise-migrate-services-azure-functions
   - learn.azure.shift-express-api-azure-functions.7-review-your-azure-function-application
   - learn.azure.shift-express-api-azure-functions.8-exercise-debug-function
   - learn.azure.shift-express-api-azure-functions.9-knowledge-check

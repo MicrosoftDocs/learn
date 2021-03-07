@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.shift-express-api-azure-functions.6-exercise-migrate-the-services-to-azure-functions
+uid: learn.azure.shift-express-api-azure-functions.6-exercise-migrate-services-azure-functions
 metadata:
   title: Exercise - Migrate the services to Azure Functions
   description: Migrate the services to Azure Functions
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Migrate the services to Azure Functions
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-exercise-migrate-the-services-to-azure-functions.md)]
+  [!include[](includes/6-exercise-migrate-services-azure-functions.md)]
