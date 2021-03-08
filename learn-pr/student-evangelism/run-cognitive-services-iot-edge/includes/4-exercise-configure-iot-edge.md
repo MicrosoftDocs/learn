@@ -6,23 +6,15 @@ To start Azure Cloud Shell, launch Cloud Shell from the top navigation of the Az
 
 You need to install the Azure IoT extension for Azure CLI using the following command. This extension manages Azure resources such as IoT Hub.
 
-First, check which extensions you already have installed.
-
-```azurecli
-az extension list
 ```
-
-If the older version of the Azure IoT extension named `azure-cli-iot-ext` is installed, remove it. This version is incompatible with the current version.
-
-```azurecli
-az extension remove --name azure-cli-iot-ext
-```
-
-Install the current Azure IoT extension.
-
-```azurecli
 az extension add --name azure-iot
 ```
+
+> [!NOTE] This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
+>
+> Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
+>
+> Use `az extension add --name azure-iot` to add the new version of the extension.
 
 ## Creating a resource group
 
@@ -31,24 +23,6 @@ Create a resource group in eastus2 using the following command. Give a name to y
 ```azurecli
 az group create --name <resource-group> --location eastus2
 ```
-
-## Creating a virtual machine to act as your IoT Edge device
-
-Accept the terms of use and create the Microsoft-provided Azure IoT Edge on Ubuntu virtual machine. This virtual machine preinstalls everything you need to run IoT Edge on a device.
-
-Create the virtual machine named EdgeVM using the following commands. Replace \<resource-group\> with your resource group name.
-
-```azurecli
-az vm image terms accept --urn microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest
-```
-
-```azurecli
-az vm create --resource-group <resource-group> --name EdgeVM --image microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest --admin-username azureuser --generate-ssh-keys
-```
-
-It may take a few minutes to create and start the new virtual machine.
-
-**Note the public IP address (publicIpAddress)** which is provided as part of the create command output. You'll use this to connect to the virtual machine in later steps.
 
 ## Create an IoT hub
 
@@ -62,11 +36,11 @@ az iot hub create --resource-group <resource-group> --name {hub_name} --sku F1 -
 
 Create a device identity for your IoT Edge device.
 
-In Azure Cloud Shell, enter the following command to create a device named myEdgeDevice in your hub.
-
 Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the --edge-enabled flag.
 
-If you get an error about iothubowner policy keys, make sure that Cloud Shell is running the latest version of the azure-cli-iot-ext extension.
+> [NOTE!] If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
+
+In Azure Cloud Shell, enter the following command to create a device named myEdgeDevice in your hub.
 
 ```azurecli
 az iot hub device-identity create --hub-name {hub_name} --device-id myEdgeDevice --edge-enabled
@@ -80,52 +54,73 @@ To retrieve the connection string for your device, which links your physical dev
 az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name {hub_name} --output table
 ```
 
-Make a note of the device connection string, which looks like:
+The resulting output should be similar to this:
 
-HostName={YourIoTHubName}.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey={YourSharedAccessKey}
+   `HostName={YourIoTHubName}.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey={YourSharedAccessKey}`
 
-You'll use this connection string to configure the IoT Edge runtime in the next section.
+Copy the value of the `connectionString` key from the JSON output and save it. This value is the **device connection string**. You use this to configure the IoT Edge runtime in the next section.
 
-## Configuring your IoT Edge device
+## Deploy the IoT Edge device
 
-You need to configure your device with the device connection string that you retrieved in the previous section. You can do this remotely without having to connect to the virtual machine. Run the following command, replacing {device_connection_string} with your own string. Replace \<resource-group\> with your resource group name.
+Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, theb copy into your bash or Cloud Shell window:
 
 ```azurecli
-az vm run-command invoke -g <resource-group> -n EdgeVM --command-id RunShellScript --script "/etc/iotedge/configedge.sh '{device_connection_string}'"
+az deployment group create \
+--resource-group IoTEdgeResources \
+--template-uri "https://aka.ms/iotedge-vm-deploy" \
+--parameters dnsLabelPrefix='<REPLACE_WITH_VM_NAME>' \
+--parameters adminUsername='azureuser' \
+--parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id myEdgeDevice --hub-name
+<REPLACE_WITH_HUB_NAME> -o tsv) \
+--parameters authenticationType='password' \
+--parameters adminPasswordOrKey="<REPLACE_WITH_PASSWORD>"
 ```
+
+Make sure that your password(**adminPasswordOrKey**) must be at least 12 characters long and have three of four of the following: lowercase characters, uppercase characters, digits, and special characters.
+
+It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section:
 
 ## Viewing the IoT Edge runtime status
 
-Use the following command to connect to your virtual machine. Replace {azureuser} if you used a different username than the one suggested in the prerequisites. Replace {publicIpAddress} with your machine's address.
+Use the following command to connect to your virtual machine. Replace `azureuser` if you used a different username than the one suggested during the [deployment of the VM](#deploy-the-virtual-machine). Replace `{DNS name}` with your machine's DNS name.
 
 ```bash
-ssh azureuser@{publicIpAddress}
+ssh {admin username}@{DNS name}
 ```
 
-To find your IP address:
+To find your DNS name:
 
 1. Go to the resource group you created
 2. Click on the virtual machine resource
-3. In the **Overview** page, you'll find your public IP address
+3. In the **Overview** page, you'll find your DNS name
 
 ## Checking if the IoT Edge device is configured
 
 You'll check to see that the IoT Edge security daemon is running as a system service by using **iotedge** commands. You need elevated privileges to run **iotedge** commands.
 
-You run the following commands to test the status of the IoT Edge device.
+> [!IMPORTANT]
+> You need elevated privileges to run iotedge commands.  
+
+Run the following commands to test the status of the IoT Edge device:
 
 ```bash
 sudo systemctl status iotedge
 ```
 
-Your output will be:
+The resulting output should be similar to this:
 
- "Azure IoT Edge daemon is active (running)"
+![An illustration is showing status of Azure IoT Edge Deamon.](../media/deamon-status.png)
 
-Run this command to list IoT Edge modules:
+**Your IoT Edge device is now configured.** It's ready to run cloud-deployed modules.
+
+If you need to troubleshoot the service, retrieve the service logs.
+
+```bash
+journalctl -u iotedge
+```
+
+View all the modules running on your IoT Edge device. Since the service just started for the first time, you should only see the **edgeAgent** module running. The edgeAgent module runs by default and helps to install and start any additional modules that you deploy to your device.
 
 ```bash
 sudo iotedge list
 ```
-
-Your IoT Edge device is now configured. It's ready to run cloud-deployed modules.
