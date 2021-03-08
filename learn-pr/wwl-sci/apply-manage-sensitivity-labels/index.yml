@@ -20,7 +20,7 @@ abstract: |
   - Apply protections and restrictions to files.
 prerequisites: |
   Fundamentals knowledge of information governance in Microsoft 365.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-and-manage-sensitivity-labels.svg
 levels:
 - intermediate
 roles:
