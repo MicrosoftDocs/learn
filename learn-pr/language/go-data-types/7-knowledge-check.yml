@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct. When you use an ellipsis, the data you use to initialize an array defines the array size."
     - content: "You have to create a slice to define their size."
       isCorrect: false
-      explanation: "Incorrect. Slices are dynamic, but this question was specific to arrays, and you can use ellipsis `...` to define its size based on the data you use to initialize it."
+      explanation: "Incorrect. Slices are dynamic, but this question is specific to arrays, and you can use ellipsis `...` to define its size based on the data you use to initialize it."
   - content: "A slice works with an underlying array, and arrays are fixed-sized length. What happens when you add an element to the slice and the underlying array is full?"
     choices:
     - content: "You get a panic error."
