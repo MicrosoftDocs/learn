@@ -24,33 +24,33 @@ To create an App Center account, use the following steps:
 
 1. App Center will prompt you for a username. You can enter your desired username for App Center, or you can use the suggestion that App Center provides. You'll be able to change your username later from your App Center profile.
 
-1. Click **Choose username** to continue to the App Center portal.
+1. Select **Choose username** to continue to the App Center portal.
 
 ## Create an app
 
 Next, you'll create a temporary app in App Center to explore the App Center services.
 
-1. At the top right, click the **Add new** button.
+1. At the top right, select **Add new**.
 
-1. The button will present the option to **Add new app** or **Add new organization**. Click **Add new app** to start creating a temporary App Center app.
+1. The button will present the option to **Add new app** or **Add new organization**. Select **Add new app** to start creating a temporary App Center app.
 
     ![Screenshot of Add new button with dropdown showing Add new app option highlighted.](../media/8-app-center-add-new-app.png)
 
 1. Enter an **App name** of your choice.
 
-1. Pick any one of the **Release Type** values for this temporary app. Notice the different options that available; for example: Alpha, Enterprise, Store, etc., or you can specify your own custom type.
+1. Select any one of the **Release Type** values for this temporary app. Notice the different options that available, for example, Alpha, Enterprise, Store, etc., or you can specify your own custom type.
 
 1. As you select the different **OS** options, notice which platforms and languages are supported. For example, the platform options change between iOS and Android.
 
-1. Pick an **OS** value of your choice for this app.
+1. Select an **OS** value of your choice for this app.
 
 1. Select a **Platform** value of your choice.
 
-1. Click the **Add new app** button at the bottom.
+1. Select **Add new app**.
 
     ![Screenshot of the new App Center app with arbitrary values entered and chosen.](../media/8-app-center-new-app-form.png)
 
-Once you have created your new app, App Center will present with the various service options on the left-hand navigation. The **Overview** section will be selected for you. Since this is a new app, the overview section will show you instructions and documentation links for integrating the SDK with the OS and platform you chose for your temporary app.
+After you have created your new app, App Center will present with the various service options on the left-hand navigation. The **Overview** section will be selected for you. Since this is a new app, the overview section will show you instructions and documentation links for integrating the SDK with the OS and platform you chose for your temporary app.
 
 ## Explore the App Center services
 
@@ -58,7 +58,7 @@ Next, you'll explore the various services represented in the left-hand navigatio
 
 ### Build
 
-* Click into the **Build** section from the left-hand menu. Depending on your web browser's window width, you may have to click the hamburger menu icon at the top left to see the left-hand menu.
+* Select the **Build** section from the left-hand menu pane. Depending on your web browser's window width, you may have to click the hamburger menu icon at the top left to see the left-hand menu.
 
   ![Screenshot of the App Center app navigation with Build section selected.](../media/8-app-center-navigation-build.png)
 
@@ -68,7 +68,7 @@ You can configure App Center to retrieve your app's code from several different 
 
 ### Test
 
-* Click into the **Test** section from the left-hand menu. The **Test** section offers two sub-sections: **Test runs** and **Device sets**.
+* Select the **Test** section from the left-hand menu pane. The **Test** section offers two sub-sections: **Test runs** and **Device sets**.
 
   * Creating a **test run** takes you through selecting individual real, physical devices you want to run your tests. Later, when you have created some preferred device sets, you can quickly pick a set of devices. From there, you will be given instructions to install and run the **appcenter-cli** npm package to allow you to run tests on the selected devices on-demand.
 
@@ -78,7 +78,7 @@ You might also create a device set that represents the devices that seem to prod
 
 ### Distribute
 
-* Click into the **Distribute** section from the left-hand menu. From the **Distribute** section, you can send previous builds to your various distribution groups, or directly to an app store. It has several sub-sections: **Release**, **Groups**, and **Stores**.
+* Select the **Distribute** section from the left-hand menu pane. From the **Distribute** section, you can send previous builds to your various distribution groups, or directly to an app store. It has several sub-sections: **Release**, **Groups**, and **Stores**.
 
   ![Screenshot of the App Center app navigation showing the Distribute section and its sub-sections.](../media/8-app-center-navigation-distribute-release.png)
 
@@ -90,11 +90,11 @@ You might also create a device set that represents the devices that seem to prod
 
 ### Diagnostics
 
-* Click into the **Diagnostics** section from the left-hand menu. After you have the App Center SDK incorporated into your app, you will start to see crash information in the **Diagnostics** section. These data points will start to show up when you start having crashes reported by your app users. There will be charts of crash counts as well as a list of error groups that you can click into to learn more about it.
+* Select the **Diagnostics** section from the left-hand menu pane. After you have the App Center SDK incorporated into your app, you will start to see crash information in the **Diagnostics** section. These data points will start to show up when you start having crashes reported by your app users. There will be charts of crash counts as well as a list of error groups that you can click into to learn more about it.
 
 ### Analytics
 
-* Click into the **Analytics** section from the left-hand menu. From the **Analytics** section, you'll have several sub-sections: **Overview**, **Events**, and **Log flow**.
+* Select the **Analytics** section from the left-hand menu pane. From the **Analytics** section, you'll have several sub-sections: **Overview**, **Events**, and **Log flow**.
 
   ![Screenshot of the App Center app navigation showing the Analytics section and its sub-sections.](../media/8-app-center-navigation-analytics-overview.png)
 
@@ -102,4 +102,4 @@ You might also create a device set that represents the devices that seem to prod
 
   * After you have the App Center SDK incorporated into your app, the **Events** section of Analytics will give you a table of the events that your app has reported. You can then sort these events by overall count, trending movement, number of users, trend in user count, and the average per user.
 
-  * If you want to see real-time events coming in from your app, you will find that data in the **Log flow** section of Analytics. This can help you confirm data is coming in correctly from your app after you set it up. If you know a particular even should be showing up, you can verify your app is sending it from this view.
+  * If you want to see real-time events coming in from your app, you will find that data in the **Log flow** section of Analytics. This can help you confirm data is coming in correctly from your app after you set it up. If you know a particular event should be showing up, you can verify your app is sending it from this view.
