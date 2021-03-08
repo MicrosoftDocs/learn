@@ -65,7 +65,7 @@ Over time, if you realize you need additional compute power to keep up with dema
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the Azure portal menu or the **Home** page, select **Create a resource**. From the far left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** panel appears.
+1. From the Azure portal menu or the **Home** page, select **Create a resource**. On the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
 
    ![Screenshot of the Azure portal showing the Create a resource pane with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
 
@@ -82,7 +82,7 @@ Over time, if you realize you need additional compute power to keep up with dema
     | Want to use SQL elastic pool? | No |
     | Compute + storage | _[See step 5]_ |
 
-1. Under **Server**, select **Create new**. The **New Server** panel appears. Enter the following values for each setting.
+1. Under **Server**, select **Create new**. The **New server** pane appears. Enter the following values for each setting.
 
     | Setting      | Value |
     | ------------ | ----- |
@@ -103,7 +103,7 @@ Over time, if you realize you need additional compute power to keep up with dema
 
     1. Select **Apply**.
 
-1. Select the **Additional settings** tab, and then use these values to fill out the settings.
+1. Select the **Additional settings** tab, and enter these values for each setting.
 
     | Setting      | Value |
     | ------------ | ----- |
@@ -135,11 +135,11 @@ For now, let's enable your development computer to access the database through t
 
 1. Go to the overview pane of the Logistics database. If you pinned the database earlier, you can select the **Logistics** tile on the dashboard to get there.
 
-1. Select **Set server firewall**. The **Firewall settings** panel appears.
+1. Select **Set server firewall**. The **Firewall settings** pane appears.
 
     ![Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.](../media/3-set-server-firewall.png)
 
-1. Select **+ Add client IP**. This action automatically adds the IP address for your development computer.
+1. Select **Add client IP**. This action automatically adds the IP address for your development computer.
 
     ![Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.](../media/3-add-client-ip.png)
 
