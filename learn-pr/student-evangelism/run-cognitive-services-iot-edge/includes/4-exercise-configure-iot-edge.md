@@ -10,11 +10,11 @@ You need to install the Azure IoT extension for Azure CLI using the following co
 az extension add --name azure-iot
 ```
 
-> [!NOTE] This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
->
-> Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
->
-> Use `az extension add --name azure-iot` to add the new version of the extension.
+   > [!NOTE] This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
+   >
+   > Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
+   >
+   > Use `az extension add --name azure-iot` to add the new version of the extension.
 
 ## Creating a resource group
 
@@ -82,7 +82,7 @@ It may take a few minutes to create and start the new virtual machine. Once the 
 
 ## Viewing the IoT Edge runtime status
 
-Use the following command to connect to your virtual machine. Replace `azureuser` if you used a different username than the one suggested during the [deployment of the VM](#deploy-the-virtual-machine). Replace `{DNS name}` with your machine's DNS name.
+Use the following command to connect to your virtual machine. Replace `azureuser` if you used a different username than the one suggested during the deployment of the VM. Replace `{DNS name}` with your machine's DNS name.
 
 ```bash
 ssh {admin username}@{DNS name}
