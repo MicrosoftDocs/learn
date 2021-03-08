@@ -10,12 +10,12 @@ You need to add the Azure IoT extension to the Cloud Shell instance Azure CLI.
 az extension add --name azure-iot
 ```
 
-   > [!NOTE]
-   > This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
-   >
-   > Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
-   >
-   > Use `az extension add --name azure-iot` to add the new version of the extension.
+> [!NOTE]
+> This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
+> 
+> Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
+>
+> Use `az extension add --name azure-iot` to add the new version of the extension.
 
 ## Create a resource group
 
@@ -37,8 +37,8 @@ The following code creates a free **F1 tier** hub in the resource group "IoTEdge
 az iot hub create --resource-group IoTEdgeResources --name {hub_name} --sku F1 --partition-count 2
 ```
 
-   > [NOTE!]
-   > If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
+> [!NOTE]
+> If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
 
 ## Register an IoT Edge device
 

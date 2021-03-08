@@ -10,12 +10,12 @@ You need to install the Azure IoT extension for Azure CLI using the following co
 az extension add --name azure-iot
 ```
 
-   > [!NOTE]
-   > This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
-   >
-   > Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
-   >
-   > Use `az extension add --name azure-iot` to add the new version of the extension.
+> [!NOTE]
+> This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
+>
+> Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
+>
+> Use `az extension add --name azure-iot` to add the new version of the extension.
 
 ## Creating a resource group
 
@@ -39,8 +39,8 @@ Create a device identity for your IoT Edge device.
 
 Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the --edge-enabled flag.
 
-   > [NOTE!]
-   > If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
+> [!NOTE]
+> If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
 
 In Azure Cloud Shell, enter the following command to create a device named myEdgeDevice in your hub.
 
