@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "You have to determine the number of elements when declaring the array."
       isCorrect: false
-      explanation: "Incorrect, you can use ellipsis `...` to determine its size based on the data you use to initialize the array."
-    - content: "You can use an ellipsis (`...`), like this `q := [...]int{1, 2, 3}`."
+      explanation: "Incorrect. You can use ellipsis `...` to determine its size based on the data you use to initialize the array."
+    - content: "You can use an ellipsis like this `q := [...]int{1, 2, 3}`."
       isCorrect: true
       explanation: "Correct. When you use an ellipsis, the data you use to initialize an array defines the array size."
-    - content: "You have to create a slice too define their size."
+    - content: "You have to create a slice to define their size."
       isCorrect: false
-      explanation: "Incorrect. Slices are dynamic, but this question was specific to arrays, and you can use ellipsis `...` to define its size based on the data you use to initialize it."
+      explanation: "Incorrect. Slices are dynamic, but this question is specific to arrays, and you can use ellipsis `...` to define its size based on the data you use to initialize it."
   - content: "A slice works with an underlying array, and arrays are fixed-sized length. What happens when you add an element to the slice and the underlying array is full?"
     choices:
     - content: "You get a panic error."
@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct. Go will create a new array and double its size to hold more elements when needed."
   - content: "What happens when you create another slice using the slice operator `s[i:j]` and you make a change to an element in the new slice?"
     choices:
-    - content: "Only the slice you created gets affected as when you make a sub slice points to a new memory address."
+    - content: "Only the slice you created gets affected because when you make a sub slice it points to a new memory address."
       isCorrect: false
       explanation: "Incorrect. A slice is merely pointing to an underlying array, so you need to create a copy of the slice if you don't want to affect others."
     - content: "You can't create a sub slice, so you'd have to create a new one."
@@ -48,17 +48,17 @@ quiz:
     - content: "The original slice changes because a slice is simply a pointer to an underlying array."
       isCorrect: true
       explanation: "Correct. A slice is merely pointing to an underlying array, so you need to create a copy of the slice if you don't want to affect others."
-  - content: "When you're iterating the elements from a map, can you access the key and its value simultaneously?"
+  - content: "When you're iterating the elements of a map, can you access the key and its value simultaneously?"
     choices:
     - content: "You could use the syntax `for key, value := range map`. to access the key and value"
       isCorrect: true
-      explanation: "Correct. when you loop the elements from a map, you can access the key and its value."
+      explanation: "Correct. when you loop map elements, you can access the key and its value."
     - content: "No, you can only access the map's values."
       isCorrect: false
-      explanation: "Incorrect. When you loop the elements from a map, you can access the key and its value."
+      explanation: "Incorrect. When you loop map elements, you can access both the key and its value."
     - content: "You can only access both the key and the value when they are the same type."
       isCorrect: false
-      explanation: "Incorrect. The key and the value can have a different type, and when you loop the elements from a map, you can access the key and its value."
+      explanation: "Incorrect. The key and the value can have a different type, and when you loop map elements, you can access the key and its value."
   - content: "Can you embed one struct into another struct?"
     choices:
     - content: "No, because Go doesn't have support for inheritance."
