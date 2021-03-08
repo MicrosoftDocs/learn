@@ -11,14 +11,14 @@ metadata:
 title: Manage Data Subject Requests 
 summary: Learners should know, understand, and be able to describe data subject requests. They also should know how to manage DSRs on various Microsoft services.
 abstract: |
-  By the end of this module, you will be able to:
-  - Understand DSRs
-  - Use a DSR in Azure AD
-  - Use a DSR for Microsoft accounts
-  - Use a DSR for Office 365 apps
-  - Use a DSR for consumer data and logs
+  By the end of this module, you should know more about:<!-- ID/SME: I changed this language to accommodate CELA comments. -->
+  - DSRs
+  - How to use a DSR in Azure AD
+  - How to use a DSR for Microsoft accounts
+  - How to use a DSR for Office 365 apps
+  - How to use a DSR for consumer data and logs
 prerequisites: |
-  -Basic experience with Azure services
+  - Basic experience with Azure services
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

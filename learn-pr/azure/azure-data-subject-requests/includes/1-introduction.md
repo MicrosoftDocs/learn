@@ -1,19 +1,19 @@
 Learn about data subject requests (DSRs) and how to complete a DSR by using Microsoft products and services.
 
-Contoso, Ltd. is a mid-sized financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, while cloud services are under evaluation.
+Contoso, Ltd. is a mid-sized financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on the Windows Server operating system, while cloud services are under evaluation.
 
-Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Microsoft Azure capabilities and the Microsoft 365 platform. They want to determine whether Azure services might assist with modernizing the current operational model through automation and virtualization. They are also considering Microsoft 365 productivity services instead of locally deployed services, such as email, intranet portal, and storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
+<!-- ID/SME: I changed this up a bit for Acrolinx, so please be sure to verify the intent of the pgph is still correct. -->The Contoso IT director realizes that they have an outdated operational model, and dated technology with limited options for automation. The IT Engineering team has begun exploring Microsoft Azure. They want to determine whether Azure services might help modernize the current operational model through automation and virtualization. They're also considering using the Microsoft 365 platform for their currently locally deployed services such as email, the intranet portal, and storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services instead of locally deployed services.
 
-As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You need to determine if Azure services and Microsoft 365 can address the legal department's concerns about General Data Protection Regulation (GDPR) compliance; for example, how to respond to DSRs.
+<!-- ID/SME: Changed per Acrolinx. -->You are Contoso's lead system engineer and server administrator. As part of the initial design, the IT team asked you to evaluate Azure and Microsoft 365 data privacy, protection, and compliance capabilities. You need to determine if Azure services and Microsoft 365 can address the legal department's concerns about General Data Protection Regulation (GDPR) compliance, such as responding to DSRs.
 
 ## Learning Objectives
 
-After completing this module, you’ll be able to:
+After completing this module, you’ll <!-- ID/SME: This change is per our example CELA doc. -->know more about:
 
-- Describe DSRs.
-- Identify DSR processes and terminology for Microsoft products and services.
-- Describe the response process to a DSR.
-- List the DSR admin tools used to fulfill a DSR.
+- DSRs.
+- The DSR processes and terminology for Microsoft products and services.
+- The DSR response process.
+- The DSR admin tools used to fulfill a DSR.
 
 ## Prerequisites
 
