@@ -17,7 +17,7 @@ The GDPR introduces additional obligations on “sensitive personal data”, whi
 
 ### GDPR terms
 
-When learning about GDPR, some additional important terms to know include:
+When learning about GDPR, important terms to know include:
 
 - Controller. A controller is a natural or legal person, public authority, agency, or other body. A controller, either alone or jointly with others, decides the purposes of, and processing methods for, personal data. These processing purposes and means are determined by Union or Member State law, a controller, or specific criteria for its nomination that's provided by Union or Member State law.
 
@@ -42,17 +42,17 @@ When learning about GDPR, some additional important terms to know include:
   - Ask not to be subject to automated decision-making, including profiling. The GDPR has strict rules about using data to profile people and decisions based solely on automated processing.
   
 > [!NOTE]
-> The GDPR applies more broadly than might be apparent at first glance. Unlike privacy laws in some other jurisdictions, the GDPR is applicable to organizations of all sizes and all industries. The GDPR may also apply to your organization even if it does not have a physical presence in the EU. In order to understand if the GDPR applies to your organization, you should work closely with your legal team.
+> The GDPR applies more broadly than might be apparent at first glance. Unlike privacy laws in some other jurisdictions, the GDPR is applicable to organizations of all sizes and all industries. The GDPR may also apply to your organization even if it does not have a physical presence in the EU. To understand if the GDPR applies to your organization, you should work closely with your legal team.
 
 ## Overview of CCPA
 
 The CCPA is a state privacy law in California and is the first comprehensive privacy law in the United States. It provides several privacy rights to Californian consumers, including:
 
-- The right to know about the personal information a business collects about them and how it is used and shared;
+- The right to know about the personal information a business collects about them and how it is used and shared.
 
-- The right to delete personal information collected from them (with some exceptions);
+- The right to delete personal information collected from them (with some exceptions).
 
-- The right to opt-out of the sale of their personal information; and
+- The right to opt-out of the sale of their personal information.
 
 - The right to non-discrimination for exercising their CCPA rights.
 
