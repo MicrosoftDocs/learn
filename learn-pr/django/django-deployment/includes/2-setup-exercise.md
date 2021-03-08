@@ -20,8 +20,8 @@ You will need the following installed on your computer to complete the exercises
 1. Execute the following commands to clone the starter repository and change directory to the project:
 
     ```bash
-    git clone [URL HERE]
-    cd [FOLDER HERE]
+    git clone https://github.com/MicrosoftDocs/mslearn-django-deployment
+    cd mslearn-django-deployment
     ```
 
 ## Open the project in Visual Studio Code
