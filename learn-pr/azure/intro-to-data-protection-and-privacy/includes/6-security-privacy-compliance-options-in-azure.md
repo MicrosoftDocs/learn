@@ -2,7 +2,7 @@ As you move more data to the cloud, you want to feel confident that you're not i
 
 ## Microsoft’s commitment to compliance
 
-Microsoft undergoes regular audits and submits self-assessments to third-party auditors in connection with its cloud services such as Microsoft Azure, Microsoft 365 and Microsoft Dynamics 365. This process helps Microsoft ensure that it is meeting all security and compliance requirements applicable to Microsoft in its role as cloud service provider. In addition to regular audits, Microsoft proactively collaborates with industry leaders and government bodies around the world to anticipate future compliance requirements that may affect Microsoft or its customers. As a result, Microsoft is often the first global cloud service provider to adopt new frameworks and standards.
+Microsoft undergoes regular audits and submits self-assessments to third-party auditors in connection with its cloud services such as Microsoft Azure, Microsoft 365, and Microsoft Dynamics 365. This process helps Microsoft ensure that it is meeting all security and compliance requirements applicable to Microsoft in its role as cloud service provider. In addition to regular audits, Microsoft proactively collaborates with industry leaders and government bodies around the world to anticipate future compliance requirements that may affect Microsoft or its customers. As a result, Microsoft is often the first global cloud service provider to adopt new frameworks and standards.
 
 ## Microsoft tools and services for compliance
 
@@ -54,7 +54,7 @@ You can opt for in-country/region storage of your at-rest data to accommodate co
 
 - Read-access geo-redundant storage and read-access geo-zone-redundant storage
 
-Azure has a number of services that you can use to help monitor data storage, including Azure Defender for Storage and Azure Defender for SQL Database.
+Azure has several services that you can use to help monitor data storage, including Azure Defender for Storage and Azure Defender for SQL Database.
 
 #### Azure Defender for Storage
 
