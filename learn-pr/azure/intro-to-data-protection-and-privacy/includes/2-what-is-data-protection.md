@@ -12,13 +12,13 @@ To help implement data protection, you may want to consider:
 
 - Where your data is stored. Appropriate data-protection technologies and methods often depend on how your data is stored. For example, you might not use the same approach to help protect data stored on your mobile device that you would for data stored on your company’s file server or in the cloud.
 
-- Applicable data-protection requirements and regulations. Laws and regulations, may define specific data-protection requirements. You should work with your legal representation to ensure you have a solid knowledge of these requirements and how they apply to Contoso.
+- Applicable data-protection requirements and regulations. Laws and regulations may define specific data-protection requirements. You should work with your legal representation to ensure you have a solid knowledge of these requirements and how they apply to Contoso.
 
 - Technologies that enable data protection. Again, there isn't a single technology that ensures complete data protection for every scenario. To help protect your data efficiently, you may want to become familiar with the available platforms, processes, and technologies appropriate for Contoso’s specific needs.
 
 ## Data protection vs. data privacy
 
-It’s also important to know the difference between data protection and data privacy. Data protection usually pertains to helping protect data from unlawful or unauthorized access, use, destruction, damage or loss. Data privacy generally focuses on the collection, use and permissible handling of personal data and what rights an individual has to control the data that has been collected about them.
+It’s also important to know the difference between data protection and data privacy. Data protection usually pertains to helping protect data from unlawful or unauthorized access, use, destruction, damage, or loss. Data privacy generally focuses on the collection, use and permissible handling of personal data and what rights an individual has to control the data that has been collected about them.
 
 Data privacy typically addresses questions such as:
 
