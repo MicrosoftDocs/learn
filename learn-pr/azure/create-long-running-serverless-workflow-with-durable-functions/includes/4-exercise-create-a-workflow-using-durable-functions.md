@@ -68,14 +68,14 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Create a new _package.json_ file.
 
-    1. Run the following commands in the console to create the new JSON file and open it in the editor.
+    - Run the following commands in the console to create the new JSON file and open it in the editor.
 
         ```bash
         touch package.json
         open package.json
         ```
 
-    1. Add the following code.
+    - Add the following code.
 
         ```json
         {
@@ -86,7 +86,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
         Where `example` should be replaced with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
 
-    1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
+    - Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
 1. Switch back to **Azure**. In **Development Tools** on the left-hand menu, open **Console**, and enter the following command:
 
