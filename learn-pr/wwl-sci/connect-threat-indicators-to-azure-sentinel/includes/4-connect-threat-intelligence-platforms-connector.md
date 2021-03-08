@@ -1,6 +1,6 @@
 Azure Sentinel integrates with Microsoft Graph Security API data sources to enable monitoring, alerting, and hunting using your threat intelligence. Use this connector to send threat indicators to Azure Sentinel from your Threat Intelligence Platform (TIP), such as Threat Connect, Palo Alto Networks MindMeld, MISP, or other integrated applications. Threat indicators can include IP addresses, domains, URLs, and file hashes.
 
-###Connect Azure Sentinel to your threat intelligence platform
+### Connect Azure Sentinel to your threat intelligence platform
 
 1. Register an application in Azure Active Directory to get an application ID, application secret, and Azure Active Directory tenant ID. You need these values for when you configure your integrated TIP product or app that uses direct integration with Microsoft Graph Security tiIndicators API.
 
