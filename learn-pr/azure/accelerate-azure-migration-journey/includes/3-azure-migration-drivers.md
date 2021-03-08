@@ -2,17 +2,17 @@ One crucial part of building a cloud migration strategy for an organization is i
 
 Business and IT driven goals point to migration triggers, which determine the strategy for moving applications to the cloud. For IT based triggers **migration** of your workloads is best. When presented with Business focused goals replatforming or **modernization** of your applications is recommend.
 
-![Graphic showing the two migration paths of Migration or Modernization](../media/migrate-or-modern.png)
+![Graphic showing the two migration paths of Migration or Modernization.](../media/migrate-or-modern.png)
 
 With a migration, the workloads will remain unchanged and moved to the cloud. If, modernization is selected the application code will be changed or the application could be rewritten or replaced to use new cloud technologies.
 
 At Tailwind Traders you could develop a decision tree, which can help you to evaluate your applications:
 
-![Graphic of a decision tree showing PaaS or Iaas based on future development on an application](../media/modernize-decision-tree.png)
+![Graphic of a decision tree showing PaaS or Iaas based on future development on an application.](../media/modernize-decision-tree.png)
 
 As the solution architect on the Tailwind Traders team you will need to understand the triggers for your **migration** or **modernization**.
 
-![Graphic showing the triggers for a migration or moderization project](../media/migration-triggers.png)
+![Graphic showing the triggers for a migration or moderization project.](../media/migration-triggers.png)
 
 ## Migration triggers
 
@@ -43,7 +43,7 @@ One of the most impactful incentives of the cloud and adopting a more flexible o
 Maintaining a physical datacenter can cause serious cash flow challenges with investments reserved for infrastructure.
 Moving to the cloud helps you shift from capital expenses (CAPEX) to an operational expenditures (OPEX) model since you are no longer paying for a physical datacenter's costs and its associated hardware and software. Instead, you only pay for the resources you use on the cloud and can scale up or down as needed, providing more cash flow flexibility across an organization.
 
-![Graphic showing the shift from CAPEX to OPEX](../media/capex-to-opex.png)
+![Graphic showing the shift from CAPEX to OPEX.](../media/capex-to-opex.png)
 
 ### Business continuity
 
@@ -72,7 +72,7 @@ Azure was designed for business continuity and disaster recovery with solutions 
 - [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
 - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
 
-![Digram showing an Azure Site Recovery deployment to two regions](../media/asr.png)
+![Diagram showing an Azure Site Recovery deployment to two regions.](../media/asr.png)
 
 ### Cybersecurity threats
 

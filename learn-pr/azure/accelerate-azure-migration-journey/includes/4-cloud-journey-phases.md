@@ -6,7 +6,7 @@ The phases of your migration journey at Tailwind Traders include:
 - Execution
 - Production
 
-![Graphic showing the Phases of the Cloud Journey](../media/cloud-journey.png)
+![Graphic showing the Phases of the Cloud Journey.](../media/cloud-journey.png)
 
 > [!IMPORTANT]
 > The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven guidance from Microsoft designed to accelerate your cloud adoption journey.
@@ -30,11 +30,11 @@ To avoid common migration blockers, create a clear and concise business strategy
 
 Making the business case for migration is likely to be an iterative conversation among stakeholders. In this first pass at building the business case, evaluate the initial high-level return from a potential cloud migration. The goal of this step is to ensure that all stakeholders align around one simple question: based on the available data, is the overall adoption of the cloud a wise business decision.
 
-- [Building a cloud migration business case](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/cloud-migration-business-case?azure-portal=true) is a good starting point for developing a migration business case. Clarity on formulas and tools can aid in business justification.
+- [Building a cloud migration business case.](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/cloud-migration-business-case?azure-portal=true) is a good starting point for developing a migration business case. Clarity on formulas and tools can aid in business justification.
 
 At the highest level, the formula for business justification is simple. But the subtle data points required to populate the formula can be difficult to align. On a basic level, the business justification focuses on the return on investment (ROI) associated with the proposed technical change. The generic formula for ROI is:
 
-![Graphic showing the Return on Investment calculation](../media/formula-roi.png)
+![Graphic showing the Return on Investment calculation.](../media/formula-roi.png)
 
 ### Discover and assess
 
@@ -84,7 +84,7 @@ The [Azure Migration Program](https://azure.microsoft.commigration/migration-pro
 
 The preceding steps create actionable approaches to deliver on the Cloud Adoption Framework's Manage methodology.
 
-![Graphic showing Business Alignment in the Cloud Adoption Framework](../media/caf-manage.png)
+![Graphic showing Business Alignment in the Cloud Adoption Framework.](../media/caf-manage.png)
 
 ### Governance
 

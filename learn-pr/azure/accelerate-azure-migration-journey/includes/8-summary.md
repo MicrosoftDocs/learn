@@ -6,9 +6,7 @@ In this module, you completed the following objectives:
 - Describe the phases of a cloud migration journey and common migration projects.
 - List the Azure migration tools and programs that enable successful migrations.
 
-</br>
-
-# Learn
+# Learn More
 
 Many additional resources are available you to migrate to Azure. Here are a few:
 
