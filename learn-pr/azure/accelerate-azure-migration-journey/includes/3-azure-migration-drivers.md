@@ -1,4 +1,4 @@
-One crucial part of building a cloud migration strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, ands-on approach.
+One crucial part of building a cloud migration strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, hands-on approach.
 
 Business and IT driven goals point to migration triggers, which determine the strategy for moving applications to the cloud. For IT based triggers **migration** of your workloads is best. When presented with Business focused goals replatforming or **modernization** of your applications is recommend.
 

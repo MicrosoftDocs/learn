@@ -33,7 +33,7 @@ AMP includes guided deployments which include expert help from FastTrack for Azu
 > [!NOTE]
 > Guided deployments have a minimum project size to qualify. See the application form for details.
 
-Begin your migration journey with [AMP](https://azure.microsoft.com/en-us/migration/migration-program/#program-form).
+Begin your migration journey with [AMP](https://azure.microsoft.com/migration/migration-program/#program-form).
 
 ## FastTrack for Azure
 
