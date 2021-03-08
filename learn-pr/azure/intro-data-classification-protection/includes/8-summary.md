@@ -4,12 +4,12 @@ This module explained key concepts about managing, classifying, and protection s
 
 Learn more by reviewing the following articles:
 
-- [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection?view=o365-worldwide?azure-portal=true)
+- [Microsoft Information Protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/information-protection?azure-portal=true)
 
 - [Protect your sensitive information](https://www.microsoft.com/security/business/information-protection?azure-portal=true)
 
 - [What is Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection?azure-portal=true)
 
-- [Know your data - data classification overview](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?view=o365-worldwide?azure-portal=true)
+- [Know your data - data classification overview](https://docs.microsoft.com/microsoft-365/compliance/data-classification-overview?azure-portal=true)
 
 - [What is data classification?](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true)
