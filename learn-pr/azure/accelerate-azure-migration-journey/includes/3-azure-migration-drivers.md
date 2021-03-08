@@ -72,7 +72,7 @@ Azure was designed for business continuity and disaster recovery with solutions 
 - [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
 - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
 
-![Diagram showing an Azure Site Recovery deployment to two regions.](../media/asr.png)
+![Diagram showing an Azure Site Recovery deployment to two regions.](../media/azure-site-recovery.png)
 
 ### Cybersecurity threats
 
