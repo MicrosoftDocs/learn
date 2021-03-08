@@ -70,9 +70,9 @@ If you want to use the Import data wizard in the Azure portal, you are restricte
 
 ### Index attributes
 
-![Example of how documents are stored in the search index, along with other options](../media/what-is-an-index.png)
-
 An Azure Cognitive Search index can be thought of as a container of searchable documents. In database terms, the index is a table in the database, and each document is a row. Tables have columns, and the columns can be thought of as equivalent to the fields in a document. Columns have data types, just as the fields do on the documents.
+
+![Diagram that illustrates how documents are stored in the search index with associated fields.](../media/what-is-an-index.png)
 
 Azure Cognitive Search needs to know how you'd like to search and display the fields in the documents, and you specify that by assigning attributes, or behaviors, to these fields.
 
@@ -82,11 +82,11 @@ An index can also offer additional features, like suggesters, or allow cross-sit
 
 The search services overview page has a dashboard that lets you quickly see the health of the search service. On the dashboard, you can see how many documents are in the search service, how may indexes have been used, and how much storage is in use.
 
-![text](../media/search-dashboard.png)
+![Screenshot of the portal, showing the search dashboard.](../media/search-dashboard.png)
 
 When loading new documents into an index, the progress can be monitored by clicking on the indexes associated indexer. The document count will grow as documents are loaded into the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search explorer to verify the results. An index is ready when the first document is successfully loaded.
 
-![Screenshot of the portal, showing the indexer status](../media/indexer-status.png)
+![Screenshot of the portal, showing the indexer status.](../media/indexer-status.png)
 
 Indexers only import new or updated documents, so it is normal to see zero documents indexed.
 

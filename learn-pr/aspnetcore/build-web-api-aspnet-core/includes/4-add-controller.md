@@ -1,6 +1,6 @@
-A *Controller* is a public class with one or more public methods known as *actions*. By convention, a Controller is placed in the project root's *:::no-loc text="Controllers":::* directory. The actions are exposed as callable HTTP endpoints inside the web API controller.
+A *controller* is a public class with one or more public methods known as *actions*. By convention, a controller is placed in the project root's *:::no-loc text="Controllers":::* directory. The actions are exposed as HTTP endpoints inside the web API controller.
 
-## Create a Controller
+## Create a controller
 
 1. Run the following command:
 
@@ -65,7 +65,7 @@ A *Controller* is a public class with one or more public methods known as *actio
     > [!NOTE]
     > The route may contain static strings, as in `api/[controller]`. In that example, a request to `https://localhost:5001/api/products` would be handled by this controller.
 
-## Build and test the Controller
+## Build and test the controller
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
