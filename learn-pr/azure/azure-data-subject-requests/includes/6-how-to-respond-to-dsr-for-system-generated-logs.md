@@ -1,7 +1,7 @@
-The definition of personal data can be broadly interpreted. As such, Microsoft-generated logs could contain data that's deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. However, you can't restrict or rectify data in these logs<!-- We should say why not. -->. Instead, only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer<!-- ID/SME: "only the enterprise customer's tenant administrator can administer DSRs for system-generated logs?" -->.
+The definition of personal data can be broadly interpreted. As such, Microsoft-generated logs could contain data that's deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. However, you can't restrict or rectify data in these logs<!-- We should say why not. -->. Instead, only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer.
 
 ## Scenarios for DSR in Azure and Office 365 for system-generated logs
-<!-- ID/SME: Just as in unit 5, I would recommend moving this heading to just above Example 1 below. I've done this so you can see what I mean. If you agree, please come up with a different heading for this section, such as "First steps for DSR requests."-->
+
 Microsoft supports the following DSRs for system-generated logs:
 
 - Access request
@@ -55,8 +55,8 @@ One of Contoso's customers who resides in the Netherlands has submitted a DSR fo
 
 ### National clouds
 
-If Contoso had a global presence in one or more national clouds and someone made a DSR export request for system-generated logs, their tenant admin would need to<!-- CELA doesn't like us telling people what they have to do, unless it's for a Microsoft-specific product. Could we change "would need to" to "could/can?" --> complete the following steps<!-- ID/SME: Where are the "following steps?" -->.
-<!-- ID/SME: Can we rewrite the following table to adhere to CELA requirements to not be so specific, or are we okay being that specific here? -->
+If Contoso had a global presence in one or more national clouds and someone made a DSR export request for system-generated logs, their tenant admin can complete the following steps.
+
 |National cloud|Export steps|
 |---|---|
 |Office 365 Germany|Follow the same steps described previously<!-- ID/SME: The steps described in which example? -->. Start with accessing and exporting the data, then notify<!-- ID/SME: Notify who? --> about DSR fulfillment issues. Finally, delete<!-- ID/SME: Delete what? -->.|
@@ -71,4 +71,4 @@ The following table lists tools that you can use for fulfilling DSRs for system-
 |------|------|
 |Microsoft Data Log Export|Tenant administrators can export system-generated logs by using the Microsoft Data Log Export.|
 |User Privacy|Located in the **Policy** blade in the Azure portal, you can use this tool to access and export system-generated logs in Office 365.|
-|Azure AD Admin Center|You can delete a data subject from Azure AD and its <!-- ID/SME: please verify "its" is still correct. -->system-generated logs.|
+|Azure AD Admin Center|You can delete a data subject from Azure AD and its system-generated logs.|

@@ -1,9 +1,9 @@
-When a data controller receives a DSR, they typically need to provide a response as soon as possible. The GDPR requires responses within one calendar month. <!-- ID/SME: I really don't think we need an example here. It's pretty straightforward, and the pgph is stronger w/out this sentence. -->For example, a request received on January 1 requires a response by February 1. CCPA requires a response no later than 45 days. Companies who don't comply with this could incur monetary penalties.
+When a data controller receives a DSR, they typically need to provide a response as soon as possible. The GDPR requires responses within one calendar month. CCPA requires a response no later than 45 days. Companies who don't comply with this could incur monetary penalties.
 
-To respond efficiently to a DSR for customer data, organizations can follow the guidance from Microsoft <!-- ID/SME: Is the guidance that Microsoft provides to use the tools and in-app features? If so, let's change to "...organizations can use the tools...and Office 365 to help gather data."-->and use the tools and in-app features available in both Microsoft 36 and Office 365.
-<!-- ID/SME: The following heading is the same heading is as on line 19. See my next comment for a possible fix. Otherwise, we need to redo one of the headings so they aren't the same. -->
+To respond efficiently to a DSR for customer data, organizations can use the tools and in-app features available in both Microsoft 36 and Office 365.
+
 ## Scenarios for DSR in Azure and Office 365 for customer data
-<!-- ID/SME: I would recommend moving this heading to just above Example 1 below. I've done this so you can see what I mean. If you agree, please come up with a different heading for this section, such as "First steps for DSR requests."-->
+
 DSR request scenarios usually start with performing discovery and locating the requested personal information. The DSR requested action will determine the second step. The following table breaks out the technical process and tools you can use for the DSR based on the personal information's location and the data type.
 
 |Request type|Step 1|Step 2|
@@ -15,16 +15,12 @@ DSR request scenarios usually start with performing discovery and locating the r
 |Right of portability|Discover|Export/Receive|
 
 Some DSRs might be more complex than others. There might even be multiple requests from the same person. Data controllers have the right to validate the data subject's identity before fulfilling their DSR. However, the data subject doesn't have to specify the reason for the DSR.
-<!-- ID/SME: The following heading is the same heading is as on line 5. See my next comment for a possible fix. Otherwise, we need to redo one of the headings so they aren't the same. -->
-## Scenarios for DSR in Azure and Office 365 for customer data
-<!-- ID/SME: I added the above heading and following line of text as this heading seems more appropriate for this section. If you agree, make sure to complete the following sentence. The other alternative is to delete this heading entirely, and create a transitional sentence between the above pgph (line 17) and the Example 1 heading, skipping the above heading entirely.-->
-The following scenarios are examples of tasks...
 
 ### Example 1: DSR against customer data in Azure
 
 A Contoso customer residing in France has called the DSR toll-free number to enact their right to be forgotten, also known as *right to erasure*. You need to remove all their personal information from Azure. To do this, you can use the following steps:
 
-#### Task 1: Discover<!-- ID/SME: Task steps should not e headings. -->
+#### Task 1: Discover
 
 1. Sign into the Azure portal.
 2. Navigate to Azure AD, and then select **Users**.
@@ -65,7 +61,8 @@ A Contoso customer residing in California has submitted a DSR form through the c
 
     - datasubject@contoso.com AND filetype="docx"
     - (11-18-1990) AND (kind="email")
-    - Save the content search for future tasks.<!-- ID/SME: Should "tasks" be "queries?" Also, shouldn't this bulleted item be a numbered step? Step 4? -->
+
+4. Save the content search for future queries.
 
 #### Task 2: Provide access
 
@@ -93,7 +90,7 @@ The following table lists tool that you can use to fulfill DSRs for customer dat
 |Azure Portal|Use this tool to respond to DSRs against <!-- ID/SMe: Should this be "within Azure?" -->Azure.|
 |Content Search eDiscovery tool|This tool is in both the Office 365 Security & Compliance Center, and the Microsoft 365 compliance center. You can use it to help fulfill DSRs against Office 365 applications.<!-- ID/SME: If this is only for Office 365 apps, should we be mentioning Microsoft 365? -->|
 |DSR case tool|This tool is in the Compliance Center<!-- ID/SME: Which compliance center? And be sure to use the correct name(s) from the row above. I updated these based on the approved names in Term Studio. -->. You can use this tool help with investigations for a data subject.|
-|In-app functionality|For applications that don’t support the Content Search tool, you can use the application itself<!-- ID/SME: verify we mean "the application itself." --> for responding to DSRs.|
+|In-app functionality|For applications that don’t support the Content Search tool, you can use the application itself for responding to DSRs.|
 
 ## In-scope applications
 

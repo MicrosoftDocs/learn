@@ -10,25 +10,25 @@ National clouds are isolated from the Office 365 cloud and might have notable di
 
 - Microsoft Office 365 Germany
 - Office 365 operated by 21Vianet (China)
-- Office 365 US Government<!-- ID/SME: I can't find this product in Term Studio. Please verify the name. -->
+- Office 365 US Government
 
 ### Hybrid deployments
 
-Many organizations choose to manage their user identities in on-premises Active Directory deployments<!-- ID/SME: Which Active Directory? AD DS? Azure AD? There are several, so let's be specific. Once you determine which to use, please s/r throughout this unit.-->. Hybrid deployments combine cloud-based services and on-premises server products. This enables an organization to share accounts and resources. For example, a user can sign in with their on-premises user account and still access their mailbox in the cloud. Some of the most common hybrid deployments include:
+Many organizations choose to manage their user identities in on-premises Active Directory deployments. Hybrid deployments combine cloud-based services and on-premises server products. This enables an organization to share accounts and resources. For example, a user can sign in with their on-premises user account and still access their mailbox in the cloud. Some of the most common hybrid deployments include:
 
 - Microsoft Exchange hybrid deployments. In these deployments, mailboxes exist both on-premises and in the cloud for an organization.
-- Microsoft SharePoint hybrid deployments. Organizations with this deployment method use on-premises SharePoint servers, on-premises files servers, Skype for Business Online<!-- ID/SME: By chance should this be Microsoft Teams? -->, and  Microsoft OneDrive for Business accounts.
+- Microsoft SharePoint hybrid deployments. Organizations with this deployment method use on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
 - Hybrid identity management. For this deployment, identities are managed on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This deployment type also makes single sign-on (SSO) scenarios possible for hybrid deployments.
 
 In a hybrid deployment, the scope will vary based on the data that's responsive<!-- Can we pick a word other than "responsive?" Responsive indicates movement, which data doesn't do. Also, the scope of what? Of the DSR?--> to a specific data subject's DSR. The controller will need to determine whether the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, other guidance is available for responding to DSRs on-premises. Refer to the summary unit for more information.
 
 ## DSR response processes for Office 365 applications
 
-The guidance for fulfilling a DSR in Office 365 consists of four parts. <!-- The first and third sentence seem to go together, but this second one doesn't seem to fit. Can we move it somewhere else in this pgph? (It might also be that I don't quite understand how  "tasks" fit in with "parts".) -->The high-level fulfillment tasks differ based on the data type, application, and request type. The first three parts detail the technical capabilities available to an organization responding to a DSR. <!-- ID/SME: I rewrote this third sentence, so please verify it's still accurate. -->(Note that for people using certain Office 365 products and services, in some limited scenarios Microsoft will be the data controller.) The fourth part provides guidance on how data subjects can submit DSRs to Microsoft.
+The guidance for fulfilling a DSR in Office 365 consists of four parts. The first three parts detail the technical capabilities available to an organization responding to a DSR. The fourth part provides guidance on how data subjects can submit DSRs to Microsoft. The high-level fulfillment tasks differ based on the data type, application, and request type. For people using certain Office 365 products and services, in some limited scenarios, Microsoft will be the data controller. 
 
 ### Part one: Responding to DSRs for customer data
 
-Guidance on DSR fulfillment for customer data <!-- ID/SME: Can we switch this to "customer data DSR fulfillment?" -->consists of the following four sections:
+Guidance on DSR fulfillment for customer data consists of the following four sections:
 
 - Using the Content Search eDiscovery tool to respond to DSRs
 - Using in-app functionality to respond to DSRs
@@ -51,7 +51,6 @@ The applications that support content search in Microsoft 365 and Office 365 are
 - Tasks
 - Microsoft Teams
 - Microsoft To Do
-- Video<!-- ID/SME: There are several Microsoft products with the word "Video" in their name, but no product named just "Video," or even "Microsoft Video." Please revisit this name. -->
 - Visio
 - Microsoft Word
 
@@ -66,7 +65,7 @@ Users authoring documents in Word, Excel, PowerPoint, OneNote, and Outlook usual
 The applications where in-app functionality is used in Office 365 are:
 
 - Microsoft Access
-- Education<!-- ID/SME: Should this be "Azure for Education?" -->
+- Education
 - Power Automate
 - Business App for Office 365<!-- ID/SME: Please review this product name. I can't find it. There was an "Office 365 Apps for Business," but as of Feb 2020, per Term Studio, this been replaced with "Microsoft 365 Apps for Business." -->
 - Microsoft Forms
@@ -80,7 +79,7 @@ The applications where in-app functionality is used in Office 365 are:
 - Yammer
 
 ### Part two: Responding to DSRs with respect to insights generated by Office 365
-<!-- ID/SME: Can we change "with respect to" to something else? Acrolinx doesn't like it - says it sounds too formal. -->
+
 The following table lists the Microsoft cloud services that include analytics that both users and organizations can use.
 
 |Analytics service|Description|

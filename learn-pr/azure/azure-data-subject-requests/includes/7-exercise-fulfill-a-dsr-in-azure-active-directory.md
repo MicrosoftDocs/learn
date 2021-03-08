@@ -1,8 +1,10 @@
 You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the DSR process in the Microsoft cloud. You've created a use-case scenario for fulfilling a DSR.
 
 ## Setup
-<!-- ID/SME: We always need sentences introducing bulleted or numbered lists. Please add one here, explaining what the following steps are for. -->
-1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com).<!-- ID/SME: This link takes me to the Azure Active Directory admin center, not the portal. -->
+
+To set up a new user, perform the following steps:
+
+1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com).
 2. Select **Azure Active Directory**, and then select the **Overview** blade if it's not already active.  
 3. In the **Tenant information** tile for the Default Directory, copy or record the **Primary domain** value (for example, yourprimarydomain.onmicrosoft.com).
 4. Select **Users**, select **New User**, and then verify that the **Create user** option is selected.
@@ -27,24 +29,28 @@ You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the D
    - Mobile phone: **+44 07123 456789**
 
 ## Review a DSR and determine the appropriate process
-<!-- ID/SME: We always need sentences introducing bulleted or numbered lists. Please add one here, explaining what the following steps are for. -->
+
+To determine the appropriate process, perform the following steps:
+
 1. Review a DSR:
+
    - DSR form received today
    - Identity verified today
      - Avery Howard is a financial planning client who resides in the United Kingdom.
      - Avery was contacted and provided verification with a national ID card.
 
-|||
-|---|---|
-|Subject's name|Avery Howard|
-|Date of Birth|11-18-1999|
-|Address|123 Park Square, Bristol, BS12 3CD, UNITED KINGDOM|
-|Telephone|+44 07123 456789|
-|Email|avery@_yourprimarydomain_.microsoftonline.com|
-|With regard to|Right to erasure (right to be forgotten)|
-|Preferred feedback method|In writing to address|
+    |||
+    |---|---|
+    |Subject's name|Avery Howard|
+    |Date of Birth|11-18-1999|
+    |Address|123 Park Square, Bristol, BS12 3CD, UNITED KINGDOM|
+    |Telephone|+44 07123 456789|
+    |Email|avery@_yourprimarydomain_.microsoftonline.com|
+    |With regard to|Right to erasure (right to be forgotten)|
+    |Preferred feedback method|In writing to address|
 
-2. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
+1. Identify which of the following steps you’ll use in the DSR process, and then fulfill the DSR:
+
     - Discover
     - Access
     - Rectify
@@ -70,8 +76,8 @@ You'll now use the Azure Active Directory admin center to discover the personal 
 You'll now fulfill the DSR by deleting the data subject's user account:
 
 1. In the **All users** blade, select the data subject's user account (Avery Howard) check box.  
-2. Select **Delete user**, and then select **Yes** to confirm.
-3. Select **Deleted users**.
+1. Select **Delete user**, and then select **Yes** to confirm.
+1. Select **Deleted users**.
 1. In the **Deleted users** blade, select the data subject's user account check box.
 1. Select **Delete permanently**, and then select **Yes** to confirm.
 
@@ -85,8 +91,8 @@ After completing this exercise, you should have successfully reviewed and fulfil
 > If you’ve completed all the steps in this exercise, you won’t have any resources that need cleaning up. However, if you’ve only partially completed the exercise, then complete the following steps:
 
 1. In the Azure Active Directory admin center, select **All Users**.
-3. Search for and select **Avery Howard**.
-4. Select **Delete user**, and then select **Yes** to confirm.
-5. Select **Deleted users**.
+1. Search for and select **Avery Howard**.
+1. Select **Delete user**, and then select **Yes** to confirm.
+1. Select **Deleted users**.
 1. In the **Deleted users** blade, select the data subject's user account check box.
 1. Select **Delete permanently**, and then select **Yes** to confirm.
