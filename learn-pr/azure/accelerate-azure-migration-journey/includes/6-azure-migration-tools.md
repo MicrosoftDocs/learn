@@ -15,7 +15,7 @@ The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-f
 
 CAF for Azure is proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed in the cloud. It provides best practices, documentation, and tools that cloud architects, IT professionals, and business decision-makers need to achieve short-term and long-term objectives successfully.
 
-![Graphic showing the Cloud Adoption Framework process.](../media/caf-overview-new.png)
+![Graphic showing the Cloud Adoption Framework process.](../media/cloud-adoption-framework-overview-new.png)
 
 Using the Microsoft Cloud Adoption Framework for Azure best practices, organizations can better align their business and technical strategies to ensure success. Watch the following video to learn more.
 
