@@ -84,7 +84,7 @@ The [Azure Migration Program](https://azure.microsoft.commigration/migration-pro
 
 The preceding steps create actionable approaches to deliver on the Cloud Adoption Framework's Manage methodology.
 
-![Graphic showing Business Alignment in the Cloud Adoption Framework.](../media/caf-manage.png)
+![Graphic showing Business Alignment in the Cloud Adoption Framework.](../media/cloud-adoption-framework-manage.png)
 
 ### Governance
 
@@ -96,4 +96,4 @@ Governance is a key factor to the long-term success of any migration effort. Spe
 
 [Azure policy](https://docs.microsoft.com/azure/governance/policy/overview?azure-portal=true) is a important tool when implementing the policies of your business at Tailwind Traders. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource, per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-![Screen show of the Azure Portal showing the Policy dashboard.](../media/select-assignments.png)
+![Screenshot of the Azure Portal showing the Policy dashboard.](../media/select-assignments.png)

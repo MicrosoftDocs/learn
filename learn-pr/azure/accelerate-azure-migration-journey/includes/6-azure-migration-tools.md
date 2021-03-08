@@ -1,4 +1,4 @@
-icrosoft has invested heavily in developing tools and services which support Azure migrations. These range from expert guidance, technical tools to move your workloads and databases, and business-focused tools to help with the cloud's econmics. 
+Microsoft has invested heavily in developing tools and services which support Azure migrations. These range from expert guidance, technical tools to move your workloads and databases, and business-focused tools to help with the cloud's economics.
 
 Tools available to support successful Azure migrations:
 
@@ -15,7 +15,7 @@ The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-f
 
 CAF for Azure is proven guidance that's designed to help you create and implement the business and technology strategies necessary for your organization to succeed in the cloud. It provides best practices, documentation, and tools that cloud architects, IT professionals, and business decision-makers need to achieve short-term and long-term objectives successfully.
 
-![Graphic showing the Cloud Adoption Framework process](../media/caf-overview-new.png)
+![Graphic showing the Cloud Adoption Framework process.](../media/cloud-adoption-framework-overview-new.png)
 
 Using the Microsoft Cloud Adoption Framework for Azure best practices, organizations can better align their business and technical strategies to ensure success. Watch the following video to learn more.
 
@@ -28,7 +28,7 @@ The Cloud Adoption Framework brings together cloud adoption best practices from 
 
 [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Tailwind Traders can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud—and track your progress using a central dashboard that provides intelligent insights.
 
-![Azure portal shows the Azure Migrate dashboard](../media/azure-migrate.jpg)
+![Azure portal shows the Azure Migrate dashboard.](../media/azure-migrate.png)
 
 Tailwind Traders can use a comprehensive approach to migrating your application and datacenter estate. Get support for critical migration workloads like Windows, SQL, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
 
@@ -61,23 +61,23 @@ Execute a complete migration with near-zero downtime:
 - Highly resilient and self-healing migration service provides reliable outcomes with near-zero downtime.
 - Supports Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, and Oracle migration to Azure from on-premises and other clouds
 
-![Graphic showing how to migrate to popular databases to Azure](../media/database-migration-service.jpg)
+![Graphic showing how to migrate to popular databases to Azure.](../media/database-migration-service.jpg)
 
 ## Azure App Service Migration Assistant
 
 Bring your web apps to the cloud with minimal or no code changes using the[Azure App Service Migration Assistant][(](https://azure.microsoft.com/services/app-service/migration-assistant/?azure-portal=true) - a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
 
-This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Download the App Service migration assistant — a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service. 
+This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Download the App Service migration assistant — a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
 
 Versions of the Azure App Service Migration Assistant:
 
-- Migrate .NET web apps from Windows OS to App Service.
+- Migrate .NET web apps from Windows OS to App Service
 - App Service migration assistant—for Java on Apache Tomcat Preview (Linux)
 - App Service migration assistant—for Java on Apache Tomcat Preview (Windows)
 
 Tailwind Traders can get a free compatibility report for your external app. The tool allows you to run a scan on your web app’s public URL to report the technologies it uses and whether App Service fully supports them. If compatible, you’ll be guided to download the migration assistant to simplify your migration.
 
-![Graphic showing URL test for Application Migration](../media/url-test.png)
+![Graphic showing URL test for Application Migration.](../media/url-test.png)
 
 ## SMART Tool
 
@@ -85,7 +85,7 @@ The Strategic Migration Assessment and Readiness Tool (SMART) helps you prepare 
 
 The tool's output contains a readiness heatmap tool to you by distilling Microsoft's real-life experience running migration engagements. The heatmaps help to identify the areas where you will need to focus on being successful.
 
-![Graphic showing the SMART Assessment Tool](../media/smart-tool.png)
+![Graphic showing the SMART Assessment Tool.](../media/smart-tool.png)
 
 This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you’ll get a customized report that will help you plan and close gaps.
 

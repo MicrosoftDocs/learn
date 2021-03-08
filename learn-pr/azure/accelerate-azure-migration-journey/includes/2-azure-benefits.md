@@ -83,14 +83,13 @@ Protect your workloads quickly with built-in controls and services in Azure acro
 
 Identify new threats and respond quickly with services that are informed by real-time global cybersecurity intelligence delivered at cloud scale. These actionable insights are developed by analyzing vast sources including 18 billion Bing web pages, 400 billion emails, 1 billion Windows device updates, and 450 billion monthly authentications. Using machine learning, behavioral analytics, and application-based intelligence, Microsoft data scientists analyze the flood of data in the Microsoft Intelligent Security Graph. The resulting insights inform services in Azure and help you detect threats faster.
 
-
 ## Scale Applications and Workloads on demand
 
 Migrating to the cloud also allows for more flexibility and scalability and the ability to command growing or diminishing resources to capably meet business demands. When you plan for peak usage through on-premises systems, your servers are typically under-utilized, as you need more capacity than average to accommodate spikes when they occur. The cloud releases you from this model, enabling a scale-when-you-need-it approach.
 
 Increase agility with best-in-class Azure infrastructure that scales to your business needs. With almost limitless scale customers can scale up or out using [Infrastructure as a Service (IaaS)](https://azure.microsoft.com/overview/what-is-azure/iaas/?azure-portal=true) or [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).
 
-![Diagram showing Paas or Iaas services from Azure](../media/paas-iaas.png)
+![Diagram showing Paas or Iaas services from Azure.](../media/paas-iaas.png)
 
 ### Azure Autoscale
 

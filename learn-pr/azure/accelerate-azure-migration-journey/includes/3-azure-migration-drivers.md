@@ -1,4 +1,4 @@
-One crucial part of building a cloud migration strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, ands-on approach.
+One crucial part of building a cloud migration strategy for an organization is identifying what is triggering cloud adoption. Some triggers may prompt quick action, while others may call for a more active, hands-on approach.
 
 Business and IT driven goals point to migration triggers, which determine the strategy for moving applications to the cloud. For IT based triggers **migration** of your workloads is best. When presented with Business focused goals replatforming or **modernization** of your applications is recommend.
 
@@ -8,11 +8,11 @@ With a migration, the workloads will remain unchanged and moved to the cloud. If
 
 At Tailwind Traders you could develop a decision tree, which can help you to evaluate your applications:
 
-![Graphic of a decision tree showing PaaS or Iaas based on future development on an application.](../media/modernize-decision-tree.png)
+![Graphic of a decision tree showing PaaS or IaaS based on future development on an application.](../media/modernize-decision-tree.png)
 
 As the solution architect on the Tailwind Traders team you will need to understand the triggers for your **migration** or **modernization**.
 
-![Graphic showing the triggers for a migration or moderization project.](../media/migration-triggers.png)
+![Graphic showing the triggers for a migration or modernization project.](../media/migration-triggers.png)
 
 ## Migration triggers
 
@@ -72,7 +72,7 @@ Azure was designed for business continuity and disaster recovery with solutions 
 - [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
 - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
 
-![Diagram showing an Azure Site Recovery deployment to two regions.](../media/asr.png)
+![Diagram showing an Azure Site Recovery deployment to two regions.](../media/azure-site-recovery.png)
 
 ### Cybersecurity threats
 

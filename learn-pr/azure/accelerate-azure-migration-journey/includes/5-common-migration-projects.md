@@ -5,7 +5,7 @@ Some of the common migration projects that Tailwind Traders will encounter inclu
 - Windows & SQL Server
 - Linux & open-source databases
 - DevTest
-- VMWare
+- VMware
 - SAP
 - Virtual Desktop Infrastructure (VDI)
   
@@ -24,7 +24,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 A typical application to be moved to Azure is a two-tier Windows .NET front-end application connected to SQL Server running on VMs. When migrating or **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Graphic showing how to migrate Window & SQL Server to Azure IaaS.](../media/migrate-win-sql.png)
+![Graphic showing how to migrate Window & SQL Server to Azure IaaS.](../media/migrate-windows-sql.png)
 
 **Deep dive on migration scenarios:**
 
@@ -40,7 +40,7 @@ When modernizing an application, you will be using additional cloud provider ser
 - **Rearchitect**
 - **Rebuild**
 
-![Graphic showing the migration methods know as the R's.](../media/the-rs.png)
+![Graphic showing the migration methods know as Rehost, Refactor, Rearchitect, Rebuild.](../media/rehost-refactor-rearchitect-rebuild.png)
 
 #### Refactor
 
@@ -71,7 +71,7 @@ Azure has broad support for Linux and open-source databases. Tailwind Traders ca
 
 When migrating Linux and open-source applications to Azure, the experience is much like Windows. When you **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Graphic showing how to migrate Linux & OSS Databases.](../media/migrate-linux-ossdb.png)
+![Graphic showing how to migrate Linux & OSS Databases.](../media/migrate-linux-databases.png)
 
 **Deep dive on migration scenarios:**
 
@@ -111,7 +111,7 @@ Rehost an [on-premises dev/test environment](https://docs.microsoft.com/azure/cl
 
 Tailwind Traders can empower your team to quickly provision dev/test and pre-production environments to deliver quality products, applications, and services. Use purpose-built managed developer services like [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/?azure-portal=true).
 
-![Graphic showing how to modernize using DevTest Labs.](../media/modernize-dtlabs.png)
+![Graphic showing how to modernize using DevTest Labs.](../media/modernize-dev-test-labs.png)
 
 - Migrate a dev/test environment to [Azure DevTest Labs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true)
 
@@ -125,20 +125,20 @@ There are [discounted rates on Azure](https://azure.microsoft.com/pricing/dev-te
 
 ## VMware
 
-Using [Azure VMWare Solution](https://azure.microsoft.com/services/azure-vmware/?azure-portal=true) VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+Using [Azure VMware Solution](https://azure.microsoft.com/services/azure-vmware/?azure-portal=true) VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
 
 > [!IMPORTANT]
 > Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.
 
-![Graphic showing how to migrate VMWare VMs to Azure.](../media/migrate-vmware.png)
+![Graphic showing how to migrate VMware VMs to Azure](../media/migrate-vmware.png)
 
 Tailwind Traders can use Azure VMware Solution to create a private cloud in Azure with native access to VMware vCenter and other tools that are supported by VMware for workload migration. Move to Azure seamlessly using VMware’s HCX technology and continue to manage your environment using the same VMware tools you already know: vSphere Client, NSX-T, Power CLI, or any popular DevOps toolchain.
 
 Once deployed to Azure VMware Solution, you can create vSphere VMs in the Azure portal via API calls or CLI, automate deployments, and enable single sign-on. Enhance your workloads with the full range of Azure compute, monitor, backup, database, IoT, and AI services.
 
-VMWare VMs running on Azure VMWare Solution are made accessible using [ExpressRoute](https://azure.microsoft.com/services/expressroute/?azure-portal=true), so services or users on-premises can access the VMs which have been migrated to Azure. These VMs will also have connectivity to other Azure Services such as Azure Databases, Azure Key Vault, and Azure Storage.
+VMware VMs running on Azure VMware Solution are made accessible using [ExpressRoute](https://azure.microsoft.com/services/expressroute/?azure-portal=true), so services or users on-premises can access the VMs which have been migrated to Azure. These VMs will also have connectivity to other Azure Services such as Azure Databases, Azure Key Vault, and Azure Storage.
 
-![Graphic showing how to migrate to Azure VMWare Solutions Connection](../media/vmware-azure.png)
+![Graphic showing how to migrate to Azure VMware Solutions Connection](../media/vmware-azure.png)
 
 Learn more about [deploying Azure VMware Solutions](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-vmware-to-azure/?azure-portal=true)
 
