@@ -1,6 +1,6 @@
 In this module, you've learned about Microsoft technologies used for data classification and data protection. You also learned about sensitivity labels and their usage for data protection, and about Microsoft cloud access security broker solution and Office 365 message encryption.
 
-In doing so, you’ve helped Contoso’s IT team evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You’re confident that these services will work well for Contoso and have the capabilities to address the legal department's concerns.  
+You’ve helped Contoso’s IT team evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You’re confident these services will work well for Contoso and have the capabilities to address the legal department's concerns.  
 
 ## Learn more
 

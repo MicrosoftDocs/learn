@@ -16,18 +16,18 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "You're planning to use sensitivity labels. Select one thing that you cannot do with sensitivity labels."
+  - content: "You're planning to use sensitivity labels. Select one thing that you can't do with sensitivity labels."
     choices:
     - content: "Encrypt content"
       isCorrect: false
       explanation: "That's not correct. You can use sensitivity labels to encrypt content."
     - content: "Protect content"
       isCorrect: false
-      explanation: "That's not correct. You can use sensitivity labels to protect content."
+      explanation: "That's not correct. You can use sensitivity labels to help protect content."
     - content: "Synchronize content between locations"
       isCorrect: true
-      explanation: "That's correct. You cannot use sensitivity labels to synchronize content."
-  - content: "You created sensitivity labels to protect content. You configured permissions and the protection level. What should you do before your users start to use these sensitivity labels?"
+      explanation: "That's correct. You can't use sensitivity labels to synchronize content."
+  - content: "You created sensitivity labels to help protect content. You configured permissions and the protection level. What should you do before your users start to use these sensitivity labels?"
     choices:
     - content: "Copy sensitivity labels"
       isCorrect: false
@@ -62,9 +62,9 @@ quiz:
       explanation: "That's correct. You should use Cloud App Security to discover these applications."
   - content: "What is the primary purpose of data encryption with customer key?"
     choices:
-    - content: "To replace Bitlocker encryption."
+    - content: "To replace BitLocker encryption."
       isCorrect: false
-      explanation: "That's not correct. Data encryption with customer key works together with Bitlocker, but it's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
+      explanation: "That's not correct. Data encryption with customer key works together with BitLocker, but it's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
     - content: "To meet regulatory or compliance obligations for controlling root keys."
       isCorrect: true
       explanation: "That's correct. Data encryption with customer key primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
