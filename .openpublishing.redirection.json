@@ -4604,6 +4604,516 @@
       "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-when-is-quantum-inspired-optimization-useful.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/3-optimization-basics",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/2-what-is-cloud-computing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/3-benefits-of-cloud-computing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/3a-compliance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/3b-economies-of-scale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/3c-capex-vs-opex.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/4-cloud-deployment-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/5-types-of-cloud-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/principles-cloud-computing/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/fundamental-azure-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/2-what-is-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/3-tour-of-azure-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/4-exercise-create-website.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/5-exercise-configure-app-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/6-exercise-cloud-shell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/2-azure-datacenter-locations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/3-geographies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/4-availability-zones.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/5-region-pairs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/6-service-level-agreements.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/7-composite-sla.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/8-improve-app-slas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/explore-azure-infrastructure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-architecture-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/2-essential-azure-compute-concepts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/3-virtual-machines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/4-containers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/5-appservice.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/6-serverless-computing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-compute/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-compute-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/2-benefits-of-using-azure-to-store-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/3-how-azure-storage-meets-your-business-storage-needs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/4-comparison-azure-and-on-prem-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-data-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-database-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/2-deploy-to-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/3-scale-load-balancer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/4-reduce-latency-traffic-manager.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-networking/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/azure-networking-fundamentals/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/2-shared-responsibility.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/2a-azure-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/3-identity-and-access.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/4-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/4a-certificates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/5-network-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/6-azure-information-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/7-advanced-threat-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/7a-microsoft-sdl.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-security-in-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/2-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/3-initiatives.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/4-management-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/5-azure-blueprints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/6-azure-compliance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/7-monitoring.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-governance/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/1a-purchasing-products.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/1b-factors-affecting-cost.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/2-estimate-costs-with-the-azure-pricing-calculator.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/3-predict-and-optimize-with-cost-management-and-advisor.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/3a-total-cost-of-ownership.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/4-save-on-infrastructure-costs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/5-save-on-licensing-costs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/predict-costs-and-optimize-spending/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/azure-fundamentals/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/00-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/00-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/01-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/01-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/02-inference-for-true-slope.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/02-inference-for-true-slope",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/03-prediction-intervals.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/03-prediction-intervals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/04-mini-labs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/04-mini-labs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/05-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/05-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-windows-server/select-windows-server-editions-servicing-options-activation/4-license-and-activate-windows-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/select-windows-server-editions-servicing-options-activation/4-license-activate-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/2-overview-of-speaker-recognition.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/3-exercise-create-a-speaker-recognition-api-subscription.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/4-overview-of-speaker-verification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/5-manage-speaker-verification-profiles.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/6-overview-of-speaker-identification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/7-manage-speaker-identification-profiles.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/8-implement-speaker-recognition-and-identification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
     }
   ]
 }

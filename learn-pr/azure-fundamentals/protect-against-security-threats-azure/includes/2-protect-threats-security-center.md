@@ -16,6 +16,10 @@ Security Center can:
 * Detect and analyze potential inbound attacks and investigate threats and any post-breach activity that might have occurred.
 * Provide just-in-time access control for network ports. Doing so reduces your attack surface by ensuring that the network only allows traffic that you require at the time that you need it to.
 
+This short video explains how Security Center can help harden your networks, secure and monitor your cloud resources, and improve your overall security posture.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MBbV]
+
 ## Understand your security posture
 
 Tailwind Traders can use Security Center to get a detailed analysis of different components in its environment. Because the company's resources are analyzed against the security controls of any governance policies it has assigned, it can view its overall regulatory compliance from a security perspective all from one place.

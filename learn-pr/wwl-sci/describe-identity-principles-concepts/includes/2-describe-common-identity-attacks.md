@@ -6,7 +6,7 @@ Password-based attacks include password spray attacks and brute force attacks. A
 
 Brute force attacks try many passwords against one or more accounts, sometimes using dictionaries of commonly used passwords.  When a user has assigned a weak password to their account, the hacker will find a match, and access that account.
 
-:::image type="content" source="../media/2-password-spray-attack.png" alt-text="Password spray attack":::
+![Password spray attack](../media/2-password-spray-attack.png)
 
 ## Phishing
 

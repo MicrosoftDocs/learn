@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwOVB]
+
 The carbon intensity of electricity is a measure of how much carbon (CO<sub>2</sub>eq) emissions produced per kilowatt-hour of electricity consumed.
 
 The standard unit of carbon intensity is <nobr>**gCO<sub>2</sub>eq/kWh**</nobr> or grams of carbon per kilowatt-hour.

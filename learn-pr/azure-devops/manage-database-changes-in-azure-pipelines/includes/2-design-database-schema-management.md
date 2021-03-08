@@ -135,7 +135,7 @@ Let's go back to the team discussion and see how they plan to handle any changes
 
 Andy types on his laptop.
 
-**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) task generates a file that identifies the schema differences between the current database schema and the _dacpac_.
+**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?azure-portal=true) task generates a file that identifies the schema differences between the current database schema and the _dacpac_.
 
 ## Approve database schema changes in Azure Pipelines
 

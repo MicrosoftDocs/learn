@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.5-challenge
+metadata:
+  title: Challenge - Data types
+  description: Consolidate what you've learned about data types in Go.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge - Data types
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-challenge.md)]

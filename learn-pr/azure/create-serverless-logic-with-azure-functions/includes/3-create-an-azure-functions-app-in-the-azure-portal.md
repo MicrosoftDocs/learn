@@ -2,7 +2,7 @@ You are now ready to start implementing the temperature service. In the previous
 
 ## What is a function app?
 
-Functions are hosted in an execution context called a **function app**. You define function apps to logically group and structure your functions and a compute resource in Azure. In our elevator example, you would create a function app to host the escalator drive gear temperature service. There are a few decisions that need to be made to create the function app; you need to choose a service plan and select a compatible storage account.
+Functions are hosted in an execution context called a **function app**. You define function apps to logically group and structure your functions and a compute resource in Azure. In our escalator example, you would create a function app to host the escalator drive gear temperature service. There are a few decisions that need to be made to create the function app; you need to choose a service plan and select a compatible storage account.
 
 ### Choose a service plan
 
@@ -28,17 +28,19 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
+1. In the top search bar, select **Compute**, and then select **Function App**. The **Create Function App** page appears. 
 
-1. In the top search bar, select **Compute**, and then select **Function App**.
+1. When the **Create Function App** page appears, enter the following values on the **Basics** tab in the **Project Details** section:
 
-    The **Create Function App** page appears. Complete the following fields.
-
-    | Field | Value  |
-    | ------ | ------- |
-    | In the **Basics** tab, under the **Project Details** section:  |
+    | Setting | Value |
+    | --- | --- |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-    | Under the **Instance Details** section: |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+
+1. Enter the following values on the **Basics** tab in the **Instance Details** section:
+
+    | Setting | Value |
+    | --- | --- |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
@@ -59,18 +61,19 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
+1. In the top search bar, select **Compute**, and then select **Function App**.
 
-1. In the top search bar, search for **Function App**.
+1. When the **Create Function App** page appears, enter the following values on the **Basics** tab in the **Project Details** section:
 
-
-    The **Create Function App** page appears. Complete the following fields.
-
-    | Field | Value  |
-    | ------ | ------- |
-    | In the **Basics** tab, under the **Project Details** section:  |
+    | Setting | Value |
+    | --- | --- |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
-    | Under the **Instance Details** section: |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+
+1. Enter the following values on the **Basics** tab in the **Instance Details** section:
+
+    | Setting | Value |
+    | --- | --- |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
@@ -81,13 +84,8 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
-::: zone pivot="javascript"
-
 ## Verify your Azure function app
 
 1. When deployment completes, select **Go to resource**. Your Function App page appears.
 
-
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
-
-::: zone-end
