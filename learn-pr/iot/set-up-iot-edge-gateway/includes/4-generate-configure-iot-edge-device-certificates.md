@@ -153,6 +153,9 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
      sudo vi /etc/iotedge/config.yaml
     ```
 
+    >[!NOTE]
+    > When editing yaml files, spaces are very important when working with nested entries. Be sure to pay attention to the spacing indicated in the examples below, in some sections there will be a mix of 0 and 2 spaces. If you receive any errors when restarting the iotedge service, double-check that proper spacing has been employed after making modifications to the config.yaml file. 
+
 1. Locate the **Certificate settings** section within the file, remove the leading `#` character before the certificate properties to uncomment those lines, then edit the certificate settings to contain the correct certificate and key paths. After changes are made, save the file and exit the editor.
 
     After the X.509 certificate settings changes have been made to the `config.yaml` file, this section of the file will look like the following entry:

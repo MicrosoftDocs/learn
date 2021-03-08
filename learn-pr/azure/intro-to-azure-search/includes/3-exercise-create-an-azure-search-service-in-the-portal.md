@@ -12,12 +12,12 @@ In the unit, you'll create the Azure Cognitive Search service.
 
 1. Select **Web**, then select **Azure Cognitive Search**.
 
-   ![Screenshot of the Azure portal, New Search Service pane](../media/3-exercise-screenshot-2.png)
+    ![Screenshot of the Azure portal, highlighting the New Search Service pane.](../media/3-exercise-screenshot-2.png)
 
 1. On the **New Search Service** page, complete the following fields.
 
-    | Setting      | Value |
-    | ------------ | ----- |
+    | Setting | Value |
+    | --- | --- |
     | On the **Basics** tab > **Project Details** |
     | **Subscription** | Concierge Subscription  |
     | **Resource Group** |  Select the existing group <rgn>[sandbox resource group name]</rgn> |
@@ -36,4 +36,4 @@ In the unit, you'll create the Azure Cognitive Search service.
 
 1. Select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
-    ![Screenshot of the Azure portal, highlighting the URL field on the Overview page](../media/3-exercise-screenshot-4.png)
+    ![Screenshot of the Azure portal, highlighting the URL field on the Overview page.](../media/3-exercise-screenshot-4.png)

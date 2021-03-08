@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/04/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
     - content: "Table"
       isCorrect: false
       explanation: "Incorrect.  A Function is a named KQL query that is access like a regular table."
-  - content: "The Syslog connector can be deployment on which platform?"
+  - content: "The Syslog connector can be deployed on which platform?"
     choices:
     - content: "Azure Windows Virtual Machine"
       isCorrect: false

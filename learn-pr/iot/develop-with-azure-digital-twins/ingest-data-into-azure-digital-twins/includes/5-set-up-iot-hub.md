@@ -1,4 +1,4 @@
-In this unit, you'll create and configure an instance of Azure IoT Hub.
+In this unit, you'll create and configure an instance of Azure IoT Hub.  IoT Hub is used to receive telemetry from IoT Devices.  A node.js application will be used to simulate machines in a chocolate factory (IoT Devices).
 
 ## Create an IoT hub
 
@@ -6,7 +6,7 @@ Use the Azure CLI to create a resource group and then add an IoT hub. Use the re
 
 1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
 
-   ```azurecli-interactive
+   ```azurecli
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
 
@@ -36,7 +36,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 1. Save and close the file.
 1. In the PowerShell window, go to the SimulatedClient folder in the repo and run the simulated client:
 
-    ```Azure CLI
+    ```azurecli
     cd ~\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js
@@ -44,7 +44,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 
 ## Configure Event Grid on your IoT hub
 
-In this section, you configure your IoT hub to publish events as they occur.
+In this section, you configure your IoT hub to publish events as they occur. If this is the first time setting up Event Grid, you'll be prompted to register the resource provider. Registering a resource provider requires admin permissions to your subscription.
 
 1. In the Azure portal, go to your IoT hub:
     1. Select **Resource groups**.
@@ -71,7 +71,8 @@ In this section, you configure your IoT hub to publish events as they occur.
 
 1. In the **ENDPOINT DETAILS** section:
    1. Select **Endpoint Type** as **Azure Function**.
-   1. Choose **Select an endpoint**, paste the URL that you copied from your logic app, and then select **Confirm Selection**.
+   1. Choose **Select an endpoint** and pick the Azure Function app that you deployed earlier.
+   1. Select **Confirm Selection**.
 
       :::image type="content" source= "../media/select-azure-function.png" alt-text="Partial screenshot showing the Select Azure Function dialog box, with the Confirm Selection button highlighted.":::
 
@@ -83,8 +84,9 @@ In this section, you configure your IoT hub to publish events as they occur.
 
 ## Verify that the twin is updated
 
-To see the values being updated in the twin Thermostat67, run this command:
+To see the values being updated in the twin GrindingStep, run this command:
 
 ```azurecli
 az dt twin show -n $dtname --twin-id GrindingStep
 ```
+The values shown for ChasisTemperature should match the values being sent by the devices simulator.

@@ -3,25 +3,26 @@ uid: learn.wwl.implement-information-governance
 metadata:
   title: 'SC-400 part 3: Implement Information Governance in Microsoft 365'
   description: 'SC-400 part 3: Implement Information Governance in Microsoft 365'
-  ms.date: 01/28/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: 'SC-400 part 3: Implement Information Governance in Microsoft 365'
 prerequisites: |
-  SC-400: Implement Information Protection (LP#34445)
+  - Understanding of cloud computing concepts.
+  - Understanding of Microsoft 365 product and services.
+  - Basic understanding of Microsoft 365 compliance features.
 summary: |
   Learn how to plan and implement information governance strategies for an organization.  This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
-- administrator
 - auditor
+- ip-admin
 products:
 - m365
-- office-365
 - m365-information-protection
 modules:
 - learn-m365.m365-compliance-information-govern-information

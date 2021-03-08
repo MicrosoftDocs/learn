@@ -106,9 +106,9 @@ Adding a Resource Manager template to the pipeline is going to require a few cha
 
 We also need to think about setting the connection string in the App Service instance. We could do that in the template, but then when we deploy the web app, it will get overwritten. So I think we need a task to set that after the web app is deployed.
 
-**Andy:** I'm way ahead of you, Mara. I found the [AzureAppServiceSettings@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?view=azure-devops&azure-portal=true) task. But it needs the connection string. How do I get that out of the key vault?
+**Andy:** I'm way ahead of you, Mara. I found the [AzureAppServiceSettings@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true) task. But it needs the connection string. How do I get that out of the key vault?
 
-**Tim:** We can use the [AzureKeyVault@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault?view=azure-devops&azure-portal=true) task to fetch the connection string in the pipeline.
+**Tim:** We can use the [AzureKeyVault@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault?azure-portal=true) task to fetch the connection string in the pipeline.
 
 **Mara:** Excellent! This task will help us in a few stages.
 

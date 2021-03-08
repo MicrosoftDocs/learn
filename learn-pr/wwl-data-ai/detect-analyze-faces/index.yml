@@ -3,7 +3,7 @@ uid: learn.wwl.detect-analyze-faces
 metadata:
   title: Detect and analyze faces with the Face service
   description: "Detect and analyze faces with the Face service"
-  ms.date: 01/18/2021
+  ms.date: 02/18/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

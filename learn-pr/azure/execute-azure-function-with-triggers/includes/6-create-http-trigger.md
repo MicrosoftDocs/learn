@@ -12,9 +12,9 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. Select your function app. Your **Function App** page appears.
 
-1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
+1. In the left menu pane, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
 
-1. On the menu bar, select **+ Add**. This action starts the function creation process. The **Add function** panel appears.
+1. On the top menu bar, select **Add**. This action starts the function creation process. The **Add function** pane appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -32,7 +32,9 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. Select your function app.  Your **Function App** page appears.
 
-1. In the left nav bar, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
+1. In the left menu pane, under the **Functions** section, select **Functions**. The **Functions** page for your function app appears.
+
+1. On the top menu bar, select **Add**. This action starts the function creation process. The **Add function** panel appears.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
@@ -46,7 +48,7 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 Now that we've created the HTTP trigger, let's get the function URL so we can begin to make a request.
 
-1. To the right of **Delete**, select **Get Function Url**. The **Get Function Url** dialog appears.
+1. On the top menu bar, select **Get Function Url**. The **Get Function Url** dialog appears.
 
 1. Select **Copy** (clipboard), and select **OK** to close the function URL dialog.
 

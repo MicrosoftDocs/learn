@@ -65,7 +65,7 @@ The final step in this exercise is to create an API gateway in the Azure portal.
    **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions.
    **Organization Name** | `NorthWindShoes`. This name is used to identify your resources in the developer portal.
    **Administrator Email** | This address is used for system notifications, and defaults to your Azure account email address.
-   **Pricing Tier** | `Consumption (preview)`.
+   **Pricing Tier** | `Consumption`.
 
    > [!NOTE]
    > Note: You're using the consumption plan because it is much faster to create whilst testing. The overall experience is very similar to the other pricing tiers.

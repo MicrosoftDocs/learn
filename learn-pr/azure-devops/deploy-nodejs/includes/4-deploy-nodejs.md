@@ -101,7 +101,7 @@ After the build completes, the `ArchiveFiles@2` task packages the build output a
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
-You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?view=azure-devops&tabs=yaml&azure-portal=true).
+You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?tabs=yaml&azure-portal=true).
 
 ### Deploying the build
 
