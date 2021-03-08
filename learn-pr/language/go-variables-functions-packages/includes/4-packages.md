@@ -68,7 +68,7 @@ Let's look at a few things in that code:
 - The `logMessage` variable can be called only from within the package.
 - The `Version` variable can be reached from anywhere. We recommend that you include a comment to describe the purpose of this variable. (This description is useful for anyone who uses the package.)
 - The `internalSum` function can be called only from within the package.
-- The `Sum` function can be reached from anywhere. Again, we recommend that you include a comment to describe the purpose of the variable.
+- The `Sum` function can be reached from anywhere. We recommend that you include a comment to describe the purpose of the function.
 
 To confirm that everything is working, you can run the `go build` command in the `calculator` directory. If you do, notice that no executable binary is generated.
 

@@ -26,7 +26,7 @@ Here is an example of how to read a `Scala` DataFrame in `PySpark` and `SparkSQL
 It also shows how you can create a temporary table.
 
    ```scala
-   %%scala
+   %%spark
    val scalaDataFrame = spark.read.sqlanalytics("mySQLPoolDatabase.dbo.mySQLPoolTable")
    scalaDataFrame.createOrReplaceTempView( "mydataframetable" )
    ```
