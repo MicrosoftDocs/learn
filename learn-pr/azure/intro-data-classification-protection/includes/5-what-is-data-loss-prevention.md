@@ -44,8 +44,8 @@ A DLP policy contains information about:
 
 - Where to protect the content. Examples include locations such as Exchange Online, SharePoint Online, and OneDrive for Business sites, and Microsoft Teams chat and channel messages.
 - When and how to protect content. This information is related to enforcing rules, which contain:
-  - Conditions the content must match before <!--ID/SME: I reworded this to indicate "...before DLP enforces a rule." Is this technically correct? If not, please insert the doer instead of "DLP." --> a DLP enforces a rule. You might to configure a rule that searches for content containing social-security numbers shared with people outside your organization.
-  - Actions you want the rule to take automatically <!-- ID/SME I reworded this to indicate that "DLP finds the content...". Can you confirm this paragraph is technically correct? If no, please add the "doer".--> when DLP finds content matching the conditions. Perhaps you want to configure a rule to block access to a document. The rule also can send a message to the user and your compliance officer an email notification.
+  - Conditions the content must match before a DLP enforces a rule. You might to configure a rule that searches for content containing social-security numbers shared with people outside your organization.
+  - Actions you want the rule to take automatically when DLP finds content matching the conditions. Perhaps you want to configure a rule to block access to a document. The rule also can send a message to the user and your compliance officer an email notification.
 
 The following image depicts the main components of a DLP policy:
 
