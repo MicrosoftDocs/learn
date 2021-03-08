@@ -65,7 +65,7 @@ Copy the value of the `connectionString` key from the JSON output and save it. T
 
 ## Deploy the IoT Edge device
 
-Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, theb copy into your bash or Cloud Shell window:
+Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, then copy into your bash or Cloud Shell window:
 
 ```azurecli
 az deployment group create \

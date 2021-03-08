@@ -39,7 +39,8 @@ Create a device identity for your IoT Edge device.
 
 Since IoT Edge devices behave and can be managed differently than typical IoT devices, declare this identity to be for an IoT Edge device with the --edge-enabled flag.
 
-> [NOTE!] If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
+   > [NOTE!]
+   > If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
 
 In Azure Cloud Shell, enter the following command to create a device named myEdgeDevice in your hub.
 
@@ -63,7 +64,7 @@ Copy the value of the `connectionString` key from the JSON output and save it. T
 
 ## Deploy the IoT Edge device
 
-Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, theb copy into your bash or Cloud Shell window:
+Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, then copy into your bash or Cloud Shell window:
 
 ```azurecli
 az deployment group create \

@@ -37,7 +37,8 @@ The following code creates a free **F1 tier** hub in the resource group "IoTEdge
 az iot hub create --resource-group IoTEdgeResources --name {hub_name} --sku F1 --partition-count 2
 ```
 
-> [NOTE!] If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
+   > [NOTE!]
+   > If you get an error because there's already one free hub in your subscription, change the SKU to **S1**. Each subscription can only have one free IoT hub. If you get an error that the IoT hub name isn't available, it means that someone else already has a hub with that name. 
 
 ## Register an IoT Edge device
 
@@ -74,7 +75,7 @@ Copy the value of the `connectionString` key from the JSON output and save it. T
 
 ## Deploy the IoT Edge device
 
-Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, theb copy into your bash or Cloud Shell window:
+Use the following CLI command to create your IoT Edge device based on the prebuilt [iotedge-vm-deploy](https://github.com/Azure/iotedge-vm-deploy) template. Copy the following command into a text editor, replace the placeholder text with your information, then copy into your bash or Cloud Shell window:
 
 ```azurecli
 az deployment group create \
