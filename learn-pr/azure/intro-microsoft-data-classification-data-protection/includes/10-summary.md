@@ -6,9 +6,9 @@ You’ve helped Contoso’s IT team evaluate the data privacy, protection, and c
 
 You can learn more by reviewing the following articles:
 
-- [Message Encryption](https://docs.microsoft.com/en-us/microsoft-365/compliance/ome?view=o365-worldwide/?azure-portal=true)
-- [Overview of Customer Key for Microsoft 365 at the tenant level (public preview)](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-key-tenant-level?view=o365-worldwide/?azure-portal=true)
-- [Service encryption with Customer Key](https://docs.microsoft.com/en-us/microsoft-365/compliance/customer-key-overview?view=o365-worldwide/?azure-portal=true)
-- [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/en-us/azure/information-protection/deploy-aip-scanner/?azure-portal=true)
-- [Microsoft Cloud App Security overview](https://docs.microsoft.com/en-us/cloud-app-security/what-is-cloud-app-security/?azure-portal=true)
-- [Learn about sensitivity labels](https://docs.microsoft.com/en-us/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide/?azure-portal=true)
+- [Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome/?azure-portal=true)
+- [Overview of Customer Key for Microsoft 365 at the tenant level (public preview)](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level/?azure-portal=true)
+- [Service encryption with Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview/?azure-portal=true)
+- [What is the Azure Information Protection unified labeling scanner?](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner/?azure-portal=true)
+- [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security/?azure-portal=true)
+- [Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels/?azure-portal=true)
