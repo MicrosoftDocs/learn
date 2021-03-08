@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "GDPR only"
       isCorrect: false
-      explanation: "That's incorrect. The GDPR provides the right to erasure, which is also known as the right to be forgotten, but so does the California Consumer Privacy Act (CCPA). "
+      explanation: "That's incorrect. The GDPR provides the right to erasure, which is also known as the right to be forgotten, but so does the CCPA."
     - content: "CCPA only"
       isCorrect: false
       explanation: "That's incorrect. The CCPA provides the right to be forgotten, but so does the GDPR."
@@ -57,7 +57,7 @@ quiz:
     choices:
     - content: "Access databases"
       isCorrect: false
-      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are likely to be stored in an Access database."
+      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are likely<!-- ID/SME: "are not likely?" --> to be stored in an Access database."
     - content: "Dynamics 365"
       isCorrect: false
       explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are not likely to be stored in Dynamics 365."
@@ -75,4 +75,4 @@ quiz:
       explanation: "That's incorrect. The email received from the customer containing personal information is stored in the enterprise customer's Exchange Online mailbox."
     - content: "A developer in an organization creates a free Azure account to experiment with Azure DevOps."
       isCorrect: true
-      explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization, they'll need to initiate a DSR directly with Microsoft, and not their employer."
+      explanation: "That's correct. When an individual purchases services from Microsoft outside of their organization, they'll need to initiate a DSR directly with Microsoft, not their employer."
