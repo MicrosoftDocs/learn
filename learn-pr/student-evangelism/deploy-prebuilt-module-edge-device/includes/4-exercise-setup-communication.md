@@ -10,7 +10,8 @@ You need to add the Azure IoT extension to the Cloud Shell instance Azure CLI.
 az extension add --name azure-iot
 ```
 
-   > [!NOTE] This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
+   > [!NOTE]
+   > This article uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`.You should only have one version installed at a time. To see what extensions you have installed, use `az extension list`.
    >
    > Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
    >
