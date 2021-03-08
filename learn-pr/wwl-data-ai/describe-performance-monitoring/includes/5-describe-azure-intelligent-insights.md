@@ -2,7 +2,7 @@ One of the benefits of using Azure SQL Database is that the baseline performance
 
 [![The Azure portal Query Performance Insights](../media/module-44-optimize-resources-final-13.png)](../media/module-44-optimize-resources-final-13.png#lightbox)
 
-In order to enable Intelligent Insights, you need to add diagnostic settings your database.
+In order to enable Intelligent Insights, you need to add diagnostic settings to your database.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-14.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
