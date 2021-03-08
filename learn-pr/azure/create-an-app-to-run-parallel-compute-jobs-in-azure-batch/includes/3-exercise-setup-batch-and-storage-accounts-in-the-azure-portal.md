@@ -16,7 +16,7 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 1. Select **Create** to open the **Create storage account** form, as shown in the following screenshot.
 
-    ![create storage account form open on the Basics tab](../media/3-create-storage-account.png)
+    ![Screenshot showing the create storage account form.](../media/3-create-storage-account.png)
 
 1. In the **Storage account name** field, enter a unique name. An example might be **cutifypets\<date\>\<your initials\>**.
 
@@ -34,21 +34,31 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 In order to create batch workloads, we need to create an account within the Batch service.
 
 1. From the **Home** page:
+
 1. In the left navigation bar (top left hand blue bars), select **Create a resource**.
+
 1. In the **Search the Marketplace** search box type **batch**, then select **Batch Service** from the list.
+
 1. Select **Create** to open the **New Batch account** form.
 
-    ![Portal interface for the "new batch account" form](../media/3-new-batch-service.png)
+    ![Screenshot showing the new batch account form.](../media/3-new-batch-service.png)
+
 
 1. Select an existing resource group, or create a new one for the resource we are adding in this module. To simplify cleanup once you have finished with this module, we recommend creating a new resource group. Note the name of the resource group you are using - it will be needed throughout these exercises. 
+
 1. In the Account account name, enter a unique name. For example, you could enter **cutifypets\<date\>\<your initials\>**.
+
 1. Select the link called **Select a storage account**, and in the panel that opens select the storage account your created earlier.
+
 1. Leaving all the other options as their defaults, select **Review + create**.
+
 1. Select **Create**.
+
 1. Wait for the deployment to complete.
+
 1. On the **Your deployment is complete** screen, select the link to the Batch account, as shown in the following screenshot.
 
-    !["Your deployment is complete" screen with the new Batch account highlighted](../media/3-new-batch-service-created.png)
+    ![Screenshot showing the deployment complete page, with the new Batch account highlighted.](../media/3-new-batch-service-created.png)
 
     You now have a Batch account in which to create our jobs. 
 
@@ -62,11 +72,17 @@ For our scenario, we've decided to enlist the help of **FFmpeg** to do our video
 
 1. Back in the Batch account UI in the portal, select **Applications** under the **Features** section of the sidebar, and then select **Add** to open up the **New application** configuration form.
 
-    !["New application" configuration form](../media/3-add-application-to-batch.png)
+    ![Screenshot showing the new application configuration form.](../media/3-add-application-to-batch.png)
 
 1. In **Application id**, type **ffmpeg**.
+
+
 1. In **Version** type **3.4**.
+
 1. In **Application package**, select the folder icon to the right.
+
 1. Navigate to the folder containing **ffmpeg-3.4-win64-static.zip** that you downloaded, and select **Open**.
+
 1. Select **Submit** to upload the app to our Batch account. This step can take a few moments, so wait for it to complete. 
+
 1. Leave the Azure portal open for the next exercise.

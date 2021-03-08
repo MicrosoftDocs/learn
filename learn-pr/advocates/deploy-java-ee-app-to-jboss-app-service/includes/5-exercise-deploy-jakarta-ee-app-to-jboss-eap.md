@@ -247,11 +247,24 @@ EOF
 
 Now configure your App Service instance to invoke the startup script:
 
+# [Linux/Mac OS X](#tab/linux)
+
 ```azurecli
 az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
+
+# [Git BASH for Windows](#tab/windows)
+
+```azurecli
+export MSYS_NO_PATHCONV=1
+az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+-n ${WEBAPP_NAME} \
+-g ${RESOURCEGROUP_NAME}
+```
+---
+
 
 After the script runs, it will be invoked every time the application server is restarted.
 
@@ -266,7 +279,7 @@ After you configure the startup script, configure App Service to use certain env
 az webapp config appsettings set \
   --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
   --settings \
-  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&amp;requireSSL=false&amp;serverTimezone=JST' \
+  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false&serverTimezone=JST' \
   MYSQL_PASSWORD=************ \
   MYSQL_USER=azureuser
 ```

@@ -1,4 +1,4 @@
-You can ingest data into Azure Digital Twins through external compute resources: Virtual Machines, Azure Functions, Logic Apps, etc... In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
+You can ingest data into Azure Digital Twins through external compute resources such as Virtual Machines, Azure Functions, and Logic Apps. In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
 
 Additionally, when choosing what type of external compute to use, remember to factor in the additional cost. Virtual Machines, Functions, and Logic Apps all have different cost models.
 
@@ -35,7 +35,8 @@ In this section, we'll create a system-managed identity. We'll then assign the f
 1. Use the following command to create the system-managed identity and save the *principalId* to a variable for later use:
 
     ```azurecli	
-    az functionapp identity assign -g $rgname -n $telemetryfunctionname $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
+    az functionapp identity assign -g $rgname -n $telemetryfunctionname 
+    $principalID = $(az functionapp identity assign -g $rgname -n $telemetryfunctionname  --query principalId)
     ```
 
 1. Use the *principalId* value in the following command to assign the function app's identity to the **Azure Digital Twins Data Owner** role for your Azure Digital Twins instance:
@@ -143,7 +144,7 @@ namespace My.Function
 
                     //Update twin by using device temperature.
                     var patch = new Azure.JsonPatchDocument();
-                    patch.AppendReplace<double>("/ChasisTemperature", chasistemperature.value<double>()); 
+                    patch.AppendReplace<double>("/ChasisTemperature", chasistemperature.Value<double>()); 
 
                     await client.UpdateDigitalTwinAsync(deviceId, patch); 
                 }
@@ -166,7 +167,7 @@ namespace My.Function
 
 1. Make these selections:
     - **Select subscription**: Select your subscription.
-    - **Select Function App in Azure**: Select `<name>twinfunction`.
+    - **Select Function App in Azure**: Select `<dtname>-telemetryfunction`.
 
    When the deployment finishes, you'll be prompted to start streaming logs:
 

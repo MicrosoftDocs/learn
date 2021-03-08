@@ -38,7 +38,7 @@ You see the OWASP Top Ten in action when you scan the _Space Game_ project later
 
 ### Roslyn analyzers
 
-Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
+Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
 
 You can run Roslyn analyzers from Visual Studio or from the command line. The following image shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
 

@@ -272,3 +272,123 @@ achievements:
   title: Review planning and managing Azure costs
   summary: Review planning and managing Azure costs
   iconUrl: /learn/achievements/review-planning-managing-costs.svg
+- uid: learn.explore-azure-infrastructure.badge
+  type: badge
+  title: Core Cloud Services - Azure architecture and service guarantees
+  summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
+  iconUrl: /learn/achievements/explore-azure-infrastructure.svg
+- uid: learn.intro-to-compute.badge
+  type: badge
+  title: Core Cloud Services - Azure compute options
+  summary: Review the Azure compute services and explore how they can solve common business needs.
+  iconUrl: /learn/achievements/intro-to-azure-compute.svg
+- uid: learn.intro-to-azure-networking.badge
+  type: badge
+  title: Core Cloud Services - Azure networking options
+  summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
+  iconUrl: /learn/achievements/intro-to-azure-networking.svg
+- uid: learn.intro-to-data-in-azure.badge
+  type: badge
+  title: Core Cloud Services - Azure data storage options
+  summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
+  iconUrl: /learn/achievements/intro-to-data-in-azure.svg
+- uid: learn.intro-to-governance.badge
+  type: badge
+  title: Apply and monitor infrastructure standards with Azure Policy
+  summary: Learn about governance and management in Azure services.
+  iconUrl: /learn/achievements/intro-to-governance.svg
+- uid: learn.introduction-to-security.badge
+  type: badge
+  title: Security, responsibility, and trust in Azure
+  summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
+  iconUrl: /learn/achievements/intro-to-security-in-azure.svg
+- uid: learn.predict-costs-and-optimize-spending.badge
+  type: badge
+  title: Predict costs and optimize spending for Azure 
+  summary: Cost is one of the most important aspects of the cloud and can have a massive impact on your business. Azure has several tools available to help you get a better understanding of cloud spend and some best practices that you can leverage to help you save money.
+  iconUrl: /learn/achievements/predict-costs-and-optimize-spending.svg
+- uid: learn.principles-cloud-computing.badge
+  type: badge
+  title: Cloud Concepts - Principles of cloud computing
+  summary: Explore the core concepts of cloud computing and how it can help your business.
+  iconUrl: /learn/achievements/principles-cloud-computing.svg
+- uid: learn.welcome-to-azure.badge
+  type: badge
+  title: Core Cloud Services - Introduction to Azure
+  summary: Get started with Azure by creating and configuring your first website in the cloud.
+  iconUrl: /learn/achievements/welcome-to-azure.svg
+- uid: learn.cloud-foundations.trophy
+  type: trophy
+  title: Azure fundamentals
+  summary: New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
+  iconUrl: /learn/achievements/azure-fundamentals.svg
+- uid: learn.foundations-data-science.trophy
+  type: trophy
+  title: "Foundations of data science"
+  summary: "Foundations of data science"
+  iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
+- uid: learn.learn-data-science-method.badge
+  type: badge
+  title: "Learn the data science method"
+  summary: "Learn the data science method"
+  iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
+- uid: learn.introduction-python-using-datascience-library.badge
+  type: badge
+  title: "Introduction to python using the datascience library"
+  summary: "Introduction to python using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+- uid: learn.create-manipulate-tables-using-datascience-library.badge
+  type: badge
+  title: "Create and manipulate tables using the datascience library"
+  summary: "Create and manipulate tables using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+- uid: learn.design-plot-graphs-python.badge
+  type: badge
+  title: "Design and plot graphs in Python"
+  summary: "Design and plot graphs in Python"
+  iconUrl: /learn/achievements/student-evangelism/design-plot-graphs-python.svg
+- uid: learn.introduction-probability.badge
+  type: badge
+  title: "Introduction to probability"
+  summary: "Introduction to probability"
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-probability.svg
+- uid: learn.simulate-generate-empirical-distributions-python.badge
+  type: badge
+  title: "Simulate and generate empirical distributions in Python"
+  summary: "Simulate and generate empirical distributions in Python"
+  iconUrl: /learn/achievements/student-evangelism/simulate-generate-empirical-distributions-python.svg
+- uid: learn.test-hypothesis-by-simulating-statistics.badge
+  type: badge
+  title: "Test hypothesis by simulating statistics"
+  summary: "Test hypothesis by simulating statistics"
+  iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+- uid: learn.compare-two-samples-by-bootstrapping.badge
+  type: badge
+  title: "Compare two samples by bootstrapping"
+  summary: "Compare two samples by bootstrapping"
+  iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
+- uid: learn.understand-normal-curve.badge
+  type: badge
+  title: "Understand the normal curve"
+  summary: "Understand the normal curve"
+  iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+- uid: learn.make-predictions-with-linear-regression.badge
+  type: badge
+  title: "Make predictions with linear regression"
+  summary: "Make predictions with linear regression"
+  iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+- uid: learn.simulate-distribution-regression-coefficients.badge
+  type: badge
+  title: "Simulate the distribution of regression coefficients"
+  summary: "Simulate the distribution of regression coefficients"
+  iconUrl: /learn/achievements/student-evangelism/simulate-distribution-regression-coefficients.svg
+- uid: learn.predict-classes-with-knn-classifier.badge
+  type: badge
+  title: "Predict  classes with a knn classifier"
+  summary: "Predict  classes with a knn classifier"
+  iconUrl: /learn/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+  type: badge
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
+  iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg

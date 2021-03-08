@@ -26,5 +26,5 @@ In this module, you saw a few tools that you can use to automate your configurat
 * Cloud-init:
   * [cloudinit.readthedocs.io](https://cloudinit.readthedocs.io/?azure-portal=true)
   * [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init?azure-portal=true)
-* [PowerShell DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?view=powershell-6?azure-portal=true)
+* [PowerShell DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?azure-portal=true)
 * [Puppet](https://puppet.com/?azure-portal=true)
