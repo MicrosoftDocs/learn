@@ -24,7 +24,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 A typical application to be moved to Azure is a two-tier Windows .NET front-end application connected to SQL Server running on VMs. When migrating or **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Graphic showing how to migrate Window & SQL Server to Azure IaaS.](../media/migrate-win-sql.png)
+![Graphic showing how to migrate Window & SQL Server to Azure IaaS.](../media/migrate-windows-sql.png)
 
 **Deep dive on migration scenarios:**
 
@@ -40,7 +40,7 @@ When modernizing an application, you will be using additional cloud provider ser
 - **Rearchitect**
 - **Rebuild**
 
-![Graphic showing the migration methods know as Rehost, Refactor, Rearchitect, Rebuild.](../media/the-rs.png)
+![Graphic showing the migration methods know as Rehost, Refactor, Rearchitect, Rebuild.](../media/rehost-refactor-rearchitect-rebuild.png)
 
 #### Refactor
 
@@ -71,7 +71,7 @@ Azure has broad support for Linux and open-source databases. Tailwind Traders ca
 
 When migrating Linux and open-source applications to Azure, the experience is much like Windows. When you **Rehost** these applications, they can be moved using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and will run just as they do today in the datacenter only now they are connected to a virtual network running in Azure.
 
-![Graphic showing how to migrate Linux & OSS Databases.](../media/migrate-linux-ossdb.png)
+![Graphic showing how to migrate Linux & OSS Databases.](../media/migrate-linux-databases.png)
 
 **Deep dive on migration scenarios:**
 
@@ -111,7 +111,7 @@ Rehost an [on-premises dev/test environment](https://docs.microsoft.com/azure/cl
 
 Tailwind Traders can empower your team to quickly provision dev/test and pre-production environments to deliver quality products, applications, and services. Use purpose-built managed developer services like [Azure DevTest Labs](https://azure.microsoft.com/services/devtest-lab/?azure-portal=true).
 
-![Graphic showing how to modernize using DevTest Labs.](../media/modernize-dtlabs.png)
+![Graphic showing how to modernize using DevTest Labs.](../media/modernize-dev-test-labs.png)
 
 - Migrate a dev/test environment to [Azure DevTest Labs](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-devtest-to-labs/?azure-portal=true)
 
