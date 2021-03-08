@@ -32,11 +32,11 @@ If your organization is incorporating sensitive data protection, there are sever
 
 Data location is also important. Today, data is everywhere&#8212;on mobile devices, cloud-storage services, and local file servers. You must consider all possible locations of sensitive data. And don't forget the network paths along which it potentially travels.
 
-The Microsoft approach to sensitive data protection consists of four phases. This approach allows you to help protect data through its entire lifecycle and across multiple locations and devices. The four phases are: <!--ID/SME: Are the four phases listed below actually explicitly called, by Microsoft, what is listed below or can we add "Help" in front of "protect" in the third bullet. This is a big CELA ask -- always add "help" in front of "protect".-->
+The Microsoft approach to sensitive data protection consists of four phases. This approach allows you to help protect data through its entire lifecycle and across multiple locations and devices. The four phases are:
 
 - Discover your data.
 - Classify sensitive information.
-- Protect your data.
+- Help protect your data.
 - Monitor and report on your data.
 
 The following image depicts the Microsoft approach to information protection:
