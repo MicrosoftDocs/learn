@@ -57,7 +57,7 @@ quiz:
     choices:
     - content: "Access databases"
       isCorrect: false
-      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are likely<!-- ID/SME: "are not likely?" --> to be stored in an Access database."
+      explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents aren't likely to be stored in an Access database."
     - content: "Dynamics 365"
       isCorrect: false
       explanation: "That's incorrect. Office documents such as Word, Excel, PowerPoint, and OneNote documents are not likely to be stored in Dynamics 365."
