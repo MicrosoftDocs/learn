@@ -40,7 +40,7 @@ When modernizing an application, you will be using additional cloud provider ser
 - **Rearchitect**
 - **Rebuild**
 
-![Graphic showing the migration methods know as the R's.](../media/the-rs.png)
+![Graphic showing the migration methods know as Rehost, Refactor, Rearchitect, Rebuild.](../media/the-rs.png)
 
 #### Refactor
 

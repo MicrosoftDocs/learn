@@ -8,11 +8,11 @@ With a migration, the workloads will remain unchanged and moved to the cloud. If
 
 At Tailwind Traders you could develop a decision tree, which can help you to evaluate your applications:
 
-![Graphic of a decision tree showing PaaS or Iaas based on future development on an application.](../media/modernize-decision-tree.png)
+![Graphic of a decision tree showing PaaS or IaaS based on future development on an application.](../media/modernize-decision-tree.png)
 
 As the solution architect on the Tailwind Traders team you will need to understand the triggers for your **migration** or **modernization**.
 
-![Graphic showing the triggers for a migration or moderization project.](../media/migration-triggers.png)
+![Graphic showing the triggers for a migration or modernization project.](../media/migration-triggers.png)
 
 ## Migration triggers
 
