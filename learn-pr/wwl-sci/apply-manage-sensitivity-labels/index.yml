@@ -3,7 +3,7 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply and manage sensitivity labels
   description: "Apply and manage sensitivity labels"
-  ms.date: 01/27/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -24,10 +24,9 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- administrator
 - auditor
+- ip-admin
 - risk-practitioner
-- security-engineer
 products:
 - m365
 - m365-information-protection

@@ -26,9 +26,9 @@ Turn on this feature to see user details stored in Azure Active Directory. Detai
 
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be helpful when you need to communicate with the user and mitigate risks.
 
-### Azure Advanced Threat Protection integration
+### Microsoft Defender for Identity integration
 
-The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with more insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
+The integration with Microsoft Defender for Identity allows you to pivot directly into another Microsoft Identity security product. Microsoft Defender for Identity augments an investigation with more insights about a suspected compromised account and related resources. By enabling this feature, you'll enrich the device-based investigation capability by pivoting across the network from an identify point of view.
 
 ### Microsoft Secure Score
 

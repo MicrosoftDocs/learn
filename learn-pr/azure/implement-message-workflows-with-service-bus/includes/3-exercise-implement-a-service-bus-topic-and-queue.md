@@ -17,25 +17,24 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, select **More services**.
+1. Select **+ Create a resource**.
 
-1. In the **All services** search, enter **Service Bus (Message Service)**, and then select **Service Bus**. The **Service Bus** pane appears.
+1. Enter **Service Bus** in the search box, then select **Service Bus**, and then select **Create**.
 
-    :::image type="content" source="../media/3-create-namespace-1.png" alt-text="Screenshot showing the Integration section of the All services pane with Service Bus highlighted":::
-
-1. In the top left of the **Service Bus** pane, select **New**. The **Create namespace** pane appears.
-
-1. On the **Basics** tab, enter the values for each setting.
+1. In the **Basics** tab, specify the following settings in the **PROJECT DETAILS** section.
 
     | Setting | Value |
     |---|---|
-    | **PROJECT DETAILS** |
-    | Subscription | Concierge Subscription |
-    | Resource group | Select <rgn>[Sandbox resource group]</rgn> (from the drop-down). |
-    | **INSTANCE DETAILS** |
-    | Namespace name | Enter a unique name, for example, "salesteamapp" + *your initials* + *current date*. |
-    | Location | Location near you (from the dropdown). |
-    | Pricing tier | Standard - (from the drop-down). |
+    | **Subscription** | Concierge Subscription |
+    | **Resource group** | Select <rgn>[Sandbox resource group]</rgn> from the dropdown. |
+
+1. Specify the following settings in the **INSTANCE DETAILS** section.
+
+    | Setting | Value |
+    |---|---|
+    | **Namespace Name** | *Enter a unique name*, for example, "salesteamapp" + *your initials* + *current date*. |
+    | **Location** | Location near you from the following list. |
+    | **Pricing tier** | Standard |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 

@@ -22,4 +22,8 @@ Taking advantage of Azure Static Web Apps provides all these benefits. It enable
 Here are several resources where you can learn more about Azure Static Web Apps, Visual Studio Code, and other concepts covered in this module.
 
 - [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
+- Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
+- [Overview of Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1)
+- Learn how to [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/)
+- Learn how to [Publish an API to Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-static-web-app-api-preview-url/)
 - Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
