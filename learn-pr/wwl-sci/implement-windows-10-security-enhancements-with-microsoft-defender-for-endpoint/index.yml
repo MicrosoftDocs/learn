@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defende
 metadata:
   title: Implement Windows 10 security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows 10 security enhancements with Microsoft Defender for Endpoint"
-  ms.date: 03/04/2021
+  ms.date: 03/08/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Configure Attack Surface Reduction rules on Windows 10 devices
 prerequisites: |
   Intermediate understanding of Windows 10.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-windows-10-enhancements-microsoft-defender-endpoint.svg
 levels:
 - intermediate
 roles:

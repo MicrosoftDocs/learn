@@ -72,7 +72,7 @@ Usually, you should create environments in containers (this is the default unles
 ```Python
 env.docker.enabled = True
 deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','pip'],                      
-                                pip_packages=['azureml-defaults']
+                                pip_packages=['azureml-defaults'])
 env.python.conda_dependencies = deps
 ```
 
