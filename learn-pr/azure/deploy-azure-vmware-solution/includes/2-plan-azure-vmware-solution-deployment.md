@@ -1,4 +1,4 @@
-Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed through the Azure portal, CLI, or PowerShell. AVS includes VMware vSphere, vCenter, vSAN, and NSX software. AVS private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to.
+Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed through the Azure portal, Azure CLI, or Azure PowerShell. AVS includes VMware vSphere, vCenter, vSAN, and NSX software. AVS private cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to.
 
 :::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Illustration that shows the relationship of an on-premises VMware environment, AVS, and all Azure Services that AVS can connect to like Azure Machine Learning, PowerApps, and so on.":::
 
@@ -24,12 +24,15 @@ The following Azure components need to be factored in before AVS deployment:
 | Resource name | The AVS resource name can't be longer than 14 characters. If the name is longer than 14 characters, public IP addresses cannot be created to use with AVS. |
 | Host size | Host instance size is AV36: 36 cores, 576-GB RAM, 15.36-TB raw storage capacity, 3.2-TB NVMe cache.
 | Node count | The minimum number of hosts is 3. The maximum number of hosts is 16 per vSphere cluster. The maximum number of nodes in an Azure Private Cloud instance is 64. Clusters can be extended or shrunk as needed. Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
-| vCenter administrator password  | Create a vCenter admin password during deployment. This password is used for the cloudadmin@vsphere.local admin account. You'll use it to sign into vCenter.              |
+| Azure virtual network | Create a brand new or reuse an existing Azure virtual network.
+| Azure Bastion | Create PaaS resource that provides seamless RDP to jump host.
+| Jump host | An Azure VM (server or desktop) used to access vSphere environment after deployment.
+| vCenter administrator password  | Create a vCenter admin password during deployment. This password is used for the cloudadmin@vsphere.local admin account. You'll use it to sign into vCenter. |
 | NSX-T administrator password  | Create an NSX-T admin password during deployment. This password is assigned to the admin user in the NSX account during the build. You'll use it to log into NSX-T Manager. |
 
 ## Review subscription eligibility criteria
 
-Use an Azure account in an Azure subscription to deploy AVS. The Azure subscription must meet one of the three criteria listed below:
+An Azure account in an Azure subscription is needed to deploy AVS. The Azure subscription must meet one of the three criteria listed below:
 
 - A subscription under an Azure Enterprise Agreement (EA) with Microsoft.
 - A subscription under a Microsoft Customer Agreement (MCA) with Microsoft.
@@ -114,10 +117,12 @@ Microsoft is responsible for the lifecycle management of NSX-T appliances, such 
 
 ### NSX-T Configuration
 
-There are two different methods of configuring NSX-T Manager for AVS.
+There are two different methods of configuring NSX-T Manager for AVS:
+- Use the Azure Resource Manager portal to configure network segments, DHCP server, DHCP relay, port mirroring, and DNS forwarder.
+- Use vSphere NSX-T Manager to configure network segments, DHCP server, and DHCP relay.
 
 ### Backup and restoration
 
 Private cloud vCenter and NSX-T configurations are backed up on an hourly schedule. Backups are kept for three days. If restoration from a backup is required, a support request needs to be opened in the Azure portal.
 
-In the next unit, we'll go through the deployment of AVS. All steps will be outlined so you can deploy the service in your environment.
+In the next unit, we'll cover all planning considerations for network topology with AVS. Each aspect that needs to be considered will be outlined so you can ensure your deployment is successful.

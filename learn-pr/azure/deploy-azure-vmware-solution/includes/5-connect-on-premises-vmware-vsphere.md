@@ -54,15 +54,6 @@ You'll need to connect the AVS ExpressRoute to Azure. This connection allows acc
 
 Global Reach will connect your on-premises VMware environment to the AVS private cloud. Connectivity is established between the AVS ExpressRoute and a new or existing ExpressRoute to an on-premises environment.
 
-### Pre-requisites
-
-There are a few pre-requisites that need to be met before configuring ExpressRouteGlobal Reach.
-
-1. The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
-2. A separate ExpressRoute circuit used to connect on-premises environments to Azure.
-3. A /29 non-overlapping network address block for ExpressRoute Global Reach peering.
-4. All gateways, including the ExpressRoute provider's service, need to support 4-byte Autonomous System Number (ASN). AVS uses 4-byte public ASNs for advertising network routes.
-
 ### Create an ExpressRoute Global Reach authorization key in the private cloud
 
 1. From the AVS private cloud **Overview**, under **Manage**, select **Connectivity > ExpressRoute > Request an authorization key**.
@@ -141,3 +132,5 @@ When this operation is complete, you'll have connectivity between on-premises an
 You should see where ExpressRoute connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. There may be a need to allow routes to propagate back to the on-premises network.
 
 Some environments have firewalls protecting ExpressRoute circuits. If there are no firewalls, try to ping the AVS vCenter server or a VM on the NSX-T segment from on-premises. Additionally, from the VM on the NSX-T segment, resources should be to reach the on-premises environment.
+
+In the next unit, we'll walk through how to configure NSX-T networking components in the Azure portal. NSX-T Manager provides the software defined networking layer for AVS.

@@ -1,8 +1,8 @@
-The AVS environment can be built once all pre-planning steps are complete. AVS will provide your company an ability to deploy a vSphere cluster in Azure. AVS also allows for an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning module to successfully deploy AVS. 
+The AVS environment can be built once all pre-planning steps are complete. AVS will provide your company an ability to deploy a vSphere cluster in Azure. AVS also allows for an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning units to successfully deploy AVS. 
 
 ## Register the resource provider
 
-The resource provider must be registered within the subscription. We discussed this task in the last unit. Registering the resource provider can be done through the Azure portal, Azure CLI, or PowerShell.
+The resource provider must be registered within the subscription. Registering the resource provider can be done through the Azure portal, Azure CLI, or PowerShell.
 
 Launch Azure Cloud Shell, sign in to your Azure subscription, and run the following command for Azure CLI:
 
@@ -26,7 +26,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
 1. On the Azure portal menu, select **Create a resource**.
 1. In the **Search the Marketplace** text box, type ```Azure VMware Solution```, select the resource, and select **Create**.
-1. On the **Azure VMware Solution**, select **Create**.
+1. On **Azure VMware Solution**, select **Create**.
 1. On the **Basics** tab, enter values for the fields.
 
     :::image type="content" source="../media/4-create-private-cloud.png" alt-text="Screenshot of how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
@@ -52,7 +52,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
 
 ## Create Azure Bastion
 
-After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion resource isn't needed. Your company may want to keep the resource as a back-up in case you have connectivity issues with ExpressRoute in the future.
+After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the jump host that will allow you to log into the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion resource isn't needed. Your company may want to keep the resource as a back-up in case you have connectivity issues with ExpressRoute in the future.
 
 1. In the Azure portal, search for and create a **Bastion** resource.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
@@ -76,4 +76,8 @@ After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastio
 
 After AVS and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as AVS and the Azure Bastion resource. The jump host can either be a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
 
-Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter. AVS connectivity will require configurations to communicate with Azure resources and the on-premises VMware environment. In the next unit, we'll go through network configuration steps to take so you can successfully connect to the AVS environment, both from within Azure and from on-premises.
+## Use Azure Bastion and sign into vCenter and NSX-T Manager
+
+Use Azure Bastion to log into the jump host VM. Once logged in, open a web browser. Navigate and log into both vCenter and NSX-T Manager. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+
+ AVS connectivity will require configurations to communicate with Azure resources and the on-premises VMware environment. In the next unit, we'll go through network configuration steps to take so you can successfully connect to the AVS environment, both from within Azure and from on-premises.

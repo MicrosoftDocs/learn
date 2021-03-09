@@ -9,7 +9,7 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 10
 quiz:
   title: Check your knowledge
   questions:
@@ -24,17 +24,17 @@ quiz:
     - content: Try deploying Azure VMware Solution in a different region.
       isCorrect: false
       explanation: Switching regions won't help your deployment as the error doesn't relate to a regional issue.
-  - content: If you can't connect to your Azure VMware Solution environment from on-premises, what configuration step should you do?
+  - content: If you can't connect to your Azure VMware Solution environment from on-premises, what configuration step should you take?
     choices:  
     - content: Delete Azure VMware Solution deployment and redeploy service.
       isCorrect: false
-      explanation: Redeploying the service with the same configuration won't  ensure you have network connectivity to your on-premises VMware environment.
+      explanation: Redeploying the service with the same configuration won't ensure you have network connectivity to your on-premises VMware environment.
     - content: Ensure all gateways, including the ExpressRoute provider's service, support 4-byte Autonomous System Number (ASN).
       isCorrect: true
       explanation: AVS uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute and the AVS ExpressRoute.
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
-      explanation: If you're able to deploy AVS, you already have the right permissions on the private cloud.
+      explanation: If you're able to deploy AVS, you already have the right permissions assigned.
   - content: When you try to deploy Azure VMware Solution, you receive an error message highlighting there are steps to take before node deployment. How do you resolve the error so you can continue with the deployment?
     choices:  
     - content: Use a different region.
@@ -43,6 +43,39 @@ quiz:
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
       explanation: If you're able to deploy the service without issues, you already have the right permissions assigned.
-    - content: Open up a new support ticket to have hosts provisioned.
+    - content: Open up a new support ticket to have quota allocated.
       isCorrect: true
       explanation: To deploy AVS, you must open up a support request so your bare metal hosts are provisioned in your subscription.
+  - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
+    choices:
+    - content: "/22"
+      isCorrect: true
+      explanation: "AVS needs a /22 CIDR network address block for IP segments."
+    - content: "/30"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+    - content: "/31"
+      isCorrect: false
+      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+  - content: "What type of interconnectivity provides network connectivity into Azure resources and services?"
+    choices:
+    - content: "Full interconnectivity"
+      isCorrect: false
+      explanation: "Full interconnectivity establishes connectivity between on-premises VMware environment and AVS."
+    - content: "Half interconnectivity"
+      isCorrect: false
+      explanation: "This is not a valid type of interconnectivity for AVS configuration."
+    - content: "Basic interconnectivity"
+      isCorrect: true
+      explanation: "Basic interconnectivity establishes connectivity between the bare metal hosts and Azure resources."
+  - content: "What is one of the gateways deployed with AVS?"
+    choices:
+    - content: "NSX-T Tier-1 gateway"
+      isCorrect: true
+      explanation: "AVS deploys with an NSX-T Tier-1 gateway in Active/Standby mode. The NSX-T Tier-0 and Tier-1 gateways connect network segments as logical switches and provide East-West and North-South connectivity."
+    - content: "Application Gateway"
+      isCorrect: false
+      explanation: "An Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. This is not deployed with AVS."
+    - content: "Virtual network gateway"
+      isCorrect: false
+      explanation: "A virtual network gateway is a PaaS resource that routes tables and runs specific gateway services for site-to-site connectivity. This is not deployed with AVS."

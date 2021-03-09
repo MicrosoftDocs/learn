@@ -1,19 +1,12 @@
-<!--Need intro-->
-
-
-## Use Azure Bastion and sign into vCenter and NSX-T
-
-Use Azure Bastion to log into the jump host VM you created in the last unit. Once logged in, open a web browser. Navigate and log into both vCenter and NSX-T Manager. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. From there, select the AVS private cloud. Then select **Identity > Default** in the **Overview** view.
-
-## Configure NSX-T Manager components
-
 AVS deploys with NSX-T Manager as the software-defined network layer. The networking environment has two gateways:
     - NSX-T Tier-0 gateway configured in Active/Active mode.
     - NSX-T Tier-1 gateway configured in Active/Standby mode.
 
 Both gateways allow connections between logical switch segments. Additionally, these gateways provide East-West and North-South connectivity.
 
-After AVS is deployed, the NSX-T components are configured under **Workload Networking** in the Azure portal. Use of the Azure portal provides a simplified view of the management pane for NSX-T operations. If you're unfamiliar with NSX-T Manager, configure AVS networking using this method. If you're familiar with the NSX-T Manager, the console view within vSphere can be used to configure the advanced network settings and features.
+## Configure NSX-T Manager components
+
+After AVS is deployed, the NSX-T components are configured under **Workload Networking** in the Azure portal. Use of the Azure portal provides a simplified view of the management pane for NSX-T operations. If you're unfamiliar with NSX-T Manager, configure AVS networking using this method. If you're familiar with NSX-T Manager, the console view within vSphere can be used to configure the advanced network settings and features.
 
 There are four options that can be configured for NSX-T Manager in AVS using the Azure portal:
 
@@ -49,7 +42,7 @@ VMs either created in or migrated to AVS should be attached to an NSX-T networki
 
 ## Create a DHCP server or DHCP relay in the Azure portal
 
-A DHCP server or relay can be created directly from the AVS console within the Azure portal. The DHCP server or relay will connect to the Tier-1 gateway, which is created when AVS is deployed. All segments where DHCP ranges are provided will be part of the DHCP components of NSX-T. After a DHCP server or DHCP relay has been created, a subnet or range must be defined on an NSX-T segment level to consume the DHCP services.
+A DHCP server or relay can be created directly from the AVS console within the Azure portal. The DHCP server or relay will connect to the Tier-1 gateway, which is created when AVS is deployed. All segments where DHCP ranges are provided will be part of the DHCP components of NSX-T. After a DHCP server or DHCP relay has been created, a subnet or range must be defined on an NSX-T segment to consume the DHCP services.
 
 1. In the AVS private cloud, under **Workload Networking**, select **DHCP > Add**.
 
@@ -61,7 +54,7 @@ A DHCP server or relay can be created directly from the AVS console within the A
 
 ## Configure port mirroring in the portal
 
-Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding a copy of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source, a VM, or a group of VMs, and then sends the traffic to a destination.
+Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding copies of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source, a VM (or a group of VMs), and then sends the traffic to a destination.
 
 To set up port mirroring in the AVS console, you'll create source and destination VMs or VM groups. The source group either has a single VM or multiple VMs where the network traffic is mirrored.
 
@@ -87,18 +80,6 @@ To set up port mirroring in the AVS console, you'll create source and destinatio
 
 1. Select **Ok** to complete the profile. The profile and VM groups will now be visible in the AVS console.
 
-## Add a VM on an NSX-T network segment
-
-Deploy a VM to test network connectivity in the AVS vCenter. This VM will help verify connectivity the following ways:
-
-- Network connectivity to and from the internet.
-- Network connectivity to and from Azure virtual networks.
-- Network connectivity to and from on-premises environments.
-
-Deploy the VM as you would in any vSphere environment:
-- Attach the VM to one of the network segments previously created in NSX-T Manager. 
-- VMs can receive network configuration from a DHCP server or the network configuration can be statically configured.
-
 ## Configure a DNS forwarder in the Azure portal
 You'll configure a DNS forwarder. Specific DNS requests will be forwarded to a designated DNS server for resolution. A DNS forwarder is associated with a default DNS zone and up to three FQDN zones.
 
@@ -106,7 +87,7 @@ To set up a DNS forwarder in the Azure VMware Solution console, you'll:
 
 1. Configure a default DNS zone and FQDN zone. When a DNS query is received, a DNS forwarder compares the domain name with the domain names in the FQDN DNS zone.
 1. You'll configure a default DNS zone and FQDN zone to send DNS queries to the upstream server. When a DNS query is received, the DNS forwarder compares the domain name in the query with the FQDN DNS zones' domain names. If a match is found, the query is forwarded to the DNS servers specified in the FQDN DNS zone. If no match is found, the query is forwarded to the DNS servers specified in the default DNS zone. A default zone must be defined before you configure an FQDN zone.
-1. In your Azure VMware Solution private cloud, under Workload Networking, select DNS > DNS zones > Add.
+1. In your Azure VMware Solution private cloud, under **Workload Networking**, select **DNS > DNS zones > Add**.
 
     :::image type="content" source="../media/6-nsxt-workload-networking-dns-zones.png" alt-text="Screenshot showcasing where to configure DNS zones under workload networking.":::
 
@@ -127,6 +108,18 @@ To set up a DNS forwarder in the Azure VMware Solution console, you'll:
 
 1. Select **Ok**. The DNS service was added successfully.
 
+## Add a VM on an NSX-T network segment
+
+Deploy a VM to test network connectivity in the AVS vCenter. This VM will help verify connectivity the following ways:
+
+- Network connectivity to and from the internet.
+- Network connectivity to and from Azure virtual networks.
+- Network connectivity to and from on-premises environments.
+
+Deploy the VM as you would in any vSphere environment:
+- Attach the VM to one of the network segments previously created in NSX-T Manager. 
+- VMs can receive network configuration from a DHCP server or the network configuration can be statically configured.
+
 ## Test the NSX-T segment connectivity
 
 Log into the VM created in the previous step and verify connectivity:
@@ -136,4 +129,3 @@ Log into the VM created in the previous step and verify connectivity:
 - Ping an internal VM that sits on the Azure virtual network.
 
 If each test works, AVS is now functional. Going through these steps means you've successfully established connectivity to and from an Azure virtual network, and the internet.
-
