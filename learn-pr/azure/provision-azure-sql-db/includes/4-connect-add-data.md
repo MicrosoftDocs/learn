@@ -86,7 +86,7 @@ Here, you use the `az` utility to list your databases and show some information 
     az sql db show --name Logistics | jq '{name: .name, maxSizeBytes: .maxSizeBytes, status: .status}'
     ```
 
-    You see that the database is online and can hold around 2 GB of data.
+    You see that the database is online and the maximum amount data that the database can store.
 
     ```json
     {
@@ -135,18 +135,18 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > on the master database to create a firewall rule for this IP address or address range.
     > It may take up to five minutes for this change to take effect.
     > ```
-    >
-    > If this happens, you will need to add another firewall rule for your client. To do so, preform the following steps:
-    >
-    > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    > 1. Search for and select your database.
+If this happens, you will need to add another firewall rule for your client. To do so, preform the following steps:
 
-    > 1. Select **Set server firewall**.
+- Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    > 1. Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
+- Search for and select your database.
 
-    > 1. Select **Save**.
+- Select **Set server firewall**.
+
+- Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
+
+- Select **Save**.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
 

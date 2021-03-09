@@ -3,7 +3,7 @@ uid: learn.wwl.implement-access-management-for-apps
 metadata:
   title: 'SC-300 part 3: Implement Access Management for Apps'
   description: 'SC-300 part 3: Implement Access Management for Apps'
-  ms.date: 02/17/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,6 +18,7 @@ levels:
 - intermediate
 roles:
 - administrator
+- identity-access-admin
 - security-engineer
 products:
 - azure

@@ -15,39 +15,58 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Can you use variables declared within an `if` statement outside of the `if` statement?"
+  - content: "Arrays are a fixed-length data type, but how can you define their size based on the data you used to initialize them?"
     choices:
-    - content: "Yes, because variables are global."
+    - content: "You have to determine the number of elements when declaring the array."
       isCorrect: false
-      explanation: "No. These variables' scope are only available within an `if` block."
-    - content: "No. The variable scope works only within the `if` block or nested `if` statements."
+      explanation: "Incorrect. You can use ellipsis `...` to determine its size based on the data you use to initialize the array."
+    - content: "You can use an ellipsis like this `q := [...]int{1, 2, 3}`."
       isCorrect: true
-      explanation: "Correct. You can't use those variables outside of the `if` block."
-    - content: "Yes. As long as you use it within the function."
+      explanation: "Correct. When you use an ellipsis, the data you use to initialize an array defines the array size."
+    - content: "You have to create a slice to define their size."
       isCorrect: false
-      explanation: "No. You can only use those variables within the `if` block."
-    - content: "No. You have to declare a variable outside of an `if` statement."
-      isCorrect: false
-      explanation: "Not necessarily. In Go, you don't have to declare a variable before you can use it in an `if` block."
-  - content: "Do you need to include a `break` keyword at the end of every `case` statement in a `switch` block?"
+      explanation: "Incorrect. Slices are dynamic, but this question is specific to arrays, and you can use ellipsis `...` to define its size based on the data you use to initialize it."
+  - content: "A slice works with an underlying array, and arrays are fixed-sized length. What happens when you add an element to the slice and the underlying array is full?"
     choices:
-    - content: "No. Go doesn't require you to include the `break` keyword."
+    - content: "You get a panic error."
+      isCorrect: false
+      explanation: "Incorrect. Go will create a new array and double its size to hold more elements when needed."
+    - content: "You don't get an error, but the new element is not added to the slice."
+      isCorrect: false
+      explanation: "Incorrect. Go will create a new array and double its size to hold the new element and have space for more elements."
+    - content: "Go doubles the size of the underlying array."
       isCorrect: true
-      explanation: "Correct. By default, Go will stop the `switch` statement when it finishes a `case` block."
-    - content: "Yes. Otherwise, the following `case` statements will be evaluated."
-      isCorrect: false
-      explanation: "No. By default, Go will stop the `switch` statement when it finishes a `case` block."
-    - content: "No. Go doesn't have support for the `break` keyword."
-      isCorrect: false
-      explanation: "Go does have support for the `break` statement, but by default, Go will stop the `switch` statement when it finishes a `case` block."
-  - content: "What does the `panic()` function do in Go?"
+      explanation: "Correct. Go will create a new array and double its size to hold more elements when needed."
+  - content: "What happens when you create another slice using the slice operator `s[i:j]` and you make a change to an element in the new slice?"
     choices:
-    - content: "It throws an error that you need to catch. Otherwise, the program crashes without any error."
+    - content: "Only the slice you created gets affected because when you make a sub slice it points to a new memory address."
       isCorrect: false
-      explanation: "No. The `panic` function makes the program crash and prints out the error and its details. You don't necessarily have to `catch` the error to see it."
-    - content: "It prints out a panic message to the console."
+      explanation: "Incorrect. A slice is merely pointing to an underlying array, so you need to create a copy of the slice if you don't want to affect others."
+    - content: "You can't create a sub slice, so you'd have to create a new one."
       isCorrect: false
-      explanation: "It prints out a panic message and also makes the program crash."
-    - content: "It crashes a program and prints out the error message and its stack trace."
+      explanation: "Incorrect. You can create a sub slice using the slice operator `s[i:j]`."
+    - content: "The original slice changes because a slice is simply a pointer to an underlying array."
       isCorrect: true
-      explanation: "Correct. You can use this function when you explicitly want to make the program stop running and print out the error and its details."
+      explanation: "Correct. A slice is merely pointing to an underlying array, so you need to create a copy of the slice if you don't want to affect others."
+  - content: "When you're iterating the elements of a map, can you access the key and its value simultaneously?"
+    choices:
+    - content: "You could use the syntax `for key, value := range map`. to access the key and value"
+      isCorrect: true
+      explanation: "Correct. when you loop map elements, you can access the key and its value."
+    - content: "No, you can only access the map's values."
+      isCorrect: false
+      explanation: "Incorrect. When you loop map elements, you can access both the key and its value."
+    - content: "You can only access both the key and the value when they are the same type."
+      isCorrect: false
+      explanation: "Incorrect. The key and the value can have a different type, and when you loop map elements, you can access the key and its value."
+  - content: "Can you embed one struct into another struct?"
+    choices:
+    - content: "No, because Go doesn't have support for inheritance."
+      isCorrect: false
+      explanation: "Incorrect. Go doesn't support inheritance, but you can embed one struct into another."
+    - content: "Yes, and you can even access the parent properties as if it was part of the child struct."
+      isCorrect: true
+      explanation: "Correct. When you create a field with the same name as the name of the parent struct, you're embedding a struct into another struct."
+    - content: "No, you have to use two structs and repeat code as needed."
+      isCorrect: false
+      explanation: "Incorrect. When you create a field with the same name as the name of the parent struct, you're embedding a struct into another struct."          

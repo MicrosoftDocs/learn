@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.4-hello-world-test
+metadata:
+  title: Hello, world!
+  description: 'Tradition says introduction courses should start with "Hello, world!" We create an application to display "Hello, world" on the page.'
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Hello, world!
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-hello-world-test.md)]

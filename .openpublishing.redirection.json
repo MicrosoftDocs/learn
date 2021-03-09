@@ -5054,6 +5054,71 @@
       "source_path": "learn-pr/student-evangelism/simulate-distribution-regression-coefficients/simulate-distribution-regression-coefficients/05-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/simulate-distribution-regression-coefficients/05-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-windows-server/select-windows-server-editions-servicing-options-activation/4-license-and-activate-windows-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/select-windows-server-editions-servicing-options-activation/4-license-activate-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/2-overview-of-speaker-recognition.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/3-exercise-create-a-speaker-recognition-api-subscription.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/4-overview-of-speaker-verification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/5-manage-speaker-verification-profiles.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/6-overview-of-speaker-identification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/7-manage-speaker-identification-profiles.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/8-implement-speaker-recognition-and-identification.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-relational-data/6-perform-query.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-relational-data/6-exercise-perform-query",
+      "redirect_document_id": false
     }
   ]
 }

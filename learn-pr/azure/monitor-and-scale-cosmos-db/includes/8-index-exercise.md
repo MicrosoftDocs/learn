@@ -13,7 +13,7 @@ We ran queries in Unit 3 on our collections with all the document properties ind
 
 Update the **Orders** collection to index none of the properties.
 
-1. If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. Refresh the Cloud Shell. If Cloud Shell hasn't timed out, you can skip these steps.
+1. If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. Refresh Cloud Shell. If Cloud Shell hasn't timed out, you can skip these steps.
 
     You can reset the `COSMOS_NAME` value by running the following command.
 

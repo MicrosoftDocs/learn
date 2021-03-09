@@ -26,10 +26,10 @@ quiz:
       explanation: "A graph database is built and optimized for traversing relationships from a particular starting point, it is not optimized for searching for data across the entire graph"
   - content: "Which of these answers is a primary strength of graph databases, as compared to other database models?"
     choices:
-    - content: "Performance"
+    - content: "Query performance with relationships"
       isCorrect: true
       explanation: "A graph database has superior performance for querying related data. Graph databases are designed to traverse stored data quickly and retrieve results in milliseconds"
-    - content: "Storage"
+    - content: "Storage for large data sets"
       isCorrect: false
       explanation: "A graph database is not ideally suited to store numerous properties on a single node or large values in those properties"
     - content: "Where data models stay consistent and the structure is fixed and tabular"
