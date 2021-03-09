@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.query-relational-data-azure.perform-query
-title: Use SQL to query Azure SQL Database
+title: 'Exercise: Use SQL to query Azure SQL Database'
 metadata:
-  title: Use SQL to query Azure SQL Database
-  description: "Use SQL to query Azure SQL Database"
-  ms.date: 03/08/2021
+  title: 'Exercise: Use SQL to query Azure SQL Database'
+  description: "Exercise: Use SQL to query Azure SQL Database"
+  ms.date: 03/09/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -12,5 +12,5 @@ metadata:
 azureSandbox: true
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-perform-query.md)]
+  [!include[](includes/6-exercise-perform-query.md)]
 interactive: bash
