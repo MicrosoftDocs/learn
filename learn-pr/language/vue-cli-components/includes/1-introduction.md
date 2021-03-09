@@ -23,7 +23,7 @@ Prerequisites:
 > To get the code for this module, you can clone the repository by executing the following in a command or terminal window:
 >
 > ```bash
-> git clone https://github.com/MicrosoftDocs/mslearn-vue/
-> cd mslearn-vue/code/4-cli-components
+> git clone https://github.com/MicrosoftDocs/mslearn-vue-components
+> cd mslearn-vue-components
 > code .
 > ```
