@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 07
 content: |
-  [!include[](includes/7-choosing-a-partition-key.md)]
+  [!include[](includes/6-choosing-a-partition-key.md)]

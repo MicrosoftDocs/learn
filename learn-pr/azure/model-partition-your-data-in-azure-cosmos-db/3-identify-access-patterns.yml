@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-identify-access-patterns.md)]
+  [!include[](includes/3-identify-access-patterns.md)]
