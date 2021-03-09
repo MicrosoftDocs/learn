@@ -31,7 +31,7 @@ quiz:
         - content: "Because this is the only way to calculate the resource utilization."
           isCorrect: true
           explanation: "Correct. The HPA algorithm uses the resource requests to calculate the utilization."
-        - content: "It's not important, but it's recommended so the application don't starve."
+        - content: "It's not important, but it's recommended so the application doesn't starve."
           isCorrect: false
           explanation: "Although it's important to have resources set for this reason, HPAs cannot calculate the resource usage if the resource keys are not set."
         - content: "So the HPA knows when to stop scaling a resource based on the resources available in the cluster."
@@ -45,6 +45,6 @@ quiz:
         - content: "Because it requires a stateful application to be vertically scaled."
           isCorrect: false
           explanation: "Any application can be vertically scaled."
-        - content: "Because it's cheaper to duplicate an stateless application then increase the resources on its VM."
+        - content: "Because it's cheaper to duplicate a stateless application than increase the resources on its VM."
           isCorrect: true
           explanation: "Correct. While a stateless application can be vertically scaled, the cost of adding more resources to a VM surpasses the cost of duplicating the same VM."
