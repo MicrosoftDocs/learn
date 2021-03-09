@@ -4,7 +4,7 @@ metadata:
   description: Create an IoT Hub device app, and a back-end service app. As a scenario, we use the monitoring, and controlling, of the temperature and humidity of a cheese cave.
   ms.date: 11/12/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Remotely monitor and control devices with Azure IoT Hub

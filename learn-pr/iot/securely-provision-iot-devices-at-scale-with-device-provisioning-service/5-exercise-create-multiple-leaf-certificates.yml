@@ -4,7 +4,7 @@ metadata:
   description: Create one leaf certificate for each remote sensor device.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - create multiple leaf certificates

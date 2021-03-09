@@ -5,7 +5,7 @@ metadata:
   description: Download the source code and capability model. Import the capability model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
   ms.date: 1/20/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language

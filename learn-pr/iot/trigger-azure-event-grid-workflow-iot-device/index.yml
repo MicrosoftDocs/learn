@@ -4,8 +4,8 @@ metadata:
   title: Trigger an Azure Event Grid workflow from an IoT device
   description: Trigger an Azure Event Grid workflow from an IoT device
   ms.date:  03/20/2020
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Trigger an Azure Event Grid workflow from an IoT device

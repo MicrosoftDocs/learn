@@ -4,7 +4,7 @@ metadata:
   description: Navigate the Azure portal, and create a free Azure Maps account. Then, extract the Primary Key you'll need for the upcoming coding module.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create your Azure Maps account

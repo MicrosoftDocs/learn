@@ -5,7 +5,7 @@ metadata:
   description: Describes why a second message route is needed, via an Event Hub, to the Azure Stream Analytics job. Then we describe the function you are going to use to detect data anomalies. To finish the unit, a quick overview of visualizing the output in Microsoft Power BI.
   ms.date: 11/26/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Add a route to an Azure Event Hub, and a query to detect anomalies

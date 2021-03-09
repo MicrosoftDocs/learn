@@ -5,7 +5,7 @@ metadata:
   description: Write code, in Node.js or C#, to send a command to invoke a direct method from a back-end app. Then add code to listen for that command in the device app. 
   ms.date: 10/01/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node

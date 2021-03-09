@@ -5,7 +5,7 @@ metadata:
   description: Read about the purpose and features of IoT Hub monitoring. The features include rules, alerts, diagnostics, and logs.
   ms.date: 2/2/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create IoT Hub metrics and alerts

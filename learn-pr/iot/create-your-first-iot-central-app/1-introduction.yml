@@ -5,7 +5,7 @@ metadata:
   description: Create an Azure IoT Central app.
   ms.date: 10/17/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

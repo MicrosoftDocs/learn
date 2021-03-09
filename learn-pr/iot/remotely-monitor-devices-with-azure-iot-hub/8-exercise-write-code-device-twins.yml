@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Write code for device twins
   description: Write code, in Node.js or C#, to send, update, and report device twin properties. 
   ms.date: 10/01/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node

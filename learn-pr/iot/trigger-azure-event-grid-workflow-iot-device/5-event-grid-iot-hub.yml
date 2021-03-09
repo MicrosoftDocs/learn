@@ -5,8 +5,8 @@ metadata:
   title: Event Grid and IoT Hub
   description: Event Grid and IoT Hub
   ms.date: 03/20/2020
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -5,7 +5,7 @@ metadata:
   description: Download and install the tools needed for IoT Central code development.
   ms.date: 10/17/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
