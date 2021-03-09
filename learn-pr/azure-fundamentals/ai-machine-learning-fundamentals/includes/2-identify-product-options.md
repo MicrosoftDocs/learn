@@ -25,7 +25,8 @@ With Azure Machine Learning, you can:
 - Create pipelines that define where and when to run the compute-intensive experiments that are required to score the algorithms based on the training and test data.
 - Deploy the best-performing algorithm as an API to an endpoint so it can be consumed in real time by other applications.
 
-Choose Azure Machine Learning when your data scientists need complete control over the design and training of an algorithm using your own data.
+Choose Azure Machine Learning when your data scientists need complete control over the design and training of an algorithm using your own data. The following video discusses the basic steps required to set up a machine learning system.
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWyJva]
 
 ### Azure Cognitive Services
 
