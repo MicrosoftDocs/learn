@@ -8,7 +8,7 @@ We will start by installing the extension into Visual Studio Code.
 
 1. In **Visual Studio Code**, select the **Extensions** icon.
 
-    ![Extensions icon](./media/extensions-icon.png)
+    ![Extensions icon](/media/extensions-icon.png)
 
 1. In the **Search Extensions** dialog, type **App Services**.
 1. Under **Azure App Service**, f **Install**.
@@ -21,12 +21,12 @@ With our extension installed, let's perform the installation.
 
 1. In **Visual Studio Code**, select the **Azure** icon on the toolbar.
 
-    ![Azure icon](./media/azure-icon.png)
+    ![Azure icon](/media/azure-icon.png)
 
 1. Select **Sign in** to sign into Azure using the same account you used to create the sandbox.
 1. On the **App Service** bar, select the **Deploy** icon.
 
-    ![App service bar with deploy icon highlighted](./media/app-service.png)
+    ![App service bar with deploy icon highlighted](/media/app-service.png)
 
 1. On **Select subscription**, choose your Azure subscription.
 
