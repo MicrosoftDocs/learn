@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-container-instances-sidecar.access-private-link-enabled-services
+title: Access private link enabled services from Azure Container Instances
+metadata:
+  title: Access private link enabled services from Azure Container Instances
+  description: Access private link enabled services from Azure Container Instances
+  ms.date: 03/05/2021
+  author: erjosito
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-access-private-link-from-instance.md)]
