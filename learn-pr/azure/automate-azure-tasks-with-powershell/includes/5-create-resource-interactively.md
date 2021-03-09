@@ -207,7 +207,7 @@ You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to
 
 1. Get a list of all subscription names in your account with the `Get-AzSubscription` command. 
 
-2. Change the subscription by passing the name of the one to select.
+1. Change the subscription by passing the name of the one to select.
 
 ```powershell
 Select-AzSubscription -SubscriptionId '53dde41e-916f-49f8-8108-558036f826ae'
