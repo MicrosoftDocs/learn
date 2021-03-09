@@ -2,9 +2,9 @@ Users typically modify data in a web application through a form. Since Vue.js is
 
 In this module you will learn how to:
 
-- bind model data to a form
-- add event handlers
-- create computed values
+- Bind model data to a form.
+- Add event handlers.
+- Create computed values.
 
 Prerequisites
 

@@ -52,10 +52,10 @@ Let's see our page in action!
 1. The page now displays.
 1. Fill out the form.
 
-    ![The form completed with business class selected and window seat please as the text.](media/form-completed.png)
+    ![The form completed with business class selected and window seat please as the text.](../media/form-completed.png)
 
 1. Click the button and notice the display.
 
-    ![The display updated with business class and the price, and the note of window seat please.](media/booking-display.png)
+    ![The display updated with business class and the price, and the note of window seat please.](../media/booking-display.png)
 
 You have now added a computed property to a Vue application.

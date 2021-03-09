@@ -7,8 +7,8 @@ You've been provided a starter repository for this module. This will allow you t
 1. Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-vue/
-    cd mslearn-vue/code/3-forms-events
+    git clone https://github.com/MicrosoftDocs/mslearn-vue-data-events
+    cd mslearn-vue-data-events
     code .
     ```
 
@@ -93,6 +93,6 @@ Let's see your updated page!
 1. Open your browser and navigate to `http://localhost:5500`.
 1. The page now displays:
 
-    ![Screenshot of the newly created form.](media/form-created.png)
+    ![Screenshot of the newly created form.](../media/form-created.png)
 
 You have now bound Vue data to a form.
