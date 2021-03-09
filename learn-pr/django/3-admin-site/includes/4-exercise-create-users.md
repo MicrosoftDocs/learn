@@ -42,7 +42,6 @@ With the admin user has been created it is time for our first login to the Djang
 
     You will now see the list of users, which will include the one you created.
 
-    ![Django Admin Users](../media/user-list.png)
     :::image type="content" source="../media/user-list.png" alt-text="Screenshot showing the list of Django admin users.":::
 
 ## Create a staff user
