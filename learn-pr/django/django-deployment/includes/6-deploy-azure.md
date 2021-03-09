@@ -8,7 +8,7 @@ We will start by installing the extension into Visual Studio Code.
 
 1. Inside **Visual Studio Code**, click the **Extensions** icon.
 
-    ![Extensions icon](./media/extensions-icon.png)
+    ![Extensions icon](/media/extensions-icon.png)
 
 1. In the **Search Extensions** dialog, type **App Services**.
 1. Under **Azure App Service**, click **Install**.
@@ -21,34 +21,34 @@ With our extension installed, let's perform the installation.
 
 1. Inside **Visual Studio Code**, click the **Azure** icon on the toolbar.
 
-    ![Azure icon](./media/azure-icon.png)
+    ![Azure icon](/media/azure-icon.png)
 
 1. Click **Sign in** to sign into Azure using the same account you used to create the sandbox.
 1. On the **App Service** bar, click the **Deploy** icon.
 
-    ![App service bar with deploy icon highlighted](./media/app-service.png)
+    ![App service bar with deploy icon highlighted](/media/app-service.png)
 
 1. On **Select subscription**, choose your Azure subscription.
 
-    ![Subscription list](./media/select-subscription.png)
+    ![Subscription list](/media/select-subscription.png)
 
 1. Select **Create new Web App**.
 
-    ![Create new web app](./media/create-new-webapp.png)
+    ![Create new web app](/media/create-new-webapp.png)
 
 1. Provide a unique name for your application.
 
-    ![Provide a name](./media/provide-name.png)
+    ![Provide a name](/media/provide-name.png)
 
 1. Select **Python 3.8** as the runtime stack.
 
-    ![Runtime stack selection screen](./media/runtime-selection.png)
+    ![Runtime stack selection screen](/media/runtime-selection.png)
 
     The extension will now create your web application and begin deploying your application. This will take a few moments.
 
 1. Select **Yes** prompted to **Always deploy the workspace** to the application you created during the deployment.
 
-    ![Deployment configuration option](./media/always-deploy.png)
+    ![Deployment configuration option](/media/always-deploy.png)
 
 Your site will now deploy!
 
@@ -58,15 +58,15 @@ While your site is deploying we can turn our attention to creating the database.
 
 1. On the **Databases** extension click **Create server...**.
 
-    ![Screenshot of databases extension with create server highlighted](./media/databases.png)
+    ![Screenshot of databases extension with create server highlighted](/media/databases.png)
 
 1. In the dialog, select the sandbox subscription.
 
-    ![Subscription list](./media/select-subscription.png)
+    ![Subscription list](/media/select-subscription.png)
 
 1. For the Azure Database Server, select **PostgreSQL**.
 
-    ![List of available database servers](./media/database-server.png)
+    ![List of available database servers](/media/database-server.png)
 
 1. Provide a unique name for your database server and press <kbd>Enter</kbd>.
 
@@ -82,15 +82,15 @@ While your site is deploying we can turn our attention to creating the database.
 1. Enter the password a second time to confirm it, and press <kbd>Enter</kbd>.
 1. For the firewall rule, select **Skip for now**.
 
-    ![Firewall rule dialog with skip for now highlighted](./media/firewall-rule.png)
+    ![Firewall rule dialog with skip for now highlighted](/media/firewall-rule.png)
 
 1. For the Resource Group, select **appsvc_linux_centralus**, which was created when you deployed your web application.
 
-    ![Select resource group with appsvc_linux_centralus selected](./media/resource-group.png)
+    ![Select resource group with appsvc_linux_centralus selected](/media/resource-group.png)
 
 1. For the location for new resources, select **Central US**.
 
-    ![Resource location with Central US highlighted](./media/region.png)
+    ![Resource location with Central US highlighted](/media/region.png)
 
     > [!IMPORTANT]
     > When creating multiple Azure resources which will communicate with one another you should always place them in the same region. This ensures the best performance.
@@ -104,7 +104,7 @@ While your database server is being created we can configure the App Service we 
 1. Under **App Service**, expand the sandbox subscription, and then your application
 1. To create the first Application Setting, right click on **Application Settings** and click **Add New Setting**
 
-    ![Add new setting dialog](./media/add-setting.png)
+    ![Add new setting dialog](/media/add-setting.png)
 
 1. In the first dialog, provide the name **DBUSER** and press <kbd>Enter</kbd>.
 1. In the second dialog, provide the value **shelter_admin** and press <kbd>Enter</kbd>.
@@ -129,7 +129,7 @@ With our App Service configured, and our server now created, we can create our d
 1. Under **Databases**, expand the sandbox subscription.
 1. Right click on the name of your database server and click **Create Database**.
 
-    ![Database server dialog with Create Database highlighted](./media/create-database.png)
+    ![Database server dialog with Create Database highlighted](/media/create-database.png)
 
 1. Enter the name **shelters** into the dialog and press <kbd>Enter</kbd>.
 
@@ -141,7 +141,7 @@ The last step to our deployment is to setup the database. When doing local devel
 
 1. Inside the **App Service** extension, **right click** your App Service and select **SSH into Web App**.
 
-    ![Screenshot of menu for SSH](./media/ssh.png)
+    ![Screenshot of menu for SSH](/media/ssh.png)
 
     An SSH connection will now be made to your web server on Azure. This may take a few minutes. A terminal window will appear inside Visual Studio Code, which is your SSH connection into your web server.
 
@@ -178,7 +178,7 @@ With everything deployed and configured, we can now view our website on Azure.
 
 Right click on the name of your site inside the **App Service** extension and click **Browse Website**.
 
-![Screenshot of the browse website dialog](./media/browse-website.png)
+![Screenshot of the browse website dialog](/media/browse-website.png)
 
 Your website now appears
 
