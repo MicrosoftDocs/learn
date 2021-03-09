@@ -52,7 +52,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 1. In the **Point In Time Restore** slider bar, select **28**.
 
-    ![Screenshot of the Azure portal, showing the database restore options for point-in-time restore.](../media/3-configure-backup-pitr-retention.png)
+    :::image type="content" source="../media/3-configure-backup-pitr-retention.png" alt-text="Screenshot of the Azure portal, showing the database restore options for point-in-time restore.":::
 
 1. Select **Apply**, and then select **Yes**.
 
