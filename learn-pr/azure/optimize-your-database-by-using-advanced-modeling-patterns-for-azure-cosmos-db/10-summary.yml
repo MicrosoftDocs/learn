@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.summary  
+title: Summary  
+metadata:
+  type: summary  
+  title: Summary
+  description: We learned about the importance of understanding the usage patterns for data for determining how to model and partition data.
+  ms.date: 3/9/2021  
+  author: markjbrown  
+  ms.author: mjbrown  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 02
+content: |
+  [!include[](includes/10-summary.md)]
