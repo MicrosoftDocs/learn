@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.django.generic-views.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: 'What type of request is only used when trying to retrieve information?'
+    choices:
+    - content: 'POST'
+      isCorrect: false
+      explanation: 'This answer is not correct. This type of request is used to update data within a database.'
+    - content: 'method'
+      isCorrect: false
+      explanation: 'This answer is not correct. This is an attribute on a form that defines the type of request.'
+    - content: 'GET'
+      isCorrect: true
+      explanation: 'This answer is correct. This type of request is only used when trying to retrieve information.'
+  - content: 'What class is part of Crispy forms that defines the rendering behavior of forms?'
+    choices:
+    - content: 'HttpResponseRedirect'
+      isCorrect: false
+      explanation: 'This answer is not correct. This is a subclass of HttpResponse and allows the redirect to another URL.'
+    - content: 'FormHelper'
+      isCorrect: true
+      explanation: 'This answer is correct. This class is part of Crispy forms that defines the rendering behavior of forms.'
+    - content: 'action'
+      isCorrect: false
+      explanation: 'This answer is not correct. This attribute is used to return form data to a specific file.' 
