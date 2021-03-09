@@ -19,4 +19,4 @@ Let's update your display to highlight items which are almost sold out, and show
 1. Save all files.
 1. Return to the browser. The display should now be updated; if not hit refresh. Your page should now look like the one below.
 
-![Screenshot of updated display showing buttons and text.](./media/conditional.png)
+![Screenshot of updated display showing buttons and text.](../media/conditional.png)

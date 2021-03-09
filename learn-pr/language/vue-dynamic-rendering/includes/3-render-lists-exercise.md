@@ -55,4 +55,4 @@ The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey
 
 You should now see the page you created!
 
-![Screenshot of page displaying list of classes.](./media/lists.png)
+![Screenshot of page displaying list of classes.](../media/lists.png)
