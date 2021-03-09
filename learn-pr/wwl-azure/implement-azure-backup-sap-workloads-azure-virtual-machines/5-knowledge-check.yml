@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct. Both source and target VMs need contributor (write) permissions"
     - content: "Contributor (read-only)"
       isCorrect: false
-      explanation: "Incorrect. Contributor (read-only) will not be suffcient permissions."
+      explanation: "Incorrect. Contributor (read-only) will not be sufficient permissions."
     - content: "Owner"
       isCorrect: false
       explanation: "Incorrect. Owner role should not be used."
