@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with [setting up a Unity project for Windows Mixed Reality](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity)
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Basic familiarity with C# and Unity scripting
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/render-model-azure-remote-rendering-unity.svg
 levels:
 - intermediate
 roles:

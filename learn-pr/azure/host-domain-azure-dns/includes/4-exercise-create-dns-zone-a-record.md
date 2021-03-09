@@ -1,4 +1,4 @@
-In the previous unit, we discussed setting up and configuring the widewworldimports.com domain to point to your Azure hosting on Azure DNS.
+In the previous unit, we described setting up and configuring the widewworldimports.com domain to point to your Azure hosting on Azure DNS.
 
 In this unit, you'll:
 
@@ -13,28 +13,35 @@ Before you can host the wideworldimports.com domain on your servers, you need to
 To create your DNS zone:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
-1. Select **+ Create a resource**.
+
+1. Select **Create a resource**.
+
 1. Search for and select **DNS zone**.
+
 1. Select **Create**.
 
     ![Screenshot of DNS zone, with Create highlighted](../media/4-dnszonecreate.png)
-1. Enter the following information:
+
+1. Enter the following values for each setting.
 
     ![Screenshot of Create DNS zone page](../media/4-creatednszone.png)
 
-   |Field  |Value |
+   |Setting  |Value |
    |---------|---------|
    |Subscription     |  Concierge subscription       |
    |Resource group    |   <rgn>[sandbox resource group name]</rgn>      |
    |Name   |   The name needs to be unique in the sandbox. So use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
 1. Select **Review + create**.
+
 1. Select **Create**. It will take a few minutes to create the DNS zone.
+
 1. Select **Go to resource**.
 
    By default, the NS and SOA records are automatically created. The NS record defines the Azure DNS name spaces and contains the four Azure DNS record sets. You use all four record sets when you update the registrar.
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
+
 1. Make a note of the NS record values. You need them in the next section.
 
 ## Create a DNS record
@@ -44,8 +51,10 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
 
 1. In the Azure portal, select **All Resources**.
+
 1. Select the DNS zone you created (wideworldimportsXXXX.com).
-1. Select **+ Record set**. 
+
+1. Select **+ Record set**.
 
     ![Screenshot of the DNS zone page, with + Record set highlighted](../media/4-add-a-record.png)
 
@@ -53,7 +62,7 @@ The primary record to create is the A record. This record contains the pairing b
 
     ![Screenshot of Add record set](../media/4-arecord.png)
 
-    |Field  |Value |Description  |
+    |Setting  |Value |Description  |
     |---------|---------|---------|
     |Name     |   www      | The host name that you want to resolve to an IP address. |
     |Type    |     A    |  The A record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
@@ -93,4 +102,3 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
    ![Screenshot of Cloud Shell, showing the nslookup results](../media/4-nslookup.png)
 
 You have successfully set up a DNS zone and created an A record.
-

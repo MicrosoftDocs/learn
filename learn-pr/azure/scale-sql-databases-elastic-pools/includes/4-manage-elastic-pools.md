@@ -12,10 +12,9 @@ A virtual core (vCore) represents the logical CPU offered with an option to choo
 
 The vCore-based purchasing model gives you flexibility and control over individual resource consumption and a straightforward way to translate on-premises workload requirements to the cloud. This model allows you to choose compute, memory, and storage based upon their workload needs within the **general purpose** or **business critical** service tier. 
 
-
 The chart below provides a comparison of the two pricing models:
 
-![DTU vs. vCore Pricing Model](../media/DTUvCore.png)
+![Diagram comparing the DTU versus the vCore Pricing Model.](../media/DTUvCore.png)
 
 ## Review cost estimates
 
@@ -23,8 +22,8 @@ The Azure portal displays the results of your pool settings as an estimated mont
 
 **DTU-based Pricing Model**
 
-![DTU Pricing Model](../media/DTUPricing.png)
+![Screenshot showing the DTU Pricing Model.](../media/DTUPricing.png)
 
 **vCore-based Pricing Model**
 
-![vCore Pricing Model](../media/VCorePricing.png)
+![Screenshot showing the vCore Pricing Model.](../media/VCorePricing.png)

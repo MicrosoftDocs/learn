@@ -12,11 +12,11 @@ In this unit, you'll use Search explorer to write queries, review top results, a
 
 1. Select the Azure Cognitive Search resource you created to navigate to its overview page.
 
-    ![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
+    ![Screenshot of the Azure portal, showing the search service overview page.](../media/5-exercise-screenshot-7.png)
 
 1. On the search service overview page, select **Search explorer**.
 
-    ![Screenshot of the Azure portal, showing the Search explorer](../media/7-exercise-screenshot-1.png)
+    ![Screenshot of the Azure portal, showing the Search explorer.](../media/7-exercise-screenshot-1.png)
 
 Using the Search explorer, you'll build up complex search queries that you can pass to your web team.
 

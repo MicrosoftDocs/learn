@@ -165,7 +165,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. From the top menu bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
-![Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.](../media/5-get-function-url.png)
+    ![Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.](../media/5-get-function-url.png)
 
 ### Secure HTTP triggers
 
@@ -188,7 +188,7 @@ Because we specified *Function* when we created this function, we will need to s
 1. Under the **Input** tab, in the **Body** text box, overwrite the embedded code by pasting the following cURL command.
 
     ```bash
-    curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>/api/DriveGearTemperatureService
+    curl --header "Content-Type: application/json" --header "x-functions-key: <your-function-key>" --request POST --data "{\"name\": \"Azure Function\"}" https://<your-url-here>
     ```
 
 1. Replace the placeholders in the code with the URL for your function and the function key you previously saved to Notepad or a similar app. Make note of these aspects of the cURL command:

@@ -3,7 +3,7 @@ uid: learn.wwl.windows-server-file-servers-storage-management
 metadata:
   title: Windows Server file servers and storage management
   description: Windows Server file servers and storage management
-  ms.date: 02/04/2021
+  ms.date: 03/02/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Core networking technologies.
 summary: |
   Learn to implement and manage Windows Server file servers and storage. Implement Storage Spaces, data deduplication, and Windows Server Storage Replica.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/windows-server-file-servers-and-storage-management.svg
 levels:
 - intermediate
 roles:
