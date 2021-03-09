@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-container-instances-sidecar.deploy-into-virtual-network
+title: Deploy Azure Container Instances into a virtual network 
+metadata:
+  title: Deploy Azure Container Instances into a virtual network
+  description: Deploy Azure Container Instances into a virtual network
+  ms.date: 03/05/2021
+  author: erjosito
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deploy-into-virtual-network.md)]

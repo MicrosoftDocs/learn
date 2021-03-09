@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
-  title: Azure Container Instances sidecar configuration
+  title: Secure your apps by using the sidecar configuration in Azure Container Instances
   description: Roll out Azure Container Instances into an Azure Virtual Network. You will evolve a basic container group into a more sophisticated configuration leveraging sidecar and initialization containers, as well as use private link to access other Azure PaaS resources.
   ms.date: 03/05/2021
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Container Instances sidecar configuration
+title: Secure your apps by using the sidecar configuration in Azure Container Instances
 summary: Roll out Azure Container Instances into an Azure Virtual Network. You will evolve a basic container group into a more sophisticated configuration leveraging sidecar and initialization containers, as well as use private link to access other Azure PaaS resources.
 abstract: |
   By the end of this module, you'll be able to:
@@ -29,6 +29,11 @@ products:
 - azure-container-instances
 units:
 - learn.azure.azure-container-instances-sidecar.introduction
+- learn.azure.azure-container-instances-sidecar.deploy-into-virtual-network
+- learn.azure.azure-container-instances-sidecar.understand-yaml
+- learn.azure.azure-container-instances-sidecar.deploy-sidecar
+- learn.azure.azure-container-instances-sidecar.access-private-link-enabled-services
+- learn.azure.azure-container-instances-sidecar.deploy-with-init-container
 - learn.azure.azure-container-instances-sidecar.summary
 badge:
   uid: learn.azure.azure-container-instances-sidecar.badge

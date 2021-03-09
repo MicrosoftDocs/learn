@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-container-instances-sidecar.deploy-with-init-container
+title: Deploy Azure Container Instances with an initialization container
+metadata:
+  title: Deploy Azure Container Instances with an initialization container
+  description: Deploy Azure Container Instances with an initialization container
+  ms.date: 03/05/2021
+  author: erjosito
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-deploy-with-init-container.md)]
