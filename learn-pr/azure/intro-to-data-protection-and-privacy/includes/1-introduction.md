@@ -4,7 +4,7 @@ Imagine that you’re the lead system engineer and server administrator at Conto
 
 Contoso’s IT director realizes that they have an outdated operational model. It utilizes limited automation and relies on dated technology. The Contoso IT Engineering team is exploring the capabilities of Azure and the Microsoft 365 platform. They need to decide whether Contoso can use Azure services to provide automation and virtualization, thereby modernizing its current operational model. They’re also considering using Microsoft 365 productivity services instead of locally deployed services. This includes email, intranet portals, and storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection when using cloud services.
 
-You’ve now been asked to evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should decide whether these services can help address the Contoso legal department's concerns.
+You must evaluate the data privacy, protection, and compliance capabilities of Azure and the Microsoft 365 platform. You should decide whether these services can help address the Contoso legal department's concerns.
 
 This module provides an overview of data protection and privacy laws and regulations. It also describes the Microsoft services, principles and standards that can help Microsoft customers protect their customer data.  
 
