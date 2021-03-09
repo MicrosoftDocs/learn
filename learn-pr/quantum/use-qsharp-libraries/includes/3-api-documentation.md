@@ -12,7 +12,7 @@ In this unit, you'll familiarize yourself with the Q# API documentation: where t
 
 The official documentation for the Q# libraries provided with the Quantum Development Kit is on the [Microsoft Quantum Documentation](https://docs.microsoft.com/quantum?azure-portal=true) home page. It's under the **API reference** tab in the table of contents:
 
-:::image type="content" source="../media/3-api-location.png" alt-text="Screenshot that shows the location of the Q sharp libraries A P I." border="false":::
+:::image type="content" source="../media/3-api-location.png" alt-text="Screenshot that shows the location of the Q sharp libraries A P I.":::
 
 ### Other API references
 
@@ -25,7 +25,7 @@ Alongside **Q# libraries** are a few other sets of API documentation. We won't f
 
 In the **Q# libraries** drop-down list, you can find the documentation for all of the Q# libraries (operations, functions, and user-defined types) organized by namespace:
 
-:::image type="content" source="../media/3-api-namespaces.png" alt-text="Screenshot that shows the Q sharp libraries A P I opened to namespaces." border="false":::
+:::image type="content" source="../media/3-api-namespaces.png" alt-text="Screenshot that shows the Q sharp libraries A P I opened to namespaces.":::
 
 ### Finding something in particular
 
