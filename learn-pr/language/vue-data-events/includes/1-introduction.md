@@ -14,4 +14,4 @@ Prerequisites
 - Familiarity with Vue.js and directives
 - [Git](https://git-scm.com?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer/?azure-portal=true) extension
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension

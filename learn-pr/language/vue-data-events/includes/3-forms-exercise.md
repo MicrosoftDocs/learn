@@ -4,15 +4,15 @@ Let's update a fictitious application for allowing people to book cruises into s
 
 You've been provided a starter repository for this module. This will allow you to focus on the concepts you will explore in this module. You will need [Git](https://git-scm.com/?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) installed, and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer/?azure-portal=true) extension added to Visual Studio Code.
 
-1. Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code
+Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code
 
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-vue-data-events
-    cd mslearn-vue-data-events
-    code .
-    ```
+```bash
+git clone https://github.com/MicrosoftDocs/mslearn-vue-data-events
+cd mslearn-vue-data-events
+code .
+```
 
-    The starter application already contains the core data model we will use. The `product` has information about the cruise itself, including the list of available `cabins`. The `booking` object is what we will use to store the options the user selects for their reservation. You can see the setup inside **index.js**.
+The starter application already contains the core data model we will use. The `product` has information about the cruise itself, including the list of available `cabins`. The `booking` object is what we will use to store the options the user selects for their reservation. You can see the setup inside **index.js**.
 
 ## Create the form
 
