@@ -46,11 +46,11 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database server that you created.
 
-1. On the left in the **Settings** section, select **Manage Backups**.
+1. On the left in the **Settings** section, select **Backups**.
 
-1. On the **Configure policies** tab, select the **sql-erp-db** database, and then select **Configure retention**.
+1. On the **Retention policies** tab, select the **sql-erp-db** database, and then select **Configure policies**.
 
-1. In the **Point In Time Restore Configuration** drop-down list, select **28**.
+1. In the **Point In Time Restore** slider bar, select **28**.
 
     ![Screenshot of the Azure portal, showing the database restore options for point-in-time restore.](../media/3-configure-backup-pitr-retention.png)
 
