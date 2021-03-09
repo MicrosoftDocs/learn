@@ -6,9 +6,9 @@ To make our site available to the public, we are going to deploy it to Azure. We
 
 We will start by installing the extension into Visual Studio Code.
 
-1. Inside **Visual Studio Code**, select the **Extensions** icon.
+1. In **Visual Studio Code**, select the **Extensions** icon.
 
-    ![Extensions icon](/media/extensions-icon.png)
+    ![Extensions icon](./media/extensions-icon.png)
 
 1. In the **Search Extensions** dialog, type **App Services**.
 1. Under **Azure App Service**, f **Install**.
@@ -19,14 +19,14 @@ The extension will install.
 
 With our extension installed, let's perform the installation.
 
-1. Inside **Visual Studio Code**, select the **Azure** icon on the toolbar.
+1. In **Visual Studio Code**, select the **Azure** icon on the toolbar.
 
     ![Azure icon](./media/azure-icon.png)
 
 1. Select **Sign in** to sign into Azure using the same account you used to create the sandbox.
 1. On the **App Service** bar, select the **Deploy** icon.
 
-    ![App service bar with deploy icon highlighted](media/app-service.png)
+    ![App service bar with deploy icon highlighted](./media/app-service.png)
 
 1. On **Select subscription**, choose your Azure subscription.
 
@@ -56,7 +56,7 @@ Your site will now deploy!
 
 While your site is deploying we can turn our attention to creating the database. As mentioned earlier, we will be using PostgreSQL.
 
-1. On the **Databases** extension select **Create server...**.
+1. On the **Databases** extension, select **Create server...**.
 
     ![Screenshot of databases extension with create server highlighted](/media/databases.png)
 
