@@ -52,18 +52,18 @@ With your JavaScript file created, you can now import and mount the application.
 1. Return to **index.html**
 1. Below the comment which reads `TODO: Import Vue app` add the following:
 
-    ```html
-    <script src="./index.js"></script>
-    <script>
-        app.mount('#app');
-    </script>
-    ```
+```html
+<script src="./index.js"></script>
+<script>
+    app.mount('#app');
+</script>
+```
 
 ## Use the Vue application
 
 With your Vue application created and imported, you can now create the display for the information.
 
-1. Inside **index.html**, below the comment which reads `TODO: Add information display` add the following HTML:
+Inside **index.html**, below the comment which reads `TODO: Add information display` add the following HTML:
 
     ```html
     <div id="app">
