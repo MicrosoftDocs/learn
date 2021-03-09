@@ -4,8 +4,8 @@ metadata:
   title: Prepare for successful cloud adoption with a well-defined strategy
   description: Success in cloud adoption is predicated by a clear strategy that helps the team understand executive direction and regularly measure progress. This module will help capture the cloud adoption strategy needed to drive your success.
   ms.date: 02/22/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: BrianBlanchard
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Prepare for successful cloud adoption with a well-defined strategy
@@ -45,6 +45,7 @@ units:
 - learn.cloud-adoption-framework-strategy.4-define-objective-key-result
 - learn.cloud-adoption-framework-strategy.5-evaluate-financial-considerations
 - learn.cloud-adoption-framework-strategy.6-understand-technical-considerations
-- learn.cloud-adoption-framework-strategy.7-summary
+- learn.cloud-adoption-framework-strategy.7-knowledge-check
+- learn.cloud-adoption-framework-strategy.8-summary
 badge:
   uid: learn.cloud-adoption-framework-strategy.badge

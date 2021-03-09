@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge of the Strategy methodology.
+  ms.date: 09/22/2020
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What are the goals of a well-defined strategy?
+    choices:
+    - content: Clarify corporate strategy, define common goals, establish metrics, evaluate financial considerations, and evaluate technical considerations.
+      isCorrect: true
+      explanation: TBD.
+    - content: Select the cloud vendor, establish DevOps model, kickoff technical deployment.
+      isCorrect: false
+      explanation: TBD.
+    - content: Assess current technical debt, identify workloads to move to the cloud, pilot deployment and release to production.
+      isCorrect: false
+      explanation: TBD.
+    - content: Define cost management, identity management, configuration management, and governance for the cloud.
+      isCorrect: false
+      explanation: TBD.
+  - content: What are good examples of motivations to move to the cloud?
+    choices:
+    - content: Eliminate the IT Department, save on costs.
+      isCorrect: false
+      explanation: TBD.
+    - content: Win agility by removing dependencies to IT, deploy new technical capabilities. 
+      isCorrect: false
+      explanation: TBD.
+    - content: Save on costs, deploy new technical capabilities, drive workload optimization, achieve scale and agility, and improve customer experiences.
+      isCorrect: true
+      explanation: TBD.
+    - content: Faster time to market by removing Security and Governance dependencies, save on costs.
+      isCorrect: false
+      explanation: TBD.
+  - content: What are some of the Benefits of Cloud Adoption?
+    choices:
+    - content: Eliminate the IT Department, remove IT dependencies, win agility. 
+      isCorrect: false
+      explanation: TBD
+    - content: Eliminate the Security Department, faster time to market.
+      isCorrect: false
+      explanation: TBD.
+    - content: Remove IT processes needed on premises, remove security blockers from on premises.
+      isCorrect: false
+      explanation: TBD.
+    - content: Reduce vendor complexity, improve cost of operations, advance technological and operations capabilities.
+      isCorrect: true
+      explanation: TBD.
+  - content: Which personas should be involved in defining the strategy? 
+    choices:
+    - content: IT operations, IT Development, and Security 
+      isCorrect: false
+      explanation: TBD.
+    - content: Business owners and IT.
+      isCorrect: false
+      explanation: TBD.
+    - content: Finance, marketing, sales, human resources, and executive leadership
+      isCorrect: true
+      explanation: TBD.
+    - content: IT and cloud vendors
+      isCorrect: false
+      explanation: TBD.
