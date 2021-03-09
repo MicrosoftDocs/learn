@@ -98,7 +98,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Wait until all packages have finished installing.
 
-1. Select **Overview**, then select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing.
+1. In the left menu pane, scroll up and select **Overview**, then select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing.
 
 ## Create the client function for submitting a design proposal
 
