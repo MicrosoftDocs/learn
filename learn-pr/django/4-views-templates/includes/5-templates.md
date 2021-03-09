@@ -49,7 +49,7 @@ Templates are used to generate the HTML you wish your user to see while using yo
 
 ### Creating a parent page
 
-Creating a parent page is the same as creating any Django HTML template. You provide the outer structure, and then include `{% block %} placeholders. These placeholders allow the children to provide the content to be placed in those placeholders. Let's create a parent page to import a stylesheet, provide a default title, and a header we wish to have displayed on all pages.
+Creating a parent page is the same as creating any Django HTML template. You provide the outer structure, and then include `{% block %}` placeholders. These placeholders allow the children to provide the content to be placed in those placeholders. Let's create a parent page to import a stylesheet, provide a default title, and a header we wish to have displayed on all pages.
 
 ```html
 <html>
