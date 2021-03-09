@@ -17,7 +17,7 @@ As highlighted before, the admin site does not provide access to your data by de
 1. Return to your browser and refresh the page
 1. Notice you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**
 
-    \<Missing media: Module3_DjangoAdminNewModels.PNG>
+    :::image type="content" source="../media/staff-user-display.png" alt-text="Django Admin New Models." lightbox="../media/staff-user-display.png":::
 ## Accessing our data
 
 With our models registered, we can now manage our data! If there was any data already in the database we would be able to modify it as needed.
