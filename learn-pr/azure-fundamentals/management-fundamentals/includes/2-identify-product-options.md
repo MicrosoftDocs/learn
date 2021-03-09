@@ -8,7 +8,8 @@ There are two approaches to infrastructure as code: *imperative* code and *decla
 
 ## Your product options
 
-Microsoft offers a variety of tools and services to manage your cloud environment, each aimed at different scenarios and users.
+Microsoft offers a variety of tools and services to manage your cloud environment, each aimed at different scenarios and users. The following video describes some of these options.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MylB]
 
 ### The Azure portal
 
