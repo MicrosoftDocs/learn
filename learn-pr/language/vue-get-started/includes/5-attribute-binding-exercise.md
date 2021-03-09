@@ -62,7 +62,7 @@ Let's update the HTML to include the image. You will set the attributes and styl
 1. Save all files.
 1. Return to the browser. You should now see the image displayed on the page. If it doesn't, refresh the page. It should now resemble the following:
 
-    ![Screenshot of the updated page with the image of the cruise](media/attribute-binding.png)
+    ![Screenshot of the updated page with the image of the cruise](../media/attribute-binding.png)
 
 1. Right click on the newly displayed image and click **Inspect** or **Inspect source**. Notice the developer tools in the browser and the HTML. It should now resemble the following. Notice how both `src` and `alt` are set to the values from the Vue data.
 

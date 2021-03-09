@@ -89,4 +89,4 @@ The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey
 
 You should now see the page you created!
 
-![Screenshot of the newly created page displaying the cruise information.](./media/getting-started.png)
+![Screenshot of the newly created page displaying the cruise information.](../media/getting-started.png)

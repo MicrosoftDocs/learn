@@ -52,7 +52,8 @@ you can now type:
 </div>
 ```
 
-> [!TIP] It's considered a good practice to use `:attribute` over `v-bind:attribute`.
+> [!TIP]
+> It's considered a good practice to use `:attribute` over `v-bind:attribute`.
 
 ## Class and style
 
