@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: {{learnRepo}}.model-and-partition-your-data-in-azure-cosmos-db  
+metadata:
+  type: standard  
+  title: # user input: module title for browser tab and search results
+  description: # user input: a description for site search and SEO
+  ms.date: 3/9/2021  
+  author: {{githubUsername}}  
+  ms.author: {{msUser}}  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+title: Model and partition your data in Azure Cosmos DB  
+summary: # user input: describe the module contents
+abstract: | # user input: list the learning objectives
+  In this module, you will: 
+    - # objective 1
+    - # objective 2
+    - # objective 3 (if needed)
+prerequisites: | # user input: list the prerequisites
+  - # prerequisite 1
+  - # prerequisite 2
+  - # prerequisite 3
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#level)
+  - # level
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/en-us/help/contribute/metadata-taxonomies?branch=master#role)
+  - # role 1
+  - # role 2
+products:  
+  {{products}}
+units:  
+- undefined.introduction- undefined.learning-content- undefined.exercise- undefined.knowledge-check- undefined.summary
+badge:  
+  uid: {{learnRepo}}.model-and-partition-your-data-in-azure-cosmos-db.badge

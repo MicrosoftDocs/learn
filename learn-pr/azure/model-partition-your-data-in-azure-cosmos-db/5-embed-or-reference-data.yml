@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.embed-or-reference-data
+title: When to embed or reference data 
+metadata: 
+  title: When to embed or reference data
+  description: There are rules for when you should embed data in a document versus reference it in a different row.
+  ms.date: 3/9/2021 
+  author: markjbrown 
+  ms.author: mjbrown 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-embed-or-reference-data.md)]

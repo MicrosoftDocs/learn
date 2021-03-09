@@ -1,0 +1,85 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  type: knowledge_check
+  title: Knowledge check
+  description: test your comprehension
+  ms.date: 3/9/2021 
+  author: markjbrown 
+  ms.author: mjbrown 
+  ms.topic: interactive-tutorial
+  ms.prod: azure-cosmos-db
+durationInMinutes: 05
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
+###  - Questions are complete sentences ending with a question mark 
+###  - No true/false questions 
+###  - 3 answers per question 
+###  - All answers about the same length 
+###  - Numeric answers listed in sorted order 
+###  - No "All of the above" and/or "None of the above" as answer choices 
+###  - No "Not" or "Except" in questions 
+###  - No second person ("you") in the questions or answers 
+###  - Provide a meaningful explanation for both correct and incorrect answers 
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "When modeling small lookup tables in a NoSQL database, if the amount of data is small, designing for in-partition queries will:"
+    choices:
+    - content: "Improve performance"
+      isCorrect: true
+      explanation: ""
+    - content: "Reduce performance"
+      isCorrect: false
+      explanation: ""
+    - content: "Have no impact"
+      isCorrect: false
+      explanation: ""
+  - content: "The technique of using a discriminator property when modeling small tables involves adding a new property and adding a value that:"
+    choices:
+    - content: "is the same for each new row"
+      isCorrect: true
+      explanation: ""
+    - content: "is a random value for each new row"
+      isCorrect: false
+      explanation: ""
+    - content: "is an incremental value for each new row"
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""

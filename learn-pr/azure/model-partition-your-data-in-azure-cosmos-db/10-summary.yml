@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.summary  
+title: Summary  
+metadata:
+  type: summary  
+  title: Summary
+  description: In this module we've started the process of taking a relational database and modeling it for a NoSQL database.
+  ms.date: 3/9/2021  
+  author: markjbrown  
+  ms.author: mjbrown  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 05
+content: |
+  [!include[](includes/10-summary.md)]

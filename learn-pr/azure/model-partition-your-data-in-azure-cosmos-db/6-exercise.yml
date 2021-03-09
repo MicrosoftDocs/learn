@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.exercise  
+title: Measure performance for the customer entities
+metadata:
+  type: exercise  
+  title: Measure performance for the customer entities
+  description: In this exercise we will measure the difference for our new customer entities when we model data as a single document versus modeling them separately.
+  ms.date: 3/9/2021  
+  author: markjbrown  
+  ms.author: mjbrown  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise.md)]

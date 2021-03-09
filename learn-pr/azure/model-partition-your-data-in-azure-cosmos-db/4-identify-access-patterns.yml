@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.identify-access-patterns
+title: Identify access patterns for your app
+metadata: 
+  title: Identify access patterns for your app
+  description: We need to understand the relationships between the data as well as how data will be accessed. The access patterns are important because it, along with the relationships, will determine how and where data is stored in Azure Cosmos DB.
+  ms.date: 3/9/2021 
+  author: markjbrown 
+  ms.author: mjbrown 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-identify-access-patterns.md)]
