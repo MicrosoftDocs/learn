@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.django.generic-views
+metadata:
+  title: Use generic views in Django
+  description: Learn how to use generic views in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use generic views in Django
+summary: Because Django was designed for data-driven applications, it includes numerous built-in utilities to streamline the amount of code needed. One key area where Django makes a developer's life easier is by providing generic views, which are pre-built with all the necessary code to perform core operations like displaying and editing data. We will see how we can use generic views to greatly reduce the amount of code required.
+abstract:  | 
+  In this module, you'll learn how to:
+   - use generic views
+   - create Django forms
+   - use the django-crispy-forms library
+prerequisites:  | 
+ - Software:
+    - [Visual Studio Code](https://code.visualstudio.com)
+    - [Git](https://git-scm.com/)
+ - Coding skills:
+   - Understanding of HTML and CSS
+   - Basic understanding of Django
+   - Basic understanding of relational databases
+   - Intermediate level knowledge of Python, including:
+     - [Package Management](https://docs.python.org/3/installing/index.html)
+     - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
+     - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure
+- vs-code
+- azure-app-service
+units:
+- learn.django.generic-views.introduction
+- learn.django.generic-views.exercise-setup
+- learn.django.generic-views.generic-views-data-display
+- learn.django.generic-views.exercise-generic-views-display-data
+- learn.django.generic-views.generic-forms-edit-data
+- learn.django.generic-views.exercise-generic-forms-create
+- learn.django.generic-views.exercise-crispy-forms
+- learn.django.generic-views.knowledge-check
+- learn.django.generic-views.summary
+badge:
+  uid: learn.django.generic-views.badge
