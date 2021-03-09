@@ -88,15 +88,15 @@ There are two main mechanisms for viewing Azure blob storage metrics:
 
 Viewing blob storage metrics in the Azure portal is the simplest way to view Azure blob storage metrics. The portal provides two implementations - classic metrics and the current implementation.
 
-![Monitoring options in a Storage Account](../media/2-monitoring-classic-metrics.PNG)
+![Screenshot showing the monitoring options for a Storage Account.](../media/2-Monitoring-classic-metrics.PNG)
 
 Clicking Metrics creates a New chart space, in which you can select the metrics that you want to display.
 
-![Create a Current Monitoring chart](../media/2-current-metrics-create-chart.PNG)
+![Screenshot showing the Current Monitoring chart.](../media/2-current-metrics-create-chart.PNG)
 
 However, clicking Metrics (Classic) shows four charts for total requests, total egress, Average E2E Latency, and success percentage.
 
-![Create a Classic Monitoring chart](../media/2-classic-metrics-create-chart.PNG)
+![Screenshot showing the Classic Monitoring chart.](../media/2-classic-metrics-create-chart.PNG)
 
 ### Filtering
 
@@ -133,6 +133,6 @@ The option you select will depend on the metric type that you are displaying. Th
 
 Within each of the four chart types, you can then customize the way in which those charts display information.
 
-![Chart Customization](../media/2-chart-customization.png)
+![Screenshot showing the chart customization options.](../media/2-chart-customization.PNG)
 
 Here you have options to edit the chart title and change the Y-axis range between set minimum and maximum values.

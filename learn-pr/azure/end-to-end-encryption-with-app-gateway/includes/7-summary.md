@@ -2,9 +2,6 @@ You've now used Azure Application Gateway to encrypt and help secure your networ
 
 You also enabled SSL encryption for traffic between Application Gateway and your web services. This encryption ensures that the web services are valid to communicate with. You can now use the skills you've learned in your own environment to help secure HTTP traffic.
 
-<!-- > Most modules should use the following include -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
 To learn more about Azure Application Gateway, see the following articles:

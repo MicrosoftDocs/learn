@@ -28,7 +28,7 @@ Options to auto apply a label to a file and email:
 
 ## Restrictions with a sensitivity label template using auto-apply
 
-There are sensitivity label templates. These templates have their own restrictions and are typically protection templates like the default ones (encrypt only and do nor forward), which can be selected by the user. In this case, there are restrictions coming with the email and one with the file that's part of the email. The email is only the container of the files that may have their own protection configuration.
+There are sensitivity label templates. These templates have their own restrictions and are typically protection templates like the default ones (encrypt only and do not forward), which can be selected by the user. In this case, there are restrictions coming with the email and one with the file that's part of the email. The email is only the container of the files that may have their own protection configuration.
 
 ## Applying protections to files
 

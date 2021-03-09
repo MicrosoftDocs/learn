@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-migrate.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 02/22/2021
+  author: weeyin83
+  ms.author: salean
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Validating traffic patterns and routing for end-user traffic, is what kind of technical validation?
+    choices:
+    - content: End-user route testing
+      isCorrect: true
+      explanation: Having the correct end-user route testing in place ensures that the network is performing as expected. 
+    - content:  Network isolation testing
+      isCorrect: false
+      explanation:  Network isolation testing should be in place to test that proper isolation and no unexpected network vulnerabilities are within the network. 
+    - content: Dependency testing
+      isCorrect: false
+      explanation: Dependency testing should be in place to ensure that workload dependencies have been migrated and accessible from the migrated assets. 
+    - content: Business and disaster recovery (BCDR) testing
+      isCorrect: false
+      explanation: The BCDR testing should be in place to validate that any backup and recovery Service Level Agreements (SLAs) are established.
+  - content: What should the Assess workloads phase of your migration project focus on?
+    choices:
+    - content: Form a team of Azure experts. 
+      isCorrect: false
+      explanation: A team of people who understand the Azure platform should be formed as part of the migration project but this is not necessarily the objective of the "assess workloads" part of the project. 
+    - content: Gather information regarding cloud compatibility and dependencies between servers and assets. 
+      isCorrect: true
+      explanation: The "Assess workloads" phase of the migration project should be focused on information gathering that can help your organization understand the migration path for each workload or asset. 
+    - content: Test and release production traffic to the migrated workloads.
+      isCorrect: false
+      explanation: The release of production to workloads in the cloud should only after proper planning and migration. 
+    - content: Plan out the migration sprint phases. 
+      isCorrect: false
+      explanation: Planning out the appropriate sprint phases for the project is an important step but would take place after an assessment of the workloads has taken place. 
+  - content: An organization's migration project has stalled due to the team not setting the correct expectations with their executive level team.  What kind of blocker is this an example of?
+    choices:
+    - content: Environmental blocker.
+      isCorrect: false
+      explanation:  An environment blocker would be an improperly configured environment. 
+    - content:  Operations blocker.
+      isCorrect: false
+      explanation:  Not fully appreciating some of the differences between managing workloads in the cloud and managing workloads on-premises can lead to blockers within the migration project. 
+    - content: Technical blocker. 
+      isCorrect: false
+      explanation: An example of a technical blocker would be a workload that is not suitable for migration to the cloud. 
+    - content: Strategy blocker.
+      isCorrect: true
+      explanation: Setting the correct expectations across your organization in terms of timeframe, budget requirements, etc. when embarking on a migration project can help avoid confusion and delays. 

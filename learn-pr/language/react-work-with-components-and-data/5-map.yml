@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.5-map
+metadata:
+  title: Use map to display data inside an array
+  description: With JavaScript's map function, you can convert an array to another array. Learn how to use map to display a list of information in a component.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Use map to display data inside an array
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-map.md)]
