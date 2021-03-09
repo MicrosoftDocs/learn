@@ -5114,6 +5114,11 @@
       "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/query-relational-data/6-perform-query.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/query-relational-data/6-exercise-perform-query",
+      "redirect_document_id": false
     }
   ]
 }
