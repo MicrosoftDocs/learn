@@ -22,7 +22,7 @@ To create your DNS zone:
 
     ![Screenshot of DNS zone, with Create highlighted](../media/4-dnszonecreate.png)
 
-1. On the **Basics** yab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     ![Screenshot of Create DNS zone page](../media/4-creatednszone.png)
 
