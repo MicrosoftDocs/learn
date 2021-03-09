@@ -2,7 +2,6 @@
 uid: learn.django.views-templates.templates 
 title: Get started with Django templates 
 metadata:
-  type: exercise  
   title: Get started with Django templates
   description: Find out how to use templates to dynamically create HTML.
   ms.date: 3/2/2021  

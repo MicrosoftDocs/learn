@@ -2,7 +2,6 @@
 uid: learn.django.views-templates.introduction  
 title: Introduction  
 metadata:
-  type: introduction  
   title: Introduction to templates and views
   description: Templates allow you to dynamically create HTML. Use views to send the appropriate template to the user. 
   ms.date: 3/2/2021  

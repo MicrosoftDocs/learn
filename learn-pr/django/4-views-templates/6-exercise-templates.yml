@@ -2,7 +2,6 @@
 uid: learn.django.views-templates.exercise-templates
 title: Exercise - Create templates
 metadata:
-  type: exercise  
   title: Exercise - Create templates
   description: Create templates for the views you created earlier.
   ms.date: 3/2/2021  
