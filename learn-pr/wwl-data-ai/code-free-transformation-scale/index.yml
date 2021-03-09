@@ -3,7 +3,7 @@ uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory
 metadata:
   title: Code-free transformation at scale with Azure Data Factory
   description: "Perform code-free transformation at scale with Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 11/30/2020
+  ms.date: 03/09/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
