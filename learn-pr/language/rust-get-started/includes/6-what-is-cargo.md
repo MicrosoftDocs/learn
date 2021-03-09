@@ -1,13 +1,14 @@
-While the `rustc` compiler is fine for simple programs, as your project grows, you’ll want to manage all the options and make it easy to share your code.
+While the `rustc` compiler is fine for simple programs, almost no projects use the Rust compiler directly. Instead they use Rust's build tool and dependency manager, Cargo.
 
-The good news is that when you install `rustup`, you'll also get the latest stable version of the Rust build tool and package manager. This is called Cargo.
+The good news is that when you install `rustup`, you'll also get the latest stable version of Cargo.
 
 Cargo does lots of things for you, including:
 
 - Creating new project templates with `cargo new`.
 - Building your project with `cargo build`.
-- Running your project with `cargo run`.
+- Building and running your project with `cargo run`.
 - Testing your project with `cargo test`.
+- Checking your project type checks with `cargo check`.
 - Building documentation for your project with `cargo doc`.
 - Publishing a library to crates.io with `cargo publish`.
 
