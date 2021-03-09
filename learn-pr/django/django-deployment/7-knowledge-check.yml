@@ -16,10 +16,10 @@ quiz:
   questions: 
     - content: 'What symbol was added to "ALLOWED_HOSTS = []" in order for Azure to host our Django project?'
       choices:
-      - content: '-'
+      - content: "-"
         isCorrect: false
         explanation: This answer is not correct.
-      - content: '*'
+      - content: "*"
         isCorrect: true
         explanation: This answer is correct. By adding this symbol, Azure was allowed access to host the Django project.
       - content: '?'
@@ -36,11 +36,3 @@ quiz:
       - content: 'Web App'
         isCorrect: false
         explanation: 'This answer is not correct. This selection was used in the beginning of the process to create the Django project in Azure services.'
-    - content: Question 3?
-      choices:
-      - content: Answer 1
-        isCorrect: false
-        explanation: explanation
-      - content: Answer 2
-        isCorrect: true
-        explanation: explanation

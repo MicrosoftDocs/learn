@@ -6,12 +6,12 @@ To make our site available to the public, we are going to deploy it to Azure. We
 
 We will start by installing the extension into Visual Studio Code.
 
-1. Inside **Visual Studio Code**, click the **Extensions** icon.
+1. Inside **Visual Studio Code**, select the **Extensions** icon.
 
     ![Extensions icon](/media/extensions-icon.png)
 
 1. In the **Search Extensions** dialog, type **App Services**.
-1. Under **Azure App Service**, click **Install**.
+1. Under **Azure App Service**, f **Install**.
 
 The extension will install.
 
@@ -19,14 +19,14 @@ The extension will install.
 
 With our extension installed, let's perform the installation.
 
-1. Inside **Visual Studio Code**, click the **Azure** icon on the toolbar.
+1. Inside **Visual Studio Code**, select the **Azure** icon on the toolbar.
 
-    ![Azure icon](/media/azure-icon.png)
+    ![Azure icon](./media/azure-icon.png)
 
-1. Click **Sign in** to sign into Azure using the same account you used to create the sandbox.
-1. On the **App Service** bar, click the **Deploy** icon.
+1. Select **Sign in** to sign into Azure using the same account you used to create the sandbox.
+1. On the **App Service** bar, select the **Deploy** icon.
 
-    ![App service bar with deploy icon highlighted](/media/app-service.png)
+    ![App service bar with deploy icon highlighted](media/app-service.png)
 
 1. On **Select subscription**, choose your Azure subscription.
 
@@ -56,7 +56,7 @@ Your site will now deploy!
 
 While your site is deploying we can turn our attention to creating the database. As mentioned earlier, we will be using PostgreSQL.
 
-1. On the **Databases** extension click **Create server...**.
+1. On the **Databases** extension select **Create server...**.
 
     ![Screenshot of databases extension with create server highlighted](/media/databases.png)
 
@@ -102,7 +102,7 @@ Your server will now be created! This will take a few minutes.
 While your database server is being created we can configure the App Service we setup earlier. The application settings are used by App Services to configure environmental variables, and are a convenient way to store information we don't want to put into our code, such as database connection strings.
 
 1. Under **App Service**, expand the sandbox subscription, and then your application
-1. To create the first Application Setting, right click on **Application Settings** and click **Add New Setting**
+1. To create the first Application Setting, right-click **Application Settings** and select **Add New Setting**
 
     ![Add new setting dialog](/media/add-setting.png)
 
@@ -127,7 +127,7 @@ All the necessary environmental variables are now created on your App Service.
 With our App Service configured, and our server now created, we can create our database.
 
 1. Under **Databases**, expand the sandbox subscription.
-1. Right click on the name of your database server and click **Create Database**.
+1. Right-click the name of your database server and select **Create Database**.
 
     ![Database server dialog with Create Database highlighted](/media/create-database.png)
 
@@ -139,7 +139,7 @@ Your database will be created!
 
 The last step to our deployment is to setup the database. When doing local development, you run **python manage.py migrate** and **python manage.py createsuperuser** to create the database schema and superuser. We do the exact same thing on Azure! We need to connect to our web server in Azure using Secure Shell (SSH), which can do by using Visual Studio Code.
 
-1. Inside the **App Service** extension, **right click** your App Service and select **SSH into Web App**.
+1. Inside the **App Service** extension, right-click your App Service and select **SSH into Web App**.
 
     ![Screenshot of menu for SSH](/media/ssh.png)
 
@@ -176,7 +176,7 @@ Your database is configured in Azure, and you have a superuser for your site.
 
 With everything deployed and configured, we can now view our website on Azure.
 
-Right click on the name of your site inside the **App Service** extension and click **Browse Website**.
+Right-click on the name of your site inside the **App Service** extension and select **Browse Website**.
 
 ![Screenshot of the browse website dialog](/media/browse-website.png)
 
