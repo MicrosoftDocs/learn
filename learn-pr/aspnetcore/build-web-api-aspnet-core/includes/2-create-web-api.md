@@ -19,15 +19,15 @@ The preceding command installs a specific version of the .NET Core SDK in the Cl
 1. Run the following .NET Core CLI command in the command shell:
 
     ```dotnetcli
-    dotnet new webapi -o aspnet-learn/src/ContosoPets.Api
+    dotnet new webapi -o ContosoPets.Api
     ```
 
-    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. The *:::no-loc text="aspnet-learn/src/ContosoPets.Api":::* directory structure is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
+    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPets.Api":::* directory is created, which contains an ASP.NET Core project running on .NET Core. The project name matches the *:::no-loc text="ContosoPets.Api":::* directory name.
 
 1. Run the following command in the command shell:
 
     ```bash
-    cd ./aspnet-learn/src/ContosoPets.Api
+    cd ./ContosoPets.Api
     ```
 
     The current directory changes to the newly created *:::no-loc text="ContosoPets.Api":::* directory.
@@ -64,7 +64,7 @@ The preceding command installs a specific version of the .NET Core SDK in the Cl
     * Hosts the web API with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
 
-    .NET emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
+    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
 
     The web API is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
 

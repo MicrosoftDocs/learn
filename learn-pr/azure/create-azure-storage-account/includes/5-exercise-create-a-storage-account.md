@@ -14,11 +14,12 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** panel appears.
+1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** pane appears.
 
-1. Select **Create**. The **Create storage account** panel appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
+
+1. Select **Create**. The **Create storage account** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | ---- | ---- |
@@ -27,7 +28,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | **Instance details**| |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
-    | Location | Select a location near to you in the dropdown from the following list. |
+    | Location | Select a location near to you in the dropdown. |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
@@ -36,16 +37,16 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Next : Networking**. Enter the following values for each setting.
 
-    | Property | Value |
+    | Setting | Value |
     |---|---|
     | **Network connectivity**| |
     | Connectivity method | *Public endpoint (all networks)*.  We want to allow public Internet access. Our content is public facing, and we need to allow access from public clients. |
     | **Network routing**| |
     | Routing preference | *Microsoft network routing (default)*. We want to make use of the Microsoft global network that is optimized for low-latency path selection. |
 
-1. Select **Next : Data protection**. Enter the following values for each setting.
+1. Select **Next : Data protection**. Enter the following value for the setting.
 
-    | Property | Value |
+    | Setting | Value |
     |---|---|
     | **Recovery**| |
     | Turn on soft delete for blobs | *Disabled*. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten. |
@@ -53,7 +54,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Next : Advanced**. Enter the following values for each setting.
 
-    | Property | Value |
+    | Setting | Value |
     |---|---|
     | **Security**| |
     | Secure transfer required | *Enabled*. This setting controls whether **HTTP** can be used for the REST APIs used to access data in the storage account. Setting this option to *enable* forces all clients to use SSL (**HTTPS**). Most of the time, you'll want to set this to *enable* as using HTTPS over the network is considered a best practice. |
@@ -73,7 +74,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
 
-1. After validation successfully passes, and you've reviewed the settings, select **Create** to provision the storage account.
+1. After validation passes, select **Create** to provision the storage account.
 
    It may take two minutes to deploy the account.
 

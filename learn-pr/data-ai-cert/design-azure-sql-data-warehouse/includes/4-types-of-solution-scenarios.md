@@ -2,10 +2,10 @@ Azure Synapse Analytics is an integrated analytics platform, which combines data
 
 Gartner defines a range of analytical types that Azure Synapse Analytics can support including:
 
-    - Descriptive analytics
-    - Diagnostic analytics
-    - Predictive analytics
-    - Prescriptive analytics
+- Descriptive analytics
+- Diagnostic analytics
+- Predictive analytics
+- Prescriptive analytics
 
 ## Descriptive analytics
 

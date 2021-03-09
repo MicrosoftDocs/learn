@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-manage.3-operational-compliance
+metadata:
+  title: Deploy an operations baseline
+  description: Deploy an operations baseline.
+  ms.date: 02/22/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy an operations baseline
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-operational-compliance.md)]

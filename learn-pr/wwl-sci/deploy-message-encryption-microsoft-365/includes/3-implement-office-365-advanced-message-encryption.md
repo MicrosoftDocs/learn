@@ -25,9 +25,9 @@ With Office 365 Advanced Message Encryption, anytime you apply custom branding, 
 
 Run the **New-OMEConfiguration** cmdlet, to create a new branding template with an expiration date of seven days:
 
-    ```powershell
+```powershell
     New-OMEConfiguration -Identity "Expire in seven days" -ExternalMailExpiryInDays 7
 
-    ```
+```
 
 ExternalMailExpiryInDays identifies the number of days that recipients can keep mail before it expires. You can use any value between 1–730 days.

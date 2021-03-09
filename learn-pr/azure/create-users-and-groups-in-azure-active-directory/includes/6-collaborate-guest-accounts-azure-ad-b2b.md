@@ -29,7 +29,7 @@ Giving access to external users is much easier than in a federation. You don't n
 
 A federation is more complex. A federation is where you have a trust established with another organization, or a collection of domains, for shared access to a set of resources. You might be using an on-premises identity provider and authorization service like Active Directory Federation Services (AD FS) that has an established trust with Azure AD. To get access to resources, all users have to provide their credentials and successfully authenticate against the AD FS server. If you have someone trying to authenticate outside the internal network, you need to set up a web application proxy. The architecture might look something like the following diagram:
 
-![Diagram that shows federation example](../media/6-federation-example.png)
+![Diagram that shows a federation example between an on-premises Active Directory and Azure Active Directory.](../media/6-federation-example.png)
 
 An on-premises federation with Azure AD might be good if your organization wants all authentication to Azure resources to happen in the local environment. Administrators can implement more rigorous levels of access control. But this means that, if your local environment is down, users can't access the Azure resources and services they need.
 
