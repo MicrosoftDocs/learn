@@ -30,19 +30,19 @@ With the admin user has been created it is time for our first login to the Djang
 
 1. Navigate to http://localhost:8000/admin 
 
-    ![Django Admin Login](./media/admin-login.png)
+    ![Django Admin Login](../media/admin-login.png)
 
 1. Enter the username and password you created earlier
 
     Once you have successfully logged into the admin site you should see a screen that looks like below.
 
-    ![Django Admin Interface](./media/admin.png)
+    ![Django Admin Interface](../media/admin.png)
 
 1. Click **users**
 
     You will now see the list of users, which will include the one you created.
 
-    ![Django Admin Users](./media/user-list.png)
+    ![Django Admin Users](../media/user-list.png)
 
 ## Create a staff user
 
