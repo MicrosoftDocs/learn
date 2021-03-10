@@ -6,7 +6,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 ## Create a storage account and VM
 
-1. Use Azure Cloud Shell on the right to create a storage account to store boot diagnostics.
+1. On the right, use Azure Cloud Shell to create a storage account to store boot diagnostics.
 
     ```azurecli
     STORAGE=metricsstorage$RANDOM
@@ -36,30 +36,36 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 ## View basic metrics for the VM
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox. 
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+
 1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
+
 1. Select the **monitored-linux-vm** virtual machine that you created.
-1. Scroll down, and under **Monitoring**, select **Metrics**.
+
+1. In the middle menu pane, scroll down, and under **Monitoring**, select **Metrics**.
+
 1. Select the following values:
 
     ![Screenshot of the metrics page for a VM](../media/3-view-host-level-metrics.png)
 
    |Field     |Value |
    |---------|---------|
-   |METRIC NAMESPACE    |   Virtual Machine Host     |
-   |METRIC     |   Percentage CPU  |
-   |AGGREGATION    |    Max     |  
+   |Metric Namespace  |   Virtual Machine Host     |
+   |Metric    |   Percentage CPU  |
+   |Aggregation   |    Max     |  
 
 1. Select **Add metric**.
+
 1. Select the following values:
 
    |Field     |Value |
    |---------|---------|
-   |METRIC NAMESPACE    |   Virtual Machine Host     |
-   |METRIC     |   Inbound Flows  |
-   |AGGREGATION    |    Avg     |  
+   |Metric Namespace    |   Virtual Machine Host     |
+   |Metric     |   Inbound Flows  |
+   |Aggregation    |    Avg     |  
 
 1. Select the **Finish editing** check mark.
+
 1. You should now have a graph that looks something like the following:
 
     ![Screenshot that shows a graph of CPU usage and inbound traffic](../media/3-metric-graph.png)
@@ -68,8 +74,8 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 ## View boot diagnostics
 
-1. Below the **Monitoring** section on the left, select **Support + troubleshooting**.
-1. Select **Boot diagnostics**.
+1. On the left menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
+
 1. Review the screenshot to verify that your virtual machine started correctly.
 
     ![Screenshot that shows the boot diagnostic image captured](../media/3-boot-diagnostics.png)

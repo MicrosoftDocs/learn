@@ -4,19 +4,19 @@ zone_pivot_groups: platform-apps
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Logo of the tech u w p highlighted to indicate u w p pivot is selected.](../media/tech-uwp.png)
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Logo of the tech w p f  highlighted to indicate w p f pivot is selected.](../media/tech-wpf.png)
 
 ::: zone-end
 
 ::: zone pivot="windowsforms"
 
-![Tech logo](../media/tech-windowsforms.png)
+![Logo of the tech windows forms highlighted to indicate windows forms pivot is selected.](../media/tech-windowsforms.png)
 
 ::: zone-end
 
@@ -24,19 +24,19 @@ In this unit, we'll use the Azure Cognitive Services [Image Search](https://docs
 
 ::: zone pivot="uwp"
 
-![Found image - Soup](../media/uwp-image-search4.png)
+![A bowl of soup centered in the image with the word soup selected.](../media/uwp-image-search4.png)
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Found image - Soup](../media/wpf-image-search4.png)
+![A bowl of soup centered in the image with the word soup selected.](../media/wpf-image-search4.png)
 
 ::: zone-end
 
 ::: zone pivot="windowsforms"
 
-![Found image - Soup](../media/wf-image-search4.png)
+![A bowl of soup centered in the image with the word soup selected.](../media/wf-image-search4.png)
 
 ::: zone-end
 
@@ -69,11 +69,11 @@ We're now going to build the part of our English-language teaching app that focu
 
 2. Create an app of type **Visual C# / Windows Universal / Blank App (Universal Windows)** and call it **ShowMeAPicture**.
 
-    ![File - New - Project](../media/uwp-image-search1.png)
+    ![Screen shot of the project selections in Visual Studio. C# and Blank App (Universal Windows) is highlighted.](../media/uwp-image-search1.png)
 
 3. Make sure to select an up-to-date SDK. When the target and platform dialog appears, select these options:
 
-    ![Pick the latest SDK](../media/uwp-image-search2.png)
+    ![Screen shot of platform options for selecting target and minimum versions of the SDK.](../media/uwp-image-search2.png)
 
 4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into MainPage.xaml, replacing everything that's already there:
 
@@ -100,7 +100,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     The UI should look something like this:
 
-    ![XAML file view](../media/uwp-image-search3.png)
+    ![Screen shot depicting the XAML file pane opened below the UI designer.](../media/uwp-image-search3.png)
 
     Now we can work on the C# code that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
 
@@ -231,11 +231,11 @@ We're now going to build the part of our English-language teaching app that focu
 
 2. Create an app of type **Visual C# / WPF App (.NET Framework)** and call it **ShowMeAPicture**.
 
-    ![File - New - Project](../media/wpf-image-search1.png)
+    ![Screen shot of the project selections in Visual Studio. C# and WPF App is highlighted.](../media/wpf-image-search1.png)
 
 3. We'll need some extra code from a NuGet package to help us process the return values from the search API. Go to **Project > Manage NuGet Packages**, select **Browse**, enter **Newtonsoft.Json**, and then select **Install**.
 
-    ![File - New - Project](../media/wpf-image-search2.png)
+    ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
     For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](https://docs.microsoft.com/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
@@ -262,7 +262,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     The UI should look something like this:
 
-    ![XAML file view](../media/wpf-image-search3.png)
+    ![Screen shot depicting the XAML file pane opened below the UI designer.](../media/wpf-image-search3.png)
 
     Now we can work on the C# code that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
 
@@ -403,11 +403,11 @@ We're now going to build the part of our English-language teaching app that focu
 
 2. Create an app of type **Visual C# / Windows Forms App (.NET Framework)** and call it **ShowMeAPicture**.
 
-    ![File - New - Project](../media/wf-image-search1.png)
+    ![Screen shot of the project selections in Visual Studio. C# and Windows Forms App is highlighted.](../media/wf-image-search1.png)
 
 3. We'll need some extra code from a NuGet package to help us process the return values from the search API. Go to **Project > Manage NuGet Packages**, select **Browse**, enter **Newtonsoft.Json**, and then select **Install**.
 
-    ![File - New - Project](../media/wpf-image-search2.png)
+    ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
     For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](https://docs.microsoft.com/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
@@ -415,7 +415,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     At this point, create an event handler to respond when the user enters text. In the **Properties** pane, select the **Events** (lightning bolt) icon, and then select the value next to the **KeyDown** event.
 
-    ![Adding an event handler](../media/wf-image-search2.png)
+    ![Screen shot depicting the adding of an event handler for KeyDown.](../media/wf-image-search2.png)
 
     This action creates the event handler for you, and the following method will appear:
 
@@ -428,7 +428,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     One more thing: set the **SizeMode** property of the **PictureBox** control to **Zoom** so that our image is resized properly.
 
-    ![Setting sizemode to zoom](../media/wf-image-search3.png)
+    ![Screen shot depicting the properties in Visual Studio for setting sizemode to zoom.](../media/wf-image-search3.png)
 
     Now we can work on the C# code that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return. Select **Form1.cs**.
 
@@ -564,11 +564,11 @@ We're now going to build the part of our English-language teaching app that focu
 
 Here's a part of a typical JSON result from the image query, as plain text:
 
-![JSON result as plain text](../media/uwp-image-search7.png)
+![Screen shot of the Text Visualizer displaying the JSON result as plain text.](../media/uwp-image-search7.png)
 
 It looks a little friendlier with some JSON formatting applied:
 
-![JSON result formatted](../media/uwp-image-search6.png)
+![Screen shot of the JSON Visualizer displaying the JSON result formatted as a JSON document.](../media/uwp-image-search6.png)
 
 It's straightforward to process the file in this format and extract the values you need, especially if you use a code library of helper functions.
 
@@ -577,13 +577,13 @@ It's straightforward to process the file in this format and extract the values y
 Select F5 to run the app. Type some text into the **TextBox** and press Enter. Hopefully, you'll see an image!
 
 ::: zone pivot="uwp"
-![Found image - Bicycle](../media/uwp-image-search5.png)
+![Screen shot of the running application depicting the Found image - Bicycle.](../media/uwp-image-search5.png)
 ::: zone-end
 ::: zone pivot="wpf"
-![Found image - Bicycle](../media/wpf-image-search5.png)
+![Screen shot of the running application depicting the Found image - Bicycle.](../media/wpf-image-search5.png)
 ::: zone-end
 ::: zone pivot="windowsforms"
-![Found image - Bicycle](../media/wf-image-search5.png)
+![Screen shot of the running application depicting the Found image - Bicycle.](../media/wf-image-search5.png)
 ::: zone-end
 
 Does the application crash? The most likely cause is an incorrect or missing subscription key. Another possibility is a lack of internet access. For the sake of simplicity, the example code doesn't include a check for network access.

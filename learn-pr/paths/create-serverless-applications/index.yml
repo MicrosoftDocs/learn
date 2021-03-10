@@ -26,6 +26,12 @@ products:
 - azure-cosmos-db
 - azure-storage
 - azure-cloud-shell
+languages:
+- powershell
+salesplays:
+- azure
+- cloud-native-apps
+- enable-azure
 modules:
 - learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions

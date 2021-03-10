@@ -387,3 +387,8 @@ achievements:
   title: "Predict  classes with a knn classifier"
   summary: "Predict  classes with a knn classifier"
   iconUrl: /learn/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+  type: badge
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
+  iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg

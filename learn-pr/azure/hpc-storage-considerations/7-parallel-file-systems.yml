@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.7-parallel-file-systems
+title: Parallel file systems
+metadata:
+  title: Parallel file systems
+  description: Once you complete this unit, you'll be more familiar with the main parallel file system features.
+  ms.date: 12/29/2020
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-parallel-file-systems.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which choice reflects an excellent use of parallel file system"
+    choices:
+    - content: "reading and writing large files"
+      isCorrect: true
+      explanation: "parallel file systems use striping across a scale-out number of storage servers to optimize for large file workloads"
+    - content: "reading a large number of small files in a deep directory structure"
+      isCorrect: false
+      explanation: "NFSv2/v3 uses NLM/NSM advisory locking which isn't enforced"
+    - content: "creation a large number of small files"
+      isCorrect: false
+      explanation: "large numbers of small file creation may generate a significant amount of metadata"

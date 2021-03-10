@@ -29,4 +29,3 @@ In this module, you'll:
 
 For users in the Optimization path, there are no prerequisites. Otherwise, you need:
 * An Azure account. For more information, see [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true).
-* Any Python development environment.

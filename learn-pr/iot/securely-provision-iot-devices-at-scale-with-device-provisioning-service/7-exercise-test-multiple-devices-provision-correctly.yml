@@ -4,7 +4,7 @@ metadata:
   description: Test that all three devices are provisioned automatically by the Device Provisioning Service. Test that sensor telemetry is reaching the hub. Finally, test a device twin change in the portal is picked up by the correct device.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - test the multiple devices are automatically provisioned and assigned to your hub

@@ -35,7 +35,7 @@ In a range query, the application searches for a set of rows in a partition, spe
 > [!div class="mx-imgBorder"]
 > ![Image showing how a range query is performed against a table](../media/2-table-range-query.png)
 
-The columns in a table can hold numeric, string, or binary data up to 64 KB in size. A table can have up to 252 columns, apart from the partition and row keys. The maximum row size is 1 MB. For more information, read [Understanding the Table service data model](https://docs.microsoft.com/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
+The columns in a table can hold numeric, string, or binary data up to 64 KB in size. A table can have to 252 columns, apart from the partition and row keys. The maximum row size is 1 MB. For more information, read [Understanding the Table service data model](https://docs.microsoft.com/rest/api/storageservices/Understanding-the-Table-Service-Data-Model).
 
 
 ## Use cases and management benefits of using Azure Table Storage

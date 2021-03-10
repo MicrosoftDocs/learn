@@ -154,7 +154,7 @@ Much like the sign-in logs, the audit logs can be adapted and changed to meet yo
 - Target
 - Initiated by
 
-As with the logs discussed earlier, you can modify the columns that are displayed, and you can add the following columns:
+As with the logs previously described, you can modify the columns that appear, and you can add the following columns:
 
 - Activity
 - Status Reason

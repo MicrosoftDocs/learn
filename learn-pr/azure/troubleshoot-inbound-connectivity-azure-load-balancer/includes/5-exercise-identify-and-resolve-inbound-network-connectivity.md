@@ -39,7 +39,7 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 1. Review the dashboard that shows the health probe status and data path availability. You might need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero.
 
     > [!div class="mx-imgBorder"]
-    > ![The health probe status and data path availability in an unhealthy state](../media/5-probe-unhealthy.png)
+    > ![Screenshot that shows the health probe status and data path availability is in an unhealthy state.](../media/5-probe-unhealthy.png)
 
     This chart shows that the virtual machines aren't responding to health probe requests from the load balancer. So they've been marked as unhealthy. There's no data path available between a client and the application running on these virtual machines.
 
@@ -96,26 +96,26 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 1. On the **Monitor - Overview** page, select **Service Health**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the Monitor - Overview menu](../media/5-monitor-overview.png)
+    > ![Screenshot that shows Service Health option selected from the left-hand side menu.](../media/5-monitor-overview.png)
 
 1. Select **Resource Health**.
 1. In the **Resource type** box, select **Load balancer**. In the list of resources, select **retailapplb**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Service Health - Resource health page](../media/5-service-health.png)
+    > ![Screenshot of the Service Health - Resource health page that shows the retailapplb selected.](../media/5-service-health.png)
 
 1. Wait a few minutes for the load balancer health to be evaluated.
 1. Under **Health history**, expand the topmost event and review the recommended steps. These steps suggest checking the VIP (routing rule) and DIP (health probe) endpoints in the load balancer.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Resource health page](../media/5-resource-health.png)
+    > ![Screenshot of the Resource health page that shows health history including date, number of health events, status, description, and recommended steps.](../media/5-resource-health.png)
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
 1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **retailapprule** page](../media/5-retailapprule.png)
+    > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
 
 1. Close the **retailapprule** page.
 
@@ -123,7 +123,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 1. Change the **Port** from 85 back to 80, and then select **Save**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **retailapphealthprobe** page](../media/5-retailapphealthprobe.png)
+    > ![Screenshot of the **retailapphealthprobe** page that shows the port number updated to 80.](../media/5-retailapphealthprobe.png)
 
 1. Wait a few minutes.
 1. Select **Dashboard** in the menu on the left of the Azure portal.
@@ -131,7 +131,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 1. On the dashboard, select the chart showing the Health Probe Status and Data Path Availability metrics. The **Data Path Availability** metric should rise to 100, but the **Health Probe Status** metric will hover around 50. There's now a path available from the load balancer to at least one virtual machine, but only 50 percent of the virtual machines are showing as healthy.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Health Probe Status and Data Path Availability chart on the dashboard](../media/5-probe-half-healthy.png)
+    > ![Screenshot of the Health Probe Status and Data Path Availability chart where the Data Path Availability is at 100 but Health Probe Status hovers around 50.](../media/5-probe-half-healthy.png)
 
     Select the chart to go to the metrics page for Load Balancer. This page enables you to refresh the chart and zoom in on a specific time period.
 
@@ -211,7 +211,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 1. The **Overview** page shows that the virtual machine has stopped. Select **Start**, and wait for the machine to begin running.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the Overview page for the *retailappvm2* virtual machine](../media/5-retailappvm2.png)
+    > ![Screenshot that shows the Overview page for the *retailappvm2* virtual machine with the start button highlighted.](../media/5-retailappvm2.png)
 
 1. Return to Cloud Shell connected to the jump box, and repeat the ping command.
 
@@ -274,19 +274,19 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     The network security group has an inbound rule that blocks all outside traffic using the TCP protocol. This rule has a priority number lower than the rule (which opens port 80), so it takes precedence.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the inbound security rules for the NSG](../media/5-inbound-security.png)
+    > ![Screenshot that shows the inbound security rules for the NSG.](../media/5-inbound-security.png)
 
 1. Select the **retailappvnetnsgrulevm2denyall** rule, change the priority to 300, and then select **Save**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the edit page for the inbound rule](../media/5-change-priority.png)
+    > ![Screenshot showing the edit page for the inbound rule.](../media/5-change-priority.png)
 
 1. Wait two minutes, and then go to the **Dashboard**.
 
 1. Select the chart that shows the **Health Probe Status** metric. The value of this metric should rise to 100. You might need to refresh the chart a few times.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the Health Probe Status for the load balancer](../media/5-probe-healthy.png)
+    > ![Screenshot showing the Health Probe Status for the load balancer.](../media/5-probe-healthy.png)
 
 1. Switch to Cloud Shell, and run the *stresstest* application again by using the load balancer's IP address.
 
