@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-aggregates-in-the-same-container
+title: Denormalizing aggregates in the same container
+metadata: 
+  title: Denormalizing aggregates in the same container
+  description: This unit walks through a scenario for creating new queries by denormalizing aggregated data in a container.
+  ms.date: 3/9/2021 
+  author: markjbrown 
+  ms.author: mjbrown 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 05
+content: |
+  [!include[](includes/7-denormalizing-aggregates-in-the-same-container.md)]

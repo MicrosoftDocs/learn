@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.introduction  
+title: Introduction  
+metadata:
+  unit-type: introduction  
+  title: Introduction
+  description: This module will take you through the migration of data from a relational database to a NoSQL database in the context of a global sales application.
+  ms.date: 3/9/2021  
+  author: markjbrown  
+  ms.author: mjbrown  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 02
+content: |
+  [!include[](includes/1-introduction.md)]
