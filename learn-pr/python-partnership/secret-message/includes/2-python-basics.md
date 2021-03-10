@@ -32,8 +32,6 @@ town = "Contosoville"
 Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
-# Associate the variable town with the value "Contosoville"
-town = "Contosoville"
 
 # Print a message about the secret location
 print( "The town I am looking for is " + town )

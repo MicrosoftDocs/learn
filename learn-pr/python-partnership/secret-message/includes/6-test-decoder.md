@@ -10,7 +10,7 @@ After our analysis in this module, here's what you need to do to decode the mess
 
 ## Add print statements
 
-Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your <br>decrypt.py</b> file to print all the decoded words.
+Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your <b>decrypt.py</b> file to print all the decoded words.
 
 ```python
 print( "Shifting Ncevy by 13 gives: \n" + lassoWord( "Ncevy", 13 ) )
@@ -20,4 +20,3 @@ print( "Shifting wjmmf by -1 gives: \n" + lassoWord( "wjmmf", -1 ) )
 ```
 
 Now press the **Run** button. You should see the final clue to the meeting location and date to find the hidden treasure! 
-

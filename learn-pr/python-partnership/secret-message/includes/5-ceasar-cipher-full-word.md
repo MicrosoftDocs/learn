@@ -74,7 +74,7 @@ With the code that you just wrote, you'll have one value in the `decodedLetter` 
 
 You can trace the code to see how this works:
 
-- `word` = "hello"  
+- `word` = "gdkkn"  
 - `shiftAmount` = 1
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
