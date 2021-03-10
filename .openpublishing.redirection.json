@@ -5114,6 +5114,21 @@
       "source_path": "learn-pr/data-ai-cert/recognize-voices-with-speaker-recognition/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/azure/cognitive-services/speech-service/speaker-recognition-overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "azure/shift-nodejs-express-apis-serverless/4-exercise-debug-express.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/shift-nodejs-express-apis-serverless/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "azure/shift-nodejs-express-apis-serverless/5-function-app.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/shift-nodejs-express-apis-serverless/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "azure/shift-nodejs-express-apis-serverless/8-exercise-refactor.md",
+      "redirect_url": "https://docs.microsoft.comlearn/modules/shift-nodejs-express-apis-serverless/1-introduction",
+      "redirect_document_id": true
+    }   
   ]
 }
