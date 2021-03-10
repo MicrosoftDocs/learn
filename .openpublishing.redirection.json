@@ -5151,7 +5151,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless//3-explore.md",
+      "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-explore.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions",
       "redirect_document_id": false
     }    
