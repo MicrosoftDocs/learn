@@ -15,7 +15,7 @@ This generates a new directory called `hello-cargo`, with the following files:
     |- src
       |- main.rs
 
-`Cargo.toml` is the manifest file for Rust. It's where you keep metadata for your project, as well as dependencies.
+`Cargo.toml` is the manifest file for Rust. It's where you keep metadata for your project as well as dependencies.
 
 `src/main.rs` is where you'll write your application code.
 
@@ -36,4 +36,4 @@ You should see this in your terminal:
          Running `target/debug/hello-cargo`
     Hello, world!
 
-Congratulations, you've just learned how to initialize your first Rust project with Cargo!
+Cargo has built and executed your executable. Congratulations, you've just learned how to initialize your first Rust project with Cargo!
