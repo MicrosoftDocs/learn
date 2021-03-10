@@ -10,7 +10,7 @@ Enterprise Agreement and Microsoft Customer Agreement billing administrators can
 
 1. Select **Reservation transactions**.
 
-[![Example showing reservation transactions](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
+    [![Example showing reservation transactions](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
 
 You can also get reservation transactions using the [Transactions API](https://docs.microsoft.com/rest/api/consumption/reservationtransactions/list).
 
@@ -19,6 +19,7 @@ You can also get reservation transactions using the [Transactions API](https://d
 Enterprise Agreement and Microsoft Customer Agreement customers can use the Power BI Cost Management App to get reservation transactions.
 
 1. Get the [Cost Management App](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
+
 1. Go to **RI Purchases** report to see all purchases and refunds. Exchanges appear as a refund and another purchase.
 
 ## Reservation transactions in usage data

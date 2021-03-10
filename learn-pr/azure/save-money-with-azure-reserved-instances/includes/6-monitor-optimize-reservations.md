@@ -6,21 +6,21 @@ One way of viewing reservation usage is in the Azure portal. To maximize savings
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. Select **All services** &gt; **[Reservations](https://portal.azure.com/#blade/Microsoft_Azure_Reservations/ReservationsBrowseBlade)** and note the **Utilization (%)** for a reservation.
+1. Select **All services** &gt; **[Reservations](https://portal.azure.com/#blade/Microsoft_Azure_Reservations/ReservationsBrowseBlade)**, and note the **Utilization (%)** for a reservation.
 
-  [![Example showing Reservations in the Azure portal](../media/5-reservation-list.png)](../media/5-reservation-list.png#lightbox)
+    [![Example showing Reservations in the Azure portal](../media/5-reservation-list.png)](../media/5-reservation-list.png#lightbox)
 
 1. Select the reservation utilization percentage to see utilization details.
 
-  ![Example showing the utilization percentage for a reservation](../media/5-utilization-percent.png)
+    ![Example showing the utilization percentage for a reservation](../media/5-utilization-percent.png)
 
 1. Select a point on the chart to see the usage breakdown by resource in the view.
 
-  [![Example showing daily usage breakdown](../media/5-daily-usage-breakdown.png)](../media/5-daily-usage-breakdown.png#lightbox)
+    [![Example showing daily usage breakdown](../media/5-daily-usage-breakdown.png)](../media/5-daily-usage-breakdown.png#lightbox)
 
 Billing admins can view all reservations from **Cost Management + Billing** > **Reservation Transactions** > and then select the blue banner.
 
-You can get the same data that we covered in the preceding sections using APIs.
+You can get the same data that we covered in the preceding sections using APIs:
 
 - Use the Reservation Summaries API to get reservation utilization percentage data at https://docs.microsoft.com/rest/api/consumption/reservationssummaries.
 - Use Reservation Details API to determine which resources got a reservation discount and for what quantity at https://docs.microsoft.com/rest/api/consumption/reservationsdetails/list.
