@@ -31,7 +31,7 @@ TODO: add a visual element
 ## Example scenario
 TODO: add your scenario
 TODO: add a visual element
-:::image type="content" source="" alt-text="":::
+
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 

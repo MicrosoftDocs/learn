@@ -22,7 +22,7 @@ TODO: add your topic sentences(s)
 -->
 TODO: add your scenario sub-task
 TODO: add your scenario image
-:::image type="content" source="" alt-text="":::
+
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
