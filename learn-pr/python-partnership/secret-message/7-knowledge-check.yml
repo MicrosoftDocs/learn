@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. The code you wrote takes the ASCII number value of `p` and adds `-2` to it, which basically subtracts 2!"
     - content: "`P`"
       isCorrect: false
-      explanation: "Incorrect. The code you wrote can't convert a lowercase letter to uppercase."
+      explanation: "Incorrect. The code you wrote doesn't convert a lowercase letter to uppercase."
   
   - content: "The secret location and date to find the hidden treasure is when and where?"
     choices:  

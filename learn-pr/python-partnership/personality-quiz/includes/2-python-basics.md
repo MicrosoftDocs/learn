@@ -28,8 +28,6 @@ year = 1990
 Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print the value of the variable.
 
 ```python
-# use a variable named year to "remember" the value 1990
-year = 1990
 
 # print a message to see what year it is
 print( f"The year is {year}..." )
@@ -42,11 +40,6 @@ Press the **Run** button, and you should see the year in the output.
 We can update the value of a variable by using the same assignment (`=`) operator. Python will figure out the right side before storing it in the variable. Because `year` already has a value, this command will ask Python to first substitute the current value of `year` (which is `1990`), add 36 to it, and then store that value in the variable `year`. This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
 
 ```python
-# use a variable named year to "remember" the value 1990
-year = 1990
-        
-# print a message to see what year it is
-print( f"The year is {year}..." )
 
 year = year + 36
 

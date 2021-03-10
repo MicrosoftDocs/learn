@@ -18,9 +18,11 @@ abstract: |
   - Discover the location that will reveal the hidden treasure
 
   <strong>No coding experience is required to complete this Microsoft Learn module.</strong>
+  
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
-  - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
-  - [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
+  - [Visual Studio Code with Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

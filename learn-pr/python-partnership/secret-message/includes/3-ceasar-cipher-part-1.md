@@ -131,6 +131,25 @@ decodedLetter = chr(decodedLetterCode)
 return decodedLetter
 ```
 
+Try calling this function to see if it's working as we expect it. Use the example above:
+
+--PYTHON CODE SNIPPET--
+print(lassoLetter('a', 2))
+--END PYTHON CODE SNIPPET--
+
+--OUTPUTCODE SNIPPET--
+c
+--END OUTPUTCODE CODE SNIPPET--
+
+Notice that the program will correctly print `c`.
+![Sleuth_Pic_1](https://user-images.githubusercontent.com/1314285/110186097-06263d80-7dc9-11eb-9e7f-f309b447e3c5.png)
+
+That looks to be working!
+
+## Continue testing the decoder
+
+While this example worked, there is an issue when we get to the end of the alphabet. 
+
 Let's see what would happen if you ran this code with the first letter of the actual secret message, `N`, and the shift amount, `13`.
 
 | Variable | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
@@ -139,9 +158,21 @@ Let's see what would happen if you ran this code with the first letter of the ac
 | `shiftAmount` | 13 | |
 | `letterCode` | `ord('n')` = 110 | |
 | `decodedLetterCode` | 110 + 13 = 123 | |
-| `decodedLetter` | chr(123) = `error` | |
+| `decodedLetter` | chr(123) = `{` | |
 
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
+
+You can try this out by testing your function:
+--PYTHON CODE SNIPPET--
+print(lassoLetter('N', 2))
+--END PYTHON CODE SNIPPET--
+
+--OUTPUTCODE SNIPPET--
+{
+--END OUTPUTCODE CODE SNIPPET--
+
+![Sleuth_Pic_2](https://user-images.githubusercontent.com/1314285/110186300-a1b7ae00-7dc9-11eb-8035-810c0075e549.png)
+
 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
 

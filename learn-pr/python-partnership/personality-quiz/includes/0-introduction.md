@@ -29,7 +29,7 @@ And maybe you have three personality possibilities:
 
 You can see that it really doesn't matter what kind of food the quiz taker chooses if they choose the color red, because that will automatically put them in the "compassionate and opinionated" category. 
 
-With [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
+With [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
 
 :::image type="content" source="../media/sleuth-clipart.png" alt-text="Image of a girl with a trench coat and a magnifying glass." border="false":::
 

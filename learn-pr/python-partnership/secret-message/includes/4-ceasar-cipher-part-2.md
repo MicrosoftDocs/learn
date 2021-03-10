@@ -82,11 +82,11 @@ You can review the formula for `trueLetterCode` just as you would any other math
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
-> 97 + (((110 - 97) + 13) % 26)
-> 97 + ((13 + 13) % 26)
-> 97 + (26 % 26)
-> 97 + 0
-> 97
+> 97 + (((110 - 97) + 13) % 26)  
+> 97 + ((13 + 13) % 26)  
+> 97 + (26 % 26)  
+> 97 + 0  
+> 97  
 
 ## Final code
 
@@ -119,4 +119,9 @@ def lassoLetter( letter, shiftAmount ):
     return decodedLetter
 ```
 
-Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message.
+Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message. 
+
+You will do this in the next unit, but you can try it out now by calling the `lassoLetter()` function within a `print()` function like this:
+--PYTHON CODE SNIPPET--
+print(lassoLetter('a', 2))
+--END PYTHON CODE SNIPPET--
