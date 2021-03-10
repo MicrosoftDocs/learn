@@ -22,7 +22,7 @@ To create your DNS zone:
 
     ![Screenshot of DNS zone, with Create highlighted](../media/4-dnszonecreate.png)
 
-1. On the **Basics** yab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     ![Screenshot of Create DNS zone page](../media/4-creatednszone.png)
 
@@ -52,17 +52,11 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 
 The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
 
-1. In the Azure portal, select **All Resources**.
-
-1. Select the DNS zone you created (wideworldimportsXXXX.com).
-
-1. Select **Record set**. The **Add record set** pane appears.
+1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the upper menu bar, select **Record set**. The **Add record set** pane appears.
 
     ![Screenshot of the DNS zone page, with + Record set highlighted](../media/4-add-a-record.png)
 
 1. Enter the following values for each setting.
-
-    ![Screenshot of Add record set](../media/4-arecord.png)
 
     |Setting  |Value |Description  |
     |---------|---------|---------|
@@ -71,7 +65,9 @@ The primary record to create is the A record. This record contains the pairing b
     |Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
     |TTL     |      1  | The time-to-live period, which specifies how long each DNS server caches the resolution before it's purged.        |
     |TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
-    |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server.       |
+    |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
+
+     ![Screenshot of Add record set](../media/4-arecord.png)
 
 1. Select **OK** to add the record to your zone.
 
