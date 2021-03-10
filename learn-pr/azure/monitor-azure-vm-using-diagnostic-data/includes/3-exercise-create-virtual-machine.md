@@ -64,7 +64,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
    |Metric     |   Inbound Flows  |
    |Aggregation    |    Avg     |  
 
-1. Select the **Finish editing** check mark.
+1. Select the **Update** in the top right (Local Time: Last 24 hours (Automatic) and change to 30 min.
 
 1. You should now have a graph that looks something like the following:
 
