@@ -2,7 +2,7 @@ Various laws around the world describe the rights of people and companies to con
 
 ## Overview of privacy laws and regulations
 
-Many countries, and in some cases regions or specific states, have enacted laws or regulations addressing privacy and the protection of personal data. Examples include the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). More detail about these two privacy laws is provided in the following units.
+Many countries/regions, and in some cases specific states, have enacted laws or regulations addressing privacy and the protection of personal data. Examples include the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). More detail about these two privacy laws is provided in the following units.
 
 In general, privacy law and regulations set forth a legal framework about how organizations, and in some cases, individuals, can collect, use, and store personal data. In most cases, laws and regulations don't define or prescribe specific technologies that organizations must use to protect data. They leave it to an organization to identify compliant technologies, operations, and other appropriate data-protection measures.
 
