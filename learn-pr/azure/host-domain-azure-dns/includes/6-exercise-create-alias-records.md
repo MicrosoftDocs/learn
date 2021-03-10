@@ -41,7 +41,7 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
 
 Now that you've created a test environment, you're ready to set up the Azure alias record in your zone apex.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the resource group: <rgn>[Sandbox resource group]<rgn>.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to <rgn>[sandbox resource group]</rgn> resource group.
 
 1. Select your DNS zone (wideworldimportsXXXX.com).
 
