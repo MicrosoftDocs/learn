@@ -23,5 +23,6 @@ In this module, you will:
 
 - An Azure subscription
 - A GitHub account
+- (Optionally) An Azure DevOps organization 
 - Basic knowledge of software development
 - Basic knowledge of managing and provisioning Azure resources
