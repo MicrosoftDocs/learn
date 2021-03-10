@@ -4,7 +4,7 @@ metadata:
   description: Test your app. Test the route options provided. Optionally, add your own locations.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Exercise - test your route finding app

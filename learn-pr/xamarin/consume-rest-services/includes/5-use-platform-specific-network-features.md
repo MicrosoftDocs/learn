@@ -153,7 +153,7 @@ ASP.NET Core web services must disable HTTPS redirects by commenting out `app.Us
 
 ### Detect the operating system
 
-The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows:
+The [`DeviceInfo`](xref:Xamarin.Essentials.DeviceInfo) class can be used to detect the platform the application is running on. The appropriate hostname, that enables access to local secure web services, can then be set as follows.
 
 ```csharp
 public static string BaseAddress =

@@ -40,11 +40,14 @@ Whether or not you use a machine learning model locally or in the cloud depends 
 
 | Cloud evaluation | Local evaluation |
 | :---- | :---- |
-|![Windows Machine Learning evaluation in the cloud](../media/evaluating-cloud3.png)|![Windows Machine Learning evaluation on a device](../media/evaluating-locally3.png)|
+|:::image type="content" source="../media/evaluating-cloud3.png" alt-text="Diagram depicting client computer sending image to the machine learning in the cloud with prediction results returned":::|:::image type="content" source="../media/evaluating-locally3.png" alt-text="Diagram depicting client computer sending image to the machine learning on a local server with prediction results returned":::|
 | Complex processing of large amounts of data. Services like Azure Cognitive Services offer a simple, user-friendly way to both train and evaluate models. | Windows ML is built into all Windows 10 devices. It offers APIs to evaluate models offline. And it's available to both Win32 and UWP apps: C#, C++, and JS. |
 | Backup and restore can be initiated from anywhere by using any device. There's no risk of data loss from a damaged machine. | Increased flexibility by removing concerns of connectivity, bandwidth, and data privacy. |
 | Might require waiting for large amounts of data to make a roundtrip to the cloud and back. | Able to respond quickly, processing an evaluation directly on the device in real time. A DirectX 12 GPU can be used for hardware acceleration, making evaluation even faster. |
 | Continuous training of models, growing smarter over time. | Reduced operational costs. Not paying for internet bandwidth and cloud storage. |
 | Might be blocked by privacy or regulatory concerns. Examples are healthcare data and HIPAA. | Private and secure. Sensitive patient data can be kept on the local device. |  
 
-![Windows Machine Learning workflow diagram](../media/winml-flow.png)
+:::image type="complex" source="../media/winml-flow.png" alt-text="Diagram depicting the machine learning flow diagram":::
+
+The diagram depicts the workflow where the model is downloaded, in ONNX format. The model reference is added to your application code and then included in your app that is to be installed and used with the Windows ML API on a Windows 10 device.
+:::image-end:::

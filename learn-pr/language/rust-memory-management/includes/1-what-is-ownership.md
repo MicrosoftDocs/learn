@@ -40,7 +40,7 @@ You can run this example online in the [Rust Playground](https://play.rust-lang.
 
 ## Move semantics
 
-The same scoping rules happen inside `function` bodies. The function's parameters enter the scope, but only the returned value lives after the function exists. All the input parameters and local variables are released from memory.
+The same scoping rules happen inside `function` bodies. The function's parameters enter the scope, but only the returned value lives after the function exits. All the input parameters and local variables are released from memory.
 
 In the following example, a string is sent to a function that doesn't return it:
 
