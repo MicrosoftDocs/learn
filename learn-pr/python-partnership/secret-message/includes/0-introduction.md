@@ -20,8 +20,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
-- [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?pivots=windows?azure-portal=true)
+- [Visual Studio Code with Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
 
 > [!Note]
 > No coding experience is required to complete these lessons!

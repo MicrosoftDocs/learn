@@ -37,8 +37,8 @@ roles:
 products:
 - vs-code
 modules:
+- learn.languages.python-install-vscode
 - learn.python-partnership.secret-message
 - learn.python-partnership.personality-quiz
-- learn.languages.python-install-vscode
 trophy:
   uid: learn.python-partnership.trophy

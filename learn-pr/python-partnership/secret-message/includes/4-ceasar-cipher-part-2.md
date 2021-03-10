@@ -14,6 +14,10 @@ The `mod` operator divides two numbers and returns the remainder. If you run the
 threeTwo = 3 % 2
 elevenFour = 11 % 4 
 fiveTen = 5 % 10
+
+print(threeTwo)
+print(elevenFour)
+print(fiveTen)
 ```
 
 The result is:
@@ -27,6 +31,7 @@ The result is:
 ## Calculate a decoded character: The right way 
 
 With the `mod` operator in mind, you need two new variables:
+
 - `aAscii`: Holds the ASCII code value for the letter 'a'. We get this value by calling the `ord('a')` function and passing in the letter.
 - `alphabetSize`: Holds the number of letters in the alphabet, 26.
 
@@ -56,15 +61,16 @@ You can review the formula for `trueLetterCode` just as you would any other math
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
-> 97 + (((97 - 97) + 2) % 26) 
-> 97 + ((0 + 2) % 26)
-> 97 + (2 % 26)
-> 97 + 2
-> 99
+> 97 + (((97 - 97) + 2) % 26)  
+> 97 + ((0 + 2) % 26)  
+> 97 + (2 % 26)  
+> 97 + 2  
+> 99  
 
 ### Example 2: Letter 'N' and shift by 13
 
 Start with these two values:
+
 - `letter` = 'N'
 - `shiftAmount` = 13
 
@@ -122,6 +128,7 @@ def lassoLetter( letter, shiftAmount ):
 Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message. 
 
 You will do this in the next unit, but you can try it out now by calling the `lassoLetter()` function within a `print()` function like this:
+
 --PYTHON CODE SNIPPET--
 print(lassoLetter('a', 2))
 --END PYTHON CODE SNIPPET--

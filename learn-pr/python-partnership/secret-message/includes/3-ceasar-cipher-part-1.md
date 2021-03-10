@@ -122,13 +122,11 @@ Now it's time to calculate the new character. First, review the original example
 So, your code might look like this:
 
 ```python
-letterCode = ord(letter.lower())
-
-decodedLetterCode = letterCode + shiftAmount
-
-decodedLetter = chr(decodedLetterCode)
-
-return decodedLetter
+def lassoLetter( letter, shiftAmount ):
+    letterCode = ord(letter.lower())
+    decodedLetterCode = letterCode + shiftAmount
+    decodedLetter = chr(decodedLetterCode)
+    return decodedLetter
 ```
 
 Try calling this function to see if it's working as we expect it. Use the example above:
@@ -141,8 +139,9 @@ print(lassoLetter('a', 2))
 c
 --END OUTPUTCODE CODE SNIPPET--
 
-Notice that the program will correctly print `c`.
-![Sleuth_Pic_1](https://user-images.githubusercontent.com/1314285/110186097-06263d80-7dc9-11eb-9e7f-f309b447e3c5.png)
+Notice that the program will correctly print `c`:
+
+:::image type="content" source="../media/test-function-example-1.png" alt-text="Screenshot that shows the output of the letter c.":::
 
 That looks to be working!
 
@@ -163,6 +162,7 @@ Let's see what would happen if you ran this code with the first letter of the ac
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
 
 You can try this out by testing your function:
+
 --PYTHON CODE SNIPPET--
 print(lassoLetter('N', 2))
 --END PYTHON CODE SNIPPET--
@@ -171,8 +171,7 @@ print(lassoLetter('N', 2))
 {
 --END OUTPUTCODE CODE SNIPPET--
 
-![Sleuth_Pic_2](https://user-images.githubusercontent.com/1314285/110186300-a1b7ae00-7dc9-11eb-8035-810c0075e549.png)
-
+:::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without a loop.":::
 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
 

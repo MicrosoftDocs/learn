@@ -79,13 +79,13 @@ You can trace the code to see how this works:
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---------------|--------|---------------|-------------|
-| 1 | 'h' | 'i' | |
-| 2 | 'e' | 'f' | |
-| 3 | 'l' | 'm' | |
-| 4 | 'l' | 'm' | |
-| 5 | 'o' | 'p' | |
+| 1 | 'g' | 'h' | |
+| 2 | 'd' | 'e' | |
+| 3 | 'k' | 'l' | |
+| 4 | 'k' | 'l' | |
+| 5 | 'n' | 'o' | |
 
-You're left with a variable named `decodedLetter` that has a value of just the letter 'p'. But, what you wanted was a variable named `decodedWord` to have the value `ifmmp`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
+You're left with a variable named `decodedLetter` that has a value of just the letter 'o'. But, what you wanted was a variable named `decodedWord` to have the value `hello`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
 
 ```python
 def lassoWord( word, shiftAmount ):
@@ -103,11 +103,11 @@ With this code, the entire word is now stored in the variable `decodedWord`. You
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` | Value of <br>`decodedWord` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |----------------|----------|-----------------|---------------|---------------|
-| 1 | 'h' | 'i' | "i" | |
-| 2 | 'e' | 'f' | "if" | |
-| 3 | 'l' | 'm' | "ifm" | |
-| 4 | 'l' | 'm' | "ifmm" | |
-| 5 | 'o' | 'p' | "ifmmp" | |
+| 1 | 'g' | 'h' | "h" | |
+| 2 | 'd' | 'e' | "he" | |
+| 3 | 'k' | 'l' | "hel" | |
+| 4 | 'k' | 'l' | "hell" | |
+| 5 | 'n' | 'o' | "hello" | |
 
 ### Comment your code
 

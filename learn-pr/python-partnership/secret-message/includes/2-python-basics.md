@@ -10,7 +10,7 @@ Try adding the following code to your <b>decrypt.py</b> file:
 # This is a comment that won't be interpreted as a command.
 ```
 
-Press the **Run** button, and you should see the same behavior as before.
+Select the **Run** button, and you should see the same behavior as before.
 
 :::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows that comments in Python do not change code execution.":::
  
@@ -37,7 +37,7 @@ Try it out! Replace the following commands in your <b>decrypt.py</b> file. (If y
 print( "The town I am looking for is " + town )
 ```
 
-Press the green **Run** button, and you should see the town revealed.
+Select the green **Run** button, and you should see the town revealed.
 
 :::image type="content" source="../media/town-output.png" alt-text="Screenshot of the output of the command to print the string value of the variable town.":::
  
@@ -58,20 +58,14 @@ def chant( phrase ):
 
 In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but which is available to you as part of the Python language `print()` capability. If you invoke this function, the value you pass in as the parameter is printed to the console three times.
 
-Try it out! Update the commands in your <b>decrypt.py</b> file to call the power chant.
+Try it out! Update the commands in your <b>decrypt.py</b> file to call the power to chant.
 
 ```python
-# Define a power (function) to chant a phrase
-def chant( phrase ):
-    # Glue three copies together and print it as a message
-    print( phrase + phrase + phrase )
-
-
-# Invoke the power chant on the phrase "Contosoville!"
+# Invoke the power to chant on the phrase "Contosoville!"
 chant( "Contosoville!" )
 ```
 
-Press the green **Run** button. 
+Select the green **Run** button. 
 
 ![Screenshot of the code to call the chant function.](../media/chant-code.png)
 
