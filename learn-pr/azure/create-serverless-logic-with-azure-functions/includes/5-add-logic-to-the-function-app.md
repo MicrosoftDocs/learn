@@ -14,13 +14,13 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="javascript"
 
-1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function App panel appears.
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, you selected **Go to resource**. Your **escalator-functions-xxxxxxx** Function App panel appears.
 
-1. In the left menu pane, under the **Functions** section, select **Functions**. The **Functions** panel appears for your Function App.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** panel appears for your Function App.
 
-1. From the top menu bar, select (**Add**). The **Add function** panel appears.
+1. From the top menu bar, select **Add**. The **Add function** panel appears.
 
-1. In the **Add function** panel, under the **Select a template** section, select **HTTP trigger**, and then select **Add**. Your **HttpTrigger1** function panel appears.
+1. In the **Add function** panel, under **Select a template**, select **HTTP trigger**, and then select **Add**. Your **HttpTrigger1** function panel appears.
 
 1. In the left menu pane, select **Code + Test**. The code editor appears.
 
@@ -78,17 +78,17 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 ::: zone pivot="powershell"
 
-1. From the previous exercise, after your function app successfully deploys in the Azure portal, select **Go to resource**. Your **escalator-functions-xxxxxxx** Function panel appears.
+1. From the previous exercise, after your function app successfully deploys in the Azure portal, you selected **Go to resource**. Your **escalator-functions-xxxxxxx** Function App panel appears.
 
-1. In the left menu pane, under the **Functions** section, select **Functions**. The **Functions** panel appears for your Function App.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** panel appears for your Function App.
 
-1. From the top menu bar, select (**Add**). The **Add function** panel appears that starts the function creation process.
+1. From the top menu bar, select **Add**. The **Add function** panel appears that starts the function creation process.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
 1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Add** to create the function.
 
-1. When your function creation completes, in the left nav bar, under **Developer**, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
+1. When your function creation completes, in the left menu pane, under **Developer**, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```powershell
     using namespace System.Net
@@ -365,4 +365,3 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
     To see that the request has been logged to Application Insights, go to the Monitor dashboard by selecting **Monitor** under your trigger function in the home Azure portal left menu pane.
 
     ![Screenshot of the Monitor dashboard showing logging to Application Insights](../media/5-app-insights.png)
-
