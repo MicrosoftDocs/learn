@@ -13,6 +13,8 @@ In this module, you will:
 - Create, or attach to, a Spark cluster
 - Identify the types of tasks well-suited to the unified analytics engine Apache Spark
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Prerequisites
 
 None

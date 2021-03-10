@@ -60,6 +60,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 > You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
 
 1. In Visual Studio Code, go to the integrated terminal.
+
 1. To fetch the latest changes from GitHub and update your `master` branch, run this `git pull` command.
 
     ```bash

@@ -8,7 +8,7 @@ SQL Server on a virtual machine is a version of SQL Server that runs in an Azure
 
 Here are some considerations for optimally deploying and managing SQL Server on virtual machines:  
 
-- Deploy specific SQL Server and operating system versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of the Azure SQL resource provider for licensing flexibility and to enable automatic backups and updates.
+- Deploy specific SQL Server and operating system versions from preinstalled Azure gallery images. If you self-install SQL Server on an Azure VM, you can take advantage of the SQL Server IaaS Agent Extension for licensing flexibility and to enable automatic backups and updates.
 
 - Consider memory-optimized or storage-optimized virtual machine sizes for maximum performance.
 

@@ -11,7 +11,7 @@ Even if you're new to quantum computing, you may have heard the terms _qubit_ an
 
 A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
 
-While a bit (binary digit) can have a value of either zero or one, a qubit in _superposition_ has a combination of both the zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
+While a bit (binary digit) can have a value of either zero or one, a qubit is in a state of _superposition_ of both the zero and one states, with some probability of being zero and some probability of being one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
 
 ## What's in a Q# program?
 
@@ -101,13 +101,13 @@ Q# libraries also provide operations that you can use in your programs. One oper
 
 ### Types
 
-Q# provides a number of built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
+Q# provides many built-in types you're already familiar with, including `Int`, `Double`, `Bool`, and `String`, along with types that are specific to quantum computing. Q# also provides types that define ranges, arrays, and tuples. You can even define your own custom types.
 
 In this module, you'll work with the `Result` type. A `Result` represents the result of a qubit measurement and can have one of two possible values: `One` and `Zero`.
 
 ### Allocating qubits
 
-In Q#, to obtain a qubit you use the `using` keyword. You can allocate one or many qubits at a time.
+In Q#, to obtain a qubit you use the `use` keyword. You can allocate one or many qubits at a time.
 
 Here's an example that allocates one qubit:
 
@@ -118,6 +118,6 @@ using (q = Qubit()) {
 }
 ```
 
-Every qubit you allocate with the `using` keyword starts in the zero state.
+Every qubit you allocate with the `use` keyword starts in the zero state.
 
 With these ideas in place, let's dive in and start building our random number generator. You'll start by defining an operation that produces a single random bit.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-communication-compliance
+title: Describe communication compliance
+metadata:
+  title: Describe communication compliance
+  description: "Describe communication compliance"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-describe-communication-compliance.md)]

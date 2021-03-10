@@ -121,7 +121,7 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-databases-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSo]
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 

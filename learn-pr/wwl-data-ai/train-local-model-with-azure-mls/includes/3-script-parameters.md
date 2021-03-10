@@ -1,8 +1,8 @@
 You can increase the flexibility of script-based experiments by using arguments to set variables in the script.
 
-## Work with script arguments
+## Working with script arguments
 
-To use parameters in a script, you must use a library such as `argparse` to read the arguments passed to the script, and assign them to variables. For example, the following script reads an argument named `--reg-rate`, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
+To use parameters in a script, you must use a library such as `argparse` to read the arguments passed to the script and assign them to variables. For example, the following script reads an argument named `--reg-rate`, which is used to set the regularization rate hyperparameter for the logistic regression algorithm used to train a model.
 
 ```Python
 from azureml.core import Run
@@ -42,9 +42,9 @@ joblib.dump(value=model, filename='outputs/model.pkl')
 run.complete()
 ```
 
-## Pass arguments to an experiment script
+## Passing arguments to an experiment script
 
-To pass parameter values to a script being run in an experiment, you need to provide an **arguments** value containing a list of comma-separated arguments and their values to the **ScriptRunConfig**, like this.
+To pass parameter values to a script being run in an experiment, you need to provide an **arguments** value containing a list of comma-separated arguments and their values to the **ScriptRunConfig**, like this:
 
 ```Python
 # Create a script config

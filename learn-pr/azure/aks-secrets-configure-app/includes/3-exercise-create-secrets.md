@@ -19,7 +19,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
     ```azurecli-interactive
     az cosmosdb keys list \
-      --type connection-string \
+      --type connection-strings \
       -g $RESOURCE_GROUP \
       -n $DATABASE_NAME \
       -o tsv \

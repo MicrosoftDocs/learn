@@ -17,7 +17,7 @@ abstract: |
   - Understand Microsoft's policies and privacy guarantees
   - Learn how to monitor your resources
   > [!NOTE]
-  > This module has been updated to [Build a cloud governance strategy on Azure](https://docs.microsoft.com/en-us/learn/modules/build-cloud-governance-strategy-azure/).
+  > This module has been updated to [Build a cloud governance strategy on Azure](https://docs.microsoft.com/learn/modules/build-cloud-governance-strategy-azure/).
   > 
   > If you’ve already started this module, you can continue until it’s retired on January 31, 2021. **It’ll be hidden from navigation on November 9, 2020**, so **bookmark it** before then.  
 prerequisites: None

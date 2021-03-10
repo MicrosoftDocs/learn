@@ -19,7 +19,7 @@ To hold all of the users you create in this exercise, create a new organization.
 1. Select **Create**.
 
 1. Wait for the creation of your tenant to be completed.
-1. Switch to the new tenant.
+1. Go to the new tenant by selecting **Click here to manage your new tenant**.
 
     :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization.":::
 
@@ -36,7 +36,7 @@ For Azure AD Premium to complete all the exercises in this module, you'll need t
 1. In the left pane, select **Overview**.
 1. Refresh the browser until you see **Azure AD Premium P2** under the organization name. It may take a couple of minutes.
 
-    :::image type="content" source="../media/3-azure-ad-premium-2.png" alt-text="Screenshot that shows trial enabled.":::
+    :::image type="content" source="../media/3-azure-ad-premium-2.png" alt-text="Screenshot that shows trial is enabled.":::
 
    You should also see your role listed as the **Global administrator**.
 1. Copy the **Primary domain** name to use in the next section.

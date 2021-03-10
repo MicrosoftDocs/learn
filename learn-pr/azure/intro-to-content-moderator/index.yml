@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-content-moderator
+metadata:
+  title: Introduction to Content Moderator
+  description: Discover how Content Moderator can evaluate text, images, and video, for appropriateness.
+  ms.date: 01/29/2021
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Content Moderator
+summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable.
+abstract: | 
+  After completing this module, you will be able to:
+  - Assess the benefits of Content Moderator
+  - Describe what Content Moderator is
+  - Define scenarios where Content Moderator can be applied
+  - Decide if Content Moderator is the right choice for your scenario
+prerequisites: | 
+  - Basic familiarity with Azure
+  - Ability to navigate the Azure portal
+  - Basic familiarity with Azure Cognitive services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- ai-engineer
+- data-scientist
+- functional-consultant
+products:
+- azure
+- azure-cognitive-services
+- azure-cloud-services
+units:
+- learn.azure.intro-to-content-moderator.1-introduction
+- learn.azure.intro-to-content-moderator.2-what-is-content-moderator
+- learn.azure.intro-to-content-moderator.3-how-content-moderator-works
+- learn.azure.intro-to-content-moderator.4-when-to-use-content-moderator
+- learn.azure.intro-to-content-moderator.5-knowledge-check
+- learn.azure.intro-to-content-moderator.6-summary
+badge:
+  uid: learn.azure.intro-to-content-moderator.badge

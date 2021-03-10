@@ -10,9 +10,10 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
 
 1. Sign in to the Cloud Shell or open a command-line session, and create a new .NET Core Console application with the name "PhotoSharingApp". You can add the `-o` or `--output` flag to create the app in a specific folder.
 
-    ```bash
+    ```dotnetcli
     dotnet new console --name PhotoSharingApp
     ```
+
 1. Change into the application directory.
 
     ```bash
@@ -24,6 +25,7 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
     ```dotnetcli
     dotnet run
     ```
+
 ::: zone-end
 
 ::: zone pivot="javascript"

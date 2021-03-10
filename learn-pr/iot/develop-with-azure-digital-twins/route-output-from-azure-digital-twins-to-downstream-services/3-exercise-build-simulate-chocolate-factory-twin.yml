@@ -2,7 +2,7 @@
 uid: learn.iot.output-from-adt-to-downstream-services.exercise-build-simulate-chocolate-factory-twin
 metadata:
   title: Build and simulate the chocolate factory twin
-  description: This unit covers setting up all the resources necessary for creating the chocolate factory twin and simulating data input to the twin
+  description: This unit covers setting up all the resources necessary to create the chocolate factory twin and simulating data input to the twin.
   ms.date: 11/30/2020
   author: raniabayoumy
   ms.author: rabayoum

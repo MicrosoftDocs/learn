@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-hybrid-identity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/08/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the defining feature of hybrid identity solutions?"
+    choices:
+    - content: "They create common user identities for authenticating and authorizing users who operate workstations that run on a variety of operating systems."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Hybrid identity solutions do not recognize workstation operating systems."
+    - content: "They create common user identities that are trusted for authentication and authorization between organizations."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Hybrid identity solutions do not create identities that are trusted between organizations."
+    - content: "They create common user identities for authentication and authorization to both on-premises and cloud-based resources."
+      isCorrect: true
+      explanation: "That's correct. Authentication and authorization are essential for hybrid identity solutions."
+  - content: "Which authentication method requires the least effort regarding deployment, maintenance, and infrastructure?"
+    choices:
+    - content: "Password hash synchronization (PHS)."
+      isCorrect: true
+      explanation: "That's correct. PHS requires the least effort regarding deployment, maintenance, and infrastructure, which typically applies to organizations that only need their users to sign in to Microsoft 365, SaaS apps, and other Azure AD-based resources."
+    - content: "Pass-through authentication (PTA)."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. PTA calls for one or more lightweight agents installed on existing servers. These agents must have access to your on-premises Active Directory Domain Services, including your on-premises AD domain controllers. They also need outbound access to the Internet."
+    - content: "Federated authentication."
+      isCorrect: false
+      explanation: "The authentication system can provide additional advanced authentication requirements, such as smartcard-based authentication or third-party multifactor authentication."
+  - content: "Some situations might require the removal of a server from being monitored by the Azure AD Connect Health service. What needs to be done to start monitoring the same server again?"
+    choices:
+    - content: "The Azure AD Connect Health service needs to be stopped and restarted on any other targeted server in the network."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Stopping and restarting the Azure AD Connect Health service on another server will not allow you to start monitoring on the server you wish to start monitoring again."
+    - content: "The Health Agent needs to be uninstalled and reinstalled on this server."
+      isCorrect: true
+      explanation: "That's correct. To start monitoring a server again, the Health Agent needs to be uninstalled and reinstalled."
+    - content: "The data already collected from this server needs to be deleted and then the Health Agent needs to be reactivated on the server."
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Deleting the data already collected isn't necessary, and there is no way to reactivate the Health Agent without uninstalling and reinstalling it."

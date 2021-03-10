@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following cannot be used in a livestream query?"
+  - content: "Which of the following can't be used in a livestream query?"
     choices:
     - content: "Time parameters"
       isCorrect: true
-      explanation: "Time parameters cannot be used because livestream queries run continuously."
+      explanation: "Time parameters can't be used because livestream queries run continuously."
     - content: "Alert data parameters"
       isCorrect: false
-      explanation: "Alert data can be used in livestream queries"
+      explanation: "Alert data can be used in livestream queries."
     - content: "Event entities"
       isCorrect: false
       explanation: "Event entity parameters can be used in livestream queries."

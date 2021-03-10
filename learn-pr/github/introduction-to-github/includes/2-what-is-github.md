@@ -111,7 +111,7 @@ GitHub provides multiple ways to copy a repository so that you can work on it.
 
 When would you clone a repository versus fork a repository? If you're working with a repository and have write access you can clone it to your local machine. From there you can make modifications and push your changes directly to the **origin** repository.
 
-If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your GitHub account, and then clone the fork to your local machine. To see this visually, let's assume that your GitHub account is called `githubtraining` for this example. Using the GitHub website you can fork `githubtraining` into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
+If you need to work with a repository created by another owner such as `github/example` and don't have write access, you can fork the repository into your GitHub account, and then clone the fork to your local machine. To see this visually, let's assume that your GitHub account is called `githubtraining` for this example. Using the GitHub website you can fork `githubtraining` or any other examples into your account. From there you can clone the forked version of the repository to your local machine. These steps are shown in the following image.
 
 :::image type="content" source="../media/2-fork-clone.png" alt-text="Forking a repository creates a copy of it in your GitHub account. You can then clone your forked copy of the repository to your local machine." border="false":::
 

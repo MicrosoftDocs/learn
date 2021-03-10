@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: introduction-azure-ddos-protection
+metadata:
+  title: "Introduction to Azure DDoS Protection service"
+  description: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection Standard.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure DDoS Protection service"
+summary: Learn how to guard your Azure services from a denial of service attack using Azure DDoS Protection Standard.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Explain Distributed Denial of Service (DDoS) attack types and the components of an effective DDoS response strategy. 
+  - Compare the differences between Azure DDoS Protection Basic and Standard. 
+  - Evaluate Azure DDoS Protection Standard, its features, and architecture options. 
+  - Choose fundamental best practices to build DDoS-resilient services on Azure.  
+prerequisites: |
+  To get the best learning experience from this module, you should have: 
+  - Intermediate-level knowledge of networking concepts such as routing, hubs, switches, and DNS. 
+  - Beginner-level knowledge of Azure networking services, including virtual networks, Express Route, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure Regions. 
+  - Intermediate-level knowledge of security concepts such as the zero-trust security model, identity management, and common network attacks. 
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- technology-manager
+- risk-practitioner
+- security-engineer
+products:
+- azure-ddos-protection
+units:
+- learn.introduction-azure-ddos-protection.1-introduction
+- learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection
+- learn.introduction-azure-ddos-protection.3-how-azure-ddos-protection-works
+- learn.introduction-azure-ddos-protection.4-when-to-use-azure-ddos-protection
+- learn.introduction-azure-ddos-protection.5-knowledge-check
+- learn.introduction-azure-ddos-protection.6-summary
+badge:
+  uid: learn.introduction-azure-ddos-protection.badge

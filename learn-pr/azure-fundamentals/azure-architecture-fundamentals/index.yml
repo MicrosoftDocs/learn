@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.azure-architecture-fundamentals
 metadata:
-  title: Describe core Azure architectural components
-  description: Learn about Azure subscriptions, management groups, resource groups, Azure Resource Manager, Azure regions, and availability zones.
+  title: Describe core Azure architectural components (AZ-900)
+  description: Learn about Azure subscriptions, management groups, resource groups, Azure Resource Manager, Azure regions, and availability zones. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe core Azure architectural components

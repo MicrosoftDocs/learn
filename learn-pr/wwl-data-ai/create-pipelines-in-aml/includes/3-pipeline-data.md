@@ -16,8 +16,10 @@ You can view a **PipelineData** object as an intermediary store for data that mu
 To use a **PipelineData** object to pass data between steps, you must:
 
 1. Define a named **PipelineData** object that references a location in a datastore.
-2. Pass the **PipelineData** object as a script argument in steps that run scripts (and include code in those scripts to read or write data)
-3. Specify the **PipelineData** object as an *input* or *output* for the steps as appropriate.
+
+1. Pass the **PipelineData** object as a script argument in steps that run scripts (and include code in those scripts to read or write data).
+
+1. Specify the **PipelineData** object as an *input* or *output* for the steps as appropriate.
 
 For example, the following code defines a **PipelineData** object that for the preprocessed data that must be passed between the steps.
 
@@ -46,7 +48,7 @@ step1 = PythonScriptStep(name = 'prepare data',
 # Step to run an estimator
 step2 = PythonScriptStep(name = 'train model',
                          source_directory = 'scripts',
-                         script_name = 'data_prep.py',
+                         script_name = 'data_train.py',
                          compute_target = 'aml-cluster',
                          # Pass as script argument
                          arguments=['--in_folder', prepped_data],

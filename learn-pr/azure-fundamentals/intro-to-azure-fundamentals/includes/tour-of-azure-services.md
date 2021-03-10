@@ -82,7 +82,7 @@ Azure provides four main types of storage services.
 > | Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps.              |
 > | Azure File storage  | File shares that can be accessed and managed like a file server.                     |
 > | Azure Queue storage | A data store for queuing and reliably delivering messages between applications.      |
-> | Azure Table storage | A NoSQL store that hosts unstructured data independent of any schema.                |
+> | Azure Table storage | Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design..                |
 
 These services all share several common characteristics:
 
@@ -172,7 +172,7 @@ Here are some of the most common AI and machine learning service types in Azure.
 > | Service name | Description |
 > |--------------|-------------|
 > | Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud. |
-> | Azure Machine Learning Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
+> | Azure ML Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
 
 A closely related set of products are the _cognitive services_. You can use these prebuilt APIs in your applications to solve complex problems.
 

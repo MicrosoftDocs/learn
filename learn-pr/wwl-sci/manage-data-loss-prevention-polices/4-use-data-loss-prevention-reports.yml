@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-loss-prevention-polices.use-data-loss-prevention-reports
+title: Explain data loss prevention reporting capabilities
+metadata:
+  title: Explain data loss prevention reporting capabilities
+  description: "Explain data loss prevention reporting capabilities"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-data-loss-prevention-reports.md)]

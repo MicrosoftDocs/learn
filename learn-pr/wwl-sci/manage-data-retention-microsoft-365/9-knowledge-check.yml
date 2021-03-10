@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How can users restore previous versions of their documents?"
+    choices:
+    - content: "eDiscovery cases"
+      isCorrect: false
+      explanation: "eDiscovery cases don't provide versioning."
+    - content: "Versioning in SharePoint Online"
+      isCorrect: true
+      explanation: "Correct. SharePoint Online provides versioning."
+    - content: "Exchange hidden mailbox folders."
+      isCorrect: false
+      explanation: "Exchange hidden mailbox folders doesn't resolve it."
+  - content: "How can all messages of a single Exchange mailbox be retained?"
+    choices:
+    - content: "Activating litigation hold on the mailbox."
+      isCorrect: true
+      explanation: "Correct, litigation hold is the right answer."
+    - content: "Using single item recovery."
+      isCorrect: false
+      explanation: "Using single item recovery does not solve the situation."
+    - content: "Using a preservation hold library."
+      isCorrect: false
+      explanation: "A preservation hold does not solve the situation."
+  - content: "Which feature should be used to support users in archiving their mailbox messages?"
+    choices:
+    - content: "Preservation Hold Libraries"
+      isCorrect: false
+      explanation: "Preservation Hold Libraries are used in SharePoint Online to retain documents and files."
+    - content: "Litigation Hold"
+      isCorrect: false
+      explanation: "litigation Hold is used to retain all items of a user mailbox and prevent deletion."
+    - content: "Retention Tags"
+      isCorrect: true
+      explanation: "Correct, retention tags are used for archiving messages to the users archive mailbox or to empty default folders, such as Junk or Deleted items."

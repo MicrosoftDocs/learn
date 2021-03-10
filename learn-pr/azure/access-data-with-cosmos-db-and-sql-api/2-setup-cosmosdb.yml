@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - set up your Azure Cosmos DB database and container
 durationInMinutes: 10
 interactive: bash

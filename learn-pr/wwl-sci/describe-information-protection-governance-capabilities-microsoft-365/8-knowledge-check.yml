@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which part of the concept of know your data, protect your data, and prevent data loss addresses the need for organizations to automatically retain, delete, store data and records in a compliant manner?"
+    choices:
+    - content: "Know your data"
+      isCorrect: false
+      explanation: "This component helps to address the need for organizations to understand their data landscape and identify important data across on-premises, cloud, and hybrid environments. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​​​​​"
+    - content: "Prevent data loss"
+      isCorrect: false
+      explanation: "This component helps to address the need for organizations to detect risky behavior and prevent accidental oversharing of sensitive information. Instead, govern your data to address the need to automatically retain, delete, store data, and records in a compliant manner.​​​​​​​​​"
+    - content: "Govern your data"
+      isCorrect: true
+      explanation: "Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.​​​​​​"
+  - content: "As part of a new data loss prevention policy, the compliance admin needs to be able to identify important information such as credit card numbers, across the organization's data. How can the admin address this requirement?"
+    choices:
+    - content: "Use activity explorer"
+      isCorrect: false
+      explanation: "​​​Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use sensitive information types to identify sensitive information like credit card numbers.​​​"
+    - content: "Use sensitivity labels"
+      isCorrect: false
+      explanation: "Sensitivity labels enable you to apply to content like emails and documents, much like different stamps can be applied to physical documents. Instead, use sensitive information types to identify specific types of information such as credit card numbers.​​​​​​"
+    - content: "Use sensitive information types"
+      isCorrect: true
+      explanation: "​​​Microsoft provides built-in sensitive information types that you can use to identify data such as credit card numbers.​​"
+  - content: "Within the organization, some emails are confidential and should be encrypted so that only authorized users can read them. How can this requirement be implemented?"
+    choices:
+    - content: "Use the content explorer"
+      isCorrect: false
+      explanation: "Content explorer enables admins to get a current snapshot of individual items that have been classified across the organization. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+    - content: "Use sensitivity labels"
+      isCorrect: true
+      explanation: "​​​Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+    - content: "Use Records Management"
+      isCorrect: false
+      explanation: "​​​You don't use Record Management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+  - content: "Your organization uses Microsoft Teams to collaborate on all projects. The compliance admin wants to prevent users from accidentally sharing sensitive information in a Microsoft Teams chat session. What capability can address this requirement?"
+    choices:
+    - content: "Use data loss prevention policies"
+      isCorrect: true
+      explanation: "With data loss prevention policies, administrators can now define policies that can prevent users from sharing sensitive information in a Microsoft Teams chat session or Teams channel, whether this information is in a message, or in a file.​​​​​​"
+    - content: "Use Records Management capabilities"
+      isCorrect: false
+      explanation: "​​​Records Management won't let you do this. Instead, use data loss prevention policies.​​​"
+    - content: "Use retention policies"
+      isCorrect: false
+      explanation: "​​​Retention policies won't let you do this. Instead, use data loss prevention policies.​​​"
+  - content: "Due to a certain regulation, your organization must now keep hold of all documents in a specific SharePoint site that contains customer information for five years. How can this requirement be implemented?"
+    choices:
+    - content: "Use sensitivity labels"
+      isCorrect: false
+      explanation: "​​​You don't use sensitivity labels to define data retention. Instead, use retention policies.​​​​​​"
+    - content: "Use the content explorer"
+      isCorrect: false
+      explanation: "Content explorer won't let you define data retention. Instead, use retention policies.​​​​​​​​​"
+    - content: "Use retention policies"
+      isCorrect: true
+      explanation: "You can use retention policies to define data retention for all documents in a SharePoint site.​​​​​​"

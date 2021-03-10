@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization plans to implement Conditional Access. What do admins need to do?"
+    choices:
+    - content: "Create policies that enforce organizational rules."
+      isCorrect: true
+      explanation: "That's correct. Conditional Access is implemented using policies that enforce organizational rules."
+    - content: "Check that all users have multifactor authentication enabled."
+      isCorrect: false
+      explanation: "That's incorrect. Conditional Access policies may require a user to sign in with multifactor authentication, but it isn't part of their implementation."
+    - content: "Amend your apps to allow Conditional Access."
+      isCorrect: false
+      explanation: "That's incorrect. Conditional Access doesn't require apps to be changed in any way."
+  - content: "Sign-in risk is a signal used by Conditional Access policies to decide whether to grant or deny access. What is sign-in risk?"
+    choices:
+    - content: "The probability that the device is owned by the identity owner."
+      isCorrect: false
+      explanation: "That's incorrect. Sign-in risk doesn't calculate any probability relating to users’ devices."
+    - content: "The probability that the authentication request is authorized by the identity owner."
+      isCorrect: true
+      explanation: "That's correct. Sign-in risk is the real-time calculation that a given authentication request was made by the specific user’s identity."
+    - content: "The probability that the user is authorized to view data from a particular application."
+      isCorrect: false
+      explanation: "That's incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
+  - content: "IT admins have been asked to review Azure AD roles assigned to users, to improve organizational security. Which of the following should they implement?"
+    choices:
+    - content: "Remove all global admin roles assigned to users."
+      isCorrect: false
+      explanation: "That's incorrect. There should be the least number of global admin roles required for the organization, and a minimum of two."
+    - content: "Create custom roles."
+      isCorrect: false
+      explanation: "That's incorrect. Custom roles give flexibility when granting access but aren't necessarily more secure than built-in roles."
+    - content: "Replace global admin roles with specific Azure AD roles."
+      isCorrect: true
+      explanation: "That's correct. By following the least privilege security model and assigning specific admin roles, such as billing administrator or user administrator, to more users, instead of global admin roles, organizational security is improved."

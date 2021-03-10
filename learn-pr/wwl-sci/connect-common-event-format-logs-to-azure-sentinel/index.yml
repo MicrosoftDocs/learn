@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel
+metadata:
+  title: Connect Common Event Format logs to Azure Sentinel
+  description: "Connect Common Event Format logs to Azure Sentinel"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Common Event Format logs to Azure Sentinel
+summary: Most vendor-provided connectors utilize the CEF connector. Learn about the Common Event Format (CEF) connector's configuration options.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain the Common Event Format connector deployment options in Azure Sentinel
+  - Run the deployment script for the Common Event Format connector
+prerequisites: |
+  - Basic knowledge of operational concepts such as monitoring, logging, and alerting
+  - Basic knowledge of Linux
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.introduction
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.plan-for-connector
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.connect-your-external-solution-use-connector
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.knowledge-check
+- learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.summary-resources
+badge:
+  uid: learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.badge

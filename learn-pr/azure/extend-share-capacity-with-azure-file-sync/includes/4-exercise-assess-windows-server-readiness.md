@@ -6,7 +6,7 @@ Before you install and set up Azure File Sync on your company's CAD file server,
 
 The following video shows how to do the assessment on your on-premises server. Follow the steps in this exercise to complete the assessment on a virtual machine that you create in your Azure subscription.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-File-Sync-Unit4/player?format=ny]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LpZg]
 
 ## Create a Windows file server
 

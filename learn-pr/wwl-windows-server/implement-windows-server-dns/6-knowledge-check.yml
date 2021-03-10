@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-dns.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is the first step for a Windows 10 computer attempting to resolve a hostname into an IP address?"
+    choices:
+    - content: "Broadcast a NetBIOS name query."
+      isCorrect: false
+      explanation: "That's incorrect. Windows 10 computers don't implement NetBIOS name resolution unless other methods fail."
+    - content: "Check the DNS resolver cache."
+      isCorrect: true
+      explanation: "That's correct. Windows 10 computers check their DNS resolver cache before performing any other type of name resolution."
+    - content: "Petition the configured DNS server."
+      isCorrect: false
+      explanation: "That's incorrect. The Windows 10 computer will check DNS, but not until it has verified whether the required record is in cache."
+  - content: "Which of the following statements about DNS secondary zones is true?"
+    choices:
+    - content: "The zone can be updated by client computers."
+      isCorrect: false
+      explanation: "That's incorrect. Secondary zones are read-only."
+    - content: "Zone transfers are automatically enabled between the primary and secondary servers."
+      isCorrect: false
+      explanation: "That's incorrect. Zone transfers must be manually configured between servers."
+    - content: "Secondary zones are read-only."
+      isCorrect: true
+      explanation: "That's correct. Secondary zones are read-only and receive their zone records from another DNS server."
+  - content: "In which of the following situations should an administrator at Contoso create a stub zone?"
+    choices:
+    - content: "When integrating with autonomous systems such as partner organizations."
+      isCorrect: true
+      explanation: "That's correct. The purpose of a stub zone is to provide a list of name servers that can be used to resolve information for a domain without synchronizing all the records locally."
+    - content: "When providing for reverse lookups in the DNS infrastructure."
+      isCorrect: false
+      explanation: "That's incorrect. Reverse zones are used to resolve IP addresses into names."
+    - content: "To provide for internet-based client computers that need to resolve internal DNS resource records."
+      isCorrect: false
+      explanation: "That's incorrect. This is a description of a public, internet-facing DNS server."

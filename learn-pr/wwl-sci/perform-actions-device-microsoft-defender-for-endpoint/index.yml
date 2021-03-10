@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint
+metadata:
+  title: Perform actions on a device using Microsoft Defender for Endpoint
+  description: "Perform actions on a device using Microsoft Defender for Endpoint"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Perform actions on a device using Microsoft Defender for Endpoint
+summary: Learn how Microsoft Defender for Endpoint provides the remote capability to contain devices and collect forensics data.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Perform actions on a device using Microsoft Defender for Endpoint
+  - Conduct forensics data collection using Microsoft Defender for Endpoint
+  - Access devices remotely using Microsoft Defender for Endpoint
+prerequisites: |
+  Intermediate understanding of Windows 10.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- m365
+- m365-threat-protection
+units:
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.introduction
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.understand-device-actions
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.run-antivirus-scan-devices
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.collect-investigation-package-from-devices
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.initiate-live-response-session
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.knowledge-check
+- learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.summary-resources
+badge:
+  uid: learn.wwl.perform-actions-device-microsoft-defender-for-endpoint.badge

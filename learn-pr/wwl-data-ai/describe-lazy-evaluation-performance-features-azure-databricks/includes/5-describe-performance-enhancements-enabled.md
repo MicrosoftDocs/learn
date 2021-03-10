@@ -3,7 +3,7 @@ In the previous unit, you explored actions and transformations. As opposed to na
 ## Pipelining
 
 - Pipelining is the idea of executing as many operations as possible on a single partition of data.
-- Once a single partition of data is read into RAM, Spark will combine as many narrow operations as it can into a single **Task**
+- Once a single partition of data is read into RAM, Spark will combine as many narrow operations as it can into a single **Task**.
 - Wide operations force a shuffle, conclude a stage, and end a pipeline.
 
 ## Shuffles
@@ -35,7 +35,7 @@ Spark has optimized this operation by using a format called **Tungsten**.
 
 Tungsten prevents the need for expensive serialization and de-serialization of objects in order to get data from one JVM to another.
 
-The data that is "shuffled" is in a format known as `UnsafeRow`, or more commonly, the **Tungsten Binary Format**.
+The data that is *shuffled* is in a format known as `UnsafeRow`, or more commonly, the **Tungsten Binary Format**.
 
 `UnsafeRow` is the in-memory storage format for Spark SQL, DataFrames & Datasets.
 
@@ -51,7 +51,7 @@ Advantages include:
 
 - The first field, "123", is stored in place as its primitive.
 - The next 2 fields, "data" and "bricks", are strings and are of variable length.
-- An offset for these two strings is stored in place (32L and 48L respectively shown in the picture below).
+- An offset for these two strings is stored in place (32L and 48L, respectively, shown in the following image).
 - The data stored in these two offset's are of format "length + data".
 - At offset 32L, we store 4 + "data" and likewise at offset 48L we store 6 + "bricks".
 
@@ -62,7 +62,7 @@ Advantages include:
 - When we shuffle data, it creates what is known as a stage boundary.
 - Stage boundaries represent a process bottleneck.
 
-Take for example the following transformations:
+For example, take the following transformations:
 
 |Step |Transformation|
 |----:|--------------|
@@ -96,22 +96,22 @@ Spark will break this one job into two stages (steps 1-4b and steps 4c-7):
 | 6   | Filter |
 | 7   | Write |
 
-In **Stage #1**, Spark will create a pipeline of transformations in which the data is read into RAM (Step #1), and then perform steps #2, #3, #4a & #4b
+In **Stage #1**, Spark will create a pipeline of transformations in which the data is read into RAM (Step #1), and then perform steps #2, #3, #4a & #4b.
 
-All partitions must complete **Stage #1** before continuing to **Stage #2**
+All partitions must complete **Stage #1** before continuing to **Stage #2**.
 
 - It's not possible to group all records across all partitions until every task is completed.
 - This is the point at which all the tasks must synchronize.
 - This creates our bottleneck.
 - Besides the bottleneck, this is also a significant performance hit: disk IO, network IO and more disk IO.
 
-Once the data is shuffled, we can resume execution...
+After the data is shuffled, we can resume execution.
 
 For **Stage #2**, Spark will again create a pipeline of transformations in which the shuffle data is read into RAM (Step #4c) and then perform transformations #4d, #5, #6 and finally the write action, step #7.
 
 ## Lineage
 
-From the developer's perspective, we start with a read and conclude (in this case) with a write:
+From the developer's perspective, we start with a read and conclude (in this case) with a write.
 
 |Step |Transformation|
 |----:|--------------|
@@ -146,9 +146,9 @@ It then proceeds to determine which transformation precedes this step until it i
 
 Take another look at our example:
 
-- Say we've executed this once already
-- On the first execution, step #4 resulted in a shuffle
-- Those shuffle files are on the various executors (`src` & `dst`)
+- Say we've executed this once already.
+- On the first execution, step #4 resulted in a shuffle.
+- Those shuffle files are on the various executors (`src` & `dst`).
 - Because the transformations are immutable, no aspect of our lineage can change.
 - That means the results of our last shuffle (if still available) can be reused.
 
@@ -164,7 +164,7 @@ Take another look at our example:
 
 In this case, what we end up executing is only the operations from **Stage #2**.
 
-This saves us the initial network read and all the transformations in **Stage #1**
+This saves us the initial network read and all the transformations in **Stage #1**.
 
 |Step |Transformation|   |
 |----:|---------------|:-:|
@@ -189,7 +189,7 @@ Shuffle files are by definition temporary files and will eventually be removed.
 
 However, we cache data to explicitly accomplish the same thing that happens inadvertently with shuffle files.
 
-In this case, the lineage plays the same role. Take for example:
+In this case, the lineage plays the same role, for example:
 
 |Step |Transformation| |
 |----:|--------------|-|
@@ -205,7 +205,7 @@ In this case we cached the result of the `select(..)`.
 
 We never even get to the part of the lineage that involves the shuffle, let alone **Stage #1**.
 
-Instead, we pick up with the cache and resume execution from there:
+Instead, we pick up with the cache and resume execution from there.
 
 |Step |Transformation|   |
 |----:|---------------|:-:|

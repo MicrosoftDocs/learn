@@ -1,4 +1,4 @@
-As mentioned previously, Transport Layer Security (TLS) is the basis for encryption of website data in transit. TLS uses _certificates_ to encrypt and decrypt data. However, these certificates have a lifecycle that requires administrator management. A common security problem with websites is having expired TLS certificates that open security vulnerabilities.
+As mentioned previously, Transport Layer Security (TLS) is the basis for encrypting website data in transit. TLS uses _certificates_ to encrypt and decrypt data. However, these certificates have a life-cycle that requires administrator management. A common security problem with websites has expired TLS certificates that open security vulnerabilities.
 
 Certificates used in Azure are **x.509 v3** and can be signed by a trusted certificate authority, or they can be self-signed. A self-signed certificate is signed by its own creator; therefore, it is not trusted by default. Most browsers can ignore this problem. However, you should only use self-signed certificates when developing and testing your cloud services. These certificates can contain a private or a public key and have a thumbprint that provides a means to identify a certificate in an unambiguous way. This thumbprint is used in the Azure configuration file to identify which certificate a cloud service should use.
 
@@ -19,7 +19,7 @@ You can manage service certificates separately from your services, and you can h
 
 ### Management certificates
 
-Management certificates allow you to authenticate with the classic deployment model. Many programs and tools (such as Visual Studio or the Azure SDK) use these certificates to automate configuration and deployment of various Azure services. However, these types of certificates are not related to cloud services.
+Management certificates allow you to authenticate with the classic deployment model. Many programs and tools (such as Visual Studio or the Azure SDK) use these certificates to automate the configuration and deployment of various Azure services. However, these types of the certificates are not related to cloud services.
 
 ## Using Azure Key Vault with certificates
 
@@ -28,7 +28,7 @@ You can store your certificates in Azure Key Vault - much like any other secret.
 - You can create certificates in Key Vault, or import existing certificates
 - You can securely store and manage certificates without interaction with private key material.
 - You can create a policy that directs Key Vault to manage the life cycle of a certificate.
-- You can provide contact information for notification about life-cycle events of expiration and renewal of certificate.
+- You can provide contact information for notification about life-cycle events of expiration and renewal of the certificate.
 - You can automatically renew certificates with selected issuers - Key Vault partner x509 certificate providers / certificate authorities.
 
-Automating certificate management helps to reduce or eliminate the error prone task of manual certificate management.
+Automating certificate management helps to reduce or eliminate the error-prone task of manual certificate management.

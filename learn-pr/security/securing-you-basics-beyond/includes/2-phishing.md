@@ -40,7 +40,7 @@ One other common approach that attackers use is to take advantage of your curios
 
 First, recognize phishing! The following video has some guidance on what to look for, and how to handle a possible phishing email.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-WWL/Securing-you-Phishing-emails/player?format=ny#EndOfVideo=false]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Lzt0]
 
 Here are some common features of phishing attacks:
 

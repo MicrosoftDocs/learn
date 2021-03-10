@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-group-policy-objects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In Adatum.com, there are two sites: London and Windsor. A single GPO (called London settings) is linked to London and another (Windsor settings) is linked to Windsor. In addition, there are two GPOs linked to the Adatum.com domain: The Default Domain GPO (which is Enforced) and a further policy: Adatum Folder Redirection (which has a link order value of 2). The Sales OU has a linked GPO called Sales Desktop settings. A user in the Sales department based in Windsor, whose user account and computer account reside in the Sales OU, is experiencing problems with settings on their computer. An administrator decides to investigate. The administrator suspects that there are conflicting settings in the various GPOs that apply to the user and their computer. Which GPO's settings take precedence?"
+    choices:
+    - content: "The Default Domain GPO"
+      isCorrect: true
+      explanation: "That's correct. This policy takes precedence because it is Enforced."
+    - content: "The Windsor settings GPO"
+      isCorrect: false
+      explanation: "That's incorrect. This policy is superseded by more specific GPOs on the domain and OU."
+    - content: "The Sales Desktop settings GPO"
+      isCorrect: false
+      explanation: "That's incorrect. Although this GPO is the most specific, its settings are overridden by settings in the enforced Default Domain policy."
+  - content: "Which of the following options contains the GPO settings?"
+    choices:
+    - content: "The Group Policy container"
+      isCorrect: false
+      explanation: "That's incorrect. The Group Policy container defines basic attributes of the GPO, but it does not contain any of the settings."
+    - content: "The Group Policy template"
+      isCorrect: true
+      explanation: "That's correct. The Group Policy template contains the Group Policy settings."
+  - content: "The IT department in Adatum is deploying a new version of Microsoft Office in their on-premises environment. The administrator wants to configure settings with GPOs for Office. What should they do?"
+    choices:
+    - content: "Download and install new .adml files and then configure the desired settings in the Administrative Templates node in the appropriate GPO."
+      isCorrect: false
+      explanation: "That's incorrect. .adml files store only language-specific information and don't directly deal with GPO settings."
+    - content: "Copy the content of the Windows\\PolicyDefinitions folder to the Central Store."
+      isCorrect: false
+      explanation: "That's incorrect. Although a Central Store makes managing Administrative Templates easier, Adatum administrators still need updated template files."
+    - content: "Download and install new administrative template files and then configure the desired settings in the Administrative Templates node in the appropriate GPO."
+      isCorrect: true
+      explanation: "That's correct. You must update the .admx and .adml files together."

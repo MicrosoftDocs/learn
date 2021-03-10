@@ -124,7 +124,7 @@ But how do these tools fit into a DevOps world? In this short video, Abel Wang, 
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-security-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LR1Y]
 
 ## The importance of a secure development strategy
 

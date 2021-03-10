@@ -4,7 +4,7 @@ In this exercise, you'll add a timer to control timeout during the execution of 
 
 ## Add moment npm package to your function app
 
-Before changing our workflow, we'll add the **moment** npm package to our function app through the console. 
+Before changing our workflow, we'll add the **moment** npm package to our function app through the console. fv
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
@@ -34,8 +34,6 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 1. Name the function **Escalation**, and then select **Create Function**.
 
 1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
-
-1. When the function has been created, replace the code in **index.js** for this function with the following example:
 
     ``` javascript
     module.exports = async function (context) {

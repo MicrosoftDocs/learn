@@ -8,7 +8,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - View activity logs for Azure RBAC changes
 labId: 46468
 labModal: true

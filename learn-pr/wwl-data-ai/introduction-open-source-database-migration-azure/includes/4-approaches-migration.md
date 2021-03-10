@@ -1,4 +1,8 @@
-A common approach to data migration is to selectively export data from one or more source databases into an intermediate file. You then import the data in that file into the destination database.
+You can take many different approaches to database migration, such and online or offline migration, backup and restore migration, or migration with custom SQL code or scripts. Each approach is most appropriate for certain business scenarios.
+
+In your start-up company, for example, the supplier communication database is critical and you want to try and migrate without any disruption to the service to users. This department of the company operates on a 24/7 basis and there are few predictable quiet times when you could take the database offline. The Computer Aided Design (CAD) system, by contrast, is only used during the week so you could take it offline over a weekend and migrate it to Azure. 
+
+Here, you'll learn about approaches, techniques, and tools that you can select to execute the migration.
 
 ### When to use export and import
 
@@ -10,7 +14,7 @@ Consider using export and import techniques:
 
 - When you want to migrate database objects such as constraints, views, functions, procedures, and triggers, and control how these objects are set up in the cloud database.
 
-- When you want to import data from external sources other than MySQL or PostgreSQL.
+- When you want to import data from external sources other than MySQL, MariaDB, or PostgreSQL.
 
 For example, you might consider export and import in these scenarios:
 
@@ -31,9 +35,9 @@ Make sure you understand how the following objects will be migrated:
 - Views, functions, procedures, and triggers.
 - User accounts and permissions.
 
-### MySQL export and import
+### Export and import for MySQL and MariaDB
 
-You can use SQL scripts to perform selective export and import from one database to another. However, if your on-premises database is in MySQL, there are several tools available to help, including:
+You can use SQL scripts to perform selective export and import from one database to another. However, if your on-premises database is in MySQL or MariaDB, there are several tools available to help, including:
 
 - **MySQL Workbench**. This is a popular database design tool with a Graphical User Interface (GUI) developed by Oracle Corporation. It includes a **Data Export** tool with flexible data selection options.
 
@@ -44,7 +48,7 @@ You can use SQL scripts to perform selective export and import from one database
 - **mysqlimport**. This command-line tool can import data from text files.
 
 > [!IMPORTANT]
-> Azure Database for MySQL only supports the InnoDB storage engine. If you have any tables that use the MyISAM engine, you must convert them to InnoDB before migrating to Azure.
+> Azure Database for MySQL and Azure Database for MariaDB only support the InnoDB storage engine. If you have any tables that use other engines, such as the MyISAM engine, you must convert them to InnoDB before migrating to Azure.
 
 ### PostgreSQL export and import
 
@@ -78,13 +82,13 @@ You could consider using backup and restore to perform a migration in cases like
 
 When you restore a database from a backup file to a cloud location, consider the quantity of data that must be sent across the network to the cloud database. To optimize this data transfer, copy the backed-up database to a virtual machine in the same region as the destination database, and restore from there. This restore is quicker than using an on-premises backup file and is less likely to cause contention for network bandwidth.
 
-### Plan a backup and restore on MySQL
+### Plan a backup and restore on MySQL and MariaDB
 
 To back up a database on an on-premises server, you use the `mysqldump` tool at the command line. That creates a .sql file that you restore to the cloud database by passing it to the `mysql` command as a script. If you prefer a GUI tool, choose the **PHPMyAdmin** application, or **MySQL Workbench**. These GUI tools can both back up and restore the data.
 
-Remember that Azure Database for MySQL only supports the InnoDB engine. Make sure you convert any MyISAM tables to InnoDB before you execute the backup.
+Remember that Azure Database for MySQL and Azure Database for MariaDB only support the InnoDB engine. Make sure you convert all tables to InnoDB before you execute the backup.
 
-To avoid any compatibility problems, check that the version number of MySQL used in the cloud matches the version number of the on-premises database server. Azure Database for MySQL supports versions 5.6, 5.7, and 8.0. If your on-premises server uses an earlier version, consider upgrading to one of these versions first and troubleshooting any issues on-premises, before you migrate to the cloud.
+To avoid any compatibility problems, check that the version number of MySQL or MariaDB used in the cloud matches the version number of the on-premises database server. Azure Database for MySQL supports versions 5.6, 5.7, and 8.0. Azure Database for MariaDB supports versions 10.2 and 10.3. If your on-premises server uses an earlier version, consider upgrading to one of these versions first and troubleshooting any issues on-premises, before you migrate to the cloud.
 
 ### Plan a backup and restore on PostgreSQL
 
@@ -92,7 +96,7 @@ The equivalent command-line backup and restore tools on PostgreSQL are `pg_dump`
 
 ## Custom application code
 
-If you have extensive data transformation requirements or want to perform an unusual migration, consider writing your own custom code to move data from an on-premises MySQL or PostgreSQL database into the cloud.
+If you have extensive data transformation requirements or want to perform an unusual migration, consider writing your own custom code to move data from an on-premises MySQL, PostgreSQL, or MariaDB database into the cloud.
 
 Your custom code could take many forms. The language and framework you choose depends mostly on your development team's expertise:
 
@@ -107,7 +111,7 @@ The drawback to this approach is that it requires more investment in development
 
 ## Azure Database Migration Service
 
-Azure includes a flexible service called **Azure Database Migration Service (DMS)**, which you use to do seamless online migrations from multiple data sources into Azure data platforms. These platforms include **Azure Database for MySQL** and **Azure Database for PostgreSQL**.
+Azure includes a flexible service called **Azure Database Migration Service (DMS)**, which you use to do seamless online migrations from multiple data sources into Azure data platforms. These platforms include **Azure Database for MySQL**, **Azure Database for MariaDB**, and **Azure Database for PostgreSQL**.
 
 Consider using Azure DMS whenever you want to perform an online database migration into Azure.
 
@@ -128,17 +132,22 @@ To perform a migration with DMS, you complete these tasks:
 
 Azure DMS is a good tool to use for online migrations, in which the original database remains available while the migration executes. Users continue to make changes to data in the source database. Azure DMS uses replication to synchronize these changes with the migrated database. Once migration is complete, you reconfigure the user applications to connect to the migrated database.
 
-## Migrate MySQL to Azure SQL Database
+## Migrate MySQL or MariaDB to Azure SQL Database
 
 If you want to move a database that's hosted on-premises on a MySQL database server into the Azure cloud—and you don't need the cloud database to run MySQL—consider migrating to Azure SQL Database. Azure SQL Database is a PaaS implementation of Microsoft's industry-leading SQL Server database engine. It includes enterprise-level availability, scalability, and security, and is easy to monitor and manage.
 
-Azure SQL Database is more fully-featured than Azure Database for MySQL.
+Similarly, if your on-premises database server runs MariaDB, you can consider migrating to Azure SQL Database. The process is very similar because MariaDB is a fork of MySQL.
+
+Azure SQL Database is more fully-featured than Azure Database for MySQL and Azure Database for MariaDB.
 
 > [!NOTE]
-> You might need to modify any applications that connect to your migrated database—because Azure SQL Database uses different data types, different database objects, and a different API from MySQL. Consult your developers to determine how much work is required to port a client application from an on-premises MySQL database to a cloud Azure SQL database.
+> You might need to modify any applications that connect to your migrated database—because Azure SQL Database uses different data types, different database objects, and a different API from MySQL and MariaDB. Consult your developers to determine how much work is required to port a client application from an on-premises MySQL or MariaDB database to a cloud Azure SQL database.
 
-### SQL Server Migration Assistant for MySQL
+## SQL Server Migration Assistant for MySQL
 
-If you decide to migrate to Azure SQL Database, you can use a specialized tool: **SQL Server Migration Assistant for MySQL**. This GUI tool connects to a source MySQL database and a SQL Server database, which can be a database in the Azure SQL Database service.
+If you decide to migrate from MySQL to Azure SQL Database, you can use a specialized tool: **SQL Server Migration Assistant for MySQL**. This GUI tool connects to a source MySQL database and a SQL Server database, which can be a database in the Azure SQL Database service.
 
 When it's connected, the assistant copies the complete schema to Azure SQL Database, and converts any data types to their SQL Server equivalents. It also migrates views, procedures, triggers, and other objects. You can then start to migrate the data from MySQL to Azure SQL Database.
+
+> [!NOTE]
+> SQL Server Migration Assistant for MySQL is not tested for migrating MariaDB databases to Azure SQL Database.

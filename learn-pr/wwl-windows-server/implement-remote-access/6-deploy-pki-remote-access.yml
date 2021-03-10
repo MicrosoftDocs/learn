@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-remote-access.deploy-pki-remote-access
+title: Deploy a PKI for remote access
+metadata:
+  title: Deploy a PKI for remote access
+  description: "Deploy a PKI for remote access"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-deploy-pki-remote-access.md)]

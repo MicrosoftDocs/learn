@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-migrating-aspnet-apps-azure
+metadata:
+  title: Introduction to migrating ASP.NET apps to Azure
+  description: Migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database, can provide many advantages, but also challenges. Learn how to evaluate the migration process to determine if it’s right for your application.
+  ms.date: 01/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to migrating ASP.NET apps to Azure
+summary: Evaluate the process of migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database. Identify the benefits and challenges of the migration process.
+abstract: | 
+  After completing this module, you'll be able to:
+
+  - Assess application migration considerations.
+  - Determine which tools can help evaluate existing infrastructure.
+  - Evaluate key findings to plan a migration.
+  - Decide if migration is the right choice.
+prerequisites: | 
+  - Core Azure concepts such as Infrastructure as a Service (IaaS), Platform as Service (PaaS), and Software as a Service (SaaS)
+  - Common Windows Server management tools
+  - Core Microsoft computer, storage, network, and virtualization technologies
+  - On-premises resiliency Windows Server-based compute and storage technologies
+  - Implementing and managing IaaS services in Microsoft Azure
+iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
+levels: 
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.intro-to-migrating-aspnet-apps-azure.1-introduction
+- learn.azure.intro-to-migrating-aspnet-apps-azure.2-what-is-asp-net-app-migration
+- learn.azure.intro-to-migrating-aspnet-apps-azure.3-evaluate-migration-considerations
+- learn.azure.intro-to-migrating-aspnet-apps-azure.4-investigate-migration-assistants-and-options
+- learn.azure.intro-to-migrating-aspnet-apps-azure.5-knowledge-check
+- learn.azure.intro-to-migrating-aspnet-apps-azure.6-summary
+badge:
+  uid: learn.azure.intro-to-migrating-aspnet-apps-azure.badge

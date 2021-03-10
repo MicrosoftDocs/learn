@@ -1,8 +1,8 @@
-The Azure portal provides the Import data wizard that allows you to automatically create an index, and indexer, for supported data sources.
+The Azure portal provides the Import data wizard that enables you to automatically create an index, and indexer, for supported data sources.
 
-Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties: video title, exercise difficulty, video length, and publication date. It is hoped that these changes will improve user experience and result in fewer complaints about being unable to find relevant content.
+Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content, or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties: video title, exercise difficulty, video length, and publication date. It is hoped that these changes will improve their experience, and result in fewer complaints about being unable to find relevant content.
 
-Your database team has exported your company's current video catalog into a JSON array, to allow you to upload the catalog into Azure Blob storage so that is it accessible by a search indexer. The data is in the following format:
+Your database team has exported your company's current video catalog into a JSON array. This enables you to upload the catalog into Azure Blob storage so that is it accessible by a search indexer. The data is in the following format:
 
 ```json
 [
@@ -37,7 +37,7 @@ Your database team has exported your company's current video catalog into a JSON
 
 A video has a title string, a difficulty rating integer, length in minutes, a publication date and time, and a file size in megabytes.
 
-In the unit, you'll use the Import data wizard to create an index, and import your video catalog into the Azure Cognitive Search service you created earlier.
+In this exercise, you'll use the Import data wizard to create an index, and import your video catalog into the Azure Cognitive Search service you created earlier.
 
 ## Load the video catalog into Azure blob storage
 
@@ -51,7 +51,7 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
     az storage container create --connection-string $CREDENTIALS --name $CONTAINER
     ```
 
-1. Download your companies video catalog into the Cloud Shell storage.
+1. Download your company's video catalog into the Cloud Shell storage.
 
     ```bash
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-azure-search/master/video-catalog.json -o video-catalog.json
@@ -75,40 +75,47 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
 
     ![Screenshot of the Azure portal, highlighting the Import data link](../media/5-exercise-screenshot-1.png)
 
-1. On the **Connect to your data** page, select **Azure Blob Storage** as the **Data Source**.
+1. On the **Import data** page, complete the following fields.
+
+    | Setting      | Value |
+    | ------------ | ----- |
+    | **Connect to your data** |
+    | **Data Source** | From the dropdown, select **Azure Blob Storage** |
+    | **Data source name** | Enter *videocatalog* |
+    | **Parsing mode** | From the dropdown, select **JSON array** |
+    | **Connection string** |  Select **Choose an existing connection** link |
 
     ![Screenshot of the Azure portal, showing the Connect to your data page with the fields completed](../media/5-exercise-screenshot-2.png)
 
-1. Enter **videocatalog** in the **Name** field.
-1. Change the **Parsing mode** to **JSON array**.
-1. Select **Choose an existing connection**.
+1. On the **Storage accounts** page, select the video storage account.
 
     ![Screenshot of the Azure portal, showing the storage container](../media/5-exercise-screenshot-4.png)
 
 1. Select the video storage account.
-1. Select the video container, then select the **Select** button.
 
-1. At the bottom of the page select **Next: Add cognitive search (Optional)**.
+1. Select the video container, and then select **Select**.
+
+1. At the bottom of the page, select **Next: Add cognitive skills (Optional)**.
 
     ![Screenshot of the Azure portal, showing the dialog shown while an index is being created](../media/5-exercise-screenshot-5.png)
 
-    Azure Cognitive Search will read the contents of the JSON file and create an index schema automatically.
+    Azure Cognitive Search will read the contents of the JSON file, and create an index schema automatically.
 
-1. On the **Add cognitive search (Optional)** page, select **Skip to: Customize Target Index**.
+1. On the **Add cognitive search (Optional)** tab, select **Skip to: Customize target index**.
 
     ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-6.png)
 
-1. The **Customize Target Index** page allows you to change the automatically generated index schema created by the Import Data wizard. The fields are populated by the wizard after reading the file in blob storage. Use the table below to complete the named fields:
+1. The **Customize target index** tab enables you to change the automatically-generated index schema created by the Import data wizard. The fields are populated by the wizard after reading the file in blob storage. Use the following table to complete the named fields:
 
     | Field | Value |
     | --- | --- |
-    | **Key** | Select the **id** field |
+    | **Key** | From the dropdown, select **id** |
     | **Suggester name** |  **northwindfitnesssugg** |
-    | **Search mode** | Select **analyzingInfixMatching** option
+    | **Search mode** | From the dropdown, select **analyzingInfixMatching** |
 
-    Change the attributes and data types of the fields to match the table below:
+    Change the attributes and data types of the fields to match the following table:
 
-    | FIELD NAME | TYPE | RETRIEVABLE | FILTERABLE | SORTABLE | FACETABLE | SEARCHABLE | ANALYZER | SUGGESTER |
+    | Field name | Type | Retrievable | Filterable | Sortable | Facetable | Searchable | Analyzer | Suggester |
     | --- | --- | --- | --- | --- | --- | --- | --- | --- |
     | **Title** | Edm.String | ✔ |  | ✔ |  | ✔ | Standard - Lucene | ✔ |
     | **Difficulty** | Edm.Int64 | ✔ | ✔ | ✔ | ✔ |  |  |  |
@@ -118,14 +125,15 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
 
     Select **Next: Create an indexer**.
 
-1. On the **Create an indexer** page, select **Submit** to begin building the indexer.
+1. On the **Create an indexer** tab, select **Submit** to begin building the indexer.
 
-    When the process completes, the portal will return you to the Search service overview.
+    When the process completes, the portal returns to the Search service overview.
 
     ![Screenshot of the Azure portal, showing the overview](../media/5-exercise-screenshot-9.png)
 
-1. Select the **indexers** tab, and then select **myindexer**.
-1. At the top of **myindexer** page, select **Run**.
+1. Select the **Indexers** tab, and then select **azureblob-indexer**.
+
+1. At the top of **azureblob-indexer** page, select **Run**, and then select **Yes**.
 
     ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-10.png)
 
@@ -135,11 +143,11 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
 
 ![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
 
-1. On the search service overview, select **Search explorer**.
+1. Scroll to the search service overview, and from the top menu bar, select **Search explorer**.
 
     ![Screenshot of the Azure portal, showing the Search explorer](../media/5-exercise-screenshot-8.png)
 
-1. In the **Query string** enter `search=*&$count=true`, then select **Search**.
+1. In the **Query string** field, enter `search=*&$count=true`, and then select **Search**.
 
     The search query above returns all the documents in the search index, including a count of all the documents.
 

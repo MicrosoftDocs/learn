@@ -32,7 +32,7 @@ You can create availability sets through the Azure portal in the disaster recove
 
 #### What is a fault domain?
 
-A fault domain is a logical group of hardware in Azure that shares a common power source and network switch. You can think of it as a rack within an on-premises datacenter. The first two VMs in an availability set will be provisioned into two different racks so that if the network or the power failed in a rack, only one VM would be affected. Fault domains are also defined for managed disks attached to VMs.
+A fault domain is a logical group of hardware in Azure that shares a common set of hardware components, and that share a single point of failure.. You can think of it as a rack within an on-premises datacenter. The first two VMs in an availability set will be provisioned into **two different racks** so that if the network or the power failed in a rack, only one VM would be affected. Fault domains are also defined for managed disks attached to VMs.
 
 ![An illustration showing two fault domains with two virtual machines each. The two top virtual machines from each fault domain host Internet information service and are part of a common availability set. The next two virtual machines in each domain host SQL database and are part of another availability set.](../media/5-fault-domains.png)
 

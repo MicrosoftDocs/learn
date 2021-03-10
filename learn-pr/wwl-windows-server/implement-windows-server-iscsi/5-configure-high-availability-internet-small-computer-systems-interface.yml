@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iscsi.configure-high-availability-for-iscsi
+title: Configure high availability for iSCSI
+metadata:
+  title: Configure high availability for iSCSI
+  description: "Configure high availability for iSCSI"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-configure-high-availability-internet-small-computer-systems-interface.md)]

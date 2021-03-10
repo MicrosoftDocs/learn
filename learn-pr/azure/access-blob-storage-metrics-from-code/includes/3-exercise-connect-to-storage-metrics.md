@@ -35,7 +35,7 @@ In order to retrieve metrics from Azure Monitor that relate to your new storage 
 1. When the storage account has been created, in the portal, select **All resources**, and then select the storage account you created.
 
 1. Carefully make a note of the following values, which are shown at the top of the **Overview** page:
-1
+
     - **Resource group**
     - **Subscription ID**
 

@@ -15,7 +15,7 @@ The command needs several parameters:
 |-----------|-------|
 | `--name`  | Sets the name. Remember that storage accounts use the name to generate a public URL - so it has to be unique. In addition, the account name must be between 3 and 24 characters, and be composed of numbers and lowercase letters only. We recommend you use the prefix **articles** with a random number suffix but you can use whatever you like. |
 | `-g`        | Supplies the **Resource Group**, use _<rgn>[sandbox resource group name]</rgn>_ as the value. |
-| `--kind`    | Sets the **Storage Account type** - use _StorageV2_ to create a general-purpose V2 account. |
+| `--kind`    | Sets the **Storage Account type**: _StorageV2_ to create a general-purpose V2.account. |
 | `--sku`     | Sets the **Replication and Storage type**, it defaults to _Standard_RAGRS_. Let's use _Standard_LRS_ which means it's only locally redundant within the data center. |
 | `-l`        | Sets the **Location** independent of the resource group owner. It's optional, but you can use it to place the queue in a different region than the resource group. Place it close to you, choosing from the below list of available regions in the sandbox. |
 

@@ -16,7 +16,7 @@ If you look at the Dockerfile in the root of the fork you created, you see that 
 You can build an image from a Dockerfile by using the `docker build` command.
 
 > [!IMPORTANT]
-> The `build` command for Docker will not work within CloudShell environment since the use of Docker inside a running container is disallowed as explained in [this doc](https://docs.microsoft.com/en-us/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command you'll need to clone the repository locally and run using your own Docker installation.
+> The `build` command for Docker will not work within CloudShell environment since the use of Docker inside a running container is disallowed as explained in [this doc](https://docs.microsoft.com/azure/cloud-shell/troubleshooting#bash-troubleshooting). If you want to test the `docker build .` command you'll need to clone the repository locally and run using your own Docker installation.
 
 ## Image tags
 
