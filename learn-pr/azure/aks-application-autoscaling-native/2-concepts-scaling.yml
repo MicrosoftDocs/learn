@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: aks-application-autoscaling-hpa.2-concepts-scaling
+uid: learn.aks-application-autoscaling-native.2-concepts-scaling
 metadata:
-  title: Scalability Concepts
-  description: Scalability Concepts
+  title: Concepts of Scalability
+  description: In this module, learn the core principles of scalability
   ms.date: 03/04/2021
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Scalability Concepts
+title: Concepts of Scalability
 durationInMinutes: 2
 content: |
   [!include[](includes/2-concepts-scaling.md)]

@@ -12,7 +12,7 @@ For example, in this case, the amount of work being increased is the number of r
 
 Vertical scalability is when a system is scaled by adding more physical resources to it, like memory or CPU power. For example, if the company's website is consuming too much memory, you could update your VM instance to include more memory while keeping the same underlying application.
 
-:::image type="content" source="../media/1-vertical-scaling.png" alt-text="Vertical scaling diagram":::
+:::image type="content" source="../media/1-vertical-scaling.png" alt-text="Vertical scaling diagram.":::
 
 In short, scaling vertically is increasing the VM size while keeping the number of applications the same.
 
@@ -28,7 +28,7 @@ Also, there's an upper limit to the number of resources you can add to a single 
 
 However, horizontal scalability is the most used type of scalability when you have distributed applications, such as those deployed in AKS. It consists in duplicating the whole application and balancing the load among them.
 
-:::image type="content" source="../media/2-horizontal-scaling.png" alt-text="Horizontal scaling diagram":::
+:::image type="content" source="../media/2-horizontal-scaling.png" alt-text="Horizontal scaling diagram.":::
 
 Scaling horizontally is called *scaling out*, it's widely used in stateless systems since you can spin up several containers with the same application in a single VM, this way you can extract most resources while you continue to pay a single instance instead of multiple VMs.
 
@@ -50,7 +50,7 @@ The HPA is the native Kubernetes 1.8+ resource that provides horizontal scalabil
 
 If the desired replica count is different from the current replica count, then the controller manager, which manages HPA objects, scales the deployment in or out.
 
-:::image type="content" source="../media/2-hpa-design.png" alt-text="HorizontalPodAutoscaling design diagram":::
+:::image type="content" source="../media/2-horizonal-pod-autoscaler-design.png" alt-text="HorizontalPodAutoscaling design diagram.":::
 
 HPAs work with the `autoscaling` API group in Kubernetes. There are two versions to this API group. The `v1` version allows the deployment to scale only based on CPU metrics, while the `v2beta2` version, which will eventually become `v2`, allows native monitoring of both CPU and Memory. In this learn module we'll work with the `v2beta2` version.
 

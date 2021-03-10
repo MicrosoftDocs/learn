@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: aks-application-autoscaling-hpa.4-concepts-scaling-fine-tune
+uid: learn.aks-application-autoscaling-native.4-concepts-scaling-fine-tune
 metadata:
   title: Understand scaler configurations
   description: Understand scaler configurations
@@ -23,7 +23,7 @@ quiz:
         - content: "The cooldown period before scaling up or down again."
           isCorrect: false
           explanation: "Incorrect. The cooldown period is not defined by the stabilization window."
-        - content: "The amount of seconds to wait before the HPA can start working."
+        - content: "The number of seconds to wait before the HPA can start working."
           isCorrect: false
           explanation: "HPAs will start working as soon as they're created."
     - content: "What are the three values for selectPolicies?"
@@ -33,7 +33,7 @@ quiz:
           explanation: "Incorrect. there's no average value."
         - content: "Min, Max, and Deactivated"
           isCorrect: false
-          explanation: "Incorrect. HPAs have no Deactvated value."
+          explanation: "Incorrect. HPAs have no Deactivated value."
         - content: "Min, Max and Disabled"
           isCorrect: true
           explanation: "Correct."
@@ -41,10 +41,10 @@ quiz:
       choices:
         - content: "On every created HPA since the key is required."
           isCorrect: false
-          explanation: "The behavior key is not required."
-        - content: "When we want to fine tune the HPA behavior."
+          explanation: "The behavior key isn't required."
+        - content: "When we want to fine-tune the HPA behavior."
           isCorrect: true
           explanation: "Correct."
-        - content: "To fine tune the deployment behavior when scaling."
+        - content: "To fine-tune the deployment behavior when scaling."
           isCorrect: false
-          explanation: "Deployments are not fine tuned in the HPA."
+          explanation: "Deployments aren't fine-tuned in the HPA."
