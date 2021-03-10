@@ -50,7 +50,7 @@ The HPA is the native Kubernetes 1.8+ resource that provides horizontal scalabil
 
 If the desired replica count is different from the current replica count, then the controller manager, which manages HPA objects, scales the deployment in or out.
 
-:::image type="content" source="../media/2-horizonal-pod-autoscaler-design.png" alt-text="HorizontalPodAutoscaling design diagram.":::
+:::image type="content" source="../media/2-horizontal-pod-autoscaler-design.png" alt-text="HorizontalPodAutoscaling design diagram.":::
 
 HPAs work with the `autoscaling` API group in Kubernetes. There are two versions to this API group. The `v1` version allows the deployment to scale only based on CPU metrics, while the `v2beta2` version, which will eventually become `v2`, allows native monitoring of both CPU and Memory. In this learn module we'll work with the `v2beta2` version.
 
