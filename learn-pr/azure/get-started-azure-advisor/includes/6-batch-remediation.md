@@ -39,4 +39,4 @@ To do this, you would follow the same process for **Quick Fix** that we just dis
 
 :::image type="content" source="../media/azure-advisor-quick-fix-select-postpone-dismiss.png" alt-text="Screenshot showing how to bulk postpone or dismiss." lightbox="../media/azure-advisor-quick-fix-select-postpone-dismiss.png":::
 
-You can then deal with those recommendations at a later time (postpone), or they will be removed from the list altogether (dismiss).
+You can then deal with those recommendations at a later time (postpone), or they will be removed from the list altogether (dismiss). You can always review your postponed or dismissed recommendations in the "Postponed & Dismissed" tab under any recommendation. And as a reminder, postponed and dismissed recommendations will not be counted toward your Advisor Score.

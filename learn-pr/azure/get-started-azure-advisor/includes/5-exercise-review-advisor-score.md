@@ -17,7 +17,7 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
    Your personal Advisor Score will likely be different than what's shown in our example.
 
    >[!Important]
-   > Remember that your score gives you a quick snapshot that shows how closely your entire workload follows our documented best practices for optimization.
+   > Remember that your score gives you a quick snapshot that shows how closely the resources in your subscriptions follow our documented well-architected best practices.
 
    You'll also notice that next to the overall **Advisor Score** is your **Score history**. This valuable graphical representation shows how your score changes over a period of time. You can choose the time period by selecting it from the drop-down menu above the chart.
 
@@ -37,7 +37,10 @@ If you've still got your Advisor dashboard open, you can skip ahead to step 3.
 
 1. Select a recommendation from the **Description** list to review it in more detail and to see ways in which you can remediate the surfaced issue. For this exercise, we are looking at the recommendation for **Right-size or shutdown underutilized virtual machines** because its **Cost score impact** is greatest. But feel free to select any active recommendation you see.
 
-   After making your selection, a more detailed page opens, showing the impacted resources and recommended actions you can take to resolve the issues. You can work on resolving the issues right now, or if you're not ready to take action during this exercise, close the Azure portal and no changes will be made to your subscriptions or resources.
+   After making your selection, a more detailed page opens, showing the impacted resources and recommended actions you can take to resolve the issues.
+
+> [!NOTE]
+> If you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
 
 When you do apply any of the recommendations, your Advisor Score will improve! It can take up to 24 hours for the score to change, so check back in a day or so to see how much higher it is.
 
