@@ -48,7 +48,7 @@ activity = input( "How would you like to spend your evening?\n(A) Reading a book
 print( f"You chose {activity}.")
 ```
 
-Press the **Run** button, and you should see the question print out, along with the options. In the **TERMINAL** area, try typing **A** and then selecting the Enter key to see what happens.
+Select the **Run** button, and you should see the question print out, along with the options. In the **TERMINAL** area, try typing **A** and then selecting the Enter key to see what happens.
 
 :::image type="content" source="../media/question-one.png" alt-text="Screenshot that shows question 1 printed in the console.":::
 
@@ -66,7 +66,7 @@ if activity == "A":
     print( "Nice choice!" )
 ```
 
-Press the **Run** button and try entering **A** as your choice. Make sure it's capitalized.
+Select the **Run** button and try entering **A** as your choice. Make sure it's capitalized.
 
 :::image type="content" source="../media/choose-a.png" alt-text="Screenshot that demonstrates the execution of an if statement.":::
 

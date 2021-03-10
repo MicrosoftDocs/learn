@@ -31,7 +31,7 @@ You can see that it really doesn't matter what kind of food the quiz taker choos
 
 With [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
 
-:::image type="content" source="../media/sleuth-clipart.png" alt-text="Image of a girl with a trench coat and a magnifying glass." border="false":::
+:::image type="content" source="../media/sleuth-figure.gif" alt-text="Image of a girl wearing a trench coat and holding a magnifying glass." border="false":::
 
 We'll use five questions to determine which of the following four super sleuth characters you're most like:
 
@@ -50,9 +50,11 @@ In this module, you'll discover how to:
 - Create a program that allows users to interact with your code
 - Use `if`, `elif`, and `else` statements
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of a similar program](https://youtu.be/zawdAAZZcTE?azure-portal=true) in a new tab.
+
 ## Prerequisites
 
-- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
 - [Visual Studio Code with Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
 
 > [!Note]

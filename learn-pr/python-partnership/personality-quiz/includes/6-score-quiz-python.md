@@ -68,4 +68,4 @@ else:
     print( "You're most like Keen Kai!" )
 ```
 
-Press the **Run** button and find out which super sleuth personality you're most like!
+Select the **Run** button and find out which super sleuth personality you're most like!

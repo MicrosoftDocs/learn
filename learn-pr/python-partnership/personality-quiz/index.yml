@@ -17,9 +17,11 @@ abstract: |
   - Use <code>if</code>, <code>elif</code>, and <code>else</code> statements
 
   <strong>No coding experience is required to complete this Microsoft Learn module.</strong>
+  
+  > [!TIP]
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
   - [Visual Studio Code with Python Extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

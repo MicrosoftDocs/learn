@@ -129,17 +129,13 @@ def lassoLetter( letter, shiftAmount ):
     return decodedLetter
 ```
 
-Try calling this function to see if it's working as we expect it. Use the example above:
+Try calling this function by using the preceding example to see if it's working as we expect it to:
 
---PYTHON CODE SNIPPET--
+```python
 print(lassoLetter('a', 2))
---END PYTHON CODE SNIPPET--
+```
 
---OUTPUTCODE SNIPPET--
-c
---END OUTPUTCODE CODE SNIPPET--
-
-Notice that the program will correctly print `c`:
+The program correctly prints `c`:
 
 :::image type="content" source="../media/test-function-example-1.png" alt-text="Screenshot that shows the output of the letter c.":::
 
@@ -163,15 +159,17 @@ The code won't return the expected result because a Caesar cipher loops back to 
 
 You can try this out by testing your function:
 
---PYTHON CODE SNIPPET--
+```python
 print(lassoLetter('N', 2))
---END PYTHON CODE SNIPPET--
+```
 
---OUTPUTCODE SNIPPET--
+Here's the output:
+
+```output
 {
---END OUTPUTCODE CODE SNIPPET--
+```
 
-:::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without a loop.":::
+:::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without using a loop.":::
 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
 

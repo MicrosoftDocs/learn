@@ -32,6 +32,6 @@ Your editor should resemble this example:
 
 :::image type="content" source="../media/hello-output.png" alt-text="Screenshot of the Python confirmation message: Hello, Contosoville.":::
 
-To have Python follow your commands, press the green **Run** button in the upper-right corner. You should see a message from Python appear.
+To have Python follow your commands, select the green **Run** button in the upper-right corner. You should see a message from Python appear.
 
 Now you're ready to learn some of the Python basics needed to build your quiz.

@@ -10,7 +10,7 @@ Try adding the following line to your file:
 # this is a comment that won't be interpreted as a command
 ```
 
-Press the **Run** button, and you should see the same behavior as before.
+Select the **Run** button, and you should see the same behavior as before.
 
 :::image type="content" source="../media/comment-demo.png" alt-text="Screenshot that shows a Python comment and the unchanged result.":::
 
@@ -33,7 +33,7 @@ Try it out by replacing the commands in your file with the following. The `print
 print( f"The year is {year}..." )
 ```
 
-Press the **Run** button, and you should see the year in the output.
+Select the **Run** button, and you should see the year in the output.
 
 :::image type="content" source="../media/print-year.png" alt-text="Screenshot that shows the output to printing the value of a variable.":::
 
@@ -47,7 +47,7 @@ year = year + 36
 print( f"The year is now {year}..." )
 ```
 
-Press the **Run** button, and you should see the years in the output.
+Select the **Run** button, and you should see the years in the output.
 
 :::image type="content" source="../media/print-year-change.png" alt-text="Screenshot that shows updating a variable in Python.":::
 
@@ -105,7 +105,7 @@ if year == 2026:
     print( "I sent you a text message!" )
 ```
 
-Press the **Run** button, and you should see state-of-the-art messaging.
+Select the **Run** button, and you should see state-of-the-art messaging.
 
 :::image type="content" source="../media/conditionals-output.png" alt-text="Screenshot that shows output from the conditional statement.":::
 

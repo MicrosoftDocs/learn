@@ -64,4 +64,4 @@ else:
 print( f"You chose {activity}, then {job}, then {value}, then {decade}, then {travel}.")
 ```
 
-Press the **Run** button and make sure your responses are recorded correctly.
+Select the **Run** button and make sure your responses are recorded correctly.
