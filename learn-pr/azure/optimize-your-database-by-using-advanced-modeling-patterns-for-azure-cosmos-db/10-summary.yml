@@ -2,7 +2,7 @@
 uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.summary  
 title: Summary  
 metadata:
-  unit-type: summary  
+  unitType: summary  
   title: Summary
   description: We learned about the importance of understanding the usage patterns for data for determining how to model and partition data.
   ms.date: 3/9/2021  
