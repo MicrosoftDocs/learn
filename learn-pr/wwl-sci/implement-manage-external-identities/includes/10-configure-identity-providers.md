@@ -1,7 +1,7 @@
 You can set up direct federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up direct federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure Active Directory (Azure AD) tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
 
 > [!NOTE]
-> Direct federation guest users must sign in using a link that includes the tenant context (for example, https<nolink>://myapps.microsoft.com/?tenantid=<tenant id> or https<nolink>://portal.azure.com/<tenant id>, or in the case of a verified domain, https<nolink>://myapps.microsoft.com/\<verified domain>.onmicrosoft.com). Direct links to applications and resources also work as long as they include the tenant context. Direct federation users are currently unable to sign in using common endpoints that have no tenant context. For example, using https<nolink>://myapps.microsoft.com, https<nolink>://portal.azure.com, or https<nolink>://teams.microsoft.com will result in an error.
+> Direct federation guest users must sign in using a link that includes the tenant context (for example, https<nolink>://myapps.microsoft.com/?tenantid=< tenant id > or https<nolink>://portal.azure.com/< tenant id >, or in the case of a verified domain, https<nolink>://myapps.microsoft.com/\< verified domain >.onmicrosoft.com). Direct links to applications and resources also work as long as they include the tenant context. Direct federation users are currently unable to sign in using common endpoints that have no tenant context. For example, using https<nolink>://myapps.microsoft.com, https<nolink>://portal.azure.com, or https<nolink>://teams.microsoft.com will result in an error.
 
 ## When is a guest user authenticated with direct federation?
 
@@ -142,19 +142,19 @@ We’re continuing to test various platforms and scenarios, and will update publ
 
 ## Sign-in endpoints
 
-Teams fully supports Google guest users on all devices. Google users can sign in to Teams from a common endpoint like `https<nolink>://teams.microsoft.com`.
+Teams fully supports Google guest users on all devices. Google users can sign in to Teams from a common endpoint like https<nolink>://teams.microsoft.com.
 
 Other applications' common endpoints might not support Google users. Google guest users must sign in by using a link that includes your tenant information. Following are examples:
 
-- https<nolink>://myapps.microsoft.com/?tenantid=<your tenant ID>
+- https<nolink>://myapps.microsoft.com/?tenantid=< your tenant ID >
 
-- https<nolink>://portal.azure.com/<your tenant ID>
+- https<nolink>://portal.azure.com/< your tenant ID >
 
-- https<nolink>://myapps.microsoft.com/<your verified domain>.onmicrosoft.com
+- https<nolink>://myapps.microsoft.com/< your verified domain >.onmicrosoft.com
 
-If Google guest users try to use a link like `https<nolink>://myapps.microsoft.com `or `https<nolink>://portal.azure.com`, they'll get an error.
+If Google guest users try to use a link like https<nolink>://myapps.microsoft.com or https<nolink>://portal.azure.com, they'll get an error.
 
-You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, `https<nolink>://myapps.microsoft.com/signin/Twitter/<application ID?tenantId=<your tenant ID`>.
+You can also give Google guest users a direct link to an application or resource, as long as the link includes your tenant information. For example, https<nolink>://myapps.microsoft.com/signin/Twitter/< application ID?tenantId=< your tenant ID>.
 
 ### Step 1: Configure a Google developer project
 
@@ -196,7 +196,7 @@ First, create a new project in the Google Developers Console to obtain a client 
 
       - https<nolink>://login.microsoftonline.com
 
-      - `https<nolink>://login.microsoftonline.com/te/<tenant ID>/oauth2/authresp`(where `<tenant ID> `is your tenant ID)
+      - https<nolink>://login.microsoftonline.com/te/< tenant ID>/oauth2/authresp(where < tenant ID> is your tenant ID)
 
       > [!NOTE]
       > To find your tenant ID, go to the [Azure portal](https://portal.azure.com/). Under Azure Active Directory, select Properties and copy the Tenant ID.
@@ -259,9 +259,9 @@ To use a Facebook account as an identity provider, you need to create an applica
 > [!NOTE]
 > Use the following URLs in the steps 9 and 16 below.
 
-- For **Site URL** enter the address of your application, such as `https<nolink>://contoso.com`.
+- For **Site URL** enter the address of your application, such as https<nolink>://contoso.com.
 
-- For **Valid OAuth redirect URIs**, enter `https<nolink>://login.microsoftonline.com/te/<tenant-id>/oauth2/authresp`. You can find your `<tenant-ID> `in the Azure Active Directory Overview blade.
+- For **Valid OAuth redirect URIs**, enter https<nolink>://login.microsoftonline.com/te/< tenant-id>/oauth2/authresp. You can find your `<tenant-ID> `in the Azure Active Directory Overview blade.
 
 1. Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
 
@@ -281,7 +281,7 @@ To use a Facebook account as an identity provider, you need to create an applica
 
 9. In **Site URL**, enter the appropriate URL (noted above).
 
-10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example `http<nolink>://www.contoso.com`.
+10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example http<nolink>://www.contoso.com.
 
 11. Select **Save Changes**.
 

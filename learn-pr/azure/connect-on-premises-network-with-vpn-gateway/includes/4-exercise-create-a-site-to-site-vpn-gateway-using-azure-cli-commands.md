@@ -67,7 +67,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-HQ-Network \
         --public-ip-address PIP-VNG-HQ-Network \
-        --vnet HQ-Network \
+        --vnet VHQ-NetworkHQ-Network \
         --gateway-type Vpn \
         --vpn-type RouteBased \
         --sku VpnGw1 \
