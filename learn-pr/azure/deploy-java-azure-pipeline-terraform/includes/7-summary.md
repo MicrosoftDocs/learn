@@ -1,6 +1,4 @@
-Congratulations! You've learned how to use Terraform with DevOps to create multiple pipelines.
-
-::: zone pivot="github-actions"
+Congratulations! You've learned how to use Terraform to create multiple automated pipelines.
 
 You've created an Azure App Service application and a MySQL database, and you've deployed a Spring Boot web application.
 
@@ -10,9 +8,9 @@ To that end, you've done the following:
 
 * You accessed and configured a sample Spring Boot web application.
 
-* You provisioned a MySQL database and an Azure App Service application by using Terraform and GitHub Actions.
+* You provisioned a MySQL database and an Azure App Service application by using Terraform and an automated workflow.
 
-* You configured your GitHub repository to use GitHub Actions to build and deploy your application on demand.
+* You configured your GitHub repository to use an automated workflow to build and deploy your application on demand.
 
 You're now able to recommend this architecture for your Spring Boot applications.
 
@@ -39,4 +37,4 @@ For more information about using Azure with Java, see [Azure for Java developers
 
 For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
-::: zone-end
+For more information about Azure Pipelines, see [Azure Pipelines documentation](https://docs.microsoft.com/azure/devops/pipelines?view=azure-devops?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
