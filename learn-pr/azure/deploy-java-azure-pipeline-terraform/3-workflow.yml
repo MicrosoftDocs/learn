@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.3-devops
+uid: learn.azure.deploy-java-azure-pipeline-terraform.3-workflow
 title: Apply DevOps
 metadata:
   title: Apply DevOps 
-  description: Learn about DevOps and how it integrates with Terraform and Azure.
+  description: Learn about automated workflow tooling and how they integrate with Terraform and Azure.
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: azure-devops-actions
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-devops.md)]
+  [!include[](includes/3-workflow.md)]
