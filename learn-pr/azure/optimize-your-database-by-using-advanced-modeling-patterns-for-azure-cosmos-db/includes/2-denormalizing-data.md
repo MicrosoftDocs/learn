@@ -1,75 +1,31 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this section we are going to look at our product table from our relational database and model it for a NoSQL database. While we do this we are also going to look at the Many:Many relationship our Product table has with ProductTags.
 
-    Goal: briefly summarize the key skill this unit will teach
+    :::image type="content" source="../media/product-model.png" alt-text="product model":::
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+Our initial model for Product just includes the fields from our relational table. However, our e-commerce application needs to display the product tags when we display a product page. We also will want to be able to query for products by product tags. This can be accommodated in one of two ways. We can store products in a product tags container or we could embed our tags in the product container.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Given there are far fewer tags per product than products per tags, it makes more sense to embed the product tags in the product table. There is a 1:few relationship between each product and tags so this makes it a good candidate for embedding. We will also store our product data with embedded tags in our new product container. So our new product model will look like this.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+    :::image type="content" source="../media/product-tags-model-container.png" alt-text="product tags model container":::
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Next we will select a partition key for the product container. Again, we need to look at the operations to be performed to decide on a partition key. This includes created and edit a product. As customers navigate the e-commerce site they will often do so by product category. This requires a query that filters products to display by category id. In order to make this a single-partition query with all products by category we will use `categoryId` as our partition key for our product container.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+    :::image type="content" source="../media/product-container-categoryId.png" alt-text="product container with category id":::
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+So `categoryId` is a good partition key that will allow us to retrieve all products in a category very efficiently and embedding tag ids allows us get the id's in our Many:Many relationship between products and tags easily. However, when we query for products, I not only need the product data but I also want to display the category name and we also need to display the tag names as well. How can we return the category name for each product, as well as the names for the product tags when we query for products?
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+In order to achieve this we first need to do the following:
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+    - Run our original query to return products for a category.
+    - Run a second query to return the product category's name.
+    - Then for every product returned by the first query, run a third query to get each product tag's name.
 
-    Goal: State concisely what's covered in this unit
+    :::image type="content" source="../media/product-category-and-tags-queries.png" alt-text="product category and tags queries":::
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Now this could work for us. However, it is not very scalable. Remember that in a NoSQL database there are no joins between containers so these are not an option for us. Also remember, for a NoSQL database, the objective is to reduce the number of requests by modeling data such that all the data needed by the application can be fetched in as few requests as possible.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+The solution for us is to *denormalize* our data. With denormalization we are able to optimize our data models to make sure that all the required data for our application is ready to be served by our queries.
 
-<!-- 4. Image (highly recommended) ----------------------------------------------------------------
+To denormalize our data here we will add additional properties including the name of the category as well as the name for each tag in our tags array. By doing this we now are able to retrieve all of the data we need to return to our clients in just a single request.
 
-    Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
--->
-TODO: add a visual
-
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. A visual like an image, table, or list
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
-
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+    :::image type="content" source="../media/product-denormalized.png" alt-text="product denormalized":::

@@ -1,109 +1,35 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+We're nearly done modeling our database for our e-commerce application. We will next look at the sales order entities to demonstrate the next concept.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Just like with the other entities we want to look at our operations and then make a decision on whether to embed or reference our related data. In this scenario sales order details makes a great candidate for embedding because the items in the order is not unbounded and also the data is always inserted and read together. So we will embed this as an array within our sales order entity and we will store our data in a new container called, salesOrder.
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+    :::image type="content" source="../media/sales-order-model.png" alt-text="sales order model":::
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Next we will decide upon a partition key. Since we will always search for sales order by customer, customer id makes a suitable partition key for our container. This will give us single partition query for an operation that will be run frequently, even with additional filters to narrow down which orders the customer wants to view.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+    :::image type="content" source="../media/sales-order-partition-key.png" alt-text="sales order partition key":::
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+At this point we've modeled all of our relational entities for our NoSQL database. So let's look at where we can make further optimizations.
 
-    Goal: Describe the part of the scenario covered in this exercise
+One thing you may have noticed with the salesOrder container is that it shares the same partition key as the customer container. The customer container has a partition key of id and salesOrder has a partition key of customerId. When data share the same partition key and have similar access patterns they are candidates for being stored in the same container. As a NoSQL database, Azure Cosmos DB is schema agnostic so mixing entities with completely different schema is not only possible, under these conditions it is another best practice. But combine the data from these two containers we will need to make some additional changes in our schema.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    :::image type="content" source="../media/sales-orders-customers.png" alt-text="sales orders and customers":::
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+First we need to add a customerId property to each customer document. Customers will now have the same value for id and customerId. Next, we need a way to distinguish a sales order from a customer in the container. So we will add a "type" property that has a value of 'customer' and 'salesOrder' for each entity.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    :::image type="content" source="../media/sales-orders-customers-query.png" alt-text="sales orders query":::
 
+With those changes we can now store both the customer and sales order data in our new customer container. Each customer is in its own logical partition and will have one customer item with all of their sales orders. For our second operation here we now have a query we can run to list all sales orders for a customer.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+**Knowledge check**
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- When characteristics must entities share that make them good candidates to store in the same container?
+        - a. Same partition key
+        - b. Similar access patterns
+        - c. Same schema
+        - d. A and B
+        - e. All of the above
+    
+- When mixing entities into the same container, what is required to distinguish the different entities when querying them?
+        - a. A different id
+        - b. It's not possible. You have to look at the query results.
+        - c. A 'type' property with a static value per entity.

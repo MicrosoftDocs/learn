@@ -1,70 +1,17 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
+At the beginning of the first module we started with a relational database model that had nine tables. Throughout both of the modules we learned about the importance of understanding the usage patterns for data for determining how to model and partition data. We also explored when you would embed versus reference data in a NoSQL model. We explored partitioning, and made sure data was partitioned to ensure both requests and storage were even and high volume queries were served by one logical partition, allowing for infrequently run queries to run as cross partition. We demonstrated how using features like Change Feed can help maintain referential integrity across containers and transactions can be used to materialize aggregates for in-partition data.
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+All of these concepts and techniques explored in both of the modules for this lab ensure that our final database design is efficient in terms of compute and can scale as either the size of the database grows or the amount of throughput is increased to handle a higher volume of operations.
 
-    Heading: do not add an H1 or H2 title here, the auto-generated H1 will appear above this content automatically
+## Notes
 
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
+To learn more about these concepts in Azure Cosmos DB, see:
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
--->
-TODO: restate the scenario problem
+-[Understanding the differences between NoSQL and relational databases](https://docs.microsoft.com/azure/cosmos-db/relational-nosql)
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
+-[Data modeling in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
 
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
+-[How to model and partition data on Azure Cosmos DB using a real-world example](https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example)
 
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
+-[Change Feed in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
-    Recommended: format this as lead-in sentence(s) followed by a list
-
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
-
-<!-- 3. Describe the experience without the product ---------------------------------------------------
-
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
-
-    Heading: none; typically this will be a new paragraph
-
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
-
- -->
-TODO: describe the experience without the product
-
-<!-- 4. Describe the business impact ----------------------------------------------------
-
-    Goal: explain the business impact of using the product to solve the problem
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
-
-<!-- 5. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: use an H2 of "References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-TODO: add an (optional) references section
-
-<!-- Do not include any other content -->
+-[Transactional batch operations in Azure Cosmos DB using the .NET SDK](https://docs.microsoft.com/azure/cosmos-db/transactional-batch)
