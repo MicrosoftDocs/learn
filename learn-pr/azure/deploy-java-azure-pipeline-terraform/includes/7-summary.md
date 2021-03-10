@@ -22,6 +22,8 @@ In the preceding processes, you created Azure resources. If you don't expect to 
 az group delete --name <your Resource Group Name> --yes
 ```
 
+If you created a Service Principal, delete the Service Principal by running the following commands in Azure Cloud Shell:
+
 ```azurecli
 az ad sp delete --id <your Service Principal Name>
 ```
