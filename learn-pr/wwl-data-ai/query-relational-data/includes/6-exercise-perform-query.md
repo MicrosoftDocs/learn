@@ -40,7 +40,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 1. In the portal, on the home page select **SQL databases**, and then select *Inventory* database located on the server you have just created.
 
     > [!div class="mx-imgBorder"]
-    >![SQL Databases menu option on the home screen](../media/6-select-sql-datbases.png)
+    >![SQL Databases menu option on the home screen.](../media/6-select-sql-datbases.png)
 
 1. On the **Overview** page for your database, select **Set server firewall**.
 
@@ -59,12 +59,12 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
 1. Enter the username and password you recorded earlier when the setup script ran, and then select **OK**.
 
     > [!div class="mx-imgBorder"]
-    >![The SQL Database sign-in page in the Azure portal](../media/6-query-editor-login.png)
+    >![The SQL Database sign-in page in the Azure portal.](../media/6-query-editor-login.png)
 
     You'll be presented with a screen similar to this example:
 
     > [!div class="mx-imgBorder"]
-    >![The SQL Database Query Editor](../media/6-simple-ui-query.png)
+    >![The SQL Database Query Editor.](../media/6-simple-ui-query.png)
 
 > [!TIP]
 > Adding your client IP in this step will not account for any existing VPN connections. If you can't complete step 7,  disable any VPN connections or add the additional IP address manually from any errors displayed.
@@ -79,7 +79,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
 
     > [!div class="mx-imgBorder"]
-    >![Run basic query in SQL Database Query Editor](../media/6-run-basic-query.png)
+    >![Run basic query in SQL Database Query Editor.](../media/6-run-basic-query.png)
 
 1. Replace the current SQL statement with the following statement to only show the number of bananas in stock:
 
@@ -92,7 +92,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     There should be 150 bananas.
     
     > [!div class="mx-imgBorder"]
-    >![Run a WHERE query in SQL Database Query Editor](../media/6-select-where-sql-databases.png)
+    >![Run a WHERE query in SQL Database Query Editor.](../media/6-select-where-sql-databases.png)
 
 1. Replace the SQL statement with the following statement to retrieve the inventory items in order of the quantity in stock:
 
@@ -103,7 +103,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
     
     > [!div class="mx-imgBorder"]
-    >![Run an ORDER query in SQL Database Query Editor](../media/6-select-order-sql-databases.png)
+    >![Run an ORDER query in SQL Database Query Editor.](../media/6-select-order-sql-databases.png)
 
 1. Replace the SQL statement with the statement shown below. This statement is a query that uses the  **JOIN** operator to combine data from the *CustomerOrder* table and the *Inventory* table. It lists the details of orders placed by customers together with the inventory information for each item ordered:
     
@@ -114,7 +114,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
     
     > [!div class="mx-imgBorder"]
-    >![Run a JOIN query in SQL Database Query Editor](../media/6-select-join-sql-databases.png)
+    >![Run a JOIN query in SQL Database Query Editor.](../media/6-select-join-sql-databases.png)
 
 1. Change the query to find the names of all customers who have ordered oranges.
 

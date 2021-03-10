@@ -26,7 +26,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 ### Choose a location
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+[!include [Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 ## Create a WordPress website
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-user-authentication
 metadata:
   title: Manage user authentication
   description: "Manage user authentication"
-  ms.date: 03/04/2021
+  ms.date: 03/08/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - Implement and manage tenant restrictions
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-user-authentication.svg
 levels:
 - advanced
 roles:

@@ -1,12 +1,12 @@
 The Azure portal has several features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop-up for each one. This label is the name of the menu item. You will use these icons later.
 
-![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
+![Screenshot of the Azure portal icon bar with options for Azure Cloud Shell, directory and subscription, notifications, portal settings, help, and feedback.](../media/5-portal-icon-bar.png)
 
 ## All services
 
 1. On the top left-hand side of the Azure portal, select **Show portal menu**.
 
-    ![Screenshot of the portal menu option](../media/5-show-portal-menu.png)
+    ![Screenshot of the portal menu option on the left-hand side of the portal.](../media/5-show-portal-menu.png)
 
 1. Select **All services**. Take a couple of minutes to look through the list to see how many services Azure offers.
 
@@ -24,7 +24,7 @@ The Azure portal has several features and services available; let's look at some
 
 ## Azure Cloud Shell
 
-![Icon representing the Azure Cloud Shell](../media/5-cloud-shell-icon.png)
+![Icon that represents the Azure Cloud Shell option on the top right-hand side menu.](../media/5-cloud-shell-icon.png)
 
 The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by selecting the (`>_`) icon in the toolbar. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
 
@@ -43,7 +43,7 @@ Finally, there are a variety of management and programming tools included in the
 
 ## Directory and subscription
 
-![Icon representing the subscription panel](../media/5-subscription-icon.png)
+![Icon representing the directory and subscription option on the top right-hand side menu.](../media/5-subscription-icon.png)
 
 1. Select the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** pane.  
 
@@ -57,7 +57,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. On the icon bar menu bar, select the **Notifications** (bell) icon. This window lists any pending notifications.
 
-    ![Screenshot of notifications window](../media/5-notifications-pane.png)
+    ![Screenshot of notifications window on the top right-hand side menu.](../media/5-notifications-pane.png)
 
 1. If any notifications appear, hover your mouse over one of them. Select the **X** that appears in that notification to dismiss it.
 
@@ -67,7 +67,7 @@ Finally, there are a variety of management and programming tools included in the
 
 ## Settings
 
-![Icon representing the settings panel](../media/5-settings-icon.png)
+![Icon representing the settings panel on the top right-hand side menu.](../media/5-settings-icon.png)
 
 1. Select the **Settings** (cog) icon to open the **Portal settings** pane, showing the **General** settings by default.
 
@@ -85,7 +85,7 @@ Finally, there are a variety of management and programming tools included in the
 
 ## Help pane
 
-![Icon representing the feedback panel](../media/5-help-icon.png)
+![Icon representing the feedback panel on the top right-hand side menu.](../media/5-help-icon.png)
 
 1. Select the **Help** (`?`) icon to show the **Help** pane.
 
@@ -119,7 +119,7 @@ Support requests can only be created using an active paid subscription. Creating
 
 ## Feedback pane
 
-![Icon re-representing the feedback panel from earlier in unit](../media/5-feedback-icon.png)
+![Icon representing the feedback panel option on the top right-hand side menu.](../media/5-feedback-icon.png)
 
 1. Select the **Feedback** (smiley face) icon to open the **Send us feedback** pane.
 
