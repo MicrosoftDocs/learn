@@ -2,7 +2,7 @@
 uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.introduction  
 title: Introduction  
 metadata:
-  type: introduction  
+  unit-type: introduction  
   title: Introduction
   description: This module will take you through the migration of data from a relational database to a NoSQL database in the context of a global sales application.
   ms.date: 3/9/2021  
