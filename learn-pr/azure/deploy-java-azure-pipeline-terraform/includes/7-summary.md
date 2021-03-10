@@ -39,4 +39,4 @@ For more information about using Azure with Java, see [Azure for Java developers
 
 For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
 
-For more information about Azure Pipelines and Terraform, see [Azure Pipelines documentation](https://docs.microsoft.com/azure/devops/pipelines/release/automate-terraform?view=azure-devops&WT.mc_id=java-12761-ropreddy).
+For more information about Azure Pipelines and Terraform, see [Azure Pipelines documentation](https://docs.microsoft.com/azure/devops/pipelines/release/automate-terraform?WT.mc_id=java-12761-ropreddy).
