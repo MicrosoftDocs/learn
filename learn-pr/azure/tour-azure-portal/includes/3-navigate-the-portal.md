@@ -4,11 +4,11 @@ With an Azure account, we can sign into the **Azure portal**. The portal is a we
 
 The Azure portal is the primary graphical user interface (GUI) for controlling Microsoft Azure. You can carry out the majority of management actions in the portal, and it is typically the best interface for carrying out single tasks or where you want to look at the configuration options in detail.
 
-![Screenshot of the Azure portal showing the left-hand sidebar and right-hand dashboard](../media/3-portal.png)
+![Screenshot of the Azure portal showing the left-hand sidebar and right-hand dashboard.](../media/3-portal.png)
 
 :::row:::
     :::column:::
-    ![Screenshot of the resources and favorites pane](../media/3-favorites.png)
+    ![Screenshot of the resources and favorites pane.](../media/3-favorites.png)
     :::column-end:::
     :::column span="3":::
     **Resource panel**
@@ -62,7 +62,7 @@ Select the **gear** icon to change the Azure portal settings. These settings inc
 - Toast notifications (to a mobile device)
 - Language and regional format
 
-![Screenshot of the Azure portal settings pane](../media/3-settings-pane.png)
+![Screenshot of the Azure portal settings pane.](../media/3-settings-pane.png)
 
 ### Help pane
 
@@ -122,6 +122,6 @@ With Azure Advisor, you can:
 
 You can access Azure Advisor by selecting **Advisor** from the navigation menu, or search for it in the **All Services** menu.
 
-![Azure Advisor Dashboard displayed in the Azure portal displaying recommendations for High Availability, Security, Performance, and Cost](../media/3-advisordashboard.png)
+![Azure Advisor Dashboard displayed in the Azure portal displaying recommendations for High Availability, Security, Performance, and Cost.](../media/3-advisordashboard.png)
 
 Let's try some of these features out!

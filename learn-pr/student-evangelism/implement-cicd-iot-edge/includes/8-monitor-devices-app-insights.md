@@ -117,7 +117,7 @@ To create an AKS cluster, complete the following steps:
       spAppUrl=$(spAppUrl),spPassword=$(spPassword),tenantId=$(tenantId),subscriptionId=$(subscriptionId),iothub_name=$(iothub_name),environment=$(environment),replicaCount=2 
       ```
 
-    - Ensure that the **Install if release not present** and **Wait** checkboxes are checked.
+    - Ensure that the **Install if release not present** and **Wait** checkboxes are checked and set **Arguments** field to "--create-namepace".
     
     :::image type="content" source="../media/helm-upgrade.png" alt-text="The Helm Upgrade Task":::
 
