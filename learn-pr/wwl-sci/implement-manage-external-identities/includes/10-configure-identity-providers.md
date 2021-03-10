@@ -142,7 +142,7 @@ We’re continuing to test various platforms and scenarios, and will update publ
 
 ## Sign-in endpoints
 
-Teams fully supports Google guest users on all devices. Google users can sign in to Teams from a common endpoint like https<nolink.>://teams.microsoft.com.
+Teams fully supports Google guest users on all devices. Google users can sign in to Teams from a common endpoint like https<nolink>://teams.microsoft.com.
 
 Other applications' common endpoints might not support Google users. Google guest users must sign in by using a link that includes your tenant information. Following are examples:
 
