@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db  
 metadata:
-  type: standard  
+  module-type: standard  
   title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB
   description: This module takes you through different strategies to manage relationships between data entities.
   ms.date: 3/9/2021  
