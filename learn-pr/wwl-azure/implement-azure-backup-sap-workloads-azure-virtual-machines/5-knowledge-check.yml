@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/09/2021
+  ms.date: 03/10/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -23,29 +23,29 @@ quiz:
       explanation: "Correct. Azure Storage typically has an RPO of less than 15 minutes. RPO indicates how much data loss is acceptable for the user/customer."
     - content: "One hour"
       isCorrect: false
-      explanation: "Incorrect. The Recovery Point Object is not one hour."
+      explanation: "Incorrect. The Recovery Point Object isn't one hour."
     - content: "24 hours"
       isCorrect: false
-      explanation: "Incorrect. The Recovery Point Object is not 24 hours."
+      explanation: "Incorrect. The Recovery Point Object isn't 24 hours."
   - content: "What Azure CLI command can you use to create a Recovery Services vault?"
     choices:
     - content: "`az backup vault create`"
       isCorrect: true
-      explanation: "Correct. `az backup vault create` creates a Recovery services vault."
+      explanation: "Correct. `az backup vault create` creates a Recovery Services Vault."
     - content: "`az backup recoverypoint list`"
       isCorrect: false
-      explanation: "Incorrect. `az backup recoverypoint list` lists Recovery Points."
+      explanation: "Incorrect. `az backup recoverypoint list` displays recovery points."
     - content: "`az backup recoveryservices create`"
       isCorrect: false
-      explanation: "Incorrect. `az backup recoveryservices create` is not a valid command."
-  - content: "To restore an SAP HANA database on an Azure VMs backed up using Azure Backup, what minimum access permissions are required to the source and target VMs in addition to **Backup Operator**?"
+      explanation: "Incorrect. `az backup recoveryservices create` isn't a valid command."
+  - content: "What minimum VM access permissions are required, in addition to **Backup Operator**, to restore an SAP HANA database on Azure VMs backed up using Azure Backup? Include permissions for database source and target VMs."
     choices:
     - content: "Contributor (write)"
       isCorrect: true
       explanation: "Correct. Both source and target VMs need contributor (write) permissions"
     - content: "Contributor (read-only)"
       isCorrect: false
-      explanation: "Incorrect. Contributor (read-only) will not be sufficient permissions."
+      explanation: "Incorrect. Contributor (read-only) isn't sufficient permissions."
     - content: "Owner"
       isCorrect: false
-      explanation: "Incorrect. Owner role should not be used."
+      explanation: "Incorrect. Owner role shouldn't be used for Azure Backup."
