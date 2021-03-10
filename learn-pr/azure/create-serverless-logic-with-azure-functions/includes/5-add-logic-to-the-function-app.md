@@ -200,13 +200,13 @@ Because we specified *Function* when we created this function, we will need to s
 
 1. Select **Run**.
 
-Under the **Output** pane, for **HTTP response code**, the function responds with the text `"200 OK"`.
+    Under the **Output** pane, for **HTTP response code**, the function responds with the text `"200 OK"`.
 
-> [!CAUTION]
-> If you are on Windows, run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
+    > [!CAUTION]
+    > If you are on Windows, run  `cURL` from the command prompt. PowerShell has a *curl* command, but it's an alias for Invoke-WebRequest, and is not the same as `cURL`.
 
-> [!NOTE]
-> You can also test from an individual function's section with the **Test** pane appearing on the side of a selected function. You won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
+    > [!NOTE]
+    > You can also test from an individual function's section with the **Test** pane appearing on the side of a selected function. You won't be able to verify the function key system is working, as it is not required here. Add the appropriate header and parameter values in the Test interface, and select **Run** to see the test output.
 
 ## Add business logic to the function
 

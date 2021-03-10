@@ -33,8 +33,8 @@ Let's create a function app in the Azure portal.
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
-    | **Project Details** |
     | --- | --- |
+    | **Project Details** |
     | Subscription | Concierge Subscription |
     | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
