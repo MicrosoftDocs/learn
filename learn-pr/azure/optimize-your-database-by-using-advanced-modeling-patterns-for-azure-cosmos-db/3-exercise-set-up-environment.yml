@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise  
+uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-set-up-environment
 title: Set up your environment and measure performance and costs when denormalizing data  
 metadata:
   type: exercise  
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/3-exercise-set-up-environment.md)]

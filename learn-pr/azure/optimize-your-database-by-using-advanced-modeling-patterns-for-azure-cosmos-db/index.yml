@@ -32,12 +32,12 @@ products:
 units:
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.introduction
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-data
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise
+- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-set-up-environment
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.manage-referential-integrity-by-using-change-feed
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise
+- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exrecise-use-change-feed
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.combine-different-entities-in-the-same-container
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-aggregates-in-the-same-container
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise
+- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-denormalizing-aggregates-and-transactions
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.finalize-data-model
 - learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.summary
 badge:  
