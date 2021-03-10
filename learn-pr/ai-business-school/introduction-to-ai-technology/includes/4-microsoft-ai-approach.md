@@ -1,13 +1,13 @@
 
 **Pre-Built AI: Cognitive Services**
 
-![Prebuilt-AI](..\images\4-microsoft-ai-approach-1.png)
+![Diagram differentiating different types of cognitive services including vision, speech, language, search, and vision.](..\images\4-microsoft-ai-approach-1.png)
 
 When thinking of adopting AI into your business, you should consider Pre-built AI services first. Azure Cognitive Services is Microsoft's Prebuilt AI product. These are pre-trained models that have been developed by Microsoft’s global researchers and data scientists to solve common problems.  To avoid reinventing the wheel, business can leverage Pre-built to achieve quality and accelerate delivery of technology solutions. It is better to use the Azure Cognitive Services that offers prebuilt AI services in vision, speech, language, search, or decision-making that solves common problems.  This brings AI within reach of every developer and organization without requiring machine learning expertise.  As a result, it enables developers at all skill levels to easily add intelligence to new or existing business applications.
 
 **Azure Cognitive Service real world examples**
 
-![Prebuilt-AI](..\images\4-microsoft-ai-approach-2.png)
+![Diagram providing real world examples of different cognitive services including facial recognition, personalizer services for gaming, and language understanding in a chat window.](..\images\4-microsoft-ai-approach-2.png)
 
 Infusing cognitive services into existing and new business applications makes them smarter, intuitive, and customized to provide better user experience. Here are some business scenarios: 
 * Facial Recognition
