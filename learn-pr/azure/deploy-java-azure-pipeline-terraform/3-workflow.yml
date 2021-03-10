@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-azure-pipeline-terraform.3-workflow
-title: Apply DevOps
+title: Apply an automated workflow
 metadata:
-  title: Apply DevOps 
+  title: Apply an Automated Workflow
   description: Learn about automated workflow tooling and how they integrate with Terraform and Azure.
   ms.date: 02/01/2021
   author: roryp
