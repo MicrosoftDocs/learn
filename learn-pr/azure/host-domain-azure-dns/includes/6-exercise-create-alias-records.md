@@ -41,11 +41,11 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
 
 Now that you've created a test environment, you're ready to set up the Azure alias record in your zone apex.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the <rgn>[Sandbox resource group]<rgn> resource group.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the resource group <rgn>[Sandbox resource group]<rgn>.
 
 1. Select your DNS zone (wideworldimportsXXXX.com).
 
-1. Select **Record set**.
+1. Select **Record set**. The **Add record set** pane appears.
 
 1. Enter the following values to create an alias record.
 
@@ -70,7 +70,6 @@ When the new alias record is created, it should look something like this:
 ## Verify that the alias resolves to the load balancer
 
 Now you need to verify that the alias record is set up correctly. In a real-world scenario, you'll have an actual domain, and would have completed the domain delegation to Azure DNS. So you would use the registered domain name for this exercise. Because this unit assumes there's no registered domain, you'll use the public IP address.
-
 
 1. If you didn't copy the public IP address in a previous step, go to the resource group, and select **myPublicIP**. The IP address is on the upper-right side.
 
