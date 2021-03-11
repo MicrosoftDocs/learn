@@ -18,4 +18,4 @@ In this module, you'll use AI to build an aid to space rock classification techn
 
 ## Prerequisites
 
-- Some Python experience
+- None
