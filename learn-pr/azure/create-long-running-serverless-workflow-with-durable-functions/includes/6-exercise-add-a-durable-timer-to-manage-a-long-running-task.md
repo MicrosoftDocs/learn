@@ -4,7 +4,7 @@ In this exercise, you'll add a timer to control timeout during the execution of 
 
 ## Add moment npm package to your function app
 
-Before changing our workflow, we'll add the **moment** npm package to our function app through the console. fv
+Before changing our workflow, we'll add the **moment** npm package to our function app through the console.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
@@ -12,16 +12,26 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. Under **Development Tools**, select **Console**.
 
-1. When the console window opens, verify that you are in the _D:\home\site\wwwroot_ folder, then run the following command.
+1. Verify that the console window opens in the _D:\home\site\wwwroot_ folder, then run the following commands to install the libraries that are required for this sample function app.
 
-    ```bash
-    npm install typescript
-    npm install moment
-    ```
+    1. Run the following command to install the _typescript_ library, which is a required dependency that adds static typing to JavaScript.
 
-    These commands install the _typescript_ and _moment_ libraries. The _moment_ library contains date/time functions that you can use with durable functions, and the _typescript_ library is a dependency. These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
+        ```bash
+        npm install typescript
+        ```
+    
+    1. Run the following command to install the _moment_ library, which contains date/time functions that you can use with durable functions. 
+
+        ```bash
+        npm install moment
+        ```
+
+    1. These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
 
 1. Wait until all packages have finished installing, then close the console window.
+
+[//]: # (NOTE: DO NOT LOCALIZE THIS NOTE.)
+[//]: # (NOTE: The preceding library installation commands were intentionally split into two separate steps, because copying and pasting the combined commands into the Console window according to the steps in an earlier version of this module did not install the _moment_ library, which made the sample code fail. It took a while to discover the root cause of the problem, and with that in mind, it seemed like a better idea to split the commands so that they are run independently, and therefore less prone to error.)
 
 ## Add an escalation activity to your function app
 
