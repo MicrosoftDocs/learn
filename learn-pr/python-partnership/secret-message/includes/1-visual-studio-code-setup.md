@@ -23,7 +23,7 @@ Copy the following command into your <b>decrypt.py</b> file to say hello to the 
 print( "Hello, Contosoville!" )
 ```
 
-To have Python follow your commands, press the **Run** button at the upper right. You should see a message from Python:
+To have Python follow your commands, select the **Run** button at the upper right. You should see a message from Python:
 
 :::image type="content" source="../media/hello-output.png" alt-text="Screenshot of the Python confirmation message: Hello, Contosoville.":::
 

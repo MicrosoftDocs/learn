@@ -19,4 +19,4 @@ print( "Shifting ugflgkg by -18 gives: \n" + lassoWord( "ugflgkg", -18 ) )
 print( "Shifting wjmmf by -1 gives: \n" + lassoWord( "wjmmf", -1 ) )
 ```
 
-Now press the **Run** button. You should see the final clue to the meeting location and date to find the hidden treasure! 
+Now select the **Run** button. You should see the final clue to the meeting location and date to find the hidden treasure! 

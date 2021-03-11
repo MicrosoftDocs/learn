@@ -148,7 +148,7 @@ Test your new code by invoking the `lassoWord()` function with `terra` as the va
 print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
-Now when you press the **Run** button, you should see the word **green** printed on the console:
+Now when you select the **Run** button, you should see the word **green** printed on the console:
 
 ![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-function.png)
 

@@ -127,8 +127,10 @@ def lassoLetter( letter, shiftAmount ):
 
 Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message. 
 
-You will do this in the next unit, but you can try it out now by calling the `lassoLetter()` function within a `print()` function like this:
+You will do this in the next unit, but you can try it out now by calling the `lassoLetter()` function within a `print()` function, like this:
 
---PYTHON CODE SNIPPET--
+```python
 print(lassoLetter('a', 2))
---END PYTHON CODE SNIPPET--
+```
+
+What output do you see in the terminal?

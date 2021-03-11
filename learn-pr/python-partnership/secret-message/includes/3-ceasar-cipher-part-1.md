@@ -139,7 +139,7 @@ The program correctly prints `c`:
 
 :::image type="content" source="../media/test-function-example-1.png" alt-text="Screenshot that shows the output of the letter c.":::
 
-That looks to be working!
+It looks like it's working!
 
 ## Continue testing the decoder
 
@@ -163,11 +163,7 @@ You can try this out by testing your function:
 print(lassoLetter('N', 2))
 ```
 
-Here's the output:
-
-```output
-{
-```
+The output is `{`:
 
 :::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without using a loop.":::
 
