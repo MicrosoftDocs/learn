@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.3-knowledge-check-selecting-health-check-tools
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/01/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-knowledge-check-selecting-health-check-tools.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: The HPC applications runs correctly on 64 HB120_v2, should they still run some health checks?
+    choices:
+    - content: There is no need; the application is running correctly.
+      isCorrect: false
+      explanation: This answer is incorrect. Even though the HPC applications runs correctly on 64 VMs and produces the correct output, that does not mean it's running optimally. A single unhealthy VM can have a significant impact on parallel performance.
+    - content: You should only run health checks after every third deployment/
+      isCorrect: false
+      explanation: This answer is incorrect. There is no guarantee that each deployment will land on the same physical hardware. You should always run health checks after every deployment.
+    - content: Yes, you should still run some health checks.
+      isCorrect: true
+      explanation: Correct. You should always run health checks before running any HPC application, especially large tightly coupled HPC applications.
+  - content: What is the recommended tool to check the health of the InfiniBand interconnect?
+    choices:
+    - content: Intel IMB-IMP1 PingPong built with HPCX.
+      isCorrect: true
+      explanation: Correct. Intel IMB-MPI1 built with HPCX is pre-loaded on HPC CentOS 7.7+ marketplace image and provides the best performance.
+    - content: Intel IMB-IMPI1 PingPong contained in the Intel MPI environment on the CentOS-HPC 7.7+ Marketplace image.
+      isCorrect: false
+      explanation: This answer is incorrect. This version of IMB-IMP1 would work and measure InfiniBand latency/bandwidth, but other versions will measure more accurate and optimal InfiniBand latency/bandwidth.
+    - content: HPL built with HPCX.
+      isCorrect: false
+      explanation: This answer is incorrect. The HPL benchmark is primarily used to measure the maximum FLOPS. It will indirectly also test the InfiniBand network, but other tests/tools would be better options.
+  - content: What is the recommended tool to check the health of the VM's memory?
+    choices:
+    - content: IOR benchmark tool.
+      isCorrect: false
+      explanation: This answer is incorrect. The IOR benchmarking tool is used to benchmark synthetic I/O patterns, not memory bandwidth.
+    - content: Intel IMP-IMP1 PingPong.
+      isCorrect: false
+      explanation: This answer is incorrect. The Intel IMP-IMP1 PingPong is used to measure network latency/bandwidth, not VM memory bandwidth.
+    - content: Intel MLC.
+      isCorrect: true
+      explanation: Correct. The Intel Memory Latency Checker is an ideal tool to benchmark the maximum memory bandwidth, and thus determine the health of the VM memory.
