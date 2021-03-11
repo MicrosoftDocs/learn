@@ -18,15 +18,16 @@ abstract: |
  - How to visualize a tree classification model.
 
  > [!TIP]
- > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
+ > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
- - Basic Python experience
- - Have clean data about rocket launches
+ - [Predict rocket launch delays with machine learning](https://docs.microsoft.com/learn/paths/machine-learning-predict-launch-delay-nasa/?azure-portal=true)
+ - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/student-evangelism/machine-learning-model-nasa.svg
 levels:
 - beginner
 roles:
 - student
+- data-scientist
 products:
 - vs-code
 units:

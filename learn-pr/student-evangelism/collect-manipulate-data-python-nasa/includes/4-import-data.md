@@ -14,7 +14,7 @@ When you're setting up your local programming environment, we recommend creating
 
 Before continuing, be sure that you have:
 
-- Visual Studio Code installed with the Python and Jupyter Notebook extensions.
+- [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 - An Anaconda environment with Pandas, NumPy, scikit-learn, PyDotPlus, and Azure Machine Learning SDK.
 - A folder to store all of the code and data.
 - The data downloaded and saved to the folder.

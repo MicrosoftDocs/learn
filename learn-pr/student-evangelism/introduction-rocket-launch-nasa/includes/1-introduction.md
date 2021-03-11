@@ -24,5 +24,4 @@ In this module, you'll begin to discover:
 
 ## Prerequisites
 
-- A Windows, Mac, or Linux computer
-- Some Python skills
+- None
