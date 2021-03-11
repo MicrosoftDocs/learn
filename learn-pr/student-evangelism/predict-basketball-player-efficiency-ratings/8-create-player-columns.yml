@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.8-cre
 metadata:
   title: 'Exercise - Data manipulation part 1 - Add qualifying player information'
   description: Use Python to programmatically create a column that identifies unique players based on the population they belong to.
-  ms.date: 3/10/2021
+  ms.date: 03/10/2021
   author: sguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial
