@@ -4,7 +4,7 @@ When you reviewed your Advisor recommendations in the last unit, you may have di
 
 Advisor aggregates its findings into a single number – **Advisor Score**.
 
-Advisor Score is a rating of your Azure subscriptions on a scale from 0% to 100% to help you understand how optimized the resources in those subscriptions are, based on our documented best practices. It's also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
+Advisor Score is a rating of your Azure subscriptions on a scale from 0% to 100% to help you understand how well the resources in those subscriptions are optimized, based on our documented best practices. It's also further broken down into five individual category scores, each representing one of the five pillars of Azure Advisor and the Azure Well-Architected Framework.
 
 With just a quick glance, Advisor Score helps you to:
 
@@ -23,7 +23,7 @@ Advisor displays your category scores and your overall Advisor Score as percenta
 
 Each of the five categories has a highest potential score of 100%. Your overall Advisor Score is calculated as a sum of each applicable category score, divided by the sum of the highest potential score from all applicable categories. For most subscriptions, that means Advisor adds up the score from each category and divides by 500. But each category score is calculated only if you use resources that are assessed by Advisor.
 
-As an example, for a single subscription, the Advisor Score is the simple mean of all Advisor category scores for your subscription. So, if the Advisor category scores are
+As an example, for a single subscription, the Advisor Score is the simple mean of all Advisor category scores for your subscription. So, if the Advisor category scores are:
 
 - Cost = 73
 - Security = 81
