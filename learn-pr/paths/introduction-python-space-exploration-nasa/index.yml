@@ -4,7 +4,7 @@ metadata:
   title: Discover the role of Python in space exploration
   description: Get an introduction to Python, and be inspired to learn, discover, and create using Python-based data science and machine learning to help generate knowledge about the world beyond Earth.
   brand: vs-code
-  ms.date: 01/26/2021
+  ms.date: 03/10/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -29,6 +29,7 @@ levels:
 - beginner
 roles:
 - student
+- data-scientist
 products:
 - vs-code
 modules:

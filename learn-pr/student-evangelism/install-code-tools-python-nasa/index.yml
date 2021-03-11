@@ -3,7 +3,7 @@ uid: learn.student-evangelism.install-code-tools-python-nasa
 metadata:
   title: Install coding tools for Python development
   description: Learn about what coding is and install tools to help you code.
-  ms.date: 01/26/2021
+  ms.date: 03/10/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - How to run a basic Jupyter Notebook within Visual Studio Code
 
   > [!TIP]
-  > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |
   - A Windows, Mac, or Linux computer
@@ -29,6 +29,7 @@ levels:
 - beginner
 roles:
 - student
+- data-scientist
 products: 
 - vs-code
 units:

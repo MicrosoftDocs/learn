@@ -3,7 +3,7 @@ uid: learn.student-evangelism.basic-python-nasa
 metadata:
   title: Write basic Python in Notebooks in Visual Studio Code
   description: Learn the basics of Python.
-  ms.date: 01/26/2021
+  ms.date: 03/10/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -19,18 +19,16 @@ abstract: |
   - How to output data
 
   > [!TIP]
-  > This module is part of a multimodal learning experience. Revisit the first module to see how you can follow along!
+  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |
-  - Visual Studio Code installed
-  - Python installed
-  - Python extension installed
+  - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/student-evangelism/basic-python-nasa.svg
 levels:
 - beginner
 roles:
 - student
-- developer
+- data-scientist
 products:
 - vs-code
 units:

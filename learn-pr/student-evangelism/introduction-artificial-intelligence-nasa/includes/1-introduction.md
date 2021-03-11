@@ -4,6 +4,9 @@ In this Microsoft Learn module, you'll learn what AI is, and you'll use some lib
 
 The data is provided by NASA. Explore more interesting photos in NASA's [sample collection](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true).
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/NcUreWUpQFo?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you will:
@@ -17,4 +20,4 @@ In this module, you will:
 ## Prerequisites
 
 - Ability to write and run introductory Python programs
-- Visual Studio Code, a Python extension, and Jupyter Notebook installed
+- [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode?azure-portal=true)

@@ -2,8 +2,7 @@ While it was great reading about these technologies, a much more exciting way to
 
 ## Install Visual Studio Code
 
-As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode
-?azure-portal=true). Click on the download box, or download the Coding Pack for Python, which will install Python and the extension as well. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
+As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
 
 > [!NOTE]
 > The picture below shows someone using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.
