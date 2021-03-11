@@ -1,8 +1,8 @@
-In this unit, you'll learn how to create distributed tables in SQL Data Warehouse. After you create the tables, you'll use Azure Data Studio to run some queries against them.
+In this unit, you'll learn how to create distributed tables in Azure Synapse Analytics. After you create the tables, you'll use Azure Data Studio to run some queries against them.
 
 ## Create distributed tables
 
-SQL Data Warehouse divides your data into 60 databases. Each individual database is called a *distribution*. After you've loaded data into each table, SQL Data Warehouse has to know how to divide the data across these 60 distributions.
+Azure Synapse Analytics divides your data into 60 databases. Each individual database is called a *distribution*. After you've loaded data into each table, Azure Synapse Analytics has to know how to divide the data across these 60 distributions.
 
 The distribution method is defined at the table level. There are three choices:
 
@@ -18,11 +18,11 @@ By default, when you don't define a data distribution method, your table will us
 
 1. Open Azure Data Studio.
 
-1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made to the SQL Data Warehouse database and select **New Query**.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made to the Azure Synapse Analytics database, and select **New Query**.
 
-    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the Azure Synapse Analytics connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
-1. Run these statements in the new query window to create a hash distributed table:
+1. Run these statements in the new query window to create a hash distributed table.
 
     ```sql
     CREATE TABLE [dbo].[EmployeeBasic]
@@ -46,7 +46,7 @@ By default, when you don't define a data distribution method, your table will us
     - `[EmployeeBasic]` is the table name.
     - `[EmployeeID], [EmployeeName] ... [BloodGroup]` are column definitions.
     - The `WITH` clause defines one-to-many table options.
-    - `CLUSTERED COLUMNSTORE INDEX` is a table structure option. It stores the table as a clustered columnstore index in which all data is compressed and stored by column. Clustered columnstore index is the default structure for SQL Data Warehouse and applies to all table data.
+    - `CLUSTERED COLUMNSTORE INDEX` is a table structure option. It stores the table as a clustered columnstore index in which all data is compressed and stored by column. Clustered columnstore index is the default structure for Azure Synapse Analytics, and applies to all table data.
     - `DISTRIBUTION = HASH` ( *`distribution_column_name`* ) assigns each row to one distribution by hashing the value stored in `distribution_column_name`. The algorithm is deterministic, which means it always hashes the same value to the same distribution. The  distribution column should be defined as `NOT NULL` because all rows with `NULL` will be assigned to the same distribution.
 
 ### Create distributed tables that use the round robin method
@@ -72,11 +72,11 @@ Run this statement in a new query window to create a round robin distributed tab
     );
    ```
 
-`DISTRIBUTION = ROUND_ROBIN` distributes the rows evenly across all distributions in a round robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default distribution for SQL Data Warehouse.
+`DISTRIBUTION = ROUND_ROBIN` distributes the rows evenly across all distributions in a round robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default distribution for Azure Synapse Analytics.
 
 ### Create a replicated table
 
-Run this statement in a new query window to create a replicated table. Make sure SQL Data Warehouse is selected as target database in the query window.
+Run this statement in a new query window to create a replicated table. Make sure Azure Synapse Analytics is selected as target database in the query window.
 
   ```sql
     CREATE TABLE [dbo].[States]
@@ -91,7 +91,7 @@ Run this statement in a new query window to create a replicated table. Make sure
     );
   ```
 
-## Query SQL Data Warehouse
+## Query Azure Synapse Analytics
 
 Now we'll use Azure Data Studio to perform some queries against your data warehouse.
 
@@ -99,7 +99,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 1. Create a table named **EmployeeBasic** that uses the hash distribution method, if you haven't created it in the previous section.
 
-1.  Create another table named **EmployeeRemuneration** that uses the hash distribution method:
+1. Create another table named **EmployeeRemuneration** that uses the hash distribution method.
 
     ```sql
     CREATE TABLE [dbo].[EmployeeRemuneration]
@@ -120,7 +120,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Insert rows in both tables
 
-1. Clear the query window and run these INSERT statements to insert records in the **EmployeeBasic** table:
+1. Clear the query window, and run these INSERT statements to insert records in the **EmployeeBasic** table.
 
     ```sql
     INSERT INTO [dbo].[EmployeeBasic] VALUES
@@ -136,7 +136,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
    ![Insert rows into the EmployeeBasic table](../media/azure-data-studio-insert-rows.png)
 
-1. Insert a few rows into the EmployeeRemuneration table. Run these INSERT statements:
+1. Insert a few rows into the EmployeeRemuneration table. Run these INSERT statements.
 
     ```sql
     INSERT INTO [dbo].[EmployeeRemuneration] VALUES (1,'Software Developer',4000,1);
@@ -149,21 +149,20 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Run some basic queries
 
-1. Select all the rows of the **EmployeeBasic** table with all details:
+1. Select all the rows of the **EmployeeBasic** table with all details.
 
     ```sql
     SELECT * FROM [dbo].[EmployeeBasic];
     ```
 
-1. Select all the details of employees who were born in the year 1996:
+1. Select all the details of employees who were born in the year 1996.
 
     ```sql
     SELECT * FROM [dbo].[EmployeeBasic]
     WHERE YEAR(dob) = 1996;
     ```
 
-1. Select all the rows of the **EmployeeRemuneration**
-    table with all details:
+1. Select all the rows of the **EmployeeRemuneration** table with all details.
 
     ```sql
     SELECT * FROM [dbo].[EmployeeRemuneration];
@@ -177,7 +176,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
     ORDER BY (EmployeeName);
     ```
 
-1. Sort all employees in `[dbo].[EmployeeRemuneration]` by salary:
+1. Sort all employees in `[dbo].[EmployeeRemuneration]` by salary.
 
     ```sql
     SELECT EmployeeID, EmployeeDesignation, Salary, DepartmentID
@@ -187,35 +186,35 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Run some queries that use aggregation
 
-1. Select the sum of all the salaries in each department:
+1. Select the sum of all the salaries in each department.
 
     ```sql
     SELECT SUM(Salary) AS TOTALSUM, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the average of all the salaries in each department:
+1. Select the average of all the salaries in each department.
 
     ```sql
     SELECT AVG(Salary) AS AverageSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the maximum of all the salaries in each department:
+1. Select the maximum of all the salaries in each department.
 
     ```sql
     SELECT MAX(Salary) AS MaximumSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the minimum of all the salaries in each department:
+1. Select the minimum of all the salaries in each department.
 
     ```sql
     SELECT MIN(Salary) AS MinimumSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the number of employees in each department:
+1. Select the number of employees in each department.
 
     ```sql
     SELECT COUNT(EmployeeID) AS NumberOfEmployees, DepartmentID
@@ -239,7 +238,7 @@ Now we'll use Azure Data Studio to perform some queries against your data wareho
 
 ### Use aggregations with join operations
 
-1. Get details about all employees who receive the maximum salary in their department:
+1. Get details about all employees who receive the maximum salary in their department.
 
     ```sql
     SELECT

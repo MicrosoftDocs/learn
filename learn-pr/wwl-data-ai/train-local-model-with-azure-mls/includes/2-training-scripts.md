@@ -1,8 +1,8 @@
 You can use a **ScriptRunConfig** to run a script-based experiment that trains a machine learning model.
 
-## Write a script to train a model
+## Writing a script to train a model
 
-When using an experiment to train a model, your script should save the trained model in the **outputs** folder. For example, the following script trains a model using Scikit-Learn, and saves it in the **outputs** folder using the **joblib** package.
+When using an experiment to train a model, your script should save the trained model in the **outputs** folder. For example, the following script trains a model using Scikit-Learn, and saves it in the **outputs** folder using the **joblib** package:
 
 ```Python
 from azureml.core import Run
@@ -17,7 +17,7 @@ run = Run.get_context()
 
 # Prepare the dataset
 diabetes = pd.read_csv('data.csv')
-X, y = data[['Feature1','Feature2','Feature3']].values, data['Label'].values
+X, y = diabetes[['Feature1','Feature2','Feature3']].values, diabetes['Label'].values
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30)
 
 # Train a logistic regression model
@@ -36,11 +36,11 @@ joblib.dump(value=model, filename='outputs/model.pkl')
 run.complete()
 ```
 
-To prepare for an experiment that trains a model, a script like this is created and saved in a folder. For example, you could save this script as **training_script.py** in a folder named **training_folder**. Because the script includes code to load training data from **data.csv**, this file should also be saved in the folder.
+To prepare for an experiment that trains a model, a script like this is created and saved in a folder. For example, you could save this script as **training_script.py** in a folder named **training_folder**. Since the script includes code to load training data from **data.csv**, this file should also be saved in the folder.
 
-## Run the script as an experiment
+## Running the script as an experiment
 
-To run the script, create a **ScriptRunConfig** that references the folder and script file. You generally also need to define a Python (Conda) environment that includes any packages required by the script. In this example, the script uses Scikit-Learn, so you must create an environment that includes that. The script also uses Azure Machine Learning to log metrics, so you need to remember to include the **azureml-defaults** package in the environment.
+To run the script, create a **ScriptRunConfig** that references the folder and script file. You generally also need to define a Python (Conda) environment that includes any packages required by the script. In this example, the script uses Scikit-Learn so you must create an environment that includes that. The script also uses Azure Machine Learning to log metrics, so you need to remember to include the **azureml-defaults** package in the environment.
 
 ```Python
 from azureml.core import Experiment, ScriptRunConfig, Environment

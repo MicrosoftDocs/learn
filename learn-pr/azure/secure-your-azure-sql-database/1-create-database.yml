@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 title: Exercise - Set up sandbox environment

@@ -6,10 +6,9 @@ metadata:
   description: Learn the history of Python, implementations available, and common uses
   ms.date: 04/30/2019
   author: ShanaMatthews
-  ms.author: ShanaMatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-python.md)]

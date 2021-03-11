@@ -1,6 +1,6 @@
-Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to be able to prevent data loss, by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can enable their organization to prevent data loss through data loss prevention policies available in Microsoft 365 Compliance Center.
+Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can use data loss prevention policies, available in Microsoft 365 compliance center, to help their organization.
 
-Data loss prevention (DLP) is a way to protect sensitive information and prevent its inadvertent disclosure. Data loss prevention can be implemented through policies in Microsoft 365 Compliance Center. With DLP policies, admins can:
+Data loss prevention (DLP) is a way to protect sensitive information and prevent its inadvertent disclosure. With DLP policies, admins can:
 
 - **Identify, monitor, and automatically protect** sensitive information across Microsoft 365, including:
 
@@ -8,19 +8,19 @@ Data loss prevention (DLP) is a way to protect sensitive information and prevent
   - SharePoint Online
   - Microsoft Teams
   - Exchange Online
-- **Help users learn how compliance works** without interrupting their workflow. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip.
-- **View DLP reports** showing content that matches the organization's DLP policies. To assess how the organization is complying with a DLP policy, admins can see how many matches each policy has over time.
+- **Help users learn how compliance works** without interrupting their workflow. For example, if a user tries to share a document containing sensitive information, a DLP policy can send them an email notification and show them a policy tip.
+- **View DLP reports** showing content that matches the organization's DLP policies. To assess how the organization is following a DLP policy, admins can see how many matches each policy has over time.
 
 DLP policies protect content through the enforcement of rules that consist of:
 
 - **Conditions** that the content must match before the rule is enforced.
 - **Actions** that the admin wants the rule to take automatically when content that matches the conditions has been found.
-- **Locations** where the policy will be applied, such as Exchange, SharePoint, OneDrive, and more
+- **Locations** where the policy will be applied, such as Exchange, SharePoint, OneDrive, and more.
 
-For example, an admin can configure a DLP policy that helps detect information that is subject to a compliance regulation like the Health Insurance Portability and Accountability Act (HIPAA) across all SharePoint sites and OneDrive for Business, and block the relevant documents from being shared inappropriately.
+For example, an admin can configure a DLP policy that helps detect information that's subject to a compliance regulation like the Health Insurance Portability and Accountability Act (HIPAA) across all SharePoint sites and OneDrive for Business. The admin can block the relevant documents from being shared inappropriately.
 
-Data loss prevention policies protect information by identifying and automatically protecting sensitive data.
-Here are some scenarios data loss prevention policies can help address:
+DLP policies protect information by identifying and automatically protecting sensitive data.
+Here's some scenarios where DLP policies can help:
 
 - Identify any document containing a credit card number stored in users’ OneDrive for Business accounts.
 - Automatically block an email containing employee personal information from being sent outside the organization.
@@ -33,7 +33,7 @@ The rules inside the policy are prioritized in how they’re implemented. For ex
 
 ## What is endpoint data loss prevention?
 
-Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices.  To achieve this, admins can choose to target Windows 10 when creating a DLP policy (after onboarding the devices to Microsoft 365 compliance solutions). Endpoint DLP enables admins to audit and manage activities that users perform on sensitive content, including:
+Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices.  Admins can choose to target Windows 10 when creating a DLP policy (after onboarding the devices to Microsoft 365 compliance solutions). Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content, including:
 
 - Creating an item
 - Renaming an item
@@ -42,20 +42,20 @@ Endpoint data loss prevention is how the protection and activity monitoring capa
 - Printing documents
 - Accessing items using unallowed apps and browsers
 
-Information about what users are doing with sensitive content is viewable in the activity explorer:
+In the activity explorer, you can view information about what users are doing with sensitive content:
 
 :::image type="content" source="../media/5-activity-explorer-endpoint-data-loss-prevention.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
 
-Admins can use this information to enforce protective actions for content through controls and policies.
+Admins use this information to enforce protective actions for content through controls and policies.
 
 ## Data loss prevention in Microsoft Teams
 
-Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that can prevent users from sharing sensitive information in a Teams chat session or Teams channel, whether this information is in a message, or in a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot below shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number:
+Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that prevent users from sharing sensitive information in a Teams chat session or channel, whether it's in a message, or a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot below shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number:
 
 :::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
 
-The user can then find out more information about why their message was blocked by selecting the "What can I do?" link, so they can take appropriate action:
+The user can then find out more information about why their message was blocked by selecting the "What can I do?" link, and take appropriate action:
 
 :::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
 
-With DLP policies, Microsoft Teams can help users across organizations to collaborate securely and in a way that is in line with compliance requirements.
+With DLP policies, Microsoft Teams can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.

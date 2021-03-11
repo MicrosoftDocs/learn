@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 content: |
   [!include[](includes/4-summary.md)]
 durationInMinutes: 10

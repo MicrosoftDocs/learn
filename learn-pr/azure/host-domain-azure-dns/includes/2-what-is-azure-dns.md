@@ -52,7 +52,7 @@ As the administrator for your company, you want to set up a DNS server by using 
 The configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
 
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
-- **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, you would use CNAME.
+- **CNAME** record indicates that the name it refers to is *not* an alias. In other words, all other records are aliases. If you had different domain names that all accessed the same website, you would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
 - **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Microsoft 365 use TXT records to verify domain ownership.
 

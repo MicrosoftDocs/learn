@@ -4,12 +4,11 @@ title: What is version control?
 metadata:
   title: What is version control?
   description: What is version control?
-  ms-date: 06/24/2019
+  ms.date: 06/24/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/1-what-is-vc.md)]

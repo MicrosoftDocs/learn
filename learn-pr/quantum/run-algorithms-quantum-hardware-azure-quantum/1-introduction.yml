@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.run-quantum-algorithms-hardware.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 05/19/2020
+  author: geduardo
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

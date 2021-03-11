@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.3-exercise-create-an-azure-remote-rendering-resource
+title: Exercise - Create an Azure Remote Rendering resource
+metadata:
+  title: Exercise - Create an Azure Remote Rendering resource
+  description: Use the Azure portal to create a Remote Rendering service resource in Azure
+  ms.date: 02/01/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-an-azure-remote-rendering-resource.md)]

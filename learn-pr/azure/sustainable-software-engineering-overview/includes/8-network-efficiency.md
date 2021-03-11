@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxtXU]
+
 A network is a series of switches, routers, and servers. All of the equipment in a network consume electricity and have embedded carbon. The internet is a global network of devices typically run off the standard local grid energy mix or powered by renewables.
 
 When you send data across the internet, you send that data through many devices in the network, and each of those devices consumes electricity. As a result, any data you send or receive over the internet emits carbon.

@@ -24,7 +24,7 @@ In our design, we rely heavily on our CDN configuration to cache static content.
 
 We can eliminate this possibility by replicating the storage account to multiple regions when we choose a geo-redundant storage option. We also have to option to select a read-only replication option if we want to support the inability to add static content during a regional outage.
 
-We have two options to choose from when we need to enable geo-redundancy. These options are Read-Access Geo-Redundant Storage (RA-GRS) and Read-Acces Geo-Zone-Redundant Storage (RA-GZRS). The choice we make will depend on our budget and the percentage up time that we need.
+We have two options to choose from when we need to enable geo-redundancy. These options are Read-Access Geo-Redundant Storage (RA-GRS) and Read-Access Geo-Zone-Redundant Storage (RA-GZRS). The choice we make will depend on our budget and the percentage up time that we need.
 
 ## Azure App Service and Azure Function Apps
 

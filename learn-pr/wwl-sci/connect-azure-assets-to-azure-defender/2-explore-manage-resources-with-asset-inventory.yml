@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-azure-assets-to-azure-defender.explore-manage-your-resources-with-asset-inventory
+title: Explore and manage your resources with asset inventory
+metadata:
+  title: Explore and manage your resources with asset inventory
+  description: "Explore and manage your resources with asset inventory"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-manage-resources-with-asset-inventory.md)]

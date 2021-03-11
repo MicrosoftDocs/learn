@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-write-test-program.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 02/02/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What should you name a test file for the `bankcore` package?"
+    choices:
+    - content: "`banktests.go`"
+      isCorrect: false
+      explanation: "Incorrect. This file name would not be recognized as a test file."
+    - content: "`bank_test.go`"
+      isCorrect: true
+      explanation: "Correct! Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+    - content: "`test.go`"
+      isCorrect: false
+      explanation: "Incorrect. This file name would not be recognized as a test file."
+    - content: "`test_bank.go`"
+      isCorrect: false
+      explanation: "Incorrect. This file name would not be recognized as a test file."
+  - content: "What's the command to run tests in verbose mode?"
+    choices:
+    - content: "`go tests -v`"
+      isCorrect: true
+      explanation: "Correct! When you run `go tests -v`, all of the files that end in `_test.go` will run. You then get detailed, or verbose, output of the test results."
+    - content: "`go test main.go -v`"
+      isCorrect: false
+      explanation: "Incorrect. This command won't run any test files."
+    - content: "`go run tests`"
+      isCorrect: false
+      explanation: "Incorrect. This command won't run any test files."
+    - content: "`go tests`"
+      isCorrect: false
+      explanation: "Incorrect. This command will run all of the files that end in `_test.go` regularly."

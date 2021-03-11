@@ -13,7 +13,7 @@ Here are some additional requirements that relate to regulatory compliance:
 * For certain workloads, the company must be the only customer running VMs on the physical hardware.
 * The company must only run approved business applications on each VM.
 
-Here's a diagram that shows the proposed architecture:
+See the following diagram that shows the proposed architecture.
 
 :::image type="content" source="../media/7-architecture.png" alt-text="A diagram showing the proposed architecture. Virtual machines run both on Azure and in the datacenter." border="false":::
 

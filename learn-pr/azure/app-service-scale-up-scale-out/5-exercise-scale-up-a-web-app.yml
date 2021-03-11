@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-scale-up-a-web-app.md)]

@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel
+metadata:
+  title: 'SC-200 part 8: Perform threat hunting in Azure Sentinel'
+  description: 'SC-200 part 8: Perform threat hunting in Azure Sentinel'
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-200 part 8: Perform threat hunting in Azure Sentinel'
+prerequisites: |
+  - Ability to use KQL in Azure Sentinel like you could learn from SC-200 part 4: Create queries for Azure Sentinel using Kusto Query Language (KQL)
+  - Know how to create detections and perform investigations like you could learn from SC-200 part 7: Create detections and perform investigations using Azure Sentinel
+summary: |
+  Proactively hunt for security threats using the Azure Sentinel powerful threat hunting tools.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure
+- azure-sentinel
+modules:
+- learn.wwl.what-is-threat-hunting-azure-sentinel
+- learn.azure.hunt-threats-sentinel
+- learn.wwl.perform-threat-hunting-sentinel-with-notebooks
+trophy:
+  uid: learn.wwl.sc-200-perform-threat-hunting-azure-sentinel.trophy

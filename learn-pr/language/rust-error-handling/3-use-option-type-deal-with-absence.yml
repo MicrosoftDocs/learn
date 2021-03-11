@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-error-handling.3-use-option-type-deal-with-absence
+metadata:
+  title: Use the Option type to deal with absence
+  description: Learn how to use the Option enum when the absence of a value is a possibility.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use the Option type to deal with absence
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-use-option-type-deal-with-absence.md)]

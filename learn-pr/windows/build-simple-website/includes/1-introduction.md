@@ -1,7 +1,7 @@
 
-It's impressive what's possible to accomplish with a website today. You can build websites, or web apps, that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a simple website, and you'll use developer tools in the browser to understand what's happening.
+It's impressive what's possible to accomplish with a website today. You can build websites, or web apps that look and feel like native applications, but that run in your web browser. If you're interested in starting web development today, you may be faced by a dizzying array of options. In this module, we'll show you the basic components of a website, and the tools you can use to start web development. You'll use HTML, CSS, and JavaScript together to build a simple website, and you'll use developer tools in the browser to understand what's happening.
 
-With this fundamental knowledge in place, you will have a better context to make decisions in the future about such things as choosing JavaScript frameworks to build your website.
+With this fundamental knowledge in place, you'll have a better context to make decisions in the future about such things as choosing JavaScript frameworks to build your website.
 
 Let's get started by taking a look at where we want to go.
 
@@ -17,11 +17,11 @@ When completed, the simple website will look like this, when the dark theme is s
 
 In a web page, hypertext markup language (HTML) provides your content, cascading style sheets (CSS) define the appearance of the page, and JavaScript is used to provide interactivity with the user, that is, your business logic.
 
-The content, style, and business logic are separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. Among the many reasons to separate concerns, one is simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
+The content, style, and business logic are separated into HTML, CSS, and JavaScript files, respectively. A design principle in modern programming is the separation of concerns. Among the many reasons to separate concerns, two are simplicity and re-use. For example, by styling elements using CSS, you can apply styles to all the elements on a page, no matter the page complexity, rather than coding the appearance separately within each HTML element.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Create a basic web page using HTML
 - Apply styles to page elements using CSS
@@ -29,7 +29,7 @@ In this module, you will:
 - Add support for switching the theme using JavaScript
 - Inspect the website using browser developer tools
 
-You will run the site in your default browser. At the end of the module, we link to other modules that show how to deploy the website using Azure Static Web Apps.
+You'll run the site in your default browser. At the end of the module, we'll link to other modules that show how to deploy the website using Azure Static Web Apps.
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ The design decisions around how to split and disperse this data among the nodes 
 
 There are three main table distributions available in Synapse Analytics SQL Pools that will be described below:
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Table-Geometries/player?format=ny] 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MerJ]
 
 Selecting the correct table distribution can have an impact on the data load and query performance as follows:
 

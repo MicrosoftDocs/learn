@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'windows latest*'
+  vmImage: 'ubuntu-18.04'
   demands:
   - npm
 

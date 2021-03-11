@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ip-address-management.use-ipam-to-manage-ip-addressing
+title: Use IP Address Management to manage IP addressing
+metadata:
+  title: Use IP Address Management to manage IP addressing
+  description: "Use IP Address Management to manage IP addressing"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-use-ip-address-management-to-manage-ip-address.md)]

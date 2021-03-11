@@ -9,5 +9,6 @@ Finally, you've learned how to choose between Azure Data Box Disk and other Azur
 - [Azure Data Box documentation](https://docs.microsoft.com/azure/databox-family/)
 - [Use Azure portal to administer your Data Box Disk](https://docs.microsoft.com/azure/databox/data-box-portal-ui-admin)
 - [Supported operating systems for Data Box Disk](https://docs.microsoft.com/azure/databox/data-box-disk-system-requirements)
+- [Tracking and event logging for your Azure Data Box and Azure Data Box Heavy import order](https://docs.microsoft.com/azure/databox/data-box-logs)
 - [Azure Storage naming conventions](https://docs.microsoft.com/azure/databox/data-box-disk-limits#azure-block-blob-page-blob-and-file-naming-conventions)
 - [Choose an Azure solution for data transfer](https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)

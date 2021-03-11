@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.6-solution
+metadata:
+  title: Solution - Data types challenge
+  description: Check your solution for the data types challenge.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Solution - Data types challenge
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-solution.md)]

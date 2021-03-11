@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-access-management-for-apps
+metadata:
+  title: 'SC-300 part 3: Implement Access Management for Apps'
+  description: 'SC-300 part 3: Implement Access Management for Apps'
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-300 part 3: Implement Access Management for Apps'
+prerequisites: |
+  None
+summary: |
+  Explore how applications can and should be added to your identity and access solution with application registration in Azure AD.  Aligned to SC-300 Exam.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+- security-engineer
+products:
+- azure
+- azure-active-directory
+modules:
+- learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
+- learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso
+- learn.wwl.implement-app-registration
+trophy:
+  uid: learn.wwl.implement-access-management-for-apps.trophy

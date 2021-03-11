@@ -86,4 +86,4 @@ GO
 
 When you run such a query in Azure Data Studio, you use the **Chart Viewer** to display a time series graph. The chart shows how the counter varies over time.
 
-![Displaying a Counter Over Time](../media/2-display-counter-over-time.png)
+![Screenshot of Azure Data Studio with query and results displaying a counter over time.](../media/2-display-counter-over-time.png)
