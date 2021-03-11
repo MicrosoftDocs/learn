@@ -49,7 +49,7 @@ In the next unit, we'll set up a sample project and use GitHub Actions with Terr
 
 Let's learn about the key concepts and components that make up a pipeline.
 
-![key concepts graphic](media/3-workflow-concepts.svg)
+![key concepts graphic](../media/3-workflow-concepts.svg)
 
 - A **trigger** tells a Pipeline to run.
 - A pipeline is made up of one or more **stages**. A pipeline can deploy to one or more environments**.
