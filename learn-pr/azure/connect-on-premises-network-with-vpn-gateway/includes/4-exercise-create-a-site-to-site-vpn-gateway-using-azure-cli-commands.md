@@ -165,7 +165,7 @@ You'll now complete the configuration by creating the connections from each VPN 
     SHAREDKEY=<shared key>
     ```
 
-1. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
+2. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
     az network vpn-connection create \
@@ -176,7 +176,7 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-HQ-Network
     ```
 
-1. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run this command in Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**.
+3. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run this command in Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**.
 
     ```azurecli
     az network vpn-connection create \
