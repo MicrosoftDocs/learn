@@ -71,6 +71,7 @@ When executing commands that interact with Azure such as `plan`, `apply`, and `d
         command: apply
         environmentServiceName: 'My Azure Service Connection'
 ```
+
 ## State Support
 
 The task currently supports the following backend configurations
