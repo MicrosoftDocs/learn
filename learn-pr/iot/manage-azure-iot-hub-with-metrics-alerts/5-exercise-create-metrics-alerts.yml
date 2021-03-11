@@ -5,7 +5,7 @@ metadata:
   description: Use the Azure IoT portal to examine metrics. Then, add a range of rules, with associated alerts.
   ms.date: 2/2/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create IoT Hub metrics and alerts

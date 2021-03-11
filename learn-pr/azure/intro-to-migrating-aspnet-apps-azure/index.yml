@@ -23,7 +23,7 @@ prerequisites: |
   - Core Microsoft computer, storage, network, and virtualization technologies
   - On-premises resiliency Windows Server-based compute and storage technologies
   - Implementing and managing IaaS services in Microsoft Azure
-iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
+iconUrl: /learn/achievements/intro-to-migrating-aspnet-apps-azure.svg
 levels: 
 - beginner
 roles:

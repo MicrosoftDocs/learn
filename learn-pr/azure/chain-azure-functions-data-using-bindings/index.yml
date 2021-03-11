@@ -27,6 +27,12 @@ products:
 - azure-cosmos-db
 - azure-functions
 - azure-storage
+languages:
+- powershell
+salesplays:
+- azure
+- cloud-native-apps
+- enable-azure
 units:
 - learn.chain-azure-functions-data-using-input-output-bindings.1-introduction
 - learn.chain-azure-functions-data-using-input-output-bindings.2-explore-input-and-output-binding-types-portal-lesson

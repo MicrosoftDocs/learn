@@ -1,4 +1,4 @@
-The decoupled design of microservices combined with the atomicity of containers make it possible to scale out apps and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing.
+The decoupled design of microservices combined with the atomicity of containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing.
 In complex solutions, like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
 Before looking at what Kubernetes is, here's a summary of a few concepts that are key to containerized workloads.
@@ -42,20 +42,20 @@ These tasks include:
 
 - Scaling deployed container count up or down dynamically, based on demand.
 
-- Automation of rolling updates and rollbacks of containers.
+- Automating rolling updates and rollbacks of containers.
 
-- Management of storage.
+- Managing storage.
 
-- Management of network traffic.
+- Managing network traffic.
 
-- Storage and management of sensitive information, such as usernames and passwords.
+- Storing and managing sensitive information, such as usernames and passwords.
 
 > [!IMPORTANT]
-> Keep in mind that all of the preceding aspects of Kubernetes require configuration and a good understanding of the underlying technologies. For example, you need to understand concepts such as virtual networks, load balancers, and reverse proxies to configure Kubernetes networking.
+> Keep in mind that all of the preceding aspects of Kubernetes require configuration, and a good understanding of the underlying technologies. For example, you need to understand concepts such as virtual networks, load balancers, and reverse proxies to configure Kubernetes networking.
 
 ## Kubernetes considerations
 
-With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps as needed.
+With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your apps, as needed.
 
 :::image type="content" source="../media/2-kubernetes-considerations.svg" alt-text="Image that shows a list of Kubernetes components that including monitoring, microservices, databases, and the Docker runtime." border="false":::
 

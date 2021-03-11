@@ -20,7 +20,7 @@ To use the Log Analytics workspace and Azure Monitor logs, make sure that you ha
   - *Report Reader*
   - *Global Administrator*
 
-## The Log Analytics workspace
+## Log Analytics workspace
 
 You know that Azure collects user data in the form of audit and sign-in log files, but the data can't be directly imported into Azure Monitor. First, it needs to be gathered in a Log Analytics workspace. Each workspace is unique and has its own data repository and configuration. When you configure the workspace, you can analyze the data by using log searches and table-based queries.
 
@@ -141,7 +141,7 @@ Other common filter commands include:
 
 You can use many other commands to build your queries. You can find out more information about the query commands you can use to filter your data at the links provided at the end of this module.
 
-#### An example sign-in query
+#### Example sign-in query
 
 Let's suppose you want to know the most-used applications requested and signed in to over the last week. Your query would look something like this:
 
@@ -160,7 +160,7 @@ SigninLogs
 | where isRisky == true
 ```
 
-#### An example audit query
+#### Example audit query
 
 Now let's suppose you want to know the most common user event for the last week. You would use a query like this:
 
@@ -179,7 +179,7 @@ Alerts aren't dissimilar to queries, the principal difference being that they ru
 
    ![Screenshot of the "Set alert" button.](../media/3-set-query-alert.png)
 
-   The **Create rule** page opens.
+   The **Create rule** pane opens.
 
    If you want to be alerted when more than 10 applications are used in the past week, you would run the following query.
 

@@ -1,4 +1,4 @@
-In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
+In this unit, you'll create an Azure Cosmos DB account, and use a console application to populate the database.
 
 ## Create your database account
 
@@ -16,7 +16,8 @@ A database account is a container for multiple Azure Cosmos DB databases.
     export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
     ```
 
-    Note: If you were using your own Azure account instead of the sandbox, you would configure a static resource name in this variable.
+    > [!NOTE]
+    > If you were using your own Azure account instead of the sandbox, you would configure a static resource name in this variable.
 
 1. Create an Azure Cosmos DB account using the following command.
 
