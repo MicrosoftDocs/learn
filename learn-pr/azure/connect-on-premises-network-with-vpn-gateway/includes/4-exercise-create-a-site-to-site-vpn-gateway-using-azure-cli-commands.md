@@ -67,7 +67,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-HQ-Network \
         --public-ip-address PIP-VNG-HQ-Network \
-        --vnet VHQ-NetworkHQ-Network \
+        --vnet VNG-HQ-Network \
         --gateway-type Vpn \
         --vpn-type RouteBased \
         --sku VpnGw1 \
@@ -159,7 +159,7 @@ You'll now complete the configuration by creating the connections from each VPN 
 1. Create the shared key to use for the connections. In the following command, replace `<shared key>` with a text string to use for the IPSec pre-shared key. The pre-shared key is a string of printable ASCII characters no longer than 128 characters. You'll use this pre-shared key on both connections.
 
 > [!NOTE]
-> Any set of number will work for a shared key in this example:  SHAREDKEY=123456789    It is recommended in production environments to use string of printable ASCII characters no longer than 128 characters.
+> In this example, any set of numbers will work for a shared key : SHAREDKEY=123456789. In production environments, we recommend using a string of printable ASCII characters no longer than 128 characters.
 
   ```bash
     SHAREDKEY=<shared key>
@@ -211,6 +211,6 @@ Let's confirm that the VPN tunnels are connected.
     Azure-VNet-1-To-HQ-Network  Connected
     ```
 
-The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, is shown in this diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.
+The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, appears in the following diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.
 
 ![Resources deployed during unit 4 exercise](../media/4-resources-deployed-during-exercise-final.svg)
