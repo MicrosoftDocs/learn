@@ -31,7 +31,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
 
-1. Name the function **Escalation**, and then select **Create Function**.
+1. Name the function **Escalation**, and then select **Add**.
 
 1. When the function is created, select **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code.
 
