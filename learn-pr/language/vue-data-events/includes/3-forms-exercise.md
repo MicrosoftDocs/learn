@@ -2,7 +2,7 @@ Let's update a fictitious application for allowing people to book cruises into s
 
 ## Clone the starter repository and explore the code
 
-You've been provided a starter repository for this module. This will allow you to focus on the concepts you will explore in this module. You will need [Git](https://git-scm.com/?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) installed, and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer/?azure-portal=true) extension added to Visual Studio Code.
+You've been provided a starter repository for this module. This will allow you to focus on the concepts you will explore in this module. You will need [Git](https://git-scm.com/?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) installed, and the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension added to Visual Studio Code.
 
 Clone the starter repository and open the folder in [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) by executing the following code
 
