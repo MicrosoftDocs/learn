@@ -59,7 +59,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. A machine learning is only a small part of an AI solution."
   - content: |
-      A local weather station wants to use machine learning to accurately predict rainfall.  They have daily historical data with the following numeric data: time of the year, temperature, humidity, wind speed and raindays.  What type of machine learning algorithm should they use for this problem?
+      A local weather station wants to use machine learning to accurately predict rainfall.  They have daily historical data with the following numeric data: time of the year, temperature, humidity, wind speed and rain days.  What type of machine learning algorithm should they use for this problem?
     choices:
     - content: "Classification"
       isCorrect: false
