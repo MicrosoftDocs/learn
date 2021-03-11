@@ -14,7 +14,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. When the console window opens, verify that you are in the _D:\home\site\wwwroot_ folder, then run the following command.
 
-    ```command-prompt
+    ```bash
     npm install typescript
     npm install moment
     ```
