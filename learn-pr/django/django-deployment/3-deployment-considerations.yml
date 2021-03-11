@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.3-deployment-considerations
+metadata:
+  title: Deployment considerations
+  description: When developing our application, we take certain shortcuts for the sake of convenience. When we deploy to production, however, many of these settings need to change. We will explore how to prepare our application for deployment.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Deployment considerations
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-deployment-considerations.md)]

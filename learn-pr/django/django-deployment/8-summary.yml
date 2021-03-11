@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.8-summary
+metadata:
+  title: Summary
+  description: We saw how to deploy our application to production!
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.5-cloud-resources
+metadata:
+  title: Deployment considerations
+  description: When we are ready to deploy our application, we need to ensure we have the necessary components available, and our method selected. We will see what's needed to ensure a successful deployment.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Deployment considerations
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-cloud-resources.md)]

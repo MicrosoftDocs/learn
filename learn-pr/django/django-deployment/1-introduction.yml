@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.deployment.1-introduction
+metadata:
+  title: Deploy to Azure
+  description: SQLite and locally hosting our application is perfect for development, but we need something better for production. We will see how to prepare our application for deployment and perform the steps necessary to deploy it.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-django
+title: Deploy to Azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
