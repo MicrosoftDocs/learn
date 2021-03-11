@@ -71,7 +71,7 @@ When executing commands that interact with Azure such as `plan`, `apply`, and `d
         command: apply
         environmentServiceName: 'My Azure Service Connection'
 ```
-## Remote, Local, and Self-configured Backend State Support
+## State Support
 
 The task currently supports the following backend configurations
 
@@ -102,13 +102,18 @@ If azurerm selected, the task will prompt for a service connection and storage a
         backendAzureRmKey: infrax.tfstate
 ```
 
-### Automated Remote Backend Creation
+## Passing Parameters
 
-The task supports automatically creating the resource group, storage account, and container for remote azurerm backend. To enable this creation, set the `ensureBackend` input to `true` and provide the resource group, location, and storage account sku. The defaults are 'eastus' and 'Standard_RAGRS' respectively. The task will use the AzureCLI to create the resource group, storage account, and container as specified in the backend configuration.
+There are multiple methods to pass parameters to terraform commands.
+Variables give you a convenient way to get key bits of data into various parts of the pipeline.
 
-## Secure Variable Secrets
+You can set a variable for a build pipeline by following these steps:
 
-There are multiple methods to provide secrets within the vars provided to terraform commands.
+1. Go to the **Pipelines** page, select the appropriate pipeline, and then select **Edit**.
+1. Locate the **Variables** for this pipeline.
+1. Add or update the variable.
+1. To mark the variable as secret, select **Keep this value secret**.
+1. Save the pipeline.
 
 ## Terraform Output to Pipeline Variables
 
