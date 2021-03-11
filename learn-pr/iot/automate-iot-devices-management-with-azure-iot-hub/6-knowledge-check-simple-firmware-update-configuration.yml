@@ -5,8 +5,8 @@ metadata:
   title: Knowledge Check - Simple firmware update configuration
   description: Before we get into the more serious business of deploying a firmware update configuration on a set of devices, let's check what you've learned so far about configuring a simple firmware update in Azure IoT Hub.
   ms.date: 12/17/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge Check - Simple firmware update configuration
