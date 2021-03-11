@@ -5154,6 +5154,11 @@
       "source_path": "learn-pr/azure/shift-nodejs-express-apis-serverless/3-explore.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/shift-nodejs-express-apis-serverless/4-plan-migration-from-nodejs-express-azure-functions",
       "redirect_document_id": false
-    }    
+    },
+    {    
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/6-summary.yml",
+      "redirect_url": "/learn/modules/improve-api-developer-experience-with-swagger/7-summary",
+      "redirect_document_id": false
+    }
   ]
 }
