@@ -31,7 +31,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
         [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next : Hosting &gt;**.
+1. Select **Next : Hosting**.
 
 1. On the **Hosting** tab, enter the following values.
 
@@ -41,7 +41,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     | **Operating System** | _Windows_ | Specifies the operating system that hosts the function app. |
     | **Plan type** | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
-1. Select **Next : Monitoring &gt;**.
+1. Select **Next : Monitoring**.
 
 1. On the **Monitoring** tab, enter the following values.
 
