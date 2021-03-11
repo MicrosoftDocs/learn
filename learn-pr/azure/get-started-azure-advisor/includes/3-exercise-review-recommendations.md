@@ -1,7 +1,7 @@
 Now, let's walk through a real-world example to see how Advisor can work in your environment. In this unit, you'll find guided step-by-step instructions to review and apply some Advisor recommendations to help optimize your Azure workloads.
 
 > [!NOTE]
-> You'll need at least read access to one active Azure subscription with active subscriptions and provisioned resources.
+> You'll need at least read access to one active Azure subscription with provisioned resources.
 
 1. First, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Go to your Advisor dashboard by typing "advisor" in the search bar and then selecting **Advisor** from the list of services.
