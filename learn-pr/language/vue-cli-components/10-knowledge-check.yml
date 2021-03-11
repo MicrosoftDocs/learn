@@ -7,7 +7,7 @@ metadata:
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
-  ms.prod: learning-react
+  ms.prod: learning-vue
 title: Knowledge check
 durationInMinutes: 2
 content: |
@@ -50,6 +50,3 @@ quiz:
     - content: "List the name of the component in `props`."
       isCorrect: false
       explanation: "`props` stores a list of props for a component."
-    - content: "List the name of the component in `components`."
-      isCorrect: true
-      explanation: "You must list the component in `components`."
