@@ -65,7 +65,7 @@ Execute a complete migration with near-zero downtime:
 
 ## Azure App Service Migration Assistant
 
-Bring your web apps to the cloud with minimal or no code changes using the[Azure App Service Migration Assistant](https://azure.microsoft.com/services/app-service/migration-assistant/?azure-portal=true) - a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
+Bring your web apps to the cloud with minimal or no code changes by using the [Azure App Service Migration Assistant](https://azure.microsoft.com/services/app-service/migration-assistant/?azure-portal=true). The Assistant is a free and simple tool to migrate .NET web applications from on-premises to the cloud automatically.
 
 This tool can assess and migrate your on-premises .NET, Java, and Linux web apps to Azure. Download the App Service migration assistant — a fast, free, and automated way to migrate web apps with minimal or no code changes. Run readiness checks and get potential remediation steps for common issues. Receive step-by-step guidance for moving your web app to App Service.
 
