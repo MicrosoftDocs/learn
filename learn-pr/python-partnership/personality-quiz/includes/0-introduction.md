@@ -55,7 +55,7 @@ In this module, you'll discover how to:
 
 ## Prerequisites
 
-- [Visual Studio Code with Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
+- [Visual Studio Code with Python extension installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 
 > [!Note]
 > No coding experience is required to complete these lessons!

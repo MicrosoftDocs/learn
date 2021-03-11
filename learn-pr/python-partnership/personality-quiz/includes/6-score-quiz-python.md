@@ -62,10 +62,10 @@ if sam_like >= 3:
     print( "You're most like Sharp-Eyed Sam!" )
 elif cam_like >= 3:
     print( "You're most like Curious Cam!" )
-elif indy_like >= 3:
-    print( "You're most Inquisitive Indy!" )
+elif kai_like >= 3:
+    print( "You're most Keen Kai!" )
 else:
-    print( "You're most like Keen Kai!" )
+    print( "You're most like Inquisitive Indy!" )
 ```
 
 Select the **Run** button and find out which super sleuth personality you're most like!
