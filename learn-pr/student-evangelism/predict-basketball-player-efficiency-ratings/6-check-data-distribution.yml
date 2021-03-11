@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.6-che
 metadata:
   title: 'Exercise - Data exploration part 2 - Check the distribution of the data'
   description: Use histograms to discover the distribution of data in a dataset.
-  ms.date: 01/26/2021
+  ms.date: 3/10/2021
   author: sguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.9-imp
 metadata:
   title: 'Exercise - Data manipulation part 2 - Impute missing values for columns'
   description: Use the average value of columns to impute missing values of normally distributed data.
-  ms.date: 01/26/2021
+  ms.date: 3/10/2021
   author: sguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.4-dro
 metadata:
   title: 'Exercise - Data cleansing part 2 - Drop columns and rows'
   description: Drop columns and rows depending on the number of null values to create a more accurate dataset.
-  ms.date: 01/26/2021
+  ms.date: 3/10/2021
   author: sguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial
