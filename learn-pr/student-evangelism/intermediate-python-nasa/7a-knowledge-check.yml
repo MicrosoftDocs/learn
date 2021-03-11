@@ -22,7 +22,7 @@ quiz:
     - content: "To make your code look more sophisticated"
       isCorrect: false
       explanation: "Developers prefer simplicity"
-    - content: "To make your code clearner and less redundant"
+    - content: "To make your code cleaner and less redundant"
       isCorrect: true
       explanation: "Correct! This is the exact reason you'd use functions in your code."
   - content: "What are two ways to change variables not made in functions?"

@@ -13,13 +13,9 @@ Although this data exploration journey is one that can be lifelong, this first l
 
 In this module, you'll scratch the surface (pun intended) of how to start the data exploration. You'll learn:
 
-- What a programming language is
-- How to install Visual Studio Code and the benefits of this code editor
-- How to install extensions to enhance the Visual Studio Code experience
-- How to install Python and why it is such a popular programming language
-- How to run a basic Jupyter Notebook within Visual Studio Code
+- How code and data science plays a role in space exploration
+- Where to find STEM resources for learning more 
 
 ## Prerequisites
 
-- A Windows, Mac, or Linux computer
-- Knowledge of how to download programs from the Internet
+- None
