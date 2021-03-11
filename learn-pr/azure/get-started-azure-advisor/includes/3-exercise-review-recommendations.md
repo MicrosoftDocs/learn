@@ -1,7 +1,7 @@
-Now, let's walk through a real world example to see how Advisor can work in your environment. In this unit, you'll find guided step-by-step instructions to review and apply some Advisor recommendations to help optimize your Azure workloads.
+Now, let's walk through a real-world example to see how Advisor can work in your environment. In this unit, you'll find guided step-by-step instructions to review and apply some Advisor recommendations to help optimize your Azure workloads.
 
 > [!NOTE]
-> You'll need at least read access to one Azure subscription with active subscriptions and provisioned resources.
+> You'll need at least read access to one active Azure subscription with provisioned resources.
 
 1. First, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Go to your Advisor dashboard by typing "advisor" in the search bar and then selecting **Advisor** from the list of services.
@@ -34,11 +34,11 @@ Now, let's walk through a real world example to see how Advisor can work in your
 
    :::image type="content" source="../media/azure-advisor-vm-resize-shutdown-recommendation.png" alt-text="Screenshot showing recommended actions you can take." lightbox="../media/azure-advisor-vm-resize-shutdown-recommendation.png":::
 
-1. Select one of the **Recommended actions** from the list. On the next page, Advisor helps guide you through specific actions that you can take right now to apply the recommendation and resolve the issue.
+> [!NOTE]
+> If you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources. The only way to undo a recommendation is to take the opposite action.
+
+5. Select one of the **Recommended actions** from the list. On the next page, Advisor helps guide you through specific actions that you can take right now to apply the recommendation and resolve the issue.
 
    However, you'll notice that you can also choose to **Postpone** or **Dismiss** the recommended action, as we discussed in a previous unit.
 
    :::image type="content" source="../media/advisor-details-dashboard-postpone-dismiss.png" alt-text="Screenshot highlighting postpone and dismiss options." lightbox="../media/advisor-details-dashboard-postpone-dismiss.png":::
-
-> [!NOTE]
-> If you're not ready to take action during this exercise, simply close the Azure portal and no changes will be made to your subscriptions or resources.

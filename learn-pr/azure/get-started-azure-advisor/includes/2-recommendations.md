@@ -2,11 +2,7 @@ Let's get started by going to your Azure account on the Azure portal.
 
 ## Where can I find Advisor?
 
-Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a few different ways you can get to it:
-
-- Type "advisor" in the search bar at the top of the portal. Then select **Advisor** from the list of services.
-
-   :::image type="content" source="../media/advisor-from-search-bar.png" alt-text="Screenshot showing how to find Advisor by using the search bar." lightbox="../media/advisor-from-search-bar.png":::
+Advisor is available on the [Azure portal](https://portal.azure.com/?azure-portal=true). Here are a couple different ways you can get to it:
 
 - Select **Advisor** from the left pane of the portal.
 
@@ -16,13 +12,13 @@ Advisor is available on the [Azure portal](https://portal.azure.com/?azure-porta
 
    :::image type="content" source="../media/advisor-from-all-services.png" alt-text="Screenshot showing where to find Advisor under All services." lightbox="../media/advisor-from-all-services.png":::
 
-After you take one of the previous three steps, you'll see the Advisor dashboard.
+After you take one of the previous steps, you'll see the Advisor dashboard.
 
 :::image type="content" source="../media/azure-advisor-overview.png" alt-text="Screenshot of Advisor dashboard." lightbox="../media/azure-advisor-overview.png":::
 
 ### Areas where Advisor can help
 
-The Advisor dashboard gives you recommendations for the five categories that are the basis of the Azure Well-Architected Framework:
+The Advisor dashboard gives you recommendations for each of the five categories of the Azure Well-Architected Framework:
 
 | Category | Description |
 |---------|---------|
@@ -34,9 +30,11 @@ The Advisor dashboard gives you recommendations for the five categories that are
 
 ## How does Advisor work?
 
-Think of Azure Advisor as your personalized cloud consultant. It gives you messages that provide information on best practices to optimize the setup of your Azure services.
+Think of Azure Advisor as your personalized cloud consultant. It gives you recommendations on best practices to optimize the setup of your Azure services and to help you achieve your well-architected goals.
 
 Advisor analyzes your *resource configuration* and *usage telemetry* and then gives you actionable recommendations that can help you improve the cost effectiveness, performance, reliability, and security of your Azure resources, as well as your operational excellence.
+
+Advisor operates at the subscription and resource level, either in aggregate or individually. You can access Advisor recommendations as Owner, Contributor, or Reader of a subscription or resource. These levels of access also apply to partners who manage Azure resources on your behalf.
 
 :::image type="content" source="../media/how-advisor-works.svg" alt-text="Diagram showing how Azure Advisor makes custom recommendations for resource optimization based on your workloads.":::
 
@@ -70,16 +68,17 @@ Advisor gives you several recommendations for each of these categories. Here are
 
 #### Security
 
-Advisor integrates with [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab.
+- Management ports of virtual machines should be protected with just-in-time network access control.
+- FTPS should be required in your web app.
+- Container images should be deployed from trusted registries only.
 
-- Security Center periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities, such as overdue system updates.
-- Advisor guides you through the process of resolving any recommendations created by Security Center during its analysis.
+Advisor integrates with [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
 
 ## Remediating issues found by Advisor recommendations
 
 Now that you've learned a little about your Advisor recommendations, we'll show you the typical process you follow to resolve them:
 
-First, on your Advisor dashboard, you can select a category that shows recommendations to resolve. You can also choose to see **All recommendations, which show a list of every Advisor recommendation across all five categories.
+First, on your Advisor dashboard, you can select a category that shows recommendations to resolve. You can also choose to see **All recommendations**, which shows a list of every Advisor recommendation across all five categories.
 
 You'll notice that each of the five category tiles shows:
 
@@ -96,7 +95,7 @@ By making a selection, you open a new page that shows  details about the recomme
 - The potential annual savings for fixing each issue
 - The number of resources affected
 
-In addition, on the left side of the page under **Recommendations**, you can select a different category (or **All recommendations**) to quickly open a page where you can see the Advisor recommendations for that  selection.
+In addition, on the left side of the page under **Recommendations**, you can select a different category to quickly open a page where you can see the Advisor recommendations for that  selection.
 
 :::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details" lightbox="../media/azure-advisor-cost-recommendations.png":::
 
@@ -104,6 +103,6 @@ After you select a linked description for a recommendation, a window opens showi
 
 - You can select a linked **Recommended action** and another page opens that lets you take the necessary steps to resolve the issue.
 - If you'd prefer to handle the recommendation at a later time, you can select **Postpone**. Advisor removes it from the list, but will recommend it again if the issue hasn't been resolved.
-- If you know that you don't want to resolve that issue, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource.
+- If you know that you don't want to resolve that issue, you can just select **Dismiss** and Advisor will remove it from the list and will no longer show it as a recommendation for that resource. You can always revisit your dismissed recommendations in the **Postponed & Dismissed** tab under any of your recommendations.
 
    :::image type="content" source="../media/azure-advisor-vm-resize-postpone-dismiss.png" alt-text="Screenshot showing how to find Advisor by using search." lightbox="../media/azure-advisor-vm-resize-postpone-dismiss.png":::

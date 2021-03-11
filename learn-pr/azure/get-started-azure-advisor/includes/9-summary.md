@@ -1,4 +1,4 @@
-Think of Azure Advisor as your own personal cloud consultant. Advisor understands the best practices for your particular cloud platform. It provides you with recommendations to make your Azure workloads perform better, and be more efficient, more secure, and more reliable.
+Think of Azure Advisor as your own personal cloud consultant. It provides you with best practice recommendations to help your Azure workloads perform better and be more efficient, secure, and reliable.
 
 In this module, you've learned how Advisor provides you with recommendations based on the five pillars of the Azure Well-Architected Framework:
 
@@ -8,7 +8,7 @@ In this module, you've learned how Advisor provides you with recommendations bas
 - **Operational Excellence:** such as providing your service health status, which can impact your applications
 - **Performance:** such as scaling applications or upgrading resources to get better performance
 
-You've learned through step-by-step examples how Advisor gives you *actionable* recommendations. Advisor dashboard makes the application of its recommendations quick and easy. And lastly you've seen how you can use Advisor Score as a way to set target goals for optimizing your workloads and then track your progress over time.
+You've learned through step-by-step examples how Advisor gives you *actionable* recommendations. The Advisor dashboard makes the application of its recommendations quick and easy. And lastly you've seen how you can use Advisor Score as a way to set target goals for optimizing your workloads and then track your progress over time.
 
 ## Learn more
 

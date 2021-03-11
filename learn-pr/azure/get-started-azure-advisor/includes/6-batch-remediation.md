@@ -33,10 +33,10 @@ After you select **Quick Fix (Preview)**, a new page opens that helps guide you 
 
 Just as you can apply Advisor recommendations to multiple resources at the same time, you can also choose to postpone or dismiss the recommendations in bulk as well.
 
-To do this, you would follow the same process for **Quick Fix** that we just discussed. However, instead of quickly fixing the resources you choose, you would select either **Postpone** or **Dismiss**.
+For this option, follow the same process for **Quick Fix** that we just discussed. However, instead of quickly fixing the resources you choose, select either **Postpone** or **Dismiss**.
 
 :::image type="icon" source="../media/postpone.png" border="false"::: &nbsp; &nbsp; &nbsp; :::image type="icon" source="../media/dismiss.png" border="false":::
 
 :::image type="content" source="../media/azure-advisor-quick-fix-select-postpone-dismiss.png" alt-text="Screenshot showing how to bulk postpone or dismiss." lightbox="../media/azure-advisor-quick-fix-select-postpone-dismiss.png":::
 
-You can then deal with those recommendations at a later time (postpone), or they will be removed from the list altogether (dismiss).
+You can then deal with those recommendations at a later time (postpone), or they will be removed from the list altogether (dismiss). You can always review your postponed or dismissed recommendations in the **Postponed & Dismissed** tab under any recommendation. And as a reminder, postponed and dismissed recommendations will not be counted toward your Advisor Score.
