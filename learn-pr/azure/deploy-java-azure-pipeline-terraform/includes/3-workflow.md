@@ -45,6 +45,7 @@ In the next unit, we'll set up a sample project and use GitHub Actions with Terr
 ::: zone-end
 
 ::: zone pivot="azure-devops"
+
 ## Key concepts for new Azure Pipelines
 
 Let's learn about the key concepts and components that make up a pipeline.
@@ -62,7 +63,7 @@ Let's learn about the key concepts and components that make up a pipeline.
 
 ## Terraform Tasks for Azure Pipelines
 
-When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure Service Connection to authorize operations against the target subscription. This connection is specified via the `environmentServiceName` input
+When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure **Service Connection** to authorize operations against the target subscription. This connection is specified via the `environmentServiceName` input
 
 ```yaml
 - task: TerraformCLI
@@ -81,27 +82,6 @@ The task currently supports the following backend configurations
 - self-configured - State configuration will be provided using environment variables or command options.
 
 If azurerm selected, the task will prompt for a service connection and storage account details to use for the backend.
-
-```yaml
-- task: TerraformCLI
-    displayName: 'terraform init'
-    inputs:
-        command: init
-        backendType: azurerm
-        backendServiceArm: 'My Azure Service Connection'
-        # create backend storage account if doesn't exist
-        ensureBackend: true
-        backendAzureRmResourceGroupName: 'my-backend-resource-group'
-        # azure location shortname of the backend resource group and storage account
-        backendAzureRmResourceGroupLocation: 'eastus'
-        backendAzureRmStorageAccountName: 'my-backend-storage-account'
-        # azure storage account sku, used when creating the storage account
-        backendAzureRmStorageAccountSku: 'Standard_RAGRS'
-        # azure blob container to store the state file
-        backendAzureRmContainerName: 'my-backend-blob-container'
-        # azure blob file name
-        backendAzureRmKey: infrax.tfstate
-```
 
 ## Passing Parameters
 
