@@ -43,3 +43,79 @@ An Azure service principal is an identity that you create for use with applicati
 In the next unit, we'll set up a sample project and use GitHub Actions with Terraform to deploy it to Azure.
 
 ::: zone-end
+
+::: zone pivot="azure-devops"
+## Key concepts for new Azure Pipelines
+
+Let's learn about the key concepts and components that make up a pipeline.
+
+![key concepts graphic](media/3-workflow-concepts.svg)
+
+- A **trigger** tells a Pipeline to run.
+- A pipeline is made up of one or more **stages**. A pipeline can deploy to one or more environments**.
+- A stage is a way of organizing job in a pipeline and each stage can have one or more **jobs**.
+- Each job runs on one **agent**. A job can also be **agentless**.
+- Each agent runs a job that contains one or more **steps**.
+- A step can be a **task** or **script** and is the smallest building block of a pipeline.
+- A **task** is a pre-packaged script that does an action, such as invoking a REST API or publishing a build artifact.
+- An **artifact** is a collection of files or packages published by a run.
+
+## Terraform Tasks for Azure Pipelines
+
+When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure Service Connection to authorize operations against the target subscription. This connection is specified via the `environmentServiceName` input
+
+```yaml
+- task: TerraformCLI
+    displayName: 'terraform apply'
+    inputs:
+        command: apply
+        environmentServiceName: 'My Azure Service Connection'
+```
+## Remote, Local, and Self-configured Backend State Support
+
+The task currently supports the following backend configurations
+
+- local (default for terraform) - State is stored on the agent file system.
+- azurerm - State is stored in a blob container within a specified Azure Storage Account.
+- self-configured - State configuration will be provided using environment variables or command options.
+
+If azurerm selected, the task will prompt for a service connection and storage account details to use for the backend.
+
+```yaml
+- task: TerraformCLI
+    displayName: 'terraform init'
+    inputs:
+        command: init
+        backendType: azurerm
+        backendServiceArm: 'My Azure Service Connection'
+        # create backend storage account if doesn't exist
+        ensureBackend: true
+        backendAzureRmResourceGroupName: 'my-backend-resource-group'
+        # azure location shortname of the backend resource group and storage account
+        backendAzureRmResourceGroupLocation: 'eastus'
+        backendAzureRmStorageAccountName: 'my-backend-storage-account'
+        # azure storage account sku, used when creating the storage account
+        backendAzureRmStorageAccountSku: 'Standard_RAGRS'
+        # azure blob container to store the state file
+        backendAzureRmContainerName: 'my-backend-blob-container'
+        # azure blob file name
+        backendAzureRmKey: infrax.tfstate
+```
+
+### Automated Remote Backend Creation
+
+The task supports automatically creating the resource group, storage account, and container for remote azurerm backend. To enable this creation, set the `ensureBackend` input to `true` and provide the resource group, location, and storage account sku. The defaults are 'eastus' and 'Standard_RAGRS' respectively. The task will use the AzureCLI to create the resource group, storage account, and container as specified in the backend configuration.
+
+## Secure Variable Secrets
+
+There are multiple methods to provide secrets within the vars provided to terraform commands.
+
+## Terraform Output to Pipeline Variables
+
+The TerraformCLI task supports running the Terraform `output` command. When the CLI is run, pipeline variables will be created from each output variable emitted from the `terraform output` command.
+
+## Next steps
+
+In the next unit, we'll set up a sample project and use Azure Pipelines with Terraform to deploy it to Azure.
+
+::: zone-end
