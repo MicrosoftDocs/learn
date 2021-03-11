@@ -76,7 +76,7 @@ else:
 
 The output will look like this example:
 
-:::image type="content" source="../media/if-else-output.png" alt-text="Screenshot of the output when neither A nor B is the user input.":::
+:::image type="content" source="../media/if-else-output.png" alt-text="Screenshot of the output when the user input isn't A or B.":::
 
 A few things to note with `elif` statements:
 
