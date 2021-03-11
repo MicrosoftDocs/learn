@@ -20,7 +20,7 @@ summary: |
   - Get best practices and how-to guidance for Azure migration
 prerequisites: |
   - Basic understanding of cloud computing, Azure fundamentals and workloads being migrated
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/best-practices-azure-migration.svg
 hidden: true
 levels:
 - intermediate
