@@ -145,6 +145,13 @@ The last part of this workflow file sets the MY_NAME variable value for this wor
 
 For more information on workflow syntax check out [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 
+## GitHub-hosted vs self-hosted runners
+
+Earlier when we discussed jobs, we mentioned that they're associated with a runner. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block. This told the workflow that this particular job will run using the GitHub-hosted runner that is running ubuntu-latest. When it comes to runners, there are two options to choose from; GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment that is specified by the GitHub-hosted runner type you define, `runs-on: {operating system-version}`. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following, `runs-on: [self-hosted, linux, ARM32]`.
+
+Each type of runner has its benefits, but in short, GitHub-hosted runners offer a quicker, simpler way to run your workflows but with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud.
+
+For more information on GitHub-hosted and self-hosted runners, check out [Specifications for GitHub-hosted runners](https://docs.github.com/en/actions/reference/specifications-for-github-hosted-runners).
 
 ### GitHub Actions may have usage limits
 
