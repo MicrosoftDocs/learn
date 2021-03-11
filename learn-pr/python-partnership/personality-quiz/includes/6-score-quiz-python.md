@@ -63,7 +63,7 @@ if sam_like >= 3:
 elif cam_like >= 3:
     print( "You're most like Curious Cam!" )
 elif kai_like >= 3:
-    print( "You're most Keen Kai!" )
+    print( "You're most like Keen Kai!" )
 else:
     print( "You're most like Inquisitive Indy!" )
 ```
