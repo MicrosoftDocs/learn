@@ -1,6 +1,6 @@
 Here, we discuss the components and common configurations within a workflow file. We also take a closer look at the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
 
-## The components of a GitHub Actions Workflow
+## The components of GitHub Actions
 
 ![workflow](https://user-images.githubusercontent.com/6351798/106820078-ff74a100-6637-11eb-80f1-9b629806dacd.png)
 
@@ -69,7 +69,7 @@ on:
 
 In addition to `workflow_dispatch`, you can use the GitHub API to trigger a webhook event called `repository_dispatch`. This event allows you to trigger a workflow for activity that occurs outside of GitHub and essentially serves as an HTTP request to your repository asking GitHub to trigger a workflow off an action or webhook. Using this manual event requires you to do two things, send a `POST` request to the GitHub endpoint `/repos/{owner}/{repo}/dispatches` with the webhook event names in the request body, and configure your workflow to use the `repository_dispatch` event.
 
-```shell
+```bash
 curl \
   -X POST \
   -H "Accept: application/vnd.github.v3+json" \
@@ -146,7 +146,7 @@ You can find these workflows by navigating to the **Actions** tab of a repositor
 
 For more information on creating and using organization template workflows, check out [Sharing workflows with your organization](https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization).
 
-## Is an open source GitHub action safe to use?
+## Is an open source action safe to use?
 
 Many GitHub actions are open source and available for anyone who wants to use them. However, just like with any open source software, you need to carefully check them before using them within your project. Similar to recommended community standards with open source software such as including a README, code of conduct, contributing file, and issue templates just to name a few, you can follow the below recommendations when using GitHub actions:
 
@@ -159,7 +159,7 @@ Many GitHub actions are open source and available for anyone who wants to use th
 
 When referencing actions in your workflow, it's strongly recommended that you refer to a specific version of that action rather than just the action itself. By referencing a specific version, you are placing a safeguard from unexpected changes pushed to the action that could potentially break your workflow. Below are several ways you can reference a specific version of an action.
 
-```
+```yml
 steps:    
   # Reference a specific commit
   - uses: actions/setup-node@c46424eee26de4078d34105d3de3cc4992202b1e
