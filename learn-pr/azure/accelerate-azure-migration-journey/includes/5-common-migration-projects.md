@@ -8,8 +8,6 @@ Some of the common migration projects that Tailwind Traders will encounter inclu
 - VMware
 - SAP
 - Virtual Desktop Infrastructure (VDI)
-  
-![Graphic showing the common migration & modernization scenarios.](../media/migration-patterns.png)
 
 > [!NOTE]
 > Connect to the Cloud Adoption Framework for more information about all these migration [scenarios](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
