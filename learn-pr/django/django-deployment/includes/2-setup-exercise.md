@@ -1,7 +1,3 @@
-[1]: https://git-scm.com/downloads "Git website downloads"
-[2]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository "Clone GitHub repository"
-[3]: https://www.python.org/  "Install Python"
-
 In this module we will work on a website for dog shelters. This project focuses on collecting information of all existing dog shelters and the dogs they are hoping to adopt across the United States. The fictional hope for this app is dogs would be able to find suitable homes faster because they would have individuals looking to adopt them from around the U.S. and not just their local area.
 
 Django is the perfect framework for this project, as it provided a route for quickly developing a customer facing app while providing an established database and admin function that could easily be accessed by employees for quick updating. We have created the initial setup for this project, allowing us to focus on the concepts for this module.
@@ -35,7 +31,7 @@ code .
 
 ## Create the virtual environment
 
-We will follow the best practice of working with [virtual environments](https://docs.python.org/3/tutorial/venv.html/?azure-portal=true) for our project.
+We will follow the best practice of working with [virtual environments](https://docs.python.org/3/tutorial/venv.html?azure-portal=true) for our project.
 
 1. Inside Visual Studio Code, open the terminal window by selecting **View** > **terminal**.
 1. In the new **terminal** window, execute the following commands to create and activate a virtual environment:

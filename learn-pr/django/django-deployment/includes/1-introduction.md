@@ -22,6 +22,6 @@ In this module you'll learn how to:
   - Basic understanding of Django
   - Basic understanding of relational databases
   - Intermediate level knowledge of Python, including
-    - [Package Management](https://docs.python.org/3/installing/index.html/?azure-portal=true)
+    - [Package Management](https://docs.python.org/3/installing/index.html?azure-portal=true)
     - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments/?azure-portal=true)
     - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance/?azure-portal=true)

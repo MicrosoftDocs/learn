@@ -2,7 +2,7 @@ When you deploy an application to production on the cloud, there are a few consi
 
 ## Deployment options
 
-You have several options available to you for deploying to Azure. One of the most convenient is to use extensions for Visual Studio Code: [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb/?azure-portal=true) and [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice/?azure-portal=true). Azure Databases will allow us to create our database server and database, while Azure App Service will allow us to create, configure and deploy to our web host.
+You have several options available to you for deploying to Azure. One of the most convenient is to use extensions for Visual Studio Code: [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb&azure-portal=true) and [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice&azure-portal=true). Azure Databases will allow us to create our database server and database, while Azure App Service will allow us to create, configure and deploy to our web host.
 
 ## Database considerations
 
