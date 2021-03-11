@@ -117,7 +117,7 @@ You will finish by adding the newly created `BookingForm` to our application by 
 With all the code added, let's test the page!
 
 1. Save all files by clicking *File* > *Save all*.
-1. Navigate to [http://localhost:8080](http://localhost:8080) and refresh the page.
+1. Navigate to `http://localhost:8080` and refresh the page.
 1. Select a cabin from the dropdown list and click the button.
 1. Your new booking will be displayed on the right.
 
