@@ -64,7 +64,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Select **Notifications**.
 1. On the **Notifications** page, use the following values:
 
-   ![Screenshot that shows the "Add action group" pane filled out](../media/8-create-action-group-notifications.png)
+   ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
 
     |Field  |Value  |
     |---|---|
