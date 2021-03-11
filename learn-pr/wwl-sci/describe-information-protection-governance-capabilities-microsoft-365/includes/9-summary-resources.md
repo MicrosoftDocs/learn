@@ -1,11 +1,12 @@
 You’ve explored how Microsoft 365 capabilities like data classification, records management, and data loss prevention can help provide information protection and information governance across an organization.
 
-Without these capabilities, information across an organization would potentially be at risk, and the organization would be at risk of not being compliant with legal and regulatory standards. Instead, with the help of these capabilities, organizations able to provide information protection and governance to help avoid the risk of non-compliance.
-Now that you’ve completed this module, you should be able to:
+Without these capabilities, an organization's information could be at risk, and it might not be compliant with legal and regulatory standards. However, by using these capabilities, organizations can provide information protection and governance to help avoid the risk of noncompliance.
 
-- Describe data classification capabilities
-- Describe records management
-- Describe data loss prevention
+Now you’ve completed this module, you should be able to:
+
+- Describe data classification capabilities.
+- Describe records management.
+- Describe data loss prevention.
 
 ## Learn more
 

@@ -15,7 +15,7 @@ prerequisites: |
   - Ability to use the Azure CLI
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/generic-trophy-2.svg
+iconUrl: /learn/achievements/develop-and-deploy-applications-on-kubernetes.svg
 levels:
 - intermediate
 roles:

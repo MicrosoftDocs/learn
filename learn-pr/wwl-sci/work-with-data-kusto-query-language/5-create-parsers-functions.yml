@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-data-kql.create-parsers-with-functions
+title: Create parsers with functions
+metadata:
+  title: Create parsers with functions
+  description: "Create parsers with functions"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-create-parsers-functions.md)]

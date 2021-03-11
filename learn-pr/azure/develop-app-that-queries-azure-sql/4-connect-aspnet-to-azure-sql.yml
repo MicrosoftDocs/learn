@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Connect an ASP.NET application to Azure SQL Database
 durationInMinutes: 10
 content: |

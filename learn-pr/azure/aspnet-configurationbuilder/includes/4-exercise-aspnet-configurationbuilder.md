@@ -74,7 +74,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
     ```PowerShell
     Set-AzKeyVaultAccessPolicy `
-        -VaultName $vaultName `
+        -VaultName $vaultname `
         -PermissionsToKeys create,decrypt,delete,encrypt,get,list,unwrapKey,wrapKey `
         -PermissionsToSecrets get,list,set,delete `
         -ObjectId $objectId

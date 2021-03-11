@@ -8,7 +8,7 @@ Normally, you have to create a repository on GitHub before you can publish your 
 
 ### Create README.md
 
-The README file is what people see when they visit your repo on Github.com. For more information about the purpose and content of a README file, check out the [Contribute to open source on GitHub](https://docs.microsoft.com/en-us/learn/modules/create-open-source-program-github/) module.
+The README file is what people see when they visit your repo on Github.com. For more information about the purpose and content of a README file, check out the [Contribute to open source on GitHub](https://docs.microsoft.com/learn/modules/create-open-source-program-github/) module.
 
 1. On the **File** menu, select **New File**.
 1. Add the following text to the file.

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.hunt-threats-sentinel.3-query-management-creation
 metadata:
-  title: Explore Azure Sentinel threat hunting query creation and management
-  description: Explore Azure Sentinel threat hunting query creation and management
+  title: Explore creation and management of Azure Sentinel threat-hunting queries
+  description: Explore creation and management of Azure Sentinel threat-hunting queries
   ms.date: 12/15/2020
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore Azure Sentinel threat hunting query management and creation
+title: Explore creation and management of Azure Sentinel threat-hunting queries
 durationInMinutes: 10
 content: |
   [!include[](includes/3-query-management-creation.md)]
@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "T-SQL (Transact-SQL)"
       isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax."
     - content: "Kusto Query Language (KQL)"
       isCorrect: true
-      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax."
     - content: "JavaScript Object Notation (JSON)"
       isCorrect: false
-      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax"
+      explanation: "Azure Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax."

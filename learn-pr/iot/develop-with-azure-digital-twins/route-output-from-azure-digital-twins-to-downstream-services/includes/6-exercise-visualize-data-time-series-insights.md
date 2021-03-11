@@ -15,10 +15,10 @@
     ```powershell
     $es_resource_id=$(az eventhubs eventhub show -n tsi-event-hub -g $rgname --namespace $ehnamespace --query id -o tsv)
     $shared_access_key=$(az eventhubs namespace authorization-rule keys list -g $rgname --namespace-name $ehnamespace -n RootManageSharedAccessKey --query primaryKey --output tsv)
-    az timeseriesinsights event-source eventhub create -g $rgname --environment-name $tsiname -n tsieh --key-name RootManageSharedAccessKey --shared-access-key $shared_access_key --event-source-resource-id $es_resource_id --consumer-group-name '$Default' -l $location
+    az tsi event-source eventhub create -g $rgname --environment-name $tsiname -n tsieh --key-name RootManageSharedAccessKey --shared-access-key $shared_access_key --event-source-resource-id $es_resource_id --consumer-group-name '$Default' --event-hub-name "ehn" --service-bus-namespace "sbn" -l $location
     ```
 
-1. Finally, configure the permissions to access the data in the Time Series Insights environment. Make sure you replace "{sunscriptionId}" with your Azure Subscription ID:
+1. Finally, configure the permissions to access the data in the Time Series Insights environment. Make sure you replace "{subscriptionId}" with your Azure Subscription ID:
 
     ```powershell
     $id=$(az ad user show --id {subscriptionId} --query objectId -o tsv)

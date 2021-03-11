@@ -9,7 +9,7 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
     - Get the public IP address of the VM
     - See the activity of the CPU, disk, and network
 
-1. Click the **Connect** > **SSH** at the top of the pane.
+1. Select **Connect** > **SSH** at the top of the pane.
 
 1. Under step 4, copy the command to the clipboard.
 

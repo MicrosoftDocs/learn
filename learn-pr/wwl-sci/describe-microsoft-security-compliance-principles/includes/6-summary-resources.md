@@ -1,4 +1,4 @@
-In this module you have learned about Microsoft’s six privacy principles, and how they guide Microsoft’s security strategy. You learned about the Service Trust Portal, as well as where to find compliance and regulatory documentation for Azure.
+In this module you have learned about Microsoft’s six privacy principles, and how they guide security strategy. You learned about the Service Trust Portal, as well as where to find compliance and regulatory documentation for Azure.
 
 Now that you've completed this module, you'll be able to:
 

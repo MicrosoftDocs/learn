@@ -8,6 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Monitor
 durationInMinutes: 5
 content: |

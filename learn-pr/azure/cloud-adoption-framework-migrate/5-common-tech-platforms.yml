@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-migrate.5-common-tech-platforms
+title: Common tech platforms
+metadata:
+  title: Common tech platforms
+  description: Tailwind Traders is preparing their cloud environment. Learn more about their cloud portfolio to help them find the best governance solutions for their workloads.
+  ms.date: 02/22/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-common-tech-platforms.md)]
+  

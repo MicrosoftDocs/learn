@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-results-kql
+metadata:
+  title: Analyze query results using KQL
+  description: "Analyze query results using KQL"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze query results using KQL
+summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Azure Sentinel.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Summarize data using KQL statements
+  - Render visualizations using KQL statements
+prerequisites: |
+  - Familiarity with security operations in an organization.
+  - Basic experience with Azure services.
+iconUrl: /learn/achievements/analyze-results-in-kql.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure
+- azure-sentinel
+units:
+- learn.wwl.analyze-results-kql.introduction
+- learn.wwl.analyze-results-kql.use-summarize-operator
+- learn.wwl.analyze-results-kql.use-summarize-operator-to-filter-results
+- learn.wwl.analyze-results-kql.use-summarize-operator-to-prepare-data
+- learn.wwl.analyze-results-kql.use-render-operator-to-create-visualizations
+- learn.wwl.analyze-results-kql.knowledge-check
+- learn.wwl.analyze-results-kql.summary-resources
+badge:
+  uid: learn.wwl.analyze-results-kql.badge

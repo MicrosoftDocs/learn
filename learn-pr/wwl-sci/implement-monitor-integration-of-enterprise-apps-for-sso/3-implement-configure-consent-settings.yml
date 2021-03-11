@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.implement-configure-consent-settings
+title: Implement and configure consent settings
+metadata:
+  title: Implement and configure consent settings
+  description: "Implement and configure consent settings"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-implement-configure-consent-settings.md)]

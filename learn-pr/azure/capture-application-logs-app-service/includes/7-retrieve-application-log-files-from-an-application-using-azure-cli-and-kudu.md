@@ -77,6 +77,6 @@ In this procedure, you'll open the verbose logs that were saved into your Azure 
    Warning message
    ```
 
-   There should be several occurrences of this message in the log.
+    There should be several occurrences of this message in the log.
 
 1. Close the log file.

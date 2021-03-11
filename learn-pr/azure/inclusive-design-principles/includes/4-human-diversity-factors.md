@@ -21,7 +21,7 @@ Here are some examples of multiple types of disabilities occurring simultaneousl
 
 Let’s take a deeper look at the human diversity factors that makes up the framework. 
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Cloud-for-Everyone-Inclusive-Design-Understanding-Diversity-in-Disabilities/player?format=ny] 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LTQK]
 
 ### Cognition
 

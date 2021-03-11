@@ -34,7 +34,7 @@ After you add a guest user to the organization, send them a direct link to a sha
    ![Screenshot that shows the New Application button.](../media/7-enterprise-application.png)
 
 1. Search for **Twitter** and select **Create**.
-1. Select **Users and groups** > **Add user**.
+1. Select **Users and groups** > **Add user/group**.
 
    ![Screenshot that shows the Twitter application overview page.](../media/7-application-users-groups.png)
 

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/01/2020
+  ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -13,69 +13,69 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "With the increasing risk of cyber attacks, you're concerned that your database servers have the latest bug fixes. How can you ensure that your Azure Database for MySQL servers have the latest bug fix updates applied?"
+  - content: "With the increasing risk of cyber attacks, you're concerned your database servers don't have the latest bug fixes. How can you ensure your Azure Database for MySQL servers have the latest bug fix updates applied?"
     choices:
     - content: "Set an alert for bug fix updates and create a runbook to apply the updates automatically."
       isCorrect: false
-      explanation: "Bug fix updates are automatically applied. No action needs to be taken."
-    - content: "Bug fix updates are automatically applied. No action needs to be taken."
+      explanation: "That's incorrect. How do you know when bug fixes become available?"
+    - content: "Bug fix updates are automatically applied. You don't need to take any action."
       isCorrect: true
-      explanation: "Bug fix updates are automatically applied. No action needs to be taken."
-    - content: "Use the Advanced Threat Protection feature to ensure bug fixes are applied."
+      explanation: "That's correct. Bug fix updates are automatically applied. No action needs to be taken."
+    - content: "Use the Advanced Threat Protection (ATP) feature to ensure bug fixes are applied."
       isCorrect: false
-      explanation: "Bug fix updates are automatically applied. No action needs to be taken."
-  - content: "You want to keep your writeable on-premises version of a MySQL database, but create replica read-only copies for users in another country. What's the most straightforward method to achieve this with Azure Database for MySQL?"
+      explanation: "That's incorrect. ATP doesn't apply bug fixes, it will identify servers that need updates applied to them."
+  - content: "You want to keep your writeable on-premises version of a MySQL database, but create replica read-only copies for users in another region. What's the most straightforward method to achieve this with Azure Database for MySQL?"
     choices:
     - content: "Create an Azure Database for MySQL instance in the region closest to your users and configure Data-In Replication."
       isCorrect: true
-      explanation: "Data-in Replication uses the native replication functionality of MySQL to replicate data from an external MySQL Server into Azure Database for MySQL."
-    - content: "Create a read replica copy of your database located in the region closest to your users."
+      explanation: "That's correct. Data-in Replication uses the native replication functionality of MySQL to replicate data from an external MySQL Server into Azure Database for MySQL."
+    - content: "Create a read replica copy of your database that is located in the region closest to your users."
       isCorrect: false
-      explanation: "Data-in Replication uses the native replication functionality of MySQL to replicate data from an external MySQL Server into Azure Database for MySQL."
+      explanation: "That's incorrect. This copy won't be automatically kept up-to-date with your writeable on-premises database. There's a better option."
     - content: "Create a writeable Azure Database for MySQL instance in the region closest to your users, and create a read-only replica in your on-premises MySQL server."
       isCorrect: false
-      explanation: "Data-in Replication uses the native replication functionality of MySQL to replicate data from an external MySQL Server into Azure Database for MySQL."
+      explanation: "That's incorrect. This is the opposite of what you want to achieve."
   - content: "In MySQL, you have a database that includes large tables of data for employees and customers. In Azure Database for MySQL, you only want customer data. What's the easiest way to migrate the required data to Azure Database for MySQL?"
     choices:
-    - content: "Delete the unnecessary tables before performing a dump and restore."
+    - content: "Delete the unnecessary tables before doing a dump and restore."
       isCorrect: false
-      explanation: "All of the options would work, but MySQL Workbench allows you to select which objects to export in a straightforward manner."
-    - content: "Perform a mysqldump, and then edit the sql file to omit the tables that aren't required."
+      explanation: "That's incorrect. This would work, but there's an easier option."
+    - content: "Complete a mysqldump, and then edit the sql file to omit the tables that aren't required."
       isCorrect: false
-      explanation: "All of the options would work, but MySQL Workbench allows you to select which objects to export in a straightforward manner."
+      explanation: "That's incorrect. This would work, but there's a more efficient option."
     - content: "Perform a **Data Export** from MySQL Workbench, and select the required objects."
       isCorrect: true
-      explanation: "All of the options would work, but MySQL Workbench allows you to select which objects to export in a straightforward manner."
+      explanation: "That's correct. All of the options would work, but MySQL Workbench allows you to select which objects to export in a straightforward manner."
   - content: "You're performing an online migration on a live MySQL database. What happens to transactions that occur during the migration?"
     choices:
     - content: "They're applied to the source database and need to be captured so they can be applied to the destination database after migration."
       isCorrect: false
-      explanation: "The Azure Database Migration Service copies all of your existing data to Azure, and then continuously performs a synchronization operation from the source database. Any new transactions performed against the on-premises system will be copied to the new database in Azure."
+      explanation: "That's incorrect. Transactions don't need to be manually applied by database administrators."
     - content: "They're applied to the source database and synchronized to the destination database."
       isCorrect: true
-      explanation: "The Azure Database Migration Service copies all of your existing data to Azure, and then continuously performs a synchronization operation from the source database. Any new transactions performed against the on-premises system will be copied to the new database in Azure."
+      explanation: "That's incorrect. The Azure Database Migration Service copies all of your existing data to Azure, and then continuously performs a synchronization operation from the source database. Any new transactions performed against the on-premises system will be copied to the new database in Azure."
     - content: "They're blocked and client applications will receive an error. The database should be taken offline before migration."
       isCorrect: false
-      explanation: "The Azure Database Migration Service copies all of your existing data to Azure, and then continuously performs a synchronization operation from the source database. Any new transactions performed against the on-premises system will be copied to the new database in Azure."
-  - content: "You have many user accounts in MySQL. How are these accounts migrated to Azure Database for MySQL?"
+      explanation: "That's incorrect. Transactions can continue to occur during a migration."
+  - content: "You have many user accounts in MySQL. How are these accounts migrated to Azure Database for MySQL when using the Azure Database Migration Service?"
     choices:
     - content: "The accounts are automatically migrated by the Azure Database Migration Service."
       isCorrect: false
-      explanation: "Azure Database for MySQL uses the same authentication and authorization mechanisms as MySQL running on-premises. When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, users aren't copied. You must manually recreate the necessary user accounts."
+      explanation: "That's incorrect. When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, users aren't copied."
     - content: "The accounts are automatically migrated by a dump and restore migration."
       isCorrect: false
-      explanation: "Azure Database for MySQL uses the same authentication and authorization mechanisms as MySQL running on-premises. When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, users aren't copied. You must manually recreate the necessary user accounts."
+      explanation: "That's incorrect. This manual approach to migrating your database would include user accounts, but it isn't automatic."
     - content: "You must manually create the accounts post-migration."
       isCorrect: true
-      explanation: "Azure Database for MySQL uses the same authentication and authorization mechanisms as MySQL running on-premises. When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, users aren't copied. You must manually recreate the necessary user accounts."
-  - content: "You have many applications, using a variety of programming languages, that must be redirected to your migrated database. Where do you find the connection settings for your client application?"
+      explanation: "That's correct. Azure Database for MySQL uses the same authentication and authorization mechanisms as MySQL running on-premises. When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, users aren't copied. You must manually recreate the necessary user accounts."
+  - content: "You have many applications, using various programming languages, that must be redirected to your migrated database. Where do you find the database connection settings to use in your client applications?"
     choices:
     - content: "In the INFORMATION_SCHEMA.CONNECTION_STRINGS table in Azure Database for MySQL."
       isCorrect: false
-      explanation: "You'll find the connection information for your Azure Database for MySQL service in the Azure portal, on the **Connection strings** page for your Azure Database for MySQL service."
+      explanation: "That's incorrect. This isn't the place to find those settings."
     - content: "In the **Connection strings** page for Azure Database for MySQL."
       isCorrect: true
-      explanation: "You'll find the connection information for your Azure Database for MySQL service in the Azure portal, on the **Connection strings** page for your Azure Database for MySQL service."
+      explanation: "That's correct. You'll find the connection information for your Azure Database for MySQL service in the Azure portal, on the **Connection strings** page for your Azure Database for MySQL service."
     - content: "In the **Connection settings** page for your Azure portal."
       isCorrect: false
-      explanation: "You'll find the connection information for your Azure Database for MySQL service in the Azure portal, on the **Connection strings** page for your Azure Database for MySQL service."
+      explanation: "That's incorrect. This isn't the place to find those settings."

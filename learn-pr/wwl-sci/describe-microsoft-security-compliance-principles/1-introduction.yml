@@ -4,11 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 01/15/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

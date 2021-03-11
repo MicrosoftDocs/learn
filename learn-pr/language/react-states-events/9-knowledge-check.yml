@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-states-events.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Choose the best response for each question. Then select **Check your answers**.
+
+quiz:
+  questions:
+  - content: Which function should you use to register an event listener for the Effect Hook?
+    choices:
+    - content: "`useRef`"
+      isCorrect: false
+      explanation: "Incorrect. The `useRef` function doesn't provide access to the Effect Hook."
+    - content: "`useMemo`"
+      isCorrect: false
+      explanation: "Incorrect. The `useMemo` function doesn't provide access to the Effect Hook."
+    - content: "`useState`"
+      isCorrect: false
+      explanation: "Incorrect. The `useState` function is used to create a new stateful object."
+    - content: "`useEffect`"
+      isCorrect: true
+      explanation: "Correct. The `useEffect` function allows you to register an event listener for the Effect Hook."
+  - content: In React, which function should you use to register an object as stateful?
+    choices:
+    - content: "`useState`"
+      isCorrect: true
+      explanation: "Correct. The `useState` function allows you to register a stateful object."
+    - content: "`useEffect`"
+      isCorrect: false
+      explanation: "Incorrect. The `useEffect` function is raised when state changes."
+    - content: "`props`"
+      isCorrect: false
+      explanation: "Incorrect. The `props` function is commonly used to access properties for a component."
+  - content: In programming, what does *immutable* mean?
+    choices:
+    - content: "A value can't be logged."
+      isCorrect: false
+      explanation: "Incorrect. Immutability doesn't affect logging."
+    - content: "A value can't be altered."
+      isCorrect: true
+      explanation: "Correct. *Immutability* means a value can be replaced but not altered."
+    - content: "A project can't be debugged."
+      isCorrect: false
+      explanation: Incorrect. Immutability doesn't affect debugging.
+      

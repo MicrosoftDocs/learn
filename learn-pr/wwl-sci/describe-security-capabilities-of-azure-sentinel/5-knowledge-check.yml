@@ -4,26 +4,26 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/19/2021
+  ms.date: 01/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the lead admin, it is important to convince your team to start using Azure Sentinel. You’ve put together a presentation. What are the four security operation areas of Azure Sentinel that cover this area?"
+  - content: "As the lead admin, it's important to convince your team to start using Azure Sentinel. You’ve put together a presentation. What are the four security operation areas of Azure Sentinel that cover this area?"
     choices:
     - content: "Collect, Detect, Investigate, and Redirect."
       isCorrect: false
       explanation: "That's incorrect. Redirect is not one of the four key aspects of a SIEM/SOAR solution."
     - content: "Collect, Detect, Investigate, and Respond."
       isCorrect: true
-      explanation: "That's correct. A SIEM/SOAR solution uses collect, detect, investigate, and respond to identify and protect your organizations network perimeter. ."
+      explanation: "That's correct. A SIEM/SOAR solution uses collect, detect, investigate, and respond to identify and protect your organization's network perimeter. ."
     - content: "Collect, Detect, Investigate, and Repair."
       isCorrect: false
       explanation: "That's incorrect. Repair is not one of the four key aspects of a SIEM/SOAR solution."
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Azure Monitor Workbooks."
       isCorrect: true
-      explanation: "That's correct. Using the Azure Sentinel integration with Azure Monitor Workbooks, allows you to monitor data and provides versatility in creating custom workbooks."
+      explanation: "That's correct. Using the Azure Sentinel integration with Azure Monitor Workbooks allows you to monitor data and provides versatility in creating custom workbooks."
     - content: "Playbooks."
       isCorrect: false
       explanation: "That's incorrect. Playbooks allow you to automate your common tasks and simplify security orchestration."
     - content: "Microsoft 365 Defender."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft 365 Defender provides protection for Email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
+      explanation: "That's incorrect. Microsoft 365 Defender provides protection for email, client endpoints, enterprise IoT, Identity, Apps, and Cloud apps."
