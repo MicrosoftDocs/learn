@@ -1,4 +1,4 @@
-Azure provides several automated tests to help identify unhealthy VMs. By using these automated tests, Azure helps you remove unhealthy VMs from the fleet when they are discovered, and before customers have a chacen to access them. However, sometimes these automated tests do not catch every unhealthy VM.
+Azure provides several automated tests to help identify unhealthy VMs. By using these automated tests, Azure helps you remove unhealthy VMs from the fleet when they are discovered, and before customers have a chance to access them. However, sometimes these automated tests do not catch every unhealthy VM.
 
 > [!NOTE]
 > The automated healthchecks in Azure are continually updated and improved.
@@ -7,9 +7,9 @@ Some HPC applications, especially tightly coupled HPC applications, are sensitiv
 
 As a precaution, you should run your own health checks, especially when you're executing tightly coupled HPC applications at scale. Running your own health checks increase the probability that you'll continue to run your HPC application optimally at scale.
 
-## HPC VM Health Checks
+## HPC VM health checks
 
-We recommend that your VM health checks should verify that the following compontents are working and performing as expected: InfiniBand network, Memory, Storage, and CPU cores.
+We recommend that your VM health checks should verify that the following components are working and performing as expected: InfiniBand network, Memory, Storage, and CPU cores.
 
 ### InfiniBand health checks
 
@@ -19,21 +19,21 @@ The **Intel IMP-MPI1 Ping Pong** test is a great option, because it's pre-built 
 
 The following table illustrates the measured expected InfiniBand network latency and bandwidth measured using HPCX Intel IMB-IMP1 PingPong benchmark on HPC VMs. Values that are outside of the following ranges would be considered unhealthy.
 
-| VM SKU | Expected Network Latency | Expected Network Bandwidth |
+| VM SKU | Expected network latency | Expected network bandwidth |
 |---|---|---|
 | HB120_v2 | &lt; 2 &mu;s | &gt; 23.0 GB/s |
 | HC44 | &lt; 2 &mu;s | &gt; 11.5 GB/s |
 | HB60 | &lt; 2 &mu;s | &gt; 11.5 GB/s |
 
-Other tools and benchmarks to consider would be **osu-micro-benchmarks** and **Mellanox Clusterkit**, which is also pre-installed in the CentOS-HPC 7.7+ marketplace image, in the HPCX environment. Some example clusterkit scripts are available in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
+Other tools and benchmarks to consider would be **osu-micro-benchmarks** and **Mellanox ClusterKit**, which is also pre-installed in the CentOS-HPC 7.7+ marketplace image, in the HPCX environment. Some example ClusterKit scripts are available in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
 
 ### Memory health checks
 
-A good way to verify that a VM's memory is healthy is to measure the memory bandwidth, and the **Intel Memory Latency Checker (MLC)** is an ideal tool to benchmark the memory bandwidth. Other options would be to build and run the stream benchmark, or use **Clusterkit**, which can also measure memory bandwidth. Some example scripts can be found in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
+A good way to verify that a VM's memory is healthy is to measure the memory bandwidth, and the **Intel Memory Latency Checker (MLC)** is an ideal tool to benchmark the memory bandwidth. Other options would be to build and run the stream benchmark, or use **ClusterKit**, which can also measure memory bandwidth. Some example scripts can be found in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
 
 The following table shows the expected measured memory bandwidth on each of the HPC VMs running Intel MLC. Memory bandwidths that are outside these ranges would be considered unhealthy.
 
-| VM SKU | Expected Memory Bandwidth |
+| VM SKU | Expected memory bandwidth |
 |---|---|
 | HB120_v2 | &gt; 300 GB/s |
 | HC44 | &gt; 200 GB/s |

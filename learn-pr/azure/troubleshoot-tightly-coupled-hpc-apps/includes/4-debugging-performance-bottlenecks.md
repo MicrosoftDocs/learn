@@ -36,7 +36,7 @@ An easy way to determine if you are using the correct number of processes and th
 
 You should carefully check your MPI arguments and how you're specifying the number of parallel threads. For example: you should check your application's command-line arguments, or the values of environmental variables such as `OMP_NUM_THREADS`.
 
-### Check that the processes and threads are evenly distributed amongst all NUMA node domains.
+### Check that the processes and threads are evenly distributed amongst all NUMA node domains
 
 If you are using the **top** or **htop** tool, you can select the NUMA node domain view by specifying `2` as a command-line parameter (For example: on HB120_v2, you should see 30 NUMA node domains using this view). The percent of user utilization should be evenly distributed amongst all the NUMA domains. If the percent of user utilization is not distributed amongst the NUMA domains, then you should check your MPI command-line arguments and environmental variables.
 
