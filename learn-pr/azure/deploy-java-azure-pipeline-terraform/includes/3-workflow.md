@@ -52,7 +52,7 @@ Let's learn about the key concepts and components that make up a pipeline.
 ![key concepts graphic](../media/3-workflow-concepts.svg)
 
 - A **trigger** tells a Pipeline to run.
-- A pipeline is made up of one or more **stages**. A pipeline can deploy to one or more environments**.
+- A pipeline is made up of one or more **stages**. A pipeline can deploy to one or more **environments**.
 - A stage is a way of organizing job in a pipeline and each stage can have one or more **jobs**.
 - Each job runs on one **agent**. A job can also be **agentless**.
 - Each agent runs a job that contains one or more **steps**.
