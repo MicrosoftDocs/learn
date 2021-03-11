@@ -13,7 +13,7 @@ Whichever learning journey you choose today, you *will* be able to complete this
 
 ## Using CodeTour
 
-Using [CodeTour](https://aka.ms/codetour-mslearn) is easy. In fact, CodeTour is already set up in the repo that you cloned in the last unit!
+Using [CodeTour](https://aka.ms/codetour-mslearn?azure-portal=true) is easy. In fact, CodeTour is already set up in the repo that you cloned in the last unit!
 
 Open the CodeTour extension in Visual Studio Code Explorer. You should see a list of tours. Each tour has a few steps in it to guide you through your code writing.
 

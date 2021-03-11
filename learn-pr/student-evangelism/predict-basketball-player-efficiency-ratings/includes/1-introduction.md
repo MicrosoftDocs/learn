@@ -25,4 +25,3 @@ In this module, you get to explore stats related to basketball players (both hum
 ## Prerequisites
 
 - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-- A locally configured Python environment, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/?azure-portal=true)

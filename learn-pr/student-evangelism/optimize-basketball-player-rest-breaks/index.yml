@@ -26,9 +26,6 @@ abstract:  |
   © 2020 Warner Bros. Ent. All Rights Reserved.
 prerequisites: |
   - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode)
-  - [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
-  - [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn)
-  - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
   - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
   - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
 iconUrl: /learn/achievements/student-evangelism/optimize-basketball-player-rest-breaks.svg

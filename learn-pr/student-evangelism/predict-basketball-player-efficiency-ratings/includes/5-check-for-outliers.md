@@ -33,7 +33,7 @@ Ideally, you would produce the box plots for your columns in a single matrix tha
 
 Because of how the Seaborn library in Python works, you need to explicitly state the cell in the matrix where you want to render each box plot. Use the Python floor-division operator (`//`) to divide the 13 columns of interest (you don't need to look at `ID`) into rows. Use the modulo operator (`%`) to derive the column.
 
-First, import the Matplotlib and [Seaborn](https://seaborn.pydata.org) libraries into your notebook:
+First, import the Matplotlib and [Seaborn](https://seaborn.pydata.org?azure-portal=true) libraries into your notebook:
 
 ```python
 import matplotlib.pyplot as plt
