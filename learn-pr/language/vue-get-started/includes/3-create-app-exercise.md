@@ -77,7 +77,7 @@ Inside **index.html**, below the comment which reads `TODO: Add information disp
 
 ## Launch the page with Live Server
 
-The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer?azure-portal=true) extension for Visual Studio Code creates a development web server which will automatically refresh the page as changes are detected. After installing the extension (by clicking on the link if you haven't already), you can use it to host your page.
+The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&azure-portal=true) extension for Visual Studio Code creates a development web server which will automatically refresh the page as changes are detected. After installing the extension (by clicking on the link if you haven't already), you can use it to host your page.
 
 1. Save all files.
 1. Open the command palette in Visual Studio Code by hitting **Ctl-Shift-P** (or **Cmd-Shift-P** on a Mac).
