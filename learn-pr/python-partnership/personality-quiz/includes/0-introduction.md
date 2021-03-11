@@ -31,6 +31,8 @@ You can see that it really doesn't matter what kind of food the quiz taker choos
 
 With [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
 
+:::image type="content" source="../media/sleuth-figure.png" alt-text="Image of a girl wearing a trenchcoat and holding a magnifying glass." border="false":::
+
 We'll use five questions to determine which of the following four super sleuth characters you're most like:
 
 - Sharp-Eyed Sam
