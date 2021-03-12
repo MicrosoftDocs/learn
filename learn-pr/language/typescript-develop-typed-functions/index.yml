@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.language.typescript-develop-typed-functions
+metadata:
+  title: 'Develop typed functions by using TypeScript'
+  description: Learn how to develop typed functions by using TypeScript.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Develop typed functions by using TypeScript'
+summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
+abstract:  | 
+  In this module, you will learn how to:
+  - Explain the benefits of using types in functions.
+  - Write functions that have required, optional, default, and rest parameters.
+  - Define function types using type aliases or interfaces.
+prerequisites: |
+  - Knowledge of TypeScript
+  - Familiarity with JavaScript
+  - Familiarity with functions and arrays in JavaScript
+  - Installed software:
+    - [Git](https://git-scm.com/?azure-portal=true)
+    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+    - [Node.js](https://nodejs.org/?azure-portal=true)
+    - TypeScript
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.language.typescript-develop-typed-functions.1-introduction
+- learn.language.typescript-develop-typed-functions.2-create-functions-typescript
+- learn.language.typescript-develop-typed-functions.3-exercise-create-functions
+- learn.language.typescript-develop-typed-functions.4-parameters
+- learn.language.typescript-develop-typed-functions.5-exercise-parameters
+- learn.language.typescript-develop-typed-functions.6-define-function-types
+- learn.language.typescript-develop-typed-functions.7-functions-lab
+- learn.language.typescript-develop-typed-functions.8-knowledge-check
+- learn.language.typescript-develop-typed-functions.9-summary-resources
+badge:
+  uid: learn.typescript-develop-typed-functions.badge 

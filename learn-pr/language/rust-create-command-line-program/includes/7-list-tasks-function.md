@@ -37,7 +37,7 @@ use std::fmt;
 impl fmt::Display for Task {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         let created_at = self.created_at.with_timezone(&Local).format("%F %H:%M");
-        write!(f, )"{:<50} [{}]", self.text, created_at)
+        write!(f, "{:<50} [{}]", self.text, created_at)
     }
 }
 ```

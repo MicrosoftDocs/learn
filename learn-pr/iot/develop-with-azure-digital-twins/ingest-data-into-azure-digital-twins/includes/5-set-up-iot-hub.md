@@ -36,7 +36,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 1. Save and close the file.
 1. In the PowerShell window, go to the SimulatedClient folder in the repo and run the simulated client:
 
-    ```Azure CLI
+    ```azurecli
     cd ~\digital-twins-samples\handsonlab\SimulatedClient
     npm install
     node ./Sensor.js
@@ -44,7 +44,7 @@ Next, configure the device simulator to send data to your IoT Hub instance.
 
 ## Configure Event Grid on your IoT hub
 
-In this section, you configure your IoT hub to publish events as they occur.
+In this section, you configure your IoT hub to publish events as they occur. If this is the first time setting up Event Grid, you'll be prompted to register the resource provider. Registering a resource provider requires admin permissions to your subscription.
 
 1. In the Azure portal, go to your IoT hub:
     1. Select **Resource groups**.
@@ -71,7 +71,8 @@ In this section, you configure your IoT hub to publish events as they occur.
 
 1. In the **ENDPOINT DETAILS** section:
    1. Select **Endpoint Type** as **Azure Function**.
-   1. Choose **Select an endpoint**, paste the URL that you copied from your logic app, and then select **Confirm Selection**.
+   1. Choose **Select an endpoint** and pick the Azure Function app that you deployed earlier.
+   1. Select **Confirm Selection**.
 
       :::image type="content" source= "../media/select-azure-function.png" alt-text="Partial screenshot showing the Select Azure Function dialog box, with the Confirm Selection button highlighted.":::
 

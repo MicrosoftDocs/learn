@@ -1,4 +1,4 @@
-Referring to our scenario, let's say that you've decided to work on an Ubuntu Data Science Virtual Machine. To do so, you'll specify its configuration and create a resource in your resource group.
+Referring to our scenario, let's say that you've decided to work on an Ubuntu DSVM. To do so, you'll specify its configuration and create a resource in your resource group.
 
 ## Create a Data Science Virtual Machine using the Azure portal
 
@@ -8,17 +8,17 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu Da
 
     ![Screenshot that shows Azure Marketplace with the option for creating a resource highlighted](../media/create-new-resource.png)
 
-    As you can see, there are many selectable options. We want to create a Data Science Virtual Machine running on Ubuntu.
+    As you can see, there are many selectable options. We want to create a DSVM running on Ubuntu.
 
-1. Use the **Search the Marketplace** search bar to find "Data Science." In the list, select the **Data Science Virtual Machine - Ubuntu 18.04** option.
+1. In the **Search the Marketplace** search bar, enter *Data Science*. Select the **Data Science Virtual Machine - Ubuntu 18.04** option. The **Data Science Virtual Machine - Ubuntu 18.04** pane appears.
 
     ![Screenshot that shows a search box with Data Science Virtual Machine Ubuntu Server 18.04 highlighted](../media/search-dsvm.png)
 
-1. Select **Create**. The **Create a virtual machine** page appears. Notice the wizard-based approach that we can use to configure the VM.
+1. Select **Create**. The **Create a virtual machine** pane appears. Notice the wizard-based approach that we can use to configure the VM.
 
 ### Configure the VM
 
-1. To configure the basic parameters of our Ubuntu virtual machine, in the **Basics** tab, fill in the following fields.
+1. To configure the basic parameters of our Ubuntu virtual machine, in the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -46,8 +46,8 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu Da
 
 1. The VM deployment process takes a few minutes to finish. A notification will inform you that the deployment succeeded. Select **Go to resource** to go to the VM overview page.
 
-1. You can see all the information and configuration options for your newly created Data Science Virtual Machine. One of the pieces of information is the **Public IP address** value. Make note of this IP address, because you'll need it to connect.
+1. You can see all the information and configuration options for your newly created DSVM. One of the pieces of information is the **Public IP address** value. Make note of this IP address, because you'll need it to connect.
 
     ![Screenshot that shows the VM overview page with the public I P address to the V M highlighted](../media/dsvm-summary-started-in-portal.png)
 
-Congratulations! By performing a few steps, you deployed a Data Science Virtual Machine running on Linux. Now let's connect to it.
+Congratulations! By performing a few steps, you deployed a DSVM running on Linux. Now let's connect to it.

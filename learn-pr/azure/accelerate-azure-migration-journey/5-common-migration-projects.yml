@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.accelerate-migration-journey.5-common-migration-projects
+title: Common migration projects
+metadata:
+  title: Common migration projects
+  description: This unit examines common migration projects from the perspective of workload type. 
+  ms.date: 02/12/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-common-migration-projects.md)]

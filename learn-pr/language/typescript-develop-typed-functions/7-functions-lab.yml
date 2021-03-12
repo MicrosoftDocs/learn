@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-develop-typed-functions.7-functions-lab
+title: Lab - Use functions in TypeScript
+metadata:
+  title: Lab - Use functions in TypeScript
+  description: Apply what you've learned to convert JavaScript functions to TypeScript functions.
+  ms.date: 02/11/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-functions-lab.md)]

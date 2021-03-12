@@ -72,19 +72,20 @@ Now you're invoking a function that you wrote, `lassoLetter()`, from a new funct
 
 With the code that you just wrote, you'll have one value in the `decodedLetter` variable. When the loop runs again, the variable gets updated. 
 
-You can trace the code to see how this works:  
-- `word` = "hello"  
+You can trace the code to see how this works:
+
+- `word` = "gdkkn"  
 - `shiftAmount` = 1
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---------------|--------|---------------|-------------|
-| 1 | 'h' | 'i' | |
-| 2 | 'e' | 'f' | |
-| 3 | 'l' | 'm' | |
-| 4 | 'l' | 'm' | |
-| 5 | 'o' | 'p' | |
+| 1 | 'g' | 'h' | |
+| 2 | 'd' | 'e' | |
+| 3 | 'k' | 'l' | |
+| 4 | 'k' | 'l' | |
+| 5 | 'n' | 'o' | |
 
-You're left with a variable named `decodedLetter` that has a value of just the letter 'p'. But, what you wanted was a variable named `decodedWord` to have the value `ifmmp`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
+You're left with a variable named `decodedLetter` that has a value of just the letter 'o'. But, what you wanted was a variable named `decodedWord` to have the value `hello`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
 
 ```python
 def lassoWord( word, shiftAmount ):
@@ -102,11 +103,11 @@ With this code, the entire word is now stored in the variable `decodedWord`. You
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` | Value of <br>`decodedWord` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |----------------|----------|-----------------|---------------|---------------|
-| 1 | 'h' | 'i' | "i" | |
-| 2 | 'e' | 'f' | "if" | |
-| 3 | 'l' | 'm' | "ifm" | |
-| 4 | 'l' | 'm' | "ifmm" | |
-| 5 | 'o' | 'p' | "ifmmp" | |
+| 1 | 'g' | 'h' | "h" | |
+| 2 | 'd' | 'e' | "he" | |
+| 3 | 'k' | 'l' | "hel" | |
+| 4 | 'k' | 'l' | "hell" | |
+| 5 | 'n' | 'o' | "hello" | |
 
 ### Comment your code
 
@@ -138,7 +139,7 @@ def lassoWord( word, shiftAmount ):
 
 ## Test your functions
 
-Press the green **Play** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
+Press the green **Run** button, and . . . nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
 
 Test your new code by invoking the `lassoWord()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shiftAmount` parameter. 
 
@@ -147,13 +148,13 @@ Test your new code by invoking the `lassoWord()` function with `terra` as the va
 print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
-Now when you press the **Play** button, you should see the word **green** printed on the console:
+Now when you select the **Run** button, you should see the word **green** printed on the console:
 
-![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-functions.png)
+![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-function.png)
 
-## Review the complete decrypt.py file
+## Review the complete file
 
-Now that you've written two lasso functions, your complete **decrypt.py** file should look like this:
+Now that you've written two lasso functions, your complete <b>decrypt.py</b> file should look like this:
 
 ```python
 # Define a function to find the truth by shifting the letter by a specified amount
@@ -202,5 +203,3 @@ print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
 Now you're ready to decode the secret message!
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
