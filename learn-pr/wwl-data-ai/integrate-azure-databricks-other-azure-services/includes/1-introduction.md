@@ -58,7 +58,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 ## Configure JDBC Connection to Azure Synapse Analytics
 
-Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure Portal.
+Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure portal.
 
 1. After the Azure Synapse Analytics instance is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
