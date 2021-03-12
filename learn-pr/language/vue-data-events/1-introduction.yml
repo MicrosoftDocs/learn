@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-data-events.1-introduction
+metadata:
+  title: Overview of dynamic data and events
+  description: Let's see how we can incorporate interactivity into a Vue.js application.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Overview of dynamic data and events
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

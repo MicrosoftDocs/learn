@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-data-events.3-forms-exercise
+metadata:
+  title: Bind data to forms
+  description: Let's add a form to a page and bind data.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Bind data to forms
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-forms-exercise.md)]
