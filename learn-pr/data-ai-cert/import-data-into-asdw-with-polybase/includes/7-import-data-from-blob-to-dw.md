@@ -8,7 +8,7 @@ You can now import the data from the blob storage to the Azure Synapse Analytics
 Using Transact-SQL, you can use PolyBase to access files that are located directly on Azure Storage as if they were structured tables within your SQL Pool. You define an **external data source** pointing to the location of the file or the folder the files reside in, the external file format, which can be GZip compressed delimited text, ORC, Parquet or JSON, and then the external table with the column attributes that map to the structure from the external files.
 
 > [!div class="mx-imgBorder"]  
-> ![Azure Synapse Studio](../media/azure-synapse-studio.png)
+> ![Azure Synapse Studio.](../media/azure-synapse-studio.png)
 
 ## Create an import database
 
