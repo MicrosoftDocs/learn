@@ -258,7 +258,7 @@ A release pipeline provides the **CD** portion of CI/CD.
 
 1. As you did when creating the previous pipeline, select the start with an **Empty job** link.
 
-    ![The Empty job link is highlighted.](../media/empty-job-link-release.png)
+    ![The Empty job link is highlighted for release pipeline.](../media/empty-job-link-release.png)
 
 1. Select **Add an artifact**. Set the source type to **Build**, then select your build pipeline you created in the previous step as the **Source**. Select **Add** to apply your changes.
 
