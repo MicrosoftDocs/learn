@@ -1,4 +1,4 @@
-Just as with the Azure DSR response, the Office 365 DSR response has a scope to it<!-- ID/SME. Can we reword the phrase "has a scope to it?" This is vague and won't translate well. -->. Office 365 services are available in different environments that can impact the scope. For example, if an Office 365 customer receives a DSR in Germany, it would be fulfilled in a national cloud called *Office 365 Germany*. Another similarity between the DSR responses for Azure and Office 365 is that the process of responding to DSRs consists of different parts, for ease of fulfillment.
+Just as with the Azure DSR response, the Office 365 DSR response has a scope boundry to it<!-- ID/SME. Can we reword the phrase "has a scope to it?" This is vague and won't translate well. --> <!-- ID. I added the word boundry to help clarify. Is that ok? -->. Office 365 services are available in different environments that can impact the scope. For example, if an Office 365 customer receives a DSR in Germany, it would be fulfilled in a national cloud called *Office 365 Germany*. Another similarity between the DSR responses for Azure and Office 365 is that the process of responding to DSRs consists of different parts, for ease of fulfillment.
 
 ## Scope of DSR for Office 365 applications
 
@@ -20,7 +20,7 @@ Many organizations choose to manage their user identities in on-premises Active 
 - Microsoft SharePoint hybrid deployments. Organizations with this deployment method use on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and  Microsoft OneDrive for Business accounts.
 - Hybrid identity management. For this deployment, identities are managed on-premises with Active Directory and the accounts are synchronized with Azure AD by using Azure AD Connect. This deployment type also makes single sign-on (SSO) scenarios possible for hybrid deployments.
 
-In a hybrid deployment, the scope will vary based on the data that's responsive<!-- Can we pick a word other than "responsive?" Responsive indicates movement, which data doesn't do. Also, the scope of what? Of the DSR?--> to a specific data subject's DSR. The controller will need to determine whether the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, other guidance is available for responding to DSRs on-premises. Refer to the summary unit for more information.
+In a hybrid deployment, the scope of the DSR will vary based on the data that's related to a specific data subject's DSR. <!-- ID. Reworded. Please review.--> The controller will need to determine whether the response must come from the cloud or from on-premises. While this unit focuses on the cloud-based data responses, other guidance is available for responding to DSRs on-premises. Refer to the summary unit for more information.
 
 ## DSR response processes for Office 365 applications
 
@@ -57,7 +57,7 @@ The applications that support content search in Microsoft 365 and Office 365 are
  [!NOTE]
 > Microsoft estimates that more than 90 percent of an organization's data stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook.
 
-Users authoring documents in Word, Excel, PowerPoint, OneNote, and Outlook usually store them on a SharePoint Online site, in their OneDrive for Business account, or in their Exchange Online mailbox. This means you can use the Content Search eDiscovery tool to search and perform other DSR-related actions across these locations. The searches will also include the sites and mailboxes associated with Microsoft 365 Groups, Teams, and EDU<!-- ID/SME: We need to define this acronym. --> assignments. By using the Content Search eDiscovery tool, you can find documents and mailbox items that might be relevant to the DSR you're investigating.
+Users authoring documents in Word, Excel, PowerPoint, OneNote, and Outlook usually store them on a SharePoint Online site, in their OneDrive for Business account, or in their Exchange Online mailbox. This means you can use the Content Search eDiscovery tool to search and perform other DSR-related actions across these locations. The searches will also include the sites and mailboxes associated with Microsoft 365 Groups, Teams, and Education assignments. By using the Content Search eDiscovery tool, you can find documents and mailbox items that might be relevant to the DSR you're investigating.
 
 > [!NOTE]
 > You can use compliance boundaries together with eDiscovery cases to limit the content locations that can be searched in an investigation.
@@ -67,7 +67,7 @@ The applications where in-app functionality is used in Office 365 are:
 - Microsoft Access
 - Education
 - Power Automate
-- Business App for Office 365<!-- ID/SME: Please review this product name. I can't find it. There was an "Office 365 Apps for Business," but as of Feb 2020, per Term Studio, this been replaced with "Microsoft 365 Apps for Business." -->
+- Microsoft 365 Apps for Business
 - Microsoft Forms
 - Microsoft Kaizala
 - Microsoft Planner
