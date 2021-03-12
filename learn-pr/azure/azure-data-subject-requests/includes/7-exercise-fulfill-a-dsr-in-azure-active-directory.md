@@ -1,6 +1,6 @@
 You're the administrator for Contoso, Ltd. You’ve been asked to evaluate the DSR process in the Microsoft cloud. You've created a use-case scenario for fulfilling a DSR.
 
-## Setup
+## Set up a user
 
 To set up a new user, perform the following steps:
 
