@@ -1,4 +1,4 @@
-You can use notebooks in Azure Sentinel for advanced hunting.
+You can use notebooks in Azure Sentinel for advanced hunting. 
 
 You are a Security Operations Analyst working at a company that implemented Azure Sentinel.  You want to mature your Security Operations team to proactively hunt for malicious activity in your environment with advanced machine learning capabilities.  
 
