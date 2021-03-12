@@ -1,4 +1,4 @@
-You've now identified certain metrics in Azure Blob Storage that you'll want to monitor on an ongoing basis when customer files are moved onto the platform. Rather than keep creating a chart every time you want to see the metric data, you want to see how to use dashboards to check on specific metrics regularly.
+You've now identified certain metrics in Azure Blob Storage that you'll want to monitor on an ongoing basis when customer files are moved onto the platform. Rather than creating a chart every time you want to see the metric data, you want to see how to use dashboards to check on specific metrics regularly.
 
 Management has also asked for regular reports about the use and performance of the platform to ensure that customers will be satisfied as more files are moved to Azure. You want to see if management can use dashboards for this purpose.
 
@@ -18,11 +18,11 @@ You can create more dashboards by using the toolbar on the left side of the dash
 
 ![Screenshot that shows the dashboard toolbar.](../media/4-dashboard-toolbar.png)
 
-When you create a new dashboard, you specify a name or title for the dashboard, and Azure will create an empty dashboard with no tiles. The dashboard is divided into a grid to help tile placement and sizing when you add content. 
+When you create a new dashboard, you specify a name or title for it, and Azure will create an empty dashboard with no tiles. The dashboard is divided into a grid to help tile placement and sizing when you add content. 
 
 ### Resource and data tiles
 
-After the dashboard is initially created, it's put into edit mode so you can add, remove, and resize tiles. Tile content suggestions are displayed on the left-side of the dashboard, in the *tile gallery*. This gallery will help you to get started with adding tiles and content to the dashboard. 
+After the dashboard is initially created, it's put into edit mode so you can add, remove, and resize tiles. Tile content suggestions are displayed on the left side of the dashboard, in the *tile gallery*. This gallery will help you to get started with adding tiles and content to the dashboard. 
 
 ![Screenshot that shows the tile gallery for dashboards.](../media/4-dashboard-tile-gallery.png)
 
