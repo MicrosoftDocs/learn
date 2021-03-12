@@ -118,7 +118,7 @@ Packaging all of the governance change into a blueprint accelerates deployments 
 
 ## Exercise: Assign the CAF Foundation blueprint
 
-Azure Blueprints lets you package Azure Resource Manager templates, Azure policies, and role-based access control settings into a single package. The CAF foundation blueprint provides an example and a starting point for using blueprints in cloud governance to:
+Azure Blueprints lets you package Azure Resource Manager templates, Azure policies, and role-based access control settings into a single package. The CAF Foundation blueprint provides an example and a starting point for using blueprints in cloud governance to:
 
 - Deploy Azure Key Vault.
 - Deploy Log Analytics.
