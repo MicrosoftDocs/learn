@@ -128,7 +128,7 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
    cd ..
    ```
 
-Your directory should now look like so:
+   Your directory should now look like so:
 
    ```output
    -| webapp/

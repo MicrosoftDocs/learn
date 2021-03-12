@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.powershell.scripting-with-powershell
 metadata:
-  title: Introduction to Scripting in PowerShell
+  title: Introduction to scripting in PowerShell
   description: Learn how to script with PowerShell.
   ms.date: 02/04/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Scripting in PowerShell
+title: Introduction to scripting in PowerShell
 summary: This module gives you an introduction to scripting with PowerShell. It introduces various concepts to create script files and make them as robust to run as possible.
 abstract: |
   - Understand how to author and run scripts.
