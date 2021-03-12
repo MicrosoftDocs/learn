@@ -68,13 +68,13 @@ Start by creating an empty folder for your project, and then initialize a Git re
     ```bash
     git init --initial-branch=main
     git init -b main
+
     ```
 
     For earlier versions of Git, use these commands:
 
     ```bash
     git init
-
     git checkout -b main
     ```
 
