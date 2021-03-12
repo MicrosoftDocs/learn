@@ -10,9 +10,9 @@ Finally you learned about filtering and formatting. The concept _filtering_ left
 
 ## Additional resources
 
-- [About pipeline](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
-- [What is a pipeline](https://docs.microsoft.com/powershell/scripting/learn/ps101/04-pipelines?view=powershell-7.1#the-pipeline&WT.mc_id=academic-16634-chnoring)
-- [Filtering left](https://docs.microsoft.com/powershell/scripting/learn/ps101/04-pipelines?view=powershell-7.1#filtering-left&WT.mc_id=academic-16634-chnoring)
-- [Format right](https://docs.microsoft.com/powershell/scripting/learn/ps101/05-formatting-aliases-providers-comparison?view=powershell-7.1#format-right&WT.mc_id=academic-16634-chnoring)
-- [Where-Object command in detail](https://docs.microsoft.com/powershell/scripting/samples/removing-objects-from-the-pipeline--where-object-?view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
-- [Use Format commands](https://docs.microsoft.com/powershell/scripting/samples/using-format-commands-to-change-output-view?view=powershell-7.1&WT.mc_id=academic-16634-chnoring)
+- [About pipeline](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_pipelines?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [What is a pipeline](https://docs.microsoft.com/powershell/scripting/learn/ps101/04-pipelines?view=powershell-7.1#the-pipeline&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [Filtering left](https://docs.microsoft.com/powershell/scripting/learn/ps101/04-pipelines?view=powershell-7.1#filtering-left&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [Format right](https://docs.microsoft.com/powershell/scripting/learn/ps101/05-formatting-aliases-providers-comparison?view=powershell-7.1#format-right&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [Where-Object command in detail](https://docs.microsoft.com/powershell/scripting/samples/removing-objects-from-the-pipeline--where-object-?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
+- [Use Format commands](https://docs.microsoft.com/powershell/scripting/samples/using-format-commands-to-change-output-view?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)

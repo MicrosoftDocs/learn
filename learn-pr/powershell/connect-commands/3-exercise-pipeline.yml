@@ -13,4 +13,4 @@ azureSandbox: true
 interactive: powershell
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-unit.md)]
+  [!include[](includes/3-exercise-pipeline.md)]
