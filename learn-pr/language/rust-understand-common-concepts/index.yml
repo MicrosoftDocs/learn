@@ -35,8 +35,8 @@ units:
 - learn.language.rust-understand-common-concepts.2-variables
 - learn.language.rust-understand-common-concepts.3-data-types
 - learn.language.rust-understand-common-concepts.4-structs-enums
-- learn.language.rust-understand-common-concepts.5-exercise-structs-enums
-- learn.language.rust-understand-common-concepts.6-functions
+- learn.language.rust-understand-common-concepts.5-functions
+- learn.language.rust-understand-common-concepts.6-exercise-structs-enums
 - learn.language.rust-understand-common-concepts.7-collection-types
 - learn.language.rust-understand-common-concepts.8-exercise-indexing
 - learn.language.rust-understand-common-concepts.9-exercise-hashmaps
