@@ -8,7 +8,7 @@ In the mobile app and website, Contoso needs to write code that adds a message t
 
 Here, you will learn how to write that code.
 
-## The Microsoft.Azure.ServiceBus NuGet package
+## Microsoft.Azure.ServiceBus NuGet package
 
 To make it easy to write code that sends and receives messages through Service Bus, Microsoft provides a library of .NET classes, which you can use in any .NET Framework language to interact with a Service Bus queue, topic, or relay. You can include this library in your application by adding the **Microsoft.Azure.ServiceBus** NuGet package.
 
@@ -23,7 +23,7 @@ Source components and destination components both need two pieces of information
 
 Both of these pieces of information are provided to the `QueueClient` object in the form of a connection string. You can obtain the correct connection string for your namespace from the Azure portal.
 
-## Calling methods asynchronously
+## Call methods asynchronously
 
 The queue in Azure may be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention may cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with the queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 

@@ -203,23 +203,23 @@ To complete the component that sends messages about sales, follow these steps:
 
 ## Retrieve a message from the queue
 
-To run the component that receives a message about a sale, run this command in the Cloud Shell.
+1. To run the component that receives a message about a sale, run this command in the Cloud Shell.
 
-```bash
-dotnet run -p privatemessagereceiver
-```
+    ```bash
+    dotnet run -p privatemessagereceiver
+    ```
 
-When you see that the message has been received and displayed in the console, press `Enter` to stop the app. Then, run the same command as before to confirm that all of the messages have been removed from the queue.
+1. When you see that the message has been received and displayed in the console, press <kbd>Enter</kbd> to stop the app. Then, run the same command as before to confirm that all of the messages have been removed from the queue.
 
-```azurecli
-az servicebus queue show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesmessages \
-    --query messageCount \
-    --namespace-name <namespace-name>
-```
+    ```azurecli
+    az servicebus queue show \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name salesmessages \
+        --query messageCount \
+        --namespace-name <namespace-name>
+    ```
 
-This will show `0` if all the messages have been removed.
+    This will show `0` if all the messages have been removed.
 
 You have written code that sends a message about individual sales to a Service Bus queue. In the sales force distributed application, you should write this code in the mobile app that sales personnel use on devices.
 

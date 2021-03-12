@@ -71,7 +71,7 @@ To complete the component that sends messages about sales performance, follow th
     // Close the connection to the topic here
     ```
 
-1. To close the connection to Service Bus, replace that line of code with the following code:
+1. To close the connection to Service Bus, replace that line of code with the following code.
 
     ```C#
     await topicClient.CloseAsync();
@@ -81,26 +81,26 @@ To complete the component that sends messages about sales performance, follow th
 
 ## Send a message to the topic
 
-To run the component that sends a message about a sale, run the following command in the Cloud Shell:
+1. To run the component that sends a message about a sale, run the following command in the Cloud Shell.
 
-```bash
-dotnet run -p performancemessagesender
-```
+    ```bash
+    dotnet run -p performancemessagesender
+    ```
 
-As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the topic and each subscriber will receive a copy.
+    As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the topic and each subscriber will receive a copy.
 
-After it's finished, run the following command to see how many messages are in the Americas subscription.
+1. After it's finished, run the following command to see how many messages are in the Americas subscription.
 
-```azurecli
-az servicebus topic subscription show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --namespace-name <namespace-name> \
-    --topic-name salesperformancemessages \
-    --name Americas \
-    --query messageCount
-```
+    ```azurecli
+    az servicebus topic subscription show \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --namespace-name <namespace-name> \
+        --topic-name salesperformancemessages \
+        --name Americas \
+        --query messageCount
+    ```
 
-If you substitute `EuropeAndAfrica` for `Americas`, you should see that both subscriptions have the same number of messages.
+    If you substitute `EuropeAndAfrica` for `Americas`, you should see that both subscriptions have the same number of messages.
 
 ## Write code that receives a message from a topic subscription
 
