@@ -166,11 +166,9 @@ The Stop and Quarantine File action includes stopping running processes, quarant
 
 1. Go to the top bar and select **Stop and Quarantine File**.
 
-1. Image of stop and quarantine file action
+1. Specify a reason, then select **Confirm**. 
 
-1. Specify a reason, then select **Confirm**. Image of stop and quarantine file modal window.
-
-The Action center shows the submission information: Image of stop and quarantine file action center
+The Action center shows the submission information: 
 
     - Submission time - Shows when the action was submitted.
 

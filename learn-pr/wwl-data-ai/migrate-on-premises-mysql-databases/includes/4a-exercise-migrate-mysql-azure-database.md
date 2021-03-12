@@ -21,7 +21,7 @@ az vm create \
     --name mysqlvm \
     --admin-username azureuser \
     --admin-password Pa55w.rdDemo \
-    --image "Canonical:UbuntuServer:18.04-LTS:latest" \
+    --image UbuntuLTS \
     --public-ip-address-allocation static \
     --public-ip-sku Standard \
     --size Standard_B2ms 
@@ -47,10 +47,15 @@ az vm run-command invoke \
     sudo apt-get update && sudo apt-get upgrade -y
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
 
-    # Enable Ubuntu Firewall and allow SSH & MySQL Ports
-    sudo ufw enable
-    sudo ufw allow 22
-    sudo ufw allow 3306
+    # Disable Ubuntu Firewall bind mysql
+    sudo ufw disable
+    sudo bash << EOF
+        echo "bind-address=0.0.0.0" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+        echo "log-bin" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+        echo "server-id=99" >> /etc/mysql/mysql.conf.d/mysqld.cnf
+    EOF
+    sudo service mysql stop
+    sudo service mysql start 
 
     # Clone exercise code
     sudo git clone https://github.com/MicrosoftLearning/DP-070-Migrate-Open-Source-Workloads-to-Azure.git /home/azureuser/workshop
@@ -254,12 +259,13 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
     mysql -pPa55w.rd adventureworks
     ```
 
-1. Execute the following SQL statements to display, and then remove orders 43659, 43660, and 43661 from the database. Note that the database implements a cascading delete on the **salesorderheader** table, which automatically deletes the corresponding rows from the **salesorderdetail** table.
+1. Execute the following SQL statements to display, and then remove orders 43659, 43660, and 43661 from the database.
 
     ```SQL
     SELECT * FROM salesorderheader WHERE salesorderid IN (43659, 43660, 43661);
     SELECT * FROM salesorderdetail WHERE salesorderid IN (43659, 43660, 43661);
     DELETE FROM salesorderheader WHERE salesorderid IN (43659, 43660, 43661);
+    DELETE FROM salesorderdetail WHERE salesorderid IN (43659, 43660, 43661);
     ```
 
 1. Close the *mysql* utility with the **quit** command.
@@ -283,6 +289,8 @@ You'll now connect to your existing MySQL VM using the Cloud Shell to export you
     The first query should return 3 rows. The second query should return 29 rows.
 
 1. Close the *mysql* utility with the **quit** command.
+
+1. Close the ssh connection with the **exit** command.
 
 ### Clean up the resources you've created
 

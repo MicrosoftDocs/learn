@@ -14,11 +14,10 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
 
    ![Select Azure Cosmos DB](../media/4-select-database-azure-cosmos-db.png)
 
-1. In the **Create Azure Cosmos DB Account** wizard, enter the following values.
+1. In the **Create Azure Cosmos DB Account** wizard, enter the following values on the **Basics** tab under **Project Details**:
 
    | Field | Value |
    | --- | --- |
-   | On the **Basics** tab, under **Project Details**: |
    | Subscription | Concierge Subscription |
    | Resource Group | <rgn>[Sandbox resource group]</rgn> |
    | Account Name | Use a globally unique value for your Azure Cosmos DB account. |
@@ -26,10 +25,14 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
+   
+   Leave the default values for the remaining fields.
 
    ![Screenshot showing creating a new Azure Cosmos DB Account](../media/4-azure-cosmos-db-create-new-account.png)
 
-1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**. It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
+1. Select **Review + Create**, and after receiving *Validation Success* notification, select **Create**.
+
+   It may take a few minutes for Azure to deploy your new Azure Cosmos DB account. A notification appears after deployment is complete.
 
 1. Select **Go to resource**. Your Azure Cosmos DB account appears.
 
@@ -76,7 +79,6 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    ```bash
    dotnet add package Gremlin.net
    dotnet add package Microsoft.Extensions.Configuration
-   dotnet add package Microsoft.Extensions.Configuration.FileExtensions
    dotnet add package Microsoft.Extensions.Configuration.Json
    dotnet restore
    ```
@@ -111,9 +113,9 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
 
    | Field | Description |
    |---|---|
-   | `HostName` | Replace the example value with just the domain name from the **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
-   | `Port` | Replace the example value with just the port from the **Gremlin Endpoint** value; this value should be *443*. |
-   | `AuthKey` | Replace the example value with the **PRIMARY KEY** value. |
+   | `HostName` | Replace the example value with just the domain name from your **Gremlin Endpoint** value; for example: *fabrikamgraph.gremlin.cosmos.azure.com*. |
+   | `Port` | Replace the example value with just the port from your **Gremlin Endpoint** value; this value should be *443*. |
+   | `AuthKey` | Replace the example value with your **PRIMARY KEY** value. |
    | `Database` | Replace the example value with your **Database ID** value; for example: *sample-database*. |
    | `Collection` | Replace the example value with your **Graph ID** value; for example: *sample-graph*. |
 
@@ -127,7 +129,6 @@ Now you'll create a .NET Core application that will allow you to run Gremlin API
    using Gremlin.Net.Driver.Exceptions;
    using Gremlin.Net.Structure.IO.GraphSON;
    using Microsoft.Extensions.Configuration;
-   using Microsoft.Extensions.Configuration.FileExtensions;
    using Microsoft.Extensions.Configuration.Json;
    ```
 
@@ -233,8 +234,7 @@ Now you'll create a Node.js application that will allow you to run Gremlin API q
    const config = {};
 
    config.endpoint = "wss://endpoint.gremlin.cosmos.azure.com:443";
-   config.authKey =
-     "slZk8ETEWB9preGsM9gIWKG9Jmr8T6DqY5BMsnNym4Q4Wgj3t2Z9gC5olfdvc7wX9kTrPcShQmxwjGiDCYWBKw==";
+   config.authKey = "AbCdEfGhIjKlMnOpQrStUvWxYz==";
    config.database = "sample-database";
    config.collection = "sample-graph";
 

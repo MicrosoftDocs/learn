@@ -23,17 +23,17 @@ If you're looking for a more academic approach, [*Continuous Delivery*](https://
 
 ### Learn YAML
 
-If you're interested in learning YAML, check out [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml?azure-portal=true). You can then review the Azure Pipelines [YAML schema reference](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema&azure-portal=true) to get a better sense of how pipelines are structured.
+If you're interested in learning YAML, check out [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml?azure-portal=true). You can then review the Azure Pipelines [YAML schema reference](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema&azure-portal=true) to get a better sense of how pipelines are structured.
 
 ### Explore the documentation
 
-We provide complete [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/?view=azure-devops&azure-portal=true) that goes deeper into the concepts and tasks we described here. The documentation also provides starter guides for many app types, like Java, C++, and Node.js.
+We provide complete [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/?azure-portal=true) that goes deeper into the concepts and tasks we described here. The documentation also provides starter guides for many app types, like Java, C++, and Node.js.
 
-The [Build and release tasks](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true) section can help you map your existing build commands to built-in tasks.
+The [Build and release tasks](https://docs.microsoft.com/azure/devops/pipelines/tasks/?azure-portal=true) section can help you map your existing build commands to built-in tasks.
 
 ### Create your own build pipeline
 
 In this module, you created the pipeline from Azure DevOps. You can repeat a similar process to create your own pipeline. You can also create a pipeline from the Azure portal or from the GitHub Marketplace app.
 
-* [Use the Azure portal](https://docs.microsoft.com/azure/devops/pipelines/get-started-azure-devops-project?view=azure-devops&azure-portal=true)
+* [Use the Azure portal](https://docs.microsoft.com/azure/devops/pipelines/get-started-azure-devops-project?azure-portal=true)
 * [Azure Pipelines](https://github.com/marketplace/azure-pipelines?azure-portal=true) app on GitHub Marketplace

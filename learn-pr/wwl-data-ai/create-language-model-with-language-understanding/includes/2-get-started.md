@@ -23,7 +23,7 @@ When you create entities and intents, you can do so in any order. You can create
 
 You can write code to define the elements of your model, but in most cases it's easiest to author your model using the Language Understanding portal - a web-based interface for creating and managing Language Understanding applications.
 
->[Tip]
+>[!Tip]
 >Best practice is to use the Language Understanding portal for authoring and to use the SDK for runtime predictions.  
 
 ### Creating intents

@@ -28,19 +28,19 @@ Use this table to craft a command line in the Cloud Shell on the right to create
 > [!TIP]
 > You can select a location with the `--location` parameter. If you don't supply one, the storage account will be created in the same location as your resource group. Because this is a more basic exercise, you can omit the parameter from the following command, if you prefer.
 
-### Example command
+### Create a storage account
 
-You can use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
+1. Use the following example command to create a storage account. Remember to replace `<name>` with your unique storage account name.
 
-```azurecli
-az storage account create \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --location eastus \
-  --sku Standard_LRS \
-  --name <name>
-```
+    ```azurecli
+    az storage account create \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --location eastus \
+      --sku Standard_LRS \
+      --name <name>
+    ```
 
-> [!TIP]
-> If you are interested in exploring the options for the storage account, make sure to go through the [Create an Azure storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account?azure-portal=true) module where we go through them in depth.
+    > [!TIP]
+    > If you are interested in exploring the options for the storage account, make sure to go through the [Create an Azure storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account?azure-portal=true) module where we go through them in depth.
 
 It will take a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.

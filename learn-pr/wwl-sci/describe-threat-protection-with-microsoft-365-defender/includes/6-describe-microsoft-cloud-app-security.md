@@ -28,7 +28,8 @@ Cloud App Security isn’t only about how you strengthen or harden your servers 
 - Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
 - Helping you have continuous control by setting and then continually fine-tuning policies. You can use policies to define users' behavior in the cloud. Use policies to detect risky behavior, violations, or suspicious data points and activities in your cloud environment.
 
-:::image type="content" source="../media/6-cloud-app-security-intermediary.png" alt-text="Diagram showing how Cloud App Security acts as an intermediary, checking and verifying cloud apps usage.":::
+> [!div class="mx-imgBorder"]
+> ![Diagram showing how Cloud App Security acts as an intermediary, checking and verifying cloud apps usage.](../media/6-cloud-app-security-intermediary.png)
 
 ## Office 365 Cloud App Security
 

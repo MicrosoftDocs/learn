@@ -33,29 +33,18 @@ The following example uses the extract function to pull out the Account Name fro
 // Tags: #Initial Access #LateralMovement #Persistence
 
 let top5 = SecurityEvent
-
 | where EventID == 4625 and AccountType == 'User'
-
 | extend Account_Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
-
 | summarize Attempts = count() by Account_Name
-
 | where Account_Name != ""
-
 | top 5 by Attempts 
-
 | summarize make_list(Account_Name);
 
 SecurityEvent
-
 | where EventID == 4625 and AccountType == 'User'
-
 | extend Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
-
 | extend Account_Name = iff(Name in (top5), Name, "Other")
-
 | where Account_Name != ""
-
 | summarize Attempts = count() by Account_Name
 
 ```
@@ -94,107 +83,65 @@ The input table extended according to the list of columns that are provided to t
 
 The following example uses a parse to SQL Audit events in the Application log of Windows Events.
 
+> [!NOTE]
+> This example is not available in the demo environment.
+
 ```kusto
 // KQL SQL Audit Event Parser
 
 let SQlData = Event
-
 | where Source has "MSSQL"
-
 ;
 
 let Sqlactivity = SQlData
-
 | where RenderedDescription !has "LGIS" and RenderedDescription !has "LGIF"
-
 | parse RenderedDescription with * "action_id:" Action:string 
-
                                     " " * 
-
 | parse RenderedDescription with * "client_ip:" ClientIP:string
-
 " permission" * 
-
 | parse RenderedDescription with * "session_server_principal_name:" CurrentUser:string
-
 " " * 
-
 | parse RenderedDescription with * "database_name:" DatabaseName:string
-
 "schema_name:" Temp:string
-
 "object_name:" ObjectName:string
-
 "statement:" Statement:string
-
 "." *
-
 ;
 
 let FailedLogon = SQlData
-
 | where EventLevelName has "error"
-
 | where RenderedDescription startswith "Login"
-
 | parse kind=regex RenderedDescription with "Login" LogonResult:string
-
                                             "for user '" CurrentUser:string 
-
                                             "'. Reason:" Reason:string 
-
                                             "provided" *
-
 | parse kind=regex RenderedDescription with * "CLIENT" * ":" ClientIP:string 
-
                                             "]" *
-
 ;
 
 let dbfailedLogon = SQlData
-
 | where RenderedDescription has " Failed to open the explicitly specified database" 
-
 | parse kind=regex RenderedDescription with "Login" LogonResult:string
-
                                             "for user '" CurrentUser:string 
-
                                             "'. Reason:" Reason:string 
-
                                             " '" DatabaseName:string
-
                                             "'" *
-
 | parse kind=regex RenderedDescription with * "CLIENT" * ":" ClientIP:string 
-
                                             "]" *
-
 ;
 
 let successLogon = SQlData
-
 | where RenderedDescription has "LGIS"
-
 | parse RenderedDescription with * "action_id:" Action:string 
-
                                     " " LogonResult:string 
-
                                     ":" Temp2:string
-
                                     "session_server_principal_name:" CurrentUser:string
-
                                     " " *
-
 | parse RenderedDescription with * "client_ip:" ClientIP:string 
-
                                     " " *
-
 ;
-
 (union isfuzzy=true
-
 Sqlactivity, FailedLogon, dbfailedLogon, successLogon )
-
 | project TimeGenerated, Computer, EventID, Action, ClientIP, LogonResult, CurrentUser, Reason, DatabaseName, ObjectName, Statement
 
 ```

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-windows-server-failover-clustering
+metadata:
+  title: Implement Windows Server failover clustering
+  description: "Implement Windows Server failover clustering"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Windows Server failover clustering
+summary: Learn about the core functionality of Windows Server failover clustering, various configuration options for failover clustering, and the use of cluster sets.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Windows Server failover clustering.
+  - Implement Windows Server failover clustering.
+  - Manage Windows Server failover clustering.
+  - Implement stretch clusters.
+  - Describe cluster sets.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.implement-windows-server-failover-clustering.introduction
+- learn.wwl.implement-windows-server-failover-clustering.define
+- learn.wwl.implement-windows-server-failover-clustering.plan
+- learn.wwl.implement-windows-server-failover-clustering.implement-windows-server-failover-clustering
+- learn.wwl.implement-windows-server-failover-clustering.manage
+- learn.wwl.implement-windows-server-failover-clustering.implement-stretch-clusters
+- learn.wwl.implement-windows-server-failover-clustering.define-cluster-sets
+- learn.wwl.implement-windows-server-failover-clustering.knowledge-check
+- learn.wwl.implement-windows-server-failover-clustering.summary
+badge:
+  uid: learn.wwl.implement-windows-server-failover-clustering.badge

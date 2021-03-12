@@ -4,7 +4,7 @@ metadata:
   description: Goes through the process of creating an IoT Hub to handle cheese cave telemetry.
   ms.date: 3/15/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an IoT Hub

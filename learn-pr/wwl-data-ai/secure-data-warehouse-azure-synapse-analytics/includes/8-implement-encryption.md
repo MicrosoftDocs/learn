@@ -52,7 +52,8 @@ It also enables you to separate duties of management of keys and data in order t
 For Azure Synapse Analytics, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. 
 The TDE settings can be found under your user database. 
 
-![Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
+> [!div class="mx-imgBorder"]
+> ![Transparent Data Encryption SQL Pool in Azure Synapse Analytics](../media/data-encryption-sql-pool-synapse.png)
 
 It is by default that the service-managed TDE is used and therefore a TDE certificate is automatically generated for the server that contains that database. 
 

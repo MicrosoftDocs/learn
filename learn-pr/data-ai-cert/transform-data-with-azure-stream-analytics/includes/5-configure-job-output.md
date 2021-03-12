@@ -12,7 +12,7 @@ These steps are similar to the ones you followed to create the input. Start by c
     | Setting  | Value  |
     |---|---|
     | On the **Basics** tab, under **Project details** section: |
-    | Resource group | Select **Create new** link; enter **mslearn-streamanalytics** in the **Name** box. |
+    | Resource group | Select **Create new** link; enter **mslearn-streamanalytics** in the **Name** box, and select **OK**. |
     | Under **Instance details** section: |
     | Storage account name | Enter the prefix **streamsink**, and add a numeric suffix. You might need to try a few combinations to find a unique name in Azure. |
     | *remaining settings* | Leave *default*. |

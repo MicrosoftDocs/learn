@@ -4,19 +4,12 @@ In the example below, the result set will contain a new column named severityOrd
 
 ```kusto
 SecurityAlert
-
 | where TimeGenerated > ago(7d)
-
 | extend severityOrder = case (
-
     AlertSeverity == "High", 3,
-
     AlertSeverity == "Medium", 2, 
-
     AlertSeverity == "Low", 1,
-
     AlertSeverity == "Informational", 0,
-
     -1)
 
 ```
@@ -39,21 +32,13 @@ let timeframe = 1d;
 let DomainList = dynamic(["tor2web.org", "tor2web.com"]);
 
 Syslog
-
 | where TimeGenerated >= ago(timeframe)
-
 | where ProcessName contains "squid"
-
 | extend 
-
   HTTP_Status_Code = extract("(TCP_(([A-Z]+)…-9]{3}))",8,SyslogMessage),    
-
   Domain = extract("(([A-Z]+ [a-z]{4…Z]+ )([^ :\\/]*))",3,SyslogMessage)
-
 | where HTTP_Status_Code == "200"
-
 | where Domain contains "."
-
 | where Domain has_any (DomainList)
 
 ```

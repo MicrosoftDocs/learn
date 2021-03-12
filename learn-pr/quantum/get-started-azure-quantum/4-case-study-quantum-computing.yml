@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.get-started-azure-quantum.4-case-study-quantum-computing
+title: Case studies for quantum computing
+metadata:
+  title: Case studies for quantum computing
+  description: Discover how Azure Quantum can be used to research pioneering applications.
+  ms.date: 01/01/2021
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-case-study-quantum-computing.md)]

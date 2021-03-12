@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-develop-typed-functions.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  Choose the best response for each of the questions below. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "What is the main difference between function parameters in TypeScript and function parameters in JavaScript?"
+    choices:
+    - content: "TypeScript parameters can be required whereas JavaScript parameters are always optional."
+      isCorrect: true
+      explanation: "Correct! TypeScript parameters are required by default but can also be made optional. JavaScript parameters are always optional."
+    - content: "TypeScript parameters are the same as JavaScript parameters."
+      isCorrect: false
+      explanation: "Incorrect. There are key differences between TypeScript and JavaScript parameters."
+    - content: "TypeScript parameters are required by default but can also be made optional. JavaScript parameters are always optional."
+      isCorrect: false
+      explanation: "Incorrect. While TypeScript parameters can be optional, JavaScript parameters are always optional."
+  - content: "What is a common use for an anonymous function?"
+    choices:
+    - content: "When you need to apply the same function signature to more than one function."
+      isCorrect: false
+      explanation: "Incorrect. You define a function type if you need to apply the same function signature to more than one function."
+    - content: "When you need to be able to reuse the function throughout your code."
+      isCorrect: false
+      explanation: "Incorrect. A named function would be a better option in this scenario."
+    - content: "When you need to assign a function expression to a variable."
+      isCorrect: true
+      explanation: "Correct! An anonymous function is commonly used to assign a function expression to a variable, or to pass a function to another function."
+  - content: "How should you define a function type if you need to extend it?"
+    choices:
+    - content: "You can use either an interface or a type alias. They both work the same way."
+      isCorrect: false
+      explanation: "Incorrect. While both approaches work essentially the same, there are some differences between them."
+    - content: "Define it with an interface."
+      isCorrect: true
+      explanation: "Correct! One reason to use an interface over a type alias is that interfaces can be extended whereas a type alias cannot."
+    - content: "Define it with a type alias."
+      isCorrect: false
+      explanation: "Incorrect. A function type defined with a type alias cannot be extended."
