@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-automate-tasks.2b-workflow-components-github-actions
+title: Identify the components of GitHub Actions
+metadata:
+  title: Identify the components of GitHub Actions
+  description: Learn the components of GitHub Actions, event types, and workflow functionality. See workflow examples and best practice recommendations for action stability and security. 
+  ms.date: 03/11/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2b-workflow-components-github-actions.md)]
