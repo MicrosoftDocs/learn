@@ -98,7 +98,7 @@ The size and number of blobs now appear.
 
 ## Create a capacity metrics chart
 
-Next, you'll view the metrics that the storage account generates. To do this, complete the following steps:
+Next, you'll view the metrics that the storage account generates. Complete the following steps:
 
 1. On the menu pane, select **Storage accounts**. On the **Storage accounts** pane, select the name of the storage account that you created.
 

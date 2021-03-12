@@ -48,7 +48,7 @@ Blob Storage supports three types of blobs:
 
 ## Metrics
 
-Metrics are a vital component of your management approach to Blob Storage. Metrics enable you to identify usage trends, trace requests, and diagnose issues with your storage account. Areas that you might want to track in Azure include:
+Metrics are a vital component of your management approach to Blob Storage. Metrics enable you to identify usage trends, trace requests, and diagnose problems with your storage account. Areas that you might want to track in Azure include:
 
 - Overall Blob Storage usage
 - Storage costs
@@ -56,7 +56,7 @@ Metrics are a vital component of your management approach to Blob Storage. Metri
 - Availability
 - Latency
 
-Azure Blob Storage provides *capacity* and *transaction* categories of metrics.
+Blob Storage provides *capacity* and *transaction* categories of metrics.
 
 Capacity metrics include:
 
@@ -90,7 +90,7 @@ Selecting **Metrics** creates a **New chart** space, in which you can select the
 
 ![Screenshot that shows the current monitoring chart.](../media/2-current-metrics-create-chart.PNG)
 
-Selecting **Metrics (Classic)** shows four charts for total requests, total egress, average E2E latency, and success percentage.
+Selecting **Metrics (classic)** shows four charts for total requests, total egress, average E2E latency, and success percentage.
 
 ![Screenshot that shows the four charts in classic monitoring.](../media/2-classic-metrics-create-chart.PNG)
 

@@ -70,7 +70,7 @@ quiz:
     - content: Internal users, individually and as part of a security group, and external users
       isCorrect: false
       explanation: 'Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group.'
-  - content: Which services is Storage Analytics logging available for?
+  - content: Which services is Azure Storage Analytics logging available for?
     choices:
     - content: Blob Storage only
       isCorrect: false

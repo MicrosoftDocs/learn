@@ -25,7 +25,7 @@ When you enable logging, these types of requests are logged:
 * Authenticated requests
 * Anonymous requests
 * Successful requests
-* Failed requests, such as timeouts, throttling, network, and authorization errors
+* Failed requests, such as timeouts, throttling, network errors, and authorization errors
 * Server errors
 * Requests that use a shared access signature, both failed and successful
 * Timeout errors for client and server
@@ -61,7 +61,7 @@ You can view or retrieve log files for analysis in various ways:
 
 ## Formatting of analytics logs
 
-Storage Analytics logs are stored according to a standard format and version. There are two versions of log entries, 1.0 and 2.0. Both versions conform to the following rules:
+Storage Analytics logs are stored according to a standard format and version. There are two versions of log entries. Both versions conform to the following rules:
 
 - All log fields, whether populated or empty, are separated by a semicolon (`;`).
 - The last field of an entry does *not* end with a semicolon (`;`).

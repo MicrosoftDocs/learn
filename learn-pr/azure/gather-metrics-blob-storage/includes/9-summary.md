@@ -8,7 +8,7 @@ Transaction metrics are sent to Azure Monitor every minute, and are available bo
 
 You can also specify custom metrics. For more information, see [Custom metrics in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-custom-overview).
 
-Shared dashboards are an Azure resource, which means you can share them by using role-based access control (RBAC). RBAC enables you to apply roles to Azure user accounts or groups, which can then access a resource or resource group. You can apply different roles to different users or groups so that some users can only view a resource but other users can manage a resource. For more information, see the following articles:
+Shared dashboards are an Azure resource, which means you can share them by using role-based access control (RBAC). RBAC enables you to apply roles to Azure user accounts or groups, which can then access a resource or resource group. You can apply different roles to different users or groups, so that some users can only view a resource but other users can manage a resource. For more information, see the following articles:
 
 - [Create and share dashboards in the Azure portal](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards)
 
