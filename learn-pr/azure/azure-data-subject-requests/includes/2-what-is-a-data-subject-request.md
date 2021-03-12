@@ -48,8 +48,8 @@ The following units in this module introduce some of the technical procedures th
 
 ## DSR terminology
 
-The following list defines some of the terms that are relevant to DSR:<!-- ID/SME: As far as I can tell, these are definitions directly from GDPR. -->
-<!-- ID/SME: Because these terms are GDPR definitions, I won't edit them. However, if it's plagiarism for us to copy them specifically, then we should rewrite them. --> <!--ID : I can rewrite them but I'm not sure if I will create more issues by rewording them. How do we determine if it is ok to copy them or not? -->
+The following list defines some of the terms that are relevant to DSR:
+
 - Controller. The natural or legal person, public authority, agency, or other body, which, alone or jointly with others, determines the purposes and means of the processing of personal data. The purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination might be provided by Union or Member State law.
 
 - Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly, by referring to:
