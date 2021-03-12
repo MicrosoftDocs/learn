@@ -40,7 +40,7 @@ To determine the appropriate process, perform the following steps:
      - Avery was contacted and provided verification with a national ID card.
 
     |||
-    |---|---|
+    |Field|Details|
     |Subject's name|Avery Howard|
     |Date of Birth|11-18-1999|
     |Address|123 Park Square, Bristol, BS12 3CD, UNITED KINGDOM|
