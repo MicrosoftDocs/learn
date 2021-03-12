@@ -89,7 +89,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
    ```output
    Location     Name         ProvisioningState    ResourceGroup    Usable  
    -----------  -----------  -------------------  ---------------  --------
-   westus       MyWorkspace  Succeeded            MyResourceGroup  Yes  
+   MyLocation   MyWorkspace  Succeeded            MyResourceGroup  Yes  
 
    ```
 
