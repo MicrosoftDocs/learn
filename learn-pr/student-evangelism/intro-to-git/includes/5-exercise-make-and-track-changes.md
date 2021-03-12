@@ -35,6 +35,8 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     The default is for `git diff` to compare the working tree to the index. In other words, it shows you all the changes that haven't been staged (added to Git's index) yet. To compare the working tree to the last commit, you can use `git diff HEAD`.
 
+    If the command doesn't return to the prompt after it executes, enter `q` to exit the diff view.
+
 1. Next, commit the change. Instead of using the `-a` flag, you can explicitly name a file to be staged and committed if Git already has the file in the index (the  `commit` command looks only for the existence of a file).
 
     ```bash
@@ -73,7 +75,7 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
     This example uses the `-A` option with `git add` to add all untracked (and not ignored) files, and the files that have changed, to the files that are already under Git control.
 
-If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. Try it and see. Don't forget to include the `^` character at the end of the command.
+If you do a `git diff` right now, the output will be empty because the changes have been committed. However, you can always use a `git diff HEAD^` command to compare differences between the latest commit and previous commit. Try it and see. Don't forget to include the caret `^` character at the end of the command.
 
 ## Add a subdirectory
 

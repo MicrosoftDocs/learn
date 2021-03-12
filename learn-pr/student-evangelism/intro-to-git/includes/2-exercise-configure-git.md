@@ -47,15 +47,15 @@ Before you can create your first repo, you must make sure that Git is installed 
 
 Git works by checking for changes to files within a certain folder. We'll create a folder to serve as our *working tree* (project directory) and let Git know about it, so it can start tracking changes. We tell Git to start tracking changes by initializing a Git repository into that folder.
 
-Start by creating an empty project directory, and then initialize a Git repository inside it.
+Start by creating an empty folder for your project, and then initialize a Git repository inside it.
 
-1. Create a folder named *Cats*. This folder will be the working tree where your website and the files that create the website and its contents are stored.
+1. Create a folder named *Cats*. This folder will be the the project directory, also called the working tree. The project directory is where all files related to your project are stored. In this exercise, it's where your website and the files that create the website and its contents are stored.
 
     ```bash
     mkdir Cats
     ```
 
-1. `cd` to the project folder:
+1. Change to the project directory by using the `cd` command:
 
     ```bash
     cd Cats
@@ -74,7 +74,16 @@ Start by creating an empty project directory, and then initialize a Git reposito
 
     ```bash
     git init
+
     git checkout -b main
+    ```
+
+    After you run the initialize command, you should see output that's similar to this example:
+
+    ```output
+    Initialized empty Git repository in /home/<user>/Cats/.git/
+
+    Switched to a new branch 'main'
     ```
 
 1. Now, use a `git status` command to show the status of the working tree:
@@ -83,7 +92,15 @@ Start by creating an empty project directory, and then initialize a Git reposito
     git status
     ```
 
-    Git responds by saying that it `Initialized empty Git repository`. It also says `Switched to a new branch 'main'`, indicating that `main` is the current branch. (It's also the only branch.) So far, so good.
+    Git responds with this output, which indicates that `master` is the current branch. (It's also the only branch.) So far, so good.
+
+   ```output
+    On branch master
+
+    No commits yet
+
+    nothing to commit (create/copy files and use "git add" to track)        
+   ```
 
 1. Use an `ls` command to show the contents of the working tree:
 

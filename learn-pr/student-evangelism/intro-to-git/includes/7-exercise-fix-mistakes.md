@@ -160,4 +160,6 @@ One solution to this problem is to revert the previous commit.
     This reverts commit 15d3bded388470c98881a632025bc15190fe9d17.
     ```
 
+1. Finally, open the *index.html* file to make sure the content is the correct version.
+
 Reverting isn't the only way to remedy this situation; you could just edit *index.html* and commit the corrected file. That option is harder if the changes you committed were extensive. In any case, `git revert` is a good way to signal your intent.
