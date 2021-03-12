@@ -114,7 +114,7 @@ To complete the component that sends messages about sales, follow these steps:
     await queueClient.CloseAsync();
     ```
 
-1. Your final code should resemble the following example.
+1. Your final code should resemble the following example:
 
     ```C#
     using System;
@@ -160,7 +160,7 @@ To complete the component that sends messages about sales, follow these steps:
     }
     ```
 
-1. Save the file.
+1. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Send a message to the queue
 
@@ -325,7 +325,7 @@ az servicebus queue show \
     }
     ```
 
-1. Save the file.
+1. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 
 ## Retrieve a message from the queue
 
