@@ -1,4 +1,4 @@
-In preparation for moving your customers' proof files to Azure Blob Storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an ad hoc basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when customers retrieve files for review.
+In preparation for moving your customers' proof files to Azure Blob Storage, you want to identify what metrics are available for the platform. You also want to see how easy it is to display metric information on an unplanned basis. For example, you might want to know how much storage is being used in Azure, or how much latency is involved when customers retrieve files for review.
 
 In this unit, you'll focus on using the Azure portal to view available metrics on demand. By the end of this unit, you'll be able to identify, select, and display Blob Storage metrics and display those metrics in the Azure portal.
 

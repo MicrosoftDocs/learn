@@ -1,6 +1,6 @@
 You're now satisfied that metrics will provide enough statistical information about the use and performance of Azure Blob Storage for the company. 
 
-But before you commit to the platform, you want to be sure that you'll be able to troubleshoot any issues that might occur with files that are shared with the customer. For example, you want to be able to detect if files aren't downloaded successfully. You want to see what troubleshooting information Azure provides, and how to access the log files.
+But before you commit to the platform, you want to be sure that can troubleshoot any issues that might occur with files that are shared with the customer. For example, you want to be able to detect if files aren't downloaded successfully. You want to see what troubleshooting information Azure provides, and how to access the log files.
 
 By the end of this unit, you'll be able to:
 
@@ -54,7 +54,7 @@ For example, the logs for files in Blob Storage between 4 PM and 5 PM on Februar
 
 You can view or retrieve log files for analysis in various ways:
 
-- You can download logs by using the AzCopy.exe command-line tool. AzCopy is available in Azure Cloud Shell, or you can download the latest version from the [Get started with AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) article.
+- You can download logs by using the AzCopy.exe command-line tool. AzCopy is available in Azure Cloud Shell, or you can download the latest version from the [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10) article.
 - You can use [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 - You can download logs programmatically.
 - You can view log data by using the Log Analytics tool in the Azure portal.

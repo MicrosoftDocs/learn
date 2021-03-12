@@ -130,7 +130,7 @@ At the bottom of the chart, you now have a color bar and a count for the current
 
 ## Create a transaction metrics chart
 
-Transaction metrics are updated hourly, so you should be able to see changes in these values relatively quickly. To create a transaction metrics chart, complete the following steps:
+Transaction metrics are updated hourly, so you should see changes in these values relatively quickly. To create a transaction metrics chart, complete the following steps:
 
 1. Select **+ New Chart**.
 

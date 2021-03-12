@@ -53,9 +53,9 @@ quiz:
     - content: Markdown
       isCorrect: false
       explanation: 'Markdown content can be added to a dashboard Markdown tile.'
-    - content: Javascript
+    - content: JavaScript
       isCorrect: true
-      explanation: 'Javascript content cannot be added to a dashboard Markdown tile.'
+      explanation: 'JavaScript content cannot be added to a dashboard Markdown tile.'
   - content: 'Which of the following security principals can access shared dashboards in Azure?'
     choices:
     - content: Only individual internal user assignments
