@@ -22,7 +22,7 @@ roles:
   - student
 products:
   - vs
-prerequisites: >
+prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git
   Bash 
   - Visual Studio Code installed 
