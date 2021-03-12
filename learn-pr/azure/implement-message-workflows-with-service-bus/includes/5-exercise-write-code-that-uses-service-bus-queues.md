@@ -55,13 +55,13 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 
 To complete the component that sends messages about sales, follow these steps:
 
-1. Open **privatemessagesender/Program.cs** in the editor.
-
-1. Locate the following line of code, and paste the connection string that you saved earlier between the quotation marks.
+1. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code:
 
     ```C#
     const string ServiceBusConnectionString = "";
     ```
+
+    Paste the connection string that you saved earlier between the quotation marks.
 
 1. Locate the `SendSalesMessageAsync()` method.
 
@@ -187,13 +187,13 @@ az servicebus queue show \
 
 ## Write code that receives a message from the queue
 
-1. Open **privatemessagereceiver/Program.cs** in the editor
-
-1. Locate the following line of code, and paste the connection string that you saved earlier between the quotation marks.
+1. In the editor, open **privatemessagereceiver/Program.cs** and locate the following line of code:
 
     ```C#
     const string ServiceBusConnectionString = "";
     ```
+
+    Paste the connection string that you saved earlier between the quotation marks.
 
 1. Locate the `ReceiveSalesMessageAsync()` method.
 
