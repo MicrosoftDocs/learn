@@ -3,7 +3,7 @@
 
 The term AI tends to be thrown around a lot. Artificial Intelligence (AI), Machine Learning or Deep Learning are common terms that confuse many people. So, what are they anyway? In this unit, we will clarify these methods so you can understand how it applies to your business problem.
 
-![AI subgroups](..\images\3-introduction-to-ai-technology-1.png)
+![Diagram displaying the relationship between deep learning which is a subset of machine learning which is a subset of AI.](..\images\3-introduction-to-ai-technology-1.png)
 
 * Artificial Intelligence (AI) is an ability of computer program or machine exhibited or mimic human-like behavior (for example, visual senses, speech recognition, decision-making, natural language understanding etc.).
 

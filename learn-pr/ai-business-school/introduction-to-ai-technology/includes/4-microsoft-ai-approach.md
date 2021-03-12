@@ -7,7 +7,7 @@ When thinking of adopting AI into your business, you should consider pre-built A
 
 **Azure Cognitive Service real world examples**
 
-![Diagram providing real world examples of different cognitive services including facial recognition, personalization services for gaming, and language understanding in a chat window.](..\images\4-microsoft-ai-approach-2.png)
+![Diagram with real world examples of cognitive services including facial recognition, personalization services, and language understanding.](..\images\4-microsoft-ai-approach-2.png)
 
 Infusing cognitive services into existing and new business applications makes them smarter, intuitive, and customized to provide better user experience. Here are some business scenarios:
 

@@ -1,7 +1,7 @@
 
 Not every business problem can be solved by Prebuilt AI services. Machine learning can be implemented to help solve problems based on unique data and business needs.  We are seeing many ways to optimize business efficiency using machine learning to train a model for predictive analytics for use cases likes fraud detection, customer churn or predictive maintenance on machinery. In this unit, we are going to dive into the basics of machine learning and deep Learning. We will do this by discussing how these methods can be used across industries.
 
-![Diagram showing different industries and the types of problems that machine learning and deep learning can solve.](..\images\5-introduction-to-ml-and-dl-1.png)
+:::image type="content" source="..\images\5-introduction-ml-dl-1.png" alt-text="Diagram showing different industries and the types of problems that machine learning and deep learning can solve." lightbox="..\images\5-introduction-ml-dl-1.png":::
 
 **Machine Learning**
 
@@ -9,11 +9,11 @@ To learn what machine learning is, first you must understand what a model is.  O
 
 What algorithms are used to train these models?  To use machine learning, a data scientist will need to know what type of algorithm to use depending on the business problem. Common algorithms fall in three categories: Classification, Regression, or Clustering. Classification problems are use in cases where you need a prediction between discrete classes or categories. For example, predicting a dog vs cat. Next, regression problems are used in cases where you need a prediction from a continuous numeric value.  Finally, clustering problems are used in cases where you need to group data that have similar characteristics.  The diagram below shows examples of the types of problems each algorithm solves.
 
-![Diagram that differentiates different types of algorithms and the problems they solve, including regression, classification, and clustering.](..\images\5-introduction-to-ml-and-dl-2.png)
+:::image type="content" source="..\images\5-introduction-ml-dl-2.png" alt-text="Diagram that differentiates different types of algorithms and the problems they solve, including regression, classification, and clustering." lightbox="..\images\5-introduction-ml-dl-2.png":::
 
 The next piece of machine learning is data.  Data plays a major part in building models and machine learning.  There's no machine learning without data.  A huge part of machine learning’s problem is finding the right data, cleaning it, and preparing it for training.  For machine learning models to have a higher accuracy a large amount of data is needed.   After a model is trained and built, that’s when businesses can deploy it out to a machine in their factory to shut it down in case it starts to exhibit anomalous behavior.  Another example is the business can deploy the model into a web application to surface recommendations or detect a fraudulent transaction.  
 
-![Diagram that shows the stages of machine learning, starting with prepare data, then build and train, then deploy.](..\images\5-introduction-to-ml-and-dl-3.png)
+![Diagram that shows the stages of machine learning, starting with prepare data, then build and train, then deploy.](..\images\5-introduction-ml-dl-3.png)
 
 As you can see, there are three stages of machine learning, which is, identifying and prepping the data; building and training the model; then deploying the model.  Once a business deploys the model, the process is often not done because they need to observe how that model works with real-life data.  For instance, does the model improve their customer's experience?  Do they surface better recommendations?   As data or customer behavior changes over time, the model’s accuracy may start to degrade, and the model will need to be updated.  Hence the lifecycle of the machine learning continues.
 
