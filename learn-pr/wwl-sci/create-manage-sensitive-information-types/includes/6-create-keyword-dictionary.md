@@ -1,4 +1,4 @@
-Keyword dictionaries are an efficient way to manage large lists of words that are regularly subject to change. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 100 KB of terms after compression in the dictionary and support of any language.
+Keyword dictionaries are an efficient way to manage large lists of words that are regularly subject to change. Although you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 1 MB of terms after compression in the dictionary and support of any language.
 
 The source for keyword dictionaries can be several kinds of cleartext files, such as .txt and .csv files. Configuration of keyword dictionaries can be completed from the Microsoft 365 Compliance Center and via the Security & Compliance Center PowerShell module.
 
