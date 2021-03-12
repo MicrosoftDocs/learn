@@ -16,7 +16,7 @@ git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
 1. Next, change directories into the starter folder, and open the Cloud Shell editor.
 
 ```bash
-cd mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
+cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
 code .
 ```
 
@@ -30,7 +30,7 @@ To access a Service Bus namespace and use a queue, you must configure two pieces
 Both of these values can be obtained from the Azure portal in the form of a complete connection string.
 
 > [!NOTE]
-> For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or even Azure Key Vault to store the connection string.
+> For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
 
 1. Run the following command in the Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
 
@@ -42,24 +42,26 @@ Both of these values can be obtained from the Azure portal in the form of a comp
         --output tsv \
         --namespace-name <namespace-name>
     ```
-
-    You'll need this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
-
-1. Copy the key from Cloud Shell. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code:
-
-    ```C#
-    const string ServiceBusConnectionString = "";
+    
+    The response from this command should resemble the following example:
+    
+    ```
+    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-    Paste the connection string between the quotation marks. Save the file using the <kbd>Ctrl+S</kbd> keys.
-
-1. Repeat the previous step in **privatemessagereceiver/Program.cs**, pasting in the same connection string value. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Copy the key from Cloud Shell and store it for later. You'll need this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
 
 ## Write code that sends a message to the queue
 
 To complete the component that sends messages about sales, follow these steps:
 
 1. Open **privatemessagesender/Program.cs** in the editor.
+
+1. Locate the following line of code, and paste the connection string that you saved earlier between the quotation marks.
+
+    ```C#
+    const string ServiceBusConnectionString = "";
+    ```
 
 1. Locate the `SendSalesMessageAsync()` method.
 
@@ -112,6 +114,52 @@ To complete the component that sends messages about sales, follow these steps:
     await queueClient.CloseAsync();
     ```
 
+1. Your final code should resemble the following example.
+
+    ```C#
+    using System;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Microsoft.Azure.ServiceBus;
+    
+    namespace privatemessagesender
+    {
+        class Program
+        {
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string QueueName = "salesmessages";
+            static IQueueClient queueClient;
+    
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Sending a message to the Sales Messages queue...");
+                SendSalesMessageAsync().GetAwaiter().GetResult();
+                Console.WriteLine("Message was sent successfully.");
+            }
+    
+            static async Task SendSalesMessageAsync()
+            {
+                queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    
+                try
+                {
+                    string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
+                    var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+                    Console.WriteLine($"Sending message: {messageBody}");
+                    await queueClient.SendAsync(message);
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
+                }
+    
+                await queueClient.CloseAsync();
+            }
+        }
+    }
+    ```
+
 1. Save the file.
 
 ## Send a message to the queue
@@ -141,6 +189,12 @@ az servicebus queue show \
 
 1. Open **privatemessagereceiver/Program.cs** in the editor
 
+1. Locate the following line of code, and paste the connection string that you saved earlier between the quotation marks.
+
+    ```C#
+    const string ServiceBusConnectionString = "";
+    ```
+
 1. Locate the `ReceiveSalesMessageAsync()` method.
 
 1. Within that method, locate the following line of code:
@@ -153,6 +207,18 @@ az servicebus queue show \
 
     ```C#
     queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    ```
+
+1. Locate the following line of code:
+
+    ```C#
+    // Close the queue here
+    ```
+
+1. To close the connection to Service Bus, replace that line with the following code:
+
+    ```C#
+    await queueClient.CloseAsync();
     ```
 
 1. Locate the `RegisterMessageHandler()` method.
@@ -187,16 +253,76 @@ az servicebus queue show \
     await queueClient.CompleteAsync(message.SystemProperties.LockToken);
     ```
 
-1. Return to the `ReceiveSalesMessageAsync()` method and locate the following line of code:
+1. Your final code should resemble the following example.
 
     ```C#
-    // Close the queue here
-    ```
-
-1. To close the connection to Service Bus, replace that line with the following code:
-
-    ```C#
-    await queueClient.CloseAsync();
+    using System;
+    using System.Text;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Microsoft.Azure.ServiceBus;
+    
+    namespace privatemessagereceiver
+    {
+        class Program
+        {
+    
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string QueueName = "salesmessages";
+            static IQueueClient queueClient;
+    
+            static void Main(string[] args)
+            {
+    
+                ReceiveSalesMessageAsync().GetAwaiter().GetResult();
+    
+            }
+    
+            static async Task ReceiveSalesMessageAsync()
+            {
+    
+                queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    
+                Console.WriteLine("======================================================");
+                Console.WriteLine("Press ENTER key to exit after receiving all the messages.");
+                Console.WriteLine("======================================================");
+    
+                RegisterMessageHandler();
+            
+                Console.Read();
+    
+                await queueClient.CloseAsync();
+    
+            }
+    
+            static void RegisterMessageHandler()
+            {
+                var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
+                {
+                    MaxConcurrentCalls = 1,
+                    AutoComplete = false
+                };
+                queueClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+            }
+    
+            static async Task ProcessMessagesAsync(Message message, CancellationToken token)
+            {
+                Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
+                await queueClient.CompleteAsync(message.SystemProperties.LockToken);
+            }
+    
+            static Task ExceptionReceivedHandler(ExceptionReceivedEventArgs exceptionReceivedEventArgs)
+            {
+                Console.WriteLine($"Message handler encountered an exception {exceptionReceivedEventArgs.Exception}.");
+                var context = exceptionReceivedEventArgs.ExceptionReceivedContext;
+                Console.WriteLine("Exception context for troubleshooting:");
+                Console.WriteLine($"- Endpoint: {context.Endpoint}");
+                Console.WriteLine($"- Entity Path: {context.EntityPath}");
+                Console.WriteLine($"- Executing Action: {context.Action}");
+                return Task.CompletedTask;
+            }   
+        }
+    }
     ```
 
 1. Save the file.
