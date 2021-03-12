@@ -1,4 +1,4 @@
-The definition of personal data can be broadly interpreted. As such, Microsoft-generated logs could contain data that's deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. However, you can't restrict or rectify data in these logs<!-- We should say why not. -->. Instead, only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer.
+The definition of personal data can be broadly interpreted. As such, Microsoft-generated logs could contain data that's deemed personal. System-generated logs are an integral part of the service provided in Microsoft cloud products. However, you can't restrict or rectify data in these logs as that would compromise the integrity of the logs. Instead, only the tenant administrator can administer DSRs for system-generated logs for an enterprise customer.
 
 ## Scenarios for DSR in Azure and Office 365 for system-generated logs
 
@@ -59,7 +59,7 @@ If Contoso had a global presence in one or more national clouds and someone made
 
 |National cloud|Export steps|
 |---|---|
-|Office 365 Germany|Follow the same steps described previously<!-- ID/SME: The steps described in which example? -->. Start with accessing and exporting the data, then notify<!-- ID/SME: Notify who? --> about DSR fulfillment issues. Finally, delete<!-- ID/SME: Delete what? -->.|
+|Office 365 Germany|Same process as Office 365 cloud.|
 |Office 365 US Government|Use the Microsoft 365 admin center to submit a request to Microsoft Support|
 |Office 365 operated by 21Vianet (China)|Access the Microsoft 365 admin center operated by 21Vianet admin portal. Select **Commerce**, select **Subscription**, select **Privacy**, select **GDPR**, and then enter the required information.|
 
