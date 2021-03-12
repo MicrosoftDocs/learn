@@ -15,7 +15,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
         | Setting | Value | Description |
         |---|---|---|
         | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
-        | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+        | **Resource Group** | _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
 
     1. Enter the following values in the **Instance Details** section.
 
