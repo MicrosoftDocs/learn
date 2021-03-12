@@ -2,7 +2,7 @@ Being able to invite external users to use your Azure resources is a great benef
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will: 
 
 - Manage external collaboration settings in Azure AD
 
