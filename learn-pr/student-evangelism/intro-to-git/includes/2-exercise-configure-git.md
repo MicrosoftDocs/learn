@@ -49,7 +49,7 @@ Git works by checking for changes to files within a certain folder. We'll create
 
 Start by creating an empty folder for your project, and then initialize a Git repository inside it.
 
-1. Create a folder named *Cats*. This folder will be the the project directory, also called the working tree. The project directory is where all files related to your project are stored. In this exercise, it's where your website and the files that create the website and its contents are stored.
+1. Create a folder named *Cats*. This folder will be the project directory, also called the working tree. The project directory is where all files related to your project are stored. In this exercise, it's where your website and the files that create the website and its contents are stored.
 
     ```bash
     mkdir Cats
