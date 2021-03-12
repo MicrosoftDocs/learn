@@ -35,7 +35,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
         | Setting | Value | Description |
         |---|---|---|
         | **Namespace Name** | _[Globally unique name]_ | Enter a unique name, for example, _salesteamapp_ + _your initials_ + _current date_. |
-        | **Location** _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
+        | **Location** | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
         | **Pricing tier** | _Standard_ | Specifies the pricing tier. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
