@@ -27,7 +27,7 @@ When a data controller receives a DSR, they address it and provide an appropriat
 
 ## DSR process
 
-You can use Microsoft products and service and administrative tools to help respond to DSRs. Organzations can also use third-party products to gather inforamtion. The procedure to respond to a DSR includes the following phases:
+You can use Microsoft products and service and administrative tools to help respond to DSRs. Organizations can also use third-party products to gather information. The procedure to respond to a DSR includes the following phases:
 
 - Discovery. Use Microsoft search and discovery tools to more easily find customer data that might be the subject of a DSR. After collecting documents that might be relevant to a DSR, you can perform one or more of the DSR actions that the following phases describe. You might also determine that the request doesn't meet your organization's guidelines for responding to DSRs.
 
