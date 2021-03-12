@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Deleting earlier versions of a project or file, so you know you are working only with the most current file or data."
       isCorrect: false
-      explanation: "Incorrect. Version control systems are great for retrieving earlier versions of a file or of an entire project if needed."    
+      explanation: "Incorrect. Version control systems actually retain earlier versions of a file or project, so you can recover them, if needed."    
     - content: "Making experimental changes to your project in an isolated branch."
       isCorrect: false
       explanation: "Correct! Using branches to create different sets of changes to a project is a key use case for version control."
