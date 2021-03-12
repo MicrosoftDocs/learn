@@ -66,7 +66,7 @@ A Contoso customer residing in California has submitted a DSR form through the c
 
 #### Task 2: Provide access
 
-1. Provide access<!-- ID/SME: Provide access to whom or what? --> by retrieving a copy of the document or item that contains responsive data. To do this, you can preview and download items:
+1. Provide access to data subject by retrieving a copy of the document or item that contains responsive data. To do this, you can preview and download items:
 
     1. In the Compliance Center, open **Content Search**.
     1. Select **Preview results**.
@@ -87,16 +87,16 @@ The following table lists tool that you can use to fulfill DSRs for customer dat
 
 |Tool name|Description|
 |------|------|
-|Azure Portal|Use this tool to respond to DSRs against <!-- ID/SMe: Should this be "within Azure?" -->Azure.|
-|Content Search eDiscovery tool|This tool is in both the Office 365 Security & Compliance Center, and the Microsoft 365 compliance center. You can use it to help fulfill DSRs against Office 365 applications.<!-- ID/SME: If this is only for Office 365 apps, should we be mentioning Microsoft 365? -->|
-|DSR case tool|This tool is in the Compliance Center<!-- ID/SME: Which compliance center? And be sure to use the correct name(s) from the row above. I updated these based on the approved names in Term Studio. -->. You can use this tool help with investigations for a data subject.|
+|Azure Portal|Use this tool to respond to DSRs within Azure.|
+|Content Search eDiscovery tool|This tool is in both the Office 365 Security & Compliance Center, and the Microsoft 365 compliance center. You can use it to help fulfill DSRs against Office 365 / Microsoft 365 applications.|
+|DSR case tool|This tool is in the Office 365 Security & Compliance Center. You can use this tool help with investigations for a data subject.|
 |In-app functionality|For applications that don’t support the Content Search tool, you can use the application itself for responding to DSRs.|
 
 ## In-scope applications
 
 Office 365 includes many applications that can store user data. Knowing which applications the data subject uses helps you narrow down what’s in scope for the DSR response. Depending on the application, you might be able to use the Content Search tool to respond. In some cases, however, you'll have to use the in-app functionality to get to the data.
 
-One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for Business subscription<!-- ID/SME: How can reviewing the subscription itself help you? And can you actually review a subscription itself, or do you review info about the subscription? -->. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
+One of the fastest ways to determine the in-scope applications is to review the Microsoft 365 for Business subscription. The subscription's details will show the applications that are included. You can also use the Microsoft 365 admin center to help locate the user's account. From there, in the user account's properties, you can review their product licensing.
 
 ## Compliance boundaries
 
