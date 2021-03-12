@@ -14,17 +14,17 @@ durationInMinutes: 5
 quiz:
   title: ''
   questions:
-  - content: 'Which one of the following scenarios is *not* a common use case for a version control system?'
+  - content: 'Which of the following scenarios is a common use case for a version control system?'
     choices:
-    - content: "Rolling back changes to a project or file."
+    - content: "Deleting earlier versions of a project or file, so you know you are working only with the most current file or data."
       isCorrect: false
-      explanation: "Incorrect. Version control systems are great for retrieving past versions of a file or of an entire project."    
-    - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
-      isCorrect: true
-      explanation: "Correct! Although some teams use tools like GitHub to collaborate, version control systems are less well suited for this type of work."            
+      explanation: "Incorrect. Version control systems are great for retrieving and even recovering earlier versions of a file or of an entire project if needed."    
     - content: "Making experimental changes to your project in an isolated branch."
       isCorrect: false
-      explanation: "Incorrect. Using branches to create different sets of changes to a project is a key use case for version control."
+      explanation: "Correct! Using branches to create different sets of changes to a project is a key use case for version control."
+    - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
+      isCorrect: true
+      explanation: "Incorrect. Although some teams use tools like GitHub to collaborate, version control systems are less well suited for this type of work."            
   - content: 'What is another name for a version control system?'
     choices:
     - content: "Version management software (VMS)"
@@ -62,10 +62,10 @@ quiz:
     choices:
     - content: "`git reset` and `git recover`"
       isCorrect: false
-      explanation: "Incorrect. `git recover` is not a recognized command."
+      explanation: "Incorrect. `git recover` is not a recognized command in Git."
     - content: "`git reset` and `git revert`"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! You can use these commands to correct and recover from mistakes in Git."
     - content: "`git revert` and `git remove`"
       isCorrect: false
-      explanation: "Incorrect. `git remove` is not a recognized command. The recognized command to remove a commit is `git rm`."      
+      explanation: "Incorrect. `git remove` is not a recognized command in Git. The recognized command to remove a commit is `git rm`."      

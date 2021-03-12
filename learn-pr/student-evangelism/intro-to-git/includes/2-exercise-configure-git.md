@@ -76,6 +76,7 @@ Start by creating an empty folder for your project, and then initialize a Git re
     ```bash
     git init
     git checkout -b main
+
     ```
 
     After you run the initialize command, you should see output that's similar to this example:
