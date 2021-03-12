@@ -21,20 +21,22 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Enter **Service Bus** in the search box, then select **Service Bus**, and then select **Create**.
 
-1. In the **Basics** tab, specify the following settings in the **PROJECT DETAILS** section.
+1. On the **Basics** tab, enter the following values for each section.
 
-    | Setting | Value |
-    |---|---|
-    | **Subscription** | Concierge Subscription |
-    | **Resource group** | Select <rgn>[Sandbox resource group]</rgn> from the dropdown. |
+    1. Enter the following values in the **Project Details** section.
 
-1. Specify the following settings in the **INSTANCE DETAILS** section.
+        | Setting | Value | Description |
+        |---|---|---|
+        | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
+        | **Resource group** | _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
 
-    | Setting | Value |
-    |---|---|
-    | **Namespace Name** | *Enter a unique name*, for example, "salesteamapp" + *your initials* + *current date*. |
-    | **Location** | Location near you from the following list. |
-    | **Pricing tier** | Standard |
+    1. Enter the following values in the **Instance Details** section.
+
+        | Setting | Value | Description |
+        |---|---|---|
+        | **Namespace Name** | _[Globally unique name]_ | Enter a unique name, for example, _salesteamapp_ + _your initials_ + _current date_. |
+        | **Location** _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
+        | **Pricing tier** | _Standard_ | Specifies the pricing tier. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -48,7 +50,9 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 ## Create a Service Bus queue
 
-Now that you have a namespace, you can create a queue for messages about individual sales. To do this, follow these steps:
+When your namespace had been created, you can create a queue for messages about individual sales.
+
+To create a Service Bus queue, follow these steps:
 
 1. Under the **Deployment** pane, select **Go to resource**. The namespace you just created appears.
 
@@ -62,7 +66,7 @@ Now that you have a namespace, you can create a queue for messages about individ
 
 You also want to create a topic that will be used for messages that relate to sales performance. Multiple instances of the business logic web service will subscribe to this topic from different countries. Each message will be delivered to multiple instances.
 
-Follow these steps:
+To create a Service Bus topic and subscriptions, follow these steps:
 
 1. In the **Service Bus Namespace** pane, select **Topic**.
 
@@ -72,11 +76,15 @@ Follow these steps:
 
 1. When the topic has been created, at the bottom of the pane, **Queues** and **Topics** tabs appear. Select **Topics**.
 
-1. In the list of topics, select **salesperformancemessages**, and then select **Subscription**.
+1. In the left pane, under **Entities**, select **Topics**.
+
+1. In the list of topics, select **salesperformancemessages**.
+ 
+1. Select **Subscription** to open the **Create subscription** window for your first subscription.
 
 1. Enter **Americas** for the **Name**, then **100** for the **Max delivery count**, and then select **Create**.
 
-1. Select **Subscription**.
+1. Select **Subscription** to open the **Create subscription** window for your second subscription.
 
 1. Enter **EuropeAndAfrica** for the **Name**, then **100** for the **Max delivery count**, and then select **Create**.
 
