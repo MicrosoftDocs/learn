@@ -39,14 +39,17 @@ quiz:
     - content: info
       isCorrect: false
       explanation: info will print debugging information for a Vue application
-  - content: What to steps are required to import a component?
+  - content: What field do you use to list the available components for an app?
     choices:
-    - content: "`import ComponentName from 'ComponentName.vue'"
+    - content: "`methods'"
+      isCorrect: false
+      explanation: "'methods' is used to list the available methods."
+    - content: "`props`"
+      isCorrect: false
+      explanation: "`props` is used to indicate the properties for a component."
+    - content: "`data`."
+      isCorrect: false
+      explanation: "`data` is used to set the data used by a component."
+    - content: "`components`"
       isCorrect: true
-      explanation: "You must import the component using `import`."
-    - content: "List the name of the component in `methods`."
-      isCorrect: false
-      explanation: "`methods` stores a list of methods not components."
-    - content: "List the name of the component in `props`."
-      isCorrect: false
-      explanation: "`props` stores a list of props for a component."
+      explanation: "`components` is used to list the available components."

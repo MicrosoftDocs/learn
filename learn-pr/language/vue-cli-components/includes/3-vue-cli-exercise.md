@@ -35,19 +35,30 @@ The fastest way to bootstrap a Vue application is through Vue CLI. We will now c
     vue create relecloud
     ```
 
-1. When prompted, select *Manually select features* by using your arrow keys to move down and pressing *Enter*
+1. When prompted, select *Manually select features* by using your arrow keys to move down and pressing <kbd>Enter</kbd>.
+
     ![Screenshot of menu options with Manually select features highlighted.](../media/manual.png)
-1. When prompted for features needed for your project, arrow to *Babel* and press *space* to disable it, and arrow to *Linter / Formatter* and press *space* to disable it
+
+1. When prompted for features needed for your project, arrow to *Babel* and press *space* to disable it, and arrow to *Linter / Formatter* and press *space* to disable it.
+
     ![Screenshot of features options with Babel and Linter / Formatter disabled, and Choose Vue version selected.](../media/features.png)
+
 1. Ensure *Choose Vue version* is selected.
 1. Press *enter* to confirm feature selection.
+
     > [!NOTE]
     > For production projects you may decide to add additional features. These features are outside the scope of this module.
-1. When prompted to choose a version of Vue.js, arrow to *3.x (Preview)* and press *enter*.
+
+1. When prompted to choose a version of Vue.js, arrow to *3.x (Preview)* and press <kbd>Enter</kbd>.
+
     ![Screenshot of version selection with 3.x (Preview) selected.](../media/version.png)
-1. When prompted to choose where you prefer to place config files, leave the default of *In dedicated config files* and press *enter*.
+
+1. When prompted to choose where you prefer to place config files, leave the default of *In dedicated config files* and press <kbd>Enter</kbd>.
+
     ![Screenshot of config file configuration with In dedicated config files selected](../media/config-files.png)
-1. When prompted to save this as a preset, press *enter* to accept the default of *No*.
+
+1. When prompted to save this as a preset, press <kbd>Enter</kbd> to accept the default of *No*.
+
 Your project will now be created and the necessary libraries installed. This will take a few moments.
 
 ## Exploring the code
