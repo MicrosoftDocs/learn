@@ -27,8 +27,8 @@ When a data controller receives a DSR, they address it and provide an appropriat
 
 ## DSR process
 
-You can use Microsoft products and service and administrative tools to help respond to DSRs. The procedure to respond to a DSR includes the following phases:
-<!-- After editing this module, I'm still not clear whether they must use Microsoft products to gather information from Microsoft products, or whether there are other options such as third-party products. We should clarify this. -->
+You can use Microsoft products and service and administrative tools to help respond to DSRs. Organzations can also use third-party products to gather inforamtion. The procedure to respond to a DSR includes the following phases:
+
 - Discovery. Use Microsoft search and discovery tools to more easily find customer data that might be the subject of a DSR. After collecting documents that might be relevant to a DSR, you can perform one or more of the DSR actions that the following phases describe. You might also determine that the request doesn't meet your organization's guidelines for responding to DSRs.
 
 - Access. Retrieve personal data that's in Microsoft cloud services, and if requested, make a copy of it available to the data subject.
@@ -49,7 +49,7 @@ The following units in this module introduce some of the technical procedures th
 ## DSR terminology
 
 The following list defines some of the terms that are relevant to DSR:<!-- ID/SME: As far as I can tell, these are definitions directly from GDPR. -->
-<!-- ID/SME: Because these terms are GDPR definitions, I won't edit them. However, if it's plagiarism for us to copy them specifically, then we should rewrite them. -->
+<!-- ID/SME: Because these terms are GDPR definitions, I won't edit them. However, if it's plagiarism for us to copy them specifically, then we should rewrite them. --> <!--ID : I can rewrite them but I'm not sure if I will create more issues by rewording them. How do we determine if it is ok to copy them or not? -->
 - Controller. The natural or legal person, public authority, agency, or other body, which, alone or jointly with others, determines the purposes and means of the processing of personal data. The purposes and means of such processing are determined by Union or Member State law, the controller, or the specific criteria for its nomination might be provided by Union or Member State law.
 
 - Personal data and data subject. Any information relating to an identified or identifiable natural person, or data subject. An identifiable natural person is one who can be identified, directly or indirectly, by referring to:
