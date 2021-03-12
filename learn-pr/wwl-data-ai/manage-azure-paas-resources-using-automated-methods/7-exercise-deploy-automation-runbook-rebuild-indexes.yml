@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.exercise-deploy-automation-runbook-rebuild-indexes
+title: 'Exercise: Deploy an automation runbook to automatically rebuild a databases indexes'
+metadata:
+  title: 'Exercise: Deploy an automation runbook to automatically rebuild a databases indexes'
+  description: "Exercise: Deploy an automation runbook to automatically rebuild a databases indexes"
+  ms.date: 12/14/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 85888
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-deploy-automation-runbook-rebuild-indexes.md)]

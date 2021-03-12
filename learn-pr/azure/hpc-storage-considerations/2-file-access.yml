@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.2-file-access
+title: File access for HPC jobs
+metadata:
+  title: File access for HPC jobs
+  description: A discussion of what files may be used in HPC workloads, and how files are typically accessed
+  ms.date: 12/29/2020
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-file-access.md)]

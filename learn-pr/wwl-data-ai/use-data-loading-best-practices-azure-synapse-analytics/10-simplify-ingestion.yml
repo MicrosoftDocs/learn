@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.simplify-ingestion-with-copy-activity
+title: Simplify ingestion with the Copy Activity
+metadata:
+  title: Simplify ingestion with the Copy Activity
+  description: "Simplify ingestion with the Copy Activity"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-simplify-ingestion.md)]

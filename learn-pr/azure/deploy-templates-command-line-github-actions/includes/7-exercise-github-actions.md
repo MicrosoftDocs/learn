@@ -193,10 +193,10 @@ You can create a workflow file and then push/upload the file to the repository. 
           - name: Deploy ARM Template
             uses: azure/arm-deploy@v1
             with:
-              scope: subscription
+              scope: resourcegroup
               subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
               resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-              template: $GITHUB_WORKSPACE/azuredeploy.json
+              template: ./path-to/azuredeploy.json
     ```
 
     The workflow file has three sections:

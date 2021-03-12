@@ -8,7 +8,7 @@ the term _modern operations practices_ as a container for two different
 practices:
 
 -   DevOps
--   site reliability engineering (SRE)
+-   Site reliability engineering (SRE)
 
 Let's take a quick look at both of them and what they have to offer us in
 this context.
@@ -60,10 +60,10 @@ years or so in response to a specific set of challenges in the operations
 space. They recognized that a number of factors were going to require a new
 approach, including:
 
--   the growing complexity of production environments
--   increasing business dependency on the continuous functioning of those
+-   The growing complexity of production environments
+-   Increasing business dependency on the continuous functioning of those
     environments
--   the inability to scale the workforce linearly with the size of these
+-   The inability to scale the workforce linearly with the size of these
     environments
 
 While they are different practices with somewhat of a different focus (for

@@ -46,14 +46,14 @@ quiz:
     - content: "You can't get the latest security updates to the Azure Sphere devices."
       isCorrect: true
       explanation: "You can't get the latest security updates to the Azure Sphere devices."
-  - content: "How can you run Real-time applications on an Azure Sphere?"
+  - content: "How can you run real-time applications on an Azure Sphere?"
     choices:
-    - content: "You can't run Real-time applications on an Azure Sphere."
+    - content: "You can't run real-time applications on an Azure Sphere."
       isCorrect: false
-      explanation: "You can run Real-time applications on the Azure Sphere Cortex-M4 cores"
-    - content: "You can run Real-time applications on the Azure Sphere Cortex-A7 Linux kernel core"
+      explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores"
+    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 Linux kernel core"
       isCorrect: false
-      explanation: "You cannot run Real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
-    - content: "You can run Real-time applications on the Azure Sphere Cortex-M4 cores."
+      explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
+    - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
       isCorrect: true
-      explanation: "You can run bare-metal code, or Real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores."
+      explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores."

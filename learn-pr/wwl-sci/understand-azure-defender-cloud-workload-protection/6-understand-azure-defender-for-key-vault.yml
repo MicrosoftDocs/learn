@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.for-key-vault
+title: Understand Azure Defender for Key Vault
+metadata:
+  title: Understand Azure Defender for Key Vault
+  description: "Understand Azure Defender for Key Vault"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-understand-azure-defender-for-key-vault.md)]

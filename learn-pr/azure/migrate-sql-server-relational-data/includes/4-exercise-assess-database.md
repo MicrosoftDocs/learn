@@ -10,9 +10,9 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. In the list of resources in the resource group, select the **admsdemovm** virtual machine (VM).
 
-1. On the toolbar above the VM info, select **Connect**.
+1. On the toolbar above the VM info, select **Connect**, and from the dropdown, select **RDP**.
 
-1. On the **Connect to virtual machine** pane, select **Download RDP File**, and save it to your computer in a location of your choosing.
+1. On the **Connect** window, from the **RDP*** tab, under the **Connect with RDP** section, select **Download RDP File**, Save it to your computer in a location of your choice.
 
 1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.
 
@@ -38,7 +38,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. To begin a new assessment, on the left menu, select **+**.
 
-1. Select a **Project type** of **Assessment**.
+1. For **Project type**, select **Assessment**.
 
 1. For **Project name**, enter **Social Database Assessment**.
 
@@ -72,23 +72,23 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 ## Review the assessment results and address issues
 
-Allow the analysis to run. When it finishes, it produces results and breaks them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
+Allow the analysis to run. When it finishes, it produces results and breaks them into *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the SQL Server feature parity results, which is the default.
 
 :::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration":::
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 
-Look more closely at the first row, though, and you'll see the issue **Service Broker feature is not supported in Azure SQL Database. Azure SQL Database does not support trace flags.** The information for that issue includes instructions on how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
+Look more closely at the first row, though, and you'll see the issue, **Service Broker feature is not supported in Azure SQL Database. Azure SQL Database does not support trace flags.** The information for that issue includes instructions about how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
 
 Select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
 
 :::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Compatibility issues." loc-scope="azure-database-migration":::
 
-1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. Then connect to the **social** database.
+1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. To connect to the **social** database, select **Connect**.
 
 1. Select **New Query**.
 
-1. Enter and run the following query:
+1. Enter the following query, and to run it, select **Execute**.
 
     ```sql
     ALTER DATABASE [Social] SET DISABLE_BROKER;

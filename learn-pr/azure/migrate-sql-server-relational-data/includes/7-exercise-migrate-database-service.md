@@ -6,7 +6,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 1. In the **Search the Marketplace** box, search for **Azure Database Migration Service**, and select **Create**.
 
-1. On the **Basics** tab, configure the following values:
+1. On the **Basics** tab, configure the following values.
 
     |  |  |
     |---------|---------|
@@ -17,7 +17,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
     | **Pricing tier** | Standard 1 vCores |
     |||
 
-1. Select **Next:Networking**.
+1. Select **Next : Networking**.
 
 1. Select the **admsdemo-vnet/default** virtual network, and then select **Review + create**.
 
@@ -33,7 +33,7 @@ After the service instance is created, you create a project to migrate the datab
 
 1. In the migration project, select **New Migration Project**.
 
-1. On the **New migration project** pane, configure the following values:
+1. On the **New migration project** pane, configure the following values.
 
     |  |  |
     |---------|---------|
@@ -47,12 +47,12 @@ After the service instance is created, you create a project to migrate the datab
 
 1. Select **Create and run activity**.
 
-1. Fill out information on the source database. Complete the **New migration project** pane with the following values:
+1. For the source database, complete the **New migration project** pane with the following values:
 
     |  |  |
     |---------|---------|
     | **Source SQL Server instance name** | admsdemovm |
-    | **Authentication type** | Windows authentication |
+    | **Authentication type** | Windows Authentication |
     | **User Name** | admsdemovm\windowsadmin |
     | **Password**     | Enter the password for the windowsadmin account |
     | **Encrypt connection** | Selected |
@@ -61,13 +61,13 @@ After the service instance is created, you create a project to migrate the datab
 
     ![Source details](../media/7-08-source-details.png)
 
-1. Select **Save**.
+Select **Next : Select target**.
 
-1. Supply information for the target Azure SQL Database instance. Complete the **Migration target details** pane with the following values:
+1. For the target Azure SQL Database instance, complete the **Migration target details** pane with the following values:
 
     |  |  |
     |---------|---------|
-    | **Target server name** | Enter the DNS name of your Azure SQL server. |
+    | **Target server name** | Enter the DNS name of your Azure SQL server (for example, admsdemosqlmfe4eev3ubxlo.database.windows.net). |
     | **Authentication type** | SQL Authentication |
     | **User Name** | azuresqladmin |
     | **Password**     | Enter the password for the azuresqladmin account |
@@ -76,7 +76,7 @@ After the service instance is created, you create a project to migrate the datab
 
     ![Target details](../media/7-09-target-details.png)
 
-1. Select **Save**.
+1. Select **Next : Map to target databases**.
 
 1. For the **Social** database, select **Set Source DB Read-Only**.
 
@@ -84,21 +84,21 @@ After the service instance is created, you create a project to migrate the datab
 
     ![Selections for mapping to a target database](../media/7-10-map-database.png)
 
-1. To proceed to configure the migration settings, select **Save**.
+1. Select **Next : Configure migration settings**.
 
 1. To see the list of tables, next to **Social 1 of 1**, select the arrow.
 
     ![List of tables](../media/7-11-select-tables.png)
 
-1. Make sure the `dbo.Twitters` table is selected, and then select **Save**.
+1. Make sure the `dbo.Twitters` table is selected.
+
+1.  Select **Next : Summary**.
 
 1. In the **Activity name** box, enter **MigrateSocialDatabase**.
 
-1. Select **Validation Options**, select **Do not validate my database(s)**, and then select **Save**.
-
     ![Migration summary](../media/7-12-run-migration.png)
 
-1. To start the migration, select **Run migration**.
+1. To start the migration, select **Start migration**.
 
 1. A new pane appears with the status of the migration. To update the status until it shows that the process is finished, at the top, select **Refresh**.
 
@@ -108,7 +108,7 @@ After the service instance is created, you create a project to migrate the datab
 
 You can now go to the Azure SQL database and view your migrated data.
 
-1. Go back to your **admsdemorg** resource group, and select the **Social (admsdemosqlv2v2s22x.../Social)** database.
+1. Go back to your **admsdemorg** resource group, and select the **Social (admsdemosqlv2v2s22x.../Social)** SQL database.
 
     ![Overview pane](../media/7-sql-database.png)
 

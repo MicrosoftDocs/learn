@@ -22,7 +22,7 @@ To get started creating a resource group, follow these steps:
 1. Select **Review + create**.
 1. Select **Create**.
 
-![Creating a new resource group on Azure.](../media/create-resource-group.png)
+:::image type="content" source="../media/create-resource-group.png" alt-text="Screenshot that shows creating a new resource group on Azure.":::
 
 You can go to your resource group now. If you ever lose your resource group, you can find it by entering **Resource Group** in the top search bar again and then selecting the resource group.
 
@@ -39,7 +39,7 @@ To create a Custom Vision resource, follow these steps:
 1. Select **Review + create**.
 1. Select **Create**.
 
-![Creating a new Custom Vision resource on Azure.](../media/create-custom-vision.png)
+:::image type="content" source="../media/create-custom-vision.png" alt-text="Screenshot that shows creating a new Custom Vision resource on Azure.":::
 
 When deployment is done, select **Go to resource**.
 
@@ -58,7 +58,7 @@ To get started with your project, follow these steps:
 1. Select **General** for the **Domain**.
 1. Select **Create project**.
 
-![Creating a new Custom Vision project in the Custom Vision portal.](../media/create-vision-project.png)
+:::image type="content" source="../media/create-vision-project.png" alt-text="Screenshot that shows creating a new Custom Vision project in the Custom Vision portal.":::
 
 ## Review setup
 
@@ -68,9 +68,9 @@ Here's everything we have encountered.
 
 ### The Azure portal
 
-Azure is a cloud service that is giving you compute power to run code in a secure place *not* on your computer.
+Azure is a cloud service that gives you the compute power to run code in a secure place *not* on your computer.
 
-![Screenshot of the Azure portal with our resource group and Custom Vision resource.](../media/azure-portal.png)
+:::image type="content" source="../media/azure-portal.png" alt-text="Screenshot of the Azure portal with our resource group and Custom Vision resource.":::
 
 What we are doing for this module is a tiny portion of what Azure can do for you. If you are interested in learning more about what Azure can do for you, check out Azure on Microsoft Learn. There are a lot of [modules on Cognitive Services](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&products=azure-cognitive-services/) available.
 
@@ -78,18 +78,18 @@ What we are doing for this module is a tiny portion of what Azure can do for you
 
 [Custom Vision on Azure](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/?azure-portal=true) is even more powerful than the bit we are going to explore in this module. Open the resource in Azure.
 
-![Custom Vision resource on Azure.](../media/custom-vision-resource.png)
+:::image type="content" source="../media/custom-vision-resource.png" alt-text="Screenshot that shows a Custom Vision resource on Azure.":::
 
 You can see there are a number of resources in the menu on the left that start to hint at the complexity of the service that will be working for you as you train your AI. In this module, we will stay in the Custom Vision portal, which is like a front page to this resource.
 
 Everything that you do in the Custom Vision portal will be using the compute resources that you provisioned here in the Custom Vision resource in Azure. Custom Vision also has an SDK. Like the portal, the calls to the SDK would be using what was provisioned on Azure as part of this resource.
 
-If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules we have on Custom Vision](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=custom%20vision).
+If you get inspired by this module, we encourage you to check out the other [Microsoft Learn modules on Custom Vision](https://docs.microsoft.com/learn/browse/?azure-portal=true?expanded=azure&terms=custom%20vision).
 
 ### Custom Vision portal
 
 The Custom Vision portal is a user interface that allows us to interact with the Custom Vision resource without having to write code. Everything we do here gets broken down into lines of code that you could do without this interface.
 
-![Custom Vision portal with a project open.](../media/custom-vision-project.png)
+:::image type="content" source="../media/custom-vision-project.png" alt-text="Screenshot that shows the Custom Vision portal with a project open.":::
 
 When we created the project in the Custom Vision portal, we were able to choose one of two classification types: Classification and Object Detection. The biggest difference is that Classification classifies an entire image. Object Detection identifies the location of a particular object from within images. For this project, we wanted Object Detection because we want to identify Bungee in images from the film.

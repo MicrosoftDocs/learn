@@ -2,29 +2,29 @@
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
 metadata:
   title: Track wild polar bears with AI
-  description: Detect and track polar bears through photos using AI, then use Power BI to show where polar bears are being spotted.
-  ms.date: 05/08/2020
+  description: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  ms.date: 12/21/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Track wild polar bears with AI
-summary: Detect and track polar bears through photos using AI, then use Power BI to show where polar bears are being spotted.
+summary: Detect and track polar bears through photos using AI, and then use Power BI to show on a map where an array of virtual cameras spots polar bears.
 abstract:  |
   In this module, you will:
   - Create an Azure Storage account
   - Deploy virtual cameras that upload wildlife photos to the storage account
-  - Train a machine-learning model to detect polar bears in photographs
-  - Write an Azure Function that invokes the machine-learning model
-  - Deploy an Azure SQL Database to capture output from the Azure Function
-  - Connect Power BI to the Azure SQL Database
-  - Create a Power BI report that shows where polar bears are being spotted on a map
+  - Train a machine learning model to detect polar bears in photos
+  - Write a function app in Azure Functions to invoke the machine learning model
+  - Use Azure SQL Database to capture output from the function app in a SQL database
+  - Connect Power BI to the SQL database
+  - Create a Power BI report that shows on a live map where cameras spot polar bears
 
 prerequisites: |
-  - An Azure subscription
-  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
-  - Familiarity with Node.js
-  - Power BI Desktop
+  - An [Azure subscription](https://azure.microsoft.com/free/students/?azure-portal=true)
+  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI
+  - Familiarity with [Node.js](https://nodejs.org/?azure-portal=true)
+  - [Power BI Desktop](https://powerbi.microsoft.com/desktop/?azure-portal=true)
 iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
 levels:
 - beginner
@@ -42,6 +42,7 @@ units:
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.4-azure-functions
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.5-azure-sql-database
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6-power-bi
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6b-knowledge-check
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.7-summary
 badge:
   uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge 

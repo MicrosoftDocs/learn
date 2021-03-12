@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.analyze-data-in-sentinel
+metadata:
+  title: Threat detection with Azure Sentinel analytics
+  description: Threat detection with Azure Sentinel analytics
+  ms.date: 12/15/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Threat detection with Azure Sentinel analytics
+summary: In this module, you learned how Azure Sentinel Analytics can help the SecOps team identify and stop cyber attacks.
+abstract: |
+  In this module, you will:
+  - Explain the importance of Azure Sentinel Analytics.
+  - Explain different types of analytics rules.
+  - Create rules from templates.
+  - Create new analytics rules and queries using the analytics rule wizard.
+  - Manage rules with modifications.
+prerequisites: |
+  - Basic knowledge of Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+  - Azure subscription
+  - Azure Sentinel instance in your Azure subscription
+iconUrl: /learn/achievements/analyze-data-in-sentinel.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.analyze-data-in-sentinel.1-introduction
+- learn.azure.analyze-data-in-sentinel.2-exercise-setup
+- learn.azure.analyze-data-in-sentinel.3-azure-sentinel-analytics-overview
+- learn.azure.analyze-data-in-sentinel.4-analytics-rules
+- learn.azure.analyze-data-in-sentinel.5-create-rule-from-templates
+- learn.azure.analyze-data-in-sentinel.6-create-rule-from-wizard
+- learn.azure.analyze-data-in-sentinel.7-manage-analytics-rules
+- learn.azure.analyze-data-in-sentinel.8-exercise-detect-threats
+- learn.azure.analyze-data-in-sentinel.9-summary
+badge:
+  uid: learn.azure.analyze-data-in-sentinel.badge

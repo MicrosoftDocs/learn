@@ -2,8 +2,8 @@
 uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning
 metadata:
   title: Deploy batch inference pipelines with Azure Machine Learning
-  description: "Machine learning models are often used to generate predictions from large numbers of observations in a batch process. To accomplish this, you can use Azure Machine Learning to publish a batch inference pipeline."
-  ms.date: 09/25/2020
+  description: "Deploy batch inference pipelines with Azure Machine Learning"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

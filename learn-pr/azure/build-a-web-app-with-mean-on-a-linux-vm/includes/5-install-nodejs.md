@@ -38,7 +38,7 @@ Here you'll install Node.js. As with MongoDB, the process involves registering t
     sudo apt install nodejs
     ```
 
-1. Run `node -v` to verify the installation.
+1. Run `nodejs -v` to verify the installation.
 
     ```bash
     nodejs -v

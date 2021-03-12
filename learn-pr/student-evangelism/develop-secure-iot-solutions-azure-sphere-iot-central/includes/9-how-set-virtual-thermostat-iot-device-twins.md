@@ -103,7 +103,7 @@ LP_DEVICE_TWIN_BINDING* deviceTwinBindingSet[] = { &dt_desiredTemperature, &dt_r
 
 ### Opening the device twin binding set
 
-Device twin binding sets are initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
+The device twin binding set is initialized in the **InitPeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
@@ -111,13 +111,12 @@ lp_deviceTwinSetOpen(deviceTwinBindingSet, NELEMS(deviceTwinBindingSet));
 
 ### Closing the device twin binding set
 
-Device twin bindings sets are closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
+The device twin bindings set is closed in the **ClosePeripheralsAndHandlers** function in **main.c**.
 
 ```c
 lp_deviceTwinSetClose();
+```eviceTwinSetClose();
 ```
-
-
 
 ## Azure IoT Central device properties
 
@@ -127,4 +126,3 @@ IoT Central properties are defined in the device template interface. In this exa
 > [![The illustration shows device properties.](../media/iot-central-device-template-interface-led1.png)](../media/iot-central-device-template-interface-led1.png) -->
 
 :::image type="content" source="../media/iot-central-device-template-interface-led1.png" alt-text="The illustration shows device properties.":::
-

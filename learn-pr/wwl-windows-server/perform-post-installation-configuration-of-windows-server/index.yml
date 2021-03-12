@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.perform-post-installation-configuration-of-windows-server
+metadata:
+  title: Perform post-installation configuration of Windows Server
+  description: "Perform post-installation configuration of Windows Server"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Perform post-installation configuration of Windows Server
+summary: Learn to perform post-installation configuration of Windows Server by using several methods and tools.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain post-installation configuration and describe the available post-installation configuration tools.
+  - Use Sconfig to configure Windows Server.
+  - Describe Desired State Configuration (DSC) and explain how to use it to configure Windows Server.
+  - Use Windows Admin Center to perform post-installation configuration.
+  - Implement answer files to complete the configuration.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Working with command-line tools.
+iconUrl: /learn/achievements/perform-post-installation-configuration-of-windows-server.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.perform-post-installation-configuration-of-windows-server.introduction
+- learn.wwl.perform-post-installation-configuration-of-windows-server.list-available-post-installation-tools
+- learn.wwl.perform-post-installation-configuration-of-windows-server.configure-server-core-using-sconfig
+- learn.wwl.perform-post-installation-configuration-of-windows-server.use-dsc-to-configure
+- learn.wwl.perform-post-installation-configuration-of-windows-server.with-windows-admin-center
+- learn.wwl.perform-post-installation-configuration-of-windows-server.configure-server-with-answer-files
+- learn.wwl.perform-post-installation-configuration-of-windows-server.knowledge-check
+- learn.wwl.perform-post-installation-configuration-of-windows-server.summary
+badge:
+  uid: learn.wwl.perform-post-installation-configuration-of-windows-server.badge

@@ -1,0 +1,1 @@
+In this module, you learned all about decentralized apps. You read about the benefits of dapps and how they operate. You were exposed to Drizzle, which is a part of the Truffle Suite family and is the most popular option for developers who build dapps. Finally, you used Drizzle to create your own dapps.

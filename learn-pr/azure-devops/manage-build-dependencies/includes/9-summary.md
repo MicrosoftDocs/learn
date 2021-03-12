@@ -19,7 +19,7 @@ You might need to consider the language of the package and the process for acces
 * [NuGet Documentation](https://docs.microsoft.com/nuget/?azure-portal=true)
 * [npm documentation](https://docs.npmjs.com?azure-portal=true)
 * [Maven documentation](https://maven.apache.org/guides/?azure-portal=true)
-* [Chocolatey documentation](https://chocolatey.org/docs?azure-portal=true)
+* [Chocolatey documentation](https://docs.chocolatey.org/en-us/)
 
 ## Appendix
 
@@ -98,7 +98,7 @@ Earlier in this module, we described some of the formats that are available. Her
 
 When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you've tested the package can you know its quality. Because package versions should never be changed, it becomes challenging to choose a certain version beforehand.
 
-[Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/?view=azure-devops&azure-portal=true) associates a quality level with each package in its feeds, as well as distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
+[Azure Artifacts](https://docs.microsoft.com/azure/devops/artifacts/?azure-portal=true) associates a quality level with each package in its feeds, as well as distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
 
 Feeds in Azure Artifacts have three different views by default. These views are added at the moment a new feed is created. The three views are:
 
@@ -118,7 +118,7 @@ Ensuring the security of your packages is as important as ensuring the security 
 
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
-To learn more about how to configure secure access to package feeds, see [Secure and share packages using feed permissions](https://docs.microsoft.com/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops?azure-portal=true).
+To learn more about how to configure secure access to package feeds, see [Secure and share packages using feed permissions](https://docs.microsoft.com/azure/devops/artifacts/feeds/feed-permissions?azure-portal=true).
 
 #### Configure the pipeline to access security and license ratings
 

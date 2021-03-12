@@ -1,4 +1,4 @@
-## Built-in Roles for Azure Resources (USES POWERSHELL)
+## Built-in roles for Azure Resources (uses PowerShell)
 
 Azure AD provides several _built-in roles_ to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
@@ -8,17 +8,17 @@ Azure AD provides several _built-in roles_ to cover the most common security sce
 
 ## Role definitions
 
-Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name, Id**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
+Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name**, **ID**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
 
 For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
-You can get this information using the Powershell `Get-AzureRmRoleDefinition` cmdlet. Try typing the following command into the Cloud Shell on the right.
+You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. 
 
 ```powershell
-Get-AzureRmRoleDefinition -Name Owner
+Get-AzRoleDefinition
 ```
 
-This should produce the following output:
+This code should produce the following output:
 
 ```output
 Name             : Owner
@@ -38,24 +38,28 @@ Try the same for the **Contributor** and **Reader** roles to see the actions all
 
 Next, let's explore some of the other built-in roles.
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true)
-1. Select **Resource groups** from the left sidebar.
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
+
+1. Select **Resource groups** from the left nav bar.
+
 1. Select the resource group.
+
 1. Select the **Access control (IAM)** item from the sidebar menu.
+
 1. Select the **Roles** tab as shown below to see the list of available roles.
 
     ![Screenshot showing the roles in the portal](../media/5-list-roles.png)
 
 ## What's a role definition?
 
-A role definition is a collection of permissions. It's sometimes just called a role. A role definition lists the operations that can be performed, such as **read, write, and delete**. It can also list the operations that can't be performed or operations related to underlying data.
+A role definition is a collection of permissions. A role definition lists the operations that can be performed, such as **read, write, and delete**. It can also list the operations that can't be performed or operations related to underlying data.
 
-As you saw above, a role definition has the following structure.
+As previously described, a role definition has the following structure.
 
 | Name                 | Description |
 |----------------------|-------------|
 | `Id`                 | Unique identifier for the role, assigned by Azure. |
-| `IsCustom`           | True if this is a custom role, False if this is a built-in role. |
+| `IsCustom`           | True if a custom role, False if a built-in role. |
 | `Description`        | A readable description of the role. |
 | `Actions []`         | Allowed permissions, `*` indicates all.
 | `NotActions []`      | Denied permissions. |
@@ -89,7 +93,7 @@ This structure is represented as JSON when used in role-based access control (RB
 
 ### Actions and NotActions
 
-You can tailor the `Actions` and `NotActions` properties to grant and deny the exact permissions you need. These are always in the format: `{Company}.{ProviderName}/{resourceType}/{action}`.
+You can tailor the `Actions` and `NotActions` properties to grant and deny the exact permissions you need. These properties are always in the format: `{Company}.{ProviderName}/{resourceType}/{action}`.
 
 As an example, here are the actions for the three roles we looked at previously.
 
@@ -99,13 +103,13 @@ As an example, here are the actions for the three roles we looked at previously.
 |Contributor (allow all actions except writing or deleting role assignments)|`*`|`Microsoft.Authorization/*/Delete, Microsoft.Authorization/*/Write, Microsoft.Authorization/*/elevateAccess/Action`|
 |Reader (allow all read actions)|`*/read`| - |
 
-The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions, or in other words, it can manage everything. This includes actions defined in the future, as Azure adds new resource types. In the case of the **Reader** role, only the `read` action is allowed.
+The wildcard (`*`) operation under `Actions` indicates that the principal assigned to this role can perform all actions, or in other words, it can manage everything. Including actions defined in the future, as Azure adds new resource types. With the **Reader** role, only the `read` action is allowed.
 
-The operations under `NotActions` are subtracted from `Actions`. In the case of the **Contributor** role, `NotActions` removes this role's ability to manage access to resources and also assign access to resources.
+The operations under `NotActions` are subtracted from `Actions`. With the **Contributor** role, `NotActions` removes this role's ability to manage access to resources and also assign access to resources.
 
 ### DataActions and NotDataActions
 
-Data operations are specified in the `DataActions` and `NotDataActions` properties. This allows data operations to be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that can be specified in `DataActions` and `NotDataActions`:
+Data operations are specified in the `DataActions` and `NotDataActions` properties. Data operations can be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that can be specified in `DataActions` and `NotDataActions`:
 
 * Read a list of blobs in a container
 * Write a storage blob in a container
@@ -140,7 +144,7 @@ Here are some examples.
 
 ## Creating roles
 
-As you can see, Azure AD comes with a bunch of built-in roles that likely cover 99% of what you'll ever want to do. You should prefer to use a built-in role if possible. However, you can create custom roles if you find it necessary to do so.
+Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It is preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 
 > [!NOTE]
 > Custom role creation requires Azure AD Premium P1 or P2 and cannot be done in the free tier.
@@ -149,7 +153,7 @@ Creating a new role can be done through several mechanisms:
 
 * **Azure portal**. You can use the Azure portal to create a custom role - **Azure Active Directory > Roles and administrators > New custom role**.
 
-* **Azure PowerShell**. You can use the `New-AzureADMSRoleDefinition` cmdlet to define a new role.
+* **Azure PowerShell**. You can use the `New-AzADMSRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**. You can use a REST call to the Graph API to programmatically create a new role.
 

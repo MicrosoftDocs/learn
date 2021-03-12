@@ -430,7 +430,7 @@ With the staging workflow created, the next step is to create the production wor
 
 1. Change the `deploy` step to deploy to the production namespace. In the `Run Helm Deploy` step, change the `--namespace` flag from `staging` to `production`.
 
-1. At the end of the Help command, add a new `--set image.tag=${GITHUB_REF##*/}`.
+1. At the end of the Helm command, add a new `--set image.tag=${GITHUB_REF##*/}`.
 
     Here, you're using a Bash feature called *parameter expansion*. This feature is defined by the syntax `${ENV##<wildcard><character>}`. It returns the last occurrence of the string after `character`.
 

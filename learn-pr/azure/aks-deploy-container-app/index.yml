@@ -15,7 +15,6 @@ abstract: |
   - Create and set up an Azure Kubernetes Service cluster.
   - Deploy Kubernetes workloads by using deployment YAML files.
   - Expose Kubernetes workloads by using services and ingress.
-  - Integrate Azure Container Registry to deploy container images.
 prerequisites: |
   - An Azure subscription
   - Ability to use the Azure CLI

@@ -1,6 +1,6 @@
 Continuous integration is the practice of testing each change made to your codebase automatically and as early as possible. Continuous delivery follows the testing that happens during continuous integration and pushes changes to a staging or production system.
 
-In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory utilizes Azure Resource Manager templates to store the configuration of your various ADF entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
+In Azure Data Factory, continuous integration and delivery (CI/CD) means moving Data Factory pipelines from one environment (development, test, production) to another. Azure Data Factory utilizes Azure Resource Manager templates to store the configuration of your various Azure Data Factory entities (pipelines, datasets, data flows, and so on). There are two suggested methods to promote a data factory to another environment:
 
 -    Automated deployment using Data Factory's integration with Azure Pipelines.
 -    Manually upload a Resource Manager template using Data Factory UX integration with Azure Resource Manager.
@@ -58,8 +58,8 @@ The following is a guide for setting up an Azure Pipelines release that automate
 1.  In the **Stage name** box, enter the name of your environment.
 
 1.  Select **Add artifact**, and then select the git repository configured with your development data factory. Select the publish branch of the repository for the **Default branch**. By default, this publish branch is `adf_publish`. For the **Default version**, select **Latest from default branch**.
-
-    [![Add an artifact](../media/continuous-integration-image-7.png)](../media/continuous-integration-image-7.png#lightbox)
+    > [!div class="mx-imgBorder"]  
+    > [![Add an artifact](../media/continuous-integration-image-7.png)](../media/continuous-integration-image-7.png#lightbox)
 
 1.  Add an Azure Resource Manager Deployment task:
 
@@ -83,8 +83,9 @@ The following is a guide for setting up an Azure Pipelines release that automate
 
     > [!WARNING]
     > In Complete deployment mode, resources that exist in the resource group but aren't specified in the new Resource Manager template will be **deleted**.
-
-    [![Data Factory Prod Deployment](../media/continuous-integration-image-9.png)](../media/continuous-integration-image-9.png#lightbox)
+    
+    > [!div class="mx-imgBorder"]  
+    > [![Data Factory Prod Deployment](../media/continuous-integration-image-9.png)](../media/continuous-integration-image-9.png#lightbox)
 
 1.  Save the release pipeline.
 
@@ -129,8 +130,8 @@ There are two ways to handle secrets:
     1.  On the **Tasks** tab, create a new task. Search for **Azure Key Vault** and add it.
 
     1.  In the Key Vault task, select the subscription in which you created the key vault. Provide credentials if necessary, and then select the key vault.
-
-    [![Add a Key Vault task](../media/continuous-integration-image-8.png)](../media/continuous-integration-image-8.png#lightbox)
+    > [!div class="mx-imgBorder"]  
+    > [![Add a Key Vault task](../media/continuous-integration-image-8.png)](../media/continuous-integration-image-8.png#lightbox)
 
 #### Grant permissions to the Azure Pipelines agent
 
@@ -254,7 +255,7 @@ If you're using Git integration with your data factory and have a CI/CD pipeline
 
 -   **Git integration**. Configure only your development data factory with Git integration. Changes to test and production are deployed via CI/CD and don't need Git integration.
 
--   **Pre- and post-deployment script**. Before the Resource Manager deployment step in CI/CD, you need to complete certain tasks, like stopping and restarting triggers and performing cleanup. We recommend that you use PowerShell scripts before and after the deployment task. The data factory team has provided a script to use located in the ADF CI/CD documentation page. 
+-   **Pre- and post-deployment script**. Before the Resource Manager deployment step in CI/CD, you need to complete certain tasks, like stopping and restarting triggers and performing cleanup. We recommend that you use PowerShell scripts before and after the deployment task. The data factory team has provided a script to use located in the Azure Data Factory CI/CD documentation page. 
 
 -   **Integration runtimes and sharing**. Integration runtimes don't change often and are similar across all stages in your CI/CD. So Data Factory expects you to have the same name and type of integration runtime across all stages of CI/CD. If you want to share integration runtimes across all stages, consider using a ternary factory just to contain the shared integration runtimes. You can use this shared factory in all of your environments as a linked integration runtime type.
 

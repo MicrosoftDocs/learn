@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-create-ui-decentralized-apps.2-learn-dapps
+metadata:
+  title: Learn about dapps
+  description: Understand the importance of dapps for the Ethereum blockchain
+  ms.date: 11/30/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about dapps
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-learn-dapps.md)]

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-stack.6-azure-stack-portfolio
+metadata:
+  title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+  description: In this unit you'll review the similarities and differences of Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge.
+  ms.date: 12/09/2020
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Compare Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-azure-stack-portfolio.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the minimum number of nodes in the Azure Stack HCI?"
+    choices:
+    - content: "2"
+      isCorrect: true
+      explanation: "That's correct. You can deploy an Azure Stack HCI with two nodes."
+    - content: "1"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack HCI requires at least 2 nodes."
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. You can deploy an Azure Stack HCI with two nodes."
+
+  - content: "Which of the Azure Stack products supports multi-tenancy and tenant isolation?"
+    choices:
+    - content: "Azure Stack HCI"
+      isCorrect: false
+      explanation: "That's incorrect. While you can configure multi-tenancy in Azure Stack HCI, it is not available by default."
+    - content: "Azure Stack Edge"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Stack Edge doesn't support multi-tenancy."
+    - content: "Azure Stack Hub"
+      isCorrect: true
+      explanation: "That's correct. Azure Stack Hub is the only Azure Stack Hub product that supports built-in multi-tenancy and tenant isolation."

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: introduction-azure-private-link
+metadata:
+  title: "Introduction to Azure Private Link"
+  description: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Private Link"
+summary: Describe how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Explain how Azure Private Link, Azure Private Endpoint, and Azure Private Link service work together to create private connections to Azure resources. 
+  - Evaluate whether Azure Private Link is appropriate for giving your employees, vendors, and customers private access to your Azure services. 
+  - Identify and describe use cases for Azure Private Link. 
+prerequisites: |
+  To get the best learning experience from this module, you should have: 
+  - Beginner-level knowledge of Azure, including regions, Azure virtual networks, and ExpressRoute. 
+  - Beginner-level knowledge of networking, including IP addresses and virtual private networks. 
+  - Beginner-level knowledge of cloud computing, including platform as a service (PaaS).
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure-private-link
+units:
+- learn.introduction-azure-private-link.1-introduction
+- learn.introduction-azure-private-link.2-what-is-azure-private-link
+- learn.introduction-azure-private-link.3-how-azure-private-link-works
+- learn.introduction-azure-private-link.4-when-to-use-azure-private-link
+- learn.introduction-azure-private-link.5-knowledge-check
+- learn.introduction-azure-private-link.6-summary
+badge:
+  uid: learn.introduction-azure-private-link.badge

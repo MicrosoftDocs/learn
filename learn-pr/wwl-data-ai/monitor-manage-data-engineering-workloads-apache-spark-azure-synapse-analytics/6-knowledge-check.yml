@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the possible ways to optimize a Spark Job?"
+    choices:
+    - content: "Remove all nodes."
+      isCorrect: false
+      explanation: "InCorrect. Incorrect, out of the options bucketing is the right answer, the way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
+    - content: "Remove the Spark Pool."
+      isCorrect: false
+      explanation: "Incorrect, out of the options bucketing is the right answer, the way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
+    - content: "Use bucketing."
+      isCorrect: true
+      explanation: "Correct, The way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
+  - content: "What can cause a slower performance on join or shuffle jobs?"
+    choices:
+    - content: "Data skew."
+      isCorrect: true
+      explanation: "Correct. Due to asymmetry in your job data."
+    - content: "Enablement of autoscaling"
+      isCorrect: false
+      explanation: "Incorrect. When you enable autoscale, you can set a minimum and maximum number of nodes in order to control the scale that you'd like, such that you have flexibility in the number of nodes. It does not relate to performance issues on join or shuffle jobs."
+    - content: "Bucketing."
+      isCorrect: false
+      explanation: "Incorrect. A way to look into slower performance with joins or shuffle jobs is to look into bucketing. The introduction of a bucket column and pre-aggregate in buckets first might help the performance."

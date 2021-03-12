@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What do container-based environments use an orchestrator to do?"
+    choices:
+    - content: "Limit the types of applications the environment can support."
+      isCorrect: false
+      explanation: "That's incorrect. An orchestrator diversifies, rather than limits, the types of applications an environment can support."
+    - content: "Automate and manage large numbers of containers and control how the containers interact with one another."
+      isCorrect: true
+      explanation: "That's correct. Container-based environments can use an orchestrator to automate and manage large numbers of containers and control how the containers interact with one another."
+    - content: "Create and manage Azure resources including Kubernetes clusters."
+      isCorrect: false
+      explanation: "That's incorrect. Azure CLI provides a set of commands that are used to create and manage Azure resources including the Kubernetes clusters."
+  - content: "A Kubernetes cluster contains at least one master node and which of the following?"
+    choices:
+    - content: "kubectl"
+      isCorrect: false
+      explanation: "That's incorrect. kubectl is a management tool that provides a CLI for connecting to the control plane of a Kubernetes cluster."
+    - content: "One or more worker nodes"
+      isCorrect: true
+      explanation: "That's correct. A Kubernetes cluster contains at least one master node and one or more Linux or Windows-based worker nodes."
+    - content: "kubeadm"
+      isCorrect: false
+      explanation: "That's incorrect. kubeadm is a set of tools for creating a Kubernetes cluster quickly and with minimum features and addons."
+  - content: "Which of the following statements is correct?"
+    choices:
+    - content: "Azure Arc is only suitable for clusters in edge environments."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Arc can connect to clusters on-premises, in multiple-clouds, and edge environments."
+    - content: "The Azure Monitor service isn't available to clusters in Azure Arc."
+      isCorrect: false
+      explanation: "That's incorrect. With Azure Arc, Azure Monitor for containers can be used to monitor your clusters."
+    - content: "Azure Arc connects your Kubernetes clusters with Azure so you can manage your clusters."
+      isCorrect: true
+      explanation: "That's correct. Azure Arc connects your Kubernetes clusters with Azure so you can manage your clusters."

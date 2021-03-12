@@ -35,7 +35,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
     || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
-    |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**.       |
+    |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
 
 1. Select **Next: Networking**.  
 
@@ -43,19 +43,19 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. Select **Next: Additional settings**.
 
-1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, select **Sample**.  
+1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
 
-1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Azure Defender in a free trial. Select **Start free trial**.
+1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Azure Defender for SQL** in a free trial. Select **Start free trial**.
 
     After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
 
-1. Select **Review + create**. Here you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
+1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
 1. You're redirected to a pane where you can monitor the status of your deployment. You can also go to your resource group and select **Deployments** to open this same pane. It gives you the various deployments, their status, and more information. This deployment typically takes less than five minutes to deploy.  
 
     :::image type="content" source="../media/3-deployment-underway-2.png" alt-text="Screenshot of resources being deployed.":::
 
-1. Select **Go to resource**.
+1. When your deployment is complete, select **Go to resource**.
 
     :::image type="content" source="../media/3-deployment-underway-3.png" alt-text="Screenshot that shows deployment is complete.":::
 
@@ -89,7 +89,7 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     Change the authentication to **SQL Server Authentication**. Then enter the corresponding server admin login and password (the one you provided during deployment in the previous exercise).  
 
-    Select **Remember password** > **Connect**.  
+    Select **Remember password**, and then select **Connect**.  
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does, you'll get a pop-up message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  

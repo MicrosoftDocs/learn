@@ -23,7 +23,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 ## Deploy the web applications
 
-1. Run this command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region.
+1. Run this command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region. Be patient as the deployment may take a few minutes.
 
     ```azurecli
     az deployment group create \
@@ -68,7 +68,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     The code gets the resource IDs from both virtual machines. Then, the code uses the IDs to add them as endpoints to the Traffic Manager profile. The code uses the `--priority` flag to set the West US app to the highest priority.
 
-1. Let's take a quick look at the endpoints we configured.
+1. Let's take a quick look at the endpoints we configured. Run this command.
 
     ```azurecli
     az network traffic-manager endpoint list \
@@ -79,9 +79,9 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 ## Test the app
 
-1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. The following commands display the IP addresses for each of the resources we've created.
+1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. Run the following commands to display the IP addresses for each of the resources we've created.
 
-    ```bash
+    ```azurecli
     # Retrieve the address for the West US 2 web app
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
@@ -104,9 +104,9 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     The address for the Traffic Manager profile should match the IP address for the **westus2-vm-nic-pip** public IP assigned to the **westus2-vm** virtual machine.
 
-1. Go to the Traffic Manager profile's fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the highest priority.
+1. Run this command to go to the Traffic Manager profile's fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the highest priority.
 
-    ```bash
+    ```azurecli
     echo http://$(az network traffic-manager profile show \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Priority \
@@ -120,9 +120,9 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     :::image type="content" source="../media/3-west-us-app.png" alt-text="Screenshot of the running West US web app." loc-scope="other"::: <!-- no-loc -->
 
-1. Disable the primary endpoint.
+1. Run this command to disable the primary endpoint.
 
-    ```bash
+    ```azurecli
     az network traffic-manager endpoint update \
         --resource-group <rgn>Sandbox resource group </rgn>  \
         --name "Primary-WestUS" \
@@ -131,19 +131,19 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --endpoint-status Disabled
     ```
 
-1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile.
+1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile. Run these commands.
 
-    ```bash
-    # Retrieve the address for the East Asia web app
+    ```azurecli
+    # Retrieve the address for the West US 2 web app
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
-    # Retrieve the address for the West US 2 web app
+    # Retrieve the address for the East Asia web app
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
-                --name eastasia-vm-nic-pip \
+                --name eastasia-vm-nic-pip \ 
                 --query dnsSettings.fqdn \
                 --output tsv)
     # Retrieve the address for the Traffic Manager profile

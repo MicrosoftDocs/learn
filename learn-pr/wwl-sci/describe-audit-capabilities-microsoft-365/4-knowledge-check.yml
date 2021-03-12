@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-audit-capabilities-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A team that collaborates on a project through Microsoft Teams reports that they're unable to use features that they were using last week. The admin will investigate whether a user might have changed settings in Microsoft Teams. What capability can the admin use?"
+    choices:
+    - content: "Turn on Microsoft Teams settings search and ensure you've been assigned the appropriate role to perform the search."
+      isCorrect: false
+      explanation: "Not a valid option in Teams. Instead, you need to turn on audit log search, and ensure that you've been assigned the appropriate role to perform the search."
+    - content: "Verify that Auditing is enabled and ensure that you've been assigned the appropriate role to perform the search."
+      isCorrect: true
+      explanation: "The results of the audit log search will help you figure out whether a user might have been responsible."
+    - content: "Block Microsoft Teams from being used and ensure that you've been assigned the appropriate role to perform the search."
+      isCorrect: false
+      explanation: "Doesn't address the problem. You need to turn on audit log search and ensure that you've been assigned the appropriate role to perform the search."
+  - content: "The audit team needs to conduct compliance investigations across emails. They need access to crucial events, such as when mail items were accessed, when mail items were replied to and forwarded. What capability can the team use?"
+    choices:
+    - content: "Use Advanced Auditing so that you access and investigate those events."
+      isCorrect: true
+      explanation: "Advanced Auditing helps organizations to conduct forensic and compliance investigations by providing access to these crucial events."
+    - content: "Use Core Auditing so that you can access and investigate those events."
+      isCorrect: false
+      explanation: "You won't be able to access crucial events with Core Auditing. Instead, use Advanced Auditing to access crucial events."
+    - content: "Use alert policies to generate and view alerts on when users perform certain actions on emails."
+      isCorrect: false
+      explanation: "While alerts are helpful, this doesn’t address the problem. Instead, use Advanced Auditing to access crucial events."

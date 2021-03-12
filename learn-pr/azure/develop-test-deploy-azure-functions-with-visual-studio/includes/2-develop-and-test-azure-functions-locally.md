@@ -1,26 +1,28 @@
 You can write, debug, and deploy an Azure Function from within the Azure portal. However, there are many scenarios when writing functions directly in the production, staging, or test environments might not be suitable. For example, you could be writing automated unit tests for Azure Functions, or using on-demand deployment of Azure Functions to Azure Function Apps in Azure. Additionally, many developers prefer to use their favorite code editor and development tools rather than the environment provided by the Azure portal. Developing functions with Visual Studio enables you to manage Azure Functions code with code of other services inside the same projects.
 
-In the luxury watch online website scenario, the developers are already familiar with Visual Studio. So, you decide to use Visual Studio as the primary development environment for creating Azure Functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
+In the luxury watch online website scenario, the developers are already familiar with Visual Studio 2019 (hereafter referred to as Visual Studio). So, you decide to use Visual Studio as the primary development environment for creating Azure Functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
 
 In this unit, you'll learn about the tools available with Visual Studio for building Azure Functions. To build and test an Azure Function locally, you'll see how to install these tools, and use them.
 
-## Install the Azure Functions tools extension for Visual Studio
+## Modify Visual Studio Install
 
-The Azure Functions tools are a Visual Studio extension that enable you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Functions app, this extension provides a template that you can use. You can then deploy an Azure Function directly to Azure from Visual Studio.
+Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.** The **Modifying - Visual Studio** page appears.
 
-To install the Azure Functions tools, in Visual Studio, in the **Tools** menu, navigate to the **Extensions and Updates** command. Search for **Azure Functions**, and then download and install the **Azure Functions and Web Job Tools** extension.
+:::image type="content" source="../media/2-visual-studio-installer-modify.png" alt-text="Screenshot of the Visual Studio Installer page with Modify button." loc-scope="vs":::
 
-:::image type="content" source="../media/2-azure-functions-and-web-jobs-extension.png" alt-text="Screenshot of the Extensions and Updates search page with the Azure Functions and Web Jobs Tools extension highlighted." loc-scope="vs":::
+The **Modifying - Visual Studio** page appears. Under the **Workloads** tab, select the **ASP.NET and Web development** and **Azure development** boxes, and then select **Modify**.
 
-## Create an Azure Functions app
+:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio Modifying page with Workloads tab." loc-scope="vs":::
 
-When you've installed the extension, you create an Azure Functions app using the **Azure Functions** template. You'll find this template in the **Cloud** folder, under **Visual C#**, in the **New Project** dialog.
+## Azure Functions Tools extension for Visual Studio
 
-:::image type="content" source="../media/2-create-project.png" alt-text="Screenshot of the New Project dialog box with the Azure Functions template highlighted." loc-scope="vs":::
+The Azure Functions Tools are a Visual Studio extension that enable you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Function App, this extension provides a template that you can use. You can then deploy an Azure Function directly to Azure from Visual Studio. The **Azure Functions and Web Jobs Tools** extension is included in Visual Studio 2019.
 
-An Azure Function app hosts one or more Azure Functions. It provides the environment and runtime for the functions.
+## Azure Function App
 
-An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your function app. The events available include:
+An Azure Function App hosts one or more Azure Functions. It provides the environment and runtime for the functions.
+
+An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your Azure Function App. The events available include:
 
 - **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
 - **Event Hub trigger**. An Event Hub trigger runs the function when an Event Hub receives a message.
@@ -33,9 +35,9 @@ An Azure Function is triggered by an event rather than being called directly fro
 
 :::image type="content" source="../media/2-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
-Azure currently provides two versions of the runtime environment required to run Azure Functions. Version 1 (v1) uses the .NET Framework 4.7; version 2 (v2x) runs using .NET Core 2; version 3  (v3x) contains JavaScript and .NET changes. Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
+Azure currently provides three versions of the runtime environment required to run Azure Functions. Version 1 (v1) uses the .NET Framework 4.7; version 2 (v2x) runs using .NET Core 2; version 3  (v3x) contains JavaScript and .NET changes. Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
 
-An Azure Function app stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
+An Azure Function App stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
 
 An Azure Function can perform privileges or sensitive operations. An Azure Function triggered by an HTTP request could be exposed publicly. You might need to limit the ability to run this function to selected groups of users. You protect an Azure Function by specifying the access rights required to trigger the function. An Azure Function triggered by an HTTP request supports three levels of access rights:
 
@@ -95,9 +97,9 @@ In all cases, an Azure Function is passed an *ILogger* parameter. The function c
 
 An Azure Function also contains metadata that specify the type of the trigger and any other specific information and security requirements. You can modify this metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes the function is an identifier for the function used by the function app. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
 
-## Test an Azure Functions app locally
+## Test an Azure Function App locally
 
-You can use the Visual Debugger to build and test the Functions App locally. Press *F5*, or on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting the *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
+You can use the Visual Debugger to build and test the Azure Function App locally. Press <kbd>F5</kbd>, or on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting the *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
 
 ![Screenshot showing the Azure Function Runtime](../media/2-function-runtime.png)
 

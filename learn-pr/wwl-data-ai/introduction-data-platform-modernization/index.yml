@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-data-platform-modernization
+metadata:
+  title: Introduction to data platform modernization
+  description: "Introduction to data platform modernization"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to data platform modernization
+summary: In this module, you'll learn what the purpose of data platform modernization and see the benefits it can bring to your organization.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Explain what data platform modernization is
+  - Review the stages of a data migration
+  - Recommend when to use an Azure data platform technology
+  - Explore the cost savings of moving your SQL workloads to Azure
+prerequisites: |
+  The following prerequisites should be completed:
+  * Understand on-premises SQL Server Databases
+  * Understand your current workloads
+iconUrl: /learn/achievements/introduction-to-data-platform-modernization.svg
+levels:
+- beginner
+roles:
+- administrator
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+- azure-synapse-analytics
+units:
+- learn.wwl.introduction-data-platform-modernization.introduction
+- learn.wwl.introduction-data-platform-modernization.2-understand-data-platform-modernization
+- learn.wwl.introduction-data-platform-modernization.3-understand-stages-migration
+- learn.wwl.introduction-data-platform-modernization.4-data-migration-technologies
+- learn.wwl.introduction-data-platform-modernization.5-exercise-compare-onpremises-azure-costs
+- learn.wwl.introduction-data-platform-modernization.6-summary
+badge:
+  uid: learn.wwl.introduction-data-platform-modernization.badge

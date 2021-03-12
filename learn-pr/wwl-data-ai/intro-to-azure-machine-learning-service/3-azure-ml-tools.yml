@@ -3,8 +3,8 @@ uid: learn.data-ai.intro-to-azure-machine-learning-service.azure-ml-tools
 title: Azure Machine Learning tools and interfaces
 metadata:
   title: Azure Machine Learning tools and interfaces
-  description: "Learn how to use tools and programmatic interfaces to work with Azure Machine Learning"
-  ms.date: 10/29/2020
+  description: "Azure Machine Learning tools and interfaces"
+  ms.date: 12/04/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

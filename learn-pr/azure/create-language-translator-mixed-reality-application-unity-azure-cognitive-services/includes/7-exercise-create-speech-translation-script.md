@@ -1,4 +1,4 @@
-In Unity, displaying the result from an API integration within a Mixed Reality app requires adding and configuring UI elements to the scene. To display speech translation from the Azure Cognitive Services Speech Translation service, you must add a quad, text, and a button to the scene and assign them to their respective properties in the corresponding C# script. Also, your Azure credentials must be validated to use the Speech service.
+In Unity, displaying the result from an API integration within a mixed reality app requires adding and configuring UI elements to the scene. To display speech translation from the Azure Cognitive Services Speech Translation service, you must add a quad, text, and a button to the scene and assign them to their respective properties in the corresponding C# script. Also, your Azure credentials must be validated to use the Speech service.
 
 Here, you'll add Mixed Reality Toolkit (MRTK) UI elements to a Unity scene. You'll then create a script that uses the Cognitive Services Speech SDK for translation.
 

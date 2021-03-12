@@ -6,15 +6,17 @@ In this unit, you'll see how to use the `xUnit` test framework with Visual Studi
 
 ## Create a unit test project
 
-The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure functions app. Use the following steps to create a unit test project for testing the *WatchInfo* function.
+The first step is to create a project that contains your unit tests, and add it to the solution holding your Azure Function App. Use the following steps to create a unit test project for testing the *WatchInfo* function.
 
 1. In Visual Studio, in the **Solution Explorer** window, right-click the **WatchPortalFunction** solution, select **Add**, and then select **New Project**.
 
     :::image type="content" source="../media/6-add-new-project-to-solution.png" alt-text="Screenshot of Solution Explorer, showing the Add new project to solution command." loc-scope="vs":::
 
-1. In the **Add New Project** dialog, under **Visual C#**, select **Test**. Select the **xUnit Test Project (.NET Core)** template. Specify the name **WatchFunctionsTests**, and then select **OK**.
+1. In the **Add a new project** window, scroll down, select the **xUnit Test Project (.NET Core)** template, and then select **Next**.
 
-    :::image type="content" source="../media/6-create-xunit-project.png" alt-text="Screenshot of Add New Project dialog box. The user has selected the xUnit Test Project template." loc-scope="vs":::
+    :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project window. The user has selected the xUnit Test Project template." loc-scope="vs":::
+
+1. The **Configure your new project** window appears. In the **Project name** field, enter **WatchFunctionsTests**. Aside the **Location** field, select the browse icon, and then select **WatchPortalFunction**. Select **Create.**
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
 
@@ -56,7 +58,6 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
 1. In the body of the **TestWatchFunctionSuccess** method, add the following code. This statement creates a mock HTTP context and an HTTP request. The request includes a query string that includes the `model` parameter, which is set to `abc`.
 
     ```csharp
-    var httpContext = new DefaultHttpContext();
     var queryStringValue = "abc";
     var request = new DefaultHttpRequest(new DefaultHttpContext())
     {
@@ -83,7 +84,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     response.Wait();
     ```
 
-1. Add the following code to the method. This code checks that the response from the Azure function is correct. In this case, the function should return an *OK* response, containing the expected body data.
+1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected body data.
 
     ```csharp
     // Check that the response is an "OK" response
@@ -91,18 +92,17 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
 
     // Check that the contents of the response are the expected contents
     var result = (OkObjectResult)response.Result;
-    dynamic watchinfo = new { Manufacturer = "Abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
+    dynamic watchinfo = new { Manufacturer = "abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
     string watchInfo = $"Watch Details: {watchinfo.Manufacturer}, {watchinfo.CaseType}, {watchinfo.Bezel}, {watchinfo.Dial}, {watchinfo.CaseFinish}, {watchinfo.Jewels}";
     Assert.Equal(watchInfo, result.Value);
     ```
 
-    The complete method should look like this:
+    The complete method should look like the following.
   
     ```csharp
     [Fact]
     public void TestWatchFunctionSuccess()
     {
-        var httpContext = new DefaultHttpContext();
         var queryStringValue = "abc";
         var request = new DefaultHttpRequest(new DefaultHttpContext())
         {
@@ -125,7 +125,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
 
         // Check that the contents of the response are the expected contents
         var result = (OkObjectResult)response.Result;
-        dynamic watchinfo = new { Manufacturer = "Abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
+        dynamic watchinfo = new { Manufacturer = "abc", CaseType = "Solid", Bezel = "Titanium", Dial = "Roman", CaseFinish = "Silver", Jewels = 15 };
         string watchInfo = $"Watch Details: {watchinfo.Manufacturer}, {watchinfo.CaseType}, {watchinfo.Bezel}, {watchinfo.Dial}, {watchinfo.CaseFinish}, {watchinfo.Jewels}";
         Assert.Equal(watchInfo, result.Value);
     }
@@ -137,7 +137,6 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     [Fact]
     public void TestWatchFunctionFailureNoQueryString()
     {
-        var httpContext = new DefaultHttpContext();
         var request = new DefaultHttpRequest(new DefaultHttpContext());
         var logger = NullLoggerFactory.Instance.CreateLogger("Null Logger");
 
@@ -155,7 +154,6 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     [Fact]
     public void TestWatchFunctionFailureNoModel()
     {
-        var httpContext = new DefaultHttpContext();
         var queryStringValue = "abc";
         var request = new DefaultHttpRequest(new DefaultHttpContext())
         {
@@ -184,7 +182,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
 
 ## Run the tests
 
-1. On the **Test** menu, select **Run**, and then select **All Tests**.
+1. On the **Test** menu, select **Run All Tests**.
 
     :::image type="content" source="../media/6-start-tests.png" alt-text="Screenshot of the Test menu in Visual Studio. The user has selected Run -> All Tests." loc-scope="vs":::
 
@@ -201,7 +199,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     string model = req.Query["model"];
     ```
 
-1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code:
+1. Change the statement that sets the `model` variable as follows. This change simulates the developer making a mistake in the code.
 
     ```csharp
     string model = req.Query["modelll"];

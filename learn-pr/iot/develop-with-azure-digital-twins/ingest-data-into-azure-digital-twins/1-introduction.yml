@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.ingest-data-into-azure-digital-twins.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: To learn the different ways of ingesting data, set up Azure Digital Twins, IoT Hub, Functions, and Logic Apps.
+  ms.date: 10/30/2020
+  author: teodelas
+  ms.author: teodelas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,4 +1,9 @@
+Once you've migrated your database from on-premises to Azure, you need to update your existing applications so that they can access the PostgreSQL in its new location. 
+
 Your original on-premises server and database will contain roles that define the privileges associated with users, the operations they can do, and the objects they perform these operations over. Azure Database for PostgreSQL uses the same authentication and authorization mechanisms as PostgreSQL running on-premises.
+
+In this unit, you'll explore the updates you need to make to your applications to connect to your newly migrated Azure Database for PostgreSQL.
+## Create the user roles manually
 
 When you transfer a PostgreSQL database to Azure Database for PostgreSQL using the Azure Database Migration Service, the roles and role assignments aren't copied. You must manually recreate the necessary roles and user accounts for the administrator and users of the tables in the target database. You use the psql or pgAdmin utilities to do these tasks. Run the `CREATE ROLE` command. You use the `GRANT` command to assign the necessary privileges to a role. For example:
 

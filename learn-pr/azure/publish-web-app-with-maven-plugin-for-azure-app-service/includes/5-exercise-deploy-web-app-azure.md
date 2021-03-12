@@ -4,21 +4,28 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 ## Add the `azure-webapp-maven-plugin` plugin to your project
 
-1. Use `code` to edit the `pom.xml` file.
+1. Use the `azure-webapp-maven-plugin` to add the plugin and configuration settings interactively to your Maven `pom.xml` file:
 
     ```bash
     cd ~/MyWebApp
-    code pom.xml
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
     ```
+    
+    Enter the following values for each of the interactive prompts:
 
-1. Add the `azure-webapp-maven-plugin` plugin XML inside the closing `</plugins>` tag.
+    | Prompt | Value |
+    |---|---|
+    | **Define value for OS** | _Enter the corresponding number for **Linux**_ |
+    | **Define value for javaVersion** | _Enter the corresponding number for **Java 8**_ |
+    | **Define value for runtimeStack** | _Enter the corresponding number for **TOMCAT 8.5**_ |
+    | **Confirm (Y/N)** | _Enter **Y**_ |
 
-    ```xml
-    <plugin>
-      <groupId>com.microsoft.azure</groupId>
-      <artifactId>azure-webapp-maven-plugin</artifactId>
-      <version>1.9.0</version>
-    </plugin>
+    The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.
+
+1. You can use `code` to verify and edit the `pom.xml` file.
+
+    ```bash
+    code pom.xml
     ```
 
 1. The `<build>` section of your `pom.xml` file should resemble the following example.
@@ -39,34 +46,17 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
         <plugin>
           <groupId>com.microsoft.azure</groupId>
           <artifactId>azure-webapp-maven-plugin</artifactId>
-          <version>1.9.0</version>
-        </plugin>
-      </plugins>
-    </build>
+          <version>1.12.0</version>
+          <configuration>
+            <schemaVersion>v2</schemaVersion>
+            ...
     ```
 
 1. Save your changes by typing <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 
 1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-## Configure the App Service for your project
-
-1. Use the `azure-webapp-maven-plugin` to add configuration settings interactively to your Maven `pom.xml` file:
-
-    ```bash
-    mvn azure-webapp:config
-    ```
-
-    Enter the following values for each of the interactive prompts:
-
-    | Prompt | Value |
-    |---|---|
-    | **Define value for OS** | _Enter the corresponding number for **Linux**_ |
-    | **Define value for javaVersion** | _Enter the corresponding number for **Java 8**_ |
-    | **Define value for runtimeStack** | _Enter the corresponding number for **TOMCAT 8.5**_ |
-    | **Confirm (Y/N)** | _Enter **Y**_ |
-
-    The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.
+## Configure the plugin to use sandbox resource group
 
 1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command.
 
@@ -101,7 +91,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 1. Use Maven to build and deploy your web app to Azure App Service.
 
     ```bash
-    mvn azure-webapp:deploy
+    mvn package azure-webapp:deploy
     ```
 
     Maven displays a series of build messages, and the final message should indicate successful deployment to Azure.

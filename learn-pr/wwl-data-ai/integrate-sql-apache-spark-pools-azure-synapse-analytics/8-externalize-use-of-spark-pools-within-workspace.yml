@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.externalize-use-of-spark-pools-within-workspace
+title: Externalize the use of spark pools within Azure Synapse Workspace
+metadata:
+  title: Externalize the use of spark pools within Azure Synapse Workspace
+  description: "Externalize the use of spark pools within Azure Synapse Workspace"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-externalize-use-of-spark-pools-within-workspace.md)]

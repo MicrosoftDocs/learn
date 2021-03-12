@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.understand-use-cases-for-sql-integration
+title: Understand the use-cases for SQL and spark pools integration
+metadata:
+  title: Understand the use-cases for SQL and spark pools integration
+  description: "Understand the use-cases for SQL and spark pools integration"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-use-cases-for-sql-integration.md)]

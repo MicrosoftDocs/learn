@@ -3,9 +3,9 @@ uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
   description: "Protect data in-transit and at rest"
-  ms.date: 10/14/2020
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect data in-transit and at rest
@@ -40,6 +40,7 @@ units:
 - learn.wwl.protect-data-transit-at-rest.describe-role-of-azure-key-vault-transparent-data-encryption
 - learn.wwl.protect-data-transit-at-rest.explain-object-encryption-secure-enclaves
 - learn.wwl.protect-data-transit-at-rest.explain-dynamic-data-masking
+- learn.wwl.protect-data-transit-at-rest.exercise-configure-azure-sql-database-firewall
 - learn.wwl.protect-data-transit-at-rest.knowledge-check
 - learn.wwl.protect-data-transit-at-rest.summary
 badge:

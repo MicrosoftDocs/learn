@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.manage-concurrent-access-to
+title: Manage concurrent access to Azure Synapse Analytics
+metadata:
+  title: Manage concurrent access to Azure Synapse Analytics
+  description: "Manage concurrent access to Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-manage-concurrent-access.md)]

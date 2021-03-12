@@ -8,7 +8,7 @@ App logging has scale limitations, primarily because ***files*** are being used 
 
 The types of logging available through the Azure App Service depends on the code framework of the app, and on whether the app is running on a Windows or Linux app host.
 
-### ASP.NET Windows apps
+### ASP.NET
 
 ASP.NET apps only run on Windows app services. To log information to the app diagnostics log, use the `System.Diagnostics.Trace` class. There are four trace levels you can use, and these correlate with `error`, `warning`, `information`, and `verbose` logging levels shown in the Azure portal.
 
@@ -45,12 +45,13 @@ For script-based Web apps, such as Node.js apps on Windows or Linux, app logging
 
 Both types of message are written to the Azure app service error-level logs.
 
-### Logging differences for Windows and Linux hosts
+### Logging differences between Windows and Linux hosts
+
 To route messages to log files, Azure Web apps use the Web server (IIS process). Because Windows-based Web apps are a well-established Azure service, and messaging for ASP.NET apps is tightly integrated with the underlying IIS service, Windows apps benefit from a rich logging infrastructure. For other apps, logging options may be limited by the development platform, even when running on a Windows app service.
 
 The logging functionality available to Linux-based scripted apps, such as Node, is determined by the Docker image used for the app's container. Basic logging, using redirections to STDERR or STDOUT, uses the Docker logs. Richer logging functionality is dependent on the underlying image, such as whether this is running PHP, Perl, Ruby, and so on. To download equivalent Web application logging as provided by IIS for Windows apps, may require connecting to your container using SSH.
 
-This table summarizes the logging support for common app environments and hosts.
+The following table summarizes the logging support for common app environments and hosts.
 
 | App environment | Host    | Log levels                                             | Save location             |
 | --------------- | ------- | ------------------------------------------------------ | ------------------------- |
@@ -73,7 +74,6 @@ In the portal, app logging is managed from the Diagnostics logs pane of the web 
 
 ![Screenshot of Diagnostics logs pane in the Azure portal.](../media/2-portal-diagnostics-logs-pane.png)
 
-
 To enable app logging to the Web app's file system, set **Application logging (Filesystem)** to **On**, and then set the **Level** to Error, Warning, Information, or Verbose. Logging to the file system will be automatically reset to Off after 12 hours.
 
 To enable app logging to a blob storage container, set **Application logging (Blob)** to **On**, and then select a storage account and container; the storage account and Web app must be created in the same Azure region. You then set the **Level** to Error, Warning, Information, or Verbose.
@@ -87,15 +87,15 @@ When logging to blob storage, you must also set a **Retention Period**. Unlike t
 
 After configuring the logs, select **Save**.
 
-## Enable logging using the Azure CLI 
+## Enable logging using the Azure CLI
 
-The current version of Azure CLI does not enable you to manage app logging to blob storage. To enable app logging to the file system, use this command.
+The current version of Azure CLI does not enable you to manage app logging to blob storage. To enable app logging to the file system, run this command.
 
-```
+```azurecli
 az webapp log config --application-logging true --level verbose --name <app-name> --resource-group <resource-group-name>
 ```
 
-For example, to enable logging to the file system for an app called **contosofashions123**, capturing all messages, use this command.
+For example, to enable logging to the file system for an app called **contosofashions123**, capturing all messages, run this command.
 
 ```azurecli
 az webapp log config --application-logging true --level verbose --name contosofashions123 --resource-group contosofashionsRG

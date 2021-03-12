@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.2-slices
+metadata:
+  title: Exercise - Explore slices
+  description: Learn about slices and how to use them in Go programs.
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Explore slices
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-slices.md)]

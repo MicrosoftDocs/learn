@@ -9,7 +9,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/6-use-the-mongodb-api-to-import-historical-order-data.md)]

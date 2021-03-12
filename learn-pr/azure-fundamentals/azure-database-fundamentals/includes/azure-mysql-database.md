@@ -18,7 +18,7 @@ Azure Database for MySQL delivers:
 - Automatic backups.
 - Enterprise-grade security and compliance.
 
-These capabilities require almost no administration, and all are provided at no additional cost. They allow you to focus on rapid app development and accelerating your time-to-market, rather than having to managing virtual machines and infrastructure. In addition, you can migrate your existing MySQL databases with minimal downtime by using the Azure Database Migration Service. After you have completed your migration, you can continue to develop your application with the open-source tools and platform of your choice. You don't have to learn new skills.
+These capabilities require almost no administration, and all are provided at no additional cost. They allow you to focus on rapid app development and accelerating your time-to-market, rather than having to manage virtual machines and infrastructure. In addition, you can migrate your existing MySQL databases with minimal downtime by using the Azure Database Migration Service. After you have completed your migration, you can continue to develop your application with the open-source tools and platform of your choice. You don't have to learn new skills.
 
 [![Diagram of Azure Database for MySQL.](../media/azure-db-for-mysql-conceptual-diagram.png)](../media/azure-db-for-mysql-conceptual-diagram-expanded.png#lightbox)
 

@@ -50,7 +50,7 @@ var blockBlobs = resultSegment.Results.OfType<CloudBlockBlob>();
 
 ## Exercise
 
-One of the features in your app requires getting a list of blobs from the API. You'll use the pattern previously shown to list all the blobs in our container. As you process the list, you get the name of each blob.
+1. One of the features in your app requires getting a list of blobs from the API. You'll use the pattern previously shown to list all the blobs in our container. As you process the list, you get the name of each blob.
 
 Using the editor, replace `GetNames` in `BlobStorage.cs` with the following code, and save your changes.
 

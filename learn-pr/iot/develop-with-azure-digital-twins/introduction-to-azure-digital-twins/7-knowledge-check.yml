@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-to-azure-digital-twins.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check that you understand the introduction to Azure Digital Twins.
+  ms.date: 11/4/2020
+  author: raniabayoumy
+  ms.author: bamut
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Digital twins is a good technology to represent equipment and processes, but it isn't suitable for representing people."
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. Some examples are passengers on a train, operators of equipment, and people involved in a manual step in a process.
+    - content: 'False'
+      isCorrect: true
+      explanation: Digital twin models can be used to represent people, especially where those people are crucial to the system being modeled. Some examples are passengers on a train, operators of equipment, and people involved in a manual step in a process.
+
+  - content: 'The primary focus of digital twins technology is the representation of smart spaces.'
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: Smart spaces were the focus of earlier digital twins technology, but feedback from the community shows it has far wider applications. Smart spaces are still a good use of the technology.
+    - content: 'False'
+      isCorrect: true
+      explanation: Smart spaces were the focus of earlier digital twins technology, but feedback from the community shows it has far wider applications. Smart spaces are still a good use of the technology.
+
+  - content: 'Azure Digital Twins uses role-based access control (RBAC) to provide security.'
+    choices:     
+    - content: 'True'
+      isCorrect: true
+      explanation: Azure Digital Twins uses the RBAC back-end service, the same service that other Azure services use.
+    - content: 'False'
+      isCorrect: false
+      explanation: Azure Digital Twins uses the RBAC back-end service, the same service that other Azure services use.
+
+  - content: 'What are the connections between Azure Digital Twins models known as?'
+    choices:     
+    - content: 'Verbs'
+      isCorrect: false
+      explanation: Close. Thinking of the connections as verbs can be a valuable thing to do, although the technical name for the connections isn't verbs.
+    - content: 'Relationships'
+      isCorrect: true
+      explanation: Think of the models as nouns in a description of your world and the relationships as verbs. 
+    - content: 'Connections'
+      isCorrect: false
+      explanation: Good guess, but the connections have a more specific name!
+    - content: 'Telemetry'
+      isCorrect: false
+      explanation: Telemetry is the stream of values pouring out of a sensor device, and possibly into Azure IoT Hub.
+ 
+
+  - content: "After you create a knowledge graph of your digital twin models and connect the models with relationships, what's the best method of gaining insights into the future of your business?"
+    choices: 
+    - content: 'A. Connect the telemetry output from Azure IoT Hub, via event routes, to the knowledge graph.'
+      isCorrect: false
+      explanation: Connecting live telemetry will certainly bring your knowledge graph to life, but you'll need to use another technology to gain insights.
+    - content: 'B. Store the Azure Digital Twins data in Azure Data Lake.'
+      isCorrect: false
+      explanation: Storing the data in a data lake makes good sense for archiving the data, but doesn't on its own provide insights.
+    - content: 'C. Analyze the digital twins data with Azure Time Series Insights.'
+      isCorrect: false
+      explanation: Time Series Insights will give you insights, as the name suggests. But it might not give the best results on its own.
+    - content: 'D. Extract insights from the live execution environment by using the Azure Digital Twins powerful query API.'
+      isCorrect: false
+      explanation: The Query API will give you valuable insights. Is there a better possibility?
+    - content: 'E. Use a combination of A (live telemetry), C (Time Series Insights), and D (the query API).'
+      isCorrect: true
+      explanation: Using this combination will give you the life and integrity of real data, the analysis of Time Series Insights, and the feedback from knowledge graph queries. A powerful combination!
+
+  - content: 'What language is used to create each digital twin model?'
+    choices: 
+    - content: 'C#'
+      isCorrect: false
+      explanation: C# might be used to write a client app for digital twins, but it isn't the language used to create a model.
+    - content: 'SQL'
+      isCorrect: false
+      explanation: The digital twin query language is SQL-like, but it isn't the language used to create a model.
+    - content: 'DTDL'
+      isCorrect: true
+      explanation: Models for Azure Digital Twins are defined by using the Digital Twins Definition Language (DTDL). DTDL is based on JSON-LD and is programming-language independent.
+    - content: 'IoT'
+      isCorrect: false
+      explanation: The Internet of Things (IoT) is a great companion technology to digital twins, but it isn't the technology used to create models.
+

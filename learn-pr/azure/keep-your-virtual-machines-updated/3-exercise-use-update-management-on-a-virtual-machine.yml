@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
   [!include[](includes/3-exercise-use-update-management-on-a-virtual-machine.md)]

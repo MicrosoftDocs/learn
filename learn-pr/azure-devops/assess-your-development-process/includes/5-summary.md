@@ -74,8 +74,6 @@ If you decide to try to write the migration code yourself, the following blog po
 
 [Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans/?azure-portal=true) are used to track manual testing for sprints and milestones. This allows you to track when that testing is complete.
 
-[Apache JMeter](https://docs.microsoft.com/azure/devops/test/load-test/get-started-jmeter-test?view=azure-devops&viewFallbackFrom=vsts&azure-portal=true) is open source software written in Java and designed to load test functional behavior and measure performance.
-
 [Pester](https://marketplace.visualstudio.com/items?itemName=richardfennellBM.BM-VSTS-PesterRunner-Task&azure-portal=true) is a tool that can be used to automate the testing of PowerShell code.
 
 [SoapUI](https://marketplace.visualstudio.com/items?itemName=AjeetChouksey.soapui&azure-portal=true) is another testing framework for SOAP and REST testing.

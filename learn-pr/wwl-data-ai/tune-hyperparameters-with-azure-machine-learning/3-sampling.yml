@@ -3,8 +3,8 @@ uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.configuring-samp
 title: Configuring sampling
 metadata:
   title: Configuring sampling
-  description: "Learn how to configure sampling for hyperparameter value selection."
-  ms.date: 07/16/2020
+  description: "Configuring sampling"
+  ms.date: 02/26/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

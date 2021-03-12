@@ -1,4 +1,4 @@
-In this unit, you'll use the Azure portal to verify your Event Hub is working according to the wanted expectations. You'll also test how Event Hub messaging works when it's temporarily unavailable and use Event Hubs metrics to check the performance of your Event Hub.
+In this unit, you'll use the Azure portal to verify your Event Hub is working according to expectations. You'll also test how Event Hub messaging works when it's temporarily unavailable, and use Event Hubs metrics to check the performance of your Event Hub.
 
 ## View Event Hub activity
 
@@ -14,9 +14,9 @@ In this unit, you'll use the Azure portal to verify your Event Hub is working ac
 
 ## Test Event Hub resilience
 
-Use the following steps to see what happens when an application sends messages to an Event Hub while it's temporarily unavailable.
+Perform the following steps to see what happens when an application sends messages to an Event Hub while it's temporarily unavailable.
 
-1. Resend messages to the Event Hub using the SimpleSend application. Use the following command:
+1. Resend messages to the Event Hub using the SimpleSend application. Run the following command.
 
     ```azurecli
     cd ~
@@ -24,21 +24,21 @@ Use the following steps to see what happens when an application sends messages t
     java -jar ./target/simplesend-1.0.0-jar-with-dependencies.jar
     ```
 
-1. When you see **Send Complete...**, press <kbd>ENTER</kbd>.
+1. When you see **Send Complete**, press <kbd>Enter</kbd>.
 
-1. Select your Event Hub in the **Overview** screen - this will show details specific to the Event Hub. You can also get to this screen through the **Event Hubs** entry from the namespace page.
+1. Select your Event Hub in the **Overview** screen - this will show details specific to the Event Hub. You can also get to this screen with the **Event Hubs** entry from the namespace page.
 
 1. Select **Settings** > **Properties**.
 
-1. Under Event Hub state, click **Disabled**. Save the changes.
+1. Under **EVENT HUB STATUS**, select **Disabled**. Save the changes.
 
     ![Disable Event Hub](../media/7-disable-event-hub.png)
 
     **Wait for a minimum of five minutes.**
 
-1. Click **Active** under Event Hub state to re-enable your Event Hub and save your changes.
+1. Select **Active** under Event Hub state to re-enable your Event Hub, and save your changes.
 
-1. Rerun the EventProcessorSample application to receive messages. Use the following command.
+1. Rerun the EventProcessorSample application to receive messages. Run the following command.
 
     ```azurecli
     cd ~
@@ -46,19 +46,19 @@ Use the following steps to see what happens when an application sends messages t
     java -jar ./target/eventprocessorsample-1.0.0-jar-with-dependencies.jar
     ```
 
-1. When messages stop being displayed to the console, press <kbd>ENTER</kbd>.
+1. When messages stop being appearing on the console, press <kbd>Enter</kbd>.
 
-1. Back in the Azure portal, go back to your Event Hub Namespace. If you're still on the Event Hub page, you can use the breadcrumb on the top of the screen to go backwards. Or you can search for the namespace and select it.
+1. Back in the Azure portal, go back to your Event Hub Namespace. If you're still on the Event Hub page, you can use the breadcrumb on the top of the screen to go backwards. Or you can search for the namespace, and select it.
 
-1. Click **MONITORING** > **Metrics (preview)**.
+1. Select **Monitoring** > **Metrics**.
 
     ![Screenshot showing the Event Hub Metrics with number of incoming and outgoing messages displayed.](../media/7-event-hub-metrics.png)
 
-1. From the **Metric** list, select **Incoming Messages** and click **Add Metric**.
+1. From the **Metric** list, select **Incoming Messages**, and then select **Add metric**.
 
-1. From the **Metric** list, select **Outgoing Messages** and click **Add Metric**.
+1. From the **Metric** list, select **Outgoing Messages**, and then select **Add metric**.
 
-1. At the top of the chart, click **Last 24 hours (Automatic)** to change the time period to **Last 30 minutes** to expand the data graph.
+1. At the top right of the chart, select **Last 24 hours (Automatic)** to change the time period to **Last 30 minutes** to expand the data graph.
 
 You'll see that though the messages were sent before the Event Hub was taken offline for a period, all 100 messages were successfully transmitted.
 

@@ -1,64 +1,26 @@
 You're a new developer at Tailwind Traders. Before you can start, you'll need to get your development environment configured. Don't worry, Tailwind Traders has made the onboarding process easy. There are just a few small steps you need to follow to get up and running.
 
-## Create the database
+## Scaffold the project resources
 
-1. Sign into the sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
+1. Sign into the Sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
 
-1. Copy the following command into the Sandbox, and to get the tenant ID for your sandbox subscription, press **Enter**.
+1. Copy the following line, and paste it into the Sandbox terminal to the right.
 
    ```bash
-   az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+   git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && ./mslearn-build-api-azure-functions/DB_SETUP/CREATE_DATABASE.sh
    ```
 
-1. In the sandbox, highlight the ID, and copy it to your clipboard.
+   This will create a new database with product data. This process can take up to 10 minutes. Feel free to continue on with the Learn Module. The process will continue to run even if you leave this page.
 
-## Set up Visual Studio Code
+## Clone the project in Visual Studio Code
 
 1. Open Visual Studio Code.
 
-1. In Visual Studio Code, to open settings, press <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>,</kbd>.
-
-1. Enter "azure tenant".
-
-1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
-
-    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of Visual Studio Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
-
-1. To open the Command Palette, press <kbd>F1</kbd>.
-
-1. Enter "select subscription".
-
-1. Select "Azure: Select Subscriptions".
-
-1. Select "Concierge Subscription" by checking the box next to it.
-
-   :::image type="content" source="../media/select-subscription.png" alt-text="Screenshot of Visual Studio Code Command Palette displaying available Azure Subscriptions to connect to." loc-scope="vs-code":::
-
-## Create the database
-
-1. To open the Command Palette, press <kbd>F1</kbd>.
-
-1. Enter "Cloud Shell", and select "Azure: Open Bash in Cloud Shell".
-
-    :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a Visual Studio Code terminal instance." loc-scope="vs-code":::
-
-1. Copy the following line, and paste it into the Cloud Shell terminal instance in Visual Studio Code.
-
-   ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
-   ```
-
-   This will create a new Azure Cosmos DB account, database, and collection populated with product data. This process can take up to 10 minutes. Feel free to continue with the Learn Module. Just make sure to keep the terminal instance open until the process is complete.
-
-## Clone the existing project
-
-Fortunately, someone has already written the front end part of the app. They have creatively named it, "Products Manager." All you need to do is create an API for it. First, though, you need to pull down and set up the Products Manager project.
-
 1. To open the Command Palette in Visual Studio Code, press <kbd>F1</kbd>.
 
-1. In the prompt, enter "clone".
+1. In the prompt, enter *clone*.
 
-1. From the Command Palette, select "Git: Clone".
+1. From the Command Palette, select **Git: Clone**.
 
 1. Enter the following repo URL.
 
@@ -76,13 +38,13 @@ Fortunately, someone has already written the front end part of the app. They hav
 
 Two projects will appear in Visual Studio Code: "frontend" and "api". The "frontend" project contains the web app. The "api" project is where you will be building the serverless API with Azure Functions.
 
-## Run the front-end project
+## Run the frontend project
 
 1. To open the integrated terminal in Visual Studio Code, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
 1. Select "frontend".
 
-1. To run the front-end project in the browser, from the integrated terminal, run the `npm start` command.
+1. To run the frontend project in the browser, from the integrated terminal, run the `npm start` command.
 
    ```bash
    npm start
@@ -96,6 +58,6 @@ Two projects will appear in Visual Studio Code: "frontend" and "api". The "front
 
 1. The app will load, but there will be no data present. This is because you have not yet created the API for this app.
 
-    :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
+   :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 
-Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got Visual Studio Code connected to Azure and the front-end project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager appl.
+Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.

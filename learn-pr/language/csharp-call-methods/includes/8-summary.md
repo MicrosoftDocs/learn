@@ -1,4 +1,4 @@
-Our goal was to call methods defined in the .NET Class Library to perform tasks like generating a random number of performing some mathematical operation.  
+Our goal was to call methods defined in the .NET Class Library to perform tasks like generating a random number or performing some mathematical operation.  
 
 Using C# syntax, we called different kinds of methods in the .NET Class Library: methods that returned values, methods that accepted multiple input parameters, and methods that maintained state.  We used Intellisense and docs.microsoft.com to research and better understand what the methods do and how they work.
 

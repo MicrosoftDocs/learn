@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2020
+  ms.date: 03/12/2021
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
     - content: "Data Migration Assistant"
       isCorrect: true
       explanation: "That's correct. The data migration assistant provides both tooling to assess and execute a migration."
-  - content: "To reduce the cost of an Azure SQL Server VM you intend to run full time for 3 years, which option should you choose?"
+  - content: "To reduce the cost of an Azure SQL Server VM you intend to run full time for three years, which option should you choose?"
     choices:
     - content: "Availability set"
       isCorrect: false
@@ -49,17 +49,17 @@ quiz:
     - content: "Pay as You Go Licensing"
       isCorrect: false
       explanation: "That's incorrect. Azure Reserved VM Instance can offer significant cost saving over pay as you go licensing."
-  - content: "When using a single Azure Virtual Machine in conjunction with Azure managed storage, what guarantee of availability does the service provide?"
+  - content: "When using a single Azure Virtual Machine in conjunction with Azure-managed storage, what guarantee of availability does the service provide?"
     choices:
     - content: "99%"
       isCorrect: false
-      explanation: "That's incorrect. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure managed storage."
+      explanation: "That's incorrect. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure-managed storage."
     - content: "99.9%"
       isCorrect: true
-      explanation: "That's correct. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure managed storage."
+      explanation: "That's correct. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure-managed storage."
     - content: "99.99%"
       isCorrect: false
-      explanation: "That's incorrect. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure managed storage."
+      explanation: "That's incorrect. A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure-managed storage."
   - content: "Which option should you choose to spread workloads across data centers in a region?"
     choices:
     - content: "Availability sets"

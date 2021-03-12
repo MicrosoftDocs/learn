@@ -1,4 +1,4 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing.
 
 ## First challenge
 
@@ -33,4 +33,4 @@ Message: ABCDEF
 Total: 68.3
 ```
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
+Whether you get stuck and need to peek at the solution or you finish successfully, continue to view a solution to this challenge.

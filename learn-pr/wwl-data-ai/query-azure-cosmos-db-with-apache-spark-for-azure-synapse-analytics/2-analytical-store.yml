@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.analytical-store
+title: Query the Azure Cosmos DB analytical store
+metadata:
+  title: Query the Azure Cosmos DB analytical store
+  description: "Query the Azure Cosmos DB analytical store"
+  ms.date: 12/23/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-analytical-store.md)]

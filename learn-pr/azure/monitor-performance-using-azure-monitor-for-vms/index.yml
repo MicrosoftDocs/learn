@@ -9,15 +9,15 @@ metadata:
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
   ms.date: 11/20/2020
-summary: Evaluate Azure Monitor log tooling in your journey to improve the monitoring environment for your company. You'll deploy a Log Analytics workspace. After the Log Analytics workspace is ready, onboard VMs to the Log Analytics workspace and configure Azure Monitor for VMs. To understand the types of data you can extract, build familiarity with the syntax of Azure Monitor log queries inside Log Analytics workspace. When you feel comfortable with the structure, take pre-configured queries in a Log Analytics workspace and query performance of virtual machines by using the Kusto Query Language.
+summary: Evaluate Azure Monitor log tooling in your journey to improve the monitoring environment for your company. You'll deploy a Log Analytics workspace. After the Log Analytics workspace is ready, onboard VMs to the Log Analytics workspace and configure Azure Monitor for VMs. To understand the types of data you can extract, build familiarity with the syntax of Azure Monitor log queries inside the Log Analytics workspace. When you feel comfortable with the structure, take preconfigured queries in a Log Analytics workspace and query performance of virtual machines by using the Kusto Query Language.
 abstract: |
-  - Evaluate Azure Monitor Logs and Azure Monitor for VMs
-  - Configure Log Analytics workspace
-  - Build queries from heartbeat and insights metrics table
+  - Evaluate Azure Monitor Logs and Azure Monitor for VMs.
+  - Configure a Log Analytics workspace.
+  - Build queries from the Heartbeat and InsightsMetrics tables.
 prerequisites: |
-  - Experience using the Azure portal for accessing and creating resources.
-  - Knowledge of Azure virtual machine creation, administration, and maintenance.
-  - Basic familiarity with querying datasets to filter and extract information.
+  - Experience using the Azure portal for accessing and creating resources
+  - Knowledge of Azure virtual machine creation, administration, and maintenance
+  - Basic familiarity with querying datasets to filter and extract information
 iconUrl: /learn/achievements/monitor-performance-using-azure-monitor-for-vms.svg
 badge:
   uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge

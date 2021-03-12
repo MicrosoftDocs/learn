@@ -37,4 +37,4 @@ As you get ready to engage your customers through the commercial marketplace, co
 **Follow-up + nurture**: When you receive leads from your listing, follow-up in a timely manner to catch potential customers while they still have your product in mind. Focus on determining if your solution is a good fit for the customer, following up as needed until you can close out the opportunity.
 
 > [!TIP]
-> Remember, leads represent customers that engaged with your product. In many cases, they’ve spent the time testing your offer through a free trial or a test drive. These are valuable opportunities, so make you’re your organization is prepared to follow up with them in a timely manner.
+> Remember, leads represent customers that engaged with your product. In many cases, they’ve spent the time testing your offer through a free trial or a test drive. These are valuable opportunities, so make sure your organization is prepared to follow up with them in a timely manner.

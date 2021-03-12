@@ -15,9 +15,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
     const Crypto = require('crypto');
     ```
 
-1. In the side menu, select **Manage**.
-
-1. In the **Function Keys** section, select **Click to show** next to the **default** key.
+1. Select **Function Keys** from the left-hand menu, select **Click to show** next to the **default** key.
 
 1. Under **Actions**, select **Copy** and save this key for use in the next step.
 

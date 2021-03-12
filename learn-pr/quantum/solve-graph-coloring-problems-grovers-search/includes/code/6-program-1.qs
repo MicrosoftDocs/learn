@@ -8,7 +8,7 @@
         ApplyToEach(H, register);
         
         // Iterations of Grover's search
-        for (_ in 1 .. iterations) {
+        for _ in 1 .. iterations {
             // Step 1: apply the oracle
             phaseOracle(register);
             // Step 2: reflection around the mean

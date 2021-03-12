@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.powershell.intro-to-powershell
+metadata:
+  title: Introduction to PowerShell
+  description: This module introduces PowerShell, a cross-platform command-line shell and scripting language built for task automation and configuration
+    management. 
+  ms.date: 12/7/2020
+  author: softchris
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to PowerShell
+summary: Learn about the basics of PowerShell. This cross-platform command-line shell and scripting language is built for task automation and configuration management. You'll learn basics like what PowerShell is, what it's used for, and how to use it.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand what PowerShell is and what you can use it for.
+  - Explore cmdlets. 
+  - Construct a sequence of cmdlets in a pipeline.
+  - Apply sound filtering and formatting principles to your commands. 
+iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+  - Basic familiarity with using a command-line shell like Command Prompt or Git Bash 
+  - Visual Studio Code installed 
+  - Ability to install Visual Studio Code extensions 
+  - Ability to install software on your computer, if you're not using a Windows operating system
+units:
+  - learn.powershell.intro-to-powershell.1-introduction
+  - learn.powershell.intro-to-powershell.2-what-is-powershell
+  - learn.powershell.intro-to-powershell.3-exercise-powershell
+  - learn.powershell.intro-to-powershell.4-cmdlets
+  - learn.powershell.intro-to-powershell.5-exercise-cmdlets
+  - learn.powershell.intro-to-powershell.6-pipe
+  - learn.powershell.intro-to-powershell.7-exercise-pipe
+  - learn.powershell.intro-to-powershell.8-knowledge-check
+  - learn.powershell.intro-to-powershell.9-summary
+badge:
+  uid: learn.powershell.intro-to-powershell.badge

@@ -1,4 +1,4 @@
-Tailwind Traders had planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
+Tailwind Traders had planned on building a traditional API, but you deftly pointed out that serverless is perfect for APIs that experience unexpected traffic spikes. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
 It's time to deliver on those lofty buzzwords. Now, you need to create a new project in Azure Functions that will be the HTTP API for the "Products Manager" app. That means creating the Azure Functions project, complete with all of the endpoints that the Products Manager app is going to need to be able to create, read, update, and delete products.
 
@@ -12,7 +12,7 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
 
 1. Select the **api** folder.
 
-1. When prompted, enter the following values.
+1. When prompted, enter the following values. Do **not** overwrite the "package.json" file when prompted.
 
    | Name          | Value        |
    | ------------- | ------------ |
@@ -21,65 +21,42 @@ It's time to deliver on those lofty buzzwords. Now, you need to create a new pro
    | Name          | GetProducts  |
    | Authorization | Function     |
 
-The "api" folder in Visual Studio Code will now contain a new Azure Functions project along with a new function called "GetProducts".
+1. When asked to overwrite the `package.json` file, make sure you select **no**.
 
-## Create the Create, Update, and Delete functions
+    The "api" folder in Visual Studio Code will now contain an Azure Functions project along with a new function called "GetProducts".
 
-### Create the CreateProduct function
+1. Replace the code in the "GetProducts/index.ts" file with the following code.
 
-1. In Visual Studio Code, open the Command Palette.
+   ```typescript
+   import { AzureFunction, Context, HttpRequest } from "@azure/functions";
+   import productsService from "../services/productsService";
 
-1. Enter "create function".
+   const httpTrigger: AzureFunction = async function (
+     context: Context,
+     req: HttpRequest
+   ): Promise<void> {
+     let response;
 
-1. Select **Azure Functions: Create Function**.
+     try {
+       let products = await productsService.read();
+       response = { body: products, status: 200 };
+     } catch (err) {
+       response = { body: err.message, status: 500 };
+     }
 
-1. Select **api**.
+     context.res = response;
+   };
 
-1. When prompted, enter the following values.
+   export default httpTrigger;
+   ```
 
-   | Name          | Value         |
-   | ------------- | ------------- |
-   | Template      | HTTP trigger  |
-   | Name          | CreateProduct |
-   | Authorization | Function      |
+## Examine the Create, Update, and Delete functions
 
-### Create the UpdateProduct function
+The Create, Update and Delete functions have been created for you already. They were created with the same process that you used to create the "GetProducts" function and they already contain database access code.
 
-1. In Visual Studio Code, open the Command Palette.
+- Notice that the "api" project already contains "CreateProduct", "DeleteProduct" and "UpdateProduct" functions.
 
-1. Enter "create function".
-
-1. Select **Azure Functions: Create Function**.
-
-1. Select **api**.
-
-1. When prompted, enter the following values.
-
-   | Name          | Value         |
-   | ------------- | ------------- |
-   | Template      | HTTP trigger  |
-   | Name          | UpdateProduct |
-   | Authorization | Function      |
-
-### Create the DeleteProduct function
-
-1. In Visual Studio Code, open the Command Palette.
-
-1. Enter "create function".
-
-1. Select **Azure Functions: Create Function**.
-
-1. Select **api**.
-
-1. When prompted, enter the following values.
-
-   | Name          | Value         |
-   | ------------- | ------------- |
-   | Template      | HTTP trigger  |
-   | Name          | DeleteProduct |
-   | Authorization | Function      |
-
-## Run the project
+## Run the Azure Functions project
 
 Azure Functions projects can be run and debugged locally from within Visual Studio Code.
 
@@ -95,19 +72,4 @@ Azure Functions projects can be run and debugged locally from within Visual Stud
 
    :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the Visual Studio Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
-1. Press <kbd>Cmd/Ctrl</kbd> and to open it in a browser, select the "GetProducts" link.
-
-   :::image type="content" source="../media/get-products-page.png" alt-text="Screenshot of a web browser showing the execution result of the new HTTP function." loc-scope="other"::: <!-- no-loc -->
-
-1. The default function template takes in a name parameter, and returns a greeting. To pass in the name parameter, modify the URL to pass in a query string parameter called "name".
-
-   ```html
-   http://localhost:7071/api/GetProducts?name=John%20Jacob%20Jingleheimer%20Schmidt
-   ```
-
-   > [!NOTE]
-   > Note that your name may not _actually_ be "John Jacob Jingleheimer Schmidt. Feel free to use your own name if it's different than that.
-
-    :::image type="content" source="../media/hello-message.png" alt-text="Screenshot of a web browser displaying the text Hello John Jacob Jingleheimer Schmidt." loc-scope="other"::: <!-- no-loc -->
-
-What a productive 8 minutes! You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of apps everywhere. In the next section, you'll discover why.
+You've got all of the endpoints created and running in Azure Functions. At the moment, they won't work because you haven't setup the connection string for the database.
