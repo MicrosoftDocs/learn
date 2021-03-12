@@ -78,10 +78,10 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in, for example:
+1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in and the location of the workspace, for example:
 
    ```dotnetcli
-   az quantum workspace set -g MyResourceGroup -w MyWorkspace -o table
+   az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
 
    You should obtain the data of your workspace as output.
