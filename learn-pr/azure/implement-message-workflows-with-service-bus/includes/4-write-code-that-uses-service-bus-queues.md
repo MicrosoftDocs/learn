@@ -31,7 +31,7 @@ When sending a message to a queue, for example, use the `QueueClient.SendAsync()
 
 ## Write code that sends to queues
 
-In any sending or receiving component, you should add the following `using` statements to any code file that calls a Service Bus queue:
+In any sending or receiving component, add the following `using` statements to any code file that calls a Service Bus queue.
 
 ```C#
 using System.Threading;
@@ -39,13 +39,13 @@ using System.Threading.Tasks;
 using Microsoft.Azure.ServiceBus;
 ```
 
-Next, create a new `QueueClient` object and pass it the connection string and the name of the queue:
+Next, create a new `QueueClient` object, and pass it the connection string and the name of the queue.
 
 ```C#
 queueClient = new QueueClient(TextAppConnectionString, "PrivateMessageQueue");
 ```
 
-You can send a message to the queue by calling the `QueueClient.SendAsync()` method and passing the message in the form of a UTF-8 encoded string:
+You can send a message to the queue by calling the `QueueClient.SendAsync()` method, and passing the message in the form of a UTF-8 encoded string.
 
 ```C#
 string message = "Sure would like a large pepperoni!";
@@ -61,7 +61,7 @@ To receive messages, you must first register a message handler - this is the met
 queueClient.RegisterMessageHandler(MessageHandler, messageHandlerOptions);
 ```
 
-Do your processing work. Then, within the message handler, call the `QueueClient.CompleteAsync()` method to remove the message from the queue:
+Do your processing work. Then, within the message handler, call the `QueueClient.CompleteAsync()` method to remove the message from the queue.
 
 ```C#
 await queueClient.CompleteAsync(message.SystemProperties.LockToken);
