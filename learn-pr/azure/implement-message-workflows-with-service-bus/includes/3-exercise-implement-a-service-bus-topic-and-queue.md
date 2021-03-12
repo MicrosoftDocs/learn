@@ -42,11 +42,11 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Select **Review + create** to have an opportunity to review the Service Bus namespace details.
 
-    :::image type="content" source="../media/3-create-namespace-2.png" alt-text="Screenshot of the Service bus Create namespace pane with the Review + create button highlighted":::
+    ![Screenshot of the Service bus Create namespace pane with the Review + create button highlighted.](../media/3-create-namespace-2.png)
 
 1. Review the details, and then select **Create** to create the Service Bus namespace.
 
-    :::image type="content" source="../media/3-create-namespace-3.png" alt-text="Screenshot of the Service bus Review namespace pane with the Create button highlighted":::
+    ![Screenshot of the Service bus Review namespace pane with the Create button highlighted.](../media/3-create-namespace-3.png)
 
 ## Create a Service Bus queue
 
@@ -60,7 +60,7 @@ To create a Service Bus queue, follow these steps:
 
 1. In the **Create queue** pane, in the **Name** text box, enter **salesmessages**, and then select **Create**. Azure creates the queue in your namespace.
 
-    :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of the Create queue pane with the Create button highlighted":::
+    ![Screenshot of the Create queue pane with the Create button highlighted.](../media/3-create-queue.png)
 
 ## Create a Service Bus topic and subscriptions
 
@@ -72,7 +72,7 @@ To create a Service Bus topic and subscriptions, follow these steps:
 
 1. In the **Create topic** pane, in the **Name** text box, enter **salesperformancemessages**, and then select **Create**. Azure creates the topic in your namespace.
 
-    :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Create topic pane with the Create button highlighted":::
+    ![Screenshot of the Create topic pane with the Create button highlighted.](../media/3-create-topic.png)
 
 1. When the topic has been created, at the bottom of the pane, **Queues** and **Topics** tabs appear. Select **Topics**.
 
