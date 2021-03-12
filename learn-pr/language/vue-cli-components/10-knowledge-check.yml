@@ -49,7 +49,7 @@ quiz:
       explanation: "`props` is used to indicate the properties for a component."
     - content: "`data`."
       isCorrect: false
-      explanation: "`data` is used to set the data used by a component."
+      explanation: "`data` is used to set the data a component uses."
     - content: "`components`"
       isCorrect: true
       explanation: "`components` is used to list the available components."
