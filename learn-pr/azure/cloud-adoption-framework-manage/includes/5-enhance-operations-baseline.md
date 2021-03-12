@@ -12,8 +12,8 @@ The following table shows some of the most common enhancements to a management b
 
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
-| Azure Resource Graph | Visibility into changes to Azure resources might help detect negative effects sooner or remediate faster. | [More information at Microsoft Docs](https://azure.microsoft.com/features/resource-graph/) |
-| IT Service Management Connector | Automated ITSM connection to create awareness sooner and enriched work items. |  [More information at Microsoft Docs](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
-| Azure Automation | Azure Automation can support in multiple ways; <li> Automate response to changes</li><li>Automate resource specific scaling or sizing issues</li><li> Automate operations across multiple clouds</li> |  [More information at Microsoft Docs](https://azure.microsoft.com/services/automation/) |	
-| Desired State Configuration (DSC)	| Code-based configuration of guest operating systems to reduce configuration drifting and quickly find errors. | [More information at Microsoft Docs](https://docs.microsoft.com/azure/automation/automation-dsc-overview) |
-| Azure Security Center	| Extended protection to include security breach recovery triggers. | [More information at Microsoft Docs](https://azure.microsoft.com/services/security-center/) |
+| Azure Resource Graph | Visibility into changes to Azure resources might help detect negative effects sooner or remediate faster. | [More information at Microsoft docs](https://azure.microsoft.com/features/resource-graph/) |
+| IT service management connector | Automated ITSM connection to create awareness sooner and enriched work items. |  [More information at Microsoft docs](/azure/azure-monitor/alerts/itsmc-overview) |
+| Azure Automation | Azure Automation can support in multiple ways; <li> Automate response to changes</li><li>Automate resource specific scaling or sizing issues</li><li> Automate operations across multiple clouds</li> |  [More information at Microsoft docs](https://azure.microsoft.com/services/automation/) |
+| Desired State Configuration (DSC) 	| Code-based configuration of guest operating systems to reduce configuration drifting and quickly find errors. | [More information at Microsoft docs](/azure/automation/automation-dsc-overview) |
+| Azure Security Center	| Extended protection to include security breach recovery triggers. | [More information at Microsoft docs](https://azure.microsoft.com/services/security-center/) |
