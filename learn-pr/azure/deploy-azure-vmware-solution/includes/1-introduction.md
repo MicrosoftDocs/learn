@@ -12,4 +12,4 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
-- Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), dynamic host configuration protocol (DHCP), and subnets
+- Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), port mirroring, domain name system (DNS), dynamic host configuration protocol (DHCP), and subnets

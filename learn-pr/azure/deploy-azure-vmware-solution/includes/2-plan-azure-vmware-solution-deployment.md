@@ -27,8 +27,6 @@ The following Azure components need to be factored in before AVS deployment:
 | Azure virtual network | Create a brand new or reuse an existing Azure virtual network.
 | Azure Bastion | Create PaaS resource that provides seamless RDP to jump host.
 | Jump host | An Azure VM (server or desktop) used to access vSphere environment after deployment.
-| vCenter administrator password  | Create a vCenter admin password during deployment. This password is used for the cloudadmin@vsphere.local admin account. You'll use it to sign into vCenter. |
-| NSX-T administrator password  | Create an NSX-T admin password during deployment. This password is assigned to the admin user in the NSX account during the build. You'll use it to log into NSX-T Manager. |
 
 ## Review subscription eligibility criteria
 

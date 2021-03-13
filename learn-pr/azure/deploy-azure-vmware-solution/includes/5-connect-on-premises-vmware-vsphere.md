@@ -1,54 +1,10 @@
-After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit is needed, along with an ExpressRoute Global Reach configuration. 
+After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit needs to be used, along with an ExpressRoute Global Reach configuration. 
 
-## Create an ExpressRoute virtual network gateway for AVS
+## ExpressRoute virtual network gateway and peering for AVS
 
-In the previous unit, you either created a virtual network or configured an existing network for AVS. An ExpressRoute virtual network gateway is created next. The AVS ExpressRoute uses this virtual network gateway to send network traffic to Azure services.
+During AVS deployment, you can select an existing virtual network, create a new one, or leave the field blank. If an existing virtual network is selected, it needs a GatewaySubnet designated for the AVS ExpressRoute. If you create a brand new virtual network, a GatewaySubnet will need to be be created for the AVS ExpressRoute. Selecting a virtual network or creating a new one means all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment provisions in Azure. If you leave the virtual network blank, you will need to factor in creating a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
 
-1. In an existing or new resource group, select **+ Add** to add a new resource.
-1. In the **Search the Marketplace** text box, type in **Virtual network gateway** and select the resource.
-1. On the **Virtual Network Gateway** page, select **Create**.
-1. On the **Basics** tab, provide values for the fields and select **Review + create**.
-
-:::image type="content" source="../media/5-create-virtual-network-gateway-expressroute.png" alt-text="Screenshot showing the required information to deploy an ExpressRoute virtual network gateway for AVS connectivity to Azure services.":::
-
-| Field | Value |
-| ----- | ----- |
-| Subscription | Pre-populated with the subscription where the virtual network is deployed. |
-| Resource group | Pre-populated with the resource group where the virtual network is deployed. |
-| Name | Enter a name for the virtual network gateway. |
-| Region | Select the region of the virtual network and AVS deployment. |
-| Gateway type | Select **ExpressRoute**. |
-| SKU | Use the default value at **Standard*. |
-| Virtual network | Select the virtual network previously created. |
-| Gateway subnet address range | Pre-populated when selecting the virtual network. Leave this setting at the default value. |
-| Public IP address | Select **Create new**. |
-
-## Peer the AVS ExpressRoute to the virtual network gateway
-
-You'll need to connect the AVS ExpressRoute to Azure. This connection allows access Azure services like Azure Backup, Azure Monitor, Azure Security Center, and so on.
-
-1. Select the AVS private cloud created during the previous unit.
-1. Under **Manage**, select **Connectivity**.
-1. Select the **ExpressRoute** tab.
-1. Copy the authorization key.
-1. If there isn't an authorization key, you'll need to create one by selecting **+ Request an authorization key**.
-
-    :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot demonstrating how to request an authorization key for ExpressRoute peering.":::
-
-1. Select the virtual network gateway created in the previous step and under **Settings**, select **Connections**.
-1. On the **Connections** page, select **+ Add**.
-1. On the **Add connection page**, provide values for the following fields, and select **OK**.
-
-    | Field | Value |
-    | ----- | ----- |
-    | Name | Enter a name for the connection. |
-    | Connection type | Select ExpressRoute. |
-    | Redeem authorization | Make sure this box is selected. |
-    | Virtual network gateway | Use the virtual network gateway created previously. |
-    | Authorization key | Copy and paste the authorization key from the ExpressRoute tab inside the resource group. |
-    | Peer circuit URI | Copy and paste the ExpressRoute ID from the ExpressRoute tab in the resource group. |
-
-1. After all fields are filled, a connection between the ExpressRoute circuit and virtual network is created.
+:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot showing the virtual network being left blank during a private cloud deployment within the Azure portal.":::
 
 ## Create Azure Bastion
 
@@ -57,7 +13,7 @@ After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastio
 1. In the Azure portal, search for and create a **Bastion** resource.
 1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
 
-    :::image type="content" source="../media/4-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
+    :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
 
     | Field | Value |
     | ----------- | -------- |
@@ -66,7 +22,7 @@ After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastio
     | Name | The name of the new Bastion resource. |
     | Region | Select the same region where AVS is deployed. |
     | Virtual network | Select the virtual network created when you deployed AVS. |
-    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the AVS deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet** and create a subnet with the following configurations: the subnet name needs to be **AzureBastionSubnet** and the subnet must be at least /27 or larger. |
+    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the AVS deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet** and create a subnet with the following configurations: the subnet name needs to be **AzureBastionSubnet** and the subnet must be at least /27 or higher. |
     | Public IP address | The public IP will allow RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both AVS and Azure Bastion. This new public IP is separate from the AVS deployment. |
     | Public IP address name | Provide a name of the public IP address resource. |
     | Public IP address SKU | This setting is pre-populated by default to **Standard** because Bastion only supports the Standard Public IP SKU. |
@@ -79,6 +35,8 @@ After AVS and the Azure Bastion resource are deployed, create a jump host to acc
 ## Use Azure Bastion and sign into vCenter and NSX-T Manager
 
 Use Azure Bastion to log into the jump host VM. Once logged in, open a web browser. Navigate and log into both vCenter and NSX-T Manager. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+
+:::image type="content" source="../media/5-login-credentials-vcenter-nsxt.png" alt-text="Screenshot showcasing where login credentials display after AVS is deployed within the Azure portal.":::
 
 ## Establish an ExpressRoute Global Reach connection to on-premises VMware environment
 

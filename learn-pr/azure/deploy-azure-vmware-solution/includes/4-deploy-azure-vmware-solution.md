@@ -40,7 +40,7 @@ Once you're ready to deploy AVS, make sure you at least have contributor rights 
     | SKU | Select the SKU value: AV36 |
     | Hosts | The number of hosts to add to the private cloud cluster. |
     | Address block | Enter an IP address block for the CIDR network for the private cloud. |
-    | Virtual Network | Select a Virtual Network or create a new one. A  |
+    | Virtual Network | Select an existing virtual network, create a new one, or leave the field blank. |
 
 1. Once each field is filled out, select **Review + Create**.
 1. The AVS deployment may take up to two full hours for deployment.

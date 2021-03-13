@@ -5,5 +5,6 @@ Now that you know how to successfully build and configure AVS, you'll be able to
 ## Learn more
 
 - [Azure VMware Solution Documentation](https://docs.microsoft.com/azure/azure-vmware/)
+- [Create and configure ExpressRoute virtual network gateway](https://docs.microsoft.com/azure/expressroute/expressroute-howto-add-gateway-portal-resource-manager)
 - [ExpressRoute Global Reach](https://docs.microsoft.com/azure/expressroute/expressroute-global-reach)
 - [Configure Network Segments in NSX-T Manager](https://docs.microsoft.com/azure/azure-vmware/tutorial-nsx-t-network-segment)
