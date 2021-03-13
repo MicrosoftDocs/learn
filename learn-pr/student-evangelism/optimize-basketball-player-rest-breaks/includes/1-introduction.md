@@ -11,7 +11,7 @@ Furthermore, we can start to experiment with how data can help inform a more nov
 In this module, you'll use the data that was cleansed and manipulated in the preceding module of this *Space Jam: A New Legacy*-inspired learning path to create an app for the Tune Squad's coach to use during an All Tune Squad game. This app will help the coach determine which player should sit out for a short water break. Your goal: To optimize the chances of the Tune Squad winning their game!
 
 > [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Videos?azure-portal=true). 
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://youtu.be/Gwew7DNDwDs?azure-portal=true). 
 
 © 2020 Warner Bros. Ent. All Rights Reserved
 
@@ -30,8 +30,5 @@ In this module, you will begin to discover:
 ## Prerequisites
 
 - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-- [Azure Static Web Apps (Preview) extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true)
-- [CodeTour extension for Visual Studio Code](https://aka.ms/codetour-mslearn?azure-portal=true)
-- A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa?azure-portal=true)
 - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account?azure-portal=true)
 - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true)
