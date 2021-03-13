@@ -23,7 +23,7 @@ SELECT [stockItemName]
 
 FROM [Warehouse].[StockItems] s
 
- JOIN [Warehouse].[StockItemsHoldings] sh ON s.StockItemID = sh.StockItemID
+ JOIN [Warehouse].[StockItemHoldings] sh ON s.StockItemID = sh.StockItemID
 
 ORDER BY CostPerOuterBox;
 ```

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-ip-address-management
 metadata:
   title: Implement IP Address Management
   description: "Implement IP Address Management"
-  ms.date: 01/22/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Windows Server.
   - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-ip-address-management.svg
 levels:
 - intermediate
 roles:

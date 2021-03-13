@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.monitoring-sap-azure-case-study
+title: Monitor SAP on Azure (case study)
+metadata:
+  title: Monitor SAP on Azure (case study)
+  description: "Monitor SAP on Azure (case study)"
+  ms.date: 03/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-monitor-sap-azure-case-study.md)]

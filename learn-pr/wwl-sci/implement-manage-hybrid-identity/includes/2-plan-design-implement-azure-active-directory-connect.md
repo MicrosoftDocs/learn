@@ -1,4 +1,4 @@
-Azure AD Connect is a solution that bridges an organizations on-premises Active Directory with your cloud-based Azure Active Directory. This allows IT to identities from on-premises into Azure and ensures a consistent identity across both platforms. This connection enables services like password hash synchronization, pass-through authentication, and seamless single sign-on.
+Azure AD Connect is a solution that bridges an organizations on-premises Active Directory with your cloud-based Azure Active Directory. This allows IT to synchronize identities from on-premises into Azure and ensures a consistent identity across both platforms. This connection enables services like password hash synchronization, pass-through authentication, and seamless single sign-on.
 
 Azure AD Connect is the Microsoft tool designed to meet and accomplish your hybrid identity goals. It provides the following capabilities:
 
@@ -142,7 +142,7 @@ The attribute value must follow the following rules:
 
 - Should be assigned when the object is created
 
-If you have a single forest on-premises, the attribute you should use is **objectGUID**. This is also the attribute used when you use express settings in Azure AD Connect and also the attribute used by DirSync. If you have multiple forests and do not move users between forests and domains, then **objectGUID** is a good attribute to use even in this case. Another solution is to pick an existing attribute you know does not change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there is no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes that should not be used include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Azure AD tenant. The information will be used by future installation of Azure AD Connect.
+If you have a single forest on-premises, the attribute you should use is **ms-DS-ConsistencyGuid**. This is also the attribute used when you use express settings in Azure AD Connect and also the attribute used by DirSync. If you have multiple forests and do not move users between forests and domains, then **objectGUID** is a good attribute to use. Another solution is to pick an existing attribute you know does not change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there is no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes that should not be used include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Azure AD tenant. The information will be used by future installation of Azure AD Connect.
 
 ## Azure AD sign-in
 

@@ -12,6 +12,13 @@ In this module, you've learned about the possible migration path to Microsoft En
 - Connector status
 - Client health with co-management
 
+## Next steps
+
+To determine your mobile device management and mobile application management next steps, see the following resources:
+
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true)
+- [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
+
 ## Learn more
 
 For additional information about Microsoft Endpoint Manager, see the following resources:

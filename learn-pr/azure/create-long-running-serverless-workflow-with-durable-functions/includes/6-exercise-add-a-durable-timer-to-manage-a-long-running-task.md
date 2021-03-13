@@ -10,9 +10,9 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select the function app that you created in the previous exercise.
 
-1. Under **Development Tools**, click **Console**.
+1. Under **Development Tools**, select **Console**.
 
-1. When the console window opens, verify that you are in the _D:\home\site\wwwroot_ folder, then run the following command:
+1. When the console window opens, verify that you are in the _D:\home\site\wwwroot_ folder, then run the following command.
 
     ```command-prompt
     npm install typescript
@@ -27,13 +27,13 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. In the Azure portal, under **Functions**, click **Functions**, and then click **+ Add**.
+1. In the Azure portal, under **Functions**, select **Functions**, and then select **Add**.
 
 1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
 
 1. Name the function **Escalation**, and then select **Create Function**.
 
-1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code:
+1. When the function is created, select **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code.
 
     ``` javascript
     module.exports = async function (context) {
@@ -49,17 +49,17 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. In the Azure portal, under **Functions**, click **Functions**, and then click your **OrchFunction** function that you created in the previous exercise.
+1. In the Azure portal, under **Functions**, select **Functions**, and then select your **OrchFunction** function that you created in the previous exercise.
 
-1. When the function is created, click **Code + Test**, and the code for the **index.js** file appears in the editor.
+1. When the function is created, select **Code + Test**, and the code for the **index.js** file appears in the editor.
 
-1. Add a reference to the **moment** library:
+1. Add a reference to the **moment** library.
 
     ```javascript
     const moment = require("moment");
     ```
 
-1. Replace the body of the function with the following code, which will test whether the deadline for approval has passed:
+1. Replace the body of the function with the following code, which will test whether the deadline for approval has passed.
 
     ```javascript
     module.exports = df.orchestrator(function* (context) {
@@ -94,11 +94,11 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
-1. Under **Overview**, click **Restart**, and then click **Yes** when prompted to restart. Wait for the restart to complete before continuing.
+1. Under **Overview**, select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing.
 
-1. Under **Functions**, click **Functions**, and then click your **HttpStart** function.
+1. Under **Functions**, select **Functions**, and then select your **HttpStart** function.
 
-1. Click **Get Function URL**, and copy the URL. Your URL should resemble the following example:
+1. Select **Get Function URL**, and copy the URL. Your URL should resemble the following example.
 
     ```
     https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
@@ -106,13 +106,13 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
     You'll use this URL to run your functions.
 
-1. Open a new browser window and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example:
+1. Open a new browser window, and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**, which should resemble the following example.
 
     ```
     https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
 
-   The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example:
+   The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example.
 
     ```json
     {
@@ -125,7 +125,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that shows the status as _Running_ while it is waiting for the timer to countdown to 20 seconds, which should resemble the following example:
+1. Copy the **statusQueryGetUri** value, and use your web browser to navigate to this URL. You should see a response message that shows the status as _Running_ while it is waiting for the timer to countdown to 20 seconds, which should resemble the following example.
 
     ```json
     {
@@ -140,7 +140,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example:
+1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
 
     ```json
     {

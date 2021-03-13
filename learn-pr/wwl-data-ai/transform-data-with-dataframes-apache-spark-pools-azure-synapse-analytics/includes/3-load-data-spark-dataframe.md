@@ -1,7 +1,7 @@
 In order to load data into a spark dataframe you need to understand that you can load different filetypes and from different storage accounts. 
 
 In order to bring data to a notebook, you have several options.
-Currently it is possible to load data from Azure Blob Storage, Azure Data Lake Store Gen 2, and SQL pool. 
+Currently it is possible to load data from Azure Blob Storage, Azure Data Lake Store Gen 2, and a Dedicated SQL pool. 
 Some examples of loading data are:
 * Read a CSV from Azure Data Lake Store Gen2 as a Spark DataFrame
 * Read a CSV from Azure Blob Storage as a Spark DataFrame
@@ -41,5 +41,7 @@ spark.sql("CREATE DATABASE IF NOT EXISTS nyctaxi")
 val df = spark.read.sqlanalytics("SQLPOOL1.dbo.Trip") 
 df.write.mode("overwrite").saveAsTable("nyctaxi.trip")
 ```
+
+
 As you can see, there are various ways to load data into a spark dataframe depending on the source the data gets loaded from and whether you want to create your own dataframe and load that into a spark dataframe. 
 

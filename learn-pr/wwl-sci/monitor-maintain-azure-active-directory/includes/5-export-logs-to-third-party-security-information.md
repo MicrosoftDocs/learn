@@ -1,6 +1,6 @@
 Since the introduction of Azure Monitor, significant strides have been made to consolidate Azure services onto a single logging pipeline. Most of the top Azure services, including Azure Resource Manager and Azure Security Center, have onboarded to Azure Monitor and are producing relevant security logs.
 
-The integration process has also been simplified with key capabilities like security information and event management (SEIM) tools, such as routing data to a single event hub and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
+The integration process has also been simplified with key capabilities like security information and event management (SIEM) tools, such as routing data to a single event hub and enabling multiple diagnostic settings per resource. Work in flight will ease setup and management of log routing across large Azure environments.
 
 Azure has also partnered with the top SIEM partners to build connectors that get the data from Azure Monitor into those tools. These connectors consume data routed to Azure Event Hubs by Azure Monitor—a simple, scalable, and manageable approach for delivering log data to an external application, and Microsoft’s recommended approach for integrating Azure with SIEM tools going forward.
 

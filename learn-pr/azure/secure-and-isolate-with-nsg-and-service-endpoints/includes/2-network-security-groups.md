@@ -28,7 +28,7 @@ Rules have several properties:
 |---------|---------|
 |Name|A unique name within the network security group.|
 |Priority | A number between 100 and 4096. |
-|Source or destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group. |
+|Source and destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group. |
 |Protocol     | TCP, UDP, or Any. |
 |Direction| Whether the rule applies to inbound, or outbound traffic.|
 |Port range     | An individual port or range of ports.  |

@@ -3,7 +3,7 @@ Digital collaboration has changed. Your employees and partners now need to colla
 Enterprise security needs to adapt to this new reality. The security perimeter can no longer be viewed as the on-premises network. It now extends to:
 
 - SaaS applications for business-critical workloads that might be hosted outside the corporate network.
-- The personal devices that employees are using to access corporate resources (BOYD, or bring your own device) while working from home.
+- The personal devices that employees are using to access corporate resources (BYOD, or bring your own device) while working from home.
 - The unmanaged devices used by partners or customers when interacting with corporate data or collaborating with employees
 - IoT devices installed throughout your corporate network and inside customer locations.
 
@@ -11,7 +11,7 @@ The traditional perimeter-based security model is no longer enough. Identity has
 
 But what do we mean by an identity?  An identity is how someone or something can be verified and authenticated to be who they say they are.  An identity may be associated with a user, an application, a device, or something else.
 
-:::image type="content" source="../media/3-identity-new-security-perimeter.png" alt-text="Identity is the new security perimeter":::
+![Identity is the new security perimeter](../media/3-identity-new-security-perimeter.png)
 
 ## Four pillars of identity
 
