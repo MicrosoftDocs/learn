@@ -59,7 +59,7 @@ To make sure that everything is loaded in correctly, print the top five lines of
 rock_samples.head()
 ```
 
-|   | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
+| Row  | ID | Mission | Type | Subtype | Weight (g) | Pristine (%) |
 |---|---|---|---|---|---|---|
 | 0 | 10001 | Apollo11 | Soil | Unsieved | 125.8 | 88.36 |
 | 1 | 10002 | Apollo11 | Soil | Unsieved | 5629.0 | 93.73 |
