@@ -23,14 +23,14 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    1. Enter the following values in the **Project Details** section.
+    * Enter the following values in the **Project Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
         | **Subscription** | _Concierge subscription_ | Specifies the subscription under which this new function app is created. |
         | **Resource group** | _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your Service Bus namespace. In this exercise, we'll create the namespace in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
 
-    1. Enter the following values in the **Instance Details** section.
+    * Enter the following values in the **Instance Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
