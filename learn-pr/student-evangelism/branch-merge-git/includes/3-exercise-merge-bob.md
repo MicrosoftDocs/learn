@@ -7,6 +7,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     ```bash
     cd ../Bob
     git checkout -b add-cat
+
     ```
 
 1. Download the zip file that contains [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true). Then, unzip them by using these commands:
@@ -14,6 +15,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
     unzip git-resources.zip
+
     ```
 
 1. Now, move the *bobcat2-317x240.jpg* file into Bob's *Assets* directory. Delete the other files. You'll download the files and use them again later.
@@ -22,6 +24,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     mv bobcat2-317x240.jpg Assets/bobcat2-317x240.jpg
     rm git-resources.zip
     rm bombay-cat-180x240.jpg
+
     ```
 
 1. Now, open the *index.html* file and replace the line that says "Eventually we will put cat pictures here" with the following line:
@@ -36,6 +39,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```bash
     git status
+
     ```
 
 1. Now, use the following commands to add the new file to the *Assets* directory to the index and commit all changes:
@@ -43,6 +47,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     ```bash
     git add .
     git commit -a -m "Add picture of Bob's cat"
+
     ```
 
 1. Bob now does the same action that Alice did earlier. He switches back to the `main` branch and executes a pull to see if anything has changed:
@@ -50,6 +55,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     ```bash
     git checkout main
     git pull
+
     ```
 
 1. This time, the output indicates that changes *have* been made to the `main` branch in the shared repo (the result of Alice's push). It also indicates that the changes pulled from `main` in the shared repo have been merged with `main` in Bob's repo:
@@ -72,6 +78,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
     ```bash
     git merge add-cat --no-edit
     git push
+
     ```
 
 Bob didn't use the `--ff-only` option because he knew `main` had changed. A fast-forward-only merge would have failed.
@@ -85,14 +92,13 @@ Use the following commands to sync Alice's repo with the shared repo:
 ```bash
 cd ../Alice
 git pull
+
 ```
 
 Take a moment to verify that Alice's repo and Bob's repo are synced. Each of the repos should have a JPG file in the *Assets* directory and an `<img>` element declared in the *index.html* file. The *site.css* file in each repo's *Assets* folder should contain a line that defines a CSS style named *cat*. This style was added by Alice when Alice made their changes.
 
 If you open *index.html* in a browser, you'll see this image:
 
-![There be cats!](../media/first-cat.png)
-
-_There be cats!_
+:::image type="content" source="../media/first-cat.png" alt-text="Screenshot that shows cats on the website.":::
 
 In the next lesson, you learn how to resolve merge conflicts, which occur when changes made by two or more developers overlap.

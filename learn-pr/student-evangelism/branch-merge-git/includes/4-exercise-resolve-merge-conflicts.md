@@ -10,6 +10,7 @@ Let's begin by creating a branch for Alice and a branch for Bob. Both users are 
 
     ```bash
     git checkout -b add-cat
+
     ```
 
 1. Change to the *Bob* directory and create a branch named `style-cat` for Bob to work in:
@@ -17,6 +18,7 @@ Let's begin by creating a branch for Alice and a branch for Bob. Both users are 
     ```bash
     cd ../Bob
     git checkout -b style-cat
+
     ```
 
 Now, let's make some changes in the branches.
@@ -29,6 +31,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```bash
     cd ../Alice
+
     ```
 
 1. If you didn't download the resources previously, download the zip file that contains the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip). Unzip the file by using these commands:
@@ -36,6 +39,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
     unzip git-resources.zip
+
     ```
 
 1. Move the *bombay-cat-180x240.jpg* file into Alice's *Assets* directory, and delete the other files:
@@ -44,6 +48,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
     mv bombay-cat-180x240.jpg Assets/bombay-cat-180x240.jpg
     rm git-resources.zip
     rm bobcat2-317x240.jpg
+
     ```
 
 1. Then, open the *index.html* file and replace this statement, which uses one of Bob's cat pictures:
@@ -69,6 +74,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
     git pull
     git merge --ff-only add-cat
     git push
+
     ```
 
 Finish by confirming that the push succeeded.
@@ -81,6 +87,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 
     ```bash
     cd ../Bob
+
     ```
 
 1. Open the *index.html* file. Replace the statement that uses Bob's cat picture with the following statement that adds a `class="cat"` attribute to the `<img>` element:
@@ -98,6 +105,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
     git checkout main
     git pull
     git merge style-cat
+
     ```
 
 And there it is: *the dreaded merge conflict*. The same line in the same file was changed by two people. Git sees the conflict and reports "Automatic merge failed." Git has no way of knowing whether the `src` attribute in the `<img>` element should reference the *bobcat2-317x240.jpg* file or the *bombay-cat-180x240.jpg* file.
@@ -153,6 +161,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
     ```bash
     git add index.html
     git commit -a -m "Style Bob's cat"
+
     ```
 
     The `git add` command tells Git that the conflict in the *index.html* file has been resolved.
@@ -161,6 +170,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
 
     ```bash
     git push
+
     ```
 
 1. Finish by syncing the changes into Alice's repo:
@@ -168,6 +178,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
     ```bash
     cd ../Alice
     git pull
+
     ```
-    
+
     Now, open Alice's *index.html* file and confirm that their version also has two `<img>` tags with cat pictures.

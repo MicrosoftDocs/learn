@@ -13,18 +13,21 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     ```bash
     mkdir Shared.git
     cd Shared.git
+
     ```
 
 1. Now, use the following command to create a bare repo in the shared directory:
 
     ```bash
     git init --bare
+
     ```
 
 1. Set the name of the default branch for the new repo. To accomplish this step, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
 
     ```bash
     git symbolic-ref HEAD refs/heads/main
+
     ```
 
 ### Clone the shared repo for Alice and Bob
@@ -35,6 +38,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     cd ..
     mkdir Alice
     mkdir Bob
+
     ```
 
 1. Clone the repo for Alice, and then configure it:
@@ -44,6 +48,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git clone ../Shared.git .
     git config user.name Alice
     git config user.email alice@contoso.com
+
     ```
 
 1. Clone and configure the repo for Bob:
@@ -54,6 +59,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git clone ../Shared.git .
     git config user.name Bob
     git config user.email bob@contoso.com
+
     ```
 
 ### Add base files
@@ -68,12 +74,14 @@ As a final setup step, we'll add our base website files and push them to the sha
     touch Assets/site.css
     git add .
     git commit -m "Create empty index.html, site.css files"
+
     ```
 
 1. Now, add some HTML to your file by using the Cloud Shell code editor. You can open the editor by using the `code` command. Open *index.html* in the online editor by typing `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
+
     ```
 
 1. Paste in this HTML code:
@@ -90,7 +98,7 @@ As a final setup step, we'll add our base website files and push them to the sha
         <nav><a href="./index.html">home</a></nav>
         <h1>Our Feline Friends</h1>
         <p>Eventually we will put cat pictures here.</p>
-        <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
+        <footer><hr>Copyright (c) 2021 Contoso Cats</footer>
       </body>
     </html>
     ```
@@ -102,6 +110,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     ```bash
     cd Assets
     code site.css
+
     ```
 
 1. Add the following CSS to the file:
@@ -119,6 +128,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     git add .
     git commit -m "Add simple HTML and stylesheet"
     git push
+
     ```
 
 1. If you see a warning like this example, don't worry:
@@ -173,6 +183,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
     ```bash
     cd ../Alice
     git pull
+
     ```
 
 1. You should see a success message that looks like this example:
@@ -191,6 +202,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
     ```bash
     git branch add-style
     git checkout add-style
+
     ```
 
 1. In the *Alice/Assets* directory, open *site.css*. Add the following CSS class definition to the bottom of the file:
@@ -203,6 +215,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
 
     ```bash
     git commit -a -m "Add style for cat pictures"
+
     ```
 
 1. At this point, Alice wants to make their style available to everyone else, so they switch back to `main` and do a pull in case anyone else has made changes:
@@ -210,6 +223,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
     ```bash
     git checkout main
     git pull
+
     ```
 
 1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then, Alice pushes `main` from their repo to the shared repo.
@@ -217,6 +231,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
     ```bash
     git merge --ff-only add-style
     git push
+
     ```
 
 Performing a fast-forward merge because the `main` branch had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit because an `--ff-only` merge fails if `main` has changed, making you acutely aware that changes have occurred.
