@@ -1,12 +1,12 @@
 ### YamlMime:Module
-uid: learn.azure.intro-to-azure-bastion 
+uid: learn.intro-to-azure-bastion 
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Bastion
   description: Learn how Azure Bastion can help provide secure and seamless connectivity to your virtual machines directly in the Azure portal
-  ms.date: 12/03/2021             
-  author: rotabor
-  ms.author: bobtabor-msft
+  ms.date: 03/12/2021             
+  author: warrenaj
+  ms.author: v-anwarr
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Bastion
 summary: Learn how Azure Bastion can provide secure and seamless connectivity to your virtual machines directly in the Azure portal
@@ -29,6 +29,11 @@ roles:
 products:
   - Azure
 units:  
-- learn.azure.1-introduction- learn.azure.2-what-is-azure-bastion- learn.azure.3-how-azure-bastion-works- learn.azure.4-when-to-use-azure-bastion- learn.azure.5-knowledge-check- learn.azure.6-summary
+- learn.1-introduction
+- learn.2-what-is-azure-bastion
+- learn.3-how-azure-bastion-works
+- learn.4-when-to-use-azure-bastion
+- learn.5-knowledge-check
+- learn.6-summary
 badge:
-  uid: learn.azure.intro-to-azure-bastion.badge
+  uid: learn.intro-to-azure-bastion.badge
