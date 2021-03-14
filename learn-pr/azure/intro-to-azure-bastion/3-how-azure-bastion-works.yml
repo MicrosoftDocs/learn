@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-bastion.3-how-azure-bastion-works  
+uid: learn.intro-to-azure-bastion.3-how-azure-bastion-works  
 title: How Azure Bastion works  
 metadata:
   unitType: learning-content  
   title: How Azure Bastion works
   description: How Azure Bastion works
-  ms.date: 12/03/2021  
-  author: rotabor  
-  ms.author: bobtabor-msft  
+  ms.date: 03/12/2021  
+  author: warrenaj  
+  ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 5
