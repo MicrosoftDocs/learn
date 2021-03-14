@@ -29,11 +29,11 @@ roles:
 products:
   - Azure
 units:  
-- learn.1-introduction
-- learn.2-what-is-azure-bastion
-- learn.3-how-azure-bastion-works
-- learn.4-when-to-use-azure-bastion
-- learn.5-knowledge-check
-- learn.6-summary
+- learn.intro-to-azure-bastion.1-introduction
+- learn.intro-to-azure-bastion.2-what-is-azure-bastion
+- learn.intro-to-azure-bastion.3-how-azure-bastion-works
+- learn.intro-to-azure-bastion.4-when-to-use-azure-bastion
+- learn.intro-to-azure-bastion.5-knowledge-check
+- learn.intro-to-azure-bastion.6-summary
 badge:
   uid: learn.intro-to-azure-bastion.badge
