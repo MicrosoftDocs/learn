@@ -10,9 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 5      
-
+content: |
 quiz:
-  title: ''
   questions:
   - content: 'What is the primary advantage of Git's distributed nature?'
     choices:
