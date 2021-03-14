@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: 'What is the primary advantage of Git's distributed nature?'
+  - content: 'What is the primary advantage of the distributed nature of Git?'
     choices:
     - content: "Multiple authors can contribute changes to a project from locations around the world. Git automatically merges the changes into a single project repo."
       isCorrect: false
