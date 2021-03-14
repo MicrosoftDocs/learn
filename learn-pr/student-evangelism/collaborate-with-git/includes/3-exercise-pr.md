@@ -2,31 +2,35 @@ In the sandbox, make sure you’re still in the *Alice* directory, which is the 
 
 ```bash
 pwd
+
 ```
 
 Right now, there's nothing for Alice to pull because you haven't made any changes since she cloned the repo. You can prove that by using the following command, which responds `Already up-to-date`:
 
 ```bash
 git pull
+
 ```
 
 ## Make a change and submit a pull request
 
-Alice starts working on the website. Alice's first decision is to change the site's background color. Alice experiments locally, and ultimately chooses her favorite shade of light blue.
+Alice starts working on the website. Alice's first decision is to change the site's background color. Alice experiments locally and ultimately chooses their favorite shade of light blue.
 
 1. Set up an identity for Alice by running the following commands:
 
     ```bash
     git config user.name "Alice"
     git config user.email "alice@contoso.com"
+
     ```
 
-    These `config` settings are stored in the repo in the *.git/config* file, so you won't have to enter them again. Each time you `cd` into the *Alice* directory, you effectively assume Alice's identity.
+    These `config` settings are stored in the repo in the *.git/config* file, so you won't have to enter them again. Each time you change to the *Alice* directory, you effectively assume Alice's identity.
 
 1. Open the *site.css* file in the *Alice/CSS* directory:
 
     ```bash
     code CSS/site.css
+
     ```
 
 1. To change the background color of the page to light blue, replace the second line in the file with the following statement:
@@ -35,18 +39,20 @@ Alice starts working on the website. Alice's first decision is to change the sit
     body { font-family: serif; background-color: #F0FFF8; }
     ```
 
-1. Save and close the file.
+1. Save the file and close the editor.
 
 1. Now, commit the change:
 
     ```bash
     git commit -a -m "Change background color to light blue"
+
     ```
 
 1. Now, you must make a pull request back to the original repo:
 
     ```bash
     git request-pull -p origin/main .
+
     ```
 
 1. You should see output similar to the following example:
@@ -85,19 +91,21 @@ Alice starts working on the website. Alice's first decision is to change the sit
 
 ## Create a remote and complete the pull request
 
-Because your project directory and the *Alice* directory are on the same computer, you can pull directly from the *Alice* directory. In real life, the *Alice* directory would be on Alice's computer. You solve this situation by setting up a *remote* by using the `git remote` command, and then use that remote for pull and push requests. Because it's not practical to set up two machines to do these steps, we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
+Because your project directory and the *Alice* directory are on the same computer, you can pull directly from the *Alice* directory. In real life, the *Alice* directory would be on Alice's computer. You solve this situation by setting up a *remote* by using the `git remote` command. Then, you use that remote for pull and push requests. Because it's not practical to set up two machines to do these steps, we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
 
-1. Change back to the project directory (`cd`) and use the `git remote` command to create a remote named `remote-alice` that targets Alice's project directory:
+1. Change back to the project directory and use the `git remote` command to create a remote named `remote-alice` that targets Alice's project directory:
 
     ```bash
     cd ../Cats
     git remote add remote-alice ../Alice
+
     ```
 
 1. Now, execute a pull:
 
     ```bash
     git pull remote-alice main
+
     ```
 
     Notice that you have to specify a branch, `main`, in the pull command. You will learn in the next lesson how to set up an upstream URL for the branch.
