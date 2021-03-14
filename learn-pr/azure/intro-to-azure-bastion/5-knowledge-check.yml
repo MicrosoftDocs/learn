@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. Although Azure Bastion should be deployed in the same virtual network, it must be in a different subnet."
     - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in a different subnet"
       isCorrect: true
-      explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual nework) as the VMs, but in its own subnet."
+      explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual network) as the VMs, but in its own subnet."
