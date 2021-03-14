@@ -27,7 +27,9 @@ roles:
   - security-engineer
   - technology-manager
 products:
-  - Azure
+  - azure
+  - azure-bastion
+  - azure-virtual-network
 units:  
 - learn.intro-to-azure-bastion.1-introduction
 - learn.intro-to-azure-bastion.2-what-is-azure-bastion
