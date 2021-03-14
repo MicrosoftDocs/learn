@@ -8,12 +8,14 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
     ```bash
     mkdir Cats
+
     ```
 
 1. Use the `cd` command to change to the project folder:
 
     ```bash
     cd Cats
+
     ```
 
 1. Now, initialize the new repository and set the name of the default branch to `main`.
@@ -57,6 +59,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
     ```bash
     code index.html
+
     ```
 
 1. Paste in this HTML code:

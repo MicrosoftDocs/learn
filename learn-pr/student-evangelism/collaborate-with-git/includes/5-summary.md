@@ -15,4 +15,4 @@ If you would like to dig deeper, here are some other resources that you'll find 
 - [Everyday Git](https://git-scm.com/docs/everyday) (also available from the command line, as `git help everyday`).
 - GitHub's [Git and GitHub learning resources](https://help.github.com/en/articles/git-and-github-learning-resources).
 
-You also can learn more from the [documentation section](https://git-scm.com/doc) of [Git's official website](https://git-scm.com).
+You also can learn more from the [documentation section](https://git-scm.com/doc) of the [official Git website](https://git-scm.com).

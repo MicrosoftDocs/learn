@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct! The `git clone` command takes a URL or path to an existing repository as a parameter."
     - content: "`git copy <repo-name>`"
       isCorrect: false
-      explanation: "Incorrect. This command isn't a command that's used in Git."
+      explanation: "Incorrect. This command isn't recognized in Git."
   - content: 'What Git command can be used to save current changes, but without using a pull request?'
     choices:
     - content: "`git stash`"

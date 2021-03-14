@@ -62,7 +62,7 @@ Creating a bare repo for sharing is easy:
      * [new branch]      main -> main
     ```
 
-1. You want `push` and `pull` to use the `main` branch of `origin` by default, as if you had made your repo by cloning it in the first place. To do this, you need to tell Git which branch to track.
+1. You want `push` and `pull` to use the `main` branch of `origin` by default, as if you had made your repo by cloning it in the first place. But first, you need to tell Git which branch to track.
 
     ```bash
     git branch --set-upstream-to origin/main
