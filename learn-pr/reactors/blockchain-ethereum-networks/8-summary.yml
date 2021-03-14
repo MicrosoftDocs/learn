@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.blockchain-ethereum-networks.8-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

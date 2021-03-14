@@ -12,9 +12,8 @@ Now you've completed this module, you should be able to: 
 
 To find out more about any of the topics covered in this module, go to:
 
-- [Spreadsheet showing a walkthrough for the Security Center unit](https://techcommunity.microsoft.com/t5/azure-security-center/ignite-2020-introducing-azure-defender-and-azure-security-center/ba-p/1708769)
 - [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-introduction)  
 - [Azure secure score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls)
 - [Azure Defender](https://docs.microsoft.com/azure/security-center/azure-defender)  
-- [Cloud security posture management](https://docs.microsoft.com/azure/security-center/) and [secure score controls](https://docs.microsoft.com/azure/security-center)
 - [Security baselines](https://docs.microsoft.com/azure/security/benchmarks/security-baselines-overview)  
+- [Azure Defender pricing](https://azure.microsoft.com/pricing/details/azure-defender/)

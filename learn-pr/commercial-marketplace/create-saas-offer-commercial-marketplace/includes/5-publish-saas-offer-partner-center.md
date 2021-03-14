@@ -51,7 +51,7 @@ You’ll choose which markets your SaaS offer will be available in from a list o
 > [!TIP]
 > If you choose the flat rate pricing model, you’ll also be given the opportunity to add meters to your plan.
 
-You finish this page by telling us whether or not you want to offer customers a one-month free trial and indicating whether this plan is public private. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers that you choose.
+You finish this page by telling us whether or not you want to offer customers a one-month free trial and indicating whether this plan is public or private. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers that you choose.
 
 For more detailed guidance on creating plans for your SaaS offer, reference our [documentation on SaaS offer plans](https://docs.microsoft.com/azure/marketplace/create-new-saas-offer-plans).
 > [!TIP]

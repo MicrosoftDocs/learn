@@ -1,12 +1,17 @@
-The first task before migration is to verify that you are migrating from a supported version of MongoDB. You can verify the latest version support at the following site:
+After reviewing the benefits of Cosmos DB, your CIO has given you the go ahead to run a proof of concept. The first phase of the project is to plan the data migration. This will include setting up an empty Cosmos DB to host the migrated data.
+
+In this unit, you'll walk through the steps to create a Cosmos DB database and select either an offline or online migration method.
+## Check your MongoDB compatibility
+
+The first task before migration is to verify that you're migrating from a supported version of MongoDB. You can verify the latest version support at the following site:
 
 [Azure Cosmos DB's API for MongoDB: supported features and syntax](https://aka.ms/AA56wz6)
 
-You need to create a Cosmos DB account with MongoDB as the API. You then need to create a database in Cosmos DB for each database that you will create.
+To begin using a Cosmos DB in Azure, you create a Cosmos DB account with the MongoDB API. Then you create a database in the account. You can separate your database workloads in different databases, a benefit of this approach is the granularity you can set the throughput at.
 
-You need to create an Azure Virtual Network (VNet) for the Azure Database Migration Service that should use the Azure Resource Manager deployment model. You must configure your VNET Network Security Group to open ports 53, 443, 445, 9354, and 10000-20000. You must configure your on-premises firewalls to allow access to your MongoDB server.
+Access to your data is controlled by making use of Azure Virtual Networks (VNet). You'll configure your VNET Network Security Group to open ports 53, 443, 445, 9354, and 10000-20000. Obviously you'll also need to configure your on-premises firewalls to allow access through these ports to your on-premises MongoDB server.
 
-You should now configure throughput. Typically, a migration involves a large amount of data transfer and you can temporarily increase throughput for the duration of the migration. If you specify database-level throughput, you should consider that each collection requires at least 100 RU/Sec. Therefore, the minimum RU/Sec for the database is the number of collections multiplied by 100. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database.
+Typically, a migration involves a large amount of data transfer and you can temporarily increase throughput during the migration. If you specify database-level throughput, you should consider that each collection requires at least 100 RU/Sec. Therefore, the minimum RU/Sec for the database is the number of collections multiplied by 100. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database post migration.
 
 ## Offline or online migration
 

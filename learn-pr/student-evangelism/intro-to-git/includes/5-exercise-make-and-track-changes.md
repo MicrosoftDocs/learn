@@ -35,6 +35,8 @@ The Web site's home page, **index.html** currently contains just one line of HTM
 
     The default is for `git diff` to compare the working tree to the index. In other words, it shows you all of the changes that haven't been staged (added to the index) yet. To compare the working tree to the last commit, you can use `git diff HEAD`.
 
+1. Exit out of the **git diff** view by entering `q`
+
 1. Next, commit the change. Instead of using the `-a` flag, you can explicitly name a file to be staged and committed (**index.html** below), provided Git already has the file in the index (which is all that `commit` looks at).
 
     ```bash

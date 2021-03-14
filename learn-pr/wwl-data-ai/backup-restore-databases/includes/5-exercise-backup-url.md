@@ -1,4 +1,4 @@
-As a DBA within AdventureWorks, you need to back up a database to a URL in Azure and restore it after a human error has
+As a DBA for Wide World Importers, you need to back up a database to a URL in Azure and restore it after a human error has
 occurred.
 
 ## Connect to the lab environment
@@ -27,20 +27,24 @@ occurred.
 
     :::image type="content" source="../media/welcome-to-cloud-shell.png" alt-text="Welcome to Azure Cloud Shell":::
 
-1. If you have not previously used a Cloud Shell, you must give it storage. Click **Create Storage** in the dialog below:
+1. If you have not previously used a Cloud Shell, you must give it storage. Click **Show advanced settings** in the dialog below:
 
     :::image type="content" source="../media/create-storage.png" alt-text="Create storage":::
 
-1. If you have already used a Cloud Shell, just make sure the upper left corner of the Cloud Shell screen shows **Bash**.
+1. Use the existing **Resource group** and specify new names for **Storage account** and **File share**, as shown in the dialog below. Make a note of the **Resource group** name. It should start with **DP-300-HADR**.The Storage account and File share names should use lower case letters and no special characters. Then click **Create storage**.
+
+    :::image type="content" source="../media/create-storage-account.png" alt-text="Create storage account and file share":::
+
+1. Verify that the upper left corner of the Cloud Shell screen shows **Bash**.
 
     Once complete, you will see a prompt similar to the one below.
 
     :::image type="content" source="../media/cloud-shell-prompt.png" alt-text="Cloud Shell prompt":::
 
-1. Create a storage account from the CLI using by executing the following command in Cloud Shell. Your storage account name must be unique and all lower case with no special characters. You should change dp300storage in the example to a unique name such as **dp300storagemsl123**. The value **DP-300-HADR** is the name of a Resource Group:
+1. Create a new storage account from the CLI using by executing the following command in Cloud Shell. Your storage account name must be unique and all lower case with no special characters. You should change dp300storage in the example to a unique name such as **dp300storagemsl123**. Use the name of the resource group starting with **DP-300-HADR** that you made note of above. 
 
     > [!NOTE]
-    > You can copy these Azure CLI commands from the **D:\LabFiles\High Availability\High Availability Bash scripts.sh** file.
+    > You can copy these Azure CLI commands from the **D:\LabFiles\High Availability\High Availability Bash scripts.sh** file and edit them as needed.
 
     ```bash
     az storage account create -n dp300storage -g DP-300-HADR --kind StorageV2 -l eastus2
@@ -80,7 +84,7 @@ occurred.
     az storage container generate-sas -n "backups" --account-name "dp300storage" --account-key "storage_key" --permissions "rwdl" --expiry "date_in_the_future" -o tsv
     ```
 
-    where **dp300storage** is the storage account name you created above, **storage_key** is the key generated above, and **date_in_the_future** is a time later than now. **date_in_the_future** must be in UTC. An example is **2020-12-31T00:00Z** which translates to expiring at Dec 31, 2020 at midnight.
+    where **dp300storage** is the storage account name you created above, **storage_key** is the key generated above, and **date_in_the_future** is a time later than now. **date_in_the_future** must be in UTC. An example is **2021-12-31T00:00Z** which translates to expiring at Dec 31, 2020 at midnight.
 
     The output should return something similar to below. Copy the whole shared access signature and paste it in **Notepad**, because it will be used in the next task:
 
@@ -103,7 +107,7 @@ Now that the functionality is configured, you can generate a backup file as a bl
 
     ```sql
     IF NOT EXISTS  
-    (SELECT * FROM sys.credentials
+    (SELECT * FROM sys.credentials  
     WHERE name = 'https://dp300storage.blob.core.windows.net/backups')  
     BEGIN
     CREATE CREDENTIAL [https://dp300storage.blob.core.windows.net/backups]
@@ -113,7 +117,7 @@ Now that the functionality is configured, you can generate a backup file as a bl
     GO  
     ```
 
-    Where both instances of **dp300storage** are the storage account name created above and **sas_token** is the value generated at the end of the previous task.
+    Where both occurrences  of **dp300storage** are the storage account name created above and **sas_token** is the value generated at the end of the previous task.
 
     The **sas_token** line should be in this format:
 
@@ -121,7 +125,11 @@ Now that the functionality is configured, you can generate a backup file as a bl
     SECRET = 'se=2020-12-31T00%3A00Z&sp=rwdl&sv=2018-11-09&sr=c&sig=rnoGlveGql7ILhziyKYUPBq5ltGc/pzqOCNX5rrLdRQ%3D'   
     ```
 
-1. Click **Execute**. This should be successful.
+1. Click **Execute**. This should be successful. If you mistyped and need to recreate the credential, you can drop it with the following command, making sure to change the name of the storage account:
+    ```sql
+    -- Only run this command if you need to go back and recreate the credential! 
+    DROP CREDENTIAL [https://dp300storage.blob.core.windows.net/backups]  
+    ```
 
 1. Back up the database WideWorldImporters to Azure with the following command in Transact-SQL:
 

@@ -8,9 +8,7 @@ This KQL query will first filter the EventID with the where operator.  Next, for
 
 ```kusto
 SecurityEvent
-
 | where EventID == "4624"
-
 | summarize make_list(Account) by Computer
 
 ```
@@ -25,9 +23,7 @@ This KQL query will first filter the EventID with the where operator.  Next, for
 
 ```kusto
 SecurityEvent
-
 | where EventID == "4624"
-
 | summarize make_set(Account) by Computer
 
 ```

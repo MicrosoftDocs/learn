@@ -4,7 +4,7 @@ In this unit, you need to complete the exercises within a Databricks Notebook. T
 
 **Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/)
 
-- If you are a Visual Studio Active Subscriber, you are entitled to azure credits per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
+- If you are a Visual Studio Active Subscriber, you are entitled to Azure credits per month. You can refer to this [link](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/) to find out more including how to activate and start using your monthly Azure credit.
 
 - If you are not a Visual Studio Subscriber, you can sign up for the FREE [Visual Studio Dev Essentials](https://www.visualstudio.com/dev-essentials/) program to create Azure free account.
 
@@ -14,7 +14,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 ### Deploy an Azure Databricks workspace
 
-1. Click the following button to open the Azure Resource Manager template in the Azure Portal.
+1. Click the following button to open the Azure Resource Manager template in the Azure portal.
    [Deploy Databricks from the Azure Resource Manager Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-databricks-workspace%2Fazuredeploy.json)
 
 1. Provide the required values to create your Azure Databricks workspace:
@@ -32,15 +32,25 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 ### Create a cluster
 
 1. When your Azure Databricks workspace creation is complete, select the link to go to the resource.
+
 1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
+
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
+
 1. Select **Create Cluster** to add a new cluster.
-    > [!div class="mx-imgBorder"]
-    > ![The create cluster page](../media/create-cluster.png)
+
+    ![The create cluster page](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
-1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime and **Scala 2.11**.
-1. Select the default values for the cluster configuration.
+
+1. Select the **Cluster Mode**: **Single Node**.
+
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS (Scala 2.12, Spark 3.0.1)**.
+
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
+
+1. Select the **Node Type**: **Standard_DS3_v2**.
+
 1. Select **Create Cluster**.
 
 ## Clone the Databricks archive
@@ -54,11 +64,11 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
     ```
-    https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-engineering/DBC/14-Integrating-with-other-Azure-Services.dbc?raw=true
+    https://github.com/MicrosoftDocs/mslearn_databricks/blob/main/synapse/1.1.0/Labs.dbc?raw=true
     ```
 
 5. Select **Import**.
-6. Click on the folder **14-Integrating-with-other-Azure-Services** that appears.
+6. Click on the folder **synapse** that appears.
 
 ## Complete the following notebook
 

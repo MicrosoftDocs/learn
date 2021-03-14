@@ -9,13 +9,13 @@ It's important that you clean up any unused collections. You're charged for the 
 
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-2. Search for the sandbox resource group: <rgn>Sandbox Resource Group</rgn>.
+1. Search for the sandbox resource group: <rgn>Sandbox Resource Group</rgn>.
 
-3. Select your Azure Cosmos DB account.
+1. Select your Azure Cosmos DB account.
 
-4. Go to **Data Explorer**.
+1. Go to **Data Explorer**.
 
-5. To delete the mslearn database, select the ellipsis (**...**) next to the database name.
+1. To delete the mslearn database, select the ellipsis (**...**) next to the database name.
 
 1. Select **Delete**.
 

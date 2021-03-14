@@ -8,6 +8,7 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Apply Azure Arc enabled Kubernetes cluster configurations by using GitOps
 durationInMinutes: 9
 content: |

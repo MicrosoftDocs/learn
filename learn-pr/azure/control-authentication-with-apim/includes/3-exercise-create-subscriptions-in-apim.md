@@ -33,7 +33,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
     cd mslearn-control-authentication-with-apim
     ```
 
-1. As its name suggests, `setup.sh` is the script you will run to create our API. It will generate a public web app that exposes an OpenAPI interface:
+1. As its name suggests, `setup.sh` is the script you will run to create our API. It will generate a public web app that exposes an OpenAPI interface.
 
     ```bash
     bash setup.sh
@@ -58,22 +58,22 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. In the search bar, type **API Management**.
+1. In the search bar, enter **API Management**, and from the **API Management** panel, select **Create**. The **Create API Management** panel appears.
 
-1. In the **Create API Management** page, enter the following details, and then select **Create**.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | In the **Basics** tab, under **Project details**: |
+    | **Project details** |
     | **Subscription** | Concierge Subscription |
     | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>**. |
-    | Under **Instance details** section: |
+    | **Instance details** |
     | **Region** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
     | **Resource name** | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this API gateway name. You will need it later to make requests. |
     | **Organization name** | Enter `Weather-Company`. |
     | **Administrator email** | Enter your own email address. |
-    | Under **Pricing tier** section: |
-    | **Pricing tier** | Select `Consumption`. |
+    | **Pricing tier** |
+    | **Pricing tier** | From the dropdown, select `Consumption` |
     | | |
 
 1. Select **Review + create**, and then select **Create** after validation passes.
@@ -89,9 +89,9 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. In the nav bar, under **APIs**, select **APIs**.
 
-1. On the **Add a new API** page, select **OpenAPI**.
+1. On the **Add a new API** panel, select **OpenAPI**.
 
-1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
+1. On the **Create from OpenAPI specification** panel, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
 
 1. Leave the other settings at their defaults, and then select **Create**.
 
@@ -107,7 +107,7 @@ The final step is to add a subscription key for the weather API.
 
 1. In the **New subscription** panel, enter the following details, and then select **Save**.
 
-    | Field | Details |
+    | Setting | Value |
     | --- | --- |
     | **Name** | Enter  `weather-data-subscription` |
     | **Display name** | Enter `Weather Data Subscription` |

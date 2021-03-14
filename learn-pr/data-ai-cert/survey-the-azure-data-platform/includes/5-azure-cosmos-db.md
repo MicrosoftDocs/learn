@@ -34,7 +34,7 @@ To ingest data into Azure Cosmos DB, use Azure Data Factory, create an applicati
 
 ## Queries
 
-As a data engineer, you can create stored procedures, triggers, and user-defined functions (UDFs). Or use the JavaScript query API. You'll also find other methods to query the other APIs within Azure Cosmos DB. For example, in the Data Explorer component, you can use the graph visualization pane.
+As a data engineer, you can create stored procedures, triggers, and user-defined functions (UDFs). Or use the JavaScript query API. You'll also find other methods to query the other APIs within Azure Cosmos DB. For example, in the Data Explorer component, you can use the graph visualization panel.
 
 ## Data security
 

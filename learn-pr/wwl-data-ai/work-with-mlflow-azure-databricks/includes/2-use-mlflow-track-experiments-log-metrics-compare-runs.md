@@ -14,7 +14,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 ### Deploy an Azure Databricks workspace
 
-1. Right click (open in a new window) the following button to open the Azure Resource Manager template in the Azure portal.
+1. Click the following button to open the Azure Resource Manager template in the Azure portal.
    [Deploy Databricks from the Azure Resource Manager Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-databricks-workspace%2Fazuredeploy.json)
 
 1. Provide the required values to create your Azure Databricks workspace:
@@ -25,6 +25,8 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
    - **Workspace Name**: Provide a name for your workspace.
    - **Pricing Tier**: Ensure `premium` is selected.
 
+1. Accept the terms and conditions.
+1. Select Purchase.
 1. The workspace creation takes a few minutes. During workspace creation, the portal displays the Submitting deployment for Azure Databricks tile on the right side. You may need to scroll right on your dashboard to see the tile. There is also a progress bar displayed near the top of the screen. You can watch either area for progress.
 
 ### Create a cluster
@@ -41,28 +43,15 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
-1. Select the **Databricks RuntimeVersion**: **Runtime: 6.4 ML (Scala 2.11, Spark 2.4.5)** (remember to select the **ML** version).
+1. Select the **Cluster Mode**: **Single Node**
 
-1. Select the values for the cluster configuration.
-    - **Enable autoscaling**: **Uncheck** this option.
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS ML (Scala 2.12, Spark 3.0.1)** (remember to select the **ML** version).
 
-    - **Auto Termination**: Leave **checked** and in the text box enter `120`.
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
 
-    - **Worker Type**: **Standard_DS3_v2**
-
-    - **Workers**: `1`
-
-    - **Driver Type**: **Same as worker**
+1. Select the **Node Type**: **Standard_DS3_v2**
 
 1. Select **Create Cluster**.
-
-## Install required libraries
-
-1. From the cluster configuration page, select the **Libraries** link and then select **Install New**.
-
-1. In the `Library Source`, select **PyPi** and in the `Package` text box type `mlflow==1.7.0` and select **Install**.
-
-    ![Install required library](../media/install-lib.png)
 
 ## Clone the Databricks archive
 
@@ -74,10 +63,10 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
-     `https://github.com/solliancenet/microsoft-learning-paths-databricks-notebooks/blob/master/data-science/09-MLflow.dbc?raw=true`
+     `https://github.com/MicrosoftDocs/mslearn_databricks/blob/main/mlflow/1.1.0/Labs.dbc`
 
 1. Select **Import**.
-1. Select the **09-MLflow** folder that appears.
+1. Select the **mlflow** folder that appears.
 
 ## Complete the following notebook
 

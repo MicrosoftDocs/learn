@@ -4,8 +4,8 @@ title: What is defense in depth?
 metadata:
   description: Identify the layers that make up a defense-in-depth strategy.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

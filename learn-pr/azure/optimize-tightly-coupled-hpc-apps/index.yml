@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series
+metadata:
+  title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
+  description: Learn how to build, run, and tune tightly coupled HPC applications in Azure.
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
+summary: This module provides you with guidance on choosing the right SKU for your High Performance Computing (HPC) applications, and how to build and run highly optimized and tightly coupled HPC applications.
+abstract: |
+  In this module, you will:
+  - Choose the best, cost-performant HPC SKU for each type of tightly coupled HPC application.
+  - Optimally build and run each type of tightly coupled HPC application on Azure HPC SKUs.
+prerequisites: |
+  - Basic knowledge of High Performance Computing (HPC).
+  - Familiarity with Azure Virtual Machines (VMs) tasks such as deploying VMs and mounting shared filesystems.
+  - For this module, you will need to use your own subscription to complete the optional exercises, which might incur charges. A trial subscription or a subscription that you already have access to will work to follow along.
+  - You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- developer
+- student
+products:
+- azure
+units:
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.1-introduction
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.2-selecting-the-right-hpc-sku
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.3-knowledge-selecting-the-right-hpc-sku
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.4-process-pinning-considerations
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.5-exercise-find-correct-numa-mapping-for-hpc-sku
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.6-compilers-and-numerical-libraries
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.7-knowledge-selecting-the-right-compiler-and-numerical-libraries
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.8-selecting-the-right-mpi-library
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.9-knowledge-selecting-the-right-mpi-library
+- learn.azure.optimize-hpc-application-azure-virtual-machines-series.10-summary
+badge:
+  uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.badge
