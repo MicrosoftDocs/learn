@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-bastion.6-summary  
+uid: learn.intro-to-azure-bastion.6-summary  
 title: Summary  
 metadata:
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 12/03/2021  
-  author: rotabor  
-  ms.author: bobtabor-msft  
+  ms.date: 03/12/2021  
+  author: warrenaj  
+  ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 3
