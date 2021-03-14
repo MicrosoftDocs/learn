@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-bastion.4-when-to-use-azure-bastion  
+uid: learn.intro-to-azure-bastion.4-when-to-use-azure-bastion  
 title: When to use Azure Bastion  
 metadata:
   unitType: learning-content  
   title: When to use Azure Bastion
   description: When to use Azure Bastion
-  ms.date: 12/03/2021  
-  author: rotabor  
-  ms.author: bobtabor-msft  
+  ms.date: 03/12/2021  
+  author: warrenaj  
+  ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 5
