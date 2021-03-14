@@ -11,44 +11,44 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-   Choose the best response for each question. Then select **Check your answers.**
+   Choose the best response for each question. Then select **Check your answers**.
 
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Azure Quantum offers two services: quantum computing and optimization solutions. What is the difference between them?'
+  - content: 'Azure Quantum offers quantum computing solutions and optimization solutions. What is the difference between them?'
     choices:
-    - content: 'Quantum computing is only for simulating quantum systems like molecules and optimization use quantum computers to solve optimization problems.'
+    - content: 'Quantum computing is only for simulating quantum systems like molecules. Optimization uses quantum computers to solve optimization problems.'
       isCorrect: false
       explanation: "Quantum computing is not restricted to simulating quantum systems. The optimization solutions don't use quantum computers."
-    - content: 'You can use quantum computing to run quantum algorithms in quantum hardware and optimization to solve optimization problems using classical hardware.'
+    - content: 'You can use quantum computing to run quantum algorithms in quantum hardware, and you can use optimization to solve optimization problems by using classical hardware.'
       isCorrect: true
-      explanation: "Quantum computing consist of running quantum algorithms such as Grover's algorithm in a real or simulated quantum device, while optimizations consists of solving optimization problems using classical computers."
-    - content: 'You use quantum computing to run quantum algorithms in quantum hardware and then you use optimization run those algorithms more efficiently.'
+      explanation: "Quantum computing consists of running quantum algorithms such as Grover's algorithm in a real or simulated quantum device, whereas optimization consists of solving optimization problems by using classical computers."
+    - content: 'You use quantum computing to run quantum algorithms in quantum hardware, and then you use optimization to run those algorithms more efficiently.'
       isCorrect: false
       explanation: "Quantum computing and optimization address different kinds of problems."
 
-  - content: 'Which of the following affirmations about Azure Quantum is **false**?'
+  - content: 'Which of the following statements about Azure Quantum is *false*?'
     choices:
     - content: 'Simulators, quantum computers, and optimization solvers are examples of targets of Azure Quantum.'
       isCorrect: false
-      explanation: "This affirmation is correct."
+      explanation: "This statement is correct."
     - content: 'Each job has an ID that must be unique within the workspace.'
       isCorrect: false
-      explanation: "This affirmation is correct."
-    - content: "You can submit jobs without an Azure Storage Account, however it's recommended to have one to keep your results."
+      explanation: "This statement is correct."
+    - content: "You can submit jobs without an Azure storage account, but having one is recommended for keeping your results."
       isCorrect: true
-      explanation: "This affirmation is false. You must own an Azure storage account in order to create a quantum workspace to submit jobs."
+      explanation: "This statement is false. You must own an Azure storage account to create a quantum workspace and submit jobs."
 
-  - content: 'Which of the following sentences about quantum-inspired optimization in Azure Quantum is **true**?'
+  - content: 'Which of the following statements about quantum-inspired optimization in Azure Quantum is *true*?'
     choices:
     - content: 'Emulating quantum effects on classical computers has led to the development of new types of quantum solutions that run on classical hardware, also called quantum-inspired algorithms.'
       isCorrect: true
-      explanation: "This sentence is correct. These algorithms allow us to exploit some of the advantages of quantum computing approaches today on classical hardware. "
-    - content: 'Azure Quantum only offers quantum-inspired optimization solutions. For classical optimization, you should look into other Azure products.'
+      explanation: "This statement is correct. These algorithms allow us to use some of the advantages of quantum computing approaches today on classical hardware."
+    - content: 'Azure Quantum offers only quantum-inspired optimization solutions. For classical optimization, you should look into other Azure products.'
       isCorrect: false
-      explanation: "This affirmation is false. Azure Quantum also offers many different optimization solvers that aren't quantum inspired."
+      explanation: "This statement is false. Azure Quantum also offers optimization solvers that aren't quantum inspired."
     - content: 'Quantum-inspired optimization solutions in Azure Quantum are useful for machine learning.'
       isCorrect: false
-      explanation: "This affirmation is false. Although machine learning problems can often be expressed as optimization problems, Azure Quantum optimization solvers are in general not suitable to solve machine learning problems."
+      explanation: "This statement is false. Although machine learning problems can often be expressed as optimization problems, Azure Quantum optimization solvers are generally not suitable for solving machine learning problems."

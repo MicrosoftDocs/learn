@@ -3,9 +3,9 @@ uid: learn-wwl.intro-to-ai-technology.introduction-to-ml-and-dl
 title: Introduction to machine learning and deep learning 
 metadata:
   title: Introduction to machine learning and deep learning 
-  description: In this short talk, business decision-makers will hear a high level understanding of the machine learning and deep learning concepts from an agnostic point of view as well as an explanation of how these technologies can benefit your business. 
-  ms.date: 04/26/2019
-  author: Adriamen
+  description: In this unit, business decision-makers will learn about machine learning and deep learning and how these technologies can benefit their business. 
+  ms.date: 03/05/2021
+  author: ruyakubu
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

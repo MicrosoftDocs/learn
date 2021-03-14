@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.language.rust-get-started
+metadata:
+  title: Get started with Rust
+  description: Learn how to get started with Rust - set up the environment, write a program, and use the Cargo build system.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Rust
+summary: Learn how to get started with Rust - set up the environment, write a program, and use the Cargo build system.
+abstract: |
+  In this module, you will learn how to:
+  - Set up your development environment for using Rust.
+  - Write a simple "Hello, world!" program.
+  - Use Cargo, Rust's package manager and build system.
+prerequisites: | 
+  - A Windows, Mac, or Linux computer
+  - Knowledge of how to download programs from the internet
+iconUrl: /learn/achievements/rust-get-started.svg 
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+- azure
+units:
+- learn.language.rust-get-started.1-introduction
+- learn.language.rust-get-started.2-what-is-rust
+- learn.language.rust-get-started.3-install-rust
+- learn.language.rust-get-started.4-install-visual-studio-code
+- learn.language.rust-get-started.5-hello-world
+- learn.language.rust-get-started.6-what-is-cargo
+- learn.language.rust-get-started.7-hello-world-cargo
+- learn.language.rust-get-started.8-knowledge-check
+- learn.language.rust-get-started.9-summary
+badge:
+  uid: learn.language.rust-get-started.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-understand-common-concepts.9-exercise-hashmaps
+metadata:
+  title: Exercise - Hash maps
+  description: Use what you've learned about hash maps to complete the code.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Hash maps
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-exercise-hashmaps.md)]

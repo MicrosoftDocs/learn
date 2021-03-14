@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: In this module, you'll learn how IoT Hub can be used to configure and manage IoT devices remotely and at scale.
   ms.date: 12/17/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction

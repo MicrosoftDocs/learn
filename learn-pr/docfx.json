@@ -97,6 +97,19 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "azure-networking",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
              {
                 "src": "cela-accessibility",
                 "files": [

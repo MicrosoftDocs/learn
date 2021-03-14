@@ -17,7 +17,7 @@ You'll now add a variable to store your storage account name expression in one p
     "variables": {"variable1": "value"},
     ```
 
-1. Change the name of the variable to **uniqueResourceName**, and change the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. Your variables section will look like this code:
+1. Change the name of the variable to **uniqueStorageName**, and change the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. Your variables section will look like this code:
 
     ```json
     "variables": {
@@ -35,7 +35,7 @@ You'll now add a variable to store your storage account name expression in one p
 
 ## Optionally, deploy the template
 
-The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment. 
+The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment.
 
 ::: zone pivot="cli"
 

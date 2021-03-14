@@ -3,26 +3,12 @@ You can now import the data from the blob storage to the Azure Synapse Analytics
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to run PolyBase T-SQL commands to import data from an Azure Blob storage account into a Azure Synapse Analytics.
 
-## Open the query editor in the Azure portal
+## Use polybase by defining external tables
 
-You use a built-in query editor in the Azure portal to run the necessary queries. You can use any query tool that supports connecting to an Azure SQL Server instance. Some common free tools you can use on Windows are Visual Studio and SQL Server Management Studio. On Linux and macOS, you can use Visual Studio Code with the mssql extension.
+Using Transact-SQL, you can use PolyBase to access files that are located directly on Azure Storage as if they were structured tables within your SQL Pool. You define an **external data source** pointing to the location of the file or the folder the files reside in, the external file format, which can be GZip compressed delimited text, ORC, Parquet or JSON, and then the external table with the column attributes that map to the structure from the external files.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal).
-
-1. Select **SQL database** in the nav bar. If it's not present, use the search box at the top to search for the database by name.
-
-    ![Showing SQL databases](../media/7-show-sql-db.png)
-
-1. Select **demodw** as the name of the target database where you want to import the data.
-
-1. In the nav bar, under the **Overview** section, select **Query editor (preview)**. This tool is a built-in SQL query editor.
-
-    > [!TIP]
-    > If you want to work with a desktop-based tool, you can open Visual Studio from here.
-
-1. Enter the admin or password credentials you used to create the database, and select **OK** to authenticate. The query explorer appears.
-
-    ![Query explorer in the Azure portal](../media/7-query-editor-preview.png)
+> [!div class="mx-imgBorder"]  
+> ![Azure Synapse Studio.](../media/azure-synapse-studio.png)
 
 ## Create an import database
 

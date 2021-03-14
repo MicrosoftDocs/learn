@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: introduction-azure-virtual-wan
+metadata:
+  title: "Introduction to Azure Virtual WAN"
+  description: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Virtual WAN"
+summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Evaluate the functionality of Azure Virtual WAN and understand how it simplifies and helps secure your WAN. 
+  - Explain the functionality and purpose of the components of an Azure Virtual WAN. 
+  - Evaluate the use of Azure Firewall and Azure Firewall Manager to secure the virtual WAN.  
+prerequisites: |
+  To get the best learning experience from this module, you should have: 
+  - Intermediate-level knowledge of networking concepts such as routing, hubs, switches, and DNS. 
+  - Beginner-level knowledge of Azure networking services, including virtual networks, ExpressRoute, site-to-site VPN, point-to-site VPN, Azure Firewall, and Azure regions. 
+  - Intermediate-level knowledge of security concepts such as the zero-trust security model, identity management, and role-based access controls. 
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure-virtual-wan
+units:
+- learn.introduction-azure-virtual-wan.1-introduction
+- learn.introduction-azure-virtual-wan.2-what-is-azure-virtual-wan
+- learn.introduction-azure-virtual-wan.3-how-azure-virtual-wan-works
+- learn.introduction-azure-virtual-wan.4-when-to-use-azure-virtual-wan
+- learn.introduction-azure-virtual-wan.5-knowledge-check
+- learn.introduction-azure-virtual-wan.6-summary
+badge:
+  uid: learn.introduction-azure-virtual-wan.badge

@@ -9,15 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with Azure Quantum
-summary: Learn how to get started with Azure Quantum, what it has to offer, and how to create a Quantum workspace to run jobs in the cloud.
+summary: Learn how to get started with Azure Quantum, what it has to offer, and how to create an Azure Quantum workspace to run jobs in the cloud.
 abstract: |
-  In this module you will:
-  - Discover what the Azure Quantum service has to offer: Quantum computing and Optimization
+  In this module, you will:
+  - Discover what the Azure Quantum service has to offer: quantum computing and optimization.
   - Prepare your Azure account to use Azure Quantum.
-  - Create a Quantum workspace.
+  - Create an Azure Quantum workspace.
   - Learn about application domains for Azure Quantum.
-prerequisites: In order to use the Azure Quantum service, you will need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: To use the Azure Quantum service, you need an active Azure subscription. For more information about creating an Azure account and subscription, see the Microsoft Learn module [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/).
+iconUrl: /learn/achievements/quantum/get-started-quantum-workspace.svg
 ratingEnabled: true
 levels:
 - beginner

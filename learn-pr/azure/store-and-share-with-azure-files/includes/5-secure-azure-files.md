@@ -14,7 +14,7 @@ When you mount Azure file shares, Windows needs to communicate over port 445. Or
 
 ### Configure IP-based firewall rules
 
-To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal or by using a PowerShell command.
+To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal, or by using a PowerShell command.
 
 ```powershell
 Add-AzStorageAccountNetworkRule `
@@ -23,7 +23,7 @@ Add-AzStorageAccountNetworkRule `
     -IPAddressOrRange "NNN.NNN.NNN.NNN"
 ```
 
-Or you could use a CLI command:
+Or, you could use a CLI command.
 
 ```azurecli
 "az storage account network-rule add \"
@@ -32,11 +32,11 @@ Or you could use a CLI command:
     --ip-address "NNN.NNN.NNN.NNN"
 ```
 
-Where `NNN.NNN.NNN.NNN` is your public-facing IP address.
+where `NNN.NNN.NNN.NNN` is your public-facing IP address.
 
 ### Require secure transfer for all connections
 
-Using the commands in the previous exercise creates an Azure storage account with secure transfer enabled by default. If your file shares were created without this feature enabled, it's easy to do that in the portal.
+Running the commands in the previous exercise creates an Azure storage account with secure transfer enabled by default. If your file shares were created without this feature enabled, it's easy to do that in the portal.
 
 :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.hpc-storage-considerations
+metadata:
+  title: Understand factors that influence High Performance Computing (HPC) storage selection in Azure
+  description: We'll discuss various factors that influence High Performance Computing (HPC) storage selection in Azure. We'll review NFS, file access, directory services, parallel file systems and hybrid file access considerations.
+  ms.date: 12/29/2020
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand factors that influence HPC storage selection in Azure
+summary: This module will cover various factors that influence High Performance Computing (HPC) storage selection in Azure. We'll review NFS, file access, directory services, parallel file systems and hybrid file access considerations.
+abstract: |
+  In this module, you will:
+  - Document the file access architecture for your HPC use case
+  - Consider the implications of your architecture requirements
+  - Compare several file access architectures
+prerequisites: |
+  - Understanding of file systems
+  - Understanding of shared file systems
+  - File system permissions and authentication methods, and file system operations
+  - Understanding of High Performance Computing (HPC), how HPC jobs run, and how HPC interacts with storage
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-storage
+units:
+- learn.hpc-storage-considerations.1-introduction
+- learn.hpc-storage-considerations.2-file-access
+- learn.hpc-storage-considerations.3-performance-considerations
+- learn.hpc-storage-considerations.4-traffic-considerations
+- learn.hpc-storage-considerations.5-authentication-authorization-considerations
+- learn.hpc-storage-considerations.6-nfs-overview
+- learn.hpc-storage-considerations.7-parallel-file-systems
+- learn.hpc-storage-considerations.8-hybrid-file-access-requirements
+- learn.hpc-storage-considerations.9-summary
+badge:
+  uid: learn.hpc-storage-considerations.badge

@@ -61,7 +61,7 @@ Ensure that no guest users exist, or alternatively if the business requires gues
 
 1. Select the **Show** dropdown, and select **Guest users only**.
 
-1. Verify that there are no guest users listed (`USER TYPE=Guest`).
+1. Verify that no guest users exist depending on your requirements (`USER TYPE=Guest`).
 
     ![Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.](../media/2-guest-users.png)
 

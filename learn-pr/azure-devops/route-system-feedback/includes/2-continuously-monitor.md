@@ -71,7 +71,7 @@ CI/CD enables you to integrate and deploy code changes to your application autom
 Here are some recommended ways to ensure quality during your deployment process:
 
 * Use [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines?azure-portal=true) to implement a CI/CD pipeline that automates your entire process, including running automated tests, from the time you commit code all the way to production.
-* Use [quality gates](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/gates?view=azure-devops?azure-portal=true) to add monitoring into your pre-deployment and post-deployment environments.
+* Use [quality gates](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/gates?azure-portal=true) to add monitoring into your pre-deployment and post-deployment environments.
 
     Quality gates help ensure that you meet key health and performance metrics (KPIs) as your applications move from development to production. Quality gates also help ensure that any differences in the infrastructure environment or the way that you scale do not negatively impact your KPIs.
 * [Maintain separate monitoring instances](https://docs.microsoft.com/azure/application-insights/app-insights-separate-resources?azure-portal=true) between your different deployment environments such as development, test, staging, and production.

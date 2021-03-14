@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.8-selecting-the-right-mpi-library
+title: Select the right MPI library
+metadata:
+  title: Select the right MPI library
+  description: Discussion about what MPI library to use when running optimized HPC applications
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-selecting-the-right-mpi-library.md)]

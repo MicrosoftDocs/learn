@@ -4,4 +4,4 @@ You also learned about ways the getting started guides can help unblock common i
 
 ## Next steps
 
-Get started with [CAF](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/?azure-portal=true) to find more getting started articles that can help with additional common blockers, and explore the [CAF Ready methodology](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/?azure-portal=true) to learn about common operating models in the cloud, environmental configuration, Azure landing zones, and tools to help you build out your cloud platform in Azure.
+Get started with [CAF](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/?azure-portal=true) to find more getting started articles that can help with additional common blockers, and explore the [CAF Ready methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/?azure-portal=true) to learn about common operating models in the cloud, environmental configuration, Azure landing zones, and tools to help you build out your cloud platform in Azure.

@@ -75,14 +75,14 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 To learn more about build agents and agent pools, see the following articles:
 
-* [Azure Pipelines agents](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?view=azure-devops&azure-portal=true)
-* [Agent pools](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?view=azure-devops&azure-portal=true)
-* [Self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?view=azure-devops&azure-portal=true)
-* [Self-hosted macOS agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-osx?view=azure-devops&azure-portal=true)
-* [Self-hosted Windows agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?view=azure-devops&azure-portal=true)
-* [Container jobs](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#pool) (YAML schema)
-* [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?view=azure-devops&azure-portal=true)
+* [Azure Pipelines agents](https://docs.microsoft.com/azure/devops/pipelines/agents/agents?azure-portal=true)
+* [Agent pools](https://docs.microsoft.com/azure/devops/pipelines/agents/pools-queues?azure-portal=true)
+* [Self-hosted Linux agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-linux?azure-portal=true)
+* [Self-hosted macOS agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-osx?azure-portal=true)
+* [Self-hosted Windows agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?azure-portal=true)
+* [Container jobs](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases?tabs=yaml&azure-portal=true)
+* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema#pool) (YAML schema)
+* [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?azure-portal=true)
 
 ### Create your own VM images
 

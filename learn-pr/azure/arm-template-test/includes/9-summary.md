@@ -9,11 +9,11 @@ You should now have a good understanding of what scripts and tools can help you 
 
 ## Additional resources
 
-- [ARM template deployment what-if operation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell?azure-portal=true)
-- [Default test cases for the ARM template test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
+- [ARM template deployment what-if operation](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell?azure-portal=true)
+- [Default test cases for the ARM template test toolkit](https://docs.microsoft.com/azure/azure-resource-manager/templates/test-cases?azure-portal=true)
 - [Azure Resource Manager deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?azure-portal=true)
 - [Visual Studio Code integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal?azure-portal=true)
 - [Azure CLI configuration](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)
-- [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
-- [Using the ARM template test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
+- [Installing PowerShell on Windows](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
+- [Using the ARM template test toolkit](https://docs.microsoft.com/azure/azure-resource-manager/templates/test-toolkit?azure-portal=true)
 - [ARM template test toolkit (direct download)](https://aka.ms/arm-ttk-latest?azure-portal=true)

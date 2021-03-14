@@ -10,4 +10,4 @@ Security Center without Azure Defender is enabled free of charge on all your Azu
 
 Enabling Azure Defender extends the free mode capabilities to workloads running in private and other public clouds, providing unified security management and threat protection across your hybrid cloud workloads.
 
-For more information on Azure Security Center, secure score, and Azure Defender pricing, see the summary links.
+For more information on visit [Azure Defender pricing](https://azure.microsoft.com/pricing/details/azure-defender/).

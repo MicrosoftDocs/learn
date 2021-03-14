@@ -39,7 +39,7 @@ Formats that you can use are csv, json, xml, parquet etc.
 It can also be extended by other formats with external data sources. 
 A tip that might be useful is using parquet with snappy compression (which also happen to be the default in Spar 2.x.)
 Why Parquet?
-It stores data in a columnar format, is compressed and highly optimized in Spark, as well ass, splittable in order to decompress. 
+It stores data in a columnar format, is compressed and highly optimized in Spark, as well as, splittable in order to decompress. 
 
 When it comes to the caching, there is a native built in Spark caching mechanism. 
 It can be used through different methods like: `.persist()`, `.cache()`, and `CACHE TABLE`. 

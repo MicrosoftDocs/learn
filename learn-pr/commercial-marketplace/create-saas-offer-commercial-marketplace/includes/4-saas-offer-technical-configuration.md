@@ -51,7 +51,7 @@ For more detailed information on anomaly detection, you can reference our [docum
 
 To assist with development, Microsoft has published several tools to speed your development:
 
-- Client libraries for several common languages including.NET-based languages, JVM-based languages, and Python.
+- Client libraries for several common languages including .NET-based languages, JVM-based languages, and Python.
 
 - An OpenAPI specification to allow you to quickly develop in other languages supported by various OpenAPI library generators.
 

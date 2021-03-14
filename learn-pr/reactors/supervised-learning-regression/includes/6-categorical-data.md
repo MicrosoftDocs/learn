@@ -33,8 +33,6 @@ The output is:
 
 ***
 
-Unsurprisingly, OECD member countries cluster at the high end of the income scale. African countries lag at the poorer end. Countries from the `other` group include countries that range from poor ones in Southeast Asia to oil-rich Middle Eastern countries, so countries from that group are scattered across the income spectrum.
-
 Now that we have the data points detailed in color, let's fit three separate, simple linear models for each group of countries.
 
 ```python
