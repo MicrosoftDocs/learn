@@ -8,7 +8,7 @@ Our first Learn Live series is titled "Migrate an ASP.NET Core application from 
 
 Check out this short trailer to get an overview of the technologies covered in the series.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Learn-Live-Trailer/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LJ8B]
 
 There's a deployed version of the application available at [vanarsdel-realestate.azurewebsites.net](https://vanarsdel-realestate.azurewebsites.net).
 

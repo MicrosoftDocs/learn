@@ -52,6 +52,9 @@ On the **Basics** tab, provide for the following details:
     - **Geo-redundant storage (GRS)** copies your data synchronously three times within a single physical location in the primary region using LRS. It then copies your data asynchronously to a single physical location in the secondary region. This form of replication protects you against regional outages.
 
     - **Read-access geo-redundant storage (RA-GRS)** replication is an extension of GRS that provides direct read-only access to the data in the secondary location. In contrast, the GRS option doesn't expose the data in the secondary location, and it's only used to recover from a failure in the primary location. RA-GRS replication enables you to store a read-only copy of the data close to users that are located in a geographically distant location, helping to reduce read latency times. 
+  
+    - **Zone redundant storage (ZRS)** Zone-redundant storage replicates your Azure Storage data synchronously across three Azure availability zones in the primary region. Each availability zone is a separate physical location with independent power, cooling, and networking. This is useful for applications requiring high availability. 
+
 
     > [!NOTE]
     > To maintain performance, premium storage accounts only support LRS replication. This is because replication is performed synchronously to maintain data integrity. Replicating data to a distant region can increase latency to the point at which any advantages of using premium storage are lost.
@@ -84,11 +87,6 @@ az storage account create \
 ```
 
 The **sku** is combination of the performance tier and replication options. It can be one of Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, or Standard_ZRS.
-
-> [!NOTE]
-> ZRS in some of these skus stands for *Zone redundant storage*. Zone-redundant storage replicates your Azure Storage data synchronously across three Azure availability zones in the primary region. Each availability zone is a separate physical location with independent power, cooling, and networking. This is useful for applications requiring high availability. 
->
-
 
 The **kind** parameter should be one of BlobStorage, BlockBlobStorage, FileStorage, Storage, or StorageV2.
 

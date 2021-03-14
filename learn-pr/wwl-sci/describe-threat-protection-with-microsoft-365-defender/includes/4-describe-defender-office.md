@@ -1,9 +1,9 @@
-Microsoft Defender for Office 365 (MSDO), formerly Office 365 Advanced Threat Protection, safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
+Microsoft Defender for Office 365, formerly Office 365 Advanced Threat Protection, safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
 
 Microsoft Defender for Office 365 covers these key areas:
 
 - **Threat protection policies**: Define threat protection policies to set the appropriate level of protection for your organization.
-- **Reports**: View real-time reports to monitor MSDO performance in your organization.
+- **Reports**: View real-time reports to monitor Microsoft Defender for Office 365 performance in your organization.
 - **Threat investigation and response capabilities**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 - **Automated investigation and response capabilities**: Save time and effort investigating and mitigating threats.
 
@@ -15,8 +15,8 @@ This plan offers configuration, protection, and detection tools for your Office 
 
 - **Safe Attachments**: Checks email attachments for malicious content.
 - **Safe Links**: Links are scanned for each click. A safe link remains accessible, but malicious links are blocked.
-- **ATP for SharePoint, OneDrive, and Microsoft Teams**: Protects your organization when users collaborate and share files by identifying and blocking malicious files in team sites and document libraries.
-- **ATP anti-phishing protection**: Detects attempts to impersonate your users and internal or custom domains.
+- **Protection for SharePoint, OneDrive, and Microsoft Teams**: Protects your organization when users collaborate and share files by identifying and blocking malicious files in team sites and document libraries.
+- **Anti-phishing protection**: Detects attempts to impersonate your users and internal or custom domains.
 - **Real-time detections**: A real-time report that allows you to identify and analyze recent threats.
 
 ## Microsoft Defender for Office 365 Plan 2

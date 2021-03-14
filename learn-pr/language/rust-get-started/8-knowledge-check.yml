@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-get-started.8-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  questions:
+  - content: "How is Rust code executed?"
+    choices:
+    - content: "Scripts are interpreted by Rust."
+      isCorrect: false
+      explanation: "Rust programs are not compiled into a script, but instead an executable file."
+    - content: "Using a virtual machine."
+      isCorrect: false
+      explanation: "Virtual machines are not needed to execute Rust programs, although they can be used to execute a Rust program."
+    - content: "Through compilation followed by direct execution."
+      isCorrect: true
+      explanation: "Correct. Rust code is compiled into an executable file, and then that executable is run."
+    - content: "Rust code must be included in a C/C++ source file."
+      isCorrect: false
+      explanation: "Rust code must be included in a Rust source file with the proper extension, and be compiled before it is run."
+  - content: "Which of the following can't Cargo do?"
+    choices:
+    - content: "Build an existing Rust project."
+      isCorrect: false
+      explanation: "You can build a project with Cargo by using the command 'cargo build'."
+    - content: "Test a Rust project."
+      isCorrect: false
+      explanation: "You can test a project with Cargo by using the command 'cargo test'."
+    - content: "Update the installed Rust compiler version."
+      isCorrect: true
+      explanation: "Correct. You are unable to update the Rust compiler version with Cargo. You must use the 'rustup' tool to do that."
+    - content: "Publish a library to Crates.io."
+      isCorrect: false
+      explanation: "You can publish a library with Cargo by using the command 'cargo publish'."
+ 

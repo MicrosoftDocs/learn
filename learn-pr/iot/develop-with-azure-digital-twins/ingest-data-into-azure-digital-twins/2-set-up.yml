@@ -3,7 +3,7 @@ uid: learn.iot.ingest-data-into-azure-digital-twins.set-up
 title: Set up Azure Digital Twins 
 metadata:
   title: Set up Azure Digital Twins
-  description: To learn the different ways of ingesting data, set up Azure Digital Twins, IoT Hub, Function, and Logic App.
+  description: To learn the different ways of ingesting data, set up Azure Digital Twins, IoT Hub, Functions, and Logic Apps.
   ms.date: 10/30/2020
   author: teodelas
   ms.author: teodelas

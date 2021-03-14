@@ -28,7 +28,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Create the condition
 
-1. Under **Condition**, select **Select condition** link.
+1. Under **Condition**, select **Add condition** link.
 1. Under **Signal name**, select **Percentage CPU**.
 
     ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
@@ -49,7 +49,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Add an action
 
-1. Under **Action group**, select **Select action group**.
+1. Under **Actions**, select **Add action groups**.
 1. Select **Create action group**.
 1. On the **Basics** page, use the following values:
 
@@ -64,7 +64,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Select **Notifications**.
 1. On the **Notifications** page, use the following values:
 
-   ![Screenshot that shows the "Add action group" pane filled out](../media/8-create-action-group-notifications.png)
+   ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
 
     |Field  |Value  |
     |---|---|

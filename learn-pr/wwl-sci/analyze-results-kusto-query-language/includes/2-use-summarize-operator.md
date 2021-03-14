@@ -10,9 +10,7 @@ Run each Query separately to see the results.
 SecurityEvent | summarize by Activity
 
 SecurityEvent
-
 | where EventID == "4688"
-
 | summarize count() by Process, Computer
 
 ```
@@ -24,11 +22,11 @@ The following is a partial list of the most common simple aggregate functions us
 | count(), countif()| Returns a count of the records per summarization group|
 | dcount(), dcountif()| Returns an estimate for the number of distinct values taken by a scalar expression in the summary group.|
 | avg(), avgif()| Calculates the average of Expr across the group.|
-| Max(), maxif()| Returns the maximum value across the group.|
-| Min(), minif()| Returns the minimum value across the group.|
-| Percentile()| Returns an estimate for the specified nearest-rank percentile of the population defined by *Expr*. The accuracy depends on the density of population in the region of the percentile.|
+| max(), maxif()| Returns the maximum value across the group.|
+| min(), minif()| Returns the minimum value across the group.|
+| percentile()| Returns an estimate for the specified nearest-rank percentile of the population defined by *Expr*. The accuracy depends on the density of population in the region of the percentile.|
 | stdev(), stdevif()| Calculates the standard deviation of Expr across the group, considering the group as a sample.|
-| Sum(), sumif()| Calculates the sum of Expr across the group.|
+| sum(), sumif()| Calculates the sum of Expr across the group.|
 | variance(), varianceif()| Calculates the variance of Expr across the group, considering the group as a sample.|
 
 ## count function example
@@ -39,11 +37,8 @@ The KQL statement will return three columns: <cnt>, <AccountType>, and <Computer
 
 ```kusto
 SecurityEvent
-
 | where TimeGenerated > ago(1h)
-
 | where EventID == 4624
-
 | summarize cnt=count() by AccountType, Computer
 
 ```
@@ -54,7 +49,6 @@ The following example will return a count of unique IP Addresses.
 
 ```kusto
 SecurityEvent
-
 | summarize dcount(IpAddress)
 
 ```
@@ -71,15 +65,10 @@ let timeframe = 1d;
 let threshold = 3;
 
 SigninLogs
-
 | where TimeGenerated >= ago(timeframe)
-
 | where ResultType == "50057"
-
 | where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
-
-| summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
-
+| summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
 | where applicationCount >= threshold
 
 ```

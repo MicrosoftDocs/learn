@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.language.rust-understand-common-concepts
+metadata:
+  title: Understand common concepts in Rust
+  description: Learn about Rust concepts such as variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
+  ms.date: 12/14/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand common concepts in Rust
+summary: Learn the basics of Rust. Explore variables, data types, structs, enums, functions, indexing, hash maps, and flow control.
+abstract:  |
+  In this module, you will:
+  - Use the `let` statement to assign values to variables.
+  - Learn how to comment your code to make it more descriptive.
+  - Discover the basic data types that exist in the Rust standard library.
+  - Write your own functions.
+  - Use collections to store multiple values in a single structure.
+  - Learn how to use conditional statements and loops in your code.
+prerequisites: | 
+  - Have your Rust development environment already set up.
+  - Know how to create, edit, and run Rust code by using Cargo.
+iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+- azure
+units:
+- learn.language.rust-understand-common-concepts.1-introduction
+- learn.language.rust-understand-common-concepts.2-variables
+- learn.language.rust-understand-common-concepts.3-data-types
+- learn.language.rust-understand-common-concepts.4-structs-enums
+- learn.language.rust-understand-common-concepts.5-exercise-structs-enums
+- learn.language.rust-understand-common-concepts.6-functions
+- learn.language.rust-understand-common-concepts.7-collection-types
+- learn.language.rust-understand-common-concepts.8-exercise-indexing
+- learn.language.rust-understand-common-concepts.9-exercise-hashmaps
+- learn.language.rust-understand-common-concepts.10-control-flow
+- learn.language.rust-understand-common-concepts.11-knowledge-check
+- learn.language.rust-understand-common-concepts.12-summary
+badge:
+  uid: learn.language.rust-understand-common-concepts.badge

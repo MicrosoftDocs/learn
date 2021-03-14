@@ -4,7 +4,7 @@ Attackers’ ability to bypass conventional access controls is ending any illusi
 
 In practice, this means that we no longer assume that a password is sufficient to validate a user but add multi-factor authentication to provide additional checks. Instead of granting access to all devices on the corporate network, users are allowed access only to the specific applications or data that they need.
 
-This video introduces the Zero Trust methodology:
+This video introduces the Zero Trust methodology: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4J3ms]
 

@@ -8,7 +8,7 @@ A storage account in Azure is organized into one or more _containers_ that store
 
 To use the **Azure Storage Blobs client library for .NET** in your program, first you need to add a using statement at the top of your program for the `Azure.Storage.Blobs` namespace.
 
-1. Run the following command to add **Azure Storage Blobs client library for .NET**.
+1. Add the following command to Program.cs.
 
     ```csharp
     using Azure.Storage.Blobs;

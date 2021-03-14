@@ -1,14 +1,12 @@
-In this unit, we'll outline the JBoss Admin tooling and in the next exercise, access it.
+This unit shows you how the JBoss administration tools appear on the screen and how to view the application logs.
 
-## JBoss EAP admin tools (CLI & web console)
+## JBoss EAP administration tools (CLI and web console)
 
-Azure App Service provides both an administrative graphical user interface and a command-Line Interface.
+Azure App Service provides both an administrative graphical user interface and a command-line interface. When you open the admin web console, you see the following screen:
 
-When you access to Admin Web Console, you'll see the following Screen:
+:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot that shows the main page of the admin console.":::
 
-:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Admin Console Top Page":::
-
-## View the application logs
+## Application logs
 
 You can view the JBoss application logs by using the Azure CLI:
 
@@ -16,4 +14,4 @@ You can view the JBoss application logs by using the Azure CLI:
 az webapp log tail --name <your_app_name> -g <resource_group_name>
 ```
 
-In the next exercise, you'll learn how to access to the JBoss Admin Tools and get the log stream from your running application.
+In the next exercise, you'll learn how to access the JBoss administration tools and get the log stream from your running application.

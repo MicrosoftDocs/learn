@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-hpc-application-azure-virtual-machines-series.9-knowledge-selecting-the-right-mpi-library
+title: Knowledge check - Select the right MPI library
+metadata:
+  title: Knowledge check - Select the right MPI library
+  description: Learn how to select the appropriate MPI library to run an optimized HPC application
+  ms.date: 02/04/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-selecting-the-right-MPI-library.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which MPI libraries will work on the HB120_v2, HB60, and HC44 VMs? 
+    choices:
+    - content: Only Intel MPI, because Azure only supports the DAPL infiniBand API.
+      isCorrect: false
+      explanation: HB120_v2, HB60 and HC44 support virtualization of PCIe vi SR-IOV so all MPI libraries will work and not just Intel MPI.
+    - content: Mellanox tuned HPCX MPI library
+      isCorrect: false
+      explanation: HB120_v2, HB60 and HC44 support virtualization of PCIe vi SR-IOV so all MPI libraries will work and not just HPCX.
+    - content: All popular MPI libraries
+      isCorrect: true
+      explanation:  HB120_v2, HB60 and HC44 support SR-IOV and so all MPI libraries that work on premises with infiniBand will also work on these HPC VMs.
+  - content: Which MPI library is recommended on HB120, HB60, and HC44? 
+    choices:
+    - content: Intel MPI 2019 update5+
+      isCorrect: false
+      explanation: Intel MPI 2019 update5+ now supports the mlx provider, UCX and HCOLL, but there is a better option.
+    - content: HPCX MPI library
+      isCorrect: true
+      explanation: yes, HPCX is recommended because it is tuned for the Azure hardware and takes advantages of all the communication performance optimizations.
+    - content: Any MPI library on the CentOS-HPC 7.8+ Marketplace image, they all have the same performance.
+      isCorrect: false
+      explanation: All MPI libraries do not have the same performance and the performance differences may depend on the communication pattern.
+  - content: Which MPI library is ABI compatible with mpich library? 
+    choices:
+    - content: Intel MPI
+      isCorrect: true
+      explanation: Yes, Intel MPI is ABI compatible with mpich, so you could build with mpich and run the resulting HPC application with Intel MPI.
+    - content: HPCX MPI library
+      isCorrect: false
+      explanation: No, HPCX is ABI compatible with OpenMPI and not mpich.
+    - content: All MPI libraries are ABI compatible
+      isCorrect: false
+      explanation: No, all MPI libraries are API compatible if they follow the MPI standards, but they all are not ABI compatible.

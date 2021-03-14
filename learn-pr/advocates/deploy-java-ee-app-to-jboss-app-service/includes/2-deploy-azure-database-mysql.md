@@ -1,70 +1,55 @@
-In this unit, you'll look at how to create an Azure Database for MySql.
+Azure Database for MySQL is a relational database service that's based on MySQL Community Edition. It's a fully managed database-as-a-service offering that can handle mission-critical workloads with predictable performance and dynamic scale.
 
-## Deploy Azure Database for MySQL
+## Azure Database for MySQL deployment options
 
-`Azure Database for MySQL` is a relational database service powered by MySQL community edition. It's a fully managed `database-as-a-service` offering that can handle mission-critical workloads with predictable performance and dynamic scale.
+To host a MySQL database in Azure, you can use either the Single Server or Flexible Server (Preview) deployment option. The Flexible Server option provides:
 
-You can use either Single Server or Flexible Server (Preview) to host a MySQL database in Azure.
+- Better control of your database servers and cost optimization.
+- The ability to develop applications by customizing the MySQL engine.
+- Zone-redundant high availability.
+- Managed maintenance windows to control the timing of patches and upgrades.
+- Configuration parameters for tuning.
 
-### Azure Database for MySQL Flexible Server
+## Commands for deploying a Flexible Server instance
 
-A flexible server provides better control of your database servers, more options for high availability, and cost optimization.
+To deploy a Flexible Server instance of Azure Database for MySQL, you first create a resource group. You then create the instance in the resource group. Finally, to access the instance, you configure a firewall rule.
 
-Flexible Server offers control through maintenance windows and configuration parameters for tuning. It allows for zone redundant high availability and controls the timing for patches and upgrades.
+The following steps outline the commands for those tasks:
 
-Flexible servers are best suited for:
+1. Sign in to Azure:
 
-* Application development requiring better control and customizations of MySQL engine.
-* Zone redundant high availability
-* Managed maintenance windows
+   ```azurecli
+   az login
+   ```
 
-### How to create Azure Database for MySQL Flexible Server
+1. Create an Azure resource group:
 
-To create a MySQL on Azure Flexible server, first create a `Resource Group` then create a flexible `Azure Database for MySQL` instance in the resource group. Finally to access the MySQL instance, you configure a Firewall Rule.
-In the below steps, we'll outline the commands to create a Flexible server and in the next unit, we'll create one.
+   ```azurecli
+   az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
+   ```
 
-#### Sign in to Azure
+1. Create a Flexible Server instance of Azure Database for MySQL:
 
-Step 1 - Sign in to Azure with following command:
+   ```azurecli
+   az mysql flexible-server create \
+         --location $MYSQL_LOCATION \
+         --resource-group $MYSQL_RES_GRP_NAME \
+         --name $MYSQL_SERVER_NAME \
+         --admin-user $MYSQL_USER \
+         --admin-password $MYSQL_PASSWORD \
+         --sku-name Standard_B1ms \
+         --public-access $PUBLIC_IP \
+         --storage-size 32 \
+         --version 5.7
+   ```
 
-```azurecli
-az login
-```
+1. Create a firewall rule:
 
-#### Create a resource group
-
-Step 2 - Create an Azure Resource Group with following command:
-
-```azurecli
-az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
-```
-
-#### Create a MySQL DB instance
-
-Step 3 - Create an Azure Database for MySQL Flexible Server with following command:
-
-```azurecli
-az mysql flexible-server create \
-      --location $MYSQL_LOCATION \
-      --resource-group $MYSQL_RES_GRP_NAME \
-      --name $MYSQL_SERVER_NAME \
-      --admin-user $MYSQL_USER \
-      --admin-password $MYSQL_PASSWORD \
-      --sku-name Standard_B1ms \
-      --public-access $PUBLIC_IP \
-      --storage-size 32 \
-      --version 5.7
-```
-
-#### Create a firewall rule
-
-Step 4 - Create a Firewall Rule to MySQL Flexible Server with following command:
-
-```azurecli
-az mysql flexible-server firewall-rule create \
-      -g $MYSQL_RES_GRP_NAME \
-      -n $MYSQL_SERVER_NAME \
-      -r AllowAllAzureIPs \
-      --start-ip-address 0.0.0.0 \
-      --end-ip-address 255.255.255.255
-```
+   ```azurecli
+   az mysql flexible-server firewall-rule create \
+         -g $MYSQL_RES_GRP_NAME \
+         -n $MYSQL_SERVER_NAME \
+         -r AllowAllAzureIPs \
+         --start-ip-address 0.0.0.0 \
+         --end-ip-address 255.255.255.255
+   ```

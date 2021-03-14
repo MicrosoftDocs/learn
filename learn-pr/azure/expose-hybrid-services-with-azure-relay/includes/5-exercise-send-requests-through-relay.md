@@ -143,8 +143,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
 
     ```bash
     cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/listener
-    dotnet build
-    dotnet bin/Debug/netcoreapp2.2/listener.dll
+    dotnet run
     ```
 
 1. When you receive the "Server listening" message, you can start the sender. Open a new instance of your browser, and go to the [Welcome to Azure Cloud Shell](https://shell.azure.com) page.
@@ -155,8 +154,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
 
     ```bash
     cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/sender
-    dotnet build
-    dotnet bin/Debug/netcoreapp2.2/sender.dll
+    dotnet run
     ```
 
 ## Test the apps

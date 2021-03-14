@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.ai-machine-learning-fundamentals
 metadata:
-  title: Choose the best AI service for your needs
-  description: Examine Azure's AI services, and choose the right one for your company.
+  title: Choose the best AI service for your needs (AZ-900)
+  description: Examine Azure's AI services, and choose the right one for your company. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best AI service for your needs

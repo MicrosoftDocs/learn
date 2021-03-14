@@ -1,19 +1,20 @@
 ## Use psql to connect in Azure Cloud Shell
 
-1. Go to Azure Cloud Shell
+1. Go to Azure Cloud Shell.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com?azure-portal=true)
 
-1. Select **Bash**
-1. Select the subscription you used in the previous exercise to deploy the Hyperscale server group
+1. Select **Bash**.
+
+1. Select the subscription you used in the previous exercise to deploy the Hyperscale server group.
 
     :::image type="content" source="../media/5a-subscription.png" alt-text="Select Subscription.":::
 
-    After a few seconds, a black Cloud Shell should appear
+    After a few seconds, the Cloud Shell appears.
 
     :::image type="content" source="../media/5b-shell.png" alt-text="Azure Cloud Shell.":::
 
-1. To make things easier, we'll save the name of the server group in the Cloud Shell. Copy the code below, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
+1. To make things easier, we'll save the name of the server group in the Cloud Shell. Copy the following code, and replace the `{SERVER-NAME}` with the name you set for the server in the previous exercise.
 
     ```bash
     SERVERNAME={SERVER-NAME}
@@ -29,22 +30,22 @@
        psql "host=$SERVERNAME-c.postgres.database.azure.com port=5432 dbname=citus user=citus sslmode=require"
     ```
 
-1. At the prompt, type in your password, then Select Enter to connect to your Hyperscale server group.
+1. At the prompt, enter your password, and then press <kbd>Enter</kbd> to connect to your Hyperscale server group.
 
     > [!NOTE]
-    > You can reset your password in the [Azure Portal](https://portal.azure.com?azure-portal=true). Select the server resource you created in the previous exercise (such as `payment-server-demo`), then select `Reset password`
+    > You can reset your password in the [Azure Portal](https://portal.azure.com?azure-portal=true). Select the server resource you created in the previous exercise (such as `payment-server-demo`), and then select `Reset password`.
 
 ## Create tables in the database
 
 Now that you know how to connect to your Hyperscale server group, we can start to fill out the database. We'll:
 
-- Create two tables
-- Tell Hyperscale to shard the two tables across the worker nodes
-- Insert payment and user data into the tables
+- Create two tables.
+- Inform Hyperscale to shard the two tables across the worker nodes.
+- Insert payment and user data into the tables.
 
-First, create the event and user tables.
+First, let's create the event and user tables.
 
-1. In the Cloud Shell window, run the following query to create our payment_events and payment_users tables:
+1. In the Cloud Shell, run the following query to create our payment_events and payment_users tables.
 
     ```SQL
     CREATE TABLE payment_users
@@ -72,7 +73,7 @@ First, create the event and user tables.
     
     In our case, we have the **user_id** to shard and we want to distribute both the tables we created. We'll shard the two tables from our previous step, `payment_events` and `payment_users`.
     
-1. In the Cloud Shell window, run the following query to distribute our payment_events and payment_users tables to the worker nodes:
+1. In the Cloud Shell, run the following query to distribute our payment_events and payment_users tables to the worker nodes.
 
     ```sql
     SELECT create_distributed_table('payment_events', 'event_id');
@@ -86,7 +87,7 @@ First, create the event and user tables.
 
 ## Load and query data
 
-Now we're ready to load in our **user data** `users.csv`, and **payment event data** `events.csv`.
+Now, we're ready to load in our **user data** `users.csv`, and **payment event data** `events.csv`.
 
 1. Run the following command to download the CSV files of our user and payment event data.
 
@@ -104,11 +105,11 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     \copy payment_events from 'events.csv' WITH CSV;
     ```
 
-    ### Run queries
+### Run queries
 
-    Our data is now loaded and distributed. Let's run a couple queries.
+Our data is now loaded and distributed. Let's run a couple queries.
 
-1. Run the follow query in the Cloud Shell to see how many events we've stored.
+1. Run the following query in the Cloud Shell to see how many events we've stored.
 
     ```sql
     SELECT count(*) from payment_events;
@@ -116,7 +117,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
 
     126,195 events. Let's look into the data further.
 
-1. Run the following query to see how many transactions we're having per hour.
+1. Run the following query in the Cloud Shell to see how many transactions we're having per hour.
 
     ```sql
     SELECT date_trunc('hour', created_at) AS hour,
@@ -127,7 +128,7 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     ORDER BY hour;
     ```
 
-1. And now, let's take a look for high activity and see if we can find anything interesting.
+1. Now, let's take a look for high activity, and see if we can find anything interesting. Run the following query.
 
     ```sql
     SET citus.enable_repartition_joins TO ON;
@@ -140,12 +141,12 @@ Now we're ready to load in our **user data** `users.csv`, and **payment event da
     ORDER BY purchases DESC LIMIT 20;
     ```
 
-    We can see our most active user is `LombiqBot`, with 2232 transactions within the four hour window. Interesting.
+    We can see our most active user is `LombiqBot`, with 2232 transactions within the four-hour window. Interesting.
 
-1. In the Cloud Shell window, run to disconnect from the Hyperscale instance:
+1. In the Cloud Shell, run the following command to disconnect from the Hyperscale instance.
 
     ```sql
     \q
     ```
     
-    Keep the Cloud Shell tab open, and move onto Unit 6 - Scale up and scale out.
+    Keep the Cloud Shell open, and move onto Unit 6 - Scale up and scale out.

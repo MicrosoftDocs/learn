@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-variable-types.6-unions-intersections
+title: Union and intersection types in TypeScript
+metadata:
+  title: Union and intersection types in TypeScript
+  description: Learn about the union type and the intersection type, how to combine two or more types and how to define a literal type.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-unions-intersections.md)]

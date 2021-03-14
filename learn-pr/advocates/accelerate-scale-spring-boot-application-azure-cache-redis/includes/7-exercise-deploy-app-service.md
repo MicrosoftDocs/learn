@@ -2,7 +2,7 @@ Now that you have everything running locally, let's deploy the application to th
 
 ## Create an Azure App Service instance
 
-Let's create an Azure App Service instance to host our application. You'll create a basic application service plan using Linux, and you'll add a Java application service instance in it:
+Let's create an Azure App Service instance to host our application. The following code creates a basic App Service plan that uses Linux and then adds an instance of Java on App Service in that plan:
 
 ```bash
 az appservice plan create \
@@ -19,16 +19,16 @@ az webapp create \
 ```
 
 > [!NOTE]
-> If you'd rather use Java 11 instead of Java 8, use **"JAVA|11-java11"** as the web application runtime.
+> If you'd rather use Java 11 instead of Java 8, use `"JAVA|11-java11"` as the web application runtime.
 
 > [!NOTE]
-> We're re-using the **$AZ_REDIS_NAME** variable to name the Application Service plan and the Application Service instance, but you can use your own names here. Az the Application Service instance name will be part of its URL, it needs to be unique across Azure.
+> We're reusing the `$AZ_REDIS_NAME` variable to name the App Service plan and the App Service instance, but you can use your own names here. "AZ" and the App Service instance name will be part of the URL, which needs to be unique across Azure.
 
-You can go to the next section while this command completes.
+You can go to the next section while this command finishes.
 
 ## Deploy the Spring Boot application to Azure App Service
 
-In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
+In your project's `pom.xml` file, add a new plug-in in the `<plugins>` section:
 
 ```xml
 <plugin>
@@ -54,9 +54,7 @@ In your project's `pom.xml` file, add a new plugin in the `<plugins>` section:
 ```
 
 > [!NOTE]
-> In the above configuration, you'll re-use the environment variables you have configured earlier.
-> For this configuration to work, your **$AZ_RESOURCE_GROUP** and **$AZ_REDIS_NAME** variables need
-> to be correctly setup.
+> In the preceding configuration, you'll reuse the environment variables that you configured earlier. For this configuration to work, your `$AZ_RESOURCE_GROUP` and `$AZ_REDIS_NAME` variables need to be correctly set up.
 
 You can now package your application and deploy it to Azure:
 
@@ -64,7 +62,7 @@ You can now package your application and deploy it to Azure:
 ./mvnw package azure-webapp:deploy
 ```
 
-That command will end up with a line like:
+That command will end up with a line like this one:
 
 ```bash
 Successfully deployed the artifact to https://xxxx.azurewebsites.net
@@ -72,9 +70,9 @@ Successfully deployed the artifact to https://xxxx.azurewebsites.net
 
 This is the URL of your running application, which we'll use in the next section.
 
-## Testing the application on Azure
+## Test the application on Azure
 
-Using the URL from the previous section, you can now use the cURL commands that we were using on our local server, but on the cloud:
+By using the URL from the previous section, you can now use the cURL commands that we were using on our local server, but on the cloud:
 
 To retrieve data:
 
@@ -95,5 +93,6 @@ curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net
 ```
 
 > [!NOTE]
-> As both your local server and your cloud service use the same Redis instance, they are in fact clustered! Any data you write in one instance will be available in the other instance.
-> That's also how the cloud service will be able to scale out, by adding more nodes which will all use the same Redis instance to store both business data and session data.
+> Your local server and your cloud service use the same Redis instance. So they are, in fact, clustered! Any data that you write in one instance will be available in the other instance.
+> 
+>That's also how the cloud service will be able to scale out: by adding more nodes that will all use the same Redis instance to store both business data and session data.

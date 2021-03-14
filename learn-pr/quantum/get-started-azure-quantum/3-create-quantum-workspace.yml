@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.get-started-azure-quantum.3-create-quantum-workspace
-title: Create your first quantum workspace
+title: Create your first Azure Quantum workspace
 metadata:
-  title: Create your first Quantum workspace
+  title: Create your first Azure Quantum workspace
   description: Learn to create an Azure Quantum workspace.
   ms.date: 01/01/2021
   author: KittyYeungQ
