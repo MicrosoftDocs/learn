@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.windows-server-high-availability
+metadata:
+  title: Windows Server high availability
+  description: Windows Server high availability
+  ms.date: 02/05/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Windows Server high availability
+prerequisites: |
+  To get the best experience from this learning path, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies.
+  - Windows Server Hyper-V fundamentals.
+summary: |
+  Learn to implement high availability Windows Server virtual machine (VM) workloads with Hyper-V Replica, Windows Server Failover Clustering, and Windows Server File Server high availability.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+- solution-architect
+products:
+- windows-server
+modules:
+- learn.wwl.implement-hyper-v-replica
+- learn.wwl.implement-windows-server-failover-clustering
+- learn.wwl.implement-high-availability-of-windows-server-vms
+- learn.wwl.implement-windows-server-file-server-high-availability
+trophy:
+  uid: learn.wwl.windows-server-high-availability.trophy

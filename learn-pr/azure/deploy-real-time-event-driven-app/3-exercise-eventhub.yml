@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-event-driven-real-time.3-exercise-eventhub
-title: Exercise - Build an Azure Function to simulate telemetric data
+title: Exercise - Build an Azure function to simulate telemetric data
 metadata:
-  title: Build an Azure Function to simulate telemetric data
-  description: Build an Azure Function to simulate telemetric data, set up its Azure resources, and connect it to an Event Hub.
+  title: Build an Azure function to simulate telemetric data
+  description: Build an Azure function to simulate telemetric data, set up its Azure resources, and connect it to an event hub.
   ms.date: 02/01/2021
   author: SandraAhlgrimm 
   ms.author: sakriema

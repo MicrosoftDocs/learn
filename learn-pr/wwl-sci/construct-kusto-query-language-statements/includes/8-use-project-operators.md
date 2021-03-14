@@ -15,10 +15,10 @@ There are multiple types of project operators.  The following table is a list of
 Select the columns to include, rename or drop, and insert new computed columns.
 
 > [!TIP]
-> The project operator will limit the size of the result set, which will increase performance
+> The project operator will limit the size of the result set, which will increase performance
+
 ```kusto
 SecurityEvent
-
 | project Computer, Account
 
 ```
@@ -31,23 +31,14 @@ This example builds from our previous extend and order by operators.  The goal o
 
 ```kusto
 SecurityAlert
-
 | where TimeGenerated > ago(7d)
-
 | extend severityOrder = case (
-
     AlertSeverity == "High", 3,
-
     AlertSeverity == "Medium", 2, 
-
     AlertSeverity == "Low", 1,
-
     AlertSeverity == "Informational", 0,
-
     -1)
-
 | order by severityOrder
-
 | project-away severityOrder
 
 ```

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.language.typescript-work-external-libraries
+metadata:
+  title: 'Access external libraries from TypeScript'
+  description: Learn how to access external libraries from TypeScript.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Access external libraries from TypeScript'
+summary: TypeScript provides two ways to organize you code - namespaces and modules. This learn module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+abstract: |
+  You will learn how to:
+  - Organize code using modules.
+  - Import an external type library.
+prerequisites: |
+  - Knowledge of TypeScript
+  - Familiarity with JavaScript
+  - Familiarity with modules in JavaScript
+  - Installed software:
+    - [Git](https://git-scm.com/?azure-portal=true)
+    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+    - [Node.js](https://nodejs.org/?azure-portal=true)
+    - TypeScript
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure
+- vs-code
+units:
+- learn.language.typescript-work-external-libraries.1-introduction
+- learn.language.typescript-work-external-libraries.2-organize-code-with-modules
+- learn.language.typescript-work-external-libraries.3-exercise-export-import-module-components
+- learn.language.typescript-work-external-libraries.4-exercise-compile-modules
+- learn.language.typescript-work-external-libraries.5-exercise-access-external-type-libraries
+- learn.language.typescript-work-external-libraries.6-lab
+- learn.language.typescript-work-external-libraries.7-knowledge-check
+- learn.language.typescript-work-external-libraries.8-summary-resources
+badge:
+  uid: learn.language.typescript-work-external-libraries.badge 

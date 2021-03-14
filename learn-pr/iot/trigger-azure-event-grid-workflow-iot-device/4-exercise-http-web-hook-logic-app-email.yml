@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an HTTP webhook logic app that sends email
   description: Create an HTTP webhook logic app that sends email
   ms.date: 03/20/2020
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.5-knowledge-check-troubleshoot-performance-bottlenecks
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/01/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-knowledge-check-troubleshoot-performance-bottlenecks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: If a tool such as the linux uptime tool is used to verify that the correct number of parallel processes and threads are running. What would be the expect load average for this application on each VM?
+    choices:
+    - content: "30"
+      isCorrect: false
+      explanation: This answer is incorrect. There are 30 processes running on each VM, but each process has three threads running.
+    - content: "3"
+      isCorrect: false
+      explanation: This answer is incorrect. Each process has three threads, but each VM has 30 parallel processes.
+    - content: "90"
+      isCorrect: true
+      explanation: Correct. Each VM has 30 parallel processes and each process has three threads, so the total load on each VM would be the product of processes and threads.
+  - content: The linux top tool (with NUMA domain view, type 2) is used to verify that all parallel processes are distributed evenly amongst the NUMA domains. What percentage of user utilization is expected for each NUMA node domain?
+    choices:
+    - content: "90"
+      isCorrect: false
+      explanation: This answer is incorrect. The load on each VM is 90, which is the total load for all NUMA domains in a VM, but that is not the correct percentage of user utilization in each NUMA domain
+    - content: "75"
+      isCorrect: true
+      explanation: Correct. Each HB120_v2 NUMA domain has four cores, but in this case each NUMA domain has one process and three threads, which use three of the four cores.
+    - content: "100"
+      isCorrect: false
+      explanation: This answer is incorrect. Three of the four cores in each HB120_v2 NUMA domain are used.

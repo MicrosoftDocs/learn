@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: introduction-azure-web-application-firewall
+metadata:
+  title: "Introduction to Azure Web Application Firewall"
+  description: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Web Application Firewall"
+summary: Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including its features, how it’s deployed, and its common use cases.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Explain how Azure Web Application Firewall works to protect Azure web apps from known threats. 
+  - Evaluate whether Azure Web Application Firewall is the right solution to protect your Azure web apps from malicious exploits. 
+  - Identify and describe use cases for Azure Web Application Firewall.  
+prerequisites: |
+  To get the best learning experience from this module, you should have: 
+  - Beginner-level knowledge of Azure, including Azure virtual networks, Azure App Service, Azure Front Door, and Azure Application Gateway. 
+  - Beginner-level knowledge of networking, including IP addresses, HTTP/HTTPS request parameters, and HTTP request methods. 
+  - Beginner-level knowledge of cloud computing, including availability and web applications.  
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure-web-application-firewall
+units:
+- learn.introduction-azure-web-application-firewall.1-introduction
+- learn.introduction-azure-web-application-firewall.2-what-is-azure-web-application-firewall
+- learn.introduction-azure-web-application-firewall.3-how-azure-web-application-firewall-works
+- learn.introduction-azure-web-application-firewall.4-when-to-use-azure-web-application-firewall
+- learn.introduction-azure-web-application-firewall.5-knowledge-check
+- learn.introduction-azure-web-application-firewall.6-summary
+badge:
+  uid: learn.introduction-azure-web-application-firewall.badge

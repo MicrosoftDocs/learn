@@ -3,7 +3,7 @@ uid: learn.create-razor-pages-aspnet-core.6-create-pagemodel
 metadata:
   title: Exercise - Handle the product creation form submission
   description: Review a Razor Pages `PageModel` class and add an HTTP POST handler.
-  ms.date: 12/02/2020
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial

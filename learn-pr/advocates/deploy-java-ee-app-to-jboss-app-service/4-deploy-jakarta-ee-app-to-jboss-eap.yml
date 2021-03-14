@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-ee-app-to-app-service.4-deploy-jakarta-ee-app-to-jb
 title: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service
 metadata:
   title: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service
-  description: Create a Java application that connects to an Azure Database for MySQL and deploy it to `JBoss EAP on Azure App Service`.
+  description: Create a Java application that connects to Azure Database for MySQL and deploy it to JBoss EAP on Azure App Service.
   author: yoshioterada
   ms.author: yoterada
   ms.date: 02/01/2021

@@ -15,7 +15,7 @@ For the Owner role, that means all actions, indicated by an asterisk (*); no den
 You can get this information using the PowerShell `Get-AzRmRoleDefinition` cmdlet. 
 
 ```powershell
-Get-AzRmRoleDefinition -Name Owner
+Get-AzRoleDefinition
 ```
 
 This code should produce the following output:

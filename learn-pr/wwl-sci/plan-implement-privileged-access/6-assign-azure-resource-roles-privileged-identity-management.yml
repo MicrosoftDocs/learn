@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-privileged-access.assign-azure-resource-roles-privileged-identity-management
+title: Exercise assign Azure resource roles in Privileged Identity Management
+metadata:
+  title: Exercise assign Azure resource roles in Privileged Identity Management
+  description: "Exercise assign Azure resource roles in Privileged Identity Management"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-assign-azure-resource-roles-privileged-identity-management.md)]

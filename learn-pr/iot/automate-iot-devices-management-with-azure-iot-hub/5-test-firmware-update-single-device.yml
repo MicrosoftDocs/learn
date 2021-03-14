@@ -5,8 +5,8 @@ metadata:
   title: Test firmware update on a single device
   description: In this unit, we will use the Azure portal to create a new device management configuration and apply it to our single simulated device.
   ms.date: 12/17/2019
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True

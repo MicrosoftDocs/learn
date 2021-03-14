@@ -14,25 +14,19 @@ Run each Query separately to see the results.
 // Query 1
 
 SecurityEvent 
-
 | union SecurityAlert  
 
 // Query 2
 
 SecurityEvent 
-
 | union SecurityAlert  
-
 | summarize count() 
-
 | project count_
 
 // Query 3
 
 SecurityEvent 
-
 | union (SecurityAlert  | summarize count()) 
-
 | project count_
 
 ```
@@ -41,7 +35,6 @@ The union operator supports wildcards to union multiple tables.  The following K
 
 ```kusto
 union Security* 
-
 | summarize count() by Type
 
 ```

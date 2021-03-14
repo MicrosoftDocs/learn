@@ -26,6 +26,10 @@ Azure Firewall provides many features, including:
 
 You typically deploy Azure Firewall on a central virtual network to control general network access.
 
+This short video explains how Azure Firewall monitors incoming and outgoing network traffic based a defined set of security rules. The video also explains how Azure Firewall compares to traditional firewall appliances.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyFpp]
+
 ## What can I configure with Azure Firewall?
 
 With Azure Firewall, you can configure:

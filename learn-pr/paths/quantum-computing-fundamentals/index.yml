@@ -10,17 +10,30 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Quantum computing foundations
-summary: | 
-  Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
+summary: |
+  Welcome to the world of quantum computing!
+
+  Whether you're a developer or simply someone who wants to get a feel for what quantum computing is all about, this learning path is a great place to start exploring quantum computing and optimization.
+
+  Imagine you're the new member of a space crew. The spaceship is equipped with a computer that has access to the Azure Quantum servers on Earth and you can use the power of quantum to complete different tasks. During your training as a new crew member, you'll learn about quantum computing and optimization and how to use the Microsoft Azure Quantum service.
+
+  Welcome aboard!
+
+  <img src="/learn/quantum/qsharp-create-first-quantum-development-kit/media/spaceship-core.svg" alt="Spaceship of the quantum exploration crew." width="350" height="304"></img>
 
   After completing this learning path, you'll be able to:
   - Explain the fundamental concepts of quantum computing.
-  - Build basic quantum programs by using the Quantum Development Kit and Q#.
   - Identify the kinds of problems quantum algorithms can solve more efficiently than classical algorithms.
-  - Use the Azure Quantum Workspace.
-  - Adapt and create Q# applications to run them in Azure Quantum.
-  - Apply quantum-inspired optimization to a real-world problem.
+  - Build basic quantum programs by using the Quantum Development Kit and Q#.
+  - Interact with the Azure Quantum cloud service.
+  - Adapt and create Q# applications to run them on actual hardware.
+  - Apply quantum-inspired optimization to a combinatorial optimization problem.
   - Solve a job shop scheduling optimization problem.
+
+  > [!NOTE]
+  > You don't need to take the modules in the listed order. Take a look at each module's description and prerequisites. Many modules do not have prior requirements.
+  > If you would like to use the Azure Quantum cloud service, for either quantum computing or optimization, start with the [first module](/learn/modules/get-started-azure-quantum).
+  > If you would like to learn more about quantum programming using the Quantum Development Kit and the Q# programming language, feel free to jump to [your first Q# program](/learn/modules/qsharp-create-first-quantum-development-kit).
 prerequisites: None
 iconUrl: /learn/achievements/quantum/quantum-computing-fundamentals.svg
 levels:
@@ -32,10 +45,11 @@ products:
 - qdk
 - azure-quantum
 modules:
+- learn.quantum.get-started-azure-quantum
 - learn.quantum.qsharp-create-first-quantum-development-kit
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing
 - learn.quantum.solve-graph-coloring-problems-grovers-search
-- learn.quantum.get-started-azure-quantum
+- learn.quantum.use-qsharp-libraries
 - learn.quantum.run-quantum-algorithms-hardware
 - learn.quantum.solve-quantum-inspired-optimization-problems
 - learn.quantum.solve-job-shop-optimization-azure-quantum

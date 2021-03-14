@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.6-generics-lab
+title: Lab - Declare a class by using a generic
+metadata:
+  title: Lab - Declare a class by using a generic
+  description: Apply what you've learned to declare a class by using a generic.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-generics-lab.md)]

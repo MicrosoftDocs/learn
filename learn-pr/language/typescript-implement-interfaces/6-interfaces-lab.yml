@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-implement-interfaces.6-interfaces-lab
+title: Lab - Use interfaces in TypeScript
+metadata:
+  title: Lab - Use interfaces in TypeScript
+  description: Apply what you've learned to declare and implement interfaces.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-interfaces-lab.md)]

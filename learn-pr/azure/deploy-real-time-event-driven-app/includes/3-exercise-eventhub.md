@@ -1,10 +1,10 @@
-For our example, we'll use Event Sourcing. So let's build a function, which is simulating telemetric data and send it to an Event Hub. Later, another function can listen to this event, process, and store it into a Cosmos DB.
+For our example, we'll use event sourcing. Let's build a function that's simulating telemetric data and send it to an event hub. Later, another function can listen to this event and process and store it in a database created with Azure Cosmos DB.
 
-![Event Sourcing for buying a coffee](../media/3-telemetry-exercise.png)
+![Visualization of event sourcing for buying coffee at a coffee shop.](../media/3-telemetry-exercise.png)
 
 ## Prepare your environment
 
-Let's define some environment variables to keep all following commands as short and understandable as possible. Define the `<value>` placeholders, and paste and run the following commands in your terminal, or command-line tool.
+Let's define some environment variables to keep the following commands as short and understandable as possible. Define the `<value>` placeholders, and paste and run the following commands in your terminal or command-line tool:
 
 ```bash
 RESOURCE_GROUP=<value>
@@ -18,15 +18,15 @@ LOCATION=<value>
 ```
 
 > [!NOTE]
-> To set the LOCATION variable, you can check the `az functionapp list-consumption-locations` command and take the closest.
+> To set the LOCATION variable, you can check the `az functionapp list-consumption-locations` command and use the closest location.
 
 ## Create the required components
 
-Provisioning the resources on Azure will take some time. So let's start with the component creation as early as possible to avoid long waits later on.
+Provisioning the resources on Azure will take some time. Let's start with the component creation as early as possible to avoid long waits later on.
 
-### Create Resource Group
+### Create a resource group
 
-It's always a good idea to bind all the resources of a training, proof of concept or a prototype in one resource group. That allows you to clean up all used services with one command to prevent any inconveniences. To create a resource group in the specified location, run the following command in your terminal:
+It's always a good idea to bind all the resources of a training, proof of concept, or a prototype in one resource group. That way you can conveniently clean up all used services with one command. To create a resource group in the specified location, run the following command in your terminal:
 
 ``` bash
 az group create \
@@ -34,9 +34,9 @@ az group create \
     --location $LOCATION
 ```
 
-### Create and Configure an Event Hub
+### Create and configure an event hub
 
-For the Event Hub, it's necessary to specify the namespace it should listen to. Also, you can't forget to configure the authorization rule to `Listen` and `Send`.
+For the event hub, it's necessary to specify the namespace it should listen to. Also, you need to configure the authorization rule to `Listen` and `Send`.
 
 ``` bash
 az eventhubs namespace create \
@@ -55,9 +55,9 @@ az eventhubs eventhub authorization-rule create \
     --rights Listen Send
 ```
 
-### Build, Configure, and Deploy the Azure Function
+### Build, configure, and deploy the Azure function
 
-To make this example as realistic as possible, you'll create an Azure Function and simulate telemetric data. You could also bind an IoT device to your Azure Function, which would then take real data. As this function is going to be the event producing one, we'll add a _p_ or _-p_ flag.
+To make this example as realistic as possible, you'll create an Azure function and simulate telemetric data. You could also bind an IoT device to your Azure function, which would then take real data. Because this function will be the event-producing one, we'll add a _p_ or _-p_ flag.
 
 ``` bash
 az storage account create \
@@ -74,11 +74,11 @@ az functionapp create \
 ```
 
 > [!NOTE]
-> In order to use Java for the Azure Functions application we need to use at least the functions-version 2, or the latest and greatest, version 3.
+> To use Java for the Azure Functions application, we need to use at least functions-version 2, or the latest, version 3.
 
 When the `az functionapp create` command creates your function application, it also creates an Application Insights resource with the same name. We'll use that resource later for our monitoring.
 
-To retrieve the connection strings for the storage account and the Event Hub, we can use the following commands and save them in environment variables. They'll be also displayed as you print them with the `echo` command.
+To retrieve the connection strings for the storage account and the event hub, we can use the following commands and save them in environment variables. They'll also be displayed as you print them with the `echo` command.
 
 ```bash
 AZURE_WEB_JOBS_STORAGE=$( \
@@ -109,7 +109,7 @@ az functionapp config appsettings set \
         EventHubConnectionString=$EVENT_HUB_CONNECTION_STRING
 ```
 
-Your Azure resources event hub and Azure Function have now been created and configured to work properly together.
+Your Azure resources event hub and Azure function have now been created and configured to work properly together.
 
 Next, create a local functions project with Maven.
 
@@ -130,10 +130,10 @@ This command generates several files inside a `telemetry-functions-producer` fol
 - The `pom.xml` build file with predefined Azure dependencies.
 - The `local.settings.json` file to hold the application settings for local deployment and manual testing.
 - A `host.json` file that enables the Azure Functions Extension Bundle.
-- A `Function.java` file that includes the default Http trigger function.
-- A few test files that this MS Learn module doesn't use.
+- A `Function.java` file that includes the default HTTP trigger function.
+- A few test files that this Learn module doesn't use.
 
-As we won't touch the test files in this learn module, feel free to delete it.
+We won't touch the test files in this Learn module, so feel free to delete them.
 
 ``` Bash
 cd telemetry-functions-producer
@@ -146,7 +146,7 @@ For local execution, the application settings need to be retrieved and stored at
 func azure functionapp fetch-app-settings $FUNCTION_APP"-p"
 ```
 
-Next, open the `Functions.java` file and replace the content with the following code.
+Next, open the `Functions.java` file and replace the content with the following code:
 
 ``` Java
 package com.learn;
@@ -241,8 +241,7 @@ public class TelemetryItem {
 
 ## Run locally
 
-When you run Azure Functions locally, they are already streamed all over the world!
-Also, you can review them in your Azure portal.
+When you run Azure functions locally, they're already streamed all over the world! Also, you can review them in your Azure portal.
 
 ``` Bash
 mvn clean package
@@ -260,11 +259,11 @@ After some build and startup messages, you'll see output similar to the followin
 ```
 
 > [!NOTE]
-> Before deploying and running your function in the Azure cloud, you can send events from your local machine all over the world! That is very useful for developing, debugging, and local testing.
+> Before you deploy and run your function in the Azure cloud, you can send events from your local machine all over the world! That is very useful for developing, debugging, and local testing.
 
 ## Deploy to Azure
 
-Trigger the deployment on Azure simply by running the `mvn azure-functions:deploy` command and continue.
+Trigger the deployment on Azure by running the `mvn azure-functions:deploy` command and continue.
 
 ``` Bash
 mvn azure-functions:deploy

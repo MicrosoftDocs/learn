@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.azure.cloud-adoption-framework-plan
+metadata:
+  title: "Prepare for cloud adoption with a data-driven plan"
+  description: Prepare for cloud adoption with a data driven, cloud adoption plan from CAF. For new innovations, learn from others who have used the target platforms. For migrations, understand how to evaluate your assets and plan the efforts required to move them to the cloud.
+  ms.date: 02/22/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Prepare for cloud adoption with a data-driven plan"
+summary: Adoption of the cloud may depend on a number of moving parts. Starting with a sound plan built by experts creates clarity. Integrating data about your current environment and long-term objectives will refine the plan to reflect realistic expectations and assignments.
+abstract: |
+  In this module, you will:
+  - Create an actionable cloud adoption plan
+  - Understand your digital estate
+  - Assess the digital estate with Azure Migrate & refine your plan
+
+prerequisites: |
+  - Foundational understanding of cloud adoption
+  - Understanding of your organization’s adoption strategy and the types of efforts you need to complete
+  - Basic familiarity with Azure DevOps or other tools used to manage tasks to create a plan
+iconUrl: /learn/achievements/cloud-adoption-framework-plan.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+units:
+- learn.azure.cloud-adoption-framework-plan.1-introduction
+- learn.azure.cloud-adoption-framework-plan.2-customer-narrative
+- learn.azure.cloud-adoption-framework-plan.3-exercise-cloud-adoption-plan
+- learn.azure.cloud-adoption-framework-plan.4-exercise-digital-estate-assessment
+- learn.azure.cloud-adoption-framework-plan.5-exercise-integrate-assessment-data
+- learn.azure.cloud-adoption-framework-plan.6-summary
+badge:
+  uid: learn.azure.cloud-adoption-framework-plan.badge

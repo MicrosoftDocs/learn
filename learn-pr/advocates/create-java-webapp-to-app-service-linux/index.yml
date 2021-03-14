@@ -15,7 +15,7 @@ abstract: |
   - Create a PrimeFaces Java web application.
   - Configure your Java project to deploy to Azure App Service.
   - Deploy your Java web application to Azure App Service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-webapp-java-tomcat.svg
 levels:
   - beginner
 roles:

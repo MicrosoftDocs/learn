@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
 title: Exercise - Provision Azure resources
 metadata:
   title: Exercise - Provision Azure resources
-  description: In this exercise, you'll configure GitHub actions with Terraform, to provision your Azure resources.
+  description: In this exercise, you'll provision your Azure resources by configuring GitHub actions with Terraform.
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy

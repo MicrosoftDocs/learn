@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-azure-pipeline-terraform.3-github-actions
-title: GitHub Actions
+title: Apply GitHub Actions
 metadata:
-  title: GitHub Actions
+  title: Apply GitHub Actions
   description: Learn about GitHub Actions and how they integrate with Terraform and Azure.
   ms.date: 02/01/2021
   author: roryp
