@@ -309,8 +309,6 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
    | Subscription | select an existing Azure subscription. |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
 
-> To refresh a service connection, edit the connection and select **Verify**. Once you save, the service connection will be valid for two years.  
-
 ## Create an Azure Pipeline to provision your terraform resources
 
 1. Choose your organization, and then select **New project**.
@@ -333,9 +331,9 @@ We'll need to create an Azure Pipeline to provision our terraform resources.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
-1. Select the GitHub Repo containing your Template
-1. In the path "/azuredevops/provision.yml"
-1. Select Continue
+1. Select the GitHub Repository containing your Template
+1. In the path, select "/azuredevops/provision.yml"
+1. Select **Continue** to Review your PipeLine before you run it
 
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 
@@ -374,7 +372,7 @@ steps:
 
 Before you run the pipeline, we need to add the variable that will bind to your service connection:
 
-1. Select "Variables" (Top right) to and add a variable named "serviceConnection" with the value as the name of your service connection.
+1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
 
 ## Verify the Pipeline run
