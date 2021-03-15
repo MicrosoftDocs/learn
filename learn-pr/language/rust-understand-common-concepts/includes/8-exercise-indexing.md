@@ -34,6 +34,6 @@ fn indexing_array() {
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f3dceec336bea3f171c88e54023238e4).
+You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f3dceec336bea3f171c88e54023238e4?azure-portal=true).
 
-The solution to this exercise is in this [Rust Playground link]https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ae47e11d8fe08e78d66edf7c888d6d5).
+The solution to this exercise is in this [Rust Playground link]https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ae47e11d8fe08e78d66edf7c888d6d5?azure-portal=true).
