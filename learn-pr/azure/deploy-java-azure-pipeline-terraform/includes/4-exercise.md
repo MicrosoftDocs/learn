@@ -345,13 +345,15 @@ steps:
     provider: 'azurerm'
     command: 'apply'
     workingDirectory: $(Build.Repository.LocalPath)/terraform
-    backendServiceArm: $(serviceConnection)
-    backendAzureRmResourceGroupName: $(serviceConnection)
-    backendAzureRmStorageAccountName: $(serviceConnection)
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'tf/terraform.tfstate'
     environmentServiceNameAzureRM: $(serviceConnection)
 ```
+
+## Setup your Pipeline to use your Service Connection
+
+To reference a variable in YAML, you'll prefix it with a dollar sign and enclose it in parentheses.
+As we are using a Service Connection we have named our variable **$(serviceConnection)**
 
 ::: zone-end
 
