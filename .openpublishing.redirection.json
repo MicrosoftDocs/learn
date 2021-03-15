@@ -5162,12 +5162,12 @@
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/6-pipe.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-commands/2-pipeline",
+      "redirect_url": "/learn/modules/connect-commands/2-pipeline",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/7-exercise-pipe.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/connect-commands/3-exercise-pipeline",
+      "redirect_url": "/learn/modules/connect-commands/3-exercise-pipeline",
       "redirect_document_id": false
     }
   ]
