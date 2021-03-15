@@ -1,6 +1,6 @@
 To protect your IoT Central application, all REST API calls must be authorized.
 
-The current store management solution for a retail company includes a store management application that includes dashboards for analyzing stock levels and transactions. You plan to add an IoT Central application to receive telemetry from environmental monitoring devices in stores. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management and data export functionality into your existing store management application. Your IoT Central application must verify that the store management application is authorized to make those REST API calls.
+The current fleet management solution for a logistics company includes a fleet management application with dashboards for managing vehicles. You plan to add an IoT Central application to receive telemetry from monitoring devices in vehicles. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management into your existing fleet management application. Your IoT Central application must verify that the user of the fleet management application is authorized to make those REST API calls.
 
 Here, you'll review some core IoT Central concepts, learn how IoT Central authorizes REST API calls, and how to generate and use an API token.
 
@@ -20,7 +20,7 @@ You have three options to create an IoT Central application:
 - Use the [Azure portal](https://portal.azure.com/).
 - Use Azure CLI.
 
-In this module, you'll use the Azure CLI to create your application.
+In this module, you'll use the Azure CLI to create your application. In this module, this is the only control plane operation you'll perform. All the other operations are REST API data plane operations.
 
 All three options require you to provide information such as the country or region for the deployment, an application name, a payment plan, and an application template.
 

@@ -1,6 +1,6 @@
 The REST API lets you programmatically control the devices connected to your IoT Central application.
 
-To simplify the job of a store manager, you've been asked to integrate IoT Central device control capabilities into the existing store management application. Store managers want to use the existing store management application to control the devices connected your IoT Central application.
+To simplify the job of a fleet manager, you've been asked to integrate IoT Central device control capabilities into the existing fleet management application. Fleet managers want to use the existing fleet management application to control the devices connected your IoT Central application.
 
 Here, you'll learn how to use the REST API to set device properties and send commands to the devices.
 
@@ -12,7 +12,7 @@ For example, a device property could enable a device to report the current firmw
 
 A device property can, optionally, be writeable. An operator can use an IoT Central application to set a value for a writeable property on a device. For example, an application could use a writeable property to set the target temperature for a thermostat on a device.
 
-An example of a cloud property is the date the device was last serviced. The device doesn't need this information to function, but it's useful data to track in the store management application.
+An example of a cloud property is the date the device was last serviced. The device doesn't need this information to function, but it's useful data to track in the fleet management application.
 
 ## Use the REST API to work with device properties
 

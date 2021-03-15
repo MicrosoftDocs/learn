@@ -1,6 +1,6 @@
 To manage device templates and devices programmatically, you use the IoT Central REST API
 
-You want to enable your existing store management application to manage device templates and devices your IoT Central application programmatically.
+You want to enable your existing fleet management application to manage device templates and devices your IoT Central application programmatically.
 
 In this unit, you use the IoT Central REST API to add a device template to the application and then add some real and simulated devices.
 

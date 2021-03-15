@@ -1,6 +1,6 @@
 To manage data export definitions, you use the IoT Central REST API.
 
-You want to enable your existing store management application to manage data export definitions in your IoT Central application programmatically.
+You want to enable your existing fleet management application to manage data export definitions in your IoT Central application programmatically.
 
 In this unit, you create an Azure Storage blob container to use as an export destination. Then you use the IoT Central REST API to create a data export definition that sends device telemetry to the blob container for later analysis. Telemetry from the devices you set up previously is sent to the blob container. You view the telemetry data by downloading and viewing the blob container contents.
 

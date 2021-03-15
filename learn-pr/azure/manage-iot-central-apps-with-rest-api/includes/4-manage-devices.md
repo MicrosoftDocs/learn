@@ -1,6 +1,6 @@
 The REST API enables you to manage the devices in your IoT Central application programmatically.
 
-To simplify the job of a store manager, you've been asked to integrate IoT Central device management capabilities into the existing store management application. Store managers want to use the existing store management application to manage devices connected your IoT Central application.
+To simplify the job of a fleet manager, you've been asked to integrate IoT Central device management capabilities into the existing fleet management application. Fleet managers want to use the existing fleet management application to manage devices connected your IoT Central application.
 
 Here, you'll review the types of device and device authentication in an IoT Central application. Then you'll learn how to use the REST API to manage the devices.
 

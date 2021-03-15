@@ -1,12 +1,12 @@
 To control devices programmatically, you use the IoT Central REST API.
 
-You want to enable your existing store management application to control devices connected your IoT Central application programmatically.
+You want to enable your existing fleet management application to control devices connected your IoT Central application programmatically.
 
-In this unit, you use the IoT Central REST API to set a writeable property on a store monitoring device and then send a reboot command to the device.
+In this unit, you use the IoT Central REST API to set a writeable property on a vehicle monitoring device and then send a reboot command to the device.
 
 ## Set a property
 
-The store monitoring device template specified a **brightness** property in the default component:
+The vehicle monitoring device template specified a **brightness** property in the default component:
 
 ```json
 {
@@ -34,7 +34,7 @@ The response to this request echoes the requested value for the property to conf
 
 ## Send a command
 
-The store monitoring device template specified a **reboot** command in the default component:
+The vehicle monitoring device template specified a **reboot** command in the default component:
 
 ```json
 {
