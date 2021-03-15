@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Pipeline
   description: In this exercise you construct a pipeline using multiple cmdlets.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 02/16/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

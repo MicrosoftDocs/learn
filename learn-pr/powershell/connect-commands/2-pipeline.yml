@@ -5,7 +5,7 @@ metadata:
   title: Create a pipeline
   description: This unit describes what a pipeline is and how it can be constructed. Additionally it teaches how the pipeline input is evaluated and how you can use different helper cmdlets.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 02/16/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
