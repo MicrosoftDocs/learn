@@ -89,7 +89,7 @@ There will be times when you need to have static values in your code, known as *
 For example, you can declare a constant like this:
 
 ```go
-const HTTPSatusOK = 200
+const HTTPStatusOK = 200
 ```
 
 As with variables, the type of a constant is inferred from the value assigned to it. In Go, constant names are typically written in MixedCased or all uppercase letters.
