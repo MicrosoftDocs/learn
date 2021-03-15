@@ -94,7 +94,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 ## Update the local network gateway IP references
 
 > [!IMPORTANT]
-> Your virtual network gateways must be successfully deployed before you start the next exercise.
+> Your virtual network gateways must be successfully deployed before you start the next exercise.  If you do not get the above output, you need to wait.  It can take up to 10 mins to complete beforee you will have the succeeded output dispaled above.
 
 In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them. Use the following Azure CLI command to check whether both virtual network gateways have been created.
 

@@ -75,7 +75,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --gateway-ip-address 94.0.252.160 \
         --name LNG-Azure-VNet-1 \
-        --local-address-prefixes 10.0.0.0/16
+        --local-address-prefixes 172.16.255.0/27
     ```
 
     This gateway describes the Azure network that you're connecting to. You'll update the IP address specified as the remote gateway (which is in Azure) later.

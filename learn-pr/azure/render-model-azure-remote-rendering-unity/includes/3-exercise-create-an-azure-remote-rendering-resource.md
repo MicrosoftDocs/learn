@@ -2,7 +2,7 @@ A Remote Rendering service resource must be created in Azure to get access to th
 
 ## Create a Remote Rendering service resource
 
-1. Sign into the [Azure portal](https://portal.azure.com).
+1. After the sandbox at the top of this page has completed activation, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 1. The portal takes you to the **Marketplace** page. In the **Search the Marketplace** box, type **remote rendering** and press the Enter key.
 1. Select **Remote Rendering** from the results.
@@ -14,9 +14,9 @@ A Remote Rendering service resource must be created in Azure to get access to th
 
     |Field  |Value  |Details  |
     |---------|---------|---------|
-    |**Resource**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
-    |**Subscription**    |   Your Azure subscription      |    The resource you're creating must belong to a resource group. Select the Azure subscription to which the resource group belongs or will belong.     |
-    |**Resource group**     |   Your resource group      |    The resource group to which the Remote Rendering service will belong. All Azure resources must belong to a resource group. If necessary, create a new resource group with a unique name.     |
+    |**Resource Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *remote-rendering-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
+    |**Subscription**    |   *Concierge Subscription*      |    The resource you're creating must belong to a resource group. Here, *Concierge Subscription* is the name of the subscription to which you have access in the Azure Sandbox.     |
+    |**Resource group**     |   *<rgn>[Sandbox resource group name]</rgn>*      |    The resource group to which the Remote Rendering service will belong. All Azure resources must belong to a resource group. The resource group specified here has been created for you by the Azure Sandbox.     |
     |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
 
    :::image type="content" source="../media/create-remote-rendering-resource.png" alt-text="A screenshot of the values provided for the Remote Rendering Account wizard.":::

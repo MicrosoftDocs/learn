@@ -27,7 +27,7 @@ prerequisites: |
     - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
     - [Node.js](https://nodejs.org/?azure-portal=true)
     - TypeScript
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/typescript/build-javascript-applications-typescript.svg
 levels:
 - intermediate
 roles:
@@ -46,4 +46,4 @@ modules:
 - learn.language.typescript-namespaces-organize-code
 
 trophy:
-  uid: learn.language.typescript-get-started.trophy
+  uid: learn.language.build-javascript-applications-typescript.trophy
