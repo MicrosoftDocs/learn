@@ -19,17 +19,17 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" role="presentation"></img>
 
-    [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices/)
+    [Part 1: Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices/)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" role="presentation"></img>
 
-    [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="101" height="84" role="presentation"></img>
 
-    [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
+    [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
   :::column-end:::
   :::row-end:::
 
@@ -37,12 +37,12 @@ summary: |
   :::column:::
     <img src="/learn/achievements/azure-devops/automate-deployments-azure-devops.svg" width="101" height="84" role="presentation"></img>
 
-    Automate your deployments with Azure DevOps
+    Part 4: Automate your deployments with Azure DevOps
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" role="presentation"></img>
 
-    [Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring/)
+    [Part 5: Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring/)
   :::column-end:::
 
   :::row-end:::
@@ -54,8 +54,8 @@ summary: |
   - Use an Azure Resource Manager template to automatically provision and configure Azure SQL Database in Azure Pipelines.
 prerequisites: |
   - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
-  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
-  - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
+  - [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
   - An [Azure subscription](https://azure.microsoft.com/free/)
   - An [organization in Azure DevOps](https://dev.azure.com)
 iconUrl: /learn/achievements/azure-devops/automate-deployments-azure-devops.svg
