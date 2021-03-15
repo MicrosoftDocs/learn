@@ -1,6 +1,6 @@
 In this unit, you'll learn how to create the code for your web application, and integrate it into a source control repository.
 
-## Bootstrapping a web application
+## Bootstrap a web application
 
 Now that you created the resources for deploying your web application, you have to prepare the code you want to deploy. There are many ways to bootstrap a new web application, so what we'll see here may be different to what you're used to. The goal is to quickly provide you a starting point to complete a full cycle up to the deployment.
 
@@ -89,7 +89,7 @@ This example code creates a server that answers every request with a "Hello Worl
 
 ## Adding your code to source control
 
-Once your web application code is ready, the next step is usually to put the code into a source control repository, such as Git. If you have Git installed on your machine, running these commands on your source code folder will initialize the repository.
+After your web application code is ready, the next step is usually to put the code into a source control repository, such as Git. If you have Git installed on your machine, running these commands on your source code folder will initialize the repository.
 
 ```bash
 git init
