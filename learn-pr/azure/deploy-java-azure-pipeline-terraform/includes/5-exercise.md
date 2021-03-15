@@ -1,4 +1,4 @@
-In this exercise, you'll use devOps to build/deploy your Spring Boot sample application.
+In this exercise, you'll use an automated workflow to build/deploy your Spring Boot sample application.
 
 ::: zone pivot="github-actions"
 
@@ -95,6 +95,64 @@ Each time you enter a `git push` command to commit your code, your build-and-dep
 
 ```yml
 publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e13a9b78ad2c3 }}
+```
+
+::: zone-end
+
+::: zone pivot="azure-devops"
+
+```yml
+name: Build and Deploy
+
+trigger:
+- main
+
+stages:
+- stage: Build
+  displayName: Build stage
+  jobs:
+  - job: MavenPackageAndPublishArtifacts
+    displayName: Maven Package and Publish Artifacts
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    steps:
+    - task: Maven@3
+      displayName: 'Maven Package'
+      inputs:
+        mavenPomFile: 'pom.xml'
+
+    - task: CopyFiles@2
+      displayName: 'Copy Files to artifact staging directory'
+      inputs:
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
+        Contents: '**/target/*.?(war|jar)'
+        TargetFolder: $(Build.ArtifactStagingDirectory)
+
+    - upload: $(Build.ArtifactStagingDirectory)
+      artifact: drop
+
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
+  - deployment: DeployLinuxWebApp
+    displayName: Deploy Linux Web App
+    environment: 'production'
+    pool:
+      vmImage: 'ubuntu-latest'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureWebApp@1
+            displayName: 'Azure Web App Deploy'
+            inputs:
+              azureSubscription: $(serviceConnection)
+              appType: webAppLinux
+              appName: '$(webAppName)'
+              package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
 ```
 
 ::: zone-end

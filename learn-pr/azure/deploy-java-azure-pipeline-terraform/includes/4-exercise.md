@@ -1,6 +1,4 @@
-In this exercise, you'll configure devOps to provision your Terraform resources.
-
-::: zone pivot="github-actions"
+In this exercise, you'll configure an automation workflow to provision your Terraform resources.
 
 ## Access the sample application
 
@@ -139,7 +137,9 @@ resource "azurerm_app_service" "main" {
 }
 ```
 
-## Set up your workflow
+::: zone pivot="github-actions"
+
+## Set up your GitHub Actions workflow
 
 Let's provide your GitHub workflow access to your Azure account.
 
@@ -291,3 +291,70 @@ Next, in your repository, trigger your GitHub action by doing the following:
 In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
 
 ::: zone-end
+
+::: zone pivot="azure-devops"
+
+## Set up your Azure Pipelines workflow
+
+1. In Azure DevOps, open the **Service connections** page from the project settings page
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
+   | Scope level | Select Azure Subscription. |
+   | Subscription | select an existing Azure subscription. |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
+
+> To refresh a service connection, edit the connection and select **Verify**. Once you save, the service connection will be valid for two years.  
+
+## Workflow file
+
+Inside your project directory is a directory called *azuredevops* and, within it, a file called *provision.yml*.
+
+The *provision.yml* file is a Pipeline workflow. It uses the Service Connection you've just configured to deploy your application to your Azure subscription.
+
+In the *provision.yml* workflow file is the following content:
+
+```yml
+name: Provision Resources
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendServiceArm: $(serviceConnection)
+    backendAzureRmResourceGroupName: $(serviceConnection)
+    backendAzureRmStorageAccountName: $(serviceConnection)
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendServiceArm: $(serviceConnection)
+    backendAzureRmResourceGroupName: $(serviceConnection)
+    backendAzureRmStorageAccountName: $(serviceConnection)
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+    environmentServiceNameAzureRM: $(serviceConnection)
+```
+
+::: zone-end
+
+## Next steps
+
+In the next exercise, you'll use Azure Pipelines to deploy a sample Spring Boot application.
