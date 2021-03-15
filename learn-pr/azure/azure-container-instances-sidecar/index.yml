@@ -34,6 +34,7 @@ units:
 - learn.azure.azure-container-instances-sidecar.deploy-sidecar
 - learn.azure.azure-container-instances-sidecar.access-private-link-enabled-services
 - learn.azure.azure-container-instances-sidecar.deploy-with-init-container
+- learn.azure.azure-container-instances-sidecar.knowledge-check
 - learn.azure.azure-container-instances-sidecar.summary
 badge:
   uid: learn.azure.azure-container-instances-sidecar.badge
