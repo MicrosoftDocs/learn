@@ -6,7 +6,7 @@ In this unit, you'll gain an understanding of recovery time and recovery point o
 
 ## Disaster recovery drill
 
-With Azure Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery and allow for the automation of recovery tasks, model-specific applications around its dependencies, such as the need for Active Directory or DNS to function. Recovery plans also allow you to test your disaster recovery.
+With Azure Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and model an app around its dependencies, such as the need for Active Directory or DNS to function. Recovery plans also allow you to test your disaster recovery.
 
 After a recovery plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
 
