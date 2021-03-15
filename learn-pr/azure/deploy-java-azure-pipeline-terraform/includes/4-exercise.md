@@ -350,10 +350,22 @@ steps:
     environmentServiceNameAzureRM: $(serviceConnection)
 ```
 
+## Create the Pipeline
+
+In Azure Devops, go to your Project — Pipelines and click New Pipeline (Top right corner).
+Point to the Git Repo containing your Template, and select Existing Azure Pipelines YAML file, select the "provision.yml" file.
+
 ## Setup your Pipeline to use your Service Connection
 
 To reference a variable in YAML, you'll prefix it with a dollar sign and enclose it in parentheses.
 As we are using a Service Connection we have named our variable **$(serviceConnection)**
+
+Set a Service Connection variable for your build pipeline by following these steps:
+
+1. Go to the Pipelines page, select your new pipeline, and then select Edit.
+1. Locate the Variables for this pipeline.
+1. Add a variable named "serviceConnection" with the value as the name of the service connection created above.
+1. Save the pipeline.
 
 ::: zone-end
 
