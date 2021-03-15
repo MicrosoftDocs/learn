@@ -30,8 +30,8 @@ quiz:
     choices:
     - content: Intel IMB-IMP1 PingPong built with HPCX.
       isCorrect: true
-      explanation: Correct. Intel IMB-MPI1 built with HPCX is preloaded on an HPC CentOS 7.7+ Azure Marketplace image and provides the best performance.
-    - content: Intel IMB-IMPI1 PingPong contained in the Intel MPI environment on an CentOS-HPC 7.7+ Azure Marketplace image.
+      explanation: Correct. Intel IMB-MPI1 built with HPCX is preloaded on a CentOS HPC 7.7+ Azure Marketplace image and provides the best performance.
+    - content: Intel IMB-IMPI1 PingPong contained in the Intel MPI environment on a CentOS HPC 7.7+ Azure Marketplace image.
       isCorrect: false
       explanation: This answer is incorrect. This version of IMB-IMP1 would work and measure InfiniBand latency/bandwidth, but other versions will measure more accurate and optimal InfiniBand latency/bandwidth.
     - content: HPL built with HPCX.
@@ -47,4 +47,4 @@ quiz:
       explanation: This answer is incorrect. Intel IMP-IMP1 PingPong is used to measure network latency/bandwidth, not VM memory bandwidth.
     - content: Intel MLC.
       isCorrect: true
-      explanation: Correct. Intel Memory Latency Checker is an ideal tool to benchmark the maximum memory bandwidth, and thus determine the health of the VM memory.
+      explanation: Correct. Intel Memory Latency Checker is a useful tool to benchmark the maximum memory bandwidth and determine the health of the VM memory.
