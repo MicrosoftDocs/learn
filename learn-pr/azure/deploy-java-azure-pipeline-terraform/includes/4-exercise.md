@@ -22,7 +22,7 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
 ## Workflow
 
-Inside the project directory for the repository you've just created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
+Inside the project directory for the repository, you've created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
 
 Let's look at a few sections that you might use to define your module's configuration:
 
@@ -304,20 +304,42 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
    | Parameter | Description |
    | --------- | ----------- |
-   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This is not the name of your Azure subscription. |
+   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This name is not the name of your Azure subscription. |
    | Scope level | Select Azure Subscription. |
    | Subscription | select an existing Azure subscription. |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
 
 > To refresh a service connection, edit the connection and select **Verify**. Once you save, the service connection will be valid for two years.  
 
-## Workflow file
+## Create an Azure Pipeline to provision your terraform resources
 
-Inside your project directory is a directory called *azuredevops* and, within it, a file called *provision.yml*.
+1. Choose your organization, and then select **New project**.
 
-The *provision.yml* file is a Pipeline workflow. It uses the Service Connection you've just configured to deploy your application to your Azure subscription.
+1. Specify the following parameters.
 
-In the *provision.yml* workflow file is the following content:
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Project Name | Required |
+   | Description | Optional |
+   | Visibility | Choose **Private** |
+   | Source control type | Choose **GIT** |  
+   | Work Item Process | Choose **Basic** |
+
+![Screenshot displaying the new Azure Project form.](../media/4-project.png)
+
+## Create the Provision Pipeline
+
+We'll need to create an Azure Pipeline to provision our terraform resources.
+
+In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
+
+1. Select the GitHub Repo containing your Template
+1. In the path "/azuredevops/provision.yml"
+1. Select Continue
+
+![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
+
+On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline:
 
 ```yml
 name: Provision Resources
@@ -350,25 +372,15 @@ steps:
     environmentServiceNameAzureRM: $(serviceConnection)
 ```
 
-## Create the Pipeline
+Before you run the pipeline, we need to add the variable that will bind to your service connection:
 
-In Azure Devops, go to your Project — Pipelines and click New Pipeline (Top right corner).
-Point to the Git Repo containing your Template, and select Existing Azure Pipelines YAML file, select the "provision.yml" file.
+1. Select "Variables" (Top right) to and add a variable named "serviceConnection" with the value as the name of your service connection.
+1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
 
-## Setup your Pipeline to use your Service Connection
-
-To reference a variable in YAML, you'll prefix it with a dollar sign and enclose it in parentheses.
-As we are using a Service Connection we have named our variable **$(serviceConnection)**
-
-Set a Service Connection variable for your build pipeline by following these steps:
-
-1. Go to the Pipelines page, select your new pipeline, and then select Edit.
-1. Locate the Variables for this pipeline.
-1. Add a variable named "serviceConnection" with the value as the name of the service connection created above.
-1. Save the pipeline.
+## Verify the Pipeline run
 
 ::: zone-end
 
 ## Next steps
 
-In the next exercise, you'll use Azure Pipelines to deploy a sample Spring Boot application.
+In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application and data.
