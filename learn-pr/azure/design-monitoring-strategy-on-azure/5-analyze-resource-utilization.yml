@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
+metadata:
+  title: Analyze resource utilization and performance
+  description: Analyze resource utilization and performance using Azure Monitor Insights 
+  ms.date: 15/03/2021
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitoring options available in Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-analyze-resource-utilization.md)]

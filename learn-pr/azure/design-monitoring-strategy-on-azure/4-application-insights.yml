@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
-  title: Analyze web applications by using Azure Application Insights
-  description: Analyze web applications by using Azure Application Insights
+  title: Manage applications by using Azure Monitor Application Insights
+  description: Manage applications by using Azure Monitor Application Insights
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
@@ -11,7 +11,7 @@ metadata:
 title: Analyze web applications by using Azure Application Insights
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-application-insights.md)]
+  [!include[](includes/4-application-insights.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -26,6 +26,17 @@ quiz:
     - content: You want to analyze and address problems that affect your application's health.
       isCorrect: true
       explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
+  - content: What component of application performance can be monitored by DevOps teams when using Azure Monitor Application Insights?
+    choices:
+    - content: Key Vault latency
+      isCorrect: false
+      explanation: You can view Key Vault’s overall service API latency using Key Vault metrics
+    - content: User behavior and usage patterns for your application 
+      isCorrect: true
+      explanation: Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities.
+    - content: Types of network delay
+      isCorrect: false
+      explanation: Azure Network Watcher and Connection Monitor are services that can be used to measure network delay between various Azure and non-Azure end-points.
   - content: How can you continuously monitor your applications from different geographic locations?
     choices:
     - content: Use availability tests to continuously monitor your application from different geographic locations.
@@ -37,14 +48,4 @@ quiz:
     - content: Use Log Analytics to continuously monitor your application from different geographic locations.
       isCorrect: false
       explanation: You use availability tests to continuously monitor your live web application. You use Log Analytics to query the log data collected from your resources for analysis.
-  - content: How would you continuously monitor your release pipelines?
-    choices:
-    - content: Use availability tests to monitor your release pipelines.
-      isCorrect: false
-      explanation: Use a continuous monitoring gate to monitor release pipelines. Use availability tests to monitor your application's performance after it's live.
-    - content: Use a continuous monitoring gate to monitor release pipelines.
-      isCorrect: true
-      explanation: Use the gate to stop deployment when an issue has been identified. Deployment will continue automatically when the issue is resolved. 
-    - content: Use the application map to monitor your release pipelines.
-      isCorrect: false
-      explanation: The application map gives you a typology of your application and doesn't monitor your pipelines. Instead, use a continuous monitoring gate to monitor release pipelines.
+
