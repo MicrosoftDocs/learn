@@ -45,7 +45,8 @@ The script performs the following configuration steps:
     Run the command below in the command shell.
 
     ```bash
-    . <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aks/main/infrastructure/setup/setup.sh ) -s <your-subscription-id> -n learn-helm-deploy-aks --use-acr false --install-dot-net false
+    SubscriptionId=$(az account list --query '[0].id' -o tsv)
+    . <(wget -q -O - https://raw.githubusercontent.com/MicrosoftDocs/mslearn-aks/main/infrastructure/setup/setup.sh ) -s $SubscriptionId -n learn-helm-deploy-aks --use-acr false --install-dot-net false
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
