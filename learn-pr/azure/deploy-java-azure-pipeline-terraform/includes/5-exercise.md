@@ -101,6 +101,20 @@ publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e
 
 ::: zone pivot="azure-devops"
 
+## Create the Build and Deploy Pipeline
+
+We'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
+
+In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
+
+1. Select the GitHub Repository containing your Template
+1. In the path, select "/azuredevops/build_deploy.yml"
+1. Select **Continue** to Review your PipeLine before you run it
+
+![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
+
+On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline:
+
 ```yml
 name: Build and Deploy
 
@@ -154,6 +168,13 @@ stages:
               appName: '$(webAppName)'
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
 ```
+
+Before you run the pipeline, we need to add the variable that will bind to your service connection:
+
+1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
+1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
+
+## Verify the Pipeline run
 
 ## Next steps
 
