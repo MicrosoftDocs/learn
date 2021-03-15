@@ -10,26 +10,13 @@ Use Visual Studio Code to create a Q# Project.
 
 1. Enter **Q#: Create New Project**.
 
-1. Select **Standalone console application**.
+1. Select **Quantum application targeted to IonQ backend**.
 
 1. Select a directory to hold your project, such as your home directory, and name your project. For example, enter **MyGroversJob** as the project name, and select **Create Project**.
 
 1. From the window that appears at the bottom, select **Open new project**.
 
 1. You should see two files: the project file and *Program.qs*, which contains starter code.
-
-1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code.
-
-    ```xml
-    <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <ExecutionTarget>ionq.qpu</ExecutionTarget>
-      </PropertyGroup>
-    </Project>
-    ```
-
-   with `yy.yy.yyyyyyyy` being the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
 
 ## Adapt Grover's algorithm to run in hardware
 
@@ -169,7 +156,7 @@ To run your code against hardware, you just need to repeat the same steps as for
 For example, if you choose five shots by using the following command:
 
 ```azcli
-az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1 --shots 5
+az quantum job submit --target-id ionq.qpu -- --n-qubits 2 --idx-marked 1 --shots 5
 ```
 
 You might obtain a result similar to this example:

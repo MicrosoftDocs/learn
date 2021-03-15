@@ -1,6 +1,6 @@
 Federation enables the access of services across organizational or domain boundaries by establishing trust relationships between the respective domain’s identity provider.  With federation, there's no need for a user to maintain a different username and password when accessing resources in other domains.
 
-:::image type="content" source="../media/5-federated-identification.png" alt-text="Federated identification":::
+![Simplifed view of how federation works](../media/5-federated-identification.png)
 
 The simplified way to think about this federation scenario is as follows:
 

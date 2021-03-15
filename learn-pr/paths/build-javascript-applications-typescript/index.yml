@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.build-javascript-applications-typescript
+metadata:
+  title: Build JavaScript applications by using TypeScript
+  description: Learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
+  brand: vs-code
+  ms.date: 02/10/2021
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build JavaScript applications using TypeScript
+summary: TypeScript offers all the features of JavaScript, plus an additional layer on top of these - the TypeScript type system. In this learning path, you’ll learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
+prerequisites: |
+  - Familiarity with basic HTML and JavaScript ES6/2015, including:
+    - Conditionals
+    - Functions
+    - Scope
+    - Arrays
+    - Loops
+    - Iterators
+    - Objects
+    - Classes
+    - Modules
+  - Installed software:
+    - [Git](https://git-scm.com/?azure-portal=true)
+    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+    - [Node.js](https://nodejs.org/?azure-portal=true)
+    - TypeScript
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- vs-code
+modules:
+- learn.language.typescript-get-started
+- learn.language.typescript-declare-variable-types
+- learn.language.typescript-implement-interfaces
+- learn.language.typescript-develop-typed-functions
+- learn.language.typescript-declare-instantiate-classes
+- learn.language.typescript-generics
+- learn.language.typescript-work-external-libraries
+- learn.language.typescript-namespaces-organize-code
+
+trophy:
+  uid: learn.language.typescript-get-started.trophy

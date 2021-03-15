@@ -14,17 +14,21 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
 
-1. Specify the values in the following table for each of the properties:
+    The **Create container registry** pane appears.
 
-   | Property | Value |
-   |---|---|
-   | Registry name | Enter a unique name and make a note of it for later. |
-   | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
-   | Resource Group | Create a new resource group with the name **learn-deploy-container-acr-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
-   | Location | Select a location that is close to you. |
-   | SKU | **Standard** |
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. Select **Create**. Wait until the container registry has been created before you continue.
+    | Setting | Value |
+    |---|---|
+    | **Project details** |
+    | Subscription | Concierge Subscription |
+    | Resource group | Select <rgn>[sandbox resource group]</rgn>. If you select **Create new**, enter a new resource group with the name **learn-deploy-container-acr-rg**. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | **Instance details** |
+    | Registry name | Enter a unique name and make a note of it for later. |
+    | Location | Select a location that is close to you. |
+    | SKU | **Standard** |
+
+1. Select **Review + create**. When validation successfully passes, select **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 
@@ -36,7 +40,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 ::: zone pivot="csharp"
 
-2. Move to the source folder:
+2. Move to the source folder.
 
    ```bash
    cd mslearn-deploy-run-container-app-service/dotnet
@@ -46,7 +50,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 ::: zone pivot="javascript"
 
-2. Move to the source folder:
+2. Move to the source folder.
 
     ```bash
     cd mslearn-deploy-run-container-app-service/node

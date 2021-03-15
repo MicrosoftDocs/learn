@@ -322,3 +322,73 @@ achievements:
   title: Azure fundamentals
   summary: New to the cloud? Azure fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
   iconUrl: /learn/achievements/azure-fundamentals.svg
+- uid: learn.foundations-data-science.trophy
+  type: trophy
+  title: "Foundations of data science"
+  summary: "Foundations of data science"
+  iconUrl: /learn/achievements/student-evangelism/foundations-data-science.svg
+- uid: learn.learn-data-science-method.badge
+  type: badge
+  title: "Learn the data science method"
+  summary: "Learn the data science method"
+  iconUrl: /learn/achievements/student-evangelism/learn-data-science-method.svg
+- uid: learn.introduction-python-using-datascience-library.badge
+  type: badge
+  title: "Introduction to python using the datascience library"
+  summary: "Introduction to python using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/introduction-python-using-datascience-library.svg
+- uid: learn.create-manipulate-tables-using-datascience-library.badge
+  type: badge
+  title: "Create and manipulate tables using the datascience library"
+  summary: "Create and manipulate tables using the datascience library"
+  iconUrl: /learn/achievements/student-evangelism/create-manipulate-tables-using-datascience-library.svg
+- uid: learn.design-plot-graphs-python.badge
+  type: badge
+  title: "Design and plot graphs in Python"
+  summary: "Design and plot graphs in Python"
+  iconUrl: /learn/achievements/student-evangelism/design-plot-graphs-python.svg
+- uid: learn.introduction-probability.badge
+  type: badge
+  title: "Introduction to probability"
+  summary: "Introduction to probability"
+  iconUrl: /learn/achievements/student-evangelism/introduction-to-probability.svg
+- uid: learn.simulate-generate-empirical-distributions-python.badge
+  type: badge
+  title: "Simulate and generate empirical distributions in Python"
+  summary: "Simulate and generate empirical distributions in Python"
+  iconUrl: /learn/achievements/student-evangelism/simulate-generate-empirical-distributions-python.svg
+- uid: learn.test-hypothesis-by-simulating-statistics.badge
+  type: badge
+  title: "Test hypothesis by simulating statistics"
+  summary: "Test hypothesis by simulating statistics"
+  iconUrl: /learn/achievements/student-evangelism/test-hypothesis-by-simulating-statistics.svg
+- uid: learn.compare-two-samples-by-bootstrapping.badge
+  type: badge
+  title: "Compare two samples by bootstrapping"
+  summary: "Compare two samples by bootstrapping"
+  iconUrl: /learn/achievements/student-evangelism/compare-two-samples-by-bootstrapping.svg
+- uid: learn.understand-normal-curve.badge
+  type: badge
+  title: "Understand the normal curve"
+  summary: "Understand the normal curve"
+  iconUrl: /learn/achievements/student-evangelism/understand-normal-curve.svg
+- uid: learn.make-predictions-with-linear-regression.badge
+  type: badge
+  title: "Make predictions with linear regression"
+  summary: "Make predictions with linear regression"
+  iconUrl: /learn/achievements/student-evangelism/make-predictions-with-linear-regression.svg
+- uid: learn.simulate-distribution-regression-coefficients.badge
+  type: badge
+  title: "Simulate the distribution of regression coefficients"
+  summary: "Simulate the distribution of regression coefficients"
+  iconUrl: /learn/achievements/student-evangelism/simulate-distribution-regression-coefficients.svg
+- uid: learn.predict-classes-with-knn-classifier.badge
+  type: badge
+  title: "Predict  classes with a knn classifier"
+  summary: "Predict  classes with a knn classifier"
+  iconUrl: /learn/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+  type: badge
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
+  iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg

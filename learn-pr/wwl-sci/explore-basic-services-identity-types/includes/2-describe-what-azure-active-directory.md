@@ -14,4 +14,4 @@ Azure AD is used by IT admins to control access to corporate apps and resources,
 
 Subscribers to Azure services, Microsoft 365, or Dynamics 365 automatically use Azure AD. Each Microsoft 365, Office 365, Azure, or Dynamics 365 Online subscription automatically uses an Azure AD tenant. Users of these services can take advantage of Azure AD services such as self-service password reset, provided it has been configured by their organization’s admins.
 
-Developers use Azure AD as a standards-based approach for adding single sign-on (SSO) to their apps, so that users can sign in with their preexisting credentials. Azure AD also provides APIs that allow developers to build personalized app experiences using existing organizational data.
+Developers use Azure AD as a standards-based approach for adding single sign-on (SSO) to their apps, so that users can sign in with their pre-existing credentials. Azure AD also provides APIs that allow developers to build personalized app experiences using existing organizational data.
