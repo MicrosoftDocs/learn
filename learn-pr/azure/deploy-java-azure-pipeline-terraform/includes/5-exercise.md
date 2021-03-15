@@ -155,6 +155,19 @@ stages:
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
 ```
 
+## Next steps
+
+Congratulations! You now have two Azure Pipeline workflows: a provisioning action and a build-and-deploy action.
+
+Each time you enter a `git push` command to commit your code, your build-and-deploy action is triggered and your application is deployed.
+
+> [!IMPORTANT]
+> Re-running the Provision Pipeline won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the Pipeline.
+>
+> Re-running your build-and-deploy Pipeline will replace your application.
+>
+> If you re-create your App Service instance, you also need to recreate the Service Connection.
+
 ::: zone-end
 
 The next unit is a knowledge check to see what you've learned in this module.
