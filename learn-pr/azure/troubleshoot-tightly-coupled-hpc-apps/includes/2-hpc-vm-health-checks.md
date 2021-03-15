@@ -54,6 +54,6 @@ You can find example IOR scripts in the [IOR and mdtest project](https://github.
 
 A great way to verify that your CPU cores are healthy and performing as expected is to measure the maximum floating-point operations per second (FLOPS), and then compare your measured results with the theoretical expected FLOPS.
 
-You can use *High Performance Linpack (HPL)* to measure maximum FLOPS. A side benefit of running HPL is that it can help to identify some bad memory DIMMS and overall health of the HPC cluster, because it also performs some limited tightly coupled communication testing. 
+You can use *High Performance Linpack (HPL)* to measure maximum FLOPS. A side benefit of running HPL is that it can help to identify some bad memory DIMMs (dual in-line memory modules) and overall health of the HPC cluster, because it also performs some limited testing for tightly coupled communication. 
 
 HPL is often used in HPC datacenters to burn in a new HPC system. You can find example HPL scripts in the [linpack project](https://github.com/Azure/azurehpc/tree/master/apps/linpack).

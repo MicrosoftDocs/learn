@@ -40,7 +40,7 @@ You should carefully check your MPI arguments and how you're specifying the numb
 
 ### Check that the processes and threads are evenly distributed among all NUMA node domains
 
-If you're using the **top** or **htop** tool, you can select the NUMA node domain view by specifying `2` as a command-line parameter. (For example: on HB120_v2, you should see 30 NUMA node domains using this view.) 
+If you're using the **top** or **htop** tool, you can select the NUMA node domain view by specifying `2` as a command-line parameter. (For example: on HB120_v2, you should see 30 NUMA node domains by using this view.) 
 
 The percentage of user utilization should be evenly distributed among all the NUMA domains. If it isn't, check your MPI command-line arguments and environmental variables.
 
