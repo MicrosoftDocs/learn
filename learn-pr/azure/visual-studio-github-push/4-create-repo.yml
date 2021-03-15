@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-github-push.4-create-repo
-title: Lesson - Create a repository on GitHub
+title: Create a repository on GitHub from Visual Studio
 metadata:
-  title: Lesson - Create a repository on GitHub
+  title: Create a repository on GitHub from Visual Studio
   description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
   ms.date: 02/24/2021
   author: prnadago

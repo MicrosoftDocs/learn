@@ -27,4 +27,4 @@ SANDBOXES: There's lots to know about sandbox restrictions, limitations and init
 
 ## Verify the commit
 
-You'll see the gold info bar in the Git Changes window telling you the commit was created locally. Select the Commit ID to open the details of the commit. You can also select the **1 outgoing / 0 incoming** link above the text box to open the Git Repository window. View the 1 outgoing commit you created in your current branch's commit graph. Next, you'll learn how to push it.
+You'll see the gold info bar in the Git Changes window telling you the commit was created locally. Select the Commit ID to open the details of the commit. You can also select the **1 outgoing / 0 incoming** link above the text box to open the Git Repository window. View the 1 outgoing commit you created in your current branch's commit graph.

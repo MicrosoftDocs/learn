@@ -26,7 +26,7 @@ Visual Studio has built-in functionality that fully automates this process for y
 
 ## Creating a Git repository
 
-When Visual Studio initializes your repository, it first executes a _git init_ command. The operation creates a .git subdirectory at the root of your project, which contains all of the necessary Git metadata for the new repository. Besides the .git folder, Visual Studio won't alter anything else in your project with the initialization. 
+When Visual Studio initializes your repository, it first executes a `git init` command. The operation creates a .git subdirectory at the root of your project, which contains all of the necessary Git metadata for the new repository. Besides the .git folder, Visual Studio won't alter anything else in your project with the initialization. 
 
 ## Adding .gitignore and .gitattributes files - the first commit
 
@@ -43,7 +43,7 @@ https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 The .gitattributes file helps Git understand file types in your repository better. It's an optional but important file that Visual Studio creates for you using its own custom configuration.
 
-The most important line of the .gitattributes file is _* text=auto_, which sets the default behavior to automatically normalize line endings. With this line, the repository is explicit on text handling so that everyone using the repository is following the same set of rules. The .gitattributes file also sets common image formats as binary and common merge drivers for Visual Studio extensions.
+The most important line of the .gitattributes file is `* text=auto`, which sets the default behavior to automatically normalize line endings. With this line, the repository is explicit on text handling so that everyone using the repository is following the same set of rules. The .gitattributes file also sets common image formats as binary and common merge drivers for Visual Studio extensions.
 
 ## Adding project files - the second commit
 

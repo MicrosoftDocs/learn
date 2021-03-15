@@ -32,4 +32,4 @@ SANDBOXES: There's lots to know about sandbox restrictions, limitations and init
 
 6. You'll get a success message, and you're signed in, that's it!
 
-You can verify by going back to Visual Studio. The Account Settings window will now show your GitHub account added under the All Accounts section.
+You can verify by going back to Visual Studio. The Account Settings window will now show your GitHub account added under the All Accounts section. You can also remove an account from Visual Studio through the Account Settings window.

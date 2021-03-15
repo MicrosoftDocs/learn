@@ -25,13 +25,20 @@ Single selecting on a modified file will open the Visual Studio Diff viewer. Thi
 
 ### Staged Changes section
 
-The Staged Changes section shows up only after you've staged one or more files from the Changes section. You can stage files by selecting the plus button to the right of the file, folder, or the entire section. Staging a file is the equivalent of the `git add` command. The feature allows you to focus only on the parts of your pending changes that you want to commit. To remove a file or folder from the staging area, simply select on the minus button to the right. 
+The Staged Changes section shows up only after you've staged one or more files from the Changes section. You can stage files by selecting the plus button to the right of the file, folder, or the entire section. Staging a file is the equivalent of the `git add` command. The feature allows you to focus only on the parts of your pending changes that you want to commit now and which changes you want to save until a later commit. A commit is a snapshot of the changes that you made to your code. You might make a bunch of changes, but want to organize them in logical and easily readable snapshots. Staging changes allows you to do that. To remove a file or folder from the staging area, simply select on the minus button to the right. 
 
 ### Committing and updating commits
 
 After staging files, the next logical step is to commit the staged files. You can type a commit message in the Commit text box, and select Commit Staged or the keyboard shortcut `Ctrl+Enter` to create a commit. The Commit button has a dropdown that allows you to **Commit and Push** or **Commit and Sync** in a single command as well. 
 
 When you commit a change, you sometimes may want to update the commit if you forgot to add a change or part of the message. That's what the Amend checkbox is for. Clicking on it will let you modify the latest commit in the current branch. You'll see the message for the commit appear in the commit text box and the indication that your next **Commit** action will modify the specific commit.
+
+### Undoing a commit
+
+Visual Studio helps you with the ability to undo any commit you make. You may want to erase the local work you just did and start from scratch if you've made a mistake. In that case, you can 'git reset' a commit, which removes it from the commit graph and orphans it. The IDE provides you with two options when resetting commits. The default way is to reset and keep the changes from that commit (--mixed). Here, the commit is removed, and the files that were changed appear in the Changes section of the Git Changes window. The more dangerous operation is to reset and delete the changes from the commit (--hard).
+
+You should never reset a commit that has been pushed up to a public repository. Removing a commit this way will make it look like a chunk of history is missing when other developers try to push their commits and will cause all sorts of problems. Instead, the safe way to undo a public commit is using `git revert`. With Visual Studio, you can revert a commit, which creates a new second commit that undoes the changes applied in the first commit.
+
 
 ### Stashes section
 
