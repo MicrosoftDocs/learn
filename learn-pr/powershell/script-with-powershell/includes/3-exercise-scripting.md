@@ -29,7 +29,7 @@ A profile is a script that runs where you start a new session. Having a customiz
 1. Select to create a profile for `Current User, Current Host` by running the command `Add-Content`, like so:
 
    ```powershell
-   Add-Content -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' -Path $Profile.CurrentUserCurrentHost
+   New-Item -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' -Path $Profile.CurrentUserCurrentHost
    ```
 
    The `Add-Content` command will create a file, if it doesn't already exist, and add content to it.

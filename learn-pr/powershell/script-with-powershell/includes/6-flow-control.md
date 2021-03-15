@@ -17,7 +17,7 @@ There are many constructs to handle flow control in PowerShell. We can't name th
 An `If` construct is used to determine if something is `True` or `False`, based on that, you run the statement defined by the `If` construct. The syntax for the `If` looks like so:
 
 ```powershell
-If(<expression evaluating to True or False>) 
+If (<expression evaluating to True or False>) 
 {
   # Run statement, only run if expression above is $True
 }
@@ -36,7 +36,7 @@ Here's an example of using an operator `-le` operators that look to compare if t
 
 ```powershell
 $Value = 3
-If($Value -le 0) 
+If ($Value -le 0) 
 {
   Write-Host "Is negative"
 }
@@ -50,7 +50,7 @@ The `If` construct runs statements only if they evaluate to `True`. How can you 
 
 ```powershell
 $Value = 3
-If($Value -le 0) 
+If ($Value -le 0) 
 {
   Write-Host "Is negative"
 } Else {

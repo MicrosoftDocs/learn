@@ -38,7 +38,7 @@ The idea with this exercise is to add `Try/Catch` and ensure the script crashes 
     $date = Get-Date -format "yyyy-MM-dd"
     
     $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
-    If(-Not (Test-Path $DestinationFile)) 
+    If (-Not (Test-Path $DestinationFile)) 
     {
        Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
        Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
@@ -68,7 +68,7 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
 1. Under the `Param` section, add the following code:
 
    ```powershell
-    If($PathIsWebApp -eq $True) {
+    If ($PathIsWebApp -eq $True) {
       Try 
       {
         $ContainsApplicationFiles = "$((Get-ChildItem $Path).Extension | Sort-Object -Unique)" -match  '\.js|\.html|\.css'

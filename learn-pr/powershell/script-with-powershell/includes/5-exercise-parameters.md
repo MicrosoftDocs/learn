@@ -27,6 +27,7 @@ A common task is to create a _backup_. A backup is usually a compressed file sto
 
    ```bash
    touch Backup.ps1
+   code Backup.ps1
    ```
 
    and give it the following content:

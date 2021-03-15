@@ -23,6 +23,7 @@ Let's have a look at the script so far, if you run the previous exercise you sho
 
 ```bash
 touch Backup.ps1
+code Backup.ps1
 ```
 
 and give it the following content:
@@ -48,7 +49,7 @@ Since the previous exercise, you knew the script would crash if `$Path` pointed 
 1. Let's add a check for the `$Path` parameter by adding the following code right after the `Param` section:
 
    ```powershell
-   If(-Not (Test-Path $Path)) 
+   If (-Not (Test-Path $Path)) 
    {
      Throw "The source directory $Path does not exist, please specify an existing directory"
    }
@@ -92,13 +93,13 @@ Since the previous exercise, you knew the script would crash if `$Path` pointed 
      [string]$Path = './app',
      [string]$DestinationPath = './'
    )
-   If(-Not (Test-Path $Path)) 
+   If (-Not (Test-Path $Path)) 
    {
      Throw "The source directory $Path does not exist, please specify an existing directory"
    }
    $date = Get-Date -format "yyyy-MM-dd"
    $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
-   If(-Not (Test-Path $DestinationFile)) 
+   If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
      Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
@@ -110,7 +111,7 @@ Since the previous exercise, you knew the script would crash if `$Path` pointed 
    What you did was two things, you created a new variable `$DestinationFile`, to make it easy to check if this path already existed. Secondly, you defined logic that said, only create zip file if the file doesn't already exist, this code:
 
    ```powershell
-   If(-Not (Test-Path $DestinationFile)) 
+   If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
      Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
