@@ -3,7 +3,7 @@ uid: learn.powershell.connect-commands.4-formatting
 title: Formatting
 metadata:
   title: Formatting
-  description: In unit you are taught the concepts _filtering left_ and _formatting right_ to ensure your pipeline statements are efficient, both in terms of execution speed but also with a useful formatting.
+  description: In this unit you'll learn the concepts _filtering left_ and _formatting right_ to ensure your pipeline statements are efficient, in terms of execution speed but also with useful formatting.
   author: softchris
   ms.author: chnoring
   ms.date: 02/16/2021
