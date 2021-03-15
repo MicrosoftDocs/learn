@@ -7,11 +7,9 @@ Some HPC applications, especially tightly coupled HPC applications, are sensitiv
 
 As a precaution, you should run your own health checks, especially when you're running tightly coupled HPC applications at scale. Running your own health checks increases the probability that you'll continue to run your HPC applications optimally at scale.
 
-## HPC VM health checks
-
 We recommend that your VM health checks verify that the following components are working and performing as expected: InfiniBand network, memory, storage, and CPU cores.
 
-### InfiniBand health checks
+## InfiniBand health checks
 
 In most scenarios, measuring point-to-point InfiniBand latency and bandwidth via a ping-pong test (sending and receiving a message) is enough to verify the health of the InfiniBand network.
 
@@ -27,7 +25,7 @@ The following table illustrates the expected InfiniBand network latency and band
 
 Other tools and benchmarks to consider are *osu-micro-benchmarks* and *Mellanox ClusterKit*. The latter is also preinstalled in the CentOS HPC 7.7+ Azure Marketplace image, in the HPC-X environment. Example ClusterKit scripts are available in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
 
-### Memory health checks
+## Memory health checks
 
 A good way to verify that a VM's memory is healthy is to measure the memory bandwidth. *Intel Memory Latency Checker (MLC)* is a useful tool for benchmarking the memory bandwidth. Other options are to build and run the stream benchmark or use ClusterKit, which can also measure memory bandwidth. You can find example scripts in the [Azure health-check scripts project](https://github.com/Azure/azurehpc/tree/master/apps/health_checks).
 
@@ -39,7 +37,7 @@ The following table shows the expected measured memory bandwidth on each of the 
 | HC44 | &gt; 200 GB/s |
 | HB60 | &gt; 250 GB/s |
 
-### Storage health checks
+## Storage health checks
 
 It's important to understand what storage solution you're using and its expected I/O performance, and then verify the expected I/O performance by running an I/O benchmark. You can choose from several I/O benchmark tools:
 
@@ -52,7 +50,7 @@ To measure your storage health, you would create the maximum I/O throughput to g
 
 You can find example IOR scripts in the [IOR and mdtest project](https://github.com/Azure/azurehpc/tree/master/apps/ior). You can find example FIO scripts in the [FIO project](https://github.com/Azure/azurehpc/tree/master/apps/fio).
 
-### CPU core health
+## CPU core health
 
 A great way to verify that your CPU cores are healthy and performing as expected is to measure the maximum floating-point operations per second (FLOPS), and then compare your measured results with the theoretical expected FLOPS.
 
