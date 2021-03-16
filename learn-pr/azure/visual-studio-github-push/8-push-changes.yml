@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-github-push.8-push-changes
-title: Content
+title: Push changes to GitHub from Visual Studio
 metadata:
-  title: Content
+  title: Push changes to GitHub from Visual Studio
   description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
   ms.date: 02/24/2021
   author: prnadago
