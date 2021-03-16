@@ -4,7 +4,7 @@ You've created an Azure App Service application and a MySQL database, and you've
 
 Your company wanted to learn how to provision its existing Spring Boot Java web applications to Azure App Service.
 
-To that end, you've done the following:
+To that end, you've done the following actions:
 
 * You accessed and configured a sample Spring Boot web application.
 
@@ -14,7 +14,7 @@ To that end, you've done the following:
 
 You're now able to recommend this architecture for your Spring Boot applications.
 
-## Clean up your resources
+## Clean up your Azure resources
 
 In the preceding processes, you created Azure resources. If you don't expect to need these resources in the future, delete the resource group by running the following commands in Azure Cloud Shell:
 
@@ -29,7 +29,7 @@ az ad sp delete --id <your Service Principal Name>
 ```
 
 > [!IMPORTANT]
-> To avoid accruing unwanted charges, you must deprovision the Azure resources and service principal that you used in this module.
+> To avoid accruing unwanted charges, you must deprovision the Azure resources, Service Principal and automated workflows that you used in this module.
 
 ## Additional resources
 
