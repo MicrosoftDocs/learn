@@ -2,24 +2,24 @@ The REST API enables you to manage the devices in your IoT Central application p
 
 To simplify the job of a fleet manager, you've been asked to integrate IoT Central device management capabilities into the existing fleet management application. Fleet managers want to use the existing fleet management application to manage devices connected your IoT Central application.
 
-Here, you'll review the types of device and device authentication in an IoT Central application. Then you'll learn how to use the REST API to manage the devices.
+Here, you'll review the types of device and device authentication in an IoT Central application. Then you'll learn how to use the REST API to manage individual devices. In a later unit, you'll learn how to use jobs to manage devices in bulk.
 
 ## Devices and device templates
 
-Any device that's connected to and managed by an IoT Central application is associated with a device template in the application. The device template acts as a contract between the IoT Central application and the devices connected to it. The device template also includes information about how IoT Central display's information about the device in the web UI. For example, a device template can include definitions of dashboards to show device telemetry or to send commands to a device.
+Any device that's connected to and managed by an IoT Central application is associated with a device template in the application. The *device model* in the template acts as a contract between the IoT Central application and the devices connected to it. The device template also includes information about how IoT Central displays information about the device in the web UI. For example, a device template can include definitions of dashboards to show device telemetry or to send commands to a device.
 
 ## What is a device template?
 
-A device template specifies the capabilities of a device you want to connect to your application. For example, a device template can specify:
+The device model section of a device template specifies the capabilities of a device you want to connect to your application. For example, a device template can specify:
 
 - The types of telemetry, such as temperature, that your device will send to IoT Central.
 - Properties, such as firmware version, that your device will report to IoT Central.
 - Properties, such as target temperature, that IoT Central will set on your device.
 - Commands, such as reboot, that IoT Central will send to your device.
 
-![An example device template for an MXChip IoT DevKit device in the IoT Central UI](../media/4-device-template.png)
+![An example device template for a temperature controller device in the IoT Central UI](../media/4-device-template.png)
 
-The capabilities in a device template are grouped into interfaces. Interfaces enable you to share groups of related capabilities across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
+The capabilities in a device model are grouped into interfaces. Interfaces enable you to share groups of related capabilities across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
 
 ![The Device Information interface in the example device template in the IoT Central UI](../media/4-device-information.png)
 
@@ -29,7 +29,11 @@ You create and manage device templates using the IoT Central web UI or the REST 
 - Browse the Azure IoT device catalog, and import device templates for certified devices.
 - Import a JSON file that contains a device capability model and interface definitions.
 
-To author a JSON device capability model file, use the [Azure IoT Tools for Visual Studio Code extension pack](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools).
+To author a JSON device capability model file, use the [Digital Twins Definition Language editor for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-dtdl).
+
+If the device model already exists in the [device model repository](https://github.com/Azure/iot-plugandplay-models), then IoT Central can download the model and generate a device template the first time a device connects. In this scenario, you'll still need to create any cloud properties, custom device dashboards, and forms that your application needs.
+
+The REST API doesn't use a standard device model when it creates a device template. The REST API uses an extended version that lets you include IoT Central specific definitions such as cloud properties. To learn more about the format of the JSON file the REST API uses, see the [Device Templates - Create](https://docs.microsoft.com/rest/api/iotcentral/devicetemplates/create) documentation. <!-- Check this link -->
 
 ## Publish a device template
 
@@ -37,6 +41,7 @@ Before a real device can connect to your IoT Central application, you must publi
 
 Once a device template is published, significant changes to the device capability model or interface definitions require that you create and publish a new version of the device template.
 
+<!-- Verify this list is up to date -->
 ## Manage device templates using the REST API
 
 The IoT Central REST API lets you:
@@ -73,6 +78,7 @@ IoT Central can generate simulated devices from a device template. These simulat
 
 ## Use the REST API to manage your device templates
 
+<!-- Verify this list is up to date -->
 The [IoT Central REST API for device templates](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
 
 - Create a device template
@@ -83,6 +89,7 @@ The [IoT Central REST API for device templates](https://docs.microsoft.com/rest/
 
 ## Use the REST API to manage your devices
 
+<!-- Verify this list is up to date -->
 The [IoT Central REST API for devices](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
 
 - Get a list of the devices in the application

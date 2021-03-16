@@ -126,7 +126,7 @@ Manage an IoT Central application programmatically using the REST API and Azure 
 
     - How do you list the device templates in an IoT Central application?
     - What types of device can you create in an IoT Central application?
-    - What is th impact of blocking a device?
+    - What is the impact of blocking a device?
 
 1. **Monitor and control your devices**
 
@@ -136,6 +136,7 @@ Manage an IoT Central application programmatically using the REST API and Azure 
         - Query for telemetry values sent by the device
     - Control a device
         - Set writeable properties
+        - Set cloud properties
         - Send commands
         - View command history
     - How to use the REST API to monitor and control devices
@@ -146,6 +147,7 @@ Manage an IoT Central application programmatically using the REST API and Azure 
 
     - Use the REST API to retrieve the last known value of a telemetry stream from a simulated device.
     - Use the REST API to set a writable property value on a simulated device.
+    - USe the REST API to set a cloud property value.
     - Use the REST API to send a command to a simulated device.
     - Use the REST API to view the command history.
 
