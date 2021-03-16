@@ -1,16 +1,16 @@
 Azure Cosmos DB is a NoSQL database. In general, NoSQL databases are characterized as being both horizontally scalable and non-relational.
 
-## Horizontally scalable vs. vertical scaling
+## Horizontally scalable versus vertical scalable
 
 Relational databases typically grow by increasing the size of the VM or compute they are hosted on. NoSQL databases, scale by adding additional servers to store increasing amounts of data. Data stored on additional servers needs to be organized so that it can be accessed later. Simply put data is partitioned by identifying a property of the document that will be used to route the it to the correct server. This property is known as a partition key and the servers are referred to as partitions. To ensure the most efficient operations, the partition key is passed with the data to route to the correct partition to be read or written.
 
-While this may appear to be constraining when accessing data, it has some enormous benefits. Typically an un-sharded relational databases can only grow to 4 TB in size. However, a NoSQL database can grow to unlimited size. It also does so without any change in response times when accessing data from a single partition. This means a NoSQL database can provide the same latency whether the database is 1 MB in size or 1 PB in size. Additionally, as partitions are added, so too is additional throughput capacity, meaning the amount of processing that can occur simultaneously grows as well.
+While this may appear to be constraining when accessing data, it has some enormous benefits. Typically an un-shared relational databases can only grow to 4 TB in size. However, a NoSQL database can grow to unlimited size. It also does so without any change in response times when accessing data from a single partition. This means a NoSQL database can provide the same latency whether the database is 1 MB in size or 1 PB in size. Additionally, as partitions are added, so too is additional throughput capacity, meaning the amount of processing that can occur simultaneously grows as well.
 
-## Non-relational vs. relational databases
+## Non-relational versus relational databases
 
 The second defining characteristic of a NoSQL database is there are no foreign keys, constraints, joins or enforced relationships of any kind between data that spans partitions. Since data in a NoSQL database is stored on different physical servers, enforcing constraints or relationships by placing locks on data could result in negative or unpredictable performance. Azure Cosmos DB is designed to provide high and predictable performance so does not put any locks on data. However, you can manage relational data and relationships in Azure Cosmos DB. It just uses different mechanisms to do it.
 
-:::image type="content" source="../media/horizontal-scale-non-relational.png" alt-text="horizontal scale and non-relational":::
+:::image type="content" source="../media/horizontal-scale-non-relational.png" alt-text="Diagram that shows the horizontal scale for Azure Cosmos DB.":::
 
 ## Why are these database types so different?
 
