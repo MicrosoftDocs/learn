@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.refactor-template-modules
-title: Refactor your template to use modules
+title: Exercise - Refactor your template to use modules
 metadata:
   unitType: exercise  
   title: Exercise - Refactor your template to use modules

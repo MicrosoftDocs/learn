@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.add-params-and-vars
-title: Add parameters and variables to your Bicep template
+title: Exercise - Add parameters and variables to your Bicep template
 metadata:
   unitType: exercise  
   title: Exercise - Add parameters and variables to your Bicep template
