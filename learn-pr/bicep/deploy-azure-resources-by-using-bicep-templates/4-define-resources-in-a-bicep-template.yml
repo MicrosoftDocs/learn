@@ -3,7 +3,7 @@ uid: learn.azure.deploy-azure-resources-bicep.define-resources-in-a-bicep-templa
 title: Define resources in a Bicep template
 metadata:
   unitType: exercise  
-  title: Define resources in a Bicep template
+  title: Exercise - Define resources in a Bicep template
   description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
   ms.date: 03/12/2021  
   author: johndowns

@@ -3,7 +3,7 @@ uid: learn.azure.deploy-azure-resources-bicep.add-params-and-vars
 title: Add parameters and variables to your Bicep template
 metadata:
   unitType: exercise  
-  title: Add parameters and variables to your Bicep template
+  title: Exercise - Add parameters and variables to your Bicep template
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
   ms.date: 03/12/2021  
   author: johndowns
