@@ -28,9 +28,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    var appServicePlanName = 'ToyLaunchPlan'
    ```
 
-   Notice that we're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define the variable and default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice we're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define the variable and default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice that we're using a variable for the App Service plan name, but we use parameters for the other names. This is because while storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This means it's not a concern to use the same App Service plan name across different deployments, as long as they are all going into different resource groups.
+   Also notice we're using a variable for the App Service plan name, but we use parameters for the other names. Storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as they're all going to be deployed into different resource groups.
 
 2. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
@@ -67,7 +67,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Automatically set the SKUs for each environment type
 
-1. In the *main.bicep* file in Visual Studio Code, add the following below the parameters you created in the previous task:
+1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters you created in the previous task:
 
    ```bicep
    @allowedValues([
@@ -77,18 +77,18 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    param environmentType string
    ```
 
-   Notice that we are defining a parameter with a set of allowed values, but we're not specifying a default value for this parameter.
+   Notice we're defining a parameter with a set of allowed values, but we're not specifying a default value for this parameter.
 
-1. Below the lines we just inserted, add the following:
+1. Below the lines we inserted, add the following Bicep code:
 
    ```bicep
    var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
    var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'S1'
    ```
 
-   Notice that we are setting these variables' values by using the ternary operator to evaluate an if-then-else condition.
+   Notice we're setting these variables' values by using the ternary operator to evaluate an if-then-else condition.
 
-1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
+2. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -158,7 +158,7 @@ New-AzResourceGroupDeployment `
 
 ::: zone-end
 
-Notice that we are explicitly specifying the value for our `environmentType` parameter when we execute the deployment. We don't need to specify all of the other parameter values because they have defaults that we are happy with.
+Notice that we're explicitly specifying the value for our `environmentType` parameter when we execute the deployment. We don't need to specify all of the other parameter values because they have defaults that we're happy with.
 
 ### Check your deployment
 
