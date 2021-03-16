@@ -5,8 +5,8 @@ metadata:
   title: Deploy Azure resources by using Bicep templates
   description: TODO
   ms.date: 03/12/2021  
-  author: TODO
-  ms.author: TODO
+  author: johndowns
+  ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: Deploy Azure resources by using Bicep templates  
 summary: TODO # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
