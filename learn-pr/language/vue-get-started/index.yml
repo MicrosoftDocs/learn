@@ -14,7 +14,12 @@ abstract: |
   In this module, you'll:
   - Create an app.
   - Work with data.
-prerequisites: HTML/CSS, Git, npm, and JavaScript
+prerequisites: | 
+  You'll need intermediate knowledge in the following areas:
+  - HTML and CSS
+  - Git
+  - npm
+  - JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
