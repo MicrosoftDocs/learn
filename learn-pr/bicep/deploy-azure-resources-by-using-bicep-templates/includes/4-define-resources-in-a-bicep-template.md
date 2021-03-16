@@ -10,7 +10,6 @@ During the process, you:
 > * Provision your infrastructure and verify the result.
 > * Add an App Service plan and app to the template.
 > * Provision the infrastructure again to see the new resources.
-> * Tear everything down.
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
