@@ -17,6 +17,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 > [!IMPORTANT]
 > To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
 
+> [!CAUTION]
+> TODO: images are not correct!
+
 ## Add the `location` and resource name parameters
 
 1. In the *main.bicep* file in Visual Studio Code, add the following to the top of the file:
@@ -123,8 +126,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ### Deploy the updated Bicep template
 
-Here, you change the name of the deployment to better reflect what this deployment does.
-
 ::: zone pivot="cli"
 
 Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
@@ -164,7 +165,7 @@ Notice that we're explicitly specifying the value for our `environmentType` para
 
 1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **3 Succeeded** deployments. Select this link.
 
-1. Notice that both deployments are in the list.
+1. Notice that all three of our deployments are in the list.
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
