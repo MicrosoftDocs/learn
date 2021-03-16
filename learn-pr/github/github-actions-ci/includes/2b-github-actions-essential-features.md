@@ -1,4 +1,4 @@
-Here, you learn how to use default and custom environment variables, accessing the workflow logs from both the GitHub UI and REST API endpoints, and using scripts within a workflow run. 
+Here, you learn how to use default and custom environment variables, use custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub UI and REST API endpoints.
 
 ## Default environment variables and contexts
 
@@ -47,41 +47,6 @@ jobs:
           First_Name: Mona
 ```
 
-## Accessing the workflow logs from the user interface
-
-When we think about successful automation, we aim to spend the least amount of time looking at what’s automated, so we can focus our attention on what’s relevant. But sometimes things don’t go as planned, and we are required to review what happened. That debugging process can be frustrating; but the GitHub UI provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in the GitHub UI, you can follow the below steps:
-
-  1. Navigate to the **Actions** tab in your repository.
-  2. In the left sidebar, click the desired workflow.
-  3. From the list of workflow runs, select the desired run.
-  4. Under **Jobs**, select the desired job.
-  5. Read the log output.
-
-If you have several runs within a workflow, you can also select the **status** filter after choosing your workflow and set it to **Failure** to only display the failed runs within that workflow.
-
-For more information on viewing logs for your workflow runs, checkout [Using workflow run logs](https://docs.github.com/en/actions/managing-workflow-runs/using-workflow-run-logs#searching-logs).
-
-## Accessing the workflow logs from the REST API
-
-In addition to viewing logs using the GitHub UI, you can also use GitHub's REST API to view logs for workflow runs, re-run workflows, or even cancel workflow runs. To view a workflow run's log using the API, you need to send a `GET` request to the logs endpoint. Keep in mind that anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
-
-For example, a `GET` request to view a specific workflow run log would follow the below path:
-
-```bash
-GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
-```
-
-For more information on using the GitHub API to view workflow logs, check out [Workflow runs](https://docs.github.com/en/rest/reference/actions#workflow-runs).
-
-## Enable step debug logging in a workflow
-
-In some cases, the default workflow logs won't provide enough detail to diagnose why a specific workflow run, job, or step has failed. For these situations, you can enable additional debug logging for two options; runs and steps. Enabling this additional logging is done by setting some repository secrets that require `admin` access to the repository to `true`. Below are the two options for additional diagnostic logging.
-
-- To enable runner diagnostic logging, set the `ACTIONS_RUNNER_DEBUG` secret in the repository that contains the workflow to `true`.
-- To enable step diagnostic logging, set the `ACTIONS_STEP_DEBUG` secret in the repository that contains the workflow to `true`.
-
-For more information on additional debug logging, check out [Enabling debug logging](https://docs.github.com/en/actions/managing-workflow-runs/enabling-debug-logging#enabling-step-debug-logging).
-
 ## Using scripts in your workflow
 
 In the above workflow snippet examples, the `run` keyword is used to simply echo a string of text. Since the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
@@ -107,3 +72,100 @@ jobs:
 
 For more information on adding customized scripts to your workflow, check out [Essential features of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions). 
 
+## Caching dependencies with the cache action
+
+When building out a workflow, you'll often find the need to reuse the same outputs or download dependencies from one run to another. Instead of downloading these dependencies over and over again, you can cache them to make your workflow run faster and more efficient. This can dramatically reduce the time it takes to run certain steps in a workflow since jobs on GitHub-hosted runners start in a clean virtual environment each time. Caching dependencies will help speed up the time it takes to recreate these dependency files.
+
+To cache dependencies for a job, you'll need to use GitHub's `cache` action. This action retrieves a cache identified by a unique key that you provide. When the action finds the cache, it then retrieves the cached files to the path that you configure. To use the `cache` action, you'll need to set a few specific parameters in order for it to work successfully:
+
+| Parameter | Description | Required |
+| --- | --- | --- |
+| Key | Refers to the key identifier created when saving and searching for a cache. | ✅ |
+| Path | Refers to the file path on the runner to cache or search. | ✅ |
+| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | ❌ |
+
+```yml
+steps:
+  - uses: actions/checkout@v2
+
+  - name: Cache NPM dependencies
+    uses: actions/cache@v2
+    with:
+      path: ~/.npm
+      key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+      restore-keys: |
+        ${{ runner.os }}-npm-cache-
+```
+
+In the above example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an id (`npm-cache` in this example) is useful when you are using the `restore-keys` fallback and have multiple caches.
+
+For more information about caching dependencies, check out [Using the cache action](https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#using-the-cache-action).
+
+
+## Passing artifact data between jobs
+
+Similar to the idea of caching dependencies within your workflow, you can pass data between jobs within the same workflow. This is done by using the `upload-artifact` and `download-artifact` actions. Jobs that are dependent on a previous job's artifacts must wait for the dependent job to complete successfully before they can run. This is useful if you have a series of jobs that need to run sequentially based on artifacts uploaded from a previous job. For example, `job_2` requires `job_1` by using the `needs: job_1` syntax.
+
+```yml
+name: Share data between jobs
+on: push
+jobs:
+  job_1:
+    name: Upload File
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World" > file.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: file
+          path: file.txt
+
+  job_2:
+    name: Download File
+    runs-on: ubuntu-latest
+    needs: job_1
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          name: file
+      - run: cat file.txt
+```
+
+The above example has two jobs. `job_1` writes some text into the file `file.txt` and then uses the `actions/upload-artifact@v2` action to upload this artifact and store the data for future use within the workflow. `job_2` requires `job_1` to complete by using the `needs: job_1` syntax and then uses the `actions/download-artifact@v2` action to download that artifact and then print the contents of `file.txt`.
+
+For more information on uploading and downloading artifacts between jobs, and to see a more detailed example using three jobs, check out [Passing data between jobs in a workflow](https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow).
+
+## Enable step debug logging in a workflow
+
+In some cases, the default workflow logs won't provide enough detail to diagnose why a specific workflow run, job, or step has failed. For these situations, you can enable additional debug logging for two options; runs and steps. Enabling this additional logging is done by setting some repository secrets that require `admin` access to the repository to `true`. Below are the two options for additional diagnostic logging.
+
+- To enable runner diagnostic logging, set the `ACTIONS_RUNNER_DEBUG` secret in the repository that contains the workflow to `true`.
+- To enable step diagnostic logging, set the `ACTIONS_STEP_DEBUG` secret in the repository that contains the workflow to `true`.
+
+For more information on additional debug logging, check out [Enabling debug logging](https://docs.github.com/en/actions/managing-workflow-runs/enabling-debug-logging#enabling-step-debug-logging).
+
+## Accessing the workflow logs from the user interface
+
+When we think about successful automation, we aim to spend the least amount of time looking at what’s automated, so we can focus our attention on what’s relevant. But sometimes things don’t go as planned, and we are required to review what happened. That debugging process can be frustrating; but the GitHub UI provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in the GitHub UI, you can follow the below steps:
+
+  1. Navigate to the **Actions** tab in your repository.
+  2. In the left sidebar, click the desired workflow.
+  3. From the list of workflow runs, select the desired run.
+  4. Under **Jobs**, select the desired job.
+  5. Read the log output.
+
+If you have several runs within a workflow, you can also select the **status** filter after choosing your workflow and set it to **Failure** to only display the failed runs within that workflow.
+
+For more information on viewing logs for your workflow runs, checkout [Using workflow run logs](https://docs.github.com/en/actions/managing-workflow-runs/using-workflow-run-logs#searching-logs).
+
+## Accessing the workflow logs from the REST API
+
+In addition to viewing logs using the GitHub UI, you can also use GitHub's REST API to view logs for workflow runs, re-run workflows, or even cancel workflow runs. To view a workflow run's log using the API, you need to send a `GET` request to the logs endpoint. Keep in mind that anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
+
+For example, a `GET` request to view a specific workflow run log would follow the below path:
+
+```bash
+GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
+```
+
+For more information on using the GitHub API to view workflow logs, check out [Workflow runs](https://docs.github.com/en/rest/reference/actions#workflow-runs).
