@@ -1,18 +1,18 @@
-When loading data into Azure Synapse Analytics on a scheduled basis it’s important to try to reduce the time taken not perform the data load, and to minimize the resources needed as much as possible to maintain good performance, in a cost effective way
+When loading data into Azure Synapse Analytics on a scheduled basis, it’s important to try to reduce the time taken to not perform the data load, and minimize the resources needed as much as possible to maintain good performance cost-effectively.
 
 Strategies for managing source data files include:
 
 ## Maintain a well-engineered data lake structure
 
-Maintaining a well-engineered Data Lake structure allows you to know that the data your loading on a recurring basis is consistent with the data requirements for your system. This is less important if your load is a once off or exploratory rather than analytical. Some strategies include folder hierarchies based on source system, and date/time or file format and focus.
+Maintaining a well-engineered Data Lake structure allows you to know that the data your loading regularly is consistent with the data requirements for your system. It is less important if your load is a once-off or exploratory rather than analytical. Some strategies include folder hierarchies based on the source system, and date/time or file format and focus.
 
 In general, having well defined “zones” established for the data coming into the Data Lake and cleansing and transformation tasks that land the data you need in a curated and optimized state.
 
 ## Compress and optimize files
 
-When loading large datasets, it’s best to leverage the compression capabilities of the file format. It ensures that less time is spent on the process of data transfers, leveraging instead the power of Azure Synapse’ Massively Parallel Processing (MPP) compute capabilities for decompression
+When loading large datasets, it’s best to use the compression capabilities of the file format. It ensures that less time is spent on the process of data transfers, using instead the power of Azure Synapse’ Massively Parallel Processing (MPP) compute capabilities for decompression
 
-It is fairly standard to maintain curated source files in columnar compressed file formats such as RC, Gzip, Parquet, and ORC, which is all supported import formats.
+It is fairly standard to maintain curated source files in columnar compressed file formats such as RC, Gzip, Parquet, and ORC, which are all supported import formats.
 
 ## Split source files
 
