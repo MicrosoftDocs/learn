@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-access-management-for-apps
 metadata:
-  title: Implement Access Management for Apps
-  description: Implement Access Management for Apps
-  ms.date: 02/02/2021
+  title: 'SC-300 part 3: Implement Access Management for Apps'
+  description: 'SC-300 part 3: Implement Access Management for Apps'
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement Access Management for Apps
+title: 'SC-300 part 3: Implement Access Management for Apps'
 prerequisites: |
   None
 summary: |
@@ -18,6 +18,7 @@ levels:
 - intermediate
 roles:
 - administrator
+- identity-access-admin
 - security-engineer
 products:
 - azure

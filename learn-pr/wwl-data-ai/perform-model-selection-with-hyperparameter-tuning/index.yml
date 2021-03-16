@@ -4,8 +4,8 @@ metadata:
   title: Perform model selection with hyperparameter tuning
   description: "Perform model selection with hyperparameter tuning"
   ms.date: 05/22/2020
-  author: jasallen
-  ms.author: jasdeb
+  author: b-dstrod
+  ms.author: b-dstrod
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform model selection with hyperparameter tuning

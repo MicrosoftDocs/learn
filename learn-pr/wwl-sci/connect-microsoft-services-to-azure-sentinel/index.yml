@@ -3,7 +3,7 @@ uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
 metadata:
   title: Connect Microsoft services to Azure Sentinel
   description: "Connect Microsoft services to Azure Sentinel"
-  ms.date: 01/26/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-sentinel

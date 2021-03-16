@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
+metadata:
+  title: Render a model with Azure Remote Rendering
+  description: Create an Azure Remote Rendering session and render a 3D model.
+  ms.date: 02/01/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Render a model with Azure Remote Rendering
+summary: >
+  Create an Azure Remote Rendering session and render a 3D model.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Create a Remote Rendering session
+  - Load a 3D model
+  - Render a 3D model 
+prerequisites: |
+  - A Windows 10 PC that meets the [system requirements](https://docs.microsoft.com/azure/remote-rendering/overview/system-requirements) and is configured with [the correct tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - Unity Hub with Unity 2019.4.X installed
+  - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/)
+  - Familiarity with [setting up a Unity project for Windows Mixed Reality](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity)
+  - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
+  - Basic familiarity with C# and Unity scripting
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-remote-rendering
+- windows-mixed-reality
+- hololens
+units:
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.2-what-is-azure-remote-rendering
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.3-exercise-create-an-azure-remote-rendering-resource
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-managing-a-session-and-rendering-models
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.6-knowledge-check
+- learn.azure.render-a-model-with-azure-remote-rendering-and-unity.7-summary
+badge:
+  uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.badge

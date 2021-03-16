@@ -32,9 +32,9 @@
 1. Under **Email one-time passcode for guests**, use the default setting.
 
     > [!NOTE]
-    >- Automatically enable email one-time passcode for guests in March 2021. (Default) If the email one-time passcode feature is not already enabled for your tenant, it will be automatically turned on in March 2021. No further action is necessary if you want the feature enabled at that time. If you've already enabled or disabled the feature, this option will be unavailable.
+    >- Automatically enable email one-time passcode for guests in October 2021. (Default) If the email one-time passcode feature is not already enabled for your tenant, it will be automatically turned on in October 2021. No further action is necessary if you want the feature enabled at that time. If you've already enabled or disabled the feature, this option will be unavailable.
     >- Enable email one-time passcode for guests effective now. Turns on the email one-time passcode feature for your tenant.
-    >- Disable email one-time passcode for guests. Turns off the email one-time passcode feature for your tenant and prevents the feature from turning on in March 2021.
+    >- Disable email one-time passcode for guests. Turns off the email one-time passcode feature for your tenant and prevents the feature from turning on in October 2021.
 
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 

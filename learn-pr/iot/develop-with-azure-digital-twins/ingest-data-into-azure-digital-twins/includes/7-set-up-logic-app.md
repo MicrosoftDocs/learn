@@ -1,4 +1,7 @@
-In this unit, you'll create a custom Azure Logic Apps connector and use it within a logic app. The logic app will periodically update the **Logic App** property of the model and digital twin.
+In this unit, we'll show how a Logic App can be used as the external compute that publishes data into Azure Digital Twins. You'll create a custom Azure Logic Apps connector and use it within a logic app. The logic app will periodically update the **Logic App** property of the GrindingStep digital twin.
+
+> [!Note]
+> We'll be reusing the client id and client secret that were created for the REST API calls in the previous unit.
 
 ## Create a custom Logic Apps connector
 
@@ -51,8 +54,8 @@ In this unit, you'll create a custom Azure Logic Apps connector and use it withi
 
     - **OAuth 2.0**:
         - **Identity provider**: Azure Active Directory
-        - **Client ID**: The application (client) ID for your Azure AD app registration.
-        - **Client secret**: The client secret you created in Prerequisites for your Azure AD app registration.
+        - **Client ID**: The application (client) ID created in the REST API unit
+        - **Client secret**: The client secret created in the REST API unit
         - **Login URL**: https://login.windows.net (Accept the default value.)
         - **Tenant ID**: The Directory (tenant) ID for your Azure AD app registration.
         - **Resource URL**: 0b07f429-9f4b-4714-9392-cc5e8e80c8b0
@@ -67,6 +70,8 @@ In this unit, you'll create a custom Azure Logic Apps connector and use it withi
     :::image type="content" source= "..\media\update-connector.png" alt-text="Partial screenshot of the Edit Logic Apps Custom Connector page with the Update connector button highlighted.":::
 
 1. In the **Redirect URL** field, copy the value that has been generated.
+    :::image type="content" source= "..\media\logic-app-redirect.png" alt-text="Copy the redirect url.":::
+
 1. Close the **Edit Logic Apps Custom Connector** pane.
 
 ## Update the Azure AD app
@@ -93,14 +98,14 @@ az ad app update --id <application ID> --reply-urls http://localhost <redirect U
 1. In the Logic Apps Designer page that follows, change the Internal to 1, so that the event is triggered every 1 minute.
 1. Select **+ New step**. This action opens the **Choose an operation** dialog box.
 1. Switch to the **Custom** tab.
-1. In the top box, you should see your custom connector from earlier. Select it to display the list of APIs contained in that connector. Use the search bar or scroll through the list to select **DigitalTwins_SendTelemetry**.
+1. In the top box, you should see your custom connector from earlier. Select it to display the list of APIs contained in that connector. Use the search bar or scroll through the list to select **DigitalTwins_Update**.
 
    :::image type="content" source= "..\media\custom-action.png" alt-text="Screenshot of the Choose an operation dialog box with the custom connector highlighted.":::
 
-1. In the new **DigitalTwins SendTelemetry** box, fill in the fields as follows:
+1. After selected the choices above you'll be prompted to authenticate and consent
+1. In the new **DigitalTwins Update** box, fill in the fields as follows:
     - **id**: GrindingStep
-    - **telemetry**: The body that the chosen API request requires. For **SendTelemetry**, this body is in JavaScript Object Notation (JSON) format. (See example JSON in the screenshot in the next step.)
-    - **Message-Id**: A unique message identifier (in the scope of the digital twin ID) that is commonly used for deduplicating messages.
+    - **item**: Enter the JSON payload required by the [Digital Twins Update API](https://docs.microsoft.com/rest/api/digital-twins/dataplane/twins/digitaltwins_update). The Logic App Connector is configured to provide multiple items as one JSON object[].
     - **api-version**: The latest API version. Currently, this value is 2020-10-31.
 1. Select **Save**.
 

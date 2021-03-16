@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.language.typescript-namespaces-organize-code
+metadata:
+  title: 'Organize code using TypeScript namespaces'
+  description: Learn how to use TypeScript namespaces' to organize code.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Organize code using TypeScript namespaces'
+summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
+abstract:  | 
+  In this module, you will learn how to:
+  - Explain the purpose of namespaces.
+  - Implement single-file namespaces.
+  - Implement multi-file namespaces.
+  - Explain the design considerations for using namespaces and modules.
+prerequisites: |
+  - Knowledge of TypeScript
+  - Familiarity with JavaScript
+  - Installed software:
+    - [Git](https://git-scm.com/?azure-portal=true)
+    - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+    - [Node.js](https://nodejs.org/?azure-portal=true)
+    - TypeScript
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- student
+- developer
+products:
+- azure
+- vs-code
+units:
+- learn.language.typescript-namespaces-organize-code.1-introduction
+- learn.language.typescript-namespaces-organize-code.2-organize-code-namespaces
+- learn.language.typescript-namespaces-organize-code.3-exercise-single-file-namespace
+- learn.language.typescript-namespaces-organize-code.4-multi-file-namespaces
+- learn.language.typescript-namespaces-organize-code.5-design-considerations
+- learn.language.typescript-namespaces-organize-code.6-lab
+- learn.language.typescript-namespaces-organize-code.7-knowledge-check
+- learn.language.typescript-namespaces-organize-code.8-summary-resources
+badge:
+  uid: learn.language.typescript-namespaces-organize-code.badge 

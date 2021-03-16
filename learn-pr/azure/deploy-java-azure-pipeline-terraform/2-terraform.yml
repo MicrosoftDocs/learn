@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-azure-pipeline-terraform.2-terraform
-title: Terraform
+title: Review Terraform configuration and scripting
 metadata:
-  title: Terraform
-  description: Review Terraform configuration and scripting.
+  title: Review Terraform configuration and scripting
+  description: In this unit, you review Terraform configuration and scripting.
   ms.date: 02/01/2021
   author: roryp
   ms.author: ropreddy

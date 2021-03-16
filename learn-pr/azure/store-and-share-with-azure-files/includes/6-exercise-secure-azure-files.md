@@ -59,17 +59,15 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     > [!NOTE]
     > You might need to go to the reports share because the error page could be cached for the data file share.
 
-1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
+1. Use the browser on your computer to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 
 1. Connect to your VM by using the remote desktop connection.
 
-1. Open the file share in the Azure portal, upload the azcopy_windows file so it is avalibal on the VM. Copy to the desktop for easy use.
-
-1. Open the folder that contains the zip file on the VM.
+1. Open the file share in the Azure portal, upload the azcopy.exe file so it is avalibal on the VM. On the VM drag to the desktop for easy use.
 
     ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
 
-1. Select the **azcopy_windows_amd64** zip file.
+1. Select the **azcopy** zip file.
 
 1. On the menu, select **Compressed Folder Tools**, and then select **Extract all**.
 
@@ -80,7 +78,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Move to the folder that contains **AzCopy**.
 
     ```powershell
-    cd C:\Users\azureuser\Desktop\azcopy_windows_amd64_10.8.0\azcopy_windows_amd64_10.8.0
+    cd C:\Users\azureuser\Desktop
     ```
 
 1. Run AzCopy to copy the files to Azure by first signing in to the sandbox.
@@ -88,6 +86,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ```powershell
     .\azcopy.exe login
     ```
+    
+    > [!NOTE]
+    > Due to security you now need to use an external web browser.  You will need to type the URL into another device, your phone works well.  Enter the code to complete the connection.
 
 ## Copy local files to Azure
 

@@ -1,10 +1,14 @@
-Imagine you're asked to prototype a solution that can model how chocolate-manufacturing components affect the production of chocolate. These components often have a child-parent relationship, and the status of the parent component relies on the values stored in child components or other systems. You can:
+Imagine you're asked to prototype a solution that can model how chocolate-manufacturing components affect the production of chocolate. These components often have a child-parent relationship, and the status of the parent component relies on the values stored in child components or other systems. You need to:
 
 - Create and store the model.
 - Create instances of the model for each component.
 - Store or update important component values from various external systems.
 
 Azure Digital Twins provides a service that abstracts the complexity needed to deliver this solution. You use Azure Digital Twins to store models created by using the Digital Twins Definition Language (DTDL). Models of components can be instantiated and their properties updated by using APIs or the Azure Digital Twins SDK.
+
+In this module, you'll leverage Azure IoT services to create an end-to-end architecture that helps populate Azure Digital Twins with relevant data from IoT devices.
+
+      :::image type="content" source= "../media/module-3-architecture.png" alt-text="Partial screenshot of a code listing, showing the line in which to specify the device connection string.":::
 
 ## Learning objectives
 

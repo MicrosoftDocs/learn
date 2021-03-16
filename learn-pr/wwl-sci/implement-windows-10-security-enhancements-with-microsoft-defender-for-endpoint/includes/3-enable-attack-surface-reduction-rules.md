@@ -10,17 +10,17 @@ Attack surface reduction rules target certain software behaviors that are often 
 
 Such software behaviors are sometimes seen in legitimate applications; however, these behaviors are often considered risky because they are commonly abused by malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe.
 
-Each Site Recovery rule contains one of three settings:
+Each Attack Surface Reduction rule contains one of three settings:
 
 - **Not configured**: Disable the attack surface reduction rule
 
-- **Block**: Enable the Azure Site Recovery rule
+- **Block**: Enable the Attack Surface Reduction rule
 
 - **Audit**: Evaluate how the attack surface reduction rule would impact your organization if enabled
 
 ## Attack surface reduction rules
 
-Site Recovery currently supports all of the rules below:
+Attack Surface Reduction rules currently supports all of the rules below:
 
 - Block executable content from email client and webmail
 - Block all Office applications from creating child processes

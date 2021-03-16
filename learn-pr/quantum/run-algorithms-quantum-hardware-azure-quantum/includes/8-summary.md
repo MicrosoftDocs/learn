@@ -1,10 +1,8 @@
-Congratulations! You just learned how to use the Azure Quantum platform to run
-your Q# quantum computing programs on quantum hardware.
+Congratulations! You just learned how to use the Azure Quantum platform to run your Q# quantum computing programs on quantum hardware.
 
 In this module, we covered a lot. Here are a few key concepts to keep in mind:
 
-* Azure Quantum enables you to run Q#
-  programs on quantum computers through industry-leading providers.
+* Azure Quantum enables you to run Q# programs on quantum computers through industry-leading providers.
 * To build quantum computers, we need controllable quantum systems that satisfy a demanding list of conditions.
 * Trapped ion and superconducting qubit quantum computers are the two most prominent platforms for quantum computing nowadays.
 * You can use the Azure Quantum CLI to submit and manage jobs to quantum computers.

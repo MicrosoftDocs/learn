@@ -6,7 +6,7 @@ metadata:
   description: "Exercise – Convert speech from an audio file to text"
   ms.date: 01/07/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-python

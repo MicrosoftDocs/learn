@@ -2,7 +2,8 @@ Security Center continually assesses your resources, subscriptions, and organiza
 
 The secure score is shown in the Azure portal pages as a percentage value. The underlying values are also clearly presented:
 
-:::image type="content" source="../media/4-overall-secuire-score.png" alt-text="Section of the Azure portal showing the Overall Secure Score.":::
+> [!div class="mx-imgBorder"]
+> ![Section of the Azure portal showing the Overall Secure Score.](../media/4-overall-secuire-score.png)
 
 To increase your security and raise your score, review Security Center's recommendations page for the outstanding actions necessary. Each recommendation includes instructions to help you remediate the specific issue.
 
@@ -12,7 +13,8 @@ Every control in the recommendations list shows the potential secure score incre
 
 For example, the security control called "Apply system updates" has a maximum score of six points. You can see it in the tooltip on the potential increase value of the control:
 
-:::image type="content" source="../media/4-specific-recommendations.png" alt-text="Fragment of a screenshot showing a specific recommendation control and the percentage point increase will occur from fixing the issues.":::
+> [!div class="mx-imgBorder"]
+> ![Fragment of a screenshot showing a specific recommendation control and the percentage point increase will occur from fixing the issues.](../media/4-specific-recommendations.png)
 
 The maximum score for this control, *Apply system updates*, is always 6. In this example, there are 50 resources. Divide the maximum score by 50, and the result is that every resource contributes 0.12 points.
 

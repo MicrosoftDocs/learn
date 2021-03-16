@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.5-exercise-render-a-model-in-unity
+title: Render a model in Unity
+metadata:
+  title: Render a model in Unity
+  description: Configure a Unity project to render the sample engine model
+  ms.date: 02/01/2021
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-render-a-model-in-unity.md)]

@@ -1,36 +1,44 @@
-Before discussing the tools available to help you decide what to purchase, it's important to understand what reservations are and how they work. Reservations provide a billing discount only and don't affect the runtime state of your resources. No extra work is needed on your end once you purchase the reservation to start getting the cost savings benefit. After you purchase a reservation, the discount automatically applies to matching resources – no resource tagging or restarting is needed. At the end of your reservation term, the reservation expires and the discount stops applying unless you renew the reservation.
+Before discussing the tools available to help you decide what to purchase, it's important to understand what reservations are and how they work. Reservations provide a billing discount only and don't affect the runtime state of your resources. After you purchase a reservation, the discount automatically applies to matching resources – no resource tagging or restarting is needed. At the end of your reservation term, the reservation expires and the discount stops applying unless you renew the reservation.
 
-Assessing your consistent base VM usage before you purchase a reservation is key to maximizing your benefit. All reservations, except Azure Databricks, are applied on an hourly basis. This is important to know because if you purchase more reserved quantity than what you use on a consistent hourly basis, then your reservation will be underutilized. Unused reserved capacity doesn't carry over from one hour to the next and leads to waste.
+Assessing your consistent base resource usage before you purchase a reservation is key to maximizing your benefit. All reservations, except Azure Databricks, are applied on an hourly basis. If you purchase more reserved quantity than what you use on a consistent hourly basis, then your reservation will be underutilized. Unused reserved capacity doesn't carry over from one hour to the next and leads to waste.
 
 There are multiple methods to determine what to purchase. This unit discusses the tools available that help you determine the best Azure Reservations purchases for your workloads.
 
 ## Use reservation purchase recommendations
 
-Azure automatically analyzes your base VM usage on your behalf to provide you with Azure Reservation purchase recommendations. The recommendations are an array of logical purchase options you can make for your organization and provide a great starting point in your decision making process. Azure provides recommendations for purchases by analyzing your hourly usage data over the last 7, 30, and 60 days.
+Azure automatically analyzes your usage over last 7, 30, 60 days and pricing to provide you with reservation purchase recommendations. The recommendation is provided for the quantity that maximizes your savings.
 
-Azure Reservation recommendations identify suggested purchase SKUs / quantities and also calculate your expected costs if you were to act upon the recommendation provided. Azure then compares the calculation with your actual pay-as-you-go costs for every hour over the duration of the recommendation reservation period. Calculations are made for an array of different purchase quantities and the quantity that maximizes your cost savings is what's recommended.
+To see purchase recommendations, sign in to the Azure portal. Navigate to Reservations, select Add and then select the product that you want to purchase reservations for. You’ll see recommended products quantities based on your usage pattern. If you change the scope, recommendations are updated for the new scope. Here’s an example showing recommendations.
 
-![Diagram showing VM usage over time](../media/2-vm-usage-over-time.png)
+:::image type="content" source="../media/2-select-product-recommended-quantity.png" alt-text="Screenshot showing recommended quantities." lightbox="../media/2-select-product-recommended-quantity.png" :::
 
-The image above shows the usage for your organization’s workload. You use 500 VMs most of the time, but sometimes usage spikes to 700 VMs. The Azure recommendation engine uses this data and calculates your savings for both the 500 and 700 VM quantities. Since the 700 VM usage is sporadic, it will lead to lesser savings compared to the 500 quantity so the Azure recommendation is provided for the quantity of 500.
+You can group the recommendations by the smallest instance size in an instance size flexibility group by using the toggle option shown above.
+
+When you select **See details** for a recommendation, you'’ll see the past usage pattern and your projected savings for a different quantity.
+
+The following chart shows a sample usage pattern in yellow over last 29 days. The recommended quantity based on the usage pattern is shown in green.
+
+The mentioned prices are for example purposes only. They are not intended to imply actual costs.
+
+:::image type="content" source="../media/2-usage-over-time-chart.png" alt-text="Screenshot showing usage over time and recommended quantity." lightbox="../media/2-usage-over-time-chart.png" :::
+
+You can also see how your savings would change, if you purchase a different quantity on the **Savings by quantity** tab.
+
+The mentioned prices are for example purposes only. They are not intended to imply actual costs.
+
+:::image type="content" source="../media/2-savings-by-quantity.png" alt-text="Screenshot showing the savings by quantity tab." lightbox="../media/2-savings-by-quantity.png" :::
 
 You can also get the [reservation recommendations using API](https://docs.microsoft.com/rest/api/consumption/reservationrecommendations/list).
 
-## View reservation recommendations in the Azure portal
+## View reservation recommendations in Azure Advisor
 
-Reservation purchase recommendations are calculated by the recommendations engine and are shown in Azure Advisor. They're also shown in the reservation purchase experience in the [Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_Reservations/CreateBlade/referrer/docs).
+Azure shows recommendations for the single subscription scope based on the last 30 days of your utilization pattern.
 
-**To view purchase recommendations in Advisor**: In the Azure portal, navigate to Advisor, and select **Cost** to see reservation recommendations. Here's an example showing purchase recommendations for Cosmos DB.
+To view purchase recommendations in Advisor:
 
-[![Example showing Azure Advisor](../media/2-advisor-full-screen.png)](../media/2-advisor-full-screen.png#lightbox)
+In the Azure portal, navigate to **Advisor**.
 
-**To view reservation recommendations in the Reservation experience**: In the Azure portal, navigate to Reservations and then select **Add**.
-
-Select the Azure service for which you want to purchase a reservation.
-
-The **Recommended** tab shows reservation recommendations. You can change the scope, subscription, term, and look-back period to see different recommendations.
-
-You can also select a recommendation to see the usage data behind the recommendation and how your recommendation will change with different quantities.
+:::image type="content" source="../media/2-advisor-recommendations.png" alt-text="Screenshot showing purchase recommendations in Advisor." lightbox="../media/2-advisor-recommendations.png" :::
 
 ## Use the Reservation Coverage report in the Cost Management Power BI app
 
@@ -42,6 +50,6 @@ Enterprise Agreement and Microsoft Customer Agreement customers can use the VM R
 
 ![Example showing the Cost Management app you can view VM RI coverage](../media/2-ri-drill-down2.png)
 
-To view details, select the drill-down filter.
+To view details, select the drill-down filter highlighted in red as shown in the preceding image.
 
 Once you've finished your analysis and determined both the type of reservation you want to purchase and the capacity included in your commitment, you're ready to continue to the next unit and make a purchase in the Azure portal.
