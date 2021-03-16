@@ -1,10 +1,10 @@
-If you have run HPC workloads, chances are that you have run into the terms **operations**, **block size**, **IOPS**, **throughput**, and **latency**. You've probably considered these factors when choosing storage.
+If you've run HPC workloads, chances are that you've seen the terms *operations*, *block size*, *IOPS*, *throughput*, and *latency*. You've probably considered these factors when choosing storage.
 
-By the end of this section you should have a working understanding of these five performance factors and how they impact your HPC workloads.
+By the end of this section, you should have a working understanding of these five performance factors and how they affect your HPC workloads.
 
 ## Operations
 
-**Operations** refer to any activity between the host/machine and the file system or disk.
+*Operations* refers to any activity between the host/machine and the file system or disk.
 
 For example, you're probably familiar with these operations that involve an operating system and its local disk:
 
@@ -19,7 +19,7 @@ For example, you're probably familiar with these operations that involve an oper
 - Set attribute
 - Rename
 
-NFS represents the network-level interaction between a file client and server. You'll notice that some of these operations look similar to the local operations. However, because NFS is a network API, these network operations may involve multiple local operations.
+NFS represents the network-level interaction between a file client and server. You'll notice that some of these operations look similar to the local operations. But because NFS is a network API, these network operations might involve multiple local operations.
 
 - create (file or link)
 - mkdir
