@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-application-autoscaling-native.2-concepts-scaling
 metadata:
-  title: Concepts of Scalability
+  title: Concepts of scalability
   description: In this module, learn the core principles of scalability
   ms.date: 03/04/2021
   author: khaosdoctor
