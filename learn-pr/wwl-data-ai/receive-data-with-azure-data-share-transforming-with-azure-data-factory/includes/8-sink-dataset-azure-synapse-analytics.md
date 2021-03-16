@@ -4,10 +4,10 @@ The way to do so is by using the sink transformation option in Azure Data Factor
 
 Each time you’re using dataflow, it requires at least one sink transformation, however, if you want to write multiple sinks to complete the transformation flow, that is also possible. 
 
-The way to do so is to write additional sinks and creating new streams through new branches and conditional splits. 
+The way to do so is to write other sinks and creating new streams through new branches and conditional splits. 
 
 When looking at sink transformations, every sink is associated with one Azure Data Factory dataset or linked service. 
-So each sink transformation determines the location as well as the shape of the data that you are going or want to write to. 
+So each sink transformation determines the location and the shape of the data that you are going or want to write to. 
 Therefore, if you’re writing to Azure Synapse Analytics, the datasets need to be compatible with that location. 
 
 Mapping Data flow follows an ELT approach and works on staging dataset in Azure, and currently the datasets that can be used in a source transformation for Synapse Analytics is the dataset option. 
