@@ -4,7 +4,7 @@ In this unit, you'll learn about DevOps and how it integrates with Terraform and
 
 ## About GitHub Actions
 
-As an infrastructure manager, you need your build and deployment workflows to be part of your GitHub repository and use the same version control as your project.
+As an infrastructure manager, you need your build and deployment workflows to use the same version control as your project.
 
 By using GitHub Actions, you can run a continuous integration and continuous delivery (CI/CD) process that's linked to your GitHub repositories.
 
@@ -34,9 +34,9 @@ The `hashicorp/setup-terraform` action sets up the Terraform CLI in your GitHub 
 Terraform supports several options for authenticating with Azure:
 
 - When you use Terraform interactively, we recommend that you authenticate via a Microsoft account.
-- When you use Terraform from code or by automation, we recommend that you authenticate via an Azure service principal.
+- When you use Terraform from code or by automation, we recommend that you authenticate via an Azure **Service Principal**.
 
-An Azure service principal is an identity that you create for use with applications, hosted services, and automated tools to access Azure resources.
+A Service principal is an identity for use with applications, hosted services, and automated tools to access Azure resources.
 
 ## Next steps
 
@@ -64,8 +64,10 @@ Let's learn about the key concepts and components that make up a pipeline.
 ## Terraform Tasks for Azure Pipelines
 
 When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure **Service Connection** to authorize operations against the target subscription.
-This service connection binds to an Azure **Service Principal** that authorizes access to your Azure subscription.
-This connection is specified via the `environmentServiceName` input
+The recommended way to connect to Azure, is binding the Service Connection to an Azure **Service Principal**.
+An Azure Service Principal is an identity that you create for uses automated tools to access Azure resources.
+
+A Service Connection is specified via the `environmentServiceName` input
 
 ```yaml
 - task: TerraformCLI
