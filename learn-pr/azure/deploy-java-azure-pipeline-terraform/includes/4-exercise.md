@@ -353,6 +353,7 @@ pool:
 
 steps:
 
+# Initialize the Terraform environment and bind to your Service Connection
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
@@ -364,6 +365,7 @@ steps:
     backendAzureRmContainerName: 'tfstate'
     backendAzureRmKey: 'tf/terraform.tfstate'
 
+# Apply the Terraform config and deploy to Azure
 - task: TerraformTaskV1@0
   inputs:
     provider: 'azurerm'
