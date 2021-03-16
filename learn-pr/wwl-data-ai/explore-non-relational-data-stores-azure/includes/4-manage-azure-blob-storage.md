@@ -98,7 +98,7 @@ az storage blob upload-batch \
 Azure PowerShell provides the [`Set-AzStorageBlobContent`](https://docs.microsoft.com/powershell/module/azure.storage/set-azurestorageblobcontent) cmdlet to upload blob data to Azure storage, as follows:
 
 ```PowerShell
-Get-AzStorageAccount `
+Set-AzStorageAccount `
   -ResourceGroupName "contoso-group" `
   -Name "contosodata" | Set-AzStorageBlobContent `
     -Container "images" `
@@ -236,7 +236,7 @@ In the Azure portal, select **Containers** under **Blob service**, select the co
 
 In the Azure CLI, use the [`az storage container delete`](https://docs.microsoft.com/cli/azure/storage/container?view=azure-cli-latest#az-storage-container-delete) command. The following example deletes the *images* container referenced in previous examples.
 
-```azurecli
+```azure cli
 az storage container delete \
   --account-name contosodata \
   --name "images"
