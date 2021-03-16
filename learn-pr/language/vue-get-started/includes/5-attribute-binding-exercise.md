@@ -1,11 +1,11 @@
-You would like to display an image of what the space cruise looks like for your customers. Because each type of adventure will have a different image, and potentially style, you want to add it to the data object for your application.
+Let's say you want to display an image of the space cruise for your customers. Because each type of cruise adventure will have a different image, and maybe a different style, you want to add the image properties to the data object for your application.
 
 ## Add the properties to the data object
 
-In the previous exercise you created `data()` inside the `App` object. Let's add the properties for the image.
+In the previous exercise, you created a `data()` method inside the `App` object. Now add the properties for the image.
 
-1. Open **index.js**.
-1. Immediately below the line which reads `// additional properties later` add the following code:
+1. Open the *index.js* file.
+1. Immediately below `// additional properties later`, add the following code.
 
     ```javascript
     productImage: 'assets/cruise.jpg',
@@ -15,7 +15,7 @@ In the previous exercise you created `data()` inside the `App` object. Let's add
     }
     ```
 
-The entire contents of **index.js** will now contain the following:
+The *index.js* file now contains the following code.
 
 ```javascript
 const app = Vue.createApp({
@@ -36,16 +36,16 @@ const app = Vue.createApp({
 
 ## Add the HTML
 
-Let's update the HTML to include the image. You will set the attributes and style by using attribute binding.
+Now update the HTML to include the image. You'll set the attributes and style by using attribute binding.
 
-1. Open **index.html**.
-1. Add the following HTML below the line which reads `<div>{{ productDescription }}</div>`:
+1. Open the *index.html* file.
+1. Below `<div>{{ productDescription }}</div>`, add the following HTML.
 
     ```html
     <img :src="productImage" :alt="productImageDescription" :style="productImageStyle" />
     ```
 
-    The entire `div` element for the app should now look like the following:
+    The entire `div` element for the app should now look like the following code.
 
     ```html
     <div id="app">
@@ -55,21 +55,24 @@ Let's update the HTML to include the image. You will set the attributes and styl
     </div>
     ```
 
-    Not how the shorthand notation `:attribute` is used on all the attributes and how this usage makes for an easier read over the longer `v-bind:attribute`.
+    Notice how the shorthand notation `:attribute` is used on all the attributes. This usage makes the code easier to read than the longer `v-bind:attribute` format.
 
 ## Test the results
 
 1. Save all files.
-1. Return to the browser. You should now see the image displayed on the page. If it doesn't, refresh the page. It should now resemble the following:
+1. In the browser, you should now see the image displayed on the page. If you don't see it, refresh the page. 
 
-    ![Screenshot of the updated page with the image of the cruise](../media/attribute-binding.png)
+    :::image type="content" source="../media/attribute-binding.png" alt-text="Screenshot of the updated page showing the image of the cruise.":::
+    
 
-1. Right click on the newly displayed image and click **Inspect** or **Inspect source**. Notice the developer tools in the browser and the HTML. It should now resemble the following. Notice how both `src` and `alt` are set to the values from the Vue data.
+1. Right-click the image and then select **Inspect** or **Inspect source**. Notice the developer tools in the browser and the HTML. In the HTML, notice that both `src` and `alt` are set to the values from the Vue data.
 
     ```html
     <img src="assets/cruise.jpg" alt="An astronaut floats outside the window while you sit in comfort">
     ```
 
-## Explore different options
+## Explore the options
 
-You now have a fully functional Vue.js application. If you change different values and properties you can see the changes reflected in your page. Feel free to change the styles, classes to the CSS file, and explore the different binding options available to you.
+You now have a fully functional Vue.js application. If you change some of the values and properties, you can see the changes reflected on your page. 
+
+Feel free to change the styles and classes to the CSS file. Also explore the available binding options.
