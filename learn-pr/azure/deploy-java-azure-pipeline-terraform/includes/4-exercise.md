@@ -189,7 +189,7 @@ Inside your project directory is a directory called *.github/workflows* and, wit
 
 The *main.yml* file is a GitHub workflow. It uses the secret you've just configured to deploy your application to your Azure subscription.
 
-In the *main.yml* workflow file is the following content:
+In the *main.yml* workflow file, you'll find the following content:
 
 ```yml
 name: TERRAFORM
@@ -234,7 +234,7 @@ jobs:
         run: terraform apply -auto-approve
 ```
 
-This workflow performs the following actions:
+This workflow does the following actions:
 
 - It checks whether the configuration is formatted properly.
 - It generates a plan for every pull request.
@@ -245,7 +245,7 @@ This workflow performs the following actions:
 
 ## Trigger the workflow
 
-Next, in your repository, trigger your GitHub action by doing the following:
+Next, in your repository, trigger your GitHub action by doing the following action:
 
 1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
 
@@ -281,10 +281,13 @@ Next, in your repository, trigger your GitHub action by doing the following:
 
 1. In the list of steps, expand **Terraform Apply**, and verify that:
   
-    * Terraform has created the resources and displays the Azure instance URL.
-    * Your Azure app instance is publicly available.
+- Terraform has created the resources and displays the Azure instance URL.
+- Your Azure app instance is publicly available.
 
     ![Screenshot showing that the Azure app instance is publicly available.](../media/4-template-url.png)
+
+> [!TIP]
+> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete, and whether each build passed or failed.
 
 ## Next steps
 
@@ -304,7 +307,7 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
    | Parameter | Description |
    | --------- | ----------- |
-   | Connection Name | Required. The name you will use to refer to this service connection in task properties. This name is not the name of your Azure subscription. |
+   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
    | Scope level | Select Azure Subscription. |
    | Subscription | select an existing Azure subscription. |
    | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
@@ -337,7 +340,8 @@ In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline
 
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 
-On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline:
+On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline.
+(It sets up the environment, initializes your terraform environment, and then applies the Terraform changes)
 
 ```yml
 name: Provision Resources
@@ -370,12 +374,24 @@ steps:
     environmentServiceNameAzureRM: $(serviceConnection)
 ```
 
+Let's look at some of the fields we use in the config:
+
+- **serviceConnection**: your Azure PipeLine Service Connection your setup previously.
+- **command**: your Terraform workflow command - **init** or **apply**.
+- **backendAzure**: required fields that are needed in a team environment to store shared state.
+
 Before you run the pipeline, we need to add the variable that will bind to your service connection:
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
 
-## Verify the Pipeline run
+## Watch the pipeline run
+
+Under Jobs, select Job. Next, trace the build process through each of the steps. Optionally, when the build completes, to see the job output as a text file, select View raw log.
+
+As your pipeline runs, watch as your first Terraform **init** stage, and then your second **apply** stage, go from blue (running) to green (completed). You can select the stages to watch your pipeline in action.
+
+![Screenshot displaying the new Azure Pipeline run.](../media/4-pipelinerun.png)
 
 ::: zone-end
 

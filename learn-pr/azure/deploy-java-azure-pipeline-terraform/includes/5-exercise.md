@@ -101,9 +101,9 @@ publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e
 
 ::: zone pivot="azure-devops"
 
-## Create the Build and Deploy Pipeline
+## Set up a Azure Pipeline to deploy the sample application
 
-We'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
+As before in this module, you'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
@@ -111,9 +111,8 @@ In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline
 1. In the path, select "/azuredevops/build_deploy.yml"
 1. Select **Continue** to Review your PipeLine before you run it
 
-![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
-
 On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline:
+(It fetches the latest source code from GitHub, and then builds/deploys the application to Azure)
 
 ```yml
 name: Build and Deploy
@@ -169,12 +168,25 @@ stages:
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
 ```
 
-Before you run the pipeline, we need to add the variable that will bind to your service connection:
+Let's look at some of the fields we use in the config:
+
+* **azureSubscription**: your Azure subscription.
+* **appType**: your Web App type.
+* **appName**: the name of your existing app service.
+* **package**: the file path to the package or a folder containing your app service contents.
+
+## Bind your Service Connection
+
+As with our provisioning pipeline, before you run the build/deploy pipeline, you need to add the variable that will bind to your service connection:
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
 
-## Verify the Pipeline run
+## Watch the pipeline run
+
+As you did for your provisioning job, trace the build process through each of the stages and steps.
+
+![Screenshot displaying the new Azure Pipeline run.](../media/5-run.png)
 
 ## Next steps
 
