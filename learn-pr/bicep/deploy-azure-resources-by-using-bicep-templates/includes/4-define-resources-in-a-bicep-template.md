@@ -1,114 +1,209 @@
-1. Open VS Code.
-2. Create a template that defines a single storage account resource, with hard-coded values.
-3. Use the Azure CLI to deploy the template.
-4. Add App Service plan and app to the template.
-5. Use the Azure CLI to deploy the template again.
+> [!NOTE]
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this exercise, you create a Bicep template that provisions an Azure Storage account and an App Service app.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+During the process, you:
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+> [!div class="checklist"]
+> * Create a template that defines a single storage account resource, with hard-coded values.
+> * Provision your infrastructure and verify the result.
+> * Add an App Service plan and app to the template.
+> * Provision the infrastructure again to see the new resources.
+> * Tear everything down.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+This exercise uses TODO Bicep Extension for Visual Studio Code. Be sure to install this extension in Visual Studio Code.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+> [!IMPORTANT]
+> To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Create a Bicep template with a storage account
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. Open Visual Studio Code, and create a new file called *main.bicep*.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Add the following content into the file:
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+   ```bicep
+   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+      name: 'mystorageaccount'
+      location: 'eastus'
+      sku: {
+        name: 'Standard_LRS'
+      }
+      kind: 'StorageV2'
+      properties: {
+        accessTier: 'Hot'
+      }
+    }
+   ```
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure this is all lowercase, without any special characters, and fewer than 24 characters in length.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. Save the changes to the file.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Deploy the Bicep template to Azure
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+::: zone pivot="cli"
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+<!-- TODO: confirm supported CLI versions -->
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. Open a terminal window by using the **Terminal** menu.
+1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-    Goal: List the steps they'll do to complete the exercise.
+      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the drop-down." border="true":::
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. If not, select the drop-down, and choose **Select Default Shell**.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. Select **bash**.
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### Sign in to Azure
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. A browser opens so you can sign in to your account.
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+    ```azurecli
+    az login
+    ```
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. Set the default subscription for all of the Azure CLI commands you run in this session.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+    ```azurecli
+    az account set --subscription "Concierge Subscription"
+    ```
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+   > [!NOTE]
+   > If you've used more than one sandbox recently, there might be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
-<!-- Do not add a unit summary or references/links -->
+1. Get the *Concierge Subscription* IDs.
+
+   ```azurecli
+    az account list \
+      --refresh \
+      --query "[?contains(name, 'Concierge Subscription')].id" \
+      --output table
+    ```
+
+1. Set the default subscription by using the subscription ID. Replace *{your subscription ID}* with the latest Concierge Subscription ID.
+
+    ```azurecli
+    az account set --subscription {your subscription ID}
+    ```
+
+### Set the default resource group
+
+When you set the default resource group as the same one created for you in the sandbox environment, you can omit that parameter from the rest of the Azure CLI commands in this exercise.
+
+```azurecli
+az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
+```
+
+### Deploy the template to Azure
+
+The following code deploys the Bicep template to Azure. You will see a successful deployment.
+
+Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
+
+```azurecli
+templateFile="main.bicep"
+
+az group deployment create \
+ --template-file $templateFile
+```
+
+The command ```az group deployment create``` deploys the template to Azure.
+
+You see ```Running...``` in the terminal.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), and sign in to the same account that activated the sandbox.
+
+1. Open a terminal window by using the **Terminal** menu.
+
+1. If the drop-down on the right of the terminal window says **pwsh**, you have the right shell to work from, and you can skip to the next section.
+
+      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the drop-down." border="true":::
+
+1. If not, select the drop-down, and choose **Select Default Shell**.
+
+1. Select **pwsh**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
+
+### Sign in to Azure by using Azure PowerShell
+
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
+
+    ```azurepowershell
+    Connect-AzAccount
+    ```
+
+1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+
+1. Set the default subscription for all of the Azure PowerShell commands you run in this session.
+
+1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
+
+    ```azurepowershell
+    Get-AzSubscription
+    ```
+
+1. Change your active subscription to the Concierge Subscription. Be sure to substitute *{Your subscription ID}* with the one you copied.
+
+    ```azurepowershell
+    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+    Set-AzContext $context
+    ```
+
+1. Set the default resource group to the resource group created for you in the sandbox environment. This action lets you omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+
+    ```azurepowershell
+    Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    ```
+
+### Deploy the template to Azure
+
+The following code deploys the template to Azure. You will see a successful deployment.
+
+Deploy the template by using Azure PowerShell commands in the terminal.
+
+```azurepowershell
+$templateFile = "main.bicep"
+New-AzResourceGroupDeployment `
+  -TemplateFile $templateFile
+```
+
+The ```New-AzResourceGroupDeployment``` command deploys the template to Azure.
+
+::: zone-end
+
+When you've deployed your Bicep template to Azure, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+
+1. On the left side panel, select **Resource groups**.
+
+1. Select the <rgn>[sandbox resource group name]</rgn>.
+
+1. In the **Overview**, you see that one deployment succeeded.
+
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true"::: <!-- TODO image -->
+
+1. Select **1 Succeeded** to see the details of the deployment.
+
+    :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true"::: <!-- TODO image -->
+
+1. Select **main** to see what resources were deployed. In this case, there will be one storage account with the name you specified.
+
+    :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
+
+1. Leave the page open in your browser. You'll check on deployments again.
