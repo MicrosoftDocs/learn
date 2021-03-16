@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Knowledge of cloud security concepts and technologies
   - Experience administering hosted virtual machines
-  - Familiarity with remote administative technologies and RDP/SSH protocols
+  - Familiarity with remote administrative technologies and RDP/SSH protocols
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
