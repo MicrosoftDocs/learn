@@ -295,7 +295,11 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ::: zone pivot="azure-devops"
 
-## Create an Azure Pipeline to provision your terraform resources
+## Create an Azure Pipeline to provision your Terraform resources
+
+This Azure DevOps project includes two separate pipelines for provisioning and build-and-deploy. The provisioning pipeline creates the azure resources that will be released via the build-and-deploy  pipeline at a later point.
+
+Let's create the first provisioning Pipeline:
 
 1. Choose your organization, and then select **New project**.
 
@@ -313,7 +317,7 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ![Screenshot displaying the new Azure Project form.](../media/4-project.png)
 
-## Set up your Azure Pipelines Service Connection
+## Set up your Azure Pipeline Service Connection
 
 Let's give your Azure Pipeline access to your Azure account.
 

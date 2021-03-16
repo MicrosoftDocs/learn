@@ -1,4 +1,4 @@
-In this exercise, you'll use an automated workflow to build/deploy your Spring Boot sample application.
+In this exercise, you'll use an automated workflow to build-and-deploy your Spring Boot sample application.
 
 ::: zone pivot="github-actions"
 
@@ -103,7 +103,7 @@ publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e
 
 ## Set up an Azure Pipeline to deploy the sample application
 
-As before, you'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
+As before, you'll need to create an Azure Pipeline to build-and-deploy your application.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
@@ -170,7 +170,7 @@ stages:
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
 ```
 
-Let's look at some of the fields we use in the config:
+Let's look at some of the fields we use in the "**Build**" config:
 
 * **azureSubscription**: your Azure subscription.
 * **appType**: your Web App type.
@@ -179,7 +179,7 @@ Let's look at some of the fields we use in the config:
 
 ## Bind your Service Connection
 
-As with our provisioning pipeline, before you run the build/deploy pipeline, you need to add the variable that will bind to your service connection:
+As with our provisioning pipeline, before you run the build-and-deploy pipeline, you need to add the variable that will bind to your service connection:
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
