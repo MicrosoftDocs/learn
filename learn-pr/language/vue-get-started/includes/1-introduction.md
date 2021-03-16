@@ -17,8 +17,8 @@ In this module, you'll:
 ## Prerequisites
 
 - Knowledge: 
-    - HTML and CSS
-    - JavaScript
+  - HTML and CSS
+  - JavaScript
 - Software:
-    - [Git](https://git-scm.com/?azure-portal=true)
-    - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
+  - [Git](https://git-scm.com/?azure-portal=true)
+  - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
