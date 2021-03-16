@@ -1,6 +1,7 @@
 AVS deploys with NSX-T Manager as the software-defined network layer. The networking environment has two gateways:
-    - NSX-T Tier-0 gateway configured in Active/Active mode.
-    - NSX-T Tier-1 gateway configured in Active/Standby mode.
+
+  - NSX-T Tier-0 gateway configured in Active/Active mode.
+  - NSX-T Tier-1 gateway configured in Active/Standby mode.
 
 Both gateways allow connections between logical switch segments. Additionally, these gateways provide East-West and North-South connectivity.
 
@@ -21,7 +22,7 @@ There are four options that can be configured for NSX-T Manager in AVS using the
 
 VMs either created in or migrated to AVS should be attached to an NSX-T networking segment. An NSX-T segment can be created from the AVS console within the Azure portal. These NSX-T networking segments are connected to the default Tier-1 gateway. Workloads on these segments will have East-West and North-South connectivity. After the segment is created, it displays in NSX-T Manager and vCenter.
 
-1. In the AVS private cloud under **Workload Networking**, select **Segments > Add**.
+1. In the Azure portal, select your AVS private cloud and under **Workload Networking**, select **Segments > Add**.
 
     :::image type="content" source="../media/6-add-new-nsxt-segment.png" alt-text="Screenshot of how to add an NSX-T Manager network segment in the Azure portal.":::
 
@@ -108,6 +109,12 @@ To set up a DNS forwarder in the Azure VMware Solution console, you'll:
 
 1. Select **Ok**. The DNS service was added successfully.
 
+## Verify on-premises network connectivity to the AVS private cloud
+
+You should see where the ExpressRoute connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. There may be a need to allow routes to propagate back to the on-premises network.
+
+Some environments have firewalls protecting ExpressRoute circuits. If there are no firewalls, try to ping the AVS vCenter server or a VM on the NSX-T segment from on-premises. Additionally, from the VM on the NSX-T segment, resources should be to reach the on-premises environment.
+
 ## Add a VM on an NSX-T network segment
 
 Deploy a VM to test network connectivity in the AVS vCenter. This VM will help verify connectivity the following ways:
@@ -124,8 +131,8 @@ Deploy the VM as you would in any vSphere environment:
 
 Log into the VM created in the previous step and verify connectivity:
 
-- Ping an IP on the internet.
-- Go to an internet site in a web browser.
-- Ping an internal VM that sits on the Azure virtual network.
+1. Ping an IP on the internet.
+1. Go to an internet site in a web browser.
+1. Ping an internal VM that sits on the Azure virtual network.
 
 If each test works, AVS is now functional. Going through these steps means you've successfully established connectivity to and from an Azure virtual network, and the internet.

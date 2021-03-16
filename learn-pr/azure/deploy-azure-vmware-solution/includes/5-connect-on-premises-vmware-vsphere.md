@@ -1,11 +1,5 @@
 After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit needs to be used, along with an ExpressRoute Global Reach configuration. 
 
-## ExpressRoute virtual network gateway and peering for AVS
-
-During AVS deployment, you can select an existing virtual network, create a new one, or leave the field blank. If an existing virtual network is selected, it needs a GatewaySubnet designated for the AVS ExpressRoute. If you create a brand new virtual network, a GatewaySubnet will need to be be created for the AVS ExpressRoute. Selecting a virtual network or creating a new one means all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment provisions in Azure. If you leave the virtual network blank, you will need to factor in creating a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
-
-:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot showing the virtual network being left blank during a private cloud deployment within the Azure portal.":::
-
 ## Create Azure Bastion
 
 After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the jump host that will allow you to log into the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion resource isn't needed. Your company may want to keep the resource as a back-up in case you have connectivity issues with ExpressRoute in the future.
@@ -48,7 +42,7 @@ Global Reach will connect your on-premises VMware environment to the AVS private
 
     :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot showing how to request an auth key for an ExpressRoute circuit.":::
 
-1. Enter a name for the authorization key. 
+1. Enter a name for the authorization key.
 1. Select **Create**.
 
     :::image type="content" source="../media/5-provide-name-auth-key-create.png" alt-text="Screenshot of entering name of authorization key and selecting create.":::
@@ -83,9 +77,9 @@ The AVS ExpressRoute circuit is peered to the on-premises circuit after an autho
 1. Open an Azure CLI Cloud Shell.
 1. Leave the shell as Bash.
 1. Use your specific information:
-    1. Resource ID
-    1. Authorization key
-    1. /29 CIDR network block.
+    - Resource ID
+    - Authorization key
+    - /29 CIDR network block.
 1. Enter the Azure CLI command below to create the authorization key.
 
     ```azurecli
@@ -114,11 +108,5 @@ The AVS ExpressRoute circuit is peered to the on-premises circuit after an autho
     az network express-route peering connection create -g <ResourceGroupName> --circuit-name <Circuit1Name> --peering-name AzurePrivatePeering -n <ConnectionName> --peer-circuit <Circuit2ResourceID> --address-prefix <__.__.__.__/29> --authorization-key <authorizationKey>
     ```
 When this operation is complete, you'll have connectivity between on-premises and AVS through the two ExpressRoute circuits.
-
-## Verify on-premises network connectivity to the AVS private cloud
-
-You should see where ExpressRoute connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. There may be a need to allow routes to propagate back to the on-premises network.
-
-Some environments have firewalls protecting ExpressRoute circuits. If there are no firewalls, try to ping the AVS vCenter server or a VM on the NSX-T segment from on-premises. Additionally, from the VM on the NSX-T segment, resources should be to reach the on-premises environment.
 
 In the next unit, we'll walk through how to configure NSX-T networking components in the Azure portal. NSX-T Manager provides the software defined networking layer for AVS.

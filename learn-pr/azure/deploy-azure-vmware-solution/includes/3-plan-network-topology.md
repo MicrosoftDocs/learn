@@ -29,6 +29,12 @@ The following chart is an example of how to carve up the /22 CIDR network addres
 | HCX uplink | /26 | 10.5.3.0/26 |
 | Reserved | 3 /26 blocks| 10.5.3.64/26, 10.5.3.128/26, 10.5.3.192/26 |
 
+## ExpressRoute virtual network gateway and peering for AVS
+
+During AVS deployment, you can select an existing virtual network, create a new one, or leave the field blank. If an existing virtual network is selected, it needs a GatewaySubnet designated for the AVS ExpressRoute. If you create a brand new virtual network, a GatewaySubnet will need to be be created for the AVS ExpressRoute. Selecting a virtual network or creating a new one means all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment provisions in Azure. If you leave the virtual network blank, you will need to factor in creating a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
+
+:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot showing the virtual network being left blank during a private cloud deployment within the Azure portal.":::
+
 ## ExpressRoute and routing requirements
 
 There are two types of interconnectivity for AVS:
@@ -41,10 +47,10 @@ ExpressRoute Global Reach must be enabled to route traffic to and from on-premis
 
 There are a few pre-requisites that need to be met before configuring ExpressRoute Global Reach.
 
-1. The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
-2. A separate customer provided ExpressRoute circuit used to connect on-premises environments to Azure.
-3. A /29 non-overlapping network address block for ExpressRoute Global Reach peering.
-4. All gateways, including the ExpressRoute provider's service, need to support 4-byte Autonomous System Number (ASN). AVS uses 4-byte public ASNs for advertising network routes.
+- The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
+- A separate customer provided ExpressRoute circuit used to connect on-premises environments to Azure.
+- A /29 non-overlapping network address block for ExpressRoute Global Reach peering.
+- All gateways, including the ExpressRoute provider's service, need to support 4-byte Autonomous System Number (ASN). AVS uses 4-byte public ASNs for advertising network routes.
 
 ## Required network ports
 
