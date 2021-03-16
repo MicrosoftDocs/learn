@@ -1,5 +1,5 @@
 
-In this unit you will learn the relationship between the innovation process and some of the technologies in the industry.
+In this unit you will learn the relationship between the innovation process and some of the technologies in the industry that can help you to build new application functionality.
 
 ## DevOps
 
