@@ -4,7 +4,7 @@ title: Define resources in a Bicep template
 metadata:
   unitType: exercise  
   title: Define resources in a Bicep template
-  description: TODO # user input: a description for site search and SEO
+  description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
   ms.date: 03/12/2021  
   author: johndowns
   ms.author: jodowns

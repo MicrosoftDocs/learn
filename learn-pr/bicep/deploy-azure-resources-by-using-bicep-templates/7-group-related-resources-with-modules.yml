@@ -4,7 +4,7 @@ title: Group related resources with modules
 metadata:
   unitType: learning-content  
   title: Group related resources with modules
-  description: TODO # user input: a description for site search and SEO
+  description: Learn how to create self-contained, reusable modules for your Bicep code.
   ms.date: 03/12/2021  
   author: johndowns
   ms.author: jodowns
