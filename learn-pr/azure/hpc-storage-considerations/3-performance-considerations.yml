@@ -23,14 +23,14 @@ quiz:
     - content: "Large"
       isCorrect: true
       explanation: "Correct. Small block sizes combined with large files reduces performance. This reduction is caused because large files need to be broken down to fit the smaller block size."
-  - content: "If you have a disk that supports 5,000 IOPS and your block size is 4,000, your total possible throughput is:"
+  - content: "If you have a disk that supports 5,000 IOPS and your block size is 4K, your total possible throughput is:"
     choices:
     - content: "9 MBps"
       isCorrect: false
-      explanation: "5,000 IOPS * 4,000 block size = 20 MBps"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
     - content: "15 MBps"
       isCorrect: false
-      explanation: "5,000 IOPS * 4,000 block size = 20 MBps"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
     - content: "20 MBps"
       isCorrect: true
-      explanation: "5,000 IOPS * 4,000 block size = 20 MBps"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
