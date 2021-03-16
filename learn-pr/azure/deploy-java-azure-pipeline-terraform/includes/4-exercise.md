@@ -294,21 +294,6 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ::: zone pivot="azure-devops"
 
-## Set up your Azure Pipelines workflow
-
-1. In Azure DevOps, open the **Service connections** page from the project settings page
-
-1. Choose **+ New service connection** and select **Azure Resource Manager**.
-
-1. Specify the following parameters.
-
-   | Parameter | Description |
-   | --------- | ----------- |
-   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
-   | Scope level | Select Azure Subscription. |
-   | Subscription | select an existing Azure subscription. |
-   | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
-
 ## Create an Azure Pipeline to provision your terraform resources
 
 1. Choose your organization, and then select **New project**.
@@ -323,11 +308,32 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
    | Source control type | Choose **GIT** |  
    | Work Item Process | Choose **Basic** |
 
+1. Select "Create" to create the project and open a welcome page.
+
 ![Screenshot displaying the new Azure Project form.](../media/4-project.png)
+
+## Set up your Azure Pipelines Service Connection
+
+Let's give your Azure Pipeline access to your Azure account.
+
+1. In Azure DevOps, open the **Service connections** page from the project settings page
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
+   | Scope level | Select Azure Subscription. |
+   | Subscription | select an existing Azure subscription. |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
+
+1. Select OK to create the connection
 
 ## Create the Provision Pipeline
 
-We'll need to create an Azure Pipeline to provision our terraform resources.
+After setting up your project and connection to Azure, you'll need to create an Azure Pipeline to provision your terraform resources.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
@@ -386,7 +392,7 @@ Before you run the pipeline, we need to add the variable that will bind to your 
 
 ## Watch the pipeline run
 
-Under Jobs, select Job. Next, trace the build process through each of the steps. Optionally, when the build completes, to see the job output as a text file, select View raw log.
+Under Jobs, trace the build process through each of the steps.
 
 As your pipeline runs, watch as your first Terraform **init** stage, and then your second **apply** stage, go from blue (running) to green (completed). You can select the stages to watch your pipeline in action.
 
@@ -399,4 +405,4 @@ As your pipeline runs, watch as your first Terraform **init** stage, and then yo
 
 ## Next steps
 
-In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application and data.
+In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application.
