@@ -10,7 +10,7 @@ You learned that Azure Firewall Manager enables you to reconfigure these various
 ## Resources
 
 - [What is Azure Firewall Manager?](https://docs.microsoft.com/azure/firewall-manager/overview?azure-portal=true)
-- [What are the Azure Firewall Manager architecture options?](https://docs.microsoft.com/en-us/azure/firewall-manager/vhubs-and-vnets?azure-portal=true)
+- [What are the Azure Firewall Manager architecture options?](https://docs.microsoft.com/azure/firewall-manager/vhubs-and-vnets?azure-portal=true)
 
 
 
