@@ -39,7 +39,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
     }
    ```
 
-1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure this is all lowercase, without any special characters, and fewer than 24 characters in length.
+1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
 
 1. Save the changes to the file.
 
@@ -108,7 +108,7 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-The following code deploys the Bicep template to Azure. You will see a successful deployment.
+The following code deploys the Bicep template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
 
@@ -179,7 +179,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Deploy the template to Azure
 
-The following code deploys the template to Azure. You will see a successful deployment.
+The following code deploys the template to Azure. You'll see a successful deployment.
 
 Deploy the template by using Azure PowerShell commands in the terminal.
 
@@ -218,7 +218,7 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
 ## Add an App Service plan and app to your Bicep template
 
-In the previous task, you learned how to create a template with a single resource and deploy it. Now, you're ready to deploy more resources, including a dependency. In this section, you add an App Service plan and app to the Bicep template.
+In the previous task, you learned how to create a template with a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following to the bottom of the file:
 
@@ -241,7 +241,7 @@ In the previous task, you learned how to create a template with a single resourc
    }
    ```
 
-1. Update the name of the App Service app from `toy-product-launch-1` to something that is likely to be unique. Make sure this is all lowercase, contains alphanumerics and hyphens, doesn't start or end with a hyphen, and is between 2 and 60 characters in length.
+1. Update the name of the App Service app from `toy-product-launch-1` to something that is likely to be unique. Make sure the name you choose is all lowercase, contains alphanumerics and hyphens, doesn't start or end with a hyphen, and is between 2 and 60 characters in length.
 
 1. Save the changes to the file.
 
