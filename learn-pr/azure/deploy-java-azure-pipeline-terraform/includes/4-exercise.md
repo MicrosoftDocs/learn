@@ -405,8 +405,8 @@ As your pipeline runs, watch as your first Terraform **init** stage, and then yo
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to know whether each build passes or fails.
 
-::: zone-end
-
 ## Next steps
 
 In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application.
+
+::: zone-end
