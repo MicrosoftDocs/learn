@@ -16,6 +16,6 @@ Prerequisites
 - [Git](https://git-scm.com/?azure-portal=true)
 - Understanding of HTML and CSS
 - Intermediate-level knowledge of Python, including:
-  - [Package Management](https://docs.python.org/3/installing/index.html?azure-portal=true)
-  - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/?azure-portal=true#creating-virtual-environments)
+  - [Package management](https://docs.python.org/3/installing/index.html?azure-portal=true)
+  - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/?azure-portal=true#creating-virtual-environments)
   - [Inheritance](https://docs.python.org/3/tutorial/classes.html?azure-portal=true#inheritance)

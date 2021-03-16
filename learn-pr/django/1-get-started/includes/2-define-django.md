@@ -1,4 +1,4 @@
-Django, pronounced "jango," is a free and open-source framework that was first released in 2005. Django was named after a famous jazz guitarist Django Reinhardt. Over the years, many Python frameworks have been developed, but Django has become one of the most popular because of its flexibility and security. 
+Django, pronounced "jango," is a free and open-source framework that was first released in 2005. Django was named after the famous jazz guitarist Django Reinhardt. Over the years, many Python frameworks have been developed, but Django has become one of the most popular because of its flexibility and security. 
 
 Django is suitable for both front-end and back-end web development. The integrated Python libraries make it easy for rapid development. Django has become widely accepted across industries. Because of its growing popularity, providers are more readily available to support Django applications on their platforms.
 
