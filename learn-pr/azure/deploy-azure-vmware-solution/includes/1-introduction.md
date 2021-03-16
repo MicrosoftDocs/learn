@@ -6,7 +6,7 @@ In this module, you'll learn how to plan, deploy, and connect Azure VMware Solut
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Plan a successful Azure VMware Solution deployment
 - Connect to an on-premises VMware environment
@@ -14,4 +14,4 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
-- Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), border gate protocol (BGP) routing, dynamic host configuration protocol (DHCP), and subnets
+- Basic knowledge of network concepts, such as classless inter-domain routing (CIDR), dynamic host configuration protocol (DHCP), and subnets
