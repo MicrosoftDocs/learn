@@ -1,4 +1,4 @@
-In this module you will understand the difference between Classic Migration and SAP Database Migration Option (DMO) sometimes referred to as one-step and one-step migration, respectively.
+In this module you will understand the difference between Classic Migration and SAP Database Migration Option (DMO) sometimes referred to as one-step and two-step migration, respectively.
 
 * **Classical Migration:** SAP’s Software Provisioning Manager (SWPM) is used as the Software Logistics (SL) tool and is exclusively for database migrations. Classical Migration uses a heterogenous system copy approach and is sometimes referred to as two-step migration.
 * **SAP Database Migration Option (DMO):** DMO facilitates both an SAP upgrade and a database migration to the SAP HANA database using one tool. DMO process is often referred to as a one-step migration.
