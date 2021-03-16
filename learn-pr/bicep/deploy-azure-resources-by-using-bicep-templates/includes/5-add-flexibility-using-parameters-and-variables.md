@@ -73,7 +73,7 @@ Notice that we're now using the parameter value to set the resource name for the
 We can define a variable like this:
 
 ```bicep
-var appServicePlanName = 'MyAppServicePlan'
+var appServicePlanName = 'ToyLaunchPlan'
 ```
 
 Variables are defined in a similar way to parameters, but there are a few differences:
@@ -146,3 +146,43 @@ The default value we're setting for our `storageAccountName` parameter now has t
 
 - `toylaunch` is a hard-coded string that helps us understand what this storage account is for.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
+
+### Selecting SKUs for resources
+
+Our toy company has decided they will use our templates to deploy the resources for all of their new products. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want us to follow these business rules:
+
+- In production environments, storage accounts must be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans must be deployed using the `P2_v3` SKU for higher performance.
+- In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the `S1` SKU, to save cost.
+
+One way to implement these business requirements would be to use parameters to specify each SKU. However, this can become difficult to maintain when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
+
+First, we can specify a parameter that indicates whether the deployment is for a production or non-production environment:
+
+```bicep
+@allowedValues([
+    'nonprod'
+    'prod'
+])
+param environmentType string
+```
+
+Notice we're using some new syntax to specify a list of _allowed values_ for the `environmentName` parameter. Bicep won't let anyone execute the template unless they provide one of these values.
+
+Next, we can create variables that determine the best SKUs to use for our storage account and App Service plan based on the environment:
+
+```bicep
+var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'S1'
+```
+
+Notice we're also using some new syntax here. Let's break it down:
+
+- `(environmentType == 'prod')` will evaluate to a Boolean (true/false) value depending on what the `environmentType` parameter has been set to.
+- `?` means _if the expression is true_, and `:` means _if the expression is false_.
+
+So we can translate these rules to:
+- For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _Standard_GRS_ SKU, else use the _Standard_LRS_ SKU.
+- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _P2_v3_ SKU, else use the _S1_ SKU.
+
+> [!TIP]
+> When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions into the resource properties. This makes your templates easier to read and understand, since it avoids cluttering your resource definitions with business logic.

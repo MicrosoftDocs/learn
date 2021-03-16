@@ -27,16 +27,16 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-      name: 'mystorageaccount'
-      location: 'eastus'
-      sku: {
-        name: 'Standard_LRS'
-      }
-      kind: 'StorageV2'
-      properties: {
-        accessTier: 'Hot'
-      }
-    }
+     name: 'mystorageaccount'
+     location: 'eastus'
+     sku: {
+       name: 'Standard_LRS'
+     }
+     kind: 'StorageV2'
+     properties: {
+       accessTier: 'Hot'
+     }
+   }
    ```
 
 1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
