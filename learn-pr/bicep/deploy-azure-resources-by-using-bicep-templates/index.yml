@@ -16,8 +16,13 @@ abstract: |
     - Add flexibility to your templates using parameters, variables, and expressions.
     - Create and deploy a Bicep template with modules.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Familiarity with Azure, including the Azure portal, subscriptions, and resource groups.
   - Understanding of what Infrastructure is Code (IaC) is, and its benefits.
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
+  - Either:
+    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally.
+    - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - beginner

@@ -207,3 +207,54 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
     :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
 
 1. Leave the page open in your browser. You'll check on deployments again.
+
+## Add an App Service plan and app to your Bicep template
+
+TODO
+
+### Deploy the updated Bicep template
+
+Here, you change the name of the deployment to better reflect what this deployment does.
+
+::: zone pivot="cli"
+
+Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+
+```azurecli
+templateFile="main.bicep"
+today=$(date +"%d-%b-%Y")
+DeploymentName="addstorage-"$today
+
+az group deployment create \
+  --name $DeploymentName \
+  --template-file $templateFile
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+
+```azurepowershell
+$templateFile = "main.bicep"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="addstorage-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+```
+
+### Check your deployment
+
+1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **2 Succeeded** deployments. Select this link.
+
+1. Notice that both deployments are in the list.
+
+    :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
+
+1. Select **app**.
+
+    :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
+
+1. Notice that the App Service plan and app have been deployed.
