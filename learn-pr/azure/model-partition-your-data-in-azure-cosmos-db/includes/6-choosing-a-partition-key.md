@@ -44,7 +44,7 @@ When data and requests are spread evenly, this ensures that as the database grow
 
 There is one additional consideration that needs to be understood when choosing a partition key and that is whether the data is read heavy versus write heavy. For a write heavy data, you should seek to distribute data with a partition key that has high cardinality. For read-heavy workloads you want to ensure queries are answered with one or a bounded number of partitions. In scenarios where the data is both write and read heavy there is a solution. We will explore this in the next module.
 
-In a read heavy workload, the way to ensure you read data from a single partition is to use the partition key property in an equality filter on the WHERE clause for your queries. In this illustration below we have a container that is partitioned by username. With a query like the one below, we are assured this query will only hit a single logical partition so it's performance will always be good.
+In a read heavy workload, the way to ensure you read data from a single partition is to use the partition key property in an equality filter on the WHERE clause for your queries. In this illustration below, we have a container that is partitioned by username. With a query like the one below, we are assured this query will only hit a single logical partition so it's performance will always be good.
 
 :::image type="content" source="../media/in-partition-query.png" alt-text="Diagram that shows a partition query for username.":::
 
@@ -54,7 +54,7 @@ However a query that filtered on a different property, such as favoriteColor wou
 
 ## Choosing partition key for customers
 
-Now that we have all this new knowledge about partitioning in Azure Cosmos DB we can now decide on a partition key for our customer data. As we covered earlier there are three operations we perform on customers: create a customer, update a customer, and retrieve a customer. In this case we will retrieve the customer by it's *id* and since that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
+Now that we have all this new knowledge about partitioning in Azure Cosmos DB, we can now decide on a partition key for our customer data. As we covered earlier there are three operations we perform on customers: create a customer, update a customer, and retrieve a customer. In this case we will retrieve the customer by it's *id* and since that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
 
 :::image type="content" source="../media/customer-partition-key.png" alt-text="Diagram that shows the customer partition key as id.":::
 
