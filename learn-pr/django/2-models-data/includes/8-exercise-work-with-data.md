@@ -7,13 +7,13 @@ Let's explore the API by working with the models that we created.
 Django includes an interactive shell where you can run Python code in the Django environment.
 
 1. Return to the terminal in Visual Studio Code by selecting **View** > **Terminal**.
-1. Enter the following command to start the shell.
+1. Enter the following command to start the shell:
 
     ```bash
     python manage.py shell
     ```
 
-1. Import the models from `models` inside `dog_shelters`.
+1. Import the models from `models` inside `dog_shelters`:
 
     ```python
     from dog_shelters.models import Shelter, Dog
@@ -23,7 +23,7 @@ Django includes an interactive shell where you can run Python code in the Django
 
 Because our models are Python classes, we create new instances by using the same syntax that we'd use to create an object. Because they inherit from `Django.models.Model`, they inherit the functionality for the Django ORM. That functionality includes `save`, which we use to save the object to the database.
 
-1. Create a new shelter by running the following Python command in the shell.
+1. Create a new shelter by running the following Python command in the shell:
 
     ```python
     shelter = Shelter(name="Demo shelter", location="Seattle, WA")
@@ -32,7 +32,7 @@ Because our models are Python classes, we create new instances by using the same
 
     The `save` part will write the object to the database. Because we created this from scratch, it will execute an `INSERT` statement in the database.
 
-1. Update the location of the shelter to Redmond, WA, by setting the `location` field and calling `save`.
+1. Update the location of the shelter to Redmond, WA, by setting the `location` field and calling `save`:
 
     ```python
     shelter.location = "Redmond, WA"
@@ -41,7 +41,7 @@ Because our models are Python classes, we create new instances by using the same
 
     This command will issue an `UPDATE` statement to update the value in the database.
 
-1. Create two new dogs for the shelter by running the following Python commands in the shell.
+1. Create two new dogs for the shelter by running the following Python commands in the shell:
 
     ```python
     Dog(name="Sammy", description="Cute black and white dog", shelter=shelter).save()
@@ -68,7 +68,7 @@ To retrieve objects from a database, Django provides an `objects` property on al
     <QuerySet [<Dog: Sammy>, <Dog: Roscoe>]>
     ```
 
-1. Retrieve the second dog by using `get` as shown in the following code:
+1. Retrieve the second dog by using `get` as shown in the following command:
 
     ```python
     Dog.objects.get(pk=1)
@@ -80,7 +80,7 @@ To retrieve objects from a database, Django provides an `objects` property on al
     <Dog: Roscoe>
     ```
 
-1. Retrieve all dogs in *Demo shelter* by using `filter` as shown in the following code.
+1. Retrieve all dogs in *Demo shelter* by using `filter` as shown in the following command:
 
     ```python
     Dog.objects.filter(shelter__name='Demo shelter')

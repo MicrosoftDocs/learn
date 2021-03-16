@@ -13,7 +13,7 @@ To complete the exercises, you'll need the following items installed on your com
 ## Clone the starter repository
 
 1. Open a command or terminal window.
-1. Run the following commands to clone the starter repository and change the directory to the project.
+1. Run the following commands to clone the starter repository and change the directory to the project:
 
     ```bash
     git clone [URL HERE]

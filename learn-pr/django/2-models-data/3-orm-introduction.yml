@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.models-data.orm-introduction
-title: Django objection-relational mapper
+title: Django object-relational mapper
 metadata:
-  title: Django objection-relational mapper
-  description: Explore the concepts of an objection-relational mapper and how it works in Django.
+  title: Django object-relational mapper
+  description: Explore the concepts of an object-relational mapper and how it works in Django.
   ms.date: 02/25/2021
   author: GeekTrainer
   ms.author: shanama

@@ -2,7 +2,7 @@ Django provides a SQLite database by default. By completing this module, you fou
 
 In this module, you also defined the app models for the database. You discovered why adding the `__str__` method to the model classes is beneficial. 
 
-Finally, you saw that upon creation of a project, Django automatically creates an API to interact with the SQLite database. By opening the Python shell, you can then use Django commands to easily modify the database. 
+Finally, you saw that upon creation of a project, Django automatically creates an API to interact with the SQLite database. By opening the Python shell, you can use Django commands to easily modify the database. 
 
 In this module, you learned:
 

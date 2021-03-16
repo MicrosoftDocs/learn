@@ -112,9 +112,9 @@ class Category(models.Model):
 
 ### Keys and relationships
 
-A standard practice in relational databases is for each row in a table to have a primary key, typically an automatically incremented integer. Django's ORM will add this key automatically to every model you create, by adding a field named `id`. 
+A standard practice in relational databases is for each row in a table to have a primary key, typically an automatically incremented integer. Django's ORM will add this key automatically to every model that you create, by adding a field named `id`. 
 
-If you want to override this behavior, you can set the field that you want to be your primary key. However, in most situations you should rely on Django's `id` field.
+If you want to override this behavior, you can set the field that you want to be your primary key. However, you should rely on Django's `id` field in most situations.
 
 Relational databases also have relationships between tables. A product has a category, an employee has a manager, and a car has a manufacturer. Django's ORM supports all the relationships that you might want to create between your models. 
 

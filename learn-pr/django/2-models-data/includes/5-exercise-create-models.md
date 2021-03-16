@@ -5,7 +5,7 @@ By creating a model, you can define any essential fields and the behavior of you
 The first step in the process is to add the models. Django provides an empty file named *models.py* that you can use for your models.
 
 1. Open the *dog_shelters/models.py* file in Visual Studio Code.
-1. Add two Python classes to contain the models by entering the following code under the comment `Create your models here`.
+1. Add two Python classes to contain the models by entering the following code under the comment `Create your models here`:
 
     ```python
     # Create your models here
@@ -32,7 +32,7 @@ We're also using `ForeignKey` in the `Dog` class. This part tells Django there's
 
 All applications must be registered with the project in Django. It might seem a little counterintuitive, but just because an application folder exists inside a project doesn't mean it automatically gets loaded. We need to register it by adding it to the `INSTALLED_APPS` list.
 
-1. Find the configuration class name within the *dog_shelters* folder. To find this class name, go to the *dog_shelters/apps.py* file and check that the class name is `DogSheltersConfig` in the following code.
+1. Find the configuration class name within the *dog_shelters* folder. To find this class name, go to the *dog_shelters/apps.py* file and check that the class name is `DogSheltersConfig` in the following code:
 
     ```python
     class DogSheltersConfig(AppConfig):
@@ -40,7 +40,7 @@ All applications must be registered with the project in Django. It might seem a 
     ```
 
 1. Open *settings.py* in *project*.
-1. Add the full path to the class name under the comment `#[TODO] - Add the app to the list of INSTALLED_APPS`.
+1. Add the full path to the class name under the comment `#[TODO] - Add the app to the list of INSTALLED_APPS`:
 
     ```python
         #[TODO] - Add the app to the list of INSTALLED_APPS
@@ -62,7 +62,7 @@ All applications must be registered with the project in Django. It might seem a 
     ]
     ```
 
-    Adding the line to the list of `INSTALLED_APPS` tells Django that this app needs to be included when it runs the project.
+    Adding the line to the `INSTALLED_APPS` list tells Django that this app needs to be included when it runs the project.
 
 ## Summary
 
