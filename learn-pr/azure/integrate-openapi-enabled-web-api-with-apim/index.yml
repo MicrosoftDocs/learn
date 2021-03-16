@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim
+title: Integrate Open API-enabled Web API with Azure API Management
+summary: Learn how to add a Web API application to Azure API Management through an Open API document.
+metadata:
+  title: Integrate Open API-enabled Web API with Azure API Management
+  description: Learn how to add a Web API application to Azure API Management through an Open API document.
+  ms.date: 03/24/2021
+  author: justinyoo
+  ms.author: juyoo
+  ms.topic: interactive-tutorial  
+  ms.prod: learning-azure
+abstract: |
+  In this module, you will:
+  - Add a Web API application to Azure API Management, which generates an Open API document
+prerequisites: |
+  - Experience developing basic ASP.NET Core apps
+  - Experience activating the Open API document on a Web API app, using Swashbuckle
+iconUrl: /learn/achievements/integrate-openapi-enabled-web-api-with-apim.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-api-management
+- aspnet-core
+- dotnet
+- dotnet-core
+units:
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.1-introduction
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.2-publish-web-api-to-azure-app-service
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.3-publish-web-api-to-azure-api-management
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.4-test-web-api-on-azure-api-management
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.5-knowledge-check
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.6-summary
+badge:
+  uid: learn.azure.integrate-openapi-enabled-web-api-with-apim.badge
