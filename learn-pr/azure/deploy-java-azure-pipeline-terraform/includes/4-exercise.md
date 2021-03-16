@@ -139,7 +139,7 @@ resource "azurerm_app_service" "main" {
 
 ::: zone pivot="github-actions"
 
-## Set up your GitHub Actions workflow
+## Set up your GitHub Actions workflow with Terraform
 
 Let's provide your GitHub workflow access to your Azure account.
 
@@ -177,7 +177,8 @@ For this exercise, you need to store the following secrets:
 * `AZURE_TENANT_ID`
 
 To store the secrets, go to your forked GitHub repository, select **Settings**, and then select **Secrets** on the left pane.
-Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
+
+Create four secrets using the values returned from the creation of the Service Principal.
 
 Be sure to store the secrets without the quotation marks (" "), as shown in the following screenshot:
 
@@ -185,9 +186,9 @@ Be sure to store the secrets without the quotation marks (" "), as shown in the 
 
 ## Workflow file
 
-Inside your project directory is a directory called *.github/workflows* and, within it, a file called *main.yml*.
+Inside your project directory, is a directory called *.github/workflows* and, within it, a file called *main.yml*.
 
-The *main.yml* file is a GitHub workflow. It uses the secret you've just configured to deploy your application to your Azure subscription.
+The *main.yml* file is a GitHub workflow. It uses the secret you've configured to deploy your application to your Azure subscription.
 
 In the *main.yml* workflow file, you'll find the following content:
 
@@ -344,7 +345,6 @@ In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 
 On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline.
-(It sets up the environment, initializes your terraform environment, and then applies the Terraform changes)
 
 ```yml
 name: Provision Resources
@@ -399,7 +399,7 @@ As your pipeline runs, watch as your first Terraform **init** stage, and then yo
 ![Screenshot displaying the new Azure Pipeline run.](../media/4-pipelinerun.png)
 
 > [!TIP]
-> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete, and whether each build passed or failed.
+> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to know whether each build passes or fails.
 
 ::: zone-end
 
