@@ -1,9 +1,11 @@
-RDP and SSH are very often the primary means used to connect to remote IaaS VMs. But it's highly  undesirable to expose the RDP and SSH ports to the internet. This is due to protocol vulnerabilities. To help mitigate this threat, you can deploy Azure Bastion at the public side of your perimeter network. 
+RDP and SSH are very often the primary means used to connect to remote IaaS VMs. But exposing these management ports to the internet poses significant security risks. In this unit, we'll discuss how you can connect securely with these protocols by deploying Azure Bastion at the public side of your perimeter network. In this unit, you'll learn about: 
 
-> [!NOTE]
-> You deploy Azure Bastion per virtual network (or peered virtual network) rather than per subscription, account, or VM. 
+-  The Azure Bastion architecture
+- How Azure Bastion provides secure RDP/SSH connections to hosted VMs
+- The requirements for Azure Bastion to help to evaluate its relevance in your organization
 
-## Connect to a VM using Azure Bastion
+
+## Azure Bastion architecture
 
 The following diagram displays the architecture of a typical Azure Bastion deployment, and describes the end to end connection process. In this diagram, an Azure Bastion host is deployed in a virtual network that contains a number of Azure VMs. The virtual network is protected by a network security group.
 
@@ -18,6 +20,8 @@ The typical connection process, described in the preceding, proceeds as follows:
 2. The portal connects over a secured connection to Azure Bastion via a network security group protecting the virtual network that hosts the targeted VM.
 3. Azure Bastion initiates a connection to the target VM. 
 4. The RDP or SSH session opens in the browser on the administrator console. Azure Bastion streams the session information through custom packages. These packages are protected by TLS.
+
+By using Azure Bastion, you bypass the need to directly expose RDP/SSH to the internet on a public IP. Instead, you connect to Azure Bastion securely with SSL, and it connects to the target VMs using a private IP. 
 
 ## Usage requirements
 
@@ -43,3 +47,6 @@ Because Azure Bastion is protected by the virtual network's network security gro
 
 > [!NOTE]
 > Azure Gateway Manager manages portal connections to the Azure Bastion service.
+
+
+

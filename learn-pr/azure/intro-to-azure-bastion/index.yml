@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-bastion
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Bastion
-  description: Learn how Azure Bastion can help provide secure and seamless connectivity to your virtual machines directly in the Azure portal
+  description: Describe how Azure Bastion provides secure and seamless connectivity to your virtual machines directly in the Azure portal. Determine whether Azure Bastion can replace your administrative jump boxes.
   ms.date: 03/12/2021             
   author: warrenaj
   ms.author: v-anwarr
@@ -12,12 +12,12 @@ title: Introduction to Azure Bastion
 summary: Learn how Azure Bastion can provide secure and seamless connectivity to your virtual machines directly in the Azure portal
 abstract: |
   By the end of this module, you will be able to: 
-    - Evaluate the risks associated with providing your cloud-based virtual machines with public IP addresses
-    - Determine how Azure Bastion can help secure administrative access to your Azure virtual machines
+    - Evaluate how Azure Bastion can help secure administrative access to your virtual machines
+    - Describe how Azure reduces the risk of unauthorized access to your cloud-based virtual machines
 prerequisites: |
-  - Some knowledge of cloud security concepts and technologies
-  - Some experience with virtual machines
-  - An understanding of networking technologies and protocols
+  - Knowledge of cloud security concepts and technologies
+  - Experience administering hosted virtual machines
+  - Familiarity with remote administative technologies and RDP/SSH protocols
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
