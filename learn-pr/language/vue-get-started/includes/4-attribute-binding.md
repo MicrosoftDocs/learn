@@ -1,16 +1,18 @@
-You explored how you can display data on a page through the use of handlebars (`{{}}`). However, text on the page is not the only part you may need to make dynamic. A large part of the values you set on a page, are done through attributes. Fortunately, Vue.js allows you to bind to attributes through directives.
+You already explored how to display data on a page by using handlebars (`{{}}`). But the text on the page isn't the only part that might need to be dynamic. 
+
+You set many of the values on a page by using attributes. Fortunately, Vue.js allows you to bind to attributes through directives.
 
 ## Directives
 
-Directives are attributes recognized by Vue.js, and allow you to dynamically set the values of HTML attributes. All directives start with `v-`.
+Directives are attributes that Vue.js recognizes. They allow you to dynamically set the values of HTML attributes. All directives start with `v-`.
 
 ## v-bind
 
-The core directive is `v-bind`, which allows you to bind a data value to an attribute. This could be used to dynamically set the name of a class, the source for an image, or a style.
+The core directive is `v-bind`. It allows you to bind a data value to an attribute. You could use it to dynamically set the name of a class, the source for an image, or a style.
 
-To use `v-bind`, you place it in front of the attribute you wish to set with a `:`. So to set the `src` attribute for an image, you would use `v-bind:src="value"`. The attribute value is then evaluated much in the same way as you would use `{{ }}`.
+To use the directive, place `v-bind` and a colon (`:`) in front of the attribute you want to set. So to set the `src` attribute for an image, you would use `v-bind:src="value"`. The attribute value is then evaluated similarly to how it's evaluated when you use the `{{ }}` syntax.
 
-The following code would generate the HTML element `<img src="./media/sample.jpg">`
+The following code generates the HTML element `<img src="./media/sample.jpg">`.
 
 ```html
 <div id="app">
@@ -29,14 +31,16 @@ The following code would generate the HTML element `<img src="./media/sample.jpg
 </script>
 ```
 
-The `imageSource` property is made available to the template by it being returned from the `data()` method. Then it's bound to the `src` attribute of the image element.
+The `imageSource` property is available to the template because it's returned from the `data()` method. Then it's bound to the `src` attribute of the image element.
 
 > [!NOTE]
-> You do not have to maintain a reference to the object you use for your app, but you can call `createApp` immediately followed by `mount` as demonstrated above.
+> You don't have to maintain a reference to the object you use for your app. But you can call `createApp` immediately, followed by `mount`, as you saw previously.
 
 ## Binding shorthand
 
-You've seen so far how you can use the `v-bind` directive to bind data, in your Vue app, to an attribute. There's a shorthand, a shortened way to type this directive. Instead of typing `v-bind:attribute`, you can type `:attribute` and thereby save a few characters. Let's revisit the example with the bound image source. Instead of typing:
+You've now seen how to use the `v-bind` directive in your Vue app to bind data to an attribute. You can also type this directive in shorthand. For example, instead of typing `v-bind:attribute`, you can type `:attribute`. This shorthand saves you a few characters. 
+
+In the example of the bound image source, you can use shorthand in the following way.
 
 ```html
 <div id="app">
@@ -44,7 +48,7 @@ You've seen so far how you can use the `v-bind` directive to bind data, in your 
 </div>
 ```
 
-you can now type:
+Now you can type the following code.
 
 ```html
 <div id="app">
@@ -53,21 +57,23 @@ you can now type:
 ```
 
 > [!TIP]
-> It's considered a good practice to use `:attribute` over `v-bind:attribute`.
+> Using the shorthand `:attribute` is generally considered a better practice than using `v-bind:attribute`.
 
 ## Class and style
 
-One of the most common attributes you may wish to set for an HTML element is its `class` or `style`. To bind to these attributes, you can use the `v-bind:class` and `v-bind:style` or `:class` and `:style`, if you're using the shorthand notation.
+One of the most common attributes you might want to set for an HTML element is its `class` or `style`. To bind to these attributes, you can use `v-bind:class` and `v-bind:style`. Or in shorthand, you can use `:class` and `:style`.
 
 ### Class objects
 
-Let's say we have an application with two classes - `centered` and `active`. Using HTML, you can uses these classes by using the following HTML:
+Let's say you have an application that has two classes: `centered` and `active`. In HTML, here's how you can use these classes.
 
 ```html
 <div class='centered active'>Hello, Vue!</div>
 ```
 
-The example above is static though. If you want to be able to change the data, you can use a binding. However Vue not only accepts a string to bind to, but can also take an object. You can now switch out the the static value `centered active` for a property of your choosing like so:
+This example is static though. If you want the ability to change the data, you can use a binding. Vue allows binding not only for a string but also for an object. 
+
+Here's how you can switch out the static value `centered active` for a different property:
 
 ```html
 <div id="app">
@@ -89,16 +95,16 @@ The example above is static though. If you want to be able to change the data, y
 </script>
 ```
 
-The data property `classObject` has two properties where their values are booleans. The boolean values allows you to *enable* or *disable* specific classes. Setting `centered` to `false` would render `<div class="active">`, as `active` would be the only property that's still `true`.
+The data property `classObject` has two properties whose values are Boolean. The Boolean values allow you to *enable* or *disable* specific classes. Setting `centered` to `false` would render `<div class="active">` because `active` would be the only property that's still `true`.
 
 > [!NOTE]
-> When creating a class object, JavaScript naming rules apply. If you have a class name which uses a dash, such as `center-text`, you will have to place the name in quotes (`'center-text': true`) when adding the property.
+> JavaScript naming rules apply to class objects. So if your class name uses a dash, such as in `center-text`, place the name in quotation marks (`'center-text': true`) when you add the property.
 
 ### Style objects
 
-Setting styles in CSS involves creating different collections of key/value pairs. This is relatively natural to represent with a JavaScript object. You can create objects which Vue.js that you can use to set the style through style objects.
+Setting styles in CSS involves creating collections of key/value pairs. Representing style by using a JavaScript object is relatively natural. In Vue.js, you can create style objects to set the style.
 
-If you wanted to set the background color (`background-color`) of an HTML element's style, you could do this with the following code:
+For example, to set the background color (`background-color`) of an HTML element's style, you can use the following code.
 
 ```html
 <div id="app">

@@ -1,6 +1,6 @@
 To start using Vue.js, you need to install the framework, create a Vue app, and then register it on the page. Registration tells the page how to use the app. 
 
-Let's see how to get started.
+Let's get started.
 
 ## Add Vue.js to a page
 
@@ -28,12 +28,12 @@ const App = Vue.createApp({
 
 ## Add data
 
-So far, you've seen how to create a Vue.js application by calling the `createApp()` method. You can add various properties to give your app more functionality. An important method that most apps have is `data()`. Vue.js uses this method to access any information you need to make available to your application.
+Now that you've created your app, you can add properties that give your app more functionality. An important method that most apps have is `data()`. Vue.js uses this method to access any information you need to make available to your application.
 
 > [!NOTE]
 > You'll use the `data()` method throughout this module.
 
-Any of the properties inside the object that are returned by `data()`, are dynamic. Vue.js automatically detects any value changes. It then updates and refreshes the appropriate portions of the display with the updated information.
+Any properties inside the object that `data()` returns are dynamic. Vue.js automatically detects any value changes. It then updates and refreshes the appropriate portions of the display with the updated information.
 
 ### Create a data object
 
@@ -57,7 +57,7 @@ At this point, the data is exposed so it can be displayed for the user.
 
 ## Mount the app
 
-The created app object must be *mounted* before Vue.js can use it. By mounting the app, you're indicating the portion of the page the app controls, allowing it to display information or even HTML. 
+The created app object must be *mounted* before Vue.js can use it. By mounting the app, you indicate the portion of the page the app controls, allowing it to display information or even HTML. 
 
 To mount the application, you reference the `id` of an ordinary HTML element.
 
@@ -89,7 +89,7 @@ To display data on the page, you use the `{{ }}` syntax, sometimes called *handl
 
 The `data()` function you created earlier returns an object. Vue.js automatically makes the object available, so you don't need to call `data()`. 
 
-If you want to display the `firstName`, you can use the syntax `{{ firstName }}`. The following example shows the full application, which can display `lastName` and `firstName`.
+If you want to display the first name, you can use the syntax `{{ firstName }}`. The following example shows the full application, which can display `lastName` and `firstName`.
 
 ```html
 <!-- the HTML element which will host our app -->
@@ -113,4 +113,4 @@ If you want to display the `firstName`, you can use the syntax `{{ firstName }}`
 ```
 
 > [!NOTE]
-> The `{{ }}` syntax works only inside elements that Vue controls. The syntax could would work either inside a component (which is covered in other modules) or inside the HTML element that Vue mounted.
+> The `{{ }}` syntax works only inside elements that Vue controls. The syntax would work either inside a component or inside the HTML element that Vue mounted.
