@@ -72,7 +72,7 @@ The Azure App Service Deployment Center automatically generates a GitHub Actions
 
 1. In your repository, select the **Actions** tab and then, for workflow, select **build-and-deploy**.
 
-1. Under **build-and-deploy**, in the list of steps, expand **Deploy to Azure Web App**. 
+1. Under **build-and-deploy**, in the list of steps, expand **Deploy to Azure Web App**.
 
     ![Screenshot of the "Deploy to Azure Web App" step in the Maven build process.](../media/4-maven-run.png)
 
@@ -101,9 +101,9 @@ publish-profile: ${{ secrets.AzureAppService_PublishProfile_c1ee8d191003493b9c9e
 
 ::: zone pivot="azure-devops"
 
-## Set up a Azure Pipeline to deploy the sample application
+## Set up an Azure Pipeline to deploy the sample application
 
-As before in this module, you'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
+As before, you'll need to create an Azure Pipeline to Build and Deploy our application and publish to Azure App Services.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
@@ -111,8 +111,7 @@ In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline
 1. In the path, select "/azuredevops/build_deploy.yml"
 1. Select **Continue** to Review your PipeLine before you run it
 
-On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline:
-(It fetches the latest source code from GitHub, and then builds/deploys the application to Azure)
+On the "Review your pipeline YAML" screen, inspect the Yaml file you'll use to create your Pipeline:
 
 ```yml
 name: Build and Deploy
@@ -121,6 +120,8 @@ trigger:
 - main
 
 stages:
+
+# Build your Spring Boot App using Maven
 - stage: Build
   displayName: Build stage
   jobs:
@@ -145,6 +146,7 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
 
+# Deploy to Azure using the AzureWebApp task using your Service Connection
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
@@ -184,7 +186,8 @@ As with our provisioning pipeline, before you run the build/deploy pipeline, you
 
 ## Watch the pipeline run
 
-As you did for your provisioning job, trace the build process through each of the stages and steps.
+1. As you did for your provisioning job, trace the build process through each of the stages and steps.
+1. Verify that your Java application is deployed, is connected to your MySQL database, and is returning data.
 
 ![Screenshot displaying the new Azure Pipeline run.](../media/5-run.png)
 

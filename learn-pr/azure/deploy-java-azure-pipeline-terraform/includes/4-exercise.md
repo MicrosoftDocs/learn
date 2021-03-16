@@ -286,9 +286,6 @@ Next, in your repository, trigger your GitHub action by doing the following acti
 
     ![Screenshot showing that the Azure app instance is publicly available.](../media/4-template-url.png)
 
-> [!TIP]
-> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete, and whether each build passed or failed.
-
 ## Next steps
 
 In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
@@ -394,6 +391,9 @@ Under Jobs, select Job. Next, trace the build process through each of the steps.
 As your pipeline runs, watch as your first Terraform **init** stage, and then your second **apply** stage, go from blue (running) to green (completed). You can select the stages to watch your pipeline in action.
 
 ![Screenshot displaying the new Azure Pipeline run.](../media/4-pipelinerun.png)
+
+> [!TIP]
+> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete, and whether each build passed or failed.
 
 ::: zone-end
 
