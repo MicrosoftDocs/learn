@@ -63,7 +63,9 @@ Let's learn about the key concepts and components that make up a pipeline.
 
 ## Terraform Tasks for Azure Pipelines
 
-When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure **Service Connection** to authorize operations against the target subscription. This connection is specified via the `environmentServiceName` input
+When executing commands that interact with Azure such as `plan`, `apply`, and `destroy`, the task will use an Azure **Service Connection** to authorize operations against the target subscription.
+This service connection binds to an Azure **Service Principal** that authorizes access to your Azure subscription.
+This connection is specified via the `environmentServiceName` input
 
 ```yaml
 - task: TerraformCLI
