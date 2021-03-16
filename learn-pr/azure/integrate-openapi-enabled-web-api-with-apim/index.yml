@@ -30,7 +30,7 @@ products:
 units:
 - learn.azure.integrate-openapi-enabled-web-api-with-apim.1-introduction
 - learn.azure.integrate-openapi-enabled-web-api-with-apim.2-publish-web-api-to-azure-app-service
-- learn.azure.integrate-openapi-enabled-web-api-with-apim.3-publish-web-api-to-azure-api-management
+- learn.azure.integrate-openapi-enabled-web-api-with-apim.3-integrate-web-api-with-azure-api-management
 - learn.azure.integrate-openapi-enabled-web-api-with-apim.4-test-web-api-on-azure-api-management
 - learn.azure.integrate-openapi-enabled-web-api-with-apim.5-knowledge-check
 - learn.azure.integrate-openapi-enabled-web-api-with-apim.6-summary

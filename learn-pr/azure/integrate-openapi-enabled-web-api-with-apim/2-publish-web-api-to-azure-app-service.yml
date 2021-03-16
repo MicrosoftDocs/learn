@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim.2-publish-web-api-to-azure-app-service
-title: Document an ASP.NET Core Web API with Swagger tools
+title: Publish Open API-enabled Web API to Azure App Service
 metadata:
-  title: Document an ASP.NET Core Web API with Swagger tools
-  description: Document an ASP.NET Core Web API with Swagger tools
+  title: Publish Open API-enabled Web API to Azure App Service
+  description: You can publish an Open API-enabled Web API app to an Azure App Service instance.
   ms.date: 03/24/2021
   author: justinyoo
   ms.author: juyoo
