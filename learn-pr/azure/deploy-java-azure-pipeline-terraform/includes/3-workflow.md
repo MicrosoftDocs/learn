@@ -48,7 +48,7 @@ In the next unit, we'll set up a sample project and use GitHub Actions with Terr
 
 ## Key concepts for new Azure Pipelines
 
-Let's learn about the key concepts and components that make up a pipeline.
+Let's learn about the key concepts and components that make up an Azure Pipeline.
 
 ![key concepts graphic](../media/3-workflow-concepts.svg)
 
@@ -67,25 +67,22 @@ When executing commands that interact with Azure such as `plan`, `apply`, and `d
 The recommended way to connect to Azure, is binding the Service Connection to an Azure **Service Principal**.
 An Azure Service Principal is an identity that you create for uses automated tools to access Azure resources.
 
-A Service Connection is specified via the `environmentServiceName` input
+In the below yaml snippet, it uses the Azure Pipeline Terraform provider "**azurerm**".
+A Service Connection is specified via the `environmentServiceNameAzureRM` input as per below:
 
 ```yaml
-- task: TerraformCLI
-    displayName: 'terraform apply'
-    inputs:
-        command: apply
-        environmentServiceName: 'My Azure Service Connection'
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+    environmentServiceNameAzureRM: $(serviceConnection)
 ```
 
-## State Support
-
-The task currently supports the following backend configurations
-
-- local (default for terraform) - State is stored on the agent file system.
-- azurerm - State is stored in a blob container within a specified Azure Storage Account.
-- self-configured - State configuration will be provided using environment variables or command options.
-
-If azurerm selected, the task will prompt for a service connection and storage account details to use for the backend.
+> [!TIP]
+> If you use "azurerm" as the Azure Pipeline Terraform provider, you also need to supply a Service Connection and Storage Container to use with the Terraform backend "**state**".
 
 ## Passing Parameters
 
