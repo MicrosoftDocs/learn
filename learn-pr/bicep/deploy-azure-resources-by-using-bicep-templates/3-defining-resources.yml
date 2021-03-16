@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-resources-bicep.defining-resources
+title: Defining resources
+metadata:
+  unitType: learning-content  
+  title: Defining resources
+  description: TODO # user input: a description for site search and SEO
+  ms.date: 03/12/2021  
+  author: TODO
+  ms.author: TODO
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 123 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-defining-resources.md)]

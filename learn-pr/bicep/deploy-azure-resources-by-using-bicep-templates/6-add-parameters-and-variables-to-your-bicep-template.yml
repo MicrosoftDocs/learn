@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-resources-bicep.add-params-and-vars
+title: Add parameters and variables to your Bicep template
+metadata:
+  unitType: exercise  
+  title: Add parameters and variables to your Bicep template
+  description: TODO # user input: a description for site search and SEO
+  ms.date: 03/12/2021  
+  author: TODO
+  ms.author: TODO
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 123 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/6-add-parameters-and-variables-to-your-bicep-template.md)]
