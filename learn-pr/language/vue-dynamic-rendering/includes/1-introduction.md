@@ -1,13 +1,13 @@
-When creating pages based on data you often need the ability to change the display based on certain values, or display multiple items in an array. Vue provides this capability through different directives. This allows you to use HTML to control the output, which feels natural to many web developers.
+When you're creating pages that are based on data, you often need the ability to change the display according to certain values, or to display multiple items in an array. With Vue you can do these things through a variety of directives. This ability allows the use of HTML to control the output, which feels natural to many web developers.
 
-In this module you'll explore how to display items in an array, and implement conditional display logic.
+In this module you'll explore how to display items in an array and how to implement conditional display logic.
 
 ## Objectives
 
-Upon completion of this module you will understand the following:
+Upon completion of this module you'll understand:
 
-- How to render all items in an array
-- How to show or hide HTML elements based on variable values
+- How to render all items in an array.
+- How to show or hide HTML elements based on variable values.
 - How to use if/else-if/else statements in Vue.js
 
 ## Prerequisites

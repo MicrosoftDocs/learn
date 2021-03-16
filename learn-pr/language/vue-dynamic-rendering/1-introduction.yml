@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.vue-dynamic-rendering.1-introduction
 metadata:
-  title: Overview of dynamic displays
-  description: When working with data you need the ability to change the display. We will explore some of the core concepts to make this happen.
+  title: Introduction to dynamic displays
+  description: When you work with data, you need the ability to change the display. This unit explores some of the core concepts you can apply to make this happen.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
-title: Overview of dynamic displays
+title: Introduction to dynamic displays
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

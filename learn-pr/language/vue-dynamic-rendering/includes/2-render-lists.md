@@ -1,23 +1,23 @@
-Working with data often involves arrays, or other types of collections. Typically you iterate through all items in a collection by using some form of loop. Vue.js supports loops through a directive called `v-for`.
+Working with data often involves arrays or other types of collections. You ordinarily iterate through all items in a collection by using some form of loop. Vue.js supports loops through a directive called `v-for`.
 
 ## Introducing v-for
 
-To display all items in a list, you can use the directive `v-for`. `v-for` behaves much like a `for ... of ...` loop in JavaScript. It will iterate through a collection, providing access to each item via the variable you declare.
+To display all items in a list, you can use the directive `v-for`. `v-for` behaves much like a `for ... of ...` loop in JavaScript. It iterates through a collection, providing access to each item via the variable you declare.
 
-The syntax for `v-for` looks like so:
+The syntax for `v-for` looks like:
 
 ```html
 v-for="itemName in collectionName"
 ```
 
-The `collectionName` is the name of the array in your data object. For each iteration, the `itemName` assumes the identity of your current item. To use `v-for` in a template, you add the directive inside of an element declaration. Doing so, will repeat the HTML element as many times as there items in the array.
+The `collectionName` is the name of the array in your data object. For each iteration, `itemName` assumes the identity of your current item. To use `v-for` in a template, you add the directive inside an element declaration. Doing so repeats the HTML element as many times as there items in the array.
 
 > [!NOTE]
-> If you were creating an unordered list (`ul`), you would **not** add `v-for` to the `ul` element, but rather the `li` element, since the `li` element is what will be repeated.
+> If you were creating an unordered list (`ul`), you would *not* add `v-for` to the `ul` element. You add it to the `li` element, because the `li` element is what will be repeated.
 
-### Used in app
+### Use v-for in an app
 
-To use the `v-for` directive in app, you need to do two things:
+To use the `v-for` directive in an app, you need to do two things:
 
 - **Expose an array** via your data object. To be able to use the `v-for` directive, you first need to ensure there's a data that is of type array that your `data()` method is returning.
 - **Add the `v-for` directive to an element**. You need to add the `v-for` directive to an HTML element. To display data from the array, you also need to use `{{}}` syntax. 
