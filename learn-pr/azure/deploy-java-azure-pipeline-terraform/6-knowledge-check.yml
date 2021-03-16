@@ -28,9 +28,9 @@ quiz:
       explanation: "The init command is used to initialize a working directory that contains Terraform configuration files."      
   - content: "What is the recommended way to restrict access to Azure resources?"
     choices:
-    - content: "Use an Azure service principal"
+    - content: "Use an Azure Service Principal"
       isCorrect: true
-      explanation: "An Azure service principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
+      explanation: "An Azure Service Principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources."
     - content: "Use Secrets."
       isCorrect: false
       explanation: "Incorrect. Secrets are encrypted environment variables that you create in a repository or organization."
