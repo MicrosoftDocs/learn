@@ -12,10 +12,13 @@ During the process, you:
 > * Provision the infrastructure again to see the new resources.
 > * Tear everything down.
 
-This exercise uses TODO Bicep Extension for Visual Studio Code. Be sure to install this extension in Visual Studio Code.
+This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
 > [!IMPORTANT]
 > To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
+
+> [!CAUTION]
+> TODO: images are not correct!
 
 ## Create a Bicep template with a storage account
 
