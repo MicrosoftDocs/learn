@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.design-secure-env-government.2-discover-cloud-solutions
-title: Discover cloud solutions with Microsoft Azure
+title: Discover cloud solutions with Azure
 metadata:
-  title: Discover cloud solutions with Microsoft Azure
+  title: Discover cloud solutions with Azure
   description: Discussion of the challenges and opportunities of implementing cloud services for public agencies.
   ms.date: 02/08/2021
   author: Adriamen

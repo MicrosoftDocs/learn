@@ -1,4 +1,4 @@
-Microsoft Azure is a cloud services platform that government agencies can use to build solutions for their unique and complex data and cybersecurity requirements. Private, hybrid, and multi-tenant cloud options empower you to design the solutions you need to access the flexibility and resiliency of the cloud, while differentiating between various data classifications. At all classification levels, Azure protects data through strict residency and encryption requirements.
+Government agencies can build solutions for their unique and complex data and cybersecurity requirements. By providing private, hybrid, and multi-tenant cloud options, Azure empowers you to design the solutions you need to access the cloud's flexibility and resiliency while differentiating between various data classifications. At all classification levels, Azure protects data through strict residency and encryption requirements.
 
 ## Learning objectives
 
@@ -10,4 +10,5 @@ In this module, you will:
 
 ## Prerequisites
 
-PENDING
+* Familiarity with basic computing concepts and terminology.
+* Familiarity with cloud computing.

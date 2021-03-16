@@ -1,10 +1,12 @@
 Protection of sensitive data is essential in the public sector and Azure provides many features and services that safeguard data throughout its lifecycle. These features allow government agencies to maintain full control over their data and comply with local regulations around data protection and privacy.
 
-## Safeguarding data with Azure
+## Protect data and privacy
 
-A multi-tenant cloud platform implies that multiple customer applications and data are stored on the same physical hardware. Azure uses logical isolation to segregate each customer's applications and data from those of others. This approach provides the scale and economic benefits of multi-tenant cloud services. At the same time, it prevents unauthorized access to customer applications and data. Azure is available globally in more than 50 regions and can be used by customers worldwide to meet data protection and privacy requirements.
+Azure is available globally in more than 50 regions and can be used by customers worldwide to meet data protection and privacy requirements.
 
-Microsoft Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won’t store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
+Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won’t store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
+
+## Choose how to safeguard data
 
 Some of the options available to customers to safeguard their data in Azure are listed below:
 
@@ -16,4 +18,4 @@ Some of the options available to customers to safeguard their data in Azure are 
 * Microsoft will notify customers of any breach of customer or personal data within 72 hours of incident declaration.
 * Customers can monitor potential threats and respond to incidents on their own using Azure Security Center.
 
-Now, let’s review what you’ve learned with a knowledge check.
+Now let’s look at a sample conceptual architecture that accounts for these various classification levels.
