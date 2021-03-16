@@ -113,14 +113,14 @@ Deploy the template by using Azure CLI commands in the Visual Studio Code termin
 ```azurecli
 templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
-DeploymentName="blanktemplate-"$today
+DeploymentName="storage-"$today
 
 az group deployment create \
  --name $DeploymentName \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **storage** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -184,13 +184,13 @@ Deploy the template by using Azure PowerShell commands in the terminal.
 ```azurepowershell
 $templateFile = 'main.bicep'
 $today = Get-Date -Format 'MM-dd-yyyy'
-$deploymentName = "blanktemplate-$today"
+$deploymentName = "storage-$today"
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile
 ```
 
-The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
+The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *storage* with the date as a suffix.
 
 ::: zone-end
 
@@ -216,7 +216,32 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
 ## Add an App Service plan and app to your Bicep template
 
-TODO
+In the previous task, you learned how to create a template with a single resource and deploy it. Now, you're ready to deploy more resources, including a dependency. In this section, you add an App Service plan and app to the Bicep template.
+
+1. In the *main.bicep* file in Visual Studio Code, add the following to the bottom of the file:
+
+   ```bicep
+   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
+     name: 'MyAppServicePlan'
+     location: 'eastus'
+     sku: {
+       name: 'S1'
+     }
+   }
+
+   resource appService 'Microsoft.Web/sites@2020-06-01' = {
+     name: 'toy-product-launch-1'
+     location: 'eastus'
+     properties: {
+       serverFarmId: appServicePlan.id
+       httpsOnly: true
+     }
+   }
+   ```
+
+1. Update the name of the App Service app from `toy-product-launch-1` to something that is likely to be unique. Make sure this is all lowercase, contains alphanumerics and hyphens, doesn't start or end with a hyphen, and is between 2 and 60 characters in length.
+
+1. Save the changes to the file.
 
 ### Deploy the updated Bicep template
 
@@ -229,7 +254,7 @@ Run the following Azure CLI commands in the terminal. This snippet is the same c
 ```azurecli
 templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
-DeploymentName="addstorage-"$today
+DeploymentName="addapp-"$today
 
 az group deployment create \
   --name $DeploymentName \
@@ -243,13 +268,15 @@ az group deployment create \
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
-$templateFile = "main.bicep"
-$today=Get-Date -Format "MM-dd-yyyy"
-$deploymentName="app-"+"$today"
+$templateFile = 'main.bicep'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "addapp-$today"
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile
 ```
+
+::: zone-end
 
 ### Check your deployment
 
@@ -259,7 +286,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
-1. Select **app**.
+1. Select **addapp**.
 
     :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 

@@ -10,15 +10,15 @@ The main thing we do with Bicep templates is define our Azure resources. A Bicep
 
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-    name: 'mystorageaccount'
-    location: 'eastus'
-    sku: {
-        name: 'Standard_LRS'
-    }
-    kind: 'StorageV2'
-    properties: {
-        accessTier: 'Hot'
-    }
+  name: 'mystorageaccount'
+  location: 'eastus'
+  sku: {
+    name: 'Standard_LRS'
+  }
+  kind: 'StorageV2'
+  properties: {
+    accessTier: 'Hot'
+  }
 }
 ```
 
@@ -41,11 +41,11 @@ Let's look at an example. We need to deploy an App Service app for our product l
 
 ```bicep
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-    name: 'MyAppServicePlan'
-    location: 'eastus'
-    sku: {
-        name: 'S1'
-    }
+  name: 'MyAppServicePlan'
+  location: 'eastus'
+  sku: {
+    name: 'S1'
+  }
 }
 ```
 
@@ -55,12 +55,12 @@ Now that we've declared our plan, we can define our app:
 
 ```bicep
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
-    name: 'toy-product-launch-1'
-    location: 'eastus'
-    properties: {
-        serverFarmId: appServicePlan.id
-        httpsOnly: true
-    }
+  name: 'toy-product-launch-1'
+  location: 'eastus'
+  properties: {
+    serverFarmId: appServicePlan.id
+    httpsOnly: true
+  }
 }
 ```
 
