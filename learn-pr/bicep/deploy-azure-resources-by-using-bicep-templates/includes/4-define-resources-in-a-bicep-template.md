@@ -52,13 +52,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
-      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the drop-down." border="true":::
+      :::image type="content" source="../media/4-bash.png" alt-text="The Visual Studio Code terminal window with bash in the drop-down." border="true":::
 
 1. If not, select the drop-down, and choose **Select Default Shell**.
 
 1. Select **bash**.
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
+      :::image type="content" source="../media/4-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
 
 1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
@@ -112,12 +112,15 @@ Deploy the template by using Azure CLI commands in the Visual Studio Code termin
 
 ```azurecli
 templateFile="main.bicep"
+today=$(date +"%d-%b-%Y")
+DeploymentName="blanktemplate-"$today
 
 az group deployment create \
+ --name $DeploymentName \
  --template-file $templateFile
 ```
 
-The command ```az group deployment create``` deploys the template to Azure.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -131,13 +134,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. If the drop-down on the right of the terminal window says **pwsh**, you have the right shell to work from, and you can skip to the next section.
 
-      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the drop-down." border="true":::
+      :::image type="content" source="../media/4-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the drop-down." border="true":::
 
 1. If not, select the drop-down, and choose **Select Default Shell**.
 
 1. Select **pwsh**.
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
+      :::image type="content" source="../media/4-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
 
 1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
 
@@ -179,12 +182,15 @@ The following code deploys the template to Azure. You will see a successful depl
 Deploy the template by using Azure PowerShell commands in the terminal.
 
 ```azurepowershell
-$templateFile = "main.bicep"
+$templateFile = 'main.bicep'
+$today = Get-Date -Format 'MM-dd-yyyy'
+$deploymentName = "blanktemplate-$today"
 New-AzResourceGroupDeployment `
+  -Name $deploymentName `
   -TemplateFile $templateFile
 ```
 
-The ```New-AzResourceGroupDeployment``` command deploys the template to Azure.
+The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
 
 ::: zone-end
 
@@ -196,15 +202,15 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
 1. In the **Overview**, you see that one deployment succeeded.
 
-    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true"::: <!-- TODO image -->
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-    :::image type="content" source="../media/3-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true"::: <!-- TODO image -->
 
 1. Select **main** to see what resources were deployed. In this case, there will be one storage account with the name you specified.
 
-    :::image type="content" source="../media/3-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
 
 1. Leave the page open in your browser. You'll check on deployments again.
 
@@ -239,7 +245,7 @@ Run the following Azure PowerShell commands in the terminal. This snippet is the
 ```azurepowershell
 $templateFile = "main.bicep"
 $today=Get-Date -Format "MM-dd-yyyy"
-$deploymentName="addstorage-"+"$today"
+$deploymentName="app-"+"$today"
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile
@@ -251,10 +257,10 @@ New-AzResourceGroupDeployment `
 
 1. Notice that both deployments are in the list.
 
-    :::image type="content" source="../media/3-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
 1. Select **app**.
 
-    :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 
 1. Notice that the App Service plan and app have been deployed.
