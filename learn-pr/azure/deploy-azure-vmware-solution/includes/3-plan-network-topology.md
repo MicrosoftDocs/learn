@@ -1,8 +1,13 @@
-A plan for network topology with AVS is an important next step. The AVS environment in Azure needs to pass network traffic to Azure services and on-premises VMware environments.
+AVS provides a private cloud environment which can be accessed from both on-premises and Azure-based environments or resources. The next step within AVS deployment involves a plan for network topology. The AVS environment in Azure needs to pass network traffic to Azure services and on-premises VMware environments. A dedicated Azure ExpressRoute circuit provides connectivity to Azure resources and services from AVS. A separate customer provided Azure ExpressRoute circuit provides connectivity to on-premises VMware environments. Specific IP address ranges and firewall ports need to be allowed to enable network connectivity. When AVS is deployed, private networks are created for the following vSphere components:
+- Management
+- Provisioning
+- vMotion
+
+You'll use these private networks to access vCenter, NSX-T Manager, vMotion, or for VM deployment.
 
 ## IP segments
 
-IP addressing must be planned out before AVS deployment. At a minimum, the service ingests a /22 CIDR network address block you provide. The address space can be carved up into smaller network segments within NSX-T Manager. Those IP segments are used for vCenter, VMware HCX, NSX-T, and vMotion. AVS, your existing Azure environment, and your on-premises environment will all need to exchange routes to migrate VMs into Azure. The /22 CIDR network address block defined shouldn't overlap with network address blocks already configured on-premises or in Azure.
+IP addressing must be planned out before AVS deployment. The service ingests a /22 CIDR network address block you provide. The address space can be carved up into smaller network segments within NSX-T Manager. Those IP segments are used for vCenter, VMware HCX, NSX-T, and vMotion. AVS, your existing Azure environment, and your on-premises environment will all need to exchange routes to migrate VMs into Azure. The /22 CIDR network address block defined shouldn't overlap with network address blocks already configured on-premises or in Azure.
 
 A VM IP segment will need to be built to create the first NSX segment in the AVS private cloud. The VM IP segment allows for deployment of VMs onto AVS. Optionally, network segments can be extended from an on-premises VMware environment to AVS. Networks on-premises need to connect to a vSphere Distributed Switch (vDS), as vSphere Standard Switches can't be extended.
 
@@ -24,15 +29,32 @@ The following chart is an example of how to carve up the /22 CIDR network addres
 | HCX uplink | /26 | 10.5.3.0/26 |
 | Reserved | 3 /26 blocks| 10.5.3.64/26, 10.5.3.128/26, 10.5.3.192/26 |
 
+## ExpressRoute virtual network gateway and peering for AVS
+
+During AVS deployment, you can select an existing virtual network, create a new one, or leave the field blank. If an existing virtual network is selected, it needs a GatewaySubnet designated for the AVS ExpressRoute. If you create a brand new virtual network, a GatewaySubnet will need to be be created for the AVS ExpressRoute. Selecting a virtual network or creating a new one means all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment provisions in Azure. If you leave the virtual network blank, you will need to factor in creating a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
+
+:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot showing the virtual network being left blank during a private cloud deployment within the Azure portal.":::
+
 ## ExpressRoute and routing requirements
 
-AVS connects to an Azure virtual network using an ExpressRoute connection that deploys with the service. The AVS provided ExpressRoute provides connectivity to and from the AVS private cloud to other Azure services. AVS will then connect to the on-premises data center through a provided ExpressRoute circuit. You can use an existing circuit or purchase a new one.
+There are two types of interconnectivity for AVS:
+- **Basic interconnectivity** - AVS connects to an Azure virtual network using an ExpressRoute connection that deploys with the resource. The AVS provided ExpressRoute provides connectivity to and from the AVS private cloud to other Azure services like Azure Monitor, Azure Security Center, and so on.
+- **Full interconnectivity** - this connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection is configured through a customer provided ExpressRoute circuit. You can use an existing circuit or purchase a new one.
 
-ExpressRoute Global Reach must be enabled to route traffic to and from on-premises to AVS. The provided ExpressRoute circuit is not a part of the AVS private cloud deployment. All gateways involved with the deployment need to support 4-byte Autonomous System Number (ASN). An ASN is a unique identifier that is globally available and allows its autonomous system to exchange routing information with other systems. All routes between on-premises and Azure are advertised via the industry standard Border Gateway Protocol (BGP).
+ExpressRoute Global Reach must be enabled to route traffic to and from on-premises to the AVS private cloud. The customer provided ExpressRoute circuit is not a part of the AVS private cloud deployment. All gateways involved with the deployment need to support 4-byte Autonomous System Number (ASN). An ASN is a unique identifier that is globally available and allows its autonomous system to exchange routing information with other systems. All routes between on-premises and Azure are advertised via the industry standard Border Gateway Protocol (BGP).
+
+## ExpressRoute Global Reach pre-requisites
+
+There are a few pre-requisites that need to be met before configuring ExpressRoute Global Reach.
+
+- The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
+- A separate customer provided ExpressRoute circuit used to connect on-premises environments to Azure.
+- A /29 non-overlapping network address block for ExpressRoute Global Reach peering.
+- All gateways, including the ExpressRoute provider's service, need to support 4-byte Autonomous System Number (ASN). AVS uses 4-byte public ASNs for advertising network routes.
 
 ## Required network ports
 
-If the networking infrastructure on-premises is restrictive, the following ports will need to be allowed:
+If network infrastructure on-premises is restrictive, the following ports will need to be allowed:
 
 | Source | Destination | Protocol | Port |
 | :------------ | :------| :------ | :------ |
@@ -50,4 +72,6 @@ If the networking infrastructure on-premises is restrictive, the following ports
 
 ## DHCP and DNS resolution considerations
 
-VMs running in AVS require name resolution and DHCP services for lookup and IP address assignments. A VM on-premises can be configured or a VM in Azure to facilitate name resolution. The DHCP service built-in to NSX can be used or choose to use a local DHCP server in the AVS private cloud. Configuring DHCP in AVS won't require routing broadcasts of DHCP traffic over the WAN back to on-premises.
+VMs running in AVS require name resolution. Additionally, VMs may need DHCP services for lookup and IP address assignments. A VM on-premises can be configured or a VM in Azure to facilitate name resolution. The DHCP service built-in to NSX can be used or you can choose to use a local DHCP server in the AVS private cloud. Configuring DHCP in AVS won't require routing broadcasts of DHCP traffic over the WAN back to on-premises.
+
+In the next unit, we'll go through the deployment of AVS. All steps will be outlined so you can deploy the service in your environment.

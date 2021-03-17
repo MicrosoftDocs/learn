@@ -1,67 +1,40 @@
-After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit is needed, along with an ExpressRoute Global Reach configuration. 
+After AVS is deployed, network connectivity becomes the next step for a successful deployment. The AVS solution deploys onto dedicated, bare metal servers. Those bare metal servers are given to a single customer. The bare metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS provided ExpressRoute helps the environment talk to Azure services. To reach on-premises, a customer provided ExpressRoute circuit needs to be used, along with an ExpressRoute Global Reach configuration. 
 
-## Create an ExpressRoute virtual network gateway for AVS
+## Create Azure Bastion
 
-In the previous unit, you either created a virtual network or configured an existing network for AVS. An ExpressRoute virtual network gateway is created next. The AVS ExpressRoute uses this virtual network gateway to send network traffic to Azure services.
+After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure IaaS environment. Azure Bastion will initially be used to connect to the jump host that will allow you to log into the AVS vCenter and NSX environments. Once the ExpressRoute circuits and ExpressRoute Global Reach are configured for hybrid connectivity, the Azure Bastion resource isn't needed. Your company may want to keep the resource as a back-up in case you have connectivity issues with ExpressRoute in the future.
 
-1. In an existing or new resource group, select **+ Add** to add a new resource.
-1. In the **Search the Marketplace** text box, type in **Virtual network gateway** and select the resource.
-1. On the **Virtual Network Gateway** page, select **Create**.
-1. On the **Basics** tab, provide values for the fields and select **Review + create**.
+1. In the Azure portal, search for and create a **Bastion** resource.
+1. On the **Create a Bastion** page, configure a new Bastion resource with the following details:
 
-:::image type="content" source="../media/5-create-virtual-network-gateway-expressroute.png" alt-text="Screenshot showing the required information to deploy an ExpressRoute virtual network gateway for AVS connectivity to Azure services.":::
-
-| Field | Value |
-| ----- | ----- |
-| Subscription | Pre-populated with the subscription where the virtual network is deployed. |
-| Resource group | Pre-populated with the resource group where the virtual network is deployed. |
-| Name | Enter a name for the virtual network gateway. |
-| Region | Select the region of the virtual network and AVS deployment. |
-| Gateway type | Select **ExpressRoute**. |
-| SKU | Use the default value at **Standard*. |
-| Virtual network | Select the virtual network previously created. |
-| Gateway subnet address range | Pre-populated when selecting the virtual network. Leave this setting at the default value. |
-| Public IP address | Select **Create new**. |
-
-## Peer the AVS ExpressRoute to the virtual network gateway
-
-You'll need to connect the AVS ExpressRoute to Azure. This connection allows access Azure services like Azure Backup, Azure Monitor, Azure Security Center, and so on.
-
-1. Select the AVS private cloud created during the previous unit.
-1. Under **Manage**, select **Connectivity**.
-1. Select the **ExpressRoute** tab.
-1. Copy the authorization key.
-1. If there isn't an authorization key, you'll need to create one by selecting **+ Request an authorization key**.
-
-    :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot demonstrating how to request an authorization key for ExpressRoute peering.":::
-
-1. Select the virtual network gateway created in the previous step and under **Settings**, select **Connections**.
-1. On the **Connections** page, select **+ Add**.
-1. On the **Add connection page**, provide values for the following fields, and select **OK**.
+    :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot of creating an Azure Bastion host.":::
 
     | Field | Value |
-    | ----- | ----- |
-    | Name | Enter a name for the connection. |
-    | Connection type | Select ExpressRoute. |
-    | Redeem authorization | Make sure this box is selected. |
-    | Virtual network gateway | Use the virtual network gateway created previously. |
-    | Authorization key | Copy and paste the authorization key from the ExpressRoute tab inside the resource group. |
-    | Peer circuit URI | Copy and paste the ExpressRoute ID from the ExpressRoute tab in the resource group. |
+    | ----------- | -------- |
+    | Subscription | Select the same subscription where AVS is deployed. |
+    | Resource group | Select existing or create a new resource group. |
+    | Name | The name of the new Bastion resource. |
+    | Region | Select the same region where AVS is deployed. |
+    | Virtual network | Select the virtual network created when you deployed AVS. |
+    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the AVS deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet** and create a subnet with the following configurations: the subnet name needs to be **AzureBastionSubnet** and the subnet must be at least /27 or higher. |
+    | Public IP address | The public IP will allow RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both AVS and Azure Bastion. This new public IP is separate from the AVS deployment. |
+    | Public IP address name | Provide a name of the public IP address resource. |
+    | Public IP address SKU | This setting is pre-populated by default to **Standard** because Bastion only supports the Standard Public IP SKU. |
+    | Assignment | This setting is pre-populated by default to **Static**. Best practice is to leave assignment at static. |
 
-1. After all fields are filled, a connection between the ExpressRoute circuit and virtual network is created.
+## Create Azure Virtual Machine to use as jump host
+
+After AVS and the Azure Bastion resource are deployed, create a jump host to access to the private cloud. The jump host must be located in the same virtual network and subscription as AVS and the Azure Bastion resource. The jump host can either be a desktop or server version of Windows. The jump host will be deployed behind the Azure Bastion resource. You'll use Azure Bastion to access to the jump host via RDP in the Azure portal over TLS.
+
+## Use Azure Bastion and sign into vCenter and NSX-T Manager
+
+Use Azure Bastion to log into the jump host VM. Once logged in, open a web browser. Navigate and log into both vCenter and NSX-T Manager. The Azure portal will provide the vCenter IP address, the NSX-T Manager console's IP addresses, and credentials used for deployment. Accessing the jump host through Azure Bastion will allow you to configure NSX-T and vCenter.
+
+:::image type="content" source="../media/5-login-credentials-vcenter-nsxt.png" alt-text="Screenshot showcasing where login credentials display after AVS is deployed within the Azure portal.":::
 
 ## Establish an ExpressRoute Global Reach connection to on-premises VMware environment
 
 Global Reach will connect your on-premises VMware environment to the AVS private cloud. Connectivity is established between the AVS ExpressRoute and a new or existing ExpressRoute to an on-premises environment.
-
-### Pre-requisites
-
-There are a few pre-requisites that need to be met before configuring ExpressRouteGlobal Reach.
-
-1. The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
-2. A separate ExpressRoute circuit used to connect on-premises environments to Azure.
-3. A /29 non-overlapping network address block for ExpressRoute Global Reach peering.
-4. All gateways, including the ExpressRoute provider's service, need to support 4-byte Autonomous System Number (ASN). AVS uses 4-byte public ASNs for advertising network routes.
 
 ### Create an ExpressRoute Global Reach authorization key in the private cloud
 
@@ -69,7 +42,7 @@ There are a few pre-requisites that need to be met before configuring ExpressRou
 
     :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot showing how to request an auth key for an ExpressRoute circuit.":::
 
-1. Enter a name for the authorization key. 
+1. Enter a name for the authorization key.
 1. Select **Create**.
 
     :::image type="content" source="../media/5-provide-name-auth-key-create.png" alt-text="Screenshot of entering name of authorization key and selecting create.":::
@@ -104,9 +77,9 @@ The AVS ExpressRoute circuit is peered to the on-premises circuit after an autho
 1. Open an Azure CLI Cloud Shell.
 1. Leave the shell as Bash.
 1. Use your specific information:
-    1. Resource ID
-    1. Authorization key
-    1. /29 CIDR network block.
+    - Resource ID
+    - Authorization key
+    - /29 CIDR network block.
 1. Enter the Azure CLI command below to create the authorization key.
 
     ```azurecli
@@ -136,8 +109,4 @@ The AVS ExpressRoute circuit is peered to the on-premises circuit after an autho
     ```
 When this operation is complete, you'll have connectivity between on-premises and AVS through the two ExpressRoute circuits.
 
-## Verify on-premises network connectivity to the AVS private cloud
-
-You should see where ExpressRoute connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. There may be a need to allow routes to propagate back to the on-premises network.
-
-Some environments have firewalls protecting ExpressRoute circuits. If there are no firewalls, try to ping the AVS vCenter server or a VM on the NSX-T segment from on-premises. Additionally, from the VM on the NSX-T segment, resources should be to reach the on-premises environment.
+In the next unit, we'll walk through how to configure NSX-T networking components in the Azure portal. NSX-T Manager provides the software defined networking layer for AVS.

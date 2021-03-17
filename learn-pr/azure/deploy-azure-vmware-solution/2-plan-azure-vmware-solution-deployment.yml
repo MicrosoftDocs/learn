@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "At a minimum, which CIDR network address block does Azure VMware Solution private clouds require?"
+  - content: "What version of vCenter is deployed with AVS?"
     choices:
-    - content: "/22"
+    - content: "6.7 Update 3"
       isCorrect: true
-      explanation: "AVS needs a /22 CIDR network address block for IP segments."
-    - content: "/30"
+      explanation: "AVS deploys with vSphere 6.7 Update 3."
+    - content: "7.0 Update 1"
       isCorrect: false
-      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
-    - content: "/31"
+      explanation: "AVS doesn't deploy with vSphere 7.0 Update 1."
+    - content: "6.5 Update 2"
       isCorrect: false
-      explanation: "AVS needs a bigger CIDR network address block allocated for IP segments."
+      explanation: "AVS doesn't deploy with vSphere 6.5 Update 2."
   - content: "What is the minimum number of nodes required for Azure VMware Solution?"
     choices:
     - content: "4"

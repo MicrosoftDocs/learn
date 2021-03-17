@@ -12,29 +12,4 @@ title: Configure NSX-T network segments
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-nsx-t-network-segments.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution private cloud to on-premises?"
-    choices:
-    - content: "Customer provided ExpressRoute"
-      isCorrect: true
-      explanation: "AVS deploys with an ExpressRoute circuit that connects you into Azure from the bare metal hosts. Additionally, a customer provided ExpressRoute is required to establish full connectivity into AVS from on-premises for migrations."
-    - content: "Application Gateway"
-      isCorrect: false
-      explanation: "An Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. This is not required to peer the AVS environment to on-premises."
-    - content: "Network virtual appliance"
-      isCorrect: false
-      explanation: "A network virtual appliance (NVA) is a virtual appliance that primarily performs network functions through virtualization. This appliance isn't required to peer the AVS environment to on-premises."
-  - content: "In order for on-premises network traffic to reach Azure VMware Solution, which component is required?"
-    choices: 
-    - content: "Virtual private network"
-      isCorrect: false
-      explanation: "A virtual private network provides site-to-site connectivity over the public internet. AVS requires dedicated site-to-site connectivity."
-    - content: "ExpressRoute Global Reach"
-      isCorrect: true
-      explanation: "ExpressRoute is a dedicated site-to-site circuit and Global Reach allows you to connect AVS private cloud ExpressRoute circuits to an on-premises VMware environment. Without Global Reach, the ExpressRoute Gateway doesn't provide transitive routing between its connected circuits."
-    - content: "Load Balancer"
-      isCorrect: false
-      explanation: "An Azure load balancer provides high availability by distributing incoming traffic among healthy VMs. This is not required for on-premises network traffic to reach AVS."
 
