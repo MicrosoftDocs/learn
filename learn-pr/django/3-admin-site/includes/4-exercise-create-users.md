@@ -38,7 +38,7 @@ After the admin user has been created, it's time for our first sign-in to the Dj
 
     :::image type="content" source="../media/admin.png" alt-text="Screenshot showing the Django admin interface.":::
 
-1. Select **users**.
+1. Select **Users**.
 
     You'll now see the list of users, which includes the user you created.
 

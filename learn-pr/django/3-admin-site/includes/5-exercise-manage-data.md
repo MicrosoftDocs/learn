@@ -46,11 +46,11 @@ Let's create a new `Dog` to explore how the admin site functions for data.
     :::image type="content" source="../media/new-shelter.png" alt-text="Screenshot showing an Add shelter screen." lightbox="../media/new-shelter.png":::
 
 1. Enter a **Name** and **Location** for the shelter, such as **Contoso** and **Redmond, WA**.
-1. Select **Save**.
+1. Select **SAVE**.
 
     The screen updates and shows the newly created **Shelter** as the selected option for the dog.
 1. Enter a **Name** and **Description** for the dog.
-1. Select **Save**.
+1. Select **SAVE**.
 
    The screen returns to the list of dogs, and the information on the newly created dog appears.
 
