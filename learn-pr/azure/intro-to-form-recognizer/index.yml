@@ -1,38 +1,40 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-form-recognizer
 metadata:
-  title: Introduction to Azure Form Recognizer
-  description: summary
+  title: Introduction to Form Recognizer
+  description: Azure Form Recognizer is an AI-powered document extraction service that lets you build automated data processing software using machine learning technology. You identify and extract data with prebuilt and custom document processing models to automate data entry in your applications and enrich your documents search capabilities.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Azure Form Recognizer 
-summary: summary
+title: Introduction to Form Recognizer 
+summary: Azure Form Recognizer is an AI-powered document extraction service that lets you build automated data processing software using machine learning technology. You identify and extract data with prebuilt and custom document processing models to automate data entry in your applications and enrich your documents search capabilities.
 abstract: |
   In this module, you will:
-  - Create a Hyperscale instance of Azure Database for PostgreSQL
-  - Automatically shard and distribute tables in Hyperscale
-  - Scale and rebalance a Hyperscale database without downtime
+  - Assess the benefits of Form Recognizer
+  - Describe what Form Recognizer is
+  - Define scenarios where Form Recognizer can be applied
+  - Decide if Form Recognizer is the right choice for your scenario
 prerequisites: A basic familiarity with Azure
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:
 - beginner
 roles:
-- administrator
+- ai-engineer
+- data-scientist
 - developer
 - solution-architect
 - student
 products:
 - azure
 units:
-- learn.azure.intro-to-form-recognizer.1-introduction
-- learn.azure.intro-to-form-recognizer.2-what-is-form-recognizer
-- learn.azure.intro-to-form-recognizer.3-how-form-recognizer-works
-- learn.azure.intro-to-form-recognizer.4-when-to-use-form-recognizer
-- learn.azure.intro-to-form-recognizer.5-use-form-recognizer
-- learn.azure.intro-to-form-recognizer.6-knowledge-check
-- learn.azure.intro-to-form-recognizer.7-summary
+- learn.azure.intro-to-form-recognizer.introduction
+- learn.azure.intro-to-form-recognizer.what-is-form-recognizer
+- learn.azure.intro-to-form-recognizer.how-form-recognizer-works
+- learn.azure.intro-to-form-recognizer.when-to-use-form-recognizer
+- learn.azure.intro-to-form-recognizer.use-form-recognizer
+- learn.azure.intro-to-form-recognizer.knowledge-check
+- learn.azure.intro-to-form-recognizer.summary
 badge:
   uid: learn.azure.intro-to-form-recognizer.badge
