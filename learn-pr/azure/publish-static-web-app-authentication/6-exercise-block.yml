@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-authentication.6-exercise-block
 title: Exercise - Configure authentication providers and access
 metadata:
   title: Exercise - Configure authentication providers and access
-  description: Use Azure Static Web Apps settings to prevent unwanted access to unauthenticated users and restrict allowed authentication providers
+  description: Use Azure Static Web Apps settings to prevent unwanted access to unauthenticated users and restrict allowed identity providers
   ms.date: 02/26/2020
   author: sinedied
   ms.author: sinedied

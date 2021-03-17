@@ -12,7 +12,7 @@ Next, create a new repository by using a GitHub template repository. A series of
 1. Name your repository **my-static-web-app**
 1. Click the **Create repository from template** button
 
-## Run your app locally
+## Clone your app locally
 
 You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
@@ -28,6 +28,89 @@ You just created a GitHub repository named **my-static-web-app** in your GitHub 
    ```bash
    cd my-static-web-app
    ```
+
+### Configure CORS locally
+
+You won't have to worry about CORS when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
+
+Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
+
+1. Create a file named _api/local.settings.json_
+1. Add the following contents to the file
+
+   ::: zone pivot="angular"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:4200"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="react"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:3000"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="svelte"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:5000"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+   ::: zone pivot="vue"
+
+   ```json
+   {
+     "Host": {
+       "CORS": "http://localhost:8080"
+     }
+   }
+   ```
+
+   ::: zone-end
+
+> [!NOTE]
+> The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
+
+### Run the API
+
+The `api` folder contains the Azure Functions project with the HTTP endpoints for the web app. Start by running the API locally by following these steps:
+
+> [!NOTE]
+> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
+1. Type and select **Terminal: Create New Integrated Terminal**
+1. Go to the _api_ folder
+
+   ```bash
+   cd api
+   ```
+
+1. Run the Azure Functions app locally
+
+   ```bash
+   func start
+   ```
+
+### Run the web app
 
 1. Next, go to the folder of your preferred front-end framework, as shown below:
 
