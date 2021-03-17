@@ -9,4 +9,4 @@ In this lesson, you will learn:
 Before taking this lesson, it is recommended that the student is able to:
 
 - Log into the Azure portal
-- Explain and create resource groups 
+- Explain and create resource groups
