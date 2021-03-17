@@ -9,6 +9,6 @@ metadata:
   author: amthomas46
   ms.author: antho  
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: # user input: the estimate time to complete the unit
+durationInMinutes: 05
 content: |
   [!include[](includes/summary.md)]
