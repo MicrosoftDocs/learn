@@ -2,11 +2,11 @@ After you understand the overall performance and traffic characteristics of your
 
 When you select your cloud HPC storage, be aware of how it will integrate with your current security posture. Understand the methods by which your file system will authenticate and authorize access to files, whether the enforcement is local or remote (or both), and where authentication and authorization are sourced. If you use a remote shared file system, you'll need to understand how to control access by using standard NAS practices. Finally, if you offer unique working spaces for users (home directories), understand how to allocate that space.
 
-By the end of this unit, you'll have an understanding of these considerations and how they affect your storage architecture.
+By the end of this unit, you'll understand these considerations and how they affect your storage architecture.
 
 ## Overview of authentication and authorization
 
-**Authentication**: When you provide access to file systems, you need to authenticate the requestor by using some trusted credential. Many client/server architectures issue challenges for such credentials, like user or computer accounts. Those credentials are then checked to ensure they're valid for the environment. After authentication, the requestor (the user or the computer/process) is then authorized. Authentication for your solution might be limited by the access protocols your environment requires. For example, if you have a Windows environment, you're most likely using Server Message Block (SMB) as the network file-access protocol. SMB authentication requirements are different from those of NFS.
+**Authentication**: When you provide access to file systems, you need to authenticate the requestor by using some trusted credential. Many client/server architectures issue challenges for such credentials, like user or computer accounts. Those credentials are then checked to ensure they're valid for the environment. After authentication, the requestor (the user or the computer/process) is then authorized. Authentication for your solution might be limited by the access protocols your environment requires. For example, if you have a Windows environment, you're most likely using Server Message Block (SMB) as the network file-access protocol. SMB authentication requirements aren't the same as NFS requirements.
 
 **Authorization**: Allowing a user or computer access to an environment is one thing, but what *level* of access? For example, user A might be able to read files on a file system, and user B might be able to read and write files. Authorization can go deeper than reading and writing. For example, user C might be able to modify files but not create new ones in a given directory.
 
@@ -48,11 +48,11 @@ Here's an example:
 
 An authenticated user on a local computer is represented by a UID and primary and supplemental GIDs. Those values are local to the computer. What happens if you have five or even 50 computers? You'd have to replicate the UID and GID assignments on each of those computers. The level of complexity around user management grows, as does the possibility of mistakenly granting file or folder access to the wrong user.
 
-**Remote file access via NFS**
+#### Remote file access via NFS
 
 Local UID and GID assignment works fine if you're running everything as a single user/group assignment. What if you're running an HPC cluster that's consumed by multiple stakeholders, each of which have sensitive data and multiple consumers of the data? 
 
-Locating data on a file server or NAS environment allows remote access of the data. This approach helps reduce the local disk cost, ensures that the data is up to date for all users, and reduces overall user and group management. 
+Locating data on a file server or NAS environment allows remote access of the data. This approach helps reduce the local disk cost, ensures the data is up to date for all users, and reduces overall user and group management. 
 
 ![Diagram that shows the relationships among compute, storage, and directory services.](../media/nas-and-ds.png)
 
@@ -61,14 +61,14 @@ Locating data on a file server or NAS environment allows remote access of the da
 The typical method for accessing files remotely is to use a network file system like NFS or SMB, or a parallel file system like Lustre. These protocols define the client-and-server API for accessing data. We discussed NFS operations in the "File-system performance considerations" unit. We'll discuss the use of NFS at length here.
 
 > [!NOTE] 
-> A directory service isn't required when you use NFS. But if you don't, UID and GID management will still be difficult if you have large numbers of users and systems. 
+> A directory service isn't required when you use NFS. But if you don't use one, UID and GID management will still be difficult if you have large numbers of users and systems. 
 
-**Home directories**
+#### Home directories
 
-Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Further, say those researchers are continuously modifying and adding to their own data. Offering researchers their own home directories is an efficient way of segregating their data.
+Say you have an HPC environment that multiple researchers are using, but their unique data must be kept separate. Say those researchers are continually modifying and adding to their own data. Providing researchers with their own home directories is an efficient way to segregate their data.
 
-Permissions within the home directory would be handled by the researcher, enabling them to collaborate when desired.
+Permissions within the home directory would be handled by the researcher, so they could collaborate if they wanted to.
 
-One of the main challenges in this environment is storage space. Say you have a 500TB NAS environment. What stops one researcher from consuming it all?
+One of the main challenges in this environment is storage space. Say you have a 500-TB NAS environment. What stops one researcher from consuming it all?
 
-A **quota** can be assigned to an individual directory and reflects the maximum amount of data allowed. Once reached, the quota can reject further data, or warn you admins that the researcher has exceeded their limit. For example, if you have a NAS system, you would be able to assign quotas to each researcher. Further, if you isolate their access to the home directory it becomes simple to configure and monitor their usage.
+You can assign a *quota* to an individual directory. The quota reflects the maximum amount of data allowed. After the quota is reached, it can reject further data or warn admins that the researcher has exceeded the limit. For example, if you have a NAS system, you can assign a quota to each researcher. And if you isolate the researchers' access to the home directory, it becomes easy to configure and monitor their usage.
