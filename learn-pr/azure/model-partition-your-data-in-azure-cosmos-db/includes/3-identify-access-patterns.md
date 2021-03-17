@@ -4,7 +4,7 @@ When designing a data model for a NoSQL database, the objective is to ensure ope
 
 Let's start with the customer entities in our e-commerce database. Below there are three different entities and the relationships between them. The three entities are, Customer, CustomerAddress and CustomerPassword. Our Customer entity has a 1:Many  relationship to CustomerAddress and Customer has a 1:1 relationship to CustomerPassword.
 
-  :::image type="content" source="../media/customer-relational-model.png" alt-text="Diagram that shows the relational model for customer entities.":::
+  :::image type="content" source="../media/customer-relational-model.png" alt-text="Diagram that shows the relational model for customer entities." border="false":::
 
 In our application, there are three operations we will perform on the Customer entities.
 
@@ -18,4 +18,4 @@ For each of these operations we need all this data at the same time. These entit
 
 Azure Cosmos DB stores data as JSON, so we can model the 1:Many relationship between customer and customerAddress and embed the customer address data as an array. For the 1:1 relationship between customer and customerPassword, we can embed that as an object into our new single customer document. This will allow the e-commerce application to create, edit or retrieve customer data in a single request. The following diagram shows what our customer entity looks like.
 
-  :::image type="content" source="../media/modeled-customer-document.png" alt-text="Diagram that shows modeled customer document.":::
+  :::image type="content" source="../media/modeled-customer-document.png" alt-text="Diagram that shows modeled customer document." border="false":::
