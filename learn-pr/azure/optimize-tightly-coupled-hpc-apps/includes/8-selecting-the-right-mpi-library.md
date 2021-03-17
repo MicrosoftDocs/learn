@@ -19,7 +19,7 @@ The following illustration compares the popular MPI library architectures.
 
 HPCX and OpenMPI are ABI compatible, so you can dynamically run an HPC application with HPCX that was built with OpenMPI. Similarly, Intel MPI, MVAPICH, and MPICH are ABI compatible.
 
-The queue pair 0 isn't accessible to the guest VM, in order to prevent any security vulnerability via low-level hardware access. This shouldn't have any affect on end-user HPC applications, but it might prevent some low-level tools from functioning correctly.
+The queue pair 0 isn't accessible to the guest VM, in order to prevent any security vulnerability via low-level hardware access. This shouldn't have any effect on end-user HPC applications, but it might prevent some low-level tools from functioning correctly.
 
 ## HPCX and OpenMPI mpirun arguments
 
