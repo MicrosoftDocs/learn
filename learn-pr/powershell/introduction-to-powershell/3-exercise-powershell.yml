@@ -6,7 +6,7 @@ metadata:
   description: In this unit, you will run commands to check your installed version
     of PowerShell.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
