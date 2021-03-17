@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: A custom image built with Azure image builder or packer
       isCorrect: false
-      explanation: A custom image might be a good choice, but you need to install the right drivers to get infiniBand working, and you also must install the MPI library you want to use. This is all done automatically with other image choices.
+      explanation: A custom image might be a good choice, but you need to install the right drivers to get InfiniBand working, and you also must install the MPI library you want to use. This is all done automatically with other image choices.
     - content: CentOS 7.8+ Azure Marketplace image
       isCorrect: false
-      explanation: This is an Azure Marketplace image, but this image doesn't support infiniBand or have all MPI libraries and tuned numerical libraries pre-installed.
+      explanation: This is an Azure Marketplace image, but this image doesn't support InfiniBand or have all MPI libraries and tuned numerical libraries pre-installed.
     - content: CentOS-HPC 7.8+ Azure Marketplace image
       isCorrect: true
-      explanation:  Yes, this is an HPC Azure Marketplace image, supporting infiniBand. It has all the MPI libraries and tuned numerical libraries preinstalled.
+      explanation:  Yes, this is an HPC Azure Marketplace image, supporting InfiniBand. It has all the MPI libraries and tuned numerical libraries preinstalled.
   - content: Which tuned BLAS library should they select for HB120_v2 VM?
     choices:
     - content: AMD BLIS
