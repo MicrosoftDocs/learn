@@ -1,6 +1,6 @@
 ## Cryptography
 
-![Cryptography category](../media/policies/cryptography.svg)
+![Cryptography category](../media/policies/cryptography.png)
 
 ### Why ask these questions
 

@@ -27,19 +27,19 @@ They can also be mapped to requirements from well-known institutions, such as th
 
 |Security Domain|What it means|
 |---------------|-------------|
-|![Access Control domain](../media/policies/access-control-small.svg)</br>Access control|Learn how the enterprise grants, manages, and revokes access to resources. Also, understand the process employees go through to access those resources.|
-|![Secure Development domain](../media/policies/secure-development-small.svg)</br>Secure development|Discover how engineering work is managed, secured, and stored.|
-|![Business Continuity domain](../media/policies/business-continuity-small.svg)</br>Business continuity|Learn what happens to the enterprise during an outage and what they do to reduce impact.|
-|![Cryptography domain](../media/policies/cryptography-small.svg)</br>Cryptography|Find out how data is protected at-rest, in-transit, and in-use.|
-|![Asset Management domain](../media/policies/asset-small.svg)</br>Asset management|Uncover how physical and logical assets are created, managed, and retired.|
-|![Legal domain](../media/policies/legal-small.svg)</br>Legal|Understand the legal and regulatory obligations for both employees and the company.|
-|![Incident Response domain](../media/policies/incident-response-small.svg)</br>Incident response|Learn how incidents are handled for both the enterprise and product.|
-|![Network domain](../media/policies/network-small.svg)</br>Network|Discover how the network is protected against security threats.|
-|![Operations domain](../media/policies/operations-small.svg)</br>Operations|Learn how well security is integrated with daily operations.|
-|![Physical and environmental domain](../media/policies/physical-small.svg)</br>Physical and environmental|Discover how people, assets, and facilities are protected against security or environmental threats.|
-|![Governance domain](../media/policies/governance-small.svg)<br>Governance|Find out what the strategic direction for the enterprise looks like. Also, learn how they manage security risks.|
-|![Security architecture domain](../media/policies/security-architecture-small.svg)</br>Security architecture|Confirm how security baselines are created, managed, and enforced. Also, discover how different platforms securely work together.|
-|![Supplier risk domain](../media/policies/supplier-small.svg)</br>Supplier risk|Learn how does the company decides who to do business with. Also, find out how they enforce supplier security and support.|
+|![Access Control domain](../media/policies/access-control-small.png)</br>Access control|Learn how the enterprise grants, manages, and revokes access to resources. Also, understand the process employees go through to access those resources.|
+|![Secure Development domain](../media/policies/secure-development-small.png)</br>Secure development|Discover how engineering work is managed, secured, and stored.|
+|![Business Continuity domain](../media/policies/business-continuity-small.png)</br>Business continuity|Learn what happens to the enterprise during an outage and what they do to reduce impact.|
+|![Cryptography domain](../media/policies/cryptography-small.png)</br>Cryptography|Find out how data is protected at-rest, in-transit, and in-use.|
+|![Asset Management domain](../media/policies/asset-small.png)</br>Asset management|Uncover how physical and logical assets are created, managed, and retired.|
+|![Legal domain](../media/policies/legal-small.png)</br>Legal|Understand the legal and regulatory obligations for both employees and the company.|
+|![Incident Response domain](../media/policies/incident-response-small.png)</br>Incident response|Learn how incidents are handled for both the enterprise and product.|
+|![Network domain](../media/policies/network-small.png)</br>Network|Discover how the network is protected against security threats.|
+|![Operations domain](../media/policies/operations-small.png)</br>Operations|Learn how well security is integrated with daily operations.|
+|![Physical and environmental domain](../media/policies/physical-small.png)</br>Physical and environmental|Discover how people, assets, and facilities are protected against security or environmental threats.|
+|![Governance domain](../media/policies/governance-small.png)<br>Governance|Find out what the strategic direction for the enterprise looks like. Also, learn how they manage security risks.|
+|![Security architecture domain](../media/policies/security-architecture-small.png)</br>Security architecture|Confirm how security baselines are created, managed, and enforced. Also, discover how different platforms securely work together.|
+|![Supplier risk domain](../media/policies/supplier-small.png)</br>Supplier risk|Learn how does the company decides who to do business with. Also, find out how they enforce supplier security and support.|
 
 ## When should I threat model my infrastructure?
 
@@ -53,7 +53,7 @@ Infrastructure threat modeling is ideally done before the infrastructure goes li
 
 Any IT professional with a basic understanding of security can create an infrastructure threat model.
 
-They will work with people from other divisions, like legal, human resources, and finance, to get a better picture of the current state-of-security.
+They need to work with people from other divisions, like legal, human resources, and finance, to get a better picture of the current state-of-security.
 
 When completed, this exercise will help you identify and incorporate missing security requirements and controls across the enterprise.
 
@@ -61,7 +61,7 @@ When completed, this exercise will help you identify and incorporate missing sec
 
 In this module, you'll explore the four steps in the infrastructure threat modeling process and be able to:
 
-- Understand the importance of a well defined, open-ended questionnaire to get a better view of the infrastructure.
+- Understand the importance of a well-defined, open-ended questionnaire to get a better view of the infrastructure.
 - Visualize how each component interacts with the other with a detailed data-flow diagram.
 - Identify infrastructure security gaps using a combination of security policies and the threat modeling framework.
 - Reduce or eliminate risk with known security requirements and controls.
