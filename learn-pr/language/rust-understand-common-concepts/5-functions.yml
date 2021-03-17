@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.rust-understand-common-concepts.5-functions
+uid: learn.language.rust-understand-common-concepts.6-functions
 metadata:
   title: Create reusable functionality with functions
   description: Learn about how to implement and call functions.
