@@ -61,7 +61,7 @@ Download the Azure Storage Explorer tool to download the Storage Analytics log f
 
    1. In the **Sign in** dialog box, enter your username for your Azure subscription, and then select **Next**.
 
-   1. If a page appears and asks you to select between **Work or school account** and **Personal account**, select the appropriate option for your account.
+   1. If a page appears and prompts you to select between **Work or school account** and **Personal account**, select the appropriate option for your account.
 
    1. Enter your password, and then select **Sign In**.
   

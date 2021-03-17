@@ -10,7 +10,7 @@ In the Azure portal, you can create a dashboard and add persistent charts to clo
 
 ![Screenshot that shows an Azure portal dashboard.](../media/4-azure-portal-dashboard.png)
 
-## Creating dashboards
+## Create dashboards
 
 Your Azure portal normally starts with a dashboard created automatically for you. This dashboard already has a number of *tiles* by default. Tiles contain information about your Azure tenant or links to help you get started with using Azure.
 

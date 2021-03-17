@@ -11,7 +11,7 @@ Azure Storage provides cloud-based storage for range of data types with virtuall
 - A reliable messaging service.
 - A NoSQL store for unstructured data.
 
-This module concentrates on Azure Blob Storage, which is Microsoft's object storage solution for the cloud. Blob Storage provides a solution for storing large amounts of unstructured data, so it's useful for:
+This module focuses on Azure Blob Storage, which is Microsoft's object storage solution for the cloud. Blob Storage provides a solution for storing large amounts of unstructured data, so it's useful for:
 
 - Serving images to a browser.
 - Distributing unstructured files.
@@ -96,11 +96,7 @@ Selecting **Metrics (classic)** shows four charts for total requests, total egre
 
 ### Filtering
 
-With some metrics, you can implement filtering to focus on specific values. For example, if you select the **Blob Capacity Average** metric, you can then filter by two properties, **Blob Tier** and **Blob Type**. Selecting the **Add Filter** button and then selecting **Blob Type** as the filtered property brings up options for:
-
-- Azure Data Lake Storage
-- Page blob
-- Block blob
+With some metrics, you can implement filtering to focus on specific values. For example, if you select the **Blob Capacity Average** metric, you can then filter by two properties, **Blob Tier** and **Blob Type**. To bring up options for Azure Data Lake Storage, page blob, and block blob, select **Add Filter** > **Blob Type** as the filtered property.
 
 With the **Blob Tier** option, you can choose from the following types of tiers:
 
