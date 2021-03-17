@@ -37,9 +37,9 @@ The objective is to end up with a data mode and partition scheme that results in
 
 Imagine that you work for a retail startup that's designing a database to manage online orders. You're working on a proposal for an efficient database design. You've been given a relational model to start from. To improve scalability and performance, you want to migrate the model to NoSQL. But to do so the data needs to be modeled correctly to realize the best efficiency and performance.
 
-This is the model you will be starting from. The relational model has nine entities each in their own table.
+The following diagram shows the model you will be starting from. The relational model has nine entities each in their own table.
 
-:::image type="content" source="../media/full-relational-model.png" alt-text="relational model for our application":::
+:::image type="content" source="../media/full-relational-model.png" alt-text="Diagram that shows the relational model for our example application." border="false":::
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 

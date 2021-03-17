@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.choosing-a-partition-key
-title: Choosing a partition key 
+title: Choose a partition key 
 metadata: 
-  title: Choosing a partition key
+  title: Choose a partition key
   description: A partition key provides a way to route data for a logical partition and is a property that exists within every document in your container that routes your data.
   ms.date: 3/9/2021 
   author: markjbrown 

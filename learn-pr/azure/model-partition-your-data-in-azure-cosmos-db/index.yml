@@ -30,7 +30,7 @@ units:
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.nosql-versus-relational
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.identify-access-patterns
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.embed-or-reference-data
-- learn.azure.model-and-partition-your-data-in-azure-cosmos-db.exercise
+- learn.azure.model-and-partition-your-data-in-azure-cosmos-db.exercise-measure-performance
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.choosing-a-partition-key
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.modeling-small-lookup-tables
 - learn.azure.model-and-partition-your-data-in-azure-cosmos-db.knowledge-check
