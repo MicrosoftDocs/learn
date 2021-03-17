@@ -2,7 +2,7 @@
 uid: learn.azure.create-foundation-modern-apps.exercise-deploy-azure-sql-database
 title: Exercise - Deploy and configure Azure SQL Database
 metadata:
-  unitType: exercise  
+  unitType: learning-content  
   title: Deploy and configure Azure SQL Database
   description: Perform the steps to deploy and configure your instance of Azure SQL Database.
   ms.date: 3/17/2021  
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-exercise-deploy-azure-sql-database.md)]
+  [!include[](includes/exercise-deploy-azure-sql-database.md)]
