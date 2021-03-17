@@ -1,29 +1,29 @@
-Django includes a built-in admin site that can be used to both manage the data in your application and security. This site is part of the default installation, and as we will see requires only a few lines of code to fully activate it. There is also a full authentication and authorization implementation, allowing you to control access to the admin site out of the box.
+Django includes a built-in admin site that can be used to manage the data in your application and security. This site is part of the default installation. As we'll see, it requires only a few lines of code to fully activate it. Django also includes a full authentication and authorization implementation, which you can use to control access to the admin site.
 
 ## Security and Django
 
-Because Django is designed to streamline the creation of data driven web applications by providing the normal functionality required by these types of sites, an authentication and authorization mechanism is provided out of the box. You are free to expand and modify the included system by incorporating third-party authenticators, multi-factor-authentication (MFA), or any other requirements your organization may have. We will explore the default implementation in this module.
+Django is designed to streamline the creation of data-driven web applications by providing the normal functionality that's required by these types of sites. Django provides an authentication and authorization mechanism, and you're free to expand and modify the included system. You can incorporate third-party authenticators, multifactor authentication, or any other requirements your organization might have. We'll explore the default implementation in this module.
 
-## Exploring user types
+## Explore user types
 
-Django has three main types of users by default - users, staff, and superusers. You have the ability to create your own types as well through groups or setting unique permissions.
+Django has three main types of users by default: users, staff, and superusers. You can create your own types by making groups or setting unique permissions.
 
 ### Access levels
 
-Access | user | staff | superuser
+Access | User | Staff | Superuser
 -------|------|-------|----------
-Admin site | no | yes | yes
-Manage data | no | no | yes
-Manage users | no | no | yes
+Admin site | No | Yes | Yes
+Manage data | No | No | Yes
+Manage users | No | No | Yes
 
-You will notice by default staff users have access to the admin site, but do not have access to modify any data. You can set individual permissions or create groups as needed to provide the appropriate levels of access.
+By default, staff have access to the admin site but not to modify any data. You can set individual permissions or create groups as needed to provide the appropriate levels of access.
 
-### Creating users
+### Create users
 
-In order to create users in Django, you must first create a superuser. This is accomplished through the command `createsuperuser` from **manage.py**. After creating a superuser, you can access the admin site to create any other users.
+To create users in Django, you must first create a superuser. Use the command `createsuperuser` from **manage.py** to create a superuser. After you create a superuser, you can access the admin site to create any other users.
 
 ## The admin site
 
-Creating a data-driven application means, by definition, working with data. Allowing internal business users access to modify the data as they see fit often requires quite a bit of code between security and the interface. Django provides an admin site that handles all of this for you!
+Creating a data-driven application means, by definition, working with data. Allowing internal business users access to modify the data as they see fit often requires quite a bit of code between security and the interface. Django provides an admin site that handles this process for you.
 
-Through the admin site, you can determine which users have access to what data. Users can then use the admin site to add new items, update existing items, and delete them, without needing to access the database directly or bypassing any of the validation rules you have implemented. Both the security model and interface is already created for you as part of the framework. All we need to do is activate our models so they appear in the site, which only requires a couple of lines of code.
+Through the admin site, you can determine which users have access to what data. Users can then use the admin site to add, update, and delete items. They don't need to access the database directly or bypass any of the validation rules you've implemented. The security model and interface are already created for you as part of the framework. All you need to do is activate your models so they appear in the site, which requires only a couple of lines of code.

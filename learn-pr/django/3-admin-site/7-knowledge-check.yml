@@ -17,22 +17,22 @@ quiz:
     choices:
     - content: 'python manage.py createadmin'
       isCorrect: false
-      explanation: 'This answer is not correct. This command was not used to create our first admin user.'
+      explanation: "Incorrect. This command wasn't used to create our first admin user."
     - content: 'python manage.py createsuperuser'
       isCorrect: true
-      explanation: 'This answer is correct. This command was used to create our first admin user.'
+      explanation: 'Correct. This command was used to create our first admin user.'
     - content: 'python manage.py createadminuser'
       isCorrect: false
-      explanation: 'This answer is not correct. This command was not used to create our first admin user.'
+      explanation: "Incorrect. This command wasn't used to create our first admin user."
   - content: 'What are the Django admin site permission levels set from?'
     choices:
     - content: 'number of users'
       isCorrect: false
-      explanation: 'This answer is not correct. Django does not set permissions based off of the number of users.'
+      explanation: "Incorrect. Django doesn't set permissions based off of the number of users."
     - content: 'models'
       isCorrect: true
-      explanation: 'This answer is correct. The Django admin feature sets permissions based off of app models.'
+      explanation: 'Correct. The Django admin feature sets permissions based off of app models.'
     - content: 'views'
       isCorrect: false
-      explanation: 'This answer is not correct. Django does not set permissions based off of views.'
+      explanation: "Incorrect. Django doesn't set permissions based off of views."
       
