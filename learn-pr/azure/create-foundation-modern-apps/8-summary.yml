@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-foundation-modern-apps.summary  
+title: Summary  
+metadata:
+  unitType: summary  
+  title: # user input: module title for browser tab and search results
+  description: # user input: a description for site search and SEO
+  ms.date: 3/17/2021  
+  author: {{githubUsername}}  
+  ms.author: {{msUser}}  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/summary.md)]

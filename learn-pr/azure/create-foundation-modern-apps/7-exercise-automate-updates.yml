@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-foundation-modern-apps.exercise-automate-updates
+title: Exercise - Automate updates with GitHub Actions
+metadata:
+  unitType: exercise
+  title: Exercise - Automate updates with GitHub Actions
+  description: Configure GitHub secrets. Configure yaml file. Push commits. Monitor results.
+  ms.date: 3/17/2021 
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 20
+content: |
+  [!include[](includes/exercise-automate-updates.md)]
