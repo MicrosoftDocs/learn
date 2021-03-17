@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.accelerate-storage-with-hpc-cache.hpc-cache-prereqs
+uid: learn.accelerate-storage-with-hpc-cache.exercise-example
 title: Enter exercise title  
 metadata:
   unitType: exercise  
-  title: # user input: module title for browser tab and search results
-  description: # user input: a description for site search and SEO
+  title: exercise example # user input: module title for browser tab and search results
+  description: exercise example # user input: a description for site search and SEO
   ms.date: 3/17/2021  
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: # user input: the estimate time to complete the unit
-content: |
-  [!include[](includes/3-hpc-cache-prereqs.md)]
+durationInMinutes: 0 # user input: the estimate time to complete the unit
+# content: |
+#  [!include[](includes/6-knowledge-check.yml)]
