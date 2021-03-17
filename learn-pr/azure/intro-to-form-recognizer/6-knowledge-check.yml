@@ -15,45 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the characteristics of OLTP workloads?'
+  - content: 'Form Recognizer can analyze and extract data from what type of files?'
     choices:
-    - content: "High numbers of transactions with large amounts of data"
+    - content: "PowerPoint files and MP4 videos"
       isCorrect: false
-      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transactions, but not large amounts of data."
-    - content: "Business intelligence and analytical workloads"
-      isCorrect: false
-      explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
-    - content: "Time series data"
-      isCorrect: false
-      explanation: "Incorrect. Time series data is one of many data types usable in OLTP workloads."
-    - content: "High numbers of transactions with low amounts of data"
+      explanation: "Incorrect. Form Recognizer can analyze some types of documents, but not PowerPoint files or videos."
+    - content: "JPG and PNG images, and PDF and TIFF documents."
       isCorrect: true
-      explanation: "Correct. OLTP workloads tend to have low amounts of data, with a high number of transactions, like text messages or purchasing items online."
-  - content: 'Why do multi-tenant applications provide massive cost savings?'
+      explanation: "Correct. Form Recognizer can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards."
+    - content: "CSV files"
+      isCorrect: false
+      explanation: "Incorrect. CSV documents aren't able to be parsed by Form Recognizer, but images and documents can be."
+  - content: 'What type of data does the prebuilt Invoice Model return?'
     choices:
-    - content: "OLAP workloads involve low amounts of data"
+    - content: "CSV data, with the extracted information separated by commas."
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications usually have OLTP workloads, with large numbers of tenants."
-    - content: "The combined workloads of multiple tenants is low"
+      explanation: "Incorrect. Form Recognizer uses standard JSON formatting that programming languages can readily use."
+    - content: "Image data, with the extracted information highlighted by bounding boxes"
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications don't necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
-    - content: "Many customers share resources."
+      explanation: "Incorrect. While Form Recognizer can return bounding box information, the data is returned in a format that programming languages can readily use."
+    - content: "JSON formatting"
       isCorrect: true
-      explanation: "Correct. Multi-tenant applications allow for high numbers of users sharing resources, which can provide savings per user."
-    - content: "Recent cloud advances in storing large amounts of data."
-      isCorrect: false
-      explanation: "Incorrect. While the cost of cloud storage has fallen, there are other resources other than storage to take into account."
-  - content: 'What is a benefit of sharding?'
+      explanation: "Correct. As programming languages can readily use JSON formatting, Form Recognizer returns the extracted information in standard JSON formatting so the data is easier to work with."
+  - content: 'What is a benefit of creating a custom model?'
     choices:
-    - content: "OLAP workloads only need to access a single node to run queries"
-      isCorrect: false
-      explanation: "Incorrect. Sharding can provide extra performance to OLAP workloads by combining the resources of multiple nodes, which reduces latency."
-    - content: "Sharding allows efficient distribution of your data to multiple servers, allowing a level of performance that is impossible to achieve on a single server."
+    - content: "Custom models can be tuned to your specific form and data needs, allowing more accurate analysis and extraction of data."
       isCorrect: true
-      explanation: "Correct. Sharding allows your data to be distributed among nodes, which can leverage more resources than a single node."
-    - content: "Queries can be combined into a single, master query."
+      explanation: "Correct. Custom models can be made with as little as five examples, and tuned to your specific needs."
+    - content: "Custom models apply Optical Character Recognition (OCR), but prebuilt models don't."
       isCorrect: false
-      explanation: "Incorrect. Sharding allows for intelligent distribution of data, not combining queries."
-    - content: "Sharding allows applications to directly query worker nodes, removing the need for a coordinator node."
+      explanation: "Incorrect. Both custom models and prebuilt models use OCR."
+    - content: "Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form."
       isCorrect: false
-      explanation: "Incorrect. When sharding has distributed data to worker nodes, applications can't directly connect to worker nodes. Queries are routed through the coordinator node."
+      explanation: "Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards."
