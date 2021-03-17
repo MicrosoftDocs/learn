@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.integrate-openapi-enabled-web-api-with-apim.2-publish-web-api-to-azure-app-service
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.3-publish-web-api-to-azure-app-service
 title: Publish Open API-enabled Web API to Azure App Service
 metadata:
   title: Publish Open API-enabled Web API to Azure App Service
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-publish-web-api-to-azure-app-service.md)]
+  [!include[](includes/3-publish-web-api-to-azure-app-service.md)]

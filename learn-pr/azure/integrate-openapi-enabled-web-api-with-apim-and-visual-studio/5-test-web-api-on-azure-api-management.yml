@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.integrate-openapi-enabled-web-api-with-apim.4-test-web-api-on-azure-api-management
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5-test-web-api-on-azure-api-management
 title: Test API on Azure API Management
 metadata:
   title: Test API on Azure API Management
@@ -12,6 +12,6 @@ metadata:
   zone_pivot_groups: 
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-test-web-api-on-azure-api-management.md)]
+  [!include[](includes/5-test-web-api-on-azure-api-management.md)]
 
 

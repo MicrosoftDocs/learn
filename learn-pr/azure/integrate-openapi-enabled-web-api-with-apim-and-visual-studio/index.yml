@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio
+title: Integrate Open API-enabled Web API with Azure API Management through Visual Studio
+summary: Learn how to add an Open API-enabled Web API application to Azure API Management through Visual Studio.
+metadata:
+  title: Integrate Open API-enabled Web API with Azure API Management
+  description: Learn how to add an Open API-enabled Web API application to Azure API Management through Visual Studio.
+  ms.date: 03/24/2021
+  author: justinyoo
+  ms.author: juyoo
+  ms.topic: interactive-tutorial  
+  ms.prod: learning-azure
+abstract: |
+  In this module, you will:
+  - Add an Open API-enabled Web API application to Azure API Management through Visual Studio
+prerequisites: |
+  - Experience developing basic ASP.NET Core Web API apps
+  - Experience activating the Open API document on a Web API app, using Swashbuckle
+iconUrl: /learn/achievements/integrate-openapi-enabled-web-api-with-apim-and-visual-studio.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-api-management
+- aspnet-core
+- dotnet
+- dotnet-core
+units:
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.1-introduction
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.2-activate-openapi-to-web-api-using-swashbuckle
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.3-publish-web-api-to-azure-app-service
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.4-integrate-web-api-with-azure-api-management
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5-test-web-api-on-azure-api-management
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-knowledge-check
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.7-summary
+badge:
+  uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.badge
