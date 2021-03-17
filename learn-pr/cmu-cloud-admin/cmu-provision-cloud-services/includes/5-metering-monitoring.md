@@ -28,7 +28,7 @@ _Figure 2.10: The Azure Cost Management portal<sup>[1][^1]</sup>._
 
 **Cost analysis** provides tools for analyzing costs and spotting patterns, trends, and anomalies. Predefined views are provided to get users up and running quickly examining accumulated costs and cost forecasts. Customized views can also be created.
 
-**Budgeting** permits users to establish targets or limits that can subsequently be used to drive organizational accountability. In addition to providing charts and graphs comparing spends to budget targets, Azure Cost Management can be configured to generate email alerts when budget thresholds are reached -- for example, when the spend on a resource or set of resources reaches 90% of a \$5,000 per-month allocation.
+**Budgeting** permits users to establish targets or limits that can subsequently be used to drive organizational accountability. In addition to providing charts and graphs comparing spends to budget targets, Azure Cost Management can be configured to generate email alerts when budget thresholds are reached for example, when the spend on a resource or set of resources reaches 90% of a \$5,000 per-month allocation.
 
 **Recommendations** help identify instances in which current resource allocations (and therefore costs) exceed what is needed to accomplish the task at hand. For example, if Azure determines that a lower database service tier would be adequate based on your usage patterns to date, it might recommend that you switch to a lower tier in order to reduce cost.
 
