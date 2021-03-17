@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Costs and security only"
       isCorrect: false
-      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
-    - content: "High availability, security, performance, operational excellence, and cost"
+      explanation: "Azure Advisor provides recommendations on reliability, security, performance, operational excellence, and cost."
+    - content: "Reliability, security, performance, operational excellence, and cost"
       isCorrect: true
-      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
-    - content: "High availability, performance, and cost"
+      explanation: "Azure Advisor provides recommendations on reliability, security, performance, operational excellence, and cost."
+    - content: "Reliability, performance, and cost"
       isCorrect: false
-      explanation: "Azure Advisor provides recommendations on high availability, security, performance, operational excellence, and cost."
+      explanation: "Azure Advisor provides recommendations on reliability, security, performance, operational excellence, and cost."
   - content: "After you select an Advisor recommendation, you can choose to _________."
     choices:
     - content: "Postpone the recommendation and deal with it later"

@@ -121,7 +121,7 @@ src/
     main.go
 ```
 
-We'll use this code for the `$GOPATH/src/helloword/main.go` file:
+We'll use this code for the `$GOPATH/src/helloworld/main.go` file:
 
 ```go
 package main
