@@ -14,7 +14,7 @@ A partition key provides a way to route data for a logical partition and is a pr
 
 :::image type="content" source="../media/container-partition-key.png" alt-text="Diagram that shows an example where the partition key is username." border="false":::
 
-## Avoiding hot partitions
+## Avoid hot partitions
 
 When modeling data for Azure Cosmos DB it is critically important the partition key chosen results in an even distribution of data and requests across partitions in your container. This is especially true when containers grow very large. If the design for a NoSQL database is not tested under load during development, a poor choice for partition key may not be revealed until the application is in production and significant data has been written. When data is not partitioned correctly, it can result in what is called "hot partitions" and can occur on both storage as well as throughput, preventing your database from being able to scale.
 
@@ -52,7 +52,7 @@ However a query that filtered on a different property, such as favoriteColor wou
 
 :::image type="content" source="../media/cross-partition-query,png.png" alt-text="Diagram that shows a cross partition query for favorite color." border="false":::
 
-## Choosing partition key for customers
+## Choose partition key for customers
 
 Now that we have all this new knowledge about partitioning in Azure Cosmos DB, we can now decide on a partition key for our customer data. As we covered earlier there are three operations we perform on customers: create a customer, update a customer, and retrieve a customer. In this case we will retrieve the customer by it's *id* and since that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
 
