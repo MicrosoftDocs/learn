@@ -9,6 +9,9 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target-activity: DocsExp–388394–A/B–Learn–AzureFundamentals–VideoIntro–FY21Q3
+  adobe-target-experience: Experience A
+  adobe-target-content: ./az-900-describe-cloud-concepts
 title: "Azure Fundamentals part 2: Describe core Azure services"
 summary: |
   After completing this learning path, you'll be able to:
@@ -61,9 +64,6 @@ summary: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-video:
-  title: "Azure Fundamentals video: Describe core Azure services"
-  url: https://www.microsoft.com/videoplayer/embed/RE4M4X7
 iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
 levels:
 - beginner
