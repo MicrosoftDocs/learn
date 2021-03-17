@@ -1,21 +1,23 @@
-Events are actions which can occur in our application but you don't necessary know when. For example, if you have a button on a page you know it's likely the user will click on it, but the timing is unknown. Handling events is a key component to creating any web application. You will explore how Vue.js allows you to manage events.
+In an application, events are actions that can occur, but you don't necessarily know when. For example, if you have a button on a page, you know the user will likely select it. But you don't know the timing. 
+
+You need to know how to handle events to create any web application. Here you'll explore how to manage events by using Vue.js.
 
 ## v-on directive and @
 
-Vue.js provides a directive called `v-on` which can be bound to any event, such as `v-on:click`. However, since handling events is a core task Vue.js also provides the `@` shortcut for any event. To bind a click event you can use `@click` instead.
+Vue.js provides a directive called `v-on` that you can bind to any event, such as `v-on:click`. Because handling events is a core task, Vue.js also provides the `@` shortcut for any event. So to bind a click event, you can use the `@click` shortcut.
 
 ## Event handlers
 
-You can create event handlers by adding functions to the `methods` field in a Vue application or component. `methods` is just like `data()`, only instead of returning state objects it maintains a list of available functions for your application. You can then reference these in your HTML in the same way you would reference other JavaScript functions.
+You can create event handlers by adding functions to the `methods` field in a Vue application or component. The `methods` field is like `data()`, but instead of returning state objects, it maintains a list of available functions for your application. You can reference these functions in your HTML in the same way you reference other JavaScript functions.
 
 > [!NOTE]
-> The key reason to add functions to the `methods` field is the functions can access any registered data.
+> The key reason to add functions to the `methods` field is that functions can access any registered data.
 
-When adding a method to a Vue app or component, `this` points to the active instance. Any data available to the active instance, such as `name` in our example below, is accessible from `this`.
+When you add a method to a Vue app or component, `this` points to the active instance. Any data available to the active instance, such as `name` in the following example, is accessible from `this`.
 
-### Creating an event handler
+### Create an event handler
 
-To create a method, which would display the value of the `name` data property when called, you could add it like so:
+To create a method that displays the value of the `name` data property when it's called, you could follow this example:
 
 ```javascript
 const app = Vue.createApp({
@@ -33,11 +35,11 @@ const app = Vue.createApp({
 });
 ```
 
-As `displayName()` has been added to the `methods` property and it's now accessible to the template and is ready to be bound to an event.
+Because `displayName()` is added to the `methods` property, it's accessible to the template and can be bound to an event.
 
 ### Bind the event handler to an event
 
-You can bind the `displayName()` function to the `click` event, using the shorthand `@click`. When the user then clicks the button, the `displayName()` function is invoked.
+You can bind the `displayName()` function to the `click` event by using the shorthand `@click`. When the user selects the button, the `displayName()` function is invoked.
 
 ```html
 <button type="button" @click="displayName">Display name</button>

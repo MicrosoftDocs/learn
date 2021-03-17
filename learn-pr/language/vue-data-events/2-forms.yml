@@ -2,7 +2,7 @@
 uid: learn.language.vue-data-events.2-forms
 metadata:
   title: Work with forms
-  description: Let's explore how to bind Vue.js data to a form.
+  description: Explore how to bind Vue.js data to a form.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
