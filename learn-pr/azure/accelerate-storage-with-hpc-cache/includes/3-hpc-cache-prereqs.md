@@ -1,39 +1,46 @@
+There are a few pre-requisites that need to be met prior to setting up your Azure HPC Cache.
 
-# What is Azure HPC Cache?
+## DNS and Network
 
-You are a storage administrator at a digital animation studio.
-A fast-approaching deadline has you looking for ways to accelerate storage so you can produce movie scenes faster.
-Your first goal is to determine if a caching service like Azure HPC Cache can help you render scenes faster.
-You’re using Linux-based clients to access NFS (POSIX) storage.
+Azure HPC Cache has two network requirements - a custom DNS server and a dedicated subnet.
 
-# Azure HPC Cache
+### DNS
 
-Azure HPC Cache is a managed service that accelerates file-based storage for compute-intensive workloads.
-Caching data close to compute clients allows those clients to run more efficiently and complete high-performance tasks faster.
+If you plan to use servers in your data center, then you’ll need to configure a DNS server so Azure resources can resolve your internal storage server names.
 
-Rather than waiting for responses from either slower storage or across high-latency WAN links, compute clients can quickly access the needed data.
+If you plan to use Azure-based storage like Azure NetApp Files or you plan to copy your data into Azure Blob, then you don’t need to configure this separate DNS server.
 
-When compute clients are waiting for storage responses, they aren’t computing. Compute cycles are wasted, and charges continue to be incurred when the data can’t get to the clients fast enough.
+In the Azure Portal:
 
-## How Azure HPC Cache works
+- Create the virtual network that will host the Azure HPC Cache.
+- Create the DNS server.
+- Add the DNS server to the cache's virtual network.
 
-Instead of Azure compute clients accessing slower storage directly, clients access Azure HPC Cache for faster access to data.
-Azure HPC Cache reads from customer storage and stores frequently-accessed data and stores it in memory and high-speed disks.
+Follow these steps to add the DNS server to the virtual network in the Azure portal:
 
-Azure HPC Cache can be configured to access network-attached storage (NAS) in a customer’s data center.
-When clients need to access data, they request it from Azure HPC Cache which reads it from the NAS.
-When multiple clients read the same data, the cache supplies it faster than NAS.
+1. Open the virtual network in the Azure portal.
+1. Choose DNS servers from the Settings menu in the sidebar.
+1. Select Custom
+1. Enter the DNS server's IP address in the field.
 
-## When to use Azure HPC Cache
+### Network
 
-Azure HPC Cache works best for hundreds or thousands of compute clients needing to read terabytes of the same data from file-based NFS workloads that reside on NAS filers like NetApp or EMC Isilon.
+The cache needs to be in its own, dedicated subnet. The cache manages its own IP addresses to provide high availability. To ensure there are no IP address conflicts, the cache must be in its own subnet with a range of at least 64 IP addresses.
 
-A few ideal use cases include:
+If you’re running multiple caches, each needs its own, dedicate subnet.
 
-- Media and entertainment rendering videos
-- Financial services running financial simulations
-- Life sciences comparing genomic sequences (DNA)
+It’s highly recommended that a high-speed network connection like an ExpressRoute be in place between Azure and the data center where the storage is.
 
-In each of these cases, customers are using thousands of compute cores to run workloads against a single, static data set using NFS.
+Different storage servers use different ports to access data. Use a tool like rpcinfo to identify what TCP and UDP ports are used on your storage server. Commonly used ports include 111, 2049, 4045, 4046, and 4047. Ensure firewall rules enable traffic from these ports to your internal network.
 
-Azure HPC Cache would not be the best fit in an environment where the data set is constantly changing, there are only a few clients accessing the data, clients are accessing completely different data sets, over 20% of the storage calls are write requests, the data resides on storage other than POSIX storage like NetApp or EMC Isilon, or when SMB is the primary storage protocol.
+## Azure Permissions
+
+The cache instance needs to be able to create virtual network interfaces (NICs). The user who creates the cache must have sufficient privileges in the subscription to create NICs.
+
+## NFS Storage Permissions
+
+The cache needs to have root permissions to perform the read, write, and metadata operations on storage. Configure your storage target to allow root access to the Azure HPC Cache.
+
+- Confirm that no_root_squash is enabled otherwise root access from the cache will be blocked.
+- Examine export policies to ensure there are no restrictions on root access.
+- Make sure the cache has access to the lowest level of the export – parent directories, not subdirectories.

@@ -1,12 +1,9 @@
-
-# What is Azure HPC Cache?
-
 You are a storage administrator at a digital animation studio.
 A fast-approaching deadline has you looking for ways to accelerate storage so you can produce movie scenes faster.
 Your first goal is to determine if a caching service like Azure HPC Cache can help you render scenes faster.
 You’re using Linux-based clients to access NFS (POSIX) storage.
 
-# Azure HPC Cache
+## Azure HPC Cache
 
 Azure HPC Cache is a managed service that accelerates file-based storage for compute-intensive workloads.
 Caching data close to compute clients allows those clients to run more efficiently and complete high-performance tasks faster.

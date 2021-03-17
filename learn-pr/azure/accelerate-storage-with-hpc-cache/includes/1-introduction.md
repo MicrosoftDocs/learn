@@ -1,5 +1,3 @@
-# Introduction
-
 Azure HPC Cache is a managed service that accelerates NFS storage so HPC workloads can finish faster. Caching data close to HPC clients allows the clients to run more efficiently and complete high-performance tasks faster.
 
 Suppose you are a storage administrator at a digital animation studio. The studio is releasing a movie soon and there are still several changes and reviews that the director needs to make. You are looking for ways to accelerate storage so the studio can produce movie scenes faster for the director’s approval.

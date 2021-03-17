@@ -7,8 +7,9 @@
     Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
--->
 TODO: restate the scenario problem
+-->
+You are a storage administrator at a digital animation studio which is releasing a movie soon. You need to accelerate storage so the studio can produce movie scenes faster.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
