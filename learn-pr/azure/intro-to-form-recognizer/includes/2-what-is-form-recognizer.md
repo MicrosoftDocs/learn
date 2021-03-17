@@ -1,38 +1,19 @@
-Hyperscale works by splitting up your database across a server group in the cloud. Your database is split between servers, known as nodes, which Hyperscale coordinates for you.
+Azure Form Recognizer is a cognitive service that extracts data from images and documents using machine learning. Form Recognizer can analyze and extract data from various types of documents, including forms, tables, written and typed documents, receipts, invoices, and business cards.
 
-## What is a node?
+Extracting data manually from large numbers of forms is difficult. Using a service, such as Form Recognizer, you can automate this process and help lower errors for data entry, save time, and ensure easily accessible data.
 
-A node is an instance of a database server. Hyperscale creates and coordinates nodes across the cloud, multiplying the available storage and compute. Your database is divided between nodes, so multiple CPUs work in parallel on your queries, providing faster performance.
+Form Recognizer is a service available by REST API and SDK that runs on Azure. The service analyzes JPG and PNG images, and PDF or TIFF documents, and extracts the key data you need, and compiles the data in JSON format.
 
-By leveraging multiple nodes, instead of a single node, you can scale out, otherwise known as horizontal scaling.
+## The services
 
-![Hyperscale nodes.](../media/2a-nodes.png)
+There are three services with different functions available through Form Recognizer:
 
-We'll start with three nodes for our payment app. Later, we'll horizontally scale by creating extra nodes.
+**Layout API** extracts text, tables, selection marks, and structure information from documents and returns them in an organized structured JSON response. Documents can be from a variety of formats and quality, including phone-captured images, scanned documents, and PDFs.
 
-## What is a shard?
+![Example of Layout API with selection marks, text, and tables identified and represented in JSON format.](../media/layout-tool-example.jpeg)
 
-A shard is a portion of a database. When Hyperscale splits up your database into portions, these are known as shards. The shards are split between different nodes.
+**Pre-built models** analyze three unique form types: invoices, sales receipts, and business cards. This service combines Optical Character Recognition (OCR) capabilities with deep learning models that understand invoice, receipt, and business card information to extract key information in multiple languages.
 
-Shards bring efficiency to scale, intelligently distributing your data across nodes.
+**Custom models** are created by uploading five or more sample forms. Form recognizer then trains a custom model that can extract data tailored specifically to your forms. After you train a custom model, you can test and retrain it to reliably extract data from more forms according to your needs.
 
-## How do the nodes work together?
-
-Every server group has a coordinator node and multiple worker nodes. The coordinator node knows how the data has been split up between the worker nodes, so it coordinates queries to the right nodes. Here’s how it works:
-
-1. Applications send their queries to the coordinator node
-2. The coordinator node relays queries to the worker nodes with the relevant shards
-3. Each node queries the table rows it holds within its shard
-4. The coordinator node accumulates their results
-
-![Hyperscale distribute queries.](../media/2c-distribute.gif)
-
-Applications can't connect directly to worker nodes. Instead, nodes working together allows extremely large databases to be stored and queried with a level of performance that is impossible to achieve on a single server.
-
-For our payment app, the server group will have one coordinator node and two worker nodes. We'll shard our data, storing it on the two worker nodes.
-
-### How does Hyperscale keep track of data?
-
-Hyperscale distributes shards to different worker nodes, and metadata tables keep track of which shards are stored where.
-
-Using the metadata tables, the coordinator node either routes queries to a single worker node, or parallelizes the query across several nodes. Hyperscale checks if the data lives on a single node or multiple nodes.
+Your small business may start out by using pre-built models to analyze sales receipts and invoices, saving yourself time from doing all of the data entry manually. Later, you may look to a custom model for regulary receipts and invoices to help fully automate your data entry with a high degree of accuracy.
