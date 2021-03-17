@@ -231,7 +231,7 @@ In the previous task, you learned how to create a template with a single resourc
      }
    }
 
-   resource appService 'Microsoft.Web/sites@2020-06-01' = {
+   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
      name: 'toy-product-launch-1'
      location: 'eastus'
      properties: {

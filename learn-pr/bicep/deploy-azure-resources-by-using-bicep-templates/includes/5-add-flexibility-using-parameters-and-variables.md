@@ -159,7 +159,7 @@ One way to implement these business requirements would be to use parameters to s
 First, we can specify a parameter that indicates whether the deployment is for a production or non-production environment:
 
 ```bicep
-@allowedValues([
+@allowed([
     'nonprod'
     'prod'
 ])

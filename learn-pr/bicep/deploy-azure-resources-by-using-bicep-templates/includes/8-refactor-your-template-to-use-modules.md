@@ -26,7 +26,33 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 1. Add the following content into the *appService.bicep* file:
 
    ```bicep
-   TODO
+   param location string
+   param appServiceAppName string
+   @allowed([
+     'nonprod'
+     'prod'
+   ])
+   param environmentType string
+   
+   var appServicePlanName = 'ToyLaunchPlan'
+   var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'S1'
+   
+   resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
+     name: appServicePlanName
+     location: location
+     sku: {
+       name: appServicePlanSkuName
+     }
+   }
+   
+   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
+     name: appServiceAppName
+     location: location
+     properties: {
+       serverFarmId: appServicePlan.id
+       httpsOnly: true
+     }
+   }
    ```
 
    Notice we have copied the parameters and variables from our *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
@@ -45,7 +71,9 @@ Now that we have a complete module to deploy our App Service resources, we can d
    module appService 'modules/appService.bicep' = {
        name: 'appService'
        params: {
-           TODO
+         location: location
+         appServiceAppName: appServiceAppName
+         environmentType: environmentType
        }
    }
    ```

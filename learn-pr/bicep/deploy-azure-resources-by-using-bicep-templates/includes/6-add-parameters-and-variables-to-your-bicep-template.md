@@ -58,7 +58,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
      }
    }
 
-   resource appService 'Microsoft.Web/sites@2020-06-01' = {
+   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
      name: appServiceAppName
      location: location
      properties: {
@@ -73,7 +73,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters you created in the previous task:
 
    ```bicep
-   @allowedValues([
+   @allowed([
     'nonprod'
     'prod'
    ])
@@ -114,7 +114,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
      }
    }
 
-   resource appService 'Microsoft.Web/sites@2020-06-01' = {
+   resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
      name: appServiceAppName
      location: location
      properties: {
@@ -123,6 +123,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
      }
    }
    ```
+
+   Notice we haven't parameterized everything. We've set some properties right in the resource definitions where we know these aren't going to change for our deployments.
 
 ### Deploy the updated Bicep template
 
