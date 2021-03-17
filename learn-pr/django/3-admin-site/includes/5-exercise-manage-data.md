@@ -16,7 +16,7 @@ As highlighted before, the admin site doesn't provide access to your data by def
 1. Save the file.
 1. Return to your browser, and refresh the page.
 
-   Notice you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**.
+   Notice that you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**.
 
     :::image type="content" source="../media/staff-user-display.png" alt-text="Screenshot showing the Site administration screen." lightbox="../media/staff-user-display.png":::
 
@@ -32,7 +32,7 @@ Let's create a new `Dog` to explore how the admin site functions for data.
 
     :::image type="content" source="../media/add-dog.png" alt-text="Screenshot showing the Add shelter screen." lightbox="../media/add-dog.png":::
 
-    Notice when you select the drop-down list for **Shelter**, no shelters are listed because we haven't created one.
+    Notice that when you select the drop-down list for **Shelter**, no shelters are listed because we haven't created one.
 
     > [!NOTE]
     > If you're continuing with a project you started earlier, you might see a shelter if you created one.

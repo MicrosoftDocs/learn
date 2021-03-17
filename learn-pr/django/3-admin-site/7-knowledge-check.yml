@@ -26,13 +26,13 @@ quiz:
       explanation: "Incorrect. This command wasn't used to create our first admin user."
   - content: 'What are the Django admin site permission levels set from?'
     choices:
-    - content: 'number of users'
+    - content: 'Number of users'
       isCorrect: false
       explanation: "Incorrect. Django doesn't set permissions based off of the number of users."
-    - content: 'models'
+    - content: 'Models'
       isCorrect: true
       explanation: 'Correct. The Django admin feature sets permissions based off of app models.'
-    - content: 'views'
+    - content: 'Views'
       isCorrect: false
       explanation: "Incorrect. Django doesn't set permissions based off of views."
       

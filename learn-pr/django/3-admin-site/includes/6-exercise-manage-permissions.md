@@ -32,7 +32,7 @@ Let's see the difference between a superuser and a staff user by signing in as a
     > [!NOTE]
     > If you forgot the password, you can sign in as your superuser and reset the password.
 
-   Notice the admin page only allows access to **Dogs**.
+   Notice that the admin page only allows access to **Dogs**.
 
     :::image type="content" source="../media/staff-user-display.png" alt-text="Staff user page showing Dogs as the only administrative option." lightbox="../media/staff-user-display.png":::
 
