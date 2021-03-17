@@ -1,52 +1,32 @@
-In this exercise, we're going to create a Hyperscale instance using the Azure portal. Our server group will have:
+To use the Form Recognizer resource you first need an Azure subscription, which you can create for free, and a Form Recognizer resource. The resource provides you with an endpoint and key, with which you can access the Form Recognizer service through REST or by using the appropriate software development kit (SDK). SDKs are available in these languages:
 
-* One coordinator node, with 4 vCores and 0.5 TiB of storage
-* Two worker nodes, each with 4 vCores and 0.5 TiB of storage
+* .NET
+* Python
+* Java
+* Javascript
 
-For a total of 12 vCores and 1.5 TiB of storage.
+You can test the service using a free pricing tier, to determine if Form Recognizer is right for your organization. 
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+## Layout API
 
-1. Sign in to the Azure portal using your Azure account.
+Form Recognizer Layout API can extract text, selection marks, and table structures - the row and column numbers associated with the text - as well as their bounding box coordinates.
 
-    > [!div class="nextstepaction" target="_blank"]
-    > [Azure portal](https://portal.azure.com?azure-portal=true)
+![Layout API tables example.](../media/tables-example.jpeg)
 
-1. Next, select **Create a resource**, **Databases**, and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
+## Prebuilt Models
 
-    :::image type="content" source="../media/3a-select-postgres.png" alt-text="Select create database.":::
+Form Recognizer Pre-built models are available in four models: invoices, sales receipts, identifications, and business cards.
 
-1. Select **Create** in the **Hyperscale (Citus) server group** box.
+### Prebuilt Invoice Model
 
-    :::image type="content" source="../media/3a-hyper.png" alt-text="Select Hyperscale deployment.":::
+The Pre-built Invoice model extracts data from invoices in various formats and returns structured data. This model extracts key information such as invoice ID, customer and vendor details, shipping and billing information, the price totals, and tax amounts.
 
-    > The portal will display a PostgreSQL server configuration screen.
+The Invoice model is able to extract the full line item and its parts – description, amount, quantity, product ID, date, and more. Further, this model is designed to analyze and return all of the text and tables in structured data in order to automate the invoice process.
 
-1. On the **Basics** tab, enter the following information:  
+![Prebuilt invoice example.](../media/overview-invoices.jpeg)
 
-    |Parameter  |Value  |
-    |---------|---------|
-    |**Subscription**     |  Select **Free Trial** or **your existing subscription**       |
-    |**Resource group**     | Select **Create new** and name your resource group **Hyperscale**       |
-    |         **Server name** |  **Choose a unique name**, such as payment-server-demo  |
-    |**Location**| Use a region that's close to you, or leave as default |
-    |**Compute + storage**     |  Leave as default, we'll configure this in the next step      |
-    | **Admin username**| Citus will be selected by default |
-    | **Password/Confirm Password**|  Choose a password |
+### Prebuilt Receipt Model
 
-    1. Note the server name and password down for later use.
-    1. Select **Configure server group** in the **Compute + storage** options.
+This model is used to read English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, Great Britain, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different formats of receipts, in both scanned copies or phone images.
 
-    :::image type="content" source="../media/3c-form.png" alt-text="Configure Hyperscale form.":::
-
-1. Increase compute and storage if you want. Next, scroll to the bottom of the page and select the blue **Save** box.
-1. Select the **Networking** tab at the top of the page
-1. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
-
-    :::image type="content" source="../media/3d-firewall.png" alt-text="Configure Hyperscale firewall.":::
-
-1. Scroll to the bottom of the page and select the blue **Review + create** button.
-
-1. Select the blue **Create** button at the bottom of the page.
-
-Congratulations! Your Hyperscale server group is being deployed to Azure.
+![Prebuilt receipt example.](../media/overview-receipt.jpeg)
