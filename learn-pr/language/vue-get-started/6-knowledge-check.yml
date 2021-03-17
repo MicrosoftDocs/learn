@@ -27,23 +27,23 @@ quiz:
       explanation: "Correct. You don't need external tools or an external server to build a powerful single-page application in an HTML web browser. You can script the Vue application details within the HTML page, or you can link the page to a JavaScript file that contains the Vue application code."
   - content: Which of the following options represents the correct way to dynamically bind an attribute to an expression within an HTML interface?
     choices:
+    - content: "<img :src=''selected_prod_img'''>"
+      isCorrect: true
+      explanation: "Correct. Placing the data object name within curly braces *is* the correct way to tell Vue to print the data within an HTML tag. But you must use the v-bind directive to bind application data to an attribute for an HTML tag. Include a colon (`:`) between v-bind and the name of the attribute, or use the colon by itself as a form of Vue shorthand notation."
     - content: "<img v-bind src=''selected_prod_img'''>"
       isCorrect: false
       explanation: "Incorrect. The v-bind directive does dynamically bind an attribute to an expression, but a colon (`:`) must separate v-bind from the name of the attribute."
     - content: "<img src=''{{ selected_prod_img }}''>"
       isCorrect: false
       explanation: "Incorrect. Placing the data object name within curly braces *is* the correct way to tell Vue to print the data inside an HTML tag. But you must use the v-bind directive to bind application data to an attribute for an HTML tag." 
-    - content: "<img :src=''selected_prod_img'''>"
-      isCorrect: true
-      explanation: "Correct. Placing the data object name within curly braces *is* the correct way to tell Vue to print the data within an HTML tag. But you must use the v-bind directive to bind application data to an attribute for an HTML tag. Include a colon (`:`) between v-bind and the name of the attribute, or use the colon by itself as a form of Vue shorthand notation."
   - content: Which one of the following statements correctly describes how Vue.js lets you manage style and class bindings?
     choices:
     - content: "Vue allows you to use shorthand notation for `v-on` directives. But you can't use shorthand for `v-bind` when you apply class and style bindings."
       isCorrect: false
       explanation: "Incorrect. Vue allows you to use shorthand notation for `v-on` directives and all `v-bind` directives."
-    - content: "To add several style properties to an HTML element, you need to apply `v-bind` directives by using separate in-line styles."
-      isCorrect: false
-      explanation: Incorrect. You can bind to an entire class of styles, including properties that are defined in your application.
     - content: You can apply multiple style and class bindings simultaneously on one HTML element.
       isCorrect: true
       explanation: Correct! Well done.
+    - content: "To add several style properties to an HTML element, you need to apply `v-bind` directives by using separate in-line styles."
+      isCorrect: false
+      explanation: Incorrect. You can bind to an entire class of styles, including properties that are defined in your application.
