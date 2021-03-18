@@ -57,6 +57,6 @@ Configure PingFederate with Azure AD Connect to set up federation with the domai
 After you choose to set up federation by using PingFederate in AD Connect, you're asked to verify the domain you want to federate. Select the domain from the drop-down menu.
 
 > [!div class="mx-imgBorder"]
-> ![Azure AD Connect interface showing the domain you want to create a feration with](../media/pingfederate-domain.png)
+> ![Azure AD Connect interface showing the domain you want to create a federation with](../media/pingfederate-domain.png)
 
 Configure PingFederate as the federation server for each federated Azure domain. Then select Export Settings to share this information with your PingFederate administrator. The federation server administrator updates the configuration and provides the PingFederate server URL and port number so that Azure AD Connect can verify the metadata settings.
