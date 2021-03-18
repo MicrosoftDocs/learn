@@ -4,7 +4,7 @@ To help streamline the creation of data-driven applications, Django provides gen
 
 In this module, we'll explore generic views and forms, and how we can use a common library to enhance the display of our forms.
 
-## In this module, you'll learn how to:
+In this module, you'll learn how to:
 
 - Use generic views.
 - Create Django forms.

@@ -10,9 +10,9 @@ Django includes two generic views for displaying data: `DetailView` and `ListVie
 
 ## DetailView for item detail
 
-The generic view `DetailView` is used to display a detail page for an item. `DetailView` retrieves the item for the specified `model` by the primary key and passes it to the template. You can set the `template_name` to the name of the template to be used. The default is `<model>_detail.html`. Finally, we can set `context_object_name` to the name of the variable we want to use in our template.
+The generic view `DetailView` is used to display a detail page for an item. `DetailView` retrieves the item for the specified `model` by the primary key and passes it to the template. You can set `template_name` to the name of the template to be used. The default is `<model>_detail.html`. Finally, we can set `context_object_name` to the name of the variable we want to use in our template.
 
-Creating a detail view by using the generic view for a Dog could use the following code:
+To create a detail view by using the generic view for a dog, you could use the following code:
 
 ```python
 from . import models
@@ -36,7 +36,7 @@ The generic view `ListView` behaves in a similar fashion to `DetailView`. You ca
 
 The primary difference is that `ListView` is designed to work with any form of a query that returns multiple items. As a result, you must override the `get_queryset` function. The function`get_queryset` is called by the generic view system to retrieve the items from the database, which allows you to order or filter your items as needed.
 
-To create a view to display the list of all shelters by using the generic `ListView`, you might use the following code:
+To create a view to display the list of all shelters by using the generic view `ListView`, you could use the following code:
 
 ```python
 from . import models
