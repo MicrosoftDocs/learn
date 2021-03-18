@@ -1,13 +1,13 @@
 
-Your customers have asked you to be able to reach the API using a Fully Qualified Domain Name (FQDN) instead of an IP address, and to make sure that the FQDN does not change in case the container needs to be recreated. You can use init containers to provide this functionality. Some times you need to perform certain tasks before the actual application starts. These tasks could include many different things such as configuring certain services to accept inbound connectivity from the container, or injecting secrets from an Azure Key Vault into a volume. In this unit you will use an init container to update DNS so that customers can access the API using a domain name, instead of an IP address.
+Your customers have asked you to be able to reach the API using a Fully Qualified Domain Name (FQDN) instead of an IP address, and to make sure that the FQDN does not change in case the container needs to be recreated. You can use init containers to provide this functionality. Some times you need to perform certain tasks before the actual application starts. These tasks could include many different things such as configuring certain services to accept inbound connectivity from the container, or injecting secrets from an Azure Key Vault into a volume. In this unit, you will use an init container to update DNS so that customers can access the API using a domain name, instead of an IP address.
 
-An initialization container is one of the practical uses of the [Sidecar Pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar) that you saw in a previous unit. However, the initialization container will be run before any other container in the container group is started. Hence, you can implement different concepts in init containers such as prerequisite validation or initialization tasks.
+An initialization container is one of the practical uses of the Sidecar Pattern that you saw in a previous unit. However, the initialization container will be run before any other container in the container group is started. Hence, you can implement different concepts in init containers such as prerequisite validation or initialization tasks.
 
 The actual application containers in your Azure Container instance will only be started when any defined init containers have completed their execution successfully.
 
-ACI Init Containers are the same concept as [Kubernetes Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/).
+ACI Init Containers are the same concept as Kubernetes Init Containers.
 
-![Init container](../media/5-init-container.png)
+![Diagram that shows the topology of an ACI Init container.](../media/5-init-container.png)
 
 In this unit, the init container will retrieve the IP address allocated to the Azure Container Instance, and it will update the DNS entry that the API clients use to reach it. The init container and the application container share the same network stack, so the IP address visible to the init container will be the same that the application containers will use.
 
@@ -22,7 +22,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
     sp_password=$(echo $new_sp | jq -r '.password')
     ```
     
-1. In this step you will create the Azure private DNS zone that will be used by application clients to access the Azure Container Instance and associate it to the Virtual Network. This DNS zone is different from the zone created in the previous task for private link, which was used by the Azure Container Instance to access the Azure SQL Database:
+1. In this step, you will create the Azure private DNS zone that will be used by application clients to access the Azure Container Instance and associate it to the Virtual Network. This DNS zone is different from the zone created in the previous task for private link, which was used by the Azure Container Instance to access the Azure SQL Database:
 
     ```azurecli
     # Create Azure DNS private zone and records
@@ -169,7 +169,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
     az container create -g $rg --file $aci_yaml_file
     ```
     
-1. You can use the SQL API endpoints to test that the container is now reachable. In this case you are using the domain name to access the container, and not its IP address:
+1. You can use the SQL API endpoints to test that the container is now reachable. In this case, you are using the domain name to access the container, and not its IP address:
 
     ```azurecli
     # Test
