@@ -1,4 +1,4 @@
-We shared the narrative for Tailwind Traders in the Getting Started module and other Learn modules for the Cloud Adoption Framework. The central operations and infrastructure team has successfully migrated a number of workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
+We shared the narrative for Tailwind Traders in the Getting Started module and other Learn modules for the Cloud Adoption Framework. The central operations and infrastructure team has successfully migrated some workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
 
 ## Tailwind Traders' balancing act
 
@@ -7,13 +7,13 @@ Like most customers, Tailwind Traders is attempting to balance two competing bus
 :::image type="content" source="../media/balance.png" alt-text="Finding the balance between transformation and risk mitigation." border="false":::
 *Figure 1: Finding the balance between transformation and risk mitigation.*
 
-In the Getting Started module, we shared a few of the objectives from the Tailwind Traders cloud adoption plan. Most relevant to this module is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
+In the Getting Started module, we shared a few of the objectives from the Tailwind Traders cloud adoption plan. Most relevant to this module is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts dev/test environments and other preproduction innovations from the retail innovation team.
 
 Their effort is driving digital transformation and pushing the boundaries of what the business can do in the cloud. They've migrated low-risk workloads to the cloud. They've also started using cloud native technologies to innovate and create new solutions that couldn't be delivered on-premises. The value of the cloud is proving out. As their adoption plans progress, the need for balance is becoming more apparent.
 
 ## Governance needs
 
-To balance the digital transformation efforts, the central operations/infrastructure team would needs to find a way to meet the following basic governance needs:
+To balance the digital transformation efforts, the central operations/infrastructure team needs to find a way to meet the following basic governance needs:
 
 - Maintain compliance.
 - Create better cost visibility and control.
@@ -24,7 +24,7 @@ Before adopting the cloud, governance was delivered by a series of manual proces
 
 ## Blocked by current policies
 
-Tailwind Traders has a current policy that states, "Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets." The chief information officer (CIO) is working to change this policy, but the central operations and infrastructure team must perform the following controls before she's comfortable with approving the changes:
+Tailwind Traders has a current policy that states, "Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets." The chief information officer (CIO) is working to change this policy, but the central operations and infrastructure team must perform the following controls before the CIO is comfortable with approving the changes:
 
 - Control costs to deliver on the promised savings as adoption scales.
 - Adhere to security and third-party compliance requirements.
