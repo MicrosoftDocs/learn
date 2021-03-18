@@ -4,7 +4,7 @@ title: Publish Open API-enabled Web API to Azure App Service
 metadata:
   title: Publish Open API-enabled Web API to Azure App Service
   description: You can publish an Open API-enabled Web API app to an Azure App Service instance.
-  ms.date: 03/24/2021
+  ms.date: 03/19/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial

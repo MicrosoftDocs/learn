@@ -4,7 +4,7 @@ title: Integrate Open API-enabled Web API with Azure API Management
 metadata:
   title: Integrate Open API-enabled Web API with Azure API Management
   description: You can integrate an Open API-enabled Web API published to Azure App Service with Azure API Management instance
-  ms.date: 03/24/2021
+  ms.date: 03/19/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial

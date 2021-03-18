@@ -9,7 +9,7 @@ metadata:
     * Publish an Open API-enabled Web API app to Azure App Service through Visual Studio,
     * Integrate the Web API with Azure API Management through Visual Studio, and
     * Test the API on Azure API Management
-  ms.date: 03/24/2021
+  ms.date: 03/19/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial
