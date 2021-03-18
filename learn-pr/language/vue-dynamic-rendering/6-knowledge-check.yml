@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers.**
+  Choose the best response for each question, and then select **Check your answers**.
 quiz:
   questions:
   - content: What directive do you use to iterate through a list of items?
@@ -21,21 +21,21 @@ quiz:
       explanation: "`v-for` allows you to iterate through an array of items."
     - content: "`v-show`"
       isCorrect: false
-      explanation: "`v-show` allows you to toggle display, but not iterate through items."
+      explanation: "`v-show` allows you to toggle the display, but not iterate through items."
     - content: "`v-else`"
       isCorrect: false
       explanation: "`v-else` is used with v-if to add Boolean logic."
     - content: "`v-if`"
       isCorrect: false
       explanation: "`v-if` is used to add Boolean logic."
-  - content: What directive do you use to determine if you should display data?
+  - content: What directive do you use to determine whether you should display data?
     choices:
     - content: "`v-for`"
       isCorrect: false
       explanation: "`v-for` allows you to iterate through an array of items."
     - content: "`v-show`"
       isCorrect: true
-      explanation: "`v-show` allows you to toggle display."
+      explanation: "`v-show` allows you to toggle the display."
     - content: "`v-bind`"
       isCorrect: false
       explanation: "`v-bind` allows you to bind attribute values."
