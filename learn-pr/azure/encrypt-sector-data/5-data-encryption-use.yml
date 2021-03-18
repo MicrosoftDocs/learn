@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.encrypt-sector-data.5-data-encryption-use
-title: Data encryption in use
+title: Protect data while in use
 metadata:
-  title: Data encryption in use
+  title: Protect data while in use
   description: Explanation of the available options for encrypting data while it's being processed in the cloud. The two techniques addressed are Azure confidential computing and homomorphic encryption.
   ms.date: 02/02/2021
   author: Adriamen
