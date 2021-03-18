@@ -6,14 +6,14 @@ It's tempting to build a plan that accounts for all workloads and every asset ne
 
 Instead, customize and test your plan using a small set of well-defined workloads to create your first wave of cloud adoption. In this unit, we'll walk through how Tailwind Traders build out their first adoption plan. That initial plan was developing using the following steps:
 
-1) Add your first wave of workloads
-2) Associate dependent assets with each workload
-3) Prioritize workloads
-4) Evaluate migration tasks as a team
-5) Estimate tasks & attempt to complete them in the estimated time
-6) Test the deployed workloads
-7) Retrospective to refine processes and estimates
-8) Apply your initial learning to a more comprehensive adoption plan
+1. Add your first wave of workloads.
+1. Associate dependent assets with each workload.
+1. Prioritize workloads.
+1. Evaluate migration tasks as a team.
+1. Estimate tasks & attempt to complete them in the estimated time.
+1. Test the deployed workloads.
+1. Retrospective to refine processes and estimates.
+1. Apply your initial learning to a more comprehensive adoption plan.
 
 ## Open your cloud adoption plan template
 
@@ -26,7 +26,7 @@ Lets add some workloads to the project plan. At the end of the last unit, we ide
 > [!NOTE]
 > Many would argue that virtual desktop and backup solution are technology platforms & not workloads. But, during migrate efforts that distinction will have little bearing on how the collection of assets is deployed to the cloud.
 
-**Open the form to add a workload** Expand the Cloud Migration epic in your backlog to see all workloads slated for migration. Click on the ellipse to the right of the the Cloud Migration epic to see the menu. In the pop-up menu, hover on 'Add link'. Then click on 'New Item'.
+**Open the form to add a workload** Expand the Cloud Migration epic in your backlog to see all workloads slated for migration. Click on the ellipse to the right of the Cloud Migration epic to see the menu. In the pop-up menu, hover over **Add link**, and then select **New Item**.
 
 :::image type="content" source="../media/customize-plan-new-workload.png" alt-text="Add workload (feature) menu" border="false":::
 
@@ -75,7 +75,7 @@ If you use the form to set priority values, remember to click 'Save & close' whe
 
 The Cloud Adoption Plan template deploys a sample workload template to show the various different efforts that a migration may require. Depending on the approach you choose to migrate, the tasks needed may vary.
 
-**Asset migration:** At the core of any migration approach is a simple two step process that must be completed for each asset: Assess compatibility and Migrate the asset. But most teams will also add basic processes to  optimize sizing, configure security and management settings, and document the configuration of that asset. These tasks can be repeated for all assets in the digital estate. The template includes links to instructions for completing each task.
+**Asset migration:** At the core of any migration approach is a simple two step process that must be completed for each asset: Assess compatibility and Migrate the asset. But most teams will also add basic processes to optimize sizing, configure security and management settings, and document the configuration of that asset. These tasks can be repeated for all assets in the digital estate. The template includes links to instructions for completing each task.
 
 Asset migration is fine for small scale, tactical efforts. But, that approach doesn't scale to meet the needs of sophisticated migrations or adoption efforts, like the one Tailwind Traders needs to complete.
 
@@ -83,7 +83,7 @@ Asset migration is fine for small scale, tactical efforts. But, that approach do
 
 Workload migration is much more efficient, but may also hit scale points when the effort begins to focus on thousands of VMs.
 
-**Migration factory:** For the highest scale & most repeatable option, the team will likely build a migration factory as they gain additional experience. The [process improvements section of cloud adoption framework](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/?azure-portal=true) provides a number of processes to consider, as the team gains more experience migration workloads.
+**Migration factory:** For the highest scale and most repeatable option, the team will likely build a migration factory as they gain additional experience. The [process improvements section](/azure/cloud-adoption-framework/migrate/migration-considerations/?azure-portal=true) of the Cloud Adoption Framework provides a number of processes to consider, as the team gains more experience migration workloads.
 
 ### Add tasks
 

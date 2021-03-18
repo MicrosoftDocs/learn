@@ -1,4 +1,4 @@
-We shared the narrative for Tailwind Traders in the getting started module and other Learn modules for the Cloud Adoption Framework. The central operations and infrastructure team has successfully migrated a number of workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
+We shared the narrative for Tailwind Traders in the Getting Started module and other Learn modules for the Cloud Adoption Framework. The central operations and infrastructure team has successfully migrated a number of workloads to the cloud, but they face unanswered questions and unexpected concerns as they prepare for production release.
 
 ## Tailwind Traders' balancing act
 
@@ -7,7 +7,7 @@ Like most customers, Tailwind Traders is attempting to balance two competing bus
 :::image type="content" source="../media/balance.png" alt-text="Finding the balance between transformation and risk mitigation." border="false":::
 *Figure 1: Finding the balance between transformation and risk mitigation.*
 
-In the getting started module, we shared a few of the objectives from the Tailwind Traders cloud adoption plan. Most relevant to this module is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
+In the Getting Started module, we shared a few of the objectives from the Tailwind Traders cloud adoption plan. Most relevant to this module is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
 
 Their effort is driving digital transformation and pushing the boundaries of what the business can do in the cloud. They've migrated low-risk workloads to the cloud. They've also started using cloud native technologies to innovate and create new solutions that couldn't be delivered on-premises. The value of the cloud is proving out. As their adoption plans progress, the need for balance is becoming more apparent.
 

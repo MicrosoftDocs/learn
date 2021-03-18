@@ -1,4 +1,4 @@
-Organizations adopt the cloud to help drive business transformation, such as processes and product improvement, market growth, and increased profitability. Let’s look at the most common motivation triggers for cloud adoption.
+Organizations adopt the cloud to help drive business transformation, such as processes and product improvement, market growth, and increased profitability. Let's look at the most common motivation triggers for cloud adoption.
 
 Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to a critical business event. The reason for this connection is because the cloud might enable the appropriate solution for the event. Proper cloud technology implementation might turn a reactive response into an innovation opportunity to drive growth for the organization.
 
@@ -24,12 +24,11 @@ Some common migration and innovation triggers include:
 - Transformation of products or services
 - Disruption of the market from new products or services
 
-![Half-circle diagram listing migration triggers on the left: save costs, reduce complexity, optimize operations, and agility. On the right, innovation triggers: disrupt markets, transform products, and improve experiences. Spanning both sides are “Prepare for new technical capabilities” and “Scale to meet demand.](../media/caf-migrationandinnovationtriggers.png)
-
+![Half-circle diagram listing migration triggers on the left: save costs, reduce complexity, optimize operations, and agility. On the right, innovation triggers: disrupt markets, transform products, and improve experiences. Spanning both sides are **Prepare for new technical capabilities** and **Scale to meet demand**.](../media/caf-migrationandinnovationtriggers.png)
 
 | | |
 | ---: | ---: |
-| ![Icon of lightbulb](../media/lightbulb.png)| *There are many reasons—or triggers—for cloud adoption. Which triggers are most relevant to your business? Where do you see the most opportunity to take advantage of the benefits of cloud technology? Identifying these opportunities will help you develop your cloud adoption plan.*|
+| ![Icon of lightbulb](../media/lightbulb.png)| There are many reasons or triggers for cloud adoption. Which triggers are most relevant to your business? Where do you see the most opportunity to take advantage of the benefits of cloud technology? Identifying these opportunities will help you develop your cloud adoption plan. |
 |
 
 ### Strategy
@@ -46,7 +45,7 @@ Implementing the first application is key to learning and testing with confidenc
 
 | | |
 | --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *The first application an organization deploys to the cloud is often done so in an experimental environment with no operational or governance capacity. It’s important to select an application that doesn't interact with secure data. Carefully consider which application is a good candidate. As you plan subsequent releases and additional applications are deployed to the cloud, you create the first prioritized migration application and the first prioritized release backlog. Over time, you create and continue to shape the optimal environment for future deployments.*|
+| ![Icon of lightbulb](../media/lightbulb.png)| The first application an organization deploys to the cloud is often done so in an experimental environment with no operational or governance capacity. It's important to select an application that doesn't interact with secure data. Carefully consider which application is a good candidate. As you plan subsequent releases and additional applications are deployed to the cloud, you create the first prioritized migration application and the first prioritized release backlog. Over time, you create and continue to shape the optimal environment for future deployments. |
 |
 
 ## Establish clear business outcomes
@@ -61,21 +60,21 @@ Remember that the chief financial officer (CFO) can be a key player in creating 
 
 Here are some tools to support you in your financial planning:
 
-- **Azure Total Cost of Ownership (TCO) Calculator**: Use the TCO calculator to estimate the cost savings you can realize by migrating your application workloads to Azure.
-- **Azure pricing calculator**: Estimate your expected monthly bill by using the pricing calculator.
-- **Azure Cost Management**: Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
+- **Azure Total Cost of Ownership (TCO) Calculator:** Use the TCO calculator to estimate the cost savings you can realize by migrating your application workloads to Azure.
+- **Azure pricing calculator:** Estimate your expected monthly bill by using the pricing calculator.
+- **Azure Cost Management:** Use and manage Azure and other cloud resources through a multiple-cloud cost management solution.
 
 > [!TIP]
-> Links to the TCO Calculator, Azure Pricing Calculator, and Azure Cost Management tools are available in the “Summary and resources” unit at the end of this module.
+> Links to the TCO Calculator, Azure Pricing Calculator, and Azure Cost Management tools are available in the *Summary and resources* unit at the end of this module.
 
 ## Define business justification
 
 Developing a clear business justification for cloud adoption with tangible, relevant costs and returns can be a complex process. First, review some common cloud computing business value areas to help justify the cloud adoption journey:
 
-- **Cost** - eliminates capital expense
-- **Scale** - ability to scale elastically, delivering the right amount of IT resources
-- **Productivity** – removes the need for many IT management chores
-- **Reliability** – eases the burden of data backup, disaster recovery, and business continuity
+- **Cost:** eliminates capital expense.
+- **Scale:** ability to scale elastically, delivering the right amount of IT resources
+- **Productivity:** removes the need for many IT management chores
+- **Reliability:** eases the burden of data backup, disaster recovery, and business continuity
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
@@ -99,5 +98,4 @@ Here are the key points from this unit:
   - Azure Cost Management
 - Your first adoption project should align with your motivations for adoption.
 
-Now that you've learned about how to define your business outcomes and overall strategy for cloud adoption, let’s get started and create a plan for this journey
-
+Now that you've learned about how to define your business outcomes and overall strategy for cloud adoption, let's get started and create a plan for this journey.

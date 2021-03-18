@@ -17,7 +17,7 @@ In this stage, you focus on two main actions:
 
 A digital estate is the collection of IT assets that power business processes and supporting operations. To begin cloud rationalization of the digital estate, inventory all the digital assets the organization owns today. Then, evaluate each asset to determine the best way to migrate or modernize each component to the cloud.
 
-During this process, we recommend that you proceed incrementally, application by application. Don’t make decisions too broadly or too early across the entire application portfolio.
+During this process, we recommend that you proceed incrementally, application by application. Don't make decisions too broadly or too early across the entire application portfolio.
 
 There are five options for cloud rationalization, sometimes referred to as the **Five Rs**:
 
@@ -156,18 +156,16 @@ Sometimes the best approach is to replace the current application with a hosted 
 
 ## Create your cloud adoption plan
 
-As you develop a business justification model for your organization's cloud journey, identify business outcomes that can be mapped to specific cloud capabilities and business strategies to reach the desired state of transformation. Documenting all these outcomes and business strategies serves as the foundation for your organization’s cloud adoption plan.
+As you develop a business justification model for your organization's cloud journey, identify business outcomes that can be mapped to specific cloud capabilities and business strategies to reach the desired state of transformation. Documenting all these outcomes and business strategies serves as the foundation for your organization's cloud adoption plan.
 
 Key steps to build this plan are to:
 
-- Review sample business outcomes. 
-- Identify the leading metrics that best represent progress toward the identified business outcomes. 
+- Review sample business outcomes.
+- Identify the leading metrics that best represent progress toward the identified business outcomes.
 - Establish a financial model that aligns with the outcomes and learning metrics.
 
-
 > [!TIP]
-> Links to sample business outcomes, the business outcome template, learning metrics, the financial model, and the digital estate document are available in the “Summary and resources” unit at the end of this module.
-
+> Links to sample business outcomes, the business outcome template, learning metrics, the financial model, and the digital estate document are available in the *Summary and resources* unit at the end of this module.
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
@@ -181,4 +179,4 @@ Here are the key points from this unit:
 - In the plan stage, there are two major actions: rationalizing your digital estate and creating your cloud adoption plan.
 - In the Plan phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, we recommend that you proceed incrementally.
 
-Let’s talk next about how to prepare your organization, your business processes, and your environment for your cloud adoption journey.
+Let's talk next about how to prepare your organization, your business processes, and your environment for your cloud adoption journey.
