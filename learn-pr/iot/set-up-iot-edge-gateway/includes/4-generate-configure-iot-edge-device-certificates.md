@@ -1,6 +1,6 @@
 We need to ensure that only authorized devices can publish data into the IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure the transmission channel back to our IoT Hub.
 
-[![security](../media/security.png)](../media/security.png#lightbox)
+[![Security Guard at Entrance](../media/security.png)](../media/security.png#lightbox)
 
 The process is similar to how we gain access into the physical manufacturing building.  
 
