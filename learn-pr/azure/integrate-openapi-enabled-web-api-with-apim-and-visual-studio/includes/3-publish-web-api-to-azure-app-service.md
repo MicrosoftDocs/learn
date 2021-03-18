@@ -12,7 +12,7 @@
 
 Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to easily discover their endpoints through an Open API document.
 
-In this exercise, you will deploy your Web API application to Azure App Service, through Visual Studio.
+In this exercise, you will deploy your Web API application to [Azure App Service][az appsvc], through Visual Studio.
 
 
 ## Prerequisites ##
@@ -135,3 +135,4 @@ After this unit, you are now able to:
 
 [az account]: https://azure.microsoft.com/free/
 [az appsvc]: https://docs.microsoft.com/azure/app-service/overview
+[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts

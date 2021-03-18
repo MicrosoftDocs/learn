@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Answer the following questions to see what you've learned
+  ms.date: 03/24/2021
+  author: justinyoo
+  ms.author: juyoo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: Answer the following questions to see what you've learned
+  questions:
+  - content: To generate an Open API documentation for your ASP.NET Core Web API, use Swashbuckle.
+    choices:
+    - content: 'True'
+      isCorrect: true
+      explanation: Swashbuckle is an open-source Swagger implementation used for generating Swagger documentation for .NET Core APIs using .NET reflection.
+    - content: 'False'
+      isCorrect: false
+      explanation: Swashbuckle is an open-source Swagger implementation used for generating Swagger documentation for .NET Core APIs using .NET reflection.
+
+  - content: You can publish your ASP.NET Core Web API to Azure App Service within Visual Studio, without having to leave it.
+    choices:
+    - content: 'True'
+      isCorrect: true
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+    - content: 'False'
+      isCorrect: false
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+
+  - content: Within Visual Studio, you can only publish your ASP.NET Core Web API to an existing Azure App Service instance.
+    choices:
+    - content: 'True'
+      isCorrect: false
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app.
+    - content: 'False'
+      isCorrect: true
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app.
+
+  - content: Within Visual Studio, you can only integrate your ASP.NET Core Web API with an existing Azure API Management instance.
+    choices:
+    - content: 'True'
+      isCorrect: false
+      explanation: You can create a new Azure API Management instance within Visual Studio while publishing the Web API app.
+    - content: 'False'
+      isCorrect: true
+      explanation: You can create a new Azure API Management instance within Visual Studio while publishing the Web API app.

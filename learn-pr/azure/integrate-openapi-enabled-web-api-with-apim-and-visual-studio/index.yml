@@ -32,8 +32,7 @@ units:
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.2-activate-openapi-to-web-api-using-swashbuckle
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.3-publish-web-api-to-azure-app-service
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.4-integrate-web-api-with-azure-api-management
-- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5-test-web-api-on-azure-api-management
-- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-knowledge-check
-- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.7-summary
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.5-knowledge-check
+- learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-summary
 badge:
   uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.badge
