@@ -43,7 +43,13 @@ The website's home page, *index.html*, currently contains just one line of HTML.
     git commit -m "Add HTML boilerplate to index.html" index.html
     ```
 
-1. Use `git diff` again to compare the working tree to the index. This time, `git diff` produces no output because the working tree, index, and `HEAD` are all in agreement.
+1. Use `git diff` again to compare the working tree to the index:
+
+    ```bash
+    git diff
+    ```
+
+   This time, `git diff` produces no output because the working tree, index, and `HEAD` are all in agreement.
 
 1. Let's say you decide "furry" sounds friendlier than "feline." Replace the two occurrences of "Feline" in *index.html* with "Furry." Then, save the file.
 
@@ -57,7 +63,7 @@ The website's home page, *index.html*, currently contains just one line of HTML.
 
 1. Add the following lines to the file:
 
-    ```text
+    ```bash
     *.bak
     *~
     ```
@@ -157,7 +163,7 @@ Now that you have a reasonable number of changes recorded, you can use `git log`
     git log
     ```
 
-1. The output should look similar to this example:
+1. Check the output. It should look similar to this example:
 
     ```output
     commit ae3f99c45db2547e59d8fcd8a6723e81bbc03b70
@@ -181,7 +187,7 @@ Now that you have a reasonable number of changes recorded, you can use `git log`
     git log --oneline
     ```
 
-1. This time, the output looks like this example:
+1. Check the output again. This time, it should look like this example:
 
     ```output
     ae3f99c Add a simple stylesheet

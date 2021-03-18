@@ -30,7 +30,7 @@ Now, let's get some hands-on practice fixing our mistakes!
 
 1. Use `ls` again to check the contents of the current directory. Has *index.html* been restored?
 
-1. Yes! Now, the output should have an *index.html* file and a *CSS* directory:
+    Yes! Now, the output should have an *index.html* file and a *CSS* directory:
 
     ```output
     CSS  index.html
@@ -46,7 +46,7 @@ When you want to recover deleted files, things are a little more complicated if 
     git rm index.html
     ```
 
-1. Again, look for *index.html* by running `ls`. *index.html* is gone. 
+1. Again, look for *index.html* by running `ls`. You should not see *index.html*. 
 
 1. Try to recover *index.html* the same way that you did last time:
 
@@ -66,7 +66,7 @@ When you want to recover deleted files, things are a little more complicated if 
     git reset HEAD index.html
     ```
 
-1. You should see this output, which confirms it:
+1. Check for this output, which confirms it:
 
     ```output
     Unstaged changes after reset:
@@ -136,7 +136,7 @@ One solution to this problem is to revert the previous commit.
 
     The `--no-edit` flag tells Git that we don't want to add a commit message for this action.
 
-1. You should see output similar to this example:
+1. Check the output. It should look similar to this example:
 
     ```output
     [main 6a27310] Revert "Purposely overwrite the contents of index.html"
@@ -149,7 +149,7 @@ One solution to this problem is to revert the previous commit.
     git log -n1
     ```
 
-1. Now, you should see this output:
+1. Check the output again. It should look like this example:
 
     ```output
     Author: User Name <user-name@contoso.com>

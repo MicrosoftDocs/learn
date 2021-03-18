@@ -151,7 +151,7 @@ Now that *index.html* has been added to the index, the next step is to commit it
 
     Note that we didn't run the `git add` command this time to stage our changes. Instead, we used the `-a` flag in the `git commit` command. The `-a` option adds all the files you modified since the last commit.  It won't add _new_ files. To add new files, you still need `git add`.
 
-1. Note the output:
+1. Check the output. It should look like this example:
 
     ```output
     [main 8c9143a] Add a heading to index.html
