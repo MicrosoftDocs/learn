@@ -10,7 +10,7 @@ In this module you'll learn:
 - How to install Django.
 - How to create a program in Django.
 
-Prerequisites
+## Prerequisites
 
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 - [Git](https://git-scm.com/?azure-portal=true)
