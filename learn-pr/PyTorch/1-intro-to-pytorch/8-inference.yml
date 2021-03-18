@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.8-inference
+uid: learn.PyTorch.intro-to-pytorch.inference
 title: Save, Load and Inference
 metadata:
   title: Save, Load and Inference
   description: In this section we will look at how to persist model state with saving, loading and running model predictions.
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.1-introduction
+uid: learn.PyTorch.nlp-pytorch.introduction
 title: Introduction to NLP
 metadata:
   title: Introduction to NLP
   description: In this introductory unit, we discuss the field of natural language processing, and focus on typical problems that are solved by NLP neural network models.
-  author: ai-advocates 
-  ms.author:  ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

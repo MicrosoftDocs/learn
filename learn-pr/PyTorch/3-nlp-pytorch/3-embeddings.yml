@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.3-embeddings
+uid: learn.PyTorch.nlp-pytorch.embeddings
 title: Embeddings
 metadata:
   title: Embeddings
   description: Embeddings are a way to represent words using some vector representation that has nice semantic properties. We discuss different embeddings, and how using embeddings can improve classification accuracy.
-  author: ai-advocates 
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

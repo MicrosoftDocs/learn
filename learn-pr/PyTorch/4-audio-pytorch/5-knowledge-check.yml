@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.5-knowledge-check
+uid: learn.PyTorch.audio-pytorch.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge
   ms.date: 03/16/2021
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

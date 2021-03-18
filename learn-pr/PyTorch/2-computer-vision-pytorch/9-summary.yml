@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.9-summary
+uid: learn.PyTorch.computer-vision-pytorch.summary
 title: Summary
 metadata:
   title: Summary
   description: In this last unit, we briefly recap what we have learnt, and set directions for further learning.
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

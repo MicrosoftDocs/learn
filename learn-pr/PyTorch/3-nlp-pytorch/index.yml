@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn.PyTorch.3-nlp-pytorch
+uid: learn.PyTorch.nlp-pytorch.nlp-pytorch
 metadata:
   title: Introduction to Natural Language Processing with PyTorch
   description: Learn how to 
   ms.date: 06/04/2020
-  author: ai-advocates 
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Natural Language Processing with PyTorch
@@ -23,14 +23,14 @@ products:
 - azure
 prerequisites: None
 units:
-- learn.PyTorch.1-introduction
-- learn.PyTorch.2-representing-text
-- learn.PyTorch.3-embeddings
-- learn.PyTorch.4-recurrent-networks
-- learn.PyTorch.5-generative-networks
-- learn.PyTorch.6-attention-transformers
-- learn.PyTorch.7-knowledge-check
-- learn.PyTorch.8-summary
+- learn.PyTorch.nlp-pytorch.introduction
+- learn.PyTorch.nlp-pytorch.representing-text
+- learn.PyTorch.nlp-pytorch.embeddings
+- learn.PyTorch.nlp-pytorch.recurrent-networks
+- learn.PyTorch.nlp-pytorch.generative-networks
+- learn.PyTorch.nlp-pytorch.attention-transformers
+- learn.PyTorch.nlp-pytorch.knowledge-check
+- learn.PyTorch.nlp-pytorch.summary
 
 badge:
   uid: learn.PyTorch.badge

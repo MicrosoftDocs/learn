@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.2-image-data
+uid: learn.PyTorch.computer-vision-pytorch.image-data
 title: Introduction to Image Data
 metadata:
   title: Introduction to Image Data
   description: In this unit, we learn how computer images can be represented as tensors in PyTorch, and how to do handle image datasets
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs

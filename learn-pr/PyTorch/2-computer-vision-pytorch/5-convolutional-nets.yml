@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.5-convolutional-nets
+uid: learn.PyTorch.computer-vision-pytorch.convolutional-nets
 title: Convolutional Neural Networks
 metadata:
   title: Convolutional Neural Networks
   description: This unit is paramount to understanding the whole course. Here we learn about the CNN architecture, and how they can capture patterns in images using trained filters.
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn.PyTorch.1-intro-to-pytorch
+uid: learn.PyTorch.intro-to-pytorch
 metadata:
   title: Introduction to Machine Learning with PyTorch
   description: Learn how to build machine learning models with PyTorch
   ms.date: 06/04/2020
-  author: ai-adovcates
-  ms.author: ai-adovcates
+  author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to PyTorch
@@ -23,16 +23,16 @@ products:
 - azure
 prerequisites: None
 units:
-- learn.PyTorch.1-introduction
-- learn.PyTorch.2-tensors
-- learn.PyTorch.3-data
-- learn.PyTorch.4-transforms
-- learn.PyTorch.5-model
-- learn.PyTorch.6-loss
-- learn.PyTorch.7-optimization
-- learn.PyTorch.8-inference
-- learn.PyTorch.9-ml-overview
-- learn.PyTorch.11-summary
+- learn.PyTorch.intro-to-pytorch.introduction
+- learn.PyTorch.intro-to-pytorch.tensors
+- learn.PyTorch.intro-to-pytorch.data
+- learn.PyTorch.intro-to-pytorch.transforms
+- learn.PyTorch.intro-to-pytorch.model
+- learn.PyTorch.intro-to-pytorch.loss
+- learn.PyTorch.intro-to-pytorch.optimization
+- learn.PyTorch.intro-to-pytorch.inference
+- learn.PyTorch.intro-to-pytorch.ml-overview
+- learn.PyTorch.intro-to-pytorch.-summary
 
 badge:
-  uid: learn.PyTorch.badge
+  uid: learn.PyTorch.intro-to-pytorch.badge

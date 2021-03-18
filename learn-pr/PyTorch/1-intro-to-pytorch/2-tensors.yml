@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.2-tensors
+uid: learn.PyTorch.intro-to-pytorch.tensors
 title: What are Tensors?
 metadata:
   title: What are Tensors?
   description: Tensors are a specialized data structure that are very similar to arrays and matrices.
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.PyTorch.8-knowledge-check
+uid: learn.PyTorch.computer-vision-pytorch.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge
   ms.date: 03/16/2021
-  author: ai-advocates
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -50,6 +50,7 @@ quiz:
           isCorrect: false
           explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
         - content: "The size of input image is 3x320x200, what would be the size of the tensor after applying 5x5 convolutional layer with 16 filters?"
+          isCorrect: false
     - content: "Which layers we apply to significantly reduce spatial dimension in multi-layered CNN?"
       choices:
         - content: "Convolution"

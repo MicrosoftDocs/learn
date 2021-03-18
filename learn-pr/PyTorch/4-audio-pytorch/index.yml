@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn.Pytorch.4-audio-pytorch
+uid: learn.PyTorch.audio-pytorch
 metadata:
   title: Introduction to 
   description: Learn how to 
   ms.date: 06/04/2020
-  author: ai-advocates 
-  ms.author: ai-advocates
+  author: cassieview
+  ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to 
@@ -23,12 +23,12 @@ products:
 - azure
 prerequisites: None
 units:
-- learn.PyTorch.1-introduction
-- learn.PyTorch.2-understanding-audio-data
-- learn.PyTorch.3-visualizations-transforms
-- learn.PyTorch.4-speech-model
-- learn.PyTorch.5-knowledge-check
-- learn.PyTorch.6-summary
+- learn.PyTorch.audio-pytorch.introduction
+- learn.PyTorch.audio-pytorch.understanding-audio-data
+- learn.PyTorch.audio-pytorch.visualizations-transforms
+- learn.PyTorch.audio-pytorch.speech-model
+- learn.PyTorch.audio-pytorch.knowledge-check
+- learn.PyTorch.audio-pytorch.summary
 
 badge:
-  uid: learn.PyTorch.badge
+  uid: learn.PyTorch.audio-pytorchbadge
