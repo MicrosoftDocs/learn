@@ -4,7 +4,7 @@ title: Access private link enabled services from Azure Container Instances
 metadata:
   title: Access private link enabled services from Azure Container Instances
   description: Access private link enabled services from Azure Container Instances
-  ms.date: 03/05/2021
+  ms.date: 03/18/2021
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
