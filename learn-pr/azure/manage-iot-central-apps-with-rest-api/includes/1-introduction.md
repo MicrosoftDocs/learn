@@ -21,7 +21,6 @@ In this module, you:
 - Create and use jobs to perform bulk device updates
 - Query your application
 
-
 ## Prerequisites
 
 - Ability to create an IoT Central application using the web UI  

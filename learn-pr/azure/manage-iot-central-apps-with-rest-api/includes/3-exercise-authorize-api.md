@@ -2,7 +2,11 @@ Create an IoT Central application for your devices to connect to and be managed 
 
 You want to create an IoT Central application to test integration with your fleet management application.
 
-In this unit, you'll use an Azure CLI control plane operation to create an IoT Central application from the **Custom application** template. This application template enables the preview REST API. You'll run the CLI commands in the Azure sandbox activated for this module and then navigate to the application's web UI. In the web UI, you complete the setup by generating an API token to authorize REST API calls.
+In this unit, you'll use an Azure CLI control plane operation to create an IoT Central application from the **Custom application** template. You'll then use the IoT Central REST API for the data plane operations that operate on your application.
+
+To make the REST API calls, this module uses the `az rest` command. For each command you can see the request URL, the method (`get`, `put`, `patch`, or `delete`), and any JSON body. Some commands use the `--query` argument to format the response for readability.
+
+The IoT Central REST API currently has some generally available (GA) operations, and some that are in preview. If the request URL includes `api/v1`, it's a GA operation. If the request URL includes `api/preview`, the operation is in preview.
 
 ## Create and configure the IoT Central application
 
@@ -13,7 +17,6 @@ The following steps create an IoT Central application and generate an API token 
     ```azurecli
     APP_NAME="fleet-manager-$RANDOM"
     echo "Your application name is: $APP_NAME"
-
     ```
 
     Make a note of the application name just in case the shell times out and loses the environment variable.
@@ -25,97 +28,77 @@ The following steps create an IoT Central application and generate an API token 
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name $APP_NAME --sku ST2 --location centralus \
       --subdomain $APP_NAME --template iotc-pnp-preview \
-      --display-name 'fleet management'
-    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/admin/tokens"
-
+      --display-name 'Fleet management'
+    echo "To view the application, you can navigate to: https://$APP_NAME.azureiotcentral-ppe.com"
     ```
 
     Expect this command to take a minute or two to run.
 
-1. Run the following command to generate a bearer token that gives you the same level of access that your Azure Active Directory user has in the IoT Central application. In this case, because you created the IoT Central application, this bearer token gives you administrative rights:
+1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instuctions to complete the login process:
 
     ```azurecli
-    BEARER_TOKEN=`az account get-access-token --resource https://apps.azureiotcentral.com --query accessToken -o tsv`
-    echo $BEARER_TOKEN
+    az login
     ```
 
-1. Now you have a bearer token, you can use it with the REST API to generate API tokens for administrators and operators:
+1. Run the following commands to get the IDs of the built-in **App Administrator** and **App Operator** roles from your application. You don't yet have an API token to use, so the `--resource https://apps.azureiotcentral.com` parameter generates an authorization header with a bearer token:
 
     ```azurecli
     # Get the admin and operator roles in the application
-    ADMIN_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/roles \
-      --headers Authorization="$BEARER_TOKEN" \
-      --query "value[?displayName=='Administrator'].id" -o tsv`
+    ADMIN_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/roles \
+    --resource https://apps.azureiotcentral.com \
+    --query "value[?displayName=='Administrator'].id" -o tsv`
     echo $ADMIN_ROLE_ID
 
-    OPERATOR_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/roles \
-      --headers Authorization="$BEARER_TOKEN" \
-      --query "value[?displayName=='Operator'].id" -o tsv`
+    OPERATOR_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/roles \
+    --resource https://apps.azureiotcentral.com \
+    --query "value[?displayName=='Operator'].id" -o tsv`
     echo $OPERATOR_ROLE_ID
+    ```
 
-    # Use the bearer token and role IDs to create API tokens:
+1. Generate an API token for the **App Administrator** role. You still need to use the bearer token for this:
 
-    ADMIN_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/apiTokens/admintoken \
-      --headers Authorization="$BEARER_TOKEN" \
-      --query "token" -o tsv --body \
+    ```azurecli
+    ADMIN_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/apiTokens/admintoken \
+      --resource https://apps.azureiotcentral.com --query "token" -o tsv --body \
     '{
-    "roles": [
+      "roles": [
         {
-        "role": "'$ADMIN_ROLE_ID'"
+          "role": "'$ADMIN_ROLE_ID'"
         }
-    ]
+      ]
     }'`
     echo $ADMIN_TOKEN
+    ```
 
-    # Use the admin token you just generated to create an operator token
-    OPERATOR_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/apiTokens/operatortoken \
-      --headers Authorization="$ADMIN_TOKEN" \
-      --query "token" -o tsv --body \
+1. Now you can use the administrator API token to create an operator API token:
+
+    ```azurecli
+    OPERATOR_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/apiTokens/operatortoken \
+      --headers Authorization="$ADMIN_TOKEN" --query "token" -o tsv --body \
     '{
-    "roles": [
+      "roles": [
         {
-        "role": "'$OPERATOR_ROLE_ID'"
+          "role": "'$OPERATOR_ROLE_ID'"
         }
-    ]
+      ]
     }'`
     echo $OPERATOR_TOKEN
     ```
 
-    You can use the REST API to create API tokens for any custom roles you created in your IoT Central application.
+1. Copy the generated admin and operator API tokens and save them locally in a text file. If you lose the tokens, you'll have to delete and then recreate them. All the remaining commands in this module will use either the `ADMIN_TOKEN` or the `OPERATOR_TOKEN`.
 
-1. Copy the generated API tokens and save them locally in a text file. If you lose the tokens, you'll have to delete and then recreate them.
+The two API tokens you created each have the permission set associated their role. You can also use the REST API to create API tokens for any custom roles you created in your IoT Central application. The following two commands demonstrate that an administrator has access to API tokens, but an operator doesn't:
 
 1. The following command succeeds because the **App Administrator** role lets you work with API tokens:
 
     ```azurecli
-    az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/apiTokens \
+    az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/apiTokens \
       --headers Authorization="$ADMIN_TOKEN"
     ```
 
 1. The following command fails because the **App Operator** role lets you work with API tokens:
 
     ```azurecli
-    az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/apiTokens \
+    az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/apiTokens \
       --headers Authorization="$OPERATOR_TOKEN"
     ```
-
-<!--
-1. In another browser tab or window, navigate to URL shown in the output of the last command. This page in the web UI is where you generate API tokens:
-
-    ![The API Tokens page in the IoT Central UI with no tokens shown](../media/3-tokens.png)
-
-1. Select **Create an API token**. Enter `admin` as the **Token name** and make sure **Administrator** is selected as the **Role**. Then select **Generate**:
-
-    ![Generate an API token with the Application Administrator role in the IoT Central UI](../media/3-generate-token.png)
-
-1. Copy the generated API token and save it locally in a text file. If you lose the token, you'll have to regenerate it:
-
-    ![Copy a generated API token from the IoT Central UI](../media/3-copy-token.png)
-
-1. Replace the `ADD YOUR TOKEN HERE` in the following command and run it the Cloud Shell. This command saves the API token in an environment variable to use later in the module. Be sure to enclose the token in double quotation marks, `"..."`:
-
-    ```azurecli
-    API_TOKEN="ADD YOUR TOKEN HERE"
-
-    ```
--->

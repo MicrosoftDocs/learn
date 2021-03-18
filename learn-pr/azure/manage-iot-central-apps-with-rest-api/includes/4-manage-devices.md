@@ -41,7 +41,8 @@ Before a real device can connect to your IoT Central application, you must publi
 
 Once a device template is published, significant changes to the device capability model or interface definitions require that you create and publish a new version of the device template.
 
-<!-- Verify this list is up to date -->
+When you use the REST API to add a device template to your application, it's automatically published.
+
 ## Manage device templates using the REST API
 
 The IoT Central REST API lets you:
@@ -51,6 +52,10 @@ The IoT Central REST API lets you:
 - Add a device template to your application
 - Update a device template in your application
 - Delete a device template in your application
+
+## Block and unblock devices
+
+If you suspect that a device is sending incorrect data or otherwise behaving in an unexpected way, you can block it. Blocking a device stops it from connecting to your application - a blocked device can't send telemetry, can't send property updates, or respond to synchronous commands. You can still manage the cloud properties of a blocked device, because cloud properties are stored in your IoT Central application. You can also set writable properties, although a blocked device won't receive these updates until it's unblocked.
 
 ## Real devices
 
@@ -76,17 +81,6 @@ X.509 certificates are recommended in a production environment, but SAS keys are
 
 IoT Central can generate simulated devices from a device template. These simulated devices are useful for testing the behavior of your IoT Central application. A simulated device sends telemetry, reports property values, lets the application set property values, and responds to commands. In this module, you'll create some simulated devices to generate telemetry data to export.
 
-## Use the REST API to manage your device templates
-
-<!-- Verify this list is up to date -->
-The [IoT Central REST API for device templates](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
-
-- Create a device template
-- Update a device template
-- Delete a device template
-- Retrieve a device template
-- List the devices associated with a template
-
 ## Use the REST API to manage your devices
 
 <!-- Verify this list is up to date -->
@@ -97,4 +91,4 @@ The [IoT Central REST API for devices](https://docs.microsoft.com/rest/api/iotce
 - Create a device
 - Update a device
 - Delete a device
-- Get a device telemetry value
+- Block and unblock a device
