@@ -9,13 +9,13 @@ metadata:
   ms.author: v-anwarr
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Bastion
-summary: Learn how Azure Bastion can provide secure and seamless connectivity to your virtual machines directly in the Azure portal
+summary: Describe how Azure can help to reduce the risk of unauthorized access to your cloud-based VMs. Evaluate whether Azure Bastion can help secure administrative access to your virtual machines.
 abstract: |
   By the end of this module, you will be able to: 
     - Evaluate how Azure Bastion can help secure administrative access to your virtual machines
     - Describe how Azure reduces the risk of unauthorized access to your cloud-based virtual machines
 prerequisites: |
-  - Knowledge of cloud security concepts and technologies
+  - Experience performing remote administration using RDP/SSH
   - Experience administering hosted virtual machines
   - Familiarity with remote administrative technologies and RDP/SSH protocols
 iconUrl: https://docs.microsoft.com/media/learn/module.svg

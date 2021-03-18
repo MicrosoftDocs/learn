@@ -21,6 +21,9 @@ First, let's consider a typical jump box scenario:
 
 - Administrators connect to the jump box with RDP using the public IP. 
 
+> [!IMPORTANT]
+> Because you connect to your jump box with RDP on a public IP, the jump box security can be compromised.
+
 Because the jump box is a VM running a server operating system, you will need to:
 
 - Keep the VM up to date with patches and other updates
@@ -32,10 +35,12 @@ However, you can use Azure Bastion to address the primary requirement of being a
 
 | Advantage                                                   | Description                                                  |
 | ----------------------------------------------------------- | ------------------------------------------------------------ |
-| Azure Bastion is a fully managed PaaS service               | You don't need to apply any network security groups to the Azure Bastion subnet |
-| Azure Bastion is not a VM                                   | You won't need to apply patches and updates to Azure Bastion |
-| No client or agent is required to use Azure Bastion         | You don't need to install and maintain any other software on management consoles |
-| Azure Bastion integrates with other Azure security services | You can integrate Azure Bastion with other native security appliances in Azure, such as Azure Firewall |
+| Azure Bastion is a fully managed PaaS service               | You don't need to apply any network security groups to the Azure Bastion subnet. |
+| Azure Bastion is not a VM                                   | You won't need to apply patches and updates to Azure Bastion. |
+| No client or agent is required to use Azure Bastion         | You don't need to install and maintain any other software on management consoles. |
+| Azure Bastion integrates with other Azure security services | You can integrate Azure Bastion with other native security appliances in Azure, such as Azure Firewall. |
+| Azure Bastion doesn't expose RDP/SSH on its public IP | Unlike a jump box, Azure Bastion supports only TLS-protected connections from the Azure portal. |
+
 
 > [!NOTE]
 > You deploy Azure Bastion per virtual network (or peered virtual network) rather than per subscription, account, or VM. 
@@ -47,5 +52,9 @@ Azure Bastion addresses the key goal of enabling secure remote management of hos
 Consider using Azure Bastion when:
 
 - You have remote Azure hosted VMs to manage
+- You must connect to those VMs using RDP/SSH
 - You want avoid having to maintain the method by which you connect to these remote VMs
 - You don't want to have to configure network security group settings to enable remote management
+- You want tp avoid using jump boxes
+
+When determining the number of Azure Bastions to deploy, consider that you require one per virtual network (or peered virtual network). It's not necessary to deploy Azure Bastion on a per VM or per subnet basis. 

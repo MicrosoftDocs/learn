@@ -7,9 +7,14 @@ RDP and SSH are very often the primary means used to connect to remote IaaS VMs.
 
 ## Azure Bastion architecture
 
-The following diagram displays the architecture of a typical Azure Bastion deployment, and describes the end to end connection process. In this diagram, an Azure Bastion host is deployed in a virtual network that contains a number of Azure VMs. The virtual network is protected by a network security group.
+The following diagram displays the architecture of a typical Azure Bastion deployment, and describes the end to end connection process. In this diagram:
 
-:::image type="content" source="../media/bastion-architecture.png" alt-text="A diagram displays the architecture of Azure Bastion. Three VMs are protected by a network security group that enables RDP and SSH traffic from an Azure Bastion subnet. The Bastion supports communications only via TCP port 443 from the Azure portal.":::
+- Azure Bastion is deployed in a virtual network that contains several Azure VMs
+- The subnets in the virtual network are protected by network security groups
+-  The network security group protecting the VM subnet allows RDP and SSH traffic from the Azure Bastion subnet
+-  Azure Bastion supports communications only via TCP port 443 from the Azure portal
+
+:::image type="content" source="../media/bastion-architecture.png" alt-text="A diagram displays the architecture of Azure Bastion, as described in the preceding text.":::
 
 > [!NOTE]
 > The protected VMs and the Azure  Bastion host are connected to the same virtual network, although in different subnets.
