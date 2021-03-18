@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: PowerShell commands
-summary: Learn about PowerShell commands to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll also learn about testing capabilities with Pester and third-party modules you can install on your system, to extend your list of commands.
+summary: PowerShell can be used to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll learn to run commands, how to learn more about PowerShell and additionally to create and run script files. 
 prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git Bash 
   - Visual Studio Code installed 
