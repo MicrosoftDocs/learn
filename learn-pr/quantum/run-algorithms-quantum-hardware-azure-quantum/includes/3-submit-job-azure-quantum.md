@@ -49,7 +49,7 @@ First, you need to create an Azure Quantum workspace in your Azure subscription 
 
    :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the workspace." border="false":::
 
-> [!NOTE] 
+> [!NOTE]
 > This tutorial is using the IonQ targets as a [Quantum Processing Unit](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](https://docs.microsoft.com/azure/quantum/install-overview-qdk).
 
 ## Set up the project and write your program
@@ -60,26 +60,13 @@ Next, you'll use Visual Studio Code to create a Q# Project, similar to how you d
 
 1. Enter **Q#: Create New Project**.
 
-1. Select **Standalone console application**.
+1. Select **Quantum application targeted to IonQ backend**.
 
 1. Select a directory to hold your project, such as your home directory. Enter **MyFirstJob** as the project name, and then select **Create Project**.
 
 1. From the window that appears at the bottom, select **Open new project**.
 
 1. You should see two files: the project file and *Program.qs*, which contains starter code.
-
-1. Start by opening the *MyFirstJob.csproj* file and adding the `ExecutionTarget` property, which will give you design-time feedback on the compatibility of your program for IonQ's hardware in Visual Studio Code:
-
-    ```xml
-    <PropertyGroup Sdk="Microsoft.Quantum.Sdk/y.yy.yyyyyyyy">
-        <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
-        <ExecutionTarget>ionq.qpu</ExecutionTarget>
-      </PropertyGroup>
-    </Project>
-    ```
-
-   The `yy.yy.yyyyyyyy` part is the number of the last version of the Quantum Development Kit (QDK). If your QDK Visual Studio Code extension is updated, the version should already be up to date.
 
 1. Replace the contents of *Program.qs* with the program:
 
@@ -91,10 +78,10 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
-1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in, for example:
+1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in and the location of the workspace, for example:
 
    ```dotnetcli
-   az quantum workspace set -g MyResourceGroup -w MyWorkspace -o table
+   az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
 
    You should obtain the data of your workspace as output.
@@ -102,7 +89,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
    ```output
    Location     Name         ProvisioningState    ResourceGroup    Usable  
    -----------  -----------  -------------------  ---------------  --------
-   westus       MyWorkspace  Succeeded            MyResourceGroup  Yes  
+   MyLocation   MyWorkspace  Succeeded            MyResourceGroup  Yes  
 
    ```
 
