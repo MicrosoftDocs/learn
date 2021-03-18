@@ -21,4 +21,4 @@ The following table shows tools used for workload-specific management.
 
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
-| Application Insights | Advanced application monitoring with dependency mapping, application dashboard, application map, usage, and deep tracking. | [More information at Microsoft docs](/azure/azure-monitor/app/app-insights-overview) |
+| Application Insights | Advanced application monitoring with dependency mapping, application dashboard, application map, usage, and deep tracking. | [More information at Microsoft Docs](/azure/azure-monitor/app/app-insights-overview) |
