@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-swa.7-exercise-frontend
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-frontend.md)]
