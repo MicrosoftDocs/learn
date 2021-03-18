@@ -7,7 +7,7 @@ In this module, you'll learn how to:
 - Add app models and access data.
 - Set user permissions.
 
-Prerequisites
+## Prerequisites
 
 - Software
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
