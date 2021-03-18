@@ -1,4 +1,4 @@
-Here, you will learn ...
+Here, you will learn the basics of using a workflow to publish to GitHub Packages and the necessary steps to build, authenticate, tag, and push a Docker image to the GitHub Container Registry. 
 
 
 ## Use a workflow to publish to GitHub Packages
@@ -48,12 +48,35 @@ The above workflow does a few things after a new release is created.
 1. The job named `publish-gpr` is dependant on the `build` job to succeed before continuing with the workflow and publish the package.
 1. The workflow needs an access token for authentication before publishing the package to the `registry-url: https://npm.pkg.github.com/`.
 
-> [!Note]
-> To authenticate using a GitHub Actions workflow for package registries (PACKAGE-REGISTRY.pkg.github.com), you can use a GITHUB_TOKEN or a personal access token.
-
 To learn more about publishing a package to GitHub Packages, check out [Publishing a package](https://docs.github.com/en/packages/learn-github-packages/publishing-a-package).
 
 
-## Use a workflow to publish to GitHub Container Registry
+## Use GitHub Container Registry to host and manage Docker container images
+
+With GitHub Packages, users are leaning increasingly towards containers, Kubernetes, and other cloud-native technologies to manage their entire application lifecycle – not just through development, release, and deployment, but for production operations as well. GitHub Packages also offers a container registry designed to support the unique needs of container images. You can use GitHub Container Registry to seamlessly host and manage Docker container images in your organization or personal user account on GitHub. GitHub Container Registry allows you to configure who can manage and access packages using fine-grained permissions.
+
+With the container registry you can:
+
+- Ability to store container images within your organization and user account, rather than a repository.
+- Set fine-grained permissions for the container images.
+- Access public container images anonymously.
+
+After you have built the image, authenticated and signed in to the GitHub Container Registry service at `ghcr.io`, you can then tag and push the latest version of the image to the container registry.
+
+```bash
+echo $PAT | docker login ghcr.io -u USERNAME --password-stdin
+
+docker tag app ghcr.io/OWNER/IMAGE_NAME:latest
+
+docker push ghcr.io/OWNER/IMAGE_NAME
+```
+
+> [!Note]
+> To authenticate using a GitHub Actions workflow:
+>
+>- For package registries `PACKAGE-REGISTRY.pkg.github.com`, you can use a GITHUB_TOKEN.
+>- For the container registry `ghcr.io/OWNER/IMAGE-NAME`, you must use a personal access token.
+
+For more information on storing and managing Docker images in the GitHub Container Registry, check out [Pushing and pulling Docker images](https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images).
 
 In the next unit, we'll use GitHub Actions to build a container image, and publish it into GitHub Packages.
