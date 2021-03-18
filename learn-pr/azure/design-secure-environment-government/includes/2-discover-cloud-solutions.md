@@ -10,7 +10,7 @@ Using Azure’s public cloud capabilities, customers benefit from rapid feature 
 
 With Azure data protection technologies and intelligent edge capabilities (such as Azure Stack Hub and Azure Stack Edge), customers can process confidential and secret data in secure, isolated infrastructure. Options include Azure public multi-tenant regions or top-secret data at the edge, under the customer’s full operational control.
 
-## Using private or hybrid cloud models
+## Use private or hybrid cloud models
 
 Azure Stack Hub (formerly Azure Stack) and Azure Stack Edge (formerly Azure Data Box Edge) allow customers to process highly sensitive data using a private or hybrid cloud and pursue digital transformation leveraging Microsoft intelligent cloud and intelligent edge approach. For many government customers, enforcing data sovereignty, addressing custom compliance requirements, and applying maximum available protection to highly sensitive data are the primary driving factors behind these efforts.  
 
