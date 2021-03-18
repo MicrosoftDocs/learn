@@ -14,7 +14,7 @@ Green Leaf's business has grown exponentially over the past year. Along with tha
 :::row-end:::
 
 
-Crystal and her development team have built Web APIs for inventory management. She expects that the Web APIs are published to [Azure App Service][az appsvc] and integrated with [Azure API Management][az apim] through Visual Studio. At the end of the day, her development team pays the minimal cost of transition between Azure API Management and the dev tool, Visual Studio, while working on the API development.
+Crystal and her development team have built Web APIs for inventory management. She expects that the Web APIs are published to [Azure App Service][az appsvc]. In addition to that, she also expects that it is integrated with [Azure API Management][az apim] through Visual Studio. At the end of the day, her development team pays the minimal switching cost between Azure API Management and Visual Studio during the development.
 
 
 [meet crystal]: ../media/meet-crystal.png
