@@ -35,6 +35,8 @@ TODO: add your scenario image
 -->
 TODO: describe the end-state
 
+
+:::image type="content" source="../media/2-enterprise-security.png" alt-text="Diagram of enterprise-class security." border="false":::
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
     Goal: List the steps they'll do to complete the exercise.
