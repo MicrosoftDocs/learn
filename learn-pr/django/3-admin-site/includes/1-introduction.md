@@ -1,11 +1,11 @@
 When you create applications, you'll eventually want to create individual permissions for site access. Creating an admin interface for employees or clients to manipulate content can be a cumbersome task. Once again Django comes to the rescue with a simple admin feature that's automatically created in projects. We now continue our journey through the Django platform by activating the admin site, adding user permissions, and exploring another view of the database.
 
-In this module, you'll learn:
+In this module, you'll learn how to:
 
-- How to enable the admin site.
-- How to create a super user.
-- How to add app models and access data.
-- How to set user permissions.
+- Enable the admin site.
+- Create a super user.
+- Add app models and access data.
+- Set user permissions.
 
 Prerequisites
 
