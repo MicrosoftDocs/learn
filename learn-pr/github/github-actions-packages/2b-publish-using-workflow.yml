@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-actions-packages.what-is-github-packages
+uid: learn.github.github-actions-packages.publish-using-workflow
 title: How to publish to GitHub Packages and GitHub Container Registry
 metadata:
   title: How to publish to GitHub Packages and GitHub Container Registry
