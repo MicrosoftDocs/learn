@@ -75,9 +75,9 @@ Rather than provide opinionated solutions the start small approach uses decision
 
 ### Deferred decisions
 
-When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework (CAF) guide implementation of those individual disciplines.
+When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework guide implementation of those individual disciplines.
 
-**Design impact:** You may need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
+**Design impact:** You might need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
 
 ### Refactoring
 
@@ -93,7 +93,7 @@ The concept of refactoring a landing zone is simple, but execution requires prop
 
 #### Development approach
 
-The advantage of a refactoring-based approach, is the ability to create parallel iteration paths for development. The image below provides an example of two parallel iteration paths: cloud adoption and cloud platform. Both progress at their own pace, with minimal risk of becoming a blocker to either team's daily efforts. Alignment on the adoption plan and refactoring guardrails can lead to agreement about milestones and clarity about future-state dependencies.
+The advantage of a refactoring-based approach, is the ability to create parallel iteration paths for development. The following image provides an example of two parallel iteration paths: cloud adoption and cloud platform. Both progress at their own pace, with minimal risk of becoming a blocker to either team's daily efforts. Alignment on the adoption plan and refactoring guardrails can lead to agreement about milestones and clarity about future-state dependencies.
 
 :::image type="content" source="../media/iterations.png" alt-text="Image showing landing zone parallel iteration." border="false":::
 *Figure 1: Landing zone parallel iteration.*
@@ -106,7 +106,7 @@ In this example, the planned iterations run as follows:
 - To prepare for the cloud adoption team's next deployment of 10 workloads, the cloud platform team works ahead to refactor and add a connected environment, treating the cloud as a perimeter network.
 - Before the adoption team can release their first production workload, the security team requires a security review. While the adoption team deploys their first 10 workloads, the platform team moves ahead to define and implement security requirements.
 - By the time the first workload is released to production, both teams should have enough learnings to prepare for a longer term shared service model. Centralizing core service architectures will help align governance and operations team. Centralizing core services will help prepare the adoption team to scale and release the next several waves of production workloads.
-- As the team approaches their goal of migrating 100 workloads, the team will natural begin to move towards more of a cloud center of excellence collaboration model and team structure.
+- As the team approaches their goal of migrating 100 workloads, the team will natural begin to move toward 	a cloud center of excellence collaboration model and team structure.
 
 Configuring an enterprise-ready environment will take time. This approach will not eliminate that requirement. Instead, this approach is designed to remove early blockers and create opportunities for the platform and adoption teams to learn together.
 
@@ -130,7 +130,7 @@ For this example, the above set of agreed upon conditions will allow the adoptio
 
 #### Meeting long-term requirements while refactoring
 
-The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
+The section of the Ready methodology on expanding your landing zone will aid in moving toward the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
 :::image type="content" source="../media/refactor-methodologies.png" alt-text="Image showing parallel landing zone iteration." border="false":::
 *Figure 2: Deeper methodologies assisting a parallel landing zone iteration.*

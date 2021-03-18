@@ -2,7 +2,7 @@ We shared the narrative for Tailwind Traders in the Getting Started module and o
 
 ## Planning for Tailwind Traders' migration effort
 
-In this module, we will build out a plan for Tailwind Trader's migration efforts. Below is an excerpt of the current state environment that will be migrated.
+In this module, we will build out a plan for the Tailwind Traders migration effort. Below is an excerpt of the current state environment that will be migrated.
 
 Tailwind Traders currently has three datacenters. One is located within the same office building in which their employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical and virtual servers. The virtualization platforms that they use are a mix between Hyper-V and VMware, as they've had different people with different strategy ideas leading their IT department over the years.
 
@@ -14,7 +14,7 @@ The leases for the two datacenters are due to run out in 18 months and 2 years. 
 
 ## Planning for Tailwind Traders' new innovation effort
 
-Additionally, the Retail Innovation team will be updating their CI/CD pipelines to deploy new innovative solutions to the cloud. We will use the same migration assessment tools to overcome some documentation challenges among the innovation team's past efforts. We will also use migration tools to test the compatibility of those solutions with basic Azure services. The inventory of data structures, applications, and other services will help to validate the team's DevOps deployments.
+Additionally, the retail innovation team will be updating their CI/CD pipelines to deploy new innovative solutions to the cloud. We will use the same migration assessment tools to overcome some documentation challenges among the innovation team's past efforts. We will also use migration tools to test the compatibility of those solutions with basic Azure services. The inventory of data structures, applications, and other services will help to validate the team's DevOps deployments.
 
 ## Building the cloud adoption plan(s)
 

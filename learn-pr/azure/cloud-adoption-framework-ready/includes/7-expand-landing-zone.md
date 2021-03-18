@@ -9,7 +9,7 @@ To accelerate your early adoption efforts, we suggest minimizing the number of b
 - Adhere to naming and tagging conventions.
 - Review networking options.
 - Implement additional identity and access management considerations.
-- Plan for parallel maturity of Govern, Security, and Manage methodologies.
+- Plan for parallel maturity of Govern, Manage, and Security methodologies.
 
 > [!CAUTION]
 > While this approach meets minimum technical standards, it may not initially meet your minimum operational standards. If security, governance, or operations management requirements must be met prior to your first adoption effort, then you might need to start executing that methodology prior to adoption. For an accelerated approach to an enterprise-ready environment, consider the options within **Start with Enterprise-scale** implementation.
@@ -26,7 +26,7 @@ At a minimum, you'll likely need two subscriptions: production and nonproduction
 *Figure 1: An initial subscription model with keys next to **production** and **nonproduction** boxes.*
 
 - Create one Azure subscription to contain your production workloads.
-- Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) for lower pricing.
+- Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true) for lower pricing.
 
 This approach has many benefits:
 
@@ -76,9 +76,9 @@ The CAF Migration landing zone blueprint demonstrates network configuration, but
 
 Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [RBAC considerations](/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true).
 
-## Plan for parallel maturity of Govern, Security, and Manage methodologies
+## Plan for parallel maturity of Govern, Manage, and Secure methodologies
 
 The above steps help you prepare for your first cloud adoption efforts. However, to reach true scale in the cloud, you'll need to continue to invest in your Azure landing zones to reach operating model requirements regarding governance, security, and operations management. Each of these requirements is addressed in parallel methodologies in the Cloud Adoption Framework and their associated Learn modules.
 
 > [!IMPORTANT]
-> If parallel maturity is not a desirable approach, consider completing the CAF Enterprise-Scale Learn modules. The approach covered in those modules will guide you through a richer implementation option of Azure landing zones. That approach provides an opinionated implementation for all of the above considerations. That implementation establishes an environment that's ready to support enterprise operations.
+> If parallel maturity is not a desirable approach, consider completing the Microsoft Learn modules for Cloud Adoption Framework enterprise-scale. The approach covered in those modules will guide you through a richer implementation option of Azure landing zones. That approach provides an opinionated implementation for all of the above considerations. That implementation establishes an environment that's ready to support enterprise operations.

@@ -4,7 +4,7 @@ As your organization moves forward in your cloud adoption journey, proper planni
 
 In this stage, you focus on two main actions:
 
-- **Rationalize your digital estate:** Understand the organization's current digital estate to maximize return and minimize risks by running a Workload Assessment.
+- **Rationalize your digital estate:** Understand the organization's current digital estate to maximize return and minimize risks by running a workload assessment.
 - **Create your cloud adoption plan:** Develop a plan where prioritized workloads are defined and aligned with business outcomes.
 
 |||
@@ -124,7 +124,7 @@ Unsupported, misaligned, or out-of-date on-premises applications might be too ex
 :::column:::
 
 - Accelerate innovation.
-- Build apps faster.
+- Build applications faster.
 - Reduce operational cost.
 
 :::column-end:::
@@ -132,7 +132,7 @@ Unsupported, misaligned, or out-of-date on-premises applications might be too ex
 :::row:::
 :::column span="3":::
 
- ![Cloud Computing](../media/replace.png) **Replace**
+ ![Cloud computing](../media/replace.png) **Replace**
 
 :::column-end:::
 :::column:::
@@ -177,6 +177,6 @@ Here are the key points from this unit:
 :::row-end:::
 
 - In the plan stage, there are two major actions: rationalizing your digital estate and creating your cloud adoption plan.
-- In the Plan phase, there are five options for cloud rationalization: Rehost, Refactor, Rearchitect, Rebuild/New, and Replace. During this process, we recommend that you proceed incrementally.
+- In the Plan phase, there are five options for cloud rationalization: rehost, refactor, rearchitect, rebuild/new, and replace. During this process, we recommend that you proceed incrementally.
 
 Let's talk next about how to prepare your organization, your business processes, and your environment for your cloud adoption journey.

@@ -143,7 +143,7 @@ Follow the prescribed steps to [publish and assign this sample blueprint to your
 
 Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [Azure governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) can provide insights about your current governance configuration.
 
-:::image type="content" source="../media/visualizer.png" alt-text="The CAF Governance Visualizer." border="false":::
+:::image type="content" source="../media/visualizer.png" alt-text="The Azure Governance Visualizer." border="false":::
 *Figure 7: The Azure governance Visualizer.*
 
 Deploy the Azure governance visualizer to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.

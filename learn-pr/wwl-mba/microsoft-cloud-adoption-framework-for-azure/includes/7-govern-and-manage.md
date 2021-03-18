@@ -18,11 +18,11 @@ Because governance requirements will evolve throughout the cloud adoption journe
 Incremental governance relies on a small set of corporate policies, processes, and tools to establish a foundation for adoption and governance. That foundation is called a *minimum viable product (MVP)*. An MVP allows the governance team to quickly incorporate governance into implementations throughout the adoption lifecycle. After this MVP is deployed, additional layers of governance can be quickly incorporated into the environment.
 
 > [!TIP]
-> To determine where you should start to implement your own cloud governance, use the Microsoft Assessment Tools linked in the *Summary and resources* unit at the end of this module.
+> To determine where you should start to implement your own cloud governance, use the Microsoft assessment tools linked in the *Summary and resources* unit at the end of this module.
 
 ## Cloud management
 
-The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between stability and operational costs. Stable business operations lead to stable revenue streams. Controlled operational costs reduce the overhead to drive more profit from the business processes.
+The goal of the Manage methodology is to maximize ongoing business returns by creating balance between stability and operational costs. Stable business operations lead to stable revenue streams. Controlled operational costs reduce the overhead to drive more profit from the business processes.
 
 > [!TIP]
 > Links to the scalability, availability, and resiliency resources are available in the *Summary and resources* unit at the end of this module.
@@ -41,6 +41,6 @@ Here are the key points from this unit:
 - As your organization moves or deploys new applications to the cloud, it's important to consider these aspects of operating a cloud platform:
   - Define governance solutions for your cloud environment.
   - Manage your cloud environment.
-- The Cloud Adoption Framework governance model identifies key areas of importance. Each area relates to different types of risks the organization must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
+- The Cloud Adoption Framework governance model identifies key areas of importance. Each area relates to different types of risks the organization must address as it adopts more cloud services. The Five Disciplines of Cloud Governance are Cost Management, Security Baseline, Resource Consistency, Identity Baseline, and Deployment Acceleration.
 
 Next, let's see what you've learned about the Cloud Adoption Framework with a knowledge check.

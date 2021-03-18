@@ -33,7 +33,7 @@ Since this step could affect production systems, migration should be completed d
 
 :::image type="content" source="../media/6-vm-machines.png" alt-text="Screenshot of the Server migration replicating machines page in Azure Admin center." border="false":::
 
-Now it will run through the production migration process and you can check the status as it validates the pre-requisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
+Now it will run through the production migration process and you can check the status as it validates the prerequisites, prepares for migration, creates the Azure VM, and starts the Azure VM.
 
 ## Release steps
 

@@ -20,7 +20,7 @@ Here are the six key takeaways:
 ![Icon of lightbulb](../media/Key-Takeaway.png)
 :::column:::
 
-1. The three main components of the Cloud Adoption Framework (Plan, Ready, and Adopt) can be applied to different stages for cloud adopters. They should be revisited often because cloud adoption is an ongoing journey, not a destination.
+1. The three main components of the Cloud Adoption Framework (plan, ready, and adopt) can be applied to different stages for cloud adopters. They should be revisited often because cloud adoption is an ongoing journey, not a destination.
 
 1. A modernization trigger is an event that initiates the cloud adoption journey for an enterprise. The most common modernization triggers include datacenter contracts expiring, the need to deliver applications and features faster, urgent capacity needs, a software or hardware refresh, the need to address security threats, compliance, enabling new business opportunities, and software end of support.
 
@@ -40,54 +40,54 @@ Here are the six key takeaways:
 Use these resources to discover more.
 
 > [!TIP]
-> To open a resource link, select and hold (or right-click) and select Open in a new tab or window. That way, you can check out the resource and easily return to the module tab to unlock your achievement when you're finished.
+> To open a resource link, select and hold (or right-click) and select **Open** in a new tab or window. That way, you can check out the resource and easily return to the module tab to unlock your achievement when you're finished.
 
 **Microsoft Cloud Adoption Framework for Azure:**
 
-- [Microsoft Cloud Adoption Framework for Azure in documentation](/azure/architecture/cloud-adoption?branch=master)
+- [Microsoft Cloud Adoption Framework for Azure documentation](/azure/cloud-adoption-framework/)
 
 **Financial planning:**
 
-- [Total Cost of Ownership (TCO) Calculator](https://www.tco.microsoft.com/)
+- [Total cost of ownership (TCO) calculator](https://azure.microsoft.com/pricing/tco/calculator/)
 
-- [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)
+- [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 
 - [Azure Cost Management](https://azure.microsoft.com/services/cost-management/)
 
-- [Create a financial model for cloud transformation](/azure/architecture/cloud-adoption/business-strategy/financial-models?branch=master)
+- [Create a financial model for cloud transformation](/azure/cloud-adoption-framework/strategy/financial-models)
 
 **Skills readiness paths:**
 
-- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
-- [Microsoft Certified: Azure Solutions Architect Expert](https://www.microsoft.com/learning/azure-solutions-architect.aspx)
-- [Solutions Architect: Learning path](/learn/browse/?roles=solution-architect&resource_type=learning%20path)
+- [Azure fundamentals part 1: describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+- [Microsoft certified: Azure solutions architect expert](/learn/certifications/azure-solutions-architect/?wt.mc_id=learningredirect_certs-web-wwl)
+- [Solutions architect: learning path](/learn/browse/?roles=solution-architect&resource_type=learning%20path)
 
 **Cloud migration:**
 
-- [Migration in documentation](/azure/architecture/cloud-adoption/migrate?branch=master)
+- [Migration in documentation](/azure/cloud-adoption-framework/migrate/)
 
-- [Migration considerations](/azure/architecture/cloud-adoption/migrate/migration-considerations?branch=master)
+- [Migration considerations](/azure/cloud-adoption-framework/migrate/migration-considerations/)
 
-- [Migration tools decision guide](/azure/architecture/cloud-adoption/decision-guides/migrate-decision-guide?branch=master)
+- [Migration tools decision guide](/azure/cloud-adoption-framework/decision-guides/migrate-decision-guide/)
 
 **Cloud governance:**
 
-- [Governance Benchmark Tool](https://aka.ms/CAF/gov/Assess)
+- [Governance benchmark tool](https://cafbaseline.com)
 
-- [Governance in documentation](/azure/architecture/cloud-adoption/governance?branch=master)
+- [Governance in the Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/)
 
 - [Azure Blueprints samples](/azure/governance/blueprints/samples/)
 
 **Cloud adoption plan:**
 
-- Review [sample business outcomes](/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index).
+- Review [sample business outcomes](/azure/cloud-adoption-framework/strategy/business-outcomes/).
 
-- Review [approaches to digital estate planning](/azure/architecture/cloud-adoption/digital-estate/approach).
+- Review [approaches to digital estate planning](/azure/cloud-adoption-framework/digital-estate/approach).
 
 - Document those findings in the provided [business outcome template](https://archcenter.blob.core.windows.net/cdn/business-outcome-template.xlsx) to share with internal partners during the transformation journey.
 
-- Identify the [learning metrics](/azure/architecture/cloud-adoption/business-strategy/learning-metrics) that best represent progress toward the identified business outcomes.
+- Identify the [learning metrics](/azure/cloud-adoption-framework/strategy/learning-metrics) that best represent progress toward the identified business outcomes.
 
-- Establish a [financial model](/azure/architecture/cloud-adoption/business-strategy/financial-models?branch=master) that aligns with the outcomes and learning metrics.
+- Establish a [financial model](/azure/cloud-adoption-framework/strategy/financial-models) that aligns with the outcomes and learning metrics.
 
-- Document and incorporate the [digital estate](/azure/architecture/cloud-adoption/digital-estate?branch=master) in the current environment to populate the financial model.
+- Document and incorporate the [digital estate](/azure/cloud-adoption-framework/digital-estate/) in the current environment to populate the financial model.

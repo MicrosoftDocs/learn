@@ -86,7 +86,7 @@ This operating model focuses on democratizing decisions and delegated responsibi
 
 **Strategic priority:** The strategic priority operating model prioritizes democratization to balance innovation and control. This is a strategic priority for large organizations that need to protect existing interests while empowering innovation to keep pace with market changes.
 
-**Organization:** Enterprise operations empowers build and operate capabilities in each workload team. is a series of teams aligned by function, such as governance, security, and operations. Uniting the workload and supporting teams is a dedicated cloud center of excellence team to coordinate activities and ensure operational excellence across the cloud foundation.
+**Organization:** Enterprise operations empowers build and operate capabilities in each workload team, a series of teams aligned by function, such as governance, security, and operations. Uniting the workload and supporting teams is a dedicated cloud center of excellence team to coordinate activities and ensure operational excellence across the cloud foundation.
 
 **Portfolio scope:** The scope of enterprise operations focuses on the holistic cloud foundation to ensure that foundational utilities are centralized and available to all landing zones. Landing zones and dedicated workload environments can then be deployed in a self-service capacity with all the required dependencies provided by the cloud foundation.
 
@@ -118,7 +118,7 @@ This approach to operations is discouraged when ever possible. This approach is 
 
 **Accountability (separation of duties):** Accountability will vary among business units. Separation of duties from a central perspective is difficult to achieve.
 
-**Standardization:** The first step towards standardization in a distributed operations model is to gain a clear view of the digital estate for the full portfolio. A data-driven approach will start to identify commonalities in the portfolio that lean towards a central or enterprise operations model.
+**Standardization:** The first step toward standardization in a distributed operations model is to gain a clear view of the digital estate for the full portfolio. A data-driven approach will start to identify commonalities in the portfolio that lean toward a central or enterprise operations model.
 
 **Operations priority:** Operations priority in this model is around data. Centralizing data using tools designed for unified operations will allow a cloud center of excellence team to coach and mentor the various business units during transitions or maturity efforts. Before forcing a consistent operations priority, evaluate the portfolio of workload operations to ensure proper tooling and baselines.
 
