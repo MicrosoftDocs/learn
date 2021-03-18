@@ -1,4 +1,4 @@
-<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api which will be transferred to the MicrosoftDocs org. -->
+<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api, which will be transferred to the MicrosoftDocs org. -->
 
 :::row:::
   :::column span="4":::
@@ -10,14 +10,14 @@
 :::row-end:::
 
 
-Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to easily discover their endpoints through an Open API document.
+Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an Open API document easily.
 
-In this exercise, you will integrate your Web API application running on Azure App Service with Azure API Management, through Visual Studio.
+In this exercise, you will integrate your Web API application running on Azure App Service with Azure API Management through Visual Studio.
 
 
 ## Prerequisites ##
 
-In order to complete this unit, you need to have Azure account. You can get a free account at [this page][az account].
+In order to complete this unit, you need to have an Azure account. You can get a free account at [this page][az account].
 
 
 ## Download Web API Application to Visual Studio ##
@@ -32,7 +32,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
 
 ## Integrate Web API Application with Azure API Management through Visual Studio ##
 
-The downloaded Web API application is ready for publish. In order to deploy the Web API application, run the following steps.
+The downloaded Web API application is ready to publish. In order to deploy the Web API application, run the following steps.
 
 1. In **Solution Explorer**, right-click the project and select the **Publish** menu.
 
@@ -70,7 +70,7 @@ The downloaded Web API application is ready for publish. In order to deploy the 
 
    ![Finish API Management Publish][image-10]
 
-1. Your Web API app is ready for deploy. Check the bottom of Visual Studio that the Azure API Management instance is also configured for integration. Click the **Publish** button at the right-top corner of Visual Studio.
+1. Your Web API app is ready to deploy. Check the bottom of Visual Studio that the Azure API Management instance is also configured for integration. Click the **Publish** button at the right-top corner of Visual Studio.
 
    ![Publish Web API][image-11]
 
@@ -103,7 +103,7 @@ The response from the API request is shown.
 
 ![API Management - API Test Result][image-17]
 
-Congratulations! You've now integrated your Web API app with Azure API Management, through Visual Studio!
+Congratulations! You've now integrated your Web API app with Azure API Management through Visual Studio!
 
 
 ## Key Takeaways ##
@@ -137,7 +137,7 @@ After this unit, you are now able to:
 [image-17]: ../media/4-integrate-web-api-with-azure-api-management-17.png
 
 
-<!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one, once it's transferred. -->
+<!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one once it's transferred. -->
 [gh zip]: https://github.com/justinyoo/inventory-management-demo-web-api/archive/v1.0.0.zip
 
 [az account]: https://azure.microsoft.com/free/

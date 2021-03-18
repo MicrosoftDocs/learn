@@ -1,4 +1,4 @@
-[Open API][openapi] defines a standard interface description for Web APIs. With the Open API document, both humans and machines are able to discover and understand services without having to access to the resources. In addition to that, consumers of the APIs can understand and interact with the remote service with minimal amount of implementation.
+[Open API][openapi] defines a standard interface description for Web APIs. With the Open API document, both humans and machines can discover and understand services without having to access the resources. In addition to that, consumers of the APIs can understand and interact with the remote service with minimal implementation.
 
 Green Leaf Heating and Air Conditioning, or Green Leaf for short, is a full-service heating and air conditioning contractor. The core of Green Leaf's business involves sending field technicians to customers' houses to install and repair all brands of heating and air conditioning equipment.
 
@@ -14,7 +14,7 @@ Green Leaf's business has grown exponentially over the past year. Along with tha
 :::row-end:::
 
 
-Crystal and her development team have built Web APIs for inventory management. She expects that the Web APIs are published to [Azure App Service][az appsvc] and integrated with [Azure API Management][az apim] through Visual Studio so that her development team pays the minimal cost of transition between Azure API Management and dev tool, Visual Studio, while working on the API development.
+Crystal and her development team have built Web APIs for inventory management. She expects that the Web APIs are published to [Azure App Service][az appsvc] and integrated with [Azure API Management][az apim] through Visual Studio. At the end of the day, her development team pays the minimal cost of transition between Azure API Management and the dev tool, Visual Studio, while working on the API development.
 
 
 [meet crystal]: ../media/meet-crystal.png

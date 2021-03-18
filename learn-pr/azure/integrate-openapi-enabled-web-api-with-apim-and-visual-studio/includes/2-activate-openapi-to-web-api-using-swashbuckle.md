@@ -1,4 +1,4 @@
-<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api which will be transferred to the MicrosoftDocs org. -->
+<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api, which will be transferred to the MicrosoftDocs org. -->
 
 :::row:::
   :::column span="4":::
@@ -10,9 +10,9 @@
 :::row-end:::
 
 
-Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to easily discover their endpoints through an Open API document.
+Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an Open API document easily.
 
-In this exercise, you will double-check whether the Open API document generation is ready by implementing Swagger UI and Swashbuckle into the Web API application.
+This exercise will double-check whether the Open API document generation is ready by implementing Swagger UI and Swashbuckle into the Web API application.
 
 ## Download Web API Application to Cloud Shell ##
 
@@ -20,7 +20,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
 
 1. To clone the sample Web API Project from GitHub, in the Cloud Shell, run the following `git clone` command.
 
-   <!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one, once it's transferred. -->
+   <!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one once it's transferred. -->
 
     ```bash
     git clone https://github.com/justinyoo/inventory-management-demo-web-api \
@@ -42,7 +42,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
     code .
     ```
 
-   The built-in editor opens in the Cloud Shell, with all files belonging to the project in the left-hand navigation pane of the editor.
+   The built-in editor opens in the Cloud Shell, with all files belonging to the project in the editor's left-hand navigation pane.
 
 
 ## Confirm Open API Feature Readiness ##
@@ -56,7 +56,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
     </ItemGroup>
     ```
 
-   The `Version` value can vary but the NuGet package of `Swashbuckle.AspNetCore` must exist.
+   The `Version` value can vary, but the NuGet package of `Swashbuckle.AspNetCore` must exist.
 
 1. If it doesn't exist, run the following command to add the NuGet package.
 
@@ -67,7 +67,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
    The latest version of `Swashbuckle.AspNetCore` has been installed.
 
 1. Select `Startup.cs` at the left-hand navigation pane of the editor.
-1. Find the `using` directive below, at the top of the file. If it doesn't exist, add it.
+1. Find the `using` directive below at the top of the file. If it doesn't exist, add it.
 
     ```csharp
     using Microsoft.OpenApi.Models;

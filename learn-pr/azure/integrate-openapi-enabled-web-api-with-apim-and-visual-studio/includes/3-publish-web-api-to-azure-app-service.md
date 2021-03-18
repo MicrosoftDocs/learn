@@ -1,4 +1,4 @@
-<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api which will be transferred to the MicrosoftDocs org. -->
+<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api, which will be transferred to the MicrosoftDocs org. -->
 
 :::row:::
   :::column span="4":::
@@ -10,14 +10,14 @@
 :::row-end:::
 
 
-Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to easily discover their endpoints through an Open API document.
+Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an Open API document easily.
 
-In this exercise, you will deploy your Web API application to [Azure App Service][az appsvc], through Visual Studio.
+In this exercise, you will deploy your Web API application to [Azure App Service][az appsvc] through Visual Studio.
 
 
 ## Prerequisites ##
 
-In order to complete this unit, you need to have Azure account. You can get a free account at [this page][az account].
+In order to complete this unit, you need to have an Azure account. You can get a free account at [this page][az account].
 
 
 ## Download Web API Application to Visual Studio ##
@@ -32,7 +32,7 @@ Crystal has published the source code of the Web API application to GitHub. In o
 
 ## Deploy Web API Application to Azure App Service through Visual Studio ##
 
-The downloaded Web API application is ready for publish. In order to deploy the Web API application, run the following steps.
+The downloaded Web API application is ready to publish. In order to deploy the Web API application, run the following steps.
 
 1. In **Solution Explorer**, right-click the project and select the **Publish** menu.
 
@@ -54,7 +54,7 @@ The downloaded Web API application is ready for publish. In order to deploy the 
 
    ![Create New App Service][image-06]
 
-1. You new **Azure App Service** instance has been created. Click the **Next** button.
+1. Your new **Azure App Service** instance has been created. Click the **Next** button.
 
    ![New App Service Created][image-07]
 
@@ -62,7 +62,7 @@ The downloaded Web API application is ready for publish. In order to deploy the 
 
    ![Finish New App Service][image-08]
 
-1. Your Web API app is ready for deploy. Click the **Publish** button at the right-top corner of Visual Studio.
+1. Your Web API app is ready to deploy. Click the **Publish** button at the right-top corner of Visual Studio.
 
    ![Publish Web API][image-09]
 
@@ -73,7 +73,7 @@ The downloaded Web API application is ready for publish. In order to deploy the 
 
 ## Verify Web API Application on Azure App Service ##
 
-In order to make sure your Web API app is properly deployed, open your web browser and enter the website URL copied from the previous step. You will see the **Page Not Found** error, which is expected.
+In order to make sure your Web API app is appropriately deployed, open your web browser and enter the website URL copied from the previous step. You will see the **Page Not Found** error, which is expected.
 
 ![Page Not Found][image-11]
 
@@ -99,7 +99,7 @@ Then, you will see the result.
 
 ![Swagger UI Page - Executed][image-15]
 
-Congratulations! You've now published your Web API app to Azure App Service, through Visual Studio!
+Congratulations! You've now published your Web API app to Azure App Service through Visual Studio!
 
 
 ## Key Takeaways ##
@@ -130,7 +130,7 @@ After this unit, you are now able to:
 [image-15]: ../media/3-publish-web-api-to-azure-app-service-15.png
 
 
-<!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one, once it's transferred. -->
+<!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one once it's transferred. -->
 [gh zip]: https://github.com/justinyoo/inventory-management-demo-web-api/archive/v1.0.0.zip
 
 [az account]: https://azure.microsoft.com/free/
