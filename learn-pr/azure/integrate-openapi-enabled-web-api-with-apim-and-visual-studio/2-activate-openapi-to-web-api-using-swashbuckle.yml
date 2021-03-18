@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.2-activate-openapi-to-web-api-using-swashbuckle
-title: Excercise - Activate Open API to Web API with Swashbuckle
+title: Exercise - Activate Open API to Web API with Swashbuckle
 metadata:
-  title: Excercise - Activate Open API to Web API with Swashbuckle
+  title: Exercise - Activate Open API to Web API with Swashbuckle
   description: You can enable the Open API feature to a Web API app, using Swashbuckle
   ms.date: 03/19/2021
   author: justinyoo
