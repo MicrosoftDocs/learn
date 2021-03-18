@@ -31,6 +31,6 @@ quiz:
     - content: 'FormHelper'
       isCorrect: true
       explanation: 'Correct. This class is part of Crispy forms that defines the rendering behavior of forms.'
-    - content: 'action'
+    - content: 'Action'
       isCorrect: false
       explanation: 'Incorrect. This attribute is used to return form data to a specific file.'

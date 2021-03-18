@@ -24,7 +24,7 @@ You'll need the following resources installed on your computer to complete the e
 
 We'll use [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) as our code editor.
 
-1. In the same command or terminal window, enter the following command to open the folder in Visual Studio Code.
+In the same command or terminal window, enter the following command to open the folder in Visual Studio Code.
 
     ```bash
     code .
@@ -51,7 +51,7 @@ We'll follow the best practice of working with [virtual environments](https://do
 
 The starter project uses a [requirements.txt](https://pip.pypa.io/en/latest/user_guide/?azure-portal=true&#requirements-files) file to contain the list of all necessary packages. We can install them by using `pip`.
 
-1. In the same **terminal** window, run the following command to install the required packages.
+In the same **terminal** window, run the following command to install the required packages.
 
     ```bash
     pip install -r requirements.txt
@@ -61,7 +61,7 @@ The starter project uses a [requirements.txt](https://pip.pypa.io/en/latest/user
 
 Django can host the application locally. We'll do this step by using the built-in terminal window in Visual Studio Code.
 
-1. Enter the following command in the same **terminal** window.
+Enter the following command in the same **terminal** window.
 
     ```bash
     python manage.py runserver
