@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.PyTorch.2-representing-text
+title: Representing Text
+metadata:
+  title: Representing Text
+  description: In this unit, we discuss different ways text can be represented as tensors, and we show how to solve simplest text classification problem.
+  author: ai-advocates 
+  ms.author: ai-advocates
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-representing-text.ipynb)]

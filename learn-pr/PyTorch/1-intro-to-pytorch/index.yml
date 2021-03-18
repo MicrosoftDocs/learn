@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.PyTorch.1-intro-to-pytorch
+metadata:
+  title: Introduction to Machine Learning with PyTorch
+  description: Learn how to build machine learning models with PyTorch
+  ms.date: 06/04/2020
+  author: ai-adovcates
+  ms.author: ai-adovcates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to PyTorch
+summary: Learn how to build machine learning models with PyTorch.
+abstract: |
+  In this module you will:
+  - Learn about the complete ML workflow implemented in PyTorch.
+iconUrl: /learn/achievements/.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+products:
+- azure
+prerequisites: None
+units:
+- learn.PyTorch.1-introduction
+- learn.PyTorch.2-tensors
+- learn.PyTorch.3-data
+- learn.PyTorch.4-transforms
+- learn.PyTorch.5-model
+- learn.PyTorch.6-loss
+- learn.PyTorch.7-optimization
+- learn.PyTorch.8-inference
+- learn.PyTorch.9-ml-overview
+- learn.PyTorch.11-summary
+
+badge:
+  uid: learn.PyTorch.badge

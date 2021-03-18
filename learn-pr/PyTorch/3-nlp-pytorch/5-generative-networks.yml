@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.PyTorch.5-generative-networks
+title: Generative Recurrent Networks
+metadata:
+  title: Generative Recurrent Networks
+  description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
+  author: ai-advocates 
+  ms.author: 
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-generative-networks.ipynb)]
