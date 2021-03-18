@@ -66,9 +66,9 @@ After you have built the image, authenticated and signed in to the GitHub Contai
 ```bash
 echo $PAT | docker login ghcr.io -u USERNAME --password-stdin
 
-docker tag app ghcr.io/OWNER/IMAGE_NAME:latest
+docker tag IMAGE_ID ghcr.io/OWNER/IMAGE_NAME:latest
 
-docker push ghcr.io/OWNER/IMAGE_NAME
+docker push ghcr.io/OWNER/IMAGE_NAME:latest
 ```
 
 > [!Note]
