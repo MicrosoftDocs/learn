@@ -26,7 +26,7 @@ quiz:
     - content: You want to analyze and address problems that affect your application's health.
       isCorrect: true
       explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
-  - content: What component of application performance can be monitored by DevOps teams when using Azure Monitor Application Insights?
+  - content: What aspect of application performance can be monitored by DevOps teams when using Azure Monitor Application Insights?
     choices:
     - content: Key Vault latency
       isCorrect: false
