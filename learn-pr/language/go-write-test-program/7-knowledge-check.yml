@@ -31,9 +31,9 @@ quiz:
       explanation: "Incorrect. This file name would not be recognized as a test file."
   - content: "What's the command to run tests in verbose mode?"
     choices:
-    - content: "`go tests -v`"
+    - content: "`go test -v`"
       isCorrect: true
-      explanation: "Correct! When you run `go tests -v`, all of the files that end in `_test.go` will run. You then get detailed, or verbose, output of the test results."
+      explanation: "Correct! When you run `go test -v`, all of the files that end in `_test.go` will run. You then get detailed, or verbose, output of the test results."
     - content: "`go test main.go -v`"
       isCorrect: false
       explanation: "Incorrect. This command won't run any test files."
