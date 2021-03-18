@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.create-foundation-modern-apps.configure-environment  
+uid: learn.azure.create-foundation-modern-apps.exercise-configure-environment  
 title: Configure your development environment  
 metadata:
   unitType: learning-content  
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/configure-environment.md)]
+  [!include[](includes/3-exercise-configure-environment.md)]

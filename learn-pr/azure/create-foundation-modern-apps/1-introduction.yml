@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 05
 content: |
-  [!include[](includes/introduction.md)]
+  [!include[](includes/1-introduction.md)]

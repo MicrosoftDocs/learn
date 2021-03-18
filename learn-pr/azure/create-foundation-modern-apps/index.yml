@@ -34,8 +34,8 @@ products:
   - azure-devops
 units:  
 - learn.azure.create-foundation-modern-apps.introduction
-- learn.azure.create-foundation-modern-apps.knowledge-check
-- learn.azure.create-foundation-modern-apps.configure-environment
+- learn.azure.create-foundation-modern-apps.architect-solution
+- learn.azure.create-foundation-modern-apps.exercise-configure-environment
 - learn.azure.create-foundation-modern-apps.modern-database-requirements
 - learn.azure.create-foundation-modern-apps.exercise-deploy-azure-sql-database
 - learn.azure.create-foundation-modern-apps.ci-cd-for-azure-sql-database
