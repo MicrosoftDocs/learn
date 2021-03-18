@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.blob-storage-image-upload-swa.2-upload-to-blob-storage
-title: Unit
+title: Upload to Blob Storage
 metadata:
-  title: Unit
+  title: Upload to Blob Storage
   description: Describe unit
   author: videlalvaro
   ms.author: alvidela

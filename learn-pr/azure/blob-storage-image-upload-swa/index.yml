@@ -35,7 +35,7 @@ prerequisites: |
 units:
   - learn.blob-storage-image-upload-swa.1-introduction
   - learn.blob-storage-image-upload-swa.2-upload-to-blob-storage
-  - learn.blob-storage-image-upload-swa.3-exercise-unit
+  - learn.blob-storage-image-upload-swa.3-exercise-setup-blob-storage-account
   - learn.blob-storage-image-upload-swa.4-serverless-backend
   - learn.blob-storage-image-upload-swa.5-exercise-serverless
   - learn.blob-storage-image-upload-swa.6-frontend
