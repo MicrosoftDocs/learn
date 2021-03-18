@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Learn how to display lists.
   - Learn about conditional rendering.
-prerequisites: 
+prerequisites: |
   - Knowledge of HTML and CSS
   - Knowledge of JavaScript
   - Familiarity with Vue.js and directives
