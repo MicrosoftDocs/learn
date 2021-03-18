@@ -12,10 +12,11 @@ By the end of this module, you will be able to create and configure an Azure HPC
 
 By the end of this module the learner will be able to:
 
+1. Understand what an Azure HPC Cache is.
+1. List the pre-requisites for an Azure HPC Cache.
 1. Create an Azure HPC Cache.
 1. Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
-1. Configure (Attach) virtual client machines to read from the cache.
-1. Read and process storage data using client machines.
+1. Attach virtual client machines to read from the cache.
 
 ## Prerequisites
 

@@ -1,7 +1,3 @@
-You are a storage administrator at a digital animation studio.
-A fast-approaching deadline has you looking for ways to accelerate storage so you can produce movie scenes faster.
-Your first goal is to determine if a caching service like Azure HPC Cache can help you render scenes faster.
-You’re using Linux-based clients to access NFS (POSIX) storage.
 
 ## Azure HPC Cache
 
@@ -17,6 +13,8 @@ When compute clients are waiting for storage responses, they aren’t computing.
 Instead of Azure compute clients accessing slower storage directly, clients access Azure HPC Cache for faster access to data.
 Azure HPC Cache reads from customer storage and stores frequently-accessed data and stores it in memory and high-speed disks.
 
+![Diagram showing clients connecting to the cache which is then connected to data center storage via Express Route.](../media/hpc-cache-architecture-diagram.png)
+
 Azure HPC Cache can be configured to access network-attached storage (NAS) in a customer’s data center.
 When clients need to access data, they request it from Azure HPC Cache which reads it from the NAS.
 When multiple clients read the same data, the cache supplies it faster than NAS.
@@ -29,7 +27,7 @@ A few ideal use cases include:
 
 - Media and entertainment rendering videos
 - Financial services running financial simulations
-- Life sciences comparing genomic sequences (DNA)
+- Life sciences comparing genomic (DNA) sequences
 
 In each of these cases, customers are using thousands of compute cores to run workloads against a single, static data set using NFS.
 

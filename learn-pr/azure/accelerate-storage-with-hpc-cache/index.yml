@@ -8,7 +8,7 @@ metadata:
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: accelerate-storage-with-hpc-cache  
+title: Accelerate High Performance Computing storage with Azure HPC Cache  
 summary: Create a virtual caching solution for NFS storage. Client machines will connect to the cache, read data, and process the data.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to: 
@@ -16,7 +16,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - List the pre-requisites for an Azure HPC Cache.
     - Create an Azure HPC Cache.
     - Configure an Azure HPC Cache to accelerate a Linux-based filesystem.
-    - Attach virtual client machines to read from the cache.objective 1
+    - Attach virtual client machines to read from the cache.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with NFS storage concepts such as mount, export, and namespace.
   - Familiarity with networking concepts such as subnet, DNS, and TCP/UDP ports.
