@@ -15,7 +15,6 @@ abstract: |
   - Assess the benefits of Form Recognizer
   - Describe what Form Recognizer is
   - Define scenarios where Form Recognizer can be applied
-  - Decide if Form Recognizer is the right choice for your scenario
 prerequisites: A basic familiarity with Azure
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:
