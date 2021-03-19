@@ -56,6 +56,7 @@ Before making architectural changes, consult the technical lead for the workload
 The above best practices are actionable, but how and when do you apply them? The Cost Management discipline is a continuous effort that involving multiple processes and roles.
 
 :::image type="content" source="../media/cost-management-process.png" alt-text="The Cost Management discipline as a process." border="false":::
+
 *Figure 1: The Cost Management discipline as a process.*
 
 Work with the central operations and workload teams to ensure proper ownership of each Cost Management discipline best practice in Figure 1. Based on how you manage workloads in your environment, some best practices might move between teams. While select organizations place all of the cost management burden on central IT and neglect accountability for the workload teams, other organizations place all of the cost management burden on the workload team. Here, central IT serves only as a reporting and budget management function. Most organizations fall somewhere between these two extremes.

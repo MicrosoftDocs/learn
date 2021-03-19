@@ -1,4 +1,5 @@
 :::image type="content" source="../media/logo.png" alt-text="The Tailwind Traders logo." border="false":::
+
 *Figure 1: The Tailwind Traders logo.*
 
 Tailwind Traders is a modern commerce company. For over 30 years, the company has been a popular retail destination, growing to over 50 physical stores. Several years ago, their chief executive officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
@@ -8,6 +9,7 @@ Tailwind Traders is a modern commerce company. For over 30 years, the company ha
 The Tailwind Traders retail innovation team uses technology to continually redefine the company's position as a leader in modern commerce.
 
 :::image type="content" source="../media/retail-innovations.png" alt-text="An image of the website and app that started retail innovation efforts." border="false":::
+
 *Figure 2: The website and application that started the retail innovation efforts.*
 
 The retail innovation team reports to the company's chief technology officer (CTO), who was the CEO of the acquired e-commerce startup. Those technology solutions are the primary hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. A few examples of those innovations include:
@@ -20,6 +22,7 @@ The retail innovation team reports to the company's chief technology officer (CT
 Beyond new innovations, Tailwind Traders' central IT teams support the back office and store technologies.
 
 :::image type="content" source="../media/balance.png" alt-text="A graphic showing a balance of speed and control." border="false":::
+
 *Figure 3: A balance of speed and control.*
 
 The retail innovation team is a division of the company's IT team. That team is led by Tailwind Traders' chief information officer (CIO). When you think of Tailwind Traders, you might first think of e-commerce and innovation. This is just the beginning of the company's technical capability and a small portion of the overall IT spend. The company supports 3,500 employees, and less than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers. Beyond core innovation, the IT team supports the following types of technologies:
@@ -34,6 +37,7 @@ The retail innovation team is a division of the company's IT team. That team is 
 The CIO of Tailwind Traders has recently retired. The new CIO is focused on improving technical operations in a number of areas to fuel greater innovation throughout the company while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
 :::image type="content" source="../media/ccoe-paradigm-shift.png" alt-text="An analogy using traffic routing to demonstrate the shift in IT operations." border="false":::
+
 *Figure 4: The shift in IT operations.*
 
 A cornerstone of this strategy will be a shift in the operating model, moving from a centralized command and control operating model to a model that focuses on delegated responsibilities led by a cloud center of excellence team. This transition is expected to take several years. The CIO will be looking for small incremental steps to transition in each of the coming projects.

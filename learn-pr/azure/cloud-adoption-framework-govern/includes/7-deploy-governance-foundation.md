@@ -19,6 +19,7 @@ Understanding these strategic priorities will help identify the best starting po
 The basic foundation for all governance starts with consistent resource organization.
 
 :::image type="content" source="../media/resource-consistency.png" alt-text="Resource consistency." border="false":::
+
 *Figure 1: Resource consistency.*
 
 The three main components of resource organization are:
@@ -32,6 +33,7 @@ The three main components of resource organization are:
 To accommodate long-term governance needs, design a high-level hierarchy but implement only what you need. Add as requirements dictate new nodes on the hierarchy.
 
 :::image type="content" source="../media/management-group-hierarchy.png" alt-text="management group hierarchy" border="false":::
+
 *Figure 2: Management group hierarchy.*
 
 The following components are high-level design in Figure 2:
@@ -45,6 +47,7 @@ The following components are high-level design in Figure 2:
 Start with a smaller hierarchy to allow for experimentation and to quickly overcome initial learning curves.
 
 :::image type="content" source="../media/small-management-group-hierarchy.png" alt-text="Initial, smaller management group hierarchy." border="false":::
+
 *Figure 3: Initial, smaller management group hierarchy.*
 
 In this smaller version, attempt the following configuration steps:
@@ -59,6 +62,7 @@ For guidance on creating these management groups, see the [quickstart guide for 
 Subscriptions are the logical containers for all deployed assets. Subscriptions are used to group together common workloads based on billing, compliance, security, or access requirements. To maximize the effectiveness of governance, you should use as few subscriptions as possible.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="Production and nonproduction subscriptions." border="false":::
+
 *Figure 4: Production and nonproduction subscriptions.*
 
 ## Scaling with subscriptions
@@ -82,6 +86,7 @@ The following questions may help illustrate reasons for you to scale your subscr
 Add existing subscriptions in each of the environment nodes, to create clarity between production, development, and QA resources.
 
 :::image type="content" source="../media/add-context-sub.png" alt-text="Adding a subscription to a management group." border="false":::
+
 *Figure 5: Adding a subscription to a management group.*
 
 For guidance on adding subscriptions to a management group, see the [how-to guide](https://docs.microsoft.com/azure/governance/management-groups/manage#move-subscriptions?azure-portal=true).
@@ -102,6 +107,7 @@ Management groups reflect your highest priority organization structure. Tagging 
 Azure policies can be applied to all subscriptions within a management group. To understand the role of policy in your governance foundation, apply a policy to one of your management groups in the hierarchy.
 
 :::image type="content" source="../media/select-assign-policy.png" alt-text="Assigning a policy in the Azure portal." border="false":::
+
 *Figure 6: Assigning a policy in the Azure portal.*
 
 For guidance on applying a policy, see the tutorial on [creating and managing policies](https://docs.microsoft.com/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
@@ -144,6 +150,7 @@ Follow the prescribed steps to [publish and assign this sample blueprint to your
 Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [Azure governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) can provide insights about your current governance configuration.
 
 :::image type="content" source="../media/visualizer.png" alt-text="The Azure Governance Visualizer." border="false":::
+
 *Figure 7: The Azure governance Visualizer.*
 
 Deploy the Azure governance visualizer to see how management groups, blueprints, policies, and other governance configurations have been applied across your environment.

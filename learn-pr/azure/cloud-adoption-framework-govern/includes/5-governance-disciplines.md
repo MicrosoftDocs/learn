@@ -17,11 +17,12 @@ The following table summarizes each discipline from the Govern methodology in th
 Resource consistency focuses on the initial organization of resources required to establish a foundation for governance. Long term, this discipline focuses on proper onboarding processes to ensure that all assets meet any operational support requirements.
 
 :::image type="content" source="../media/resource-consistency.png" alt-text="The Resource Consistency baseline." border="false":::
+
 *Figure 1: Resource Consistency.*
 
 This discipline would help Tailwind Traders to address the following risks from the prior unit:
 
-    - Operations management issues or oversights
+- Operations management issues or oversights
 
 A future unit in this module will apply this discipline to the early needs of our customer narrative, Tailwind Traders.
 
@@ -31,7 +32,7 @@ This discipline focuses on scaling the operational best practices for cost manag
 
 This discipline would help Tailwind Traders to address the following risk from the prior unit:
 
-    - Overspending in the cloud
+- Overspending in the cloud
 
 A future unit in this module will demonstrate how Tailwind Traders can add cost controls to their governance foundation.
 
@@ -40,34 +41,37 @@ A future unit in this module will demonstrate how Tailwind Traders can add cost 
 This discipline focuses on automating the application of security principles to ensure consistency across your environment.
 
 :::image type="content" source="../media/security-baseline.png" alt-text="The security baseline." border="false":::
+
 *Figure 3: The Security Baseline discipline.*
 
 This discipline would help Tailwind Traders to address the following risks from the prior unit:
 
-    - The organization not meeting security or compliance requirements
-    - Unauthorized access compromising systems or data
+- The organization not meeting security or compliance requirements
+- Unauthorized access compromising systems or data
 
 ## Identity Baseline discipline
 
 Once you've established identity and access requirements for your cloud environment, this discipline ensures that those requirements are consistently applied to all workloads and assets.
 
 :::image type="content" source="../media/identity-baseline.png" alt-text="The Identity Baseline discipline." border="false":::
+
 *Figure 4: The Identity Baseline discipline.*
 
 This discipline would help Tailwind Traders to address the following risk from the prior unit:
 
-    - Unauthorized access compromising systems or data
+- Unauthorized access compromising systems or data
 
 ## Deployment Acceleration discipline
 
 Automating governance leads to automation in adoption. Providing infrastructure-as-code templates to the various adoption teams allows them to quickly deploy workloads into compliant, well-managed environments.
 
 :::image type="content" source="../media/deployment-acceleration.png" alt-text="The Deployment Acceleration discipline." border="false":::
+
 *Figure 5: The Deployment Acceleration discipline.*
 
 This discipline would help Tailwind Traders to address the following risk from the prior unit:
 
-    - Inconsistent governance due to immature processes and lack of skills on the team
+- Inconsistent governance due to immature processes and lack of skills on the team
 
 ## Summary
 

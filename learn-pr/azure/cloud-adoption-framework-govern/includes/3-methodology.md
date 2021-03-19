@@ -46,6 +46,7 @@ Each of these disciplines will accelerate the application of corporate policies 
 The Cloud Adoption Framework provides a [governance benchmark tool](https://cafbaseline.com/?azure-portal=true) to help you identify gaps in your organization across the governance disciplines and corporate policy maturity.
 
 :::image type="content" source="../media/benchmark.png" alt-text="Visual of a governance benchmark output showing areas for improvement and a comparison between current-state and future-state governance requirements." border="false":::
+
 *Figure 2: A governance benchmark output showing areas for improvement and a comparison between current- and future-state governance requirements.*
 
 Receive a personalized report that outlines the difference between your current state and business priorities, along with tailored resources to help you start assessing your current and future states and establish a vision for applying the framework.
@@ -55,6 +56,7 @@ Receive a personalized report that outlines the difference between your current 
 Azure includes a suite of governance tools built on top of the Azure Resource Manager platform. The initial governance foundation demonstrates how these tools can be applied to demonstrate cloud governance. As you progress through units of this learn module, you'll learn how to apply these tools to solve governance challenges. First, start with a governance foundation to familiarize yourself with the tools.
 
 :::image type="content" source="../media/3-tdd-in-azure.png" alt-text="Visual of the Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints." border="false":::
+
 *Figure 3: The Azure Resource Manager tools that support governance, with focus on Azure Policy and Azure Blueprints.*
 
 Subsequent units of this learn module will apply these tools to create a governance foundation for Tailwind Traders.

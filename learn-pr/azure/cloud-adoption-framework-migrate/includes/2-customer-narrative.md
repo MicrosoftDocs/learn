@@ -11,6 +11,7 @@ We resume the Tailwind story, just as the migration team is preparing to start m
 In the Plan module, we rationalized their digital estate using Azure Migrate and created a backlog to guide the migration in Azure DevOps. Now the team is ready to begin migrating their existing datacenters to the cloud. In the remaining 12 months, the team will migrate waves of workloads incrementally. Given the scope and timeline for this migration, the team has chosen a migration factory approach:
 
 :::image type="content" source="../media/methodology-effort-only.png" alt-text="Visual of the three common task groups in a migration process." border="false":::
+
 *Figure 1: Common tasks required in each sprint of a migration process.*
 
 - One small team will focus on migrating a wave of workloads in each two week sprint, using Azure Migrate.

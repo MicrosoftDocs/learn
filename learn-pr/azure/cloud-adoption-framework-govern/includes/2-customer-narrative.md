@@ -5,6 +5,7 @@ We shared the narrative for Tailwind Traders in the Getting Started module and o
 Like most customers, Tailwind Traders is attempting to balance two competing business drivers: digital transformation and mitigate risk.
 
 :::image type="content" source="../media/balance.png" alt-text="Finding the balance between transformation and risk mitigation." border="false":::
+
 *Figure 1: Finding the balance between transformation and risk mitigation.*
 
 In the Getting Started module, we shared a few of the objectives from the Tailwind Traders cloud adoption plan. Most relevant to this module is their effort to migrate out of two leased datacenters in the next 18 to 24 months. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts dev/test environments and other preproduction innovations from the retail innovation team.
