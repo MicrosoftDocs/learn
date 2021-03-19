@@ -2,7 +2,7 @@
 uid: learn.PyTorch.audio-pytorch
 metadata:
   title: Introduction to Audio Classification with PyTorch
-  description: Learn how to 
+  description: Learn how to do audio classification with PyTorch.
   ms.date: 06/04/2020
   author: cassieview
   ms.author: cassieb

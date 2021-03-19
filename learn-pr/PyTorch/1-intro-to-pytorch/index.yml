@@ -28,11 +28,12 @@ units:
 - learn.PyTorch.intro-to-pytorch.data
 - learn.PyTorch.intro-to-pytorch.transforms
 - learn.PyTorch.intro-to-pytorch.model
-- learn.PyTorch.intro-to-pytorch.loss
+- learn.PyTorch.intro-to-pytorch.autograd
 - learn.PyTorch.intro-to-pytorch.optimization
 - learn.PyTorch.intro-to-pytorch.inference
 - learn.PyTorch.intro-to-pytorch.ml-overview
-- learn.PyTorch.intro-to-pytorch.-summary
+- learn.PyTorch.intro-to-pytorch.knowledge-check
+- learn.PyTorch.intro-to-pytorch.summary
 
 badge:
   uid: learn.PyTorch.intro-to-pytorch.badge

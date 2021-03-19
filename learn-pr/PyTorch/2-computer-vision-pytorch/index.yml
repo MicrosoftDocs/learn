@@ -2,7 +2,7 @@
 uid: learn.PyTorch.computer-vision-pytorch
 metadata:
   title: Introduction to Computer Vision with PyTorch
-  description: Learn how to 
+  description: Learn how to perform different computer vision tasks using PyTorch.
   ms.date: 06/04/2020
   author: cassieview
   ms.author: cassieb

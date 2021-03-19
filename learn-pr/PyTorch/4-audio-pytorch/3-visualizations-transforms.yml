@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-visualizations-transforms.md)]
+  [!include[](includes/3-visualizations-transforms.ipynb)]

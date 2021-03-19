@@ -2,7 +2,7 @@
 uid: learn.PyTorch.nlp-pytorch.nlp-pytorch
 metadata:
   title: Introduction to Natural Language Processing with PyTorch
-  description: Learn how to 
+  description: Learn how to do NLP with PyTorch.
   ms.date: 06/04/2020
   author: cassieview
   ms.author: cassieb
