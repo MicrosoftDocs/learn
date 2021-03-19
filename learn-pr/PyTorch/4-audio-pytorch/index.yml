@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.PyTorch.audio-pytorch
 metadata:
-  title: Introduction to 
+  title: Introduction to Audio Classification with PyTorch
   description: Learn how to 
   ms.date: 06/04/2020
   author: cassieview
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to 
+title: Introduction to Audio Classification with PyTorch
 summary: Learn how to 
 abstract: |
   In this module you will:
