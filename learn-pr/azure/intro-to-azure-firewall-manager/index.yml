@@ -9,14 +9,13 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Firewall Manager
-summary: Learn how you can use Azure Firewall Manager to provide central security policy and route management for your cloud-based security perimeters 
+summary: Describe whether  you can use Azure Firewall Manager to provide central security policy and route management for your cloud-based security perimeters. Evaluate whether Azure Firewall Manager can help secure your cloud perimeters. 
 abstract: |
   By the end of this module, you will be able to: 
     - Evaluate how Azure Firewall Manager can address your cloud-based security needs.
     - Describe how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
 prerequisites: |
-  - Knowledge of cloud security concepts and technologies
-  - Working knowledge of perimeter firewalls
+  - Experience creating and configuring instances of Azure Firewall
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
@@ -31,6 +30,11 @@ products:
   - azure-firewall
   - azure-firewall-manager
 units:  
-- learn.intro-to-azure-firewall-manager.1-introduction- learn.intro-to-azure-firewall-manager.2-what-is-azure-firewall-manager- learn.intro-to-azure-firewall-manager.3-how-azure-firewall-manager-works- learn.intro-to-azure-firewall-manager.4-when-to-use-azure-firewall-manager- learn.intro-to-azure-firewall-manager.5-knowledge-check- learn.intro-to-azure-firewall-manager.6-summary
+- learn.intro-to-azure-firewall-manager.1-introduction
+- learn.intro-to-azure-firewall-manager.2-what-is-azure-firewall-manager
+- learn.intro-to-azure-firewall-manager.3-how-azure-firewall-manager-works
+- learn.intro-to-azure-firewall-manager.4-when-to-use-azure-firewall-manager
+- learn.intro-to-azure-firewall-manager.5-knowledge-check
+- learn.intro-to-azure-firewall-manager.6-summary
 badge:
   uid: learn.intro-to-azure-firewall-manager.badge

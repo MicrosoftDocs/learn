@@ -10,7 +10,7 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -37,3 +37,36 @@ quiz:
     - content: "Threat intelligence rules."
       isCorrect: true
       explanation: "Correct. Threat intelligence rules are processed before all other rules."
+  - content: "An administrator is considering the benefits of Azure Firewall Manager for their organization. The administrator knows that there are resources in a number of different Azure regions. The organization also has multiple Azure subscriptions. Which of the following statements about this scenario is true?"
+    choices:
+    - content: "The administrator must implement multiple instances of Azure Firewall Manager: one for each Azure region."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall Manager can be implemented across multiple Azure regions."
+    - content: "The administrator must implement multiple instances of Azure Firewall Manager: one for each Azure subscription."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall Manager can be implemented across multiple Azure subscriptions."
+    - content: "The administrator must implement a single instance of Azure Firewall Manager: one for all Azure regions and subscriptions."
+      isCorrect: true
+      explanation: "Correct. Azure Firewall Manager spans Azure regions and subscriptions."
+  - content: "An Azure administrator wants to secure traffic by using Azure Firewall Manager policies. The traffic originates via an Azure Virtual WAN/ExpressRoute connection from the organization's on-premises environment. Which of the following statements about Azure Firewall Manager is true?"
+    choices:
+    - content: "It's not possible to use Azure Firewall Manager to secure traffic in this context."
+      isCorrect: false
+      explanation: "Incorrect. Azure Firewall Manager can be used to assign policies to manage this traffic."
+    - content: "This is an example of Azure Firewall Manager being implemented in the Secured Virtual Hub architecture."
+      isCorrect: true
+      explanation: "Correct. When the underlying resource is Azure Virtual Wan, this is referred to as Secured Virtual Hub."
+    - content: "This is an example of Azure Firewall Manager being implemented in the Hub Virtual Network architecture."
+      isCorrect: false
+      explanation: "Incorrect. Secured Virtual Hub architecture's underlying resource is Azure virtual networks."
+  - content: "The Research department has a requirement for specific firewall settings to secure their resources in a number of Azure virtual networks. But the global administrator wants to ensure that the overarching firewall policies for the organization are also applied. Which of the following statements about this configuration are true?"
+    choices:
+    - content: "Azure Firewall Manager cannot be implemented because the global policies override any local policies."
+      isCorrect: false
+      explanation: "Incorrect. With Azure Firewall Manager, a local admin can implement policies in addition to any global policies."
+    - content: "Azure Firewall Manager can be implemented because you can configure both global and locak policies."
+      isCorrect: true
+      explanation: "Correct. Azure Firewall Manager enables the application of both global and local policies."
+    - content: "Two instances of Azure Firewall Manager must be implemented to support this requirement."
+      isCorrect: false
+      explanation: "Incorrect. You do not need multiple instances of AZure Firewall Manager to support this requirement."

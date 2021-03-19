@@ -53,6 +53,3 @@ You can implement Azure Firewall Manager in one of two architectures. These are 
 In the following diagram, each of these architecture types are displayed. A global admin has overarching policy control over the organization's security policies. A local admin has some control over policies associated with a hub virtual network. 
 
 :::image type="content" source="../media/firewall-manager-architecture.png" alt-text="A diagram displays the architecture of Azure Firewall Manager. Two scenarios are displayed: Secured virtual hub and Hub virtual network.":::
-
-
-

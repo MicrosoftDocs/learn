@@ -23,7 +23,7 @@ The Azure Firewall policy rule collections and settings are described in the fol
 
 After you've considered the rules you need to manage your traffic, you can use Firewall Manager to create and configure Azure Firewall policies containing these rules, as displayed in the following graphic. 
 
-:::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot displays the Threat Intelligence blade in the Azure portal within a Firewall Policy called ContosoFirewallPolicy. Default values are displayed. In the navigation pane, options are present for DNAT Rules, Network Rules, and Application Rules. ":::
+:::image type="content" source="../media/threat-intelligence.png" alt-text="A screenshot displays the Threat Intelligence blade in the Azure portal within a Firewall Policy called ContosoFirewallPolicy.":::
 
 ### How rules are processed
 
@@ -52,4 +52,4 @@ You can use Azure Firewall Manager to complete the following tasks:
 
 The following graphic displays an administrator deploying a Firewall with a Firewall policy for an existing virtual network. 
 
-:::image type="content" source="../media/deploy-firewall.png" alt-text="A screenshot displays the Virtual networks blade in Firewall Manager. The administrator has selected an existing virtual network, and has selected the Manage Security option to deploy a firewall with a firewall policy. ":::
+:::image type="content" source="../media/deploy-firewall.png" alt-text="A screenshot displays the Virtual networks blade in Firewall Manager. The administrator has selected an existing virtual network. ":::

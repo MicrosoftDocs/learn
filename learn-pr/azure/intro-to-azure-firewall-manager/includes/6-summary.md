@@ -6,6 +6,7 @@ You learned that Azure Firewall Manager enables you to reconfigure these various
 
 - You have multiple Azure Firewalls you want to manage centrally
 - You want to assign matching settings to many firewalls
+- You want to integrate with third-party security partners 
 
 ## Resources
 
