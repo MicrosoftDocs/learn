@@ -8,9 +8,12 @@ Visual Studio Code has numerous extensions the [marketplace](https://marketplace
 - [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enable snippets in Visual Studio Code.
 
 1. Inside Visual Studio Code, open the *Extensions* workbench.
+
     ![Screenshot of the extensions icon.](../media/extensions.png)
+
 1. Type *Vue VSCode Snippets* into the search dialog.
 1. Press *Install* under *Vue VSCode Snippets* to install both *Vue VSCode Snippets* and *Vetur*.
+
     ![Screenshot of search results for Vue VSCode Snippets.](../media/snippets.png)
 
 ## Create the Host component
@@ -21,6 +24,7 @@ Let's create the *Host* component.
 1. Inside *Host.vue*, type `vue`, and select *\<vue\> with default.vue* from the snippets menu.
 
     ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](../media/vue-create.png)
+
     The default structure will be created by the snippet.
 
 ## Update the script section

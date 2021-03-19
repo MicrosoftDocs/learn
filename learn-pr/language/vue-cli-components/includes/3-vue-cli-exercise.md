@@ -75,7 +75,7 @@ Let's explore the code created by Vue CLI.
 1. Inside Visual Studio Code, open *package.json*.
 1. Note *vue* is listed as a dependency, and *@vue/cli-service* is listed as a *devDependency*.
     > [!NOTE]
-    > *@vue/cli-service is responsible for building your application and running the development server
+    > *@vue/cli-service* is responsible for building your application and running the development server
 1. Note the two *scripts*, *serve* which will launch the development server and *build* which will create the JavaScript/HTML/CSS when you are ready to publish your project.
 1. Open *public/index.html*, which will host the Vue application.
 1. Open *src/main.js* and note the code which imports `App` from *App.vue*.
@@ -97,6 +97,7 @@ Let's start the development server and see the default page.
 
 1. Open your browser and navigate to `http://localhost:8080`.
 1. The default Vue application will be displayed.
-    ![Screenshot of the default Vue page.](../media/vue-default.png)
+
+    :::image type="content" source="media/vue-default.png" alt-text="Screenshot of the default Vue page.":::
 
 Congratulations! You have now created a Vue application by using Vue CLI.
