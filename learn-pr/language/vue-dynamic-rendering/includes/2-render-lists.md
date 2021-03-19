@@ -20,7 +20,7 @@ v-for="itemName in collectionName"
 To use the `v-for` directive in an app, you need to do two things:
 
 - **Expose an array** via your data object. To use the `v-for` directive, ensure that there's data of type array that your `data()` method is returning.
-- **Add the `v-for` directive to an element**. Add the `v-for` directive to an HTML element. To display data from the array, use double braces (`{{ }}`) syntax. 
+- **Add the `v-for` directive to an element**. Add the `v-for` directive to an HTML element. To display data from the array, use double braces ({{&nbsp;}}) syntax. 
 
 Let's say you want to expose an array of names in your data object:
 
