@@ -325,7 +325,8 @@ In your Github repository, edit your Azure resource names by doing the following
 
 ## Create an Azure Pipeline to provision your Terraform resources
 
-This Azure DevOps project includes two separate pipelines for provisioning and build-and-deploy. The provisioning pipeline creates the azure resources that will be released via the build-and-deploy  pipeline at a later point.
+In our Azure DevOps project, we'll create two separate pipelines for provisioning and build-and-deploy.
+The provisioning pipeline creates the azure resources that will be released via the build-and-deploy  pipeline at a later point.
 
 Let's create the first provisioning Pipeline:
 
