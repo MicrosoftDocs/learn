@@ -64,7 +64,7 @@ quiz:
     - content: "Azure Firewall Manager cannot be implemented because the global policies override any local policies."
       isCorrect: false
       explanation: "Incorrect. With Azure Firewall Manager, a local admin can implement policies in addition to any global policies."
-    - content: "Azure Firewall Manager can be implemented because you can configure both global and locak policies."
+    - content: "Azure Firewall Manager can be implemented because you can configure both global and local policies."
       isCorrect: true
       explanation: "Correct. Azure Firewall Manager enables the application of both global and local policies."
     - content: "Two instances of Azure Firewall Manager must be implemented to support this requirement."
