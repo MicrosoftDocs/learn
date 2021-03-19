@@ -51,3 +51,20 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Automation is an effective way of reducing errors, establishing consistency, and increasing speed and flexibility of development."
+  - content: "Which of the following automation tools does Azure support?"
+    choices:
+    - content: "GitLab"
+      isCorrect: false
+      explanation: "Incorrect. This is one of the options but not the only tool supported."
+    - content: "Github Actions"
+      isCorrect: false
+      explanation: "Incorrect. This is one of the options but not the only tool supported."
+    - content: "Azure Pipelines"
+      isCorrect: false
+      explanation: "Incorrect. This is one of the options but not the only tool supported."
+    - content: "Jenkins"
+      isCorrect: false
+      explanation: "Incorrect. This is one of the options but not the only tool supported."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "All of the above automation tools are supported." 
