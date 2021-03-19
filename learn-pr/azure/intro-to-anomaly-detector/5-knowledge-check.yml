@@ -39,7 +39,7 @@ quiz:
       explanation: "Incorrect. Boundaries are used to set acceptable values that impact whether a point is an anomaly."
   - content: "How does the Anomaly Detector API evaluate real-time data for anomalies?"
     choices:
-    - content: "It collects all the values in a window of time and evaluates them all at once.."
+    - content: "It collects all the values in a window of time and evaluates them all at once."
       isCorrect: false
       explanation: "Incorrect. This is an example of batch processing, not real-time."
     - content: "It evaluates the current value against the previous value."
