@@ -30,7 +30,7 @@ To support the preceding criteria, this list provides an example of a first proj
 
 - **Critical business events:** When a critical business event is the primary motivation, implementation of a tool, like Azure Site Recovery, might be a good first project. During migration, you would use a tool like Azure Migrate to quickly migrate a few low-impact datacenter assets. But during the first project, you could first use Azure Site Recovery as a disaster recovery tool. Reducing dependencies on disaster recovery assets within the datacenter before pragmatically planning the migration.
 
-- **Migration motivations:** When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, Cloud Migration with the Cloud Adoption Framework, will teach the team how to deliver that type of project.
+- **Migration motivations:** When migration is the primary motivation, it's wise to start with the migration of a noncritical workload. The next module in this learning path, [Migrate to Azure through repeatable processes and common tools](https://docs.microsoft.com/learn/modules/cloud-adoption-framework-migrate/), will teach the team how to deliver that type of project.
 
 - **Innovation motivations:** When innovation is the primary motivation, creation of a targeted dev/test environment can be a great first project.
 
@@ -50,4 +50,4 @@ Additional examples of first adoption projects include:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the "First Adoption Project" header. Use the technical considerations discussed in this unit to define a first project for the team to use to evaluate technical considerations.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the **First adoption project** heading. Use the technical considerations discussed in this unit to define a first project for the team to use to evaluate technical considerations.

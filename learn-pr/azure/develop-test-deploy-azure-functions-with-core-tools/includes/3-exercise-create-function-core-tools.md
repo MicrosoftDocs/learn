@@ -143,7 +143,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
     code ~/output.txt
     ```
 
-    The top 90 lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries for each time you called the function with `curl`, each one looking like this.
+    The top 9 lines or so of the file will be the same as when you ran `func start` the first time. After that, you'll see a set of log entries for each time you called the function with `curl`, each one looking like this.
 
     ```output
     Executing HTTP request: {
