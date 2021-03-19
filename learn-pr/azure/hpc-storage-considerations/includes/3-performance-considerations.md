@@ -38,7 +38,7 @@ NFS represents the network-level interaction between a file client and server. Y
 
 It's helpful to understand how operations affect your storage system. For example, assume your HPC workload creates a large number of small files in nested directory structures. In this scenario, your workload would require a significantly higher number of operations than it would for a workload that reads a few large sequential files.
 
-We'll discuss these access patterns in the next unit. A `create` involves multiple operations, so the more files your workload creates, the greater the affect on performance.
+We'll discuss these access patterns in the next unit. A `create` involves multiple operations, so the more files your workload creates, the greater the effect on performance.
 
 ## Block size
 
@@ -86,7 +86,7 @@ This calculation provides a basic understanding of your file system's general pe
 
 *Latency* refers to the amount of time it takes to complete an operation. The higher the latency, the higher the likelihood of slower workload runs. 
 
-There can be multiple sources of latency within a single architecture, each contributing to an overall latency affect.
+There can be multiple sources of latency within a single architecture, each contributing to an overall latency effect.
 
 File-system latency can occur under these conditions:
 
