@@ -1,13 +1,20 @@
 
-Tailwind Traders is using Azure to power their innovation engine:
+In this module you have learnt how Azure technologies can support you along the innovation cycle Build-Measure-Learn:
 
-- Azure DevOps allows Tailwind Traders to introduce application changes frequently and reliably
-- The e-commerce platform has been reengineered into a microservices architecture to facilitate change introduction
-- For this specific application Tailwind Traders decided to containerize each microservice and deploy it on Azure Kubernetes Services
-- Tailwind Traders decided to use Azure technologies to enrich their ecommerce platforms with a chat for customers to provide feedback and ask questions, a modern product search engine and a recommendation engine that suggests additional products to registered users
-- The ecommerce microservices are equipped with Azure Application Insights telemetry, which allows Tailwind Traders to gather utilization usage for new features, to confirm or reject hypothesis about the business value added by each innovation
-- Analysis of the learnt information allows Tailwind Traders to formulate new hypothesis and restart the innovation cycle to keep improving their customer experience
+- DevOps practices and modern application technologies allow to reduce the duration of the innovation cycle loops, to accelerate business value creation.
+- Data obtained from the application allows to analyze whether innovation hypothesis are correct, partially correct or false, as well as to correlate technical aspects of the application to business metrics.
+- Data democratization makes sure that the collected data is used to learn from the innovation cycle, and a growth mindset culture spreads across your organization.
+
+Tailwind Traders is using Azure to power their innovation engine in multiple ways:
+
+- Azure DevOps allows Tailwind Traders to introduce application changes frequently and reliably.
+- The e-commerce platform has been reengineered into a microservices architecture to facilitate change introduction.
+- Tailwind Traders decided to containerize the microservices of the e-commerce platform, and deploy them on Azure Kubernetes Services.
+- Tailwind Traders decided to use Azure technologies to enrich their applications with a chat for customers to open support cases, provide feedback and ask questions, a modern product search engine and a recommendation engine that suggests additional products to registered users.
+- The e-commerce web site has been equipped with Azure Application Insights telemetry, which allows Tailwind Traders to gather utilization usage for new features, to confirm or reject hypothesis about the business value added by each innovation.
+- Microsoft Power BI is used to disseminate data across the Tailwind Traders organization, to ensure that as many decisions are possible are data-driven.
+- This data-driven decision process allows Tailwind Traders to formulate, build and verify innovation hypothesis very quickly, to continue improving their customer experience and business impact.
 
 **Next steps**
 
-- TODO
+Read the [Cloud innovation in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/) documentation for more detailed information about the topics described in this article.
