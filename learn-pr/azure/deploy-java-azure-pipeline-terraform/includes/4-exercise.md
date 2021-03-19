@@ -342,11 +342,11 @@ After setting up your project and connection to Azure, you'll need to create an 
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
-1. On the "**Connect**" screen - Select "**GitHub**" (YAML file).
-1. On the "**Select**" screen - Select the GitHub Repository containing your Template.
-1. On the "**Configure**" screen - Select to use an "**Existing Azure Pipelines YAML file**".
+1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
+1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
 1. In the path, select "/azuredevops/provision.yml"
-1. Select **Continue** to Review your PipeLine before you run it
+1. Select **Continue** to go the "***Review**" tab and review your PipeLine before you run it
 
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 

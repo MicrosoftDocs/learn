@@ -107,11 +107,13 @@ As before, you'll need to create an Azure Pipeline to build-and-deploy your appl
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
-1. On the "**Connect**" screen - Select "**GitHub**" (YAML file).
-1. On the "**Select**" screen - Select the GitHub Repository containing your Template.
-1. On the "**Configure**" screen - Select to use an "**Existing Azure Pipelines YAML file**".
-1. In the path, select "/azuredevops/build_deploy.yml"
-1. Select **Continue** to Review your PipeLine before you run it
+You will now be given 4 tabs to setup your Pipeline:
+
+1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
+1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
+1. In the path, this time, select "/azuredevops/build_deploy.yml"
+1. Select **Continue** to go the "***Review**" tab and review your PipeLine before you run it
 
 On the "Review your pipeline YAML" screen, inspect the Yaml file you'll use to create your Pipeline:
 
