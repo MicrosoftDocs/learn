@@ -183,7 +183,7 @@ Let's look at some of the fields we use in the "**Build**" config:
 
 ## Bind your Service Connection
 
-As with our provisioning pipeline, before you run the build-and-deploy pipeline, you need to add the variable that will bind to your service connection:
+As with our provisioning pipeline, before you save and run the build-and-deploy pipeline, you need to add the variable that will bind to your service connection:
 
 1. Select "**Variables**" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "**okay**" (bottom-right corner) to save the variable

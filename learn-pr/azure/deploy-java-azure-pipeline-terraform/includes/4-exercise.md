@@ -420,7 +420,7 @@ Let's look at some of the fields we use in the config:
 - **command**: your Terraform workflow command - **init** or **apply**.
 - **backendAzure**: required fields that are needed in a team environment to store shared state.
 
-Before you save the pipeline, we need to add the variable that will bind to your service connection:
+Before you save and run the pipeline, we need to add the variable that will bind to your service connection:
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "okay" (bottom-right corner) to save the variable
