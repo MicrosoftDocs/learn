@@ -124,7 +124,7 @@ Deploy a VM to test network connectivity in the AVS vCenter. This VM will help v
 - Network connectivity to and from on-premises environments.
 
 Deploy the VM as you would in any vSphere environment:
-- Attach the VM to one of the network segments previously created in NSX-T Manager.
+- Attach the VM to one of the network segments previously created in NSX-T Manager. 
 - VMs can receive network configuration from a DHCP server or the network configuration can be statically configured.
 
 ## Test the NSX-T segment connectivity
