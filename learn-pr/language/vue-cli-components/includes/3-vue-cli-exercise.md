@@ -98,6 +98,6 @@ Let's start the development server and see the default page.
 1. Open your browser and navigate to `http://localhost:8080`.
 1. The default Vue application will be displayed.
 
-    :::image type="content" source="media/vue-default.png" alt-text="Screenshot of the default Vue page.":::
+    :::image type="content" source="../media/vue-default.png" alt-text="Screenshot of the default Vue page.":::
 
 Congratulations! You have now created a Vue application by using Vue CLI.
