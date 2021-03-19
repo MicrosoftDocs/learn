@@ -23,6 +23,8 @@ In this module, you will:
 
 - An Azure subscription
 - A GitHub account
-- (Optionally) An Azure DevOps organization 
+- (Optionally if you choose to use Azure Pipelines)
+  - An Azure DevOps organization
+  - [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
 - Basic knowledge of software development
 - Basic knowledge of managing and provisioning Azure resources
