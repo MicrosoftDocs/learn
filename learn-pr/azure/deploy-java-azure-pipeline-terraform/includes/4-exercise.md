@@ -424,7 +424,7 @@ Before you save the pipeline, we need to add the variable that will bind to your
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "okay" (bottom-right corner) to save the variable
-1. Select "run" (top-right corner) to run to pipeline
+1. Finally, select "**run**" (top-right corner) to save and run the pipeline
 
 ## Watch the pipeline run
 
