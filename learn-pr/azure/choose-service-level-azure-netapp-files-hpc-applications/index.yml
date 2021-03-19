@@ -7,7 +7,8 @@ metadata:
   ms.date: 3/17/2021  
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Choose the best Service Level of Azure NetApp Files for your HPC applications  
 summary: Choose the best Service Level of Azure NetApp Files, based on your throughput requirements including cost considerations.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)

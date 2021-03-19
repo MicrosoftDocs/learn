@@ -7,8 +7,9 @@ metadata:
   description: Introduce scenarios, learning objectives and prerequisites
   ms.date: 3/17/2021  
   author: mengruts  
-  ms.author: mengtsai  
-  ms.topic: introduction # do we need ms.topic?
+  ms.author: mengtsai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

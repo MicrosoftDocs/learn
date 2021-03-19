@@ -8,7 +8,8 @@ metadata:
   ms.date: 3/17/2021  
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: class # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-the-decision-criteria.md)]
