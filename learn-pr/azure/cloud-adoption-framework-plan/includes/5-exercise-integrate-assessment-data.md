@@ -83,7 +83,7 @@ Asset migration is fine for small scale, tactical efforts. But, that approach do
 
 Workload migration is much more efficient, but may also hit scale points when the effort begins to focus on thousands of VMs.
 
-**Migration factory:** For the highest scale and most repeatable option, the team will likely build a migration factory as they gain additional experience. The [process improvements section](/azure/cloud-adoption-framework/migrate/migration-considerations/?azure-portal=true) of the Cloud Adoption Framework provides a number of processes to consider, as the team gains more experience migration workloads.
+**Migration factory:** For the highest scale and most repeatable option, the team will likely build a migration factory as they gain additional experience. The [process improvements section](https://docs.microsoft.com/azure/cloud-adoption-framework/migrate/migration-considerations/?azure-portal=true) of the Cloud Adoption Framework provides a number of processes to consider, as the team gains more experience migration workloads.
 
 ### Add tasks
 

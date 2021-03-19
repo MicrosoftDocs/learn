@@ -53,7 +53,7 @@ If you're planning to host **more than 1,000 virtual machines or compute instanc
 
 ### Plan for subscription scaling
 
-As cloud adoption grows, you may need to further subdivide your production subscriptions for a number of valid business reasons. This is true for central or enterprise operations. For more information on subscription scaling, see [Scale with multiple subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true).
+As cloud adoption grows, you may need to further subdivide your production subscriptions for a number of valid business reasons. This is true for central or enterprise operations. For more information on subscription scaling, see [Scale with multiple subscriptions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true).
 
 ## Adhere to naming and tagging conventions
 
@@ -61,20 +61,20 @@ Organize your cloud assets to support operational management and accounting requ
 
 Changing resource names can be difficult. Establish a comprehensive naming convention before you begin any large cloud deployment.
 
-The article on [recommended naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) provides guidance, samples, automated approaches, and a Microsoft Excel workbook to capture and socialize your naming and tagging conventions.
+The article on [recommended naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) provides guidance, samples, automated approaches, and a Microsoft Excel workbook to capture and socialize your naming and tagging conventions.
 
 ## Review networking options
 
 The CAF Migration landing zone blueprint demonstrates network configuration, but provides little actionable configuration. You'll need to refactor the network configuration in that blueprint prior to deploying workloads to the new landing zone.
 
-- [Review networking options](/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
-- [Evaluate a network perspective](/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
-- [Plan for your virtual networks](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
-- [Follow best practices for network security](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Review networking options](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
+- [Evaluate a network perspective](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
+- [Plan for your virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Follow best practices for network security](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
 
 ## Implement additional identity and access management considerations
 
-Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [RBAC considerations](/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true).
+Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [RBAC considerations](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true).
 
 ## Plan for parallel maturity of Govern, Manage, and Secure methodologies
 

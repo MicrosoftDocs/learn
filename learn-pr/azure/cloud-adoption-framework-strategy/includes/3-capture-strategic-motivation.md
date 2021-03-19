@@ -34,11 +34,11 @@ Business transformations that are supported by cloud adoption can be driven by v
 
 Your motivations for cloud adoption will likely fall into multiple categories. As you're building the list of motivations, trends will likely emerge. Motivations tend to be associated more with one classification than with others. Use the predominant classification to help guide the development of your cloud adoption strategy.
 
-When a response to critical business events is the highest priority, it's important to [get started with migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes, based on direct lessons learned.
+When a response to critical business events is the highest priority, it's important to [get started with migration](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) early, often in parallel with strategy and planning efforts. Taking this approach requires a growth mindset and a willingness to iteratively improve processes, based on direct lessons learned.
 
 When migration is the highest priority, strategy and planning will play a vital role early in the process. We recommend that you implement the first workload in parallel with planning efforts, to help the team understand and anticipate any learning curves that are associated with cloud adoption.
 
-When innovation is the highest priority, strategy and planning require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment made during cloud adoption. For further information and guidance, see [Understand the innovation journey](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
+When innovation is the highest priority, strategy and planning require additional investments early in the process to ensure balance in the portfolio and wise alignment of the investment made during cloud adoption. For further information and guidance, see [Understand the innovation journey](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
 
 To ensure wiser decision-making, all participants in the migration process should have a clear awareness of their motivations. The following section outlines how customers can guide and effect wiser decisions through consistent, strategic methodologies.
 
@@ -48,7 +48,7 @@ This section highlights the *migration* and *innovation* motivations and their c
 
 ### Migration
 
-The *migration* motivations listed near the top of the motivations table are the most common, but not necessarily the most significant, reasons for adopting the cloud. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption is often called a *cloud migration*. The framework refers to the strategy for executing a cloud migration by using the term [migrate](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true).
+The *migration* motivations listed near the top of the motivations table are the most common, but not necessarily the most significant, reasons for adopting the cloud. These outcomes are important to achieve, but they're most effectively used to transition to other, more useful worldviews. This important first step to cloud adoption is often called a *cloud migration*. The framework refers to the strategy for executing a cloud migration by using the term [migrate](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true).
 
 Some motivations align well with a migrate strategy. The motives at the top of this list will likely have significantly less business impact than those toward the bottom of the list.
 
@@ -62,7 +62,7 @@ Some motivations align well with a migrate strategy. The motives at the top of t
 
 ### Innovation
 
-Data is the new commodity. Modern applications are the supply chain that drives that data into various experiences. In today's business market, it's hard to find a transformative product or service that isn't built on top of data, insights, and customer experiences. The motivations that appear lower in the *innovation* list align to a technology strategy referred to in this framework as the [Innovate methodology](/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
+Data is the new commodity. Modern applications are the supply chain that drives that data into various experiences. In today's business market, it's hard to find a transformative product or service that isn't built on top of data, insights, and customer experiences. The motivations that appear lower in the *innovation* list align to a technology strategy referred to in this framework as the [Innovate methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/innovate?azure-portal=true).
 
 The following list includes motivations that cause an IT organization to focus more on an innovate strategy than a migrate strategy.
 
