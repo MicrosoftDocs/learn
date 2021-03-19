@@ -28,7 +28,7 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 1. To create a new JSON document, in the SQL API pane, expand **Clothing**, select **Items**, then select **New Item** in the toolbar.
 
     :::image type="complex" source="../media/3-azure-cosmosdb-data-explorer-new-document.png" alt-text="Screenshot showing the steps to create new documents in Data Explorer in the Azure portal.":::
-        Screenshot highlights selecting the Products > Clothing > Items node within the Products database, then the New Item button.
+        Screenshot highlights selecting the Products/Clothing/Items node within the Products database, then the New Item button.
     :::image-end:::
 
 1. Now, add a document to the container with the following structure. Paste the following JSON block into the **Items** tab, overwriting the current content:
