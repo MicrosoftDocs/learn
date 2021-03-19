@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.6-props
+metadata:
+  title: Component props
+  description: Props allow you to pass values into a component to make it more reusable.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Component props
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-props.md)]

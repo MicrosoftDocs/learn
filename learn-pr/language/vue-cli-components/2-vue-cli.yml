@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.2-vue-cli
+metadata:
+  title: Getting started with Vue CLI
+  description: Let's talk about Vue CLI and its capabilities.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Getting started with Vue CLI
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-vue-cli.md)]
