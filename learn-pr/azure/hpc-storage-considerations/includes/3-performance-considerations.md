@@ -26,7 +26,7 @@ NFS represents the network-level interaction between a file client and server. Y
 - `readdir` or `readdirplus`
 - `getattr`
 - `setattr`
-- `lookup` (search for a filehandle in directory)
+- `lookup` (search for a filehandle in a directory)
 - `link`/`symlink`/`readlink`
 - `read`
 - `rename`
@@ -48,7 +48,7 @@ For our purposes, block size also refers to the payload size of an NFS data chun
 
 NFS servers and clients negotiate the block size and accept the largest possible size they mutually support. Default settings can range from 4 KB to 64 KB. The current maximum configurable value is 1 MB. Individual data packets can have payloads no larger than the set value.
 
-You can explicitly configure block size on clients. Check the full `mount` statement on your HPC cluster machines to determine the value. The default sizes will be set if the values aren't explicitly configured in the `mount` statement.
+You can explicitly configure block size on clients. Check the full `mount` statement on your HPC cluster machines to determine the value. The default sizes will be set you don't explicitly configure the values in the `mount` statement.
 
 The two arguments used to configure NFS block size are `rsize` (reading size) and `wsize` (writing size).
 
@@ -58,7 +58,7 @@ If you configure a small block size or your choice of file systems has a small m
 
 *IOPS* stands for *input/output operations per second*. The number of IOPS in your storage environment depends on these attributes:
 
-- The type of storage media. For example, hard disk drives (HDD) versus solid-state drives(SSD).
+- The type of storage media. For example, hard disk drives (HDD) versus solid-state drives (SSD).
 - Latency introduced by network connectivity.
 - The block size used by the file system.
 - The amount of concurrent access available to the file system.
@@ -115,9 +115,9 @@ You'll want to use basic tools like `ping`, `fio`, `iozone`, and `iometer` to de
 
 You might have an I/O-intensive workload that requires significant IOPS and throughput to run efficiently. Or your workload might launch, read libraries and source data into memory, and continue with minimal storage I/O. Maybe the first workload in the previous list writes out intermediate data that must be read by other HPC machines. Each of these dynamics contributes to how you'll approach your storage solution. You'll want to ensure the machines can read that data as quickly as possible, so you'll focus on reducing read latency. But if your workload is writing intermediate, or scratch, information to disks, you'll probably ensure that each HPC machine can quickly access either local disks or a fast-shared NAS solution for those writes (depending on which machines might need to read those intermediate writes).
 
-You'll probably want to invest in profiling your applications for their use of storage I/O. Profiling will increase in importance as your HPC cluster grows in size and number of workloads.
+You'll probably want to invest in profiling your applications for their use of storage I/O. Profiling will become more important as your HPC cluster grows in size and number of workloads.
 
-Profiling involves the use of tools running on your HPC machines and your storage environment. These tools report on the amount, type, and size of operations running against your storage environment.
+Profiling involves the use of tools running on your HPC machines and your storage environment. These tools report on the amount, type, and size of operations that run against your storage environment.
 
 Profiling a workload can be difficult because of the amount of data that might be generated. Tools like `iostat` and `sar` can create significant output over time. You might need to analyze the results, and you might need to parse the results further, generating histograms.
 

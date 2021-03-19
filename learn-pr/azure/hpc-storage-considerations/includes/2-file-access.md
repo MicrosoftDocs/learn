@@ -24,9 +24,9 @@ The general file-access use cases we'll discuss in this module are limited to th
 - Loading and running job code, libraries, and/or toolchains on the HPC cluster machines.
 - Reading source data for a job. For example, daily pricing data, genomic data, or satellite data.
 - Intermediate,  or *scratch*, writes. Certain jobs require that initial data be processed and the output of that processing become new input for downstream activity.
-- Writing out the results of a job. This use case involves placing the data in a desirable location for further consumption. For example, rendering a video and placing the rendered results in a shared volume for use.
+- Writing out the results of a job. This use case involves placing the data in a desirable location for further consumption. For example, rendering a video and placing the rendered results on a shared volume for use.
 
-## How do HPC machines get working set data?
+## How do HPC machines get working-set data?
 
 Machines in the HPC cluster access files either through a directly attached disk or through a network export or share. In both cases, the files are presented in a local path (for example, /mnt/data).
 

@@ -62,7 +62,7 @@ One advantage of NFSv4 over NFSv3 is that NFSv4 uses a single TCP port (port 204
 
 Say you have a file or folder and you want to offer read/write access to group 1, read-only access to group 2, and append-data access to a specific machine account. NFSv3 permissions (mode bits) can't satisfy these requirements because v3 permissions don't have the level of granularity required.
 
-NFSv4 introduces access control lists (ACLs). Each file/folder can have an ACL applied to it. Each ACL consists of one or more access control entries (ACEs). This model is familiar to Windows NTFS administrators because it follows the same model.
+NFSv4 introduces access control lists (ACLs). Each file/folder can have an ACL applied to it. Each ACL consists of one or more access control entries (ACEs). This approach is familiar to Windows NTFS administrators because NTFS follows the same model.
 
 If your environment uses NFSv4 ACLs, you'll need to determine which storage solution best meets this requirement.
 

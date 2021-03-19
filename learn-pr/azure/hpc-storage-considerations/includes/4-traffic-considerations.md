@@ -4,7 +4,7 @@ Target IOPS, throughput, and latency numbers are the important values. But to op
 
 *Traffic mix* refers to the makeup of the HPC workload traffic, in terms of:
 
-- Ratio of read traffic to write traffic. (For example, 100% read, 50% read/write, 100% write.)
+- Ratio of read traffic to write traffic. (For example, 100% read, 50% read and 50% write, 100% write.)
 - Random versus sequential read/write.
 - Checkpoints and snapshots.
 - Concurrency.

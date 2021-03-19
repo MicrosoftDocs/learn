@@ -10,7 +10,7 @@ Account for the types of traffic your HPC environment will generate and process.
 
 For example, your HPC workload might read sequential data from a large file (like a media asset from a render job, or a genomic sequence file) from a large number of HPC machines. At the same time, there might be a need to operate a database (for example, to work with your HPC scheduler). The traffic types are different and might need to be deployed on different storage solutions.
 
-Storage solutions might be designed to optimize for different things. A NAS filer built from Ubuntu running local NVMe disks will be great at single-stream activities, like a single client copying data from the NAS to local disk. But it might not scale for concurrent access by large numbers of clients.
+Storage solutions might be designed to optimize for different things. A NAS filer built from Ubuntu running local NVMe disks would be great at single-stream activities, like a single client copying data from the NAS to local disk. But it might not scale for concurrent access by large numbers of clients.
 
 Also, you might need a solution that optimizes for large numbers of small files. A traditional NAS solution, like Azure NetApp Files, provides optimal performance for such traffic. But you might also need to process and then store large files and minimize the cost of doing so. Azure Blob Storage with tiering provides flexibility in these cases, but it might not provide great performance for a single-stream copy operation.
 
@@ -28,11 +28,11 @@ For example, your checklist might reflect:
 - Average file sizes between 10 GB and 200 GB. About 50,000 files.
 - Sequential heavy (80% versus 20%).
 
-You should also account for the major workloads you plan to run on the architecture, if there are more than one or two, to ensure that there's not a significant divergence in requirements.
+You should also account for the major workloads you plan to run on the architecture, if there are more than one or two, to ensure there's not a significant divergence in requirements.
 
 ## Data locality ##
 
-The next category should account for the location of the data. Do you need to keep the data on-premises? Are there concerns about data modifications while you're running your HPC workload? Will modifications happen only on-premises, only in Azure, or in both locations?
+The next category accounts for the location of the data. Do you need to keep the data on-premises? Are there concerns about data modifications while you're running your HPC workload? Will modifications happen only on-premises, only in Azure, or in both locations?
 
 Here are some locality items for your checklist:
 
@@ -67,7 +67,7 @@ Here are some items for your checklist:
 
 ## Total capacity requirement ##
 
-Storage capacity in Azure is the next consideration. It helps to inform the overall cost of the solution. If you plan to store a large amount of data a long time, you might want to consider *tiering* as part of the storage solution. Tiering provides lower-cost storage options combined with higher-cost but higher-performance storage in a hot tier.
+Storage capacity in Azure is the next consideration. It helps to inform the overall cost of the solution. If you plan to store a large amount of data for a long time, you might want to consider *tiering* as part of the storage solution. Tiering provides lower-cost storage options combined with higher-cost but higher-performance storage in a hot tier.
 
 Some items for your list:
 - Total capacity required

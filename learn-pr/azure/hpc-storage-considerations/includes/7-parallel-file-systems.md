@@ -1,8 +1,8 @@
-NFS evolved from the enterprise. It's designed to handle concurrent file access at growing scale. But there's an upper bound to the performance and scale that you can get with NFS solutions. There are also classes of workloads that require far greater parallel access of files, including the ability to write to some section of a file by multiple concurrent processes. 
+NFS evolved from the enterprise. It's designed to handle concurrent file access at growing scale. But there's an upper bound to the performance and scale that you can get with NFS solutions. There are also classes of workloads that require far greater parallel access to files, including the ability for multiple concurrent processes to write to some section of a file. 
 
 The need to read and write at large scales has grown significantly during the past two decades. Parallel file system solutions are the main choice for accelerating the largest high-performance workloads. Parallel file systems originated in supercomputing centers. They're now widely deployed for various scenarios, like seismic processing and interpretation solutions used by major oil and gas companies and secondary/tertiary analysis of genomic data.
 
-This unit presents a light treatment on parallel file systems. If you've been running such workloads, you're probably well acquainted with the drivers, need, and architecture of these solutions. There's a gray area between distributed NAS solutions serving NFS and parallel file systems. The use of parallel file systems might better satisfy your requirements.
+This unit presents a light treatment of parallel file systems. If you've been running such workloads, you're probably well acquainted with the drivers, need, and architecture of these solutions. There's a gray area between distributed NAS solutions that serve NFS and parallel file systems. The use of parallel file systems might better satisfy your requirements.
 
 After you complete this unit, you'll be more familiar with the main features of parallel file systems.
 
@@ -18,14 +18,14 @@ You can scale both of these systems by adding or upgrading storage hardware tech
 
 ### Parallel I/O ###
 
-Parallel file systems break files into discrete blocks or stripes and distribute these files across multiple storage servers. There are distributed file systems that stripe data. The difference is that parallel file systems then expose stripes directly to clients, via communication with the hosting storage servers themselves. Striping allows for significant parallel I/O over a standard distributed NAS system. NFS clients running with the most common scale-out NAS environments must access a file via a single server. When clients access a single server, it causes problems when the number of *concurrent requests* grow beyond what the server can handle. And the parallel file systems approach to parallel access and striping makes them a great fit for workloads that need to access large files across large numbers of concurrent clients.
+Parallel file systems break files into discrete blocks or stripes and distribute these files across multiple storage servers. There are distributed file systems that stripe data. The difference is that parallel file systems then expose stripes directly to clients, via communication with the hosting storage servers themselves. Striping allows for significant parallel I/O over a standard distributed NAS system. NFS clients that run with the most common scale-out NAS environments must access a file via a single server. When clients access a single server, it causes problems when the number of *concurrent requests* grow beyond what the server can handle. And the parallel file systems approach to parallel access and striping makes them a great fit for workloads that need to access large files across large numbers of concurrent clients.
 
 Here are three major parallel file systems: 
 - IBM's GPFS, known as Spectrum Scale 
 - Lustre, which is open source but has some commercial implementations 
 - BeeGFS
 
-These systems achieve parallel I/O in different ways. GPFS uses servers known as network storage devices (NSDs) that connect to a high-performance storage area network (SAN). So GPFS servers have raw disk I/O as their backing storage. BeeGFS has many of the same architectural components as Lustre, but it also has a robust distributed metadata architecture. BeeOND, short for *BeeGFS On Demand* enables on-demand BeeGFS environments that use storage on each client. Such temporary file system environments can be used for burst buffering.
+These systems achieve parallel I/O in different ways. GPFS uses servers known as *network storage devices (NSDs)* that connect to a high-performance storage area network (SAN). So GPFS servers have raw disk I/O as their backing storage. BeeGFS has many of the same architectural components as Lustre, but it also has a robust distributed metadata architecture. BeeOND, short for *BeeGFS On Demand*, enables on-demand BeeGFS environments that use storage on each client. Such temporary file system environments can be used for burst buffering.
 
 In both cases, however, parallel file systems can scale by adding more storage servers, which in turn offer more parallel I/O to clients. And total client count can be large, ranging into the tens of thousands.
 
@@ -38,7 +38,7 @@ Parallel file systems, by contrast, typically implement strategies to better sca
 
 ### Block size ###
 
-We discussed *block size* earlier in the context of NFS. Parallel file system block sizes can be much larger than NFS block sizes. The default rsize/wsize for NFS clients is usually 64 K. Lustre, for example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. But parallel file systems offer little advantage when file sizes are small and the number files is large.
+We discussed block size earlier, in the context of NFS. Parallel file system block sizes can be much larger than NFS block sizes. The default rsize/wsize for NFS clients is usually 64,000. Lustre, for example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. But parallel file systems offer little advantage when file sizes are small and the number files is large.
 
 ### Complexity ###
 
