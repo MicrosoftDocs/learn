@@ -4,15 +4,15 @@ In this unit, you'll learn why a full-stack monitoring strategy can improve your
 
 ## Why use full stack monitoring?
 
-Full stack monitoring is a holistic approach to the monitoring, triage and diagnosis of application, infrastructure and security issues that includes telemetry collection, tracking key performance indicators and the capability to isolate problems and perform root cause analysis.
+Full stack monitoring is a complete approach to the monitoring, triage and diagnosis of application, infrastructure and security issues that includes telemetry collection, tracking key performance indicators and the capability to isolate problems and perform root cause analysis.
 
-Your applications and the infrastructure might face different kinds of potentially damaging issues. You might have to deal with issues such as poor response times, fluctuating usage rates, errors and exceptions or security risks.
+Your applications and the infrastructure might face different kinds of potentially damaging issues. You might have to deal with issues such as poor response times, changing usage rates, exceptions, and security risks.
 
-Your response must be appropriate to the kind of issue. You might respond with scaling up capacity to meet increases load. You might also respond with changes in the configuration and code of your application or infrastructure to improve performance and reduce errors. 
+Your response must be appropriate to the kind of issue. You might respond with scaling up capacity to meet increases load. You might also respond with changes in the configuration and code of your application or infrastructure to improve performance and reduce errors.
 
-With the right tools, you can monitor the performance of your infrastructure and applications. You can also monitor for security risks and suspicious activity. You can collect information on issues as soon as they arise, analyze the information you've collected, and respond.
+With the right tools, you can monitor the performance of your infrastructure and applications. You may also monitor for security risks and suspicious activity. And You can collect information on issues as soon as they arise, analyze the information you've collected, and respond.
 
-By monitoring your applications and infrastructure with a full stack approach, you respond to changes and issues appropriately and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
+By monitoring your applications and infrastructure with a full stack approach, you respond to changes and issues appropriately and on time. Over time, your organization will become more productive, cost-effective, secure, and competitive.
 
 
 ## Why monitor your applications?
@@ -23,11 +23,11 @@ By monitoring your application for issues as it's being developed, you prevent e
 
 ![Screenshot of Application Key Performance Indicators](../media/2-application-kpis.png)
 
-You also monitor your application when it's live and in use. As you can see in the charts, you might be faced with failing requests, high server response times or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly. You'll respond effectively to keep your application healthy.
+You also monitor your application when it's live and in use. As you can see in the charts, you might be faced with failing requests, high server response times, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly. You'll respond effectively to keep your application healthy.
 
 ## Why monitor your infrastructure?
 
-Different kinds of issues can affect your infrastructure. You might have to deal with performance issues, or problems that could render your services unreachable or entire infrastructure unavailable. Any of these issues can result in an impact on productivity, financial loss, or damage to your organization's reputation.
+Different kinds of issues can affect your infrastructure. You might have to deal with performance issues, or problems that could render your services unreachable or entire infrastructure unavailable. Any of these issues can result in decreased productivity, financial loss, or damage to your organization's reputation.
 
 You want to deal with any issues that arise in a timely and effective way. You configure alerts on your infrastructure to monitor for various issues. For example, you configure alerts for:
 
@@ -43,20 +43,19 @@ You'll also want to use the data for operational analysis and capacity planning.
 
 ## Why monitor your Azure platform resources?
 
-In addition to monitoring your deployed applications and infrastructure resources, you should also leverage the built-in capabilities to monitor your Azure platform resources. Azure resources such as Storage Accounts, Key Vaults, Cosmos DBs all have performance metrics and resource logs that can be viewed and analyzed to track performance and availability. Additionally, many Azure resources have dedicated Insights which offer pre-defined monitoring experiences across multiple subscriptions, resource groups and resources for the specific resource type.
+In addition to monitoring your deployed applications and infrastructure resources, you should also use Azure's built-in capabilities to monitor your Azure platform resources. Azure resources such as Storage Accounts, Key Vaults, Cosmos DBs all have performance metrics and resource logs that can be viewed and analyzed to track performance and availability. Additionally, many Azure resources have dedicated Insights that offer pre-defined monitoring experiences across multiple subscriptions, resource groups and resources for the specific resource type.
 
 ![Screenshot of Azure Storage KPIs](../media/2-azure-storage-kpis.png)
 
-As the shown in the example, this Azure Monitor storage insight displays the usage and latency for multiple storage accounts across two subscriptions. You can also view, and collect logs related Active Directory for you Azure tenant, and Service Health and Activity logs for Azure subscriptions. A full stack monitoring solution includes visibility into Azure platform resources on which your application and infrastructure depend.
+As the shown in the example, this Azure Monitor storage insight displays the usage and latency for multiple storage accounts across two subscriptions. You can also view, and collect logs related Active Directory for your Azure tenant, and Service Health and Activity logs for Azure subscriptions. A full stack monitoring solution includes visibility into Azure platform resources on which your application and infrastructure depend.
 
 ## Why perform security monitoring?
 
-While the previous sections in this unit focus on performance and availability monitoring, it is essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. For example, you should monitor and alert on 
+While the previous sections in this unit focus on performance and availability monitoring, it is essential to monitor the security of your applications and infrastructure to ensure that they always remain protected and available. For example, you should monitor and alert on:
 
 - Risks to the security of your infrastructure, such as suspicious user accounts or malicious IP addresses.
 - Data exfiltration.
 
 Your security monitoring solution should include strong automated anomaly detection and event management to combine multiple related events into a single actionable alert.
-Taking a full stack approach to monitoring your applications and infrastructure in this way helps you respond appropriately and more effectively to issues. It also helps you gain situational awareness, and you'll learn from the issues that affect your environment. You can strengthen your protection and build improved applications and infrastructure.
 
 Taking a full stack approach to monitoring your applications and infrastructure in this way helps you respond appropriately and more effectively to issues. It also helps you gain situational awareness, and you'll learn from the issues that affect your environment. You can strengthen your protection and build improved applications and infrastructure.
