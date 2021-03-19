@@ -23,7 +23,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 
 Now we need to create a single device identity, the sensor monitoring the cheese cave.
 
-1. With the home page of your hub open, locate and select the **IoT devices** entry in the left-hand menu.
+1. On the home page of your hub, Select **Explorers > IoT devices** in the left-hand menu.
 1. Click **+ New**.
 1. In the **Create a device** screen that follows, enter a **Device ID**, such as "CheeseCaveID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
 
@@ -36,7 +36,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 
 1. Navigate back to the **Overview** page for your IoT Hub.
 
-1. In the left-hand menu, select **Shared access policies**.
+1. In the left-hand menu, select **Settings > Shared access policies**.
 
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the _service_ connection string.
 1. Save off the text file, with a name such as "Cave connections.txt", for reference in the next unit.
