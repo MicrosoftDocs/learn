@@ -11,6 +11,8 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 10
+content: |
+  [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
   - content: "What is meant by seasonable data?"
