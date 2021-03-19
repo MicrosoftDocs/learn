@@ -295,6 +295,34 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ::: zone pivot="azure-devops"
 
+## Setup your apps name and resource group
+
+In your Github repository, edit your Azure resource names by doing the following action:
+
+1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
+
+   a. Change `"<CHANGE_ME_RESOURCE_GROUP>"` to your intended resource group name.  
+   b. Change `"<CHANGE_ME_APP_NAME>"` to your intended application name. Make sure that your application name is unique.
+
+    ```yaml
+    variable "resource_group" {
+      description = "The resource group"
+      default = "<CHANGE_ME_RESOURCE_GROUP>"
+    }
+
+    variable "application_name" {
+      description = "The Spring Boot application name"
+      default     = "CHANGE_ME_APP_NAME"
+    }
+
+    variable "location" {
+      description = "The Azure location where all resources in this example should be created"
+      default     = "westeurope"
+    }
+    ```
+
+1. Commit your changes
+
 ## Create an Azure Pipeline to provision your Terraform resources
 
 This Azure DevOps project includes two separate pipelines for provisioning and build-and-deploy. The provisioning pipeline creates the azure resources that will be released via the build-and-deploy  pipeline at a later point.
@@ -346,7 +374,7 @@ In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline
 1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
 1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
 1. In the path, select "/azuredevops/provision.yml"
-1. Select **Continue** to go the "***Review**" tab and review your PipeLine before you run it
+1. Select **Continue** to go the "***Review**" tab and review your PipeLine
 
 ![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
 
@@ -391,10 +419,11 @@ Let's look at some of the fields we use in the config:
 - **command**: your Terraform workflow command - **init** or **apply**.
 - **backendAzure**: required fields that are needed in a team environment to store shared state.
 
-Before you run the pipeline, we need to add the variable that will bind to your service connection:
+Before you save the pipeline, we need to add the variable that will bind to your service connection:
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
-1. Select "Run" (top-right corner) to run the pipeline and start provisioning your resources.
+1. Select "okay" (bottom-right corner) to save the variable
+1. Select "run" (top-right corner) to run to pipeline
 
 ## Watch the pipeline run
 
