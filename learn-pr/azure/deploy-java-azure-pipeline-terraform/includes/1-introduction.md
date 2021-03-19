@@ -10,7 +10,9 @@ The following image displays multiple pipelines in the **Provision** track, with
 
 In this module's scenario, you'll use all three tracks by implementing multiple pipelines.
 
-Several automation tools are available to help you work with these pipelines. You plan on using either GitHub Actions or Azure Pipelines, to provide the workflow automation you need.
+Azure supports Several automation tools such as Jenkins, GitLab, GitHub Actions, and Azure Pipelines.
+
+In this module, you can complete the exercises using GitHub Actions or Azure Pipelines.
 
 ## Learning objectives
 
