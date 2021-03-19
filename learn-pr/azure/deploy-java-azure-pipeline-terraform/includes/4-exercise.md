@@ -295,7 +295,7 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ::: zone pivot="azure-devops"
 
-## Setup your apps name and resource group
+## Setup your application name and Azure resource group
 
 In your Github repository, edit your Azure resource names by doing the following action:
 
