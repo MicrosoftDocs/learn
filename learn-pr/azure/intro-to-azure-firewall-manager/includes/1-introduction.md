@@ -1,6 +1,6 @@
 Azure Firewall Manager enables you to centralize firewall security policies and route management for your cloud-based security perimeters. 
 
-:::image type="content" source="../media/firewall-manager-overview.png" alt-text="A graphic depicting a simple firewall configuration supporting one workload subnet and one firewall subnet, which is connected to the internet.":::
+:::image type="content" source="../media/firewall-manager-overview.png" alt-text="A graphic depicting a the Azure Firewall Manager hierarchy.":::
 
 ## Example scenario
 
