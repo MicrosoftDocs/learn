@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.languages.vue-first-steps
+metadata:
+  title: Take your first steps with Vue.js
+  description: Vue.js is a progressive web framework. We will see how this can help you create your applications.
+  brand: azure
+  ms.date: 03/01/2021
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Take your first steps with Vue.js
+summary: |
+  Summary text #TODO
+
+  In this learning path, you'll:
+    -    
+prerequisites: HTML/CSS, Git, npm, and JavaScript
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- vs-code
+- azure-app-service-static
+modules:
+- learn.language.vue-get-started
+- learn.language.vue-dynamic-rendering
+- learn.language.vue-data-events
+- learn.language.vue-cli-components
+trophy:
+  uid: learn.languages.vue-first-steps.trophy
