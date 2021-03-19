@@ -48,7 +48,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
    |Aggregation type   |  Average       |
    |Threshold value   |    90     |
 
-    ![Screenshot that shows the section for alert logic filled out](../media/8-alert-logic.png)
+    ![Screenshot that shows the section for alert logic filled out.](../media/8-alert-logic.png)
 
 1. Select **Done**.
 
@@ -68,7 +68,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     | **Instance details** |
     |Action group name | Email alerts |
 
-   ![Screenshot that shows the "Add action group" pane filled out](../media/8-create-action-group-basics.png)
+   ![Screenshot that shows the "Add action group" pane filled out.](../media/8-create-action-group-basics.png)
 
 1. Select the **Notifications** tab, and enter the following values for each setting.
 
@@ -97,7 +97,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     |Alert rule name | Web server CPU running hot    |
     |Description     | Email alert notifies when the CPU is over 90%|
 
-   ![Screenshot that shows the fields for alert details](../media/8-alert-rule-details.png)
+   ![Screenshot that shows the fields for alert details.](../media/8-alert-rule-details.png)
 
 1. Select **Create alert rule**.
 
