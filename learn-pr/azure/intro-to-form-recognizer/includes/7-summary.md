@@ -5,7 +5,6 @@ Now that you've reviewed this module, you should be able to:
 * Assess the benefits of Form Recognizer
 * Describe what Form Recognizer is
 * Define scenarios where Form Recognizer can be applied
-* Decide if Form Recognizer is the right choice for your scenario
 
 ## Use these resources to discover more
 

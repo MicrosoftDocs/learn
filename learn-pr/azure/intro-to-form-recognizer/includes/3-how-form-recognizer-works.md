@@ -7,38 +7,18 @@ To use Form Recognizer, you need an Azure subscription, and a Form Recognizer re
 
 You can test the service using a free pricing tier, to determine if Form Recognizer is right for your organization. 
 
-## Layout API
+Form Recognizer is a service available by REST API and SDK that runs on Azure. The service analyzes JPG and PNG images, and PDF or TIFF documents, and extracts the key data you need, and compiles the data in JSON format.
 
-Form Recognizer Layout API can extract text, selection marks, and table structures - the row and column numbers associated with the text - as well as their bounding box coordinates.
+## The services
 
-![Layout API tables example.](../media/tables-example.jpeg)
+There are three services with different functions available through Form Recognizer:
 
-## Prebuilt Models
+**Layout API** extracts text, tables, selection marks, and structure information from documents and returns them in an organized structured JSON response. Documents can be from various file formats and quality, including phone-captured images, scanned documents, and PDFs.
 
-Form Recognizer Pre-built models are available in four models: invoices, sales receipts, identifications, and business cards.
+![Example of Layout API with selection marks, text, and tables identified and represented in JSON format.](../media/layout-tool-example.jpeg)
 
-### Prebuilt Invoice Model
+**Pre-built models** analyze three unique form types: invoices, sales receipts, and business cards. This service combines Optical Character Recognition (OCR) capabilities with deep learning models that understand invoice, receipt, and business card information to extract key information in multiple languages.
 
-The Pre-built Invoice model extracts data from invoices in various formats and returns structured data. This model extracts key information such as invoice ID, customer and vendor details, shipping and billing information, the price totals, and tax amounts.
+**Custom models** are created by uploading five or more sample forms. Form recognizer then trains a custom model that can extract data tailored specifically to your forms. After you train a custom model, you can test and retrain it to reliably extract data from more forms according to your needs.
 
-The Invoice model is able to extract the full line item and its parts – description, amount, quantity, product ID, date, and more. Further, this model is designed to analyze and return all of the text and tables in structured data in order to automate the invoice process.
-
-![Prebuilt invoice example.](../media/overview-invoices.jpeg)
-
-### Prebuilt Receipt Model
-
-This model is used to read English sales receipts from restaurants, retail, gas stations and more, from Australia, Canada, Great Britain, India, and the United States. The Prebuilt receipt model extracts the information you need, such as the time and date of the transaction, merchant information, and the tax and total amounts. The data can be extracted from different formats of receipts, in both scanned copies or phone images.
-
-![Prebuilt receipt example.](../media/overview-receipt.jpeg)
-
-### Prebuilt ID model
-
-This model extracts the information from worldwide passports and American drivers licenses, such as the document number, name, country of residence, and expiration date. It then returns a list of the structured data.
-
-![Prebuilt ID example.](../media/overview-id.jpeg)
-
-### Prebuilt Business Cards model
-
-This model extracts key information, such as the contact information, and compiles them in an organized JSON response.
-
-![Prebuilt ID example.](../media/overview-id.jpeg)
+Your small business may start out by using pre-built models to analyze sales receipts and invoices, saving yourself time from doing all of the data entry manually. Later, you may look to a custom model for regular receipts and invoices to help fully automate your data entry with a high degree of accuracy.
