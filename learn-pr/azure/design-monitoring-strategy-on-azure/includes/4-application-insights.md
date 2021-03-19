@@ -20,7 +20,7 @@ For example, in your .NET and .NET Core applications hosted on Azure App Service
 
 Application Insights automatically collect data about your application’s performance and health. You can view this data in the Application Insights resource in the Azure portal. From there you can, for example, get a list of all failures that have been collected and drill down into each one.
 
-![Screenshot of analyzing failures](../media/4-4-app-failures.png)
+![Screenshot of analyzing failures](../media/4-app-failures.png)
 
 To continue your investigation to the root cause of the error or exception, you can drill into one of the problematic transactions for a detailed end-to-end transaction view that includes dependencies and exception details.
 
