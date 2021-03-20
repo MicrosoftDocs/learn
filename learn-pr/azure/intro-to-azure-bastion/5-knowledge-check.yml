@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "Which protocols do administrators typically use to remotely manage Azure VMs? Choose the best answer."
     choices:
-    - content: "Remote Desktop Protocol (RDP)."
+    - content: "RDP"
       isCorrect: false
       explanation: "Incorrect. Although administrators do use RDP, they also use other protocols."
-    - content: "Secure Shell (SSH)."
+    - content: "SSH"
       isCorrect: false
       explanation: "Incorrect. Although administrators do use SSH, they also use other protocols."
-    - content: "Both RDP and SSH."
+    - content: "Both RDP and SSH"
       isCorrect: true
       explanation: "Correct. Administrators typically use both RDP and SSH to remotely administer Azure VMs."
   - content: "When an administrator connects to Azure Bastion to open a remote connection to a hosted VM, which of the following occurs?"
@@ -45,26 +45,29 @@ quiz:
     - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in the same subnet."
       isCorrect: false
       explanation: "Incorrect. Although Azure Bastion should be deployed in the same virtual network, it must be in a different subnet."
-    - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in a different subnet"
+    - content: "They must deploy Azure Bastion in the same virtual network as that which contains the VMs, and in a different subnet."
       isCorrect: true
       explanation: "Correct. Azure Bastion must be deployed in the same virtual network (or peered virtual network) as the VMs, but in its own subnet."
-  - content: "Your boss is concerned that by implementing Azure Bastion, you'll need to maintain it with patches and updates. Is your boss right?"
+  - content: "Your boss is concerned that by implementing Azure Bastion, you'll need to maintain it with patches and updates. Is your boss correct?"
     choices:
-    - content: "No, your boss is wrong. Azure Bastion is a fully managed PaaS service which you do not need to patch or update."
+    - content: "No, your boss is wrong. Azure Bastion is a fully managed PaaS service that you do not need to patch or update."
       isCorrect: true
-      explanation: "Correct. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."
-    - content: "Yes, your boss is correct. You must periodically patch and update Azure Bastion."
+      explanation: "Correct. Azure Bastion is a fully managed PaaS service that requires no customer patching or updating."
+    - content: "Yes, your boss is partially correct. You must patch and update Azure Bastion, although not at regular intervals."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."
+    - content: "Yes, your boss is correct. You must periodically patch and update Azure Bastion."
+      isCorrect: false
+      explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."<!--Andy, this has only two options, so I added the second one here-->
   - content: "When deploying Azure Bastion, which of the following require a public IP?"
     choices:
     - content: "The Azure Bastion in each virtual network."
       isCorrect: true
-      explanation: "Correct. Only the Azure Bastion in each virtual network requires a public IP."
+      explanation: "Correct. Only the Azure Bastion host <!--Andy, I added host here-->in each virtual network requires a public IP."
     - content: "The Azure Bastion in each subnet in each virtual network."
       isCorrect: false
-      explanation: "Incorrect. Although Azure Bastion requires a public IP, you don't need to deploy Azure Bastion in each subnet, but rather in each virtual network."
-    - content: "The virtual machines you want to connect to."
+      explanation: "Incorrect. Although Azure Bastion requires a public IP, you don't need to deploy it in each subnet, but rather in each virtual network."
+    - content: "The VMs you want to connect to."
       isCorrect: false
       explanation: "Incorrect. Your VMs have only private IPs."
 
