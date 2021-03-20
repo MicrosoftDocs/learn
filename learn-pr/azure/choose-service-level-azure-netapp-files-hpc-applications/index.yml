@@ -16,7 +16,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Describe the factors that determine throughput limits of Azure NetApp Files volume.
     - Choose the best Service Level of Azure NetApp Files for HPC applications.
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-    - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
+    - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool, and Volumes.
     - Ability to set up Azure NetApp Files and create a Volume.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)

@@ -9,11 +9,11 @@
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
 -->
 
-In this moduel, we wanted to help you choose the best Azure NetApp Files service level for your EDA/HPC applications.
+In this module, we wanted to help you choose the best Azure NetApp Files service level for your EDA/HPC applications.
 
 We review the storage hierarchy of Azure NetApp Files, and examine the key factors that determine Azure NetApp Files performance, including Service Level and Volume quota. We also learn how to calculate the required bandwidth of your applications. And put service level cost structure into consideration.
 
-After we have identified the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level by using the Azure NetApp Files Performance Calculator.
+After we have identified the throughput or IOPS requirements of the application, we will be able to choose the best Service Level. The Azure NetApp Files Performance Calculator is the tool we suggest to achieve this goal.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
