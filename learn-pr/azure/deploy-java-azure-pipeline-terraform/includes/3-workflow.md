@@ -1,4 +1,4 @@
-In this unit, you'll learn about DevOps and how it integrates with Terraform and Azure.
+In this unit, you'll learn about automated workflow tools and how they integrate with Terraform and Azure.
 
 ::: zone pivot="github-actions"
 
