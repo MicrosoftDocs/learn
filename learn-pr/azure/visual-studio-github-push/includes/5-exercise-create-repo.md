@@ -24,25 +24,43 @@ The easiest way to start coding in Visual Studio, is with a project template. Vi
 
 1. In Visual Studio, go to **File > New > Project** to open the **Create a new project** dialog.
 
-2. Type in 'console application' in the search box, and select the C# Console Application from the search results. 
+:::image type="content" source="../media/5-create-new-project-menu.png" alt-text="Screenshot of Visual Studio File menu for new project":::
 
-3. Select **Next** to get to the **Configure your new project** page. You can keep the defaults and select **Next** again.
+2. Type in 'console application' in the search box, and select the C# Console Application from the search results. Select **Next** to get to the next screen. 
+
+:::image type="content" source="../media/5-create-a-new-project-dialog.png" alt-text="Screenshot of create a new project dialog":::
+
+3. In the **Configure your new project** page, you can keep the defaults and select **Next** again.
+
+:::image type="content" source="../media/5-configure-project-screen.png" alt-text="Screenshot of configure your new project screen":::
 
 4. Keep the defaults in the **Additional information** page and select **Create**. 
 
+:::image type="content" source="../media/5-additional-information-screen.png" alt-text="Screenshot of additional information for new project screen":::
+
 Your new project will be created and you can see the contents in Solution Explorer.
+
+:::image type="content" source="../media/5-solution-explorer.png" alt-text="Screenshot of Solution Explorer":::
 
 ## Push the project to GitHub
 
 Now you'll initialize a Git repository at the project root directory, create a new repository on GitHub, and push the repository contents to GitHub. To do this, Visual Studio has a **Create a Git repository** dialog box. You can access this window through the Git menu, the Git Changes window, or the status bar control. We'll use the Git Changes window.
 
-1. In Visual Studio, go to **View > Git Changes** to activate the tool window. In its empty state, the Git Changes window provides you with entry points to create, clone, or open repositories. When populated, the window will show you the changes in your currently open repository and allow you to commit. 
+1. In Visual Studio, go to **View > Git Changes** to activate the tool window. 
 
-Select the **Create Git Repository...** button.
+:::image type="content" source="../media/5-view-git-changes-menu.png" alt-text="Screenshot of Visual Studio View menu":::
 
-2. In the Create a Git repository dialog, verify the local path of your project. Visual Studio will auto-populate the Account and Owner since you're signed in to GitHub. Verify the Repository name and Private repository checkbox. 
+In its empty state, the Git Changes window provides you with entry points to create, clone, or open repositories. When populated, the window will show you the changes in your currently open repository and allow you to commit. 
 
-3. Select **Create and Push**
+2. Select the **Create Git Repository...** button.
+
+:::image type="content" source="../media/5-git-changes-create-repo.png" alt-text="Screenshot of empty Git Changes window":::
+
+3. In the Create a Git repository dialog, verify the local path of your project. Visual Studio will auto-populate the Account and Owner since you're signed in to GitHub. Verify the Repository name and Private repository checkbox. 
+
+:::image type="content" source="../media/5-create-repo-dialog.png" alt-text="Screenshot of Create a new repository dialog":::
+
+4. Select **Create and Push**
 
 The dialog will close and you'll see progress of your repository's creation in the Git Changes window and the Output window.
 

@@ -12,6 +12,8 @@ See here for general guidance on content units: https://review.docs.microsoft.co
 
 If you're starting with a local project in Visual Studio, the process to get it up in GitHub is many steps:
 
+:::image type="content" source="../media/4-create-repo-steps.png" alt-text="Screenshot of flow diagram depicting steps for creating a repository":::
+
 1. Create a repository on GitHub.com.
 2. Copy the remote endpoint.
 3. Initialize your repository locally.
@@ -20,7 +22,8 @@ If you're starting with a local project in Visual Studio, the process to get it 
 6. Add a .gitattributes file.
 7. Stage project files.
 8. Commit project files.
-9. Push to the remote repository. 
+9. Push to the remote repository.
+10. Verify success.
 
 Visual Studio has built-in functionality that fully automates this process for you.
 
@@ -36,8 +39,8 @@ After initializing, Visual Studio creates the first commit to add the .gitignore
 
 Not every file created or updated in your code should be committed to Git. Temporary files from your development environment, test outputs, and logs are all examples of files that you create but aren't part of your codebase.
 
-Visual Studio creates a basic .gitignore file for you with custom content tailored to the Visual Studio development environment. You can see Visual Studio's Ignore file in GitHub's collection of .gitignore file templates. There are different types of .gitignore file templates you can use there based on the type of project you're creating. 
-https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+Visual Studio creates a basic .gitignore file for you with custom content tailored to the Visual Studio development environment. You can see Visual Studio's Ignore file in [GitHub's collection of .gitignore file templates](https://github.com/github/gitignore/blob/master/VisualStudio.gitignore). There are different types of .gitignore file templates you can use based on the type of project you're creating. 
+
 
 ### The .gitattributes file
 
@@ -57,4 +60,4 @@ The repository on GitHub has two primary metadata fields - the name and descript
 
 All GitHub repositories created through Visual Studio are set to private by default. This means only you can view the repository and commit to it. To change this setting, add contributors to private repositories and manage access via the repository's Settings page on GitHub.com. Toggling off the checkbox switches the repository to public, allowing anyone on the internet to view your repository and its contents on GitHub.com. But you can still choose who can contribute to it directly. 
 
-Apart from pushing to GitHub, you can push to any other remote endpoint using the **Existing remote** tab. You can also use the **Local only** tab to initialize the Git repository locally. In this case, Visual Studio just adds the .git folder and doesn't make any commits.
+Apart from pushing to GitHub, you can push to any other remote endpoint such as Azure DevOps using the **Existing remote** tab. You can also use the **Local only** tab to initialize the Git repository locally. In the latter case, Visual Studio just adds the .git folder and doesn't make any commits.
