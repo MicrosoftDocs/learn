@@ -58,16 +58,16 @@ quiz:
       explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."
     - content: "Yes, your boss is correct. You must periodically patch and update Azure Bastion."
       isCorrect: false
-      explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."<!--Andy, this has only two options, so I added the second one here-->
+      explanation: "Incorrect. Azure Bastion is a fully managed PaaS service and requires no customer patching or updating."
   - content: "When deploying Azure Bastion, which of the following require a public IP?"
     choices:
-    - content: "The Azure Bastion in each virtual network."
+    - content: "The Azure Bastion host in each virtual network requires a public IP."
       isCorrect: true
-      explanation: "Correct. Only the Azure Bastion host <!--Andy, I added host here-->in each virtual network requires a public IP."
-    - content: "The Azure Bastion in each subnet in each virtual network."
+      explanation: "Correct. Only the Azure Bastion host in each virtual network requires a public IP."
+    - content: "The Azure Bastion host in each subnet in each virtual network requires a public IP."
       isCorrect: false
       explanation: "Incorrect. Although Azure Bastion requires a public IP, you don't need to deploy it in each subnet, but rather in each virtual network."
-    - content: "The VMs you want to connect to."
+    - content: "The VMs you want to connect to require a public IP."
       isCorrect: false
       explanation: "Incorrect. Your VMs have only private IPs."
 
