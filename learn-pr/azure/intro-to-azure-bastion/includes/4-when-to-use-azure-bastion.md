@@ -1,4 +1,4 @@
-<!--Andy, I added this first paragraph to match the template-->In this unit, you'll explore the uses of Azure Bastion and determine whether it is the correct choice for securely connecting to a remote VM. You'll evaluate Azure Bastion based on the following criteria:
+In this unit, you'll explore the uses of Azure Bastion and determine whether it is the correct choice for securely connecting to a remote VM. You'll evaluate Azure Bastion based on the following criteria:
 
 - Security
 - Ease of management
@@ -6,9 +6,10 @@
 
 Administrators must rely on remote management for the administration and maintenance of an organization's Azure resources, which include VMs and the apps installed on those VMs. An important consideration is the ability to connect securely to these resources and apps without exposing them to the internet. You can use Azure Bastion to remotely connect to and manage hosted VMs without exposing management ports to the internet. However, some administrators have addressed this requirement by using *jump servers*, which are sometimes also called *jump boxes*. In this unit, you'll determine whether Azure Bastion can replace jump boxes as a method for providing secure remote management access.
 
-## Jump boxes
+> [!NOTE]
+> A *jump box* is an Azure VM with a public IP address, which is accessible from the internet. 
 
-A *jump box* is an Azure VM with a public IP address, which is accessible from the internet. Consider a typical jump box scenario in which:
+In a typical jump box scenario:
 
 - Your organization's VMs are configured only with private IP addresses, and are not directly accessible from the internet.
 - The jump box is deployed into the same virtual network as VMs that administrators want to remotely manage by using RDP and SSH.
@@ -25,7 +26,7 @@ The jump box is a VM running a server operating system, so you'll need to:
 
 ## Decision criteria
 
-To determine which of these is the better option to remotely manage your organization's Azure resources, consider criteria such as security, ease of management, and integration. Here's an analysis of these criteria.
+To determine whether a jump box or Azure Bastion is the better option to remotely manage your organization's Azure resources, consider criteria such as security, ease of management, and integration. Here's an analysis of these criteria.
 
 | | |
 | --- | --- |
@@ -49,4 +50,4 @@ Consider using Azure Bastion when you have remote Azure-hosted VMs to manage and
 - You don't want to configure NSG settings to enable remote management.
 - You want to avoid using jump boxes.
 
-When determining the number of Azure Bastions <!--Andy, can we say "Azure Bastion hosts" instead of Azure Bastions?--> to deploy, consider that you require one per virtual network (or peered virtual network). You don't have to deploy Azure Bastion on a per-VM or per-subnet basis.
+When determining the number of Azure Bastion hosts to deploy, consider that you require one per virtual network (or peered virtual network). You don't have to deploy Azure Bastion on a per-VM or per-subnet basis.

@@ -33,7 +33,7 @@ By using Azure Bastion, you bypass the need to directly expose RDP/SSH to the in
 Administrators that want to connect to IaaS VMs in Azure through Azure Bastion require the Reader role on:
 
 - The target VM.
-- The network adapter. <!--Andy, Termstudio says NIC is a failed term and to use network adapter instead--> with private IP on the target VM
+- The network interface with private IP on the target VM.
 - The Azure Bastion resource.
 
 When you deploy Azure Bastion, you deploy it to its own subnet within a virtual network or peered virtual network. 

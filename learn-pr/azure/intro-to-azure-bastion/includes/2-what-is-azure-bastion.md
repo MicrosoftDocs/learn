@@ -1,4 +1,4 @@
-It's vital to be able to securely administer and manage remote hosted VMs. To begin with, let's define secure remote management and then review the features of Azure Bastion. This overview will help you decide if Azure Bastion is a good fit for your requirements. <!--slight edits to match template-->
+It's vital to be able to securely administer and manage remote hosted VMs. To begin with, let's define secure remote management and then review the features of Azure Bastion. This overview will help you decide if Azure Bastion is a good fit for your requirements.
 
 ## What is secure remote management?
 
@@ -8,7 +8,7 @@ When administrators connect to remote VMs, they typically use either RDP or SSH 
 
 ## Azure Bastion definition
 
-Azure Bastion is a fully managed PaaS service that helps provide secure <!--slight edit to remove security promise--> and seamless RDP and SSH access to your Azure VMs directly through the Azure Portal.
+Azure Bastion is a fully managed PaaS service that helps provide secure and seamless RDP and SSH access to your Azure VMs directly through the Azure Portal.
 
 Azure Bastion:
 
