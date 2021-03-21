@@ -3,13 +3,13 @@ uid: learn.intro-to-azure-bastion
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Bastion
-  description: Describe how Azure Bastion provides secure and seamless connectivity to your virtual machines (VMs) directly in the Azure portal. Determine whether Azure Bastion can replace your administrative jump boxes.
+  description: Describe how Azure Bastion provides secure and seamless connectivity to your VMs directly in the Azure portal. Determine whether Azure Bastion can replace your administrative jump boxes.
   ms.date: 03/12/2021             
   author: warrenaj
   ms.author: v-anwarr
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Bastion
-summary: Describe how Azure can help to reduce the risk of unauthorized access to your cloud-based VMs. Evaluate whether Azure Bastion can help secure administrative access to your virtual machines.
+summary: Describe how Microsoft Azure can help to reduce the risk of unauthorized access to your cloud-based virtual machines (VMs). Evaluate whether Azure Bastion can help secure administrative access to your VMs.
 abstract: |
   By the end of this module, you will be able to: 
     - Evaluate how Azure Bastion can help secure administrative access to your VMs.
