@@ -2,6 +2,6 @@ In this module, we explored how Django can streamline the creation of views and 
 
 You learned how to:
 
-- use generic views
-- create Django forms
-- use the django-crispy-forms library
+- Use generic views.
+- Create Django forms.
+- Use the django-crispy-forms library.
