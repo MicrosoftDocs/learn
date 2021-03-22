@@ -4,7 +4,7 @@ Azure landing zones provide cloud adoption teams with a well-managed environment
 
 Configuration of your cloud environment can be one of the biggest enables to cloud success. It can also be one of the biggest blockers if the configuration is misaligned with how you want to operate workloads in the cloud. If the success of your adoption project is critical and your team isn't sure how to proceed, then consult with a partner about how to move forward.
 
-Many of the top Microsoft partners provide offerings aligned to the Ready methodology of the Cloud Adoption Framework (CAF). Those offerings typically include the partners own customized Azure landing zone implementation option. [Find a partner](https://www.microsoft.com/azure/partners/adopt?filters=ready&azure-protal=true).
+Many of the top Microsoft partners provide offerings aligned to the Ready methodology of the Cloud Adoption Framework. Those offerings typically include the partners own customized Azure landing zone implementation option. [Find a partner](https://www.microsoft.com/azure/partners/adopt?filters=ready&azure-protal=true).
 
 Before engaging a partner, review the guide to evaluating [partner implementation options for Azure landing zones](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone?azure-portal=true).
 
@@ -18,7 +18,7 @@ The following are implementation options to start small and expand. Each establi
 
 ## Start with enterprise-scale implementation options (best for enterprise operations)
 
-The following are implementation options to start with enterprise-scale. Each builds towards a more robust enterprise architecture.
+The following are implementation options to start with enterprise-scale. Each builds toward a more robust enterprise architecture.
 
 - **CAF Enterprise-Scale foundation:** This is the suggested foundation for enterprise-scale adoption. Review the [example in GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/wingtip/README.md) or [deploy](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fes-foundation.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fwingtip%2FarmTemplates%2Fportal-es-foundation.json) this solution to your Azure environment.
 - **CAF Enterprise-Scale Virtual WAN:** Add a Virtual WAN network module to the enterprise-scale foundation. Review the [example in GitHub](https://github.com/Azure/Enterprise-Scale/blob/main/docs/reference/contoso/Readme.md) or [deploy](https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fes-vwan.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FEnterprise-Scale%2Fmain%2Fdocs%2Freference%2Fcontoso%2FarmTemplates%2Fportal-es-vwan.json) this solution to your Azure environment.

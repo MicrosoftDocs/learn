@@ -1,4 +1,4 @@
-Measuring objectives may provide one financial consideration, by defining the return expected from a specific effort. Cost is another key financial consideration. In this unit, we will explore various outcome driven considerations and a few formulas to calculate costs.
+Measuring objectives may provide one financial consideration, by defining the return expected from a specific effort. Cost is another key financial consideration. In this unit, we will explore various outcome-driven considerations and a few formulas to calculate costs.
 
 ## Sample outcomes by category
 
@@ -135,4 +135,4 @@ If a refresh cycle is approved and budgeted, the cloud transformation could help
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the "Business justification" header. Use the financial considerations discussed in this unit to describe the business justification or financial considerations.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the section under the **Business justification** heading. Use the financial considerations discussed in this unit to describe the business justification or financial considerations.
