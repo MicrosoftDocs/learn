@@ -111,7 +111,7 @@ Let's review the three kinds of actions our program needs to perform:
 - Remove completed tasks from that list.
 - Print all the current tasks in the list.
 
-Our module interface should be as simple as that list, so we're going to expose three functions, one for each action:
+Our module interface should be as simple as that list, so we're going to have three functions, one for each action:
 
 ```rust
 use std::io::Result;
@@ -133,4 +133,4 @@ PathBuf` argument. That's because all of them need a file path to complete their
 
 The functions all have the same return type: `std::io::Result<()>`. This format indicates that the return type is an I/O result. This return type signals that we're expecting a broad family of unwanted outcomes that might arise when we deal with data in the physical word. The `Ok` variant is just an empty tuple, `()`, which is the type commonly associated with no data at all. Its only purpose is to signal that the function returned an `Ok` and no errors occurred.
 
-In the next units, we'll walk through writing the contents of each function in detail.
+In the next three units, we'll walk through writing the contents of each function in detail.
