@@ -1,4 +1,4 @@
-Your R&D team has several HPC options available with Azure, and the following table highlights the primary technical differences among the **HB120_v2**, **HC44**, and **HB60** SKUs. Having several HPC SKUs to choose from allows you to select the right SKU for your HPC application's performance characteristics.
+Your R&D team has several HPC options available with Azure, and the following table highlights the primary technical differences among the HB120_v2, HC44, and HB60 SKUs. Having several HPC SKUs to choose from allows you to select the right SKU for your HPC application's performance characteristics.
 
 The items highlighted indicate which HPC virtual machine is strongest and preferred in a particular category.
 
@@ -22,7 +22,7 @@ The items highlighted indicate which HPC virtual machine is strongest and prefer
 
 - Your HPC application is floating point bound and requires AVX 512 support.
 - Your HPC application is sensitive to CPU frequency and generally performs better with a higher clock frequency.
-- Intel has a mature development ecosystem, easier to develop and run applications.
+- Intel has a mature development ecosystem, so it's easier to develop and run applications.
 - You have a long history and experience with Intel processors and would prefer to use an Intel processor.
 
 ## Reasons to choose HB120_v2
