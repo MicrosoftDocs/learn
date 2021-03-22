@@ -33,11 +33,11 @@ products:
 units:
 - learn.design-monitoring-strategy-on-azure.1-introduction
 - learn.design-monitoring-strategy-on-azure.2-continuous-monitoring
+- learn.design-monitoring-strategy-on-azure.5-application-insights
+- learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 - learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 - learn.design-monitoring-strategy-on-azure.4-security-center
-- learn.design-monitoring-strategy-on-azure.5-application-insights
 - learn.design-monitoring-strategy-on-azure.6-sentinel
-- learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
 - learn.design-monitoring-strategy-on-azure.8-summary
 badge:
   uid: learn.design-monitoring-strategy-on-azure.badge
