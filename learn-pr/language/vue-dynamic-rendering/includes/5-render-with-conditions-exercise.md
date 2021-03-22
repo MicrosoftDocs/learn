@@ -16,6 +16,6 @@ Let's update your display to highlight options that are almost sold out and to d
 
 ## Test the display
 
-Return to the browser. The display should now be updated. It it isn't, refresh the page. It should now look like the following screenshot:
+Return to the browser. The display should now be updated. If it isn't, refresh the page. It should now look like the following screenshot:
 
 ![Screenshot of updated display showing buttons and text.](../media/conditional.png)
