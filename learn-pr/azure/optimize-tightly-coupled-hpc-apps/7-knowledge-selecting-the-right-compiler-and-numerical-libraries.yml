@@ -26,7 +26,7 @@ quiz:
     - content: CentOS-HPC 7.8+ Azure Marketplace image
       isCorrect: true
       explanation:  Yes, this is an HPC Azure Marketplace image, supporting InfiniBand. It has all the MPI libraries and tuned numerical libraries preinstalled.
-  - content: Which tuned BLAS library should they select for HB120_v2 VM?
+  - content: Which tuned BLAS library should the team select for HB120_v2 VM?
     choices:
     - content: AMD BLIS
       isCorrect: true
@@ -37,7 +37,7 @@ quiz:
     - content: Tuned OpenBLAS
       isCorrect: false
       explanation:  Tuned OpenBLAS is an optimized BLAS library, which will perform well on HB120_v2, but there are better options. 
-  - content: Which tuned FFTW library should they select for HC44 VM? 
+  - content: Which tuned FFTW library should the team select for HC44 VM? 
     choices:
     - content: AMD FFTW
       isCorrect: false
