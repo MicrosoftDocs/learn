@@ -23,7 +23,7 @@ Azure offers a rich platform covering the whole data lifecycle, fundamental for 
 Azure offers a rich ecosystem of services and tools to migrate, ingest, store and analyze data. The following list is not exhaustive, but it gives a glimpse of the mechanisms that can be used to process data and make it available for later sharing, in order to facilitate data-driven decision taking:
 
 - Data Analytics: [Azure Synapse](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is) is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. Azure Synapse brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, pipelines for data integration and ETL/ELT (Extract-Transform-Load/Extract-Load-Transform), and deep integration with other Azure services such as Power BI, Azure CosmosDB, and Azure Machine Learning.
-- Data Migration: data might be already stored in existing sources, but it needs to be migrated to a modern platform before it can be converted into actionable insights. [Azure Database Migration Service](https://docs.microsoft.com/en-us/azure/dms/) offer migration tooling that helps with data migrations from systems such as SQL Server, PostgreSQL, Oracle or MongoDB to Azure.
+- Data Migration: data might be already stored in existing sources, but it needs to be migrated to a modern platform before it can be converted into actionable insights. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/) offer migration tooling that helps with data migrations from systems such as SQL Server, PostgreSQL, Oracle or MongoDB to Azure.
 - Data Processing: Azure includes a rich set of tooling to analyze and transform data streams with [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction), as well as to execute ETL (Extract-Transform-Load) processes at large scale with [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/).
 
 ### Data Sharing
@@ -76,4 +76,4 @@ A possibility is that existing data does not allow to unequivocally conclude whe
 
 ## Where to look next
 
-Many of the concepts exposed in this unit are further articulated in the Cloud Adoption Framework sections for [Data Democratization](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/data).
+Many of the concepts exposed in this unit are further articulated in the Cloud Adoption Framework sections for [Data Democratization](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/best-practices/data).
