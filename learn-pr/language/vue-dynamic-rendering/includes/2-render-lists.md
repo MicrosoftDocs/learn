@@ -10,7 +10,7 @@ The syntax for `v-for` looks like:
 v-for="itemName in collectionName"
 ```
 
-`collectionName` is the name of the array in your data object. For each iteration, `itemName` assumes the identity of your current item. To use `v-for` in a template, you add the directive inside an element declaration. Doing so repeats the HTML element as many times as there items in the array.
+`collectionName` is the name of the array in your data object. For each iteration, `itemName` assumes the identity of your current item. To use `v-for` in a template, you add the directive inside an element declaration. Doing so repeats the HTML element as many times as there are items in the array.
 
 > [!NOTE]
 > If you're creating an unordered list (`ul`), you would *not* add `v-for` to the `ul` element. You add it to the `li` element, because the `li` element is what will be repeated.
