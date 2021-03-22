@@ -74,7 +74,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --no-wait
     ```
 
-1. Gateway creation takes approximately 45 minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which enables you to monitor the progress.
+1. Gateway creation takes approximately 30+ minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which enables you to monitor the progress.
 
     ```azurecli
     watch -d -n 5 az network vnet-gateway list \
