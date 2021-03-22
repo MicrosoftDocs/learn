@@ -1,9 +1,9 @@
-As highlighted before, the admin site does not provide access to your data by default. Fortunately, it only takes a couple of lines of code to register any models you wish to be editable through the tool.
+As highlighted before, the admin site doesn't provide access to your data by default. Fortunately, it takes only a couple of lines of code to register any models you want to be editable through the tool.
 
-## Registering models
+## Register models
 
-1. Open **dog_shelters/admin.py**
-1. Below the comment which reads `# Register your models here.`, add the following code to register your models
+1. Open **dog_shelters/admin.py**.
+1. Underneath the comment that reads `# Register your models here.`, add the following code to register your models.
 
     ```python
     # Register your models here.
@@ -13,45 +13,50 @@ As highlighted before, the admin site does not provide access to your data by de
     admin.site.register(Dog)
     ```
 
-1. Save the file
-1. Return to your browser and refresh the page
-1. Notice you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**
+1. Save the file.
+1. Return to your browser, and refresh the page.
 
-    :::image type="content" source="../media/staff-user-display.png" alt-text="Django Admin New Models." lightbox="../media/staff-user-display.png":::
-## Accessing our data
+   Notice that you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**.
 
-With our models registered, we can now manage our data! If there was any data already in the database we would be able to modify it as needed.
+    :::image type="content" source="../media/dogs-shelters-admin.png" alt-text="Screenshot showing the Site administration screen." lightbox="../media/dogs-shelters-admin.png":::
+
+## Access our data
+
+With our models registered, we can now manage our data. If there was any data already in the database, we could modify it as needed.
 
 In our data model, which you can explore by opening **models.py**, we have `Shelter` and `Dog`. A `Shelter` contains multiple `Dogs` to create the relationship between the models.
 
 Let's create a new `Dog` to explore how the admin site functions for data.
 
-1. Click **Add** next to **Dogs**
+1. Select **Add** next to **Dogs**.
 
-    :::image type="content" source="../media/add-dog.png" alt-text="Add dog dialog with Shelter dropdown selected." lightbox="../media/add-dog.png":::
+    :::image type="content" source="../media/add-dog.png" alt-text="Screenshot showing the Add shelter screen." lightbox="../media/add-dog.png":::
 
-1. Notice when you select the dropdown for **Shelter** no shelters are listed because we haven't created one
-
-    > [!NOTE]
-    > If you are continuing with a project you started earlier you may see a shelter if you created one.
-
-    The dropdown exists to allow us to select the Shelter into which we would register the dog. We can create a new one by clicking the **+** sign
-
-1. Click the **+**
-1. A new window opens allowing you to create a **Shelter**
-
-    :::image type="content" source="../media/new-shelter.png" alt-text="New shelter screen." lightbox="../media/new-shelter.png":::
-
-1. Provide a **Name** and **Location** for the shelter, such as **Contoso** and **Redmond, WA**
-1. Click **Save**
-1. Notice the screen now updates, showing the newly created **Shelter** as the selected option for the dog
-1. Provide a **Name** and **Description** for the dog
-1. Click **Save**
-1. The screen returns to the list of dogs, showing you the newly created dog
-
-    :::image type="content" source="../media/new-dog.png" alt-text="Screenshot of list of dogs." lightbox="../media/new-dog.png":::
-
-1. If you click the dog you will be taken to the details page where you can update any values or delete the entry
+    Notice that when you select the drop-down list for **Shelter**, no shelters are listed because we haven't created one.
 
     > [!NOTE]
-    > You will notice the display is the name of the dog (or shelter if you navigate to the Shelters portion of the admin site). This is because we set the `__str__` method on our objects. The default display of any objects is the value returned by `__str__`.
+    > If you're continuing with a project you started earlier, you might see a shelter if you created one.
+
+    The drop-down exists so that we can select the shelter into which we would register the dog. We can create a new one by selecting the plus sign (**+**).
+
+1. Select the plus sign (**+**).
+
+   A new window opens where you can create a **Shelter**.
+
+    :::image type="content" source="../media/new-shelter.png" alt-text="Screenshot showing an Add shelter screen." lightbox="../media/new-shelter.png":::
+
+1. Enter a **Name** and **Location** for the shelter, such as **Contoso** and **Redmond, WA**.
+1. Select **SAVE**.
+
+    The screen updates and shows the newly created **Shelter** as the selected option for the dog.
+1. Enter a **Name** and **Description** for the dog.
+1. Select **SAVE**.
+
+   The screen returns to the list of dogs, and the information on the newly created dog appears.
+
+    :::image type="content" source="../media/new-dog.png" alt-text="Screenshot showing a list of dogs." lightbox="../media/new-dog.png":::
+
+1. If you select the dog, you'll be taken to the details page where you can update any values or delete the entry.
+
+    > [!NOTE]
+    > The display shows the name of the dog or the shelter if you go to the **Shelters** portion of the admin site. This information appears because we set the `__str__` method on our objects. The default display of any object is the value returned by `__str__`.

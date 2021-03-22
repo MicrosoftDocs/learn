@@ -1,9 +1,9 @@
-When creating projects, the admin interface is automatically created, but it does not configure any user access. In order to login the Django admin site we now need to create our first user - a superuser.
+When you create projects, the admin interface is automatically created, but it doesn't configure any user access. To sign in to the Django admin site, we now need to create our first user, which is a superuser.
 
-## Creating a superuser
+## Create a superuser
 
 1. Open a new **terminal** window in Visual Studio Code by selecting **Terminal** > **New terminal**.
-1. Ensure the virtual environment is activated by executing the following code:
+1. Ensure the virtual environment is activated by running the following code:
 
     ```bash
     # Windows
@@ -13,44 +13,44 @@ When creating projects, the admin interface is automatically created, but it doe
     source ./venv/bin/activate
     ```
 
-1. Create a superuser by executing the following command
+1. Create a superuser by running the following command:
 
     ```bash
     python manage.py createsuperuser
     ```
 
-1. Complete the process by answering the questions provided by the wizard, including the username you wish to use, an email address, and a password
+1. Complete the process by answering the questions provided by the wizard. Enter the username you want to use, an email address, and a password.
 
 > [!NOTE]
-> The password must be complex according to Django's standards, which means at least 8 characters, and a combination of upper/lowercase letters, special characters and numbers. If you don't meet the complexity rules Django will ask if you want to override the requirements, which is typically not recommended.
+> The password must be complex according to Django's standards, which means at least eight characters and a combination of upper- and lowercase letters, special characters, and numbers. If you don't meet the complexity rules, Django will ask if you want to override the requirements, which isn't recommended.
 
-## Logging into the admin site
+## Sign in to the admin site
 
-With the admin user has been created it is time for our first login to the Django admin interface. During the project setup earlier in this module we started the server, so our admin site is already active.
+After the admin user has been created, it's time for our first sign-in to the Django admin interface. During the project setup earlier in this module, we started the server, so our admin site is already active.
 
-1. Navigate to http://localhost:8000/admin 
+1. Go to http://localhost:8000/admin.
 
-    :::image type="content" source="../media/admin-login.png" alt-text="Screenshot showing the Django admin log-in page.":::
+    :::image type="content" source="../media/admin-login.png" alt-text="Screenshot showing the Django admin sign-in page.":::
 
-1. Enter the username and password you created earlier
+1. Enter the username and password you created earlier.
 
-    Once you have successfully logged into the admin site you should see a screen that looks like below.
+    After you've successfully signed in to the admin site, you should see a screen that looks like the following one.
 
     :::image type="content" source="../media/admin.png" alt-text="Screenshot showing the Django admin interface.":::
 
-1. Click **users**
+1. Select **Users**.
 
-    You will now see the list of users, which will include the one you created.
+    You'll now see the list of users, which includes the user you created.
 
     :::image type="content" source="../media/user-list.png" alt-text="Screenshot showing the list of Django admin users.":::
 
 ## Create a staff user
 
-1. Click **ADD USER** in the upper right corner
-1. Provide a **Username** of **staffuser**
-1. Provide a **Password** and **Password confirmation** which meets the complexity requirements
-1. Click **SAVE**
-1. On the next screen, select **Staff status** to make the new user a staff user
+1. Select **ADD USER** in the upper-right corner.
+1. Enter a **Username** for the **staffuser**.
+1. Enter a **Password** that meets the complexity requirements, and confirm the password.
+1. Select **SAVE**.
+1. On the next screen, select **Staff status** to make the new user a staff user.
 
-    :::image type="content" source="../media/staff-user.png" alt-text="Screenshot showing the User options window.":::
-1. Click **SAVE**
+    :::image type="content" source="../media/staff-user.png" alt-text="Screenshot showing the user options window.":::
+1. Select **SAVE**.
