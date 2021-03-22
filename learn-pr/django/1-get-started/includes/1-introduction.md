@@ -8,7 +8,7 @@ In this module you'll learn:
 - The difference between Django and Flask.
 - What types of applications are best for Django.
 - How to install Django.
-- How to create a program in Django.
+- How to create a website in Django.
 
 ## Prerequisites
 
