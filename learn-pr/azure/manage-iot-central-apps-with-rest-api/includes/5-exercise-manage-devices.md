@@ -29,7 +29,6 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/deviceTemplat
   --query 'value[].displayName'
 
 ```
-<!-- Does the new query feature let you list the templates in a better way? Similarly below listing the devices? -->
 
 ## Add simulated devices
 

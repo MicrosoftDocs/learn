@@ -34,7 +34,7 @@ The following steps create an IoT Central application and generate an API token 
 
     Expect this command to take a minute or two to run.
 
-1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instuctions to complete the login process:
+1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instructions to complete the login process:
 
     ```azurecli
     az login

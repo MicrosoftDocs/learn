@@ -30,12 +30,11 @@ Manage an IoT Central application programmatically using the REST API and Azure 
 
 ## Learning objectives
 
-1. Create an IoT Central application programatically
+1. Create an IoT Central application programmatically
 2. Generate API tokens for different users to use to authorize REST API calls
 3. Manage device templates and devices using the REST API
 4. Query device telemetry and control your devices using the REST API
 5. Create and use jobs to perform bulk device updates
-6. Query your application
 
 ## Outline the units
 
@@ -56,7 +55,7 @@ Manage an IoT Central application programmatically using the REST API and Azure 
         - Control plane - Azure CLI and ARM SDK
         - Data plane - REST API - focus of this Learn module
     - Create and sign in to an IoT Central application
-        - How to create an IoT Central application programatically
+        - How to create an IoT Central application programmatically
         - What do you see when you sign in to the web UI
 
     List the content that will enable the learner to *Generate API tokens*:
@@ -182,27 +181,6 @@ Manage an IoT Central application programmatically using the REST API and Azure 
 
     - How to you identify the devices to target for a job?
     - What are the options for scheduling jobs?
-
-1. **Use queries to retrive information about your application**
-
-    List the content that will enable the learner to *Create and run queries*:
-
-    - What data can you query?
-    - Query syntax
-    - Running a query and retrieving results
-
-1. **Exercise - Create and run a query**
-
-    List the steps which apply the learning content from previous unit:
-
-    - Use the REST API to create and run a query.
-
-1. **Knowledge check**
-
-    What types of questions will test *Create and run a query*?
-
-    - What data can you query in IoT Central?
-    - How do you process the query results?
 
 1. **Summary**
 

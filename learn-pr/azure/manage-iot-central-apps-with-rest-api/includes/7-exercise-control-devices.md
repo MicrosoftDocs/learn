@@ -9,10 +9,10 @@ In this unit, you use the IoT Central REST API to set a writeable property on a 
 You can use the REST API to view the last known value for a device's telemetry measurement. Run the following commands to view the last known location and temperature values from the **sim-truck-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/sim-truck-001/telemetry/Location \
---headers Authorization="$ADMIN_TOKEN"
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/sim-truck-001/telemetry/ContentsTemperature \
---headers Authorization="$ADMIN_TOKEN"
+az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/telemetry/Location \
+--headers Authorization="$OPERATOR_TOKEN"
+az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/telemetry/ContentsTemperature \
+--headers Authorization="$OPERATOR_TOKEN"
 ```
 
 ## View device properties
@@ -20,8 +20,8 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/
 You can use the REST API to view device properties. Run the following command to retrieve the current properties from the **sim-truck-001** device. The property value was assigned by the simulation:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/sim-truck-001/properties \
---headers Authorization="$ADMIN_TOKEN"
+az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/properties \
+--headers Authorization="$OPERATOR_TOKEN"
 ```
 
 ## Set a property
@@ -47,8 +47,8 @@ The refrigerated truck device template specified a **Target Temperature** proper
 Run the following command in the Cloud Shell to set the **Target Temperature** to **12.5** on the default component on one of the simulated devices in the application:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/storemon-sim-001/properties \
---headers Authorization="$API_TOKEN" --body \
+az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/properties \
+--headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "TargetTemperature": 12.5
 }'
@@ -56,6 +56,13 @@ az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/
 ```
 
 The response to this request echoes the requested value for the property to confirm the device received it.
+
+Run the following command to see the new value for the property:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/properties \
+--headers Authorization="$OPERATOR_TOKEN"
+```
 
 ## Set a cloud property
 
@@ -78,11 +85,13 @@ The refrigerated truck device template specified a **Last maintenance date** clo
 Run the following command in the Cloud Shell to set the **Last maintenance date** to **12.5** for one of the real devices in the application:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/storemon-sim-001/properties \
---headers Authorization="$API_TOKEN" --body \
+az rest -m patch -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/real-truck-001/cloudProperties \
+--headers Authorization="$OPERATOR_TOKEN" --body \
 '{
-  "TargetTemperature": 12.5
+  "maintenancedate": "December 2020"
 }'
+az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/real-truck-001/cloudProperties \
+--headers Authorization="$OPERATOR_TOKEN"
 
 ```
 
@@ -142,10 +151,11 @@ The vehicle monitoring device template specified a **Get Max-Min report** comman
 Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the the start of the time period for the report:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/devices/storemon-sim-001/commands/reboot \
---headers Authorization="$API_TOKEN" --body \
+SINCE=`date -d "now -2 hours" -Ins`
+az rest -m post -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-001/commands/getMaxMinReport \
+--headers Authorization="$OPERATOR_TOKEN" --body \
 '{
-    "delay": 10
+    "since": "'$SINCE'"
 }'
 
 ```
