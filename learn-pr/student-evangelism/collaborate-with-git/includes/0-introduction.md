@@ -11,8 +11,8 @@ In this module, you'll:
 - Clone a repository
 - Learn how to make a pull request
 - Stash changes
-- Push your changes to the remote repository
-- Pull changes from other users to update the repository
+- Push changes to a remote repository
+- Pull changes from other users to update a repository
  
 ## Prerequisites
 
