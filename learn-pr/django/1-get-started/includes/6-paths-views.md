@@ -19,4 +19,4 @@ Paths in Django are registered by configuring `urlpatterns`. These patterns iden
 
 ## Views
 
-Views determine what information should be returned to the user. Views are functions or classes that execute code in response to the user request. They return back HTML or other types of responses, such as a 404 error.
+Views determine what information should be returned to the user. Views are functions or classes that execute code in response to the user request. They return HTML or other types of responses, such as a 404 error.
