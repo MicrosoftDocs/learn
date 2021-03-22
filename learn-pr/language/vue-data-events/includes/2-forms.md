@@ -2,7 +2,7 @@ The data returned by the `data()` function in a Vue app or component is generica
 
 ## v-model
 
-The `v-model` directive creates a *two-way* binding between an HTML control and the associated data. So whenever the value is updated in the form, it's updated inside your application's state. The `v-model` directive supports binding to any form control, including check boxes, text boxes, and drop-down lists.
+The `v-model` directive creates a *two-way* binding between an HTML control and the associated data. So whenever the value is updated in the form, it's updated inside your application's state. The `v-model` directive supports binding to any form control, including checkboxes, textboxes, and drop-down lists.
 
 > [!NOTE]
 > The `v-bind` directive creates a one-way binding. So any changes the user makes in the form aren't stored in state.
@@ -27,25 +27,25 @@ Vue.createApp({
 })
 ```
 
-## Binding to text boxes
+## Binding to textboxes
 
-To bind to a text box, you use the `v-model` directive.
+To bind to a textbox, you use the `v-model` directive.
 
 ```html
 <input type="text" v-model="name" />
 ```
 
-The `name` property is updated whenever the text box value changes. If you want to use `textarea` instead, the syntax is the same; you use `v-model="name"` like before.
+The `name` property is updated whenever the textbox value changes. If you want to use `textarea` instead, the syntax is the same; you use `v-model="name"` like before.
 
-## Binding to check boxes
+## Binding to checkboxes
 
-Typically, Boolean values are bound to check boxes. Check boxes allow the option to be toggled. To bind the `active` option, you can use `v-model` as you've done before.
+Typically, Boolean values are bound to checkboxes. Checkboxes allow the option to be toggled. To bind the `active` option, you can use `v-model` as you've done before.
 
 ```html
 <input type="checkbox" v-model="active" /> Is active
 ```
 
-Occasionally, the toggle isn't a Boolean value. Instead, you might have two choices, such as *yes* and *no*. In this case, you can use `true-value` and `false-value` to indicate the associated value for the check box that's selected (true) or unselected (false).
+Occasionally, the toggle isn't a Boolean value. Instead, you might have two choices, such as *yes* and *no*. In this case, you can use `true-value` and `false-value` to indicate the associated value for the checkbox that's selected (true) or unselected (false).
 
 ```html
 <input type="checkbox" v-bind="benefitsSelected" true-value="yes" false-value="no"> Benefits selected: {{ benefitsSelected }}

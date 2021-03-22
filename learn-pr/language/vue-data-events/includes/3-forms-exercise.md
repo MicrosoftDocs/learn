@@ -57,7 +57,7 @@ Let's explore the HTML code you added to the page.
 <form v-show="!booking.completed">
 ```
 
-The `form` element is a normal HTML form element. The key attribute you added is `v-show`, which allows you to toggle the display of an item in Vue.js. If `booking.completed` is false, you'll display the form. (Here, notice the exclamation point at the beginning of the string.) Otherwise, you'll hide the form.
+The `form` element is a normal HTML form element. The key attribute you added is `v-show`, which allows you to toggle the display of an item in Vue.js. In this design, you want to display the item if the booking is incomplete. We can calculate this by using `!booking.completed`, with the `!` reversing the `completed` option for us.
 
 ### The select element for cabins
 
@@ -81,7 +81,7 @@ The list of available cabins is in `product.cabins`, so you use `v-for` to creat
 
 You bind the `booking.notes` option to a `textarea`. You set the size by setting the `rows` attribute to *3*.
 
-### The to-do comment
+### The todo comment
 
 Notice that you've added a `TODO` reminder to add a button. After you learn to create event handlers later in this module, you'll place the button here.
 
