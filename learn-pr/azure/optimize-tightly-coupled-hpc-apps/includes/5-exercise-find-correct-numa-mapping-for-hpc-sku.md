@@ -1,4 +1,4 @@
-One of your R&D team's tightly coupled HPC applications uses hybrid parallelization (MPI+threads) for performance. They've determined that HB120_v2 is the best SKU for this application, and they need to determine the optimal place to pin the process and threads.
+One of your R&D team's tightly coupled HPC applications uses hybrid parallelization (MPI+threads) for performance. The team has determined that HB120_v2 is the best SKU for this application, and the team needs to determine the optimal place to pin the process and threads.
 
 In the following exercise, you'll follow the procedure that your R&D team used to determine the HB120_v2 NUMA topology, and discover which CPU IDs correspond to which NUMA domains.
 
@@ -6,7 +6,7 @@ In the following exercise, you'll follow the procedure that your R&D team used t
 
 1. Open a command prompt where you have the Azure CLI installed.
 
-1. Sign into your Azure account; this will ensure that you have permission to deploy resources.
+1. Sign in to your Azure account. This step will ensure that you have permission to deploy resources.
 
    ```bash
    az login
@@ -32,9 +32,9 @@ In the following exercise, you'll follow the procedure that your R&D team used t
       --size Standard_HB120rs_v2
    ```
 
-   It might take some time for this command to complete. When your VM has been created, take note of the VM's *publicIpAddress*, which will be part of the JSON output. You'll use this IP address in the next step.
+   It might take some time for this command to finish. When your VM has been created, take note of the VM's *publicIpAddress*, which will be part of the JSON output. You'll use this IP address in the next step.
 
-1. Sign into your HB120_v2 VM by using the ssh keys that were automatically generated.
+1. Sign in to your HB120_v2 VM by using the ssh keys that were automatically generated.
 
    ```bash
    ssh azureuser@<VM-PUBLIC-IP-ADDRESS>
