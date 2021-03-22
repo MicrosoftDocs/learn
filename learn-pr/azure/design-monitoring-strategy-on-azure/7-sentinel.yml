@@ -20,7 +20,7 @@ quiz:
     - content: You want to improve the development lifecycle for an application that spans across on-premises and the cloud.
       isCorrect: false
       explanation: You use Application Insights with Azure Pipelines and deployment gates to improve your development lifecycle.
-    - content: You want a detailed overview of your enterprise, potentially across multiple clouds and on-premises locations.
+    - content: You want a detailed overview of your enterprise, potentially across multiple clouds, and on-premises locations.
       isCorrect: true
       explanation: Azure Sentinel will help monitor and respond to security threats across your entire enterprise.
     - content: You want to be able to cross-query over data collected from multiple sources that span on-premises and the cloud.

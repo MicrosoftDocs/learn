@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: Azure Monitor
       isCorrect: false
-      explanation: Azure monitor is the monitoring service used to track availability, health and performance of applications and infrastructure.
+      explanation: Azure monitor is the monitoring service used to track availability, health, and performance of applications and infrastructure.
     - content: Azure Sentinel
       isCorrect: true
       explanation: Azure Sentinel includes built-in threat intelligence for detection and investigation that can help reduce false positives.
@@ -36,4 +36,4 @@ quiz:
       explanation: Several services in Azure including Sentinel and Security Center use Azure Monitor Logs as their underlying logging data platform.
     - content: Activity Logs
       isCorrect: false
-      explanation: The Activity log is a platform log in Azure that provides insight into subscription-level events.
+      explanation: The Activity log is an Azure platform log that provides insight into subscription-level events.

@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: Azure Monitor Insights
       isCorrect: true
-      explanation: Several Azure resources have dedicated Insights which offer curated monitoring experiences with pre-defined visualizations of usage and performance across multiple subscriptions, resource groups and resources for the specific resource type.
+      explanation: Several Azure resources have dedicated Insights, which offer curated monitoring experiences with pre-defined visualizations of usage and performance across multiple subscriptions, resource groups and resources for the specific resource type.
     - content: Key Vaults
       isCorrect: false
       explanation: Key vaults are used to safeguard cryptographic keys and other secrets used by cloud apps and services.
