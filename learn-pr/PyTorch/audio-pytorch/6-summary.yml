@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.audio-pytorch.summary
-title: Introduction
+title: Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: We have covered the basics of building an audio machine learning model from understanding how analog sound turns to digital sound, to creating spectrogram images of our wave files.
   author: cassieview
   ms.author: cassieb
   ms.date: 04/14/2020

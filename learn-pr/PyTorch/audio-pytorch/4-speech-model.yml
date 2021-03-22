@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.audio-pytorch.speech-model
-title: Introduction
+title: Build the Speech Model
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Build the Speech Model
+  description: Now that we have created the spectrogram images its time to build the computer vision model. 
   author: cassieview
   ms.author: cassieb
   ms.date: 04/14/2020
