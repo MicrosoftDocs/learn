@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: One of the R&D teams simulation code runs on &lt; four processes per node and is highly optimized for AVX 512. Which Azure HPC SKU should they choose?
+  - content: One of the R&D team's simulation codes runs on &lt; four processes per node and is highly optimized for AVX 512. Which Azure HPC SKU should the team choose?
     choices:
     - content: HB120_v2
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: HB60
       isCorrect: false
       explanation: HB60 does not support AVX 512
-  - content: Another tightly coupled HPC application is memory bandwidth bound, but not floating-point intensive, and typically runs on &lt; 40 processes per VM. Which Azure HPC SKU should they choose?
+  - content: Another tightly coupled HPC application is memory bandwidth bound, but not floating-point intensive, and typically runs on &lt; 40 processes per VM. Which Azure HPC SKU should the team choose?
     choices:
     - content: HB120_v2
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: HB60
       isCorrect: true
       explanation: HB60 is the most cost effective option for this type of HPC application.
-  - content: The R&D team's final tightly coupled HPC application is floating-point and memory bandwidth bound, and has good parallel scaling. Which Azure HPC SKU should they choose?
+  - content: The R&D team's final tightly coupled HPC application is floating-point and memory bandwidth bound, and has good parallel scaling. Which Azure HPC SKU should the team choose?
     choices:
     - content: HB120_v2
       isCorrect: true
