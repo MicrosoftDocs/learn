@@ -1,4 +1,6 @@
-In this exercise, you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight. It's learned command by command. You can speed up your learning by effectively using the core cmdlets.
+In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your PC or laptop to use it.
+
+Here you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight. It's learned command by command. You can speed up your learning by effectively using the core cmdlets.
 
 ## Locate a command
 
