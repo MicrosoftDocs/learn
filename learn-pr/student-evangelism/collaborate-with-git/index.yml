@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.collaborate-with-git
 metadata:
   title: Collaborate with Git
-  description: Use Git to track changes to source code and collaborate with other developers 
+  description: Use Git to track changes to source code and collaborate with other developers. 
   ms.date: 03/14/2021
   author: shanamatthews
   ms.author: shanama
@@ -14,9 +14,10 @@ summary: Use Git to track changes to source code and collaborate with other deve
 abstract:  |
   In this module, you will:
   - Clone a repository
-  - Learn about and make a pull request
+  - Learn how to make a pull request
   - Stash changes
-  - Push your changes and update your repo by pulling
+  - Push your changes to the remote repository
+  - Pull changes from other users to update the repository
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/collaborate-with-git-badge.svg
 levels:

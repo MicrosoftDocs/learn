@@ -97,7 +97,9 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     body { font-family: serif; }
     ```
 
-1. Save the file and close the editor. Go back to the *Cats* directory.
+    Then, save the file and close the editor.
+
+1. Go back to the *Cats* directory.
 
     ```bash
     cd ..
@@ -119,7 +121,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
     ```
 
-1. You should see output like this example:
+1. Check the output. You should see output like this example:
 
     ```output
     2bf69ab Add simple HTML and stylesheet
@@ -150,11 +152,11 @@ To simulate Alice cloning your repo onto their computer, you'll create a directo
 
     `../Cats` tells Git where to clone from and `.` tells Git where to clone to. In Unix, `.` refers to your current directory.
 
-1. Git should output this text to let you know that it worked:
+1. Check the output. Git should display this text to let you know that it worked:
 
     ```output
     Cloning into '.'...
     done.
     ```
 
-A clone of the repo that's in your project directory now lives in your *Alice* directory!
+A clone of the repo that's in your project directory is now in your *Alice* directory!

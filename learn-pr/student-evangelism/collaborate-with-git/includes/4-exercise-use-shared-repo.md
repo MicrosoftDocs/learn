@@ -1,20 +1,20 @@
-Pulling directly from someone else's repository works, provided you're both on the same network. But, it's a clumsy process, and most collaborators aren't on the same network. It's much better to set up a central repository that all collaborators can push to and pull from.
+Pulling directly from someone else's repository works, provided you're both on the same network. But, it's a clumsy process, and most collaborators aren't on the same network. It's better to set up a central repository that all collaborators can push to and pull from.
 
-When you tell Bob about your project, and Bob asks to participate, too, that's exactly what you decide to do—set up a central repository.
+When you tell your developer friend Bob about your project and Bob asks to participate, that's exactly what you decide to do—set up a central repository, which is also called a *bare repository*.
 
 ## Create a bare repository
 
-What you need is a repository that doesn't have a working tree. That's called a _bare repository_. A bare repo has several advantages over a working tree:
+What you need is a repository that doesn't have a working tree. A bare repository has several advantages over a working tree:
 
-- Without a working tree, everybody can push changes without having to worry about which branch is checked out.
-- It's easy for Git to detect when somebody else has pushed changes that might conflict with yours (because your push wouldn't be fast-forward, and Git's default is to reject it so that you can merge the new files with your own).
-- A shared repo scales to any number of developers. You only have to know about the shared repo, and not about all the other collaborators from whom you might need to pull.
+- Without a working tree, everybody can push changes without worrying about which branch is checked out.
+- It's easy for Git to detect when another user has pushed changes that might conflict with yours.
+- A shared repo scales to any number of developers. With a bare repo, you have to know only about the shared repo, and not about all the other collaborators from whom you might need to pull.
 - By putting the shared repo on a server that you all can access, you don't have to worry about firewalls and permissions.
-- You don't need separate accounts on the server because Git keeps track of who made each commit. GitHub has millions of users who all share the `git` account. (Everyone uses `ssh`, and users are distinguished by their public keys.)
+- You don't need separate accounts on the server because Git keeps track of who made each commit. (GitHub has millions of users who all share the `git` account. Everyone uses the Secure Shell (SSH) cryptographic network protocol, and users are distinguished by their public keys.)
 
 Creating a bare repo for sharing is easy:
 
-1. Create a new directory named *Shared.git* next to the *Alice* and *Cats* directories to hold the bare repo:
+1. Create a new directory named *Shared.git* at the same level as the *Alice* and *Cats* directories to hold the bare repo:
 
     ```bash
     cd ..
@@ -23,7 +23,7 @@ Creating a bare repo for sharing is easy:
 
     ```
 
-    The directory name isn't important, but we'll refer to it as the *Shared.git* directory, or simply the *shared* directory, in these exercises.
+    The directory name isn't important, but we'll refer to it as the *Shared.git* directory, or just the *shared* directory, in these exercises.
 
     Naming the directory *Shared.git* follows the longstanding tradition of assigning bare repositories a name that ends in `.git` to distinguish them from working trees. It is a convention, but not a requirement.
 
@@ -50,7 +50,7 @@ Creating a bare repo for sharing is easy:
 
     ```
 
-1. You should see this output, which indicates success:
+1. Check the output. The output should indicate success:
 
     ```output
     Counting objects: 12, done.
@@ -69,7 +69,7 @@ Creating a bare repo for sharing is easy:
 
     ```
 
-   You'll get this output:
+1. Check for this output:
 
     ```output
     Branch main set up to track remote branch main from origin.
@@ -90,14 +90,14 @@ The next step is for Bob to clone the bare repository, and then for Alice to set
 
     ```
 
-1. Now, clone the shared repo, and be sure to include the period at the end of the command:
+1. Now, clone the shared repo (be sure to include the period at the end of the command):
 
     ```bash
     git clone ../Shared.git .
 
     ```
 
-1. Currently, Alice's repo is configured to push to and pull from her own repo. Use the following commands to change to the *Alice* directory and change `origin` to point to the shared repo:
+1. Currently, Alice's repo is configured to push to and pull from their own repo. Use the following commands to change to the *Alice* directory and change `origin` to point to the shared repo:
 
     ```bash
     cd ../Alice
@@ -109,7 +109,7 @@ The next step is for Bob to clone the bare repository, and then for Alice to set
 
 Now that Bob is set up to work on the website, Bob decides to add a footer to the bottom of the page. Let's take on Bob and Alice's persona for a few moments and learn the basics of collaboration.
 
-1. Begin by going to the *Bob* directory and impersonating Bob:
+1. Begin by going to the *Bob* directory and working as Bob:
 
     ```bash
     cd ../Bob
@@ -124,7 +124,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
     <footer><hr>Copyright (c) 2021 Contoso Cats</footer>
     ```
 
-    Then, save the file and close the editor.
+    Then, save the file and close the editor. 
 
 1. Commit the changes and push to the remote origin:
 
@@ -134,7 +134,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. If you see a warning like the following example, don't worry.
+1. Check the output. If you see a warning like the following example, don't worry. This warning just lets users know about a change to Git's default behaviors. If you'd like to make sure that you don't see this warning again, you can run `git config --global push.default simple`.
 
     ```output
     warning: push.default is unset; its implicit value has changed in
@@ -159,8 +159,6 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    This warning just lets users know about a change to Git's default behaviors. If you'd like to make sure that you don't see this warning again, you can run `git config --global push.default simple`.
-
 1. While Bob is editing the site, Alice is, too. Alice decides to add a nav bar to the page. This addition requires Alice to modify two files: *index.html* and *site.css*. Begin by returning to the *Alice* directory:
 
     ```bash
@@ -174,20 +172,24 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
     <nav><a href="./index.html">home</a></nav>
     ```
 
-1. Save the file and close the editor. Then, open *site.css* in the *CSS* folder and add the following line at the bottom:
+    Then, save the file and close the editor. 
+ 
+1. Then, open *site.css* in the *CSS* folder and add the following line at the bottom:
 
     ```css
     nav { background-color: #C0D8DF; }
     ```
 
-1. Save the file and close the editor. Now, let's assume that Alice receives an e-mail from Bob saying that Bob made changes to the site. Alice decides to pull Bob's changes before committing their own. (If Alice had already committed their changes, they would have a different problem, which is discussed in another module.) Alice runs this command:
+    Save the file and close the editor. 
+
+1. Now, let's assume that Alice receives an e-mail from Bob saying that Bob made changes to the site. Alice decides to pull Bob's changes before committing their own. (If Alice had already committed their changes, they would have a different problem, which is discussed in another module.) Alice runs this command:
 
     ```bash
     git pull
 
     ```
 
-1. From the output, it looks as if Git has prevented a problem:
+1. Check the output. From the output, it looks as if Git has prevented a problem:
 
     ```output
     remote: Counting objects: 3, done.
@@ -212,7 +214,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. From the output, it's evident that Alice's changes and Bob's changes don't overlap. Now, Alice can _stash_ their changes.
+1. Check the output. From the output, it's evident that Alice's changes and Bob's changes don't overlap. Now, Alice can _stash_ their changes.
 
     `git stash` saves the state of the working tree and index by making a couple temporary commits. Think of the stash as a way to save your current work while you do something else, without making a "real" commit or affecting your repository history.
 
@@ -225,7 +227,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. You should see this output:
+1. Check the output. It should look like this example:
 
     ```output
     Saved working directory and index state WIP on main: 95bbc3b Change background color to light blue
@@ -240,9 +242,9 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-    Popping the stash merges the changes. If changes overlap, there might be a conflict. You can learn how to resolve those situations in a more advanced Git module on Microsoft Learn.
+    Popping the stash merges the changes. If changes overlap, there might be a conflict. You can learn how to resolve those situations in a more advanced Git module from Microsoft Learn.
 
-1. Alice will see this output, which lets them know that the merge was successful and that their changes are back, but not yet staged for commit:
+1. Check the output. Alice should see this output, which lets them know that the merge was successful and that their changes are back, but not yet staged for commit:
 
     ```output
     Auto-merging index.html
@@ -275,7 +277,9 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. The updated site is now in the shared repo. Finish up returning to the project directory and doing a pull:
+    The updated site is now in the shared repo. 
+
+1. Finish up returning to the project directory and doing a pull:
 
     ```bash
     cd ../Cats
@@ -283,7 +287,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. Confirm that the changes made by both Bob and Alice are present in your local repo by opening *index.html* (the one in the project directory) and verifying that *index.html* has the most up-to-date code:
+1. Open *index.html* (the one in the project directory) to confirm that the changes made by both Bob and Alice are present in your local repo by. Verify that *index.html* has the most up-to-date code:
 
     ```html
     <!DOCTYPE html>
@@ -316,7 +320,7 @@ If you're curious what the website looks like, here's a preview:
 
 :::image type="content" source="../media/cats-home-page.png" alt-text="Screenshot of the rendered Cats website.":::
 
-If you'd like, you can download your files to preview them locally by using these commands:
+If you'd like, you can download your files to preview them locally:
 
 1. Zip the *Cats* folder:
 
@@ -326,7 +330,7 @@ If you'd like, you can download your files to preview them locally by using thes
 
     ```
 
-1. Download:
+1. Download the zipped file:
 
     ```bash
     download Cats.zip

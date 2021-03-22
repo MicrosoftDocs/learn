@@ -5,7 +5,7 @@ pwd
 
 ```
 
-Right now, there's nothing for Alice to pull because you haven't made any changes since she cloned the repo. You can prove that by using the following command, which responds `Already up-to-date`:
+Right now, there's nothing for Alice to pull because you haven't made any changes since Alice cloned the repo. You can prove that by using the following command, which shows the output `Already up-to-date`:
 
 ```bash
 git pull
@@ -39,7 +39,7 @@ Alice starts working on the website. Alice's first decision is to change the sit
     body { font-family: serif; background-color: #F0FFF8; }
     ```
 
-1. Save the file and close the editor.
+    Then, save the file and close the editor.
 
 1. Now, commit the change:
 
@@ -48,14 +48,14 @@ Alice starts working on the website. Alice's first decision is to change the sit
 
     ```
 
-1. Now, you must make a pull request back to the original repo:
+1. Then, make a pull request back to the original repo:
 
     ```bash
     git request-pull -p origin/main .
 
     ```
 
-1. You should see output similar to the following example:
+1. Check the output. You should see output similar to the following example:
 
     ```output
     The following changes since commit 2bf69ab0226d8d35efd1e92c83cd92c5cc09a7ae:
@@ -91,7 +91,7 @@ Alice starts working on the website. Alice's first decision is to change the sit
 
 ## Create a remote and complete the pull request
 
-Because your project directory and the *Alice* directory are on the same computer, you can pull directly from the *Alice* directory. In real life, the *Alice* directory would be on Alice's computer. You solve this situation by setting up a *remote* by using the `git remote` command. Then, you use that remote for pull and push requests. Because it's not practical to set up two machines to do these steps, we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
+Because your project directory and the *Alice* directory are on the same computer, you can pull directly from the *Alice* directory. In real life, the *Alice* directory would be on Alice's computer. You solve this situation by setting up a *remote* by using the `git remote` command. Then, you use that remote for pull and push requests. For this exercise, it's not practical to set up two machines to do these steps, so we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
 
 1. Change back to the project directory and use the `git remote` command to create a remote named `remote-alice` that targets Alice's project directory:
 
@@ -110,7 +110,7 @@ Because your project directory and the *Alice* directory are on the same compute
 
     Notice that you have to specify a branch, `main`, in the pull command. You will learn in the next lesson how to set up an upstream URL for the branch.
 
-1. You should see output like this example, which shows that you successfully completed the pull request:
+1. Check the output. You should see output like this example, which shows that you successfully completed the pull request:
 
     ```output
     remote: Counting objects: 4, done.
