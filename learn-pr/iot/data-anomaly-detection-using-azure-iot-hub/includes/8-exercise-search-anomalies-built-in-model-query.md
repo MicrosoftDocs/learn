@@ -47,7 +47,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Select **Message routing** from the left menu pane, then select **Add** to add a route.
 
-1. Name the route *vibrationTelemetryRoute*, and then select **Add endpoint**. This time, select **Event Hubs** for the type of endpoint. The **Add an event hib endpoint** pane appears.
+1. Name the route *vibrationTelemetryRoute*, and then select **Add endpoint**. This time, select **Event Hubs** for the type of endpoint. The **Add an event hub endpoint** pane appears.
 
 1. Enter *vibrationTelemetryEndpoint*, for the **Endpoint name**.
 
