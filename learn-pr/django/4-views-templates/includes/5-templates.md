@@ -8,7 +8,7 @@ Variables in a template behave as they do in any other programming language. We 
 
 Django provides a way to display variables in a template by using the `{{ }}` syntax. Any variable placed inside the double curly braces is evaluated for its text content and then placed into the template. If we wanted to display the dog's name, for example, we could use `{{dog.name}}`.
 
-The view passes variables into a template by using the `render` function, which we'll explore in a later module. You can pass values and other data to a template, including a QuerySet from the Django object-relational mapper (ORM). This allows you to display data from the database for your application.
+The view passes variables into a template by using the `render` function, which we'll explore in a later module. You can pass values and other data to a template, including a QuerySet from the Django ORM. This allows you to display data from the database for your application.
 
 ## Filters
 
