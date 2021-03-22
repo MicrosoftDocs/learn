@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you've learned so far about collaborating with Git.
   ms.date: 03/14/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 5
