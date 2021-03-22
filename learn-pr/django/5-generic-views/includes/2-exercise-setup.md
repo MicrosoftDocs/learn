@@ -26,9 +26,9 @@ We'll use [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) 
 
 In the same command or terminal window, enter the following command to open the folder in Visual Studio Code.
 
-    ```bash
-    code .
-    ```
+```bash
+code .
+```
 
 ## Create the virtual environment
 
@@ -53,9 +53,9 @@ The starter project uses a [requirements.txt](https://pip.pypa.io/en/latest/user
 
 In the same **terminal** window, run the following command to install the required packages.
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
 ## Start the server
 
@@ -63,6 +63,6 @@ Django can host the application locally. We'll do this step by using the built-i
 
 Enter the following command in the same **terminal** window.
 
-    ```bash
-    python manage.py runserver
-    ```
+```bash
+python manage.py runserver
+```
