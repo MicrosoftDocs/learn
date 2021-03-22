@@ -2,7 +2,7 @@ HB120_v2, HB60, and HC44 SKUs support InfiniBand network interconnects. Because 
 
 The current limitation for an HPC cluster that can communicate over InfiniBand is 300 VMs. The following table lists the maximum number of parallel processes that are supported in tightly coupled MPI applications that are communicating over InfiniBand.
 
-| SKU | Max parallel processes |
+| SKU | Maximum parallel processes |
 |---|---|
 | HB120_v2 | 36,000 processes |
 | HC44 | 13,200 processes |
@@ -29,7 +29,7 @@ The following command illustrates some recommended `mpirun` arguments for HPCX a
 mpirun -n $NPROCS --hostfile $HOSTFILE --map-by ppr:$NUMBER_PROCESSES_PER_NUMA:numa:pe=$NUMBER_THREADS_PER_PROCESS -report-bindings $MPI_EXECUTABLE
 ```
 
-Where:
+In that command:
 
 | Parameter | Description |
 |---|---|
@@ -60,7 +60,7 @@ export I_MPI_PIN_DOMAIN=numa
 mpirun -n $NPROCS -f $HOSTFILE $MPI_EXECUTABLE
 ```
 
-Where:
+In those arguments:
 
 | Parameters | Description |
 |---|---|
@@ -88,7 +88,7 @@ export MV2_SHOW_HCA_BINDING=1
 mpirun -n $NPROCS -f $HOSTFILE $MPI_EXECUTABLE
 ```
 
-Where:
+In those arguments:
 
 | Parameters | Description |
 |---|---|
