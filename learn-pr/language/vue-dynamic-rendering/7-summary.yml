@@ -2,7 +2,7 @@
 uid: learn.language.vue-dynamic-rendering.7-summary
 metadata:
   title: Summary
-  description: We saw how to control the display with data in Vue.js
+  description: This unit summarizes how to control the display with data in Vue.js.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar

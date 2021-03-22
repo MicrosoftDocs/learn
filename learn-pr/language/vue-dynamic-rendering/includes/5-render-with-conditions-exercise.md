@@ -1,10 +1,9 @@
-Let's update your display to highlight items which are almost sold out, and show the appropriate buttons to book a trip. If the trip offers early bird, you will set the button text appropriately, otherwise prompt the user to book now. If there are fewer than 10 seats available you'll display a message saying the class is almost sold out.
+Let's update your display to highlight options that are almost sold out and to display the appropriate button labels for booking a trip. If the seating class offers "early-bird" booking, you'll set the button label appropriately. If early-bird booking isn't available, you'll prompt the user to book now. If fewer than 10 seats are available, you'll display a message saying that the class is almost sold out.
 
-## Add the code to update the display
+## Add code to update the display
 
-1. Return to **Visual Studio Code**.
-1. Open **index.html**.
-1. Below the line which reads `More to come` add the following HTML:
+1. In Visual Studio Code, open *index.html*.
+1. Below the commented line that reads "More to come," add the following HTML:
 
     ```html
     <!-- More to come -->
@@ -13,10 +12,10 @@ Let's update your display to highlight items which are almost sold out, and show
 
     <div v-show="productClass.seatsAvailable < 10">Almost sold out!</div>
     ```
+1. Save your changes. 
 
 ## Test the display
 
-1. Save all files.
-1. Return to the browser. The display should now be updated; if not hit refresh. Your page should now look like the one below.
+Return to the browser. The display should now be updated. If it isn't, refresh the page. It should now look like the following screenshot:
 
 ![Screenshot of updated display showing buttons and text.](../media/conditional.png)
