@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Explore cmdlets further and construct a sequence of them in a pipeline.
   - Apply sound principles to your commands using filtering and formatting.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/powershell/connect-commands.svg
 levels:
   - beginner
 roles:
