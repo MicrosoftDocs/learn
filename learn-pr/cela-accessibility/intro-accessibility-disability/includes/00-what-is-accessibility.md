@@ -2,7 +2,7 @@ Accessibility is defined as a "word used to describe whether a product can be us
 <br></br>
 <br></br>
 <br></br>
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Accessibility-101/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LRoH]
 
 ## Assistive technology
 
