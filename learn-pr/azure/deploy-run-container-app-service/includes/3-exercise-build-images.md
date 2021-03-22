@@ -21,7 +21,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
     | Setting | Value |
     |---|---|
     | **Project details** |
-    | Subscription | Select your Azure subscription |
+    | Subscription | Select your Azure subscription. |
     | Resource group | Select **Create new**, and enter a new resource group with the name **learn-deploy-container-acr-rg**. This approach may make it easier to clean up these resources when you're finished with the module. If you choose a different resource group name, make note of it for the rest of the exercises in this module. |
     | **Instance details** |
     | Registry name | Enter a unique name and make a note of it for later. |
