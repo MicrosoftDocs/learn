@@ -1,4 +1,4 @@
-Business outcomes are how we measure strategic impact. Some organizations have existing KPIs (Key Performance Indicators), which provide a measure for strategic impact. KPIs are a fine way to measure impact. But, for organizations that don't already have operational KPIs and the rich analytics systems required to track that progress, OKRs (objectives and key results) are a more manageable approach.
+Business outcomes are how we measure strategic impact. Some organizations have existing KPIs (key performance indicators), which provide a measure for strategic impact. KPIs are a fine way to measure impact. But, for organizations that don't already have operational KPIs and the rich analytics systems required to track that progress, OKRs (objectives and key results) are a more manageable approach.
 
 This unit will demonstrate how to define OKRs that can measure your strategic impact.
 
@@ -86,4 +86,4 @@ Five steps can help your organization to move forward with OKRs:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the boxes found under the "Business outcomes" header. Use the OKRs discussed in this unit to shape your first business outcomes.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Fill in the boxes found under the **Business outcomes** heading. Use the OKRs discussed in this unit to shape your first business outcomes.

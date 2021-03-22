@@ -2,11 +2,11 @@ In this module, you learned how to establish and define an executive-level strat
 
 In this module, you completed the following objectives:
 
-- Create clarity on corporate strategy to ensure all team members are working towards common goals
+- Create clarity on corporate strategy to ensure all team members are working toward common goals
 - Establish metrics to create clarity, help the team learn, and systematically work towards your organizational objectives
 - Evaluate financial considerations to understand the value of cloud adoption
 - Evaluate technical considerations to help the team prepare for successful cloud adoption projects
 
 ## Next steps
 
-Convert your cloud adoption strategy to an actionable cloud adoption plan and a backlog of actions in Azure DevOps, with the complimentary learn module, Build an actionable plan with the Cloud Adoption Framework.
+Convert your cloud adoption strategy to an actionable cloud adoption plan and a backlog of actions in Azure DevOps. with the complimentary Learn module, *Build an actionable plan with the Cloud Adoption Framework*.
