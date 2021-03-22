@@ -1,11 +1,11 @@
-The `tasks` module will represent our tasks, persisting them on disk and deserializing them from the disk.
+The `tasks` module will represent our tasks, and how we will save and access them.
 
 Create a new file in the src directory named `tasks.rs`. Inside of that file, we'll start by defining a simple struct to represent what a to-do item will look like in our program:
 
 ```rust
 use chrono::{DateTime, Utc};
 
-[derive(Debug)]
+#[derive(Debug)]
 pub struct Task {
     pub text: String,
     pub created_at: DateTime<Utc>,
@@ -27,10 +27,10 @@ Because we're using it, we need to declare it in the `Cargo.toml` file:
 ```toml
 [dependencies]
 structopt = "0.3"
-chrono = "0.4" # Add chrono here.
+chrono = "0.4"
 ```
 
-The next step is to implement a method for instantiating new tasks. Tasks will always be timestamped with the current date and time:
+The next step is to implement a method for instantiating new tasks. Tasks will always be timestamped with the current date and time. Add the following code after the `Task` struct:
 
 ```rust
 impl Task {
@@ -64,7 +64,7 @@ To get started with serializing our `Task` type, we'll need two crates:
 - `serde_json`. The crate that will implement those traits into our chosen file specification
 format, JSON.
 
-As always, the first step is to include `serde_json` and `serde` in the `[dependencies]` section of our `Cargo.toml` file. This time we're going to use a different notation to specify them because we'll need to conditionally compile some `serde` features. Your file should look like this:
+As always, the first step is to include `serde_json` and `serde` in the `[dependencies]` section of our `Cargo.toml` file. This time we're going to use a different notation to specify them because we'll need to conditionally compile some `serde` features. Your file should now look like this:
 
 ```toml
 [dependencies]
@@ -77,11 +77,7 @@ features = ["derive"] # We'll need the derive feature.
 
 [dependencies.chrono]
 version = "0.4"
-features = ["serde"]  # Since we're here, we're also going to need
-          # the serde feature for the chrono crate,
-          # so we can serialize our DateTime field.
-          # Declare it the same way as we did for the
-          # serde crate.
+features = ["serde"]  # We're also going to need the serde feature for the chrono crate, so we can serialize the DateTime field.
 ```
 
 We should now be able to adapt the `Task` struct to use the new features from `serde`. Open the `tasks.rs` file and modify the struct so it looks like this:
