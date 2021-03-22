@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-  - content: 'What type of request is only used when you try to retrieve information?'
+  - content: 'In a typical form flow, what type of HTTP request is made when you request the form?'
     choices:
     - content: 'POST'
       isCorrect: false
