@@ -18,7 +18,7 @@ As highlighted before, the admin site doesn't provide access to your data by def
 
    Notice that you have **Dogs** and **Shelters** listed under **DOG_SHELTERS**.
 
-    :::image type="content" source="../media/staff-user-display.png" alt-text="Screenshot showing the Site administration screen." lightbox="../media/staff-user-display.png":::
+    :::image type="content" source="../media/dogs-shelters-admin.png" alt-text="Screenshot showing the Site administration screen." lightbox="../media/dogs-shelters-admin.png":::
 
 ## Access our data
 
