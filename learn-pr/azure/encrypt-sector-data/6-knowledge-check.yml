@@ -29,7 +29,7 @@ quiz:
     - content: "ExpressRoute encryption."
       isCorrect: false
       explanation: "Incorrect. Azure ExpressRoute with several data encryption options, including MACsec that enables customers to store MACsec secrets in Azure Key Vault."
-  - content: "A symmetric key stored in the database boot record for availability during recovery."
+  - content: "What is a symmetric key stored in the database boot record for availability during recovery?"
     choices:
     - content: "Database Encryption Key (DEK)."
       isCorrect: true
@@ -43,31 +43,18 @@ quiz:
     - content: "Azure Disk Encryption (ADE)."
       isCorrect: false
       explanation: "Incorrect. Azure Disk Encryption (ADE) may be used to encrypt all Azure Windows and Linux IaaS Virtual Machine disks. This encryption includes managed disks."
-  - content: "Which two Microsoft guiding principles underpin the other four?"
+  - content: "What enables high-scale networks that meet key enterprise requirements such as performance, enhanced confidentiality, and distributed governance?"
     choices:
-    - content: "Privacy and security."
+    - content: "Homomorphic encryption."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Reliability and safety"
+      explanation: "Incorrect. Homomorphic encryption is a special type of encryption technology that allows for computations to be performed on encrypted data without requiring access to a key needed to decrypt the data."
+    - content: "Always Encrypted with Secure Enclaves."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Fairness and inclusivity."
+      explanation: "Incorrect. Always Encrypted with Secure Enclaves to allow computations on plaintext data inside a secure enclave on the server side."
+    - content: "Multi-party machine learning."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Transparency and accountability."
+      explanation: "Incorrect. Privacy-preserving multi-party machine learning allows multiple organizations to perform collaborative data analytics while guaranteeing the privacy of their individual datasets."
+    - content: "Confidential Consortium Blockchain Framework."
       isCorrect: true
-      explanation: "Correct. These guiding principles are foundational and are essential for ensuring the effectiveness of the rest."
-  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before launching their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
-    choices:
-    - content: "Fairness and inclusivity."
-      isCorrect: true
-      explanation: "Correct. The guiding principle of fairness dictates that AI systems behave the same way for everyone, and the guiding principle of inclusivity dictates that AI tools do not exclude people."
-    - content: "Reliability and safety."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
-    - content: "Transparency."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principle of transparency is essential, but not the most relevant here."
-    - content: "Privacy and security."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."
+      explanation: "Correct. Confidential Consortium Blockchain Framework is an open-source system that enables high-scale, confidential blockchain networks that meet key enterprise requirements such as performance, enhanced confidentiality, and distributed governance."
+  
