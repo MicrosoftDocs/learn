@@ -1,14 +1,14 @@
-By using the handlebars syntax (`{{ }}`), you're able to display values and inject JavaScript into our HTML. While this is powerful, it can lead to confusing or repetitive code. You can use computed properties in Vue to offload calculations and other forms of dynamic strings.
+By using the handlebars syntax (`{{ }}`), you can display values and inject JavaScript into your HTML. This syntax is powerful, but it can lead to confusing or repetitive code. You can use computed properties in Vue to offload calculations and other forms of dynamic strings.
 
-## Creating a computed property
+## Create a computed property
 
-Much in the same way methods are added under a `methods` field, computed properties are added to the `computed` field. A computed property is a function which returns a value. Just like a method from before, a computed property is able to access the active instance of Vue by using `this`.
+Similarly to how methods are added under a `methods` field, computed properties are added to the `computed` field. A *computed property* is a function that returns a value. Like a method, a computed property can access the active instance of Vue by using `this`.
 
-You can use computed properties to combine `firstName` and `lastName` into a `fullName` property, perform lookups in an array to return the correct value, or anything else which might be dynamic.
+You can use computed properties to combine `firstName` and `lastName` into a `fullName` property, do lookups in an array to return the correct value, or do other dynamic tasks.
 
-Furthermore, a computed property is _reactive_. Should any of the values that make out the computed property change, the computed property will also be updated to reflect this change.
+Further, a computed property is _reactive_. If any values in the computed property change, the computed property is updated to reflect the change.
 
-Creating the `fullName` example would look like so:
+The following example creates a `fullName`.
 
 ```javascript
 const app = Vue.createApp({
@@ -26,4 +26,4 @@ const app = Vue.createApp({
 });
 ```
 
-The fields `lastName` and `firstName` are concatenated using a string literal.
+A string literal concatenates the `lastName` and `firstName` fields.

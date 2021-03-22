@@ -1,13 +1,13 @@
-The data returned by the `data()` function in a Vue app, or component, is generically referred to as *state*. State is any information your application needs to track to perform the necessary operations. Users typically modify state through HTML forms. Vue.js allows you to bind data to a form, allowing users to update state.
+The data returned by the `data()` function in a Vue app or component is generically referred to as *state*. State is any information your application needs to track to perform the necessary operations. Users typically modify state through HTML forms. Vue.js allows you to bind data to a form so users can update state.
 
 ## v-model
 
-The `v-model` directive creates a *two-way* binding between an HTML control and the associated data. This means whenever the value is updated in the form, it's updated inside your application's state. `v-model` supports binding to any form control, including checkboxes, textboxes and dropdown lists.
+The `v-model` directive creates a *two-way* binding between an HTML control and the associated data. So whenever the value is updated in the form, it's updated inside your application's state. The `v-model` directive supports binding to any form control, including checkboxes, textboxes, and drop-down lists.
 
 > [!NOTE]
-> `v-bind` creates a one-way binding, meaning any changes the user might make in the form would not be stored in state.
+> The `v-bind` directive creates a one-way binding. So any changes the user makes in the form aren't stored in state.
 
-For all examples below, you will use the following Vue application:
+For all examples in this unit, you'll use the following Vue application.
 
 ```javascript
 Vue.createApp({
@@ -35,32 +35,30 @@ To bind to a textbox, you use the `v-model` directive.
 <input type="text" v-model="name" />
 ```
 
-The `name` property will be updated whenever the textbox value changes. If you wish to use a `textarea` instead, the syntax is the same; you use `v-model="name"` just as before.
+The `name` property is updated whenever the textbox value changes. If you want to use `textarea` instead, the syntax is the same; you use `v-model="name"` like before.
 
 ## Binding to checkboxes
 
-Typically, Boolean values are bound to checkboxes, as they allow for the option to be toggled. To bind the `active` option we can use `v-model` as we've done before:
+Typically, Boolean values are bound to checkboxes. Checkboxes allow the option to be toggled. To bind the `active` option, you can use `v-model` as you've done before.
 
 ```html
 <input type="checkbox" v-model="active" /> Is active
 ```
 
-### Handling non boolean cases
-
-However, there may be times when the toggle isn't a Boolean value, but maybe two choices such as *yes*/*no*. In this case, you can use `true-value` and `false-value` to indicate the associated value for the checkbox being checked (true) or unchecked (false).
+Occasionally, the toggle isn't a Boolean value. Instead, you might have two choices, such as *yes* and *no*. In this case, you can use `true-value` and `false-value` to indicate the associated value for the checkbox that's selected (true) or unselected (false).
 
 ```html
 <input type="checkbox" v-bind="benefitsSelected" true-value="yes" false-value="no"> Benefits selected: {{ benefitsSelected }}
 ```
 
-## Dropdown lists
+## Drop-down lists
 
-Dropdown lists are created in HTML by using `select` to create the list, and `option` to add options. The `select` tag stores the selected value of the dropdown list, so you will use it to bind to your model.
+In HTML, you create drop-down lists in two parts. You use `select` to create the list and `option` to add options. The `select` tag stores the selected value of the drop-down list, so you use it to bind to your model.
 
-In Vue, there are three things you need to do:
+In Vue, you need to:
 
-- **Create a list of options**. To create the list of `option` elements, you use `v-for` to loop through and create an option element for each item in the array.
-- **Identify value**. For each option you create, you need to identify what the value is. If your list is just an array of say strings, it's recommended that you either store the string itself or the selected index as value, like the below:
+- **Create a list of options**. To create the list of `option` elements, use `v-for` to loop through and create an option element for each item in the array.
+- **Identify the value**. For each option you create, you need to identify the value. If your list is just an array of strings, for example, you should either store the string or the selected index as value. Here's an example:
 
    ```html
    <select v-model="selectedIndex">
@@ -70,7 +68,7 @@ In Vue, there are three things you need to do:
    </select>
    ```
 
-   If your list stores an array of objects, you need to point out what the display property is and where the value is, like so:
+   If your list stores an array of objects, point out the display property and where to find the value.
 
    ```html
    <select v-model="selectedValue">
@@ -80,11 +78,9 @@ In Vue, there are three things you need to do:
    </select>  
    ```
 
-- **Keep track of the selected value**. You can bind the selected value to the select tag by using `v-model`. Here you can choose between keeping track of the index or the value of the item, it's up to you.
+- **Keep track of the selected value**. You can bind the selected value to the `select` tag by using `v-model`. Here you can keep track of either the index or the value of the item. It's up to you.
 
-### Creating the dropdown
-
-You create the list of options by using `v-for`, which loops through a list of items. You elect to set the value to be the index of the item in the array. You use `v-for(status, index) in statusList`, which will provide the index for each item. You then set the `:value` of each option to the `index`, and display `status` as the option for the user.
+To create the list of options, use `v-for` to loop through the list. Then choose to set the value as the index of the item in the array. You use `v-for(status, index) in statusList` to provide the index for each item. You then set the `:value` of each option to `index`, and you display `status` as the option for the user.
 
 ```html
 <select v-model="statusIndex">
@@ -97,4 +93,4 @@ You create the list of options by using `v-for`, which loops through a list of i
 </select>
 ```
 
-Finally, by adding `v-model="statusIndex"`, you ensure that, when a user selects an item, the value of the `statusIndex` data property, will be updated to the selected index.
+Finally, you add `v-model="statusIndex"` to ensure that when a user selects an item, the value of the `statusIndex` data property is updated to the selected index.

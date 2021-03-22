@@ -2,7 +2,7 @@
 uid: learn.language.vue-data-events.1-introduction
 metadata:
   title: Overview of dynamic data and events
-  description: Let's see how we can incorporate interactivity into a Vue.js application.
+  description: See how to incorporate interactivity into a Vue.js application.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
