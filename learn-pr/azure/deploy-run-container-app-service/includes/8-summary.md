@@ -10,7 +10,7 @@ In this module you created resources using your Azure subscription. You want to 
 
    1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-   1. This opens a new dialog box. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
+   1. A dialog box appears prompting you to confirm the deletion. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
 
 ## Learn more
 
