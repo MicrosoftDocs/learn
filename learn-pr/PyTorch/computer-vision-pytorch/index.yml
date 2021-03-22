@@ -4,15 +4,18 @@ metadata:
   title: Introduction to Computer Vision with PyTorch
   description: Learn how to perform different computer vision tasks using PyTorch.
   ms.date: 06/04/2020
-  author: cassieview
-  ms.author: cassieb
+  author: shwars
+  ms.author: dmitryso
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Computer Vision with PyTorch 
-summary: Learn how to 
+summary: Learn how to perform different computer vision tasks using PyTorch.
 abstract: |
-  In this module you will:
-  - Learn about X
+  This module contains introduction to Computer Vision based on PyTorch framework. We will focus on most basic task - Image Classification - and learn about convolutional neural networks, and how pre-trained networks and transfer learning can be used to solve real-world problems. You will learn:
+  - How to represent images as tensors and feed neural networks with images
+  - About convolutional neural network architecture that can extract patterns from images
+  - How to use pre-trained networks to solve real-world problems, minimize number of required data samples and build more accurate models
+  - How to create low-profile networks that can be used on mobile and low power devices. 
 iconUrl: /learn/achievements/.svg
 levels:
 - beginner

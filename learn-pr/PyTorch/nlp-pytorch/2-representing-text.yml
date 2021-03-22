@@ -4,8 +4,8 @@ title: Representing Text
 metadata:
   title: Representing Text
   description: In this unit, we discuss different ways text can be represented as tensors, and we show how to solve simplest text classification problem.
-  author: cassieview
-  ms.author: cassieb
+  author: shwars
+  ms.author: dmitryso
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

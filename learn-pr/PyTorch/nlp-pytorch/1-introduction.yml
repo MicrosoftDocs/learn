@@ -4,8 +4,8 @@ title: Introduction to NLP
 metadata:
   title: Introduction to NLP
   description: In this introductory unit, we discuss the field of natural language processing, and focus on typical problems that are solved by NLP neural network models.
-  author: cassieview
-  ms.author: cassieb
+  author: shwars
+  ms.author: dmitryso
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

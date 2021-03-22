@@ -4,8 +4,8 @@ title: Training Simple Dense Neural Network
 metadata:
   title: Training Simple Dense Neural Network
   description: In this unit, we learn how simplest dense neural network (or perceptron) can be trained to recognize handwritten digits, and try to visualize network weights to understand how it works.
-  author: cassieview
-  ms.author: cassieb
+  author: shwars
+  ms.author: dmitryso
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

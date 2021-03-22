@@ -4,8 +4,8 @@ title: Introduction to Image Data
 metadata:
   title: Introduction to Image Data
   description: In this unit, we learn how computer images can be represented as tensors in PyTorch, and how to do handle image datasets
-  author: cassieview
-  ms.author: cassieb
+  author: shwars
+  ms.author: dmitryso
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
