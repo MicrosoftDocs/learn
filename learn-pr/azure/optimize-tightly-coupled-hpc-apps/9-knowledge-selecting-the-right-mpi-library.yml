@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: Which MPI libraries will work on the HB120_v2, HB60, and HC44 VMs? 
     choices:
-    - content: Only Intel MPI, because Azure only supports the DAPL InfiniBand API.
+    - content: Only Intel MPI, because Azure only supports the DAPL InfiniBand API
       isCorrect: false
       explanation: HB120_v2, HB60, and HC44 support virtualization of PCIe vi SR-IOV, so all MPI libraries will work and not just Intel MPI.
     - content: Mellanox tuned HPCX MPI library
@@ -34,7 +34,7 @@ quiz:
     - content: HPCX MPI library
       isCorrect: true
       explanation: HPCX is recommended because it is tuned for the Azure hardware, and takes advantages of all the communication performance optimizations.
-    - content: Any MPI library on the CentOS-HPC 7.8+ Azure Marketplace image. They all have the same performance.
+    - content: Any MPI library on the CentOS-HPC 7.8+ Azure Marketplace image, because they all have the same performance
       isCorrect: false
       explanation: All MPI libraries do not have the same performance, and the performance differences might depend on the communication pattern.
   - content: Which MPI library is ABI compatible with mpich library? 
