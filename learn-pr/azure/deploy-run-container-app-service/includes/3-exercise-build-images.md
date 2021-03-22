@@ -68,9 +68,9 @@ The Docker file contains the step-by-step instructions for building a Docker ima
 
 ## Examine the container registry
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the Overview page for your container registry.
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and on the Overview page for your container registry, select **Go to resource**.
 
-2. Under **Services**, select **Repositories**. You'll see a repository named `webimage`.
+2. In the left menu pane, under **Services**, select **Repositories**. You'll see a repository named `webimage`.
 
 3. Select the `webimage` repository. It contains an image with the `latest` tag. This is the Docker image for the sample web app.
 
