@@ -75,6 +75,7 @@ Azure collects this data without requiring you to install anything extra on Ubun
 ## View boot diagnostics
 
 1. On the left menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
+1. Select **Settings > Enable with managed stroage account (recommended)**.
 
 1. Review the screenshot to verify that your virtual machine started correctly.
 
