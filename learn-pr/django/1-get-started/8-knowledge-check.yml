@@ -23,14 +23,14 @@ quiz:
    - content: 'urls.py'
      explanation: 'Incorrect. This file contains all of the URLs within the project and acts as a table of contents.'
      isCorrect: false
- - content: 'What was referred to as a table of contents in the Django app.'
+ - content: 'What was referred to as a table of contents in the Django app?'
    choices:
    - content: 'URLconf'
      explanation: Correct!
      isCorrect: true
    - content: 'runserver'
      isCorrect: false
-     explanation: 'Incorrect. This is a command used to start the development server.'
+     explanation: 'Incorrect. This command is used to start the development server.'
    - content: 'project'
      explanation: 'Incorrect. The project contains all of the necessary settings or apps for a specific website.'
      isCorrect: false
