@@ -8,7 +8,7 @@ All popular compilers should work on all Azure HPC VMs. If an application's buil
 
 ### Specific to HC44
 
-The HC44 VM is a two-socket Intel Skylake processor, so it's recommended to use an Intel compiler if possible. If the application you're compiling is floating-point bound and you suspect the floating-point operations are dominated by fused multiply-add operations, you can try enabling AVX 512 instructions. To do so, add these compilation flags.
+The HC44 VM is a two-socket Intel Skylake processor, so we recommend using an Intel compiler if possible. If the application you're compiling is floating-point bound and you suspect the floating-point operations are dominated by fused multiply-add operations, you can try enabling AVX 512 instructions. To do so, add these compilation flags.
 
 ```bash
 -O3 -xHost -xCORE-AVX512
