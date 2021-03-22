@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Azure SQL Database is a great choice for operational, transactional, and hybrid analytical workloads.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,7 +20,8 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
+In the bus catching scenario, Azure SQL Database was selected due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
+
 TODO: add your scenario image
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
@@ -33,7 +34,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+Here, you will deploy Azure SQL Database using scripts, connect to it in Azure Data Studio, and set up the database for the scenario using T-SQL.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -55,21 +56,26 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
+    1. Deploy SQL DB
+    1. Connect with ADS
+    1. Set up the database using T-SQL scripts (includes loading data)
+## Deploy Azure SQL Database
+In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI.
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
+## Connect with Azure Data Studio
+Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
+
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
+## Set up the database
+Once you're connected to any database, you usually need to deploy the database schema and tailor the database to meet your scenario's requirements. Using a series of T-SQL scripts in Azure Data Studio, you'll configure the database to support your application.
+
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
