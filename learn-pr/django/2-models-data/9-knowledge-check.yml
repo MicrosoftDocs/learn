@@ -12,26 +12,26 @@ metadata:
 durationInMinutes: 2
 quiz:
  questions:
- - content: 'What keyword tells Django there is a relationship between two classes?'
+ - content: "What keyword tells Django there's a relationship between two classes?"
    choices:
-   - content: 'schema'
+   - content: "`schema`"
      isCorrect: false
      explanation: 'Incorrect. This term is used to refer to the structure of a database.'
-   - content: 'INSTALLED_APPS'
+   - content: "`INSTALLED_APPS`"
      isCorrect: false
      explanation: 'Incorrect. This is a section within the settings.py file that includes all apps within the project.'
-   - content: 'ForeignKey'
+   - content: "`ForeignKey`"
      isCorrect: true
-     explanation: 'Correct. This keyword lets Django know there is a relationship between two classes.'
- - content: 'What Django command is the same as the INSERT statement in SQL?'
+     explanation: "Correct. This keyword lets Django know there's a relationship between two classes."
+ - content: "What Django command is the same as the `INSERT` statement in SQL?"
    choices:
-   - content: 'Question.objects.all()'
+   - content: "`Question.objects.all()`"
      isCorrect: false
      explanation: 'Incorrect. This query returns all objects within the database.'
-   - content: 'save'
+   - content: "`save`"
      isCorrect: true
-     explanation: 'Correct. This is the Django command that is the same as the INSERT statement in SQL.'
-   - content: 'q.question_text'
+     explanation: "Correct. This Django command is the same as the `INSERT` statement in SQL."
+   - content: "`q.question_text`"
      isCorrect: false
      explanation: 'Incorrect. This statement is used to update objects within a database.'
  - content: 'What command should you use to update the database schema?'
