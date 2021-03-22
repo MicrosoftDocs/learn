@@ -2,13 +2,13 @@
 uid: learn.innovate-applications-azure-cloud-technologies.3-azure-technologies-build-process
 metadata:
   title: Azure technologies for the build process
-  description: TBD.
-  ms.date: 12/03/2019
-  author: jamcneil
-  ms.author: jumcn
+  description: Azure technologies and services that can help during the build process of the innovation lifecycle.
+  ms.date: 03/01/2021
+  author: jomore
+  ms.author: jomore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure technologies for the build process
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/3-azure-technologies-build-process.md)]
