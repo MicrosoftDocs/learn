@@ -3,8 +3,8 @@ uid: learn.design-monitoring-strategy-on-azure.5-analyze-resource-utilization
 metadata:
   title: Analyze resource utilization and performance
   description: Analyze resource utilization and performance using Azure Monitor Insights 
-  ms.date: 03/15/2021
-  author: kprince
+  ms.date: 03/22/2021
+  author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
