@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Small block sizes combined with small files won't reduce performance."
     - content: "Large"
       isCorrect: true
-      explanation: "Correct. Small block sizes combined with large files reduces performance. This reduction is caused because large files need to be broken down to fit the smaller block size."
+      explanation: "Correct. Small block sizes combined with large files will reduce performance, because large files need to be broken down to fit the smaller block size."
   - content: "If you have a disk that supports 5,000 IOPS and your block size is 4K, your total possible throughput is:"
     choices:
     - content: "9 MBps"
