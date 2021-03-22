@@ -20,7 +20,7 @@ _Figure 5: Code scanning and patching to enforce critical instructions to trap t
 ### References
 
 1. _Popek, J., and Goldberg, R. (1974). [Formal Requirements for Virtualizable Third Generation Architectures](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.141.4815&rep=rep1&type=pdf) Commun. ACM, Vol. 17, No. 7._
-2. _Smith, J. E., and Nair, R. (2005). [The Architecture of Virtual Machines Computer](http://www.ittc.ku.edu/~kulkarni/teaching/archieve/EECS800-Spring-2008/smith_nair.pdf), 38(5), 32-38._
+2. _Smith, J. E., and Nair, R. (2005). [The Architecture of Virtual Machines Computer](https://www.ittc.ku.edu/~kulkarni/teaching/archieve/EECS800-Spring-2008/smith_nair.pdf), 38(5), 32-38._
 
 ***
 
