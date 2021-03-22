@@ -9,9 +9,8 @@ You'll use Git to collaborate and keep track of changes (and who makes them); ma
 In this module, you will:
 
 - Clone a repository
-- Learn how to make a pull request
-- Stash changes
 - Push changes to a remote repository
+- Stash changes
 - Pull changes from other users to update a repository
  
 ## Prerequisites

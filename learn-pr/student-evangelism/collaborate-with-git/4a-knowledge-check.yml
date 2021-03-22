@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. The term \"repo\" is just an abbreviation for _repository_."
     - content: "remote"
       isCorrect: true
-      explanation: "Correct! When you clone (copy) a repository, Git creates a reference to the original repo called a \"remote\". Git uses the name \"origin\" to refer to the remote repo."
+      explanation: "Correct! When you clone (copy) a repository, Git creates a reference to the original repo called a \"remote.\". Git uses the name \"origin\" to refer to the remote repo."
   - content: 'What Git command makes a copy of an existing repository?'
     choices:
     - content: "`git clone <repo-name>`"
@@ -53,15 +53,15 @@ quiz:
       explanation: "Correct! The `git stash` command saves the state of the working tree and index by making a couple temporary commits. This type of save process doesn't affect the repository history."
     - content: "`git save`"
       isCorrect: false
-      explanation: "Incorrect. Learn more about how to use Git by using the `git help` command."
+      explanation: "Incorrect. Learn more about how to use this Git command by using the `git help` command."
     - content: "`git store`"
       isCorrect: false
-      explanation: "Incorrect. Learn more about how to use Git by using the `git help` command."
+      explanation: "Incorrect. Learn more about how to use this Git command by using the `git help` command."
   - content: 'Suppose you have a project that has 10 files in your local working branch of the repo. You recently updated 3 of the files: *toc.yml*, *intro.txt*, and *exercise.json*. Now, you want to create a pull request for only the changes to the JSON file. What set of Git commands should you use to create the pull request for only those changes?'
     choices:
     - content: "`git add .` <br /> `git commit -m \"my changes for the exercise\"` <br /> `git push origin <working-branch>` <br /><br />"
       isCorrect: false
-      explanation: "Incorrect. Check the syntax for the `git add` command. The parameter `.` causes all changes that aren't yet committed (or stashed) to be included in the pull request. How can you modify the syntax so that only the file that you want to include is added?"
+      explanation: "Incorrect. Check the syntax for the `git add` command. The parameter `.` causes all changes that aren't yet committed (or stashed) to be included in the pull request. How can you modify the syntax so that only the file you want to include is added?"
     - content: "`git add exercise.json` <br /> `git commit -m \"my changes for the exercise\"` <br /> `git push origin <working-branch>` <br /><br />"
       isCorrect: true
       explanation: "Correct! To push all your current changes, specify `.` after `git add`. To push changes for only one file, enter the specific file name."

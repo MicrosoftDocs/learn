@@ -41,7 +41,7 @@ Creating a bare repo for sharing is easy:
 
     ```
 
-1. The next step is to get the contents of _your_ repo into the shared repo. Use these commands to return to the project directory where your repo is stored, set up an `origin` remote, and perform an initial push:
+1. The next step is to get the contents of *your* repo into the shared repo. Use these commands to return to the project directory where your repo is stored, set up an `origin` remote, and perform an initial push:
 
     ```bash
     cd ../Cats
@@ -214,7 +214,7 @@ Now that Bob is set up to work on the website, Bob decides to add a footer to th
 
     ```
 
-1. Check the output. From the output, it's evident that Alice's changes and Bob's changes don't overlap. Now, Alice can _stash_ their changes.
+1. Check the output. From the output, it's evident that Alice's changes and Bob's changes don't overlap. Now, Alice can *stash* their changes.
 
     `git stash` saves the state of the working tree and index by making a couple temporary commits. Think of the stash as a way to save your current work while you do something else, without making a "real" commit or affecting your repository history.
 
