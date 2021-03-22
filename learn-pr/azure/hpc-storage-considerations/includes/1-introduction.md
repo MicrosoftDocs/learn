@@ -1,4 +1,4 @@
-Azure has several file-system offerings to meet your high performance computing (HPC) workload needs.
+Azure has several file-system offerings to meet your high-performance computing (HPC) workload needs.
 
 Suppose you have a computationally intensive compute job that you want to run in Azure. Assume the simulation runs on an HPC cluster. The simulation code expects a local path (like /mnt/data/simdata). The data is common for each HPC cluster node. You want to replicate the run just as you would in your datacenter, with your own HPC cluster. You want to enable jobs like this to run at any time, at any scale, and maybe run multiple jobs simultaneously.
 
@@ -19,4 +19,4 @@ In this module, you will:
 - Understand file systems
 - Understand shared file systems
 - Understand file-system permissions, authentication methods, and operations
-- Understand high performance computing (HPC), how HPC jobs run, and how HPC interacts with storage
+- Understand high-performance computing, how HPC jobs run, and how HPC interacts with storage
