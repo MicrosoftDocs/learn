@@ -24,7 +24,7 @@ Git pulls or pushes only when you tell it to. That's different from, say, Dropbo
 
 After another developer, like Alice, has cloned your repo and made some changes locally, they will want to incorporate those changes back into the original repo. It might seem like pushing those changes to the original repo is the right approach. However, a push to the original repo would fail because other users don't have permission to make changes to your repo. And that's as it should be. For now, you want to review incoming changes before merging them into the main code base.
 
-For now, Alice will have to submit a *pull request* to ask you to pull her changes into the main code base. Alice can do that by using `git request-pull`, which might look like this example:
+For now, Alice will have to submit a *pull request* to ask you to pull their changes into the main code base. Alice can do that by using `git request-pull`, which might look like this example:
 
 ```bash
 git request-pull -p origin/main .

@@ -6,7 +6,7 @@ You'll use Git to collaborate and keep track of changes (and who makes them); ma
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Clone a repository
 - Learn how to make a pull request
