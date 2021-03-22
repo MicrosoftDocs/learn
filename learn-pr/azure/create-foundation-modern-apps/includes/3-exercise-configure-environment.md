@@ -71,7 +71,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 
 1. Back in Visual Studio Code, select the **Source Control** blade from the left-hand taskbar.
 
-1. Select **...* in the Source Control blade.
+1. Select **...** in the Source Control blade.
 
 1. Select **Clone** from the drop-down menu and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
 
@@ -82,7 +82,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 ### Azure Data Studio
 Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database.
 
-1. Navigate to the [Azure Data Studio Download](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15) page and download/install the application applicable to your operating system.
+1. Navigate to the [Azure Data Studio Download](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
 
 1. Azure Data Studio is very similar to Visual Studio Code in its layout. Select **File** > **Open folder**  and navigate to the location where you cloned the repository. This will open the folder in Azure Data Studio.
 
