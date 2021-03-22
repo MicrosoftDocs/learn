@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-java-azure-pipeline-terraform.3-workflow
+uid: learn.azure.deploy-java-azure-pipeline-terraform.3-github-actions
 title: Apply an automated workflow
 metadata:
   title: Apply an Automated Workflow
@@ -12,4 +12,4 @@ metadata:
   zone_pivot_groups: azure-devops-actions
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-workflow.md)]
+  [!include[](includes/3-github-actions.md)]
