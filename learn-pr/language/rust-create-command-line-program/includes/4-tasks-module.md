@@ -1,7 +1,6 @@
-The next module we create will represent our tasks, persisting them on disk and deserializing them from the disk.
+The `tasks` module will represent our tasks, persisting them on disk and deserializing them from the disk.
 
-We'll start by defining a simple struct to represent what a to-do item will look like in our
-program:
+Create a new file in the src directory named `tasks.rs`. Inside of that file, we'll start by defining a simple struct to represent what a to-do item will look like in our program:
 
 ```rust
 use chrono::{DateTime, Utc};
