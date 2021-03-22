@@ -71,7 +71,9 @@ Before creating the second route, let's verify that the logging route is working
 
     [![Screenshot showing the new job creation button](../media/vibration-hub-new-job-create.png)](../media/vibration-hub-new-job-create.png#lightbox)
 
-    The **New Stream Analytics job** pane appears. Enter the following values for each field.
+    The **New Stream Analytics job** pane appears.
+
+1. Enter the following values for each field.
 
     | Field | Value  |
     |---------|---------|
@@ -92,7 +94,7 @@ Before creating the second route, let's verify that the logging route is working
 
     You'll now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries.
 
-1. Select **Inputs**. The **Inputs** pane appears
+1. Select **Inputs**. The **Inputs** pane appears.
 
 1. Select **Add stream input**, and then select **IoT Hub** from the dropdown list. The **Input details** pane appears.
 

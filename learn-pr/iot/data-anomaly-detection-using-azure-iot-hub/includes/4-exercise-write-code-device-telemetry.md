@@ -353,11 +353,11 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ::: zone-end
 
-1. You should quickly get a console screen similar to the following image. Note the use of green text to show things are working as they should, and red text when errors are happening. If you don't get a screen similar to this image, start by checking your device connection string.
+2. You should quickly get a console screen similar to the following image. Note the use of green text to show things are working as they should, and red text when errors are happening. If you don't get a screen similar to this image, start by checking your device connection string.
 
-    [![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
+    [![Screenshot showing the vibration telemetry messages.](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
 
-1. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
+3. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
 
     You can leave this app running, as it's needed for the next section.
 
@@ -365,7 +365,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** pane for the hub. Scroll down to the bottom of the page. Change the time range to one hour. The **Device to cloud messages** plot should show some activity.
 
-    [![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)](../media/vibration-hub-overview.png#lightbox)
+    [![Screenshot showing the count of telemetry messages being received by the IoT Hub.](../media/vibration-hub-overview.png)](../media/vibration-hub-overview.png#lightbox)
 
 1. If no activity appears, wait a short while, as there's some latency.
 

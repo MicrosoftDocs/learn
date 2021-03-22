@@ -21,7 +21,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
     | Pricing tier | Standard |
     | Throughput Units | 1 |
 
-    [![Screenshot showing the button to create Event Hubs.](../media/vibration-create-namespace.png)](../media/vibration-create-namespace.png#lightbox)
+    [![Screenshot showing the button to create Namespace.](../media/vibration-create-namespace.png)](../media/vibration-create-namespace.png#lightbox)
 
 1. Select **Review + create**, and when validation succeeds, select **Create**. This may take a few minutes.
 
