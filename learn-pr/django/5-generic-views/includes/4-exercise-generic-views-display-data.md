@@ -43,7 +43,7 @@ With the view created, we can register the path.
 
 With our path registered, we can update the shelter detail template to include links to our dog detail page.
 
-1. Open **dog_shelters/templates/shelter_detail.html**
+1. Open **dog_shelters/templates/shelter_detail.html**.
 1. Underneath the line that reads `{# TODO: Add link to dogs #}`, add the following code to create a link for each dog to the detail view.
 
     ```html
