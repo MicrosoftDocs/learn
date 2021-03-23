@@ -4,7 +4,7 @@ title: Query a JSON file using Azure Synapse serverless SQL pools
 metadata:
   title: Query a JSON file using Azure Synapse serverless SQL pools
   description: "Query a JSON file using Azure Synapse serverless SQL pools"
-  ms.date: 11/23/2020
+  ms.date: 03/23/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
