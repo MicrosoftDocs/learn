@@ -21,7 +21,7 @@ quiz:
         - content: "The audio channels."
           isCorrect: false
           explanation: "Although audio channels can be used in sampling, this is not what sample rate is"
-        - content: "Capture sound and then its converted from analog sound to digital sound by sampling at consistent intervals of time."
+        - content: "Sampling analog sound at consistent intervals of time to create a digital sound representation."
           isCorrect: true
           explanation: "Correct!"
     - content: "What is the waveform?"
@@ -32,7 +32,7 @@ quiz:
         - content: "Sample rate and frequency visualized."
           isCorrect: true
           explanation: "Correct! We can visualize our data using a waveform to map sample rate and frequency"
-        - content: "The audio channels"
+        - content: "The audio channels."
           isCorrect: false
           explanation: "Incorrect."
     - content: "When you resample the audio you are..."
