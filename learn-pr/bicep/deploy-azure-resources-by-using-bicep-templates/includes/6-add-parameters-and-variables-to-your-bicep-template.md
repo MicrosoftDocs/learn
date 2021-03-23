@@ -171,7 +171,7 @@ Notice that we're explicitly specifying the value for our `environmentType` para
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
-1. Select **addparams**.
+1. Select **`addparams`**.
 
     :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 

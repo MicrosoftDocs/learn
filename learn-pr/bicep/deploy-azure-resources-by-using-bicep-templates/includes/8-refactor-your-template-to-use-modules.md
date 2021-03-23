@@ -145,7 +145,7 @@ New-AzResourceGroupDeployment `
 
 1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
 
-1. Notice that we have two new deployments in the list. One begins with the name **addmodule**, and another is called **appService**:
+1. Notice that we have two new deployments in the list. One begins with the name **`addmodule`**, and another is called **`appService`**:
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 

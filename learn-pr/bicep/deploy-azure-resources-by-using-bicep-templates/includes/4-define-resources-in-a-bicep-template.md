@@ -122,7 +122,7 @@ az group deployment create \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **storage** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -210,7 +210,7 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
     :::image type="content" source="../media/4-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true"::: <!-- TODO image -->
 
-1. Select **main** to see what resources were deployed. In this case, there will be one storage account with the name you specified.
+1. Select **`main`** to see what resources were deployed. In this case, there will be one storage account with the name you specified.
 
     :::image type="content" source="../media/4-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
 
@@ -288,7 +288,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
-1. Select **addapp**.
+1. Select **`addapp`**.
 
     :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 
