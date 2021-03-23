@@ -15,7 +15,9 @@ abstract: |
   - Describe the options for key management in Microsoft Azure.
   - Identify various scenarios in which encryption is used to protect data throughout its lifecycle.
   - Choose between the various encryption options in Azure.
-prerequisites: PENDING
+prerequisites: |
+  - Basic understanding of data residency and encryption. 
+  - Experience in network administration or cloud solutions is preferred. 
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - intermediate

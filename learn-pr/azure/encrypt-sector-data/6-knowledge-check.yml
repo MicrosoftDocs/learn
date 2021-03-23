@@ -15,73 +15,46 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "An expert suggests using a pool of training data that has been gathered from observations of human workers performing tasks and making decisions. What is an unintended consequence that must be anticipated?"
+  - content: "What protects connections between customer’s client systems and Microsoft cloud services by generating a unique session key for every session a customer initiate?"
     choices:
-    - content: "AI will replicate human biases and prejudices that result in the unfair treatment of people of a particular race or gender."
+    - content: "In-transit encryption for VMs."
+      isCorrect: false
+      explanation: "Incorrect. In-transit encryption for VMs ensures data encryption in transit such as Remote Desktop Protocol (RDP) initiated from a client computer to Windows and Linux VMs to enable TLS protection for data in transit, and Secure Shell (SSH) for encrypted connections to Linux VMs running in Azure."
+    - content: "Perfect Forward Secrecy (PFS)."
       isCorrect: true
-      explanation: "Correct. This is a definite concern as this problem has already been encountered with AI simply replicating the biases exemplified by the human workers it was modeled to learn from."
-    - content: "AI cannot learn the subtleties of human opinion; therefore, AI will make decisions purely based on data criteria."
+      explanation: "Correct. PFS protects connections between customer’s client systems and Microsoft cloud services by generating a unique session key for every session a customer initiate. PFS protects past sessions against potential future key compromises. This combination makes it more difficult to intercept and access data in transit."
+    - content: "VPN encryption."
       isCorrect: false
-      explanation: "Incorrect. While the intended goal of AI is to make data driven decisions, it has been proven that AI can replicate human traits such as favoritism."
-    - content: "The transparent nature of AI will result in decreased intelligibility concerning performance-based decision making."
+      explanation: "Incorrect. Customers can configure Azure VPN Gateway to use custom IPSec/IKE policy with specific cryptographic algorithms and key strengths instead of relying on the default Azure policies."
+    - content: "ExpressRoute encryption."
       isCorrect: false
-      explanation: "Incorrect. One of the established guiding principles for AI is a commitment to transparency, which increases the intelligibility for stakeholders."
-    - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
-      isCorrect: false
-      explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
-  - content: "Why is explainability such an important aspect of responsible AI in the financial services industry?"
+      explanation: "Incorrect. Azure ExpressRoute with several data encryption options, including MACsec that enables customers to store MACsec secrets in Azure Key Vault."
+  - content: "What is a symmetric key stored in the database boot record for availability during recovery?"
     choices:
-    - content: "Many customers are curious about the ways in which AI can enrich their lives."
-      isCorrect: false
-      explanation: "Incorrect. Explainability refers to customers understanding how AI operates, not necessarily the benefits it can unlock for them."
-    - content: "Many customers are concerned with the risks of AI or feel that it's advancing too quickly, and they don't understand the potential risks."
+    - content: "Database Encryption Key (DEK)."
       isCorrect: true
-      explanation: "Correct. Being able to explain how AI systems function can mitigate customer uncertainty and build trust."
-    - content: "Customers will engage with AI-based services more regularly if they understand how those services operate."
+      explanation: "Correct. Database Encryption Key (DEK) is a symmetric key stored in the database boot record for availability during recovery. It’s secured via a certificate stored in the primary database of the server."
+    - content: "Transparent Data Encryption (TDE)."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply increase engagement with AI systems."
-    - content: "Financial service institutions are more likely to identify mistakes made by AI if they can articulate how it is operating."
+      explanation: "Incorrect. Transparent Data Encryption (TDE) performs real-time encryption and decryption operations on the data and log files."
+    - content: "Key Encryption Key (KEK)."
       isCorrect: false
-      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply identify mistakes."
-  - content: "Which two Microsoft guiding principles underpin the other four?"
+      explanation: "Incorrect. Key Encryption Key (KEK) is an asymmetric key that’s optionally provided by the customer. This key is used to encrypt the Data Encryption Key (DEK) using Azure Key Vault and exists only in Azure Key Vault."
+    - content: "Azure Disk Encryption (ADE)."
+      isCorrect: false
+      explanation: "Incorrect. Azure Disk Encryption (ADE) may be used to encrypt all Azure Windows and Linux IaaS Virtual Machine disks. This encryption includes managed disks."
+  - content: "What enables high-scale networks that meet key enterprise requirements such as performance, enhanced confidentiality, and distributed governance?"
     choices:
-    - content: "Privacy and security."
+    - content: "Homomorphic encryption."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Reliability and safety"
+      explanation: "Incorrect. Homomorphic encryption is a special type of encryption technology that allows for computations to be performed on encrypted data without requiring access to a key needed to decrypt the data."
+    - content: "Always Encrypted with Secure Enclaves."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Fairness and inclusivity."
+      explanation: "Incorrect. Always Encrypted with Secure Enclaves to allow computations on plaintext data inside a secure enclave on the server side."
+    - content: "Multi-party machine learning."
       isCorrect: false
-      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
-    - content: "Transparency and accountability."
+      explanation: "Incorrect. Privacy-preserving multi-party machine learning allows multiple organizations to perform collaborative data analytics while guaranteeing the privacy of their individual datasets."
+    - content: "Confidential Consortium Blockchain Framework."
       isCorrect: true
-      explanation: "Correct. These guiding principles are foundational and are essential for ensuring the effectiveness of the rest."
-  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before launching their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
-    choices:
-    - content: "Fairness and inclusivity."
-      isCorrect: true
-      explanation: "Correct. The guiding principle of fairness dictates that AI systems behave the same way for everyone, and the guiding principle of inclusivity dictates that AI tools do not exclude people."
-    - content: "Reliability and safety."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
-    - content: "Transparency."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principle of transparency is essential, but not the most relevant here."
-    - content: "Privacy and security."
-      isCorrect: false
-      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."
-  - content: "Which answer best describes why State Farm believes successful AI requires interdisciplinary collaboration?"
-    choices:
-    - content: "State Farm found that AI initiatives are more likely to be successful and achieve organizational objectives when business decision-makers work alongside developers and technical experts."
-      isCorrect: true
-      explanation: "Correct. State Farm encourages partnerships between different groups throughout the organization with diverse skills and perspectives.  IT teams working in isolation might create models that aren't ideally suited to business goals and processes."
-    - content: "State Farm found that interdisciplinary collaboration reduces costs."
-      isCorrect: false
-      explanation: "Incorrect. While cross-team collaboration on an AI solution may increase ROI in the long-run, saving money is not the primary goal."
-    - content: "State Farm does not believe that successful AI requires interdisciplinary collaboration."
-      isCorrect: false
-      explanation: "Incorrect. State Farm found that AI initiatives are more likely to be successful when business decision-makers work alongside developers and technical experts."
-    - content: "State Farm believes that interdisciplinary collaboration will accelerate the speed at which AI solutions are developed."
-      isCorrect: false
-      explanation: "Incorrect. While cross-team collaboration may accelerate solution development, speed is not the primary goal."
+      explanation: "Correct. Confidential Consortium Blockchain Framework is an open-source system that enables high-scale, confidential blockchain networks that meet key enterprise requirements such as performance, enhanced confidentiality, and distributed governance."
+  
