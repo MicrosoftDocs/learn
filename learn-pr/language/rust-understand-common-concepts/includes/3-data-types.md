@@ -87,6 +87,10 @@ fn main() {
 }
 ```
 
+> [!NOTE]
+> We're using suffixes on the literal numbers to tell Rust which data type they will be (e.g., `1u32` is the number one as an unsigned 32-bit integer). 
+> If we don't provide these type annotations Rust tries to infer the type from context defaulting to `i32` (a signed 32-bit integer) when it's ambiguous.
+
 You can try running this example in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d683842bd8cedd949ed3c56b27f6f0eb?azure-portal=true).
 
 ## Booleans
@@ -112,11 +116,24 @@ let z = 'ℤ';
 let heart_eyed_cat = '😻';
 ```
 
-The `str` type, also known as a *string literal*, is the most primitive string type, where the value of the string is hardcoded into the text of our program. Most of the time, we refer to those types in referenced form by using the form `&str`. We'll cover references in the following modules. For now, you can think of `&str` as a pointer to an immutable string literal.
+> [!NOTE]
+> Some languages treat their `char` types as 8-bit unsigned integers (the equivalent of Rust's `u8`). Rust's `char` types are utf-8 encoded unicode code points.
+> This means they are 32 bits wide.
+
+The `str` type, also known as a *string slice*, is a view into string data. Most of the time, we refer to those types in referenced form by using the form `&str`. We'll cover references in the following modules. For now, you can think of `&str` as a pointer to an immutable string data. String literals are all of type `&str`.
 
 Although string literals are convenient to use in introductory Rust examples, they aren't suitable for every situation in which we might want to use text. That's because not every string can be known at compile time. An example is when a user interacts with a program and sends text via a terminal.
 
-For these situations, Rust has a second string type, `String`. This type is allocated on the heap. It can store an amount of text that's unknown to us at compile time. You can create a `String` from a string literal by using the `from` function, like so:
+For these situations, Rust has a second string type, `String`. This type is allocated on the heap. It can store an amount of text that's unknown to us at compile time. 
+
+> [!NOTE]
+> If you're coming from a garbage collected language, you might be wondering why Rust has two string types (spoiler alert: it actually has more!). As it turns out, strings are extremely complex 
+> data types. Most languages use their garbage collectors to gloss over this complexity, but Rust, being a system's language, exposes some of the inherent complexity of strings to you.
+> With this added complexity comes a very fine grained amount of control over how memory is used in your program. 
+
+We won't get a full idea of the difference between `String` and `&str` until we learn about Rust's ownership and borrowing system. Until then, you can think of `String` data as string data that can change as your program runs, while `&str` are immutable views into string data that do not changes as your program runs.
+
+You can create a `String` from a string literal by using the `from` function, like so:
 
 ```rust
 let mut hello = String::from("Hello, ");  // create a String from a string literal
@@ -134,10 +151,10 @@ A tuple is a grouping of values of different types collected into one compound. 
 Here's a tuple of length 3:
 
 ```rust
-("hello", 5_i32, 'c');
+("hello", 5i32, 'c');
 ```
 
-This tuple has the type signature `(&'static str, {integer}, char)`, where:
+This tuple has the type signature `(&'static str, i32, char)`, where:
 
 - `&'static str` is the type of the first element.
 - `i32` is the type of the second element.
