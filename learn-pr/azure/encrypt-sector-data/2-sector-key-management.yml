@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 6
 content: |
-  [!include[](includes/2-public-sector-key-management.md)] 
+  [!include[](includes/2-sector-key-management.md)] 

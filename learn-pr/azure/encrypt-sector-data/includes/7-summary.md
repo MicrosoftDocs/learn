@@ -22,7 +22,7 @@ Now that you have reviewed this module, you should be able to:
 * Learn how to [create and configure a key vault for Azure Disk Encryption](https://docs.microsoft.com/azure/virtual-machines/windows/disk-encryption-key-vault).
 * Learn more about [customer-managed key](https://docs.microsoft.com/azure/storage/common/customer-managed-keys-configure-key-vault?tabs=portal).
 * Learn more about [customer-provided key](https://azure.microsoft.com/blog/customer-provided-keys-with-azure-storage-service-encryption/).
-* Learn more about [database engine](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine?view=sql-server-ver15).
+* Learn more about [database engine](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine).
 * Learn more about [encryption at rest in Microsoft cloud services](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest#encryption-at-rest-in-microsoft-cloud-services).
 * Learn more about [encryption of data in transit](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit).
 * Learn more about [encryption options](https://docs.microsoft.com/azure/expressroute/expressroute-about-encryption).
