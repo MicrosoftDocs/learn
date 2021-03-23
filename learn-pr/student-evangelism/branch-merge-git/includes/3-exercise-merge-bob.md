@@ -1,4 +1,4 @@
-While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of what Alice is doing. This arrangement is just fine because they're both using branches! Bob decides to make some changes of their own.
+While Alice is working on CSS for the website, Bob is working away at home, blissfully unaware of the work Alice is doing. This arrangement is just fine because they're both using branches! Bob decides to make some changes of their own.
 
 ## Create a branch for Bob
 
@@ -10,7 +10,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```
 
-1. Download the zip file that contains [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true). Then, unzip them by using these commands:
+1. Download the zip file that contains [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip?azure-portal=true). Then, unzip the resource files:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
@@ -27,22 +27,22 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```
 
-1. Now, open the *index.html* file and replace the line that says "Eventually we will put cat pictures here" with the following line:
+1. Next, open the *index.html* file and replace the line that says "Eventually we will put cat pictures here" with the following line:
 
     ```html
     <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    Save and close the file.
+    Save the file and close the editor.
 
-1. You've now made two changes to Bob's `add-cat` branch—you added one file and modified another. Use `git status` to double-check your changes:
+1. Now you've made two changes to Bob's `add-cat` branch—you added one file and modified another. Use `git status` to double-check your changes:
 
     ```bash
     git status
 
     ```
 
-1. Now, use the following commands to add the new file to the *Assets* directory to the index and commit all changes:
+1. Now, use the following commands to add the new file in the *Assets* directory to the index and commit all changes:
 
     ```bash
     git add .
@@ -50,7 +50,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```
 
-1. Bob now does the same action that Alice did earlier. He switches back to the `main` branch and executes a pull to see if anything has changed:
+1. Bob now does the same action that Alice did earlier—Bob switches back to the `main` branch and executes a pull to see if anything has changed:
 
     ```bash
     git checkout main
@@ -58,7 +58,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```
 
-1. This time, the output indicates that changes *have* been made to the `main` branch in the shared repo (the result of Alice's push). It also indicates that the changes pulled from `main` in the shared repo have been merged with `main` in Bob's repo:
+1. Check the output. This time, the output indicates that changes *have* been made to the `main` branch in the shared repo (the result of Alice's push). It also indicates that the changes pulled from `main` in the shared repo have been merged with `main` in Bob's repo:
 
     ```output
     remote: Counting objects: 4, done.
@@ -73,7 +73,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
      1 file changed, 2 insertions(+), 1 deletion(-)
     ```
 
-1. Now, Bob merges their branch into the `main` branch so that `main` in their repo will have both theirs *and* Alice's changes. Then, Bob pushes `main` on their computer to the `main` branch in the shared repo:
+1. Now, Bob merges their branch into the `main` branch so that `main` in their repo will have their changes *and* Alice's changes. Then, Bob pushes `main` on their computer to the `main` branch in the shared repo:
 
     ```bash
     git merge add-cat --no-edit
@@ -81,7 +81,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 
     ```
 
-Bob didn't use the `--ff-only` option because he knew `main` had changed. A fast-forward-only merge would have failed.
+Bob didn't use the `--ff-only` option because they knew that `main` had changed. A fast-forward only merge would have failed.
 
 ## Sync the repos
 

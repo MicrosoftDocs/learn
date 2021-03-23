@@ -1,19 +1,19 @@
-Sometimes, no matter how well you plan, things go wrong. Imagine two developers are working on the same project file at the same time. The first developer pushes their changes up to the main branch of the project repo without any issue. When the second developer tries to push their changes, Git says there's a *merge conflict*. The file that the second developer is trying to modify is no longer up to date in terms of the most recent changes or file version. The file version must be brought up to date before the second developer's changes can be merged in. Developers who use version control dread few things more than merge conflicts!
+Sometimes, no matter how well you plan, things go wrong. Imagine two developers are working on the same project file at the same time. The first developer pushes their changes up to the `main` branch of the project repo without any issue. When the second developer tries to push their changes, Git says there's a *merge conflict*. The file that the second developer is trying to modify is no longer up to date in terms of the most recent changes or file version. The file version must be brought up to date before the second developer's changes can be merged in. Developers who use version control dread few things more than a merge conflict!
 
 Conflicts like this can happen, so you *must* know how to deal with them. The good news is that Git provides solutions for dealing with merge conflicts.
 
 ## Create branches for Alice and Bob
 
-Let's begin by creating a branch for Alice and a branch for Bob. Both users are updating files in the project repo at the same time. They're not aware of each other's changes because they're making updates in their local branches.
+Let's begin by creating a branch for Alice and a branch for Bob. Both of your developer friends are updating files in the project repo at the same time. They're not aware of each other's changes because they're making updates in their local branches.
 
-1. Be sure you're in the *Alice* directory. Create a branch named `add-cat` for Alice to work in:
+1. Be sure you're in the *Alice* directory, and then create a branch named `add-cat` for Alice to work in:
 
     ```bash
     git checkout -b add-cat
 
     ```
 
-1. Change to the *Bob* directory and create a branch named `style-cat` for Bob to work in:
+1. Change to the *Bob* directory, and then create a branch named `style-cat` for Bob to work in:
 
     ```bash
     cd ../Bob
@@ -34,7 +34,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```
 
-1. If you didn't download the resources previously, download the zip file that contains the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip). Unzip the file by using these commands:
+1. If you didn't download the resources earlier, download the zip file that contains the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip). Unzip the resource files:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
@@ -42,7 +42,7 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```
 
-1. Move the *bombay-cat-180x240.jpg* file into Alice's *Assets* directory, and delete the other files:
+1. Move the *bombay-cat-180x240.jpg* file into Alice's *Assets* directory and delete the other files:
 
     ```bash
     mv bombay-cat-180x240.jpg Assets/bombay-cat-180x240.jpg
@@ -51,21 +51,21 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```
 
-1. Then, open the *index.html* file and replace this statement, which uses one of Bob's cat pictures:
+1. Open the *index.html* file, and then replace this statement (which uses one of Bob's cat pictures):
 
     ```html
     <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    With this statement, to use one of Alice's cat pictures:
+    With this statement (which uses one of Alice's cat pictures):
 
     ```html
     <img class="cat" src="Assets/bombay-cat-180x240.jpg" />
     ```
 
-    Save and close the file.
+    Save the file and close the editor.
 
-1. Now, use the following Git commands to push the changes to the project repo. First, we'll add the commits made in the *Assets* folder. Then, we'll switch back to the `main` branch and do a `pull` to make sure nothing has changed. Finally, we'll `merge` the `add-cat` local branch into the `main` branch, and then `push` the changes to the repo.
+1. Now, use the following Git commands to push the changes to the project repo. First, we'll add the commits made in the *Assets* folder. Then, we'll switch back to the `main` branch and run `git pull` to make sure nothing has changed. Finally, we'll merge the `add-cat` local branch into the `main` branch, and then push the changes to the repo.
 
     ```bash
     git add Assets
@@ -96,9 +96,9 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
     <img class="cat" src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    Save and close the file.
+    Save the file and close the editor.
 
-1. Now, use the following Git commands to sync our changes to the project repo like we did for the updates to Alice's repo. Commit the change, switch to the `main` branch, do a `pull`, and then `merge` the style change:
+1. Now, use the following Git commands to sync the changes to the project repo like you did for the updates to Alice's repo. Commit the change, switch to the `main` branch, run `git pull`, and then merge the style change:
 
     ```bash
     git commit -a -m "Style Bob's cat"
@@ -124,11 +124,11 @@ The question now is: What is Bob to do?
 
 Bob has a few options at this point. Bob can take one of these actions:
 
-- Use the `git merge --abort` command to restore the `main` branch to what it was before the attempted merge. Use the `pull` command to get Alice's changes. Then, create a new branch, make their changes, and merge their branch into the `main` branch. Last, push their changes.
+- Use the `git merge --abort` command to restore the `main` branch to what it was before the attempted merge. Use the `git pull` command to get Alice's changes. Then, create a new branch, make their changes, and merge their branch into the `main` branch. Last, they push their changes.
 - Use the `git reset --hard` command to get back to where they were before they started the merge.
 - Resolve the conflict manually by using information that Git inserts into the affected files.
 
-Developers seem to prefer the last option. When Git detects a conflict in content versions, it inserts *both* versions of the content into the file. It uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content in the branch that you're trying to merge into.
+Developers seem to prefer the last option. When Git detects a conflict in content versions, it inserts *both* versions of the content into the file. Git uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content in the branch that you're trying to merge into.
 
 Here's what the *index.html* file in Bob's repo looks like now. Notice the special formatting around the content with conflicts:
 
@@ -136,7 +136,7 @@ Here's what the *index.html* file in Bob's repo looks like now. Notice the speci
 
 Let's resolve the merge conflict by editing the *index.html* file. Because this merge conflict is a quick fix, you'll make the change directly in the `main` branch, even though you're still in the *Bob* directory.
 
-1. Open the *index.html* file and delete the special formatting lines. Don't remove any other statements. 
+1. Open the *index.html* file, and then delete the special formatting lines. Don't remove any other statements. 
 
     ```html
     <<<<<<< HEAD
@@ -144,15 +144,13 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
     >>>>>>> style-cat
     ```
 
-    Save and close the file.
+    Save the file and close the editor.
 
     The *index.html* file now has two `<img>` elements: one for Bob's cat picture and one for Alice's.
 
-    Some text editors feature Git integration and offer to help when they see text that represents merge conflicts. If you open the *index.html* file in Visual Studio Code, you'll see the following code:
+    Some text editors feature Git integration and offer to help when they see text that indicates a merge conflict. If you open the *index.html* file in Visual Studio Code, you'll see the following code:
 
-    ![Screenshot that shows how to resolve merge conflicts in Visual Studio Code.](../media/resolve-conflict.png)
-
-    _Resolve merge conflicts in Visual Studio Code_
+    :::image type="content" source="../media/resolve-conflict.png" alt-text="Screenshot that shows how to resolve merge conflicts in Visual Studio Code.":::
 
     If you select **Accept Both Changes**, the editor removes the lines around the `<img>` elements and leaves both elements intact.
 

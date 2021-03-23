@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Merge Bob's branch
   description: Get experience creating and merging branches.
   ms.date: 03/16/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: ktoliver
+  ms.author: v-krmaxw
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

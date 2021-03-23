@@ -1,4 +1,4 @@
-Alice wants to add some CSS to style the cat pictures on the website, and Alice will want to do this work in their own branch.
+Your developer friend Alice wants to add some CSS to style the cat photos on your website. Alice  wants to do this work in their own branch.
 
 ## Setup
 
@@ -6,7 +6,7 @@ Before we can assume the role of Alice, we must do some work to set up a bare re
 
 Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud Shell to the right.
 
-### Create a bare shared repo
+### Create a shared bare repo
 
 1. Create a new directory named *Shared.git* to hold the bare repo:
 
@@ -32,7 +32,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Clone the shared repo for Alice and Bob
 
-1. Move up one level from this directory, and create directories for Alice and Bob to store their repos:
+1. Move up one level from this directory and create directories for Alice and Bob to store their repos:
 
     ```bash
     cd ..
@@ -73,7 +73,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     mkdir Assets
     touch Assets/site.css
     git add .
-    git commit -m "Create empty index.html, site.css files"
+    git commit -m "Create empty index.html and site.css files"
 
     ```
 
@@ -103,9 +103,9 @@ As a final setup step, we'll add our base website files and push them to the sha
     </html>
     ```
 
-1. Save and close the file. You can click the ellipse (...) in the right corner of the cloud editor. Or, you can use the accelerator key (Ctrl+S on Windows and Linux; Cmd+S on macOS).
+1. Save the file and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
 
-1. Change directories to the *Assets* directory, and then open *site.css* in the editor:
+1. Change to the *Assets* directory, and then open *site.css* in the editor:
 
     ```bash
     cd Assets
@@ -121,7 +121,9 @@ As a final setup step, we'll add our base website files and push them to the sha
     nav, footer { background-color: #C0D8DF; }
     ```
 
-1. Save and close the file. Go back to the *Bob* directory and commit again:
+   Save the file and close the editor.
+
+1. Go back to the *Bob* directory and commit again:
 
     ```bash
     cd ..
@@ -131,7 +133,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
     ```
 
-1. If you see a warning like this example, don't worry:
+1. Check the output. If you see a warning like this example, don't worry. This warning is just letting users know about a change to Git's default behaviors. 
 
     ```output
     warning: push.default is unset; its implicit value has changed in
@@ -156,13 +158,14 @@ As a final setup step, we'll add our base website files and push them to the sha
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    The warning is just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type this command:
+    If you'd like to make sure you don't see this warning again, you can run this command:
 
     ```bash
     git config --global push.default simple
+
     ```
 
-1. You should see this output, which indicates success:
+1. Check the output for this indicator of success:
 
     ```output
     Counting objects: 12, done.
@@ -176,7 +179,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
 ## Create a branch for Alice
 
-Alice wants to create a _topic branch_ named `add-style` to do their work in. Let's assume the role of Alice, and then create the branch and add some code to this branch.
+Alice wants to create a topic branch named `add-style` to do their work in. Let's assume the role of Alice, and then create the branch and add some code to this branch.
 
 1. Go back to the *Alice* directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date.
 
@@ -186,7 +189,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
 
     ```
 
-1. You should see a success message that looks like this example:
+1. Check the output. You should see a success message that looks like this example:
 
     ```output
     remote: Counting objects: 8, done.
@@ -211,7 +214,9 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
     .cat { max-width: 40%; padding: 5 }
     ```
 
-1. Save the changes to the file, close the file, and then commit the change:
+   Save the changes to the file and close the editor.
+
+1. Commit the change:
 
     ```bash
     git commit -a -m "Add style for cat pictures"
@@ -226,7 +231,7 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
 
     ```
 
-1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo), so Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a fast-forward merge. Then, Alice pushes `main` from their repo to the shared repo.
+1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo). So, Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a *fast-forward* merge. Then, Alice pushes `main` from their repo to the shared repo.
 
     ```bash
     git merge --ff-only add-style
@@ -234,4 +239,4 @@ Alice wants to create a _topic branch_ named `add-style` to do their work in. Le
 
     ```
 
-Performing a fast-forward merge because the `main` branch had no changes wasn't strictly necessary in this case because Git would have done it anyway. Still, it's a good habit because an `--ff-only` merge fails if `main` has changed, making you acutely aware that changes have occurred.
+In this case, a fast-forward merge wasn't strictly necessary because the `main` branch had no changes, and Git would have merged the changes anyway. But using the `--ff only` option is a good practice because an `--ff-only` merge fails if `main` has changed.
