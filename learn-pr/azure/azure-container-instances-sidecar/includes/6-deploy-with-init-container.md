@@ -11,6 +11,8 @@ ACI Init Containers are the same concept as Kubernetes Init Containers.
 
 In this unit, the init container will retrieve the IP address allocated to the Azure Container Instance, and it will update the DNS entry that the API clients use to reach it. The init container and the application container share the same network stack, so the IP address visible to the init container will be the same that the application containers will use.
 
+## Create the initialization script
+
 1. The first thing you will do is creating an Azure Service Principal that will be used by the init container to interact with Azure, to retrieve its IP address and update DNS. In this example you will assign it Contributor access to the resource group for simplicity reasons, in production environments you might want to be more restrictive.
 
     ```azurecli
@@ -54,6 +56,8 @@ In this unit, the init container will retrieve the IP address allocated to the A
     ```
     
     Note that the initialization script uses the Azure CLI to run the commands that find out the IP address of the container instance and create an A-record in the private DNS zone. It will authenticate using the Service Principal application ID and secret that it expects to find as environment variables.
+
+## Deploy the container group with an init container
 
 1. At this point, you can create the YAML file building on the ones you used in previous units. Take note of the following items:
 
