@@ -1,1 +1,0 @@
-Answer the following questions to see what you've learned in this module.
