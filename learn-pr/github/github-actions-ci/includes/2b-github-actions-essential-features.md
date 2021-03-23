@@ -1,4 +1,4 @@
-Here, you learn how to use default and custom environment variables, use custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub UI and REST API endpoints.
+Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub UI and REST API endpoints.
 
 ## Default environment variables and contexts
 
