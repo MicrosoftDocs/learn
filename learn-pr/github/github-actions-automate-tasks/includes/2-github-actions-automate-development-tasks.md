@@ -27,9 +27,18 @@ Consider all of the tasks that must happen *after* the code is written but befor
 
 The challenge is to do these tasks reliably and in a sustainable manner.  This is an ideal job for workflow automation.  If you're already relying on GitHub, you'll likely want to setup your workflow automation using GitHub Actions.
 
-### What is GitHub Actions?
+## What is GitHub Actions?
 
 *GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.  GitHub Actions can be configured to trigger complex workflows that meet your organization's needs each time developers check new source code into a specific branch, at timed intervals, or manually.  The result is a reliable and sustainable automated workflow which leads to a significant decrease in development time.
+
+## Are GitHub Actions safe to use?
+
+Many GitHub actions are open source and available for anyone who wants to use them. However, just like with any open source software, you need to carefully check them before using them within your project. Similar to recommended community standards with open source software such as including a README, code of conduct, contributing file, and issue templates just to name a few, you can follow the below recommendations when using GitHub actions:
+
+- Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
+- Check if the action is in the GitHub Marketplace. This is a good check even if an action does not have to be on the GitHub Marketplace to be valid.
+- Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
+- Include the version of the action you are using by specifying a Git ref, SHA, or tag.
 
 ## Where can you find GitHub Actions?
 

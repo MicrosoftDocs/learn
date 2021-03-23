@@ -6,19 +6,19 @@ Here, we discuss the components and common configurations within a workflow file
 
 There are several components that work together to run tasks or jobs within a GitHub Actions workflow. In short, an event triggers the workflow, which contains a job. This job then uses steps to dictate which actions will run within the workflow. To better see how these components work together, let's take a quick look at each one.
 
-#### Workflows
+### Workflows
 
 A workflow is an automated process that you add to your repository. A workflow needs to have at least one job and can be triggered by different events. It can be used to build, test, package, release, or deploy your repository's project on GitHub.
 
-#### Jobs
+### Jobs
 
 The job is the first major component within the workflow. A job is a section of the workflow that will be associated with a runner. A runner can be GitHub-hosted or self-hosted and the job can run on a machine or in a container. You specify the runner with the `runs-on:` attribute. Here, you are telling the workflow to run this job on `ubuntu-latest`. We will talk more about runners in the next unit.
 
-#### Steps
+### Steps
 
 A step is an individual task that can run commands in a job. In our example above, the step uses the action `actions/checkout@v2` to checkout the repository. What's interesting is the `using: ./action-a` value. This is the path to the container action that you build in an `action.yml` file.
 
-#### Actions
+### Actions
 
 The actions inside your workflow are the standalone commands that are executed. These standalone commands can reference GitHub actions such as using your own custom actions, or community actions like the one we use above, `actions/checkout@v2`. You can also run commands such as `run: npm install -g bats` to execute a command on the runner. 
 
@@ -145,15 +145,6 @@ You can find these workflows by navigating to the **Actions** tab of a repositor
 ![Screen Shot 2021-02-18 at 4 50 36 PM](https://user-images.githubusercontent.com/6351798/108436868-7a79b200-7209-11eb-83cb-d324ccf5f337.png)
 
 For more information on creating and using organization template workflows, check out [Sharing workflows with your organization](https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization).
-
-## Is an open source action safe to use?
-
-Many GitHub actions are open source and available for anyone who wants to use them. However, just like with any open source software, you need to carefully check them before using them within your project. Similar to recommended community standards with open source software such as including a README, code of conduct, contributing file, and issue templates just to name a few, you can follow the below recommendations when using GitHub actions:
-
-- Review the action's `action.yml` file for inputs, outputs, and to make sure the code does what it says it does.
-- Check if the action is in the GitHub Marketplace. This is a good check even if an action does not have to be on the GitHub Marketplace to be valid.
-- Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
-- Include the version of the action you are using by specifying a Git ref, SHA, or tag.
 
 ## Using specific versions of an action
 
