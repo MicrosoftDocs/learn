@@ -104,7 +104,7 @@ The borrow checker can't determine this either, because it doesn't know how the 
 Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can perform its analysis:
 
 ```rust
-fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
+fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
     if x.len() > y.len() {
         x
     } else {
@@ -132,7 +132,7 @@ fn main() {
     println!("The longest magic word is {}", result);
 }
 
-fn longest_word<'a>(x: &'a str, y: &'a str) -> &'a str {
+fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
     if x.len() > y.len() {
         x
     } else {
