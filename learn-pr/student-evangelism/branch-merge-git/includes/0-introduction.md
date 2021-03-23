@@ -4,7 +4,7 @@ You've already created a small website that you and your friends can use to prac
 
 As your project progresses, you want to make collaborating with your friends easier, so you can all work on features of the website without conflicts or wasted effort.
 
-In this module, you'll learn what branches are in Git, how to use them for development, and how to merge branches, including dealing with minor merge conflicts.
+In this module, you'll learn what branches are in Git, how to use branches for development, and how to merge them, including dealing with merge conflicts.
 
 ## Learning objectives
 
@@ -17,7 +17,7 @@ In this module, you will:
 
 ## Prerequisites
   
-To work on this module, you should have an understanding of these aspects of working with Git:
+To work on this module, you should have a basic knowledge of working with Git, including:
 
 - Terms like *repository*, *working tree*, and *index*
 - Creating repos

@@ -81,7 +81,7 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     ```
 
-Bob didn't use the `--ff-only` option because they knew that `main` had changed. A fast-forward only merge would have failed.
+Bob didn't use the `--ff-only` flag because they knew that `main` had changed. A fast-forward only merge would have failed.
 
 ## Sync the repos
 

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Resolve merge conflicts
   description: Modify unmerged branches and resolve merge conflicts.
   ms.date: 03/16/2021
-  author: ktoliver
-  ms.author: v-krmaxw
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

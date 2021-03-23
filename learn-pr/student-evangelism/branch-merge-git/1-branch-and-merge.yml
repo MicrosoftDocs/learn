@@ -5,8 +5,8 @@ metadata:
   title: Branches in Git
   description: Learn how to create and merge branches.
   ms.date: 03/16/2021
-  author: ktoliver
-  ms.author: v-krmaxw
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

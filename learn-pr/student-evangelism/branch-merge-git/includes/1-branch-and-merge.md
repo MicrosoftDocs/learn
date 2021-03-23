@@ -1,6 +1,6 @@
-You're a web developer trying to learn more about Git for work. You've created a simple HTML and CSS website that features cat photos to practice your skills, and you've been working on it with your friends, Alice and Bob. 
+You're a web developer trying to learn more about Git for your job. You've created a simple HTML and CSS website that features cat photos to practice your Git skills, and you've been working on it with your friends, Alice and Bob. 
 
-As your project progresses, you realize that you'd like everyone to be able to work on more than one task at a time without getting in the way of another person's work. You need a way to keep everyone's work separate so new development doesn't get in the way of existing bug fixes. In Git, *branches* make this kind of collaboration easy.
+As your project progresses, you realize that you'd like everyone to be able to work on more than one task at a time without getting in the way of another person's work. You need a way to keep everyone's work separate, so new development doesn't get in the way of existing bug fixes. In Git, *branches* make this kind of collaboration easy.
 
 The work done on a branch doesn't have to be shared, and it doesn't interfere with work done on other branches. Branches let you keep commits related to each topic together and isolated from other work, so changes made to a topic are easy to review and track. 
 
@@ -16,7 +16,7 @@ A *branch* is simply a chain of commits that branch off from the main line of de
 
 If you're switching to Git from another VCS, you might be accustomed to slightly different terminology. The VCS Subversion names its default branch `trunk`, while Git names it `main`. You can rename the default branch, just as you can rename any other branch. In this module, we name the default branch `main`.
 
-A branch usually starts with a commit on the default branch, in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch and merge them into the `main`.
+A branch usually starts with a commit on the default branch, in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch and merge them into the `main` branch.
 
 Suppose you branch off the `main` branch. Here's how to visualize what happens:
 

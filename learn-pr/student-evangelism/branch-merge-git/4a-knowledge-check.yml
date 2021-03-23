@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Review what you've learned in the branching and merging in Git module.
   ms.date: 03/16/2021
-  author: ktoliver
-  ms.author: v-krmaxw
+  author: shanamatthews
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 5
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Work done on a branch doesn't interfere with work in other branches."
       isCorrect: true
-      explanation: "Correct! The purpose of branches is to isolate changes in one branch from another, until you're ready to merge the changes in both branches together."
+      explanation: "Correct! The purpose of branches is to isolate changes in one branch from changes made in another branch, until you're ready to merge the changes in both branches together."
     - content: "A branch can't have any other branches that extend from its line of development."
       isCorrect: false
       explanation: "Incorrect. The purpose of branches is to be able to isolate some changes from other changes in the same project. Git supports the ability to add as many branches and sub-branches as your project requires."            
@@ -60,4 +60,4 @@ quiz:
       explanation: "Incorrect. Check the location of the content that has conflicts. Git should show the incoming changes above the separator and the existing content in the `main` branch below the line."
     - content: ":::code source=\"./resources/quiz-sample-3.html\" range=\"1-11\" highlight=\"4,6,9\":::"
       isCorrect: true
-      explanation: "Correct! Git always shows you the entire file. Git uses left and right angle brackets to surround the sections of content that have a conflict. (There can be more than one conflict in a file.) Git uses a line of equal signs to separate two versions of content that are in conflict."
+      explanation: "Correct! Git always shows you the entire file. Git uses left and right angle brackets to surround the sections of content that have a conflict. Git uses a line of equal signs to separate two versions of content that are in conflict."

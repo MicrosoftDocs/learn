@@ -239,4 +239,4 @@ Alice wants to create a topic branch named `add-style` to do their work in. Let'
 
     ```
 
-In this case, a fast-forward merge wasn't strictly necessary because the `main` branch had no changes, and Git would have merged the changes anyway. But using the `--ff only` option is a good practice because an `--ff-only` merge fails if `main` has changed.
+In this case, a fast-forward merge wasn't strictly necessary because the `main` branch had no changes, and Git would have merged the changes anyway. But using the `--ff only` flag is a good practice because an `--ff-only` merge fails if `main` has changed.
