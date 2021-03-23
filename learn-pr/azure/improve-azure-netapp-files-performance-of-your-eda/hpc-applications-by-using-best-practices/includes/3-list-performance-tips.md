@@ -8,7 +8,10 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+# Goal
+
+We will list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,8 +23,30 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+
+## actimeo & nocto
+
+The actimeo mount option controls the NFS client caches attributes of a directory. If not specified, the NFS client uses a 60-sec maximum.
+
+Nocto stands for “no close-to-open,” which means that a file can close before a write has completed to save time. By default, nocto is not set, which means that all files will wait to finish writes before allowing a close.
+
+Most HPC applications, including EDA in our scenario, have relatively static data sets. In that case, nocto and actimeo can be used to reduce getattr/access operations to storage and speed up the application.
+
+For example, nocto and actimeo=600 is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there is no cache coherency to maintain and ti will eliminate metadata calls and improve the overall performance.
+
+## /etc/sysctl.conf
+
+Some or all of the following system parameters may be helpful on Linux Client VMs for optimal performance. If you have clients with large amounts of RAM, or higher networking bandwidth like InfiniBand, you may want to set some values even higher than what is listed below.
+
+To make these tunings persistent, update /etc/sysctl.conf and sudo 
+
+## nconnect
+
+## NFS version
+
+## rsize/wsize
+
+## Others
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -33,7 +58,6 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,24 +80,6 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
@@ -95,13 +101,6 @@ TODO: describe the end-state
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
