@@ -17,7 +17,6 @@ abstract: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-gui
   - Initialize a Git repository and push it to GitHub with Visual Studio 2019
   - Make and push commits to your remote branch
 prerequisites: | # See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master. These are *knowledge* prerequisites in addition to *technical* prerequisites, so think hard on them - they control the scope of your content.
-
   - Basic understanding of Git concepts
   - Familiarity with beginner Git commands
   - A GitHub account
