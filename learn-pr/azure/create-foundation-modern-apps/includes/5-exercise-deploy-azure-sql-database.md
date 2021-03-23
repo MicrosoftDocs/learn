@@ -22,8 +22,6 @@ Azure SQL Database is a great choice for operational, transactional, and hybrid 
 -->
 In the bus catching scenario, Azure SQL Database was selected due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
 
-TODO: add your scenario image
-
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
     Goal: State concisely what they'll implement here; that is, describe the end-state after completion
@@ -146,16 +144,16 @@ Once your database is deployed, there are many ways that you can connect and int
 
 1. Next to *Servers*, select the **New Connection** button (it looks like a server with a plus sign).
 
-1. In the *Connection Details* pane that opens, fill in the following information:
-    *Connection type*: **Microsoft SQL Server**
-    *Server*: **bus-server<uniqueID>.database.windows.net**
-    *Authentication type*: **SQL Login**
-    *User name*: **cloudadmin**
-    *Password*: **<your-password>**
-    *Remember password*: **Check box**
-    *Database*: **bus-db**
-    *Server group*: **<Default>**
-    *Name (optional)*: **<leave-blank>**
+1. In the *Connection Details* pane that opens, fill in the following information:  
+    *Connection type*: **Microsoft SQL Server**  
+    *Server*: **bus-server<uniqueID>.database.windows.net**  
+    *Authentication type*: **SQL Login**  
+    *User name*: **cloudadmin**  
+    *Password*: **<your-password>**  
+    *Remember password*: **Check box**  
+    *Database*: **bus-db**  
+    *Server group*: **<Default>**  
+    *Name (optional)*: **<leave-blank>**  
 
 1. Once a successful connection is made, you should be able to navigate the database's contents in the Connections pane.
 
@@ -198,13 +196,6 @@ Now that your database is configured, it's time to dive deeper into how Azure SQ
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

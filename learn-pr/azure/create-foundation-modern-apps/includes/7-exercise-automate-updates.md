@@ -22,8 +22,6 @@ GitHub Actions is a way to automate CI/CD for many different services, including
 -->
 Recall in the bus catching scenario you have build the foundation with your database. In the case you want to update the database or deploy the same configurations automatically ti a new database, you can leverage GitHub Actions.
 
-TODO: add your scenario image
-
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
     Goal: State concisely what they'll implement here; that is, describe the end-state after completion

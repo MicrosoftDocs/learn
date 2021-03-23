@@ -34,7 +34,6 @@ In the bus-catching scenario, we will use several tools and languages to build o
 
     Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 -->
-TODO: add a visual, could be VS Code + Azure Data Studio. Is this required?
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
