@@ -1,28 +1,4 @@
-Here, we discuss the components and common configurations within a workflow file. We also take a closer look at the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
-
-## The components of GitHub Actions
-
-![workflow](https://user-images.githubusercontent.com/6351798/106820078-ff74a100-6637-11eb-80f1-9b629806dacd.png)
-
-There are several components that work together to run tasks or jobs within a GitHub Actions workflow. In short, an event triggers the workflow, which contains a job. This job then uses steps to dictate which actions will run within the workflow. To better see how these components work together, let's take a quick look at each one.
-
-### Workflows
-
-A workflow is an automated process that you add to your repository. A workflow needs to have at least one job and can be triggered by different events. It can be used to build, test, package, release, or deploy your repository's project on GitHub.
-
-### Jobs
-
-The job is the first major component within the workflow. A job is a section of the workflow that will be associated with a runner. A runner can be GitHub-hosted or self-hosted and the job can run on a machine or in a container. You specify the runner with the `runs-on:` attribute. Here, you are telling the workflow to run this job on `ubuntu-latest`. We will talk more about runners in the next unit.
-
-### Steps
-
-A step is an individual task that can run commands in a job. In our example above, the step uses the action `actions/checkout@v2` to checkout the repository. What's interesting is the `using: ./action-a` value. This is the path to the container action that you build in an `action.yml` file.
-
-### Actions
-
-The actions inside your workflow are the standalone commands that are executed. These standalone commands can reference GitHub actions such as using your own custom actions, or community actions like the one we use above, `actions/checkout@v2`. You can also run commands such as `run: npm install -g bats` to execute a command on the runner. 
-
-For more information on the components of a GitHub Actions workflow, check out [The components of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#the-components-of-github-actions).
+Here, we discuss common configurations within a workflow file. We also take a closer look at the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
 
 ## Configuring workflows to run for scheduled events
 
