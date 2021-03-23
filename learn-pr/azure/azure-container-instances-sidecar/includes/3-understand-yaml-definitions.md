@@ -5,6 +5,8 @@ Kubernetes is a container orchestration system that uses YAML to describe its ob
 
 YAML is one of the different ways in which you can declaratively deploy Azure Container Instances, others include ARM templates and Terraform. There is not a specific reason why one would be better than the other, but YAML tends to be convenient when working with more complex container groups, such as the sidecar pattern you will deploy in this unit.
 
+## Extract YAML code out of an existing container group
+
 1. If you deleted your Azure Container Instance as instructed by the previous unit, you can recreate it with the following Azure CLI command. If you did not delete it, you can skip this step.
 
     ```azurecli
@@ -74,7 +76,9 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     - Properties and attributes are specified hierarchically in key-value pairs.
     - If you are familiar with Kubernetes, you will recognize many of the labels. For example, resource requests follow the same syntax. However, do not expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes would use the `env` key word.
     - If you look into the environment variables, you see them in clear text. While this is probably acceptable for most environment variables, others should not be written in the open, such as the SQL password used in this example. A better way of defining this sensitive information would be with ACI Secure Values. In your case, you do not want that your customer is able to see the database password, so you need to masquerade it.
-    
+
+## Modify and deploy YAML file
+
 1. While you could change the environment variable for the SQL password into a secure environment variable using the Azure CLI, you will use YAML in preparation for future requirements. In order to generated the required YAML, you can manually edit the file automatically generated in this unit and redeploy it to created the modified Azure Container Instance. Use your favorite text editor to change line 13 of `/tmp/aci.yaml` from `        value: Microsoft123!` into `        secureValue: Microsoft123!` (do not change indentation). Instead, you can use the online text editor `sed` to perform the change:
 
     ```bash
