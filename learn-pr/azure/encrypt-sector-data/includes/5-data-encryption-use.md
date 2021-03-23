@@ -2,16 +2,7 @@ Microsoft enables customers to protect their data throughout its entire lifecycl
 
 ## Use Azure for confidential computing
 
-:::row:::
-:::column span="2":::
 Azure confidential computing is a set of data security capabilities that offers encryption of data while in use. This means that data can be processed in the cloud with the assurance that it’s always under customer control. Confidential computing ensures that when data is in the clear, which is needed for efficient data processing in memory, the data is protected inside a Trusted Execution Environment (TEE, also known as an enclave). TEE helps ensure that there's no way to view data or the operations from outside the enclave and that only the application designer has access to TEE data. Access is denied to everyone else, including Azure administrators. TEE also helps ensure that only authorized code is permitted to access data. If the code is altered or tampered with, the operations are denied, and the environment is disabled.
-:::column-end:::
-:::column span="2":::
-:::image type="complex" source="../media/PENDING.png" alt-text="Trusted Execution Environment protection.":::
-Pending
-:::image-end:::
-:::column-end:::
-:::row-end:::
 
 Azure supports two TEEs: Virtualization-Based Security (VBS), which is a software-based TEE that’s implemented by the Hyper-V hypervisor, and Intel SGX, which is a hardware-based TEE available on a new family of Azure [DC-series Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general#dc-series) that have the latest generation of Intel Xeon processors with Intel Software Guard Extensions (SGX) technology. Intel SGX isolates a portion of physical memory to create an enclave where select code and data are protected from viewing or modification. The protection offered by Intel SGX, when used appropriately by application developers, can prevent compromise due to attacks from privileged software and many hardware-based attacks. An application leveraging Intel SGX [needs to be refactored into trusted and untrusted components](https://software.intel.com/sites/default/files/managed/c3/8b/intel-sgx-product-brief-2019.pdf). The untrusted part of the application sets up the enclave, which then allows the trusted part to run inside the enclave. No other code, irrespective of the privilege level, has access to the code executing within the enclave or the data associated with enclave code. Design best practices call for the trusted partition to contain just the minimum amount of content required to protect customer’s secrets.
 
