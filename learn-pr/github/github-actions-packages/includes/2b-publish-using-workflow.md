@@ -5,7 +5,7 @@ Here, you will learn the basics of using a workflow to publish to GitHub Package
 
 GitHub Packages allow you to safely publish and consume packages, store your packages alongside your code, and share your packages privately with your team or publicly with the open source community. You can also automate your packages with the use of GitHub Actions. 
 
-Below is an example of what this could look like for a simple workflow that will run whenever a new release is created in the repository. If the tests pass, then the package will be published to GitHub Packages.
+Below is an example of a simple workflow that runs whenever a new release is created in the repository. If the tests pass, then the package is published to GitHub Packages.
 
 ```yml
 name: Node.js Package
@@ -40,13 +40,13 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
-First, the workflow file will need to exist in the `.github/workflows` directory. Since this is a workflow that will publish a new package whenever a new release is created, it's common to name these workflows along the lines of `release-package.yml` to make is easy for project collaborators to understand its purpose without navigating through the workflow file. 
+First, the workflow file needs to exist in the `.github/workflows` directory. It is common practice to name a workflow that publishes a new package whenever a new release is created along the lines of `release-package.yml` to make is easy for project collaborators to understand its purpose without navigating through the workflow file. 
 
-The above workflow does a few things after a new release is created.
+The above workflow does a few things after a new release is created:
 
 1. A job named `build` runs `npm ci` (named after Continuous Integration)  to install dependencies directly from the `package-lock.json` file.
-1. The job named `publish-gpr` is dependant on the `build` job to succeed before continuing with the workflow and publish the package.
-1. The workflow needs an access token for authentication before publishing the package to the `registry-url: https://npm.pkg.github.com/`.
+1. Once the `build` job succeeds, the job named `publish-gpr` publishes the package.
+1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an access token for authentication.
 
 To learn more about publishing a package to GitHub Packages, check out [Publishing a package](https://docs.github.com/en/packages/learn-github-packages/publishing-a-package).
 
@@ -57,11 +57,11 @@ With GitHub Packages, users are leaning increasingly towards containers, Kuberne
 
 With the container registry you can:
 
-- Ability to store container images within your organization and user account, rather than a repository.
+- Store container images within your organization and user account, rather than a repository.
 - Set fine-grained permissions for the container images.
 - Access public container images anonymously.
 
-After you have built the image, authenticated and signed in to the GitHub Container Registry service at `ghcr.io`, you can then tag and push the latest version of the image to the container registry.
+After you have built the image, authenticated and signed in to the GitHub Container Registry service at `ghcr.io`, you can then tag and push the latest version of the image to the container registry using the commands below:
 
 ```bash
 echo $PAT | docker login ghcr.io -u USERNAME --password-stdin
