@@ -20,14 +20,24 @@ SANDBOXES: There's lots to know about sandbox restrictions, limitations and init
 -->
 1. Select the **1 outgoing / 0 incoming** link in the Git Changes window to open the Git Repository window.
 
-1. Under the Incoming section, select Fetch to check if the current branch has any incoming commits from the remote.
+:::image type="content" source="../media/9-outgoing-link.png" alt-text="Screenshot of Git Changes window with one outgoing commit":::
 
 1. Under the Outgoing section, double click on the commit to view the Commit Details window.
 
+:::image type="content" source="../media/9-outgoing-commit.png" alt-text="Screenshot of Git Repository window with one outgoing commit":::
+
 1. Select the Program.cs file to view the diff between the base version of the file and your commit.
+
+:::image type="content" source="../media/9-commit-details.png" alt-text="Screenshot of Commit Details window":::
 
 1. In the Git Repository window, under the Outgoing section, select Push.
 
+:::image type="content" source="../media/9-push-commit.png" alt-text="Screenshot of Push button in Git Repository window":::
+
 1. View the operation being performed in the background through the Task Status Center notification.
 
-1. Confirm successful completion of the operation by viewing the gold info bar in the Git Changes window.
+:::image type="content" source="../media/9-tsc.png" alt-text="Screenshot of Task Status Center notification for push":::
+
+1. Confirm successful completion of the operation by viewing the gold info bar in the Git Repository window.
+
+:::image type="content" source="../media/9-success.png" alt-text="Screenshot of success message for push":::
