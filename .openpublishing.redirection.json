@@ -5159,6 +5159,26 @@
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/6-summary.yml",
       "redirect_url": "/learn/modules/improve-api-developer-experience-with-swagger/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/6-pipe.md",
+      "redirect_url": "/learn/modules/connect-commands/2-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/7-exercise-pipe.md",
+      "redirect_url": "/learn/modules/connect-commands/3-exercise-pipeline",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/8-knowledge-check.md",
+      "redirect_url": "/learn/modules/introduction-to-powershell/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/9-summary.md",
+      "redirect_url": "/learn/modules/introduction-to-powershell/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
