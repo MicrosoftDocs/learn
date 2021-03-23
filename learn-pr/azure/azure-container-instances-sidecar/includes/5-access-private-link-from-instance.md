@@ -6,6 +6,8 @@ Azure Private Link is a technology that can be used to secure connectivity to an
 
 DNS plays a critical role in the functionality required, since the system accessing the SQL Database (the Azure Container Instance hosting the application) will need to resolve the Azure SQL Fully Qualified Domain Name (FQDN) to its private IP, instead of to its public IP.
 
+## Create private endpoint
+
 ![Diagram that shows a topology overview of the network connections.](../media/4-plink-overview.png)
 
 1. First you will create a new subnet in the Virtual Network, and then you will create the Azure SQL private endpoint in that subnet:
@@ -32,6 +34,8 @@ DNS plays a critical role in the functionality required, since the system access
     sql_endpoint_ip=$(az network nic show --ids $sql_nic_id --query 'ipConfigurations[0].privateIpAddress' -o tsv) && echo $sql_endpoint_ip
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "nslookup ${sql_server_name}.database.windows.net"
     ```
+
+## DNS resolution
 
 1. If you look closely at the result of the `nslookup` command in the previous section, the Fully-Qualified Domain Name of the Azure SQL Database is still resolved inside of the Virtual Network to its public IP address. In order to force the systems deployed in the Virtual Network to use the private IP address of the Azure SQL Database, you will create a private DNS zone. Azure SQL Databases with configured private links use the intermediate domain `privatelink.database.windows.net`, so you will create a private zone for this domain and add an A-record for the IP address of the Azure SQL private endpoint created earlier. Instead of manually adding the A-record, you will connect the private endpoint and the private DNS zone with the `az network private-endpoint dns-zone-group create` command, so that the A-record is automatically created with the correct IP address:
 
