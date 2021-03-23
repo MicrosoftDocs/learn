@@ -169,10 +169,16 @@ Now it's time to create the application and apply the secret to this application
 1. Save and close the file.
 1. Apply the changes using `kubectl apply -f backend-application.yaml`
 
-    The changes can take up to five minutes to propagate, check the DNS creation using the following command:
+    The changes can take up to five minutes to propagate, check the DNS creation by getting the name of your DNS zone listing with this command:
 
     ```azurecli-interactive
     az network dns zone list -o table
+    ```
+
+    Then query Azure for the record sets of this listing with:
+
+    ```azurecli-interactive
+    az network dns record-set list -g $RESOURCE_GROUP -z <your-zone-name>
     ```
 
     Check if there are two new records with the same DNS zone but starting with `ship-manager-backend`.
