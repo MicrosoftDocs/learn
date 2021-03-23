@@ -146,7 +146,7 @@ Now it's time to create the application and apply the secret to this application
 1. Let's add the Ingress so we can access the application, below the last three dashes, add the following YAML:
 
     ```yaml
-    apiVersion: networking.k8s.io/v1
+    apiVersion: networking.k8s.io/v1beta1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -160,10 +160,8 @@ Now it's time to create the application and apply the secret to this application
             paths:
               - path: /
                 backend:
-                  service:
-                    name: ship-manager-backend
-                    port:
-                      name: http
+                  serviceName: ship-manager-backend
+                  servicePort: http
     ```
 
 1. Save and close the file.
