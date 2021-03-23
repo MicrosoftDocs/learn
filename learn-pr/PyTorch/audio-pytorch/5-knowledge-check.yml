@@ -13,45 +13,53 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "UPDATE THESE QUESTIONS AND ANSWERS!!!"
+    - content: "What is the sample rate?"
       choices:
-        - content: "wrong answer"
+        - content: "Frequency mapped to time."
           isCorrect: false
-          explanation: "Node.js isn't a framework or a Java runtime."
-        - content: "A JavaScript framework"
+          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+        - content: "The audio channels."
           isCorrect: false
-          explanation: "Node.js isn't a framework but is sometimes incorrectly described as one."
-        - content: "A JavaScript runtime"
+          explanation: "Although audio channels can be used in sampling, this is not what sample rate is"
+        - content: "Capture sound and then its converted from analog sound to digital sound by sampling at consistent intervals of time."
           isCorrect: true
-          explanation: "Node.js is a runtime that runs JavaScript applications."
-        - content: "A JavaScript server"
-          isCorrect: false
-          explanation: "Node.js isn't a server but can be used to implement one."
-    - content: "How does Node.js handle concurrent tasks?"
+          explanation: "Correct!"
+    - content: "What is the waveform?"
       choices:
-        - content: "Node.js can't handle concurrent tasks."
+        - content: "Frequency mapped to time."
           isCorrect: false
-          explanation: "Node.js was designed to handle concurrent operations."
-        - content: "Node.js uses multiple threads for concurrent tasks."
-          isCorrect: false
-          explanation: "Node.js doesn't use multiple threads."
-        - content: "Node.js uses a single event loop for concurrent tasks."
+          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+        - content: "Sample rate and frequency visualized."
           isCorrect: true
-          explanation: "Node.js uses a single thread and an event loop to handle concurrent, non-blocking I/O tasks."
-        - content: "Node.js uses multiple event loops for concurrent tasks."
+          explanation: "Correct! We can visualize our data using a waveform to map sample rate and frequency"
+        - content: "The audio channels"
           isCorrect: false
-          explanation: "Node.js uses only a single event loop."
-    - content: "For which of these scenarios would a Node.js app be a good fit?"
+          explanation: "Incorrect."
+    - content: "When you resample the audio you are..."
       choices:
-        - content: "The app requires a non-blocking, event-driven server."
+        - content: "increasing the size."
+          isCorrect: false
+          explanation: "Incorrect."
+        - content: "reducing the size."
           isCorrect: true
-          explanation: "Node.js works well for implementing back-end API services and real-time applications."
-        - content: "The app needs a Java runtime."
+          explanation: "Correct! We can reduce the size of the file by reducing the sample rate for the audio track."
+    - content: "What is a spectrogram?"
+      choices:
+        - content: "Maps the frequency to time of an audio file."
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "The audio channels."
           isCorrect: false
-          explanation: "Node.js apps are written in JavaScript, not Java."
-        - content: "You need to build a mobile app."
+          explanation: "Incorrect."
+        - content: "Sample rate and frequency visualized."
           isCorrect: false
-          explanation: "You can build mobile apps by using many languages, including JavaScript. Node.js is a runtime, not a language."
-        - content: "The app requires CPU-intensive computations."
-          isCorrect: false
-          explanation: "Node.js works well for I/O but isn't well optimized for CPU-intensive computations."
+          explanation: "Incorrect this is a waveform."
+    - content: "Audio classification can only be done with computer vision on spectrograms"
+      choices:
+        - content: "True"
+          isCorrect: False
+          explanation: "Incorrect. There is more than one way to build audio classification models."
+        - content: "False"
+          isCorrect: True
+          explanation: "Correct! There is more than one way to build audio classification models."
+
