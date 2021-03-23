@@ -146,14 +146,14 @@ Once your database is deployed, there are many ways that you can connect and int
 
 1. In the *Connection Details* pane that opens, fill in the following information:  
     *Connection type*: **Microsoft SQL Server**  
-    *Server*: **bus-server<uniqueID>.database.windows.net**  
+    *Server*: **bus-server[uniqueID].database.windows.net**  
     *Authentication type*: **SQL Login**  
     *User name*: **cloudadmin**  
-    *Password*: **<your-password>**  
+    *Password*: **your-password**  
     *Remember password*: **Check box**  
     *Database*: **bus-db**  
-    *Server group*: **<Default>**  
-    *Name (optional)*: **<leave-blank>**  
+    *Server group*: **Default**  
+    *Name (optional)*: **leave-blank**  
 
 1. Once a successful connection is made, you should be able to navigate the database's contents in the Connections pane.
 
