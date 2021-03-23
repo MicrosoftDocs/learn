@@ -2,7 +2,7 @@
 uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.list-performance-tips
 title: List Performance tips
 metadata:
-  unitType: {{patternType}} 
+  unitType: learning-content
   title: List Performance tips # user input: module title for browser tab and search results
   description: Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize # user input: a description for site search and SEO
   ms.date: 3/23/2021 

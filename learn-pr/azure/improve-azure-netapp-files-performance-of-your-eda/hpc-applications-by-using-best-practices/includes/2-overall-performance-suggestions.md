@@ -8,7 +8,10 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+# Goal
+
+We will introduce overall performance suggestions regarding reference architecture, client VMs and network running your EDA applications on Azure NetApp Files.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -18,7 +21,12 @@ TODO: add your topic sentences(s)
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-TODO: add your scenario sub-task
+
+## Reference Architecture
+
+The reference architectures below illustrate how you can use Azure NetApp Files for EDA workloads in both cloud-bursting (hybrid) and fully-on-Azure architectures.
+
+![Reference Architecture](../media/referencearchitecture.png)
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -28,13 +36,21 @@ TODO: add your scenario sub-task
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: write your prose table-of-contents
+
+## Client VMs and NFS utility versions
+
+It's always the best practice to run the latest OS patch version available, as well as updating the NFS utilities to their latest releases to get the newest bug fixes and feature functionality, to optimal performance and system stability.
+
+## Accelerate Networking and VNET
+
+It is always the best practice to enable Accelerated Networking on Azure Virtual Machines, if supported, to provide 30+ Gb/s in networking throughput.
+
+Client VMs and Azure NetApp Files to be in the same VNET when possible, to reduce network latency in between.
 
 <!-- 4. Image (highly recommended) ----------------------------------------------------------------
 
     Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 -->
-TODO: add a visual
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -47,27 +63,6 @@ TODO: add a visual
 
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
-
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
-
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
