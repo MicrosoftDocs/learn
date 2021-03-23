@@ -28,4 +28,4 @@ We've covered a lot of ground in this module to create a baseline security check
 
 To explore the topics presented in this module in more details, refer to the following external links.
 
-- [CIS Microsoft Azure Foundations Security Benchmark](https://www.cisecurity.org/benchmark/azure/)
+- [CIS Microsoft Azure Foundations Security Benchmark](https://docs.microsoft.com/en-us/azure/security/benchmarks/v2-cis-benchmark)
