@@ -19,12 +19,25 @@ SANDBOXES: There's lots to know about sandbox restrictions, limitations and init
 -->
 ## Commit a change
 
-1. Open Program.cs by selecting the file from Solution Explorer. Change the output message to "Hello Everyone!". Save the file.
+1. Open Program.cs by selecting the file from Solution Explorer. 
 
-2. Open Git Changes window to view the pending changes. Select the plus button next to Program.cs to stage the file.
+:::image type="content" source="../media/7-solution-explorer.png" alt-text="Screenshot of Solution Explorer":::
 
-3. Now that the changes are staged, enter a commit message in the text box "Updated output message", and select **Commit staged**
+1. Change the output message to "Hello Everyone!". Save the file.
+
+:::image type="content" source="../media/7-program=cs.png" alt-text="Screenshot of Program.cs file in Editor":::
+
+1. Open Git Changes window to view the pending changes. Select the plus button next to Program.cs to stage the file.
+
+:::image type="content" source="../media/7-stage-changes.png" alt-text="Screenshot of staging changes":::
+
+
+1. Now that the changes are staged, enter a commit message in the text box "Update output message", and select **Commit staged**
+
+:::image type="content" source="../media/7-commit-staged.png" alt-text="Screenshot of committing staged changes":::
 
 ## Verify the commit
 
 You'll see the gold info bar in the Git Changes window telling you the commit was created locally. Select the Commit ID to open the details of the commit. You can also select the **1 outgoing / 0 incoming** link above the text box to open the Git Repository window. View the 1 outgoing commit you created in your current branch's commit graph.
+
+:::image type="content" source="../media/7-verify-commit.png" alt-text="Screenshot of verifying commit in Git Changes window":::

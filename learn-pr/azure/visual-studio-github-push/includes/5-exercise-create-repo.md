@@ -70,10 +70,24 @@ You can validate the successful creation of your repository in two ways, locally
 
 1. Go to **View > Git Repository** to open the Git Repository tool window. Here you can see all the local and remote branches of your repository, and the history of commits for each branch. 
 
-2. Select your default branch 'main' to refresh the history graph for the branch. You'll see the two initial commits that Visual Studio made to create your repository.
+:::image type="content" source="../media/5-view-git-repository.png" alt-text="Screenshot of View menu with Git Repository window":::
 
-3. Now go to **Git > Manage remotes** to open the Settings dialog. Here you'll see that Visual Studio has added one remote to your repository under the name origin. Origin is the default remote that will be used for fetching, pulling, and pushing commits. You can also add multiple remotes here in case you use a repository that is forked from an upstream remote.
+2. Select your default branch to refresh the history graph for the branch. You'll see the two initial commits that Visual Studio made to create your repository.
 
-4. Select **Edit** and copy the url link from the field. 
+:::image type="content" source="../media/5-git-repo-window.png" alt-text="Screenshot of Git Repository window with master branch":::
 
-5. Go to your default web browser and paste the link. You'll see the repository webpage on GitHub.com. 
+3. Now go to **Git > Manage remotes** to open the Settings dialog. 
+
+:::image type="content" source="../media/5-git-manage-remotes.png" alt-text="Screenshot of Git menu with Manage Remotes":::
+
+4. Here you'll see that Visual Studio has added one remote to your repository under the name origin. Origin is the default remote that will be used for fetching, pulling, and pushing commits. You can also add multiple remotes here in case you use a repository that is forked from an upstream remote. Select **Edit**.
+
+:::image type="content" source="../media/5-remotes-settings.png" alt-text="Screenshot of Remotes page in settings":::
+
+5. Copy the url link from the Fetch field. 
+
+:::image type="content" source="../media/5-origin-url-link.png" alt-text="Screenshot of origin remote url":::
+
+6. Go to your default web browser and paste the link. You'll see the repository webpage on GitHub.com. 
+
+:::image type="content" source="../media/5-repo-in-browser.png" alt-text="Screenshot of repository's GitHub webpage":::
