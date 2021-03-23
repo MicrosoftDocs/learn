@@ -1,12 +1,12 @@
-When you load data into your data warehouse, the file types and methods to ingest the data vary by source. For example, loading data from on-premises file systems, relational data stores, or streaming data sources require different approaches from ingestion into the data lake or intermediate data store, to landing refined data into the serving layer. It is important to understand the different file types and which to use for raw storage versus refined versions for analytical queries. Other design considerations include hierarchical structures to optimize queries and data loading activities. This unit describes the file types and their optimal use cases, as well as how best to organize them in your data lake.
+When you load data into your data warehouse, the file types and methods to ingest the data vary by source. For example, loading data from on-premises file systems, relational data stores, or streaming data sources require different approaches from ingestion into the data lake or intermediate data store, to landing refined data into the serving layer. It is important to understand the different file types and which to use for raw storage versus refined versions for analytical queries. Other design considerations include hierarchical structures to optimize queries and data loading activities. This unit describes the file types and their optimal use cases, and how best to organize them in your data lake.
 
 ## Supported file formats for ingesting raw data in batch
 
 In data engineering, we tend to describe data loading velocity as one of three latencies:
 
-1. **Batch**: Queries or programs that take tens of minutes, hours, or days to complete. These could include initial data munging, complete ETL pipeline, or preparation for downstream analytics.
-2. **Interactive query**: Querying batch data at "human" interactive speeds, which with the current generation of technologies means results are ready in time frames measured in seconds to minutes.
-3. **Real-time / near real-time**: Processing of a typically infinite stream of input data (stream), whose time until results ready is short—measured in milliseconds or seconds in the longest of cases.
+- **Batch**: Queries or programs that take tens of minutes, hours, or days to complete. Activities could include initial data wrangling, complete ETL pipeline, or preparation for downstream analytics.
+- **Interactive query**: Querying batch data at "human" interactive speeds, which with the current generation of technologies means results are ready in time frames measured in seconds to minutes.
+- **Real-time / near real-time**: Processing of a typically infinite stream of input data (stream), whose time until results ready is short—measured in milliseconds or seconds in the longest of cases.
 
 When it comes to ingesting raw data in batch from new data sources, these data formats are natively supported by Synapse:
 
@@ -21,7 +21,7 @@ However, if you use Apache Spark with Synapse Notebooks, you can explore and pro
 
 Processing data that arrives at the third latency (real-time / near real-time) is also referred to as streaming data processing. Streaming data sources can include IoT devices and sensors, financial transactions, web clickstream data, factories, and medical devices, to name a few.
 
-Azure offers purpose-built stream ingestion services such as [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/about-iot-hub) and [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-about) (with or without Kafka support) that are robust, proven and performant. In your data pipeline, you need to collect messages from these or similar services, and process them using [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction), Azure Functions, Azure Databricks, or other services that enable you to ingest and process streaming data.
+Azure offers purpose-built stream ingestion services such as [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/about-iot-hub) and [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-about) (with or without Kafka support) that are robust, proven, and performant. In your data pipeline, you need to collect messages from these or similar services, and process them using [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction), Azure Functions, Azure Databricks, or other services that enable you to ingest and process streaming data.
 
 Your goal may be to land this data into your data lake, such as the Azure Data Lake Storage (ADLS) Gen2 account associated with your Synapse Analytics workspace, then use Synapse Spark notebooks or T-SQL queries with a serverless SQL pool to explore and transform the data. In this case, you will most likely save that data in one of the raw formats, such as CSV or JSON. Azure Stream Analytics simplifies this task by connecting to IoT Hub or Event Hubs as an input source, and outputting files to the ADLS Gen2 storage account as an output. You can specify a path pattern that helps you structure your data for optimal analytical workloads through path-based data pruning. For example, you can set the following **path pattern** on the ADLS Gen2 output: `tran/sensor/{datetime:yyyy}/{datetime:MM}/{datetime:dd}`. Further options let you set the serialization, such as JSON, encoding, such as UTF-8, minimum number of rows per file, such as 100, etc.
 
@@ -29,7 +29,8 @@ However, if you want to land the streaming data in a dedicated SQL pool, a coupl
 
 Another option is to use Azure Stream Analytics with an Azure Synapse Analytics (dedicated SQL pool) as an output sink for high throughput data ingestion with Azure Stream Analytics jobs.
 
-![The Azure Synapse Analytics output type is selected.](../media/stream-analytics-synapse-output.png "Azure Synapse Analytics output type for Stream Analytics")
+> [!div class="mx-imgBorder"]
+> ![The Azure Synapse Analytics output type is selected.](../media/stream-analytics-synapse-output.png "Azure Synapse Analytics output type for Stream Analytics")
 
 Once you create the Synapse Analytics output, you can set it as the target in the Stream Analytics query. In the example below, we have an Event Hubs input named `CallStream`, and a Synapse Analytics output named `sqlpool-demo-asaoutput`. The SQL query simply writes all the incoming data directly into the dedicated SQL pool. Alternatively, you could select only specific properties and transform the data types from the incoming stream, and use one of the windowing functions to aggregate data before writing it to the dedicated SQL pool.
 
@@ -49,7 +50,7 @@ For data from web APIs and NoSQL databases, JSON is the recommended format.
 
 When it comes to storing refined versions of the data for possible querying, the recommended data format is **Parquet**.
 
-There is industry alignment around the Parquet format for sharing data at the storage layer (e.g., across Hadoop, Databricks, and SQL engine scenarios). Parquet is a high-performance, column-oriented format optimized for big data scenarios.
+There is industry alignment around the Parquet format for sharing data at the storage layer (for example, across Hadoop, Databricks, and SQL engine scenarios). Parquet is a high-performance, column-oriented format optimized for big data scenarios.
 
 Columnar formats like Parquet have storage and performance benefits. The values are clustered by column so the compression is more efficient (to shrink the storage footprint), and a query engine can push down column projections (to reduce read I/O from network and disk by skipping unwanted columns), otherwise known as column pruning. Similar data types (for a column) are stored together in Parquet files, leading to efficient data compression and encoding schemes.
 
@@ -63,13 +64,13 @@ A key mechanism that ADLS Gen2 to provide file system performance at object stor
 
 In ADLS Gen2, it is a best practice to have a dedicated Storage Account for production, and a separate Storage Account for dev and test workloads. This will ensure that dev or test workloads never interfere with production.
 
-A common method for structuring folders within a data lake is to organize data in separate folders by the degree of refinement. For example, a **bronze** folder might contain raw data, **silver** contains the cleaned, prepared and integrated data, and **gold** contains data ready to support analytics, which might include final refinements such as pre-computed aggregates. If additional levels of refinement are required, this structure can be modified, as needed, to include more folders.
+A common method for structuring folders within a data lake is to organize data in separate folders by the degree of refinement. For example, a **bronze** folder might contain raw data, **silver** contains the cleaned, prepared, and integrated data, and **gold** contains data ready to support analytics, which might include final refinements such as pre-computed aggregates. If more levels of refinement are required, this structure can be modified, as needed, to include more folders.
 
 ![The raw data is stored in the bronze folder, query-ready data is stored in the silver folder, and report-ready data is stored in the gold folder.](../media/folder-structure-with-levels-of-refinement.png "Folder structure with levels of refinement")
 
-**Important to note:**
+When working with Data Lake Storage Gen2, the following should be considered:
 
 - When data is stored in Data Lake Storage Gen2, the file size, number of files, and folder structure have an impact on performance.
-- If you store your data as many small files, this can negatively affect performance. In general, organize your data into larger-sized files for better performance (256MB to 100GB in size).
+- If you store your data as many small files, this can negatively affect performance. In general, organize your data into larger-sized files for better performance (256 MB to 100 GB in size).
 - Some engines and applications might have trouble efficiently processing files that are greater than 100GB in size.
-- Sometimes, data pipelines have limited control over the raw data which has lots of small files. It is recommended to have a "cooking" process that generates larger files to use for downstream applications.
+- Sometimes, data pipelines have limited control over the raw data, which has lots of small files. It is recommended to have a "cooking" process that generates larger files to use for downstream applications.
