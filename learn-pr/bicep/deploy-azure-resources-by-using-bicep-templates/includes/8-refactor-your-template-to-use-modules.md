@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you update the Bicep template that you previously created so that it uses a module for the App Service resources. This helps to keep the intention of the main template clearer. It also means that we can reuse the App Service module in other templates if we want.
+In this exercise, you update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that we can reuse the App Service module in other templates if we want.
 
 During the process, you:
 
@@ -59,9 +59,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Save the changes to the file. Notice there are no warnings about missing variables or parameters, or invalid resource.
 
-### Remove the App Service resources from the parent template
+### Add a reference to the module from the parent template
 
-Now that we have a complete module to deploy our App Service resources, we can delete these from our parent template.
+Now that we have a complete module to deploy our App Service resources, we can refer to the module within our parent template. Since the module now deploys our App Service resources, we can delete the associated resources and variables from our parent template.
 
 1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because we still need them.
 
@@ -90,7 +90,7 @@ Now that we have a complete module to deploy our App Service resources, we can d
    output appServiceAppHostName string = appServiceApp.properties.defaultHostName
    ```
 
-   This is declaring an output for this module, which will be named `appServiceAppHostName`, will be of type `string`, and will take its value from the `defaultHostName` property of our App Service app.
+   This code is declaring an output for this module, which will be named `appServiceAppHostName`, will be of type `string`, and will take its value from the `defaultHostName` property of our App Service app.
 
 1. Save the changes to the file.
 
@@ -149,7 +149,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
-1. Select **addmodule**.
+1. Select **`addmodule`**.
 
     :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 
