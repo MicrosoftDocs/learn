@@ -15,7 +15,7 @@
 
 Azure NetApp Files is widely used as the underlying shared file-storage service in various scenarios, including High Performance Compute (HPC) infrastructure. Azure NetApp Files supports three service levels: Ultra, Premium, and Standard, which is differentiated by allowed maximum throughput.
 
-You will learn how to choose the best Service Level of Azure NetApp Files for your HPC applications.
+You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -39,7 +39,7 @@ Suppose you're a member of a semiconductor company, tasked with designing their 
 
 Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution as it provides an on-premises-like experience and performance.
 
-You'll need to figure out the most optimal and cost-effective way of building and running your HPC applications in Azure.
+You need to learn the best practices to improve Azure NetApp Files Performance of your EDA/HPC Applications.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -54,9 +54,6 @@ You'll need to figure out the most optimal and cost-effective way of building an
 
  -->
 
-## What will we be doing?
-
-In this module, you'll examine the decision criteria that determines Azure NetApp Files performance. Then you'll map your throughput or IOPS requirements to choose the best cost-effectiveness service level.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -70,14 +67,15 @@ In this module, you'll examine the decision criteria that determines Azure NetAp
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+In this module, you will:
 
-- Describe the factors that determine throughput limits of Azure NetApp Files volume.
-- Choose the best Service Level of Azure NetApp Files for HPC applications.
+- List the best practices which would be able to improve Azure Netapp Files performance.
+- Describe the performance impact of the best practices on FIO and EDA Benchmarking suite.
 
 ## Prerequisites
 
-- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool, and Volumes.
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
 - Ability to set up Azure NetApp Files and create a Volume.
+- Ability to mount the Azure NetApp Files Volume from a Virtual Machine.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

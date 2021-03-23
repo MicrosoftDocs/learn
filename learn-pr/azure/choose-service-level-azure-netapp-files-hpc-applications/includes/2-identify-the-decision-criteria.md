@@ -35,9 +35,9 @@ Azure NetApp Files account is primarily an administrative concept and is in regi
 
 ### Capacity Pool
 
-A single Azure NetApp account can have up to 25 Capacity Pools. The provisioned size of each Pool can then be assigned to Volumes within it. 
+A single Azure NetApp account can have up to 25 Capacity Pools. The provisioned size of each Pool can then be assigned to Volumes within it.
 
-In above example, we provisioned 4 TiB to Capacity Pool 1. This Pool is also assigned a "Premium" service level, which we'll discuss in next section. 
+In above example, we provisioned 4 TiB to Capacity Pool 1. This Pool is also assigned a "Premium" service level, which we'll discuss in next section.
 
 Please note that Azure NetApp Files is charged based on the provisioned size of Capacity Pools. Size of Pools can vary from 4 TiB to 500 TiB each.
 

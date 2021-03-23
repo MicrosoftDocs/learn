@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.list-performance-tips
+title: List Performance tips
+metadata:
+  unitType: {{patternType}} 
+  title: List Performance tips # user input: module title for browser tab and search results
+  description: Discuss performance impact of actimeo & nocto, sysctl, nconnect, NFS version, rsize/wsize
+  ms.date: 3/22/2021 
+  author: mengruts 
+  ms.author: mengtsai 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 3 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-list-performance-tips.md)]

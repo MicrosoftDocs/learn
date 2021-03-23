@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices.benchmarking-results
+title: Benchmarking results
+metadata:
+  unitType: {{patternType}} 
+  title: Benchmarking results # user input: module title for browser tab and search results
+  description: Verify performance results using FIO and SPEC EDA Benchmarking suite # user input: a description for site search and SEO
+  ms.date: 3/22/2021 
+  author: mengruts 
+  ms.author: mengtsai 
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 3 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/4-benchmarking-results.md)]
