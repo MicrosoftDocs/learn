@@ -11,9 +11,13 @@ But let's say you're reaching your organization’s storage limit for GitHub art
 
 ### Manually delete artifacts from your repository
 
+To manually delete an artifact using the UI you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see. 
+
 ![run-name](https://user-images.githubusercontent.com/6351798/107467078-73c0b000-6b22-11eb-955e-66a46c1f8deb.png)
 
-To manually delete an artifact using the UI you need to navigate to the **Actions** tab, select the workflow from the left sidebar, select the run you want to see, and then under **Artifacts**, delete the artifact you want to remove.
+Under **Artifacts**, delete the artifact you want to remove.
+
+![actions-delete-artifact-updated](https://user-images.githubusercontent.com/6351798/112084321-35210b00-8b4e-11eb-9e8d-2ca33233927a.png)
 
 You can also use the Artifacts REST API to delete artifacts. This API will also allow you to download and retrieve information about work artifacts. For more information about the Artifacts API, check out [Artifacts REST API](https://docs.github.com/en/rest/reference/actions#artifacts).
 
