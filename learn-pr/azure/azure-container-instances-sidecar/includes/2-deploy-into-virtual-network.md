@@ -12,7 +12,7 @@ The previous diagram shows the topology you will deploy:
 - The same Virtual Network will contain a virtual machine, that you will use to test the API. You need this because the Azure Container Instance deployed in the Virtual Network will not be reachable via the public Internet, as dictated by the requirements.
 - The customer API needs a database to operate. You will create an Azure SQL Database for this purpose. Note that in this unit the Azure SQL Database will be reached over the public Internet.
 
-## Create an Azure Container Instance inside of a Virtual Network
+## Initialize your environment
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription. If you do not have a valid Azure subscription, you can create a free subscription [here](https://azure.microsoft.com/free/).
 
@@ -69,7 +69,9 @@ The previous diagram shows the topology you will deploy:
     sql_server_fqdn=$(az sql server show -n $sql_server_name -g $rg -o tsv --query fullyQualifiedDomainName)
     az sql db create -n $sql_db_name -s $sql_server_name -g $rg -e Basic -c 5 --no-wait
     ```
-    
+
+## Create an Azure Container Instance inside of a Virtual Network
+
 1. Now you have all the required components, and you can deploy the Azure Container Instance. You will use the Azure CLI for this deployment as well, where you specify in environment variables the Fully-Qualified Domain Name and the credentials of the Azure SQL Database, so that the Azure Container Instance can connect to it (retry the command if you get an error on the first attempt):
 
     ```azurecli
