@@ -5,12 +5,12 @@ In this learn module we will be learning how to do audio classification with PyT
 
 What we are focusing on in this is how the actually wave file can be understood. We will be using a very simple model that can understand `yes` and `no`. The dataset we will be using is the open dataset [Speech Commands](https://pytorch.org/audio/stable/datasets.html#speechcommands) which is built into PyTorch [datasets](https://pytorch.org/audio/stable/datasets.html). This dataset has 36 total different words/sounds to be used for classification. Each utterance is stored as a one-second (or less) WAVE format file. We will only be using `yes` and `no` for a binary classification. 
 
-# Learning objectives
+## Learning objectives
 - Understand some key features of audio data.
 - Introduction to how to build audio machine learning models
 - Learn how to build a binary classification model from wave files
 
-# Prerequisites
+## Prerequisites
 
 - Knowledge of Python
 - Basic understand of machine learning
