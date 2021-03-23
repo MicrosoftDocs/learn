@@ -10,8 +10,10 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+
+# Introduction
+
+Azure NetApp Files has been proven to be a great managed storage solution in various scenarios, including High Performance Compute (HPC) infrastructure. The low latency and the high amount of IOPS is a great mixture for enterprises at scale.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -28,9 +30,14 @@ TODO: add a visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+
+## Scenario
+
+Suppose you're a member of a semiconductor company, tasked with designing their IC Chips, which needs numerous EDA (Electronic Design Automation) simulation. You don't have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs.
+
+Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution as it provides an on-premises-like experience and performance.
+
+You'll need to know the performance tips and best practices to improve Azure NetApp Files performance of your EDA Applications.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -44,8 +51,14 @@ TODO: add a visual element
                 * **Route**: branch based on the sentiment score"
 
  -->
+
 ## What will we be doing?
-TODO: add your activities
+
+In this module, we will introduce overall performance suggestions regarding reference architecture, client VMs and network.
+
+We will then list and discuss several performance tips including mounting options and client VM configurations.
+
+And we will then examine the benchmarking results to verify the performance tips we discussed.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -56,7 +69,18 @@ TODO: add your activities
     Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
 
  -->
-## What is the main goal?
-TODO: add your terminal learning objective
+
+## Learning objectives
+
+By the end of this module, you'll be able to:
+
+- List the best practices which would be able to improve Azure NetApp Files performance.
+- Describe the performance impact of the best practices on FIO and EDA Benchmarking suite.
+
+## Prerequisites
+
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
+- Ability to set up Azure NetApp Files and create a Volume.
+- Ability to mount the Azure NetApp Files Volume from a Virtual Machine.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
