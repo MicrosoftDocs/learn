@@ -104,6 +104,8 @@ The purpose of "nconnect" is to provide multiple transport connections per TCP c
 
 Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you are using nconnect=8 or 16.
 
+However, please note that "nconnect" is only available for Linux kernel 5.3+ VMs, and you might need to reboot the VM when upgrading the kernel. Which means it might not be applicable for some cases.
+
 ## NFS version
 
 NFSv3 and NFSv4.1 are both supported by Azure NetApp Files. You should validate what version your application requires and create your volume using the appropriate version.

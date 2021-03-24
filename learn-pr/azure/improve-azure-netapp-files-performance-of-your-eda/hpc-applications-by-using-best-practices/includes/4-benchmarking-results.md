@@ -59,9 +59,33 @@ The graph below demonstrates that NFS3 performs much better than NFS 4.1
 
 ![SPEC EDA NFS3 versus NFS4.1](../media/specedanfs.png)
 
+The graph below demonstrates that rsize=wsize=262144(256K) performs better than other settings.
+
 ![SPEC EDA rsize/wsize](../media/specedarsizewsize.png)
 
+## FIO benchmark
 
+Below are the FIO commands to benchmark IOPS and throughput, respectively.
+
+```bash
+// FIO commands to benchmark IOPS:
+// 8K Random Reads
+fio --name=8krandomreads --rw=randread --direct=1 --ioengine=libaio --bs=8k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
+// 8K Random Writes
+fio --name=8krandomwrites --rw=randwrite --direct=1 --ioengine=libaio --bs=8k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
+
+// FIO commands to benchmark throughput:
+// 64K Sequential Reads
+fio --name=64kseqreads --rw=read --direct=1 --ioengine=libaio --bs=64k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
+// 64K Sequential Writes
+fio --name=64kseqwrites --rw=write --direct=1 --ioengine=libaio --bs=64k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
+```
+
+The two graphs below demonstrate that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS and throughput. 
+
+![FIO IOPS](../media/fioiops.png)
+
+![FIO throughput](../media/fiothroughput.png)
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -84,24 +108,6 @@ The graph below demonstrates that NFS3 performs much better than NFS 4.1
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
@@ -123,13 +129,6 @@ The graph below demonstrates that NFS3 performs much better than NFS 4.1
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
