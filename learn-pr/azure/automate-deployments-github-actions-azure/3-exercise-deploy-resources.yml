@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-deployments-github-actions-azure.exercise-deploy-resources
+title: Exercise - Deploy and configure resources
+metadata:
+  unitType: exercise  
+  title: Exercise - Deploy and configure resources
+  description: In this exercise, you will deploy all of the necessary resources with scripts and configure the Logic Apps connection to Outlook.
+  ms.date: 3/24/2021  
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-deploy-resources.md)]

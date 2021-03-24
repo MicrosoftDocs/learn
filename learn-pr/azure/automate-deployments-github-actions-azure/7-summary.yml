@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-deployments-github-actions-azure.summary  
+title: Summary  
+metadata:
+  unitType: summary  
+  title: Summary
+  description: In this unit we review the solution for our scenario.
+  ms.date: 3/24/2021  
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 05
+content: |
+  [!include[](includes/7-summary.md)]
