@@ -196,7 +196,7 @@ Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to t
 func Copy(dst Writer, src Reader) (written int64, err error)
 ```
 
-If you go deeper into the details of the first parameter, `dst Writer`, you'll notice that `Writer` is an [interface](https://golang.org/pkg/io/#Writer):
+If you go deeper into the details of the first parameter, `dst Writer`, you'll notice that `Writer` is an [interface](https://golang.org/pkg/io/#Writer?azure-portal=true):
 
 ```go
 type Writer interface {
@@ -204,7 +204,7 @@ type Writer interface {
 }
 ```
 
-You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411). We'll leave this alone for now.
+You can continue exploring the `io` package's source code until you find where [`Copy` calls the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411?azure-portal=true). We'll leave this alone for now.
 
 Because `Writer` is an interface and it's an object that the `Copy` function is expecting, you could write your custom implementation of the `Write` method. Therefore, you can customize the content that you print to the terminal. 
 
