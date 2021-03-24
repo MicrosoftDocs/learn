@@ -6,7 +6,7 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will we be doing?
 
-Here, you'll create a template using Bicep to deploy a set of Azure resources for your product launches, and use many elements of the Bicep language in the process:
+In this module, you'll create a template using Bicep to deploy a set of Azure resources for this and future product launches, and use many elements of the Bicep language in the process:
 
 - Resource definitions, to deploy your Azure resources from your Bicep code.
 - Parameters, variables, and expressions, to make your template reusable.
@@ -16,3 +16,16 @@ Here, you'll create a template using Bicep to deploy a set of Azure resources fo
 ## What is the main goal?
 
 By the end of this session, you'll be able to create Bicep templates that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your templates reusable. You'll also be able to use modules and outputs to organize your templates into separate files.
+
+## Prerequisites
+
+- You should have an understanding of what Infrastructure is Code (IaC) is, and its benefits.
+- You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+To follow along with the exercises in the module, you'll need:
+
+- An Azure account. You can get a free account [here](https://azure.microsoft.com/free).
+- [Visual Studio Code](https://code.visualstudio.com) installed locally.
+- Either:
+  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed locally.
+  - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps) installed locally.

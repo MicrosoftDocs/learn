@@ -1,4 +1,4 @@
-You are preparing to launch a new product, and you need to create a template that will deploy a website and storage resources. This template must be reusable for future product launches.
+Our toy company needs to launch new products regularly to stay competitive. The shorter the time to market, the better. You've been able to create a template that will deploy a website and storage resources. This template is reusable for future product launches.
 
 You created a Bicep template to deploy a basic storage account, an App Service plan, and an application. You parameterized the template to make it generalizable for future products. You then refactored it into modules to make the template more reusable, as well as easier to understand and work with. Finally, you added an output, to send information from our template deployment back to the person or tool that is executing the deployment.
 

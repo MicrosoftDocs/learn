@@ -1,6 +1,6 @@
 Templates are powerful because of their reusability. We need to write templates that can be used to deploy multiple separate environments or copies of our resources.
 
-Our toy company will be launching new products regularly, and we need to use the Bicep templates to create the Azure resources required for each product launch. We want to avoid using fixed resource names, since resources often need unique names. We also have to deploy our resources in different locations depending on where our toys will be launched.
+Our toy company will be launching new products regularly, and we need to use the Bicep templates to create the Azure resources required for each product launch. We want to avoid using fixed resource names, since resources often need unique names and so embedding names in our templates mean we can't use it for multiple different product launches. We also have to deploy our resources in different locations depending on where our toys will be launched.
 
 Here, you'll learn about parameters and variables, which are two Bicep features you can use to make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
