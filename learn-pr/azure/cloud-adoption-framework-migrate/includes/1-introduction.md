@@ -1,6 +1,6 @@
 Cloud Adoption Framework's Migrate methodology guides your through migration to Azure using repeatable processes and common tools.
 
-Migration of any datacenter can involve migration of various technology platforms and workloads. Recreating the architecture and configuration of workloads in the cloud is time consuming and produces diminishing returns. The Migrate methodology in the Cloud Adoption Framework, the Azure migration center, and Azure Migrate tooling reduces that effort through repeatable processes and tools that facilitate a successful migration with a fraction of the time and effort across all of your technology and workload needs.
+Migration of any datacenter can involve migration of various technology platforms and workloads. Re-creating the architecture and configuration of workloads in the cloud is time consuming and produces diminishing returns. The Migrate methodology in the Cloud Adoption Framework, the Azure migration center, and Azure Migrate tooling reduces that effort through repeatable processes and tools that facilitate a successful migration with a fraction of the time and effort across all of your technology and workload needs.
 
 In this module, you learn the tools, the processes, and the options. From there, you could apply each to the migration of all workloads and platforms in your current environment.
 
@@ -17,4 +17,4 @@ In this module, you will:
 ## Prerequisites
 
 - Foundational understanding of cloud migration
-- Understanding of your organization’s migration plan and the types of workloads you’ll need to migrate
+- Understanding of your organization's migration plan and the types of workloads you'll need to migrate

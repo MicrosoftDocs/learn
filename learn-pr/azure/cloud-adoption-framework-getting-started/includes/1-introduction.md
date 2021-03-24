@@ -1,6 +1,6 @@
-The Microsoft Cloud Adoption Framework (CAF) for the Azure Learn modules will teach you how to apply the various guidance, tools, best practices, and reference architectures found within each CAF methodology. This module serves as an accelerator, helping you accelerate and unblock adoption in parallel to your learning paths.
+The Learn modules for the Microsoft Cloud Adoption Framework for Azure will teach you how to apply the various guidance, tools, best practices, and reference architectures found within each methodology of the framework. This module serves as an accelerator, helping you accelerate and unblock adoption in parallel to your learning paths.
 
-In this module, you will review the narrative that spans the majority of the Learn modules in this learning path. You will also see how a range of CAF getting started resources can accelerate results across your cloud adoption efforts.
+In this module, you will review the narrative that spans the majority of the Learn modules in this learning path. You will also see how a range of getting started resources in the Cloud Adoption Framework can accelerate results across your cloud adoption efforts.
 
 ## Learning objectives
 
@@ -12,6 +12,6 @@ In this module, you will:
 
 ## Prerequisites
 
-Before applying the CAF Learn modules, you should have a general understanding of your current cloud adoption plan and understand the roadblocks that might be preventing your organization from being successful.
+Before applying the Learn modules for the Cloud Adoption Framework, you should have a general understanding of your current cloud adoption plan and understand the roadblocks that might be preventing your organization from being successful.
 
 As an alternative, a narrative and cloud adoption plan will be provided for a reference customer named Tailwind Traders.

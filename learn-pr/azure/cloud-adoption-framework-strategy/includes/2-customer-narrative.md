@@ -1,4 +1,4 @@
-We shared the narrative for Tailwind Traders in the Getting Started module and other Cloud Adoption Framework (CAF) Learn modules. This module is the first step towards Tailwind's cloud adoption journey. The team is evaluating their strategic direction and ensuring stakeholder buy-in before committing to the cloud effort.
+We shared the narrative for Tailwind Traders in the Getting Started module and other Learn modules for the Cloud Adoption Framework. This module is the first step toward Tailwind's cloud adoption journey. The team is evaluating their strategic direction and ensuring stakeholder buy-in before committing to the cloud effort.
 
 The following excerpts from the customer narrative, outline strategic objectives for Tailwind.
 
@@ -16,7 +16,7 @@ The Tailwind Traders retail innovation team uses technology to continually redef
 Beyond new innovations, Tailwind Traders' central IT teams support the back office and store technologies. The company's central IT team supports 3,500 employees, and less than 100 are dedicated to IT. The IT team represents the majority of the technical staff, with roughly 80 employees focused on supporting the following types of technologies:
 
 - **Smart storefronts:** Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and over 500 point of sales systems.
-- **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, etc.
+- **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, and so on.
 - **End-user workstations:** Mostly desktop-based with a growing percentage of employees opting for mobile, BYOD (bring you own device), in-store kiosks, and virtual desktop solutions.
 - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovations assets.
 
