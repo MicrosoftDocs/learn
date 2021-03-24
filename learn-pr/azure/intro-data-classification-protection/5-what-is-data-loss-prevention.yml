@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.classification-and-protection.6-what-is-data-loss-prevention
+uid: learn.azure.classification-and-protection.5-what-is-data-loss-prevention
 title: What is data loss prevention?
 metadata:
   title: What is data loss prevention?
@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
-  [!include[](includes/6-what-is-data-loss-prevention.md)]
+  [!include[](includes/5-what-is-data-loss-prevention.md)]
