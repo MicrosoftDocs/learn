@@ -60,7 +60,7 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
           protocol: TCP
         type: Private
       networkProfile:
-        id: /subscriptions/e7da9914-9b05-4891-893c-546cb7b0422e/resourceGroups/acilab/providers/Microsoft.Network/networkProfiles/aci-network-profile-acivnet-aci
+        id: /subscriptions/<<subscriptionid>>/resourceGroups/acilab/providers/Microsoft.Network/networkProfiles/aci-network-profile-acivnet-aci
       osType: Linux
       restartPolicy: Always
     tags: {}

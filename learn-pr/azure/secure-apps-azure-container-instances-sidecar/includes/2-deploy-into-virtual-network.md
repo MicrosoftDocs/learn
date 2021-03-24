@@ -1,5 +1,7 @@
 You will start the exercises in this module by creating an Azure Container Instance inside of a Virtual Network, so that the API is only accessible by the customer with access to that Virtual Network. Since the application running inside of the Azure Container Instance will only be reachable from inside the Virtual Network, you will create a test virtual machine to verify that the application is working to simulate customer access. The application will consist of the API that will access an external database, that you will deploy as an Azure SQL Database.
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Topology overview
 
 Virtual Networks are isolated networking segments where workloads can be deployed so that they are only accessible privately, and optionally over the public Internet. Virtual Networks typically host virtual machines, but other Azure resources such as Azure Container Instances can be deployed to Virtual Networks as well. An Azure Container Instance deployed inside of a Virtual Network will receive a private IP address) from the Virtual Network range, and as a consequence it will only be reachable from inside the Virtual Network, from peered Virtual Networks or from on-premises networks connected via Site-to-Site VPN or ExpressRoute.
@@ -21,7 +23,7 @@ The previous diagram shows the topology you will deploy:
     :::image type="content" source="../media/2-portal-cloudshell-access.png" alt-text="Screenshot of the Azure portal header with the Cloud Shell icon highlighted.":::
 
 
-1. Define some variables that will help you in this unit:
+1. Run the following command to define variables for this unit. Replace the location value with an Azure region near you.
 
     ```azurecli
     # Variables
