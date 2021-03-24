@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.implement-group-policy-objects
+metadata:
+  title: Implement Group Policy Objects
+  description: "Implement Group Policy Objects"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Group Policy Objects
+summary: Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS) in Windows Server 2019.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe GPOs.
+  - Describe GPO scope and inheritance.
+  - Describe domain-based GPOs.
+  - Create and configure GPOs.
+  - Explain GPO storage.
+  - Describe administrative templates and the Central Store.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - AD DS concepts and technologies.
+  - Core networking technologies.
+  - Windows client operating systems such as Windows 10.
+  - Windows PowerShell basics.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.implement-group-policy-objects.introduction
+- learn.wwl.implement-group-policy-objects.define-gpos
+- learn.wwl.implement-group-policy-objects.implement-gpo-scope-inheritance
+- learn.wwl.implement-group-policy-objects.define-domain-based-gpos
+- learn.wwl.implement-group-policy-objects.create-configure-domain-based-gpo
+- learn.wwl.implement-group-policy-objects.define-gpo-storage
+- learn.wwl.implement-group-policy-objects.define-administrative-templates
+- learn.wwl.implement-group-policy-objects.knowledge-check
+- learn.wwl.implement-group-policy-objects.summary
+badge:
+  uid: learn.wwl.implement-group-policy-objects.badge

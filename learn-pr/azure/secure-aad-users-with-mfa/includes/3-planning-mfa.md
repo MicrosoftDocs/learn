@@ -1,12 +1,12 @@
-Before starting a deployment of Azure Multi-Factor Authentication, there are several things you should decide.
+Before starting a deployment of Azure AD Multi-Factor Authentication, there are several things you should decide.
 
 First, consider rolling out MFA in waves. Start with a small group of pilot users to evaluate the complexity of your environment and identify any setup issues or unsupported apps or devices. Then broaden that group over time and evaluating the results with each pass until your entire company is enrolled.
 
-Next, make sure to create a full communication plan. Azure MFA has several user interaction requirements including a registration process. Keep users informed every step of the way and let them know what they are required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all) including posters, and email templates to help draft your communications.
+Next, make sure to create a full communication plan. Azure AD MFA has several user interaction requirements including a registration process. Keep users informed every step of the way and let them know what they are required to do, important dates, and how to get answers to questions if they have trouble. Microsoft provides [communication templates](https://www.microsoft.com/download/details.aspx?id=57600&WT.mc_id=rss_alldownloads_all) including posters, and email templates to help draft your communications.
 
-## Azure MF policies
+## Azure AD MFA policies
 
-Azure Multi-factor Authentication is enforced with **Conditional Access** policies. Conditional Access policies are `IF-THEN` statements. **IF** a user wants to access a resource, **THEN** they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multi-factor authentication to access it. Other common access requests that might require MFA include:
+Azure AD Multi-factor Authentication is enforced with **Conditional Access** policies. Conditional Access policies are `IF-THEN` statements. **IF** a user wants to access a resource, **THEN** they must complete an action. For example, a payroll manager wants to access the payroll application and is required to perform multi-factor authentication to access it. Other common access requests that might require MFA include:
 
 - IF a specific cloud application is accessed
 - IF a user is accessing a specific network
@@ -15,7 +15,7 @@ Azure Multi-factor Authentication is enforced with **Conditional Access** polici
 
 ## Deciding supported authentication methods
 
-When you turn on Azure MFA, you can choose the authentication methods you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
+When you turn on Azure AD MFA, you can choose the authentication methods you want to make available. You should always support more than one method so users have a backup option in case their primary method is unavailable. You can choose from the following methods:
 
 | Method | Description |
 |--------|-------------|

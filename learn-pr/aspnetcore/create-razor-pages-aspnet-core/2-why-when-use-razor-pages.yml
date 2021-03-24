@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages
 metadata:
-  title: When and why to use Razor Pages
-  description: Learn when and why to use Razor Pages for your ASP.NET Core application.
-  ms.date: 07/31/2019
+  title: Understand when and why to use Razor Pages
+  description: Learn when and why to use Razor Pages for your ASP.NET Core app.
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
-title: When and why to use Razor Pages
+title: Understand when and why to use Razor Pages
 durationInMinutes: 8
 content: |
   [!include[](includes/2-why-when-use-razor-pages.md)]

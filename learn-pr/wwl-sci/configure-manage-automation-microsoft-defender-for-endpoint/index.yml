@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint
+metadata:
+  title: Configure and manage automation using Microsoft Defender for Endpoint
+  description: "Configure and manage automation using Microsoft Defender for Endpoint"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Configure and manage automation using Microsoft Defender for Endpoint
+summary: Learn how to configure automation in Microsoft Defender for Endpoint by managing environmental settings.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Configure advanced features of Microsoft Defender for Endpoint
+  - Manage automation settings in Microsoft Defender for Endpoint
+prerequisites: |
+  Intermediate understanding of Windows 10.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- m365
+- m365-threat-protection
+units:
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.introduction
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.configure-advanced-features
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.upload-folder-settings
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.configure-automated-investigation-remediation-capabilities
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.block-at-risk-devices
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.knowledge-check
+- learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.summary-resources
+badge:
+  uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.badge

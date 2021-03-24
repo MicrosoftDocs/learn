@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
-  title: Explore non-relational data stores in Azure
-  description: "Explore non-relational data stores in Azure"
-  ms.date: 10/25/2020
+  title: Manage non-relational data stores in Azure
+  description: "Manage non-relational data stores in Azure"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

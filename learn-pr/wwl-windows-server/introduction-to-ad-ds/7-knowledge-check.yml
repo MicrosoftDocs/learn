@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-ad-ds.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What scope of group can be assigned permissions anywhere in an AD DS forest and can have members from anywhere in the forest?"
+    choices:
+    - content: "Global"
+      isCorrect: false
+      explanation: "That's incorrect. Global groups can only contain members from the local domain."
+    - content: "Universal"
+      isCorrect: true
+      explanation: "That's correct. Universal groups can be granted permissions anywhere in the forest, and can contain members from anywhere in the forest."
+    - content: "Domain local"
+      isCorrect: false
+      explanation: "That's incorrect. Domain local groups only have permissions on the local domain."
+  - content: "What type of trust relationship is automatically created between the domains `Contoso.com` and `Seattle.Contoso.com`?"
+    choices:
+    - content: "A parent and child two-way transitive trust"
+      isCorrect: true
+      explanation: "That's correct. When you create a child domain in a forest, a two-way transitive trust is established between the parent and child domain automatically."
+    - content: "A tree-root trust"
+      isCorrect: false
+      explanation: "That's incorrect. When you create a new AD DS tree in an existing AD DS forest, you automatically create a new tree-root trust."
+    - content: "A Shortcut trust"
+      isCorrect: false
+      explanation: "That's incorrect. You configure shortcut trusts to reduce the time taken to authenticate between AD DS domains that are in different parts of an AD DS forest."
+  - content: "Which of the following is a built-in container in an AD DS domain that can home computer accounts?"
+    choices:
+    - content: "The Domain Controllers OU"
+      isCorrect: true
+      explanation: "That's correct. Although the Domain Controllers OU is an OU, it is created by default and is therefore built in."
+    - content: "The IT OU"
+      isCorrect: false
+      explanation: "That's incorrect. OUs are not built-in objects but are manually created (with one exception)."
+    - content: "System"
+      isCorrect: false
+      explanation: "That's incorrect. Although this is a built-in container, it does not contain computer objects."

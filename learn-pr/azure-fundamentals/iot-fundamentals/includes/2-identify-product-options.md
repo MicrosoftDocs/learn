@@ -40,7 +40,7 @@ IoT Hub monitoring helps you maintain the health of your solution by tracking ev
 
 ## Azure IoT Central
 
-[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?azure-portal=true) builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and you can set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
+[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?azure-portal=true) builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and you can set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push firmware updates to the device.
 
 To help you get up and running quickly, IoT Central provides starter templates for common scenarios across various industries, such as retail, energy, healthcare, and government. You then customize the design starter templates directly in the UI by choosing from existing themes or creating your own custom theme, setting the logo, and so on. With IoT Central, you can tailor the starter templates for the specific data that's sent from your devices, the reports you want to see, and the alerts you want to send.
 
@@ -56,7 +56,7 @@ A key part of IoT Central is the use of device templates.  By using  a device te
 
 Azure Sphere comes in three parts:
 
-- The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
+- The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.
 
   ![Screenshot of an Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-02.png)
 

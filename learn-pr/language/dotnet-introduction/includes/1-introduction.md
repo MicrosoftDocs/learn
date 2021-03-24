@@ -25,4 +25,4 @@ By the end of this module, you'll be able to:
 - You should be able to recognize how to use `Console.WriteLine()` to send text to an output window.
 - You should be able to recognize minor issues in your code and fix them.
 
-If you haven't already written a simple "Hello World" application in C#, review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/en-us/learn/modules/csharp-write-first/?azure-portal=true).
+If you haven't already written a simple "Hello World" application in C#, review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/learn/modules/csharp-write-first/?azure-portal=true).

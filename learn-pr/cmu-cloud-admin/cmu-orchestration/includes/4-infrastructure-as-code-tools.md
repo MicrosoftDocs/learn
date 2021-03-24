@@ -135,6 +135,6 @@ In this lesson, we examined prominent configuration-management platforms and pro
 
 ### References
 
-1. _GitHub *Ansible lamp stack playbook*. <http://markburgess.org/bio.html>._
+1. _GitHub *Ansible lamp stack playbook*. <https://github.com/jasodeep/ansible-lamp-stack-playbook>._
 
 [^1]: https://github.com/jasodeep/ansible-lamp-stack-playbook/blob/master/roles/mysql/tasks/main.yml

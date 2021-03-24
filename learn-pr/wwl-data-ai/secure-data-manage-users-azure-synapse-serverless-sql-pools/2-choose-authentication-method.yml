@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools.choose-authentication-method
+title: Choose an authentication method in Azure Synapse serverless SQL pools
+metadata:
+  title: Choose an authentication method in Azure Synapse serverless SQL pools
+  description: "Choose an authentication method in Azure Synapse serverless SQL pools"
+  ms.date: 11/20/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-choose-authentication-method.md)]

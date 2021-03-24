@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-spaces-storage-spaces-direct.list-functionalities-benefits-use-cases-of
+title: List the functionalities, benefits, and use cases of Storage Spaces
+metadata:
+  title: List the functionalities, benefits, and use cases of Storage Spaces
+  description: "List the functionalities, benefits, and use cases of Storage Spaces"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-list-functionality-benefits-use-cases-storage-spaces.md)]

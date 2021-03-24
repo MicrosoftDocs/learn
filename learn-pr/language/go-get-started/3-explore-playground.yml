@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-get-started.3-explore-playground
+metadata:
+  title: Exercise - Explore the Go Playground
+  description: Learn how to use the Go Playground by running your first program.
+  ms.date: 12/01/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Explore the Go Playground
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-playground.md)]

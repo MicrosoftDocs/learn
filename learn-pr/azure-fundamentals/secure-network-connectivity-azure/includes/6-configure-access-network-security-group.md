@@ -110,7 +110,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     ```azurecli
     az network nsg list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query [].name \
+      --query '[].name' \
       --output tsv
     ```
 

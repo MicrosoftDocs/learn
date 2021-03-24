@@ -92,7 +92,7 @@ Management groups reflect your highest priority organization structure. Tagging 
 
 - Workload (and/or application)
 - Data sensitivity; see [data classification](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/data-classification?azure-portal=true) for examples
-- Mission criticality; see [workload criticality](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/considerations/criticalit?azure-portal=true)for examples
+- Mission criticality; see [workload criticality](https://docs.microsoft.com/azure/cloud-adoption-framework/manage/considerations/criticality?azure-portal=true)for examples
 - Owner
 - Department (cost center)
 - Environment

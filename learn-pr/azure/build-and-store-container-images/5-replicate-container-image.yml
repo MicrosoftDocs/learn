@@ -8,7 +8,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Replicate a container image to different Azure regions
 durationInMinutes: 5
 content: |

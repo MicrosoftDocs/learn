@@ -12,6 +12,8 @@ PostgreSQL is a hybrid relational-object database. You can store data in relatio
 
 PostgreSQL has its own query language called *pgsql*. This language is a variant of the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database.
 
+:::image type="content" source="../media/6-mysql-mariadb-postgresql.png" alt-text="Advantages of MySQL, MariaDB, and PostgreSQL":::
+
 ## What is Azure Database for MySQL?
 
 Azure Database for MySQL is a PaaS implementation of MySQL in the Azure cloud, based on the MySQL Community Edition.

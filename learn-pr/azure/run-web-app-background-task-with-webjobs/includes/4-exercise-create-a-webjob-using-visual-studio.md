@@ -10,7 +10,7 @@ Here, you will create a web app from a template and then add a WebJob project to
 
 The WebJob that you will create in this unit will write messages to a queue in an Azure Storage account. We'll start by creating that account, as well as a resource group to put it in.
 
-Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) and use the Cloud Shell to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choosing. You can list all available regions with `az account list-locations --query [].name`.
+Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true). Use the Cloud Shell (top-right **>_** inside a box) to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choosing. You can list all available regions with `az account list-locations --query [].name`.
 
 When the last command completes, make a note of the storage account name it created. This will also store the connection string for the storage account in a shell variable, which we'll use shortly.
 
@@ -48,8 +48,8 @@ You've now created a web application from the sample template and it is running 
 1. Ensure that your copy of Visual Studio is logged into the account you have used to log in to Microsoft Learn. This will ensure that the sandbox subscription is available for publishing.
 1. Right-click the **WatchesWebApp** project in Solution Explorer and select **Publish**.
 1. Select **App Service** as the publish target, select **Create New**, and then click **Publish**.
-1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you created the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
-1. When deployment is complete, Visual Studio will open a new browser tab. After a short wait, the new web app will be displayed.
+1. In the **Create App Service** dialog, enter a name for your web application, and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you created the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
+1. When the deployment is complete, Visual Studio will open a new browser tab. After a short wait, the new web app will be displayed.
 
 ## Configure the web app
 
@@ -72,9 +72,9 @@ az webapp config connection-string set --id $WEB_APP_ID --connection-string-type
 Now, we'll add a WebJob to the web app solution in Visual Studio:
 
 1. In Visual Studio, right-click the  **WatchesWebApp** project, click **Add**, and then select **New Azure WebJob Project**.
-1. Change the project name to **StockCheckWebJob** and then click **OK**. The new project that has been created is a C# console application. Configuration has been added to the web application to automatically publish it as a WebJob whenever the application is published to Azure.
+1. Change the project name to **StockCheckWebJob** and then click **OK**. The new project that has been created is a C# console application. The configuration has been added to the web application to automatically publish it as a WebJob whenever the application is published to Azure.
 1. In the **Solution Explorer**, in the **StockCheckWebJob** project, double-click **Program.cs**.
-1. Comment out all the code inside the `Main()` method. This code, created by the Visual Studio WebJobs template, uses the WebJobs SDK, which you will use later on in this module. The first version of the WebJob you will create here will have no dependencies on the WebJobs SDK, and is intended to show that there are no special requirements or dependencies needed for programs to be published as WebJobs.
+1. Comment out all the code inside the `Main()` method. This code, created by the Visual Studio WebJobs template, uses the WebJobs SDK which you will use later on in this module. The first version of the WebJob you will create here will have no dependencies on the WebJobs SDK and is intended to show that there are no special requirements or dependencies needed for programs to be published as WebJobs.
 1. Right-click the StockCheckWebJob project in Solution Explorer, select **Add** > **Reference**, and add a reference to **System.Configuration**.
 1. At the top of the **Program.cs** code file, add these `using` statements:
 

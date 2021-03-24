@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.3-add-data-store
+metadata:
+  title: Exercise - Add a data store
+  description: Learn how to add a model and an in-memory database to the web API.
+  ms.date: 02/11/2021
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Exercise - Add a data store
+azureSandbox: true
+interactive: bash
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-add-data-store.md)]

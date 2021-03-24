@@ -3,8 +3,8 @@ uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.
 title: Create and run a training pipeline
 metadata:
   title: Create and run a training pipeline
-  description: "Let's use Azure machine Learning designer to train and publish a classification model."
-  ms.date: 11/05/2020
+  description: "Create and run a training pipeline"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -173,7 +173,7 @@ The `if-elseif-else` statement allows you to create multiple exclusive condition
 
 ## Recap
 
-- The `if-else` allows you to test for a condition and perform code when a Boolean expression is true, and different code with the boolean expression is false.
+- The `if-else` allows you to test for a condition and perform code when a Boolean expression is true, and different code when the boolean expression is false.
 - You can nest if statements to narrow down a possible condition.  However, you should consider using the `if-elseif-else` statement instead.
 - Use `elseif` to create multiple exclusive conditions.
 - An `else` is optional, but it must always come last.

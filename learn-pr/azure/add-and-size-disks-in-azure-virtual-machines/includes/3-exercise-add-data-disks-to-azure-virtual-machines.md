@@ -38,7 +38,7 @@ Here you create a Linux VM to host your web server.
     ```azurecli
     az vm create \
       --name support-web-vm01 \
-      --image UbuntuLTS \
+      --image Canonical:UbuntuServer:16.04-LTS:latest \
       --size Standard_DS1_v2 \
       --admin-username azureuser \
       --generate-ssh-keys

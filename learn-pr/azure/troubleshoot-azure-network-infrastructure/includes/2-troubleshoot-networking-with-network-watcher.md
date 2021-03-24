@@ -2,7 +2,7 @@ Azure Network Watcher includes several tools that you can use to monitor your vi
 
 In your engineering company, you want to enable your staff to choose the right Network Watcher tool for each troubleshooting task. They need to understand all the options available and the kinds of problems that each tool can solve.
 
-Here, we'll look at the Network Watcher tool categories, the tools in each category, and how each tool is applied in example use cases.
+Here, you'll look at the Network Watcher tool categories, the tools in each category, and how each tool is applied in example use cases.
 
 ## What is Network Watcher?
 
@@ -31,7 +31,7 @@ Suppose you have to troubleshoot a virtual network created by your colleagues. U
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and select **All services**. Then, search for **Network Watcher**.
 
 1. Select **Topology**.
 
@@ -40,13 +40,13 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
     > [!NOTE]
     > To generate the topology, you need a Network Watcher instance in the same region as the virtual network.
 
-    Here's an example of a topology generated for a virtual network named MyVNet:
+    Here's an example of a topology generated for a virtual network named MyVNet.
 
     :::image type="content" source="../media/2-network-watcher-topology.png" alt-text="A diagram that shows a virtual network topology as shown in Network Watcher." loc-scope="azure-network-watcher":::
 
 ### What is the Connection Monitor tool?
 
-The Connection Monitor tool provides a way to check that connections work between Azure resources. Use this tool to check that two VMs can communicate if you want them to. 
+The Connection Monitor tool provides a way to check that connections work between Azure resources. To check that two VMs can communicate if you want them to, use this tool.
 
 This tool also measures the latency between resources. It can catch changes that will affect connectivity, such as changes to the network configuration or changes to network security group (NSG) rules. It can probe VMs at regular intervals to look for failures or changes.
 
@@ -56,7 +56,7 @@ If there's an issue, Connection Monitor tells you why it occurred and how to fix
 
 The Network Performance Monitor tool enables you to track and alert on latency and packet drops over time. It gives you a centralized view of your network.
 
-When you decide to monitor your hybrid connections by using Network Performance Monitor, check that the associated workspace is in a supported region. 
+When you decide to monitor your hybrid connections by using Network Performance Monitor, check that the associated workspace is in a supported region.
 
 You can use Network Performance Monitor to monitor endpoint-to-endpoint connectivity:
 
@@ -94,7 +94,7 @@ With the next hop tool, you can determine how a packet gets from a VM to any des
 
 The effective security rules tool in Network Watcher displays all the effective NSG rules applied to a network interface.
 
-Network security groups are used in Azure networks to filter packets based on their source and destination IP address and port numbers. NSGs are vital to security because they help you carefully control the surface area of the VMs that users can access. Keep in mind, though, that a mistakenly configured NSG rule might prevent legitimate communication. As a result, NSGs are a frequent source of network problems.
+Network security groups (NSGs) are used in Azure networks to filter packets based on their source and destination IP address and port numbers. NSGs are vital to security because they help you carefully control the surface area of the VMs that users can access. Keep in mind, though, that a mistakenly configured NSG rule might prevent legitimate communication. As a result, NSGs are a frequent source of network problems.
 
 For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You'll use the effective security rules tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
 
@@ -104,19 +104,19 @@ You can also use the tool to spot vulnerabilities for your VM caused by unnecess
 
 ### What is the packet capture tool?
 
-You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the captured to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
+You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the capture to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
 
 The packet capture tool is a virtual machine extension that is remotely started through Network Watcher and happens automatically when you start a packet capture session.
 
 Keep in mind that there is a limit to the amount of packet capture sessions allowed per region. The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
-Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. The "Learn more" section at the end of this module includes links to instructions that detail the installation of the extension on both Windows and Linux VMs.
+Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. For links to instructions that detail the installation of the extension on both Windows and Linux VMs, see the "Learn more" section at the end of this module.
 
 ### What is the connection troubleshoot tool?
 
 You use the connection troubleshoot tool to check TCP connectivity between a source and destination VM. You can specify the destination VM by using an FQDN, a URI, or an IP address.
 
-If the connection is successful, information about the communication is displayed, including:
+If the connection is successful, information about the communication appears, including:
 
 - The latency in milliseconds.
 - The number of probe packets sent.
@@ -135,7 +135,7 @@ If the connection is unsuccessful, you'll see details of the fault. Fault types 
 
 You can use the VPN troubleshoot tool to diagnose problems with virtual network gateway connections. This tool runs diagnostics on a virtual network gateway connection and returns a health diagnosis.
 
-When you start the VPN troubleshoot tool, Network Watcher diagnoses the health of the gateway or connection and returns the appropriate results. The request is a long-running transaction.
+When you start the VPN troubleshoot tool, Network Watcher diagnoses the health of the gateway or connection, and returns the appropriate results. The request is a long-running transaction.
 
 The following table shows examples of different fault types.
 
@@ -151,7 +151,7 @@ The following table shows examples of different fault types.
 
 ## Azure Network Watcher use case scenarios
 
-Let's examine some scenarios that you can investigate and troubleshoot by using Azure Network Watcher monitoring and diagnostics. 
+Let's examine some scenarios that you can investigate and troubleshoot by using Azure Network Watcher monitoring and diagnostics.
 
 ### There are connectivity issues in a single-VM network
 
@@ -159,7 +159,7 @@ Your colleagues have deployed a VM in Azure and are having network connectivity 
 
 To troubleshoot this issue, use the IP flow verify tool. This tool lets you specify a local and remote port, the protocol (TCP/UDP), the local IP, and the remote IP to check the connection status. It also lets you specify the direction of the connection (inbound or outbound). IP flow verify runs a logical test on the rules in place on your network.
 
-In this case, use IP flow verify to specify the VM's IP address and the RDP port 3389. Then specify the remote VM's IP address and port. Choose the TCP protocol and then select **Check**.
+In this case, use IP flow verify to specify the VM's IP address and the RDP port 3389. Then, specify the remote VM's IP address and port. Choose the TCP protocol, and then select **Check**.
 
 Suppose the result shows that access was denied because of the NSG rule **DefaultInboundDenyAll**. The solution is to change the NSG rule.
 
@@ -167,9 +167,9 @@ Suppose the result shows that access was denied because of the NSG rule **Defaul
 
 Your colleagues have deployed VMs in two virtual networks and can't connect between them.
 
-To troubleshoot a VPN connection, use Azure VPN troubleshoot. This tool runs diagnostics on a virtual network gateway connection and returns a health diagnosis. You can run this tool from the Azure portal, PowerShell, or the Azure CLI.
+To troubleshoot a VPN connection, use Azure VPN troubleshoot. This tool runs diagnostics on a virtual network gateway connection, and returns a health diagnosis. You can run this tool from the Azure portal, PowerShell, or the Azure CLI.
 
-When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis will show whether the VPN connection is working or not working. If the VPN connection isn't working, VPN troubleshoot will suggest ways to resolve the issue.
+When you run the tool, it checks the gateway for common issues and returns the health diagnosis. You can also view the log file to get more information. The diagnosis will show whether the VPN connection is working. If the VPN connection isn't working, VPN troubleshoot will suggest ways to resolve the issue.
 
 Suppose the diagnosis shows a key mismatch. To resolve the problem, reconfigure the remote gateway to make sure the keys match on both ends. Pre-shared keys are case-sensitive.
 
@@ -179,6 +179,6 @@ Your colleagues have deployed VMs in a single virtual network and can't connect 
 
 Use the connection troubleshoot tool to troubleshoot this issue. In this tool, you specify the local and remote VMs. In the probe setting, you can choose a specific port.
 
-Suppose the results show the remote server is **Unreachable**, along with the message "Traffic blocked due to virtual machine firewall configuration." On the remote server, disable the firewall and then test the connection again. 
+Suppose the results show the remote server is **Unreachable**, along with the message "Traffic blocked due to virtual machine firewall configuration." On the remote server, disable the firewall, and then test the connection again.
 
-Suppose the server is now reachable. This result indicates that firewall rules on the remote server are the problem and must be corrected to permit the connection.
+Suppose the server is now reachable. This result indicates that firewall rules on the remote server are the issue, and must be corrected to permit the connection.

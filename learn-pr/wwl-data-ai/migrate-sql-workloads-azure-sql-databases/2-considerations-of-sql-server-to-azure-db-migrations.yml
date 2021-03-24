@@ -2,9 +2,9 @@
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-server-instance-option-azure
 title: Choose the right SQL Server Instance option in Azure
 metadata:
-  title: Considerations of SQL Server to Azure DB migrations
+  title: Choose the right SQL Server Instance option in Azure
   description: "Choose the right SQL Server Instance option in Azure"
-  ms.date: 03/31/2020
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-considerations-of-sql-server-to-azure-db-migrations.md)]
-quiz:
-  title: "Knowledge Check"
-  questions:
-  - content: "Your company needs a high level of availability. What's the availability level of Azure SQL Database?"
-    choices:
-    - content: "99.9%"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database does not have a 99.9% availability guarantee."
-    - content: "99.99%"
-      isCorrect: true
-      explanation: "That's correct. Azure SQL Database has a 99.99% availability guarantee."
-    - content: "99.999%"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database does not have a 99.999% availability guarantee."
-  - content: "Authentication with security principals in Azure SQL Database supports two types of authentication. What type of authentication isn't possible with Azure SQL Database?"
-    choices:
-    - content: "SQL authentication"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database does support SQL authentication."
-    - content: "Azure Active Directory authentication"
-      isCorrect: false
-      explanation: "That's incorrect. Azure SQL Database does support Azure Active Directory authentication."
-    - content: "Windows authentication"
-      isCorrect: true
-      explanation: "That's correct. Azure SQL Database supports SQL authentication and Azure Active Directory authentication."

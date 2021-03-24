@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.design-ingestion-patterns-for-warhouse
+title: Design ingestion patterns for a modern data warehouse
+metadata:
+  title: Design ingestion patterns for a modern data warehouse
+  description: "Design ingestion patterns for a modern data warehouse"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-design-ingestion-patterns-for-warhouse.md)]

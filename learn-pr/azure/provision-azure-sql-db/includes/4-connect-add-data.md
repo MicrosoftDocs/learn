@@ -50,7 +50,7 @@ Here, you use the `az` utility to list your databases and show some information 
     ```
     You see a large block of JSON as output.
 
-1. Since we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to print out only the name fields.
+1. Because we want to see only the database names, run the command a second time. But this time, pipe the output to `jq` to print out only the name fields.
    
      ```azurecli
     az sql db list | jq '[.[] | {name: .name}]'
@@ -116,11 +116,11 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
 1. Run the `sqlcmd` statement from the output of the previous step to create an interactive session. Remove the surrounding quotes and replace `<username>` and `<password>` with the username and password you specified when you created your database. Here's an example.
 
     ```console
-    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P "password1234$" -N -l 30
+    sqlcmd -S tcp:contoso-1.database.windows.net,1433 -d Logistics -U martina -P 'password1234$' -N -l 30
     ```
 
     > [!TIP]
-    > Place your password in quotes so that "&" and other special characters aren't interpreted as processing instructions.
+    > Place your password in single quotes so that "&" and other special characters aren't interpreted as processing instructions.
 
     > [!IMPORTANT]
     >
@@ -139,9 +139,9 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     >
     > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
     > 1. Search for and select your database.
-    > 1. Click **Set server firewall**.
-    > 1. Specify a unique **Rule name**, then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
-    > 1. Click **Save**.
+    > 1. Select **Set server firewall**.
+    > 1. Specify a unique **Rule name**, and then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
+    > 1. Select **Save**.
 
 1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
 

@@ -37,7 +37,7 @@ for i in range(len(x_new)):
     print (x_new[i]), predictions[i] )
 ```
 
-## Using a REST Endpoint
+## Using a REST endpoint
 
 In production, most client applications will not include the Azure Machine Learning SDK, and will consume the service through its REST interface. You can determine the endpoint of a deployed service in Azure machine Learning studio, or by retrieving the **scoring_uri** property of the **Webservice** object in the SDK, like this:
 

@@ -4,8 +4,8 @@ title: Control and audit your resources by using Azure Policy
 metadata:
   description: Learn how Azure Policy helps you control and audit how your resources are created.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

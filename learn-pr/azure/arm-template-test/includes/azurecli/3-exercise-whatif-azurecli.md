@@ -152,6 +152,9 @@ Leave the page open in your browser. You'll check on deployments again.
 
 ## Deploy the modified template in the same environment
 
+> [!NOTE]
+> You will need to have carried out the prerequisite step of setting a default resource group in the Sandbox or the commands will fail as they normally require the parameter --resource-group to be specified.
+
 Now that you've deployed the template, you're ready to test the what-if operation. This time, you'll deploy a template that changes the virtual network that you deployed in the first part.
 
 The differences in the second template are:
@@ -160,10 +163,11 @@ The differences in the second template are:
 - **Subnet removed**. A subnet has been removed.
 - **Prefix changed**. The address prefix has changed.
 
-Run `az deployment group what-if` to carry out the what-if operation:
+Run `az deployment group create`, with flag `--confirm-with-what-if`, to carry out the what-if operation:
 
 ```azurecli
-az deployment group what-if \
+az deployment group create \
+  --confirm-with-what-if \
   --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
 ```
 
@@ -213,10 +217,10 @@ In these next steps, you'll deploy an empty template over your existing environm
 > [!WARNING]
 > Doing this in real life *will remove* anything you have in the cloud. The following code is interesting as an intellectual experiment, but be careful about using this mode. At minimum, use the `-Confirm` flag so you can stop this operation if you don't like the proposed changes.
 
-1. Run `az deployment group` with the flag `--mode Complete` to create a deployment in complete mode:
+1. Run `az deployment group create` with the flag `--mode Complete` to create a deployment in complete mode:
 
     ```azurecli
-    az deployment group \
+    az deployment group create \
       --mode Complete \
       --confirm-with-what-if \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json"

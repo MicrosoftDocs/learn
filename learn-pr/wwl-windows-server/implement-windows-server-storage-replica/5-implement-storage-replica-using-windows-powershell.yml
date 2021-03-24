@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-storage-replica.implement-by-using-windows-powershell
+title: Implement Storage Replica by using Windows PowerShell
+metadata:
+  title: Implement Storage Replica by using Windows PowerShell
+  description: "Implement Storage Replica by using Windows PowerShell"
+  ms.date: 02/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-implement-storage-replica-using-windows-powershell.md)]
+quiz:
+  title: "Quick Review"
+  questions:
+  - content: "Which of the following cmdlets need to be run before using Windows PowerShell to remove a Storage Replica replication group?"
+    choices:
+    - content: "`Test-SRTopology`"
+      isCorrect: false
+      explanation: "That's incorrect. This cmdlet validates prerequisites before creating a Storage Replica partnership."
+    - content: "`Remove-SRPartnership`"
+      isCorrect: true
+      explanation: "That's correct. Before a replication group is removed, this cmdlet needs to be run to remove the Storage Replica partnership that this group is part of."
+    - content: "`Get-SRGroup`"
+      isCorrect: false
+      explanation: "That's incorrect. This cmdlet can be run as part of removing a replication group, but first the partnership needs to be removed by running `Remove-SRPartnership`."

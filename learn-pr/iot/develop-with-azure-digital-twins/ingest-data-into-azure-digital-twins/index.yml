@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.iot.ingest-data-into-azure-digital-twins
+metadata:
+  title: Ingest Data into Azure Digital Twins
+  description: Learn the different ways to ingest data into Azure Digital Twins.
+  ms.date: 10/30/2020
+  author: teodelas
+  ms.author: teodelas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Ingest Data into Azure Digital Twins
+summary: Learn the different ways to ingest data into Azure Digital Twins.
+abstract: |
+  In this module, you will:
+  - Create an Azure Digital Twins instance
+  - Create and instantiate Digital Twins models 
+  - Create a function app that publishes data into Digital Twins
+  - Create an Azure IoT Hub instance that sends telemetry to a function app
+  - Use REST APIs for Azure Digital Twins to ingest data into an IoT Hub instance
+  - Create an Azure Logic Apps instance that ingests data into IoT Hub
+prerequisites: | 
+  - Basic understanding of Azure Digital Twins
+  - Beginner-level experience with Azure IoT Hub, Functions, and Logic Apps
+iconUrl: /learn/achievements/iot/connect-input-to-azure-digital-twins.svg
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+products:
+- azure
+- azure-iot
+
+units:
+- learn.iot.ingest-data-into-azure-digital-twins.introduction
+- learn.iot.ingest-data-into-azure-digital-twins.set-up
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-models
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-function
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-iot-hub
+- learn.iot.ingest-data-into-azure-digital-twins.use-rest-apis
+- learn.iot.ingest-data-into-azure-digital-twins.set-up-logic-app
+- learn.iot.ingest-data-into-azure-digital-twins.knowledge-check
+- learn.iot.ingest-data-into-azure-digital-twins.summary
+badge:
+  uid: learn.iot.connect-input-to-azure-digital-twins.badge

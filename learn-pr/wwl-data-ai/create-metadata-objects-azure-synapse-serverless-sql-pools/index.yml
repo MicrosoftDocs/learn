@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
+metadata:
+  title: Create metadata objects in Azure Synapse serverless SQL pools
+  description: "Create metadata objects in Azure Synapse serverless SQL pools"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create metadata objects in Azure Synapse serverless SQL pools
+summary: Learn how you can create objects to help you query data or optimize your existing data transformation pipeline through Azure Synapse serverless SQL pools.
+abstract: |
+  After the completion of this module, you will be able to:
+  - Create databases in Azure Synapse serverless SQL pools
+  - Create and manage credentials in Azure Synapse serverless SQL pools
+  - Create external data sources in Azure Synapse serverless SQL pools
+  - Create external tables  in Azure Synapse serverless SQL pools
+  - Create views in Azure Synapse serverless SQL pools
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+iconUrl: /learn/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.introduction
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-databases
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-manage-credentials
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-external-data-sources
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-external-tables
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.create-views
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.knowledge-check
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.summary
+badge:
+  uid: learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools.badge

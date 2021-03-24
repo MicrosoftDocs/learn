@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-windows-server-administration-tools.explore-windows-admin-center
+title: Explore Windows Admin Center
+metadata:
+  title: Explore Windows Admin Center
+  description: "Explore Windows Admin Center"
+  ms.date: 01/21/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explore-windows-admin-center.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Using Windows Admin Center, an administrator connects to the domain controller, SEA-DC1. The administrator wants to add a new user account to the Contoso.com AD DS domain. Which of the following procedures would ***not*** work?"
+    choices:
+    - content: "In Windows Admin Center, connect to SEA-DC1 and then, in the navigation pane, select **Active Directory**. Select **Create**, then select **User**. Enter the required details and then select **Create**."
+      isCorrect: false
+      explanation: "That's incorrect because you ***can*** use the Active Directory node to manage AD DS features, including managing users."
+    - content: "In Windows Admin Center, connect to SEA-DC1 and then, in the navigation pane, select **Local users & groups**. Select **Create**, then select **User**. Enter the required details and then select **Create**."
+      isCorrect: true
+      explanation: "This is the right answer because you ***cannot*** use the Local users & groups node when connected to a domain controller. In addition, local users are not domain users."
+    - content: "In Windows Admin Center, connect to SEA-DC1 and then, in the navigation pane, select **PowerShell**. After signing in, use the **New-ADUser** cmdlet to create a new user."
+      isCorrect: false
+      explanation: "That's incorrect because you ***can*** use the PowerShell node to manage AD DS features, including managing users."

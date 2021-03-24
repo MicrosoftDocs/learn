@@ -2,25 +2,24 @@
 uid: learn.create-razor-pages-aspnet-core
 metadata:
   title: Create a web UI with ASP.NET Core
-  description: "In this module, you'll learn how to create webpages using Razor with ASP.NET Core."
-  ms.date: 07/31/2019
+  description: "In this module, you'll learn how to create web pages using Razor with ASP.NET Core."
+  ms.date: 12/02/2020
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Create a web UI with ASP.NET Core
-summary: ASP.NET Core supports creating webpages using a built-in templating engine called Razor. In this module, you'll learn how to create webpages using Razor with ASP.NET Core.
+summary: ASP.NET Core supports creating webpages using a native templating engine called Razor. In this module, you'll learn how to create web pages using Razor with ASP.NET Core.
 abstract: | 
   In this module, you will:
-  - Understand when and why to use Razor Pages for your ASP.NET Core application.
-  - Use the .NET Core CLI to create a new Razor page and its paired C# PageModel class file.
-  - Complete the projects Create, Read Update and Delete (CRUD) operations by adding a Create form using Razor syntax.
-  - Add built-in client-side form input validation using Razor's Input Tag Helper.
-  - Add built-in server-side model validation using Data Annotations.
-  - Add a reference to a Data Transfer Object (DTO).
-  - Consume a RESTful service from your PageModel.
-  - Walk through the life cycle of an example HTTP request.
-  - Deploy & Test.
+  - Understand when and why to use Razor Pages for your ASP.NET Core app.
+  - Use the .NET CLI to create a new page in the app.
+  - Create a form that supports the app's product data management requirements.
+  - Add client-side form input validation using Razor's Input Tag Helper.
+  - Add server-side model validation using data annotations.
+  - Consume a RESTful service in your app to manage product data.
+  - Examine the life cycle of a sample HTTP request.
+  - Deploy and test the web app.
 prerequisites: |
   - Experience writing C# at the beginner level
   - Ability to write HTML at an intermediate level
@@ -32,7 +31,6 @@ roles:
 products:
 - dotnet
 - aspnet-core
-- dotnet-core
 units:
 - learn.create-razor-pages-aspnet-core.1-introduction
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages

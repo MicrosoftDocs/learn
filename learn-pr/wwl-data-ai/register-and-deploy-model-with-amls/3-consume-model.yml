@@ -3,8 +3,8 @@ uid: learn.data-ai.register-and-deploy-model-with-amls.consume-model
 title: Consuming a real-time inferencing service
 metadata:
   title: Consuming a real-time inferencing service
-  description: "Learn how to consume a real-time inferencing service."
-  ms.date: 09/06/2020
+  description: "Consuming a real-time inferencing service"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.python-partnership.personality-quiz.create-quiz-1
 metadata:
   title: Part 1 - Asking the user a question in your WONDER WOMAN 1984 personality quiz
   description: This unit introduces how to interact with users in Python.
-  ms.date: 9/21/20
+  ms.date: 09/21/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

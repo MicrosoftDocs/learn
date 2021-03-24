@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
@@ -51,9 +51,9 @@ quiz:
     - content: "Multi-chassis link aggregation"
       isCorrect: false
       explanation: "Multi-chassis link aggregation can't be used to link virtual networks."
-    - content: "Dynamic Host Control Protocol"
+    - content: "Dynamic Host Configuration Protocol"
       isCorrect: false
-      explanation: "The Dynamic Host Control Protocol can't be used to link virtual networks."
+      explanation: "The Dynamic Host Configuration Protocol can't be used to link virtual networks."
     - content: "Virtual network peering"
       isCorrect: true
       explanation: "Virtual network peering can be used to link virtual networks."

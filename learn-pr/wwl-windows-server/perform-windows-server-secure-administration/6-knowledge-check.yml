@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-windows-server-secure-administration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator wants to increase security by adjusting the default behavior of the UAC elevation prompt for standard users. Which of the following values in Group Policy would be appropriate to adjust to achieve this objective?"
+    choices:
+    - content: "The administrator must change the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** setting. They must choose the option: **Prompt for credentials**."
+      isCorrect: false
+      explanation: "That's incorrect. This setting is more secure than the default, but configures the behavior for administrative accounts, not standard accounts."
+    - content: "The administrator must change the **User Account Control: Behavior of the elevation prompt for standard users** setting. They must choose the option: **Automatically deny elevation requests**."
+      isCorrect: true
+      explanation: "That's correct. This is the most secure setting for standard user accounts."
+    - content: "The administrator must change the **User Account Control: Behavior of the elevation prompt for standard users** setting. They must choose the option: **Prompt for credentials**."
+      isCorrect: false
+      explanation: "That's incorrect. This is the default setting, and it enables a user to specify an administrative account. Two more secure settings are available."
+  - content: "An administrator creates a custom delegation using the **Delegation of Control Wizard**. The administrator delegates the Sales group administrative rights on computer objects in the Sales OU. Specifically, the group is granted **Create selected objects in folder** and **Delete selected objects in folder**, plus **Full Control** of computer objects. Later, the administrator wants to modify these delegated permissions. What must they do?"
+    choices:
+    - content: "The administrator must run the **Delegation of Control Wizard** again, and this time, assign Deny permissions. Deny overrides Allow permissions."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator can't use the Delegation of Control Wizard to assign Deny permissions."
+    - content: "The administrator must run the **Delegation of Control Wizard** again, and this time, choose the newly delegated permissions."
+      isCorrect: false
+      explanation: "That's incorrect. Running the wizard again doesn't allow the administrator to modify the already assigned permissions."
+    - content: "The administrator must review the security settings on the Sales OU by enabling **Advanced Features** in **Active Directory Users and Computers**. Then, they must review the advanced security settings for the OU."
+      isCorrect: true
+      explanation: "That's correct. The administrator must edit or remove the permissions created by the delegation, and then, if necessary, rerun the Delegation of Control Wizard."
+  - content: "An administrator at Contoso is implementing a jump server configuration to improve security. They decide to virtualize the jump server and install the required administrative tools on that VM. What else should this administrator do?"
+    choices:
+    - content: "The administrator should also configure a PAW. They should then move the jump server VM to this PAW."
+      isCorrect: false
+      explanation: "That's incorrect. A better solution is to implement the jump server VMs on a dedicated host which is separate from the PAW."
+    - content: "The administrator should also configure a PAW. They should then configure MFA to connect to their jump server VM from their PAW."
+      isCorrect: true
+      explanation: "That's correct. This solution provides a robust security framework for administrative tasks."
+    - content: "The administrator doesn't need to complete any additional tasks."
+      isCorrect: false
+      explanation: "That's incorrect. The administrator should also configure a PAW. They should then configure MFA to connect to their jump server VM from their PAW. This solution provides a robust security framework for administrative tasks."

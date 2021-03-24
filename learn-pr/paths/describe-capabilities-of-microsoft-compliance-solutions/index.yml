@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions
+metadata:
+  title: Describe the capabilities of Microsoft compliance solutions
+  description: Describe the capabilities of Microsoft compliance solutions
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Describe the capabilities of Microsoft compliance solutions
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+summary: |
+  Learn about compliance solutions in Microsoft. Topics covered will include Compliance center, Information protection and governance in Microsoft 365, Insider Risk, audit, and eDiscovery solutions.  Also covered are Azure resources governance capabilities.
+iconUrl: /learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+- m365
+modules:
+- learn.wwl.describe-compliance-management-capabilities-microsoft
+- learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
+- learn.wwl.describe-insider-risk-capabilities-microsoft-365
+- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+- learn.wwl.describe-audit-capabilities-microsoft-365
+- learn.wwl.describe-resource-governance-capabilities-azure
+trophy:
+  uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions.trophy

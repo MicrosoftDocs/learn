@@ -65,7 +65,7 @@ Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to 
 
 **Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either master or some other release branch. I'll update the drawing to show that requirement.
 
-![A whiteboard showing the Build and Dev stages](../media/2-add-dev-stage-trigger.png)
+![A whiteboard showing the Build and Dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.](../media/2-add-dev-stage-trigger.png)
 
 **Mara:** I think this promotion will be easy to accomplish. We can define a *condition* that promotes to the _Dev_ stage only when changes happen on a release branch.
 
@@ -131,7 +131,7 @@ In YAML, you use the pipe (`|`) syntax to define a string that spans multiple li
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
-For a more complete description of conditions in Azure Pipelines, see [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?view=azure-devops&azure-portal=true#job-status-functions).
+For a more complete description of conditions in Azure Pipelines, see [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?azure-portal=true#job-status-functions).
 
 **Mara:** Conditions let us control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
@@ -153,7 +153,7 @@ Mara adds the _Test_ stage to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning.
 
-![A whiteboard showing the Build, Dev, and Test stages](../media/2-add-test-stage-schedule.png)
+![A whiteboard showing the Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.](../media/2-add-test-stage-schedule.png)
 
 ### What are triggers?
 
@@ -170,7 +170,7 @@ CI and PR triggers let you control which branches participate in the overall pro
 
 ### What are scheduled triggers?
 
-A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
+A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
 
 On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval, or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 
@@ -257,7 +257,7 @@ Mara adds _Staging_ to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from _Test_ to _Staging_ only when Amita approves it.
 
-![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.](../media/2-add-staging-stage-approval.png)
 
 **Tim:** I could also imagine us using release approvals to promote from _Staging_ to _Production_ after management signs off. I can never predict how long that takes. After they sign off, I can approve the release and promote it to production manually. But how do release approvals work?
 
@@ -293,7 +293,7 @@ Let's review the Tailspin team's plan as they move toward next steps.
 
 Mara points to the whiteboard.
 
-![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
+![The final whiteboard showing the Build, Dev, Test, and Staging stages.](../media/2-add-staging-stage-approval.png)
 
 **Mara:** To summarize, our steps are to:
 

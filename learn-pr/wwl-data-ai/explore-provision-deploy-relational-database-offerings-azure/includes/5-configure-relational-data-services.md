@@ -17,7 +17,7 @@ In the **Virtual networks** section, you can specify which virtual networks are 
 
 If you need to connect to the service from an on-premises computer, in the **Firewall** section, add the IP address of the computer. This setting creates a firewall rule that allows traffic from that address to reach the service.
 
-The **Exceptions** setting allows you to enable access to any other of your services created in your Azure subscription. 
+The **Exceptions** setting allows you to enable access to any other services that cannot be uniquely isolated through virtual network or IP address rules. 
 
 The image below shows the **Firewalls and virtual networks** page for an Azure SQL database. MySQL and PostgreSQL have a similar page.
 

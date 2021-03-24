@@ -85,7 +85,7 @@ Here you create the SQL Server that holds your new database.
 
 1. Select **Review + create** > **Create**.
 1. After the server is created, select **Go to resource**.
-1. On the right side of the overview page, select **Show firewall settings**.
+1. On the right side of the overview page, select **Show firewall and virtual networks**.
 1. On the firewall settings page, make sure that **Allow Azure services and resources to access this server** is switched to **Yes**. Select **Save** > **OK**.
 
     Azure creates the tables and inserts the data that you need.
@@ -117,14 +117,8 @@ Before you explore your database, you need to set a firewall rule that permits d
 1. Choose **tailspindatabase**.
 1. At the top of the **tailspindatabase** page, select **Set server firewall**.
 
-    Your current IP address appears next to **Client IP address**. For example, **123.12.123.123**.
-1. Enter the following rule:
-
-    | Property  | Value  |
-    |---|---|
-    | Rule name| **LocalIP** |
-    | Start IP | Your IP address. Change the last octet to `0`. For example, 123.12.123.*0* |
-    | End IP | Your IP address. Change the last octet to `255`. For example, 123.12.123.*255* |
+    Select **+ Add Client IP**.
+1. Save the new rule.
 
 1. Ensure that **Allow Azure services and resources to access this server** is set to **Yes**.
 1. At the top, select **Save** > **OK**.

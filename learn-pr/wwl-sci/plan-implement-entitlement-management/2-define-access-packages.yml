@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-entitlement-management.define-access-packages
+title: Define access packages
+metadata:
+  title: Define access packages
+  description: "Define access packages"
+  ms.date: 02/02/2021
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-define-access-packages.md)]

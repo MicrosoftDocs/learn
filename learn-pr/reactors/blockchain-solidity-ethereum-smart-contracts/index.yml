@@ -2,14 +2,14 @@
 uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts
 metadata:
   title: Write Ethereum smart contracts by using Solidity
-  description: Learn how to install tools that you can use to develop smart contracts.
+  description: Learn how to install and use tools that you can use to develop smart contracts.
   ms.date: 10/06/2020
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write Ethereum smart contracts by using Solidity
-summary: Learn how to install tools that you can use to develop smart contracts.
+summary: Learn how to install and use tools that you can use to develop smart contracts.
 abstract:  |
   By the end of this module, you'll be able to:
   - Explain what smart contracts are.

@@ -13,7 +13,7 @@ The [Azure portal](https://portal.azure.com) is a public website that you can ac
 
 ![Screenshot of the Azure portal showing the left-hand navigation and suggested Azure services](../media/2-azure-portal.png)
 
-The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles, and displaying services you're interested in.
+The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles and displaying services you're interested in.
 
 The portal doesn't provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This process makes the portal approach time-consuming and error-prone for complex tasks.
 
@@ -35,7 +35,7 @@ Creating administration scripts and using automation tools is a powerful way to 
 
 ## Azure CLI
 
-Azure CLI is a cross-platform command-line program that connects to Azure and executes administrative commands on Azure resources. *Cross-platform* means that it can be run on Windows, Linux, or macOS. For example, to create a VM, you would open a command prompt window, sign in to Azure using the command `az login`, create a resource group, then use a command such as:
+Azure CLI is a cross-platform command-line program that connects to Azure and executes administrative commands on Azure resources. *Cross-platform* means that  it can be run on Windows, Linux, or macOS. For example, to create a VM, you would open a command prompt window, sign in to Azure using the command `az login`, create a resource group, then use a command such as:
 
 ```azurecli
 az vm create \
@@ -83,9 +83,9 @@ You can switch between the two shells, and both support the Azure CLI and Azure 
   :::column-end:::
 :::row-end:::
 
-You can create, build, and deploy apps right from this browser-based environment. It's all persistent as well - you're prompted to create an Azure Storage Account when you access the Azure Cloud Shell. This storage area is used as your $HOME folder and any scripts or data you place here is kept across sessions. Each subscription has a unique storage account associated with it, so you can keep the data and tools you need specific to each account you manage.
+You can create, build, and deploy apps right from this browser-based environment. It's all persistent as well - you're prompted to create an Azure Storage Account when you access the Azure Cloud Shell. This storage area is used as your $HOME folder, and any scripts or data you place here is kept across sessions. Each subscription has a unique storage account associated with it, so you can keep the data and tools you need specific to each account you manage.
 
-We'll use the Cloud Shell in Microsoft Learn for many of the interactive exercises to try out Azure features.
+We'll use the Cloud Shell in Microsoft Learn for many interactive exercises to try out Azure features.
 
 ## Azure mobile app
 
@@ -96,11 +96,11 @@ We'll use the Cloud Shell in Microsoft Learn for many of the interactive exercis
   :::column span="3":::
 The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
 
-- Check the current status and important metrics of your services
+- Check the current status and critical metrics of your services
 - Stay informed with notifications and alerts about important health issues
-- Quickly diagnose and fix issues anytime, anywhere
+- Quickly diagnose and fix problems anytime, anywhere
 - Review the latest Azure alerts
-- Start, stop, and restart virtual machines or web apps
+- Start, stop and restart virtual machines or web apps
 - Connect to your virtual machines
 - Manage permissions with role-based access control (RBAC)
 - Use the Azure Cloud Shell to run saved scripts or perform ad hoc administrative tasks
@@ -110,6 +110,6 @@ The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to a
 
 ## Other options
 
-There are also Azure SDKs for a range of languages and frameworks, and REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/downloads/) page.
+There are also Azure SDKs for a range of languages and frameworks and REST APIs that you can use to manage and control Azure resources programmatically. For a full list of tools available, see the [Downloads](https://azure.microsoft.com/downloads/) page.
 
 When starting with Azure, you'll most often use the Azure portal. Let's take a closer look at the portal approach.

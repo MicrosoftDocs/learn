@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 10 # dummy number at present
+durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/10-exercise-set-virtual-thermostat-azure-iot-device-twins.md)]

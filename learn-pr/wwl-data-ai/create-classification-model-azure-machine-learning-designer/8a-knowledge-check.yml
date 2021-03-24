@@ -3,8 +3,8 @@ uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge."
-  ms.date: 11/05/2020
+  description: "Knowledge check"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
       explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."
     - content: "Split Data"
       isCorrect: true
-      explanation: "That is correct. Use a Split Data module to randomly split a dataset into test and validation subsets."
+      explanation: "That is correct. Use a Split Data module to randomly split a dataset into training and validation subsets."
     - content: "Select Columns in Dataset"
       isCorrect: false
       explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."

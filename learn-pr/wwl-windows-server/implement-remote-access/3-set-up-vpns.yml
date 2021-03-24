@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-remote-access.select-set-up-vpns
+title: Select and set up VPNs
+metadata:
+  title: Select and set up VPNs
+  description: "Select and set up VPNs"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-set-up-vpns.md)]

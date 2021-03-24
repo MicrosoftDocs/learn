@@ -114,7 +114,7 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```
     
     > [!div class="mx-imgBorder"]
-    >![Run an ORDER query in SQL Database Query Editor](../media/6-select-join-sql-databases.png)
+    >![Run a JOIN query in SQL Database Query Editor](../media/6-select-join-sql-databases.png)
 
 1. Change the query to find the names of all customers who have ordered oranges.
 
@@ -154,7 +154,6 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     ```sql
     SELECT SUM(CustomerOrder.Quantity) 
     FROM CustomerOrder
-    JOIN Inventory ON CustomerOrder.InventoryId = Inventory.ID
     ```
 
     The answer should be 29.

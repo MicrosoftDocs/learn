@@ -3,8 +3,8 @@ uid: learn.data-ai.register-and-deploy-model-with-amls.deploying-a-model
 title: Exercise - Deploying a model as a real-time service
 metadata:
   title: Exercise - Deploying a model as a real-time service
-  description: "Use this hands-on exercise to learn how to use Azure Machine Learning to deploy a model as a real-time inferencing service."
-  ms.date: 09/06/2020
+  description: "Exercise - Deploying a model as a real-time service"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.implement-hyper-v-replica
+metadata:
+  title: Implement Hyper-V Replica
+  description: "Implement Hyper-V Replica"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Hyper-V Replica
+summary: Learn about Hyper-V Replica, scenarios for its use, and prerequisites to use it. Learn about Azure Site Recovery and the benefits of using it, focusing on implementing Site Recovery in on-premises scenarios.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Hyper-V Replica, pre-requisites for its use, and its high-level architecture and components.
+  - Describe Hyper-V Replica usage scenarios, available replication settings, and security considerations.
+  - Configure Hyper-V Replica settings, health monitoring, and failover options.
+  - Implement Hyper-V Replica.
+  - Describe extended replication.
+  - Describe Site Recovery.
+  - Implement Site Recovery.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Hyper-V.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.implement-hyper-v-replica.introduction
+- learn.wwl.implement-hyper-v-replica.define
+- learn.wwl.implement-hyper-v-replica.plan-for
+- learn.wwl.implement-hyper-v-replica.configure
+- learn.wwl.implement-hyper-v-replica.define-extended-replication
+- learn.wwl.implement-hyper-v-replica.define-azure-site-recovery
+- learn.wwl.implement-hyper-v-replica.implement-site-recovery-from-premises-site-to-azure
+- learn.wwl.implement-hyper-v-replica.implement-site-recovery-from-premises-site-to-premises-site
+- learn.wwl.implement-hyper-v-replica.knowledge-check
+- learn.wwl.implement-hyper-v-replica.summary
+badge:
+  uid: learn.wwl.implement-hyper-v-replica.badge

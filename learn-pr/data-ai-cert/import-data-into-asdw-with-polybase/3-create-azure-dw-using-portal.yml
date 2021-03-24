@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.import-data-into-asdw-with-polybase.create-azure-dw-using-portal
-title: Exercise - create a blank Azure Synapse Analytics
+title: Exercise - Create a blank Azure Synapse Analytics
 metadata:
-  title: Exercise - create a blank Azure Synapse Analytics
-  description: Exercise - create a blank Azure Synapse Analytics
+  title: Exercise - Create a blank Azure Synapse Analytics
+  description: Exercise - Create a blank Azure Synapse Analytics
   ms.date: 01/31/2019
   author: wwlpublish
   ms.author: chtestao

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.load-move-data-azure-sql-database
-title: Load and Move data to Azure SQL Database
+title: Load and move data to Azure SQL Database
 metadata:
-  title: Service continuity of Azure SQL Database
-  description: "Load and Move data to Azure SQL Database"
-  ms.date: 03/31/2020
+  title: Load and move data to Azure SQL Database
+  description: "Load and move data to Azure SQL Database"
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-service-continuity-of-azure-sql-database.md)]
-quiz:
-  title: "Knowledge Check"
-  questions:
-  - content: "You have an Azure SQL Database with the DTU purchasing model and Basic service tier. What's the backup retention period?"
-    choices:
-    - content: "One day"
-      isCorrect: false
-      explanation: "That's incorrect. In the DTU model, a database under the Basic tier benefits from more than one-day retention."
-    - content: "Seven days"
-      isCorrect: true
-      explanation: "That's correct. In the DTU model, a database under the Basic tier benefits from seven-day retention, whereas Standard and Premium databases have 35 days."
-    - content: "Thirty-five days"
-      isCorrect: false
-      explanation: "That's incorrect. In the DTU model, a database under the Standard and Premium databases have 35 days retention."
-  - content: "Which tool can be used to split and merge sharded databases?"
-    choices:
-    - content: "Azure portal"
-      isCorrect: false
-      explanation: "That's incorrect. The Azure portal is not used to split and merge sharded databases."
-    - content: "PowerShell"
-      isCorrect: false
-      explanation: "That's incorrect. PowerShell is not used to split and merge sharded databases."
-    - content: "Elastic Database Split-Merge tool"
-      isCorrect: true
-      explanation: "That's correct. The Elastic Database Split-Merge tool is used to split and merge sharded databases."

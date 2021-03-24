@@ -37,7 +37,7 @@ levels:
 roles:
 - administrator
 products:
-- azure
+- mem
 modules:
 - learn.intro-to-endpoint-manager
 - learn.protect-endpoints-with-endpoint-manager

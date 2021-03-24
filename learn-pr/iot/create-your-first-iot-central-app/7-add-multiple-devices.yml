@@ -2,7 +2,7 @@
 uid: learn.iot.create-your-first-iot-central-app.add-multiple-devices
 metadata:
   title: Exercise - Continue the tests of your IoT Central device
-  description: Test a device by issuing commands, and monitoring the results on the dashboard.
+  description: Test a device by issuing commands. Monitor the results on the dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: obloch

@@ -2,8 +2,8 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure
 metadata:
   title: Implement a hybrid file server infrastructure
-  description: "In this module, you’ll learn to deploy Azure File Sync, migrate from DFS, and use Storage Migration Services to migrate file servers to Azure."
-  ms.date: 09/24/2020
+  description: "Implement a hybrid file server infrastructure"
+  ms.date: 11/27/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

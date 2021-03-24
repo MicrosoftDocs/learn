@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.apply-manage-sensitivity-labels
+metadata:
+  title: Apply and manage sensitivity labels
+  description: "Apply and manage sensitivity labels"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Apply and manage sensitivity labels
+summary: Learn about how sensitivity labels are used to classify and protect business data while making sure that user productivity and their ability to collaborate are not hindered.
+abstract: |
+  After completing this module, you will be able to:
+  - Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites.
+  - Monitor label usage using label analytics.
+  - Configure on-premises labeling.
+  - Manage protection settings and marking for applied sensitivity labels.
+  - Apply protections and restrictions to email.
+  - Apply protections and restrictions to files.
+prerequisites: |
+  Fundamentals knowledge of information governance in Microsoft 365.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- risk-practitioner
+- security-engineer
+products:
+- m365
+- m365-information-protection
+units:
+- learn.wwl.apply-manage-sensitivity-labels.introduction
+- learn.wwl.apply-manage-sensitivity-labels.describe-role-lifecycle-of
+- learn.wwl.apply-manage-sensitivity-labels.create
+- learn.wwl.apply-manage-sensitivity-labels.configure-label-polices
+- learn.wwl.apply-manage-sensitivity-labels.apply-to-microsoft-teams-microsoft-365-groups-sharepoint-sites
+- learn.wwl.apply-manage-sensitivity-labels.configure-publish-automatic-labeling-policies
+- learn.wwl.apply-manage-sensitivity-labels.knowledge-check
+- learn.wwl.apply-manage-sensitivity-labels.summary-resources
+badge:
+  uid: learn.wwl.apply-manage-sensitivity-labels.badge

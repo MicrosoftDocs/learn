@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.survey-components-of-azure-synapse-analytics
+metadata:
+  title: Survey the Components of Azure Synapse Analytics
+  description: "Survey the Components of Azure Synapse Analytics"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Survey the Components of Azure Synapse Analytics
+summary: Learn the various components of Azure Synapse Analytics that enables you to build your analytical solutions in one place.
+abstract: |
+  In this module, you will:
+  - Create Azure Synapse Analytics Workspace
+  - Describe Azure Synapse SQL
+  - Explain Apache Spark in Azure Synapse Analytics
+  - Orchestrate Data Integration with Azure Synapse Pipelines
+  - Visualize your analytics with Power BI
+  - Understand Hybrid Transactional Analytical Processing with Azure Synapse Link
+prerequisites: |
+  * Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/survey-the-components-of-azure-synapse-analytics.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.survey-components-of-azure-synapse-analytics.introduction
+- learn.wwl.survey-components-of-azure-synapse-analytics.create-workspace
+- learn.wwl.survey-components-of-azure-synapse-analytics.exercise-create-manage-workspace
+- learn.wwl.survey-components-of-azure-synapse-analytics.describe-sql
+- learn.wwl.survey-components-of-azure-synapse-analytics.explain-apache-spark-snalytics
+- learn.wwl.survey-components-of-azure-synapse-analytics.exercise-create-pools
+- learn.wwl.survey-components-of-azure-synapse-analytics.orchestrate-data-integration-with-pipelines
+- learn.wwl.survey-components-of-azure-synapse-analytics.exercise-identifying-pipeline-components
+- learn.wwl.survey-components-of-azure-synapse-analytics.visualize-your-analytics-with-power-bi
+- learn.wwl.survey-components-of-azure-synapse-analytics.understand-hybrid-transactional-analytical-processing-with-link
+- learn.wwl.survey-components-of-azure-synapse-analytics.knowledge-check
+- learn.wwl.survey-components-of-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.survey-components-of-azure-synapse-analytics.badge

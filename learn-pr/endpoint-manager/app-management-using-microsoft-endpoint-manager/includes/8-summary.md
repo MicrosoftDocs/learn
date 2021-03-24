@@ -11,6 +11,6 @@ In this module, you've learned about the possible migration path to Microsoft En
 
 ## Learn more
 
-For additional information about Microsoft Endpoint Manager, see the following resources:
+For more information about Microsoft Endpoint Manager, see the following resources:
 
 - [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)

@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender
+metadata:
+  title: 'SC-200 part 3: Mitigate threats using Azure Defender'
+  description: 'SC-200 part 3: Mitigate threats using Azure Defender'
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'SC-200 part 3: Mitigate threats using Azure Defender'
+prerequisites: |
+  - Familiarity with Azure services, specifically Azure SQL Database and Azure Storage
+  - Familiarity with Azure virtual machines and virtual networking
+  - Foundational knowledge of computer networking
+summary: |
+  Use Azure Defender integrated with Azure Security Center, for Azure, hybrid cloud, and on-premises workload protection and security. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-security-center
+modules:
+- learn.wwl.what-is-azure-defender
+- learn.wwl.understand-azure-defender-cloud-workload-protection
+- learn.wwl.connect-azure-assets-to-azure-defender
+- learn.wwl.connect-non-azure-machines-to-azure-defender
+- learn.wwl.remediate-azure-defender-security-alerts
+trophy:
+  uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender.trophy

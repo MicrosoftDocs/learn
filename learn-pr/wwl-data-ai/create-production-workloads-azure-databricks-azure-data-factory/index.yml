@@ -4,8 +4,8 @@ metadata:
   title: Create production workloads on Azure Databricks with Azure Data Factory
   description: "Create production workloads on Azure Databricks with Azure Data Factory"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create production workloads on Azure Databricks with Azure Data Factory

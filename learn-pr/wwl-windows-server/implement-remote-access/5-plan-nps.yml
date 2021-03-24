@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-remote-access.plan-implement-nps
+title: Plan and implement NPS
+metadata:
+  title: Plan and implement NPS
+  description: "Plan and implement NPS"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-plan-nps.md)]

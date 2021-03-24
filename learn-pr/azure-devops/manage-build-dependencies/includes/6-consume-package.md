@@ -1,12 +1,12 @@
-In this part, you'll get the new Tailspin.SpaceGame.Web code that has the model classes removed. Instead of referencing the models directly, the code will reference them from the package you created in the previous unit. 
+In this unit, you'll get the new Tailspin.SpaceGame.Web code that has the model classes removed. Instead of referencing the models directly, the code will reference them from the package you created in the previous unit. 
 
 Here is a list of the steps:
 
 > [!div class="checklist"]
 > * Get the new code from a branch of the original **Tailspin.SpaceGame.Web** repository.
 > * Reference the new Models package, version 1.0.0.
-> * Change the build pipeline to look for this package in your Azure Artifacts feed.
-> * Watch the pipeline successfully build the application.
+> * To look for this package in your Azure Artifacts feed, change the build pipeline.
+> * Watch the pipeline successfully build the app.
 
 ## Fetch the branch from GitHub
 
@@ -25,11 +25,11 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 1. From the **File** menu, select **Open**.
 1. Go to the root directory of the _Space Game_ web project.
 
-    (If you need a refresher, run the `pwd` command in the terminal window to see the full path.)
+    (If you need a refresher, to see the full path, run the `pwd` command in the terminal window.)
 
 You see the directory and file tree in the file explorer.
 
-1. From the terminal, run the following `git` commands to fetch a branch named `models-package` from the Microsoft repository. Then switch to that branch.
+1. From the terminal, to fetch a branch named `models-package` from the Microsoft repository, run the following `git` commands. Then, switch to that branch.
 
     ```bash
     git fetch upstream models-package
@@ -37,6 +37,7 @@ You see the directory and file tree in the file explorer.
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+
 1. As an optional step, verify that the **Models** directory no longer exists in the file explorer.
 
     Instead, you see **Controllers**, **Views**, and other directories.
@@ -47,13 +48,13 @@ You see the directory and file tree in the file explorer.
 
     [!code-xml[](code/6-tailspin.spacegame.web.csproj?highlight=3)]
 
-1. Modify the version number to include the pre-release prefix that was generated during the build process. Here's an example.
+1. To include the pre-release prefix that was generated during the build process, modify the version number. Here's an example.
 
     ```xml
     <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.0.0-CI-20200610-165738" />
     ```
 
-    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous part.
+    This references the **Tailspin.SpaceGame.Web.Models** package that you created in Azure Artifacts. Notice the version number, 1.0.0, plus the pre-release suffix. This matches the initial version that you published to Azure Artifacts in the previous unit.
 
 > [!NOTE]
 > When you save the file, Visual Studio Code might ask you to restore dependencies. We're not going to run this locally, so there is no need to restore the dependencies.
@@ -62,10 +63,10 @@ You see the directory and file tree in the file explorer.
 
 The `models-package` branch doesn't contain an initial *azure-pipelines.yml* file. Here's your chance to create it.
 
-1. From Visual Studio Code, select **File** > **New File**. Then select **File** > **Save** to save the blank file as *azure-pipelines.yml* in your project's root directory, such as *~/mslearn-tailspin-spacegame-web*.
+1. From Visual Studio Code, select **File** > **New File**. Then, to save the blank file as *azure-pipelines*, in your project's root directory, select **File** > **Save** .yml*, such as *~/mslearn-tailspin-spacegame-web*.
 
     > [!IMPORTANT]
-    > On Windows, ensure that you select **YAML** from the **Save as type** field.
+    > On Windows, from the **Save as type** field, ensure that you select **YAML**.
 
 1. Copy the following YAML code into *azure-pipelines.yml*:
 

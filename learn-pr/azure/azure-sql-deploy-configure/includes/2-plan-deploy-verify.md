@@ -7,7 +7,7 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Deployment method: Azure portal or command-line interface?
 * Deployment option: virtual machine (VM), database, elastic pool, managed instance, or instance pool?
 * Purchasing model (Azure SQL Database only): DTU or vCore?
-* Service tier (service-level objective): General Purpose, Business Critical, or Hyperscale?
+* Service tier: General Purpose, Business Critical, or Hyperscale?
 * Hardware: Gen5, or something new?
 * Sizing: number of vCores and **Data max size**?  
 
@@ -19,6 +19,8 @@ The Azure SQL introduction module discussed limits, rates, and capabilities (lik
 
 * Memory
 * Max log size
+* Transaction log rate
+* Data IOPS
 * Size of tempdb
 * Max concurrent workers
 * Backup retention
@@ -122,11 +124,11 @@ The logical database server gives you something to connect to. It also enables y
 
 The Hyperscale tier within Azure SQL Database (not available in Azure SQL Managed Instance) has a unique architecture for Azure SQL. The Azure SQL team rearchitected Hyperscale for the cloud, and this architecture includes a multilayer caching system that can help with both speed and scale. Scaling and other operations no longer become related to the size of data and can be completed in constant time (a matter of minutes). The use of remote storage also allows for snapshot backups. 
 
-In a later module of the learning path about Azure SQL fundamentals, you'll learn more details related to the architecture and how it affects performance and availability. One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't "go back" to the General Purpose or Business Critical tier.
+In a subsequent module of the learning path about Azure SQL fundamentals, you'll learn more details related to the architecture and how it affects performance and availability. One consideration during the deployment phase is that after you move a database to the Hyperscale tier, you can't "go back" to the General Purpose or Business Critical tier.
 
 ### Resource governance
 
-As you increase or decrease the resources in a service tier, the limits for dimensions such as CPU, storage, memory, and more might change up to a certain threshold. Although there's a multifaceted approach to governance in Azure SQL, primarily the following three technologies are used to govern your usage of resources in Azure SQL:  
+As you increase or decrease the resources in a service tier, the limits for dimensions such as CPU, storage, memory, and more might change up to a certain threshold. Although there's a multifaceted approach to governance in Azure SQL, the following three technologies are primarily used to govern your usage of resources in Azure SQL:  
 
 * Windows job objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file's virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
 * Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
@@ -158,7 +160,7 @@ SELECT * FROM sys.dm_instance_resource_governance -- Available only in Azure SQL
 SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and SQL Managed Instance
 ```
 
-One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This queri isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
+One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
 
 The last three queries are available only in Azure SQL Database and/or Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
 

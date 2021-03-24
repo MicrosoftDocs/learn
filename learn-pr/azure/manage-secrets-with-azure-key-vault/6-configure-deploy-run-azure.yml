@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   zone_pivot_groups: dev-lang-csharp-javascript
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 interactive: bash
 azureSandbox: true

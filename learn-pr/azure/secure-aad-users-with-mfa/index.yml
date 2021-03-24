@@ -12,9 +12,9 @@ title: Secure Azure Active Directory users with Multi-Factor Authentication
 summary: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
 abstract: |
   In this module, you will:
-  - Learn about Azure Multi-Factor Authentication (MFA)
-  - Create a plan to deploy Azure MFA
-  - Turn on Azure MFA for users and specific apps
+  - Learn about Azure AD Multi-Factor Authentication (Azure AD MFA)
+  - Create a plan to deploy Azure AD MFA
+  - Turn on Azure AD MFA for users and specific apps
 prerequisites: |
   - Basic knowledge of the Azure portal
   - Basic knowledge of Azure Active Directory

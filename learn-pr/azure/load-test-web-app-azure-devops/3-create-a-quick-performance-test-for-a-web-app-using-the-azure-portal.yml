@@ -9,7 +9,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-a-quick-performance-test-for-a-web-app-using-the-azure-portal.md)]

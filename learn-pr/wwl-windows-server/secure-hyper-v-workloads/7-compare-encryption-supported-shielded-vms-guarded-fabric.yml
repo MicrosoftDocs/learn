@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hyper-v-workloads.compare-encryption-supported-shielded-vms-guarded-fabric
+title: Compare encryption-supported and shielded VMs in a guarded fabric
+metadata:
+  title: Compare encryption-supported and shielded VMs in a guarded fabric
+  description: "Compare encryption-supported and shielded VMs in a guarded fabric"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-compare-encryption-supported-shielded-vms-guarded-fabric.md)]

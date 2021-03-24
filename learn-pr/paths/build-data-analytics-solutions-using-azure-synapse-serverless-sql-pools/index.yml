@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-data-analytics-solutions-using-azure-synapse-serverless-sql-pools
+metadata:
+  title: Build data analytics solutions using Azure Synapse serverless SQL pools
+  description: Build data analytics solutions using Azure Synapse serverless SQL pools
+  ms.date: 11/25/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build data analytics solutions using Azure Synapse serverless SQL pools
+prerequisites: |
+  - It is recommended that students have completed Data Fundamentals before starting this learning path.
+summary: |
+  Learn how to query and prepare data in an interactive way on files placed in Azure Storage.
+iconUrl: /learn/achievements/build-data-analytics-solutions.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+modules:
+- learn.wwl.explore-azure-synapse-serverless-sql-pools-capabilities
+- learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
+- learn.wwl.create-metadata-objects-azure-synapse-serverless-sql-pools
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
+- learn.wwl.serve-data-from-azure-synapse-serverless-sql-pool
+- learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
+trophy:
+  uid: learn.wwl.build-data-analytics-solutions.trophy

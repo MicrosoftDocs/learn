@@ -42,7 +42,7 @@ The following example creates a linked service named "AzureSqlLinkedService" tha
   "properties": {
     "type": "AzureSqlDatabase",
     "typeProperties": {
-      "connectionString": "Server=tcp:<server-name>.database.windows.net,1433;Database=EquityDB;User ID=<user-name>;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30"
+      "connectionString": "Server=tcp:<server-name>.database.windows.net,1433;Database=ctosqldb;User ID=ctesta-oneill;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30"
     }
   }
 }

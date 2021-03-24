@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-ad-ds.define-forests-domains
+title: Define AD DS forests and domains
+metadata:
+  title: Define AD DS forests and domains
+  description: "Define AD DS forests and domains"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-define-forests-domains.md)]

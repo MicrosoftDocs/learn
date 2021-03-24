@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-spaces-storage-spaces-direct.implement
+title: Implement Storage Spaces Direct
+metadata:
+  title: Implement Storage Spaces Direct
+  description: "Implement Storage Spaces Direct"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-implement-storage-spaces-direct.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What is the CSV file system path on each node of a Storage Spaces Direct cluster?"
+    choices:
+    - content: "C:\\ClusterStorage"
+      isCorrect: true
+      explanation: "That's correct. The CSV has the same file system path on each node which points to C:\\ClusterStorage."
+    - content: "C:\\CSV"
+      isCorrect: false
+      explanation: "That's incorrect. The file system path is C:\\ClusterStorage."
+    - content: "D:\\ClusterStorage"
+      isCorrect: false
+      explanation: "That's incorrect. The file system path is C:\\ClusterStorage."

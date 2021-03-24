@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.optimize-apache-spark-jobs-analytics
+title: Optimize Apache Spark jobs in Azure Synapse Analytics
+metadata:
+  title: Optimize Apache Spark jobs in Azure Synapse Analytics
+  description: "Optimize Apache Spark jobs in Azure Synapse Analytics"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-optimize-apache-spark-jobs-analytics.md)]

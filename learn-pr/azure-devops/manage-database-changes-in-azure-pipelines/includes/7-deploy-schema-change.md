@@ -1,6 +1,6 @@
 Tim and Andy are happy with the pipeline and the manual approval of schema changes. But every time the pipeline runs, it halts to wait for DBA approval even if the database schema hasn't changed. They want the pipeline to halt only when the database schema changes.
 
-In this section, you modify the pipeline to halt only when the database schema changes. To do so, you write a variable to the pipeline that flags the schema change. You then modify the `DBAVerificationApply` stage to run only when this variable is set.
+In this section, you modify the pipeline to halt only when the database schema changes. To do so, you write a variable to the pipeline that flags the schema change.
 
 ## Fetch the branch from GitHub
 
@@ -32,7 +32,7 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
 1. Watch the pipeline and wait for the manual approval of the database schema.
 
     When the pipeline stops for approval, select the `DBAVerificationScript` stage. Look at the change script that was created. This time you see an `ALTER TABLE` SQL statement that adds the new column to the Profiles table.
-1. Go back to the pipeline. In the `DBAVerificationApply` stage, select the **Waiting** button. Select **Review** > **Approve**.
+1. Go back to the pipeline. Select the **Waiting** button. Select **Review** > **Approve**.
 1. Wait for the pipeline to finish deploying to each App Service environment.
 1. Before you can try the new website, you need to add data to the new column:
     1. Navigate back to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **SQL Databases**.
@@ -55,13 +55,10 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
 
 **Tim:** I think the meeting went well. We managed to get the DBA involved, and they're a tough customer. Score one for DevOps. But I can see a problem here. Every application change triggers this pipeline to run. We won't have schema changes every time. But the pipeline will stop and wait for approval even if the change file contains no changes. How can we fix that problem?
 
-**Mara:** Look at you getting into DevOps! I have an idea. We already have a change script in the pipeline. Maybe we can check that script for keywords that signal a change. Then we can trigger the `DBAVerificationApply` stage only if the file contains those keywords.
+**Mara:** Look at you getting into DevOps! I have an idea. We already have a change script in the pipeline. Maybe we can check that script for keywords that signal a change. 
 
 **Andy:** That solution could work. We'll need a pipeline variable to check as a triggering condition.
 
-## Check for database changes
-
-Here you change the pipeline to skip the `DBAVerificationApply` stage if the database needs no changes.
 
 ### Check for keywords in the generated script
 
@@ -77,7 +74,7 @@ Don't copy this script yet. Soon you'll replace the entire contents of the *azur
 
 If the keyword search returns a match, create a variable in the pipeline variable group. Set its value to `True`. If the variable is in the pipeline variable group, all stages can see it. Currently, when you set a new variable in a stage, the variable is scoped to only that stage. 
 
-Here you use a PowerShell library that was created by Donovan Brown. The library, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), uses the [REST API for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-portal=true) to access Azure DevOps programmatically.
+Here you use a PowerShell library that was created by Donovan Brown. The library, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), uses the [REST API for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?azure-portal=true) to access Azure DevOps programmatically.
 
 This script copies all variables out of the variable group. It adds a new variable named `schemaChanged`. It also updates the variable group with the complete set of variables.
 
@@ -107,7 +104,6 @@ if ($containsWord -contains $true) {
   Update-VSTeamVariableGroup @methodParameters}
 ```
 
-In the `DBAVerificationApply` stage, you follow the same pattern. But instead of creating a variable, you remove it. Removing the variable ensures that the `DBAVerificationApply` stage doesn't run unless the variable is present.
 
 ```powershell
 Install-Module VSTeam -Scope CurrentUser -Force
@@ -127,21 +123,6 @@ $methodParameters = @{
   Type = "Vsts"
   Variables = $vars}
 Update-VSTeamVariableGroup @methodParameters
-```
-
-### Modify the pipeline to use a condition
-
-Here you add a condition to the `DBAVerificationApply` stage. The condition checks that the new variable is set to `True`. The variable doesn't appear if the database schema hasn't changed. In that case, this stage is skipped. 
-
-Again, don't copy this script yet. Soon you'll replace the contents of the entire *azure-pipelines.yml* file  as you did in the previous exercise.
-
-```yml
-- stage: DBAVerificationApply
-  variables:
-    - group: 'Release'
-  displayName: 'Apply database schema changes'
-  dependsOn: DBAVerificationScript
-  condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
 ```
 
 ## Change the pipeline
@@ -180,7 +161,7 @@ From Azure DevOps:
 
     [!code-yml[](code/azure-pipelines2.yml?highlight=134-166,169-173,201-222,226-234)]
 
-    This pipeline adds to the PowerShell script. It checks the generated SQL script for the keywords **CREATE**, **ALTER**, and **DROP**. If any of these words are found, the script creates a variable named `schemaChanged` in the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, a change needs approval. If the variable isn't present, the script contains no changes and this stage is skipped because the condition fails.
+    This pipeline adds to the PowerShell script. It checks the generated SQL script for the keywords **CREATE**, **ALTER**, and **DROP**. If any of these words are found, the script creates a variable named `schemaChanged` in the pipeline variable group. If this variable is `True`, a change needs approval. If the variable isn't present, the script contains no changes and this stage is skipped because the condition fails.
 
 1. Add and commit *azure-pipelines.yml* to your branch. Then push the changes to your GitHub remote, `origin`. This step causes the pipeline to run.
 
@@ -190,7 +171,7 @@ From Azure DevOps:
     git push origin schema-changes
     ```
 
-1. Navigate back to Azure DevOps and watch the pipeline run. You see that the `DBAVerificationApply` stage is skipped because the schema didn't change.
+1. Navigate back to Azure DevOps and watch the pipeline run.
 
     ![Azure Pipelines showing the skipped stage.](../media/7-pipeline-run-skipped.png)
 

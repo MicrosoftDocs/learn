@@ -28,7 +28,7 @@ The other piece of this scenario involves determining the best way for each appl
 
 - Application running on an Azure VM
 - Application running on a non-Azure machine that is domain-joined
-- Database analysts (DBAs) or other users of SQL admin tools (SQL Server Management Studio, Azure Data Studio, PowerShell) from a non-Azure machine that is not domain-joined
+- DBAs or other users of SQL admin tools (SQL Server Management Studio, Azure Data Studio, PowerShell) from a non-Azure machine that is not domain-joined
 - Older applications running on a non-Azure machine where you can't change the driver or connection string
 
 Let's look at these clients in terms of how you might choose the authentication method and some additional considerations and constraints.

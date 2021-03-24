@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.mitigate-incidents-microsoft-365-defender.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The Incident page contains which tab?"
+    choices:
+    - content: "Networks"
+      isCorrect: false
+      explanation: "Incorrect. The incident page doesn't have a tab for networks."
+    - content: "Machines"
+      isCorrect: false
+      explanation: "Incorrect. The incident page doesn't have a tab for machines."
+    - content: "Mailboxes"
+      isCorrect: true
+      explanation: "Correct. The incident page has a tab for mailboxes."
+  - content: "You can classify an Incident as which of the following?"
+    choices:
+    - content: "True alert"
+      isCorrect: true
+      explanation: "Correct. True alert is an option."
+    - content: "High alert"
+      isCorrect: false
+      explanation: "Incorrect. High alert is not an option."
+    - content: "Test alert"
+      isCorrect: false
+      explanation: "Incorrect. Test alert is not an option."
+  - content: "The Devices page shows information from which Defender product?"
+    choices:
+    - content: "Microsoft Cloud App Security"
+      isCorrect: false
+      explanation: "Incorrect. The Devices page is not surfaced from Cloud App Security."
+    - content: "Microsoft Defender for Identity"
+      isCorrect: false
+      explanation: "Incorrect. The Devices page is not surfaced from Defender for Identity."
+    - content: "Microsoft Defender for Endpoint"
+      isCorrect: true
+      explanation: "Correct.  Devices are based on Defender for Endpoint."

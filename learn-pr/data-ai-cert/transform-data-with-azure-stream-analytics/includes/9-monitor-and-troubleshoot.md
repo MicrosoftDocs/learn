@@ -9,9 +9,9 @@ You can monitor Azure Stream Analytics jobs by using several tools:
 
 ## Activity logs
 
-The Stream Analytics activity log provides details about each job you run. This low-level troubleshooting tool can help you identify issues with data sources, outputs, or transformation queries. 
+The Stream Analytics activity log provides details about each job you run. This low-level troubleshooting tool can help you identify issues with data sources, outputs, or transformation queries.
 
-Each job you create has an activity log. In the log, expand each job and then select an event to see details in the JSON file.
+Each job you create has an activity log. In the log, expand each job, and then select an event to see details in the JSON file.
 
 ![Screenshot of an activity log](../media/9-activity-log.png)
 
@@ -32,10 +32,11 @@ As you're setting up your rules, you can choose to send alerts by email, SMS, or
 ![Screenshot showing how to create an alert rule](../media/9-create-alert-rule.png)
 
 ## Diagnostic logs
+
 Diagnostic logging is a key part of operational infrastructure. Use diagnostic logs to help find root-cause issues in production deployments. You can conveniently deliver diagnostic logs to various sinks or destinations for root-cause analysis.
 
-Stream Analytics diagnostics is turned off by default. But in the Azure portal, you can turn it on when you need it. In the Stream Analytics job, under **Monitoring**, select **Diagnostic logs**. 
+Stream Analytics diagnostics is turned off by default. In the Azure portal, you can turn it on when you need it. In the Stream Analytics job, under **Monitoring**, select **Diagnostic logs**.
 
-You can persist diagnostics settings in an Azure Storage account or send them to Azure Event Hubs or Azure Log Analytics. Generate diagnostics logs for job execution or job authoring. 
+You can persist diagnostics settings in an Azure Storage account or send them to Azure Event Hubs or Azure Log Analytics. Generate diagnostics logs for job execution or job authoring.
 
 ![Screenshot showing the Diagnostics settings page in the Azure portal](../media/9-configure-diagnostic-settings.png)

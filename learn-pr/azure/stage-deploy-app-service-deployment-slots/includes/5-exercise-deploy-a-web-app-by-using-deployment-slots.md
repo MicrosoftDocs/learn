@@ -59,7 +59,7 @@ Suppose that now that you're using deployment slots, you want to enable continuo
 
 ## Deploy new code and auto swap it into production
 
-Now you'll modify the code to create version 3 of the web app. When you deploy it to the staging slot, you'll see auto swap in action. Follow these steps:
+Now you'll modify the code to create version 3 of the web app. When you deploy it to the staging slot, you'll see an auto swap in action. Follow these steps:
 
 1. On the right side of the Cloud Shell window, restart the editor if it's not already running.
 

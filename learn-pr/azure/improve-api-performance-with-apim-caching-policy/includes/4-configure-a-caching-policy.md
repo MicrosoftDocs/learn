@@ -1,6 +1,6 @@
 Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
 
-Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
+Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of the board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
 
 Here, you will learn how to configure such a cache.
 
@@ -93,9 +93,9 @@ To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element
 </policies>
 ```
 
-With this policy, the cache will store separate responses for each product, because they have different part numbers. The cache will not store separate responses for each customer, because that query parameter is not listed.
+With this policy, the cache will store and separate responses for each product because they have different part numbers. The cache will not store separate responses for each customer because that query parameter is not listed.
 
-Azure does not, by default, examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+Azure does not, by default, examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
 
 Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
 

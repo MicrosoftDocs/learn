@@ -76,7 +76,7 @@ You must add the credit-checking service to your relay as a listener, so that it
     Console.WriteLine("Server listening");
     ```
 
-1. To save your changes, select Ctrl+S, and then select Ctrl+Q to close the editor.
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Configure the sender app
 
@@ -133,7 +133,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
-1. To save your changes, select Ctrl+S, and then select Ctrl+Q to close the editor.
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Start the apps
 
@@ -165,12 +165,12 @@ Now that the apps are both running in separate instances of Cloud Shell, let's t
 
 1. Arrange the browser windows so that you can see both.
 
-1. In the sender app, type a name, and then press Enter.
+1. In the sender app, type a name, and then press <kbd>Enter</kbd>.
 
-   In the listener app, the name you typed should be displayed.
+   In the listener app, the name you entered should appear.
 
-   In the sender app, the reply from the listener is displayed with the result of the credit check.
+   In the sender app, the reply from the listener appears with the result of the credit check.
 
-1. To exit the sender app, select Enter. You can run the app again to check other names. When you're finished, close the browser window.
+1. To exit the sender app, press <kbd>Enter</kbd>. You can run the app again to check other names. When you're finished, close the browser window.
 
-1. To exit the listener app, select Ctrl+C.
+1. To exit the listener app, select <kbd>Ctrl+C</kbd>.

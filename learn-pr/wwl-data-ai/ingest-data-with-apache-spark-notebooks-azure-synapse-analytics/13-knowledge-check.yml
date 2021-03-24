@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are Azure Synapse Studio notebooks based on?"
+    choices:
+    - content: "SQL Pool."
+      isCorrect: false
+      explanation: "InCorrect. You can attach a dedicated SQL Pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Spark based."
+    - content: "Spark."
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Studio notebook is purely Spark based."
+    - content: "Spark Pool."
+      isCorrect: false
+      explanation: "InCorrect. You can attach a Apache Spark Pool to your notebook environment in Azure Synapse Studio, but the notebook itself is purely Spark based."
+  - content: "How can all notebooks in Synapse studio be saved?"
+    choices:
+    - content: "Select the **Publish all** button on the workspace command bar."
+      isCorrect: true
+      explanation: "Correct. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."
+    - content: "Select the **Publish** button on the notebook command bar."
+      isCorrect: false
+      explanation: "Incorrect. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."
+    - content: "Using CTRL + S."
+      isCorrect: false
+      explanation: "Incorrect. To save all notebooks in your workspace, select the **Publish all** button on the workspace command bar."

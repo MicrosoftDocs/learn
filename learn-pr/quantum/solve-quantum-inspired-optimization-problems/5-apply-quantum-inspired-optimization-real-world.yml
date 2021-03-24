@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
-durationInMinutes: 6
+durationInMinutes: 16
 content: |
   [!include[](includes/5-apply-quantum-inspired-optimization-real-world.md)]

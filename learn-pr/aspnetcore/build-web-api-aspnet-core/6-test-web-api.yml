@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.6-test-web-api
+metadata:
+  title: Exercise - Test web API actions
+  description: Learn how to invoke web API actions from the command shell using curl.
+  ms.date: 02/11/2021
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Exercise - Test web API actions
+azureSandbox: true
+interactive: bash
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-test-web-api.md)]

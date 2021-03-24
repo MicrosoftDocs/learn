@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-data-types.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Can you use variables declared within an `if` statement outside of the `if` statement?"
+    choices:
+    - content: "Yes, because variables are global."
+      isCorrect: false
+      explanation: "No. These variables' scope are only available within an `if` block."
+    - content: "No. The variable scope works only within the `if` block or nested `if` statements."
+      isCorrect: true
+      explanation: "Correct. You can't use those variables outside of the `if` block."
+    - content: "Yes. As long as you use it within the function."
+      isCorrect: false
+      explanation: "No. You can only use those variables within the `if` block."
+    - content: "No. You have to declare a variable outside of an `if` statement."
+      isCorrect: false
+      explanation: "Not necessarily. In Go, you don't have to declare a variable before you can use it in an `if` block."
+  - content: "Do you need to include a `break` keyword at the end of every `case` statement in a `switch` block?"
+    choices:
+    - content: "No. Go doesn't require you to include the `break` keyword."
+      isCorrect: true
+      explanation: "Correct. By default, Go will stop the `switch` statement when it finishes a `case` block."
+    - content: "Yes. Otherwise, the following `case` statements will be evaluated."
+      isCorrect: false
+      explanation: "No. By default, Go will stop the `switch` statement when it finishes a `case` block."
+    - content: "No. Go doesn't have support for the `break` keyword."
+      isCorrect: false
+      explanation: "Go does have support for the `break` statement, but by default, Go will stop the `switch` statement when it finishes a `case` block."
+  - content: "What does the `panic()` function do in Go?"
+    choices:
+    - content: "It throws an error that you need to catch. Otherwise, the program crashes without any error."
+      isCorrect: false
+      explanation: "No. The `panic` function makes the program crash and prints out the error and its details. You don't necessarily have to `catch` the error to see it."
+    - content: "It prints out a panic message to the console."
+      isCorrect: false
+      explanation: "It prints out a panic message and also makes the program crash."
+    - content: "It crashes a program and prints out the error message and its stack trace."
+      isCorrect: true
+      explanation: "Correct. You can use this function when you explicitly want to make the program stop running and print out the error and its details."

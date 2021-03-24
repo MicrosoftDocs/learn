@@ -89,7 +89,7 @@ You use activity log alerts to monitor critical operations done by service provi
 
 You create log queries to analyze and audit activity. You can query all administrative actions done on subscriptions, or a particular subscription, for an audit. You use Log Analytics to create and run queries.  You choose to run a query to find out which devices have sent heartbeats within the last hour. Write your query using the Kusto Query Language (KQL), like this:
 
-```sql
+```kql
 //List all computer heartbeats from the last hour.
 
 Heartbeat

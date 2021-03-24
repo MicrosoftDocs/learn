@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+
+uid: learn.student-evangelism.unix-shell-wrangle-data.2-cat-tool
+metadata:
+  title: Basic file manipulation with the cat command
+  description: This unit describes how you can use the cat command to display the contents of files and create or concatenate files.
+  ms.date: 12/09/2020
+  author: trallard
+  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Basic file manipulation with the cat command
+durationInMinutes: 2
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/2-cat-tool.md)]

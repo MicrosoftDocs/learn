@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hyperscale.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Hyperscale (Citus)
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

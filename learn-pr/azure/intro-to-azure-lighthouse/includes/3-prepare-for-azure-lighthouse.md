@@ -62,5 +62,5 @@ Security is a constant consideration for any Azure Active Directory. When you in
 
 When you prepare to onboard Lamna Healthcare, and for scaling Azure Lighthouse to all your other Azure customers later, there are a few things to do:
 
-- Implement Azure Multi-Factor Authentication for all users in your service provider tenant, including any users with responsibility for managing Lamna Healthcare's subscription. This authentication method reduces the likelihood of attackers gaining access to Lamna Healthcare's systems or databases from the Contoso Azure AD tenant
+- Implement Azure AD Multi-Factor Authentication for all users in your service provider tenant, including any users with responsibility for managing Lamna Healthcare's subscription. This authentication method reduces the likelihood of attackers gaining access to Lamna Healthcare's systems or databases from the Contoso Azure AD tenant
 - Apply the **principle of least privilege** when giving permissions to your users;  Contoso users should have enough permissions to do their job and no more

@@ -1,130 +1,116 @@
 In this exercise, and subsequent exercises in this training, you will work with various components in the Bot Framework Composer as you build out a bot that will retrieve weather for a zip code in the United States.
 
-1. Ensure that you have installed the prerequisites and the Bot Framework Composer.
-1. Start the Bot Framework Composer.
-1. On the **Home** screen, select **New**.
-1. Select the radio button for **Create from scratch**.
-1. Select **Next**.
-1. In the **Define conversation objective** dialog, change the default **Name** to **GetWeatherBot**, or a name of your choosing.
-1. Select the **Location** on your computer to store the bot.
-1. Provide a **Description** of the bot.
-1. Select **OK**.
-1. The Composer will generate some framework aspects of your bot and then open the bot in the interface.
-1. Under **Filter Dialog**, select **Greeting**.
-1. The designer opens in the middle of the Composer interface with some content already populated. This content in the designer, represents the **ConversationUpdate** activity that is called when a user joins a conversation with the bot. The designer shows that the bot will loop for each item (members added), includes a branch segment that will handle recipient IDs, and then a response item.
-1. You can edit the title of **Greeting** by selecting the word **Greeting** in the properties pane on the right and typing in a new value.  Select the **Greeting** text and change it to **WelcomeUsers**.
-1. If you start the bot right now and test it in the emulator, a generic message of **Welcome to the EmptyBot sample** text is displayed. It does not represent the design of our bot or the greeting we want to use.
-1. In the **Designer pane**, select the **Send a response** item.
-1. In the **Properties** panel on the right, change the default message *${WelcomeUser()}* to something more appropriate such as **Hi! I'm a friendly bot that can help with the weather. Try saying WEATHER or FORECAST.**.
-1. Start, or restart the Bot, and then test it in the Bot Emulator. Once the emulator connects with the bot, your message should display as the welcome message presented to the user.
-1. Next, you will add a dialog to the conversation flow. In the top toolbar, select **+ Add** and then select **Add new dialog**.
-1. In the dialog, set the **Name** to **getWeather** and add a **Description** like **Get the current weather condition for the provide zip code** and select **OK**.
-1. The new dialog is created and opens in the **Authoring canvas**. At the top of the dialog is the **BeginDialog** trigger. You will use the trigger to send a message to the user.
-1. Select the **+** symbol in the **Authoring canvas** and select the **Send a response** action.
-1. In the **Property** panel, you will notice a **Language Generation** area. Enter the following text in that area, **Ready to check the weather?**.
-1. You will connect this dialog to the main dialog to make it part of the conversation flow.
-1. In the **Navigation** pane, where it indicates **Filter dialog**, select the GetWeatherBot item.
-1. In the **Properties** pane, locate the **Language Understanding** section.
-1. Change the **Recognizer type** to **Regular Expression**.
-1. Select **+ Add** from the toolbar and then select **Add new Trigger on GetWeatherBot**.
-1. In the dialog that is displayed, select **Intent recognized** from the **What is the type of this trigger?** drop-down list. 
-1. Enter **weather** for both the **What is the name of this trigger (RegEx)** and the **Please input regex pattern** fields.
-1. Select **Submit**.
+## Add a dialog to get the weather
 
-    > [!Note]
-    > The text entered in the regex pattern text box is a simply regular expression pattern that will cause the bot to look for the word *weather* in any incoming message.  If weather is present, the message becomes a **recognized intent**.
+Now that you have a working bot, you can expand its capabilities by adding dialogs for specific interactions. In this case, you'll add a dialog that is triggered when the user mentions "weather".
 
-1. Now that the trigger is created, you want to configure an action. Select the **+** symbol under you new trigger node.
-1. In the list of options, select **Dialog Management** and then **Begin a new dialog**.
-1. In the **Properties** pane, select the **getWeather** option from the **Dialog name** drop-down list.
-1. This step links the recognized intent with the **getWeather** dialog that you created earlier.
-1. If you test your progress so far, you can enter a phrase containing weather, or just the word **weather** by itself, and your bot should respond with, **Ready to check the weather?**, or whatever text you entered for the **getWeather** dialog.
+### Add a dialog
 
-## Set up the user request for zipcode
+First, you need to define a dialog flow that will be used to handle questions about the weather.
 
-Now that you have the starting point for the weather bot in place, it's time to gather some information from the user and then call the weather service using the zip code. In this portion of the exercise, you will configure the getWeather dialog using the BeginDialog trigger. The task is to collect input from the user in a **Text Input** action. The **Text Input** item allows you to enter a prompt for the user and then collect the user's response in a **User Input** object. In this exercise, you will learn how to specify properties for the user input value so you can access them in later bot conversation aspects.
+1. In Composer, in the navigation pane, hold the mouse over the top-level node (**WeatherBot**) and in the **&#8285;** menu, select **+ Add a dialog**, as shown here:
 
-1. With your weather bot project open in the Bot Framework Composer, select **getWeather** in the navigation pane. 
-1. If the **BeginDialog** trigger does not display in the **Authoring canvas**, select **BeginDialog** in the navigation pane.
-1. Directly under the **Send a response** object, select the **+** symbol and select **Ask a question** and then **Text** from the list of options displayed.
-1. You now have two nodes available for this option. The first node corresponds to the prompt that will display to the user and the second node represents the input that will be received from the user.
-1. Each of these nodes also corresponds to a tab in the properties pane. **Bot asks** and **User input**.
+   ![Add Dialog menu](../media/add-dialog.png)
 
-   [![Ask a question node with properties pane](../media/ask-question.png)](../media/ask-question.png#lightbox)
+    Then create a new dialog named **getWeather** with the description **Get the current weather condition for the provide zip code**.
+1. In the navigation pane, select the **BeginDialog** node for the new **getWeather** dialog. Then on the authoring canvas, use the **+** symbol to add a **Send a response** action.
+1. In the properties panel for the new action, in the **Language Generation** area, enter **- Ready to check the weather?**.
 
-1. In the **Properties** pane, select inside the text area for **Bot asks** and enter the text to prompt the user for their zip code, **Enter your zipcode**.
-1. In the **Properties** pane, select the **User Input** tab.
-1. The **User Input** tab has three fields that you can use for collecting the user input. Enter **user.zipcode** into the **Property** field leaving the type set to string.
-1. To ensure that spaces before or after a user entry are not problematic, you will use the built-in function **trim()** to remove any whitespace before or after the user's zipcode entry.  In the **Output format** field, select **expression** from the drop-down and then enter **=trim(this.value)** as the value for the output format.
-1. You also want to handle the potential for unrecognized values. Select the **Other** tab.
-1. In the **Unrecognized Prompt** field, enter a value to let the user know they may have entered an invalids zipcode, **Sorry the value '${this.value}' doesn't appear to be a valid entry.  Please enter a zip code in the form of 12345**.
-1. To validate the zipcode entry, select inside the **Validation Rules** field and enter **length(this.value) == 5**. This will check that the length of the zipcode entry is only five characters.  U.S.-based zipcodes can be five numbers or a five number, hyphen, and four number variant.  We are only concerned with the five number variant.
-1. Provide a prompt to the user if they enter an incorrect value by selecting inside the **Invalid Prompt** field and entering the following text **Sorry, '${this.value}' is not valid. I'm looking for a 5-digit number as zip code. Please specify a zip code in the form 12345**.
-1. Finally, set the **Default value** property to **98052**. You will have to scroll the **Properties** pane to see this field.
+The **getWeather** activity flow should look like this:
 
->[!Note]
->By default prompts are configured to ask the user for information Max turn count number of times (defaults to 3). When the max turn count is reached, the prompt will stop and the property will be set to the value defined in the Default value field before moving forward with the conversation.
+![A dialog flow with one Send a response action](../media/getweather-dialog-1.png)
 
-## Make the weather report request
+### Add a trigger for the dialog
 
-In this exercise, you will create an HTTP request, pass in the user's zip code, and then display the results to the user in the bot emulator.
+Now you need some way for the new dialog to be initiated from the existing welcome dialog.
 
-1. Ensure you have your weather bot open in the Bot Framework Composer.
-1. Directly under the last action you created for the user zipcode entry, select the **+** symbol.
-1. From the list of options, select **Access external resources** and then **Send an HTTP request**.
-1. Now you will configure the properties for the **HTTP request**.
-1. Select the **GET** option for the **HTTP method**.
-1. Enter this pre-configured URL into the **Url** text field, **http://weatherbot-ignite-2019.azurewebsites.net/api/getWeather?zipcode=${user.zipcode}&api_token=Your_API_Token**.
-1. You will require a token for the service to work so visit the [**OpenWeather site**](https://openweathermap.org/price) to get your free token.  Paste that token into the *Your_API_Token* placeholder in the above Url.
-1. As with any HTTP request, we need to handle the response that is returned. In the next set of steps, you will configure various properties and add a conditional statement node to handle the responses.
-1. In the **Properties** pane for the **HTTP Request**, locate the **Result property** entry and enter the value, **dialog.api_response**. It sets up a property to store the response from the service.
+1. In the navigation pane, select the **WeatherBot** workflow that contains the **WelcomeUsers** dialog (this is under the top-level project node of the same name).
 
-The result can include any of the following four properties from the HTTP response:
+    ![Selected WeatherBot workflow](../media/select-workflow.png)
 
-- statusCode. Accessed via dialog.api_response.statusCode.
-- reasonPhrase. Accessed via dialog.api_response.reasonPhrase.
-- content. Accessed via dialog.api_response.content.
-- headers. Accessed via dialog.api_response.headers.
+1. In the properties pane for the selected **WeatherBot** workflow, in the **Language Understanding** section, set the **Recognizer type** to **Regular expression recognizer**.
 
-If the Response type is Json, it will be a deserialized object available via dialog.api_response.content property.
+1. In the **&#8285;** menu for the **WeatherBot** workflow, select **Add a Trigger**.
 
-1. Now you will add an If/Else branch node to help handle any errors that may be returned in the response.
-1. Select the **+** symbol that appears beneath the **Send HTTP Request** action you created. 
-1. Select **Branch: if/else** from the **Create a condition** menu.
-1. In the **Properties** panel on the right, enter the following value into the **Condition** field: 
-    **dialog.api_response.statusCode == 200**.
-1. In the **True** branch, select the **+** symbol and then select **Set a Property** from the **Manage properties** menu.
-1. In the **Properties** panel on the right, enter **dialog.weather** into the **Property** field.
-1. Enter **=dialog.api_response.content** into the **Value** field.
-1. Your **Property** pane should look like this image.
+    ![Add Trigger menu](../media/add-trigger.png)
 
-    :::image type="content" source="../media/set-property.png" alt-text="True branch property settings":::
+Then create a trigger with the following settings:
 
-1. If the status is true, you want to send a response to the user with the weather information so, while still in the **True** branch, select the **+** symbol, that appears beneath the action created in the previous step, then select **Send a response**.
-1. In the **Properties** panel on the right, enter the following response to send:
+- Select **Intent recognized** from the **What is the type of this trigger?** drop-down list.
+- Enter **weather-regex** for the **What is the name of this trigger (RegEx)** value.
+- Enter **-weather** for the **Please input regex pattern** value.
 
-    **The weather is ${dialog.weather.weather} and the temp is ${dialog.weather.temp}&deg;**
+> [!NOTE]
+> The text entered in the regex pattern text box is a simply regular expression pattern that will cause the bot to look for the word *weather* in any incoming message.  If weather is present, the message becomes a **recognized intent**. A (-) dash is required syntax to run correctly. 
 
-1. The flow should now appear in the **Authoring canvas** as follows:
+1. Now that the trigger is created, you need to configure an action for it. In the authoring canvas for the trigger, elect the **+** symbol under your new **weather-regex** trigger node. Then in the list of actions, select **Dialog Management** and select **Begin a new dialog**.
+1. With the **Begin a new dialog** action selected, in the properties pane, select the **getWeather** dialog from the **Dialog name** drop-down list to start the **getWeather** dialog you defined earlier when the **weather-regex** trigger is recognized.
 
-    :::image type="content" source="../media/if-else.png" alt-text="if/else branch True settings":::
+    The **weather-regex** activity flow should look like this:
 
-1. You also need to account for a response that is not 200, from the service.
-1. Select the **+** symbol in the **False** branch, then select **Send a response**
-1. Set the text of the message to: **I got an error: ${dialog.api_response.content.message}**
+    ![A regex trigger begins the getWeather dialog](../media/weather-regex.png)
 
-    > [!Note]
-    >For the purposes of this exercise we will assume that if you are in this branch, it is because the zip code is invalid, and if it is invalid it should be removed so that the invalid value does not persist in the user.zipcode property.
+1. Restart the bot and use the Bot emulator to test your progress so far. After entering your name and being welcomed, enter a phrase containing "weather" (for example *What's the weather forecast?*), and your bot should respond with, **Ready to check the weather?**.
+1. When you have finished testing, close the emulator, and stop the bot.
 
-1. To remove the invalid value from the zipcode property, select the **+** symbol that follows the **Send a response** action you created in the previous step, then select **Delete a property** from the **Manage properties** menu.
-1. In the **Properties** panel on the right, enter **user.zipcode** into the **Property** field.
-1. The finished branching statement should look like the following image:
+### Implement the weather dialog
 
-    :::image type="content" source="../media/if-else-2.png" alt-text="Completed if/else branch":::
+The **getWeather** dialog flow so far consists of a simple message. Now you need to add actions to get the user's zipcode and retrieve the relevant weather information.
 
-1. Ensure that you have pasted your API key from the weather service into the placeholder in the URL.
-1. Select **Start Bot** or **Restart Bot** in the Composer.
-1. Once the bot has started, select the **Test in emulator**.
-1. Wait for the greeting from the bot and then enter **weather**.
-1. When prompted, enter a valid U.S. zip code, such as 98072.
-1. The bot will contact the service and should respond with a small weather report statement.
+1. In the navigation pane, select the **BeginDialog** trigger under the **getWeather** dialog. 
+1. Directly under the **Send a response** action you added previously, add a new **Ask a question** action for a **Text** response.
+1. In the properties pane, on the **Bot asks** tab, set the **Prompt for text** to **- Enter your zipcode.**.
+1. On the **User Input** tab, set the **Property** field to **user.zipcode**, and set the **Output format** field to the expression **=trim(this.value)** to remove any superfluous spaces around the user-provided value.
+1. On the **Other** tab, set the following values to define validation rules for the zipcode input:
+    - In the **Recognizers** areas, set the **Unrecognized Prompt** field, to **- Sorry the value '${this.value}' doesn't appear to be a valid entry.  Please enter a zip code in the form of 12345.**.
+    - In the **Validation** section, enter the validation rule **length(this.value) == 5** to will check that the length of the zipcode entry is only five characters. Then set the **Invalid Prompt** field to **- Sorry, '${this.value}' is not valid. I'm looking for a 5-digit number as zip code. Please specify a zip code in the form 12345.**.
+    - In the **Prompt configurations** section, set the **Default value** property to **98052**.
+
+        By default, prompts are configured to ask the user for information *Max turn count* times (with a default of 3). When the max turn count is reached, the prompt will stop and the property will be set to the value defined in the **Default value** field before moving forward with the conversation.
+
+    The activity flow so far should look like this:
+
+    ![partially complete activity flow](../media/getweather-dialog-2.png)
+    
+1. On the authoring canvas, directly under the **user Input**** action for the user zipcode entry, select the **+** symbol to add a new action.
+1. From the list of actions, select **Access external resources** and then **Send an HTTP request**.
+1. Set the properties for the **HTTP request** as follows, specifying your [OpenWeather](https://openweathermap.org/price) API key:
+    - **HTTP method**: GET
+    - **Url**: http://weatherbot-ignite-2019.azurewebsites.net/api/getWeather?zipcode=${user.zipcode}&api_token=*Your_API_Key*
+    - **Result property**: dialog.api_response
+
+    The result can include any of the following four properties from the HTTP response:
+
+    - **statusCode**. Accessed via **dialog.api_response.statusCode**.
+    - **reasonPhrase**. Accessed via **dialog.api_response.reasonPhrase**.
+    - **content**. Accessed via **dialog.api_response**.content.
+    - **headers**. Accessed via **dialog.api_response.headers**.
+
+    Additionally, if the response type is JSON, it will be a deserialized object available via **dialog.api_response.content** property.
+
+    Now you need to add logic to the dialog flow that handles the response, which might indicate success or failure of the HTTP request. 
+
+1. On the authoring canvas, under the **Send HTTP Request** action on the you created, add a **Create a condition** > **Branch: if/else** action. This action defines a branch in the dialog flow with **True** and **False** paths.
+1. In the **Properties** of the branch action, set the **Condition** field to write the following expression:
+
+    ```code
+    =dialog.api_response.statusCode == 200
+    ```
+
+1. If the call was successful, you need to store the response in a variable. On the authoring canvas, in the **True** branch, add a **Manage properties** > **Set a Property** action. Then in the properties pane, set the properties of the **Set a Property** action as follows:
+    - **Property**: dialog.weather
+    - **Value**: =dialog.api_response.content
+
+1. Still in the **True** branch, add a **Send a response** action under the **Set a property** action and set its **Language generation** text to **- The weather in ${dialog.weather.city} is ${dialog.weather.weather} and the temp is ${dialog.weather.temp}\&deg;.**
+1. You also need to account for a response from the weather service that is not 200, so in the **False** branch, add a **Send a response** action and set its **Language generation** text to **- I got an error: ${dialog.api_response.content.message}.**
+
+    For the purposes of this exercise, we will assume that an invalid zip code is the most likely cause of a failure, and if it is invalid it should be removed.
+
+1. In the **False** branch, after the  **Send a response** action you just created, add a **Manage properties** > **Delete a property** action and set its **Property** field to **user.zipcode**.
+
+    The finished activity flow should look like the following image:
+
+    ![Complete activity flow](../media/getweather-dialog-3.png)
+
+1. Restart the bot and test it in the Bot Framework Emulator. Wait for the greeting from the bot and after entering your name, enter "What is the weather like?". Then, when prompted, enter a valid U.S. zip code, such as 98004. The bot will contact the service and should respond with a small weather report statement.
+1. When you have finished testing, close the emulator and stop the bot.

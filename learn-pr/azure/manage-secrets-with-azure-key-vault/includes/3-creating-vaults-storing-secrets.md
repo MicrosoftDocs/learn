@@ -17,7 +17,7 @@ To start, you'll create a vault and store one secret in it.
 
 **Key Vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
 
-Run the following command in the Cloud Shell to create your vault.
+To create your vault, in the Cloud Shell, run the following command.
 
 ```azurecli
 az keyvault create \
@@ -33,7 +33,7 @@ When it finishes, you'll see JSON output describing the new vault.
 
 ### Add the secret
 
-Now add the secret: our secret will be named **SecretPassword** with a value of **reindeer_flotilla**.
+Now, add the secret: our secret will be named **SecretPassword** with a value of **reindeer_flotilla**.
 
 ```azurecli
 az keyvault secret set \
@@ -42,4 +42,4 @@ az keyvault secret set \
     --vault-name <your-unique-vault-name>
 ```
 
-We'll write the code for our application shortly, but first we need to learn a little bit about how our app is going to authenticate to a vault.
+You'll write the code for your app shortly, but first you need to learn a little bit about how your app is going to authenticate to a vault.

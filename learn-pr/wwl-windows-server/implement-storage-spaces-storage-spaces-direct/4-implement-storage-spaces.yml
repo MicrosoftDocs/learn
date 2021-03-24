@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-storage-spaces-storage-spaces-direct.implement-storage-spaces
+title: Implement Storage Spaces
+metadata:
+  title: Implement Storage Spaces
+  description: "Implement Storage Spaces"
+  ms.date: 01/28/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-storage-spaces.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "What is the minimum number of disks required to create a virtual disk with the mirror storage layout?"
+    choices:
+    - content: "2"
+      isCorrect: true
+      explanation: "That's correct. 2 disks are sufficient to create a mirror storage layout."
+    - content: "3"
+      isCorrect: false
+      explanation: "That's incorrect. You only need 2 disks to create a mirror storage layout."
+    - content: "4"
+      isCorrect: false
+      explanation: "That's incorrect. You only need 2 disks to create a mirror storage layout."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.continuous-integration-and-deployment
+title: Continuous integration and deployment
+metadata:
+  title: Continuous integration and deployment
+  description: "Continuous integration and deployment"
+  ms.date: 11/30/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-continuous-integration-deployment.md)]

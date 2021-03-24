@@ -33,15 +33,15 @@ Thinking about security is part of every phase of your development lifecycle. Mi
 In this module, you learned about some of the tools and processes you can use to analyze your code. Here's where you can learn more:
 
 * [OWASP](https://www.owasp.org?azure-portal=true)
-* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis)
+* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?azure-portal=true)
 * [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true) (CWE)
 * [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true) (CVE)
 * [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/?azure-portal=true)
 
 Here are some resources that relate to Azure Pipelines features you used in this module:
 
-* [Specify conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml&azure-portal=true) in Azure Pipelines
-* [Secret variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) in Azure Pipelines
+* [Specify conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?tabs=yaml&azure-portal=true) in Azure Pipelines
+* [Secret variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?tabs=yaml%2Cbatch#secret-variables) in Azure Pipelines
 
 ## Appendix
 

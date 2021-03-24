@@ -1,4 +1,8 @@
-You should consider the benefits of migrating from Cassandra to Cosmos DB.
+The Azure infrastructure is built to provide scalability and availability for all services. It also makes it easy to build a global system that responds well to users regardless of their location.
+
+In your video camera manufacturing company, you're considering a migration to the cloud in order to provide a reliable service to users of your video sharing web app around the world. You've been asked to prepare a report that assesses whether Azure is a good cloud environment to choose for the backend database, which uses Cassandra on-premises.
+
+Here, you'll learn about the advantages of Azure for hosting NoSQL database systems.
 
 ## Scalability
 
@@ -14,7 +18,7 @@ By specifying throughput at the database level, the throughput is shared between
 
 You can change throughput at any time and the maximum throughput for either a container or database is unlimited.
 
-For more information on migration benefits, click Rationale at [Move Cassandra data to Azure Cosmos DB](https://aka.ms/AA58ejl)
+For more information on migration benefits, select Rationale at [Move Cassandra data to Azure Cosmos DB](https://aka.ms/AA58ejl)
 
 ## Multi-region
 

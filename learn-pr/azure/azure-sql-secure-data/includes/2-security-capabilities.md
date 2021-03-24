@@ -15,7 +15,7 @@ When you're securing your network for Azure SQL Database, you have four main cho
 - Use virtual network rules
 - Use Azure Private Link
 
-In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum Transport Layer Security (TLS) version.
+In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum Transport Layer Security (TLS) version. The least secure method, but the easiest to configure, is to allow access to Azure services. The most secure method is to use Private Link. The following sections will cover the capabilities for each option, as well as how to configure and maintain each option.
 
 #### Allow access to Azure services
 
@@ -169,18 +169,18 @@ If you're migrating a workload that needs Windows Authentication or your organiz
 
 Depending on how your organization has configured the Azure AD instance, you can connect to it by using any of the following three methods (for example, in SSMS):
 
-* **Azure Active Directory - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Azure AD credentials from a federated domain.  
-* **Azure Active Directory - Password**: A non-interactive method that allows you to connect with an Azure AD principal name by using the Azure AD-managed domain. From the documentation: 
+- **Azure Active Directory - Integrated**: A non-interactive method that you can use if you're signed in to Windows with your Azure AD credentials from a federated domain.  
+- **Azure Active Directory - Password**: A non-interactive method that allows you to connect with an Azure AD principal name by using the Azure AD-managed domain. From the documentation: 
 
    *This can apply to native or federated Azure AD users. A native user is one explicitly created in Azure AD and being authenticated using user name and password, while a federated user is a Windows user whose domain is federated with Azure AD. The latter method (using user & password) can be used when a user wants to use their windows credential, but their local machine is not joined with the domain (for example, using a remote access). In this case, a Windows user can indicate their domain account and password and can authenticate to SQL Database/Azure Synapse Analytics (formerly SQL DW) by using federated credentials.*  
-* **Azure Active Directory - Universal with Multi-Factor Authentication**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Azure Multi-Factor Authentication.
+- **Azure Active Directory - Universal with Multi-Factor Authentication**: An interactive method that safeguards access to data while meeting an organization's demand for a single sign-in process with Azure AD Multi-Factor Authentication.
 
-For an Azure SQL managed instance, the method is similar to that for SQL Server: you can have SQL or Azure AD sign-ins, database users, and contained database users. 
+For an Azure SQL managed instance, the method is similar to that for SQL Server: you can have SQL or Azure AD logins, database users, and contained database users. 
 
-For Azure SQL Database instances, there are a few nuances. You can have SQL log-ins, database users, and even contained database users for Azure AD (recommended). Although the server admin for Azure SQL Database essentially has sysadmin rights, you can create more limited admins by using database level roles in the master of the Azure SQL Database logical server. Two roles are available:
+For Azure SQL Database instances, there are a few nuances. You can have SQL logins, database users, and even contained database users for Azure AD (recommended). Although the server admin for Azure SQL Database essentially has sysadmin rights, you can create more limited admins by using database level roles in the master of the Azure SQL Database logical server. Two roles are available:
 
-* **loginmanager**: A database-level role that allows members to create logins for the database server.
-* **dbmanager**: A database-level role that allows members to create and delete databases for the database server.
+- **loginmanager**: A database-level role that allows members to create logins for the database server.
+- **dbmanager**: A database-level role that allows members to create and delete databases for the database server.
 
 Finally, when you set up and configure authentication and authorization, you have four guidelines to follow:  
 

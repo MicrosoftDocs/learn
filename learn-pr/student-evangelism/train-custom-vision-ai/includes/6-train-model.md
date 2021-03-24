@@ -20,7 +20,7 @@ You should see all of your images added into the Custom Vision portal.
 
 Now you need to tag your images. Select one image, and a window expands with the image inside of it. Select the image, and a box appears around the object. You can see AI already starting to work by identifying the lines and shapes we talked about in a previous unit. Adjust the box so that it fits your object exactly. Part of the success of the AI will be how much of the box it identifies as the object, so stick to the prominent features. For example, don't make the box super wide because there are a few hairs outside of it.
 
-![Screenshot showing the object-tagging step in the Custom Vision portal.](../media/tagging-bungee.png)
+:::image type="content" source="../media/tagging-bungee.png" alt-text="Screenshot that shows the object-tagging step in the Custom Vision portal.":::
 
 Add the tag for your object, select the **+** icon, and then move to the next image. Tag each of the images that you uploaded.
 
@@ -29,7 +29,7 @@ Add the tag for your object, select the **+** icon, and then move to the next im
 
 After you're done tagging all of the images, you should see them all in the **Tagged** area of your project.
 
-![Screenshot of the left side of the Custom Vision portal showing the Tagged versus Untagged toggle.](../media/tagged-images.png)
+:::image type="content" source="../media/tagged-images.png" alt-text="Screenshot that shows the left side of the Custom Vision portal showing the Tagged versus Untagged toggle.":::
 
 ## Train on your tagged images
 

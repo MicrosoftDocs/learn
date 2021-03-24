@@ -36,12 +36,12 @@ To swap two slots in the Azure portal:
 
 ## Understand the slot-swapping preview
 
-When you swap slots, the settings in the target slot (which is typically the production slot) are applied to the app version in the source slot before the host names are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app will use the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
+When you swap slots, the settings in the target slot (which is typically the production slot) are applied to the app version in the source slot before the hostnames are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app will use the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
 
 To help you discover problems before your app goes live into production, Azure App Service offers a swap-with-preview feature. When you choose this option, the swap proceeds in two phases:
 
 - **Phase 1**: Slot settings from the target slot are applied to the web app in the source slot. Then Azure warms up the staging slot. At this point, the swap operation pauses so you can test the app in the source slot to make sure it works with the target slot configuration. If you find no problems, begin the next phase.
-- **Phase 2**: The host names for the two sites are swapped. The version of the app now in the source slot receives its slot settings.
+- **Phase 2**: The hostnames for the two sites are swapped. The version of the app now in the source slot receives its slot settings.
 
 > [!IMPORTANT]
 > Test your web app thoroughly while it's in the staging slot. Eliminate code bugs and problems with non-slot settings. The swap-with-preview feature can only help you spot and eliminate problems caused by the production slot settings. Make sure everything else is sound before you start any kind of swap into production.

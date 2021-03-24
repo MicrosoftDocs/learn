@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.intro-to-powershell.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: softchris
+  ms.author: shanama
+  ms.date: 12/7/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

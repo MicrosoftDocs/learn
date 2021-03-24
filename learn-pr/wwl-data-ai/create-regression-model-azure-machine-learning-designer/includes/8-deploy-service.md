@@ -1,11 +1,15 @@
-After you've created and tested an inference pipeline for real-time inferencing, which you can publish it as a service for client applications to use.
+After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
-To publish a real-time inference pipeline as a service, you must deploy it to an Azure Kubernetes Service (AKS) cluster. In this exercise, you'll use the AKS inference cluster you created previously in this module.
+> [!NOTE] 
+> In this exercise, you'll deploy the web service to to an Azure Container Instance (ACI). This type of compute is created dynamically, and is useful for development and testing. For production, you should create an *inference cluster*, which provide an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ## Deploy a service
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
-2. At the top right, select **Deploy**, and set up a new real-time endpoint named **predict-auto-price** on the inference cluster you created previously.
+2. At the top right, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
+    -  **Name**: predict-auto-price
+    -  **Description**: Auto price regression.
+    - **Compute type**: Azure Container Instance
 3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service

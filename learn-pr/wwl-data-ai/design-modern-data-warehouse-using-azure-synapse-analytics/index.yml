@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
+metadata:
+  title: Design a Modern Data Warehouse using Azure Synapse Analytics
+  description: "Design a Modern Data Warehouse using Azure Synapse Analytics"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a Modern Data Warehouse using Azure Synapse Analytics
+summary: Learn how Azure Synapse Analytics enables you to build Data Warehouses using modern architecture patterns.
+abstract: |
+  In this module, you will:
+  - Describe a Modern Data Warehouse
+  - Define a Modern Data Warehouse Architecture
+  - Design ingestion patterns for a Modern Data Warehouse
+  - Understand data storage for a Modern Data Warehouse
+  - Prepare and transform data with Azure Synapse Analytics
+  - Serve data for analysis with Azure Synapse Analytics
+prerequisites: |
+  * Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.introduction
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.describe
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.define-architecture
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.exercise-identifying-architecture-components
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.design-ingestion-patterns-for-warhouse
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.understand-data-storage-for
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.prepare-transform-data-with
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.serve-data-for-analysis-with
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.knowledge-check
+- learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.badge

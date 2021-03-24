@@ -22,7 +22,7 @@ Resource Manager also allows you to create _templates_, which can be used to cre
 
 **Resource Manager templates** are JSON files that define the resources you need to deploy for your solution.
 
-You can create resource templates from the **Settings** section for a specific VM by selecting the _Export template_ option.
+Create resource templates from the **Automation** section for a specific VM by selecting the **Export template** option.
 
 ![Screenshot showing Export template option for our VM](../media/4-automation-script.png)
 

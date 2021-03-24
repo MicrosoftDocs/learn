@@ -3,8 +3,8 @@ uid: learn.wwl.create-pipelines-in-aml.scheduling-pipelines
 title: Schedule pipelines
 metadata:
   title: Schedule pipelines
-  description: "Learn how to schedule pipelines."
-  ms.date: 09/06/2020
+  description: "Schedule pipelines"
+  ms.date: 12/02/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

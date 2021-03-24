@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 azureSandbox: true
 interactive: bash-editor

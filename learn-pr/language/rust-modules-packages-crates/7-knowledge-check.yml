@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-modules-packages-crates.7-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/20/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Answer the following questions to demonstrate what you've learned:
+quiz:
+  questions:
+  - content: "Each of the following, if true, describes modules in Rust, *except*..."
+    choices:
+    - content: "A module is a (possibly nested) unit of code organization inside a crate."
+      isCorrect: false
+      explanation: "Incorrect. This statement describes a characteristic of modules."
+    - content: "There are two ways to declare modules in Rust: inline or in another file."
+      isCorrect: false
+      explanation: "Incorrect. This statement describes a characteristic of modules."
+    - content: "A module is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on."
+      isCorrect: true
+      explanation: "Correct. The smallest compilation unit in Rust is a *crate*, not a *module*."
+    - content: "When we need our values to continue valid even past their lifetime scope."
+      isCorrect: false
+      explanation: "Incorrect. This statement describes a characteristic of modules."
+  - content: "Each of the following, if true, describes third-party modules in Rust, *except*..."
+    choices:
+    - content: "Dependencies can be fetched and compiled by Cargo."
+      isCorrect: false
+      explanation: "Incorrect. This describes a characteristic of third-party modules."
+    - content: "Third-party crates and their intended versions should be declared in the `src/main.rs` file."
+      isCorrect: true
+      explanation: "Correct. Third-party crates should be declared in the `Cargo.toml` file."
+    - content: "Dependencies are normally fetched from the Crates.io repository."
+      isCorrect: false
+      explanation: "Incorrect. This describes a characteristic of third-party modules."
+    - content: "Only public items can be accessed from third-party crates."
+      isCorrect: false
+      explanation: "Incorrect. This describes a characteristic of third-party modules."
+  - content: "Which of the following statements best describes a crate?"
+    choices:
+    - content: "A crate is a compilation unit, which is the smallest amount of code that the Rust compiler can operate on."
+      isCorrect: true
+      explanation: "Correct. This best describes a crate."
+    - content: "A crate contains a Cargo.toml file that describes how to build it."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a package."
+    - content: "A crate is a collection of items including constants, type aliases, functions, structs, and more."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a module."
+    - content: "Crates control the privacy of items and if they can be used by outside code."
+      isCorrect: false
+      explanation: "Incorrect. This best describes a module."

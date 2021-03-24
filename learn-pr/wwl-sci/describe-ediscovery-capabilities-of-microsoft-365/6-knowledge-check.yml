@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A new admin has joined the compliance team and needs access to Core eDiscovery to be able to add and remove members, create and edit searches, and export content from a case. To which role should the admin be assigned?"
+    choices:
+    - content: "Add them as a member of the eDiscovery Manager role group."
+      isCorrect: true
+      explanation: "Members of this role group can create and manage Core eDiscovery cases. They can also add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.​​"
+    - content: "Add them as a member of the eDiscovery review role."
+      isCorrect: false
+      explanation: "This role would be useful for reviewing, but wouldn’t provide all the necessary permissions. Instead, use the eDiscovery Manager role group.​​​"
+    - content: "Add them as a member of the eDiscovery custodian role."
+      isCorrect: false
+      explanation: "This role isn’t suitable for managing eDiscovery cases. Instead, use the eDiscovery Manager role group."
+  - content: "A hold has been placed on content relevant to a case. The hold has not taken effect yet, what has happened?"
+    choices:
+    - content: "It may take up to seven days after you create a hold for it to take effect."
+      isCorrect: false
+      explanation: "You don't need to wait seven days for your hold to take effect. Holds can take effect within 24 hours."
+    - content: "It may take up to 24 hours after you create a hold for it to take effect."
+      isCorrect: true
+      explanation: "Your holds will be in effect within a day of it being placed."
+    - content: "It may take up to one hour after you create a hold for it to take effect."
+      isCorrect: false
+      explanation: "It can take longer than an hour and up to 24 hours for your holds to take effect."
+  - content: "The compliance team needs to perform more advanced, complex, and repetitive content search tasks. What can enable the team to do more complex search tasks?"
+    choices:
+    - content: "Use the Microsoft 365 autocontent search client."
+      isCorrect: false
+      explanation: "This doesn't exist. Instead, use the PowerShell scripts provided by Microsoft."
+    - content: "Use the continuous eDiscovery autosearch client."
+      isCorrect: false
+      explanation: "This doesn't exist. Instead, use the PowerShell scripts provided by Microsoft. Use the PowerShell scripts provided by Microsoft."
+    - content: "Use the PowerShell scripts provided by Microsoft."
+      isCorrect: true
+      explanation: "Microsoft has created many Security & Compliance Center PowerShell scripts to help complete complex content search-related tasks."
+  - content: "The compliance admin has been asked to use Advanced eDiscovery to help a legal team that is working on a case. What is the workflow the admin will use?"
+    choices:
+    - content: "Search custodial data, add custodians to a case, add data to a review set, review and analyze data, then finally export and download case data."
+      isCorrect: false
+      explanation: "You should add custodians to a case first."
+    - content: "Add custodians to a case, search custodial sources for relevant data, add data to a review set, review and analyze data, then finally export and download the case data."
+      isCorrect: true
+      explanation: "The workflow will help you to get the best out of Advanced eDiscovery, and is in line with common eDiscovery practices."
+    - content: "Add data to a review set, review and analyze data, add custodians to a case, search custodial sources for relevant data, then finally export and download the case data."
+      isCorrect: false
+      explanation: "You should add data to a review set and review the data, only after you've added custodians to your case and searched custodial sources for relevant data."

@@ -22,7 +22,7 @@ You use a form to configure a sign-in risk policy in the Azure portal. You speci
 - The conditions that must be met, such as how high a score triggers the policy.
 - How you want to respond.
 
-Make sure users are already registered for Azure Multi-Factor Authentication before you apply this policy.
+Make sure users are already registered for Azure AD Multi-Factor Authentication before you apply this policy.
 
 ![Sign-in risk policy](../media/3-signin-risk-policy.png)
 

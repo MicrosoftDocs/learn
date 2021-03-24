@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.construct-kql-statements.understand-kql-statement-structure
+title: Understand the Kusto Query Language statement structure
+metadata:
+  title: Understand the Kusto Query Language statement structure
+  description: "Understand the Kusto Query Language statement structure"
+  ms.date: 02/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-kusto-query-language-statement-structure.md)]

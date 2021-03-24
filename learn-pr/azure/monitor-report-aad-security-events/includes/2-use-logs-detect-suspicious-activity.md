@@ -34,7 +34,7 @@ You can use sign-in log files to identify:
 
 Because of the nature of the log data that's captured by the sign-in logs, access is reserved and limited.  To use the sign-in log files, you need:
 
-- An Azure premium or better subscription.
+- An Azure AD Premium or better subscription.
 - At least one user who has a *Global Administrator*, *Report Reader*, *Security Reader*, or *Security Administrator* role or permissions.
 
 ### Structure of a sign-in log file
@@ -42,6 +42,7 @@ Because of the nature of the log data that's captured by the sign-in logs, acces
 The first time the sign-in logging service is enabled, it can take up to an hour before any data is available.  Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  You access the sign-in log file through the Azure portal.  
 
 1. In the Azure portal, go to your Azure AD instance.
+
 1. In the **Monitor** section, select **Sign-ins**.
 
 A page similar to the following displays a typical view of the sign-in table data:
@@ -75,7 +76,7 @@ In the **Columns** pane, you can add or remove the columns you need. In addition
 
 Even after you've selected all the sign-in columns you're interested in processing, you still have a lot of data. To manage these volumes and get to the right data, you need to apply filters. For example, you might want to see only sign-in records where users have been flagged as a risk, or where multi-factor authentication has failed.  By using filters, you can view the raw data in a variety of ways, to identify trends or patterns.
 
-To use filters, select the **Add filters** button, and then select the filters you want to use.
+To use filters, select **Add filters**, and then select the filters you want to use.
 
 ![Screenshot of the "Add filters" button and the list of filters.](../media/2-sign-in-activity-filter-list.png)
 
@@ -101,11 +102,11 @@ Decide which format you want to use for the data, CSV or JSON.
 
 ### Sign-in error codes
 
-Analysis of failed sign-ins is key to maintaining a secure and healthy Azure environment.  When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
+Analysis of failed sign-ins is key to maintaining a secure and healthy Azure environment. When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
 
 ![Screenshot of the "Sign-in status" drop-down control, with Failure selected.](../media/2-sign-in-status-failure.png)
 
-As previously discussed, when this filter is applied, the table displays only failed sign-ins.
+As previously described, when this filter is applied, the table displays only failed sign-ins.
 
 When you select any sign-in record in the results list, you'll see a snapshot of the record, including sign-in status, sign-in error code, and the failure reason.  
 
@@ -120,7 +121,7 @@ You'll find a complete list of error codes at the URL provided in the summary un
 | 50020 | The user is unauthorized for one of the following reasons: the user is attempting to log in with an MSA account with the v1 endpoint, or the user doesn't exist in the tenant. Contact the application owner. |
 | 50055 | Invalid password entered or expired password.                  |
 | 50057 | User account is disabled. The account has been disabled by an administrator. |
-| 50074 | User didn't pass the mult-factor authentication (MFA) challenge.                         |
+| 50074 | User didn't pass the multi-factor authentication (MFA) challenge.                         |
 | 50126 | Invalid username or password, or invalid on-premises username or password. |
 | 50133 | Session is invalid because of expiration or recent password change. |
 | 50173 | Fresh auth token is needed. Have the user sign in again using fresh credentials. |

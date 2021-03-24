@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.understand-transact-sql-language-capabilities-for
+title: Understand transact-SQL language capabilities for Azure Synapse Analytics
+metadata:
+  title: Understand transact-SQL language capabilities for Azure Synapse Analytics
+  description: "Understand transact-SQL language capabilities for Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-transact-sql-language-capabilities.md)]

@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.go-to-market-commercial-marketplace.7-knowledge-check
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Review of concepts related to going to market through the Microsoft commercial marketplace
+  ms.date: 11/10/2020
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'Which of the following commercial marketplace sales channels gives you access to a network of thousands of cloud resellers?'
+    choices:
+    - content: 'The online stores, Microsoft AppSource and Azure Marketplace.'
+      isCorrect: false
+      explanation: 'The online stores let customers find, try, buy, and deploy software and services on their own, directly from the online stores and in-product experiences.'
+    - content: 'In-product experiences in Dynamics 365, Microsoft 365, the Power Platform, and Azure.'
+      isCorrect: false
+      explanation: 'The commercial marketplace in-product experiences let customers find your software in Microsoft products and acquire them directly.'
+    - content: 'The Cloud Solution Provider (CSP) program'
+      isCorrect: true
+      explanation: 'Correct! The CSP program lets you reach millions of additional Microsoft customers through a network of resellers in the program.'
+    - content: 'Partner Center'
+      isCorrect: false
+      explanation: 'Partner Center is the hub where partners publish their offers to the commercial marketplace and manage their relationship with Microsoft.'
+  - content: 'If you are trying to improve your commercial marketplace listing in Microsoft AppSource or Azure Marketplace, which of the following actions should you take?'
+    choices:
+    - content: 'Select categories and industries that are widely popular with customers, even if they do not apply to my product or service.'
+      isCorrect: false
+      explanation: 'Make sure that the categories and industries you choose to describe your product are accurate. Customers often filter by category and industry when they browse Microsoft AppSource and Azure Marketplace, so you want to make sure they can find your solution easily.'
+    - content: 'Write a new offer description centered on the value that my product or service provides to customers.'
+      isCorrect: true
+      explanation: 'Correct! Your offer description is a great opportunity to entice customers to learn more about your product or service. Your description should give customers an idea of the value they can get from using your product or service.'
+    - content: 'Change the name of my offer to something more fun and eye-catching.'
+      isCorrect: false
+      explanation: 'Your offer name should be based on the value your product drives for customers. Your offer name should capture attention because it speaks to the issue your target customers are trying to solve.'
+    - content: 'Disable my free software trial or test drive so customers will need to contact me for a product demonstration.'
+      isCorrect: false
+      explanation: 'Free trials and test drives help you engage customers in the commercial marketplace. Customers often filter filter for applications that offer trials and test drives so they can test solutions at their own pace.'
+  - content: 'Which of the following describes Marketplace Rewards program benefits best?'
+    choices:
+    - content: 'Marketplace Rewards benefits are only unlocked the first time I publish a transact offer to the commercial marketplace.'
+      isCorrect: false
+      explanation: 'All commercial marketplace listings are eligible for benefits, but you will unlock more advanced benefits when you publish a transact offer.'
+    - content: 'Marketplace Rewards benefits are only accessible through my engagement manager.'
+      isCorrect: false
+      explanation: 'You can access your Marketplace Rewards benefits in Partner Center.'
+    - content: 'Marketplace Rewards benefits are differentiated by the type of offer I publish. When I publish a transact offer and sell it through Microsoft, I will unlock more advanced benefits.'
+      isCorrect: true
+      explanation: 'Correct! Marketplace Rewards benefits are differentiated by the listing option you choose when you publish your offer in Partner Center. The benefits are also tiered, which means I unlock more advanced benefits when my offer hits certain sales milestones.'
+    - content: 'Marketplace Rewards benefits are designed to help with technical activities.'
+      isCorrect: false
+      explanation: 'While Marketplace Rewards include benefits that will help with technical activities, they also include marketing and sales benefits that help drive business growth.'
+  - content: 'In order to get customer leads from my commercial marketplace listing, I need to...'
+    choices:
+    - content: 'Purchase a subscription to Microsoft Dynamics 365 for Customer Engagement.'
+      isCorrect: false
+      explanation: 'The commercial marketplace supports connections to multiple customer relationship management (CRM) systems, including Dynamics 365 for Customer Engagement, Marketo, and Salesforce. If you do not use any of these CRM systems, you can still get customer leads by configuring an Azure table or HTTPS endpoint.'
+    - content: 'Publish a transact offer, which customers can purchase through Microsoft.'
+      isCorrect: false
+      explanation: 'Microsoft sends you leads regardless of the listing type you choose. Leads are generated when a user clicks on your listing call-to-action (CTA).'
+    - content: 'Connect my listing to my Customer Relationship Management (CRM) system in Partner Center. I can also configure an Azure table or HTTPS endpoint to store and access customer lead data.'
+      isCorrect: true
+      explanation: 'Correct! The commercial marketplace supports connections to multiple customer relationship management (CRM) systems, including Dynamics 365 for Customer Engagement, Marketo, and Salesforce. If you do not use any of these CRM systems, you can still get customer leads by configuring an Azure table or HTTPS endpoint.'
+    - content: 'Microsoft does not send me customer leads generated by my commercial marketplace listing.'
+      isCorrect: false
+      explanation: 'Microsoft sends you leads regardless of the listing type you choose. Leads are generated when a user clicks on your listing call-to-action (CTA).'

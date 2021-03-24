@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-remote-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/20/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which VPN tunneling protocol provides the best features for Contoso's mobile users?"
+    choices:
+    - content: "PPTP"
+      isCorrect: false
+      explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
+    - content: "S2TP"
+      isCorrect: false
+      explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
+    - content: "IKEv2"
+      isCorrect: true
+      explanation: "That's correct. IKEv2 supports mobility, making it a good protocol choice for a mobile workforce."
+  - content: "A Contoso network administrator configures their VPN server to use IP addresses from a DHCP server on their private network to assign those addresses to remote clients. How many IP addresses is it going to lease at a time?"
+    choices:
+    - content: "2"
+      isCorrect: false
+      explanation: "That's incorrect. It leases more addresses at a time."
+    - content: "10"
+      isCorrect: true
+      explanation: "That's correct. The remote access VPN server will lease a block of 10 addresses at a time from the DHCP server and then assign those addresses to remote clients"
+    - content: "25"
+      isCorrect: false
+      explanation: "That's incorrect. It leases fewer addresses at a time."
+  - content: "Which of the following is a RADIUS client?"
+    choices:
+    - content: "A Windows 10 computer with a VPN connection"
+      isCorrect: false
+      explanation: "That's incorrect. This device is a remote access client, not a RADIUS client."
+    - content: "A server installed with the NPS server role"
+      isCorrect: false
+      explanation: "That's incorrect. This device acts as either a RADIUS server or RADIUS proxy."
+    - content: "A VPN server"
+      isCorrect: true
+      explanation: "That's correct. A VPN server, and devices such as wireless access points, RD Gateway servers, are known as RADIUS clients."

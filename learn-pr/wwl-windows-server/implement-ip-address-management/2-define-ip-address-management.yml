@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ip-address-management.define-ipam
+title: Define IP Address Management
+metadata:
+  title: Define IP Address Management
+  description: "Define IP Address Management"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-ip-address-management.md)]

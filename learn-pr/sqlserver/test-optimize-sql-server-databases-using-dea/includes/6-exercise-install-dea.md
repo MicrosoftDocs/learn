@@ -3,10 +3,8 @@ It's easy to install the **Database Experimentation Assistant (DEA)**, and it ca
 You're upgrading several CRM databases to SQL Server 2019. These databases include versions from SQL Server 2008 R2 through to SQL Server 2016. The databases are critical to your organization's business, so you must identify any potential performance issues, before the upgraded databases go live into production. You've chosen to use the DEA to help with this task. First, you need to install DEA.
 
 In this exercise, you'll install the DEA on the virtual machine you created earlier.
-
 > [!NOTE]
 > Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if DEA is right for your task**.
-
 
 ## Download the RDP connection file from Azure
 
@@ -49,7 +47,8 @@ In this exercise, you'll install the DEA on the virtual machine you created earl
 ## Download the latest sqlpackage.exe component required for the DEA
 
 1. On the taskbar, select **Internet Explorer**.
-1. Go to [https://go.microsoft.com/fwlink/?linkid=2113703](https://go.microsoft.com/fwlink/?linkid=2113703).
+1. Go to [https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DacFramework.msi](https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DacFramework.msi).
+1. Select **Download**.
 1. In the pop-up, select **Run**.
 1. On the **Microsoft SQL Server Data-Tier Application Framework (x64)** window, select **Next**.
 1. Read the end-user license agreement, if you agree, select **I accept the terms in the License Agreement**. Then select **Next**.
@@ -57,7 +56,7 @@ In this exercise, you'll install the DEA on the virtual machine you created earl
 
 ## Install the Database Experimentation Assistant
 
-1. Go to [https://www.microsoft.com/download/details.aspx?id=54090](https://www.microsoft.com/download/details.aspx?id=54090).
+1. Go to [https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe](https://github.com/MicrosoftDocs/mslearn-test-optimize-sql-server-databases-using-dea/blob/master/DatabaseExperimentationAssistantV2.6.exe).
 1. Select **Download**.
 1. In the pop-up, select **Run**.
 1. On the screen, you'll see **Microsoft Software License Terms**. Read the terms and, if you agree, select **I agree to the license terms and conditions**. Then select **Install**.

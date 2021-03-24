@@ -38,7 +38,7 @@ Follow these steps to assign the Virtual Machine Contributor role to a user at t
 
 ## Remove access
 
-In RBAC, to remove access, you remove a role assignment.
+In Azure RBAC, to remove access, you remove a role assignment.
 
 1. In the list of role assignments, select the **LabUser-_XXXXXXX_** user with the Virtual Machine Contributor role.
 

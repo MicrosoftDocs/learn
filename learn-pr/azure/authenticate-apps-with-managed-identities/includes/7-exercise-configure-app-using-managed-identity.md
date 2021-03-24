@@ -45,53 +45,49 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
 1. Examine the `Main` method:
 
     ```C#
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
-        AzureServiceTokenProvider azureServiceTokenProvider = new AzureServiceTokenProvider();
-        GetSecretFromKeyVault(azureServiceTokenProvider).Wait();
+        await GetSecretFromKeyVault().ConfigureAwait(false);
     }
     ```
 
-    This method is the entry point of the application. The code obtains a reference to an `AzureServiceTokenProvider` object. This object can issue access tokens for resources based on their credentials. The code then runs the `GetSecretFromKeyVault` method by using the token provider.
+    This method is the entry point of the application which just calls the `GetSecretFromKeyVault` method.
 
 1. Go down to the `GetSecretFromKeyVault` method. Examine the method's first block of code:
 
     ```C#
-    private static async Task GetSecretFromKeyVault(AzureServiceTokenProvider azureServiceTokenProvider)
+    private static async Task GetSecretFromKeyVault()
     {
-        KeyVaultClient keyVaultClient =
-            new KeyVaultClient(
-                new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback));
+        var keyVaultName = "<key vault name>";
+        Uri keyVaultUri = new Uri($"https://{keyVaultName}.vault.azure.net");
+
+        SecretClient secretClient = new SecretClient(keyVaultUri, new DefaultAzureCredential());
         ...
     }
     ```
 
-    This code uses the `AzureServiceTokenProvider` object to authenticate the client that made the request. Behind the scenes, this code obtains the system-managed identity for the VM that runs the code. It then generates a `KeyVaultClient` object that contains this ID. You can use this `KeyVaultClient` object to try to access the key vault.
+    Replace `"<key vault name>"` with your key vault name. This code uses the `DefaultAzureCredential` to authenticate the client that will make the request. Behind the scenes, this code obtains the system-managed identity for the VM that runs the code. It then generates an instance of `SecretClient` that will utilize this authentication scheme. You can use this `SecretClient` instance to access secrets in the key vault.
 
 1. Look at the next part of the code:
 
     ```C#
-    var keyVaultName = "<key vault name>";
     var keyVaultSecretName = "<secret name>";
 
     try
     {
-        var secret = await keyVaultClient
-            .GetSecretAsync($"https://{keyVaultName}.vault.azure.net/secrets/{keyVaultSecretName}")
-            .ConfigureAwait(false);
+        var secret = await secretClient.GetSecretAsync(keyVaultSecretName).ConfigureAwait(false);
 
         Console.WriteLine($"Secret: {secret.Value}");
-
     }
     catch (Exception exp)
     {
         Console.WriteLine($"Something went wrong: {exp.Message}");
     }
     ```
- 
-    Replace `"<key vault name>"` with your key vault name. Replace `<secret name>` with `"DBCredentials"`, which is the name of the secret that you created in the key vault.
 
-    This block of code calls the `GetSecretAsync` method of the `KeyVaultClient` object to retrieve a specific secret and display its value. If the client doesn't have permission to access the key, then this code throws an exception and displays an error message.
+     Replace `<secret name>` with `"DBCredentials"`, which is the name of the secret that you created in the key vault.
+
+    This block of code calls the `GetSecretAsync` method of the `SecretClient` to retrieve a specific secret and display its value. If the client doesn't have permission to access the key, then this code throws an exception and displays an error message.
 
     > [!NOTE]
     > No password, certificate, or client secret is stored in the code.

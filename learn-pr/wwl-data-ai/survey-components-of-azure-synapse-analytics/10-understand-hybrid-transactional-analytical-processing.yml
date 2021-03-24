@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.survey-components-of-azure-synapse-analytics.understand-hybrid-transactional-analytical-processing-with-link
+title: Understand hybrid transactional analytical processing with Azure Synapse Link
+metadata:
+  title: Understand hybrid transactional analytical processing with Azure Synapse Link
+  description: "Understand hybrid transactional analytical processing with Azure Synapse Link"
+  ms.date: 11/19/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-understand-hybrid-transactional-analytical-processing.md)]

@@ -4,6 +4,15 @@ In this unit, you'll learn what you need to get started with Maven archetypes. Y
 
 ## Getting started with Maven archetypes and Azure Functions
 
+### Using Maven to automate building Java web apps
+
+Maven is the most used Java build tool that can be used for building and managing any Java-based project. It helps streamline the processes for how developers build Java projects with a standard way to build the projects, a clear definition of what the project consisted of, an easy way to publish project information, and a way to share JARs across several projects. Maven's goals are to:
+
+- Make the build process easier
+- Transparently migrate to new features
+- Provide a uniform build system
+- Implement guidelines about best practice in development
+
 As a Java developer, you're already familiar with using Maven to create and compile your applications. When you're setting up your development environment, you probably keep up with the latest versions of Maven. As you complete the exercises in this module, you'll use the Azure Cloud Shell in the Learn sandbox, which has all of the necessary pieces in place for you to build Java applications with Maven that are ready to deploy to Azure.
 
 > [!NOTE]
@@ -25,7 +34,7 @@ Plugins define tasks as *goals*, and a plugin may have several goals. For exampl
 
 A Maven Project Object Model (POM) file is an XML-based configuration file that is part of your application's project files. POM files are named *pom.xml*, and they contain the definitions for each of the plugins that your application needs, including the required parameters for each plugin.
 
-When building or deploying an Azure function using Maven, you'll need to make sure to include the `azure-functions-maven-plugin` into your *pom.xml* file. The details for adding that plugin to your *pom.xml* file are in the **Updating your *pom.xml* file** section of this unit.
+When building or deploying an Azure function using Maven, you'll need to make sure to include the `azure-functions-maven-plugin` into your *pom.xml* file. The details for adding that plugin to your *pom.xml* file are in the **Using archetypes interactively** section of this unit.
 
 ### What are Maven archetypes?
 
@@ -48,55 +57,7 @@ Where:
 | `archetype:generate` | Instructs Maven to generate a project from an archetype. |
 | `-DarchetypeGroupId` | Specifies the group ID of the archetype, which is usually the creator of the archetype. |
 | `-DarchetypeArtifactId` | Specifies the ID of the archetype, which is the Azure Functions archetype in this example. |
-
-#### Using archetypes in batch mode
-
-You could run Maven in batch mode, where you provide all of the requisite information that is necessary to generate your project on the command line. For example:
-
-```bash
-mvn archetype:generate -B \
-  -DarchetypeGroupId="com.microsoft.azure" \
-  -DarchetypeArtifactId="azure-functions-archetype" \
-  -Dversion="1.0-SNAPSHOT" \
-  -DgroupId="com.contoso.functions" \
-  -DartifactId="event-reporting"
-```
-
-Where:
-
-| Parameter | Description |
-|---|---|
-| `archetype:generate` | Instructs Maven to generate a project from an archetype. |
-| `-B` | Instructs Maven to run in batch (non-interactive) mode. |
-| `-DarchetypeGroupId` | Specifies the group ID of the archetype. |
-| `-DarchetypeArtifactId` | Specifies the ID of the archetype itself. |
-| `-Dversion` | Specifies the version of your project. |
-| `-DgroupId` | Specifies the group ID of your project. |
-| `-DartifactId` | Specifies the artifact ID of your project. |
-
-Using Maven in batch mode is great for automating your build processes, because Maven will build your applications without human interaction.
-
-#### Specifying archetypes versions
-
-While you should usually try to use the latest version of an archetype, if you need to specify a different version, you can add the version number to the command line. For example:
-
-```bash
-mvn archetype:generate \
-  -DarchetypeGroupId="com.microsoft.azure" \
-  -DarchetypeArtifactId="azure-functions-archetype" \
-  -DarchetypeVersion="1.26"
-```
-
-Where:
-
-| Parameter | Description |
-|---|---|
-| `archetype:generate` | Instructs Maven to generate a project from an archetype. |
-| `-DarchetypeGroupId` | Specifies the group ID of the archetype. |
-| `-DarchetypeArtifactId` | Specifies the ID of the archetype. |
-| `-DarchetypeVersion` | Specifies the version of the archetype. |
-
-## Updating your *pom.xml* file
+| `-DjavaVersion=8` | Use `-DjavaVersion=11` if you want your functions to run on Java 11. |
 
 When you create a project using the `mvn archetype:generate` command, Maven will create a folder for the project, and the root folder will contain your project's *pom.xml* file.
 
@@ -109,11 +70,17 @@ If you specify the `azure-functions-archetype` when you run the `mvn archetype:g
     . . .
     <plugins>
       . . .
-      <plugin>
-         <groupId>com.microsoft.azure</groupId>
-         <artifactId>azure-functions-maven-plugin</artifactId>
-         <version>1.3.2</version>
-         <configuration>
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-functions-maven-plugin</artifactId>
+            <version>${azure.functions.maven.plugin.version}</version>
+            <configuration>
+                <!-- function app name -->
+                <appName>${functionAppName}</appName>
+                <!-- function app resource group -->
+                <resourceGroup>java-functions-group</resourceGroup>
+                <!-- function app service plan name -->
+                <appServicePlanName>java-functions-app-service-plan</appServicePlanName>
              . . .
          </configuration>
       </plugin>
@@ -122,7 +89,7 @@ If you specify the `azure-functions-archetype` when you run the `mvn archetype:g
 </project>
 ```
 
-## Creating a basic function using the Azure Cloud Shell
+### Creating a basic function using the Azure Cloud Shell
 
 You can create a basic Azure Function directly from within the Azure Cloud Shell. Azure ensures that all the required libraries are available to create and build your project, including Maven and the Azure Functions plugin.
 

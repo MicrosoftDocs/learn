@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-microsoft-defender-for-endpoints-environment
+metadata:
+  title: Deploy the Microsoft Defender for Endpoint environment
+  description: "Deploy the Microsoft Defender for Endpoint environment"
+  ms.date: 01/22/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+title: Deploy the Microsoft Defender for Endpoint environment
+summary: Learn how to deploy the Microsoft Defender for Endpoint environment, including onboarding devices and configuring security.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Create a Microsoft Defender for Endpoint environment
+  - Onboard devices to be monitored by Microsoft Defender for Endpoint
+  - Configure Microsoft Defender for Endpoint environment settings
+prerequisites: |
+  Basic understanding of Microsoft 365.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- m365
+- windows
+- m365-threat-protection
+units:
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.introduction
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.create-your-environment
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.onboard-devices
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.manage-access
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.create-manage-roles-for-role-based-access-control
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.configure-device-groups
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.configure-environment-advanced-features
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.knowledge-check
+- learn.wwl.deploy-microsoft-defender-for-endpoints-environment.summary-resources
+badge:
+  uid: learn.wwl.deploy-microsoft-defender-for-endpoints-environment.badge

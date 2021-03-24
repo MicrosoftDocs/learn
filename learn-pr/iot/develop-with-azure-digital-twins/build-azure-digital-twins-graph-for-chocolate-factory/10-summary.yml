@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.build-azure-digital-twins-graph-for-chocolate-factory.summary
+metadata:
+  description: Summary
+  ms.date: 01/28/2021
+  author: raniabayoumy
+  ms.author: rabayoum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-summary.md)]

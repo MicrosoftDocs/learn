@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.copy-exercise
+title: Exercise - Use copy to reduce repetition
+metadata:
+  title: Exercise - Use copy to reduce repetition
+  description: Use the _copy_ element to create multiple instances and remove repetitive parts of your template.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/9-copy-exercise.md)]

@@ -3,8 +3,8 @@ uid: learn.wwl.detect-mitigate-unfairness-models-with-azure-machine-learning.exe
 title: Exercise - Use Fairlearn with Azure Machine Learning
 metadata:
   title: Exercise - Use Fairlearn with Azure Machine Learning
-  description: "Get hands-on with Fairlearn and Azure Machine Learning"
-  ms.date: 11/10/2020
+  description: "Exercise - Use Fairlearn with Azure Machine Learning"
+  ms.date: 12/01/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

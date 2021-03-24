@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.exercise-load-data
+title: 'Exercise: Load data in spark notebooks'
+metadata:
+  title: 'Exercise: Load data in spark notebooks'
+  description: "Exercise: Load data in spark notebooks"
+  ms.date: 12/01/2020
+  author: wwlpublish
+  ms.author: kawaaije
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-exercise-load-data.md)]

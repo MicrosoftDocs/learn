@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: introduction-azure-firewall
+metadata:
+  title: "Introduction to Azure Firewall"
+  description: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Firewall"
+summary: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
+abstract: |
+  After completing this module, you’ll be able to:
+  - Explain how Azure Firewall and Azure Firewall Manager work together to protect Azure virtual networks. 
+  - Evaluate whether Azure Firewall is the right solution to protect your Azure virtual networks from malicious incoming and outgoing traffic. 
+  - Evaluate whether Azure Firewall Manager is the right solution for deploying policies across multiple firewalls.
+  - Identify and describe use cases for Azure Firewall and Azure Firewall Manager. 
+prerequisites: |
+  To get the best learning experience from this module, you should have: 
+  - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
+  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
+  - Beginner-level knowledge of cloud computing, including scalability and availability.  
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- technology-manager
+- devops-engineer
+products:
+- azure-firewall
+- azure-firewall-manager
+units:
+- learn.introduction-azure-firewall.1-introduction
+- learn.introduction-azure-firewall.2-what-is-azure-firewall
+- learn.introduction-azure-firewall.3-how-azure-firewall-works
+- learn.introduction-azure-firewall.4-when-to-use-azure-firewall
+- learn.introduction-azure-firewall.5-knowledge-check
+- learn.introduction-azure-firewall.6-summary
+badge:
+  uid: learn.introduction-azure-firewall.badge

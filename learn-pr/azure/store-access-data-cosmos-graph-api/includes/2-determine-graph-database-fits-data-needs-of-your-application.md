@@ -14,15 +14,21 @@ In order to understand graph databases, you first need to know what we mean by a
 |---|---|
 | **Vertices** or **Nodes** | Vertices represent objects. For example: a person, a place, or a product. |
 | **Edges** or **Relationships** | Edges denote relationships between vertices. For example: a person might know another person, or have visited a place. |
-| **Properties** | Properties express information about the vertices and edges. For example:<ul><li>Vertices properties might include the name and age of a person.</li><li>Edge properties might include a time stamp of a purchase or a hierarchical affiliation between coworkers.</li></ul> |
+| **Properties** | Properties express information about the vertices and edges. For example:<ul><li>Vertices' properties might include the name and age of a person.</li><li>Edge properties might include a time stamp of a purchase or a hierarchical affiliation between coworkers.</li></ul> |
 
 More formally, this data model is known as a *Property Graph Model*, and Azure Cosmos DB supports this model.
 
 ![Screenshot showing the data graph and their relationships](../media/2-graph-data-relationships.png)
 
-Typically graph databases are implemented as NoSQL stores, such as Azure Cosmos DB or MongoDB, and usually require schema flexibility and rapid iteration. With the graph data model, changes to the data model can be achieved with little or no impact to the application. Because relationships are treated as data rather than schema structure, there are many scenarios where graph databases are useful, as they let you model and store efficiently in a non-tabular format.
+Typically, graph databases are implemented as NoSQL stores, such as Azure Cosmos DB or MongoDB, and usually require schema flexibility and rapid iteration. With the graph data model, changes to the data model can be achieved with little or no impact to the application. Because relationships are treated as data rather than schema structure, there are many scenarios where graph databases are useful, as they let you model and store efficiently in a non-tabular format.
 
 ## Strengths and weaknesses of graph databases
+
+Strengths and weaknesses of graph databases fall under the following criteria:
+
+- Performance
+- Flexibility
+- Deficiencies
 
 ### Performance
 
@@ -32,19 +38,19 @@ With traditional relational databases, the performance of relationship queries d
 
 In graph databases, it's easy to add to an existing structure without affecting functionality. This flexibility allows the graph database model to dictate change, rather than being forced to adapt to a tabular way of seeing your data in a standard relational database.
 
-### Weaknesses
+### Deficiencies
 
 Graph databases are not as efficient at processing high volumes of transactions, nor are they as effective at handling queries that traverse an entire database.
 
-Graph databases do not create better relationships; instead they provide rapid data retrieval for connected data. This increases the need for efficient data design, because any performance gains from graph searches can be reduced by failing to model the relationships between your nodes efficiently.
+Graph databases do not create better relationships; instead, they provide rapid data retrieval for connected data. This increases the need for efficient data design, because any performance gains from graph searches can be reduced by failing to model the relationships between your nodes efficiently.
 
 ## Examining the data model for fit
 
-As listed earlier, there are two fundamental components that form a graph:
+As previously described, there are two fundamental components that form a graph:
 
-- **Nodes**, which are also known as **Vertices**
+- **Nodes**, which are also known as **Vertices**.
 
-- **Relationships**, which are also known as **Edges**
+- **Relationships**, which are also known as **Edges**.
 
 ### Nodes or Vertices
 
@@ -74,7 +80,7 @@ For example, you may identify relationships such as these:
 
 ### Properties
 
-In this unit, we have been discussing the process of creating a basic graph data model for an e-commerce company, which shows the interactions between customers, products, and orders.
+In this unit, we have been describing the process of creating a basic graph data model for an e-commerce company, which shows the interactions between customers, products, and orders.
 
 When you have identified your nodes and relationships, your data model begins to take shape. For example:
 
@@ -89,13 +95,13 @@ When you have identified your nodes and relationships, your data model begins to
 
 You can further enhance your data model by defining attributes for each of these entities as key-value properties.
 
-Properties are name-value pairs that you can define for nodes or relationships, which allow you to store relevant data about the node or relationship your are describing.
+Properties are name-value pairs that you can define for nodes or relationships, which enable you to store relevant data about the node or relationship you're describing.
 
 To determine what kind of properties you can use, you could ask some relevant questions about the data you are capturing:
 
- - When did the customer place the order?
- - What was the product price?
- - When did the employee submit the invoice?
- - Which invoice does the order belong to?
+- When did the customer place the order?
+- What was the product price?
+- When did the employee submit the invoice?
+- Which invoice does the order belong to?
 
-The flexible nature of a graph database allows you to grow and change your model over time, and to add or remove relationships, nodes, and properties.
+The flexible nature of a graph database enables you to grow and change your model over time, and to add or remove relationships, nodes, and properties.

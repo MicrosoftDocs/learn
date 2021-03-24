@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-resource-governance-capabilities-azure.describe-cloud-adoption-framework
+title: Describe the cloud adoption framework
+metadata:
+  title: Describe the cloud adoption framework
+  description: "Describe the cloud adoption framework"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-cloud-adoption-framework.md)]

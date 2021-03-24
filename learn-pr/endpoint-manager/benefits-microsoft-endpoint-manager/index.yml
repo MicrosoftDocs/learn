@@ -26,7 +26,7 @@ levels:
 roles:
 - administrator
 products:
-- azure
+- mem
 units:
 - learn.benefits-microsoft-endpoint-manager.1-introduction
 - learn.benefits-microsoft-endpoint-manager.2-secure-and-intelligent

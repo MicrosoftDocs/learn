@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-microsoft-security-compliance-principles.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the best way of staying current with Microsoft compliance documentation available through the Service Trust Portal?"
+    choices:
+    - content: "Save the documents to your My Library."
+      isCorrect: true
+      explanation: "That's correct. By saving the documents to your My Library you will be prompted to say when you want to be notified of updates."
+    - content: "Print each document so you can easily refer to them."
+      isCorrect: false
+      explanation: "That's incorrect. Printing the documents will not inform you of any changes to the documents."
+    - content: "Download each document."
+      isCorrect: false
+      explanation: "That's incorrect. Downloading the documents will not keep you notified of any updates to the documents."
+  - content: "A compliance admin is looking for regulatory information relevant to a specific region, which one link will provide the needed information?"
+    choices:
+    - content: "Microsoft Privacy Principles."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft’s Privacy Principles set out the guiding principles for security decisions but do not provide compliance and regulatory documentation."
+    - content: "Service Trust Portal."
+      isCorrect: true
+      explanation: "That's correct. From the Service Trust Portal there are links to different sites containing compliance and regulatory documentation."
+    - content: "Microsoft Compliance Manager."
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Compliance Manager measures your progress in reducing risk."

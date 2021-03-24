@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-general-security-network-security-features
 metadata:
-  title: "Azure Fundamentals part 4: Describe general security and network security features"
-  description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted.
+  title: "Azure Fundamentals part 4: Describe general security and network security features (AZ-900)"
+  description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted. Prepare for AZ-900.
   brand: azure
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Azure Fundamentals part 4: Describe general security and network security features"
@@ -17,17 +17,49 @@ summary: |
 
   Here are the learning paths in this series:
 
-    - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
-    - [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
-    - [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
-    - Azure Fundamentals part 4: Describe general security and network security features
-    - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
-    - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" role="presentation"></img>
 
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://www.microsoft.com/learning/exam-AZ-900.aspx).
+    [Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  :::column-end:::
+  :::row-end:::
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" role="presentation"></img>
+
+    Part 4: Describe general security and network security features
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" role="presentation"></img>
+
+    [Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" role="presentation"></img>
+
+    [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
+  :::column-end:::
+  :::row-end:::
+
+  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
+video:
+  title: "Azure Fundamentals video: Describe general security and network security features"
+  url: https://www.microsoft.com/videoplayer/embed/RE4MhFV
 iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
 levels:
 - beginner

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-settings-for-alerts-detections-microsoft-defender-for-endpoint.manage-indicators
+title: Manage indicators
+metadata:
+  title: Manage indicators
+  description: "Manage indicators"
+  ms.date: 01/25/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-manage-indicators.md)]

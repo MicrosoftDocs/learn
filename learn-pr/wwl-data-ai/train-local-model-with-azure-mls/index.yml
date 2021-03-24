@@ -2,8 +2,8 @@
 uid: learn.data-ai.train-local-model-with-azure-mls
 metadata:
   title: Train a machine learning model with Azure Machine Learning
-  description: "Learn how to use Azure Machine Learning to train a model and register it in a workspace."
-  ms.date: 07/16/2020
+  description: "Train a machine learning model with Azure Machine Learning"
+  ms.date: 01/27/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,9 +12,9 @@ title: Train a machine learning model with Azure Machine Learning
 summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
 abstract: |
   In this module, you will learn how to:
-  - Use an Estimator to run a model training script as an Azure Machine Learning experiment.
+  - Use a ScriptRunConfig to run a model training script as an Azure Machine Learning experiment.
   - Create reusable, parameterized training scripts.
-  - Register models, including metadata such as performance metrics.
+  - Register trained models.
 prerequisites: |
   - Knowledge of Python
   - Experience of training machine learning models using frameworks such as scikit-learn

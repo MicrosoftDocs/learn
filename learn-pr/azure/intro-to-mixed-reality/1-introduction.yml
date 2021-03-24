@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-mixed-reality.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: An introduction to the Learn module, its objectives, and prerequisites.
+  ms.date: 11/17/2020
+  author: Sean-Kerawala
+  ms.author: sekerawa 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

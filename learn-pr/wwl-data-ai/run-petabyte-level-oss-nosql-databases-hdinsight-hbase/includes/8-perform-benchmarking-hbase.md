@@ -10,7 +10,7 @@ If you wish to perform the steps in the exercise, ensure you have the below:
 
 To provision HDInsight HBase with the new experience on Azure Management Portal, perform the below steps.
 
-1. Go to the [Azure portal](http://portal.azure.com). Log in using your Azure account credentials.
+1. Go to the [Azure portal](https://portal.azure.com). Log in using your Azure account credentials.
 
 	![Logging into the Azure Portal.](../media/log-into-azure.png)
 

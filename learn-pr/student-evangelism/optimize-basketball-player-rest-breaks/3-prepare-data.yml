@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.3-prepare-data
+metadata:
+  title: Prepare data by adding row qualifiers
+  description: Prepare data by adding row qualifiers
+  ms.date: 12/14/2020
+  author: sguthals 
+  ms.author: shanama 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare data by adding row qualifiers
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-prepare-data.md)]
