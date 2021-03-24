@@ -1,4 +1,4 @@
-Let's start with a definition and an overview of core features of Firewall Manager. This overview should help you determine when you need to use Firewall Manager and whether it is a good fit for your organizational requirements. <!--Andy, I added this first bit as an overview, and moved the definition to the "what is product" heading below-->
+Let's start with a definition and an overview of core features of Firewall Manager. This overview should help you determine when you need to use Firewall Manager and whether it is a good fit for your organizational requirements.
 
 ## What is centralized firewall management?
 
