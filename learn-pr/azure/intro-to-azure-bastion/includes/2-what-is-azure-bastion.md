@@ -30,7 +30,7 @@ The following table describes the features that are available after you deploy A
 
 By implementing Azure Bastion, you can manage the Azure VMs within a configured Azure virtual network by using either RDP or SSH, without needing to expose those management ports to the public internet. By using Azure Bastion, you can:
 
-- Connect easily to your Azure VMs. Connect your RDP and SSH sessions directly in the Azure portal using a single-click experience.
+- Connect easily to your Azure VMs. Connect your RDP and SSH sessions directly in the Azure portal.
 - Avoid exposing management ports to the internet. Sign in to your Azure VMs and avoid public internet exposure by using SSH and RDP with private IP addresses only.
 - Avoid extensive reconfiguration of your existing network infrastructure. Integrate and traverse existing firewalls and security perimeters by using a modern HTML5-based web client and standard SSL ports.
 - Simplify sign in. Use your SSH keys for authentication when signing in to your Azure VMs.
