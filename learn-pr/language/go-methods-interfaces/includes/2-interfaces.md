@@ -190,7 +190,7 @@ When you run the preceding code, you get something like the following output (sh
 ....
 ```
 
-Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to the terminal the content you've obtained from the call to the GitHub API. Let's say that you want to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/#Copy), you see the following:
+Notice that the `io.Copy(os.Stdout, resp.Body)` call is the one that prints to the terminal the content you've obtained from the call to the GitHub API. Let's say that you want to write your own implementation to shorten the content you see in the terminal. When you look at the [source of the `io.Copy` function](https://golang.org/pkg/io/#Copy?azure-portal=true), you see the following:
 
 ```go
 func Copy(dst Writer, src Reader) (written int64, err error)
