@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-backend-apis.exercise-set-up-data-feed
+title: Exercise - Set up your data feed
+metadata:
+  unitType: exercise
+  title: Exercise - Set up your data feed
+  description: In this unit you will set up the data feed for the bus route data using JSON.
+  ms.date: 3/24/2021 
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-set-up-data-feed.md)]
