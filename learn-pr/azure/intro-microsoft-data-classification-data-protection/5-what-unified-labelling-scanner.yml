@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.data-classification-and-data-protection.5-what-unified-labelling-scanner
-title: What is Unified labelling scanner?
+uid: learn.azure.data-classification-and-data-protection.5-what-unified-labeling-scanner
+title: What is unified labeling scanner?
 metadata:
-  title: What is Unified labelling scanner?
-  description: What is Unified labelling scanner?
+  title: What is unified labeling scanner?
+  description: What is unified labeling scanner?
   ms.date: 11/13/2020
   author: micrum
   ms.author: micrum
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-what-unified-labelling-scanner.md)]
+  [!include[](includes/5-what-unified-labeling-scanner.md)]
