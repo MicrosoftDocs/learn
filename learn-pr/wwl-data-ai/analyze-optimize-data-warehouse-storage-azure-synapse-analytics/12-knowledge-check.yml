@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/23/2021
+  ms.date: 03/24/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -35,25 +35,14 @@ quiz:
     - content: "`NVARCHAR(128)`"
       isCorrect: false
       explanation: "Incorrect. Non-variable data types provide better performance."
-  - content: "Which one is **NOT** a benefit of materialized views?"
+  - content: "Which one is a benefit of materialized views?"
     choices:
     - content: "Reducing the execution time for complex queries with JOINs and aggregate functions."
-      isCorrect: false
-      explanation: "Incorrect. Materialized views help to improve complex query performance. The more complex the query, the higher the potential for execution-time saving."
-    - content: "The ability to redistribute a base table."
-      isCorrect: false
-      explanation: "Incorrect. The data in a materialized view **can be** distributed differently from the base tables."
-    - content: "Increased high availability and resiliency benefits."
       isCorrect: true
-      explanation: "Correct. Data in materialized views gets the same high availability and resiliency benefits as data in regular tables."
-  - content: "What are the benefits of minimally logging SQL operations?"
-    choices:
-    - content: "Improved performance compared to fully logged operations."
+      explanation: "Correct. Materialized views help to improve complex query performance. The more complex the query, the higher the potential for execution-time saving."
+    - content: "Increased resiliency benefits."
       isCorrect: false
-      explanation: "Correct. As much less information is tracked in the transaction log, a minimally logged operation performs better than a similarly sized fully logged operation."
-    - content: "Increased I/O efficiency."
-      isCorrect: true
-      explanation: "Correct. With a minimally logged operation, fewer writes go the transaction log, a much smaller amount of log data is generated, and so is more I/O efficient."
-    - content: "Provide a better point-in-time restore capability."
+      explanation: "Incorrect. Data in materialized views gets the same resiliency benefits as data in regular tables."
+    - content: "Increased high availability."
       isCorrect: false
-      explanation: "Incorrect. If the database is damaged or lost when minimal logging is in effect, you cannot recover the database to the point of failure."
+      explanation: "Incorrect. Data in materialized views gets the same high availability as data in regular tables."

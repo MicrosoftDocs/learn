@@ -1,4 +1,4 @@
-## Rules for Minimally Logged Operations
+## Rules for minimally logged operations
 
 Unlike fully logged operations, which use the transaction log to keep track of every row change, minimally logged operations keep track of extent allocations and meta-data changes only. Therefore, minimal logging involves logging only the required information to roll back the transaction after a failure or for an explicit request (ROLLBACK TRAN). If the database is damaged or lost when minimal logging is in effect, you cannot recover the database to the point of failure. As much less information is tracked in the transaction log, a minimally logged operation performs better than a similarly sized fully logged operation. Furthermore, because fewer writes go the transaction log, a much smaller amount of log data is generated, and so is more I/O efficient.
 
@@ -13,7 +13,7 @@ Some operations can be minimally logged to reduce their impact on transaction lo
 - DROP TABLE
 - ALTER TABLE SWITCH PARTITION
 
-**Minimal logging with bulk load**
+## Minimal logging with bulk load
   
 CTAS and INSERT...SELECT are both bulk load operations. However, both are influenced by the target table definition and depend on the load scenario. The following table explains when bulk operations are fully or minimally logged:  
 

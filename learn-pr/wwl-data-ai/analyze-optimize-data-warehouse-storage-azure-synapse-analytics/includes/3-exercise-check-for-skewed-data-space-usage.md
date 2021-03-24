@@ -36,7 +36,7 @@
         count(*) DESC
     ```
 
-    ![Customers with most sale transaction items](../media/data-skew-1.png)
+    ![Initial look at the customers with most sale transaction items](../media/data-skew-1.png)
 
     Now find the customers with the least sale transaction items:
 
@@ -249,7 +249,7 @@
 
     Analyze the results:
 
-    ![Detailed table space usage](../media/table-space.png)
+    [![Detailed table space usage](../media/table-space.png)](../media/table-space.png#lightbox)
 
     Notice the significant difference between the space used by `CLUSTERED COLUMNSTORE` and `HEAP` or `CLUSTERED` tables. This provides a clear indication on the significant advantages columnstore indexes have.
 

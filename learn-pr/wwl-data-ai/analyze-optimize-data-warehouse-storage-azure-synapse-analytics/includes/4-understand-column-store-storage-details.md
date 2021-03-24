@@ -1,12 +1,10 @@
-# Understanding column store storage details
-
 Since a columnstore index scans a table by scanning column segments of individual rowgroups, maximizing the number of rows in each rowgroup enhances query performance. When rowgroups have a high number of rows, data compression improves which means there is less data to read from disk. The number of rows in a rowgroup determines the rowgroup's quality.
 
 For best query performance, the goal is to maximize the number of rows per rowgroup in a columnstore index. A rowgroup can have a maximum of 1,048,576 rows. It's okay to not have the maximum number of rows per rowgroup. Columnstore indexes achieve good performance when rowgroups have at least 100,000 rows.
 
 During a bulk load or columnstore index rebuild, sometimes there isn't enough memory available to compress all the rows designated for each rowgroup. When memory pressure is present, columnstore indexes trim the rowgroup sizes so compression into the columnstore can succeed.
 
-The DMV [sys.dm_pdw_nodes_db_column_store_row_group_physical_stats](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) exposes useful information such as number of rows in rowgroups and the reason for trimming, if there was trimming.
+The DMV [sys.dm_pdw_nodes_db_column_store_row_group_physical_stats](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) exposes useful information such as number of rows in rowgroups and the reason for trimming, if there was trimming.
 
 There are two columns from `dm_pdw_nodes_db_column_store_row_group_physical_stats` worth looking into in detail. The `state_desc` column provides useful information on the state of a row group:
 
