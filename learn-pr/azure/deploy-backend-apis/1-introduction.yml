@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: {{learnRepo}}.deploy-backend-apis.introduction  
+uid: learn.azure.deploy-backend-apis.introduction  
 title: Introduction  
 metadata:
   unitType: introduction  
-  title: # user input: module title for browser tab and search results
-  description: # user input: a description for site search and SEO
+  title: Introduction
+  description: In this module we will be building an app for real-time bus route data and mapping using a number of Azure services.
   ms.date: 3/24/2021  
-  author: {{githubUsername}}  
-  ms.author: {{msUser}}  
+  author: amthomas46
+  ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: # user input: the estimate time to complete the unit
+durationInMinutes: 05
 content: |
   [!include[](includes/1-introduction.md)]
