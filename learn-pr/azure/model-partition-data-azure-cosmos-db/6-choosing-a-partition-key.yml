@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.choosing-a-partition-key
+uid: learn.azure.model-partition-data-azure-cosmos-db.choosing-a-partition-key
 title: Choose a partition key 
 metadata: 
   title: Choose a partition key
@@ -7,7 +7,7 @@ metadata:
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 07
 content: |
   [!include[](includes/6-choosing-a-partition-key.md)]

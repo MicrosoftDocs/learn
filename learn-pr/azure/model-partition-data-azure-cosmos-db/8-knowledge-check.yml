@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+uid: learn.azure.model-partition-data-azure-cosmos-db.knowledge-check
+title: Knowledge check
 metadata:
   type: knowledge_check
   title: Knowledge check

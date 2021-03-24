@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.embed-or-reference-data
+uid: learn.azure.model-partition-data-azure-cosmos-db.embed-or-reference-data
 title: When to embed or reference data 
 metadata: 
   title: When to embed or reference data
@@ -7,7 +7,7 @@ metadata:
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
   [!include[](includes/4-embed-or-reference-data.md)]

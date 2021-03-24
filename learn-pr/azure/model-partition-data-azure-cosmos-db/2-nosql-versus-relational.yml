@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.nosql-versus-relational
+uid: learn.azure.model-partition-data-azure-cosmos-db.nosql-versus-relational
 title: What's the difference between NoSQL and relational databases?
 metadata:
   type: learning-content  
@@ -8,7 +8,7 @@ metadata:
   ms.date: 3/9/2021  
   author: markjbrown  
   ms.author: mjbrown  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 05
 content: |
   [!include[](includes/2-nosql-versus-relational.md)]
