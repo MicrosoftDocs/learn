@@ -38,6 +38,7 @@ When a user wants access to a protected document, the Azure Information Protecti
 ## What is Microsoft Information Protection suite?
 
 Microsoft Information Protection is the common information protection stack that's used by Azure Information Protection's unified labeling client. The Azure Information Protection unified labeling client extends labeling, classification, and protection capabilities to additional file types, and to File Explorer and PowerShell. For example, in File Explorer, right-click or access the context menu for one or more files and select **Classify and protect** to manage the Azure Information Protection functionality on the selected files.
+
 :::image type="content" source="../media/2-protect-from-file-explorer.png" alt-text="Image depicts how File Explorer is used to help protect a file.":::
 
 Microsoft Information Protection also includes components, such as:
