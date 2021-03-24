@@ -8,7 +8,12 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+# Goal
+
+In this session, we will examine the benchmarking results to verify the performance tips we just discussed.
+
+We will focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We will also show FIO results to examine some performance practice.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,8 +25,12 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+
+## Benchmarking Tools
+
+SPEC SFS® suite is a standard industry benchmark for electronic design automation (EDA). Typical EDA workload consists of functional and physical phases. The functional phase predominately drives random I/O and filesystem metadata operations, while the physical phase drives large block sequential reads and writes.
+
+FIO is an I/O tool which can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of storage target.
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -33,7 +42,26 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+
+## SPEC EDA benchmark
+
+The graph below demonstrates the I/O and latency curves, examining some combinations of below performance practices comparing to "default" that none were applied.
+
+- nocto,actimeo=600
+- sysctl tuned
+- nconnect=16
+
+You will see the I/O (operations per second) will boost and still maintaining low latency (less than 1 millisecond) when all the above three were applied.
+
+![SPEC EDA Results (1)](../media/specedaresults1.png)
+
+The graph below demonstrates that NFS3 performs much better than NFS 4.1
+
+![SPEC EDA NFS3 versus NFS4.1](../media/specedanfs.png)
+
+![SPEC EDA rsize/wsize](../media/specedarsizewsize.png)
+
+
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
