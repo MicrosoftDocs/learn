@@ -21,7 +21,7 @@ prerequisites: |
   - A GitHub account
   - Basic knowledge of Git concepts such as repositories and cloning, as described in [Using Git version control tools in Visual Studio Code](https://docs.microsoft.com/learn/modules/use-git-from-vs-code/)
   - Visual Studio Code
-iconUrl: /learn/achievements/github/introduction-to-github.svg
+iconUrl: /learn/achievements/github/introduction-to-github-using-visual-studio-code.svg
 ratingEnabled: true
 levels:
 - beginner

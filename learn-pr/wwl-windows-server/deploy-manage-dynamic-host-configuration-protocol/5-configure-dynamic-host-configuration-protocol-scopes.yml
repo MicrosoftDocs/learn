@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-manage-dhcp.configure-dhcp-scopes
+title: Configure DHCP scopes
+metadata:
+  title: Configure DHCP scopes
+  description: "Configure DHCP scopes"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-configure-dynamic-host-configuration-protocol-scopes.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "If an administrator configures a DHCP scope with a lease length of four days, when will computers attempt to renew the lease for the first time?"
+    choices:
+    - content: "1 day"
+      isCorrect: false
+      explanation: "That's incorrect. DHCP clients attempt renewal at 1/2 TTL of the lease duration."
+    - content: "2 days"
+      isCorrect: true
+      explanation: "That's correct. DHCP clients attempt renewal at 1/2 TTL of the lease duration."
+    - content: "3 days"
+      isCorrect: false
+      explanation: "That's incorrect. DHCP clients attempt renewal at 1/2 TTL of the lease duration."

@@ -1,4 +1,6 @@
-To migrate your data to Cosmos DB, perform the following steps:
+Having reviewed your migration plan you'll perform the steps needed to create a Cosmos DB database. You've also decided to use the Azure Data Migration Service to complete the online data migration.
+
+In this unit, you'll complete the steps needed to create both a Cosmos DB database and a Data Migration project.
 
 ## Create an Azure Cosmos DB account
 
@@ -22,11 +24,11 @@ Here are the steps to register the Microsoft.DataMigration resource provider:
 
     ![Image showing Subscriptions](../media/2-subscriptions.png)
 
-2. Select your subscription and then click **Resource providers**
+1. Select your subscription and then click **Resource providers**
 
     ![Image showing Resource providers](../media/2-resource-providers.png)
 
-3. In **Filter by name**, type **DataMigration**, and click **Microsoft.DataMigration**.
+1. In **Filter by name**, type **DataMigration**, and click **Microsoft.DataMigration**.
 1. Click **Register**.
 1. Wait until the status is **Registered**.
 
@@ -43,7 +45,7 @@ Here are the steps to migrate the database:
 
     ![Image showing Create Migration Service](../media/2-create-migration-service.png)
 
-5. Wait until the deployment has completed.
+1. Wait until the deployment has completed.
 
 ### Create migration project
 
@@ -56,7 +58,7 @@ Here are the steps to migrate the database:
 
 ### Specify the source database
 
-1. In **Source details**, select **Standard mode**, to use an IP address or server name, **Connection String mode**, to specify a connection string, or **Data from azure storage**, to specify a backup file in Azure Storage.
+1. In **Source details**, select **Standard mode**, to use an IP address or server name, **Connection String mode**, to specify a connection string, or **Data from Azure Storage**, to specify a backup file in Azure Storage.
 1. Specify the remaining connection details based on the **Mode** that you selected.
 1. Click **Save**.
 

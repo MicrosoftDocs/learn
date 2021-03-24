@@ -2,7 +2,7 @@
 uid: learn.azure.manage-deployments-advanced-arm-template-features.dependencies
 title: Control deployment order by specifying dependencies
 metadata:
-  description: Sometimes it's important to control what gets deployed when and it what order. By setting up a dependency between resources, you guarantee that resources are deployed in a set order.
+  description: Sometimes it's important to control what gets deployed when, and in what order. By setting up dependency relationships, you guarantee that resources are deployed in a set order.
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020

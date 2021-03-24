@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.describe-security-management-capabilities-of-azure
+metadata:
+  title: Describe security management capabilities of Azure
+  description: "Describe security management capabilities of Azure"
+  ms.date: 02/11/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe security management capabilities of Azure
+summary: Learn about the capabilities and benefits of Azure’s security management functionality, including Azure Security Center, Azure Defender, security baselines and more.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the security management capabilities of Azure
+  - Describe the benefits and use cases of Azure Defender
+  - Learn about security baselines
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-security-management-capabilities-of-azure.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+units:
+- learn.wwl.describe-security-management-capabilities-of-azure.introduction
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-cloud-security-posture-management-cspm
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-security-center
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-secure-score
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-benefit-use-cases-defender
+- learn.wwl.describe-security-management-capabilities-of-azure.baselines-for-azure
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-different-pricing-tiers
+- learn.wwl.describe-security-management-capabilities-of-azure.knowledge-check
+- learn.wwl.describe-security-management-capabilities-of-azure.summary-resources
+badge:
+  uid: learn.wwl.describe-security-management-capabilities-of-azure.badge

@@ -3,7 +3,7 @@ uid: learn.azure.manage-deployments-advanced-arm-template-features.dependencies-
 title: Exercise - Control deployment order of resources
 metadata:
   title: Exercise - Control deployment order of resources
-  description: Use the _dependsOn_ construct to define dependencies between resources and decide deployment order.
+  description: Programming to define dependencies between resources and decide deployment order.
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020

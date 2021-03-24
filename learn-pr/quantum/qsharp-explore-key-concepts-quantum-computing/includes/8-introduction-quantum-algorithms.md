@@ -1,3 +1,5 @@
+Congratulations, space explorer! You've learned the basic concepts on quantum computing, and you've successfully completed the first steps of the training program. 
+
 In this part, you explore some famous quantum computing algorithms.
 
 You'll learn the basics of how they use superposition, interference, and entanglement to achieve a quantum advantage over classical algorithms. In later modules, you'll explore these algorithms in more detail.

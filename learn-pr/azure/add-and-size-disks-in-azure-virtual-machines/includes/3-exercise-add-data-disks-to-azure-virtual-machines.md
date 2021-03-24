@@ -9,7 +9,7 @@ Your goal here is to create a Linux VM and attach a new virtual hard disk (VHD) 
 
 The Azure CLI enables you to set default values so you don't have to repeat them each time you run a command.
 
-Here you'll specify the default Azure location, or region. This is the location where your Azure VM will be placed.
+Here, you'll specify the default Azure location, or region. This is the location where your Azure VM will be placed.
 
 Ideally this would be close to your clients. In this case, select the closest region to you from the locations available to the Azure sandbox.
 
@@ -38,7 +38,7 @@ Here you create a Linux VM to host your web server.
     ```azurecli
     az vm create \
       --name support-web-vm01 \
-      --image UbuntuLTS \
+      --image Canonical:UbuntuServer:16.04-LTS:latest \
       --size Standard_DS1_v2 \
       --admin-username azureuser \
       --generate-ssh-keys
@@ -49,7 +49,7 @@ Here you create a Linux VM to host your web server.
     * The admin username is **azureuser**. In practice, this name can be whatever you like.
     * The `--generate-ssh-keys` argument generates an SSH keypair for you, enabling you to connect to your VM over SSH.
 
-    The VM takes a few minutes to come up. When the VM is ready, you see information about it in JSON format. Here's an example.
+    The VM takes a few minutes to deploy. When the VM is ready, you see information about it in JSON format. Here's an example.
 
     ```json
     {
@@ -102,7 +102,7 @@ For one-time tasks, you might manually connect to your VM over SSH and run the c
 
 Using a script to automate the process has an added benefit &ndash; your script serves as documentation for how the process is performed. Others can read your script to understand how the system is configured. If you need to change the process, you can simply modify your script and test it on a temporary scratch VM before you deploy your change to production.
 
-To automate the process in this lesson, you'll use the _Custom Script Extension_. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system once your VM is up and running.
+To automate the process in this lesson, you'll use the _Custom Script Extension_. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
 You can store your scripts in Azure storage or in a public location such as GitHub. You can run scripts manually or as part of a more automated deployment. Here, you'll run an Azure CLI command to download a pre-made Bash script from GitHub and execute it on your VM.
 
@@ -152,7 +152,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
       --protected-settings '{"commandToExecute": "./add-data-disk.sh"}'
     ```
 
-    While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-add-and-size-disks-in-azure-virtual-machines/master/add-data-disk.sh?azure-portal=true) from a separate browser tab if you'd like.
+    While the command runs, you can [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-add-and-size-disks-in-azure-virtual-machines/master/add-data-disk.sh?azure-portal=true) from a separate browser tab, if you'd like.
 
     To summarize, the script:
 

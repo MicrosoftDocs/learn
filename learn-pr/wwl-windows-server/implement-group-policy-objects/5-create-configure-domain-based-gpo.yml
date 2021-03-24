@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-group-policy-objects.create-configure-domain-based-gpo
+title: Create and configure a domain-based GPO
+metadata:
+  title: Create and configure a domain-based GPO
+  description: "Create and configure a domain-based GPO"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-create-configure-domain-based-gpo.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "In the `Contoso.com` domain, in the Marketing OU, an administrator creates a GPO called Folder Redirection. The administrator wants the policy to apply to all users in the Marketing OU, except for the Marketing managers. What should the administrator do to prevent the Folder Redirection GPO from applying to the managers, but allow all other GPOs linked to the Marketing OU to apply to the managers?"
+    choices:
+    - content: "Create a WMI filter that identifies the managers' computers and use that filter to Deny the application of the GPO to the managers."
+      isCorrect: false
+      explanation: "That's incorrect. A WMI filter is used to identify characteristics of computers. In this case, we want to allow or deny the GPO based on user properties."
+    - content: "Move the marketing manager user accounts to their own child OU in Marketing, and then implement Block Inheritance on the child OU."
+      isCorrect: false
+      explanation: "That's incorrect. Although that would block the application of the Folder Redirection GPO, it would also block all other GPOs from Marketing and the parent domain."
+    - content: "Create a global security group called Marketing Managers and add the marketing manager user accounts to the group. Then configure GPO security filtering to Deny the Apply Policy permission to this group."
+      isCorrect: true
+      explanation: "That's correct. You can use security filtering to allow or deny the application of a GPO to specific users or groups."

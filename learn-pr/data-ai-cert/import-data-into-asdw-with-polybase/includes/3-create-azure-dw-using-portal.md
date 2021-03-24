@@ -1,39 +1,24 @@
-First, let's create a SQL pool named **DemoDW** in Azure SQL Data Warehouse.
+First, let's create a Data Lake Storage named **demodw** in Azure Synapse Analytics.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, read the instructions to understand how to create a blank data warehouse.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. Select **Create a resource** in the upper-left corner of the Azure portal.
-1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)**.
+To create an Azure Synapse Analytics workspace, perform the following steps:
 
-    ![Creating a data warehouse](../media/3-create-azure-data-warehouse.png)
+1. In the Azure portal, click on **+ Create a resource.**
 
-1. From the **Azure Synapse Analytics** blade, create an Azure Synapse Analytics with the following settings:
+1. In the text box, replace “Search the Marketplace” with the text “Azure Synapse” and then click on Azure Synapse Analytics (workspaces preview)
 
-    - Subscription: the name of the subscription you are using in this lab.
+1. Click on **Create.**
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Create the Azure Synapse Analytics Workspace.](../media/create-azure-synapse-workspace.png)
 
-    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab.
+1. In **Basics**, enter your preferred Subscription, Resource group, Region, and then type in a workspace name. 
+ 
+    > [!div class="mx-imgBorder"]
+    > ![Configure the basic settings of the Azure Synapse Analytics Workspace.](../media/create-azure-synapse-workspace-basics-screen.png)
 
-    - Resource group name: **mslearn-demodw**.
+1. You need to select a Data Lake Storage Gen2 account and a container in that account to create a workspace. The simplest choice it to create a new one. By clicking on the **Create new** hyperlink, but there is the option to use an existing one by click on the drop-down list.
 
-    - SQL pool name: **DemoDW**.
-
-    - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
-        - Server name: **sampledatawhxx**, where **xx** are your initials
-        - Server admin login: **dwdbadmin**.
-        - Password: **Pa55w.rd**
-        - Confirm Password: **Pa55w.rd**
-        - Location: choose a **location** near to you.
-        - Select the checkbox to Allow Azure services to access server
-        - click on **OK**
-
-        - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
-
-1. In the **Azure Synapse Analytics** blade, click **Review + create**.
-
-    ![Database settings for new a data warehouse](../media/3-create-db.png)
-
-1. In the **Azure Synapse Analytics** blade, click **Create**. Provisioning takes a few minutes.
-
-Monitor the deployment process through the notifications icon. You successfully create a SQL pool after it deploys.
+1. Select **Review + create > Create.** Your workspace is ready in a few minutes.

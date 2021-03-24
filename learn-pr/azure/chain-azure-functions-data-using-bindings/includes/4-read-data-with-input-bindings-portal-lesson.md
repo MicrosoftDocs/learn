@@ -12,7 +12,7 @@ There are multiple types of input. However, not all types support both input and
 
 - **Table storage** - You can read data and work with Azure Table storage.
 
-A full listing of supported bindings is available: <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings" data-linktype="external" target="az-portal">Here<span class="docon docon-navigate-external" aria-hidden="true"></span></a>
+A full listing of supported bindings is available: <a href="https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?tabs=csharp#supported-bindings" data-linktype="external" target="az-portal">Here<span class="docon docon-navigate-external" aria-hidden="true"></span></a>
 
 To create a binding as an input, you must define the `direction` as `in`. The parameters for each type of binding may vary.
 

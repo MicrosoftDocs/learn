@@ -21,7 +21,7 @@ The next steps deploy a virtual machine into the public and private subnets:
        - inetutils-traceroute
     ```
 
-1. Select Ctrl-S to save the file, and then select Ctrl-Q to close the editor.
+1. Select <kbd>Ctrl+S</kbd> to save the file, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the following command in Cloud Shell to create the **public** virtual machine. Replace `<password>` with a suitable password for the **azureuser** account.
 

@@ -1,10 +1,14 @@
 Now that you understand some of the basics, it's your turn to build a quantum random number generator.
 
-You're likely already familiar with the concept of a random number generator. A random number generator is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+Before using quantum computers to solve important problems, your first task is to improve current security protocols by creating random passwords.
 
-On classical computers, most random number generators don't produce truly random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates the same sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
+You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
 
-The quantum random number generator uses an `H` operation to put a qubit into superposition. The measurement results in a zero or a one. But how can we use this behavior to generate larger numbers?
+You would like to use truly random numbers so no galactic hacker can find out the sequence of random numbers used to generate passwords and thus jeopardize space fleet security. To do so, you need to build a quantum random number generator (QRNG). With a quantum random number generator, passwords will be truly random and more secure.
+
+A QRNG is a perfect introduction to quantum computing because it illustrates quantum behavior and requires only a few lines of code.
+
+You start by taking a qubit in a basis state, for example zero. The first step of the QRNG is to use an `H` operation to put the qubit into an equal superposition. The measurement of this state results in a zero or a one with 50% probability of each outcome. The value of this bit is truly random, there's no way of knowing what you will get after the measurement. But how can you use this behavior to generate larger numbers to use as a valid password?
 
 Let's say you repeat the process four times, generating this sequence of binary digits:
 
@@ -14,7 +18,9 @@ If you concatenate, or combine, these bits into a bit string, you can form a lar
 
 $${0110_{\ binary} \equiv 6_{\ decimal}}$$
 
-You'll build out your quantum random number generator in two phases. In this part, you build out the first phase, which is to generate a single random bit.
+If you repeat this process many times, you can combine multiple bits to form any large number. Now you can provide your superior with that number as a secure password, since you can be sure that no space hacker could determine the results of the sequence of measurements.
+
+You build out your quantum random number generator in two phases. In this chapter, you build out the first phase, which is to generate a single random bit.
 
 To do so, you:
 
@@ -23,7 +29,7 @@ To do so, you:
 > * Add code that uses the `H` operation to put a qubit into superposition and then measure its value.
 > * Run the program.
 
-In the next part, you build out the second phase, which combines random bits to form a larger number.
+In the next section, you build out the second phase, which combines random bits to form a larger number.
 
 > [!NOTE]
 > Keep in mind that because you're using the simulator to run your Q# program, you still get pseudorandom results. But after you verify your program through the simulator, you can run the same program on a quantum computer to get truly random results that measure fundamental physical processes.
@@ -40,19 +46,6 @@ Here, you create a Q# project just like you did earlier.
 
     Like before, you see two files: the project file and *Program.qs*, which contains starter code.
 
-## Include the Measurement library
-
-To measure a qubit, you use the [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true) operation. After you measure a qubit, you need to use the [Reset](/qsharp/api/qsharp/microsoft.quantum.intrinsic.reset?azure-portal=true) operation to place the qubit back in the zero state. The `Microsoft.Quantum.Intrinsic` library provides both of these operations.
-
-To simplify the process, you can use the [MResetZ](/qsharp/api/qsharp/microsoft.quantum.measurement.mresetz?azure-portal=true) operation. This operation combines `M` and `Reset` as one operation.
-
-The `Microsoft.Quantum.Measurement` library provides the `MResetZ` operation. Let's add that library now.
-
-1. In Visual Studio, open *Program.qs*.
-1. Near the top of the file, add this `open` directive:
-
-    [!code-qsharp[](code/4-program-1.qs?highlight=5)]
-
 ## Define the GenerateRandomBit operation
 
 Recall that in the *QuantumHello* program, you defined the `HelloQ` operation like this:
@@ -63,23 +56,24 @@ operation HelloQ() : Unit {
 }
 ```
 
-Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`.
+Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`. To measure a qubit, you use the operation [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true).
 
-To define the operation:
+To define the full operation:
 
-1. Replace the contents of *Program.qs* with this:
+1. Replace the contents of *Program.qs* with this code:
 
     [!code-qsharp[](code/4-program-2.qs?highlight=7-9)]
 
-    `EntryPoint` tells the Q# compiler that this is where to begin execution of the program.
+    `EntryPoint` tells the Q# compiler to begin executing the program here.
 
 1. Add this code to the `GenerateRandomBit` operation:
 
     [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
-    Recall that you allocate qubits through the `using` keyword.
+    Recall that you allocate qubits through the `use` keyword.
 
-    The `H` operation places the qubit in superposition. The `MResetZ` operation measures the qubit, resets the qubit to the zero state, and returns the measured value (a zero or a one).
+    The `H` operation places the qubit in superposition. The `M` operation
+    measures the qubit and returns the measured value (a zero or a one).
 
 ## Run the program
 
@@ -97,6 +91,7 @@ Let's try out your random bit generator. To do so:
     ```output
     Zero
     ```
+
 1. Run the program again. This time, you can skip the build phase by using the `--no-build` flag.
 
     ```bash

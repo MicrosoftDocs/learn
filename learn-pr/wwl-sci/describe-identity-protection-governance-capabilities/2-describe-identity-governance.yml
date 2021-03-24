@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-protection-governance-capabilities-of-azure-ad.describe-identity-governance
+title: Describe identity governance in Azure AD
+metadata:
+  title: Describe identity governance in Azure AD
+  description: "Describe identity governance in Azure AD"
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-identity-governance.md)]

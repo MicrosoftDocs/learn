@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hyperscale.6-scale-up-scale-out
+title: Scale up and scale out
+metadata:
+  title: Scale up and scale out
+  description: Review the common tools for connecting to a database for development
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-scale-up-scale-out.md)]

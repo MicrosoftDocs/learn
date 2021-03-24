@@ -26,20 +26,20 @@ quiz:
     - content: "Owner"
       isCorrect: true
       explanation: "You should change the owner parameter to the user account for the member of the tier 2 security team."
-    - content: "User name"
+    - content: "Username"
       isCorrect: false
-      explanation: "User name is an incident entity and can't be changed."
+      explanation: "Username is an incident entity and can't be changed."
   - content: "What Azure Sentinel interface enables someone to view timelines and relationships between incident resources?"
     choices:
     - content: "Investigation graph"
       isCorrect: true
       explanation: "The investigation graph enables you to view timelines and relationships between incident resources."
-    - content: "Incident details page"
+    - content: "**Incident details** page"
       isCorrect: false
-      explanation: "The Incident details page doesn't enable you to view timelines and relationships between incident resources."
-    - content: "Resource relationships"
+      explanation: "The **Incident details** page doesn't enable you to view timelines and relationships between incident resources."
+    - content: "**Resource relationships** page"
       isCorrect: false
-      explanation: "There isn't an interface in Sentinel named Resource relationships."
+      explanation: "There isn't an interface in Sentinel named **Resource relationships**."
     - content: "Incident status"
       isCorrect: false
       explanation: "Viewing incident status doesn't enable you to view timelines and relationships between incident resources."

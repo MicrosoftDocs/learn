@@ -2,7 +2,7 @@ Now that you understand the basic concepts of external states and how to deal wi
 
 ## Create the state
 
-As we discussed earlier, handling state in Kubernetes is possible. However, we don't recommend it because managing a highly available application state gets too difficult when you need to manage the state yourself.
+As we described earlier, handling state in Kubernetes is possible. However, we don't recommend it because managing a highly available application state gets too difficult when you need to manage the state yourself.
 
 To solve that problem, we'll externalize the state to an application that specializes in dealing with external state. We'll use Azure Cosmos DB.
 
@@ -46,13 +46,13 @@ To create a new Azure Cosmos DB instance, we'll use the Azure CLI. You can insta
     az cosmosdb mongodb database create --account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP --name contoso-ship-manager
     ```
 
-    Then list the databases by using the `list` command:
+    Then, list the databases by using the `list` command:
 
     ```azurecli-interactive
     az cosmosdb mongodb database list --account-name $COSMOSDB_ACCOUNT_NAME --resource-group $RESOURCE_GROUP -o table
     ```
 
-Now that you've created an external state to store all the data from the ship manager application, let's jump to the creation of the AKS resource to store the application itself.
+Now that you've created an external state to store all the data from the ship manager application, let's create the AKS resource to store the application itself.
 
 ## Create the AKS cluster
 
@@ -81,6 +81,7 @@ Now you're going to deploy the AKS cluster so you can push your application imag
         --node-count 3 \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
+        --enable-managed-identity \
         --location eastus \
         --enable-addons http_application_routing
     ```
@@ -108,6 +109,7 @@ To create the application, you'll need to create the YAML files that will be dep
 You need to create three main files. Let's start by creating the *deploy.yaml* file for the back end.
 
 1. Create a new file called *backend-deploy.yaml*, and then open it in your favorite editor.
+
 1. In this file, you'll write the following deployment specification:
 
     ```yml
@@ -189,15 +191,16 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
     ```
 
 1. Save and close the file.
+
 1. Apply the update by using the `kubectl apply` command:
 
     ```bash
-    kubectl apply -f deploy.yaml
+    kubectl apply -f backend-deploy.yaml
     ```
 
-To make this application available to all people, you'll need to create a service and an ingress to take care of all traffic between the application and the world.
+To make this application available to everyone, you'll need to create a service and an ingress to take care of all traffic between the application and the world.
 
-1. Create a new file called *backend-network.yaml* and add the following .yaml notation:
+1. Create a new file called *backend-network.yaml*, and add the following .yaml notation:
 
     ```yml
     apiVersion: v1
@@ -268,6 +271,7 @@ To make this application available to all people, you'll need to create a servic
     ```
 
 1. Save and close the file.
+
 1. Apply the update by using the `kubectl apply` command:
 
     ```bash
@@ -283,7 +287,8 @@ You can check the status of the DNS zone by going to the Azure portal, entering 
 To create the front-end interface, you'll do a similar process:
 
 1. Create a new file called *frontend-deploy.yaml*.
-1. Open this file in your favorite editor and paste the following specification:
+
+1. Open this file in your favorite editor, and paste the following specification:
 
     ```yml
     apiVersion: apps/v1
@@ -339,6 +344,7 @@ To create the front-end interface, you'll do a similar process:
     Replace the `YOUR_BACKEND_URL` placeholder with the URL of the back-end API that you just put in the ingress in the previous step.
 
 1. Save and close the file.
+
 1. Apply the template by using `kubectl apply`:
 
     ```bash
@@ -347,7 +353,7 @@ To create the front-end interface, you'll do a similar process:
 
 Next, you'll create the networking resources that this application needs to be open to the web.
 
-1. Create a new file called *frontend-network.yaml* and add the following .yaml notation:
+1. Create a new file called *frontend-network.yaml*, and add the following .yaml notation:
 
     ```yml
     apiVersion: v1
@@ -418,6 +424,7 @@ Next, you'll create the networking resources that this application needs to be o
     ```
 
 1. Save and close the file.
+
 1. Apply the update by using the `kubectl apply` command:
 
     ```bash

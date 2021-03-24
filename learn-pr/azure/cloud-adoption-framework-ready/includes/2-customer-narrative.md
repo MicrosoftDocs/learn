@@ -1,4 +1,4 @@
-In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skillsets can't address.
+In the Getting Started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailwind Traders is experienced at managing their existing datacenters. The ongoing project to migrate two of their datacenters to Azure is already exposing a few critical learning curves that their current skill sets can't address.
 
 ## Operations
 
@@ -6,7 +6,7 @@ The central operations team has organically built a set of processes and control
 
 ### Operations tools
 
-Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's budget for hard costs. The new Chief Information Officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. She will be watching for reduction of tooling expenses as an early indicator to success in this migration.
+Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's budget for hard costs. The new chief information officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. She will be watching for reduction of tooling expenses as an early indicator to success in this migration.
 
 ### Operations processes
 
@@ -16,11 +16,11 @@ Collectively, the business isn't ready for a full-scale shift to cloud-native op
 
 ### Low service-level agreement
 
-In spite of all the hard work and costs associated with operations, the team periodically fails to meet the 90 percent uptime service level agreement (SLA) for mission-critical systems in the primary datacenter. This is a costly concern for the CIO and Chief Executive Officer (CEO). Outdated hardware and an overdue refresh cycle in the datacenter have resulted in frequent but brief outages. While the company has begrudgingly accepted this SLA, the new CIO is not impressed. Regardless of the financial savings, she expects the operations team to deliver a much higher SLA after the migration.
+In spite of all the hard work and costs associated with operations, the team periodically fails to meet the 90 percent uptime service-level agreement (SLA) for mission-critical systems in the primary datacenter. This is a costly concern for the CIO and chief executive officer (CEO). Outdated hardware and an overdue refresh cycle in the datacenter have resulted in frequent but brief outages. While the company has begrudgingly accepted this SLA, the new CIO is not impressed. Regardless of the financial savings, she expects the operations team to deliver a much higher SLA after the migration.
 
 ### Retail innovation
 
-In the customer narrative from the getting started module, you were introduced to the retail innovation team within Tailwind Traders. That team was originally a startup that was acquired by Tailwind Traders. Their original CEO is now Tailwind's Chief Technology Officer (CTO). He still runs that division like a startup, prioritizing experimentation and innovation.
+In the customer narrative from the Getting Started module, you were introduced to the retail innovation team within Tailwind Traders. That team was originally a startup that was acquired by Tailwind Traders. Their original CEO is now Tailwind's chief technology officer (CTO). He still runs that division like a startup, prioritizing experimentation and innovation.
 
 The current operations management processes require that all new innovations from that team must go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. Once they are comfortable with the solution, it's released into a centrally managed production environment by the central operations team. This process is expected to continue in the cloud.
 
@@ -34,7 +34,7 @@ In the cloud, they now have additional options, like Azure Active Directory or A
 
 Tailwind Traders uses MPLS lines to connect their datacenters and physical stores. All internet traffic is funneled through the primary datacenter. Due to IP conflicts between two of the datacenters, traffic is isolated and routing is dependent on complex routing tables. External connectivity into the datacenter or corporate office is delivered via virtual private network is limited and discouraged.
 
-The primary and secondary datacenters have consistent IP address schemas that are maintained and organized clearly The third datacenter includes 50 different IP blocks with little consistency and no clear organization or segmentation plan. The continuous innovation cycles are limited to the third datacenter but could present problems when defining the network topology and routing in the cloud.
+The primary and secondary datacenters have consistent IP address schemas that are maintained and organized clearly. The third datacenter includes 50 different IP blocks with little consistency and no clear organization or segmentation plan. The continuous innovation cycles are limited to the third datacenter but could present problems when defining the network topology and routing in the cloud.
 
 ## Resource organization
 

@@ -1,39 +1,29 @@
-The weather bot you have created works well for simple, predictable input. However, the responses from the bot are scripted and lack the expressiveness of a human-like response.
-
-The Bot Framework Composer integrates with the Bot Framework Language Generation (LG) library. The library is a set of powerful templating and message formatting tools that let you include variation, conditional messages, and dynamic content. LG gives you greater control of how your bot responds to the user. The following exercise will guide you through integration of language generation in your bot.
+The Bot Framework Composer integrates with the Bot Framework Language Generation (LG) library. The library is a set of powerful templating and message formatting tools that let you include variation, conditional messages, and dynamic content. LG gives you greater control of how your bot responds to the user.
 
 ## Add multiple greetings
 
-Currently, your weather bot has only one phrase to greet users with. To add some variety in the greetings, you can add multiple phrases with different wording in each, and the bot will randomly choose one of the phrases when a new conversation is started.  To implement this, follow the steps outlined next.
+Currently, your weather bot has only one phrase to greet users with. To add some variety in the greetings, you can add multiple phrases with different wording in each, and the bot will randomly choose one of the phrases when a new conversation is started.
 
-1. Ensure that your weather bot is open in the Bot Framework Composer.
-1. Select the **WeatherBot** item in the navigation pane.
-1. Select the **WelcomeUsers** activity in the navigation pane.
-1. Select the **Send a response** action in the **Authoring canvas**.
-1. In the **Properties** pane, modify the contents of the **Language Generation** text area to include the following phrases:
+1. In the navigation pane, select the **WelcomeUsers** trigger under the **WeatherBot** dialog.
+2. Select the **Send a response** action that currently sends the message *Hi! I'm WeatherBot.*.
+3. In the properties pane, modify the contents of the **Language Generation** text area to include the following phrases:
 
-    - **Hello. Welcome to the Get Weather Bot. Enter "weather" to start.**
-    - **Hi! I am a weather bot and can retrieve weather conditions for you. Try saying "weather".**
-    - **Need to know the weather conditions? Say "weather" and I can help.**
+    ```code
+    - Hello. I'm WeatherBot. Enter "weather" to start.
+    - Hi! I am WeatherBot and can retrieve weather conditions for you. Try saying "weather".
+    - Need to know the weather conditions? Say "weather" and I can help.
+    ```
+## Create a template
 
-## Manage templates
+All of your bot responses are based on templates, which you can create and manage.
 
-All of your bot responses can be found in the **Bot Responses** panel by selecting **Bot Responses** from the menu.  You can expand the menu to see the names in the event the icons are not clear enough.
+1. Expand the **&#9776;** menu pane on the left, and select the **Bot Responses** page.
+2. Select the **getWeather** entry to view the response templates that have been defined for this dialog.
+3. Select **Show code** to enable edit mode. Each template is shown as a template name that begins with **#**, containing one or more responses, each beginning with a **-**.
 
-   :::image type="content" source="../media/bot-responses.png" alt-text="bot responses menu selected" :::
+4. To create a template for weather condition responses, add the following code at the end of the current list of templates.
 
-The default view is shown in the previous image.  You can also edit the code for the responses.
-
-1. Ensure that your weather bot is open in the Bot Framework Composer.
-1. Select the **Bot Responses** menu.
-1. Select the **getWeather** entry in the list of actions to view the responses for this dialog.
-1. Select **Show code** to enable edit mode.  Your Composer interface should resemble the following image.
-
-   [![Bot responses panel in edit mode with getWeather selected](../media/edit-bot-responses.png)](../media/edit-bot-responses.png#lightbox)
-
-1. To create a template for weather condition responses, copy and paste the following text at the end of the current text in the edit pane.
-
-```dos
+```code
 # DescribeWeather(weather)
 - IF: ${weather.weather=="Clouds"}
     - It is cloudy
@@ -69,15 +59,14 @@ The default view is shown in the previous image.  You can also edit the code for
 
 The template contains an IF/ELSEIF/ELSE structure and is known as a Language Generation Template. When the weather data is returned from the service, the Language Generation system will evaluate the weather.weather variable, match it to one of the clauses in the IF structure, and generate a more user-friendly response that will be displayed to the user. For the template to function, you will need to modify the design of the **getWeather** dialog.
 
-## Modify getWeather dialog
+## Use the template in a response
 
 1. Return to the **Design** page.
-1. In the navigation pane, select **BeginDialog** under the **getWeather** dialog.
-1. In the **true/false** flow that you created previously, select the **Send a response** action in the **true** path.  It will start with the text. *The weather in ${dialog.weather.city} is...*.
-1. Replace the current text in the **Language Generation** text area with **- ${DescribeWeather(dialog.weather)} in ${dialog.weather.city}. The temperature is ${dialog.weather.temp}\&deg;.**
-1. You will see the use of the **DescribeWeather** template that you created with the IF/ELSE structure above. This syntax lets you nest the DescribeWeather template inside another template. LG templates can be combined in this way to create more complex templates.
-1. Test your changes by restarting the bot and testing it with the emulator. The welcome message should be one of the phrases you specified, and the response with the weather conditions should be based on the language generation template you defined.
-1. When you have finished testing, close the Bot Framework Emulator.
+2. In the navigation pane, select **BeginDialog** under the **getWeather** dialog.
+3. In the **true/false** flow that you created previously, select the **Send a response** action in the **true** path.  It will start with the text. *The weather in ${dialog.weather.city} is...*.
+4. Replace the current text in the **Language Generation** text area with **- ${DescribeWeather(dialog.weather)} in ${dialog.weather.city}. The temperature is ${dialog.weather.temp}\&deg;.**
 
->[!Tip]
->For more information on language generation templates, see the [language generation concept web page](https://docs.microsoft.com/composer/concept-language-generation).
+    This response uses the **DescribeWeather** template that you created, nested inside another template. LG templates can be combined in this way to create more complex templates. For more information on language generation templates, see the [language generation concept web page](https://docs.microsoft.com/composer/concept-language-generation).
+
+5. Test your changes by restarting the bot and testing it with the emulator. The welcome message should be one of the phrases you specified, and the response with the weather conditions should be based on the language generation template you defined.
+6. When you have finished testing, close the emulator and stop the bot.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-identity-principles-concepts.describe-modern-authentication-role-identity-provider
+title: Describe modern authentication and the role of the identity provider
+metadata:
+  title: Describe modern authentication and the role of the identity provider
+  description: "Describe modern authentication and the role of the identity provider"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-describe-modern-authentication-role-identity-provider.md)]

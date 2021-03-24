@@ -17,29 +17,29 @@ quiz:
   questions:
     - content: How do you create a dependency between two or more resources?
       choices:
-        - content: Create a _resources_ attribute on the parent resource. Add the child resource as a value of the _resources_ attribute you created. 
+        - content: Create a `resources` attribute on the parent resource. Add the child resource as a value of the `resources` attribute you created. 
           isCorrect: false
-          explanation: What's described is a parent-child relationship. It does not create a dependency by itself. You still have to add a _dependsOn_ construct on the child resource and point to the parent resource.
-        - content: Create a _dependencies_ attribute on the dependent resource. Add the resource you depend on as a value to the _dependencies_ attribute.
+          explanation: What's described is a parent-child relationship. It doesn't create a dependency by itself. You still have to add a `dependsOn` construct on the child resource, and point to the parent resource.
+        - content: Create a `dependencies` attribute on the dependent resource. Add the resource you depend on as a value to the `dependencies` attribute.
           isCorrect: false
-          explanation: There's no _dependencies_ attribute.
-        - content: Add a _dependsOn_ construct on a resource and add the name or ID of the resource it depends on.
+          explanation: There's no `dependencies` attribute.
+        - content: Add a `dependsOn` construct on a resource, and add the name or ID of the resource it depends on.
           explanation: This is how you would create a dependency between one or many resources.
           isCorrect: true
     - content: "The condition element is used to:"
       choices:
         - content: Conditionally set values on a resource's attribute.
           isCorrect: false
-          explanation: You would use the `if()` function to conditionally set a value in a template. 
+          explanation: You use the `if()` function to conditionally set a value in a template. 
         - content: Conditionally run shell commands in your ARM template.
           isCorrect: false
           explanation: You can run shell commands within a template. However, you can't use the `condition` element to control the running of shell commands.
         - content: Conditionally deploy a resource.
           isCorrect: true
           explanation: Assigning a `condition` construct to a resource definition enables you to control whether to deploy this resource or not.
-    - content: How do you get the current index in a _copy_ iteration?
+    - content: How do you get the current index in a `copy` iteration?
       choices:
-        - content: Refer to the `$index` field within the _copy_ element.
+        - content: Refer to the `$index` field within the `copy` element.
           explanation: There's no `$index` field.
           isCorrect: false
         - content: You use the `copyIndex()` function. 

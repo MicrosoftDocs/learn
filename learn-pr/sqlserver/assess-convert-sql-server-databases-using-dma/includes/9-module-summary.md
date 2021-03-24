@@ -1,10 +1,6 @@
-In this module, you learned how to use the Microsoft Data Migration Assistant to check for compatibility issues in your databases before upgrading. You discovered how to use DMA to check for problems without having to install a new instance, or configure Azure. The assistant provides detailed steps for fixing issues and deprecated features. Then you could bring a migrated database online without broken code.
+In your law firm, you had independent offices with their own database systems, such as Customer Relationship Management (CRM) tools, each of which was managed locally. Those databases ran various versions of SQL Server and had become inconsistent. You wanted to standardize these systems on SQL Server 2019 but you wanted to investigate compatibility issues carefully to ease this migration project. You used Microsoft Data Migration Assistant to check for compatibility issues in your databases before the upgrade. You discovered how to use DMA to check for problems without having to install a new instance, or configure Azure. The assistant provides detailed steps for fixing issues and deprecated features. 
 
-You learned how to discover new features on the target server that would increase the performance of your source databases, increase security, and reduce storage costs. The assistant provides a concise list of new features you can implement to gain an immediate return on investment (ROI) after upgrading to a newer version of SQL Server.
-
-The DMA can check your databases against SQL Azure Database, and SQL Server on Azure Virtual Machines. You learned how to assess the impact of migrating to the cloud without any initial server set-up or additional cost.
-
-You saw how the assistant upgrades your databases to a target version. The assistant also includes all the necessary logins, enabling users to connect and resume as seamlessly as possible after an upgrade. After migrating your databases with the DMA, you learned that you can export the results to a CSV or JSON file to develop custom reports.
+A database migration project that involves multiple versions of SQL Server can involve many hours of investigation and problem diagnosis. It's also difficult to be sure that you have considered all compatibility issues and a single missed issue could cause the project to fail. DMA removes such problems by automating and documenting issues before the upgrade. By using DMA you can increase your confidence that the migration will run smoothly.
 
 ## Learn more
 

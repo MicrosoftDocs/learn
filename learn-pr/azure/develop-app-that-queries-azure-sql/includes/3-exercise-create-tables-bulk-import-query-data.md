@@ -111,18 +111,20 @@ Let's create the database and server to store the data for the app.
 
     ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
 
-1. On the **Create SQL Database** page, specify the values in the following table for the database properties.
+1. On the **Create SQL Database** page, under the **Basics** tab, specify the values in the following table for the database properties.
 
     | Property  | Value  |
     |---|---|
+    | **Projects details** |
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[Sandbox resource group]</rgn> |
+    | **Database details** |
     | Database name | The database must have a unique name. We suggest using something like **coursedatabase<em>NNN</em>**, where *NNN* is a random number. |
-    | Server | Select **Create new**, and enter the details that are in the following table. |
+    | Server | Select **Create new**, and on the **New server** panel, enter the details that are in the following table. |
     | Want to use SQL elastic pool? | No |
     | Compute + storage | General purpose |
 
-    For the server, specify the following details in the **New server** pane, and then click **Select**.
+    For the server, specify the following details in the **New server** panel, and then select **OK**.
 
     | Property  | Value  |
     |---|---|
@@ -134,11 +136,13 @@ Let's create the database and server to store the data for the app.
 
 1. Select **Next : Networking >**.
 
-1. On the **Networking** pane, configure the following values:
+1. Under the **Networking** tab, configure the following values.
 
     | Property  | Value  |
     |---|---|
+    | **Network connectivity** |
     | Connectivity method | Public endpoint |
+    | **Firewall rules** |
     | Allow Azure services and resources to access this server | Yes |
     | Add current client IP address | Yes |
 
@@ -150,11 +154,11 @@ Let's create the database and server to store the data for the app.
 
 You can now create the tables to store the data from the .csv files.
 
-1. On the Azure portal menu, select **SQL databases**.
+1. Navigate to the Azure portal **Home** page from the upper-left link, search for, and select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
-1. On the **coursedatabase<em>NNN</em>** page, select **Query editor**.
+1. On the **coursedatabase<em>NNN</em>** page, from the nav bar, select **Query editor (preview)**.
 
     ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
@@ -245,28 +249,28 @@ You can now create the tables to store the data from the .csv files.
     2       SQLCHAR             0       50      "\n"   2     CourseName                                   SQL_Latin1_General_CP1_CI_AS
     ```
 
-1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the **Courses** table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl+q to close the editor.
+1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the **Courses** table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the following command to import the data in the **courses.csv** file in the format that's specified by the amended **courses.fmt** file. The `-F 2` flag directs the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
 
     ```bash
-    bcp "$DATABASE_NAME.dbo.courses" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+    bcp "[$DATABASE_NAME].[dbo].[courses]" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
     ```
 
-    Verify that `bcp` utility imports 9 rows and doesn't report any errors.
+    Verify that `bcp` utility imports nine rows and doesn't report any errors.
 
 1. Run the following sequence of operations to import the data for the **dbo.Modules** table from the **modules.csv** file.
 
     1. Generate a format file.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.modules" format nul -c -f modules.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
+        bcp "[$DATABASE_NAME].[dbo].[modules]" format nul -c -f modules.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
         ```
 
     1. Import the data from the **modules.csv** file into the **Modules** table in the database.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.modules" in modules.csv -f modules.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+        bcp "[$DATABASE_NAME].[dbo].[modules]" in modules.csv -f modules.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
         ```
 
         Verify that this command imports 16 rows.
@@ -276,13 +280,13 @@ You can now create the tables to store the data from the .csv files.
     1. Generate a format file.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.studyplans" format nul -c -f studyplans.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
+        bcp "[$DATABASE_NAME].[dbo].[studyplans]" format nul -c -f studyplans.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
         ```
 
     1. Import the data from the **studyplans.csv** file into the **StudyPlans** table in the database.
 
         ```bash
-        bcp "$DATABASE_NAME.dbo.studyplans" in studyplans.csv -f studyplans.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
+        bcp "[$DATABASE_NAME].[dbo].[studyplans]" in studyplans.csv -f studyplans.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
         ```
 
         Verify that this command imports 45 rows.
@@ -329,7 +333,7 @@ You can now create the tables to store the data from the .csv files.
     sqlcmd -S "$DATABASE_SERVER.database.windows.net" -d "$DATABASE_NAME" -U $AZURE_USER -P $AZURE_PASSWORD
     ```
 
-1. At the `1>` prompt, enter the following SQL command to fetch the data from the **StudyPlans** table.
+1. At the `1>` prompt, run the following SQL command to fetch the data from the **StudyPlans** table.
 
     ```SQL
     SELECT * FROM StudyPlans;  
@@ -338,6 +342,6 @@ You can now create the tables to store the data from the .csv files.
 
     This query should return 45 rows.
 
-1. At the `1>` prompt, type **exit** to close the `sqlcmd` utility.
+1. At the `1>` prompt, enter **exit** to close the `sqlcmd` utility.
 
 You created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the `bcp` utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in Cloud Shell.

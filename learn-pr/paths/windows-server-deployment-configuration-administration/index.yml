@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.windows-server-deployment-configuration-administration
+metadata:
+  title: Windows Server deployment, configuration, and administration
+  description: Windows Server deployment, configuration, and administration
+  ms.date: 01/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Windows Server deployment, configuration, and administration
+prerequisites: |
+  To get the best experience from this learning path, you should have knowledge and experience of:
+  - Windows Server 2012 or Windows Server 2016.
+  - Basic security best practices.
+  - Windows client operating systems such as Windows 10.
+  - Working with command line tools.
+  - Microsoft Hyper-V and basic server virtualization concepts.
+  - Automation and monitoring.
+summary: |
+  Learn how to configure and administer Windows Server 2019 securely using the appropriate management tool. Learn to deploy Windows Server and perform post-installation configuration.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+modules:
+- learn.wwl.perform-windows-server-secure-administration
+- learn.wwl.describe-windows-server-administration-tools
+- learn.wwl.perform-post-installation-configuration-of-windows-server
+- learn.wwl.deploy-windows-server
+- learn.wwl.select-windows-server-editions-servicing-options-activation
+trophy:
+  uid: learn.wwl.windows-server-deployment-configuration-administration.trophy

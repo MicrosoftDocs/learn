@@ -31,7 +31,7 @@ If you wanted to add a connection string, you could do that by adding another pr
 }
 ```
 
-## Accessing app settings in Azure Functions code
+## Access app settings in Azure Functions code
 
 To access these configuration values in your Azure Functions from JavaScript, see the `process.env` object. It will contain all of the key value pairs that are specified in the `local.settings.json` file.
 

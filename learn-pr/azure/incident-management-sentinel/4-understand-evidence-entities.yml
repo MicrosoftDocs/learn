@@ -19,14 +19,14 @@ quiz:
     choices:
     - content: "IP address"
       isCorrect: false
-      explanation: "An IP address is an entity"
-    - content: "User name"
+      explanation: "An IP address is an entity."
+    - content: "Username"
       isCorrect: false
-      explanation: "A user name is an entity"
+      explanation: "A username is an entity."
     - content: "Event"
       isCorrect: true
-      explanation: "An event is evidence"
+      explanation: "An event is evidence."
     - content: "Host name"
       isCorrect: false
-      explanation: "A host name is an entity"
+      explanation: "A host name is an entity."
 

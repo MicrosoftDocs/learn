@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization is launching a new app for its customers.  Customers will use a sign-in screen that is customized with the organization's brand identity. Which type of Azure External identity solution should the organization use?"
+    choices:
+    - content: "Azure AD B2B"
+      isCorrect: false
+      explanation: "B2B collaboration allows you to share your organization’s applications and services with guests from other organizations. It is not suitable for a customer app."
+    - content: "Azure AD B2C"
+      isCorrect: true
+      explanation: "Azure AD B2C is an authentication solution for customers that you can customize with your brand identity."
+    - content: "Azure AD Hybrid identities"
+      isCorrect: false
+      explanation: "Azure AD hybrid identities synchronize identities between on premises Active Directory, and Azure Active Directory. It is not suitable for a customer app."
+  - content: "All users in an organization have Microsoft 365 cloud identities. Which identity model applies?"
+    choices:
+    - content: "Hybrid"
+      isCorrect: false
+      explanation: "Hybrid is used when you have on-premises active directory that you need to synchronize with Azure Active Directory."
+    - content: "Cloud-only"
+      isCorrect: true
+      explanation: "When all your users have cloud identities, you use the cloud-only model."
+    - content: "On-premises only"
+      isCorrect: false
+      explanation: "When all your users have Microsoft 365 identities, you cannot use the on-premises only model."
+  - content: "An organization has developed an app to allow users to be able to sign in with their Facebook, Google, or Twitter credentials. What type of authentication is being used?"
+    choices:
+    - content: "Service principal authentication"
+      isCorrect: false
+      explanation: "Service principals are used by applications or services to access Azure resources and are not used to allow users to sign in with their Facebook, Google, or Twitter credentials."
+    - content: "Azure AD B2C"
+      isCorrect: true
+      explanation: "Azure AD B2C allows external users to log in with their preferred social media account to sign in to your application, such as Facebook, Google, or Twitter."
+    - content: "User assigned identities"
+      isCorrect: false
+      explanation: "A user-assigned identity is a type of managed identity and is not used to allow users to sign in with their Facebook, Google, or Twitter credentials."

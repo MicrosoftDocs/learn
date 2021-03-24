@@ -3,7 +3,7 @@ uid: learn.azure.manage-deployments-advanced-arm-template-features.conditions
 title: Add conditional logic to your ARM templates
 metadata:
   title: Add conditional logic to your ARM templates
-  description: You will want to sometime express whether something should be deployed or not. Such conditional logic can be added using the _condition_ construct. Parameters can then be used to for example conditionally deploy certain resources in certain environments.
+  description: You can program whether you want something deployed or not. You can use parameters to deploy certain resources conditionally, in certain environments.
   author: softchris
   ms.author: chnoring
   ms.date: 12/09/2020

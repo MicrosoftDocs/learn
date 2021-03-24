@@ -1,6 +1,6 @@
 :::row:::
   :::column span="3":::
-Disk Storage provides disks for Azure virtual machines. Applications and other services can access and use as these disks as needed, similar to how they would in on-premises scenarios. Disk Storage allows data to be persistently stored and accessed from an attached virtual hard disk.
+Disk Storage provides disks for Azure virtual machines. Applications and other services can access and use these disks as needed, similar to how they would in on-premises scenarios. Disk Storage allows data to be persistently stored and accessed from an attached virtual hard disk.
   :::column-end:::
   :::column:::
     :::image type="icon" source="../media/icon-azure-standard-storage.png" border="false":::

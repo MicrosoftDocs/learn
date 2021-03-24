@@ -1,4 +1,4 @@
-After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *inference* (in other words, predict) label values based on its features. This pipeline will form the basis for a predictive service that you can publish for applications to use.
+After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *infer* (in other words, predict) label values based on its features. This pipeline will form the basis for a predictive service that you can publish for applications to use.
 
 ## Create an inference pipeline
 
@@ -33,7 +33,7 @@ After creating and running a pipeline to train the model, you need a second pipe
 6. The inference pipeline includes the **Evaluate Model** module, which is not useful when predicting from new data, so delete this module.
 7. The output from the **Score Model** module includes all of the input features as well as the predicted label and probability score. To limit the output to only the prediction and probability:
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
-    - Add an **Execute Python Script** module from the **Python Language** section, replacing all of the the default python script with the following code (which selects only the **PatientID**, **Scored Labels** and **Scored Probabilities** columns and renames them appropriately):
+    - Add an **Execute Python Script** module from the **Python Language** section, replacing all of the default python script with the following code (which selects only the **PatientID**, **Scored Labels** and **Scored Probabilities** columns and renames them appropriately):
 
         ```Python
         import pandas as pd

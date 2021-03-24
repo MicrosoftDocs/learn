@@ -27,7 +27,7 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
    |Name    |     allow-http-traffic    |
    |Description  |    Allows http traffic    |
 
-1. Click **Add** to create the rule.
+1. Select **Add** to create the rule.
 
 ## Open the default webpage 
 

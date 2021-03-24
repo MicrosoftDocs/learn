@@ -22,7 +22,7 @@ Metrics can also be multidimensional. Multidimensional metrics record multiple v
 
 The `TelemetryClient` class provides access to all the properties and methods that you use to send information to Application Insights.
 
-When you initialize the SDK with `UseApplicationInsights()`, `TelemetryClient` is registered for dependency injection. This means you can efficiently access `TelemetryClient` by adding it to the constructor of any controller or other component where you want to use it. For example, if you want to add custom telemetry to the `HomeController` for your MVC web app, modify the constructor to accept a `TelemetryClient` parameter and store the value for use in the controller's methods:
+When you initialize the SDK with `UseApplicationInsights()`, `TelemetryClient` is registered for dependency injection. This means you can efficiently access `TelemetryClient` by adding it to the constructor of any controller or other component where you want to use it. For example, if you want to add custom telemetry to the `HomeController` for your MVC web app, modify the constructor to accept a `TelemetryClient` parameter and store the value for use in the controller's methods.
 
 ```C#
 public class HomeController : Controller
@@ -38,7 +38,7 @@ public class HomeController : Controller
 
 In this example, `aiClient` can be used in your controller methods to track events and metrics.
 
-## Tracking events
+## Track events
 
 To track an event that occurs within your application, call `TrackEvent` on a `TelemetryClient` with the name of the event. `TrackEvent` supports two optional `IDictionary` arguments for tracking named properties and numeric metrics related to the event.
 
@@ -52,7 +52,7 @@ this.aiClient.TrackEvent("VideoUploaded", new Dictionary<string, string> {{"Cate
 
 Notice that the names of events and properties are ordinary strings. Events and properties can be given any names you like. It's up to you to appropriately name your events and make sure the names are used consistently throughout your code.
 
-## Tracking metrics
+## Track metrics
 
 Metrics are recorded a little differently: call `GetMetric` with the name of the metric to get a `Metric` object, and then call `TrackValue` on it to record the measurement data. The different shape of this API reflects the underlying architecture used to pre-aggregate metrics values before sending them to the Application Insights service.
 
@@ -62,7 +62,7 @@ this.aiClient.GetMetric("SimultaneousPlays").TrackValue(5);
 
 As with events, you can assign a metric any name you'd like.
 
-For multidimensional metrics, use the `GetMetric` method with two or more values, and then set both values with a call to `TrackValue`:
+For multidimensional metrics, use the `GetMetric` method with two or more values, and then set both values with a call to `TrackValue`.
 
 ```C#
 Metric userResponse = this.aiClient.GetMetric("UserResponses", "Kind");
