@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that we can reuse the App Service module in other templates if we want.
+In this exercise, you update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that you can reuse the App Service module in other templates if you choose to.
 
 During the process, you:
 
@@ -55,15 +55,15 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    }
    ```
 
-   Notice we have copied the parameters and variables from our *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
+   Notice you have copied the parameters and variables from your *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
 
 1. Save the changes to the file. Notice there are no warnings about missing variables or parameters, or invalid resource.
 
 ### Add a reference to the module from the parent template
 
-Now that we have a complete module to deploy our App Service resources, we can refer to the module within our parent template. Since the module now deploys our App Service resources, we can delete the associated resources and variables from our parent template.
+Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Since the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
 
-1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because we still need them.
+1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because you still need them.
 
 1. At the bottom of the *main.bicep* file, add the following Bicep code:
 
@@ -78,7 +78,7 @@ Now that we have a complete module to deploy our App Service resources, we can r
    }
    ```
 
-   Notice we are specifying the parameters for our module by referencing the parameters in our parent template.
+   Notice that you are specifying the parameters for your module by referencing the parameters in the parent template.
 
 1. Save the changes to the file.
 
@@ -90,11 +90,11 @@ Now that we have a complete module to deploy our App Service resources, we can r
    output appServiceAppHostName string = appServiceApp.properties.defaultHostName
    ```
 
-   This code is declaring an output for this module, which will be named `appServiceAppHostName`, will be of type `string`, and will take its value from the `defaultHostName` property of our App Service app.
+   This code is declaring an output for this module, which will be named `appServiceAppHostName`, will be of type `string`, and will take its value from the `defaultHostName` property of the App Service app.
 
 1. Save the changes to the file.
 
-Because this output is declared within a module, it's only going to be available to the parent template. We need to return the output to the person executing the template as well.
+Because this output is declared within a module, it's only going to be available to the parent template. You need to return the output to the person executing the template as well.
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 
@@ -102,7 +102,7 @@ Because this output is declared within a module, it's only going to be available
    output appServiceAppHostName string = appService.outputs.appServiceAppHostName
    ```
 
-   Notice this output is declared in a similar way to the output in our module, but this time we are referencing the module's output instead of a resource property.
+   Notice this output is declared in a similar way to the output in the module, but this time you are referencing the module's output instead of a resource property.
 
 1. Save the changes to the file.
 
@@ -145,7 +145,7 @@ New-AzResourceGroupDeployment `
 
 1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
 
-1. Notice that we have two new deployments in the list. One begins with the name **`addmodule`**, and another is called **`appService`**:
+1. Notice that you have two new deployments in the list. One begins with the name **`addmodule`**, and another is called **`appService`**:
 
     :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
 
@@ -153,4 +153,4 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
 
-1. Click the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of our App Service app.
+1. Click the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app.

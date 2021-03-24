@@ -1,19 +1,19 @@
-Templates are powerful because of their reusability. We need to write templates that can be used to deploy multiple separate environments or copies of our resources.
+Templates are powerful because of their reusability. You can use Bicep to write templates that deploy multiple separate environments or copies of your resources.
 
-Our toy company will be launching new products regularly, and we need to use the Bicep templates to create the Azure resources required for each product launch. We want to avoid using fixed resource names, since resources often need unique names and so embedding names in our templates mean we can't use it for multiple different product launches. We also have to deploy our resources in different locations depending on where our toys will be launched.
+Your toy company will be launching new products regularly, and you need to use the Bicep templates to create the Azure resources required for each product launch. You want to avoid using fixed resource names: since resources often need unique names, embedding names in your template mean you can't use it for multiple different product launches. You also have to deploy the resources in different locations depending on where the toys will be launched.
 
 Here, you'll learn about parameters and variables, which are two Bicep features you can use to make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
 ## Parameters and variables
 
-A _parameter_ lets us bring values in from outside of our template. For example, if someone is manually deploying our template using the Azure CLI or PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
+A _parameter_ lets you bring values in from outside of the template file. For example, if someone is manually deploying the template using the Azure CLI or PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
 
-A _variable_ is defined and set within our template. Variables let us store important information in one place and refer to it throughout our template without having to copy and paste it.
+A _variable_ is defined and set within the template. Variables let you store important information in one place and refer to it throughout the template without having to copy and paste it.
 
 It's usually a good idea to use parameters for things that will change between each deployment, like:
 
 - The names of resources that need to be unique.
-- Locations to deploy our resources into.
+- Locations to deploy the resources into.
 - Settings that affect the pricing of resources, like their SKUs, pricing tiers, and instance counts.
 - Credentials and information needed to access other systems that aren't defined in the template.
 
@@ -24,7 +24,7 @@ Variables are usually a good option when you'll use the same values for each dep
 
 ## Adding a parameter
 
-In Bicep, we can define a parameter like this:
+In Bicep, you can define a parameter like this:
 
 ```bicep
 param appServiceAppName string
@@ -32,17 +32,17 @@ param appServiceAppName string
 
 Let's look at how each part of this works:
 - `param` tells Bicep that we're defining a parameter.
-- `appServiceAppName` is the name of the parameter. If someone is deploying the template manually, they may be asked to enter a value, so it's important the name is clear and understandable. The name is also how we refer to the parameter value within the template.
-- `string` is the type of the parameter. We can specify several different types for our Bicep parameters including `string` (for text), `int` (for numbers), and `bool` (for Boolean true/false values). We can also pass in more complex parameters using the `array` and `object` types.
+- `appServiceAppName` is the name of the parameter. If someone is deploying the template manually, they may be asked to enter a value, so it's important the name is clear and understandable. The name is also how you refer to the parameter value within the template.
+- `string` is the type of the parameter. You can specify several different types for Bicep parameters including `string` (for text), `int` (for numbers), and `bool` (for Boolean true/false values). You can also pass in more complex parameters using the `array` and `object` types.
 
 > [!TIP]
-> Try not to over-generalize your templates by using too many parameters. You should use the minimum number of parameters that you need for your business scenario. Remember you can always change templates in the future if your requirements change.
+> Try not to over-generalize templates by using too many parameters. You should use the minimum number of parameters that you need for your business scenario. Remember you can always change templates in the future if your requirements change.
 
 ### Default values
 
-We can optionally provide a _default value_ for a parameter. By specifying a default value, we're effectively making the parameter optional. The person deploying the template can specify a value if they want, but if they don't then Bicep will use the default value instead.
+You can optionally provide a _default value_ for a parameter. By specifying a default value, we're effectively making the parameter optional. The person deploying the template can specify a value if they want, but if they don't then Bicep will use the default value instead.
 
-Here's how we can add a default value:
+Here's how you can add a default value:
 
 ```bicep
 param appServiceAppName string = 'toy-product-launch-1'
@@ -51,9 +51,9 @@ param appServiceAppName string = 'toy-product-launch-1'
 > [!NOTE]
 > In the example above, we've declared an App Service app name with a hard-coded default value. This isn't actually a good idea, because App Service apps need unique names. We'll fix this shortly.
 
-### Using parameter values in our template
+### Using parameter values in the template
 
-Once we've declared a variable, we can refer to it within the rest of our template. Let's see how we can use our new parameter within our resource definition:
+Once you've declared a variable, you can refer to it within the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
 ```bicep
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
@@ -66,11 +66,11 @@ resource appService 'Microsoft.Web/sites@2020-06-01' = {
 }
 ```
 
-Notice that we're now using the parameter value to set the resource name for the app resource, instead of hard-coding it.
+Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
 ## Adding a variable
 
-We can define a variable like this:
+You can define a variable like this:
 
 ```bicep
 var appServicePlanName = 'ToyLaunchPlan'
@@ -78,32 +78,32 @@ var appServicePlanName = 'ToyLaunchPlan'
 
 Variables are defined in a similar way to parameters, but there are a few differences:
 
-- We use the `var` keyword to tell Bicep we're declaring a variable.
-- We must provide a value for a variable.
-- Variables don't need types. Bicep can work out the type based on how we set its value.
+- Use the `var` keyword to tell Bicep we're declaring a variable.
+- You must provide a value for a variable.
+- Variables don't need types. Bicep can work out the type based on its value.
 
 ## Using expressions
 
-Often when we write templates we don't want to hard-code values, or even ask for them to be specified in a parameter. Instead, we want to determine the values automatically. For example, we probably want to deploy all of our resources into a single Azure region - and we want that to just be the region that we've created our resource group in. Or, we might want to automatically create a unique name for a resource. _Expressions_ in Bicep are a powerful feature that lets us handle all sorts of interesting scenarios. Let's take a look at a few places where we can use expressions in our template.
+Often when writing templates you don't want to hard-code values, or even ask for them to be specified in a parameter. Instead, you want to determine the values automatically. For example, you probably want to deploy all of of the resources in a template into a single Azure region - and you want that to just be the region that we've created the resource group in. Or, you might want to automatically create a unique name for a resource. _Expressions_ in Bicep are a powerful feature that lets you handle all sorts of interesting scenarios. Let's take a look at a few places where you can use expressions in Bicep template.
 
 ### Resource locations
 
-When we write and deploy our template, we don't want to have to specify the location of every resource. Instead, we might have a simple business rule that says _by default, deploy all resources into the same location that the resource group was created in_.
+When writing and deploying a template, you often don't want to have to specify the location of every resource individually. Instead, you might have a simple business rule that says _by default, deploy all resources into the same location that the resource group was created in_.
 
-In Bicep, we can create a parameter called `location` and then use an expression to set its value:
+In Bicep, you can create a parameter called `location` and then use an expression to set its value:
 
 ```bicep
 param location string = resourceGroup().location
 ```
 
-Take a look at the default value of that parameter. It uses a _function_ called `resourceGroup()`, which gives us access to information about the resource group we're deploying into. In this example, we're just taking the `location` property and using that.
+Take a look at the default value of that parameter. It uses a _function_ called `resourceGroup()`, which gives you access to information about the resource group we're deploying into. In this example, we're just taking the `location` property and using that.
 
 If someone is deploying this template, they might choose to override the default value here and use a different location.
 
 > [!NOTE]
 > Some resources in Azure can only be deployed into certain locations. You might need to have separate parameters to set the locations of these resources.
 
-We can now use the resource location parameter inside our template, like this:
+You can now use the resource location parameter inside the template, like this:
 
 ```bicep
 resource appService 'Microsoft.Web/sites@2020-06-01' = {
@@ -118,45 +118,45 @@ resource appService 'Microsoft.Web/sites@2020-06-01' = {
 
 ### Resource names
 
-Many Azure resources need to have unique names. In our scenario, we've got two resources that need to have unique names - the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses our template to find a unique name.
+Many Azure resources need to have unique names. In your scenario, you've got two resources that need to have unique names - the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses the template to find a unique name.
 
-In Bicep, we have another function called `uniqueString()` that we can use when we're creating resource names. When we use this function, we need to provide a _seed value_, which should be different across different deployments, but consistent across all of our deployments of the same resources. If we choose a good seed value, then we can get the same name every time we deploy the same set of resources, but we'll get a different name whenever we deploy a different set of resources using the same template. Let's take a look at how we might use the `uniqueString()` function:
+Bicep has another function called `uniqueString()` that you can use when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all of the deployments of the same resources. If you choose a good seed value, then you can get the same name every time you deploy the same set of resources, but you'll get a different name whenever you deploy a different set of resources using the same template. Let's take a look at how you might use the `uniqueString()` function:
 
 ```bicep
 param storageAccountName string = uniqueString(resourceGroup().id)
 ```
 
-We're using the `resourceGroup()` function again here, like we did when we set the resource location. This time, though, we're getting the resource group's ID. This ID includes our Azure subscription ID and the resource group name. That's why the resource group ID is a good candidate for a seed value for resource names since:
+We're using the `resourceGroup()` function again here, like you did when you set the resource location. This time, though, we're getting the resource group's ID. This ID includes the Azure subscription ID and the resource group name. That's why the resource group ID is a good candidate for a seed value for resource names since:
 
-- Every time we deploy the same resources, they'll go into the same resource group - so we'll get the same names out of the `uniqueString()` function.
-- If we deploy into two different resource groups in our Azure subscription, the `resourceGroup().id` will be different since the resource group names will be different - so we'll get different names out of the `uniqueString()` function for each of our sets of resources.
-- If we deploy into two different Azure subscriptions, _even if we use the same resource group name_, the `resourceGroup().id` will be different since the Azure subscription ID will be different - so we'll get different names out of the `uniqueString()` function for each of our sets of resources.
+- Every time you deploy the same resources, they'll go into the same resource group. Bicep will give the same values from the `uniqueString()` function.
+- If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` will be different since the resource group names will be different. Bicep will give different values from the `uniqueString()` function for each of the sets of resources.
+- If you deploy into two different Azure subscriptions, _even if you use the same resource group name_, the `resourceGroup().id` will be different since the Azure subscription ID will be different. Bicep will give different values from the `uniqueString()` function for each of the sets of resources.
 
 ### Combining strings together
 
-If we just use the `uniqueString()` function to set resource names, we'll probably get unique names - but they won't be meaningful. A good resource name should also be descriptive so that it's clear what the resource is for. We'll often want to create a name by combining a meaningful word or string with a unique value. This way, we'll have resources that have both meaningful and unique names.
+If you just use the `uniqueString()` function to set resource names, we'll probably get unique names - but they won't be meaningful. A good resource name should also be descriptive so that it's clear what the resource is for. We'll often want to create a name by combining a meaningful word or string with a unique value. This way, we'll have resources that have both meaningful and unique names.
 
-Bicep has a feature that lets us combine strings together. This feature is called _string interpolation_. Let's see how it works:
+Bicep has a feature that lets you combine strings together. This feature is called _string interpolation_. Let's see how it works:
 
 ```bicep
 param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 ```
 
-The default value we're setting for our `storageAccountName` parameter now has two parts to it:
+The default value for the `storageAccountName` parameter now has two parts to it:
 
-- `toylaunch` is a hard-coded string that helps us understand what this storage account is for.
+- `toylaunch` is a hard-coded string that helps to understand what this storage account is for.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
 
 ### Selecting SKUs for resources
 
-Our toy company has decided they will use our templates to deploy the resources for all of their new products. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want us to follow these business rules:
+Your toy company has decided they will use your templates to deploy the resources for all of their new products. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
 
 - In production environments, storage accounts must be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans must be deployed using the `P2_v3` SKU for higher performance.
 - In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the `S1` SKU, to save cost.
 
 One way to implement these business requirements would be to use parameters to specify each SKU. However, this can become difficult to maintain when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
 
-First, we can specify a parameter that indicates whether the deployment is for a production or non-production environment:
+First, you can specify a parameter that indicates whether the deployment is for a production or non-production environment:
 
 ```bicep
 @allowed([
@@ -168,7 +168,7 @@ param environmentType string
 
 Notice we're using some new syntax to specify a list of _allowed values_ for the `environmentName` parameter. Bicep won't let anyone execute the template unless they provide one of these values.
 
-Next, we can create variables that determine the best SKUs to use for our storage account and App Service plan based on the environment:
+Next, you can create variables that determine the best SKUs to use for the storage account and App Service plan based on the environment:
 
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
@@ -180,7 +180,8 @@ Notice we're also using some new syntax here. Let's break it down:
 - `(environmentType == 'prod')` will evaluate to a Boolean (true/false) value depending on what the `environmentType` parameter has been set to.
 - `?` means _if the expression is true_, and `:` means _if the expression is false_.
 
-So we can translate these rules to:
+So these rules can be translated to:
+
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _Standard_GRS_ SKU, else use the _Standard_LRS_ SKU.
 - For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _P2_v3_ SKU, else use the _S1_ SKU.
 
