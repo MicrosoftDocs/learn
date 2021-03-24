@@ -1,24 +1,24 @@
-Let's set up our application for production by updating some of the most common settings.
+Set up your application for production by updating some of the most common settings.
 
 ## Add libraries
 
-We'll use two new libraries for our project:
+You'll use two new libraries for your project:
 
 - `whitenoise` to serve static files
-- `psycopg2-binary` to connect to PostgreSQL, our production database
+- `psycopg2-binary` to connect to PostgreSQL, the production database
 
-Let's install those into our project.
+Install those libraries in your project:
 
-1. Inside **Visual Studio Code**, open **requirements.txt**.
-1. Add the following to the end of **requirements.txt**:
+1. In **Visual Studio Code**, open *requirements.txt*.
+1. Add the following code to the end of *requirements.txt*.
 
     ```text
     whitenoise
     psycopg2-binary
     ```
 
-1. Open a new terminal window by clicking **Terminal** > **New terminal**.
-1. Install the libraries by executing the following command:
+1. Open a new terminal pane by selecting **Terminal** > **New terminal**.
+1. Install the libraries by running the following command.
 
     ```bash
     pip install -r requirements.txt
@@ -26,29 +26,31 @@ Let's install those into our project.
 
 ## Create a production settings file
 
-Two core settings, `ALLOWED_HOSTS` and `DATABASES`, need to be set to different values depending on the environment hosting our application. The default settings are designed for development. When running in production, we will need to ensure these are updated properly.
+Two core settings, `ALLOWED_HOSTS` and `DATABASES`, need to be set to different values depending on the environment that hosts the application. The default settings are designed for development. To run your app in production, ensure these settings are updated properly.
 
-`ALLOWED_HOSTS` controls the servers allowed to host or run your application. We will configure it to allow our site to run from Azure and locally. `DATABASES` contains the list of available connection strings.
+`ALLOWED_HOSTS` controls the servers allowed to host or run your application. You'll configure it to allow the site to run from Azure and locally. `DATABASES` contains the list of available connection strings.
 
-A common way to configure these options is to create a second Python file with the collection of settings for production. We then have a flag in **manage.py** to read the appropriate file. let's create a production settings file, and then update **manage.py** to load the file when our application is running on production.
+A common way to configure the settings is to create a second Python file that contains the collection of settings for production. Then a flag in *manage.py* reads the appropriate file. 
 
-1. Create a new file inside **project** named **azure.py**
-1. Add the following code to import `os`:
+Now you'll create a production settings file. Then you'll update *manage.py* to load the file when your application is running in production:
+
+1. Create a new file inside *project*. Name it *azure.py*.
+1. Add the following code to import `os`.
 
     ```python
     import os
     ```
 
-1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host our application:
+1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host the application.
 
     ```python
     ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
     ```
 
     > [!NOTE]
-    > Azure App Services automatically creates an environmental variable named **WEBSITE_HOSTNAME** which contains the URL for our website. We can also use this to determine if our application is running on Azure.
+    > Azure App Services automatically creates an environmental variable named `WEBSITE_HOSTNAME`. This variable contains the URL for your website. You can use this variable to determine whether your application is running on Azure.
 
-1. Add the following code to configure the database connection string for PostgreSQL:
+1. Add the following code to configure the database connection string for PostgreSQL.
 
     ```python
     hostname = os.environ['DBHOST']
@@ -64,17 +66,17 @@ A common way to configure these options is to create a second Python file with t
     ```
 
     > [!NOTE]
-    > We'll set the environmental variables on Azure in a later step
+    > You'll set the environmental variables on Azure in a later step.
 
-    The connection string we are using is for PostgreSQL. We provide the following information:
+    The connection string you're using is for PostgreSQL. You provide the following information:
 
       - **ENGINE**: Database type
       - **NAME**: Name of the database
-      - **HOST**: URL to the server
+      - **HOST**: URL for the server
       - **USER**: Username to use to connect to the database
       - **PASSWORD**: Password for the user
 
-1. Add the following to the bottom of the file to enable **whitenoise**, which will serve static files
+1. Add the following code to the bottom of the file to enable `whitenoise`, which will serve static files.
 
     ```python
     MIDDLEWARE = [
@@ -91,34 +93,34 @@ A common way to configure these options is to create a second Python file with t
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     ```
 
-    **whitenoise** is middleware which reads requests from the user for static files such as CSS or JavaScript and ensures they are served correctly. We registered the middleware by updating the `MIDDLEWARE` array, and registered a `STATIC_ROOT` for storing static files.
+    WhiteNoise is middleware that reads user requests for static files such as CSS or JavaScript. It also ensures the files are served correctly. You registered the middleware by updating the `MIDDLEWARE` array. You registered a `STATIC_ROOT` to store static files.
 
-1. Set the `SECRET_KEY` with one read from environmental variables by adding the following code:
+1. Set the `SECRET_KEY` with one read from environmental variables by adding the following code.
 
     ```python
     SECRET_KEY = os.getenv('SECRET_KEY')
     ```
 
-    We will create a new secret key after we deploy our application and store it as an application setting.
+    You'll create a new secret key after you deploy the application and store it as an application setting.
 
-1. Disable debugging mode by adding the following code:
+1. Disable debugging mode by adding the following code.
 
     ```python
     DEBUG = False
     ```
 
-## Configuring your application to use the production settings file
+## Configure your app to use the production settings file
 
-With the production settings file created we can now update our application to load it when running on production. We will do this by looking for **WEBSITE_HOSTNAME** environmental variable, which will indicate our application is running on Azure.
+Now that you've the production settings file, you can update your application to load the file in production. Do this by looking for the `WEBSITE_HOSTNAME` environmental variable. This variable indicates the application is running on Azure.
 
-1. Open **settings.py**.
-1. Add the following code to the end of the file to override the necessary settings when running in production:
+1. Open *settings.py*.
+1. Add the following code to the end of the file to override the necessary settings when the app runs in production.
 
     ```python
     if 'WEBSITE_HOSTNAME' in os.environ: # Running on Azure
         from .azure import *
     ```
 
-1. Save all files by clicking **File** > **Save all**.
+1. Save all files by selecting **File** > **Save all**.
 
 You have now configured a Django application for production.
