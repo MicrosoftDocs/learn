@@ -1,86 +1,158 @@
-# Title
+# Module 1: Introduction to data protection and privacy regulations
 
-*Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)*
+# Learner roles
+<!--LM: Please resolve the bullet formatting in the following list.-->
+·     Administrator
 
-## Role(s)
+·     Business user
 
-- *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role)
+·     Privacy manager
 
-## Level
+# Learner level
 
-- *Add the level*  [Level guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#level)
+- **Beginner**: Introductory and overview material that assumes little or no expertise with the topic. The material covers topic concepts, functions, features, and benefits.
 
-## Product(s)
+# Product(s) taught
 
-- *Add the product(s)*
+- Microsoft Azure data security, privacy, and compliance technologies
 
-## Prerequisites
+# Prerequisites
 
-- *List the prerequisites [(Prerequisite guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites)*
+To get the best learning experience from this module, you should have knowledge and experience of the following:
 
-## Summary
+- Data protection
 
-*Add the summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries)*
+- Basic security technologies
 
-## Learning objectives
+- Azure platform
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+# Module summary description
 
-## Chunk your content into subtasks
+Learn about key concepts of data protection, privacy regulation, and data processing. Learn Azure data security, privacy, and compliance technologies.
 
-Identify the subtasks of *module title*
+# Module learning objectives
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-| ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+- Describe data protection.
+- Describe privacy regulations.
+- Describe key concepts of data processing.
+- Describe security, privacy, and compliance options in Microsoft Azure.
 
-## Outline the units
+# Estimate module duration
 
-*Add more units as needed for your content*
+Once you’ve completed the following module outline, provide the total time for the module here.
 
-1. **Introduction**
+60 minutes
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+# Module outline of units
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+## Summary of units
 
-1. **Learning-content unit title**
+1. Introduction
+2. What is data protection?
+3. What are privacy regulations?
+4. Most common data protection regulations and acts
+5. Key concepts of data processing
+6. How does Microsoft support data protection and privacy?
+7. What are the security, privacy, and compliance options in Microsoft Azure?
+8. Knowledge check
+9. Summary
 
-    List the content that will enable the learner to *subtask*:
+## Unit descriptions
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+### Unit 1: Introduction
 
-    **Knowledge check**
+The Introduction unit is required for all modules.
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+**Type of unit:** Introduction unit
 
-    - Question type
-    - Question type
+**Estimate unit duration:** 3 minutes
 
-1. **Exercise - exercise unit title**
+**Module scenario**
 
-    List the steps which apply the learning content from previous unit:
+Contoso, Ltd. is a mid-sized financial services company in London with a branch office in New York. Most of its compute environment runs on-premises on Windows Server, while cloud services are under evaluation.
 
-    1. Step
-    1. Step
-    1. Step
+Contoso’s IT director realizes that Contoso has an outdated operational model with limited automation and reliance on dated technology. The Contoso IT Engineering team has started exploring Azure capabilities and the Microsoft 365 platform. They want to determine whether Azure services might assist with modernizing the current operational model through automation and virtualization. They are also considering Microsoft 365 productivity services instead of locally deployed services, such as e-mail, intranet portal and storage. However, the Contoso legal department has serious concerns about data privacy, compliance, and data protection, when using cloud services instead of locally deployed services.
 
-1. **Summary**
+As part of the initial design, the Contoso IT team asked you, their lead system engineer and server administrator, to evaluate data privacy, protection, and compliance capabilities of Azure and Microsoft 365 platform. You should make sure that these services have capabilities to address the legal department's concerns.
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+### Unit 2: What is data protection?
 
-## Notes
+**Type of unit:** Learning content unit
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
+**Estimate unit duration:** 7 minutes
+
+**Key content per learning objective**
+<!--The following describes key content. I suggest removing the next line "Objectives" and update all similar instances.-->
+
+- Definition and purpose of data protection
+- Key principles of data protection
+- Key components of data protection (data security, data protection, and access control)
+
+### Unit 3: What are privacy regulations?
+
+**Type of unit:** Learning content unit
+
+**Estimate unit duration:** 5 minutes
+
+**Key content per learning objective**
+
+- Definition of privacy regulations and their purpose
+<!--LM: I suggest removing "most" from the following heading.-->
+### Unit 4: Common data protection regulations and acts
+
+**Type of unit:** Learning content unit
+
+**Estimate unit duration:** 12 minutes
+
+**Key content per learning objective**
+
+- Overview of General Data Protection Regulation
+- Overview of California Consumer Privacy Act
+
+### Unit 5: How does Microsoft support data protection and privacy?
+
+**Type of unit:** Learning content unit
+
+**Estimate unit duration:** 5 minutes
+
+**Key content per learning objective**
+
+- Key activities that Microsoft performs to support data protection and privacy for its services
+
+### Unit 6: What are the security, privacy, and compliance options in Microsoft Azure?
+
+**Type of unit:** Learning content unit
+
+**Estimate unit duration:** 10 minutes
+
+**Key content per learning objective**
+
+- Data security and privacy technologies in Azure
+- Compliance technologies in Azure
+
+### Unit 7: Knowledge check
+
+**Type of unit:** Knowledge check unit
+
+**Estimate unit duration:** 5 minutes
+
+### Unit 8: Summary
+
+**Type of unit:** Summary unit
+
+**Estimate unit duration:** 3 minutes
+
+**Resolution of module problem**
+<!--LM: I revised the formatting on the following text.-->
+Description of how the student resolved the module scenario problem.
+
+**Further learning links**
+
+If known, add further learning reference links that will be helpful to students. Otherwise, add to the Summary unit during development.
+<!--LM: Please resolve the "double" bullets in the following list so it displays correctly.-->
+-  https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?view=o365-worldwide
+  •	https://docs.microsoft.com/en-us/legal/gdpr
+  •	https://www.microsoft.com/en-gb/trust-center/privacy/gdpr-faqs
+  •	https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-ccpa?view=o365-worldwide
+  •	https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home?view=o365-worldwide
+  •	https://www.microsoft.com/en-us/trust-center/privacy/customer-data-definitions
