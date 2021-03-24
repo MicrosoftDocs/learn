@@ -62,13 +62,13 @@ quiz:
       explanation: "That's correct. You should use Cloud App Security to discover these applications."
   - content: "What is the primary purpose of data encryption with customer key?"
     choices:
-    - content: "To replace BitLocker encryption."
+    - content: "To replace BitLocker encryption"
       isCorrect: false
       explanation: "That's not correct. Data encryption with customer key works together with BitLocker, but it's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
-    - content: "To meet regulatory or compliance obligations for controlling root keys."
+    - content: "To meet regulatory or compliance obligations for controlling root keys"
       isCorrect: true
       explanation: "That's correct. Data encryption with customer key primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
-    - content: "To provide stronger data encryption."
+    - content: "To provide stronger data encryption"
       isCorrect: false
       explanation: "That's not correct. Data encryption with customer key's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
 
