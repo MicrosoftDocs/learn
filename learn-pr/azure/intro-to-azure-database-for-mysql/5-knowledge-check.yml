@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-database-for-mysql.5-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/23/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: true
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""
+    - content: ""
+      isCorrect: false
+      explanation: ""

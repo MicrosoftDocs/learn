@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-database-for-mysql.1-introduction  
+title: Introduction to Azure Database for MySQL
+metadata:
+  unitType: introduction  
+  title: Introduction to Azure Database for MySQL
+  description: xxx
+  ms.date: 03/23/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
