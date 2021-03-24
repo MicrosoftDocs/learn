@@ -1,6 +1,6 @@
-Organizations with Azure-hosted resources will seek to secure access to those resources. Typically, they'll implement security technologies, such as firewalls, to create security perimeters. These perimeters can control the flow of traffic to and from hosted apps and other resources. If your organization has growing security requirements, it can become difficult to manage these security technologies. How can you simplify the management of your cloud-based security? You can centralize firewall security policies and route management for your cloud-based security perimeters by using Firewall Manager. <!--Andy, please review these edits and rearrangement of text to match template.-->
+Organizations with Azure-hosted resources will seek to secure access to those resources. Typically, they'll implement security technologies, such as firewalls, to create security perimeters. These perimeters can control the flow of traffic to and from hosted apps and other resources. If your organization has growing security requirements, it can become difficult to manage these security technologies. How can you simplify the management of your cloud-based security? You can centralize firewall security policies and route management for your cloud-based security perimeters by using Firewall Manager.
 
-:::image type="content" source="../media/firewall-manager-overview.png" alt-text="Hierarchy of Firewall Manager. A global admin is managing Firewall Manager, which provides centralized management of firewall policies."::: <!--Andy, I expanded this alt-text a bit-->
+:::image type="content" source="../media/firewall-manager-overview.png" alt-text="Hierarchy of Firewall Manager. A global admin is managing Firewall Manager, which provides centralized management of firewall policies.":::
 
 ## Example scenario
 
@@ -12,7 +12,7 @@ As your needs grow and change, you need to implement additional instances of Azu
 
 ## What will we be doing?
 
-<!--Andy, section rearranged to match template; is this OK?-->We'll analyze the capabilities and benefits of using Firewall Manager. You'll know when to:
+We'll analyze the capabilities and benefits of using Firewall Manager. You'll know when to:
 
 - **Launch**: When should you consider using Firewall Manager?
 - **Manage**: How can Firewall Manager help you manage your cloud-based security perimeters?
