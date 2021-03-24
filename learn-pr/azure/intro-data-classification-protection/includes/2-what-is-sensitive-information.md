@@ -28,7 +28,7 @@ Consider the General Data Protection Regulation (GDPR). It primarily helps prote
 
 ## Discover and protect sensitive data
 
-If your organization is incorporating sensitive data protection, there are several steps you must take. It's not enough to simply choose a technology to help protect data. You must properly identify sensitive data so the technology you select can actually help. Also, a consistent process for classifying data (both sensitive and nonsensitive) is imperative. Otherwise, you can't efficiently implement protection technology. Data monitoring is another important consideration. You must monitor sensitive data through its lifecycle. Otherwise, protection might not be efficient, because you won't know if it's working properly.
+If your organization is incorporating sensitive data protection, there are several steps you must take. It's not enough to simply choose a technology to help protect data. You must properly identify sensitive data so the technology you select can actually help. Also, a consistent process for classifying data (both sensitive and non-sensitive) is imperative. Otherwise, you can't efficiently implement protection technology. Data monitoring is another important consideration. You must monitor sensitive data through its lifecycle. Otherwise, protection might not be efficient, because you won't know if it's working properly.
 
 Data location is also important. Today, data is everywhere&#8212;on mobile devices, cloud-storage services, and local file servers. You must consider all possible locations of sensitive data. And don't forget the network paths along which it potentially travels.
 
