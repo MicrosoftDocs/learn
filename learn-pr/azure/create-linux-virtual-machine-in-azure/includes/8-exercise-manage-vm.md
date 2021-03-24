@@ -18,14 +18,14 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
 1. Enter the following values for our HTTP rule.
 
-    ![Screenshot of that shows the basic form filled out.](../media/8-inbound-rule-basic-form.png)
-
    |Setting | Value  |
    |---------|---------|
    |Service   | HTTP        |
    |Priority    |   310      |
    |Name    |     allow-http-traffic    |
    |Description  |    Allows http traffic    |
+
+    ![Screenshot of that shows the basic form filled out.](../media/8-inbound-rule-basic-form.png)
 
 1. Select **Add** to create the rule.
 

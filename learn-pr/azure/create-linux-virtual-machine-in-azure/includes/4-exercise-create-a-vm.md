@@ -20,7 +20,7 @@ The VM creation experience in the portal is presented in a wizard format to walk
 
 ![Screenshot of the Azure portal showing the initial Create a virtual machine pane for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
 
-After you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM through by selecting**Review + Create** at the bottom of the wizard.
+After you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM through by selecting **Review + Create** at the bottom of the wizard.
 
 We'll start with the **Basics** tab. Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
 
@@ -33,7 +33,7 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     | Resource group | Select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
     | Virtual machine name | Enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**). It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes. |
-    | Region | Select a location close to you. See the following note after this table for available regions. |
+    | Region | Select a location close to you. See the following information directly after this table for available regions. |
     | Availability options | Select **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service. |
     | Image | Ubuntu Server 18.04 LTS |
     | Size | D2s v3. This option gives you two vCPUs with 8 GB of RAM. |
@@ -74,7 +74,7 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
 
     By default, Azure creates a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created, so always double-check the network assignments on services you create in Azure. For this exercise, the defaults should work fine.
 
-The rest of the options in the wizard have reasonable defaults, and there's no need to change any of them. You can explore the other tabs if you like. The individual options have an `(i)` icon next to them that will show a help tip to explain the option. This is a great way to learn about the various options you can use to configure the VM.
+    The rest of the options in the wizard have reasonable defaults, and there's no need to change any of them. You can explore the other tabs if you like. The individual options have an `(i)` icon next to them that will show a help tip to explain the option. This is a great way to learn about the various options you can use to configure the VM.
 
 1. Finish configuring the VM and creating the image by selecting **Review + create**.
 
