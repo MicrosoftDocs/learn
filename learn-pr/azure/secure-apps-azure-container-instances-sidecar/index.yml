@@ -19,6 +19,7 @@ abstract: |
   - Integrate with an Azure PaaS service using Private Link
 prerequisites: |
   - Ability to deploy Azure Container Instances in Azure with a basic configuration
+  - Access to an Azure subscription with permissions to create resources
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
