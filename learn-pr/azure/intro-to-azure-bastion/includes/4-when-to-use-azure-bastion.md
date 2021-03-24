@@ -28,13 +28,12 @@ The jump box is a VM running a server operating system, so you'll need to:
 
 To determine whether a jump box or Azure Bastion is the better option to remotely manage your organization's Azure resources, consider criteria such as security, ease of management, and integration. Here's an analysis of these criteria.
 
-| | |
-| --- | --- |
 |**Criteria**|**Analysis**|
+| --- | --- |
 | **Security** |Azure Bastion doesn't expose RDP/SSH on its public IP. Unlike a jump box, Azure Bastion supports only TLS-protected connections from the Azure portal. With Azure Bastion, you don't need to configure NSGs to help secure traffic flow.|
 | **Ease of management** | Azure Bastion is a fully managed PaaS service. It's not a VM like a jump box, which requires regular updates. You don't need a client or agent to use Azure Bastion, nor do you need to apply patches and updates to it. You also don't need to install or maintain any other software on management consoles.|
 | **Integration** | You can integrate Azure Bastion with other native security services in Azure, such as Azure Firewall. This isn't an option with jump servers. |
-|   |   |
+
 
 > [!NOTE]
 > You deploy Azure Bastion per virtual network (or peered virtual network) rather than per subscription, account, or VM.
