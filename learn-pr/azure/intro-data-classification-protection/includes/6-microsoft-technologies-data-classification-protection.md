@@ -53,7 +53,7 @@ As an administrator, apply this protection by defining mail-flow rules. For exam
 - Contains specific words in the subject line.
 - Specifies recipients can't copy or print the message contents.
 
-If someone sends an email message matching an encryption mail-flow rule, Microsoft ARM encrypts the message before it's sent. All Microsoft 365 users accessing their email by using Outlook clients receive native, first-class reading experiences for encrypted and rights-protected email. This is true even if they're not in the sender's organization. Supported Outlook clients include Outlook desktop, Outlook Mac, Outlook mobile on iOS and Android, and Outlook on the web (formerly known as Outlook Web App).
+If someone sends an email message matching an encryption mail-flow rule, rights management system encrypts the message before it's sent. All Microsoft 365 users accessing their email by using Outlook clients receive native, first-class reading experiences for encrypted and rights-protected email. This is true even if they're not in the sender's organization. Supported Outlook clients include Outlook desktop, Outlook Mac, Outlook mobile on iOS and Android, and Outlook on the web (formerly known as Outlook Web App).
 
 Recipients of encrypted or rights-protected mail sent to their Outlook.com, Gmail, and Yahoo accounts receive a wrapper mail. It directs them to the Office Message Encryption (OME) Portal, where they can easily authenticate using a Microsoft account, Gmail, or Yahoo credentials.
 
