@@ -14,7 +14,7 @@ Let's learn what branches are, how they're used, and how they work.
 
 A *branch* is simply a chain of commits that branch off from the main line of development, like a branch on a tree.
 
-If you're switching to Git from another VCS, you might be accustomed to slightly different terminology. The VCS Subversion names its default branch `trunk`, while Git names it `main`. You can rename the default branch, just as you can rename any other branch. In this module, we name the default branch `main`.
+If you're switching to Git from another VCS, you might be accustomed to slightly different terminology. The VCS Subversion names its default branch `trunk`, while Git names it `master`. You can rename the default branch, just as you can rename any other branch. In this module, we name the default branch `main`.
 
 A branch usually starts with a commit on the default branch, in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch and merge them into the `main` branch.
 

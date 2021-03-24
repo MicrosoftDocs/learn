@@ -154,7 +154,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
 
     If you select **Accept Both Changes**, the editor removes the lines around the `<img>` elements and leaves both elements intact.
 
-1. Now, use the following commands to commit the change:
+1. Use the following commands to commit the change:
 
     ```bash
     git add index.html
@@ -179,4 +179,4 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
 
     ```
 
-    Now, open Alice's *index.html* file and confirm that their version also has two `<img>` tags with cat pictures.
+Finally, open Alice's *index.html* file and confirm that their version also has two `<img>` tags with cat pictures.

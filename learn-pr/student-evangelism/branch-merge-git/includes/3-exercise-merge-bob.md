@@ -35,14 +35,14 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     Save the file and close the editor.
 
-1. Now you've made two changes to Bob's `add-cat` branch—you added one file and modified another. Use `git status` to double-check your changes:
+1. You've made two changes to Bob's `add-cat` branch—you added one file and modified another. Use `git status` to double-check your changes:
 
     ```bash
     git status
 
     ```
 
-1. Now, use the following commands to add the new file in the *Assets* directory to the index and commit all changes:
+1. Then, use the following commands to add the new file in the *Assets* directory to the index and commit all changes:
 
     ```bash
     git add .
@@ -50,7 +50,7 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
 
     ```
 
-1. Bob now does the same action that Alice did earlier—Bob switches back to the `main` branch and executes a pull to see if anything has changed:
+1. Bob now does the same action that Alice did earlier. Bob switches back to the `main` branch and executes a pull to see if anything has changed:
 
     ```bash
     git checkout main
@@ -73,7 +73,7 @@ While Alice is working on CSS for the website, Bob is working away at home, blis
      1 file changed, 2 insertions(+), 1 deletion(-)
     ```
 
-1. Now, Bob merges their branch into the `main` branch so that `main` in their repo will have their changes *and* Alice's changes. Then, Bob pushes `main` on their computer to the `main` branch in the shared repo:
+1. Next, Bob merges their branch into the `main` branch so that `main` in their repo will have their changes *and* Alice's changes. Then, Bob pushes `main` on their computer to the `main` branch in the shared repo:
 
     ```bash
     git merge add-cat --no-edit
