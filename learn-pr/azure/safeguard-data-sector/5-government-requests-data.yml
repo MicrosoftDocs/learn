@@ -9,6 +9,6 @@ metadata:
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: PENDING
+durationInMinutes: 4
 content: |
   [!include[](includes/5-government-requests-data.md)] 
