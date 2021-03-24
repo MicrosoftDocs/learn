@@ -33,7 +33,7 @@ Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/bench
 |-----|--------|
 |Unencrypted backup|Use [Azure backup](https://azure.microsoft.com/services/backup/), which has a robust set of features, including encryption. [Azure SQL transparent data encryption](https://docs.microsoft.com/azure/azure-sql/database/transparent-data-encryption-byok-overview) can be used too.|
 |No business continuity plan|Use [Azure paired regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) and [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/disaster-recovery) on workstations.|
-|No disaster recovery plan|Use [Azure site recovery](https://azure.microsoft.com/services/site-recovery/).|
+|No disaster recovery plan|Use [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/).|
 |No tests or audits|Follow [Azure backup](https://docs.microsoft.com/azure/backup/guidance-best-practices) guidance.|
 
 ## Cryptography
@@ -93,10 +93,10 @@ No other action needed.
 
 |Issue|Solution|
 |-----|--------|
-|No automated process for security patches and updates|Use [Azure automatic update manager](https://docs.microsoft.com/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft inTune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Integrate with [Azure security center](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
+|No automated process for security patches and updates|Use [Azure automatic update manager](https://docs.microsoft.com/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Integrate with [Azure security center](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
 |No Antivirus (AV) enforcement|Use [Microsoft defender advanced threat protection](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).|
 |No timeout session enforcement on machines|Enforce [Azure group policy](https://docs.microsoft.com/azure/active-directory-domain-services/manage-group-policy).|
-|No Mobile Device Management (MDM) solution|Implement [Microsoft endpoint manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which includes solutions like [Microsoft endpoint configuration manager](https://docs.microsoft.com/mem/configmgr/) and [Microsoft inTune](https://docs.microsoft.com/mem/intune/). It manages and monitors mobile devices, desktop computers, virtual machines, embedded devices, and servers.|
+|No Mobile Device Management (MDM) solution|Implement [Microsoft endpoint manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which includes solutions like [Microsoft endpoint configuration manager](https://docs.microsoft.com/mem/configmgr/) and [Microsoft Intune](https://docs.microsoft.com/mem/intune/). It manages and monitors mobile devices, desktop computers, virtual machines, embedded devices, and servers.|
 |Limited logging and monitoring|Use Azure Monitor [Log analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview) and follow [Azure logging guidelines](https://docs.microsoft.com/azure/security/fundamentals/log-audit).|
 |No intelligence platform or analytics service|Use [Azure sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
 |Limited logging history|Follow [Azure logging guidelines](https://docs.microsoft.com/azure/security/fundamentals/log-audit).|
