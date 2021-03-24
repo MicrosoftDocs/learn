@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.modeling-small-lookup-tables
+uid: learn.azure.model-partition-data-azure-cosmos-db.modeling-small-lookup-tables
 title: Model small lookup tables 
 metadata: 
   title: Model small lookup tables
@@ -7,7 +7,7 @@ metadata:
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 07
 content: |
   [!include[](includes/7-modeling-small-lookup-tables.md)]

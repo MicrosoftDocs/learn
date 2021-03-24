@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.model-and-partition-your-data-in-azure-cosmos-db.introduction  
+uid: learn.azure.model-partition-data-azure-cosmos-db.introduction  
 title: Introduction  
 metadata:
   type: introduction  
@@ -8,7 +8,7 @@ metadata:
   ms.date: 3/9/2021  
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]
