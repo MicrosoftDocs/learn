@@ -21,9 +21,9 @@ abstract: |
   - Describe Office 365 Message Encryption
 
 prerequisites: |
-  -Basic knowledge of data protection
-  -Basic experience with security technologies
-  -Basic experience with Microsoft 365 or Office 365 services
+  - Basic knowledge of data protection
+  - Basic experience with security technologies
+  - Basic experience with Microsoft 365 or Office 365 services
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
