@@ -3,12 +3,12 @@ uid: learn.visual-studio-github-push.6-commit-changes
 title: Commit your changes
 metadata:
   title: Commit your changes
-  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
+  description: This unit explains the parts of the Git Changes window in Visual Studio
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
-durationInMinutes: 2
+durationInMinutes: 6
 content: |
   [!include[](includes/6-commit-changes.md)]

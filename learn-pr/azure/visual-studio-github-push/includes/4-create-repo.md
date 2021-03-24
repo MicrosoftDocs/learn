@@ -1,18 +1,10 @@
-<!-- Guidance on writing the opening to a content/conceptual unit: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductions?branch=master#use-the-standard-learning-unit-introduction-format -->
-
 Once you've authenticated to GitHub, Visual Studio can improve your GitHub workflow. One of those improvements is the ability to push (also known as publishing) a local project straight to GitHub with a single click. 
-
-<!-- 
-
-See here for general guidance on content units: https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-structure-learning-content?branch=master
-
--->
 
 ## What is publishing?
 
 If you're starting with a local project in Visual Studio, the process to get it up in GitHub is many steps:
 
-:::image type="content" source="../media/4-create-repo-steps.png" alt-text="Screenshot of flow diagram depicting steps for creating a repository":::
+:::image type="content" source="../media/4-create-repo-steps.png" alt-text="Screenshot of flow diagram depicting steps for creating a repository.":::
 
 1. Create a repository on GitHub.com.
 2. Copy the remote endpoint.

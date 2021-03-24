@@ -3,12 +3,12 @@ uid: learn.visual-studio-github-push.5-exercise-create-repo
 title: Exercise - Create a repository on GitHub from Visual Studio
 metadata:
   title: Exercise - Create a repository on GitHub from Visual Studio
-  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
+  description: This unit is an exercise to create a new GitHub repository with Visual Studio
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-create-repo.md)]

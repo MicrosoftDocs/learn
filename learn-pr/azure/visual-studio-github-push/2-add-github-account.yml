@@ -3,12 +3,12 @@ uid: learn.visual-studio-github-push.2-add-github-account
 title: Sign in to GitHub from Visual Studio
 metadata:
   title: Sign in to GitHub from Visual Studio
-  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
+  description: This unit explains the authentication process for GitHub in Visual Studio
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/2-add-github-account.md)]

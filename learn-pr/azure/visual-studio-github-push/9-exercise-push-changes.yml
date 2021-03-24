@@ -3,7 +3,7 @@ uid: learn.visual-studio-github-push.9-exercise-push-changes
 title: Exercise - Push changes to GitHub from Visual Studio
 metadata:
   title: Exercise - Push changes to GitHub from Visual Studio
-  description: This unit is a part of 'Push to GitHub with Visual Studio 2019'
+  description: This unit is an exercise to push commits to a GitHub remote with Visual Studio
   ms.date: 02/24/2021
   author: prnadago
   ms.author: prnadago
