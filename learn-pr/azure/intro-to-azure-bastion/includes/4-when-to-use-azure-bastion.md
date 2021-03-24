@@ -1,5 +1,5 @@
-In this unit, you'll explore the uses of Azure Bastion and determine whether it's the correct choice for securely connecting to a remote VM. You'll evaluate Azure Bastion based on the following criteria:
-<!--LM: Does it make more sense to replace "correct" with "best" or "a good" choice?-->
+In this unit, you'll explore the uses of Azure Bastion and determine whether it's a suitable choice for securely connecting to a remote VM. You'll evaluate Azure Bastion based on the following criteria:
+
 - Security
 - Ease of management
 - Integration with other apps
