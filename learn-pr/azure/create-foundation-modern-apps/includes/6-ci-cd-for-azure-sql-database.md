@@ -11,18 +11,20 @@
 TODO: add your topic sentences(s)
 
 ## CI/CD for databases
+
 TODO: Why CI/CD applies to database systems
 TODO: Two main ways -- scripts vs dacpac
 
 ## Azure DevOps
+
 TODO: explain value prop of Azure DevOps and how it works
 TODO: explain integrations with SQL DB
 
 ## GitHub Actions
+
 TODO: explain value prop of GitHub Actions and how it works
 TODO: explain integrations with SQL DB
 TODO: explain sql-action vs other things like dbup
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->

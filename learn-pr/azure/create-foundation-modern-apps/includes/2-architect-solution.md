@@ -15,25 +15,32 @@ Modern day challenges make opportunities for modern applications. Let's dive dee
 :::image type="content" source="../media/2-enterprise-security.png" alt-text="Diagram of enterprise-class security." border="false":::
 
 ## Solution components
+
 Based on the scenario and the ideal solution, here are some potential solution components.
 
 ### Database service
+
 TODO: Explain how it helps the solution
 
 ### API service
+
 TODO: Explain how it helps the solution
 
 ### Notification service
+
 TODO: Explain how it helps the solution
 
 ### Web application hosting
+
 TODO: Explain how it helps the solution
 
 ### Automation of deployment
+
 TODO: Explain how it helps the solution
 
 ## Solution architecture
 
+TODO: Show image of solution architecture and explain the pieces.
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

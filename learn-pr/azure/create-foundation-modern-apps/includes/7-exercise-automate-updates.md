@@ -54,8 +54,8 @@ In order to automate updates, you'll need to configure GitHub secrets and a yaml
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
-
 ## Configure GitHub secrets
+
 GitHub secrets introduce a way to securely store secrets, keys, and other sensitive information in GitHub. In this section, you'll create a new GitHub secret which includes your Azure SQL Database connection string.
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
@@ -69,6 +69,7 @@ GitHub secrets introduce a way to securely store secrets, keys, and other sensit
     1. *Value*: **Connection string from prior step**
 
 ## Configure yaml file
+
 There are several template yaml files available in the code repository. For this module, you will only use the workflow file for Azure SQL Database. In future modules of this learning path, you will learn how to automate deployment for multiple other services.
 
 1. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
@@ -78,6 +79,7 @@ There are several template yaml files available in the code repository. For this
 1. Review the template and seek to understand what the workflow will do.
 
 ## Push commits and monitor results
+
 Now that your GitHub secret and workflow file are configured, you are ready to push your commits and observe the workflow.
 
 1. Select the **Source Control** icon on the left-hand taskbar.
@@ -95,8 +97,5 @@ Now that your GitHub secret and workflow file are configured, you are ready to p
 
 1. Observe the contents of the workflow that is running (or has completed). Notice how the Azure SQL Action leverages the dacpac file in your repository to deploy the final state of the database to your Azure SQL Database.
 
-
-
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->

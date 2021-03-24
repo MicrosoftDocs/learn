@@ -9,7 +9,6 @@
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
 Azure SQL Database is a great choice for operational, transactional, and hybrid analytical workloads.
-
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
     Goal: Describe the part of the scenario covered in this exercise
@@ -20,6 +19,7 @@ Azure SQL Database is a great choice for operational, transactional, and hybrid 
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
+
 In the bus catching scenario, Azure SQL Database was selected due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
@@ -54,8 +54,8 @@ Here, you will deploy Azure SQL Database using scripts, connect to it in Azure D
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
-
 ## Deploy Azure SQL Database
+
 In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
@@ -133,9 +133,10 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     The script will take several minutes to complete. There are four main commands above, let's break them down. The first creates an Azure SQL Database logical server, which serves as something to connect to as well as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This will especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
 
-    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. This is a great solution for the bus catching scenario as it is in development phase (perhaps not utilized 24/7) and it is unknown how popular it will be (i.e. how much compute it will need). 
+    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. This is a great solution for the bus catching scenario as it is in development phase (perhaps not utilized 24/7) and it is unknown how popular it will be (i.e. how much compute it will need).
 
 ## Connect with Azure Data Studio
+
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
 
 1. Open Azure Data Studio and confirm by selecting the **Explorer** icon on the left-hand taskbar that the code repository folder is open. If you do not see the code files, please return to the previous exercise to configure your environment.
@@ -158,6 +159,7 @@ Once your database is deployed, there are many ways that you can connect and int
 1. Once a successful connection is made, you should be able to navigate the database's contents in the Connections pane.
 
 ## Set up the database
+
 Once you're connected to any database, you usually need to deploy the database schema and tailor the database to meet your scenario's requirements by creating tables. Using a series of T-SQL scripts in a SQL notebook in Azure Data Studio, you'll configure the database to support your application and load some initial bus-related data.
 
 1. In Azure Data Studio, select **Explorer** icon in the left-hand taskbar.
@@ -167,6 +169,7 @@ Once you're connected to any database, you usually need to deploy the database s
 1. Follow the steps in the SQL notebook to complete the exercise, and then return here.
 
 ## Process bus data with Azure SQL Database
+
 Now that your database is configured, it's time to dive deeper into how Azure SQL Database will receive the real-time JSON data and store it in the database. Fortunately, Azure SQL Database has JSON support which makes this a simple task. Then, you can leverage the geospatial capabilities in Azure SQL Database to find the distances between buses, define and store GeoFences, and even determine if a bus is within a given GeoFence. With a foundation like this one, your application development becomes greatly simplified. This exercise will be completed in a SQL notebook in Azure Data Studio, similar to the previous activity.
 
 1. In Azure Data Studio, select **Explorer** icon in the left-hand taskbar.
@@ -196,7 +199,5 @@ Now that your database is configured, it's time to dive deeper into how Azure SQ
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
-
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->

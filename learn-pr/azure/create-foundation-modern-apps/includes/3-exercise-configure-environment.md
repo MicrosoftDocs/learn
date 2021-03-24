@@ -28,13 +28,10 @@ In the bus-catching scenario, we will use several tools and languages to build o
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-
-
 <!-- 4. Image (highly recommended) ----------------------------------------------------------------
 
     Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
 -->
-
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
     Goal: Provide all the information the learner needs to perform this sub-task.
@@ -47,9 +44,11 @@ In the bus-catching scenario, we will use several tools and languages to build o
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 ## Tools for success
+
 Here, you will learn how to download the latest recommended tools and extensions. You will also set up the code sample on your local machine. You'll also select a language for the rest of the learning path (Python, Node.js, or .NET Core).
 
 ### Visual Studio Code
+
 Throughout the learning path, you'll use Visual Studio Code as your main IDE. If you have another IDE of choice, you are free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
 
 1. Visual Studio Code is available on all operating systems. Navigate to the [Visual Studio Code Download](https://code.visualstudio.com/Download) page and download/install the application applicable to your operating system.
@@ -79,6 +78,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
 ### Azure Data Studio
+
 Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database.
 
 1. Navigate to the [Azure Data Studio Download](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
