@@ -1,4 +1,4 @@
-Bicep templates are used to define Azure resources that will be deployed.
+Bicep templates are the files we write. Templates define Azure resources that will be deployed.
 
 In our toy company example, we'll need to create a Bicep template that we can reuse for product launches. The template needs to deploy an Azure Storage account and some App Service resources.
 
