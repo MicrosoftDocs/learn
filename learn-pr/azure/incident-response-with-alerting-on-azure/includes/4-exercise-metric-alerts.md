@@ -131,14 +131,10 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
 1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left panel.
 
-   This step presents the alert summary page, where you can see the count of the number of alerts at each severity.
+   This step presents the alert summary page, where you can see the count of the number of alerts.
 
     ![Image that shows the alert summary page](../media/4-alert-summary-page.png)
 
-1. You configured your metric alerts with a severity of 2 and 3. Select one of the severity levels to show all the alerts for that level.
+1. You configured your metric alerts with a severity of 2 and 3. Select one of the alerts to view the severity level.
 
-    ![Image that shows the "All Alerts" area](../media/4-all-alerts-sev4.png)
-
-1. Selecting one of the alerts shows the details on the alert. After the issue is resolved, you can also change the alert state.
-
-    ![Image that shows the alert details page](../media/4-alert-details.png)
+1. Selecting one of the alerts shows the details on the alert. 
