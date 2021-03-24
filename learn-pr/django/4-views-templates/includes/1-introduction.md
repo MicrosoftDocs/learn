@@ -1,11 +1,15 @@
-When first beginning to create websites having static pages seems only natural, but what if you wanted to get a little creative and have data change per user or per page? That's where using templates can ease the process of developing apps. Templates give us the option to use the same page multiple times throughout the site, with sections of data that can continuously change depending on the request. In this module learn why it is worth the time to create dynamic pages and how to easily create and manage them.
+When you're first beginning to create websites, having static pages seems only natural. But what if you want to get a little creative and have data change per user or per page? 
 
-In this module you will learn:
+That's where using templates can ease the process of developing apps. Templates give you the option to use the same page multiple times throughout the site, with sections of data that can continuously change depending on the request. 
 
-- work with views
-- use template variables and tags
-- add dynamic data to Django templates
-- use template inheritance
+This module shows you why creating dynamic pages is worth the time. It also shows you how to easily create and manage them.
+
+In this module, you'll learn how to:
+
+- Work with views.
+- Use template variables and tags.
+- Add dynamic data to Django templates.
+- Use template inheritance.
 
 Prerequisites:
 
@@ -16,7 +20,7 @@ Prerequisites:
   - Understanding of HTML and CSS
   - Basic understanding of Django
   - Basic understanding of relational databases
-  - Intermediate level knowledge of Python, including
-    - [Package Management](https://docs.python.org/3/installing/index.html?azure-portal=true)
-    - [Virtual Environments](https://packaging.python.org/tutorials/installing-packages/?azure-portal=true#creating-virtual-environments)
+  - Intermediate-level knowledge of Python, including:
+    - [Package management](https://docs.python.org/3/installing/index.html?azure-portal=true)
+    - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/?azure-portal=true#creating-virtual-environments)
     - [Inheritance](https://docs.python.org/3/tutorial/classes.html?azure-portal=true#inheritance)

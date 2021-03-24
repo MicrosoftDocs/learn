@@ -12,25 +12,25 @@ metadata:
 durationInMinutes: 2
 quiz:
  questions:
- - content: 'What can be a combination of alphanumeric characters and can include an underscore as long as it is not placed at the beginning?'
+ - content: "What can be a combination of alphanumeric characters and can include an underscore as long as it's not placed at the beginning?"
    choices:
-   - content: 'tags'
+   - content: 'Tags'
      isCorrect: false
      explanation: 'This answer is not correct. Tags are used to add logic such as loops to an app template.'
-   - content: 'variables'
+   - content: 'Variables'
      isCorrect: true
-     explanation: 'This answer is correct. Variables can be a combination of alphanumeric characters and can include an underscore as long as it is not placed at the beginning.'
-   - content: 'filters'
+     explanation: "This answer is correct. Variables can be a combination of alphanumeric characters and can include an underscore as long as it's not placed at the beginning."
+   - content: 'Filters'
      isCorrect: false
-     explanation: 'This answer is not correct. Filters are used to control how the data appears when requested.'
- - content: 'When used as a filter what returns a number of elements in a list?'
+     explanation: "This answer is not correct. Filters are used to control how the data appears when it's requested."
+ - content: "When it's used as a filter, what returns a number of elements in a list?"
    choices:
-   - content: 'capfirst'
+   - content: "`capfirst`"
      isCorrect: false
-     explanation: 'This answer is not correct. When used as a filter it capitalizes the first letter in every word.'
-   - content: 'block title'
+     explanation: "This answer is not correct. When `capfirst` is used as a filter, it capitalizes the first letter in every word."
+   - content: "`block title`"
      isCorrect: false
-     explanation: 'This answer is not correct. This signifies to the Django template engine this information can be over written by a child template.'
-   - content: 'length'
+     explanation: "This answer is not correct. `block title` signifies to the Django template engine that a child template can overwrite this information."
+   - content: "`length`"
      isCorrect: true
-     explanation: 'This answer is correct. When used as a filter length can return the number of elements in a list.'
+     explanation: "This answer is correct. When `length` is used as a filter, it can return the number of elements in a list."

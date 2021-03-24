@@ -1,12 +1,12 @@
-Let's create two templates to display a list of shelters, and a detail page for each shelter. We will also create a base template to ensure consistency across our application.
+Let's create two templates to display a list of shelters, and a detail page for each shelter. We'll also create a base template to ensure consistency across our application.
 
 ## Create the base template
 
-A base template is common for all Django projects. We will start by creating our base template.
+A base template is common for all Django projects. We'll start by creating one.
 
-1. Inside Visual Studio Code, create a new folder inside **dog_shelters** named **templates**
-1. Create a new file inside **templates** named **base.html**
-1. Add the following HTML to **base.html**
+1. In Visual Studio Code, create a new folder inside *dog_shelters* named *templates*.
+1. Create a new file inside *templates* named *base.html*.
+1. Add the following HTML to *base.html*:
 
     ```html
     <!DOCTYPE html>
@@ -31,16 +31,16 @@ A base template is common for all Django projects. We will start by creating our
     ```
 
     > [!NOTE]
-    > We are using [Bootstrap version 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/?azure-portal=true) for our site. No Bootstrap knowledge will be required, however. We are only using one class ([jumbotron](https://getbootstrap.com/docs/4.6/components/jumbotron/?azure-portal=true)), but otherwise we will be using core HTML.
+    > We're using [Bootstrap version 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/?azure-portal=true) for our site. We don't need Bootstrap knowledge here, though. We're using only one class, [jumbotron](https://getbootstrap.com/docs/4.6/components/jumbotron/?azure-portal=true). Otherwise, we're using core HTML.
 
-Notice the two `{% block %}` statements, one for the `title` and the next for the `content` the child pages will provide. We are providing a default value for `title`, which ensures we will always have a title if a child page doesn't set it.
+Notice the two `{% block %}` statements, one for the title and the next for the content that the child pages will provide. We're providing a default value for `title`, which ensures that we'll always have a title if a child page doesn't set it.
 
 ## Create the shelter list template
 
-We will now create another template for listing all shelters. We will loop through the list of shelters, and create links to details for all shelters.
+We'll now create another template for listing all shelters. We'll loop through the list of shelters and create links to details for all shelters.
 
-1. Inside **dog_shelters/templates**, create a new file named **shelter_list.html**
-1. Add the following to create the template for our shelter list:
+1. In *dog_shelters/templates*, create a new file named *shelter_list.html*.
+1. Add the following code to create the template for our shelter list:
 
     ```html
     {% extends 'base.html' %}
@@ -63,16 +63,18 @@ We will now create another template for listing all shelters. We will loop throu
     {% endblock %}
     ```
 
-We use the `block` tags to indicate where we want our information to be placed. We specify a `title` of **Shelter list**, and the `content` will be the list of all shelters.
+We use the `block` tags to indicate where we want our information to be placed. We specify a `title` value of `Shelter list`, and the `content` items will be the list of all shelters.
 
-We are also using a new tag, `url`. The `url` tag generates a URL dynamically. Our URLs are registered in our URLconf. As a result, they could potentially change. By using the `url` tag, we can tell Django to retrieve the appropriate URL from the URLconf rather than hard-coding in a path. `url` looks for the name of the path, **shelter_detail** in our case, and then the list of any parameters expected. **shelter_detail** has one parameter `pk`, which will be the primary key, or ID, of the shelter. We specify the ID by using `shelter.id`.
+We're also using a new tag, `url`. The `url` tag generates a URL dynamically. Our URLs are registered in our URLconf, so they can potentially change. By using the `url` tag, we can tell Django to retrieve the appropriate URL from the URLconf rather than hard-coding in a path. 
+
+The `url` tag looks for the name of the path, `shelter_detail` in our case, and then the list of any expected parameters. `shelter_detail` has one parameter, `pk`. That's the primary key, or ID, of the shelter. We specify the ID by using `shelter.id`.
 
 ## Create the shelter detail template
 
 With our list template created, we can now create the detail template.
 
-1. Create a new file inside **dog_shelters/templates** called **shelter_detail.html**
-1. Add the following to create the template:
+1. In *dog_shelters/templates*, create a new file called *shelter_detail.html*.
+1. Add the following code to create the template:
 
     ```html
     {% extends 'base.html' %}
@@ -100,22 +102,22 @@ With our list template created, we can now create the detail template.
     {% endblock %}
     ```
 
-Notice in the body we check to see if any dogs are inside the shelter by using `if shelter.dog_set.all`. If there are dogs, we display the list by using `for` to loop through all the dogs. Otherwise we display a message saying no dogs are available. We will update the link in a later unit.
+Notice that in the body, we check to see if any dogs are inside the shelter by using `if shelter.dog_set.all`. If there are dogs, we display the list by using `for` to loop through all the dogs. Otherwise, we display a message that says no dogs are available. We'll update the link in a later unit.
 
 > [!NOTE]
-> You may notice we are making two calls to `shelter.dog_set.all`. If you are experienced with databases and ORMs, you might be concerned we are making two calls to the database, which would be a performance hit. Django has built-in caching, which will ensure only one call to the database is made.
+> You might notice that we're making two calls to `shelter.dog_set.all`. If you're experienced with databases and ORMs, you might be concerned that we're making two calls to the database. Two calls would normally be a performance hit. Django has built-in caching, which will ensure that only one call to the database is made.
 
 ## Test the site
 
 With our templates created, we can see our site in action!
 
-1. Save all files
-1. Open your browser and navigate to **http://localhost:8000**
-1. The list of shelters should now display
+1. Save all files.
+1. Open your browser and go to *http://localhost:8000*.
+1. The list of shelters should now appear.
 
-    :::image type="content" source="../media/shelter-list.png" alt-text="Screenshot of page showing list of shelters - Contoso and AdventureWorks.":::
+    :::image type="content" source="../media/shelter-list.png" alt-text="Screenshot of a page that shows a list of two shelters - Contoso and AdventureWorks.":::
 
-1. Click on **Contoso**
-1. The list of dogs for Contoso now displays
+1. Select **Contoso**.
+1. The list of dogs for the Contoso shelter now appears.
 
-    :::image type="content" source="../media/shelter-detail.png" alt-text="Screenshot of page showing shelter details for Contoso, including the two dogs Sammy and Roscoe.":::
+    :::image type="content" source="../media/shelter-detail.png" alt-text="Screenshot of page that shows shelter details for Contoso, including the two dogs Sammy and Roscoe.":::
