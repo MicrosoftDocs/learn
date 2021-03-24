@@ -1,7 +1,15 @@
+With Azure Container Instances, you can launch singles containers in Azure and use advanced functionality to address sophisticated networking and security requirements. 
 
-In the previous module on Azure Container Instances you learnt the basics: how to create containers, define environment variables and mount Azure Files shares and some troubleshooting techniques. In this module you will go one step further, and you will learn some advanced tools that you can use with Azure Container Instances.
+Suppose you work at network provider, and you are responsible for creating Application Programmable Interface (APIs) for your customers. These APIs are a premium service for which you charge your customers, so they need to be able to launch and stop their APIs on-demand. Once a customer has started an API, they are responsible for its life cycle. A critical requirement is that APIs are not exposed to the public Internet, and that a specific customer only has access to their own API.
 
-With Azure Container Instances you can launch singles containers in Azure, but you can as well leverage advanced functionality to address sophisticated networking and security requirements.
+Azure Container Instance offer an ideal platform for this type of applications:
+
+- They are a purely on-demand infrastructure, offering very granular per-second billing
+- Azure Container Instances offer quick startup times
+- Azure Container Instances allow for very granular sizing
+- Both Windows and Linux container images are supported
+
+In this module, you will learn some advanced tools that you can use with Azure Container Instances.
 
 By the end of this module, you'll be able to:
 
