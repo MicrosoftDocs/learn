@@ -8,7 +8,7 @@ When you’ve configured your Azure Information Protection policy for labels tha
 The Azure Information Protection scanner can inspect any files that Windows can index. It works by using IFilters that are installed on the Windows Server computer. To determine if the files need labeling, the Azure Information Protection scanner uses the Microsoft 365 built-in data loss prevention (DLP) sensitivity information types and pattern detection, or Microsoft 365 regex patterns.
 You can run the Azure Information Protection scanner in discovery mode only. Then, use the reports to check what would happen if the files were labeled. Instead, you can run the scanner to apply the labels automatically. Additionally, you can run the scanner to discover files that contain sensitive information types, without configuring labels for conditions that apply automatic classification.
 
-The following image shows the Azure Information Protection scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
+The following image depicts the Azure Information Protection scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
 
 :::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Image depicts unified labeling scanner architecture.":::
 
