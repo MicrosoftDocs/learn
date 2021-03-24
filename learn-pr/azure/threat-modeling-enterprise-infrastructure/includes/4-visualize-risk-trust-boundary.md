@@ -1,6 +1,5 @@
 ### Trust boundary
 
-![Trust boundary line element](../media/elements/trust-boundary-line-50.png)&nbsp;
 ![Trust boundary box element](../media/elements/trust-boundary-box-50.png)
 
 #### What is trust boundary?

@@ -1,6 +1,6 @@
 ## Access control
 
-![Access Control category](../media/policies/access-control.svg)
+![Access Control category](../media/policies/access-control.png)
 
 ### Why ask these questions
 

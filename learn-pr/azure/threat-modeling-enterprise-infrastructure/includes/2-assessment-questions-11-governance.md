@@ -1,6 +1,6 @@
 ## Governance
 
-![Governance category](../media/policies/governance.svg)
+![Governance category](../media/policies/governance.png)
 
 ### Why ask these questions
 
