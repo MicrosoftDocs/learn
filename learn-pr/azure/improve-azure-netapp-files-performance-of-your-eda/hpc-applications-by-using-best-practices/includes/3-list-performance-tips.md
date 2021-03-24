@@ -116,6 +116,18 @@ The mount options wsize and rsize determine how much data is sent between the NF
 
 The best practice for Azure NetApp Files is to set rsize and wsize the same value. And it's generally recommended to set that value as 262144 (256K) in the mount options.
 
+Below an example to mount an Azure NetApp Files volume using actimeo & nocto, NFSv3, nconnect, rsize & size and using tcp.
+
+```bash
+sudo mount -t nfs -o rw,nconnect=16,nocto,actimeo=600,hard,rsize=262144,wsize=262144,vers=3,tcp 10.1.x.x:/ultravol ultravol
+```
+
+## hard/soft & intr/nointr
+
+The "hard" or "soft" mount options specify whether the program using a file using NFS should stop and wait (hard) for the server to come back online if the NFS server is unavailable or if it should report an error (soft). The "intr" allows NFS processes to be interrupted when a mount is specified as a hard mount.
+
+We recommend using "intr" with "hard" mounts whenever applicable.
+
 ## MTU (jumbo frames)
 
 The default MTU for Azure VMs is 1,500 bytes. And we don't encourage customers to increase VM MTUs.
