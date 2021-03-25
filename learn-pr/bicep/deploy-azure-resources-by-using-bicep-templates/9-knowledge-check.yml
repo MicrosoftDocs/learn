@@ -3,91 +3,47 @@ uid: learn.azure.deploy-azure-resources-bicep.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: "" # user input: module title for browser tab and search results
-  description: "" # user input: a description for site search and SEO
+  title: "Knowledge check" # user input: module title for browser tab and search results
+  description: "Knowledge check" # user input: a description for site search and SEO
   ms.date: 03/12/2021  
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 123 # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
-###  - Questions are complete sentences ending with a question mark 
-###  - No true/false questions 
-###  - 3 answers per question 
-###  - All answers about the same length 
-###  - Numeric answers listed in sorted order 
-###  - No "All of the above" and/or "None of the above" as answer choices 
-###  - No "Not" or "Except" in questions 
-###  - No second person ("you") in the questions or answers 
-###  - Provide a meaningful explanation for both correct and incorrect answers 
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how <attributes> of <product> work to <solve problem>"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether <product> is appropriate to <general product use case>"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
 content: |
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: "What's the best way for the team to create a template that will deploy to both their test and production environments?"
     choices:
-    - content: ""
+    - content: "Create a template that deploys all of the resources for the manufacturing application. Add template parameters for the values that might change between environments."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Template parameters are a great way to manage multiple environments. You can specify different values for the parameters when you deploy the template into the test and production environments."
+    - content: "Create a module that deploys all of the resources for the manufacturing application. Create separate Bicep templates for each environment, and add the shared module to each environment's template."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Modules can be a great way to reuse your Bicep code, but when you're deploying multiple environments there's usually a simpler way to keep track of the different configuration for each deployment."
+    - content: "Create a template that deploys all of the resources required for the manufacturing application. Add variables for the values that might change between environments."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Variables have the same value, so they aren't usually what you need to consider when you deploy multiple environments."
+  - content: "The template the team has developed includes this line: `param siteName string = '${uniqueString(resourceGroup().id)'`. Which of these statements is true?"
     choices:
-    - content: ""
+    - content: "Whoever deploys the template must specify a value for the `siteName` parameter."
+      isCorrect: false
+      explanation: "The `siteName` parameter has a _default value_ specified. This means that deployments don't have to specify the parameter value - if they don't, the default value will be chosen."
+    - content: "The `siteName` parameter will have a different default value every time the template is deployed."
+      isCorrect: false
+      explanation: "The parameter's default value is set using the `uniqueString()` function, and this has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
+    - content: "When the template is deployed to the same resource group in the same subscription repeatedly, the `siteName` parameter's default value will be the same each time."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "The default value of the `siteName` parameter uses the `uniqueString()` function, and this has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
+  - content: "The Bicep template written by the IT department has two modules in it. Which of these statements is true?"
     choices:
-    - content: ""
+    - content: "If an output is added to one of the modules, it will automatically be available to whoever executes the template deployment without them making any changes to the parent template."
+      isCorrect: false
+      explanation: "Outputs defined by Bicep modules are available to the parent template, but they aren't automatically available to the template deployer. However, you could define an output in your template and pass the value through."
+    - content: "If an output is added to one of the modules, it will automatically be available for the parent template to use."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The outputs from modules are automatically made available for the parent template to use, such as in defining input parameter values for other modules or when setting the properties on resources."
+    - content: "Modules cannot have outputs - only templates can."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: "" 
+      explanation: "Modules can define outputs. The outputs from modules are automatically made available to the parent template."
