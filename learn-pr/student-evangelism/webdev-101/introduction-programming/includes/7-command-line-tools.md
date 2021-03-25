@@ -12,7 +12,7 @@ The command line, compared to a UI does not have any graphical element and is pr
 > [!NOTE ]
 > Because development environments are so unique to each developer, some will avoid using the command line, some will rely on it entirely, and some prefer a mix of the two.
 
-## Command line options
+## Command line options
 
 Options for the command line will differ based on the operating system you use.
 
