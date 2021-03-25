@@ -2,7 +2,7 @@ We want to create an application to allow someone to book a cruise to the moon f
 
 ## Install Vue CLI
 
-Vue CLI is available through [npm](https://www.npmjs.com/?azure-portal=true), the packaging tool that Node.js uses. npm is automatically installed when you install Node.js. To ensure that you have npm and Node.js installed on your system, open a command or terminal window and run the following commands:
+Vue CLI is available through [npm](https://www.npmjs.com/?azure-portal=true), the packaging tool that Node.js uses. The npm tool is automatically installed when you install Node.js. To ensure that you have npm and Node.js installed on your system, open a command or terminal window and run the following commands:
 
 ```bash
 node -v
@@ -10,7 +10,7 @@ npm -v
 ```
 
 > [!IMPORTANT]
-> Vue CLI is typically installed globally via npm, which requires elevated permissions if you have installed Node.js directly. Using Node Version Manager allows you to perform the installation as a regular user. You can install [nvm on Linux, Windows Subsystem for Linux (WSL), or macOS](https://github.com/nvm-sh/nvm#installing-and-updating/?azure-portal=true), or install [nvm-windows on Windows](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2/?azure-portal=true).
+> Vue CLI is typically installed globally via npm, which requires elevated permissions if you've installed Node.js directly. Using Node Version Manager (nvm) allows you to perform the installation as a regular user. You can install [nvm on Linux, Windows Subsystem for Linux (WSL), or macOS](https://github.com/nvm-sh/nvm#installing-and-updating/?azure-portal=true), or install [nvm-windows on Windows](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2/?azure-portal=true).
 
 To install Vue CLI, open a command or terminal window and run the following command:
 
@@ -22,7 +22,7 @@ The installation of Vue CLI on your system will take a couple of minutes.
 
 ## Bootstrap an application
 
-The fastest way to bootstrap a Vue application is through Vue CLI. We'll now create a starter application with Vue CLI.
+The fastest way to bootstrap a Vue application is through Vue CLI. We'll now create a starter application by using Vue CLI.
 
 1. In a command or terminal window, go to a folder where you want to store your application.
 1. Create a Vue application by running the following command:
@@ -31,21 +31,21 @@ The fastest way to bootstrap a Vue application is through Vue CLI. We'll now cre
     vue create relecloud
     ```
 
-1. When you're prompted, select **Manually select features** by using your arrow keys to move down and selecting the <kbd>Enter</kbd> key.
+1. When you're prompted, use the arrow keys to move to **Manually select features**, and then select the <kbd>Enter</kbd> key.
 
-    ![Screenshot of menu options with the option to manually select features highlighted.](../media/manual.png)
+    ![Screenshot of a menu with the option to manually select features highlighted.](../media/manual.png)
 
-1. When you're prompted for features needed for your project, use the arrow keys to move to **Babel**, and select the Spacebar to disable it. Then use the arrow keys to move to **Linter / Formatter**, and select the Spacebar to disable it.
+1. When you're prompted for features needed for your project, use the arrow keys to move to **Babel**, and select the <kbd>Spacebar</kbd> to disable it. Then use the arrow keys to move to **Linter / Formatter**, and select the <kbd>Spacebar</kbd> to disable it.
 
     ![Screenshot of selected feature options.](../media/features.png)
 
 1. Ensure that **Choose Vue version** is selected.
-1. Select the <kbd>Enter</kbd> key to confirm feature selection.
+1. Select the <kbd>Enter</kbd> key to confirm the feature choice.
 
     > [!NOTE]
     > For production projects, you might decide to add more features. These features are outside the scope of this module.
 
-1. When you're prompted to choose a version of Vue.js, use the arrow keys to move to **3.x (Preview)** and select the <kbd>Enter</kbd> key.
+1. When you're prompted to choose a version of Vue.js, use the arrow keys to move to **3.x (Preview)**, and then select the <kbd>Enter</kbd> key.
 
     ![Screenshot of the selected version Vue version.](../media/version.png)
 
@@ -57,7 +57,7 @@ The fastest way to bootstrap a Vue application is through Vue CLI. We'll now cre
 
 Your project will now be created, and the necessary libraries will be installed. The process takes a few moments.
 
-## Exploring the code
+## Explore the code
 
 Let's explore the code that Vue CLI has created.
 
@@ -69,34 +69,35 @@ Let's explore the code that Vue CLI has created.
     ```
 
 1. In Visual Studio Code, open *package.json*.
-1. Note that **vue** is listed as a dependency, and **@vue/cli-service** is listed as a **devDependency**.
+1. Note that `vue` is listed as a dependency, and `@vue/cli-service` is listed as a `devDependency`.
     > [!NOTE]
-    > **@vue/cli-service** is responsible for building your application and running the development server.
+    > The `@vue/cli-service` part is responsible for building your application and running the development server.
 1. Note the two scripts: 
 
-   - **serve** will launch the development server.
-   - **build** will create the JavaScript/HTML/CSS when you are ready to publish your project.
+   - The `serve` script will start the development server.
+   - The `build` script will create the JavaScript, HTML, or CSS when you're ready to publish your project.
 1. Open *public/index.html*, which will host the Vue application.
-1. Open *src/main.js* and note the code which imports `App` from *App.vue*.
-1. Open *src/App.vue*, which contains the core component which we will explore in the next unit.
+1. Open *src/main.js* and note the code that imports `App` from *App.vue*.
+1. Open *src/App.vue*, which contains the core component that we'll explore in the next unit.
     > [!NOTE]
-    > Visual Studio Code may prompt you with a suggested extension. We will install the extension in a later module.
+    > Visual Studio Code might prompt you with a suggested extension. We'll install the extension in a later module.
 1. Note the *src/components* folder, which is where all components will be stored.
 
 ## Run the development server
 
 Let's start the development server and see the default page.
 
-1. Open a new terminal window in Visual Studio Code by selecting *Terminal* > *New Terminal*
-1. In the integrated terminal, execute the following command to start the development server.
+1. Open a new terminal window in Visual Studio Code by selecting **Terminal** > **New Terminal**.
+1. In the integrated terminal, run the following command to start the development server:
 
     ```bash
     npm run serve
     ```
 
-1. Open your browser and navigate to `http://localhost:8080`.
-1. The default Vue application will be displayed.
+1. Open your browser and go to `http://localhost:8080`.
+
+    The default Vue application appears.
 
     :::image type="content" source="../media/vue-default.png" alt-text="Screenshot of the default Vue page.":::
 
-Congratulations! You have now created a Vue application by using Vue CLI.
+Congratulations! You've now created a Vue application by using Vue CLI.

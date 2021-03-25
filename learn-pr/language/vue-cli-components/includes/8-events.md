@@ -1,8 +1,8 @@
-HTML elements can raise events based on user interaction. Components allow you to do the same thing by emitting events. These events can then be handled by the parent component much in the same way you would add code to listen to an click event for a button.
+HTML elements can raise events based on user interaction. Components allow you to do the same thing by emitting events. The parent component can then handle these events in much the same way that you would add code to listen to a click event for a button.
 
-## Registering events
+## Register events
 
-When creating the component, you register any events your component may emit, by listing them in the `emits` field in the `script`.
+When you create a component, you register any events that your component might emit by listing them in the `emits` field in `script`:
 
 ```html
 <!-- inside the component's vue file -->
@@ -14,9 +14,9 @@ export default {
 </script>
 ```
 
-## Emitting events
+## Emit events
 
-Emitting an event is done by using the `emit` function. If you wish to emit an event raised directly by an HTML control, you can perform this operation inline. Notice how you can emit the `userUpdated` event by registering the `click` event handler for a button:
+You emit an event by using the `emit` function. If you want to emit an event that an HTML control has raised directly, you can perform this operation inline. Notice how you can emit the `userUpdated` event by registering the `click` event handler for a button:
 
 ```html
 <!-- inside the component's vue file -->
@@ -26,9 +26,9 @@ Emitting an event is done by using the `emit` function. If you wish to emit an e
 ```
 
 > [!NOTE]
-> You are using the shortcut of `@click`, which is typically how you connect event handlers in Vue.
+> You're using the shortcut of `@click`, which is typically how you connect event handlers in Vue.
 
-There may be times when you need to perform some additional steps before emitting the event. If your component needed to save the value to a database before returning any updated information, you can do this by adding a method. Inside the method you can use `this.$emit` to raise the event as you did before.
+At times, you might need to perform more steps before emitting the event. If your component needed to save the value to a database before returning any updated information, you can do this by adding a method. Inside the method, you can use `this.$emit` to raise the event as you did before:
 
 ```html
 <!-- inside the component's vue file -->
@@ -49,15 +49,15 @@ export default {
 </script>
 ```
 
-## Emitting events with data
+## Emit events with data
 
-The component may need to return data back to the parent through events. You can return any data by passing additional parameters to `emit` or `$emit`. If you wanted to indicate the update was successful by returning `true`, you could update the call as shown below:
+The component might need to return data to the parent through events. You can return any data by passing additional parameters to `emit` or `$emit`. If you want to indicate that the update was successful by returning `true`, you can update the call like this:
 
 ```html
 <button @click="emit('userUpdated', true)">Save user</button>
 ```
 
-or in a method:
+Or you can use a method:
 
 ```javascript
 methods: {
@@ -68,11 +68,11 @@ methods: {
 }
 ```
 
-## Listening to events
+## Listen to events
 
-Listening to an event emitted by a component, is similar to listening to events raised by normal HTML controls. You typically will create a method in the parent component, and connect the method to the event by using the same `@<event-name>` syntax as you would for `@click` or other events. If the event returns any data, those will be passed as parameters to the function.
+Listening to an event emitted by a component is similar to listening to events raised by normal HTML controls. You typically create a method in the parent component, and then you connect the method to the event by using the same `@<event-name>` syntax as you would for `@click` or other events. If the event returns any data, it will be passed as parameters to the function.
 
-To add an event handler for the `userUpdated` event you created earlier, we could use the following code. Notice how Vue.js will convert from the camelCased name into a kebab-case name.
+To add an event handler for the `userUpdated` event that you created earlier, you can use the following code. Notice how Vue.js will convert from a camel-case name into a kebab-case name.
 
 ```html
 <template>

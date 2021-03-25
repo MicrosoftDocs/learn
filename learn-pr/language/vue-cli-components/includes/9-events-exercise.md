@@ -1,21 +1,21 @@
-Let's complete your application by adding a form the user can use to book a cruise. The form will have a dropdown list for the user to select their desired cabin, and a button to book the cruise. We will set this up as a new component, and create an event for the button. You will finish by calling this new component from `Host.vue`.
+Let's complete your application by adding a form. The form will have a drop-down list for the user to select their desired cabin, and a button to book the cruise. You'll set this up as a new component and create an event for the button. You'll finish by calling this new component from *Host.vue*.
 
 ## Create the component
 
-You will start by creating the component.
+Start by creating the component.
 
-1. Inside Visual Studio Code, create a new file in *src/components* named *BookingForm.vue*
-1. Inside *BookingForm.vue*, type `vue`, and select *\<vue\> with default.vue* from the snippets menu
+1. In Visual Studio Code, create a file named *BookingForm.vue* in *src/components*.
+1. In *BookingForm.vue*, type **vue**, and then select **\<vue\> with default.vue** from the snippets menu.
 
-    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](../media/vue-create.png)
+    ![Screenshot of the snippets menu with the snippet selected.](../media/vue-create.png)
 
-    The default structure will be created by the snippet.
+    The snippet will create the default structure.
 
 ## Add the code for the component
 
-Let's add the code the component will use, including registering the props, emits, data and methods.
+Let's add the code that the component will use, including registering the props, emits, data, and methods.
 
-1. Open *src/components/BookingForm.vue* if not already open.
+1. Open *src/components/BookingForm.vue* if it's not already open.
 1. Inside the curly braces (`{ }`) for `export default`, add the following code to configure the component:
 
     ```javascript
@@ -37,15 +37,15 @@ Let's add the code the component will use, including registering the props, emit
     }
     ```
 
-    This code starts by creating a `cabins` prop to display the list of available cabins. We expose one event named *bookingCreated* by using `emits`. We create a data item named `cabinIndex` to store the selected cabin index.
+    This code starts by creating a `cabins` prop to display the list of available cabins. We expose one event named `bookingCreated` by using `emits`. We create a data item named `cabinIndex` to store the selected cabin index.
 
-    We finish by creating a method named `bookCabin`. `bookCabin` checks the value of `cabinIndex`, and only runs if the value is 0 or greater (meaning the user selected a cabin). If this validation passes, we emit the event returning the selected `cabinIndex`, and resets the `cabinIndex` to -1.
+    We finish by creating a method named `bookCabin`. This method checks the value of `cabinIndex` and runs only if the value is 0 or greater (meaning that the user selected a cabin). If this validation passes, we emit the event returning the selected `cabinIndex`, and reset the `cabinIndex` to -1.
 
 ## Add the display template
 
-With the code added we can turn our attention to the display. You want to have a dropdown list for cabin selection, and a button to book the trip. The button will call the `bookCabin` function you created earlier.
+With the code added, we can turn our attention to the display. You want to have a drop-down list for cabin selection, and a button to book the trip. The button will call the `bookCabin` function that you created earlier.
 
-1. Open *src/components/BookingForm.vue* if not already open.
+1. Open *src/components/BookingForm.vue* if it's not already open.
 1. Add the following code inside the `<template>` tags to create the display:
 
     ```html
@@ -68,26 +68,26 @@ With the code added we can turn our attention to the display. You want to have a
     </section>
     ```
 
-    The HTML creates our form. We loop through the `cabins` prop by using `v-for` to create the dropdown list. You bind the model of the `select` tag to the `cabinIndex` which will be returned back when the user selects a cabin and clicks the button. You then setup the button to call `bookCabin` when clicked.
+    The HTML creates the form. We loop through the `cabins` prop by using `v-for` to create the drop-down list. We bind the model of the `select` tag to `cabinIndex`, which will be returned when the user selects a cabin and selects the button. We then set up the button to call `bookCabin` when it's selected.
 
 ## Add BookingForm to the page
 
-You will finish by adding the newly created `BookingForm` to our application by adding it to *Host.vue*.
+Finish by adding the newly created `BookingForm` to the application by adding it to *Host.vue*.
 
 1. Open *src/components/Host.vue*.
-1. Import `BookingForm` by adding the following code after the comment which reads `TODO: Register next component`:
+1. Import `BookingForm` by adding the following code after the `TODO: Register next component` comment:
 
     ```javascript
     import BookingForm from './BookingForm.vue';
     ```
 
-1. Add BookingForm to the list of available components by adding the following code after the comment which reads `TODO: Add next component`:
+1. Add `BookingForm` to the list of available components by adding the following code after the `TODO: Add next component` comment:
 
     ```javascript
     BookingForm
     ```
 
-1. Add the method to handle the `bookingCreated` custom event by adding the following code after the comment which reads `TODO: Add methods`:
+1. Add the method to handle the `bookingCreated` custom event by adding the following code after the `TODO: Add methods` comment:
 
     ```javascript
     methods: {
@@ -102,25 +102,26 @@ You will finish by adding the newly created `BookingForm` to our application by 
     },
     ```
 
-    `addBooking` retrieves the selected cabin by using the index, and creates a new `booking` object by using `cabin.name` and `cabin.price`. You then add the `booking` to the `bookings` array.
+    The `addBooking` function retrieves the selected cabin by using the index. The function then creates a new `booking` object by using `cabin.name` and `cabin.price`. We then add `booking` to the `bookings` array.
 
-1. Use the `booking-form` component by adding the following after the comment which reads `TODO: Add booking-form`:
+1. Use the `booking-form` component by adding the following code after the `TODO: Add booking-form` comment:
 
     ```html
     <booking-form @booking-created="addBooking" :cabins="cruise.cabins"></booking-form>
     ```
 
-    We connect the `addBooking` function to the `booking-created` event, and pass the list of cabins for display.
+    We connect the `addBooking` function to the `booking-created` event, and we pass the list of cabins for display.
 
 ## Test the page
 
 With all the code added, let's test the page!
 
-1. Save all files by clicking *File* > *Save all*.
-1. Navigate to `http://localhost:8080` and refresh the page.
-1. Select a cabin from the dropdown list and click the button.
-1. Your new booking will be displayed on the right.
+1. Save all files by selecting **File** > **Save all**.
+1. Go to `http://localhost:8080` and refresh the page.
+1. Select a cabin from the drop-down list and select the button.
+
+   Your new booking is displayed on the right.
 
     ![Screenshot of the final application with the form shown on the left and list on the right.](../media/list-component.png)
 
-You have now created and called a component with a custom event!
+You've now created and called a component with a custom event!
