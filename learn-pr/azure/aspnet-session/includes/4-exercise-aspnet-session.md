@@ -18,7 +18,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
         --name $rediscachename `
         --resource-group $resourcegroupname `
         --sku Basic `
-        --vm-size c1
+        --vm-size c0
     ```
 
     <!--```PowerShell
