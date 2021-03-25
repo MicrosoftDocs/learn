@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Whoever deploys the template must specify a value for the `siteName` parameter."
       isCorrect: false
-      explanation: "The `siteName` parameter has a _default value_ specified. This means that deployments don't have to specify the parameter value - if they don't, the default value will be chosen."
+      explanation: "The `siteName` parameter has a _default value_ specified, which means that deployments don't have to specify the parameter value. If they don't, the parameter's default value will be used."
     - content: "The `siteName` parameter will have a different default value every time the template is deployed."
       isCorrect: false
       explanation: "The parameter's default value is set using the `uniqueString()` function, and this has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
@@ -44,6 +44,6 @@ quiz:
     - content: "If an output is added to one of the modules, it will automatically be available for the parent template to use."
       isCorrect: true
       explanation: "The outputs from modules are automatically made available for the parent template to use, such as in defining input parameter values for other modules or when setting the properties on resources."
-    - content: "Modules cannot have outputs - only templates can."
+    - content: "Modules can't have outputs - only templates can."
       isCorrect: false
       explanation: "Modules can define outputs. The outputs from modules are automatically made available to the parent template."

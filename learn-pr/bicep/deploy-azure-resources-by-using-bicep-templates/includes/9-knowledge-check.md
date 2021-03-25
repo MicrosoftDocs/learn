@@ -1,3 +1,5 @@
 Consider the following scenario. Then choose the best response for each question that follows, and select **Check your answers**.
 
-The IT department at your toy company has built a web-based application that the manufacturing department uses. The application needs to be deployed to a test environment before it can be released to production.
+The manufacturing department at your toy company needs software to manage their factory. The IT department has built a web-based application and they want to host it on Azure.
+
+The team needs to deploy the application to a test environment before it can be released to production.
