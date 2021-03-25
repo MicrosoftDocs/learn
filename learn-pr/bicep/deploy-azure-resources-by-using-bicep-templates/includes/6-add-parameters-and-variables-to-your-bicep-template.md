@@ -137,7 +137,7 @@ templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
 DeploymentName="addparams-"$today
 
-az group deployment create \
+az deployment group create \
   --name $DeploymentName \
   --template-file $templateFile \
   --parameters environmentType=nonprod

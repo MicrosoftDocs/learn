@@ -2,7 +2,7 @@ Bicep is a language for declaratively deploying Azure resources. By using Bicep,
 
 Behind the scenes, Azure Resource Manager works based on JSON templates. When you submit a Bicep template to ARM, the Bicep tooling converts your template to JSON in a process called _transpilation_. This isn't something you typically have to think about, but if you want to, you can view the JSON template file that Bicep creates.
 
-:::image type="content" source="../media/2-bicep-to-json.png" alt-text="Diagram illustrating a template author, a Bicep template, an emitted JSON template, and a deployment to Azure.":::
+:::image type="content" source="../media/2-bicep-to-json.png" alt-text="Diagram illustrating a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
 
 To get started with Bicep, you need to install some tooling. The easiest way to do this is to install recent versions of the Azure CLI or Azure PowerShell. Both of these tools support Bicep templates.
 

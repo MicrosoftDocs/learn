@@ -49,8 +49,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account you used to activate the sandbox.
 
-<!-- TODO: confirm supported CLI versions -->
-
 1. Open a terminal window by using the **Terminal** menu.
 2. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
@@ -145,12 +143,12 @@ templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
 DeploymentName="storage-"$today
 
-az group deployment create \
+az deployment group create \
  --name $DeploymentName \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az group deployment create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
@@ -244,17 +242,17 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
 1. In the **Overview**, you see that one deployment succeeded.
 
-    :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-    :::image type="content" source="../media/4-blanktemplate.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-storage.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. Select **`main`** to see what resources were deployed. In this case, there will be one storage account with the name you specified.
+1. Select **`storage`** to see what resources were deployed, and then click **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
 
-    :::image type="content" source="../media/4-no-results.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-storage-details.png" alt-text="Azure portal interface for the specific deployment with one storage account resource listed." border="true":::
 
-1. Leave the page open in your browser. You'll check on deployments again.
+2. Leave the page open in your browser. You'll check on deployments again.
 
 ## Add an App Service plan and app to your Bicep template
 
@@ -298,7 +296,7 @@ templateFile="main.bicep"
 today=$(date +"%d-%b-%Y")
 DeploymentName="addapp-"$today
 
-az group deployment create \
+az deployment group create \
   --name $DeploymentName \
   --template-file $templateFile
 ```
