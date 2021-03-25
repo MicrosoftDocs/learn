@@ -6,6 +6,7 @@ metadata:
   description: "Exercise – Create a query using tumbling windows"
   ms.date: 03/25/2021
   author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

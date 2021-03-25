@@ -1,6 +1,6 @@
 In this module, you learn how to process streaming data arriving from Azure Event Hubs with Stream Analytics. In the exercises, you see how to ingest vehicle telemetry data into Event Hubs and process the data in real-time using windowing functions in Azure Stream Analytics. You then output the aggregated data to Power BI and create reports and a dashboard to visualize the data.
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you will:
 
