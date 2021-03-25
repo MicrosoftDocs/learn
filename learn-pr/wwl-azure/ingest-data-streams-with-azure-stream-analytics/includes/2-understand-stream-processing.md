@@ -5,7 +5,7 @@ Stream processing refers to the continuous ingestion, transformation, and analys
 - Perpetually analyze new data to identify and respond to issues in real-time
 - Trigger specific actions when certain thresholds are identified
 
-The exponential propagation of connected applications, devices, and sensors has fueled the necessity for organizations to analyze streaming data as it arrives and use the latent knowledge contained within those data to make business decisions in near-real-time. Some examples use cases of streaming data analysis include:
+The exponential propagation of connected applications, devices, and sensors has fueled the necessity for organizations to analyze streaming data as it arrives and use the latent knowledge contained within the data to make business decisions in near-real-time. Some example use cases of streaming data analysis include:
 
 - Anomaly detection to identify potentially fraudulent transactions in finance industries
 - Making product recommendations to online customers in real-time
