@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create views and templates in Django 
-summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information the user wants to access is created by this engine and presented through views. We will explore how the engine works, and the process of creating views in Django.
+summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information that the user wants to access is created by this engine and presented through views. We'll explore how the engine works and the process of creating views in Django.
 abstract: | 
   In this module, you will: 
   - Work with views
@@ -24,9 +24,9 @@ prerequisites: |
     - Understanding of HTML and CSS
     - Basic understanding of Django
     - Basic understanding of relational databases
-    - Intermediate level knowledge of Python, including:
-      - Package Management
-      - Virtual Environments
+    - Intermediate-level knowledge of Python, including:
+      - Package management
+      - Virtual environments
       - Inheritance
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
