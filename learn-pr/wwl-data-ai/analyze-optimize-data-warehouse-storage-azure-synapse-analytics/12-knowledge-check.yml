@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/24/2021
+  ms.date: 03/25/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "Monitor query speeds by testing the same query for each partition."
       isCorrect: false
       explanation: "Incorrect. A distributed table is stored across 60 distributions. Each compute node can have multiple partitions. Query performance in a partition will not help to investigate the data size on a node."
-  - content: "To achieve improved query performance, which one would be the best data type considering the storage of text data that does not exceed 128 characters?"
+  - content: "To achieve improved query performance, which one would be the best data type for storing data that contains less than 128 characters?"
     choices:
     - content: "`VARCHAR(MAX)`"
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "`NVARCHAR(128)`"
       isCorrect: false
       explanation: "Incorrect. Non-variable data types provide better performance."
-  - content: "Which one is a benefit of materialized views?"
+  - content: "Which of the following statements is a benefit of materialized views?"
     choices:
     - content: "Reducing the execution time for complex queries with JOINs and aggregate functions."
       isCorrect: true
