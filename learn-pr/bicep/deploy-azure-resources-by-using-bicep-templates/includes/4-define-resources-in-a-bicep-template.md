@@ -39,6 +39,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    }
    ```
 
+   Notice that, as you type, Visual Studio Code is automatically suggesting property names. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values you can use.
+
 1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
 
 1. Save the changes to the file.

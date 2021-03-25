@@ -132,6 +132,9 @@ We're using the `resourceGroup()` function again here, like you did when you set
 - If you deploy into two different resource groups in the Azure subscription, the `resourceGroup().id` will be different since the resource group names will be different. Bicep will give different values from the `uniqueString()` function for each of the sets of resources.
 - If you deploy into two different Azure subscriptions, _even if you use the same resource group name_, the `resourceGroup().id` will be different since the Azure subscription ID will be different. Bicep will give different values from the `uniqueString()` function for each of the sets of resources.
 
+> [!TIP]
+> It's often a good idea to use template expressions to create resource names. Many Azure resource types have rules about the allowed characters and length of their names. Embedding the creation of resource names in the template means that anyone using the template doesn't have to remember to follow these rules themselves.
+
 ### Combining strings together
 
 If you just use the `uniqueString()` function to set resource names, we'll probably get unique names - but they won't be meaningful. A good resource name should also be descriptive so that it's clear what the resource is for. We'll often want to create a name by combining a meaningful word or string with a unique value. This way, we'll have resources that have both meaningful and unique names.
