@@ -3,14 +3,14 @@ uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-b
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: # user input: module title for browser tab and search results
-  description: # user input: a description for site search and SEO
+  title: Knowledge check # user input: module title for browser tab and search results
+  description: In this unit, you will answer questions based on a scenario. # user input: a description for site search and SEO
   ms.date: 3/23/2021  
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial
-  ms.prod: <TODO>
-durationInMinutes: # user input: the estimate time to complete the unit
+  ms.prod: learning-azure
+durationInMinutes: 5 # user input: the estimate time to complete the unit
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
@@ -28,58 +28,36 @@ durationInMinutes: # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which mount option would you use to improve performance if an Azure NetApp Files volume contains static data with heavy read workloads?"
     choices:
-    - content: ""
+    - content: "nconnect"
+      isCorrect: false
+      explanation: "nconnect is to increase # of TCP network connections of NFS client."
+    - content: "rsize and wsize"
+      isCorrect: false
+      explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."
+    - content: "nocto and actimeo"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "It's recommended to use nocto and actimeo on static data volumes with and massive read operations."
+  - content: "You would like to increase # of TCP network connections of NFS client VMS, which mount option will you use?"
     choices:
-    - content: ""
+    - content: "nconnect"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "nconnect can increase # of TCP network connections of NFS client."
+    - content: "rsize and wsize"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."
+    - content: "nocto and actimeo"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "It's recommended to use nocto and actimeo on static data volumes with and massive read operations."
+  - content: "What's the general recommendations of rsize and wsize values in mount options to optimal performance?"
     choices:
-    - content: ""
+    - content: "rsize=1048576,wsize=1448576 (1 MB/1 MB)"
+      isCorrect: false
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."
+    - content: "rsize=262144,wsize=262144 (256 K/256 K)"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."
+    - content: "rsize=65536,wsize=65536 (64 K/64 K)"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "It's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options."

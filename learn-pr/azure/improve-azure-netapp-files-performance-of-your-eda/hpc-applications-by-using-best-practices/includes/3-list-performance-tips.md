@@ -100,7 +100,7 @@ The "nconnect" NFS mount option has entered General Availability in the Linux ke
 uname -r
 ```
 
-The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount point on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And it's value gradually diminishes # of clients increases, as there is only certain amount of bandwidth to go around.
+The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount point on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And it's value gradually diminishes when # of clients increases, as there is only certain amount of bandwidth in total to go around.
 
 Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you are using nconnect=8 or 16.
 
@@ -116,7 +116,7 @@ When considering only performance, NFSv3 will perform better than NFSv4.1 in mos
 
 The mount options wsize and rsize determine how much data is sent between the NFS client and server for each packet sent. This may help optimize performance for specific applications, as what is best for one application may not be best for other applications.
 
-The best practice for Azure NetApp Files is to set rsize and wsize the same value. And it's generally recommended to set that value as 262144 (256K) in the mount options.
+The best practice for Azure NetApp Files is to set rsize and wsize the same value. And it's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options.
 
 Below an example to mount an Azure NetApp Files volume using actimeo & nocto, NFSv3, nconnect, rsize & size and using tcp.
 
