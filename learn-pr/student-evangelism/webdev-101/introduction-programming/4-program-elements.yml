@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.webdev.intro-programming.4-elements-of-a-program
+uid: learn.webdev.intro-programming.4-program-elements
 metadata:
   title: Elements of a program
   description: Learn about the elements that make up a program
@@ -11,4 +11,4 @@ metadata:
 title: Elements of a program
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-elements-of-a-program.md)]
+  [!include[](includes/4-program-elements.md)]

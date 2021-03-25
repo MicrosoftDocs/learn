@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.webdev.intro-programming.10-documentation
+uid: learn.webdev.intro-programming.8-documentation
 metadata:
   title: Documentation
   description: Learn the importance of good documentation
@@ -11,4 +11,4 @@ metadata:
 title: Documentation
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-documentation.md)]
+  [!include[](includes/8-documentation.md)]

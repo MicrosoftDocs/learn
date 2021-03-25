@@ -1,3 +1,19 @@
+Using the command line is something you will most likely do as a developer. Some use it a lot and some less so. There are some good reasons for using the command line however. 
+
+## Why command line
+
+The command line, compared to a UI does not have any graphical element and is primarily text based. The reason for using the command line are many:
+
+- **Preference**. Some developers prefer a less graphical view for their daily tasks and rely on the command line to work with these tasks.
+- **Better workflow**. Developing code requires a significant amount of typing, and some developers prefer to not disrupt their flow on the keyboard and will use keyboard shortcuts to swap between desktop windows, work on different files, and use tools.
+- **Avoiding mouse arm syndrome**. Most tasks can be completed with a mouse, but one benefit of using the command line is that a lot can be done with command-line tools without the need of swapping between the mouse and keyboard.
+- **Configurable**. Another benefit of the command line is that they're configurable and you can save your custom configuration, change it later, and also import it to new development machines. 
+
+> [!NOTE ]
+> Because development environments are so unique to each developer, some will avoid using the command line, some will rely on it entirely, and some prefer a mix of the two.
+
+## Command line options
+
 Options for the command line will differ based on the operating system you use.
 
 💻 = comes preinstalled on the operating system.
