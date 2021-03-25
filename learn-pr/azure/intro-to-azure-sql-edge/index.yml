@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.intro-to-xxx 
+metadata:
+  moduleType: introduction        
+  title: Introduction to xxx
+  description: Learn how xxx can xxx
+  ms.date: 03/14/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial  
+title: Introduction to xxx
+summary: Learn how xxx 
+abstract: |
+  By the end of this module, you will be able to: 
+    - Evaluate whether xxx is appropriate to xxx.
+    - Describe how xxx <features> of xxxwork to <xxx solve problem>.
+prerequisites: |
+  - Beginner-level familiarity xxx
+  - Foundational knowledge of xxx
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - xxx
+  - xxx
+products:
+  - azure
+  - azure-xxx
+  - azure-xxx
+units:  
+- learn.intro-to-xxx.1-introduction- learn.intro-to-xxx.2-what-is-xxx- learn.intro-to-xxx.3-how-xxx-works- learn.intro-to-xxx.4-when-to-use-xxx- learn.intro-to-xxx.5-knowledge-check- learn.intro-to-xxx.6-summary
+badge:
+  uid: learn.intro-to-xxx.badge

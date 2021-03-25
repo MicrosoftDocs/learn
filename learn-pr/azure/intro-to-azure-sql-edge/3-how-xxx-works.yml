@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-xxx.3-how-xxx-works  
+title: How xxx works  
+metadata:
+  unitType: learning-content  
+  title: How xxx works
+  description: How xxx works
+  ms.date: 03/14/2021  
+  author: warrenaj
+  ms.author: v-anwarr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-xxx-works.md)]
