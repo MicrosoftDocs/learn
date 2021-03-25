@@ -5,8 +5,8 @@ metadata:
   description: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
   brand: azure
   ms.date: 03/16/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to version control with Git

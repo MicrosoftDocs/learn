@@ -4,8 +4,8 @@ metadata:
   title: Edit code through branching and merging in Git
   description: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
   ms.date: 03/16/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 title: Edit code through branching and merging in Git

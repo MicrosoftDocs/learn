@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Review what you've learned in the branching and merging in Git module.
   ms.date: 03/16/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 5

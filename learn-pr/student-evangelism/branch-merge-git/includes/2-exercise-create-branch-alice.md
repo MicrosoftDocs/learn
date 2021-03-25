@@ -2,7 +2,7 @@ Your developer friend Alice wants to add some CSS to style the cat photos on you
 
 ## Setup
 
-Before we can assume the role of Alice, we must do some work to set up a bare repo for everyone to share, and then add some files.
+Before you can assume the role of Alice, you must do some work to set up a bare repo for everyone to share, and then add some files.
 
 Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud Shell to the right.
 
