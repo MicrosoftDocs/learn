@@ -28,7 +28,7 @@ Active Directory and DNS can be configured for an automated failover. Typically,
 
 ### SQL Server
 
-Site Recovery can be used alongside SQL-specific high-availability technologies, such as Always On availability groups. Standalone servers or clusters are supported for replication to Azure or a secondary site. Azure Site Recovery can also scale peak loads by "bursting" them onto larger VMs in Azure. Test failovers and compliance checks can be run on demand, or can be scheduled, without affecting the live environment.
+Site Recovery can be used alongside SQL-specific high-availability technologies, such as Always On availability groups. Standalone servers or clusters are supported for replication to Azure or a secondary site. Site Recovery can also scale peak loads by *bursting* them onto larger VMs in Azure. Test failovers and compliance checks can be run on demand, or can be scheduled, without affecting the live environment.
 
 ### SharePoint
 
@@ -46,7 +46,7 @@ Managed or unmanaged pooled virtual desktops, remote applications, and sessions 
 
 ### Exchange
 
-Small deployments of Exchange, such as those with a single server, can be replicated. For larger deployments, Site Recovery integrates with Exchange database availability groups. This high-availability feature of Exchange 2010 can host up to 16 mailbox servers and automates recovery at the database level.
+Small deployments of Exchange, such as those with a single server, can be replicated. For larger deployments, Site Recovery integrates with Exchange database availability groups. This high-availability feature of Exchange 2010 can host up to 16 mailbox servers, and automates recovery at the database level.
 
 ### SAP
 

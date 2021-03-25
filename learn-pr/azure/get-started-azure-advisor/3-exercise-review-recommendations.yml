@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-azure-advisor.3-exercise-review-recommendations
+title: 'Exercise - Review your Advisor recommendations'
+metadata:
+  title: 'Exercise - Review your Advisor recommendations'
+  description: Learn how to review and evaluate your Azure Advisor recommendations.
+  ms.date: 02/18/2021
+  author: danterasera
+  ms.author: darasera
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-review-recommendations.md)]

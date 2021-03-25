@@ -16,7 +16,7 @@ Although you don't need an Azure subscription to work with Azure DevOps, here yo
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. The article [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps, and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -34,11 +34,15 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
+
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - ProvisionDB*.
-1. Select **Yes, I want to fork this repository** and then select **Authorize**.
+
+1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
+
 1. Select **Create Project**.
 
    It takes a few moments for the template to run.
+
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]

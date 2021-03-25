@@ -5,7 +5,7 @@ metadata:
   description: Use the Azure portal to create the logging route. And verify that the route functions as it should.
   ms.date: 11/26/2019
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a message route to Azure blob storage

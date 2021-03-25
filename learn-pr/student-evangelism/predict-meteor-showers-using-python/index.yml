@@ -3,9 +3,9 @@ uid: learn.student-evangelism.predict-meteor-showers-using-python
 metadata:
   title: Predict meteor showers by using Python and Visual Studio Code
   description: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
-  ms.date: 11/24/2020
+  ms.date: 03/10/2021
   author: sguthals
-  ms.author: shanama
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict meteor showers by using Python and Visual Studio Code
@@ -20,8 +20,7 @@ abstract:  |
   > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 
 prerequisites: |
-  - [Visual Studio Code, with the Python extension](https://code.visualstudio.com/learntocode/?utm_source=MSLearn&utm_medium=direct&utm_campaign=PartnerLessons?azure-portal=true)
-  - A local Python environment set up, as seen in [Discover the role of Python in space exploration](https://docs.microsoft.com/learn/paths/introduction-python-space-exploration-nasa/)
+  - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/student-evangelism/predict-meteor-showers-using-python.svg 
 levels:
 - beginner

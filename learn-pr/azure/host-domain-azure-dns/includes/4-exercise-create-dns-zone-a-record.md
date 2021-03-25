@@ -16,25 +16,27 @@ To create your DNS zone:
 
 1. Select **Create a resource**.
 
-1. Search for and select **DNS zone**.
+1. Search for and select **DNS zone**. The **DNS zone** pane appears.
 
 1. Select **Create**.
 
     ![Screenshot of DNS zone, with Create highlighted](../media/4-dnszonecreate.png)
 
-1. Enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
+
+    |Setting  |Value |
+    |---------|---------|
+    | **Project details** |
+    |Subscription  |  Concierge subscription  |
+    |Resource group  |  <rgn>[sandbox resource group]</rgn> |
+    | **Instance details** |
+    |Name  |   The name needs to be unique in the sandbox. Use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
     ![Screenshot of Create DNS zone page](../media/4-creatednszone.png)
 
-   |Setting  |Value |
-   |---------|---------|
-   |Subscription     |  Concierge subscription       |
-   |Resource group    |   <rgn>[sandbox resource group name]</rgn>      |
-   |Name   |   The name needs to be unique in the sandbox. So use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
-
 1. Select **Review + create**.
 
-1. Select **Create**. It will take a few minutes to create the DNS zone.
+1. After validation passes, select **Create**. It will take a few minutes to create the DNS zone.
 
 1. Select **Go to resource**.
 
@@ -50,17 +52,11 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 
 The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
 
-1. In the Azure portal, select **All Resources**.
-
-1. Select the DNS zone you created (wideworldimportsXXXX.com).
-
-1. Select **+ Record set**.
+1. On the **wideworldimportsXXXX.com - DNS zone** pane, in the upper menu bar, select **Record set**.
 
     ![Screenshot of the DNS zone page, with + Record set highlighted](../media/4-add-a-record.png)
 
-1. Enter the following information:
-
-    ![Screenshot of Add record set](../media/4-arecord.png)
+1. The **Add record set** pane appears. Enter the following values for each setting.
 
     |Setting  |Value |Description  |
     |---------|---------|---------|
@@ -68,8 +64,10 @@ The primary record to create is the A record. This record contains the pairing b
     |Type    |     A    |  The A record is the most commonly used. If you're using IPv6, select the **AAAA** type.     |
     |Alias record set    | No   | This can only be applied to A, AAAA, and CNAME record types.  |
     |TTL     |      1  | The time-to-live period, which specifies how long each DNS server caches the resolution before it's purged.        |
-    |TTL unit     |    hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
-    |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server.       |
+    |TTL unit     |    Hours     |  This value can be seconds, minutes, hours, days, or weeks. Here, you're selecting hours.  |
+    |IP Address    |    10.10.10.10     |  The IP address the record name resolves to. In a real-world scenario, you would enter the public IP address for your web server. |
+
+    ![Screenshot of Add record set](../media/4-arecord.png)
 
 1. Select **OK** to add the record to your zone.
 

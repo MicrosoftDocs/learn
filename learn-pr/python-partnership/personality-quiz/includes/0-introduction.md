@@ -1,8 +1,4 @@
-![Film card from WONDER WOMAN 1984.](../media/coming-to-theaters.png)
-
-![Quiz promotional banner showing four of the movie characters.](../media/edu-02-github-program-quiz.png)
-
-Have you ever taken a personality quiz where you answer multiple-choice questions and find out things like... "What type of emoji are you?"
+Have you ever taken a personality quiz, where you answer multiple-choice questions and find out things like... "What type of emoji are you?"
 
 You probably knew, but the ones on the internet are just a series of questions that have scores associated with each answer choice, and then a range of scores for each "personality."
 
@@ -33,7 +29,16 @@ And maybe you have three personality possibilities:
 
 You can see that it really doesn't matter what kind of food the quiz taker chooses if they choose the color red, because that will automatically put them in the "compassionate and opinionated" category. 
 
-With [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true) and the power of Python, and inspired by the [WONDER WOMAN 1984](https://www.wonderwomanfilm.com/?azure-portal=true) film, you're going to make your own "Which WONDER WOMAN 1984 character are you most like?" quiz. 
+With [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true) and the power of Python, you're going to make your own "What is your super sleuth character?" quiz. 
+
+:::image type="content" source="../media/sleuth-figure.png" alt-text="Image of a girl wearing a trenchcoat and holding a magnifying glass." border="false":::
+
+We'll use five questions to determine which of the following four super sleuth characters you're most like:
+
+- Sharp-Eyed Sam
+- Keen Kai
+- Curious Cam
+- Inquisitive Indy
 
 If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
@@ -45,12 +50,12 @@ In this module, you'll discover how to:
 - Create a program that allows users to interact with your code
 - Use `if`, `elif`, and `else` statements
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of a similar program](https://youtu.be/zawdAAZZcTE?azure-portal=true) in a new tab.
+
 ## Prerequisites
 
-- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
-- [Visual Studio Code with Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script?azure-portal=true)
+- [Visual Studio Code with Python extension installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 
 > [!Note]
 > No coding experience is required to complete these lessons!
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

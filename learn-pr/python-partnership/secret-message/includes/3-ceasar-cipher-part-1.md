@@ -1,11 +1,10 @@
 Remember the secret message you're trying to decode:
 
-![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
+![Graphic of the encoded secret message.](../media/encoded-secret-message.png)
 
-It looks like the message might be encrypted with something called a *Caesar cipher,* where all the letters are shifted in the alphabet by some amount. Similar to Wonder Woman's golden lasso, we'll need to give Python the power to find the true meaning of the words "WHY," "oskza," "ohupo," and "ED."
+It looks like the message might be encrypted with something called a *Caesar cipher,* where all the letters are shifted in the alphabet by some amount. We'll need to give Python the power to find the true meaning of the words "Ncevy," "gpvsui," "ugflgkg," and "wjmmf".
 
 If you're not familiar with Caesar ciphers, you can explore more on [Smithsonian Learning Labs](https://learninglab.si.edu/collections/decode-a-secret-message/Y4F5099N4wjRAEmz#r/?azure-portal=true).
-
 
 To decipher this message, we need to start by giving our code the power to shift a single letter. First, we create a function called `lassoLetter()` that takes in two parameters. The first parameter is `letter`, and it holds the letter to decode. The second parameter is `shiftAmount`, and it says how far to shift the letter.
 
@@ -74,15 +73,13 @@ ord('a')
 
 The output is `97`. The number `97` is the ASCII character code for the character `a`.
 
-
-If we call the `ord()` function and pass in the uppercase letter `W`:
+If we call the `ord()` function and pass in the uppercase letter `N`:
 
 ```python
-ord('W')
+ord('N')
 ```
 
-The output is `87`. The number `87` is the ASCII character code for the character `W`.
-
+The output is `78`. The number `78` is the ASCII character code for the character `N`.
 
 If we call the `ord()` function and pass in the number `6`:
 
@@ -91,7 +88,6 @@ ord('6')
 ```
 
 The output is `54`. The number `54` is the ASCII character code for the number `6`.
-
 
 We couldn't add a letter and number together (`a + 2`), but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. The number `99` is the ASCII representation for the character `c`. The output makes sense!
 
@@ -108,10 +104,10 @@ def lassoLetter( letter, shiftAmount ):
 > [!Important]
 > When you add the new code to your file, be sure to use the same indentation as in this example. Indent the new code from the left margin as shown. If the indentation isn't correct, Python won't read the new code as part of the function.
 
-To decode this message, we need to shift the letter `W` by `13`. To do this shift, here are the values for our parameters:
-- `letter` = 'W'
+To decode this message, the message tells us that we need to shift the letter `N` by `13`. To do this shift, here are the values for our parameters:
+- `letter` = 'N'
 - `shiftAmount` = 13
-- `letterCode` = `ord('w')` = 119
+- `letterCode` = `ord('n')` = 110
 
 ## Calculate a decoded character: The simple way
 
@@ -126,29 +122,51 @@ Now it's time to calculate the new character. First, review the original example
 So, your code might look like this:
 
 ```python
-letterCode = ord(letter.lower())
-
-decodedLetterCode = letterCode + shiftAmount
-
-decodedLetter = chr(decodedLetterCode)
-
-return decodedLetter
+def lassoLetter( letter, shiftAmount ):
+    letterCode = ord(letter.lower())
+    decodedLetterCode = letterCode + shiftAmount
+    decodedLetter = chr(decodedLetterCode)
+    return decodedLetter
 ```
 
-Let's see what would happen if you ran this code with the first letter of the actual secret message, `W`, and the shift amount, `13`.
+Try calling this function by using the preceding example to see if it's working as we expect it to:
+
+```python
+print(lassoLetter('a', 2))
+```
+
+The program correctly prints `c`:
+
+:::image type="content" source="../media/test-function-example-1.png" alt-text="Screenshot that shows the output of the letter c.":::
+
+It looks like it's working!
+
+## Continue testing the decoder
+
+While this example worked, there is an issue when we get to the end of the alphabet. 
+
+Let's see what would happen if you ran this code with the first letter of the actual secret message, `N`, and the shift amount, `13`.
 
 | Variable | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:---------|:------|-------|
-| `letter` | W | |
+| `letter` | N | |
 | `shiftAmount` | 13 | |
-| `letterCode` | `ord('W')` = 119 | |
-| `decodedLetterCode` | 119 + 13 = 132 | |
-| `decodedLetter` | chr(132) = `error` | |
+| `letterCode` | `ord('n')` = 110 | |
+| `decodedLetterCode` | 110 + 13 = 123 | |
+| `decodedLetter` | chr(123) = `{` | |
 
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
+
+You can try this out by testing your function:
+
+```python
+print(lassoLetter('N', 2))
+```
+
+The output is `{`:
+
+:::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without using a loop.":::
 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
 
 We'll take a look at that formula in the next unit.
-
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

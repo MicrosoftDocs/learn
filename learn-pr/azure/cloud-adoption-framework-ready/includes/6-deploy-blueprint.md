@@ -1,4 +1,4 @@
-The first step towards an Azure landing zone deployment is the implementation of a Cloud Adoption Framework (CAF) landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
+The first step toward an Azure landing zone deployment is the implementation of a Cloud Adoption Framework landing zone template. When following the *start small and expand* approach, you would start with the CAF Migration landing zone blueprint.
 
 ## Deploy the blueprint sample
 
@@ -8,7 +8,7 @@ Starting with an empty Azure subscription, you will deploy the blueprint sample 
 - Mark your copy of the sample as **Published**.
 - Assign your copy of the blueprint to a current subscription.
 
-If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free) before you begin.
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/) before you begin.
 
 ## Create a new blueprint from sample
 
@@ -53,7 +53,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
      - **Subscriptions:** Select one or more of the subscriptions that are in the management group you saved your copy of the blueprint sample to. If you select more than one subscription, an assignment will be created for each using the parameters entered.
      - **Assignment name:** The name is pre-populated for you based on the name of the blueprint. Change as needed or leave as is.
      - **Location:** Select a region in which to create the managed identity.
-     - Azure Blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
+     - Azure Blueprints uses this managed identity to deploy all artifacts in the assigned blueprint.
      - **Blueprint definition version:** Pick a **Published** version of your copy of the blueprint sample.
    - Lock assignment
      - Select the blueprint lock setting for your environment.
@@ -72,7 +72,7 @@ Once the copy of the blueprint sample has been successfully published, it can be
 1. Once all parameters have been entered, select **Assign** at the bottom of the page. The blueprint assignment is created and artifact deployment begins. Deployment takes roughly five minutes. To check on the status of deployment, open the blueprint assignment.
 
 > [!WARNING]
-> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing?azure-portal=true). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) to estimate the cost of running resources deployed by this blueprint sample.
+> The Azure Blueprints service and the built-in blueprint samples are **free of cost**. Azure resources are [priced by product](https://azure.microsoft.com/pricing/?azure-portal=true). Use the [pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to estimate the cost of running resources deployed by this blueprint sample.
 
 ## Artifact parameters table
 
@@ -82,6 +82,6 @@ The following table provides a list of the blueprint artifact parameters:
 |-|-|-|-|
 | Deploy VNet landing zone | Resource Manager template | `IPAddress_space` | **Locked** - Provide the first two octets example, 10.0 |
 | Deploy Key Vault | Resource Manager template | `KV-AccessPolicy` | **Locked** - Group or user object ID to grant permissions to in Key Vault |
-| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The umber of days that data will be retained in Log Analytics |
+| Deploy Log Analytics | Resource Manager template | `LogAnalytics_DataRetention` | **Locked** - The number of days that data will be retained in Log Analytics |
 | Deploy Log Analytics | Resource Manager template | `LogAnalytics_Location` | **Locked** - The region used when establishing the workspace |
 | Deploy Azure Migrate | Resource Manager template | `Azure_Migrate_Location`| **Locked** - Select the region to deploy Azure Migrate |
