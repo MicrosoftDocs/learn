@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is programming
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-programming.md)]
 quiz:

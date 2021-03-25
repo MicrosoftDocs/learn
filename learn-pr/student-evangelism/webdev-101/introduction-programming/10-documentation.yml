@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Documentation
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/10-documentation.md)]

@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Tools of the trade
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/5-tools-of-the-trade.md)]

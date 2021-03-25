@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Programming languages
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/3-programming-languages.md)]

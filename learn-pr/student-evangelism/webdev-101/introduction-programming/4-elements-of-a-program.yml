@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Elements of a program
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/4-elements-of-a-program.md)]

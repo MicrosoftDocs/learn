@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Command line tools
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/8-command-line-tools.md)]
