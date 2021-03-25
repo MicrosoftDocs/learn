@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.describe-azure-auto-ml
+title: Describe Azure Machine Learning Auto ML
+metadata:
+  title: Describe Azure Machine Learning Auto ML
+  description: "Describe Azure Machine Learning Auto ML"
+  ms.date: 03/25/2021
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-describe-azure-automated-machine-learning.md)]
