@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.data-classification-and-data-protection
 metadata:
-  title: Introduction to Microsoft data classification and data protection 
+  title: Intro to Microsoft data classification and data protection 
   description: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Cloud App Security, service encryption and Office 365 Message Encryption.
-  ms.date: 11/13/2020
+  ms.date: 03/25/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Microsoft data classification and data protection 
+title: Intro to Microsoft data classification and data protection 
 summary: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Cloud App Security, service encryption and Office 365 Message Encryption.
 abstract: |
   By the end of this module, you'll be able to:
@@ -38,13 +38,13 @@ products:
 - m365-information-protection
 units:
 - learn.azure.data-classification-and-data-protection.1-introduction
-- learn.azure.data-classification-and-data-protection.2-what-ms-info-protection-azure
-- learn.azure.data-classification-and-data-protection.3-what-are-sensitivity-labels
+- learn.azure.data-classification-and-data-protection.2-what-microsoft-info-protection-azure
+- learn.azure.data-classification-and-data-protection.3-what-sensitivity-labels
 - learn.azure.data-classification-and-data-protection.4-use-sensitivity-labels-classify-protect-data
 - learn.azure.data-classification-and-data-protection.5-what-unified-labeling-scanner
-- learn.azure.data-classification-and-data-protection.6-what-ms-cloud-app-security
-- learn.azure.data-classification-and-data-protection.7-what-is-encryption-customer-key
-- learn.azure.data-classification-and-data-protection.8-what-is-office-365-message-encryption
+- learn.azure.data-classification-and-data-protection.6-what-microsoft-cloud-app-security
+- learn.azure.data-classification-and-data-protection.7-what-encryption-customer-key
+- learn.azure.data-classification-and-data-protection.8-what-office-365-message-encryption
 - learn.azure.data-classification-and-data-protection.9-knowledge-check
 - learn.azure.data-classification-and-data-protection.10-summary
 badge:
