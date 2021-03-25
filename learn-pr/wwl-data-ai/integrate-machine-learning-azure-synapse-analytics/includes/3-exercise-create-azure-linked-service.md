@@ -2,9 +2,9 @@ The Synapse Analytics linked service authenticates with Azure Machine Learning u
 
 >**NOTE**
 >
->In the labs provided by this repo, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals).
+>In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals).
 
-To view the service principal, open the Azure portal and navigate to your instance of the Azure Active directory. Select the `App registrations` **(1)** section, and you should see the `Azure Synapse Analytics GA Labs SUFFIX` **(2)** (where `SUFFIX` is your unique suffix used during lab deployment) application under the `Owned applications` tab.
+To view the service principal, open the Azure portal and navigate to your instance of the Azure Active directory. Select the `App registrations` **(1)** section, and you should see the `Azure Synapse Analytics GA Labs SUFFIX` **(2)** (`SUFFIX` in this example is 297032) application under the `Owned applications` tab.
 
 ![Azure Active Directory application and service principal](../media/service-principal.png)
 
@@ -66,11 +66,11 @@ df_consolidated.write.mode("overwrite").saveAsTable("default.SaleConsolidated")
 >
 >Replace `<data_lake_account_name>` with the actual name of your Synapse Analytics primary data lake account.
 
-The code takes all data available for December 2019 and aggregates it at the `ProductId`, `TransactionDate`, and `Hour` level, calculating the total product quantities sold as `TotalQuantity`. The result is then saved as a Spark table named `SaleConsolidated`. To view the table in the `Data` hub, expand the `default (Spark)` **(4)** database in the `Workspace` **(2)** section. Your table will show up in the `Tables` folder. Select the three dots at the right of the table name to view the `Machine Learning` **(6)** option in the context menu.
+The code takes all data available for December 2019 and aggregates it at the `ProductId`, `TransactionDate`, and `Hour` level, calculating the total product quantities sold as `TotalQuantity`. The result is then saved as a Spark table named `SaleConsolidated`. To view the table in the `Data` hub, expand the `default (Spark)` **(4)** database in the `Workspace` **(2)** section. Your table will show up in the `Tables` folder. Select the three dots at the right of the table name **(5)** to view the `Machine Learning` **(6)** option in the context menu.
 
 ![Machine Learning option in the context menu of a Spark table](../media/ml-menu.png)
 
-The following options are available in the `Machine Learning` section:
+The following options are available in the `Machine Learning` **(7)** section:
 
 - Enrich with a new model: allows you to start an AutoML experiment to train a new model.
 - Enrich with existing model: enables you to use a current Azure Cognitive Services model.
