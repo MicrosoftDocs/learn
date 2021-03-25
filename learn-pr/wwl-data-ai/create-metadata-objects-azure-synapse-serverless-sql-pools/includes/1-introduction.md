@@ -1,6 +1,6 @@
-In this module, you will learn how you can create objects to help you query data or optimize your existing data transformation pipeline through Azure Synapse serverless SQL pools.
+In this lesson, you will learn how you can create objects to help you query data or optimize your existing data transformation pipeline through Azure Synapse serverless SQL pools.
 
-After the completion of this module, you will be able to:
+After the completion of this lesson, you will be able to:
 
 - Create databases in Azure Synapse serverless SQL pools
 - Create and manage credentials in Azure Synapse serverless SQL pools
@@ -10,7 +10,7 @@ After the completion of this module, you will be able to:
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this lesson, it is recommended that the student is able to:
 
 * Log into the Azure portal
 * Explain the different components of Azure Synapse Analytics

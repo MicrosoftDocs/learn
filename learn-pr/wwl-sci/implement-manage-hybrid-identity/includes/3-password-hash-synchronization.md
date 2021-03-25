@@ -36,7 +36,7 @@ If your server has been locked down according to Federal Information Processing 
 
 For reference, this snippet is what it should look like:
 
-<configuration>
+    <configuration>
 
         <runtime>
 
@@ -46,3 +46,17 @@ For reference, this snippet is what it should look like:
 
     </configuration>
 
+
+## Using PingFederate
+
+Configure PingFederate with Azure AD Connect to set up federation with the domain you want connected. The following prerequisites are required:
+
+- PingFederate 8.4 or later.
+- A TLS/SSL certificate for the federation service name that you intend to use (for example, sts.contoso.com).
+
+After you choose to set up federation by using PingFederate in AD Connect, you're asked to verify the domain you want to federate. Select the domain from the drop-down menu.
+
+> [!div class="mx-imgBorder"]
+> ![Azure AD Connect interface showing the domain you want to create a federation with](../media/pingfederate-domain.png)
+
+Configure PingFederate as the federation server for each federated Azure domain. Then select Export Settings to share this information with your PingFederate administrator. The federation server administrator updates the configuration and provides the PingFederate server URL and port number so that Azure AD Connect can verify the metadata settings.

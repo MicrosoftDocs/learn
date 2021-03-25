@@ -8,6 +8,6 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/2-protect-threats-security-center.md)]

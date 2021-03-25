@@ -3,7 +3,7 @@ uid: learn.wwl.implement-storage-spaces-storage-spaces-direct
 metadata:
   title: Implement Storage Spaces and Storage Spaces Direct
   description: "Implement Storage Spaces and Storage Spaces Direct"
-  ms.date: 01/28/2021
+  ms.date: 03/01/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
   - Fundamental knowledge of Windows Server File Server role.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/implement-storage-spaces-and-storage-spaces-direct.svg
 levels:
 - intermediate
 roles:

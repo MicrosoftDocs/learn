@@ -29,15 +29,15 @@ Other storage services provided by CSPs include mechanisms to help move data int
 
 Given that cloud-based virtual machines are accessed over the Internet, virtual-machine services would be useless without virtual networks to support them. Indeed, creating a VM in the cloud typically means creating a virtual network to go with it. Some tools create a virtual machine and a network to go with it in one step; others require the network and the components that comprise it to be created separately.
 
-CSPs support the creation of virtual networks (VNets) and network appliances such as virtual Network Interface Cards (NICs) and IP addresses to allow virtual machines to be accessed over the Internet and interconnected. Direct connections are available to link on-premises networks to network backplanes managed by the CSPs. Virtual private network (VPN) gateways provide another option for integration with on-premises networks, as well as with other cloud-hosted networks. Virtual firewalls regulate traffic entering or moving across virtual networks, while traffic managers perform the critical task of load balancing and allow customers to specify how traffic is routed to various data centers -- for example, directing traffic from users in India to a web application in a South Asian data center while serving users in the United States with the same application running in a U.S. data center.
+CSPs support the creation of virtual networks (VNets) and network appliances such as virtual Network Interface Cards (NICs) and IP addresses to allow virtual machines to be accessed over the Internet and interconnected. Direct connections are available to link on-premises networks to network backplanes managed by the CSPs. Virtual private network (VPN) gateways provide another option for integration with on-premises networks, as well as with other cloud-hosted networks. Virtual firewalls regulate traffic entering or moving across virtual networks, while traffic managers perform the critical task of load balancing and allow customers to specify how traffic is routed to various data centers, for example, directing traffic from users in India to a web application in a South Asian data center while serving users in the United States with the same application running in a U.S. data center.
 
-Nearly anything that can be done with a physical network can be accomplished with a virtual network, too -- and can typically be done in minutes, anywhere in the world, without investing a single dollar in network switches, interface cards, or other networking hardware.
+Nearly anything that can be done with a physical network can be accomplished with a virtual network, too, and can typically be done in minutes, anywhere in the world, without investing a single dollar in network switches, interface cards, or other networking hardware.
 
 # Analytical Services
 
 The era of big data is upon us, and organizations large and small are investing in analytics in order to make use of the data they have accumulated, grow their businesses, and better serve their customers. Big data often requires vast amounts of storage and commensurately vast amounts of compute power. That's why cloud service providers have invested heavily in making analytical services available to their customers, and why the cloud is one of the single greatest factors in the explosion of analytical workloads.
 
-Examples of analytical services include petabyte-scale data warehouses and data lakes, real-time stream processing and extract-transform-and-load (ETL) processing, automatic cataloging of data, search as a service, and reporting solutions. Many CSPs also offer managed versions of popular big-data tools such as Apache Hadoop and Apache Spark. It can take months to plan for, procure, deploy, and configure an on-premises Spark cluster -- an undertaking that is not uncommon at large universities and research institutions -- but the same cluster can be provisioned in minutes in the cloud and then deleted when it is no longer needed to avoid paying for resources that aren't being used.
+Examples of analytical services include petabyte-scale data warehouses and data lakes, real-time stream processing and extract-transform-and-load (ETL) processing, automatic cataloging of data, search as a service, and reporting solutions. Many CSPs also offer managed versions of popular big-data tools such as Apache Hadoop and Apache Spark. It can take months to plan for, procure, deploy, and configure an on-premises Spark cluster, an undertaking that is not uncommon at large universities and research institutions, but the same cluster can be provisioned in minutes in the cloud and then deleted when it is no longer needed to avoid paying for resources that aren't being used.
 
 # Identity Services
 
@@ -85,13 +85,13 @@ The cloud is continually evolving, and with that evolution comes new types of se
 
 # Case Study: Save the Polar Bears!
 
-All of the aforementioned services work independently, but cloud architects frequently combine these services to form end-to-end solutions designed to solve specific business problems. Figure 2.1 shows one such solution -- one that combines several services provided by Microsoft Azure to provide a near-real-time analysis of polar-bear sightings in a region of the Arctic.
+All of the aforementioned services work independently, but cloud architects frequently combine these services to form end-to-end solutions designed to solve specific business problems. Figure 2.1 shows one such solution, one that combines several services provided by Microsoft Azure to provide a near-real-time analysis of polar-bear sightings in a region of the Arctic.
 
 ![Figure 2.1: Combining services to build end-to-end solutions](../media/architecture-diagram-example.png)
 
 _Figure 2.1: Combining services to build end-to-end solutions._
 
-In this solution, motion-activated cameras positioned at strategic locations throughout the Arctic snap pictures of wildlife. Each photo is deposited in Azure Blob Storage, and each time a photo is taken, an event containing information about the photo -- including when it was taken, where it was taken, and its URL in Blob Storage -- is transmitted securely over the Internet to an Azure IoT Hub. From there, the event is forwarded to Azure Stream Analytics, which examines the event in the context of recent events and determines whether the photo *might* contain a picture of a polar bear.
+In this solution, motion-activated cameras positioned at strategic locations throughout the Arctic snap pictures of wildlife. Each photo is deposited in Azure Blob Storage, and each time a photo is taken, an event containing information about the photo, including when it was taken, where it was taken, and its URL in Blob Storage is transmitted securely over the Internet to an Azure IoT Hub. From there, the event is forwarded to Azure Stream Analytics, which examines the event in the context of recent events and determines whether the photo *might* contain a picture of a polar bear.
 
 If the answer is yes, an Azure Function retrieves the corresponding photo from Blob Storage and passes it to Azure's Custom Vision Service, which has been trained to determine with a high degree of certainty whether a picture contains a polar bear. The Azure Function writes the result to an Azure SQL Database. Microsoft Power BI monitors the database and updates a dashboard to show where polar bears are being spotted (Figure 2.2).
 
@@ -99,7 +99,7 @@ If the answer is yes, an Azure Function retrieves the corresponding photo from B
 
 _Figure 2.2: Power BI dashboard showing polar-bear sightings._
 
-The entire system runs in the cloud with the exception of the cameras that snap the photos. Solutions such as these are typical of the rich solutions being deployed in the cloud by organizations large and small. Architects design the solutions, but administrators assume responsibility for deploying them, getting them running, and keeping them running. This is one reason cloud administrators are in high demand in today's workforce -- and why an investment in learning cloud computing can pay great dividends down the road.
+The entire system runs in the cloud with the exception of the cameras that snap the photos. Solutions such as these are typical of the rich solutions being deployed in the cloud by organizations large and small. Architects design the solutions, but administrators assume responsibility for deploying them, getting them running, and keeping them running. This is one reason cloud administrators are in high demand in today's workforce, and why an investment in learning cloud computing can pay great dividends down the road.
 
 ### References
 
@@ -107,10 +107,10 @@ The entire system runs in the cloud with the exception of the cameras that snap 
 
 1. _"Microsoft Research Blog (2014). *Cloud computing helps make sense of cloud forests*." <https://www.microsoft.com/research/blog/cloud-computing-helps-make-sense-of-cloud-forests/>._
 
-1. _Gemalto (2018). *Gemalto and Cargo Tracck team up for a Successful Sting Operation*. <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>._
+1. _Gemalto (2018). *Gemalto and Cargo Track team up for a Successful Sting Operation*. <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>._
 
 [^1]: <https://www.networkworld.com/article/3322517/a-critical-look-at-gartners-top-10-iot-trends.html>  "Network World (2018). *Gartner's top 10 IoT trends for 2019 and beyond*."
 
 [^2]: <https://www.microsoft.com/research/blog/cloud-computing-helps-make-sense-of-cloud-forests/>  "Microsoft Research Blog (2014). *Cloud computing helps make sense of cloud forests*."
 
-[^3]: <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>  "Gemalto (2018). *Gemalto and Cargo Tracck team up for a Successful Sting Operation*."
+[^3]: <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>  "Gemalto (2018). *Gemalto and Cargo Track team up for a Successful Sting Operation*."

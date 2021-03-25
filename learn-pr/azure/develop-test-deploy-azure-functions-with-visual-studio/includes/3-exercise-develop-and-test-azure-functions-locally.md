@@ -14,11 +14,11 @@ Create an Azure Function App using the **Azure Functions** template.
 
 1. The **Configure your new project** page appears. In the **Project name** field, enter **WatchPortalFunction**. For the **Location** field, select a convenient location on your computer to store the project. The **Solution name** field should default to **WatchPortalFunction**. Make sure **Place solution and project in the same directory** is NOT selected (unchecked). This will result in the proper folder structure throughout the learning module.
 
-1. Select **Create.**
+1. Select **Create**.
 
     :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of the Visual Studio 2019 with Configure your new project link." loc-scope="vs":::
 
-1. The **Create a new Azure Functions application** page appears. From the dropdown, select **Azure Functions v2 (.NET Core)**, and then select **Http Trigger**. Leave the **Storage Account** dropdown set to **Storage Emulator** because you'll be running the Azure Function App locally to start with. Under the **Authorization level**, select **Anonymous**, and then select **Create**.
+1. The **Create a new Azure Functions application** page appears. From the dropdown, select **Azure Functions v2 (.NET Core)**, and then select **Http Trigger**. Leave the **Storage Account** dropdown set to **Storage emulator** because you'll be running the Azure Function App locally to start with. Under the **Authorization level**, select **Anonymous**, and then select **Create**.
 
     :::image type="content" source="../media/3-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
@@ -60,7 +60,7 @@ Create an Azure Function App using the **Azure Functions** template.
 
     :::image type="content" source="../media/3-new-item.png" alt-text="Screenshot of the Add New Item window. The user has selected the Azure Function template, and named the new function WatchInfo.cs." loc-scope="vs":::
 
-1. In the **New Azure Function - WatchInfo** window, select **Http trigger**. Under **Access rights**, select **Anonymous**, and then select **Add**.
+1. In the **New Azure Function - WatchInfo** window, select **Http trigger**. Under **Authorization level**, select **Anonymous**, and then select **Add**.
 
     :::image type="content" source="../media/3-new-azure-function-trigger.png" alt-text="Screenshot of the New Azure Function window. The user has selected the Http Trigger with Anonymous access rights." loc-scope="vs":::
 

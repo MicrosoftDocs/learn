@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/)
   - [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/quantum.run-quantum-algorithms-hardware.svg
 ratingEnabled: true
 levels:
 - beginner

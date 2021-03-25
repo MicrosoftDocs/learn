@@ -3,7 +3,7 @@ uid: learn.wwl.implement-data-loss-prevention
 metadata:
   title: 'SC-400 part 2: Implement Data Loss Prevention'
   description: 'SC-400 part 2: Implement Data Loss Prevention'
-  ms.date: 02/11/2021
+  ms.date: 03/12/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -14,16 +14,15 @@ prerequisites: |
   - Basic knowledge of information protection concepts
 summary: |
   In this learning plan we discuss how to implement data loss prevention techniques to secure your Microsoft 365 data. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-data-loss-prevention.svg
 levels:
 - intermediate
 roles:
-- administrator
 - auditor
+- ip-admin
 - risk-practitioner
 products:
 - m365
-- office-365
 - m365-information-protection
 modules:
 - learn-m365.m365-compliance-information-prevent-data-loss

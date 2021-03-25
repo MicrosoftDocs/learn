@@ -2,8 +2,6 @@ You use Azure Automation State Configuration to make sure that the virtual machi
 
 In this unit, you'll learn about the features and capabilities of Azure Automation. You'll review the declarative model of PowerShell Desired State Configuration (DSC), and you'll explore its benefits.
 
-## What is Azure Automation State Configuration?
-
 Azure Automation State Configuration is an Azure service built on PowerShell. It allows you to consistently deploy, reliably monitor, and automatically update the desired state of all your resources. Azure Automation provides tools to define configurations and apply them to real and virtual machines.
 
 ## Why use Azure Automation State Configuration?

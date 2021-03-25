@@ -31,7 +31,7 @@ Azure Active Directory Conditional Access is an advanced feature of Azure AD tha
 
 12. In the Select pane, select **My apps** and then select **Select**.
 
-13. Select **Conditions** and then select **Conditions**.
+13. Select **Conditions** and then select **Locations**.
 
 14. Under **Configure**, select **Yes** and then select **Any location**.
 

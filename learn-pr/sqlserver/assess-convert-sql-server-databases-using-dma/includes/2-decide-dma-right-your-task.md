@@ -10,13 +10,13 @@ Using database backups and restoring them on the target instance is an option fo
 
 Azure Migrate provides a dashboard for a suite of migration tools. From the portal you can find documentation and download links to **Assess and migrate servers**, **Assess and migrate databases**, and **Explore more scenarios**.
 
-:::image type="content" source="../media/2-azure-migrate.png" alt-text="Azure Migrate" lightbox="../media/2-azure-migrate.png":::
+:::image type="content" source="../media/2-azure-migrate.png" alt-text="Screenshot of the Azure portal's Azure Migrate Overview Get Started screen." lightbox="../media/2-azure-migrate.png":::
 
 ### Assess and migrate servers
 
 To assess and migrate servers, you should first discover machines in your on-premises or cloud environment. To perform the discovery, you must install the Azure Migrate appliance to a machine in the same domain as the machines that you wish to discover.
 
-:::image type="content" source="../media/2-discover-machines.png" alt-text="Discover machines":::
+:::image type="content" source="../media/2-discover-machines.png" alt-text="Screenshot of the Azure portal's Azure Migrate Servers screen.":::
 
 The machine that runs the Azure Migrate appliance has the following requirements:
 
@@ -33,7 +33,7 @@ To assess and migrate databases, a link is provided to install Data Migration As
 
 **Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedized physical storage device with 100 TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
 
-:::image type="content" source="../media/2-explore-more.png" alt-text="Explore more" lightbox="../media/2-explore-more.png":::
+:::image type="content" source="../media/2-explore-more.png" alt-text="Screenshot of the Azure portal's Azure Migrate Overview Explore more screen." lightbox="../media/2-explore-more.png":::
 
 ## What is the Microsoft Data Migration Assistant?
 

@@ -3,7 +3,7 @@ uid: learn.wwl.remediate-azure-defender-security-alerts
 metadata:
   title: Remediate security alerts using Azure Defender
   description: "Remediate security alerts using Azure Defender"
-  ms.date: 01/22/2021
+  ms.date: 03/04/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -18,11 +18,11 @@ abstract: |
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-defender-security-alerts.svg
 levels:
 - intermediate
 roles:
-- security-engineer
+- security-operations-analyst
 products:
 - azure
 - azure-security-center

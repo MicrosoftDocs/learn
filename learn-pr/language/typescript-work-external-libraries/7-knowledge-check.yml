@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-work-external-libraries.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is possible when using namespaces, but not when using modules?"
+    choices:
+    - content: "Designate a component as available outside of the scope of the namespace using the `export` keyword."
+      isCorrect: false
+      explanation: "Incorrect. Both namespaces and modules use the `export` keyword to designate a component as available outside of the scope of the namespace or module."
+    - content: "Compile multiple TypeScript files into a single JavaScript file."
+      isCorrect: true
+      explanation: "Correct! The `--outFile` compiler option combines multiple namespace files to a single JavaScript file."
+    - content: "Declaring dependencies."
+      isCorrect: false
+      explanation: "Incorrect. Namespaces cannot declaire their dependencies."
+  - content: "How do you use use a component from one module file in another module file?"
+    choices:
+    - content: "Use the `import` keyword."
+      isCorrect: true
+      explanation: "Correct! To use a component from one module in another module, use the `import` keyword."
+    - content: "Use a `reference` statement."
+      isCorrect: false
+      explanation: "Incorrect. A `reference` statement informs TypeScript of the relationship between different files that contain namespaces."
+    - content: "Prepend the module name to the component name."
+      isCorrect: false
+      explanation: "Incorrect. Once a relationship between namespaces is established, you can refer to the components of the namespace by prepending the namespace name to the component."
+  - content: "What is the recommended code-organizing mechanism for new ES6-compliant projects?"
+    choices:
+    - content: "Namespaces."
+      isCorrect: false
+      explanation: "Incorrect. While you can use namespaces or modules in your ES6-compliant projects, namespaces do not offer all the benefits of modules."
+    - content: "It doesn't matter which one you choose."
+      isCorrect: false
+      explanation: "Incorrect. There are differences between modules and namespaces that make one preferred over the other for modern applications."
+    - content: "Modules."
+      isCorrect: true
+      explanation: "Correct! Modules are the recommended code-organizing mechanism for ES6-compliant projects because they offer benefits that namespaces do not have."
+  

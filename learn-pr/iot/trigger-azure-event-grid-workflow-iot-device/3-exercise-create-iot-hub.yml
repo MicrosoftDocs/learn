@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Create an IoT hub
   description: In this unit, we'll create an IoT hub.
   ms.date: 03/20/2020
-  author: olivierbloch
-  ms.author: obloch
+  author: chrishowd
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
