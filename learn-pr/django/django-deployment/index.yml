@@ -14,11 +14,16 @@ abstract: |
   In this module, you'll:
   - Configure a project for deployment.
   - Deploy the project.
-prerequisites: 
+prerequisites: |
+  Coding skills:
   - HTML or CSS
   - Git
   - npm
   - Python
+
+  Software:
+  - Visual Studio Code
+  - Git
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
