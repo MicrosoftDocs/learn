@@ -37,7 +37,7 @@ With PaaS, Microsoft:
 - Encrypts the data at rest and in motion by default.
 - Monitors your server and provides features for query performance insights and performance recommendations
 
-### Analyse administrative effort
+### Analyze administrative effort
 
 The following table describes administrative considerations for each option
 
@@ -46,7 +46,7 @@ The following table describes administrative considerations for each option
 | MySQL on Azure VMs       | You have complete control over the OS and the MySQL server instance and its configuration. You decide when to update or upgrade the OS and database engine and which patches to apply. You also decide if and when to install any additional software (such as an antivirus app). You can control the size of the VM, the number of disks, and their storage configurations. Some automated features are provided to greatly simplify patching, backup, and high availability. In summary, although you have complete control, there is a significant amount of administrative effort involved. |
 | Azure Database for MySQL | You can continue to administer your database, but you no longer have to manage the hardware, the OS, or the database engine. You can still choose to administer some items, such as: databases, sign-in options, index tuning, query tuning, auditing, and security. In summary, there's considerably less administrative effort involved. |
 
-### Analyse cost
+### Analyze cost
 
 With MySQL on Azure VMs, you pay for the provisioned VM, storage cost associated with the data, backup, monitoring data and log storage and the costs for the specific MySQL license type used.
 
@@ -55,7 +55,7 @@ With Azure Database for MySQL, you start by selecting the tier and SKU that's mo
 > [!TIP]
 > Flexible Server also allows you to stop and start the server to minimize costs.
 
-### Analyse high-availability
+### Analyze high-availability
 
 If high-availability is critical to your app, then keep in mind that to enable high-availability with MySQL for Azure VMs, you are wholly responsible for configuring the required Azure components. This involves additional administrative effort and cost. With Azure Database for MySQL, high-availability is automatically available
 
