@@ -56,53 +56,17 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
+## Azure Logic Apps
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+TODO: Give an overview.
 
-## [Chunk 2 heading]
+## Azure Logic Apps integrations
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+TODO: Integrations of Azure Logic Apps + Azure Functions + Azure SQL DB
 
-## [Chunk n heading]
+## Azure Logic Apps for Notifications
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+TODO: Azure Logic Apps in this scenario
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->

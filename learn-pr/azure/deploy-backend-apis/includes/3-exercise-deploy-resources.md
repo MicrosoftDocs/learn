@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Setting up your environment and deploying some resources to start with is an important step in building full stack applications. 
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,20 +20,9 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Recall in the catching the bus sample, you'll leverage resources including Azure SQL Database, Azure Functions and Azure Logic Apps. In the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database. Here, you'll redeploy Azure SQL Database with the required configurations.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+You'll then deploy an empty Azure Function app and configure it's yaml file and GitHub secrets for CI/CD. The Azure Function will be completed and monitored in exercises later in this module.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,23 +45,194 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Configure your environment
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+The first required step is to set up your development environment. Please refer to the brief instructions [here](https://review.docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Deploy and configure Azure SQL Database
+In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+
+These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
+
+1. Start by obtaining your local public IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
+
+    ```powershell
+    (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
+    ```
+
+> [!TIP]
+> If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+
+1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+
+    ```powershell
+    # Collect password 
+    $adminSqlLogin = "cloudadmin"
+    $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
+    # Prompt for local ip address
+    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
+    Write-Host "Password and IP Address stored"
+    ```
+
+1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
+
+    ```powershell
+    # Get resource group and location and random string
+    $resourceGroupName = "Sandbox resource group name"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
+    $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
+    $location = $resourceGroup.Location
+    # The logical server name has to be unique in the system
+    $serverName = "bus-server$($uniqueID)"
+    # The sample database name
+    $databaseName = "bus-db"    
+    Write-Host "Please note your unique ID for future exercises in this module:"  
+    Write-Host $uniqueID
+    Write-Host "Your resource group name is:"
+    Write-Host $resourceGroupName
+    Write-Host "Your resources were deployed in the following region:"
+    Write-Host $location
+    Write-Host "Your server name is:"
+    Write-Host $serverName
+    ```
+
+    Remember to note your password, unique ID, and region. You'll use them throughout the module.
+
+1. Run the following script to deploy an empty Azure SQL Database instance and logical server. The script will also add your IP address as a firewall rule.
+
+    ```powershell
+    # Create a new server with a system wide unique server name
+    $server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
+        -ServerName $serverName `
+        -Location $location `
+        -SqlAdministratorCredentials $(New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $adminSqlLogin, $(ConvertTo-SecureString -String $password -AsPlainText -Force))
+    # Create a server firewall rule that allows access from the specified IP range and all Azure services
+    $serverFirewallRule = New-AzSqlServerFirewallRule `
+        -ResourceGroupName $resourceGroupName `
+        -ServerName $serverName `
+        -FirewallRuleName "AllowedIPs" `
+        -StartIpAddress $ipAddress -EndIpAddress $ipAddress 
+    $allowAzureIpsRule = New-AzSqlServerFirewallRule `
+        -ResourceGroupName $resourceGroupName `
+        -ServerName $serverName `
+        -AllowAllAzureIPs
+    # Create a database
+    $database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
+        -ServerName $serverName `
+        -DatabaseName $databaseName `
+        -Edition "GeneralPurpose" -Vcore 4 -ComputeGeneration "Gen5" `
+        -ComputeModel Serverless -MinimumCapacity 0.5
+    Write-Host "Database deployed."
+    ```
+
+    The script will take several minutes to complete. While it's completing, you can configure your database for CI/CD with GitHub Actions.
+
+1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
+
+1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+
+1. Select **Settings** for the repository.
+
+1. Select **Secrets** > **New repository secret** and enter the following:
+    1. *Name*: **AZURE_SQL_CONNECTION_STRING**
+    1. *Value*: **Connection string from prior step**
+
+1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+
+1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
+
+1. Select the **Source Control** icon on the left-hand taskbar.
+
+1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
+
+1. Select the **...** > **Push** which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
+
+1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
+
+    ```powershell
+    bash
+    ```
+
+1. Start a sqlcmd session with the below commands. Note you'll need to add your server name and password.
+
+    ```bash
+    TERM=dumb
+    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db
+    ```
+
+1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, review the previous module.
+
+    ```sql
+    DELETE FROM dbo.[Routes];
+    INSERT INTO dbo.[Routes]
+    ([Id], [AgencyId], [ShortName], [Description], [Type])
+    SELECT 
+    [Id], [AgencyId], [ShortName], [Description], [Type]
+    FROM
+    openrowset
+    (
+        bulk 'routes.txt', 
+        data_source = 'RouteData', 
+        formatfile = 'routes.fmt', 
+        formatfile_data_source = 'RouteData', 
+        firstrow=2,
+        format='csv'
+    ) t;
+    GO
+    exit()
+    ```
+
+## Deploy and configure the Azure Function app
+
+Now that your database and GitHub repository are configured, it's time to deploy an Azure Function app.
+
+1. First, switch to PowerShell as that's what you'll use to deploy.
+
+    ```bash
+    pwsh
+    ```
+
+1. Next, configure your variables.
+
+    ```powershell
+    $resourceGroupName = "Sandbox resource group name"
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
+    $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
+    $location = $resourceGroup.Location
+    # Azure function name
+    $azureFunctionName = $("azfunc$($uniqueID)")
+    # Get storage account name
+    $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
+    ```
+
+> [!IMPORTANT]
+> The next step involves selecting a language for the rest of module, so choose wisely!
+
+1. Depending one which language you want to use, run the following in the terminal.
+
+    1. .NET Core
+
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RuntimeVersion 3 -Runtime dotnet -Location $location
+    ```
+
+    1. Python
+
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RuntimeVersion 3.8 -Runtime python -Location $location
+    ```
+
+    1. Node.js
+
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
+    ```
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
@@ -95,14 +255,5 @@ TODO: describe the end-state
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->

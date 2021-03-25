@@ -56,19 +56,40 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
+## Deploy Azure Logic App
+<!-- Introduction paragraph -->
+
+1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
+
+1. Make note of your GitHub repository (e.g. https://github.com/[username]/mslearn-full-stack-azure-sql).
+
+1. The following script clones the repository and deploys an Azure Logic App according to an ARM template.
+
+    ```powershell
+    # Get the repository name
+    $appRepository = Read-Host "Enter your GitHub repository URL (e.g. https://github.com/<username>/mslearn-full-stack-azure-sql):"
+    # Clone the repo - note this asks for the token
+    $cloneRepository = git clone $appRepository
+    # Get subscription ID 
+    $subId = [Regex]::Matches($resourceGroup.ResourceId, "(\/subscriptions\/)+(.*\/)+(.*\/)").Groups[2].Value
+    $subId = $subId.Substring(0,$subId.Length-1)
+    # Deploy logic app
+    az deployment group create --name DeployResources --resource-group $resourceGroupName `
+        ` --template-file ./sql-bus/deployment-scripts/template.json `
+        --parameters subscription_id=$subId location=$location   
+    ```
+
+1. <!-- Step 1 -->
+1. <!-- Step 2 -->
+1. <!-- Step n -->
+
+## Configure Outlook connector
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## [Chunk n heading]
+## Monitor and observe results
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->

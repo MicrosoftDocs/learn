@@ -55,54 +55,34 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
+TODO: Document exercise.
 
-## [Chunk 1 heading]
+## Run Azure Functions locally
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
+## Compare results to database
+<!-- Introduction paragraph -- compare results to what is actually in the database  -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## [Chunk n heading]
+## Configure for CI/CD with GitHub
+
+<!-- Summary paragraph --> TODO
+
+1. TODO: Get package profile
+1. TODO: Configure yaml file and github secrets
+1. TODO: Push and monitor deployment
+1. <!-- Step  -- directions will vary slightly based on language chosen -->
+
+## Monitor results in the Azure portal
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

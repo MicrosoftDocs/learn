@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+The bus-catching scenario requires Azure Functions to process and analyze bus data
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,9 +20,6 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
     Goal: State concisely what they'll implement here; that is, describe the end-state after completion
@@ -33,7 +30,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+TODO: describe the various tasks that must be completed briefly
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,53 +53,17 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Get real time information
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+TODO: Go into details how to do this - include code snippets?
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Get monitored routes
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+TODO: Go into details how to do this - include code snippets?
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+## Process GeoFences
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
+TODO: Go into details how to do this - include code snippets?
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

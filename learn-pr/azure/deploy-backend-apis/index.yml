@@ -39,7 +39,7 @@ units:
 - learn.azure.deploy-backend-apis.4-build-your-application
 - learn.azure.deploy-backend-apis.5-exercise-set-up-data-feed
 - learn.azure.deploy-backend-apis.6-pushing-notifications-logic-apps
-- learn.azure.deploy-backend-apis.7-deploy-logic-app
+- learn.azure.deploy-backend-apis.7-exercise-deploy-logic-app
 - learn.azure.deploy-backend-apis.8-summary
 badge:  
   uid: learn.azure.deploy-backend-apis.badge

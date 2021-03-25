@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Azure Functions provide an easy, scalable way to deploy serverless APIs.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -18,7 +18,6 @@ TODO: add your topic sentences(s)
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-TODO: add your scenario sub-task
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
@@ -28,13 +27,8 @@ TODO: add your scenario sub-task
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: write your prose table-of-contents
+Here, you will learn more about Azure Functions and the various capabilities relating to the bus-catching scenario. You'll also learn how Azure Functions have easy integrations with other services, like Azure SQL Database and Azure Logic Apps, that will help in building out the final solution.
 
-<!-- 4. Image (highly recommended) ----------------------------------------------------------------
-
-    Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
--->
-TODO: add a visual
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -48,27 +42,21 @@ TODO: add a visual
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
+## Catching the bus with serverless APIs
 
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+Recall the bus-catching scenario TODO: briefly explain the scenario and why serverless APIs are required. Extrapolate to how this is also required for the development of most apps.
+
+## Azure Functions
+
+Overview of Azure Functions
+
+### Integrating with Azure SQL Database
+
+TODO
+
+### Integrating with other services
+
+TODO but include Logic Apps and other possibilities
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
 <!-- Do not add a unit summary or references/links -->
