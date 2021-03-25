@@ -8,7 +8,7 @@ When you create components, you're essentially creating new tags that you can us
 
 ## Vue component structure
 
-Vue components contain three main sections: `template`, `script`, and `style`.
+Vue components contain three main sections: `style`, `script`, and `template`.
 
 ### style
 

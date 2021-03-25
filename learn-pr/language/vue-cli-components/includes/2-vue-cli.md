@@ -1,4 +1,4 @@
-Vue CLI provides a suite of tools for development, including project scaffolding, a development server, and rapid prototyping. It helps you to quickly create a starter application so you can focus on coding, not on configuring libraries and other settings.
+Vue CLI provides a suite of tools for development, including project scaffolding, a development server, and rapid prototyping. It helps you quickly create a starter application so you can focus on coding, not on configuring libraries and other settings.
 
 ## Bootstrapping
 

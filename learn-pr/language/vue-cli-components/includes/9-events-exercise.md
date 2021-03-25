@@ -1,4 +1,4 @@
-Let's complete your application by adding a form. The form will have a drop-down list for the user to select their desired cabin, and a button to book the cruise. You'll set this up as a new component and create an event for the button. You'll finish by calling this new component from *Host.vue*.
+Let's complete the application by adding a form. The form will have a drop-down list for the user to select their desired cabin, and a button to book the cruise. You'll set this up as a new component and create an event for the button. You'll finish by calling this new component from *Host.vue*.
 
 ## Create the component
 
@@ -43,7 +43,7 @@ Let's add the code that the component will use, including registering the props,
 
 ## Add the display template
 
-With the code added, we can turn our attention to the display. You want to have a drop-down list for cabin selection, and a button to book the trip. The button will call the `bookCabin` function that you created earlier.
+With the code added, we can turn our attention to the display. We want to have a drop-down list for cabin selection, and a button to book the trip. The button will call the `bookCabin` function that you created earlier.
 
 1. Open *src/components/BookingForm.vue* if it's not already open.
 1. Add the following code inside the `<template>` tags to create the display:

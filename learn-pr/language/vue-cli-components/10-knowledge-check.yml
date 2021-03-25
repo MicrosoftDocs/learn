@@ -24,11 +24,11 @@ quiz:
       explanation: "`emits` is used to register custom events for a component."
     - content: "`props`"
       isCorrect: false
-      explanation: "`props` is used to add property values that you can pass into a component."
+      explanation: "`props` is used to add property values that you can pass in to a component."
     - content: "`methods`"
       isCorrect: false
       explanation: "`methods` is used to store functions available to the component."
-  - content: What command is used in Vue CLI to create a new web application?
+  - content: What command is used in Vue CLI to create a web application?
     choices:
     - content: "`create`"
       isCorrect: true
@@ -41,13 +41,13 @@ quiz:
       explanation: "`info` will print debugging information for a Vue application."
   - content: What field do you use to list the available components for an app?
     choices:
-    - content: "`methods'"
+    - content: "`methods`"
       isCorrect: false
       explanation: "`methods` is used to list the available methods."
     - content: "`props`"
       isCorrect: false
       explanation: "`props` is used to indicate the properties for a component."
-    - content: "`data`."
+    - content: "`data`"
       isCorrect: false
       explanation: "`data` is used to set the data that a component uses."
     - content: "`components`"

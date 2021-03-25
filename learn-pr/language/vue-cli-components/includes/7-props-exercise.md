@@ -13,7 +13,7 @@ Start by creating the component.
 
 ## Register the props and computed value
 
-You're expecting an array of information about bookings, so we'll declare our prop as type `Array`. Because you're creating a component, you can also take advantage of computed properties to automatically calculate values for you. You'll add a computed property to add the total price and return a display value that you can use.
+We're expecting an array of information about bookings, so we'll declare our prop as type `Array`. Because you're creating a component, you can also take advantage of computed properties to automatically calculate values for you. You'll add a computed property to add the total price and return a display value that you can use.
 
 1. Open *src/components/BookingList.vue* if it's not already open.
 1. Inside the curly braces (`{ }`) for `export default`, add the following code to create a prop named `bookings` and the `computed` property:

@@ -1,8 +1,8 @@
-You want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form that the user will complete to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
+We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form that the user will complete to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
 
 ## Install Visual Studio Code extensions
 
-Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to aid you in your development endeavors. We'll take advantage of two:
+Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to help in your development endeavors. We'll take advantage of two:
 
 - [Vetur](https://marketplace.visualstudio.com/items/?itemName=octref.vetur&azure-portal=true) enables support for *.vue* files in Visual Studio Code.
 - [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enables snippets in Visual Studio Code.

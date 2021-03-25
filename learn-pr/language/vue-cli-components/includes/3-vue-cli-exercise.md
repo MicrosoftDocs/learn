@@ -18,7 +18,7 @@ To install Vue CLI, open a command or terminal window and run the following comm
 npm install -g @vue/cli
 ```
 
-The installation of Vue CLI on your system will take a couple of minutes.
+The installation of Vue CLI on your system takes a couple of minutes.
 
 ## Bootstrap an application
 

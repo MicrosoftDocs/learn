@@ -4,7 +4,7 @@ HTML elements are the building blocks for creating pages. You can configure thei
 
 Props, short for *properties*, are a set of values that you can pass in to a component. You'll typically add props to a component to pass in the values that it should display or otherwise change its behavior.
 
-You define props for a component by adding the `props` field inside the `script` element. You can list the names of a components props by listing them in an array:
+You define props for a component by adding the `props` field inside the `script` element. You can list the names of a component's props by listing them in an array:
 
 ```html
 <!-- UserDisplay component -->
