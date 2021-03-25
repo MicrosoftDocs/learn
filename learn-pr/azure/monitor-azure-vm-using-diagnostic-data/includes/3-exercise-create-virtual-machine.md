@@ -64,7 +64,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
    |Metric     |   Inbound Flows  |
    |Aggregation    |    Avg     |  
 
-1. Select the **Finish editing** check mark.
+1. Select the **Update** in the top right (Local Time: Last 24 hours (Automatic) and change to 30 min.
 
 1. You should now have a graph that looks something like the following:
 
@@ -75,6 +75,7 @@ Azure collects this data without requiring you to install anything extra on Ubun
 ## View boot diagnostics
 
 1. On the left menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
+1. Select **Settings > Enable with managed storage account (recommended)**.
 
 1. Review the screenshot to verify that your virtual machine started correctly.
 
