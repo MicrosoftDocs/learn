@@ -1,3 +1,5 @@
+Cloud architects and developers don't want to have to concern themselves with managing the server that hosts their apps; to worry about the underlying operating system and database. They want to focus on the development of their cloud-designed apps. By using Azure Database for MySQL, you can help them achieve this focus.
+
 Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can handle your mission-critical workloads with predictable performance and dynamic scalability. You can easily connect your existing client apps and database tools to your instance of Azure Database for MySQL to get the benefits of a Platform as a Service (PaaS) environment. 
 
 :::image type="content" source="../media/mysql-conceptual-diagram.png" alt-text="A graphic depicting the architecture of Azure Database for MySQL in a typical organization.":::
@@ -9,12 +11,19 @@ By implementing Azure Database for MySQL, you can provide for high-availability,
 
 ## Example scenario
 
-If your organization currently implements MySQL databases to support critical workloads, you could benefit from shifting to Azure Database for MySQL. Azure Database for MySQL provides for high-availability, automatic backups, automated maintenance, and excellent compliance and security; this means you can focus on app development, and delivery of those apps and their data to your users.
+If your organization currently implements MySQL databases to support critical workloads, you could benefit from migrating to Azure Database for MySQL. Azure Database for MySQL provides for:
+
+- High-availability
+- Automatic backups
+- Automated maintenance
+- Excellent compliance and security 
+
+This means your cloud architects and developers can focus on app development, and delivery of those apps and their data to your users.
 
 
 ## What will we be doing?
 
-In this module, you'll identify the features of Azure Database for MySQL. You'll be able to assess whether Azure Database for MySQL can help you address your organization's database requirements. You'll also determine which MySQL option to select. 
+In this module, you'll identify the features of Azure Database for MySQL. You'll be able to assess whether Azure Database for MySQL can help you address your organization's database requirements. You'll also determine which Azure Database for MySQL option to select.
 
 ## What is the main goal?
 

@@ -1,12 +1,14 @@
-MySQL is one of the most popular open source databases. It's used by independent software vendors and developers to build web apps. It's also used by many large enterprise-level organizations to host critical applications. Azure Database for MySQL is based on the MySQL Community Edition available under the GPLv2 license and is a fully managed relational database as a service platform.
+MySQL is one of the most popular open source databases. It's used by independent software vendors and developers to build web apps. It's also used by many large enterprise-level organizations to host mission critical applications. 
+
+Azure Database for MySQL is based on the MySQL Community Edition available under the GPLv2 license and is a fully managed relational database as a service platform.
 
 
-> [!NOTE]
-> You can also choose to run Azure Database for MySQL in a hosted virtual machine (VM) infrastructure as a service (IaaS) mode.
+> [!TIP]
+> You can also choose to run MySQL in a hosted virtual machine (VM) infrastructure as a service (IaaS) mode on Azure.
 
 ## Why use a DBaaS database?
 
-By selecting Azure Database for MySQL, you're choosing to implement your database apps on DBaaS basis. By using a DBaaS delivery platform for your relational database apps, you can focus on quickly developing your database apps instead of worrying about managing your VMs and related infrastructure.  
+By selecting Azure Database for MySQL, you're choosing to implement your database apps on a DBaaS basis. By using a DBaaS delivery platform for your relational database apps, you can focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You don't need to think about configuring and maintaining the platform as that's managed by Azure. 
 
 
 > [!NOTE]
@@ -16,7 +18,7 @@ By selecting Azure Database for MySQL, you're choosing to implement your databas
 
 Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in Azure. It provides:
 
-- High availability
+- High-availability
 - Data protection 
 
    > [!NOTE]
@@ -34,7 +36,9 @@ Azure Database for MySQL is a fully managed, relational DBaaS platform hosted in
 - Robust security and compliance features to help protect your sensitive, both at rest and while in-motion
 - Monitoring and automation to help simplify management and monitoring of large-scale deployments
 
-Most of these features require little administrative effort, and are all included as standard. Azure Database for MySQL supports common database tools, such as MySQL Workbench and others. This means that by implementing Azure Database for MySQL, you can continue working with familiar tools and platforms. 
+Most of these features require little administrative effort, and are all included as standard. 
+
+Azure Database for MySQL supports common database tools, such as MySQL Workbench and others. This means that by implementing Azure Database for MySQL, you can continue working with familiar tools and platforms. 
 
 ### Choose a suitable deployment option
 
@@ -81,7 +85,7 @@ This mode also provides for a fully managed database service, but provides for m
 - Provides better cost optimization controls with the ability to:
 
    - Start/stop your server 
-   - Burstable SKUs 
+   - Implement Burstable SKU
 
    > [!TIP]
    > This is useful for workloads that don't always need full compute capacity.
@@ -99,37 +103,7 @@ This mode isn't a fully managed database service and, instead, falls into the in
 > [!TIP]
 > You can install all recent versions and editions of MySQL in your hosted VM.
 
-Consider this mode only when you don't want the benefits offered by a DBaaS platform.
+Consider this mode only when you don't want the benefits offered by a DBaaS platform. 
 
-## How to choose the appropriate deployment option
-
-
-To further help you determine which deployment option best suits your needs, refer to the following table. 
-
-| Attribute                      | Azure Database for MySQL Single Server                       | Azure Database for MySQL Flexible Server                     | MySQL on Azure VMs                                           |
-| :----------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| MySQL Version Support          | 5.6, 5.7 and 8.0                                               | 5.7 and 8.0                                                    | Any version                                                  |
-| Compute scaling                | Supported                                                    | Supported                                                    | Supported                                                    |
-| Storage size                   | 5 GiB to 16 TiB                                              | 5 GiB to 16 TiB                                              | 32 GiB to 32,767 GiB                                         |
-| Online Storage scaling         | Supported                                                    | Supported                                                    | Not supported                                                |
-| Auto storage scaling           | Supported                                                    | *Not supported in preview*                                   | Not supported                                                |
-| Additional IOPs scaling        | Not Supported                                                | Supported                                                    | Not supported                                                |
-| Network Connectivity           | - Public endpoints with server firewall. - Private access with Private Link support. | - Public endpoints with server firewall. - Private access with Virtual Network integration. | - Public endpoints with server firewall. - Private access with Private Link support. |
-| Service-level agreement (SLA)  | 99.99% availability SLA                                      | *No SLA in preview*                                          | 99.99% using Availability Zones                              |
-| Operating system patching      | Automatic                                                    | Automatic with custom maintenance window control             | Managed by end users                                         |
-| MySQL patching                 | Automatic                                                    | Automatic with custom maintenance window control             | Managed by end users                                         |
-| High availability              | Built-in HA within single availability zone                  | Built-in HA within and across availability zones             | Custom managed using clustering, replication, etc.           |
-| Zone redundancy                | Not supported                                                | Supported                                                    | Supported                                                    |
-| Zone placement                 | Not supported                                                | Supported                                                    | Supported                                                    |
-| Hybrid scenarios               | Supported with Data-in Replication                           | *Not available in preview*                                   | Managed by end users                                         |
-| Read replicas                  | Supported (up to 5 replicas)                                 | Supported (up to 10 replicas)                                | Managed by end users                                         |
-| Backup                         | Automated with 7-35 days retention                           | Automated with 1-35 days retention                           | Managed by end users                                         |
-| Monitoring database operations | Supported                                                    | Supported                                                    | Managed by end users                                         |
-| Disaster recovery              | Supported with geo-redundant backup storage and cross region read replicas | *Not supported in preview*                                   | Custom Managed with replication technologies                 |
-| Query Performance Insights     | Supported                                                    | *Not available in preview*                                   | Managed by end users                                         |
-| Reserved Instance Pricing      | Supported                                                    | *Not available in preview*                                   | Supported                                                    |
-| Azure AD Authentication        | Supported                                                    | *Not available in preview*                                   | Not Supported                                                |
-| Data Encryption at rest        | Supported with customer managed keys                         | Supported with service managed keys                          | Not Supported                                                |
-| SSL/TLS                        | Enabled by default with support for TLS v1.2, 1.1 and 1.0    | Enforced with TLS v1.2                                       | Supported with TLS v1.2, 1.1 and 1.0                         |
-| Fleet Management               | Supported with Azure CLI, PowerShell, REST, and Azure Resource Manager | Supported with Azure CLI, PowerShell, REST, and Azure Resource Manager | Supported for VMs with Azure CLI, PowerShell, REST, and Azure Resource Manager |
+Let's examine Azure Database for MySQL in more detail.
 

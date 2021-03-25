@@ -10,6 +10,6 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/4-when-to-use-azure-database-for-mysql.md)]

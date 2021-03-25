@@ -15,58 +15,56 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following MySQL hosting solutions would be optimum if an administrator wants to implement zone redundant high-availability?"
     choices:
-    - content: ""
+    - content: "MySQL for Azure VMs"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This is not the optimum solution."
+    - content: "Azure Database for MySQL Single Server"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Single Server supports only a single zone for high-availability."
+    - content: "Azure Database for MySQL Flexible Server"
       isCorrect: true
-      explanation: ""
-  - content: ""
+      explanation: "Correct. This is the optimum solution."
+  - content: "An app developer requires version 5.6 of MySQL. Which of the following would be an appropriate hosting choice based on this requirement?"
     choices:
-    - content: ""
+    - content: "Azure Database for MySQL Flexible Server"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure Database for MySQL Flexible Server supports only versions 5.6, 5.7, and 8.0."
+    - content: "Azure Database for MySQL Single Server"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Azure Database for MySQL Single Server doesn't support version 5.6 "
+  - content: "Which of the following Azure Database for MySQL SKUs is most appropriate for low-cost development and low concurrency workloads?"
     choices:
-    - content: ""
+    - content: "General Purpose"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
+    - content: "Memory Optimized"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
+    - content: "Basic"
       isCorrect: true
-      explanation: ""
-  - content: ""
+      explanation: "Correct. This SKU is best suited for low-cost development and low concurrency workloads."
+  - content: "In terms of administrative effort, who is responsible for managing high-availability of a database hosted using Azure IaaS?"
     choices:
-    - content: ""
+    - content: "The database administrator."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. It's doubtful the database admin would have the required skills."
+    - content: "The operating system administrator for the hosting VM."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "In an IaaS environment, your organizational administrator is responsible for many components and features, including high-availability options."
+    - content: "Microsoft"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. In an IaaS environment, the hosting vendor doesn't manage high-availability options for your database."
+  - content: "Which of the following is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
     choices:
-    - content: ""
+    - content: "To avoid the time and expense of acquiring new on-premises hardware to host your database app."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. This is a valid consideration."
+    - content: "Online Storage scaling is required."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This feature is only available with Azure Database for MySQL."
+    - content: "Automatic backups are required."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. This is a feature of Azure Database for MySQL."
+      
