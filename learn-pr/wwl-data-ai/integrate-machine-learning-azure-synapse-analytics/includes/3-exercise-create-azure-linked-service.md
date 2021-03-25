@@ -2,7 +2,7 @@ The Synapse Analytics linked service authenticates with Azure Machine Learning u
 
 >**NOTE**
 >
->In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals).
+>In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 
 To view the service principal, open the Azure portal and navigate to your instance of the Azure Active directory. Select the `App registrations` **(1)** section, and you should see the `Azure Synapse Analytics GA Labs SUFFIX` **(2)** (`SUFFIX` in this example is 297032) application under the `Owned applications` tab.
 
@@ -12,11 +12,11 @@ Select the application to view its properties and copy the value of the `Applica
 
 ![Azure Active Directory application client ID](../media/service-principal-clientid.png)
 
-To view the secret, open the Azure Portal and navigate to the Azure Key Vault instance that has been created in your resource group. Select the `Secrets` **(1)** section, and you should see the `ASA-GA-LABS` **(2)** secret:
+To view the secret, open the Azure portal and navigate to the Azure Key Vault instance that has been created in your resource group. Select the `Secrets` **(1)** section, and you should see the `ASA-GA-LABS` **(2)** secret:
 
 ![Azure Key Vault secret for security principal](../media/keyvault-secret.png)
 
-First, you need to make sure the service principal has permission to work with the Azure Machine Learning workspace. Open the Azure Portal and navigate to the Azure Machine Learning workspace that has been created in your resource group. Select the `Access control (IAM)` **(1)** section on the left, then select `+ Add` **(2)** and `Add role assignment`. In the `Add role assignment` dialog, select the `Contributor` **(3)** role, select `Azure Synapse Analytics GA Labs SUFFIX` **(4)** (where `SUFFIX` is your unique suffix used during lab deployment) service principal, and then select `Save` (5).
+First, you need to make sure the service principal has permission to work with the Azure Machine Learning workspace. Open the Azure portal and navigate to the Azure Machine Learning workspace that has been created in your resource group. Select the `Access control (IAM)` **(1)** section on the left, then select `+ Add` **(2)** and `Add role assignment`. In the `Add role assignment` dialog, select the `Contributor` **(3)** role, select `Azure Synapse Analytics GA Labs SUFFIX` **(4)** (where `SUFFIX` is your unique suffix used during lab deployment) service principal, and then select `Save` (5).
 
 ![Azure Machine Learning workspace permissions for security principal](../media/mlworkspace-permissions.png)
 

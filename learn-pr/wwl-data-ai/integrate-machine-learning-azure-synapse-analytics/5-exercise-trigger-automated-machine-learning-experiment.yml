@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics.exercise-trigger-auto-ml-experiment-using-data-from-spark-table
-title: Exercise - Trigger an Auto ML experiment using data from a Spark table
+title: Exercise - Trigger an AutoML experiment using data from a Spark table
 metadata:
-  title: Exercise - Trigger an Auto ML experiment using data from a Spark table
-  description: "Exercise - Trigger an Auto ML experiment using data from a Spark table"
+  title: Exercise - Trigger an AutoML experiment using data from a Spark table
+  description: "Exercise - Trigger an AutoML experiment using data from a Spark table"
   ms.date: 03/25/2021
   author: wwlpublish
   ms.author: chtestao

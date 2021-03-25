@@ -1,4 +1,4 @@
-In this exercise, you will trigger the execution of an Auto ML experiment and view its progress in Azure Machine learning studio.
+In this exercise, you will trigger the execution of an AutoML experiment and view its progress in Azure Machine learning studio.
 
 To trigger the execution of a new AutoML experiment, select the `Data` hub and then select the `...` area on the right of the `saleconsolidated` Spark table to activate the context menu.
 
@@ -8,9 +8,9 @@ From the context menu, select `Enrich with new model` **(3)**.
 
 ![Machine Learning option in the context menu of a Spark table](../media/machine-learning-enrich-context-menu.png)
 
-The `Enrich with new model` dialog allow you to set the properties for the Azure Machine Learning experiment. Provide values as follows:
+The `Enrich with new model` dialog allows you to set the properties for the Azure Machine Learning experiment. Provide values as follows:
 
-- **Azure Machine Learning workspace (1)**: leave unchanged, should be automaticall populated with your Azure Machine Learning workspace name.
+- **Azure Machine Learning workspace (1)**: leave unchanged, should be automatically populated with your Azure Machine Learning workspace name.
 - **Experiment name**: leave unchanged, a name will be automatically suggested.
 - **Best model name**: leave unchanged, a name will be automatically suggested. Save this name as you will need it later to identify the model in the Azure Machine Learning Studio.
 - **Target column (2)**: Select `TotalQuantity(long)` - this is the feature you are looking to predict.
@@ -23,11 +23,11 @@ Notice the Apache Spark configuration details **(3)**:
 - The number of executors that will be used
 - The size of the executor
 
-Select `Continue` **(4)** to advance with the configuration of your Auto ML experiment.
+Select `Continue` **(4)** to advance with the configuration of your AutoML experiment.
 
 Next, you will choose the model type. In this case, the choice will be `Regression` **(1)** as we try to predict a continuous numerical value. After selecting the model type, select `Continue` **(2)** to advance.
 
-![Select model type for Auto ML experiment](../media/choose-model-type.png)
+![Select model type for AutoML experiment](../media/choose-model-type.png)
 
 On the `Configure regression model` dialog, provide values as follows:
 
@@ -40,17 +40,17 @@ Once you have set all the values, select `Create run (3)` to advance.
 
 ![Configure regression model](../media/regression-model-configuration.png)
 
-As your run is being submitted, a notification will pop up instructing you to wait until the Auto ML run is submited. You can check the status of the notification by selecting the `Notifications` icon on the top right part of your screen.
+As your run is being submitted, a notification will pop up instructing you to wait until the AutoML run is submitted. You can check the status of the notification by selecting the `Notifications` icon on the top-right part of your screen.
 
 ![Submit AutoML run notification](../media/submit-notification.png)
 
-Once your run is successfully submitted, you will get another notification that will inform you about the actual start of the Auto ML experiment run.
+Once your run is successfully submitted, you will get another notification that will inform you about the actual start of the AutoML experiment run.
 
 ![Started AutoML run notification](../media/started-notification.png)
 
 >**NOTE**
 >
->Alongside the `Create run` option you might have noticed the `Open in notebook option`. Selecting that option allows you to review the actual Python code that is used to submit the Auto ML run. As an exercise, try re-doing all the steps in this task, but instead of selecting `Create run`, select `Open in notebook`. You should see a notebook similar to this:
+>Alongside the `Create run` option you might have noticed the `Open in notebook option`. Selecting that option allows you to review the actual Python code that is used to submit the AutoML run. As an exercise, try re-doing all the steps in this task, but instead of selecting `Create run`, select `Open in notebook`. You should see a notebook similar to this:
 >
 >![Open AutoML code in notebook](../media/run-open-in-notebook.png)
 >

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.integrate-machine-learning-within-azure-synapse-analytics
 metadata:
-  title: ''
+  title: Integrate machine learning within Azure Synapse Analytics
   description: "Integrate machine learning within Azure Synapse Analytics"
   ms.date: 03/25/2021
   author: wwlpublish
@@ -13,7 +13,7 @@ summary: In this module, you will learn how you can build machine learning modul
 abstract: |
   In this module, you will:
   *   Describe Azure Machine Learning and how it integrates with an Azure Synapse Analytics workspace
-  *   Describe Azure Machine Learning Auto ML
+  *   Describe Azure Machine Learning AutoML
   *   Understand how to score machine learning models with PREDICT
 prerequisites: |
   - It is recommended that students understand how Azure Synapse Analytics and Azure Machine Learning Services works
