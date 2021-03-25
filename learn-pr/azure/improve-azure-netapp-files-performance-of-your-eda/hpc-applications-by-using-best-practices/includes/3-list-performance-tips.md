@@ -13,7 +13,7 @@
 
 We will list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
 
-Please note NFS client best practices are generally dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing.
+Note NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
