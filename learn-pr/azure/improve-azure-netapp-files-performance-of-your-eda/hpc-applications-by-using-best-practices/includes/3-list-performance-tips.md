@@ -13,7 +13,7 @@
 
 We will list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
 
-Note NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing.
+Note NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practice before deploying in production.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -34,11 +34,11 @@ Nocto stands for “no close-to-open,” which means that a file can close befor
 
 Most HPC applications, including EDA in our scenario, have relatively static data sets. In that case, nocto and actimeo can be used to reduce getattr/access operations to storage and speed up the application.
 
-For example, nocto and actimeo=600 is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there is no cache coherency to maintain and ti will eliminate metadata calls and improve the overall performance.
+For example, setting "nocto,actimeo=600" is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there is no cache coherency to maintain and it will eliminate metadata calls and improve the overall performance.
 
 ## Update /etc/sysctl.conf
 
-Some or all of the following system parameters may be helpful on Linux Client VMs for optimal performance. If you have clients with large amounts of RAM, or higher networking bandwidth like InfiniBand, you may want to set some values even higher than what is listed below.
+Some or all of the following system parameters may be helpful on Linux Client VMs for optimal performance. If you have client VMs with huge amounts of RAM, or higher networking bandwidth like InfiniBand, you may want to set some values even higher than what is listed below.
 
 ```bash
 #
@@ -118,12 +118,6 @@ The mount options wsize and rsize determine how much data is sent between the NF
 
 The best practice for Azure NetApp Files is to set rsize and wsize the same value. And it's generally recommended to set both rsize and wsize value as 262144 (256 K) in the mount options.
 
-Below an example to mount an Azure NetApp Files volume using actimeo & nocto, NFSv3, nconnect, rsize & size and using tcp.
-
-```bash
-sudo mount -t nfs -o rw,nconnect=16,nocto,actimeo=600,hard,rsize=262144,wsize=262144,vers=3,tcp 10.1.x.x:/ultravol ultravol
-```
-
 ## hard/soft & intr/nointr
 
 The "hard" or "soft" mount options specify whether the program using a file using NFS should stop and wait (hard) for the server to come back online if the NFS server is unavailable or if it should report an error (soft). The "intr" allows NFS processes to be interrupted when a mount is specified as a hard mount.
@@ -133,6 +127,14 @@ We recommend using "intr" with "hard" mounts whenever applicable.
 ## MTU (jumbo frames)
 
 The default MTU for Azure VMs is 1,500 bytes. And we don't encourage customers to increase VM MTUs.
+
+## Mount example
+
+Below an example to mount an Azure NetApp Files volume using actimeo & nocto, NFSv3, nconnect, rsize & size, hard & intr, tcp, and with default MTU (1,500).
+
+```bash
+sudo mount -t nfs -o rw,nconnect=16,nocto,actimeo=600,hard,intr,rsize=262144,wsize=262144,vers=3,tcp 10.1.x.x:/ultravol ultravol
+```
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
