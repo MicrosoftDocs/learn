@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection
+uid: learn.azure.introduction-data-protection-privacy.2-what-is-data-protection
 title: What is data protection?
 metadata:
   title: What is data protection?
   description: What is data protection?
-  ms.date: 11/10/2020
+  ms.date: 03/24/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial

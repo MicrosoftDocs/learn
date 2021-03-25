@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.azure.introduction-data-protection-and-privacy
+uid: learn.azure.introduction-data-protection-privacy
 metadata:
-  title: Introduction to data protection and privacy regulations
+  title: Intro to data protection and privacy regulations
   description: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
-  ms.date: 11/10/2020
+  ms.date: 03/24/2021
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to data protection and privacy regulations
+title: Intro to data protection and privacy regulations
 summary: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
 abstract: |
   After completing this module, you should understand more about:
@@ -35,13 +35,13 @@ products:
 - azure-active-directory
 - m365-information-protection
 units:
-- learn.azure.introduction-data-protection-and-privacy.1-introduction
-- learn.azure.introduction-data-protection-and-privacy.2-what-is-data-protection
-- learn.azure.introduction-data-protection-and-privacy.3-what-are-privacy-regulations
-- learn.azure.introduction-data-protection-and-privacy.4-common-data-protection-regulations-and-acts
-- learn.azure.introduction-data-protection-and-privacy.5-how-microsoft-support-protection-and-privacy
-- learn.azure.introduction-data-protection-and-privacy.6-security-privacy-compliance-options-in-azure
-- learn.azure.introduction-data-protection-and-privacy.7-knowledge-check
-- learn.azure.introduction-data-protection-and-privacy.8-summary
+- learn.azure.introduction-data-protection-privacy.1-introduction
+- learn.azure.introduction-data-protection-privacy.2-what-is-data-protection
+- learn.azure.introduction-data-protection-privacy.3-what-are-privacy-regulations
+- learn.azure.introduction-data-protection-privacy.4-common-data-protection-regulations-acts
+- learn.azure.introduction-data-protection-privacy.5-how-microsoft-support-protection-privacy
+- learn.azure.introduction-data-protection-privacy.6-security-privacy-compliance-options-in-azure
+- learn.azure.introduction-data-protection-privacy.7-knowledge-check
+- learn.azure.introduction-data-protection-privacy.8-summary
 badge:
-  uid: learn.azure.introduction-data-protection-and-privacy.badge
+  uid: learn.azure.introduction-data-protection-privacy.badge
