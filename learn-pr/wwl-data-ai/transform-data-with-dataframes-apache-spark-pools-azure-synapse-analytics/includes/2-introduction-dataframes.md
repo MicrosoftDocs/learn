@@ -3,7 +3,7 @@ Let's talk about dataframes.
 What are dataframes?
 
 Basically you could view DataFrames as you might see in excel.
-It's like a box with squares in it, that organizes data, which we could also refer to as table of data. 
+It's like a box with squares in it, that organizes data, which we could also refer to as a table of data. 
 
 What does a table of data mean?
 
@@ -19,10 +19,11 @@ These could become the variables or the column names for the shoes you put in th
 What would happen though, if you have thousands and thousands of drawers?
 
 A DataFrame creates a data structure and it's one of the core data structures in Spark. 
-In Spark, it is a distributed collection of that data that is organized into columns that have names. 
+In Spark, it is seen as a distributed collection of data that is organized into columns that have names. 
 
-What you see in Data Engineering is that you start with reading or loading data that can be unstructured, semi-structured, or structured, store it in a DataFrame and start transforming that data in order to get insights. 
-You can use different functionalities in order to do so like using Spark SQL, PySpark, and others. 
+What you see in Data Engineering is that you start with reading or loading data that can be unstructured, semi-structured, or structured, which is stored in a DataFrame and start transforming that data in order to get insights. 
+You can use different functionalities in order to do so, like using Spark SQL, PySpark, and others.
+ 
 Usually when you see 'df' in some code it refers to a dataframe. 
 
 You can either create your own dataframe as this example shows:

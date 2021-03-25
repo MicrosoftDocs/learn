@@ -2,7 +2,7 @@ Data backup and recovery is a necessary piece of the planning for any good infra
 
 **Azure Backup** is a _backup as a service_ offering that protects physical or virtual machines no matter where they reside: on-premises or in the cloud.
 
-Azure Backup can be used for a wide range of data backup scenarios, such as the following:
+Azure Backup can be used for a wide range of data backup scenarios, such as:
 
 - Files and folders on Windows OS machines (physical or virtual, local or cloud)
 - Application-aware snapshots (Volume Shadow Copy Service)
@@ -30,13 +30,13 @@ Traditional backup solutions don't always take full advantage of the underlying 
 
 - **Long-term retention**. Azure doesn't limit the length of time you keep the backup data.
 
-## Using Azure Backup
+## Use Azure Backup
 
-Azure Backup utilizes several components that you download and deploy to each computer you want to back up. The component that you deploy depends on what you want to protect.
+Azure Backup uses several components that you download and deploy to each computer you want to back up. The component that you deploy depends on what you want to protect.
 
 - Azure Backup agent
 - System Center Data Protection Manager
 - Azure Backup Server
 - Azure Backup VM extension
 
-Azure Backup uses a Recovery Services vault for storing the backup data. A vault is backed by Azure Storage blobs, making it a very efficient and economical long-term storage medium. With the vault in place, you can select the machines to back up and define a backup policy (when snapshots are taken and for how long they’re stored).
+Azure Backup uses a Recovery Services vault for storing the backup data. A vault is backed by Azure Storage blobs, making it a very efficient and economical long-term storage medium. With the vault in place, you can select the machines to back up, and define a backup policy (when snapshots are taken and for how long they’re stored).

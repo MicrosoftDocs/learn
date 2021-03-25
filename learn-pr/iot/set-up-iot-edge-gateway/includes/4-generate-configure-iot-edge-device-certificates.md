@@ -1,6 +1,6 @@
 We need to ensure that only authorized devices can publish data into the IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure the transmission channel back to our IoT Hub.
 
-[![security](../media/security.png)](../media/security.png#lightbox)
+[![Security Guard at Entrance](../media/security.png)](../media/security.png#lightbox)
 
 The process is similar to how we gain access into the physical manufacturing building.  
 
@@ -153,6 +153,9 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
      sudo vi /etc/iotedge/config.yaml
     ```
 
+    >[!NOTE]
+    > When editing yaml files, spaces are very important when working with nested entries. Be sure to pay attention to the spacing indicated in the examples below, in some sections there will be a mix of 0 and 2 spaces. If you receive any errors when restarting the iotedge service, double-check that proper spacing has been employed after making modifications to the config.yaml file. 
+
 1. Locate the **Certificate settings** section within the file, remove the leading `#` character before the certificate properties to uncomment those lines, then edit the certificate settings to contain the correct certificate and key paths. After changes are made, save the file and exit the editor.
 
     After the X.509 certificate settings changes have been made to the `config.yaml` file, this section of the file will look like the following entry:
@@ -198,8 +201,8 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 1. Within the **Cloud Shell**, run the following commands to download the `~/certificates` directory and its contents from the virtual machine to the **Cloud Shell** storage:
 
     ```bash
-     mkdir certificates
-     scp -r -p <username>@<DNSName>:~/certificates .
+     mkdir ~/certificates
+     scp -r -p <username>@<DNSName>:~/certificates ~/certificates
      ```
 
      Replace the `<username>` placeholder with the username of the admin user for the VM, and replace the `<DNSName>` placeholder with the **DNS Name** of the VM.
@@ -209,7 +212,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 1. Once the command has executed, it will have downloaded a copy of the `~/certificates` directory with the certificate and key files over SSH to the Cloud Shell storage. You can verify the file has been downloaded by running the `ls` command within the `~/certificates` directory to view its contents.
 
     ```bash
-     User@Azure:~$ cd certificates
+     User@Azure:~$ cd ~/certificates
      User@Azure:~/certificates$ ls
      certGen.sh  csr        index.txt.attr      index.txt.old  openssl_root_ca.cnf  serial
      certs       index.txt  index.txt.attr.old  newcerts       private              serial.old

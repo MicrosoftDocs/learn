@@ -11,7 +11,7 @@ Tools that are commonly used for day-to-day management and interaction include:
 
 The [Azure portal](https://portal.azure.com) is a public website that you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
 
-![Screenshot of the Azure portal showing the left-hand navigation and suggested Azure services](../media/2-azure-portal.png)
+![Screenshot of the Azure portal showing the left-hand navigation and suggested Azure services.](../media/2-azure-portal.png)
 
 The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles and displaying services you're interested in.
 
@@ -50,7 +50,7 @@ az vm create \
 
 [Azure Cloud Shell](https://shell.azure.com/) is an interactive, authenticated, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell.
 
-![Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window](../media/2-cloud-shell.png)
+![Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window.](../media/2-cloud-shell.png)
 
 You can switch between the two shells, and both support the Azure CLI and Azure PowerShell module. Bash defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell Core within Linux by typing `pwsh`. The PowerShell environment has both CLI tools pre-installed. In addition to these administrative tools, the Cloud Shell has a suite of developer tools, text editors, and other tools available, including:
 
@@ -91,7 +91,7 @@ We'll use the Cloud Shell in Microsoft Learn for many interactive exercises to t
 
 :::row:::
   :::column:::
-![Screenshot of the Azure mobile app running on a phone showing the Favorites listing of Azure resources](../media/2-azure-mobile-app.png)
+![Screenshot of the Azure mobile app running on a phone showing the Favorites listing of Azure resources.](../media/2-azure-mobile-app.png)
   :::column-end:::
   :::column span="3":::
 The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:

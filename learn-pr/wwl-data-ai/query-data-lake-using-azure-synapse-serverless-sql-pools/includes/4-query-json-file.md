@@ -1,4 +1,4 @@
-You can also query JSON files using SQL serverless. The query's objective is to read the following type of JSON files using **OPENROWSET**. 
+You can also query JSON files using serverless SQL pools. The query's objective is to read the following type of JSON files using **OPENROWSET**. 
 
 -	Standard JSON files where multiple JSON documents are stored as a JSON array. 
 -	Line-delimited JSON files, where JSON documents are separated with new-line character. Common extensions for these types of files are jsonl, ldjson, and ndjson.
@@ -60,7 +60,7 @@ from
 
 ```
 
-The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
+The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to set up [server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential)
 
 ## Define a data source
 
@@ -92,7 +92,7 @@ from
     ) with (doc nvarchar(max)) as rows
 ```
 
-If a data source is protected with SAS key or custom identity you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential)
+If a data source is protected with a SAS key or custom identity you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential)
 
 In the following sections, you can see how to query various types of JSON files.
 

@@ -130,4 +130,4 @@ Use the following images as guidance for the layout we'll create. We'll use a `S
 
 ## Rename the old MainPage.cs file
 
-* In the Solution Explorer pad, rename the original **MainPage.cs** file to `OldMainPage.cs` to make it obvious which file is no longer being used. You'll continue using this file for reference in a later exercise.
+In the Solution Explorer pad, rename the original **MainPage.cs** file to `OldMainPage.cs` to make it obvious which file is no longer being used. You'll continue using this file for reference in a later exercise.
