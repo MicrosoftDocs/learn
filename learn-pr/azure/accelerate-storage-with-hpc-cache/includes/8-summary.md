@@ -9,7 +9,11 @@
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
 TODO: restate the scenario problem
 -->
-You are a storage administrator at a digital animation studio which is releasing a movie soon. You need to accelerate storage so the studio can produce movie scenes faster.
+As a storage administrator at a digital animation studio, you needed to accelerate storage so the studio can produce movie scenes faster.
+
+We accelerated our storage and enabled us to complete our video renders in less time. HPC clients mounted the cache and were able to get the storage data faster. Because the clients didn't have to wait as long for on-premises storage, we were able to render more of our movie in less time.
+
+Artists, managers, and the director were able to review the scenes and give their approval. Rather than adding more on-prem capacity in our data center, we leveraged Azure resources to complete our movie and meet our deadline.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -24,9 +28,8 @@ You are a storage administrator at a digital animation studio which is releasing
         * Made sure all sentences used the active voice, which made your content more direct.
         * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
         * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
+ TODO: add your lead-in sentence(s)
+ TODO: add your list of techniques used to solve the scenario problem -->
 
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 
@@ -36,8 +39,7 @@ TODO: add your list of techniques used to solve the scenario problem
 
     Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
 
- -->
-TODO: describe the experience without the product
+ TODO: describe the experience without the product -->
 
 <!-- 4. Describe the business impact ----------------------------------------------------
 
@@ -46,8 +48,7 @@ TODO: describe the experience without the product
     Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
 
     Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
+ TODO: describe the business impact -->
 
 <!-- 5. References (optional) ----------------------------------------------------
 
@@ -65,7 +66,6 @@ TODO: describe the business impact
           * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
           * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
           * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-TODO: add an (optional) references section
+ TODO: add an (optional) references section -->
 
 <!-- Do not include any other content -->

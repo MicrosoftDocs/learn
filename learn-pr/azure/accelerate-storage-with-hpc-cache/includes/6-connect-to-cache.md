@@ -2,7 +2,18 @@ After the storage targets are successfully created, it's time to define the name
 
 ## Define Namespace
 
-TODO: Add steps for defining the namespace.
+A **namespace** is a path that clients use to access storage. Client machines will use a namespace to access the data in the cache instead of accessing the storage targets directly. You must create at least one namespace before clients can access the cache.
+
+To add a new namespace, click the Namespace option in the left navigation. Press the "Add namespace path" button at the top.
+
+1. The namespace path must begin with the slash character (`/`). You could use something like `/hpc-cache/nfs-1` for example.
+1. Select the client access policy for this path from the dropdown menu.
+1. Choose the storage target from the dropdown.
+1. Select the export path on that storage server.
+1. If needed, select an optional export subdirectory.
+1. Click OK.
+
+You can have up to 10 namespace paths for NFS storage targets.
 
 ## Client Requirements
 
