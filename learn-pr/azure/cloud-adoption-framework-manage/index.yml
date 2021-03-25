@@ -19,7 +19,7 @@ abstract: |
   - Partner with workload teams for richer decentralized operations
 prerequisites: |
   - Foundational understanding of cloud adoption
-  - Understanding of your organization’s operations management requirements
+  - Understanding of your organization's operations management requirements
 iconUrl: /learn/achievements/cloud-adoption-framework-manage.svg
 ratingEnabled: true
 levels:
@@ -29,7 +29,7 @@ roles:
 - business-analyst
 - business-owner
 - data-engineer
-- database-administrator 
+- database-administrator
 - developer
 - devops-engineer
 - functional-consultant
@@ -38,11 +38,11 @@ roles:
 - security-engineer
 - solution-architect
 - student
-- technology-manager 
+- technology-manager
 products:
 - azure
-- azure-monitor 
-- azure-arc 
+- azure-monitor
+- azure-arc
 - azure-resource-manager
 units:
 - learn.cloud-adoption-framework-manage.1-introduction

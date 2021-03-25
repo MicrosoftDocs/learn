@@ -1,6 +1,7 @@
 In this exercise and following exercises we are going to use an example throughout this module using Tailwind Traders. 
 However, it does require a set-up with instructions that can be found here:
 [Set up](https://github.com/ctesta-oneillmsft/asa-vtd) 
+
 The following use case will be used:
 
 Tailwind Traders has customer profile data from an e-commerce system that provides top product purchases for each visitor of the site (customer) over the past 12 months. This data is stored within JSON files in the data lake. They have struggled with ingesting, exploring, and transforming these JSON files and want your guidance. The files have a hierarchical structure that they want to flatten before loading into relational data stores. They also wish to apply grouping and aggregate operations as part of the data engineering process.

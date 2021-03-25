@@ -37,7 +37,7 @@ From the *Applications* folder, double-click the Visual Studio Code icon to star
 > 
 > If you choose this option, Visual Studio Code should open without any further issues.
 
-Alternatively, you can install Visual Studio Code by using a package manager such as [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)](https://code.visualstudio.com/docs/setup/linux).
+Alternatively, you can install Visual Studio Code by using a package manager such as [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)](https://code.visualstudio.com/docs/setup/linux?azure-portal=true).
 
 ::: zone-end
 

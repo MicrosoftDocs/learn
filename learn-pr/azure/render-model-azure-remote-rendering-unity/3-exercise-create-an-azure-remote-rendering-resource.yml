@@ -9,6 +9,7 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-an-azure-remote-rendering-resource.md)]

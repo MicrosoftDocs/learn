@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.hpc-storage-considerations.3-performance-considerations
-title: File system performance considerations
+title: File-system performance considerations
 metadata:
-  title: File system performance considerations
-  description: A discussion of the five performance factors that impact storage and how to determine what tools to use to determine your HPC workload's performance requirements
+  title: File-system performance considerations
+  description: A discussion of the five performance factors that affect storage and how to determine which tools to use to determine your HPC workload's performance requirements.
   ms.date: 12/29/2020
   author: scjescho
   ms.author: scjescho
@@ -15,22 +15,22 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Small block sizes will reduce performance your file sizes are:"
+  - content: "Small block sizes will reduce performance if your files are:"
     choices:
-    - content: "Small files"
+    - content: "Small"
       isCorrect: false
-      explanation: "Small block sizes combined with small file sizes will not impair performance"
-    - content: "Large Files"
+      explanation: "Incorrect. Small block sizes combined with small files won't reduce performance."
+    - content: "Large"
       isCorrect: true
-      explanation: "Small block sizes combined with large files results in lower performance due to breaking down large files to fit the smaller block size"
-  - content: "If you have a disk that supports 5000 IOPS and your block size is 4K, your total possible throughput is"
+      explanation: "Correct. Small block sizes combined with large files will reduce performance, because large files need to be broken down to fit the smaller block size."
+  - content: "If you have a disk that supports 5,000 IOPS and your block size is 4K, your total possible throughput is:"
     choices:
-    - content: "9 MB/s"
+    - content: "9 MBps"
       isCorrect: false
-      explanation: "5000 IOPS * 4K block size = 20 MB/s"
-    - content: "15 MB/s"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
+    - content: "15 MBps"
       isCorrect: false
-      explanation: "5000 IOPS * 4K block size = 20 MB/s"
-    - content: "20 MB/s"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
+    - content: "20 MBps"
       isCorrect: true
-      explanation: "5000 IOPS * 4K block size = 20 MB/s"
+      explanation: "5,000 IOPS * 4K block size = 20 MBps"
