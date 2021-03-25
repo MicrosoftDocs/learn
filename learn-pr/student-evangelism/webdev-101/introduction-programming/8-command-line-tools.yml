@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.webdev.intro-programming.8-command-line-tools
+metadata:
+  title: Command line tools
+  description: Learn about the command line and how to use it
+  ms.date: 03/24/2020
+  author: chloecodesthings
+  ms.author: chcondon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Command line tools
+durationInMinutes: 
+content: |
+  [!include[](includes/8-command-line-tools.md)]

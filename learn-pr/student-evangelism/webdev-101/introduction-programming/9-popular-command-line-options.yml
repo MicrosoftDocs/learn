@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.webdev.intro-programming.9-popular-command-line-options
+metadata:
+  title: Command line options
+  description: Learn more about the options available for use via the command line
+  ms.date: 03/24/2020
+  author: chloecodesthings
+  ms.author: chcondon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Command line options
+durationInMinutes: 
+content: |
+  [!include[](includes/9-popular-command-line-options.md)]
