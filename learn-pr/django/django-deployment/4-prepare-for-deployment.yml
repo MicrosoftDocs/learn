@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.4-prepare-for-deployment
 metadata:
-  title: Prepare your application for deployment
+  title: Exercise - Prepare your application for deployment
   description: Let's walk through the necessary steps to deploy our application.
   ms.date: 03/01/2021 
   author: GeekTrainer

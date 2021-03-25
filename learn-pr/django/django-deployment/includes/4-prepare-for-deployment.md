@@ -9,7 +9,7 @@ You'll use two new libraries for your project:
 
 Install those libraries in your project:
 
-1. In **Visual Studio Code**, open *requirements.txt*.
+1. In Visual Studio Code, open *requirements.txt*.
 1. Add the following code to the end of *requirements.txt*.
 
     ```text
@@ -26,9 +26,9 @@ Install those libraries in your project:
 
 ## Create a production settings file
 
-Two core settings, `ALLOWED_HOSTS` and `DATABASES`, need to be set to different values depending on the environment that hosts the application. The default settings are designed for development. To run your app in production, ensure these settings are updated properly.
+The values you assign to two core settings, `ALLOWED_HOSTS` and `DATABASES`, depend on the environment that hosts the application. The default settings are designed for development. To run your app in production, ensure these settings are updated properly.
 
-`ALLOWED_HOSTS` controls the servers allowed to host or run your application. You'll configure it to allow the site to run from Azure and locally. `DATABASES` contains the list of available connection strings.
+`ALLOWED_HOSTS` controls the servers that are allowed to host or run your application. You'll configure it to allow the site to run from Azure and locally. `DATABASES` contains the list of available connection strings.
 
 A common way to configure the settings is to create a second Python file that contains the collection of settings for production. Then a flag in *manage.py* reads the appropriate file. 
 
@@ -111,7 +111,7 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
 
 ## Configure your app to use the production settings file
 
-Now that you've the production settings file, you can update your application to load the file in production. Do this by looking for the `WEBSITE_HOSTNAME` environmental variable. This variable indicates the application is running on Azure.
+Now that you've created the production settings file, you can update your application to load the file in production. Start by looking for the `WEBSITE_HOSTNAME` environmental variable. This variable indicates the application is running on Azure.
 
 1. Open *settings.py*.
 1. Add the following code to the end of the file to override the necessary settings when the app runs in production.
@@ -123,4 +123,4 @@ Now that you've the production settings file, you can update your application to
 
 1. Save all files by selecting **File** > **Save all**.
 
-You have now configured a Django application for production.
+You've now configured a Django application for production.

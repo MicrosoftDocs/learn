@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.django.deployment.6-deploy-azure
 metadata:
-  title: Deploy to Azure
+  title: Exercise - Deploy to Azure
   description: Let's deploy our application!
   ms.date: 03/01/2021 
   author: GeekTrainer
