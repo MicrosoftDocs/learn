@@ -10,6 +10,7 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 
 1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
 1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+1. Use `pip` to install the [Cognitive Services Speech SDK](https://pypi.org/project/azure-cognitiveservices-speech/) package.
 
 ### C#
 
