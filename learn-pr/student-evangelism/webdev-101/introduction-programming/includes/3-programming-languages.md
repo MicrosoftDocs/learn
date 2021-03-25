@@ -1,10 +1,10 @@
-Programming languages serve a main purpose: for developers to build instructions to send to a device. Devices only can understand binary (1s and 0s), and for most developers that's not a very efficient way to communicate. Programming languages are a vehicle for communication between humans and computers.
+Programming languages serve a main purpose: for developers to build instructions to send to a device. Devices only can understand binary (1 s and 0s), and for most developers that's not an efficient way to communicate. Programming languages are a vehicle for communication between humans and computers.
 
 Programming languages come in different formats and may serve different purposes. For example, JavaScript is primarily used for web applications, while Bash is primarily used for operating systems.
 
-Low level languages typically require fewer steps than high level languages for a device to interpret instructions. However, what makes high level languages popular is its readability and support. JavaScript is considered a high level language.
+Low-level languages typically require fewer steps than high-level languages for a device to interpret instructions. However, what makes high-level languages popular is its readability and support. JavaScript is considered a high-level language.
 
-The following code illustrates the difference between a high level language with JavaScript and low level language with ARM assembly code.
+The following code illustrates the difference between a high-level language with JavaScript and low-level language with ARM assembly code.
 
 ```javascript
 let number = 10
