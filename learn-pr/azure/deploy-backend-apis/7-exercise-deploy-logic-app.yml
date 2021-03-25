@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-backend-apis.7-deploy-logic-app
+uid: learn.azure.deploy-backend-apis.7-exercise-deploy-logic-app
 title: Exercise - Deploy Azure Logic Apps
 metadata:
   unitType: exercise
@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-deploy-logic-app.md)]
+  [!include[](includes/7-exercise-deploy-logic-app.md)]
