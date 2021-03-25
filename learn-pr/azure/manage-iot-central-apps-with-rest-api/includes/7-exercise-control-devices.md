@@ -66,7 +66,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-t
 
 ## Set a cloud property
 
-The cloud property REST APIs are currently in preview.
+*The cloud property REST APIs are currently in preview.*
 
 The refrigerated truck device template specified a **Last maintenance date** cloud property in the solution model:
 

@@ -4,7 +4,7 @@ You want to create an IoT Central application to test integration with your flee
 
 In this unit, you'll use an Azure CLI control plane operation to create an IoT Central application from the **Custom application** template. You'll then use the IoT Central REST API for the data plane operations that operate on your application.
 
-To make the REST API calls, this module uses the `az rest` command. For each command you can see the request URL, the method (`get`, `put`, `patch`, or `delete`), and any JSON body. Some commands use the `--query` argument to format the response for readability.
+To make the REST API calls, this module uses the `az rest` command in a sandbox environment so that you don't need to install any tools on your local machine. For each command you can see the request URL, the method (`get`, `put`, `patch`, or `delete`), and any JSON body. Some commands use the `--query` argument to format the response for readability. If you prefer, you can use your own GUI-based tool such as [Postman](https://www.postman.com/) to make the API calls.
 
 The IoT Central REST API currently has some generally available (GA) operations, and some that are in preview. If the request URL includes `api/v1`, it's a GA operation. If the request URL includes `api/preview`, the operation is in preview.
 
@@ -29,10 +29,18 @@ The following steps create an IoT Central application and generate an API token 
       --name $APP_NAME --sku ST2 --location centralus \
       --subdomain $APP_NAME --template iotc-pnp-preview \
       --display-name 'Fleet management'
-    echo "To view the application, you can navigate to: https://$APP_NAME.azureiotcentral-ppe.com"
     ```
 
+    If this is the first time you use a command from the [azure-iot extension](https://docs.microsoft.com/cli/azure/ext/azure-iot/?view=azure-cli-latest), the extension installs automatically.
+
     Expect this command to take a minute or two to run.
+
+1. Run the following command to see a list of the IoT Central applications in your subscription:
+
+    ```azurecli
+    az iot central app list -o table \
+    --query "[].{DisplayName:displayName, Subdomain:subdomain}"
+    ```
 
 1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instructions to complete the login process:
 

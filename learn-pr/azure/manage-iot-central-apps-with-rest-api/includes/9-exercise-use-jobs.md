@@ -1,5 +1,7 @@
 To manage the devices connected to your application in bulk, you use the jobs REST APIs.
 
+*The jobs REST APIs are currently in preview.*
+
 You want to enable your existing fleet management application to manage jobs in your IoT Central application programmatically.
 
 In this unit, you create and run a job that reboots all the refrigerated truck devices. When the job completes, you check the results for any failed devices. If any devices fail, you fix the issue and rerun the job.
