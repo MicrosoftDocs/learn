@@ -33,7 +33,7 @@ Let's look closely at some key parts of this resource definition.
 > [!TIP]
 > Resource names often have rules that you have to follow, like maximum lengths, allowed characters, and being unique across all of Azure. It's a good idea to test your Bicep template so you can see if your names are valid.
 
-## Defining multiple resources
+## Defining interdependent resources
 
 A Bicep template usually includes several different resources. Often, you'll need a resource to depend on another resource. This might be because you have to extract some information from one resource to be able to define another. Or, if you're deploying a web application, you have to create the physical server infrastructure before you can add an application to it. These relationships are called _dependencies_.
 
