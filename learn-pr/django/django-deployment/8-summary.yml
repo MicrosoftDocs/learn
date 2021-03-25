@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.django.deployment.8-summary
+uid: learn.django.deployment.summary
 metadata:
   title: Summary
-  description: We saw how to deploy our application to production!
+  description: You saw how to deploy your application to production.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar

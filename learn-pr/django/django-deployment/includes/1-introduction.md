@@ -7,7 +7,7 @@ In this module, you'll learn how to:
 - Configure an application for production.
 - Install an extension in Visual Studio Code.
 - Use the Azure Databases extension to create a PostgreSQL database.
-- Use the App Services extension to deploy a website to Azure.
+- Use the App Service extension to deploy a website to Azure.
 - Run migrations on a database hosted in Azure.
 
 ## Prerequisites

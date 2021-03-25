@@ -34,7 +34,7 @@ code .
 
 You'll follow the best practice of working with [virtual environments](https://docs.python.org/3/tutorial/venv.html?azure-portal=true) for this project:
 
-1. In Visual Studio Code, open the terminal by selecting **View** > **Terminal**.
+1. In **Visual Studio Code**, open the terminal by selecting **View** > **Terminal**.
 1. In the **Terminal** pane, run the following commands to create and activate a virtual environment.
 
     ```bash

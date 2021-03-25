@@ -48,7 +48,7 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
     ```
 
     > [!NOTE]
-    > Azure App Services automatically creates an environmental variable named `WEBSITE_HOSTNAME`. This variable contains the URL for your website. You can use this variable to determine whether your application is running on Azure.
+    > Azure App Service automatically creates an environmental variable named `WEBSITE_HOSTNAME`. This variable contains the URL for your website. You can use this variable to determine whether your application is running on Azure.
 
 1. Add the following code to configure the database connection string for PostgreSQL.
 

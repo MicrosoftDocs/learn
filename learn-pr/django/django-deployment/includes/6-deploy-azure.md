@@ -12,7 +12,7 @@ Start by installing the Azure App Service extension in Visual Studio Code:
 
     ![Screenshot showing the Extensions icon.](../media/extensions-icon.png)
 
-1. In the **Search Extensions** field, type *App Services*.
+1. In the **Search Extensions** field, type *App Service*.
 1. Under **Azure App Service**, select **Install**.
 
 The extension is installed.
@@ -101,7 +101,7 @@ Your server will now be created! This process will take a few minutes.
 
 ## Configure application settings
 
-While your database server is being created, configure the App Service you set up earlier. App Services uses the application settings to configure environmental variables. Settings are a convenient way to store information you shouldn't put in your code, such as database connection strings.
+While your database server is being created, configure the App Service you set up earlier. App Service uses the application settings to configure environmental variables. Settings are a convenient way to store information you shouldn't put in your code, such as database connection strings.
 
 1. Under **App Service**, expand the sandbox subscription. Then expand your application.
 1. To create the first application setting, right-click **Application Settings** and then select **Add New Setting**.
@@ -109,7 +109,7 @@ While your database server is being created, configure the App Service you set u
     ![Screenshot showing how to add a new setting.](../media/add-setting.png)
 
 1. In the first field, enter the name *DBUSER*.
-1. In the second dialog, enter the value *shelter_admin*.
+1. In the second field, enter the value *shelter_admin*.
 1. Repeat the preceding steps to create the remaining settings:
 
     Name       | Value
@@ -122,11 +122,11 @@ While your database server is being created, configure the App Service you set u
     > [!NOTE]
     > Replace the **DBHOST** and **DBPASS** values with the ones you created earlier in this exercise. For **SECRET_KEY**, create a new password.
 
-All the necessary environmental variables are now created on your App Service.
+All the necessary environmental variables are now created on your app service.
 
 ## Create the database
 
-Now that you've configured App Service, and created the server, you can create the database.
+Now that you've configured App Service and created the server, you can create the database.
 
 1. Under **Databases**, expand the sandbox subscription.
 1. Right-click the name of your database server and select **Create Database**.
@@ -135,11 +135,11 @@ Now that you've configured App Service, and created the server, you can create t
 
 1. Enter *shelters*.
 
-Your database will be created!
+Your database will be created.
 
 ## Create the schema and superuser
 
-The last step to your deployment is to set up the database. In local development, you run `python manage.py migrate` and `python manage.py createsuperuser` to create the database schema and superuser. On Azure, you'll do the same. 
+The last step in the deployment is to set up the database. In local development, you run `python manage.py migrate` and `python manage.py createsuperuser` to create the database schema and superuser. On Azure, you'll do the same. 
 
 You'll connect to the web server in Azure by using Secure Shell (SSH). You can make the connection in Visual Studio Code.
 
@@ -147,7 +147,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
 
     ![Screenshot of the menu for SSH.](../media/ssh.png)
 
-    An SSH connection will now be made to your web server in Azure. This process might take a few minutes. A terminal pane appears inside Visual Studio Code. This terminal is your SSH connection to your web server.
+    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server.
 
     > [!IMPORTANT]
     > If you receive an error message stating you need to enable SSL for the database, ensure you created all environmental variables correctly.
@@ -171,21 +171,21 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     python manage.py createsuperuser
     ```
 
-1. Provide a **name**, **email**, and **password** for the superuser.
+1. Provide a **name**, **email** address, and **password** for the superuser.
 1. After you create your superuser, run the command `exit` to close the connection.
 
 Your database is now configured in Azure, and you have a superuser for your site.
 
-## Browse to your site
+## Go to your site
 
 Now that you've deployed and configured everything, you can view your website on Azure.
 
 In the **App Service** extension, right-click the name of your site, and then select **Browse Website**.
 
-![Screenshot showing where to select Browse Sebsite.](../media/browse-website.png)
+![Screenshot showing where to select Browse Website.](../media/browse-website.png)
 
 Your website now appears.
 
-Because you deployed your SQLite database, your site should already contain data. If you try to go to location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
+Because you deployed your SQLite database, your site should already contain data. If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
 
-You have now deployed a website to Azure!
+You've now deployed a website to Azure!

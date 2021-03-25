@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.django.deployment.2-setup-exercise
+uid: learn.django.deployment.setup-exercise
 metadata:
   title: Exercise - Get the starter
-  description: To streamline this module, we provided a starter project you can use.
+  description: To streamline your experience in this module, we provided a starter project for you.
   ms.date: 03/01/2021 
   author: GeekTrainer
   ms.author: chrhar
