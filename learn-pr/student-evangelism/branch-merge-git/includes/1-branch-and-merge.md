@@ -1,46 +1,50 @@
-You're a web developer trying to learn more about Git for work. You've created a simple HTML and CSS website about cats to practice your skills and have been working on it with your friends, Alice and Bob. As your project progresses, you realize you'd like for everyone to be able to work on more than one task at a time without getting in one another's way. You need a way to keep everyone's work separate so new development doesn't get in the way of existing bugfixes.
+You're a web developer trying to learn more about Git for your job. You've created a simple HTML and CSS website that features cat photos to practice your Git skills, and you've been working on it with your friends, Alice and Bob. 
 
-_Branches_ make this easy. The work done "on a branch" doesn't have to be shared, and it doesn't interfere with other branches. Branches let you keep the commits related to each topic together and in isolation, making changes easy to review and track. Modern software development is done almost entirely in branches. The goal is to keep "master" (the main branch) clean until the work is ready to check in. Then you push your changes to "master," or better yet, submit a pull request for the merge.
+As your project progresses, you realize that you'd like everyone to be able to work on more than one task at a time without getting in the way of another person's work. You need a way to keep everyone's work separate, so new development doesn't get in the way of existing bug fixes. In Git, *branches* make this kind of collaboration easy.
 
-One of Git's advantages over older version-control systems is that creating a branch is extremely fast; it amounts to writing a 40-character hash into a file under ".git/heads." Switching branches is also fast, because Git stores whole files and just unzips them rather than trying to reconstruct them from lists of changes. Merging in Git isn't _quite_ that simple, but it's straightforward and often completely automatic. Let's learn what branches are, how they're used, and how they work.
+The work done on a branch doesn't have to be shared, and it doesn't interfere with work done on other branches. Branches let you keep commits related to each topic together and isolated from other work, so changes made to a topic are easy to review and track. 
 
-## Understanding branches
+Modern software development is done almost entirely in branches. The goal is to keep the main branch clean until the work is ready to check in. Then, you push your changes to the main branch, or better yet, submit a pull request to merge the changes.
 
-A _branch_ is simply a chain of commits "branching off" from the main line of development, like a branch on a tree.
+An advantage Git has over earlier version control systems (VCSs) is that with Git, creating a branch is extremely fast; it amounts to writing a 40-character hash into a file under `.git/heads`. Switching branches is also fast, because Git stores whole files and unzips them instead of trying to reconstruct them from lists of changes. Merging in Git isn't *quite* as simple, but it's straightforward and often completely automatic. 
 
-If you are switching to Git from another version-control system, you may be accustomed to slightly different terminology. Subversion, for example, calls its main branch "trunk". Git calls it "master." You can rename "master," just as you can rename any other branch, and some teams do this when switching to Git from other version-control systems.
+Let's learn what branches are, how they're used, and how they work.
 
-A branch usually starts with a commit on "master." It grows a separate history chain as commits are added. Eventually its changes can be merged back into "master." You will learn to do that shortly.
+## Branch structure and naming
 
-Suppose you branch off of "master." Here's how to visualize what happens:
+A *branch* is simply a chain of commits that branch off from the main line of development, like a branch on a tree.
 
-```diagram
-master:  A---B---C---D
-              \
-branch:        E---F---G
-```
+If you're switching to Git from another VCS, you might be accustomed to slightly different terminology. The VCS Subversion names its default branch `trunk`, while Git names it `master`. You can rename the default branch, just as you can rename any other branch. In this module, we name the default branch `main`.
 
-Each capital letter in the diagram represents a commit. Branches are given names such as "add-authentication" and "fix-css-bug," and branches can have branches of their own. The ultimate goal is to let developers do what they need to do without stepping on one another, and to wind up with a "master" branch representing the best efforts of everyone involved.
+A branch usually starts with a commit on the default branch, in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch and merge them into the `main` branch.
 
-## Creating and switching branches with `git branch` and `git checkout`
+Suppose you branch off the `main` branch. Here's how to visualize what happens:
 
-A common reason to create a new branch is to make changes to an existing feature. A branch for this purpose would commonly be called a _topic branch_ or _feature branch_.
+:::image type="content" source="../media/branch-tree.png" alt-text="A diagram that shows the relationship of the main branch and local branches.":::
 
-You can create a new branch with the `git branch` command, and switch between branches with the `git checkout` command.
+Each capital letter in the diagram represents a commit. Branches have names like `add-authentication` and `fix-css-bug`, and branches can have branches of their own. The ultimate goal is to let developers do what they need to do without stepping on one another and to end up with a main branch that represents the best efforts of everyone involved.
 
-You have already encountered `checkout` as a way of replacing files in the working tree by getting them from the index. With no paths in the argument list, `checkout` updates *everything* in the working tree and the index to match the specified commit — in this case, the head of the branch.
+## Create and switch branches (git branch and git checkout)
 
-## Merging branches with `git merge`
+A common reason to create a new branch is to make changes to an existing feature. A branch for this purpose would commonly be called a *topic branch* or *feature branch*.
 
-Once you've finalized some work, like a feature or bug fix, in a branch, you'll want to _merge_ that branch back into the "master" branch. You can use the `git merge` command to merge a given branch into your current branch.
+You can create a new branch by using the `git branch` command. Switch between branches by using the `git checkout` command.
 
-For example, if you were working in a branch called **my-feature**, the workflow would look like:
+You've already encountered `checkout` as a way of replacing files in the working tree by getting them from the index. With no paths in the argument list, `checkout` updates *everything* in the working tree and the index to match the specified commit—in this case, the head of the branch.
+
+## Merge branches (git merge)
+
+When you've finalized some work in a branch, perhaps a feature or a bug fix, you'll want to *merge* that branch back into the main branch. You can use the `git merge` command to merge a specific branch into your current branch.
+
+For example, if you were working in a branch named `my-feature`, the workflow would look like this example:
 
 ```bash
-# switch back to master branch
-git checkout master
-# merge my-feature branch into master
+# Switch back to the main branch
+git checkout main
+
+# Merge my-feature branch into main
 git merge my-feature
+
 ```
 
-After using these commands (and resolving any _merge conflicts_, which we will discuss later), all the changes from your **my-feature** branch would be in **master**.
+After using these commands and resolving any *merge conflicts* (we'll discuss merge conflicts later in this module), all the changes from your `my-feature` branch would be in `main`.
