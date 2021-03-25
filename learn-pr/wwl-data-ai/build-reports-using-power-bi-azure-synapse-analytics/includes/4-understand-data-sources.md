@@ -1,4 +1,4 @@
-Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. There is a large number of varied data sources availabie for Power BI reports, encompassing:
+Power BI reports can connect to a number of data sources. Depending on how data is used, different data sources are available. There is a large number of varied data sources available for Power BI reports, encompassing:
 
 * Online services (Salesforce, Dynamics 365, others)
 * Databases (SQL Server, Access, Amazon Redshift, others)

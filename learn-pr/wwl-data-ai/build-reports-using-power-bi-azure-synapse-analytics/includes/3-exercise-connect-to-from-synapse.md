@@ -43,7 +43,7 @@
     | Name **(1)**           | _enter `handson_powerbi`_   |
     | Workspace name **(2)** | _select `synapse-training`_ |
 
-    ![The form is displayed.](../media/new-linked-service-power-bi-form.png "New linked service")
+    ![A form is displayed.](../media/new-linked-service-power-bi-form.png "New linked service")
 
 5. Select **Create (3)**.
 

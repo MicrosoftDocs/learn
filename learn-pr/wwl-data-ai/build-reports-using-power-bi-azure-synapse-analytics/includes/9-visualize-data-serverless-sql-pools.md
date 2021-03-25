@@ -1,4 +1,4 @@
-1. In the [Azure Portal](https://portal.azure.com), navigate to your Synapse Workspace. In the **Overview (1)** tab, **copy** the **Serverless SQL endpoint (2)**:
+1. In the [Azure portal](https://portal.azure.com), navigate to your Synapse Workspace. In the **Overview (1)** tab, **copy** the **Serverless SQL endpoint (2)**:
 
     ![Identify endpoint for Serverless SQL endpoint.](../media/serverless-sql-endpoint.png "Serverless SQL endpoint")
 
@@ -90,4 +90,4 @@
 
 17. Select the **`synapse-sql-serverless`** report. You should be able to view and edit this report as well.
 
-    ![The report is embedded in Synapse Studio.](../media/data-synapse-sql-serverless-report.png "Report")
+    ![Another example of a report embedded in Synapse Studio.](../media/data-synapse-sql-serverless-report.png "Report")
