@@ -39,7 +39,7 @@ The reference architectures below illustrate how you can use Azure NetApp Files 
 
 ## Client VMs and NFS utility versions
 
-It's always the best practice to run the latest OS patch version available, as well as updating the NFS utilities to their latest releases to get the newest bug fixes and feature functionality, to optimal performance and system stability.
+It's always the best practice to run the latest OS patch version available, and updating the NFS utilities to their latest releases to get the newest bug fixes and feature functionality, to optimal performance and system stability.
 
 ## Accelerate Networking and VNET
 

@@ -11,9 +11,9 @@
 
 # Goal
 
-In this session, we will examine the benchmarking results to verify the performance tips we just discussed.
+In this session, we'll examine the benchmarking results to verify the performance tips we just discussed.
 
-We will focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We will also show FIO results to examine some performance practice.
+We'll focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practice.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ We will focus on using SPEC SFS® benchmark suite to spawn multi-threads, to sim
 
 SPEC SFS® suite is a standard industry benchmark for electronic design automation (EDA). Typical EDA workload consists of functional and physical phases. The functional phase predominately drives random I/O and filesystem metadata operations, while the physical phase drives large block sequential reads and writes.
 
-FIO is an I/O tool which can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of storage target.
+FIO is an I/O tool, which can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of storage target.
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ The graph below demonstrates the I/O and latency curves, examining some combinat
 - sysctl tuned
 - nconnect=16
 
-You will see the I/O (operations per second) will boost and still maintaining low latency (less than 1 millisecond) when all the above three were applied.
+You'll see the I/O (operations per second) will boost and still maintaining low latency (less than 1 millisecond) when all the above three were applied.
 
 ![SPEC EDA Results (1)](../media/specedaresults1.png)
 
@@ -59,7 +59,7 @@ The graph below demonstrates that NFS3 performs much better than NFS 4.1
 
 ![SPEC EDA NFS3 versus NFS4.1](../media/specedanfs.png)
 
-The graph below demonstrates that rsize=wsize=262144(256K) performs better than other settings.
+The graph below demonstrates that rsize=wsize=262144(256 K) performs better than other settings.
 
 ![SPEC EDA rsize/wsize](../media/specedarsizewsize.png)
 
@@ -81,7 +81,7 @@ fio --name=64kseqreads --rw=read --direct=1 --ioengine=libaio --bs=64k --numjobs
 fio --name=64kseqwrites --rw=write --direct=1 --ioengine=libaio --bs=64k --numjobs=4 --iodepth=128 --size=4G --runtime=600 --group_reporting
 ```
 
-The two graphs below demonstrate that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS and throughput. 
+The two graphs below demonstrate that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS and throughput.
 
 ![FIO IOPS](../media/fioiops.png)
 

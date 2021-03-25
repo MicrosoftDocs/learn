@@ -33,7 +33,7 @@ Azure NetApp Files has been proven to be a great managed storage solution in var
 
 ## Scenario
 
-Suppose you're a member of a semiconductor company, tasked with designing their IC Chips, which needs numerous EDA (Electronic Design Automation) simulation. You don't have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs.
+Suppose you're a member of a semiconductor company, tasked with designing their IC Chips, which need numerous EDA (Electronic Design Automation) simulations. You don't have sufficient capacity on premises for this project and so will be using Azure for those HPC simulation needs.
 
 Management would like this project to be completed in a timely and cost-effective manner. You choose Azure NetApp Files as the back-end storage solution as it provides an on-premises-like experience and performance.
 
