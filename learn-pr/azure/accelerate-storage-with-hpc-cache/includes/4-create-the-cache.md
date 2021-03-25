@@ -4,6 +4,8 @@ Azure HPC Cache is created in the Azure Portal. From the portal, type HPC in the
 
 On the Basics page, begin by selecting the Azure subscription where you want to run your HPC Cache. Assuming you set up a custom DNS server, select the resource group with that server.
 
+![Diagram showing the Basics tab of the Azure HPC Cache creation wizard.](../media/hpc-cache-basics-tab.png)
+
 Provide a name for your cache. There are restrictions for the characters that can be used in cache names. For example, spaces are not permitted so use a hyphen instead. A commonly-used convention is to enter company-location-cache for the name like microsoft-atlanta-cache.
 
 - Choose an Azure region that is closest to your data. Azure HPC Cache is only available in specific regions.
@@ -16,6 +18,8 @@ Provide a name for your cache. There are restrictions for the characters that ca
 At the top of the Cache page, there’s a link where you can learn more about appropriately sizing your Azure HPC Cache. In summary, you want to choose a size that can store the working set of your data. For example, your storage may have 100 TB of data but your HPC workload only reads about 8 TB of data. In this case, you want to create an HPC Cache that can store at least 8 TB of data.
 
 Begin by choosing a maximum throughput. Higher throughput values correspond to faster and more expensive resources.
+
+![Diagram showing the Cache tab of the Azure HPC Cache creation wizard.](../media/hpc-cache-cache-tab.png)
 
 The cache size is dependent on the maximum throughput. The greater the throughput, the greater the available cache sizes. In the previous example, we needed 8 TB of cache. To accommodate this workload, choose a cache size of 12 TB.
 
@@ -36,6 +40,8 @@ At the bottom of the page, click the “Next: Review + Create” button to move 
 ## Review + Create
 
 On this page, an automated validation check is performed. This check verifies that the information provided on the previous pages will create a valid cache. If the validation check fails, red circles will appear above the pages that need attention. If the validation check passes, the Create button becomes available.
+
+![Diagram showing the Review and Create tab of the Azure HPC Cache creation wizard.](../media/hpc-cache-review-and-create-tab.png)
 
 Before creating your cache, review the information on this page. Confirm that the information has been entered correctly and understand the costs associated with using the cache. If changes need to be made, click on the page tabs at the top to return to those pages. Update the fields and return to the Review + Create page.
 
