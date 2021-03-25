@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.data-classification-and-data-protection.6-what-ms-cloud-app-security
+uid: learn.azure.data-classification-and-data-protection.6-what-microsoft-cloud-app-security
 title: What is Microsoft Cloud App Security?
 metadata:
   title: What is Microsoft Cloud App Security?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-what-ms-cloud-app-security.md)]
+  [!include[](includes/6-what-microsoft-cloud-app-security.md)]
