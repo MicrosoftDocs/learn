@@ -13,9 +13,6 @@ During the process, you:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-> [!CAUTION]
-> DEVELOPMENT NOTE: The sandbox isn't yet activated for this module. [Please start the sandbox in this module instead.](/learn/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp) Once the sandbox is going, you can close that page and follow the instructions on this module instead.
-
 ## Create a Bicep template with a storage account
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
