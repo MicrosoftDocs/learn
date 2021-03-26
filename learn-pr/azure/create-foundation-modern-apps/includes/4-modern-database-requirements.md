@@ -12,7 +12,7 @@ TODO: add your topic sentences(s)
 
 ## Modern applications require modern databases
 
-TODO: Dive deeper into some of the requirements of databases to support modern applications
+TODO: Dive deeper into some of the requirements of databases to support modern applications generally
 
 ## Azure SQL Database as the modern database of choice
 

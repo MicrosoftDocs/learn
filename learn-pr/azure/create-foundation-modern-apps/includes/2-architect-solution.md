@@ -13,6 +13,9 @@ Catching the bus can be a frustrating task. You might find yourself running to c
 Modern day challenges make opportunities for modern applications. Let's dive deeper into this scenario and how you might architect a solution leveraging various Azure services.
 
 :::image type="content" source="../media/2-enterprise-security.png" alt-text="Diagram of enterprise-class security." border="false":::
+## Challenges with catching the bus
+
+TODO
 
 ## Solution components
 
