@@ -32,10 +32,10 @@ quiz:
       explanation: "The `siteName` parameter has a _default value_ specified, which means that deployments don't have to specify the parameter value. If they don't, the parameter's default value will be used."
     - content: "The `siteName` parameter will have a different default value every time the template is deployed."
       isCorrect: false
-      explanation: "The parameter's default value is set using the `uniqueString()` function, and this has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
+      explanation: "The parameter's default value is set using the `uniqueString()` function, which has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
     - content: "When the template is deployed to the same resource group in the same subscription repeatedly, the `siteName` parameter's default value will be the same each time."
       isCorrect: true
-      explanation: "The default value of the `siteName` parameter uses the `uniqueString()` function, and this has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
+      explanation: "The default value of the `siteName` parameter uses the `uniqueString()` function, which has been seeded with the ID of the resource group. This means that the value returned by the `uniqueString()` function will be the same whenever the template is deployed the same resource group in the same Azure subscription."
   - content: "The Bicep template written by the IT department has two modules in it. Which of these statements is true?"
     choices:
     - content: "If an output is added to one of the modules, it will automatically be available to whoever executes the template deployment without them making any changes to the parent template."
