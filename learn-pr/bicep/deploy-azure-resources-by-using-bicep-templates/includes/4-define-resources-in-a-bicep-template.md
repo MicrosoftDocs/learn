@@ -16,9 +16,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 > [!IMPORTANT]
 > To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
 
-> [!CAUTION]
-> TODO: images are not correct!
-
 ## Create a Bicep template with a storage account
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
@@ -250,7 +247,7 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
     :::image type="content" source="../media/4-storage.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. Select **`storage`** to see what resources were deployed, and then click **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
+1. Select the deployment that begins with **`storage`** to see what resources were deployed, and then click **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
 
     :::image type="content" source="../media/4-storage-details.png" alt-text="Azure portal interface for the specific deployment with one storage account resource listed." border="true":::
 
@@ -267,7 +264,8 @@ In the previous task, you learned how to create a template with a single resourc
      name: 'MyAppServicePlan'
      location: 'eastus'
      sku: {
-       name: 'S1'
+       name: 'F1'
+       tier: 'Free'
      }
    }
 
@@ -326,10 +324,10 @@ New-AzResourceGroupDeployment `
 
 1. Notice that both deployments are in the list.
 
-    :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-addapp-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
 
-1. Select **`addapp`**.
+2. Select the deployment that begins with **`addapp`**, then click **Deployment details** to expand the list of deployed resources.
 
-    :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/4-addapp-details.png" alt-text="Azure portal interface for the specific deployment with storage account App Service resources listed." border="true":::
 
-1. Notice that the App Service plan and app have been deployed.
+3. Notice that the App Service plan and app have been deployed.

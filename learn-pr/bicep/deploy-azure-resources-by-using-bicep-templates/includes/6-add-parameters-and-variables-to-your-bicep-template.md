@@ -17,9 +17,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 > [!IMPORTANT]
 > To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
 
-> [!CAUTION]
-> TODO: images are not correct!
-
 ## Add the `location` and resource name parameters
 
 1. In the *main.bicep* file in Visual Studio Code, add the following to the top of the file:
@@ -54,7 +51,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
      name: appServicePlanName
      location: location
      sku: {
-       name: 'S1'
+       name: 'F1'
+       tier: 'Free'
      }
    }
 
@@ -86,7 +84,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    ```bicep
    var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-   var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'S1'
+   var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+   var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
    ```
 
    Notice you're setting these variables' values by using the ternary operator to evaluate an if-then-else condition.
@@ -111,6 +110,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
      location: location
      sku: {
        name: appServicePlanSkuName
+       tier: appServicePlanTierName
      }
    }
 
@@ -169,10 +169,10 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 1. Notice that all three of the deployments are in the list.
 
-    :::image type="content" source="../media/4-addstorage-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/6-addparams-deployment.png" alt-text="Azure portal interface for the deployments with the three deployments listed and succeeded statuses." border="true":::
 
-1. Select **`addparams`**.
+2. Select the deployment that begins with **`addparams`**, then click **Deployment details** to expand the list of deployed resources.
 
-    :::image type="content" source="../media/4-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true"::: <!-- TODO image -->
+    :::image type="content" source="../media/6-addparams-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-1. Notice that the resources have been deployed using new, randomly generated, names.
+3. Notice that the resources have been deployed using new, randomly generated, names.
