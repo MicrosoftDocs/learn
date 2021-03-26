@@ -14,7 +14,8 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![The Datasets tab is selected in My Workspace, and the VehicleAnomalies dataset is highlighted.](../media/power-bi-my-workspace.png "Datasets")
 
-    > **Note:** It can take several minutes for the dataset to appear. Periodically, you may need to refresh the page before you see the Datasets tab.
+    > [!Note]
+    > It can take several minutes for the dataset to appear. Periodically, you may need to refresh the page before you see the Datasets tab.
 
 5. You should see a new blank report for VehicleAnomalies with the field list on the far right.
 

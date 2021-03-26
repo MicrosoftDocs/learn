@@ -12,7 +12,7 @@ In this exercise, you configure an Azure Stream Analytics output for Power BI an
 
     ![The Authorize button is highlighted in the New Output blade.](../media/stream-analytics-new-output-authorize.png 'New Output')
 
-4. When prompted, sign in to your Power BI account, which is the same username and password you were provided with and used to login to the Azure Portal.
+4. When prompted, sign in to your Power BI account, which is the same username and password you were provided with and used to log in to the Azure portal.
 
     ![The Power BI sign-in form is displayed.](../media/power-bi-sign-in.png 'Power BI Sign In')
 
@@ -28,7 +28,7 @@ In this exercise, you configure an Azure Stream Analytics output for Power BI an
     - **Dataset name:** Enter "ContosoAutoVehicleAnomalies".
     - **Table name:** Enter "Alerts".
 
-    ![The New Output form is filled out with the previously mentioned settings entered into the appropriate fields.](../media/stream-analytics-new-output.png 'New Output')
+        ![The New Output form is filled out with the previously mentioned settings entered into the appropriate fields.](../media/stream-analytics-new-output.png 'New Output')
 
 7. Select **Save** on the bottom of the form when you have finished entering the values.
 
@@ -49,6 +49,6 @@ In this exercise, you configure an Azure Stream Analytics output for Power BI an
     - **Username:** Enter `asa.sql.admin`
     - **Password:** Enter the SQL admin password value you entered when deploying the lab environment.
 
-    ![The New Output form is filled out with the previously mentioned settings entered into the appropriate fields.](../media/synapse-new-output.png "New Output")
+        ![The New Output form filled out with the previously mentioned settings entered into the appropriate fields.](../media/synapse-new-output.png "New Output")
 
 3. Select **Save** on the bottom of the form when you have finished entering the values.

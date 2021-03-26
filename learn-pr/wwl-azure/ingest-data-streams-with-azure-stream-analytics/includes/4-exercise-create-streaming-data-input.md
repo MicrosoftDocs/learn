@@ -20,6 +20,6 @@ In this exercise, you configure [Azure Event Hubs](https://docs.microsoft.com/az
     - **Event Hub policy name:** Select **Use existing**, then select **Read**.
     - Leave all other values at their defaults.
 
-    ![The New Input form is filled out with the previously mentioned settings entered into the appropriate fields.](../media/stream-analytics-new-input.png "New Input")
+        ![The New Input form is filled out with the previously mentioned settings entered into the appropriate fields.](../media/stream-analytics-new-input.png "New Input")
 
 4. Select **Save** on the bottom of the form when you have finished entering the values.

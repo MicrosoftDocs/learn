@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2021
+  ms.date: 03/26/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "A windowing function that groups events by identical timestamp values."
       isCorrect: false
       explanation: "Incorrect. A windowing function that groups events by identical timestamp values describes a Snapshot window."
-  - content: "Which of the following services is _NOT_ a valid **input** for an Azure Stream Analytics job?"
+  - content: "Which of the following services is an invalid **input** for an Azure Stream Analytics job?"
     choices:
     - content: "Blob storage"
       isCorrect: false
@@ -35,10 +35,7 @@ quiz:
     - content: "Azure Event Hubs"
       isCorrect: false
       explanation: "Incorrect. Azure Event Hubs is a supported input source for Azure Stream Analytics jobs and can ingest real-time streaming data."
-    - content: "IoT Hubs"
-      isCorrect: false
-      explanation: "Incorrect. IoT is one of the supported input sources for Azure Stream Analytics jobs and can ingest real-time streaming data from IoT devices and sensors."
-  - content: "Which of the following is _NOT_ one of the key benefits of using Azure Stream Analytics to process streaming data?"
+  - content: "Below is a list of key benefits of using Azure Stream Analytics to process streaming data. Which of the following statements is incorrect?"
     choices:
     - content: "The ability to write and test transformation queries in the Azure portal"
       isCorrect: false
@@ -49,6 +46,3 @@ quiz:
     - content: "Integration with Azure Blob storage"
       isCorrect: true
       explanation: "Correct. Integration with Azure Blob storage is not one of the primary benefits of using Azure Stream Analytics to process _streaming_ data. The integration with Blob storage can be used to process _static_ data."
-    - content: "Previewing and visualizing incoming data directly in the Azure portal"
-      isCorrect: false
-      explanation: "That is not the correct answer. The ability to preview and visualize incoming data directly in the Azure portal is a primary benefit is using Stream Analytics to process streaming data."

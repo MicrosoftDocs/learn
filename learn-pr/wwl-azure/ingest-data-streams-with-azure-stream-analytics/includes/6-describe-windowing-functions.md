@@ -77,7 +77,7 @@ FROM Clickstream TIMESTAMP BY ClickTime
 GROUP BY Username, SessionWindow(minute, 2, 60) OVER (PARTITION BY Username)
 ```
 
-Note the query above also defines a partitioning key of `Username`. Partition keys result in the events being grouped by the key, and the session window is applied to each group independently. This grouping is useful for cases where you need different session windows for disparate users or devices. The partitioning defined in the query above means each `Username` is tracked in an independent session window. For each window, this query will generate output that contains the `Username`, the start time of the window (`WindowStart`), the end of the window (`WindowEnd`), and the total duration of the user session (`DurationInSeconds`).
+The query above also defines a partitioning key of `Username`. Partition keys result in the events being grouped by the key, and the session window is applied to each group independently. This grouping is useful for cases where you need different session windows for disparate users or devices. The partitioning defined in the query above means each `Username` is tracked in an independent session window. For each window, this query will generate output that contains the `Username`, the start time of the window (`WindowStart`), the end of the window (`WindowEnd`), and the total duration of the user session (`DurationInSeconds`).
 
 ## Snapshot
 
