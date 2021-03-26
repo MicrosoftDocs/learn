@@ -48,4 +48,18 @@ quiz:
         - content: "JmsTemplate"
           isCorrect: true
           explanation: "JmsTemplate is a helper object that simplifies the JMS functionality."
+    - content: "From which of the following JMS message brokers can you lift and shift my existing Java applications to Azure Service Bus?"
+      choices:
+        - content: "Active MQ"
+          isCorrect: false
+          explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
+        - content: "IBM MQ"
+          isCorrect: false
+          explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
+        - content: "TIBCO EMS"
+          isCorrect: false
+          explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
+        - content: "All of the above/any JMS message broker."
+          isCorrect: true
+          explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
 
