@@ -14,7 +14,7 @@ content: |
   Choose the best response for each question. Then select **Check your answers**.
 quiz: 
   questions: 
-    - content: "What setting maintains the list of server names which are allowed to host your application?"
+    - content: "What setting maintains the list of server names that are allowed to host your application?"
       choices:
       - content: "`SECRET_KEY`"
         isCorrect: false
@@ -25,7 +25,7 @@ quiz:
       - content: "`DATABASES`"
         isCorrect: false
         explanation: Incorrect. `DATABASES` maintains the list of database connection strings.
-    - content: In what section of Azure App Services did you change the Python version for the Django project?
+    - content: In what section of Azure App Service did you change the Python version for the Django project?
       choices:
       - content: Extensions
         isCorrect: true
@@ -35,15 +35,15 @@ quiz:
         explanation: 'Incorrect. You used the Deployment Center to set up and deploy the Django project.'
       - content: Web App
         isCorrect: false
-        explanation: 'Incorrect. You used the Web App section at the beginning of the process to create the Django project in Azure App Services.'
-    - content: What Django utility is used to create and update the database schema?
+        explanation: 'Incorrect. You used the Web App section at the beginning of the process to create the Django project in Azure App Service.'
+    - content: What Django tool is used to create and update the database schema?
       choices:
       - content: makemigrations
         isCorrect: false
-        explanation: 'Incorrect. makemigrations creates migration scripts but does not run them.'
+        explanation: "Incorrect. The makemigrations tool creates migration scripts but doesn't run them."
       - content: sqlmigrate
         isCorrect: false
-        explanation: 'Incorrect. sqlmigrate creates SQL scripts but does not run them.'
+        explanation: "Incorrect. The sqlmigrate tool creates SQL scripts but doesn't run them."
       - content: migrate
         isCorrect: true
-        explanation: 'Correct. migrate creates or updates the database schema.'
+        explanation: 'Correct. The migrate tool creates or updates the database schema.'
