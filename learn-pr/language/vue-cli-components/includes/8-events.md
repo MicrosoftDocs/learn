@@ -72,7 +72,7 @@ methods: {
 
 Listening to an event emitted by a component is similar to listening to events raised by normal HTML controls. You typically create a method in the parent component, and then you connect the method to the event by using the same `@<event-name>` syntax as you would for `@click` or other events. If the event returns any data, it will be passed as parameters to the function.
 
-To add an event handler for the `userUpdated` event that you created earlier, you can use the following code. Notice how Vue.js will convert from a camel-case name into a kebab-case name.
+To add an event handler for the `userUpdated` event that you created earlier, you can use the following code. Notice how Vue.js will convert from a camelCase name into a kebab-case name.
 
 ```html
 <template>
