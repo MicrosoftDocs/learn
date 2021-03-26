@@ -348,7 +348,7 @@ groups:
   title: Choose an automation platform
   prompt: Choose an automation platform
   pivots:
-    - id: azure-devops
-      title: Azure DevOps
     - id: github-actions
       title: GitHub Actions
+    - id: azure-devops
+      title: Azure DevOps
