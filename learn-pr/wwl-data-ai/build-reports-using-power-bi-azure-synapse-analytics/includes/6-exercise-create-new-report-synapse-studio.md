@@ -80,7 +80,8 @@
     ) T
     ```
 
-    > Note that this step will take at least 40-60 seconds to execute since it submits the query directly on the Synapse SQL Pool connection.
+    > [!Note]
+    > This step will take at least 40-60 seconds to execute since it submits the query directly on the Synapse SQL Pool connection.
 
 8. Select **Close & Apply** on the topmost left corner of the editor window to apply the query and fetch the initial schema in the Power BI designer window.
 
@@ -99,6 +100,7 @@
 
     ![Configure chart properties.](../media/power-bi-configure-line-chart.png "Configure visualization")
 
+    > [!Note]
     > It will take around 40-60 seconds for the visualization to render due to the live query execution on the Synapse dedicated SQL pool.
 
 11. Switching back to Azure Synapse Studio, you can check the query executed while configuring the visualization in the Power BI Desktop application. Open the **Monitor** hub, and under the **Activities** section, open the **SQL requests** monitor. Make sure you select **SQLPool01** in the Pool filter, as by default, SQL on-demand is selected.

@@ -11,11 +11,11 @@ You can connect to all sorts of different data sources when using Power BI Deskt
 
 You can get data from any of the data sources in Power BI by selecting **Get Data** in the bottom-left corner of the page.
 
-![Screenshot of Get Data, showing it in lower left of Power B I service screen.](../media/power-bi-getdata-navigation-link.png) 
+![Screenshot of Get Data, showing it in lower left of Power B I service screen.](../media/power-bi-get-data-navigation-link.png) 
 
 After you select **Get Data**, you can choose the data you want to access
 
-![Screenshot of the Get Data choices, showing the options to choose the data you want to access.](../media/power-bi-getdata-startscreen.png)
+![Screenshot of the Get Data choices, showing the options to choose the data you want to access.](../media/power-bi-get-data-start-screen.png)
 
 For import, when using **Get Data** in Power BI Desktop to connect to a data source like SQL Server, the behavior of that connection is as follows:
 
