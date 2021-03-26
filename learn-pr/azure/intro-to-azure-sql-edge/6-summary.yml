@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-xxx.6-summary  
+uid: learn.intro-to-azure-sql-edge.6-summary  
 title: Summary  
 metadata:
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 03/14/2021  
+  ms.date: 03/26/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 

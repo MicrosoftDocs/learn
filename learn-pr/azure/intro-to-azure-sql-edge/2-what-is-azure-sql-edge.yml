@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-xxx.2-what-is-xxx  
-title: What is xxx  
+uid: learn.intro-to-azure-sql-edge.2-what-is-azure-sql-edge  
+title: What is Azure SQL Edge?  
 metadata:
   unitType: learning-content  
-  title: What is xxx 
-  description: What is xxxn
-  ms.date: 03/14/2021  
+  title: What is Azure SQL Edge? 
+  description: What is Azure SQL Edge?
+  ms.date: 03/26/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 

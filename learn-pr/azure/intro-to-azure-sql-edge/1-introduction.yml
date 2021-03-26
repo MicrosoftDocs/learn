@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-xxx.1-introduction  
-title: Introduction to xxx
+uid: learn.intro-to-azure-sql-edge.1-introduction  
+title: Introduction to Azure SQL Edge
 metadata:
   unitType: introduction  
-  title: Introduction to xxx
-  description: xxx
-  ms.date: 03/14/2021  
+  title: Introduction to Azure SQL Edge
+  description: xxx << copy from index
+  ms.date: 03/26/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
