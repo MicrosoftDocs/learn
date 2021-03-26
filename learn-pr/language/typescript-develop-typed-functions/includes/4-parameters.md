@@ -45,7 +45,7 @@ You can also assign default values to optional parameters. If a value is passed 
 In this example, `x` is required and `y` is optional. If value is not passed to `y`, the default value is `25`.
 
 ```typescript
-function addNumbers (x: number, y: 25): number {
+function addNumbers (x: number, y = 25): number {
    return x + y;
 }
 
