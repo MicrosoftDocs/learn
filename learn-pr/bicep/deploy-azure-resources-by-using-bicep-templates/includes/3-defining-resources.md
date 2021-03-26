@@ -44,12 +44,13 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   name: 'MyAppServicePlan'
   location: 'eastus'
   sku: {
-    name: 'S1'
+    name: 'F1'
+    tier: 'Free'
   }
 }
 ```
 
-This resource definition is telling Bicep that you want to deploy an App Service plan (which has the resource type `Microsoft.Web/serverFarms`) named `MyAppServicePlan` into the East US region, and use a pricing tier of S1.
+This resource definition is telling Bicep that you want to deploy an App Service plan (which has the resource type `Microsoft.Web/serverFarms`) named `MyAppServicePlan` into the East US region, and use a pricing SKU of F1.
 
 Now that you've declared the App Service plan, the next step is to declare the app:
 

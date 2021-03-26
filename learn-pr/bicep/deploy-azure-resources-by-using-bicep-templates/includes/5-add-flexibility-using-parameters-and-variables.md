@@ -155,7 +155,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 Your toy company has decided they will use your templates to deploy the resources for all of their new products. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
 
 - In production environments, storage accounts must be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans must be deployed using the `P2_v3` SKU for higher performance.
-- In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the `S1` SKU, to save cost.
+- In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the `F1` SKU, to save cost.
 
 One way to implement these business requirements would be to use parameters to specify each SKU. However, this can become difficult to maintain when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
 
@@ -175,7 +175,8 @@ Next, you can create variables that determine the best SKUs to use for the stora
 
 ```bicep
 var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
-var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'S1'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
+var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 ```
 
 Notice we're also using some new syntax here. Let's break it down:
@@ -186,7 +187,7 @@ Notice we're also using some new syntax here. Let's break it down:
 So these rules can be translated to:
 
 - For the `storageAccountSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _Standard_GRS_ SKU, else use the _Standard_LRS_ SKU.
-- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _P2_v3_ SKU, else use the _S1_ SKU.
+- For the `appServicePlanSkuName` variable, if the `environmentType` parameter is set to 'prod' then use the _P2_v3_ SKU and the _PremiumV3_ tier, else use the _F1_ SKU.
 
 > [!TIP]
 > When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions into the resource properties. This makes your templates easier to read and understand, since it avoids cluttering your resource definitions with business logic.
