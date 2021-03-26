@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2021
+  ms.date: 03/26/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "Define `enable_onnx_compatible_models` as `False` in `AutoMLConfig`."
       isCorrect: false
-      explanation: "Correct. Setting the *enable_onnx_compatible_models* parameter to TRUE helps to produce an ONNX format model."
+      explanation: "Incorrect. Setting the *enable_onnx_compatible_models* parameter to FALSE will not help to produce an ONNX format model."
     - content: "Enable ONNX model compatibility on the portal during enrichment model configuration."
       isCorrect: true
       explanation: "Correct. ONNX model compatibility will make sure the model supports ONNX."

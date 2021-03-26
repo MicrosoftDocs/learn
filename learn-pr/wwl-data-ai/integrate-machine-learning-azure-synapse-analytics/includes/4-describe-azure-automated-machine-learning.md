@@ -15,7 +15,7 @@ Data scientists, analysts, and developers across industries can use automated ML
 
 ### Classification
 
-Classification is a common machine learning task. Classification is a type of supervised learning in which models learn using training data and apply those learnings to new data. Azure Machine Learning offers featurizations specifically for these tasks, such as deep neural network text featurizers for classification. Learn more about [featurization options]([how-to-configure-auto-features.md#featurization](https://docs.microsoft.com/azure/machine-learning/how-to-configure-auto-features#featurization)).
+Classification is a common machine learning task. Classification is a type of supervised learning in which models learn using training data and apply those learnings to new data. Azure Machine Learning offers featurizations specifically for these tasks, such as deep neural network text featurizers for classification.
 
 The main goal of classification models is to predict which categories new data will fall into based on learnings from its training data. Common classification examples include fraud detection, handwriting recognition, and object detection. Learn more and see an example at [Create a classification model with automated ML](https://docs.microsoft.com/azure/machine-learning/tutorial-first-experiment-automated-ml).
 
@@ -49,7 +49,7 @@ The following diagram illustrates this process.
 
 ## Guidance on local vs. remote managed ML compute targets
 
-The web interface for automated ML always uses a remote [compute target](concept-compute-target.md).  When combined with Azure Synapse, experiments can be run on the Spark pool inside Synapse Analytics. When you are not running your experiment on Azure Machine Learning's compute resources, the execution environment is considered local compute.
+The web interface for automated ML always uses a remote compute target  When combined with Azure Synapse, experiments can be run on the Spark pool inside Synapse Analytics. When you are not running your experiment on Azure Machine Learning's compute resources, the execution environment is considered local compute.
 
 * **Local compute**: Training occurs on your local laptop, or VM compute.
 * **Remote compute**: Training occurs on Machine Learning compute clusters.  

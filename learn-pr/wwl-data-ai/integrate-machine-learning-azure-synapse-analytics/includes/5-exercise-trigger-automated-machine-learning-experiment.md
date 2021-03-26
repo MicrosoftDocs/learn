@@ -48,15 +48,12 @@ Once your run is successfully submitted, you will get another notification that 
 
 ![Started AutoML run notification](../media/started-notification.png)
 
->**NOTE**
->
->Alongside the `Create run` option you might have noticed the `Open in notebook option`. Selecting that option allows you to review the actual Python code that is used to submit the AutoML run. As an exercise, try re-doing all the steps in this task, but instead of selecting `Create run`, select `Open in notebook`. You should see a notebook similar to this:
->
->![Open AutoML code in notebook](../media/run-open-in-notebook.png)
->
->Take a moment to read through the code that is generated for you.
+> [!NOTE]
+> Alongside the `Create run` option you might have noticed the `Open in notebook option`. Selecting that option allows you to review the actual Python code that is used to submit the AutoML run. As an exercise, try re-doing all the steps in this task, but instead of selecting `Create run`, select `Open in notebook`. You should see a notebook similar to this:
+> [![Open AutoML code in notebook](../media/run-open-in-notebook.png)](../media/run-open-in-notebook.png#lightbox)
+> Take a moment to read through the code that is generated for you.
 
-To view the experiment run you just started, open the Azure Portal, select your resource group, and then select the Azure Machine Learning workspace from the resource group.
+To view the experiment run you just started, open the Azure portal, select your resource group, and then select the Azure Machine Learning workspace from the resource group.
 
 ![Open Azure Machine Learning workspace](../media/select-open-aml-workspace.png)
 
@@ -64,13 +61,13 @@ Locate and select the `Launch studio` button to start the Azure Machine Learning
 
 In Azure Machine Learning Studio, select the `Automated ML` **(1)** section on the left and identify the experiment run you have just started. Note the experiment name, the `Running status` **(2)**, and the `local` **(3)** compute target.
 
-![AutoML experiment run in Azure Machine Learning Studio](../media/aml-experiment-run.png)
+[![AutoML experiment run in Azure Machine Learning Studio](../media/aml-experiment-run.png)](../media/aml-experiment-run.png#lightbox)
 
 The reason why you see `local` as the compute target is because you are running the AutoML experiment on the Spark pool inside Synapse Analytics. From the point of view of Azure Machine Learning, you are not running your experiment on Azure Machine Learning's compute resources, but on your "local" compute resources.
 
 Select your run, and then select the `Models` tab to view the current list of models being built by your run. The models are listed in descending order of the metric value (which is `Spearman correlation` in this case), the best ones being listed first.
 
-![Models built by AutoML run](../media/aml-run-details.png)
+[![Models built by AutoML run](../media/aml-run-details.png)](../media/aml-run-details.png#lightbox)
 
 Select the best model (the one at the top of the list) then click on `View Explanations` to open the `Explanations (preview)` tab to see the model explanation. You are now able to see the global importance of the input features. For your model, the feature that influences the most the value of the predicted value is   `ProductId`.
 

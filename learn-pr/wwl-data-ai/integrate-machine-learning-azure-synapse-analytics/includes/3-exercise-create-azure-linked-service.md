@@ -1,8 +1,7 @@
 The Synapse Analytics linked service authenticates with Azure Machine Learning using a service principal. The service principal is based on an Azure Active Directory application named `Azure Synapse Analytics GA Labs` and has already been created for you by the deployment procedure. The secret associated with the service principal has also been created and saved in the Azure Key Vault instance, under the `ASA-GA-LABS` name.
 
->**NOTE**
->
->In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+> [!NOTE]
+> In this example, the Azure AD application is used in a single Azure AD tenant, which means it has precisely one service principal associated with it. Consequently, we will use the terms Azure AD application and service principal interchangeably. For a detailed explanation of Azure AD applications and security principles, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 
 To view the service principal, open the Azure portal and navigate to your instance of the Azure Active directory. Select the `App registrations` **(1)** section, and you should see the `Azure Synapse Analytics GA Labs SUFFIX` **(2)** (`SUFFIX` in this example is 297032) application under the `Owned applications` tab.
 
@@ -14,17 +13,17 @@ Select the application to view its properties and copy the value of the `Applica
 
 To view the secret, open the Azure portal and navigate to the Azure Key Vault instance that has been created in your resource group. Select the `Secrets` **(1)** section, and you should see the `ASA-GA-LABS` **(2)** secret:
 
-![Azure Key Vault secret for security principal](../media/keyvault-secret.png)
+[![Azure Key Vault secret for security principal](../media/keyvault-secret.png)](../media/keyvault-secret.png#lightbox)
 
 First, you need to make sure the service principal has permission to work with the Azure Machine Learning workspace. Open the Azure portal and navigate to the Azure Machine Learning workspace that has been created in your resource group. Select the `Access control (IAM)` **(1)** section on the left, then select `+ Add` **(2)** and `Add role assignment`. In the `Add role assignment` dialog, select the `Contributor` **(3)** role, select `Azure Synapse Analytics GA Labs SUFFIX` **(4)** (where `SUFFIX` is your unique suffix used during lab deployment) service principal, and then select `Save` (5).
 
-![Azure Machine Learning workspace permissions for security principal](../media/mlworkspace-permissions.png)
+[![Azure Machine Learning workspace permissions for security principal](../media/mlworkspace-permissions.png)](../media/mlworkspace-permissions.png#lightbox)
 
 You are now ready to create the Azure Machine Learning linked service.
 
 To create a new linked service, open your Synapse workspace, open Synapse Studio, select the `Manage` hub **(1)**, select `Linked services` **(2)**, and then select `+ New` **(3)**. In the search field from the `New linked service` dialog, enter `Azure Machine Learning` **(4)**. Select the `Azure Machine Learning` **(5)** option and then select `Continue` **(6)**.
 
-![Create new linked service in Synapse Studio](../media/new-linked-service.png)
+[![Create new linked service in Synapse Studio](../media/new-linked-service.png)](../media/new-linked-service.png#lightbox)
 
 In the `New linked service (Azure Machine Learning)` dialog, provide the following properties:
 
@@ -37,11 +36,11 @@ In the `New linked service (Azure Machine Learning)` dialog, provide the followi
 - AKV linked service **(6)**: make sure your Azure Key Vault service is selected.
 - Secret name: enter `ASA-GA-LABS` **(7)**.
 
-![Configure linked service in Synapse Studio](../media/configure-linked-service.png)
+[![Configure linked service in Synapse Studio](../media/configure-linked-service.png)](../media/configure-linked-service.png#lightbox)
 
 Next, select `Test connection` **(8)** to make sure all settings are correct and select `Create` **(9)**. The Azure Machine Learning linked service will now be created in the Synapse Analytics workspace.
 
->**IMPORTANT**
+>[!IMPORTANT]
 >
 >The linked service is not complete until you publish it to the workspace. Notice the indicator near your Azure Machine Learning linked service. To publish it, select `Publish all` and then `Publish`.
 
@@ -62,7 +61,7 @@ df_consolidated = df.groupBy('ProductId', 'TransactionDate', 'Hour').agg(f.sum('
 df_consolidated.write.mode("overwrite").saveAsTable("default.SaleConsolidated")
 ```
 
->**NOTE**:
+>[!NOTE]
 >
 >Replace `<data_lake_account_name>` with the actual name of your Synapse Analytics primary data lake account.
 
