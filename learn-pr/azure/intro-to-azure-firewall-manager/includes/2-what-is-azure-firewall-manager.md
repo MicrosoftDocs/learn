@@ -2,11 +2,11 @@ Let's start with a definition and overview about core features of Firewall Manag
 
 ## What is centralized firewall management?
 
-Centralized firewall management means managing multiple firewalls simultaneously. If you have multiple firewalls, it can become challenging to maintain them individually. If your security needs change, you might need to reconfigure all your firewalls to ensure their settings are in sync. Similarly, if your security needs expand, you might need to update all of your firewalls. Using Firewall Manager simplifies  firewall management.
+Centralized firewall management means managing multiple firewalls simultaneously. It can be challenging to maintain multiple firewalls individually. As your security needs change, you might need to reconfigure all your firewalls to ensure their settings are in sync. Similarly, if your security needs expand, you might need to update all of your firewalls. Using Firewall Manager simplifies  firewall management.
 
 ## Firewall Manager definition
 
-Azure Firewall is a fully managed, cloud-based network security service. By implementing Azure Firewall, you can help protect your Azure resources.
+Azure Firewall is a cloud-based network security service that's fully managed. By implementing Azure Firewall, you can help protect your Azure resources.
 
 Your security team must configure and maintain network and application-level rules for traffic filtering. If your organization has multiple Azure Firewall instances, you'll benefit from centralizing these configurations. Firewall Manager enables you to:
 

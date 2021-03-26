@@ -37,7 +37,7 @@ quiz:
     - content: "Threat intelligence rules"
       isCorrect: true
       explanation: "Correct. Threat intelligence rules are processed before all other rules."
-  - content: "An administrator is considering the benefits of Firewall Manager for their organization. The administrator knows that there are resources in a number of different Azure regions. The organization also has multiple Azure subscriptions. Which of the following statements about this scenario is true?"
+  - content: "An administrator is considering the benefits of Firewall Manager for their organization. The administrator knows that there are resources in several different Azure regions. The organization also has multiple Azure subscriptions. Which of the following statements about this scenario is true?"
     choices:
     - content: "The administrator must implement multiple instances of Firewall Manager: one for each Azure region."
       isCorrect: false
@@ -59,14 +59,14 @@ quiz:
     - content: "This is an example of Firewall Manager being implemented in the hub virtual network architecture."
       isCorrect: false
       explanation: "Incorrect. Secured virtual hub architecture's underlying resource is Azure virtual networks."
-  - content: "The Research department has a requirement for specific firewall settings to help secure their resources in a number of Azure virtual networks. But the global administrator wants to ensure that the overarching firewall policies for the organization are also applied. Which of the following statements about this configuration is true?"
+  - content: "The Research department requires specific firewall settings to help secure their resources in several Azure virtual networks. But the global administrator wants to ensure that the organization's overarching firewall policies also are applied. Which of the following statements about this configuration is true?"
     choices:
-    - content: "Firewall Manager cannot be implemented because the global policies override any local policies."
+    - content: "Firewall Manager can't be implemented because the global policies override any local policies."
       isCorrect: false
       explanation: "Incorrect. With Firewall Manager, a local admin can implement policies in addition to any global policies."
     - content: "Firewall Manager can be implemented, because you can configure both global and local policies."
       isCorrect: true
-      explanation: "Correct. Firewall Manager enables the application of both global and local policies."
+      explanation: "Correct. Firewall Manager enables application of both global and local policies."
     - content: "Two instances of Firewall Manager must be implemented to support this requirement."
       isCorrect: false
       explanation: "Incorrect. You don't need multiple instances of Firewall Manager to support this requirement."
