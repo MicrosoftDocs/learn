@@ -6,16 +6,7 @@ For classified workloads, customers can use Azure services to secure target work
 
 Similar data classification schemes exist in many countries.
 
-:::row:::
-:::column span="2":::
-:::image type="complex" source="../media/PENDING.png" alt-text="Azure support for various data classifications.":::
-PENDING
-:::image-end:::
-:::column-end:::
-:::column span="2":::
 For top secret data, customers can deploy Azure Stack Hub, which can operate fully disconnected from Azure and the internet. [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/tactical_azs_spec_sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on. Figure 5 depicts key enabling services that customers can provision to accommodate a variety of workloads on Azure.
-:::column-end:::
-:::row-end:::
 
 ## Confidential data
 

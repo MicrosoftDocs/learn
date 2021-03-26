@@ -16,16 +16,7 @@ Azure Stack Hub can be [operated disconnected](https://docs.microsoft.com/azure-
 
 ## Scenarios and use cases
 
-:::row:::
-:::column span="2":::
 Azure and Azure Stack can help government customers unlock new hybrid use cases for business applications, including edge and disconnected scenarios, cloud applications intended to meet data sovereignty and compliance requirements, and cloud applications deployed on-premises in customer datacenter. These uses cases include mobile scenarios or fixed deployments in highly secure datacenter facilities. Figure 2 shows Azure Stack Hub capabilities and key usage scenarios.
-:::column-end:::
-:::column span="2":::
-:::image type="complex" source="../media/PENDING.png" alt-text="Azure Stack capabilities.":::
-PENDING
-:::image-end:::
-:::column-end:::
-:::row-end:::
 
 Azure Stack Hub includes [important features](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) for several of these key scenarios:
 
