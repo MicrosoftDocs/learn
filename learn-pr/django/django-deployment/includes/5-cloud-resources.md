@@ -10,7 +10,7 @@ Azure Databases allows you to create the database server and database. Azure App
 
 ## Database considerations
 
-Django is designed for data-driven web applications. So every Django project includes a database. During development, you typically use SQLite, which is a file-based database. 
+Django is designed for data-driven web applications. So every Django project usually includes a database. During development, you typically use SQLite, which is a file-based database engine.
 
 SQLite is a perfect solution for development because it requires no special installation or services. But the requirements for production typically include scaling, performance, and reliability. SQLite isn't designed to manage these production requirements.
 
