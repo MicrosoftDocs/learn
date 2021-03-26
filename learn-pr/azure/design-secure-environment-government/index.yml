@@ -15,7 +15,9 @@ abstract: |
   - Explain the basic concept and benefits of multi-tenant cloud services.
   - Describe a conceptual architecture that protects data at various classification levels.
   - Explain how residency and encryption features keep data of all classification levels safe. 
-prerequisites: None
+prerequisites: |
+  - Familiarity with basic computing concepts and terminology.
+  - Familiarity with cloud computing.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - intermediate
