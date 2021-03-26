@@ -2,7 +2,7 @@ Here, we'll discuss how Firewall Manager works and what tasks you can accomplish
 
 The following diagram displays a typical configuration. It includes a global administrator who is creating and associating policies at the top level. These policies are associated with both a secured virtual hub and two hub virtual networks. A local admin also can configure and associate policies with one of the hub virtual networks.
 
-:::image type="content" source="../media/policy-overview.png" alt-text="A typical Firewall Manager configuration, with both a global and local admin who are creating and associating properties as previously decribed.":::
+:::image type="content" source="../media/policy-overview.png" alt-text="A typical Firewall Manager configuration, with both a global and local admin who are creating and associating properties as previously described.":::
 
 Azure Firewall policies consist of rules and settings that control traffic in protected resources. In this unit, you'll learn about:
 <!-- ?ID/SME: In Unit 1, we capitalize "Threat Intelligence" but here we have it lowercase. And then in the table below, we've got it all capped -- "Threat Intelligence Settings." Are we talking about the same thing and if so, which should it be? Please fix globally. --> 
