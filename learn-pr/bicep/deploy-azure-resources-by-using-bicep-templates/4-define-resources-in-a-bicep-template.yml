@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-azure-resources-bicep.define-resources-in-a-bicep-template
 title: Exercise - Define resources in a Bicep template
+sandbox: true
 metadata:
   unitType: exercise  
   title: Exercise - Define resources in a Bicep template
