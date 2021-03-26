@@ -14,18 +14,18 @@ content: |
   Choose the best response for each question. Then select **Check your answers**.
 quiz: 
   questions: 
-    - content: "What symbol did you add to `ALLOWED_HOSTS = []` to allow Azure to host a Django project?"
+    - content: "What setting maintains the list of server names that are allowed to host your application?"
       choices:
-      - content: "`-`"
+      - content: "`SECRET_KEY`"
         isCorrect: false
-        explanation: Incorrect.
-      - content: "`*`"
+        explanation: Incorrect. `SECRET_KEY` maintains a key for securing sessions and other resources.
+      - content: "`ALLOWED_HOSTS`"
         isCorrect: true
-        explanation: Correct. The addition of this symbol gave Azure access to host the Django project.
-      - content: "`?`"
+        explanation: Correct. `ALLOWED_HOSTS` maintains the list of hosts allowed to serve your application.
+      - content: "`DATABASES`"
         isCorrect: false
-        explanation: Incorrect.
-    - content: In what section of Azure services did you change the Python version for the Django project?
+        explanation: Incorrect. `DATABASES` maintains the list of database connection strings.
+    - content: In what section of Azure App Service did you change the Python version for the Django project?
       choices:
       - content: Extensions
         isCorrect: true
@@ -35,4 +35,15 @@ quiz:
         explanation: 'Incorrect. You used the Deployment Center to set up and deploy the Django project.'
       - content: Web App
         isCorrect: false
-        explanation: 'Incorrect. You used the Web App section at the beginning of the process to create the Django project in Azure services.'
+        explanation: 'Incorrect. You used the Web App section at the beginning of the process to create the Django project in Azure App Service.'
+    - content: What Django tool is used to create and update the database schema?
+      choices:
+      - content: makemigrations
+        isCorrect: false
+        explanation: "Incorrect. The makemigrations tool creates migration scripts but doesn't run them."
+      - content: sqlmigrate
+        isCorrect: false
+        explanation: "Incorrect. The sqlmigrate tool creates SQL scripts but doesn't run them."
+      - content: migrate
+        isCorrect: true
+        explanation: 'Correct. The migrate tool creates or updates the database schema.'
