@@ -13,9 +13,6 @@ During the process, you:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-> [!IMPORTANT]
-> To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). Get started for free.
-
 ## Create a Bicep template with a storage account
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
