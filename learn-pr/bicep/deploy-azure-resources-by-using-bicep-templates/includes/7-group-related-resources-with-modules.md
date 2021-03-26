@@ -1,15 +1,17 @@
-You've started to use Bicep templates for some recent product launches, and they have been very successful. Since you've declared your resources in a template file, you can now quickly deploy new environments without needing to manually configure resources. The IT manager can see that your Bicep code is becoming more complex and has more and more resources defined, so they've asked if you can make them more _modularized_. You can create individual Bicep files, called modules, for different parts of your deployment. The main Bicep template references these modules, and behind the scenes the modules are transpiled into a single JSON template for deployment. Modules are also a way to make Bicep code even more reusable. You can have a single Bicep module that is used by lots of Bicep templates.
+You've started to use Bicep templates for some recent product launches, and they have been very successful. Since you've declared your resources in a template file, you can quickly deploy the resources for new toy launches without needing to manually configure resources in the Azure portal.
 
-You also will often need to emit _outputs_ from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever has initiated the deployment.
+The IT manager can see that your Bicep code is becoming more complex and has more and more resources defined, so they've asked if you can make them more _modularized_. You can create individual Bicep files, called modules, for different parts of your deployment. The main Bicep template references these modules, and behind the scenes the modules are transpiled into a single JSON template for deployment. Modules are also a way to make Bicep code even more reusable. You can have a single Bicep module that is used by lots of Bicep templates.
+
+You also will often need to emit _outputs_ from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever has initiated the deployment. Let's look at outputs first.
 
 ## Outputs
 
-Bicep templates can be executed manually by a human or by an automated release process. Either way, it's common to have some data from the template that you need to provide back to whoever or whatever is executing the template deployment. Here are some example scenarios where you might want to use outputs:
+Bicep templates can be deployed manually by a human, or by some sort of automated release process. Either way, it's common to have some data from the template that you need to provide back to whoever or whatever is executing the template deployment. Here are some example scenarios where you might need to get information from the template deployment:
 
 * You create a Bicep template that deploys a virtual machine, and you need to get the public IP address so that you can SSH into the machine.
 * You create a Bicep template that accepts a set of parameters, like an environment name and an application name. The template uses an expression to create the name of an App Service app that it deploys. You need to output the name of the app the template has deployed so that it can be used within a deployment pipeline to publish the application binaries.
 
-To define an output in a Bicep template, use the `output` keyword like this:
+You can use _outputs_ for these scenarios. To define an output in a Bicep template, use the `output` keyword like this:
 
 ```bicep
 output appName string = appName
@@ -30,6 +32,9 @@ Here's another example of an output - this one will have its value set to the fu
 ```bicep
 output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 ```
+
+> [!TIP]
+> Try to use resource properties as outputs, rather than making assumptions about how resources will behave. For example, if you need to have an output for the URL to an App Service app, use the `defaultHostname` property of the app instead of creating a string for the URL yourself. Sometimes these assumptions aren't correct in different environments, or the resources change the way they work, so it's safer to have the resource tell you its own properties. 
 
 ## Defining a module
 
@@ -56,13 +61,14 @@ Let's look closely at some key parts of this module definition.
 
 ## Modules and outputs
 
-Just like templates, Bicep modules can define outputs. It's common to _chain_ modules together into a template - the output from one module can be a parameter for another module. By using modules and outputs together, you can create sophisticated and reusable Bicep files.
+Just like templates, Bicep modules can define outputs. It's common to chain modules together within a template - the output from one module can be a parameter for another module. By using modules and outputs together, you can create powerful and reusable Bicep files.
 
-## Effective modules
+## Designing your modules
 
 A good Bicep module follows a few key principles.
 
-1. A module should have a clear purpose. For example, you might use a module to define all of the resources that are related to a specific part of your application, like all of the resources that form the credit card billing components of a commerce application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
-2. A module should generally consist of more than one resource. You shouldn't use a separate module for every resource you deploy.
-3. A module should clear parameters and outputs that make sense. Consider the purpose of the module. Think about whether a module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they are useful to the templates that will include the module.
-4. Modules should include all of the relevant declarations for the resources it creates. If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
+> [!div class="checklist"]
+> * **A module should have a clear purpose.** For example, you might use a module to define all of the resources that are related to a specific part of your application, like all of the resources that form the credit card billing components of a commerce application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
+> * **A module should create more than one resource.** You shouldn't create a separate module for every resource you deploy.
+> * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they are useful to the templates that will include the module.
+> * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
