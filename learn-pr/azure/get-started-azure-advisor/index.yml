@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Read access or better to one Azure subscription with active subscriptions and provisioned resources
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/get-started-azure-advisor.svg
 levels:
 - beginner
 roles:
