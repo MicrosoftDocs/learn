@@ -5,8 +5,8 @@ The following diagram displays a typical configuration. It includes a global adm
 :::image type="content" source="../media/policy-overview.png" alt-text="A typical Firewall Manager configuration, with both a global and local admin who are creating and associating properties as previously decribed.":::
 
 Azure Firewall policies consist of rules and settings that control traffic in protected resources. In this unit, you'll learn about:
-
-- Azure Firewall policies, rules, and <!-- ?ID/SME: In Unit 1, we capitalize "Threat Intelligence" but here we have it lowercase. And then in the table below, we've got it all capped -- "Threat Intelligence Settings." Are we talking about the same thing and if so, which should it be? Please fix globally. --> threat intelligence settings.
+<!-- ?ID/SME: In Unit 1, we capitalize "Threat Intelligence" but here we have it lowercase. And then in the table below, we've got it all capped -- "Threat Intelligence Settings." Are we talking about the same thing and if so, which should it be? Please fix globally. --> 
+- Azure Firewall policies, rules, and threat intelligence settings.
 - Rule processing.
 - Tasks you can perform with Firewall Manager.
 

@@ -21,7 +21,7 @@ Firewall policy is the fundamental building block of Firewall Manager. A firewal
 - NAT settings.
 - Network rule collections.
 - Application rule collections.
-- Threat Intelligence settings.
+- Threat Intelligence settings. <!-- ID/SME: Elsewhere, we have "Threat Intelligence" lowercase, including in the graphic in introduction.md. We need to be consistent. Please fix globally. -->
 
 You apply firewall policies to firewalls. After you create policies, you can associate them with one or more virtual networks or virtual hubs.
 
