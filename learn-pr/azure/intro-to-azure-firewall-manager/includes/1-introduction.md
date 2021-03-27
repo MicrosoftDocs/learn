@@ -8,7 +8,7 @@ Suppose your company has resources distributed across multiple Azure virtual net
 
 :::image type="content" source="../media/single-firewall.png" alt-text="A simple firewall configuration supporting one workload subnet and one firewall subnet, which is connected to the internet.":::
 
-As your needs evolve, you'll might want to implement additional Azure Firewall instances. Each should have similar rules governing traffic flow. Management becomes more difficult when you have a more complex virtual network, virtual WAN, and firewall settings. However, Firewall Manager enables you to centrally manage these components and more easily control your cloud-based security perimeters.
+As your needs evolve, you'll want to implement additional Azure Firewall instances. Each should have similar rules governing traffic flow. Management becomes more difficult when you have a more complex virtual network, virtual WAN, and firewall settings. However, Firewall Manager enables you to centrally manage these components and more easily control your cloud-based security perimeters.
 
 ## What will we be doing?
 
