@@ -28,6 +28,6 @@ If your Azure infrastructure consists of only one or two virtual networks that d
 However, you might consider using Firewall Manager to:
 
 - Manage security-policy configuration and logging across multiple Azure Firewall instances that have hierarchical policies.
-- Centralize Azure Firewall management across secured virtual hubs and <!-- ID/SME"hub virtual networks deployments is a mouthful and also includes double plurals. Can we change it to "deployments of hub virtual networks" or does that change the technical meaning? -->: hub virtual networks deployments.
+- Centralize Azure Firewall management across secured virtual hubs and hub virtual network deployments.
 - Automate traffic routing for security filtering in secured virtual hubs.
 - Integrate with third-party security partners for advanced protection.
