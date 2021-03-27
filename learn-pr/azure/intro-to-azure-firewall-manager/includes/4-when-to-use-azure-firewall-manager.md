@@ -6,7 +6,7 @@ Here, we'll consider whether Firewall Manager is the correct choice for your org
 
 ## Decision criteria
 
-Administrators who must help protect multiple Azure virtual networks will use rules to control traffic throughout their perimeter networks. As a virtual network infrastructure grows, it can become more complex to manage. Administrators benefit from using Firewall Manager to centralize configuration of Azure Firewall rules and settings. Here's some factors that'll help you decide whether Firewall Manager will benefit your organization.
+Administrators who must help protect multiple Azure virtual networks will use rules to control traffic throughout their perimeter networks. As a virtual network infrastructure grows, it can become more complex to manage. Administrators benefit from using Firewall Manager to centralize configuration of Azure Firewall rules and settings. Here are some factors that'll help you decide whether Firewall Manager will benefit your organization.
 
 | **Criteria** | **Analysis**|
 | ---------------------------- | ------------------------------------------------------------ |
