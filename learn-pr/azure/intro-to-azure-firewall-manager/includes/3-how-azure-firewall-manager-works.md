@@ -5,7 +5,7 @@ The following diagram displays a typical configuration. It includes a global adm
 :::image type="content" source="../media/policy-overview.png" alt-text="A typical Firewall Manager configuration, with both a global and local admin who are creating and associating properties as previously described.":::
 
 Azure Firewall policies consist of rules and settings that control traffic in protected resources. In this unit, you'll learn about:
-<!-- ?ID/SME: In Unit 1, we capitalize "Threat Intelligence" but here we have it lowercase. And then in the table below, we've got it all capped -- "Threat Intelligence Settings." Are we talking about the same thing and if so, which should it be? Please fix globally. --> 
+
 - Azure Firewall policies, rules, and threat intelligence settings.
 - Rule processing.
 - Tasks you can perform with Firewall Manager.
@@ -35,12 +35,12 @@ In reality, a NAT rule is a routing rule that directs traffic from public to pri
    - Alert and deny when rule is triggered.
 
 2. Network rules are applied next. If a network rule matches the traffic, that rule is applied. No other rules are checked.
-3. <!-- ID/SME: Please note, I changed the verbiage for these steps to remove the "If/then" construction. MS style doesn't like "If/then" anymore. --> If no network rules match and the traffic is HTTP/S, application rules are applied.
+3. If no network rules match and the traffic is HTTP/S, application rules are applied.
 4. If no application rule matches, traffic is compared with the infrastructure rule collection.
 5. If there's still no match for the traffic, the traffic is implicitly denied.
 
 > [!NOTE]
-> Infrastructure rule collections define <!-- ID/SME: Please ensure this is spelled out either here or upon it's first appearance in an earlier module. We do indeed have to spell out this one! --> FQDNs that are allowed by default. These FQDNs are specific to Azure.
+> Infrastructure rule collections define fully qualified domain names (FQDNs) that are allowed by default. These FQDNs are specific to Azure.
 
 ## Use Firewall Manager
 
