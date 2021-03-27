@@ -12,7 +12,7 @@ As your needs evolve, you'll want to implement additional Azure Firewall instanc
 
 ## What will we be doing?
 
-We'll analyze the capabilities and benefits of using Firewall Manager. You'll know when to: <!-- ID/SME: Why are the items in the following list bolded? I don't see any requirement in the template for use of bold, and per MS style, we should use italic font if we want to emphasize something. Please fix globally if you've bolded similar lists in other units. -->
+We'll analyze the capabilities and benefits of using Firewall Manager. You'll know when to:
 
 - **Launch**: Why should you use Firewall Manager?
 - **Manage**: How can Firewall Manager help you manage your cloud-based security perimeters?
