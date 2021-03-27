@@ -21,18 +21,18 @@ Firewall policy is the fundamental building block of Firewall Manager. A firewal
 - NAT settings.
 - Network rule collections.
 - Application rule collections.
-- Threat Intelligence settings. <!-- ID/SME: Elsewhere, we have "Threat Intelligence" lowercase, including in the graphic in introduction.md. We need to be consistent. Please fix globally. -->
+- Threat intelligence settings.
 
 You apply firewall policies to firewalls. After you create policies, you can associate them with one or more virtual networks or virtual hubs.
 
 > [!TIP]
-> You can create and manage Azure Firewall policies by using the Azure Portal, REST API, templates, Azure PowerShell, and <!-- ID/SME: I added "Azure" in front of CLI for clarity. Can you confirm that's OK? -->Azure CLI.
+> You can create and manage Azure Firewall policies by using the Azure Portal, REST API, templates, Azure PowerShell, and Azure CLI.
 
 ## How to centrally manage your firewalls
 
 To centrally manage your firewalls, implement Firewall Manager. It provides the following features:
 
-- <!-- ID/SME: Again, why are we bolding these? Please fix globally in all files. I won't comment on this again, so you don't have to keep clearing the same comment. --> **Centralized deployment and configuration**. This allows you to configure multiple Azure Firewall instances. These multiple instances potentially can span Azure subscriptions and regions.
+- **Centralized deployment and configuration**. This allows you to configure multiple Azure Firewall instances. These multiple instances potentially can span Azure subscriptions and regions.
 - **Centralized route management**. This bypasses the requirement to manually create user-defined routes on spoke virtual networks.
 
    > [!IMPORTANT]
