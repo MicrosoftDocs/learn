@@ -11,6 +11,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 123 # user input: the estimate time to complete the unit
+durationInMinutes: 8
 content: |
   [!include[](includes/4-define-resources-in-a-bicep-template.md)]
