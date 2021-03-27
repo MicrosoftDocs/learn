@@ -36,31 +36,31 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, and in the search box, search for and select **Monitor**.
+1. On the Azure portal menu, select **More services**, and in the search box, search for and select **Monitor**. The **Monitor - Overview** pane appears.
 
 1. In the left nav bar, select **Alerts**.
 
-1. In the top menu bar, select **+ New alert rule**. The **Create alert rule** page appears.
+1. In the top menu bar, select **New alert rule**. The **Create alert rule** pane appears.
 
-    ![Image that shows the "Create alert rule" page](../media/4-create-monitor-rule.png)
+    ![Image that shows the "Create alert rule" pane](../media/4-create-monitor-rule.png)
 
-1. Under **Scope**, select **Select resource**. The **Select a resource** panel appears.
+1. Under **Scope**, select **Select resource**. The **Select a resource** pane appears.
 
 1. The **Filter by subscription** dropdown should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown, select **Virtual machines**.
 
-    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then select **Done** at the bottom of the panel.
+    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
-    ![Image showing the "Select a resource" page](../media/4-select-resource.png)
+    ![Image showing the "Select a resource" pane](../media/4-select-resource.png)
 
-1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** page, under the **Condition** section, select **Add condition**. The **Configure signal logic** panel appears.
+1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** pane, under the **Condition** section, select **Add condition**. The **Configure signal logic** pane appears.
 
 1. For **Signal type**, select **Metrics**. For **Monitor service**, select **All**.
 
     The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
-    ![Image that shows the "Configure signal logic" panel](../media/4-configure-signal-logic.png)
+    ![Image that shows the "Configure signal logic" pane](../media/4-configure-signal-logic.png)
 
-1. In the **Configure signal logic** panel, configure the following settings:
+1. In the **Configure signal logic** pane, configure the following settings:
 
     | Setting | Value |
     |---------|---------|
@@ -75,14 +75,14 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
-1. From the **Create alert rule** page, under the **Alert rule details** section, enter the following values.
+1. From the **Create alert rule** pane, under the **Alert rule details** section, enter the following values.
 
     | Setting | Value |
     |---------|---------|
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
     | Severity | Sev 2 |
-    | Enabled rule upon creation | Yes (checked) |
+    | Enable alert rule upon creation | Yes (checked) |
     | | |
 
     ![Image that shows a completed section for alert details](../media/4-metric-alert-details.png)
