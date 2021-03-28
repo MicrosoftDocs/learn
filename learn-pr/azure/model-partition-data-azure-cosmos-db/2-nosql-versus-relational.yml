@@ -12,3 +12,28 @@ metadata:
 durationInMinutes: 05
 content: |
   [!include[](includes/2-nosql-versus-relational.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the maximum size for a NoSQL database?"
+    choices: 
+    - content: "100 GB"
+      isCorrect: false
+      explanation: "A NoSQL database can grow larger than 100 GB."
+    - content: "4 TB"
+      isCorrect: false
+      explanation: "Typically un-shared relational databases can only grow to 4 TB in size."
+    - content: "Infinite"
+      isCorrect: true
+      explanation: "A NoSQL database can grow to unlimited size."
+  - content: "What is the primary objective when designing a data model for a NoSQL database?"
+    choices: 
+    - content: "Optimize for storage"
+      isCorrect: false
+      explanation: "The cost of storage relative to compute is cheap. So optimizing for storage isn't the primary objective."
+    - content: "Optimize for compute"
+      isCorrect: true
+      explanation: "Compute is expensive relative to storage. So optimizing for compute is the primary objective."
+    - content: "Optimize for data size"
+      isCorrect: false
+      explanation: "Optimizing for the amount of data isn't a primary objective when designing a data model."

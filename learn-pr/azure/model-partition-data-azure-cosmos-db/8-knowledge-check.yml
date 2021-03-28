@@ -28,7 +28,7 @@ durationInMinutes: 05
 content: |
 quiz:
   questions:
-  - content: "When modeling small lookup tables in a NoSQL database, if the amount of data is small, designing for in-partition queries will:"
+  - content: "What's the impact of designing for in-partition queries When modeling small lookup tables in a NoSQL database where the amount of data is small, what's the impact of designing for in-partition queries?"
     choices:
     - content: "Improve performance"
       isCorrect: true
