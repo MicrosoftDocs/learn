@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-power-platform-to-sap-azure.connect-power-bi-systems
+title: Connect power BI to SAP systems
+metadata:
+  title: Connect power BI to SAP systems
+  description: "Connect power BI to SAP systems"
+  ms.date: 03/28/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-connect-power-bi-systems.md)]
