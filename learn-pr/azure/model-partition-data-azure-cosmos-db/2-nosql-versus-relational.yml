@@ -26,14 +26,14 @@ quiz:
     - content: "Infinite"
       isCorrect: true
       explanation: "A NoSQL database can grow to unlimited size."
-  - content: "What is the primary objective when designing a data model for a NoSQL database?"
+  - content: "What should be optimize when designing a data model for a NoSQL database?"
     choices: 
-    - content: "Optimize for storage"
+    - content: "Storage"
       isCorrect: false
       explanation: "The cost of storage relative to compute is cheap. So optimizing for storage isn't the primary objective."
-    - content: "Optimize for compute"
+    - content: "Compute"
       isCorrect: true
       explanation: "Compute is expensive relative to storage. So optimizing for compute is the primary objective."
-    - content: "Optimize for data size"
+    - content: "Data size"
       isCorrect: false
       explanation: "Optimizing for the amount of data isn't a primary objective when designing a data model."
