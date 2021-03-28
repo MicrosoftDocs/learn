@@ -10,7 +10,7 @@ While this process may appear to be constraining when accessing data, it has som
 
 The second defining characteristic of a NoSQL database is there are no foreign keys, constraints, joins, or enforced relationships of any kind between data that spans partitions. Since data in a NoSQL database is stored on different physical servers, enforcing constraints or relationships by placing locks on data could result in negative or unpredictable performance. Azure Cosmos DB is designed to provide high and predictable performance so does not put any locks on data. However, you can manage relational data and relationships in Azure Cosmos DB. It just uses different mechanisms to do it.
 
-:::image type="content" source="../media/horizontal-scale-non-relational.png" alt-text="Diagram that shows the horizontal scale for Azure Cosmos DB." border="false":::
+:::image type="content" source="../media/2-horizontal-scale-non-relational.png" alt-text="Diagram that shows the horizontal scale for Azure Cosmos DB." border="false":::
 
 ## Why are these database types so different?
 

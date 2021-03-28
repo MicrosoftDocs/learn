@@ -28,7 +28,7 @@ Add steps to create Cosmos DB account in sandbox subscription and populate the d
 
 1. Select the **Query Stats** tab to see how much RU/s was consumed.
 
-    :::image type="content" source="../media/customer-query-v1.png" alt-text="Screenshot that shows the query stats results for customer address in the database v1.":::
+    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="Screenshot that shows the query stats results for customer address in the database v1.":::
 1. Make a note of the **Value** for **Request Charge**.
 
 ## Review performance of separate documents model
@@ -43,7 +43,7 @@ Add steps to create Cosmos DB account in sandbox subscription and populate the d
 
 1. Observe that the data coming back is now a hierarchy of customer, address and password data.
 
-    :::image type="content" source="../media/customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database v2.":::
+    :::image type="content" source="../media/5-customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database v2.":::
 
 1. Select on the **Query Stats**.
 1. Make a note of the **Value** for **Request Charge**.

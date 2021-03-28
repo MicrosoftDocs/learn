@@ -39,7 +39,7 @@ Imagine that you work for a retail startup that's designing a database to manage
 
 The following diagram shows the model you will be starting from. The relational model has nine entities each in their own table.
 
-:::image type="content" source="../media/full-relational-model.png" alt-text="Diagram that shows the relational model for our example application." border="false":::
+:::image type="content" source="../media/1-full-relational-model.png" alt-text="Diagram that shows the relational model for our example application." border="false":::
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
