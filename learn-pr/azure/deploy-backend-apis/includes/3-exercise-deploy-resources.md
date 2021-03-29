@@ -220,35 +220,35 @@ Now that your database and GitHub repository are configured, it's time to deploy
 
 1. Run the following in the cloud shell to deploy the function in your language of choice.
 
-::: zone pivot="csharp"
+    ::: zone pivot="csharp"
 
-```powershell
-$functionApp = New-AzFunctionApp -Name $azureFunctionName `
-    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-    -FunctionsVersion 3 -RuntimeVersion 3 -Runtime dotnet -Location $location
-```
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RuntimeVersion 3 -Runtime dotnet -Location $location
+    ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="python"
+    ::: zone pivot="python"
 
-```powershell
-$functionApp = New-AzFunctionApp -Name $azureFunctionName `
-    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-    -FunctionsVersion 3 -RuntimeVersion 3.8 -Runtime python -Location $location
-```
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RuntimeVersion 3.8 -Runtime python -Location $location
+    ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="node"
+    ::: zone pivot="node"
 
-```powershell
-$functionApp = New-AzFunctionApp -Name $azureFunctionName `
-    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-    -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
-```
+    ```powershell
+    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
+        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+        -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
+    ```
 
-::: zone-end
+    ::: zone-end
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
