@@ -2,14 +2,12 @@ In this module, you started by learning what PowerShell is and what you can use 
 
 You then learned about compiled commands called cmdlets. You focused on three specific cmdlets, known as _core cmdlets_. Core cmdlets help you list available commands. You learned how to use them to take advantage of the built-in help system and inspect the results from any cmdlet. These commands help you efficiently build your knowledge about PowerShell.
 
-Later you learned about how to connect cmdlets together to form powerful expressions called pipelines. In a pipeline, one cmdlet's output serves as the input for the next connected cmdlet.
+Later, you learned about how to connect cmdlets together to form powerful expressions called pipelines. In a pipeline, one cmdlet's output serves as the input for the next connected cmdlet.
 
 You should now have a good understanding of PowerShell, what it's used for, and how to use its commands efficiently.
 
-## Additional resources
+## Resources
 
 - [Getting started with PowerShell](https://docs.microsoft.com/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
-
 - [Core cmdlets and using the help system](https://docs.microsoft.com/powershell/scripting/learn/ps101/02-help-system?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)
-
 - [Discovering objects](https://docs.microsoft.com/powershell/scripting/learn/ps101/03-discovering-objects?view=powershell-7.1&WT.mc_id=academic-16634-chnoring&preserve-view=true)

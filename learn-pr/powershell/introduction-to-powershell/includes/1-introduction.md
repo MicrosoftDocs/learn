@@ -11,3 +11,10 @@ After completing this module, you'll be able to:
 - Understand what PowerShell is and what you can use it for.
 - Use commands to automate tasks.
 - Apply the _core_ cmdlets to discover commands and learn how they work.
+
+## Prerequisites
+
+- Have a basic familiarity with using a command-line shell like Command Prompt or Git Bash
+- Have Visual Studio Code installed
+- Ability to install Visual Studio Code extensions
+- Ability to install software on your computer, if you're not using a Windows operating system
