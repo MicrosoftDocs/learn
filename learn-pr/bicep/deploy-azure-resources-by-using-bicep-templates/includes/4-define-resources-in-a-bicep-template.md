@@ -6,7 +6,7 @@ In this exercise, you create a Bicep template that provisions an Azure storage a
 During the process, you:
 
 > [!div class="checklist"]
-> * Create a template that defines a single storage account resource, with hard-coded values.
+> * Create a template that defines a single storage account resource that includes hard-coded values.
 > * Provision your infrastructure and verify the result.
 > * Add an App Service plan and app to the template.
 > * Provision the infrastructure again to see the new resources.
