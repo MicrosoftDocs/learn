@@ -135,6 +135,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. This is a great solution for the bus catching scenario as it is in development phase (perhaps not utilized 24/7) and it is unknown how popular it will be (i.e. how much compute it will need).
 
+    If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
 ## Connect with Azure Data Studio
 
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
