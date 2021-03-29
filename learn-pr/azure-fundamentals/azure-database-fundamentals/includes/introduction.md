@@ -6,7 +6,7 @@ Today's applications are required to be highly responsive and always online. To 
 
 The following video provides a brief overview for several of the database services that are available on Azure.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyJvs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyJvs]
 
 In this module, you'll learn more about several of the primary database services that are available on Azure, and you'll analyze some of the reasons why each of these services might be the right choice for your data needs.
 
