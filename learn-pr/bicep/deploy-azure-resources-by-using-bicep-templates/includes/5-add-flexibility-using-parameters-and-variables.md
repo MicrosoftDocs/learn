@@ -197,3 +197,5 @@ So these rules can be translated to:
 
 > [!TIP]
 > When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, since it avoids cluttering your resource definitions with logic.
+
+Now that you have parameters, variables, and expressions in your template, every time your marketing department asks you to deploy a new website for the next toy launch you can just reuse your template and quickly deploy a new set of resources. Just supply some new parameter values for each environment you deploy, and you'll be set!
