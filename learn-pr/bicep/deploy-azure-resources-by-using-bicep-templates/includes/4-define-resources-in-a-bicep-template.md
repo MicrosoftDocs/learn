@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you create a Bicep template that provisions an Azure Storage account and an App Service app.
+In this exercise, you create a Bicep template that provisions an Azure storage account and an App Service app.
 
 During the process, you:
 
