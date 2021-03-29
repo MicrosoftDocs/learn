@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.intro-to-xxx 
+uid: learn.intro-to-azure-database-for-mariadb 
 metadata:
   moduleType: introduction        
-  title: Introduction to xxx
+  title: Introduction to Azure Database for MariaDB
   description: Learn how xxx can xxx
-  ms.date: 03/14/2021  
+  ms.date: 03/29/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial  
@@ -28,6 +28,11 @@ products:
   - azure-xxx
   - azure-xxx
 units:  
-- learn.intro-to-xxx.1-introduction- learn.intro-to-xxx.2-what-is-xxx- learn.intro-to-xxx.3-how-xxx-works- learn.intro-to-xxx.4-when-to-use-xxx- learn.intro-to-xxx.5-knowledge-check- learn.intro-to-xxx.6-summary
+- learn.intro-to-azure-database-for-mariadb.1-introduction
+- learn.intro-to-azure-database-for-mariadb.2-what-is-azure-database-for-mariadb
+- learn.intro-to-azure-database-for-mariadb.3-how-azure-database-for-mariadb-works
+- learn.intro-to-azure-database-for-mariadb.4-when-to-use-azure-database-for-mariadb
+- learn.intro-to-azure-database-for-mariadb.5-knowledge-check
+- learn.intro-to-azure-database-for-mariadb.6-summary
 badge:
-  uid: learn.intro-to-xxx.badge
+  uid: learn.intro-to-azure-database-for-mariadb.badge

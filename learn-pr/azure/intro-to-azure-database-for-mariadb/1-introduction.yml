@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-xxx.1-introduction  
-title: Introduction to xxx
+uid: learn.intro-to-azure-database-for-mariadb.1-introduction  
+title: Introduction to Azure Database for MariaDB
 metadata:
   unitType: introduction  
-  title: Introduction to xxx
+  title: Introduction to Azure Database for MariaDB
   description: xxx
-  ms.date: 03/14/2021  
+  ms.date: 03/29/2021  
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial
