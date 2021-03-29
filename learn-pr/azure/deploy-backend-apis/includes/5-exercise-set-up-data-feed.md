@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Azure Functions can be used to do things like retrieve the latest data from a feed.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,8 +20,7 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active GeoFence(s).
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -33,8 +32,6 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
-
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
     Goal: List the steps they'll do to complete the exercise.
@@ -55,13 +52,53 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
-TODO: Document exercise.
 
 ## Run Azure Functions locally
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+
+The first step with any Azure Function project is to get your function running locally.
+
+1. Open **Visual Studio Code** and select **File** > **Open folder** to open the folder where your forked GitHub repository is located.
+
+1. Select the **Extensions** icon on the left-hand taskbar. Install **Azurite**, an open source Azure Storage API emulator. This is needed to run functions locally.
+
+1. Select **View** > **Command Palette...** and type **Azurite: Start**, then select **Azurite: Start**.
+
+::: zone pivot="python"
+
+1. Under **Explorer**, navigate and open **azure-function** > **python** > **GetBusData** > **__init__.py**. Review the code.
+
+1. Rename **`local.settings.json.template`** to **`local.settings.json`**.
+
+1. In **`local.settings.json`** update the Azure SQL connection string value to reference your server name and password.
+
+1. **Save** the file.
+
+1. In Visual Studio Code, select **Terminal** > **New Terminal** and run the following to navigate to the root of the function and install the python requirements.
+
+    ```cmd
+    cd azure-function\python
+    pip install -r requirements.txt
+    ```
+
+::: zone-end
+
+::: zone pivot="node"
+
+TODO
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+TODO
+
+::: zone-end
+
+1. Finally, run the following to start the function. Observe the results.
+
+    ```cmd
+    func start
+    ```
 
 ## Compare results to database
 <!-- Introduction paragraph -- compare results to what is actually in the database  -->
