@@ -10,6 +10,6 @@ metadata:
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/3-how-azure-database-for-mariadb-works.md)]
