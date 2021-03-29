@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers.**
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   questions:
   - content: What property is used to register custom events for a component?
@@ -24,32 +24,32 @@ quiz:
       explanation: "`emits` is used to register custom events for a component."
     - content: "`props`"
       isCorrect: false
-      explanation: "`props` is used to add property values you can pass into a component."
+      explanation: "`props` is used to add property values that you can pass in to a component."
     - content: "`methods`"
       isCorrect: false
       explanation: "`methods` is used to store functions available to the component."
-  - content: What command is used in Vue CLI to create a new web application?
+  - content: What command is used in Vue CLI to create a web application?
     choices:
-    - content: create
+    - content: "`create`"
       isCorrect: true
-      explanation: create is used to create new applications.
-    - content: help
+      explanation: "`create` is used to create new applications."
+    - content: "`help`"
       isCorrect: false
-      explanation: help will display the help screen for Vue CLI.
-    - content: info
+      explanation: "`help` will display the help screen for Vue CLI."
+    - content: "`info`"
       isCorrect: false
-      explanation: info will print debugging information for a Vue application
+      explanation: "`info` will print debugging information for a Vue application."
   - content: What field do you use to list the available components for an app?
     choices:
-    - content: "`methods'"
+    - content: "`methods`"
       isCorrect: false
-      explanation: "'methods' is used to list the available methods."
+      explanation: "`methods` is used to list the available methods."
     - content: "`props`"
       isCorrect: false
       explanation: "`props` is used to indicate the properties for a component."
-    - content: "`data`."
+    - content: "`data`"
       isCorrect: false
-      explanation: "`data` is used to set the data a component uses."
+      explanation: "`data` is used to set the data that a component uses."
     - content: "`components`"
       isCorrect: true
       explanation: "`components` is used to list the available components."

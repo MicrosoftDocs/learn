@@ -1,10 +1,10 @@
-HTML elements are the building blocks you use to create pages. We can configure their behavior by setting attributes to different values. As highlighted earlier, creating a component is similar to creating a custom HTML tag. As a result, we can pass in information to enhance the reuse of components through props.
+HTML elements are the building blocks for creating pages. You can configure their behavior by setting attributes to different values. As highlighted earlier, creating a component is similar to creating a custom HTML tag. As a result, you can pass in information to enhance the reuse of components through *props*.
 
 ## Defining props
 
-Props, short for properties, are a set of values you can pass into a component. You will typically add props to a component to pass in the values it should display or otherwise change its behavior.
+Props, short for *properties*, are a set of values that you can pass in to a component. You'll typically add props to a component to pass in the values that it should display or otherwise change its behavior.
 
-You define props for a component by adding the `props` field inside the `script` element. You can list the names of a components props by listing them in an array:
+You define props for a component by adding the `props` field inside the `script` element. You can list the names of a component's props by listing them in an array:
 
 ```html
 <!-- UserDisplay component -->
@@ -16,7 +16,7 @@ export default {
 </script>
 ```
 
-Props are set by the caller of the component using the same syntax as an HTML attribute. Assuming the above component, we can set `name` and `age` like this:
+The caller of the component sets props by using the same syntax as an HTML attribute. Assuming the previous component, we can set `name` and `age` like this:
 
 ```html
 <!-- inside parent component -->
@@ -33,16 +33,16 @@ export default {
 </script>
 ```
 
-The values `Cheryl` and `28`, are bound to the `name` and `age` property respectively, using an attribute binding.
+The values `Cheryl` and `28` are bound to the `name` and `age` property, respectively, through an attribute binding.
 
 > [!NOTE]
-> The component named `UserDisplay` will be converted into the kebab-cased `user-display` by Vue.js. Also, the `:` in front of each name indicates this is a Vue.js property we are setting.
+> Vue.js will convert the component named `UserDisplay` into the kebab-cased `user-display`. Also, the colon (`:`) in front of each name indicates that we're setting a Vue.js property.
 
 ## Restricting types
 
-By listing them as part of an array, the caller can pass in values of any type. This can be appropriate for basic applications, but you will often want to indicate what data types you are expecting for each prop.
+The caller can pass in values of any type by listing them as part of an array. This can be appropriate for basic applications, but you'll often want to indicate what data types you're expecting for each prop.
 
-You can provide more robust information about the props by defining a schema. If you want to indicate `name` should be a string and `age` a number, you can define your props schema like the following:
+You can provide more robust information about the props by defining a schema. If you want to indicate that `name` should be a string and `age` should be a number, you can define your prop schema like the following:
 
 ```html
 <!-- UserDisplay component script -->
@@ -57,18 +57,18 @@ export default {
 </script>
 ```
 
-Notice how you're creating a props object with the types for `name` and `age`. This component will now only accept the specified data types. You can still set them as before:
+Notice how you're creating a prop object with the types for `name` and `age`. This component will now accept only the specified data types. You can still set them as before:
 
 ```html
 <!-- inside parent component -->
 <user-display :name='Cheryl' :age='28'></user-display>
 ```
 
-However, where you to set them to values that doesn't match with the schema, like passing a number to `name`, for example, you will get a warning in the console, asking you to take action.
+However, if you set data types to values that don't match with the schema, like passing a number to `name`, you'll get a warning in the console. The warning will ask you to take action.
 
 ## Complex objects
 
-When working with Vue, you will typically work with objects rather than individual values. Fortunately, you can declare more complex structures with props as well.
+When you're working with Vue, you typically work with objects rather than individual values. Fortunately, you can declare complex structures with props.
 
 If you're using a `User` object with the properties `name` and `age`, you can declare this as a full construct in your props:
 
@@ -87,7 +87,7 @@ export default {
 </script>
 ```
 
-You can set the value using the attribute as you did before. In addition, you can pass in dynamic data as well by specifying the name of the object you wish to use. In the example below you have a piece of data named `user`, which is passed using the same syntax as static values.
+You can set the value by using the attribute as you did before. In addition, you can pass in dynamic data by specifying the name of the object that you want to use. In the following example, a piece of data named `user` is passed by using the same syntax as static values:
 
 ```html
 <!-- parent component -->
@@ -115,7 +115,7 @@ export default {
 
 ## Using props inside a component
 
-Inside a component, props can be read in the same way you would read data. The full `UserDisplay` component might look like this:
+Inside a component, props can be read in the same way that you would read data. The full `UserDisplay` component might look like this:
 
 ```html
 <template>
@@ -136,4 +136,4 @@ export default {
 ```
 
 > [!IMPORTANT]
-> Unlike stateful data, values passed via props are a one-way binding. If changes are made to a prop those updates do *not* bubble back to the parent.
+> Unlike stateful data, values passed via props are a one-way binding. If changes are made to a prop, those updates don't bubble back to the parent.

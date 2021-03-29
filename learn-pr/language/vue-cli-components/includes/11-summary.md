@@ -1,11 +1,8 @@
-In this module you learned how to use Vue CLI to bootstrap an application. 
+In this module, you learned how to use Vue CLI to bootstrap an application. 
 
-You then explored some of the core capabilities of Vue components. Next, you saw how to create a single-file component, and how to pass values in by using props.
+You then explored some of the core capabilities of Vue components. Next, you saw how to create a single-file component, and how to pass in values by using props.
 
-Finally you closed by seeing how custom events allow our components to become interactive.
+Finally, you closed by seeing how custom events allow components to become interactive.
 
-In this module we learned how to:
-
-- Use Vue CLI to create an application.
-- Create single-file components.
-- Use props to pass values into components.
+## Additional resources
+For information about publishing a Vue app, see [Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/).

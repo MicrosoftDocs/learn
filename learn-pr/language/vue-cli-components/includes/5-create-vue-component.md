@@ -1,18 +1,18 @@
-You want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a couple of exercises, you will create a component for the form the user will complete, to create a booking, and another to display the list of created bookings. The first component you will create, will host both of child components.
+We want to create an application that allows a user to create bookings on a cruise to the moon. Over the course of a few exercises, you'll create a component for the form that the user will complete to create a booking, and another to display the list of created bookings. The first component that you'll create will host both child components.
 
 ## Install Visual Studio Code extensions
 
-Visual Studio Code has numerous extensions the [marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to aid you in your development endeavors. We will take advantage of two:
+Visual Studio Code has numerous extensions in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode/?azure-portal=true) to help in your development endeavors. We'll take advantage of two:
 
 - [Vetur](https://marketplace.visualstudio.com/items/?itemName=octref.vetur&azure-portal=true) enables support for *.vue* files in Visual Studio Code.
-- [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enable snippets in Visual Studio Code.
+- [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets&azure-portal=true) from Sarah Drasner enables snippets in Visual Studio Code.
 
-1. Inside Visual Studio Code, open the *Extensions* workbench.
+1. In Visual Studio Code, open the **Extensions** workbench.
 
-    ![Screenshot of the extensions icon.](../media/extensions.png)
+    ![Screenshot of the Extensions icon.](../media/extensions.png)
 
-1. Type *Vue VSCode Snippets* into the search dialog.
-1. Press *Install* under *Vue VSCode Snippets* to install both *Vue VSCode Snippets* and *Vetur*.
+1. Enter **Vue VSCode Snippets** in the search box.
+1. Select **Install** under **Vue VSCode Snippets** to install both Vue VSCode Snippets and Vetur.
 
     ![Screenshot of search results for Vue VSCode Snippets.](../media/snippets.png)
 
@@ -20,18 +20,18 @@ Visual Studio Code has numerous extensions the [marketplace](https://marketplace
 
 Let's create the *Host* component.
 
-1. Inside *src/components*, create a new file named *Host.vue*.
-1. Inside *Host.vue*, type `vue`, and select *\<vue\> with default.vue* from the snippets menu.
+1. In *src/components*, create a file named *Host.vue*.
+1. In *Host.vue*, type **vue**, and then select **\<vue\> with default.vue** from the snippets menu.
 
-    ![Screenshot of the snippets menu with \<vue\> with default.vue selected.](../media/vue-create.png)
+    ![Screenshot of the snippets menu with the snippet selected.](../media/vue-create.png)
 
-    The default structure will be created by the snippet.
+    The snippet will create the default structure.
 
 ## Update the script section
 
-The snippet creates the `script` element for us with `export default` already created. `export default` allows this component to be loaded by another component in Vue. We will add the needed code into this section.
+The snippet creates the `script` element for us, with `export default` already created. The `export default` command allows this component to be loaded by another component in Vue. We'll add the needed code into this section.
 
-Inside the curly braces (`{ }`) of `export default`, add the following code to name the component, register our data, and add two comments for the future:
+Inside the curly braces (`{ }`) of `export default`, add the following code to name the component, register the data, and add two comments for the future:
 
 ```javascript
 name: 'Host',
@@ -58,16 +58,16 @@ data() {
 
 ```
 
-The `name` field sets the name of the component. `data()` registers the `cruise` object as data for the component, and `bookings` which we will use later to store a list of cruise bookings. The three `TODO` comments will serve as markers for the future.
+The `name` field sets the name of the component. The `data()` part registers the `cruise` object as data for the component. We'll use `bookings` later to store a list of cruise bookings. The `TODO` comments will serve as markers for the future.
 
 > [!NOTE]
-> `TODO` comments are a great way to place notes in your code of tasks which need to be completed later.
+> `TODO` comments are a great way to place notes in your code for tasks that need to be completed later.
 
 ## Add the template
 
-With our data registered, let's add the HTML to the `template` element to display the core information. We will also add a couple of placeholders for the future.
+With the data registered, let's add the HTML to the `template` element to display the core information. We'll also add a couple of placeholders for the future.
 
-Inside the `template` element in *Host.vue*, add the following HTML to display the name and description of the cruise and a placeholder for two components we will create later:
+Inside the `template` element in *Host.vue*, add the following HTML to display the name and description of the cruise. The HTML includes a placeholder for two components that we'll create later.
 
 ```html
 <section>
@@ -97,7 +97,7 @@ Inside the `template` element in *Host.vue*, add the following HTML to display t
 
 With the HTML created, let's add the style for our application.
 
-Inside the `style` element inside *Host.vue*, add the following CSS:
+Inside the `style` element in *Host.vue*, add the following CSS:
 
 ```css
 body {
@@ -127,13 +127,13 @@ body {
 }
 ```
 
-This will add a little bit of structure and color to our application.
+This CSS will add some structure and color to our application.
 
 ## Set the Host component as the entry point into the application
 
-Vue CLI creates a *main.js* file, which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. We will update *main.js* to use our component.
+Vue CLI creates a *main.js* file, which loads *App.vue* as the entry point into the application. We created a new component called *Host* for this purpose. We'll update *main.js* to use our component.
 
-Open *main.js* and *replace* the contents by using the following code:
+Open *main.js* and replace the contents by using the following code:
 
 ```javascript
 import { createApp } from 'vue'
@@ -147,9 +147,10 @@ createApp(Host).mount('#app')
 With our component created and the script updated, let's test the page.
 
 1. Save all files by selecting **File** > **Save all**.
-1. Return to your browser and refresh the tab displaying `http://localhost:8080`
-1. Your updated page will now display:
+1. Return to your browser and refresh the tab that displays `http://localhost:8080`.
 
-    ![Screenshot of Host component displaying the name and description of the cruise.](../media/host-component.png)
+    Your updated page now appears.
 
-You have now created your first single-file component in Vue.js!
+    ![Screenshot of the Host component displaying the name and description of the cruise.](../media/host-component.png)
+
+You've now created your first single-file component in Vue.js!
