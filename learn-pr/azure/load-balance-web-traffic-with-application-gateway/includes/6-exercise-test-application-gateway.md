@@ -56,7 +56,7 @@ You just confirmed that routing to the root page works, as you were able to pull
 
 1. Now click **Register a Vehicle** in the web browser of the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
 
-    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing an image of the vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing a vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Now visit `http://<vehicleAppGateway>/LicenseRenewal/Create`. This should take you to the license renewal page running on App Service. With **/LicenseRenewal/** in the URL, this routes to the **appServicePool** where our license renewal site is running.
 
