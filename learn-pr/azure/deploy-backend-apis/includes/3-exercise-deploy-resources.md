@@ -205,12 +205,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 Now that your database and GitHub repository are configured, it's time to deploy an Azure Function app.
 
-1. First, switch to PowerShell as that's what you'll use to deploy.
-
-    ```bash
-    pwsh
-    ```
-
 1. Next, configure your variables.
 
     ```powershell
