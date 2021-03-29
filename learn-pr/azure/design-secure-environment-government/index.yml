@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.design-secure-env-government
+uid: learn.azure.design-secure-environment-government
 metadata:
   title: Design cloud solutions for the public sector
   description: Introduction to the stakes and options for implementing Azure to safeguard public sector data.
@@ -15,7 +15,9 @@ abstract: |
   - Explain the basic concept and benefits of multi-tenant cloud services.
   - Describe a conceptual architecture that protects data at various classification levels.
   - Explain how residency and encryption features keep data of all classification levels safe. 
-prerequisites: None
+prerequisites: |
+  - Familiarity with basic computing concepts and terminology.
+  - Familiarity with cloud computing.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - intermediate
@@ -24,11 +26,11 @@ roles:
 products: 
 - azure
 units: 
-- learn.azure.design-secure-env-government.1-introduction
-- learn.azure.design-secure-env-government.2-discover-cloud-solutions
-- learn.azure.design-secure-env-government.3-safeguard-data-azure
-- learn.azure.design-secure-env-government.4-design-data-classifications
-- learn.azure.design-secure-env-government.5-knowledge-check
-- learn.azure.design-secure-env-government.6-summary
+- learn.azure.design-secure-environment-government.1-introduction
+- learn.azure.design-secure-environment-government.2-discover-cloud-solutions
+- learn.azure.design-secure-environment-government.3-safeguard-data-azure
+- learn.azure.design-secure-environment-government.4-design-data-classifications
+- learn.azure.design-secure-environment-government.5-knowledge-check
+- learn.azure.design-secure-environment-government.6-summary
 badge: 
-  uid: learn.azure.design-secure-env-government.badge
+  uid: learn.azure.design-secure-environment-government.badge
