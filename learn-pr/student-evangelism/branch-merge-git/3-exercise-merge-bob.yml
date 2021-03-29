@@ -3,10 +3,10 @@ uid: learn.student-evangelism.branch-merge-git.3-exercise-merge-bob
 title: Exercise - Merge Bob's branch
 metadata:
   title: Exercise - Merge Bob's branch
-  description: Create and merge branches
-  ms.date: 06/24/2019
-  author: shanamatthews
-  ms.author: shanama
+  description: Get experience creating and merging branches.
+  ms.date: 03/16/2021
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10
