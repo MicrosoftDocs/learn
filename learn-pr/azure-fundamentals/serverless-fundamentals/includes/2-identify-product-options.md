@@ -1,3 +1,5 @@
+Watch this video for an overview of serverless computing.
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAqjM]
 
 As mentioned in the video, serverless computing is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. The term *serverless computing* is a misnomer. After all, there *is* a server (or a group of servers) that executes your code or desired functionality.  
