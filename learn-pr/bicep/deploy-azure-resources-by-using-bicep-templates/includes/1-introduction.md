@@ -1,8 +1,10 @@
-Bicep lets you define your Azure resources in a simple language, and use templates to deploy the resources to Azure. You can reuse your templates across multiple environments or applications.
+Bicep enables you define your Azure resources in a simple language, and use templates to deploy the resources to Azure. You can reuse your templates across multiple environments or applications.
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is launching a new toy. You've been asked to deploy a new marketing website and storage account into Azure in preparation for the launch of the new product. You need to build the resources using Infrastructure as Code (IaC) techniques so that you can reuse the same templates for future product launches.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your company is launching a new toy. You've been asked to deploy a new marketing website in preparation for the launch of the new product. The marketing team has also told you that there will be many new toys released this year, and they will need a website for each one.
+
+You will host the website in Azure using App Service, and you also will need a storage account to host large files like the manuals and specifications for each toy. You decide to build the resources using Infrastructure as Code (IaC) techniques so that you can reuse the template for future product launches.
 
 ## What will we be doing?
 
