@@ -145,10 +145,10 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Azure portal interface for the deployments with the five deployments listed and succeeded statuses." border="true":::
 
-2. Select the deployment that begins with **`addmodule`**, then click **Deployment details** to expand the list of deployed resources. Notice our module deployment appears in the list - in fact it appears twice, because we referenced it as an output too.
+1. Select the deployment that begins with **`addmodule`**, then select **Deployment details** to expand the list of deployed resources. Notice our module deployment appears in the list - in fact it appears twice, because we referenced it as an output too.
 
     :::image type="content" source="../media/8-addmodule-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-3. Click the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app.
+1. Select the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app.
 
     :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Azure portal interface for the specific deployment's outputs." border="true":::

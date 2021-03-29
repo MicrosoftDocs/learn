@@ -29,7 +29,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Also notice you're using a variable for the App Service plan name, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as they're all going to be deployed into different resource groups.
 
-2. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
+1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -87,7 +87,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice you're setting these variables' values by using the ternary operator to evaluate an if-then-else condition.
 
-2. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
+1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -168,8 +168,8 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
     :::image type="content" source="../media/6-addparams-deployment.png" alt-text="Azure portal interface for the deployments with the three deployments listed and succeeded statuses." border="true":::
 
-2. Select the deployment that begins with **`addparams`**, then click **Deployment details** to expand the list of deployed resources.
+1. Select the deployment that begins with **`addparams`**, then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/6-addparams-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-3. Notice that the resources have been deployed using new, randomly generated, names.
+1. Notice that the resources have been deployed using new, randomly generated, names.

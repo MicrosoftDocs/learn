@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you create a Bicep template that provisions an Azure storage account and an App Service app.
+For your toy launch website, you decide to first create a proof-of-concept by creating a basic Bicep template. In this exercise, you'll create a storage account, App Service plan and app. Later, you'll modify the template to make it more reusable.
 
 During the process, you:
 
@@ -13,7 +13,7 @@ During the process, you:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Create a Bicep template with a storage account
+## Create a Bicep template that contains a storage account
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
 
@@ -49,17 +49,17 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
-2. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
+1. If the drop-down menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
       :::image type="content" source="../media/4-bash.png" alt-text="The Visual Studio Code terminal window with bash in the drop-down." border="true":::
 
-3. If not, select the drop-down, and choose **Select Default Shell**.
+1. If not, select the drop-down, and choose **Select Default Shell**.
 
-4. Select **bash**.
+1. Select **bash**.
 
       :::image type="content" source="../media/4-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
 
-5. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
+1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
 ### Check the version of the Azure CLI
 
@@ -135,7 +135,7 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 The following code deploys the Bicep template to Azure. You'll see a successful deployment.
 
-Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
+Run the following from the terminal in Visual Studio Code to deploy the template:
 
 ```azurecli
 templateFile="main.bicep"
@@ -233,7 +233,9 @@ The top section of the preceding code sets Azure PowerShell variables, which inc
 
 ::: zone-end
 
-When you've deployed your Bicep template to Azure, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+## Verify the deployment
+
+The first time you deploy a Bicep template, you might want to use the Azure portal to verify the deployment has completed successfully and to inspect the results. To do so, go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, select **Resource groups**.
 
@@ -247,15 +249,35 @@ When you've deployed your Bicep template to Azure, go to the [Azure portal](http
 
     :::image type="content" source="../media/4-storage.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment that begins with **`storage`** to see what resources were deployed, and then click **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
+1. Select the deployment that begins with **`storage`** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
 
     :::image type="content" source="../media/4-storage-details.png" alt-text="Azure portal interface for the specific deployment with one storage account resource listed." border="true":::
 
-2. Leave the page open in your browser. You'll check on deployments again.
+1. Leave the page open in your browser. You'll check on deployments again later.
+
+::: zone pivot="cli"
+
+You can also verify the deployment from the command line. To do so, run the following Azure CLI command:
+
+```azurecli
+az deployment group list --output table
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+You can also verify the deployment from the command line. To do so, run the following Azure PowerShell command:
+
+```azurepowershell
+Get-AzResourceGroupDeployment
+```
+
+::: zone-end
 
 ## Add an App Service plan and app to your Bicep template
 
-In the previous task, you learned how to create a template with a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
+In the previous task, you learned how to create a template that contains a single resource and deploy it. Now you're ready to deploy more resources, including a dependency. In this task, you add an App Service plan and app to the Bicep template.
 
 1. In the *main.bicep* file in Visual Studio Code, add the following to the bottom of the file:
 
@@ -289,7 +311,7 @@ Here, you change the name of the deployment to better reflect what this deployme
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following commands in the terminal. These commands resemble the ones you ran previously, but the name of the deployment is changed.
 
 ```azurecli
 templateFile="main.bicep"
@@ -305,7 +327,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell commands in the terminal. These commands resemble the ones you ran previously, but the name of the deployment is changed.
 
 ```azurepowershell
 $templateFile = 'main.bicep'
@@ -320,14 +342,14 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **2 Succeeded** deployments. Select this link.
+1. Return to the Azure portal. Go to your resource group, and you'll see that there are now **2 Succeeded** deployments. Select this link.
 
 1. Notice that both deployments are in the list.
 
     :::image type="content" source="../media/4-addapp-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
 
-2. Select the deployment that begins with **`addapp`**, then click **Deployment details** to expand the list of deployed resources.
+1. Select the deployment that begins with **`addapp`**, then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Azure portal interface for the specific deployment with storage account App Service resources listed." border="true":::
 
-3. Notice that the App Service plan and app have been deployed.
+1. Notice that the App Service plan and app have been deployed.
