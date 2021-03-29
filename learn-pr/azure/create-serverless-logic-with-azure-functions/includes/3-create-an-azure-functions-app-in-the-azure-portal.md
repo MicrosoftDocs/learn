@@ -28,7 +28,7 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** page appears.
+1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -80,6 +80,6 @@ Let's create a function app in the Azure portal.
 
 ## Verify your Azure function app
 
-1. When deployment completes, select **Go to resource**. Your Function App page appears.
+1. When deployment completes, select **Go to resource**. Your Function App pane appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
