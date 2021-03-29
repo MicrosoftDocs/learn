@@ -20,7 +20,7 @@ prerequisites: |
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
   - Basic familiarity with Azure Cognitive services
-iconUrl: /learn/achievements/content-moderator-introduction.svg
+iconUrl: /learn/achievements/intro-to-content-moderator.svg
 levels:
 - beginner
 roles:
@@ -40,4 +40,4 @@ units:
 - learn.azure.intro-to-content-moderator.5-knowledge-check
 - learn.azure.intro-to-content-moderator.6-summary
 badge:
-  uid: learn.azure.content-moderator-introduction.badge
+  uid: learn.azure.intro-to-content-moderator.badge
