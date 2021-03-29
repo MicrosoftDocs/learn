@@ -22,7 +22,7 @@ Variables are usually a good option when you'll use the same values for each dep
 > [!TIP]
 > It's important to use good naming for parameters and variables. Good names make your templates easy to read and understand. Make sure you're using clear, descriptive names, and be consistent in how you name your parameters and variables.
 
-## Adding a parameter
+## Add a parameter
 
 In Bicep, you can define a parameter like this:
 
@@ -51,7 +51,7 @@ param appServiceAppName string = 'toy-product-launch-1'
 > [!NOTE]
 > In the example above, we've declared an App Service app name with a hard-coded default value. This isn't actually a good idea, because App Service apps need unique names. We'll fix this shortly.
 
-### Using parameter values in the template
+### Use parameter values in the template
 
 Once you've declared a variable, you can refer to it within the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
@@ -68,7 +68,7 @@ resource appService 'Microsoft.Web/sites@2020-06-01' = {
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
-## Adding a variable
+## Add a variable
 
 You can define a variable like this:
 
@@ -82,7 +82,7 @@ Variables are defined in a similar way to parameters, but there are a few differ
 - You must provide a value for a variable.
 - Variables don't need types. Bicep can work out the type based on the value you set.
 
-## Using expressions
+## Expressions
 
 Often when writing templates you don't want to hard-code values, or even ask for them to be specified in a parameter. Instead, you want to determine the values automatically. For example, you probably want to deploy all of of the resources in a template into a single Azure region - and you want that to just be the region that we've created the resource group in. Or, you might want to automatically create a unique name for a resource based on a particular naming strategy your company uses. _Expressions_ in Bicep are a powerful feature that lets you handle all sorts of interesting scenarios. Let's take a look at a few places where you can use expressions in Bicep template.
 
@@ -141,7 +141,7 @@ As you can see, the resource group ID includes the Azure subscription ID (`3e57e
 > [!TIP]
 > It's often a good idea to use template expressions to create resource names. Many Azure resource types have rules about the allowed characters and length of their names. Embedding the creation of resource names in the template means that anyone using the template doesn't have to remember to follow these rules themselves.
 
-### Combining strings together
+### Combine strings together
 
 If you just use the `uniqueString()` function to set resource names, we'll probably get unique names - but they won't be meaningful. A good resource name should also be descriptive so that it's clear what the resource is for. We'll often want to create a name by combining a meaningful word or string with a unique value. This way, we'll have resources that have both meaningful _and_ unique names.
 
@@ -156,7 +156,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 - `toylaunch` is a hard-coded string that helps to understand what this storage account is for.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
 
-### Selecting SKUs for resources
+### Select SKUs for resources
 
 Your toy company has decided they will use your templates to deploy the resources for the launches all of their new toys. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
 

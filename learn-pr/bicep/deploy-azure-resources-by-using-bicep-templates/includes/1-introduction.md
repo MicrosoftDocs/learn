@@ -8,13 +8,13 @@ You will host the website in Azure using App Service, and you also will need a s
 
 ## What will we be doing?
 
-In this module, you'll create a template using Bicep to deploy a set of Azure resources for this and future product launches, and use many elements of the Bicep language in the process:
+In this module, you'll create a Bicep template to deploy a set of Azure resources for this and future product launches, and use many elements of the Bicep language in the process:
 
-- Resource definitions, to deploy your Azure resources from your Bicep code.
-- Parameters, to make your template reusable.
-- Variables and expressions, to make it easier to write and deploy your template.
-- Modules, to help to structure your template into multiple files.
-- Outputs, to send data from your template and modules back to whoever or whatever is deploying your infrastructure.
+- Resource definitions to deploy your Azure resources from your Bicep code.
+- Parameters to make your template reusable.
+- Variables and expressions to make it easier to write and deploy your template.
+- Modules to help to structure your template into multiple files.
+- Outputs to send data from your template and modules back to whoever or whatever is deploying your infrastructure.
 
 ## What is the main goal?
 

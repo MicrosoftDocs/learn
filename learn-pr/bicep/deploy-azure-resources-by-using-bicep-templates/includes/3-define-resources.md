@@ -36,7 +36,7 @@ Let's look closely at some key parts of this resource definition.
 > [!TIP]
 > The Visual Studio Code extension for Bicep helps you to find the resource types and API versions for the resources you create. In future modules, we'll look at other ways you can find this information.
 
-## Defining interdependent resources
+## Define interdependent resources
 
 A Bicep template usually includes several different resources. Often, you'll need a resource to depend on another resource. This might be because you have to extract some information from one resource to be able to define another. Or, if you're deploying a web application, you have to create the server infrastructure before you can add an application to it. These relationships are called _dependencies_.
 

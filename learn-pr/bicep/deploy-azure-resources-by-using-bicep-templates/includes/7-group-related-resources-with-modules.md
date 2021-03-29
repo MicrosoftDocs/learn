@@ -36,7 +36,7 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 > [!TIP]
 > Try to use resource properties as outputs, rather than making assumptions about how resources will behave. For example, if you need to have an output for the URL to an App Service app, use the `defaultHostname` property of the app instead of creating a string for the URL yourself. Sometimes these assumptions aren't correct in different environments, or the resources change the way they work, so it's safer to have the resource tell you its own properties. 
 
-## Defining a module
+## Define a module
 
 Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you have already created files that can be used as Bicep modules!
 
@@ -63,7 +63,7 @@ Let's look closely at some key parts of this module definition.
 
 Just like templates, Bicep modules can define outputs. It's common to chain modules together within a template - the output from one module can be a parameter for another module. By using modules and outputs together, you can create powerful and reusable Bicep files.
 
-## Designing your modules
+## Design your modules
 
 A good Bicep module follows a few key principles.
 

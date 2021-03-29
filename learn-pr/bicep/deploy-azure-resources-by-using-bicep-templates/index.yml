@@ -34,8 +34,8 @@ products:
   - azure-resource-manager
 units:  
 - learn.azure.deploy-azure-resources-bicep.introduction
-- learn.azure.deploy-azure-resources-bicep.bicep-tooling
-- learn.azure.deploy-azure-resources-bicep.defining-resources
+- learn.azure.deploy-azure-resources-bicep.what-is-bicep
+- learn.azure.deploy-azure-resources-bicep.define-resources
 - learn.azure.deploy-azure-resources-bicep.define-resources-in-a-bicep-template
 - learn.azure.deploy-azure-resources-bicep.add-flexibility-using-params-and-vars
 - learn.azure.deploy-azure-resources-bicep.add-params-and-vars
