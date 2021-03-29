@@ -83,4 +83,3 @@ This option isn't a fully managed database service and, instead, falls into the 
 Consider this option only when you don't want the benefits offered by a DBaaS platform. 
 
 Let's examine Azure Database for MariaDB in more detail.
-
