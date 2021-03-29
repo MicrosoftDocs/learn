@@ -12,11 +12,11 @@ ASC is offered in two pricing tiers, **Free** and **Standard**. The Standard tie
 
 1. Sign in to the Azure portal.
 
-1. On the **Microsoft Azure** left nav bar, select **Security Center**.
+1. On the **Microsoft Azure** home page, select **All services**, search for and select *Security Center*. The **Security Center - Overview** pane appears.
 
-1. Select **Pricing & settings** on the **Security Center** main menu.
+1. In the left menu pane, under **Management**, select **Pricing & settings**.
 
-1. Select the subscription that is to be upgraded to Standard.
+1. Select the subscription that will be upgraded to Standard.
 
 1. Select **Pricing tier**.
 
