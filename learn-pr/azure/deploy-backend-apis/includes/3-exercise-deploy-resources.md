@@ -8,6 +8,9 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
+> [!IMPORTANT]
+> The language selected will be the language you need to use for the rest of module, so choose wisely!
+
 Setting up your environment and deploying some resources to start with is an important step in building full stack applications. 
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
@@ -78,7 +81,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # Get resource group and location and random string
-    $resourceGroupName = "Sandbox resource group name"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $location = $resourceGroup.Location
@@ -127,6 +130,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     The script will take several minutes to complete. While it's completing, you can configure your database for CI/CD with GitHub Actions.
 
+    If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
 1. Navigate to your repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
@@ -163,6 +171,16 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, review the previous module.
 
     ```sql
+    ALTER DATABASE SCOPED CREDENTIAL AzureBlobCredentials
+    WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
+    SECRET = 'sp=r&st=2021-03-12T00:47:24Z&se=2025-03-11T07:47:24Z&spr=https&sv=2020-02-10&sr=c&sig=BmuxFevKhWgbvo%2Bj8TlLYObjbB7gbvWzQaAgvGcg50c%3D';
+    DROP EXTERNAL DATA SOURCE RouteData;
+    CREATE EXTERNAL DATA SOURCE RouteData
+    WITH (
+        TYPE = blob_storage,
+        LOCATION = 'https://azuresqlworkshopsa.blob.core.windows.net/bus',
+        CREDENTIAL = AzureBlobCredentials
+    );
     DELETE FROM dbo.[Routes];
     INSERT INTO dbo.[Routes]
     ([Id], [AgencyId], [ShortName], [Description], [Type])
@@ -179,8 +197,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
         format='csv'
     ) t;
     GO
-    exit()
     ```
+
+1. Finally, select **CTRL+C** to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
 
 ## Deploy and configure the Azure Function app
 
@@ -195,7 +214,7 @@ Now that your database and GitHub repository are configured, it's time to deploy
 1. Next, configure your variables.
 
     ```powershell
-    $resourceGroupName = "Sandbox resource group name"
+    $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $location = $resourceGroup.Location
@@ -205,34 +224,37 @@ Now that your database and GitHub repository are configured, it's time to deploy
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
     ```
 
-> [!IMPORTANT]
-> The next step involves selecting a language for the rest of module, so choose wisely!
+1. Run the following in the cloud shell to deploy the function in your language of choice.
 
-1. Depending one which language you want to use, run the following in the terminal.
+::: zone pivot="csharp"
 
-    1. .NET Core
+```powershell
+$functionApp = New-AzFunctionApp -Name $azureFunctionName `
+    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+    -FunctionsVersion 3 -RuntimeVersion 3 -Runtime dotnet -Location $location
+```
 
-    ```powershell
-    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
-        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-        -FunctionsVersion 3 -RuntimeVersion 3 -Runtime dotnet -Location $location
-    ```
+::: zone-end
 
-    1. Python
+::: zone pivot="python"
 
-    ```powershell
-    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
-        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-        -FunctionsVersion 3 -RuntimeVersion 3.8 -Runtime python -Location $location
-    ```
+```powershell
+$functionApp = New-AzFunctionApp -Name $azureFunctionName `
+    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+    -FunctionsVersion 3 -RuntimeVersion 3.8 -Runtime python -Location $location
+```
 
-    1. Node.js
+::: zone-end
 
-    ```powershell
-    $functionApp = New-AzFunctionApp -Name $azureFunctionName `
-        -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-        -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
-    ```
+::: zone pivot="node"
+
+```powershell
+$functionApp = New-AzFunctionApp -Name $azureFunctionName `
+    -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
+    -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
+```
+
+::: zone-end
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 

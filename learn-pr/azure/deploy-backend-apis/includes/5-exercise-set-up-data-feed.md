@@ -80,6 +80,15 @@ TODO: Document exercise.
 
 ## Monitor results in the Azure portal
 <!-- Introduction paragraph -->
+
+`$resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"`
+
+If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
