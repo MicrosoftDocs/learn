@@ -49,9 +49,6 @@ Azure Database for MariaDB is available in a number of deployment options, depen
 
 Let's examine these more closely.
 
-> [!IMPORTANT]
-> At the time of writing, March 2021, Flexible Server is in Preview.
-
 #### Azure Database for MariaDB
 
 This mode provides for a fully managed database service, and requires minimal user configuration and control. This mode has the following characteristics:
