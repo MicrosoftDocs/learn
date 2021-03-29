@@ -153,6 +153,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
 
+> [!TIP]
+> If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
+
 1. Select the **...** > **Push** which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
 
 1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
