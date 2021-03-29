@@ -18,7 +18,7 @@ In this module, you'll create a template using Bicep to deploy a set of Azure re
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create Bicep templates that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your templates reusable. You'll also be able to use modules and outputs to organize your templates into separate files.
+By the end of this module, you'll be able to create Bicep templates that define your Azure resources. You'll be able to use parameters, variables, and expressions to make your templates reusable. You'll also be able to use modules and outputs to organize your templates into separate files.
 
 ## Prerequisites
 
