@@ -253,6 +253,11 @@ Now that your database and GitHub repository are configured, it's time to deploy
 
     ::: zone-end
 
+    If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
