@@ -16,7 +16,7 @@ abstract: |
     - Describe how the predictable performance and dynamic scalability of Azure Database for MariaDB make it ideal to host your database workloads.
 prerequisites: |
   - Experience administering MariaDB
-  - Experience administering Azure 
+  - Experience administering Azure
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
