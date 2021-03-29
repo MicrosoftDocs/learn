@@ -27,7 +27,7 @@ This means your cloud architects and developers can focus on app development, an
 
 ## What will we be doing?
 
-In this module, you'll identify the features of Azure Database for MariaDB. You'll be able to assess whether Azure Database for MariaDB can help you address your organization's database requirements. You'll also determine which Azure Database for MariaDB option to select.
+In this module, you'll identify the features of Azure Database for MariaDB. You'll be able to assess whether Azure Database for MariaDB can help you address your organization's database requirements. You'll contrast Azure Database for MariaDB with MariaDB on Azure VMs.
 
 ## What is the main goal?
 
