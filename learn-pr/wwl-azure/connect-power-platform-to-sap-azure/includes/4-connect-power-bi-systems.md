@@ -8,7 +8,7 @@ As we mentioned, you can choose from four major built-in connectors to access SA
 
 - Custom OData connector
 
-    ![Power BI connectors are available directly in Power BI Desktop and can be invoked by clicking on “Get data” in the Power BI Desktop application.]( ../media/1_unit4_sap_pp_l300.png)
+    ![Power BI connectors are available directly in Power BI Desktop and can be invoked by clicking on “Get data” in the Power BI Desktop application.]( ../media/1-unit4-sap-pp.png)
 
 ## Connect to SAP HANA with Power BI
 

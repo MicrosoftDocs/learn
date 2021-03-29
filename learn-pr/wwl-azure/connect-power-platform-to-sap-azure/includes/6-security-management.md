@@ -14,7 +14,7 @@ Power Platform relies on Azure Active Directory (AAD) for authentication. AAD is
 
 Developers can also register applications with AAD and use the oAuth2 authorization framework to allow their code to access platform APIs. This allows them to create applications that access SAP applications and data with high security.
 
-![Azure Active Directory provides access control whether on-premises or in the cloud.](../media/1_unit6_sap_pp_l300.png)
+![Azure Active Directory provides access control whether on-premises or in the cloud.](../media/1-unit6-sap-pp.png)
 
 In addition, you can configure Azure Active Directory to provide single sign-on and multi-factor authentication for SAP applications, Office 365, and any apps running on-premises and in Azure.
 

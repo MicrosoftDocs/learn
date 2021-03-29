@@ -4,12 +4,12 @@ title: Connect power automate and power Apps to SAP systems
 metadata:
   title: Connect power automate and power Apps to SAP systems
   description: "Connect power automate and power Apps to SAP systems"
-  ms.date: 03/28/2021
+  ms.date: 03/29/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/5-connect-power-automate-power-apps-systems.md)]

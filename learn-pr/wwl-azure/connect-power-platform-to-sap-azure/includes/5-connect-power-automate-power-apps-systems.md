@@ -22,7 +22,7 @@ Microsoft offers an SAP ERP connector for Power Apps and Power Automate. The con
 
 Choose the SAP ERP connector from within Power Automate. To use it in Power Apps, invoke the Power Automate flow you created when you selected the SAP ERP connector.
 
-![From Power Apps, you can call a Power Automate flow that connects into SAP through the SAP ERP connector and the On-Premises data gateway.](../media/1_unit5_sap_pp_l300.png)
+![From Power Apps, you can call a Power Automate flow that connects into SAP through the SAP ERP connector and the On-Premises data gateway.](../media/1-unit5-sap-pp.png)
 
 Before you can use the SAP ERP Connector, install these components on the same machine:
 
@@ -31,7 +31,8 @@ Before you can use the SAP ERP Connector, install these components on the same m
 - [SAP .NET Connector 3.0 SDK from SAP.](https://support.sap.com/en/product/connectors/msnet.html)
 
     > [!NOTE]
-    > Access to the download requires a valid S-user. You may need to reach out to your SAP team. The connector comes in 32-bit and 64-bit versions, and you must choose the 64-bit version. Install on the data gateway. In the Optional setup steps window, make sure you select the Install assemblies to GAC option.
+    > Access to the download requires a valid S-user. You may need to reach out to your SAP team. The connector comes in 32-bit and 64-bit versions, and you must choose the 64-bit version. Install on the data gateway. In the Optional setup steps window, make sure you select the Install assemblies to GAC option.
+
 If you have a unique connectivity requirement, you can [build a custom connector](https://docs.microsoft.com/connectors/custom-connectors/) and connect to it.
 
 Power Apps and Power Automate Robotic Process Automation (RPA) allow you to automate rules-based tasks from SAP data and applications. For example, you can automate legacy applications such as terminal emulators, and interact with modern web and desktop applications, Excel files, folders and more.
