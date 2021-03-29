@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.language.go-write-test-program
 metadata:
-  title: Write and test a program
+  title: Write and test a program in Go
   description: By using what you've learned about Go, write and test a complete program.
-  ms.date: 02/02/2021
+  ms.date: 02/12/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Write and test a program
+title: Write and test a program in Go
 summary: By using what you've learned about Go, write and test a complete program.
 abstract:  |
   In this module, you'll practice and learn about:
@@ -27,7 +27,7 @@ prerequisites: |
   - Knowledge of how to write functions.
   - Knowledge of how to create structures and methods.
   - Knowledge of how to use libraries like `net/http`.
-iconUrl: /learn/achievements/go-write-test-program.svg
+iconUrl: /learn/achievements/go/go-write-test-program.svg
 levels:
 - beginner
 roles:
@@ -35,6 +35,7 @@ roles:
 - student
 products:
 - azure
+- vs-code
 units:
 - learn.language.go-write-test-program.0-introduction
 - learn.language.go-write-test-program.1-project-files

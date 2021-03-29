@@ -4,7 +4,7 @@ In this exercise, you'll create a SQL database in Azure and then query the data 
 
 ## Task 1: Create the database
 
-In this task, you create a SQL database based on the _AdventureWorksLT_ sample database. 
+In this task, you create a SQL database based on the _AdventureWorksLT_ sample database.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -70,7 +70,7 @@ In this task, you create a SQL database based on the _AdventureWorksLT_ sample d
 
 ## Task 2: Test the database
 
-In this task, you configure the server and run a SQL query. 
+In this task, you configure the server and run a SQL query.
 
 1. From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page.
 
@@ -80,17 +80,19 @@ In this task, you configure the server and run a SQL query.
 
 1. Sign in as **sqluser**, with the password **Pa$$w0rd1234**.
 
-1. You will not be able to sign in. Read the error closely and make note of the IP address that needs to be allowed through the firewall.
+1. You will not be able to sign in.
+    > [!NOTE]
+    > Read the error closely and make note of the IP address that needs to be allowed through the firewall.
 
     ![Screenshot of the Query Editor sign-in page with the IP address error.](../media/query-editor-login.png)
 
 1. Select **Overview** > **Set server firewall**.
 
-1. In **Client IP address** your IP will be shown. Select **Rule name**, add your IP in both the **Start IP** and **End IP** fields, and then select **Save**.
+1. In the **Client IP address** section, your IP will be shown (verify that it is the same client IP address from the error above). Click on **+ Add client IP**, which will add a **Rule name** and put your IP in both the **Start IP** and **End IP** fields, and then select **Save**.
 
     ![Screenshot of the SQL Server firewall settings page, with the new IP rule highlighted.](../media/sql-server-firewall-settings.png)
 
-1. Return to your SQL database and the Query Editor sign-in page. Try to sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you wait and still get an error, try selecting **Firewall settings >** again.
+1. Return to your SQL database and the Query Editor sign-in page. Try to sign in again as **sqluser**, with the password **Pa$$w0rd1234**. This time you should succeed. It might take a couple of minutes for the new firewall rule to be deployed. If you wait and still get an error, verify the client IP address in the error, and try selecting **Firewall settings >** and adding the correct client IP address again.
 
 1. After you sign in successfully, the query pane appears. Enter the following query into the editor pane.
 

@@ -57,7 +57,7 @@ The **Configuration** page for a storage account enables you to modify some gene
 
 - Change the way in which the account is replicated.
 
-- Enable or disable integration with Azure AD for requests that access file shares.
+- Enable or disable integration with Azure Active Directory Domain Services (Azure AD DS) for requests that access file shares.
 
 Other options, such as the account kind and performance tier, are displayed on this page for information only; you can't change them.
 
