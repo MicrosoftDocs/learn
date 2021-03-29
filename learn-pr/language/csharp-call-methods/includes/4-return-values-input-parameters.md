@@ -13,7 +13,7 @@ dice.Next(1, 7);
 ```
 However, this would be pointless. The reason we're calling this method is so that we can retrieve the next random value from the Random object.
 
-## Input Parameters
+## Input parameters
 
 Some methods are designed to accept no input parameters. These methods need no additional input to complete their task.
 
@@ -37,7 +37,7 @@ Input parameters are defined using a data type. We can't pass values of a differ
 
 A **method signature** is the number of input parameters defined for each input parameter and the data type.
 
-## Overloaded Methods
+## Overloaded methods
 
 Many methods in the .NET Class Library have *overloaded* method signatures.
 
@@ -102,9 +102,9 @@ The second overloaded version of the method `2/3` informs that the `Next()` meth
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name.However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
-### Using docs.microsoft.com for information on overloaded methods.
+### Use docs.microsoft.com for information on overloaded methods
 
-The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help in understand exactly what each input parameter is intended for.
+The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help in understanding exactly what each input parameter is intended for.
 
 To begin, use a search engine and search for the class name and method name. You may also want to include the term `C#` to make sure not to accidentally get results for other programming languages. In this case, try searching for: `C# Random.Next()`.
 
