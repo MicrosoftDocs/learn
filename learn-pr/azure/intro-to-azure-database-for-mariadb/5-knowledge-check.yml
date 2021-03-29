@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "An Azure region failure."
       isCorrect: false
-      explanation: "Incorrect. This rare occurence would require manual intervention."
+      explanation: "Incorrect. This rare occurrence would require manual intervention."
     - content: "A user error."
       isCorrect: false
       explanation: "Incorrect. This scenario might require the administrator to instigate a point in time recovery."
