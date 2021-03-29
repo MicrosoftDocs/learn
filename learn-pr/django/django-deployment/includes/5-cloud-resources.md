@@ -1,17 +1,25 @@
-When you deploy an application to production on the cloud, there are a few considerations and steps that need to be managed. We need to determine how to deploy our application, what database to use, and ensure all setup is completed on our production environment.
+When you deploy an application to production in the cloud, you have a few considerations. You need to determine how to deploy the application and what database to use. You also need to ensure the production environment is ready.
 
 ## Deployment options
 
-You have several options available to you for deploying to Azure. One of the most convenient is to use extensions for Visual Studio Code: [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb&azure-portal=true) and [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice&azure-portal=true). Azure Databases will allow us to create our database server and database, while Azure App Service will allow us to create, configure and deploy to our web host.
+You can deploy to Azure in several ways. One of the most convenient ways is to use one of these extensions for Visual Studio Code: 
+* [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb&azure-portal=true) 
+* [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice&azure-portal=true) 
+
+Azure Databases allows you to create the database server and database. Azure App Service allows you to create, configure, and deploy to the web host.
 
 ## Database considerations
 
-Django is designed for data driven web applications. As a result, you will always have a database as part of a Django project. During development, you typically use SQLite, which is a file-based database. SQLite is a perfect solution for development because it doesn't require any special installation or services. However, the requirements for production typically include scaling, performance, and reliability, which SQLite isn't designed to manage.
+Django is designed for data-driven web applications. So every Django project usually includes a database. During development, you typically use SQLite, which is a file-based database engine.
 
-Django natively supports numerous databases including MySQL, PostgreSQL, and MariaDB. You can also find providers to enable support for SQL Server, MongoDB, and many others.
+SQLite is a perfect solution for development because it requires no special installation or services. But the requirements for production typically include scaling, performance, and reliability. SQLite isn't designed to manage these production requirements.
 
-When creating our production settings file, we noticed we configured our environment for PostgreSQL. PostgreSQL is one of the most popular databases for Django, and is also supported by Azure.
+Django natively supports many databases, including MySQL, PostgreSQL, and MariaDB. You can also find providers to enable support for SQL Server, MongoDB, and many other databases.
 
-## Creating the database schema
+When you created the production settings file, you configured the environment for PostgreSQL. PostgreSQL is one of the most popular databases for Django. It's also supported by Azure.
 
-Django manages the database schema through migrations. You can either have Django generate the SQL to create or update the schema, or you can use the `makemigrations` command to have Django update the database directly. To run migrations on our database, we can secure shell (or SSH) into App Services. This will allow us to run commands on our web host in a similar fashion to us running them locally.
+## Create the database schema
+
+Django manages the database schema through migrations. Django can generate the SQL to create, or it can update the schema. Or you can use the `makemigrations` command to make Django update the database directly. 
+
+To run migrations on the database, you can secure-shell (or *SSH*) into App Service. This method allows you to run commands on the web host the way you run them locally.

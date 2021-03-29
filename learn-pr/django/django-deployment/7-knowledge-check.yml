@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.django.deployment.7-knowledge-check
+uid: learn.django.deployment.knowledge-check
 metadata:
   title: Knowledge check
   description: Check your understanding so far.
@@ -14,25 +14,36 @@ content: |
   Choose the best response for each question. Then select **Check your answers**.
 quiz: 
   questions: 
-    - content: 'What symbol was added to "ALLOWED_HOSTS = []" in order for Azure to host our Django project?'
+    - content: "What setting maintains the list of server names that are allowed to host your application?"
       choices:
-      - content: "`-`"
+      - content: "`SECRET_KEY`"
         isCorrect: false
-        explanation: This answer is not correct.
-      - content: "`*`"
+        explanation: Incorrect. `SECRET_KEY` maintains a key for securing sessions and other resources.
+      - content: "`ALLOWED_HOSTS`"
         isCorrect: true
-        explanation: This answer is correct. By adding this symbol, Azure was allowed access to host the Django project.
-      - content: '?'
+        explanation: Correct. `ALLOWED_HOSTS` maintains the list of hosts allowed to serve your application.
+      - content: "`DATABASES`"
         isCorrect: false
-        explanation: This answer is not correct.
-    - content: What section in Azure services did you have to find in order to change the Python version for the Django project?
+        explanation: Incorrect. `DATABASES` maintains the list of database connection strings.
+    - content: In what section of Azure App Service did you change the Python version for the Django project?
       choices:
-      - content: 'Extensions'
+      - content: Extensions
         isCorrect: true
-        explanation: 'This answer is correct. The Extensions section was used to change the Python version for the Django project.'
-      - content: 'Deployment Center'
+        explanation: 'Correct. You used the Extensions section to change the Python version for the Django project.'
+      - content: Deployment Center
         isCorrect: false
-        explanation: 'This answer is not correct. The Deployment Center was used to set up and deploy the Django project.'
-      - content: 'Web App'
+        explanation: 'Incorrect. You used the Deployment Center to set up and deploy the Django project.'
+      - content: Web App
         isCorrect: false
-        explanation: 'This answer is not correct. This selection was used in the beginning of the process to create the Django project in Azure services.'
+        explanation: 'Incorrect. You used the Web App section at the beginning of the process to create the Django project in Azure App Service.'
+    - content: What Django tool is used to create and update the database schema?
+      choices:
+      - content: makemigrations
+        isCorrect: false
+        explanation: "Incorrect. The makemigrations tool creates migration scripts but doesn't run them."
+      - content: sqlmigrate
+        isCorrect: false
+        explanation: "Incorrect. The sqlmigrate tool creates SQL scripts but doesn't run them."
+      - content: migrate
+        isCorrect: true
+        explanation: 'Correct. The migrate tool creates or updates the database schema.'
