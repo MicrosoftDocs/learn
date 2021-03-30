@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-azure-cognitive-search-solution.create-data-source
-title: Create a data source
+title: Understand the indexing process
 metadata:
-  title: Create a data source
-  description: "Create a data source for your search solution."
-  ms.date: 10/29/2020
+  title: Understand the indexing process
+  description: "Understand the indexing process"
+  ms.date: 03/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-create-data-source.md)]
+  [!include[](includes/4-indexing-process.md)]

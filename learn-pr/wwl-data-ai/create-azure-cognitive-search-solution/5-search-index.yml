@@ -3,8 +3,8 @@ uid: learn.wwl.create-azure-cognitive-search-solution.search-index
 title: Search an index
 metadata:
   title: Search an index
-  description: "Use a web application to search your index."
-  ms.date: 10/29/2020
+  description: "Search an index"
+  ms.date: 03/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-search-index.md)]
+  [!include[](includes/5-search-index.md)]

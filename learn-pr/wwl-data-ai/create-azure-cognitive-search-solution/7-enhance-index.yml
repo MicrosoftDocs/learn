@@ -3,8 +3,8 @@ uid: learn.wwl.create-azure-cognitive-search-solution.enhance-index
 title: Enhance the index
 metadata:
   title: Enhance the index
-  description: "Enhance your index."
-  ms.date: 10/29/2020
+  description: "Enhance the index"
+  ms.date: 03/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/9-enhance-index.md)]
+  [!include[](includes/7-enhance-index.md)]
