@@ -32,9 +32,11 @@ In this step, you create a Synapse Spark notebook to make these calculations.
 
     ![The cell results are displayed.](../media/notebook-top-products-cell1results.png "Cell 1 results")
 
-    > [!NOTE] The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
+    > [!NOTE] 
+    > The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
 
-    > [!NOTE] To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
+    > [!NOTE] 
+    > To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
 
 6. Create a new cell underneath by selecting the **+** button nd selecting the **Code cell** item. The + button is located beneath the notebook cell on the left. Alternatively, you can also expand the **+ Cell** menu in the Notebook toolbar and select the **Code cell** item.
 
