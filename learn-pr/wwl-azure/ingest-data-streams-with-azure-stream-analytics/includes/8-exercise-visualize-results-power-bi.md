@@ -1,6 +1,6 @@
 In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundamentals/power-bi-overview) to create a report displaying captured vehicle anomaly data and pin it to a live dashboard for near-real-time updates. Power BI provides a platform for visualizing and analyzing aggregated data in a near-real-time analytics pipeline built on Azure Event Hubs, Azure Stream Analytics, and Power BI.
 
-1. Open a web browser, navigate to <https://powerbi.microsoft.com/>, and select **Sign in** on the upper-right.
+1. Open a web browser, navigate to <https://powerbi.microsoft.com/>, and select **Sign in** on the upper right.
 
     ![The Power BI home page is shown with the Sign in link highlighted.](../media/power-bi-sign-in-2.png "Power BI home page")
 
@@ -29,7 +29,7 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![The screenshot displays where to drag the fields onto the map settings.](../media/power-bi-map-fields.png "Map settings")
 
-8. Your map should look similar to the following:
+8. Your map should look similar to the following graphic:
 
     ![The map is shown on the report.](../media/power-bi-map-2.png "Map")
 
@@ -37,7 +37,7 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![The Treemap visualization is highlighted.](../media/power-bi-treemap-visualizations.png "Visualization")
 
-10. Drag the **enginetemperature** field to **Values**, then drag the **transmission_gear_position** field to **Group**. This will group the engine temperature values by the transmission gear position on the treemap so you can see which gears are associated with the hottest or coolest engine temperatures. The treemap sizes the groups according to the values, with the largest appearing on the upper-left and the lowest on the lower-right.
+10. Drag the **enginetemperature** field to **Values**, then drag the **transmission_gear_position** field to **Group**. This will group the engine temperature values by the transmission gear position on the treemap so you can see which gears are associated with the hottest or coolest engine temperatures. The treemap sizes the groups according to the values, with the largest appearing on the upper left and the lowest on the lower right.
 
     ![Screenshot displaying where to drag the fields onto the treemap settings.](../media/power-bi-treemap-fields.png "Treemap settings")
 
@@ -45,7 +45,7 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![The Average menu option is highlighted for the enginetemperature value.](../media/power-bi-treemap-average.png "Average engine temperature")
 
-12. Your treemap should look similar to the following:
+12. Your treemap should look similar to the following graphic:
 
     ![The treemap is shown on the report.](../media/power-bi-treemap.png "Treemap")
 
@@ -61,7 +61,7 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![The Average menu option is highlighted for the speed value.](../media/power-bi-areachart-average.png "Average speed")
 
-16. Your area chart should look similar to the following:
+16. Your area chart should look similar to the following graphic:
 
     ![The area chart on the report.](../media/power-bi-areachart.png "Area chart")
 
@@ -77,11 +77,11 @@ In this exercise, you use [Power BI](https://docs.microsoft.com/power-bi/fundame
 
     ![Screenshot of the format tab.](../media/power-bi-card-format.png "Multi-row card format")
 
-20. Your multi-row card should look similar to the following:
+20. Your multi-row card should look similar to the following graphic:
 
     ![The multi-row card on the report.](../media/power-bi-card.png "Multi-row-card")
 
-21. Select **Save** on the upper-right of the page.
+21. Select **Save** on the upper right of the page.
 
     ![The save button is highlighted.](../media/power-bi-save.png "Save")
 
