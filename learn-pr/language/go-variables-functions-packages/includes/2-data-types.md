@@ -41,7 +41,7 @@ invalid operation: integer16 + integer32 (mismatched types int16 and int32)
 
 As you can see, unlike in other programming languages, in Go you need to be explicit when you convert a value from one type to another. We'll talk about how to cast types properly at the end of this module.
 
-As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/). A `rune` is simply an alias for an `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, say you have this code:
+As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/?azure-portal=true). A `rune` is simply an alias for an `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, say you have this code:
 
 ```go
 rune := 'G'
@@ -50,7 +50,7 @@ println(rune)
 
 You might expect to see the program print `G` in the command prompt when you run the preceding code snippet. But you see the number `71`, which represents the Unicode character for `G`. We'll talk more about runes in the upcoming modules.
 
-You can learn about the ranges for each type by looking at the [Go source code](https://golang.org/src/builtin/builtin.go). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
+You can learn about the ranges for each type by looking at the [Go source code](https://golang.org/src/builtin/builtin.go?azure-portal=true). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
 
 ### Challenge 1:
 
@@ -193,7 +193,7 @@ var integer32 int32 = 32767
 println(int32(integer16) + integer32)
 ```
 
-Another approach for casting in Go is to use the [strconv package](https://golang.org/pkg/strconv/). For example, to convert a `string` to an `int`, and vice-versa, you could use this code:
+Another approach for casting in Go is to use the [strconv package](https://golang.org/pkg/strconv/?azure-portal=true). For example, to convert a `string` to an `int`, and vice-versa, you could use this code:
 
 ```go
 package main

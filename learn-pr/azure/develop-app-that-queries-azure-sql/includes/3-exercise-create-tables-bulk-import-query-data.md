@@ -169,6 +169,9 @@ You can now create the tables to store the data from the .csv files.
     | Authorization type | SQL server authentication |
     | Login | azuresql |
     | Password | Specify the password that you used when you created this user. |
+    
+     > [!NOTE]
+    > If you get an error signing in to the DB, check the IP listed in the error and make sure it is what was added as the clinet IP.  You can do this by clicking Overview > Set server firewall.
 
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table to hold the course information. Verify that the statement runs without any errors.
 
