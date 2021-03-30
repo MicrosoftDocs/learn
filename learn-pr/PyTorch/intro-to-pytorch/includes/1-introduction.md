@@ -5,7 +5,6 @@ Most machine learning workflows involve working with data, creating models, opti
 Before we jump into building the model you will be guided through a set of core concepts needed to understand the basics of building Machine Learning models. Then the last step will put it all together.
 
 Sections:
-
     1. What are Tensors?
     2. Load data with PyTorch Datasets and DataLoaders
     3. Transforming the Data
@@ -14,7 +13,6 @@ Sections:
     6. Learn about the Optimization Loop
     7. Save, Load and Inference
     8. The Full Model Building Process
-
 
 # Learning objectives
 
