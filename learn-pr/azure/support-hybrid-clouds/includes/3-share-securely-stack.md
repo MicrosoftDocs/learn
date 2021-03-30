@@ -8,7 +8,7 @@ Azure Stack Edge is an AI-enabled edge computing device with network data transf
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/azure-stack-edge-capabilities.png" alt-text="Azure Stack Edge capabilities":::
-Infographic 74.shows an illustration of an AI-enabled edge computing appliance with Network data transfer capabilities on the left side. On the right, are three icons representing the Azure Stack Edge capabilities. The first icon is labeled “Data pre-processing at the edge”. The second icon is labeled “Machine learning at the edge”. The third icon is labeled “Network data transfer from edge to cloud”. 
+Infographic shows an illustration of an AI-enabled edge computing appliance with Network data transfer capabilities on the left side. On the right, are three icons representing the Azure Stack Edge capabilities. The first icon is labeled “Data pre-processing at the edge”. The second icon is labeled “Machine learning at the edge”. The third icon is labeled “Network data transfer from edge to cloud”. 
 :::image-end:::
 :::column-end:::
 :::row-end:::

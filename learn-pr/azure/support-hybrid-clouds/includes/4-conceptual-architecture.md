@@ -4,7 +4,7 @@ Azure offers an unmatched variety of public, private, and hybrid cloud deploymen
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support classification levels":::
-Infographic shows a series of concentric rings which correspond to Azure support classification levels. The hub of the graphic is labeled “Top Secret — Private/hybrid cloud”. The second ring from center is labeled “Secret”, the third ring from center is labeled “Confidential”, and the fourth ring from center is labeled “Unclassified”. Spanning the second, third, and fourth rings (labeled “Secret”, “Confidential”, and “Unclassified”, respectively) is an arrow labeled “Microsoft Azure”. Above the arrow is a Microsoft Azure icon.
+Infographic shows a series of concentric rings, which correspond to Azure support classification levels. The hub of the graphic is labeled “Top Secret—Private/hybrid cloud”. The second ring from center is labeled “Secret”, the third ring from center is labeled “Confidential”, and the fourth ring from center is labeled “Unclassified”. Spanning the second, third, and fourth rings (labeled “Secret”, “Confidential”, and “Unclassified”, respectively) is an arrow labeled “Microsoft Azure”. Above the arrow is a Microsoft Azure icon.
 :::image-end:::
 :::column-end:::
 :::row-end:::
