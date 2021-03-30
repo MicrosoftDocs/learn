@@ -2,7 +2,7 @@ In the previous unit, we used the roll dice code to illustrate the two different
 
 ## Return values
 
-Some methods are designed to complete their function and end "quietly". In other words, they don't return values when they finish. They are referred to as **void methods**.
+Some methods are designed to complete their function, and end "quietly". In other words, they don't return values when they finish. They are referred to as **void methods**.
 
 Methods designed to return a value upon completion are typically the result of an operation. A return value is a primary way a method can communicate back to the code that calls the method.
 
@@ -45,6 +45,7 @@ An **overloaded method** is defined with multiple method signatures. Overloaded 
 
 In some cases, overloaded versions of a given method allow the send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
 
+
 ```csharp-interactive
 int number = 7;
 string text = "seven";
@@ -58,7 +59,7 @@ In this example, you're invoking three separate overloaded versions of the `Writ
 
 In other cases, overloaded versions of a given method allow the sending additional configuration details to the method about the result desired. For example, the `Random.Next()` method has three different overloaded versions. The three versions allow setting constraints on the randomly generated number.
 
-The following code example calls the `Random.Next()` using three different overloaded versions:
+The following code example calls the `Random.Next()` using three different overloaded versions.
 
 ```csharp-interactive
 Random dice = new Random();
@@ -102,9 +103,10 @@ The second overloaded version of the method `2/3` informs that the `Next()` meth
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name.However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
-### Use docs.microsoft.com for information on overloaded methods
 
-The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help in understanding exactly what each input parameter is intended for.
+### Use docs.microsoft.com for information about overloaded methods
+
+The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help in understand exactly what each input parameter is intended for.
 
 To begin, use a search engine and search for the class name and method name. You may also want to include the term `C#` to make sure not to accidentally get results for other programming languages. In this case, try searching for: `C# Random.Next()`.
 
@@ -119,19 +121,19 @@ The documentation follows a standard format for each class and method in the .NE
 Near the top of the web page, you'll see a section called "Overloads". There are three versions of the method listed there, with hyperlinks deeper into the page. Select the text `Next(Int32)`, and find the documentation for that specific overloaded version of the method.
 
 Each version of the method displays:
-- a brief description of the method's functionality
-- the method's definition
-- the input parameters that the method accepts
-- the return values
-- the exceptions that can be raised
-- examples of the method in use
-- additional remarks about the method
+- Brief description of the method's functionality
+- Method's definition
+- Input parameters that the method accepts
+- Return values
+- Exceptions that can be raised
+- Examples of the method in use
+- Additional remarks about the method
 
- In the "Parameters" section, we read that the `maxValue` input parameter is the "exclusive upper bound of the random number to be generated." An "exclusive upper bound" means that if we want numbers no larger than `10`, we must pass in the value `11`.
+In the *Parameters* section, we read that the `maxValue` input parameter is the "exclusive upper bound of the random number to be generated." An *exclusive upper bound* means that if we want numbers no larger than `10`, we must pass in the value `11`.
 
-We can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can see in the "Exceptions" section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
+We can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can see in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
-Like we said earlier, docs.microsoft.com is the ultimate source of truth. It's important to take the time to read the documentation to understand how a given method will work.
+Like we described earlier, docs.microsoft.com is the ultimate source of truth. It's important to take the time to read the documentation to understand how a given method will work.
 
 ## Recap
 
