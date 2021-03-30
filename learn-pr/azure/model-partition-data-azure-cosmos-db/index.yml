@@ -15,8 +15,8 @@ abstract: |
     - Determine access patterns for data
     - Apply data model and partitioning strategies to support an efficient and scalable NoSQL database
 prerequisites: | 
-  - Familiarity with Azure Cosmos DB concepts like databases, containers, documents and throughput (RU/s)
-  - Familiarity navigating Azure Cosmos DB resources and data using Data Explorer in Azure Portal, running queries, viewing query stats in results
+  - Familiarity with Azure Cosmos DB concepts like databases, containers, documents, and throughput (RU/s)
+  - Familiarity navigating Azure Cosmos DB resources and data in the Azure portal like using Data Explorer, running queries, and viewing query stats
 iconUrl: /learn/achievements/model-partition-data-azure-cosmos-db.svg
 levels: 
   - intermediate
