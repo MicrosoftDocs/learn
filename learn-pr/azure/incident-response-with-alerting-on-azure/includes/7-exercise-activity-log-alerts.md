@@ -6,7 +6,7 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
-1. On the Azure portal menu, select **Monitor**. Next, select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**. Next, select **Alerts** in the left pane.
 
 1. Select **New alert rule**.
 
