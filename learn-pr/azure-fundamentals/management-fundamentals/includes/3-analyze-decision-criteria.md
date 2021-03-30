@@ -2,13 +2,13 @@ In this unit, you'll analyze the criteria that experts employ to help them decid
 
 ### Do you need to perform one-off management, administrative, or reporting actions?
 
-Azure PowerShell or the Azure CLI are Azure management tools that allow you to quickly obtain the IP address of a virtual machine (VM) you've deployed, reboot a VM, or scale an app. You might want to keep custom scripts for both tools handy on your local hard drive for certain operations that you need to perform multiple times.
+Azure PowerShell and the Azure CLI are Azure management tools that allow you to quickly obtain the IP address of a virtual machine (VM) you've deployed, reboot a VM, or scale an app. You might want to keep custom scripts for both tools handy on your local hard drive for certain operations that you need to perform multiple times.
 
-By contrast to the Azure CLI and Powershell, Azure Resource Manager templates (ARM templates) define the infrastructure requirements in your application for repeatable deployments. Although ARM templates aren't intended for one-off scenarios, it's possible to use them for this purpose. However, for one-off scenarios, you may prefer more agile tools like PowerShell, Azure CLI scripts, or the Azure portal.
+By contrast to the Azure CLI and PowerShell, Azure Resource Manager templates (ARM templates) define the infrastructure requirements in your application for repeatable deployments. Although ARM templates aren't intended for one-off scenarios, it's possible to use them for this purpose. However, for one-off scenarios, you may prefer more agile tools like PowerShell, Azure CLI scripts, or the Azure portal.
 
-Keep in mind that ARM templates can include both PowerShell and/or Azure CLI scripts, which will give you the ability to utilize scripts for tasks that may not be possible with the ARM template itself. There is a lot of flexibility in choosing the right tool(s) for your particular need.
+Keep in mind that ARM templates can include both PowerShell and/or Azure CLI scripts, which will give you the ability to utilize scripts for tasks that may not be possible with the ARM template itself. The ability to combine Azure management tools gives flexibility in choosing the right tool(s) for your particular need.
 
-The Azure portal can perform most, if not all, management and administrative actions. If you're just learning Azure and/or need to set up and manage resources infrequently (or simply prefer a visual interface for viewing reports), it makes sense to take advantage of the visual presentation that the Azure portal offers.
+The Azure portal can perform most, if not all, management and administrative actions. If you're just learning Azure and/or need to set up and manage resources infrequently (or prefer a visual interface for viewing reports), it makes sense to take advantage of the visual presentation that the Azure portal offers.
 
 However, if you're in a cloud management or administrative role, it's less efficient to rely solely on visual scanning and clicking. To quickly find the settings and information you want to work with, the Azure CLI or PowerShell will give you the most flexibility for repeatable tasks.
 
