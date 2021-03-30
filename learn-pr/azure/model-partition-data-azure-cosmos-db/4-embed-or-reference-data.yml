@@ -25,14 +25,14 @@ quiz:
     - content: "Embedded in the same document"
       isCorrect: false
       explanation: "Embed data in the same document where the relationship is 1:1 or 1:Few."
-  - content: "How does embedding data into the same document impact performance or costs?"
+  - content: "How does embedding data into the same document affect performance or costs?"
     choices: 
     - content: "Increase latency and lower cost"
       isCorrect: false
-      explanation: "Embedding data to reduces the number of request can lower costs."
+      explanation: "Embedding data to reduce the number of request can lower costs but it doesn't increase latency."
     - content: "Lower latency"
       isCorrect: false
-      explanation: "Embedding data to reduces the number of request can improve performance but it also impacts cost."
+      explanation: "Embedding data to reduce the number of request can improve performance but it also affects cost."
     - content: "Reduce latency and cost"
       isCorrect: true
-      explanation: "Embedding data to reduces the number of request can improve performance and lower cost."
+      explanation: "Embedding data to reduce the number of request can improve performance and lower cost."
