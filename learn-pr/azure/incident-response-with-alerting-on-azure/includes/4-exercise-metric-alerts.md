@@ -38,7 +38,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. On the Azure portal menu, select **More services**, and in the search box, search for and select **Monitor**. The **Monitor - Overview** pane appears.
 
-1. In the left nav bar, select **Alerts**.
+1. In the left menu pane, select **Alerts**.
 
 1. In the top menu bar, select **New alert rule**. The **Create alert rule** pane appears.
 
@@ -46,7 +46,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Under **Scope**, select **Select resource**. The **Select a resource** pane appears.
 
-1. The **Filter by subscription** dropdown should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown, select **Virtual machines**.
+1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
     Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
@@ -60,7 +60,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Image that shows the "Configure signal logic" pane](../media/4-configure-signal-logic.png)
 
-1. In the **Configure signal logic** pane, configure the following settings:
+1. In the **Configure signal logic** pane, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -75,7 +75,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
-1. From the **Create alert rule** pane, under the **Alert rule details** section, enter the following values.
+1. From the **Create alert rule** pane, under the **Alert rule details** section, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -129,12 +129,12 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
 
-   This step presents the alert summary page, where you can see the count of the number of alerts.
+   This step presents the alert summary pane, where you can see the count of the number of alerts.
 
     ![Image that shows the alert summary page](../media/4-alert-summary-page.png)
 
 1. You configured your metric alerts with a severity of 2 and 3. Select one of the alerts to view the severity level.
 
-1. Selecting one of the alerts shows the details on the alert. 
+1. Selecting one of the alerts shows the details on the alert.
