@@ -28,7 +28,7 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 ![Diagram showing Azure Quantum optimization stack.](../media/6-azure-quantum-inspired-solutions.png)
 
-![Diagram that list companies that provide optimizaiton solutions on Azure Quantum.](../media/6-optimization-providers.PNG)
+![Diagram that list companies that provide optimizaiton solutions on Azure Quantum.](../media/6-azure-quantum-optimization-providers.png)
 
 ## What are Azure Quantum Workspaces?
 
