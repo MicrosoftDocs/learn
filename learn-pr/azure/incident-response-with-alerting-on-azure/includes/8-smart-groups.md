@@ -16,9 +16,9 @@ Think of smart groups as a dynamic filter applied to all the alerts in Azure Mon
 
 The power of smart groups is that they show you all related alerts and give improved analytics. They can often identify a previously unseen root cause.
 
-## Managing smart groups
+## Manage smart groups
 
-There are two ways to get to your smart groups: from the **Alert Summary** page or from the **All Alerts** page. Next, select **Alerts by Smart Group**.
+There are two ways to get to your smart groups: from the **Alert Summary** pane, or from the **All Alerts** pane. Next, select **Alerts by Smart Group**.
 
 ![Screenshot that highlights how to access smart groups through the Alert Summary page](../media/8-smart-group-alerts-summary.jpg)
 
