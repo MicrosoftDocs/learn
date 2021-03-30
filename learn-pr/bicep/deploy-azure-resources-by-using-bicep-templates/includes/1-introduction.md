@@ -6,6 +6,8 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 You will host the website in Azure using App Service, and you also will need a storage account to host large files like the manuals and specifications for each toy. You decide to build the resources using Infrastructure as Code (IaC) techniques so that you can reuse the template for future product launches.
 
+<!-- TODO add diagram showing the resources to deploy -->
+
 ## What will we be doing?
 
 In this module, you'll create a Bicep template to deploy a set of Azure resources for this and future product launches, and use many elements of the Bicep language in the process:

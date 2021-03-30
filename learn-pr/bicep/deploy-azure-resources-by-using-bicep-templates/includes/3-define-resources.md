@@ -1,6 +1,6 @@
 Bicep templates are the files you write. Templates define Azure resources that will be deployed.
 
-Your toy company needs you to create a reusable Bicep template for product launches. The template needs to deploy an Azure storage account and some App Service resources, which will be used for the marketing of each new product during its launch.
+Your toy company needs you to create a reusable Bicep template for product launches. The template needs to deploy an Azure storage account and App Service resources, which will be used for the marketing of each new product during its launch.
 
 In this unit, you'll learn how to define a resource in a Bicep template, how resource names work, and how you can create resources that relate to each other.
 

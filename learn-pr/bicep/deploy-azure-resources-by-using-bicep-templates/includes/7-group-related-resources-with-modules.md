@@ -36,6 +36,9 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 > [!TIP]
 > Try to use resource properties as outputs, rather than making assumptions about how resources will behave. For example, if you need to have an output for the URL to an App Service app, use the `defaultHostname` property of the app instead of creating a string for the URL yourself. Sometimes these assumptions aren't correct in different environments, or the resources change the way they work, so it's safer to have the resource tell you its own properties. 
 
+> [!CAUTION]
+> Don't create outputs for secret values like connection strings or keys. Outputs from templates can be read by anyone with access to your resource group. There are other approaches you can use to get access to secret resource properties, which we'll cover in a later module.
+
 ## Define a module
 
 Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you have already created files that can be used as Bicep modules!
@@ -72,3 +75,4 @@ A good Bicep module follows a few key principles.
 > * **A module should create more than one resource.** You shouldn't create a separate module for every resource you deploy.
 > * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they are useful to the templates that will include the module.
 > * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
+> * **A module should not output secrets.** Just like with templates, don't create module outputs for secret values like connection strings or keys.
