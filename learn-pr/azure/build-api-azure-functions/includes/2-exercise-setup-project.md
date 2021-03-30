@@ -16,7 +16,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Open Visual Studio Code.
 
-1. To open the Command Palette in Visual Studio Code, press <kbd>F1</kbd>.
+1. To open the View > Command Palette in Visual Studio Code.
 
 1. In the prompt, enter *clone*.
 
