@@ -53,6 +53,8 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 
 1. Visual Studio Code is available on all operating systems. Navigate to the [Visual Studio Code Download](https://code.visualstudio.com/Download) page and download/install the application applicable to your operating system.
 
+1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
+
 1. Open the **Extensions** blade from the left-hand taskbar. We recommend installing the following extensions:
 
     1. Azure Account
