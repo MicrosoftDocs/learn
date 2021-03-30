@@ -1,4 +1,4 @@
-In this unit, you create an Azure Synapse Spark notebook to analyze and transform data loaded by a mapping data flow and store the data in a data lake. You create a parameter cell that accepts a string parameter that defines the folder name for the data the notebook writes to the data lake. You then add this notebook to a Synapse pipeline and pass the unique pipeline run id to the notebook parameter so that you can later correlate the pipeline run with the data saved by the notebook activity. Finally, you use the Monitor hub in Synapse Studio to monitor the pipeline run, obtain the run id, then locate the corresponding files stored in the data lake.
+In this unit, you create an Azure Synapse Spark notebook to analyze and transform data loaded by a mapping data flow and store the data in a data lake. You create a parameter cell that accepts a string parameter that defines the folder name for the data the notebook writes to the data lake. You then add this notebook to a Synapse pipeline and pass the unique pipeline run ID to the notebook parameter so that you can later correlate the pipeline run with the data saved by the notebook activity. Finally, you use the Monitor hub in Synapse Studio to monitor the pipeline run, obtain the run ID, then locate the corresponding files stored in the data lake.
 
 ## About Apache Spark and notebooks
 
@@ -32,9 +32,9 @@ In this step, you create a Synapse Spark notebook to make these calculations.
 
     ![The cell results are displayed.](../media/notebook-top-products-cell1results.png "Cell 1 results")
 
-    > **Note:** The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
+    > [!NOTE] The first time you run a notebook in a Spark pool, Synapse creates a new session. This can take approximately 3-5 minutes.
 
-    > **Note:** To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
+    > [!NOTE] To run just the cell, either hover over the cell and select the _Run cell_ icon to the left of the cell, or select the cell then type **Ctrl+Enter** on your keyboard.
 
 6. Create a new cell underneath by selecting the **+** button nd selecting the **Code cell** item. The + button is located beneath the notebook cell on the left. Alternatively, you can also expand the **+ Cell** menu in the Notebook toolbar and select the **Code cell** item.
 
