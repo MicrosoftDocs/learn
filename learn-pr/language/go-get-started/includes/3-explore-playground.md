@@ -1,4 +1,4 @@
-We mentioned earlier in this module that if you don’t want to install Go on your local workstation yet, you can use the [Go Playground](https://play.golang.org/), a website that compiles and runs Go code inside a sandbox environment. This is the tool you would ordinarily use for sharing code snippets with other developers when you're sharing a solution in forums.
+We mentioned earlier in this module that if you don’t want to install Go on your local workstation yet, you can use the [Go Playground](https://play.golang.org/?azure-portal=true), a website that compiles and runs Go code inside a sandbox environment. This is the tool you would ordinarily use for sharing code snippets with other developers when you're sharing a solution in forums.
 
 Be aware that the Go Playground comes with a few limitations that might affect your learning journey. For example:
 

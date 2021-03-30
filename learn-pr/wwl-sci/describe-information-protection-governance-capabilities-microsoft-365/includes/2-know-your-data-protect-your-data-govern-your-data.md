@@ -5,7 +5,7 @@ Microsoft Information Protection and Microsoft Information Governance work toget
 
 :::image type="content" source="../media/2-know-govern-your-data-inline.png" lightbox="../media/2-know-govern-your-data-expanded.png" alt-text="The concept of know your data, protect your data, prevent data loss, and govern your data, represented by four circles.":::
 
-- **Know your data**: Organizations can understand their data landscape and identify important data across on-premises, cloud, and hybrid environments.  Capabilities and tools such as trainable classifiers (preview), activity explorer, and content explorer allow organizations to know their data.
+- **Know your data**: Organizations can understand their data landscape and identify important data across on-premises, cloud, and hybrid environments.  Capabilities and tools such as trainable classifiers, activity explorer, and content explorer allow organizations to know their data.
 - **Protect your data**: Organizations can apply flexible protection actions including encryption, access restrictions, and visual markings.
 - **Prevent data loss**: Organizations can detect risky behavior and prevent accidental oversharing of sensitive information. Capabilities such as data loss prevention policies and endpoint data loss prevention enable organizations to avoid data loss.
 - **Govern your data**: Organizations can automatically keep, delete, and store data and records in a compliant manner. Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.
