@@ -206,7 +206,7 @@ The following core requirements apply:
     :::row:::
     :::column:::
 
-    https://enterpriseregistration.windows.net
+    https://docs.microsoft.com/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy#:~:text=By%20default%2C%20the%20Azure%20AD,firewall%20requirements%20in%20your%20environment.
 
     :::column-end:::
     :::column:::

@@ -53,7 +53,7 @@ We then write the `Task` representation to the `Formatter` value `f` by using th
 
 ## Summary
 
-That concludes our journey into the `tasks.rs` module file. The last step we should take is to bind the user input captured by `cli::CommandLineArgs` with the three functions defined in this
+That concludes our journey into the `tasks.rs` module file. If you'd like to take a look at the complete code for the tasks module, check it out in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=0f267c773a546a819c815fe524792d32?azure-portal=true). The last step we should take is to bind the user input captured by `cli::CommandLineArgs` with the three functions defined in this
 module.
 
 In the next section, we'll connect those ends in the `main.rs` file and finish our application.
