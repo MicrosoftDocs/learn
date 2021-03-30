@@ -39,7 +39,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode&azure-portal=true), select **Install**, then follow the installation steps.
 
 > [!NOTE]
-> If you already have an older version of the QDK, we recommend that you [update to the latest version](/quantum/install-guide/update?azure-portal=true).
+> If you already have an older version of the QDK, we recommend that you [update to the latest version](https://docs.microsoft.com/azure/quantum/install-update-qdk?azure-portal=true).
 > After installing the QDK extension, restart Visual Studio Code to continue the next steps.
 
 ## Verify the installation

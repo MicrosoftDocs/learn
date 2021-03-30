@@ -50,7 +50,7 @@ Service health alerts are not like all the other alert types you've seen so far 
 
 The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event that you want to be alerted on. It's possible to select service issues, planned maintenance, or health advisories, or to choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
 
-## Performing actions when an alert happens
+## Perform actions when an alert happens
 
 ![Screenshot of the robot icon used to represent actions when you're creating an alert](../media/6-actions.png)
 
