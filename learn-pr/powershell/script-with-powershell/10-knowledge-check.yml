@@ -3,7 +3,7 @@ uid: learn.powershell.scripting-with-powershell.10-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
+  description: Four multiple-choice questions.
   ms.date: 02/04/2021
   author: softchris
   ms.author: chnoring
@@ -15,35 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: A script needs to have the following file ending
+    - content: Which file extension is correct for a script? 
       choices:
-        - content: The file ending should be `.pm1`
+        - content: .pm1
           isCorrect: false
-          explanation: False, it should be `.ps1`
-        - content: The file ending should be `.ps`
+          explanation: Incorrect. It should be .ps1.
+        - content: .ps
           isCorrect: false
-          explanation: False, it should be `.ps1`
-        - content: The file ending should be `.ps1`
+          explanation: Incorrect. It should be .ps1.
+        - content: .ps1
           isCorrect: true
-    - content: What's the correct way to declare a required parameter
+          explanation: Correct! 
+    - content: What's the correct way to declare a required parameter?
       choices:
-        - content: Add a decorator `required` like so `[Required]`.
+        - content: "Add this decorator: `[Required]`."
           isCorrect: false
-          explanation: There's no `Required` decorator.
-        - content: Add a `Parameter` decorator like so, `[Parameter(Mandatory)]`.
+          explanation: Incorrect. There's no `Required` decorator.
+        - content: "Add this decorator: `[Parameter(Mandatory)]`."
           isCorrect: true
-          explanation: Parameter is the decorator you should use. Mandatory is the value it needs to have, to be seen as Mandatory. You can type it like so `[Parameter(Mandatory=$true)]` as well. 
-        - content: You can't, you need to check yourself that parameter values are set.
+          explanation: "`Parameter` is the correct decorator. `Mandatory` is the correct value. You can also type it like so: `[Parameter(Mandatory=$true)]`" 
+        - content: You can't. You need to verify that parameter values are set.
           isCorrect: false
-          explanation: The `Parameter` decorator and the value `Mandatory` is what's needed.
+          explanation: Incorrect. You can use the `Parameter` decorator and the `Mandatory` value.
     - content: How can you cause a terminating error?
       choices:
-        - content: Use the keyword `Throw` following by a string or object
+        - content: Use the keyword `Throw` followed by a string or object.
           isCorrect: true
           explanation: That's correct.
-        - content: Instantiate a new instance of the class `Error` like so `new Error("error message")`
+        - content: 'Create a new instance of the class `Error`, like so: `new Error("error message")`'
           isCorrect: false
           explanation: That's not how you do it.
-        - content: Use the common parameter `ErrorAction` like so `-ErrorAction Error`
+        - content: 'Use the common parameter `ErrorAction`, like so: `-ErrorAction Error`'
           isCorrect: false
-          explanation: You can use an `-ErrorAction` to cause an error but it needs to have the argument `Stop`. `Error` is not a valid argument.
+          explanation: You can use an `-ErrorAction` to cause an error, but it needs to have the `Stop` argument. `Error` isn't a valid argument.

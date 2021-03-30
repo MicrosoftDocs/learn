@@ -3,7 +3,7 @@ uid: learn.powershell.scripting-with-powershell.4-parameters
 title: Parameters
 metadata:
   title: Parameters
-  description: This unit teaches how to add parameters to your script to make your scripts more flexible.
+  description: This unit teaches you how to add parameters to your scripts to make them more flexible.
   author: softchris
   ms.author: chnoring
   ms.date: 02/04/2021
