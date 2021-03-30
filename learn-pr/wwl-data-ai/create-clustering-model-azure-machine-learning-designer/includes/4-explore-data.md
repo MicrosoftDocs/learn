@@ -43,7 +43,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
 > [!div class="centered"]
-> ![The penguin-data dataset connected to the Select Columns in Dataset module](../media/penguin-visualization.png)
+> ![A visualization of the penguin-data dataset, showing its columns and some sample data.](../media/penguin-visualization.png)
 
 7. Note the following characteristics of the dataset:
 
