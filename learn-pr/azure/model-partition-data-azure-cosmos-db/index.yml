@@ -33,7 +33,6 @@ units:
 - learn.azure.model-partition-data-azure-cosmos-db.exercise-measure-performance
 - learn.azure.model-partition-data-azure-cosmos-db.choosing-a-partition-key
 - learn.azure.model-partition-data-azure-cosmos-db.modeling-small-lookup-tables
-- learn.azure.model-partition-data-azure-cosmos-db.knowledge-check
 - learn.azure.model-partition-data-azure-cosmos-db.summary
 badge:  
   uid: learn.azure.model-partition-data-azure-cosmos-db.badge
