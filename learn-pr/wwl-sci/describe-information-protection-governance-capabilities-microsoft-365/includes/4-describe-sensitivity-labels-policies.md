@@ -10,7 +10,7 @@ Labels are:
 - **Clear text**: Because each label is stored in clear text in the content's metadata, third-party apps and services can read it and then apply their own protective actions, if necessary.
 - **Persistent**. After you apply a sensitivity label to content, the label is stored in the metadata of that email or document. The label then moves with the content, including the protection settings, and this data becomes the basis for applying and enforcing policies.
 
-Each item that supports sensitivity labels can only have one applied to it.
+Each item that supports sensitivity labels can only have one label applied to it, at any given time.
 
 Sensitivity labels can be used to:
 
