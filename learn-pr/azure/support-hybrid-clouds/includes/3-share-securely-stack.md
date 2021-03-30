@@ -2,7 +2,16 @@ Azure Stack Edge supports the storage and processing of highest classification d
 
 ## Azure Stack Edge
 
+:::row:::
+:::column span="2":::
 Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities. It allows customers to pre-process data at the edge and move data to Azure efficiently. Azure Stack Edge uses advanced Field-Programmable Gate Array (FPGA) hardware natively integrated into the appliance to run machine learning algorithms at the edge efficiently. The size and portability allow customers to run Azure Stack Edge as close to users, apps, and data as needed. Figure 3 shows Azure Stack Edge capabilities and key use cases.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/azure-stack-edge-capabilities.png" alt-text="Azure Stack Edge capabilities":::
+Infographic 74.shows an illustration of an AI-enabled edge computing appliance with Network data transfer capabilities on the left side. On the right, are three icons representing the Azure Stack Edge capabilities. The first icon is labeled “Data pre-processing at the edge”. The second icon is labeled “Machine learning at the edge”. The third icon is labeled “Network data transfer from edge to cloud”. 
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 The ability to gather, discern, and distribute mission data is key to making critical decisions. Tools that help process and transfer data directly at the edge make this possible. For example, Azure Stack Edge, with its light footprint and built-in hardware acceleration for machine learning inferencing, is useful to further the intelligence of forward-operating units or similar mission needs with AI solutions designed for the tactical edge. Data transfer from the field, which is traditionally complex and slow, is made seamless with the [Azure Data Box](https://azure.microsoft.com/services/databox/) family of products.
 
