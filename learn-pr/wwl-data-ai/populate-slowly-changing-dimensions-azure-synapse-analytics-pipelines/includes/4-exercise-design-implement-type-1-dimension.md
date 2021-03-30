@@ -117,8 +117,6 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
 
 10. Enter **your SQL Pool name** in the **Value** field next to `DBName`.
 
-    ![The value field is highlighted.](../media/customersource-dataset.png "CustomerSource dataset")
-
 11. In the data flow editor, select the **Add Source** box below the SourceDB activity. Configure this source as the **DimCustomer** table following the same steps used for CustomerSource.
     - **Output stream name**: Enter `DimCustomer`
     - **Source type**: Select `Dataset`
@@ -132,7 +130,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
 
 1. Select **+** to the right of the `SourceDB` source on the canvas, then select **Derived Column**.
 
-    ![The plus button and derived column menu item are both highlighted.](../media/data-flow-new-derived-column.png "New Derived Column")
+    ![The plus button and derived column menu item are highlighted.](../media/data-flow-new-derived-column.png "New Derived Column")
 
 2. Under `Derived column's settings`, configure the following properties:
 
@@ -144,7 +142,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | --- | --- | --- |
     | Type in `HashKey` | `sha2(256, iifNull(Title,'') +FirstName +iifNull(MiddleName,'') +LastName +iifNull(Suffix,'') +iifNull(CompanyName,'') +iifNull(SalesPerson,'') +iifNull(EmailAddress,'') +iifNull(Phone,''))` | Creates a SHA256 hash of the table values. We use this to detect row changes by comparing the hash of the incoming records to the hash value of the destination records, matching on the `CustomerID` value. The `iifNull` function replaces null values with empty strings. Otherwise, the has values tend to duplicate when null entries are present. |
 
-    ![The form is configured as described.](../media/data-flow-derived-column-settings.png "Derived column settings")
+    ![The Derived column's settings form is configured as described.](../media/data-flow-derived-column-settings.png "Derived column settings")
 
 3. Select **+** to the right of the `CreateCustomerHash` derived column on the canvas, then select **Exists**.
 
@@ -162,7 +160,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | --- | --- |
     | `HashKey` | `HashKey` |
 
-    ![The form is configured as described.](../media/data-flow-exists-form.png "Exists settings")
+    ![The Exists settings form is configured as described.](../media/data-flow-exists-form.png "Exists settings")
 
 5. Select **+** to the right of `Exists` on the canvas, then select **Lookup**.
 
@@ -181,7 +179,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | --- | --- |
     | `CustomerID` | `CustomerID` |
 
-    ![The form is configured as described.](../media/data-flow-lookup-form.png "Lookup settings")
+    ![The Lookup settings form is configured as described.](../media/data-flow-lookup-form.png "Lookup settings")
 
 7. Select **+** to the right of `LookupCustomerID` on the canvas, then select **Derived Column**.
 
@@ -198,9 +196,10 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | Select `InsertedDate` | `iif(isNull(InsertedDate), currentTimestamp(), {InsertedDate})` | If the `InsertedDate` value is null, insert the current timestamp. Otherwise, use the `InsertedDate` value. |
     | Select `ModifiedDate` | `currentTimestamp()` | Always update the `ModifiedDate` value with the current timestamp. |
 
-    ![The form is configured as described.](../media/data-flow-derived-column-settings-2.png "Derived column settings")
+    ![The Derived column's settings form is configured as described.](../media/data-flow-derived-column-settings-2.png "Derived column settings")
 
-    > **Note**: To insert the second column, select **+ Add** above the Columns list, then select **Add column**.
+    > [!NOTE]
+    > To insert the second column, select **+ Add** above the Columns list, then select **Add column**.
 
 9. Select **+** to the right of the `SetDates` derived column step on the canvas, then select **Alter Row**.
 
@@ -216,7 +215,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | --- | --- | --- |
     | Select `Upsert if` | `true()` | Set the condition to `true()` on the `Upsert if` condition to allow upserts. This ensures that all data that passes through the steps in the mapping data flow will be inserted or updated into the sink. |
 
-    ![The form is configured as described.](../media/data-flow-alter-row-settings.png "Alter row settings")
+    ![The alter row settings form is configured as described.](../media/data-flow-alter-row-settings.png "Alter row settings")
 
 11. Select **+** to the right of the `AllowUpserts` alter row step on the canvas, then select **Sink**.
 
@@ -230,7 +229,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     - **Dataset**: Select `DimCustomer`
     - **Options**: Check `Allow schema drift` and uncheck `Validate schema`
 
-    ![The form is configured as described.](../media/data-flow-sink-form.png "Sink form")
+    ![The sink properties form is configured as described.](../media/data-flow-sink-form.png "Sink form")
 
 13. Select the **Settings** tab and configure the following properties:
 

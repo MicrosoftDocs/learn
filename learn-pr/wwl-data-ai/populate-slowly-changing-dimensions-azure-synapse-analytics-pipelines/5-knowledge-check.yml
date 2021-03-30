@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. Type 1 SCD does not create new rows when values change."
     - content: "Type 2 SCD."
       isCorrect: true
-      explanation: "correct choice"
+      explanation: "Correct. When a value changes, Type 2 SCD will add a new row for the entity with a start date, end date, and unique key which will join back to any transactions in the fact table within the effective data range."
     - content: "Type 3 SCD."
       isCorrect: false
       explanation: "Incorrect. Type 3 SCD does not create new rows when values change."
