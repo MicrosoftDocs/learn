@@ -55,7 +55,7 @@ param appServiceAppName string = 'toy-product-launch-1'
 
 Once you've declared a variable, you can refer to it within the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
-:::code language="csharp" source="../media/5-parameter-value.bicep" highlight="5":::
+:::code language="csharp" source="code/5-parameter-value.bicep" highlight="2":::
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
@@ -96,16 +96,7 @@ If someone is deploying this template, they might choose to override the default
 
 You can now use the resource location parameter inside the template, like this:
 
-```bicep
-resource appService 'Microsoft.Web/sites@2020-06-01' = {
-    name: appServiceAppName
-    location: location
-    properties: {
-        serverFarmId: appServicePlan.id
-        httpsOnly: true
-    }
-}
-```
+:::code language="csharp" source="code/5-variable-value.bicep" highlight="3":::
 
 ### Resource names
 
