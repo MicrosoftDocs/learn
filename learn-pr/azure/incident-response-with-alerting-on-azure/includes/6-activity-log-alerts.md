@@ -34,7 +34,7 @@ Like the previous alerts, activity log alerts have their own attributes:
 - **Status**: Started, failed, or succeeded.
 - **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user.
 
-### Creating a resource-specific log alert
+### Create a resource-specific log alert
 
 When you create your activity log alert, you select **Activity Log** for the signal type. You'll then see all the available alerts for the resource you select. The following screenshot shows all the administrative alerts for Azure VMs. In this example, an alert is triggered when a VM is powered off.
 
@@ -42,7 +42,7 @@ Changing the monitor service will enable you to reduce the list of options. Sele
 
 ![Screenshot of the signal logic for activity log alerts related to VMs](../media/6-example-activity-log-alert.png)
 
-### Creating a service health alert
+### Create a service health alert
 
 Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **+ Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
 
