@@ -6,7 +6,7 @@ In this unit, you'll see how Azure Monitor receives resource data, what makes up
 
 ## Data types in Azure Monitor
 
-Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will be a metric, a log, or both a metric and a log.
+Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will be a *metric*, a *log*, or both a metric and a log:
 
 - The focus for *metric*-based data types is the numerical time-sensitive values that represent some aspect of the target resource.
 - The focus for *log*-based data types is the querying of content data held in structured, record-based log files that are relevant to the target resource.
@@ -57,7 +57,7 @@ The following alert capabilities aren't yet available for the generation of moni
 - Service health alerts based on activity logs
 - Web availability tests through Application Insights
 
-## Managing alert rules
+## Manage alert rules
 
 Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
 
@@ -71,7 +71,7 @@ By default, the alert page shows a summary of all alerts. Note that the view doe
 - **Resource groups**: You can have only one resource group.
 - **Time ranges**: These ranges support the past hour, the past 24 hours, the past 7 days, and the past 30 days.
 
-### Understanding the alert state in the resolution process
+### Understand the alert state in the resolution process
 
 You control the alert state to manage and specify where you are in the alert resolution process. Currently, there are three states:
 
@@ -79,7 +79,7 @@ You control the alert state to manage and specify where you are in the alert res
 - After an admin has reviewed the alert and is working on it, the alert state changes to **Acknowledged**.
 - When the issue is resolved, the alert state is set to **Closed**.
 
-### Filtering alerts
+### Filter alerts
 
 From the alert summary window, you'll see a satellite view of the alerts being reported in Azure Monitor. You filter this view to reduce the volume of alerts being reported to a specific subset that you're interested in.
 

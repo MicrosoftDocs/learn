@@ -297,7 +297,7 @@ A second policy is created below to require multifactor authentication or a comp
 
    1. Select **Require multi-factor authentication** and **Require device to be marked as compliant** select **Select**.
 
-   2. Ensure **Require all the selected controls** is selected.
+   2. Ensure **Require one of the selected controls** is selected.
 
    3. Select **Select**.
 
