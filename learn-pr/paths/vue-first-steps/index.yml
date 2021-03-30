@@ -10,9 +10,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
 title: Take your first steps with Vue.js
-summary: Vue.js is a progressive web framework allowing developers to get up and running quickly, with just the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
-abstract: |
-    In this learning path, you'll:
+summary: |
+  Vue.js is a progressive web framework allowing developers to get up and running quickly, with just the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
+  
+  In this learning path, you'll:
     - Explore the core concepts of Vue.js.
     - Practice displaying lists and conditional data.
     - Work with forms and events.
