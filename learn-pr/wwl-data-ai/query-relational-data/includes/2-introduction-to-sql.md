@@ -71,7 +71,7 @@ The following query shows an example that joins two tables, named *Inventory* an
 SELECT *
 FROM Inventory
 JOIN CustomerOrder
-WHERE Inventory.ID = CustomerOrder.InventoryID
+ON Inventory.ID = CustomerOrder.InventoryID
 ```
 
 SQL provides aggregate functions. An aggregate function calculates a single result across a set of rows or an entire table. The example below finds the minimum value in the *MyColumn1* column across all rows in the *MyTable* table:

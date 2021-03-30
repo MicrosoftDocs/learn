@@ -30,6 +30,9 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 ## Download, install, and run Data Migration Assistant
 
+> [!NOTE]  
+>  You may need to install .Net Framework 4.8.  You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48 
+
 1. Open Internet Explorer, and go to the [Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
 1. Select **Download**, and install the migration assistant. Accept the defaults through the installation dialog box.

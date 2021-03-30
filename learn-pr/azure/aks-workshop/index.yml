@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.aks-workshop
+hidden: true
 metadata:
   title: Azure Kubernetes Service Workshop
   description: In this workshop, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
