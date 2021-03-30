@@ -33,6 +33,6 @@ quiz:
     - content: "Lower latency"
       isCorrect: false
       explanation: "Embedding data to reduces the number of request can improve performance but it also impacts cost."
-    - content: "reduce latency and cost"
+    - content: "Reduce latency and cost"
       isCorrect: true
       explanation: "Embedding data to reduces the number of request can improve performance and lower cost."
