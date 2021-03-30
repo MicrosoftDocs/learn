@@ -33,7 +33,7 @@ And in the following line of code, the input parameters are what the `WriteLine(
 Console.WriteLine(roll);
 ```
 
-Input parameters are defined using a data type. We can't pass values of a different data type as input parameters and expect the method to work. Instead, the C# compiler will catch a mistake and force a code modification before it compiles and runs it. Type checking is one way C# and .NET users check data types to prevent users from experiencing exceptions.
+Input parameters are defined using a data type. We can't pass values of a different data type as input parameters and expect the method to work. Instead, the C# compiler will catch a mistake and force a code modification before it compiles and runs it. Type checking is one way C# and .NET users check data types to prevent end-users from experiencing exceptions.
 
 A **method signature** is the number of input parameters defined for each input parameter and the data type.
 
@@ -43,7 +43,8 @@ Many methods in the .NET Class Library have *overloaded* method signatures.
 
 An **overloaded method** is defined with multiple method signatures. Overloaded methods provide different ways to call the method or provide different types of data.
 
-In some cases, overloaded versions of a given method allow the send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code.
+In some cases, overloaded versions of a given method allow the send values of different data types into the method. For example, the `Console.WriteLine()` method has 19 different overloaded versions. Most of those overloads allow sending of different types of data to be printed to the console. Consider the following code:
+
 
 ```csharp-interactive
 int number = 7;
@@ -102,6 +103,7 @@ The second overloaded version of the method `2/3` informs that the `Next()` meth
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name.However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
+
 ### Use docs.microsoft.com for information about overloaded methods
 
 The second way to learn about overloaded versions of the methods is to consult the documentation for the method. The documentation will also help in understand exactly what each input parameter is intended for.
@@ -127,7 +129,7 @@ Each version of the method displays:
 - Examples of the method in use
 - Additional remarks about the method
 
- In the *Parameters* section, we read that the `maxValue` input parameter is the "exclusive upper bound of the random number to be generated." An *exclusive upper bound* means that if we want numbers no larger than `10`, we must pass in the value `11`.
+In the *Parameters* section, we read that the `maxValue` input parameter is the "exclusive upper bound of the random number to be generated." An *exclusive upper bound* means that if we want numbers no larger than `10`, we must pass in the value `11`.
 
 We can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can see in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
