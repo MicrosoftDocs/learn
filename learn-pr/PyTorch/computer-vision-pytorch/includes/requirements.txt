@@ -1,5 +1,0 @@
-opencv-python
-Pillow
-numpy
-matplotlib
-torchsummary
