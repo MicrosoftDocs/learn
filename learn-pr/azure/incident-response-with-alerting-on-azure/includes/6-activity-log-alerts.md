@@ -44,7 +44,7 @@ Changing the monitor service will enable you to reduce the list of options. Sele
 
 ### Create a service health alert
 
-Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **+ Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
+Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
 
 ![Screenshot that shows how to create a new service health alert](../media/6-service-health-alerts.png)
 
