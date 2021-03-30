@@ -15,7 +15,7 @@ fn another_function() {
 
 A function can be called by entering its name followed by a set of parentheses, passing any arguments as necessary. In the preceding example, `another_function` required no arguments, so we haven't passed any.
 
-We defined `another_function` after the `main` function in the source code. We could have defined it before too. Rust doesn't care where you define your functions, only that they're defined somewhere.
+We defined `another_function` after the `main` function in the source code. We could have defined it before too. Rust doesn't care where in your file you define your functions, only that they're defined somewhere in your file.
 
 Let's try to declare a function that accepts parameters and returns a value.
 
@@ -25,11 +25,11 @@ In the following example, we're going to declare a function that checks if a giv
 
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
-    // If the divisor is zero, we want to return early with a `false` value
-    if divisor == 0 {
+  // If the divisor is zero, we want to return early with a `false` value
+  if divisor == 0 {
     return false;
-    }
-    dividend % divisor == 0
+  }
+  dividend % divisor == 0
 }
 ```
 
@@ -70,16 +70,16 @@ Let's see our function in action.
 
 ```rust
 fn is_divisible_by(dividend: u32, divisor: u32) -> bool {
-    if divisor == 0 {
+  if divisor == 0 {
     return false;
-    }
-    dividend % divisor == 0
+  }
+  dividend % divisor == 0
 }
 
 fn main() {
-    assert_eq!(is_divisible_by(2, 3), false);
-    assert_eq!(is_divisible_by(5, 1), true);
-    assert_eq!(is_divisible_by(24, 6), true);
+  assert_eq!(is_divisible_by(2, 3), false);
+  assert_eq!(is_divisible_by(5, 1), true);
+  assert_eq!(is_divisible_by(24, 6), true);
 }
 ```
 

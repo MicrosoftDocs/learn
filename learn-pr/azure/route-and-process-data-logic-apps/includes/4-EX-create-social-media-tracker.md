@@ -4,7 +4,7 @@ In this exercise, we'll create our social-media monitor app using the Azure port
 
 ## Locate the Azure logic app resource
 
-The first thing we need to do is create an Azure logic app. In order to do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
+The first thing we need to do is create an Azure logic app. To do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
@@ -16,7 +16,7 @@ The first thing we need to do is create an Azure logic app. In order to do that,
 
 ## Configure your Azure Logic Apps resource
 
-Now that the Azure Logic Apps resource was located, let's configure basic settings like it's resource group and location.
+Now that the Azure Logic Apps resource has been located, let's configure basic settings, like its resource group and location.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -39,7 +39,7 @@ When you create an Azure logic app in the Azure portal, you have the option of s
 
 1. In the Overview pane of your newly created logic app, select **Go to resource**.
 
-1. Scroll down to the **Templates** section, and select **Blank Logic App**. The **Logic Apps Designer** pane appears.
+1. In the left menu pane, scroll down to **Templates**, and select **Blank Logic App**. The **Logic Apps Designer** pane appears.
 
 ## Create a Twitter trigger
 
@@ -52,7 +52,7 @@ Now that we have our logic app created, we need to add a trigger. We're going to
 - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
 - **Interval:** How often to search. For example, an interval of `3` and a frequency of `Hour` would check for new tweets every three hours.
 
-Let's now create the trigger and provide values for all required parameters.
+Now, let's create the trigger and provide values for all required parameters.
 
 1. In the connectors search box, enter **Twitter**.
 

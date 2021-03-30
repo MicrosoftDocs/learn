@@ -1,5 +1,3 @@
-## Introduction
-
 Customer requirements and expectations are changing in relation to data integration. 
 The need among users to develop and debug their Extract Transform/Load (ETL) and Extract Load/Transform (ELT) workflows iteratively is therefore becoming more imperative.  
 

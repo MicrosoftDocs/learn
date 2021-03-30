@@ -97,7 +97,7 @@ Now let’s talk about the following line:
 import "fmt"
 ```
 
-The import statement gives access to your program from other code that's located in a different package. In this case, *fmt* is a standard library package, and it's documented at the [official Go documentation site](https://golang.org/pkg/fmt/). 
+The import statement gives access to your program from other code that's located in a different package. In this case, *fmt* is a standard library package, and it's documented at the [official Go documentation site](https://golang.org/pkg/fmt/?azure-portal=true). 
 
 You need this import statement because you’re using a function from this package to print a message to the screen later in the program. You can include as many imports as you want or need in your program. However, Go is very idiomatic in this regard. If you’re importing a package but not using the statement, the app won’t compile. If you’re using Visual Studio Code, the program's unused imports are removed automatically when you save the file you’re editing.
 
