@@ -41,7 +41,7 @@ Add steps to create Cosmos DB account in sandbox subscription and populate the d
     SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"
    ```
 
-1. Observe that the data coming back is now a hierarchy of customer, address and password data.
+1. Observe that the data coming back is now a hierarchy of customer, address, and password data.
 
     :::image type="content" source="../media/5-customer-query-v2.png" alt-text="Screenshot that shows the query results for customer in the database v2.":::
 
