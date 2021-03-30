@@ -1,6 +1,6 @@
 Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub UI and REST API endpoints.
 
-## Default environment variables and contexts
+## Using default environment variables and contexts
 
 Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. It is recommended that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, input `$` followed by the environment variable.
 
@@ -82,7 +82,7 @@ To cache dependencies for a job, you'll need to use GitHub's `cache` action. Thi
 | --- | --- | --- |
 | Key | Refers to the key identifier created when saving and searching for a cache. | ✅ |
 | Path | Refers to the file path on the runner to cache or search. | ✅ |
-| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | ❌ |
+| Restore-keys | Consists of alternative existing keys to caches if the desired cache key is not found. | ❌ |
 
 ```yml
 steps:
@@ -135,7 +135,7 @@ The above example has two jobs. `job_1` writes some text into the file `file.txt
 
 For more information on uploading and downloading artifacts between jobs, and to see a more detailed example using three jobs, check out [Passing data between jobs in a workflow](https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow).
 
-## Enable step debug logging in a workflow
+## Enabling step debug logging in a workflow
 
 In some cases, the default workflow logs won't provide enough detail to diagnose why a specific workflow run, job, or step has failed. For these situations, you can enable additional debug logging for two options; runs and steps. Enabling this additional logging is done by setting some repository secrets that require `admin` access to the repository to `true`. Below are the two options for additional diagnostic logging.
 
