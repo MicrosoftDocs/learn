@@ -44,7 +44,7 @@ Azure Table Storage tables are schemaless. It's easy to adapt your data as the n
 
 The primary advantages of using Azure Table Storage tables over other ways of storing data include:
 
-- It's simpler to scale. It takes the same time to insert data in an empty table, or a table with billions of entries. An Azure storage account can hold up to 500 TB of data. 
+- It's simpler to scale. It takes the same time to insert data in an empty table, or a table with billions of entries. An Azure storage account can hold up to 5 PB of data. 
 - A table can hold semi-structured data
 - There's no need to map and maintain the complex relationships typically required by a normalized relational database.
 - Row insertion is fast
