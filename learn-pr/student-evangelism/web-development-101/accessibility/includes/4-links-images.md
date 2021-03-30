@@ -31,8 +31,8 @@ Imagine the following product page:
 
 | Product      | Description        | Order        |
 | ------------ | ------------------ | ------------ |
-| Widget       | [Description]('#') | [Order]('#') |
-| Super widget | [Description]('#') | [Order]('#') |
+| Widget       | `[Description]('#')` | `[Order]('#')` |
+| Super widget | `[Description]('#')` | `[Order]('#')` |
 
 This is a pretty common layout for a page showing information about various items in a table, with links to the description and order. Duplicating the text of description and order make sense for someone using a browser. However, someone using a screen reader would only hear the words *description* and *order* repeated without context.
 

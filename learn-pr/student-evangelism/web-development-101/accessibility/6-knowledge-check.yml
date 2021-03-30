@@ -16,15 +16,15 @@ quiz:
   questions:
   - content: "Which of the following is an accessible link?"
     choices:
-    - content: "`<a href="https://www.microsoft.com">https://www.microsoft.com</a>`"
+    - content: "`<a href=\"https://www.microsoft.com\">https://www.microsoft.com</a>`"
       isCorrect: false
       explanation: "The URL should not be used as the link text because a screen reader will read the URL to the user."
-    - content: "`<a href="https://www.microsoft.com">Microsoft</a>`"
+    - content: "`<a href=\"https://www.microsoft.com\">Microsoft</a>`"
       isCorrect: true
       explanation: "Providing a few words to describe where the link will take the user is accessible link text."
-    - content: "`<a href="https://www.microsoft.com/>Click here</a>`"
+    - content: "`<a href=\"https://www.microsoft.com/>Click here</a>`"
       isCorrect: false
-      explanation: "Text like "here" and "click here" is indiscernible to a screen reader."
+      explanation: "Text like \"here\" and \"click here\" is indiscernible to a screen reader."
   - content: Which of the following is an appropriate use of ARIA (Accessible Rich Internet Applications) attributes?
     choices:
     - content: To indicate to a screen reader a `div` element is actually a `button`.

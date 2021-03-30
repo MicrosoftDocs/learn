@@ -21,7 +21,7 @@ levels:
 roles:
 - student
 products:
-- 
+- microsoft-edge
 units:
 - learn.student-evangelism.web-development-101.accessibility.introduction
 - learn.student-evangelism.web-development-101.accessibility.client-tools
