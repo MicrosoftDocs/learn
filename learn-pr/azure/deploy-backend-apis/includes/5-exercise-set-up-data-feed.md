@@ -147,6 +147,8 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Select **New application setting** and add **`AzureSQLConnectionString`** with the value from your **local.settings.json** file. Select **OK**.
 
+1. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You will update this later. Select **OK**.
+
 1. Select **Save** to add the new settings. Select **Continue** to confirm.
 
 1. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
