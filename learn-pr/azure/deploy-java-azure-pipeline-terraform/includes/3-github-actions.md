@@ -48,7 +48,7 @@ In the next unit, we'll set up a sample project and use GitHub Actions with Terr
 
 ## Key concepts for new Azure Pipelines
 
-Let's learn about the key concepts and components that make up an Azure Pipeline.
+Let's learn about the components that make up an Azure Pipeline.
 
 ![key concepts graphic](../media/3-workflow-concepts.svg)
 
@@ -60,6 +60,9 @@ Let's learn about the key concepts and components that make up an Azure Pipeline
 - A step can be a **task** or **script** and is the smallest building block of a pipeline.
 - A **task** is a pre-packaged script that does an action, such as invoking a REST API or publishing a build artifact.
 - An **artifact** is a collection of files or packages published by a run.
+
+> [!TIP]
+> For more in-depth information about the different Pipeline components and how to use them, see the Links provided in the **Summary** section.
 
 ## Terraform Tasks for Azure Pipelines
 
