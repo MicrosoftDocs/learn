@@ -199,6 +199,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
         firstrow=2,
         format='csv'
     ) t;
+    SET QUOTED_IDENTIFIER ON;
+    SET ANSI_NULLS ON;
     INSERT INTO dbo.[GeoFences] 
         ([Name], [GeoFence]) 
     VALUES
