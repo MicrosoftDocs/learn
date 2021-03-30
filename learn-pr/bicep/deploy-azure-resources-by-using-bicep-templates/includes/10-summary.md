@@ -6,7 +6,7 @@ Imagine how much work it would be to deploy these resources for each new product
 
 Bicep makes it easy to describe your Azure resources and create reusable templates. You can parameterize the templates, and use modules to separate your templates into different components that you can reuse and work on individually. Now, when you want to prepare your resources for the next product launch, you can use the Bicep template you created with parameter values that are unique to that product launch, letting your company quickly and easily provision their Azure resources.
 
-<!-- TODO links
-https://docs.microsoft.com/azure/templates/
-https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions
--->
+## References
+
+- [Template reference for each Azure resource type](/azure/templates/)
+- [Template functions](/azure/azure-resource-manager/templates/template-functions)
