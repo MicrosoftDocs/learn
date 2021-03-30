@@ -28,7 +28,7 @@ In the case of the dimension tables in this exercise, the amount of data stored 
 
     ![Data hub.](../media/data-hub.png "Data hub")
 
-5. Select the **Workspace** tab **(1)**, expand Databases, then right-click on your **SQLPool (2)**. Select **New SQL script (3)**, then select **Empty script (4)**.
+5. Select the **Workspace** tab **(1)**, expand Databases, then right-click on your **SQLPool01 (2)**. Select **New SQL script (3)**, then select **Empty script (4)**.
 
     ![The data hub is displayed with the context menus to create a new SQL script.](../media/new-sql-script.png "New SQL script")
 
@@ -306,6 +306,6 @@ In the case of the dimension tables in this exercise, the amount of data stored 
 
     You should see an output similar to the following:
 
-    ![The reseller query results are displayed.](../media/reseller-query-results-synapse.png "Reseller query results")
+    [![The reseller query results are displayed.](../media/reseller-query-results-synapse.png)](../media/reseller-query-results-synapse.png#lightbox)
 
 Remember to **pause your SQL Pool** to avoid extra cost if you are not continuing to another exercise.

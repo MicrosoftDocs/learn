@@ -138,6 +138,6 @@ GO
 
     You should see an output similar to the following:
 
-    ![The query results are displayed in a table.](../media/reseller-query-results-date-filter-synapse.png "Reseller query results with date filter")
+    [![The query results are displayed in a table.](../media/reseller-query-results-date-filter-synapse.png)](../media/reseller-query-results-date-filter-synapse.png#lightbox)
 
     > Notice how using the **time dimension table** makes filtering by specific date parts and logical dates (such as fiscal year) easier and more performant than calculating date functions on the fly.

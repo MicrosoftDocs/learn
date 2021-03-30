@@ -12,4 +12,4 @@ Generally, dimension tables contain a relatively small number of rows. Fact tabl
 
 Below is an example star schema, where the fact table is in the middle, surrounded by dimension tables:
 
-![Example star schema.](../media/star-schema.png "Star schema")
+[![Example star schema.](../media/star-schema.png)](../media/star-schema.png#lightbox)

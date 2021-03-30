@@ -23,18 +23,18 @@ quiz:
       explanation: "Incorrect. Hash distribution will distribute across compute nodes but lead to data shuffling when joining to a distributed fact table."
     - content: "DISTRIBUTION = REPLICATE."
       isCorrect: true
-      explanation: "Correct. Replicate will result in a copy of the table on each compute node which performs well with joins to the distributed fact table."
+      explanation: "Correct. Replicate will result in a copy of the table on each compute node, which performs well with joins to the distributed fact table."
   - content: "What distribution option would be best for a sales fact table that will contain billions of records?"
     choices:
     - content: "DISTRIBUTION = HASH([SalesOrderNumber])."
       isCorrect: true
-      explanation: "Correct. Hash distribution provides good read performancefor a large table by distributing records across compute nodes based on the hash key."
+      explanation: "Correct. Hash distribution provides good read performance for a large table by distributing records across compute nodes based on the hash key."
     - content: "DISTRIBUTION = HEAP."
       isCorrect: false
       explanation: "Incorrect. Heap is not a distribution option."
     - content: "DISTRIBUTION = REPLICATE."
       isCorrect: false
-      explanation: "Incorrect. Replicate will result in a copy of the table on each compute node which is not optimal for a large table."
+      explanation: "Incorrect. Replicate will result in a copy of the table on each compute node, which is not optimal for a large table."
   - content: "What is the difference between a star schema and a snowflake schema?"
     choices:
     - content: "A star schema uses surrogate keys while a snowflake schema uses business keys."
