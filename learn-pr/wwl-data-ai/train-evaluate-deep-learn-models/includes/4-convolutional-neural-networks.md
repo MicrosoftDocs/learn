@@ -8,7 +8,7 @@ CNNs consist of multiple layers, each performing a specific task in extracting f
 
 ### Convolution layers
 
-One of the principle layer types is a *convolutional* layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values.
+One of the principal layer types is a *convolutional* layer that extracts important features in images. A convolutional layer works by applying a filter to images. The filter is defined by a *kernel* that consists of a matrix of weight values.
 
 For example, a 3x3 filter might be defined like this:
 
