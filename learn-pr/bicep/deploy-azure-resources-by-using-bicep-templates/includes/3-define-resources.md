@@ -25,10 +25,10 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
 Let's look closely at some key parts of this resource definition.
 
 * The `resource` keyword at the start tells Bicep that you're about to define a resource.
-* Next, you give the resource a _symbolic name_. In the example above the resource's symbolic name is `storageAccount`. Symbolic names are used within Bicep to refer to the resource - but they won't ever show up in Azure.
+* Next, you give the resource a _symbolic name_. In the example above, the resource's symbolic name is `storageAccount`. Symbolic names are used within Bicep to refer to the resource - but they won't ever show up in Azure.
 * `Microsoft.Storage/storageAccounts@2019-06-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you are declaring an Azure storage account. `2019-06-01` is the version of the Azure Storage API that Bicep will use when it creates the resource.
 * You have to declare a _resource name_, which is the name that the storage account will actually get assigned in Azure. You set a resource name by using the `name` keyword.
-* You then set other _properties_ of the resources, such as its location, SKU (pricing tier), kind, and other properties. The properties you can define are different for each resource type. In this example, we're setting the storage account's access tier to 'Hot'.
+* You then set other _properties_ of the resources, such as its location, SKU (pricing tier), kind, and other properties. The properties you can define are different for each resource type, and different API versions may introduce different properties too. In this example, we're setting the storage account's access tier to 'Hot'.
 
 > [!TIP]
 > Resource names often have rules that you have to follow, like maximum lengths, allowed characters, and being unique across all of Azure. It's a good idea to test your Bicep template so you can make sure that your resource names are valid.

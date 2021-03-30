@@ -1,4 +1,4 @@
-Bicep enables you define your Azure resources in a simple language, and use templates to deploy the resources to Azure. You can reuse your templates across multiple environments or applications. This helps you to reduce your manual operations by automating deployments, scale your Azure solutions more easily and quickly, and ensure higher quality and consistency of your deployments.
+Bicep enables you to define your Azure resources in a simple language, and use templates to deploy the resources to Azure. You can reuse your templates across multiple environments or applications. This helps you to reduce your manual operations by automating deployments, scale your Azure solutions more easily and quickly, and ensure higher quality and consistency of your deployments.
 
 ## Example scenario
 

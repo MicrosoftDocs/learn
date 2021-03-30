@@ -1,6 +1,6 @@
 Templates are powerful because of their reusability. You can use Bicep to write templates that deploy multiple separate environments or copies of your resources.
 
-Your toy company will be launching new products regularly, and you need to use the Bicep templates to create the Azure resources required for each product launch. You need to avoid using fixed resource names. Many types of Azure resources need unique names, so embedding names in your template mean you can't reuse the template for multiple different product launches. You also have to deploy the resources in different locations depending on where the toys will be launched, which means you can't embed the resource locations in your template either.
+Your toy company will be launching new products regularly, and you need to use the Bicep templates to create the Azure resources required for each product launch. You need to avoid using fixed resource names. Many types of Azure resources need unique names, so embedding names in your template means you can't reuse the template for multiple different product launches. You also have to deploy the resources in different locations depending on where the toys will be launched, which means you can't embed the resource locations in your template either.
 
 In this unit, you'll learn about _parameters_ and _variables_, which are two Bicep features you can use to make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
@@ -102,7 +102,7 @@ You can now use the resource location parameter inside the template, like this:
 
 Many Azure resources need to have unique names. In your scenario, you've got two resources that need to have unique names - the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses the template since they need to find a name that nobody else has used.
 
-Bicep has another function called `uniqueString()` that you comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all of the deployments of the same resources. If you choose a good seed value, then you can get the same name every time you deploy the same set of resources, but you'll get a different name whenever you deploy a different set of resources using the same template. Let's take a look at how you might use the `uniqueString()` function:
+Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all of the deployments of the same resources. If you choose a good seed value, then you can get the same name every time you deploy the same set of resources, but you'll get a different name whenever you deploy a different set of resources using the same template. Let's take a look at how you might use the `uniqueString()` function:
 
 ```bicep
 param storageAccountName string = uniqueString(resourceGroup().id)
@@ -140,7 +140,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 
 ### Select SKUs for resources
 
-Your toy company has decided they will use your templates to deploy the resources for the launches all of their new toys. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
+Your toy company has decided they will use your templates to deploy the resources for the launches of all their new toys. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
 
 - In production environments, storage accounts must be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans must be deployed using the `P2_v3` SKU for higher performance.
 - In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the free `F1` SKU.
