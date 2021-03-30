@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.connect-commands.3-exercise-pipeline
-title: Exercise - Pipeline
+title: Exercise - Construct a pipeline
 metadata:
-  title: Exercise - Pipeline
-  description: In this exercise you construct a pipeline using multiple cmdlets.
+  title: Exercise - Construct a pipeline
+  description: In this exercise, you construct a pipeline  by using multiple cmdlets.
   author: softchris
   ms.author: chnoring
   ms.date: 02/16/2021

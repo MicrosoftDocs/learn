@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.connect-commands.4-formatting
-title: Formatting
+title: Use formatting and filtering
 metadata:
-  title: Formatting
-  description: In this unit, you'll learn about the concepts of _filtering left_ and _formatting right_ to ensure your pipeline statements are efficient, for execution speed but also with useful formatting.
+  title: Use formatting and filtering
+  description: In this unit, you'll learn how the concepts of _filtering left_ and _formatting right_ help ensure pipeline statement efficiency, for both execution speed and useful formatting.
   author: softchris
   ms.author: chnoring
   ms.date: 02/16/2021

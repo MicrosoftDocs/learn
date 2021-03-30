@@ -3,7 +3,7 @@ uid: learn.powershell.connect-commands.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
+  description: Let's check to see what you've learned so far.
   ms.date: 02/16/2021
   author: softchris
   ms.author: chnoring
@@ -19,53 +19,32 @@ quiz:
         - content: "`Get-Process | Select-Object Name | Where-Object Name -eq
             name-of-process`"
           isCorrect: false
-          explanation: In this statement, the filtering happens last (that is, on the
-            _right_ side of the statement). Filtering last is inefficient and
-            slow, especially if the command is sent over the network and the
-            data store is large.
+          explanation: In this statement, the filtering happens last (that is, at the _right side_ of the statement). Filtering last is inefficient and slow, especially if the command is sent over the network and the data store is large.
         - content: "`Get-Process | Where-Object Name -eq name-of-process | Select-Object
             name-of-process`"
-          explanation: Almost. In this statement, filtering happens early (that is, on the
-            right side of the statement). But the statement would be faster if
-            it used the built-in filter.
+          explanation: Almost. In this statement, filtering happens early (that is, at the _right side_ of the statement). But the statement would be faster if it uses the built-in filter.
           isCorrect: false
         - content: "`Get-Process -Name name-of-process | Select-Object Name`"
           isCorrect: true
-          explanation: Correct. This solution is the best choice. The statement filters
-            early and uses a built-in filter.
-    - content: How do you know if a command accepts pipeline input?
+          explanation: Correct. This solution is the best choice. The statement filters early and uses a built-in filter.
+    - content: How do you know whether a command accepts pipeline input?
       choices:
-        - content: If a parameter accepts an array, with a type, then it accepts pipeline
-            input.
-          explanation: Incorrect. It needs to set the `Accept pipeline input?` to True as
-            well with description being either `(ByValue)` or
-            `(ByPropertyName)`.
+        - content: If a parameter accepts an array, with a type, it accepts pipeline input.
+          explanation: Incorrect. It also needs to set the `Accept pipeline input?` to 'True', with a description that is either `(ByValue)` or `(ByPropertyName)`.
           isCorrect: false
-        - content: It has the property `Accept pipeline input?` set to True, with
-            description being either `(ByValue)` or `(ByPropertyName)`.
+        - content: It has the property `Accept pipeline input?` set to 'True', with description that is either `(ByValue)` or `(ByPropertyName)`.
           isCorrect: true
-        - content: The parameter has the property `Pipeline` set to True.
-          explanation: Incorrect. It needs to have the property `Accept pipeline input?`
-            set to True.
+        - content: The parameter has the property `Pipeline` set to 'True'.
+          explanation: Incorrect. It needs to have the property `Accept pipeline input?` set to 'True'.
           isCorrect: false
-    - content: What does it mean when a parameter `-Id` of type `<System.Int32[]>` has
-        the following description `Accept pipeline input?       True
-        (ByPropertyName)`?
+    - content: What does it mean when a parameter `-Id` of type `<System.Int32[]>` has the description `Accept pipeline input?  True  (ByPropertyName)`?
       choices:
-        - content: It means it accepts an array of objects, as pipeline input, where each
-            object has a property with the name `Id`.
+        - content: It means the parameter accepts an array of objects as pipeline input, where each object has a property with the name `Id`.
           isCorrect: true
-          explanation: Correct. The `(ByPropertyName)` description, allows an object to
-            _only_ needing to match on a singular property. To make an object
-            match a pipeline input, you might need to rename a specific
-            property, rather than cast the entire object to a new type, that
-            would be required with `(ByValue)`.
-        - content: The parameter `Id`, accepts pipeline input in the form of an array of
-            `Int32`.
+          explanation: Correct. The `(ByPropertyName)` description, allows an object to need to match _only_ on a singular property. To make an object match a pipeline input, you might need to rename a specific property. You do this rather than cast the entire object to a new type, which would be required with `(ByValue)`.
+        - content: The parameter `Id` accepts pipeline input in the form of an array of `Int32`.
           isCorrect: false
-          explanation: Incorrect. It accepts a pipeline input, an array of objects, where
-            each object needs to have a property called `Id` of type `Int32`.
+          explanation: Incorrect. `Id` accepts a pipeline input of an array of objects, where each object needs to have a property called `Id` of type `Int32`.
         - content: The parameter `Id` accepts an `Int32` as input.
-          explanation: Incorrect. It accepts a pipeline input, an array of objects, where
-            each object needs to have a property called `Id` of type `Int32`.
+          explanation: Incorrect. `Id` accepts a pipeline input of an array of objects, where each object needs to have a property called `Id` of type `Int32`.
           isCorrect: false
