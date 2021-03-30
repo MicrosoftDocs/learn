@@ -147,7 +147,7 @@ az deployment group create \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
+The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
 
 You see ```Running...``` in the terminal.
 
