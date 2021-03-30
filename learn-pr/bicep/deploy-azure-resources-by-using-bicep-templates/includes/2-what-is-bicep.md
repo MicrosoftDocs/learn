@@ -6,7 +6,7 @@ You may already be familiar with ARM templates. These are JSON files that repres
 
 Bicep solves these problems by using a much simpler language, which has been designed specifically to help you deploy resources to Azure.
 
-Behind the scenes, Azure Resource Manager works based on the JSON templates. When you submit a Bicep template to ARM, the Bicep tooling converts your template to a JSON format in a process called _transpilation_. This isn't something you typically have to think about, but if you want to, you can view the JSON template file that Bicep creates.
+Behind the scenes, Azure Resource Manager still operates based on the same JSON templates. When you submit a Bicep template to ARM, the Bicep tooling converts your template to a JSON format in a process called _transpilation_. This isn't something you typically have to think about, but if you want to, you can view the JSON template file that Bicep creates.
 
 :::image type="content" source="../media/2-bicep-to-json.png" alt-text="Diagram illustrating a template author, a Bicep template, an emitted JSON template, and a deployment to Azure." border="false":::
 

@@ -1,4 +1,4 @@
-Bicep templates are the files you write. Templates define Azure resources that will be deployed.
+Bicep templates are the files that you author, and they define the Azure resources to be deployed.
 
 Your toy company needs you to create a reusable Bicep template for product launches. The template needs to deploy an Azure storage account and App Service resources, which will be used for the marketing of each new product during its launch.
 
@@ -27,14 +27,15 @@ Let's look closely at some key parts of this resource definition.
 * The `resource` keyword at the start tells Bicep that you're about to define a resource.
 * Next, you give the resource a _symbolic name_. In the example above, the resource's symbolic name is `storageAccount`. Symbolic names are used within Bicep to refer to the resource - but they won't ever show up in Azure.
 * `Microsoft.Storage/storageAccounts@2019-06-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you are declaring an Azure storage account. `2019-06-01` is the version of the Azure Storage API that Bicep will use when it creates the resource.
+  > [!TIP]
+  > The Visual Studio Code extension for Bicep helps you to find the resource types and API versions for the resources you create. In future modules, we'll look at other ways you can find this information.
 * You have to declare a _resource name_, which is the name that the storage account will actually get assigned in Azure. You set a resource name by using the `name` keyword.
+  > [!IMPORTANT]
+  > Remember that symbolic names are only used within the Bicep template and won't appear in Azure. Resource names _do_ appear in Azure.
 * You then set other _properties_ of the resources, such as its location, SKU (pricing tier), kind, and other properties. The properties you can define are different for each resource type, and different API versions may introduce different properties too. In this example, we're setting the storage account's access tier to 'Hot'.
 
 > [!TIP]
 > Resource names often have rules that you have to follow, like maximum lengths, allowed characters, and being unique across all of Azure. It's a good idea to test your Bicep template so you can make sure that your resource names are valid.
-
-> [!TIP]
-> The Visual Studio Code extension for Bicep helps you to find the resource types and API versions for the resources you create. In future modules, we'll look at other ways you can find this information.
 
 ## What happens when resources depend on each other?
 
