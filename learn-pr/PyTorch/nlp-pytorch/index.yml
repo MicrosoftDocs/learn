@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.PyTorch.nlp-pytorch.nlp-pytorch
+metadata:
+  title: Introduction to Natural Language Processing with PyTorch
+  description: Learn how to handle language and solve natural language processing tasks with PyTorch
+  ms.date: 06/04/2020
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Natural Language Processing with PyTorch
+summary: Learn how to handle language and solve natural language processing tasks with PyTorch
+abstract: |
+  This module focuses on the area of Natural Language Processing (NLP). We will learn about main NLP tasks, and will concentrate on classification. We will learn:
+  - How to represent text and feed it to neural networks
+  - How to represent meaning of text as number vector using embeddings
+  - About special neural network architectures (RNNs, LSTMs, etc.) that can extract sequential patterns
+  - The main idea behind state-of-the-art transformer architectures, attention, and how to use pre-trained transformer models to achieve higher accuracy of your NLP tasks 
+iconUrl: /learn/achievements/.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- developer
+products:
+- azure
+prerequisites: None
+units:
+- learn.PyTorch.nlp-pytorch.introduction
+- learn.PyTorch.nlp-pytorch.representing-text
+- learn.PyTorch.nlp-pytorch.embeddings
+- learn.PyTorch.nlp-pytorch.recurrent-networks
+- learn.PyTorch.nlp-pytorch.generative-networks
+- learn.PyTorch.nlp-pytorch.attention-transformers
+- learn.PyTorch.nlp-pytorch.knowledge-check
+- learn.PyTorch.nlp-pytorch.summary
+
+badge:
+  uid: learn.PyTorch.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.PyTorch.computer-vision-pytorch.multilayer-dnn
+title: Training Multi-Layered Perceptron
+metadata:
+  title: Training Multi-Layered Perceptron
+  description: In this unit, we learn about multi-layered networks, and about different ways to define neural networks in PyTorch. 
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-multilayer-dnn.ipynb)]
