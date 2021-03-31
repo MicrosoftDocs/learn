@@ -1,6 +1,6 @@
 # Goal
 
-We will introduce overall performance suggestions regarding reference architecture, client VMs and network running your EDA applications on Azure NetApp Files.
+We'll introduce overall performance suggestions regarding reference architecture, client VMs, and network running your EDA applications on Azure NetApp Files.
 
 ## Reference Architecture
 
@@ -14,6 +14,6 @@ It's always the best practice to run the latest OS patch version available, and 
 
 ## Accelerate Networking and VNET
 
-It is always the best practice to enable Accelerated Networking on Azure Virtual Machines, if supported, to provide 30+ Gb/s in networking throughput.
+It's always the best practice to enable Accelerated Networking on Azure Virtual Machines, if supported, to provide 30+ Gb/s in networking throughput.
 
 Client VMs and Azure NetApp Files to be in the same VNET when possible, to reduce network latency in between.

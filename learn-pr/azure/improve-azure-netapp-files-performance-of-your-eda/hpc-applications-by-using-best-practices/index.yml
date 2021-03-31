@@ -12,7 +12,7 @@ title: Improve Azure NetApp Files Performance of your EDA/HPC Applications by us
 summary: You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice. 
 abstract: | 
   By the end of this module, you'll be able to: 
-  - List the best practices which would be able to improve Azure NetApp Files performance.
+  - List the best practices that would be able to improve Azure NetApp Files performance.
   - Describe the performance impact of the best practices on FIO and EDA Benchmarking suite.
 prerequisites: | 
   - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.

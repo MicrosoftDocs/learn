@@ -12,21 +12,21 @@ You'll need to know the performance tips and best practices to improve Azure Net
 
 ## What will we be doing?
 
-In this module, we will introduce overall performance suggestions regarding reference architecture, client VMs and network.
+In this module, we'll introduce overall performance suggestions regarding reference architecture, client VMs and network.
 
-We will then list and discuss several performance tips including mounting options and client VM configurations.
+We'll then list and discuss several performance tips including mounting options and client VM configurations.
 
-And we will then examine the benchmarking results to verify the performance tips we discussed.
+And we'll then examine the benchmarking results to verify the performance tips we discussed.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-- List the best practices which would be able to improve Azure NetApp Files performance.
+- List the best practices that would be able to improve Azure NetApp Files performance.
 - Describe the performance impact of the best practices on FIO and EDA Benchmarking suite.
 
 ## Prerequisites
 
-- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool and Volumes.
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool, and Volumes.
 - Ability to set up Azure NetApp Files and create a Volume.
 - Ability to mount the Azure NetApp Files Volume from a Virtual Machine.

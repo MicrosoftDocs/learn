@@ -1,18 +1,18 @@
 # Goal
 
-We will list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
+We'll list and discuss several performance tips including mounting options and client VM configurations when running your HPC/EDA applications on Azure NetApp Files.
 
-Note NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practice before deploying in production.
+Note: NFS client best practices are dependent on the applications being used. The following suggestions are not set in stone and can be overridden by application recommendations or by workload testing. Therefore, it's highly recommended to test those practices before deploying in production.
 
 ## actimeo & nocto
 
 The actimeo mount option controls the NFS client caches attributes of a directory. If not specified, the NFS client uses a 60-sec maximum.
 
-Nocto stands for “no close-to-open,” which means that a file can close before a write has completed to save time. By default, nocto is not set, which means that all files will wait to finish writes before allowing a close.
+Nocto stands for “no close-to-open,” which means a file can close before a write has completed to save time. By default, nocto is not set, which means all files will wait to finish writes before allowing a close.
 
 Most HPC applications, including EDA in our scenario, have relatively static data sets. In that case, nocto and actimeo can be used to reduce getattr/access operations to storage and speed up the application.
 
-For example, setting "nocto,actimeo=600" is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there is no cache coherency to maintain and it will eliminate metadata calls and improve the overall performance.
+For example, setting "nocto,actimeo=600" is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there's no cache coherency to maintain and it will eliminate metadata calls and improve the overall performance.
 
 ## Update /etc/sysctl.conf
 
@@ -78,9 +78,9 @@ The "nconnect" NFS mount option has entered General Availability in the Linux ke
 uname -r
 ```
 
-The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And it's value gradually diminishes when # of clients increases, as there is only certain amount of bandwidth in total to go around.
+The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And its value gradually diminishes when # of clients increases, as there's only certain amount of bandwidth in total to go around.
 
-Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you are using nconnect=8 or 16.
+Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you're using nconnect=8 or 16.
 
 However, please note that "nconnect" is only available for Linux kernel 5.3+ VMs, and you might need to reboot the VM when upgrading the kernel. Which means it might not be applicable for some cases.
 
