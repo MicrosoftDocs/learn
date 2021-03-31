@@ -31,7 +31,12 @@ Guidance for content and exercise units:
 By the end of this module, you will be able to:
 
 <!--  Bullet list copied from index.yml -->
+- Register a web application with Azure AD
+- Sign in users into a Java web application
+- Authorize access to a Microsoft API 
 
 ## Prerequisites
 
 <!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
+- Have a basic understanding of running Java web application on Tomcat server
+- Beginner-level understanding of Azure Active Directory: Managing users and tenants in Azure AD 
