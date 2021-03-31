@@ -30,7 +30,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the below under d
 
 In the `application.properties` file in your `spring-sender-application`, add the below parameters:
 
-```properties
+```java
 spring.jms.servicebus.connection-string=<xxxxx>
 spring.jms.servicebus.idle-timeout=20000
 ```
@@ -109,9 +109,7 @@ The browser will display whatever is passed as the message query string paramete
 > These messages will be received in the next step of this tutorial.
 >
 
-You can proceed to view the messages in the Service Bus explorer in the Azure portal.
-
-The steps for this are as below :
+You can proceed to view the messages in the Service Bus explorer in the Azure portal:
 
 1. Browse to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 2. Navigate to the specific Service Bus namespace.
@@ -121,4 +119,4 @@ The steps for this are as below :
 
 Following the above steps should give the below view.
 
-:::image type="content" source="../media/service_bus_explorer_peek_view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/service_bus_explorer_peek_view.png":::
+:::image type="content" source="../media/service-bus-explorer-peek-view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/service-bus-explorer-peek-view.png":::

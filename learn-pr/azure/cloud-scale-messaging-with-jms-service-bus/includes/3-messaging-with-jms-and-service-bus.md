@@ -11,7 +11,7 @@ JMS API enables applications to interface with enterprise messaging brokers (muc
 
 ## Azure Service Bus with JMS and Spring Boot
 
-Let's focus on utilizing the super popular Java Messaging Service (JMS) 2.0 API to communicate with Azure Service Bus.
+Let's focus on utilizing the super popular Java Message Service (JMS) 2.0 API to communicate with Azure Service Bus.
 
 Using Spring Boot, typically with [Spring Initializr](https://start.spring.io/), you will have three main tasks to achieve:
 

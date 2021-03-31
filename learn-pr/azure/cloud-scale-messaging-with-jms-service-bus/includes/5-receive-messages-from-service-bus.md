@@ -32,7 +32,7 @@ In the `pom.xml` file in your `spring-receiver-application`, add the below under
 
 In the `application.properties` file in your `spring-receiver-application`, add the below parameters:
 
-```properties
+```java
 server.port=9090
 
 spring.jms.servicebus.connection-string=<xxxxx>

@@ -14,16 +14,16 @@ quiz:
   questions:
     - content: "What is Java Message Service (JMS) 2.0?"
       choices:
-      - content: "A SDK that I can add as a dependency to my Java application."
+      - content: "An SDK that I can add as a dependency to my Java application."
         isCorrect: false
         explanation: "JMS is simply an API specification. It is implemented as part of various SDKs and Spring Boot starter kits." 
       - content: "An API that enables Java applications to communicate with enterprise messaging brokers."
         isCorrect: true
         explanation: "Java Message Service (JMS) 2.0 is an API specification that enables Java/Java EE/Spring applications to communicate with enterprise messaging brokers."
-      - content: "An Azure product or service"
+      - content: "An Azure product or service."
         isCorrect: false
         explanation: "JMS is an API defined and managed by the Java community and supported by Azure Service Bus."
-    - content: "Where can you use JMS with Azure Service BUs?"
+    - content: "Where can you use JMS with Azure Service Bus?"
       choices:
         - content: "POJOs"
           isCorrect: false
@@ -48,7 +48,7 @@ quiz:
         - content: "JmsTemplate"
           isCorrect: true
           explanation: "JmsTemplate is a helper object that simplifies the JMS functionality."
-    - content: "From which of the following JMS message brokers can you lift and shift my existing Java applications to Azure Service Bus?"
+    - content: "From which of the following JMS message brokers can you lift and shift existing Java applications to Azure Service Bus?"
       choices:
         - content: "Active MQ"
           isCorrect: false
