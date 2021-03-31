@@ -2,11 +2,8 @@
 
 Control flow is an orchestration of pipeline activities that includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on demand or from a trigger. 
 
-It also includes custom-state passing and looping containers, that are, For-each iterators.
-If a For Each loop is used as a control flow activity, Azure Data Factory can start these multiple copy activities in parallel. 
-
-This allows you to build complex and iterative processing logic within the pipelines you create with Azure Data Factory. 
-It supports diverse integration flows and patterns in the modern data warehouse, by enabling this flexible data pipeline model.
+Control flow can also include looping containers, that can pass information for each iteration of the looping container.
+If a For Each loop is used as a control flow activity, Azure Data Factory can start multiple activities in parallel using this approach. This allows you to build complex and iterative processing logic within the pipelines you create with Azure Data Factory, which supports the creation of diverse data integration patterns such as building a modern data warehouse.
 
 Some of the common control flow activities are described in the below sections.
 
@@ -17,13 +14,13 @@ It is possible to use the **dependsOn** property in an activity definition to ch
 
 ## Branching activities
 
-Use Azure Data Factory for Branching activities within a pipeline. An example of a branching activity is *TheIf-condition* activity which  is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities when the
-condition evaluates to true and another set of activities when the condition evaluates to false.
+Use Azure Data Factory for branching activities within a pipeline. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages. A branching activity evaluates a set of activities, and when the
+condition evaluates to true, a set of activities are executed. When it evaluates to false, then an alternative set of activities is executed.
 
 ## Parameters
 
 You can define parameters at the pipeline level and pass arguments while you're invoking the pipeline on-demand
-or from a trigger. Activities can consume the arguments that are passed to the pipeline.
+or from a trigger. Activities then consume the arguments held in a parameter as they are passed to the pipeline.
 
 ## Custom state passing
 

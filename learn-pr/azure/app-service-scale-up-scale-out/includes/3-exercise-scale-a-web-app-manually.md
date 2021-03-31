@@ -29,7 +29,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | Resource Group | Create a new resource group called **mslearn-scale** |
     | App name | \<your-webapp-name\> |
     | Publish | Code |
-    | Runtime stack | .NET Core 3.1 (LST)|
+    | Runtime stack | .NET Core 3.1 (LTS)|
     | O/S | Windows|
     | App Service plan/Location | *Leave default* |
 
