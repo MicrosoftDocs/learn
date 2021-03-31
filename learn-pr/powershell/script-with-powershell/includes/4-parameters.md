@@ -51,11 +51,11 @@ When you first create a script with parameters, you might remember exactly what 
 
 ## Select an approach
 
-All parameters are by default optional. That might work in some cases. But sometimes you need your user to provide parameter values, and the values need to be reasonable ones. If the user doesn't provide a value to a parameter, the script should quit or tell the user how to fix the problem. The worst thing that can happen is for the script to continue and do things that you don't want it to do.
+All parameters are optional by default. That default might work in some cases. But sometimes you need your user to provide parameter values, and the values need to be reasonable ones. If the user doesn't provide a value to a parameter, the script should quit or tell the user how to fix the problem. The worst thing that can happen is for the script to continue and do things that you don't want it to do.
 
 There are a couple of approaches you can use to make your script safer. You can write custom code to inspect the parameter value. Or you can use decorators that do roughly the same thing. Let's look at both approaches.
 
-- **Use `If/Else`**. By using an `If/Else` construct you can check the value of the parameter and then decide what to do, like the below script:
+- **Use `If-Else`**. The `If-Else` construct allows you to check the value of a parameter and then decide what to do. Here's an example:
 
    ```powershell
    Param(
@@ -71,7 +71,7 @@ There are a couple of approaches you can use to make your script safer. You can 
 
    The script will run `Write-Error` if you don't provide a value for `$Path`.
 
-- **Use `Parameter[]` decorator**. A better way (less to type) is to use the `Parameter[]` decorator, like so:
+- **Use the `Parameter[]` decorator**. A better way, which requires less typing, is to use the `Parameter[]` decorator, like so:
 
    ```powershell
    Param(
@@ -82,7 +82,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Write-Host "File created at path $Path"
    ```
 
-   If you run this script, and omit a value for `$Path`, PowerShell ensures you end up in dialog where you're asked for the value of `$Path`:
+   If you run this script and omit a value for `$Path`, you end up in a dialog box that prompts for the value:
 
    ```output
    cmdlet CreateFile.ps1 at command pipeline position 1
@@ -90,23 +90,23 @@ There are a couple of approaches you can use to make your script safer. You can 
    Path:
    ```
 
-   You can improve this decorator further by providing a help message that the user will see when running the script.  
+   You can improve this decorator by providing a Help message that users will see when they run the script:  
 
    ```powershell
    [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
    ```
 
-   When you run the script you will get an output that tells you to type `!?` for more information, like so:
+   When you run the script, you get a message that tells you to type `!?` for more information, like so:
 
    ```powershell
    cmdlet CreateFile.ps1 at command pipeline position 1
    Supply values for the following parameters:
    (Type !? for Help.)
-   Path: !?  # you type !?
-   Please supply a valid path  # Your help message
+   Path: !?  # You type !?
+   Please supply a valid path  # Your Help message
    ```
 
-- **Assign a type**. By assigning a type to a parameter you can say, for example,  that this parameter accepts only strings, no booleans. Thereby, you're giving the user a good understanding of what to expect. You can assign a type to a parameter by preceding it with a square bracket and the type, like so:
+- **Assign a type**. If you assign a type to a parameter you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets, like so:
 
    ```powershell
    Param(
@@ -114,4 +114,4 @@ There are a couple of approaches you can use to make your script safer. You can 
    )
    ```
 
-These three approaches are not exclusionary, you can definitely combine them and make your script more intentional and more safe to run.
+These three approaches aren't mutually exclusive. You can combine them to make your script safer.

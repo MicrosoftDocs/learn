@@ -50,7 +50,7 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    $PI = 3.14
    ```
 
-1. Create a file named PI.ps1:
+1. Create a file named *PI.ps1*:
 
    ```powershell
    touch PI.ps1
