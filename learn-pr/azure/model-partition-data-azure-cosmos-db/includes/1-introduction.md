@@ -71,4 +71,3 @@ We will be reviewing the application to determine the data access patterns. Base
 - Determine access patterns for data
 - Apply data model and partitioning strategies to support an efficient and scalable NoSQL database
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

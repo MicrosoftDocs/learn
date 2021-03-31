@@ -1,4 +1,4 @@
-In this module, we've started the process of taking a relational database and modeling it for a NoSQL database. We've designed the three customer entities and embedded all three into a single document, which resulted in an increase in performance by reducing the number of requests for our data. We have also modeled the product category and product tag entities and leveraged a unique technique to reduce overall storage and throughput required for small lookup tables.
+In this module, we've started the process of taking a relational database and modeling it for a NoSQL database. We've designed the three customer entities and embedded all three into a single document, which resulted in an increase in performance by reducing the number of requests for our data. We have also modeled the product category and product tag entities and used a unique technique to reduce overall storage and throughput required for small lookup tables.
 
 ## Learn more
 

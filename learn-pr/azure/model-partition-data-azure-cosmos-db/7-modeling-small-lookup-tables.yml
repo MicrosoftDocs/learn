@@ -11,3 +11,27 @@ metadata:
 durationInMinutes: 07
 content: |
   [!include[](includes/7-modeling-small-lookup-tables.md)]
+quiz:
+  questions:
+  - content: "When modeling small lookup tables in a NoSQL database with a small amount of data, what will designing for single partition queries do?"
+    choices:
+    - content: "Improve performance"
+      isCorrect: true
+      explanation: ""
+    - content: "Reduce performance"
+      isCorrect: false
+      explanation: ""
+    - content: "Have no impact"
+      isCorrect: false
+      explanation: ""
+  - content: "When modeling small lookup tables, using a discriminator property means adding a new property with what kind of value?"
+    choices:
+    - content: "An incremental value for each new row"
+      isCorrect: false
+      explanation: ""
+    - content: "A random value for each new row"
+      isCorrect: false
+      explanation: ""
+    - content: "The same value for each new row"
+      isCorrect: true
+      explanation: "When adding a discriminator property to the schema, give it a constant value for every document in the container."

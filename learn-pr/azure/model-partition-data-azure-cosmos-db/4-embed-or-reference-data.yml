@@ -11,3 +11,28 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-embed-or-reference-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "For a NoSQL database, how should unbounded 1:Many relationships be modeled?"
+    choices: 
+    - content: "Saved as separate rows and referenced"
+      isCorrect: true
+      explanation: "Where the 1:Many relationship is unbounded or can grow extremely large, data should be referenced."
+    - content: "Read or updated together in same document"
+      isCorrect: false
+      explanation: "Embed data in the same document where data needs to be read or updated together and relationship is 1:1 or 1:Few."
+    - content: "Embedded in the same document"
+      isCorrect: false
+      explanation: "Embed data in the same document where the relationship is 1:1 or 1:Few."
+  - content: "How does embedding data into the same document affect performance or costs?"
+    choices: 
+    - content: "Increase latency and lower cost"
+      isCorrect: false
+      explanation: "Embedding data to reduce the number of request can lower costs but it doesn't increase latency."
+    - content: "Lower latency"
+      isCorrect: false
+      explanation: "Embedding data to reduce the number of request can improve performance but it also affects cost."
+    - content: "Reduce latency and cost"
+      isCorrect: true
+      explanation: "Embedding data to reduce the number of request can improve performance and lower cost."
