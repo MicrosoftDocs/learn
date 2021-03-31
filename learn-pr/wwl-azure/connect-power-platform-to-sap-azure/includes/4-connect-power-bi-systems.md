@@ -1,4 +1,4 @@
-As we mentioned, you can choose from four major built-in connectors to access SAP environments and visualize data:
+You can choose from four major built-in connectors to access SAP environments and visualize data:
 
 - SAP HANA Database
 
@@ -12,11 +12,13 @@ As we mentioned, you can choose from four major built-in connectors to access SA
 
 ## Connect to SAP HANA with Power BI
 
-You can connect to SAP HANA with the Power BI Desktop on a Windows computer. You can then build reports for local use only, or connect to your Power BI Service and share the SAP HANA data with users you select.
+You can connect to SAP HANA with the Power BI Desktop on a Windows computer. You can then build reports for local use only, or connect to your Power BI Service and share the SAP HANA data with users you select. 
+
+For SAP HANA running in Azure, Power BI Desktop needs to be installed in an Azure Windows virtual machine located in the same vNet as your Azure SAP HANA.
 
 ### 1. Install Power BI Desktop
 
-[Download the version of Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494) that matches the architecture (x86 or x64) of the Windows computer you will use to connect to the SAP HANA database. Run the MSI installer and follow the setup steps.
+[Download the version of Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=58494) that matches the architecture (x86 or x64) of the Windows computer you will use to connect to the SAP HANA database. Run the MSI installer and follow the setup steps.
 
 ### 2. Install the SAP HANA driver
 

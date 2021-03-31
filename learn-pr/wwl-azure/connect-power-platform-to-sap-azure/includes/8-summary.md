@@ -36,5 +36,5 @@ Now that you have reviewed this module, you should be able to:
 
 ### Data Loss Prevention
 
-- [Overview of data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)
+- [Overview of data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
 

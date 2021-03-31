@@ -8,7 +8,7 @@ SAP applications, whether running on-premises or in Azure, depend on SAP-complia
 
 - **OData.** SAP provides OData APIs in SAP HANA XS and OData services in the SAP Gateway. These are RESTful APIs that Microsoft applications can use.
 
-- **iDoc**. EDI SAP IDoc (intermediate documents) is an SAP document format for business transaction data transfers. It is used to integrate business processes with SAP and non-SAP systems, and is supported by Microsoft for SAP integration.
+- **IDoc**. EDI SAP IDoc (intermediate documents) is an SAP document format for business transaction data transfers. It is used to integrate business processes with SAP and non-SAP systems, and is supported by Microsoft for SAP integration.
 
 ## Connect to Power Automate and Power Apps
 

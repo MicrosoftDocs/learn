@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "**Complete the sentence:**__________ can be used to connect a Windows Jump box to SAP HANA running in Azure hosted VMs."
+  - content: "Which can be used to connect a Windows Jump box to SAP HANA running in Azure hosted VMs?"
     choices:
     - content: "On-premises data gateway"
       isCorrect: true
