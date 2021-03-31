@@ -69,11 +69,11 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 
 1. In this example, the ASC agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
 
-    ![Screenshot of Security policy AuditIfNotExists](../media/3-asc-enable-auditing.png)
+    ![Screenshot again of Security policy AuditIfNotExists](../media/3-asc-enable-auditing.png)
 
     If enabled, **Audit** is displayed. If deployed but disabled, **Disabled** appears.
 
-    ![Screenshot again of Security policy AuditIfNotExists](../media/3-state-of-audit.png)
+    ![Screenshot yet again of Security policy AuditIfNotExists](../media/3-state-of-audit.png)
 
 ### Enable Security Configurations - Level 1
 
