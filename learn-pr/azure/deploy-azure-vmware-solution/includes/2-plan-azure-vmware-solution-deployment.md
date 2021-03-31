@@ -42,7 +42,7 @@ An Azure account in an Azure subscription is needed to deploy AVS. The Azure sub
 
 ## Open a support ticket
 
-This step depends on subscription type:
+This step depends on the subscription type:
 
 - **EA and MCA customers**: Open a support ticket for an additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
 

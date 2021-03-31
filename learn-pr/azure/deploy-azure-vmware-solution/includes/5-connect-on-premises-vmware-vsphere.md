@@ -82,7 +82,7 @@ After an authorization key is created, the AVS ExpressRoute circuit is peered to
 1. Gather your specific information:
     - Resource ID
     - Authorization key
-    - /29 CIDR network block.
+    - /29 CIDR network block
 1. Enter the following Azure CLI command to create the authorization key:
 
     ```azurecli

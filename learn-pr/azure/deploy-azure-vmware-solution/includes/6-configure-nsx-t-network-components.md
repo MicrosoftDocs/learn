@@ -1,7 +1,7 @@
 Azure VMware Solution (AVS) deploys with NSX-T Manager as the software-defined network layer. The networking environment has two gateways:
 
-- NSX-T Tier-0 gateway configured in active-active mode.
-- NSX-T Tier-1 gateway configured in active-standby mode.
+- NSX-T Tier-0 gateway configured in active-active mode
+- NSX-T Tier-1 gateway configured in active-standby mode
 
 Both gateways allow connections between logical switch segments. These gateways also provide East-West and North-South connectivity.
 
@@ -111,7 +111,7 @@ Follow these steps:
     | **DNS service IP** | Enter the IP address for the DNS service. |
     | **Default DNS zone** | Select the default DNS zone that you created under the **DNS zones** tab. |
     | **FDQN zones** | Select the FQDN zones that you added under the **DNS zones** tab. |
-    | **Log level** | Select the **Log level** you want. |
+    | **Log level** | Select the level you want. |
 
 1. Select **OK**. The DNS service was added successfully.
 

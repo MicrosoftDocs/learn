@@ -1,4 +1,4 @@
-The Azure VMware Solution (AVS) environment can be built after all planning steps are complete. AVS will give your company the ability to deploy a vSphere cluster in Azure. AVS also provides an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning units to successfully deploy AVS. 
+The Azure VMware Solution (AVS) environment can be built after all planning steps are complete. AVS will give your company the ability to deploy a vSphere cluster in Azure. AVS also provides an easy migration path to bring workloads into Azure. You'll use all the information gathered from the planning units to successfully deploy AVS.
 
 ## Register the resource provider
 
@@ -33,7 +33,7 @@ To register the resource provider by using PowerShell:
 To register the resource provider by using the Azure portal:
 
 1. Search for **Subscriptions**.
-1. Select the subscription you want to register the provider for. 
+1. Select the subscription you want to register the provider for.
 1. Select **Resource providers** and enter **Microsoft.AVS** in the search bar. If the resource provider isn't registered, select **Register**.
 
     :::image type="content" source="../media/4-register-resource-provider.png" alt-text="Screenshot that shows the Register button at the top of the Subscription > Resource providers page in the Azure portal.":::
@@ -64,7 +64,7 @@ Follow these steps:
     | **Address block** | An IP address block for the CIDR network for the private cloud. |
     | **Virtual Network** | The virtual network. Select an existing virtual network, create a new one, or leave the field blank. |
 
-1. After all fields are filled in, select **Review + Create**. 
+1. After all fields are filled in, select **Review + Create**.
     >[!NOTE]
     > The AVS deployment may take up to two full hours to finish.
 

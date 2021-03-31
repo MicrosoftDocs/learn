@@ -1,4 +1,4 @@
-In this module, you learned about all the deployment steps to build and connect Azure VMware Solution (AVS) to an on-premises VMware environment. 
+In this module, you learned about all the deployment steps to build and connect Azure VMware Solution (AVS) to an on-premises VMware environment:
 
 - First, you learned about the planning that's required before AVS deployment.
 - Next, you learned how to:
