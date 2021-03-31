@@ -22,7 +22,7 @@ Microsoft offers an SAP ERP connector for Power Apps and Power Automate. The con
 
 Choose the SAP ERP connector from within Power Automate. To use it in Power Apps, invoke the Power Automate flow you created when you selected the SAP ERP connector.
 
-![From Power Apps, you can call a Power Automate flow that connects into SAP through the SAP ERP connector and the On-Premises data gateway.](../media/1-unit5-sap-pp.png)
+![From Power Apps, you can call a Power Automate flow that connects into SAP through the SAP ERP connector and the On-Premises data gateway.](../media/power-apps.png)
 
 Before you can use the SAP ERP Connector, install these components on the same machine:
 

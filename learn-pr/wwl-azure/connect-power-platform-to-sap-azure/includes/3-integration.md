@@ -2,7 +2,7 @@ Your Power Platform integration with SAP requires multiple components and servic
 
 The figure below shows the conceptual layers, including the user experience (**1**); process automation (**2**); data and services (**3**); and interaction with the On-premises data gateway (**4**).
 
-![Diagram shows the services layers, including the user experience, process automation, and data and services and interaction with the On-premises data gateway.]( ../media/1-unit1-sap-pp.png)
+![Diagram shows the services layers, including the user experience, process automation, and data and services and interaction with the On-premises data gateway.]( ../media/diagram-shows-services-layers.png)
 
 ## User experience
 
@@ -36,7 +36,7 @@ The gateway has two modes:
 
 You can access SAP data sources directly from the Power BI Desktop application. However, to publish your dashboards or reports to the Power BI online service, you need the On-premises data gateway. The gateway handles authentication and connection into SAP, allowing you to integrate SAP with Power Platform cloud services.
 
-![The On-premises data gateway sits between SAP and Power Automate products to support the integration.]( ../media/1-unit2-sap-pp.png)
+![The On-premises data gateway sits between SAP and Power Automate products to support the integration.]( ../media/on-premises-data-gateway-sits.png)
 
 Power Automate and Power Apps also use the data gateway for data access and application integration.
 
