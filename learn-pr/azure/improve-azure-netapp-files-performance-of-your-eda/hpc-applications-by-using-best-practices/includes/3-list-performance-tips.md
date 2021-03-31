@@ -100,7 +100,7 @@ The "nconnect" NFS mount option has entered General Availability in the Linux ke
 uname -r
 ```
 
-The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount point on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And it's value gradually diminishes when # of clients increases, as there is only certain amount of bandwidth in total to go around.
+The purpose of "nconnect" is to provide multiple transport connections per TCP connection or mount points on a client. This helps increase parallelism and performance for NFS mounts. The less # of clients, the more value "nconnect" can help to boost performance as it could potentially utilize all possible network bandwidth. And it's value gradually diminishes when # of clients increases, as there is only certain amount of bandwidth in total to go around.
 
 Consider setting: sunrpc.tpc_max_slot_table_entries=256 or 512 if you are using nconnect=8 or 16.
 
