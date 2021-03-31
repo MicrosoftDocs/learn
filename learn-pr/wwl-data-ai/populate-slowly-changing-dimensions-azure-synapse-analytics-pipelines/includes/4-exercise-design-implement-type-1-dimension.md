@@ -196,7 +196,7 @@ Mapping Data flows are pipeline activities that provide a visual way of specifyi
     | Select `InsertedDate` | `iif(isNull(InsertedDate), currentTimestamp(), {InsertedDate})` | If the `InsertedDate` value is null, insert the current timestamp. Otherwise, use the `InsertedDate` value. |
     | Select `ModifiedDate` | `currentTimestamp()` | Always update the `ModifiedDate` value with the current timestamp. |
 
-    ![The Derived column's settings form is configured as described.](../media/data-flow-derived-column-settings-2.png "Derived column settings")
+    ![Another Derived column's settings form is configured as described.](../media/data-flow-derived-column-settings-2.png "Derived column settings")
 
     > [!NOTE]
     > To insert the second column, select **+ Add** above the Columns list, then select **Add column**.
