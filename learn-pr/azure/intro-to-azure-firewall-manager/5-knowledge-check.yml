@@ -48,7 +48,7 @@ quiz:
     - content: "The administrator must implement a single instance of Firewall Manager: one for all Azure regions and subscriptions."
       isCorrect: true
       explanation: "Correct. Firewall Manager spans Azure regions and subscriptions."
-  - content: "An Azure administrator wants to help secure traffic by using Firewall Manager policies. The traffic originates via an Azure Virtual WAN/ExpressRoute connection from the organization's on-premises environment. Which of the following statements about Firewall Manager is true?"
+  - content: "An Azure administrator wants to help secure traffic by using Firewall Manager to create Azure Firewall policies. The traffic originates via an Azure Virtual WAN/ExpressRoute connection from the organization's on-premises environment. Which of the following statements about Firewall Manager is true?"
     choices:
     - content: "It's not possible to use Firewall Manager to secure traffic in this context."
       isCorrect: false

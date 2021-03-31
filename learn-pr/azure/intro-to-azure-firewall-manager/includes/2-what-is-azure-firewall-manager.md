@@ -6,10 +6,11 @@ Centralized firewall management means managing multiple firewalls simultaneously
 
 ## Firewall Manager definition
 
-Azure Firewall is a cloud-based network security service that's fully managed. By implementing Azure Firewall, you can help protect your Azure resources.
+Azure Firewall Manager enables you to centralize management of multiple instances of Azure Firewall. Azure Firewall is a cloud-based network security service that's fully managed. By implementing Azure Firewall, you can help protect your Azure resources. 
 
 Your security team must configure and maintain network and application-level rules for traffic filtering. If your organization has multiple Azure Firewall instances, you'll benefit from centralizing these configurations. Firewall Manager enables you to:
 
+- Centralize firewall management.
 - Span multiple Azure subscriptions.
 - Span different Azure regions.
 - Implement hub and spoke architectures to provide for traffic governance and protection.
@@ -39,12 +40,7 @@ To centrally manage your firewalls, implement Firewall Manager. It provides the 
    > Centralized route management is only available on secured virtual hub architecture.
 
 - **Hierarchical policies**. These enable central management of Azure Firewall policies across multiple secured virtual hubs. Your IT security team then can create global firewall policies and apply them across your organization.
-
-   > [!IMPORTANT]
-   > Hierarchical policies are only available on secured virtual hub architecture.
-
 - **Third-party integration**. This supports integration of third-party security as a service provider.  
-
 - **Cross-region availability**. This allows you to create Azure Firewall policies in one region and apply them in other regions.
 
 You can implement Firewall Manager in one of two architectures, which the following table describes.

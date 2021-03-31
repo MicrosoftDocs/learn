@@ -27,17 +27,23 @@ First you must decide which rules you need to manage your traffic. Then you use 
 
 ### How rules are processed
 
-In reality, a NAT rule is a routing rule that directs traffic from public to private IP addresses in your Azure resources. When a firewall processes a policy's defined rules, it's the network and application rules that determine whether the traffic is allowed . The following process describes how these rules are processed against traffic:
+In reality, a NAT rule is a routing rule that directs traffic from public to private IP addresses in your Azure resources. When a firewall processes a policy's defined rules, it's the network and application rules that determine whether the traffic is allowed. The following process describes how these rules are processed against traffic:
 
 1. Threat intelligence rules are processed before NAT, network, or application rules. When you establish these rules, you can configure one of two behaviors:
 
    - Alert when rule is triggered (default mode).
    - Alert and deny when rule is triggered.
 
-2. Network rules are applied next. If a network rule matches the traffic, that rule is applied. No other rules are checked.
-3. If no network rules match and the traffic is HTTP/S, application rules are applied.
-4. If no application rule matches, traffic is compared with the infrastructure rule collection.
-5. If there's still no match for the traffic, the traffic is implicitly denied.
+2. NAT rules are processed next and determine inbound connectivity to specified resources in your virtual networks. 
+
+> [!NOTE]
+> If a match is found, an implicit corresponding network rule to allow the translated traffic is added.
+
+
+3. Network rules are applied next. If a network rule matches the traffic, that rule is applied. No other rules are checked.
+4. If no network rules match and the traffic is HTTP/S, application rules are applied.
+5. If no application rule matches, traffic is compared with the infrastructure rule collection.
+6. If there's still no match for the traffic, the traffic is implicitly denied.
 
 > [!NOTE]
 > Infrastructure rule collections define fully qualified domain names (FQDNs) that are allowed by default. These FQDNs are specific to Azure.
