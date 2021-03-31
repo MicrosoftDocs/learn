@@ -25,11 +25,10 @@ quiz:
     - content: "Create a template that deploys all of the resources required for the manufacturing application. Add variables for the values that might change between environments."
       isCorrect: false
       explanation: "Variables have the same value, so they aren't usually what you need to consider when you deploy multiple environments."
-  - content: |
-      The template that the team has developed includes this line:
-      
+  - content: "The template that the team has developed includes this line:
+
       `param siteName string = 'mysite-${uniqueString(resourceGroup().id)}'`.
-      
+
       Which of these statements is true?"
     choices:
     - content: "Whoever deploys the template must specify a value for the `siteName` parameter."
