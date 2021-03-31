@@ -8,7 +8,7 @@ metadata:
   ms.date: 3/23/2021  
   author: mengruts  
   ms.author: mengtsai  
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.topic: interactive-tutorial 
+durationInMinutes: 1 
 content: |
   [!include[](includes/1-introduction.md)]
