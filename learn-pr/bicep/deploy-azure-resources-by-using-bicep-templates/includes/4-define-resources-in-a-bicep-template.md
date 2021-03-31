@@ -36,7 +36,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    > [!TIP]
    > Bicep is quite strict about where you put line breaks, so make sure you don't put line breaks in different places than what's listed here.
 
-   Notice that, as you type, Visual Studio Code is automatically suggesting property names. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values you can use.
+   Notice that Visual Studio Code is automatically suggesting property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values you can use.
 
 1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
 
@@ -97,7 +97,7 @@ az bicep install
     az login
     ```
 
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+1. After you've signed in, you'll see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you'll see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
 1. Set the default subscription for all of the Azure CLI commands you run in this session.
 
@@ -149,7 +149,7 @@ az deployment group create \
 
 The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
 
-You see ```Running...``` in the terminal.
+You'll see ```Running...``` in the terminal.
 
 ::: zone-end
 
@@ -191,7 +191,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Connect-AzAccount
     ```
 
-1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+1. After you've signed in, you'll see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you'll see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
 1. Set the default subscription for all of the Azure PowerShell commands you run in this session.
 
@@ -241,9 +241,9 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. On the left side panel, select **Resource groups**.
 
-1. Select the <rgn>[sandbox resource group name]</rgn>.
+1. Select **<rgn>[sandbox resource group name]</rgn>**.
 
-1. In the **Overview**, you see that one deployment succeeded.
+1. In the **Overview**, you'll see that one deployment succeeded.
 
     :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing that one succeeded." border="true":::
 

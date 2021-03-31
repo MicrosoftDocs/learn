@@ -53,7 +53,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice you have copied the parameters and variables from your *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
 
-1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any warnings about missing variables or parameters, or invalid resources.
+1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any red squiggles indicating warnings about missing variables or parameters, or invalid resources.
 
 ### Add a reference to the module from the parent template
 
