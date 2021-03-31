@@ -132,7 +132,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 5. Select **Review + Create** to go to the review pane, and to create the app, select **Create**.
 
     > [!NOTE]
-    > It can take a few seconds to get your web app created and ready for your use.
+    > It can take a minute to get your web app created and ready for your use.
 
     The portal shows the deployment pane, where you can view the status of your deployment.
 
