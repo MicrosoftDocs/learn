@@ -23,7 +23,9 @@ roles:
 - developer
 products:
 - azure
-prerequisites: None
+prerequisites: |
+  - Knowledge of Python
+  - Basic understand of machine learning
 units:
 - learn.PyTorch.computer-vision-pytorch.introduction
 - learn.PyTorch.computer-vision-pytorch.image-data

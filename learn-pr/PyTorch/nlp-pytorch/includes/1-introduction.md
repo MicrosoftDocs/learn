@@ -1,5 +1,3 @@
-# Introduction to Natural Language Processing with PyTorch
-
 In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experiences fast growth as a field, primarily because performance of the language models depend on their overall ability to "understand" text, and that can be trained in unsupervised manner on large text corpora. Thus, pre-trained text models such as BERT simplified many NLP tasks, and dramatically improved the performance.
 
 We will focus on the fundamental aspects of representing NLP as tensors in PyTorch, and on classical NLP architectures, such as using bag-of-words, embeddings and recurrent neural networks.
