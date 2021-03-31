@@ -28,7 +28,7 @@ quiz:
       explanation: "Correct. This is the optimum solution."
   - content: "An app developer requires version 5.6 of MySQL. Which of the following would be an appropriate hosting choice based on this requirement?"
     choices:
-    - content: "Azure Database for MySQL Flexible Server"<!--Andy, this question is missing an option-->
+    - content: "Azure Database for MySQL Flexible Server"
       isCorrect: true
       explanation: "Correct. Azure Database for MySQL Flexible Server supports only versions 5.6, 5.7, and 8.0."
     - content: "Azure Database for MySQL Single Server"
