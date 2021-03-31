@@ -38,7 +38,7 @@ You can further investigate slow transactions to identify slow requests and serv
 
 This view allows you to isolate slow transactions by selecting the time range, operation name, and durations of interest. You are also prompted with automatically identified anomalies and the commonalities across transactions. From here, you can drill into an individual transaction for an end-to-end view of transaction details with a Gantt chart of dependencies. You can also gain visibility into page views, and browser operations and dependencies if you instrument your web pages with Application Insights. Collecting this browser data requires adding some additional web page code to your pages. After the script is added, you access page views and their associated performance metrics via the Browser toggle.
 
-## Analyzing User behavior
+## Analyzing user behavior
 
 Instrumenting your web pages with Application Insights collects usage information to augment the server-side monitoring capabilities. Usage data includes number of users, sessions, events, browser version, OS version, and locations all coming from the same browser-side JavaScript instrumentation. Usage data answers questions such as which pages of your app are the most popular, where do users drop out and what are the conversion and retention rates for specific pages.
 

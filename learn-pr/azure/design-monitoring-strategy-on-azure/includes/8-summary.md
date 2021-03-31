@@ -6,7 +6,7 @@ Without Azure Monitor, you couldn't analyze and address issues that affect the h
 
 By using the various services on Azure, you can take a full stack approach to monitoring applications and infrastructure. You can address issues faster and more effectively. As a result, your organization becomes more secure, productive, cost-effective, and competitive.
 
-## Additional Resources
+## Additional resources
 
 To learn more about monitoring solutions on Azure, see the following articles:
 
