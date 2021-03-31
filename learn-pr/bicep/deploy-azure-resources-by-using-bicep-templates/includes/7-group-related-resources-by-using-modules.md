@@ -43,9 +43,9 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 
 Bicep modules enable you to organize and reuse your Bicep code by creating smaller units that can be composed together into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you have already created files that can be used as Bicep modules!
 
-Imagine you have a Bicep template that deploys networking, application, and database resources. You could split this up into three modules, each of which is focused on its own individual set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too.
+Imagine you have a Bicep template that deploys application, database, and networking resources for *solution A*. You could split this up into three modules, each of which is focused on its own individual set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too - so when you develop a template for *solution B*, which has very similar networking requirements to *solution A*, you can reuse the networking module.
 
-:::image type="content" source="../media/7-templates-modules.gif" alt-text="Animation showing a template being split into three modules - app, database, and network. The network module is then reused in another template." border="false":::
+:::image type="content" source="../media/7-templates-modules.png" alt-text="Diagram showing a template for solution A referencing three modules - application, database, and networking. The networking module is then reused in another template for solution B." border="false":::
 
 When you want the template to include a reference to a module file, use the `module` keyword. A module definition looks similar to a resource declaration, but instead of including a resource type and API version, you instead use the module filename:
 
