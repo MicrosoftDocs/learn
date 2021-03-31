@@ -1,4 +1,4 @@
-GitHub Actions is a powerful platform that empowers you to go from code to cloud all from the comfort and convenience  of your own repository. Here, you'll learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom GitHub actions. 
+GitHub Actions is a powerful feature that empowers you to go from code to cloud all from the comfort and convenience  of your own repository. Here, you'll learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom GitHub actions. 
 
 ## Types of GitHub actions
 
@@ -10,11 +10,11 @@ Actions are individual tasks that you can use to customize your workflows. You c
 
 Docker containers package the environment with the GitHub Actions code. This means that the action runs in a consistent and reliable environment because all of its dependencies are within that container. If the action needs to run in a specific environment configuration, then Docker containers are a good way to go because you can customize the operating system and tools. The downside is that because the job has to build and retrieve the container, Docker container actions are slower than JavaScript actions.
 
-Before building a Docker container action, you should have some basic understanding on using environment variables and the Docker container filesystem. The steps to take to build a Docker container action are then minimal and straightforward:
+Before building a Docker container action, you should have some basic understanding of how to use environment variables and the Docker container filesystem. The steps to take to build a Docker container action are then minimal and straightforward:
 
 1. Create a `Dockerfile` to define the commands to assemble the Docker image.
-2. Create an `action.yml` metadata file to define the inputs and outputs, as well as the `runs: using:` keyword using `docker` and `runs: image:` keyword set to `Dockerfile`.
-3. Create an `entrypoint.sh` to describe the docker image.
+2. Create an `action.yml` metadata file to define the inputs and outputs of the action. Set the `runs: using:` keyword to `docker` and the `runs: image:` keyword to `Dockerfile` in the file.
+3. Create an `entrypoint.sh` file to describe the docker image.
 4. Commit and push your action to GitHub with the following files: `action.yml`, `entrypoint.sh`, `Dockerfile`, and `README.md`.
 
 For more information on creating and troubleshooting your Docker container actions, check out [Creating a Docker container action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action).
@@ -35,20 +35,20 @@ For more information on creating and troubleshooting your JavaScript actions, ch
 
 ### Composite run steps actions
 
-Composite run steps actions allow you to reuse actions using shell scripts. You can even mix multiple shell languages within the same action. If you have a lot of shell scripts to automate several tasks, now you can easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than JavaScript or wrapping your code in a Docker container.
+Composite run steps actions allow you to reuse actions using shell scripts. You can even mix multiple shell languages within the same action. If you have a lot of shell scripts to automate several tasks, now you can easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
 For more information on creating and troubleshooting your composite run steps actions, check out [Creating a composite run steps action](https://docs.github.com/en/actions/creating-actions/creating-a-composite-run-steps-action).
 
 ## Metadata and syntax needed to create an action
 
-When creating or reviewing a GitHub action, a great first step is to review the `action.yml` metadata file to review the inputs, outputs, description, runs, and other configuration information for the action. Some of the parameters in this file is required while others are optional. This file defines the following information about your action:
+When creating or reviewing a GitHub action, a great first step is to review the `action.yml` file to assess which inputs, outputs, description, runs, and other configuration information are needed for the action. Some of these parameters are required while others are optional. The `action.yml` file defines the following information about your action:
 
 | Parameter   | Description                                                                                                                                            |      Required      |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------: |
 | Name        | The name of your action. Helps visually identify the action in a job.                                                                                 | ✅ |
 | Description | A summary of what your action does.                                                                                                                    | ✅ |
 | Inputs      | Input parameters allow you to specify data that the action expects to use during runtime. These parameters become environment variables in the runner. |         ❌         |
-| Outputs     | Specify the data that subsequent actions can use later in the workflow after the action that defines these outputs has run.                          |         ❌         |
+| Outputs     | Output parameters allow you to specify data that subsequent actions can use later in the workflow after the action that defines these outputs has run.                          |         ❌         |
 | Runs        | The command to run when the action executes.                                                                                                           | ✅ |
 | Branding    |  Color and Feather icon to use to create a badge to personalize and distinguish your action in GitHub Marketplace.                               |         ❌         |
 
@@ -84,9 +84,9 @@ The above example is a simple output to declare the average grade of the student
 
 ### Runs
 
-As we learned previously, your action needs to have a `runs` statement that defines the command necessary to execute your action. Depending on how you're creating your action, whether that is through a Docker container, JavaScript, or by composite run steps, the `runs` syntax is defined differently.
+As we learned previously, your action needs to have a `runs` statement that defines the command necessary to execute your action. Depending on how you're creating your action, whether you are using a Docker container, JavaScript, or composite run steps, the `runs` syntax is defined differently.
 
-### `runs` for Docker
+#### `runs` for Docker actions
 
 Docker container actions require that the `runs` statement configures the image used for the Docker action with the following arguments:
 
@@ -100,14 +100,14 @@ runs:
 ```
 
 
-### `runs` for JavaScript actions
+#### `runs` for JavaScript actions
 
 JavaScript actions require that the `runs` statement take the following two arguments:
 
 - `using`: application used to execute the code as defined in `main`.
 - `main`: file that contains the action code. The application defined in `using` executes this file.
 
-For example, here is a `runs` statement for a JavaScript actions using Node.js.
+For example, here is a `runs` statement for a JavaScript action using Node.js.
 
 ```yml
 runs:
@@ -115,7 +115,7 @@ runs:
   main: 'main.js'
 ```
 
-### `runs` for composite run steps actions
+#### `runs` for composite run steps actions
 
 Composite run steps actions require that the `runs` statement take the following three arguments:
 
@@ -150,7 +150,7 @@ For more information on metadata syntax for actions, check out [Metadata syntax 
 
 Creating a workflow is pretty straightforward as long as you can find the right actions for your steps. In some cases you may need to create your own actions to achieve your desired outcomes, but you can use workflow commands to add another level of customization to your workflows.
 
-Workflow commands allow you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. These workflow commands can be used with shell commands or within your custom actions. Workflow commands are useful because you can share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
+Workflow commands allow you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. These workflow commands can be used with shell commands or within your custom actions. Workflow commands are useful because they allow you to share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
 
 Most workflow commands use the `echo` command in the below specific format, while others can be invoked by writing to a file.
 

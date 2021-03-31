@@ -15,7 +15,7 @@ Public actions can be used by workflows in any repository. If you're developing 
 
 When an action is in a private repository, the action can only be used in workflows in the same repository. With private actions, you can store the action's files in any location in your repository. If you plan to combine action, workflow, and application code in a single repository, it's recommended to store the action in the .github directory. For example, `.github/actions/action-a` and `.github/actions/action-b`.
 
-## Best practices for documenting your action
+## Documenting your action
 
 It can be very frustrating to use a new tool or application when the documentation is vague or even missing. It's important to include good documentation with your action so that others can see how it works, regardless of if you plan to make it public or private. The first thing to do is creating a good `README.md` file for your action.
 
@@ -30,17 +30,17 @@ The `README.md` file is often the first place developers will look at to see how
 
 As a general rule, the `README.md` file should include everything a user should know to use the action. If you think it could be useful information, include it in the `README.md`.
 
-## Release and versioning management strategy for your action
+## Releasing and versioning your action
 
 If you're developing an action for other people to use, regardless of if it's public or private, you should define a release management strategy to control how updates are distributed. Major version updates including necessary critical fixes and security patches that affect compatibility need to be documented clearly.
 
 ### Good practices for release and versioning management
 
-Part of this release management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action as the default branch is likely to contain the latest code (which may or may not be stable) and could result in your workflow breaking. Instead, it's recommended that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. This can be done by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
+A good release management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action as the default branch which is likely to contain the latest code (which may or may not be stable) and could result in your workflow breaking. Instead, it's recommended that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. This can be done by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
 
-### Using tags
+#### Using tags
 
-Tags can be a good way to manage releases for an action. By using tags, users can easily distinguish between major and minor versions. Below is a list of helpful things to consider when creating releases:
+Tags can be a good way to manage releases for an action. By using tags, users can easily distinguish between major and minor versions. Below is a list of helpful practices to consider when creating releases:
 
 - Create and validate a release on a release branch (such as `release/v1`) before creating the release tag (for example, `v1.0.2`).
 - Use semantic versioning.
@@ -68,7 +68,7 @@ steps:
 
 For more information on release management and versioning, check out [Using release management for action](https://docs.github.com/en/actions/creating-actions/about-actions#using-release-management-for-actions).
 
-## Publishing an action to the GitHub marketplace
+## Publishing an action to the GitHub Marketplace
 
 ![gh-marketplace](https://user-images.githubusercontent.com/6351798/109706156-d4f20700-7b55-11eb-8826-227d7abdc6cd.png)
 

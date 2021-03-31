@@ -1,4 +1,4 @@
-In this exercise, you use GitHub Learning Lab to write your own GitHub JavaScript Action! This course will empower you to begin automating customized tasks unique to your workflow.
+In this exercise, you use GitHub Learning Lab to write your own GitHub JavaScript action! This course will empower you to begin automating customized tasks unique to your workflow.
 
 GitHub Learning Lab is an integrated experience that's easy to use. You get feedback and instructions throughout the lab as you work in your GitHub repository.
 
