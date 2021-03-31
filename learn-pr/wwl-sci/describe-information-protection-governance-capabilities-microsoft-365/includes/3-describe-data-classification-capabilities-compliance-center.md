@@ -66,7 +66,7 @@ With content explorer, administrators get a current snapshot of individual items
 
 Admins use the filters to see all the details for a specific label, including file types, users, and activities. Activity explorer helps you understand what's being done with labeled content over time. Admins use activity explorer to evaluate if controls already in place are effective.
 
-Here's a few of the activity types that can be analyzed:
+Here are a few of the activity types that can be analyzed:
 
 - File copied to removable media
 - File copied to network share
