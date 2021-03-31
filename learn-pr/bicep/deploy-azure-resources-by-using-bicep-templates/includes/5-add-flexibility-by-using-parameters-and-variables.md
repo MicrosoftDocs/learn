@@ -151,8 +151,8 @@ First, you can specify a parameter that indicates whether the deployment is for 
 
 ```bicep
 @allowed([
-    'nonprod'
-    'prod'
+  'nonprod'
+  'prod'
 ])
 param environmentType string
 ```

@@ -41,7 +41,11 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 
 ## Define a module
 
-Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you have already created files that can be used as Bicep modules!
+Bicep modules enable you to organize and reuse your Bicep code by creating smaller units that can be composed together into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you have already created files that can be used as Bicep modules!
+
+<!-- TODO lead into animation? -->
+
+:::image type="content" source="../media/7-templates-modules.gif" alt-text="Animation showing a template being split into three modules - app, database, and network. The network module is then reused in another template." border="false":::
 
 When you want the template to include a reference to a module file, use the `module` keyword. A module definition looks similar to a resource declaration, but instead of including a resource type and API version, you instead use the module filename:
 
