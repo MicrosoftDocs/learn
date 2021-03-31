@@ -5161,8 +5161,13 @@
       "redirect_document_id": false
     },
     {    
-      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions.md",
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/6-security-center",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-continuous-monitoring.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/2-full-stack-monitoring",
       "redirect_document_id": false
     }
   ]
