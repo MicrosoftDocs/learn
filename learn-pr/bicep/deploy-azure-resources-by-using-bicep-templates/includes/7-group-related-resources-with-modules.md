@@ -73,7 +73,7 @@ A good Bicep module follows a few key principles.
 > [!div class="checklist"]
 >
 > * **A module should have a clear purpose.** For example, you might use a module to define all of the resources that are related to a specific part of your solution. For example, you might create a module that contains all of the resources that are used to monitor your application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
-> * **A module should create more than one resource.** You shouldn't create a separate module for every resource you deploy.
+> * **A module should create more than one resource.** You shouldn't create a separate module for every resource you deploy. If you have a resource that has lots of complex properties then it might make sense to put it into its own module, but in general, it's better for modules to combine multiple resources together.
 > * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they are useful to the templates that will include the module.
 > * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
 > * **A module should not output secrets.** Just like with templates, don't create module outputs for secret values like connection strings or keys.
