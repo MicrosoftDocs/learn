@@ -48,7 +48,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
-    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
+1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
     ![Image showing the "Select a resource" pane](../media/4-select-resource.png)
 
@@ -56,7 +56,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. For **Signal type**, select **Metrics**. For **Monitor service**, select **All**.
 
-    The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
+1. The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
     ![Image that shows the "Configure signal logic" pane](../media/4-configure-signal-logic.png)
 
@@ -71,7 +71,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Aggregation granularity (Period) | 1 minute |
     | Frequency of evaluation | Every 1 Minute |
 
-    Select **Done**.
+1. Select **Done**.
 
     ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
