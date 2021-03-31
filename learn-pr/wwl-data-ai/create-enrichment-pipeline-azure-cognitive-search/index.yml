@@ -26,9 +26,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure-cognitive-services
 - azure-functions
-- azure-storage
 - vs-code
 - azure-cognitive-search
 units:
