@@ -140,10 +140,10 @@ The default value for the `storageAccountName` parameter now has two parts to it
 
 ### Select SKUs for resources
 
-Your toy company has decided they will use your templates to deploy the resources for the launches of all their new toys. They also want to make sure they follow best practices and create non-production environments for each product launch, as well as their production environments. However, to save money, they want you to follow these business rules:
+The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support the launches of all of your new toys. One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they are deployed into production. However, you want to make sure you don't spend too much money on your non-production environments, so you decide some policies together:
 
-- In production environments, storage accounts must be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans must be deployed using the `P2_v3` SKU for higher performance.
-- In non-production environments, storage accounts must be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans must be deployed using the free `F1` SKU.
+- In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for higher resiliency, and App Service plans will be deployed using the `P2_v3` SKU for higher performance.
+- In non-production environments, storage accounts will be deployed at the `Standard_LRS` (locally redundant storage) SKU, and App Service plans will be deployed using the free `F1` SKU.
 
 One way to implement these business requirements would be to use parameters to specify each SKU. However, this can become difficult to maintain when you have larger templates - if you have to specify every single SKU as a parameter then it can get difficult to manage. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
 
