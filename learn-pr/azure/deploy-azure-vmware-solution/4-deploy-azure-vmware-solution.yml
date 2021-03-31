@@ -34,6 +34,6 @@ quiz:
     - content: "Register the Microsoft.AVS resource provider."
       isCorrect: true
       explanation: "Before you can provision your hosts, make sure that you register the Microsoft.AVS resource provider in the Azure portal."
-    - content: "A service principal"
+    - content: "Specify a service principal."
       isCorrect: false
       explanation: "A service principal is the local representation, or application instance, of a global application object in a single tenant or directory. A service principal isn't required to deploy AVS."
