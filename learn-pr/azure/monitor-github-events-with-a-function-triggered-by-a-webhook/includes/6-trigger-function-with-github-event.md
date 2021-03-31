@@ -7,7 +7,7 @@ In this unit, we'll examine the payload from the Gollum event so we can update o
 
 The payload for the *Gollum* event contains the following items:
 
-- **pages** The pages that were updated. Each page includes the following information:
+- **pages** Pages that were updated. Each page includes the following information:
     - `page_name` Name of the page.
     - `title` Current page title.
     - `action` Action that was performed on the page. Can be created or edited.
