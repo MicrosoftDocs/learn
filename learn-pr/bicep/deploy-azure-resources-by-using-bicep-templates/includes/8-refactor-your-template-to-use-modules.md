@@ -53,7 +53,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice you have copied the parameters and variables from your *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
 
-1. Save the changes to the file. Notice there are no warnings about missing variables or parameters, or invalid resource.
+1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any warnings about missing variables or parameters, or invalid resources.
 
 ### Add a reference to the module from the parent template
 
@@ -149,6 +149,10 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/8-addmodule-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-1. Select the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app.
+1. Select the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app. Copy the host name to your clipboard.
 
     :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Azure portal interface for the specific deployment's outputs." border="true":::
+
+1. Open a new browser tab and paste the host name you just copied. You should see a page with the default App Service welcome page. Congratulations - you've successfully deployed the foundations for a great app!
+
+     :::image type="content" source="../media/8-addmodule-appservice.png" alt-text="The default App Service welcome page." border="true":::

@@ -169,7 +169,7 @@ var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
 
 Notice some new syntax here too. Let's break it down:
 
-- `(environmentType == 'prod')` will evaluate to a Boolean (true/false) value depending on what the `environmentType` parameter has been set to.
+- `(environmentType == 'prod')` evaluates to a Boolean (true/false) value depending on what the `environmentType` parameter has been set to.
 - `?` is called the _ternary operator_, and it evaluates an _if/then_ statement. The part after the `?` is what is used if the expression is true. If the expression evaluates to false, then the value after the `:` is used.
 
 So these rules can be translated to:

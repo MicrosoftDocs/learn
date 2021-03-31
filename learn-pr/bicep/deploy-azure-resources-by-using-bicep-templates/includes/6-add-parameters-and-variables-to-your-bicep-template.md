@@ -14,7 +14,7 @@ During the process, you:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Add the `location` and resource name parameters
+## Add the location and resource name parameters
 
 1. In the *main.bicep* file in Visual Studio Code, add the following to the top of the file:
 
