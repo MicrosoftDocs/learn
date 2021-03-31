@@ -11,7 +11,7 @@ The payload for the *Gollum* event contains the following items:
     - `page_name` Name of the page.
     - `title` Current page title.
     - `action` Action that was performed on the page. Can be created or edited.
-    - `html_url` The HTML wiki page. **repository** information about the repository containing the wiki page, including:
+    - `html_url` HTML wiki page. **repository** information about the repository containing the wiki page, including:
         - `name` Name of the repository.
         - `owner` Details of the owner of the repository.
         - `html_url` Address of the repository. **sender** information about the user that raised the event that caused the webhook to fire.
