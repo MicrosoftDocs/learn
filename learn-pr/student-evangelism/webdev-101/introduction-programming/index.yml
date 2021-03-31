@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.webdev.intro-programming
+metadata:
+  title: Introduction to programming
+  description: Learn about programming languages and the tools that developers use to create software
+  ms.date: 03/24/2020
+  author: chloecodesthings
+  ms.author: chcondon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to programming
+summary: Learn about programming languages and the tools that developers use to create software
+abstract:  |
+  In this module, you will learn:
+
+  - Explore the concept of programming.
+  - Understand high and low-level programming.
+  - Basic elements of a program.
+  - Useful software and tooling for the professional developer.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg # TODO change
+levels:
+- beginner
+roles:
+# - Add relevant user role(s) (developer, data scientist, etc.)
+- student
+products:
+- vs
+units:
+- learn.webdev.intro-programming.1-introduction
+- learn.webdev.intro-programming.2-what-is-programming
+- learn.webdev.intro-programming.3-programming-languages
+- learn.webdev.intro-programming.4-program-elements
+- learn.webdev.intro-programming.5-tools-of-the-trade
+- learn.webdev.intro-programming.6-browsers
+- learn.webdev.intro-programming.7-command-line-tools
+- learn.webdev.intro-programming.8-documentation
+- learn.webdev.intro-programming.9-knowledge-check
+- learn.webdev.intro-programming.10-summary
+
+badge:
+  uid: learn.webdev.intro-programming.badge
