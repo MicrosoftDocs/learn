@@ -8,7 +8,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
@@ -37,9 +37,9 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="java"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. The portal goes to the **Marketplace** pane. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
@@ -71,7 +71,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 
@@ -102,7 +102,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
 1. In the left menu pane, select **Web**.
 

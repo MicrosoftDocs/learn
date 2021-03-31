@@ -8,13 +8,13 @@ In this unit, we'll examine the payload from the Gollum event so we can update o
 The payload for the *Gollum* event contains the following items:
 
 - **pages** The pages that were updated. Each page includes the following information:
-    - `page_name` The name of the page.
-    - `title` The current page title.
-    - `action` The action that was performed on the page. Can be created or edited.
-    - `html_url` The HTML wiki page. **repository** Information about the repository containing the wiki page, including:
-        - `name` The name of the repository.
+    - `page_name` Name of the page.
+    - `title` Current page title.
+    - `action` Action that was performed on the page. Can be created or edited.
+    - `html_url` The HTML wiki page. **repository** information about the repository containing the wiki page, including:
+        - `name` Name of the repository.
         - `owner` Details of the owner of the repository.
-        - `html_url` The address of the repository. **sender** Information about the user that raised the event that caused the webhook to fire.
+        - `html_url` Address of the repository. **sender** information about the user that raised the event that caused the webhook to fire.
 
 For example, a payload might look like the following code.
 
