@@ -36,7 +36,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, and in the search box, search for and select **Monitor**. The **Monitor - Overview** pane appears.
+1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor - Overview** pane appears.
 
 1. In the left menu pane, select **Alerts**.
 
@@ -48,7 +48,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
-    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
+1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
 
     ![Image showing the "Select a resource" pane](../media/4-select-resource.png)
 
@@ -56,7 +56,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. For **Signal type**, select **Metrics**. For **Monitor service**, select **All**.
 
-    The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
+1. The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
     ![Image that shows the "Configure signal logic" pane](../media/4-configure-signal-logic.png)
 
@@ -71,7 +71,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Aggregation granularity (Period) | 1 minute |
     | Frequency of evaluation | Every 1 Minute |
 
-    Select **Done**.
+1. Select **Done**.
 
     ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
@@ -97,7 +97,7 @@ You can set up metric alerts by using the CLI. This process can be quicker compa
 
 Let's create a new metric alert similar to the one you set up in the Azure portal.
 
-1. Run this command in Cloud Shell to obtain the resource ID of the virtual machine created earlier.
+1. Run this command in Cloud Shell to obtain the resource ID of the virtual machine previously created.
 
     ```bash
     VMID=$(az vm show \
@@ -129,7 +129,7 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
+1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left pane.
 
    This step presents the alert summary pane, where you can see the count of the number of alerts.
 

@@ -125,11 +125,11 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
     exit
     ```
 
-1. In the previous exercise, you noted the principal ID for your VM. If you don't remember the principal ID, then run the following command to find the system-assigned ID for your VM. Replace `<vm name>` with the name of your VM:
+1. In the previous exercise, you noted the principal ID for your VM. If you don't remember the principal ID, then run the following command to find the system-assigned ID for your VM. (The `$VMNAME` variable was set in the prior exercise to a value of `prodserver`.)
 
     ```azurecli
     az vm identity show \
-      --name <vm name> \
+      --name $VMNAME \
       --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
@@ -153,7 +153,7 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
         --name $KVNAME \
         --secret-permissions get list \
         --object-id $(az vm identity show \
-                        --name prodserver \
+                        --name $VMNAME \
                         --resource-group <rgn>[Sandbox resource group]</rgn> \
                         --output tsv \
                         --query principalId)

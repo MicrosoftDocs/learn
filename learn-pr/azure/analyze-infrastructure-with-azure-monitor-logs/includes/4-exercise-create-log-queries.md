@@ -50,11 +50,11 @@ Let's use the **Azure Monitor Demo Logs pane** to practice writing queries again
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
 
-In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage and performance of their resources. Use the **Time Range** parameter above the query editor to select **Last 24 hours** as the time period of concern. Navigate to the **Queries** tab in the left pane to view a list of the sample queries grouped by Category, Resource Type, Solution, or Topic.
+In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage and performance of their resources. Use the **Time Range** parameter above the query editor to select **Last 24 hours** as the time period of concern. Go to the **Queries** tab located to the right to view a list of the sample queries grouped by Category, Resource Type, Solution, or Topic.
 
-1. Leave the Group by setting on **Resource Type**, expand **Virtual machines**, and run the query called **Distinct missing updates cross computers**. This query returns a list missing Windows updates from Virtual Machines sending logs into the workspace.
+1. Leave the Group by setting on **Resource Type**, expand **IT & Management Tools**, and run the query called **Distinct missing updates cross computers**. This query returns a list missing Windows updates from Virtual Machines sending logs into the workspace.
 
-1. Change the Group by setting to **Category**, expand **Azure Monitor** and run the query called **Computers availability today**. This query shows a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
+1. Change the Group by setting to **Category**, expand **Azure Monitor**, and run the query called **Computers availability today**. This query shows a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
 
 1. Change the Group by setting to **Topic**, expand **Firewall Logs**, and run the query called **Network rule log data**. This query returns a list of firewall actions the details of the associated network flows.
 

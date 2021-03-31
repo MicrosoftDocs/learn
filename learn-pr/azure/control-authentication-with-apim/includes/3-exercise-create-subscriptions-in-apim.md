@@ -58,7 +58,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. In the search bar, enter **API Management**, and from the **API Management** panel, select **Create**. The **Create API Management** panel appears.
+1. In the search bar, enter **API Management**, and from the **API Management** pane, select **Create**. The **Create API Management** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -89,9 +89,9 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. In the nav bar, under **APIs**, select **APIs**.
 
-1. On the **Add a new API** panel, select **OpenAPI**.
+1. On the **APIs/API Management service** pane, under the **Create from definition** section, select **OpenAPI**.
 
-1. On the **Create from OpenAPI specification** panel, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
+1. On the **Create from OpenAPI specification** pane, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
 
 1. Leave the other settings at their defaults, and then select **Create**.
 
@@ -105,7 +105,7 @@ The final step is to add a subscription key for the weather API.
 
     ![Screenshot showing how to add a new subscription](../media/3-subscriptions.png)
 
-1. In the **New subscription** panel, enter the following details, and then select **Save**.
+1. In the **New subscription** , enter the following details, and then select **Save**.
 
     | Setting | Value |
     | --- | --- |
@@ -115,7 +115,7 @@ The final step is to add a subscription key for the weather API.
     | **Scope** | API |
     | **API** | Select the Weather Data API from the list |
 
-    ![Screenshot showing how to add a new subscription](../media/3-add-subscription.png)
+    ![Screenshot showing how to add a new subscription again](../media/3-add-subscription.png)
 
 1. Select **Save**.
 
