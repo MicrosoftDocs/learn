@@ -136,7 +136,7 @@ An NSG rule is blocking inbound traffic to the back end subnet from everywhere o
 
 1. In the middle menu pane, under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**. The **MyNSGRule** pane appears.
 
-1. In the **Source** field, select**Service Tag** from the dropdown list, and in the **Source service tag** field, select **Internet** from the dropdown list.
+1. In the **Source** field, select **Service Tag** from the dropdown list, and in the **Source service tag** field, select **Internet** from the dropdown list.
 
 1. Select **Save**.
 
