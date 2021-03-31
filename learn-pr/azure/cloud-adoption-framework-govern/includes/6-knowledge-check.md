@@ -1,4 +1,4 @@
-Here, you will test your knowledge regarding the first few steps towards sound Azure governance.
+Here, you will test your knowledge regarding the first few steps toward sound Azure governance.
 
 ## Which comes first? What matters most?
 

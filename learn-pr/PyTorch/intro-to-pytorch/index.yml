@@ -15,7 +15,7 @@ abstract: |
   - Learn about the complete ML workflow implemented in PyTorch.
   - Introduce the key concepts to building machine learning models.
   - Build a Computer Vision model.
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
