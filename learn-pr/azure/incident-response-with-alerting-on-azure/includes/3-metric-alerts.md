@@ -16,7 +16,7 @@ As you learned in the previous unit, all alerts are governed by their rules. For
 
 You must define the type of statistical analysis to be used with either static or dynamic metric alerts. Example types are minimum, maximum, average, and total. In this example, you define the period of data to be assessed: the last 10 minutes. Finally, you set the frequency by which the alert conditions are checked: every 2 minutes.
 
-### Using static threshold metric alerts
+### Use static threshold metric alerts
 
 Static metric alerts are based on simple static conditions and thresholds that you define. With static metrics, you specify the threshold that will be used to trigger the alert or notification.
 
