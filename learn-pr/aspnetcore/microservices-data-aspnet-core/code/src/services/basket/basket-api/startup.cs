@@ -1,13 +1,19 @@
 #region snippet_ConfigureServices
 public virtual IServiceProvider ConfigureServices(IServiceCollection services)
 {
+    // code omitted for brevity
+
     services.AddCustomHealthCheck(Configuration);
+
     services.Configure<BasketSettings>(Configuration);
+    
     services.AddSingleton<ConnectionMultiplexer>(sp =>
     {
         var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
         return ConnectionMultiplexer.Connect(settings.ConnectionString);
     });
+
+    // code omitted for brevity
 }
 #endregion snippet_ConfigureServices
 

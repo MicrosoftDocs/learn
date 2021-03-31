@@ -7,59 +7,36 @@ In this unit, you will:
 
 ## Create an Azure Cache for Redis instance
 
-1. Run the following script:
+1. Run the following command:
 
     ```bash
-    cd ./deploy/k8s && \
-        ./create-azure-redis.sh
+    pushd ./deploy/k8s && \
+        ./create-azure-redis.sh && \
+        popd
     ```
 
-    The preceding script:
+    The preceding command:
 
     - Navigates to the directory containing the resource provisioning script.
-    - Starts the creation of the Azure Cache for Redis.
-    - Gets the connection string.
-    - Waits for the creation command to finish (it could take a few minutes).
+    - Runs the script, which:
+        - Starts the creation of the Azure Cache for Redis.
+        - Gets the connection string.
+        - Waits for the creation command to finish (it could take a few minutes).
+    - Returns to the directory you started from.
 
     A variation of the following output appears:
 
     ```console
-    Creating an Azure Cache for Redis instance
-    ==========================================
-    
-    Creating Azure Cache for Redis eshop-learn-20210120180516594 in RG eshop-learn-rg
-    ------------------------------
-    {- Finished ..
-      "HotsName": "eshop-learn-20210120180516594.redis.cache.windows.net",
-      "Location": "West US",
-      "Name": "eshop-learn-20210120180516594",
-      "ProvisioningState": "Creating",
-      "RedisVersion": "4.0.14"
-    }
-    
-    Retrieving Azure Cache for Redis connection string
-    --------------------------------------------------
-    
-    ConnectionString: eshop-learn-20210120180516594.redis.cache.windows.net:6380,password=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=,ssl=True,abortConnect=False
-    
-    Waiting for the Azure Cache for Redis creation to finish (Creating) - Ctrl+C to cancel...
-    
-    Environment variables
-    ---------------------
-    export ESHOP_REDISNAME=eshop-learn-20210120180516594
-    export ESHOP_REDISPRIMARYKEY=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=
-    export ESHOP_REDISCONNSTRING=eshop-learn-20210120180516594.redis.cache.windows.net:6380,password=ofiCJafSxzsxGgwYTKryxgM+ErwT+ViaSQa1PsHZaBM=,ssl=True,abortConnect=False
-    export ESHOP_IDTAG=20210120180516594
-    
-    Run the following command to update the environment
-    eval $(cat ~/clouddrive/aspnet-learn/create-azure-redis-exports.txt)
+    Done! The Azure Cache for Redis resource is provisioned, but it still has startup tasks to do. It will be a few minutes before the resource is ready.
+
+    Check the status of the resource with the following:
+
+     > az redis show -g eshop-learn-rg -n eshop-learn-20210326164332574 --query provisioningState
     ```
 
-    In the preceding output, you can see that the creation command returns rather quickly, but with status "Creating". Then the connection string is displayed and a loop begins with the message "Waiting for the Azure Cache for Redis creation to finish...". You'll get the resulting environment variables when the creation finishes.
+    Running the provided command displays "Creating" until the resource is ready. When the resource is ready, it will display "Succeeded." You may continue with the following steps while provisioning finishes.
 
 1. Copy the connection string in the preceding command's output.
-
-You can begin the next step while waiting for the script to finish.
 
 ## Remove the Redis microservice from the cluster
 
@@ -76,6 +53,21 @@ release "eshoplearn-basketdata" uninstalled
 ```
 
 If you checked the *WebStatus* dashboard, you should see the HTTP aggregator and basket service failing. Although it could take a little while to show.
+
+## Remove in-memory caching from basket service
+
+The in-memory caching currently used in the basket service will be replaced with Azure Cache for Redis. Complete the following steps to remove the in-memory caching:
+
+In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*, apply the following changes:
+
+1. Delete the following line:
+
+    ```csharp
+    services.AddSingleton<IBasketRepository, InMemoryBasketRepository>();
+    ```
+
+<!-- TODO: finish writing these steps -->
+
 
 ## Reconfigure the affected projects
 
