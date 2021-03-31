@@ -1,4 +1,4 @@
-Cloud architects and developers don't want to concern themselves with managing the server that hosts their apps or the underlying operating system and database. They want to focus on the development of their cloud-designed apps. By using Azure Database for MySQL, you can help them achieve this focus. Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL to get the benefits of a Platform as a Service (PaaS) environment, as the following image depicts <--Andy: I added the last bit about the image, because the alt-text is really brief. Is this OK?-->. 
+Cloud architects and developers don't want to concern themselves with managing the server that hosts their apps or the underlying operating system and database. They want to focus on the development of their cloud-designed apps. By using Azure Database for MySQL, you can help them achieve this focus. Azure Database for MySQL is a managed relational database as a service (DBaaS) offering that can manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL to get the benefits of a Platform as a Service (PaaS) environment, as the following image depicts. 
 
 :::image type="content" source="../media/mysql-conceptual-diagram.png" alt-text="The architecture of Azure Database for MySQL in a typical organization.":::
 
@@ -9,7 +9,7 @@ By implementing Azure Database for MySQL, you can provide high availability, dat
 
 ## Example scenario
 
-<!--Andy: Please check addition to scenario just to make it as long as the template example-->Suppose you work at an organization that currently implements MySQL databases to support critical workloads. The cloud architects and developers at your company spend considerable time in server management and troubleshooting issues with the operating systems and databases. You want to migrate to Azure Database for MySQL, which will provide you the following benefits:
+Suppose you work at an organization that currently implements MySQL databases to support critical workloads. The cloud architects and developers at your company spend considerable time in server management and troubleshooting issues with the operating systems and databases. You want to migrate to Azure Database for MySQL, which will provide you the following benefits:
 
 - High availability
 - Automatic backups
