@@ -4,9 +4,9 @@ You will examine the key factors that determine Azure NetApp Files performance. 
 
 ## Storage Hierarchy
 
-Diagram of Azure NetApp files storage hierarchy showing the relationship between subscriptions, accounts, capacity pools and volumes.
+Below is the diagram of Azure NetApp files storage hierarchy showing the relationship between subscriptions, accounts, capacity pools and volumes.
 
-![Azure NetApp Files Storage Hierarchy](../media/storagehierarchy.png)
+![Diagram of Azure NetApp files storage hierarchy showing the relationship between subscriptions, accounts, capacity pools and volumes.](../media/storagehierarchy.png)
 
 ### Azure NetApp account
 
