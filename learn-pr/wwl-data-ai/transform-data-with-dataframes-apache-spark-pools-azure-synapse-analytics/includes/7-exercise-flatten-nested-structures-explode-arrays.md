@@ -1,7 +1,7 @@
 In order to go through this exercise, it require a set-up with instructions that can be found here:
 [Set up](https://github.com/ctesta-oneillmsft/asa-vtd)
 
-* PySpark contains a special [`explode` function](https://spark.apache.org/docs/latest/api/python/pyspark.sql.html?highlight=explode#pyspark.sql.functions.explode), which returns a new row for each element of the array. This will help flatten the `topProductPurchases` column for better readability or for easier querying. Execute the following in a new cell:
+* PySpark contains a special [`explode` function](https://spark.apache.org/docs/3.0.0/api/python/pyspark.sql.html?highlight=explode#pyspark.sql.functions.explode#pyspark.sql.functions.explode), which returns a new row for each element of the array. This will help flatten the `topProductPurchases` column for better readability or for easier querying. Execute the following in a new cell:
 
     ```python
     from pyspark.sql.functions import udf, explode

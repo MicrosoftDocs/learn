@@ -1,6 +1,7 @@
 If your organization needs to comply with legal or regulatory standards, and uses any Azure services, Microsoft SaaS applications including Microsoft 365, Dynamics, or the Power Platform, you'll find the Azure compliance documentation page helpful.
 
-:::image type="content" source="../media/4-azure-compliance-documentation.png" alt-text="Azure compliance documentation":::
+> [!div class="mx-imgBorder"]
+> ![Azure compliance documentation](../media/4-azure-compliance-documentation.png)
 
 Here you'll find links to documents and articles that explain the regulations. This page also has links to audits, reports, certificates, FAQs, and much more.
 
