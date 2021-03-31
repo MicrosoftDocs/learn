@@ -14,17 +14,17 @@ You use Azure Sentinel if:
 
 You create an Azure Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, and then adding it to Sentinel.
 
-![Create a workspace](../media/6-create-workspace.png)
+![SCreenshot of create a workspace.](../media/7-sentinel-01.png)
 
 When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Azure Active Directory and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
 
 Use the Sentinel dashboard to view all of your data connectors.  
 
-![Data connectors](../media/6-connectors.png)
+![Screenshot of data connectors.](../media/7-sentinel-02.png)
 
 Choose the appropriate data connector for your data source. Next, look at the prerequisites for your connector and address them to successfully connect your data source.
 
-![Data received](../media/6-data-received.png)
+![SCreenshot of data received.](../media/7-sentinel-03.png)
 
 When you connect the data source, your logs will be synced to Sentinel. You'll see a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also see the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
 
@@ -32,15 +32,15 @@ When you connect the data source, your logs will be synced to Sentinel. You'll s
 
 When your data sources have been connected, Sentinel begins to monitor your enterprise. You can configure alert rules to investigate anomalies and threats more intelligently.
 
-![Alert map](../media/6-enterprise-monitoring.png)
+![SCreenshot of alert map.](../media/7-sentinel-04.png)
 
 You need to create alert rules. These rules allow you to specify the threats and activities that should raise alerts. You can respond manually or by using playbooks for automated responses.
 
-![View all alerts](../media/6-detection-rules.png)
+![Screenshot of view all alerts.](../media/7-sentinel-05.png)
 
 In the analytics pane of your Sentinel dashboard, you can view all the rules that you have in place. You can also create new rules there.
 
-![Create alert rule](../media/6-create-detection-rule.png)
+![SCreenshot of create alert rule.](../media/7-sentinel-06.png)
 
 When you create a rule, you need to specify whether it should be enabled or disabled at the outset. You also specify the severity of the alert, along with a rule query. 
 
@@ -61,54 +61,54 @@ Sentinel combines your generated alerts into incidents for further investigation
 
 Use the **Incidents** pane to see details about your incidents, such as how many you've closed and how many remain open. You also use the pane to find out when an incident happened and to determine its severity.
 
-![Incidents](../media/6-incidents.png)
+![SCreenshot of incidents.](../media/7-sentinel-07.png)
 
 You select an incident to start to investigate it. You see information about the incident on the right side. Select **View full details** to get more information.
 
-![Incident detail](../media/6-incident-detail.png)
+![SCreenshot of incident detail.](../media/7-sentinel-08.png)
 
 You see that multiple entities have been mapped to this incident. When you want to investigate an incident, you set its status from **New** to **In progress** and assign it to an owner.
 
-![Incident owner](../media/6-incident-owner.png)
+![Screenshot of incident owner.](../media/7-sentinel-09.png)
 
 You're then ready to investigate. When you select **Investigate**, you get an investigation map. You use the map to better understand what caused an incident and the affected scope. You also use the map to correlate data surrounding an incident.
 
-![Investigation map](../media/6-investigation-map.png)
+![Screenshot of investigation map.](../media/7-sentinel-10.png)
 
-The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of the incident. 
+The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of the incident.
 
-![Entity](../media/6-entity.png)
+![SCreenshot of entity.](../media/7-sentinel-11.png)
 
 If you hover over an entity, you also see a list of *exploration queries* that were designed by Microsoft security analysts and experts. You use exploration queries to investigate more effectively.
 
-![Exploration queries](../media/6-exploration-queries.png)
+![Screenshot of exploration queries.](../media/7-sentinel-12.png)
 
 The investigation map also gives you a timeline that helps you understand which event occurred at a particular time. Use the timeline feature to understand the path that a threat might have taken over time.
 
-![Timeline](../media/6-timeline.png)
+![Screenshot of timeline.](../media/7-sentinel-13.png)
 
 ## Respond to threats with playbooks
 
 Playbooks can help you automatically respond to threats in Sentinel. You create a new playbook through the **Playbooks** pane in your Sentinel dashboard.
 
-![Sentinel playbooks](../media/6-sentinel-playbooks.png)
+![Screenshot of sentinel playbooks.](../media/7-sentinel-14.png)
 
 You add a new playbook by creating a logic app.
 
-![Create a logic app](../media/6-create-logic-app.png)
+![SCreenshot of create a logic app.](../media/7-sentinel-15.png)
 
  You use the Azure Logic Apps Designer to configure a new blank logic app.
 
-![Logic Apps Designer](../media/6-logic-app-designer.png)
+![SCreenshot of Logic Apps Designer.](../media/7-sentinel-16.png)
 
 Search for "Azure Sentinel" to find its related connectors and triggers.
 
-![Search for Azure Sentinel](../media/6-search-azure-sentinel.png)
+![Screenshot of search for Azure Sentinel.](../media/7-sentinel-17.png)
 
 Choose the trigger that you want. You can then put together a step-by-step process that details what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
 
-![Complete playbook](../media/6-complete-playbook.png)
+![Screenshot of complete playbook.](../media/7-sentinel-18.png)
 
 When you've configured your playbook, you can point to it in your alert rules. The following alert rule, for example, triggers a playbook called **ProcessExecuted**.
 
-![Trigger a playbook](../media/6-trigger-playbook.png)
+![SCreenshot of trigger a playbook.](../media/7-sentinel-19.png)

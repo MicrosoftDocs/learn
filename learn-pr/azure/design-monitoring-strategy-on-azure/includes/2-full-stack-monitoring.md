@@ -21,7 +21,7 @@ You want to improve your application's health and build better applications in t
 
 By monitoring your application for issues as it's being developed, you prevent errors and exceptions later, when your application goes to production. You ensure your code only gets pushed to the next stage of the development cycle if it has successfully passed the necessary checks. This way, you're improving your development lifecycle.
 
-![Screenshot of Application Key Performance Indicators](../media/2-application-kpis.png)
+![Screenshot of Application Key Performance Indicators.](../media/2-full-stack-monitoring-01.png)
 
 You also monitor your application when it's live and in use. As you can see in the charts, you might be faced with failing requests, high server response times, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly. You'll respond effectively to keep your application healthy.
 
@@ -37,7 +37,7 @@ You want to deal with any issues that arise in a timely and effective way. You c
 
 These alerts help you start a process where a person receives a notification and then takes appropriate action. You can also trigger automated responses to alerts with playbooks and webhooks.
 
-![Screenshot of Virtual Machine KPIs](../media/2-infrastructure-kpis.png)
+![Screenshot of Virtual Machine KPIs.](../media/2-full-stack-monitoring-02.png)
 
 You'll also want to use the data for operational analysis and capacity planning. As the preceding example shows, you can collect performance data from the virtual machine guest operating systems. You can put them into charts for comparison and trending purposes to inform decision making.
 
@@ -45,7 +45,7 @@ You'll also want to use the data for operational analysis and capacity planning.
 
 In addition to monitoring your deployed applications and infrastructure resources, you should also use Azure's built-in capabilities to monitor your Azure platform resources. Azure resources such as Storage Accounts, Key Vaults, Cosmos DBs all have performance metrics and resource logs that can be viewed and analyzed to track performance and availability. Additionally, many Azure resources have dedicated Insights that offer pre-defined monitoring experiences across multiple subscriptions, resource groups and resources for the specific resource type.
 
-![Screenshot of Azure Storage KPIs](../media/2-azure-storage-kpis.png)
+![Screenshot of Azure Storage KPIs.](../media/2-full-stack-monitoring-03.png)
 
 As the shown in the example, this Azure Monitor storage insight displays the usage and latency for multiple storage accounts across two subscriptions. You can also view, and collect logs related Active Directory for your Azure tenant, and Service Health and Activity logs for Azure subscriptions. A full stack monitoring solution includes visibility into Azure platform resources on which your application and infrastructure depend.
 
