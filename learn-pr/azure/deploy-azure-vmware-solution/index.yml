@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.deploy-azure-vmware-solution
 metadata:
-  title: Prepare for VMWare migration by deploying Azure VMware Solution
+  title: Prepare for VMware migration by deploying Azure VMware Solution
   description: Prepare to migrate VMware workloads to Azure by deploying an Azure VMware Solution resource. Then, connect your VMware environment to Azure VMware Solution.
   ms.date: 03/19/2021
   author: sbkuehn

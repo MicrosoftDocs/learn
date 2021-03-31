@@ -1,4 +1,4 @@
-Azure VMware Solution (AVS) provides a private-cloud environment that can be accessed from both on-premises and Azure-based environments or resources. The next step in AVS deployment involves a plan for network topology. 
+Azure VMware Solution (AVS) provides a private-cloud environment that can be accessed from both on-premises and Azure-based environments or resources. The next step in AVS deployment involves a plan for network topology.
 
 The AVS environment in Azure needs to pass network traffic to Azure services and on-premises VMware environments. A dedicated Azure ExpressRoute circuit provides connectivity to Azure resources and services from AVS. A separate, customer-provided Azure ExpressRoute circuit provides connectivity to on-premises VMware environments. To accomplish network connectivity, specific IP address ranges and firewall ports must be enabled. When AVS is deployed, private networks are created for the following vSphere components:
 
@@ -40,13 +40,13 @@ If you select an existing virtual network, you must designate a GatewaySubnet fo
 
 If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
 
-:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot showing the virtual network field left blank during a private-cloud deployment within the Azure portal.":::
+:::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing the virtual network field left blank during a private-cloud deployment.":::
 
 ## ExpressRoute and routing requirements
 
 There are two types of interconnectivity for AVS:
 
-- **Basic interconnectivity**: AVS connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The AVS-provided ExpressRoute establishes connectivity to and from the AVS private cloud for other Azure services like Azure Monitor and Azure Security Center.
+- **Basic interconnectivity**: AVS connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The AVS-provided ExpressRoute establishes connectivity to and from the AVS private cloud for other Azure services, like Azure Monitor and Azure Security Center.
 - **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection is configured via a customer-provided ExpressRoute circuit. You can use an existing circuit or purchase a new one.
 
 ExpressRoute Global Reach must be enabled to route traffic to and from on-premises to the AVS private cloud. The customer-provided ExpressRoute circuit is not a part of the AVS private-cloud deployment. All gateways involved with the deployment must support 4-byte autonomous system number (ASN). An ASN is a unique identifier that is globally available and allows its autonomous system to exchange routing information with other systems. All routes between on-premises and Azure are advertised via the industry-standard Border Gateway Protocol (BGP).

@@ -33,8 +33,8 @@ quiz:
       explanation: "A virtual private network provides site-to-site connectivity over the public internet. AVS requires dedicated site-to-site connectivity."
     - content: "ExpressRoute Global Reach"
       isCorrect: true
-      explanation: "ExpressRoute is a dedicated site-to-site circuit, and Global Reach allows you to connect AVS private cloud ExpressRoute circuits to an on-premises VMware environment. Without Global Reach, the ExpressRoute Gateway doesn't provide transitive routing between its connected circuits."
-    - content: "Load Balancer"
+      explanation: "ExpressRoute is a dedicated, site-to-site circuit, and Global Reach allows you to connect AVS private cloud ExpressRoute circuits to an on-premises VMware environment. Without Global Reach, the ExpressRoute Gateway doesn't provide transitive routing between its connected circuits."
+    - content: "Load balancer"
       isCorrect: false
-      explanation: "An Azure load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach AVS."
+      explanation: "A load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach AVS."
 

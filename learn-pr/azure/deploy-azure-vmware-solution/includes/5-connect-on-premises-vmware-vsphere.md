@@ -11,7 +11,7 @@ To create an Azure Bastion resource:
 1. In the Azure portal, search for **Bastion**.
 1. On the **Create a Bastion** page, configure a new Azure Bastion resource with the following details:
 
-    :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot showing the Azure portal page for creating an Azure Bastion host, with fields containing example values.":::
+    :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot of the Azure portal showing how to create an Azure Bastion host, with fields containing example values.":::
 
     | Field | Value |
     | ----------- | -------- |
@@ -44,16 +44,16 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. From the AVS private cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute** > **Request an authorization key**.
 
-    :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot showing the Azure portal pane for requesting an authorization key for an ExpressRoute circuit.":::
+    :::image type="content" source="../media/5-request-auth-key.png" alt-text="Screenshot of the Azure portal showing how to request an authorization key for an ExpressRoute circuit.":::
 
 1. Enter a name for the authorization key.
 1. Select **Create**.
 
-    :::image type="content" source="../media/5-provide-name-auth-key-create.png" alt-text="Screenshot showing the Azure portal UI for entering the name of the authorization key and selecting Create.":::
+    :::image type="content" source="../media/5-provide-name-auth-key-create.png" alt-text="Screenshot of the Azure portal UI for entering the name of the authorization key and selecting Create.":::
 
 1. The new key appears in the list of authorization keys for the private cloud:
 
-    :::image type="content" source="../media/5-new-auth-key-private-cloud.png" alt-text="Screenshot showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
+    :::image type="content" source="../media/5-new-auth-key-private-cloud.png" alt-text="Screenshot of the Azure portal showing the new ExpressRoute Global Reach authorization key in the key list for the private cloud.":::
 
 1. Use the authorization key, ExpressRoute ID, and a /29 address block to complete the peering.
 
@@ -64,7 +64,7 @@ After the authorization key is created, the AVS ExpressRoute circuit can be peer
 1. In the Azure portal, select the AVS private cloud.
 1. From the private-cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute Global Reach** > **Add**:
 
-    :::image type="content" source="../media/5-expressroute-global-reach-tab.png" alt-text="Screenshot showing the Azure portal fields for configuring ExpressRoute and adding the authorization key.":::
+    :::image type="content" source="../media/5-expressroute-global-reach-tab.png" alt-text="Screenshot of the Azure portal fields for configuring ExpressRoute and adding the authorization key.":::
 
 1. Create an on-premises cloud connection by using one of the following methods:
     - Select the ExpressRoute circuit from the list.

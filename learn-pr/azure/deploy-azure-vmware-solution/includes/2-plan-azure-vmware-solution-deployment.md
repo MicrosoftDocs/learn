@@ -2,7 +2,7 @@ Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Priva
 
 AVS private-cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.
 
-:::image type="icon" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
+:::image type="content" source="../media/2-avs-simple-overview.png" border="false" alt-text="Diagram that shows the relationship of an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.":::
 
 Your company can use AVS to run native VMware workloads on Azure. VMs can be migrated directly from the on-premises VMware environment to AVS. The VMs in AVS run like VMs do on-premises.
 
@@ -65,7 +65,7 @@ There are two types of sizing criteria to create AVS assessments within the Azur
 
 To do the assessment:
 
-1. Choose to **Assess** the environment from within the Azure Migrate project. 
+1. Choose to **Assess** the environment from within the Azure Migrate project.
 1. In the **Assessment type** drop-down list box, select **Azure VMware Solution (AVS)**.
 1. Provide an **Assessment name** and select the **Assessment properties** you want.
 1. Select the **Select machines to assess** tab.
@@ -82,7 +82,7 @@ To view the assessment:
 1. Go to **Migration goals** > **Servers**.
 1. Select **Assessments** in **Azure Migrate: Server Assessment**.
 1. Select the AVS assessment to open.
- 
+
 The report should look something like this:
 
 :::image type="content" source="../media/2-avs-assessment-summary.png" alt-text="Imaging showing Azure Migrate assessment for AVS migration.":::
@@ -131,7 +131,7 @@ Microsoft applies upgrades and updates on a regular schedule, so private clouds 
 
 Critical patches and updates are applied when they're validated. You'll be notified in advance of required critical upgrades. This policy ensures that each private cloud has critical patches and updates applied immediately.
 
-Microsoft is responsible for the lifecycle management of NSX-T appliances, such as NSX-T Manager and NSX-T Edge. Microsoft is also responsible for bootstrapping network configuration, such as creating the tier-0 gateway and enabling North-South routing. You're responsible for NSX-T SDN configuration. These configurations include network segments, distributed firewall rules, tier-1 gateways, and load balancers.
+Microsoft is responsible for the lifecycle management of NSX-T appliances, such as NSX-T Manager and NSX-T Edge. Microsoft is also responsible for bootstrapping network configuration, such as creating the Tier-0 gateway and enabling North-South routing. You're responsible for NSX-T SDN configuration. These configurations include network segments, distributed firewall rules, Tier-1 gateways, and load balancers.
 
 ### NSX-T Configuration
 

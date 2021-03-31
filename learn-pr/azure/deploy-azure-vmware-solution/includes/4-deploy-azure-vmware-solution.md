@@ -49,7 +49,7 @@ Follow these steps:
 1. On **Azure VMware Solution**, select **Create**.
 1. On the **Basics** tab, enter values for the fields:
 
-    :::image type="content" source="../media/4-create-private-cloud.png" alt-text="Screenshot showing how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
+    :::image type="content" source="../media/4-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing how to create an Azure VMware Solution private cloud with all required fields for deployment.":::
 
     Here's a description of the value expected in each field:
 
