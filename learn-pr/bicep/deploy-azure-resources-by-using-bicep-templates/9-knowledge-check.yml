@@ -27,7 +27,9 @@ quiz:
       explanation: "Variables have the same value, so they aren't usually what you need to consider when you deploy multiple environments."
   - content: |
       The template that the team has developed includes this line:
+      
       `param siteName string = 'mysite-${uniqueString(resourceGroup().id)}'`.
+      
       Which of these statements is true?"
     choices:
     - content: "Whoever deploys the template must specify a value for the `siteName` parameter."
