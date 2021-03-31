@@ -155,7 +155,7 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 1. In the dropdowns, select your **Subscription** and **Resource Group** for this exercise. Network Watcher displays your network topology.
 
-    ![Screenshot that shows the exercise network topology](../media/3-network-topology.png)(../media/3-network-topology-expanded-1.png#lightbox)
+    ![Screenshot that shows the exercise network topology](../media/3-network-topology.png)
 
 ## Use Connection Monitor to run tests from the back end to the front end
 
