@@ -38,13 +38,13 @@ Consider a real example. The `Get-Help Get-Process -Full` command returns a deta
 
 The `PARAMETERS` section includes more than these three parameters. But these parameters are the only ones whose `Accept pipeline input?` field is set to _true_. The parameters are eligible for pipeline evaluation, because here you're evaluating only parameters that accept pipeline input.
 
-Now, PowerShell evaluates the input in the following order:
+PowerShell evaluates the input in the following order:
 
-   1. Evaluate **by value (by type)**: PowerShell first tries to match the input to a complex type. That is, it tries to match them _by value_. In the preceding example, PowerShell evaluates whether the input looks like `System.Diagnostics.Process[]`. 
+Step 1 - **By value (by type)**: PowerShell first tries to match the input to a complex type. That is, it tries to match them _by value_. In the preceding example, PowerShell evaluates whether the input looks like `System.Diagnostics.Process[]`. 
 
    If there's no match, PowerShell moves to the next step.
 
-2. Evaluate **by property name**: Next, PowerShell tries to match the input to a simpler data type, which is either the `-Name` parameter or the `-Id` parameter. In the `PARAMETERS` section for both parameters, you see the following output:
+Step 2 - **By property name**: Next, PowerShell tries to match the input to a simpler data type, which is either the `-Name` parameter or the `-Id` parameter. In the `PARAMETERS` section for both parameters, you see the following output:
 
    ```output
    Accept pipeline input?       true (ByPropertyName)
