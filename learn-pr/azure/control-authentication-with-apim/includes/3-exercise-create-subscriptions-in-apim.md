@@ -115,7 +115,7 @@ The final step is to add a subscription key for the weather API.
     | **Scope** | API |
     | **API** | Select the Weather Data API from the list |
 
-    ![Screenshot showing how to add a new subscription](../media/3-add-subscription.png)
+    ![Screenshot showing how to add a new subscription again](../media/3-add-subscription.png)
 
 1. Select **Save**.
 

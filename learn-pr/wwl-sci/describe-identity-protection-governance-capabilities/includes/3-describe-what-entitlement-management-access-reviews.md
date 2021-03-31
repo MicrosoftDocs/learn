@@ -15,7 +15,7 @@ Entitlement management includes the following capabilities to address these chal
 - Delegate the creation of access packages to nonadministrators. These access packages contain resources that users can request. The delegated access package managers then define policies that include rules such as which users can request access, who must approve their access, and when access expires.
 - Managing external users. When a user who isn't yet in your directory requests access, and is approved, they're automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed.
 
-Entitlement management is a feature of Azure AD Premium.
+Entitlement management is a feature of Azure AD Premium P2.
 
 As you learned in the video, entitlement management uses access packages to manage access to resources.
 
