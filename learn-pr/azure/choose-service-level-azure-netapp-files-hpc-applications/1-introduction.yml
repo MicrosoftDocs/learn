@@ -3,8 +3,8 @@ uid: learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-appl
 title: Introduction  
 metadata:
   unitType: introduction  
-  title: introduction
-  description: Introduce scenarios, learning objectives and prerequisites
+  title: Introduction
+  description: Overview of the module including a scenario, objectives and prerequisites.
   ms.date: 3/17/2021  
   author: mengruts  
   ms.author: mengtsai
