@@ -4,20 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit has three questions to test your knowledge of the learning objectives
-  ms.date: 02/24/2021
+  ms.date: 03/31/2021
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
 durationInMinutes: 3
-# Modules generally must include a form of interactive validation - either sandbox task validation (see the guidance link in the exercise unit template) or a knowledge check.
-# From an instructional design perspective, knowledge checks are intended to aid retention, not to actually test the user. Questions should not be overly difficult and should focus on the broad concepts covered in the module, not fine details.
-# Knowledge checks should be in their own units, like this one.
-# Aim to include 3-4 questions, each with 3 or 4 potential answers. Stick to real multiple-choice questions, not true/false.
-# Explanations are shown after the user answers. Write short explanations for all choices, both correct and incorrect. You don't need to begin with "Correct" or "Incorrect" - the platform makes this clear.
-# Users are given unlimited attempts to answer correctly.
-# This YAML template does not define a `content` property - most knowledge check units don't include body content. If you add it, the quiz will be rendered below the content.
-# See https://review.docs.microsoft.com/en-us/learn-docs/docs/unit-add-a-knowledge-check?branch=master for full guidance.
 quiz:
   questions:
   - content: What is the best way to sign in to GitHub when you are using Visual Studio?
