@@ -24,7 +24,7 @@ An HPC application needs at least 25 TiB size of volume storage, and need to ens
 
 The output of the Performance Calculator will like:
 
-![Throughput requirement example](../media/throughputrequirement.png)
+![Screenshot of the Azure NetApp Files Performance Calculator when specifying 1,500 MiB/s throughput requirement as requirement.](../media/throughputrequirement.png)
 
 That is, in this example, Premium service will be the best choice as it achieves throughput requirements with lowest Capacity Pool cost.
 
@@ -34,6 +34,6 @@ Another HPC application needs at least 50 TiB size of volume storage, and requir
 
 The output of the Performance Calculator will like:
 
-![IOPS requirement example](../media/iopsrequirement.png)
+![Screenshot of the Azure NetApp Files Performance Calculator when specifying 140,000 IOPS requirement as requirement.](../media/iopsrequirement.png)
 
 In this case, Standard will be the best choice as it achieves that specific IOPS requirements and is also the most cost-effective.
