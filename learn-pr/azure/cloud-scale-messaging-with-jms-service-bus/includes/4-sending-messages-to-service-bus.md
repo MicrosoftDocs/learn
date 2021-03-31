@@ -121,4 +121,4 @@ The steps for this are as below :
 
 Following the above steps should give the below view.
 
-:::image type="content" source="../media/SB_Explorer_peek_view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/SB_Explorer_peek_view.png":::
+:::image type="content" source="../media/service_bus_explorer_peek_view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/service_bus_explorer_peek_view.png":::

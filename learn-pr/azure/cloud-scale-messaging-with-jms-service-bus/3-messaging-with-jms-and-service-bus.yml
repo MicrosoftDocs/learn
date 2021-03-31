@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-scale-messaging-with-jms-service-bus.3-messaging-with-jms-and-service-bus
+uid: learn.azure.cloud-scale-messaging-jms-service-bus.3-messaging-with-jms-and-service-bus
 title: Messaging on Azure Service Bus with Java Messaging Service
 metadata:
   title: Messaging on Azure Service Bus with Java Messaging Service
   description: Applications can utilize Java Messaging Service (JMS) 2.0 API to communicate with Azure Service Bus
-  ms.date: 1/29/2021
+  ms.date: 03/31/2021
   author: axisc
   ms.author: aschhab
   ms.topic: interactive-tutorial
