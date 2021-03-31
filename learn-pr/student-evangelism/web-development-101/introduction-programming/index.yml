@@ -27,16 +27,16 @@ roles:
 products:
 - vs
 units:
-- learn.webdev.intro-programming.1-introduction
-- learn.webdev.intro-programming.2-what-is-programming
-- learn.webdev.intro-programming.3-programming-languages
-- learn.webdev.intro-programming.4-program-elements
-- learn.webdev.intro-programming.5-tools-of-the-trade
-- learn.webdev.intro-programming.6-browsers
-- learn.webdev.intro-programming.7-command-line-tools
-- learn.webdev.intro-programming.8-documentation
-- learn.webdev.intro-programming.9-knowledge-check
-- learn.webdev.intro-programming.10-summary
+- learn.webdev.intro-programming.introduction
+- learn.webdev.intro-programming.what-is-programming
+- learn.webdev.intro-programming.programming-languages
+- learn.webdev.intro-programming.program-elements
+- learn.webdev.intro-programming.tools-of-the-trade
+- learn.webdev.intro-programming.browsers
+- learn.webdev.intro-programming.command-line-tools
+- learn.webdev.intro-programming.documentation
+- learn.webdev.intro-programming.knowledge-check
+- learn.webdev.intro-programming.summary
 
 badge:
   uid: learn.webdev.intro-programming.badge

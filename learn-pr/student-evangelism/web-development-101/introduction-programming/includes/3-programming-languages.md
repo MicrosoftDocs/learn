@@ -1,6 +1,6 @@
 Programming languages serve a main purpose: for developers to build instructions to send to a device. 
 
-Devices only can understand binary (1 s and 0s), and for most developers that's not an efficient way to communicate. Programming languages are a vehicle for communication between humans and computers.
+Devices only can understand binary (1s and 0s), and for most developers that's not an efficient way to communicate. Programming languages are a vehicle for communication between humans and computers.
 
 Programming languages come in different formats and may serve different purposes. For example, JavaScript is primarily used for web applications, while Bash is primarily used for operating systems.
 
@@ -53,8 +53,7 @@ back add r0,r1
  end
 ```
 
-Believe it or not, they're both doing the same thing. Which one was the easiest to understand?
+Believe it or not, they're both doing the same thing. Which one was easier to understand?
 
 > [!NOTE]
 > A Fibonacci sequence is defined as a set of numbers such that each number is the sum of the two preceding ones, starting from 0 and 1.
-

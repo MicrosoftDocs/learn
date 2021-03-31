@@ -11,7 +11,7 @@ metadata:
 title: Knowledge Check
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:

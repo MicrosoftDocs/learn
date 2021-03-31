@@ -16,13 +16,12 @@ Developers rely on editors for a few more reasons:
 - **Customization** Most editors are customizable, and each developer will have their own unique development environment that suits their needs. Many also allow developers to create their own extension.
 
 Below are some popular editors and web development extensions:
+
 - [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
-    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker?azure-portal=true)
-    - [Live Share](https://code.visualstudio.com/learn/collaboration/live-share?azure-portal=true)
-    - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode?azure-portal=true)
+  - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker&azure-portal=true)
+  - [Live Share](https://code.visualstudio.com/learn/collaboration/live-share?azure-portal=true)
+  - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode&azure-portal=true)
 - [Atom](https://atom.io/?azure-portal=true)
-    - [spell-check](https://atom.io/packages/spell-check?azure-portal=true)
-    - [teletype](https://atom.io/packages/teletype?azure-portal=true)
-    - [atom-beauty](https://atom.io/packages/atom-beautify?azure-portal=true)
-
-
+  - [spell-check](https://atom.io/packages/spell-check?azure-portal=true)
+  - [teletype](https://atom.io/packages/teletype/?azure-portal=true)
+  - [atom-beauty](https://atom.io/packages/atom-beautify/?azure-portal=true)

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.webdev.intro-programming.8-documentation
+uid: learn.webdev.intro-programming.documentation
 metadata:
   title: Documentation
-  description: Learn the importance of good documentation
+  description: Learn the importance of good documentation.
   ms.date: 03/24/2020
   author: chloecodesthings
   ms.author: chcondon
