@@ -1,31 +1,10 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
-
--->
-
 # Goal
 
 You will examine the key factors that determine Azure NetApp Files performance. You will also learn how to calculate the required bandwidth of your applications.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-
 ## Storage Hierarchy
 
-Below chart shows the relationships of the Azure subscription, Azure NetApp accounts, Capacity Pools, and Volumes.
+Diagram of Azure NetApp files storage hierarchy showing the relationship between subscriptions, accounts, capacity pools and volumes.
 
 ![Azure NetApp Files Storage Hierarchy](../media/storagehierarchy.png)
 
@@ -53,36 +32,7 @@ The first important concept in determining performance with Azure NetApp Files i
 
 Azure NetApp Files offers three service levels suited to different workload types: Standard, Premium, and Ultra.
 
-![Service Levels](../media/servicelevel.png)
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
-TODO: write your prose table-of-contents
--->
-
-<!-- 4. Image (highly recommended) ----------------------------------------------------------------
-
-    Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-TODO: add a visual dddd
-
--->
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. A visual like an image, table, or list
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+![Diagram showing how your performance will be a function of the service level times the volume quota.](../media/servicelevel.png)
 
 ## Performance Sizing
 
@@ -92,7 +42,7 @@ The second is the Volume quota.
 
 The gross performance limit of the Volume is the product of these two factors.
 
-![Performance Sizing](../media/performancesizing.png)
+![Screenshot of the performance sizing options in the Azure NetApp Files Performance Calculator.](../media/performancesizing.png)
 
 Let's walk through an example:
 
@@ -117,7 +67,3 @@ How do you know the needed bandwidth of throughput? If you know both the IOPS an
 For example, if your workloads need 100,000 IOPS and have an averaged transfer size of 16KB, then the bandwidth required is 1.53 GB per second.
 
 - 100,000 IOPS * 16 KB = 1,600,000 KB/s = 1.53 GB/s
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
