@@ -129,11 +129,7 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-<<<<<<< HEAD
 1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left pane.
-=======
-1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
->>>>>>> master
 
    This step presents the alert summary pane, where you can see the count of the number of alerts.
 
