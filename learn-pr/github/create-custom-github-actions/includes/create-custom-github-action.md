@@ -143,6 +143,10 @@ branding:
   color: 'blue'
 ```
 
+Here is an example of a badge for the Checkout action on the GitHub Marketplace.
+
+<img width="1016" alt="Screen Shot 2021-03-31 at 2 51 49 PM" src="https://user-images.githubusercontent.com/6351798/113209867-d257ff80-9230-11eb-9331-a140ae516a6a.png">
+
 For more information on metadata syntax for actions, check out [Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions).
 
 
@@ -176,6 +180,19 @@ echo "::error file=app.js,line=10,col=15::Something went wrong"
 ```
 
 It's important to note that these workflow commands need to be on a single line. Characters that interfere with parsing such as commas and line breaks will need to be URL-encoded.
+
+For example
+
+```yml
+This command spans
+across multiple lines
+```
+
+should be encoded as
+
+```yml
+This command spans%0Aacross multiple lines
+```
 
 For more information on using workflow commands, check out [Workflow commands for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions).
 
