@@ -3,7 +3,7 @@
 
 For your toy launch website, you decide to first create a proof-of-concept by creating a basic Bicep template. In this exercise, you'll create a storage account, App Service plan and app. Later, you'll modify the template to make it more reusable.
 
-During the process, you:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a template that defines a single storage account resource that includes hard-coded values.
@@ -303,7 +303,7 @@ In the previous task, you learned how to create a template that contains a singl
    }
    ```
 
-1. Update the name of the App Service app from `toy-product-launch-1` to something that is likely to be unique. Make sure the name you choose is all lowercase, contains alphanumerics and hyphens, doesn't start or end with a hyphen, and is between 2 and 60 characters in length.
+1. Update the name of the App Service app from `toy-product-launch-1` to something that is likely to be unique. Make sure the name you choose is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and is between 2 and 60 characters in length.
 
 1. Save the changes to the file.
 

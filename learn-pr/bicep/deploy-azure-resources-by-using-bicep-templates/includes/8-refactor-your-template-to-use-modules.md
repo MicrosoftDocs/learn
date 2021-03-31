@@ -1,9 +1,9 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that you can reuse the App Service module in other templates if you choose to.
+In this exercise, you'll update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that you can reuse the App Service module in other templates if you choose to.
 
-During the process, you:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Add a new module and move the App Service resources into it.
@@ -15,7 +15,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Add a new module file
 
-1. In Visual Studio Code, create a new folder called *modules* in the same place you created your *main.bicep* file. Inside this folder, create a file called *appService.bicep*.
+1. In Visual Studio Code, create a new folder called *modules* in the same folder that you created your *main.bicep* file. Inside the *modules* folder, create a file called *appService.bicep*.
 
 1. Add the following content into the *appService.bicep* file:
 
@@ -111,9 +111,7 @@ Now that you have a complete module to deploy the App Service resources, you can
         environmentType: environmentType
       }
     }
-    
-    output appServiceAppHostName string = appService.outputs.appServiceAppHostName
-   ```
+    ```
 
 1. Save the changes to the file.
 
@@ -129,7 +127,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-Because this output is declared within a module, it's only going to be available to the parent template. You need to return the output to the person executing the template as well.
+This output is declared within a Bicep file that we'll use as a module, so it's only going to be available to the parent template. You need to return the output to the person executing the template as well.
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 

@@ -1,9 +1,9 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you update the Bicep template that you previously created so that it accepts parameters for the resource locations and names, and uses your company's business rules to select the right SKUs for the resources being deployed.
+In this exercise, you'll update the Bicep template that you previously created so that it accepts parameters for the resource locations and names, and uses your business rules to select the right SKUs for the resources being deployed.
 
-During the process, you:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the template to include a `location` parameter.
@@ -26,9 +26,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    var appServicePlanName = 'ToyLaunchPlan'
    ```
 
-   Notice you're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define the variable and default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice that you're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define the variable and default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice you're using a variable for the App Service plan name, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as they're all going to be deployed into different resource groups.
+   Also notice that you're using a variable for the App Service plan name, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as they're all going to be deployed into different resource groups.
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
@@ -86,7 +86,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
    ```
 
-   Notice you're setting these variables' values by using the ternary operator to evaluate an if-then-else condition.
+   Notice you're setting these variables' values by using the ternary operator to express some if-then-else logic.
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 
@@ -163,7 +163,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **3 Succeeded** deployments. Select this link.
+1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now **3 Succeeded** deployments. Select this link.
 
 1. Notice that all three of the deployments are in the list.
 
