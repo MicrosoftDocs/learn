@@ -40,7 +40,7 @@ The `PARAMETERS` section includes more than these three parameters. But these pa
 
 Now, PowerShell evaluates the input in the following order:
 
-1. Evaluate **by value (by type)**: PowerShell first tries to match the input to a complex type. That is, it tries to match them _by value_. In the preceding example, PowerShell evaluates whether the input looks like `System.Diagnostics.Process[]`. 
+   1. Evaluate **by value (by type)**: PowerShell first tries to match the input to a complex type. That is, it tries to match them _by value_. In the preceding example, PowerShell evaluates whether the input looks like `System.Diagnostics.Process[]`. 
 
    If there's no match, PowerShell moves to the next step.
 
