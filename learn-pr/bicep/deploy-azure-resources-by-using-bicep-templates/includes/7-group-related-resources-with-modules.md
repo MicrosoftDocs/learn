@@ -25,7 +25,7 @@ The output definition includes a few key parts:
 - A value must be specified for each output. Unlike parameters, outputs always need to have values. Output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file.
 
 > [!TIP]
-> Outputs can use the same names as variables and parameters.
+> Outputs can use the same names as variables and parameters. This can be helpful if you construct a complex expression within a variable to use within your template's resources, and then also need to expose the variable's value as an output.
 
 Here's another example of an output - this one will have its value set to the fully qualified domain name (FQDN) of a public IP address resource:
 
@@ -71,7 +71,8 @@ Just like templates, Bicep modules can define outputs. It's common to chain modu
 A good Bicep module follows a few key principles.
 
 > [!div class="checklist"]
-> * **A module should have a clear purpose.** For example, you might use a module to define all of the resources that are related to a specific part of your application, like all of the resources that form the credit card billing components of a commerce application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
+>
+> * **A module should have a clear purpose.** For example, you might use a module to define all of the resources that are related to a specific part of your solution. For example, you might create a module that contains all of the resources that are used to monitor your application. You might also use a module to define a set of resources that belong together, like all of your database servers and databases.
 > * **A module should create more than one resource.** You shouldn't create a separate module for every resource you deploy.
 > * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they are useful to the templates that will include the module.
 > * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.

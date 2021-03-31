@@ -125,7 +125,7 @@ az bicep install
 
 ### Set the default resource group
 
-When you set the default resource group as the same one created for you in the sandbox environment, you can omit that parameter from the rest of the Azure CLI commands in this exercise.
+When using the CLI, you can set the default resource group and omit the parameter from the rest of the Azure CLI commands in this exercise. Set this to the resource group created for you in the sandbox environment.
 
 ```azurecli
 az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
@@ -183,7 +183,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
    Otherwise, you will need to [install the latest version of Azure PowerShell](/powershell/azure/install-az-ps).
 
-### Sign in to Azure by using Azure PowerShell
+### Sign in to Azure
 
 1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
 
@@ -208,11 +208,13 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Set-AzContext $context
     ```
 
-1. Set the default resource group to the resource group created for you in the sandbox environment. This action lets you omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+### Set the default resource group
 
-    ```azurepowershell
-    Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-    ```
+When using Azure PowerShell, you can set the default resource group and omit the parameter from the rest of the Azure PowerShell commands in this exercise. Set this to the resource group created for you in the sandbox environment.
+
+```azurepowershell
+Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+```
 
 ### Deploy the template to Azure
 

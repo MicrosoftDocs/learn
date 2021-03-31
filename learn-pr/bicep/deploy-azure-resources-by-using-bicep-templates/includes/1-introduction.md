@@ -23,7 +23,7 @@ By the end of this module, you'll be able to create Bicep templates that define 
 
 ## Prerequisites
 
-- You should have an understanding of what Infrastructure is Code (IaC) is, and its benefits.
+- You should have an understanding of what Infrastructure as Code (IaC) is, and its benefits.
 - You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
