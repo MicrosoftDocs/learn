@@ -11,7 +11,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
     ![Screenshot that shows the container settings for the web app with continuous deployment enabled](../media/7-continuous-deployment-annotated.png)
 
-    In the left menu pane, under **Services**, if you select the **Webhooks** pane for your container registry, you'd see the newly configured webhook.
+    In the left menu pane, under **Services**, if you select **Webhooks** for your container registry, you'd see the newly configured webhook on the **Webhooks/Container registry** pane that appears.
 
     ![Screenshot that shows the webhook for Container Registry](../media/7-acr-webhook.png)
 
@@ -32,14 +32,14 @@ In this unit, you'll configure continuous deployment for the web app and create 
     mv Index.cshtml.new Index.cshtml
     ```
 
-1. Run the next set of commands to rebuild the image for the web app and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
+1. Run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/dotnet
     az acr build --registry <container_registry_name> --image webimage .
     ```
 
-1. Go to the **Webhooks** page of your container registry in the Azure portal, and select the single webhook in the list.
+1. Go to the **Webhooks** pane of your container registry in the Azure portal, and select the single webhook in the list.
 
 1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
 
@@ -66,7 +66,7 @@ The web app has been updated and redeployed automatically based on the new image
     ```
 
 1. Open `index.js` in the Cloud Shell editor.
-    
+
     ```bash
     code index.js
     ```
@@ -88,7 +88,7 @@ The web app has been updated and redeployed automatically based on the new image
     az acr build --registry <container_registry_name> --image webimage .
     ```
 
-1. Go to the **Webhooks** page of your container registry in the Azure portal, and select the single webhook in the list.
+1. Go to the **Webhooks** pane of your container registry in the Azure portal, and select the single webhook in the list.
 
 1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
 
@@ -96,7 +96,7 @@ The web app has been updated and redeployed automatically based on the new image
 
 ## Test the web app again
 
-1. Go back to your web app in the browser. If you closed the tab for it earlier, you can go to the Overview page of the app in the Azure portal and select **Browse**. There will be a cold-start delay while the web app loads the new image from Container Registry.
+1. Go back to your web app in the browser. If you closed the tab for it earlier, you can go to the Overview page of the app in the Azure portal, and select **Browse**. There will be a cold-start delay while the web app loads the new image from Container Registry.
 
 1. Note that the contents of the page have changed to reflect the updates made to the container image.
 

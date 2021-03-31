@@ -3,7 +3,7 @@ uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 11/30/2020
+  ms.date: 03/31/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -16,6 +16,7 @@ abstract: |
   * Work with data factory pipelines
   * Debug data factory pipelines
   * Add parameters to data factory components
+  * Integrate a Notebook within Azure Synapse Pipelines
   * Execute data factory packages
   * Knowledge check
   * Summary
@@ -40,6 +41,7 @@ units:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.working-pipelines
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.debug-pipelines
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.adding-parameters-components
+- learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.exercise-integrate-notebook-azure-synapse-pipelines
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.executing-packages
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.knowledge-check
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.summary
