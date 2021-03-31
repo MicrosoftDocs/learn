@@ -129,7 +129,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone-end
 
-1. Select **Review + Create** to go to the review pane, and to create the app, select **Create**.
+5. Select **Review + Create** to go to the review pane, and to create the app, select **Create**.
 
     > [!NOTE]
     > It can take a few seconds to get your web app created and ready for your use.
