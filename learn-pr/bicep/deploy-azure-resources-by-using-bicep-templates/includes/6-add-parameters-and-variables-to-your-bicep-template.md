@@ -22,6 +22,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    param location string = resourceGroup().location
    param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
    param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
    var appServicePlanName = 'ToyLaunchPlan'
    ```
 
