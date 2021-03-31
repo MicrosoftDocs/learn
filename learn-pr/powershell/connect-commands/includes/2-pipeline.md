@@ -1,6 +1,6 @@
 The pipe character (`|`) is used to connect cmdlets. The output of the cmdlet that precedes the pipe serves as the input for the cmdlet that follows the pipe. By connecting cmdlets in this way, you can create a statement that's more powerful and complex than a single cmdlet. This connection is called a _pipeline_, and it can consist of one or more pipes and cmdlets.
 
-As you construct pipelines, you'll use these concepts:
+As you construct pipelines, you'll apply these concepts:
 
 - **Pipeline evaluation**: Cmdlets in a pipeline are evaluated in a specific order. By understanding the evaluation process, you can better understand how to connect two or more cmdlets.
 
@@ -14,7 +14,7 @@ You can use most cmdlets in either of two ways:
 - You can call only a specific cmdlet and assign values to the mandatory parameters. 
 - You can use the cmdlet in a pipeline, which is a long expression where the cmdlet operates on input that's usually the result of calling another cmdlet.
 
-PowerShell treats these two approaches differently by letting you, as author of the cmdlet, specify the field `Accept pipeline input?`. This field takes a Boolean as a value. If the value is _true_, PowerShell accepts the pipeline data.
+PowerShell treats these two approaches differently by letting you, as author of the cmdlet, specify the `Accept pipeline input?` field. This field takes a Boolean as a value. If the value is _true_, PowerShell accepts the pipeline data.
 
 As part of your learning journey, it's important to understand:
 
@@ -22,7 +22,7 @@ As part of your learning journey, it's important to understand:
 - The order in which the parameters are processed.
 - How to provide data.
 
-This understanding helps you combine suitable cmdlet statements in a useful way to solve your problems.
+This understanding helps you combine suitable cmdlet statements in a way that's useful for solving your problem.
 
 ### Evaluation order in the pipeline
 
@@ -30,13 +30,13 @@ A cmdlet often takes more than the parameters that are meant for the pipeline.
 
 How can you know which of the parameter inputs the system will try to use first?
 
-Consider a real example. The command `Get-Help Get-Process -Full` returns a detailed listing of the help section for the `Get-Process` command. The `INPUTS` section and the `PARAMETERS` section reveal three possible inputs:
+Consider a real example. The `Get-Help Get-Process -Full` command returns a detailed listing of the help section for the `Get-Process` command. The `INPUTS` section and the `PARAMETERS` section reveal three possible inputs:
 
 - **System.String[]**: This primitive type is connected to the parameter `-Name`.
 - **System.Int32**: The parameter for this input is called `-Id`.
 - **System.Diagnostics.Process[]**: This complex type is associated with a parameter called `-InputObject`.
 
-The `PARAMETERS` section includes more than these three parameters. But these parameters are the only ones whose `Accept pipeline input?` field is set to _true_. The parameters are eligible for pipeline evaluation because here you're evaluating only parameters that accept pipeline input.
+The `PARAMETERS` section includes more than these three parameters. But these parameters are the only ones whose `Accept pipeline input?` field is set to _true_. The parameters are eligible for pipeline evaluation, because here you're evaluating only parameters that accept pipeline input.
 
 Now, PowerShell evaluates the input in the following order:
 
@@ -48,7 +48,7 @@ Now, PowerShell evaluates the input in the following order:
    Accept pipeline input?       true (ByPropertyName)
    ```
 
-   This information tells you that the parameter accepts pipeline input, but it also has a `ByPropertyName` statement. The `ByPropertyName` statement means that the parameter expects to receive an object that contains a property named `Name` or `Id` to match the `Get-Process` input parameter requirements. So it expects an object like the following example output:  
+   This information tells you that the parameter accepts pipeline input, but it also has a `ByPropertyName` statement. The `ByPropertyName` statement means that the parameter expects to receive an object that contains a property named `Name` or `Id` to match the `Get-Process` input parameter requirements. So it expects an object like the following example output:
 
    ```output
    {
@@ -74,7 +74,7 @@ Take a look at the following example, which uses the `Where-Object` helper:
 Get-Process | Where-Object Name -eq name-of-my-process
 ```
 
-The `Where-Object` helper cmdlet increases your flexibility. Use it to create queries that look for properties other than `Name`. And use operators to help you better match your result.
+The `Where-Object` helper cmdlet increases your flexibility. Use it to create queries that look for properties other than `Name`, and use operators to help you better match your result.
 
 ### Operators
 
