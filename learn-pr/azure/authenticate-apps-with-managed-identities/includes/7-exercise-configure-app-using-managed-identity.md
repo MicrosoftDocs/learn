@@ -98,6 +98,12 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
 
 ## Test the application
 
+1. Install the appropriate .NET Core framework to build the application:
+
+    ```bash
+    sudo snap install dotnet-sdk --classic --channel=3.1
+    ```
+
 1. Run the following command to build the application:
 
     ```bash
