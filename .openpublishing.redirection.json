@@ -5159,6 +5159,16 @@
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/6-summary.yml",
       "redirect_url": "/learn/modules/improve-api-developer-experience-with-swagger/7-summary",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/6-security-center",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-continuous-monitoring.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/2-full-stack-monitoring",
+      "redirect_document_id": false
     }
   ]
 }
