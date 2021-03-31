@@ -8,7 +8,6 @@ Latest text generative models, such as GPT-2/3, are slightly different from BERT
 
 Training such large models involves a lot of efforts, and needs to be done in a distributed manner. Distributed training is another area which you need to focus on if you are planning any serious NLP projects. It is definitely worth checking out [Azure Machine Learning](https://docs.microsoft.com/learn/paths/build-ai-solutions-with-azure-ml-service/).
 
-
 # What's Next?
 
 There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. These include:
