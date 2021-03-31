@@ -2,7 +2,7 @@ Let's start with a quick overview of DBaaS databases and Azure Database for MySQ
 
 ## What is DBaaS?
 
-<!--Andy: I edited the heading to match the "what is concept" headings as per template, also added a short definition of DBaaS-->DBaaS is a service that organizations can use to access databases on the cloud. A DBaaS delivery platform for your relational database apps enables you to focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You can use Azure Database for MySQL to implement your database apps on a DBaaS basis. You don't need to think about configuring and maintaining the platform, because that's managed by Azure.
+DBaaS is a service that organizations can use to access databases on the cloud. A DBaaS delivery platform for your relational database apps enables you to focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You can use Azure Database for MySQL to implement your database apps on a DBaaS basis. You don't need to think about configuring and maintaining the platform, because that's managed by Azure.
 
 > [!NOTE]
 > DBaaS apps fall within the industry category of PaaS hosted services.
