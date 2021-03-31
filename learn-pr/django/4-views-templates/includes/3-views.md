@@ -2,9 +2,9 @@ In programming, a *view* is typically a component that displays information to t
 
 In Django, a view is typically responsible for:
 
-1. Validating a user's request.
-1. Loading or modifying the appropriate data.
-1. Returning an HTML template with the information to the user.
+- Validating a user's request.
+- Loading or modifying the appropriate data.
+- Returning an HTML template with the information to the user.
 
 We're going to begin our exploration by discussing creating views manually and configuring the appropriate *URLconfs*. A URLconf is a list of paths that indicate the pattern to match, the function to call, and optionally a name. In a later unit, we'll see how Django can automatically handle some of the code that we wrote by hand.
 
