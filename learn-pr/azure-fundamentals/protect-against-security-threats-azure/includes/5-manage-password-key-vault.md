@@ -14,7 +14,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 1. From the search bar, enter **Key Vault**, and then select **Key Vault** from the results.
 
-1. On the **Key Vault** panel, select **Create**. The **Create key vault** panel appears.
+1. On the **Key Vault** pane, select **Create**. The **Create key vault** pane appears.
 
 1. On the **Basics** tab, fill in the following values for each setting.
 
@@ -31,7 +31,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
     Leave the other settings at their default values.
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and after passing validation, then select **Create**.
 
     Wait for the creation process to finish.
 
@@ -54,9 +54,9 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 ## Add a password to the key vault
 
-1. On the left nav bar, under **Settings**, select **Secrets**. Your Key vault panel appears.
+1. On the left nav bar, under **Settings**, select **Secrets**. Your key vault pane appears.
 
-1. From the top menu bar, select **Generate/Import**. The **Create a secret** panel appears.
+1. From the top menu bar, select **Generate/Import**. The **Create a secret** pane appears.
 
 1. Fill in the following values for each setting.
 
@@ -74,9 +74,9 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 Here, you access the password from Key Vault two times. First, you access it from the Azure portal. Next, you access it from the Azure CLI.
 
-1. From your **Key Vault/Secrets** panel, select **MyPassword**. The **MyPassword/Versions** panel appears. You see that the current version is enabled.
+1. From your **Key Vault/Secrets** pane, select **MyPassword**. The **MyPassword/Versions** pane appears. You see that the current version is enabled.
 
-1. Select the current version. The **Secret Version** panel appears.
+1. Select the current version. The **Secret Version** pane appears.
 
     Under **Secret Identifier**, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications can access this secret.
 

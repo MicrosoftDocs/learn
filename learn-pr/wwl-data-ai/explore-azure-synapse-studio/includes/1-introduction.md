@@ -6,7 +6,7 @@ In this lesson, you will:
 - Understand the Azure Synapse Analytical processes
 - Explore the Data hub
 - Explore the Develop hub
-- Explore the Orchestrate hub
+- Explore the Integrate hub
 - Explore the Monitor hub
 - Explore the Manage hub
 
