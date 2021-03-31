@@ -4,7 +4,7 @@ Devices only can understand binary (1s and 0s), and for most developers that's n
 
 Programming languages come in different formats and may serve different purposes. For example, JavaScript is primarily used for web applications, while Bash is primarily used for operating systems.
 
-## Low level versus high level languages
+## Low-level versus high-level languages
 
 Low-level languages typically require fewer steps than high-level languages for a device to interpret instructions. However, what makes high-level languages popular is its readability and support. JavaScript is considered a high-level language.
 
@@ -12,7 +12,7 @@ The following code illustrates the difference between a high-level language with
 
 ### Code comparison
 
-The following code is written in JavaScript, a high level language. It implements an algorithm using constructs like variables, for-loops and various other statements.
+The following code is written in JavaScript, a high-level language. It implements an algorithm using constructs like variables, for-loops, and various other statements.
 
 ```javascript
 let number = 10
@@ -26,7 +26,7 @@ for (let i = 1; i <= number; i++) {
 }
 ```
 
-The above code illustrate an algorithm for implementing a Fibonacci sequence. Now, here's the corresponding code in the assembly language.
+The above code illustrates an algorithm for implementing a Fibonacci sequence. Now, here's the corresponding code in the assembly language.
 
 ```armasm
 area ascen,code,readonly
