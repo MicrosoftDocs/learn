@@ -1,6 +1,6 @@
 Here, you learn some common configurations within a workflow file. You also explore the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
 
-## Configuring workflows to run for scheduled events
+## Configure workflows to run for scheduled events
 
 As mentioned previously, you can configure your workflows to run when specific activity occurs on GitHub, when an event outside of GitHub happens, or at a scheduled time. The `schedule` event allows you to trigger a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07). This cron syntax has five `*` fields, and each field represents a unit of time.
 
@@ -25,7 +25,7 @@ on:
 
 You can also use operators to specify a range of values or to dial-in your scheduled workflow. The shortest interval you can run scheduled workflows is once every 5 minutes and they run on the latest commit on the default or base branch. 
 
-## Configuring workflows to run for manual events
+## Configure workflows to run for manual events
 
 In addition to scheduled events, you can manually trigger a workflow by using the `workflow_dispatch` event. This event allows you to run the workflow using the GitHub REST API or by selecting the **Run workflow** button in the **Actions** tab within your repository on GitHub. Using `workflow_dispatch`, you can choose which branch you want the workflow to run on as well as set optional `inputs` that GitHub will present as form elements in the UI.
 
@@ -57,7 +57,7 @@ on:
     types: [opened, deleted]
 ```
 
-## Configuring workflows to run for webhook events
+## Configure workflows to run for webhook events
 
 Lastly, you can configure a workflow to run when specific webhook events occur on GitHub. Most webhook events can be triggered from more than one activity for a webhook, so if multiple activities exist for a webhook, you can specify an activity type to trigger the workflow. For example, you can run a workflow for the `check_run` event but only for the `rerequested` or `requested_action` activity types.
 
@@ -67,7 +67,7 @@ on:
     types: [rerequested, requested_action]
 ```
 
-## Using conditional keywords
+## Use conditional keywords
 
 Within your workflow file, you can access context information and evaluate expressions. Although expressions are commonly used with the conditional `if` keyword in a workflow file to determine whether a step should run or not, you can use any supported context and expression to create a conditional. It's important to know that when using conditionals in your workflow, you need to use the specific syntax `${{ <expression> }}`, which tells GitHub to evaluate an expression rather than treat it as a string.
 
@@ -89,7 +89,7 @@ Notice that in this example, the `${{ }}` are missing from the syntax. With some
 For more information about  workflow syntax and expressions, check out [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsif).
 
 
-## Disabling and deleting workflows
+## Disable and delete workflows
 
 After adding a workflow to your repository, you may find a situation where you want to temporarily disable the workflow. You can stop a workflow from being triggered without having to delete the file from the repo, either on GitHub or through the GitHub REST API. When you wish to enable the workflow again, you can easily do it using the same methods.
 
@@ -104,7 +104,7 @@ Disabling a workflow can be useful in some situations, for example:
 
 You can also cancel a workflow run that is in progress in the GitHub UI within the **Actions** tab or using the GitHub API endpoint `DELETE /repos/{owner}/{repo}/actions/runs/{run_id}`. Keep in mind that when you cancel a workflow run, GitHub will cancel all of its jobs and steps within that run.
 
-## Using an organization's templated workflow
+## Use an organization's templated workflow
 
 If you have a workflow that multiple teams use within an organization, instead of re-creating the same workflow for each repository, you can promote consistency across your organization by using a workflow template that is defined in the organization's `.github` repository. Any member within the organization can use an organization template workflow and any repository within that organization has access to those template workflows.
 
@@ -112,7 +112,7 @@ You can find these workflows by navigating to the **Actions** tab of a repositor
 
 :::image type="content" source="../media/mona-workflow.png" alt-text="Picture of a template organization workflow called greet and triage by Mona.":::
 
-## Using specific versions of an action
+## Use specific versions of an action
 
 When referencing actions in your workflow, we recommended that you refer to a specific version of that action rather than just the action itself. By referencing a specific version, you are placing a safeguard from unexpected changes pushed to the action that could potentially break your workflow. Below are several ways you can reference a specific version of an action.
 

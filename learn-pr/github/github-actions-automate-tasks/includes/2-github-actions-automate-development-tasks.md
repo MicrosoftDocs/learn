@@ -154,7 +154,7 @@ The last part of this workflow file sets the MY_NAME variable value for this wor
 
 For more information on workflow syntax check out [Workflow syntax for GitHub Actions](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 
-## GitHub-hosted vs self-hosted runners
+## GitHub-hosted versus self-hosted runners
 
 We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block. This told the workflow that this particular job will run using the GitHub-hosted runner that is running in the environment ubuntu-latest.
 
