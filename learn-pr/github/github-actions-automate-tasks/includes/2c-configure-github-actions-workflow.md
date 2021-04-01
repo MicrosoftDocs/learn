@@ -91,7 +91,7 @@ For more information about  workflow syntax and expressions, check out [Workflow
 
 ## Disabling and deleting workflows
 
-After adding a workflow to your repository, you may find a situation where you want to temporarily disable the workflow. You can stop a workflow from being triggered without having to delete the file from the repo, either in the GitHub UI or through the GitHub REST API. When you wish to enable the workflow again, you can easily do it using the same methods.
+After adding a workflow to your repository, you may find a situation where you want to temporarily disable the workflow. You can stop a workflow from being triggered without having to delete the file from the repo, either on GitHub or through the GitHub REST API. When you wish to enable the workflow again, you can easily do it using the same methods.
 
 ![Screen Shot 2021-02-18 at 2 50 36 PM](https://user-images.githubusercontent.com/6351798/108426237-c4a66780-71f8-11eb-9bbf-ee0c4580bcd4.png)
 
@@ -114,7 +114,7 @@ You can find these workflows by navigating to the **Actions** tab of a repositor
 
 ## Using specific versions of an action
 
-When referencing actions in your workflow, it's strongly recommended that you refer to a specific version of that action rather than just the action itself. By referencing a specific version, you are placing a safeguard from unexpected changes pushed to the action that could potentially break your workflow. Below are several ways you can reference a specific version of an action.
+When referencing actions in your workflow, we recommended that you refer to a specific version of that action rather than just the action itself. By referencing a specific version, you are placing a safeguard from unexpected changes pushed to the action that could potentially break your workflow. Below are several ways you can reference a specific version of an action.
 
 ```yml
 steps:    
@@ -128,4 +128,4 @@ steps:
   - uses: actions/setup-node@main
 ```
 
-Some references are more safe than others. For example, referencing a specific branch will run that action off of the latest changes from that branch - which you may or may not want. By referencing a specific version number or commit SHA hash, you are being more specific about the version of the action you are running. For more stability and security, it is recommended that you use the commit SHA of a released action within your workflows. 
+Some references are safer than others. For example, referencing a specific branch will run that action off of the latest changes from that branch - which you may or may not want. By referencing a specific version number or commit SHA hash, you are being more specific about the version of the action you are running. For more stability and security, we recommend that you use the commit SHA of a released action within your workflows. 
