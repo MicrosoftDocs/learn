@@ -2,7 +2,7 @@ Here, you learn about the basic components of a GitHub Actions workflow file.
 
 ## The components of GitHub Actions
 
-![workflow](https://user-images.githubusercontent.com/6351798/106820078-ff74a100-6637-11eb-80f1-9b629806dacd.png)
+:::image type="content" source="../media/github-actions-workflow-components.png" alt-text="Image of a GitHub Actions workflow file showing the job, step, and action components." border="false":::
 
 There are several components that work together to run tasks or jobs within a GitHub Actions workflow. In short, an event triggers the workflow, which contains a job. This job then uses steps to dictate which actions will run within the workflow. To better see how these components work together, let's take a quick look at each one.
 

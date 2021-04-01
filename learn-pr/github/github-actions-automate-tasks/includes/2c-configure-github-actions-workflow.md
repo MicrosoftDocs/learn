@@ -4,7 +4,7 @@ Here, you learn some common configurations within a workflow file. You also expl
 
 As mentioned previously, you can configure your workflows to run when specific activity occurs on GitHub, when an event outside of GitHub happens, or at a scheduled time. The `schedule` event allows you to trigger a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07). This cron syntax has five `*` fields, and each field represents a unit of time.
 
-![schedule](https://user-images.githubusercontent.com/6351798/106652373-98c98780-6552-11eb-8030-8f109b6b1735.png)
+:::image type="content" source="../media/scheduled-events.png" alt-text="Image showing the five unit of time fields for scheduling an event in a workflow file." border="false":::
 
 For example, if you wanted to run a workflow every 15 minutes, the `schedule` event would look like the following:
 
@@ -93,7 +93,7 @@ For more information about  workflow syntax and expressions, check out [Workflow
 
 After adding a workflow to your repository, you may find a situation where you want to temporarily disable the workflow. You can stop a workflow from being triggered without having to delete the file from the repo, either on GitHub or through the GitHub REST API. When you wish to enable the workflow again, you can easily do it using the same methods.
 
-![Screen Shot 2021-02-18 at 2 50 36 PM](https://user-images.githubusercontent.com/6351798/108426237-c4a66780-71f8-11eb-9bbf-ee0c4580bcd4.png)
+:::image type="content" source="../media/disable-workflow.png" alt-text="Picture of disabling a workflow on GitHub.":::
 
 Disabling a workflow can be useful in some situations, for example:
 
@@ -110,7 +110,7 @@ If you have a workflow that multiple teams use within an organization, instead o
 
 You can find these workflows by navigating to the **Actions** tab of a repository within the organization, selecting **New workflow**, and then finding the organization's workflow template section titled "Workflows created by *organization name*". For example, the organization called Mona has a template workflow as shown below.
 
-![Screen Shot 2021-02-18 at 4 50 36 PM](https://user-images.githubusercontent.com/6351798/108436868-7a79b200-7209-11eb-83cb-d324ccf5f337.png)
+:::image type="content" source="../media/mona-workflow.png" alt-text="Picture of a template organization workflow called greet and triage by Mona.":::
 
 ## Using specific versions of an action
 
