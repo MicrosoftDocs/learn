@@ -28,15 +28,19 @@ Guidance for content and exercise units:
 
 ## Learning objectives
 
+Imagine you are building a portal for employees in your company to access information about the company and resources for their work. You have built all the functionality and have a Java web application running. Now, you need to ensure that this application is only accessible to users within your organization.
+
+Azure Active Directory (Azure AD) enables you to secure your applications by signing in users with their organizational accounts. The Microsoft Authentication Library (MSAL) provides various methods for developers to authenticate users and get authorized access to applications secured by Azure AD.
+
 By the end of this module, you will be able to:
 
 <!--  Bullet list copied from index.yml -->
 - Register a web application with Azure AD
-- Sign in users into a Java web application
-- Authorize access to a Microsoft API 
+- Sign in users in an Azure AD tenant to a Java web application
+- Authorize access to data in a Microsoft API 
 
 ## Prerequisites
 
 <!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
 - Have a basic understanding of running Java web application on Tomcat server
-- Beginner-level understanding of Azure Active Directory: Managing users and tenants in Azure AD 
+- Beginner-level understanding of Azure Active Directory: Creating tenants and managing users in Azure AD 
