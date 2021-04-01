@@ -19,7 +19,7 @@ func main() {
 When you run the preceding code, you get this output:
 
 ```output
-2020/12/19 13:39:17 Logging in Go!
+2020/12/19 13:39:17 Hey, I'm a log!
 ```
 
 By default, the `log.Print()` function includes the date and time as the log message's prefix. You could get the same behavior by using `fmt.Print()`, but you can do other things with the `log` package, like sending logs to a file. We'll look at more `log` package functionality later.
