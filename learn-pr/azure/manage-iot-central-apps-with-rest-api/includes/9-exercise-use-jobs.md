@@ -15,7 +15,7 @@ Before you can create and run a job, you need the ID of the device group that yo
 Run the following command in the Cloud Shell to retrieve the ID of this device group. The `deviceGroups` API is currently in preview:
 
 ```azurecli
-DEVICE_GROUP=`az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/deviceGroups \
+DEVICE_GROUP=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/deviceGroups \
   --headers Authorization="$OPERATOR_TOKEN" \
   --query "value[?contains(displayName,'Refrigerated truck')].id" -o tsv`
 echo $DEVICE_GROUP
@@ -24,7 +24,7 @@ echo $DEVICE_GROUP
 Run the following command to create and run a job that calls the **Reboot** command on all the devices in the device group. The **Reboot** command has a parameter that specifies, in seconds, how long to wait before rebooting. The job is called `rebootjob`. The various `jobs` APIs are currently in preview:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/rebootjob \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/rebootjob \
   --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "data": [
@@ -44,7 +44,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/reb
 The output from the previous command includes the initial status value of **Pending**. Run the following command to check the status:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs \
   --headers Authorization="$OPERATOR_TOKEN" \
   --query "value[].{Name:displayName, Status:status, ID:id}" -o table
 ```
@@ -52,7 +52,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs \
 Use the following command to check the status of the individual devices:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/rebootjob/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/rebootjob/devices \
   --headers Authorization="$OPERATOR_TOKEN" \
   --query "value[].{ID:id, Status:status}" -o table
 ```
@@ -60,24 +60,24 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/reb
 The output from the previous command shows four failed devices. The job failed on the three real devices because they're not connected to your application. The job also fails on the simulated device you blocked in a previous exercise because it's also not currently connected. The following commands unblock the device and reruns the command using `reboot-001` as the job name:
 
 ```azurecli
-az rest -m patch -u https://$APP_NAME.azureiotcentral-ppe.com/api/v1/devices/sim-truck-002 \
+az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck-002 \
   --headers Authorization="$OPERATOR_TOKEN" \
   --body \
 '{
   "disabled": false
 }'
-az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/rebootjob/rerun/reboot-001 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/rebootjob/rerun/reboot-001 \
 --headers Authorization="$OPERATOR_TOKEN"
 ```
 
 If you re-check the results, you can see that rerunning the job only tried the devices that failed previously:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query "value[].{Name:displayName, Status:status, ID:id}" -o table
 
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/reboot-0011/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/reboot-0011/devices \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query "value[].{ID:id, Status:status}" -o table
 ```
@@ -87,7 +87,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/reb
 Run the following command to create and run a job that updates the `targetTemperature` writable property on all the devices in the **Refrigerated truck - All devices** device group. The type of this property is a double. The job is called `targettempjob`:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/targettempjob \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/targettempjob \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "data": [
@@ -107,11 +107,11 @@ az rest -m put -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/tar
 You can use the following commands to check the job and device status values. This job succeeds on all the devices because property updates are queued until the device connects:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query "value[].{Name:displayName, Status:status, ID:id}" -o table
 
-az rest -m get -u https://$APP_NAME.azureiotcentral-ppe.com/api/preview/jobs/targettempjob/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/jobs/targettempjob/devices \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query "value[].{ID:id, Status:status}" -o table
 ```
