@@ -103,10 +103,10 @@ quiz:
     choices:
     - content: "The government won't allow encryption that it can't decrypt through a legal channel."
       isCorrect: false
-      explanation: "Correct!"
+      explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
     - content: "The scheme is currently computationally very expensive, and takes too long."
       isCorrect: true
-      explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
+      explanation: "Correct!"
     - content: "Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it's impossible to construct circuits for performing arbitrary computation."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
