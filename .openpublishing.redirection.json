@@ -5209,6 +5209,27 @@
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/4-create-data-source.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/4-indexing-process",
       "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/2-data-streams.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/2-understand-data-streams",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/3-event-processing.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/3-understand-event-processing",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/4-event-with-asa.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/4-process-events-azure-stream-analytics",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming",
+      "redirect_document_id": false
     }
+
   ]
 }
