@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/31/2021
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "On-premises data gateway"
       isCorrect: true
-      explanation: "That is correct. The On-premises data gateway is used to connect to an SAP instance on-premises and in the"
+      explanation: "That is correct. The On-premises data gateway is used to connect to an SAP instance on-premises or in Azure."
     - content: "Azure Windows Server data gateway"
       isCorrect: false
-      explanation: "Incorrect. On-premises data gateway is also used to connect to SAP HANA running on Azure VMs."
+      explanation: "Incorrect. On-premises data gateway is used to connect to SAP HANA running on Azure VMs."
     - content: "Power BI Service Live Connection"
       isCorrect: false
-      explanation: "Incorrect. On-premises data gateway is also used to connect to SAP HANA running on Azure VMs."
+      explanation: "Incorrect. On-premises data gateway is used to connect to SAP HANA running on Azure VMs."
   - content: "The Power Platform user authentication provider is:"
     choices:
     - content: "Azure Active Directory (AAD)"
