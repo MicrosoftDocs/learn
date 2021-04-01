@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-bastion.1-introduction  
-title: Introduction  
+title: Introduction
 metadata:
-  unitType: introduction  
+  unitType: introduction
   title: Introduction to Azure Bastion
   description: Provide secure and seamless connectivity to your virtual machines directly in the Azure portal
   ms.date: 03/12/2021  
