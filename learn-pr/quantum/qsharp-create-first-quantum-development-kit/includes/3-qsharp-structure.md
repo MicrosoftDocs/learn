@@ -113,9 +113,9 @@ Here's an example that allocates one qubit:
 
 ```qsharp
 // Allocate a qubit.
-using (q = Qubit()) {
-    // Do something with q here.
-}
+use q = Qubit();
+
+// Do something with q here.
 ```
 
 Every qubit you allocate with the `use` keyword starts in the zero state.
