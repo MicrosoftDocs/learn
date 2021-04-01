@@ -5169,6 +5169,41 @@
       "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-continuous-monitoring.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/2-full-stack-monitoring",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/2-azure-resources",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-resources-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/3-search-components",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/5-create-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/6-create-run-indexer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/7-search-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/5-search-index",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/8-apply-filtering-sorting.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/6-apply-filtering-sorting",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/9-enhance-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/7-enhance-index",
+      "redirect_document_id": true
     }
   ]
 }
