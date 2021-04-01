@@ -200,14 +200,12 @@ As with our provisioning pipeline, before you save and run the build-and-deploy 
 
 Congratulations! You now have two Azure Pipeline workflows: a provisioning Pipeline and a build-and-deploy Pipeline.
 
-Each time you enter a `git push` command to commit your code, your build-and-deploy Pipeline is triggered and your application is deployed.
+Each time you enter a `git push` command to commit your code to the **main** branch, your build-and-deploy Pipeline is triggered and your application is deployed.
 
 > [!IMPORTANT]
-> Re-running the Provision Pipeline won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the Pipeline.
+> Re-running the Provision Pipeline won't re-create your resources if they already exist. You'll need to delete your resource group or resources manually and then re-run the Pipeline. More information on how to better achieve this in production is available in the "Summary" section.
 >
 > Re-running your build-and-deploy Pipeline will replace your application.
->
-> If you re-create your App Service instance, you also need to recreate the Service Connection.
 
 ::: zone-end
 

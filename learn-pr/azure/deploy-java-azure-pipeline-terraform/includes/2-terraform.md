@@ -53,7 +53,7 @@ Your *main.tf* file contains the main set of configuration details for your modu
 
 ## Terraform workflow
 
-Terraform recommends its core initialize, plan, and apply workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated Git pull requests.
+Terraform recommends its core “initialize, plan, and apply” workflow for automation. This workflow runs all Terraform CI/CD actions on new and updated Git pull requests.
 
 ![Diagram of the Terraform workflow, displaying the core actions Init, Plan, and Apply.](../media/3-workflow.png)
 

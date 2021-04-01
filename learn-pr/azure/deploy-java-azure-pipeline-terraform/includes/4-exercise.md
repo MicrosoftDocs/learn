@@ -367,11 +367,15 @@ Let's give your Azure Pipeline access to your Azure account.
 
 ## Create the Provision Pipeline
 
+> [!IMPORTANT]
+> This module's pre-requisites required the install of the  [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) - if you have not installed it before hand, your pipeline will not run.
+
 After setting up your project and connection to Azure, you'll need to create an Azure Pipeline to provision your terraform resources.
 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
 1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. If prompted to authorize GitHub access, enter your Github Credentials and approve the access for Azure Pipelines with the requested privileges.
 1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
 1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
 1. In the path, select "/azuredevops/provision.yml"
@@ -424,7 +428,10 @@ Before you save and run the pipeline, we need to add the variable that will bind
 
 1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
 1. Select "okay" (bottom-right corner) to save the variable
-1. Finally, select "**run**" (top-right corner) to save and run the pipeline
+
+![Screenshot displaying the new Service Principal variable.](../media/4-service.png)
+
+Finally, select "**run**" (top-right corner) to save and run the pipeline
 
 ## Watch the pipeline run
 

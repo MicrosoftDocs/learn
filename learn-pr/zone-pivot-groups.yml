@@ -351,4 +351,4 @@ groups:
     - id: github-actions
       title: GitHub Actions
     - id: azure-devops
-      title: Azure DevOps
+      title: Azure Pipelines
