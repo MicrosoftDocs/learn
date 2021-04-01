@@ -1,138 +1,37 @@
-<!-- NOTE to REVIEWER - The code for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api, which will be transferred to the MicrosoftDocs org. -->
-
-:::row:::
-  :::column span="4":::
-    Crystal is a full-stack developer and software architect specializing in C# and .NET. She has written and designed many of Green Leaf's applications but is getting stretched thin by all the new requests. Crystal is familiar with Power Apps at a high-level and is eager to learn how she can use her existing skills to empower Citizen Developers.
-  :::column-end:::
-  :::column:::
-    ![Cartoon depiction of Crystal][meet crystal]
-  :::column-end:::
-:::row-end:::
+At VanArsdel, Crystal and her development team have built web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an OpenAPI document easily.
 
 
-Crystal and her development team have built Web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an Open API document easily.
+## What Is OpenAPI and What Does It Do? ##
 
-This exercise will double-check whether the Open API document generation is ready by implementing Swagger UI and Swashbuckle into the Web API application.
+The OpenAPI document defines a standard and programming language-agnostic interface description for web APIs. It allows both humans and computers to discover and understand the capabilities of a service without having to access to source code, additional documentation, or inspection of network traffic.
 
-## Download Web API Application to Cloud Shell ##
+![OpenAPI][image-01]
 
-Crystal has published the source code of the Web API application to GitHub. In order to validate whether the Web API is Open API ready or not, run the following steps.
-
-1. To clone the sample Web API Project from GitHub, in the Cloud Shell, run the following `git clone` command.
-
-   <!-- NOTE to REVIEWER. REPLACE the repo URL with the MicrosoftDocs one once it's transferred. -->
-
-    ```bash
-    git clone https://github.com/justinyoo/inventory-management-demo-web-api \
-        ~/code
-    ```
+Because the OpenAPI document is a contract for web APIs, the consumers' of them understand and communicate with the web APIs, without having to know where the APIs are located or whether they are running.
 
 
-## Open Web API Application on Cloud Shell ##
+## Activating OpenAPI Capability on ASP.NET Core Web API Applications ##
 
-1. To navigate into the repository directory locally, run the following `cd` command.
+There are several ways activating the OpenAPI document capability into your ASP.NET Core Web API app. [Swashbuckle][swashbuckle] is the most popular way to do so.
 
-    ```bash
-    cd ~/code
-    ```
+![Swashbuckle][image-02]
 
-1. To open the Cloud Shell editor for the project, run the following command.
+It's easy to use and, once it's installed to your app, it automatically displays the Swagger UI screen.
 
-    ```bash
-    code .
-    ```
+![Swagger UI][image-03]
 
-   The built-in editor opens in the Cloud Shell, with all files belonging to the project in the editor's left-hand navigation pane.
+Swashbuckle also generates the OpenAPI document on-the-fly, which includes all the API endpoint details, payload structures, security requirements, etc. Here's the sample document for VanArsdel's web API for the inventory management.
 
+![OpenAPI Document][image-04]
 
-## Confirm Open API Feature Readiness ##
-
-1. Select `InventoryManagement.ApiApp.csproj` at the left-hand navigation pane of the editor.
-1. Make sure that the following lines exist in the file.
-
-    ```properties
-    <ItemGroup>
-      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
-    </ItemGroup>
-    ```
-
-   The `Version` value can vary, but the NuGet package of `Swashbuckle.AspNetCore` must exist.
-
-1. If it doesn't exist, run the following command to add the NuGet package.
-
-    ```azurecli
-    dotnet add InventoryManagement.ApiApp package Swashbuckle.AspNetCore
-    ```
-
-   The latest version of `Swashbuckle.AspNetCore` has been installed.
-
-1. Select `Startup.cs` at the left-hand navigation pane of the editor.
-1. Find the `using` directive below at the top of the file. If it doesn't exist, add it.
-
-    ```csharp
-    using Microsoft.OpenApi.Models;
-    ```
-
-1. Find the code lines for the Swagger generator within the `ConfigureServices` method. If it doesn't exist, add it.
-
-    ```csharp
-    public void ConfigureServices(IServiceCollection services)
-    {
-        services.AddControllers();
-
-        /* === SwaggerGen BEGIN === */
-        services.AddSwaggerGen(c =>
-        {
-            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Inventory Management", Version = "v1" });
-        });
-        /* === SwaggerGen END === */
-    }
-    ```
-
-1. Find the code lines for the Swagger UI within the `Configure` method. If it doesn't exist, add it.
-
-    ```csharp
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-    {
-        /* === SwaggerUI BEGIN === */
-        app.UseSwagger(c =>
-        {
-            c.PreSerializeFilters.Add((swagger, httpReq) => {
-                swagger.Servers = new List<OpenApiServer>() { new OpenApiServer() { Url = $"{httpReq.Scheme}://{httpReq.Host.Value}" } };
-            });
-        });
-        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "InventoryManagement.ApiApp v1"));
-        /* === SwaggerUI END === */
-
-        if (env.IsDevelopment())
-        {
-            app.UseDeveloperExceptionPage();
-        }
-
-        app.UseHttpsRedirection();
-
-        app.UseRouting();
-
-        app.UseAuthorization();
-
-        app.UseEndpoints(endpoints =>
-        {
-            endpoints.MapControllers();
-        });
-    }
-    ```
-
-The Web API application is ready to generate the Open API document.
+In the next unit, you will take an exercise how to enable this OpenAPI capability to your ASP.NET Core Web API app.
 
 
-## Key Takeaways ##
+[image-01]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-01.png
+[image-02]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-02.png
+[image-03]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-03.png
+[image-04]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-04.png
 
-After this unit, you are now able to:
-
-* Add a NuGet package to your existing ASP.NET Core Web API application to activate the Open API feature, and
-* Configure the Open API feature on the ASP.NET Core Web API application.
-
-
-[meet crystal]: ../media/meet-crystal.png
 
 [az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[swashbuckle]: https://github.com/domaindrivendev/Swashbuckle.AspNetCore

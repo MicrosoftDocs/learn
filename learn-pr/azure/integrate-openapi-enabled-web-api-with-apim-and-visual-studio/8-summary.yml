@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-summary
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.8-summary
 title: Summary
 metadata:
   title: Summary
   description: |
     Summary that how to:
 
-    * Publish an Open API-enabled Web API app to Azure App Service through Visual Studio,
+    * Publish an OpenAPI-enabled Web API app to Azure App Service through Visual Studio,
     * Integrate the Web API with Azure API Management through Visual Studio, and
     * Test the API on Azure API Management
-  ms.date: 03/19/2021
+  ms.date: 04/02/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/8-summary.md)]
