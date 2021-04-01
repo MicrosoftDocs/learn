@@ -4,8 +4,9 @@ title: Exercise - Create a search solution
 metadata:
   title: Exercise - Create a search solution
   description: "Hands-on exercise - create an Azure Cognitive Search solution."
-  ms.date: 03/30/2021
+  ms.date: 04/01/2021
   author: wwlpublish
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
