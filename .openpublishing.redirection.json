@@ -5229,7 +5229,51 @@
       "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/2-get-ready-develop-search-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/3-create-azure-resources-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/4-create-data-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/5-create-skillset.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/6-create-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/7-create-run-indexer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/8-search-enriched-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/10-update-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/11-search-updated-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
     }
-
   ]
 }
