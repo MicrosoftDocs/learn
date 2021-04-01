@@ -5204,6 +5204,11 @@
       "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/9-enhance-index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/7-enhance-index",
       "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/4-create-data-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/4-indexing-process",
+      "redirect_document_id": true
     }
   ]
 }
