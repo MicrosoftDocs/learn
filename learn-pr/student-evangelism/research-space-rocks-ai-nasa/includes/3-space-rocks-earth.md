@@ -1,4 +1,13 @@
-As we mentioned earlier, a prominent place to gather space rocks, including meteorites, is actually on Earth. Although planned missions try to collect specific types of space rocks, on Earth, we're at the mercy of meteoroids that happen to crash onto the surface of our planet, and which we experience on Earth as meteorites. (A *meteoroid* is a rocky or metallic projectile flying through space. A meteoroid becomes a *meteor* when it enters Earth's atmosphere. A meteor becomes a *meteorite* when it hits the earth's surface.) Furthermore, meteorites found on Earth are covered with a fusion crust—a burnt crust that's formed when the meteor travels through the Earth's atmosphere. The fusion crust that covers meteorites and space rocks makes it difficult to identify the type of rock until it's brought to the lab to be cleaned and analyzed.
+As we mentioned earlier, a prominent place to gather space rocks is actually on Earth. Astronauts on planned space missions try to collect specific types of space rock, including meteorites. On Earth, we're at the mercy of meteoroids that happen to crash onto the surface of our planet. After such an impact, we get the chance to explore the debris field in the hopes of finding our own meteorites.
+
+> [!div class="alert is-tip"]
+> ### Space rock primer
+>
+> A *meteoroid* is a rocky or metallic projectile flying through space.<br>
+> A meteoroid becomes a *meteor* when it enters Earth's atmosphere.<br>
+> A meteor becomes a *meteorite* when it hits the earth's surface.
+
+Meteorites found on Earth are covered with a burnt *fusion crust* that's formed when the meteor travels through the Earth's atmosphere. The fusion crust that covers meteorites and space rocks makes it difficult to identify the type of rock until it's brought to the lab to be cleaned and analyzed.
 
 ## Where space rocks are found
 
@@ -8,4 +17,8 @@ Although meteorites might be found anywhere on our planet, hot and cold deserts 
 
 Antarctica also offers a unique, constant, dry, and cold climate that helps preserve the organic chemicals in meteorites. In other areas, shifts in temperature and precipitation, along with the impact of humans in the area, make the rock sample less likely to be preserved over time. In meteorite research, a high degree of preservation gives us a clearer understanding of the rock's original composition.
 
-Read more about [Antarctic meteorites](https://www.britannica.com/science/Antarctic-meteorite?azure-portal=true).
+Read more about [Antarctic meteorites][AntarcticMeteorites].
+
+<!-- Links -->
+
+[AntarcticMeteorites]: https://www.britannica.com/science/Antarctic-meteorite?azure-portal=true

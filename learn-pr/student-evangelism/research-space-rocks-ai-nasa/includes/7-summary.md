@@ -1,2 +1,2 @@
-In this module, you learned about different types of space rocks and the forms they can take. You also learned about the challenges of gathering space rocks, and a solution to the problem.
+In this lesson, you learned about the types of space rocks, and some of the different forms they can take. You also discovered some of the challenges of gathering space rocks, and a solution to the problem.
 
