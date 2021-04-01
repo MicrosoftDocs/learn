@@ -6,7 +6,7 @@ To provide a few examples, online stores analyze real-time clickstream data to p
 
 In this module, you will learn how real-time analytics of streaming data works, in principle. You will also discover how you can use Azure Stream Analytics to integrate streaming data into your real-time analytics workflows.
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you will:
 
