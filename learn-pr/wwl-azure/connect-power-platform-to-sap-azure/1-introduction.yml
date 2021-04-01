@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-regression-model-azure-machine-learning-designer.introduction
+uid: learn.wwl.connect-power-platform-to-sap-azure.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 04/01/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
