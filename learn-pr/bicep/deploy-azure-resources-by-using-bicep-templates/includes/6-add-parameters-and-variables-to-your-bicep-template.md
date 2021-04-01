@@ -149,8 +149,9 @@ Run the following Azure PowerShell commands in the terminal. This snippet is the
 
 ```azurepowershell
 $templateFile = 'main.bicep'
-$today = Get-Date -Format 'MM-dd-yyyy'
+$today = Get-Date -Format 'dd-MMM-yyyy'
 $deploymentName = "addparams-$today"
+
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile `

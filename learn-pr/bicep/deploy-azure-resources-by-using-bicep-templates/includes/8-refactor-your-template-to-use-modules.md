@@ -164,8 +164,9 @@ Run the following Azure PowerShell commands in the terminal. This snippet is the
 
 ```azurepowershell
 $templateFile = 'main.bicep'
-$today = Get-Date -Format 'MM-dd-yyyy'
+$today = Get-Date -Format 'dd-MMM-yyyy'
 $deploymentName = "addmodule-$today"
+
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile `
@@ -176,7 +177,7 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to Azure. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
+1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
 
 1. Notice that you have two new deployments in the list. One begins with the name **`addmodule`**, and another is called **`appService`**:
 

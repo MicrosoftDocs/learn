@@ -185,7 +185,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. A browser opens so you can sign in to your account. Use the code in the prompt.
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. A browser opens so you can sign in to your account.
 
     ```azurepowershell
     Connect-AzAccount
@@ -194,6 +194,14 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 1. After you've signed in, you'll see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you'll see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
 1. Set the default subscription for all of the Azure PowerShell commands you run in this session.
+
+    ```azurepowershell
+    $context = Get-AzSubscription -SubscriptionName 'Concierge Subscription'
+    Set-AzContext $context
+    ```
+
+   > [!NOTE]
+   > If you've used more than one sandbox recently, there might be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
 1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
 
@@ -224,8 +232,9 @@ Deploy the template by using Azure PowerShell commands in the terminal.
 
 ```azurepowershell
 $templateFile = 'main.bicep'
-$today = Get-Date -Format 'MM-dd-yyyy'
+$today = Get-Date -Format 'dd-MMM-yyyy'
 $deploymentName = "storage-$today"
+
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile
@@ -272,7 +281,7 @@ az deployment group list --output table
 You can also verify the deployment from the command line. To do so, run the following Azure PowerShell command:
 
 ```azurepowershell
-Get-AzResourceGroupDeployment
+Get-AzResourceGroupDeployment -ResourceGroupName <rgn>[sandbox resource group name]</rgn> | Format-Table
 ```
 
 ::: zone-end
@@ -333,8 +342,9 @@ Run the following Azure PowerShell commands in the terminal. These commands rese
 
 ```azurepowershell
 $templateFile = 'main.bicep'
-$today = Get-Date -Format 'MM-dd-yyyy'
+$today = Get-Date -Format 'dd-MMM-yyyy'
 $deploymentName = "addapp-$today"
+
 New-AzResourceGroupDeployment `
   -Name $deploymentName `
   -TemplateFile $templateFile
