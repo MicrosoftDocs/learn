@@ -35,7 +35,7 @@ In the previous image, you can see that **System updates** is set to **AuditIfNo
 
 You can collapse each group to see other policy areas.
 
-![Screenshot of the security policy details for a management group](../media/3-policy-screen2.png)
+![Screenshot of the security policy details for a management group again](../media/3-policy-screen2.png)
 
 In the previous image, you can see that the security policy **Virtual machines should be associated with a Network Security Group** is **Disabled**.
 
