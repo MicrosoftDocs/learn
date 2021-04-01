@@ -1,6 +1,14 @@
 If you thought the hard part about collecting space rocks is over after flying a rocket 238,855 miles to the Moon, you'd be mistaken. Even after astronauts or rovers land on the Moon, selecting rocks that are valuable to research becomes a serious challenge. With limited space on rockets to bring back samples, and with so many types of space rocks, choosing the ones to collect and which to leave behind is a difficult process.
 
-You might think about the challenge this way: If you could choose only one place on Earth to study to fully understand Earth, where would you go? Such a place doesn't exist. So, you narrow the scope. If you go to a specific region on Earth, like the Grand Canyon, which rocks would you collect for study to fully understand that region? It's still a challenging task. It's similar to the task that astronauts face when they choose rocks to collect on the Moon's surface.
+You might think about the challenge this way:<br>
+
+> _If you could choose only one place on Earth to study<br>
+> so you could fully understand Earth, where would you go?_
+
+Such a place doesn't exist. So, you narrow the scope.
+
+If you go to a specific region on Earth, like the Grand Canyon, which rocks would you collect for study to fully understand that region? It's still a challenging task. It's similar to the task that astronauts face when they choose rocks to collect on the Moon's surface.
+
 
 ## How can AI help astronauts with space rocks?
 
