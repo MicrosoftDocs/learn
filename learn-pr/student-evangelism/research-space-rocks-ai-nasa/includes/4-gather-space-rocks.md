@@ -2,8 +2,7 @@ If you thought the hard part about collecting space rocks is over after flying a
 
 You might think about the challenge this way:<br>
 
-> _If you could choose only one place on Earth to study<br>
-> so you could fully understand Earth, where would you go?_
+> _If you could choose only one place on Earth to study to fully understand Earth, where would you go?_
 
 Such a place doesn't exist. So, you narrow the scope.
 

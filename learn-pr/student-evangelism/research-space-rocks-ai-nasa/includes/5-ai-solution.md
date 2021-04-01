@@ -15,7 +15,7 @@ As we mentioned earlier, AI works better when the sample data is cleaner. We see
 An AI model that can help identify, classify, and track these rock samples would provide clear instructions about how to take the photos to fit the current model. When we have an AI model that fits these criteria, [lunar rock curation][LunarRocks] and research can move toward answering even more nuanced research questions. We might even consider using a rover and AI on Earth to collect meteorites in Antarctica.
 
 
-## How can we use AI to improve research in space?
+## How can AI help with research in space?
 
 AI and image quality might not be good enough yet to take a satellite picture of a planet's surface and give an overview of the types of rocks that are on it. But, we can start to understand where AI *can* help and where it's limited.
 
