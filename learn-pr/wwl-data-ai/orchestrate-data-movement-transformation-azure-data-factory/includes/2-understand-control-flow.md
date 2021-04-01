@@ -24,13 +24,13 @@ or from a trigger. Activities then consume the arguments held in a parameter as 
 
 ## Custom state passing
 
-Custom state passing is made possible with Azure Data Factory. Custom state passing is an activity that created output or the state of the activity that needs to be consumed by a subsequent activity in the pipeline. An example, is that in a JSON definition of an activity, you can access the output of the previous activity. Using custom state passing, enables  you to build workflows where values are passing through activities. 
+Custom state passing is made possible with Azure Data Factory. Custom state passing is an activity that created output or the state of the activity that needs to be consumed by a subsequent activity in the pipeline. An example is that in a JSON definition of an activity, you can access the output of the previous activity. Using custom state passing enables  you to build workflows where values are passing through activities. 
 
 ## Looping containers
 
 The looping containers umbrella of control flow such as the ForEach activity  defines repetition in a pipeline. 
-It enables you to iterate over a collection and runs specified activities in the defined loop. It works similar as the 'for each looping structure' used in programming languages. 
-Besides for each activity, there is also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. 
+It enables you to iterate over a collection and runs specified activities in the defined loop. It works similarly to the 'for each looping structure' used in programming languages. 
+Besides each activity, there is also an Until activity. This functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. 
 
 ## Trigger based flows
 
@@ -42,9 +42,9 @@ The Execute Pipeline activity with Azure Data Factory allows a Data Factory pipe
 
 ## Delta flows
 
-Use-cases related to using delta flows, is delta loads. 
+Use-cases related to using delta flows are delta loads. 
 Delta loads in ETL patterns will only load data that has changed since a previous iteration of a pipeline. Capabilities such as lookup activity, and flexible scheduling helps handling delta load jobs. 
-In case of using a Lookup activity, it will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities.
+In the case of using a Lookup activity, it will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities.
 
 ## Other control flows
 
