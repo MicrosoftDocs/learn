@@ -3,13 +3,13 @@ As we mentioned earlier, a prominent place to gather space rocks is actually on 
 > [!div class="alert is-tip"]
 > ### Space rock primer
 >
-> A *meteoroid* is a rocky or metallic projectile flying through space.<br>
-> A meteoroid becomes a *meteor* when it enters Earth's atmosphere.<br>
-> A meteor becomes a *meteorite* when it hits the earth's surface.
+> &#8227; A *meteoroid* is a rocky or metallic projectile flying through space.<br>
+> &#8227; &#8227; A meteoroid becomes a *meteor* when it enters Earth's atmosphere.<br>
+> &#8227; &#8227; &#8227; A meteor becomes a *meteorite* when it hits the Earth's surface.
 
 Meteorites found on Earth are covered with a burnt *fusion crust* that's formed when the meteor travels through the Earth's atmosphere. The fusion crust that covers meteorites and space rocks makes it difficult to identify the type of rock until it's brought to the lab to be cleaned and analyzed.
 
-## Where space rocks are found
+## Where can we find space rocks on Earth?
 
 Although meteorites might be found anywhere on our planet, hot and cold deserts like those found in Northwest Africa and Antarctica are major spots for finding meteorites. Antarctica is a good location to search for meteorites because the black color of the fusion crust stands out against blue glacier ice. In other areas, meteorites might be obscured by vegetation, blend in with the ground, or look like other common rocks or debris in the area. 
 

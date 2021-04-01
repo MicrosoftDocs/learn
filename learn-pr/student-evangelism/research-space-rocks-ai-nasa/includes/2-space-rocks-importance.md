@@ -4,7 +4,8 @@ The application of AI that we focus on in this learning path is how to use a com
 
 Before we jump into why we choose to study space rocks, let's first classify the different rocks and soil that NASA scientists study. Rocks and soil from space come in many sizes, ranging from tiny specs of soil found on the Moon to boulders the size of planets that float through space. Boulders that originate in space might be discovered flying through space as *meteoroids* and *asteroids* or found on the surface of moons, planets, and even Earth as *meteorites*. 
 
-## Why space rocks are important
+
+## Why are they important?
 
 When I first started to learn about space rocks, I thought, "*Why* does NASA keep sending rockets to the Moon to collect space rocks?" (Don't tell NASA I said that!) Now, I know that space rocks have many uses. In this module, we won't cover all the ways we can use space rocks because of the sheer volume. But for one, rocks tell us about the history of our Solar System as they record geological events like the eruption of a volcano. Space rocks have been here much longer than humans, and they'll be here long after we're gone.
 

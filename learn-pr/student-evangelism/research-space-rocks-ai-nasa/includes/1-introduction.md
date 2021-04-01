@@ -4,14 +4,14 @@ This Microsoft Learn learning path is the second in a series of learning paths t
 
 The programming services and libraries that do much of the complex math and algorithms in AI are widely available. For example, Python libraries and packages like [PyTorch][PyTorch] explore, visualize, and analyze data. [Azure also offers AI services][AzureAI] that analyze an image by using a simple API call.
 
-Although AI has complexities and levels we won't cover in the Learn modules, this learning path introduces you to some basic AI tools and services. It guides you through a practical use of the tools and services for an introductory exploration of images of space rocks.
+Although AI has complexities and levels we won't cover in the Learn modules, this learning path introduces you to some basic AI tools and services. In a later module, we'll use some of these tools and services to build an AI model.
 
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module][VideoWalkthrough] in a new tab.
 
 ## Learning objectives
 
-In this module, you'll use AI to build an aid to space rock classification techniques. Along the way, you'll learn:
+In this module, you'll learn:
 
 - What space rocks are and what we do with them
 - Why classifying space rocks is challenging and important
