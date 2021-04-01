@@ -59,8 +59,6 @@ on:
     types: [opened, deleted]
 ```
 
-For more information on triggering manual events, check out [Manual events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#manual-events).
-
 ## Configuring workflows to run for webhook events
 
 Lastly, you can configure a workflow to run when specific webhook events occur on GitHub. Most webhook events can be triggered from more than one activity for a webhook, so if multiple activities exist for a webhook, you can specify an activity type to trigger the workflow. For example, you can run a workflow for the `check_run` event but only for the `rerequested` or `requested_action` activity types.
@@ -70,8 +68,6 @@ on:
   check_run:
     types: [rerequested, requested_action]
 ```
-
-For more information on webhook events, check out [Webhook events and payloads](https://docs.github.com/en/developers/webhooks-and-events/webhook-events-and-payloads).
 
 ## Using conditional keywords
 
@@ -110,8 +106,6 @@ Disabling a workflow can be useful in some situations, for example:
 
 You can also cancel a workflow run that is in progress in the GitHub UI within the **Actions** tab or using the GitHub API endpoint `DELETE /repos/{owner}/{repo}/actions/runs/{run_id}`. Keep in mind that when you cancel a workflow run, GitHub will cancel all of its jobs and steps within that run.
 
-For more information on disabling or canceling a workflow run, check out [Disabling and enabling a workflow](https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow).
-
 ## Using an organization's templated workflow
 
 If you have a workflow that multiple teams use within an organization, instead of re-creating the same workflow for each repository, you can promote consistency across your organization by using a workflow template that is defined in the organization's `.github` repository. Any member within the organization can use an organization template workflow and any repository within that organization has access to those template workflows.
@@ -119,8 +113,6 @@ If you have a workflow that multiple teams use within an organization, instead o
 You can find these workflows by navigating to the **Actions** tab of a repository within the organization, selecting **New workflow**, and then finding the organization's workflow template section titled "Workflows created by *organization name*". For example, the organization called Mona has a template workflow as shown below.
 
 ![Screen Shot 2021-02-18 at 4 50 36 PM](https://user-images.githubusercontent.com/6351798/108436868-7a79b200-7209-11eb-83cb-d324ccf5f337.png)
-
-For more information on creating and using organization template workflows, check out [Sharing workflows with your organization](https://docs.github.com/en/actions/learn-github-actions/sharing-workflows-with-your-organization).
 
 ## Using specific versions of an action
 

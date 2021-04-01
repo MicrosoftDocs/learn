@@ -21,5 +21,3 @@ A step is an individual task that can run commands in a job. In our example abov
 ### Actions
 
 The actions inside your workflow are the standalone commands that are executed. These standalone commands can reference GitHub actions such as using your own custom actions, or community actions like the one we use above, `actions/checkout@v2`. You can also run commands such as `run: npm install -g bats` to execute a command on the runner. 
-
-For more information on the components of a GitHub Actions workflow, check out [The components of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#the-components-of-github-actions).
