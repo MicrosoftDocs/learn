@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.5-teach-machines-classify-space-rocks
 metadata:
-  title: Classify space rocks like a machine by using AI
-  description: Discover the process that's used to teach machines how to classify space rocks by type.
-  ms.date: 03/10/2021
+  title: Classify space rocks like a machine with AI
+  description: Discover the AI process that's used to teach machines how to classify space rocks by type.
+  ms.date: 04/04/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Classify space rocks like a machine by using AI
+title: Classify space rocks like a machine with AI
 durationInMinutes: 4
 content: |
   [!include[](includes/5-teach-machines-classify-space-rocks.md)]

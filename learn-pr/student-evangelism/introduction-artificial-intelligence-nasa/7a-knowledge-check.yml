@@ -3,8 +3,8 @@ uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.7a-knowl
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 03/10/2021
+  description: Answer some questions to see what you learned in the lesson.
+  ms.date: 04/04/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions based on what it knows."
     - content: "Primarily a way to automate monotonous tasks that don't require much thinking."
       isCorrect: false
-      explanation: "Incorrect. AI is capable of complex tasks that go beyond providing only convenience."
+      explanation: "Incorrect. AI can do complex tasks that go beyond providing only convenience."
   - content: "What is the role of Anaconda in using Python?"
     choices:
     - content: "You can use Anaconda to download one Python library at a time."
