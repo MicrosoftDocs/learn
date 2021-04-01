@@ -1,3 +1,0 @@
-In this module, we tried to answer broad yes-no questions through a Data Scientist's analysis of data from studies and randomized experiments, basing the conclusions on random samples and empirical distributions. And learned how to carry out this analysis through Hypothesis Testing, a method of statistical inference.
-
-You now have a powerful tool at your disposal that you can use to answer numerous  important questions and testing hypotheses with the right dataset. Your results here can be used to make decisions, which can have profound effects so it's important that you are careful and  cognizant about errors that can creep in your test – even ones just through randomness – as they can lead you to make wrong conclusions.  

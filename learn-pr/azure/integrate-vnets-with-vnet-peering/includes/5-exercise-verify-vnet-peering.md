@@ -11,7 +11,7 @@ Let's confirm the connectivity across the peering connections. To do this, you'l
 
 1. To connect to your VMs, you'll use SSH (Secure Shell) directly from Cloud Shell. When using SSH, you first find the public IP addresses that are assigned to your test VMs.
 
-1. In Cloud Shell, run the following command to list the IP addresses you'll use to connect to the VMs:
+1. In Cloud Shell, run the following command to list the IP addresses you'll use to connect to the VMs.
 
     ```azurecli
     az vm list \
@@ -131,7 +131,7 @@ In the final test, in Cloud Shell you'll use SSH to connect to the public IP add
 
 1. Sign in by using the password you used to create the VM.
 
-1. Enter `exit` to close this SSH session and return to the **MarketingVM** prompt.
+1. Enter `exit` to close this SSH session, and return to the **MarketingVM** prompt.
 
 1. In Cloud Shell, run the following command, using SSH to connect to the private IP address of **SalesVM**. In the command, replace `<SalesVM private IP>` with this VM's *private* IP address.
 
@@ -145,9 +145,9 @@ In the final test, in Cloud Shell you'll use SSH to connect to the public IP add
 
 1. Sign in by using the password you used to create the VM.
 
-1. Enter `exit` to close this SSH session and return to the **MarketingVM** prompt.
+1. Enter `exit` to close this SSH session, and return to the **MarketingVM** prompt.
 
-1. Enter `exit` to close the SSH session and return to Cloud Shell.
+1. Enter `exit` to close the SSH session, and return to Cloud Shell.
 
 This is a simple test using SSH. It demonstrates network connectivity between peered virtual networks. It also demonstrates lack of network connectivity for transitive connections. 
 

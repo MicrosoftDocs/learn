@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-azure-ddos-protection.2-what-is-azure-ddos-protection
-title: What is Azure DDoS Protection service?
+title: What is Azure DDoS Protection Standard?
 metadata:
-  title: What is Azure DDoS Protection service?
+  title: What is Azure DDoS Protection Standard?
   description: Microsoft offers DDoS Basic protection to all Azure customers for free. Microsoft also offers additional services in their DDoS Standard protection.
   ms.date: 02/10/2021
   author: jamcneil

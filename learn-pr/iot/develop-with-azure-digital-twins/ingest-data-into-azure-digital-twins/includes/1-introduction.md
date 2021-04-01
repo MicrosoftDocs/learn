@@ -8,6 +8,8 @@ Azure Digital Twins provides a service that abstracts the complexity needed to d
 
 In this module, you'll leverage Azure IoT services to create an end-to-end architecture that helps populate Azure Digital Twins with relevant data from IoT devices.
 
+      :::image type="content" source= "../media/module-3-architecture.png" alt-text="Partial screenshot of a code listing, showing the line in which to specify the device connection string.":::
+
 ## Learning objectives
 
 In this module you will:

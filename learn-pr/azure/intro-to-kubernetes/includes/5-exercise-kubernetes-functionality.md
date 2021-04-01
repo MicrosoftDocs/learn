@@ -1,6 +1,6 @@
 Several options are available when you're running Kubernetes locally. You can install Kubernetes on physical machines or VMs, or use a cloud-based solution such as Azure Kubernetes Service (AKS). 
 
-Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
+Your goal in this exercise is to explore a Kubernetes installation with a single-node cluster. You're going to configure a _MicroK8s_ environment that's easy to set up and tear down. Then, you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
 > [!NOTE]
 > This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
@@ -17,7 +17,7 @@ You can install MicroK8s on Linux, Windows, and macOS. However, installation ins
 
 ### Install MicroK8s on Linux
 
-The Linux installation of MicroK8s is the installation option that has the lowest number of steps. Switch to a terminal window and run the commands in the following instructions:
+The Linux installation of MicroK8s is the installation option that has the lowest number of steps. Switch to a terminal window, and run the commands in the following instructions:
 
 1. Install the MicroK8s snap app. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
 
@@ -84,7 +84,7 @@ To run MicroK8s on macOS, use Multipass. Multipass is a lightweight VM manager f
 1. You have two options to install Multipass on macOS. Either download and install the latest release of Multipass for macOS from [GitHub](https://github.com/canonical/multipass/releases), or to install Multipass with the `brew cask install multipass` command, use Homebrew.
 
     ```bash
-    brew cask install multipass
+    brew install --cask multipass
     ```
 
 1. In a command console, run the multipass launch command to configure and run the microk8s-vm image. This step might take a few minutes to complete, depending on the speed of your internet connection and desktop.
@@ -155,7 +155,7 @@ To view the status of the installed add-ons on your cluster, run the status comm
     storage: disabled
     ```
 
-1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here is the purpose of each add-on.
+1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here's the purpose of each add-on.
 
     |||
     | --- | --- |
@@ -233,8 +233,8 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     kubernetes   ClusterIP   10.152.183.1   <none>        443/TCP   37m   <none>
     ```
 
-    The reason for the single service listing is that Kubernetes uses a concept called *namespaces*. To logically divide a cluster into multiple virtual clusters, use namespaces. 
-    
+    The reason for the single service listing is that Kubernetes uses a concept called *namespaces*. To logically divide a cluster into multiple virtual clusters, use namespaces.
+
     To fetch all services in all namespaces, pass the `--all-namespaces` parameter.
 
     ```bash
@@ -301,14 +301,13 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE
     nginx-86c57db685-dj6lz   1/1     Running   0          33s
-    ubuntu@microk8s-vm:~$
     ```
 
 ### Test the website installation
 
 Test the NGINX installation by connecting to the web server through the pod's IP address.
 
-1.  To find the address of the pod, pass the `-o wide` parameter.
+1. To find the address of the pod, pass the `-o wide` parameter.
 
     ```bash
     sudo kubectl get pods -o wide
@@ -356,7 +355,6 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     The result will be similar to the following example.
 
     ```output
-    sudo kubectl scale --replicas=3 deployments/nginx
     deployment.apps/nginx scaled
     ```
 

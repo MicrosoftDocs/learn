@@ -1,10 +1,10 @@
-Next, you'll use what you learned about models in the previous section to create your own. In this module, you'll create a collection of models that resemble a real-life industrial scenario. For this reason, there's some complexity and some work in putting this collection of models together. The result will be a much better learning experience, and when you get to graphing the models, the scenario will provide deeper insights into the digital twin world. With this greater realism in mind, you're going to need to create a number of models.
+Next, you'll use what you learned about models in the previous section to create your own. You'll create a collection of models that resemble a real-life industrial scenario. For this reason, there's some complexity and some work in putting this collection of models together. The result of this work is a much better learning experience, though, and when you start graphing the models, you get deeper insights into the digital twin world. With this greater realism in mind, you're going to need to create a number of models.
 
-Before starting at the top and defining a model for a factory, you'll need to create a folder to keep these model files in. For example, create a folder in your **Documents** folder with a name such as **factory-models**. You can use any tool that works well with text files to create these models. Good choices include Visual Studio, Visual Studio Code, or even Notepad.
+First, you need to create a folder to keep your model files in. For example, create a sub-folder in your **Documents** folder, with a name such as **factory-models**. You can use any tool that works well with text files to create these models. Good choices include Visual Studio, Visual Studio Code, or even Notepad.
 
 ## Create a model for a chocolate factory
 
-For the factory itself, you'll create a model with the following properties and relationships:
+For the factory itself, create a model with the following properties and relationships:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
@@ -62,7 +62,7 @@ Has floors  | Relationship | The factory has floors, identified by the `dtmi:com
 
 ## Create a model for a factory floor
 
-For the factory floor, you'll give it an ID and keep track of the ambient temperature of the floor. you'll also need the relationship that a floor contains production lines.
+For the factory floor, you'll give it an ID and keep track of the ambient temperature of the floor. You also need the relationship that a floor contains production lines.
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
@@ -107,13 +107,13 @@ Runs production lines  | Relationship | The floor has production lines, identifi
 
 ## Create a production line model
 
-Now things get a bit more complex. You need to define a model for a production line that'll cope with the multiple steps, pieces, and types of equipment that are in use.
+Now things get a bit more complex. You need to define a model for a production line that can cope with the multiple steps, pieces, and types of equipment that are in use.
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-Line ID | Property | A unique ID for the production line. Perhaps a floor could contain more than one line.
-LineOperationStatus | Property with schema | A property that indicates whether the production line is online (running), or not.
-Runs steps  | Relationship | The production lines runs production steps, identified by the `dtmi:com:microsoft:iot:e2e:digital_factory:production_line:rel_runs_steps;1` ID. The steps also have an online/offline status property.
+Line ID | Property | A unique ID for the production line. Perhaps a floor contains more than one line.
+`LineOperationStatus` | Property with schema | A property that indicates whether the production line is online (running), or not.
+Runs steps  | Relationship | The production steps for the production lines' runs, identified by the `dtmi:com:microsoft:iot:e2e:digital_factory:production_line:rel_runs_steps;1` ID. The steps also have an online or offline status property.
 
 1. Look over the production line model. Note the use of the status schema for both the production line and for each production step:
 
@@ -174,17 +174,17 @@ Runs steps  | Relationship | The production lines runs production steps, identif
 
 ## Create a production line step model
 
-The production line consists of three steps: roasting, grinding, molding.
+The production line consists of three steps: roasting, grinding, and molding.
 
-As several properties of any step are going to be identical, you'll create a *base* model that the specific steps can inherit from:
+Because several properties of any step are going to be identical, you'll create a *base* model that the specific steps can inherit from:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
 Step ID | Property | A unique ID for the production step, perhaps including the name of the step.
-StartTime | Property | A start time for the step.
-FinalStep | Property | A boolean value set to true if this is the last step of the production line.
-OperationStatus | Property with schema | A property that indicates whether the step is online or not.
-StepLink | Relationship | The relationship of the production line step to the other steps.
+`StartTime` | Property | A start time for the step.
+`FinalStep` | Property | A Boolean value, set to true if this is the last step of the production line.
+`OperationStatus` | Property with schema | A property that indicates whether the step is online or not.
+`StepLink` | Relationship | The relationship of the production line step to the other steps.
 
 1. Look over the definition for the production line step model:
 
@@ -250,26 +250,26 @@ StepLink | Relationship | The relationship of the production line step to the ot
     }
     ```
 
-1. Save the step model to your factory folder and name the file **ProductionStepInterface.json**.
+1. Save the step model to your factory folder, and name the file **ProductionStepInterface.json**.
 
 ## Create the specific production line step models
 
-The new concept that the production line step models bring is that of *extending* a base model. The following table shows the fields you need, in addition to those inherited from the production line step model.
+The production line step models extend a base model. The following table shows the fields you need, in addition to those inherited from the production line step model.
 
 ### Create the roasting step model
 
-:::image type="content" source="../media/roasting.png" alt-text="Graphical representation of the roasting step" lightbox="../media/roasting.png":::
+:::image type="content" source="../media/roasting.png" alt-text="Image of the roasting step." lightbox="../media/roasting.png":::
 
-The roasting model needs a few physics related properties:
+The roasting model needs a few physics-related properties:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-ChasisTemperature | Property with units | Temperature of the fanning/roasting machine.
-RoastingTime | Property with units | An integer number of minutes to roast the beans.
-PowerUsage | Property with units | The kilowatt power usage of the machine.
-FanSpeed | Property | The speed of the roasting fan. Now you know why the process is known as "fanning"!
+`ChasisTemperature` | Property with units | Temperature of the fanning/roasting machine.
+`RoastingTime` | Property with units | An integer number of minutes to roast the beans.
+`PowerUsage` | Property with units | The kilowatt power usage of the machine.
+`FanSpeed` | Property | The speed of the roasting fan. (Now you know why the process is known as "fanning"!)
 
-1. In the following definition for the roasting step, note the **extends** construct. Also note that *only* the **ChasisTemperature** property is writable:
+1. In the following definition for the roasting step, note the `extends` construct. Also note that *only* the `ChasisTemperature` property is writable:
 
     ```json
     {
@@ -307,19 +307,19 @@ FanSpeed | Property | The speed of the roasting fan. Now you know why the proces
     }
     ```
 
-1. Save the roasting model to your factory folder and name it **ProductionStepRoasting.json**.
+1. Save the roasting model to your factory folder, and name it **ProductionStepRoasting.json**.
 
 ### Create the grinding step model
 
-:::image type="content" source="../media/grinding.png" alt-text="Graphical representation of the grinding step" lightbox="../media/grinding.png":::
+:::image type="content" source="../media/grinding.png" alt-text="Image of the grinding step." lightbox="../media/grinding.png":::
 
 The next step is grinding, with similar properties to roasting:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-ChasisTemperature | Property with units | Temperature of the grinding machine.
-GrindingTime | Property with units | An integer number of minutes to grind the beans.
-PowerUsage | Property with units | The kilowatt power usage of the machine.
+`ChasisTemperature` | Property with units | Temperature of the grinding machine.
+`GrindingTime` | Property with units | An integer number of minutes to grind the beans.
+`PowerUsage` | Property with units | The kilowatt power usage of the machine.
 Force | Property | The force, in pounds, of the steel grinding plates.
 
 1. Note the following definition for the grinding step:
@@ -361,18 +361,18 @@ Force | Property | The force, in pounds, of the steel grinding plates.
     }
     ```
 
-1. Copy the grinding step model into a file named **ProductionStepGrinding.json** and save it to your factory models folder.
+1. Copy the grinding step model into a file named **ProductionStepGrinding.json**, and save it to your factory models folder.
 
 ### Create the molding step model
 
-:::image type="content" source="../media/molding.png" alt-text="Graphical representation of the molding step" lightbox="../media/molding.png":::
+:::image type="content" source="../media/molding.png" alt-text="Image of the molding step." lightbox="../media/molding.png":::
 
 The final step is molding, which only includes a couple of properties:
 
 | Element | Type | Description |
 | --------- | ---- | ----------- |
-ChasisTemperature | Property with units | Temperature of the molding machine.
-PowerUsage | Property with units | The kilowatt power usage of the machine.
+`ChasisTemperature` | Property with units | Temperature of the molding machine.
+`PowerUsage` | Property with units | The kilowatt power usage of the machine.
 
 1. Note following definition for the molding step:
 
@@ -401,8 +401,10 @@ PowerUsage | Property with units | The kilowatt power usage of the machine.
     }
     ```
 
-1. Save the molding step model into a file called **ProductionStepMolding.json** and save it to your factory models folder.
+1. Save the molding step model into a file called **ProductionStepMolding.json**, and save it to your factory models folder.
 
 ## Next steps
 
-You have created a total of seven models. While the real process of making chocolate has been simplified, you've created digital models of sufficient complexity that visually verifying them as accurate is tough. The next step is to validate your work so far. Thankfully, there's a sample application to do this. You can run this app on your digital twin models to make sure they're all valid.
+You have created a total of seven models. While the real process of making chocolate has been simplified, you've created digital models of sufficient complexity that visually verifying them as accurate is tough.
+
+The next step is to validate your work so far. Thankfully, there's a sample application to do this. You can run this app on your digital twin models to make sure they're all valid.

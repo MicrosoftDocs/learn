@@ -14,7 +14,7 @@ The Cloud Adoption Framework helps customers undertake a simplified cloud journe
 
 These three main stages are preceded by a business strategy phase and surrounded by an operations phase that expands through the cloud adoption journey.
 
-![Image showing the progression of Define Strategy, Plan, Ready, and Adopt with govern and manage spanning them](../media/ic-caf-2.jpg)
+![Image showing the progression of Define Strategy, Plan, Ready, and Adopt, spanned by Govern and Manage](../media/ic-caf-2.jpg)
 
 The Cloud Adoption Framework contains detailed information to cover an end-to-end cloud adoption journey:
 
@@ -28,7 +28,7 @@ The Cloud Adoption Framework contains detailed information to cover an end-to-en
 
 | | |
 | --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *The cloud offers nearly unlimited potential, but successful adoption requires careful planning and strategy. The adoption strategy depends on where you are in your cloud journey. When you think about your use of the cloud, what is your motivation?*|
+| ![Icon of lightbulb](../media/lightbulb.png)| *The cloud offers nearly unlimited potential, but successful adoption requires careful planning and strategy. The adoption strategy depends on where you are in your cloud journey. When you think about your use of the cloud, what is your motivation?* |
 |
 
-Next, let’s define the strategy that might trigger an organization to move to the cloud.
+Next, let's define the strategy that might trigger an organization to move to the cloud.

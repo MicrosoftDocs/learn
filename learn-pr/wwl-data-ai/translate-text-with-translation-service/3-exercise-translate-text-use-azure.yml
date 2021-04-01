@@ -3,13 +3,14 @@ uid: learn.wwl.translate-text-with-translation-service.exercise-translate-text-u
 title: Exercise - Translate text and speech
 metadata:
   title: Exercise - Translate text and speech
-  description: "Get hands on with Azure Cognitive Services for text and speech translation."
-  ms.date: 09/13/2020
+  description: "Exercise - Translate text and speech"
+  ms.date: 02/18/2021
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labId: 88766
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-translate-text-use-azure.md)]

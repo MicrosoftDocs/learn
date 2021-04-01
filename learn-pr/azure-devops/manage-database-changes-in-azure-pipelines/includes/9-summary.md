@@ -15,22 +15,22 @@ Although the team is improving their release cadence, there's room for more impr
 The team decided to use Azure SQL Database as the data storage technology. The data storage technology you use depends on the type of data you store. Check out these resources to choose a data storage technology for your projects:
 
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
-- [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?view=sql-server-2017&azure-portal=true)
+- [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?azure-portal=true)
 
 In this module, you worked with ASP.NET Core, SQL Server Data Tools, and Azure SQL Database. You passed Azure Pipelines variables between stages and configured App Service. Use the following resources to learn more:
 
-- [Safe storage of app secrets in development in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows&azure-portal=true)
-- [The Azure SQL Database Deployment task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true)
+- [Safe storage of app secrets in development in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/app-secrets?azure-portal=true)
+- [The Azure SQL Database Deployment task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?azure-portal=true)
 - [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common?azure-portal=true)
 - [Pass a variable from stage to stage in Azure DevOps](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) (This link leads to an external website.)
-- [REST APIs for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-portal=true)
+- [REST APIs for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?azure-portal=true)
 
 This module mentions the following Microsoft Learn modules:
 
 - [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true)
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
 
-You learned to use _dacpac_ and _bacpac_ files in this module. For more information about those files and data-tier applications, see [Data-tier applications](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure-portal=true).
+You learned to use _dacpac_ and _bacpac_ files in this module. For more information about those files and data-tier applications, see [Data-tier applications](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications?azure-portal=true).
 
 You needed a blob storage container to hold your _bacpac_ file. These Microsoft Learn modules provide more information about working with storage on Azure:
 

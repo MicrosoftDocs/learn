@@ -34,6 +34,10 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 1. Trigger a Pipeline Run.
 
+    > [!Note]
+    > The following steps assume there is already an Azure Databricks cluster already provisioned
+
+
 ### Task 1: Generate a Databricks Access Token.
 
 1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdbwsstudxx** where xx are the initials of your name.

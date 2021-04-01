@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-declare-instantiate-classes.6-exercise-apply-access-modifiers
+title: Exercise - Apply access modifiers to a class
+metadata:
+  title: Exercise - Apply access modifiers to a class
+  description: Learn how to apply the private access modifier to class properties.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-exercise-apply-access-modifiers.md)]

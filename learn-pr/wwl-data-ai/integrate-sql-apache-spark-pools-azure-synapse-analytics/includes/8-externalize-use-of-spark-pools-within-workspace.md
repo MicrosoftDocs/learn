@@ -23,7 +23,7 @@ It should be possible to ACL all folders from "synapse" and downward from Azure 
 In case you want to ACL the root  "/" folder, there are some additional instructions to keep in mind.
 
 First, you need to connect to the storage account that is connected to the Synapse workspace, which you can use the Storage Explorer for when using Azure Active Directory. 
-Second, you need to select your Account and give the ADLS Gen 2 URL, as well ass, the default file system for the Synapse workspace. 
+Second, you need to select your Account and give the ADLS Gen 2 URL, as well as, the default file system for the Synapse workspace. 
 Third, if you see the storage account listed, right-click on the listing workspace and make sure you select "Manage Access".
 Lastly, you add the User to the / folder with "Execute" Access Permission and select "Ok".
 
