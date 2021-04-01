@@ -1,4 +1,4 @@
-Here, we discuss the basic components of a GitHub Actions workflow file.
+Here, you learn about the basic components of a GitHub Actions workflow file.
 
 ## The components of GitHub Actions
 

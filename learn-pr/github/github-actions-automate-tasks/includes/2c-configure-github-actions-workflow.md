@@ -1,4 +1,4 @@
-Here, we discuss common configurations within a workflow file. We also take a closer look at the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
+Here, you learn some common configurations within a workflow file. You also explore the categories of event types, disabling and deleting workflows, and using specific versions of an action for security best practices. 
 
 ## Configuring workflows to run for scheduled events
 
@@ -24,8 +24,6 @@ on:
 ```
 
 You can also use operators to specify a range of values or to dial-in your scheduled workflow. The shortest interval you can run scheduled workflows is once every 5 minutes and they run on the latest commit on the default or base branch. 
-
-For more information on scheduled events, and to see a  list of available operators, check out [Scheduled events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events).
 
 ## Configuring workflows to run for manual events
 
