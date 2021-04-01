@@ -203,7 +203,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
    > [!NOTE]
    > If you've used more than one sandbox recently, there might be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
+1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription*, and copy the second column. It will look something like `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
 
     ```azurepowershell
     Get-AzSubscription
