@@ -55,7 +55,7 @@ All parameters are optional by default. That default might work in some cases. B
 
 There are a couple of approaches you can use to make your script safer. You can write custom code to inspect the parameter value. Or you can use decorators that do roughly the same thing. Let's look at both approaches.
 
-- **Use `If-Else`**. The `If-Else` construct allows you to check the value of a parameter and then decide what to do. Here's an example:
+- **Use `If/Else`**. The `If/Else` construct allows you to check the value of a parameter and then decide what to do. Here's an example:
 
    ```powershell
    Param(

@@ -1,10 +1,13 @@
-In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your PC or laptop to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-The idea with this exercise is to add `Try/Catch` and ensure the script crashes early if a certain condition is not met. You will again work with your backup script. You've noticed that you sometimes specify an erroneous path, by mistake, resulting files being backed up that shouldn't have been. Therefore you decide to add some error management.
+In this exercise, you'll use a `Try/Catch` to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
+
+Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
 > [!NOTE]
-> Only carry out the below steps if you haven't run any of the previous exercises. This exercise assumes you've completed the previous ones in this module. If you haven't done so, you need a few files.
-1. Run the following commands:
+> Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
+
+1. If you haven't completed the previous exercises in this module, run the following commands:
 
     ```bash
     mkdir webapp
@@ -13,16 +16,16 @@ The idea with this exercise is to add `Try/Catch` and ensure the script crashes 
     cd ..
     ```
 
-   These commands will create a directory with files typically associated with web development.
+   These commands will create a directory that contains files typically associated with web development.
 
-1. Lastly you need a file _Backup.ps1_, run the following commands:
+1. You also need a file named _Backup.ps1_. Run these commands:
 
     ```bash
     touch Backup.ps1
     code Backup.ps1
     ```
 
-    Now you've got an editor up and running, lets add the needed code. In the editor, paste the following code:
+    Now that you have an editor running, add the required code. Paste this code into the editor:
 
     ```powershell
     Param(
@@ -43,29 +46,29 @@ The idea with this exercise is to add `Try/Catch` and ensure the script crashes 
        Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
        Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
     } Else {
-       Write-Error "Today's backup already exist"
+       Write-Error "Today's backup already exists"
     }
     ```
 
-## Implement a business requirement using `Try/Catch`
+## Implement a business requirement by using `Try/Catch`
 
-Your company mostly build web apps, apps consisting of html, css, and JavaScript files. You therefore decide to _optimize_ the script to recognize web apps.
+Assume your company mostly builds web apps. These apps consist of HTML, CSS, and JavaScript files. You decide to optimize the script to recognize web apps.
 
-1. Use an existing PowerShell shell, if you have, otherwise, start one by typing `pwsh` in a terminal:
+1. Use an existing PowerShell shell, if you have one running. Otherwise, start one by typing `pwsh` in a terminal:
 
    ```bash
    pwsh
    ```
 
-1. Open _Backup.ps1_, in the params section, add the following parameter:
+1. Open _Backup.ps1_. In the `Param` section, add the following parameter:
 
    ```powershell
    [switch]$PathIsWebApp
    ```
 
-   You've added a so called _switch parameter_. The idea is that if this parameter is present, when the script is invoked, you then perform the check on the content. Thereafter you can determine if a backup file should be produced.
+   You've added a _switch parameter_. If this parameter is present when the script is invoked, you perform the check on the content. After that, you can determine if a backup file should be created.
 
-1. Under the `Param` section, add the following code:
+1. Under the `Param` section, add this code:
 
    ```powershell
     If ($PathIsWebApp -eq $True) {
@@ -76,7 +79,7 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
         If ( -Not $ContainsApplicationFiles) {
           Throw "Not a webapp"
         } Else {
-          Write-Host "Source files looks good, continuing"
+          Write-Host "Source files look good, continuing"
         }
       } Catch {
        Throw "No backup created due to: $($_.Exception.Message)"
