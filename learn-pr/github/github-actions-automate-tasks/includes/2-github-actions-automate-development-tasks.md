@@ -43,7 +43,7 @@ However, beyond those GitHub Actions featured on the Actions tab, you can:
 - Search for open-source projects.  For example, the [GitHub Actions](https://github.com/actions?azure-portal=true) organization features many popular open source repos containing GitHub Actions you can use.
 - Write your own GitHub Actions from scratch.  Furthermore, if you want, you could make them open source, or even publish them to the GitHub Marketplace.
 
-## Using open source GitHub Actions
+## Using open source GitHub actions
 
 Many GitHub actions are open source and available for anyone who wants to use them. However, just like with any open source software, you need to carefully check them before using them within your project. Similar to recommended community standards with open source software such as including a README, code of conduct, contributing file, and issue templates just to name a few, you can follow the below recommendations when using GitHub actions:
 
@@ -52,9 +52,9 @@ Many GitHub actions are open source and available for anyone who wants to use th
 - Check if the action is verified in the GitHub Marketplace. This means that GitHub has approved the use of this action. However, you should still review it before using it.
 - Include the version of the action you are using by specifying a Git ref, SHA, or tag.
 
-## Two types of GitHub Actions
+## Two types of GitHub actions
 
-There are two types of GitHub Actions, container actions and JavaScript actions.
+There are two types of GitHub actions: container actions and JavaScript actions.
 
 With **container actions**, the environment is part of the action's code. These actions can only be run in a Linux environment that GitHub hosts. Container actions support many different languages.
 
@@ -156,11 +156,11 @@ For more information on workflow syntax check out [Workflow syntax for GitHub Ac
 
 ## GitHub-hosted vs self-hosted runners
 
-We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block. This told the workflow that this particular job will run using the GitHub-hosted runner that is running ubuntu-latest.
+We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block. This told the workflow that this particular job will run using the GitHub-hosted runner that is running in the environment ubuntu-latest.
 
 When it comes to runners, there are two options to choose from: GitHub-hosted runners or self-hosted runners. If you use a GitHub-hosted runner, each job runs in a fresh instance of a virtual environment that is specified by the GitHub-hosted runner type you define, `runs-on: {operating system-version}`. With self-hosted runners, you need to apply the self-hosted label, its operating system, and the system architecture. For example, a self-hosted runner with a Linux operating system and ARM32 architecture would look like the following, `runs-on: [self-hosted, linux, ARM32]`.
 
-Each type of runner has its benefits, but in short, GitHub-hosted runners offer a quicker, simpler way to run your workflows but with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud.
+Each type of runner has its benefits, but in short, GitHub-hosted runners offer a quicker, simpler way to run your workflows but with limited options. Self-hosted runners are a highly configurable way to run workflows in your own custom local environment. Self-hosted runners can be run on-premises or in the cloud. You can also use self-hosted runners to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners.
 
 For more information on GitHub-hosted and self-hosted runners, check out [About GitHub-hosted runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners) and [About self-hosted runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners).
 
