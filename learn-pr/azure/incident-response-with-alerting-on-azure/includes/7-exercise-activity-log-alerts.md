@@ -6,15 +6,15 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
-1. On the Azure portal menu, select **Monitor**. Next, select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**. On the **Monitor|Overview** pane, in the left menu pane, select **Alerts**.
 
-1. Select **New alert rule**.
+1. Select **New alert rule**. The **Create alert rule** pane appears.
 
-1. In the left menu pane, under **Scope**, select **Select resource**. The **Select a resource** pane appears.
+1. Under the **Scope** section, select **Select resource**. The **Select a resource** pane appears.
 
 1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
-1. You want alerts when any virtual machine in your resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done**.
+1. You want alerts when any virtual machine in your resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done**. The **Create alert rule** pane reappears.
 
    <!-- ![Image that shows the page for selecting a resource](../media/7-alert-select-resource.png) -->
 
