@@ -21,7 +21,7 @@ prerequisites: |
   - npm
   - JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - intermediate
 roles:

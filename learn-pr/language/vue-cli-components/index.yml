@@ -16,7 +16,7 @@ abstract: |
   - Create components
 prerequisites: HTML/CSS, Git, npm, JavaScript, and some knowledge of Vue.js
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - intermediate
 roles:
