@@ -1,4 +1,4 @@
-Later on in this learning path, we'll use three Python libraries:
+Later in this learning path, we'll use three Python libraries:
 
 - Matplotlib
 - NumPy

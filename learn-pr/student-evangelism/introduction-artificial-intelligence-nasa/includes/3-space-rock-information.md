@@ -21,19 +21,26 @@ Highland rock is lighter than basalt rock because basalt is made of heavier elem
 
 :::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="A photo of a piece of highland rock on a transparent background." loc-scope="Azure":::
 
-:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="A photo of a piece of highland rock on a flat surface. The rock is positioned next to a ruler. The ruler shows the approximate size for the rock as three and one-half inches. Another numerical measurement on the ruler reads zero apostrophe six one nine zero nine." loc-scope="Azure":::
+:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="A photo of a piece of highland rock on a flat surface. The rock is positioned next to a ruler. The ruler shows the approximate size for the rock as three and one-half inches. Another numerical measurement on the ruler reads zero apostrophe 6 1 9 0 9." loc-scope="Azure":::
 
 
 ## Exercise: Classify a rock
 
 Take a careful look at the sample images for the different rock types shown in this unit. Do you think you could classify a new rock that astronauts gathered from the Moon?
 
-> What type of rock do you think is shown in this picture?<br>
-> <br>
-> :::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="A photo of a rock on a flat surface. The rock is positioned next to a ruler. The ruler shows the approximate size for the rock as four inches. Another numerical measurement on the ruler reads one zero zero four four comma five four. A small cube next to the rock has the label T one." loc-scope="Azure":::
-> <br>
-> The new rock is a **basalt rock**! Did you get it right?
+_**What type of rock do you think is shown in this picture?**_
 
-Did you notice that it can be difficult to classify this rock because it looks both like highland and basalt? 
+:::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="A photo of a rock on a flat surface. The rock is positioned next to a ruler. The ruler shows the approximate size for the rock as 4 inches. Another numerical measurement on the ruler reads 1 0 0 4 4 comma 5 4. A small cube next to the rock has the label T one." loc-scope="Azure":::
 
-This exercise shows how artificial intelligence can assist humans in their research. Computers are great at finding the smaller details that the human eye can miss. 
+<details>
+<summary><b><i>Click to see the answer</i></b></summary>
+
+<br>
+<i>The new rock is a <b>basalt rock</b>!</i>
+
+</details>
+<br>
+
+Did you notice it can be difficult to classify this rock because it looks _both_ like highland rock and basalt rock?
+
+This exercise shows how artificial intelligence can assist humans in their research. Computers are great at finding the smaller details that are easily missed by the human eye. 
