@@ -17,7 +17,7 @@ The encryption keys used by ADE can be stored in Azure Key Vault. Azure Key Vaul
 
 You can configure and manage your key vault with:
 
-#### Powershell
+#### PowerShell
 
 ```powershell
 New-AzKeyVault -Location <location> `
