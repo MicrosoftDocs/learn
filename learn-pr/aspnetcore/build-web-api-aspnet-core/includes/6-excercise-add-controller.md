@@ -98,9 +98,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Build and test the controller
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
-
-1. Start the web API by running the following command:
+1. Build and start the web API by running the following command:
 
     ```dotnetcli
     dotnet run
@@ -158,7 +156,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   The following command will make a `GET` request similar and return a list of all pizza in `json`:
 
   ```dotnetcli
-    http://localhost:5000/Pizza> get
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 21:55:53 GMT
@@ -169,13 +166,11 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
         {
             "id": 1,
             "name": "Classic Italian",
-            "size": 0,
             "isGlutenFree": false
         },
         {
             "id": 2,
             "name": "Veggie",
-            "size": 0,
             "isGlutenFree": true
         }
     ]
@@ -190,7 +185,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     This will return the `Classic Italian` with the following output:
 
     ```dotnetcli
-    http://localhost:5000/Pizza> get 1
     HTTP/1.1 200 OK
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 21:57:57 GMT
@@ -200,7 +194,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     {
         "id": 1,
         "name": "Classic Italian",
-        "size": 0,
         "isGlutenFree": false
     }
     ```
@@ -214,7 +207,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     This will return a `404 Not Found` error with the following output:
 
     ```dotnetcli
-    http://localhost:5000/Pizza> get 5
     HTTP/1.1 404 Not Found
     Content-Type: application/problem+json; charset=utf-8
     Date: Fri, 02 Apr 2021 22:03:06 GMT
@@ -228,12 +220,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
         "traceId": "00-ec263e401ec554b6a2f3e216a1d1fac5-4b40b8023d56762c-00"
     }
     ```
-
-1. Quit current HttpRepl session by using the following command:
-
-  ```dotnetcli
-  exit
-  ```
 
 1. Return to the `dotnet` terminal in the dropdown list in Visual Studio Code and shut down the web API pressing `CTRL+C` on your keyboard.
 

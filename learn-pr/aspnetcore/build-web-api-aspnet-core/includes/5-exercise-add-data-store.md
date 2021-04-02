@@ -86,11 +86,11 @@ A type of class called a *model* is needed to represent a pizza in inventory. Th
 
             public static void Update(Pizza pizza)
             {
-                var pizzaToUpdate = Get(pizza.Id);
-                if(pizzaToUpdate == null)
+                var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
+                if(index == -1)
                     return;
                 
-                pizzaToUpdate = pizza;
+                Pizzas[index] = pizza;
             }
         }
     }

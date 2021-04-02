@@ -74,6 +74,8 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     > [!IMPORTANT]
     > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As we make changes to the code we will need to stop the web API by pressing `CTRL+C` on the keybaord and re-running the `dotnet run` command.
 
+    In the future we will use only the `dotnet run` command as this command also will build our project if anything has changed.
+
 1. Open a web browser and navigate to:
 
     ```bash
@@ -157,7 +159,6 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
   The following command will make a `GET` request similar to navigating to the endpoint in the browser:
 
   ```dotnetcli
-  http://localhost:5000/WeatherForecast> get
   HTTP/1.1 200 OK
   Content-Type: application/json; charset=utf-8
   Date: Fri, 02 Apr 2021 17:31:43 GMT
