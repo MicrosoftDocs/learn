@@ -56,7 +56,7 @@ quiz:
     - content: "GitLab"
       isCorrect: false
       explanation: "Incorrect. This is one of the options but not the only tool supported."
-    - content: "Github Actions"
+    - content: "GitHub Actions"
       isCorrect: false
       explanation: "Incorrect. This is one of the options but not the only tool supported."
     - content: "Azure Pipelines"

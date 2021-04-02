@@ -295,9 +295,9 @@ In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot a
 
 ::: zone pivot="azure-devops"
 
-## Setup your application name and Azure resource group
+## Set up your application name and Azure resource group
 
-In your Github repository, edit your Azure resource names by doing the following action:
+In your GitHub repository, edit your Azure resource names by doing the following action:
 
 1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
 
@@ -326,7 +326,7 @@ In your Github repository, edit your Azure resource names by doing the following
 ## Create an Azure Pipeline to provision your Terraform resources
 
 In our Azure DevOps project, we'll create two separate pipelines for provisioning and build-and-deploy.
-The provisioning pipeline creates the azure resources that will be released via the build-and-deploy  pipeline at a later point.
+The provisioning pipeline creates the Azure resources that will be released via the build-and-deploy pipeline at a later point.
 
 Let's create the first provisioning Pipeline:
 
@@ -375,7 +375,7 @@ After setting up your project and connection to Azure, you'll need to create an 
 In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
 
 1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
-1. If prompted to authorize GitHub access, enter your Github Credentials and approve the access for Azure Pipelines with the requested privileges.
+1. If prompted to authorize GitHub access, enter your GitHub Credentials and approve the access for Azure Pipelines with the requested privileges.
 1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
 1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
 1. In the path, select "/azuredevops/provision.yml"
@@ -439,7 +439,7 @@ Under Jobs, trace the build process through each of the steps.
 
 As your pipeline runs, watch as your first Terraform **init** stage, and then your second **apply** stage, go from blue (running) to green (completed). You can select the stages to watch your pipeline in action.
 
-![Screenshot displaying the new Azure Pipeline run.](../media/4-pipelinerun.png)
+![Screenshot displaying the new Azure Pipeline run.](../media/4-pipeline-run.png)
 
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to know whether each build passes or fails.
