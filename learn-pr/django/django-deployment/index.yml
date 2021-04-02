@@ -25,7 +25,7 @@ prerequisites: |
   - Visual Studio Code
   - Git
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - intermediate
 roles:

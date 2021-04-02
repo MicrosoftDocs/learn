@@ -11,6 +11,7 @@ In this module, you are introduced to GitHub Actions and workflows. In subsequen
 In this module, you will:
 
 - Learn what GitHub Actions are, the types of actions, and where to find them.
+- Identify the required components within a GitHub Actions workflow file.
 - Plan the automation of your software development life cycle with GitHub Actions workflows.
 - Create a container action and have it run in a workflow that is triggered by a push event to your GitHub repository.
 
