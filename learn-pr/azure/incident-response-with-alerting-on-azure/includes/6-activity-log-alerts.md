@@ -4,7 +4,7 @@ An activity log can also include alerts for Azure service health. A company can 
 
 As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how the resources can be used to improve your team's responsiveness and the stability of your systems.
 
-In this unit, you'll explore the two different kinds of active log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email or creating an IT Service Management (ITSM) support ticket.
+In this unit, you'll explore the two different kinds of active log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts. Actions might include sending an email, or creating an IT Service Management (ITSM) support ticket.
 
 ## When to use activity log alerts
 
@@ -36,7 +36,7 @@ Like the previous alerts, activity log alerts have their own attributes:
 
 ### Create a resource-specific log alert
 
-When you create your activity log alert, you select **Activity Log** for the signal type. You'll then see all the available alerts for the resource you select. The following screenshot shows all the administrative alerts for Azure VMs. In this example, an alert is triggered when a VM is powered off.
+When you create your activity log alert, you select **Activity Log** for the signal type. You'll then see all the available alerts for the resource you select. The following image shows all the administrative alerts for Azure VMs. In this example, an alert is triggered when a VM is powered off.
 
 Changing the monitor service will enable you to reduce the list of options. Selecting **Administrative** filters all the signals to show only admin-related signals.
 

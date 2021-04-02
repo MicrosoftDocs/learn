@@ -52,7 +52,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Setting | Value |
     |---------|---------|
     | **Notifications** |
-    | Notification type | **Email/SMS/Push/Voice** |
+    | Notification type | Select **Email/SMS message/Push/Voice** |
     | Name | **VM was deleted** |
 
 1. Select the **Edit** pencil icon. The **Email/SMS message/Push/Voice** pane appears.
@@ -65,7 +65,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Now that you've defined the rule, select **Create**.
 
-1. The **Create alert rule** pane reappears. In the **Actions** section, under **Alert rule details**, provide the following information.
+1. The **Create alert rule** pane reappears. Under **Alert rule details**, provide the following information.
 
     | Setting | Value |
     |---------|---------|
@@ -86,7 +86,7 @@ It can take up to five minutes for an activity log alert rule to become active. 
 
 To trigger the alert, you need to delete the virtual machine that you created earlier.
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual Machines**. This action shows a list of the virtual machines.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**. This action shows a list of the virtual machines.
 
 1. Select the **vm1** virtual machine.
 

@@ -1,10 +1,10 @@
 The shipping company that you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alert capabilities in Azure, you've chosen to use Azure metric alerts.
 
-In this exercise, you'll create a Linux virtual machine (VM). This VM will run an app that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you on high CPU usage.
+In this exercise, you'll create a Linux virtual machine (VM). This VM will run an app that runs the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you about high CPU usage.
 
 ## Create the VM
 
-This VM will run a specific configuration that stresses the CPU and generates the metric monitoring data needed to trigger an alert.
+This VM will run a specific configuration that stresses the CPU, and generates the metric monitoring data needed to trigger an alert.
 
 1. Start by creating the configuration script. To create the `cloud-init.txt` file with the configuration for the VM, run the following command in Azure Cloud Shell.
 
@@ -54,7 +54,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** pane, under the **Condition** section, select **Add condition**. The **Configure signal logic** pane appears.
 
-1. For **Signal type**, select **Metrics**. For **Monitor service**, select **All**.
+1. For **Signal type**, from the dropdown list, select **Metrics**. For **Monitor service**, select **All**.
 
 1. The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
@@ -64,10 +64,12 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     | Setting | Value |
     |---------|---------|
+    | **Alert logic** |
     | Threshold | Static |
     | Operator | Greater than |
     | Aggregation type | Maximum |
     | Threshold value | 90 |
+    | **Evaluated based on** |
     | Aggregation granularity (Period) | 1 minute |
     | Frequency of evaluation | Every 1 Minute |
 
@@ -97,7 +99,7 @@ You can set up metric alerts by using the CLI. This process can be quicker compa
 
 Let's create a new metric alert similar to the one you set up in the Azure portal.
 
-1. Run this command in Cloud Shell to obtain the resource ID of the virtual machine previously created.
+1. Run the following command in Cloud Shell to obtain the resource ID of the virtual machine previously created.
 
     ```bash
     VMID=$(az vm show \
@@ -107,7 +109,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
             --output tsv)
     ```
 
-1. Run this command to create a new metric alert that will be triggered when the VM CPU is greater than 80 percent.
+1. Run the following command to create a new metric alert that will be triggered when the VM CPU is greater than 80 percent.
 
     ```azurecli
     az monitor metrics alert create \
@@ -123,7 +125,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
 ## View your metric alerts in Azure Monitor
 
-In the example, you set up an Ubuntu VM and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
+In the example, you set up an Ubuntu VM, and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
 
 It might take 10 minutes before you see the alerts show up in your portal.
 
@@ -135,6 +137,6 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
     ![Image that shows the alert summary page](../media/4-alert-summary-page.png)
 
-1. You configured your metric alerts with a severity of 2 and 3. Select one of the alerts to view the severity level.
+1. You configured your metric alerts with severities of 2 and 3. Select one of the alerts to view the severity level.
 
-1. Selecting one of the alerts shows the details on the alert.
+    Selecting one of the alerts shows the details on the alert.

@@ -21,8 +21,6 @@ You'll learn about the three signal types that you can use to monitor your envir
 
 ## Composition of an alert rule
 
-![Image of the "Create rule" page for Azure Monitor in the portal](../media/2-creating-an-alert.png)
-
 Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
 - **RESOURCE**
@@ -42,6 +40,8 @@ Every alert or notification available in Azure Monitor is the product of a rule.
     - **3**: Informational
     - **4**: Verbose
 
+![Image of the "Create rule" page for Azure Monitor in the portal](../media/2-creating-an-alert.png)  
+
 ## Scope of alert rules
 
 You can get monitoring data from across most of the Azure services, and report on it by using the Azure Monitor pipeline. In the Azure Monitor pipeline, you can create alert rules for these items and more:
@@ -59,7 +59,7 @@ The following alert capabilities aren't yet available for the generation of moni
 
 ## Manage alert rules
 
-Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules and enable or disable them, as needed.
+Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules, and enable or disable them, as needed.
 
 As an Azure solution architect, you would use Azure Monitor to enable tightly-focused and specific alerts before any application change. You would then disable the alerts after a successful deployment.
 
@@ -75,8 +75,8 @@ By default, the alert page shows a summary of all alerts. Note that the view doe
 
 You control the alert state to manage and specify where you are in the alert resolution process. Currently, there are three states:
 
-- Every new alert has an alert state of **New**. This state means that the issue has been detected but not yet reviewed.
-- After an admin has reviewed the alert and is working on it, the alert state changes to **Acknowledged**.
+- Every new alert has an alert state of **New**. This state means that the issue has been detected, but not yet reviewed.
+- After an admin has reviewed the alert, and is working on it, the alert state changes to **Acknowledged**.
 - When the issue is resolved, the alert state is set to **Closed**.
 
 ### Filter alerts
