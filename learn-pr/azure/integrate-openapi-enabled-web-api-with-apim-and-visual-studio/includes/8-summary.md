@@ -21,5 +21,5 @@ To sum up, this module has covered the following topics:
 ## Learn More ##
 
 * [Getting Started with Swashbuckle](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle)
-* [Deploy ASP.NET Core Apps to Azure App Service](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-5.0&tabs=visual-studio)
-* [Publish an ASP.NET Core Web API to Azure API Management with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-api-management-using-vs?view=aspnetcore-5.0)
+* [Deploy ASP.NET Core Apps to Azure App Service](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-apps/)
+* [Publish an ASP.NET Core Web API to Azure API Management with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-api-management-using-vs)
