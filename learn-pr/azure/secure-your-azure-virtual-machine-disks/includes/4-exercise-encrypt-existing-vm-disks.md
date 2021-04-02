@@ -103,7 +103,7 @@ To create an Azure Key Vault, we need to enable the service in our subscription.
 > [!TIP]
 > Depending on your subscription, you might need to enable the **Microsoft.KeyVault** provider with the `Register-AzResourceProvider` cmdlet. This is not necessary in the Azure sandbox subscription.
 
-1. Decide on a name for your new key vault. It must be unique and can be between 3 and 24 characters, composed of numbers, letters, and and dashes. Try adding some random numbers to the end, replacing the "1234" below.
+1. Decide on a name for your new key vault. It must be unique and can be between 3 and 24 characters, composed of numbers, letters, and dashes. Try adding some random numbers to the end, replacing the "1234" below.
 
     ```powershell
     $keyVaultName = "mvmdsk-kv-1234"
