@@ -14,13 +14,13 @@ Bicep templates can be deployed manually by a human, or by some sort of automate
 You can use _outputs_ for these scenarios. To define an output in a Bicep template, use the `output` keyword like this:
 
 ```bicep
-output appName string = appName
+output appServiceAppName string = appServiceAppName
 ```
 
 The output definition includes a few key parts:
 
 - The `output` keyword tells Bicep that you're defining an output.
-- `appName` is the name of the output. When someone executes the template successfully, the output values will include the name you specified so they can access the values they're expecting.
+- `appServiceAppName` is the name of the output. When someone executes the template successfully, the output values will include the name you specified so they can access the values they're expecting.
 - `string` is the type of the output. Bicep outputs support the same types as parameters.
 - A value must be specified for each output. Unlike parameters, outputs always need to have values. Output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file.
 

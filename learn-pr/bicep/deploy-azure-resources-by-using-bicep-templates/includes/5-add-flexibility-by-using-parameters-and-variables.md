@@ -53,7 +53,7 @@ param appServiceAppName string = 'toy-product-launch-1'
 
 ### Use parameter values in the template
 
-Once you've declared a variable, you can refer to it within the rest of the template. Let's see how you can use your new parameter within the resource definition:
+Once you've declared a parameter, you can refer to it within the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
 :::code language="bicep" source="code/5-parameter-value.bicep" highlight="2":::
 

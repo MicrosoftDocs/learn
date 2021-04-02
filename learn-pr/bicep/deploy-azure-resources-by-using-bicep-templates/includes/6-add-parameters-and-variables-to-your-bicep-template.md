@@ -26,7 +26,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    var appServicePlanName = 'ToyLaunchPlan'
    ```
 
-   Notice that you're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define the variable and default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice that you're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
    Also notice that you're using a variable for the App Service plan name, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, while App Service plans only need to be unique within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as they're all going to be deployed into different resource groups.
 
