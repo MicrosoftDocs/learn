@@ -77,7 +77,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
         $ContainsApplicationFiles = "$((Get-ChildItem $Path).Extension | Sort-Object -Unique)" -match  '\.js|\.html|\.css'
         
         If ( -Not $ContainsApplicationFiles) {
-          Throw "Not a webapp"
+          Throw "Not a web app"
         } Else {
           Write-Host "Source files look good, continuing"
         }
@@ -87,42 +87,42 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
      }
    ```
 
-   The code above first check if the parameter `$PathIsWebApp` was provided at execution time. If so, the code continues to get a list of file extensions from the directory pointed to by `$Path`. In your case, if you run that part of the code again the _webapp_ directory the code:
+   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code again on the _webapp_ directory, the following code will print a list if items:
 
    ```powershell
    (Get-ChildItem $Path).Extension | Sort-Object -Unique
    ```
 
-   will produce a list consisting of two items:
+   Here's the output:
 
    ```output
    .js
    .html
    ```
 
-   In the full statement, the `-match` operator is added. The `-match` operator expects a Regular Expression pattern. In your case that expression stated, does any of the file extensions _match_ either `.html`, `.js` or `.css`. The result of the statement is saved to the variable `$ContainsApplicationFiles`.
+   In the full statement, we're using the `-match` operator. The `-match` operator expects a regular expression pattern. In this case, the expression states "do any of the file extensions match `.html`, `.js`, or `.css`?" The result of the statement is saved to the variable `$ContainsApplicationFiles`.
 
    Then the `If` block checks whether the `$ContainsApplicationFiles` variable is `True` or `False`. At this point, the code can take two paths:
 
-   - **The source directory is a webapp**. If that was the case, the script writes out **Source files looks good, continuing**.
-   - **The source directory is not a webapp**. If that isn't the case, then the script _throws_ an error stating **"Not a webapp"**. The error ends up being caught in a `Catch` block and the script shuts down, as you rethrow the error with an improved error text.
+   - **If the source directory is for a web app**, the script writes out "Source files look good, continuing."
+   - **If the source directory isn't for a web app**, the script throws an error that states "Not a web app." The error is caught in a `Catch` block. The script stops, and you rethrow the error with an improved error message.
 
-1. Try out the script by providing the switch `$PathIsWebApp`, like so:
+1. Test the script by providing the switch `$PathIsWebApp`, like so:
 
    > [!NOTE]
-   > Before you run the script, ensure there are no _.zip_ files present created when running previous exercises in this module. By running `Remove-Item *zip`
+   > Before you run the script, make there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './webapp'
    ```
 
-   The script should output text similar to:
+   The script should print output that looks similar to this text:
 
    ```output
    Source files looks good, continuing
    Created backup at ./backup-2021-01-21.zip
    ```
 
-1. Create a directory _python-app_ and create a file within called _script.py_:
+1. Create a directory named _python-app_. In the new directory, create a file called _script.py_:
 
    ```bash
    mkdir python-app
@@ -142,18 +142,18 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    -| Backup.ps1
    ```
 
-1. Run the script again, but this time change the `-Path` value to point to **./python-app**:
+1. Run the script again, but this time change the `-Path` value to point to `./python-app`:
 
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './python-app'
    ```  
 
-   Your script should now say:
+   Your script should now print this text:
 
    ```output
-   No backup created due to: Not a webapp
+   No backup created due to: Not a web app
    ```
 
-   The text means that the check failed, and it should, there was no files in there matching `.html`, `.js`, or `.css`. Your code raised an exception that was caught by your `Catch` block and the script excited early.
+   The output indicates that the check failed. It should have, because there are no files in the directory that have an .html, .js, or .css extension. Your code raised an exception that was caught by your `Catch` block, and the script stopped early.
 
-   Congrats! You've managed to implement a business-specific requirement.
+   Congratulations! You've implemented a business requirement.
