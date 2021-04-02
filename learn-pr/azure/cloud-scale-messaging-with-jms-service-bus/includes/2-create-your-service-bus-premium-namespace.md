@@ -15,7 +15,7 @@ Some common messaging scenarios are:
 * **Messaging**: Transfer business data, such as sales or purchase orders, journals, or inventory movements.
 * **Decouple applications**: Improve reliability and scalability of applications and services. Producer and consumer don't have to be online or readily available at the same time. The load is leveled such that traffic spikes don't overtax a service.
 * **Load balancing**: Allow for multiple competing consumers to read from a queue at the same time, each safely obtaining exclusive ownership to specific messages.
-* **Topics and subscriptions**. Enable 1:n relationships between publishers and subscribers, which allows subscribers to select particular messages from a published message stream.
+* **Topics and subscriptions**: Enable 1:n relationships between publishers and subscribers, which allows subscribers to select particular messages from a published message stream.
 * **Transactions**: Do several operations, all in the scope of an atomic transaction.
 * **Message sessions**: Implement high-scale coordination of workflows and multiplexed transfers that require strict message ordering or message deferral.
 

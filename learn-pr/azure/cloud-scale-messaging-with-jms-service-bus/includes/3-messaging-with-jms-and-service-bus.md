@@ -4,8 +4,8 @@ While your Azure Service Bus namespace is being created, let's have a look at wh
 
 JMS is an application programming interface that acts as a messaging pseudo-standard for Java and Spring application deployments. It allows applications to perform the following operations:
 
-* **Management operations**. Create, read, update, and delete queues, topics, and subscriptions.
-* **Data operations**. Create, send, read, and receive and delete messages.
+* **Management operations**: Create, read, update, and delete queues, topics, and subscriptions.
+* **Data operations**: Create, send, read, and receive and delete messages.
 
 JMS API enables applications to interface with enterprise messaging brokers, much like Service Bus, in an asynchronous manner.
 
