@@ -29,7 +29,7 @@ Highland rock is lighter than basalt rock because basalt is made of heavier elem
 Take a careful look at the sample images for the different rock types shown in this unit. Do you think you could classify a new rock that astronauts recently gathered from the Moon?
 
 > [!div class="alert is-tip"]
-> ### What type of rock is shown in this picture?
+> **What type of rock is shown in this picture?**
 >
 > :::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="A photo of a rock on a flat surface. The rock is positioned next to a ruler. The ruler shows the approximate size for the rock as 4 inches. Another numerical measurement on the ruler reads 1 0 0 4 4 comma 5 4. A small cube next to the rock has the label T one." loc-scope="Azure":::
 > 
@@ -37,7 +37,7 @@ Take a careful look at the sample images for the different rock types shown in t
 > <details>
 > <summary><b>Show answer</b></summary>
 > <br>
-> <i>This picture shows a basalt rock.</i>
+> &nbsp;&nbsp;&nbsp;&nbsp;<i>This picture shows a <b>basalt rock</b>.</i>
 > 
 > </details>
 >
