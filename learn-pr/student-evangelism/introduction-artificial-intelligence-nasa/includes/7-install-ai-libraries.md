@@ -6,7 +6,7 @@ In this section, we'll install the libraries that you'll need to build your AI m
 > Be sure to read the entire topic for the complete download instructions for this project.
 
 
-## Download Anaconda
+### Download Anaconda
 
 Follow these steps to download and install Anaconda.
 
@@ -34,7 +34,7 @@ After installation complete, the application is available on your computer:
 - On a Mac, the **Anaconda prompt** runs in the computer Terminal.
 
 
-## Create an environment with AI libraries
+### Use Anaconda to install AI libraries
 
 Follow these steps to create the environment.
 
@@ -57,7 +57,7 @@ Follow these steps to create the environment.
 The new environment is ready to use, but we need to add one more library through a separate install command.
 
 
-## Install torchvision
+### Install torchvision package
 
 Follow these steps to install the torchvision package.
 
@@ -70,7 +70,7 @@ Follow these steps to install the torchvision package.
 1. When you're prompted to install the package, enter Y, and then press Enter.
 
 
-## Create a new folder and Jupyter Notebook file
+### Create project folder and Jupyter Notebook file
 
 Now you have an environment you can use for the rest of the learning path. The last step is to create a project folder for your source code files.
 
