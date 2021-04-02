@@ -40,19 +40,19 @@ When you create your activity log alert, you select **Activity Log** for the sig
 
 Changing the monitor service will enable you to reduce the list of options. Selecting **Administrative** filters all the signals to show only admin-related signals.
 
-![Screenshot of the signal logic for activity log alerts related to VMs](../media/6-example-activity-log-alert.png)
+![Screenshot of the signal logic for activity log alerts related to VMs.](../media/6-example-activity-log-alert.png)
 
 ### Create a service health alert
 
 Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, on the Azure portal, search for and select **Service Health**. Next, select **Health alerts**. After you select **Create service health alert**, the steps to create the alert are similar to the steps you've seen to create other alerts.
 
-![Screenshot that shows how to create a new service health alert](../media/6-service-health-alerts.png)
+![Screenshot that shows how to create a new service health alert.](../media/6-service-health-alerts.png)
 
 The only difference is that you no longer need to select a resource, because the alert is for a whole region in Azure. What you can select is the kind of health event that you want to be alerted on. It's possible to select service issues, planned maintenance, or health advisories, or to choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
 
 ## Perform actions when an alert happens
 
-![Screenshot of the robot icon used to represent actions when you're creating an alert](../media/6-actions.png)
+![Screenshot of the robot icon used to represent actions when you're creating an alert.](../media/6-actions.png)
 
 When any event is triggered, you can create an associated action in an action group. Action groups enable you to define actions that will be run. You can run one or more actions for each triggered alert.
 
