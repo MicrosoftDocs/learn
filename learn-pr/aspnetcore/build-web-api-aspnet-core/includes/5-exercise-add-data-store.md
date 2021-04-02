@@ -1,6 +1,6 @@
 Before we start to implement our web API for pizza, we need to have a data store that we can perform operations on. 
 
-A type of class called a *model* is needed to represent a pizza in inventory. The model contains properties that represent characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real world application, you would consider using a database using [Enity Framework Core](/ef/core) with SQL Server or Azure SQL Database.
+A type of class called a *model* is needed to represent a pizza in inventory. The model contains properties that represent characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real world application, you would consider using a database using [Entity Framework Core](/ef/core) with SQL Server or Azure SQL Database.
 
 ## Create a pizza model
 
