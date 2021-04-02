@@ -49,7 +49,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Imagine you work for a healthcare company who runs production workloads on a VMware platform. IT operations are spread between different offices. There are a few trends that have surfaced in recent months. Some locations have equipment nearing end of life, so hardware refresh decisions need to be made soon. Additionally, your company isn't able to get new infrastructure quickly enough to meet requests for hardware refreshes and new applications. The requisition process, approvals, and logistics can take at least 4 to 6 months, if not longer. One avenue your company has decided to move forward with involves migrating existing VMware workloads to Azure VMware Solution. By using Azure VMware Solution, your company doesn't have to change virtualization platforms or alter existing operational patterns. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
+    Imagine you work for a healthcare company that runs production workloads on a VMware platform.  Your company has decided to migrate existing VMware workloads to Azure VMware Solution (AVS). By using AVS, your company doesn't have to change virtualization platforms or alter existing operational patterns. You've planned for and deployed AVS. Now you need to migrate VM workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
 
 1. **Plan HCX deployment**
 
@@ -59,20 +59,20 @@ Identify the subtasks of *module title*
         - IP addresses (management network, vMotion network, uplink network, replication network).
         - VMware HCX migration types: bulk, cold, vMotion
 
-    **Knowledge check**
+    **Knowledge Check**
 
-    -  At a minimum, how many IPs do you need to identify on-premises for a network segment to use with VMware HCX?
-    
+    - At a minimum, how many IPs do you need to identify on-premises for a network segment to use with VMware HCX?
+
         - 3 IPs - false
         - 10 IPs - false
         - 2 IPs - true
-
+    
     - What version of vSphere on-premises is compatible with HCX 4.0, without needing another configuration?
 
         - vSphere 6.0 - true
         - vSphere 5.5 - false
         - vSphere 5.1 - false
-        
+
     - How many site connections does HCX Advanced support?
 
         - 4 - false
@@ -88,8 +88,6 @@ Identify the subtasks of *module title*
     - Fill in all required fields for template deployment.
     - Activate VMware HCX: log into HCX, enter key in licensing field, configure SSO/PSC, restart HCX appliance.
 
-    **Knowledge check**
-
     - Which account is used to access Azure VMware Solution HCX Manager?
 
         - Global Administrator - false
@@ -102,7 +100,7 @@ Identify the subtasks of *module title*
         - A NAT rule isn't configured. - false
         - The environment doesn't have open internet access or a proxy configured. - true
 
-1. **Configure VMware HCX**
+1. **Configure networking and compute profiles for VMware HCX**
     - Add site pairing.
     - Enter settings to connect to remote site over port 443.
     - Use the same account (cloudadmin@vsphere.local) to sign in and connect the sites.
@@ -114,6 +112,8 @@ Identify the subtasks of *module title*
     - Create a compute profile in HCX:
         - Select clusters, datastores, management network profile, uplink network profile, vMotion network profile, vSphere replication network profile, and distributed switches for network extensions.
         - Review all connection rules and select continue and then select finish to create the compute profile.
+
+1. **Create service mesh for VMware HCX**
     - Create a service mesh:
         - Review pre-populated sites, select source compute profile, remote compute profile, review services that will be enabled, then select continue.
         - In Advanced Configuration - Override Uplink Network profiles, select continue (uplink network profiles connect to the network through which the remote site's appliances can be reached).
@@ -138,21 +138,21 @@ Identify the subtasks of *module title*
     - Let's say you have vSphere 5.5 deployed within your environment. What would you have to do to deploy HCX within your environment?
 
         - You can't deploy HCX to conduct any migrations into Azure VMware Solution. - false
-        - Deploy and downgrade the HCX connector appliance on-premises to get support for the migration. The downgraded HCX connector appliance then only runs for the next six months. - true
+        - Deploy and downgrade the HCX connector appliance on-premises to get support for the migration. - true
         - Deploy Azure VMware Solution in a different region. - false
-     
+
     - You find you can't successfully establish an HCX site pairing. What might be the issue?
-    
+
         - You'll need to redownload the HCX Connector OVA file. - false
         - You'll need to redeploy the HCX Connector OVA file on-premises. - false
         - Your VMware HCX Connector can't route to your HCX Cloud Manager IP over port 443. - true
-    
+
     - If the VM you're trying to migrate is powered off, which migration is set by default?
-    
+
         - Cold - true
         - Live - false
         - Bulk - false
-    
+
     - In order for VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?
 
         - 3389 - false
@@ -171,11 +171,9 @@ Identify the subtasks of *module title*
 
 ## Notes
 
-[Azure VMware Solution](https://azure.microsoft.com/services/azure-vmware/)
-
 [Azure VMware Solution documentation](https://docs.microsoft.com/azure/azure-vmware/)
 
-[Azure VMware Solution - VMware documentation](https://cloud.vmware.com/azure-vmware-solution)
+[Azure VMware Solution VMware documentation](https://cloud.vmware.com/azure-vmware-solution)
 
 [VMware HCX documentation](https://docs.vmware.com/en/VMware-HCX/index.html)
 
