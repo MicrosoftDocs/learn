@@ -18,7 +18,7 @@ Follow these steps to download and install Anaconda.
 
    Wait for the download to finish.
 
-1. To start the installation, select the executable file in the lower-left corner.
+1. To start the installation, select the executable file in the lower-left corner of your browser. (You can also open the download folder and run the executable from that location.)
 
    > [!NOTE]
    > The following example shows a computer running Windows 10 with the Microsoft Edge browser.
@@ -28,14 +28,17 @@ Follow these steps to download and install Anaconda.
 
 1. Complete the steps to install Anaconda on your computer.
 
-After installation is done, the application is available on your computer from the **anaconda prompt**. If you're using Windows, you run the application in the Command prompt. On a Mac, you run the application in the computer Terminal.
+After installation complete, the application is available on your computer:
+
+- If you're using Windows, run the **Anaconda prompt** from the **Start** menu.
+- On a Mac, the **Anaconda prompt** runs in the computer Terminal.
 
 
 ## Create an environment with AI libraries
 
 Follow these steps to create the environment.
 
-1. Start the Anaconda environment from the Command prompt (Windows) or Terminal (Mac):
+1. Start the Anaconda environment:
 
    ```console
    conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow
@@ -51,7 +54,7 @@ Follow these steps to create the environment.
    conda activate myenv
    ```
 
-The new environment is ready to use. We need to add one more library through a separate install command.
+The new environment is ready to use, but we need to add one more library through a separate install command.
 
 
 ## Install torchvision
@@ -74,6 +77,9 @@ Now you have an environment you can use for the rest of the learning path. The l
 1. Choose an easily accessible location on your computer, and create a folder named **ClassifySpaceRocks**.
 
 1. Open Visual Studio Code, and then open the folder you created.
+
+   > [!Note]
+   > If you were running Visual Studio Code before your finished the install and set up of your Anaconda environment, you'll need to restart Visual Studio Code so the app can detect Jupyter Notebook.
 
 1. Create a Jupyter Notebook file named **ClassifySpaceRockProgram**.
 

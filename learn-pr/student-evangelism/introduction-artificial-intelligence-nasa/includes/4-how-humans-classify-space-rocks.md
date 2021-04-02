@@ -1,6 +1,6 @@
-To build an AI system to detect rock types, we first need to consider how humans classify things.
+To build an AI model to detect rock types, we need to consider how humans classify things.
 
-A common thought process for examining and classifying data follows these steps.
+In this section, we'll outline a common thought process that humans follow for examining and classifying data. Later, we'll use these steps to form a model for our computer to do the same tasks.
 
 
 ### Step 0: Get data
@@ -30,7 +30,7 @@ The following image lists some features we can extract from a photo of a motorcy
 
 Next, we try to find the relationships between the features and the type of rock that's shown in a photo of a rock.
 
-In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks usually are highland rocks and that the texture of basalt rocks is more jagged. These associations and the links between them are demonstrated in the following image:
+In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. We determine that lighter rocks usually are highland rocks and that the texture of basalt rocks is more jagged. These associations and the links between them are demonstrated in the following image:
 
 :::image type="content" source="../media/links.png" alt-text="A diagram that shows four sets of nine black dots. Different patterns of colored lines connect the dots in each set to demonstrate the dynamic associations." loc-scope="Azure":::
 
