@@ -174,6 +174,12 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
   ]
   ```
 
+1. Quit current HttpRepl session by using the following command:
+
+  ```dotnetcli
+  exit
+  ```
+
 1. Return to the `dotnet` terminal in the dropdown list in Visual Studio Code and shut down the web API pressing `CTRL+C` on your keyboard.
 
 Now that the web API has been created, let's modify it to meet the needs of our pizza web API.
