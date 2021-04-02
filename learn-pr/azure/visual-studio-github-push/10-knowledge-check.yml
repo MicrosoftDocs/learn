@@ -17,9 +17,9 @@ quiz:
     - content: Enter your GitHub username and password in the command line.
       isCorrect: false
       explanation: Your GitHub credentials aren't enough to sign in. You also need to generate and manage SSH keys for your account.
-    - content: Use the Visual Studio Account Settings window.
+    - content: Use the Visual Studio **Account Settings** window.
       isCorrect: true
-      explanation: The Visual Studio Account Settings window allows you to store a GitHub account in your keychain, and it handles all the authentication for you.
+      explanation: The Visual Studio **Account Settings** window allows you to store a GitHub account in your keychain, and it handles all the authentication for you.
     - content: Generate and store SSH keys from the GitHub website. 
       isCorrect: false
       explanation: Manually generating SSH keys is a tedious and multiple-step process that you can automate by using Visual Studio.

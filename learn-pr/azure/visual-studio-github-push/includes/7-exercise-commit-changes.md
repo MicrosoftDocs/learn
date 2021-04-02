@@ -14,7 +14,7 @@ One of the key aspects of any Git workflow is making commits to your branch. Com
 
     :::image type="content" source="../media/7-stage-changes.png" alt-text="Screenshot of the Git Changes window, with the stage button highlighted.":::
 
-1. Now that the changes are staged, enter a commit message in the text box that currently says **Update output message**, and then select **Commit staged**.
+1. Now that the changes are staged, enter a commit message in the text box that currently says **Update output message**, and then select **Commit Staged**.
 
     :::image type="content" source="../media/7-commit-staged.png" alt-text="Screenshot of the Git Changes window, with the commit message and commit button highlighted.":::
 

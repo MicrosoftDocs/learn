@@ -14,7 +14,7 @@ In this exercise, you'll add a GitHub account to your Visual Studio keychain and
 
     :::image type="content" source="../media/3-account-settings-button.png" alt-text="Screenshot of the Visual Studio button for account settings.":::
 
-4. In the **Account Settings** window, select the **Add** button next to **All Accounts**. Select **GitHub**.
+4. In the **Account Settings** window, select the **Add** button next to **All Accounts**. Then select **GitHub**.
 
     :::image type="content" source="../media/3-github-account-button.png" alt-text="Screenshot of the button for adding a GitHub account.":::
 

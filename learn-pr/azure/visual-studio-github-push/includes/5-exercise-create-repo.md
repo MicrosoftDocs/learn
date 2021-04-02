@@ -4,11 +4,11 @@ Visual Studio can help you create a local Git repository and push it to GitHub.c
 
 The easiest way to start coding in Visual Studio is with a project template. Visual Studio project templates provide the code scaffolding under Visual Studio solutions so that you can build and run your project easily. Here we'll create a .NET console application project in C#.
 
-1. In Visual Studio, go to **File** > **New** > **Project** to open the **Create a new project** dialog.
+1. In Visual Studio, go to **File** > **New** > **Project**.
 
     :::image type="content" source="../media/5-create-new-project-menu.png" alt-text="Screenshot of the Visual Studio File menu and the selections for creating a project.":::
 
-2. Enter **console application** in the search box, and select **C# Console Application** from the search results. Then select **Next**. 
+2. In the **Create a new project** dialog, enter **console application** in the search box, and select **C# Console Application** from the search results. Then select **Next**. 
 
     :::image type="content" source="../media/5-create-a-new-project-dialog.png" alt-text="Screenshot of the dialog for creating a project, with the search box and Next button highlighted.":::
 
@@ -60,11 +60,11 @@ You can validate the successful creation of your repository locally and remotely
 
     :::image type="content" source="../media/5-git-repo-window.png" alt-text="Screenshot of the Git Repository window with the master branch.":::
 
-3. Go to **Git** > **Manage Remotes** to open the **Settings** dialog. 
+3. Go to **Git** > **Manage Remotes**. 
 
     :::image type="content" source="../media/5-git-manage-remotes.png" alt-text="Screenshot of the Git menu with the Manage Remotes item highlighted.":::
 
-4. Visual Studio has added one remote to your repository under the name **origin**. The **origin** remote is the default remote that will be used for fetching, pulling, and pushing commits. You can also add multiple remotes here, if you use a repository that's forked from an upstream remote. Select **Edit**.
+4. The **Options** dialog shows that Visual Studio has added one remote to your repository under the name **origin**. The **origin** remote is the default remote that will be used for fetching, pulling, and pushing commits. You can also add multiple remotes here, if you use a repository that's forked from an upstream remote. Select **Edit**.
 
     :::image type="content" source="../media/5-remotes-settings.png" alt-text="Screenshot of the Remotes page in settings, with the Edit button highlighted.":::
 
