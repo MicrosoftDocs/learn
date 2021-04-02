@@ -88,7 +88,6 @@ Now that you have a complete module to deploy the App Service resources, you can
     ])
     param environmentType string
 
-    var appServicePlanName = 'ToyLaunchPlan'
     var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
     
     resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
