@@ -92,7 +92,7 @@ Four builds along with all their tests will produce quite a bit of log informati
 
 ```yml
 test:
-  runs-on: ubuntu-latest
+  runs-on: ${{ matrix.os }}
   strategy:
     matrix:
       os: [ubuntu-lastest, windows-2016]
@@ -125,7 +125,7 @@ In the following workflow snippet, notice that in the ```actions/upload-artifact
 
 ```yml
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
@@ -143,7 +143,7 @@ To download the artifact for testing, the build must have completed successfully
 ```yml
 test:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 ```
 
 In the following workflow snippet, you see we download the artifact. Now the test job can use the artifact for testing.
