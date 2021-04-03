@@ -216,6 +216,10 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Set-AzContext $context
     ```
 
+### Install the Bicep CLI
+
+Azure PowerShell doesn't include the tooling to understand Bicep files, so you need to [install the Bicep CLI](/azure/azure-resource-manager/templates/bicep-install?tabs=azure-powershell#install-manually).
+
 ### Set the default resource group
 
 When using Azure PowerShell, you can set the default resource group and omit the parameter from the rest of the Azure PowerShell commands in this exercise. Set this to the resource group created for you in the sandbox environment.
