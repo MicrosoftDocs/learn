@@ -11,7 +11,7 @@ metadata:
 title: Introduction to scripting in PowerShell
 summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.
 abstract: |
-  - Understand how to author and run scripts.
+  - Understand how to write and run scripts.
   - Use variables and parameters to make your scripts flexible.
   - Apply flow-control logic to make intelligent decisions.  
   - Add robustness to your scripts by adding error management.

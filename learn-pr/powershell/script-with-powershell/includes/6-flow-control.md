@@ -4,7 +4,7 @@ Let's examine these flow-control constructs to see what they can do:
 
 - **Sanitize input**. If you use parameters in a script, you need to ensure your parameters hold reasonable values so your script works as intended. Writing code to manage this process is called _sanitizing_ input.
 
-- **Control execution flow**. The previous technique is to ensure you get reasonable and correct input data. This one is more about deciding how to run code. The values set can determine which group of statements runs.
+- **Control execution flow**. The previous technique ensures you get reasonable and correct input data. This one is more about deciding how to run code. The values set can determine which group of statements runs.
 
 - **Iterate over data**. Sometimes your data takes the form of an array, which is a data structure that contains many items. For such data, you might need to examine each item and perform an operation for each one. Many constructs in PowerShell can help you with that process.
 
@@ -19,7 +19,7 @@ You can use an `If` construct to determine if an expression is `True` or `False`
 ```powershell
 If (<expression that evaluates to True or False>) 
 {
-  # Statement that runs only if the preceding expression is $True
+  # Statement that runs only if the preceding expression is $True.
 }
 ```
 
@@ -58,7 +58,7 @@ If ($Value -le 0)
 }
 ```
 
-Because we put the `Else` next to the ending brace for the `If`, we've created a joined construct that's works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
+Because we put the `Else` next to the ending brace for the `If`, we created a joined construct that's works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
 
 > [!NOTE]
 > You can use `Else` only if there's an `If` construct defined immediately above it.

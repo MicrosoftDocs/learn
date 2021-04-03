@@ -1,8 +1,8 @@
 PowerShell scripting is the process of writing a set of statements in the PowerShell language and storing those statements in a text file. Why would you do that? After you use PowerShell for a while, you find yourself repeating certain tasks, like producing log reports or managing users. When you've repeated something frequently, it's probably a good idea to automate it: to store it in such a way that makes it easy to reuse.
 
-The steps to automate your task usually include calls to cmdlets, functions, variables, and more. To store these steps, create a file that ends in _.ps1_ and save it. You'll then have a script that you can run.
+The steps to automate your task usually include calls to cmdlets, functions, variables, and more. To store these steps, you'll create a file that ends in _.ps1_ and save it. You'll then have a script that you can run.
 
-Before you start learning to script, lets get an overview of the features of the PowerShell scripting language:
+Before you start learning to script, let's get an overview of the features of the PowerShell scripting language:
 
 - **Variables**. You can use variables to store values. Variables can be used as arguments to commands, for example.
 - **Functions**. A function is a named list of statements. Functions can produce an output that can be displayed in the console or used as input for other commands, for example.
@@ -18,7 +18,7 @@ Before you start learning to script, lets get an overview of the features of the
 
 ## Run a script
 
-You need to be aware that some scripts aren't safe. If you find a script on the internet, you probably shouldn't run it on your computer unless you understand exactly what it does. Even with scripts you consider safe, there might be a risk. For example, imagine a script that cleans things up in a test environment. That script might be harmful in a production environment. You need to understand what a script does, whether it's authored by you, your colleague, or someone on the internet.
+You need to be aware that some scripts aren't safe. If you find a script on the internet, you probably shouldn't run it on your computer unless you understand exactly what it does. Even with scripts you consider safe, there might be a risk. For example, imagine a script that cleans things up in a test environment. That script might be harmful in a production environment. You need to understand what a script does, if it was written by you or by a colleague, or if you got it from the internet.
 
 PowerShell attempts to protect you from doing things unintentionally. Here are the two main ways it does that:
 
@@ -37,7 +37,7 @@ To create and run a script:
    Write-Host "The value of `$PI is $PI"
    ```
 
-1. Run it by invoking it by its name and path, like so:
+1. Run the script by invoking it by its name and path, like so:
 
    > [!NOTE]
    > Before you run the script, ensure the current shell is PowerShell. Alternatively, on Linux or macOS, you can put a shebang at the top of the script file to define PowerShell as the script interpreter.
@@ -49,7 +49,7 @@ To create and run a script:
 
 ### Execution policy
 
-You can manage the execution policy by using these cmdlets:
+You can manage execution policy by using these cmdlets:
 
 - `Get-ExecutionPolicy`. This cmdlet returns the current execution policy. On Linux and macOS, the value returned is `Unrestricted`. For these operating systems, you can't change the value. That limitation doesn't make Linux or Mac any less safe. Remember, an execution policy is a safety feature, not a security mechanism.
 
@@ -117,7 +117,7 @@ Scope rules help you understand what values are visible at a given point. They a
    $test = 'hi'
    ```
 
-   If you have a file Script.ps1 that contains the following content, it will print *hi* when the script runs:
+   If you have a *Script.ps1* file that contains the following content, it will print "hi" when the script runs:
 
    ```powershell
    Write-Host $test # Prints hi
@@ -133,7 +133,7 @@ A profile is a script that runs when PowerShell starts. You can use a profile to
 
 ### Profile types
 
-PowerShell supports several profile files. They can be applied at various levels, as you see here:
+PowerShell supports several profile files. You can apply them at various levels, as you see here:
 
 |Description               |Path                                                               |
 |--------------------------|-------------------------------------------------------------------|

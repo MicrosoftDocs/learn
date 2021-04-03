@@ -19,19 +19,19 @@ Inside the parentheses, you define your parameters, separating them with commas.
 Param (
   $Path
 )
-New-Item $Path # Creates a new file at $Path
+New-Item $Path # Creates a new file at $Path.
 Write-Host "File $Path was created"
 ```
 
-The script has a parameter `$Path` that's later used in the script to create a file. The script is now more flexible.
+The script has a `$Path` parameter that's later used in the script to create a file. The script is now more flexible.
 
 ### Use the parameter
 
 To call a script with a parameter, you need to provide a name and a value. Assume the above script is called `CreateFile.ps1`. You could call it like so:
 
 ```powershell
-./CreateFile.ps1 -Path './newfile.txt' # File ./newfile.txt was created
-./CreateFile.ps1 -Path './anotherfile.txt' # File ./anotherfile.txt was created
+./CreateFile.ps1 -Path './newfile.txt' # File ./newfile.txt was created.
+./CreateFile.ps1 -Path './anotherfile.txt' # File ./anotherfile.txt was created.
 ```
 
 Because you used a parameter, you don't need to change the script file when you want to call the file something else.
@@ -41,11 +41,11 @@ Because you used a parameter, you don't need to change the script file when you 
 
 ## Improve your parameters
 
-When you first create a script with parameters, you might remember exactly what the parameters are for and what values are reasonable for them. As time passes, you might forget those details. You might also want to give a script to a colleague. The solution to these problems is to be explicit, which makes your scripts easy to use. You want a script to fail early if it's passed unreasonable parameter values. Here are some things to consider when you define parameters:
+When you first create a script that uses parameters, you might remember exactly what the parameters are for and what values are reasonable for them. As time passes, you might forget those details. You might also want to give a script to a colleague. The solution to these problems is to be explicit, which makes your scripts easy to use. You want a script to fail early if it's passed unreasonable parameter values. Here are some things to consider when you define parameters:
 
 - **Is it mandatory?** Is the parameter optional or required?
 - **What values are allowed?** What values are reasonable?
-- **Does it accept more than one type of values** Does the parameter accept any type of value, like string, Boolean, integer, and object?
+- **Does it accept more than one type of value?** Does the parameter accept any type of value, like string, Boolean, integer, and object?
 - **Can the parameter rely on a default?** Would it be OK to omit the value altogether and rely on a default value instead?
 - **Can you further improve the user experience?** Can you be even clearer to your user by providing a Help message?
 
@@ -82,7 +82,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Write-Host "File created at path $Path"
    ```
 
-   If you run this script and omit a value for `$Path`, you end up in a dialog box that prompts for the value:
+   If you run this script and omit a value for `$Path`, you end up in a dialog that prompts for the value:
 
    ```output
    cmdlet CreateFile.ps1 at command pipeline position 1
@@ -103,10 +103,10 @@ There are a couple of approaches you can use to make your script safer. You can 
    Supply values for the following parameters:
    (Type !? for Help.)
    Path: !?  # You type !?
-   Please supply a valid path  # Your Help message
+   Please supply a valid path  # Your Help message.
    ```
 
-- **Assign a type**. If you assign a type to a parameter you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets, like so:
+- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets, like so:
 
    ```powershell
    Param(

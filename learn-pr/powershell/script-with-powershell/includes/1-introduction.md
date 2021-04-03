@@ -1,6 +1,6 @@
-In this module, you'll learn the basics of PowerShell scripting. Scripting is about automation. It's about storing steps that you do often in a file. By running files that contain your scripts, you can save time and reuse existing solutions. You can then use that time on something more valuable. 
+In this module, you'll learn the basics of PowerShell scripting. Scripting is about automation. It's about storing steps that you do often in a file. By running files that contain your scripts, you can save time and reuse existing solutions. You can then spend that time on something more valuable. 
 
-You'll learn some valuable constructs of the PowerShell language and how you can use them to create and run scripts.
+You'll learn some helpful constructs of the PowerShell language and how you can use them to create and run scripts.
 
 ## Learning objectives
 

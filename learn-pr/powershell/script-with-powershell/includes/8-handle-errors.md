@@ -4,7 +4,7 @@ Here are some factors to consider:
 
 - **How to handle the error**. Sometimes you get errors you can recover from. Sometimes it's better to stop the script. It's important to think about the kinds of errors that can happen and how to best manage them.
 
-- **How severe the error is**. There are various kinds of error messages. Some are more like warnings to the user that something isn't OK. Some are more severe, and the user really needs to pay attention. Your error-handing approach depends on the type of error. The approach could be anything from presenting a message to raising the severity level and potentially stopping the script.
+- **How severe the error is**. There are various kinds of error messages. Some are more like warnings to the user that something isn't OK. Some are more severe, and the user really needs to pay attention. Your error-handling approach depends on the type of error. The approach could be anything from presenting a message to raising the severity level and potentially stopping the script.
 
 ## Errors
 
@@ -12,7 +12,7 @@ Here are some factors to consider:
 
 There are two types of errors you can get when you run PowerShell:
 
-- **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error by using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at this point and no statements will run.
+- **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error by using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at that point and no statements will run.
 
    > [!NOTE] 
    > The `Trap` construct is outside the scope of this module. If you're interested, see [About Trap](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_trap?view=powershell-7.1&preserve-view=true).
@@ -47,7 +47,7 @@ There are three related constructs that can help you manage this type of error:
    }
    ```
 
-   The script tries to run a command that does some IO work. The first `Catch` catches a specific type of error: `[System.IO.IOException]`. The last `Catch` catches anything that's not a `[System.IO.IOException]`.
+   The script tries to run a command that does some I/O work. The first `Catch` catches a specific type of error: `[System.IO.IOException]`. The last `Catch` catches anything that's not a `[System.IO.IOException]`.
 
 - `Finally`. The statements in this block will run regardless of whether anything goes wrong. You probably won't use this block much, but it can be useful for cleaning up resources, for example. To use it, add it as the last block, like so:
 
@@ -89,7 +89,7 @@ Try {
 
 In some situations, you might want to cause an error:
 
-- **Non-terminating errors**. For this type of error, PowerShell just notifies you that something went wrong, using the `Write-Error` cmdlet, for example. The script continues to run. That might not be the behavior you want. To raise the severity of the error, you can use a parameter like `-ErrorAction` to cause an error that can be caught with `Try/Catch`, like so:
+- **Non-terminating errors**. For this type of error, PowerShell just notifies you that something went wrong, by using the `Write-Error` cmdlet, for example. The script continues to run. That might not be the behavior you want. To raise the severity of the error, you can use a parameter like `-ErrorAction` to cause an error that can be caught with `Try/Catch`, like so:
 
    ```powershell
    Try {
@@ -99,7 +99,7 @@ In some situations, you might want to cause an error:
    }
    ```
 
-   By using the `-ErrorAction` parameter and the value `Stop`, you can cause an error that can be caught by `Try-Catch`.
+   By using the `-ErrorAction` parameter and the value `Stop`, you can cause an error that can be caught by `Try/Catch`.
 
 - **Business rules**. You might have a situation where the code doesn't actually stop responding, but for business reasons you want it to. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might be that only certain paths are allowed or that the path needs to look a certain way. If the checks fail, it makes sense to _throw_ an error. In a situation like this one, you can use a `Throw` block, like so:
 

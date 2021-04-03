@@ -101,7 +101,7 @@ If you add parameters to your script, users can provide values when it runs. You
    rm backup-<current date as YYYYMMDD>.zip
    ```
 
-   You're removing this file to make sure you get a message about your `$Path` value not existing. Otherwise, you'd get a message about the zip file already existing, and the problem we're trying to fix would be hidden.
+   You're removing this file to make sure you get a message stating that your `$Path` value doesn't exist. Otherwise, you'd get a message about the zip file already existing, and the problem we're trying to fix would be hidden.
 
 1. Run your script without providing parameters. (The script will use default values for the parameters.)
 
@@ -116,7 +116,7 @@ If you add parameters to your script, users can provide values when it runs. You
    Created backup at ./backup-<YYYY-MM-DD>.zip
    ```
 
-   The script notifies you that it can't find the directory _./app_. Now it's time to provide a value to the `$Path` parameter and see the value of adding parameters to your script.
+   The script notifies you that it can't find the directory _./app_. Now it's time to provide a value to the `$Path` parameter and see the benefit of adding parameters to your script.
 
 1. Test your script by running it:
 
@@ -127,7 +127,7 @@ If you add parameters to your script, users can provide values when it runs. You
    You'll see a message similar to the one you got earlier:
 
    ```output
-   Created backup at ./backup<today's date as YYMMDD>.zip
+   Created backup at ./backup<current date as YYMMDD>.zip
    ```
 
    You can now use parameters if the directory you want to back up isn't called _./app_ or if you want to put the compressed file somewhere other than the current directory.

@@ -1,6 +1,6 @@
 In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-When you write scripts, they might work as intended as long as you type in _reasonable_ values. But if time passes or someone else runs the script, it's likely that someone will enter an unintended value or that some other precondition won't be met. To avoid situations like this, you should _sanitize_ your input. That is, you should add logic to your script to ensure it quits early if something is wrong and continues to run only if everything is fine.
+When you write scripts, they might work as intended as long as you type in reasonable values. But if time passes or someone else runs the script, it's likely that someone will enter an unintended value or that some other precondition won't be met. To avoid situations like this, you should _sanitize_ your input. That is, you should add logic to your script to ensure it quits early if something is wrong and continues to run only if everything is fine.
 
 > [!NOTE]
 > Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
@@ -84,7 +84,7 @@ As you know, the script will stop responding if `$Path` points to a directory th
     Created backup at ./backup-2021-01-19.zip 
     ```
 
-    If you run the script again, it will stop responding. It will notify you that the zip file already exists. Lets fix that problem. We'll add code to ensure the backup is created only if no other backup zip file from today exists.
+    If you run the script again, it will stop responding. It will notify you that the zip file already exists. Let's fix that problem. We'll add code to ensure the backup is created only if no other backup zip file from the current day exists.
 
 1. Replace the code in the file with this code:
 

@@ -1,6 +1,6 @@
 In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-In this exercise, you'll use a `Try/Catch` to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
+In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
 
 Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
@@ -110,7 +110,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 1. Test the script by providing the switch `$PathIsWebApp`, like so:
 
    > [!NOTE]
-   > Before you run the script, make there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
+   > Before you run the script, make sure there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './webapp'
    ```
