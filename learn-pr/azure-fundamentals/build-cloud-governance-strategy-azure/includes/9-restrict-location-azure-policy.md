@@ -39,9 +39,12 @@ For learning purposes, you use the same resource group name that you used in the
 Before you configure your location policy, let's take a brief look at some predefined policies. As an example, you'll look at policies that relate to Azure Compute services.
 
 1. From the Azure portal, at the top of the page, select **Home** to return to the start page.
-1. At the top of the page, enter **policy** in the search bar. Then select **Policy** from the list of results to access Azure Policy.
+
+1. At the top of the page, enter **policy** in the search bar. Then, select **Policy** from the list of results to access Azure Policy.
+
 1. Under **Authoring**, select **Definitions**.
-1. From the **Category** drop-down list, select only **Compute**.
+
+1. From the **Category** dropdown list, select only **Compute**.
 
     Notice that the **Allowed virtual machine SKUs** definition enables you to specify a set of virtual machine SKUs that your organization can deploy.
 
@@ -53,7 +56,7 @@ As an optional step, explore any other policies or categories that interest you.
 
 Here you configure the allowed location policy by using Azure Policy. Then you assign that policy to your resource group. To do so:
 
-1. From the **Policy** page, under **Authoring**, select **Assignments**.
+1. From the **Policy** pane, under **Authoring**, select **Assignments**.
 
     :::image type="content" source="../media/10-policy-assignments.png" alt-text="A screenshot of the Azure portal showing the Assignments menu item.":::
 
@@ -63,7 +66,7 @@ Here you configure the allowed location policy by using Azure Policy. Then you a
 
     :::image type="content" source="../media/10-assign-policy.png" alt-text="A screenshot of the Azure portal showing the Assign policy menu item.":::
 
-    You're taken to the **Assign policy** page.
+    You're taken to the **Assign policy** pane.
 
 1. Under **Scope**, select the ellipsis.
 
@@ -71,20 +74,22 @@ Here you configure the allowed location policy by using Azure Policy. Then you a
 
     1. The **Subscription** field to your Azure subscription.
     1. The **Resource Group** field to **my-test-rg**.
-    1. Select the **Select** button.
+    1. Select **Select**.
 
 1. Under **Policy definition**, select the ellipsis.
 
     1. In the search bar, enter **location**.
     1. Select the **Allowed locations** definition.
-    1. Select the **Select** button.
+    1. Select **Select**.
 
     :::image type="content" source="../media/9-available-definitions-pane.png" alt-text="A screenshot of the Azure portal showing the search bar. In the results pane, the Allowed locations policy definition is highlighted.":::
 
     This policy definition specifies the location into which all resources must be deployed. If a different location is chosen, deployment will fail.
 
 1. Select **Next** to move to the **Parameters** tab.
-1. From the **Allowed locations** drop-down box, select **East US**.
+
+1. From the **Allowed locations** dropdown list, select **East US**.
+
 1. Select **Review + create**, and then select **Create**.
 
     You see that the **Allowed locations** policy assignment is now listed on the **Policy | Assignments** pane. It enforces the policy on the **my-test-rg** resource group.
@@ -96,10 +101,14 @@ Here you configure the allowed location policy by using Azure Policy. Then you a
 Here you attempt to add a storage account to your resource group at a location that violates your location policy.
 
 1. From the Azure portal, at the top of the page, select **Home** to return to the start page.
+
 1. Select **Create a resource**.
-1. Enter **storage account** in the search box, and select <kbd>Enter</kbd>.
+
+1. Enter **storage account** in the search box, and press <kbd>Enter</kbd>.
+
 1. If you're taken to a search results page, select **Storage account** from the results.
-1. Select **Create**. Then fill in these fields.
+
+1. Select **Create**. Then, enter the following values for each setting.
 
     > [!NOTE]
     > Replace **NNN** with a series of numbers. Numbers help to ensure that your storage account name is unique.
@@ -116,6 +125,7 @@ Here you attempt to add a storage account to your resource group at a location t
     | **Access tier (default)** | **Hot** |
 
     If you previously selected **Japan East** in your location policy, select a different region from the list.
+
 1. Select **Review + create**, and then select **Create**.
 
     You see a message that states that the deployment failed because of the policy violation. You also see the deployment details.
@@ -129,8 +139,10 @@ Here you attempt to add a storage account to your resource group at a location t
 You no longer need your policy assignment. Here you remove it from your subscription.
 
 1. From the Azure portal, select **Home** > **Policy**.
+
 1. Under **Authoring**, select **Assignments**.
-1. On the **Allowed locations** row, select the ellipsis. Then select **Delete assignment**. When prompted, select **Yes**.
+
+1. On the **Allowed locations** row, select the ellipsis. Then, select **Delete assignment**. When prompted, select **Yes**.
 
     :::image type="content" source="../media/10-policy-delete-assignment.png" alt-text="A screenshot of the Azure portal showing the Delete assignment menu item.":::
 
@@ -143,7 +155,9 @@ As an optional step, you can try to create the storage account a second time to 
 You no longer need your resource group. Here you remove it from your subscription.
 
 1. From the Azure portal, select **Home** > **Resource groups** > **my-test-rg** to go to your resource group.
+
 1. Select **Overview**, and then select **Delete resource group**.
+
 1. At the prompt, enter **my-test-rg**, and then select **OK**.
 
     The deletion operation might take a few moments to complete.
@@ -151,4 +165,4 @@ You no longer need your resource group. Here you remove it from your subscriptio
 
     You see that the **my-test-rg** resource group no longer exists in your account.
 
-Great work! You've successfully applied a policy by using Azure Policy to restrict the deployment of Azure resources to a specific location. You can now apply the policies that you need at the management group, subscription, or resource group level.
+Great work! You've successfully applied a policy by using Azure Policy to restrict deployments of Azure resources to specific locations. You can now apply the policies that you need at the management group, subscription, or resource group level.
