@@ -5,6 +5,7 @@ Tailwind Traders wants to limit the location where resources can be deployed to 
 * **Improved cost tracking**
 
     To track costs, Tailwind Traders uses different subscriptions to track deployments to each of its regional locations. The policy will ensure that all resources are deployed to the **East US** region.
+
 * **Adhere to data residency and security compliance**
 
     Tailwind Traders must adhere to a compliance rule that states where customer data can be stored. Here, customer data must be stored in the **East US** region.
@@ -21,10 +22,14 @@ Here you create a resource group that's named **my-test-rg**. This is the resour
 For learning purposes, you use the same resource group name that you used in the previous exercise. You can use the same name because you deleted the previous resource group.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+
 1. Select **Create a resource**.
-1. Enter **resource group** in the search box, and select <kbd>Enter</kbd>.
-1. If you're taken to a search results page, select **Resource group** from the results.
-1. Select **Create**. Then fill in these fields.
+
+1. Enter **resource group** in the search box, and press <kbd>Enter</kbd>.
+
+1. If you're taken to a search results pane, select **Resource group** from the results.
+
+1. Select **Create**. Then, enter the following values for each setting.
 
     | Setting | Value |
     | -- | -- |
@@ -72,13 +77,13 @@ Here you configure the allowed location policy by using Azure Policy. Then you a
 
     From the dialog box that appears, set:
 
-    1. The **Subscription** field to your Azure subscription.
-    1. The **Resource Group** field to **my-test-rg**.
+    1. **Subscription** field to your Azure subscription.
+    1. **Resource Group** field to **my-test-rg**.
     1. Select **Select**.
 
 1. Under **Policy definition**, select the ellipsis.
 
-    1. In the search bar, enter **location**.
+    1. In the search bar, enter *location*.
     1. Select the **Allowed locations** definition.
     1. Select **Select**.
 
@@ -106,7 +111,7 @@ Here you attempt to add a storage account to your resource group at a location t
 
 1. Enter **storage account** in the search box, and press <kbd>Enter</kbd>.
 
-1. If you're taken to a search results page, select **Storage account** from the results.
+1. If you're taken to a search results pane, select **Storage account** from the results.
 
 1. Select **Create**. Then, enter the following values for each setting.
 
