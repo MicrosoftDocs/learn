@@ -1,6 +1,6 @@
 Bicep is a language for declaratively deploying Azure resources. By using Bicep, you can define how your Azure resources should be configured and deployed. You define your resources within a Bicep file, called a _template_, and then submit the template to Azure Resource Manager (ARM). ARM then takes responsibility for deploying each resource within the template on your behalf.
 
-## How does Bicep compare to ARM templates?
+## How is Bicep related to ARM templates?
 
 You may already be familiar with ARM templates, which are files that represent Azure resources. Until Bicep was available, ARM templates had to be written using a special JSON format. One common problem with JSON templates is that they are difficult to work with since they have quite a complex syntax. It can be hard to get started with writing ARM templates using JSON.
 

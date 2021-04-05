@@ -61,6 +61,12 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
+1. Switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
+
+```azurecli
+cd scripts
+```
+
 ### Check the version of the Azure CLI
 
 1. From the terminal in Visual Studio Code, run this command to check the version of the Azure CLI:
@@ -133,12 +139,6 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-You may have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
-
-```azurecli
-cd scripts
-```
-
 The following code deploys the Bicep template to Azure. You'll see a successful deployment. Run the following from the terminal in Visual Studio Code to deploy the template:
 
 ```azurecli
@@ -174,6 +174,12 @@ To deploy this template to Azure, you need to sign in to your Azure account from
       :::image type="content" source="../media/4-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell drop-down." border="true":::
 
 1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
+
+1. You may have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
+
+```azurepowershell
+cd scripts
+```
 
 ### Check the version of Azure PowerShell
 
@@ -233,12 +239,6 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 ```
 
 ### Deploy the template to Azure
-
-You may have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
-
-```azurepowershell
-cd scripts
-```
 
 The following code deploys the template to Azure. You'll see a successful deployment. Deploy the template by using Azure PowerShell commands in the terminal.
 
