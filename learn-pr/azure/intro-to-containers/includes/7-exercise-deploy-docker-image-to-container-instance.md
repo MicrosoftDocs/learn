@@ -92,7 +92,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, select **Create a resource**, then select **Containers**, and then select **Container Instance**.
 
-    :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.":::
+    :::image type="content" source="../media/7-search-container-instance.png" alt-text="Screenshot that shows the New pane again in Azure portal showing the Container options available in Azure Marketplace.":::
 
     There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Next, we'll configure the container's network options and restart policy.
 
