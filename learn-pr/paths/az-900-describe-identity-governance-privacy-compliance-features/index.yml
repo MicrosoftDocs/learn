@@ -81,7 +81,6 @@ products:
 - azure-blueprints
 - azure-rbac
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.secure-access-azure-identity-services
 - learn.azure.build-cloud-governance-strategy-azure
 - learn.azure.examine-privacy-compliance-data-protection-standards
