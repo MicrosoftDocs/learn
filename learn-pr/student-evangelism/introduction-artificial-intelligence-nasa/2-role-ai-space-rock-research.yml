@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.2-role-ai-space-rock-research
 metadata:
-  title: Artifical intelligence and space rock research
-  description: Learn what artifical intelligence (AI) is, how it works in general, and how it can be used to research space rocks.
+  title: Artificial intelligence and space rock research
+  description: Learn what artificial intelligence (AI) is, and how it can be used to research space rocks.
   ms.date: 04/04/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Artifical intelligence and space rock research
+title: Artificial intelligence and space rock research
 durationInMinutes: 4
 content: |
   [!include[](includes/2-role-ai-space-rock-research.md)]
