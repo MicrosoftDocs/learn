@@ -24,7 +24,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
 
     The `--no-https` flag creates an app that will run without an HTTPS certificate, to keep things simple for deployment.
 
-    You may receive a promopt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
+    You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 
     The command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.    
 
@@ -43,7 +43,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     ```
 
 
-    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created, which contains an ASP.NET Core project running on .NET Core. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.
+    The preceding command uses an ASP.NET Core project template, aliased as *:::no-loc text="webapi":::*, to scaffold a C#-based web API project. A *:::no-loc text="ContosoPizza":::* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *:::no-loc text="ContosoPizza":::* directory name.
 
 1. Examine the following files and directories:
 
@@ -72,7 +72,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     The web API is hosted at both `http://localhost:5000`. If we didn't pass the `--no-https` flag we would see that the API would also run on `https://localhost:5001`.
 
     > [!IMPORTANT]
-    > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As we make changes to the code we will need to stop the web API by pressing `CTRL+C` on the keybaord and re-running the `dotnet run` command.
+    > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As we make changes to the code we will need to stop the web API by pressing `CTRL+C` on the keyboard and re-running the `dotnet run` command.
 
     In the future we will use only the `dotnet run` command as this command also will build our project if anything has changed.
 

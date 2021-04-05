@@ -1,19 +1,10 @@
-The retailer's storefront UI should display all products in the inventory. To fulfill such a requirement, an action responding to an HTTP GET action verb is needed.
-
-The following table depicts the relationship between HTTP action verbs, CRUD operations, and ASP.NET Core attributes. For example, an HTTP PUT action verb is most often used to support an update operation. Such an action is annotated with the `[HttpPut]` attribute.
-
-|HTTP action verb|CRUD operation|ASP.NET Core attribute|
-|----------------|--------------|----------------------|
-|POST            |Create        |`[HttpPost]`          |
-|GET             |Read          |`[HttpGet]`           |
-|PUT             |Update        |`[HttpPut]`           |
-|DELETE          |Delete        |`[HttpDelete]`        |
-
-In addition to the action verbs in the preceding table, a web API in ASP.NET Core supports HEAD, OPTIONS, and PATCH.
-
-The following sections demonstrate how to support each of these four actions in the web API.
+Let's continue extending our web API controller to add the ability to create(`POST`), update (`PUT`), and delete (`DELETE`) pizza from our inventory. 
 
 ## Add a pizza
+
+To enable the endpoint to have the abilty for users to add pizza, we must implement the `POST` action using the `[HttpPost]`. By passing a `Pizza` into the method as a paramter, ASP.NET Core will automatically convert any `application/json` that is sent to the endpoint into a `Pizza` object. 
+
+Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
 ```csharp
 [HttpPost]
@@ -27,10 +18,10 @@ public IActionResult Create(Pizza pizza)
 The preceding action:
 
 * Responds only to the HTTP POST verb, as denoted by the `[HttpPost]` attribute.
-* Inserts the request body's `Pizza` object into the database.
+* Inserts the request body's `Pizza` object into the in-memory cache.
 
 > [!NOTE]
-> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `pizza` parameter will be found in the request body.
+> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
 The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza.
 
@@ -38,10 +29,12 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`CreatedAtAction`            |201             |The pizza was added to the database.<br>The pizza is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
+|`CreatedAtAction`            |201             |The pizza was added to the in-memory cache.<br>The pizza is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
 |`BadRequest` is implied      |400             |The request body's `pizza` object is invalid.|
 
 ## Modify a pizza
+
+Modifying or updating a pizza in our inventory is similar to the `POST` method we just implemented, but will use the `[HttpPut]` attribute and take in the `id` in addition to the `Pizza` object that needs to be updated.
 
 Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -50,10 +43,8 @@ Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaControl
 public IActionResult Update(int id, Pizza pizza)
 {
     var existingPizza = PizzaService.Get(id);
-    if (id != pizza.Id || existingPizza == null)
-    {
+    if (id != pizza.Id || existingPizza is null)
         return BadRequest();
-    }
 
     PizzaService.Update(pizza);           
 
@@ -68,17 +59,19 @@ The preceding action:
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
 
 > [!NOTE]
-> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `pizza` parameter will be found in the request body.
+> Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`NoContent`                  |204             |The pizza was updated in the database.|
+|`NoContent`                  |204             |The pizza was updated in the in-memory cache.|
 |`BadRequest`                 |400             |The request body's `Id` value doesn't match the route's `id` value.|
 |`BadRequest` is implied      |400             |The request body's `Pizza` object is invalid.|
 
 ## Remove a pizza
+
+One of the easier actions to implement is the `DELETE` action that takes in just the `id` of the pizza to remove from the in-memory cache.
 
 Replace the `// DELETE action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -88,10 +81,8 @@ public IActionResult Delete(int id)
 {
     var pizza = PizzaService.Get(id);
 
-    if (pizza == null)
-    {
+    if (pizza is null)
         return NotFound();
-    }
     
     PizzaService.Delete(id);
 
@@ -102,16 +93,16 @@ public IActionResult Delete(int id)
 The preceding action:
 
 * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
-* Requires that `id` parameter's value is included in the URL segment after `products/`.
+* Requires that `id` parameter's value is included in the URL segment after `pizza/`.
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
-* Queries the database for a pizza matching the provided `id` parameter.
+* Queries the in-memory cache for a pizza matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`NoContent`                  |204             |The pizza was deleted from the database.|
-|`NotFound`                   |404             |A pizza matching the provided `id` parameter doesn't exist in the database.|
+|`NoContent`                  |204             |The pizza was deleted from the in-memory cache.|
+|`NotFound`                   |404             |A pizza matching the provided `id` parameter doesn't exist in the in-memory.|
 
 ## Build and run the finished web API
 

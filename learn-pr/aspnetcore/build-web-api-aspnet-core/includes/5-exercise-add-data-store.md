@@ -1,6 +1,6 @@
 Before we start to implement our web API for pizza, we need to have a data store that we can perform operations on. 
 
-A type of class called a *model* is needed to represent a pizza in inventory. The model contains properties that represent characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real world application, you would consider using a database using [Entity Framework Core](/ef/core) with SQL Server or Azure SQL Database.
+A *model* class is needed to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with [Entity Framework Core](/ef/core). Entity Framework Core allows you to work with your database using .NET objects.
 
 ## Create a pizza model
 
@@ -11,6 +11,8 @@ A type of class called a *model* is needed to represent a pizza in inventory. Th
     ```
 
     Select the `Models` folder in Visual Studio Code and add a new File called `Pizza.cs`. 
+
+    ![Image of Visual Studio Code adding a new file to the Models folder]()
 
     The project root now contains a *:::no-loc text="Models":::* directory with an empty *:::no-loc text="Pizza.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
 
@@ -40,6 +42,8 @@ A type of class called a *model* is needed to represent a pizza in inventory. Th
 
     Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`. 
 
+    ![Image of Visual Studio Code adding a new file to the Services folder]()
+
 
 1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create a in-memory pizza data service. Save your changes.
 
@@ -67,7 +71,7 @@ A type of class called a *model* is needed to represent a pizza in inventory. Th
 
             public static Pizza Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
 
-            public static Pizza Add(Pizza pizza)
+            public static void Add(Pizza pizza)
             {
                 pizza.Id = nextId;
                 nextId++;
@@ -78,7 +82,7 @@ A type of class called a *model* is needed to represent a pizza in inventory. Th
             public static void Delete(int id)
             {
                 var pizza = Get(id);
-                if(pizza == null)
+                if(pizza is null)
                     return;
                 
                 Pizzas.Remove(pizza);

@@ -4,6 +4,8 @@ A *controller* is a public class with one or more public methods known as *actio
 
 1. Select the `Controllers` folder in Visual Studio Code and add a new File called `PizzaController.cs`. 
 
+    ![Image of Visual Studio Code adding a new file to the Controllers folder]()
+
     An empty class file named *:::no-loc text="PizzaController.cs":::* is created in the *:::no-loc text="Controllers":::* directory. The directory name *:::no-loc text="Controllers":::* is a convention. The directory name comes from the Model-View-**Controller** architecture used by the web API.
 
     > [!NOTE]
@@ -30,7 +32,7 @@ A *controller* is a public class with one or more public methods known as *actio
 
             // GET all action
 
-            // GET by ID action
+            // GET by Id action
 
             // POST action
 
@@ -41,7 +43,7 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    This class derives from `ControllerBase`, the base class for an MVC controller without web UI support. The following attributes define its behavior:
+    This class derives from `ControllerBase`, the base class for working with HTTP requests in MVC. The following attributes define its behavior:
 
     * `[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix). Requests to `http://localhost:5000/pizza` are handled by this controller.
     * `[ApiController]` enables opinionated behaviors that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses).
@@ -49,39 +51,43 @@ A *controller* is a public class with one or more public methods known as *actio
     > [!NOTE]
     > The route may contain static strings, as in `api/[controller]`. In that example, a request to `http://localhost:5000/api/pizza` would be handled by this controller.
 
-## Get all pizza
+## Get all pizzas
 
 The first REST verb that we need to implement is `GET` where a client could get all pizzas from the API. We can use the built in `[HttpGet]` attribute to define a method that will return the pizzas from our service.
+
+Replace the `// GET all action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
     
-    ```csharp
-    [HttpGet]
-    public ActionResult<List<Pizza>> GetAll() =>
-        PizzaService.GetAll();
-    ```
+```csharp
+[HttpGet]
+public ActionResult<List<Pizza>> GetAll() =>
+    PizzaService.GetAll();
+```
 
 The preceding action:
 
 * Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
-* Queries the service for all pizza and automatically returns it as `json`
+* Queries the service for all pizza and automatically returns data with a `Content-Type` of `application/json`.
 
 ## Retrieve a single pizza
 
-The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `Id`. We can use the built in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service.
+The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `id`. We can use the built in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service.
+
+Replace the `// GET by Id action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
     
-    ```csharp
-    [HttpGet("{id}")]
-    public ActionResult<Pizza> Get(int id)
+```csharp
+[HttpGet("{id}")]
+public ActionResult<Pizza> Get(int id)
+{
+    var pizza = PizzaService.Get(id);
+
+    if(pizza == null)
     {
-        var pizza = PizzaService.Get(id);
-
-        if(pizza == null)
-        {
-            return NotFound();
-        }
-
-        return pizza;
+        return NotFound();
     }
-    ```
+
+    return pizza;
+}
+```
 
 The preceding action:
 
@@ -93,8 +99,8 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 |ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
-|`Ok` is implied              |200             |A product matching the provided `id` parameter exists in the database.<br>The product is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
-|`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
+|`Ok` is implied              |200             |A product matching the provided `id` parameter exists in the in-memory cache.<br>The product is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
+|`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the in-memory cache.|
 
 ## Build and test the controller
 
@@ -104,7 +110,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     dotnet run
     ```
 
-1.  Open the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **new Terminal** from the main menu.
+1.  Open the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **New Terminal** from the main menu.
 
 1. Connect to our web API by running the following command:
   
@@ -125,7 +131,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   ls
   ```
 
-  The preceeding command will detect all APIs available on the connected endpoint. It should display the following:
+  The preceding command will detect all APIs available on the connected endpoint. It should display the following:
 
    ```dotnetcli
     http://localhost:5000/> ls
@@ -140,7 +146,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   cd Pizza
   ```
 
-  The preceeding command will output available APIs available for the `Pizza` endpoint:
+  The preceding command will output available APIs available for the `Pizza` endpoint:
 
   ```dotnetcli
   http://localhost:5000/> cd Pizza
@@ -153,7 +159,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
   get
   ```
 
-  The following command will make a `GET` request similar and return a list of all pizza in `json`:
+  The following command will make a `GET` request and return a list of all pizza in `json`:
 
   ```dotnetcli
     HTTP/1.1 200 OK
@@ -176,7 +182,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     ]
   ```
 
-1. To query for a single pizza we can make another `GET` request, but pass in a parameter by using the following command:
+1. To query for a single pizza we can make another `GET` request, but pass in an `id` parameter by using the following command:
 
     ```dotnetcli
     get 1
@@ -198,7 +204,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     }
     ```
 
-1. Our API also handle's situations where the item does not exist. Let's call the API again, but pass in an invalid pizza `Id` with the following command.
+1. Our API also handles situations where the item does not exist. Let's call the API again, but pass in an invalid pizza `id` with the following command.
 
     ```dotnetcli
     get 5
