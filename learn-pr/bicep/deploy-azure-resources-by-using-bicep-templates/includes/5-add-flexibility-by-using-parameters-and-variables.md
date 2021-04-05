@@ -64,7 +64,7 @@ Notice that the template now uses the parameter value to set the resource name f
 You can define a variable like this:
 
 ```bicep
-var appServicePlanName = 'ToyLaunchPlan'
+var appServicePlanName = 'toy-product-launch-plan'
 ```
 
 Variables are defined in a similar way to parameters, but there are a few differences:

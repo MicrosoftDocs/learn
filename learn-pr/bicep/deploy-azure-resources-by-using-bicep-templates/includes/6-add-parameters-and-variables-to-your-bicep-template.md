@@ -23,7 +23,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
    param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
-   var appServicePlanName = 'ToyLaunchPlan'
+   var appServicePlanName = 'toy-product-launch-plan'
    ```
 
    Notice that you're using expressions including string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone executing this template could override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
@@ -170,7 +170,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
     :::image type="content" source="../media/6-addparams-deployment.png" alt-text="Azure portal interface for the deployments with the three deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment that begins with **`addparams`**, then select **Deployment details** to expand the list of deployed resources.
+1. Select the deployment that begins with **addparams**, then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/6-addparams-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 

@@ -11,7 +11,7 @@ During the process, you'll:
 > * Add an App Service plan and app to the template.
 > * Provision the infrastructure again to see the new resources.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
 ## Create a Bicep template that contains a storage account
 
@@ -21,7 +21,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-     name: 'mystorageaccount'
+     name: 'toylaunchstorage'
      location: 'eastus'
      sku: {
        name: 'Standard_LRS'
@@ -38,7 +38,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that Visual Studio Code is automatically suggesting property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values you can use.
 
-1. Update the name of the storage account from `mystorageaccount` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
+1. Update the name of the storage account from `toylaunchstorage` to something that is likely to be unique. Make sure the name you choose is all lowercase, without any special characters, and fewer than 24 characters in length.
 
 1. Save the changes to the file.
 
@@ -133,9 +133,13 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-The following code deploys the Bicep template to Azure. You'll see a successful deployment.
+You may have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
 
-Run the following from the terminal in Visual Studio Code to deploy the template:
+```azurecli
+cd scripts
+```
+
+The following code deploys the Bicep template to Azure. You'll see a successful deployment. Run the following from the terminal in Visual Studio Code to deploy the template:
 
 ```azurecli
 templateFile="main.bicep"
@@ -147,7 +151,7 @@ az deployment group create \
  --template-file $templateFile
 ```
 
-The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **`storage`** with the date as a suffix.
+The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **storage** with the date as a suffix.
 
 You'll see ```Running...``` in the terminal.
 
@@ -230,9 +234,13 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-The following code deploys the template to Azure. You'll see a successful deployment.
+You may have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you could use this command:
 
-Deploy the template by using Azure PowerShell commands in the terminal.
+```azurepowershell
+cd scripts
+```
+
+The following code deploys the template to Azure. You'll see a successful deployment. Deploy the template by using Azure PowerShell commands in the terminal.
 
 ```azurepowershell
 $templateFile = 'main.bicep'
@@ -264,7 +272,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-storage.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment that begins with **`storage`** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
+1. Select the deployment that begins with **storage** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there will be one storage account with the name you specified.
 
     :::image type="content" source="../media/4-storage-details.png" alt-text="Azure portal interface for the specific deployment with one storage account resource listed." border="true":::
 
@@ -298,7 +306,7 @@ In the previous task, you learned how to create a template that contains a singl
 
    ```bicep
    resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: 'MyAppServicePlan'
+     name: 'toy-product-launch-plan'
      location: 'eastus'
      sku: {
        name: 'F1'
@@ -364,7 +372,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/4-addapp-deployment.png" alt-text="Azure portal interface for the deployments with the two deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment that begins with **`addapp`**, then select **Deployment details** to expand the list of deployed resources.
+1. Select the deployment that begins with **addapp**, then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Azure portal interface for the specific deployment with storage account App Service resources listed." border="true":::
 

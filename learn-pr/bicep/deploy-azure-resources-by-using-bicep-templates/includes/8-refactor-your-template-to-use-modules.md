@@ -28,7 +28,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    ])
    param environmentType string
    
-   var appServicePlanName = 'ToyLaunchPlan'
+   var appServicePlanName = 'toy-product-launch-plan'
    var appServicePlanSkuName = (environmentType == 'prod') ? 'P2_v3' : 'F1'
    var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
    
@@ -178,15 +178,15 @@ New-AzResourceGroupDeployment `
 
 1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
 
-1. Notice that you have two new deployments in the list. One begins with the name **`addmodule`**, and another is called **`appService`**:
+1. Notice that you have two new deployments in the list. One begins with the name **addmodule**, and another is called **appService**:
 
     :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Azure portal interface for the deployments with the five deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment that begins with **`addmodule`**, then select **Deployment details** to expand the list of deployed resources. Notice our module deployment appears in the list - in fact it appears twice, because we referenced it as an output too.
+1. Select the deployment that begins with **addmodule**, then select **Deployment details** to expand the list of deployed resources. Notice our module deployment appears in the list - in fact it appears twice, because we referenced it as an output too.
 
     :::image type="content" source="../media/8-addmodule-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-1. Select the **Outputs** tab. Notice that there is an output called `appServiceAppHostName` with the host name of your App Service app. Copy the host name to your clipboard.
+1. Select the **Outputs** tab. Notice that there is an output called **appServiceAppHostName** with the host name of your App Service app. Copy the host name to your clipboard.
 
     :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Azure portal interface for the specific deployment's outputs." border="true":::
 

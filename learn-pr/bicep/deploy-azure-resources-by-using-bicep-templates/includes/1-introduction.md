@@ -31,8 +31,8 @@ By the end of this module, you'll be able to create Bicep templates that define 
 
 To follow along with the exercises in the module, you'll need:
 
-- An Azure account. You can get a free account [here](https://azure.microsoft.com/free).
 - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
 - Either:
   - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed locally.
   - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps) installed locally.
