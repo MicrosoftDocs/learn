@@ -91,10 +91,9 @@ Now you have an environment you can use for the rest of the learning path. The l
 
    1. Add the following comment in the first cell of the new notebook:
 
-   ```python
-   # AI model to classify space rocks
-
-   ```
+      ```python
+      # AI model to classify space rocks
+      ```
 
    1. Select the green arrow at the top of the cell to run it.
 
