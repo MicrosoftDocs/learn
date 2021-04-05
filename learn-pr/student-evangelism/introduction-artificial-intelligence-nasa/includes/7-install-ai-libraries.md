@@ -28,17 +28,17 @@ Follow these steps to download and install Anaconda.
 
 1. Complete the steps to install Anaconda on your computer.
 
-After installation complete, the application is available on your computer:
+After installation completes, the application is available on your computer:
 
 - If you're using Windows, run the **Anaconda prompt** from the **Start** menu.
-- On a Mac, the **Anaconda prompt** runs in the computer Terminal.
+- On a Mac, run the **Anaconda prompt** in your computer Terminal.
 
 
 ### Use Anaconda to install AI libraries
 
 Follow these steps to create the environment.
 
-1. Start the Anaconda environment:
+1. At the Anaconda prompt, use this command to start the Anaconda environment:
 
    ```console
    conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow
@@ -79,9 +79,36 @@ Now you have an environment you can use for the rest of the learning path. The l
 1. Open Visual Studio Code, and then open the folder you created.
 
    > [!Note]
-   > If you were running Visual Studio Code before your finished the install and set up of your Anaconda environment, you'll need to restart Visual Studio Code so the app can detect Jupyter Notebook.
+   > If you were running Visual Studio Code before your finished the install and set up of your Anaconda environment, you'll need to restart Visual Studio Code so the app can detect the environment.
 
 1. Create a Jupyter Notebook file named **ClassifySpaceRockProgram**.
+
+   1. Enter Ctrl + Shift + P to open the **Command** drop-down menu at the top of Visual Studio.
+
+   1. Select **Jupyter: Create new blank notebook**.
+     
+      A new notebook file opens. The system shows a message about connecting to the Python kernel in the lower-right corner.
+
+   1. Add the following comment in the first cell of the new notebook:
+
+   ```python
+   # AI model to classify space rocks
+
+   ```
+
+   1. Select the green arrow at the top of the cell to run it.
+
+   1. Enter Ctrl + S to save the file.
+
+      1. In the **Save As** dialog, browse to your folder.
+
+      1. Enter the name for the new notebook file. In our example, we'll use the name **ClassifySpaceRockProgram**.
+
+      1. Make sure **Jupyter** is selected as the file type.
+
+      1. Select **Save**.
+
+   The saved Jupyter Notebook file should have the file extension *.ipynb*. You should see the file in the **File Explorer** view in Visual Studio.
 
 1. At the upper-right and lower-left corners of the file, change the environment to the new Anaconda environment you created.
 
