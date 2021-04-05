@@ -73,10 +73,8 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
             public static void Add(Pizza pizza)
             {
-                pizza.Id = nextId;
-                nextId++;
+                pizza.Id = nextId++;
                 Pizzas.Add(pizza);
-                return pizza;
             }
 
             public static void Delete(int id)
@@ -100,7 +98,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     }
     ```
     
-    This service provides a simple in-memory data caching service with two pizzas by default that our web API will use for demo purposes.
+    This service provides a simple in-memory data caching service with two pizzas by default that our web API will use for demo purposes. When we stop and start the web API the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
 
 ## Build the web API project
 

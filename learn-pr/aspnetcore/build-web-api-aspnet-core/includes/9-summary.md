@@ -1,6 +1,8 @@
-In this module, you've created an ASP.NET Core web API running on .NET. The web API creates, reads, updates, and deletes products from an in-memory database.
+In this module, you've created an ASP.NET Core web API running on .NET. The web API creates, reads, updates, and deletes pizza from an in-memory cache.
 
 ## Best Practices
+
+// Jon to fill in
 
 ## Learn more with a Channel 9 video series
 

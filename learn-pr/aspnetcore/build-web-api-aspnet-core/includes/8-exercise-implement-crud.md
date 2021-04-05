@@ -252,5 +252,4 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     ]
     ```
 
-
 We have now finished implementing and testing our newly created web API built with ASP.NET Core. Next, we will provide some best practices and additional learning modules.

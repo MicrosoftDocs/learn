@@ -14,4 +14,4 @@ In addition to the action verbs in the preceding table, a web API in ASP.NET Cor
 The following sections demonstrate how to support each of these four actions in the web API.
 
 
-// more stuff here?
+// more stuff here like authentication? other attributes?

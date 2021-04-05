@@ -12,3 +12,17 @@ title: Exercise - Create a web API project
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-create-web-api.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Suppose you need to update a product's name. Which HTTP action verb is the best fit for this request?"
+      choices:
+      - content: "POST"
+        isCorrect: false
+        explanation: "The POST verb is intended for use when creating a new product."
+      - content: "PUT"
+        isCorrect: true
+        explanation: "The PUT verb is intended for use when modifying an existing product. Additionally, PATCH may be used to update individual properties."
+      - content: "DELETE"
+        isCorrect: false
+        explanation: "The DELETE verb is intended for use when removing a product."
