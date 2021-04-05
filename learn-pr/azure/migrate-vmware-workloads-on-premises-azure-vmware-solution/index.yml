@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution
+metadata:
+  moduleType: standard
+  title: Migrate VMware workloads on-premises Azure VMware Solution
+  description: Migrate VMware workloads on-premises Azure VMware Solution
+  ms.date: 4/5/2021
+  author: sbkuehn
+  ms.author: shkuehn
+  ms.topic: interactive-tutorial
+title: Migrate VMware workloads on-premises Azure VMware Solution
+summary: First, you'll learn how to plan for the HCX deployment on-premises. From there, you'll learn how to deploy HCX on-premises and connect it to Azure VMware Solution. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After HCX is deployed, you'll learn how to migrate VMware workloads on-premises to AVS. Learning all these steps will help out your business by quickly migrating VMware workloads into Azure VMware Solution.
+abstract: | 
+  By the end of this module, you will be able to:
+    - Configure Hybrid Cloud Exchange (HCX) to support on-premises VMware migrations.
+    - Migrate VMware workloads on-premises to Azure VMware Solution.
+prerequisites: | 
+  - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and HCX.
+  - Basic knowledge of network concepts, such as classless inter-domain routing (CIDR) and subnets.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+  - intermediate
+roles: 
+  - administrator
+  - solution-architect
+products:
+- azure
+- azure-vmware-solution
+units:
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.introduction
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.plan-hcx-deployment
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.vmware-hcx-deployment-installation
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.configure-networking-compute-profiles
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.create-service-mesh
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.migrate-vm-workloads
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.knowledge-check
+- learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.summary
+
+badge:
+  uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.badge
