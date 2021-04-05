@@ -27,15 +27,15 @@ You might also believe that using speech for bot interactions would make the bot
 
 In addition to optimizing the user experience with the bot, you should consider how your bot's implementation relates to principles for responsible AI development. Microsoft provides guidance for responsible bot development at [https://www.microsoft.com/research/publication/responsible-bots](https://www.microsoft.com/research/publication/responsible-bots), describing ten guidelines for developers of conversational AI solutions. These guidelines include:
 
-1. Articulate the purpose of your bot and take special care if your bot will support consequential use
+- Articulate the purpose of your bot and take special care if your bot will support consequential use
 cases.
-2. Be transparent about the fact that you use bots as part of your product or service.
-3. Ensure a seamless hand-off to a human where the human-bot exchange leads to interactions that
+- Be transparent about the fact that you use bots as part of your product or service.
+- Ensure a seamless hand-off to a human where the human-bot exchange leads to interactions that
 exceed the bot's competence.
-4. Design your bot so that it respects relevant cultural norms and guards against misuse.
-5. Ensure your bot is reliable.
-6. Ensure your bot treats people fairly.
-7. Ensure your bot respects user privacy.
-8. Ensure your bot handles data securely.
-9. Ensure your bot is accessible.
-10. Accept responsibility for your bots operation and how it affects people.
+- Design your bot so that it respects relevant cultural norms and guards against misuse.
+- Ensure your bot is reliable.
+- Ensure your bot treats people fairly.
+- Ensure your bot respects user privacy.
+- Ensure your bot handles data securely.
+- Ensure your bot is accessible.
+- Accept responsibility for your bots operation and how it affects people.
