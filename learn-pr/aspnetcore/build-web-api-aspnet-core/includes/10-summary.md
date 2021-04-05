@@ -1,12 +1,11 @@
 In this module, you've created an ASP.NET Core web API running on .NET. The web API creates, reads, updates, and deletes products from an in-memory database.
 
-[!INCLUDE[download files](../../includes/summary-download.md)]
-
-[!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
+## Best Practices
 
 ## Learn more with a Channel 9 video series
 
-- [.NET Core 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
+- [.NET 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
+- [ASP.NET Core Web API 101](https://channel9.msdn.com/Series/Beginners-Series-to-Web-APIs?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
 - [ASP.NET Core 101](https://channel9.msdn.com/Series/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)
 
 ## Learn more with docs.microsoft.com

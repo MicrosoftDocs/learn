@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.2-what-is-rest-in-aspnet
+metadata:
+  title: REST in ASP.NET Core
+  description: Learn how to implement Create, Read, Update, Delete (CRUD) methods in the web API.
+  ms.date: 02/11/2021
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: REST in ASP.NET Core
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-rest-in-aspnet.md)]

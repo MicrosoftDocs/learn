@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-web-api-net-core.4-aspnet-controllers
+metadata:
+  title: ASP.NET Core Web API Controllers
+  description: Learn how ASP.NET core has built in support for web APIs with controllers.
+  ms.date: 02/11/2021
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Exercise - Implement CRUD operations
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-aspnet-controllers.md)]

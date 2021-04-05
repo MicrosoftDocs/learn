@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-web-api-net-core.5-implement-crud
+uid: learn.build-web-api-net-core.8-exercise-implement-crud
 metadata:
   title: Exercise - Implement CRUD operations
   description: Learn how to implement Create, Read, Update, Delete (CRUD) methods in the web API.
@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Implement CRUD operations
-azureSandbox: true
-interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-implement-crud.md)]
+  [!include[](includes/8-exercise-implement-crud.md)]
