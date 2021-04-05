@@ -3,9 +3,9 @@ Now that you have the libraries downloaded, you can begin to import them into a 
 
 ## Prerequisites
 
-The AI libraries are installed as described in [Download Python AI libraries][AILibs].
+- The AI libraries are installed as described in [Download Python AI libraries][AILibs].
 
-The [Python extension for Visual Studio][VSCodePython] is installed, so Jupyter Notebook files run in the interactive Python environment.
+- The [Python extension for Visual Studio][VSCodePython] is installed, so Jupyter Notebook files run in the interactive Python environment.
 
 
 ## Add import statements for the libraries
