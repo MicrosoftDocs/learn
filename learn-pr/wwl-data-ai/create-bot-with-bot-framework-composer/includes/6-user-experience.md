@@ -17,9 +17,9 @@ Careful planning could reveal a better design option where the bot is specific i
 
 Your bot can integrate different cognitive services to aid in language understanding, keyword, or phrase detection, and sentiment analysis. These features make you bot more "intelligent" but they also lead to response time delays if too many services are integrated for each response. Essentially, the less processing required on the user input, the less chance for misinterpretation or bot performance.  The following are recommended considerations for text input, from Microsoft.
 
-- Whenever possible, ask specific questions that will not require natural language understanding capabilities to parse the response. It will simplify your bot and increase the success your bot will understand the user
+- Whenever possible, ask specific questions that do not require natural language understanding capabilities to parse the response. It will simplify your bot and increase the success with which your bot understands the user
 - Designing a bot to require specific commands from the user can often provide a good user experience while also eliminating the need for natural language understanding capability.
-- If you are designing a bot that will answer questions based on structured or unstructured data from databases, web pages, or documents, consider using technologies that are designed specifically to address this scenario rather than attempting to solve the problem with natural language understanding.
+- If you are designing a bot that will answer questions based on structured or unstructured data from databases, web pages, or documents, consider using technologies like QnA Maker that are designed specifically to address this scenario.
 - When building natural language models, do not assume that users will provide all the required information in their initial query. Design your bot to specifically request the information it requires, guiding the user to provide that information by asking a series of questions, if necessary.
 
 ## Speech
