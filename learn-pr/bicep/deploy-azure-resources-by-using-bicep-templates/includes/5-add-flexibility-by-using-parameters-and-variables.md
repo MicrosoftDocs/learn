@@ -139,7 +139,7 @@ The default value for the `storageAccountName` parameter now has two parts to it
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
 
 > [!TIP]
-> Sometimes the `uniqueString()` function will return back strings that start with a number. Resources like storage accounts don't allow resource names that start with numbers. This means it's usually a good idea to use string interpolation to create resource names like in the example above.
+> Sometimes the `uniqueString()` function will create strings that start with a number. Some Azure resources, like storage accounts, don't allow their names to start with numbers. This means it's a good idea to use string interpolation to create resource names, like in the example above.
 
 ### Select SKUs for resources
 
