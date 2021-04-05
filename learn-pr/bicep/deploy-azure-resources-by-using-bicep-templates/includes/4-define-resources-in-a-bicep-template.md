@@ -17,7 +17,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Open Visual Studio Code, and create a new file called *main.bicep*.
 
-1. Add the following content into the file:
+1. Add the following content into the file. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -150,6 +150,9 @@ az deployment group create \
  --name $DeploymentName \
  --template-file $templateFile
 ```
+
+> [!NOTE]
+> The `--name` argument is optional - you don't need to specify this when you deploy your Bicep files. We're using it here so we can easily identify our deployments.
 
 The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **storage** with the date as a suffix.
 
