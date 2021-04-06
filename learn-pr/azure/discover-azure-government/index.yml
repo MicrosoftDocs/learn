@@ -13,8 +13,8 @@ summary: Governments around the world are in the process of a digital transforma
 abstract: | 
   In this module, you will learn to: 
   - Explain the basic concept and benefits of multi-tenant cloud services.
-  - Describe how Microsoft Azure helps customers follow data security requirements in the public sector.
-  - Identify scenarios in which Microsoft Azure could provide solutions for data in the public sector. 
+  - Describe how Azure helps customers follow data security requirements in the public sector.
+  - Identify scenarios in which Azure could provide solutions for data in the public sector. 
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
