@@ -138,6 +138,9 @@ The default value for the `storageAccountName` parameter now has two parts to it
 - `toylaunch` is a hard-coded string that helps to understand what this storage account is for.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
 
+> [!TIP]
+> Sometimes the `uniqueString()` function will create strings that start with a number. Some Azure resources, like storage accounts, don't allow their names to start with numbers. This means it's a good idea to use string interpolation to create resource names, like in the example above.
+
 ### Select SKUs for resources
 
 The other members of your team have been impressed with the Bicep code you've built so far. You've decided together that you'll use your template to deploy the resources to support the launches of all of your new toys. One of your colleagues has suggested that you create non-production environments for each product launch to help the marketing team test the sites before they are deployed into production. However, you want to make sure you don't spend too much money on your non-production environments, so you decide some policies together:

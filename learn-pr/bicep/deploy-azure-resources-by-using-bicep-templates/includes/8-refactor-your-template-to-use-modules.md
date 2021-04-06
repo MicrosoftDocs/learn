@@ -22,6 +22,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    ```bicep
    param location string
    param appServiceAppName string
+
    @allowed([
      'nonprod'
      'prod'
@@ -59,7 +60,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Since the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
 
-1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName` and `appServicePlanSkuName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
+1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName`, `appServicePlanSkuName`, and `appServicePlanTierName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
 
 1. At the bottom of the *main.bicep* file, add the following Bicep code:
 
@@ -82,6 +83,7 @@ Now that you have a complete module to deploy the App Service resources, you can
     param location string = resourceGroup().location
     param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
     param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
     @allowed([
       'nonprod'
       'prod'
