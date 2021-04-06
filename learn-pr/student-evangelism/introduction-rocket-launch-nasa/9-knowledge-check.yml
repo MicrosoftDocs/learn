@@ -3,25 +3,22 @@ uid: learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
 metadata:
   title: Knowledge check
   description: Answer questions to see what you've learned. 
-  ms.date: 03/10/2021
+  ms.date: 04/05/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
-durationInMinutes: 4
+durationInMinutes: 2
 content: |
   Answer the following questions to see what you've learned.  
 quiz:
   questions:
-  - content: "Will computers always be more accurate than humans at data analysis? Why or why not?"
+  - content: "Are computers always more accurate than humans at data analysis? Why or why not?"
     choices:
-    - content: "Yes, because computers are purely logical. They don't make mistakes."
+    - content: "Yes, because computers can process significantly more data than humans, and they can process it faster."
       isCorrect: false
-      explanation: "Incorrect, because computers must be programmed by humans."
-    - content: "Yes, because computers can process significantly more data than humans, and faster."
-      isCorrect: false
-      explanation: "Incorrect. Computers can process more data, faster. But, they aren't more accurate than humans."
+      explanation: "Incorrect. Computers can process more data, and faster. But, they aren't more accurate than the humans that program them."
     - content: "No, because computers can't understand context, so they can't be accurate all the time."
       isCorrect: false
       explanation: "Incorrect. Machine learning makes it possible for computers to understand context."
@@ -32,14 +29,43 @@ quiz:
     choices:
     - content: "Business understanding, data gathering and preparation, model training and testing, model deployment"
       isCorrect: true
-      explanation: "Correct! These are the exact four steps."
+      explanation: "Correct! These are the four steps."
     - content: "Data gathering, data validation, machine learning, result visualization"
       isCorrect: false
       explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
     - content: "Data identification, model training until 100% accurate, model deployment, business understanding"
       isCorrect: false
       explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
-    - content: "Machine learning algorithm coding, data exploration, algorithm modifications, report generation"
+  - content: "What is overfitting in a machine learning model?"
+    choices:
+    - content: "When your machine learning model takes up too much space on your computer or server."
       isCorrect: false
-      explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
-      
+      explanation: "Incorrect. Overfitting in a machine learning model doesn't refer to software or disk size."
+    - content: "When your machine learning model is so broad, it inaccurately identifies a new item as something it knows."
+      isCorrect: true
+      explanation: "Correct! Overfitting means that your model hasn't seen enough during training to recognize a new item."
+    - content: "When your machine learning model easily absorbs new task, so it's a good thing."
+      isCorrect: false
+      explanation: "Incorrect. Overfitting in a machine learning model is a weakness that's related to insufficient training of the model."
+  - content: "What does is the goal of manipulating data in data science?"
+    choices:
+    - content: "To dispose of data that will make it harder to prove what you think must be true."
+      isCorrect: false
+      explanation: "Incorrect. Manipulating data is done to discover what truth the data reveals."
+    - content: "To remove incomplete data, so it doesn't skew the output away from the truth."
+      isCorrect: true
+      explanation: "Correct! Output is based on input. You manipulate data to remove input that won't lead to accurate output."
+    - content: "To clean up your results so they are summarized and easy to read."
+      isCorrect: false
+      explanation: "Incorrect. Manipulating data occurs before you reach a conclusion, while you are making sure your inputs are valid."
+  - content: "What is the role of a subject matter expert (SME) in the data science lifecycle?"
+    choices:
+    - content: "SMEs help set the scope of data analysis by helping you determine which measurable factors will have an effect on outcome."
+      isCorrect: true
+      explanation: "Correct! A SME can help you know which factors matter and which are too insignificant to measure."
+    - content: "SMEs add the seal of approval on the results that your data points to."
+      isCorrect: false
+      explanation: "Incorrect. The influence of SMEs is seen before you even evaluate your data and produce a result."
+    - content: "SMEs help you interpret your data in the context of their specialties."
+      isCorrect: false
+      explanation: "Incorrect. In the data science lifecycle, SMEs help you narrow and accurately select the inputs to use in your analysis."

@@ -2,20 +2,20 @@
 uid: learn.student-evangelism.introduction-rocket-launch-nasa
 metadata:
   title: Introduction to rocket launches
-  description: Get an introduction to how NASA chooses dates for a rocket launch and learn about some machine learning fundamentals.
-  ms.date: 03/10/2021
+  description: An introduction to how NASA chooses dates for a rocket launch and machine learning fundamentals.
+  ms.date: 04/05/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to rocket launches
-summary: Get an introduction to how NASA chooses dates for a rocket launch and learn about some machine learning fundamentals.
+summary: An introduction to how NASA chooses dates for a rocket launch and machine learning fundamentals.
 abstract: |
  In this module, you'll begin to discover: 
- - The challenges weather can pose on rocket launches
+ - The challenges weather can pose for a rocket launch
  - The data science lifecycle
  - How machine learning works
- - What role ethics plays in machine learning
+ - The role ethics plays in machine learning
 
  > [!TIP]
  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
