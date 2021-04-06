@@ -309,7 +309,7 @@ In the previous task, you learned how to create a template that contains a singl
 
    ```bicep
    resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-     name: 'toy-product-launch-plan'
+     name: 'toy-product-launch-plan-starter'
      location: 'eastus'
      sku: {
        name: 'F1'
