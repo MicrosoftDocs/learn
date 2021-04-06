@@ -1,4 +1,4 @@
-A machine learning model is trained similar to how human are trained. So, how does a human learn?
+A machine learning model is trained similar to how humans are trained. So, how does a human learn?
 
 What if you walk into an area in which five different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including 1 berry from each of the five distinct types of berry plants. You are told the names of the 5 berries you picked, one from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types of berries.
 
