@@ -4,7 +4,7 @@ However, with increasing volumes of data, the challenge has been how to usefully
 
 Azure SQL Edge is an IoT and IoT Edge optimized relational database engine. As indicated in the graphic, it can interact with components at the network edge, such as Edge Gateways, IoT Devices, and Edge Servers. 
 
-Because Azure SQL Edge is based on the same engine and technologies as SQL Server, and supports the same toolsets, it can interact with SQL-based technologies, such as Azure SQL, and SQL Server. 
+Because Azure SQL Edge is based on the same engine and technologies as SQL Server, and supports the same tool sets, it can interact with SQL-based technologies, such as Azure SQL, and SQL Server. 
 
 :::image type="content" source="../media/overview-sql-edge.png" alt-text="A graphic depicting the interaction of Azure SQL Edge, Azure SQL, and SQL Server. Displayed within Azure SQL Edge is Edge Servers, Edge Gateways, and IoT Devices.":::
 

@@ -8,4 +8,5 @@ You should now be able to determine how you can xxx with <product>
 
 ## References
 
-- [xxx](?azure-portal=true)
+- [Azure SQL Edge documentation](https://docs.microsoft.com/azure/sql-database-edge?azure-portal=true).
+- [Deploy Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/deploy-portal?azure-portal=true).
