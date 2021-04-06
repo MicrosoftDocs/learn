@@ -13,17 +13,17 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Are computers always more accurate than humans at data analysis? Why or why not?"
+  - content: "Which statement best describes the role of ethics in data science?"
     choices:
-    - content: "Yes. Computers can process much more data than humans, and they can process it faster."
+    - content: "Investors should scrutinize the environmental practices of companies that hire data scientists."
       isCorrect: false
-      explanation: "Incorrect. Computers can process more data, and faster, but they aren't more accurate than their design."
-    - content: "No. Computers can't understand context, so they can't be accurate all the time."
+      explanation: "Incorrect. Although a business's environmental practices might be important, they usually don't affect the work of data scientists."
+    - content: "It's best to analyze as much data as possible, so you learn what issues you need to fix."
       isCorrect: false
-      explanation: "Incorrect. Machine learning makes it possible for computers to understand context."
-    - content: "No. Computers are only as accurate as the humans that program them."
+      explanation: "Incorrect. It's critical to begin data science with a central question and to choose carefully data inputs for accurate results."
+    - content: "Be sure that data inputs are accurate because often the output is used to make policy decisions that affect people's health and wellbeing."
       isCorrect: true
-      explanation: "Correct! Computers are accurate only if their programming is accurate."
+      explanation: "Correct! Using incomplete data or a machine learning model that isn't accurately trained can lead to conclusions that are harmful or life-threatening."
   - content: "What are the four steps in the data science lifecycle?"
     choices:
     - content: "Business understanding, data gathering and preparation, model training and testing, model deployment"
