@@ -6,11 +6,11 @@ A machine learning algorithm is trained similar to how a human is trained.
 
 What if you walk into an area in which 5 different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including 1 berry from each of the five distinct types of berry plants. You are told the names of the 5 berries you picked from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types.
 
-Being able to name the five different berry types, you feel sure that you can identify the types of the remaining randomly picked 95 berries. Maybe some blackberries aren't as ripe, so they are smaller and look a bit like raspberries, and some blueberries aren't as ripe and might look more like a huckleberries. But even so, for the 100 berries, you'd have a decent idea which berry is which, and you'd be able to sort all 100 berries by type.
+Being able to name the five different berry types, you feel sure that you can identify the types of the remaining randomly picked 95 berries. Maybe some blackberries aren't as ripe, so they are smaller and look a bit like raspberries, and some blueberries aren't as ripe and might look more like huckleberries. But even so, for the 100 berries, you'd have a decent idea which berry is which, and you'd be able to sort all 100 berries by type.
 
-Next, you're asked to collect only raspberries in a new field that contains the same five types of berries. You're pretty sure you know what raspberries look like:
+Next, you're asked to collect only raspberries in a new field that contains the same five types of berries. You're confident that you know what raspberries look like:
 
-:::image type="content" source="../media/raspberry.png" alt-text="Photo of a raspberry." loc-scope="azure":::
+:::image type="content" source="../media/raspberry.png" alt-text="Photo of a raspberry." loc-scope="Azure":::
 
 You complete this task and collect 10 raspberries successfully!
 
@@ -18,11 +18,11 @@ To recap: the initial 100 berries were in your initial dataset. You were given t
 
 Then, you had a test: given any input, identify the type of berry, and select only one output—raspberries. You looked at other berries (input) as you were walking through the berry bushes. You tested your mental model of berries and chose only raspberries. At this point, you believe that your mental model of berries is 100% accurate.
 
-But then, you spot a berry plant that looks very similar to a raspberry. What you didn't know is that there were actually six berry types in your berry-picking field. You do find more raspberries, but you also collect some of these berries, thinking they might actually be raspberries, although they look a little different:
+But then, you spot a berry plant that looks similar to a raspberry. What you didn't know is that there were actually six berry types in your berry-picking field. You do find more raspberries, but you also collect some of these berries, thinking they might actually be raspberries, although they look a little different:
 
-:::image type="content" source="../media/thimbleberry.png" alt-text="Photo of a man's hand holding a thimbleberry." loc-scope="azure":::
+:::image type="content" source="../media/thimbleberry.png" alt-text="Photo of a hand holding a thimbleberry." loc-scope="Azure":::
 
-Both the new berry and a raspberry looks different from the other four types of berries, but they look similar to each other. But they are *not* the same type of berry. The one you just brought back was a *thimbleberry*.
+Both the new berry and a raspberry look different from the other four types of berries, but they look similar to each other. But they are *not* the same type of berry. The type of berry you just picked was a *thimbleberry*.
 
 In this case, your dataset isn't extensive enough. You think you're more accurate at identifying berries than you actually are.
 

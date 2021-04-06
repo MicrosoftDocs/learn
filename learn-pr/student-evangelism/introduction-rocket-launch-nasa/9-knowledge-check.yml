@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "Are computers always more accurate than humans at data analysis? Why or why not?"
     choices:
-    - content: "Yes, because computers can process significantly more data than humans, and they can process it faster."
+    - content: "Yes, because computers can process much more data than humans, and they can process it faster."
       isCorrect: false
       explanation: "Incorrect. Computers can process more data, and faster. But, they aren't more accurate than the humans that program them."
     - content: "No, because computers can't understand context, so they can't be accurate all the time."
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Business understanding, data gathering and preparation, model training and testing, model deployment"
       isCorrect: true
-      explanation: "Correct! These are the four steps."
+      explanation: "Correct! These steps describe the data science lifecycle."
     - content: "Data gathering, data validation, machine learning, result visualization"
       isCorrect: false
       explanation: "Incorrect. The data science lifecycle doesn't include these four steps."
@@ -55,7 +55,7 @@ quiz:
     - content: "To remove incomplete data, so it doesn't skew the output away from the truth."
       isCorrect: true
       explanation: "Correct! Output is based on input. You manipulate data to remove input that won't lead to accurate output."
-    - content: "To clean up your results so they are summarized and easy to read."
+    - content: "To clean up your results, so they are summarized and easy to read."
       isCorrect: false
       explanation: "Incorrect. Manipulating data occurs before you reach a conclusion, while you are making sure your inputs are valid."
   - content: "What is the role of a subject matter expert (SME) in the data science lifecycle?"

@@ -2,9 +2,9 @@ NASA collects data from many different sources to help predict whether condition
 
 NASA considers certain places in the atmosphere safest for a rocket to enter space. To access these places, rockets must be launched from specific locations on Earth. To increase the chance of success, rockets should enter space as close to the equator as possible. Also, if a launch needs to be aborted, it's safest to do over a large body of water. Cape Canaveral in Florida incorporates all these features.
 
-:::image type="content" source="../media/cape-canaveral.png" alt-text="Aerial photo of the Cape Canaveral launch site." border="false" loc-scope="azure":::
+:::image type="content" source="../media/cape-canaveral.png" alt-text="Aerial photo of the Cape Canaveral launch site." border="false" loc-scope="Azure":::
 
-Cape Canaveral is on the east coast of the Florida peninsula. The area experiences perhaps more than its share of factors that might cause concern during a rocket launch: hurricanes, tornados, rainstorms, and humidity. So, why not just launch somewhere that has no inclement weather, like San Diego, California?
+Cape Canaveral is on the east coast of the Florida peninsula. The area arguably has more than its share of factors that might cause concern during a rocket launch: high humidity and frequent hurricanes, tornados, and rainstorms. So, why not just launch somewhere that has no inclement weather, like San Diego, California?
 
 Despite its weather, Cape Canaveral usually is the best US-based launch site for maintaining the trajectory needed for a rocket that will enter space. There are many potential factors for selecting a launch site. NASA must take into account many different data sources to get the most accurate picture of what the rocket will have to endure on its 100-kilometer journey into space.
 
