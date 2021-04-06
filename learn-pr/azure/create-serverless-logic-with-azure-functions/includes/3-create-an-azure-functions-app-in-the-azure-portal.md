@@ -24,8 +24,6 @@ Let's create a function app in the Azure portal.
 
 1. Select **Create a resource**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
-
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
 1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.

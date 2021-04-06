@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-cognitive-search-solution.create-data-source
+title: Understand the indexing process
+metadata:
+  title: Understand the indexing process
+  description: "Understand the indexing process"
+  ms.date: 04/01/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-indexing-process.md)]

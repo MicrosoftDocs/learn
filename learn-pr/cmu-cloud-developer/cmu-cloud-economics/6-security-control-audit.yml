@@ -102,11 +102,11 @@ quiz:
   - content: "Homomorphic encryption is a special form of encryption where computation can be carded out on encrypted data. For instance, if Bing used homomorphic encryption, it would receive an encrypted version of your search term, find the matches without looking at it, and return an encrypted version of the results. Your data would never be exposed. Recent research from Craig Gentry at Stanford demonstrated a practical way to create an encryption scheme that allows addition and multiplication. Why is this not widely used?"
     choices:
     - content: "The government won't allow encryption that it can't decrypt through a legal channel."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "The scheme is currently computationally very expensive, and takes too long."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
+    - content: "The scheme is currently computationally very expensive, and takes too long."
+      isCorrect: true
+      explanation: "Correct!"
     - content: "Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it's impossible to construct circuits for performing arbitrary computation."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."

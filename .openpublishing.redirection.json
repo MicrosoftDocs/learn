@@ -5159,6 +5159,191 @@
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/6-summary.yml",
       "redirect_url": "/learn/modules/improve-api-developer-experience-with-swagger/7-summary",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/6-security-center",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/azure/design-monitoring-strategy-on-azure/2-continuous-monitoring.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/2-full-stack-monitoring",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/2-get-ready-develop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/2-azure-resources",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/3-resources-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/3-search-components",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/5-create-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/6-create-run-indexer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/7-search-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/5-search-index",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/8-apply-filtering-sorting.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/6-apply-filtering-sorting",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/9-enhance-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/7-enhance-index",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-azure-cognitive-search-solution/4-create-data-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-cognitive-search-solution/4-indexing-process",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/2-data-streams.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/2-understand-data-streams",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/3-event-processing.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/3-understand-event-processing",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/4-event-with-asa.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming/4-process-events-azure-stream-analytics",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/data-ai-cert/introduction-to-data-streaming/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-data-streaming",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/2-get-ready-develop-search-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/3-create-azure-resources-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/4-create-data-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/5-create-skillset.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/6-create-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/7-create-run-indexer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/8-search-enriched-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/10-update-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/11-search-updated-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-enrichment-pipeline-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/2-get-ready-develop-search-solution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/3-create-azure-resources-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/4-create-data-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/5-create-skillset.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/6-create-index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/7-create-run-indexer.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/8-explore.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/2-create-basic.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-work-dialogs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/4-exercise-add-dialogs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/5-provide-ability-get-help-cancel.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/6-integrate-language-generation-library.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/7-use-cards-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/8-integrate-language-understanding.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
     }
   ]
 }

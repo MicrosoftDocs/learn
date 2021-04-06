@@ -115,7 +115,7 @@ fn caller() {
 }
 ```
 
-The compiler complains that the value `greeting` was *moved*.
+The compiler complains that the value `s` was *moved*.
 
 ```output
     error[E0382]: use of moved value: `s`
@@ -133,7 +133,7 @@ As you can see in the preceding snippet, the first call to `process` transfers o
 
 This pattern has a profound impact on the way Rust code is written. It's central to the promise of memory safety that Rust proposes.
 
-In other programming languages, the `String` value of the `greeting` variable can be implicitly copied before being passed to our function. But in Rust, this does not happen.
+In other programming languages, the `String` value of the `s` variable can be implicitly copied before being passed to our function. But in Rust, this does not happen.
 
 In Rust, ownership transfer (that is, moving) is the default behavior.
 

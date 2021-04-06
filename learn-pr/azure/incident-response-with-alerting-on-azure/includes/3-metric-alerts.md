@@ -16,7 +16,7 @@ As you learned in the previous unit, all alerts are governed by their rules. For
 
 You must define the type of statistical analysis to be used with either static or dynamic metric alerts. Example types are minimum, maximum, average, and total. In this example, you define the period of data to be assessed: the last 10 minutes. Finally, you set the frequency by which the alert conditions are checked: every 2 minutes.
 
-### Using static threshold metric alerts
+### Use static threshold metric alerts
 
 Static metric alerts are based on simple static conditions and thresholds that you define. With static metrics, you specify the threshold that will be used to trigger the alert or notification.
 
@@ -36,7 +36,7 @@ There's no hard threshold in dynamic metrics. However, you'll need to define two
 
 Until now, the assessed metric alerts have focused on a single target instance. Azure Monitor supports dimensions, which enable monitoring data to be supplied from multiple target instances.
 
-You use dimensions to define one metric alert rule and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
+You use dimensions to define one metric alert rule, and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
 
 You can define the dimensions by naming each target instance specifically. Or, you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
 
