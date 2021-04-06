@@ -99,17 +99,15 @@ Now you have an environment you can use for the rest of the learning path. The l
 
    1. Enter Ctrl + S to save the file.
 
-      1. In the **Save As** dialog, browse to your folder.
+   1. In the **Save As** dialog, browse to your folder.
 
-      1. Enter the name for the new notebook file. In our example, we'll use the name **ClassifySpaceRockProgram**.
+   1. Enter the name for the new notebook file. In our example, we'll use the name **ClassifySpaceRockProgram**. Make sure **Jupyter** is selected as the file type.
 
-      1. Make sure **Jupyter** is selected as the file type.
+   1. Select **Save**.
 
-      1. Select **Save**.
+   The saved Jupyter Notebook file should have the file extension *.ipynb*. You should see the file in the **Explorer** view in Visual Studio.
 
-   The saved Jupyter Notebook file should have the file extension *.ipynb*. You should see the file in the **File Explorer** view in Visual Studio.
-
-1. At the upper-right and lower-left corners of the file, change the environment to the new Anaconda environment you created.
+1. At the upper-right and lower-left corners of Visual Studio, change the environment to the new Anaconda environment you created.
 
    :::image type="content" source="../media/set-environment.png" alt-text="Screenshot of Visual Studio Code that shows how to set up the Anaconda environment.":::
 
