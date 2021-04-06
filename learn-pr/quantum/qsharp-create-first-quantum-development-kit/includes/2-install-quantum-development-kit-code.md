@@ -56,8 +56,9 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
 
 1. Enter **Q#: Install project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
-![Figure of pop-up installed templates.](../media/install_project_templates.png)
-=======
+
+   ![Screenshot of pop-up installed templates.](../media/install_project_templates.png)
+
 1. Enter **Q#: Install command line project templates**.
 
 
@@ -73,7 +74,8 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 1. Select **Standalone console application**.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
 1. From the pop-up window that appears at the bottom right corner, select **Open new project**:
-![Figure of pop-up create project.](../media/create_new_project.png)
+
+   ![Screenshot of pop-up create project.](../media/create_new_project.png)
 
 1. From the **View** menu, select **Explorer**.
 
