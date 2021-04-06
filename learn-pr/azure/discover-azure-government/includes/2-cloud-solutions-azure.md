@@ -1,4 +1,4 @@
-As government agencies look for tools and solutions to move their workloads to the cloud, they're faced with specific concerns around data residency, security, and isolation. Microsoft Azure provides public sector customers with the tools and flexibility to design solutions to fit their legal and technological requirements.
+As government agencies look for tools and solutions to move their workloads to the cloud, they're faced with specific concerns around data residency, security, and isolation. Azure provides public sector customers with the tools and flexibility to design solutions to fit their legal and technological requirements.
 
 ## Azure in the public sector
 
@@ -8,11 +8,11 @@ A hyperscale public cloud provides resiliency in time of natural disaster and wa
 
 Using Azure's public cloud capabilities, customers benefit from rapid feature growth, resiliency, and the cost-effective operation of the hyperscale cloud. The cloud also provides the levels of isolation, security, and confidence required to handle workloads across a broad spectrum of data classifications, including unclassified and classified data.
 
-## Safeguarding data with Azure
+## Safeguard data with Azure
 
 A multi-tenant cloud platform implies that multiple customer applications and data are stored on the same physical hardware. Azure uses logical isolation to segregate each customer's applications and data from those of others. This approach provides the scale and economic benefits of multi-tenant cloud services. At the same time, it prevents unauthorized access to customer applications and data. Azure is available globally in more than 60 regions and can be used by customers worldwide to meet data protection and privacy requirements.
 
-Microsoft Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won't store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
+Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won't store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
 
 Some of the options available to customers to safeguard their data in Azure are listed below:
 
@@ -26,4 +26,4 @@ Some of the options available to customers to safeguard their data in Azure are 
 
 With Azure data protection technologies and intelligent edge capabilities (such as Azure Stack Hub and Azure Stack Edge), customers can process confidential and secret data in secure, isolated infrastructure. Options include Azure public multi-tenant regions or top-secret data at the edge, under the customer's full operational control.
 
-Now let's take a closer look at how Microsoft Azure supports public agencies in complying with local data regulations.
+Now let's take a closer look at how Azure supports public agencies in complying with local data regulations.

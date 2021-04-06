@@ -3,8 +3,8 @@ Azure helps public sector customers to deploy various solutions that reflect the
 Now that you've reviewed this module, you should be able to:
 
 * Explain the basic concept and benefits of multi-tenant cloud services.
-* Describe how Microsoft Azure helps customers follow data security requirements in the public sector.
-* Identify scenarios in which Microsoft Azure could provide solutions for data in the public sector.
+* Describe how Azure helps customers follow data security requirements in the public sector.
+* Identify scenarios in which Azure could provide solutions for data in the public sector.
 
 ## Use these resources to discover more
 

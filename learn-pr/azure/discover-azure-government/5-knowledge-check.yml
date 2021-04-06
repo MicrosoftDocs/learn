@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How does Microsoft Azure prevent unauthorized access to customer applications and data?"
+  - content: "How does Azure prevent unauthorized access to customer applications and data?"
     choices:
     - content: "Each customer's applications and data are stored on the separate physical hardware."
       isCorrect: false
@@ -29,20 +29,20 @@ quiz:
     - content: "Customers are advised not to store sensitive information in the cloud."
       isCorrect: false
       explanation: "Incorrect. The cloud provides the levels of isolation, security, and confidence required to handle workloads across a broad spectrum of data classifications, including unclassified and classified data."
-  - content: "What is Compliance Manager?"
+  - content: "What is a service to help automate compliance and cybersecurity risk management in cloud environments?"
     choices:
-    - content: "A tool that helps give customers insight into their own compliance performance."
+    - content: "Hyperscale public cloud."
       isCorrect: false
-      explanation: "Incorrect. Compliance Manager gives customers visibility into their own compliance performance with a risk-based score reference, but it has other key capabilities."
-    - content: "A tool that helps customers understand how Microsoft complies with key standards."
+      explanation: "Incorrect. Hyperscale public cloud provides resiliency in time of natural disaster and warfare."
+    - content: "Logical isolation."
       isCorrect: false
-      explanation: "Incorrect.  Customers can use Compliance Manager to get insight into how Microsoft implements controls specified in leading standards, but it has other key capabilities."
-    - content: "A tool that can provide recommendations for customers to improve their data protection capabilities."
+      explanation: "Incorrect. Azure uses logical isolation to segregate each customer's applications and data from those of others."
+    - content: "Azure Stack Hub."
       isCorrect: false
-      explanation: "Incorrect. Compliance Manager provides recommended actions to improve data protection, but it has other key capabilities."
-    - content: "All of the above."
+      explanation: "Incorrect. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can’t directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment."
+    - content: "Azure Blueprints."
       isCorrect: true
-      explanation: "Correct.  Customers can use Compliance Manager to get insight into their own compliance performance, how Microsoft implements controls specified in leading standards, and how customers can improve their data protection capabilities."
+      explanation: "Correct. Azure Blueprints is a service that helps automate compliance and cybersecurity risk management in cloud environments."
   - content: "Which of the following may provide solution for customers when Microsoft doesn't have an in-country cloud presence and can't meet data sovereignty requirements?"
     choices:
     - content: "Machine learning."
