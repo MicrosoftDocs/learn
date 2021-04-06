@@ -12,7 +12,9 @@ Challenges:
 - Data : volume, security, real-time needs, scale and performance
 - 
 
-:::image type="content" source="../media/overview-sql-edge.png" alt-text="A graphic depicting the interaction of Azure IoT Edge RunTime and Azure SQL Edge. Devices and an IoT Hub are connected to Azure IoT Edge RunTime.":::
+
+
+:::image type="content" source="../media/overview-sql-edge.png" alt-text="A graphic depicting the interaction of Azure SQL Edge, Azure SQL, and SQL Server. Displayed within Azure SQL Edge is Edge Servers, Edge Gateways, and IoT Devices.":::
 
 ## What will we be doing?
 

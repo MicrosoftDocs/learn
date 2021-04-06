@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-sql-edge.1-introduction  
-title: Introduction to Azure SQL Edge
+title: Introduction
 metadata:
   unitType: introduction  
-  title: Introduction to Azure SQL Edge
-  description: xxx << copy from index
+  title: Introduction
+  description: Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. It provides capabilities to create a high-performance data storage and processing layer for IoT applications and solutions.
   ms.date: 03/26/2021  
-  author: warrenaj
-  ms.author: v-anwarr  
+  author: tchristiani
+  ms.author: terrychr  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
