@@ -19,8 +19,11 @@ To complete the exercise, you need the following tools installed on your compute
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-django-deployment
-    cd mslearn-django-deployment
+    cd mslearn-django-deployment/starter
     ```
+
+    > ![NOTE]
+    > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code
 

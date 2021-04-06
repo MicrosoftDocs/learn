@@ -20,6 +20,9 @@ You'll need the following resources installed on your computer to complete the e
     cd ms-learn-django-generic-views/starter
     ```
 
+    > ![NOTE]
+    > The solution for the exercises can be found in the *solution* directory.
+
 ## Open the project in Visual Studio Code
 
 We'll use [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) as our code editor.
