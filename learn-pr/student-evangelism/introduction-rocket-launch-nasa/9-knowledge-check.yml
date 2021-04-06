@@ -17,11 +17,11 @@ quiz:
     choices:
     - content: "Investors should scrutinize the environmental practices of companies that hire data scientists."
       isCorrect: false
-      explanation: "Incorrect. Although a business's environmental practices might be important, they usually don't affect the work of data scientists."
+      explanation: "Incorrect. Although a business's environmental practices might be important, they usually don't affect the work of the data scientists they hire."
     - content: "It's best to analyze as much data as possible, so you learn what issues you need to fix."
       isCorrect: false
-      explanation: "Incorrect. It's critical to begin data science with a central question and to choose carefully data inputs for accurate results."
-    - content: "Be sure that data inputs are accurate because often the output is used to make policy decisions that affect people's health and wellbeing."
+      explanation: "Incorrect. It's critical to begin data science with a central question and to carefully choose data inputs for accurate results."
+    - content: "Be sure that data inputs are accurate because often, output is used to make policy decisions that affect people's health and well-being."
       isCorrect: true
       explanation: "Correct! Using incomplete data or a machine learning model that isn't accurately trained can lead to conclusions that are harmful or life-threatening."
   - content: "What are the four steps in the data science lifecycle?"
