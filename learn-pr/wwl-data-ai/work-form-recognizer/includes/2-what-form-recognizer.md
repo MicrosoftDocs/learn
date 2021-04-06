@@ -33,7 +33,8 @@ Form Recognizer is composed of the following services:
 
 You can access Form Recognizer services by using a REST API or client library SDKs to integrate the services into your workflow or application. 
 
->**Tip**: This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java and Node.js. The underlying REST services can be used by any language.
+> [!TIP]
+> This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java and Node.js. The underlying REST services can be used by any language.
 
 Check out the [documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api) for quick start guides on all the available SDKs and the REST API.
 

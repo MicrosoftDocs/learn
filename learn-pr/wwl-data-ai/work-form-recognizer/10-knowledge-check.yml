@@ -34,17 +34,17 @@ quiz:
     - content: "Use Form Recognizer's prebuilt receipts model"
       isCorrect: true
       explanation: "Correct: Use the Form Recognizer's prebuilt receipts model. It can intelligently extract the required fields even if they have different names in the scanned receipts."
-    - content: "Use a SAS URL with the Form OCR Test Tool"
+    - content: "Use Form Recognizer's Layout service"
       isCorrect: false
-      explanation: "Incorrect:"
+      explanation: "Incorrect: The Layout service will extract the structured output from documents, but the best way to build your application is to use a model specific to receipts."
   - content: "You are building a custom model with Form Recognizer services. What is a difference between the supervised and unsupervised training processes?"
     choices:
     - content: "Unsupervised training requires form images while supervised training requires form images and additional **.json** files."
       isCorrect: true
       explanation: "Correct: The labels in supervised training refer to the the **ocr.json** files, **labels.json** files, and single **fields.json** file needed."
-    - content: "Unsupervised training requires a SAS URL while supervised training does not."
+    - content: "When you store training forms in an Azure storage container, you need to generate a SAS URL for the container for unsupervised training but **not** for supervised training."
       isCorrect: false
-      explanation: "Incorrect: Both training processes require a SAS URL."
+      explanation: "Incorrect: When you store training forms in an Azure storage container, both training processes require a SAS URL."
     - content: "Unsupervised training produces a model ID while supervised training produces labeled JSON files."
       isCorrect: false
       explanation: "Incorrect: Both unsupervised and supervised training processes produce model IDs. The Model ID is needed to analyze new forms."

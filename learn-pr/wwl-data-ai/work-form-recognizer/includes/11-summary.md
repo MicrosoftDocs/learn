@@ -1,4 +1,4 @@
-This module focused on understanding prebuilt models, training custom models, and using the client library SDKs and REST API to return form service results. 
+This module focused on understanding Form Recognizer's prebuilt model service, custom model service, and the client library SDKs and REST API used to return results. 
 
 As you work with Form Recognizer services, you may see ways they can be integrated with other Cognitive Services. For example, you can try integrating Form Recognizer with Cognitive Search using [this tutorial](https://docs.microsoft.com/azure/search/cognitive-search-custom-skill-form).  
 

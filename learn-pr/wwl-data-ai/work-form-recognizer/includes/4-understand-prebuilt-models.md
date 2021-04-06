@@ -1,7 +1,5 @@
 Form Recognizer includes prebuilt models that you can use for common form extraction tasks. 
 
-To use the prebuilt models, use the REST API (or an SDK) to call the model-specific function to start the analysis process and receive a result ID. You can then make a subsequent call to the model-specific **Get Results** function, passing the result ID to retrieve the results. 
-
 ## Receipts
 
 The prebuilt model for receipts enables you to extract common receipt fields, including:
@@ -30,7 +28,8 @@ A few receipt model uses include:
 
 ## Invoices (preview)
 
-The prebuilt model for invoices extracts text and tables such as you commonly find in invoices, and identifies named fields such as:
+The prebuilt model for invoices extracts text and tables and identifies named fields such as:
+
 - CustomerName
 - CustomerId
 - PurchaseOrder
@@ -65,6 +64,7 @@ A few invoice model uses include:
 ## Business Cards (preview)
 
 The prebuilt model for business cards extracts information such as:
+
 - ContactNames
     - FirstName
     - LastName
@@ -81,6 +81,6 @@ The prebuilt model for business cards extracts information such as:
 
 A few business card model uses include:
 - Extracting contact information from business cards to quickly create phone contacts
-- Integrating contact information with a CRM to automatically create contacts using images
+- Automatically creating contacts from images to integrate data with a CRM  
 - Keeping track of sales leads
 

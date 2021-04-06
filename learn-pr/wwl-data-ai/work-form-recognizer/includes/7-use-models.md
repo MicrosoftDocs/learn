@@ -3,7 +3,7 @@
 
 To extract form data using a custom model, use the [**Analyze Form**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeWithCustomForm) REST API function (or equivalent SDK method) with your custom model ID (generated during model training). This function starts the form analysis and returns a result ID, which you can pass in a subsequent call to the [**Get Analyze Form Result**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/GetAnalyzeFormResult) function to retrieve the results.
 
-The specific structure of the results depends on the fields in your forms, and the approach used to train your model. If you trained the model using unlabeled sample forms, the results are returned in a **pageResults** list. If you used labeled forms to train the model, the results are returned in the **documentResults** list. Both are shown below. 
+The specific structure of the results depends on the fields in your forms, and the approach used to train your model. If you trained the model using unlabeled sample forms, the results are returned in a **pageResults** node. If you used labeled forms to train the model, the results are returned in the **documentResults** node. Both are shown below. 
 
 ```JSON
 {
@@ -57,13 +57,13 @@ This function starts the form analysis and returns a result ID, which you can pa
 - [**Get Analyze Business Card Result**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/GetAnalyzeBusinessCardResult) 
 - [**Get Analyze Invoice Result**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/5ed8c9acb78c40a2533aee83) 
 
-A successful JSON response contains **readResults** and **documentResults** nodes. Depending on the form analyzed, the response may also contain **pageResults**.  
+A successful JSON response contains **readResults** and **documentResults** nodes. 
 
 The **readResults** node contains all of the recognized text. Text is organized by page, then by line, then by individual words.
 
 The **documentResults** node contains the form-specific values that the model discovered. This is where you'll find useful key/value pairs like the first name, last name, company name and more.
 
-The **pageResults** section includes the tables extracted.
+Depending on the form analyzed, the response may also contain **pageResults**, which includes the tables extracted.
 
 Example **Get Analyze Receipt Result** response: 
 
@@ -161,8 +161,8 @@ Example **Get Analyze Receipt Result** response:
 
 ## Understanding confidence scores 
 
-If the confidence values of the **"readResult"** are low, you would want to improve the quality of your input documents. 
+If the confidence values of the **readResults** are low, try to improve the quality of your input documents. 
 
-Separately, you may want to check that the form you're trying to analyze has a similar appearance your forms in the training set if the confidence values of the **"pageResults"** are low. If the form varies, consider training more than one model, with each model focused on one form format. 
+You will also want to make sure that the form you are analyzing has a similar appearance to forms in the training set if the confidence values of the **pageResults** are low. If the form appearance varies, consider training more than one model, with each model focused on one form format. 
 
 Depending on the use case, you may find that a confidence score of 80% or above is acceptable for a low-risk application. For more sensitive cases, like reading medical records or billing statements, a score of 100% is recommended.
