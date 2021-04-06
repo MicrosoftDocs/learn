@@ -6,7 +6,7 @@ With constraints, scopes, and prioritization of data provided by SMEs in place, 
 
 For rocket launches, comparison experiments are not as easy to do. You can run simulations, but simulations are based on data, not on literal trial and error in exact conditions. It isn't ethical or economical to undertake a test launch under each unique circumstance to be able to determine with certainty the safest circumstances. Also, many conditions, like weather, can't be controlled. (But some of the data that's used in a simulation comes from failed rocket launches that were attempted under negative circumstances. Otherwise, how would you know the limitations of certain conditions?) You also can use other information to determine constraints, like information that's gathered from aircraft or basic physics or calculations.
 
-### Clean and manipulate data
+## Clean and manipulate data
 
 On first impression, you might be suspicious to learn that one step in machine learning is to "manipulate" the data. In this case, however, manipulate doesn't mean that the data is modified to get a desirable outcome. It means that the data is made to be the most accurate representation of the truth.
 

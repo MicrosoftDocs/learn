@@ -1,0 +1,1 @@
+Finally, when your model is trained and tested, you can deploy your model. When your model is deployed, it's available to be used with any other piece of software. For example, you can create a website where someone enters a picture of a berry and the site identifies the type of berry.

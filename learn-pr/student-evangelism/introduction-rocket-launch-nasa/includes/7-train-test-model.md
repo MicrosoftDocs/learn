@@ -1,6 +1,6 @@
 After you choose a machine learning algorithm to use, you must provide it with data that's grounded in truth. When you input complex data, you'll want the model to output the correct choice. For this step, you use an existing set of data to train the model.
 
-### How would you train a human?
+## How would you train a human?
 
 A machine learning algorithm is trained similar to how a human is trained. 
 
@@ -28,12 +28,3 @@ In this case, your dataset isn't extensive enough. You think you're more accurat
 
 Identifying berries might seem trivial, unless they're poisonous. But the implications apply to machine learning solutions. When these solutions risk people's lives, like in a rocket launch, these kinds of mistakes must be avoided.
 
-### Train and test machine learning models
-
-Machine learning models are similar to the berry identification experiment. You give the model data that has both input and output to train it. However, you don't give it *all* the data because otherwise the model will overfit. It would know only how to identify *those* berries. It wouldn't be able to generalize to a new berry farm on which all the berries are larger, for example. So, you keep some of the data for testing the model. To test the model, you provide it only with the input data. You use the true output to "grade" or "score" the model.
-
-Luckily, the machine learning algorithms you need are already written. The tools required to split your data, train your model, and test your model also are available. You can access and use these tools as a service, so you don't have to install them on your computer.
-
-## Deploy your model
-
-Finally, when your model is trained and tested, you can deploy your model. When your model is deployed, it's available to be used with any other piece of software. For example, you can create a website where someone enters a picture of a berry and the site identifies the type of berry.

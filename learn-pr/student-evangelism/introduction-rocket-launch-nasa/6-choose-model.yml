@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-rocket-launch-nasa.6-choose-model
 metadata:
-  title: Choose the right machine learning algorithm
+  title: 'Step 3: Choose, train, and test a machine learning algorithm'
   description: Understand what machine learning models are and how to create them with algorithms.
   ms.date: 04/05/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the right machine learning algorithm
+title: 'Step 3: Choose, train, and test a machine learning algorithm'
 durationInMinutes: 5
 content: |
   [!include[](includes/6-choose-model.md)]

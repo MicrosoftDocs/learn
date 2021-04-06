@@ -33,8 +33,10 @@ units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.2-predict-weather-for-launch
 - learn.student-evangelism.introduction-rocket-launch-nasa.3-analyze-data
 - learn.student-evangelism.introduction-rocket-launch-nasa.4-basics-machine-learning
+- learn.student-evangelism.introduction-rocket-launch-nasa.4b-business-goal
 - learn.student-evangelism.introduction-rocket-launch-nasa.5-gather-data
 - learn.student-evangelism.introduction-rocket-launch-nasa.6-choose-model
+- learn.student-evangelism.introduction-rocket-launch-nasa.6b-deploy-model
 - learn.student-evangelism.introduction-rocket-launch-nasa.7-train-test-model
 - learn.student-evangelism.introduction-rocket-launch-nasa.8-ethics-machine-learning
 - learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
