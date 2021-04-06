@@ -11,17 +11,17 @@ Consider some of the instances when a person needs to process form data:
 
 Without AI services, people would need to manually sort though form documents to identify important pieces of information. People would also need to manually re-enter the data into other structured forms to record it, and perhaps have to complete this task in real time with a customer. 
 
-Form Recognizer services provide the building blocks for automation by using intelligent services to extract data in real time, at scale, with accuracy. *Azure Form Recognizer* is a vision API that identifies and extracts key-value pairs and table data from form documents; then outputs structured data including the relationships in the original file. 
+Form Recognizer services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Form Recognizer* is a vision API that identifies and extracts key-value pairs and table data from form documents; then outputs structured data including the relationships in the original file. 
 
 **Uses of the Form Recognizer service include**: 
-- Process Automation 
-- Knowledge Mining 
-- Industry Specific Applications        
+- Process automation 
+- Knowledge mining 
+- Industry specific applications        
 
 **In this module, you'll learn how to**: 
 
-- Identify where Form Recognizer's prebuilt models and custom models can be built into applications to speed up processes 
-- Use Form Recognizer's optical character recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
+- Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
+- Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
 - Develop and test custom models using supervised and unsupervised training
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).

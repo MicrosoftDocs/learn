@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extract data from forms with Form Recognizer
-summary: Form Recognizer extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module teaches you how to use the *Azure Form Recognizer* cognitive service.
+summary: Form Recognizer uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Form Recognizer* cognitive service.
 abstract: |
   In this module, you'll learn how to:
-  - Identify where Form Recognizer's prebuilt models and custom models can be built into applications to speed up processes
-  - Use Form Recognizer's optical character recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
+  - Identify how Form Recognizer's layout service, prebuilt models, and custom service can automate processes
+  - Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs, REST API, and Form OCR Test Tool (FOTT)
   - Develop and test custom models using supervised and unsupervised training
 prerequisites: |
   To complete this module, you will need:

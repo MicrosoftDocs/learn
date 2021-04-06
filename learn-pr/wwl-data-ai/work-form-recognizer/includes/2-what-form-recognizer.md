@@ -8,7 +8,7 @@ OCR captures document structure by creating bounding boxes around detected objec
 
 ![JSON output sample.](../media/json-output-sample.jpg)
 
-To build a high-accuracy form recognizer model from scratch, you would need an understanding of deep learning model structures and a lot of time. Without Form Recognizer services, you could face prohibitively long training times which could make a project infeasible. One of the significant ways Form Recognizer saves time is by providing underlying models already trained on thousands of form examples. This enable yous to perform high-accuracy data extraction from forms with little to no model training.   
+To build a high-accuracy form recognizer model from scratch, you would need an understanding of deep learning model structures. Without Form Recognizer services, you could also face prohibitively long training times which could make a project infeasible. One of the significant ways Form Recognizer saves time is by providing underlying models already trained on thousands of form examples. This enables you to perform high-accuracy data extraction from your forms with little to no model training.   
 
 ## Form Recognizer service components 
 
@@ -21,20 +21,20 @@ Form Recognizer is composed of the following services:
     - Business Cards (in preview)
     - Invoices (in preview) 
 
-- **Custom Models**: custom models represent extracted data from forms specific to your business. Custom models can be trained using as few as five forms by calling the Train Custom Model API.  
+- **Custom Models**: custom models extract data from forms specific to your business. Custom models can be trained by calling the Train Custom Model API.  
     - You can train custom models using:
         - Unsupervised learning (with unlabeled forms)
         - Supervised learning (with labeled forms)  
 
 > [!NOTE]
-> Some Form Recognizer features are in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](https://docs.microsoft.com/azure/cognitive-services/form-recognizer?azure-portal=true) for the service, for up-to-date information.
+> Some Form Recognizer features are in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](https://docs.microsoft.com/azure/cognitive-services/form-recognizer?azure-portal=true) for up-to-date information.
 
 ## Access services with the client library SDKs or REST API 
 
 You can access Form Recognizer services by using a REST API or client library SDKs to integrate the services into your workflow or application. 
 
->**Tip**: This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java, Node.js. The underlying REST services can be used by any language.
+>**Tip**: This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java and Node.js. The underlying REST services can be used by any language.
 
 Check out the [documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api) for quick start guides on all the available SDKs and the REST API.
 
-Form Recognizer services are also supported by a user interface Form OCR Test Tool (FOTT) that can perform layout extraction and model training. 
+Form Recognizer services are also supported by a user interface known as the Form OCR Test Tool (FOTT) that can perform layout extraction and model training. 
