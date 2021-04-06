@@ -18,18 +18,18 @@ quiz:
     choices:
     - content: "nconnect"
       isCorrect: false
-      explanation: "nconnect is to increase # of TCP network connections of NFS client."
+      explanation: "nconnect is to increase number of TCP network connections of NFS client."
     - content: "rsize and wsize"
       isCorrect: false
       explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."
     - content: "nocto and actimeo"
       isCorrect: true
       explanation: "It's recommended to use nocto and actimeo on static data volumes with and massive read operations."
-  - content: "You would like to increase # of TCP network connections of NFS client VMS, which mount option will you use?"
+  - content: "You would like to increase number of TCP network connections of NFS client VMS, which mount option will you use?"
     choices:
     - content: "nconnect"
       isCorrect: true
-      explanation: "nconnect can increase # of TCP network connections of NFS client."
+      explanation: "nconnect can increase number of TCP network connections of NFS client."
     - content: "rsize and wsize"
       isCorrect: false
       explanation: "wsize and rsize determine how much data is sent between the NFS client and server for each packet sent."

@@ -1,16 +1,14 @@
-# Goal
-
 In this session, we'll examine the benchmarking results to verify the performance tips we just discussed.
 
 We'll focus on using SPEC SFS® benchmark suite to spawn multi-threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practice.
 
-## Benchmarking Tools
+## Introduce the two benchmarking tools have been utilized
 
 SPEC SFS® suite is a standard industry benchmark for electronic design automation (EDA). Typical EDA workload consists of functional and physical phases. The functional phase predominately drives random I/O and filesystem metadata operations, while the physical phase drives large block sequential reads and writes.
 
 FIO is an I/O tool, which can generate consistent random or sequential read/write loads to benchmark IOPS and throughput of storage target.
 
-## SPEC EDA benchmark
+## Demonstrate benchmark results of SPEC EDA tool
 
 The graph below demonstrates the I/O and latency curves, examining some combinations of below performance practices comparing to "default" that none were applied.
 
@@ -30,7 +28,7 @@ The graph below demonstrates that rsize=wsize=262144(256 K) performs better than
 
 ![Diagram showing the SPEC EDA results to demonstrate that rsize=wsize=262144(256 K) performs better than other settings.](../media/specedarsizewsize.png)
 
-## FIO benchmark
+## Demonstrate benchmark results of FIO tool
 
 Below are the FIO commands to benchmark IOPS and throughput, respectively.
 
