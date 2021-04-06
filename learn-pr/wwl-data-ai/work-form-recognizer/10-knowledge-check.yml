@@ -12,7 +12,7 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 quiz:
-  title: "Knowledge checkIn this module, you have learned how to use the Form Recognizer service to extract data from forms.Consider the following review questions to check your understanding of the topics discussed in this module."
+  title: "Knowledge check In this module, you have learned how to use the Form Recognizer service to extract data from forms.Consider the following review questions to check your understanding of the topics discussed in this module."
   questions:
   - content: "You plan to use a Form Recognizer prebuilt invoice model. To extract form data using the model, what are two calls you need to make to the REST API?"
     choices:
