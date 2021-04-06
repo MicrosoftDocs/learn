@@ -1,8 +1,6 @@
-# Introduction
-
 Azure NetApp Files is widely used as the underlying shared file-storage service in various scenarios, including High Performance Compute (HPC) infrastructure. Azure NetApp Files supports three service levels: Ultra, Premium, and Standard, which is differentiated by allowed maximum throughput.
 
-You will learn how to choose the best Service Level of Azure NetApp Files for your HPC applications.
+You will learn how to choose the best service level of Azure NetApp Files for your HPC applications.
 
 ## Scenario
 
@@ -21,9 +19,9 @@ In this module, you'll examine the decision criteria that determines Azure NetAp
 By the end of this module, you'll be able to:
 
 - Describe the factors that determine throughput limits of Azure NetApp Files volume.
-- Choose the best Service Level of Azure NetApp Files for HPC applications.
+- Choose the best service level of Azure NetApp Files for HPC applications.
 
 ## Prerequisites
 
-- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool, and Volumes.
-- Ability to set up Azure NetApp Files and create a Volume.
+- Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, capacity pool, and volumes.
+- Ability to set up Azure NetApp Files and create a volume.

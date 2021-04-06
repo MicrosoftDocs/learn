@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.introduction  
+uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.introduction  
 title: Introduction  
 metadata:
   unitType: introduction  
   title: Introduction
-  description: Overview of the module including a scenario, objectives and prerequisites.
-  ms.date: 3/17/2021  
+  description: Overview of the module including a scenario, goals, and prerequisites.
+  ms.date: 04/06/2021
   author: mengruts  
   ms.author: mengtsai
   ms.topic: interactive-tutorial

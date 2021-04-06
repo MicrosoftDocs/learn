@@ -1,23 +1,23 @@
 ### YamlMime:Module
-uid: learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications  
+uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications
 metadata:
   moduleType: choose  
-  title: Choose the best Service Level of Azure NetApp Files for your HPC applications
-  description: Choose the best Service Level of Azure NetApp Files for your HPC applications
-  ms.date: 3/17/2021  
+  title: Choose the best service level of Azure NetApp Files for your HPC applications
+  description: Choose the best service level of Azure NetApp Files, based on your throughput requirements including cost considerations.
+  ms.date: 04/06/2021
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best Service Level of Azure NetApp Files for your HPC applications  
-summary: Choose the best Service Level of Azure NetApp Files, based on your throughput requirements including cost considerations.
+title: Choose the best service level of Azure NetApp Files for your HPC applications  
+summary: Choose the best service level of Azure NetApp Files, based on your throughput requirements including cost considerations.
 abstract: | 
   By the end of this module, the learner should be able to: 
     - Describe the factors that determine throughput limits of Azure NetApp Files volume.
-    - Choose the best Service Level of Azure NetApp Files for HPC applications.
+    - Choose the best service level of Azure NetApp Files for HPC applications.
 prerequisites: | 
-    - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, Capacity Pool, and Volumes.
-    - Ability to set up Azure NetApp Files and create a Volume.
+    - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, capacity pool, and volumes.
+    - Ability to set up Azure NetApp Files and create a volume.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: 
   - beginner
@@ -30,10 +30,10 @@ roles:
 products:  
 - azure-netapp-files
 units:
-- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.introduction
-- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.identify-the-decision-criteria
-- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.choose-service-level
-- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.knowledge-check
-- learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.summary
+- learn.azure.choose-service-level-azure-netapp-files-hpc-applications.introduction
+- learn.azure.choose-service-level-azure-netapp-files-hpc-applications.identify-decision-criteria
+- learn.azure.choose-service-level-azure-netapp-files-hpc-applications.choose-service-level
+- learn.azure.choose-service-level-azure-netapp-files-hpc-applications.knowledge-check
+- learn.azure.choose-service-level-azure-netapp-files-hpc-applications.summary
 badge:  
-  uid: learn.choose-the-best-service-level-of-azure-netapp-files-for-your-hpc-applications.badge
+  uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications.badge

@@ -1,12 +1,10 @@
-# Goal
-
 Recall that in the EDA simulation scenario. After identified the throughput or IOPS requirements of the application, we can then decide the most optimal and cost-effective Azure NetApp Files service level. We will use Azure NetApp Files Performance Calculator to achieve this goal.
 
-## Performance Considerations
+## Performance considerations
 
 As you have learned in previous module that, the throughput limit for a volume is determined by a combination of the service level and the volume quota.
 
-Recall the limit of maximum throughput of an Azure NetApp Files Volume is 4,500 MiB/s. At the Premium service level, a Volume quota of 70.31 TiB will provision a throughput limit that is high enough to achieve this level of performance.
+Recall the limit of maximum throughput of an Azure NetApp Files volume is 4,500 MiB/s. At the Premium service level, a volume quota of 70.31 TiB will provision a throughput limit that is high enough to achieve this level of performance.
 
 - 64MiB/s * 70.31 = 4,500 MiB/s
 
@@ -24,9 +22,9 @@ An HPC application needs at least 25 TiB size of volume storage, and need to ens
 
 The output of the Performance Calculator will like:
 
-![Screenshot of the Azure NetApp Files Performance Calculator when specifying 1,500 MiB/s throughput requirement as requirement.](../media/throughputrequirement.png)
+![Screenshot of the Azure NetApp Files Performance Calculator when specifying 1,500 MiB/s throughput requirement as requirement.](../media/throughput-requirement.png)
 
-That is, in this example, Premium service will be the best choice as it achieves throughput requirements with lowest Capacity Pool cost.
+That is, in this example, Premium service will be the best choice as it achieves throughput requirements with lowest capacity pool cost.
 
 ## IOPS requirement example
 
@@ -34,6 +32,6 @@ Another HPC application needs at least 50 TiB size of volume storage, and requir
 
 The output of the Performance Calculator will like:
 
-![Screenshot of the Azure NetApp Files Performance Calculator when specifying 140,000 IOPS requirement as requirement.](../media/iopsrequirement.png)
+![Screenshot of the Azure NetApp Files Performance Calculator when specifying 140,000 IOPS requirement as requirement.](../media/iops-requirement.png)
 
 In this case, Standard will be the best choice as it achieves that specific IOPS requirements and is also the most cost-effective.
