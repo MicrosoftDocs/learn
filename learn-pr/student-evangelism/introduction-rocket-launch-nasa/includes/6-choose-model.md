@@ -1,4 +1,4 @@
-At this point in the data science lifecycle, you have data that best represents the truth about what you're researching. So, it's time to model machine learning to start uncovering knowledge. 
+Step 3 in the data science lifecycle is to choose a machine learning algorithm, and then train and test your model. At this point in the data science lifecycle, you have data that best represents the truth about what you're researching. So, it's time to model machine learning to start uncovering knowledge. 
 
 *Modeling* is the process of choosing what data features most likely will indicate reliable knowledge. These data features can vary. For example, they might be columns in a table, secondary information like the difference between two columns, or something more nuanced like the color of an image.
 

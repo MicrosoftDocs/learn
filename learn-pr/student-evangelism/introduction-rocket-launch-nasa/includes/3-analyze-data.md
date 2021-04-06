@@ -19,7 +19,7 @@ Here are some key factors that NASA takes into account to prepare for a launch:
 
 The 45th Space Wing is a division of the U.S. Space Force that focuses on space exploration and weather as it relates to successful rocket launches. The division has created an [easy-to-follow graphic](https://aka.ms/LearnWithDrG/LaunchForecastFAQ/?azure-portal=true) that shows some of the critical criteria to consider for a safe rocket launch.
 
-## The importance of clouds
+### What you can learn from clouds
 
 You can tell a lot about the local weather by observing the clouds in the sky. The shape, composition, and movement of clouds can help you predict the day's weather, including temperature and whether there will be lightning.
 
