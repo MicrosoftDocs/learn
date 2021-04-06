@@ -55,5 +55,5 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Confidential computing protects data from threats as it's being processed."
     - content: "Azure Stack Hub."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. Azure Stack Hub is an on-premises, cloud-consistent experience for customers who can't directly connect to the internet, or where certain workload types must be hosted in-country because of law, compliance, or sentiment."
