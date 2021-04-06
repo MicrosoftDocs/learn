@@ -10,6 +10,6 @@ metadata:
   ms.author: terrychr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-how-azure-sql-edge-works.md)]

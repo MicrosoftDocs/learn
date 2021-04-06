@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-when-to-use-xxx.md)]
+  [!include[](includes/4-when-to-use-azure-sql-edge.md)]
