@@ -50,11 +50,11 @@ Let's walk through an example:
 
 Note that:
 
-1. The limit of maximum throughput of an Azure NetApp Files volume is 4,500 MiB/s.
+- The limit of maximum throughput of an Azure NetApp Files volume is 4,500 MiB/s.
 
-2. The gross throughput is set by the quota of the volume, not the actual capacity consumed in the volume.
+- The gross throughput is set by the quota of the volume, not the actual capacity consumed in the volume.
 
-3. You can resize the volume quota in anytime, even it is mounted. And changes to QoS will take effect in near real time. You do not need to reboot your VM nor to remount the volume.
+- You can resize the volume quota in anytime, even it is mounted. And changes to QoS will take effect in near real time. You do not need to reboot your VM nor to remount the volume.
 
 And keep in mind that in real-world, storage performance is impacted by a wide range of factors, including the Read/Write mix, block size mix, and access patterns like random or sequential access.
 
