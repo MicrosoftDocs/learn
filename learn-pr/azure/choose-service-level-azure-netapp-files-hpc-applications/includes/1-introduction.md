@@ -23,5 +23,5 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Understand the concepts of storage hierarchy of Azure NetApp Files, which includes NetApp accounts, capacity pool, and volumes.
+- Understand the concepts of storage hierarchy of Azure NetApp Files, which includes Azure NetApp Files accounts, capacity pools, and volumes.
 - Ability to set up Azure NetApp Files and create a volume.

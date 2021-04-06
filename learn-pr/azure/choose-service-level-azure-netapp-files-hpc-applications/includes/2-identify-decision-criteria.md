@@ -22,7 +22,7 @@ Azure NetApp Files is charged based on the provisioned size of capacity pools. T
 
 Volumes are the actual constructs that will be mounted from your VMs and be consumed. Volume quota can be assigned in a range from 100 GB to 100 TB. The total volume capacity can't exceed the size of the capacity pool.
 
-In the preceding example, two volumes are within the capacity pool 1 and the total quota limit can't exceed 4 TiB. All volumes in a pool will have the same service level. In this example, the service level is Premium.
+In the preceding example, two volumes are within capacity pool 1 and the total quota limit can't exceed 4 TiB. All volumes in a pool will have the same service level. In this example, the service level is Premium.
 
 ## Service levels
 
