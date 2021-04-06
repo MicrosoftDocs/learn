@@ -13,6 +13,9 @@ But first, let's take a quick look at what you get with the Quantum Development 
 > [!NOTE]
 > Before you proceed, make sure you have the [.NET Core 3.1 version (both SDK and Core)](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
+> [!NOTE]
+> For Linux users, you may encounter a missing dependency depending on your particular distribution and installation method (e.g. certain Docker images). Please make sure that the `libgomp` library is installed on your system, as the GNU OpenMP support library is required by the quantum simulator of the QDK. On Ubuntu, you can do so by running `sudo apt install libgomp1`, or `yum install libgomp` on CentOS. For other distributions, please refer to your particular package manager.
+
 ## What's the Quantum Development Kit (QDK)?
 
 The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
@@ -39,7 +42,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode&azure-portal=true), select **Install**, then follow the installation steps.
 
 > [!NOTE]
-> If you already have an older version of the QDK, we recommend that you [update to the latest version](/quantum/install-guide/update?azure-portal=true).
+> If you already have an older version of the QDK, we recommend that you [update to the latest version](https://docs.microsoft.com/azure/quantum/install-update-qdk?azure-portal=true).
 > After installing the QDK extension, restart Visual Studio Code to continue the next steps.
 
 ## Verify the installation
@@ -51,13 +54,17 @@ To verify the installation, here you create a basic Q# application.
 Project templates enable you to quickly create Q# applications, libraries, and unit tests.
 
 1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
+<<<<<<< HEAD
 1. Enter **Q#: Install project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
 ![Figure of pop-up installed templates.](../media/install_project_templates.png)
+=======
+1. Enter **Q#: Install command line project templates**.
+>>>>>>> upstream/master
 
 ### Create a project
 
 1. On the **View** menu, select **Command Palette**.
-1. Enter **Q#: Create New Project**.
+1. Enter **Q#: Create new project**.
 
 
 > [!NOTE]
@@ -109,4 +116,4 @@ Great work. You just ran your first Q# program!
 You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
-> If you run into any issues with installation of the QDK, take a look at the [QDK documentaiton](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information.
+> If you run into any issues with installation of the QDK, take a look at the [QDK documentaiton](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or to seek help for troubleshooting visit [GitHub issues](https://github.com/MicrosoftDocs/quantum-docs/issues).

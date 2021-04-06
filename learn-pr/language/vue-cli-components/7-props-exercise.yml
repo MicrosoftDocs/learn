@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.7-props-exercise
+metadata:
+  title: Add props to a component
+  description: Let's add props to a component.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Add props to a component
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-props-exercise.md)]

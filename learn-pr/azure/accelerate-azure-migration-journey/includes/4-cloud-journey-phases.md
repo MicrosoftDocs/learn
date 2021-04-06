@@ -76,7 +76,7 @@ To migrate your applications, you will first need to set up a landing zone. A la
 
 During the migration use a wave-based approach to execute a manageable set of workloads. **Migrate** and **modernize** in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave and perform the move using automated tools. Select the target cloud services to move your workloads into—like Azure IaaS for infrastructure or Azure App Service for web apps.
 
-The [Azure Migration Program](https://azure.microsoft.commigration/migration-program/?azure-portal=true) at Microsoft has determined that projects with six to eight applications in a wave enjoy the most success. This approach enables teams to work in a focused manner thereby increasing the quality of migration and to make improvements along the way.
+The [Azure Migration Program](https://azure.microsoft.com/migration/migration-program/?azure-portal=true) at Microsoft has determined that projects with six to eight applications in a wave enjoy the most success. This approach enables teams to work in a focused manner thereby increasing the quality of migration and to make improvements along the way.
 
 ## Production
 

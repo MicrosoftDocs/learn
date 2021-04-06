@@ -9,6 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 title: "Azure Fundamentals part 2: Describe core Azure services"
 summary: |
   After completing this learning path, you'll be able to:
@@ -93,7 +94,6 @@ products:
 - azure-virtual-network
 - azure-vpn-gateway
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.azure-database-fundamentals
 - learn.azure.azure-compute-fundamentals
 - learn.azure.azure-storage-fundamentals

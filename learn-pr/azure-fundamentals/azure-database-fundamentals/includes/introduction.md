@@ -1,4 +1,4 @@
-Due to a growing number of acquisitions over the last decade, Tailwind Traders uses a variety of database and analytics technologies. As the company begins to migrate existing data workloads and deploy new data workloads to Azure, it needs to understand which Azure technology will be appropriate for each workload. The company's Chief Technology Officer (CTO) has assigned you the task of researching the different database options that are available. This will help your company choose the right options for each of your data scenarios.
+Due to a growing number of acquisitions over the last decade, Tailwind Traders use various database and analytics technologies. As the company begins to migrate existing data workloads and deploy new data workloads to Azure, it needs to understand which Azure technology will be appropriate for each workload. The company's Chief Technology Officer (CTO) has assigned you the task of researching the different database options that are available. This research will help your company choose the right options for each of your data scenarios.
 
 ![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
@@ -6,7 +6,7 @@ Today's applications are required to be highly responsive and always online. To 
 
 The following video provides a brief overview for several of the database services that are available on Azure.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyJvs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyJvs]
 
 In this module, you'll learn more about several of the primary database services that are available on Azure, and you'll analyze some of the reasons why each of these services might be the right choice for your data needs.
 
