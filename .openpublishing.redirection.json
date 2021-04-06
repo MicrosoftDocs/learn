@@ -5309,6 +5309,41 @@
       "source_path": "learn-pr/wwl-data-ai/create-knowledge-store-azure-cognitive-search/8-explore.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-knowledge-store-azure-cognitive-search/",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/2-create-basic.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/3-work-dialogs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/4-exercise-add-dialogs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/5-provide-ability-get-help-cancel.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/6-integrate-language-generation-library.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/7-use-cards-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/8-integrate-language-understanding.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
     }
   ]
 }
