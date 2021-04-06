@@ -6,7 +6,7 @@ In this unit, you'll learn how to define a resource in a Bicep template, how res
 
 ## Define a resource
 
-The main thing you do with Bicep templates is define your Azure resources. Here's an example of what a typical resource definition looks like in Bicep. This example creates a storage account named *toylaunchstorage*.
+The main thing you do with Bicep templates is define your Azure resources. Here's an example of what a typical resource definition looks like in Bicep. This example creates a storage account named `toylaunchstorage`.
 
 ```bicep
 resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
