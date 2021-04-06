@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-form-recognizer.knowledge-check-summary
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Knowledge checkIn this module, you have learned how to use the Form Recognizer service to extract data from forms.Consider the following review questions to check your understanding of the topics discussed in this module."
+  questions:
+  - content: "You plan to use a Form Recognizer prebuilt invoice model. To extract form data using the model, what are two calls you need to make to the REST API?"
+    choices:
+    - content: "Train Model and Get Model Labels"
+      isCorrect: false
+      explanation: "Incorrect: You do not need to train a prebuilt model."
+    - content: "Analyze Invoice and Get Analyze Invoice Result"
+      isCorrect: true
+      explanation: "Correct: The Analyze Invoice function starts the form analysis and returns a result ID, which you can pass in a subsequent call to the Get Analyze Invoice Result function to retrieve the results."
+    - content: "Create Form Recognizer and Get Analyze Invoice Result"
+      isCorrect: false
+      explanation: "Incorrect: While you do need to create a Form Recognizer or Cognitive Service resource to use Form Recognizer services, Create Form Recognizer is not one of the REST API calls used to extract data."
+  - content: "You need to build an application that submits expense claims, extracting the merchant, date, and amount from scanned receipts. What's the **best** way to do this?"
+    choices:
+    - content: "Use the Read API of the Computer Vision service."
+      isCorrect: false
+      explanation: "Incorrect: The Read API of the Computer Vision service can read text from an image, but you'll want to use Form Recognizer to extract key-value pairs."
+    - content: "Use Form Recognizer's prebuilt receipts model"
+      isCorrect: true
+      explanation: "Correct: Use the Form Recognizer's prebuilt receipts model. It can intelligently extract the required fields even if they have different names in the scanned receipts."
+    - content: "Use a SAS URL with the Form OCR Test Tool"
+      isCorrect: false
+      explanation: "Incorrect:"
+  - content: "You are building a custom model with Form Recognizer services. What is a difference between the supervised and unsupervised training processes?"
+    choices:
+    - content: "Unsupervised training requires form images while supervised training requires form images and additional **.json** files."
+      isCorrect: true
+      explanation: "Correct: The labels in supervised training refer to the the **ocr.json** files, **labels.json** files, and single **fields.json** file needed."
+    - content: "Unsupervised training requires a SAS URL while supervised training does not."
+      isCorrect: false
+      explanation: "Incorrect: Both training processes require a SAS URL."
+    - content: "Unsupervised training produces a model ID while supervised training produces labeled JSON files."
+      isCorrect: false
+      explanation: "Incorrect: Both unsupervised and supervised training processes produce model IDs. The Model ID is needed to analyze new forms."
