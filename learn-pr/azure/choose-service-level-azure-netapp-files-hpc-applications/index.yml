@@ -3,20 +3,20 @@ uid: learn.azure.choose-service-level-azure-netapp-files-hpc-applications
 metadata:
   moduleType: choose  
   title: Choose the best service level of Azure NetApp Files for your HPC applications
-  description: Choose the best service level of Azure NetApp Files, based on your throughput requirements including cost considerations.
+  description: Choose the best service level of Azure NetApp Files based on your throughput requirements and including cost considerations.
   ms.date: 04/06/2021
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best service level of Azure NetApp Files for your HPC applications  
-summary: Choose the best service level of Azure NetApp Files, based on your throughput requirements including cost considerations.
+summary: Choose the best service level of Azure NetApp Files based on your throughput requirements and including cost considerations.
 abstract: | 
-  By the end of this module, the learner should be able to: 
+  By the end of this module, you'll be able to: 
     - Describe the factors that determine throughput limits of Azure NetApp Files volume.
     - Choose the best service level of Azure NetApp Files for HPC applications.
 prerequisites: | 
-    - Learner should understand the concepts of storage hierarchy of Azure NetApp Files, including NetApp accounts, capacity pool, and volumes.
+    - Understand the concepts of storage hierarchy of Azure NetApp Files, which includes Azure NetApp Files accounts, capacity pool, and volumes.
     - Ability to set up Azure NetApp Files and create a volume.
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: 
