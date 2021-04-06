@@ -1,6 +1,6 @@
 The National Aeronautics and Space Administration (NASA) collects data from many different sources to help predict whether conditions will be safe for a planned rocket launch. Both for crewed and uncrewed launches, it's critical that weather conditions won't disrupt a rocket's trajectory and speed on its journey through the atmosphere and into space.
 
-NASA considers many potential factors for selecting a launch site for its rockets. The space agency must take into account many data sources to get the most accurate picture of conditions the rocket will need to overcome on its 100-kilometer journey into space.
+NASA considers many potential factors when it selects a launch site for its rockets. The space agency must take into account many data sources to get the most accurate picture of conditions the rocket will need to endure on its 100-kilometer journey into space.
 
 NASA has found that it's safest for a rocket to enter space from Earth in specific atmospheric conditions. Also, to increase the chance of a successful launch, rockets should enter space as close to the equator as possible. And, if a launch needs to be aborted, it's safest to do it over a large body of water. Cape Canaveral in Florida is a place that meets all these requirements.
 

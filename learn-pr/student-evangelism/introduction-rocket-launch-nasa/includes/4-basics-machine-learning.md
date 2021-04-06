@@ -2,7 +2,7 @@ Machine learning is part of the broader field of data science. It's essentially 
 
 Significant work is required to covert raw data to knowledge. For example, imagine you have a garden and you're trying to grow lettuce. You want to optimize your garden so that you can grow the most amount of lettuce in the least amount of time. You can collect a large amount of data that might influence how you set up the most successful environment to grow lettuce.
 
-You can factor in sun exposure, temperature, moisture in the soil and air, the type of lettuce and seed source, exposure to fresh air, the size of the planter, and the quality and amount of soil. The list might be even longer because there might be some factors that affect growth that you might not even be aware of, like noise level or type of noise near your garden.
+You can factor in sun exposure, temperature, moisture in the soil and air, the type of lettuce and seed source, exposure to fresh air, the size of the planter, and the quality and amount of soil. The list might be even longer because there might be some factors that affect growth that you aren't even be aware of, like noise level or the type of noise near your garden.
 
 ## Data science lifecycle
 

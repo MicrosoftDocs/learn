@@ -1,4 +1,4 @@
-Although historical and prediction data is critical, NASA must analyze many critical factors for the day of a rocket launch.
+Although historical and prediction data is essential, NASA must analyze many critical factors for the day of a rocket launch.
 
 NASA collects data from a wide array of sources, including these sources:
 
@@ -25,6 +25,6 @@ You can tell a lot about the local weather by observing the clouds in the sky. T
 
 Temperature and lightning are critical weather factors in a rocket launch. Each rocket has different temperature requirements, depending on how it was built and the rocket's cargo. Based on these factors, each rocket that's launched has its own, specific temperature threshold, and this information about the rocket is proprietary. But generally, there are thresholds for temperature that lead to success or failure during a launch.
 
-As you might guess, it's also critical that no lightning occurs during a launch. Because rockets are highly conductive, the potential for lightning is extremely high and dangerous. Under certain conditions, a rocket launch itself might even generate lightning.
+As you might guess, it's also critical that no lightning occurs during a launch. Because rockets are highly conductive, the potential for lightning is extremely high and dangerous. Under certain conditions, a rocket launch itself might even generate lightning. The shape and composition of clouds are indicators of the likelihood of lightning occurring.
 
-The shape and composition of clouds are indicators of the likelihood of lightning occurring. These factors are primary in determining whether a rocket is allowed to launch and the trajectory it takes.
+NASA analyzes all these weather factors when it determines whether a rocket will launch and the trajectory it takes. Essential information and predictors can be observed in clouds.
