@@ -54,12 +54,12 @@ To verify the installation, here you create a basic Q# application.
 Project templates enable you to quickly create Q# applications, libraries, and unit tests.
 
 1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
-<<<<<<< HEAD
+
 1. Enter **Q#: Install project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
 ![Figure of pop-up installed templates.](../media/install_project_templates.png)
 =======
 1. Enter **Q#: Install command line project templates**.
->>>>>>> upstream/master
+
 
 ### Create a project
 
