@@ -1,7 +1,7 @@
 In this module, you learned about data and how to use it to predict outcomes: 
 
 - You took a look at the data science lifecycle and the machine learning algorithm cheat sheet.
-- You learned about weather data and how it's used to predict the best time to schedule a rocket launch.
+- You learned about weather data and how it's used to predict the best day to schedule a rocket launch.
 - Through the example of identifying berries, you saw how training a machine learning model is similar to training people.
 - You learned that overfitting a machine learning model or using incomplete data can lead to inaccurate results.
 

@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to rocket launches
-summary: Get an introduction to how NASA chooses dates for a rocket launch and discover machine learning fundamentals.
+summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
 abstract: |
  In this module, you'll begin to discover: 
  - The challenges weather can pose for a rocket launch

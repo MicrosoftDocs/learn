@@ -1,30 +1,26 @@
-After you choose a machine learning algorithm to use, you must provide it with data that's grounded in truth. When you input complex data, you'll want the model to output the correct choice. For this step, you use an existing set of data to train the model.
+A machine learning algorithm is trained similar to how a human is trained. So, how would you train a human?
 
-## How would you train a human?
+What if you walk into an area in which five different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including 1 berry from each of the five distinct types of berry plants. You are told the names of the 5 berries you picked from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types of berries.
 
-A machine learning algorithm is trained similar to how a human is trained. 
+Being able to name the five different berry types, you feel sure that you can identify the types of the remaining randomly picked 95 berries. Maybe some blackberries aren't as ripe, so they are smaller and look a bit like raspberries, and some blueberries aren't as ripe and might look more like huckleberries. But even so, for the 100 berries, you'd have a decent idea which berry is which type, and you'd be able to sort all 100 berries by type.
 
-What if you walk into an area in which 5 different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including 1 berry from each of the five distinct types of berry plants. You are told the names of the 5 berries you picked from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types.
+Next, you're asked to collect only raspberries in an adjacent field that contains the same five types of berries. You're confident that you know what raspberries look like:
 
-Being able to name the five different berry types, you feel sure that you can identify the types of the remaining randomly picked 95 berries. Maybe some blackberries aren't as ripe, so they are smaller and look a bit like raspberries, and some blueberries aren't as ripe and might look more like huckleberries. But even so, for the 100 berries, you'd have a decent idea which berry is which, and you'd be able to sort all 100 berries by type.
-
-Next, you're asked to collect only raspberries in a new field that contains the same five types of berries. You're confident that you know what raspberries look like:
-
-:::image type="content" source="../media/raspberry.png" alt-text="Photo of a raspberry." loc-scope="Azure":::
+:::image type="content" source="../media/raspberry.png" alt-text="Photo of a raspberry." border="false" loc-scope="Azure":::
 
 You complete this task and collect 10 raspberries successfully!
 
-To recap: the initial 100 berries were in your initial dataset. You were given the input (the 100 berries) and the output (the correct types of the berries), and you *trained* yourself to be able to identify the berries you picked.
+To recap: the initial 100 berries were in your initial dataset. You were given the input (the 100 berries) and the output (the types of berries that were included), and you *trained* yourself to be able to identify the berries you picked.
 
-Then, you had a test: given any input, identify the type of berry, and select only one output—raspberries. You looked at other berries (input) as you were walking through the berry bushes. You tested your mental model of berries and chose only raspberries. At this point, you believe that your mental model of berries is 100% accurate.
+Then, you had a test: given any input, identify the type of berry, and select only one output—raspberries. You looked at other berries (input) as you were walking through the berry bushes. You tested your mental model of berries and picked only raspberries. At this point, you believe that your mental model of berries is 100% accurate.
 
-But then, you spot a berry plant that looks similar to a raspberry. What you didn't know is that there were actually six berry types in your berry-picking field. You do find more raspberries, but you also collect some of these berries, thinking they might actually be raspberries, although they look a little different:
+But then, you spot a berry plant that looks similar to a raspberry, but a little bit different. What you didn't know is that there were actually six berry types in the new berry-picking field. You do find more raspberries, but you also collect some of the other berries, thinking that they might actually be raspberries, although they do look a little different:
 
 :::image type="content" source="../media/thimbleberry.png" alt-text="Photo of a hand holding a thimbleberry." loc-scope="Azure":::
 
-Both the new berry and a raspberry look different from the other four types of berries, but they look similar to each other. But they are *not* the same type of berry. The type of berry you just picked was a *thimbleberry*.
+Both the new berry and a raspberry look different from the other four types of berries, but they look similar to each other. But they are *not* the same type of berry. The new type of berry you picked was a *thimbleberry*.
 
-In this case, your dataset isn't extensive enough. You think you're more accurate at identifying berries than you actually are.
+In this case, your dataset isn't extensive enough. It would be inaccurate to put a thimbleberry with raspberries just because you think they fit somewhere, and you don't know that there are more than five types of berries. You think you're more accurate at identifying berries than you actually are.
 
-Identifying berries might seem trivial, unless they're poisonous. But the implications apply to machine learning solutions. When these solutions risk people's lives, like in a rocket launch, these kinds of mistakes must be avoided.
+Identifying berries might seem trivial, but the implications apply to machine learning solutions. When these types of solutions risk people's lives, like in a rocket launch, these kinds of data analysis mistakes must be avoided.
 

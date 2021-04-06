@@ -23,7 +23,7 @@ quiz:
       explanation: "Incorrect. It's critical to begin data science with a central question and to carefully choose data inputs for accurate results."
     - content: "Be sure that data inputs are accurate because often, output is used to make policy decisions that affect people's health and well-being."
       isCorrect: true
-      explanation: "Correct! Using incomplete data or a machine learning model that isn't accurately trained can lead to conclusions that are harmful or life-threatening."
+      explanation: "Correct! Using incomplete data or a machine learning model that isn't accurately trained might lead to conclusions that are harmful or life-threatening."
   - content: "What are the four steps in the data science lifecycle?"
     choices:
     - content: "Business understanding, data gathering and preparation, model training and testing, model deployment"
@@ -51,7 +51,7 @@ quiz:
     - content: "To eliminate data that will make it harder to prove what you think must be true."
       isCorrect: false
       explanation: "Incorrect. Data is manipulated to discover what truth the data points to."
-    - content: "To remove incomplete data, so it doesn't skew the output away from the truth."
+    - content: "To remove incomplete or inconsequential data, so it doesn't skew the output away from the truth."
       isCorrect: true
       explanation: "Correct! Output is based on input. You manipulate data to remove input that won't lead to accurate output."
     - content: "To clean up your results, so they are summarized and easy to present."

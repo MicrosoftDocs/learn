@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.introduction-rocket-launch-nasa.6b-deploy-model
 metadata:
-  title: 'Step 4: Deploy a machine learning model'
+  title: Deploy your machine learning model
   description: Deploy your machine learning model.
   ms.date: 04/05/2021
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Step 4: Deploy a machine learning model'
-durationInMinutes: 5
+title: Deploy your machine learning model
+durationInMinutes: 1
 content: |
   [!include[](includes/6b-deploy-model.md)]
