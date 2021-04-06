@@ -37,7 +37,7 @@ quiz:
       explanation: "That's incorrect. This is the definition of a security scope."
     - content: "An object that represents a user, group, service, or managed identity that is requesting access to Azure resources."
       isCorrect: true
-      explanation: "That's correct. Azure authentication uses security principlal to help determine whether a request to access a service should be granted."
+      explanation: "That's correct. Azure authentication uses security principal to help determine whether a request to access a service should be granted."
   - content: "Which of the following is an advantage of using multi-region replication with Cosmos DB?"
     choices:
     - content: "Data will always be consistent in every region."
