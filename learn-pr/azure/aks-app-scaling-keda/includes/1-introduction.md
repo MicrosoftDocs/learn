@@ -1,4 +1,4 @@
-Kubernetes Event Driven Autoscaler (KEDA) works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA), and the Cluster Autoscaler which can extend functionality without overwriting or duplication.
+Kubernetes Event Driven Autoscaler (KEDA) works alongside standard Kubernetes components like the Horizontal Pod Autoscaler (HPA), and the Cluster Autoscaler. KEDA extends functionality without overwriting or duplication.
 
 ## Example scenario
 
