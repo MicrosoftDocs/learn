@@ -2,7 +2,7 @@ Training a custom form recognizer model with unlabeled forms often provides adeq
 
 Supervised training requires an input of form documents _and_ JSON documents. 
 
-![Form documents needed for supervised (with labels) training](../media/labeled-form-documents.jpg)
+![Form documents needed for supervised (with labels) training](../media/labeled-form-documents.png)
 
 To train a custom model using labeled sampled forms:
 
@@ -15,6 +15,4 @@ To train a custom model using labeled sampled forms:
 **OR**
 
 5. Use the Sample Labeling Tool to label and train. 
-
-![Supervised learning workflow diagram.](../media/supervised_learning_workflow.jpg)
-
+    ![Supervised learning workflow diagram.](../media/supervised_learning_workflow.png)

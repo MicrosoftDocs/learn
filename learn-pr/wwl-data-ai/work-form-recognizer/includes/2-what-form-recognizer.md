@@ -1,14 +1,16 @@
-The Form Recognizer service enables you to extract data from forms, including a semantic understanding of the fields in the form and their corresponding values. Form Recognizer is one of many *Cognitive Services*, Azure services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
+Form Recognizer is one of many Cognitive Services, Azure services with REST APIs and client library SDKs that can be used to build intelligence into your applications. 
 
-Form Recognizer uses Optical Character Recognition (OCR) capabilities with deep learning models to extract printed or handwritten text, key-value pairs, selection marks, and tables from documents.
+Form Recognizer uses Optical Character Recognition (OCR) capabilities and deep learning models to extract text, key-value pairs, selection marks, and tables from documents.
 
-![How OCR Works](../media/how-optical-character-recognition-works.jpg)   
+> [!div class="mx-imgBorder"]
+> ![How OCR Works](../media/how-optical-character-recognition-works.png)   
 
-OCR captures document structure by creating bounding boxes around detected objects in an image. The location of the bounding boxes are recorded as coordinates indicating the box's location relative to the rest of the page. Form recognizer services return bounding box data and other information in a JSON file.  
+OCR captures document structure by creating bounding boxes around detected objects in an image. The locations of the bounding boxes are recorded as coordinates in relation to the rest of the page. Form Recognizer services return bounding box data and other information in a structured form with the relationships from the original file.  
 
-![JSON output sample.](../media/json-output-sample.jpg)
+> [!div class="mx-imgBorder"]
+> ![JSON output sample.](../media/json-output-sample.png)
 
-To build a high-accuracy form recognizer model from scratch, you would need an understanding of deep learning model structures. Without Form Recognizer services, you could also face prohibitively long training times which could make a project infeasible. One of the significant ways Form Recognizer saves time is by providing underlying models already trained on thousands of form examples. This enables you to perform high-accuracy data extraction from your forms with little to no model training.   
+To build a high-accuracy model from scratch, people need to build deep learning models, use a large amount of compute resources, and face long model training times. These factors could make a project infeasible. Form Recognizer provides underlying models that have been trained on thousands of form examples. The underlying models enable you to do high-accuracy data extraction from your forms with little to no model training.   
 
 ## Form Recognizer service components 
 
@@ -38,4 +40,4 @@ You can access Form Recognizer services by using a REST API or client library SD
 
 Check out the [documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api) for quick start guides on all the available SDKs and the REST API.
 
-Form Recognizer services are also supported by a user interface known as the Form OCR Test Tool (FOTT) that can perform layout extraction and model training. 
+Form Recognizer services are also supported by a user interface known as the Form OCR Test Tool (FOTT) that can do layout extraction and model training. 
