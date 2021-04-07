@@ -35,3 +35,5 @@ units:
 - learn.languages.powershell-write-first.solution
 - learn.languages.powershell-write-first.knowledge-check
 - learn.languages.powershell-write-first.summary
+badge:
+  uid: learn.languages.powershell-write-first.badge
