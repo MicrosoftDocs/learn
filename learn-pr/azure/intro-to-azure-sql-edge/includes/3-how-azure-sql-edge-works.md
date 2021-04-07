@@ -5,14 +5,14 @@ Azure SQL Edge is a containerized Linux application that runs on either an ARM64
 
 In this unit, you'll learn how Azure SQL Edge: 
 
-- Captures continuous streams of increasing volumes of data in real-time.
+- Captures continuous streams of increasing volumes of data in real time.
 - Integrates data from the edge to cloud to on-premises.
 - Supports a choice of suitable platforms.
 - Provides excellent security and performance.
 
-## Capture continuous streams of data in real-time  
+## Capture continuous streams of data in real time  
 
-Given the volume of data and the need to ingest and analyze this data in a timely manner, its vital that any solution you select at the edge must be capable of capturing continuous streams of increasing amounts of data in real-time. It's also important you can derive valuable insights on that data. SQL Edge supports a built-in streaming engine to help address these needs. 
+Given the volume of data and the need to ingest and analyze this data in a timely manner, its vital that any solution you select at the edge must be capable of capturing continuous streams of increasing amounts of data in real time. It's also important you can derive valuable insights on that data. SQL Edge supports a built-in streaming engine to help address these needs. 
 
 ### Time series and streaming data support
 
@@ -35,7 +35,7 @@ The following graphic displays the following components:
 - The streaming data engine with native analytics.
 - A SQL database engine containing built-in ML capabilities. 
 
-The graphic indicates that the real-time streamed data ingested by the streaming analytics engine can also be aggregated in the local SQL database. 
+The graphic indicates that the real time streamed data ingested by the streaming analytics engine can also be aggregated in the local SQL database. 
 
 > [!TIP] 
 > You can also use standard procedures and functions to process this data as required.
@@ -44,7 +44,7 @@ The graphic indicates that the real-time streamed data ingested by the streaming
 
 ## Integrate data
 
-In the past, those developing IoT apps have realised that edge data cannot always be easily integrated within an comprehensive organizational  data solution. This can result in the data from the IoT devices at the edge being inaccessible in a proprietary solution. Because SQL Edge uses the same codebase as SQL Server and SQL Database, this is no longer a problem. 
+In the past, those developing IoT apps have realized that edge data cannot always be easily integrated within an comprehensive organizational  data solution. This can result in the data from the IoT devices at the edge being inaccessible in a proprietary solution. Because SQL Edge uses the same codebase as SQL Server and SQL Database, this is no longer a problem. 
 
 As indicated in the following graphic, Azure SQL Edge offers compatibility with other Microsoft services and apps by providing:
 
