@@ -1,6 +1,6 @@
 A machine learning model is trained similar to how humans are trained. So, how does a human learn?
 
-What if you walk into an area in which five different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including 1 berry from each of the five distinct types of berry plants. You are told the names of the 5 berries you picked, one from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types of berries.
+What if you walk into an area in which five different types of berries that you've never seen before are growing? Imagine that you're asked to pick 100 random berries, including one berry from each of the five distinct types of berry plants. You are told the names of the five berries you picked, one from each type of berry plant. You have a raspberry, a blueberry, a blackberry, a strawberry, and a huckleberry. The other 95 berries that you picked are one of those types of berries.
 
 Being able to name the five different berry types, you feel sure that you can identify the types of the remaining randomly picked 95 berries. Maybe some blackberries aren't as ripe, so they are smaller and look a bit like raspberries, and some blueberries aren't as ripe and might look more like huckleberries. But even so, for the 100 berries, you'd have a decent idea which berry is which type, and you'd be able to sort all 100 berries by type.
 
@@ -14,7 +14,7 @@ To recap, the initial 100 berries were in your initial dataset. You were given t
 
 Then, you were given a test. In a new field of berries, given any input, identify the type of berry, and select only one output—raspberries. You looked at other berries (input) as you walked among the berry plants. You tested your mental model of berries and picked only raspberries. At this point, you believe that your mental model of berries is 100% accurate.
 
-But then, you spot a berry plant that looks similar to a raspberry, but a little bit different. What you didn't know is that there were actually six berry types in the new berry-picking field. You do find more raspberries, but you also collect some of the other berries, thinking that they might actually be raspberries, although they do look a little different:
+But then, you spot a berry plant that looks similar to a raspberry, but slightly different. What you didn't know is that there were actually six berry types in the new berry-picking field. You do find more raspberries, but you also collect some of the other berries, thinking that they might actually be raspberries, although they do look a little different:
 
 :::image type="content" source="../media/thimbleberry.png" alt-text="Photo of a hand holding a thimbleberry." loc-scope="Azure":::
 
