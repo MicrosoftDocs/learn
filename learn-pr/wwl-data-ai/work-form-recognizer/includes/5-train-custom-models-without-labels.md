@@ -8,7 +8,7 @@ To train a model with unlabeled sample forms:
 2. Generate a shared access security (SAS) URL for the container.
 3. Use the **Train Custom Model** REST API function (or equivalent SDK method) to start training using the forms, passing the SAS URL for the container.
 4. Use the **Get Custom Model** REST API function (or equivalent SDK method) to get the trained **model ID**.
-    ![Unsupervised learning workflow diagram](../media/unsupervised_learning_workflow.png)
+    ![Unsupervised learning workflow diagram](../media/unsupervised-learning-workflow.png)
 
 >[!NOTE]
 >You can [generate a SAS URL](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api#train-a-custom-model) for the container through the Azure Portal.   

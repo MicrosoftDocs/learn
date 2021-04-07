@@ -15,4 +15,4 @@ To train a custom model using labeled sampled forms:
 **OR**
 
 5. Use the Sample Labeling Tool to label and train. 
-    ![Supervised learning workflow diagram.](../media/supervised_learning_workflow.png)
+    ![Supervised learning workflow diagram.](../media/supervised-learning-workflow.png)
