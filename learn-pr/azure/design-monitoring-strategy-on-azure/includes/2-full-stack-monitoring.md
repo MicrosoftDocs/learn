@@ -47,7 +47,7 @@ In addition to monitoring your deployed applications and infrastructure resource
 
 ![Screenshot of Azure Storage KPIs.](../media/2-full-stack-monitoring-03.png)
 
-As the shown in the example, this Azure Monitor storage insight displays the usage and latency for multiple storage accounts across two subscriptions. You can also view, and collect logs related Active Directory for your Azure tenant, and Service Health and Activity logs for Azure subscriptions. A full stack monitoring solution includes visibility into Azure platform resources on which your application and infrastructure depend.
+As shown in the example, this Azure Monitor storage insight displays the usage and latency for multiple storage accounts across two subscriptions. You can also view, and collect logs related Active Directory for your Azure tenant, and Service Health and Activity logs for Azure subscriptions. A full stack monitoring solution includes visibility into Azure platform resources on which your application and infrastructure depend.
 
 ## Why perform security monitoring?
 
