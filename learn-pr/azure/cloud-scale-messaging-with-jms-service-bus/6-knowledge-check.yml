@@ -3,7 +3,7 @@ uid: learn.azure.cloud-scale-messaging-jms-service-bus.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge
+  description: Check your knowledge.
   ms.date: 03/31/2021
   author: axisc
   ms.author: aschhab
@@ -16,7 +16,7 @@ quiz:
       choices:
       - content: "An SDK that I can add as a dependency to my Java application."
         isCorrect: false
-        explanation: "JMS is simply an API specification. It is implemented as part of various SDKs and Spring Boot starter kits." 
+        explanation: "JMS is simply an API specification. It's implemented as part of various SDKs and Spring Boot Starter kits." 
       - content: "An API that enables Java applications to communicate with enterprise messaging brokers."
         isCorrect: true
         explanation: "Java Message Service (JMS) 2.0 is an API specification that enables Java/Java EE/Spring applications to communicate with enterprise messaging brokers."
@@ -37,7 +37,7 @@ quiz:
         - content: "All of the above"
           isCorrect: true
           explanation: "The JMS API works with POJOs, Spring Boot, and Java EE."
-    - content: "What Spring Boot object do you need to send and/or receive a JMS message?"
+    - content: "What Spring Boot object do you need to send or receive a JMS message?"
       choices:
         - content: "Message"
           isCorrect: false
@@ -59,7 +59,7 @@ quiz:
         - content: "TIBCO EMS"
           isCorrect: false
           explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
-        - content: "All of the above/any JMS message broker."
+        - content: "All of the above/any JMS message broker"
           isCorrect: true
           explanation: "You can lift and shift your existing JMS application from any JMS message broker to Azure Service Bus."
 
