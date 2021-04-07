@@ -13,7 +13,13 @@ In this lesson, you built an AI model to detect different types of space rocks.
 
 ## Next steps
 
-Continue with the series and learn how to [Predict rocket launch delays with machine learning](https://docs.microsoft.com/learn/paths/machine-learning-predict-launch-delay-nasa/index).
+Continue with the series and learn how to [Predict rocket launch delays with machine learning][PredictDelays].
 
 > [!TIP]
-> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/XoHR4p8AO9o?azure-portal=true) in a new tab.
+> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module][VideoWalkthrough] in a new tab.
+
+
+<!-- Links -->
+
+[PredictDelays]: https://docs.microsoft.com/learn/paths/machine-learning-predict-launch-delay-nasa/index
+[VideoWalkthrough]: https://youtu.be/XoHR4p8AO9o?azure-portal=true
