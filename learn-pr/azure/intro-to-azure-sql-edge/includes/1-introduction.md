@@ -10,9 +10,13 @@ Because Azure SQL Edge is based on the same engine and technologies as SQL Serve
 
 ## Example scenario
 
-Let's imagine your organization is gathering data at the edge. You're having to manage increasing volumes of data being generated outside your organization and gathered by devices deployed to your edge network. Your developers must create apps that can collect, mine, and analyze this data. But you want to avoid your developers having to create new apps and code to perform these critical tasks. Perhaps you already have the necessary apps within your organization, running on SQL Server. 
+Let's imagine you work for an automotive manufacturing company. You're considering an automotive IoT application for your vehicles. The application will ingest data from many IoT sensors throughout the vehicles your company manufactures. 
 
-It doesn't make sense to have to duplicate effort and create new apps on a proprietary system solely for the data arriving at the edge. By implementing Azure SQL Edge, you can avoid this need. Because it's based on the same codebase as Microsoft SQL Server, Azure SQL Edge provides the same security, a familiar experience for your developers, and the same tool interfaces with which your developers are familiar. This enables you to get up to speed quickly and efficiently. 
+It's important that the data can be used both when the vehicles' apps are online, and also offline. In addition, the data would help with product development and so, ideally, should be easy to synchronize with cloud-based database systems built in Azure SQL.
+
+It doesn't make sense to have to duplicate effort and create new apps on a proprietary system solely for the data arriving at the edge from your vehicle sensors. It's important to be able to develop the app using the SQL Server skills your development team already has. 
+
+By implementing Azure SQL Edge, you can achieve your company's goals for this app. 
 
 ## What will we be doing?
 

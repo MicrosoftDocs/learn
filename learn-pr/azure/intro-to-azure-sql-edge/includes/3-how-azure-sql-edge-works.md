@@ -66,10 +66,10 @@ As indicated in the following graphic, Azure SQL Edge offers compatibility with 
 
 Because edge scenarios often require the flexibility to run on different platforms, SQL Edge provides you with the following options: 
 
-- **Architecture**. Device architecture includes both ARM64-and x64-based architectures
-- **Container OS**. Either Windows or Linux as the host for your container
-- **Container type**. Either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation
-- **Mode**. Online or offline modes to support various edge environments
+- **Architecture**. Device architecture supports both ARM64 and x64-based architectures.
+- **Container OS**. You can choose either Windows or Linux as the host for your container.
+- **Container type**. You can choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
+- **Mode**. Online or offline modes to support various edge environments.
 
 ## Protect data at the edge
 

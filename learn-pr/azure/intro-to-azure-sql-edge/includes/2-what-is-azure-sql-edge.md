@@ -50,15 +50,19 @@ Because Azure SQL Edge shares the same codebase, developers with skills in SQL S
 Azure SQL Edge helps address the challenges when working with apps for IoT devices in the following ways:
 
 - Supports solutions that work with or without network connectivity.
-- Help secure data movement of the local edge data to on-premises datacenters or to Azure.
-- Support for standard tooling, programming languages, and a familiar query language (T-SQL) which help to provide compatibility with existing code.
+- Helps secure data movement of the local edge data to on-premises datacenters or to Azure.
+- Provides support for standard tooling, programming languages, and a familiar query language (T-SQL) which help to provide compatibility with existing code.
+
+   > [!TIP]
+   > SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar.
+
 - Enables artificial intelligence (AI) and analytics at the edge.
 - Includes native support for ingesting time-series data.
 - Delivers excellent security and provides support for regulatory compliance.
-- Supports a large subset of the T-SQL surface area with which developers are familiar.
+
 
 > [!NOTE] 
-> Beyond these compatibilities, you can also use familiar BI tools such as Microsoft Power BI and Tableau software In addition, your developers can also use tools such as Azure Data Studio, SQL Server Management Studio (SSMS), and Visual Studio.. 
+> Beyond these compatibilities, you can also use familiar BI tools such as Microsoft Power BI and Tableau software. In addition, your developers can also use tools such as Azure Data Studio, SQL Server Management Studio, and Visual Studio. 
 
 
 
