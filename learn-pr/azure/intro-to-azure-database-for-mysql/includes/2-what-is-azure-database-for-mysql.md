@@ -42,11 +42,11 @@ Most of these features require little administrative effort, and are all include
 
 Azure Database for MySQL supports common database tools, such as MySQL Workbench and others. By implementing Azure Database for MySQL, you can continue working with familiar tools and platforms.
 
-## How to choose a suitable deployment option
+## How to choose a suitable hosting option
 
-Azure Database for MySQL is available in a number of deployment modes, depending on your needs. These are:
+Azure Database for MySQL is available in a number of hosting options and deployment modes, depending on your needs. These are:
 
-- Azure Database for MySQL, for which there are two options:
+- Azure Database for MySQL, for which there are two deployment modes:
   - Single Server
   - Flexible Server
 - MySQL on Azure VMs

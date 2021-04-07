@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Database for MySQL? 
   description: What is Azure Database for MySQL?
   ms.date: 03/23/2021  
-  author: warrenaj
-  ms.author: v-anwarr  
+  author: tchristiani
+  ms.author: terrychr
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 6

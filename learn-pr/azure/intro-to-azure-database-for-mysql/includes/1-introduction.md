@@ -20,7 +20,7 @@ By migrating to Azure Database for MySQL, you can help your cloud architects and
 
 ## What will we be doing?
 
-We'll assess the capabilities of Azure Database for MySQL and determine if it is a good choice for you to manage your workloads. You'll:
+You'll assess the capabilities of Azure Database for MySQL and determine if it is a good choice for you to manage your workloads. You'll:
 
 - Identify the features of Azure Database for MySQL.
 - Assess whether Azure Database for MySQL can help you address your organization's database requirements. 

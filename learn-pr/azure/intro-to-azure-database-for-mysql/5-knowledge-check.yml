@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 03/23/2021  
-  author: warrenaj
-  ms.author: v-anwarr  
+  author: tchristiani
+  ms.author: terrychr
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 6
@@ -15,7 +15,7 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which of the following MySQL hosting solutions would be optimum if an administrator wants to implement zone redundant high availability?"
+  - content: "Which of the following MySQL hosting solutions would be optimal if an administrator wants to implement zone redundant high availability?"
     choices:
     - content: "MySQL for Azure VMs"
       isCorrect: false
@@ -38,10 +38,10 @@ quiz:
     choices:
     - content: "General Purpose"
       isCorrect: false
-      explanation: "Incorrect. This SKU is better-suited for production workloads requiring high concurrency, scale, and predictable performance."
+      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
     - content: "Memory Optimized"
       isCorrect: false
-      explanation: "Incorrect. This SKU is better-suited for production workloads requiring high concurrency, scale, and predictable performance."
+      explanation: "Incorrect. This SKU is better suited for production workloads requiring high concurrency, scale, and predictable performance."
     - content: "Basic"
       isCorrect: true
       explanation: "Correct. This SKU is best-suited for low-cost development and low-concurrency workloads."
@@ -49,7 +49,7 @@ quiz:
     choices:
     - content: "The database administrator"
       isCorrect: false
-      explanation: "Incorrect. It's doubtful the database admininstrator would have the required skills."
+      explanation: "Incorrect. It's possible that the database administrator might lack the required skills."
     - content: "The operating system administrator for the hosting VM"
       isCorrect: true
       explanation: "In an IaaS environment, your organizational administrator is responsible for many components and features, including high-availability options."
