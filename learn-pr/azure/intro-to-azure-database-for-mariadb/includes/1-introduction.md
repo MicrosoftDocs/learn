@@ -15,7 +15,7 @@ By choosing to implement Azure Database for MariaDB, you can provide for:
 
 ## Example scenario
 
-If your organization currently implements MariaDB databases to support critical workloads, you could benefit from migrating to Azure Database for MariaDB. Azure Database for MariaDB provides for:
+Let's imagine you work at a company that currently implements MariaDB databases to support critical workloads. The cloud architects and developers at your company spend considerable time in server management and troubleshooting issues with the operating systems and databases. You want to migrate to Azure Database for MariaDB, which will provide you the following benefits:
 
 - Built-in high-availability
 - Automatic scaling

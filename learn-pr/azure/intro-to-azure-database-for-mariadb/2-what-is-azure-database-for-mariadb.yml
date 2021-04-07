@@ -6,8 +6,8 @@ metadata:
   title: What is Azure Database for MariaDB? 
   description: What is Azure Database for MariaDB?
   ms.date: 03/29/2021  
-  author: warrenaj
-  ms.author: v-anwarr  
+  author: tchristiani
+  ms.author: terrychr  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 5
