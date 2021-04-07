@@ -18,15 +18,15 @@ The graph below demonstrates the I/O and latency curves, examining some combinat
 
 You'll see the I/O (operations per second) will boost and still maintaining low latency (less than 1 millisecond) when all the above three were applied.
 
-![Diagram showing the SPEC EDA results where the IO boost and still maintaining low latency when all three practices were applied.](../media/specedaresults1.png)
+![Diagram showing the SPEC EDA results where the IO boost and still maintaining low latency when all three practices were applied.](../media/4-benchmarking-results-01.png)
 
 The graph below demonstrates that NFS3 performs much better than NFS 4.1.
 
-![Diagram showing the SPEC EDA results to demonstrate that NFS3 performs much better than NFS 4.1.](../media/specedanfs.png)
+![Diagram showing the SPEC EDA results to demonstrate that NFS3 performs much better than NFS 4.1.](../media/4-benchmarking-results-02.png)
 
 The graph below demonstrates that rsize=wsize=262144(256 K) performs better than other settings.
 
-![Diagram showing the SPEC EDA results to demonstrate that rsize=wsize=262144(256 K) performs better than other settings.](../media/specedarsizewsize.png)
+![Diagram showing the SPEC EDA results to demonstrate that rsize=wsize=262144(256 K) performs better than other settings.](../media/4-benchmarking-results-03.png)
 
 ## Demonstrate benchmark results of FIO tool
 
@@ -48,6 +48,6 @@ fio --name=64kseqwrites --rw=write --direct=1 --ioengine=libaio --bs=64k --numjo
 
 The two graphs below demonstrate that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS and throughput.
 
-![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS.](../media/fioiops.png)
+![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher IOPS.](../media/4-benchmarking-results-04.png)
 
-![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher throughput.](../media/fiothroughput.png)
+![Diagram showing FIO results that when nocto,actimeo=600,nconnect=16 & sysctl tuned, Azure NetApp Files can achieve higher throughput.](../media/4-benchmarking-results-05.png)

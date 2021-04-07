@@ -2,14 +2,14 @@
 uid: learn.improve-azure-netapp-files-performance-of-your-eda/hpc-applications-by-using-best-practices  
 metadata:
   moduleType: standard  
-  title: Improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practices 
-  description: You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice. 
+  title: Improve Azure NetApp Files performance of your EDA/HPC applications by using best practices 
+  description: You will learn how to improve Azure NetApp Files performance of your EDA/HPC applications by using best practice. 
   ms.date: 3/23/2021  
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial 
-title: Improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practices  
-summary: You will learn how to improve Azure NetApp Files Performance of your EDA/HPC Applications by using best practice. 
+title: Improve Azure NetApp Files performance of your EDA/HPC applications by using best practices  
+summary: You will learn how to improve Azure NetApp Files performance of your EDA/HPC applications by using best practice. 
 abstract: | 
   By the end of this module, you'll be able to: 
   - List the best practices that would be able to improve Azure NetApp Files performance.
