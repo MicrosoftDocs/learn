@@ -1,4 +1,15 @@
-In this module, you built an AI model that detects different types of space rocks. You assessed the accuracy of the model and put it to the test trying to predict what types of rocks were shown in random photos.
+In this lesson, you built an AI model to detect different types of space rocks.
+
+- You learned that neural networks are computer systems that are modeled on the human brain and nervous system. You used code to build a neural network for your AI model.
+
+- You provided training data to teach the neural network in your model how to accurately predict types of space rocks in photos. 
+
+- You discovered that the accuracy of an AI model is how often the model is correct in its predictions. The accuracy of the model can be increased by adding more images and epochs during the training.
+
+- You reviewed the steps to extract features from images to use for AI predictions. You used code to find the accuracy of your AI model. 
+
+- You tested your model to predict what types of rocks were shown in random photos.
+
 
 ## Next steps
 
