@@ -8,7 +8,7 @@ In addition, if you choose to use Azure Database for MySQL, you'll also have to 
 - Single Server
 - Flexible Server
 
-In this unit, you'll learn more about the differences between these hosting options and deployment modes. You also learn about the functions and features they provide, together with their specific requirements.
+In this unit, you'll learn more about the differences between these hosting options and deployment modes. You'll also learn about the functions and features they provide, together with their specific requirements.
 
 ## How are the hosting options and deployment modes different?
 
