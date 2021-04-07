@@ -15,7 +15,7 @@ abstract: |
  - Import AI libraries
  - Download and import data to use with an AI program
  - Learn how to clean and separate data 
- - Discover how computers read photos as images in binary format
+ - Discover how computers read photos as images by using binary format
  - Use code to read an image and assign the correct rock type
 
  > [!TIP]
