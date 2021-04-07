@@ -14,4 +14,7 @@ In this module, you will:
 ## Prerequisites
 
 * Ability to write C# at the beginner level
+* Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
+* [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp&azure-portal=true) for Visual Studio Code
+* Experience with using the command line
 * Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
