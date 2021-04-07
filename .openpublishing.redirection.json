@@ -5344,6 +5344,31 @@
       "source_path": "learn-pr/wwl-data-ai/create-bot-with-bot-framework-composer/8-integrate-language-understanding.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
       "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/2-introduce-principles-bot-design.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/2-bot-design-principles",
+      "redirect_document_id": true
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/3-design-conversational-flow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/4-navigation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/5-design-user-experience.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/6-design-hand-off-humans.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/",
+      "redirect_document_id": false
     }
   ]
 }
