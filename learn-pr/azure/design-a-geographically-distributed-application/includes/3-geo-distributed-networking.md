@@ -55,4 +55,4 @@ All the traffic for our shipping portal's web UI and its APIs are done over HTTP
 
 ## Azure CDN
 
-In our single-region architecture, we used Azure CDN to cache static content from Azure Blob Storage. The Azure CDN service is a global network of servers that caches static content close to users. We don't need to modify this service for the multi-region architecture.  However, there are considerations with regards to our Azure Storage account that we'll cover in the next unit.
+In our single-region architecture, we used Azure CDN to cache static content from Azure Blob Storage. The Azure CDN service is a global network of servers that caches static content close to users. We don't need to modify this service for the multi-region architecture.  However, there are considerations with regard to our Azure Storage account that we'll cover in the next unit.
