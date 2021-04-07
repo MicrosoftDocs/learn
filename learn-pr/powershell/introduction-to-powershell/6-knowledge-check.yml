@@ -20,7 +20,7 @@ quiz:
           explanation: Incorrect.
           isCorrect: false
         - content: "`Get-Help command`"
-          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience as it paginates the response and lets you traverse it row by row.
+          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience because it paginates the response and lets you traverse it row by row.
           isCorrect: false
         - content: "`help command`"
           explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
