@@ -4,7 +4,7 @@ metadata:
   title: Launch day weather analysis
   description: Learn how NASA analyzes weather on launch day to predict safety and decide to launch.
   ms.date: 04/05/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
