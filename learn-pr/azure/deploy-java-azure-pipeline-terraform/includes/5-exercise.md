@@ -181,16 +181,22 @@ Let's look at some of the fields we use in the "**Build**" config:
 * **appName**: the name of your existing app service.
 * **package**: the file path to the package or a folder containing your app service contents.
 
-## Bind your Service Connection
+## Add Build Variables
 
-As with our provisioning pipeline, before you save and run the build-and-deploy pipeline, you need to add the variable that will bind to your service connection:
+As with our provisioning pipeline, before you save and run the build-and-deploy pipeline, you need to add your pipeline's variables:
 
-1. Select "**Variables**" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
+1. Select "**Variables**" (Top right)
+1. Add a variable named "**serviceConnection**" with the value as the name of your Service Connection.
 1. Select "**okay**" (bottom-right corner) to save the variable
-1. Finally, select "**run**" (top-right corner) to save and run the pipeline
+1. Add a second variable named "**webAppName**" with your App Service name (same value defined in your Terraform variable "application_name").
+1. Select "**okay**" (bottom-right corner) to save the variable
+1. Select "**save**" (bottom-right corner) to save both the variables
+
+![Screenshot displaying the new variables.](../media/5-variables.png)
 
 ## Watch the pipeline run
 
+1. Select "**run**" (top-right corner) to save and run the pipeline
 1. As you did for your **provision** pipeline, trace the build process through each of the stages and steps.
 1. Verify that your Java application is deployed, is connected to your MySQL database, and is returning data.
 
