@@ -4,7 +4,7 @@ metadata:
   title: Analyze images of rocks by using artificial intelligence
   description: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
   ms.date: 04/11/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

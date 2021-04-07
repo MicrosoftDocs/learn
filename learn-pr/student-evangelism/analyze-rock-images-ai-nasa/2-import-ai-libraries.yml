@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Import Python libraries into Jupyter Notebook
   description: Run code to import the AI libraries to use with your Jupyter Notebook file.
   ms.date: 04/11/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
