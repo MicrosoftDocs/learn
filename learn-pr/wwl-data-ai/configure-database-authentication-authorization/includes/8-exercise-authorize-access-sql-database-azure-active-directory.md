@@ -142,4 +142,4 @@ In this task you will manage access to the database and its objects. The first t
 
 In this exercise you've seen how you can use Azure Active Directory to grant Azure credentials  access to a SQL Server hosted in Azure. You've also used T-SQL statement to create new database users and granted them permissions to run stored procedures.
 
-To finish this exercise select **Done** below.
+To finish this exercise select **Continue** below.
