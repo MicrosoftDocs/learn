@@ -5,8 +5,8 @@ metadata:
   title: Monitoring Java
   description: Monitoring Java
   ms.date: 4/8/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: roryp
+  ms.author: ropreddy
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: monitor-java-azure
 summary: Monitoring Java

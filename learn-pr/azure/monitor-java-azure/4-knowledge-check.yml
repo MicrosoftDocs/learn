@@ -6,8 +6,8 @@ metadata:
   title: knowledge check
   description: knowledge check
   ms.date: 4/8/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: roryp
+  ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: <TODO>
 durationInMinutes: 3
