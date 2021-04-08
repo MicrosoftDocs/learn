@@ -31,7 +31,7 @@ units:
 - learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
 - learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
 - learn.intro-to-azure-lighthouse.4-using-templates
-- learn.intro-to-azure-lighthouse.5-exercise-deploy-azure-resource-management-templates
+- learn.intro-to-azure-lighthouse.5-exercise-deploy-azure-resource-manager-templates
 - learn.intro-to-azure-lighthouse.6-video-cross-tenant-management
 - learn.intro-to-azure-lighthouse.7-video-publish-managed-service
 - learn.intro-to-azure-lighthouse.8-exercise-managing-a-customer
