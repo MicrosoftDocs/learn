@@ -166,7 +166,7 @@ First, you can specify a parameter that indicates whether the deployment is for 
 param environmentType string
 ```
 
-Notice that this code uses some new syntax to specify a list of _allowed values_ for the `environmentName` parameter. Bicep won't let anyone run the template unless they provide one of these values.
+Notice that this code uses some new syntax to specify a list of _allowed values_ for the `environmentName` parameter. Bicep won't let anyone deploy the template unless they provide one of these values.
 
 Next, you can create variables that determine the SKUs to use for the storage account and App Service plan based on the environment:
 
