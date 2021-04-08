@@ -47,6 +47,6 @@ quiz:
     - content: "If an output is added to one of the modules, it will automatically be available for the parent template to use."
       isCorrect: true
       explanation: "The outputs from modules are automatically made available for the parent template to use, such as in defining input parameter values for other modules or in setting the properties on resources."
-    - content: "Modules can't have outputs. Only templates can."
+    - content: "Modules can't have outputs - only templates can."
       isCorrect: false
       explanation: "Modules can define outputs. The outputs from modules are automatically made available to the parent template."
