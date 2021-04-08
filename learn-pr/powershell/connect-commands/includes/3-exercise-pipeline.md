@@ -1,10 +1,10 @@
-In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your PC or laptop to use it.
+In this unit, you use Azure Cloud Shell as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or the [Azure Cloud Shell](https://shell.azure.com) site. You don't have to install anything on your PC or laptop to use it.
 
-Here you'll run commands to construct powerful statements that pipe cmdlets together. You'll run helper cmdlets and formatting cmdlets to filter for the data you need and to ensure the result is usable.
+Here you'll run commands to construct powerful statements that pipe cmdlets together. You'll run helper cmdlets and formatting cmdlets to filter for the data you need and to ensure that the result is usable.
 
 ## Discover the most-used processes on your machine
 
-To manage your machine, you sometimes need to discover what processes run on it and how much memory and CPU they consume. This information tells you what the machine spends its resources on. You can use this information to decide whether to introduce new processes on your machine, to leave the machine as it is, or to free up resources by closing resource-intensive processes. The more you know about the processes that run on your machine, the better.
+To manage your machine, you sometimes need to discover what processes run on it and how much memory and CPU they consume. This information tells you what the machine spends its resources on. You can use this information to decide whether to introduce new processes on your machine, to leave the machine as it is, or to free resources by closing resource-intensive processes. The more you know about the processes that run on your machine, the better.
 
 1. Type `pwsh` in a terminal window to start a PowerShell session:
 
@@ -18,7 +18,7 @@ To manage your machine, you sometimes need to discover what processes run on it 
    Get-Process | Where-Object CPU -gt 1000 | Sort-Object CPU -Descending | SelectObject -First 3
    ```
 
-The exact output you see depends on your machine, but you should see the first three processes whose CPU value is higher than a 1,000. These processes are sorted in a descending order, with the highest CPU value on top. Your output will look similar to the following example.
+The exact output you see depends on your machine, but you should see the first three processes whose CPU value is greater than 1,000. These processes are sorted in descending order, with the greatest CPU value at the top of the list. Your output will look similar to the following example:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName

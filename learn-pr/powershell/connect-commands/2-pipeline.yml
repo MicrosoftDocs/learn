@@ -3,7 +3,7 @@ uid: learn.powershell.connect-commands.2-pipeline
 title: Create a pipeline
 metadata:
   title: Create a pipeline
-  description: This unit describes what a pipeline is and how it can be constructed. Additionally it teaches how the pipeline input is evaluated and how you can use different helper cmdlets.
+  description: In this unit, you learn about pipelines and how to construct them. You also learn how to evaluate pipeline input and use a variety of helper cmdlets.
   author: softchris
   ms.author: chnoring
   ms.date: 02/16/2021
