@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 10
-content: |
-  [!include[](includes/4-speech-model.ipynb)]
+sandbox: true
+notebook: https://github.com/aiadvocates/pytorchfundamentals/raw/main/audio-pytorch/4-speech-model.ipynb

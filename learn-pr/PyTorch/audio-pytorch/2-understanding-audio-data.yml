@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 5
-content: |
-  [!include[](includes/2-understanding-audio-data.ipynb)]
+sandbox: true
+notebook: https://github.com/aiadvocates/pytorchfundamentals/raw/main/audio-pytorch/2-understanding-audio-data.ipynb
