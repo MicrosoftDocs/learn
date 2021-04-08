@@ -22,7 +22,7 @@ Azure Container Registry repositories are private &mdash; they do not support un
 docker login myregistry.azurecr.io
 ```
 
-You will be prompted for a username and password. To find this information, you can either go to the Azure portal and look up the access keys for the registry, or you can run the following command.
+You'll be prompted for a username and password. To find this information, you can either go to the Azure portal and look up the access keys for the registry, or you can run the following command.
 
 ```bash
 az acr credential show --name myregistry
@@ -34,7 +34,7 @@ You *push* an image from your local computer to a Docker registry with the `dock
 docker tag myapp:v1 myregistry.azurecr.io/myapp:v1
 ```
 
-If you run `docker image ls`, you will see two entries for the image: one with the original name, and the second with the new alias.
+If you run `docker image ls`, you'll see two entries for the image: one with the original name, and the second with the new alias.
 
 Upload the image to the registry in Azure Container Registry.
 
@@ -55,7 +55,7 @@ az acr repository show --repository myapp --name myregistry
 ```
 
 > [!NOTE]
-> You will see at least two tags for each image in a repository. One tag will be value you specified in the *acr build* command (*v1* in the example above). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
+> You'll see at least two tags for each image in a repository. One tag will be value you specified in the *acr build* command (*v1* in the previous example). The other will be *latest*. Every time you rebuild an image, Azure Container Registry automatically creates the *latest* tag as an alias for the most recent version of the image.
 
 ## Use Azure Container Instance to run an image
 

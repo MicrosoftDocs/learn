@@ -50,7 +50,9 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --type azureEndpoints \
         --priority 1 \
         --target-resource-id $WestId
-
+    ```
+    
+    ```azurecli
     EastId=$(az network public-ip show \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name eastasia-vm-nic-pip \
@@ -81,19 +83,28 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. Run the following commands to display the IP addresses for each of the resources we've created.
 
+1. Retrieve the address for the West US 2 web app.
+
     ```azurecli
-    # Retrieve the address for the West US 2 web app
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
-    # Retrieve the address for the East Asia web app
+    ```
+
+1. Retrieve the address for the East Asia web app.
+    
+    ```azurecli          
     nslookup $(az network public-ip show \
-                --resource-group <rgn>Sandbox resource group </rgn> \
-                --name eastasia-vm-nic-pip \
-                --query dnsSettings.fqdn \
-                --output tsv)
+            --resource-group learn-d246ef32-6cfd-40d3-84ff-94ac583b0f21 \
+            --name eastasia-vm-nic-pip \
+            --query dnsSettings.fqdn \
+            --output tsv)
+     ```     
+     
+1. Retrieve the address for the Traffic Manager profile.
+     ```azurecli          
     # Retrieve the address for the Traffic Manager profile
     nslookup $(az network traffic-manager profile show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
@@ -133,26 +144,35 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 1. Let's look again at what DNS shows for the web apps and for our Traffic Manager profile. Run these commands.
 
+1. Retrieve the address for the West US 2 web app.
+
     ```azurecli
-    # Retrieve the address for the West US 2 web app
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name westus2-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
-    # Retrieve the address for the East Asia web app
+    ```
+    
+1.  Retrieve the address for the East Asia web app.
+
+    ```azurecli
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name eastasia-vm-nic-pip \ 
                 --query dnsSettings.fqdn \
                 --output tsv)
-    # Retrieve the address for the Traffic Manager profile
+    ```         
+     
+1. Retrieve the address for the Traffic Manager profile.
+
+    ```azurecli            
     nslookup $(az network traffic-manager profile show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --out tsv)
-    ```
+   ```
 
     The address for the Traffic Manager profile should now match the East Asia web app.
 

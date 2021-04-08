@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.data-classification-and-data-protection.6-what-microsoft-cloud-app-security
+title: What is Microsoft Cloud App Security?
+metadata:
+  title: What is Microsoft Cloud App Security?
+  description: What is Microsoft Cloud App Security?
+  ms.date: 03/25/2021
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-what-microsoft-cloud-app-security.md)]

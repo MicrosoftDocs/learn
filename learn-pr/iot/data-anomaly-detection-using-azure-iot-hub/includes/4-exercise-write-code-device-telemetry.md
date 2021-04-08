@@ -13,12 +13,13 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
 1. In the terminal, install the required libraries. Enter:
+
     * **dotnet add package Microsoft.Azure.Devices.Client**
     * **dotnet add package Newtonsoft.Json**
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
+1. From the **File** menu, open the **Program.cs** file, and delete the default contents.
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
+1. After you've entered the following code into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
 
 ::: zone-end
 
@@ -29,6 +30,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. Give the project a friendly name, such as "VibrationDevice".
 
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+
     * **Microsoft.Azure.Devices.Client**
     * **Newtonsoft.Json**
 
@@ -332,9 +334,9 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
     ```
 
     > [!IMPORTANT]
-    > Take a few minutes, and read through the comments in the code. Notice how the vibration math from the description of the scenario in the introduction has worked its way into the code. The most important section of code for learning about IoT messages, starts with the "Create two messages:" comment.
+    > Take a few minutes and read through the comments in the code. Notice how the vibration math from the description of the scenario in the introduction has worked its way into the code. The most important section of code for learning about IoT messages starts with the *Create two messages* comment.
 
-1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+1. Replace the &lt;your device connection string&gt; with the device connection string you saved in the previous unit. No other lines of code need to be changed.
 
 1. Save the **Program.cs** file.
 
@@ -342,7 +344,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ::: zone pivot="vscode"
 
-1. Run the app in the terminal, with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
+1. Run the app in the terminal with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
 
 ::: zone-end
 ::: zone pivot="vstudio"
@@ -351,19 +353,20 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ::: zone-end
 
-1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, start by checking your device connection string.
+2. You should quickly get a console screen similar to the following image. Note the use of green text to show things are working as they should, and red text when errors are happening. If you don't get a screen similar to this image, start by checking your device connection string.
 
-    [![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
+    [![Screenshot showing the vibration telemetry messages.](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
 
-1. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
-1. You can leave this app running, as it's needed for the next section.
+3. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
+
+    You can leave this app running, as it's needed for the next section.
 
 ## Verify the IoT Hub is receiving telemetry
 
-1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** page for the hub. Scroll down to the bottom of the page. Change the time range to one hour. The **Device to cloud messages** plot should show some activity.
+1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** pane for the hub. Scroll down to the bottom of the page. Change the time range to one hour. The **Device to cloud messages** plot should show some activity.
 
-    [![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)](../media/vibration-hub-overview.png#lightbox)
+    [![Screenshot showing the count of telemetry messages being received by the IoT Hub.](../media/vibration-hub-overview.png)](../media/vibration-hub-overview.png#lightbox)
 
-1. If no activity is shown, wait a short while, as there's some latency.
+1. If no activity appears, wait a short while, as there's some latency.
 
 With your device pumping out telemetry, and your hub receiving it, the next step is to route the messages to their correct endpoints.

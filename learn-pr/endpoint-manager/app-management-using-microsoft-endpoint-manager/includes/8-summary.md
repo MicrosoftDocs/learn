@@ -9,6 +9,13 @@ In this module, you've learned about the possible migration path to Microsoft En
 - You can use specially adapted iOS or Android apps that support a layer of protection. These apps are called protected apps and are available as Microsoft apps and partner apps. Partner app providers use the Intune App Software Development Kit (SDK) or the App Wrapping Tool to specifically hook their apps into Intune.
 - The data protection framework is organized into three distinct configuration levels that you can follow to ensure your apps are protected when using Intune.
 
+## Next steps
+
+To determine your mobile device management and mobile application management next steps, see the following resources:
+
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true)
+- [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
+
 ## Learn more
 
 For more information about Microsoft Endpoint Manager, see the following resources:

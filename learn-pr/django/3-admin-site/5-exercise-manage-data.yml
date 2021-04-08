@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.admin-site.exercise-manage-data
+title: Exercise - Manage data
+metadata:
+  title: Exercise - Manage data
+  description: Learn to access data, register models, and update data.
+  ms.date: 2/26/2021  
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-manage-data.md)]

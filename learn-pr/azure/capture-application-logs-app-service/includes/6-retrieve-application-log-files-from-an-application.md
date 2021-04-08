@@ -35,13 +35,13 @@ How you retrieve log files depends on the type of log file, as well as your pref
 
 ### Azure CLI
 
-To download file system log files using the Azure CLI, first copy the log files from the app's file system to your Azure Cloud Shell storage, and then run the following command.
+To download file system log files using the Azure CLI, first copy the log files from the app's file system to Cloud Shell storage, and then run the following command.
 
    ```azurecli
    az webapp log download --log-file \<_filename_\>.zip  --resource-group \<_resource group name_\> --name \<_app name_\>
    ```
 
-To download the zipped log files to your local computer, ready for opening in Microsoft Excel, or other apps, use the file download and upload tool on the Azure Cloud Shell toolbar. 
+To download the zipped log files to your local computer, ready for opening in Microsoft Excel, or other apps, use the file download and upload tool in Cloud Shell toolbar.
 
    > [!NOTE]
    > The Azure CLI download includes all app logs, except for failed request traces.

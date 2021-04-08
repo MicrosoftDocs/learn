@@ -1,4 +1,4 @@
-After you've selected a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment was successful. In this unit, you'll learn various methods for each step in the process.  
+After you've selected a workload to either migrate to or create in Azure SQL, you need to plan your deployment, deploy accordingly, and verify that the deployment was successful. In this unit, you'll learn various methods for each step in the process.
 
 ## Pre-deployment planning
 
@@ -15,7 +15,7 @@ In addition, and perhaps before answering the preceding questions, you need to p
 
 ### Resource limits
 
-The Azure SQL introduction module discussed limits, rates, and capabilities (like IOPS or in-memory OLTP). But there are other resource limits that are affected by your choice of Azure SQL Managed Instance, Azure SQL Database, or options within these choices:  
+The Azure SQL introduction module described limits, rates, and capabilities (like IOPS or in-memory OLTP).But there are other resource limits that are affected by your choice of Azure SQL Managed Instance, Azure SQL Database, or options within these choices:  
 
 * Memory
 * Max log size
@@ -25,7 +25,11 @@ The Azure SQL introduction module discussed limits, rates, and capabilities (lik
 * Max concurrent workers
 * Backup retention
 
-The limits for Azure SQL Managed Instance and Azure SQL Database depend on your choice of purchasing model, service tier, and number of vCores (or DTU in Azure SQL Database only). Within a General Purpose Azure SQL Database instance, your choice of provisioned or serverless compute will also affect these limits. Before deploying, you should review what's included in what you plan to deploy, to ensure that you're starting out with what you need.  
+The limits for Azure SQL Managed Instance and Azure SQL Database depend on your choice of purchasing model, service tier, and number of vCores (or DTU in Azure SQL Database only).
+
+Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices should not inhibit your ability to fully use a SQL Server managed service.
+
+Within a General Purpose Azure SQL Database instance, your choice of provisioned or serverless compute will also affect these limits. Before deploying, you should review what's included in what you plan to deploy, to ensure that you're starting out with what you need.
 
 It's also important to know that Azure SQL resources have overall resource limits *per subscription* and *per region*. If you need to increase your limits, it's possible to request a quota increase in the Azure portal.
 

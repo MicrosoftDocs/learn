@@ -62,7 +62,7 @@ In this section, you configure your IoT hub to publish events as they occur. If 
 1. In the **TOPIC DETAILS** section:
     1. Confirm that the **Topic type** is set to **IoT Hub**.
     1. Confirm that the name of the IoT hub is set as the value for the **Source Resource** field.
-    1. For the **system topic**, enter **twin topic**.
+    1. For the **system topic**, enter **twintopic**.
 1. In the **EVENT TYPES** section:
     1. Select the **Filter to Event Types** drop-down list.
     1. Select only the **Device Telemetry** check box. Clear the check boxes for all other list items.
