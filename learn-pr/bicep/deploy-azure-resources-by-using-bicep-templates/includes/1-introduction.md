@@ -1,4 +1,4 @@
-You can use Bicep to define your Azure resources in a simple templating language and then deploy these resources across multiple environments and applications. Bicep helps reduce manual deployment operations, so you can scale your solutions more easily and with higher quality and consistency.
+Bicep enables you to define your Azure resources in a simple templating language and then deploy these resources across multiple environments and applications. Bicep helps reduce manual deployment operations, so you can scale your solutions more easily and with higher quality and consistency.
 
 ## Example scenario
 
