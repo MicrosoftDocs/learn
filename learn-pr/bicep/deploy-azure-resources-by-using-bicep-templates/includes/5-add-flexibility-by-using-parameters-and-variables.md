@@ -139,7 +139,7 @@ param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
 The default value for the `storageAccountName` parameter now has two parts to it:
 
-- `toylaunch` is a hard-coded string that helps Bicep to understand what this storage account is for.
+- `toylaunch` is a hard-coded string that helps anyone looking at the deployed resource in Azure to understand what this storage account is for.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, and then concatenate it into the string.
 
 > [!TIP]
