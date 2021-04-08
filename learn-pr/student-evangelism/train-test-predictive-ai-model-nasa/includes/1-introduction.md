@@ -1,8 +1,8 @@
 At this point, you have your data imported, cleaned, and ready for training and testing. Now you can create and train an artificial intelligence (AI) model by using the data.
 
-The libraries you imported will do most of the heavy work for you. Your part is to tell the computer how to train your model so it can make predictions.
+The libraries you imported will do most of the heavy work for you. Your job is to tell the computer how to train the model so it can make predictions.
 
-In this Microsoft Learn module, you'll use Visual Studio Code, Python, and Jupyter Notebook to create an AI model that can identify the type of a rock in an image.
+In this Microsoft Learn module, you'll create an AI model with a neural network. The model will identify the type of space rock in an image. We'll use Visual Studio Code, Python, and Jupyter Notebook to build, train, and test the model.
 
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module][VideoWalkthrough] in a new tab.
