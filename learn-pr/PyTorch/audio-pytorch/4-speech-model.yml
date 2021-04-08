@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://github.com/aiadvocates/pytorchfundamentals/raw/main/audio-pytorch/4-speech-model.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/4-speech-model.ipynb

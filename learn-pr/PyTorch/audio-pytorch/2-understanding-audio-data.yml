@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 5
 sandbox: true
-notebook: https://github.com/aiadvocates/pytorchfundamentals/raw/main/audio-pytorch/2-understanding-audio-data.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/2-understanding-audio-data.ipynb
