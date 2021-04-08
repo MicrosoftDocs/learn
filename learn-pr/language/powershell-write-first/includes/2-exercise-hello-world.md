@@ -14,10 +14,10 @@ Azure Cloud Shell is on the right-hand side of the web page. This behaves like a
 terminal window in a sandbox environment. You can type commands directly into the window, or run
 scripts you have written and get the results in the Cloud Shell.
 
-For our scenarios, we'll be using an available version of Visual Studio Code in the Cloud Shell to
+For our scenarios, we'll be using an available version of a code editor in the Cloud Shell to
 write and run scripts.
 
-Type this code into the Cloud Shell terminal on the right:
+1. Type this code into the Cloud Shell terminal on the right:
 
 ```powershell
 New-Item HelloWorld.ps1
@@ -28,18 +28,17 @@ The `New-Item` command will create a new `.ps1` file in the current directory. T
 extension is the file extension for PowerShell scripts.
 
 The `code` command followed by the file name of the script you want to open will open the file in
-Visual Studio Code. Another window opens that allows you to write and edit scripts and save them to
-run in the Cloud Shell. If you want to open a file stored in another location, instead of just the
-filename, you can define a full file path.
+the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and save
+them to run in the Cloud Shell. If you want to open a file stored in another location, instead of
+just the filename, you can define a full file path.
 
-In the opened VSCode window, type the following code:
+2. In the opened code editor window, type the following code:
 
 ```powershell
 Write-Output 'Hello World!'
 ```
 
-Once you have the code fully typed, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code and then
-<kbd>Ctrl</kbd>+<kbd>q</kbd> to quite VSCode.
+3. Once you have the code fully typed, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code.
 
 We'll explain how and why it works soon. But first, you should see it running to make sure you
 didn't type it incorrectly. To do that, you will need to run your code.
@@ -51,7 +50,8 @@ didn't type it incorrectly. To do that, you will need to run your code.
 
 ### Step 2: Run the script
 
-You'll run the script from the Cloud Shell by typing the following command:
+1. You'll run the script from the Cloud Shell by typing the following command into the terminal
+   portion of the Cloud Shell:
 
 ```powershell
 . ./HelloWorld.ps1
@@ -97,9 +97,9 @@ error, and sometimes a suggestion to fix it.
 
 ### Step 4: Create a new file and write code to receive input
 
-Open the **HelloWorld.ps1** file using the same command as earlier. Then, modify the code you wrote
-in the editor to comment it out by adding a `#` before the command. Add the following lines of
-code and the result should look like this:
+1. In the **HelloWorld.ps1** file that should still be open, modify the code you wrote in the editor
+   to comment it out by adding a `#` before the command. Add the following lines of code and the
+   result should look like this:
 
 ```powershell
 # Write-Output -InputObject 'Hello World!'
@@ -108,15 +108,15 @@ $name = Read-Host -Prompt "Please enter your name"
 Write-Output "Congratulations $name! You have written your first code with PowerShell!"
 ```
 
-Do the same thing as before, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code and then
-<kbd>Ctrl</kbd>+<kbd>q</kbd> to quite VSCode. Now, you should run the script with the same command:
+2. Do the same thing as before, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code. Now, you
+   should run the script with the same command:
 
 ```powershell
 . ./HelloWorld.ps1
 ```
 
-Now you should receive a prompt asking you for your name. Type in your name and press
-<kbd>Enter</kbd>.
+3. You should receive a prompt asking you for your name. Type in your name and press
+   <kbd>Enter</kbd>.
 
 The output should show the following message with your name inserted.
 
@@ -131,9 +131,10 @@ be placed anywhere in your code and any text after the `#` on the same line will
 
 ### How did your program work
 
-You invoked a cmdlet called `Write-Output`. Cmdlets are compiled C# gives you access to the [.NET] framework](https://docs.microsoft.com/dotnet/core/introduction)
-and are the main way you use PowerShell. The command syntax is a `Verb-Noun` format. This makes it
-easy to understand what the code is trying to do. Do something to a thing.
+You invoked a cmdlet called `Write-Output`. Cmdlets are compiled code written in [.NET](https://docs.microsoft.com/dotnet/core/introduction)
+based languages like C#. Cmdlets are the main way you use PowerShell. The command syntax is a
+`Verb-Noun` format. This makes it easy to understand what the code is trying to do. The cmdlets name
+is its intent. Do something (Verb) to a thing (Noun).
 
 `Hello World!` and the congratulatory sentence are both **string** inputs for the `Write-Output`
 cmdlet to process and output. A string is a simple data type that computers use. We will learn about
@@ -152,8 +153,8 @@ variable with the dollar symbol (`$`) at the beginning of a word. After the word
 Variables can be named anything, but it's best to name them something that helps you understand
 what it's storing and where to use it. For example, `$name` is storing your name.
 
-Many cmdlets work similarly to the example above. You'll provide an input to the cmdlet, the
-cmdlet will do something, then the cmdlet provides an output. This can be something like writing
+Many cmdlets work similarly to the example above. An input is provided to the cmdlet, the
+cmdlet does something, then the cmdlet provides an output. This can be something like writing
 to the output pane, computing an equation, changing something in the environment, or many other
 things.
 

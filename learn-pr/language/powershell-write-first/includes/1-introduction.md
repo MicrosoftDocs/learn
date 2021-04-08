@@ -16,11 +16,11 @@ encourage you to type along with the exercises in this module and others in this
 Typing the code yourself in each exercise and solving the coding challenges will accelerate your
 learning and teach you small foundational concepts to build on with practice and exploration.
 
-After completing this module, you will be able to:
+## Learning Objectives
 
 - Write your first lines of PowerShell code
-- Write code to print a message directly to the console
-- Write code to receive input from a user in the command line
+- Print a message directly to the console
+- Manage input from a user in the command line
 - Diagnose errors when you type code incorrectly
 - Identify different PowerShell elements like cmdlets, parameters, inputs, and outputs.
 

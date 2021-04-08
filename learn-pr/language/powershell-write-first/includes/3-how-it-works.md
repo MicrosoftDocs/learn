@@ -66,22 +66,23 @@ more robust in many code editors like Visual Studio Code.
 
 ## Compiling code in PowerShell
 
-Programming languages need to be **compiled** so the computer can understand what you want it to
-do. A special program called a **compiler** takes the human-readable code we write, and translates
-it into something the computer can understand.
+Computers aren't good at reading our programs in the way we write them. Programming languages need
+to be translated into something the computer can understand. Different programming languages have a
+few ways of doing this.
 
-Most programming languages have a compiler as an individual step. The user will write their code,
-run it through a compiler, then they can run the program they wrote. Other languages like Python
-have what's called an interpreter that basically compiles the code as it runs. PowerShell works a
-little differently and a little similarly to both of these.
+Many programming languages **compile** as an individual step. The user will write their code, run it
+through a special program called a compiler, and the compiler will produce an executable package to
+run. Other languages like Python have what's called an interpreter that interpret the code for the
+computer and execute the code one line at a time as it's interpreting it. PowerShell works a little
+differently and a little similarly to both of these.
 
-PowerShell compiles into an **AST** (Abstract Syntax Tree) and then compiled into computer code. You
+PowerShell is compiled into an **AST** (Abstract Syntax Tree) first in memory and then run. You
 don't need to do a deep dive here to use PowerShell. All you need to know is that the computer
-checks your code first in the AST, then if everything is ok, your program is compiled and run by the
-computer. This is useful as it checks to make sure your code should run correctly before it tries to
-run in the computer itself where it could make changes and stop halfway due to a syntax error. As
-opposed to an interpreted language like Python that will start running the code until it finds
-something wrong in your syntax.
+checks your code first in the AST looking for major issues. Then, if everything is ok, your program
+is run by the computer without the need for a a compiled executable program. This is useful as it
+checks to make sure your code should run correctly before it tries to run in the computer itself
+where it could make changes and stop halfway due to a syntax error. As opposed to an interpreted
+language like Python that will start running the code until it finds something wrong in your syntax.
 
 ## Should I learn PowerShell first?
 

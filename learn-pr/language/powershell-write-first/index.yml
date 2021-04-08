@@ -18,7 +18,7 @@ abstract: |
   - Identify different elements of PowerShell syntax
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
+iconUrl: /learn/achievements/powershell/powershell-write-first-code.svg
 levels:
 - beginner
 roles:
