@@ -32,7 +32,7 @@ param appServiceAppName string
 
 Let's look at how each part of this definition works:
 - `param` tells Bicep that you're defining a parameter.
-- `appServiceAppName` is the name of the parameter. If someone is deploying the template manually, they may be asked to enter a value, so it's important that the name is clear and understandable. The name is also how you refer to the parameter value within the template, just like with resource symbolic names.
+- `appServiceAppName` is the name of the parameter. If someone is deploying the template manually, they might be asked to enter a value, so it's important that the name is clear and understandable. The name is also how you refer to the parameter value within the template, just like with resource symbolic names.
 - `string` is the type of the parameter. You can specify several different types for Bicep parameters, including `string` (for text), `int` (for numbers), and `bool` (for Boolean true/false values). You can also pass in more complex parameters by using the `array` and `object` types.
 
 > [!TIP]
@@ -75,7 +75,7 @@ Variables are defined in a similar way to parameters, but there are a few differ
 
 ## Expressions
 
-When you're writing templates you often don't want to hard-code values, or even ask for them to be specified in a parameter. Instead, you want to discover values when the template runs. For example, you probably want to deploy all of the resources in a template into a single Azure region - the region where you've created the resource group. Or, you might want to automatically create a unique name for a resource based on a particular naming strategy that your company uses. 
+When you're writing templates, you often don't want to hard-code values or even ask for them to be specified in a parameter. Instead, you want to discover values when the template runs. For example, you probably want to deploy all of the resources in a template into a single Azure region - the region where you've created the resource group. Or, you might want to automatically create a unique name for a resource based on a particular naming strategy that your company uses. 
 
 _Expressions_ in Bicep are a powerful feature that helps you handle all sorts of interesting scenarios. Let's take a look at a few places where you can use expressions in a Bicep template.
 
@@ -94,7 +94,7 @@ Look at the default value of that parameter. It uses a _function_ called `resour
 If someone is deploying this template, they might choose to override the default value here and use a different location.
 
 > [!NOTE]
-> Some resources in Azure can be deployed into only certain locations. You might need to have separate parameters to set the locations of these resources.
+> Some resources in Azure can be deployed into only certain locations. You might need separate parameters to set the locations of these resources.
 
 You can now use the resource location parameter inside the template, like this:
 
@@ -104,7 +104,7 @@ You can now use the resource location parameter inside the template, like this:
 
 Many Azure resources need unique names. In your scenario, you have two resources that need unique names: the storage account and the App Service app. Asking for these values to be set as parameters can make it difficult for whoever uses the template, because they need to find a name that nobody else has used.
 
-Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all of the deployments of the same resources. 
+Bicep has another function called `uniqueString()` that comes in handy when you're creating resource names. When you use this function, you need to provide a _seed value_, which should be different across different deployments but consistent across all deployments of the same resources. 
 
 If you choose a good seed value, you can get the same name every time you deploy the same set of resources. But you'll get a different name whenever you deploy a different set of resources by using the same template. Let's look at how you might use the `uniqueString()` function:
 
@@ -189,4 +189,4 @@ These rules can be translated to:
 > [!TIP]
 > When you create multi-part expressions like this, it's best to use variables rather than embedding the expressions directly into the resource properties. This makes your templates easier to read and understand, because it avoids cluttering your resource definitions with logic.
 
-Now that you have parameters, variables, and expressions in your template, every time your marketing department asks you to deploy a new website for the next toy launch, you can just reuse your template and quickly deploy a new set of resources. Just supply some new parameter values for each environment that you deploy, and you'll be set!
+Now that you have parameters, variables, and expressions in your template, every time your marketing department asks you to deploy a new website for the next toy launch, you can reuse your template and quickly deploy a new set of resources. Just supply some new parameter values for each environment that you deploy, and you'll be set!

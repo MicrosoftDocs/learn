@@ -31,7 +31,7 @@ The output definition includes a few key parts:
 > [!TIP]
 > Outputs can use the same names as variables and parameters. This convention can be helpful if you construct a complex expression within a variable to use within your template's resources, and then you also need to expose the variable's value as an output.
 
-Here's another example of an output. This one will have its value set to the fully qualified domain name (FQDN) of a public IP address resource:
+Here's another example of an output. This one will have its value set to the fully qualified domain name (FQDN) of a public IP address resource.
 
 ```bicep
 output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
@@ -65,9 +65,9 @@ module myModule 'modules/my-module.bicep' = {
 Let's look closely at some key parts of this module definition:
 
 * The `module` keyword tells Bicep that you're about to use another Bicep file as a module.
-* As with resources, modules need a _symbolic name_. You use the symbolic name when you refer to the module's outputs in other parts of the template.
+* Just like with resources, modules need a _symbolic name_. You use the symbolic name when you refer to the module's outputs in other parts of the template.
 * `modules/my-module.bicep` is the path to the module file, relative to the template file. Remember, this is just a regular Bicep file.
-* As with resources, the _name_ property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names that you can use to identify them.
+* Just like with resources, the _name_ property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names that you can use to identify them.
 * You can specify any _parameters_ of the module by using the `params` keyword. When you set the values of each parameter within the template, you can use expressions, template parameters, variables, properties of resources deployed within the template, and outputs from other modules. Bicep will automatically understand the dependencies between the resources.
 
 ## Modules and outputs
@@ -84,4 +84,4 @@ A good Bicep module follows a few key principles:
 > * **Don't put every resource into its own module.** You shouldn't create a separate module for every resource that you deploy. If you have a resource that has lots of complex properties, it might make sense to put that resource into its own module. But in general, it's better for modules to combine multiple resources.
 > * **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs that a module should return, and make sure they're useful to the templates that will include the module.
 > * **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
-> * **A module should not output secrets.** As with templates, don't create module outputs for secret values like connection strings or keys.
+> * **A module should not output secrets.** Just like with templates, don't create module outputs for secret values like connection strings or keys.

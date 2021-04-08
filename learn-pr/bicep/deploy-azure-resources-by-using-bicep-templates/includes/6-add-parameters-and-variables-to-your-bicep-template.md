@@ -88,7 +88,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    var appServicePlanTierName = (environmentType == 'prod') ? 'PremiumV3' : 'Free'
    ```
 
-   Notice that you're setting these variables' values by using the ternary operator to express some if-then-else logic.
+   Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
 

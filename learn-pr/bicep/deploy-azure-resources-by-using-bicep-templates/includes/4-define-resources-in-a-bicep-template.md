@@ -1,5 +1,5 @@
 > [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named *Concierge Subscription*.
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
 
 For your toy launch website, you decide to first create a proof of concept by creating a basic Bicep template. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the template to make it more reusable.
 
@@ -57,7 +57,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     :::image type="content" source="../media/4-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with *bash* as the shell.
+1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
 1. Switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
 
@@ -77,7 +77,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
    - If the version number is version `2.20.0` or later, go to the next section ("Install the Bicep tooling").
 
-   - If the version number is later than `2.11.0` and earlier than `2.20.0`, you need to update your Azure CLI version:
+   - If the version number is later than `2.11.0` and earlier than `2.20.0`, update your Azure CLI version by using this command:
   
       ```azurecli
       az upgrade
@@ -112,7 +112,7 @@ az bicep install
    > [!NOTE]
    > If you've used more than one sandbox recently, there might be more than one Concierge Subscription listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
-1. Get the Concierge Subscription IDs.
+1. Get the Concierge Subscription IDs:
 
    ```azurecli
     az account list \
@@ -137,7 +137,7 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-The following code deploys the Bicep template to Azure. Run the code from the terminal in Visual Studio Code to deploy the template. You'll see a successful deployment. 
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. You'll see a successful deployment. 
 
 ```azurecli
 templateFile="main.bicep"
@@ -202,7 +202,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. After you've signed in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
-1. Set the default subscription for all of the Azure PowerShell commands that you run in this session.
+1. Set the default subscription for all of the Azure PowerShell commands that you run in this session:
 
     ```azurepowershell
     $context = Get-AzSubscription -SubscriptionName 'Concierge Subscription'
@@ -239,7 +239,7 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-The following code deploys the template to Azure. Deploy the template by using Azure PowerShell commands in the terminal. You'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell commands in the terminal. You'll see a successful deployment. 
 
 ```azurepowershell
 $templateFile = 'main.bicep'

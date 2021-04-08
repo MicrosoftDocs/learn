@@ -128,7 +128,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-This output is declared within a Bicep file that we'll use as a module, so it's going to be available only to the parent template. You also need to return the output to the person who's running the template.
+   This output is declared within a Bicep file that we'll use as a module, so it's going to be available only to the parent template. You also need to return the output to the person who's running the template.
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 
