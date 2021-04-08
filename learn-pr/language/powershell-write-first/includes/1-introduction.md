@@ -18,9 +18,7 @@ learning and teach you small foundational concepts to build on with practice and
 
 ## Learning Objectives
 
-- Write your first lines of PowerShell code
-- Print a message directly to the console
-- Manage input from a user in the command line
+- Manage PowerShell inputs and outputs
 - Diagnose errors when you type code incorrectly
 - Identify different PowerShell elements like cmdlets, parameters, inputs, and outputs.
 
