@@ -23,9 +23,9 @@ quiz:
     - content: "Classification."
       isCorrect: false
       explanation: "Incorrect. Classification helps you comply with security regulations by allowing data to be categorized by sensitivity and business impact."
-    - content: "Always encrypted."
+    - content: "Always Encrypted."
       isCorrect: true
-      explanation: "Correct. Always encrypted provides a separation between those who own the data and those who manage it."
+      explanation: "Correct. Always Encrypted provides a separation between those who own the data and those who manage it."
   - content: "When considering whether to deploy Azure SQL Edge to the edge, which of the following criteria relate to developers' skills?"
     choices:
     - content: "Latency."
