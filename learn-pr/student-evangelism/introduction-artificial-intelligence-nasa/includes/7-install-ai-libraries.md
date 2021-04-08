@@ -83,7 +83,7 @@ Now you have an environment you can use for the rest of the learning path. The l
 
 1. Create a Jupyter Notebook file named **ClassifySpaceRockProgram**.
 
-   1. Enter Ctrl + Shift + P to open the **Command** drop-down menu at the top of Visual Studio.
+   1. Enter Ctrl + Shift + P to open the **Command** dropdown menu at the top of Visual Studio.
 
    1. Select **Jupyter: Create new blank notebook**.
      
