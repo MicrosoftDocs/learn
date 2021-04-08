@@ -62,6 +62,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
     1. GitHub
     1. Azure Resources
     1. SQL Server (mssql)
+    1. Live Server
 
 1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
 
