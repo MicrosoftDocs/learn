@@ -67,25 +67,25 @@ Once you choose your client application, you'll:
 
 ::: zone pivot="angular"
 
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="A screenshot illustrating the angular sample application":::
+:::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="A screenshot illustrating the angular sample application":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="A screenshot illustrating the react sample application":::
+:::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="A screenshot illustrating the react sample application":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="A screenshot illustrating the svelte sample application":::
+:::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="A screenshot illustrating the svelte sample application":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="A screenshot illustrating the vue sample application":::
+:::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="A screenshot illustrating the vue sample application":::
 
 ::: zone-end
 
