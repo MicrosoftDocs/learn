@@ -18,7 +18,7 @@ We're ready to add the code to clean and separate the data. First, we'll resize 
 
    ```python
    # Tell the machine what folder contains the image data
-   data_dir = './data'
+   data_dir = './Data'
 
    # Read the data, crop and resize the images, split data into two groups: test and train
    def load_split_train_test(datadir, valid_size = .2):
