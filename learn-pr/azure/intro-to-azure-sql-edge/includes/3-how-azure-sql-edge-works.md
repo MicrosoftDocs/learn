@@ -1,4 +1,4 @@
-Here, we'll discuss how Azure SQL Edge works and whether it is a suitable option for you. You'll learn how Azure SQL Edge helps address the challenges developers face when developing IoT apps.
+Here, you'll learn how Azure SQL Edge works and whether it is a suitable option for you. You'll explore how Azure SQL Edge helps address the challenges developers face when developing IoT apps.
 
 Azure SQL Edge is a containerized Linux application that runs on either an ARM64-based or an x64-based processor. The startup memory footprint for Azure SQL Edge is less than 500 MB. Within this small footprint, you can design and build apps that run on a wide range of IoT devices.
 
@@ -62,7 +62,7 @@ As indicated in the following graphic, Azure SQL Edge offers compatibility with 
   - Azure IoT Edge
   - Azure Stack Edge
 
-:::image type="content" source="../media/consistent-code.png" alt-text="A graphic depicting <!--Andy, this needs to be filled out-->xxx.":::
+:::image type="content" source="../media/consistent-code.png" alt-text="A graphic that depicts the integration capabilities of Azure SQL Edge, as discussed in the preceding text.":::
 
 ## Run Azure SQL Edge on the appropriate platform
 
