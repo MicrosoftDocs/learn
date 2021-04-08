@@ -24,7 +24,7 @@ output appServiceAppName string = appServiceAppName
 The output definition includes a few key parts:
 
 - The `output` keyword tells Bicep that you're defining an output.
-- `appServiceAppName` is the name of the output. When someone runs the template successfully, the output values will include the name that you specified so they can access the values they're expecting.
+- `appServiceAppName` is the name of the output. When someone deploys the template successfully, the output values will include the name that you specified so they can access the values they're expecting.
 - `string` is the type of the output. Bicep outputs support the same types as parameters.
 - A value must be specified for each output. Unlike parameters, outputs always need to have values. Output values can be expressions, references to parameters or variables, or properties of resources that are deployed within the file.
 
