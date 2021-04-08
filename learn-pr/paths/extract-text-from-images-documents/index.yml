@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.extract-text-from-images-documents
 metadata:
-  title: Extract Text from Images and Documents
-  description: Extract Text from Images and Documents
+  title: Extract text from images and documents
+  description: Extract text from images and documents
   ms.date: 04/08/2021
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Extract Text from Images and Documents
+title: Extract text from images and documents
 prerequisites: |
   - Active Azure account
   - Knowledge of Azure portal navigation
