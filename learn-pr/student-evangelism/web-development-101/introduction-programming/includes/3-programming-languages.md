@@ -8,7 +8,7 @@ Programming languages come in different formats and may serve different purposes
 
 Low-level languages typically require fewer steps than high-level languages for a device to interpret instructions. However, what makes high-level languages popular is its readability and support. JavaScript is considered a high-level language.
 
-The following code illustrates the difference between a high-level language with JavaScript and low-level language with ARM assembly code.
+The following code illustrates the difference between a high-level language with JavaScript and low-level assembly language.
 
 ### Code comparison
 

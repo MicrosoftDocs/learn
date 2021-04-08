@@ -2,8 +2,12 @@ Now that you have the explored the basics of programming languages around web de
 
 Compare some programming languages. What are some of the unique traits of JavaScript vs. Java? How about COBOL vs. Go?
 
-## Next Steps
+## Next steps
 
 Study a bit on the different languages available to the programmer. Try to write a line in one language, and then redo it in two others. What do you learn?
 
 There are many tools that a web developer may need that are on the [MDN documentation for client-side tooling](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview?azure-portal=true). Select three tools not covered in the lesson, explain why a web developer would use it, and search for a tool that falls under this category and share its documentation. Do not use the same tool example on MDN docs.
+
+## Credits
+
+This module was first published as a lesson in the **Web Dev for Beginners** curriculum by Azure Advocates. The author of the original lesson is Jasmine Greenaway.
