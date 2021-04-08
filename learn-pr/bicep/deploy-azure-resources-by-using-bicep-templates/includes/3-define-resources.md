@@ -32,7 +32,7 @@ Let's look closely at some key parts of this resource definition:
 * You have to declare a _resource name_, which is the name that the storage account will get assigned in Azure. You set a resource name by using the `name` keyword.
   > [!IMPORTANT]
   > Remember that symbolic names are used only within the Bicep template and don't appear in Azure. Resource names _do_ appear in Azure.
-* You then set other _properties_ of the resource, such as its location, SKU (pricing tier), and kind. The properties that you can define are different for each resource type. Different API versions might introduce different properties too. In this example, we're setting the storage account's access tier to `Hot`.
+* You then set other details of the resource, such as its location, SKU (pricing tier), and kind. There are also properties that you can define, which are different for each resource type. Different API versions might introduce different properties too. In this example, we're setting the storage account's access tier to `Hot`.
 
 > [!TIP]
 > Resource names often have rules that you must follow, like maximum lengths, allowed characters, and uniqueness across all of Azure. The requirements for resource names are different for each Azure resource type. Be sure to understand the naming restrictions and requirements before you add them to your template.
