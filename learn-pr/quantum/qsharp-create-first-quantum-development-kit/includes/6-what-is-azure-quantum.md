@@ -20,7 +20,7 @@ For more details on how this is done in practice, check out Dave Wecker's talk o
 
 For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/honeywell.png" alt="Honeywell">
+<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/honeywell.png" alt="Honeywell provider">
 
 - **Honeywell quantum solutions**: Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurement.
 
@@ -44,7 +44,7 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 - **1Qloud**: Connecting intractable industry problems to innovative solutions.
  
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/1qbit_s.png" alt="1QBit">
+<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/microsoft_n.png" alt="Microsoft">
 
 - **Microsoft QIO**: Ground-breaking optimization algorithms inspired by decades of quantum research.
 
