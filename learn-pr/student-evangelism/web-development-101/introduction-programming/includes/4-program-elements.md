@@ -15,4 +15,4 @@ Variables are statements that instruct a device to save data in its memory. Vari
 There's a chance that some statements will not be executed by a device, it's usually by design, when written by the developer, or by accident when an unexpected error occurs. This type of control of an application makes it more robust and maintainable. Typically these changes in control happen when certain decisions are met. A common statement in modern programming languages, to control how a program is run, is the `if...else` statement.
 
 > [!TIP]
-> You'll learn more about this type of statement in subsequent lessons
+> You'll learn more about this type of statement in subsequent lessons.

@@ -2,10 +2,9 @@ This module covers the basics of programming languages. The topics covered here 
 
 ## Learning Objectives
 
-In this module, you will learn:
+In this module, you will:
 
 - Explore the concept of programming.
 - Understand high and low-level programming.
 - Look at basic elements of a program.
 - Evaluate Useful software and tooling for the professional developer.
-
