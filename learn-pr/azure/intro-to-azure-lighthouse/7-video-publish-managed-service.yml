@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-lighthouse.6-video-publish-managed-service
+uid: learn.intro-to-azure-lighthouse.7-video-publish-managed-service
 metadata:
   title: Publish a managed service offer on the Azure Marketplace
   description: See how to publish on the Azure Marketplace and as a customer how you'd go about accepting and authorizing a service provider to manage your Azure instance.
@@ -11,7 +11,7 @@ metadata:
 title: Publish a managed service offer on the Azure Marketplace
 durationInMinutes: 12
 content: |
-  [!include[](includes/6-video-publish-managed-service.md)]
+  [!include[](includes/7-video-publish-managed-service.md)]
 quiz:
   title: Check your knowledge
   questions:
