@@ -119,7 +119,19 @@ Now you have an environment you can use for the rest of the learning path. The l
 Congratulations! You've installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
 
 
+## Next steps
+
+Continue to the next module in this Learning path and discover how to [analyze images of rocks by using artificial intelligence][AnalyzeImages].
+
+
+> [!Important]
+> If you plan to continue to the next module in this Learning path, leave your Anacoda prompt open and your Jupyter Notebook file open in Visual Studio Code.
+> If you close these applications, or plan to work on the module exercises across multiple sessions, you'll have to reopen the tools and reconfigure your working environment to continue your model development.
+>
+
+
 <!-- Links -->
 
 [AnacondaDownload]: https://www.anaconda.com/products/individual?azure-portal=true
+[AnalyzeImages]: https://docs.microsoft.com/elearn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
 [VideoDownload]: https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true
