@@ -5,7 +5,7 @@ metadata:
   description: See how to create a cross-tenant management for your customers.
   ms.date: 01/08/2020
   author: iankensey
-  ms.author: v-geo
+  ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up cross-tenant management
