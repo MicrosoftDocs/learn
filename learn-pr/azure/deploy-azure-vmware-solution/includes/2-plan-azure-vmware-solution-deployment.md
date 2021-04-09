@@ -44,9 +44,9 @@ An Azure account in an Azure subscription is needed to deploy AVS. The Azure sub
 
 This step depends on the subscription type:
 
-- **EA and MCA customers**: Open a support ticket for an additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
+- **EA and MCA customers**: Open a support ticket for additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
 
-- **CSPs**: Assign an Azure plan to a customer by using the Partner Center. Then, use Partner Center to open a support ticket for an additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
+- **CSPs**: Assign an Azure plan to a customer by using the Partner Center. Then, use Partner Center to open a support ticket for additional host quota. It might take up to five business days to confirm and allocate hosts for the request.
 
 ## Register the resource provider
 
@@ -66,7 +66,7 @@ There are two types of sizing criteria to create AVS assessments within the Azur
 To do the assessment:
 
 1. Choose to **Assess** the environment from within the Azure Migrate project.
-1. In the **Assessment type** drop-down list box, select **Azure VMware Solution (AVS)**.
+1. In the **Assessment type** dropdown list box, select **Azure VMware Solution (AVS)**.
 1. Provide an **Assessment name** and select the **Assessment properties** you want.
 1. Select the **Select machines to assess** tab.
 1. Select **Review + create assessment** to build the assessment.

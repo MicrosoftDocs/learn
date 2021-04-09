@@ -43,7 +43,7 @@ quiz:
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
       explanation: If you're able to deploy the service without issues, you already have the right permissions assigned.
-    - content: Open a new support ticket to have a host quota allocated.
+    - content: Open a new support ticket to have host quota allocated.
       isCorrect: true
       explanation: To deploy AVS, you must open a support request to have bare-metal hosts provisioned in your subscription.
   - content: "At a minimum, which CIDR network-address block does an Azure VMware Solution private cloud require?"

@@ -5,7 +5,7 @@ Imagine you work for a healthcare company that runs production workloads on a VM
 
 Your company has decided to migrate existing VMware workloads to Azure VMware Solution. Azure VMware Solution provides you with vSphere clusters built from dedicated, bare-metal Azure infrastructure. By using Azure VMware Solution, your company doesn't have to change virtualization platforms or alter existing operational patterns.
 
-In this module, you'll learn how to plan and deploy Azure VMware Solution and connect it to your existing, on-premises VMware infrastructure.
+In this module, you'll learn how to plan and deploy Azure VMware Solution and then connect it to your existing, on-premises VMware infrastructure.
 
 ## Learning objectives
 

@@ -64,9 +64,7 @@ Follow these steps:
     | **Address block** | An IP address block for the CIDR network for the private cloud. |
     | **Virtual Network** | The virtual network. Select an existing virtual network, create a new one, or leave the field blank. |
 
-1. After all fields are filled in, select **Review + Create**.
-    >[!NOTE]
-    > The AVS deployment may take up to two full hours to finish.
+1. After all fields are filled in, select **Review + Create**. The AVS deployment might take up to two full hours to finish.
 
 1. When deployment is complete, select the resource group, and then select the private cloud. The **Status** will show **Succeeded**:
 
