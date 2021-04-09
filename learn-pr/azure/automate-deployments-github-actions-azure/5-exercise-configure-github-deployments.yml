@@ -9,8 +9,9 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 15
-interactive: powershell
+  zone_pivot_groups: dev-lang-csharp-node-python
+durationInMinutes: 20
+interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-github-deployments.md)]
