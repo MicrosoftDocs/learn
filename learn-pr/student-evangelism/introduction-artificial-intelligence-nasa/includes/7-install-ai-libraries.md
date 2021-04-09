@@ -118,10 +118,10 @@ Now you have an environment you can use for the rest of the learning path. The l
 
 Congratulations! You've installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
 
-<br/>
+&nbsp;
 ***
 
-### Next step
+### Next steps
 
 Continue to the next module in this Learning path and discover how to [analyze images of rocks by using artificial intelligence][AnalyzeImages].
 
