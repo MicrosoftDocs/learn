@@ -26,4 +26,5 @@ modules:
 - learn.PyTorch.computer-vision-pytorch
 - learn.PyTorch.nlp-pytorch
 - learn.PyTorch.audio-pytorch
-achievement: learn.pytorch-fundamentals.trophy
+trophy:
+  uid: learn.pytorch-fundamentals.trophy
