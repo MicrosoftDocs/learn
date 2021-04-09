@@ -1,5 +1,5 @@
 In order to bring data to a notebook, you have several options.
-Currently it is possible to load data from Azure Blob Storage, Azure Data Lake Store Gen 2, and SQL pool. 
+Currently it is possible to load data from Azure Blob Storage, Azure Data Lake Store Gen 2, and a dedicated SQL pool. 
 Some examples that we're going to show you are:
 * Read a CSV from Azure Data Lake Store Gen2 as a Spark DataFrame
 * Read a CSV from Azure Blob Storage as a Spark DataFrame
@@ -27,12 +27,16 @@ df1 = spark.read.option('header', 'true') \
 ```
 The variables that you create are:
 * account_name
+
 This is your storage account name
 * container_name
+
 This is the name of your storage container
 * relative_path 
+
 The relative path of the file
 * adls_path
+
 Will be created by passing through the above parameters. 
 
 The second possibility is to read a CSV from Azure Blob Storage as a Spark DataFrame.
@@ -59,12 +63,17 @@ df = spark.read.option("header", "true") \
 ```
 The parameters that it takes into account are:
 * blob_account_name
+
 This is the name of your blob account.
 * blob_container_name
+
 This is the name of the blob container the file is in. 
 * blob_relative_path
+
 This is the relative path pointing to the csv you want to read. 
+
 * blob_sas_token
+
 Your blob sas token. 
 
 The third possibility is to read data from the primary storage account through using the Data tab in the synapse studio environment. 
