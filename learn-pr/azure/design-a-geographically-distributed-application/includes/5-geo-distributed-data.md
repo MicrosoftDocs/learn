@@ -1,8 +1,8 @@
 The final part of our application's architectural design to consider is the data storage tier. We want to make sure that data is both readable and writable with full functionality after a region-wide failure.
 
-In the shipment tracking portal, we chose to use Azure Front Door to send all requests to App Services in East US. If East US fails, Front Door detects the failure and sends requests to duplicate App Services components in West US. In our original, single-region architecture, we stored relational data in Azure SQL Database and semi-structured data in Cosmos DB. Now, we want to understand how we can ensure that both databases remain available if East US fails.
+In the shipment tracking portal, we chose to use Azure Front Door to send all requests to App Services in East US. If East US fails, Front Door detects the failure, and sends requests to duplicate App Services components in West US. In our original, single-region architecture, we stored relational data in Azure SQL Database and semi-structured data in Cosmos DB. Now, we want to understand how we can ensure that both databases remain available if East US fails.
 
-Here, we'll learn how to replicate data between regions and how to ensure that failover can occur quickly if necessary.
+Here, we'll learn how to replicate data between regions, and how to ensure that failover can occur quickly, if necessary.
 
 ![A diagram showing multi-region architecture databases](../media/5-multi-region-web-app-data.png)
 
@@ -10,10 +10,8 @@ Here, we'll learn how to replicate data between regions and how to ensure that f
 
 To create a multi-region implementation of Azure SQL Database to store relational data, we can use either:
 
-- **Active geo-replication**
-- **Auto failover groups**
-
-Let's examine these options in more detail:
+- Active geo-replication
+- Auto failover groups
 
 ### Active geo-replication
 
@@ -35,7 +33,7 @@ For the shipping portal, we'll create a secondary database in West US. We'll the
 Consider using an auto failover group if you want to automate the failover of the writeable database without writing custom code to trigger it. Also, use auto failover groups if our database runs in a managed instance of Azure SQL Database.
 
 > [!IMPORTANT]
-> The replication that underlies both active geo-replication and auto-failover groups are asynchronous. An acknowledgment is sent to the client when a change is applied to the primary replica. At this point, the transaction is considered complete, and replication occurs. If a failure occurs, the latest changes made in the primary database may not have replicated to the secondary. Keep in mind that, after a disaster, the most recent database changes may have been lost.
+> The replication that underlies both active geo-replication and auto failover groups are asynchronous. An acknowledgment is sent to the client when a change is applied to the primary replica. At this point, the transaction is considered complete, and replication occurs. If a failure occurs, the latest changes made in the primary database may not have replicated to the secondary. Keep in mind that, after a disaster, the most recent database changes may have been lost.
 
 ## Azure Cosmos DB
 

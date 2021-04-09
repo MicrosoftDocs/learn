@@ -12,13 +12,16 @@ To complete the exercises, you'll need the following items installed on your com
 
 ## Clone the starter repository
 
-1. Open a command or terminal window.
-1. Run the following commands to clone the starter repository and change the directory to the project:
+1. Open a command window or terminal.
+1. Run the following commands to clone the starter repository and change to the project's directory.
 
     ```bash
-    git clone [URL HERE]
-    cd [FOLDER HERE]
+    git clone https://github.com/MicrosoftDocs/mslearn-django-views-templates
+    cd mslearn-django-views-templates/starter
     ```
+
+    > ![NOTE]
+    > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code
 

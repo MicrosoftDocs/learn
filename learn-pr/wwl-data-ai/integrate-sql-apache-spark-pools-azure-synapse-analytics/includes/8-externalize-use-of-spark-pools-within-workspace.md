@@ -28,4 +28,3 @@ Third, if you see the storage account listed, right-click on the listing workspa
 Lastly, you add the User to the / folder with "Execute" Access Permission and select "Ok".
 
 It is imperative that you don't select "Default" when you don't intend to do so. 
-

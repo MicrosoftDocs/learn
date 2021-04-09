@@ -1,4 +1,4 @@
-Microsoft Azure provides a robust alerting and monitoring solution: Azure Monitor. You use Azure Monitor to configure notifications and alerts for your key systems and applications. These alerts will ensure that the correct team knows when a problem arises.
+Microsoft Azure provides a robust alerting and monitoring solution, called Azure Monitor. You use Azure Monitor to configure notifications and alerts for your key systems and applications. These alerts will ensure that the correct team knows when a problem arises.
 
 You work for a large shipping company that recently deployed several web applications to the Azure platform. Due to a configuration error, the customer-facing order tracker was offline. The issue wasn't identified until customers started complaining that they couldn't track their orders. As a consequence, customer satisfaction with your service dropped.
 

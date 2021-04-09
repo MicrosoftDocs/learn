@@ -20,51 +20,52 @@ quiz:
     choices:
     - content: "Platform-as-a-Service (PaaS)"
       isCorrect: false
-      explanation: "PaaS is a valid cloud computing category."
+      explanation: "Incorrect. PaaS is a valid cloud computing category."
     - content: "Networking-as-a-Service (NaaS)"
       isCorrect: true
-      explanation: "NaaS isn't a cloud computing category."
+      explanation: "Correct. NaaS isn't a cloud computing category."
     - content: "Infrastructure-as-a-Service (IaaS)"
       isCorrect: false
-      explanation: "IaaS is a valid cloud computing category."
+      explanation: "Incorrect. IaaS is a valid cloud computing category."
     - content: "Software-as-a-Service (SaaS)"
       isCorrect: false
-      explanation: "SaaS is a valid cloud computing category."
+      explanation: "Incorrect. SaaS is a valid cloud computing category."
   - content: "Which of the following statements is true?"
     choices:
     - content: "With Operating Expenses (OpEx), you are responsible for purchasing and maintaining your computing resources."
       isCorrect: false
-      explanation: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
+      explanation: "Incorrect. With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
     - content: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
       isCorrect: true
+      explanation: "Correct. With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
     - content: "With Capital Expenses (CapEx), you are only responsible for the computing resources that you use."
       isCorrect: false
-      explanation: "With Capital Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
+      explanation: "Incorrect. With Capital Expenses (CapEx), you are not only responsible for the computing resources that you use, but are also responsible the purchase and maintenance your computing resources."
   - content: "Which of the following options isn't a type of cloud computing?"
     choices:
     - content: "Distributed cloud"
       isCorrect: true
-      explanation: "A distributed cloud isn't a valid type of cloud computing."
+      explanation: "Correct. A distributed cloud isn't a valid type of cloud computing."
     - content: "Hybrid cloud"
       isCorrect: false
-      explanation: "A hybrid cloud is a valid type of cloud computing."
+      explanation: "Incorrect. A hybrid cloud is a valid type of cloud computing."
     - content: "Private cloud"
       isCorrect: false
-      explanation: "A private cloud is a valid type of cloud computing."
+      explanation: "Incorrect. A private cloud is a valid type of cloud computing."
     - content: "Public cloud"
       isCorrect: false
-      explanation: "A public cloud is a valid type of cloud computing."
+      explanation: "Incorrect. A public cloud is a valid type of cloud computing."
   - content: "Which of the following choices isn't a benefit of using cloud services?"
     choices:
     - content: "Scalability"
       isCorrect: false
-      explanation: "Cloud computing allows your resources to be scaled both vertically and horizontally."
+      explanation: "Incorrect. Cloud computing allows your resources to be scaled both vertically and horizontally."
     - content: "Geographic isolation"
       isCorrect: true
-      explanation: "You can choose to create resources in a single region; however, one of the primary advantages to cloud computing is geographic distribution."
+      explanation: "Correct. You can choose to create resources in a single region; however, one of the primary advantages to cloud computing is geographic distribution."
     - content: "Disaster recovery"
       isCorrect: false
-      explanation: "Cloud computing provides a wealth of different technologies that enable disaster recovery."
+      explanation: "Incorrect. Cloud computing provides a wealth of different technologies that enable disaster recovery."
     - content: "High availability"
       isCorrect: false
-      explanation: "One of the primary advantages to cloud computing is that it enables your applications to provide a continuous user experience with no apparent downtime, even when things go wrong."
+      explanation: "Incorrect. One of the primary advantages to cloud computing is that it enables your applications to provide a continuous user experience with no apparent downtime, even when things go wrong."
