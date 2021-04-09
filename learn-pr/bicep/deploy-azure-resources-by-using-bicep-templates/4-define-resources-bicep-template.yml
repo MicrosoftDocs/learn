@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-azure-resources-bicep.define-resources-in-a-bicep-template
+uid: learn.azure.deploy-azure-resources-bicep.define-resources-bicep-template
 title: Exercise - Define resources in a Bicep template
 sandbox: true
 metadata:
@@ -14,4 +14,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-define-resources-in-a-bicep-template.md)]
+  [!include[](includes/4-define-resources-bicep-template.md)]
