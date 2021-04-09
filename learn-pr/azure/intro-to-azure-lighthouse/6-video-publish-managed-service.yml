@@ -11,7 +11,7 @@ metadata:
 title: Publish a managed service offer on the Azure Marketplace
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-video-publish-managed-service.md)]
+  [!include[](includes/6-video-publish-managed-service.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -5,12 +5,12 @@ metadata:
   title: Exercise - Manage customer resources
   description: In this exercise, you will explore how to manage customer resources with Azure Lighthouse
   ms.date: 04/08/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: SCuffy
+  ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
 azureSandbox: false
 content: |
-  [!include[](includes/10-exercise-manage-customer-resources.md)]
+  [!include[](includes/7a-exercise-manage-customer-resources.md)]
   

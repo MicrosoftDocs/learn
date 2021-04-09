@@ -5,12 +5,12 @@ metadata:
   title: Exercise - Manage a customer
   description: In this exercise, you will explore how to manage customers with Azure Lighthouse
   ms.date: 04/08/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: SCuffy
+  ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20
 azureSandbox: false
 content: |
-  [!include[](includes/8-exercise-managing-a-customer.md)]
+  [!include[](includes/6a-exercise-managing-a-customer.md)]
   
