@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 10
-content: |
-  [!include[](includes/4-multilayer-dnn.ipynb)]
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/computer-vision-pytorch/4-multilayer-dnn.ipynb

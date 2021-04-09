@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 15
 sandbox: true
-notebook: https://raw.githubusercontent.com/aiadvocates/pytorchfundamentals/main/intro-to-pytorch/9-quickstart.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/9-quickstart.ipynb

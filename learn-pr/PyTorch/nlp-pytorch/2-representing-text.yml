@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 10
-content: |
-  [!include[](includes/2-representing-text.ipynb)]
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/nlp-pytorch/2-representing-text.ipynb
