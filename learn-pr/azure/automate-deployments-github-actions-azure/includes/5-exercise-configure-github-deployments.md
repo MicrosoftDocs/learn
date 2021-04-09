@@ -26,15 +26,11 @@ Here, you'll leverage GitHub Actions to configure and deploy the services you de
 > [!TIP]
 > If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the **...** > **Push** which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
+1. Select the **...** > **Push** which will kick off a build. Confirm the **Deploy Azure SQL Database schema** workflow completes successfully by navigating to the repository in GitHub and selecting **Actions**.
 
 ## Import Route Data into Azure SQL Database
 
-1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
-
-    ```powershell
-    bash
-    ```
+Next, you need to import the bus route information data into Azure SQL Database from a flat file.
 
 1. Start a sqlcmd session with the below commands. Note you'll need to add your server name and password.
 
@@ -81,7 +77,7 @@ Here, you'll leverage GitHub Actions to configure and deploy the services you de
     GO
     ```
 
-1. Finally, select **CTRL+C** to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
+1. Finally, select **CTRL+C** to exit sqlcmd.
 
 ## Configure Azure Function App with GitHub Actions
 
@@ -94,16 +90,6 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Select your **Function App**.
 
-1. Under **Settings**, select **Configuration**.
-
-1. Select **New application setting** and add **`RealTimeFeedUrl`** with value **`https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json`**. Select **OK**.
-
-1. Select **New application setting** and add **`AzureSQLConnectionString`** with the value from your **local.settings.json** file. Select **OK**.
-
-1. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You will update this later. Select **OK**.
-
-1. Select **Save** to add the new settings. Select **Continue** to confirm.
-
 1. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
 
 1. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
@@ -114,19 +100,19 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 ::: zone pivot="node"
 
-1. Next, use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **nodefunction.yml.template** to **nodefunctions.yml**.
+1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **nodefunction.yml.template** to **nodefunctions.yml**.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-1. Next, use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **pythonfunction.yml.template** to **pythonfunctions.yml**.
+1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **pythonfunction.yml.template** to **pythonfunctions.yml**.
 
 ::: zone-end
 
 ::: zone pivot="csharp"
 
-1. Next, use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **dotnetfunction.yml.template** to **dotnetfunctions.yml**.
+1. Next, go back to Visual Studio Code. Use the **Explorer** tab in Visual Studio Code to rename the corresponding workflow file under **.github** > **workflows** from **dotnetfunction.yml.template** to **dotnetfunctions.yml**.
 
 ::: zone-end
 
@@ -136,7 +122,7 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Navigate to your GitHub repository for this sample and select **Actions** to monitor the deployment of your Azure Function App action.
 
-## Monitor and observe results
+## Monitor and observe Azure Function results
 
 Now that everything is updated, it's time to monitor the results (and your inbox).
 
@@ -147,83 +133,47 @@ Now that everything is updated, it's time to monitor the results (and your inbox
 1. When a bus activates a GeoFence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
 
 > [!TIP]
-> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence. If you want to trigger it, connect to your Azure SQL Database in Azure Data Studio and run the following T-SQL:
->
->```sql
->    DECLARE @RC int
->    DECLARE @payload NVARCHAR(max) = N'[{
->            "DirectionId": 1,
->            "RouteId": 100113,
->            "VehicleId": 1,
->            "Position": {
->                "Latitude": 47.61703550242447,
->                "Longitude": -122.14263367613601 
->            },
->            "TimestampUTC": "20201031"
->        },{
->            "DirectionId": 2,
->            "RouteId": 100113,
->            "VehicleId": 2,
->            "Position": {
->                "Latitude": 47.61703550242447,
->                "Longitude": -122.14263367613601 
->            },
->            "TimestampUTC": "20201030"
->        },{
->            "DirectionId": 2,
->            "RouteId": 100113,
->            "VehicleId": 2,
->            "Position": {
->                "Latitude": 47.61528240582737,
->                "Longitude": -122.14308643341062
->            },
->            "TimestampUTC": "20201031"
->    }]';
->    EXECUTE @RC = [web].[AddBusData] 
->       @payload
->    GO
->```
-
-## Monitor results in the Azure portal
-
-Now that everything is deployed, it's time to monitor the results in the Azure portal and compare to what you saw locally.
-
-1. Once the actions are completed, navigate back to the Azure portal to your Azure Function App.
-
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. Select **Functions** under *Functions* > **GetBusData** > **Monitor**.
-
-1. Review the results under the **Invocations** and **Logs** tabs. They should be similar to what you saw in the terminal when you ran the function locally.
-
-1. Just like locally, you might notice that if a bus enters or exits a GeoFence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
+> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence.
 
 ## Configure GitHub Actions for Azure Static Web Apps
 
+Before you can configure the application settings for Azure Static Web Apps, you have to update the auto-generated GitHub Action workflow to reflect the folders in the GitHub repository.
+
+1. In Visual Studio Code, select **Source Control** > **...** > **Pull**. This will pull down the new workflow file.
+
+1. Navigate to the file **azure-static-wep-apps-random-words-lettersAndNumbers.yml**.
+
 ::: zone pivot="csharp"
 
-1. For *App location*, enter **azure-static-web-app/client**.
+1. Update the *app_location* from **.** to **azure-static-web-app/client**.
 
-1. For *Api location*, enter **azure-static-web-app/api/dotnet**.
+1. Update the *api_location* from **.** to **azure-static-web-app/api/dotnet**.
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-1. For *App location*, enter **azure-static-web-app/client**.
+1. Update the *app_location* from **.** to **azure-static-web-app/client**.
 
-1. For *Api location*, enter **azure-static-web-app/api/python**.
+1. Update the *api_location* from **.** to **azure-static-web-app/api/python**.
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-1. For *App location*, enter **azure-static-web-app/client/**.
+1. Update the *app_location* from **.** to **azure-static-web-app/client/**.
 
-1. For *Api location*, enter **azure-static-web-app/api/node**.
+1. Update the *api_location* from **.** to **azure-static-web-app/api/node**.
 
 ::: zone-end
+
+1. **Save** the file.
+
+1. Select **Source Control** and add a commit message of **`enable app workflow`**.
+
+1. Select the **checkmark**, and then select the **...** > **Push** to kick off the workflow.
+
+1. Navigate to your GitHub repository for this sample and select **Actions** Review the *Azure Static Web Apps CI/CD* workflow run to understand how GitHub Actions are deploying and updating your application. If you make any changes to your application and push them to the repository, a new workflow will spin up to deploy the changes.
 
 ## Configure application settings for Azure Static Web Apps
 
@@ -268,7 +218,6 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. Check the box next to the new application settings and select **Save**.
 
-
 ## View the published `bus-app`
 
 1. Navigate to your Azure Static Web App in the Azure portal.
@@ -278,20 +227,6 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
-1. In order to view results for the specific bus route and GeoFence, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
+1. In order to view results for the specific bus route and GeoFence configured, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
 
-1. You should now see a GeoFence and several bus points. You may need to use the **+** or **-** buttons create a zoom fit.
-
-> [!NOTE]
-> For this module, a few bus points have been manually entered into your Azure SQL Database. In the previous module of this learning path, you set up the Azure Function that runs on a timer trigger to pull down the latest real-time bus data and send notifications when buses enter or exit GeoFence. In the next module of the learning path, you'll put both these pieces together, which will enable your Azure Static Web App to include real-time data.
-
-## Review the GitHub Action runs
-
-1. Navigate to your Azure Static Web App in the Azure portal.
-
-> [!div class="nextstepaction"]
-> [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **GitHub Action runs** under *Deployment history*.
-
-1. Review the *Azure Static Web Apps CI/CD* workflow run to understand how GitHub Actions are deploying and updating your application. If you make any changes to your application and push them to the repository, a new workflow will spin up to deploy the changes.
+1. You should now see a GeoFence and bus points. You may need to use the **+** or **-** buttons create a zoom fit.

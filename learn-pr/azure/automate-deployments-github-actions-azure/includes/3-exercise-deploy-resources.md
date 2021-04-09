@@ -230,7 +230,7 @@ The next step is to configure the Logic App and update the Application Setting f
 
 1. Select **Save**.
 
-1. Select **When a HTTP request is received** and copy the **HTTP POST URL**.
+1. Select **When a HTTP request is received** and copy the **HTTP POST URL** and save it in a text file or notepad.
 
 ## Review and update the Azure Function
 
@@ -280,7 +280,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 ## Deploy an Azure Static Web App
 
-The main goal is to deploy an Azure Static Web App using Azure PowerShell.
+The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a future exercise, you will configure the application in the Azure portal and with GitHub Actions.
 
 1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
 
@@ -288,7 +288,7 @@ The main goal is to deploy an Azure Static Web App using Azure PowerShell.
 
 ```powershell
 # Get resource group and location and random string
-$resourceGroupName = "Sandbox resource group name"
+$resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
 $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
 $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
 $location = $resourceGroup.Location
@@ -310,108 +310,13 @@ $staticWebApp = az staticwebapp create -n $webAppName -g $resourceGroupName `
     -s $appRepository -l 'westus2' -b main --token $githubToken
 ```
 
-TODO and test
+> [!NOTE]
+> While Azure Static Web Apps are in public preview, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
 
-1. Navigate to the Azure portal.
-
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. In the search bar, type **static web app** and select **Static Web App (Preview)** under *Marketplace*. This will take you to the create page.
-
-1. Select the default subscription and your Resource Group (it will be the only Resource Group in the drop-down).
-
-1. Enter **bus-app** for *Name*.
-
-1. Select the region where your other resources are deployed. If that region is not available, select the closest region to where you are.
-
-1. At the bottom, select **Sign in with GitHub**.
-
-1. Log in with your GitHub account and select **Authorize Azure-App-Service-Static-Web-Apps**. You may also need to enter your password.
-
-1. Fill in the *Organization*, *Repository*, and *Branch* drop-downs with the corresponding information for the GitHub repository you've been using for this module.
-
-1. Select **Vue.js** in the *Build Presets* drop-down.
-
-::: zone pivot="csharp"
-
-1. For *App location*, enter **azure-static-web-app/client**.
-
-1. For *Api location*, enter **azure-static-web-app/api/dotnet**.
-
-::: zone-end
-
-::: zone pivot="python"
-
-1. For *App location*, enter **azure-static-web-app/client**.
-
-1. For *Api location*, enter **azure-static-web-app/api/python**.
-
-::: zone-end
-
-::: zone pivot="node"
-
-1. For *App location*, enter **azure-static-web-app/client/**.
-
-1. For *Api location*, enter **azure-static-web-app/api/node**.
-
-::: zone-end
-
-1. Select **Review + Create**.
-
-1. Select **Create**.
-
-1. Once it finishes creating, select **Go to resource**.
-
-> [!TIP]
-> If you click on the Azure Static Web App and don't see the map with a GeoFence and buses, that's OK for now. In the next exercise, you'll configure the application.
-
-The last step in setting up your application is to configure the connection from Azure Static Web Apps to Azure SQL Database.
-
-Here, you'll configure the application settings, view the functioning application, and review the GitHub Action runs.
-
-## Configure application settings
-
-In order for your Azure Static Web App to access your Azure SQL Database, you must configure an application setting which contains the Azure SQL Database connection string which works with the language you chose in and earlier exercise (.NET, Python, or Node.js).
-
-1. In a text file, determine the connection string that you will need to be able to connect to your Azure SQL Database. The format should be as follows:
-
-::: zone pivot="python"
-
-```cmd
-Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
-```
-
-::: zone-end
-
-::: zone pivot="csharp"
-
-```cmd
-Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
-```
-
-::: zone-end
-
-::: zone pivot="node"
-
-```cmd
-mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
-```
-
-::: zone-end
-
-1. Navigate to your Azure Static Web App in the Azure portal.
+If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
 > [!div class="nextstepaction"]
 > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
-
-1. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
-
-1. Select **OK**.
-
-1. Check the box next to the new application settings and select **Save**.
 
 <!-- Not sure this is needed 
 ::: zone pivot="python"
@@ -442,4 +347,3 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 ::: zone-end
 -->
-
