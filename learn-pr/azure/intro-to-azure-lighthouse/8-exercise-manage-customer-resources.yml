@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-lighthouse.7a-exercise-manage-customer-resources
+uid: learn.intro-to-azure-lighthouse.8-exercise-manage-customer-resources
 title: Exercise - Manage customer resources
 metadata:
   title: Exercise - Manage customer resources
@@ -12,5 +12,5 @@ metadata:
 durationInMinutes: 20
 azureSandbox: false
 content: |
-  [!include[](includes/7a-exercise-manage-customer-resources.md)]
+  [!include[](includes/8-exercise-manage-customer-resources.md)]
   
