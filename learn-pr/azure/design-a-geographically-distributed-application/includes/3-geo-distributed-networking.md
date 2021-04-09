@@ -20,7 +20,7 @@ We need a service that can load balance and redirect traffic across multiple reg
 
 Azure provides several different services that can route traffic between front-end components. Recall that we need to replace our Azure Application Gateway as it's single region bound. If that region fails, there's nothing to do the routing.
 
-There are two traffic routers in Azure that can do global routing between multiple regions and aren't vulnerable to a single region outage:
+There are two traffic routers in Azure that can do global routing between multiple regions, and aren't vulnerable to a single region outage:
 
 - Azure Traffic Manager
 - Azure Front Door
@@ -31,7 +31,7 @@ Let's examine these services in more detail so that we can choose the right rout
 
 Azure Traffic Manager is a global load balancer that uses DNS records to route traffic to destinations in multiple Azure regions.
 
-We can configure Traffic Manager to route all requests to our primary region and monitor the responsiveness of the App Service in that region. If the App Service in the primary region fails, Traffic Manager automatically reroutes user requests to the App Service in the secondary region. This reroute executes the failover that ensures continuous service. We call this arrangement the **priority routing mode**.
+We can configure Traffic Manager to route all requests to our primary region, and monitor the responsiveness of the App Service in that region. If the App Service in the primary region fails, Traffic Manager automatically reroutes user requests to the App Service in the secondary region. This reroute executes the failover that ensures continuous service. We call this arrangement the **priority routing mode**.
 
 Because Traffic Manager uses the DNS system to route traffic, it routes any protocol, not just HTTP traffic. However, Traffic Manager can't route or filter traffic based on HTTP properties, such as client country codes or user-agent headers. It also can't do Transport Layer Security (TLS) protocol termination, where the router decrypts requests and encrypts responses to take that load off the App Service virtual servers. If we need either of these features, we'll have to use Azure Front Door.
 
@@ -47,12 +47,12 @@ With Front Door, we can do many types of routing that Traffic Manager doesn't su
 
 There is, however, an exception. If we want to route traffic for any protocol other than HTTP and HTTPS, we'll have to use Traffic Manager.
 
-Front Door allows us to assign priorities to the various backends that make up the tracking portal. These priorities allow Front Door to route requests as needed. We'll assign our primary region services with a top priority and our secondary region service with a lower priority.
+Front Door enables us to assign priorities to the various back ends that make up the tracking portal. These priorities enable Front Door to route requests as needed. We'll assign our primary region services with a top priority and our secondary region service with a lower priority.
 
 Front Door implements health probes to monitor the health status of our services, and if there's a failure it can route traffic correctly. The priority routing mode and endpoint monitoring in Front Door is similar to those features in Traffic Manager, except that health probes always work over HTTP.
 
-All the traffic for our shipping portal's web UI and its APIs are done over HTTPS and allows us to switch out Azure Traffic Manager with Front Door. We'll also configure Front Door with priority backend assignment.
+All the traffic for our shipping portal's web UI and its APIs are done over HTTPS and allows us to switch out Azure Traffic Manager with Front Door. We'll also configure Front Door with priority back-end assignment.
 
 ## Azure CDN
 
-In our single-region architecture, we used Azure CDN to cache static content from Azure Blob Storage. The Azure CDN service is a global network of servers that caches static content close to users. We don't need to modify this service for the multi-region architecture.  However, there are considerations with regards to our Azure Storage account that we'll cover in the next unit.
+In our single-region architecture, we used Azure CDN to cache static content from Azure Blob Storage. The Azure CDN service is a global network of servers that caches static content close to users. We don't need to modify this service for the multi-region architecture.  However, there are considerations with regard to our Azure Storage account that we'll cover in the next unit.

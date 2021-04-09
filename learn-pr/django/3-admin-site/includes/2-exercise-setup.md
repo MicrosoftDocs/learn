@@ -12,13 +12,16 @@ You'll need the following resources installed on your computer to complete the e
 
 ## Clone the starter repository
 
-1. Open a command or terminal window.
-1. Run the following commands to clone the starter repository and change directory to the project.
+1. Open a command window or terminal.
+1. Run the following commands to clone the starter repository and change to the project's directory.
 
     ```bash
-    git clone [URL HERE]
-    cd [FOLDER HERE]
+    git clone https://github.com/MicrosoftDocs/mslearn-django-admin-site
+    cd mslearn-django-admin-site/starter
     ```
+
+    > ![NOTE]
+    > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code
 

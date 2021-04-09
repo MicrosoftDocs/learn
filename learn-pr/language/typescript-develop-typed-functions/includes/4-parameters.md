@@ -1,6 +1,6 @@
 The TypeScript compiler assumes, by default, that all parameters defined in a function are required. When a function is called, the TypeScript compiler verifies:
 
-- A value as been provided for each parameter.
+- A value has been provided for each parameter.
 - Only parameters that the function requires are passed to it.
 - The parameters are passed in the order in which they are defined in the function.
 

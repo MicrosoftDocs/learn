@@ -52,8 +52,8 @@ Our newly created `URLconf` is inside our **hello_world** application. Because t
 
 1. Inside the list, underneath the line that reads `urlpatterns = [`, add the following code:
 
-    ```
-    path('/', include('hello_world.urls')),
+    ```python
+    path('', include('hello_world.urls')),
     ```
 
     This code registers our `URLconf`.
@@ -65,18 +65,18 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('/', include('hello_world.urls')),
+    path('', include('hello_world.urls')),
     path('admin/', admin.site.urls),
 ]
 ```
-    
+
 ## Run your first app
 
 The structure is complete, views were added, and the URLs were mapped. Now it's time to run your app!
 
 1. Inside the **terminal** window in Visual Studio Code, run the following command to start the server again.
 
-    ```bash      
+    ```bash
     python manage.py runserver
     ```
 
