@@ -1,16 +1,16 @@
-Your financial organization has successfully migrated several applications from on-premises to Azure virtual machines and Azure Kubernetes Services. Your organization wants to keep track of resource usage to ensure the cloud resources have been adequately provisioned and their performance meets the business requirements. However, there are hundreds of resources currently deployed across several subscriptions, so you need a monitoring approach that provides broad visibility and the ability to triage and isolate problems when they arise.
+Your financial organization has successfully migrated several applications from on-premises to Azure virtual machines (VMs) and Azure Kubernetes Services. Your organization wants to keep track of resource usage to ensure the cloud resources have been adequately provisioned and their performance meets the business requirements. However, there are hundreds of resources currently deployed across several subscriptions, so you need a monitoring approach that provides broad visibility, and the ability to triage and isolate problems when they arise.
 
-You’ll use Azure Monitor for VMs, Azure Monitor for Containers and other Insights for an at-scale view across all your resources and drill into specific nodes and containers to continue troubleshooting.
+You’ll use Azure Monitor for VMs, Azure Monitor for Containers and other Insights for an at-scale view across all your resources, and drill into specific nodes and containers to continue troubleshooting.
 
 ## Criteria for assessing Azure Monitor virtual machine insights
 
-You use Azure Monitor virtual machine insights if:
+You use Azure Monitor VM insights to:
 
-- You want to view the health and performance of your VMs
-- You want to monitor your VMs at-scale across multiple subscriptions and resource groups.
-- You want a topology view that shows the processes, and network connection details of your VMs and scale sets.
+- View the health and performance of your VMs
+- Monitor your VMs at-scale across multiple subscriptions and resource groups.
+- Want a topology view that shows the processes, and network connection details of your VMs and scale sets.
 
-You enable Azure Monitor virtual machine insights in the Get Started tab. Enabling Azure Monitor virtual machine insights adds the required extensions and configuration to your virtual machines and virtual machines scales sets to collect and store a fixed set of usage and performance measurements.
+You enable Azure Monitor VM insights in the *Get Started* tab. Enabling Azure Monitor VM insights adds the required extensions and configuration to your VMs and VMs scales sets to collect and store a fixed set of usage and performance measurements.
 
 ![Screenshot of getting started with Azure Monitor Virtual Machine insights in Portal.](../media/5-analyze-resource-utilization-01.png)
 
@@ -24,19 +24,19 @@ As shown in the previous example, you can drill down to Azure Monitor Logs by se
 
 ![Screenshot of drill into Azure Monitor Logs from Virtual Machine insights.](../media/5-analyze-resource-utilization-03.png)
 
-Access the Azure Monitor virtual machine insights Map view to show network connections for an entire resource group, scale set, or individual VM. Use the filters at the top of the view to select the resources of interest. You expand the number of processes for a complete list and to view the network connections per process. Select the arrow representing the connection for another network usage and performance details.
+Access the Azure Monitor VM insights Map view to show network connections for an entire resource group, scale set, or individual VM. Use the filters at the top of the view to select the resources of interest. You expand the number of processes for a complete list and to view the network connections per process. Select the arrow representing the connection for another network usage and performance details.
 
 ![Screenshot of Virtual Machine insights map view.](../media/5-analyze-resource-utilization-04.png)
 
 ## Criteria for assessing Azure Monitor container insights
 
-You use Azure Monitor container insights if:
+You use Azure Monitor container insights to:
 
-- You want to view the health and performance of your Kubernetes workloads at-scale across multiple subscriptions and resource groups.
-- You want visibility into memory and processor performance metrics from controllers, nodes, and containers.
-- If you want view and store container logs for real time and historical analysis.
+- View the health and performance of your Kubernetes workloads at-scale across multiple subscriptions and resource groups.
+- Want visibility into memory and processor performance metrics from controllers, nodes, and containers.
+- Want view and store container logs for real time and historical analysis.
 
-You enable Azure Monitor container insights during the creation of your cluster or using the Unmonitored clusters tab. Once monitoring is enabled the monitored clusters tab provides an at-scale view of the health and status of all your clusters, nodes, system pods, and user pods. You use this view as a starting point to drill into problematic areas.
+You enable Azure Monitor container insights during the creation of your cluster or using the *Unmonitored clusters* tab. After monitoring is enabled the monitored clusters tab provides an at-scale view of the health and status of all your clusters, nodes, system pods, and user pods. You use this view as a starting point to drill into problematic areas.
 
 ![Screenshot of Azure Monitor container insights multi-cluster view.](../media/5-analyze-resource-utilization-05.png)
 
