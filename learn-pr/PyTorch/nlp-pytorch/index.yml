@@ -15,7 +15,7 @@ abstract: |
   - How to represent meaning of text as number vector using embeddings
   - About special neural network architectures (RNNs, LSTMs, etc.) that can extract sequential patterns
   - The main idea behind state-of-the-art transformer architectures, attention, and how to use pre-trained transformer models to achieve higher accuracy of your NLP tasks 
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -36,4 +36,4 @@ units:
 - learn.PyTorch.nlp-pytorch.summary
 
 badge:
-  uid: learn.PyTorch.badge
+  uid: learn.PyTorch.nlp-pytorch.badge

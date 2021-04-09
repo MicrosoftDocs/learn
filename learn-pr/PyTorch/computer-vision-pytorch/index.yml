@@ -15,7 +15,7 @@ abstract: |
   - How convolutional neural network architecture that can extract patterns from images
   - How to use pre-trained networks to solve real-world problems, minimize number of required data samples and build more accurate models
   - How to create low-profile networks that can be used on mobile and low power devices. 
-iconUrl: /learn/achievements/.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
