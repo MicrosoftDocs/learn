@@ -16,7 +16,7 @@ The following code reads images and assigns each one a rock type. The code is lo
                                       transforms.ToTensor(),
                                     ])
 
-   # Randomly select a set of images
+   # Randomly select a set of images using a similar approach as the load_split_train_test function
    def get_random_images(num):
        data = datasets.ImageFolder(data_dir, transform=test_transforms)
        classes = data.classes
@@ -26,7 +26,9 @@ The following code reads images and assigns each one a rock type. The code is lo
        from torch.utils.data.sampler import SubsetRandomSampler
        sampler = SubsetRandomSampler(idx)
        loader = torch.utils.data.DataLoader(data, sampler=sampler, batch_size=num)
+       # Create an iterator to iterate over the shuffled images in the test image dataset
        dataiter = iter(loader)
+       # Get and return the images and labels from the iterator
        images, labels = dataiter.next()
        return images, labels
    ```
@@ -40,14 +42,18 @@ The following code actually shows you some images that you loaded into the progr
    ```python
    # Show five images - you can change this number
    images, labels = get_random_images(5)
+   # Convert the array of pixels to an image
    to_pil = transforms.ToPILImage()
    fig=plt.figure(figsize=(20,20))
+    # Get a list of all classes in the training data
    classes=trainloader.dataset.classes
+   # Draw the images in a plot to display in the notebook
    for ii in range(len(images)):
        image = to_pil(images[ii])
        sub = fig.add_subplot(1, len(images), ii+1)
        plt.axis('off')
        plt.imshow(image)
+   # Display all of the images 
    plt.show()
    ```
 

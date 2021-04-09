@@ -23,35 +23,66 @@ We're ready to add the code to clean and separate the data. First, we'll resize 
    # Read the data, crop and resize the images, split data into two groups: test and train
    def load_split_train_test(datadir, valid_size = .2):
 
-       # Transform the images
+       # Transform the images you will use to train the model
        train_transforms = transforms.Compose([
                                        transforms.RandomResizedCrop(224),
                                        transforms.Resize(224),
                                        transforms.ToTensor(),
                                        ])
 
+       # Transform the images you will use to test the model
        test_transforms = transforms.Compose([transforms.RandomResizedCrop(224),
                                           transforms.Resize(224),
                                           transforms.ToTensor(),
                                       ])
 
+       # Create two variables that point to the folders where the training and testing images are located
        train_data = datasets.ImageFolder(datadir, transform=train_transforms)
        test_data = datasets.ImageFolder(datadir, transform=test_transforms)
 
+       # Get the number of images in the training folder
        num_train = len(train_data)
+       
+       # Create a list of numbers from 0 to the number of training images-1. 
+       # So if there are 10 images, this variable would be a list [0,1,2,3,4,5,6,7,8,9]
        indices = list(range(num_train))
+       
+       # If valid_size is .2, then find the index of the image that would represent 20% of the data
+       # If there are 10 images, split would result in 2
+       # split = int(np.floor(.2 * 10)) -> int(np.floor(2)) -> int(2) -> 2
        split = int(np.floor(valid_size * num_train))
+       
+       # Randomly shuffle the indices
+       # If there were 10 images, and example would be that 
+       # indices is now a list [2,5,4,6,7,1,3,0,9,8]
        np.random.shuffle(indices)
+       
        from torch.utils.data.sampler import SubsetRandomSampler
+       
+       # With the indices randomly shuffled, 
+       # grab the first 20% of the shuffled indices and store them in the training index list
+       # grab the remainder of the shuffled indices and store them in the testing index list
+       # Given our example so far, this would result in train_idx being the list [1,5] 
+       # and test_idx being the list [4,6,7,1,3,0,9,8]
        train_idx, test_idx = indices[split:], indices[:split]
+       
+       # Create samplers, which will randomly grab items from the trainign and testing indices lists
        train_sampler = SubsetRandomSampler(train_idx)
        test_sampler = SubsetRandomSampler(test_idx)
+       
+       # Create loaders that will actually load 16 images from the train and test data folder.
+       # Images are chosen based on the shuffled index lists and using the samplers
        trainloader = torch.utils.data.DataLoader(train_data, sampler=train_sampler, batch_size=16)
        testloader = torch.utils.data.DataLoader(test_data, sampler=test_sampler, batch_size=16)
+       
+       # Return the loaders so that you can grab images randomly within the training and testing data folders
        return trainloader, testloader
 
-   # Use 20% of the data for testing
+   # Using the function written above that shuffles the images,
+   # Create a trainloader that will load in 20% of the images
+   # Create a testloader that will load in 80% of the images
    trainloader, testloader = load_split_train_test(data_dir, .2)
+   # Print the type of rocks that are included in the trainloader
    print(trainloader.dataset.classes)
    ```
 
