@@ -20,7 +20,7 @@ prerequisites: |
   - Understand shared file systems
   - Understand file-system permissions, authentication methods, and operations
   - Understand high-performance computing, how HPC jobs run, and how HPC interacts with storage
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/hpc-storage-considerations.svg
 levels:
 - beginner
 roles:
