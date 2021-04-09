@@ -1,12 +1,15 @@
 In this module you're going to double-check whether the OpenAPI document generation is ready by implementing Swagger UI and Swashbuckle into the ASP.NET Core Web API application.
 
 
-<!-- NOTE to REVIEWER - The download link for this module can be found at https://github.com/justinyoo/inventory-management-demo-web-api, which will be transferred to the MicrosoftDocs org. -->
+<!-- NOTE to REVIEWER - The download link for this module can be found at https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/fusion-developers/exercise.zip . -->
 
 > [!NOTE]
 > Download the source code to your local computer to complete this exercise. After downloading the file, you will need to unzip it.
 > 
 > [Download: ASP.NET Core Web API Application][exercise].
+> 
+> 1. Select the download button on the middle-right of the screen.
+> 1. Unzip the `exercise.zip` file.
 
 
 ## Configure ASP.NET Core Web API for OpenAPI Ready ##
@@ -117,4 +120,4 @@ Your ASP.NET Core Web API app is now ready to produce the OpenAPI document.
 
 [az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
 
-[exercise]: https://github.com/justinyoo/inventory-management-demo-web-api/archive/refs/tags/exercise.zip
+[exercise]: https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/fusion-developers/exercise.zip
