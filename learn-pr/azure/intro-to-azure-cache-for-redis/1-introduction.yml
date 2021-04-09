@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-cache-for-redis.1-introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: xxx
+  ms.date: 04/09/2021  
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
