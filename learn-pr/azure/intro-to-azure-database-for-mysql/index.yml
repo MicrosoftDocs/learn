@@ -3,17 +3,17 @@ uid: learn.intro-to-azure-database-for-mysql
 metadata:
   moduleType: introduction        
   title: Introduction to Azure Database for MySQL
-  description: Describe how Azure Database for MySQL supports mission-critical workloads with predictable performance and dynamic scalability. Determine whether you can implement Azure Database for MySQL to address your relational database needs.
+  description: Describe how Azure Database for MySQL supports mission-critical workloads with predictable performance and dynamic scalability. Determine whether you should implement Azure Database for MySQL to address your relational database needs.
   ms.date: 03/23/2021  
   author: tchristiani
   ms.author: terrychr  
   ms.topic: interactive-tutorial  
 title: Introduction to Azure Database for MySQL
-summary: Azure Database for MySQL is a managed database as a service offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
+summary: Azure Database for MySQL is a managed database as a service offering that can manage mission-critical workloads with predictable performance and dynamic scalability.
 abstract: |
-  By the end of this module, you will be able to: 
-    - Evaluate whether Azure Database for MySQL is appropriate to handle your organization's mission-critical workloads.
-    - Describe how the predictable performance and dynamic scalability of Azure Database for MySQL make it ideal to host your database workloads.
+  By the end of this module, you'll be able to: 
+    - Evaluate whether Azure Database for MySQL is appropriate to manage your organization's mission-critical workloads.
+    - Describe how predictable performance and dynamic scalability of Azure Database for MySQL make it ideal to host your database workloads.
 prerequisites: |
   - Experience administering MySQL
   - Experience administering Azure 

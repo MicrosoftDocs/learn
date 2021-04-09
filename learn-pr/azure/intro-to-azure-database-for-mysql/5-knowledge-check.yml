@@ -15,18 +15,18 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which of the following MySQL hosting solutions would be optimal if an administrator wants to implement zone redundant high availability?"
+  - content: "Which of the following MySQL hosting solutions would be optimal if an administrator wants to implement zone-redundant high availability?"
     choices:
     - content: "MySQL for Azure VMs"
       isCorrect: false
-      explanation: "Incorrect. This is not the optimum solution."
+      explanation: "Incorrect. This option isn't the best solution."
     - content: "Azure Database for MySQL Single Server"
       isCorrect: false
-      explanation: "Incorrect. Single Server supports only a single zone for high availability."
+      explanation: "Incorrect. Azure Database for MySQL Single Server supports only a single zone for high availability."
     - content: "Azure Database for MySQL Flexible Server"
       isCorrect: true
-      explanation: "Correct. This is the optimum solution."
-  - content: "An app developer requires version 5.6 of MySQL. Which of the following would be an appropriate hosting choice based on this requirement?"
+      explanation: "Correct. This option is the best solution."
+  - content: "An app developer requires version 5.6 of MySQL. Which of the following options would be an appropriate hosting choice based on this requirement?"
     choices:
     - content: "Azure Database for MySQL Flexible Server"
       isCorrect: true
@@ -45,7 +45,7 @@ quiz:
     - content: "Basic"
       isCorrect: true
       explanation: "Correct. This SKU is best-suited for low-cost development and low-concurrency workloads."
-  - content: "In terms of administrative effort, who is responsible for managing high availability of a database hosted using Azure IaaS?"
+  - content: "For administrative effort, who is responsible for managing high availability of a database hosted using Azure IaaS?"
     choices:
     - content: "The database administrator"
       isCorrect: false
@@ -56,7 +56,7 @@ quiz:
     - content: "Microsoft"
       isCorrect: false
       explanation: "Incorrect. In an IaaS environment, the hosting vendor doesn't manage high-availability options for your database."
-  - content: "Which of the following is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
+  - content: "Which of the following choices is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
     choices:
     - content: "You want to avoid the time and expense of acquiring new on-premises hardware to host your database app."
       isCorrect: true
