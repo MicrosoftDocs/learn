@@ -20,7 +20,9 @@ On the toolbar, click Publish.
 
 If there is only one Apache Spark pool in your workspace, then it's selected by default. Use the drop-down to select the correct Apache Spark pool if none is selected.
 
-Click Add code. The default language is Pyspark. You are going to use a mix of Pyspark and Spark SQL, so the default choice is fine. Other supported languages are Scala and .NET for Spark.
+Add code by using the "+ icon" or the "+ Cell" icon and select "Code cell" for code or "Markdown cell" for markdown. 
+
+When adding a code cell,  the default language is Pyspark. You are going to use a mix of Pyspark and Spark SQL, so the default choice is fine. Other supported languages are Scala and .NET for Spark.
 
    ```python
    new_rows = [('CA',22, 45000),("WA",35,65000) ,("WA",50,85000)]
