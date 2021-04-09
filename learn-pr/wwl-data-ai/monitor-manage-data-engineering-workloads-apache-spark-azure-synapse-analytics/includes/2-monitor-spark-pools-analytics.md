@@ -41,4 +41,4 @@ In addition to that, if you want to view details for each stage, you can go to t
 
 [![Details stages Spark Pool](../media/details-stage-spark-pool.png)](../media/details-stage-spark-pool.png#lightbox)
 
-It will redirect you to the Apache Spark UI where you can find more details in relation to the stages of the Spark Pool.
+It will redirect you to the Apache Spark UI where you can find more details in relation to the stages of the Spark Pool. To achieve this, you can also check details of all the stages by selecting **Spark UI**.
