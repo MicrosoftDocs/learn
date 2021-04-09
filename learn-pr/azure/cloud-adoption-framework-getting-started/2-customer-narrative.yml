@@ -19,17 +19,17 @@ quiz:
     choices:
     - content: VMware virtualization
       isCorrect: false
-      explanation: The Azure VMware Solution deploys a VMware private cloud to Azure.
+      explanation: The Azure VMware solution deploys a VMware private cloud to Azure.
     - content: Linux and other open-source servers
       isCorrect: false
       explanation: Azure loves open-source software. Azure Migrate is capable of migrating Linux and other open-source operating systems to Azure.
-    - content: Windows servers
+    - content: Servers running Windows Server
       isCorrect: false
-      explanation: Windows servers, including older versions like 2008 R2, are compatible with Azure.
+      explanation: Servers running Windows Server, including older versions like 2008 R2, are compatible with Azure.
     - content: All of the above are compatible with Azure.
       isCorrect: true
       explanation: Azure can host VMware, Windows, Linux, and a variety of other technical assets.
-  - content: What risks could prevent Tailwind Traders be successful migrating two datacenters in the next 18 to 24 months?
+  - content: What risks might prevent Tailwind Traders from successfully migrating two datacenters in the next 18 to 24 months?
     choices:
     - content: Effort and time to migrate the portfolio
       isCorrect: false
