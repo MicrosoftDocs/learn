@@ -1,20 +1,55 @@
-A large part of AI is its degree of accuracy in predicting the correct outcome. In our case, accuracy is how likely the computer is to correctly identify a rock that's shown in an image as being the type that scientists have manually determined it is. An accuracy of 0.96 means that 96% of rock types are predicted correctly and that 4% are misclassified.
+The reason we use AI to help with our space rock research is to improve predictions. When a model sees new pictures of rocks, it should predict the correct rock type based on pictures it's already seen. We want the prediction to be as close to 100% accurate as possible. An AI model that's well trained should more accurately predict the outcome than humans.
 
-The following code calculates the accuracy of our AI system in classifying rocks:
 
-```python
-print(accuracy/len(testloader))
+## Show the model accuracy
+
+In our example, the `accuracy` command reveals how likely the computer can correctly identify the type of rock in an image based on the scientific definition. An accuracy value of 0.96 means 96% of rock types are predicted correctly and 4% are misclassified.
+
+The following code calculates and displays the accuracy of our AI model to classify the rock type. You might recognize this statement from the last code we added to your Jupyter Notebook file.
+
+- Add this code in a new cell in your Jupyter Notebook file, and then run the cell:
+
+   ```python
+   print(accuracy/len(testloader))
+   ```
+
+The output displays the accuracy with 16 digits in the fractional part of the decimal:
+
+```output
+0.8020833432674408
 ```
 
-As you can see, the accuracy of this model is very high. This is what we want, because it means that the model does a good job of making predictions.
+The output shows our model has 80% accuracy in making predictions. We want a high value. The higher the accuracy means the model is doing a good job of making predictions.
 
-Even though 96% is high, you can take a couple more steps to increase accuracy even further:
+Even though 96% is high ((**Sarah** -- 96% shown in original text)), you can do a few things to increase the accuracy even more:
 
-- Add more images, for training the AI models.
-- Increase the epoch (number of training iterations for deep learning).
+- Add more images and continue training the AI model.
+- Increase the number of `epoch` training iterations for deep learning.
 
-Now that we have created the neural network and tested the accuracy, let's save it:
+> [!Note]
+> **Sarah ToDo**
+> - 80% does not seem high to me... Original text said 96%, but didn't show any output
+> The output from the previous unit showed the following accuracies:
+> Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810
+> Epoch 2/5.. Train loss: 0.679.. Test loss: 0.372.. Test accuracy: 0.935
+> Epoch 2/5.. Train loss: 0.648.. Test loss: 0.595.. Test accuracy: 0.644
+> Epoch 3/5.. Train loss: 0.463.. Test loss: 0.444.. Test accuracy: 0.835
+> Epoch 4/5.. Train loss: 0.310.. Test loss: 0.202.. Test accuracy: 0.935
+> Epoch 4/5.. Train loss: 0.261.. Test loss: 0.184.. Test accuracy: 0.967
+> Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
+> Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
+> The highest accuracy in the output is 96.7%.
+> Not sure how to handle this one.
+> Should we just report the highest value to the students?
 
-```python
-torch.save(model, 'aerialmodel.pth')
-```
+
+## Save the model
+
+Now that you've created the neural network and tested the accuracy, save your model.
+
+- Add the following code in a new cell in your Jupyter Notebook file, and then run the cell:
+
+   ```python
+   torch.save(model, 'aerialmodel.pth')
+   ```
+

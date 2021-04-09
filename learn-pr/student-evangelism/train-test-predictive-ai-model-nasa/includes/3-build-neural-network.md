@@ -8,9 +8,7 @@ Neural networks process information similar to how our brains work. Our brains h
 Neural networks have millions of neurons and nerves. To build a functional neural network, we wire the neurons and nerves together in two steps:
 
 - Step A: Build all the neurons.
-- Step B: Wire the neurons in an appropriate way.
-
-   > _There are thousands of ways to wire neurons!_
+- Step B: Wire the neurons in an **appropriate** way. (There are thousands of ways to wire neurons.)
 
 In our model, we'll collect the features for a rock from an image and store them as a linear sequence of parameters. This step builds a single neuron. Every new image that's analyzed is another neuron. We supply the training data for our computer to build all the neurons.
 
