@@ -136,6 +136,54 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Navigate to your GitHub repository for this sample and select **Actions** to monitor the deployment of your Azure Function App action.
 
+## Monitor and observe results
+
+Now that everything is updated, it's time to monitor the results (and your inbox).
+
+1. Navigate to your Azure Function App in the Azure portal and select **Functions** > **GetBusData** > **Monitor**.
+
+1. Note that the **Invocations** has ~5 minute delay, whereas the **Logs** are closer to real-time. Review the **Logs**.
+
+1. When a bus activates a GeoFence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
+
+> [!TIP]
+> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence. If you want to trigger it, connect to your Azure SQL Database in Azure Data Studio and run the following T-SQL:
+>
+>```sql
+>    DECLARE @RC int
+>    DECLARE @payload NVARCHAR(max) = N'[{
+>            "DirectionId": 1,
+>            "RouteId": 100113,
+>            "VehicleId": 1,
+>            "Position": {
+>                "Latitude": 47.61703550242447,
+>                "Longitude": -122.14263367613601 
+>            },
+>            "TimestampUTC": "20201031"
+>        },{
+>            "DirectionId": 2,
+>            "RouteId": 100113,
+>            "VehicleId": 2,
+>            "Position": {
+>                "Latitude": 47.61703550242447,
+>                "Longitude": -122.14263367613601 
+>            },
+>            "TimestampUTC": "20201030"
+>        },{
+>            "DirectionId": 2,
+>            "RouteId": 100113,
+>            "VehicleId": 2,
+>            "Position": {
+>                "Latitude": 47.61528240582737,
+>                "Longitude": -122.14308643341062
+>            },
+>            "TimestampUTC": "20201031"
+>    }]';
+>    EXECUTE @RC = [web].[AddBusData] 
+>       @payload
+>    GO
+>```
+
 ## Monitor results in the Azure portal
 
 Now that everything is deployed, it's time to monitor the results in the Azure portal and compare to what you saw locally.
