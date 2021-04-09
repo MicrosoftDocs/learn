@@ -71,7 +71,7 @@ quiz:
     - content: Align foundation
       isCorrect: false
       explanation: It's always good to have a consensus about core decisions, but you might need something a bit deeper for this blocker.
-  - content: The business is responding to rapidly changing market conditions, which is disrupting cloud adoption and digital transformation progress. Which getting-started guide can help?
+  - content: The business is responding to rapidly changing market conditions, which is disrupting cloud adoption and digital transformation progress. Which getting-started guides can help?
     choices:
     - content: Establish teams
       isCorrect: true
