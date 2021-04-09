@@ -10,8 +10,4 @@ Training such large models involves a lot of efforts, and needs to be done in a 
 
 # What's Next?
 
-There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. These include:
-
-- Computer Vision
-- Natural Language Processing
-- Speech and Audio Classification
+There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. Start on the next module linked below!

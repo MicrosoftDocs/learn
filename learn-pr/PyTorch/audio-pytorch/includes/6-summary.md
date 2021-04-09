@@ -3,8 +3,4 @@ Congratulations on building an audio binary classification speech model!  We hav
 
 # What's Next?
 
-There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. These include:
-
-- Intro to Machine Learning
-- Computer Vision
-- Natural Language Processing
+There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. Start on the next module linked below!

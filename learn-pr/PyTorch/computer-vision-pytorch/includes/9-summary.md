@@ -4,8 +4,4 @@ Also, CNNs are simple building blocks for solving more complex computer vision t
 
 # What's Next?
 
-There are other courses in the PyTorch fundamentals learning path that dive into more specific applications of deep learning and PyTorch. These include:
-
-- Intro to Machine Learning with PyTorch
-- Natural Language Processing
-- Speech and Audio Classification
+There are other courses in the PyTorch fundamentals learning path that dive into other deep learning concepts using PyTorch. Start on the next module linked below!
