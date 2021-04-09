@@ -13,7 +13,7 @@ Datacenters are expensive. The costs of real estate, power, servers, storage, ne
 
 ![Graph showing the difference between pay as you go Azure resources and Reserved Instance pricing.](../media/optimize-it-spend.png)
 
-In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-impact-azure-iaas/?azure-portal=true), customers reported a 25% increase in productivity of IT staff, $10 million in savings from avoided hardware, software, and staff cost, and a 478% return on investments.
+In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-impact-azure-iaas/?azure-portal=true), customers reported a 25 percent increase in productivity of IT staff, $10 million in savings from avoided hardware, software, and staff cost, and a 478 percent return on investments.
 
 ### Pay less with Azure
 
@@ -41,7 +41,7 @@ Azure traffic between Microsoft datacenters stays on the Microsoft network and d
 
 An [Availability Zone](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true) is a high-availability offering that protects your applications and data from datacenter failures. Availability Zones are unique physical locations within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.
 
-To ensure resiliency, a minimum of three separate zones are located in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single points of failure. With Availability Zones, Azure offers an industry best 99.99% VM uptime service-level agreement (SLA). The full [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
+To ensure resiliency, a minimum of three separate zones are located in all enabled regions. The physical separation of Availability Zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across Availability Zones to protect from single points of failure. With Availability Zones, Azure offers an industry best 99.99 percent VM uptime service-level agreement (SLA). The full [Azure SLA](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 
 ![Diagram showing a web application and SQL servers in three availability zones.](../media/zones.png)
 
