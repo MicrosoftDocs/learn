@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.PyTorch.nlp-pytorch.nlp-pytorch
+uid: learn.PyTorch.nlp-pytorch
 metadata:
   title: Introduction to Natural Language Processing with PyTorch
   description: Learn how to handle language and solve natural language processing tasks with PyTorch
@@ -21,6 +21,7 @@ levels:
 roles:
 - data-scientist
 - developer
+- student
 products:
 - azure
 prerequisites: None

@@ -21,6 +21,7 @@ levels:
 roles:
 - data-scientist
 - developer
+- student
 products:
 - azure
 prerequisites: |
