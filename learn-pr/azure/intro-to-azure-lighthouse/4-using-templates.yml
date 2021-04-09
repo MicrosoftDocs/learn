@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-lighthouse.using-templates
+uid: learn.intro-to-azure-lighthouse.4-using-templates
 metadata:
   title: Using Azure Resource Manager templates
   description: Understand how you can use Azure Resource Manager templates to onboard customers
