@@ -13,14 +13,11 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which is _not true_ about Tensors?"
+    - content: "Which is true of Tensors?"
       choices:
         - content: "A string type"
           isCorrect: false
           explanation: "Incorrect"
-        - content: "A JavaScript framework"
-          isCorrect: false
-          explanation: "Node.js isn't a framework but is sometimes incorrectly described as one."
         - content: "Tensors are specialized data structure that are very similar to arrays and matrices"
           isCorrect: true
     - content: "What is the difference between a PyTorch `DataSet` and a PyTorch `DataLoader`"

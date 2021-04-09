@@ -9,6 +9,6 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/2-understanding-audio-data.ipynb
