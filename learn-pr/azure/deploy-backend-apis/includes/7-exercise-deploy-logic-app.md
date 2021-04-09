@@ -107,20 +107,37 @@ Now that everything is updated, it's time to monitor the results (and your inbox
 > Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence. If you want to trigger it, connect to your Azure SQL Database in Azure Data Studio and run the following T-SQL:
 >
 >```sql
->    DECLARE @RC INT
+>    DECLARE @RC int
 >    DECLARE @payload NVARCHAR(max) = N'[{
->        "DirectionId": 1,
->        "RouteId": 100113,
->        "VehicleId": 1,
->        "Position": {
->            "Latitude": 47.61705102765316,
->            "Longitude": -122.14291865504012 
->        },
->        "TimestampUTC": "20210330"
+>            "DirectionId": 1,
+>            "RouteId": 100113,
+>            "VehicleId": 1,
+>            "Position": {
+>                "Latitude": 47.61703550242447,
+>                "Longitude": -122.14263367613601 
+>            },
+>            "TimestampUTC": "20201031"
+>        },{
+>            "DirectionId": 2,
+>            "RouteId": 100113,
+>            "VehicleId": 2,
+>            "Position": {
+>                "Latitude": 47.61703550242447,
+>                "Longitude": -122.14263367613601 
+>            },
+>            "TimestampUTC": "20201030"
+>        },{
+>            "DirectionId": 2,
+>            "RouteId": 100113,
+>            "VehicleId": 2,
+>            "Position": {
+>                "Latitude": 47.61528240582737,
+>                "Longitude": -122.14308643341062
+>            },
+>            "TimestampUTC": "20201031"
 >    }]';
->
 >    EXECUTE @RC = [web].[AddBusData] 
->        @payload
+>       @payload
 >    GO
 >```
 
