@@ -9,6 +9,7 @@ metadata:
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-flexibility-by-using-parameters-and-variables.md)]

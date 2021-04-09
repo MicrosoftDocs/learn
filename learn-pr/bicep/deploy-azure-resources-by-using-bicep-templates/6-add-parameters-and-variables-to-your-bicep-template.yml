@@ -10,6 +10,7 @@ metadata:
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5
 content: |
