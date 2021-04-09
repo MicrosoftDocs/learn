@@ -30,7 +30,7 @@ The retail innovation team is a division of the company's IT team. It's led by T
 Beyond core innovation, the IT team supports the following types of technologies:
 
 - **Smart storefronts:** Storefronts include environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sale systems.
-- **Corporate headquarters:** More than 900 employees work in corporate headquarters. Technology systems cover solutions to support processes across areas like real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, and payroll.
+- **Corporate headquarters:** More than 900 employees work in corporate headquarters. Technology systems cover best-of-breed solutions to support processes across areas like real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, and payroll.
 - **User workstations:** Workstations are mostly desktop-based. A growing percentage of employees are opting for mobile and BYOD (bring you own device) options, in-store kiosks, and virtual desktop solutions.
 - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovation assets.
 
