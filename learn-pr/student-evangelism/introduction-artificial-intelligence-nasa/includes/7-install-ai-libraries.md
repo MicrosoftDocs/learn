@@ -118,8 +118,10 @@ Now you have an environment you can use for the rest of the learning path. The l
 
 Congratulations! You've installed all the libraries you need to make an AI program, and configured Visual Studio Code to find them.
 
+<br/>
+***
 
-## Next steps
+### Next step
 
 Continue to the next module in this Learning path and discover how to [analyze images of rocks by using artificial intelligence][AnalyzeImages].
 
@@ -133,5 +135,5 @@ Continue to the next module in this Learning path and discover how to [analyze i
 <!-- Links -->
 
 [AnacondaDownload]: https://www.anaconda.com/products/individual?azure-portal=true
-[AnalyzeImages]: https://docs.microsoft.com/elearn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
+[AnalyzeImages]: https://docs.microsoft.com/learn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
 [VideoDownload]: https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true
