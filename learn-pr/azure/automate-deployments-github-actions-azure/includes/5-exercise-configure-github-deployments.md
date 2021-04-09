@@ -199,6 +199,76 @@ Now that everything is deployed, it's time to monitor the results in the Azure p
 
 1. Just like locally, you might notice that if a bus enters or exits a GeoFence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
 
+## Configure GitHub Actions for Azure Static Web Apps
+
+::: zone pivot="csharp"
+
+1. For *App location*, enter **azure-static-web-app/client**.
+
+1. For *Api location*, enter **azure-static-web-app/api/dotnet**.
+
+::: zone-end
+
+::: zone pivot="python"
+
+1. For *App location*, enter **azure-static-web-app/client**.
+
+1. For *Api location*, enter **azure-static-web-app/api/python**.
+
+::: zone-end
+
+::: zone pivot="node"
+
+1. For *App location*, enter **azure-static-web-app/client/**.
+
+1. For *Api location*, enter **azure-static-web-app/api/node**.
+
+::: zone-end
+
+## Configure application settings for Azure Static Web Apps
+
+In order for your Azure Static Web App to access your Azure SQL Database, you must configure an application setting which contains the Azure SQL Database connection string which works with the language you chose in and earlier exercise (.NET, Python, or Node.js).
+
+1. In a text file, determine the connection string that you will need to be able to connect to your Azure SQL Database. The format should be as follows:
+
+::: zone pivot="python"
+
+```cmd
+Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+```
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+```cmd
+Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+```
+
+::: zone-end
+
+::: zone pivot="node"
+
+```cmd
+mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+```
+
+::: zone-end
+
+1. Navigate to your Azure Static Web App in the Azure portal.
+
+> [!div class="nextstepaction"]
+> [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
+
+1. Select **+ Add** and create a new setting named **AzureSQLConnectionString** with the value set to the connection string obtained in an earlier step.
+
+1. Select **OK**.
+
+1. Check the box next to the new application settings and select **Save**.
+
+
 ## View the published `bus-app`
 
 1. Navigate to your Azure Static Web App in the Azure portal.
