@@ -27,18 +27,18 @@ roles:
 products:
 - azure
 units:
-- learn.intro-to-azure-lighthouse.1-introduction
-- learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
-- learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
-- learn.intro-to-azure-lighthouse.4-using-templates
-- learn.intro-to-azure-lighthouse.5-exercise-deploy-azure-resource-manager-templates
-- learn.intro-to-azure-lighthouse.6-video-cross-tenant-management
-- learn.intro-to-azure-lighthouse.7-video-publish-managed-service
-- learn.intro-to-azure-lighthouse.8-exercise-managing-a-customer
-- learn.intro-to-azure-lighthouse.9-manage-customer-resources
-- learn.intro-to-azure-lighthouse.10-exercise-manage-customer-resources
-- learn.intro-to-azure-lighthouse.11-knowledge-check
-- learn.intro-to-azure-lighthouse.12-summary
+- learn.intro-to-azure-lighthouse.introduction
+- learn.intro-to-azure-lighthouse.intro-azure-lighthouse
+- learn.intro-to-azure-lighthouse.prepare-for-azure-lighthouse
+- learn.intro-to-azure-lighthouse.using-templates
+- learn.intro-to-azure-lighthouse.exercise-deploy-azure-resource-manager-templates
+- learn.intro-to-azure-lighthouse.video-cross-tenant-management
+- learn.intro-to-azure-lighthouse.video-publish-managed-service
+- learn.intro-to-azure-lighthouse.exercise-managing-a-customer
+- learn.intro-to-azure-lighthouse.manage-customer-resources
+- learn.intro-to-azure-lighthouse.exercise-manage-customer-resources
+- learn.intro-to-azure-lighthouse.knowledge-check
+- learn.intro-to-azure-lighthouse.summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge
   
