@@ -48,6 +48,7 @@ Recall in the catching the bus sample, you'll leverage resources including Azure
 The first required step is to set up your development environment. Please refer to the brief instructions [here](https://review.docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
 
 ## Deploy Azure SQL Database
+
 In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
@@ -123,18 +124,18 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Database deployed."
     ```
 
-    The script will take several minutes to complete. While it's completing, you can configure your database for CI/CD with GitHub Actions.
+    The script will take several minutes to complete.
 
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Deploy and configure the Azure Function app
+## Deploy the Azure Function App
 
-Now that your database and GitHub repository are configured, it's time to deploy an Azure Function app.
+Next, you'll deploy an Azure Function App.
 
-1. Next, configure your variables.
+1. First, configure your variables.
 
     ```powershell
     $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"
@@ -184,11 +185,9 @@ Now that your database and GitHub repository are configured, it's time to deploy
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Deploy Azure Logic App
+## Deploy an Azure Logic App
 
-The first step is to deploy the Azure Logic App using a combination of Azure PowerShell and ARM templates. You'll need to first gather some information from GitHub in order to access the ARM template from the Azure Cloud Shell. 
-
-1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
+Next, you need to deploy the Azure Logic App that sends notifications using a combination of Azure PowerShell and ARM templates.
 
 1. Make note of your GitHub repository (e.g. https://github.com/[username]/serverless-full-stack-apps-azure-sql).
 
@@ -233,67 +232,85 @@ The next step is to configure the Logic App and update the Application Setting f
 
 1. Select **When a HTTP request is received** and copy the **HTTP POST URL**.
 
-1. In the Azure portal, navigate back to your Azure Function App.
+## Review and update the Azure Function
+
+1. In a text file, determine the connection string that you will need to be able to connect to your Azure SQL Database. The format should be as follows:
+
+::: zone pivot="python"
+
+```cmd
+Driver={ODBC Driver 17 for SQL Server};Server=[serverName].database.windows.net,1433;Database=bus-db;UID=cloudadmin;PWD=[yourPassword];Connection Timeout=30;
+```
+
+::: zone-end
+
+::: zone pivot="csharp"
+
+```cmd
+Server=tcp:[serverName].database.windows.net,1433;Database=bus-db;User ID=cloudadmin;Password=[yourPassword];Encrypt=true;Connection Timeout=30;
+```
+
+::: zone-end
+
+::: zone pivot="node"
+
+```cmd
+mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encrypt=true
+```
+
+::: zone-end
+
+1. In the Azure portal, navigate to your Azure Function App.
 
 1. Under *Settings*, select **Configuration**.
 
-1. Select the **Edit** pencil icon for **LogicAppUrl** and update the value with the Logic App POST URL you just copied.
+1. Select **+ New application setting** named **LogicAppUrl** and update the value with the Logic App POST URL you just copied.
 
 1. Select **OK**.
 
-1. Select **Save**.
+1. Select **+ New application setting** named **RealTimeFeedUrl** and update the value with `https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json`.
 
-## Monitor and observe results
+1. Select **OK**.
 
-Now that everything is updated, it's time to monitor the results (and your inbox).
+1. Select **+ New application setting** named **AzureSQLConnectionString** and update the value with the connection string from step one.
 
-1. Navigate to your Azure Function App in the Azure portal and select **Functions** > **GetBusData** > **Monitor**.
+1. Select **OK**.
 
-1. Note that the **Invocations** has ~5 minute delay, whereas the **Logs** are closer to real-time. Review the **Logs**.
-
-1. When a bus activates a GeoFence, what do you see? Did you receive an email? The answers to these questions should help you understand if your application is working properly.
-
-> [!TIP]
-> Depending on what time you are testing this out, you may have to wait a significant time for a bus to enter a GeoFence. If you want to trigger it, connect to your Azure SQL Database in Azure Data Studio and run the following T-SQL:
->
->```sql
->    DECLARE @RC int
->    DECLARE @payload NVARCHAR(max) = N'[{
->            "DirectionId": 1,
->            "RouteId": 100113,
->            "VehicleId": 1,
->            "Position": {
->                "Latitude": 47.61703550242447,
->                "Longitude": -122.14263367613601 
->            },
->            "TimestampUTC": "20201031"
->        },{
->            "DirectionId": 2,
->            "RouteId": 100113,
->            "VehicleId": 2,
->            "Position": {
->                "Latitude": 47.61703550242447,
->                "Longitude": -122.14263367613601 
->            },
->            "TimestampUTC": "20201030"
->        },{
->            "DirectionId": 2,
->            "RouteId": 100113,
->            "VehicleId": 2,
->            "Position": {
->                "Latitude": 47.61528240582737,
->                "Longitude": -122.14308643341062
->            },
->            "TimestampUTC": "20201031"
->    }]';
->    EXECUTE @RC = [web].[AddBusData] 
->       @payload
->    GO
->```
+1. Select **Save** > **Continue**.
 
 ## Deploy an Azure Static Web App
 
-The main goal is to deploy an Azure Static Web App using the Azure portal.
+The main goal is to deploy an Azure Static Web App using Azure PowerShell.
+
+1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
+
+1. First, configure your variables.
+
+```powershell
+# Get resource group and location and random string
+$resourceGroupName = "Sandbox resource group name"
+$resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
+$uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
+$location = $resourceGroup.Location
+# Azure static web app name
+$webAppName = $("bus-app$($uniqueID)")
+# Get the repository name
+$appRepository = Read-Host "Please enter the forked URL (e.g. https://github.com/<username>/serverless-full-stack-apps-azure-sql):"
+# Get user's GitHub personal access token
+$githubToken = (Read-Host "In your GitHub account settings, near the bottom left, select Developer settings > Personal access tokens > check all boxes and generate the token. Enter the token").ToString()
+# App service plan name
+$appServicePlanName = (Get-AzAppServicePlan -resourceGroupName $resourceGroupName).Name
+```
+
+1. Deploy the Azure Static Web App
+
+```powershell
+# Deploy Azure static web app
+$staticWebApp = az staticwebapp create -n $webAppName -g $resourceGroupName `
+    -s $appRepository -l 'westus2' -b main --token $githubToken
+```
+
+TODO and test
 
 1. Navigate to the Azure portal.
 
