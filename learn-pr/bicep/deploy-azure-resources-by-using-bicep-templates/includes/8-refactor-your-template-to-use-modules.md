@@ -1,7 +1,7 @@
 > [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
 
-In this exercise, you'll update the Bicep template that you previously created so that it uses a module for the App Service resources. Modules help to keep the intention of the main template clearer. It also means that you can reuse the App Service module in other templates if you choose to.
+In this exercise, you'll update the Bicep template that you previously created so that it uses a module for the Azure App Service resources. Modules help to keep the intention of the main template clearer. You can reuse the App Service module in other templates if you choose to.
 
 During the process, you'll:
 
@@ -9,13 +9,13 @@ During the process, you'll:
 > * Add a new module and move the App Service resources into it.
 > * Reference the module from the main Bicep template.
 > * Add an output for the App Service app's host name, and emit it from the module and template deployments.
-> * Test the deployment to ensure the template is valid.
+> * Test the deployment to ensure that the template is valid.
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
 ## Add a new module file
 
-1. In Visual Studio Code, create a new folder called *modules* in the same folder that you created your *main.bicep* file. Inside the *modules* folder, create a file called *appService.bicep*.
+1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *appService.bicep*.
 
 1. Add the following content into the *appService.bicep* file:
 
@@ -52,13 +52,13 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    }
    ```
 
-   Notice you have copied the parameters and variables from your *main.bicep* template, since the *appService.bicep* template needs to be self-contained.
+   Notice that you've copied the parameters and variables from your *main.bicep* template, because the *appService.bicep* template needs to be self-contained.
 
-1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any red squiggles indicating warnings about missing variables or parameters, or invalid resources.
+1. Save the changes to the file. Notice that Visual Studio Code doesn't show you any red squiggles to indicate warnings about missing variables, missing parameters, or invalid resources.
 
 ### Add a reference to the module from the parent template
 
-Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Since the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
+Now that you have a complete module to deploy the App Service resources, you can refer to the module within the parent template. Because the module now deploys the App Service resources, you can delete the associated resources and variables from the parent template.
 
 1. In the *main.bicep* file, delete the App Service resources and the  `appServicePlanName`, `appServicePlanSkuName`, and `appServicePlanTierName` variable definitions. Don't delete the App Service-related parameters, because you still need them. Also, don't delete the storage account parameters, variable, or resources.
 
@@ -75,7 +75,7 @@ Now that you have a complete module to deploy the App Service resources, you can
    }
    ```
 
-   Notice that you are specifying the parameters for your module by referencing the parameters in the parent template.
+   Notice that you're specifying the parameters for your module by referencing the parameters in the parent template.
 
    After you're finished, your *main.bicep* file should look like this:
 
@@ -124,11 +124,11 @@ Now that you have a complete module to deploy the App Service resources, you can
    output appServiceAppHostName string = appServiceApp.properties.defaultHostName
    ```
 
-   This code is declaring an output for this module, which will be named `appServiceAppHostName`, will be of type `string`, and will take its value from the `defaultHostName` property of the App Service app.
+   This code is declaring that an output for this module, which will be named `appServiceAppHostName`, will be of type `string`. The output will take its value from the `defaultHostName` property of the App Service app.
 
 1. Save the changes to the file.
 
-This output is declared within a Bicep file that we'll use as a module, so it's only going to be available to the parent template. You need to return the output to the person executing the template as well.
+   This output is declared within a Bicep file that we'll use as a module, so it's going to be available only to the parent template. You also need to return the output to the person who's deploying the template.
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 
@@ -136,7 +136,7 @@ This output is declared within a Bicep file that we'll use as a module, so it's 
    output appServiceAppHostName string = appService.outputs.appServiceAppHostName
    ```
 
-   Notice this output is declared in a similar way to the output in the module, but this time you are referencing the module's output instead of a resource property.
+   Notice that this output is declared in a similar way to the output in the module. But this time, you're referencing the module's output instead of a resource property.
 
 1. Save the changes to the file.
 
@@ -144,7 +144,7 @@ This output is declared within a Bicep file that we'll use as a module, so it's 
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following Azure CLI commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
 
 ```azurecli
 templateFile="main.bicep"
@@ -161,7 +161,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
 $templateFile = 'main.bicep'
@@ -178,20 +178,24 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now **5 Succeeded** deployments. Select this link.
+1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now five successful deployments.
 
-1. Notice that you have two new deployments in the list. One begins with the name **addmodule**, and another is called **appService**:
+1. Select the **5 Succeeded** link. Notice that you have two new deployments in the list. One begins with the name **addmodule**, and another is called **appService**.
 
-    :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Azure portal interface for the deployments with the five deployments listed and succeeded statuses." border="true":::
+    :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the five deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment that begins with **addmodule**, then select **Deployment details** to expand the list of deployed resources. Notice our module deployment appears in the list - in fact it appears twice, because we referenced it as an output too.
+1. Select the deployment that begins with **addmodule**, and then select **Deployment details** to expand the list of deployed resources. 
 
-    :::image type="content" source="../media/8-addmodule-details.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
+    Notice that our module deployment appears in the list.  In fact, it appears twice, because we referenced it as an output too.
 
-1. Select the **Outputs** tab. Notice that there is an output called **appServiceAppHostName** with the host name of your App Service app. Copy the host name to your clipboard.
+    :::image type="content" source="../media/8-addmodule-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one resource listed." border="true":::
 
-    :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Azure portal interface for the specific deployment's outputs." border="true":::
+1. Select the **Outputs** tab. Notice that there's an output called **appServiceAppHostName** with the host name of your App Service app. Copy the host name to your clipboard.
 
-1. Open a new browser tab and paste the host name you just copied. You should see a page with the default App Service welcome page. Congratulations - you've successfully deployed the foundations for a great app!
+    :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Screenshot of the Azure portal interface for the specific deployment's outputs." border="true":::
 
-     :::image type="content" source="../media/8-addmodule-appservice.png" alt-text="The default App Service welcome page." border="true":::
+1. Open a new browser tab and paste the host name that you just copied. You should see the default App Service welcome page. 
+
+     :::image type="content" source="../media/8-addmodule-appservice.png" alt-text="Screenshot of the default App Service welcome page." border="true":::
+
+Congratulations! You've successfully deployed the foundations for a great app.
