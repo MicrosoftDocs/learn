@@ -13,6 +13,7 @@ There are some Prerequisites in order to authenticate namely:
 * It needs to be a member of the Storage Blob Data Contributor role on the default storage account. 
 
 If you want to create users, you need to connect to the SQL Pool database from which you want transfer data to/from. 
+
 An example: 
 
 
@@ -24,7 +25,7 @@ CREATE USER Leo FROM LOGIN Leo;
 CREATE USER [chuck@contoso.com] FROM EXTERNAL PROVIDER;
 ```
 
-To assign a role:
+When you want to assign a role you can use the following script as an example:
 
 ```sql
 --SQL User
