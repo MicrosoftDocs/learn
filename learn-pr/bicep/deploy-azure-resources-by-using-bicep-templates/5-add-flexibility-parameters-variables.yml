@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-azure-resources-bicep.add-flexibility-by-using-params-and-vars
+uid: learn.azure.deploy-azure-resources-bicep.add-flexibility-parameters-variables
 title: Add flexibility by using parameters and variables
 metadata:
   unitType: learning-content  
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-add-flexibility-by-using-parameters-and-variables.md)]
+  [!include[](includes/5-add-flexibility-parameters-variables.md)]

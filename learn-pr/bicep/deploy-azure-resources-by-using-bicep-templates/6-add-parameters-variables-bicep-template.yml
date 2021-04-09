@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-azure-resources-bicep.add-params-and-vars
+uid: learn.azure.deploy-azure-resources-bicep.add-parameters-variables-bicep-template
 title: Exercise - Add parameters and variables to your Bicep template
 sandbox: true
 metadata:
@@ -14,4 +14,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-add-parameters-and-variables-to-your-bicep-template.md)]
+  [!include[](includes/6-add-parameters-variables-bicep-template.md)]
