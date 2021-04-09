@@ -12,7 +12,14 @@ Most HPC applications, including EDA in our scenario, have relatively static dat
 
 For example, setting "nocto,actimeo=600" is advisable for EDA tools/libraries volumes as files aren’t changing, therefore there's no cache coherency to maintain and it will eliminate metadata calls and improve the overall performance.
 
-## Tune sysctl system parameters for optimal performance
+## Tune system parameters for optimal performance
+
+Run below commands to apply basic server tuning and typical latency tuning for your client VMs:
+
+```bash
+sudo systemctl enable --now tuned
+sudo tuned-adm profile latency-performance
+```
 
 Some or all of the following system parameters (/etc/sysctl.conf) may be helpful on Linux Client VMs for optimal performance. If you have client VMs with huge amounts of RAM, or higher networking bandwidth like InfiniBand, you may want to set some values even higher than what is listed below.
 
