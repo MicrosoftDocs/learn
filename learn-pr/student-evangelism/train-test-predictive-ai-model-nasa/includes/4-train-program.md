@@ -121,21 +121,21 @@ Follow these steps to train the neural network in your AI model.
 
 After five epochs are complete, the system reaches our `epoch` limit. 
 
-    ```output
-    ...
-    Training step  31
-    Training step  32
-    Training step  33
-    Training step  34
-    Training step  35
-    Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
-    Training step  36
-    Training step  37
-    Training step  38
-    Training step  39
-    Training step  40
-    Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
-    ```
+```output
+...
+Training step  31
+Training step  32
+Training step  33
+Training step  34
+Training step  35
+Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
+Training step  36
+Training step  37
+Training step  38
+Training step  39
+Training step  40
+Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
+```
 
 The output shows the prediction accuracy for each epoch iteration with training and testing losses, and the test accuracy.
 
