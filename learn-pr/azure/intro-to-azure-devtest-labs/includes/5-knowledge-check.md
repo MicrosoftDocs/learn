@@ -4,7 +4,7 @@ Here, you'll examine this scenario in detail before deciding how best to create 
 
 ## Create developer VM image
 
-Your developers run environments based on the .NET Core technology stack and use REACT as a front-end client-side framework. 
+Your developers run environments based on the .NET Core technology stack and use REACT as a front-end client-side framework.
 
 You also want to allow developers to make changes to the default VM image. As technology moves on, the VM image should be altered.
 

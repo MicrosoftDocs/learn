@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-devtest-labs.5-knowledge-check
+uid: learn.azure.intro-to-azure-devtest-labs.5-knowledge-check
 metadata:
-  title: Knowledge Check
+  unitType: knowledge_check
+  title: Knowledge check
   description: In this unit, you'll answer some questions based on a scenario to check the knowledge that you have gained in this module.
-  ms.date: 01/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 04/09/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 10
 content: |
 quiz:

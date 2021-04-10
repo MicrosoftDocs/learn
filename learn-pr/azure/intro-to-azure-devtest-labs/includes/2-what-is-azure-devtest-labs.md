@@ -41,10 +41,6 @@ PaaS and Infrastruce-as-a-Service (IaaS) resources are both available within Azu
 
 Users create an environment by picking a configured Azure Resource Manager template from the Azure portal, as they do with other VM base types. You provision Azure PaaS resources and IaaS VMs in an environment from an Azure Resource Manager template.
 
-The screenshot below shows how to configure the Azure Service Fabric PaaS resource as an environment within Azure DevTest Labs.
-
-![Azure Lab Environment - Fabric Service](../media/2-choose-a-base-fabric.png)
-
 ## Differences between Azure Lab Services and DevTest Labs
 
 Although there's sometimes confusion between Azure Lab Services and DevTest Labs, they're two separate products with different intentions. 
@@ -53,12 +49,12 @@ With Azure Lab Services, you can create simple and controlled classroom lab envi
 
 While similar to Lab Services, DevTest Lab gives you greater control over the infrastructure and configuration within a custom lab. Your lab can be more than a classroom environment. For example, you can create labs for testing and staging software. 
 
-Here's a table that highlights the main points differences:
+Here's a table that highlights the differences:
 
-| Features | Lab Services |	DevTest Lab
+| Features | Lab Services | DevTest Lab
 | -------- | ----------- | ----------- |
 | Management of Azure infrastructure | Automatically managed by the service. | You manage on your own. |
 | Built-in resiliency | Automatically handled by the service. | You manage on your own. |
-| Subscription management | Service handles allocation of resources within Microsoft subscriptions that back the service. Scaling is automatically handled by the service. |	You manage within your own Azure subscription. No autoscaling of subscriptions. |
+| Subscription management | Service handles allocation of resources within Microsoft subscriptions that back the service. Scaling is automatically handled by the service. | You manage within your own Azure subscription. No autoscaling of subscriptions. |
 | Azure Resource Manager deployment within the lab | Not available. | Available |
 | | |

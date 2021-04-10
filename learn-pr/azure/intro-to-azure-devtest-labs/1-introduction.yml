@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-devtest-labs.1-introduction
+uid: learn.azure.intro-to-azure-devtest-labs.1-introduction
 metadata:
+  unitType: introduction
   title: Introduction
   description: In this unit, you'll learn about a business scenario that Azure DevTest Labs can help to address.
-  ms.date: 01/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 04/09/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction
 durationInMinutes: 5
 content: |

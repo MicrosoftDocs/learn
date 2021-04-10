@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-devtest-labs.6-summary
+uid: learn.azure.intro-to-azure-devtest-labs.6-summary
 metadata:
+  unitType: summary
   title: Summary
   description: In this unit, you'll review what you have learned about Azure DevTest Labs.
-  ms.date: 01/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 04/09/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Summary
 durationInMinutes: 5
 content: |

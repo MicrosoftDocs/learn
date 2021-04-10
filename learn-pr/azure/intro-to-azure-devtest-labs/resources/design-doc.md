@@ -63,8 +63,8 @@ Identify the subtasks of *Introduction to Azure DevTest Labs*
         - Quickly get to ready-to-test
         - Create once, use everywhere
         - Worry-free self-service
-        - Use IaaS and Paas resources
-    - Constrast Azure DevTest Labs with Azure Lab Services. Make sure students understand these are different products with different purposes.
+        - Use IaaS and PaaS resources
+    - Contrast Azure DevTest Labs with Azure Lab Services. Make sure students understand these are different products with different purposes.
 
 1. **How Azure DevTest Labs works**
 

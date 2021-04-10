@@ -13,7 +13,7 @@ In today's environments, developers might find that on-premises solutions take a
 - Resource contention with virtual machines
 - Difficulty in setting up realistic scale tests
 - Procurement delays
- 
+
 By using Azure DevTest Labs, can you reduce these delays because many restrictions don't apply in the cloud. Users can create labs with a few clicks without having to wait for hardware delivery or approvals. An on-premises environment doesn't have the same flexibility to grow on demand, which can slow the code development process.
 
 Common problems with on-premises solutions are:
