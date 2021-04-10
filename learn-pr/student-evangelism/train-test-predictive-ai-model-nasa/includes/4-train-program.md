@@ -94,91 +94,58 @@ Follow these steps to train the neural network in your AI model.
                model.train()
    ```
 
-   As the build progresses, the output shows each training step completed:
+   As the build progresses, the output shows each training step and epoch completed:
 
-   ```output
-   Training step  1
-   Training step  2
-   Training step  3
-   ...
-   ```
+    ```output
+    Training step  1
+    Training step  2
+    Training step  3
+    Training step  4
+    Training step  5
+    Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810
+    Training step  6
+    Training step  7
+    Training step  8
+    Training step  9
+    Training step  10
+    Epoch 2/5.. Train loss: 0.679.. Test loss: 0.372.. Test accuracy: 0.935
+    Training step  11
+    Training step  12
+    ...
+    ```
 
-   Do you notice the output for each successive step takes longer to display than the previous step? As noted earlier, the more steps we run for each `epoch` iteration, the longer the training takes to complete.
+   Do you notice the output for each successive epoch takes slightly longer to display than the previous one?
 
 
 ## Analyze the training output
 
-After five steps are complete, the system reaches our `epoch` limit. The output shows the prediction accuracy of our model:
+After five epochs are complete, the system reaches our `epoch` limit. 
 
-   ```output
-   ...
-   Training step  4
-   Training step  5
-   Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810
-   ```
+    ```output
+    ...
+    Training step  31
+    Training step  32
+    Training step  33
+    Training step  34
+    Training step  35
+    Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
+    Training step  36
+    Training step  37
+    Training step  38
+    Training step  39
+    Training step  40
+    Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
+    ```
+
+The output shows the prediction accuracy for each epoch iteration with training and testing losses, and the test accuracy.
 
 In the first epoch, we see a training loss of 1.990, a test loss of 0.472, and a test accuracy of 0.810.
+For the final epoch, we see a training loss of 0.263, a test loss of 0.372, and a test accuracy of 0.802.
 
 > [!Note]
 > **Sarah ToDo**
 > - Describe the two loss values and the accuracy value in more detail.
-
-If we let the training continue for a while, we see the computer complete more steps and epochs:
-
-```output
-Training step  1
-Training step  2
-Training step  3
-Training step  4
-Training step  5
-Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810
-Training step  6
-Training step  7
-Training step  8
-Training step  9
-Training step  10
-Epoch 2/5.. Train loss: 0.679.. Test loss: 0.372.. Test accuracy: 0.935
-Training step  11
-Training step  12
-Training step  13
-Training step  14
-Training step  15
-Epoch 2/5.. Train loss: 0.648.. Test loss: 0.595.. Test accuracy: 0.644
-Training step  16
-Training step  17
-Training step  18
-Training step  19
-Training step  20
-Epoch 3/5.. Train loss: 0.463.. Test loss: 0.444.. Test accuracy: 0.835
-Training step  21
-Training step  22
-Training step  23
-Training step  24
-Training step  25
-Epoch 4/5.. Train loss: 0.310.. Test loss: 0.202.. Test accuracy: 0.935
-Training step  26
-Training step  27
-Training step  28
-Training step  29
-Training step  30
-Epoch 4/5.. Train loss: 0.261.. Test loss: 0.184.. Test accuracy: 0.967
-Training step  31
-Training step  32
-Training step  33
-Training step  34
-Training step  35
-Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
-Training step  36
-Training step  37
-Training step  38
-Training step  39
-Training step  40
-Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
-```
-
-> [!Note]
-> **Sarah ToDo**
-> - Describe what's gained by the longer training and additional epochs
+> - Describe why the accuracy does not get better from epoch to epoch. Why does it fluctuate?
 > - In the output, why do we see two sets of "Ephoch 2/5," "Epoch 4/5," and "Epoch 5/5"?
 
 
