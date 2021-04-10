@@ -2,7 +2,7 @@ Azure Cache for Redis provides a critical low-latency and high-throughput data s
 
 ## What is Redis Cache?
 
-Redis Cache is a widely used, open source caching solution. It's a key-value datastore running in memory. Because it runs in memory, it's very responsive. 
+Redis Cache is a widely used, open-source caching solution. It's a key-value datastore running in memory. Because it runs in memory, it's very responsive. 
 
 Typically, organizations use Redis Cache to complement their database apps. By combining Redis with backend databases, you can significantly improve the performance of your apps. 
 
@@ -46,10 +46,10 @@ You can select from five available tiers of Azure Cache for Redis. These are:
 - **Standard**. Runs on two replicated VMs. Based on an OSS Redis cache.
 
    > [!IMPORTANT]
-   > Standard and Basic are both single node caches. You should consider these tiers only for non critical workloads. 
+   > Standard and Basic are both single node caches. You should consider these tiers only for non-critical workloads. 
 
 - **Premium**. Deployed on more powerful VMs compared. Offers higher throughput, lower latency, better availability, and more features. Based on an OSS Redis cache.
-- **Enterprise**. Offers higher availability than the Premium tier. A high performance cache powered by Redis Labs' Redis Enterprise software.
+- **Enterprise**. Offers higher availability than the Premium tier. A high-performance cache powered by Redis Labs' Redis Enterprise software.
 - **Enterprise Flash**. Offers a cost effective alternative to Enterprise. Also powered by Redis Labs' Redis Enterprise software. Extends Redis data storage to non-volatile memory, which reduces the overall per-GB memory cost.
 
 All tiers support the following features:
@@ -70,4 +70,4 @@ The following features are only available in the Enterprise tiers:
 
 - **RediSearch**. Provides a powerful indexing and querying engine with a full-text search engine.
 - **RedisBloom**. Provides support for probabilistic data structures.
-- **RedisTimeSeries**. Enables you to ingest and query very large quantities of data with very high performance. 
+- **RedisTimeSeries**. Enables you to ingest and query very large quantities of data with very high-performance. 

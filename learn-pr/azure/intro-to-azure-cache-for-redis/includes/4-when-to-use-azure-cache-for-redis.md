@@ -11,7 +11,7 @@ To determine whether to use Azure Cache for Redis, use the criteria described in
 
 | Criteria    | Analysis     |
 | ------------------------- | ---------------------------- |
-| Simplicity | A managed services offers many benefits, including: provisioning, setup, scaling, updates, and patching. |
+| Simplicity | A managed service offers many benefits, including: provisioning, setup, scaling, updates, and patching. |
 | Reliability | It's vital that any caching solution is highly available to ensure that your apps can deliver at peak performance, even when there are component failures. |
 | Scaling | It's important that the system is capable of responding to changes in load. Scaling should be automatic, and take place without downtime. |
 
@@ -20,7 +20,7 @@ To determine whether to use Azure Cache for Redis, use the criteria described in
 
 Review the following questions when considering Azure Cache for Redis as your data integration solution. 
 
-### Do you want a managed services approach?
+### Do you want a managed service approach?
 
 When you use Azure Cache for Redis, you are implementing a fully managed service. This provides many benefits, including:
 
@@ -30,7 +30,7 @@ When you use Azure Cache for Redis, you are implementing a fully managed service
 
 ### Is reliability critical?
 
-Azure Cache for Redis provides a number of reliability and high availability features. These include: OSS Cluster, data persistence, zone redundancy, and geo-replication. 
+Azure Cache for Redis provides several reliability and high availability features. These include: OSS Cluster, data persistence, zone redundancy, and geo-replication. 
 
 Specifically, Azure Cache for Redis provides the following high availability capabilities:
 
