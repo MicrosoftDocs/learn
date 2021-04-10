@@ -2,7 +2,7 @@ Most enterprise apps use databases; these databases form the cornerstone of many
 
 As indicated in the following graphic, Azure Cache for Redis can help improve performance in apps that interface with many database solutions, including Azure SQL Database, Azure Cosmos DB, and Azure Database for MySQL. 
 
-:::image type="content" source="../media/distributed-cache.png" alt-text="A graphic depicting clients apps connecting to database-based apps. Azure Cache for Redis sits between the app interfaces and the backend database and storage systems..":::
+:::image type="content" source="../media/distributed-cache.png" alt-text="A graphic depicting clients apps connecting to database hosted apps. Azure Cache for Redis sits between the app interfaces and the backend database and storage systems.":::
 
 ## Example scenario
 
@@ -16,4 +16,4 @@ In this module, you'll evaluate how Azure Cache for Redis can improve the perfor
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to evaluate whether Azure Cache for Redis can improve the performance and scalability of your apps.
+By the end of this module, you'll be able to evaluate whether Azure Cache for Redis is the appropriate caching solution for your apps.

@@ -20,7 +20,25 @@ Any caching solution should address four key areas. These are:
 Azure Cache for Redis enables you to implement Redis Cache as a fully managed service. 
 
 > [!NOTE]
-> Azure Cache for Redis offers both Redis open-source (OSS Redis) and a commercial product from Redis Labs (Redis Enterprise) as a managed service.
+> Azure Cache for Redis offers both Redis open-source (OSS Redis) and a commercial product from Redis Labs (Redis Enterprise) as a managed service, depending on the tier you select.
+
+Azure Cache for Redis provides the following application architecture patterns:
+
+- **Data cache**. Because databases are often too large to load directly into cache, it's common to use the *cache-aside* pattern. This pattern loads data into the cache only as and when needed.  
+- **Content cache**. Most webpages contain static items including headers, footers, and banners. These items don't change very often. By using an in-memory content cache, you can provide quick access to static content compared with accessing the backend datastores. 
+- **Session store**. Often used with shopping carts or other data based on user history data that a web application might want to associate with user cookies. Because storing too much data in a cookie can adversely affect performance, apps often use the cookie as a key to query the backend database for the user data. Using an in-memory cache to store user session information is faster than working with the backend database. 
+- **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to execute. If a task contains operations that are long running, these are often queued to be executed in sequence. Azure Cache for Redis provides a distributed queue to support this application pattern. 
+
+   > [!NOTE]
+   > Longer running operations are queued to be processed in sequence, often by another server.
+
+- **Distributed transactions**. Sometimes apps require a series of commands to execute on a backend datastore as a single operation. Azure Cache for Redis supports executing a batch of commands as a single transaction. 
+
+   > [!NOTE]
+   > All commands must succeed, or all must be rolled back to the initial state. 
+
+
+## Azure Cache for Redis tiers
 
 You can select from five available tiers of Azure Cache for Redis. These are: 
 
@@ -50,6 +68,6 @@ Premium and both Enterprise tiers also support additional advanced features. The
 
 The following features are only available in the Enterprise tiers:
 
-- **RediSearch**. A powerful indexing and querying engine with a full-text search engine.
+- **RediSearch**. Provides a powerful indexing and querying engine with a full-text search engine.
 - **RedisBloom**. Provides support for probabilistic data structures.
 - **RedisTimeSeries**. Enables you to ingest and query very large quantities of data with very high performance. 
