@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.4-publish-web-api-to-azure-app-service
-title: Publish OpenAPI-enabled Web API to Azure App Service
+title: Publish an OpenAPI enabled web API to Azure App Service
 metadata:
-  title: Publish OpenAPI-enabled Web API to Azure App Service
-  description: You can publish an OpenAPI-enabled Web API app to an Azure App Service instance.
-  ms.date: 04/02/2021
+  title: Publish an OpenAPI enabled web API to Azure App Service
+  description: Publish an OpenAPI enabled web API to Azure App Service using Visual Studio to reduce context switching.
+  ms.date: 04/12/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial

@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio
-title: Integrate OpenAPI-enabled Web API with Azure API Management through Visual Studio
+title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
 summary: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
 metadata:
-  title: Integrate OpenAPI-enabled Web API with Azure API Management
+  title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
   description: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
-  ms.date: 04/02/2021
+  ms.date: 04/12/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial  

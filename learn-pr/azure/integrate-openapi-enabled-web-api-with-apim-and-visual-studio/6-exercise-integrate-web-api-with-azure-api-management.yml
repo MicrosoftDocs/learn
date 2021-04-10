@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.6-exercise-integrate-web-api-with-azure-api-management
-title: Exercise - Integrate OpenAPI-enabled Web API with Azure API Management
+title: Exercise - Integrate openAPI enabled web API with Azure API Management
 metadata:
-  title: Exercise - Integrate OpenAPI-enabled Web API with Azure API Management
-  description: You can integrate an OpenAPI-enabled Web API published to Azure App Service with Azure API Management instance.
-  ms.date: 04/02/2021
+  title: Exercise - Integrate openAPI enabled web API with Azure API Management
+  description: Integrate an OpenAPI enabled web API published to Azure App Service with Azure API Management instance.
+  ms.date: 04/12/2021
   author: justinyoo
   ms.author: juyoo
   ms.topic: interactive-tutorial

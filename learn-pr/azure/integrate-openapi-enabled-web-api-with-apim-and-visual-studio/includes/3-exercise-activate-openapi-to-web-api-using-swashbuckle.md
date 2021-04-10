@@ -1,7 +1,4 @@
-In this module you're going to double-check whether the OpenAPI document generation is ready by implementing Swagger UI and Swashbuckle into the ASP.NET Core Web API application.
-
-
-<!-- NOTE to REVIEWER - The download link for this module can be found at https://github.com/MicrosoftDocs/mslearn-developer-tools-power-platform/blob/master/fusion-developers/exercise.zip . -->
+In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core web API application. The Swagger tooling will assist in creating the OpenAPI document describing your web API.
 
 > [!NOTE]
 > Download the source code to your local computer to complete this exercise. After downloading the file, you will need to unzip it.
@@ -12,7 +9,7 @@ In this module you're going to double-check whether the OpenAPI document generat
 > 1. Unzip the `exercise.zip` file.
 
 
-## Configure ASP.NET Core Web API for OpenAPI Ready ##
+## Add the Swagger tooling ##
 
 1. Open Visual Studio and find the ASP.NET Core Web API app.
 
@@ -27,6 +24,9 @@ In this module you're going to double-check whether the OpenAPI document generat
     ![NuGet Package Manager][image-03]
 
    The NuGet package has now been installed. Then close the **NuGet Package Manager** tab.
+
+
+## Configure Swashbuckle to generate an OpenAPI document ##
 
 1. Open the `Startup.cs` file.
 
@@ -82,6 +82,9 @@ In this module you're going to double-check whether the OpenAPI document generat
    You've just completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 
     ![File Modified: Startup.cs][image-05]
+
+
+## Generate the OpenAPI document file ##
 
 1. Click the debug button at the top-middle of Visual Studio.
 

@@ -1,11 +1,11 @@
-At VanArsdel, Crystal and her development team have built web APIs for inventory management. The web APIs are now generating the OpenAPI document. She wants to publish the app to [Azure App Service][az appsvc] without leaving Visual Studio. She also wants to integrate the web API app with [Azure API Management][az apim] while publishing the app within Visual Studio.
+Now that the code is configured to generate an OpenAPI document file that describes the web API, the VanArsdel's development team's attention turns to publishing the application.
 
 
-## Seamless Development Experiences in Visual Studio, from Code to Deploy ##
+## Seamless development experiences in Visual Studio, from code to deploy ##
 
-In a fusion development team, time is one of the most valuable assets. You write codes and build an app, then use different tools to deploy your app. You come back to the codes, update it and switch to the other tools for deploy. The cost for switching between tools is huge, and eventually it will decrease your productivity.
+In a fusion development team, time is one of the most valuable assets. You write code and build an app, then use different tools to deploy your app. You come back to the coded, update it and switch to the other tools for deploy. The cost for switching between tools is huge, and eventually it will decrease your productivity.
 
-What if your development tool, Visual Studio, can do everything for you in one place? It saves a lot of times and increases productivity. Visual Studio offers the feature to publish your app to Azure App Service.
+What if your development tool, Visual Studio, can do everything for you in one place? It saves a lot of times and increases productivity. Visual Studio offers features to publish your app to Azure App Service.
 
 ![Publish to Azure App Service in Visual Studio][image-01]
 

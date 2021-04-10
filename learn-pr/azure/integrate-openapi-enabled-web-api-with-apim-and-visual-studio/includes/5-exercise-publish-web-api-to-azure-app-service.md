@@ -2,17 +2,19 @@ In this exercise, you will deploy your web API application to [Azure App Service
 
 > [!NOTE]
 > In the previous exercise, you already have the ASP.NET Core Web API app with the OpenAPI feature enabled. You will use the app for this exercise.
+> 
+> You will need an Azure subscription to complete this module. If you do not have one, you can [sign up for a free one here][az account free].
 
 
 ## Deploy Web API Application to Azure App Service through Visual Studio ##
 
-The web API application is ready to publish. In order to deploy the web API application, run the following steps.
+After the previous exercise, the web API application is ready to publish. In order to deploy the web API application, run the following steps.
 
 1. In **Solution Explorer**, right-click the project and select the **Publish** menu.
 
    ![Right-click Publish in Visual Studio][image-02]
 
-1. In the **Publish** dialogue modal, select **Azure** and click the **Next** button.
+1. In the **Publish** dialogue modal, select **Azure** and click the **Next** button. *(You may need to sign in to your Azure subscription first.)*
 
    ![Choose Publish Target][image-03]
 
@@ -20,7 +22,7 @@ The web API application is ready to publish. In order to deploy the web API appl
 
    ![Choose Specific Target][image-04]
 
-1. While you can use an existing **Azure App Service** instance, if you like, for this time, let's create a new one through Visual Studio. Click the `➕` button at the right-hand side of the dialogue modal to create a new **Azure App Service** instance.
+1. You could use an existing **Azure App Service** instance, if you like. However, let's create a new one through Visual Studio. Click the `➕` button at the right-hand side of the dialogue modal to create a new **Azure App Service** instance.
 
    ![Click Create New App Service][image-05]
 
@@ -32,7 +34,7 @@ The web API application is ready to publish. In order to deploy the web API appl
 
    ![New App Service Created][image-07]
 
-1. As you only publish the web API app to **Azure App Service** instance, you don't need this step for now. Check the **Skip this step** tick box and click the **Finish** button.
+1. For now, we'll publish the web API app only to the **Azure App Service** instance. You can skip this step deploying to API Management for now. Check the **Skip this step** tick box and click the **Finish** button.
 
    ![Finish New App Service][image-08]
 
@@ -45,7 +47,7 @@ The web API application is ready to publish. In order to deploy the web API appl
    ![Web API Published][image-10]
 
 
-## Verify Web API Application on Azure App Service ##
+## Verify the web API application is running ##
 
 In order to make sure your web API app is appropriately deployed, open your web browser and enter the website URL copied from the previous step. You will see the **Page Not Found** error, which is expected.
 
@@ -95,3 +97,4 @@ Congratulations! You've now published your ASP.NET Core Web API app to Azure App
 
 [az appsvc]: https://docs.microsoft.com/azure/app-service/overview
 [az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az account free]: https://azure.microsoft.com/free/

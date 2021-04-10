@@ -1,18 +1,22 @@
-At VanArsdel, Crystal and her development team have built web APIs for inventory management. She wants to make sure the APIs are ready for [Azure API Management][az apim] to discover their endpoints through an OpenAPI document easily.
+Before a web API can be published to [Azure API Management][az apim] with Visual Studio, it should have an OpenAPI description document.
+
+The OpenAPI document is used by API Management to discover the endpoints for the web API.
+
+And by using the Swashbuckle tooling, it's easier than ever for the VanArsdel developers to create an OpenAPI description of their web APIs.
 
 
-## What Is OpenAPI and What Does It Do? ##
+## What is OpenAPI and what does it do? ##
 
-The OpenAPI document defines a standard and programming language-agnostic interface description for web APIs. It allows both humans and computers to discover and understand the capabilities of a service without having to access to source code, additional documentation, or inspection of network traffic.
+The OpenAPI document defines a standard and programming language-agnostic interface description for web APIs. It allows both humans and computers to discover and understand the capabilities of a service without having access to source code, additional documentation, or inspection of network traffic.
 
 ![OpenAPI][image-01]
 
-Because the OpenAPI document is a contract for web APIs, the consumers' of them understand and communicate with the web APIs, without having to know where the APIs are located or whether they are running.
+The OpenAPI document is a contract for web APIs. And it's all a consuming application needs to understand and communicate with the web APIs, without having to know where the APIs are located or whether they are running.
 
 
-## Activating OpenAPI Capability on ASP.NET Core Web API Applications ##
+## Generate an OpenAPI document from an ASP.NET Core web API application ##
 
-There are several ways activating the OpenAPI document capability into your ASP.NET Core Web API app. [Swashbuckle][swashbuckle] is the most popular way to do so.
+There are several ways to generate the OpenAPI document from your ASP.NET Core Web API app. [Swashbuckle][swashbuckle] is the most popular way to do so.
 
 ![Swashbuckle][image-02]
 

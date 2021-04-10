@@ -1,4 +1,4 @@
-While developing a web API application, it's important that developers keep their productivity without losing their cadences. Writing the application in Visual Studio and deploying it to Azure via a different tool may cause huge payout for context switching and diminish developers' productivity.
+While developing a web API application, it's important that developers keep their productivity without having to context switch. Writing the application in Visual Studio and deploying it to Azure via a different tool may hurt a developer's productivity and the inner dev loop.
 
 Visual Studio offers built-in features for seamless development experiences:
 
