@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-hdinsight 
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure HDInsight
+  description: Learn how Azure HDInsight can xxx
+  ms.date: 04/11/2021  
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial  
+title: Introduction to Azure HDInsight
+summary: Learn how Azure HDInsight xxx 
+abstract: |
+  By the end of this module, you will be able to: 
+    - Evaluate whether Azure HDInsight is appropriate to xxx.
+    - Describe how xxx <features> of Azure HDInsight work to <xxx solve problem>.
+prerequisites: |
+  - Beginner-level familiarity xxx
+  - Foundational knowledge of xxx
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - xxx
+  - xxx
+products:
+  - azure
+  - azure-azure-hdinsight
+  - azure-xxx
+units:  
+- learn.intro-to-azure-hdinsight.1-introduction
+- learn.intro-to-azure-hdinsight.2-what-is-azure-hdinsight
+- learn.intro-to-azure-hdinsight.3-how-azure-hdinsight-works
+- learn.intro-to-azure-hdinsight.4-when-to-use-azure-hdinsight
+- learn.intro-to-azure-hdinsight.5-knowledge-check
+- learn.intro-to-azure-hdinsight.6-summary
+badge:
+  uid: learn.intro-to-azure-hdinsight.badge
