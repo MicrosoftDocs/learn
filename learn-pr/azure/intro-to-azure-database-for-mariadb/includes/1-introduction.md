@@ -2,9 +2,9 @@ Your developers  and cloud architects don't want to have to worry about  managin
 
 Azure Database for MariaDB is a managed relational database as a service (DBaaS) offering that can handle your mission-critical workloads with predictable performance and dynamic scalability. You can easily connect your existing client apps and database tools to your instance of Azure Database for MariaDB to get the benefits of a Platform as a Service (PaaS) environment.
 
-:::image type="content" source="../media/mariadb-conceptual-diagram.png" alt-text="A graphic depicting the architecture of Azure Database for MariaDB in a typical organization.":::
+:::image type="content" source="../media/mariadb-conceptual-diagram.png" alt-text="A graphic depicting the architecture of Azure Database for MariaDB in a typical organization.":::<!--test-->
 
-By choosing to implement Azure Database for MariaDB, you can provide for: 
+By choosing to implement Azure Database for MariaDB, you can provide for:
 
 - High-availability
 - Data protection
