@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  Choose the best response for each question. Then select **Check your answers**.
+  Choose the best response for each question. Then select **Check your answers.**
 quiz:
   questions:
   - content: "Which of the following is an accessible link?"
@@ -40,13 +40,13 @@ quiz:
     choices:
     - content: "`div`"
       isCorrect: false
-      explanation: While it is possible to make any control clickable, using a `button` will ensure your page is accessible.
+      explanation: While it's possible to make any control clickable, using a `button` will ensure your page is accessible.
     - content: "`span`"
       isCorrect: false
-      explanation: While it is possible to make any control clickable, using a `button` will ensure your page is accessible.
+      explanation: While it's possible to make any control clickable, using a `button` will ensure your page is accessible.
     - content: "`p`"
       isCorrect: false
-      explanation: While it is possible to make any control clickable, using a `button` will ensure your page is accessible.
+      explanation: While it's possible to make any control clickable, using a `button` will ensure your page is accessible.
     - content: "`button`"
       isCorrect: true
       explanation: Use `button` to ensure your page is accessible.

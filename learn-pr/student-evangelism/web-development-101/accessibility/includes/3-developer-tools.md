@@ -32,18 +32,18 @@ Test out Lighthouse in your browser. The screenshots below will utilize [Edge](h
 1. Press <kbd>F12</kbd> to open the developer tools.
 1. In the top, click the **>>** (chevron) icon to open the list of hidden tabs.
 
-  ![Screenshot of the developer tools with the chevron highlighted.](../media/choose-tab.png)
+   ![Screenshot of the developer tools with the chevron highlighted.](../media/choose-tab.png)
 
 1. Select **Lighthouse** from the list.
 1. Under **Categories**, unselect all items except **Accessibility**.
 1. Under **Device**, select **Desktop**.
 
-  ![Screenshot of Lighthouse with only Accessibility selected under Categories and Desktop selected for Device.](../media/lighthouse-option-selection.png)
+   ![Screenshot of Lighthouse with only Accessibility selected under Categories and Desktop selected for Device.](../media/lighthouse-option-selection.png)
 
 1. Select **Generate report**.
 1. Notice the score and associated information about the page.
 1. You can test other pages by selecting **Clear all** in Lighthouse, navigating to a different page, and then selecting **Generate report**.
 
-  ![Screenshot of URL section of Lighthouse with cancel button highlighted](../media/lighthouse-clear.png)
+   ![Screenshot of URL section of Lighthouse with cancel button highlighted](../media/lighthouse-clear.png)
 
 You have now seen how to use Lighthouse, and the accessibility information the tool can provide.
