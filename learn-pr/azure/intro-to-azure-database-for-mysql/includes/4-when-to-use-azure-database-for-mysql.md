@@ -40,21 +40,21 @@ The following table describes administrative considerations for each hosting mod
 
 | Hosting model                   | Administrative effort                                        |
 | ------------------------ | ------------------------------------------------------------ |
-| MySQL on Azure VMs       | You have complete control over the OS and the MySQL server instance and its configuration. You decide when to update or upgrade the OS and database engine and which patches to apply. You also decide if and when to install any other software (such as an antivirus app). You can control the size of the VM, the number of disks, and their storage configurations. Some automated features are provided to greatly simplify patching, backup, and high availability. In summary, although you have complete control, there's a significant amount of administrative effort involved. |
-| Azure Database for MySQL | You can continue to administer your database, but you no longer have to manage the hardware, the OS, or the database engine. You can still administer some items if you want, such as databases, sign-in options, index tuning, query tuning, auditing, and security. In summary, there's considerably less administrative effort involved. |
+| MySQL on Azure VMs       | You have complete control over the OS and the MySQL server instance and its configuration. You decide when to update or upgrade the OS and database engine and which patches to apply. You also decide if and when to install any additional software (such as an antivirus app). You can control the size of the VM, the number of disks, and their storage configurations. Some automated features are provided to greatly simplify patching, backup, and high availability. In summary, although you have complete control, there's a significant amount of administrative effort involved. |
+| Azure Database for MySQL | You can continue to administer your database, but you no longer have to manage the hardware, the OS, or the database engine. You can still choose to administer some items, such as databases, sign-in options, index tuning, query tuning, auditing, and security. In summary, there's considerably less administrative effort involved. |
 
 ### Analyze cost
 
 With MySQL on Azure VMs, you pay for the provisioned VM, storage costs associated with the data, backup, data monitoring, and log storage. You also pay for the specific MySQL license type used.
 
-With Azure Database for MySQL, you start by selecting the tier and SKU that's most relevant to your needs. All resources are charged at a fixed hourly rate. Charges accrue for outgoing internet traffic at regular data transfer rates as well. Administrative costs are reduced because Microsoft manages the service for you.
+With Azure Database for MySQL, you start by selecting the tier and SKU that's most relevant to your needs. In addition, all resources are charged hourly at a fixed rate, and you're charged for outgoing internet traffic at regular data transfer rates. Administrative costs are reduced because Microsoft manages the service for you.
 
 > [!TIP]
 > Flexible Server also allows you to minimize costs by manually stopping and starting the server.
 
 ### Analyze high availability
 
-If high availability is critical to your app, then keep in mind that enabling high availability with MySQL for Azure VMs makes you wholly responsible for configuring the required Azure components. This involves more administrative effort and cost. With Azure Database for MySQL, high availability is available automatically.
+If high availability is critical to your app, then keep in mind that to enable high availability with MySQL for Azure VMs, you are wholly responsible for configuring the required Azure components. This involves additional administrative effort and cost. With Azure Database for MySQL, high availability is automatically available.
 
 ## Summary
 
@@ -66,7 +66,7 @@ Choose MySQL on Azure VMs when you:
 Choose Azure Database for MySQL over an IaaS solution when you:
 
 - Require online Storage scaling.
-- Don't want the worry of managing the underlying OS and MySQL engine.
+- Don't want to worry about managing the underlying OS and MySQL engine.
 - Require data encryption at rest for your databases.
 - Want automated backup and recovery options.
 
