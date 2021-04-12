@@ -32,7 +32,7 @@ Let's examine more closely the differences in features:
 - SSL/TLS connectivity is supported on all platforms.
 - Storage:
   - Both Azure Database for MySQL deployment modes support storage sizes between 5 gibibytes (GiBs) to 16 tebibytes (TiBs). Both also support online storage scaling.
-  - Currently only Single Server supports automatic<!-- Verify --> storage scaling.
+  - Currently only Single Server supports automatic storage scaling.
   - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling.
 
 - Updating and patching:
@@ -62,10 +62,10 @@ Let's examine more closely the differences in features:
 
 ## Azure Database for MySQL architecture
 
-Let's examine the Azure Database for MySQL architecture. We'll focus on the Flexible Server deployment mode. In the following diagram, an instance of Azure Database for MySQL is deployed. It's configured with Azure Premium Storage for data and logs. MySQL <!-- Which MySQL? (There are two in the graphic.) MySQL Client App, or Azure MySQL? -->also has access to locally redundant storage for backup.
+Let's examine the Azure Database for MySQL architecture. We'll focus on the Flexible Server deployment mode. In the following diagram, an instance of Azure Database for MySQL is deployed. It's configured with Azure Premium Storage for data and logs. MySQL also has access to locally redundant storage for backup.
 
 The MySQL instance is hosted in Availability zone 1. Other availability zones are present, and Flexible Server could use those as well. Various client apps are connected to the MySQL instance.
-<!-- Graphic issues: 1. There are acronyms used in the graphic that have yet to be defined. 2. We make no mention of VNet in the text (lines 65-67) or in the alt text. 3. Is there a difference between the green and blue storage disks? If so, we need to explain it. If not, they are fine. -->
+
 :::image type="content" source="../media/flexible-server.png" alt-text="This is a detailed architecture of Azure Database for MySQL Flexible Server in a typical organization as previously described.":::
 
 ### How high availability works
