@@ -5,7 +5,7 @@ metadata:
   description: This unit gives a high-level overview of some basic Python concepts used throughout this project. 
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Python basics needed for a super sleuth personality quiz

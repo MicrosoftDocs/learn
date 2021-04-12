@@ -6,7 +6,7 @@ metadata:
   description: Use the Lasso decoder to reveal the secret message.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

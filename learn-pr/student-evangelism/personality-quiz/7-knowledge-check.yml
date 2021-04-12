@@ -5,7 +5,7 @@ metadata:
   description: Answer questions to see what you've learned.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Check your knowledge
@@ -56,4 +56,3 @@ quiz:
     - content: "Coding is for everyone."
       isCorrect: true
       explanation: "True! Even if you don't want to be a developer as your career, learning to code helps you develop problem-solving skills and gives you insight into the software that you use every day."
-

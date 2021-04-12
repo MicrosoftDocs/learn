@@ -6,7 +6,7 @@ metadata:
   description: Learn how to use a secret message decoder and solve a cipher.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

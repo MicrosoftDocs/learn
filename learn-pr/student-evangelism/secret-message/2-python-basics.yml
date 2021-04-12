@@ -6,7 +6,7 @@ metadata:
   description: Learn some basic Python concepts and create a secret message decoder.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

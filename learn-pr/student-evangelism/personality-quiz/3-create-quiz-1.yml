@@ -5,7 +5,7 @@ metadata:
   description: This unit introduces how to interact with users in Python.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Part 1 - Asking the user a question in your super sleuth personality quiz

@@ -6,7 +6,7 @@ metadata:
   description: Expand your Caesar cipher that decodes one letter at a time to correctly wrap around the entire alphabet.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

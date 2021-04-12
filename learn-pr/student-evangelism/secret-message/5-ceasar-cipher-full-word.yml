@@ -6,7 +6,7 @@ metadata:
   description: Create a function to loop through all letters in a word and decipher the entire word by using a Caesar cipher.
   ms.date: 03/03/2021
   author: drguthals
-  ms.author: drguthals
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
