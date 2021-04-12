@@ -139,15 +139,19 @@ Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
 
 The output shows the prediction accuracy for each epoch iteration with training and testing losses, and the test accuracy.
 
-Here are the results for example:
-- `Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810`
-- `Epoch 2/5.. Train loss: 0.679.. Test loss: 0.372.. Test accuracy: 0.935`
-- `Epoch 2/5.. Train loss: 0.446.. Test loss: 0.675.. Test accuracy: 0.581`
-- `Epoch 3/5.. Train loss: 0.305.. Test loss: 0.570.. Test accuracy: 0.710`
-- `Epoch 4/5.. Train loss: 0.259.. Test loss: 0.278.. Test accuracy: 0.842`
-- `Epoch 4/5.. Train loss: 0.371.. Test loss: 0.504.. Test accuracy: 0.775`
-- `Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933`
-- `Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802`
+Here are the results from our test with five epochs. Your specific results will differ because the computer chooses a set of random images for each test run.
+
+Epoch | Training loss | Test loss | Test accuracy
+:---:|:---:|:---:|:---:
+1 | 1.990 | 0.472 | 0.810
+2 | 0.679 | 0.372 | 0.935
+2 | 0.446 | 0.675 | 0.581
+3 | 0.305 | 0.570 | 0.710
+4 | 0.259 | 0.278 | 0.842
+4 | 0.371 | 0.504 | 0.775
+5 | 0.271 | 0.172 | 0.933
+5 | 0.263 | 0.372 | 0.802
+
 
 > [!Note]
 > **Sarah ToDo**
