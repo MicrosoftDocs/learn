@@ -36,7 +36,7 @@ Let's examine more closely the differences in features:
   - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling.
 
 - Updating and patching:
-  - Operating system updates:
+  - OS updates:
     - Automatic for both Azure Database for MySQL deployment modes, although administrators have more control with Flexible Server.
     - Managed by end users for MySQL on Azure VMs.
 
