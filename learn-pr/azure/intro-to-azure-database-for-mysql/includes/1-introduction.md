@@ -1,4 +1,4 @@
-Cloud architects and developers don't want to have to manage the server that hosts their apps or the underlying operating system and database. Instead, they want to focus on developing their cloud-designed apps. Using Microsoft Azure Database for MySQL can help them achieve this.
+Cloud architects and developers don't want to have to manage the server that hosts their apps or the underlying operating system (OS) and database. Instead, they want to focus on developing their cloud-designed apps. Using Microsoft Azure Database for MySQL can help them achieve this.
 
 *Azure Database for MySQL* is a managed relational database as a service (DBaaS) offering that can help manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL. By doing so, you can get the benefits of a platform as a service (PaaS) environment, as the following image depicts.
 
