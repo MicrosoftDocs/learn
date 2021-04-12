@@ -40,7 +40,8 @@ class SalesTotal
   public double Total { get; set; }
 }
 
-var data = JsonConvert.DeserializeObject<SalesTotal>($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
+var salesJson = File.ReadAllText($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
+var salesData = JsonConvert.DeserializeObject<SalesTotal>(rawJson);
 
 Console.WriteLine(data.Total);
 ```
