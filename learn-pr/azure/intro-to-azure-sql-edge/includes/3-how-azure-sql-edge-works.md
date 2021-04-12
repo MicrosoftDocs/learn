@@ -1,4 +1,4 @@
-Here, you'll learn how Azure SQL Edge works and whether it's suitable for your organization. You'll explore how Azure SQL Edge helps address the challenges developers face when developing IoT apps.
+Here, you'll learn how Azure SQL Edge works and whether it's suitable for your organization. You'll explore how Azure SQL Edge helps address challenges that developers face when developing IoT apps.
 
 Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64. The Azure SQL Edge startup-memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
 
@@ -14,7 +14,7 @@ In this unit, you'll learn how Azure SQL Edge:
 
 ## Capture continuous data streams in real time  
 
-Many organizations deal with large data volumes that they need to ingest and analyze in a timely manner. Therefore, it's vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
+Many organizations deal with large data volumes that they need to ingest and analyze in a timely manner. That's why it's vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
 
 ### Time-series and streaming data support
 
@@ -82,5 +82,5 @@ SQL Server is the most secure database platform available. Because Azure SQL Edg
 | Feature        | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | RBAC and ABAC  | *Role-based access control* (RBAC) manages access to specific resources based on permissions assigned to the user requesting access (or a group to which they belong). *Attribute-based access control* (ABAC) manages access control based on rules that refer to the attributes of the user, target data, or resource. |
-| Encryption     | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations. It does this by encrypting database and log files through an encryption key that is encrypted. *Always Encrypted* provides separation between those who own the data and those who manage it. This helps prevent users with administrator privileges to a database from accessing encrypted data they don't own in that database. |
-| Classification | This feature helps you comply with security regulations by allowing you to categorize it by sensitivity and business impact. Once you classify data, you can manage it in ways that help protect sensitive or important data from theft or loss. |
+| Encryption     | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations. It does this by encrypting database and log files through an encryption key that is encrypted. *Always Encrypted* provides separation between users who own the data and those who manage it. This helps prevent users with administrator privileges to a database from accessing encrypted data they don't own in that database. |
+| Classification | A feature that helps you comply with security regulations by allowing you to categorize it by sensitivity and business impact. Once you classify data, you can manage it in ways that help protect sensitive or important data from theft or loss. |

@@ -1,4 +1,4 @@
-Let's start with an overview of IoT development challenges and the Azure SQL Edge features that help you overcome those challenges. This should help you decide whether Azure SQL Edge might be a good fit for your work. Azure SQL Edge can help those organizations interested in innovating in the IoT space. It provides a data platform that's:
+Let's start with an overview of IoT development challenges and the Azure SQL Edge features that help address them. This should help you decide whether Azure SQL Edge might be a good fit for your work. Azure SQL Edge can help organizations that are interested in innovating in the IoT space. It provides a data platform that's:
 
 - Flexible enough to support the full range of IoT scenarios.
 - Powerful enough to support edge compute.
@@ -7,7 +7,7 @@ Let's start with an overview of IoT development challenges and the Azure SQL Edg
 
 ## What are the challenges of IoT development?
 
-IoT systems can be found in many organizations, including those in:
+IoT systems can be found in many organizations, including in:
 
 - Retail
 - Finance
@@ -28,14 +28,14 @@ These organizations use IoT devices to work with data that originates in many wa
 - Onsite inventory system.
 - Home security.
 
-There's a wide range of industry sectors and of IoT devices in use. This makes it challenging for developers to create secure and consistent apps to work with these devices. Often, developers resort to using proprietary database systems to manage this data. This means they often must learn new skills on new platforms. It also sometimes results in a compromise of performance and security.
+There's a wide range of industry sectors and of IoT devices in use. It can be challenging for developers to create secure and consistent apps to work with these devices. Often, developers resort to using proprietary database systems to manage this data. Often, they must learn new skills on new platforms. It also sometimes results in a compromise of performance and security.
 
-The following table identifies common challenges that developers face when working with IoT devices in these contexts.
+The following table identifies common challenges developers experience when working with IoT devices in these contexts.
 
 | Challenge                                                    | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| IoT apps require a powerful database engine                  | Many IoT apps require near real-time analytics. Other apps require the ability to gather data when disconnected from backend systems. In these and other use cases, sending all data to the cloud can be very costly and bandwidth-intensive. This means that the IoT devices need access to a local database engine that must be lightweight and powerful. |
-| IoT apps require seamless connectivity to the backend ecosystem | IoT apps can be significantly constrained if they can't easily connect to, and communicate with, backend systems in an organization's datacenter or their hosted cloud services, or both. Therefore, it's vital that any system you implement at the edge on IoT devices can communicate with industry-standard database systems. |
+| IoT apps require a powerful database engine                  | Many IoT apps require near real-time <!-- ID/SME: Please note, it should be "real-time" and not "realtime" (as you had it). Please make this change globally, as needed. --> analytics. Other apps require the ability to gather data when disconnected from backend systems <!-- ID/SME: Per the Microsoft Writing Style Guide, don't use "back end" if you can substitute a more specific term, such as server, operating system, database, or network. And it's two words, unless a compound modifier, in which case it would be hyphenated. Please fix all instances globally to reflect the change you make. If you must use "back end", please change all instances in this unit to "back-end" as they're all compound modifiers.-->. In these and other use cases, sending all data to the cloud can be very costly and bandwidth-intensive. This means that the IoT devices need access to a local database engine that must be lightweight and powerful. |
+| IoT apps require seamless connectivity to the backend ecosystem | IoT apps can be significantly constrained if they can't easily connect to, and communicate with, backend systems in an organization's datacenter or their hosted cloud services, or both. That's why it's vital that any system you implement at the edge on IoT devices can communicate with industry-standard database systems. |
 | IoT apps can run in insecure environments                    | Many IoT apps might run in cars, hospitals, and factories, where security and privacy are primary requirements. Therefore, the platform you select to work with data in these environments must be secure, and users and developers must trust it.
 | Building solutions on unfamiliar platforms                   | Many existing IoT platforms rely on solution-specific APIs and databases that developers don’t know well. These solutions might also require specific language skills that developers don’t yet have. It's important that any apps you deploy to interact with edge-based IoT devices are built using standard components and tools with which developers are already familiar. |
 
@@ -49,7 +49,7 @@ Azure SQL Edge is a data engine that:
 
 Azure SQL Edge shares the same codebase as SQL Server and SQL Database. Therefore, developers with skills in SQL Server or SQL Database can reuse their code to build your organization's edge-specific solutions on Azure SQL Edge. Using it means you develop your apps once and deploy them potentially anywhere.
 
-:::image type="content" source="../media/compatible.png" alt-text="A graphic depicting Azure SQL, SQL Server, and Azure SQL Edge.":::
+:::image type="content" source="../media/compatible.png" alt-text="Depiction of Azure SQL, SQL Server, and Azure SQL Edge.":::
 
 > [!IMPORTANT]
 > Although Azure SQL Edge is built on the same codebase as SQL Server and SQL Database, the use cases for these products are different. Azure SQL Edge is optimized for IoT use cases and workloads. SQL Server and SQL Database, in contrast, are built for mission-critical, data-management solutions and line-of-business (LOB) apps.
