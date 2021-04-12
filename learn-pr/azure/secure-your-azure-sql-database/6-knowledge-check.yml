@@ -28,7 +28,7 @@ quiz:
     - content: A database-level IP address rule
       isCorrect: false
       
-  - content: 'A mask has been applied to a column in the database that holds a user’s email address, laura@contoso.com. From the list of options, what would the mask display when a database administrator account accesses user data?
+  - content: 'A mask has been applied to a column in the database that holds a user’s email address, laura@contoso.com. From the list of options, what would the mask display when a database administrator account accesses user data?'
     choices:
     - content: lxxx@xxxx.com
       isCorrect: false
