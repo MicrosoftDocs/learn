@@ -2,7 +2,7 @@ Cloud architects and developers don't want to have to manage the server that hos
 
 *Azure Database for MySQL* is a managed relational database as a service (DBaaS) offering that can help manage your mission-critical workloads with predictable performance and dynamic scalability. You can connect your existing client apps and database tools to your instance of Azure Database for MySQL. By doing so, you can get the benefits of a platform as a service (PaaS) environment, as the following image depicts.
 
-:::image type="content" source="../media/mysql-conceptual-diagram.png" alt-text="The Azure Database for MySQL architecture in a typical organization.":::<!-- There's a lot more going on in this graphic than is described here. A person using a screen reader should have access to the same information that a sighted user has. I don't think we need to go into a granular level of describing all of the products listed, but the info visually presented in the flowchart would be good.-->
+:::image type="content" source="../media/mysql-conceptual-diagram.png" alt-text="The Azure Database for MySQL architecture in a typical organization.":::
 
 By implementing Azure Database for MySQL, you can provide high availability, data protection, and predictable, scalable performance.
 
