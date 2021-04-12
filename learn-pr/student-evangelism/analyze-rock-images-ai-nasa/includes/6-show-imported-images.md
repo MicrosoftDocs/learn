@@ -52,7 +52,7 @@ We're ready to add the code to transform the images.
 
 ## Add code to show images
 
-Follow these steps to add the code to transform the images. 
+Follow these steps to add the code to display the images. 
 
 1. Add the following code in a new cell. After you add the new code, run the cell.
 
