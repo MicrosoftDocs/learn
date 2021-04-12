@@ -8,7 +8,7 @@ Now we'll look at some of the images that we loaded into the computer. We'll giv
 
 ## Transform and display the images
 
-The code in this section seems long, but it's not complex. It matches each rock image with a rock type, based on the image folder. We call the `transforms.Compose` class again to transform each image into pixels and resize it to our preferred dimensions.
+In this section, we'll add code to match each rock image with a rock type, based on the image folder. We call the `transforms.Compose` class again to transform each image into pixels and resize it to our preferred dimensions.
 
 We select a set of images by random in a manner similar to how we used the `load_split_train_test` and `SubsetRandomSampler` functions in the last exercise. The code iterates over the shuffled images in the testing dataset.
 
