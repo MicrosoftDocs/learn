@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: Answer the following questions to see what you've learned.
   ms.date: 03/03/2021
-  author: sguthals
-  ms.author: sguthals
+  author: drguthals
+  ms.author: drguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
