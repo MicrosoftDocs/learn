@@ -1,17 +1,17 @@
-Let's start with a quick overview of DBaaS databases and Azure Database for MySQL. Understanding their relationship<!-- I changed this from "Understanding this" per Acrolinx. Please verify. --> will help you decide whether your organization can benefit from migrating to Azure Database for MySQL.
+Let's start with a quick overview of DBaaS databases and Azure Database for MySQL. This will help you decide whether your organization can benefit from migrating to Azure Database for MySQL.
 
 ## What is DBaaS?
 
-*DBaaS* is a service that organizations can use to access databases in the cloud. Using a DBaaS delivery platform <!-- I deleted "for your relational database apps" as it seemed redundant w/ "your database apps." -->allows you to apply your energies to developing your database apps instead of managing your virtual machines (VMs) and their related infrastructure. You can use Azure Database for MySQL to implement your database apps on a DBaaS basis. You don't need to worry about configuring and maintaining the platform, because that's managed by Microsoft Azure.
+*DBaaS* is a service that organizations can use to access databases in the cloud. Using a DBaaS delivery platform allows you to focus on developing your database apps instead of managing your virtual machines (VMs) and their related infrastructure. You can use Azure Database for MySQL to implement your database apps on a DBaaS basis. You don't need to worry about configuring and maintaining the platform, because that's managed by Microsoft Azure.
 
 > [!NOTE]
 > DBaaS apps fall within the industry category of PaaS-hosted services.
 
 ### What is MySQL?
 
-MySQL is one of the most popular open-source databases<!-- This doesn't tell them what it does, which is a requirement of the instructions(Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you..."). If it helps, according to Term Studio, "MySQL is an open-source SQL database management system developed, distributed, and supported by Oracle Corporation -->. It's used by independent software vendors<!-- Do we also want to add the acronym ISV here? If we don't mention independent software vendors again, and if they aren't better known as ISVs, then we don't need to. --> and developers to build web apps. Many large enterprise-level<!-- Could we consider large and enterprise-level redundant, and delete one of these? --> organizations also use MySQL to host mission-critical applications.
+MySQL is one of the most popular open-source databases. It's used by independent software vendors and developers to build web apps. Many enterprise-level organizations also use MySQL to host mission-critical applications.
 
-Azure Database for MySQL is based on the MySQL Community Edition available under the GPLv2 license. It's <!-- Acrolinx doesn't like that we use "It's" twice to start sentences. (there were three, but I rewrote one.) -->also a fully managed relational DBaaS<!-- Should be DaaS? --> platform.
+Azure Database for MySQL is based on the MySQL Community Edition available under the GPLv2 license. It's also a fully managed relational DBaaS platform.
 
 > [!TIP]
 > You can also choose to run MySQL in a hosted VM infrastructure as a service (IaaS) mode on Azure.
@@ -24,7 +24,7 @@ Azure Database for MySQL is based on the MySQL Community Edition available under
 - Greater data protection
 
    > [!NOTE]
-   > Azure Database for MySQL uses automatic backups and point-in-time-restoration for up to 35 days.<!-- Does this tie into greater data protection? If so, we should make the connection clearer. If not, can we move this note somewhere else? -->
+   > Azure Database for MySQL uses automatic backups and point-in-time-restoration for up to 35 days.
 
 - Automated maintenance of the following components to keep the service more secure and up-to-date:
 
@@ -38,7 +38,7 @@ Azure Database for MySQL is based on the MySQL Community Edition available under
 - Robust security and compliance features to help protect sensitive data, both at rest and while in transit
 - Monitoring and automation to help simplify management and monitoring of large-scale deployments
 
-Most of these features require little administrative effort and are all included as standard<!-- As standard what? Do we mean and all are included in all Azure Database for MySQL versions? -->.
+Most of these features require little administrative effort and are all included as standard options.
 
 Azure Database for MySQL supports common database tools, such as MySQL Workbench and others. By implementing Azure Database for MySQL, you can continue working with familiar tools and platforms.
 
@@ -54,7 +54,7 @@ Azure Database for MySQL is available in two hosting options:
 Let's examine these options more closely.
 
 > [!IMPORTANT]
-> At the time of writing (March 2021), Flexible Server<!-- In Term Studio (TS), flexible server (defined as A deployment option for Azure Database designed to provide more granular control and flexibility over database management functions and configuration settings) is lowercase. However, at Microsoft.com, it's both title caps and lowercase. If you agree to change this, please s/r all units, and change "single server" to lowercase as well. --> is in preview.
+> At the time of writing (March 2021), Flexible Server is in preview.
 
 ### Azure Database for MySQL in Single Server mode
 
@@ -90,7 +90,7 @@ This mode also provides for a fully managed database service, but provides for m
   - Implement burstable SKU.
 
    > [!TIP]
-   > This<!-- By "This" do we mean Flexible Server mode, or burstable SKU? --> is useful for workloads that don't always need full compute capacity.
+   > This mode is useful for workloads that don't always need full compute capacity.
 
 Consider this deployment mode when you require:
 
