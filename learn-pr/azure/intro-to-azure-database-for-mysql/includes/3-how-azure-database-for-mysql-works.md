@@ -11,7 +11,7 @@ In this unit, you'll learn more about the differences between these hosting opti
 
 You can deploy MySQL on Azure in three ways. The following table identifies the key characteristics of each of these approaches.
 
-| Hosting option<!-- On line 1 above, we refer to PaaS and IaaS hosting methods. To me, hosting methods and hosting options are the same thing. Can we reword this to avoid confusion? --> / deployment mode                                          | Summary                                                      |
+| Hosting option / deployment mode                                          | Summary                                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ |
 | Azure Database for MySQL in Single Server mode   | Fully managed DBaaS requiring minimal user configuration or control. |
 | Azure Database for MySQL in Flexible Server mode | Fully managed DBaaS, but providing more user configuration and control, if required. |
@@ -26,14 +26,14 @@ Let's examine more closely the differences in features:
   - MySQL on Azure VMs supports any MySQL version you want to install.
 - Compute scaling. All options can scale as necessary to accommodate load changes.
 - Network connectivity:
-  - All<!-- All what? All forms of network connectivity? --> support public endpoints with a server firewall.
-  - Private access with Private Link<!-- Azure Private Link? --> support is available for Single Server and MySQL on Azure VMs.
+  - All options support public endpoints with a server firewall.
+  - Private access with Private Link support is available for Single Server and MySQL on Azure VMs.
   - Private access with Virtual Network integration is available for Flexible Server.
 - SSL/TLS connectivity is supported on all platforms.
 - Storage:
   - Both Azure Database for MySQL deployment modes support storage sizes between 5 gibibytes (GiBs) to 16 tebibytes (TiBs). Both also support online storage scaling.
   - Currently only Single Server supports automatic<!-- Verify --> storage scaling.
-  - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling<!-- Do we need the second half of this sentence if we said it in the bullet above? -->.
+  - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling.
 
 - Updating and patching:
   - Operating system updates:
@@ -49,7 +49,7 @@ Let's examine more closely the differences in features:
   - Flexible Server supports built-in high availability with multiple availability zones.
   - MySQL on Azure VMs requires that you custom-manage these settings.
 - Data encryption at rest:
-  - Single Server supports<!-- How about "implements" instead of "supports?" If you agree, please change in the next two instances as well. --> this with customer-managed keys.
+  - Single Server supports this with customer-managed keys.
   - Flexible Server supports this with service-managed keys.
   - MySQL on Azure VMs doesn't support this.
 - Backup:
@@ -93,7 +93,7 @@ The backup process is the same for Single Server and Flexible Server deployment 
 
 ### How scaling works
 
-Scaling works in broadly the same way for both Single Server and Flexible Server deployment modes. However, how it works is controlled<!-- "determined?" --> by the specific SKU you select. Both deployment modes are available in three SKUs.
+Scaling works in broadly the same way for both Single Server and Flexible Server deployment modes. However, how it works is determined by the specific SKU you select. Both deployment modes are available in three SKUs.
 
 For Single Server, these SKUs are:
 
