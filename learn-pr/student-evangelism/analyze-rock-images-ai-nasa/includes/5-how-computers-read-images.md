@@ -1,6 +1,6 @@
 Now that we have our data cleaned and separated, you might wonder how the computer reads these images.
 
-> Hint: _Computers can't read images the same way humans do_.
+> _Hint: &nbsp;Computers can't read images the same way humans do_.
 
 If you know something about developing for computers, you probably know computers read data in *binary* format. The data is represented as a long series of ones and zeroes like 101011001110001010111, and so on.
 
