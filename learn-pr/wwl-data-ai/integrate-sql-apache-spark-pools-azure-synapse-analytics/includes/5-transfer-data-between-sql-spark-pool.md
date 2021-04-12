@@ -10,7 +10,8 @@ It is based on the virtue that it goes through Azure AD.
 
 The first thing that is imperative, is that the Constants and the SqlAnalyticsConnector are set up as shown below:
 
-```scala
+```
+ #scala
  import com.microsoft.spark.sqlanalytics.utils.Constants
  import org.apache.spark.sql.SqlAnalyticsConnector._
 ```
@@ -19,7 +20,8 @@ In order to read data from a dedicated SQL pool, you are enabled to use the Read
 The Read API works for Internal tables (Managed Tables) as well as External Tables in the dedicated SQL pool. 
 The Read API using Azure AD looks as follows:
 
-```scala
+```
+#scala
 val df = spark.read.sqlanalytics("<DBName>.<Schema>.<TableName>")
 ```
 The parameters it takes in are:

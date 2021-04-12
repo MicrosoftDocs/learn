@@ -2,12 +2,12 @@ In this unit, you'll open a sandbox environment. The exercises in this module wi
 
 First, select the button above to activate the sandbox. It will take moment to open the sandbox environment.
 
-Next, copy and paste the following script into Azure Cloud Shell on the right, and then run the script by selecting <kbd>Enter</kbd>.
+Next, copy and paste the following script into Azure Cloud Shell on the right, and then run the script by pressing <kbd>Enter</kbd>.
 
 ```bash
 source <(curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-app-service-migration-assistant/master/provision.sh)
 ```
 
-The script provisions a new virtual machine and installs all the resources to complete the exercises in this module. In the meantime, you'll learn about the Migration Assistant.
+The script provisions a new virtual machine, and installs all the resources to complete the exercises in this module. In the meantime, you'll learn about the Migration Assistant.
 
-After you see the message "Provisioning started! Continue to the next unit" on the right, choose **Continue** at the bottom of this page.
+After you see the message "Provisioning started! Continue to the next unit" on the right, select **Continue** at the bottom of this page.
