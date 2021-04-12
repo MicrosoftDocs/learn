@@ -65,7 +65,7 @@ Choose MySQL on Azure VMs when you:
 
 Choose Azure Database for MySQL over an IaaS solution when you:
 
-- Require online Storage scaling.
+- Require online storage scaling.
 - Don't want to worry about managing the underlying OS and MySQL engine.
 - Require data encryption at rest for your databases.
 - Want automated backup and recovery options.
