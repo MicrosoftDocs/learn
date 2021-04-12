@@ -3,7 +3,7 @@ uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics
 metadata:
   title: Ingest data streams with Azure Stream Analytics
   description: "Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results."
-  ms.date: 03/30/2021
+  ms.date: 04/12/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Visualize results in Power BI
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-stream-analytics-ingest-data-streams.svg
 levels:
 - intermediate
 roles:
