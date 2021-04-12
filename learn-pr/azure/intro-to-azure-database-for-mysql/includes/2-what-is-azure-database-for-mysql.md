@@ -90,7 +90,7 @@ This mode also provides for a fully managed database service, but provides for m
   - Implement burstable SKU.
 
    > [!TIP]
-   > This mode is useful for workloads that don't always need full compute capacity.
+   > This is useful for workloads that don't always need full compute capacity.
 
 Consider this deployment mode when you require:
 
