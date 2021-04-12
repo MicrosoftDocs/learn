@@ -22,6 +22,15 @@ Data is protected as it moves between client systems and cloud services, regardl
 
 [Azure confidential computing](https://azure.microsoft.com/solutions/confidential-compute/) is a set of data security capabilities that offers encryption of data while in use. This means that data can be processed in the cloud with the confidence that it's always under customer control. Confidential computing makes sure that when data is in the clear, which is needed for efficient data processing in memory, the data is protected inside a trusted execution environment (TEE, also known as an enclave).
 
+:::row:::
+:::column span="2":::
 TEE means that there's no way to view data or the operations from outside the enclave and that only the application designer has access to TEE data. Access is denied to everyone else, including Azure administrators. TEE also helps ensure that only authorized code may access data. If the code is changed or tampered with, the operations are denied, and the environment is disabled. Azure provides a hardware-based TEE using [Intel Software Guard Extensions](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html) (SGX) technology.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/tee-protects-against.png" alt-text="Trusted execution environment protection":::
+Infographic with title “TEE protects against:”. Below the title are two icons indicating the two groups that TEE protects against, one labeled “Malicious insiders” and the other labeled “External attackers”. Below the icons on the left side of the infographic is a stack of five tiers of boxes. The top row has two boxes side-by-side, each labeled “App”. The next four boxes below are labeled, in descending order, “Operating system”, “Hypervisor”, “CPU”, and “Host”. To the right of the stack of boxes is another box with two stacked boxes inside of it, one labeled “Code” and one labeled “Data”. A lock icon is superimposed over the right-hand side of the “Code” and “Data” boxes. On the right-hand side of the top right “App” box is a rectangular outline encompassing the right-hand end of that “App” box. A similar rectangular outline encompasses the right-hand end of the “CPU” box. These two rectangular outlines are a joined together by line connecting them. From the middle of that connecting line is a line segment that connects to the box containing the “Code” and “Data” boxes.
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 Next, we'll look at the controls that prevent data access by Microsoft engineers for service maintenance, customer support, or other scenarios.
