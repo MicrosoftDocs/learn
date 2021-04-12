@@ -1,13 +1,23 @@
 Now we'll look at some of the images that we loaded into the computer. We'll give them labels to indicate what type of rock is in each photo.
 
 > [!Note]
-> **ToDo**
-> - Add more explanations about the APIs. Use comments from code
->
+> **Sara ToDo**
+> - I added an H2 section to describe the code actions.
+> - Please review and modify as needed.
+
+
+## Transform and display the images
+
+The code in this section seems long, but it's not complex. It matches each rock image with a rock type, based on the image folder. We call the `transforms.Compose` class again to transform each image into pixels and resize it to our preferred dimensions.
+
+We select a set of images by random in a manner similar to how we used the `load_split_train_test` and `SubsetRandomSampler` functions in the last exercise. The code iterates over the shuffled images in the testing dataset.
+
+The last section of code displays the images that are loaded into the program. We use functions from the PIL library to manipulate the images, and the `plt.show` command to print them.
+
 
 ## Add code to transform images
 
-The following code reads images and assigns each one a rock type. The code is long, but it's not complex. It matches each rock image with a rock type, based on the image folder.
+We're ready to add the code to transform the images. 
 
 1. In Visual Studio Code, return to your Jupyter Notebook file.
 
@@ -39,9 +49,10 @@ The following code reads images and assigns each one a rock type. The code is lo
        return images, labels
    ```
 
+
 ## Add code to show images
 
-The following code actually shows you some images that you loaded into the program. We use the PIL library to manipulate the images, so they look appealing when we print them. We use the `plt.show` command to actually print the images.
+Follow these steps to add the code to transform the images. 
 
 1. Add the following code in a new cell. After you add the new code, run the cell.
 
