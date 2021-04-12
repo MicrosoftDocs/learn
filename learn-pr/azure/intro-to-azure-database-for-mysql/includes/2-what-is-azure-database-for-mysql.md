@@ -29,7 +29,7 @@ Azure Database for MySQL is based on the MySQL Community Edition available under
 - Automated maintenance of the following components to keep the service more secure and up-to-date:
 
   - Underlying hardware
-  - Operating system
+  - OS
   - Database engine
 
 - Predictable performance
