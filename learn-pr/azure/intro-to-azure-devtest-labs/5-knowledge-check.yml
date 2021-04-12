@@ -36,7 +36,7 @@ quiz:
     - content: "Deploy a shell script to each virtual machine after it is provisioned"
       isCorrect: false
       explanation: "This approach is likely to require much more technical effort than using artifacts."
-  - content: "You want to cap the size of the virtual machines that can be created within the DevTest Lab. Which approach should you should use?"
+  - content: "You want to cap the size of the virtual machines that can be created within a DevTest Labs environment. Which approach should you should use?"
     choices:
     - content: "Formulas"
       isCorrect: false

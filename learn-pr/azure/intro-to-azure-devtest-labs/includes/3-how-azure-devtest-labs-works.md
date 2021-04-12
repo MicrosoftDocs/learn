@@ -14,7 +14,7 @@ When you create test environments or development machines, you can use the follo
 - Policies
 - Virtual machines
 
-:::image type="content" source="../media/3-devtest-labs-overview.png" alt-text="Diagram illustrating the relationship between logical DevTest labs objects.":::
+:::image type="content" source="../media/3-devtest-labs-overview.png" alt-text="Diagram illustrating the relationship between logical DevTest Labs objects.":::
 
 Let's examine these objects in more detail.
 
@@ -50,7 +50,7 @@ This code is an example JSON artifact:
 }
 ```
 
-Suppose that, for the e-commerce developer onboarding labs, the Windows package manager **Chocolatey** is required on all development machines. An artifact could be set up to install the required package through a Powershell script.
+Suppose that, for the e-commerce developer onboarding labs, the Windows package manager **Chocolatey** is required on all development machines. An artifact could be set up to install the required package through a PowerShell script.
 
 ```JSON
 runCommand": {

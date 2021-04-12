@@ -4,7 +4,7 @@ In our e-commerce scenario, you're looking at speeding up the developer onboardi
 
 Here, you'll learn about the capabilities and features of Azure DevTest Labs.
 
-## What is a DevTest lab?
+## What is a DevTest Labs environment?
 
 A lab in Azure DevTest Labs is the infrastructure that encompasses a group of resources, such as virtual machines. These labs help you better manage resources by specifying limits and quotas.
 
@@ -27,7 +27,7 @@ Importantly, Azure DevTest Labs doesn't cost more than the cost of running the v
 - You can set autostart and auto-shutdown times
 - You can define virtual machine expiration dates
 
-You can track the cost of environments in a DevTest lab, and the costs incurred by an individual virtual machine. PaaS resources also appear in cost tracking. 
+You can track the cost of environments in a DevTest Labs environment, and the costs incurred by an individual virtual machine. PaaS resources also appear in cost tracking.
 
 ## Security
 
@@ -47,11 +47,11 @@ Although there's sometimes confusion between Azure Lab Services and DevTest Labs
 
 With Azure Lab Services, you can create simple and controlled classroom lab environments in the cloud. A lab owner creates a lab, provisions Windows or Linux virtual machines, installs the necessary software and tools through reusable templates, and makes them available to lab users. Lab users connect to virtual machines in the lab, and use them for their classroom exercises. When people start using resources in the lab, the lab admin can analyze cost and usage across multiple labs, and set overarching policies to optimize your organizational or team costs.
 
-While similar to Lab Services, DevTest Lab gives you greater control over the infrastructure and configuration within a custom lab. Your lab can be more than a classroom environment. For example, you can create labs for testing and staging software. 
+While similar to Lab Services, DevTest Labs gives you greater control over the infrastructure and configuration within a custom lab. Your lab can be more than a classroom environment. For example, you can create labs for testing and staging software.
 
 Here's a table that highlights the differences:
 
-| Features | Lab Services | DevTest Lab
+| Features | Lab Services | DevTest Labs
 | -------- | ----------- | ----------- |
 | Management of Azure infrastructure | Automatically managed by the service. | You manage on your own. |
 | Built-in resiliency | Automatically handled by the service. | You manage on your own. |
