@@ -73,7 +73,6 @@ roles:
 products:
 - azure
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.protect-against-security-threats-azure
 - learn.azure.secure-network-connectivity-azure
 trophy:

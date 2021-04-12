@@ -107,9 +107,9 @@ In this exercise, you'll complete the project by reading the .json files, adding
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);            
         
-        var files = FindFiles(storesDir);
+        var salesFiles = FindFiles(storesDir);
         
-        var salesTotal = CalculateSalesTotal(files);
+        var salesTotal = CalculateSalesTotal(salesFiles);
         
         File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
     }

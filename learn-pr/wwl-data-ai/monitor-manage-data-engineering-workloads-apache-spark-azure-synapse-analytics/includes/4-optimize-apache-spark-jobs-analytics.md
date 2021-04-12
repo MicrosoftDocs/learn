@@ -142,4 +142,3 @@ If there is an optimization necessary in relation to the optimization of a job e
 IF you broadcast variables on all the executors you set up, due to the variables only being serialized once, you'll have faster lookups. 
 In another case you might use the thread pool that runs on the driver, which could result in faster operations for many tasks. 
  
-

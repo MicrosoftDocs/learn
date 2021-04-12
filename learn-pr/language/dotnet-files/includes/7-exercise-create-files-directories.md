@@ -6,7 +6,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
 ## Create the SalesTotals directory
 
-1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each file name returned from the `FindFiles` function.
+1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each file name returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
 
 1. In the `Main` function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
 
@@ -33,7 +33,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindFiles(storesDirectory);
+        var salesFiles = FindFiles(storesDirectory);
     }
     ```
 
@@ -50,7 +50,7 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
         var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
         Directory.CreateDirectory(salesTotalDir);
         
-        var files = FindFiles(storesDirectory);
+        var salesFiles = FindFiles(storesDirectory);
         
         File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     }
@@ -91,7 +91,7 @@ namespace files_module
             var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
             Directory.CreateDirectory(salesTotalDir);
 
-            var files = FindFiles(storesDirectory);
+            var salesFiles = FindFiles(storesDirectory);
 
             File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
         }
