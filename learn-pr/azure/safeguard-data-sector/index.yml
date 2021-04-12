@@ -46,7 +46,8 @@ units:
 - learn.azure.safeguard-data-sector.5-government-requests-data
 - learn.azure.safeguard-data-sector.6-detect-threats-data
 - learn.azure.safeguard-data-sector.7-customize-data-protection
-- learn.azure.safeguard-data-sector.8-knowledge-check
-- learn.azure.safeguard-data-sector.9-summary
+- learn.azure.safeguard-data-sector.8-customize-data-protection
+- learn.azure.safeguard-data-sector.9-knowledge-check
+- learn.azure.safeguard-data-sector.10-summary
 badge: 
   uid: learn.azure.safeguard-data-sector.badge
