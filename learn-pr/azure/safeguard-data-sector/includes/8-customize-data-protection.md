@@ -1,7 +1,5 @@
 While data protection is essential for everyone in the public sector, each customer has unique requirements. Government agencies can take advantage of many additional Azure services for more protection or to comply with local regulations. 
 
-## Essential Azure services for more protection
-
 Customers can use the following Azure services for in-depth insight into their Azure resources and to get alerted about suspicious activity, including outside attacks aimed at their applications and data. The [Azure Security Benchmark](https://docs.microsoft.com/azure/security/benchmarks/) also provides security recommendations and implementation details to help customers improve the security posture with respect to Azure resources.
 
 **[Azure Security Center](https://azure.microsoft.com/services/security-center/)** provides unified security management and advanced threat protection across hybrid cloud workloads. This is a key service for customers to limit their exposure to threats, protect cloud resources, [respond to incidents](https://docs.microsoft.com/azure/security-center/security-center-alerts-overview), and improve their regulatory compliance posture.

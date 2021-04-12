@@ -20,4 +20,4 @@ The **CLOUD Act** is a United States law enacted in March 2018. Customers may re
 
 Microsoft doesn't disclose additional data because of the CLOUD Act. This law doesn't change any of the legal and privacy protections that previously applied to law enforcement requests for data, and those protections continue to apply. Microsoft keeps to the same principles and customer commitments related to government demands for user data.
 
-Next, let's look at how Microsoft Azure detects and prevents threats to data security.
+Next, let's look at how Azure detects and prevents threats to data security.

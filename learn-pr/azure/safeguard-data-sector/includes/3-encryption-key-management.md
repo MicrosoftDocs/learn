@@ -20,7 +20,7 @@ Data is protected as it moves between client systems and cloud services, regardl
 
 ## Azure confidential computing
 
-[Azure confidential computing](https://azure.microsoft.com/solutions/confidential-compute/) is a set of data security capabilities that offers encryption of data while in use. This means that data can be processed in the cloud with the confidence that it's always under customer control. Confidential computing makes sure that when data is in the clear, which is needed for efficient data processing in memory, the data is protected inside a trusted execution environment (TEE, also known as an enclave), as depicted in Figure 2.
+[Azure confidential computing](https://azure.microsoft.com/solutions/confidential-compute/) is a set of data security capabilities that offers encryption of data while in use. This means that data can be processed in the cloud with the confidence that it's always under customer control. Confidential computing makes sure that when data is in the clear, which is needed for efficient data processing in memory, the data is protected inside a trusted execution environment (TEE, also known as an enclave).
 
 TEE means that there's no way to view data or the operations from outside the enclave and that only the application designer has access to TEE data. Access is denied to everyone else, including Azure administrators. TEE also helps ensure that only authorized code may access data. If the code is changed or tampered with, the operations are denied, and the environment is disabled. Azure provides a hardware-based TEE using [Intel Software Guard Extensions](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html) (SGX) technology.
 
