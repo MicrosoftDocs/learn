@@ -4,7 +4,7 @@ metadata:
   title: Part 1 - Asking the user a question in your super sleuth personality quiz
   description: This unit introduces how to interact with users in Python.
   ms.date: 03/03/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

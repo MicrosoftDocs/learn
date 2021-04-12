@@ -5,7 +5,7 @@ metadata:
   description: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions programmatically and resolve intrigue.
   brand: azure
   ms.date: 02/23/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
