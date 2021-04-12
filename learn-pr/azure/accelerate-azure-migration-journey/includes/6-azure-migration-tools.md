@@ -2,14 +2,14 @@ Microsoft has developed tools and services that support Azure migrations. These 
 
 Tools available to support successful Azure migrations:
 
-- Microsoft Cloud Adoption Framework for Azure
+- Cloud Adoption Framework for Azure
 - Azure Migrate
 - Azure Database Migration Service
 - Azure App Service migration assistant
 - SMART tool
 - Cloud economics
 
-## Microsoft Cloud Adoption Framework for Azure
+## Cloud Adoption Framework for Azure
 
 The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
 
@@ -26,11 +26,11 @@ The Cloud Adoption Framework brings together cloud adoption methodologies based 
 
 ## Azure Migrate
 
-[Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Tailwind Traders can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud. Track your progress by using a central dashboard that provides intelligent insights.
+[Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. You can get all of the Azure migration tools and guidance you need to plan and implement Tailwind Traders' move to the cloud. Track your progress by using a central dashboard that provides intelligent insights.
 
 ![Azure portal shows the Azure Migrate dashboard.](../media/azure-migrate.png)
 
-Tailwind Traders can use a comprehensive approach to migrating your application and datacenter estate. Get support for critical migration workloads like Windows, SQL Server, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations like Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical servers, and cloud-to-cloud migration.
+Tailwind Traders can use a comprehensive approach to migrating its application and datacenter estate. Get support for critical migration workloads like Windows, SQL Server, and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations like Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical servers, and cloud-to-cloud migration.
 
 Azure Migrate provides the following benefits:
 
@@ -75,13 +75,13 @@ Versions of the migration assistant:
 - **App Service migration assistant for Java on Apache Tomcat Preview (Linux)**: Migrate Java web apps running on Tomcat web servers to App Service.
 - **App Service migration assistant for Java on Apache Tomcat Preview (Windows)**: Migrate Java web apps on Tomcat web servers running on Windows servers to App Service.
 
-Tailwind Traders can get a free compatibility report for your external app. You can use the tool to run a scan on your web app's public URL to report the technologies it uses and whether App Service fully supports them. If compatible, you'll be guided to download the migration assistant to simplify your migration.
+Tailwind Traders can get a free compatibility report for its external app. You can use the tool to run a scan on your web app's public URL to report the technologies it uses and whether App Service fully supports them. If compatible, you'll be guided to download the migration assistant to simplify your migration.
 
 ![Graphic showing URL test for application migration.](../media/url-test.png)
 
 ## SMART tool
 
-The Strategic Migration Assessment and Readiness Tool (SMART) helps you prepare for your Azure migration. Areas in the assessment include business planning, training, security, and governance. The SMART tool is a significant first step for Tailwind Traders to help you understand your readiness to migrate.
+The Strategic Migration Assessment and Readiness Tool (SMART) helps you prepare for your Azure migration. Areas in the assessment include business planning, training, security, and governance. The SMART tool is a significant first step for Tailwind Traders to help the company understand its readiness to migrate.
 
 The tool's output contains a readiness heatmap tool that distills real-life experience from Microsoft running migration engagements. The heatmaps help to identify the areas where you'll need to focus to be successful.
 
