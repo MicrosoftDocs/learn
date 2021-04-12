@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "MySQL for Azure VMs"
       isCorrect: false
-      explanation: "Incorrect. This option isn't the best solution."
+      explanation: "Incorrect. This is not the optimum solution."
     - content: "Azure Database for MySQL Single Server"
       isCorrect: false
       explanation: "Incorrect. Azure Database for MySQL Single Server supports only a single zone for high availability."
@@ -56,7 +56,7 @@ quiz:
     - content: "Microsoft"
       isCorrect: false
       explanation: "Incorrect. In an IaaS environment, the hosting vendor doesn't manage high-availability options for your database."
-  - content: "Which of the following choices is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
+  - content: "Which of the following is a good reason to consider using MySQL on Azure VMs as a hosting option for your database apps?"
     choices:
     - content: "You want to avoid the time and expense of acquiring new on-premises hardware to host your database app."
       isCorrect: true
