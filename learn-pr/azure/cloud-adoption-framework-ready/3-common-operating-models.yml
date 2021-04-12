@@ -57,7 +57,7 @@ quiz:
     - content: Distributed operations
       isCorrect: false
       explanation: Although the company might become distributed after a few more acquisitions, Tailwind Traders isn't there today, nor was the startup before the acquisition.
-  # - content: Which of the following is an indicator that centralized operations is the better fit for Tailwind Traders?
+  # - content: Which of the following is an indicator that centralized operations are the better fit for Tailwind Traders?
   #   choices:
   #   - content: Openness to embrace cloud-native operations tools and processes
   #     isCorrect: false
@@ -65,9 +65,9 @@ quiz:
   #   - content: Multiple teams accessing production environments
   #     isCorrect: false
   #     explanation: Only the central operations team has access to production. There is no need currently for a more complex approach to separation of duties.
-  #   - content: Central operations team size
+  #   - content: Size of the central operations team
   #     isCorrect: true
-  #     explanation: There are indications that an enterprise operations approach could provide advantages, but the strained staff and lack of well-organized teams outside of central operations would add strain to the current team structure. Organizational change would be required to adopt enterprise operations.
+  #     explanation: There are indications that an enterprise operations approach could provide advantages, but the strained staff and lack of well-organized teams outside central operations would add strain to the current team structure. Organizational change would be required to adopt enterprise operations.
   #   - content: Scope of the portfolio
   #     isCorrect: false
   #     explanation: The overall scope of the portfolio is large enough to qualify for enterprise operations. This is an indicator that an enterprise operations approach might be beneficial. 
