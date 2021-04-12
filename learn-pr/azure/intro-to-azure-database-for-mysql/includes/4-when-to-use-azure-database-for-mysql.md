@@ -50,7 +50,7 @@ With MySQL on Azure VMs, you pay for the provisioned VM, storage costs associate
 With Azure Database for MySQL, you start by selecting the tier and SKU that's most relevant to your needs. All resources are charged at a fixed hourly rate. Charges accrue for outgoing internet traffic at regular data transfer rates as well. Administrative costs are reduced because Microsoft manages the service for you.
 
 > [!TIP]
-> Flexible Server also allows you to minimize costs by manually stopping and starting the server<!-- Verify this edit. -->.
+> Flexible Server also allows you to minimize costs by manually stopping and starting the server.
 
 ### Analyze high availability
 
