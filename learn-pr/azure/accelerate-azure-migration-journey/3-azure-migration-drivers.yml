@@ -45,6 +45,6 @@ quiz:
     - content: Should our team use containers for this application?
       isCorrect: false
       explanation: Container use is one of many technical implementations that could be used for an application. Don't focus on the solution. Instead, focus on the question, Will there be further development on the application?
-    - content: Should our team use serverless for this application?
+    - content: Should our team use a serverless model for this application?
       isCorrect: false
       explanation: A serverless model is one of many technical implementations that could be used for an application. Don't focus on the solution. Instead, focus on the question, Will there be further development on the application?

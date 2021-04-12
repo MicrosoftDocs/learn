@@ -45,7 +45,7 @@ To ensure resiliency, a minimum of three separate zones are located in all enabl
 
 ![Diagram showing a web application and SQL servers in three availability zones.](../media/zones.png)
 
-### Maintenance and Service Health alerts
+### Maintenance and service health alerts
 
 Azure has invested in improving zero-impact and low-impact update technologies, which includes hot patching, live migration, and in-place migration. The Azure operations teams deploy dozens of security and reliability patches to host infrastructure each year. Many patches are implemented with no customer impact or downtime.
 
@@ -53,7 +53,7 @@ Azure has invested in improving zero-impact and low-impact update technologies, 
 
 Microsoft uses predictive techniques to determine when a server might fail so that operations can migrate virtual machines away from failing servers. Machine learning and AI is used to collect and analyze data to learn the patterns that indicate whether a server might be imminently failing. We apply this capability to disk failures, memory failures, and other types of hardware failures.
 
-### Azure Service Health alerts and status
+### Service health alerts and status
 
 Azure has a full-service health dashboard and fires alerts when issues happen. You can connect to the dashboard to receive information about the [status](https://status.azure.com/status/?azure-portal=true) of the Azure infrastructure and your services. You can access Azure Service Health in the Azure portal to get tailored information for your resources.
 

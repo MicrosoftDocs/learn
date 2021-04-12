@@ -61,7 +61,7 @@ FastTrack for Azure can help with many solutions, including:
 - Data analytics
 - Windows Virtual Desktop
 
-For a complete list of supported solutions, see [FastTrack for Azure](azure.com/FastTrack).
+For a complete list of supported solutions, see [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/).
 
 ## Azure Expert Managed Services Provider program
 
