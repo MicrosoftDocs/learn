@@ -4,6 +4,10 @@
 
   Protect your Azure Virtual Network resources by using Azure Firewall
 
+  or
+
+ Protect your Windows Virtual Desktop deployment by using Azure Firewall
+
 ## Role(s)
 
 - *Administrator*
@@ -15,6 +19,7 @@
 ## Product(s)
 
 - *Azure Firewall*
+- *Windows Virtual Desktop*
 
 ## Prerequisites
 
@@ -122,7 +127,7 @@ Identify the subtasks of *module title*
     - Use Azure Firewall application and network rules to configure the required access.
     - To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Windows Virtual Desktop host pool with an explicit proxy configuration.
 
-1. **Exercise - Create application rule to allow outbound network traffic**
+1. **Exercise - Create application rule to allow outbound Internet traffic**
     
     1. Sign into VM and try to connect to blocked endpoint like google? 
     1. Review firewall network log (?) - specifically which one is this [Azure Firewall logs and metrics](https://docs.microsoft.com/en-us/azure/firewall/logs-and-metrics#diagnostic-logs). Should show ?
