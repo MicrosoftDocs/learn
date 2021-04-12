@@ -103,10 +103,10 @@ For Single Server, these SKUs are:
 
 For Flexible Server, the SKUs are:
 
-- Burstable. Best suited for low-cost development and low concurrency workloads that don't need continuous full-compute capacity.
+- Burstable. Best suited for low-cost development and low concurrency workloads that don't need full compute capacity continuously.
 - General Purpose. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
 - Memory Optimized. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
 
-Depending on the SKU, you can configure the desired settings, and then adjust the scale settings as necessary to meet your application needs.
+Depending on the SKU, you can configure the desired settings, and then adjust the scale settings as required to meet your application needs.
 
 Next, let's consider whether Azure Database for MySQL is suitable for your organization, its apps, and its database workloads.
