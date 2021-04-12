@@ -1,4 +1,4 @@
-In earlier Learn modules for the Cloud Adoption Framework, we shared the narrative for Tailwind Traders. This module is the first step toward Tailwind's cloud adoption journey. The team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to the cloud effort.
+In earlier Learn modules for the Cloud Adoption Framework, we shared the narrative for Tailwind Traders. This module is the first step toward Tailwind's cloud adoption journey. The Tailwind team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to the cloud effort.
 
 The following excerpts from the customer narrative outline strategic objectives for Tailwind.
 
@@ -9,7 +9,7 @@ Like most customers, Tailwind Traders is attempting to balance two competing bus
 The Tailwind Traders retail innovation team uses technology to continually redefine the company's position as a leader in modern commerce. Those technology solutions are the primary hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. A few examples of those innovations include:
 
 - **Boundless commerce**: Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Purchases can be made from the platform. The mobile app gathers information from the customer's viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
-- **Analytics, AI, and robotics innovation**: The team is experimenting with drone delivery, autonomous warehousing, and other AI lead approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
+- **Analytics, AI, and robotics innovation**: The team is experimenting with drone delivery, autonomous warehousing, and other AI-lead approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on Big Data, analytics, and AI solutions.
 
 ## Migration objectives
 
