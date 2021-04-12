@@ -10,7 +10,7 @@ Before deciding to implement Azure Database for MySQL, consider whether MySQL fo
 
 ## Decision criteria
 
-The criteria in the following table can help you determine whether to use MySQL for Azure VMs, Azure Database for MySQL Single Server, or Azure Database for MySQL Flexible Server.<!-- We don't break out Azure Database for MySQL Single Server/Flexible Server in the following table. Can we change this previous sentence to just "... whether to use MySQL for Azure VMs or Azure Database for MySQL?" -->
+The criteria in the following table can help you determine whether to use MySQL for Azure VMs or Azure Database for MySQL.
 
 | Criteria              | Analysis |
 | --------------------- | -------- |
@@ -23,7 +23,7 @@ The criteria in the following table can help you determine whether to use MySQL 
 For many organizations, the decision to move their MySQL database is about addressing the criteria we discussed. As a reminder, with IaaS, Microsoft:
 
 - Administers the underlying infrastructure.
-- Provides automated patching for underlying hardware and OS<!-- Unless you took into account my suggestion in Unit 1 that we use OS instead of spelling out operating system, the acronym OS has yet to be defined. Please s/r with whichever term you opt to use throughout these units.-->.
+- Provides automated patching for underlying hardware and operating system.
 
 With PaaS, Microsoft:
 
@@ -41,11 +41,11 @@ The following table describes administrative considerations for each hosting mod
 | Hosting model                   | Administrative effort                                        |
 | ------------------------ | ------------------------------------------------------------ |
 | MySQL on Azure VMs       | You have complete control over the OS and the MySQL server instance and its configuration. You decide when to update or upgrade the OS and database engine and which patches to apply. You also decide if and when to install any other software (such as an antivirus app). You can control the size of the VM, the number of disks, and their storage configurations. Some automated features are provided to greatly simplify patching, backup, and high availability. In summary, although you have complete control, there's a significant amount of administrative effort involved. |
-| Azure Database for MySQL | You can continue to administer your database, but you no longer have to manage the hardware, the OS, or the database engine. You can still administer some items if you want, such as databases, sign-in options, index tuning, query tuning, auditing, and security<!-- If there's three or more items listed, it should be changed to a bulleted list. Alternatively, you could break these into two separate sentences with three items each. For example, "You  can also opt to administer other items such as ..."-->. In summary, there's considerably less administrative effort involved. |
+| Azure Database for MySQL | You can continue to administer your database, but you no longer have to manage the hardware, the OS, or the database engine. You can still administer some items if you want, such as databases, sign-in options, index tuning, query tuning, auditing, and security. In summary, there's considerably less administrative effort involved. |
 
 ### Analyze cost
 
-With MySQL on Azure VMs, you pay for the provisioned VM, storage costs associated with the data, backup, monitoring data<!-- Instead of monitoring data, should this be data monitoring? Also, Acrolinx doesn't like how long this sentence is.--> and log storage. You also pay for the specific MySQL license type used.
+With MySQL on Azure VMs, you pay for the provisioned VM, storage costs associated with the data, backup, data monitoring, and log storage. You also pay for the specific MySQL license type used.
 
 With Azure Database for MySQL, you start by selecting the tier and SKU that's most relevant to your needs. All resources are charged at a fixed hourly rate. Charges accrue for outgoing internet traffic at regular data transfer rates as well. Administrative costs are reduced because Microsoft manages the service for you.
 
@@ -54,7 +54,7 @@ With Azure Database for MySQL, you start by selecting the tier and SKU that's mo
 
 ### Analyze high availability
 
-If high availability is critical to your app, then keep in mind that enabling high availability with MySQL for Azure VMs makes you wholly responsible for configuring the required Azure components<!-- Could we change this to "... that you are wholly responsible for configuring the required Azure components to enable high availability." Also, Acrolinx would like us to break this sentence into two due to its length. -->. This involves more administrative effort and cost. With Azure Database for MySQL, high availability is available automatically.
+If high availability is critical to your app, then keep in mind that enabling high availability with MySQL for Azure VMs makes you wholly responsible for configuring the required Azure components. This involves more administrative effort and cost. With Azure Database for MySQL, high availability is available automatically.
 
 ## Summary
 
@@ -70,9 +70,9 @@ Choose Azure Database for MySQL over an IaaS solution when you:
 - Require data encryption at rest for your databases.
 - Want automated backup and recovery options.
 
-When considering which Azure Database for MySQL deployment mode to select, choose Flexible Server when you require:<!-- Should we have an identical section for when you would choose Single Server? -->
+When considering which Azure Database for MySQL deployment mode to select, choose Flexible Server when you require:
 
 - Better control and customizations over app development.
 - Zone-redundant high availability.
 - Managed maintenance windows.
-- Better read replica support (10 replicas versus 5<!-- Should we say this somewhere earlier in this module? -->).
+- Better read replica support (10 replicas versus 5).
