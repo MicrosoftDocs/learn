@@ -5,9 +5,9 @@ MariaDB is a popular open-source database that independent software vendors and 
 > [!TIP]
 > You can also choose to run MariaDB in a hosted virtual machine (VM) infrastructure as a service (IaaS) mode on Azure.
 
-## What is DBaaS?
+## Why use a DBaaS database?
 
-<!--Andy: I edited the heading to match the "what is concept" headings as per template, also added a short definition of DBaaS-->DBaaS is a service that organizations can use to access databases on the cloud. By selecting Azure Database for MariaDB, you're choosing to implement your database apps on a DBaaS basis. A DBaaS delivery platform for your relational database apps enables you to focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You don't need to think about configuring and maintaining the platform because that's managed by Azure.
+A DBaaS delivery platform for your relational database apps enables you to focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You don't need to think about configuring and maintaining the platform, because that's managed by Azure. By selecting Azure Database for MariaDB, you're choosing to implement your database apps on a DBaaS basis.
 
 > [!NOTE]
 > DBaaS apps fall within the industry category of PaaS-hosted services.
