@@ -86,7 +86,7 @@ A data warehouse provides an organization with somewhere to store big data while
 
 In the following diagram, Apache Hadoop on HDInsight is used to gather and store data from a number of sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with BI tools. Power BI is used for data visualization. 
 
-:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="A diagram depicting the preceding scenario.":::
+:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="A graphic that depicts the preceding scenario.":::
 
 Components in this scenario include: 
 
@@ -137,4 +137,4 @@ For organizations with on-premises big data infrastructure, you can use HDInsigh
 - An Azure ExpressRoute circuit connects the on-premises corporate network environment to Azure virtual networks. 
 - WANdisco LiveData Migrator for Azure replicates the data received from on-premises to Azure HDInsight. 
 
-:::image type="content" source="../media/architecture-hybrid.png" alt-text="A diagram that represents the text in the preceding scenario.":::
+:::image type="content" source="../media/architecture-hybrid.png" alt-text="A diagram that displays the text in the preceding scenario.":::
