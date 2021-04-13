@@ -8,8 +8,6 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
-
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
     Goal: Describe the part of the scenario covered in this exercise
@@ -20,53 +18,44 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Azure Logic Apps is a low-code/no-code development platform hosted as a serverless cloud service. 
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+In the bus-catching scenario, an Azure Function will be used to do the data collection and processing of real-time bus data. Once the Azure Function detects that there is a bug entering or exiting the GeoFence, the function calls an Azure Logic App to send notifications in the form of an email. Creating this solution is simple with the help of Azure Logic Apps.
 
 ## Azure Logic Apps
-<!-- Introduction paragraph -->
-TODO: Give an overview.
 
-## Azure Logic Apps integrations
-<!-- Introduction paragraph -->
-TODO: Integrations of Azure Logic Apps + Azure Functions + Azure SQL DB
+Azure Logic Apps allows you to automate and orchestrate tasks and workflows when you want to integrate apps, data, systems and services across organizations. Logic Apps are designed in a web-based designer and can execute logic without writing any code.
 
-## Azure Logic Apps for Notifications
-<!-- Introduction paragraph -->
-TODO: Azure Logic Apps in this scenario
+When comparing Azure Logic Apps and Azure Functions, besides Azure Logic Apps being low-code/no-code and Azure Functions being code-based, the primary difference is intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. You can call Azure Functions from Azure Logic Apps, and vice versa.
 
+## Azure Logic Apps connectors
+
+Azure Logic Apps support hundreds of connectors with services like Salesforce, SQL Server and Azure SQL, Outlook, and file shares. You can even create and build your own custom connectors as needed.
+
+### Azure SQL and SQL Server
+
+Azure Logic Apps support rich capabilities to integrate with SQL Server and Azure SQL. Since the connection is made similar to like you would make with tools including SQL Server Management Studio (SSMS) and Azure Data Studio (ADS), the connectors work for on-premises installations of SQL Server as well as all deployment options of Azure SQL (SQL Database, SQL Managed Instance, and SQL Server in Azure VM). Azure Logic Apps have connectors for **Triggers** which means that when something happens in SQL Server/Azure SQL it could trigger the Logic App. The list of triggers includes:
+
+* When an item is created
+* When an item is modified
+
+Azure Logic Apps also have connectors for **Actions** which means that once a Logic App is triggered, a certain action on SQL Server/Azure SQL could be taken. The list of actions includes:
+
+* Delete row
+* Execute a SQL query
+* Execute stored procedure
+* Get row
+* Get rows
+* Get tables
+* Insert row
+* Transform data using Power Query
+* Update row
+
+> [!TIP]
+> While Azure Functions is used for this solution, you might be wondering if Azure Logic Apps could be used instead. It is possible, and we challenge you to try it out if you want to work more with Azure Logic Apps and low-code/no-code environments.
+
+### Outlook
+
+Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a GeoFence. In the exercise, you will get to see how this is created, configured, and triggered.
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- Do not add a unit summary or references/links -->

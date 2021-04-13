@@ -10,8 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+Azure Functions is an event-driven serverless compute platform that can also solve complex orchestration problems for many scenarios.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -28,9 +27,9 @@ TODO: add a visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
-## Example scenario
+## Catching the bus
 
-Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you will follow the scenario (and the development of a solution) of catching the bus. In the first module of the learning path, you built the foundation which includes the database backend. Review the architecture below to see what the end-goal is.
+Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you will follow the scenario (and the development of a solution) of catching the bus. In the first module of the learning path, you built the foundation which includes the database backend. Review the architecture below to see what the desired-state solution is.
 
 TODO: image of architecture
 
@@ -48,7 +47,7 @@ TODO: image of architecture
  -->
 ## What will we be doing?
 
-Here, you'll break down a scenario for an application and build a multi-service architecture of a solution which is based on the microservices approach. In the language of your choice (Node.js, Python, or .NET), deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. Leverage GitHub Actions for CI/CD.
+Here, you'll break down the scenario for an application and build a multi-service architecture which is based on the microservices approach. In the language of your choice (Node.js, Python, or .NET), you'll leverage an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications when a bus enters a geofence. You'll also leverage GitHub Actions for CI/CD.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -61,6 +60,6 @@ Here, you'll break down a scenario for an application and build a multi-service 
  -->
 ## What is the main goal?
 
-Through this module, the main goal is to design Azure Function apps in any language and integrate them with Azure SQL Database and Azure Logic Apps. Through the module, you will build backend APIs in Azure and examine geospatial and JSON capabilities often required for modern applications.
+Through this module, the main goal is to design Azure Function Apps in any language and integrate them with Azure SQL Database and Azure Logic Apps. Through the module, you will learn how to build backend APIs in Azure and examine Azure SQL Database capabilities often required for modern applications.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
