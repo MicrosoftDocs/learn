@@ -110,7 +110,7 @@ Azure gateway services and IoT hubs direct data from various sources to these fr
 - Real-time apps
 - Real-time dashboards
 
-:::image type="content" source="../media/architecture-iot.png" alt-text="A diagram depicting the preceding scenario.":::
+:::image type="content" source="../media/architecture-iot.png" alt-text="A diagram that depicts the scenario described in the preceding text.":::
 
 ### Data science
 
@@ -127,7 +127,7 @@ In the following scenario:
 2. The ingested data is then stored in Azure storage (either Azure Blob Storage or a Data Lake Store). 
 3. Azure Spark on HDInsight processes the data in readiness for Azure Machine Learning. Data is also visualized using Power BI.
 
-:::image type="content" source="../media/architecture-data-science.png" alt-text="A diagram depicting the preceding scenario.":::
+:::image type="content" source="../media/architecture-data-science.png" alt-text="A diagram that displays the preceding scenario.":::
 
 ### Hybrid
 
