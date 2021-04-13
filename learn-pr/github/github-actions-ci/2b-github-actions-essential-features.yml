@@ -4,9 +4,9 @@ title: Essential features and techniques to customize your workflow
 metadata:
   title: Essential features and techniques to customize your workflow
   description: Learn how to use essential customization techniques such as using variables, running scripts, and sharing data and artifacts between jobs.
-  ms.date: 03/16/2020
-  author: jamcneil
-  ms.author: jumcn
+  ms.date: 04/13/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12
