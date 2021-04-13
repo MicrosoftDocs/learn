@@ -71,8 +71,6 @@ To do the assessment:
 1. Select the **Select machines to assess** tab.
 1. Select **Review + create assessment** to build the assessment.
 
-:::image type="content" source="../media/2-assess-servers-avs.png" alt-text="Image showing Azure VMware Solution selected for the Assessment type, and the Assessment name and other Assessment properties being specified.":::
-
 ## Review the AVS assessment
 
 You can evaluate the assessment in Azure Migrate, in the Azure portal, after the appliance runs within the on-premises environment. An AVS assessment describes readiness, number of nodes required, and usage across nodes. It also provides a monthly cost estimate.

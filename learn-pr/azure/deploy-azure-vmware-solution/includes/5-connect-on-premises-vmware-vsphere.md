@@ -57,9 +57,17 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 1. Use the authorization key, ExpressRoute ID, and a /29 address block to complete the peering.
 
-## Peer the AVS private cloud to the on-premises environment by using the Azure portal
+## Peer the AVS private cloud to the on-premises environment by using the authorization key
 
-After the authorization key is created, the AVS ExpressRoute circuit can be peered to the on-premises circuit. You can configure the peering by using the Azure portal. This method requires the resource ID and authorization key of the AVS private cloud ExpressRoute circuit for peering.
+After the authorization key is created, the AVS ExpressRoute circuit can be peered to the on-premises circuit. 
+You can configure the peering by using either the Azure portal or the Azure CLI in Cloud Shell.
+
+For either method, you'll need the resource ID and authorization key of the AVS private-cloud 
+ExpressRoute circuit for peering.
+
+### Use the Azure portal to configure peering
+
+To use the Azure portal for peering:
 
 1. In the Azure portal, select the AVS private cloud.
 1. From the private-cloud **Overview**, under **Manage**, select **Connectivity** > **ExpressRoute Global Reach** > **Add**:
@@ -73,9 +81,9 @@ After the authorization key is created, the AVS ExpressRoute circuit can be peer
 1. Select **Connect**.
 1. The new connection will appear in the list of on-premises cloud connections.
 
-## Peer the AVS private cloud to the on-premises environment by using the Azure CLI
+### Use the Azure CLI to configure peering
 
-After an authorization key is created, the AVS ExpressRoute circuit is peered to the on-premises circuit. You can configure the peering by using the Azure CLI in Cloud Shell. This method requires the resource ID and authorization key of the AVS private cloud ExpressRoute circuit.
+To use the Azure CLI for peering:
 
 1. Sign in to the Azure portal by using the same subscription as the on-premises ExpressRoute circuit uses.
 1. Open an Azure CLI in Cloud Shell. Leave the shell as Bash.
