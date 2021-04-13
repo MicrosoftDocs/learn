@@ -13,19 +13,14 @@ durationInMinutes: 6 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "Suppose you are deploying an image recognition solution with the following modules.
-- Camera module for capturing video streams from a camera
-- Custom Vision module as a classifier 
-- Display module to display the output of AI model
-Which of the following concepts best describes how to run this solution on an IoT Edge device, in order?
-"
+  - content: "Suppose you are deploying an image recognition solution with the following modules; Camera module for capturing video streams from a camera, Custom Vision module as a classifier, Display module to display the output of AI model. Which of the following concepts best describes how to run this solution on an IoT Edge device, in order?"
     choices:
     - content: "Create your modules - Write a deployment manifest - Push deployment manifest to IoT Hub Service - Push deployment manifest to edge device"
       isCorrect: false
       explanation: "You need to package the module in a container before pushing it to the edge device."
     - content: "Create your modules - Package them in a container - Push them to Docker Container Registry - Write a deployment manifest - Push deployment manifest to IoT Hub Service - Push deployment manifest to edge device"
       isCorrect: true
-      explanation: "Because this configuration enables you push containerized modules to the edge device."
+      explanation: "Because this configuration enables you to push containerized modules to the edge device."
     - content: "Create your modules - Package them in a container - Push them to Docker Container Registry - Write a deployment manifest - Push deployment manifest to edge device - Push deployment manifest to IoT Hub Service"
       isCorrect: false
       explanation: "Firstly, you need to push deployment manifest to the IoT Hub then push to edge device."
@@ -47,7 +42,7 @@ Which of the following concepts best describes how to run this solution on an Io
       explanation: "IoT Edge cloud interface creates and configures a workload to be run on a specific type of device."
     - content: "IoT Edge module"
       isCorrect: false
-      explanation: "IoT Edge module is unit of execution implemented as Docker compatible container that run your business logic at the edge."
+      explanation: "IoT Edge module is unit of execution implemented as Docker compatible container that runs your business logic at the edge."
     - content: "IoT Edge runtime"
       isCorrect: true
       explanation: "IoT Edge Runtime installs and updates workloads on the device."

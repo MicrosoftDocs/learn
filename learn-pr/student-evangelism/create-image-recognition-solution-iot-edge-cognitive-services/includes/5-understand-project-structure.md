@@ -1,4 +1,4 @@
-The following describes the highlighted sections of the project, which are available at the Github repository.
+The following describes the highlighted sections of the project, which are available at the GitHub repository.
 
 - There are two modules: 
    - **CameraCaptureOpenCV**

@@ -8,7 +8,7 @@ iotedge list
 
 ## Monitoring the Solution from the Azure IoT Edge Blade
 
-You can monitor the Azure IoT Edge module's state from the Azure IoT Hub blade on the Azure Portal.
+You can monitor the Azure IoT Edge module's state from the Azure IoT Hub blade on the Azure portal.
 
 Click on the Azure IoT Edge blade device to view more details about the modules running on the device.
 
