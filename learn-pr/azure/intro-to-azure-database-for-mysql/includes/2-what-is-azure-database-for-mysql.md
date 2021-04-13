@@ -107,4 +107,4 @@ This mode isn't a fully managed database service; instead, it belongs to the ind
 
 Consider this mode only when you don't want the benefits included in a DBaaS platform.
 
-In the next unit, let's examine Azure Database for MySQL in more detail.
+In the next unit, let's examine Azure Database for MySQL in more detail. 
