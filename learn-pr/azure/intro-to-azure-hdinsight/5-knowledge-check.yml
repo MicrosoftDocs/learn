@@ -56,8 +56,8 @@ quiz:
     - content: "Worker node"
       isCorrect: true
       explanation: "Correct. Worker nodes are responsible for processing data in a cluster."
-   - content: "Which of the following scenarios for big data processing enable an organization to prepare big data for further analysis? "
-     choices:
+  - content: "Which of the following scenarios for big data processing enable an organization to prepare big data for further analysis?"
+    choices:
     - content: "Data warehousing"
       isCorrect: false
       explanation: "Incorrect. Data warehousing provides an organization with somewhere to store big data while waiting to perform analysis on that data"
