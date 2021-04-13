@@ -1,20 +1,20 @@
 There are several ways to check compatibility for your database and migrate the data. Make sure you understand these methods to choose the best one for your project.
 
-In your sports clothing company, you've completed the evaluation and chosen to migrate the product database to Azure SQL Database Managed Instance. Next, you want to execute your migration project. In the first stage, you'll identify any compatibility issues that might cause problems if you don't address them. Then you want to migrate the data.
+In your sports clothing company, you've completed the evaluation and chosen to migrate the product database to Azure SQL Database managed instance. Next, you want to execute your migration project. In the first stage, you'll identify any compatibility issues that might cause problems if you don't address them. Then you want to migrate the data.
 
-Here, you'll learn how to assess compatibility with Managed Instance for a production database. You'll also see how to choose and execute the right migration method.
+Here, you'll learn how to assess compatibility with managed instance for a production database. You'll also see how to choose and execute the right migration method.
 
-## Evaluating Azure SQL Database Managed Instance compatibility
+## Evaluating Azure SQL Database managed instance compatibility
 
-You previously viewed the compatibility options between Azure SQL Database, SQL Database Managed Instance, and SQL Server virtual machines. In this unit, you'll focus on the migration process and methods targeted to SQL Database Managed Instance. Before you start moving databases from your on-premises SQL Server environment, it's important to address any compatibility concerns.
+You previously viewed the compatibility options between Azure SQL Database, SQL Database managed instance, and SQL Server virtual machines. In this unit, you'll focus on the migration process and methods targeted to SQL Database managed instance. Before you start moving databases from your on-premises SQL Server environment, it's important to address any compatibility concerns.
 
-The Managed Instance deployment option is designed to provide an easy lift-and-shift migration experience for most applications that use SQL Server on-premises or on virtual machines. However, you might sometimes require features or capabilities that aren't yet supported and the workaround cost is high.
+The managed instance deployment option is designed to provide an easy lift-and-shift migration experience for most applications that use SQL Server on-premises or on virtual machines. However, you might sometimes require features or capabilities that aren't yet supported and the workaround cost is high.
 
-Features such as cross-database queries, cross-database transactions within the same instance, linked servers, CLR, global temp tables, instance level views, Service Broker and more aren't supported on Azure SQL Database. However, these features are supported with SQL Database Managed Instance. To help you assess compatibility, Microsoft has created some tools to evaluate Azure compatibility, and address migration challenges.
+Features such as cross-database queries, cross-database transactions within the same instance, linked servers, CLR, global temp tables, instance level views, Service Broker and more aren't supported on Azure SQL Database. However, these features are supported with SQL Database managed instance. To help you assess compatibility, Microsoft has created some tools to evaluate Azure compatibility, and address migration challenges.
 
 ### Data Migration Assistant
 
-Use Data Migration Assistant (DMA) to detect potential compatibility issues that impact database functionality on Azure SQL Database, SQL Database Managed Instance, SQL Server, and SQL Server virtual machines. DMA provides the ability to do a migration assessment, and execute a migration project. From DMA 4.3, DMA supports Managed Instance as an assessment option, and a migration destination.
+Use Data Migration Assistant (DMA) to detect potential compatibility issues that impact database functionality on Azure SQL Database, SQL Database managed instance, SQL Server, and SQL Server virtual machines. DMA provides the ability to do a migration assessment, and execute a migration project. From DMA 4.3, DMA supports managed instance as an assessment option, and a migration destination.
  
 The result of a DMA project is a report of the equivalent features between your source and destination, and a list of any compatibility issues. 
 
@@ -24,14 +24,14 @@ In the following steps, you'll execute a DMA assessment, and examine the output 
 
 1. Open **Data Migration Assistant**, and then create a new project.
 1. Choose **Assessment** as the project type, and name it so you can go back and evaluate previous executions.
-1. Select the source server type and the target server type. In this case, SQL Server is the source server type. The target server type is Azure SQL Database Managed Instance.
+1. Select the source server type and the target server type. In this case, SQL Server is the source server type. The target server type is Azure SQL Database managed instance.
 1. Click **Create**.
 
     ![Data Migration Assistant Assessment](../media/3-data-migration-assistant-assessment.png)
 
 1. Select the report types. In this case, you'll use both **Check database compatibility** and **Check feature parity**.
 
-    ![Data Migration Assistant Assessment for Managed Instance](../media/3-assessment-for-managed-instance.png)
+    ![Data Migration Assistant Assessment for managed instance](../media/3-assessment-for-managed-instance.png)
 
 1. Connect to your source system. In this case,  a SQL Server 2017 environment has been chosen. You'll use the default authentication type. Click **Connect**.
 
@@ -45,7 +45,7 @@ In the following steps, you'll execute a DMA assessment, and examine the output 
 
 When you get the output, there's the option to examine SQL Server feature parity and the compatibility issues. First, you'll examine the SQL Server feature parity report.
 
-Because you chose Managed Instance as the destination, you'll see a small list of features that don't have parity with SQL Server. In this example, the only reported issue is that PowerShell isn't a supported job-step type in Azure SQL Database Managed Instance.
+Because you chose managed instance as the destination, you'll see a small list of features that don't have parity with SQL Server. In this example, the only reported issue is that PowerShell isn't a supported job-step type in Azure SQL Database managed instance.
 
 ![Data Migration Assistant Assessment Feature Parity Report](../media/3-dma-feature-parity-report.png)
 
@@ -57,15 +57,15 @@ You'll see the details and the affected objects. You can then open the supportin
 
 ## Migrate using backup and restore from the URL
 
-If you can accept downtime, the restore of a database from a URL is a valid method for an offline migration. The restoration of native backups from SQL Server, uploaded to Azure Storage, to Azure SQL Database Managed Instance, enables quick and easy offline database migration.
+If you can accept downtime, the restore of a database from a URL is a valid method for an offline migration. The restoration of native backups from SQL Server, uploaded to Azure Storage, to Azure SQL Database managed instance, enables quick and easy offline database migration.
 
 ### Restore the database from a backup file
 
-In SQL Server Management Studio (SSMS), follow these steps to restore a database to your Managed Instance. The database backup file is stored in an Azure Blob storage account.
+In SQL Server Management Studio (SSMS), follow these steps to restore a database to your managed instance. The database backup file is stored in an Azure Blob storage account.
 
-1. Open SMSS and connect to your Managed Instance.
-1. From the left menu, right-click your Managed Instance and select **New Query** to open a new query window.
-1. Run the following T-SQL command, which uses a preconfigured storage account and key to create a credential in your Managed Instance.
+1. Open SMSS and connect to your managed instance.
+1. From the left menu, right-click your managed instance and select **New Query** to open a new query window.
+1. Run the following T-SQL command, which uses a preconfigured storage account and key to create a credential in your managed instance.
 
     ```SQL
     CREATE CREDENTIAL [https://mtutorials.blob.core.windows.net/databases]
@@ -103,7 +103,7 @@ In SQL Server Management Studio (SSMS), follow these steps to restore a database
 
 ## Managing encrypted databases
 
-Transparent Data Encryption (TDE) is a SQL Server technology that ensures databases are encrypted at rest. These databases can only be read when the certificate used to encrypt the data is used to decrypt the database and database backups at the destination. When you migrate a database protected by TDE to a Managed Instance using native restore, the certificate from the on-premises SQL Server must be migrated before database restore.
+Transparent Data Encryption (TDE) is a SQL Server technology that ensures databases are encrypted at rest. These databases can only be read when the certificate used to encrypt the data is used to decrypt the database and database backups at the destination. When you migrate a database protected by TDE to a managed instance using native restore, the certificate from the on-premises SQL Server must be migrated before database restore.
 
 To address TDE enabled databases, you can either use Azure Database Migration Service (DMS) or manually decrypt the database backups using a certificate export tool and PowerShell.
 
@@ -165,14 +165,14 @@ You export the TDE certificate directly from the source SQL Server, or from the 
     # Connect to Azure with an interactive dialog for sign-in
     Connect-AzAccount
     # List subscriptions available and copy id of the 
-    # subscription target Managed Instance belongs to
+    # subscription target managed instance belongs to
     Get-AzSubscription
     # Set subscription for the session (replace 
     # Guid_Subscription_Id with actual subscription id)
     Select-AzSubscription Guid_Subscription_Id
     ```
 
-1. Upload the certificate to the target-Managed Instance:
+1. Upload the certificate to the target-managed instance:
 
     ```Powershell
     $fileContentBytes = 
@@ -191,7 +191,7 @@ You export the TDE certificate directly from the source SQL Server, or from the 
         -Password $securePassword
     ```
 
-The certificate is now available to the specified Managed Instance, and the backup of the corresponding TDE protected database can be restored successfully.
+The certificate is now available to the specified managed instance, and the backup of the corresponding TDE protected database can be restored successfully.
 
 ## Creating the Azure Database Migration Service
 
@@ -231,7 +231,7 @@ Before using the Data Migration Assistant, you must register a resource provider
 
 ## Migrate using the Azure Database Migration Service
 
-To use the Azure Database Migration Service to migrate a database to Azure SQL Database Managed Instance, you must create a migration project and configure its details, such as the source database. Now you'll see how to migrate in detail. 
+To use the Azure Database Migration Service to migrate a database to Azure SQL Database managed instance, you must create a migration project and configure its details, such as the source database. Now you'll see how to migrate in detail. 
 
 ### Create a migration project
 
@@ -239,7 +239,7 @@ Now you have a migration service instance, you can add a migration project to it
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services**, search for **Azure Database Migration Service**, and then select **Azure Database Migration Services**.
 1. On the Azure Database Migration Service screen, select the instance, and then select **+ New Migration Project**.
-1. On the **New migration project** screen, specify a name for the project, and in the **Source server type** text box, select **SQL Server**. In the **Target server type** text box, select **Azure SQL Database Managed Instance**, and then, for **Choose type of activity**, select **Online data migration**.
+1. On the **New migration project** screen, specify a name for the project, and in the **Source server type** text box, select **SQL Server**. In the **Target server type** text box, select **Azure SQL Database managed instance**, and then, for **Choose type of activity**, select **Online data migration**.
 
     ![Creating a migration project](../media/3-create-migration-project.png)
 
@@ -263,12 +263,12 @@ Next, specify the source of the data you want to migrate:
 
 ### Specify target details
 
-Now, fix the Managed Instance where you want to send the data:
+Now, fix the managed instance where you want to send the data:
 
-1. On the **Migration target details** screen, specify the **Application ID** and **Key** that the Migration Service instance uses to connect to Azure SQL Database Managed Instance and the Azure Storage account.
-1. Select the **Subscription** that contains the target-Managed Instance.
-1. Select the **Azure SQL Database Managed Instance**.
-1. Provide **SQL User** and **Password** details to connect to the Azure SQL Database Managed Instance.
+1. On the **Migration target details** screen, specify the **Application ID** and **Key** that the Migration Service instance uses to connect to Azure SQL Database managed instance and the Azure Storage account.
+1. Select the **Subscription** that contains the target-managed instance.
+1. Select the **Azure SQL Database managed instance**.
+1. Provide **SQL User** and **Password** details to connect to the Azure SQL Database managed instance.
 
     ![Migration target details](../media/3-migration-target-details.png)
 
@@ -305,7 +305,7 @@ The final configuration task is to review your setup:
 1. On the **Migration summary** screen, in the **Activity name** text box, specify a name for the migration activity.
 1. Review and verify the details associated with the migration project.
 
-    ![Migration summary screen](../media/3-migration-summary.png)
+    ![Image of Migration summary screen](../media/3-migration-summary.png)
 
 ## Run and monitor the migration
 
@@ -318,7 +318,7 @@ Now you're ready to execute the migration:
 
 ### Performing migration cutover
 
-After the full database backup is restored on the target instance of Azure SQL Database Managed Instance, the database is available for a migration cutover.
+After the full database backup is restored on the target instance of Azure SQL Database managed instance, the database is available for a migration cutover.
 
 1. When you're ready to complete the online database migration, select **Start Cutover**.
 1. Stop all the incoming traffic to source databases.
@@ -328,4 +328,4 @@ After the full database backup is restored on the target instance of Azure SQL D
 
     ![Migration cutover screen](../media/3-migration-cutover-screen.png)
 
-1. When the database migration status shows **Completed**, connect your applications to the new target instance of Azure SQL Database Managed Instance.
+1. When the database migration status shows **Completed**, connect your applications to the new target instance of Azure SQL Database managed instance.

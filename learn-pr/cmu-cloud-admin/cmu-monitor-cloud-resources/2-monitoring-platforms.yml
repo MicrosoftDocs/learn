@@ -24,7 +24,7 @@ quiz:
       - content: "Public cloud services such as AWS and Azure provide integrated monitoring services that may be used instead of (or in conjunction with) third-party APMs"
         isCorrect: false
         explanation: "Incorrect. AWS and Azure offer integrated monitoring services, and administrators are free to use third-party APMs as well."
-      - content: "Public cloud services such as AWS and Azure provide integrated monitoring services that must be used instead of third-party APMs"
+      - content: "Public cloud services such as AWS and Azure provide integrated monitoring services that may be used instead of third-party APMs"
         isCorrect: true
         explanation: "Correct! AWS and Azure offer integrated monitoring services, but administrators are free to use third-party APMs as well."
       - content: "APM platforms can be used to trigger actions such as alerts sent to administrators and virtual-machine scaling"

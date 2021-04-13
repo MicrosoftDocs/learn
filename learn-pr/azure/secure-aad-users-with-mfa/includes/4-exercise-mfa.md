@@ -1,6 +1,6 @@
-## Configure Azure MFA for applications
+## Configure Azure AD MFA for applications
 
-Let's walk through the basic steps necessary to configure and enable Azure Multi-Factory Authentication using Conditional policies. **Keep in mind that a real deployment requires significant thought and planning**. Make sure you review the documentation links at the end of this module before you enable MFA for your environments.
+Let's walk through the basic steps necessary to configure and enable Azure AD Multi-Factor Authentication using Conditional policies. **Keep in mind that a real deployment requires significant thought and planning**. Make sure you review the documentation links at the end of this module before you enable MFA for your environments.
 
 > [!IMPORTANT]
 > Azure AD Premium is need for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/trial/get-started-active-directory/) to try this feature out, or just read through the instructions below to understand the flow.
@@ -40,7 +40,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Select **Cloud apps or actions**.
     - Select **Select apps** and press the **Select** group
-    - Choose an app where you want to enable Azure MFA such as **Visual Studio App Center**
+    - Choose an app where you want to enable Azure AD MFA such as **Visual Studio App Center**
     - Select **Select** and then **Done** to close the panel.
 
 1. Review the **Conditions** section.
@@ -57,7 +57,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 MFA is now enabled for your selected application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
-## Configure Azure MFA for passwords
+## Configure Azure AD MFA for passwords
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 

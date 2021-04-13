@@ -30,7 +30,7 @@ Open your Ubuntu command line and use the following commands to try the various 
 
 4) Install Express by using npm: `sudo npm install express-generator -g`.
 
-5) Use `--version` to check that each package manager is installed and to get the version number, like this: `nodejs --version`, `npm --version`, and `express --version`.
+5) Use `--version` to check that each package manager is installed and to get the version number, like this: `node --version`, `npm --version`, and `express --version`.
 
 ## Try using a Node.js module
 

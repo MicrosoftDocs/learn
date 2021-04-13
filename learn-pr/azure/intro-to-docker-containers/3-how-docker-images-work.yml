@@ -28,7 +28,7 @@ quiz:
       explanation: "Docker Desktop currently is not available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
     - content: "Windows, macOS, and Windows Subsystem for Linux (WSL)"
       isCorrect: true
-      explanation: "While Docker Desktop is only available for Windows and macOS. It does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
+      explanation: "While Docker Desktop is only available for Windows and macOS, it does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
 
   - content: "Which is correct Docker command to rebuild a container image?"
     choices:

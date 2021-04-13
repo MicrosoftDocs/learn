@@ -16,7 +16,7 @@ The difference between a VHD and a physical hard disk is that a VHD is stored as
 
 Compared to physical disks, VHDs have several advantages, including:
 
-- High availability: You can store a VHD as an Azure-managed disk. Managed disks are replicated across three datacenters. If one datacenter has connectivity issues, your VHD is still available in two other locations.
+- High availability: Managed disks are designed for 99.999% availability. Managed disks achieve this by providing you with three replicas of your data, allowing for high durability. If one or even two replicas experience issues, the remaining replicas help ensure persistence of your data and high tolerance against failures.
 - Physical security: A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD by using Azure security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted. These features make it more difficult for a disk to be stolen or misplaced. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
 - Durability: Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
 - Scalability: You can create many virtual machines from the same VHDs simultaneously with minimal contention. (Contrast this with trying to set up 100 machines from the same DVD mounted as a shared device on your on-premises network.)

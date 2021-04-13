@@ -82,9 +82,9 @@ But what if you need to display the contents of an escape sequence without perfo
 Comment out the code that you added in the previous steps, and then add the following code to the code file:
 
 ```python
-nineth_string = r"A literal string with a \n new line character printed raw"
+ninth_string = r"A literal string with a \n new line character printed raw"
 
-print(nineth_string)
+print(ninth_string)
 ```
 When you run the code, you should see the following output:
 

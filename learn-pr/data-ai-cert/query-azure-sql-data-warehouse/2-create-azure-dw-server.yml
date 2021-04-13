@@ -6,10 +6,9 @@ metadata:
   description: Exercise - Create an Azure Synapse Analytics server in the Azure portal
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
   [!include[](includes/2-create-azure-dw-server.md)]

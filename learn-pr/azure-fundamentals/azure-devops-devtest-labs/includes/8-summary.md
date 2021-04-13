@@ -1,7 +1,7 @@
-Our goal in this module was to help Tailwind Traders choose the best DevOps solution for a given set of requirements across different software development and testing needs.
+The goal in this module was to help Tailwind Traders choose the best DevOps solution for a set of requirements across various software development and testing needs.
 
-We identified different product options and their capabilities, including Azure DevOps Services, GitHub (including GitHub Actions), and Azure DevTest Labs.  We analyzed the decision criteria for choosing one option over another in a given scenario.  Then we applied that decision criteria to three different challenges at Tailwind Traders, helping them find the best service option for the given scenario.
+We identified various product options and capabilities, including Azure DevOps Services, GitHub (including GitHub Actions), and Azure DevTest Labs.  We analyzed the criteria for choosing one option over another for each scenario.  Then we applied those criteria to three separate challenges at Tailwind Traders, helping the team determine the best service option for the scenarios.
 
-Without software development services and tools from Microsoft, Tailwind Traders might have difficulty in realizing the benefits of DevOps practices like CI/CD, source code management, and work item management.
+Without software development services and tools from Microsoft, the Tailwind Traders team might have difficulty in realizing the benefits of such DevOps practices as continuous integration and continuous delivery (CI/CD), source-code management, and work-item management.
 
-DevOps practices and processes have changed the software development landscape, accelerating software development while improving the deployability and quality of software systems. The wealth of tools from Microsoft can help organizations implement DevOps practices and experience better collaboration between and consistent results from technical teams.
+DevOps practices and processes have changed the software development landscape, helping to accelerate software development and improve the deployability and quality of software systems. Microsoft offers a wealth of tools that can help organizations implement DevOps practices, experience better collaboration among technical teams, and achieve more consistent results from those teams.

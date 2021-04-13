@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly.
+  ms.date: 10/28/2020
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

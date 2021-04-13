@@ -10,3 +10,4 @@ In this module, you explored service principals on the Azure platform. You saw h
 - [Create an Azure service principal by using the Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 - [Application and service principal objects in Azure AD](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
 - [Service-to-service authentication to Azure Key Vault using .NET](https://docs.microsoft.com/azure/key-vault/service-to-service-authentication).
+- [Documentation for DefaultAzureCredential](https://github.com/Azure/azure-sdk-for-net/blob/master/sdk/identity/Azure.Identity/README.md#defaultazurecredential).

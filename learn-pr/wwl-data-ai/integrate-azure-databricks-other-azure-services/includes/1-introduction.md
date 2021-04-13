@@ -58,7 +58,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 ## Configure JDBC Connection to Azure Synapse Analytics
 
-Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure Portal.
+Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure portal.
 
 1. After the Azure Synapse Analytics instance is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
@@ -127,7 +127,7 @@ In this step, we create a Master Key and a new table. However, before we use the
 
 1. After the storage account is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
-    ![Select Go to resource](../media/go-resource-storage.png)
+    ![Select Go to resource for your storage account](../media/go-resource-storage.png)
 
 1. Within the new storage account, select **Containers** in the left-hand menu. In the Containers blade, select **+ Container** to add a new container. In the New Container form, enter **data** for the name and set the public access level to **Private**. Select **Create**.
 

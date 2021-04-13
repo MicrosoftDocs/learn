@@ -1,17 +1,17 @@
-Tailwind Traders wants to optimize their cloud spend. Also, they're concerned about security breaches since they store customer data and historic purchase data in cloud-based databases. As they ramp up their cloud expertise, they want to better understand their use of the cloud, better understand best practices, and pinpoint "easy wins" where they can tighten up their cloud spend and their security practices.
+Tailwind Traders wants to optimize its cloud spend. Also, the organization is concerned about security breaches, because it stores customer data and historical purchase data in cloud-based databases. As the organization ramps up its cloud expertise, it wants to better understand its use of the cloud, better understand best practices, and pinpoint "easy wins" where it can tighten up its cloud spend and security practices.
 
-## Which service should we choose?
+## Which service should you choose?
 
-Let's apply the decision criteria we learned about in the previous unit to find the right option.
+Apply the decision criteria you learned about in the preceding unit to find the right option.
 
-First, in this scenario, does Tailwind Traders need an analysis of their Azure usage for the sake of optimization?  Yes, Tailwind Traders understands they may be spending too much and is concerned about their security practices and would like to have their use of the cloud analyzed against industry best practices.  Therefore, Azure Advisor is the perfect option for this scenario.
+First, in this scenario, does Tailwind Traders need to analyze its Azure usage for the sake of optimization?  Yes. Tailwind Traders understands that it might be spending too much, is concerned about its security practices, and wants to have its cloud usage analyzed against industry best practices.  Therefore, Azure Advisor is the perfect option for this scenario.
 
-While we may have found the right product option, let's continue evaluating our decision criteria for this scenario.
+Although you might have found the right product option, let's continue evaluating the decision criteria for this scenario.
 
-Second, in this scenario, does Tailwind Traders want to monitor the health of Azure's services affecting all customers or the resources deployed on Azure? This scenario is not concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
+Second, in this scenario, does Tailwind Traders want to monitor the health of Azure services that affect all customers or the resources that are deployed on Azure? This scenario isn't concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
 
-Third, in this scenario, does Tailwind Traders want to measure custom events along side other usage metrics? No, measuring custom events is not mentioned as a requirement and is not a consideration in this scenario.
+Third, in this scenario, does Tailwind Traders want to measure custom events alongside other usage metrics? No, measuring custom events isn't mentioned as a requirement and isn't a consideration in this scenario.
 
-Fourth, in this scenario, does Tailwind Traders want to set up alerts for outages or when autoscaling is about to deploy new instances? Again, this scenario is not concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
+Fourth, in this scenario, does Tailwind Traders want to set up alerts for outages or when autoscaling is about to deploy new instances? Again, this scenario isn't concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
 
-Azure Advisor is the right product option to help Tailwind Traders better understand and optimize both their cloud spend and their cloud security posture, and may help them with other areas of their cloud usage as well.
+Azure Advisor is the right product option to help Tailwind Traders better understand and optimize both its cloud spend and its cloud security posture. This product might help the organization with other areas of its cloud usage as well.

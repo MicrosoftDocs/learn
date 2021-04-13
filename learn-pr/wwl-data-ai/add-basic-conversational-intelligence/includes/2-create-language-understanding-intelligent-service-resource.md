@@ -299,7 +299,7 @@ This exercise demonstrates creating a LUIS application with Python code.
     ```python
     def create_app():
         # Create a new LUIS app
-        app_name    = "PictureBotLUIS")
+        app_name    = "PictureBotLUIS"
         app_desc    = "Picture Bot app built with LUIS Python SDK."
         app_version = "0.1"
         app_locale  = "en-us"

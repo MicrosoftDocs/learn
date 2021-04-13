@@ -3,7 +3,7 @@ uid: learn.wwl.using-iaas-support-azure-sap-workloads
 metadata:
   title: Using IAAS support with Azure for SAP workloads
   description: "There are a variety of commonly used SAP-certified operating systems supported by SAP running on Azure VMs, and there are also several different methods of provisioning storage for SAP workloads in Azure. In this module, you will learn the SAP recommended support products and VM types as well as the network, database, and monitoring requirements."
-  ms.date: 08/23/2020
+  ms.date: 10/22/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

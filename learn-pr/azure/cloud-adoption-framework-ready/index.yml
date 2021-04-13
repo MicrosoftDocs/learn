@@ -2,7 +2,7 @@
 uid: learn.azure.cloud-adoption-framework-ready
 metadata:
   title: Choose the best Azure landing zone to support your cloud operations requirements
-  description: Azure landing zones help accelerate configuration of your environment to meet your operational requirements.
+  description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch
@@ -12,14 +12,14 @@ title: Choose the best Azure landing zone to support your cloud operations requi
 summary: Azure landing zones can accelerate configuration of your cloud environment. This module will help you choose and get started with the best landing zone option for your needs.
 abstract: |
   In this module, you will:
-  - Compare your operations management, governance, and security requirements to common operating models 
-  - Evaluate Azure landing zone implementation options against your short-term and long-term requirements 
-  - Choose the best Azure landing zones and support Learn modules to support your cloud adoption needs 
+  - Compare your operations management, governance, and security requirements to common operating models. 
+  - Evaluate Azure landing zone implementation options against your short-term and long-term requirements.
+  - Choose the best Azure landing zones and support Learn modules to support your cloud adoption needs. 
 prerequisites: |
-  - Understanding of your organization’s cloud adoption strategy 
-  - Familiarity with Azure cloud environment including network configuration, network connectivity, and Azure Active Directory 
-  - Familiarity with Azure governance tools including Azure Policy, Azure Blueprints, Azure Resource Manager templates 
-  - General understanding of the environmental requirements needed to proceed with your cloud adoption plan  
+  - An understanding of your organization’s cloud adoption strategy. 
+  - Familiarity with Azure cloud environment including network configuration, network connectivity, and Azure Active Directory. 
+  - Familiarity with Azure governance tools including Azure Policy, Azure Blueprints, and Azure Resource Manager templates. 
+  - A general understanding of the environmental requirements needed to proceed with your cloud adoption plan.  
 iconUrl: /learn/achievements/cloud-adoption-framework-ready.svg
 ratingEnabled: true
 levels:
@@ -54,4 +54,4 @@ units:
 - learn.azure.cloud-adoption-framework-ready.7-expand-landing-zone
 - learn.azure.cloud-adoption-framework-ready.8-summary
 badge:
-  uid: learn.azure.cloud-adoption-framework-ready.badge
+  uid: learn.azure.cloud-adoption-framework-ready.badge 

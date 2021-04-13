@@ -48,12 +48,6 @@ There are a few changes that need to be made to your function application before
         <region>westus</region>
         ```
 
-    1. After the `<region>` element, and an element to define the deployment type as *ZIP* deployment. For example:
-
-        ```xml
-        <deploymentType>ZIP</deploymentType>
-        ```
-
     1. Press <kbd>Ctrl+S</kbd> to save your *pom.xml* file, and then press <kbd>Ctrl+Q</kbd> to close the code editor.
 
 ## Deploy your Azure Function
@@ -66,16 +60,10 @@ Now that you have configured your function for deployment, your next step is to 
     cd ~/event-reporting
     ```
 
-1. Before deploying your function, use the following Maven command to clean your project directory and rebuild your function:
+1. Use the following command to build and deploy it to Azure Functions:
 
     ```bash
-    mvn clean package
-    ```
-
-1. When Maven has built your function successfully, use the following command to deploy it to Azure Functions:
-
-    ```bash
-    mvn azure-functions:deploy
+    mvn clean package azure-functions:deploy
     ```
 
     Maven will display a running status of the deployment. For example:

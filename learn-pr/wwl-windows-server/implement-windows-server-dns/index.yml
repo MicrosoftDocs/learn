@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.implement-windows-server-dns
+metadata:
+  title: Implement Windows Server DNS
+  description: "Implement Windows Server DNS"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Implement Windows Server DNS
+summary: Learn to deploy and configure name resolution with Windows Server DNS.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Windows Server DNS.
+  - Describe DNS zones and records.
+  - Install and configure the DNS role and DNS zones.
+  - Describe how to implement DNS forwarding.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Active Directory Domain Services (AD DS) concepts and technologies.
+  - Windows Server.
+  - Core networking technologies.
+  - Windows client operating systems such as Windows 10.
+  Windows PowerShell basics.
+iconUrl: /learn/achievements/implement-windows-server-dns.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.implement-windows-server-dns.introduction
+- learn.wwl.implement-windows-server-dns.explore-dns-architecture
+- learn.wwl.implement-windows-server-dns.work-with-dns-zones-records
+- learn.wwl.implement-windows-server-dns.install-configure-dns-role
+- learn.wwl.implement-windows-server-dns.implement-dns-forwarding
+- learn.wwl.implement-windows-server-dns.knowledge-check
+- learn.wwl.implement-windows-server-dns.summary
+badge:
+  uid: learn.wwl.implement-windows-server-dns.badge

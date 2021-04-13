@@ -22,7 +22,7 @@ In this exercise, you'll create a virtual machine, set up a backup, and start a 
     RGROUP=$(az group create --name vmbackups --location westus2 --output tsv --query name)
     ```
 
-1. Use Cloud Shell to create the **NorthwindLive** virtual network and the **NorthwindInternal1** subnet.
+1. Use Cloud Shell to create the **NorthwindInternal** virtual network and the **NorthwindInternal1** subnet.
 
     ```azurecli
     az network vnet create \

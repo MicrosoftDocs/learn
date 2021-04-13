@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.intro-to-powershell.3-exercise-powershell
+title: Exercise - Run your first PowerShell commands
+metadata:
+  title: Exercise - Run your first PowerShell commands
+  description: In this unit, you will run commands to check your installed version
+    of PowerShell.
+  author: softchris
+  ms.author: shanama
+  ms.date: 12/7/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-powershell.md)]

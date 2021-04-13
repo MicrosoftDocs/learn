@@ -1,4 +1,4 @@
-You use an Azure Kubernetes Service (AKS) cluster to host the drone tracking solution. The DevOps team uses standard declarative YAML files to deploy various services in the solution. In the current deployment workflow, the development teams create the deployment files for each application. The teams is reviewing Helm as an alternative to simply the management of cloud-native application deployments.
+You use an Azure Kubernetes Service (AKS) cluster to host the drone tracking solution. The DevOps team uses standard declarative YAML files to deploy various services in the solution. In the current deployment workflow, the development teams create the deployment files for each application. The team is reviewing Helm as an alternative to simplify the management of cloud-native application deployments.
 
 In this exercise, you'll install an AKS cluster for the team test deployments using HELM. You'll use a script to create and configure your Azure Kubernetes Service (AKS) cluster.
 
@@ -52,11 +52,12 @@ The script performs the following configuration steps:
 
     Creating the AKS cluster takes a few minutes to complete. While the script is running, continue to the next unit.
 
-    > [!NOTE]
-    > Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
-    >
-    > ```azurecli
-    > cd ~ && \
-    >   rm -rf ~/clouddrive/mslearn-aks && \
-    >   az group delete --name learn-helm-deploy-aks-rg --yes
-    > ```
+## How to manage an unexpected failure
+
+Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
+
+```azurecli
+cd ~ && \
+   rm -rf ~/clouddrive/mslearn-aks && \
+   az group delete --name learn-helm-deploy-aks-rg --yes
+```

@@ -10,8 +10,8 @@ Second, you can create an X.509 certificate signing request (CSR). This creates 
 
 ![Diagram showing the process to create a certificate with your own certificate authority](../media/5-certificate-authority-1.png)
 
-1. In the diagram above, your application is creating a certificate which internally begins by creating a key in your Azure Key Vault.
-1. Key Vault returns to your application a Certificate Signing Request (CSR).
+1. In the previous diagram, your application is creating a certificate which internally begins by creating a key in your Azure Key Vault.
+1. Key Vault returns a Certificate Signing Request (CSR) to your application.
 1. Your application passes the CSR to your chosen CA.
 1. Your chosen CA responds with an X.509 Certificate.
 1. Your application completes the new certificate creation with a merger of the X.509 Certificate from your CA.
@@ -22,7 +22,7 @@ Third, you can connect your Key Vault with a trusted certificate issuer (referre
 
 ![Diagram showing the process to create a certificate with an integrated certificate authority](../media/5-certificate-authority-2.png)
 
-1. In the diagram above, your application is creating a certificate which internally begins by creating a key in your key vault.
+1. In the previous diagram, your application is creating a certificate which internally begins by creating a key in your key vault.
 1. Key Vault sends a SSL Certificate Request to the CA.
 1. Your application polls, in a loop and wait process, for your Key Vault for certificate completion. The certificate creation is complete when Key Vault receives the CA’s response with x509 certificate.
 1. The CA responds to Key Vault's SSL Certificate Request with an X509 SSL Certificate.
@@ -46,8 +46,8 @@ $fileContentEncoded = [System.Convert]::ToBase64String($clearBytes)
 $secret = ConvertTo-SecureString -String $fileContentEncoded -AsPlainText –Force
 $secretContentType = 'application/x-pkcs12'
 
-# Replace the <vault-name> and <key-name> below.
-Set-AzureKeyVaultSecret -VaultName <vault-name> -Name <key-name> -SecretValue $secret -ContentType $secretContentType
+# Replace the following <vault-name> and <key-name>.
+Set-AzKeyVaultSecret -VaultName <vault-name> -Name <key-name> -SecretValue $secret -ContentType $secretContentType
 ```
 
 ## Retrieving certificates from a Key Vault

@@ -3,10 +3,10 @@ uid: learn.azure.ai-machine-learning-fundamentals.identify-product-options
 title: Identify the product options
 metadata:
   title: Identify the product options
-  description: Examine each artificial intelligence product available from Microsoft Azure.
+  description: Examine each AI product available from Microsoft Azure.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

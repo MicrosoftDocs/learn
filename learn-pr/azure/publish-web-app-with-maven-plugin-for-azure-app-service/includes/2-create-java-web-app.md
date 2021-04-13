@@ -6,7 +6,7 @@ In this unit, you'll revisit how Maven and archetypes can help create Java web a
 
 ## Using Maven to automate building Java web apps
 
-Maven helps streamline the processes for how developers build Java projects. Maven's goals are to:
+Maven is the most used Java build tool that can be used for building and managing any Java-based project. It helps streamline the processes for how developers build Java projects with a standard way to build the projects, a clear definition of what the project consisted of, an easy way to publish project information, and a way to share JARs across several projects. Maven's goals are to:
 
 - Make the build process easier
 - Transparently migrate to new features

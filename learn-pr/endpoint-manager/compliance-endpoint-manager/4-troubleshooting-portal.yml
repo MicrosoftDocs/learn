@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.compliance-endpoint-manager.4-troubleshooting-portal
+title: Understand the Troubleshooting + support workload
+metadata:
+  title: Understand the Troubleshooting + support workload
+  description: Understand the Troubleshooting + support workload.
+  ms.date: 10/26/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-troubleshooting-portal.md)]
+  

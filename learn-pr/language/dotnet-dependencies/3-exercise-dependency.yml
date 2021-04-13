@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-dependencies.3-exercise-dependency
+title: Exercise - Install packages
+metadata:
+  title: Exercise - Install packages
+  description: Exercise on how to add and remove packages in your .NET project.
+  ms.date: 10/28/2020
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-dependency.md)]

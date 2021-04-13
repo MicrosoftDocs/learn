@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services.4-capabilities-configuration-profile
+title: Capabilities and the configuration profile
+metadata:
+  title: Capabilities and the configuration profile
+  description: Learn about the APIs and resources needed to create a Mixed Reality app with speech translation services in Unity
+  ms.date: 10/06/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-capabilities-configuration-profile.md)]

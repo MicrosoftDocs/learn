@@ -3,12 +3,11 @@ uid: learn.create-razor-pages-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 07/31/2019
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Introduction
 durationInMinutes: 1
 content: |

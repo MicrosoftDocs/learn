@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-templates-command-line-github-actions.3-exercise-single-deployment
+title: Exercise - Deploy your ARM templates
+metadata:
+  title: Exercise - Deploy your Azure Manager Resource templates
+  description: Walk-through of deploying your ARM templates
+  ms.date: 10/15/2020
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-single-deployment.md)]

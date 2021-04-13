@@ -1,6 +1,6 @@
 You've learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You've also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud. 
 
-In this unit, you'll learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information will to help you determine whether ExpressRoute is the most appropriate solution for your organization.
+In this unit, you'll learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information will help you determine whether ExpressRoute is the most appropriate solution for your organization.
 
 ## When to use Azure ExpressRoute
 
@@ -57,6 +57,6 @@ The following table shows a comparison between ExpressRoute, point-to-site, and 
 
 | Connection | Azure services supported | Bandwidth | Protocols | Typical use case |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Virtual network, point-to-site | Azure IaaS services, Azure Virtual Machines | Based on the gateway SKU |  Active/passive | Dev, test, and lab environments for cloud services and virtual machines. |
-| Virtual network, site-to-site | Azure IaaS services, Azure Virtual Machines | 	Typically < 1 Gbps aggregate|  Active/passive | Dev, test, and lab environments. Small-scale production workloads and virtual machines.| 
+| Virtual network, point-to-site | Azure IaaS and PaaS services (through private endpoints) | Based on the gateway SKU |  Active/passive | Dev, test, and lab environments for cloud services and virtual machines. |
+| Virtual network, site-to-site | Azure IaaS and PaaS services (through private endpoints) | 	Typically < 1 Gbps aggregate|  Active/passive | Dev, test, and lab environments. Small-scale production workloads and virtual machines.| 
 | ExpressRoute | Azure IaaS and PaaS services, Microsoft Office 365 services | 50 Mbps up to 10 Gbps (100 Gbps for ExpressRoute Direct)| Active/active | Enterprise-class and mission-critical workloads. Big data solutions. |

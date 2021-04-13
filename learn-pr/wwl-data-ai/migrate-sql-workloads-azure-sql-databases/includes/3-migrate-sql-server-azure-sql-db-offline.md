@@ -1,6 +1,11 @@
+If you afford to take the database offline while you migrate to Azure, then you have a choice of techniques you can use to migrate the schema and data.
+
+In your bicycle manufacturing company, the HR database is considered business-critical but is rarely used at weekends. You've planned to execute an offline migration between Friday evening and Monday morning, but you want to assess the best migration method.
+
 In this unit, the focus is on the tools and methods for migrating SQL Server databases to Azure SQL Database offline.
 
-It's assumed that all pre-migration checks have been done with the Data Migration Assistant and the Database Experimentation Assistant. This process ensures that feature and compatibility issues are addressed, and workloads have been simulated.
+> [!NOTE]
+> It's assumed that all pre-migration checks have been done with the Data Migration Assistant and the Database Experimentation Assistant. This process ensures that feature and compatibility issues are addressed, and workloads have been simulated.
 
 ## Migrate using the Data Migration Assistant
 
@@ -12,16 +17,15 @@ You use the Data Migration Assistant to help migrate your SQL Server workload to
 1. Deploy the Transact SQL script with the fixes to the copy of the database.
 1. Migrate the database copy to a new Azure SQL Database by using the Data Migration Assistant. 
 
-During migration, there's several best practices you can employ for importing the database into Azure SQL Database, including:
+During migration, there are several best practices you can employ for importing the database into Azure SQL Database, including:
 
 - Choose the highest service tier and compute size that your budget allows to maximize the transfer performance. To save on cost, you can scale down after the migration completes.
 - Minimize the distance between your BACPAC file and the destination data center.
 - Disable autostatistics during migration.
 - Partition tables and indexes.
-- Drop indexed views, and recreate them when finished.
+- Drop indexed views and recreate them when finished.
 - Remove rarely queried historical data to another database and migrate it to a separate Azure SQL Database. You can then query this historical data using elastic queries.
-
-After migration, update of all the statistics in the database.
+- After migration, update of all the statistics in the database.
 
 ## Migrate to Azure SQL Database using BACPAC
 
@@ -32,13 +36,9 @@ You can import a SQL Server database into an Azure SQL Database using a BACPAC f
 The Azure portal only supports creating a single database in Azure SQL Database, and only from a BACPAC file in Azure Blob storage.
 
 1. To import from a BACPAC file into a new single database using the Azure portal, open the appropriate database server page and then, on the toolbar, select **Import database**.
-
 1. Select the storage account and container for the BACPAC file, and then select the BACPAC file from which to import.
-
 1. Specify the new database size (usually the same as the origin) and provide the destination SQL Server credentials.
-
 1. Select **OK**.
-
 1. To monitor an import's progress, open the database server page and, under **Settings**, select **Import/Export history**. When successful, the import has a **Completed** status.
 
 You could also use SqlPackage to import a BACPAC file as it's more performant than using the Azure portal method. The following SqlPackage command imports the AdventureWorks2008R2 database from local storage to an Azure SQL Database server called mynewserver20170403. It creates a new database called myMigratedDatabase with a Premium service tier and a P6 Service Objective. Change these values as appropriate for your environment.
@@ -60,19 +60,12 @@ Before using the Data Migration Assistant, you must register a resource provider
 To use the Azure Database Migration Service to migrate a database to Azure SQL Database, complete the following steps:
 
 1. Create a migration project
-
 1. Specify source details
-
 1. Specify target details
-
 1. Select source databases
-
 1. Configure migration settings
-
 1. Review the migration summary
-
 1. Run and monitor the migration
-
 1. Complete migration cutover
 
 After the full database backup is restored on the target instance of Azure SQL Database, the database is available to do a migration cutover.

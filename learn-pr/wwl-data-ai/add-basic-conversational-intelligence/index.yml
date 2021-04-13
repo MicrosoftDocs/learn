@@ -3,7 +3,7 @@ uid: learn.wwl.add-conversational-intelligence-luis
 metadata:
   title: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
   description: "Learn to identify valuable information in conversations with LUIS for interpreting user goals (intents) and distill valuable information from sentences (entities)."
-  ms.date: 09/30/2020
+  ms.date: 11/03/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   * Train and Publish the LUIS Model
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/add-conversational-intelligence-with-luis.svg
 levels:

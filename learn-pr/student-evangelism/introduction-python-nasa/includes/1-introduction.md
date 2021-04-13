@@ -6,19 +6,16 @@ Furthermore, learning how to explore and understand the massive amounts of data 
 
 Although this data exploration journey is one that can be lifelong, this first learning path will give you the basic tools to get started and this module will provide the context for why these problems are interesting in the first place.
 
+> [!TIP]
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/NcUreWUpQFo?azure-portal=true) in a new tab.
+
 ## Learning objectives
 
 In this module, you'll scratch the surface (pun intended) of how to start the data exploration. You'll learn:
 
-- What a programming language is
-- About the benefits of the Visual Studio Code editor
-- How to install Visual Studio Code
-- How to install extensions to enhance the Visual Studio Code experience
-- About Python and why it is such a popular programming language
-- How to install Python
-- How to run a basic Jupyter Notebook within Visual Studio Code
+- How code and data science plays a role in space exploration
+- Where to find STEM resources for learning more 
 
 ## Prerequisites
 
-- A Windows, Mac, or Linux computer
-- Knowledge of how to download programs from the Internet
+- None

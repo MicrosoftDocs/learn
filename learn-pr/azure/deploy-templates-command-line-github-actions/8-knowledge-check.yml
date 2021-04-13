@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-templates-command-line-github-actions.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/15/2020
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When you're using linked templates, where can you store the linked artifacts?"
+    choices:
+    - content: "On a networked server accessible over SMB."
+      isCorrect: false
+      explanation: "When you're referencing a linked template, you can't use a local file or a file that's available only on your local network."
+    - content: "On any endpoint that's publicly accessible through HTTP or HTTPS."
+      isCorrect: true
+      explanation: "When you're referencing a linked template, you must provide a URI value that's downloadable as HTTP or HTTPS."
+    - content: "On any endpoint that's publicly accessible through FTP."
+      isCorrect: false
+      explanation: "When you're referencing a linked template, you must provide a URI value that's downloadable as HTTP or HTTPS."
+  - content: "When you're deploying a template through GitHub Actions, you must provide authentication credentials in what form?" 
+    choices:
+    - content: "Provide a username and template as part of a configured secret in GitHub repository settings."
+      isCorrect: false
+      explanation: "You can automate your workflow to do an Azure login by using an Azure service principal."
+    - content: "Use the user credentials part of a configured secret in GitHub repository settings."
+      isCorrect: true
+      explanation: "You can provide the service principal credentials part of a configured secret in your GitHub repository settings."
+    - content: "Provide the shared access signature (SAS) part of a configured secret in GitHub repository settings."
+      isCorrect: false
+      explanation: "Shared access signatures or SAS tokens are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
+  - content: "What's the best way to modularize your resources for deployment?" 
+    choices:
+    - content: "Use nested templates."
+      isCorrect: false
+      explanation: "Nested templates allow you to store many individual templates in one main template file. But each file can't be reused as easily as if separate files were linked together."
+    - content: "Use linked templates."
+      isCorrect: true
+      explanation: "Linked templates allow you to create reusable, composable, and modular deployments that comprise many individual ARM templates."
+    - content: "Use GitHub Actions to control the deployment."
+      isCorrect: false
+      explanation: "GitHub Actions are a great way to deploy your infrastructure as code (IaC) in a controlled manner, but they don't provide any benefits to modularize your templates."

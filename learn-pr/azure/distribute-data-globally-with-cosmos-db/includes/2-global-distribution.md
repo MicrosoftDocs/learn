@@ -67,7 +67,7 @@ When a database is replicated, the throughput and storage are replicated equally
 
 Let's now replicate your database closest to your global users in Los Angeles, New York, and Tokyo.
 
-1. In the account page, click **Replicate data globally** from the menu.
+1. On the left-hand menu, click **Replicate data globally** from the menu.
 1. In the **Replicate data globally** page, select the West US 2, East US, and Japan East regions, and then click **Save**.
 
     If you don't see the map in the Azure portal, minimize the menus of the left side of the screen to display it.

@@ -13,7 +13,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
     > [!NOTE]
     > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
 
-    ```Azure CLI
+    ```azurecli
     az extension add --name azure-iot
 
     ```
@@ -22,7 +22,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL. You can use a name like *cheesecavesmanager-anID*
 
-    ```Azure CLI
+    ```azurecli
     iotHubName='{your iot hub name}'
     az iot hub create --name $iotHubName --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
     ```
@@ -31,7 +31,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
     > Across the module you will have to execute command like the above one in the Azure Shell that might take some time to execute. Be patient as Azure creates and configures resources for you.
 4. Run this command to create the three devices.
 
-    ```Azure CLI
+    ```azurecli
     az iot hub device-identity create --hub-name $iotHubName --device-id TruckDevice
     az iot hub device-identity create --hub-name $iotHubName --device-id AirplaneDevice
     az iot hub device-identity create --hub-name $iotHubName --device-id ContainerDevice
@@ -39,7 +39,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
 
 5. Run this command to get connection string for the three devices. Don't close or clean the window, as you'll need these values in the next step. You can copy them in a text file for convenience.
 
-    ```Azure CLI
+    ```azurecli
     az iot hub device-identity connection-string show --hub-name $iotHubName --device-id TruckDevice --output tsv
     az iot hub device-identity connection-string show --hub-name $iotHubName --device-id AirplaneDevice --output tsv
     az iot hub device-identity connection-string show --hub-name $iotHubName --device-id ContainerDevice --output tsv
@@ -54,7 +54,7 @@ As Time Series Insights needs time-stamped data, we'll write some code to simula
 
 1. In the Azure Shell terminal, create a folder called **simulator** and navigate to it:
 
-    ```Azure CLI
+    ```azurecli
     mkdir simulator
     cd simulator
 
@@ -62,7 +62,7 @@ As Time Series Insights needs time-stamped data, we'll write some code to simula
 
 2. Enter the following commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
 
-    ```Azure CLI
+    ```azurecli
     dotnet new console
     dotnet restore
 
@@ -70,7 +70,7 @@ As Time Series Insights needs time-stamped data, we'll write some code to simula
 
 3. In the terminal, install the required libraries using the following commands:
 
-    ```Azure CLI
+    ```azurecli
     dotnet add package Microsoft.Azure.Devices.Client
     dotnet add package Microsoft.Azure.Devices.Shared
     dotnet add package Newtonsoft.Json
@@ -83,7 +83,7 @@ At this point, your project is ready for coding.
 
 1. Open the **Program.cs** file for the device app typing the following command in the Azure shell:
 
-    ```Azure CLI
+    ```azurecli
     code Program.cs
 
     ```
@@ -313,7 +313,7 @@ At this point, your project is ready for coding.
 
 This program will generate data for the three sensors. To start sending data to IoT Hub, you just need to run the following command in Azure Cloud Shell.
 
-```Azure CLI
+```azurecli
 dotnet run
 
 ```

@@ -16,13 +16,21 @@ There are many aspects to building and deploying secure applications. Here are t
 
 - **Applications must comply with rules and regulations.** We need to ensure that the code complies with rules and regulations that it's required to meet. We have to test for compliance while building the code and retest periodically, even after deployment.
 
+### Security at every step
+
+:::image type="content" source="../media/shift-left-2.png" alt-text="Security is a part of every step.":::
+
 Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
+
+In practice, to hold teams accountable for what they develop, processes need to **shift left** earlier in the development lifecycle. By moving steps from a final gate at deployment time to an earlier step, fewer mistakes are made, and developers can move more quickly.
 
 Application security concepts haven't been a focus for developers in the past. Apart from the education and training issues, it's because their organizations have emphasized fast development of features.
 
 With the introduction of DevOps practices however, security testing is much easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
 
-Overall, when the time for rework is taken into account, adding security to your DevOps practices can actually reduce the overall time it takes to develop quality software.
+Overall, when the time for rework is taken into account, adding security to your DevOps practices earlier in the development lifecycle allows development teams to catch issues earlier and can actually reduce the overall time it takes to develop quality software.
+
+Shifting left is a process change, but it isn’t a single control or specific tool—it’s about making all of security more developer-centric, and giving developers security feedback where they are. Below are some ways to distribute security and operational responsibilities across all phases of the software development lifecycle.
 
 ## Communicating security policy with SECURITY.md
 
@@ -92,3 +100,21 @@ Even with a visual dependency graph, it can still be overwhelming to stay on top
 Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommended version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this effort? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
 
 To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot security updates](https://help.github.com/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates?azure-portal=true).
+
+### Automated code scanning
+
+Similar to how Dependabot scans your repository for dependency alerts, you can use code scanning to analyze and find security vulnerabilities and errors in the code in a GitHub repository. Code scanning has several benefits; you can use it to find, triage, and prioritize fixes for existing problems or potential security vulnerabilities. It's also useful to help prevent developers from introducing any new security problems into the code.
+
+Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data. This allows you to create custom queries, or ones maintained by the open source community, for code scanning which gives you freedom to customize and maintain how the code within your repository is being scanned. 
+
+You can enable code scanning alerts and workflows in the security tab of a GitHub repository
+
+:::image type="content" source="../media/security-overview.png" alt-text="A list of policies, advisories, and alerts with links to more information.":::
+
+Learn more about [code scanning and CodeQL](https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning#about-code-scanning)
+
+### Secret scanning
+
+Another automated scanning feature within a GitHub repository is secret scanning. Similar to the previous security scanning features, secret scanning looks for known secrets or credentials committed within the repository. This scanning is done to prevent the use of fraudulent behavior and to secure the integrity of any sensitive data. By default, secret scanning occurs on public repositories and can be enabled on private repositories by repository administrators or organization owners.
+
+Learn more about [secret scanning for public and private repositories](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-secret-scanning)

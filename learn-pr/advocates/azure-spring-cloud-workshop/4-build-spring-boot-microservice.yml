@@ -9,7 +9,7 @@ metadata:
   ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 10
 content: |
   [!include[](includes/4-build-spring-boot-microservice.md)]
 quiz:
@@ -18,21 +18,24 @@ quiz:
 
   - content: 'To deploy a Spring Boot microservice to Azure Spring Cloud, what do you need to change in your application?'
     choices:
-    - content: 'You need to code a specific Spring bean'
+    - content: 'Code a specific Spring bean'
       isCorrect: false
       explanation: 'You do not need to add or change any code in your application.'
-    - content: 'You need to add a specific Maven dependency'
-      isCorrect: true
-      explanation: 'The `spring-cloud-starter-azure-spring-cloud-client` dependency is used to connect to the managed Spring Cloud Discovery Server and to the managed Spring Cloud Config Server.'
-    - content: 'You need to set up some specific environment variables'
+    - content: 'Add a specific Maven dependency'
+      isCorrect: false
+      explanation: 'Azure Spring Cloud requires no Azure-specific dependency in your application.'
+    - content: 'Set up some specific environment variables'
       isCorrect: false
       explanation: 'You do not need to set up some specific environment variables.'
+    - content: 'None of the above'
+      isCorrect: true
+      explanation: 'Migrate your Spring Cloud apps to Azure Spring Cloud is seamless without vendor lock-in.'
   - content: 'By default, how can you access your microservice once it is deployed?'
     choices:
     - content: 'There is a specific, secured endpoint, where the application is published'
       isCorrect: true
       explanation: 'By default, a secured endpoint is set up. You can configure your cluster not to expose it, for increased security.'
-    - content: 'There is a publicly-available endpoint'
+    - content: 'There is a publicly available endpoint'
       isCorrect: false
       explanation: 'It is possible to assign a public address to the microservice endpoint, but it is not enabled by default for security reasons.'
     - content: 'The endpoint is not available at all on the Internet, you must use a private network to access it'

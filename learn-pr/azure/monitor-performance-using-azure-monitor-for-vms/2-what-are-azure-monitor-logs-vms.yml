@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.what-are-azure-monitor-logs-vms
+title: What are Azure Monitor Logs and Azure Monitor for VMs?
+metadata:
+  description: 'What are Azure Monitor Logs and Azure Monitor for VMs?'
+  title: What are Azure Monitor Logs and Azure Monitor for VMs?
+  ms.author: shkuehn
+  author: sbkuehn
+  ms.prod: learning-azure
+  ms.topic: interactive-tutorial
+  ms.date: 11/20/2020
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-are-azure-monitor-logs-vms.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'You start out by talking to individual business units about monitoring wants and needs at the start of your assignment. You determine each business unit only needs to query logs generated from their resources. Which access model would you select for your Log Analytics deployment?'
+    choices:
+    - content: Workspace-context
+      isCorrect: false
+      explanation: Provides access to all logs in a workspace where the permission is assigned.
+    - content: Resource-context
+      isCorrect: true
+      explanation: Provides access to view logs for resources in all tables you have access to. Queries are scoped to only data associated with that resource.
+    - content: Table-level RBAC
+      isCorrect: false
+      explanation: Provides a mechanism to define more granular data control inside a Log Analytics workspace in conjunction with other access mode permissions.
+  - content: 'What does Azure Monitor for VMs provide?'
+    choices:
+    - content: Provides insight into operations performed on Azure resources.
+      isCorrect: false
+      explanation: Azure resource logs provide insight into the operations performed on an Azure resource by way of configuring diagnostic settings.
+    - content: Provides access to create, read, update, and delete (CRUD) events.
+      isCorrect: false
+      explanation: Create, read, update, and delete events are captured inside Azure Active Directory activity logs.
+    - content: Provides access to log data without exposing the user to underlying queries.
+      isCorrect: true
+      explanation: Allows deeper performance analysis of a virtual machine without query building.

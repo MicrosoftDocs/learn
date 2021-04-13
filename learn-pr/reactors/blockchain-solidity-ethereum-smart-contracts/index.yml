@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts
+metadata:
+  title: Write Ethereum smart contracts by using Solidity
+  description: Learn how to install and use tools that you can use to develop smart contracts.
+  ms.date: 10/06/2020
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write Ethereum smart contracts by using Solidity
+summary: Learn how to install and use tools that you can use to develop smart contracts.
+abstract:  |
+  By the end of this module, you'll be able to:
+  - Explain what smart contracts are.
+  - Know common use cases for smart contracts.
+  - Install the Blockchain development kit.
+  - Install Truffle.
+  - Write a smart contract by using the Blockchain development kit.
+  - Test a smart contract by using Truffle.
+prerequisites: | 
+  - Fundamental knowledge about blockchain
+  - Ethereum platform knowledge
+  - Familiarity with the Solidity programming language
+  - Visual Studio Code installed
+  - Knowledge about how to download programs from the internet
+  - Knowledge about how to use command-line tools
+  - An Azure account
+iconUrl: /learn/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.1-introduction
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.2-smart-contracts
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.3-blockchain-dev.kit
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.4-truffle
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.5-write-contract
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.6-test-contract
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.7-knowledge-check
+- learn.reactors.blockchain-solidity-ethereum-smart-contracts.8-summary
+badge:
+  uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge

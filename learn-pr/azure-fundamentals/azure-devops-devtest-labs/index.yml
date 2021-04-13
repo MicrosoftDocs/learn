@@ -1,24 +1,30 @@
 ### YamlMime:Module
 uid: learn.azure.azure-devops-devtest-labs
 metadata:
-  title: Choose the best tools to help organizations build better solutions
-  description: Learn about the tools and services that help developers and operations engineers use build modern solutions for the cloud and on-premises.
+  title: Choose the best tools to help organizations build better solutions (AZ-900)
+  description: Learn about Microsoft tools and services that help developers and operations engineers build modern solutions for the cloud and on-premises. Prepare for AZ-900.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best tools to help organizations build better solutions
-summary: Learn about the tools and services that help developers and operations engineers use build modern solutions for the cloud and on-premises.
+summary: Learn about Microsoft tools and services that help developers and operations engineers build modern solutions for the cloud and on-premises.
 abstract: |
-  After completing this module, you'll be able to:
-  - Choose the best software development process tools and services for a given business scenario.
+  After completing this module, you will be able to:
+  - Choose the software development process tools and services that best address specific business scenarios.
 prerequisites: |
   - A development or operations background is valuable but not required.
-  - It would be helpful for you to already be familiar with the concept of DevOps, it's larger purpose in the organization, it's goals, outcomes, and so on.
-  - Likewise, familiarity with concepts like the Software Development Lifecycle, Source Code Management / Version Control, the different forms of testing, Continuous Integration / Continuous Delivery, Continuous Deployment, Infrastructure as Code, and so on, will help you immediately understand the value of the tools covered in this module.
+  - Some familiarity with the concept of DevOps and its larger purpose in the organization, goals, outcomes, and so on.
+  - To help with understanding the value of the tools covered in this module, familiarity with such concepts as:
+    - Software development lifecycle
+    - Source-code management and version control
+    - The various forms of testing
+    - Continuous integration and continuous delivery, or CI/CD
+    - Continuous deployment
+    - Infrastructure as code
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
 levels:
 - beginner
 roles:

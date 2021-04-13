@@ -1,29 +1,34 @@
-Azure Sentinel provides you with a solution to perform security operations on our cloud and on-premises environments.
+Azure Sentinel is a solution for performing security operations on your cloud and on-premises environments.
 
-Azure Sentinel should be used if you are looking to collect event data from various sources and you wish to perform security operations on that data to identify suspicious activity. Security operations could include:
+Use Azure Sentinel if you want to:
 
-* Visualization of log data
-* Anomaly detection
-* Threat hunting
-* Security incident investigation
-* Automated response to alerts and/or incidents
+- Collect event data from various sources.
+- Perform security operations on that data to identify suspicious activity.
 
-Azure Sentinel offers some other capabilities that could help you make the decision as to whether it is the right fit for you:
+Security operations could include:
 
-* Cloud-native SIEM - No servers to provision, effortless scale.
-* Integration with Azure Logic Apps and its hundreds of connectors for integration.
-* Leverage Microsoft research and machine learning.
-* Key log sources provided for free.
-* Support for hybrid cloud and on-premises.
-* SIEM and a data lake all in one.
+- Visualization of log data.
+- Anomaly detection.
+- Threat hunting.
+- Security incident investigation
+- Automated response to alerts and incidents.
 
-Your organization had some clear requirements when you began investigating if Azure Sentinel would be the right fit for them:
+Azure Sentinel offers other capabilities that could help you decide whether it's the right fit for you:
 
-* Support for data from multiple cloud environments
-* Features and functionality required of a SOC, without too much administrative overhead
+- Cloud-native SIEM. There are no servers to provision, so scaling is effortless.
+- Integration with the Azure Logic Apps service and its hundreds of connectors.
+- Benefits of Microsoft research and machine learning.
+- Key log sources provided for free.
+- Support for hybrid cloud and on-premises environments.
+- SIEM and a data lake all in one.
 
-You have found that by leveraging data connectors for syslog, AWS and others as well as the  ability to achieve effortless scale without provisioning servers, that Azure Sentinel could be a good fit for them. During your analysis, you also realized that they should make automation a key part of their SOC strategy and will be looking to leverage playbooks too. This was something they had not considered before. 
+When you began investigating Azure Sentinel, your organization had some clear requirements:
 
-If you are collecting infrastructure or application logs for performance monitoring purposes, then you should also consider using Azure Monitor and Azure Log Analytics for that purpose.
+- Support for data from multiple cloud environments
+- Features and functionality required for a security operations center (SOC), without too much administrative overhead
 
-If you are looking to understand the security posture of your environment, ensure you're compliant with policy and check for security misconfigurations, you should also leverage Azure Security Center. You can ingest Azure Security Center alerts as a data connector for Azure Sentinel.
+You've found that Azure Sentinel could be a good fit. It offers data connectors for syslog, Amazon Web Services (AWS), and other sources, and the ability to scale effortlessly without provisioning servers. During your analysis, you also realized that your organization should make automation a key part of its SOC strategy. Automation wasn't something the organization had considered before, but now you'll look into using automation playbooks.
+
+If you're collecting infrastructure or application logs for performance monitoring, consider also using Azure Monitor and Log Analytics for that purpose.
+
+And perhaps you want to understand the security posture of your environment, make sure that you're compliant with policy, and check for security misconfigurations. If so, consider also using Azure Security Center. You can ingest Security Center alerts as a data connector for Azure Sentinel.

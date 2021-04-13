@@ -6,91 +6,134 @@ Let’s start by creating an Azure Function app in the portal.
 
 ::: zone pivot="csharp"
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
-1. Select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource.
+1. Select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource. The **Create Function App** pane appears.
 
     ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
 
-1. Enter a globally unique **App name**.
+1. On the **Basics** tab, enter the values for each setting.
 
-1. Select the **Concierge Subscription**.
+    | Setting  | Value  |
+    |---|---|
+    | **Project Details** |
+    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
+    | Resource Group | Create a new resource group called **mslearn-autoscale** |
+    | **Instance Details** |
+    | Function App name | *\<your-webapp-name\>* |
+    | Publish | Code |
+    | Runtime stack | .NET |
+    | Version | 3.1 |
+    | Region | select a location close to you |
 
-1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
+1. Select **Next : Hosting**. Enter the values for each setting.
 
-1. Choose **Windows** as your **OS**.
+    | Setting  | Value  |
+    |---|---|
+    | **Storage** |
+    | Storage account |  You can change the name if you like. It will default to a variation of the App name. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
 
-1. Choose **Consumption Plan** for your **Hosting Plan**. When using the Consumption Plan type you're charged for each execution of your function and resources are automatically allocated based on your application workload.
-
-1. Select a **Location** close to you.
-
-1. For **Runtime Stack**, leave as default *.NET*, which is the language in which we implement the function examples in this exercise.
-
-1. Create a new **Storage** account, you can change the name if you like - it will default to a variation of the App name.
-
-1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
-
-    ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
-
-1. Select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource.
-
-    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
-
-1. Enter a globally unique **App name**.
-
-1. Select the **Concierge Subscription**.
-
-1. Select the existing **Resource group** <rgn>[sandbox resource group name]</rgn>.
-
-1. Choose **Windows** as your **OS**.
-
-1. Choose **Consumption Plan** for your **Hosting Plan**. When using the Consumption Plan type you're charged for each execution of your function and resources are automatically allocated based on your application workload.
-
-1. Select a **Location** close to you.
-
-1. For **Runtime Stack**, select **PowerShell Core (Preview)**, which is the language in which we implement the function examples in this exercise.
-
-1. Create a new **Storage** account, you can change the name if you like - it will default to a variation of the App name.
-
-1. Select **Create**. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it.
-
-::: zone-end
+1. Select **Review + create**, and then select **Create**. After the function app is deployed, select **Go to resource**.
 
 ## Create a timer-triggered function
 
 Now we're going to create a timer trigger inside our function.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. In the menu pane for your Function App, select **Functions**, and then select the Add (**+**) button. This action starts the function creation process.
 
-1. On the **Azure Functions for PowerShell - getting started** page, select **In-portal** and then select **Continue**.
-
-1. In the list of quick start templates, select **Timer** and then select **Create** at the bottom of the screen.
+1. In the list of quick start templates, select **Timer trigger**, and then select **Add** at the bottom of the pane. The **TimerTrigger1** pane appears.
 
 ## Configure the timer trigger
 
 We have an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to execute every 20 seconds.
 
-1. Select **Integrate**.
+1. From the menu pane, select **Integration**. The **Integration** page appears.
 
-1. Enter the following value into the **Schedule** box:
+1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+
+1. Enter the following value into the **Schedule** box.
 
     ```log
     */20 * * * * *
     ```
 
 1. Select **Save**.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
+
+1. Select **Compute**, and then select **Function App**. You can also optionally use the search bar to locate and create the new resource.
+
+    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
+
+1. On the **Basics** tab, enter the values for each setting.
+
+    | Setting  | Value  |
+    |---|---|
+    | **Project Details** |
+    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
+    | Resource Group | Select the existing **Resource Group** <rgn>[sandbox resource group name]</rgn> |
+    | **Instance Details** |
+    | Function App name | *\<your-webapp-name\>* |
+    | Publish | Code |
+    | Runtime stack | PowerShell Core |
+    | Version | 7.0 (or latest version) |
+    | Region | select a location close to you |
+
+1. Select **Next : Hosting**. Enter the values for each setting.
+
+    | Setting  | Value  |
+    |---|---|
+    | **Storage** |
+    | Storage account |  You can change the name if you like. It will default to a variation of the App name. |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless). When using the Consumption Plan type, you're charged for each execution of your function, and resources are automatically allocated based on your app workload.|
+
+
+1. Select **Review + create**, and then select **Create**. After the function app is deployed, in the Azure portal, select **Go to resource**.
+
+## Create a timer-triggered function
+
+Now we're going to create a timer trigger inside our function.
+
+1. In the menu pane for your Function App, select **Functions**, and then select the Add (**+**) button. This action starts the function creation process.
+
+1. In the list of quick start templates, select **Timer trigger**, and then select **Add** at the bottom of the pane. The **TimerTrigger1** pane appears.
+
+## Configure the timer trigger
+
+We have an Azure function app with logic to print a message to the log pane. We're going to set the schedule of the timer to execute every 20 seconds.
+
+1. From the menu pane, select **Integration**. The **Integration** pane appears.
+
+1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+
+1. Enter the following value into the **Schedule** box.
+
+    ```log
+    */20 * * * * *
+    ```
+
+1. Select **Save**.
+
+::: zone-end
 
 ## Test the timer
 
@@ -103,11 +146,15 @@ Now that we've configured the timer, it will invoke the function on the interval
     > [!NOTE]
     > **TimerTrigger1** is a default name. It's automatically selected when you create the trigger.
 
-1. Open the **Logs** panel at the bottom of the screen.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears.
+
+1. Select **Test/Run**. From the right-hand pane, select **Run**. The **Logs** pane appears at the bottom of the page.
 
 1. Observe new messages arrive every 20 seconds in the log window.
 
-1. To stop the function from running, select **Manage** and then switch **Function State** to *Disabled*.
+1. To stop the function from running, select **Stop**.
+
+1. To disable the function, in the left menu pane, select **Overview**, and then select **Disable**.
 
 ::: zone-end
 
@@ -120,10 +167,14 @@ Now that we've configured the timer, it will invoke the function on the interval
     > [!NOTE]
     > **TimerTrigger1** is a default name. It's automatically selected when you create the trigger.
 
-1. Open the **Logs** panel at the bottom of the screen.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears.
 
-1. Observe new messages arrive every 20 seconds in the log window. You may not see any log messages for a few minutes as the function app warms up for the first time.
+1. Select **Test/Run**. From the left-hand pane, select **Run**. The **Logs** pane appears at the bottom of the page.
 
-1. To stop the function from running, select **Manage** and then switch **Function State** to *Disabled*.
+1. Observe new messages arrive every 20 seconds in the log window.
+
+1. To stop the function from running, select **Stop**.
+
+1. To disable the function, in the left menu pane, select **Overview**, and then select **Disable**.
 
 ::: zone-end

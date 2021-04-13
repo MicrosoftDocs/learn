@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-introduction.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: See an overview of what you'll learn in this module.
+  ms.date: 10/12/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

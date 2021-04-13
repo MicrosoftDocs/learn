@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Azure compute resource can be used to deploy to manage a set of identical virtual machines?"
+  - content: "Which Azure compute resource can be deployed to manage a set of identical virtual machines?"
     choices:
     - content: "Virtual machine availability sets"
       isCorrect: false
@@ -33,10 +33,10 @@ quiz:
       explanation: "That's correct. Azure Functions is used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less."
     - content: "Azure App Service"
       isCorrect: false
-      explanation: "That's incorrect. App Service is the blade in Azure where you find Azure Functions."
+      explanation: "That's incorrect. App Service is the pane in Azure where you find Azure Functions."
     - content: "Azure Container Instances"
       isCorrect: false
-      explanation: "That's incorrect. In this case, you are still running a full application that may not be designed for quick responses to events."
+      explanation: "That's incorrect. In this case, you're still running a full application that might not be designed for quick responses to events."
   - content: "Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like MacOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?"
     choices:
     - content: "Azure App Service"
@@ -47,4 +47,4 @@ quiz:
       explanation: "That's correct. Windows Virtual Desktop enables your team members to run Windows in the cloud, with access to the required applications for your company's needs."
     - content: "Azure Container Instances"
       isCorrect: false
-      explanation: "That's incorrect. Azure Container Instances are for hosting containerized apps in the cloud."
+      explanation: "That's incorrect. Azure Container Instances is used for hosting containerized apps in the cloud."

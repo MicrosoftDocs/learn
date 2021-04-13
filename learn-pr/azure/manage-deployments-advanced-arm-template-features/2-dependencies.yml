@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-deployments-advanced-arm-template-features.dependencies
+title: Control deployment order by specifying dependencies
+metadata:
+  description: Sometimes it's important to control what gets deployed when, and in what order. By setting up dependency relationships, you guarantee that resources are deployed in a set order.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/09/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-dependencies.md)]

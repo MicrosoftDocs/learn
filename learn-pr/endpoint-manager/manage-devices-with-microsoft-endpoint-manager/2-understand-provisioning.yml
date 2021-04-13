@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-devices-with-microsoft-endpoint-manager.2-understand-provisioning
+title: Understand provisioning
+metadata:
+  title: Understand provisioning
+  description: Learn about provisioning devices using Microsoft Endpoint Manager.
+  ms.date: 10/23/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-provisioning.md)]

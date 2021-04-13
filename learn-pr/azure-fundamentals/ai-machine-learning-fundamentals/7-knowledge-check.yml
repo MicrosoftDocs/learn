@@ -5,44 +5,44 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You need to predict future behavior based on previous actions. Which product option should you eliminate as a candidate?"
+  - content: "You need to predict future behavior based on previous actions. Which product option should you select as a candidate?"
     choices:
     - content: "Azure Machine Learning"
-      isCorrect: false
+      isCorrect: true
       explanation: "Azure Machine Learning enables you to build models to predict the likelihood of a future result. It should not be eliminated as a candidate."
     - content: "Azure Bot Service"
-      isCorrect: true
+      isCorrect: false
       explanation: "Azure Bot Service will not help with prediction. It should be eliminated as a candidate."
     - content: "Azure Cognitive Services"
       isCorrect: false
       explanation: "The Personalizer service is part of Azure Cognitive Services and allows you to build recommendations to predict what a user might want.  It should not be eliminated as a candidate."
-  - content: "You need to create a human-computer interface using natural language to answer customer questions. Which product option should you eliminate as a candidate?"
+  - content: "You need to create a human-computer interface that uses natural language to answer customer questions. Which product option should you select as a candidate?"
     choices:
     - content: "Azure Machine Learning"
-      isCorrect: true
-      explanation: "While Azure Machine Learning could be used to create a natural language model, it would likely be cost and time prohibitive.  It should be eliminated as a candidate."
+      isCorrect: false
+      explanation: "Although Azure Machine Learning could be used to create a natural language model, it would likely be cost and time prohibitive.  It should be eliminated as a candidate."
     - content: "Azure Cognitive Services"
       isCorrect: false
-      explanation: "Azure Cognitive Services provides natural language services. It should not be eliminated as a candidate."
+      explanation: "Azure Cognitive Services provides natural language services. It should be eliminated as a candidate."
     - content: "Azure Bot Service"
-      isCorrect: false
+      isCorrect: true
       explanation: "Azure Bot Service creates virtual agent solutions that utilize natural language. It should not be eliminated as a candidate."
-  - content: "You need to identify the content of product images to automatically create alt tags for images formatted properly.  Which production option is the best candidate?"
+  - content: "You need to identify the content of product images to automatically create alt tags for images formatted properly.  Which product option is the best candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: false
-      explanation: "Azure Machine Learning could be used to identify the content of product images, however creating a model to do identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
+      explanation: "Azure Machine Learning could be used to identify the content of product images. However, creating a model to identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
     - content: "Azure Cognitive Services"
       isCorrect: true
       explanation: "Azure Cognitive Services includes Vision services that can identify the content of an image.  Azure Cognitive Services is the best candidate."
-    - content: "Azure Bot Services"
+    - content: "Azure Bot Service"
       isCorrect: false
-      explanation: "Azure Bot Services can't identify the content of product images.  Azure Machine Learning is not the best candidate."
+      explanation: "Azure Bot Service can't identify the content of product images.  Azure Bot Service is not the best candidate."

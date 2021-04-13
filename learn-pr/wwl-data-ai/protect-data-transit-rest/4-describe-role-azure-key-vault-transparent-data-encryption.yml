@@ -4,9 +4,9 @@ title: Describe the role of Azure Key Vault in transparent data encryption
 metadata:
   title: Describe the role of Azure Key Vault in transparent data encryption
   description: "Describe the role of Azure Key Vault in transparent data encryption"
-  ms.date: 10/01/2020
+  ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

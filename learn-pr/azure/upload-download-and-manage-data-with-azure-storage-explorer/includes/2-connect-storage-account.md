@@ -31,8 +31,9 @@ The Azure Storage Explorer application runs on the following versions of these p
 
 Azure Storage Explorer can access many different data types from services like these:
 
-- **Azure Blob storage**. Blob storage is used to store unstructured data as a binary large object (blob).
-- **Azure Table storage**. Table storage is used to store NoSQL, semi-structured data.
+- **Azure Blob Storage**. Blob storage is used to store unstructured data as a binary large object (blob).
+- **Azure Table Storage**. Table storage is used to store NoSQL, semi-structured data.
+- **Azure Queue Storage**. Queue storage is used to store messages in a queue, which can then be accessed and processed by applications through HTTP(S) calls.
 - **Azure Files**. Azure Files is a file-sharing service that enables access through the Server Message Block protocol, similar to traditional file servers.
 - **Azure Data Lake Storage**. Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data.
 
@@ -129,4 +130,4 @@ You can use Storage Explorer to access and manage data stored in Azure Cosmos DB
 
 To connect to an Azure Cosmos DB service, you'll need to use a connection string. You get a connection string by accessing the Azure Cosmos DB configuration through the Azure portal.
 
-To connect to a Data Lake service, you'll need the URI associated with the data lake. Presently, Storage Explorer supports only Data Lake Storage Gen1. Data Lake Storage Gen2 is currently in preview, and support will be available through Storage Explorer. Using a URI allows you to access resources that aren't in your subscription. When you have the URI of the resource that you want to access, you connect to it by using the **Data Lake Storage Gen1** option.
+To connect to a Data Lake service, you'll need the URI associated with the data lake. Using a URI allows you to access resources that aren't in your subscription. When you have the URI of the resource that you want to access, you connect to it by using the **Data Lake Storage Gen1** option.

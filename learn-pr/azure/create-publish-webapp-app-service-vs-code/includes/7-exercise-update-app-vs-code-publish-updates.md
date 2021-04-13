@@ -10,19 +10,19 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code if it is not already running. 
-1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder. 
-1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. 
+1. Start Visual Studio Code if it is not already running.
+1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder.
+1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**.
 1. Locate this line of code:
 
     ```JavaScript
-    var numberOfMilliseconds = parseInt(launchTime - currentTime);
+    let numberOfMilliseconds = parseInt(launchTime - currentTime);
     ```
 
 1. On the next line, type this new code:
 
     ```JavaScript
-    var numberOfDays = parseInt(numberOfMilliseconds/(24 * 3600 * 1000));
+    let numberOfDays = parseInt(numberOfMilliseconds/(24 * 3600 * 1000));
     ```
 
 1. Locate this line of code:
@@ -83,9 +83,9 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code if it is not already running. 
+1. Start Visual Studio Code if it is not already running.
 1. If the **countdownExpressApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
-1. In the Visual Studio Code Explorer window, select **app.py**. 
+1. In the Visual Studio Code Explorer window, select **app.py**.
 1. Locate this line of code:
 
     ```python

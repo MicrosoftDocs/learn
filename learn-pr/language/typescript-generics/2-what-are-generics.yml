@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-generics.2-what-are-generics
+title: Introduction to generics
+metadata:
+  title: Introduction to generics
+  description: Learn about when to use generics, the purpose of type variables and identify scenarios for using multiple type variables.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-are-generics.md)]

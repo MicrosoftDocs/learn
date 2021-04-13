@@ -2,7 +2,7 @@ You're done with the tasks for this module. Here you clean up your Azure DevOps 
 
 ## Optional - Delete your project
 
-This modules provided a template that you ran to create a clean environment for the module.
+This module provided a template that you ran to create a clean environment for the module.
 
 Here you delete your Azure DevOps project, including what's in Azure Boards. In future modules, you can run another template that brings up a new project in a state where this module leaves off. Choose this option if you don't need your DevOps project for future reference.
 

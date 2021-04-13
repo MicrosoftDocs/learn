@@ -19,7 +19,7 @@ abstract: |
   * Add patterns to improve predictions
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/manage-your-language-understanding-intelligent-service-luis-apps.svg
 levels:

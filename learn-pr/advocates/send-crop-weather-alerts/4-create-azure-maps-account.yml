@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.send-crop-weather-alerts.4-create-azure-maps-account
-title: Exercise - Create an Azure Maps Account using the CLI
+title: Exercise - Create an Azure Maps account
 metadata:
   title: Exercise - Create an Azure Maps account
-  description: In this unit, you'll use the Azure CLI to create an Azure Maps account and get a key that the web SDK requires to access the account.
+  description: Use the Azure CLI to create an Azure Maps account and get a key to access the account.
   author: berndverst
   ms.author: beverst
-  ms.date: 05/07/2020
+  ms.date: 01/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: True
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 3
 content: |
   [!include[](includes/4-create-azure-maps-account.md)]

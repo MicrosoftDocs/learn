@@ -2,10 +2,10 @@
 uid: learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
 title: Create a subscription governance strategy
 metadata:
-  description: "Learn about the three main aspects to consider when creating and managing subscriptions: billing, access control, and subscription limits."
+  description: "Learn about the three main aspects to consider when you create and manage subscriptions: billing, access control, and subscription limits."
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

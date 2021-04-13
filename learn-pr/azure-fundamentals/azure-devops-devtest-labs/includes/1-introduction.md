@@ -1,19 +1,25 @@
-Modern software development practices are supported by tools encompassing virtually every aspect of the software development life cycle. Microsoft has created a comprehensive set of tools that help organizations implement DevOps practices, build solutions, and save money while developing solutions. In this module we'll learn how to choose the right tools to support those practices.
+Modern software development practices are supported by tools that encompass virtually every aspect of the software development life cycle. Microsoft has created a comprehensive set of tools that help organizations implement DevOps practices, develop solutions, and save money while doing so. In this module, you'll learn how to choose the right tools to support those practices.
 
-Tailwind Traders has experimented with various software development processes and tools, however until now there has been no organizational commitment to shift to a DevOps mindset. Likewise, there's been no planned, coordinated effort to standardize on a set of core tools and processes. Several new initiatives at the company accentuate the need for agile, repeatable, dependable management and deployment of software systems. Tailwind Traders believes that the adoption of DevOps tooling and practices to be critical to their future success.
+Tailwind Traders has experimented with various software development processes and tools. Until now, however, there has been no organizational commitment to shift to a DevOps mindset. Likewise, there has been no planned, coordinated effort to standardize on a set of core tools and processes. Several new initiatives at the company accentuate the need for agile, repeatable, dependable management and deployment of software systems. Tailwind Traders believes that the adoption of DevOps tooling and practices is critical to the company's future success.
 
-In this module, you'll discover the different software development process tools from Microsoft.  You'll explore the criteria experts would use to make the right choice.  And you'll make key distinctions between similar offerings.
+In this module, you'll learn about the various software development process tools that Microsoft offers.  You'll explore the criteria that experts use to make their choices.  
 
-By the end of this module, you'll be able to choose the best software development process tools and services that align to your organization's goals and practices.
+By the end of this module, you'll be able to choose the software development process tools and services that best align with your organization's goals and practices.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Choose the best software development process tools and services for a given business scenario.
+- Choose the software development process tools and services that best address specific business scenarios.
 
 ## Prerequisites
 
 - A development or operations background is valuable but not required.
-- It would be helpful for you to already be familiar with the concept of DevOps, it's larger purpose in the organization, it's goals, outcomes, and so on.
-- Likewise, familiarity with concepts like the Software Development Lifecycle, Source Code Management / Version Control, the different forms of testing, Continuous Integration / Continuous Delivery, Continuous Deployment, Infrastructure as Code, and so on, will help you immediately understand the value of the tools covered in this module.
+- Some familiarity with the concept of DevOps and its larger purpose in the organization, goals, outcomes, and so on.
+- To help with understanding the value of the tools covered in this module, familiarity with such concepts as:
+  - Software development lifecycle
+  - Source-code management and version control
+  - The various forms of testing
+  - Continuous integration and continuous delivery, or CI/CD
+  - Continuous deployment
+  - Infrastructure as code

@@ -1,16 +1,13 @@
-In this module, you discovered how Azure Storage can provide your company with a variety of options for storing your data.
+In this module, you discovered how Azure Storage can provide your company with a variety of options for storing your data. For example, you learned that your first step when using Azure Storage is to create a storage account. After you've done so, Azure provides you with several options for storing your data:
 
-For example, you learned that your first step when using Azure Storage is to create a storage account. Once you have done so, Azure provides you with several options for storing your data:
-
+- Azure Blob Storage
 - Azure Disk Storage
-- Azure Blob/Container Storage
-- Azure File Storage
+- Azure Files Storage
 
-In addition, Azure provides several Storage Tiers that you can use to balance your storage costs with your access needs.
+In addition, Azure provides several access tiers that you can use to balance your storage costs with your business needs.
 
 ## Learn more
 
-- [Azure data storage options](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/?azure-portal=true)
 - [Azure Files documentation](https://docs.microsoft.com/azure/storage/files/?azure-portal=true)
 - [Azure Storage documentation](https://docs.microsoft.com/azure/storage/?azure-portal=true)
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)

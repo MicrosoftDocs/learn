@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics
+metadata:
+  title: Manage and monitor data warehouse activities in Azure Synapse Analytics
+  description: "Manage and monitor data warehouse activities in Azure Synapse Analytics"
+  ms.date: 11/26/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage and monitor data warehouse activities in Azure Synapse Analytics
+summary: Learn how to manage and monitor Azure Synapse Analytics.
+abstract: |
+  In this module, you will:
+  - Scale compute resources in Azure Synapse Analytics
+  - Pause compute in Azure Synapse Analytics
+  - Manage workloads in Azure Synapse Analytics
+  - Use Azure Advisor to review recommendations
+  - Use Dynamic Management Views to identify and troubleshoot query performance
+prerequisites: |
+  - Before taking this module, it is recommended that you complete Data Fundamentals.
+iconUrl: /learn/achievements/manage-monitor-data-warehouse-activities.svg
+levels:
+- beginner
+roles:
+- data-engineer
+products:
+- azure-synapse-analytics
+units:
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.introduction
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.scale-compute-resources
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.pause-compute
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.manage-workloads
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-azure-advisor-to-review-recommendations
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-dynamic-management-views-to-identify-troubleshoot-query-performance
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.knowledge-check
+- learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.summary
+badge:
+  uid: learn.wwl.manage-monitor-data-warehouse-activities.badge

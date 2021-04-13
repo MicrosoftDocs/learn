@@ -2,7 +2,7 @@ In some cases, the code-free transformation at scale may not meet your requireme
 
 ## ADF and Azure Databricks
 
-As an example, the integration of Azure Dataricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
+As an example, the integration of Azure Databricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
 
 Data ingestion and transformation using the collective capabilities of ADF and Azure Databricks essentially involves the following steps:
 
@@ -33,6 +33,10 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 1. Create a Pipeline that uses Databricks Notebook Activity.
 
 1. Trigger a Pipeline Run.
+
+    > [!Note]
+    > The following steps assume there is already an Azure Databricks cluster already provisioned
+
 
 ### Task 1: Generate a Databricks Access Token.
 
@@ -97,7 +101,7 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
     > [!Note]
     > When you click on finish, you are returned to the **Author & Monitor** screen where the xx_dbls has been created, with the other linked services created in the previous exercize.
 
-### Task 5: Create a pipeline that uses Databricks Notebook Activity.
+### Task 4: Create a pipeline that uses Databricks Notebook Activity.
 
 1. On the left hand side of the screen, under Factory Resources, click on the **+** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
 
@@ -125,13 +129,13 @@ No errors were found." Click on the >> to close the window.
     > [!Note]
     > A message will appear to state that the deployment is successful.
 
-### Task 6: Trigger a Pipeline Run
+### Task 5: Trigger a Pipeline Run
 
 1. In the **Notebook1**, click on **Add trigger**, and click on **Trigger Now** next to the Debug  button.
 
 1. The **Pipeline Run** dialog box asks for the name parameter. Use **/path/filename** as the parameter here. Click Finish. A red circle appear above the Notebook1 activity in the canvas.
 
-### Task 7: Monitor the Pipeline
+### Task 6: Monitor the Pipeline
 
 1. On the left of the screen, click on the **Monitor** tab. Confirm that you see a pipeline run. It takes approximately 5-8 minutes to create a Databricks job cluster, where the notebook is executed.
 
@@ -139,7 +143,7 @@ No errors were found." Click on the >> to close the window.
 
 1. To see activity runs associated with the pipeline run, select **View Activity Runs** in the **Actions** column.
 
-### Task 8: Verify the output
+### Task 7: Verify the output
 
 1. In Microsoft Edge, click on the tab **mynotebook - Databricks** 
 

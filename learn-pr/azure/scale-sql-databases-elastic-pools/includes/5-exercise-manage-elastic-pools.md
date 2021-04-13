@@ -14,18 +14,10 @@ In this exercise, we'll manage the SQL elastic pool and add an additional databa
 
 1. Observe the **Cost summary** on the right, which shows the estimated monthly cost of your elastic pool.
 
-## Adjust per database settings
-
-1. Click on the **Per database settings* tab.
-
-1. Change the max and min eDTUs and click **Save**.
-
-1. Observe the **Cost summary** on the right, which updates the estimated monthly cost of your elastic pool based on your new settings.
-
 ## Create a new database in the pool
 
 1. Go to the  **Overview** section.
 
 1. Click **+ Create database**.
 
-1. Give your new database a meaningful name such as **FitnessLondonDB** and press **OK**.
+1. Give your new database a meaningful name such as **FitnessLondonDB** and press **Review + Create**. 

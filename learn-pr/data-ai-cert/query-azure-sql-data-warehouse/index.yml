@@ -5,7 +5,7 @@ metadata:
   description: Learn how to issue simple queries against Azure Synapse Analytics and how to visualize the data in both Excel and Power BI
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query data in Azure Synapse Analytics
@@ -17,6 +17,7 @@ abstract: |
   - Use the queries in different client applications, such as SQL Server Management Studio and Power BI.
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/query-azure-sql-data-warehouse-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

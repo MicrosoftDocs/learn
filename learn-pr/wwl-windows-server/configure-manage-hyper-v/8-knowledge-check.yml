@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-hyper-v.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the correct term for the virtualization layer that's inserted into the boot process of the host machine that controls access to the physical hardware?"
+    choices:
+    - content: "Hardware virtualization layer"
+      isCorrect: false
+      explanation: "That's incorrect. Hardware virtualization layer isn't the correct term."
+    - content: "Hypervisor"
+      isCorrect: true
+      explanation: "That's correct. A software layer known as a *hypervisor* is inserted into the boot process. The hypervisor is responsible for controlling access to the physical hardware."
+    - content: "Unified Extensible Firmware Interface (UEFI) secure boot"
+      isCorrect: false
+      explanation: "That's incorrect. UEFI secure boot isn't the correct term."
+  - content: "Which browser-based Hyper-V management method can be used to manage local or remote VMs, while providing summary and status information on events such as CPU and memory utilization?"
+    choices:
+    - content: "Hyper-V Manager"
+      isCorrect: false
+      explanation: "That's incorrect. Hyper-V Manager can be used to manage local or remote VMs, and it provides summary information such as CPU and memory usage, but Hyper-V Manager isn't browser-based."
+    - content: "PowerShell Direct"
+      isCorrect: false
+      explanation: "That's incorrect. PowerShell Direct can be used to manage local or remote VMs, and Windows PowerShell commands can be run to get detailed information from the VM. However, PowerShell Direct doesn't provide summary information such CPU and memory usage, and it isn't browser-based."
+    - content: "WAC"
+      isCorrect: true
+      explanation: "That's correct. WAC can be used to manage local or remote VMs. It also provides summary and status information on events such as CPU and memory utilization."
+  - content: "Which Windows PowerShell cmdlet can be used to enable nested virtualization?"
+    choices:
+    - content: "`Get-VM`"
+      isCorrect: false
+      explanation: "That's incorrect. The `Get-VM` cmdlet won't enable nested virtualization. This cmdlet can be used to get information about VMs running on the host."
+    - content: "`Enter-PSSession`"
+      isCorrect: false
+      explanation: "That's incorrect. The `Enter-PSSession` cmdlet won't enable nested virtualization. This cmdlet can be used to connect to a VM. After connecting to the VM, you can issue PowerShell cmdlets directly on the VM."
+    - content: "`Set-VMProcessor`"
+      isCorrect: true
+      explanation: "That's correct. To enable nested virtualization, this cmdlet can be run in a format such as: `Set-VMProcessor -VMName \\<VMName\\> -ExposeVirtualizationExtensions $true`. This command should be run from the physical Hyper-V host machine while the VM is in the **off** state."

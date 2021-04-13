@@ -9,12 +9,18 @@ Here are the security recommendations you should follow to set Virtual Machine (
 Azure Security Center enables you to see which VMs require the VM Agent and will recommend that you enable the VM Agent on those VMs. The VM Agent is installed by default for VMs that are deployed from the Azure Marketplace. Data is needed to assess the VM security state, provide security recommendations, and alert on host-based threats.
 
 1. Sign in to the Azure portal.
-1. Select **Security Center**, then select **Pricing & settings**.
+
+1. Select **Security Center**, and then select **Pricing & settings**.
+
 1. Select the subscription.
-1. Click on **Data Collection**.
+
+1. Select **Data Collection**.
+
 1. Slide the **Auto Provisioning** slider to **On**.
+
 1. Select a Workspace to use.
-1. Click **Save**.
+
+1. Select **Save**.
 
 ![Screenshot ASC Auto provisioning pane](../media/8-auto.png)
 
@@ -25,10 +31,15 @@ Azure Disk Encryption helps protect and safeguard your data to meet your organiz
 If you use Azure Security Center (recommended), you're alerted if you have VMs that aren't encrypted.
 
 1. Sign in to the Azure portal.
+
 1. Go to the **Virtual machines** pane.
+
 1. For each VM, go to **Settings**.
+
 1. Select **Disks**.
+
 1. Ensure that the **OS disk** has encryption set to **Enabled**.
+
 1. Ensure that each disk under **Data disks** has encryption set to **Enabled**.
 
 ![Screenshot VM disk encryption pane](../media/8-asc-disk-encryption.png)
@@ -38,9 +49,13 @@ If you use Azure Security Center (recommended), you're alerted if you have VMs t
 Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. Azure VM extensions can be run with the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new VM deployment, or run against any existing system.
 
 1. Sign in to the Azure portal.
+
 1. Go to the **Virtual machines** pane.
+
 1. For each VM, go to **Settings**.
+
 1. Select **Extensions**.
+
 1. Ensure that the listed extensions are approved for use.
 
 ![Screenshot of VM Extensions pane](../media/8-extensions.png)
@@ -50,8 +65,11 @@ Azure virtual machine (VM) extensions are small applications that provide post-d
 Azure Security Center monitors daily Windows and Linux virtual machines (VMs) and computers for missing operating system updates. Security Center retrieves a list of available security and critical updates from Windows Update or Windows Server Update Services (WSUS), depending on which service is configured on a Windows computer. Security Center also checks for the latest updates in Linux systems. If your VM or computer is missing a system update, Security Center will recommend that you apply system updates.
 
 1. Sign in to the Azure portal.
-1. Select **Security Center**. Security Center - Overview opens.
+
+1. Select **Security Center**. The Security Center - Overview opens.
+
 1. Go to **Security Center - Recommendations**.
+
 1. Ensure that there are no recommendations for **Apply system updates**.
 
 ![Screenshot of ASC Recommendations pane](../media/8-asc-recommend.png)

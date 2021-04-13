@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-database-fundamentals.azure-postgresql-database
-title: Explore Azure database for PostgreSQL
+title: Explore Azure Database for PostgreSQL
 metadata:
-  title: Explore Azure database for PostgreSQL
-  description: In this unit, you'll learn the fundamentals about Azure database for PostgreSQL.
+  title: Explore Azure Database for PostgreSQL
+  description: In this unit, you'll learn the fundamentals about Azure Database for PostgreSQL.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

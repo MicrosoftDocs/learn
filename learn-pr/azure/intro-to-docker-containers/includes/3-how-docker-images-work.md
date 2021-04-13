@@ -181,7 +181,7 @@ Here is another example. Suppose you want to use the .NET Core samples Docker im
 
 The Docker software automatically configures a local image registry on your machine. You can view the images in this registry with the `docker images` command.
 
-```code
+```console
 docker images
 ```
 

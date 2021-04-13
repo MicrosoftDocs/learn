@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
@@ -22,10 +22,10 @@ quiz:
       explanation: "Costs can add up. It's important to understand the full cost of running your solution, whether it's in the datacenter or in the cloud."
     - content: "Assume that running in the cloud costs about the same as running in the datacenter."
       isCorrect: false
-      explanation: "Running on Azure can actually _save_ you money. But only a thorough cost assessment can tell you for sure."
-    - content: "Run the Total Cost of Ownership (TCO) Calculator."
+      explanation: "Running on Azure can actually _save_ money. But only a thorough cost assessment can tell you with certainty."
+    - content: "Run the Total Cost of Ownership Calculator."
       isCorrect: true
-      explanation: "Running the TCO calculator is a great first step because it can provide an accurate comparison of running workloads in the datacenter versus on Azure, certified by an independent research company."
+      explanation: "Running the Total Cost of Ownership Calculator is a great first step because it can provide an accurate comparison of running workloads in the datacenter versus on Azure, certified by an independent research company."
   - content: "What's the best way to ensure that the development team doesn't provision too many virtual machines at the same time?"
     choices:
     - content: "Do nothing. Let the development team use what they need."
@@ -41,14 +41,14 @@ quiz:
     choices:
     - content: "Delete the virtual machines before the weekend and create a new set the following week."
       isCorrect: false
-      explanation: "Although you can delete your virtual machines when they're not in use, you also lose any associated hard disks. It can take some time to recreate the environment at the start of each week."
+      explanation: "Although you can delete your virtual machines when they're not in use, you also lose any associated hard disks. It can take some time to re-create the environment at the start of each week."
     - content: "Deallocate virtual machines when they're not in use."
       isCorrect: true
       explanation: "When you deallocate virtual machines, the associated hard disks and data are still kept in Azure. But you don't pay for CPU or network consumption, which can help save costs."
     - content: "Just let everything run. Azure bills you only for the CPU time that you use."
       isCorrect: false
-      explanation: "Usage meters track not only CPU time, but also network traffic and the number of disk operations."
-  - content: "Resources in the _Dev_ and _Test_ environments are each paid for by different departments. What's the best way to categorize costs by department?"
+      explanation: "Usage meters track not only CPU time but also network traffic and the number of disk operations."
+  - content: "Resources in the Dev and Test environments are each paid for by different departments. What's the best way to categorize costs by department?"
     choices:
     - content: "Apply a tag to each virtual machine that identifies the appropriate billing department."
       isCorrect: true

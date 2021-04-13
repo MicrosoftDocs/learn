@@ -3,10 +3,10 @@ uid: learn.azure.intro-to-azure-fundamentals.case-study-introduction
 title: Case study introduction
 metadata:
   title: Case study introduction
-  description: In this unit, you'll learn about the case study that you will use for the remaining modules.
+  description: In this unit, you'll learn about the case study that you'll use for the remaining modules.
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

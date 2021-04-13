@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.utilize-threat-intelligence-azure-sentinel.manage-your-threat-indicators
+title: Manage your threat indicators
+metadata:
+  title: Manage your threat indicators
+  description: "Manage your threat indicators"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-manage-threat-indicators.md)]

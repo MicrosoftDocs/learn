@@ -2,7 +2,7 @@
 uid: learn.azure.nodejs-files
 metadata:
   title: Work with files and directories in a Node.js app
-  description: Build an app that manipulates files and directories with Node.js.
+  description: Build an app that manipulates files and directories with Node.js and JavaScript.
   ms.date: 04/20/2020
   author: burkeholland
   ms.author: buhollan

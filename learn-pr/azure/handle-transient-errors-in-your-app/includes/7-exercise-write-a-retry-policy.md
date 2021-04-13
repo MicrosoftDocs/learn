@@ -47,7 +47,7 @@ For other unknown errors, quit the app.
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Open File ...**. Select  **Program.cs** in the file chooser dialog, and press Enter.
 
-1. Update the `connectionString` variable in this class to the value of the connection string of your Azure Cosmos DB database we found earlier. 
+1. Update the `connectionString` variable in this class to the value of the connection string of your Azure Cosmos DB database we found earlier.
 
 1. Scroll down to the `getAllChats()` method.
 
@@ -334,8 +334,8 @@ For other unknown errors, quit the app.
 
     ```javascript
     // add the retry policy
-    var retry = require('./retryPolicy.js');
-    var retries = new retry();
+    let retry = require('./retryPolicy.js');
+    let retries = new retry();
     ```
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
@@ -382,7 +382,7 @@ If the firewall is still switched on for the Azure Cosmos DB, the chat app can't
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. Run app and select **R** to refresh all the messages. The app will catch a `System.TimeoutException` and retry the connection to the database once again. 
+1. Run app and select **R** to refresh all the messages. The app will catch a `System.TimeoutException` and retry the connection to the database once again.
 
 ::: zone pivot="csharp"
 Based on the `number-of-retries` setting in the **appsettings.json** file of our project, the code will retry connecting up to five times.

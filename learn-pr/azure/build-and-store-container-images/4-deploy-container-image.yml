@@ -8,7 +8,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Deploy images from Azure Container Registry
 durationInMinutes: 20
 content: |

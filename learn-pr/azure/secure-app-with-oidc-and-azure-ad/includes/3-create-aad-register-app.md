@@ -51,7 +51,7 @@ services.Configure<OpenIdConnectOptions>(AzureADDefaults.OpenIdScheme, options =
     });
 ```
 
-You can use the authentication middleware to sign in users from a one or more Azure AD tenants. The middleware is initialized in the Startup.Auth.cs file, by passing it the client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
+You can use the authentication middleware to sign in users from one or more Azure AD tenants. The middleware is initialized in the Startup.Auth.cs file, by passing it the client ID of the application and the URL of the Azure AD tenant where the application is registered. The middleware then takes care of:
 
 - Downloading the Azure AD metadata.
 - Processing OpenID Connect authentication responses.

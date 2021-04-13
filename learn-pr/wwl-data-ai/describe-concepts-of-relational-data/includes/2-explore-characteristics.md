@@ -18,7 +18,7 @@ The diagram also shows the relationships between the tables. The lines connectin
 The columns marked *FK* are *Foreign Key* columns. They reference, or link to, the primary key of another table, and are used to maintain the relationships between tables. A foreign key also helps to identify and prevent anomalies, such as orders for customers that don't exist in the Customers table. In the model below, the Customer ID and Product ID columns in the Orders table link to the customer that placed the order and the product that was ordered:
 
 > [!div class="mx-imgBorder"]
-> ![Example of a relational model, showing customers, orders, and products](../media/2-relations.png)
+> ![Example of relational model, showing customers, orders, and products](../media/2-relations.png)
 
 The main characteristics of a relational database are:
 
@@ -70,4 +70,8 @@ For example, if you have a collection of music, video, or other media files, att
 
 Relational databases are commonly used in ecommerce systems, but one of the major use cases for using relational databases is Online Transaction Processing (OLTP). OLTP applications are focused on transaction-oriented tasks that process a very large number of transactions per minute. Relational databases are well suited for OLTP applications because they naturally support insert, update, and delete operations. A relational database can often be tuned to make these operations fast. Also, the nature of SQL makes it easy for users to perform ad-hoc queries over data.
 
-Examples of OLTP applications that use relational databases are banking solutions, online retail applications, flight reservation systems, and many online purchasing applications.
+Examples of OLTP applications that use relational databases are:
+- Banking solutions
+- Online retail applications
+- Flight reservation systems
+- Many online purchasing applications.

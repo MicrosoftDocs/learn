@@ -33,7 +33,7 @@ quiz:
       explanation: "No, Azure AD join doesn't support PIN or pattern."
     - content: "An Azure AD work account with password or Windows Hello, and multifactor authentication"
       isCorrect: true
-      explanation: "Azure AD join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Azure Multi-Factor Authentication is also supported."
+      explanation: "Azure AD join supports Windows 10 or Windows Server 2019 devices where users sign in by using their work account with a password or Windows Hello. Azure AD Multi-Factor Authentication is also supported."
     - content: "A Microsoft account with password, Windows Hello, and multifactor authentication"
       isCorrect: false
       explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD work account."

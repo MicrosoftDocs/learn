@@ -3,10 +3,10 @@ uid: learn.azure.iot-fundamentals.summary
 title: Summary
 metadata:
   title: Summary
-  description: Review what you learned about IoT services available on Azure.
+  description: Review what you've learned about the IoT services that are available on Azure.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -3,7 +3,7 @@ uid: learn.wwl.explore-performance-based-design
 metadata:
   title: Explore performance-based design
   description: "Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore relevant Dynamic Management Objects."
-  ms.date: 09/11/2020
+  ms.date: 10/15/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial

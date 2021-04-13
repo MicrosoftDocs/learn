@@ -1,19 +1,19 @@
-Serverless computing is a term used to describe an execution environment that is set up and managed for you.  You merely specify what you want to happen by writing code or connecting and configuring components in a visual editor, and specify the action that triggers your functionality, like a timer or an HTTP request.  Best of all, you never have to worry about an outage, your code can scale instantly to meet demand, and you only pay based on the actual usage of your code.
+*Serverless computing* is a term used to describe an execution environment that's set up and managed for you.  You merely specify what you want to happen by writing code or connecting and configuring components in a visual editor, and then specify the actions that trigger your functionality, such as a timer or an HTTP request.  Best of all, you never have to worry about an outage, your code can scale instantly to meet demand, and you pay based only on the actual usage of your code.
 
-Tailwind Traders, a traditional brick-and-mortar retailer who has found success selling online.  They see several opportunities to improve their ecommerce website.  For example, they want to provide more accurate real-time inventory information online for those customers who want to visit their local store to purchase an item.  They also want to respond more proactively to customers who had a negative experience with a new customer retention program.  They suspect that serverless computing can help them, but they need help understanding which Azure solution is right for a given business scenario.
+Tailwind Traders, a traditional brick-and-mortar retailer, has found success selling online.  The company sees several opportunities to improve its e-commerce website.  For example, it wants to provide more accurate real-time inventory information online to customers who want to visit their local store to purchase an item.  The company also wants to respond more proactively to customers who've had a negative experience by providing a new customer-retention program. 
 
-In this module, you will learn about two serverless computing solutions on Azure; Azure Functions and Azure Logic Apps.  You'll learn what they are, how they're different, and when you should choose one over the other.
+Tailwind Traders suspects that serverless computing can help it provide these services, but it needs help to understand which Azure solutions are right for its business scenarios.
 
-By the end of this module, you will be able to choose the right serverless computing service from Azure for a specific business scenario.
+In this module, you'll learn about two serverless computing solutions on Azure: Azure Functions and Azure Logic Apps.  You'll learn what they are, how they differ, and when you should choose one over the other.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Choose the right serverless computing technology for your business scenario.
+- Choose the serverless computing technology that best addresses your business scenario.
 
 ## Prerequisites
 
-- You should understand the idea of orchestration and workflows.
-- You should understand what an API, or Application Programming Interface is.
-- You should be familiar with other Microsoft products at a high level, like Dynamics 365 and Office 365.
+- An understanding of the concept of orchestration and workflows
+- An understanding of the concept of application programming interface (API)
+- High-level familiarity with relevant Microsoft products such as Dynamics 365 and Office 365

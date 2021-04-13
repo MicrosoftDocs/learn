@@ -7,7 +7,7 @@ In this module, you'll learn how to use these database services to store and ret
 > [!NOTE]
 > This module focuses on using Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL. If you are using Azure Database for MariaDB, the dialect of SQL is very similar to that used by MySQL.
 
-## Learning objectives
+## Learning objectives      
 
 In this module, you will:
 

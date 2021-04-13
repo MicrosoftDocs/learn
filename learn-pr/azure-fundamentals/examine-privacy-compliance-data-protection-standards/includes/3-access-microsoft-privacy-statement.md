@@ -1,8 +1,11 @@
-In this part, you learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum explain what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+In this part, you learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum explain the personal data Microsoft collects, how Microsoft uses it, and for what purposes.
 
 For Tailwind Traders, understanding Microsoft's commitment to privacy helps ensure that their customer and application data will be protected.
 
-Let's begin with a brief look at the Microsoft Privacy Statement.
+Watch the following video to see an overview on how Microsoft runs on trust.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAaTE]
+
+Let's continue with a brief look at the Microsoft Privacy Statement and where to find it.
 
 ## What's in the Microsoft Privacy Statement?
 
@@ -10,7 +13,7 @@ The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement
 
 The privacy statement covers all of Microsoft's services, websites, apps, software, servers, and devices. This list ranges from enterprise and server products to devices that you use in your home to software that students use at school.
 
-Microsoft's privacy statement also provides additional information that's relevant to specific products such as Windows and Xbox.
+Microsoft's privacy statement also provides information that's relevant to specific products such as Windows and Xbox.
 
 ## What's in the Online Services Terms?
 
@@ -28,11 +31,11 @@ The Data Protection Addendum (DPA) further defines the data processing and secur
 To access the DPA:
 
 1. Go to the [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?azure-portal=true).
-1. In the search bar, enter *DPA*.
+1. In the search bar, enter **DPA**.
 1. From the search results, locate the link to the DPA in your preferred language.
 
-    Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA:
+    Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA.
 
-    :::image type="content" source="../media/3-dpa-english.png" alt-text="A screenshot of the Licensing Terms and Documentation page, showing how to download the English version of the Data Protection Addendum.":::
+    :::image type="content" source="../media/3-dpa-english.png" alt-text="A screenshot of the Licensing Terms and Documentation page that shows how to download the English version of the Data Protection Addendum.":::
 
 Transparency is important when it comes to how a cloud provider communicates its privacy policies and how it treats your data. The Microsoft Privacy Statement, the OST, and the DPA detail Microsoft's commitment to protecting data and privacy in the cloud.

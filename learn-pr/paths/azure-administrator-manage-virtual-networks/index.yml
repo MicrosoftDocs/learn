@@ -13,7 +13,12 @@ title: Configure and manage virtual networks for Azure administrators
 summary: |
   Learn how to configure and manage Azure network capabilities like connectivity services, application protection, application delivery, and network monitoring services. 
 prerequisites: |
-  - [Azure fundamentals](../azure-fundamentals/index.yml)
+  - [Azure Fundamentals Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+  - [Azure Fundamentals Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+  - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](/learn/paths/az-900-describe-core-solutions-management-tools-azure/)
+  - [Azure Fundamentals Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+  - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
+  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
   - [Prerequisites for Azure administrators](../azure-administrator-prerequisites/index.yml)
 iconUrl: /learn/achievements/azure-administrator-manage-virtual-networks.svg
 levels:
@@ -31,18 +36,20 @@ products:
 - azure-load-balancer
 - azure-cdn
 - azure-traffic-manager
+- azure-bastion
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure
-- learn.azure.host-domain-azure-dns
 - learn.integrate-vnets-with-vnet-peering
+- learn.secure-and-isolate-with-nsg-and-service-endpoints
+- learn.connect-vm-with-azure-bastion
+- learn.azure.host-domain-azure-dns
 - learn.control-network-traffic-flow-with-routes
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute
-- learn.secure-and-isolate-with-nsg-and-service-endpoints
-- learn.load-balance-web-traffic-with-application-gateway
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - troubleshoot-inbound-network-connectivity-azure-load-balancer
+- learn.load-balance-web-traffic-with-application-gateway
 - learn.troubleshoot-azure-network-infrastructure
 - learn.create-content-delivery-network-azure-cdn-blob-services
 - learn.distribute-load-with-traffic-manager

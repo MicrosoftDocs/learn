@@ -1,22 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-fundamentals
 metadata:
-  description: This module introduces you to the basics of Azure.
+  title: Introduction to Azure fundamentals (AZ-900)
+  description: This module introduces you to the basics of Azure. Prepare for AZ-900. 
   ms.date: 09/14/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Azure Fundamentals
-summary: This module introduces you to the basics of cloud computing and Microsoft Azure, and how to get started with Azure's subscriptions and accounts.
+title: Introduction to Azure fundamentals
+summary: This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
 abstract: | 
-  After completing this module, you'll be able to:
-  - Describe the basic concepts of cloud computing
-  - Determine whether Azure is the right solution for your business needs
-  - Differentiate between the different methods of creating an Azure subscription
+  After you complete this module, you'll be able to:
+  - Describe the basic concepts of cloud computing.
+  - Determine whether Azure is the right solution for your business needs.
+  - Differentiate between the different methods of creating an Azure subscription.
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
-  - You should be familiar with cloud computing is helpful, but isn't necessary
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /learn/achievements/intro-to-azure-fundamentals.svg
 levels:
 - beginner

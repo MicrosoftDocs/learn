@@ -42,9 +42,9 @@ Azure Service Bus can exchange messages in three different ways: queues, topics,
 
 A **queue** is a simple temporary storage location for messages. A sending component adds a message to the queue. A destination component picks up the message at the front of the queue. Under ordinary circumstances, each message is received by only one receiver.
 
-![An illustration showing a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one-by-one from the queue.](../media/2-service-bus-queue.png)
+:::image type="content" source="../media/2-service-bus-queue.png" alt-text="An illustration showing a sample message queue with one sender sending the messages to the queue and one receiver retrieving them one-by-one from the queue.":::
 
-Queues decouple the source and destination components to insulate destination components from high demand. 
+Queues decouple the source and destination components to insulate destination components from high demand.
 
 During peak times, messages may come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected and the queue will grow. Destination components will remove messages from the queue as they are able to handle them. When demand drops, destination components can catch up and the queue shortens.
 
@@ -56,7 +56,7 @@ A **topic** is similar to a queue but can have multiple subscriptions. This mean
 
 Topics are not supported in the Basic pricing tier.
 
-![An illustration showing one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscription are used by three receivers to retrieve the relevant messages.](../media/2-service-bus-topic.png)
+:::image type="content" source="../media/2-service-bus-topic.png" alt-text="An illustration showing one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscription are used by three receivers to retrieve the relevant messages.":::
 
 ### What is a relay?
 
@@ -72,7 +72,7 @@ There are two Azure features that include message queues: Service Bus and Azure 
 Key advantages of Service Bus queues include:
 
 * Supports larger messages sizes of 256 KB (standard tier) or 1MB (premium tier) per message versus 64 KB
-* Supports both at-least-once and at-most-once delivery - choose between a very small chance that a message is lost or a very small chance it is handled twice
+* Supports both at-most-once and at-least-once delivery - choose between a very small chance that a message is lost or a very small chance it is handled twice
 * Guarantees **first-in-first-out (FIFO)** order - messages are handled in the same order they are added (although FIFO is the normal operation of a queue, it is not guaranteed for every message)
 * Can group multiple messages into a transaction - if one message in the transaction fails to be delivered, all messages in the transaction will not be delivered
 * Supports role-based security

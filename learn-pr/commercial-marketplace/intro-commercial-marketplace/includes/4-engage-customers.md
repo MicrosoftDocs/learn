@@ -1,16 +1,16 @@
-You’ve done a lot of research, and now you have a better understanding of Microsoft’s commercial marketplace and the kinds of solutions that are offered to customers. You think that your company’s innovative applications are a great fit for either Azure Marketplace or Microsoft AppSource. Additionally, you believe that the millions of monthly active Microsoft users represent a substantial new sales opportunity for your company, which is exactly what your executive team was looking for.
+You’ve done a lot of research, and now you have a better understanding of the Microsoft commercial marketplace and the kinds of solutions that are offered to customers. You think that your company’s innovative applications are a great fit for either Azure Marketplace or Microsoft AppSource. Additionally, you believe that the millions of monthly active Microsoft users represent a substantial new sales opportunity for your company, which is exactly what your executive team was looking for.
 
 Now that you know how customers can find your products in Microsoft AppSource and Azure Marketplace, you turn your attention to learning about the different ways that you can engage with customers once they discover your products.
 
 ## Engage your customers
 
-There are several ways that you can engage with your customers through Microsoft’s commercial marketplace. Once your offer is published in Microsoft AppSource or Azure Marketplace, you have the option to simply list your solution in the storefront, offer a free trial, or enable easy customer purchases and deployments by making your offer transactable through Microsoft’s commerce system. These different ways of listing your solutions are referred to as commercial marketplace “offer types.”
+There are several ways that you can engage with your customers through the commercial marketplace. Once your offer is published in Microsoft AppSource or Azure Marketplace, you have the option to simply list your solution in the online store, offer a free trial, or enable easy customer purchases and deployments by making your offer transactable through Microsoft’s commerce system.
 
-No matter how you choose to publish to Microsoft’s commercial marketplace, you will be able to provide your product’s marketing materials and other content, like videos, to help customers discover your solution.
+No matter how you choose to publish to the commercial marketplace, you'll be able to provide your product’s marketing materials and other content, like videos, to help customers discover your solution.
 
 When you choose to fully invest in your commercial marketplace engagement by making your offers transactable, you’ll be able to take advantage of a flexible set of billing, packaging, and deployment options to fit you and your customers’ specific needs.
 
-By default, your Microsoft AppSource and Azure Marketplace solutions are available to all customers, but you can also extend custom offers to individual customers privately by using Microsoft’s private offer capabilities.
+By default, your Microsoft AppSource and Azure Marketplace solutions are available to all customers, but you can also extend custom offers to individual customers privately by using private offer capabilities.
 
 Regardless of the offer type you choose to publish, Microsoft will send you leads when potential customers interact with your commercial marketplace listing. When customers consent to share their information after clicking the buttons outlined below, leads are routed to your Customer Relationship Management (CRM) system.
 
@@ -18,9 +18,9 @@ Regardless of the offer type you choose to publish, Microsoft will send you lead
 
 If you want more information about leads, read the documentation on [customer leads from your marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
-## Offer types
+## Listing options
 
-Offer types are used to define the ease at which a customer can find, try, buy, and deploy your solution online. There are four primary offer types, which are explained in detail below.
+Listing options are used to define the ease at which a customer can find, try, buy, and deploy your solution online. There are four primary options, which are explained in detail below.
 
 ### Listing (Contact Me)
 
@@ -30,7 +30,7 @@ Customers are encouraged to request outreach from your team through the “Conta
 
 ![Contact me call to action button from marketplace](..\media\11-contact-me-example.png)
 
-### Free Trial
+### Free trial
 
 A free trial of your solution provides an opportunity for enhanced engagement with your potential customers. When you offer a free trial in the commercial marketplace, you can add all the information associated with a “contact me” offer to help customers evaluate your solution.
 
@@ -59,4 +59,4 @@ When customers click the “Get It Now ” button on your product’s landing pa
 
 Transact offers are billed against an existing Microsoft account or a credit card transaction. For offers that require the use of Azure infrastructure in a customer’s Azure account, the associated infrastructure/software costs appear on the customer’s consolidated Microsoft invoice. This simplified acquisition process is a significant benefit for customers, as they don’t need to manage a separate invoice from your company.
 
-For more information on offer types, please read our [documentation on determining your listing type](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type).
+For more information on listing options, you can read our [documentation on listing options](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type#choose-a-listing-option).

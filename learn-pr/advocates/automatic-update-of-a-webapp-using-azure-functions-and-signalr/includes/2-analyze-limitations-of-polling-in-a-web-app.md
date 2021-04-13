@@ -145,6 +145,10 @@ In the *local.settings.json* file, the `Host` section includes the following set
 
 This configuration allows a web application running at *localhost:8080* to make requests to the function app running at *localhost:7071*. The property `CORSCredentials` tells function app to accept credential cookies from the request.
 
+CORS is an HTTP feature that enables a web application running under one domain to access resources in another domain. Web browsers implement a security restriction known as same-origin policy that prevents a web page from calling APIs in a different domain; CORS provides a secure way to allow one domain (the origin domain) to call APIs in another domain. 
+
+You can set CORS rules individually for each of the Azure Storage services, by calling Set Blob Service Properties, Set File Service Properties, Set Queue Service Properties, and Set Table Service Properties. Once you set the CORS rules for the service, then a properly authorized request made against the service from a different domain will be evaluated to determine whether it is allowed according to the rules you have specified.
+
 ## Analysis of current solution
 
 Let's think about some of the drawbacks of this timer-based polling approach.

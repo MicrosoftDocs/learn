@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-devops-devtest-labs.identify-product-options
-title: Identify the product options
+title: Understand your product options
 metadata:
   title: Identify the product options
-  description: Examine each software development process product or service available from Microsoft Azure.
+  description: Examine the three primary software-development process products offered by Microsoft Azure.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

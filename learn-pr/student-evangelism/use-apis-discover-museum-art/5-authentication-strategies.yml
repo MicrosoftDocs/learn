@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.use-apis-discover-museum-art.5-authentication-strategies
+metadata:
+  title: Authentication strategies
+  description: Authentication strategies.
+  ms.date: 12/08/2020
+  author: jlooper
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authentication strategies
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-authentication-strategies.md)]

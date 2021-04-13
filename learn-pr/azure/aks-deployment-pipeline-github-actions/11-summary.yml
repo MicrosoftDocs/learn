@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deployment-pipeline-github-actions.11-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 10/08/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: github
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-summary.md)]

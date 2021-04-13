@@ -52,7 +52,7 @@ There are few recommendations for best practices for SQL Server on Azure VMs and
 
 ## Azure Virtual Machine resource provider
 
-One way to reduce the complexity of building storage for your SQL Server on an Azure Virtual Machine is to use the SQL Server templates in the Azure Marketplace, which allow you to configure your storage as part of your deployment as shown below. You can configure the IOPs as need and the template will perform the work of creating your storage spaces pools within Windows.
+One way to reduce the complexity of building storage for your SQL Server on an Azure Virtual Machine is to use the SQL Server templates in the Azure Marketplace, which allow you to configure your storage as part of your deployment as shown below. You can configure the IOPs as needed and the template will perform the work of creating your storage spaces pools within Windows.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-23.png" alt-text="SQL Server VM Disk Configuration":::
 

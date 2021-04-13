@@ -175,7 +175,7 @@ With your environment setup, you are now ready to begin the coding exercise.
 
    ```python
    def authenticateClient():
-       credentials = CognitiveServicesCredentials(key)
+       credentials = CognitiveServicesCredentials(subscription_key)
        text_analytics_client = TextAnalyticsClient(
            endpoint=endpoint, credentials=credentials)
     return text_analytics_client

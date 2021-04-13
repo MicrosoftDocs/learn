@@ -25,18 +25,6 @@ To build the NVA, deploy an Ubuntu LTS instance.
         --admin-password <password>
     ```
 
-1. Run the following commands to retrieve the public IP address of the appliance virtual machine. Save the address to the variable named `NVAIP`.
-
-    ```azurecli
-    NVAIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name nva \
-        --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
-        --output tsv)"
-
-    echo $NVAIP
-    ```
-
 ## Enable IP forwarding for the Azure network interface
 
 In the next steps, IP forwarding for the **nva** network appliance is enabled. When traffic flows to the NVA but is meant for another target, the NVA will route that traffic to its correct destination.

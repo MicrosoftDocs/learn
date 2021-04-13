@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.utilize-threat-intelligence-azure-sentinel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2021
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In Threat Intelligence, indicators are considered as which of the following?"
+    choices:
+    - content: "Strategic"
+      isCorrect: false
+      explanation: "Incorrect.  Indicators are considered Tactical Threat Intelligence."
+    - content: "Operational"
+      isCorrect: false
+      explanation: "Incorrect.  Indicators are considered Tactical Threat Intelligence."
+    - content: "Tactical"
+      isCorrect: true
+      explanation: "Correct.  Indicators are considered Tactical Threat Intelligence."
+  - content: "Which of these items is an example of a Threat indicator?"
+    choices:
+    - content: "Threat Actor Name"
+      isCorrect: false
+      explanation: "Incorrect. This is not easily searched for in log data."
+    - content: "Domain Name"
+      isCorrect: true
+      explanation: "Correct. This indicator can be used to query against your log data."
+    - content: "Threat Campaign"
+      isCorrect: false
+      explanation: "Incorrect. This is not easily searched for in log data."
+  - content: "What table do you query in KQL to view your indicators?"
+    choices:
+    - content: "Indicator"
+      isCorrect: false
+      explanation: "Incorrect. ThreatIntelligenceIndicator stores the indicators."
+    - content: "TI Indicator"
+      isCorrect: false
+      explanation: "Incorrect. ThreatIntelligenceIndicator stores the indicators."
+    - content: "ThreatIntelligenceIndicator"
+      isCorrect: true
+      explanation: "Correct. This is the proper table."

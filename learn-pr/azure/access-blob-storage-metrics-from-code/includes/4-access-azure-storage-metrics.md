@@ -19,11 +19,20 @@ You must also assign a role to the service principal, which authorizes that app 
 
 To create a service principal in Azure:
 
-1. Go to the [Azure portal](https://portal.azure.com/) and in the navigation on the left, click **Azure Active Directory**.
-1. Click **App registrations**, and then click **New application registration**.
-1. Give the service principal a name, choose **Web App/API** for the application type, and specify a sign-on URL where users go for authentication.
-1. Create a new key for the app and make a note of it; your app must supply this key as part of its credentials.
-1. Make a note of the **Directory ID**; this is a GUID that uniquely identifies the Active Directory that contains the service principal and is also referred to as the **Tenant ID**.
+1. Go to the [Azure portal](https://portal.azure.com/). From the Azure Marketplace search box, enter **Azure Active Directory**.
+
+1. In the left nav bar, under the **Manage** section, select **App registrations**, and then select **+ New registration**. The **Register an application** window appears.
+
+1. In the **Name** box, enter the service principal a name.
+
+1. For **Supported account types**, select **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
+
+1. For **Redirect URI**, select **Web** for the authentication response, and specify a sign-on URL where users go for authentication.
+
+1. Select **Register**. Your new app registration window appears.
+
+1. Make a note of the **Directory (tenant) ID**; this is a GUID that uniquely identifies the Active Directory that contains the service principal and is also referred to as the **Tenant ID**.
+
 1. Assign the new service principal to a role that has sufficient permissions to access the resources you need. For example, the **Contributor** role on a resource group grants access to all the resources in that group, including any Azure Monitor resources.
 
 If you complete the optional exercise in the next unit, you'll create a service principal by following these steps.
@@ -33,16 +42,18 @@ If you complete the optional exercise in the next unit, you'll create a service 
 When the service principal is ready, you can use it in your code to authenticate with Azure. To do this, your code must:
 
 1. Use the **ApplicationTokenProvider.LoginSilentAsync** method to create a new set of service credentials. When you call this method, provide the tenant ID, application ID, and key that you made a note of when you created the service principal.
+
 1. Create a new **MonitorClient** object by calling the **MonitorClient** constructor with the service credentials you created. This **MonitorClient** object will be used to submit queries for metrics.
+
 1. Set the **MonitorClient.SubscriptionID** property to identify which Azure subscription to connect to. This is the same Subscription ID that you used in unit 3.
 
 ## How to list metric definitions and metrics values
 
-Once you have created the **MonitorClient** class, you can use it to query for Azure Storage metrics in Azure Monitor. The first step is to discover which metrics are available by listing their definitions.
+After you have created the **MonitorClient** class, you can use it to query for Azure Storage metrics in Azure Monitor. The first step is to discover which metrics are available by listing their definitions.
 
 To do so, call the **MetricDefinitions.ListAsync** method on your **MonitorClient** object, and specify the storage account service's resource ID. This resource ID is the same value as you used in unit 3 to specify the metrics you wanted to list.
 
->[!NOTE] 
+>[!NOTE]
 > The resource ID that you specify must correspond to correct service within your storage account; there are different resource IDs for the Blob, File, Table, and Queue services within the same storage account.
 
-Once you have identified the name of a metric to use, you can retrieve its values by calling the **Metrics.ListAsync** method and passing the metric's name and the time period of interest; this will return a collection of the values for that metric within the specific period. You can loop through this collection of values and display them to the user or take other action.
+After you have identified the name of a metric to use, you can retrieve its values by calling the **Metrics.ListAsync** method and passing the metric's name and the time period of interest; this will return a collection of the values for that metric within the specific period. You can loop through this collection of values and display them to the user or take other action.

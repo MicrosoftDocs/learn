@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.arm-template-test.3-exercise-what-if
+title: Exercise - Preview changes with the what-if command
+metadata:
+  title: Exercise - Preview changes with the what-if command
+  description: Use the what-if tool to predict what a deployment will carry out if applied.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 10/12/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 8
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-what-if.md)]

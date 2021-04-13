@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-storage-account-failover
+title: Evaluate storage account failover
+metadata:
+  title: Evaluate storage account failover
+  description: Learn about the storage account failover process.
+  ms.date: 10/08/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-evaluate-storage-account-failover.md)]

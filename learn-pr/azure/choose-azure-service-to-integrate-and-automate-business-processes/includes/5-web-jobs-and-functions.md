@@ -2,7 +2,7 @@ Now let's look at another process from our bike rental business and decide what 
 
 ## Scenario
 
-Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike when it arrives back from a customer. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage our brand as a high-quality bike rental company.
+Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 
@@ -15,7 +15,7 @@ You want to build a system that governs the maintenance and repair process and a
   - Are we waiting for any parts, and what are those parts?
   - When is the bike likely to be available again for rent?
 
-You'd like to integrate this system with the bike booking and rental process from the last unit so that, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
+You'd like to integrate this system with the bike booking and rental process from the last unit. In doing so, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
 
 ## Business Process
 

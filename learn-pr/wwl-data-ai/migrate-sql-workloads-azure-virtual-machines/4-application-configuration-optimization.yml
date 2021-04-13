@@ -4,7 +4,7 @@ title: Configure and optimize your applications
 metadata:
   title: Configure and optimize your applications
   description: "Configure and optimize your applications"
-  ms.date: 03/31/2020
+  ms.date: 01/07/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-application-configuration-optimization.md)]
-quiz:
-  title: "Knowledge check"
-  questions:
-  - content: "You've migrated your SQL Server database to an Azure Virtual Machine that hosts the same version and edition of SQL Server. The database has been migrated using a back and restore and is now online. What change needs to be made to the application to ensure that it will work with the database?"
-    choices:
-    - content: "Upgrade the .NET framework"
-      isCorrect: false
-      explanation: "That's incorrect. The application isn't changing where it's hosted, so there is no need to update the .NET framework. You need to change how the application connects to the database."
-    - content: "Change the application connection string"
-      isCorrect: true
-      explanation: "That's correct. As the SQL Server version and edition is the same, and the database has been restored from a backup, you only need to change the applications connection string to connect to the migrated database."
-    - content: "Update the application license"
-      isCorrect: false
-      explanation: "That's incorrect. Licensing doesn't change when migrating your database, you need to change how the application connects to the database."
-  - content: "You've migrated your SQL Server 2008 database to an Azure VM that hosts SQL Server 2014. The database has been migrated using a restored backup and is now online. What has happened to the existing query plans?"
-    choices:
-    - content: "The plans are updated automatically and can make use of the new features at the latest compatibility level."
-      isCorrect: false
-      explanation: "That's incorrect. Query plans aren't updated automatically and are unable to use new database features until the database compatibility level is updated."
-    - content: "The query plans remain unchanged, but can make use of latest databases features."
-      isCorrect: false
-      explanation: "That's incorrect. Query plans remain unchanged and unable to use new database features until the database compatibility level is updated."
-    - content: "The database compatibility will remain at 2008 unless manually updated. The plans can then make use of new features."
-      isCorrect: true
-      explanation: "That's correct. Query plans remain unchanged, and unable to use new database features until the database compatibility level is updated."

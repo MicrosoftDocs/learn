@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.go-write-test-program.8-summary
+metadata:
+  title: Summary
+  description: Summary.
+  ms.date: 02/02/2021
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

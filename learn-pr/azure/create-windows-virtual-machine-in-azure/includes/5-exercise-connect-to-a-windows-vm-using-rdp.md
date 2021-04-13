@@ -31,9 +31,9 @@ You can enter this information into the RDP client, or download a pre-configured
     - Get the public IP address to connect to the VM.
     - See the activity of the CPU, disk, and network.
 
-1. Click the **Connect** button at the top of the pane.
+1. Click the **Connect** button at the top of the pane. Select **RDP** from the dropdown.
 
-1. In the **Connect to virtual machine** pane, note the **IP address** and **Port number** settings, then click **Download RDP File** and save it to your computer.
+1. In the **Connect with RDP** pane, note the **IP address** and **Port number** settings, then click **Download RDP File** and save it to your computer.
 
 1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click and select **Edit**. On MacOS you will need to open the file first with the RDP client and then right-click on the item in the displayed list and select **Edit**.
 
@@ -98,6 +98,6 @@ Any additional drives you create from scratch will need to be initialized and fo
 
 1. Open File Explorer and you should now see your data drive.
 
-1. Go ahead and close the RDP client to sign out of the VM. The server will continue to run.
+1. Go ahead and close the RDP client to disconnect from the VM. The server will continue to run.
 
 RDP allows you to work with the Azure VM just like a local computer. With Desktop UI access, you can administer this VM as you would any Windows computer: installing software, configuring roles, adjusting features and other common tasks. However, it's a manual process - if we always need to install some software, you might consider automating the process using scripting.

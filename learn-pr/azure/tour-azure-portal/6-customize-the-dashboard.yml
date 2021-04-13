@@ -7,9 +7,8 @@ metadata:
   description: Learn how to customize the Azure portal dashboard by adding your most-used services and apps.
   ms.date: 09/24/2018
   author: cwatson-cat
-  ms.author: scwatson
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 content: |
   [!include[](includes/6-customize-the-dashboard.md)]

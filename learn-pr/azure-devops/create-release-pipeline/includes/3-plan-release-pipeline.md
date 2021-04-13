@@ -103,7 +103,7 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 1. Provide a way for Azure Pipelines to authenticate access to that environment.
 1. Use Azure Pipelines tasks to deploy the build artifact to that environment.
 
-**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it will be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact@2](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?view=azure-devops&azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?view=azure-devops?azure-portal=true).
+**Mara:** According to our research, we need to create a _service connection_ to specify the target environment and authenticate access to it. After we define the service connection, it will be available for all of our tasks to use. Then we need to use the built-in tasks [DownloadPipelineArtifact@2](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true).
 
 **Andy:** I have the tasks here. Let's see what they do for us.
 
@@ -204,7 +204,7 @@ Andy and Mara are ready to begin. They're going to:
 * Define a build stage that creates the artifact.
 * Define a deployment stage that deploys the artifact to App Service.
 
-![A hand-drawn illustration of a deployment pipeline that contains two stages](../media/3-whiteboard-4.png)
+![A hand-drawn illustration of a deployment pipeline that contains two stages. The deployment stage deploys the artifact to App Service.](../media/3-whiteboard-4.png)
 
 **Andy:** Is this drawing correct? We use ![Callout 1](../../shared/media/callout-01.png) Azure Pipelines to deploy to ![Callout 2](../../shared/media/callout-02.png) App Service. To do that, we take the ![Callout 3](../../shared/media/callout-03.png) build artifact as the input to the ![Callout 4](../../shared/media/callout-04.png) deployment stage. The tasks in the deployment stage ![Callout 5](../../shared/media/callout-05.png) download the artifact and use a service connection to ![Callout 6](../../shared/media/callout-06.png) deploy the artifact to App Service.
 

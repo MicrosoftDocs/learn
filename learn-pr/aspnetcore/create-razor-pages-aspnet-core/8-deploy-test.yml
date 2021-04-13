@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.8-deploy-test
 metadata:
-  title: Deploy and test the ContosoPets.UI project 
-  description: Deploy and test the ContosoPets.UI project.
-  ms.date: 07/23/2019
+  title: Exercise - Deploy and test the Razor Pages project
+  description: Deploy and test the Razor Pages project.
+  ms.date: 02/12/2021
   author: wadepickett
   ms.author: wpickett
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
-title: Deploy and test the ContosoPets.UI project 
+title: Exercise - Deploy and test the Razor Pages project
 azureSandbox: true
 interactive: bash
 durationInMinutes: 7

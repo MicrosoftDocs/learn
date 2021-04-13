@@ -6,13 +6,15 @@ To subscribe to the Face API:
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **+ Create a resource** > **AI + Machine Learning** > **Face** > **Create**.
+1. Select **+ Create a resource** > **AI + Machine Learning** > **Face**.
 
 1. Enter a unique name for your Face API subscription, and then choose the **Location** nearest to you.
 
 1. Select the free or lowest-cost **Pricing tier**.
 
 1. Create a new Resource group named **mslearn-faceapi**. You'll later delete these resources.
+
+1. Acknowledge the Cognitive Services notice that uses of this service is not for a police department.
 
 1. Select **Create** to subscribe to the Face API.
 
@@ -31,14 +33,16 @@ Because all Computer Vision APIs are REST-based, you can use your language of ch
 
 To view the subscription key and endpoint for your Computer Vision subscription:
 
-1.  On the left sidebar, select **Resource groups**, and then select the resource group you created for the Computer Vision API.
+1. On the left sidebar, select **Resource groups**, and then select the resource group you created for the Computer Vision API.
 
-1.  To view your new subscription keys, select the Face API subscription name (such as **Face**). Then under **Resource Management**, select **Keys and Endpoints**.
+1. To view your new subscription keys, select the Face API subscription name (such as **Face**). Then under **Resource Management**, select **Keys and Endpoints**.
 
-1. Copy the value of **KEY 1**.
+1. Copy and save the values of **KEY 1** and **ENDPOINT**. These will be used when connecting to the API.
+
+    :::image type="content" source="../media/face-api-key-and-endpoint-ssm.png" alt-text="Copy the Face subscription key":::
 
 1. In the menu group, select **Overview**. Then copy the value under **Endpoint**.
 
-    ![Copy the Face API endpoint](../media/6-subscribe-to-face-api-endpoint.png)
+    :::image type="content" source="../media/6-subscribe-to-face-api-endpoint.png" alt-text="Copy the Face API endpoint":::
 
 Now that you know the location and values of your Face API subscription key and endpoint, you're ready to start writing some code or testing the API with an image.

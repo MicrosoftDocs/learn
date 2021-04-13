@@ -16,7 +16,7 @@ The **Azure Storage Client Library for .NET** provides types to represent each o
 You will use these classes to get programmatic access to your queue. The library has both synchronous and asynchronous methods; you should prefer to use the asynchronous versions to avoid blocking the client app.
 
 > [!NOTE]
-> The Azure Storage Client Library for .NET is available in the **WindowsAzure.Storage** NuGet package. You can install it through an IDE, Azure CLI, or through PowerShell `Install-Package WindowsAzure.Storage`.
+> The Azure Storage Client Library for .NET is available in the **Azure.Storage.Queues** NuGet package. You can install it through an IDE, Azure CLI, or through PowerShell `Install-Package Azure.Storage.Queues`.
 
 ## How to connect to a queue
 
@@ -72,7 +72,7 @@ await queue.AddMessageAsync(message);
 
 In the receiver, you get the next message, process it, and then delete it after processing succeeds. Here's a simple example:
 
-```C#
+```csharp
 CloudQueue queue;
 //...
 

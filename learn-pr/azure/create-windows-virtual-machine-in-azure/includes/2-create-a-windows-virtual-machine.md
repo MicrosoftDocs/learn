@@ -32,7 +32,7 @@ Selecting an image is one of the first and most important decisions you'll make 
 Any application that can be supported by the computer can be included in the VM image. You can create a VM from an image that's pre-configured to exactly match your requirements, such as hosting an ASP.NET Core app.
 
 > [!TIP]
-> You can also create and upload your own images, check the documentation for more information.
+> You can also create and upload your own images. Check the documentation for more information.
 
 ## Sizing your VM
 Just as a physical machine has a certain amount of memory and CPU power, so does a virtual machine. Azure offers a range of VMs of differing sizes at different price points. The size that you choose will determine the VMs processing power, memory, and max storage capacity.
