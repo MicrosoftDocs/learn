@@ -17,7 +17,7 @@ Try to use the `switch` statement.
 
 Write a program to guess the square root of a number. Use this formula: 
 
-`sqroot`<sub> _n_+1</sub> `= sqroot`<sub> _n_</sub> `− (sqroot`<sub> _n_</sub> `*  sqroot`<sub> _n_</sub> `− x) / (2 * sqroot`<sub> _n_</sub>`)`
+> sqroot<sub> _n_+1</sub> = sqroot<sub> _n_</sub> − (sqroot<sub> _n_</sub> *  sqroot<sub> _n_</sub> − x) / (2 * sqroot<sub> _n_</sub>)
 
 This formula is for [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method?azure-portal=true).
 
