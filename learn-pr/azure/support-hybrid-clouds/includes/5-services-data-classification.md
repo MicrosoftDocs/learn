@@ -1,3 +1,5 @@
+:::row:::
+:::column span="2":::
 For classified workloads, customers can use Azure services to secure target workloads while reducing identified risks. Azure, with [Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/) and [Azure Stack Edge](https://azure.microsoft.com/products/azure-stack/edge/), can support private and hybrid cloud deployment models, and it's suitable for many different government workloads involving both unclassified and classified data. The following data classification taxonomy is used in this module:
 
 * **Confidential**.
@@ -6,8 +8,6 @@ For classified workloads, customers can use Azure services to secure target work
 
 Similar data classification schemes exist in many countries.
 
-:::row:::
-:::column span="2":::
 For top secret data, customers can deploy Azure Stack Hub, which can operate fully disconnected from Azure and the internet. [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/tactical_azs_spec_sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on.
 :::column-end:::
 :::column span="2":::
