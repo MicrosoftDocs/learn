@@ -16,7 +16,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 **Strategic priority:** Innovation, control (optimized operations), democratization (autonomy), and integration are all important strategic priorities for adopting the cloud. When you're speaking to the executive stakeholders, which will be the most important factor for your company in the next three to five years?
 
-**Organization:** Organization of people drives a number of operations decisions. Do you have a small IT team cover all of your portfolio? Are separate teams dedicated to functions like security, governance, and operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
+**Organization:** Organization of people drives some operations decisions. Do you have a small IT team cover all of your portfolio? Are separate teams dedicated to functions like security, governance, and operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
 
 **Portfolio scope:** The size of your portfolio and where you focus operations are important considerations for each operating model. Do you manage a large, complex, multiple-cloud workload portfolio? Can a single cloud platform support the portfolio? Do all of your workloads need to live in a single production subscription? Do you focus on workload-specific operations with no central support? 
 
@@ -104,7 +104,7 @@ This operating model focuses on democratizing decisions and delegated responsibi
 
 **Operations priority:** An enterprise operating model requires a cloud-first approach to operations. First-party cloud-based tools are essential to maintaining centralized operations in the cloud. This type of model must look to the cloud as the primary operating model to be effective. The existing on-premises operations are viewed as secondary operations and should be included in a long-term transition plan.
 
-**Platform development velocity:** To encourage centralization of governance, security, and operations across a fast-growing portfolio of workloads, the enterprise operations teams will require the implentation of an enterprise solution before adoption.
+**Platform development velocity:** To encourage centralization of governance, security, and operations across a fast-growing portfolio of workloads, the enterprise operations teams will require the implementation of an enterprise solution before adoption.
 
 Compare more pros, cons, and characteristics of [enterprise operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#enterprise-operations?azure-portal=true).
 

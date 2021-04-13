@@ -14,7 +14,7 @@ Licensing for the operations management tooling (including hypervisors) consumes
 
 The IT manager has requested two new hires to support the central operations team. They'll help balance the load on the over-stressed team. In particular, they'll support business continuity and disaster recovery (BCDR) practices and patch compliance processes.
 
-Collectively, the business isn't ready for a full-scale shift to cloud-native operations, especially for mission-critical applications. The CIO believes that some investment in cloud-native operations tools would help reduce strain on the team by shifting a number of those responsibilities to the cloud provider. 
+Collectively, the business isn't ready for a full-scale shift to cloud-native operations, especially for mission-critical applications. The CIO believes that some investment in cloud-native operations tools would help reduce strain on the team by shifting some of those responsibilities to the cloud provider. 
 
 The CIO will watch for operational shifts to improve employee satisfaction and reduced load across the central operations team. The CIO will also request frequent updates on how the adoption plan will affect BCDR and patching efforts.
 

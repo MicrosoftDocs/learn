@@ -71,7 +71,7 @@ The article on [recommended naming and tagging conventions](https://docs.microso
 The CAF Migration landing zone blueprint demonstrates network configuration, but it provides little actionable configuration. You'll need to refactor the network configuration in that blueprint before you deploy workloads to the new landing zone:
 
 - [Review networking options](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
-- [Evaluate a network perspective](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
+- [Evaluate a network perspective](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see ways to combine those network options to create a virtual datacenter within your Azure environment.
 - [Plan for your virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
 - [Follow best practices for network security](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
 

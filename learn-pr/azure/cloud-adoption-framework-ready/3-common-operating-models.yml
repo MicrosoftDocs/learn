@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-ready.3-common-operating-models
 title: Compare common operating models
 metadata:
   title: Compare common operating models
-  description: Operating models define a number of constraints that will affect your environmental design.
+  description: Operating models define constraints that will affect your environmental design.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch

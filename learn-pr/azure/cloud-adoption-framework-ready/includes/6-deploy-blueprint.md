@@ -1,4 +1,4 @@
-The first step toward an the deployment of an Azure landing zone is the implementation of a Cloud Adoption Framework template. When you're following the *start small and expand* approach, you start with the CAF Migration landing zone blueprint.
+The first step toward the deployment of an Azure landing zone is the implementation of a Cloud Adoption Framework template. When you're following the *start small and expand* approach, you start with the CAF Migration landing zone blueprint.
 
 ## Deploy the blueprint sample
 
