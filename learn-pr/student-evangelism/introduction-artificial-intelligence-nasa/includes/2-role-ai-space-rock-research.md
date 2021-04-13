@@ -1,7 +1,13 @@
 AI is a fairly new but prominent concentration in the field of computer science, and more specifically, data science. The main concept of AI is teaching a computer how to learn things. The computer then makes decisions based on what it has learned.
 
-Although you might think that teaching computers how to "think" on their own would lead to extinction for the human race, computers need humans to program them. We don't need to worry about computers taking over the world, but we can benefit from programming computers to make decisions. AI is what Netflix uses to recommend what to watch next for example. Additionally, AI helps Siri better detect our phone use habits and Tesla uses AI to build driverless cars. As you can see, there are many examples of AI working for us.
+You might think teaching computers how to "think" on their own could lead to extinction of the human race. But we don't need to worry about computers taking over the world. Computers need humans to do the programming. We benefit from programming computers with AI. Here are a few examples of how AI works to improve our lives:
 
-AI works by giving many different pieces of data to a computer, and then telling the computer what that data means. We'll give a computer different images of space rocks and tell the computer what type of rock is in each image. We can upload a photo of basalt rock to our computer and tell the computer it's a photo of basalt rock. This process is the first step of building an *AI model*. We use AI models to make predictions. After we show the computer a large number of images and create a model based on that data, we can give the computer a new photo that doesn't have a label, and the computer can tell us what type of rock it is.
+- Netflix uses AI algorithms to recommend what we might like to watch next.
+- Siri runs AI on our phone data to detect patterns and help us do common tasks more easily.
+- Tesla implements AI to make driverless cars, so everyone can sit back and enjoy the view. 
 
-When you start to use AI, you'll notice the terms *machine learning* and *artificial intelligence* are used almost interchangeably. The main difference between the terms is that machine learning is a type of AI. The concepts are similar, but in this lesson, we focus on AI.
+AI works by giving many different pieces of data to a computer, and telling it what the data means. For our exercise, we'll give the computer many images of different types of space rock and teach it about the types of rock. We'll upload a photo of basalt rock and tell the computer: _This photo shows basalt rock_.
+
+This process is the first step of building an *AI model*. We use AI models to make predictions. After we show the computer a large number of images, we create a model from the data. Then we can give the computer a new photo and the computer uses the model data to predict the type of rock in the image.
+
+When you use AI, you'll see the terms *machine learning* and *artificial intelligence* used almost interchangeably. The main difference between the terms is that machine learning is a type of AI. The concepts are similar, but in this lesson, we focus on AI.

@@ -38,7 +38,7 @@ After installation completes, the application is available on your computer:
 
 Follow these steps to create the environment:
 
-1. At the Anaconda prompt, run `conda create` to start the Anaconda environment:
+1. At the Anaconda prompt, run the `conda create` command to start the Anaconda environment:
 
    ```console
    conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow
@@ -46,9 +46,9 @@ Follow these steps to create the environment:
 
    This command uses Anaconda to install all the libraries that we need for our model. In this command, we're also downloading a few other libraries that are good for data science. You might find these libraries useful for future development.
 
-1. When you're prompted to install the packages, enter Y, and then press Enter.
+1. When you're prompted to install the packages, enter **Y**, and then press Enter.
 
-1. To activate your new environment, enter the following command: 
+1. To activate your new environment, run the `conda activate` command: 
 
    ```console
    conda activate myenv
@@ -61,7 +61,7 @@ The new environment is ready to use, but we need to add one more library through
 
 Follow these steps to install the torchvision package.
 
-1. At the Anaconda prompt, run `conda install`: 
+1. At the Anaconda prompt, run the `conda install` command: 
 
    ```console
    conda install -c pytorch torchvision
