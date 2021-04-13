@@ -127,7 +127,7 @@ In the following scenario:
 2. The ingested data is then stored in Azure storage (either Azure Blob Storage or a Data Lake Store). 
 3. Azure Spark on HDInsight processes the data in readiness for Azure Machine Learning. Data is also visualized using Power BI.
 
-:::image type="content" source="../media/architecture-data-science.png" alt-text="A diagram that displays the preceding scenario.":::
+:::image type="content" source="../media/architecture-data-science.png" alt-text="A diagram that displays the scenario described in the preceding text description.":::
 
 ### Hybrid
 
@@ -137,4 +137,4 @@ For organizations with on-premises big data infrastructure, you can use HDInsigh
 - An Azure ExpressRoute circuit connects the on-premises corporate network environment to Azure virtual networks. 
 - WANdisco LiveData Migrator for Azure replicates the data received from on-premises to Azure HDInsight. 
 
-:::image type="content" source="../media/architecture-hybrid.png" alt-text="A diagram depicting the preceding scenario.":::
+:::image type="content" source="../media/architecture-hybrid.png" alt-text="A diagram that represents the text in the preceding scenario.":::
