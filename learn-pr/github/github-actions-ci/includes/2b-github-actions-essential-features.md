@@ -1,6 +1,6 @@
 Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub website and REST API endpoints.
 
-## Default environment variables and contexts
+## Using default environment variables and contexts
 
 Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. We recommend that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, specify `$` followed by the environment variable.
 
