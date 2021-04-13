@@ -36,7 +36,7 @@ You'll use a `bash` deployment script that uses the following parameters to depl
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-Creating the AKS cluster takes a few minutes to complete.
+    Creating the AKS cluster takes a few minutes to complete.
 
 ## How to manage an unexpected failure
 

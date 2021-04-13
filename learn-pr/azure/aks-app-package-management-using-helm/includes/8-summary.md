@@ -4,7 +4,7 @@ By using Helm, DevOps teams can use Helm to standardize, simplify, and implement
 
 You saw how to install third-party packages into your Azure Kubernetes (AKS) Cluster and how to create Helm charts for the applications your teams develop.
 
-Overall you saw how introducing Helm, as part of your software development and release strategy, introduces a number of benefits to simply application deployments and improve productivity.
+Overall you saw how introducing Helm, as part of your software development and release strategy, introduces many benefits to simply application deployments and improve productivity.
 
 ## Clean up resources
 
@@ -22,7 +22,7 @@ However, if you're running this exercise in your own subscription, you'll want t
 
 1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
 
-1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here is an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
+1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here's an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
 
     ```bash
     kubectl config delete-context learn-helm-deploy-aks
@@ -36,7 +36,7 @@ However, if you're running this exercise in your own subscription, you'll want t
 
 ## Revert .NET Core SDK changes
 
-This step is not required when using the sandbox. However, if you're running this exercise in your own subscription, please review the following steps to revert any changes that made to your Cloud Shell environment.
+This step isn't required when using the sandbox. However, if you're running this exercise in your own subscription, review the following steps to revert any changes that made to your Cloud Shell environment.
 
 1. Run the following command to restore your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
 
