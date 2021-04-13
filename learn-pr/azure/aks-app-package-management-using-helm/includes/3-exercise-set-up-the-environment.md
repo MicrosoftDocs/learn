@@ -27,7 +27,7 @@ You'll use a `bash` deployment script that uses the following parameters to depl
 | `--use-acr` | Allows the script to configure a default ACR with the name `mslearn-kubernetes-acr`. Default value is `false`.
 | `--install-dot-net` | Allows the script to install the .NET Core SDK. Default value is set to `false`. |
 
-1. Run the command below in the command shell.
+1. Run the command below in the Azure Cloud Shell.
 
     ```bash
     SubscriptionId=$(az account list --query '[0].id' -o tsv)
