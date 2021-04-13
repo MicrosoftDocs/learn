@@ -1,57 +1,44 @@
-Intro and state problem to be solved xxx
+You can use Azure HDInsight to process big data in many scenarios, either with historical or real-time data. But the question is, should you? Perhaps the biggest strength of HDInsight is the extensive range of configurations it provides. In this unit, you'll consider whether Azure HDInsight is the correct choice for your organization. You'll analyze criteria to help you decide, including:
 
-<!-- from original mod
-
-The biggest strength of HDInsight is the range of different configurations that the service offers. It enables you to support a wide variety of workloads. These workloads could be batch processing of data, working with streaming data, or managing data warehouses and/or data science workloads. This feature makes HDInsight a compelling choice, especially if your business process contains multiple workloads.
-
-For example, if your organization only builds a data warehouse to present historical reports through Power BI, it may be pragmatic to use Azure SQL Data Warehouse with Power BI. Likewise, should your organization perform advance analytics with a data science solution and nothing more, then it may be appropriate to only use Azure Databricks.
-
-However, if your organization's workloads involve ingesting data for historical reporting and advanced analytics, and you have streaming data that requires analysis, then HDInsight is a pragmatic choice. All the data can be ingested into a single Data Lake location. Then you can use the correct HDInsight configuration to manage Batch processing, Data Warehousing, Data Science operations, and Streaming workloads. As there is separation between the compute and the storage, this can be done seamlessly on top of the same data. Furthermore, you will be minimizing the cost of the storage as the operations are performed on a single rather than multiple data stores.
-
-HDInsight differentiators
-In addition to the scenarios outlined above. Below are key differentiators that make HDInsight ideal for Big Data workloads:
-
-Independently scalable compute and storage
-Autoscaling worker nodes based on workload or schedule
-Flexibility and fault tolerance of master nodes
-Enterprise Security
-SDK
-Separation of compute and storage, along with automatic cluster scaling depending on workload or schedule, can lead to significant cost optimizations. HDInsight’s master nodes are resilient to failure. The master nodes are backed by fault tolerant virtual machines leading to a highly available service with an SLA of 99.9%. The Azure Active Directory integration has the enterprise security capabilities of authentication and authorization. These capabilities together with encryption and virtual network support give you granular control of who can access the data. HDInsight is backed by a variety of SDKs, which enable cluster creation and development in multiple languages in a variety of IDEs.
-
-
--->
-
-
-
-
+- Range of workloads
+- Scalability
+- Fault tolerance
+- Security
 
 ## Decision criteria
 
+To determine whether Azure HDInsight can meet your organization's big data needs, use the criteria described in the following table.
 
-
-xxx
-
-
+| **Criteria** | **Analysis**|
+| ---------------------------- | ------------------------------------------------------------ |
+| **Range of workloads** | If you require support for a variety of workloads, you'll need a platform capable of supporting those requirements. |
+| **Scalability** | Does your organization need to scale to accommodate increases in data volume, and also data velocity? It's important to choose a platform that can scale automatically. It's also important to use a platform that supports compute and storage scaling independently. |
+| **Fault tolerance** | If your data analysis must continue despite component failure, you'll need to choose  a fault tolerant platform. |
+| **Security** | Most organizations expect the data they work with to be secure at rest and in transit. It's also important for almost all organizations to meet government compliance standards. |
 
 ## Apply the criteria
 
-xxx
+Consider how your organization wants to work with big data. Then apply the following criteria to help you determine whether HDInsight is a good choice:
 
-Consider using <product> when:
+- **Range of workloads**. It enables you to support a wide variety of workloads. These workloads could be batch processing of data, working with streaming data, or managing data warehouses and/or data science workloads. This feature makes HDInsight a compelling choice, especially if your business process contains multiple workloads.
+- **Scalability**. HDInsight supports independently scalable compute and storage. In addition, worker nodes can auto scale based on workload or schedule. 
 
-- xxx
+   > [!TIP]
+   > The separation of compute and storage, in addition to automatic cluster scaling, can lead to significant cost optimizations.
 
-
-Summary
-
-<!-- 
-from design
-
-Process and gather real time insights massive amounts of data at scale with optimized cost, minimal effort, and strong security. 
-
-Migrate an  on-premises OSS vendor packaged Hadoop distribution to the cloud with as little cost and effort as possible.
-
-Migrate an OSS Big Data service from a competitor cloud offering to Azure.
+- **Fault tolerance**. HDInsight’s head nodes are resilient to failure. The head nodes are backed by fault tolerant VMs leading to a highly available service with an SLA of 99.9%.
+- **Security**. Azure Active Directory integration provides enterprise security authentication and authorization. These capabilities, in addition to encryption and virtual network support, provide granular control of who can access your data.
 
 
--->
+In summary, consider using Azure HDInsight when you want to:
+
+- Gather massive amounts of data at scale and:
+
+   - Gain real-time insights
+   - Process the data with optimized cost, minimal effort, and strong security
+
+- Migrate:
+
+   - an on-premises OSS vendor packaged Hadoop distribution to the cloud with as little cost and effort as possible
+   - an OSS big data service from a competitor cloud offering to Azure
+
