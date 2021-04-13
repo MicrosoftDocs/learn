@@ -4,7 +4,7 @@ Azure Stack Edge supports the storage and processing of highest classification d
 
 :::row:::
 :::column span="2":::
-Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities. It allows customers to pre-process data at the edge and move data to Azure efficiently. Azure Stack Edge uses advanced Field-Programmable Gate Array (FPGA) hardware natively integrated into the appliance to run machine learning algorithms at the edge efficiently. The size and portability allow customers to run Azure Stack Edge as close to users, apps, and data as needed. Figure 3 shows Azure Stack Edge capabilities and key use cases.
+Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities. It allows customers to pre-process data at the edge and move data to Azure efficiently. Azure Stack Edge uses advanced Field-Programmable Gate Array (FPGA) hardware natively integrated into the appliance to run machine learning algorithms at the edge efficiently. The size and portability allow customers to run Azure Stack Edge as close to users, apps, and data as needed.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/azure-stack-edge-capabilities.png" alt-text="Azure Stack Edge capabilities":::

@@ -1,6 +1,6 @@
 :::row:::
 :::column span="2":::
-[Azure Stack](https://azure.microsoft.com/overview/azure-stack/) portfolio is an extension of Azure that enables customers to build and run hybrid applications across on-premises, edge locations, and cloud. As shown in Figure 1, Azure Stack includes Azure Stack Hyperconverged Infrastructure (HCI), Azure Stack Hub (previously Azure Stack), and Azure Stack Edge (previously Azure Data Box Edge). The last two components (Azure Stack Hub and Azure Stack Edge) are discussed in this module. For more information, see [Differences between global Azure, Azure Stack Hub, and Azure Stack HCI](https://docs.microsoft.com/azure-stack/operator/compare-azure-azure-stack).
+[Azure Stack](https://azure.microsoft.com/overview/azure-stack/) portfolio is an extension of Azure that enables customers to build and run hybrid applications across on-premises, edge locations, and cloud. Azure Stack includes Azure Stack Hyperconverged Infrastructure (HCI), Azure Stack Hub (previously Azure Stack), and Azure Stack Edge (previously Azure Data Box Edge). The last two components (Azure Stack Hub and Azure Stack Edge) are discussed in this module.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/azure-stack-portfolio.png" alt-text="Azure Stack Portfolio":::
@@ -21,4 +21,5 @@ In this module, you will learn to:
 
 ## Prerequisites
 
-None.
+* Familiarity of how data is protected at rest, in transit, and in use.
+* Familiarity with data classifications.

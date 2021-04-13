@@ -2,13 +2,13 @@ For classified workloads, customers can use Azure services to secure target work
 
 * **Confidential**.
 * **Secret**.
-* **Top Secret**.
+* **Top secret**.
 
 Similar data classification schemes exist in many countries.
 
 :::row:::
 :::column span="2":::
-For top secret data, customers can deploy Azure Stack Hub, which can operate fully disconnected from Azure and the internet. [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/tactical_azs_spec_sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on. Figure 5 depicts key enabling services that customers can provision to accommodate a variety of workloads on Azure.
+For top secret data, customers can deploy Azure Stack Hub, which can operate fully disconnected from Azure and the internet. [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/tactical_azs_spec_sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support classification levels":::
@@ -48,8 +48,8 @@ To accommodate secret data in the Azure public multi-tenant cloud, customers can
 Key enabling products that customers may find helpful when deploying top secret data and workloads in Azure are listed below:
 
 * All recommended technologies used for secret data.
-* [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) (formerly Azure Stack) enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data.
-* [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview) (formerly Azure Data Box Edge) allows the storage and processing of highest classification data but also enables customers to upload resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
+* [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data.
+* [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview) allows the storage and processing of highest classification data but also enables customers to upload resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
 * In addition to Azure Stack Hub, which is intended for on-premises deployment (that is, in a datacenter), a ruggedized and field-deployable version called [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on.
 * User-provided hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers.
 
