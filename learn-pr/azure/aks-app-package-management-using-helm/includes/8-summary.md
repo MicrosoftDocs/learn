@@ -8,7 +8,7 @@ Overall you saw how introducing Helm, as part of your software development and r
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. When running the exercise in this module in the Learn sandbox, all resources are cleaned up automatically. 
+When running the exercise in this module in the Learn sandbox, all resources are cleaned up automatically.
 
 However, if you're running this exercise in your own subscription, you'll want to clean up these resources so that there's no continued charge against your account for these resources.
 
@@ -36,15 +36,13 @@ However, if you're running this exercise in your own subscription, you'll want t
 
 ## Revert .NET Core SDK changes
 
-If you're running this exercise in your own subscription, then please review the following steps to revert any .NET Core SDK changes.
+This step is not required when using the sandbox. However, if you're running this exercise in your own subscription, please review the following steps to revert any changes that made to your Cloud Shell environment.
 
-The setup script installs a newer version of the .NET Core SDK, alongside the default SDK version of Cloud Shell. You can choose to keep this configuration. To revert to your prior configuration, run the following commands:
+1. Run the following command to restore your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
 
-```bash
-cp ~/.bashrc.bak.learn-helm-aks ~/.bashrc
-```
-
-The preceding command restores your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
+    ```bash
+    cp ~/.bashrc.bak.learn-helm-aks ~/.bashrc
+    ```
 
 ## Learn More
 
