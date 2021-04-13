@@ -30,7 +30,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 For more information and a list of available context variables, check out [Contexts](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts).
 
-## Using custom environment variables
+## Use custom environment variables
 
 Similar to using default environment variables, you can use custom environment variables in your workflow file. To create a custom variable, you need to define it in your workflow file using the `env` context. If you want to use the value of an environment variable inside a runner, you can use the runner operating system's normal method for reading environment variables.
 
@@ -47,7 +47,7 @@ jobs:
           First_Name: Mona
 ```
 
-## Using scripts in your workflow
+## Use scripts in your workflow
 
 In the above workflow snippet examples, the `run` keyword is used to simply print a string of text. Since the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
 
@@ -72,7 +72,7 @@ jobs:
 
 For more information on adding customized scripts to your workflow, check out [Essential features of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions). 
 
-## Caching dependencies with the cache action
+## Cache dependencies with the cache action
 
 When building out a workflow, you'll often find the need to reuse the same outputs or download dependencies from one run to another. Instead of downloading these dependencies over and over again, you can cache them to make your workflow run faster and more efficient. This can dramatically reduce the time it takes to run certain steps in a workflow since jobs on GitHub-hosted runners start in a clean virtual environment each time. Caching dependencies will help speed up the time it takes to recreate these dependency files.
 
@@ -80,9 +80,9 @@ To cache dependencies for a job, you'll need to use GitHub's `cache` action. Thi
 
 | Parameter | Description | Required |
 | --- | --- | --- |
-| Key | Refers to the key identifier created when saving and searching for a cache. | ✅ |
-| Path | Refers to the file path on the runner to cache or search. | ✅ |
-| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | ❌ |
+| Key | Refers to the key identifier created when saving and searching for a cache. | yes |
+| Path | Refers to the file path on the runner to cache or search. | yes |
+| Restore-keys | consists of alternative existing keys to caches if the desired cache key is not found. | no |
 
 ```yml
 steps:
@@ -102,7 +102,7 @@ In the above example, the `path` is set to `~/.npm` and the `key` includes the r
 For more information about caching dependencies, check out [Using the cache action](https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#using-the-cache-action).
 
 
-## Passing artifact data between jobs
+## Pass artifact data between jobs
 
 Similar to the idea of caching dependencies within your workflow, you can pass data between jobs within the same workflow. This is done by using the `upload-artifact` and `download-artifact` actions. Jobs that are dependent on a previous job's artifacts must wait for the dependent job to complete successfully before they can run. This is useful if you have a series of jobs that need to run sequentially based on artifacts uploaded from a previous job. For example, `job_2` requires `job_1` by using the `needs: job_1` syntax.
 
@@ -144,7 +144,7 @@ In some cases, the default workflow logs won't provide enough detail to diagnose
 
 For more information on additional debug logging, check out [Enabling debug logging](https://docs.github.com/en/actions/managing-workflow-runs/enabling-debug-logging#enabling-step-debug-logging).
 
-## Accessing the workflow logs from the user interface
+## Access the workflow logs from the user interface
 
 When we think about successful automation, we aim to spend the least amount of time looking at what’s automated, so we can focus our attention on what’s relevant. But sometimes things don’t go as planned, and we are required to review what happened. That debugging process can be frustrating; but the GitHub UI provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in the GitHub UI, you can follow the below steps:
 
@@ -158,7 +158,7 @@ If you have several runs within a workflow, you can also select the **status** f
 
 For more information on viewing logs for your workflow runs, checkout [Using workflow run logs](https://docs.github.com/en/actions/managing-workflow-runs/using-workflow-run-logs#searching-logs).
 
-## Accessing the workflow logs from the REST API
+## Access the workflow logs from the REST API
 
 In addition to viewing logs using the GitHub UI, you can also use GitHub's REST API to view logs for workflow runs, re-run workflows, or even cancel workflow runs. To view a workflow run's log using the API, you need to send a `GET` request to the logs endpoint. Keep in mind that anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
 
