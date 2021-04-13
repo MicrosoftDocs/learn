@@ -31,7 +31,7 @@ on:
 jobs:
   build:
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
@@ -125,7 +125,7 @@ In the following workflow snippet, notice that in the ```actions/upload-artifact
 
 ```yml
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack
