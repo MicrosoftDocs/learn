@@ -6,7 +6,7 @@ metadata:
   description: Find out how to use DataFrames in Azure Databricks to query, process, and change the original structure of the data.
   ms.date: 02/20/2019
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform basic data transformations in Azure Databricks

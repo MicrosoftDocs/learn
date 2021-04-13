@@ -6,7 +6,7 @@ metadata:
   description: Learn the fundamentals of using Azure Databricks notebooks to do basic and advanced exploratory data analysis.
   ms.date: 11/05/2018
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform exploratory data analysis with Azure Databricks
