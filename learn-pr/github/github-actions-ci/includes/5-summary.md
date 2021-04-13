@@ -34,3 +34,11 @@ Here are some links to more information on the topics we discussed in this modul
 - [npm install](https://docs.npmjs.com/cli/install?azure-portal=true)
 - [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
+- [Default environment variables](https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables).
+- [Contexts](https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#contexts)
+- [Essential features of GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/essential-features-of-github-actions)
+- [Using the cache action](https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows#using-the-cache-action)
+- [Passing data between jobs in a workflow](https://docs.github.com/en/actions/guides/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow)
+- [Enabling debug logging](https://docs.github.com/en/actions/managing-workflow-runs/enabling-debug-logging#enabling-step-debug-logging)
+- [Using workflow run logs](https://docs.github.com/en/actions/managing-workflow-runs/using-workflow-run-logs#searching-logs)
+- [Workflow runs](https://docs.github.com/en/rest/reference/actions#workflow-runs)
