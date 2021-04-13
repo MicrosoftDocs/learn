@@ -36,9 +36,9 @@ After installation completes, the application is available on your computer:
 
 ### Use Anaconda to install AI libraries
 
-Follow these steps to create the environment.
+Follow these steps to create the environment:
 
-1. At the Anaconda prompt, use this command to start the Anaconda environment:
+1. At the Anaconda prompt, run `conda create` to start the Anaconda environment:
 
    ```console
    conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow
@@ -61,13 +61,13 @@ The new environment is ready to use, but we need to add one more library through
 
 Follow these steps to install the torchvision package.
 
-1. At the Anaconda prompt, enter the following command: 
+1. At the Anaconda prompt, run `conda install`: 
 
    ```console
    conda install -c pytorch torchvision
    ```
 
-1. When you're prompted to install the package, enter Y, and then press Enter.
+1. When you're prompted to install the package, enter **Y**, and then press Enter.
 
 
 ### Create project folder and Jupyter Notebook file
