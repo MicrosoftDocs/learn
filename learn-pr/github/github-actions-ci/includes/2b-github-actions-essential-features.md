@@ -2,7 +2,7 @@ Here, you learn how to use default and custom environment variables, custom scri
 
 ## Default environment variables and contexts
 
-Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. It is recommended that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, specify `$` followed by the environment variable.
+Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. We recommend that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, specify `$` followed by the environment variable.
 
 ```yml
 jobs:
@@ -13,7 +13,7 @@ jobs:
 
 For a list of available default environment variables, check out [Default environment variables](https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables).
 
-In addition to default environment variables, you can use defined variables as contexts. Contexts and default variables are similar in that they both provide access to environment information, but they have some important differences. While default environment variables can only be used within the runner, context variables can be used at any point within the workflow. For example, context variables allow you to run an `if` statement to evaluate an expression before the runner is executed.
+In addition to default environment variables, you can use defined variables as contexts. Contexts and default variables are similar in that they both provide access to environment information, but they have some important differences. While default environment variables can only be used within the runner, context variables can be used at any point within the workflow. For example, context variables enable you to run an `if` statement to evaluate an expression before the runner is executed.
 
 ```yml
 name: CI
@@ -146,7 +146,7 @@ For more information on additional debug logging, check out [Enabling debug logg
 
 ## Access the workflow logs from the user interface
 
-When we think about successful automation, we aim to spend the least amount of time looking at what’s automated, so we can focus our attention on what’s relevant. But sometimes things don’t go as planned, and we are required to review what happened. That debugging process can be frustrating; but the GitHub UI provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in the GitHub UI, you can follow the below steps:
+When you think about successful automation, you aim to spend the least amount of time looking at what’s automated, so you can focus your attention on what’s relevant. But sometimes things don’t go as planned, and you are required to review what happened. That debugging process can be frustrating; but GitHub provides a clear layout structure that enables a quick way to navigate between the jobs while keeping the context of the currently debugging step. To view the logs of a workflow run in GitHub, you can follow the below steps:
 
   1. Navigate to the **Actions** tab in your repository.
   2. In the left sidebar, click the desired workflow.
@@ -160,7 +160,7 @@ For more information on viewing logs for your workflow runs, checkout [Using wor
 
 ## Access the workflow logs from the REST API
 
-In addition to viewing logs using the GitHub UI, you can also use GitHub's REST API to view logs for workflow runs, re-run workflows, or even cancel workflow runs. To view a workflow run's log using the API, you need to send a `GET` request to the logs endpoint. Keep in mind that anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
+In addition to viewing logs using GitHub, you can also use GitHub's REST API to view logs for workflow runs, re-run workflows, or even cancel workflow runs. To view a workflow run's log using the API, you need to send a `GET` request to the logs endpoint. Keep in mind that anyone with read access to the repository can use this endpoint. If the repository is private you must use an access token with the `repo` scope.
 
 For example, a `GET` request to view a specific workflow run log would follow the below path:
 
