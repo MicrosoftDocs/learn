@@ -4,7 +4,7 @@ Before you deploy an Azure landing zone, it's important to understand what you'l
 
 Regardless of the deployment option, you should carefully consider each design area. Your decisions affect the platform foundation on which each landing zone depends.
 
-| Design areas | Objective | Relevant methodologies |
+| Design areas | Objective | Relevant methodology |
 |---|---|---|
 | Enterprise enrollment | For enterprise customers with an Azure commitment, proper tenant creation and enrollment is an important early step. | Ready |
 | Identity | Identity and access management is a primary security boundary in the public cloud. It's the foundation for any secure and fully compliant architecture. | Ready |
@@ -128,7 +128,7 @@ To balance these two competing requirements, the adoption team and platform team
 - The cloud platform team will work with the security and governance teams to implement a security baseline. After the security team approves the implementation, the adoption team will be cleared to migrate workloads that have access to some sensitive data.
 - The cloud platform team will work with the operations team to implement a management baseline. After the operations team approves the implementation, the adoption team will be cleared to migrate workloads with a higher level of criticality.
 
-For this example, the preceding conditions will allow the adoption team to start its migration effort. They'll also help the platform team shape its interactions with other teams as they build toward a longer-term enterprise ready environment.
+For this example, the preceding conditions will allow the adoption team to start its migration effort. These conditions will also help the platform team shape its interactions with other teams as they build toward a longer-term enterprise ready environment.
 
 #### Meeting long-term requirements while refactoring
 

@@ -20,7 +20,7 @@ First, implement the blueprint sample by creating a new blueprint in your enviro
 
 1. Find the **CAF Migration landing zone** blueprint sample under **Other Samples** and select **Use this sample**.
 
-1. Enter the basics of the blueprint sample:
+1. Under **Basics**, enter the following information:
    - For **Blueprint name**, provide a name for your copy of the sample CAF Migration landing zone blueprint.
    - For **Definition location**, use the ellipsis and select the management group to which you'll save your copy of the sample.
 

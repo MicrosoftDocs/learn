@@ -20,7 +20,7 @@ quiz:
     - content: CAF Migration landing zone blueprint
       isCorrect: true
       explanation: Correct!
-    - content: CAF enterprise-scale foundation
+    - content: CAF Enterprise-Scale foundation
       isCorrect: false
       explanation: For this customer, the learning curve and complexity of an enterprise-scale approach might be a bit too steep.
     - content: CAF Terraform modules
@@ -48,7 +48,7 @@ quiz:
     - content: CAF Migration landing zone blueprint
       isCorrect: false
       explanation: Eventually, you could expand a start-small approach to meet all of those needs. Risk and effort would be materially reduced with an enterprise-scale approach.
-    - content: CAF enterprise-scale foundation
+    - content: CAF Enterprise-Scale foundation
       isCorrect: true
       explanation: Correct!
     - content: CAF Terraform modules

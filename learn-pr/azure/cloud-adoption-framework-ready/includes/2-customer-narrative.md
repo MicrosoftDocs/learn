@@ -8,7 +8,7 @@ The team has also integrated best-of-breed tools for virtual machine management,
 
 ### Operations tools
 
-Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's budget for hard costs. The new chief information officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. The CIO will watch for reduction of tooling expenses as an early indicator to success in this migration.
+Licensing for the operations management tooling (including hypervisors) consumes more than 20 percent of IT's budget for hard costs. The new chief information officer (CIO) has challenged the team to reevaluate those tools and processes to find cloud-first or unified operations alternatives. The CIO will watch for reduction of tooling expenses as an early indicator of success in this migration.
 
 ### Operations processes
 
@@ -28,7 +28,7 @@ Although the company has begrudgingly accepted this SLA, the new CIO is not impr
 
 The customer narrative from the getting-started module introduced you to the retail innovation team within Tailwind Traders. That team was originally a startup that Tailwind Traders acquired. The startup's original CEO is now Tailwind's chief technology officer (CTO). The CTO still runs that division like a startup, prioritizing experimentation and innovation.
 
-The current operations management processes require that all new innovations from that team must go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. After the team is comfortable with the solution, it releases the solution into a centrally managed production environment. This process is expected to continue in the cloud.
+The current operations management processes require that all new innovations from that team go through a release process. The central operations team within IT reviews the architecture for security, governance, and operations management concerns. After the team is comfortable with the solution, it releases the solution into a centrally managed production environment. This process is expected to continue in the cloud.
 
 ## Identity management
 
@@ -38,7 +38,7 @@ In the cloud, the company now has more options, like Azure Active Directory or A
 
 ## Network topology and connectivity
 
-Tailwind Traders uses MPLS lines to connect its datacenters and physical stores. All internet traffic is funneled through the primary datacenter. Due to IP conflicts between two of the datacenters, traffic is isolated and routing is dependent on complex routing tables. External connectivity into the datacenter or corporate office is delivered via virtual private network. That connectivity is limited and discouraged.
+Tailwind Traders uses Multiprotocol Label Switching (MPLS) lines to connect its datacenters and physical stores. All internet traffic is funneled through the primary datacenter. Due to Internet Protocol (IP) conflicts between two of the datacenters, traffic is isolated and routing is dependent on complex routing tables. External connectivity into the datacenter or corporate office is delivered via virtual private network. That connectivity is limited and discouraged.
 
 The primary and secondary datacenters have consistent IP address schemas that are maintained and organized clearly. The third datacenter includes 50 different IP blocks with little consistency and no clear organization or segmentation plan. The continuous innovation cycles are limited to the third datacenter but might present problems with defining the network topology and routing in the cloud.
 
@@ -48,4 +48,4 @@ Segmentation of resources between each datacenter treated each collection of wor
 
 Beyond that basic organization, there are inconsistencies in the configuration management database, so it's hard to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well defined for mission-critical workloads but are missing for most other workloads. 
 
-For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, over 30 percent of the supported assets are not clearly mapped to a single workload. Practices will be required during migration to ensure a dependency analysis and proper resource organization.
+For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. The configuration mapping often references virtual machines that have been terminated. Likewise, more than 30 percent of the supported assets are not clearly mapped to a single workload. Practices will be required during migration to ensure a dependency analysis and proper resource organization.
