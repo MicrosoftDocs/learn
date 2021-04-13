@@ -28,7 +28,7 @@ quiz:
     - content: A database-level IP address rule
       isCorrect: false
       
-  - content: 'A mask has been applied to a column in the database that holds a user’s email address, laura@contoso.com. From the list of options, what would the mask display for a database administrator account?'
+  - content: 'A mask has been applied to a column in the database that holds a user’s email address, laura@contoso.com. From the list of options, what would the mask display when a database administrator account accesses user data?'
     choices:
     - content: lxxx@xxxx.com
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
       explanation: When database administrator accounts access data that have a mask applied, the mask is removed, and the original data is visible.
     - content: Data not available
       isCorrect: false
-
+      
   - content: 'Transparent Data Encryption will encrypt which database files?'
     choices:
     - content: Database files only 
@@ -56,6 +56,6 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: true
-      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections
+      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections.
     - content: "No"
       isCorrect: false

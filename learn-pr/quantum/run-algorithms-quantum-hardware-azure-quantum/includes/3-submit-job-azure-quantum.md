@@ -12,7 +12,7 @@ Azure Quantum uses the quantum extension for the Azure CLI to enable submitting 
 1. Open a command prompt, and then run the following command:
 
    ```azurecli
-   az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
+   az extension add -n quantum
    ```
 
 ## Create a workspace

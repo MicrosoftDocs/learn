@@ -75,9 +75,11 @@ In this task, you configure the server and run a SQL query.
 
 1. From the **All resources** pane, search and select **SQL databases** and ensure that your new database was created. You might need to refresh the page.
 
-    ![Screenshot of the SQL database and server that have just been deployed.](../media/sql-database.png)
+    ![Screenshot of the SQL database Query editor (preview).](../media/sql-database.png)
 
 2. Select the **db1** entry representing the SQL database you created, and then select **Query editor (preview)** in the nav bar.
+
+    ![Screenshot of the SQL database and server that have just been deployed.](../media/query-editor-preview.png)
 
 3. Sign in as **sqluser**, with the password **Pa$$w0rd1234**.
 
