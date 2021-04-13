@@ -1,8 +1,8 @@
-Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub UI and REST API endpoints.
+Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub website and REST API endpoints.
 
 ## Default environment variables and contexts
 
-Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. It is recommended that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, input `$` followed by the environment variable.
+Within the GitHub Actions workflow, there are several default environment variables that are available for you to use, but only within the runner that is executing a job. These default variables are case-sensitive, and refer to configuration values for the system and the current user. It is recommended that these default environment variables are used to reference the filesystem rather than using hardcoded file paths. To use a default environment variable, specify `$` followed by the environment variable.
 
 ```yml
 jobs:
@@ -13,7 +13,7 @@ jobs:
 
 For a list of available default environment variables, check out [Default environment variables](https://docs.github.com/en/actions/reference/environment-variables#default-environment-variables).
 
-In addition to default environment variables, you can use defined variables as contexts. Contexts are similar to default variables in that they provide access to environment information, but they're slightly nuanced from each other. While default environment variables can only be used within the runner, context variables can be used at any point within the workflow. For example, context variables allow you to run an `if` statement to evaluate an expression before the runner is executed.
+In addition to default environment variables, you can use defined variables as contexts. Contexts and default variables are similar in that they both provide access to environment information, but they have some important differences. While default environment variables can only be used within the runner, context variables can be used at any point within the workflow. For example, context variables allow you to run an `if` statement to evaluate an expression before the runner is executed.
 
 ```yml
 name: CI
@@ -49,7 +49,7 @@ jobs:
 
 ## Using scripts in your workflow
 
-In the above workflow snippet examples, the `run` keyword is used to simply echo a string of text. Since the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
+In the above workflow snippet examples, the `run` keyword is used to simply print a string of text. Since the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
 
 ```yml
 jobs:
