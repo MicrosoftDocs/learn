@@ -1,12 +1,12 @@
 Before we get into the details of how to use AI to classify rocks, let's start by learning about the different types of rocks that we'll be studying. You'll also get a chance to see how well *you* do at classifying rocks.
 
 
-## Moon rocks
+## Moon rocks, dissecting the moon
 
 In this lesson, we'll use two types to classify rocks: *basalt* and *highland* (also known as *crustal*). Both of these rock types are found on the Earth. But for our study, we'll look only at the lunar variants; that is, rocks from the Moon.
 
 
-### Basalt rock
+### Basalt rock, discover the insides of a crater
 
 Basalt is a dark rock. Scientists believe basalt comes from ancient volcanic eruptions on the Earth's Moon. When you look up at the Moon and see dark spots and patches, you're likely seeing basalt rock. Nearly 17% of the near side of the Moon is basalt, and only 2% of the far side is basalt. Most basalt in both of the Moon's hemispheres is found in basins or large craters.
 
@@ -15,7 +15,7 @@ Basalt is a dark rock. Scientists believe basalt comes from ancient volcanic eru
 :::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="A photo of two pieces of basalt rock on a flat surface." loc-scope="Azure":::
 
 
-### Highland rock 
+### Highland rock, the crust of the Moon 
 
 Highland rock is lighter than basalt rock because basalt is made of heavier elements like iron and magnesium. A theory about how highland rock was made is that a large magma ocean covered the Moon as it formed and then crystallized. Highland rock is lighter than basalt. The theory is the highland rock floated to the top of the ocean and became the crust of the Moon.
 

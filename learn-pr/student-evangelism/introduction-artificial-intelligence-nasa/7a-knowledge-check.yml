@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions based on what it knows."
     - content: "Primarily a way to automate monotonous tasks that don't require much thinking."
       isCorrect: false
-      explanation: "Incorrect. AI can do complex tasks that go beyond providing only convenience."
+      explanation: "Incorrect. AI can do complex tasks that go beyond providing mere convenience."
   - content: "What is the role of Anaconda in using Python?"
     choices:
     - content: "You can use Anaconda to download one Python library at a time."
