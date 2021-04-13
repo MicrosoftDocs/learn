@@ -2,10 +2,6 @@
 
 ## Title
 
-  Protect your Azure Virtual Network resources by using Azure Firewall
-
-  or
-
  Protect your Windows Virtual Desktop deployment by using Azure Firewall
 
 ## Role(s)
@@ -28,7 +24,7 @@
 
 ## Summary
 
-*Add the summary [(Guidance)](id-guidance-introductory-summaries.md)*
+Deploy Azure Firewall. Configure the subnet for your Windows Virtual Desktop host pool to route all network traffic through Azure Firewall. Allow outbound network access from the host pool to Windows Virtual Desktop by configuring the subnet, an application rule and a network rule collection.
 
 ## Learning objectives
 
@@ -50,7 +46,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Suppose you work at a large accounting firm where you've just deployed Windows Virtual Desktop. Your organization is using Windows Virtual Desktop to provide your workforce access to virtualized desktops and apps including some legacy apps. Because of the sensitive data your organization works with, network security is very important to you. You don't want any unauthorized network traffic in your Windows Virtual Desktop environment. You want to start by limiting outbound network traffic for Windows Virtual Desktop by using Azure Firewall.
+    Suppose you work at a large accounting firm where you've just deployed a Windows Virtual Desktop host pool. Your organization is using Windows Virtual Desktop to provide your workforce access to virtualized desktops and apps including some legacy apps. Because of the sensitive data your organization works with and your organization's network security requirements, network security is very important to you. You can't have any unauthorized network traffic in your Windows Virtual Desktop environment. You want to start by limiting outbound network traffic for Windows Virtual Desktop by using Azure Firewall.
 
 1. **Use Azure Firewall to protect Window Virtual Desktop deployments**
 
@@ -69,19 +65,17 @@ Identify the subtasks of *module title*
     1. [Create a Windows Virtual Desktop host pool](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-powershell#use-your-powershell-client-to-create-a-host-pool) (with PowerShell or UI?).
     1. Create a registration token to authorize a session host to join the host pool.
     1. Copy token to notepad.
-    1. Add Azure Active Directory users to the default desktop app group for the host pool? (Do we need this step?)
 
     Create VM
-    1. [Create Windows VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal) that'll act as host.
+    1. [Create Windows VM](https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal) that'll act as host. Create using Windows 10 image not server - so we don't have to install host role or disable firewall to download agents.
 
     [Register VM to WVD host pool](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-powershell#register-the-virtual-machines-to-the-windows-virtual-desktop-host-pool)
 
     1. Connect to VM
-    1. [Install the Remote Desktop Session Host (RDSH) role](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-powershell#use-your-powershell-client-to-create-a-host-pool)?
     1. Download and install Windows Virtual Desktop Agent.
     1. Enter copied registration token when installing WVD agent.
     1. Download and install Windows Virtual Desktop Agent Bootloader.
-    1. Verify VM is associated with WVD (in portal?)
+    1. Verify VM is associated with WVD (in portal?) - should say available in portal
 
 1. **Plan Azure Firewall deployment**
 
@@ -99,11 +93,19 @@ Identify the subtasks of *module title*
     1. Create subnet for Azure Firewall (AzureFirewallSubnet) on same Vnet as WVD(?) Resource: [Tutorial: Deploy & configure Azure Firewall using the Azure portal | Microsoft Docs](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#set-up-the-network)
     1. [Deploy firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
  
-1. **Allow outbound network access from the host pool to Windows Virtual Desktop**
+1. **Allow outbound network access for Windows Virtual Desktop**
+
+    Allow outbound network access from the host pool to Windows Virtual Desktop:
 
     - Overview of steps to route traffic
     - Rules and configurations needed host outbound for WVD
     - Diagram to show the pieces??
+
+   Allow outbound network access from the host pool to the Internet:
+
+    - When the list of allowed destinations is well-defined (e.g. Microsoft 365 access). 
+    - Use Azure Firewall application and network rules to configure the required access.
+    - To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Windows Virtual Desktop host pool with an explicit proxy configuration.
 
 1. **Exercise - Route network traffic through Azure Firewall**
 
@@ -116,23 +118,16 @@ Identify the subtasks of *module title*
 		1. Source IP address range is host pool Vnet
 		1. Protocol is https
 		1. Destination is WindowsVirtualDesktop
-    1. Need to explicitily allow in firewall application rules exact FQDNs you need - not all captured in     WindowsVirtualDesktop FQDN. (**Do we need to do this in the exercise or can we just mention in conceptual unit?**)
+    1. Need to explicitily allow in firewall application rules exact FQDNs you need - not all captured in     WindowsVirtualDesktop FQDN. 
 	   - Allow https access from host pool subnet to specific URLs (in article).
-	   - Use log analytics query to get exact ones.
+
     1. Create network rule collection with specific rules (see last main bullet in [Host pool outbound access..](https://docs.microsoft.com/azure/firewall/protect-windows-virtual-desktop#host-pool-outbound-access-to-windows-virtual-desktop) & [Configure network rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)).
+    1. Verify Firewall is working (use PS query)
 
-1. **Allow outbound network access from the host pool to the Internet**
-
-    - When the list of allowed destinations is well-defined (e.g. Microsoft 365 access). 
-    - Use Azure Firewall application and network rules to configure the required access.
-    - To filter outbound user Internet traffic using an existing on-premises secure web gateway, configure web browsers or other applications running on the Windows Virtual Desktop host pool with an explicit proxy configuration.
-
-1. **Exercise - Create application rule to allow outbound Internet traffic**
-    
-    1. Sign into VM and try to connect to blocked endpoint like google? 
-    1. Review firewall network log (?) - specifically which one is this [Azure Firewall logs and metrics](https://docs.microsoft.com/en-us/azure/firewall/logs-and-metrics#diagnostic-logs). Should show ?
-    1. Change application rule to allow google?
-    1. Review firewall network log.
+    ```powershell
+    "rdgateway", "rdbroker","rdweb"|%{Invoke-RestMethod -Method:Get -Uri https://$_.wvd.microsoft.com/api/health}|ft -Property Health,TimeStamp,ClusterUrl
+     ```
+    If all 3 component services are healthy, the firewall is working, if 1 or more are not healthy, the firewall is not working.
 
 1. **Summary**
 
