@@ -6,7 +6,7 @@ metadata:
   description: "Optional exercise – Listen for incoming data"
   ms.date: 03/25/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-python
