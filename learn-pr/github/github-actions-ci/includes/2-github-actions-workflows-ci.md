@@ -143,7 +143,7 @@ To download the artifact for testing, the build must have completed successfully
 ```yml
 test:
     needs: build
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 ```
 
 In the following workflow snippet, you see we download the artifact. Now the test job can use the artifact for testing.
