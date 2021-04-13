@@ -47,7 +47,7 @@ quiz:
       explanation: "Correct. It supports in-memory processing which helps boost the performance of big-data analytic applications."
     - content: "Apache Kafka"
       isCorrect: false
-      explanation: "Icorrect. Apache Kafka is an event streaming platform."
+      explanation: "Incorrect. Apache Kafka is an event streaming platform."
   - content: "In a Hadoop cluster on HDInsight, which of the following is responsible for processing data?"
     choices:
     - content: "Head node"
