@@ -1,6 +1,6 @@
 Here, you'll learn about choosing the right visibility for your action, best practices for documenting and versioning your action, and how to publish your action to the GitHub Marketplace. 
 
-## Choosing a location for your action
+## Choose a location for your action
 
 ![public-private](https://user-images.githubusercontent.com/6351798/112498369-14be9f80-8d4c-11eb-8139-b7a8e7d9d169.png)
 
@@ -15,7 +15,7 @@ Public actions can be used by workflows in any repository. If you're developing 
 
 When an action is in a private repository, the action can only be used in workflows in the same repository. With private actions, you can store the action's files in any location in your repository. If you plan to combine action, workflow, and application code in a single repository, it's recommended to store the action in the .github directory. For example, `.github/actions/action-a` and `.github/actions/action-b`.
 
-## Documenting your action
+## Document your action
 
 It can be very frustrating to use a new tool or application when the documentation is vague or even missing. It's important to include good documentation with your action so that others can see how it works, regardless of if you plan to make it public or private. The first thing to do is creating a good `README.md` file for your action.
 
@@ -30,15 +30,15 @@ The `README.md` file is often the first place developers will look at to see how
 
 As a general rule, the `README.md` file should include everything a user should know to use the action. If you think it could be useful information, include it in the `README.md`.
 
-## Releasing and versioning your action
+## Release and version your action
 
 If you're developing an action for other people to use, regardless of if it's public or private, you should define a release management strategy to control how updates are distributed. Major version updates including necessary critical fixes and security patches that affect compatibility need to be documented clearly.
 
-### Good practices for release and versioning management
+### Good practices for release and version management
 
 A good release management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action as the default branch which is likely to contain the latest code (which may or may not be stable) and could result in your workflow breaking. Instead, it's recommended that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. This can be done by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
 
-#### Using tags
+#### Tags
 
 Tags can be a good way to manage releases for an action. By using tags, users can easily distinguish between major and minor versions. Below is a list of helpful practices to consider when creating releases:
 
@@ -57,7 +57,7 @@ steps:
     - uses: actions/javascript-action@v1-beta
 ```
 
-#### Using a commit's SHA
+#### Use a commit's SHA
 
 Tags are useful and widely used but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and cannot be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often times in Git you can abbreviate the SHA hash to the first several characters and Git will recognize the reference. If you are using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
 
@@ -66,13 +66,11 @@ steps:
     - uses: actions/javascript-action@2522385f6f7ba04fe7327647b213799853a8f55c
 ```
 
-For more information on release management and versioning, check out [Using release management for action](https://docs.github.com/en/actions/creating-actions/about-actions#using-release-management-for-actions).
-
-## Publishing an action to the GitHub Marketplace
+## Publish an action to the GitHub Marketplace
 
 ![gh-marketplace](https://user-images.githubusercontent.com/6351798/109706156-d4f20700-7b55-11eb-8826-227d7abdc6cd.png)
 
-When you're ready to share your action with the GitHub community, you can publish it to the GitHub Marketplace and reach out to millions of GitHub users. Actions published to the GitHub Marketplace are published immediately if all of the requirements are met, but need to be reviewed by GitHub if it's not the case. You'll need to ensure that the repository only includes the metadata file, code, and files necessary for the action. Creating a single repository for the action allows you to tag, release, and package the code in a single unit. GitHub also uses the action's metadata on your GitHub Marketplace page.
+When you're ready to share your action with the GitHub community, you can publish it to the GitHub Marketplace and reach out to millions of GitHub users. Actions published to the GitHub Marketplace are published immediately if all of the requirements are met. Actions that do not meet the requirements will need to be reviewed by GitHub before being published. You'll need to ensure that the repository only includes the metadata file, code, and files necessary for the action. Creating a single repository for the action allows you to tag, release, and package the code in a single unit. GitHub also uses the action's metadata on your GitHub Marketplace page.
 
 Below are the requirements to publish an action to the GitHub Marketplace. They apply to both Docker container-based actions and JavaScript-based actions:
 
@@ -84,4 +82,4 @@ Below are the requirements to publish an action to the GitHub Marketplace. They 
      - The `name` cannot match an existing GitHub Marketplace category.
      - The `name` cannot match an existing GitHub feature.
 
-You can add the action you've created to the GitHub Marketplace by tagging it as a new release and then publishing it. There are a few guided steps in the GitHub UI that allow you to publish a release of your action. To see these guided steps, check out [Publishing an action](https://docs.github.com/en/actions/creating-actions/publishing-actions-in-github-marketplace#publishing-an-action).
+You can add the action you've created to the GitHub Marketplace by tagging it as a new release and then publishing it. There are a few guided steps in GitHub that enable you to publish a release of your action. More information on these steps can be found in the summary section at the end of this module. 
