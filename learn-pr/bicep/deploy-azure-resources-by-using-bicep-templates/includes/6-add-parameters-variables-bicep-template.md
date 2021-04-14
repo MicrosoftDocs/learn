@@ -66,6 +66,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    }
    ```
 
+1. Save the changes to the file.
+
 ## Automatically set the SKUs for each environment type
 
 1. In the *main.bicep* file in Visual Studio Code, add the following Bicep code below the parameters that you created in the previous task:
