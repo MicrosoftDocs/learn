@@ -1,4 +1,4 @@
-> [!VIDEO https://www.youtube.com/watch?v=zPjRLL7pShc]
+> [!VIDEO https://www.youtube.com/embed/zPjRLL7pShc]
 
 You made to the interview. Congrats, that means someone looked through your resume, and liked what they saw. It most likely also means you passed a phone screening and or a take home test. 
 
