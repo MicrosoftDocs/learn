@@ -15,9 +15,9 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template that contains a storage account
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*. You'll deploy the template soon. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+1. Open Visual Studio Code, and create a new file called *main.bicep*. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select File > Save, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file - for example, you might want to create a **scripts** folder to save it in.
 
-1. Add the following content into the file. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
+1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -49,6 +49,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
+
 1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
     :::image type="content" source="../media/4-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash in the dropdown menu." border="true":::
