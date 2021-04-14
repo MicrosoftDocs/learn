@@ -100,9 +100,9 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
           - bitnami-common
     ```
 
-    Notice the dependencies section at the bottom of the file. This information shows you that there's a subchart to the main chart. However, this chart isn't yet available.
+    Notice the dependencies section at the bottom of the file. This information shows you that there's a subchart to the main chart.
 
-1. Run the `helm dependency build` command to download all chart dependencies.
+1. Run the `helm dependency build` command to download and update all chart dependencies.
 
     ```bash
     helm dependency build ./drone-webapp-chart
@@ -131,7 +131,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     drone-webapp-chart/
     ...
     drone-webapp-chart/charts
-    drone-webapp-chart/charts/common-0.6.2.tgz
+    drone-webapp-chart/charts/common-0.10.0.tgz
     drone-webapp-chart/README.md
     drone-webapp-chart/templates
     drone-webapp-chart/templates/deployment.yaml
@@ -139,7 +139,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     drone-webapp-chart/values.yaml
     ```
 
-    A subchart named `common` is now available in the `charts/` folder. You can extract the contents of the `common-0.10.0.tgz` package if you're interested in its contents. However, unpacking the file isn't required to complete the installation of the chart.
+    An updated subchart named `common` is now available in the `charts/` folder. You can extract the contents of the `common-0.10.0.tgz` package if you're interested in its contents. However, unpacking the file isn't required to complete the installation of the chart.
 
     Here is the command to unpack the file and list the folder contents:
 
