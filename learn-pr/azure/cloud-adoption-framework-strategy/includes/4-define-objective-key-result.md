@@ -36,7 +36,7 @@ Here are the key principles of OKRs:
 
 OKRs help create alignment and accountability within organizations, as demonstrated in the following graph:
 
-:::image type="content" source="../media/okr.jpg" alt-text="Graph that demonstrates how O K Rs increase alignment and accountability within an organization to help it meet goals faster." border="false":::
+:::image type="content" source="../media/okr.png" alt-text="Graph that demonstrates how O K Rs increase alignment and accountability within an organization to help it meet goals faster." border="false":::
 
 ## Examples of OKRs
 
