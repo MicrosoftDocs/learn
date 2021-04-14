@@ -5369,6 +5369,106 @@
       "source_path": "learn-pr/wwl-data-ai/design-bot-conversation-flow/6-design-hand-off-humans.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-bot-conversation-flow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/0-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/0-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/1-set-up-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/1-set-up-visual-studio-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/2-python-basics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/2-python-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/3-create-quiz-1.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/3-create-quiz-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/4-create-quiz-2.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/4-create-quiz-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/5-create-quiz-3.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/5-create-quiz-3",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/6-score-quiz-python.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/6-score-quiz-python",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/personality-quiz/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/personality-quiz/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/0-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/0-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/1-visual-studio-code-setup.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/1-visual-studio-code-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/2-python-basics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/2-python-basics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/3-ceasar-cipher-part-1.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/3-ceasar-cipher-part-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/4-ceasar-cipher-part-2.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/4-ceasar-cipher-part-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/5-ceasar-cipher-full-word.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/5-ceasar-cipher-full-word",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/6-test-decoder.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/6-test-decoder",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/python-partnership/secret-message/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/",
+      "redirect_document_id": false
     }
   ]
 }

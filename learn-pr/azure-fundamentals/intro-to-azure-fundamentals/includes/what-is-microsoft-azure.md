@@ -6,59 +6,40 @@ With help from Azure, you have everything you need to build your next great solu
 
 :::row:::
   :::column span="3":::  
-
 **Be ready for the future:** Continuous innovation from Microsoft supports your development today and your product visions for tomorrow.
-
   :::column-end:::
   :::column:::
-
 ![Image that shows a launching rocket ship to represent the future.](../media/future.png)
-
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
-
 ![Image that shows three slider bars to represent choice in your usage needs.](../media/build.png)
-
   :::column-end:::
   :::column span="3":::  
-
-**Build on your terms:** You have choices. With a commitment to open source, and support for all languages and frameworks, build how you want and deploy where you want to.
-
+**Build on your terms:** You have choices. With a commitment to open source, and support for all languages and frameworks, you can build how you want and deploy where you want to.
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column span="3":::  
-
 **Operate hybrid seamlessly:** On-premises, in the cloud, and at the edge--we'll meet you where you are. Integrate and manage your environments with tools and services designed for a hybrid cloud solution.
-
   :::column-end:::
   :::column:::
-
 ![Image that shows a brick building datacenter next to a cloud datacenter to represent both datacenters working together.](../media/hybrid.png)
-
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
-
 ![Image that shows a shield over a cloud to represent cloud security.](../media/trust.png)
-
   :::column-end:::
   :::column span="3":::  
-
 **Trust your cloud:** Get security from the ground up, backed by a team of experts, and proactive compliance trusted by enterprises, governments, and startups.
-
   :::column-end:::
 :::row-end:::
 
 ## What can I do with Azure?
 
-Azure provides more than 100 services that enable you to do everything from running your existing applications on virtual machines to exploring new software paradigms, such as intelligent bots and mixed reality.
+Azure provides more than 100 services that enable you to do everything from running your existing applications on virtual machines, to exploring new software paradigms, such as intelligent bots and mixed reality.
 
 Many teams start exploring the cloud by moving their existing applications to virtual machines that run in Azure. Migrating your existing apps to virtual machines is a good start, but the cloud is much more than a different place to run your virtual machines.
 

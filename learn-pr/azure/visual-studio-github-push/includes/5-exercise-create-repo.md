@@ -58,7 +58,7 @@ You can validate the successful creation of your repository locally and remotely
 
 2. Select your default branch to refresh the history graph for the branch. You can now see the two initial commits that Visual Studio made to create your repository.
 
-    :::image type="content" source="../media/5-git-repo-window.png" alt-text="Screenshot of the Git Repository window with the master branch.":::
+    :::image type="content" source="../media/5-git-repo-window.png" alt-text="Screenshot of the Git Repository window with the main branch.":::
 
 3. Go to **Git** > **Manage Remotes**. 
 
