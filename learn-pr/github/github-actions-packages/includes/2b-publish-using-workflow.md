@@ -46,10 +46,7 @@ The above workflow does a few things after a new release is created:
 
 1. A job named `build` runs `npm ci` (named after Continuous Integration)  to install dependencies directly from the `package-lock.json` file.
 1. Once the `build` job succeeds, the job named `publish-gpr` publishes the package.
-1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an access token for authentication.
-
-To learn more about publishing a package to GitHub Packages, check out [Publishing a package](https://docs.github.com/en/packages/learn-github-packages/publishing-a-package).
-
+1. The workflow publishes the package to the `registry-url: https://npm.pkg.github.com/` using an agiccess token for authentication.
 
 ## Use GitHub Container Registry to host and manage Docker container images
 
@@ -76,7 +73,5 @@ docker push ghcr.io/OWNER/IMAGE_NAME:latest
 >
 >- For package registries `PACKAGE-REGISTRY.pkg.github.com`, you can use a GITHUB_TOKEN.
 >- For the container registry `ghcr.io/OWNER/IMAGE-NAME`, you must use a personal access token.
-
-For more information on storing and managing Docker images in the GitHub Container Registry, check out [Pushing and pulling Docker images](https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images).
 
 In the next unit, you will use GitHub Actions to build a container image and publish it to GitHub Packages.

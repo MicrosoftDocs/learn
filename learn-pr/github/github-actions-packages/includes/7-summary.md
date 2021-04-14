@@ -19,3 +19,5 @@ Here are some links to more information on the topics we discussed in this modul
 
 - [Publishing a Package](https://docs.github.com/en/free-pro-team@latest/packages/publishing-and-managing-packages/publishing-a-package)
 - [Using GitHub Packages with your project's ecosystem](https://docs.github.com/en/free-pro-team@latest/packages/using-github-packages-with-your-projects-ecosystem)
+- [Publishing a package](https://docs.github.com/en/packages/learn-github-packages/publishing-a-package)
+- [Pushing and pulling Docker images](https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images)
