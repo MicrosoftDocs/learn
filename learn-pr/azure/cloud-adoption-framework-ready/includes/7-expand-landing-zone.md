@@ -21,7 +21,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 At a minimum, you'll likely need two subscriptions:
 
 - Create one Azure subscription to contain your *production* workloads.
-- Create a second subscription to serve as your *nonproduction* (development/test) environment, by using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true) for lower pricing.
+- Create a second subscription to serve as your *nonproduction* (dev/test) environment, by using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true) for lower pricing.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="Diagram of an initial subscription model that shows keys next to boxes labeled production and nonproduction." border="false":::
 
