@@ -1,6 +1,6 @@
-Here, we discuss how to remove workflow artifacts from GitHub and change the default retention period. Next, we show you how to create a workflow status badge and add it to your `README.md` file. Finally, we discuss some important workflow environment protections and how to enable them. 
+Here, you learn how to remove workflow artifacts from GitHub and change the default retention period. Next, you learn how to create a workflow status badge and add it to your `README.md` file. Finally, you identify some important workflow environment protections and how to enable them. 
 
-## Removing workflow artifacts from GitHub
+## Remove workflow artifacts from GitHub
 
 By default, GitHub will store any build log and uploaded artifacts for 90 days before they are deleted. This retention period can be customized based on the type of repository and the usage limits set for your specific GitHub product. There is a lot more information regarding usage limits and artifact retention than what makes sense to cover here, so check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) for more information.
 
@@ -11,7 +11,7 @@ But let's say you're reaching your organization’s storage limit for GitHub art
 
 ### Manually delete artifacts from your repository
 
-To manually delete an artifact using the UI you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see. 
+To manually delete an artifact on GitHub you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see. 
 
 ![run-name](https://user-images.githubusercontent.com/6351798/107467078-73c0b000-6b22-11eb-955e-66a46c1f8deb.png)
 
@@ -38,9 +38,11 @@ The following example uploads an artifact that will persist for 10 days instead 
     retention-days: 10
 ```
 
-## Adding a workflow status badge to your repository
+## Add a workflow status badge to your repository
 
-It's helpful to know the status of a workflow without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, it can also be added to any web page you want. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
+It's helpful to know the status of a workflow without having to visit the **Actions** tab to see if it successfully completed. Adding workflow status badges to your repository `README.md` file allows you to quickly see if your workflows are passing or failing. While it's common to add a status badge to a repository `README.md` file, it can also be added to any web page. By default, status badges display the workflow statuses on your default branch, but you can also display workflow status badges on other branches using the `branch` and `event` parameters.
+
+Below is an example of what needs to be added to a file to see a workflow status badge. 
 
 ```yml
 ![example branch parameter](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
@@ -50,14 +52,14 @@ For example, adding the `branch` parameter along with the desired branch name at
 
 ![Screen Shot 2021-02-10 at 2 36 01 PM](https://user-images.githubusercontent.com/6351798/107575668-5dac0180-6bad-11eb-91de-e2219c1f630b.png)
 
-You also have the ability to create a status badge markdown using the GitHub UI. To do this, navigate to the workflows section within the **Actions** tab and select a specific workflow. The **Create status badge** option will allow you to generate the markdown for that workflow and set the `branch` and `event` parameters.
+You also have the ability to create a status badge markdown using GitHub. To do this, navigate to the workflows section within the **Actions** tab and select a specific workflow. The **Create status badge** option will allow you to generate the markdown for that workflow and set the `branch` and `event` parameters.
 
 ![Screen Shot 2021-02-10 at 2 44 35 PM](https://user-images.githubusercontent.com/6351798/107576585-939db580-6bae-11eb-9217-069c69d6f6cd.png)
 
 
 For more information on adding workflow status badges, check out [Adding a workflow status badge](https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge).
 
-## Adding workflow environment protections
+## Add workflow environment protections
 
 Security is a big deal, so it makes sense to configure your workflow environment with protection rules and secrets. With these in place, a job won't start or access any defined secrets in the environment until all of the environment's protection rules pass. Currently, protection rules and environment secrets only apply to public repositories.
 
