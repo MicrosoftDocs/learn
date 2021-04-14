@@ -21,7 +21,7 @@
     > [!WARNING]
     > To assign a license to a user, the user must be assigned a usage location.
 
-1. When complete, verify the account for Dominique Koch is shown in the **All users** list.
+1. When complete, open Azure AD and click on Users to verify the account for Dominique Koch is shown in the list of all users.
 
 ## Update user license assignments
 
