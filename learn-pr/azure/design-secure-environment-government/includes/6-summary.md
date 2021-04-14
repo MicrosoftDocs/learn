@@ -2,7 +2,7 @@ Multi-tenant cloud services such as Azure give government customers access to th
 
 Now that you’ve reviewed this module, you should be able to:
 
-* Explain the basic concept and benefits of multi-tenant cloud services.
+* Explain the basic concept and benefits of public multi-tenant cloud services.
 * Describe a conceptual architecture that protects data at various classification levels.
 * Explain how residency and encryption features keep data of all classification levels safe.
 
@@ -16,18 +16,16 @@ Now that you’ve reviewed this module, you should be able to:
 * Learn more about [Azure Monitor](https://azure.microsoft.com/services/monitor/).
 * Learn more about [Azure Private Link](https://docs.microsoft.com/azure/private-link/).
 * Learn more about [Azure Security Center](https://azure.microsoft.com/services/security-center/).
-* Learn more about [Azure SmartNICs](https://www.microsoft.com/research/uploads/prod/2018/03/Azure_SmartNIC_NSDI_2018.pdf).
+* Learn more about [Azure SmartNICs](https://www.microsoft.com/research/publication/azure-accelerated-networking-smartnics-public-cloud/).
 * Learn more about [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview).
 * Learn more about [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview).
 * Learn more about [Azure Support Options](https://azure.microsoft.com/support/options/).
-* Learn more about [compliance documentation](https://aka.ms/azurestackcompliance).
+* Learn more about [compliance documentation](https://docs.microsoft.com/azure/compliance/).
 * Learn more about [ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction).
-* Learn more about [Intel Software Guard Extensions](https://software.intel.com/sgx).
+* Learn more about [Intel Software Guard Extensions](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html).
 * Learn more about [Intelligent cloud and intelligent edge](https://azure.microsoft.com/overview/future-of-cloud/).
 * Learn more about [Managed HSM](https://docs.microsoft.com/azure/key-vault/managed-hsm/overview).
-* Learn more about [Operated completely disconnected](https://docs.microsoft.com/azure-stack/operator/azure-stack-disconnected-deployment).
-* Learn more about [Service Trust Portal](https://aka.ms/stp).
-* Learn more about Tactical Azure Stack Hub.
+* Learn more about [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf).
 * Learn more about [Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
-* Learn more about [Virtual Private Networks](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
+* Learn more about [Virtual Private Network (VPN) gateways](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways).
 * Learn more about [VNet Integration](https://docs.microsoft.com/azure/virtual-network/virtual-network-for-azure-services).

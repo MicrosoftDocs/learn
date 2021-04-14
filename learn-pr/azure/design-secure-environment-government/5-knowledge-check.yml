@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect: Azure uses logical isolation to segregate each customer's applications and data from those of others. This approach provides the scale and economic benefits of multi-tenant cloud services while preventing customers from accessing one another's data or applications."
     - content: "Hyperscale public cloud also offers many features that incorporate the latest cloud innovations."
       isCorrect: true
-      explanation: "Correct: Features, such as artificial intelligence, machine learning, IoT services, intelligent edge, help government customers increase efficiency and unlock insights into their operations and performance."
+      explanation: "Correct: Features, such as artificial intelligence, machine learning, IoT services, and intelligent edge, help government customers increase efficiency and unlock insights into their operations and performance."
     - content: "Applications and data are stored in multiple physical hardware components."
       isCorrect: false
       explanation: "Multiple customer’s applications and data are stored on the same physical hardware."
@@ -36,14 +36,14 @@ quiz:
       explanation: "Azure confidential computing offers encryption of data while it’s in use, ensuring that data is always under customer control."
     - content: "Just-in-time (JIT) virtual machine (VM) access."
       isCorrect: false
-      explanation: "Incorrect: Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to Azure VMs by creating Network Security Group (NSG) rules."
+      explanation: "Incorrect: Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to Azure VMs by creating network security group (NSG) rules."
     - content: "Customer Lockbox."
       isCorrect: false
-      explanation: "Incorrect: Customer Lockbox for Azure allows customers to Approve/Deny elevated access requests for customer data in support scenarios."
+      explanation: "Incorrect: Customer Lockbox for Azure allows customers to approve/deny elevated access requests for customer data in support scenarios."
     - content: "Azure Stack Hub."
       isCorrect: true
       explanation: "Correct:  Azure Stack Hub enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data."
-  - content: "Which technology allows customers to Approve/Deny elevated access requests for customer data in support scenarios?"
+  - content: "Which technology allows customers to approve/deny elevated access requests for customer data in support scenarios?"
     choices:
     - content: "Tactical Azure Stack Hub."
       isCorrect: false
@@ -56,4 +56,4 @@ quiz:
       explanation: "Incorrect: Azure Dedicated Host provides physical servers that can host one or more Azure VMs and are dedicated to one Azure subscription. Customers can provision dedicated hosts within a region, availability zone, and fault domain."
     - content: "Customer Lockbox."
       isCorrect: true
-      explanation: "Correct: Customer Lockbox for Azure allows customers to Approve/Deny elevated access requests for customer data in support scenarios. It’s an extension of the Just-in-Time (JIT) workflow that comes with full audit logging enabled."
+      explanation: "Correct: Customer Lockbox for Azure allows customers to approve/deny elevated access requests for customer data in support scenarios. It’s an extension of the Just-in-Time (JIT) workflow that comes with full audit logging enabled."
