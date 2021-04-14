@@ -232,7 +232,7 @@ You built your application and now it's running locally in your browser.
 
 Next, you'll publish your application to Azure Static Web Apps.
 
-## Create a Static Web App
+## Create a static web app
 
 Now that you've created your GitHub repository, you can create a Static Web Apps instance using the Azure Static Web Apps extension for Visual Studio Code.
 
@@ -284,15 +284,15 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Enter **my-static-web-app-and-api**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
+   :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web Apps":::
 
 1. Select the **Custom** option, and press <kbd>Enter</kbd>
 
-   :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web App - Custom":::
+   :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web Apps - Custom":::
 
 1. Select the **Manually enter location** option, and press <kbd>Enter</kbd>
 
-   :::image type="content" source="../media/extension-manually-enter-location-of-app-option.png" alt-text="Create Static Web App - manually enter application location":::
+   :::image type="content" source="../media/extension-manually-enter-location-of-app-option.png" alt-text="Create Static Web Apps - manually enter application location":::
 
 ::: zone pivot="angular"
 
