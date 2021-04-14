@@ -24,4 +24,8 @@ Here are some links to more information on the topics we discussed in this modul
 - [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true)
 - [azure/webapps-container-deploy@v1](https://github.com/Azure/webapps-container-deploy?azure-portal=true)
 - [azure/login@v1](https://github.com/Azure/login?azure-portal=true)
-- [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true).
+- [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true)
+- [Artifact and log retention policy](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#artifact-and-log-retention-policy)
+- [Artifacts REST API](https://docs.github.com/en/rest/reference/actions#artifacts)
+- [Adding a workflow status badge](https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge)
+- [Environments](https://docs.github.com/en/actions/reference/environments)
