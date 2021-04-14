@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.interview.2-unit
+uid: learn.interview.2-prepare
 title: Prepare for the interviews
 metadata:
   title: Prepare for the interviews
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-unit.md)]
+  [!include[](includes/2-prepare.md)]
