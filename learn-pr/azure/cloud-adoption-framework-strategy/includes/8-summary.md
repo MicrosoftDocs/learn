@@ -1,6 +1,6 @@
 In this module, you learned how to establish and define an executive-level strategy for cloud adoption. Now you can apply these skills to your own cloud adoption or digital transformation strategy to create clarity and executive sponsorship for your program.
 
-In this module, you completed the following objectives:
+In this module, you completed the objectives to:
 
 - Create clarity on corporate strategy to ensure that all team members are working toward common goals. 
 - Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives.

@@ -2,7 +2,7 @@ Measuring objectives helps provide a financial consideration by defining the ret
 
 ## Sample outcomes by category
 
-Speaking in terms of business outcomes can feel like a foreign language to many technically minded individuals. To help ease translation, we've curated a set of examples of business outcome. You can use the following examples to inspire and demonstrate business outcomes that are based on actual transformation journeys.
+Speaking in terms of business outcomes can feel like a foreign language to many technical-minded individuals. To help ease translation, we've curated a set of examples of business outcome. You can use the following examples to inspire and demonstrate business outcomes that are based on actual transformation journeys.
 
 To help you find specific types of examples of business outcomes, we've separated our list of examples into categories. This approach tends to drive consensus-building conversations across business units.
 
@@ -22,7 +22,7 @@ View samples of [agility outcomes](https://docs.microsoft.com/azure/cloud-adopti
 
 ### Reach outcomes
 
-In a constantly shrinking market, global reach (ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
+In a constantly shrinking market, global reach (the ability to support global customers and users) can be measured by compliance in geographies that are relevant to the business.
 
 View outcomes related to [global reach](https://docs.microsoft.com/azure/cloud-adoption-framework/strategy/business-outcomes/reach-outcomes?azure-portal=true).
 
@@ -46,13 +46,13 @@ Learn more about [sustainability goals](https://docs.microsoft.com/azure/cloud-a
 
 ## Create a financial model for cloud transformation
 
-Creating a financial model that accurately represents the full business value of any cloud transformation can be complicated. Financial models and business justifications tend to vary for different organizations. This article establishes some formulas and points out a few things that are commonly missed when strategists create financial models.
+Creating a financial model that accurately represents the full business value of any cloud transformation can be complicated. Financial models and business justifications tend to vary for different organizations. This unit establishes some formulas and points out a few things that often are missed when strategists create financial models.
 
 ## Return on investment
 
 Return on investment (ROI) often is an important criteria for the C-suite or the board of directors. ROI is used to compare different ways to invest limited capital resources. The formula for ROI is fairly simple. The details you'll need to create each input to the formula might not be as simple, though. Essentially, ROI is the amount of return produced from an initial investment. ROI usually is represented as a percentage:
 
-:::image type="content" source="../media/formula-roi.png" alt-text="Image of a math equation that shows that R O I equals (gain from investment minus cost of investment) divided by cost of investment." border="false":::
+:::image type="content" source="../media/formula-roi.png" alt-text="Image of a math equation that shows that R O I equals gain from investment minus cost of investment divided by cost of investment." border="false":::
 
 In the next sections, we'll walk through the data you'll need to calculate the initial investment and the gain from investment (earnings).
 
@@ -77,7 +77,7 @@ These variables are described in the following sections.
 
 ### Revenue deltas
 
-Revenue deltas should be forecast in partnership with business stakeholders. After the business stakeholders agree on a revenue impact, the agreement can be used to improve the earning position.
+Revenue deltas should be forecast in partnership with business stakeholders. After the business stakeholders agree on a revenue impact, the agreement can be used to improve the earnings position.
 
 ### Cost deltas
 
@@ -116,7 +116,7 @@ This category provides one of the highest earning deltas. When you're considerin
 
 #### Cost avoidance
 
-When an operating expenditure is expected but not yet in an approved budget, the expenditure might not fit into a cost reduction category. For example, if VMware and Microsoft licenses need to be renegotiated and paid next year, they aren't fully qualified costs yet. Reductions in those expected costs are treated like operational costs for the sake of cost delta calculations. Informally, however, they should be referred to as "cost avoidance" until negotiation and budget approval is complete.
+When an operating expenditure is expected but not yet in an approved budget, the expenditure might not fit into a cost reduction category. For example, if VMware and Microsoft licenses need to be renegotiated and paid next year, they aren't fully qualified costs yet. Reductions in those expected costs are treated like operational costs for the sake of cost delta calculations. Informally, however, they should be referred to as cost avoidance until negotiation and budget approval is complete.
 
 #### Soft-cost reductions
 
@@ -132,9 +132,9 @@ An exception occurs when operational capacity is provided by a third party or a 
 
 #### Capital expense reductions or avoidance
 
-Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. An example of a datacenter expansion is a new high-performance cluster to host a big data solution or data warehouse. This expense  generally would fit into a capital expense category. 
+Capital expenses are slightly different from operating expenses. Generally, this category is driven by refresh cycles or datacenter expansion. A datacenter expansion example is the cost of a new high-performance cluster to host a big data solution or data warehouse. This expense  generally would fit into a capital expense category. 
 
-More common are the basic refresh cycles. Some companies have rigid hardware refresh cycles, which means that assets are retired and replaced on a regular cycle (usually every three, five, or eight years). These cycles often coincide with asset lease cycles or with the forecasted life span of equipment. In a new refresh cycle, IT draws on capital expense to acquire new equipment.
+More common are basic equipment refresh cycles. Some companies have rigid hardware refresh cycles, which means that assets are retired and replaced on a regular cycle (usually every three, five, or eight years). These cycles often coincide with asset lease cycles or with the forecasted life span of equipment. In a new refresh cycle, IT draws on capital expense to acquire new equipment.
 
 If a refresh cycle is approved and budgeted, a cloud transformation might help eliminate that cost. If a refresh cycle is planned but not yet approved, the cloud transformation might avoid a capital expenditure. Both reductions would be added to the cost delta.
 

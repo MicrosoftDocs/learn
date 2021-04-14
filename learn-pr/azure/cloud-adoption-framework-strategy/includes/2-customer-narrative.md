@@ -1,4 +1,4 @@
-In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared the narrative of Tailwind Traders. This module is the first step in Tailwind's cloud adoption journey. The Tailwind team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to a cloud effort.
+In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared the narrative of Tailwind Traders. This module is the first step toward Tailwind's cloud adoption journey. The Tailwind team is evaluating its strategic direction and ensuring stakeholder buy-in before committing to a cloud effort.
 
 The following excerpts from the customer narrative outline strategic objectives for Tailwind.
 

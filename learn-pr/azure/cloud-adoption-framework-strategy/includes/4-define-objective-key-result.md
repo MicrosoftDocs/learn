@@ -34,7 +34,7 @@ Here are the key principles of OKRs:
 
 ## How OKRs add value to an organization
 
-OKRs help create alignment and accountability within organizations, shown in the following graph:
+OKRs help create alignment and accountability within organizations, as demonstrated in the following graph:
 
 :::image type="content" source="../media/okr.jpg" alt-text="Graph that demonstrates how O K Rs increase alignment and accountability within an organization to help it meet goals faster." border="false":::
 
@@ -49,18 +49,18 @@ Here are some examples of OKRs:
 **Key results**:
 
 - 45 percent of K-12 schools using our platform.
-- A 12-percent increase in student engagement, as measured through internal systems.
-- A 95-percent satisfaction rate from quarterly parent surveys.
+- A 12 percent increase in student engagement, as measured through internal systems.
+- A 95 percent satisfaction rate from quarterly parent surveys.
 
 **Objective 2:** Build a technology platform that supports every person in our business to innovate and create.
 
 **Key results:**
 
 - Five new applications developed and adopted across the organization.
-- Every team with at least two members using the Microsoft Power Platform.
+- Every team with at least two members using Microsoft Power Platform.
 - Including new cloud technologies like data analytics and machine learning in all customer-facing applications.
 
-**Objective 3:** Transform our approach from sales-driven to data-driven.
+**Objective 3:** Transform our approach from sales driven to data driven.
 
 **Key results:**
 
@@ -68,13 +68,13 @@ Here are some examples of OKRs:
 - Increasing closing rates for sales engagements by 5 percent.
 - Reducing the time to close deals by 8 percent.
 
-## Next steps
+## Implement OKRs
 
 Five steps can help your organization move forward with OKRs:
 
-**Step 1: Learn**. Start exploring what OKRs can do for your business, and tune in to some of your industry peers and leaders to learn how OKRs have benefited their organizations.
+**Step 1: Learn**. Start exploring what OKRs can do for your business. Tune in to some of your industry peers and leaders to learn how OKRs have benefited their organizations.
 
-**Step 2: Plan**. As you begin to draft your OKRs, ensure that your sponsors are contributing and involved in the process. Work with an OKR coach to refine your OKRs.
+**Step 2: Plan**. As you begin to draft your OKRs, ensure that your sponsors contribute and are involved in the process. Work with an OKR coach to refine your OKRs.
 
 **Step 3: Launch**. Each organization launches initiatives differently. Maintain a strong communication plan, and build the OKR calibration and celebration process into your operating model.
 
