@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.interview
+metadata:
+  title: Mastering the interview
+  description: Learn how to
+  ms.date: 06/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Mastering the interview
+summary: Learn how to
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/interview.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: None
+units:
+  - learn.interview.1-introduction
+  - learn.interview.2-prepare
+  - learn.interview.3-check-preparation
+  - learn.interview.4-tech-interview
+  - learn.interview.5-interview
+  - learn.interview.6-knowledge-check
+  - learn.interview.7-summary
+badge:
+  uid: learn.interview.badge

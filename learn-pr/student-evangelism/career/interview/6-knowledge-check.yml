@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.interview.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 04/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What's a good interview etiquette?
+      choices:
+        - content: Have questions prepared to show interest for the company
+          isCorrect: false
+          explanation: Incorrect. Having questions is generally a good thing to do. It does show an interest which is positive. The sought after answer is though to send an email after the interview to say thank you.
+        - content: Send an email after the interview to thank for the opportunity.
+          isCorrect: true
+          explanation: Correct. You want to leave a good feeling, even if you don't get this particular position they may end up coming back to you in a few months. This is a clear case of win-win.
+        - content: Don't talk over the interviewer
+          explanation: Incorrect. Sometimes you might get really excited about a job and you might end up talking over the interviewer once or twice. That usually isn't a problem, but be wary of doing so too much.  
+          isCorrect: false
