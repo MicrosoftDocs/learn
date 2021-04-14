@@ -2,7 +2,7 @@ GitHub Actions is a powerful feature that empowers you to go from code to cloud 
 
 ## Types of GitHub actions
 
-![action-types](https://user-images.githubusercontent.com/6351798/109346884-8b40ae00-782f-11eb-8d33-e5509735627c.png)
+:::image type="content" source="../media/action-types.png" alt-text="Image that displays the three types of GitHub Actions; Docker, JavaScript, and composite run step actions." border="false":::
 
 Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks or by using actions shared by the GitHub community. Navigating through various actions you'll notice that there are three different types of actions: Docker container actions, JavaScript actions, and composite run steps actions. Let's take a closer look at each action type.
 
@@ -139,7 +139,7 @@ branding:
 
 Here is an example of a badge for the Checkout action on the GitHub Marketplace.
 
-<img width="1059" alt="Screen Shot 2021-03-31 at 3 52 53 PM" src="https://user-images.githubusercontent.com/6351798/113216226-3aaadf00-9239-11eb-8eee-da5d55cfa559.png">
+:::image type="content" source="../media/actions-branding.png" alt-text="Screenshot that shows an action's branding on the GitHub Marketplace.":::
 
 ## Workflow commands
 

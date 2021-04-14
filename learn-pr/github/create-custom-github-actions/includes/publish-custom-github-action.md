@@ -2,14 +2,13 @@ Here, you'll learn about choosing the right visibility for your action, best pra
 
 ## Choose a location for your action
 
-![public-private](https://user-images.githubusercontent.com/6351798/112498369-14be9f80-8d4c-11eb-8139-b7a8e7d9d169.png)
+:::image type="content" source="../media/public-private.png" alt-text="Image that displays the two visibility options for an action; public or private." border="false":::
 
 When creating an action it's important to first decide where you want that action to live and the visibility of that action, whether it will be `public` or `private`. The visibility of the action will determine which recommendations and requirements are needed to release that action. Let's take a closer look into these two visibility options.
 
 ### Public
 
 Public actions can be used by workflows in any repository. If you're developing an action with the intent to make it open source or make it publicly available through the GitHub Marketplace, it's recommended, and in most cases a requirement, that the action has its own repository instead of bundling it with other application code. This allows you to version, track, and release the action just like any other piece of software. This makes it easier for the GitHub community to discover the action, narrows the scope of the code base for developers fixing issues and extending the action, and separates the action's versioning from the versioning of other application code.
-
 
 ### Private
 
@@ -68,7 +67,7 @@ steps:
 
 ## Publish an action to the GitHub Marketplace
 
-![gh-marketplace](https://user-images.githubusercontent.com/6351798/109706156-d4f20700-7b55-11eb-8826-227d7abdc6cd.png)
+:::image type="content" source="../media/marketplace.png" alt-text="Image that says GitHub Marketplace, tools to build on and improve your workflow." border="false":::
 
 When you're ready to share your action with the GitHub community, you can publish it to the GitHub Marketplace and reach out to millions of GitHub users. Actions published to the GitHub Marketplace are published immediately if all of the requirements are met. Actions that do not meet the requirements will need to be reviewed by GitHub before being published. You'll need to ensure that the repository only includes the metadata file, code, and files necessary for the action. Creating a single repository for the action allows you to tag, release, and package the code in a single unit. GitHub also uses the action's metadata on your GitHub Marketplace page.
 
