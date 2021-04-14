@@ -6,10 +6,10 @@ It looks like the message might be encrypted with something called a *Caesar cip
 
 If you're not familiar with Caesar ciphers, you can explore more on [Smithsonian Learning Labs](https://learninglab.si.edu/collections/decode-a-secret-message/Y4F5099N4wjRAEmz#r/?azure-portal=true).
 
-To decipher this message, we need to start by giving our code the power to shift a single letter. First, we create a function called `lassoLetter()` that takes in two parameters. The first parameter is `letter`, and it holds the letter to decode. The second parameter is `shiftAmount`, and it says how far to shift the letter.
+To decipher this message, we need to start by giving our code the power to shift a single letter. First, we create a function called `lasso_letter()` that takes in two parameters. The first parameter is `letter`, and it holds the letter to decode. The second parameter is `shift_amount`, and it says how far to shift the letter.
 
 ```python
-def lassoLetter( letter, shiftAmount ):
+def lasso_letter( letter, shift_amount ):
 ```
 
 Before you write this function, it's a good idea to know what you expect to happen. If you invoke this function and pass in `a` as the first parameter and `2` as the second parameter, what do you expect will be the output?
@@ -18,7 +18,7 @@ Before you write this function, it's a good idea to know what you expect to happ
 > Don't actually do this yet in your code! We haven't written the function yet.
 
 ```python
-lassoLetter('a', 2)
+lasso_letter('a', 2)
 ```
 
 You would expect the function to return the letter `c`. 
@@ -59,7 +59,7 @@ Next, you need to convert your letter (also called a _character_ or _char_) into
 > [!NOTE]
 > This table shows only numbers and letters, but every key on the keyboard has an ASCII character code. 
 
-Suppose you pass in the letter `a` and a `shiftAmount` value of `2` to the `lassoLetter()` function, and you expect it to return the letter `c`. How would you update your code to return that output? 
+Suppose you pass in the letter `a` and a `shift_amount` value of `2` to the `lasso_letter()` function, and you expect it to return the letter `c`. How would you update your code to return that output? 
 
 If you try to add `a + 2`, it doesn't make sense. How do you add a number and a letter together?
 
@@ -97,8 +97,8 @@ Here's the next bit of code to add to your function:
 1. Convert a letter to its corresponding ASCII character code by using the `ord()` function. 
 
 ```python
-def lassoLetter( letter, shiftAmount ):
-    letterCode = ord(letter.lower())
+def lasso_letter( letter, shift_amount ):
+    letter_code = ord(letter.lower())
 ```
 
 > [!Important]
@@ -106,33 +106,33 @@ def lassoLetter( letter, shiftAmount ):
 
 To decode this message, the message tells us that we need to shift the letter `N` by `13`. To do this shift, here are the values for our parameters:
 - `letter` = 'N'
-- `shiftAmount` = 13
-- `letterCode` = `ord('n')` = 110
+- `shift_amount` = 13
+- `letter_code` = `ord('n')` = 110
 
 ## Calculate a decoded character: The simple way
 
 Now it's time to calculate the new character. First, review the original example. If you start with the letter `a` and want to get the letter `c`, then you do the following steps:
 
 1. Confirm that the value passed in the `letter` parameter is lowercase. In this case, it's `a`.
-1. Use the `ord()` function to convert the letter `a` to its ASCII code, `97`. Save the code value `97` in the `letterCode` variable.
-1. Add a `shiftAmount` value of `2` to the `letterCode` value of `97` to get the new number value: `99`. Store the value `99` in the `decodedLetterCode` variable.
-1. Use the `chr()` function to _decode_ the number value `99` into a character to get `c`. (The `chr()` function simply does the opposite of the `ord()` function.) Store the decoded value `c` in the `decodedLetter` variable.
-1. Return the `decodedLetter` value: `c`.
+1. Use the `ord()` function to convert the letter `a` to its ASCII code, `97`. Save the code value `97` in the `letter_code` variable.
+1. Add a `shift_cmount` value of `2` to the `letter_code` value of `97` to get the new number value: `99`. Store the value `99` in the `decoded_letter_code` variable.
+1. Use the `chr()` function to _decode_ the number value `99` into a character to get `c`. (The `chr()` function simply does the opposite of the `ord()` function.) Store the decoded value `c` in the `decoded_letter` variable.
+1. Return the `decoded_letter` value: `c`.
 
 So, your code might look like this:
 
 ```python
-def lassoLetter( letter, shiftAmount ):
-    letterCode = ord(letter.lower())
-    decodedLetterCode = letterCode + shiftAmount
-    decodedLetter = chr(decodedLetterCode)
-    return decodedLetter
+def lassoLetter( letter, shift_amount ):
+    letter_code = ord(letter.lower())
+    decoded_letter_code = letter_code + shift_amount
+    decodedLetter = chr(decoded_letter_code)
+    return decoded_letter
 ```
 
 Try calling this function by using the preceding example to see if it's working as we expect it to:
 
 ```python
-print(lassoLetter('a', 2))
+print(lasso_letter('a', 2))
 ```
 
 The program correctly prints `c`:
@@ -150,23 +150,23 @@ Let's see what would happen if you ran this code with the first letter of the ac
 | Variable | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |:---------|:------|-------|
 | `letter` | N | |
-| `shiftAmount` | 13 | |
-| `letterCode` | `ord('n')` = 110 | |
-| `decodedLetterCode` | 110 + 13 = 123 | |
-| `decodedLetter` | chr(123) = `{` | |
+| `shift_amount` | 13 | |
+| `letter_code` | `ord('n')` = 110 | |
+| `decoded_letter_code` | 110 + 13 = 123 | |
+| `decoded_letter` | chr(123) = `{` | |
 
 The code won't return the expected result because a Caesar cipher loops back to lowercase `a` when it reaches lowercase `z`.
 
 You can try this out by testing your function:
 
 ```python
-print(lassoLetter('N', 2))
+print(lasso_letter('N', 2))
 ```
 
 The output is `{`:
 
 :::image type="content" source="../media/test-function-example-2.png" alt-text="Screenshot that shows testing the function without using a loop.":::
 
-To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` value to `letterCode`, you have to figure out what the *true* letter code is for the decoded letter.
+To take into account the loop behavior, you have to change the formula for getting the `decoded_letter_code` value. Instead of simply adding the `shift_amount` value to `letter_code`, you have to figure out what the *true* letter code is for the decoded letter.
 
 We'll take a look at that formula in the next unit.
