@@ -2,15 +2,15 @@ Protection of sensitive data is essential in the public sector and Azure provide
 
 ## Protect data and privacy
 
-Azure is available globally in more than 50 regions and can be used by customers worldwide to meet data protection and privacy requirements.
+Azure is available globally in more than 60 [regions](https://azure.microsoft.com/global-infrastructure/geographies/) and can be used by customers worldwide to meet data protection and privacy requirements.
 
-Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won’t store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
+Azure provides strong customer commitments for data residency and transfer policies. Most Azure services allow the customer to specify the deployment region. For those services, Microsoft won't store customer data outside the customer specified geography. Customers can use extensive and robust data encryption options to safeguard their data in Azure and control who can access it.
 
 ## Choose how to safeguard data
 
 Some of the options available to customers to safeguard their data in Azure are listed below:
 
-* Customers can choose to store their most sensitive customer content in services that store customer data at rest in Geo.
+* Customers can choose to store their most sensitive customer content in services that store customer data at rest in customer-selected geography.
 * Customers can further protect their data by encrypting it with their own key using Azure Key Vault.
 * Data encryption in transit helps protect data from interception.
 * Azure is a 24 x 7 globally operated service; however, support and troubleshooting rarely require access to customer data.
