@@ -8,7 +8,7 @@ metadata:
   ms.author: chcondon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 2
 content: |
   Choose the best response for each question, and then select **Check your answers**.
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "What language would you most likely use to create a website?"
     choices:
-    - content: "Machine Code"
+    - content: "Machine code"
       isCorrect: false
       explanation: "Incorrect. Although you can write programs with machine code, it's rarely used because it's a low-level language."
     - content: "JavaScript"
@@ -30,19 +30,19 @@ quiz:
     choices:
     - content: "The development environment"
       isCorrect: true
-      explanation: "Correct. The collection of developer tools forms a complete environment for writing code."
+      explanation: "Correct. The collection of developer tools forms a complete development environment for writing code."
     - content: "The development toolkit"
       isCorrect: false
       explanation: "Close, but these tools form more than a simple toolkit."
     - content: "The development arsenal"
       isCorrect: false
       explanation: "Incorrect. The collection of tools for organizing work is known as the development environment." 
-  - content: "What will a developer do to fix buggy code?"
+  - content: "What do developers do to fix buggy code?"
     choices:
     - content: "Apply syntax highlighting"
       isCorrect: false
       explanation: "Incorrect. Although syntax highlighting helps make code easier to read by adding colors, formatting, and identifying inconsistencies, it is not a debugging tool."
-    - content: "Perform debugging"
+    - content: "Debug the code"
       isCorrect: true
       explanation: "Correct. The best way to fix buggy code is to debug it!"
     - content: "Apply code formatting"
