@@ -12,7 +12,25 @@ Custom metrics conveniently auto-collected through Micrometer, allowing you to p
 Ability to browse, query, and alert on application metrics and logs.
 While both Azure Spring Cloud and Application Insights Java agent are generally available, their integration for out of the box monitoring is in preview.
 
-You can enable the Java in-process monitoring agent when you create or update Azure Spring Cloud:
+With this feature you can:
+
+* Search tracing data with different filters.
+* View dependency map of microservices.
+* Check request performance.
+* Monitor real-time live metrics.
+* Check request failures.
+* Check application metrics.
+
+Application Insights provide many observable perspectives, including:
+
+* Application map
+* Performance
+* Failures
+* Metrics
+* Live Metrics
+* Availability
+
+## enable the Java in-process monitoring agent with Azure Spring Cloud
 
 ```bash
 az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
@@ -20,6 +38,23 @@ az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
 --resource-group ${RESOURCE_GROUP} \
 --location ${REGION}
 ```
+
+## Enable Java In-Process Agent for Application Insights Manually
+
+Enable Java In-Process Agent preview feature using the following procedure.
+
+1. Go to service overview page of your service instance.
+2. Click **Application Insights** entry under monitoring blade.
+3. Click **Enable Application Insights** button to enable **Application Insights** integration.
+4. Select an existing instance of Application Insights or create a new one.
+5. Chick **Enable Java in-process agent** to enable preview Java in-process agent feature. Here you can also customize sampling rate from 0 to 100.
+6. Click **Save** to save the change.
+
+## Portal
+
+1. Go to the **service | Overview** page and select **Application Insights** in the **Monitoring** section. 
+2. Click **Enable Application Insights** to enable Application Insights in Azure Spring Cloud.
+3. Click **Enable Java in-process agent** to enable Java IPA preview feature. When an IPA preview feature is enabled, you can configure one optional sampling rate (default 10.0%).
 
 ## Next steps
 

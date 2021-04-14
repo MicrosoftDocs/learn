@@ -1,4 +1,4 @@
-In this exercise, you'll configure an automation workflow to provision your Terraform resources.
+In this exercise, you'll configure a Sample Application to be ready for monitoring.
 
 ## Access the sample application
 
@@ -12,9 +12,8 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
 ## Run the Setup script
 
+## Load Data
 
 ## Next steps
 
-In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application.
-
-::: zone-end
+In the next exercise, you'll setup your sample application for Monitoring

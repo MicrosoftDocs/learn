@@ -2,10 +2,10 @@ Imagine that you're an infrastructure manager who's been asked to provision your
 
 ## Provision, build, and deploy tracks
 
-
 ## Learning objectives
 
 In this module, you will:
+
 - Create a Terraform configuration for your Azure resources.
 - Provision your infrastructure and deploy it to Azure.
 - Set up your project for continuous integration and continuous delivery (CI/CD) by using with an automation workflow - either GitHub Actions or Azure Pipelines.
