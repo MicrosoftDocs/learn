@@ -140,19 +140,8 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment.
 
 ```azurecli
-templateFile="main.bicep"
-today=$(date +"%d-%b-%Y")
-DeploymentName="storage-"$today
-
-az deployment group create \
- --name $DeploymentName \
- --template-file $templateFile
+az deployment group create --template-file main.bicep
 ```
-
-> [!NOTE]
-> The `--name` argument is optional. You don't need to specify it when you deploy your Bicep files. We're using it here so we can easily identify our deployments.
-
-The top section of the preceding code sets the Bash variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is `storage` with the date as a suffix.
 
 You'll see ```Running...``` in the terminal.
 
@@ -162,7 +151,7 @@ You'll see ```Running...``` in the terminal.
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
-1. Open a terminal window by using the **Terminal** menu.
+1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
 1. If the dropdown menu on the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
@@ -242,16 +231,8 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 Deploy the template to Azure by using the following Azure PowerShell commands in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
 
 ```azurepowershell
-$templateFile = 'main.bicep'
-$today = Get-Date -Format 'dd-MMM-yyyy'
-$deploymentName = "storage-$today"
-
-New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile
+New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
-
-The top section of the preceding code sets Azure PowerShell variables, which include the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `storage` with the date as a suffix.
 
 ::: zone-end
 
@@ -274,11 +255,11 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-    :::image type="content" source="../media/4-storage.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
+    :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment that begins with **storage** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment named **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
-    :::image type="content" source="../media/4-storage-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
+    :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again later.
 
@@ -334,49 +315,33 @@ In the previous task, you learned how to create a template that contains a singl
 
 ### Deploy the updated Bicep template
 
-Here, you change the name of the deployment to better reflect what this deployment does.
-
 ::: zone pivot="cli"
 
-Run the following commands in the terminal. These commands resemble the ones that you ran previously, but the name of the deployment is changed.
+Run the following command in the terminal. This is the same command you ran before.
 
 ```azurecli
-templateFile="main.bicep"
-today=$(date +"%d-%b-%Y")
-DeploymentName="addapp-"$today
-
-az deployment group create \
-  --name $DeploymentName \
-  --template-file $templateFile
+az deployment group create --template-file main.bicep
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. These commands resemble the ones that you ran previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This is the same command you ran before.
 
 ```azurepowershell
-$templateFile = 'main.bicep'
-$today = Get-Date -Format 'dd-MMM-yyyy'
-$deploymentName = "addapp-$today"
-
-New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile
+New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
 ::: zone-end
 
 ### Check your deployment
 
-1. Return to the Azure portal. Go to your resource group, and confirm that there are now two successful deployments. 
+1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
 
-1. Select the **2 Succeeded** link. Notice that both deployments are in the list.
+1. Select the **1 Succeeded** link.
 
-    :::image type="content" source="../media/4-addapp-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the two deployments listed and succeeded statuses." border="true":::
-
-1. Select the deployment that begins with **addapp**, and then select **Deployment details** to expand the list of deployed resources.
+1. Select the deployment named **main**, and then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account App Service resources listed." border="true":::
 
