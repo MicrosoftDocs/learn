@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.secret-message.test-decoder
-title: Use the Lasso decoder to reveal the secret message
+title: Exercise - Use the Lasso decoder to reveal the secret message
 metadata:
-  title: Use the Lasso decoder to reveal the secret message
+  title: Exercise - Use the Lasso decoder to reveal the secret message
   description: Use the Lasso decoder to reveal the secret message.
-  ms.date: 03/03/2021
+  ms.date: 04/14/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
