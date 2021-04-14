@@ -1,6 +1,6 @@
-Now that you've explored the basics of programming languages around web development, it's time to challenge yourself.
+Now that you've explored the basics of programming languages for web development, it's time to challenge yourself.
 
-Compare some programming languages. What are some of the unique traits of JavaScript versus Java? How about COBOL versus Go?
+Compare a few programming languages. What are some of the unique traits of JavaScript versus Java? How about COBOL versus Go?
 
 ## Next steps
 
