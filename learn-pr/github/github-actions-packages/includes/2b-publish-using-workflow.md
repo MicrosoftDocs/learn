@@ -3,7 +3,7 @@ Here, you will learn the basics of using a workflow to publish to GitHub Package
 
 ## Use a workflow to publish to GitHub Packages
 
-GitHub Packages allow you to safely publish and consume packages, store your packages alongside your code, and share your packages privately with your team or publicly with the open source community. You can also automate your packages with the use of GitHub Actions. 
+GitHub Packages enable you to safely publish and consume packages, store your packages alongside your code, and share your packages privately with your team or publicly with the open source community. You can also automate your packages with the use of GitHub Actions. 
 
 Below is an example of a simple workflow that runs whenever a new release is created in the repository. If the tests pass, then the package is published to GitHub Packages.
 
@@ -53,7 +53,7 @@ To learn more about publishing a package to GitHub Packages, check out [Publishi
 
 ## Use GitHub Container Registry to host and manage Docker container images
 
-With GitHub Packages, users are leaning increasingly towards containers, Kubernetes, and other cloud-native technologies to manage their entire application lifecycle – not just through development, release, and deployment, but for production operations as well. GitHub Packages also offers a container registry designed to support the unique needs of container images. You can use GitHub Container Registry to seamlessly host and manage Docker container images in your organization or personal user account on GitHub. GitHub Container Registry allows you to configure who can manage and access packages using fine-grained permissions.
+GitHub Packages supports trends towards containers, Kubernetes, and other cloud-native technologies to manage their entire application lifecycle – not just through development, release, and deployment, but for production operations as well. GitHub Packages also offers a container registry designed to support the unique needs of container images. You can use GitHub Container Registry to seamlessly host and manage Docker container images in your organization or personal user account on GitHub. GitHub Container Registry enables you to configure who can manage and access packages using fine-grained permissions.
 
 With the container registry you can:
 
@@ -79,4 +79,4 @@ docker push ghcr.io/OWNER/IMAGE_NAME:latest
 
 For more information on storing and managing Docker images in the GitHub Container Registry, check out [Pushing and pulling Docker images](https://docs.github.com/en/packages/guides/pushing-and-pulling-docker-images).
 
-In the next unit, we'll use GitHub Actions to build a container image, and publish it into GitHub Packages.
+In the next unit, you will use GitHub Actions to build a container image and publish it to GitHub Packages.
