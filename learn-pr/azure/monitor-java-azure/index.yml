@@ -32,7 +32,8 @@ products:
 units:
 - learn.monitor-java-azure.introduction
 - learn.monitor-java-azure.learning-content
-- learn.monitor-java-azure.exercise
+- learn.monitor-java-azure.exercise-setup
+- learn.monitor-java-azure.exercise-monitor
 - learn.monitor-java-azure.knowledge-check
 - learn.monitor-java-azure.summary
 badge:

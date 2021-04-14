@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.learning-content
-title: Enter learning content title
+title: Monitoring introduction
 metadata:
   unitType: learning-content
   title: Monitoring introduction
@@ -8,7 +8,7 @@ metadata:
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 3
 content: |
   [!include[](includes/2-learning-content.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-java-azure.exercise
+uid: learn.monitor-java-azure.exercise-monitor
 title: Enter exercise title
 metadata:
   unitType: exercise
@@ -8,7 +8,7 @@ metadata:
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/4-exercise-monitor.md)]

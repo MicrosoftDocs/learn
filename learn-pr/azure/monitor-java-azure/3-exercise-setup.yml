@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.exercise-setup
+title: Monitoring exercise setup
+metadata:
+  unitType: exercise
+  title: Monitoring exercise setup
+  description: Monitoring exercise setup
+  ms.date: 4/8/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-setup.md)]
