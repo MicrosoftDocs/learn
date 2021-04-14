@@ -1,14 +1,14 @@
 Before you start creating applications with Go, you need to set up your development environment. 
 
-If you don’t want to install Go locally, you can use the [Go Playground](https://play.golang.org/), a web service that can run applications written in Go in a browser. This is a great option when you want to run code examples quickly and easily. However, we do recommend setting up your local environment when you build applications that require a more complex code organization.
+If you don’t want to install Go locally, you can use the [Go Playground](https://play.golang.org/?azure-portal=true), a web service that can run applications written in Go in a browser. This is a great option when you want to run code examples quickly and easily. However, we do recommend setting up your local environment when you build applications that require a more complex code organization.
 
 
 ::: zone pivot="macos"
 ## Install Go on macOS
-To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page](https://golang.org/dl/). You'll find both approaches on this page, but choose only one.
+To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page](https://golang.org/dl/?azure-portal=true). You'll find both approaches on this page, but choose only one.
 
 ### Install Go by using Homebrew
-The simplest way to install Go is by using [Homebrew](https://brew.sh/).
+The simplest way to install Go is by using [Homebrew](https://brew.sh/?azure-portal=true).
 
 Open a Terminal prompt, and then run the following commands:
 
@@ -31,7 +31,7 @@ Alternatively, you can install the latest version of Go by doing the following:
 
 **Step 1: Download the Go installer**
 
-On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Apple macOS** option.
+On the [Go downloads page](https://golang.org/dl/?azure-portal=true), in the “Featured downloads” section, select the **Apple macOS** option.
 
 You might see a window that prompts you to allow downloading files from golang.org. If so, select **Allow**.
 
@@ -56,18 +56,18 @@ You should see the details of the Go version that's installed on your workstatio
 ::: zone pivot="linux"
 ## Install Go on Linux
 
-To install Go on Linux, download the Go installer from the [Go downloads page](https://golang.org/dl/). If, for some reason, you already have Go installed and want to install the latest version, remove the existing version before you proceed.
+To install Go on Linux, download the Go installer from the [Go downloads page](https://golang.org/dl/?azure-portal=true). If, for some reason, you already have Go installed and want to install the latest version, remove the existing version before you proceed.
 
 **Step 1: Download the Go installer**
 
-On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Linux** option.  
+On the [Go downloads page](https://golang.org/dl/?azure-portal=true), in the “Featured downloads” section, select the **Linux** option.  
 
 You might see a window prompting you to allow downloading files from golang.org. If so, select **Allow**.
 
 Alternatively, you can download the installer by running the following command from your Terminal prompt:
 
 > [!NOTE]
-> You might need to change the version number in the command if 1.15.4 isn't the [latest version](https://golang.org/doc/devel/release.html) as you're reading this guide.
+> You might need to change the version number in the command if 1.15.4 isn't the [latest version](https://golang.org/doc/devel/release.html?azure-portal=true) as you're reading this guide.
 
 ```
 wget https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
@@ -107,11 +107,11 @@ You should see the details of the Go version that's installed on your workstatio
 
 ::: zone pivot="windows"
 ## Install Go on Windows
-To install Go on Windows, download the Go installer from the [Go downloads page](https://golang.org/dl/). 
+To install Go on Windows, download the Go installer from the [Go downloads page](https://golang.org/dl/?azure-portal=true). 
 
 **Step 1: Download the Go installer**
 
-On the [Go downloads page](https://golang.org/dl/), in the “Featured downloads” section, select the **Microsoft Windows** option.  
+On the [Go downloads page](https://golang.org/dl/?azure-portal=true), in the “Featured downloads” section, select the **Microsoft Windows** option.  
 
 You might see a window prompting you to allow downloading files from golang.org. If so, select **Allow**.
 
@@ -187,4 +187,4 @@ src/
 
 We’ll return to this topic in the next module, and we'll discuss what to do if you need or want to maintain your project outside the **$GOPATH** environment. 
 
-Additionally, you can go deeper into this topic by visiting the official documentation site, [How to Write Go Code](https://golang.org/doc/gopath_code.html).
+Additionally, you can go deeper into this topic by visiting the official documentation site, [How to Write Go Code](https://golang.org/doc/gopath_code.html?azure-portal=true).

@@ -6,13 +6,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="csharp"
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
-1. In the left navigation panel, select **Web**.
+1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for **Web App**. The **Create Web App** resource page appears. Select **Create**.
+1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -37,13 +37,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="java"
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
-1. In the left navigation panel, select **Web**.
+1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for **Web App**. The **Create Web App** resource page appears. Select **Create**.
+1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -69,13 +69,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="node"
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
-1. In the left navigation panel, select **Web**.
+1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for **Web App**. The **Create Web App** resource page appears. Select **Create**.
+1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -100,13 +100,13 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="python"
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Marketplace** pane appears.
 
-1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
+    Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
-1. In the left navigation panel, select **Web**.
+1. In the left menu pane, select **Web**.
 
-1. In the Search box, search for **Web App**. The **Create Web App** resource page appears. Select **Create**.
+1. In the Search box, search for and select **Web App**. The **Create Web App** resource pane appears. Select **Create**.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -129,20 +129,20 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone-end
 
-Select **Review + Create** to navigate to the review page, and to create the app, select **Create**.
+5. Select **Review + Create** to go to the review pane, and to create the app, select **Create**.
 
-> [!NOTE]
-> It can take a few seconds to get your web app created and ready for your use.
+    > [!NOTE]
+    > It can take a minute to get your web app created and ready for your use.
 
-The portal will display the deployment page, where you can view the status of your deployment.
+    The portal shows the deployment pane, where you can view the status of your deployment.
 
 ## Preview your web app
 
-1. After deployment successfully completes for your app, select **Go to resource**. The portal displays the web app overview page.
+1. After deployment successfully completes for your app, select **Go to resource**. The portal shows the web app overview pane.
 
-    :::image type="content" source="../media/3-web-app-home.png" alt-text="Screenshot showing the App Service page with the URL link of the overview section highlighted.":::
+    :::image type="content" source="../media/3-web-app-home.png" alt-text="Screenshot showing the App Service pane with the URL link of the overview section highlighted.":::
 
-1. To preview your new web app's default content, select its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
+1. To preview your new web app's default content, select its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running, and ready to receive deployment of your app's code.
 
 ::: zone pivot="csharp"
 

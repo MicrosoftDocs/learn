@@ -1,4 +1,4 @@
-Over the last few decades, the amount of data that systems, applications, and devices have generated has increased significantly. Data is everywhere. Data is available in different structures and formats. Understanding data and exploring it reveals interesting facts, and helps you gain meaningful insights. 
+Over the last few decades, the amount of data that systems, applications, and devices have generated has increased significantly. Data is everywhere. Data is available in different structures and formats. Understanding data and exploring it reveals interesting facts, and helps you gain meaningful insights.
  
 In this module, you'll learn about how you can organize and process data. You'll learn about relational and non-relational databases, and how data is handled through transactional processing, and through batch and streaming data processing.
 

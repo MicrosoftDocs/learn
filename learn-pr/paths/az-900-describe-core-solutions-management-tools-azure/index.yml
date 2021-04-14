@@ -9,6 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
 summary: |
   Core solutions encompass a wide array of tools and services from Microsoft Azure. In this learning path, you'll be introduced to many of these tools and services and will be asked to help choose the best one for a given business scenario.
@@ -25,17 +26,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" role="presentation"></img>
+    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
 
     [Part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" role="presentation"></img>
+    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
 
     [Part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" role="presentation"></img>
+    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
 
     Part 3: Describe core solutions and management tools on Azure
   :::column-end:::
@@ -43,17 +44,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" role="presentation"></img>
+    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
 
     [Part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" role="presentation"></img>
+    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
 
     [Part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" role="presentation"></img>
+    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"></img>
 
     [Part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
   :::column-end:::
@@ -93,7 +94,6 @@ products:
 - azure-iot-hub
 - azure-iot-central
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.ai-machine-learning-fundamentals
 - learn.azure.azure-devops-devtest-labs
 - learn.azure.monitoring-fundamentals

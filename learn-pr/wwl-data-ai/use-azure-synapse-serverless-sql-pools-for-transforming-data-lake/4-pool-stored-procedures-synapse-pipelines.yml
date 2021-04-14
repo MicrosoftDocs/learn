@@ -4,7 +4,7 @@ title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipe
 metadata:
   title: Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
   description: "Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines"
-  ms.date: 11/19/2020
+  ms.date: 03/23/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

@@ -44,7 +44,7 @@ It also shows how you can create a temporary table.
    %%pyspark
    myNewPythonDataFrame = spark.sql("SELECT * FROM mydataframetable")
    ```
-You can use familiar Jupyter magic commands in Azure Synapse Studio notebooks. Review the following list as the current available magic commands. Tell us your use cases on GitHub so that we can continue to build out more magic commands to meet your needs.
+You can use familiar Jupyter magic commands in Azure Synapse Studio notebooks. Review the following list as the current available magic commands:
 
 Available line magics: %lsmagic, %time, %time it
 

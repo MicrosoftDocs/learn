@@ -18,9 +18,9 @@ The final step is to test the application gateway and verify that it implements 
 
     :::image type="content" source="../media/6-default-page.png" alt-text="Screenshot showing an image of the vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
 
-1. Click **Register a Vehicle**, enter the details of a vehicle, and then click **Register**.
-
 1. Click **Refresh** in the address bar of the web browser. Notice that your session should now be connected to a different web server. In this configuration, Application Gateway uses round-robin load balancing.
+
+1. Click **Register a Vehicle**, enter the details of a vehicle, and then click **Register**.
 
 1. Click **Refresh** a few more times. The requests should oscillate between servers.
 
@@ -56,7 +56,7 @@ You just confirmed that routing to the root page works, as you were able to pull
 
 1. Now click **Register a Vehicle** in the web browser of the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
 
-    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing an image of the vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing a vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Now visit `http://<vehicleAppGateway>/LicenseRenewal/Create`. This should take you to the license renewal page running on App Service. With **/LicenseRenewal/** in the URL, this routes to the **appServicePool** where our license renewal site is running.
 
