@@ -1,8 +1,8 @@
-Running your programs on the internet requires some sort of client. A common form of client is a web browser, with which you can interact with the content. 
+Running your programs on the internet requires some sort of client to help you view the output. A common form of client is a web browser, with which you can view and interact with the content. 
 
 ## Browsers for developers
 
-Web developers rely on browsers to observe how their code runs on the web. Browsers are also used to view visual elements of a web page that are written in the editor in languages such as HTML.
+Web developers rely on browsers to observe how their code runs on the web. Browsers are also used to view visual elements of a webpage that are written in the editor in languages such as HTML.
 
 ### Developer tools
 
