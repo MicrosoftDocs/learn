@@ -6,14 +6,12 @@ The command line, compared to a graphical user interface, has no graphical eleme
 
 - **Preference**: Some developers prefer a less graphical view for their daily programming tasks.
 - **Better workflow**: Developing code requires a significant amount of typing, and some developers prefer not to disrupt their flow on the keyboard. They use keyboard shortcuts to swap between desktop windows, work on various files, and open tools.
-- **Avoiding mouse arm syndrome**: Most tasks can be completed with a mouse, but one benefit of using the command line is that a lot can be done with command-line tools without having to swap between the mouse and keyboard.
+- **Avoiding mouse arm syndrome**: Most tasks can be completed with a mouse, but one benefit of using the command line is that a lot can be done with command-line tools without having to constantly switch from mouse to keyboard and back again.
 - **Configurability**: With command-line tools, you can save your custom configuration, change it later, and import it to other development machines.
 
 ## Command line options
 
-The command-line tool options differ depending on the operating system you use.
-
-💻 indicates that the command-line tools come preinstalled on the operating system.
+Your command-line tool options differ depending on the operating system you use. The computer icon (💻) indicates that the command-line tools come preinstalled on the operating system.
 
 ### Windows
 
