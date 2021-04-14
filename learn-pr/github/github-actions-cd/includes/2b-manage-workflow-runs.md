@@ -11,19 +11,19 @@ But let's say you're reaching your organization’s storage limit for GitHub art
 
 ### Manually delete artifacts from your repository
 
-To manually delete an artifact on GitHub you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see. 
+To manually delete an artifact on GitHub you need to navigate to the **Actions** tab, select the workflow from the left sidebar, and then select the run you want to see.
 
-![run-name](https://user-images.githubusercontent.com/6351798/107467078-73c0b000-6b22-11eb-955e-66a46c1f8deb.png)
+:::image type="content" source="../media/select-workflow-run.png" alt-text="Screenshot that shows an example workflow run on GitHub.":::
 
 Under **Artifacts**, delete the artifact you want to remove.
 
-![actions-delete-artifact-updated](https://user-images.githubusercontent.com/6351798/112084321-35210b00-8b4e-11eb-9e8d-2ca33233927a.png)
+:::image type="content" source="../media/delete-artifact.png" alt-text="Screenshot that shows the trash can icon to delete an artifact on GitHub.":::
 
-You can also use the Artifacts REST API to delete artifacts. This API will also allow you to download and retrieve information about work artifacts. For more information about the Artifacts API, check out [Artifacts REST API](https://docs.github.com/en/rest/reference/actions#artifacts).
+You can also use the Artifacts REST API to delete artifacts. This API will also allow you to download and retrieve information about work artifacts.
 
 ### Change the default retention period
 
-You can change the default artifact and log retention period for your repository, organization, or enterprise account. Keep in mind that changing the retention period will only apply to new artifacts and log files and does not apply to existing objects. The process to configure these settings is a bit different for a repository, organization, or enterprise. For more information on configuring the artifact and log retention for each option, check out [Artifact and log retention policy](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration#artifact-and-log-retention-policy).
+You can change the default artifact and log retention period for your repository, organization, or enterprise account. Keep in mind that changing the retention period will only apply to new artifacts and log files and does not apply to existing objects. The process to configure these settings is a bit different for a repository, organization, or enterprise. Check the summary at the end of this module for more information on configuring artifacts and log retentions.
 
 In addition to configured settings across a repository, organization, or enterprise, you can define a custom retention period for individual artifacts right within the workflow file. This is good for individual use cases where you want a specific artifact's retention to be different than the default or configured setting. This can be done using `retention-days` and then a value within the step with the `upload-artifact` action.
 
@@ -50,14 +50,11 @@ Below is an example of what needs to be added to a file to see a workflow status
 
 For example, adding the `branch` parameter along with the desired branch name at the end of the URL will show the workflow status badge for that branch instead of the default branch. This makes it easy to create a table-like view within your `README.md` file to display workflow statuses based on branches, events, services, or environments to name a few.
 
-![Screen Shot 2021-02-10 at 2 36 01 PM](https://user-images.githubusercontent.com/6351798/107575668-5dac0180-6bad-11eb-91de-e2219c1f630b.png)
+:::image type="content" source="../media/my-workflow-status-badge.png" alt-text="Screenshot that shows an example workflow status badge with the my-workflow branch.":::
 
-You also have the ability to create a status badge markdown using GitHub. To do this, navigate to the workflows section within the **Actions** tab and select a specific workflow. The **Create status badge** option will allow you to generate the markdown for that workflow and set the `branch` and `event` parameters.
+You also have the ability to create a status badge using GitHub. To do this, navigate to the workflows section within the **Actions** tab and select a specific workflow. The **Create status badge** option will allow you to generate the markdown for that workflow and set the `branch` and `event` parameters.
 
-![Screen Shot 2021-02-10 at 2 44 35 PM](https://user-images.githubusercontent.com/6351798/107576585-939db580-6bae-11eb-9217-069c69d6f6cd.png)
-
-
-For more information on adding workflow status badges, check out [Adding a workflow status badge](https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge).
+:::image type="content" source="../media/create-status-badge.png" alt-text="Screenshot that shows the option to create a status badge from the workflows section on GitHub.":::
 
 ## Add workflow environment protections
 
@@ -73,4 +70,4 @@ So, for example, let's say you need to create a workflow to a production environ
 2. Configure the required reviewers environment protection to require an approval from the specific dev team.
 3. Configure the specific job within the workflow to look for the production environment.
 
-You can create and configure new repository environments from the repository's **Settings** tab under **Environments**. To learn more about creating and configuring repository environments, check out [Environments](https://docs.github.com/en/actions/reference/environments) from the GitHub documentation.
+You can create and configure new repository environments from the repository's **Settings** tab under **Environments**.
