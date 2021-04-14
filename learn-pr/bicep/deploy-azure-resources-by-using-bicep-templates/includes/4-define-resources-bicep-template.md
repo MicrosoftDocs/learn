@@ -15,7 +15,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 ## Create a Bicep template that contains a storage account
 
-1. Open Visual Studio Code, and create a new file called *main.bicep*.
+1. Open Visual Studio Code, and create a new file called *main.bicep*. You'll deploy the template soon. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
 1. Add the following content into the file. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
@@ -137,7 +137,7 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. You'll see a successful deployment. 
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment.
 
 ```azurecli
 templateFile="main.bicep"
@@ -164,15 +164,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. Open a terminal window by using the **Terminal** menu.
 
-1. If the dropdown menu on the right of the terminal window says **pwsh**, you have the right shell to work from, and you can skip to the next section.
+1. If the dropdown menu on the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
     :::image type="content" source="../media/4-pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu." border="true":::
 
-   If not, select the dropdown menu, and choose **Select Default Shell**. Then select **pwsh**.
+   If not, select the dropdown menu, and choose **Select Default Shell**. Then select **pwsh** or **PowerShell**.
 
     :::image type="content" source="../media/4-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* as the shell.
+1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
 1. You might have to switch your terminal to the directory where you saved your Bicep template. For example, if you saved it in the *scripts* folder, you can use this command:
 
@@ -239,7 +239,7 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell commands in the terminal. You'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell commands in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
 
 ```azurepowershell
 $templateFile = 'main.bicep'

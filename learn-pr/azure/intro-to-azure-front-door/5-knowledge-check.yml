@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-front-door.5-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/14/2021  
+  author: micrum
+  ms.author: micrum  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Contoso is deciding the best way to optimize performance of their distributed web apps. It's important that Contoso's users can access locally cached content to help optimize access times. Which of the following solutions is recommended?"
+    choices:
+    - content: "Azure Front Door (Classic)"
+      isCorrect: False
+      explanation: "Incorrect. Azure Front Door (Classic) enables an entry point to your apps that are positioned in the Microsoft global edge network."
+    - content: "Azure Web Application Firewall"
+      isCorrect: false
+      explanation: "Incorrect. Azure Web Application Firewall doesn't provide this capability."
+    - content: "Azure Front Door Standard"
+      isCorrect: true
+      explanation: "Correct. The Azure Front Door Standard (and Premium) CDN features cache content at strategically placed physical nodes around the world. This optimizes access times for Contoso's users."
+  - content: "Which of the following Azure Front Door SKUs provides SSL offload support?"
+    choices:
+    - content: "Only Azure Front Door Standard"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door Standard isn't the only SKU that supports this feature."
+    - content: "Only Azure Front Door Premium"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door Premium isn't the only SKU that supports this feature."
+    - content: "Both Azure Front Door Standard and Azure Front Door Premium SKUs"
+      isCorrect: true
+      explanation: "Correct. Both Azure Front Door Standard and Premium SKUs support this feature."
+  - content: "Security admins at Contoso want to ensure that the Azure Front Door SKU you select integrates with Microsoft Threat Intelligence and security analytics. Which SKU provides this support?"
+    choices:
+    - content: "Azure Front Door (Classic)"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door (Classic) doesn't support this integration."
+    - content: "Azure Front Door Premium"
+      isCorrect: true
+      explanation: "Correct. Azure Front Door Premium supports this integration."
+    - content: "Azure Front Door Standard"
+      isCorrect: false
+      explanation: "Incorrect. Azure Front Door Standard doesn't support this integration."
+  - content: With Azure Front Door, how can you help guarantee that the front-end hosts ensure requests from the same user are forwarded to the same backend?"
+    choices:
+    - content: "This is not a feature of Azure Front Door."
+      isCorrect: false
+      explanation: "Incorrect. This is a feature of Azure Front Door routing."
+    - content: "By using weighted routing"
+      isCorrect: false
+      explanation: "Incorrect. Weighted routing uses administrator-assigned weights to your backends when you want to distribute traffic across a set of backends."
+    - content: "By using session affinity"
+      isCorrect: true
+      explanation: "Correct. Azure Front Door enables you to configure session affinity for your frontend hosts or domains. This ensures requests from the same end user get sent to the same backend."
+  - content: "When an administrator is creating Azure Web Application Firewall rules, which of the following rules is processed first when applied to HTTP or HTTPS traffic?"
+    choices:
+    - content: "Custom rules"
+      isCorrect: true
+      explanation: "Correct. Custom rules take precedence and are processed first."
+    - content: "Actions"
+      isCorrect: false
+      explanation: "Incorrect. An action isn't a type of rule; it's an instruction for a rule to do something. Actions are: Allow, Block, Log, or Redirect."
+    - content: "Managed rule sets"
+      isCorrect: false
+      explanation: "Incorrect. Managed rule sets are collections of preconfigured rules and are processed after custom rules."

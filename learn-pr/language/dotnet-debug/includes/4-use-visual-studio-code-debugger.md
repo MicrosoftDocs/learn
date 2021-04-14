@@ -67,6 +67,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
             {
                 int result = Fibonacci(5);
                 Console.WriteLine(result);
+                Console.ReadKey(true);
             }
             static int Fibonacci(int n)
             {
@@ -300,6 +301,7 @@ When we're doing this, it's important to be strategic about where we put our bre
             {
                 int result = Fibonacci(5);
                 Console.WriteLine(result);
+                Console.ReadKey(true);
             }
             static int Fibonacci(int n)
             {
