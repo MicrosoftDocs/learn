@@ -64,11 +64,11 @@ Azure SQL also provide complete [geospatial](https://docs.microsoft.com/sql/rela
 
 All the aforementioned feature are built on the rock-solid foundations of relational model, evolved through years of improvement to be ready to meet the requirement of modern applications. Scalable up to 100TB with the [Hyperscale tier](https://docs.microsoft.com/azure/azure-sql/database/service-tier-hyperscale) or extremely cost-effective via the [Serverless tier](https://docs.microsoft.com/azure/azure-sql/database/serverless-tier-overview), Azure SQL also supports [columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-design-guidance) for blazing fast analytical queries, [graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview) to simplify complex object relationship management and state-of-the art query optimizer that is continuously improved and can handle even the most demanding workload, like the one required by today's [massive multiplayer online gaming](https://developer.microsoft.com/games/customer-stories/pearl-abyss-helps-ensure-a-lag-free-game-launch-with-azure/).
 
+With Azure SQL is also very easy to access static data, like the route information provided by the GTFS standard, that can be stored in an [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/). By using [OPENROWSET](https://docs.microsoft.com/sql/t-sql/functions/openrowset-transact-sql) function importing data from a text file can be done without the need to use any additional service, keeping solution complexity at minimum.
+
 ### API service
 
-To provide the API needed to get JSON data from buses, to notify if a bus has entered a geofence and to serve the spatial data to the Web App, [Azure Functions](https://azure.microsoft.com/services/functions/) are really a great service as their serverless nature will allow you to focus only on the code, leaving almost all infrastructural aspects to Azure Functions.
-
-Azure Function, support different languages, so you can choose to use your preferred one or the most suitable for the task you are working on, following a pure microservices approach.
+To provide the API needed to get JSON data from buses, by accessing and consuming the GTFS-RT feed, to notify if a bus has entered a geofence and to serve the spatial data to the Web App you will be using [Azure Functions](https://azure.microsoft.com/services/functions/). Azure Functions are really a great service as their serverless nature will allow you to focus only on the code, leaving almost all infrastructural aspects to Azure Functions. They provide support different languages, so you can choose to use your preferred one or the most suitable for the task you are working on, following a pure microservices approach.
 
 ### Notification service
 
