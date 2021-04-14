@@ -25,26 +25,26 @@ quiz:
       explanation: "Incorrect. Although programs can be designed by hand with pencil and paper, you can't run a program that's written by hand."
     - content: "A typewriter"
       isCorrect: false
-      explanation: "Incorrect. Although you can write a program on a typewriter, the typewriter can't run a program."
+      explanation: "Incorrect. Although you can write a program on a typewriter, a typewriter can't run a program."
   - content: "Low-level languages are a popular choice for:"
     choices:
     - content: "Websites"
       isCorrect: false
-      explanation: "Incorrect. Websites require a high- level language such as JavaScript."
+      explanation: "Incorrect. Websites require a high-level language such as JavaScript."
     - content: "Hardware"
       isCorrect: true
       explanation: "Correct. Low-level languages are most often used with hardware devices."
     - content: "Video game software"
       isCorrect: false
-      explanation: "Incorrect. Video games require high- level code to function."
+      explanation: "Incorrect. Video games require high-level code to function."
   - content: "Which one of these tools would most likely be in a web developer's environment?"
     choices:
-    - content: "Hardware, like a Raspberry Pi"
+    - content: "Hardware, such as Raspberry Pi"
       isCorrect: false
-      explanation: "Incorrect. A Raspberry Pi is a physical hardware device and can't be a tool in a developer's environment."
+      explanation: "Incorrect. Raspberry Pi is a physical hardware device and can't be a tool in a developer's environment."
     - content: "Browser development tools"
       isCorrect: true
       explanation: "Correct. Developer tools have features that allow developers to collect and capture insights about their application."
     - content: "Operating system documentation"
       isCorrect: false
-      explanation: "Incorrect. Although documentation is essential as developers learn how to use tools and languages, it's not a part of a web developer's environment."
+      explanation: "Incorrect. Although documentation is essential as a developer learns how to use tools and languages, it's not a part of a web developer's environment."
