@@ -1,18 +1,17 @@
-Knowing how a program runs and what it relies on, is an important first step to understanding how to create your own programs.
+Knowing how a program runs and what it relies on is an important first step toward understanding how to create your own programs.
 
-A single instruction in a program is called a statement and will usually have a character or line spacing that marks where the instruction ends, or terminates. How a program terminates varies with each language.
+A single instruction in a program is called a *statement*. A statement usually has a character or line spacing that marks where the instruction ends, or terminates. How a program terminates varies with each language.
 
 ## Programs are data driven
 
-Most programs rely on using data from a user or elsewhere, where statements may rely on data to carry out instructions. Data can change how a program behaves, so programming languages come with a way to temporarily store data that can be used later. This data is called variables.
+Most programs rely on using data that's obtained from a user or elsewhere, where statements might rely on such data to carry out instructions. Data can change how a program behaves, so programming languages come with a way to temporarily store data that can be used later. This data is stored in a statement called a *variable*.
 
 ### Storing data in variables
 
-Variables are statements that instruct a device to save data in its memory. Variables in programs are similar to ones in algebra, where they have a unique name and their value may change over time.
+Variables are statements that instruct a device to save data in its memory. Variables in programs are similar to those in algebra, where they have a unique name and their value may change over time.
 
 ## Flow control
 
-There's a chance that some statements will not be executed by a device, it's usually by design, when written by the developer, or by accident when an unexpected error occurs. This type of control of an application makes it more robust and maintainable. Typically these changes in control happen when certain decisions are met. A common statement in modern programming languages, to control how a program is run, is the `if...else` statement.
+There's a chance that some statements might not be executed by a device. This usually happens either by design, as written by the developer, or by accident, as the result of an unexpected error. 
 
-> [!TIP]
-> You'll learn more about this type of statement in subsequent lessons.
+This type of control of an application makes it more robust and maintainable. Typically these changes in control happen when certain decisions are met. A common statement in modern programming languages, to control how a program is run, is the `if...else` statement. You'll learn more about this type of statement in subsequent units.

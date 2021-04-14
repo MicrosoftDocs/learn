@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "A program can be created by using _______"
+  - content: "A program can be created by using:"
     choices:
-    - content: "A text editor."
+    - content: "A text editor"
       isCorrect: true
-      explanation: "Correct! A text editor is commonly used by developers to create programs."
-    - content: "Pencil & paper"
+      explanation: "Correct, A text editor is commonly used by developers to create programs."
+    - content: "Pencil and paper"
       isCorrect: false
-      explanation: "Incorrect- while programs can be designed by hand with pencil and paper, you can not run a program written by hand."
+      explanation: "Incorrect. Although programs can be designed by hand with pencil and paper, you can't run a program that's written by hand."
     - content: "A typewriter"
       isCorrect: false
-      explanation: "Incorrect- a typewriter cannot run and execute a program."
-  - content: "Low level languages are a popular choice for"
+      explanation: "Incorrect. Although you can write a program on a typewriter, the typwriter can't run a program."
+  - content: "Low-level languages are a popular choice for:"
     choices:
     - content: "Websites"
       isCorrect: false
-      explanation: "Incorrect- websites require a higher level language such as JavaScript."
+      explanation: "Incorrect. Websites require a high- level language such as JavaScript."
     - content: "Hardware"
       isCorrect: true
-      explanation: "Correct! Low level languages are most often used with hardware devices."
+      explanation: "Correct. Low-level languages are most often used with hardware devices."
     - content: "Video game software"
       isCorrect: false
-      explanation: "Incorrect- video games require higher level code to function."
+      explanation: "Incorrect. Video games require high- level code to function."
   - content: "Which one of these tools would most likely be in a web developer's environment?"
     choices:
     - content: "Hardware, like a Raspberry Pi"
       isCorrect: false
-      explanation: "Incorrect- a Raspberry Pi is a physical hardware device, and therefore not feasible tool for a developer's environment."
-    - content: "Browser DevTools"
+      explanation: "Incorrect. A Raspberry Pi is a physical hardware device and can't be a tool in a developer's environment."
+    - content: "Browser development tools"
       isCorrect: true
-      explanation: "Correct! DevTools, also known as developer tools, have features that allow developers to collect and capture insights about their application."
+      explanation: "Correct. Developer tools have features that allow developers to collect and capture insights about their application."
     - content: "Operating system documentation"
       isCorrect: false
-      explanation: "Incorrect- while documentation is essential to developers to learn how to use tools and languages, it is not a part of a web developer's environment."
+      explanation: "Incorrect. Although documentation is essential as developers learn how to use tools and languages, it's not a part of a web developer's environment."
