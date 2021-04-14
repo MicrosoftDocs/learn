@@ -1,6 +1,6 @@
 Many organizations today work with big data. Because of the huge volume and variety of data, and speed with which this data is being generated, organizations need systems capable of bringing management and control to this data. 
 
-In the past, organizations attempted to get control by using relational databases management systems. But it's the success of open source software, combined with the benefits of hosted  platforms, that have begun to reap success. 
+In the past, companies attempted to get control by using relational databases management systems. But it's the functionality of open source software, combined with the benefits of hosted  platforms, that have begun to reap success. 
 
 ## What is big data?
 
@@ -135,6 +135,6 @@ For organizations with on-premises big data infrastructure, you can use HDInsigh
 
 - The on-premises big data infrastructure consists of metadata stores and a Hadoop or Spark distribution on local VMs. 
 - An Azure ExpressRoute circuit connects the on-premises corporate network environment to Azure virtual networks. 
-- WANdisco LiveData Migrator for Azure replicates the data received from on-premises to Azure HDInsight. 
+- A live data migrator for Azure replicates the data received from on-premises to Azure HDInsight. 
 
 :::image type="content" source="../media/architecture-hybrid.png" alt-text="A diagram that displays the text in the preceding scenario.":::
