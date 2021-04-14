@@ -1,18 +1,18 @@
-Programming languages serve a main purpose: for developers to build instructions to send to a device. 
+The principal purpose of programming languages is for developers to build instructions to send to a device. 
 
 Programming languages are a vehicle for communication between humans and computers. Devices can understand only the binary characters 1 and 0. For most developers, using only binary characters isn't an efficient way to communicate. 
 
-Programming languages come in a variety of formats and may serve different purposes. For example, JavaScript is used primarily for web applications, and Bash is used primarily for operating systems.
+Programming languages come in a variety of formats and can serve different purposes. For example, JavaScript is used primarily for web applications, and Bash is used primarily for operating systems.
 
 ## Low-level and high-level languages
 
 To be interpreted by a device, low-level languages typically require fewer steps than do high-level languages. However, what makes high-level languages popular is their readability and support. JavaScript is considered a high-level language.
 
-The code in the next section illustrates the difference between a high-level language such as JavaScript and a low-level assembly language.
+The code in the next section illustrates the difference between a high-level language, such as JavaScript, and a low-level assembly language.
 
 ### Code comparison
 
-The following code is written in JavaScript, a high-level language. It implements an algorithm by using constructs such as variables, for-loops, and various other statements.
+The following code is written in JavaScript, a high-level language. It implements an algorithm by using constructs such as variables, for-loops, and other statements.
 
 ```javascript
 let number = 10
@@ -53,7 +53,7 @@ back add r0,r1
  end
 ```
 
-Believe it or not, both examples are doing the same thing. Which one was easier to understand?
+Believe it or not, both examples are intended to do the same thing. Which one was easier to understand?
 
 > [!NOTE]
 > A Fibonacci sequence is defined as a set of numbers such that each number is the sum of the two preceding numbers, starting from 0 and 1.
