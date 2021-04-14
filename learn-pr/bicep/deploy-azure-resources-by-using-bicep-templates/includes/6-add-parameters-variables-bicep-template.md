@@ -134,16 +134,11 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure CLI command in the terminal. This is similar to the command you ran before.
 
 ```azurecli
-templateFile="main.bicep"
-today=$(date +"%d-%b-%Y")
-DeploymentName="addparams-"$today
-
 az deployment group create \
-  --name $DeploymentName \
-  --template-file $templateFile \
+  --template-file main.bicep \
   --parameters environmentType=nonprod
 ```
 
@@ -154,13 +149,8 @@ az deployment group create \
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
-$templateFile = 'main.bicep'
-$today = Get-Date -Format 'dd-MMM-yyyy'
-$deploymentName = "addparams-$today"
-
 New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile `
+  -TemplateFile main.bicep `
   -environmentType nonprod
 ```
 
@@ -170,14 +160,12 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now three successful deployments. 
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
 
-1. Select the **3 Succeeded** link. Notice that all three of the deployments are in the list.
+1. Select the **1 Succeeded** link.
 
-    :::image type="content" source="../media/6-addparams-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the three deployments listed and succeeded statuses." border="true":::
+1. Select the deployment named **main**, and then select **Deployment details** to expand the list of deployed resources.
 
-1. Select the deployment that begins with **addparams**, and then select **Deployment details** to expand the list of deployed resources.
-
-    :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one resource listed." border="true":::
+    :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with storage account and App Service resources listed with generated names." border="true":::
 
 1. Notice that the resources have been deployed with new, randomly generated names.

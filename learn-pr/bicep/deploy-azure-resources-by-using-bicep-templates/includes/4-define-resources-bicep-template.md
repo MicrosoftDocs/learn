@@ -343,6 +343,6 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. Select the deployment named **main**, and then select **Deployment details** to expand the list of deployed resources.
 
-    :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account App Service resources listed." border="true":::
+    :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account and App Service resources listed." border="true":::
 
 1. Notice that the App Service plan and app have been deployed.
