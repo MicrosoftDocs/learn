@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.python-partnership.secret-message.python-basics
-title: Python basics for creating a secret message decoder
+title: Exercise - Python basics for creating a secret message decoder
 metadata:
-  title: Python basics for creating a secret message decoder
+  title: Exercise - Python basics for creating a secret message decoder
   description: Learn some basic Python concepts and create a secret message decoder.
-  ms.date: 03/03/2021
+  ms.date: 04/14/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

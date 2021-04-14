@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Answer the following questions to see what you've learned.
-  ms.date: 03/03/2021
+  ms.date: 04/14/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -30,14 +30,14 @@ quiz:
       isCorrect: true
       explanation: "English letters, numbers 0-9, and punctuation are all represented as numbers in ASCII."
   
-  - content: "If you call your `lassoLetter()` function and pass in `p` as the `letter` parameter and `-2` as the `shiftAmount` parameter, what letter is returned?"
+  - content: "If you call your `lasso_letter()` function and pass in `p` as the `letter` parameter and `-2` as the `shift_amount` parameter, what letter is returned?"
     choices:  
     - content: "`Error`"
       isCorrect: false
       explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backwards."
     - content: "`o`"
       isCorrect: false
-      explanation: "Incorrect. For a return value of `o`, you would pass in a `shiftAmount` value of `-1`."
+      explanation: "Incorrect. For a return value of `o`, you would pass in a `shift_amount` value of `-1`."
     - content: "`n`"
       isCorrect: true
       explanation: "Correct. The code you wrote takes the ASCII number value of `p` and adds `-2` to it, which basically subtracts 2!"
