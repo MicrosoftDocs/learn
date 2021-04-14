@@ -2,7 +2,7 @@ GitHub Actions allow you to create individual, custom actions by writing code th
 
 You can write your own custom actions to use in your workflow or share the actions you build with the GitHub community. To share actions you've built with the community, your repository must be public. Actions can run directly on a machine or in a Docker container. You can also define an action's inputs, outputs, and environment variables.
 
-In this module, you learn the different ways to create a custom action, its necessary metadata and syntax, and how to publish a custom action to the GitHub Marketplace. 
+In this module, you learn the different ways to create a custom action, its necessary metadata and syntax, and how to publish a custom action to the GitHub Marketplace.
 
 ## Learning objectives
 

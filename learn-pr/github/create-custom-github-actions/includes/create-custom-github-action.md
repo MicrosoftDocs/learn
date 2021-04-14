@@ -21,7 +21,7 @@ Before building a Docker container action, you should have some basic understand
 
 JavaScript actions can run directly on the runner machine and separate the action code from the environment that is used to run the action. Because of this, the action code is simplified and can execute faster than actions within a Docker container.
 
-As a prerequisite for creating and using packaged JavaScript actions, you need to download Node.js, which includes npm. As an optional but recommended step, you can use GitHub Actions Toolkit Node.js, which is a collection of Node.js packages that allow you to quickly build JavaScript actions with more consistency.
+As a prerequisite for creating and using packaged JavaScript actions, you need to download Node.js, which includes npm. As an optional step but one that we recommend is to use GitHub Actions Toolkit Node.js, which is a collection of Node.js packages that enables you to quickly build JavaScript actions with more consistency.
 
 The steps to take to build a JavaScript action are then minimal and straightforward:
 
@@ -31,7 +31,7 @@ The steps to take to build a JavaScript action are then minimal and straightforw
 
 ### Composite run steps actions
 
-Composite run steps actions allow you to reuse actions using shell scripts. You can even mix multiple shell languages within the same action. If you have a lot of shell scripts to automate several tasks, now you can easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
+Composite run steps actions enable you to reuse actions using shell scripts. You can even mix multiple shell languages within the same action. If you have a lot of shell scripts to automate several tasks, now you can easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
 ## Metadata and syntax needed to create an action
 
@@ -41,15 +41,15 @@ When creating or reviewing a GitHub action, a great first step is to review the 
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------: |
 | Name        | The name of your action. Helps visually identify the action in a job.                                                                                 | yes |
 | Description | A summary of what your action does.                                                                                                                    | yes |
-| Inputs      | Input parameters allow you to specify data that the action expects to use during runtime. These parameters become environment variables in the runner. |         no         |
-| Outputs     | Output parameters allow you to specify data that subsequent actions can use later in the workflow after the action that defines these outputs has run.                          |         no         |
+| Inputs      | Input parameters enable you to specify data that the action expects to use during runtime. These parameters become environment variables in the runner. |         no         |
+| Outputs     | Output parameters enable you to specify data that subsequent actions can use later in the workflow after the action that defines these outputs has run.                          |         no         |
 | Runs        | The command to run when the action executes.                                                                                                           | yes |
 | Branding    |  Color and Feather icon to use to create a badge to personalize and distinguish your action in GitHub Marketplace.                               |         no         |
 
 
 ### Inputs
 
-Inputs are the parameters that allow you to specify data that the action expects to use during its runtime. GitHub stores these input parameters as environment variables.
+Inputs are the parameters that enable you to specify data that the action expects to use during its runtime. GitHub stores these input parameters as environment variables.
 
 Below is an example of a list of inputs for an action. The `firstNameStudent` input is optional while the `studentGrade` input is required.
 
@@ -66,7 +66,7 @@ inputs:
 
 ### Outputs
 
-Outputs are the parameters that allow you to declare data. Keep in mind that actions that run later in a workflow can use the output data that was declared in a previously ran action.
+Outputs are the parameters that enable you to declare data. Keep in mind that actions that run later in a workflow can use the output data that was declared in a previously ran action.
 
 The below example is a simple output to declare the average grade of the students.
 
@@ -145,7 +145,7 @@ Here is an example of a badge for the Checkout action on the GitHub Marketplace.
 
 Creating a workflow is pretty straightforward as long as you can find the right actions for your steps. In some cases you may need to create your own actions to achieve your desired outcomes, but you can use workflow commands to add another level of customization to your workflows.
 
-Workflow commands allow you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. These workflow commands can be used with shell commands or within your custom actions. Workflow commands are useful because they allow you to share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
+Workflow commands enable you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. These workflow commands can be used with shell commands or within your custom actions. Workflow commands are useful because they enable you to share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
 
 Most workflow commands use the `echo` command in the below specific format, while others can be invoked by writing to a file.
 

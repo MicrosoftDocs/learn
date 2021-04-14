@@ -8,17 +8,17 @@ When creating an action it's important to first decide where you want that actio
 
 ### Public
 
-Public actions can be used by workflows in any repository. If you're developing an action with the intent to make it open source or make it publicly available through the GitHub Marketplace, it's recommended, and in most cases a requirement, that the action has its own repository instead of bundling it with other application code. This allows you to version, track, and release the action just like any other piece of software. This makes it easier for the GitHub community to discover the action, narrows the scope of the code base for developers fixing issues and extending the action, and separates the action's versioning from the versioning of other application code.
+Public actions can be used by workflows in any repository. If you're developing an action with the intent to make it open source or make it publicly available through the GitHub Marketplace, we recommend, and in most cases a requirement, that the action has its own repository instead of bundling it with other application code. This enables you to version, track, and release the action just like any other piece of software. This makes it easier for the GitHub community to discover the action, narrows the scope of the code base for developers fixing issues and extending the action, and separates the action's versioning from the versioning of other application code.
 
 ### Private
 
-When an action is in a private repository, the action can only be used in workflows in the same repository. With private actions, you can store the action's files in any location in your repository. If you plan to combine action, workflow, and application code in a single repository, it's recommended to store the action in the .github directory. For example, `.github/actions/action-a` and `.github/actions/action-b`.
+When an action is in a private repository, the action can only be used in workflows in the same repository. With private actions, you can store the action's files in any location in your repository. If you plan to combine action, workflow, and application code in a single repository, we recommend to store the action in the `.github` directory. For example, `.github/actions/action-a` and `.github/actions/action-b`.
 
 ## Document your action
 
 It can be very frustrating to use a new tool or application when the documentation is vague or even missing. It's important to include good documentation with your action so that others can see how it works, regardless of if you plan to make it public or private. The first thing to do is creating a good `README.md` file for your action.
 
-The `README.md` file is often the first place developers will look at to see how the action works. This is a great place to include all of the important information for the action. Below is a non-exhaustive list of some recommended things to include:
+The `README.md` file is often the first place developers will look at to see how the action works. This is a great place to include all of the important information for the action. Below is a non-exhaustive list of things to include:
 
 - A detailed description of what the action does.
 - Required input and output arguments.
@@ -35,7 +35,7 @@ If you're developing an action for other people to use, regardless of if it's pu
 
 ### Good practices for release and version management
 
-A good release management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action as the default branch which is likely to contain the latest code (which may or may not be stable) and could result in your workflow breaking. Instead, it's recommended that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. This can be done by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
+A good release management strategy should include versioning recommendations. Users should not be referencing an action's default branch with the action as the default branch which is likely to contain the latest code (which may or may not be stable) and could result in your workflow breaking. Instead, we recommend that users specify a major version when using the action, and to only direct them to a more specific version if they encounter issues. This can be done by configuring their GitHub Actions workflow to target a tag, a commit's SHA, or a specific branch named for a release. Let's take a closer look at these release options.
 
 #### Tags
 
@@ -69,7 +69,7 @@ steps:
 
 :::image type="content" source="../media/marketplace.png" alt-text="Image that says GitHub Marketplace, tools to build on and improve your workflow." border="false":::
 
-When you're ready to share your action with the GitHub community, you can publish it to the GitHub Marketplace and reach out to millions of GitHub users. Actions published to the GitHub Marketplace are published immediately if all of the requirements are met. Actions that do not meet the requirements will need to be reviewed by GitHub before being published. You'll need to ensure that the repository only includes the metadata file, code, and files necessary for the action. Creating a single repository for the action allows you to tag, release, and package the code in a single unit. GitHub also uses the action's metadata on your GitHub Marketplace page.
+When you're ready to share your action with the GitHub community, you can publish it to the GitHub Marketplace and reach out to millions of GitHub users. Actions published to the GitHub Marketplace are published immediately if all of the requirements are met. Actions that do not meet the requirements will need to be reviewed by GitHub before being published. You'll need to ensure that the repository only includes the metadata file, code, and files necessary for the action. Creating a single repository for the action enables you to tag, release, and package the code in a single unit. GitHub also uses the action's metadata on your GitHub Marketplace page.
 
 Below are the requirements to publish an action to the GitHub Marketplace. They apply to both Docker container-based actions and JavaScript-based actions:
 
