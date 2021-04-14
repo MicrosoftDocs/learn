@@ -54,7 +54,7 @@ Start with these two values:
 | `letter_code`     | `ord('a')` | 97  | |
 | `a_ascii`         | `ord('a')` | 97  | |
 | `alphabet_size`   |            | 26  | |
-| `trueLetter_code` | 97 + (((97 - 97) + 2) % 26)  | 2 <br>**Note:** See the detailed explanation for this calculation after the table. | |
+| `true_letter_code` | 97 + (((97 - 97) + 2) % 26)  | 2 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decoded_letter`  | `chr(99)`  | `c` | |
 
 You can review the formula for `true_letter_code` just as you would any other math formula. Follow [PEMDAS](https://www.bing.com/search?q=pemdas&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=AC7B1BB83E3C4E5B9C6F4AAEF3A32874), where you evaluate a mathematical expression in the order of parenthesis, exponents, multiplication, division, addition, and subtraction.
@@ -81,10 +81,10 @@ Start with these two values:
 | `letter_code`     | `ord('n')` | 110 | |
 | `a_ascii`         | `ord('a')` | 97  | |
 | `alphabet_size`   |            | 26  | |
-| `trueLetter_code` | 97 + (((110 - 97) + 13) % 26)  | 97 <br>**Note:** See the detailed explanation for this calculation after the table. | |
+| `true_letter_code` | 97 + (((110 - 97) + 13) % 26)  | 97 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decoded_letter`  | `chr(97)` | `a` | |
 
-You can review the formula for `true_Letter_code` just as you would any other math formula (remember PEMDAS):
+You can review the formula for `true_letter_code` just as you would any other math formula (remember PEMDAS):
 
 > `a_ascii` + (((`letter_code` - `a_ascii`) + `shift_amount`) % `alphabet_size`)
 > 

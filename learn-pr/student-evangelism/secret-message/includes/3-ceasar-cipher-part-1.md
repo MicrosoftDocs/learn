@@ -113,19 +113,19 @@ To decode this message, the message tells us that we need to shift the letter `N
 
 Now it's time to calculate the new character. First, review the original example. If you start with the letter `a` and want to get the letter `c`, then you do the following steps:
 
-1. Confirm that the value passed in the `letter` parameter is lowercase. In this case, it's `a`.
+1. Ensure that the value passed in the `letter` parameter is lowercase by calling `.lower()`. In this case, the letter passed in is `a`, so `.lower()` will keep it as `a`.
 1. Use the `ord()` function to convert the letter `a` to its ASCII code, `97`. Save the code value `97` in the `letter_code` variable.
-1. Add a `shift_cmount` value of `2` to the `letter_code` value of `97` to get the new number value: `99`. Store the value `99` in the `decoded_letter_code` variable.
+1. Add a `shift_amount` value of `2` to the `letter_code` value of `97` to get the new number value: `99`. Store the value `99` in the `decoded_letter_code` variable.
 1. Use the `chr()` function to _decode_ the number value `99` into a character to get `c`. (The `chr()` function simply does the opposite of the `ord()` function.) Store the decoded value `c` in the `decoded_letter` variable.
 1. Return the `decoded_letter` value: `c`.
 
 So, your code might look like this:
 
 ```python
-def lassoLetter( letter, shift_amount ):
+def lasso_letter( letter, shift_amount ):
     letter_code = ord(letter.lower())
     decoded_letter_code = letter_code + shift_amount
-    decodedLetter = chr(decoded_letter_code)
+    decoded_letter = chr(decoded_letter_code)
     return decoded_letter
 ```
 
@@ -160,7 +160,7 @@ The code won't return the expected result because a Caesar cipher loops back to 
 You can try this out by testing your function:
 
 ```python
-print(lasso_letter('N', 2))
+print(lasso_letter('N', 13))
 ```
 
 The output is `{`:

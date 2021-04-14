@@ -124,7 +124,7 @@ def lasso_word( word, shift_amount ):
     # This for loop iterates through each letter in the word parameter
     for letter in word:
         # The lasso_letter() function is invoked with each letter and the shift amount
-        # The result (decoded letter) is stored in a variable called decoded_letter
+        # The result (the decoded letter) is stored in a variable called decoded_letter
         decoded_letter = lasso_letter(letter, shift_amount)
 
         # The decoded_letter value is added to the end of the decoded_word value
@@ -189,7 +189,7 @@ def lasso_word( word, shift_amount ):
     # This for loop iterates through each letter in the word parameter
     for letter in word:
         # The lasso_letter() function is invoked with each letter and the shift amount
-        # The result (decoded letter) is stored in a variable called decoded_letter
+        # The result (the decoded letter) is stored in a variable called decoded_letter
         decoded_letter = lasso_letter(letter, shift_amount)
 
         # The decoded_letter value is added to the end of the decoded_word value
