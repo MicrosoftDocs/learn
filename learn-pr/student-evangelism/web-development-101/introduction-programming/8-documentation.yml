@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101.introduction-to-programming.documentation
 metadata:
-  title: Documentation
-  description: Learn the importance of good documentation.
+  title: Developer documentation
+  description: Appreciate the importance of good documentation in your learning process.
   ms.date: 03/24/2020
   author: chloecodesthings
   ms.author: chcondon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Documentation
+title: Developer documentation
 durationInMinutes: 2
 content: |
   [!include[](includes/8-documentation.md)]
