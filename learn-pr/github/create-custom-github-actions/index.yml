@@ -3,7 +3,7 @@ uid: learn.github.create-custom-github-actions
 metadata:
   title: Create a custom JavaScript GitHub action 
   description: Learn how to create a custom JavaScript GitHub action.
-  ms.date: 03/29/2021
+  ms.date: 04/14/2021
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial

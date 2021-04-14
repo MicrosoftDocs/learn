@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create a custom JavaScript GitHub action and use it within a workflow.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 03/29/2021
+  ms.date: 04/14/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
