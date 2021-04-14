@@ -128,6 +128,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 
+1. Save the changes to the file.
+
 ### Deploy the updated Bicep template
 
 ::: zone pivot="cli"
