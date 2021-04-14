@@ -228,7 +228,7 @@ Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell commands in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -257,7 +257,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment named **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
@@ -341,7 +341,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 1. Select the **1 Succeeded** link.
 
-1. Select the deployment named **main**, and then select **Deployment details** to expand the list of deployed resources.
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account and App Service resources listed." border="true":::
 

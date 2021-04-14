@@ -146,7 +146,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
@@ -164,7 +164,7 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 1. Select the **1 Succeeded** link.
 
-1. Select the deployment named **main**, and then select **Deployment details** to expand the list of deployed resources.
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
 
     :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with storage account and App Service resources listed with generated names." border="true":::
 
