@@ -2,7 +2,7 @@ Here, you learn how to remove workflow artifacts from GitHub and change the defa
 
 ## Remove workflow artifacts from GitHub
 
-By default, GitHub will store any build log and uploaded artifacts for 90 days before they are deleted. This retention period can be customized based on the type of repository and the usage limits set for your specific GitHub product. There is a lot more information regarding usage limits and artifact retention than what makes sense to cover here, so check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) for more information.
+By default, GitHub stores any build logs and uploaded artifacts for 90 days before they are deleted. This retention period can be customized based on the type of repository and the usage limits set for your specific GitHub product. There is a lot more information regarding usage limits and artifact retention than what makes sense to cover here, so check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) for more information.
 
 But let's say you're reaching your organization’s storage limit for GitHub artifacts and packages and you want to remove old artifacts without increasing your usage limits and blocking your workflows. You can reclaim used GitHub Actions storage by deleting artifacts before they expire on GitHub. You can do this two ways as described in the following sections. Please note that both ways require write access to the repository.
 
