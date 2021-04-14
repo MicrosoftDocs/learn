@@ -17,7 +17,7 @@ The command-line tool options differ depending on the operating system you use.
 
 ### Windows
 
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true) 💻
+- [PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true) 💻
 - [Command Line](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands?WT.mc_id=academic-13441-cxa&azure-portal=true) (also known as CMD) 💻
 - [Windows Terminal](https://docs.microsoft.com/windows/terminal/?WT.mc_id=academic-13441-cxa&azure-portal=true)
 - [mintty](https://mintty.github.io/?azure-portal=true)
@@ -26,13 +26,13 @@ The command-line tool options differ depending on the operating system you use.
 
 - [Terminal](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac?azure-portal=true) 💻
 - [iTerm](https://iterm2.com/?azure-portal=true)
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true)
+- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true)
 
 ### Linux
 
 - [Bash](https://www.gnu.org/software/bash/manual/html_node/index.html?azure-portal=true) 💻
 - [KDE Console](https://docs.kde.org/trunk5/en/applications/konsole/index.html?azure-portal=true)
-- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true)
+- [PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7?WT.mc_id=academic-13441-cxa&azure-portal=true&preserve-view=true)
 
 ### Popular command-line tools
 
