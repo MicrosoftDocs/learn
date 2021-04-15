@@ -26,7 +26,7 @@ quiz:
     - content: "A database server failure"
       isCorrect: true
       explanation: "Correct. In this scenario, Azure deploys a new database server automatically, and attaches the remote data storage to the new database server."
-  - content: "An app developer requires version 10.5 of MariaDB. Which of the following would be an appropriate hosting choice based on this requirement?"
+  - content: "An app developer requires version 10.5 of MariaDB. Which of the following options is an appropriate hosting choice based on this requirement?"
     choices:
     - content: "Azure Database for MariaDB"
       isCorrect: false

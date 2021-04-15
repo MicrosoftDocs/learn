@@ -1,13 +1,13 @@
-Let's start with a quick overview of MariaDB and Azure Database for MariaDB. This should help you evaluate the suitability of Azure Database for MariaDB for your business requirements.
+Let's start with a quick overview of MariaDB and Azure Database for MariaDB. This should help you evaluate whether using Azure Database for MariaDB can address your business requirements.
 
-MariaDB is a popular open-source database that independent software vendors and developers use to build web apps. Many large enterprise-level organizations also use it to host mission-critical applications. Azure Database for MariaDB is based on the MariaDB Community Edition that is available under the GNU General Public License, version 2 (GPLv2). It is a fully managed relational DBaaS platform.
+MariaDB is a popular open-source database that independent software vendors and developers use to build web apps. Many large enterprise-level organizations also use it to host mission-critical applications. Azure Database for MariaDB is based on the MariaDB Community Edition. The older edition is available under the GNU General Public License, version 2 (GPLv2). It's a fully managed relational DBaaS platform.
 
 > [!TIP]
-> You can also choose to run MariaDB in a hosted virtual machine (VM) infrastructure as a service (IaaS) mode on Azure.
+> MariaDB also runs in a hosted virtual machine (VM) infrastructure as a service (IaaS) mode on Azure.
 
 ## Why use a DBaaS database?
 
-A DBaaS delivery platform for your relational database apps enables you to focus on quickly developing your database apps instead of worrying about managing your VMs and their related infrastructure. You don't need to think about configuring and maintaining the platform, because that's managed by Azure. By selecting Azure Database for MariaDB, you're choosing to implement your database apps on a DBaaS basis.
+Why use a DBaaS delivery platform for your relational database apps? It enables you to focus on quickly developing them instead of worrying about managing your VMs and their related infrastructure. You don't need to think about configuring and maintaining the platform. Azure manages it for you. If you use Azure Database for MariaDB, you're choosing to implement your database apps on a DBaaS basis.
 
 > [!NOTE]
 > DBaaS apps fall within the industry category of PaaS-hosted services.
@@ -20,60 +20,60 @@ Azure Database for MariaDB is a fully managed, relational DBaaS platform hosted 
 - Data protection.
 
    > [!NOTE]
-   > Azure Database for MariaDB uses automatic backups and point-in-time restoration for up to 35 days.
+   > Azure Database for MariaDB uses automatic backups and point-in-time restorations. It'll store them for 35 days maximum.
 
-- Automated maintenance of the following components to keep the service secure and up-to-date:
+- Automated maintenance of the following components to keep the service secure and up to date:
 
   - Underlying hardware
-  - Operating system
+  - OS
   - Database engine
 
 - Predictable performance.
 - Rapid scaling.
 - Optimized costing.
-- Enterprise-level security and compliance features to help protect your sensitive data, both at rest and while in-motion.
+- Enterprise-level security and compliance features to help protect your sensitive data at rest and in motion.
 - Monitoring and automation to help simplify management and monitoring of large-scale deployments.
 
 > [!NOTE]
-> Most of these features require little administrative effort and are included as standard options.
+> Most of these features, included as standard options, require minimal administrative effort.
 
-Azure Database for MariaDB supports common database tools, such as MySQL Workbench. This means that by implementing Azure Database for MariaDB, you can continue working with familiar tools and platforms.
+Azure Database for MariaDB supports common database tools, such as MySQL Workbench. When you implement Azure Database for MariaDB, you can continue working with familiar tools and platforms.
 
 ### Choose a suitable deployment option
 
 Azure Database for MariaDB is available in the following deployment options:
 
-- Azure Database for MariaDB
-- MariaDB on Azure VMs
+- Azure Database for MariaDB.
+- MariaDB on Azure VMs.
 
-Let's examine these more closely.
+Let's examine these deployments more closely.
 
 #### Azure Database for MariaDB
 
-This deployment option provides for a fully-managed database service that requires minimal user configuration and control. This option:
+This option provides for a fully-managed database service that requires minimal user configuration and control. This option:
 
-- Has minimal requirements for customizations of the database
-- Is designed to handle most of the database management functions, such as:
+- Has minimal requirements for database customizations.
+- Is designed to handle most database-management functions, such as:
 
   - Patching
   - High availability
   - Backups
   - Security
 
-- Optimized to provide 99.99 percent availability
+- Is optimized to provide 99.99 percent availability.
 
 Consider this deployment mode to support cloud native apps that:
 
-- Are designed to handle automated patching.
-- Do not need:
-  - Granular control on the patching schedule.
+- Are designed to manage automated patching.
+- Don't require:
+  - Granular control of the patching schedule.
   - Custom MariaDB configuration settings.
 
 #### MariaDB on Azure VMs
 
-This option isn't a fully-managed database service and instead belongs to the industry category of IaaS. However, with this option, you can still run MariaDB Server, but inside a managed VM on the Azure cloud platform.
+This option isn't a fully-managed database service. Rather, it's an IaaS. However, this option does enable you to run MariaDB Server, inside a managed VM on the Azure cloud platform.
 
 > [!TIP]
-> You can install all the recent versions and editions of MariaDB in your hosted VM.
+> You can install all recent MariaDB versions and editions in your hosted VM.
 
-Consider this option only when you don't want the benefits offered by a DBaaS platform. In the next unit, let's examine Azure Database for MariaDB in more detail.
+Consider this option only when you don't want the benefits that a DBaaS platform offers. In the next unit, let's examine Azure Database for MariaDB in more detail.
