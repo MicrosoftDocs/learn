@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-to-azure-monitor # Do not edit: uid must be globally unique
+uid: learn.intro-to-azure-monitor # Do not edit: uid must be globally unique
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Monitor          # Do not edit: title must be "Introduction to <product>"
@@ -121,15 +121,15 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
 units:
-- learn.introduction-to-azure-monitor.introduction
-- learn.introduction-to-azure-monitor.what-is-{product}
-- learn.introduction-to-azure-monitor.how-{product}-works
-- learn.introduction-to-azure-monitor.when-to-use-{product}
-- learn.introduction-to-azure-monitor.knowledge-check
-- learn.introduction-to-azure-monitor.summary
+- learn.intro-to-azure-monitor.introduction
+- learn.intro-to-azure-monitor.what-is-azure-monitor
+- learn.intro-to-azure-monitor.how-azure-monitor-works
+- learn.intro-to-azure-monitor.when-to-use-azure-monitor
+- learn.intro-to-azure-monitor.knowledge-check
+- learn.intro-to-azure-monitor.summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn.introduction-to-azure-monitor.badge
+  uid: learn.intro-to-azure-monitor.badge
