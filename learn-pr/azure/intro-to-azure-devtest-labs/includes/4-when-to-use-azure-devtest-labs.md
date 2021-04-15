@@ -1,4 +1,4 @@
-There are many use cases and advantages to be gained from a cloud solution for development testing and development virtual machines. 
+There are many use cases for and advantages to be gained from a cloud solution for development testing and development virtual machines. 
 
 In your e-commerce company, you've decided to use Azure DevTest Labs to manage training environments that will help you onboard new developers quickly. However, you also want to know whether DevTest Labs can help you manage your testing and staging environments.
 
@@ -6,7 +6,7 @@ In this unit, you'll learn about common business problems that DevTest Labs can 
 
 ## Cloud or on-premises solutions
 
-In today's environments, developers might find that on-premises solutions take a long time to provision. They're often slowed down by approvals and red tape. There might also be problems caused by a limited hardware budget. These drawbacks could produce the following issues:
+In today's environments, developers might find that on-premises solutions take a long time to set up. They're often slowed down by approval processes and red tape. There might also be problems caused by a limited hardware budget. These drawbacks can produce the following issues:
 
 - Compromised agility
 - Limited software licensing
@@ -31,11 +31,11 @@ You can help eliminate these problems by using the features in the following tab
 | **Ready to use** | Reusable templates supply everything your developers need to start developing and testing applications. With a few clicks, you'll create an environment where your application's most up-to-date build is ready and you can start working immediately. |
 | **Fast provisioning** | Start within minutes of requesting an environment. |
 
-## Dev machines and test environments
+## Development machines and test environments
 
 The two most common use cases that DevTest Labs addresses are:
 
-- Development virtual machines in the cloud
+- Virtual machines in the cloud
 - Test environments
 
 Let's examine these use cases in more detail.
