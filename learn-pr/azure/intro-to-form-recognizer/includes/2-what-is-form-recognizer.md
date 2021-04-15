@@ -1,6 +1,6 @@
-Form Recognizer is a cognitive service that extracts data from images and documents using machine learning. Form Recognizer can analyze and extract data from various types of documents, including forms, tables, written and typed documents, receipts, invoices, and business cards.
+Form Recognizer is a cognitive service that extracts data from images and documents using machine learning. Form Recognizer can analyze and extract data from various types of documents including forms, tables, PDFs, pictures, written and typed documents, receipts, invoices, and business cards.
 
-Extracting data manually from large numbers of forms is difficult. Using a service, such as Form Recognizer, you can automate this process and help lower errors for data entry and save time, and ensure data from paper and digital forms is easily accessible.
+Extracting data manually from large numbers of forms is difficult. Using a service like Form Recognizer you can automate this process to help lower errors for data entry and save time, while also ensuring data from paper and digital forms is easily accessible.
 
 ## Layout API
 
@@ -28,7 +28,7 @@ This model is used to read English sales receipts from restaurants, retail, gas 
 
 ### Prebuilt ID model
 
-This model extracts the information from worldwide passports and American drivers licenses, such as the document number, name, country of residence, and expiration date. It then returns a list of the structured data.
+This model extracts the information from worldwide passports and American drivers licenses, such as the document number, name, country of residence, and expiration date, and returns it in a structured list.
 
 ![Prebuilt ID example.](../media/overview-id.jpeg)
 
@@ -37,3 +37,11 @@ This model extracts the information from worldwide passports and American driver
 This model extracts key information, such as the contact information, and compiles them in an organized JSON response.
 
 ![Prebuilt ID example.](../media/overview-id.jpeg)
+
+## Custom models
+
+Form Recognizer offers custom data extraction ‘models’ that are tailored to your specific forms, which can extract text, key/value pairs, selection marks, and table data. The models are trained from the data you provide, improving the data extraction and outputting structured data in a customizable format. Custom models are perfect for forms that you use repeatedly, such as documents specific to your organization or industry.
+
+You can create a custom model by uploading examples of your documents in the Azure portal, and even create a highly accurate model by ‘labeling’ the correct data to extract from your examples.
+
+![Custom model example.](../media/overview-custom.png)
