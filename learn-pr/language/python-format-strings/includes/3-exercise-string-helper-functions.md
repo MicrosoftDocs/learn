@@ -91,7 +91,7 @@ print(len('how many characters in this string?'))
 When you run the code, you should see the following output:
 
 ```output
-32
+35
 ```
 
 ### Step 5 - Comment out the previous code, and add code that calls functions that inspect the contents of the string
