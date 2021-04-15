@@ -6,20 +6,20 @@ You are already a winner. The interview step is a bit stressful but if you've ma
 
 ## Pre interview, take home assignment
 
-You might be asked to make a take home assignment. What's important to consider creating such a sample is that it should first of all solve the problem. Most likely you will send the company a link to where they can find your assignment solution, like GitHub for example. Your solution should fulfill the following:
+You might be asked to make a take home assignment. What's important to consider, creating such a sample, is that it should, first of all, solve the problem. Most likely you will send the company a link to where they can find your assignment solution, like GitHub for example. Your solution should fulfill the following:
 
-- **Well structured code**. You should divide up the code into reasonable amount of files and components, nobody wants to see all code in one file. Think if someone were to maintain this code, how would they want it structured.
-- **Linted**. Linting is the process of ensuring the code looks the same, the important part isn't whether you use spaces or tabs to indent code for example, it's that you are consistent. Tools should do this for you. You might not fai the assignment on this factor, but it shows you care.
-- **Tested**. It's a huge plus if your code has tests, especially if you have parts of the code that might be tricky. Having tests here can also lead them to assess you as being a higher level developer. Usually beginner to software development have more of a focus on getting things to work. Testing is something that you pick up a few things into the career. By you having tests, you showcase maturity, which can lead to a better offer in the end.
-- **Instructions on how to run it**. This is a must have, double and triple check that your instructions are correct. You might get one chance if they can't run the code, or none.
+- **Well-structured code**. You should divide up the code into reasonable number of files and components, nobody wants to see all code in one file. Think if someone were to maintain this code, how would they want it structured.
+- **Linted**. Linting is the process of ensuring the code looks the same, the important part isn't whether you use spaces or tabs to indent code, for example, it's that you are consistent. Tools should _lint_ for you, you shouldn't have to check every space, every semicolon etc. You might not fail the assignment on this factor, but it shows you care.
+- **Tested**. It's a huge plus if your code has tests, especially if you have parts of the code that might be tricky. Having tests here can also lead them to assess you as being a higher-level developer. Usually beginners to software development, have more of a focus on getting things to work. Testing is something that you pick up a few years into your career. By you having tests, you showcase maturity, which can lead to a better offer in the end.
+- **Instructions on how to run it**. Instructions are a must have, double, and triple check that your instructions are correct. You might get one chance if they can't run the code, or none.
 - **Does it solve the task**. The code should solve the laid out problem.
 - **Considerations**. Are there considerations you've made, which ones? Let's say the assignment isn't clearly written, by you making assumptions on what is meant, you can get a pass, even if you hand in code that solves the problem differently than what the interviewers had in mind.
  can it be optimized/extended, how in that case? 
-- **Good looking GitHub README**. Build and run instructions should be a in a README file, if you are using GitHub.
+- **Good looking GitHub README**. Build and run instructions should be in a README file, if you are using GitHub.
 
 ## Day before interview
 
-In the _before_ phase you can do a lot. Practice various exercises for example, but probably more important, take care of yourself. Get some good rest, get some endorfins through a good exercise, drink plenty of fluids, eat slow carbs and so on. Prepare like you would a race, after all, it's a kind of race where the goal is a great future.
+In the before phase, you can do a lot. Practice various exercises for example, but probably more important, take care of yourself. Get some good rest, get some endorphins through a good exercise, drink plenty of fluids, eat slow carbs and so on. Prepare like you would a race, after all, it's a kind of race where the goal is a great future.
 
 ## Interview day
 
@@ -27,15 +27,15 @@ You should feel excited on this day, no one wants to see you fail, after all, th
 
 The ones interviewing you should be open to questions, to help, sometimes you get stuck, that's ok, ask for hints if needed, they shouldn't hold that against you. Cause we've all been in this situation, it's a lot of pressure.
 
-The interviewers should do what they can to make you feel relaxed.
+The interviewers should do what they can, to make you feel relaxed.
 
 > Ask questions
 
-Ask questions for clarification, your context isn't their context. You need to ask questions how this is used, can you use a library, and any other limitations.
+Ask questions for clarification, your context isn't their context. You need to ask questions how this code will be used, can you use a library, and any other limitations.
 
 > You've made it already
 
-Interviewing for most companies in person means you already passed some bar already (phone screen and/or take home test) and they are interested in knowing who you are. You are usually presented to possible future colleagues, tour of the premises etc. So regardless of how it goes, think positive, you've made it through a bunch of steps already.
+Interviewing for most companies in person means you already passed some bar already (phone screen and/or take home test) and they are interested in knowing who you are. You are presented to possible future colleagues, tour of the premises etc. So regardless of how it goes, think positive, you've made it through a bunch of steps already.
 
 ## Tech interview
 
@@ -46,9 +46,9 @@ There's generally two types of ways that the technical interview is carried out,
 
 ### Whiteboard interview
 
-So we've established you will be standing in front of a whiteboard and try to explain yourself through the solution of a problem. Why this form of interviewing? The idea is to mimic your every day work life where it's quite common that you and a number of your colleagues are standing in front of a whiteboard and is trying to solve a problem together. This form of interviewing gives the interviewers a chance to hear your inner thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem.
+So we've established you will be standing in front of a whiteboard and try to explain yourself through the solution of a problem. Why this form of interviewing? The idea is to mimic your every day work life where it's common that you and many your colleagues are standing in front of a whiteboard and is trying to solve a problem together. This form of interviewing gives the interviewers a chance to hear your inner thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem.
 
-How do I pass such an interview? Generally the more of these you do, the better you become, but here's three tips:
+How do I pass such an interview? Generally the more interviews you do, the better you become at it, but here's three tips:
 
 - **Stop and think**. Don't try to solve the problem the first thing you do, but try assessing the problem first.
 - **Be verbal**. Explain your line of thinking so the interviewers can see what considerations and assumptions you make. It gives them a chance to both assess you but to correct an unclear instruction.
@@ -58,8 +58,8 @@ You usually get an algorithmic problem in such an interview so check the links i
 
 ### Standard interview
 
-You might get different kinds of questions on interview day. There can be a big task to solve, and you usually get a time limit like an hour to solve whatever it is, or a bug, or maybe analyze the code and say what you think.
+You might get different kinds of questions on interview day. There can be a large task to solve, and you usually get a time limit like an hour to solve whatever it is, or a bug, or maybe analyze the code and say what you think.
 
-The interview can also be more relaxed where most of the work is done already (by you) cause you did a "take home assignment" and you're just asked a few theory questions and a couple of questions on your code.
+The interview can also be more relaxed where most of the work is done already (by you) cause you did a "take home assignment" and you're asked a few theory questions and a couple of questions on your code.
 
-This type of interview is definitely the most common type of interview. The best thing you can do, to pass it, is to study context dependent questions and or study up on patterns, depending on the company you interview for.
+This type of interview is definitely the most common type of interview. The best thing you can do, to pass it, is to study context-dependent questions and or study up on patterns, depending on the company you interview for.
