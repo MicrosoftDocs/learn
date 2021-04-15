@@ -34,7 +34,7 @@ The following table identifies common challenges developers experience when work
 
 | Challenge                                                    | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| IoT apps require a powerful database engine                  | Many IoT apps require near real-time <!-- ID/SME: Please note, it should be "real-time" and not "realtime" (as you had it). Please make this change globally, as needed. --> analytics. Other apps require the ability to gather data when disconnected from backend systems <!-- ID/SME: Per the Microsoft Writing Style Guide, don't use "back end" if you can substitute a more specific term, such as server, operating system, database, or network. And it's two words, unless a compound modifier, in which case it would be hyphenated. Please fix all instances globally to reflect the change you make. If you must use "back end", please change all instances in this unit to "back-end" as they're all compound modifiers.-->. In these and other use cases, sending all data to the cloud can be very costly and bandwidth-intensive. This means that the IoT devices need access to a local database engine that must be lightweight and powerful. |
+| IoT apps require a powerful database engine                  | Many IoT apps require near real-time analytics. Other apps require the ability to gather data when disconnected from backend systems. In these and other use cases, sending all data to the cloud can be very costly and bandwidth-intensive. This means that the IoT devices need access to a local database engine that must be lightweight and powerful. |
 | IoT apps require seamless connectivity to the backend ecosystem | IoT apps can be significantly constrained if they can't easily connect to, and communicate with, backend systems in an organization's datacenter or their hosted cloud services, or both. That's why it's vital that any system you implement at the edge on IoT devices can communicate with industry-standard database systems. |
 | IoT apps can run in insecure environments                    | Many IoT apps might run in cars, hospitals, and factories, where security and privacy are primary requirements. Therefore, the platform you select to work with data in these environments must be secure, and users and developers must trust it.
 | Building solutions on unfamiliar platforms                   | Many existing IoT platforms rely on solution-specific APIs and databases that developers don’t know well. These solutions might also require specific language skills that developers don’t yet have. It's important that any apps you deploy to interact with edge-based IoT devices are built using standard components and tools with which developers are already familiar. |
@@ -45,7 +45,7 @@ Azure SQL Edge is a data engine that:
 
 - Has a small footprint.
 - Is edge-optimized.
-- Supports machine learning <!-- ID/SME: Just a note that per the Microsoft Cloud Style guide, when referring generically to machine learning, we shouldn't use an acronym. -->.
+- Supports machine learning.
 
 Azure SQL Edge shares the same codebase as SQL Server and SQL Database. Therefore, developers with skills in SQL Server or SQL Database can reuse their code to build your organization's edge-specific solutions on Azure SQL Edge. Using it means you develop your apps once and deploy them potentially anywhere.
 
@@ -65,7 +65,7 @@ Azure SQL Edge helps address IoT development challenges by:
    > [!TIP]
    > Azure SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar.
 
-- Enables AI and analytics at the edge. <!-- ID/SME: Just a note. You had "artificial intelligence" spelled out. However, per the Microsoft Cloud Style guide, it's doesn't need to be spelled out on first reference. The acronym is OK to use for all references. -->
+- Enables AI and analytics at the edge.
 - Includes native support for ingesting time-series data.
 - Delivers excellent security and provides support for regulatory compliance.
 
