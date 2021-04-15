@@ -9,8 +9,9 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 45
 azureSandbox: false
+labID: 93140 
 content: |
   [!include[](includes/4a-exercise-deploy-azure-resource-manager-templates.md)]
   

@@ -7,7 +7,7 @@ You are tasked with getting a better understanding of the capabilities of Azure 
 [SC- Next sentence to be reviewed] Finally, you'll learn how to work on your customer's tenant, and how to publish a service offering to Azure Marketplace.
 
 > [!IMPORTANT]
-> Your own Microsoft Azure subscription is required to action the exercises in this module, but the exercises can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used. [SC- Link to sign up for a free trial here?]
+> Your own Microsoft Azure subscription is required to action the exercises in this module, but the exercises can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used. [SC-Link to sign up for a free trial]
 
 **Learning objectives**
 After completing this module, you'll be able to:
