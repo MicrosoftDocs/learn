@@ -1,4 +1,4 @@
-Developers and cloud architects don't want to worry about managing the server that hosts their apps, the underlying database, or the operating system. They want to focus on app development. By using Azure Database for MariaDB, you can help your developers and cloud architects accelerate their app deployments.
+Developers and cloud architects don't want to worry about managing the server that hosts their apps, the underlying database, or the operating system (OS). They want to focus on app development. By using Azure Database for MariaDB, you can help your developers and cloud architects accelerate their app deployments.
 
 Azure Database for MariaDB is a managed relational database as a service (DBaaS) offering that can manage your mission-critical workloads with predictable performance and dynamic scalability. You can easily connect your existing client apps and database tools to your Azure Database for MariaDB instance. This provides the benefits of a platform as a service (PaaS) environment.
 
