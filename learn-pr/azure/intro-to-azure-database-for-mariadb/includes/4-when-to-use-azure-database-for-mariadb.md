@@ -4,7 +4,7 @@ The developers in your organization don't want to worry about VM characteristics
 - Cost
 - High-availability options
 
-Before you implement an Azure Database for MariaDB version, you should consider whether it meets your needs. Remember that it's an IaaS solution. It'll require that you maintain the VM, its operating system, and the MariaDB database engine instance. However, if you want a specific MariaDB version that Azure Database for MariaDB doesn't support, you should choose MariaDB for Azure VMs. In most other circumstances, Azure Database for MariaDB should meet your needs.
+Before you implement an Azure Database for MariaDB version, you should consider whether it meets your needs. Remember that it's an IaaS solution. It'll require that you maintain the VM, its OS, and the MariaDB database engine instance. However, if you want a specific MariaDB version that Azure Database for MariaDB doesn't support, you should choose MariaDB for Azure VMs. In most other circumstances, Azure Database for MariaDB should meet your needs.
 
 ## Decision criteria
 
@@ -18,10 +18,10 @@ The following table describes criteria you can use to decide whether to use Mari
 
 ## Apply the criteria
 
-<!-- ID/SME: I'd remove the "For more organizations" sentence as it's redundant. Just skip straight to "As a reminder...". --> For many organizations, the decision to move their MariaDB database is about addressing the criteria you just reviewed. As you consider the criteria, remember that with IaaS, Microsoft:
+For many organizations, the decision to move their MariaDB database is about addressing the criteria you just reviewed. As you consider the criteria, remember that with IaaS, Microsoft:
 
 - Administers the underlying infrastructure.
-- Provides automated patching for your underlying hardware and operating system (OS).
+- Provides automated patching for your underlying hardware and OS.
 
 With PaaS, Microsoft:
 
@@ -39,7 +39,7 @@ The following table describes administrative considerations for each option.
 | Option                   | Administrative effort                                        |
 | ------------------------ | ------------------------------------------------------------ |
 | MariaDB on Azure VMs       | You have complete control over the OS and the MariaDB server instance and its configuration. You decide when to update or upgrade the OS and database engine, and which patches to apply. You also decide when to install any additional software, such as an antivirus app. You can control VM size, the number of disks, and their storage configurations. Some of the automated features greatly simplify patching, backups, and high availability. In summary, although you have complete control, there is a significant amount of administrative effort involved. |
-| Azure Database for MariaDB | You can continue to administer your database without having to manage the hardware, the OS, or the database engine. You can choose to administer some items, such as databases, sign-in options, index tuning, query tuning, auditing, and security. However, there's considerably less required administrative effort involved. |
+| Azure Database for MariaDB | You can continue to administer your database without having to manage the hardware, the OS, or the database engine. You can choose to administer some items, such as databases, sign-in options, index tuning, query tuning, auditing, and security. However, there's considerably less administrative effort involved. |
 
 ### Analyze cost
 
@@ -56,7 +56,7 @@ With Azure Database for MariaDB, you select the tier that's you want. From there
 
 ### Analyze high availability
 
-If high availability is critical to your app, you should carefully consider the difference between MariaDB for Azure VMs and Azure Database for MariaDB. To enable high availability with MariaDB for Azure VMs, you are wholly responsible for configuring the required Azure components. This involves additional administrative effort and cost. However, Azure Database for MariaDB makes high availability available automatically.
+If high availability is critical to your app, you should carefully consider the difference between MariaDB for Azure VMs and Azure Database for MariaDB. To enable high availability with MariaDB for Azure VMs, you are wholly responsible for configuring the required Azure components. This involves additional administrative effort and cost. With Azure Database for MariaDB, high availability is automatically available.
 
 ## Summary
 
