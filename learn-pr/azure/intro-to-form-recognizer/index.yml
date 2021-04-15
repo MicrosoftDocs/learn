@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-form-recognizer
 metadata:
   title: Introduction to Form Recognizer
-  description: Azure Form Recognizer is an AI-powered document extraction service that lets you build automated data processing software using machine learning technology. You identify and extract data with prebuilt and custom document processing models to automate data entry in your applications and enrich your documents search capabilities.
+  description: Form Recognizer provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Form Recognizer 
-summary: Azure Form Recognizer is an AI-powered document extraction service that lets you build automated data processing software using machine learning technology. You identify and extract data with prebuilt and custom document processing models to automate data entry in your applications and enrich your documents search capabilities.
+summary: Form Recognizer provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
 abstract: |
   In this module, you will:
   - Assess the benefits of Form Recognizer
