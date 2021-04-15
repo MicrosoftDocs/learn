@@ -25,7 +25,7 @@ Azure Database for MariaDB is a fully managed, relational DBaaS platform hosted 
 - Automated maintenance of the following components to keep the service secure and up to date:
 
   - Underlying hardware
-  - Operating system
+  - OS
   - Database engine
 
 - Predictable performance.
