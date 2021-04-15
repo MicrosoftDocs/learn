@@ -19,7 +19,7 @@ A self-hosted integration runtime is capable of:
     - Lookup activity
     - Get Metadata activity.
 
-The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its functionality as provided by you. Therefore there is no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes into the destination.
+The self-hosted integration runtime is logically registered to the Azure Data Factory and the compute resource used to support its function as provided by you. Therefore there is no explicit location property for self-hosted IR. When used to perform data movement, the self-hosted IR extracts data from the source and writes it into the destination.
 
 ## Create a self-hosted Integration Runtime within Azure Data Factory
 
