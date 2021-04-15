@@ -10,6 +10,8 @@ Recall the bus-catching scenario, real-time data containing information about wh
 
 Azure Functions accelerate and simplify application development. You can develop more efficiently with Azure Functions, which is an event-driven serverless compute platform that can also solve complex orchestration problems. There is great support for building and debugging locally in Visual Studio Code. You can also deploy and operate at scale in Azure, and integrate with other services using triggers and bindings.
 
+> [!VIDEO "https://www.youtube.com/embed/8-jz5f_JyEQ"]
+
 Azure Functions supports using your preferred language as C#, Java, JavaScript, PowerShell, and Python are all supported. There are also custom handlers to enable you to use any other language as needed.
 
 Azure Functions allow you to host a single method or function to respond to an event. An event could be an HTTP request, a new message on a queue, or a timer. Additionally, Azure Functions scale automatically and you are only charged when a function is triggered, so it is truly a serverless service. Azure Functions allow you to focus on the code that's running your service and not the underlying infrastructure. Since they can be granular, Azure Functions are often used to support microservices architectures. This aspect also allows you to build reusable pieces for different applications.
