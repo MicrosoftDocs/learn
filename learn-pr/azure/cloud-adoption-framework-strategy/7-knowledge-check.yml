@@ -67,6 +67,6 @@ quiz:
     - content: Finance, marketing, sales, human resources, and executive leadership.
       isCorrect: true
       explanation: Correct.
-    - content: IT and cloud vendors
+    - content: IT and cloud vendors.
       isCorrect: false
       explanation: Although these personas are important, it's imperative to achieve organizational alignment among all key stakeholders.
