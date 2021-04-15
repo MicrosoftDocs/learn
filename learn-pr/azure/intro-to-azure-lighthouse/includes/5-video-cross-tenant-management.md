@@ -1,26 +1,16 @@
-Azure Lighthouse will change the way that Contoso manages its Azure customers moving forward. The features and capabilities available will enable you to meet the needs of your new customer Lamna Healthcare.
+So far, you've learned how Azure Lighthouse streamlines the onboarding of Contoso's new customers. Beyond onboarding, Azure Lighthouse will improve the way that Contoso manages Azure resources for its customers. Let's start by exploring how both Contoso and its customers have visibility of the Azure delegated resource management that has been deployed.
 
-Over the course of the previous units, you've gained an awareness of what Azure Lighthouse can offer Contoso. You've seen how it can streamline and provide a service offering at scale.
+## Viewing your customers
 
-Next, we'll show you some of the capabilities of managing Lamna Healthcare once they've been onboarded.
+Staff from the service provider can list and manage customers with a current service offer, in the Azure portal of their own Azure subscription.
+In the **My Customers** page of Azure Lighthouse, they can display the customer's subscriptions, offers and delegated access, as provided in the Azure Resource Manager templates. 
 
-In this unit, you'll see how a Contoso management user goes about managing the Lamna Healthcare subscription.
+## Viewing your service providers
+Customers who have accepted a services offer through the Azure Marketplace or by deploying an Azure Resource Manager template from their service provider, can view their accepted offer details via the ****Service Providers** page of Azure Lighthouse.
 
-## Overview
+## Auditing service provider activities inside the customer's subscription
+The security and compliance of an Azure environment is the responsibility of the subscription owner, even if they outsource management tasks to a service provider. Beyond the contracted legal requirements of the service offer between the customer and the service provider, the customer may want visibility of what actions the service provider has taken inside their Azure environment.
 
-The Azure Lighthouse service has two parts to it. The first is the service provider, looking to provide a scalable Azure-managed service. The second is the customer looking to have some aspect of the Azure subscription or resource groups administered on their behalf. Both parts have unique requirements, each with their own prerequisites and configurations. Setting up two disparate environments is beyond the scope of this module.
+With Azure delegated resource access, even when the service provider is actioning tasks with credentials from their own Azure environment, those actions still are still carried about by Azure Resource Manager inside the customer's subscrition. This means that those actions are recorded in the customer's Activity log, visible to the customer and able to be monitored and alerted on if required.
 
-So, to better demonstrate the capabilities of using Azure Lighthouse with our customer Lamna Healthcare, a video presentation has been created.
-
-This content will look at:
-
-- How to find Lamna Healthcare, or any of your onboarded Azure subscriptions, or resource groups
-- Verify the Lamna Healthcare subscription details and the role assignments associated with it
-- How to view all the resources available under delegated resource management, and how to filter them to meet the view just Lamna Healthcare
-- How to check the compliance of Lamna Healthcare's subscription
-- How to view Lamna Healthcare's security score
-- Look at how Azure Monitor can provide analytics from the managed resources data
-
-### Video
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qYWr]
+[SC-Pics? Also do we need to retitle unit due to dropping video?]

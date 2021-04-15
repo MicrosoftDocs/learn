@@ -1,14 +1,10 @@
-Azure Lighthouse provides two means of onboarding Azure Customers. For Lamna Healthcare, you used an Azure Resource Manager template to provision a subscription management service using Azure delegated resource management. You now want to grow and scale your Azure Lighthouse managed service offering to new customers.
+Azure Lighthouse provides two means of onboarding Azure Customers. Conotos is now comfortable providing Azure Resource Manager templates to new customers when they sign a service contract. Now you want to grow and scale your Azure Lighthouse managed service offering to new customers.
 
-Azure Lighthouse provides the means to create a service offer that you can publish to the Azure Marketplace.
-
-In this unit, you'll see how Contoso will create a new subscription offer for deployment to the Azure Marketplace.
+With Azure Lighthouse, you can create a service offer and publish it to the Azure Marketplace.
 
 ## Getting Started
 
-So far, you've looked at how to onboard Lamna Healthcare using the Azure Resource Management templates. This is ideally suited to existing customers where you want to create new service offers for other resource groups or subscriptions.
-
-Contoso is keen to scale up its managed service offering to new customers. Azure Lighthouse provides the means to create service offerings that can be published directly to the Azure Marketplace. There is almost no difference when publishing a Managed Services to any other published Marketplace offer.
+If you already have experience with publishing offers to the Azure Marketplace, there is almost no difference in publishing a service offer that uses Azure Lighthouse. 
 
 ### Partner Center account
 
@@ -16,7 +12,7 @@ In order to create a service offer, you'll need a valid Partner Center account. 
 
 ### Public and Private offers
 
-When defining an Azure Marketplace managed service offer, you'll need to decide the target audience for the offer. Which is controlled by the type of offer you make: public or private.
+When defining an Azure Marketplace managed service offer, you'll need to decide the target audience for the offer. This is controlled by the type of offer you make: public or private.
 
 - **Public**: offers of this type are visible to all Azure Marketplace users; typically, this type is used to gain new customers
 - **Private**: offers of this type are only visible to named Azure Customers; typically, this type of offer is used for existing known customers
