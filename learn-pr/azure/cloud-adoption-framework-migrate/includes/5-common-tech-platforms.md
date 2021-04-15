@@ -4,9 +4,9 @@ This unit will outline Microsoft's unified migration approach. This approach ens
 
 ## Unified migration focus
 
-Most migration teams are aware of the capabilities of Azure Migrate and the Azure Migrate hub to facilitate migration of Windows and SQL Server assets. But before you begin a migration, it's important to familiarize yourself with the other technology platforms that can be completed through the same migration factory approach or the same migration process.
+Most migration teams are aware of the capabilities of Azure Migrate and the Azure Migrate hub to facilitate migration of Windows and SQL Server assets. But before you begin a migration, it's important to familiarize yourself with the other technology platforms that can use the same migration factory approach or the same migration process.
 
-The following diagram and table outline several scenarios that follow the same iterative Migrate methodology for migration and modernization. The summary at the end of this learn module will include links for continued learning on each of these different technology platforms.
+The following diagram and table outline several scenarios that follow the same iterative Migrate methodology for migration and modernization. The summary at the end of this learn module will include links for continued learning on each of these technology platforms.
 
 :::image type="content" source="../media/one-migrate.png" alt-text="Diagram that shows the variety of technology platforms supported in the migration process." border="false":::
 
@@ -20,13 +20,13 @@ The following diagram and table outline several scenarios that follow the same i
 | **Hybrid** | Azure Stack | VMware | Containers |
 | **Additional scenarios** | Secure workloads | Mainframes | NetApp and SAP HANA |
 
-## Preparing for common platforms
+## Preparing for common tech platforms
 
 Each technology platform might have subtle differences in how the migration should be executed. Later in this module, you can bookmark the links in the summary for a reference on those considerations. For now, this unit can help you understand the ways a technology platform might affect your migration at a high level. 
 
 Here are a few examples to illustrate the impact:
 
-- **Assess workloads:** During assessment of the workloads in each wave, the architects are looking primarily for Azure compatibility and dependencies between assets. But they should also be looking for compatibility with modernization and optimization opportunities.
+- **Assess workloads:** During assessment of the workloads in each wave, the architects are looking primarily for Azure compatibility and dependencies between assets. But they should also look for compatibility with modernization and optimization opportunities.
 
   In the Tailwind Traders story, the team will evaluate each of its databases for compatibility with Azure SQL Database to minimize the amount of infrastructure dedicated to data hosting. The OSS databases will provide several potential modernizations, thanks to the various database formats that Azure SQL Database supports.
 
@@ -34,11 +34,11 @@ Here are a few examples to illustrate the impact:
 
   When the Tailwind Traders team migrates its SAP platform, it will add **SAP Database Migration Option (DMO)** to its migration toolbox to ensure a smooth migration to SAP HANA in Azure.
 
-- **Release workloads:** After each technology platform and workload is migrated to Azure, the team will need to test, optimize, and release production traffic to its newly migrated workloads. Some platforms might require a bit of diversity in the monitoring tools to gain clarity and to get visibility into workload operations.
+- **Release workloads:** After each technology platform and workload is migrated to Azure, the team will need to test, optimize, and release production traffic to its newly migrated workloads. Some platforms might require a bit of diversity in the monitoring tools to help the team gain clarity and get visibility into workload operations.
 
   When the Tailwind Traders team migrates its virtual desktops, it will likely use one of the Azure Migrate partner solutions, like Lakeside Software. Using such a partner solution will help provide a great user experience by tracking performance and identifying additional workloads for migration.
 
-## Preparing for diverse technology platforms in your sprint plan
+## Preparing for diverse tech platforms in your sprint plan
 
 The same methodology applies to each of these technology platforms. During initial cloud adoption planning, little effort is applied to prepare for these differences. The individual technology platforms typically don't materially affect that level of planning.
 

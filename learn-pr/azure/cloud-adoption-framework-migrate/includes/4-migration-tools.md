@@ -27,9 +27,9 @@ The Azure Migrate hub includes the following tools. These tools help facilitate 
 > [!NOTE]
 > If you're in Azure Government, external integrated tools and independent software vendor (ISV) offerings can't send data to Azure Migrate projects. You can use tools independently.
 
-### Discovery and Assessment tool
+### Discovery and Assessment
 
-Here are more details about what the tool Discovery and Assessment tool in Azure Migrate does:
+Here are more details about what the Discovery and Assessment tool in Azure Migrate does:
 
 - **Azure readiness:** Assesses whether on-premises machines are ready for migration to Azure.
 - **Azure sizing:** Estimates the size of Azure VMs or the number of Azure VMware nodes after migration.
@@ -42,7 +42,7 @@ The appliance discovers on-premises machines. It also continually sends machine 
 
 After appliance discovery, you can gather discovered machines into groups and run assessments for each group.
 
-### Server Migration tool
+### Server Migration
 
 <!-- docutune:ignore "Server Migration" -->
 

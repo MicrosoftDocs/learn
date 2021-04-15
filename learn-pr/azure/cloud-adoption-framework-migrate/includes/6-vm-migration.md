@@ -14,17 +14,17 @@ After you start the replication, you can track and monitor the replication of ea
 
 :::image type="content" source="../media/6-vm-replication.png" alt-text="Screenshot of the Azure Migrate Server Migration page in the Azure admin center." border="false":::
 
-*Figure 1: The Azure Migrate Servers page in the Azure admin center.*
+*Figure 1: The Azure Migrate - Servers page in the Azure admin center.*
 
 ## Testing migrated virtual machines
 
-After all your targeted VMs are replicated and migrated into Azure, and before you migrate them into production, you can test them to ensure that everything works. The process runs a prerequisite check, prepares for the test, creates a new test VM, and starts it. This process will take a few minutes.
+After all your targeted VMs are replicated and migrated into Azure, and before you migrate them into production, you can test them to ensure that everything works. The process runs a prerequisite check, prepares for the test, creates a new test VM, and starts the test. This process will take a few minutes.
 
 The test migration functionality in Server Migration runs without affecting on-premises machines. It allows you to test the migration process, perform any app testing, and address any issues before a full migration.
 
 Testing your migration is a great feature that helps you become comfortable with the migration process and understand any tasks that need to happen after migration. You can carry out this test migration as many times as you need in order to refine the process and confirm the steps.
 
-> [!NOTE]
+> [!IMPORTANT]
 > After the test migration, clean up the test resources to ensure that you don't incur any additional costs.
 
 ## Migrating the virtual machines into production
@@ -43,7 +43,7 @@ Now Server Migration will run through the production migration process. You can 
 
 ## Release tasks
 
-After the migration has taken place, you can release production traffic to the VM by rerouting network traffic to it. Before you reroute traffic, evaluate the workloads to ensure that each has a completed business change plan, technical validation, and business validation.
+After the migration, you can release production traffic to the VM by rerouting network traffic to it. Before you reroute traffic, evaluate the workloads to ensure that each has a completed business change plan, technical validation, and business validation.
 
 **Business change plan:** Ensure that the following aspects of the business change plan are properly communicated to avoid business disruption:
 
@@ -57,7 +57,7 @@ After the migration has taken place, you can release production traffic to the V
 - **Network isolation testing.** Test and monitor network traffic to ensure proper isolation and no unexpected network vulnerabilities. Validate that any network routing to be severed during cutover is not experiencing unexpected traffic.
 - **Dependency testing.** Ensure that all workload application dependencies have been migrated and are accessible from the migrated assets.
 - **Business continuity and disaster recovery (BCDR) testing.** Validate that any service-level agreements (SLAs) for backup and recovery are established. If possible, perform a full recovery of the assets from the BCDR solution. At minimum, you'll want to add a backup schedule by using Azure Backup. For more advanced SLAs, you might also want to consider replication to a second region by using Azure Site Recovery.
-- **End-user route testing.** Validate traffic patterns and routing for end-user traffic. Ensure that network performance aligns with expectations.
+- **User route testing.** Validate traffic patterns and routing for user traffic. Ensure that network performance aligns with expectations.
 - **Final performance check.** Ensure that users have completed and approved performance testing. Execute any automated performance testing.
 - **Additional technical readiness.** Restrict network access for unused services by using network security groups. Deploy Azure Disk Encryption to secure the disks from data theft and unauthorized access.
 

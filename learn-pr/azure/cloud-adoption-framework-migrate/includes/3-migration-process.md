@@ -8,7 +8,7 @@ But as most migration teams quickly discover, the repeatable process is the easy
 
 The binary assets being moved to the cloud can theoretically be migrated in one large batch. Some organizations have been successful in mass migrations of all assets by using Azure Migrate. Doing so requires a planned effort of analysis and remediation to ensure that all assets are compatible with the cloud. It also requires a detailed plan to test and certify performance for each of the workloads that run on those assets.
 
-The degree of planning and the impact on business users makes the mass migration approach unattractive for most organizations. An alternative approach is to apply the principles of agile methodologies, such as Scrum, to break down the mass migration into waves: migrating a smaller collection of workloads on a regular cadence. 
+The degree of planning and the impact on business users make the mass migration approach unattractive for most organizations. An alternative approach is to apply the principles of agile methodologies, such as Scrum, to break down the mass migration into waves: migrating a smaller collection of workloads on a regular cadence. 
 
 The iterative approach to migration allows the business to absorb the changes in smaller units and produces less business disruption. It also allows the team to measure and learn from each iteration. The team can gain speed and expertise progressively from one iteration to the next.
 
@@ -30,7 +30,7 @@ Repeating these three disciplines for each workload in the migration plan will h
 
 When you're planning migration efforts, one of the first steps is to break down the list of workloads to be migrated into smaller groups.
 
-As you learn about your team's velocity (how many workloads they can move in a sprint), we suggest starting with the Power of 10 approach. In that approach, you consistently define groups of 10 common workloads in each wave. Then, map those groups of 10 workloads to two-week iterations or sprints, by using your cloud adoption plan in Azure DevOps. See the planning module for step-by-step guidance.
+As you learn about your team's velocity (how many workloads they can move in a sprint), we suggest starting with the Power of 10 approach. In that approach, you consistently define groups of 10 common workloads in each wave. Then, map those groups of 10 workloads to two-week iterations or sprints by using your cloud adoption plan in Azure DevOps. See the planning module for step-by-step guidance.
 
 Before each sprint, the migration team should evaluate the next wave of workloads to be migrated. The objective of this evaluation is to ensure that the team has all of the necessary information and access to be successful in the current sprint. It also gives the team a chance to adjust the next 10 workloads based on what it has learned from past sprints. After the team is committed to the sprint, the actual work can begin.
 
@@ -67,4 +67,4 @@ Technology seldom blocks the migration process. Most of the blockers to migratio
 
   Technical spikes are usually addressed in a parallel sprint by a separate team. A migration team can address many of the technical issues around remediation and modernization by using the Cloud Adoption Framework migration scenarios to be shared at the end of this module.
 
-When a workload requires comprehensive changes that affect the application architecture, workload teams should review the [Well-Architected Framework](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction/) Learn module for additional guidance.
+When a workload requires comprehensive changes that affect the application architecture, workload teams should review the [Well-Architected Framework](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction/) Learn module for more guidance.
