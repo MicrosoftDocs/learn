@@ -1,5 +1,5 @@
 Before you start, you'll need the following:
-- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free ](about:blank). If you are a student, then sign up for an [Azure for Students](about:blank) account.
+- A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free ](https://azure.microsoft.com/free ). If you are a student, then sign up for an [Azure for Students](https://signup.azure.com/studentverification?offerType=1&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88) account.
 
 ## Create cloud resources
 
@@ -12,59 +12,48 @@ Perform the following steps in the Azure Cloud Shell environment.
 2. Add the Azure IoT extension to the Cloud Shell instance.
 
    ```
-   az extension add --name azure-cli-iot-ext 
+   az extension add --name azure-iot
    ```
 
-3. Create a resource group to hold the cloud infrastructure you'll use for the exercise. Use only lowercase alphabets and numbers in your unique string
+3. Create a resource group in the eastus2 location using the following command. Give a name to your resource group.
 
    ```
-   # Pick a unique string to append to your resources
-   export UNIQUESTRING=<replace-with-your-unique-string>  
-   export RGLOC=westus2   
-   
-   az group create \
-   --name iot-resources-$UNIQUESTRING \
-   --location $RGLOC   
+   az group create --name <resource-group-name> --location eastus2   
    ```
 
 ### Create an IoT Edge device in the IoT hub
 
-1. Create an IoT Hub resource.
+1. Create an F1 Tier IoT Hub using the following command. Give a name to your IoT Hub and replace it with your resource group.
 
    ```
-   az iot hub create \
-   --resource-group iot-resources-$UNIQUESTRING \
-   --name iot-hub-$UNIQUESTRING \
-   --sku S1 \
-   --partition-count 2   
+   az iot hub create --resource-group <resource-group-name> --name <iot-hub-name> --sku F1 --partition-count 2  
    ```
 
-2. Create an edge-enabled device in your IoT Hub.  In this exercise, we only use a single device.
+2. A device must be registered with your IoT Hub before it can connect. Run the following command to create a device identity in your IoT Hub. Give a name to your IoT device and replace it with your IoT Hub.
 
    ```
-   az iot hub device-identity create \
-   --device-id edge-device-$UNIQUESTRING \
-   --hub-name iot-hub-$UNIQUESTRING \
-   --edge-enabled   
+   az iot hub device-identity create --hub-name <iot-hub-name> --device-id <device-id>
    ```
 
 ## Install IoT Edge for Linux
 
-1. Install the repository configuration that matches your device operating system.
+1. Open the terminal in your Linux computer. 
 
-   - **Ubuntu Server 18.04**:
+2. Install the repository configuration that matches your device operating system.
+
+   **Ubuntu Server 18.04**:
 
      ```bash
      curl https://packages.microsoft.com/config/ubuntu/18.04/multiarch/prod.list > ./microsoft-prod.list
      ```
 
-2. Copy the generated list to the sources.list.d directory.
+3. Copy the generated list to the sources.list.d directory.
 
    ```bash
    sudo cp ./microsoft-prod.list /etc/apt/sources.list.d/
    ```
 
-3. Install the Microsoft GPG public key.
+4. Install the Microsoft GPG public key.
 
    ```bash
    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -73,17 +62,19 @@ Perform the following steps in the Azure Cloud Shell environment.
 
 ### Install a container engine
 
-Update package lists on your device.
+Azure IoT Edge relies on an OCI-compatible container runtime. For production scenarios, we recommended that you use the Moby engine. The Moby engine is the only container engine officially supported with Azure IoT Edge. Docker CE/EE container images are compatible with the Moby runtime.
 
-```bash
-sudo apt-get update
-```
+1. Update package lists on your device.
 
-Install the Moby engine.
+   ```bash
+   sudo apt-get update
+   ```
 
-```bash
-sudo apt-get install moby-engine
-```
+2. Install the Moby engine.
+
+   ```bash
+   sudo apt-get install moby-engine
+   ```
 
 If you get errors when installing the Moby container engine, verify your Linux kernel for Moby compatibility. Some embedded device manufacturers ship device images that contain custom Linux kernels without the features required for container engine compatibility. Run the following command, which uses the [check-config script](https://github.com/moby/moby/blob/master/contrib/check-config.sh) provided by Moby, to check your kernel configuration:
 
@@ -99,30 +90,64 @@ In the output of the script, check that all items under `Generally Necessary` an
 
 The IoT Edge security daemon provides and maintains security standards on the IoT Edge device. The daemon starts on every boot and bootstraps the device by starting the rest of the IoT Edge runtime.
 
-Update package lists on your device.
+1. Update package lists on your device.
 
-```bash
-sudo apt-get update
+   ```bash
+   sudo apt-get update
+   ```
+2. Check to see which versions of IoT Edge are available.
+
+   ```bash
+   apt list -a iotedge
+   ```
+
+3. Install the most recent version of the security daemon, use the following command that also installs the latest version of the **libiothsm-std** package:
+
+   ```bash
+   sudo apt-get install iotedge
+   ```
+
+## Provision the device with its cloud identity
+
+### Authenticate with symmetric keys
+
+At this point, the IoT Edge runtime is installed on your Linux device, and you need to provision the device with its cloud identity and authentication information.
+
+This section walks through the steps to provision a device with symmetric key authentication. You should have registered your device in IoT Hub, and retrieved the connection string from the device information. 
+
+On the IoT Edge device, open the configuration file.
+
+   ```bash
+   sudo nano /etc/iotedge/config.yaml
+   ```
+Find the provisioning configurations of the file and uncomment the **Manual provisioning configuration using a connection string** section, if it isn't already uncommented.
+
+    ```# Manual provisioning configuration using a connection string
+    provisioning:
+      source: "manual"
+      device_connection_string: "<ADD DEVICE CONNECTION STRING HERE>"
+    ```
+Update the value of **device_connection_string** with the connection string from your IoT Edge device. Make sure that any other provisioning sections are commented out. Ensure the **provisioning**: line has no preceding whitespace, and that nested items are indented by two spaces.
+
+To paste clipboard contents into Nano Shift+Right, Click or press Shift+Insert.
+
+Save and close the file.
+
+```
+CTRL + X`, `Y`, `Enter
 ```
 
-```bash
-apt list -a iotedge
-```
+After entering the provisioning information in the configuration file, restart the daemon:
 
-If you want to install the most recent version of the security daemon, use the following command that also installs the latest version of the **libiothsm-std** package:
+   ```
+   sudo systemctl restart iotedge
+   ```
+## Verify successful configuration
 
-```bash
-sudo apt-get install iotedge
-```
+Verify that the runtime was successfully installed and configured on your IoT Edge device.
 
-## Set edge workloads
+Check to see that the IoT Edge system service is running.
 
-1. Download the deployment configuration file that describes the Azure IoT Edge Modules and Routes for this solution. Open the [deployment.amd64.json](https://raw.githubusercontent.com/gloveboxes/Creating-an-image-recognition-solution-with-Azure-IoT-Edge-and-Azure-Cognitive-Services/master/config/deployment.arm32v7.json) link and save the deployment.arm32v7.json in a known location on your computer.
-2. Open a command line console/terminal and change directory to the location where you saved the deployment.arm32v7.json file.
-3. Finally, from the command line run the following command, be sure to substitute [device id] and the [hub name] values.
-
-```
-az iot edge set-modules --device-id [device id] --hub-name [hub name] --content deployment.amd64.json
-```
-
-The modules will now start to deploy to your Linux computer. Approximately 1.5 GB of Dockers modules will be downloaded and decompressed on the computer. This is a one off operation.
+   ```
+   sudo systemctl status iotedge
+   ```

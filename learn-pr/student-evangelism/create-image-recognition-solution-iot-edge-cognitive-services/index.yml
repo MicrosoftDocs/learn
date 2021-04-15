@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.oxford.deploy-iot-edge-kubernetes
+uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.
 metadata:
   title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
   description: "This is a computer vision solution using Azure IoT Edge"
@@ -20,9 +20,14 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT Edge
     - Basic knowledge of Cognitive Services
+    - Basic knowledge of Azure Custom Vision
+    - Basic knowledge of Azure Speech Service
     - Azure subscription
-    - Simulated Azure IoT Edge device (such as a PC)
+    - Linux computer
     - USB Camera
+    - Visual Studio Code installed on your computer
+    - Docker Community Edition installed on your computer
+
 iconUrl: /learn/achievements/student-evangelism/create-image-recognition-solution-iot-edge-cognive-services.svg
 badge:
   uid: learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.badge
@@ -37,4 +42,6 @@ units:
 - learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.design-computer-vision-solution
 - learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-install-edge-runtime-linux
 - learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.create-fruit-classification-model
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.understand-project-structure
 - learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.exercise-build-deploy-solution
+- learn.oxford.create-image-recognition-solution-iot-edge-cognive-services.knowledge-check
