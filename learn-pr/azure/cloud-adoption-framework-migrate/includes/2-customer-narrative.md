@@ -29,6 +29,6 @@ In the planning module, we rationalized the company's digital estate by using Az
 
 Like most customers, Tailwind Traders supports a diverse collection of technology platforms. The company's main concern is the large and growing collection of open-source solutions running on Linux and OSS data platforms. The company is also evaluating how to host its Windows Virtual Desktop solution in the cloud. At some point, the company will also need to migrate its SAP HANA solution to the cloud.
 
-As the team prepares for this migration project, it will need to ensure that it has the skills required to migrate and modernize Windows, SQL Server, and Azure SQL assets. It must also be able to handle other technology platforms in the same processes.
+As the team prepares for this migration project, it will need to ensure that it has the skills required to migrate and modernize Windows and SQL Server assets. It must also be able to handle other technology platforms in the same processes.
 
 The remaining units of this module will demonstrate processes, tools, and approaches for success in a variety of team structures and across several technology platforms.
