@@ -30,9 +30,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice that you're using a variable for the name of the Azure App Service plan, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+   Also notice that you're using a variable for the name of the Azure App Service plan, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plans need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
-2. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
+1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -66,7 +66,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
    }
    ```
 
-3. Save the changes to the file.
+1. Save the changes to the file.
 
 ## Automatically set the SKUs for each environment type
 
@@ -92,7 +92,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
-2. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
+1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -128,7 +128,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 
-3. Save the changes to the file.
+1. Save the changes to the file.
 
 ### Deploy the updated Bicep template
 

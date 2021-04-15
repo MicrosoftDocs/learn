@@ -48,7 +48,7 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
 
-1. Open a terminal window by using the **Terminal** menu.
+1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
 1. If the dropdown menu on the right of the terminal window says **bash**, you have the right shell to work from and you can skip to the next section.
 
