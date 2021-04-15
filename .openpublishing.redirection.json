@@ -2,12 +2,12 @@
   "redirections": [
     {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
-      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
-      "redirect_url": "https://docs.microsoft.comlearn/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
       "redirect_document_id": false
     },
     {
@@ -5468,6 +5468,36 @@
     {
       "source_path": "learn-pr/python-partnership/secret-message/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secret-message/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/2-when-azure-dsvm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/3-type-of-azure-dsvm.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/4-use-cases-dsvma.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/5-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
       "redirect_document_id": false
     }
   ]
