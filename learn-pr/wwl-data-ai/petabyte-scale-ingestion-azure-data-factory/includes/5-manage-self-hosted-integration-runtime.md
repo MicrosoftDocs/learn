@@ -41,7 +41,7 @@ The self-hosted integration runtime is logically registered to the Azure Data Fa
 
 1. Copy and paste the authentication key. Select Download and install integration runtime.
     > [!div class="mx-imgBorder"]  
-    > ![Integration runtime setup](../media/integration-runtime-setup-keys.png)
+    > ![Integration runtime setup keys](../media/integration-runtime-setup-keys.png)
 
 1. Download the self-hosted integration runtime on a local Windows machine. Run the installer.
 
