@@ -33,6 +33,9 @@ Try it out by replacing the commands in your file with the following. The `print
 print( f"The year is {year}..." )
 ```
 
+> [!NOTE]
+> If you get a syntax error with `print(f"` you may be using an older version of Python. Either update you version of Python, remove the `f`, or use another syntax like `print( "The year is {}...".format(year))`
+
 Select the **Run** button, and you should see the year in the output.
 
 :::image type="content" source="../media/print-year.png" alt-text="Screenshot that shows the output to printing the value of a variable.":::
