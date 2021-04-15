@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "Which resource is required to configure ExpressRoute peering on the Azure VMware Solution (AVS) private cloud to the on-premises environment?"
     choices:
-    - content: "Customer-provided ExpressRoute"
+    - content: "Customer-provided ExpressRoute circuit"
       isCorrect: true
-      explanation: "AVS deploys with an ExpressRoute circuit that connects you to Azure from the bare-metal hosts. Also, a customer-provided ExpressRoute is required to establish full connectivity to AVS from the on-premises environment for migrations."
+      explanation: "AVS deploys with an ExpressRoute circuit that connects you to Azure from the bare-metal hosts. Also, a customer-provided ExpressRoute circuit is required to establish full connectivity to AVS from the on-premises environment for migrations."
     - content: "Application gateway"
       isCorrect: false
       explanation: "An Azure application gateway is a web-traffic load balancer that enables you to manage traffic to your web applications. This functionality isn't required to peer the AVS environment to on-premises."

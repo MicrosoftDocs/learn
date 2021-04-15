@@ -1,10 +1,10 @@
-After Azure VMware Solution (AVS) is deployed, network connectivity is the next step for a successful deployment. The AVS solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS-provided ExpressRoute helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
+After Azure VMware Solution (AVS) is deployed, network connectivity is the next step for a successful deployment. The AVS solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The AVS-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
 
 ## Create an Azure Bastion resource
 
 After AVS is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log into the AVS vCenter and NSX environments.
 
-When the ExpressRoute circuits and ExpressRoute Global Reach have been configured for hybrid connectivity, you no longer need the Azure Bastion resource. Your company might still want to keep the resource as a backup in case you have connectivity issues with ExpressRoute in the future.
+When the ExpressRoute circuits and ExpressRoute Global Reach have been configured for hybrid connectivity, you no longer need the Azure Bastion resource. Your company might still want to keep the resource as a backup in case you have connectivity issues with the ExpressRoute circuits in the future.
 
 To create an Azure Bastion resource:
 
@@ -38,7 +38,7 @@ Use Azure Bastion to sign into the jump-host VM. Then, open a web browser, go to
 
 ## Establish an ExpressRoute Global Reach connection to the on-premises VMware environment
 
-Global Reach will connect your on-premises VMware environment to the AVS private cloud. Connectivity is established between the AVS ExpressRoute and a new or existing ExpressRoute to an on-premises environment.
+Global Reach will connect your on-premises VMware environment to the AVS private cloud. Connectivity is established between the AVS ExpressRoute circuit and a new or existing ExpressRoute circuit to an on-premises environment.
 
 To create an ExpressRoute Global Reach authorization key in the private cloud:
 

@@ -101,9 +101,9 @@ Follow these steps:
     - **DNS zone**: A name and up to three DNS server IP addresses in `8.8.8.8` format.
     - **FQDN zone**: A name, the FQDN domain, and up to three DNS server IP addresses in `8.8.8.8` format.
 
-1. To configure the D N S service, select the **DNS service** tab, select **Add**, and then provide this information:
+1. To configure the DNS service, select the **DNS service** tab, select **Add**, and then provide this information:
 
-    :::image type="content" source="../media/6-nsxt-workload-networking-configure-dns-service-2.png" alt-text="Screenshot of the Azure portal showing the fields for configuring the DNS service.":::
+    :::image type="content" source="../media/6-nsxt-workload-networking-configure-dns-service-2.png" alt-text="Screenshot of the Azure portal showing the fields for configuring the D N S service.":::
 
     | Field   | Value |
     | :---------- | :------------------ |
@@ -117,7 +117,7 @@ Follow these steps:
 
 ## Verify on-premises network connectivity to the AVS private cloud
 
-You should see where the ExpressRoute connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. You might need to allow routes to propagate back to the on-premises network.
+You should see where the Azure ExpressRoute circuit connects to the NSX-T network segments and the AVS management segments in the edge router. Each environment is different. You might need to allow routes to propagate back to the on-premises network.
 
 Some environments have firewalls that protect ExpressRoute circuits. If there are no firewalls, try to ping the AVS vCenter server or a VM on the NSX-T segment from your on-premises environment. Also, from the VM on the NSX-T segment, resources should be able to reach the on-premises environment.
 

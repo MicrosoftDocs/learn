@@ -36,9 +36,9 @@ The following table shows an example of how to carve up the /22 CIDR network add
 
 During AVS deployment, you can select an existing virtual network, create a new one, or leave the field blank.
 
-If you select an existing virtual network, you must designate a GatewaySubnet for the AVS ExpressRoute. And if you create a brand-new virtual network, a GatewaySubnet must be created for the AVS ExpressRoute. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment is provisioned in Azure.
+If you select an existing virtual network, you must designate a GatewaySubnet for the AVS ExpressRoute circuit. And if you create a brand-new virtual network, a GatewaySubnet must be created for the AVS ExpressRoute circuit. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure will be done for you while the environment is provisioned in Azure.
 
-If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute to Azure after AVS finishes deployment.
+If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute circuit to Azure after AVS finishes deployment.
 
 :::image type="content" source="../media/5-create-private-cloud.png" alt-text="Screenshot of the Azure portal showing the virtual network field left blank during a private-cloud deployment.":::
 
@@ -46,7 +46,7 @@ If you leave the virtual network blank, you'll have to create a virtual network 
 
 There are two types of interconnectivity for AVS:
 
-- **Basic interconnectivity**: AVS connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The AVS-provided ExpressRoute establishes connectivity to and from the AVS private cloud for other Azure services, like Azure Monitor and Azure Security Center.
+- **Basic interconnectivity**: AVS connects to an Azure virtual network by using an ExpressRoute connection that deploys with the resource. The AVS-provided ExpressRoute circuit establishes connectivity to and from the AVS private cloud for other Azure services, like Azure Monitor and Azure Security Center.
 - **Full interconnectivity**: This connectivity model extends the basic interconnectivity implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds. This connection is configured via a customer-provided ExpressRoute circuit. You can use an existing circuit or purchase a new one.
 
 ExpressRoute Global Reach must be enabled to route traffic to and from the on-premises environment to the AVS private cloud. The customer-provided ExpressRoute circuit is not a part of the AVS private-cloud deployment. All gateways involved with the deployment must support 4-byte autonomous system number (ASN). An ASN is a unique identifier that is globally available and allows its autonomous system to exchange routing information with other systems. All routes between the on-premises environment and Azure are advertised via the industry-standard Border Gateway Protocol (BGP).
@@ -55,7 +55,7 @@ ExpressRoute Global Reach must be enabled to route traffic to and from the on-pr
 
 There are a few prerequisites before you configure ExpressRoute Global Reach.
 
-- The AVS ExpressRoute needs established connectivity to and from Azure within the AVS private cloud.
+- The AVS ExpressRoute circuit needs established connectivity to and from Azure within the AVS private cloud.
 - A separate, customer-provided ExpressRoute circuit is required. This circuit is used to connect on-premises environments to Azure.
 - A /29 non-overlapping network-address block is required for ExpressRoute Global Reach peering.
 - All gateways, including the ExpressRoute provider's service, must support 4-byte ASN. AVS uses 4-byte public ASNs for advertising network routes.

@@ -6,7 +6,7 @@ In this module, you learned about all the deployment steps to build and connect 
   - Build an Azure Bastion resource.
   - Create a jump host to configure NSX-T Manager and vCenter in the private cloud.
 - From there, you learned how to connect the AVS private cloud to Azure and then to an on-premises VMware environment by:
-  - Peering ExpressRoute circuits.
+  - Peering Azure ExpressRoute circuits.
   - Creating NSX-T network components.
   - Enabling ExpressRoute Global Reach.
 

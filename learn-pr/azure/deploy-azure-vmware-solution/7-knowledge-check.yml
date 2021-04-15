@@ -29,9 +29,9 @@ quiz:
     - content: Delete your Azure VMware Solution deployment and redeploy the service.
       isCorrect: false
       explanation: Redeploying the service with the same configuration won't ensure that you have network connectivity to your on-premises VMware environment.
-    - content: Ensure all gateways, including the ExpressRoute provider's service, support 4-byte autonomous system number (ASN).
+    - content: Ensure all gateways, including the Azure ExpressRoute provider's service, support 4-byte autonomous system number (ASN).
       isCorrect: true
-      explanation: AVS uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute and the AVS ExpressRoute.
+      explanation: AVS uses 4-byte public ASNs for advertising routes between the on-premises ExpressRoute circuit and the AVS ExpressRoute circuit.
     - content: Check permissions on the subscription and resource group.
       isCorrect: false
       explanation: If you're able to deploy AVS, you already have the right permissions assigned.
