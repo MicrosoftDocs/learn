@@ -3,7 +3,7 @@ Here, you'll decide whether Azure SQL Edge is a suitable choice for your organiz
 - Connectivity and broadband limitations.
 - Latency.
 - Data security, privacy, and ownership.
-- Synchronization with, and connectivity to, backend systems. <!-- ID/SME: Per the Microsoft Writing Style Guide, don't use "back end" if you can substitute a more specific term, such as server, operating system, database, or network. And it's two words, unless a compound modifier, in which case it would be hyphenated. Please fix all instances globally to reflect the change you make. If you must use "back end", please change all instances in this unit to "back-end" as they're all compound modifiers.-->
+- Synchronization with, and connectivity to, backend systems.
 - Familiarity.
 
 ## Decision criteria
@@ -18,13 +18,13 @@ Here, you'll decide whether Azure SQL Edge is a suitable choice for your organiz
 
 ## Apply the criteria
 
-Let's explore how Azure SQL Edge addresses these criteria. <!-- ID/SME: Are the bolded items in this list actual feature options? If so, leave bold. However, if you're just bolding them to emphasize them, don't use bold. If you need to emphasize something, per the MS Cloud Style Guide, use italic (but sparingly). -->
+Let's explore how Azure SQL Edge addresses these criteria.
 
-- **Connectivity and broadband limitations**. Azure SQL Edge supports solutions that work with, or without, network connectivity.
-- **Latency**. Azure SQL Edge provides a powerful, local database. It negates needing to forward all data to a cloud-based database, which eliminates latency.
-- **Data security, privacy, and ownership**. Azure SQL Edge implements RBAC and ABAC, encryption, and data classification. This helps you secure and control access to your IoT apps' data.
-- **Synchronization and connectivity to backend systems**. Azure SQL Edge provides compatibility with many Microsoft apps and services, including SQL Database, SQL Server, and Azure Cosmos DB.
-- **Familiarity**. Azure SQL Edge shares the same codebase as SQL Server. As such, developers with skills in SQL Server or SQL Database can reuse their code and skills to build your organization's edge-specific solutions on Azure SQL Edge. Using Azure SQL Edge, you can develop your apps once, and deploy them potentially anywhere.
+- Connectivity and broadband limitations. Azure SQL Edge supports solutions that work with, or without, network connectivity.
+- Latency. Azure SQL Edge provides a powerful, local database. It negates needing to forward all data to a cloud-based database, which eliminates latency.
+- Data security, privacy, and ownership. Azure SQL Edge implements RBAC and ABAC, encryption, and data classification. This helps you secure and control access to your IoT apps' data.
+- Synchronization and connectivity to backend systems. Azure SQL Edge provides compatibility with many Microsoft apps and services, including SQL Database, SQL Server, and Azure Cosmos DB.
+- Familiarity. Azure SQL Edge shares the same codebase as SQL Server. As such, developers with skills in SQL Server or SQL Database can reuse their code and skills to build your organization's edge-specific solutions on Azure SQL Edge. Using Azure SQL Edge, you can develop your apps once, and deploy them potentially anywhere.
 
 Consider using Azure SQL Edge when your IoT apps:
 
