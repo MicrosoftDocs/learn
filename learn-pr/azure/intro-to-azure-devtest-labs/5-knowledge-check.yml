@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your company wants to implement the custom image with the minimum of administrative effort. Which approach should you take?"
+  - content: "Your company wants to implement a custom image with a minimum of administrative effort. Which approach should you take?"
     choices:
     - content: "Use Azure Lab Services."
       isCorrect: false
@@ -22,14 +22,14 @@ quiz:
     - content: "Use Azure DevTest Labs."
       isCorrect: true
       explanation: "Correct. Azure DevTest Labs supports custom images and provides tools that make it easy to control your resource usage."
-    - content: "Configure a set of virtual machines using a VHD image you create."
+    - content: "Configure a set of virtual machines by using a VHD image you create."
       isCorrect: false
       explanation: "Incorrect. This approach is likely to require much more administrative effort than using Azure DevTest Labs."
   - content: "Your company wants to use DevTest Labs to install a required React JavaScript framework on the custom virtual machine image. Which approach should you use?"
     choices:
     - content: "Use artifacts."
       isCorrect: true
-      explanation: "Correct. You can use artifacts to run installation scripts to set up your dependencies"
+      explanation: "Correct. You can use artifacts to run installation scripts to set up your dependencies."
     - content: "Use formulas."
       isCorrect: false
       explanation: "Incorrect. Formulas provide a base image as a starting point. They don't enable installation scripts."
