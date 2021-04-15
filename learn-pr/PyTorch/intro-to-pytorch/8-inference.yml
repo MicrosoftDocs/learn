@@ -11,4 +11,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/aiadvocates/pytorchfundamentals/main/intro-to-pytorch/8-inference.ipynb
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/8-inference.ipynb

@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 15
-content: |
-  [!include[](includes/3-embeddings.ipynb)]
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/nlp-pytorch/3-embeddings.ipynb
