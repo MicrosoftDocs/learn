@@ -3,7 +3,7 @@ uid: learn.azure.publish-static-web-app-authentication
 metadata:
   title: Authenticate users with Azure Static Web Apps
   description: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
-  ms.date: 02/26/2020
+  ms.date: 04/15/2020
   author: sinedied
   ms.author: sinedied
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ units:
   - learn.azure.publish-static-web-app-authentication.3-authentication
   - learn.azure.publish-static-web-app-authentication.4-exercise-add-authentication
   - learn.azure.publish-static-web-app-authentication.5-providers-roles
-  - learn.azure.publish-static-web-app-authentication.6-exercise-block
+  - learn.azure.publish-static-web-app-authentication.6-exercise-configure-access
   - learn.azure.publish-static-web-app-authentication.7-summary
 badge:
   uid: learn.azure.publish-static-web-app-authentication.badge
