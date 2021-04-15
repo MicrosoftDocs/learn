@@ -16,7 +16,7 @@ abstract: |
   - Describe what Form Recognizer is
   - Define scenarios where Form Recognizer can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-hyperscale.svg
+iconUrl: /learn/achievements/intro-to-form-recognizer.svg
 levels:
 - beginner
 roles:
