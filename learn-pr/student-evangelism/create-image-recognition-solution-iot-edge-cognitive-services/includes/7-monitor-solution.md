@@ -16,7 +16,7 @@ Click on the Azure IoT Edge blade device to view more details about the modules 
 
 1. You will need to know the name of the Azure IoT Hub you created. You can get the name from the Azure web portal.
 
-2. Open the Azure Cloud shell
+2. Open the Azure Cloud Shell
 3. In the Cloud Shell, run the az extension add command to add the Microsoft Azure IoT Extension to your CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) specific commands to Azure CLI.
 
    ```

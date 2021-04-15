@@ -4,7 +4,7 @@ In this module, you use a pre-built classification model. The **Image Classifica
 
 ## Azure Speech Services
 
-[Azure Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview) supports both "speech to text" and "text to speech".  We're using the text to speech (F0) free tier for this solution, which is limited to 5 million characters per month. You will need to add the Speech service using the Azure Portal and "Grab your key" from the service.
+[Azure Speech Services](https://docs.microsoft.com/azure/cognitive-services/speech-service/overview) supports both "speech to text" and "text to speech".  We're using the text to speech (F0) free tier for this solution, which is limited to 5 million characters per month. You will need to add the Speech service using the Azure portal and "Grab your key" from the service.
 
 Open the deployment.template.json file and update the BingKey with the key you copied from the Azure Speech service.
 

@@ -1,8 +1,8 @@
 In the first exercise, you have already installed the Azure IoT Edge runtime on your Linux computer. Make sure you have installed the following software development tools.
 
-1. Docker Community Edition on your Linux computer
-2. Visual Studio Code: Visual Studio Code is a code editor and is one of the most popular Open Source projects on GitHub. It runs on Linux, macOS, and Windows.
-3. The following Visual Studio Code Extensions
+- Docker Community Edition on your Linux computer
+- Visual Studio Code: Visual Studio Code is a code editor and is one of the most popular Open Source projects on GitHub. It runs on Linux, macOS, and Windows.
+- The following Visual Studio Code Extensions
    - Azure Account
    - Azure IoT Tools
    - Python extension for Visual Studio Code
@@ -38,7 +38,7 @@ Open the deployment.template.json file and update the BingKey with the key you c
 
 You need to ensure the image you plan to build matches the target processor architecture. In our case, we are going to build for **amd64**. Confirm processor architecture. From the Visual Studio Code, bottom bar click the currently selected processor architecture, then from the popup select **amd64**.
 
-## Build the Solution
+## Build the solution
 
 Build and Push the solution to Docker by right mouse clicking the deployment.template.json file and select "**Build and Push IoT Edge Solution**". The first build will be slow as Docker needs to pull the base layers to your local machine. 
 

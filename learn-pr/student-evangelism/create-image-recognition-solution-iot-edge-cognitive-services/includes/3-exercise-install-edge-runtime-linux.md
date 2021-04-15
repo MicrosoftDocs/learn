@@ -133,7 +133,9 @@ To paste clipboard contents into Nano Shift+Right, Click or press Shift+Insert.
 
 Save and close the file.
 
-CTRL + X`, `Y`, `Enter`
+```
+CTRL + X`, `Y`, `Enter
+```
 
 After entering the provisioning information in the configuration file, restart the daemon:
 
