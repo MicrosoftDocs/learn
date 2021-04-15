@@ -6,7 +6,7 @@ The cloud unlocks a great deal of innovative potential for your technology portf
 
 ## Tailwind Traders' starting point
 
-It's surprisingly common for an organization to have little more than surface knowledge of its digital estate. Years of technical growth, acquisitions, staffing changes, and changing business priorities leads to large, ambiguous collections of technical assets. Tailwind Traders is no exception.
+It's surprisingly common for an organization to have little more than surface knowledge of its digital estate. Years of technical growth, acquisitions, staffing changes, and changing business priorities can all lead to large, ambiguous collections of technical assets. Tailwind Traders is no exception.
 
 ### Tailwind Traders' digital estate
 
@@ -16,7 +16,7 @@ Here's a list of what we know about the company's digital estate:
   - One is owned by the organization.
   - Two are leased through multiyear contracts.
 - Virtualization is inconsistent.
-  - Multiple hypervisor vendors has led to cost and process complexity.
+  - Multiple hypervisor vendors have led to cost and process complexity.
 - Lack of operating system standardization.
   - Mixture of Windows Server 2008 R2, Windows Server 2012, Windows Server 2016 and Windows Server 2019.
   - A number of Linux operating systems and versions are deployed across the environment.
@@ -24,8 +24,8 @@ Here's a list of what we know about the company's digital estate:
 - Operations management is inconsistent.
   - Patching is inconsistent.
   - Basic datacenter sprawl has datacenter resource consumption at 25 percent over planned targets.
-  - Backup appliances are past storage capacity. Backups for low priority workloads are local backups only.
-  - Active monitoring and optimization is limited to mission critical workloads.
+  - Backup appliances are past storage capacity. Backups for low-priority workloads are local backups only.
+  - Active monitoring and optimization are limited to mission critical workloads.
   - The operations team is over-taxed and understaffed.
   - The service now expert on the team left three years ago, shortly after a vendor completed configuration of the configuration management database (CMDB). Since then, there has been no new discovery or mapping of assets.
 - IT is viewed as a cost center.
@@ -43,7 +43,7 @@ Here's a list of what we know about the company's digital estate:
 
 ### What we don't know
 
-The challenge for Tailwind Traders is the significant ambiguity just below the surface level information. Years of information silos and no shared platform across technology solutions has resulted in a lot of knowledge gaps. The following are critical questions the team can't answer, yet:
+The challenge for Tailwind Traders is the significant ambiguity just below the surface level information. Years of information silos and no shared platform across technology solutions have resulted in a lot of knowledge gaps. The following are critical questions the team can't answer, yet:
 
 - **Servers:** How many hypervisors are there across the organization? How many servers or VMs? What resources (cores, memory, and storage) are allocated to each server or VM? Are operating systems patched, in compliance, and compatible with the target cloud platforms?
 - **Applications:** How many applications are hosted on the servers/VMs? Do those applications actually use the allocation assets? Are those applications self-contained or do they depend on a collection of assets? Is there production traffic to those applications? What is the criticality of each application?
