@@ -1,11 +1,11 @@
 Now that you know how to decode one letter given a certain shift amount, you can decode entire words and phrases!
 
-To decipher a complete word, you need to invoke the `lassoLetter()` function for each letter in the word. Then you put all of the decoded letters together into a decoded word. 
+To decipher a complete word, you need to invoke the `lasso_letter()` function for each letter in the word. Then you put all of the decoded letters together into a decoded word. 
 
-This time, you'll write a function called `lassoWord()` that has two parameters: `word` and `shiftAmount`. 
+This time, you'll write a function called `lasso_word()` that has two parameters: `word` and `shift_amount`. 
 
 ```python
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 ```
 
 ## Words as collections of letters
@@ -20,7 +20,7 @@ A list is exactly what it sounds like. A word can be considered a list of letter
 
 ## List iteration with a for loop
 
-Because you want to invoke the `lassoLetter()` function on each letter, you need to loop through each letter in the word that you're trying to decode. 
+Because you want to invoke the `lasso_letter()` function on each letter, you need to loop through each letter in the word that you're trying to decode. 
 
 Here's the syntax for a `for` loop:
 
@@ -32,52 +32,52 @@ for item in list:
 The word that's passed in as a parameter can be considered a list of letters. So, you can write:
 
 ```python
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
     for letter in word:
 ```
 
-Now that you understand this Python functionality, you can do something to _each letter_ in a word, like invoking the `lassoLetter()` function.
+Now that you understand this Python functionality, you can do something to _each letter_ in a word, like invoking the `lasso_letter()` function.
 
-## Invoke the lassoLetter() function
+## Invoke the lasso_letter() function
 
-It's fairly straightforward to invoke the `lassoLetter()` function on each letter in a word:
+It's fairly straightforward to invoke the `lasso_letter()` function on each letter in a word:
 
 ```python
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
     for letter in word:
-        lassoLetter( letter, shiftAmount )
+        lasso_letter( letter, shift_amount )
 ```
 
-Remember that when you wrote the `lassoLetter()` function, the last line of code in the function was the following:
+Remember that when you wrote the `lasso_letter()` function, the last line of code in the function was the following:
 
 ```python
 # Send the decoded letter back
-return decodedLetter
+return decoded_letter
 ```
 
 This is called a *return statement*. This statement sends back the value to the line that invoked the function. To capture that return value, all you have to do is use a variable:
 
 ```python
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
     for letter in word:
-        decodedLetter = lassoLetter(letter, shiftAmount)
+        decoded_letter = lasso_letter(letter, shift_amount)
 ```
 
-Now you're invoking a function that you wrote, `lassoLetter()`, from a new function that you're writing now: `lassoWord()`.
+Now you're invoking a function that you wrote, `lasso_letter()`, from a new function that you're writing now: `lasso_word()`.
 
 ## String letters together
 
-With the code that you just wrote, you'll have one value in the `decodedLetter` variable. When the loop runs again, the variable gets updated. 
+With the code that you just wrote, you'll have one value in the `decoded_letter` variable. When the loop runs again, the variable gets updated. 
 
 You can trace the code to see how this works:
 
 - `word` = "gdkkn"  
-- `shiftAmount` = 1
+- `shift_amount` = 1
 
-| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decoded_letter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---------------|--------|---------------|-------------|
 | 1 | 'g' | 'h' | |
 | 2 | 'd' | 'e' | |
@@ -85,23 +85,23 @@ You can trace the code to see how this works:
 | 4 | 'k' | 'l' | |
 | 5 | 'n' | 'o' | |
 
-You're left with a variable named `decodedLetter` that has a value of just the letter 'o'. But, what you wanted was a variable named `decodedWord` to have the value `hello`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
+You're left with a variable named `decoded_letter` that has a value of just the letter 'o'. But, what you wanted was a variable named `decoded_word` to have the value `hello`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
 
 ```python
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
-    decodedWord = ""
+    decoded_word = ""
     
     for letter in word:
-        decodedLetter = lassoLetter(letter, shiftAmount)
-        decodedWord = decodedWord + decodedLetter
+        decoded_letter = lasso_letter(letter, shift_amount)
+        decoded_word = decoded_word + decoded_letter
 
-    return decodedWord
+    return decoded_word
 ```
 
-With this code, the entire word is now stored in the variable `decodedWord`. You can send back this value to the line where this function was invoked. You can trace the code like before:
+With this code, the entire word is now stored in the variable `decoded_word`. You can send back this value to the line where this function was invoked. You can trace the code like before:
 
-| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` | Value of <br>`decodedWord` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decoded_letter` | Value of <br>`decoded_word` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |----------------|----------|-----------------|---------------|---------------|
 | 1 | 'g' | 'h' | "h" | |
 | 2 | 'd' | 'e' | "he" | |
@@ -116,22 +116,22 @@ Don't forget to add comments to your code, so you know exactly what's happening!
 ```python
 # Define a function to find the truth in a secret message
 # Shift the letters in a word by a specified amount to discover the hidden word
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
     # This variable is updated each time another letter is decoded
-    decodedWord = ""
+    decoded_word = ""
 
     # This for loop iterates through each letter in the word parameter
     for letter in word:
-        # The lassoLetter() function is invoked with each letter and the shift amount
-        # The result (decoded letter) is stored in a variable called decodedLetter
-        decodedLetter = lassoLetter(letter, shiftAmount)
+        # The lasso_letter() function is invoked with each letter and the shift amount
+        # The result (the decoded letter) is stored in a variable called decoded_letter
+        decoded_letter = lasso_letter(letter, shift_amount)
 
-        # The decodedLetter value is added to the end of the decodedWord value
-        decodedWord = decodedWord + decodedLetter
+        # The decoded_letter value is added to the end of the decoded_word value
+        decoded_word = decoded_word + decoded_letter
 
-    # The decodedWord is sent back to the line of code that invoked this function
-    return decodedWord
+    # The decoded_word is sent back to the line of code that invoked this function
+    return decoded_word
 ```
 
 > [!Important]
@@ -139,13 +139,13 @@ def lassoWord( word, shiftAmount ):
 
 ## Test your functions
 
-Press the green **Run** button, and . . . nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
+Press the green **Run** button, and . . . nothing should happen. You've written your two functions, and the `lasso_word()` function does invoke the `lasso_letter()` function. But nothing invokes the `lasso_word()` function yet! 
 
-Test your new code by invoking the `lassoWord()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shiftAmount` parameter. 
+Test your new code by invoking the `lasso_word()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shift_amount` parameter. 
 
 ```python
 # Try to decode the word "terra"
-print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
+print( "Shifting terra by 13 gives: \n" + lasso_word( "terra", 13 ) )
 ```
 
 Now when you select the **Run** button, you should see the word **green** printed on the console:
@@ -158,48 +158,48 @@ Now that you've written two lasso functions, your complete <b>decrypt.py</b> fil
 
 ```python
 # Define a function to find the truth by shifting the letter by a specified amount
-def lassoLetter( letter, shiftAmount ):
+def lasso_letter( letter, shift_amount ):
     # Invoke the ord function to translate the letter to its ASCII code 
-    # Save the code value to the variable called letterCode
-    letterCode = ord(letter.lower())
+    # Save the code value to the variable called letter_code
+    letter_code = ord(letter.lower())
     
     # The ASCII number representation of lowercase letter a
-    aAscii = ord('a')
+    a_ascii = ord('a')
 
     # The number of letters in the alphabet
-    alphabetSize = 26
+    alphabet_size = 26
 
     # The formula to calculate the ASCII number for the decoded letter
     # Take into account looping around the alphabet
-    trueLetterCode = aAscii + (((letterCode - aAscii) + shiftAmount) % alphabetSize)
+    true_letter_code = a_ascii + (((letter_code - a_ascii) + shift_amount) % alphabet_size)
 
     # Convert the ASCII number to the character or letter
-    decodedLetter = chr(trueLetterCode)
+    decoded_letter = chr(true_letter_code)
 
     # Send the decoded letter back
-    return decodedLetter
+    return decoded_letter
 
 # Define a function to find the truth in a secret message
 # Shift the letters in a word by a specified amount to discover the hidden word
-def lassoWord( word, shiftAmount ):
+def lasso_word( word, shift_amount ):
 
     # This variable is updated each time another letter is decoded
-    decodedWord = ""
+    decoded_word = ""
 
     # This for loop iterates through each letter in the word parameter
     for letter in word:
-        # The lassoLetter() function is invoked with each letter and the shift amount
-        # The result (decoded letter) is stored in a variable called decodedLetter
-        decodedLetter = lassoLetter(letter, shiftAmount)
+        # The lasso_letter() function is invoked with each letter and the shift amount
+        # The result (the decoded letter) is stored in a variable called decoded_letter
+        decoded_letter = lasso_letter(letter, shift_amount)
 
-        # The decodedLetter value is added to the end of the decodedWord value
-        decodedWord = decodedWord + decodedLetter
+        # The decoded_letter value is added to the end of the decoded_word value
+        decoded_word = decoded_word + decoded_letter
 
-    # The decodedWord is sent back to the line of code that invoked this function
-    return decodedWord
+    # The decoded_word is sent back to the line of code that invoked this function
+    return decoded_word
 
 # Try to decode the word "terra"
-print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
+print( "Shifting terra by 13 gives: \n" + lasso_word( "terra", 13 ) )
 ```
 
 Now you're ready to decode the secret message!

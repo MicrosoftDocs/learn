@@ -15,7 +15,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Add a new module file
 
-1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *appService.bicep*.
+1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file. In the *modules* folder, create a file called *appService.bicep*. Save the file.
 
 1. Add the following content into the *appService.bicep* file:
 
@@ -144,16 +144,11 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure CLI command in the terminal. This is the same command you ran before.
 
 ```azurecli
-templateFile="main.bicep"
-today=$(date +"%d-%b-%Y")
-DeploymentName="addmodule-"$today
-
 az deployment group create \
-  --name $DeploymentName \
-  --template-file $templateFile \
+  --template-file main.bicep \
   --parameters environmentType=nonprod
 ```
 
@@ -161,16 +156,11 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This is the same command you ran before.
 
 ```azurepowershell
-$templateFile = 'main.bicep'
-$today = Get-Date -Format 'dd-MMM-yyyy'
-$deploymentName = "addmodule-$today"
-
 New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile `
+  -TemplateFile main.bicep `
   -environmentType nonprod
 ```
 
@@ -178,13 +168,13 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now five successful deployments.
+1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now two successful deployments.
 
-1. Select the **5 Succeeded** link. Notice that you have two new deployments in the list. One begins with the name **addmodule**, and another is called **appService**.
+1. Select the **2 Succeeded** link. Notice that you have a deployment called **main** in the list, as well as a new deployment called **appService**.
 
-    :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the five deployments listed and succeeded statuses." border="true":::
+    :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the two deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment that begins with **addmodule**, and then select **Deployment details** to expand the list of deployed resources. 
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources. 
 
     Notice that our module deployment appears in the list.  In fact, it appears twice, because we referenced it as an output too.
 
