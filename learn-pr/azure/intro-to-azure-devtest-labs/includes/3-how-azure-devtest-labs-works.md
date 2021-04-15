@@ -10,7 +10,7 @@ When you create test environments or development machines, you can use objects t
 
 - Environments
 - Artifacts
-- Formulas/images
+- Formulas and images
 - Policies
 - Virtual machines
 
@@ -26,7 +26,7 @@ When you create environments or templates, you can store them in the environment
 
 ## Artifacts
 
-Use artifacts to deploy and configure an application after you provision a virtual machine. An artifact consists of a JavaScript Object Notation (JSON) definition file and other script files that are stored in a folder within a specified Git repository. These files contain expressions that can be used to specify what's required on the virtual machine. For example, you might define a command to run and parameters that are available when that command is run. 
+Use artifacts to deploy and configure an application after you set up a virtual machine. An artifact consists of a JavaScript Object Notation (JSON) definition file and other script files that are stored in a folder within a specified Git repository. These files contain expressions that can be used to specify what's required on the virtual machine. For example, you might define a command to run and parameters that are available when that command is run. 
 
 This code is an example JSON artifact:
 
@@ -60,6 +60,7 @@ runCommand": {
 , ' -Password ', parameters('installPassword'))]"
 }
 ```
+<br>
 
 The following table details each section of the JSON artifact schema and how it's used:
 
@@ -95,7 +96,7 @@ Then use **basic settings** to configure:
 
 ## Policies
 
-In Azure DevTest Labs, use policies to manage costs and minimize waste in each lab environment. You can set things such as the number of virtual machines or the sizes that each person can use. Also, you can set auto-shutdown rules, because costs are incurred only when a virtual machine is running. 
+In Azure DevTest Labs, you use policies to manage costs and minimize waste in each lab environment. You can set things such as the number of virtual machines or the sizes that each person can use. You can also set auto-shutdown rules, because costs are incurred only when a virtual machine is running. 
 
 Policies cover the following areas:
 
