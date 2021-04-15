@@ -12,7 +12,7 @@ You don't want to create new apps on a proprietary system, solely for vehicle-se
 
 ## What will we be doing?
 
-By the end of this session, you'll be able to <!-- ID/SME: Acrolinx recommends using "can" instead of "be able to" but that contradicts the template file's suggestion. Please fix at your discretion, and make the change globally in the other units. Thanks! --> evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. You'll also describe how Azure SQL Edge's familiar engine and toolset features enable you to optimize data ingestion and analysis. You'll learn that Azure SQL Edge is:
+By the end of this session, you'll be able to evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. You'll also describe how Azure SQL Edge's familiar engine and toolset features enable you to optimize data ingestion and analysis. You'll learn that Azure SQL Edge is:
 
 - Powerful enough to support edge compute.
 - Secure enough to help meet the privacy needs of IoT applications.
