@@ -41,9 +41,9 @@ class SalesTotal
 }
 
 var salesJson = File.ReadAllText($"stores{Path.DirectorySeparatorChar}201{Path.DirectorySeparatorChar}sales.json");
-var salesData = JsonConvert.DeserializeObject<SalesTotal>(rawJson);
+var salesData = JsonConvert.DeserializeObject<SalesTotal>(salesJson);
 
-Console.WriteLine(data.Total);
+Console.WriteLine(salesData.Total);
 ```
 
 > [!TIP]
