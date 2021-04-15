@@ -5472,32 +5472,32 @@
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/1-introduction.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/2-when-azure-dsvm.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/3-type-of-azure-dsvm.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/4-use-cases-dsvma.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/5-summary.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/browse/?expanded=azure&products=azure-databricks&resource_type=learning%20path",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
     }
   ]
