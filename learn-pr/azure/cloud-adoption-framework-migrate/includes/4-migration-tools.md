@@ -1,4 +1,4 @@
-Azure includes tools to facilitate the disciplines or phases of the migration process: assess workloads, migrate workloads, and release workloads ("cut over"). Those tools start with Azure Migrate, but they also include a number of integrated Microsoft and partner tools.
+Azure includes tools to facilitate the disciplines or phases of the migration process: assess workloads, migrate workloads, and release workloads ("cut over"). Those tools start with Azure Migrate, but they also include integrated Microsoft and partner tools.
 
 ## Azure Migrate
 

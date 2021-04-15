@@ -12,13 +12,13 @@ The degree of planning and the impact on business users makes the mass migration
 
 The iterative approach to migration allows the business to absorb the changes in smaller units and produces less business disruption. It also allows the team to measure and learn from each iteration. The team can gain speed and expertise progressively from one iteration to the next.
 
-For the remainder of this module, assume that Tailwind Traders will follow an iterative approach to migration.
+For the rest of this module, assume that Tailwind Traders will follow an iterative approach to migration.
 
 ## Disciplines
 
 In any iterative migration process, the team will complete three sets of tasks or disciplines to successfully migrate each workload to Azure:
 
-- **Assess workloads:** During assessment of the workloads in each wave, the architects primarily look primarily for cloud compatibility and dependencies between assets. They also look for compatibility with modernization and optimization opportunities. At times, they get close to the architecture of individual workloads to perform advanced optimization tasks by using the Azure Well-Architected Review.
+- **Assess workloads:** During assessment of the workloads in each wave, the architects primarily look for cloud compatibility and dependencies between assets. They also look for compatibility with modernization and optimization opportunities. At times, they get close to the architecture of individual workloads to perform advanced optimization tasks by using the Azure Well-Architected Review.
 
 - **Migrate workloads:** During migration, the team uses a migration tool to complete the replication of assets (virtual machines, applications, and data) to the cloud. In this step, the team is largely directing and supervising the repeatable process to ensure accurate replication of the selected workloads' assets.
 

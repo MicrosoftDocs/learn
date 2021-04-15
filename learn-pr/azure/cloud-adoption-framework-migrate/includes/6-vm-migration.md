@@ -6,7 +6,7 @@ Add Server Migration to your Azure Migrate dashboard, which carries over machine
 
 Azure Migrate performs concurrent replication for up to 500 virtual machines (VMs) and can manage up to 200 concurrent migrations. If you need to do more, we recommend that you create multiple batches. Times for replication will vary based on number and size of VMs, along with connection speeds between your datacenter and Azure.
 
-During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment suggested in terms of Azure Virtual Machines sizes. Or you can specify the settings yourself. This step gives you the option to configure the VM size and storage disk settings that you feel is appropriate to the workload being migrated.
+During the replication setup phase, you can use the migration settings that your earlier Azure Migrate assessment suggested in terms of Azure Virtual Machines sizes. Or you can specify the settings yourself. This step gives you the option to configure the VM size and storage disk settings that you feel are appropriate to the workload being migrated.
 
 Also at this stage, you're asked to specify the subscription, resource group, and virtual network where your VMs will reside after migration. You can also configure availability options such as Availability Zones or availability sets, helping to protect your applications and data from datacenter outages and maintenance events.
 
@@ -54,7 +54,7 @@ After the migration has taken place, you can release production traffic to the V
 
 **Technical validation:** In addition to the business change plan, you'll want to consider validation of the technical readiness for your workloads. Here are a few suggested tests to complete:
 
-- **Network isolation testing.** Test and monitor network traffic to ensure proper isolation and no unexpected network vulnerabilities. Vaalidate that any network routing to be severed during cutover is not experiencing unexpected traffic.
+- **Network isolation testing.** Test and monitor network traffic to ensure proper isolation and no unexpected network vulnerabilities. Validate that any network routing to be severed during cutover is not experiencing unexpected traffic.
 - **Dependency testing.** Ensure that all workload application dependencies have been migrated and are accessible from the migrated assets.
 - **Business continuity and disaster recovery (BCDR) testing.** Validate that any service-level agreements (SLAs) for backup and recovery are established. If possible, perform a full recovery of the assets from the BCDR solution. At minimum, you'll want to add a backup schedule by using Azure Backup. For more advanced SLAs, you might also want to consider replication to a second region by using Azure Site Recovery.
 - **End-user route testing.** Validate traffic patterns and routing for end-user traffic. Ensure that network performance aligns with expectations.

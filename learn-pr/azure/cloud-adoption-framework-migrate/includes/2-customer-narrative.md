@@ -2,7 +2,7 @@ In the getting-started module, we shared a few of Tailwind Traders' objectives. 
 
 A cloud adoption plan is in place to manage the various projects that contribute to that strategic program. The central operations and infrastructure team has deployed an Azure landing zone that meets its short-term compliance and operations needs.
 
-Most relevant to this module is the company's effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts a number of dev/test environments and other pre-production innovations from the retail innovation team.
+Most relevant to this module is the company's effort to migrate out of two leased datacenters before those leases expire. Those datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. The second datacenter also hosts dev/test environments and other pre-production innovations from the retail innovation team.
 
 We resume the Tailwind story, just as the migration team is preparing to start migrating workloads into the cloud.
 
@@ -18,7 +18,7 @@ In the planning module, we rationalized the company's digital estate by using Az
 - A second small team of architects will stay one to two waves ahead of the migration team. Its focus will be on the assessment and design of each workload to be migrated. 
 
   This team will discover and remediate any compatibility issues between the current-state application and the desired rationalization target. It will also evaluate sizing from the initial rationalization effort to ensure proper resource allocation.
-- A third small team of Azure experts will work one to two waves behind the migration team. Its focus will be on the testing, fine tuning, and architecture of the migrated workloads. 
+- A third small team of Azure experts will work one to two waves behind the migration team. Its focus will be on the testing, fine-tuning, and architecture of the migrated workloads. 
 
   This team will test the migrated workloads with business users to validate performance before releasing production traffic to the migrated workloads. This team will also use the Azure Well-Architected Framework and Azure Well-Architected Review for any workloads that require architectural tuning before production release.
 

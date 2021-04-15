@@ -4,7 +4,7 @@ Migration of any datacenter can involve migration of various technology platform
 
 The Migrate methodology in the Cloud Adoption Framework, the Azure migration center, and Azure Migrate tooling reduces that effort. It uses repeatable processes and tools that facilitate a successful migration with minimal time and effort across all of your technology and workload needs.
 
-In this module, you learn the tools, the processes, and the options. You can the apply that knowledge to the migration of all workloads and platforms in your current environment.
+In this module, you learn the tools, the processes, and the options. You can then apply that knowledge to the migration of all workloads and platforms in your current environment.
 
 ## Learning objectives
 
