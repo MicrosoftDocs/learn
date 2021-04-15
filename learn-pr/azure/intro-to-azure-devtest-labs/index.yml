@@ -9,13 +9,13 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
 title: Introduction to Azure DevTest Labs
-summary: Use Azure DevTest Labs to quickly provision virtual computing environments for application development and testing.
+summary: Learn how to use Azure DevTest Labs to quickly set up virtual computing environments for application development and testing.
 abstract: | 
   By the end of this module, you'll be able to:
     - Evaluate whether Azure DevTest Labs is appropriate for setting up virtual machine environments for your team.
     - Describe how the resource-creation features of DevTest Labs work to automate developer onboarding and the creation of deployment environments.
 prerequisites: | 
-  - Basic familiarity with Azure Virtual Machines
+  - Basic familiarity with Azure virtual machines
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner
