@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.intro-to-azure-monitor # Do not edit: uid must be globally unique
+uid: learn.azure.intro-to-azure-monitor # Do not edit: uid must be globally unique
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Monitor          # Do not edit: title must be "Introduction to <product>"
