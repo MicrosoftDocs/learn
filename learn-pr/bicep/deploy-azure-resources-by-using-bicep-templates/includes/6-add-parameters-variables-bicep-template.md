@@ -30,9 +30,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you're using expressions that include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-   Also notice that you're using a variable for the name of the Azure App Service plan, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+   Also notice that you're using a variable for the name of the Azure App Service plan, but you use parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plans need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
-1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
+1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -92,7 +92,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
 
-1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, your resource definitions should look like this:
+1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
    ```bicep
    resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
@@ -134,16 +134,11 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure CLI command in the terminal. This is similar to the command you ran before.
 
 ```azurecli
-templateFile="main.bicep"
-today=$(date +"%d-%b-%Y")
-DeploymentName="addparams-"$today
-
 az deployment group create \
-  --name $DeploymentName \
-  --template-file $templateFile \
+  --template-file main.bicep \
   --parameters environmentType=nonprod
 ```
 
@@ -151,16 +146,11 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell commands in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
 
 ```azurepowershell
-$templateFile = 'main.bicep'
-$today = Get-Date -Format 'dd-MMM-yyyy'
-$deploymentName = "addparams-$today"
-
 New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile `
+  -TemplateFile main.bicep `
   -environmentType nonprod
 ```
 
@@ -170,14 +160,12 @@ Notice that you're explicitly specifying the value for the `environmentType` par
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group, and you'll see that there are now three successful deployments. 
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
 
-1. Select the **3 Succeeded** link. Notice that all three of the deployments are in the list.
+1. Select the **1 Succeeded** link.
 
-    :::image type="content" source="../media/6-addparams-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the three deployments listed and succeeded statuses." border="true":::
+1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
 
-1. Select the deployment that begins with **addparams**, and then select **Deployment details** to expand the list of deployed resources.
-
-    :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one resource listed." border="true":::
+    :::image type="content" source="../media/6-addparams-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with storage account and App Service resources listed with generated names." border="true":::
 
 1. Notice that the resources have been deployed with new, randomly generated names.
