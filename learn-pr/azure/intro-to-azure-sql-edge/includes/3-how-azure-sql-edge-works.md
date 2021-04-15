@@ -1,86 +1,86 @@
-Here, you'll learn how Azure SQL Edge works and whether it is a suitable option for you. You'll explore how Azure SQL Edge helps address the challenges developers face when developing IoT apps.
+Here, you'll learn how Azure SQL Edge works and whether it's suitable for your organization. You'll explore how Azure SQL Edge helps address challenges that developers face when developing IoT apps.
 
-Azure SQL Edge is a containerized Linux application that runs on either an ARM64-based or an x64-based processor. The startup memory footprint for Azure SQL Edge is less than 500 MB. Within this small footprint, you can design and build apps that run on a wide range of IoT devices.
+Azure SQL Edge is a containerized Linux application that runs on a process that's based on ARM64 or x64. The Azure SQL Edge startup-memory footprint is less than 500 megabytes (MB). Within this small footprint, you can design and build apps that run on many IoT devices.
 
 > [!TIP]
-> These devices can include battery-powered or solar-powered devices deployed in remote areas with only occasional connectivity.
+> These devices can include battery-powered or solar-powered devices that you deploy in remote areas that have only occasional connectivity.
 
 In this unit, you'll learn how Azure SQL Edge:
 
-- Captures continuous streams of increasing volumes of data in real time.
+- Captures continuous streams of increasing data volumes in real time.
 - Integrates data from the edge to cloud to on-premises.
-- Supports a choice of suitable platforms.
+- Supports several platforms.
 - Provides excellent security and performance.
 
-## Capture continuous streams of data in real time  
+## Capture continuous data streams in real time  
 
-Given the volume of data and the need to ingest and analyze this data in a timely manner, it's vital that any solution you select at the edge must be capable of capturing continuous streams of increasing amounts of data in real time. It's also important that you can derive valuable insights on that data. Azure SQL Edge supports a built-in streaming engine to help address these needs.
+Many organizations deal with large data volumes that they need to ingest and analyze in a timely manner. That's why it's vital that any edge-based solution you select can capture continuous real-time streams of increasing amounts of data. It's also important that you can derive valuable insights about it. Azure SQL Edge supports a built-in streaming engine to help address these needs.
 
-### Time series and streaming data support
+### Time-series and streaming data support
 
-IoT sensors typically transmit time-sequenced measurements, called time-series data, as a data stream. There are two aspects of the time-series capabilities offered by Azure SQL Edge:
+IoT sensors typically transmit time-sequenced measurements, or *time-series data*, as a data stream. There are two aspects of the time-series capabilities offered by Azure SQL Edge:
 
 - A built-in streaming engine that allows:
 
-  - Transformation
-  - Windowed aggregation
-  - Simple anomaly detection
-  - Classification of the incoming stream of data
+  - Transformation.
+  - Windowed aggregation.
+  - Simple anomaly detection.
+  - Classification of incoming data streams.
 
   > [!NOTE]
   > This engine is built using the same codebase as Azure Stream Analytics.
 
-- A time-series storage engine that allows storage of time-indexed data, which you can later aggregate in the cloud for future analysis.
+- A time-series storage engine that allows storage of time-indexed data. You then can aggregate it in the cloud for future analysis.
 
 The following graphic depicts:
 
 - The streaming data engine with native analytics.
-- A SQL database engine containing built-in ML capabilities.
+- A SQL database engine that contains built-in machine-learning capabilities.
 
-The graphic indicates that the realtime streamed data ingested by the streaming analytics engine can also be aggregated in the local SQL database.
+The graphic indicates that the local SQL database can aggregate the real-time streamed data that the streaming analytics engine ingests.
 
 > [!TIP]
-> You can also use standard procedures and functions to process this data as required.
+> You can process data by using standard procedures and functions, as necessary.
 
-:::image type="content" source="../media/streaming.png" alt-text="A graphic depicting the streaming engine and related components of Azure SQL Edge.":::
+:::image type="content" source="../media/streaming.png" alt-text="Depiction of the streaming engine and related Azure SQL Edge components.":::
 
 ## Integrate data
 
-In the past, developers of IoT apps have realized that edge data could not always be easily integrated within a comprehensive organizational  data solution. This resulted in the data from the IoT devices at the edge being inaccessible in a proprietary solution. This is no longer a problem, because Azure SQL Edge uses the same codebase as SQL Server and SQL Database.
+IoT app developers previously recognized that edge data couldn't always be easily integrated in a comprehensive organizational data solution. This resulted in IoT device data at the edge being inaccessible in a proprietary solution. This isn't a problem anymore, because Azure SQL Edge uses the same codebase as SQL Server and SQL Database.
 
-As indicated in the following graphic, Azure SQL Edge offers compatibility with other Microsoft services and apps by providing:
+As the following graphic depicts, Azure SQL Edge offers compatibility with other Microsoft services and apps by providing:
 
 - Synchronization with Azure services such as:
 
-  - SQL Database
-  - SQL Server on an Azure virtual machine (VM)
-  - Azure Cosmos DB
+  - SQL Database.
+  - SQL Server on an Azure virtual machine (VM).
+  - Azure Cosmos DB.
 
 - The ability to choose data sources (sensors) and targets that best suit your organization's needs.
 - Native integration with Azure products and services such as:
 
-  - Azure IoT Edge
-  - Azure Stack Edge
+  - Azure IoT Edge.
+  - Azure Stack Edge.
 
-:::image type="content" source="../media/consistent-code.png" alt-text="A graphic that depicts the integration capabilities of Azure SQL Edge, as discussed in the preceding text.":::
+:::image type="content" source="../media/consistent-code.png" alt-text="Illustration of the integration capabilities of Azure SQL Edge, which the preceding text discusses.":::
 
 ## Run Azure SQL Edge on the appropriate platform
 
-Because edge scenarios often require the flexibility to run on different platforms, Azure SQL Edge provides you with the following options:
+Edge scenarios often must run on different platforms. Azure SQL Edge provides you with the following options:
 
-- **Architecture**. Device architecture supports both ARM64 and x64-based architectures.
-- **Container OS**. You can choose either Windows or Linux as the host for your container.
-- **Container type**. You can choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
-- **Mode**. Online or offline modes to support various edge environments.
+- Architecture. Device architecture supports architectures based on ARM64 and x64.
+- Container OS. Choose either Windows or Linux as your container's host.
+- Container type. Choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure for better efficiency and automation.
+- Mode. Online or offline modes support various edge environments.
 
 ## Protect data at the edge
 
-Security is a primary concern when deploying IoT apps to the edge. Any device that's accessible over the internet is at risk of being the target for a malicious hacker. Consequently, any data stored on that device is at risk of being compromised.
+Security is a primary concern when deploying IoT apps to the edge. Any device that's accessible over the internet is at risk of being a malicious hacker's target. Consequently, any data stored on that device can be comprised.
 
-SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, the same security features of SQL Server Enterprise are available in Azure SQL Edge. These built-in security features are discussed in the following table.
+SQL Server is the most secure database platform available. Because Azure SQL Edge is based on SQL Server technology, so it has the same security features of SQL Server Enterprise. The following table details these built-in security features.
 
 | Feature        | Description                                                  |
 | -------------- | ------------------------------------------------------------ |
 | RBAC and ABAC  | *Role-based access control* (RBAC) manages access to specific resources based on permissions assigned to the user requesting access (or a group to which they belong). *Attribute-based access control* (ABAC) manages access control based on rules that refer to the attributes of the user, target data, or resource. |
-| Encryption     | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations by encrypting database and log files through an encryption key that itself is encrypted. *Always Encrypted* provides a separation between those who own the data and those who manage it. This helps prevent those with administrator privileges to a database from accessing encrypted data that they do not own in that database. |
-| Classification | This feature helps you comply with security regulations by allowing data to be categorized by sensitivity and business impact. Once you classify data, you can manage it in ways that help protect sensitive or important data from theft or loss. |
+| Encryption     | *Data protection with Transparent Data Encryption* (TDE) enables compliance with many security regulations. It does this by encrypting database and log files through an encryption key that is encrypted. *Always Encrypted* provides separation between users who own the data and those who manage it. This helps prevent users with administrator privileges to a database from accessing encrypted data they don't own in that database. |
+| Classification | A feature that helps you comply with security regulations by allowing you to categorize it by sensitivity and business impact. Once you classify data, you can manage it in ways that help protect sensitive or important data from theft or loss. |

@@ -55,18 +55,18 @@ quiz:
       explanation: "Correct. You can choose either Kubernetes or Linux Docker containers to orchestrate your device infrastructure."
     - content: "The Windows OS."
       isCorrect: false
-      explanation: "Incorrect. This does not enable you to orchestrate your devices. However, you can choose Windows as the host for your container."
+      explanation: "Incorrect. This doesn't enable you to orchestrate your devices. However, you can choose Windows as the host for your container."
     - content: "A Linux OS."
       isCorrect: false
-      explanation: "Incorrect. This does not enable you to orchestrate your devices. However, you can choose Linux as the host for your container."
+      explanation: "Incorrect. This doesn't enable you to orchestrate your devices. However, you can choose Linux as the host for your container."
   - content: "A developer in an automotive company is designing an application that will work with IoT sensors in a company's vehicles. It's important that the app can make decisions quickly, based on sensor data, without needing to connect to the internet. How could Azure SQL Edge help this developer address this requirement?"
     choices:
     - content: "Azure SQL Edge provides a local database, minimizing latency."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of SQL Edge, but not relevant to this problem."
+      explanation: "Incorrect. This is a feature of SQL Edge, but isn't relevant to this problem."
     - content: "Azure SQL Edge provides a local database that meets legal and governmental compliance standards."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of SQL Edge, but not relevant to this problem."
+      explanation: "Incorrect. This is a feature of SQL Edge, but isn't relevant to this problem."
     - content: "Azure SQL Edge provides a local database and can function both online and offline."
       isCorrect: true
       explanation: "Correct. Azure SQL Edge supports solutions that work with or without network connectivity."
