@@ -121,15 +121,15 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
 units:
-- learn.intro-to-azure-monitor.introduction
-- learn.intro-to-azure-monitor.what-is-azure-monitor
-- learn.intro-to-azure-monitor.how-azure-monitor-works
-- learn.intro-to-azure-monitor.when-to-use-azure-monitor
-- learn.intro-to-azure-monitor.knowledge-check
-- learn.intro-to-azure-monitor.summary
+- learn.azure.intro-to-azure-monitor.introduction
+- learn.azure.intro-to-azure-monitor.what-is-azure-monitor
+- learn.azure.intro-to-azure-monitor.how-azure-monitor-works
+- learn.azure.intro-to-azure-monitor.when-to-use-azure-monitor
+- learn.azure.intro-to-azure-monitor.knowledge-check
+- learn.azure.intro-to-azure-monitor.summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn.intro-to-azure-monitor.badge
+  uid: learn.azure.intro-to-azure-monitor.badge
