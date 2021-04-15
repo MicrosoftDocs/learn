@@ -7,10 +7,10 @@ In this unit, you'll learn more about the differences between these options, the
 
 ## How are the hosting options different?
 
-There are two possible hosting options: <!-- ID/SME: Are the two items bolded in the following list bolded because they're actual feature/product names? If so, bolding is OK. If you're bolding them for emphasis, please don't. Per the Microsoft Writing Style Guide, use italic font (sparingly) for emphasis. -->
+There are two possible hosting options:
 
-- **Azure Database for MariaDB**. Fully managed DBaaS that requires minimal user configuration or control.
-- **MariaDB on Azure VMs**.  A database implementation that uses IaaS. You manage the database.
+- Azure Database for MariaDB. Fully managed DBaaS that requires minimal user configuration or control.
+- MariaDB on Azure VMs.  A database implementation that uses IaaS. You manage the database.
 
 The following table identifies important differences between Azure Database for MariaDB and MariaDB on Azure VMs.
 
@@ -18,7 +18,7 @@ The following table identifies important differences between Azure Database for 
 | ---------------------------- | ----------- |-------- |
 | Version of MariaDB supported | MariaDB 10.2 or 10.3 | Any version the customer wants to install |
 | MariaDB update and upgrade management|   Automatic          |  Customer-managed   |
-| Operating-system updates and patches | Automatic | Customer-managed |
+| OS updates and patches | Automatic | Customer-managed |
 | High availability | Built-in and based on node-level interruption mechanisms. When interruption occurs, the service automatically creates a new instance and attaches storage to it. | The customer architects, implements, tests, and maintains appropriate high-availability options. |
 | Hybrid scenarios | Supports data synchronization from external MariaDB sources. Also supports up to five read-only replicas, potentially across Azure regions. | Customer-managed |
 | Backup and restore operations | Automatic. Backups are stored in user-configured storage that's either locally redundant or geo-redundant. Point-in-time recovery is supported. | Customer-managed |
@@ -111,7 +111,7 @@ Azure Database for MariaDB provides the following app protections:
 - At-rest data protection. MariaDB encrypts at-rest data using a cryptographic module. This module is validated by the Federal Information Processing Standard 140-2 (FIPS 140-2).
 - Network security:
   - Connections to MariaDB are routed through a regional gateway. The gateway must have a publicly accessible IP. However, your MariaDB server IP is protected.
-  - <!-- ID/SME: Do you mean that users can create firewall rules or are they created by Azure Database for MariaDB? It's unclear. If the former, change to "You can create..." or if the latter, change to "It creates...". --> Firewall rules are created that block all access to any newly deployed MariaDB server.
+  - Firewall rules are created that block all access to any newly deployed MariaDB server.
   - You can optionally implement Advanced Threat Protection to help provide additional protection for your MariaDB server.
 
 Next, let's consider whether Azure Database for MariaDB is suitable for  your organization, its apps, and database workloads.
