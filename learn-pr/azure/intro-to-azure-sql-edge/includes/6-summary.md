@@ -3,7 +3,7 @@ Our goal was to help you decide if Azure SQL Edge is a good choice for your orga
 - Connectivity and broadband limitations.
 - Latency.
 - Data security, privacy, and ownership.
-- Synchronization with, and connectivity to, backend systems. <!-- ID/SME: Per the Microsoft Writing Style Guide, don't use "back end" if you can substitute a more specific term, such as server, operating system, database, or network. And it's two words, unless a compound modifier, in which case it would be hyphenated. Please fix all instances globally to reflect the change you make. If you must use "back end", please change this instance to "back-end" as it's a compound modifier.-->
+- Synchronization with, and connectivity to, backend systems.
 - Familiarity.
 
 You applied these criteria to your fictional organization, in which your developers are creating and deploying IoT apps that can collect, mine, and analyze data from the edge. Azure SQL Edge is a relational database engine that uses the same codebase as Microsoft SQL Server. It's optimized for IoT and IoT Edge. As such, it provides the same security as Microsoft SQL Server. It also offers a familiar experience for your developers and the same tool interfaces with which they're likely familiar.
