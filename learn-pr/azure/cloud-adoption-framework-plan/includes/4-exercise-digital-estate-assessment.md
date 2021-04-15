@@ -6,7 +6,7 @@ The cloud unlocks a great deal of innovative potential for your technology portf
 
 ## Tailwind Traders' starting point
 
-It's surprisingly common for organizations to have little more than surface knowledge of their digital estate. Years of technical growth, acquisitions, staffing changes, and changing business priorities leads to large, ambiguous collections of technical assets. Tailwind Traders is no exception.
+It's surprisingly common for an organization to have little more than surface knowledge of its digital estate. Years of technical growth, acquisitions, staffing changes, and changing business priorities leads to large, ambiguous collections of technical assets. Tailwind Traders is no exception.
 
 ### Tailwind Traders' digital estate
 
@@ -178,7 +178,7 @@ Before finalizing your migration plan, make sure you consider and mitigate other
 - **Testing/post-migration tweaks:** Allow a time buffer to conduct performance and user acceptance testing for migrated applications, or to configure and tweak applications post-migration. For example, you might need to update database connection strings, configure web servers, or perform cut-overs or cleanup.
 - **Permissions:** Review recommended Azure permissions, and server and database access roles and permissions needed for migration.
 - **Training:** Prepare your organization for the digital transformation. A solid training foundation is important for successful organizational change. Check out free training on [Microsoft Learn](https://docs.microsoft.com/learn/azure/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true), including courses on Azure fundamentals, solution architectures, and security. Encourage your team to explore [Azure certifications](https://docs.microsoft.com/learn/certifications/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true).
-- **Implementation support:** Get support for your implementation if you need it. Many organizations opt for outside help to support their cloud migration. To move to Azure quickly and confidently with personalized assistance, consider an [Azure Expert Managed Service Provider](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e&ocid=CM_Discovery_Checklist_PDF&azure-portal=true), or [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true).
+- **Implementation support:** Get support for your implementation if you need it. Many organizations opt for outside help to support cloud migration. To move to Azure quickly and confidently with personalized assistance, consider an [Azure Expert Managed Service Provider](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e&ocid=CM_Discovery_Checklist_PDF&azure-portal=true), or [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true).
 
 Create an effective cloud migration plan that includes detailed information about the applications you want to migrate, application and database availability, downtime constraints, and migration milestones. The plan considers how long the data copy will take, and includes a realistic buffer for post-migration testing and cut-over activities.
 
@@ -194,7 +194,7 @@ We recommend that you run a test migration in Azure Migrate, before starting a f
 
 For Tailwind Traders, a total of 3,500 VMs, 1,200 applications, and 300 databases had been identified in the total digital estate. Of those, over 80 percent are hosted in the leased datacenters and must be moved to cloud solutions in less than 24 months.
 
-The migration tooling used to collect this data is capable of migrating all of the identified assets. However, such a migration could place a great deal of strain on the change management capacity of your organization. In particular, thoroughly testing over 1,200 applications and validating 300 databases can strain an organization, especially if migration processes and cloud tools are new to the team.
+The migration tooling used to collect this data is capable of migrating all of the identified assets. However, such a migration can place a great deal of strain on the change management capacity of your organization. In particular, thoroughly testing over 1,200 applications and validating 300 databases can strain an organization, especially if migration processes and cloud tools are new to the team.
 
 To improve your odds of success, plan a series of subsequent waves of migrations. Identify a small set of prioritized workloads to migrate, test, and release to production in a two-week sprint. Follow that with subsequent migration waves until all workloads are migrated. Over time, you will see a steady increase in the number of workloads that the team can migrate in each sprint, increasing the size of your migration waves.
 

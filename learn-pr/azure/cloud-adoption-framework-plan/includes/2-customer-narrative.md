@@ -2,7 +2,7 @@ We shared the narrative for Tailwind Traders in the Getting Started module and o
 
 ## Plan for Tailwind Traders' migration effort
 
-In this module, you build out a plan for the Tailwind Traders migration effort. The following is an excerpt of the current state environment that will be migrated.
+In this module, you build out a plan for the Tailwind Traders' migration effort. The following is an excerpt of the current state environment that will be migrated.
 
 Tailwind Traders currently has three datacenters. One is located within the same office building in which the employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. All three datacenters are a mix of physical and virtual servers. The virtualization platforms that the company uses are a mix between Hyper-V and VMware. This mix is the result of different people with different strategy ideas leading the IT department over the years.
 

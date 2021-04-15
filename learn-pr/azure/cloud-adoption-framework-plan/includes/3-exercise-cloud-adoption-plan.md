@@ -84,12 +84,12 @@ This new view is hierarchial. To drill into each phase, select the carrot next t
 
 The following list explains Azure DevOps terminology in more traditional project terms:
 
-- **Epic:** In this template, an epic is a phase of your cloud adoption or digital transformation program.
+- **Epic:** In this template, an Epic is a phase of your cloud adoption or digital transformation program.
 - **Feature:** In this template, each feature is a project required to complete that phase of adoption.
 - **User story:** Each user story is a shared goal or deliverable you will need to be successful when that phase is complete.
 - **Task:** Each task is a unit of work that must be done to realize the goal or deliverable.
 
-> [!WARNING]
+> [!IMPORTANT]
 > Bookmark the address of your new Azure DevOps project in this Epic backlog view. You will need this in the last unit of this Learn module.
 
 ## Next steps
