@@ -14,7 +14,7 @@ By using Visual Studio Code and the Go extension, you can:
 - Navigate the project code easily even if you have multiple files.
 - Enlist support for testing, such as generating test skeletons for functions.
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 ## Install Visual Studio Code on macOS
 

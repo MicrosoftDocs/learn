@@ -3,7 +3,7 @@ Before you start creating applications with Go, you need to set up your developm
 If you prefer not to install Go locally, you can use the [Go Playground][GoPlay]. The playground is a web service that can run Go applications in a browser. This option is helpful when you want to run code examples quickly and easily. We recommend setting up your local environment when you build applications that require a more complex code organization.
 
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 ## Install Go on macOS
 To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page][GoDownload]. Both approaches are available on the download page, but choose only one.
 
