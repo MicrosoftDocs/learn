@@ -59,7 +59,7 @@ This resource definition is telling Bicep that you want to deploy an App Service
 Now that you've declared the App Service plan, the next step is to declare the app:
 
 ```bicep
-resource appService 'Microsoft.Web/sites@2020-06-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   name: 'toy-product-launch-1'
   location: 'eastus'
   properties: {
