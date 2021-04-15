@@ -124,13 +124,13 @@ Repeat the steps in this article for your first three iterations to continue lea
 
 In parallel to completion of each iteration, the project manager should use assessment data from the prior unit to populate the richer plan, including the larger number of workloads and assets required.
 
-As a general rule, project managers should try to load 10 workloads per iteration for the first few iterations. As you complete more retrospectives, it will become clearer how many workloads the team can complete in a two week iteration. For some mature teams, hundreds or even thousands of assets can be migrated in a two-week sprint. But testing and production release of the workloads supported by those assets will take more time.
+As a general rule, project managers should try to load 10 workloads per iteration for the first few iterations. As you complete more retrospectives, it will become clearer how many workloads the team can complete in a two-week iteration. For some mature teams, hundreds or even thousands of assets can be migrated in a two-week sprint. But testing and production release of the workloads supported by those assets will take more time.
 
 During the first few weeks of initial iteration execution, the majority of your migration project should be able to be loaded, prioritized, assigned to iterations, and estimated. Usually, the accuracy of project duration and timelines stabilizes by the time the third iteration is complete.
 
 ## Integrate your digital estate at scale
 
-You can more quickly add workloads, assets, and tasks by using the Teams add-in for Microsoft Excel. The next steps on the next screen provides an article series that will teach you how to load a large number of workloads and assets by using the workload template provided in the initial cloud adoption plan.
+You can more quickly add workloads, assets, and tasks by using the Teams add-in for Microsoft Excel. The next steps on the next screen provide an article series that will teach you how to load a large number of workloads and assets by using the workload template provided in the initial cloud adoption plan.
 
 ## Partner engagement
 
