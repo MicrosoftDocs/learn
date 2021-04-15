@@ -16,5 +16,5 @@ The command will take several minutes to run. When it's complete, it will provid
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/main/scripts/deploy-in-sandbox.sh | bash
     ```
 
-1. Wait several minutes for the command to run. You may finish reading this page and naviage to other pages within this module - it will not impact the running script.
+1. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it will not impact the running script.
 1. Copy the URL displayed at the bottom of the shell output and paste it into a new browser window. This will open the web app and let you use Form Recognizer.
