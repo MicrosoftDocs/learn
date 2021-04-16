@@ -40,8 +40,8 @@ When applying these roles to your service offer, you don't use the Identity and 
 
 If you're thinking about users and roles, especially for  Azure delegated resource management, there are guidelines you should try to adhere to:
 
-- Avoid assigning an individual Contoso user to a role. It's better to appoint an Azure AD user group or a service principal. This mitigates the need to update the offer each time your Contoso staff change.
-- Ensure that at least one Contoso user is granted the **Managed Services Registration Assignment Delete** role. This allows you to remove the delegated access at the completion of your service contract, otherwise the customer has to remove it from their Azure tenant.
+- Avoid assigning an individual Contoso user to a role. It's better to appoint an Azure AD user group or a service principal. It mitigates the need to update the offer each time your Contoso staff change.
+- Ensure that at least one Contoso user is granted the **Managed Services Registration Assignment Delete** role. It allows you to remove the delegated access at the completion of your service contract, otherwise the customer has to remove it from their Azure tenant.
 - You can't use custom role definitions or the Owner role. For a list of the current built-in roles and their IDs, visit [Azure built-in roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles).
 - You also need to avoid using any built-in roles that have **DataAction** permissions.
 

@@ -96,7 +96,7 @@ Below is an example of what the file will look like:
 
 As Contoso does not yet have access to their new customer's Azure environments, but they have established a relationship with them over the signing of the new services contracts, Contoso will distribute the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
 
-The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. The Azure portal does not support subscription-level deployments [SC: Fact check]. So instead, the deployment would be run using either Azure CLI or a PowerShell command, for example: 
+The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. The Azure portal does not support subscription-level deployments [SC: Fact check]. So instead, the deployment would be run using either Azure CLI or a PowerShell command, for example:
 
 ```JSON
 # Log in first with az login if you're not using Cloud Shell

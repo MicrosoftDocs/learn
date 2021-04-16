@@ -12,7 +12,7 @@ Here you will visit the Azure Marketplace and see the service offers published b
 
 ### Review your delegated customers and their Azure resource
 As a Contoso user, you will use Azure Lighthouse to view your customers and the delegated access you have been granted.
-Then you'll view your customer's resources using the Azure Portal and your Contoso credentials.
+Then you'll view your customer's resources using the Azure portal and your Contoso credentials.
 
 ### Update a service offer using Azure Resource Manager templates
-Finally, you'll updated and deploy a change to your service offer using PowerShell, to grant your user group permission to create new managed identities in your customer's subscription.
+Finally, you'll update and deploy a change to your service offer using PowerShell, to grant your user group permission to create new managed identities in your customer's subscription.

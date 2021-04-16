@@ -4,7 +4,7 @@ In this module, you work for Contoso, an organization that delivers technical se
 
 You are tasked with getting a better understanding of the capabilities of Azure Lighthouse and how you can onboard a customer to provide security, monitoring, and management services at scale.
 
-[SC- Next sentence to be reviewed] Finally, you'll learn how to work on your customer's tenant, and how to publish a service offering to Azure Marketplace.
+Finally, you'll learn how to work on your customer's tenant, and how to publish a service offering to Azure Marketplace.
 
 > [!IMPORTANT]
 > Your own Microsoft Azure subscription is required to action the exercises in this module, but the exercises can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used.
@@ -19,8 +19,8 @@ After completing this module, you'll be able to:
 - Describe how Azure Lighthouse is used for managing multiple Microsoft Azure tenants
 - Configure Azure Resource Manager templates for deploying Azure Lighthouse
 - Deploy Azure Lighthouse with Azure Resource Manager templates
-- [SC- To be reviewed] Set up Azure Security Center with Alerting
-- [SC- To be reviewed] Create a managed service offer on the Azure Marketplace
+- Set up Azure Security Center with Alerting
+- Create a managed service offer on the Azure Marketplace
 
 ## Prerequisites
 
