@@ -25,10 +25,10 @@ quiz:
         explanation: "Azure Logic Apps IS a low-code/no-code development platform."
       - content: "Intended to be a compute service"
         isCorrect: true
-        explanation: "That's correct, Azure Functions is intended to be a serverless compute servce, but Azure Logic Apps is intended to be a serverless orchestration service."
+        explanation: "That's correct, Azure Functions is intended to be a serverless compute service, but Azure Logic Apps is intended to be a serverless orchestration service."
       - content: "Intended to be an orchestration service"
         isCorrect: false
-        explanation: "Not all of the above items are true and/or relevant to this question.Azure Functions is intended to be a serverless compute servce, but Azure Logic Apps is intended to be a serverless orchestration service."
+        explanation: "Not all of the above items are true and/or relevant to this question.Azure Functions is intended to be a serverless compute service, but Azure Logic Apps is intended to be a serverless orchestration service."
     - content: "Which of the following Azure Logic App Actions is not supported for Azure SQL and SQL Server connections?"
       choices:
       - content: "Execute a stored procedure"

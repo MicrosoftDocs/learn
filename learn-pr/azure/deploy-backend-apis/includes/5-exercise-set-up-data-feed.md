@@ -8,7 +8,7 @@ The first step with any Azure Function project is to get your function running l
 
 1. Open **Visual Studio Code** and select **File** > **Open folder** to open the folder where your forked GitHub repository is located.
 
-1. Select the **Extensions** icon on the left-hand taskbar. Install **Azurite**, an open source Azure Storage API emulator. This is needed to run functions locally.
+1. Select the **Extensions** icon on the left-hand taskbar. Install **Azurite**, an open-source Azure Storage API emulator. This extension is needed to run functions locally.
 
 1. Select **View** > **Command Palette...** and type **Azurite: Start**, then select **Azurite: Start**.
 
@@ -96,7 +96,7 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Select **New application setting** and add **`AzureSQLConnectionString`** with the value from your **local.settings.json** file. Select **OK**.
 
-1. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You will update this later. Select **OK**.
+1. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You will update this value later. Select **OK**.
 
 1. Select **Save** to add the new settings. Select **Continue** to confirm.
 
@@ -104,7 +104,7 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 1. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
 
-1. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you just downloaded.
+1. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
 
 1. Select **Add secret** to store it.
 

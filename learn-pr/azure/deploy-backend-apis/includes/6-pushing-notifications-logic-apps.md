@@ -4,22 +4,22 @@ In the bus-catching scenario, an Azure Function will be used to do the data coll
 
 ## Azure Logic Apps
 
-Azure Logic Apps allows you to automate and orchestrate tasks and workflows when you want to integrate apps, data, systems and services across organizations. Azure Logic Apps are designed in a web-based designer and can execute logic without writing any code.
+Azure Logic Apps allows you to automate and orchestrate tasks and workflows when you want to integrate apps, data, systems, and services across organizations. Azure Logic Apps is designed in a web-based designer and can execute logic without writing any code.
 
 When comparing Azure Logic Apps and Azure Functions, besides Azure Logic Apps being low-code/no-code and Azure Functions being code-based, the primary difference is intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. You can call Azure Functions from Azure Logic Apps, and vice versa.
 
 ## Azure Logic Apps connectors
 
-Azure Logic Apps support hundreds of connectors with services like Salesforce, SQL Server and Azure SQL, Outlook, and file shares. You can even create and build your own custom connectors as needed.
+Azure Logic Apps supports hundreds of connectors with services like Salesforce, SQL Server and Azure SQL, Outlook, and file shares. You can even create and build your own custom connectors as needed.
 
 ### Azure SQL and SQL Server
 
-Azure Logic Apps support rich capabilities to integrate with SQL Server and Azure SQL. Since the connection is made similar to how you would make with tools including SQL Server Management Studio (SSMS) and Azure Data Studio (ADS), the connectors work for on-premises installations of SQL Server as well as all deployment options of Azure SQL (SQL Database, SQL Managed Instance, and SQL Server in Azure VM). Azure Logic Apps have connectors for **Triggers** which means that when something happens in SQL Server/Azure SQL it could trigger the Logic App. The list of triggers includes:
+Azure Logic Apps supports rich capabilities to integrate with SQL Server and Azure SQL. Since the connection is made similar to how you would make with tools including SQL Server Management Studio (SSMS) and Azure Data Studio (ADS), the connectors work for on-premises installations of SQL Server as well as all deployment options of Azure SQL (SQL Database, SQL Managed Instance, and SQL Server in Azure VM). Azure Logic Apps has connectors for **Triggers**, which means that when something happens in SQL Server/Azure SQL it could trigger the Logic App. The list of triggers includes:
 
 * When an item is created
 * When an item is modified
 
-Azure Logic Apps also have connectors for **Actions** which means that once a Logic App is triggered, a certain action on SQL Server/Azure SQL could be taken. The list of actions includes:
+Azure Logic Apps also has connectors for **Actions**, which means that once a Logic App is triggered, a certain action on SQL Server/Azure SQL could be taken. The list of actions includes:
 
 * Delete row
 * Execute a SQL query
@@ -36,4 +36,4 @@ Azure Logic Apps also have connectors for **Actions** which means that once a Lo
 
 ### Outlook
 
-Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the exercise, you will get to see how this is created, configured, and triggered.
+Azure Logic Apps also supports various connectors for Outlook around sending and receiving as well as tasks. In the bus-catching scenario, the Outlook connector will be used to create a connection to an email account and be able to send email notifications when a bus enters or exits a geofence. In the exercise, you will get to see how this connection is created, configured, and triggered.

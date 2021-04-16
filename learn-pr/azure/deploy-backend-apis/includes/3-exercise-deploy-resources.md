@@ -3,16 +3,16 @@
 
 Setting up your environment and deploying some resources to start with is an important step in building full stack applications. 
 
-Recall in the catching the bus sample, you'll leverage resources including Azure SQL Database, Azure Functions and Azure Logic Apps. In the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database. Here, you'll redeploy Azure SQL Database with the required configurations.
+Recall in the catching the bus sample, you'll use resources including Azure SQL Database, Azure Functions, and Azure Logic Apps. In the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database. Here, you'll redeploy Azure SQL Database with the required configurations.
 
-You'll then deploy an empty Azure Function app and configure it's yaml file and GitHub secrets for CI/CD. The Azure Function will be completed and monitored in exercises later in this module.
+You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. The Azure Function will be completed and monitored in exercises later in this module.
 
 ## Configure your environment
 
-The first required step is to set up your development environment. Please refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
+The first required step is to set up your development environment. Refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
 
 ## Deploy and configure Azure SQL Database
-In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy it, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -23,7 +23,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     ```
 
 > [!TIP]
-> If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
+> If you're not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
@@ -100,11 +100,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select **Settings** for the repository.
 
-1. Select **Secrets** > **New repository secret** and enter the following:
+1. Select **Secrets** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you do not see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
@@ -115,9 +115,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 > [!TIP]
 > If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the **...** > **Push** which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
+1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
 
-1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
+1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
 
     ```powershell
     bash
@@ -187,7 +187,7 @@ Now that your database and GitHub repository are configured, it's time to deploy
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
     ```
 
-1. Run the following in the cloud shell to deploy the function in your language of choice.
+1. Run the following in the Cloud Shell to deploy the function in your language of choice.
 
     ::: zone pivot="csharp"
 

@@ -29,7 +29,7 @@ GO
 
 ### Get the latest bus data
 
-Next, the Azure Function needs to make an HTTP request to pull in the latest bus data from the King County Metro site (see an example here: <https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json>). This can be done easily in any language by making a simple REST call. The function then brings in the JSON and stores it in a variable called `busData`. An example below is shown in Python and would vary slightly depending on the function language selected.
+Next, the Azure Function needs to make an HTTP request to pull in the latest bus data from the King County Metro site (see an example here: <https://s3.amazonaws.com/kcm-alerts-realtime-prod/vehiclepositions_enhanced.json>). This task can be done easily in any language by making a simple REST call. The function then brings in the JSON and stores it in a variable called `busData`. An example below is shown in Python and would vary slightly depending on the function language selected.
 
 ```python
 def GetRealTimeFeed():
@@ -54,7 +54,7 @@ def GetRealTimeFeed():
 
 ### Identify buses in monitored routes and activating a geofence
 
-Next, you need to connect to Azure SQL Database and run a stored procedure to take that JSON data `busData`, import it into Azure SQL Database, and store it in a table. Azure SQL Database supports JSON so this is not an arduous task. The result of the stored procedure contains information about the buses that are activating a geofence, meaning they have entered or exited a geofence.
+Next, you need to connect to Azure SQL Database and run a stored procedure to take that JSON data `busData`, import it into Azure SQL Database, and store it in a table. Azure SQL Database supports JSON so this task isn't difficult. The result of the stored procedure contains information about the buses that are activating a geofence, meaning they have entered or exited a geofence.
 
 You can optionally review the stored procedure `web.AddBusData` below which performs all the heavy lifting.
 
@@ -192,4 +192,4 @@ GO
 
 ### Send an email notification for each activated bus
 
-Finally, for each bus that is activating a geofence, call an Azure Logic App with the bus route number and the activation status (for example, `Enter` or `Exit`). This Azure Logic App should then do something to notify the user that their bus is entering or exiting the geofence. More on this in a future unit.
+Finally, for each bus that is activating a geofence, call an Azure Logic App with the bus route number and the activation status (for example, `Enter` or `Exit`). This Azure Logic App should then do something to notify the user that their bus is entering or exiting the geofence. More on this piece of the solution will be covered in a future unit.

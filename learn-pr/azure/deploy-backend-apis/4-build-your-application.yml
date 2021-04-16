@@ -26,7 +26,7 @@ quiz:
       - content: "Azure Functions pulls the latest bus data using an HTTP request"
         isCorrect: true
         explanation: "That's correct!"
-      - content: "All of the above."
+      - content: "All of the above"
         isCorrect: false
         explanation: "Not all of the above items are true and/or relevant to this question."
     - content: "How does Azure SQL Database play in to this scenario?"
@@ -39,7 +39,7 @@ quiz:
         explanation: "This is not true, review the scenario again."
       - content: "Azure SQL Database is only used for storing data, because it does not support JSON data"
         isCorrect: false
-        explanation: "This is false, Azure SQL Database supports JSON data."
+        explanation: "This is false, Azure SQL Database supports JSON."
       - content: "Azure SQL Database is only used for storing data, because it does not support geospatial data"
         isCorrect: false
         explanation: "This is false, Azure SQL Database supports geospatial data."
