@@ -13,7 +13,7 @@ The simplest way to install Go is by using [Homebrew][Homebrew].
 
 Open a Terminal prompt, and then run the following commands:
 
-```
+```command
 brew update
 brew install go
 ```
@@ -22,7 +22,7 @@ Homebrew installs Go in the */usr/local/go* folder. The */usr/local/go/bin* path
 
 To confirm Go is installed, run the following command:
 
-```
+```command
 go version
 ```
 
@@ -46,7 +46,7 @@ By default, the .pkg file installs Go at */usr/local/go*, and the path */usr/loc
 
 After the installation finishes, open a new Terminal prompt, and run the following command:
 
-```
+```command
 go version
 ```
 
@@ -70,34 +70,36 @@ You can also download the installer by running the following command from your T
 > [!NOTE]
 > In the following command, you might need to change the version number if version 1.15.4 isn't the [most recent release][GoLatest].
 
-```
+```command
 wget https://golang.org/dl/go1.15.4.linux-amd64.tar.gz
 ```
 
-**Step 2: Extract the Go installer. After you download the Go installer locally, you can start setting up Go on your workstation.
+**Step 2: Extract the Go installer.**
+
+After you download the Go installer locally, you can start setting up Go on your workstation.
 
 Extract the installer at */usr/local/go*, and run the following command as root or through sudo:
 
-```
+```command
 tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz
 ```
 
 Next, add the path */usr/local/go/bin* to the **$PATH** environment variable. To make Go available system-wide, you can add the following command to either your $HOME/.profile or your /etc/profile:
 
-```
+```command
 export PATH=$PATH:/usr/local/go/bin
 ```
 
 Close and reopen the Terminal prompt to update the $PATH environment variable. You can also force the update by running the following command:
 
-```
+```command
 source $HOME/.profile
 ```
 
 **Step 3: Confirm Go is installed correctly**
 After you configure the Go distribution, confirm Go works by running the following command:
 
-```
+```command
 go version
 ```
 
@@ -125,7 +127,7 @@ By default, the .msi file installs Go at *C:\Program Files\Go*, and the folder l
 **Step 3: Confirm Go is installed correctly**
 After you configure the Go distribution, confirm Go works. Open a new Command or PowerShell prompt, and then run the following command:
 
-```
+```command
 go version
 ```
 
@@ -142,23 +144,24 @@ Go differs from other programming languages in how it organizes project files. F
 
 To set your workspace to a different location, you can use the **$GOPATH** environment variable. This environment variable helps to avoid future problems when working with more complex projects.
 
-**Linux or macOS**
+::: zone pivot="linux,macos"
+On Linux or macOS, configure your workspace by adding the following command to your ~/.profile:
 
-In macOS or Linux, configure your workspace by adding the following command to your ~/.profile:
-
-```
+```command
 export GOPATH=$HOME/go
 ```
 
 Then run the following command to update your environment variables:
 
-```
+```command
 source ~/.profile
 ```
 
-**Windows**
+::: zone-end
 
-In Windows, configure your workspace by specifying the location of your Go project folder in a local Go environment variable.
+
+::: zone pivot="windows"
+On Windows, configure your workspace by specifying the location of your Go project folder in a local Go environment variable.
 
 1. Create a top-level folder for all your Go projects. For example, *C:\Projects\Go*.
 
@@ -172,13 +175,13 @@ In Windows, configure your workspace by specifying the location of your Go proje
 
 1. Confirm the $GOPATH variable shows your correct workspace location. In a new prompt window, run the following command:
 
-   ``` 
+   ```command
    go env GOPATH
    ```
 
    The output shows your top-level project folder as the current workspace location:
 
-   ```
+   ```command
    C:\Projects\Go
    ```
 
@@ -187,9 +190,11 @@ In Windows, configure your workspace by specifying the location of your Go proje
 
 You can shorten the command to see all the environment variables used by Go:
 
-```
+```command
 go env
 ```
+
+::: zone-end
 
 
 ## Add Go workspace folders
@@ -202,7 +207,7 @@ Each Go workspace has three basic folders:
 
 For instance, your workstation folder structure tree might look this example:
 
-```
+```command
 bin/
     hello                          
     coolapp                        
@@ -216,27 +221,31 @@ src/
 	    hello.go    
 ```
 
-We need to add these three folders to your workspace. Run the following commands to create three subfolders for your workspace:
+We need to add these three folders to your workspace.
 
-**Linux or macOS**
+::: zone pivot="linux,macos"
+On Linux or macOS, run the following commands to create three subfolders for your workspace:
 
-```
+```command
 cd $GOPATH
 mkdir bin
 mkdir src
 mkdir pkg
 
 ```
+::: zone-end
 
-**Windows**
+::: zone pivot="windows"
+On Windows, run the following commands to create three subfolders for your workspace:
 
-```
+```command
 cd %GOPATH%
 mkdir bin
 mkdir src
 mkdir pkg
 
 ```
+::: zone-end
 
 
 ## Next steps

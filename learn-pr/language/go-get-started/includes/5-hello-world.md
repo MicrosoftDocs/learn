@@ -7,7 +7,7 @@ You can open the Visual Studio Code IDE from your CLI prompt and start editing t
 
 Some installations of Visual Studio Code add support for the CLI to the $PATH variable by default. You might see this option during the installation process. If you already have this setting configured, then you're all set. Otherwise, you might need to do the following steps to use this feature.
 
-
+::: zone pivot="windows"
 ### Windows systems
 
 Follow these steps to add the location of the Visual Studio Code CLI to your $Path system environment variable:
@@ -35,7 +35,7 @@ Follow these steps to add the location of the Visual Studio Code CLI to your $Pa
  
 1. In the empty row, enter the location of the Visual Studio Code CLI executable. Replace `<user-name>` with your user name.
 
-   ```console
+   ```command
    C:\Users\<user-name>\AppData\Local\Programs\Microsoft VS Code\bin
    ```
 
@@ -43,8 +43,10 @@ Follow these steps to add the location of the Visual Studio Code CLI to your $Pa
 
 1. Close the **System properties** dialog and the Windows **Control Panel**.
 
+::: zone-end
 
-### Other systems, such as macOS
+::: zone pivot="linux,macos"
+### Linux or macOS
 
 Follow these steps to register the Visual Studio Code CLI in your $PATH environment variable:
 
@@ -63,6 +65,8 @@ Follow these steps to register the Visual Studio Code CLI in your $PATH environm
 
 1. Close Visual Studio Code.
 
+::: zone-end
+
 
 ## Step 1: Open your Go workspace and the IDE
 
@@ -72,19 +76,23 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
 
 1. Open your Go workspace directory by running the following command:
 
-   **Linux or macOS**
-   ```
+   ::: zone pivot="linux,macos"
+   ```command
    cd $GOPATH/src
    ```
 
-   **Windows**
-   ```
+   ::: zone-end
+
+   ::: zone pivot="windows"
+   ```command
    cd %GOPATH%/src
    ```
 
+   ::: zone-end
+
 1. Use the following command to open Visual Studio Code from your workspace:
 
-   ```
+   ```command
    code .
    ```
 
@@ -109,7 +117,7 @@ Complete the following steps in Visual Studio Code. In the IDE, use the create f
 1. Create a new file named *main.go* for your app code.
 1. Expand the **Explorer** > **SRC** view to show your folder structure tree. It should look like this example:
 
-   ```
+   ```output
    SRC/
      helloworld/                     
 	   main.go
@@ -136,7 +144,7 @@ Now let's add code to your Go file.
 
 1. In the *main.go* file, add the following code:
 
-   ```
+   ```go
    package main
 
    import "fmt"
@@ -165,19 +173,23 @@ If you want to run the program from within Visual Studio Code, follow these step
 
 1. In the Terminal, change the directory location to your Go workspace and the folder that has your Go file:
 
-   **Linux or macOS**
-   ```
+   ::: zone pivot="linux,macos"
+   ```command
    cd $GOPATH/src/helloworld
    ```
 
-   **Windows**
-   ```
+   ::: zone-end
+
+   ::: zone pivot="windows"
+   ```command
    cd %GOPATH%/src/helloworld
    ```
 
+   ::: zone-end
+
 To run your program, use the following command:
 
-```
+```command
 go run main.go
 ```
 
@@ -191,7 +203,7 @@ The `go run` command does two things. It compiles the app, and after compile suc
 
 If you want to only generate an executable and not run the program, use this command:
 
-```
+```command
 go build main.go
 ```
 
@@ -199,7 +211,7 @@ When the `go build` command completes, it generates an executable app that you c
 
 Here's what your project should look like now in the **Explorer** > **SRC** view:
 
-```
+```output
 SRC/
   helloworld/                     
 	main
@@ -215,7 +227,7 @@ You created your first Go app and made sure it compiles and runs. Let's examine 
 
 We'll start with the first statement in your Go file:
 
-```
+```go
 package main
 ```
 
@@ -247,7 +259,7 @@ We'll look closer at these concepts in the next module. For now, we need to know
 
 Here's the next line in your Go file:
 
-```
+```go
 import "fmt"
 ```
 
@@ -286,7 +298,7 @@ Did Visual Studio Code remove the import when you saved the file? Try editing th
 
 Let's talk about the block of code in your Go file:
 
-```
+```go
 func main() {
    fmt.Println("Hello World!")
 }
