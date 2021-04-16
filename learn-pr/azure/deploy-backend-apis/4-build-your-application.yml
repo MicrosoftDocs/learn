@@ -28,18 +28,18 @@ quiz:
         explanation: "That's correct!"
       - content: "All of the above"
         isCorrect: false
-        explanation: "Not all of the above items are true and/or relevant to this question."
+        explanation: "Only one of the above statements is true."
     - content: "How does Azure SQL Database play in to this scenario?"
       choices:
-      - content: "Azure SQL Database is used for JSON and geospatial processing which makes storing data and identifying activating buses a simple task"
+      - content: "Azure SQL Database is used for JSON and geospatial processing, which makes storing data and identifying activating buses a simple task"
         isCorrect: true
-        explanation: "This is true. For example, the stored procedure uses `STContains` to easily identify which buses are in a geofence. "
+        explanation: "This statement is true. For example, the stored procedure uses `STContains` to easily identify which buses are in a geofence. "
       - content: "Azure SQL Database is used to execute Azure Functions"
         isCorrect: false
-        explanation: "This is not true, review the scenario again."
-      - content: "Azure SQL Database is only used for storing data, because it does not support JSON data"
+        explanation: "This statement isn't true, review the scenario again."
+      - content: "Azure SQL Database is only used for storing data, because it doesn't support JSON data"
         isCorrect: false
-        explanation: "This is false, Azure SQL Database supports JSON."
-      - content: "Azure SQL Database is only used for storing data, because it does not support geospatial data"
+        explanation: "This statement is false, Azure SQL Database supports JSON."
+      - content: "Azure SQL Database is only used for storing data, because it doesn't support geospatial data"
         isCorrect: false
-        explanation: "This is false, Azure SQL Database supports geospatial data."
+        explanation: "This statement is false, Azure SQL Database supports geospatial data."

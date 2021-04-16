@@ -4,7 +4,7 @@ title: Pushing notifications with Azure Logic Apps
 metadata:
   unitType: learning-content
   title: Pushing notifications with Azure Logic Apps
-  description: In this unit you will learn about Azure Logic apps and how to integrate them with Azure Functions and Azure SQL Database.
+  description: In this unit, you'll learn about Azure Logic apps and how to integrate them with Azure Functions and Azure SQL Database.
   ms.date: 3/24/2021 
   author: amthomas46
   ms.author: antho
@@ -15,7 +15,7 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "Which of the following answers does not apply to Azure Logic Apps?"
+    - content: "Which of the following answers doesn't apply to Azure Logic Apps?"
       choices:
       - content: "Serverless cloud service"
         isCorrect: false
@@ -28,18 +28,18 @@ quiz:
         explanation: "That's correct, Azure Functions is intended to be a serverless compute service, but Azure Logic Apps is intended to be a serverless orchestration service."
       - content: "Intended to be an orchestration service"
         isCorrect: false
-        explanation: "Not all of the above items are true and/or relevant to this question.Azure Functions is intended to be a serverless compute service, but Azure Logic Apps is intended to be a serverless orchestration service."
-    - content: "Which of the following Azure Logic App Actions is not supported for Azure SQL and SQL Server connections?"
+        explanation: "Azure Functions is intended to be a serverless compute service, but Azure Logic Apps is intended to be a serverless orchestration service."
+    - content: "Which of the following Azure Logic App Actions isn't supported for Azure SQL and SQL Server connections?"
       choices:
       - content: "Execute a stored procedure"
         isCorrect: false
-        explanation: "This is supported, but are other answers?"
+        explanation: "This actions is supported, but are other answers?"
       - content: "Execute a SQL query"
         isCorrect: false
-        explanation: "This is supported, but are other answers?"
+        explanation: "This action is supported, but are other answers?"
       - content: "Transform data using Power Query"
         isCorrect: false
-        explanation: "This is supported, but are other answers?"
+        explanation: "This action is supported, but are other answers?"
       - content: "All of the above are supported"
         isCorrect: true
         explanation: "That's correct! All of the above and more are supported."
