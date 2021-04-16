@@ -207,7 +207,7 @@ Each Go workspace has three basic folders:
 - *src*: Includes all application source code that lives in your workstation.
 - *pkg*: Contains compiled versions of the available libraries. The compiler can link against these libraries without recompiling them.
 
-For instance, your workstation folder structure tree might look this example:
+For instance, your workstation folder structure tree might look like this example:
 
 > bin/<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;hello<br> 
