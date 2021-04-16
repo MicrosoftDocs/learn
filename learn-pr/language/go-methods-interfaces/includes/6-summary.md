@@ -6,6 +6,6 @@ With the Go language, you can extend code from the standard libraries, even if y
 
 In this module, you learned how methods work in Go. You learned that Go, unlike other programming languages, doesn't require a `class` object when you write reusable and extensible code.
 
-Finally, you studied how interfaces work in Go. You explored the fundamentals of declaring and using them. You reviewed a few complex examples, such as how to create a server API and practiced implementing interfaces.
+Finally, you studied how interfaces work in Go. You explored the fundamentals of declaring and using them. You reviewed a few complex examples, such as how to create a server API, and practiced implementing interfaces.
 
 With the knowledge you acquired, you're ready to write code that's reusable and extensible.
