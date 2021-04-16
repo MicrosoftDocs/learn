@@ -209,16 +209,16 @@ Each Go workspace has three basic folders:
 
 For instance, your workstation folder structure tree might look this example:
 
-> bin/
->    hello 
->    coolapp
-> pkg/
->    github.com/gorilla/
->        mux.a 
-> src/
->    github.com/golang/example/
->        .git/
->	hello/
+> bin/<br>
+>    hello<br> 
+>    coolapp<br>
+> pkg/<br>
+>    github.com/gorilla/<br>
+>        mux.a<br>
+> src/<br>
+>    github.com/golang/example/<br>
+>        .git/<br>
+>	hello/<br>
 >	    hello.go
 
 Run the following commands to create three subfolders for your workspace:
