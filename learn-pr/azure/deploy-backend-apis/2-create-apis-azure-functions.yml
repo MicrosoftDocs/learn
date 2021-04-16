@@ -12,3 +12,34 @@ metadata:
 durationInMinutes: 05
 content: |
   [!include[](includes/2-create-apis-azure-functions.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "What will Azure Functions be used for in the bus-catching scenario?"
+      choices:
+      - content: "Azure Functions will store the real-time bus data"
+        isCorrect: false
+        explanation: "The real-time bus data will be stored in Azure SQL Database."
+      - content: "Azure Functions will be used to get, store and process the latest bus data"
+        isCorrect: true
+        explanation: "That's correct!"
+      - content: "Azure Functions will be called when a bus enters or exits a geofence to send an email"
+        isCorrect: false
+        explanation: "Azure Logic Apps will be called when a bus enters or exits a geofence."
+      - content: "None of the above."
+        isCorrect: false
+        explanation: "Review the scenario again to understand the various pieces of the solution."
+    - content: "Which of the following is not true when describing Azure Functions?"
+      choices:
+      - content: "Azure Functions support multiple languages including C#, Java, JavaScript, PowerShell, and Python"
+        isCorrect: false
+        explanation: "This is true, and there are custom handlers if you want to use other languages."
+      - content: "Azure Functions scale automatically on demand."
+        isCorrect: false
+        explanation: "This is true, and you are only billed for what is needed."
+      - content: "Azure Functions respond to events including an HTTP request, new message on a queue, or a timer"
+        isCorrect: false
+        explanation: "This is true."
+      - content: "Azure Functions is a low-code/no-code development platform"
+        isCorrect: true
+        explanation: "Azure Functions is primarily code-based. Azure Logic Apps is a low-code/no-code development platform."
