@@ -194,7 +194,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
     You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
-1. In the **Document ID** field, enter `/id`.
+1. In the **Document ID** field, enter `id`.
 
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
