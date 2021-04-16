@@ -23,3 +23,8 @@ To sum up, this module has covered the following topics:
 * [Getting Started with Swashbuckle](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle)
 * [Deploy ASP.NET Core Apps to Azure App Service](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-apps/)
 * [Publish an ASP.NET Core Web API to Azure API Management with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-api-management-using-vs)
+
+
+## Additional Resources ##
+
+* [Fusion development approach to building apps using Power Apps](https://aka.ms/fusiondevbook)
