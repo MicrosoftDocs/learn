@@ -1,4 +1,4 @@
-Let's start with a quick overview of Azure Cache for Redis to help you decide if it's a suitable solution for your organization. <!--Andy, a couple of template fixes. I also removed the second sentence because we had it in the first unit. Moved third sentence to end of first unit.-->
+Let's start with a quick overview of Azure Cache for Redis to help you decide if it's a suitable solution for your organization.
 
 ## What is Redis Cache?
 
