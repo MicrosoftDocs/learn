@@ -69,4 +69,4 @@ quiz:
       explanation: "Incorrect. This is not a feature of geo-replication."
     - content: "It creates global caches with local latency across regions, improving performance at all locations."
       isCorrect: true
-      explanation: "Correct. This is a feature of geo-replication."<!--Andy, please check this edit.-->
+      explanation: "Correct. This is a feature of geo-replication."
