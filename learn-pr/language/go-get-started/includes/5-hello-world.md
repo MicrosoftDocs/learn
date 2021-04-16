@@ -121,8 +121,8 @@ To create the new file and folder, use the process that works best for you.
 1. Expand the **Explorer** > **SRC** view to show your folder structure tree. It should look like this example:
 
    > SRC/<br>
-   >  helloworld/<br>
-	>   main.go
+   > &nbsp;&nbsp;&nbsp;&nbsp;helloworld/<br>
+	> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.go
 
 
 ### Install Go extension tools
@@ -226,9 +226,9 @@ When the `go build` command completes, it generates an executable app that you c
 Here's what your project should look like now in the **Explorer** > **SRC** view:
 
 > SRC/<br>
->  helloworld/<br>
->	main<br>
->	main.go
+> &nbsp;&nbsp;&nbsp;&nbsp;helloworld/<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main.go
 
 In the **Explorer** view, the name of the file without the extension is the executable file you can use to run your program. (On Windows, this file actually has the *.exe* extension.) When you're developing, you use the `go run` command. To build the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
 
