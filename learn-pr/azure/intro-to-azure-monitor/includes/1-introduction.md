@@ -10,8 +10,9 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+One of the many reasons you may be hosting your infrastructure or applications on Azure, may concern performance. Deploying to Azure is not a one-and-done action however. How do you know if you are gaining benefits with Azure hosting? How can you prove your return on investment? Are there aspects to your applications that are not giving the performance you, or your users, expect?
+
+:::image type="content" source="../media/monitoring-panel-options.png" alt-text="Monitoring options for a web app on Azure portal showing options of metrics, logs, health check, etc.":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -26,8 +27,11 @@ TODO: add your visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+Consider a web application that you are hosting on Azure. You decided to move the application from your on-premises infrastructure due to performance issues.  During back-to-school campaigns, your web site is being overloaded and response times are causing users to leave. You don't want to spend more money on new server hardware just to support these limited engagements where load peaks.
+
+Azure offers the ability to scale up your applications, or out, when needed, and then automatically scale them back when resource needs drop off. Initially, you may not know where the capacity issues are. Using the Azure Monitor capabilities, you can determine where your application scaling needs are and adjust those parameters in your scaling strategy, based on concrete metrics and log data.
+
+:::image type="content" source="../media/monitor-web.png" alt-text="graphs depicting data in/out, request, and response time for monitoring a web app":::
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -42,7 +46,11 @@ TODO: add your image
 
  -->
 ## What will we be doing?
-TODO: add your activities
+
+We'll take a look at the importance of monitoring your Azure applications and infrastructure by:
+* Understanding the role of Azure Monitor.
+* Discovering how Azure Monitor works, at a high level.
+* Determine if Azure Monitor is appropriate for your needs.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -58,6 +66,10 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to <TODO>
+By the end of this session, you'll be able to;
+
+- Explain what Azure Monitor is
+- Briefly describe how it works
+- Explain sample scenarios where Azure Monitor is useful
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

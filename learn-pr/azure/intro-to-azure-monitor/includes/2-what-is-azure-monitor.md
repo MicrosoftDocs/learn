@@ -6,7 +6,7 @@
 
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
 -->
-TODO: add your topic sentences(s)
+Let's start with an introduction to Azure Monitor. This overview will help you understand what Azure Monitor is and why it is an important part of your Azure deployments.
 
 <!-- 2. Background-concept definitions (optional) ----------------------------------------
 
@@ -28,10 +28,12 @@ TODO: add your topic sentences(s)
         Heading: "What is a business process?
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
-## What is <concept>?
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+## What is monitoring?
+Monitoring is a task that involves collecting and reviewing data about the activity of some process or behavior. In the world of Azure, monitoring is used to collect insights into the operation, performance, and behavior of your applications and services.
+
+You can perform monitoring as a real-time event or collect data and store the data in log files for later review. Whatever your preferred method, Azure Monitor is ready to help you collect the necessary information that you need.
+
+:::image type="content" source="../media/monitoring.png" alt-text="Depiction of data sources on the left feeding into a metrics and/or log database destinations on the right.":::
 
 <!-- 3. Define the product -------------------------------------------------------------
 
@@ -51,10 +53,12 @@ TODO: Add your visual element
         Heading: "Azure Logic Apps definition"
         Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
 -->
-## <product> definition
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+## Azure Monitor definition
+Azure Monitor is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor is used by IT Operations, DevOps, and Developer teams to maximize the availability and performance of applications and services.
+
+Azure Monitor provides a broad set of capabilities with a varying set of prerequisites depending on your specific monitoring goal. On one end of the spectrum, getting started with Azure Monitor metrics requires no incoming experience because metric collection is on by default for Azure resources and viewing metrics in Metric Explorer is straightforward in the Azure portal UI. However, when using Azure Monitor Log Analytics for trend analysis and pattern recognition, familiarity with query languages would be helpful.
+
+:::image type="content" source="../media/azure-monitor.png" alt-text="Azure monitor capabilities showing data sources feeding into metrics and logs, providing insights, visualizations, and analysis options from the data collected.":::
 
 <!-- 4. Solve the scenario -------------------------------------------------------------
 
@@ -75,55 +79,9 @@ TODO: Add your visual element
         Heading: "How to implement a Twitter monitor"
         Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
 -->
-## How to <solve scenario>
-TODO: Add your lead sentence
-TODO: Add your additional text
+## How to monitor your web application
+The scenario for a back-to-school campaign impact on your web application, requires an evaluation of where and when the web app experiences demand. Azure Monitor can collect performance and availability telemetry for all of the layers in your stack, from applications, infrastructure, the Azure platform, and any custom sources you integrate.
+
+Azure Monitor is enabled by default. As soon as you create an Azure subscription and start adding resources such as web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified. Metrics tell you how the resource is performing and the resources that it's consuming.
+
 TODO: Add your visual element
-
-<!-- 5. Additional content (optional, as needed) ------------------------------------------------
-
-    Goal:
-        The section is a catch-all for any information not covered in the sections above.
-        Repeat the pattern here as many times as needed.
-
-    Possible topics:
-        - Key feature(s).
-        - Example use case in addition to the scenario.
-        - High-level of how practitioners use the product (e.g. there's an API and a web UI to support multiple use cases).
-        - Business value (e.g. it lets you do something that would be difficult to achieve without <product>).
-
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
