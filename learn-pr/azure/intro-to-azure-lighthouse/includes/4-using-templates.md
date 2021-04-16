@@ -1,6 +1,6 @@
 With the requirements clear and planning completed, Contoso is almost ready to begin onboarding new customers. Before you start, you want a better understanding of how the process works.
 
-In this unit, you'll take a more in-depth look at Azure delegated resource management. Then you'll learn how to configure an Azure Resource Manager template, how to deploy it, [SC: Needed?] and how to confirm that your customer has been successfully onboarded.
+In this unit, you'll take a more in-depth look at Azure delegated resource management. Then you'll learn how to configure an Azure Resource Manager template and how to deploy it.
 
 ## Azure delegated resource management
 
@@ -8,7 +8,7 @@ In this unit, you'll take a more in-depth look at Azure delegated resource manag
 
 Azure delegated resource management is the technology capability that gives Contoso access to customer resources from your own tenant, with Azure Lighthouse. Azure delegated resource management has three key components:
 
-- The principal ID and the principal ID display name of the user, group, or service principal that is being granted the permissions.
+- The principal ID and the display name of the user, group, or service principal that is being granted the permissions. The principal ID is displayed as the Object ID in Azure Active Directory. 
 - The role definition ID of the Azure in-built role, that contains the most appropriate level of permissions that you want to grant. Together, the principal ID, principal ID display name, and the role definition are known as the authorization for Azure Lighthouse.
 - The scope of where the authorization is applied to, either a subscription, a resource group or multiple resource groups.
 

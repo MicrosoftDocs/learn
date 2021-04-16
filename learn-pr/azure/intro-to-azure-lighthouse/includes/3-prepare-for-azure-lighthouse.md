@@ -56,7 +56,7 @@ Contoso already uses Azure AD user groups and roles to control access to its own
 | Customer_Subscription_Management   | User group | Contributor                                     |
 
 > [!NOTE]
-> When you create each of these user groups in your Contoso Azure Active Directory, please make a note of their principal IDs. You'll need them for the onboarding process.
+> When you create each of these user groups in your Contoso Azure Active Directory, make a note of their Object ID. You'll need that for the onboarding process.
 
 With your permission structure defined, you need to assign users to these groups. Remember, Contoso staff in these groups will have access to all customers where this group has been used in an authorization. If you have a customer with a specific security requirement where you need to limit access to only certain Contoso staff (for example, people who have done certain accredited training), consider creating groups just for this customer and using only those groups in their authorization.
 
