@@ -2,7 +2,7 @@ With user authentication in place, your shopping list web app needs a way to res
 
 We'll look into routing configuration and roles in Azure Static Web Apps to fine tune user access to our web app.
 
-# Configuration file for Azure Static Web Apps
+## Configuration file for Azure Static Web Apps
 
 Configuration for Azure Static Web Apps is defined in the `staticwebapp.config.json` file, which controls the following settings:
 
@@ -18,7 +18,7 @@ The recommended location for the `staticwebapp.config.json` is in the folder set
 
 For our use case, we'll look into routing configuration to achieve what we want.
 
-# Restricting authentication providers
+## Restricting authentication providers
 
 In a previous section, we saw that by default all authentication providers are enabled. We can change that by adding routing rules in the configuration.
 
@@ -37,7 +37,7 @@ For example, to disable login through the Facebook provider, you can add a routi
 
 We force the route `/.auth/login/facebook` used to authenticate with the Facebook provider to return a `404` (not found) error, so the users can't access it. You can add as many routes rules we want to disable all providers you don't want to use.
 
-# Securing routes with roles
+## Securing routes with roles
 
 Routes are by default accessible to everyone without any restrictions. You can secure routes by adding one or more role names into a rule's `allowedRoles` array. By default, every user belongs to the built-in `anonymous` role, and all logged-in users are members of the `authenticated` role.
 
@@ -71,6 +71,21 @@ You can also restrict specific HTTP methods for a given route, like this:
 ```
 
 In this example, all users can access the `GET` method on the `/profile` route, but only authenticated users can use `PUT`, `POST` or `DELETE`.
+
+### Using a wildcard
+
+You can use a wildcard at the end of route to match all routes following the base pattern. For example, to restrict all URLs starting with `/api` to authenticated users, you can write:
+
+```json
+{
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ]
+}
+```
 
 ## Next steps
 
