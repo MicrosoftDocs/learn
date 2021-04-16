@@ -33,7 +33,7 @@ Your session-oriented apps require the ability to store and access temporary ses
 
 - Handles up to hundreds of thousands of simultaneous users.
 - Makes data-replication options available to help provide for maximum reliability.
-- Helps reduce costs, as it is typically more cost-effective and scalable than alternative database or storage options.
+- Helps reduce costs, as it's typically more cost-effective and scalable than alternative database or storage options.
 
 You can use the session store feature to:
 
