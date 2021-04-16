@@ -7,8 +7,30 @@ You can open the Visual Studio Code IDE from your CLI prompt and start editing t
 
 Some installations of Visual Studio Code add support for the CLI to the $PATH variable by default. You might see this option during the installation process. If you already have this setting configured, then you're all set. Otherwise, you might need to do the following steps to use this feature.
 
+::: zone pivot="linux,macos"
+### Linux or macOS
+
+Follow these steps to register the Visual Studio Code CLI in your $PATH environment variable:
+
+1. Open Visual Studio Code.
+
+1. Under **View**, select **Command Palette**.
+
+1. In the search box, enter **shell command**. As you type, the results filter.
+
+1. Choose the **Shell Command: Install 'code' command in PATH** command.
+
+1. Close your open Command or Terminal prompt.
+
+   > [!Important]
+   > If you have an open prompt from the previous exericse, close the prompt and open a new prompt. This step is necessary for the new **$PATH** value to take effect.
+
+1. Close Visual Studio Code.
+
+::: zone-end
+
 ::: zone pivot="windows"
-### Windows systems
+### Windows
 
 Follow these steps to add the location of the Visual Studio Code CLI to your $Path system environment variable:
 
@@ -45,28 +67,6 @@ Follow these steps to add the location of the Visual Studio Code CLI to your $Pa
 
 ::: zone-end
 
-::: zone pivot="linux,macos"
-### Linux or macOS
-
-Follow these steps to register the Visual Studio Code CLI in your $PATH environment variable:
-
-1. Open Visual Studio Code.
-
-1. Under **View**, select **Command Palette**.
-
-1. In the search box, enter **shell command**. As you type, the results filter.
-
-1. Choose the **Shell Command: Install 'code' command in PATH** command.
-
-1. Close your open Command or Terminal prompt.
-
-   > [!Important]
-   > If you have an open prompt from the previous exericse, close the prompt and open a new prompt. This step is necessary for the new **$PATH** value to take effect.
-
-1. Close Visual Studio Code.
-
-::: zone-end
-
 
 ## Step 1: Open your Go workspace and the IDE
 
@@ -96,30 +96,32 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
    code .
    ```
 
-   Visual Studio Code launches. The **Explorer** view is shown on the left, and a **Welcome** page is on the right. In the **Explorer** view, the **SRC** section of your Go project should be open (expanded). This section is the */src* folder for your project. It's currently empty, but we'll add some content in the next step.
+Visual Studio Code launches. The **Explorer** view is shown on the left, and a **Welcome** page is on the right.
+
+In the **Explorer** view, the **SRC** section of your Go project should be open (expanded). This section is the */src* folder for your project. It's currently empty, but we'll add some content in the next step.
 
 
-## Step 2: Create a new folder and a Go file for the project
+## Step 2: Create a new folder and a Go file
 
-Let's add a folder and file to your Go project. The IDE offers several ways to create new items:
+Let's add a folder and file to your Go project. There are several ways in Visual Studio Code to create new items:
 
 - Actions on the toolbar menu:
    - Select **File** > **Open folder**, and then create a **New folder**.
    - Select **File** > **New file**, and start a new file.
-- Links on the **Welcome** page, which are similar to the toolbar menu options.
-- Icons in the **Explorer** view, to the right of **SRC** section:
+- Links on the **Welcome** page, which are similar to the toolbar menu actions.
+- Icons in the **Explorer** view, to the right of the **SRC** section:
    - Select the **New folder** icon. In the text box, type the folder name, and press Enter.
    - Select the **New file** icon. In the text box, type the file name, and press Enter.
 
 Complete the following steps in Visual Studio Code. 
-To create the new file and folder, use the process in the IDE that works best for you.
+To create the new file and folder, use the process that works best for you.
 
 1. Create a new folder named *helloworld*. 
 1. Create a new file named *main.go* for your app code.
 1. Expand the **Explorer** > **SRC** view to show your folder structure tree. It should look like this example:
 
-   > SRC/
-   >  helloworld/                     
+   > SRC/<br>
+   >  helloworld/<br>
 	>   main.go
 
 
@@ -127,8 +129,8 @@ To create the new file and folder, use the process in the IDE that works best fo
 
 If *main.go* is the first Go file you open in Visual Studio Code, you might be prompted to install other tools for the Go extension. When you're prompted, select **Install**. A Terminal opens at the bottom of the IDE to show the output of the process. You should see output like this example:
 
-> Tools environment: GOPATH=C:\Projects\Go
-> Installing 5 tools at C:\Projects\Go\bin in module mode.
+> Tools environment: GOPATH=C:\Projects\Go<br>
+> Installing 5 tools at C:\Projects\Go\bin in module mode.<br>
 > Installing github.com/uudashr/gopkgs/v2/cmd/gopkgs (C:\Projects\Go\bin\gopkgs.exe) SUCCEEDED
 
 During the install process, check the status bar in Visual Studio Code. If you see a message at the bottom right, such as "All tools not installed," select the message. In the popup, select **Install**.
@@ -166,7 +168,7 @@ The Go program can be executed in a Command or Terminal prompt, or in a Terminal
 You can use an existing prompt, or open a new one. If you open a new prompt, remember to change the directory location to your Go workspace. Also be sure to run the program from the folder that has your Go file: *$GOPATH/src/helloworld*. 
 
 
-### Run a Terminal inside Visual Studio Code
+### Open a Terminal inside Visual Studio Code
 
 If you want to run the program from within Visual Studio Code, rather than a standalone Command or Terminal prompt, follow these steps:
 
@@ -174,7 +176,7 @@ If you want to run the program from within Visual Studio Code, rather than a sta
 
 1. In the drop-down box at the top-right of the Terminal, select **New Command Prompt**.
 
-1. Change the directory location to your Go workspace and the folder that has your Go file. In the Terminal, run the following command:
+1. In the Terminal, run the following command to change the directory location to your Go workspace and the folder that has your Go file: 
 
    ::: zone pivot="linux,macos"
    ```console
@@ -223,12 +225,12 @@ When the `go build` command completes, it generates an executable app that you c
 
 Here's what your project should look like now in the **Explorer** > **SRC** view:
 
-> SRC/
->  helloworld/
->	main
+> SRC/<br>
+>  helloworld/<br>
+>	main<br>
 >	main.go
 
-In the **Explorer** view, the name of the file without the extension is the executable file you can use to run your program. (On Windows, this file actually has the *.exe* extension.) When you're developing, you use the `go run` command. But when you're building the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
+In the **Explorer** view, the name of the file without the extension is the executable file you can use to run your program. (On Windows, this file actually has the *.exe* extension.) When you're developing, you use the `go run` command. To build the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
 
 
 ## What did you just write in Go?
@@ -246,7 +248,7 @@ The `package main` statement is how we tell Go that the app we're creating is an
 We'll look closer at these concepts in the next module. For now, we need to know that **every** executable program should be part of the `main` package.
 
 > [!div class="alert is-tip"]
-> **Challenge: Change the package name**
+> **Challenge: _Change the package name_**
 >
 > Can you confirm the importance of the `main` package?
 > 1. In your Go file, change the package name in the first line.
@@ -281,7 +283,7 @@ Did Visual Studio Code remove the import when you saved the file? Try editing th
 
 
 > [!div class="alert is-tip"]
-> **Challenge: Add another import**
+> **Challenge: _Add another import_**
 >
 > Can you verify what you learned about unused imports?
 > 1. Restore your Go file to the original code.
@@ -291,8 +293,7 @@ Did Visual Studio Code remove the import when you saved the file? Try editing th
 > &nbsp;
 > What happens? Does Visual Studio Code remove the unused import? If so, when is it removed?
 >
-> &nbsp;
-> 1. Try editing your Go file without using Visual Studio Code.
+> 1. Edit your Go file again, but don't use Visual Studio Code.
 > 1. Save the file, and run your program in a new prompt.
 >
 > &nbsp;
@@ -302,7 +303,7 @@ Did Visual Studio Code remove the import when you saved the file? Try editing th
 > <details>
 > <summary><b>Show answer</b></summary>
 > <br>
-> <i>While you're editing your Go file in the IDE, when you save your file, Visual Studio Code detects any unused packages and removes the corresponding `import` statements. If you edit your Go file outside of Visual Studio Code, the code fails. You should see an error, such as: `# command-line-arguments .\main.go:5:2: imported and not used: "math"`.</i>
+> <i>If you edit your Go file in the IDE, when you save your file, Visual Studio Code detects any unused packages and removes the corresponding `import` statements. When you edit your Go file outside of Visual Studio Code, the code fails. You should see an error, such as: `# command-line-arguments .\main.go:5:2: imported and not used: "math"`.</i>
 > 
 > </details>
 >

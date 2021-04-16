@@ -14,6 +14,26 @@ By using Visual Studio Code and the Go extension, you can:
 - Navigate the project code easily even if you have multiple files.
 - Enlist support for testing, such as generating test skeletons for functions.
 
+::: zone pivot="linux"
+
+## Install Visual Studio Code on Linux
+
+**Step 1: Download the Visual Studio Code installer**
+
+On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. You're prompted to save the file locally.
+
+**Step 2: Start the Visual Studio Code installer**
+
+Locate and open the file you downloaded. Follow the instructions to install the app on your workstation.
+
+- During the installation, if you're provided a choice to add the application to your $PATH system environment variable, select the option.
+
+**Step 3: Start Visual Studio Code**
+
+When the installation is complete, open Visual Studio Code to confirm that it's working.
+
+::: zone-end
+
 ::: zone pivot="macos"
 
 ## Install Visual Studio Code on macOS
@@ -40,26 +60,6 @@ From the *Applications* folder, double-click the Visual Studio Code icon to star
 You can install Visual Studio Code by using a package manager like [APT (Advanced Package Tool) or YUM (Yellowdog Updater, Modified)][APTYum].
 
 - During the installation, if you're provided a choice to add the application to your $PATH system environment variable, select the option.
-
-::: zone-end
-
-::: zone pivot="linux"
-
-## Install Visual Studio Code on Linux
-
-**Step 1: Download the Visual Studio Code installer**
-
-On the Visual Studio Code page, select the **Linux** box, and then select the **.deb** or **.rpm** option. Your choice depends on whether your Linux distribution uses Debian (DEB)-based or Red Hat Package Manager (RPM)-based package managers. You're prompted to save the file locally.
-
-**Step 2: Start the Visual Studio Code installer**
-
-Locate and open the file you downloaded. Follow the instructions to install the app on your workstation.
-
-- During the installation, if you're provided a choice to add the application to your $PATH system environment variable, select the option.
-
-**Step 3: Start Visual Studio Code**
-
-When the installation is complete, open Visual Studio Code to confirm that it's working.
 
 ::: zone-end
 

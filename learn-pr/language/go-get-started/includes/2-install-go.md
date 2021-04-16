@@ -2,59 +2,6 @@ Before you start creating applications with Go, you need to set up your developm
 
 If you prefer not to install Go locally, you can use the [Go Playground][GoPlay]. The playground is a web service that can run Go applications in a browser. This option is helpful when you want to run code examples quickly and easily. We recommend setting up your local environment when you build applications that require a more complex code organization.
 
-
-::: zone pivot="macos"
-## Install Go on macOS
-
-To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page][GoDownload]. Both approaches are available on the download page, but choose only one.
-
-### Install Go by using Homebrew
-
-The simplest way to install Go is by using [Homebrew][Homebrew].
-
-Open a Terminal prompt, and then run the following commands:
-
-```console
-brew update
-brew install go
-```
-
-Homebrew installs Go in the */usr/local/go* folder. The */usr/local/go/bin* path should now be part of the **$PATH** environment variable. You might need to reopen your Terminal prompt to confirm Go is installed correctly.
-
-To confirm Go is installed, run the following command:
-
-```console
-go version
-```
-
-### Install Go by using the Go installer
-
-You can also install the latest version of Go by using these steps:
-
-**Step 1: Download the Go installer**
-
-On the [Go downloads page][GoDownload], in the "Featured downloads" section, select the **Apple macOS** option.
-
-You might see a window that prompts you to allow downloading files from golang.org. If so, select **Allow**.
-
-**Step 2: Run the Go installer**
-
-After you download the Go installer locally, you can start with the installation. Double-click the .pkg file, and follow the instructions to install Go.
-
-By default, the .pkg file installs Go at */usr/local/go*, and the path */usr/local/go/bin* should now be part of the $PATH environment variable.
-
-**Step 3: Confirm Go is installed correctly**
-
-After the installation finishes, open a new Terminal prompt, and run the following command:
-
-```console
-go version
-```
-
-You should see the details of the Go version that's installed on your workstation.
-
-::: zone-end
-
 ::: zone pivot="linux"
 ## Install Go on Linux
 
@@ -100,6 +47,58 @@ source $HOME/.profile
 **Step 3: Confirm Go is installed correctly**
 
 After you configure the Go distribution, confirm Go works by running the following command:
+
+```console
+go version
+```
+
+You should see the details of the Go version that's installed on your workstation.
+
+::: zone-end
+
+::: zone pivot="macos"
+## Install Go on macOS
+
+To install Go on macOS, you can use Homebrew, or download the installer from the [Go downloads page][GoDownload]. Both approaches are available on the download page, but choose only one.
+
+### Install Go by using Homebrew
+
+The simplest way to install Go is by using [Homebrew][Homebrew].
+
+Open a Terminal prompt, and then run the following commands:
+
+```console
+brew update
+brew install go
+```
+
+Homebrew installs Go in the */usr/local/go* folder. The */usr/local/go/bin* path should now be part of the **$PATH** environment variable. You might need to reopen your Terminal prompt to confirm Go is installed correctly.
+
+To confirm Go is installed, run the following command:
+
+```console
+go version
+```
+
+### Install Go by using the Go installer
+
+You can also install the latest version of Go by using these steps:
+
+**Step 1: Download the Go installer**
+
+On the [Go downloads page][GoDownload], in the "Featured downloads" section, select the **Apple macOS** option.
+
+You might see a window that prompts you to allow downloading files from golang.org. If so, select **Allow**.
+
+**Step 2: Run the Go installer**
+
+After you download the Go installer locally, you can start with the installation. Double-click the .pkg file, and follow the instructions to install Go.
+
+By default, the .pkg file installs Go at */usr/local/go*, and the path */usr/local/go/bin* should now be part of the $PATH environment variable.
+
+**Step 3: Confirm Go is installed correctly**
+
+After the installation finishes, open a new Terminal prompt, and run the following command:
 
 ```console
 go version
@@ -191,11 +190,11 @@ To configure your workspace, specify the location of your Go project folder in a
    > [!Note]
    > If the $GOPATH variable doesn't show your top-level project folder, make sure you opened a new prompt window before you ran the command. After you change the value of an environment variable, you need to close and reopen the window, or open a new window, for the value change to take effect.
 
-You can shorten the command to see all the environment variables used by Go:
+   You can use a short version of the command to see all the environment variables used by Go:
 
-```console
-go env
-```
+   ```console
+   go env
+   ```
 
 ::: zone-end
 
@@ -210,19 +209,17 @@ Each Go workspace has three basic folders:
 
 For instance, your workstation folder structure tree might look this example:
 
-```console
-bin/
-    hello                          
-    coolapp                        
-pkg/
-    github.com/gorilla/
-        mux.a 
-src/
-    github.com/golang/example/
-        .git/                      
-	hello/
-	    hello.go    
-```
+> bin/
+>    hello 
+>    coolapp
+> pkg/
+>    github.com/gorilla/
+>        mux.a 
+> src/
+>    github.com/golang/example/
+>        .git/
+>	hello/
+>	    hello.go
 
 Run the following commands to create three subfolders for your workspace:
 
