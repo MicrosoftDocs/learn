@@ -4,7 +4,7 @@ Our goal was to help you evaluate whether Azure Cache for Redis would be a suita
 - Reliability
 - Scaling
 
-We applied these criteria to your fictional athletic shoe company that sells shoes on their website. Your analysis helped you determine that Azure Cache for Redis could help them improve web app performance to help increase sales, especially during busy periods.
+You applied these criteria to your fictional athletic shoe company that sells shoes on their website. Your analysis helped you determine that Azure Cache for Redis could help them improve web app performance to help increase sales, especially during busy periods.
 
 The criteria helped you determine that Azure Cache for Redis is a suitable solution for enterprise organizations that use databases, which are the cornerstone of many modern apps. Azure Cache for Redis can help improve the performance and scalability of such apps.
 
