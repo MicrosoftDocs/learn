@@ -10,9 +10,9 @@ The Go Playground has some limitations that can affect your learning journey:
 - Random numbers are deterministic.
 - Time is constant. You get the same value every time.
 
-:::image type="content" source="../media/go-playground.jpg" alt-text="Screenshot of the Go Playground.":::
-
 To begin using the Go Playground, select the **Run** button.
+
+:::image type="content" source="../media/go-playground.jpg" alt-text="Screenshot of the Go Playground.":::
 
 
 <!-- Links -->

@@ -93,7 +93,7 @@ The Go extension for Visual Studio Code helps you write apps more efficiently. I
 Open Visual Studio Code, and then open the **Extensions** view. There are two ways you can open the view:
 
 - Select **View**, and then select **Extensions**. 
-- On the toolbar pane at left, select the **Extensions** icon.
+- On the left toolbar, select the **Extensions** icon.
 
 **Step 2: Search for the Go extension**
 

@@ -35,7 +35,7 @@ Follow these steps to add the location of the Visual Studio Code CLI to your $Pa
  
 1. In the empty row, enter the location of the Visual Studio Code CLI executable. Replace `<user-name>` with your user name.
 
-   ```command
+   ```console
    C:\Users\<user-name>\AppData\Local\Programs\Microsoft VS Code\bin
    ```
 
@@ -77,14 +77,14 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
 1. Open your Go workspace directory by running the following command:
 
    ::: zone pivot="linux,macos"
-   ```command
+   ```console
    cd $GOPATH/src
    ```
 
    ::: zone-end
 
    ::: zone pivot="windows"
-   ```command
+   ```console
    cd %GOPATH%/src
    ```
 
@@ -92,7 +92,7 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
 
 1. Use the following command to open Visual Studio Code from your workspace:
 
-   ```command
+   ```console
    code .
    ```
 
@@ -101,41 +101,41 @@ After you confirm Visual Studio Code is ready to use from the CLI, you can open 
 
 ## Step 2: Create a new folder and a Go file for the project
 
-Let's add a folder and file to your Go project. The IDE offers several ways to create these items:
+Let's add a folder and file to your Go project. The IDE offers several ways to create new items:
 
-- Use the menu system at the top of the IDE:
+- Actions on the toolbar menu:
    - Select **File** > **Open folder**, and then create a **New folder**.
    - Select **File** > **New file**, and start a new file.
-- Use the quick links on the **Welcome** page, which are similar to the menu system.
-- Use the icons to the right of **SRC** in the **Explorer** view:
-   - Select the **New folder** icon to create a new folder. In the text box that opens, type the folder name, and then press Enter.
-   - Select the **New file** icon to start a new file. In the text box that opens, type the file name, and then press Enter.
+- Links on the **Welcome** page, which are similar to the toolbar menu options.
+- Icons in the **Explorer** view, to the right of **SRC** section:
+   - Select the **New folder** icon. In the text box, type the folder name, and press Enter.
+   - Select the **New file** icon. In the text box, type the file name, and press Enter.
 
-Complete the following steps in Visual Studio Code. In the IDE, use the create file and folder process that works best for you.
+Complete the following steps in Visual Studio Code. 
+To create the new file and folder, use the process in the IDE that works best for you.
 
 1. Create a new folder named *helloworld*. 
 1. Create a new file named *main.go* for your app code.
 1. Expand the **Explorer** > **SRC** view to show your folder structure tree. It should look like this example:
 
-   ```output
-   SRC/
-     helloworld/                     
-	   main.go
-   ```
+   > SRC/
+   >  helloworld/                     
+	>   main.go
 
-> [!Important]
-> If *main.go* is the first Go file you opened in Visual Studio Code, you might be prompted to install additional support for the Go extension. If you're prompted, select **Install**. A Terminal opens at the bottom of the IDE to show the output of the process. You should see output like this example:<br/>
->
-> `Tools environment: GOPATH=C:\Projects\Go`
-> `Installing 5 tools at C:\Projects\Go\bin in module mode.`
-> `Installing github.com/uudashr/gopkgs/v2/cmd/gopkgs (C:\Projects\Go\bin\gopkgs.exe) SUCCEEDED`
->
-> During the install, check the status bar in Visual Studio Code. If you see a message at the bottom right, such as "All tools not installed," select the message. In the popup, select **Install**.<br/>
->
-> When the install process succeeds, the Terminal output displays a summary:<br/>
->
-> `All tools successfully installed. You are ready to Go :).` 
-> 
+
+### Install Go extension tools
+
+If *main.go* is the first Go file you open in Visual Studio Code, you might be prompted to install other tools for the Go extension. When you're prompted, select **Install**. A Terminal opens at the bottom of the IDE to show the output of the process. You should see output like this example:
+
+> Tools environment: GOPATH=C:\Projects\Go
+> Installing 5 tools at C:\Projects\Go\bin in module mode.
+> Installing github.com/uudashr/gopkgs/v2/cmd/gopkgs (C:\Projects\Go\bin\gopkgs.exe) SUCCEEDED
+
+During the install process, check the status bar in Visual Studio Code. If you see a message at the bottom right, such as "All tools not installed," select the message. In the popup, select **Install**.
+
+When the install process succeeds, the Terminal output displays a summary:
+
+> All tools successfully installed. You are ready to Go :).
 
 
 ## Step 3: Add code to your Go file
@@ -159,37 +159,43 @@ Now let's add code to your Go file.
 Don't worry about code formatting like tabs or spaces. Visual Studio Code formats the code automatically every time you save the file. 
 
 
-## Step 4: Run your program 
+## Step 4: Execute your Go program 
 
-The Go program can be executed in a Command or Terminal prompt, or in a built-in Terminal in Visual Studio Code.
+The Go program can be executed in a Command or Terminal prompt, or in a Terminal that runs inside Visual Studio Code.
 
 You can use an existing prompt, or open a new one. If you open a new prompt, remember to change the directory location to your Go workspace. Also be sure to run the program from the folder that has your Go file: *$GOPATH/src/helloworld*. 
 
-If you want to run the program from within Visual Studio Code, follow these steps to open a Terminal:
+
+### Run a Terminal inside Visual Studio Code
+
+If you want to run the program from within Visual Studio Code, rather than a standalone Command or Terminal prompt, follow these steps:
 
 1. In Visual Studio Code, select **Terminal**, and then select **New Terminal**.
 
-1. In the Terminal, in the drop-down box at the top-right, select **New Command Prompt**.
+1. In the drop-down box at the top-right of the Terminal, select **New Command Prompt**.
 
-1. In the Terminal, change the directory location to your Go workspace and the folder that has your Go file:
+1. Change the directory location to your Go workspace and the folder that has your Go file. In the Terminal, run the following command:
 
    ::: zone pivot="linux,macos"
-   ```command
+   ```console
    cd $GOPATH/src/helloworld
    ```
 
    ::: zone-end
 
    ::: zone pivot="windows"
-   ```command
+   ```console
    cd %GOPATH%/src/helloworld
    ```
 
    ::: zone-end
 
-To run your program, use the following command:
 
-```command
+### Run your Go app
+
+To run your Go app, use the following command in your Terminal or prompt:
+
+```console
 go run main.go
 ```
 
@@ -201,24 +207,28 @@ Hello World!
 
 The `go run` command does two things. It compiles the app, and after compile succeeds, it executes the app.
 
-If you want to only generate an executable and not run the program, use this command:
 
-```command
+### Build an executable
+
+To generate an executable for your program, use this command:
+
+```console
 go build main.go
 ```
 
-When the `go build` command completes, it generates an executable app that you can run anytime without further processing.
+When the `go build` command completes, it generates an executable app that you can run anytime without further processing. The command only produces an executable. It doesn't run the program like the `go run` command.
+
+
+### Review the /src contents
 
 Here's what your project should look like now in the **Explorer** > **SRC** view:
 
-```output
-SRC/
-  helloworld/                     
-	main
-	main.go
-```
+> SRC/
+>  helloworld/
+>	main
+>	main.go
 
-The name of the file without the file name extension (or, the file with the `.exe` extension if you're on Windows) is the executable file you can use to run your program. When you're developing, you use the `go run` command. But when you're building the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
+In the **Explorer** view, the name of the file without the extension is the executable file you can use to run your program. (On Windows, this file actually has the *.exe* extension.) When you're developing, you use the `go run` command. But when you're building the binaries for your application, you use the `go build` command and deploy the binary executable to a proper environment.
 
 
 ## What did you just write in Go?
@@ -236,21 +246,20 @@ The `package main` statement is how we tell Go that the app we're creating is an
 We'll look closer at these concepts in the next module. For now, we need to know that **every** executable program should be part of the `main` package.
 
 > [!div class="alert is-tip"]
-> **Challenge**: _Change the package name_
+> **Challenge: Change the package name**
 >
 > Can you confirm the importance of the `main` package?
+> 1. In your Go file, change the package name in the first line.
+> 1. Save the file, and run your program again in the Terminal.
 >
-> <br>
-> In your Go file, change the package name in the first line. Save the file, and run your program again in the Terminal.
+> &nbsp;
+> What happens? Do you see "Hello World!"? Is a binary executable produced?
 >
-> <br>
-> What happens? Do you see the "Hello World!" output? Is a binary executable produced?
-> 
-> <br>
+> &nbsp;
 > <details>
 > <summary><b>Show answer</b></summary>
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;<i>"Hello World!" isn't displayed. A binary executable isn't produced. You should see an error: `go run: cannot run non-main package`. Why? Every executable program should be part of the `main` package.</i>
+> <i>"Hello World!" isn't displayed. A binary executable isn't produced. You should see an error: `go run: cannot run non-main package`. Why? Every executable program should be part of the `main` package.</i>
 > 
 > </details>
 >
@@ -272,31 +281,34 @@ Did Visual Studio Code remove the import when you saved the file? Try editing th
 
 
 > [!div class="alert is-tip"]
-> **Challenge**: _Add another import_
+> **Challenge: Add another import**
 >
 > Can you verify what you learned about unused imports?
+> 1. Restore your Go file to the original code.
+> 1. Add another import statement like `math` or `io`.
+> 1. Save the file, and run your program again in the Terminal.
 >
-> <br>
-> Restore your Go file to it's original working form.
-> Add another import statement, such as `math` or `io`. Save the file, and run your program again in the Terminal.
+> &nbsp;
+> What happens? Does Visual Studio Code remove the unused import? If so, when is it removed?
 >
-> <br>
-> What happens? Does Visual Studio Code remove the unused import? If so, when is the statement removed?
+> &nbsp;
+> 1. Try editing your Go file without using Visual Studio Code.
+> 1. Save the file, and run your program in a new prompt.
 >
-> <br>
-> Try editing your Go file without using Visual Studio Code. Save the file, and run your program in a new prompt. (Remember to change the directory location to your Go workspace, and run the program from the folder that has your Go file.) What output do you see now?
+> &nbsp;
+> What happens? What output do you see now?
 >
-> <br>
+> &nbsp;
 > <details>
 > <summary><b>Show answer</b></summary>
 > <br>
-> &nbsp;&nbsp;&nbsp;&nbsp;<i>While you're editing your Go file in the IDE, when you save your file, Visual Studio Code detects any unused packages and removes the corresponding `import` statements. If you edit your Go file outside of Visual Studio Code, the code fails. You should see an error, such as: `# command-line-arguments .\main.go:5:2: imported and not used: "math"`.</i>
+> <i>While you're editing your Go file in the IDE, when you save your file, Visual Studio Code detects any unused packages and removes the corresponding `import` statements. If you edit your Go file outside of Visual Studio Code, the code fails. You should see an error, such as: `# command-line-arguments .\main.go:5:2: imported and not used: "math"`.</i>
 > 
 > </details>
 >
 ***
 
-Let's talk about the block of code in your Go file:
+Let's look at the block of code in your Go file:
 
 ```go
 func main() {
