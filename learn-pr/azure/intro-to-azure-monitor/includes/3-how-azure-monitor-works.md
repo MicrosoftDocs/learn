@@ -17,7 +17,12 @@
         * Logic Apps Designer"
 -->
 TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
+
+You can monitor and start investigations in Azure Monitor directly in the Azure Portal or access Azure Monitor capabilities in the Monitoring section of your Azure resource blade.
+
+You can enable Azure Monitor for your resources at-scale programmatically with Azure CLI, ARM templates and Powershell. You can ingest and export data via APIs and you can use Azure Event Hubs to stream data out in near real time.
+
+You'll learn how Azure Monitor can:
 * TODO
 * TODO
 * TODO
