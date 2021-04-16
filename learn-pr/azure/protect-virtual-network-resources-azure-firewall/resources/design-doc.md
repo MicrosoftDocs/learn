@@ -79,10 +79,22 @@ Identify the subtasks of *module title*
 
 1. **Plan Azure Firewall deployment**
 
-   Planning considerations
+   - Planning considerations - reference content covered in this module that applies to next exercise: [Introduction to Azure Firewall](https://docs.microsoft.com/learn/modules/introduction-azure-firewall/3-how-azure-firewall-works)
+   - Rule types (overview)
+   - Deployment options (overview)
+   - Overview of general steps to deploy Azure Firewall and context with WVD. See below.
 
-   - Overview of general steps to deploy Azure Firewall
+    The following is from the intro module, should talk about deployment for WVD and how it's related to these steps:
+   Use the following general steps to set up an instance of Azure Firewall:
 
+    - Create a hub virtual network that includes a subnet for the firewall deployment. (WVD will be hub Vnet)
+    - Create the spoke virtual networks and their subnets and servers. (Don't need this for WVD)
+    - Peer the hub and spoke networks. (Don't need this step for WVD)
+    - Deploy the firewall to the hub's subnet.
+    - For outbound traffic, create a default route that sends traffic from all subnets to the firewall's private IP address. 
+    - Configure the firewall with rules to filter inbound and outbound traffic.
+
+    Also: "For production deployments, a hub and spoke model is recommended, where the firewall is in its own VNet. The workload servers are in peered VNets in the same region with one or more subnets." See [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal).
 
 1. **Exercise - Deploy Azure Firewall**
 
@@ -98,7 +110,7 @@ Identify the subtasks of *module title*
     Allow outbound network access from the host pool to Windows Virtual Desktop:
 
     - Overview of steps to route traffic
-    - Rules and configurations needed host outbound for WVD
+    - Specific rules and configurations needed host outbound for WVD
     - Diagram to show the pieces??
 
    Allow outbound network access from the host pool to the Internet:
@@ -142,6 +154,7 @@ Identify the subtasks of *module title*
 
 Related modules:
 
+- [Introduction to Azure Firewall](https://docs.microsoft.com/learn/modules/introduction-azure-firewall/3-how-azure-firewall-works)
 - https://docs.microsoft.com/learn/modules/hub-and-spoke-network-architecture/
 - https://docs.microsoft.com/learn/modules/intro-to-azure-networking/
 - https://docs.microsoft.com/learn/modules/network-fundamentals-2/4-firewalls-network-security
