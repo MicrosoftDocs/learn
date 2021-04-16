@@ -6,7 +6,7 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise.
 
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from GitHub.
+1. In Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from GitHub.
 
     ```azurecli
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
@@ -18,14 +18,14 @@ When we receive a positive tweet, we want to save it to a backend database. In t
     bash setup-sql-database.sh
     ```
 
-1. Wait for the script to complete. When it finishes, the Cloud Shell displays values for the following properties.
+1. Wait for the script to complete. When it finishes, Cloud Shell displays values for the following properties.
 
      - **SQL Server instance name**
      - **SQL Server username**
      - **SQL Server password**
      - **SQL Server database name**
 
-    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal.
+    Save the values that appear in Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal.
 
 ## Create a **Condition** control action
 
