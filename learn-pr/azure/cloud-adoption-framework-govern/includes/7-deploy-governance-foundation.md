@@ -8,9 +8,9 @@ At the end of this unit, you will understand the why and how behind configuratio
 
 Resource organization depends on what is important to your organization. Before defining a management group or subscription design, it's important to understand the priority of the following competing priorities:
 
-- **Cost transparency:** All cloud adoption should be aligned to departments, business units, projects, or other cost allocation mechanisms for chargeback and showback accounting requirements.
-- **Compliance and security:** All cloud adoption should map to specific compliance requirements that map cloud adoption to specific risk, security, and compliance organization structures.
-- **Democratization (delegated responsibility):** All cloud adoption should map to teams, product groups, or projects, which allows for easier segmentation of responsibility by teams.
+- **Cost transparency**: All cloud adoption should be aligned to departments, business units, projects, or other cost allocation mechanisms for chargeback and showback accounting requirements.
+- **Compliance and security**: All cloud adoption should map to specific compliance requirements that map cloud adoption to specific risk, security, and compliance organization structures.
+- **Democratization (delegated responsibility)**: All cloud adoption should map to teams, product groups, or projects, which allows for easier segmentation of responsibility by teams.
 
 Understanding these strategic priorities will help identify the best starting point for your management and subscription design.
 
@@ -38,9 +38,9 @@ To accommodate long-term governance needs, design a high-level hierarchy but imp
 
 The following components are high-level design in Figure 2:
 
-- **Management group hierarchy:** Business unit, geography, environment
-- **Subscription:** Per application category, pre-production, development environments, and production
-- **Resource groups:** Per application
+- **Management group hierarchy**: Business unit, geography, environment
+- **Subscription**: Per application category, pre-production, development environments, and production
+- **Resource groups:**: Per application
 
 ## Exercise: Configure your first management group hierarchy
 

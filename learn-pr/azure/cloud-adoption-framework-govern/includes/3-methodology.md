@@ -4,10 +4,10 @@ Implementing proper cloud governance requires proper business policy, protective
 
 This unit explains the four-step process in the Cloud Adoption Framework to build a mature cloud governance solution.
 
-- **Methodology:** Understand the underlying methodology.
-- **Governance benchmark:** Assess your current and future state needs.
-- **Governance foundation:** Establish your governance foundation with a set of governance tools.
-- **Mature governance disciplines:** Iteratively add governance controls to address risks.
+- **Methodology**: Understand the underlying methodology.
+- **Governance benchmark**: Assess your current and future state needs.
+- **Governance foundation**: Establish your governance foundation with a set of governance tools.
+- **Mature governance disciplines**: Iteratively add governance controls to address risks.
 
 The steps will get you started with the Govern methodology in the cloud. They will also set you on a path to mature each governance discipline as your cloud adoption plan progresses.
 
@@ -23,9 +23,9 @@ The Govern methodology provides a structured approach to building the governance
 
 Governance is a big, intimidating topic. Establish proper scope by mitigating tangible risks through corporate policy. Corporate policies drive cloud governance. Proper corporate policy requires three components:
 
-- **Business Risk:** Identify and understand tangible corporate risks and the organization's tolerance for risk.
-- **Policy and compliance:** Convert risks into clear policy statements that support compliance requirements without defining specific technical dependencies.
-- **Process:** Establish processes to monitor violations and ensure adherence to policy statements.
+- **Business Risk**: Identify and understand tangible corporate risks and the organization's tolerance for risk.
+- **Policy and compliance**: Convert risks into clear policy statements that support compliance requirements without defining specific technical dependencies.
+- **Process**: Establish processes to monitor violations and ensure adherence to policy statements.
 
 A focus on these steps will help develop clear and actionable corporate policies. The next unit will go deeper into how to develop a proper corporate policy.
 
@@ -33,11 +33,11 @@ A focus on these steps will help develop clear and actionable corporate policies
 
 These disciplines support the corporate policies through a mixture of tools and human processes. Each discipline protects the company from defined and specific potential pitfalls:
 
-- **Cost Management:** Optimize costs across a broad portfolio of workloads through the application of budgets, reports, and automated enforcement.
-- **Security Baseline:** Apply well-defined security requirements to all supported environments and underlying workloads.
-- **Resource Consistency:** Manage resource configuration at scale to ensure that all deployed assets are discoverable, recoverable, and onboarded into operation management processes.
-- **Identity Baseline:** Ensure proper authentication and access by applying roles and assignments to each environment.
-- **Deployment Acceleration:** Standardize and centralize deployment templates to ensure consistency across all environments and workloads.
+- **Cost Management**: Optimize costs across a broad portfolio of workloads through the application of budgets, reports, and automated enforcement.
+- **Security Baseline**: Apply well-defined security requirements to all supported environments and underlying workloads.
+- **Resource Consistency**: Manage resource configuration at scale to ensure that all deployed assets are discoverable, recoverable, and onboarded into operation management processes.
+- **Identity Baseline**: Ensure proper authentication and access by applying roles and assignments to each environment.
+- **Deployment Acceleration**: Standardize and centralize deployment templates to ensure consistency across all environments and workloads.
 
 Each of these disciplines will accelerate the application of corporate policies and ensure consistent governance. Later in this module, we'll investigate actionable implementation of each discipline.
 

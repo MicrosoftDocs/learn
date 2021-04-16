@@ -34,7 +34,7 @@ This discipline would help Tailwind Traders to address the following risk from t
 
 - Overspending in the cloud
 
-A future unit in this module will demonstrate how Tailwind Traders can add cost controls to their governance foundation.
+A future unit in this module will demonstrate how Tailwind Traders can add cost controls to its governance foundation.
 
 ## Security Baseline discipline
 
