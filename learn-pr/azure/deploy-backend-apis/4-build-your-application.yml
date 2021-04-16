@@ -12,3 +12,34 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-build-your-application.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "How is the latest bus data acquired?"
+      choices:
+      - content: "Azure SQL Database pulls the latest bus data using a stored procedure"
+        isCorrect: false
+        explanation: "Bus data is added to Azure SQL Database using a stored procedure, but that's not how the data is fetched."
+      - content: "An Azure Logic App pulls the latest bus data using a trigger"
+        isCorrect: false
+        explanation: "Azure Logic Apps is called after bus data is received and only for buses activating a geofence."
+      - content: "Azure Functions pulls the latest bus data using an HTTP request"
+        isCorrect: true
+        explanation: "That's correct!"
+      - content: "All of the above."
+        isCorrect: false
+        explanation: "Not all of the above items are true and/or relevant to this question."
+    - content: "How does Azure SQL Database play in to this scenario?"
+      choices:
+      - content: "Azure SQL Database is used for JSON and geospatial processing which makes storing data and identifying activating buses a simple task"
+        isCorrect: true
+        explanation: "This is true. For example, the stored procedure uses `STContains` to easily identify which buses are in a geofence. "
+      - content: "Azure SQL Database is used to execute Azure Functions"
+        isCorrect: false
+        explanation: "This is not true, review the scenario again."
+      - content: "Azure SQL Database is only used for storing data, because it does not support JSON data"
+        isCorrect: false
+        explanation: "This is false, Azure SQL Database supports JSON data."
+      - content: "Azure SQL Database is only used for storing data, because it does not support geospatial data"
+        isCorrect: false
+        explanation: "This is false, Azure SQL Database supports geospatial data."
