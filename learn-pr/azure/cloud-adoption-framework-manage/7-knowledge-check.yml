@@ -20,7 +20,7 @@ quiz:
       explanation: Criticality, impact, and commitment are the three keywords to align with the business.
     - content: Criticality, responsibility, and response
       isCorrect: false
-      explanation: The three keywords in a management baseline don't not include responsibility or response.
+      explanation: The three keywords in a management baseline don't include responsibility or response.
     - content: Criticality, impact, and owners
       isCorrect: false
       explanation: The three keywords in a management baseline don't include owners.

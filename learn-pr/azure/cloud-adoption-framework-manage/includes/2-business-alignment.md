@@ -37,7 +37,7 @@ Business commitments are about finding the balance between the level of operatio
 
 ### Management baseline
 
-The first business commitment comes in the form of a promise to deliver a set level of servies for operations management. Those services are called a *management baseline*. Based on the services included in the baseline, central IT can easily calculate a minimum service-level agreement (SLA) that will apply to everything deployed to a controlled cloud platform.
+The first business commitment comes in the form of a promise to deliver a set level of services for operations management. Those services are called a *management baseline*. Based on the services included in the baseline, central IT can easily calculate a minimum service-level agreement (SLA) that will apply to everything deployed to a controlled cloud platform.
 
 ### Management of higher-impact areas
 

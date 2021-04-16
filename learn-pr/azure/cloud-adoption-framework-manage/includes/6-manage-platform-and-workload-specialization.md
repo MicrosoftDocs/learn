@@ -14,7 +14,7 @@ Platform and workload specialization consists of disciplined execution of the fo
 
 - **Improve system design:** Technical debt and architectural flaws are the root cause of most business workload outages. By reviewing the platform or workload design, you can improve stability. The Azure Well-Architected Framework includes recommendations for improving the quality of the platform or a specific workload.
 - **Automate remediation:** Some design improvements aren't cost-effective, because the technical debt can be too costly or complex to improve. In such cases, it might make more sense to automate remediation and reduce the effect of interruptions.
-- **Scale the solution:** As system design and automated remediation are improved, those changes can be scaled across the environment through the service catalog. Publish optimized platforms and solutions in your Azure managed application center to easily reuse them for other workloads or external customers.
+- **Scale the solution:** As system design and automated remediation are improved, those changes can be scaled across the environment through the service catalog. Publish optimized platforms and solutions in Azure Managed Applications Center to easily reuse them for other workloads or external customers.
 - **Continuously improve:** Collecting feedback from users, administrators, and customers will give you valuable information for the next system review. Collecting and visualizing critical system logs and performance data are also important. Both the feedback and the data collected will be used as a foundation for making new decisions about future system improvements.
 
 The following table shows tools used for workload-specific management:
