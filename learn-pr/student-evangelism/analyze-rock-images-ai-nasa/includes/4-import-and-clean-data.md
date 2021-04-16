@@ -1,10 +1,5 @@
 Now that we know about cleaning and separating the data, we can apply these principles to our rock classification project.
 
-> [!Note]
-> **Sara ToDo**
-> - I added the following H2 and H3 sections to describe the code actions.
-> - Please review and modify as needed.
-
 
 ## Prepare the data
 

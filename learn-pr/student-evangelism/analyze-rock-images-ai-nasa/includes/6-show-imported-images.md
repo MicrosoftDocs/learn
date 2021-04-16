@@ -1,10 +1,5 @@
 Now we'll look at some of the images that we loaded into the computer. We'll give them labels to indicate what type of rock is in each photo.
 
-> [!Note]
-> **Sara ToDo**
-> - I added an H2 section to describe the code actions.
-> - Please review and modify as needed.
-
 
 ## Transform and display the images
 
@@ -15,7 +10,7 @@ We select a set of images by random in a manner similar to how we used the `load
 The last section of code displays the images that are loaded into the program. We use functions from the PIL library to manipulate the images, and the `plt.show` command to print them.
 
 
-## Add code to transform images
+## Add code to transform and select random images
 
 We're ready to add the code to transform the images. 
 
@@ -50,7 +45,7 @@ We're ready to add the code to transform the images.
    ```
 
 
-## Add code to show images
+## Add code to show randomly selected images
 
 Follow these steps to add the code to display the images. 
 
