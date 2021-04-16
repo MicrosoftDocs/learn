@@ -10,25 +10,27 @@ metadata:
   ms.topic: interactive-tutorial
 title: monitor-java-azure
 summary: Monitoring Java
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
-  By the end of this module, you will be able to:
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+abstract: |
+  By the end of this module, you can:
+  - Get an understanding about monitoring Java Applications on Azure.
+  - Build and deploy a Sample Microservices Application and configure it for Azure Application Performance Monitoring.
+  - Monitor the application with Azure Application Insights.
+prerequisites: |
+  - Azure subscription
+  - Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+  - [Git CLI](https://git-scm.com/downloads)
+  - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - beginner
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+levels: 
+  - intermediate
+roles:
   - developer
   - devops-engineer
+  - administrator
 products:
 - azure
-- azure-app-service
-- azure-app-service-web
+- azure-database-mysql
+- azure-spring-cloud
 units:
 - learn.monitor-java-azure.introduction
 - learn.monitor-java-azure.learning-content

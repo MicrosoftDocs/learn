@@ -1,21 +1,18 @@
-Imagine that you're an infrastructure manager who's been asked to provision your Azure resources by using Terraform. After you've created your project, you plan to build and deploy your application by using an automation workflow.
-
-## Provision, build, and deploy tracks
+Imagine that you're an infrastructure manager who's been asked to monitor your Azure Java application and its dependencies.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
 
-- Create a Terraform configuration for your Azure resources.
-- Provision your infrastructure and deploy it to Azure.
-- Set up your project for continuous integration and continuous delivery (CI/CD) by using with an automation workflow - either GitHub Actions or Azure Pipelines.
+In this module, you'll:
+
+- Understand monitoring Java Applications on Azure.
+- Build and deploy a Sample Microservices Application and configure it for Azure Application Performance Monitoring.
+- Monitor the application with Azure Application Insights.
 
 ## Prerequisites
 
-- An Azure subscription
-- A GitHub account
-- (Optionally if you choose to use Azure Pipelines)
-  - An Azure DevOps organization
-  - [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
-- Basic knowledge of software development
-- Basic knowledge of managing and provisioning Azure resources
+- Azure subscription
+- Local installations of Java JDK (1.8 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+- [Git CLI](https://git-scm.com/downloads)
+- [MySQL CLI](https://dev.mysql.com/downloads/shell/)
