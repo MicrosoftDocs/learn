@@ -1,6 +1,6 @@
 ## Workload specialization
 
-Workload-specific management usually requires in-depth knowledge about the specific workload. That's why it's often done by the workload team or development team. A workload-specific solution does not scale quickly to other workloads. Centralized IT can still guide and share knowledge to the workload-specialized team on operations.
+Workload-specific management usually requires in-depth knowledge about the specific workload. That's why it's often done by the workload team or development team. A workload-specific solution does not scale quickly to other workloads. Centralized IT can still guide and share knowledge with the workload-specialized team on operations.
 
 ## Platform specialization
 

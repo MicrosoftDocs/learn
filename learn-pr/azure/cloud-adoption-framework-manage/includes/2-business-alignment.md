@@ -2,7 +2,7 @@ The first step in creating business alignment is ensuring that everyone uses the
 
 Developing a cloud strategy is a perfect opportunity to align these terms and look into commitments between IT and the business. The following three words will help improve the conversation with business stakeholders: *criticality*, *impact*, and *commitment*.
 
-After all teams are aligned on terms, you should document and store the information. The documentation needs to be easy to access.
+After all teams are aligned on terms, you should document and store that information for easy access.
 
 ## Criticality
 
@@ -19,7 +19,7 @@ A company-wide scale for criticality makes sure everyone involved in the convers
 
 Some workloads might not be classified as critical but can be vital indirectly. For example, if a non-critical compliance management tool goes offline, maintaining business-critical compliance requirements is challenging. It can affect the company's mission in the long run.
 
-A workload can also be critical because top customers, who bring the most income, use it. Another soft-cost factor can be that the board or CEO is using the workload daily.
+A workload can also be critical because customers who bring the most income use it. Another soft-cost factor can be that the board or CEO is using the workload daily.
 
 Instead of walking through every workload, you can decide one default criticality (for example, medium) for all workloads. A default criticality makes it easier to identify workloads that need higher or lower criticality classification.
 

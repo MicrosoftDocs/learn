@@ -6,7 +6,7 @@ A management baseline is the minimum set of tools applied to all resources in th
 - **Operational compliance:** Management of configuration, sizing, cost, and performance of assets.
 - **Protection and recovery:** Data protection and quick recovery to minimize operational interruptions.
 
-The start of the module looks into business alignment to make sure everyone uses the same terms. The module then covers how to enhance the management baseline. The end of the module reviews the specialization principles and platform specialization. Both workload specialization and platform specialization can support the most critical workloads and platforms. 
+The start of the module looks into business alignment to make sure everyone uses the same terms. The module then covers how to enhance the management baseline. The end of the module reviews the specialization principles. Workload specialization and platform specialization can support the most critical workloads and platforms. 
 
 The following image shows the components of a management baseline that this module covers.
 
@@ -14,19 +14,19 @@ The following image shows the components of a management baseline that this modu
 
 ### Module scenario
 
-Suppose you work as an IT operations architect at Tailwind Traders. The company has been migrating two datacenters to Azure. In this process, the company wants to modernize IT operations and its IT management solution. You use the guidance in this Learn module to evaluate how a cloud-native solution will support the company's cloud journey. 
+Suppose you work as an IT operations architect at a company that has been migrating two datacenters to Azure. In this process, the company wants to modernize IT operations and its IT management solution. You use the guidance in this Learn module to evaluate how a cloud-native solution will support the company's cloud journey. 
 
 The new cloud-native solution will include a management baseline for the cloud environment. The fundamental management baseline will be for all workloads and will have extra features for specific platforms and workloads. The solution should also enable reporting on management costs for the business stakeholders.
 
 ## Learning objectives
 
-In this module, you'll learn to:
+In this module, you will:
 
 - Set a baseline for criticality, impact, and commitment for your business
 - Understand which Azure management tools to include in a management baseline
-- How to partner with workload and platform teams for more prosperous decentralized operations
+- Learn how to partner with workload and platform teams for more prosperous decentralized operations
 
 ## Prerequisites
 
-- A foundational understanding of cloud adoption
+- Foundational understanding of cloud adoption
 - Understanding of your organization's requirements for operations management
