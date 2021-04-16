@@ -9,7 +9,7 @@ Azure Cache for Redis provides a number of features that help improve the perfor
 
 ## Distributed cache
 
-The distributed cache feature in Azure Cache for Redis helps improve your apps' response times by frequently copying accessed data to a cache. This cache has lower latency and provides for higher throughput than the primary datastore. The distributed cache feature:
+The distributed cache feature in Azure Cache for Redis helps improve your apps' response times by copying frequently-accessed data to a cache. This cache has lower latency and provides for higher throughput than the primary datastore. The distributed cache feature:
 
 - Accelerates application responsiveness.
 - Helps reduce load on primary datastores and compute resources.
