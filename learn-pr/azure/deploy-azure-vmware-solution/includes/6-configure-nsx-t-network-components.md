@@ -5,7 +5,7 @@ Azure VMware Solution (AVS) deploys with NSX-T Manager as the software-defined n
 
 Both gateways allow connections between logical switch segments. These gateways also provide East-West and North-South connectivity.
 
-## Configure NSX-T Manager components
+## Set up NSX-T Manager components
 
 After AVS is deployed, the NSX-T components are configured under **Workload Networking** in the Azure portal. The portal provides a simplified view of the management pane for NSX-T operations. If you're unfamiliar with NSX-T Manager, use the portal to configure AVS networking. If you're familiar with NSX-T Manager, you can use the console view within vSphere to configure the advanced network settings and features.
 
