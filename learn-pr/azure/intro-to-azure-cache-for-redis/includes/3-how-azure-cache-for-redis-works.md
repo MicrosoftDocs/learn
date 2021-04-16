@@ -25,7 +25,7 @@ You can use the distributed cache feature to:
 
 As indicated in the following graphic, Azure Cache for Redis can help improve performance in apps that interface with many database solutions, including Azure SQL Database, Azure Cosmos DB, and Azure Database for MySQL.
 
-:::image type="content" source="../media/distributed-cache.png" alt-text="A graphic depicting client apps connecting to database-hosted apps. Azure Cache for Redis sits between the app interfaces and the backend database and storage systems.":::<!--Andy, this is the same image as in unit 1.-->
+:::image type="content" source="../media/distributed-cache.png" alt-text="A graphic depicting client apps connecting to database-hosted apps. Azure Cache for Redis sits between the app interfaces and the backend database and storage systems.":::
 
 ## Session store
 
