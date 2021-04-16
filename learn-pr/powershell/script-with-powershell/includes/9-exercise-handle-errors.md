@@ -1,10 +1,13 @@
-In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your PC or laptop to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-The idea with this exercise is to add `Try/Catch` and ensure the script crashes early if a certain condition is not met. You will again work with your backup script. You've noticed that you sometimes specify an erroneous path, by mistake, resulting files being backed up that shouldn't have been. Therefore you decide to add some error management.
+In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
+
+Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
 > [!NOTE]
-> Only carry out the below steps if you haven't run any of the previous exercises. This exercise assumes you've completed the previous ones in this module. If you haven't done so, you need a few files.
-1. Run the following commands:
+> Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
+
+1. If you haven't completed the previous exercises in this module, run the following commands:
 
     ```bash
     mkdir webapp
@@ -13,16 +16,16 @@ The idea with this exercise is to add `Try/Catch` and ensure the script crashes 
     cd ..
     ```
 
-   These commands will create a directory with files typically associated with web development.
+   These commands will create a directory that contains files typically associated with web development.
 
-1. Lastly you need a file _Backup.ps1_, run the following commands:
+1. You also need a file named _Backup.ps1_. Run these commands:
 
     ```bash
     touch Backup.ps1
     code Backup.ps1
     ```
 
-    Now you've got an editor up and running, lets add the needed code. In the editor, paste the following code:
+    Now that you have an editor running, add the required code. Paste this code into the editor:
 
     ```powershell
     Param(
@@ -43,29 +46,29 @@ The idea with this exercise is to add `Try/Catch` and ensure the script crashes 
        Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
        Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
     } Else {
-       Write-Error "Today's backup already exist"
+       Write-Error "Today's backup already exists"
     }
     ```
 
-## Implement a business requirement using `Try/Catch`
+## Implement a business requirement by using `Try/Catch`
 
-Your company mostly build web apps, apps consisting of html, css, and JavaScript files. You therefore decide to _optimize_ the script to recognize web apps.
+Assume your company mostly builds web apps. These apps consist of HTML, CSS, and JavaScript files. You decide to optimize the script to recognize web apps.
 
-1. Use an existing PowerShell shell, if you have, otherwise, start one by typing `pwsh` in a terminal:
+1. Use an existing PowerShell shell, if you have one running. Otherwise, start one by typing `pwsh` in a terminal:
 
    ```bash
    pwsh
    ```
 
-1. Open _Backup.ps1_, in the params section, add the following parameter:
+1. Open _Backup.ps1_. In the `Param` section, add the following parameter:
 
    ```powershell
    [switch]$PathIsWebApp
    ```
 
-   You've added a so called _switch parameter_. The idea is that if this parameter is present, when the script is invoked, you then perform the check on the content. Thereafter you can determine if a backup file should be produced.
+   You've added a _switch parameter_. If this parameter is present when the script is invoked, you perform the check on the content. After that, you can determine if a backup file should be created.
 
-1. Under the `Param` section, add the following code:
+1. Under the `Param` section, add this code:
 
    ```powershell
     If ($PathIsWebApp -eq $True) {
@@ -74,9 +77,9 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
         $ContainsApplicationFiles = "$((Get-ChildItem $Path).Extension | Sort-Object -Unique)" -match  '\.js|\.html|\.css'
         
         If ( -Not $ContainsApplicationFiles) {
-          Throw "Not a webapp"
+          Throw "Not a web app"
         } Else {
-          Write-Host "Source files looks good, continuing"
+          Write-Host "Source files look good, continuing"
         }
       } Catch {
        Throw "No backup created due to: $($_.Exception.Message)"
@@ -84,42 +87,42 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
      }
    ```
 
-   The code above first check if the parameter `$PathIsWebApp` was provided at execution time. If so, the code continues to get a list of file extensions from the directory pointed to by `$Path`. In your case, if you run that part of the code again the _webapp_ directory the code:
+   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code again on the _webapp_ directory, the following code will print a list if items:
 
    ```powershell
    (Get-ChildItem $Path).Extension | Sort-Object -Unique
    ```
 
-   will produce a list consisting of two items:
+   Here's the output:
 
    ```output
    .js
    .html
    ```
 
-   In the full statement, the `-match` operator is added. The `-match` operator expects a Regular Expression pattern. In your case that expression stated, does any of the file extensions _match_ either `.html`, `.js` or `.css`. The result of the statement is saved to the variable `$ContainsApplicationFiles`.
+   In the full statement, we're using the `-match` operator. The `-match` operator expects a regular expression pattern. In this case, the expression states "do any of the file extensions match `.html`, `.js`, or `.css`?" The result of the statement is saved to the variable `$ContainsApplicationFiles`.
 
    Then the `If` block checks whether the `$ContainsApplicationFiles` variable is `True` or `False`. At this point, the code can take two paths:
 
-   - **The source directory is a webapp**. If that was the case, the script writes out **Source files looks good, continuing**.
-   - **The source directory is not a webapp**. If that isn't the case, then the script _throws_ an error stating **"Not a webapp"**. The error ends up being caught in a `Catch` block and the script shuts down, as you rethrow the error with an improved error text.
+   - **If the source directory is for a web app**, the script writes out "Source files look good, continuing."
+   - **If the source directory isn't for a web app**, the script throws an error that states "Not a web app." The error is caught in a `Catch` block. The script stops, and you rethrow the error with an improved error message.
 
-1. Try out the script by providing the switch `$PathIsWebApp`, like so:
+1. Test the script by providing the switch `$PathIsWebApp`:
 
    > [!NOTE]
-   > Before you run the script, ensure there are no _.zip_ files present created when running previous exercises in this module. By running `Remove-Item *zip`
+   > Before you run the script, make sure there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './webapp'
    ```
 
-   The script should output text similar to:
+   The script should print output that looks similar to this text:
 
    ```output
    Source files looks good, continuing
    Created backup at ./backup-2021-01-21.zip
    ```
 
-1. Create a directory _python-app_ and create a file within called _script.py_:
+1. Create a directory named _python-app_. In the new directory, create a file called _script.py_:
 
    ```bash
    mkdir python-app
@@ -128,7 +131,7 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
    cd ..
    ```
 
-   Your directory should now look like so:
+   Your directory should now look like this:
 
    ```output
    -| webapp/
@@ -139,18 +142,18 @@ Your company mostly build web apps, apps consisting of html, css, and JavaScript
    -| Backup.ps1
    ```
 
-1. Run the script again, but this time change the `-Path` value to point to **./python-app**:
+1. Run the script again, but this time change the `-Path` value to point to `./python-app`:
 
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './python-app'
    ```  
 
-   Your script should now say:
+   Your script should now print this text:
 
    ```output
-   No backup created due to: Not a webapp
+   No backup created due to: Not a web app
    ```
 
-   The text means that the check failed, and it should, there was no files in there matching `.html`, `.js`, or `.css`. Your code raised an exception that was caught by your `Catch` block and the script excited early.
+   The output indicates that the check failed. It should have, because there are no files in the directory that have an .html, .js, or .css extension. Your code raised an exception that was caught by your `Catch` block, and the script stopped early.
 
-   Congrats! You've managed to implement a business-specific requirement.
+   Congratulations! You've implemented a business requirement.

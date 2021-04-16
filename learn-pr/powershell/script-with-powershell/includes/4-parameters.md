@@ -1,60 +1,61 @@
-You're at a point where you've created a few scripts and you start noticing your scripts aren't flexible. You need to actively go into your scripts and change them. There's a better way to handle changes, namely to use parameters.
+After you've created a few scripts, you might notice that your scripts aren't flexible. Going into your scripts to change them isn't efficient. There's a better way to handle changes: use parameters.
 
-Relying on parameters, makes your scripts flexible in that it allows users to select options or send input into the scripts. You will have less reason to change the scripts, it can in some cases be enough to just change a parameter value.
+Using parameters makes your scripts flexible because it allows users to select options or send input to the scripts. You won't need to change your scripts as frequently because in some cases you'll just need to change a parameter value.
 
 Cmdlets, functions, and scripts all accept parameters.
 
 ## Declare and use a parameter
 
-To declare a parameter, you need to add the keyword `Param` with an open and close parenthesis like so:
+To declare a parameter, you need to use the keyword `Param` with an open and close parenthesis:
 
 ```powershell
 Param()
 ```
 
-Inside of the parenthesis you define your parameters separated by a comma. A typical parameter declaration can look like so:
+Inside the parentheses, you define your parameters, separating them with commas. A typical parameter declaration might look like this one:
 
 ```powershell
 # CreateFile.ps1
 Param (
   $Path
 )
-New-Item $Path # creates a new file at $Path
+New-Item $Path # Creates a new file at $Path.
 Write-Host "File $Path was created"
 ```
 
-The script has a parameter `$Path` that's later used in the script to create a file. This script has now been made more flexible.
+The script has a `$Path` parameter that's later used in the script to create a file. The script is now more flexible.
 
-### Using the parameter
+### Use the parameter
 
-To call a script with a parameter, you need to provide it with name and a value. Assume the above script is called `CreateFile.ps1` then you could call it like so:
+To call a script with a parameter, you need to provide a name and a value. Assume the above script is called `CreateFile.ps1`. You could call it like this:
 
 ```powershell
-./CreateFile.ps1 -Path './newfile.txt' # File ./newfile.txt was created
-./CreateFile.ps1 -Path './anotherfile.txt' # File ./anotherfile.txt was created
+./CreateFile.ps1 -Path './newfile.txt' # File ./newfile.txt was created.
+./CreateFile.ps1 -Path './anotherfile.txt' # File ./anotherfile.txt was created.
 ```
 
-Thanks to the use of a parameter, you don't need to change the script file when you want to call the file something else.
+Because you used a parameter, you don't need to change the script file when you want to call the file something else.
 
 > [!NOTE]
-> This particular script might not benefit so much from using a parameter as it only call `New-Item`. However, as soon as your script is a few lines long it will pay off.
-## Improve parameters
+> This particular script might not benefit much from using a parameter because it only calls `New-Item`. But as soon as your script is a few lines long, using the parameter will pay off.
 
-Adding parameters to your scripts is a great way to make them flexible. Because you created a script, you might remember exactly what a parameter is for and what reasonable values are for one or more parameters. However, as time passes you might forget these details and you might also want to give a script to a colleague for an example. The solution is to be explicit and thereby make your script easy to use. What you want from the script is to fail early if its passed unreasonable parameter values. Here's some things to consider when defining parameters:
+## Improve your parameters
 
-- **Is it mandatory?**. Is a parameter optional or mandatory.
-- **What's an allowed value?**. What are reasonable values?
-- **Is it only one type of values?**. Does the parameter accept any type of values like string, boolean, integers, objects etc.?
-- **Can the parameter rely on a default?**. Would it be ok to omit the value altogether and rely on a default value that's used instead?
-- **Can you improve the user experience further?**. Can you be even clearer to the user by providing a help message?
+When you first create a script that uses parameters, you might remember exactly what the parameters are for and what values are reasonable for them. As time passes, you might forget those details. You might also want to give a script to a colleague. The solution to these problems is to be explicit, which makes your scripts easy to use. You want a script to fail early if it's passed unreasonable parameter values. Here are some things to consider when you define parameters:
 
-## Select approach
+- **Is it mandatory?** Is the parameter optional or required?
+- **What values are allowed?** What values are reasonable?
+- **Does it accept more than one type of value?** Does the parameter accept any type of value, like string, Boolean, integer, and object?
+- **Can the parameter rely on a default?** Would it be OK to omit the value altogether and rely on a default value instead?
+- **Can you further improve the user experience?** Can you be even clearer to your user by providing a Help message?
 
-All parameters are by default optional. That might work for some cases but sometimes you need the user to provide parameter values, reasonable values even. If the user doesn't provide a value, to a parameter, then the script should quit or tell the user how to fix it. The worst thing that can happen is that the script continuous to run and ends up doing things that weren't intended.
+## Select an approach
 
-There are a couple of approaches you could use to make for a safer running script. Either you can write custom code to inspect the parameter value or you could use decorators that do roughly the same thing. Below is the two approaches described:
+All parameters are optional by default. That default might work in some cases. But sometimes you need your user to provide parameter values, and the values need to be reasonable ones. If the user doesn't provide a value to a parameter, the script should quit or tell the user how to fix the problem. The worst thing that can happen is for the script to continue and do things that you don't want it to do.
 
-- **Use `If/Else`**. By using an `If/Else` construct you can check the value of the parameter and then decide what to do, like the below script:
+There are a couple of approaches you can use to make your script safer. You can write custom code to inspect the parameter value. Or you can use decorators that do roughly the same thing. Let's look at both approaches.
+
+- **Use `If/Else`**. The `If/Else` construct allows you to check the value of a parameter and then decide what to do. Here's an example:
 
    ```powershell
    Param(
@@ -70,7 +71,7 @@ There are a couple of approaches you could use to make for a safer running scrip
 
    The script will run `Write-Error` if you don't provide a value for `$Path`.
 
-- **Use `Parameter[]` decorator**. A better way (less to type) is to use the `Parameter[]` decorator, like so:
+- **Use the `Parameter[]` decorator**. A better way, which requires less typing, is to use the `Parameter[]` decorator:
 
    ```powershell
    Param(
@@ -81,7 +82,7 @@ There are a couple of approaches you could use to make for a safer running scrip
    Write-Host "File created at path $Path"
    ```
 
-   If you run this script, and omit a value for `$Path`, PowerShell ensures you end up in dialog where you're asked for the value of `$Path`:
+   If you run this script and omit a value for `$Path`, you end up in a dialog that prompts for the value:
 
    ```output
    cmdlet CreateFile.ps1 at command pipeline position 1
@@ -89,23 +90,23 @@ There are a couple of approaches you could use to make for a safer running scrip
    Path:
    ```
 
-   You can improve this decorator further by providing a help message that the user will see when running the script.  
+   You can improve this decorator by providing a Help message that users will see when they run the script:  
 
    ```powershell
    [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
    ```
 
-   When you run the script you will get an output that tells you to type `!?` for more information, like so:
+   When you run the script, you get a message that tells you to type `!?` for more information:
 
    ```powershell
    cmdlet CreateFile.ps1 at command pipeline position 1
    Supply values for the following parameters:
    (Type !? for Help.)
-   Path: !?  # you type !?
-   Please supply a valid path  # Your help message
+   Path: !?  # You type !?
+   Please supply a valid path  # Your Help message.
    ```
 
-- **Assign a type**. By assigning a type to a parameter you can say, for example,  that this parameter accepts only strings, no booleans. Thereby, you're giving the user a good understanding of what to expect. You can assign a type to a parameter by preceding it with a square bracket and the type, like so:
+- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets:
 
    ```powershell
    Param(
@@ -113,4 +114,4 @@ There are a couple of approaches you could use to make for a safer running scrip
    )
    ```
 
-These three approaches are not exclusionary, you can definitely combine them and make your script more intentional and more safe to run.
+These three approaches aren't mutually exclusive. You can combine them to make your script safer.

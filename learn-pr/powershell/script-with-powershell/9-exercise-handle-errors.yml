@@ -3,7 +3,7 @@ uid: learn.powershell.scripting-with-powershell.9-exercise-handle-errors
 title: Exercise - Error handling
 metadata:
   title: Exercise - Error handling
-  description: This exercise implements a business requirement to your backup script using Try and Catch blocks.
+  description: In this exercise, you'll address a business requirement in your backup script by using Try and Catch blocks.
   author: softchris
   ms.author: chnoring
   ms.date: 02/04/2020

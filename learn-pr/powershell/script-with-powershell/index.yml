@@ -2,18 +2,18 @@
 uid: learn.powershell.scripting-with-powershell
 metadata:
   title: Introduction to scripting in PowerShell
-  description: Learn how to script with PowerShell.
+  description: Learn how to script by using PowerShell.
   ms.date: 02/04/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to scripting in PowerShell
-summary: This module gives you an introduction to scripting with PowerShell. It introduces various concepts to create script files and make them as robust to run as possible.
+summary: This module introduces you to scripting with PowerShell. It introduces various concepts to help you create script files and make them as robust as possible.
 abstract: |
-  - Understand how to author and run scripts.
+  - Understand how to write and run scripts.
   - Use variables and parameters to make your scripts flexible.
-  - Apply flow control logic to make intelligent decisions.  
+  - Apply flow-control logic to make intelligent decisions.  
   - Add robustness to your scripts by adding error management.
 iconUrl: /learn/achievements/powershell/scripting-with-powershell.svg
 levels:
@@ -24,10 +24,10 @@ products:
   - vs
 prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git Bash
-  - Visual Studio Code installed
+  - Visual Studio Code 
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system
-  - Familiarity with running a command in PowerShell
+  - Familiarity with running commands in PowerShell
 units:
   - learn.powershell.scripting-with-powershell.1-introduction
   - learn.powershell.scripting-with-powershell.2-introduction-scripting

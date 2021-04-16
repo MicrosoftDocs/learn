@@ -3,7 +3,7 @@ uid: learn.powershell.scripting-with-powershell.2-introduction-scripting
 title: Introduction to scripting
 metadata:
   title: Introduction to scripting
-  description: This unit teaches you what is scripting and why script. It also covers topics such as variables, execution policy, scope and profile.
+  description: This unit teaches you what scripting is and why it's a good skill to learn. It also covers topics like variables, execution policies, scope, and profiles.
   author: softchris
   ms.author: chnoring
   ms.date: 02/04/2021

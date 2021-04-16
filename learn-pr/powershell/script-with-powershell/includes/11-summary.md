@@ -1,9 +1,9 @@
-In this module, you learned about PowerShell and how you can use it to automate tasks by authoring and running scripts.
+In this module, you learned about how you can use PowerShell to automate tasks by writing and running scripts.
 
-You then went on to improve your scripts by using variables and parameters, thereby making the scripts more flexible.
+You went on to improve your scripts by using variables and parameters to make the scripts more flexible.
 
-Then you were introduced to flow control and how that can be used to control how the script is run. You specifically implemented some checks to _sanitize_ input, to ensure the script would exit early if not certain conditions were met. Additionally you also added checks to ensure it only carried out its task (backing up files) if there was not pre-existing backup file.
+You were then introduced to flow control and how you can use it to control how a script is run. You implemented some checks to sanitize input to ensure the script will exit early if certain conditions aren't met. You also added checks to ensure the script carries out its task (backing up files) only if there's no pre-existing backup file.
 
-Finally you were introduced to error handling. In PowerShell, there's the notion of non terminating and terminating errors. You learned to differentiate between these two types of errors and also manage them differently.
+Finally, you were introduced to error handling. You learned how to differentiate between non-terminating and terminating errors and how to manage both.
 
-You should now have a good understanding of how to author and run scripts. Additionally you should be able to use various constructs of the PowerShell language to improve a script's flexibility and robustness.
+You should now have a good understanding of how to write and run scripts. You should also be able to use various PowerShell constructs to improve a script's flexibility and robustness.
