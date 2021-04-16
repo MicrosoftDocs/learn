@@ -4,13 +4,13 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 
 ## Create a repository
 
-Next, create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
+Next, create a new repository by using a GitHub template repository. A series of templates is available where each contains a starter app built with a different front-end framework.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
 1. Name your repository **my-static-web-app**
-1. Click the **Create repository from template** button
+1. Select **Create repository from template**
 
 ## Clone your app locally
 
@@ -190,7 +190,7 @@ The `api` folder contains the Azure Functions project with the HTTP endpoints fo
 
 It's time to see your application running locally. Each front-end application runs on a different port.
 
-Click the link to browse to your application.
+Select the link to browse to your application.
 
 ::: zone pivot="angular"
 
@@ -240,13 +240,13 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
-1. When the extension tab loads in Visual Studio Code, click **Install**.
+1. When the extension tab loads in Visual Studio Code, select **Install**.
 
-1. After installation is complete, click **Reload**.
+1. After installation is complete, select **Reload**.
 
 ### Sign into Azure in Visual Studio Code
 
-1. In Visual Studio Code, sign in to Azure by clicking **View** > **Command Palette** and typing **Azure: Sign In**.
+1. In Visual Studio Code, sign in to Azure by selecting **View** > **Command Palette** and typing **Azure: Sign In**.
 
    > [!IMPORTANT]
    > Login to Azure using the same account used to create the sandbox. The sandbox provides access to a Concierge Subscription.

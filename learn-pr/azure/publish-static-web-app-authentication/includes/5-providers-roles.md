@@ -1,6 +1,6 @@
-With user authentication in place, your shopping list web app needs a way to restrict access to some pages for users that are not logged in, and allow login only through specific providers.
+With user authentication in place, your shopping list web app needs a way to restrict access to some pages for users that aren't logged in, and allow login only through specific providers.
 
-We'll look into routing configuration and roles in Azure Static Web Apps to fine tune user access to our web app.
+We'll look into routing configuration and roles in Azure Static Web Apps to fine-tune user access to our web app.
 
 ## Configuration file for Azure Static Web Apps
 
@@ -54,7 +54,7 @@ That means to restrict a route to only authenticated users, you can add the buil
 }
 ```
 
-With that configuration, if an unauthenticated user try to access the `/profile` route an error `403` (forbidden) will be returned.
+With that configuration, if an unauthenticated user tries to access the `/profile` route an error `401` (unauthorized) will be returned.
 
 You can also restrict specific HTTP methods for a given route, like this:
 

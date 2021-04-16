@@ -30,13 +30,13 @@ The following table lists the provider-specific login route you can use in your 
 | Google                 | `/.auth/login/google`   |
 | Twitter                | `/.auth/login/twitter`  |
 
-For example, to login with GitHub you can include a login link in your web app with the following snippet:
+For example, to log in with GitHub you can include a login link in your web app with the following snippet:
 
 ```html
 <a href="/.auth/login/github">Login</a>
 ```
 
-If you want an user to return to a specific page after login, you can also provide an URL in `post_login_redirect_uri` query string parameter, for example:
+If you want a user to return to a specific page after login, you can also provide a URL in `post_login_redirect_uri` query string parameter, for example:
 
 ```html
 <a href="/.auth/login/github?post_login_redirect_uri=/products">Login</a>
@@ -50,7 +50,7 @@ The `/.auth/logout` route logs users out from the web app. You can add a link to
 <a href="/.auth/logout">Log out</a>
 ```
 
-Like with login, you can can provide an URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
+Like with login, you can provide an URL to redirect to after logging out using the `post_logout_redirect_uri` query string parameter:
 
 ```html
 <a href="/.auth/logout?post_logout_redirect_uri=/home">Log out</a>
@@ -62,7 +62,7 @@ You can access authentication-related user information either via a direct-acces
 
 If you send a `GET` request to the `/.auth/me` route, you'll receive a JSON object with the data for the currently logged in user. Requests from unauthenticated users returns `null`.
 
-The following example is a example response object:
+The following example is an example response object:
 
 ```json
 {

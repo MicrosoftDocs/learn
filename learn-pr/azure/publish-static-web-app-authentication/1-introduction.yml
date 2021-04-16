@@ -6,7 +6,7 @@ metadata:
   description: Publish an Azure Static Web App
   ms.date: 04/15/2021
   author: sinedied
-  ms.author: sinedied
+  ms.author: yolasors
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework

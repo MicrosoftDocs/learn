@@ -305,7 +305,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ## Add login and logout buttons
 
-The user information will be `undefined` if we are not logged in, our changes won't be visible for now. It's time to add login buttons for the different providers.
+The user information will be `undefined` if we're not logged in, our changes won't be visible for now. It's time to add login buttons for the different providers.
 
 ::: zone pivot="angular"
 
@@ -315,13 +315,13 @@ The user information will be `undefined` if we are not logged in, our changes wo
     providers = ['twitter', 'github', 'aad', 'google', 'facebook'];
     ```
 
-1. Add the `redirect` property just below, to capture the current URL for the post login redirection:
+1. Add the `redirect` property below, to capture the current URL for the post login redirection:
 
     ```typescript
     redirect = window.location.pathname;
     ```
 
-1. Add this at the bottom of the template to display the login and logout buttons.
+1. Add this code at the bottom of the template to display the login and logout buttons.
 
     ```typescript
     <nav class="menu auth">
@@ -339,9 +339,9 @@ The user information will be `undefined` if we are not logged in, our changes wo
     </nav>
     ```
 
-    If the user is not logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and set the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` adn also set the redirection URL to the current page.
+    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
 
 You should now see this in your browser:
 
@@ -388,9 +388,9 @@ You should now see this in your browser:
     </div>
     ```
 
-    If the user is not logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and set the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` adn also set the redirection URL to the current page.
+    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
 
 You should now see this in your browser:
 
@@ -439,9 +439,9 @@ You should now see this in your browser:
     </div>
     ```
 
-    If the user is not logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and set the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` adn also set the redirection URL to the current page.
+    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
 
 You should now see this in your browser:
 
@@ -463,7 +463,7 @@ You should now see this in your browser:
       },
     ```
 
-1. Add the `redirect` property just below, to capture the current URL for the post login redirection:
+1. Add the `redirect` property below, to capture the current URL for the post login redirection:
 
     ```javascript
     ...
@@ -501,9 +501,9 @@ You should now see this in your browser:
     </template>
     ```
 
-    If the user is not logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and set the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` adn also set the redirection URL to the current page.
+    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
 
 You should now see this in your browser:
 
@@ -517,7 +517,7 @@ Before testing our authentication workflow, let's display the user details about
 
 ::: zone pivot="angular"
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this at the bottom of the template:
+1. Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this code at the bottom of the template:
 
     ```html
     <div class="user" *ngIf="userInfo">
@@ -527,7 +527,7 @@ Before testing our authentication workflow, let's display the user details about
     </div>
     ```
 
-    Note that the `userDetails` property can be either a username or email address, depending of the identity provided used to log in.
+    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -596,7 +596,7 @@ export class NavComponent implements OnInit {
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` and add this at the bottom of the JSX template to display the login status:
+1. Edit the file `react-app/src/components/NavBar.js` and add this code at the bottom of the JSX template to display the login status:
 
     ```jsx
     ...
@@ -616,7 +616,7 @@ export class NavComponent implements OnInit {
     ...
     ```
 
-    Note that the `userDetails` property can be either a username or email address, depending of the identity provided used to log in.
+    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -696,7 +696,7 @@ export default NavBar;
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` and add this at the bottom of the template to display the login status:
+1. Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the bottom of the template to display the login status:
 
     ```html
     ...
@@ -714,7 +714,7 @@ export default NavBar;
     ...
     ```
 
-    Note that the `userDetails` property can be either a username or email address, depending of the identity provided used to log in.
+    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -791,7 +791,7 @@ Your completed file should now look like this:
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add this at the bottom of the template to display the login status:
+1. Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bottom of the template to display the login status:
 
     ```html
     ...
@@ -807,7 +807,7 @@ Your completed file should now look like this:
     </template>
     ```
 
-    Note that the `userDetails` property can be either a username or email address, depending of the identity provided used to log in.
+    Note that the `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
 Your completed file should now look like this:
 
@@ -887,7 +887,7 @@ export default {
 Everything is now in place, the final step is to test if everything is working as expected.
 
 1. In your web app, select one of the identity providers to log in.
-1. You will be redirected to this page:
+1. You'll be redirected to this page:
 
     :::image type="content" source="../media/swa-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen":::
 
@@ -896,7 +896,7 @@ Everything is now in place, the final step is to test if everything is working a
 1. Enter `mslearn` as username and `1234` for the user ID.
 1. Select **Login**.
 
-After the login, you are redirected to the previous page. You can notice this time that the different login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
+After the login, you're redirected to the previous page. You can notice this time that the different login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
 
 Now that you checked that everything works as expected locally, it's time to deploy your changes.
 
@@ -916,4 +916,4 @@ After you pushed your changes, wait a few minutes for the build and deploy proce
 
 ## Next steps
 
-Your app now support user authentication and your next step is to restrict some parts of the app to unauthenticated users.
+Your app now supports user authentication and your next step is to restrict some parts of the app to unauthenticated users.

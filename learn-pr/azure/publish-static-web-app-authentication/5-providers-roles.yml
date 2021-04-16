@@ -6,7 +6,7 @@ metadata:
   description: Learn how to prevent unwanted access in your static web app by restricting providers and unauthenticated users
   ms.date: 04/15/2021
   author: sinedied
-  ms.author: sinedied
+  ms.author: yolasors
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

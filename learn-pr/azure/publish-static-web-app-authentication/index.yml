@@ -5,7 +5,7 @@ metadata:
   description: Publish an Angular, React, Svelte, or Vue JavaScript app with API and authentication using Azure Static Web Apps and Azure Functions. Deploy your code from GitHub to a staging site using preview URLs.
   ms.date: 04/15/2020
   author: sinedied
-  ms.author: sinedied
+  ms.author: yolasors
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Authenticate users with Azure Static Web Apps
