@@ -14,7 +14,7 @@ There are many constructs to handle flow control in PowerShell. We can't name th
 
 ## Manage input and execution flow by using `If`, `ElseIf`, and `Else`
 
-You can use an `If` construct to determine if an expression is `True` or `False`. Depending on that determination, you might run the statement defined by the `If` construct. The syntax for `If` looks like so:
+You can use an `If` construct to determine if an expression is `True` or `False`. Depending on that determination, you might run the statement defined by the `If` construct. The syntax for `If` looks like this:
 
 ```powershell
 If (<expression that evaluates to True or False>) 

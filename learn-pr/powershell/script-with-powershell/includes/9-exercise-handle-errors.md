@@ -107,7 +107,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    - **If the source directory is for a web app**, the script writes out "Source files look good, continuing."
    - **If the source directory isn't for a web app**, the script throws an error that states "Not a web app." The error is caught in a `Catch` block. The script stops, and you rethrow the error with an improved error message.
 
-1. Test the script by providing the switch `$PathIsWebApp`, like so:
+1. Test the script by providing the switch `$PathIsWebApp`:
 
    > [!NOTE]
    > Before you run the script, make sure there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
@@ -131,7 +131,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    cd ..
    ```
 
-   Your directory should now look like so:
+   Your directory should now look like this:
 
    ```output
    -| webapp/

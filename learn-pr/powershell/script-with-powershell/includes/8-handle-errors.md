@@ -49,7 +49,7 @@ There are three related constructs that can help you manage this type of error:
 
    The script tries to run a command that does some I/O work. The first `Catch` catches a specific type of error: `[System.IO.IOException]`. The last `Catch` catches anything that's not a `[System.IO.IOException]`.
 
-- `Finally`. The statements in this block will run regardless of whether anything goes wrong. You probably won't use this block much, but it can be useful for cleaning up resources, for example. To use it, add it as the last block, like so:
+- `Finally`. The statements in this block will run regardless of whether anything goes wrong. You probably won't use this block much, but it can be useful for cleaning up resources, for example. To use it, add it as the last block:
 
    ```powershell
    Try {
@@ -73,7 +73,7 @@ We've talked about exception objects in the context of catching errors. You use 
 
   - **The offending row**. The exception object also tells you which row the script was running when the error occurred. This information can help you debug your code.
 
-So how do you inspect an exception object? There's a built-in variable, `$_`, that has an `exception` property. To get the error message, for example, you would use `$_.exception.message`. In code, it might look like so:
+So how do you inspect an exception object? There's a built-in variable, `$_`, that has an `exception` property. To get the error message, for example, you would use `$_.exception.message`. In code, it might look like this:
 
 ```powershell
 Try {
@@ -101,7 +101,7 @@ In some situations, you might want to cause an error:
 
    By using the `-ErrorAction` parameter and the value `Stop`, you can cause an error that can be caught by `Try/Catch`.
 
-- **Business rules**. You might have a situation where the code doesn't actually stop responding, but for business reasons you want it to. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might be that only certain paths are allowed or that the path needs to look a certain way. If the checks fail, it makes sense to _throw_ an error. In a situation like this one, you can use a `Throw` block, like so:
+- **Business rules**. You might have a situation where the code doesn't actually stop responding, but for business reasons you want it to. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might be that only certain paths are allowed or that the path needs to look a certain way. If the checks fail, it makes sense to _throw_ an error. In a situation like this one, you can use a `Throw` block:
 
    ```powershell
    Try {

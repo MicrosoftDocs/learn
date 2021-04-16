@@ -6,7 +6,7 @@ Cmdlets, functions, and scripts all accept parameters.
 
 ## Declare and use a parameter
 
-To declare a parameter, you need to use the keyword `Param` with an open and close parenthesis, like so:
+To declare a parameter, you need to use the keyword `Param` with an open and close parenthesis:
 
 ```powershell
 Param()
@@ -27,7 +27,7 @@ The script has a `$Path` parameter that's later used in the script to create a f
 
 ### Use the parameter
 
-To call a script with a parameter, you need to provide a name and a value. Assume the above script is called `CreateFile.ps1`. You could call it like so:
+To call a script with a parameter, you need to provide a name and a value. Assume the above script is called `CreateFile.ps1`. You could call it like this:
 
 ```powershell
 ./CreateFile.ps1 -Path './newfile.txt' # File ./newfile.txt was created.
@@ -71,7 +71,7 @@ There are a couple of approaches you can use to make your script safer. You can 
 
    The script will run `Write-Error` if you don't provide a value for `$Path`.
 
-- **Use the `Parameter[]` decorator**. A better way, which requires less typing, is to use the `Parameter[]` decorator, like so:
+- **Use the `Parameter[]` decorator**. A better way, which requires less typing, is to use the `Parameter[]` decorator:
 
    ```powershell
    Param(
@@ -96,7 +96,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
    ```
 
-   When you run the script, you get a message that tells you to type `!?` for more information, like so:
+   When you run the script, you get a message that tells you to type `!?` for more information:
 
    ```powershell
    cmdlet CreateFile.ps1 at command pipeline position 1
@@ -106,7 +106,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Please supply a valid path  # Your Help message.
    ```
 
-- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets, like so:
+- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets:
 
    ```powershell
    Param(

@@ -73,7 +73,7 @@ If you add parameters to your script, users can provide values when it runs. You
 
    You've added two parameters to your script: `$Path` and `$DestinationPath`. You've also provided default values so users don't need to provide the values. Users can override the default values if they need to. You need to adjust the script to use these parameters. You'll do so next.
 
-1. Change the code in the file to use the parameters. _Backup.ps1_ should look like so:
+1. Change the code in the file to use the parameters. _Backup.ps1_ should look like this:
 
    ```powershell
    Param(

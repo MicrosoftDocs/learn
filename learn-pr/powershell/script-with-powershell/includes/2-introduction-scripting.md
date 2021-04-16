@@ -37,7 +37,7 @@ To create and run a script:
    Write-Host "The value of `$PI is $PI"
    ```
 
-1. Run the script by invoking it by its name and path, like so:
+1. Run the script by invoking it by its name and path:
 
    > [!NOTE]
    > Before you run the script, ensure the current shell is PowerShell. Alternatively, on Linux or macOS, you can put a shebang at the top of the script file to define PowerShell as the script interpreter.
@@ -77,7 +77,7 @@ When you output text via `Write-Host` or `Write-Output`, you use single or doubl
 
    If you want to _interpolate_, to get the value of `$PI` interpreted and printed, you need to use double quotation marks.
 
-- **Double quotation marks**. When you use double quotation marks, variables in strings are interpolated, like so:
+- **Double quotation marks**. When you use double quotation marks, variables in strings are interpolated:
 
    ```powershell
    Write-Host "Here is `$PI and its value is $PI" # Prints Here is $PI and its value is 3.14
