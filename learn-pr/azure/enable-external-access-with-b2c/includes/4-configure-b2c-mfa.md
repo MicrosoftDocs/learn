@@ -10,13 +10,13 @@ This section explains the main configuration steps.
 
 First, you must register your app with an Azure AD B2C tenant before it can work with Azure AD B2C. To do this, you'll need to create a new Azure AD B2C tenant.
 
-Use the Azure portal to create an Azure AD B2C tenant as a resource. Specify a name, domain, and region for your tenant:
+Use the Azure portal to create an Azure AD B2C tenant as a resource. Specify a name, domain, and region for your tenant.
 
 ![Azure AD B2C Create Tenant form](../media/4-create-tenant.png)
 
 An Azure AD B2C tenant isn't the same as an Azure Active Directory (Azure AD) tenant. You use an Azure AD tenant to represent an organization. Your Azure AD B2C tenant represents the identities that are used for customer applications.
 
-When you create a new Azure AD B2C tenant, you'll see it in your list of directories in the portal:
+When you create a new Azure AD B2C tenant, you'll see it in your list of directories in the portal.
 
 ![View your new Azure AD B2C tenant](../media/4-created-b2c-tenant.png)
 
@@ -24,7 +24,7 @@ You switch to your new Azure AD B2C tenant to register it with your application.
 
 ### Register your application
 
-When you've switched to the new Azure AD B2C tenant, you can register the application. Go to the Azure AD B2C resource you've created:
+When you've switched to the new Azure AD B2C tenant, you can register the application. Go to the Azure AD B2C resource you've created.
 
 ![Register an application](../media/4-azuread-b2c-register-application.png)
 
@@ -36,17 +36,17 @@ Your health application is a web app, so you'll need to provide a *reply URL*. T
 
 ### Create user flows
 
-You use user flows to manage things like sign-ins and sign-ups. Your Azure AD B2C tenant lets you create multiple types of user flows:
+You use user flows to manage things like sign-ins and sign-ups. Your Azure AD B2C tenant lets you create multiple types of user flows.
 
 ![Create user flows](../media/4-create-user-flows.png)
 
-Create a user flow for sign-ups and sign-ins for your users. You use the **Sign-up and sign-in** user flow to guide users through the several pages to create an account for the app (sign up) and to access the app (sign in).
+Create a user flow for sign-ups and sign-ins for your users. You use the **Sign-up and sign-in** user flow to guide users through the several pages to create an account for the app (sign up), and to access the app (sign in).
 
-Use this form to create the user flow:
+Use the following form to create the user flow.
 
 ![Create a sign-up user flow](../media/4-create-sign-up-flow.png)
 
-When you create a **Sign-up and sign-in** user flow, you'll specify a name for it. You'll need to enable **Email sign-up** to successfully create your user flow. In the **Multifactor authentication** section, you can enable multi-factor authentication or keep it disabled and return to it later. In the **User attributes and claims** section, specify which information to collect from the user. You'll also choose which claims about the user to return to the application. Claims are the same attributes collected earlier by the application, about the user, during sign-up. You're then ready to create your sign-up and sign-in user flow.
+When you create a **Sign-up and sign-in** user flow, you'll specify a name for it. You'll need to enable **Email sign-up** to successfully create your user flow. In the **Multifactor authentication** section, you can enable multi-factor authentication, or keep it disabled and return to it later. In the **User attributes and claims** section, specify which information to collect from the user. You'll also choose which claims about the user to return to the application. Claims are the same attributes collected earlier by the application, about the user, during sign-up. You're then ready to create your sign-up and sign-in user flow.
 
 ### Enable multi-factor authentication
 
@@ -54,11 +54,11 @@ As you've already seen, you enable multi-factor authentication for a user flow w
 
 ![Enable multi-factor authentication](../media/4-enable-mfa.png)
 
-## End-user experience
+## User experience
 
 After your user flow and multi-factor authentication have been configured, the application is ready to use.
 
-Because your healthcare application is a web app, the user accesses it through their browser. Users must sign up in your application if they don't already have an account. On the sign-up page, they're asked to provide the information you configured your user flow to collect. The sign-up form might look like this:
+Because your healthcare application is a web app, the user accesses it through their browser. Users must sign up in your application if they don't already have an account. On the sign-up page, they're asked to provide the information you configured your user flow to collect. The sign-up form might look like this.
 
 :::image type="content" source="../media/4-sign-up-form.png" alt-text="Sign-up form." loc-scope="azure-active-directory-b2c":::
 
