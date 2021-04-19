@@ -18,13 +18,6 @@ Azure Stack Hub can be [operated disconnected](https://docs.microsoft.com/azure-
 
 Azure and Azure Stack can help government customers unlock new hybrid use cases for business applications, including edge and disconnected scenarios, cloud applications intended to meet data sovereignty and compliance requirements, and cloud applications deployed on-premises in customer datacenter. These uses cases include mobile scenarios or fixed deployments in highly secure datacenter facilities.
 
-Azure Stack Hub capabilities:
-
-* **Complete autonomous cloud:** the only consistent hybrid cloud designed to run connected or disconnected.
-* **Cloud application model:** Common DevOps, application model, tools, APIs, and self-service portal.
-* **Azure services and marketplace:** Azure Marketplace, App Services, Containers, VMs, Functions, Key Vault, Azure Monitors, and so on.
-* **Integrated software + hardware systems:** Cloud inspired infrastructure via integrated systems from major hardware partners.
-
 Azure Stack Hub includes [important features](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) for several of these key scenarios:
 
 * **Edge and disconnected solutions:** Address latency and connectivity requirements by processing data locally in Azure Stack Hub and then aggregating in Azure for further analytics, with common application logic across both, connected or disconnected. Aircraft, ship, or truck-delivered, Azure Stack Hub meets the tough demands of exploration, construction, agriculture, oil and gas, manufacturing, disaster response, government, and military efforts in the most extreme conditions and remote locations. Government customers can use Azure Stack Hub architecture for [edge and disconnected solutions](https://docs.microsoft.com/azure/architecture/solution-ideas/articles/ai-at-the-edge-disconnected). For example, they can bring the next generation of AI-enabled hybrid applications to the edge where the data lives and integrate it with existing applications for low-latency intelligence.
