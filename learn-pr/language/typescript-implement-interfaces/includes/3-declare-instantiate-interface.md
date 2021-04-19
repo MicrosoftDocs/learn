@@ -13,7 +13,7 @@ Then, define the properties (or members) of the interface and their type. Proper
 
 ## Declare an interface with members
 
-1. Open the [Playground](https://www.typescriptlang.org/play?azure-portal=true) and remove any existing code.
+1. Open the [Playground](https://www.typescriptlang.org/play) and remove any existing code.
 1. Declare an interface named `IceCream` that includes two properties: `flavor` as a `string` and `scoops` as a `number.`
 
    ```typescript
