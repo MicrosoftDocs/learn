@@ -2,8 +2,8 @@ While developing a web API application, it's important that developers keep thei
 
 Visual Studio offers built-in features for seamless development experiences:
 
-1. Publishing an ASP.NET Core Web API application to Azure App Service, and
-2. Integrating it with Azure API Management.
+* Publishing an ASP.NET Core Web API application to Azure App Service, and
+* Integrating it with Azure API Management.
 
 Therefore, with these features, developers can:
 
@@ -15,7 +15,7 @@ To sum up, this module has covered the following topics:
 * To activate OpenAPI feature on ASP.NET Core Web API,
 * To publish the Web API app to Azure App Service through Visual Studio,
 * To integrate the Web API app with Azure API Management through Visual Studio, and
-* To verify the API through Azure API Management on Azure Portal.
+* To verify the API through Azure API Management on Azure portal.
 
 
 ## Learn More ##

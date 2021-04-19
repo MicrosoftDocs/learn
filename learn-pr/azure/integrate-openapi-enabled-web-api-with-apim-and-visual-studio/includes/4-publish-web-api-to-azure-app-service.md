@@ -7,17 +7,13 @@ In a fusion development team, time is one of the most valuable assets. You write
 
 What if your development tool, Visual Studio, can do everything for you in one place? It saves a lot of times and increases productivity. Visual Studio offers features to publish your app to Azure App Service.
 
-![Publish to Azure App Service in Visual Studio][image-01]
+:::image type="content" source="media/4-publish-web-api-to-azure-app-service-01.png" alt-text="Publish to Azure App Service in Visual Studio":::
 
 Visual Studio also offers the feature to integrate your web API with Azure API Management while publishing the app.
 
-![Integrate with Azure API Management in Visual Studio][image-02]
+:::image type="content" source="media/4-publish-web-api-to-azure-app-service-02.png" alt-text="Integrate with Azure API Management in Visual Studio":::
 
 In the next couple of exercises, you will explore how to publish your web API application to Azure App Service and integrate it with Azure API Management.
-
-
-[image-01]: ../media/4-publish-web-api-to-azure-app-service-01.png
-[image-02]: ../media/4-publish-web-api-to-azure-app-service-02.png
 
 
 [az appsvc]: https://docs.microsoft.com/azure/app-service/overview

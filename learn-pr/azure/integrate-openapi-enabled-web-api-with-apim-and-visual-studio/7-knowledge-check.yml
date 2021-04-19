@@ -30,7 +30,7 @@ quiz:
     - content: Right-click on Visual Studio and publish the application.
       isCorrect: true
       explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
-    - content: Use Azure Portal to publish the application.
+    - content: Use Azure portal to publish the application.
       isCorrect: false
       explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
     - content: Use Azure PowerShell to publish the application.

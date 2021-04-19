@@ -9,7 +9,7 @@ And by using the Swashbuckle tooling, it's easier than ever for the VanArsdel de
 
 The OpenAPI document defines a standard and programming language-agnostic interface description for web APIs. It allows both humans and computers to discover and understand the capabilities of a service without having access to source code, additional documentation, or inspection of network traffic.
 
-![OpenAPI][image-01]
+:::image type="content" source="media/2-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="OpenAPI":::
 
 The OpenAPI document is a contract for web APIs. And it's all a consuming application needs to understand and communicate with the web APIs, without having to know where the APIs are located or whether they are running.
 
@@ -18,23 +18,17 @@ The OpenAPI document is a contract for web APIs. And it's all a consuming applic
 
 There are several ways to generate the OpenAPI document from your ASP.NET Core Web API app. [Swashbuckle][swashbuckle] is the most popular way to do so.
 
-![Swashbuckle][image-02]
+:::image type="content" source="media/2-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Swashbuckle":::
 
 It's easy to use and, once it's installed to your app, it automatically displays the Swagger UI screen.
 
-![Swagger UI][image-03]
+:::image type="content" source="media/2-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="Swagger UI":::
 
 Swashbuckle also generates the OpenAPI document on-the-fly, which includes all the API endpoint details, payload structures, security requirements, etc. Here's the sample document for VanArsdel's web API for the inventory management.
 
-![OpenAPI Document][image-04]
+:::image type="content" source="media/2-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="OpenAPI Document":::
 
 In the next unit, you will take an exercise how to enable this OpenAPI capability to your ASP.NET Core Web API app.
-
-
-[image-01]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-01.png
-[image-02]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-02.png
-[image-03]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-03.png
-[image-04]: ../media/2-activate-openapi-to-web-api-using-swashbuckle-04.png
 
 
 [az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts

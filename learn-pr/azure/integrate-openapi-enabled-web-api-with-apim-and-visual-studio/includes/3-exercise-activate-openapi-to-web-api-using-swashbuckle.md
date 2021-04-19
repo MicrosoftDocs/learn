@@ -13,15 +13,15 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
 1. Open Visual Studio and find the ASP.NET Core Web API app.
 
-    ![Visual Studio Solution Opening][image-01]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="Visual Studio Solution Opening":::
 
-1. In **Solution Explorer**, right-click the project and select the **Manage NuGet Packages** menu.
+2. In **Solution Explorer**, right-click the project and select the **Manage NuGet Packages** menu.
 
-    ![Right-click Manage NuGet Packages][image-02]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Right-click Manage NuGet Packages":::
 
-1. In **NuGet Package Manager**, search `Swashbuckle.AspNetCore`. Select the package and install it.
+3. In **NuGet Package Manager**, search `Swashbuckle.AspNetCore`. Select the package and install it.
 
-    ![NuGet Package Manager][image-03]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="NuGet Package Manager":::
 
    The NuGet package has now been installed. Then close the **NuGet Package Manager** tab.
 
@@ -30,7 +30,7 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
 1. Open the `Startup.cs` file.
 
-    ![File: Startup.cs][image-04]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="File: Startup.cs":::
 
 1. Add the following directive just above the line, `namespace InventoryManagement.ApiApp`.
 
@@ -81,44 +81,32 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
    You've just completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 
-    ![File Modified: Startup.cs][image-05]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png" alt-text="File Modified: Startup.cs":::
 
 
 ## Generate the OpenAPI document file ##
 
 1. Click the debug button at the top-middle of Visual Studio.
 
-    ![Debug in Visual Studio][image-06]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-06.png" alt-text="Debug in Visual Studio":::
 
    It automatically opens your web browser and shows the Swagger UI page.
 
-    ![Swagger UI Page][image-07]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-07.png" alt-text="Swagger UI Page":::
 
    You may see the 404 error page. In this case, enter the URL, `https://localhost:<port_number>/swagger`, to your browser's address bar. In the screenshot below, the URL is `https://localhost:44371/swagger`, for example.
 
-    ![Page Not Found][image-08]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-08.png" alt-text="Page Not Found":::
 
 1. Click the link to open the OpenAPI document page.
 
-    ![Swagger UI Page for OpenAPI][image-09]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-09.png" alt-text="Swagger UI Page for OpenAPI":::
 
 1. The OpenAPI document is rendered on-the-fly.
 
-    ![OpenAPI Document][image-10]
+    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-10.png" alt-text="OpenAPI Document":::
 
 Your ASP.NET Core Web API app is now ready to produce the OpenAPI document.
-
-
-[image-01]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-01.png
-[image-02]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-02.png
-[image-03]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-03.png
-[image-04]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-04.png
-[image-05]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png
-[image-06]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-06.png
-[image-07]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-07.png
-[image-08]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-08.png
-[image-09]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-09.png
-[image-10]: ../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-10.png
 
 
 [az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
