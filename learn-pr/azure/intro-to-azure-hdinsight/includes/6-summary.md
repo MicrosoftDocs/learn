@@ -1,11 +1,11 @@
-Azure HDInsight is a fully managed, cloud-based open-source analytics service for enterprises. You can use Azure HDInsight to process big data in many scenarios, either with historical or real-time data. Our goal was to help you decide if Azure HDInsight would be a good choice for your organization. The following criteria were developed to help you with your decision:
+HDInsight is a fully managed, cloud-based open-source analytics service for enterprises. You can use Azure HDInsight to process big data in many scenarios, either with historical or real-time data. Our goal was to help you decide if HDInsight would be a good choice for your organization. The following criteria were developed to help you with your decision:
 
 - Range of workloads
 - Scalability
 - Fault tolerance
 - Security
 
-You applied these criteria to your organization. The criteria should have helped you evaluate whether Azure HDInsight can help your organization process big data. 
+You applied these criteria to your fictional organization. The criteria help you evaluate whether HDInsight is a good solution for your organization's requirements in processing big data. First, they let you assess how well HDInsight will solve your problem. Second, they give you an idea of the added benefits such as fault tolerance and improved security. This process should give you enough information to choose the right product for your work.
 
 ## References
 

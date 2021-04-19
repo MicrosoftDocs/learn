@@ -26,25 +26,25 @@ quiz:
     - content: "MapReduce"
       isCorrect: false
       explanation: "Incorrect. MapReduce is a programming model that enables you to process and analyze data."
-  - content: "Apache Hadoop stores data in what type of file system?"
+  - content: "What type os file system does Apache Hadoop store data in?"
     choices:
-    - content: "It has no storage; it's stored in memory."
+    - content: "It has no storage. Data is stored in memory."<!--Andy, please check edit here.-->
       isCorrect: false
       explanation: "Incorrect. Apache Hadoop requires physical storage to persist data."
     - content: "RDD"
       isCorrect: false
-      explanation: "Incorrect. RDD is an acronym for Resilient Distributed Dataset, which provides an in-memory data engine. A Hadoop system will persist data in storage, it is not a in memory data platform technology."
+      explanation: "Incorrect. RDD is an acronym for Resilient Distributed Dataset, which provides an in-memory data engine. A Hadoop system will persist data in storage. It's not an in-memory data platform technology."
     - content: "HDFS"
       isCorrect: true
-      explanation: "Correct. HDFS is an acronym for Hadoop Distributed File System, and is the data store for a Hadoop system."
+      explanation: "Correct. HDFS is an acronym for Hadoop Distributed File System, which is the data store for a Hadoop system."
   - content: "Which of the following is a parallel processing framework?"
     choices:
     - content: "Apache Hive"
       isCorrect: false
-      explanation: "Incorrect. Apache Hive in HDInsight is a data warehouse system for Apache Hadoop"
+      explanation: "Incorrect. Apache Hive in HDInsight is a data warehouse system for Apache Hadoop."
     - content: "Apache Spark"
       isCorrect: true
-      explanation: "Correct. It supports in-memory processing which helps boost the performance of big-data analytic applications."
+      explanation: "Correct. Apache Spark supports in-memory processing, which helps boost the performance of big-data analytic applications."
     - content: "Apache Kafka"
       isCorrect: false
       explanation: "Incorrect. Apache Kafka is an event streaming platform."
@@ -60,10 +60,10 @@ quiz:
     choices:
     - content: "Data warehousing"
       isCorrect: false
-      explanation: "Incorrect. Data warehousing provides an organization with somewhere to store big data while waiting to perform analysis on that data"
+      explanation: "Incorrect. Data warehousing provides an organization with somewhere to store big data while waiting to perform analysis on that data."
     - content: "Data science"
       isCorrect: false
       explanation: "Incorrect. Data science enables an organization to ingest, engineer, model, and evaluate their big data."
     - content: "Batch processing"
       isCorrect: true
-      explanation: "Correct. Organizations use batch processing jobs to prepare big data for further analysis."
+      explanation: "Correct. Organizations use batch-processing jobs to prepare big data for further analysis."
