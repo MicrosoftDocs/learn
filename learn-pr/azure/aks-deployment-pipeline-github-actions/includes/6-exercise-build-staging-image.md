@@ -7,6 +7,7 @@ Let's review our designed pipeline:
 You'll build this pipeline by using the GitHub Actions workflow.
 
 In this exercise, you'll:
+
 - Build the Actions workflow
 - Create the trigger
 - Build and push the image
@@ -77,9 +78,8 @@ In this exercise, you'll:
 
 The default file comes with two triggers:
 
-* Any push to the main branch.
-
-* Any pull request on the main branch.
+- Any push to the main branch.
+- Any pull request on the main branch.
 
 1. Change the default triggers in the `on` key.
 
@@ -130,7 +130,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
 
-    Next, add another action to build your Docker image.
+    Next, add other actions to build your Docker image.
 
 1. In the right panel, search for **Docker Login**
 
@@ -304,7 +304,50 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
-          - name: Build and push Docker images
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2.4.0
+            with:
+              context: .
+              tags: latest
+              repository: contoso-website
+    ```
+
+1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+
+    To set this action, copy the below snippet and paste it between the checkout and the login actions.
+
+    ```yml
+    - name: Set up Buildx
+      uses: docker/setup-buildx-action@v1
+    ```
+
+    Your final file should be like this:
+
+    ```yaml
+    name: Build and push the latest build to staging
+
+    on:
+      push:
+        branches: [ main ]
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+
+          - name: Docker Login
+            uses: docker/login-action@v1.8.0
+            with:
+              registry: ${{ secrets.ACR_NAME }}
+              username: ${{ secrets.ACR_LOGIN }}
+              password: ${{ secrets.ACR_PASSWORD }}
+
+          - name: Build and push staging images
             uses: docker/build-push-action@v2.4.0
             with:
               context: .
@@ -317,8 +360,6 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 
     Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. This build will fail because you haven't set the secrets yet!
-
-    :::image type="content" source="../media/6-6-first-build.png" alt-text="Screenshot that shows the failed build results for build_push_image.":::
 
 ## Set the secrets
 
