@@ -45,7 +45,7 @@ There's generally two types of ways that the technical interview is carried out,
 - **Standard interview**, in the standard interview, the interviewers can ask questions on you take home exercise (if you did one) or contextual questions on a programming language or framework or some other questions to assess your level.
 
 ### Whiteboard interview
-
+> [!VIDEO https://www.youtube.com/embed/8Myx-vy0csM] 
 So we've established you will be standing in front of a whiteboard and try to explain yourself through the solution of a problem. Why this form of interviewing? The idea is to mimic your every day work life where it's common that you and many your colleagues are standing in front of a whiteboard and is trying to solve a problem together. This form of interviewing gives the interviewers a chance to hear your inner thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem.
 
 How do I pass such an interview? Generally the more interviews you do, the better you become at it, but here's three tips:
