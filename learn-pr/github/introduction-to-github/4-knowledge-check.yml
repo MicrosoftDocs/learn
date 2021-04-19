@@ -40,13 +40,13 @@ quiz:
   - content: "It is recommended that you create commits on a branch separate from `main`, and there are plenty of good reasons why. What is **not** a good reason?"
     choices:
     - content: "GitHub doesn't allow you to commit directly to the `main` branch."
-      isCorrect: true
+      isCorrect: false
       explanation: "You can commit to the `main` branch unless it has been specifically locked by a branch owner. However, it is recommended that you only merge in commits via pull request."
     - content: "The `main` branch is intended for the highest-quality code that has passed rigorous review for inclusion."
       isCorrect: false
       explanation: "Creating commits on another branch allows others in the project to review changes before committing them to the critical `main` branch."
     - content: "The `main` branch is often treated differently by a project, and committing to it can create side effects, such as builds and deployments."
-      isCorrect: false
+      isCorrect: true
       explanation: "The default etiquette for GitHub projects is to offer changes via pull request. This allows project owners to properly manage propagation of those changes to the correct branch if and when necessary in order to avoid conflicts, unnecessary resource usage, and more."
   - content: "Suppose you'd like to work with a project on GitHub but you don't have write access to the project. What can you do to contribute?"
     choices:
