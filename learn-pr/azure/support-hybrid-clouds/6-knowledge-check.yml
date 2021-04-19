@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is NOT a feature of Tactical Azure Stack Hub?"
+  - content: "What allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure?"
     choices:
-    - content: "It addresses tactical edge deployments for limited or no connectivity."
+    - content: "Azure Stack Hub."
       isCorrect: false
-      explanation: "Incorrect. Tactical Azure Stack Hub is designed for tactical edge deployments for limited or no connectivity."
-    - content: "It allows customers to upload information or models directly to Azure."
+      explanation: "Incorrect. Azure Stack Hub enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data."
+    - content: "Azure Stack Edge."
       isCorrect: true
-      explanation: "Correct. Azure Stack Edge allows customers to upload information or models directly to Azure."
-    - content: "It meets fully mobile requirements."
+      explanation: "Correct. Azure Stack Edge allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure.  This approach creates a path for information sharing between domains that makes it easier and more secure."
+    - content: "Tactical Azure Stack Hub."
       isCorrect: false
-      explanation: "Incorrect. Tactical Azure Stack Hub meets fully mobile, or high portability (“2-person lift”) requirements."
-    - content: "It is appropriate for harsh conditions requiring military specifications solutions."
+      explanation: "Incorrect. Tactical Azure Stack Hub is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on."
+    - content: "Hardware security module."
       isCorrect: false
-      explanation: "Incorrect. Tactical Azure Stack Hub is a ruggedized product that can withstand harsh conditions."
+      explanation: "Incorrect. Hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers."
   - content: "Which service provides physical servers that are used for only one Azure subscription?"
     choices:
     - content: "Azure Dedicated Host."
