@@ -12,9 +12,7 @@ In this exercise, you'll clone a GitHub repository that contains all the code fo
 
 ## Setup and run the Setup script
 
-# Customize the below for your environment
-
-1. Specify the following parameters.
+Edit the deployPetClinicApp.sh and customize the below parameters for your environment
 
 | Variable | Description |
 |-|-|
@@ -35,6 +33,8 @@ sh deployPetClinicApp.sh
 ```
 
 ## Load Data
+
+Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
 
 ## Next steps
 

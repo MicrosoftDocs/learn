@@ -2,12 +2,10 @@ Imagine that you're an infrastructure manager who's been asked to monitor your A
 
 ## Learning objectives
 
-In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
-
 In this module, you'll:
 
 - Understand monitoring Java Applications on Azure.
-- Build and deploy a Sample Microservices Application and configure it for Azure Application Performance Monitoring.
+- Build and deploy a Sample Microservices Application and configure it for Azure Application Performance Monitoring(APM).
 - Monitor the application with Azure Application Insights.
 
 ## Prerequisites

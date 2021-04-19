@@ -21,9 +21,9 @@ A traditional application incorporates all of its code in a single, contiguous u
 
 With microservices, the code modules of an application become applications unto themselves, which interact with and pass control between one another through the network. To find one another, they may use raw IP addresses, but more likely they use a DNS server for service discovery, or they might make use of a *service mesh* to discover each other's identities and locations. An orchestrator such as Kubernetes improves service levels by replicating as many of the individual microservices as the cluster needs to account for fluctuating traffic volume, and can then delete these replicas when traffic subsides.
 
-Supporting a microservices environment with a conventional monitoring platform that observes events from the outside is like equipping a metropolitan area with a population of more than a million people with a single party-line telephone circuit. Theoretically it would work, given an infinite time constraint, but communications over such a system would be unworkably slow. Consequently, specialized APM platforms are available for monitoring microservice-based solutions.
+Supporting a microservices environment with a conventional monitoring platform that observes events from the outside is like equipping a metropolitan area with a population of more than a million people with a single party-line telephone circuit. Theoretically it would work, given an infinite time constraint, but communications over such a system would be unworkably slow. Consequently, specialized APM platforms are preferred for monitoring microservice-based solutions.
 
-## Integrated APM Platforms
+## Azure's Integrated APM Platform
 
 Increasingly, cloud service providers offer native monitoring services that are integrated into their cloud platforms. Azure, for example, supports Azure Monitor, which comprises a set of services that developers and administrators can use to collect, analyze, and act upon telemetry regarding the performance of applications and the infrastructure that hosts them. Events emanating from applications, virtual machines, and other resources are logged and used to compute performance metrics. Various services such as Azure Log Analytics and Microsoft Power BI can be connected to the data sources where logs and metrics are stored to generate actionable insights and create visual dashboards. In addition, developers can instrument their applications with Azure Application Insights to generate custom telemetry. This provides an extra layer of monitoring that is application-specific and that can be extremely beneficial in diagnosing errors and their root causes -- often without having to dive into the source code.
 
@@ -33,6 +33,7 @@ Continuous monitoring of applications in production environments is typically im
 
 ## Enable the Java in-process monitoring agent with Azure Spring Cloud
 
+In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
 APM provides Visibility into all your applications with the following features:
 
 - Logs, exceptions, and metrics in the context of call paths offer meaningful insights and actionable information to speed root cause analysis.
@@ -41,7 +42,7 @@ APM provides Visibility into all your applications with the following features:
 - Custom metrics, allowing you to publish custom performance indicators or business-specific metrics and visualize deeper application and business insights.
 - Ability to browse, query, and alert on application metrics and logs.
 
-We'll illustrate APM by using a distributed version of the Spring Pet clinic reference application.
+We'll illustrate APM by using a distributed reference application.
 In the upcoming exercise, we'll activate APM on creation of our Azure Spring Cloud instance with the "--enable-java-agent" CLI option:
 
 ```bash
@@ -53,4 +54,4 @@ az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
 
 ## Next steps
 
-In the next exercise, we'll configure a Sample Spring application and set it up for monitoring.
+In the next exercise, we'll configure your Sample Spring application and set it up for monitoring.
