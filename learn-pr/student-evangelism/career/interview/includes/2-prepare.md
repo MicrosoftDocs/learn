@@ -15,16 +15,18 @@ Depending on the size of the company, you might go through as little as two inte
 
 No two tech companies are the same, so knowing how to prepare can be tricky. There are some things to consider like what kind of company you are dealing with and what their focus is:
 
-- **Algorithm focused**. Such a company are likely to give you tasks where you are asked to implement things like binary trees, shortest path problems and so on. Usually the FAANG (Facebook, Amazon, Netflix, Google) companies belong to this category.
-- **Enterprise focused**. A large part of the companies out there are focused on enterprise, so called line-of-business applications or LOB. The challenges for this kind of companies are different as they usually have applications that's been around for a long time. Challenges are more around maintaining applications, refactoring old code and focus is less on performance but rather integration between systems.
+- **Algorithm focused**. Such a company are likely to give you tasks where you are asked to implement things like binary trees, shortest path problems and so on. Usually the FAANG (Facebook, Amazon, Apple, Netflix, Google) companies belong to this category.
+- **Enterprise focused**. A large part of the companies out there are focused on enterprise software, so called line-of-business applications or LOB. The challenges for this kind of companies are different as they usually have applications that's been around for a long time. Challenges are more around maintaining applications, refactoring old code and focus is less on performance but rather integration between systems.
 
-So how do you know what kind of company I'm applying for, algorithms or not? You can do research here, check web pages like [Glassdoor](https://www.glassdoor.co.uk/index.htm) and try using search engines. It's fairly easy to find this out. The so called FAANG (Facebook, Amazon, Netflix, Google) uses mostly algorithms to test.  
+So how do you know what kind of company I'm applying for, algorithms or not? You can do research here, check web pages like [Glassdoor](https://www.glassdoor.co.uk/index.htm) and try using search engines. It's fairly easy to find this out. The so called FAANG (Facebook, Amazon, Apple, Netflix, Google) uses mostly algorithms to test.  
 
 ### Algorithm focused company
 
 > What does it mean when they use algorithms, what are they after?
 
-You are given a specific problem and you are expected to do two things, firstly, select an appropriate algorithm for the problem and secondly understand the limitations of it and understand what happens when it scales. With _scales_ it's meant what happens when the input to a function increases, how will your algorithm perform. Algorithm performance is denoted as O(n), which is pronounced as Ordo.
+You are given a specific problem and you are expected to do two things, firstly, select an appropriate algorithm for the problem and secondly understand the limitations of it and understand what happens when it scales. With _scales_ it's meant what happens when the input to a function increases, how will your algorithm perform. Algorithm performance is denoted as O(n), also known as [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation). There are many web pages out there explaining how to calculate O(n) on you algorithm, here's one page explaining the basics, [Calculating Big O](https://www.integralist.co.uk/posts/calculating-bigo/).
+
+The reason these companies ask about algorithms and their performance is that the type of problems you will be faced with are likely of that nature.
 
 ### Preparing for algorithmic interview
 
@@ -38,13 +40,23 @@ There exist many sites dedicated to just that. In fact, many recruiters at these
 - [HackerRank](https://www.hackerrank.com/)
 - [Codewars](https://www.codewars.com/)
 - [LeetCode](https://leetcode.com/)
+- [CodeChef](https://www.codechef.com/)
+- [InterviewBit](https://www.interviewbit.com/)
+- [HackerEarth](https://www.hackerearth.com/)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
-These platforms offer many problems to try to solve and will let you use many different programming languages to do so. Usually you get assessed on how well you solved something, which means a solution that works receives a lower score than one that is optimal.
+These platforms offer many problems to try to solve and will let you use many different programming languages to do so. Usually you get assessed on how well you solved something, which means a solution that _works_ receives a lower score than one that is optimal.
 
 Another way to practice is by picking up books on the topic that may contain problems but also that helps guide you through the interview process like the below examples:
 
 - [Cracking the coding interview](https://www.amazon.co.uk/Cracking-Coding-Interview-6th-Programming/dp/0984782850) by Gayle Laakmann McDowell
 - [Here's a curated list of algorithm books](https://hackernoon.com/10-data-structure-algorithms-books-every-programmer-should-read-d50487313127)
+
+GitHub has become a great source of knowledge on preparing for tech interview as well. Here are some popular repositories:
+
+- [Coding interview University](https://github.com/jwasham/coding-interview-university)
+- [Free programming books](https://github.com/EbookFoundation/free-programming-books)
+- [The algorithms, Python](https://github.com/TheAlgorithms/Python)
 
 ## Enterprise focused
 

@@ -18,15 +18,43 @@ The way to answer that question is to tell a story involving your weakness and y
 
 What about conflict resolution? This question is also tricky to answer, cause either you had a job before and you are able to draw on experience or maybe you were playing a sport or even a computer game like League of Legends. The point is, point to a situation in the past that speaks in your favor. If you don't have a clear example, then go with something like I try to understand the other ones perspective to understand why they think and do things in a certain way. Some people are just difficult, but some other people think about things differently and that's great. Celebrate diversity of thought.
 
-### Salary negotiation
+> Do you have any questions for me?
+
+It's easy to think, as a beginner, that this is a question you can just say no, no questions. **Wrong**, this is where you should show your enthusiasm and preparedness. The more positive and enthusiastic you come across, the more likely you are to land the role, given that your tech tests are good enough.
+
+> [!TIP]
+> Do your research about the company and its products. Understand what this company thinks its important, its mission statement and so on. Showing that you care about this is imperative.
+
+Additionally, having a good conversation here gives you a chance to learn a lot about the company, its values, how it operates and so on. You might find out whether this is the place where you want to work or not.
+
+## Salary negotiation
+
+> [!NOTE]
+> Looking for your very first job, you might not get the option to negotiate the salary at all. Salary might only be mentioned on the application details page for example. With a few more years on your resume this becomes a different situation and you are able to advocate for yourself.
 
 If your interview results in an offer, that means you did a great job at the interview, congrats.
 
 You might think being all new to the industry that you need to accept whatever is offered. It's slightly like that, but you do have a right to expect a certain level. You can find out what that level is by checking what a graduate with your degree normally gets or what this position should pay.
 
-This part is also a bit relying on your performance throughout the interview process. Generally, ensure the employer brings up this topic first. It's a bit tricky because you don't want to say a number that's way higher than the employer have in mind, but you don't want to say a number that's too low either. Again, get the employer to say something first, if it's too far from what you have in mind, walk away.
+This part is also a bit relying on your performance throughout the interview process. Generally, ensure the employer brings up this topic first. It's a bit tricky because you don't want to say a number that's way higher than the employer have in mind, but you don't want to say a number that's too low either. Again, get the employer to say something first.
 
 However there is one thing to keep in mind, how valuable is the experience working for this particular company? Folks in the IT industry often take up a position for lower than they wanted to cause the experience is so valuable. Such experience will enable them to land a great job at the next employer.
+
+### How to argue for what you want
+
+It's hard to advocate for yourself, but to get what you want, you need the employer to understand what value you bring to the company, regardless of wether it's for landing a role internally or a job. Do your research here what type of company you are dealing with to understand what their dream candidate looks like. Even ask the recruiter about it. It's possible that previous non-teh experience, like working with customer support could make you really valuable paired with your tech skills. At the end of the day, an employer wants a person, that cares for the product and its users rather than a robot that runs elegant code.
+
+### Details of the offer
+
+Remember that not everything is about money. Think of this part as negotiating about a package. Such a package can consist of:
+
+- base salary
+- health insurance/dental insurance
+- bonus and/or stocks 
+- training, courses and conferences
+- health, like a gymcard or maybe buying a bike for example.
+
+If you have offers from more than one company, try to compare the offers from the above mentioned items. Only you know what matters most to you.
 
 ## Follow up
 
