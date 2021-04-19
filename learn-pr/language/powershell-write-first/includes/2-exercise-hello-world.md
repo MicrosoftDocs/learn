@@ -27,7 +27,7 @@ write and run scripts.
     The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` file
     extension is the file extension for PowerShell scripts.
 
-    The `code` command followed by the file name of the script you want to open will open the file in
+    The `code` command followed by the file name of the script you want to opens open the file in
     the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and save
     them to run in the Cloud Shell. If you want to open a file stored in another location, instead of
     just the filename, you can define a full file path.
@@ -41,7 +41,7 @@ write and run scripts.
 1. Use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS) to save the file.
 
     We'll explain how and why it works soon. But first, you should see it running to make sure you
-    didn't type it incorrectly. To do that, you will need to run your code.
+    didn't type it incorrectly. To do that, you need to run your code.
 
     > [!NOTE]
     > You might be tempted to use the `Copy` button on the code sample to skip all the typing. However,
@@ -72,7 +72,7 @@ Hello World!
 
 Where other languages require every character to be precise, PowerShell is more relaxed. It's case
 insensitive, meaning it doesn't care if you accidentally have an upper or lowercase where you aren't
-supposed to. It will interpret `Write-Output` and `write-output` the same. So, the main thing to
+supposed to. It interprets `Write-Output` and `write-output` the same. So, the main thing to
 watch out for is misspellings or not having a space where you should.
 
 If you do encounter and error, it might look something like this:
@@ -123,8 +123,8 @@ error, and sometimes a suggestion to fix it.
 
     You create a code comment by prefixing a line with the `#` character. This technique can be useful
     in avoiding code you don't want to run right now but don't want to remove entirely. Comments are
-    also used to add information for yourself or others that will read your code later on. Comments can
-    be placed anywhere in your code and any text after the `#` on the same line will be commented out.
+    also used to add information for yourself or others that read your code later on. Comments can
+    be placed anywhere in your code and any text after the `#` on the same line is commented out.
 
 ### How did your program work?
 
