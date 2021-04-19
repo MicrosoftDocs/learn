@@ -101,33 +101,33 @@ error, and sometimes a suggestion to fix it.
    to comment it out by adding a `#` before the command. Add the following lines of code and the
    result should look like this:
 
-```powershell
-# Write-Output -InputObject 'Hello World!'
+    ```powershell
+    # Write-Output -InputObject 'Hello World!'
 
-$name = Read-Host -Prompt "Please enter your name"
-Write-Output "Congratulations $name! You have written your first code with PowerShell!"
-```
+    $name = Read-Host -Prompt "Please enter your name"
+    Write-Output "Congratulations $name! You have written your first code with PowerShell!"
+    ```
 
-2. Do the same thing as before, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code. Now, you
+1. Do the same thing as before, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code. Now, you
    should run the script with the same command:
 
-```powershell
-. ./HelloWorld.ps1
-```
+    ```powershell
+    . ./HelloWorld.ps1
+    ```
 
-3. You should receive a prompt asking you for your name. Type in your name and press
+1. You should receive a prompt asking you for your name. Type in your name and press
    <kbd>Enter</kbd>.
 
-The output should show the following message with your name inserted.
+    The output should show the following message with your name inserted.
 
-```Output
-Congratulations Chase! You have written your first code PowerShell!
-```
+    ```Output
+    Congratulations Chase! You have written your first code PowerShell!
+    ```
 
-You create a code comment by prefixing a line with the `#` character. This technique can be useful
-in avoiding code you don't want to run right now but don't want to remove entirely. Comments are
-also used to add information for yourself or others that will read your code later on. Comments can
-be placed anywhere in your code and any text after the `#` on the same line will be commented out.
+    You create a code comment by prefixing a line with the `#` character. This technique can be useful
+    in avoiding code you don't want to run right now but don't want to remove entirely. Comments are
+    also used to add information for yourself or others that will read your code later on. Comments can
+    be placed anywhere in your code and any text after the `#` on the same line will be commented out.
 
 ### How did your program work
 
