@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.researcher-introduction-to-cloud
+hidden: true
+metadata:
+  title: Introduction to the Azure Cloud for Researchers
+  description: TBD
+  brand: azure
+  ms.date: 04/19/2021
+  author: MaximRouiller
+  ms.author: marouill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to the Azure Cloud for Researchers
+summary: TBD
+prerequisites: None
+iconUrl: /learn/achievements/researcher-introduction-to-cloud.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- higher-ed-educator
+products:
+- azure
+- azure-storage
+- azure-virtual-machines
+modules:
+- learn.azure.intro-to-azure-fundamentals
+- learn.azure.azure-architecture-fundamentals
+- learn.azure.azure-database-fundamentals
+- learn.azure.azure-compute-fundamentals
+- learn.azure.azure-storage-fundamentals
+- learn.introduction-to-azure-virtual-machines
+- learn.choose-storage-approach-in-azure
+- learn.create-azure-storage-account
+- learn.choose-the-right-disk-storage-for-vm-workload
+trophy:
+  uid: learn.researcher-introduction-to-cloud.trophy
