@@ -18,11 +18,11 @@ Microsoft will notify customers of any breach of customer or personal data withi
 
 ## Shared responsibility
 
-Microsoft is responsible for monitoring and remediating security and availability incidents affecting the Azure platform and notifying customers of any security breaches involving customer or personal data. Azure has a mature security and privacy incident management process that is used for this purpose. Customers are responsible for monitoring their own resources provisioned in Azure. 
+Microsoft is responsible for monitoring and remediating security and availability incidents affecting the Azure platform and notifying customers of any security breaches involving customer or personal data.  Azure has a mature security and privacy incident management process that is used for this purpose. It’s critical to understand the [shared responsibility](https://aka.ms/sharedresponsibility) and which security tasks are handled by the cloud provider and which tasks are handled by you. Customers are responsible for monitoring their own resources provisioned in Azure.
 
-The NIST [SP 800-145](https://csrc.nist.gov/publications/detail/sp/800-145/final) standard defines the following cloud service models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). The [shared responsibility](https://aka.ms/sharedresponsibility) model for cloud computing is shown in Figure 5. With on-premises deployment in their own datacenter, customers assume the responsibility for all layers in the stack. As workloads get migrated to the cloud, Microsoft assumes progressively more responsibility, depending on the cloud service model. For example, with the IaaS model, Microsoft's responsibility ends at the Hypervisor layer, and customers are responsible for all layers above the virtualization layer, including maintaining the base operating system in guest Virtual Machines.
+The NIST [SP 800-145](https://csrc.nist.gov/publications/detail/sp/800-145/final) standard defines the following cloud service models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).  With on-premises deployment in their own datacenter, customers assume the responsibility for all layers in the stack.  As workloads get migrated to the cloud, Microsoft assumes progressively more responsibility, depending on the cloud service model. For example, with the IaaS model, Microsoft’s responsibility ends at the Hypervisor layer, and customers are responsible for all layers above the virtualization layer, including maintaining the base operating system in guest Virtual Machines.
 
-The table below is a simplified version of the shared responsibility model in cloud computing. Each customer environment is isolated on top of Azure infrastructure. Items in italics are managed by the customer, items in regular font are managed by the vendor.
+The following table is a simplified version of the shared responsibility model in cloud computing. Each customer environment is isolated on top of Azure infrastructure. Items in italics are managed by the customer, items in regular font are managed by the vendor.
 
 | On-premises     | Infrastructure (as a Service) | Platform (as a Service) | Software (as a Service) |
 |-----------------|-------------------------------|-------------------------|-------------------------|
@@ -37,6 +37,6 @@ The table below is a simplified version of the shared responsibility model in cl
 | *Networking*    | Networking                    | Networking              | Networking              |
 | **Azure**       | **Azure**                     | **Azure**               | **Office 365**          |
 
-In line with the shared responsibility model, Microsoft doesn't inspect, approve, or monitor individual customer applications deployed in Azure. For example, Microsoft doesn't know what ports need to be open for customer's application to function correctly, what the back-end data schema looks like, what constitutes normal network traffic for the application, and so on.
+In line with the shared responsibility model, Microsoft doesn’t inspect, approve, or monitor individual customer applications deployed in Azure.  For example, Microsoft doesn’t know what ports need to be open for customer’s application to function correctly, what the back-end data schema looks like, what constitutes normal network traffic for the application, and so on.
 
 Next, let’s explore further options for data protection.
