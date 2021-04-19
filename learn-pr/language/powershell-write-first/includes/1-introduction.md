@@ -16,7 +16,7 @@ encourage you to type along with the exercises in this module and others in this
 Typing the code yourself in each exercise and solving the coding challenges will accelerate your
 learning and teach you small foundational concepts to build on with practice and exploration.
 
-## Learning Objectives
+## Learning objectives
 
 - Manage PowerShell inputs and outputs
 - Diagnose errors when you type code incorrectly

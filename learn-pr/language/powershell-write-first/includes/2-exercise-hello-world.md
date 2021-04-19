@@ -19,51 +19,50 @@ write and run scripts.
 
 1. Type this code into the Cloud Shell terminal on the right:
 
-```powershell
-New-Item HelloWorld.ps1
-code HelloWorld.ps1
-```
+    ```powershell
+    New-Item HelloWorld.ps1
+    code HelloWorld.ps1
+    ```
 
-The `New-Item` command will create a new `.ps1` file in the current directory. The `.ps1` file
-extension is the file extension for PowerShell scripts.
+    The `New-Item` command will create a new `.ps1` file in the current directory. The `.ps1` file
+    extension is the file extension for PowerShell scripts.
 
-The `code` command followed by the file name of the script you want to open will open the file in
-the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and save
-them to run in the Cloud Shell. If you want to open a file stored in another location, instead of
-just the filename, you can define a full file path.
+    The `code` command followed by the file name of the script you want to open will open the file in
+    the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and save
+    them to run in the Cloud Shell. If you want to open a file stored in another location, instead of
+    just the filename, you can define a full file path.
 
-2. In the opened code editor window, type the following code:
+1. In the opened code editor window, type the following code:
 
-```powershell
-Write-Output 'Hello World!'
-```
+    ```powershell
+    Write-Output 'Hello World!'
+    ```
 
-3. Once you have the code fully typed, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code.
+1. Use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS) to save the file.
 
-We'll explain how and why it works soon. But first, you should see it running to make sure you
-didn't type it incorrectly. To do that, you will need to run your code.
+    We'll explain how and why it works soon. But first, you should see it running to make sure you
+    didn't type it incorrectly. To do that, you will need to run your code.
 
-> [!NOTE]
-> You might be tempted to use the `Copy` button on the code sample to skip all the typing. However,
-> we encourage you to type this line of code yourself. Typing the code yourself builds muscle memory
-> an helps you gain insights that you wouldn't get otherwise.
+    > [!NOTE]
+    > You might be tempted to use the `Copy` button on the code sample to skip all the typing. However,
+    > we encourage you to type this line of code yourself. Typing the code yourself builds muscle memory
+    > an helps you gain insights that you wouldn't get otherwise.
 
 ### Step 2: Run the script
 
-1. You'll run the script from the Cloud Shell by typing the following command into the terminal
-   portion of the Cloud Shell:
+1. Enter this command into the Cloud Shell terminal to run the script:
 
-```powershell
-. ./HelloWorld.ps1
-```
+    ```powershell
+    . ./HelloWorld.ps1
+    ```
 
-> [!NOTE]
-> Be sure to use the period at the beginning of a command. This tells PowerShell to run the script
-> or file being called.
+    > [!NOTE]
+    > Be sure to use the period at the beginning of a command. This tells PowerShell to run the script
+    > or file being called.
 
 ### Step 3: Observe the result
 
-You should see the following output in the Cloud Shell:
+You see the following output in the Cloud Shell:
 
 ```Output
 Hello World!
@@ -71,11 +70,10 @@ Hello World!
 
 ### What to do if you see an error message
 
-Unlike many languages, PowerShell is a forgiving language. Where other languages require every
-character to be precise, PowerShell is more relaxed. It's case insensitive, meaning it doesn't care
-if you accidentally have an upper or lowercase where you aren't supposed to. It will interpret
-`Write-Output` and `write-output` the same. So, the main thing to watch out for is misspellings or
-not having a space where you should.
+Where other languages require every character to be precise, PowerShell is more relaxed. It's case
+insensitive, meaning it doesn't care if you accidentally have an upper or lowercase where you aren't
+supposed to. It will interpret `Write-Output` and `write-output` the same. So, the main thing to
+watch out for is misspellings or not having a space where you should.
 
 If you do encounter and error, it might look something like this:
 
@@ -99,7 +97,7 @@ error, and sometimes a suggestion to fix it.
 
 1. In the **HelloWorld.ps1** file that should still be open, modify the code you wrote in the editor
    to comment it out by adding a `#` before the command. Add the following lines of code and the
-   result should look like this:
+   result looks like this:
 
     ```powershell
     # Write-Output -InputObject 'Hello World!'
@@ -108,17 +106,16 @@ error, and sometimes a suggestion to fix it.
     Write-Output "Congratulations $name! You have written your first code with PowerShell!"
     ```
 
-1. Do the same thing as before, press <kbd>Ctrl</kbd>+<kbd>s</kbd> to save your code. Now, you
-   should run the script with the same command:
+1. Save the file and run the script with the same command:
 
     ```powershell
     . ./HelloWorld.ps1
     ```
 
-1. You should receive a prompt asking you for your name. Type in your name and press
+1. You receive a prompt asking you for your name. Type in your name and press
    <kbd>Enter</kbd>.
 
-    The output should show the following message with your name inserted.
+    The output shows the following message with your name inserted.
 
     ```Output
     Congratulations Chase! You have written your first code PowerShell!
@@ -129,12 +126,11 @@ error, and sometimes a suggestion to fix it.
     also used to add information for yourself or others that will read your code later on. Comments can
     be placed anywhere in your code and any text after the `#` on the same line will be commented out.
 
-### How did your program work
+### How did your program work?
 
-You invoked a cmdlet called `Write-Output`. Cmdlets are compiled code written in [.NET](https://docs.microsoft.com/dotnet/core/introduction)
-based languages like C#. Cmdlets are the main way you use PowerShell. The command syntax is a
-`Verb-Noun` format. This makes it easy to understand what the code is trying to do. The cmdlets name
-is its intent. Do something (Verb) to a thing (Noun).
+You invoked a cmdlet called `Write-Output`. Cmdlets are the main way you use PowerShell. The command
+syntax is a `Verb-Noun` format. This makes it easy to understand what the code is trying to do. The
+cmdlets name is its intent. Do something (Verb) to a thing (Noun).
 
 `Hello World!` and the congratulatory sentence are both **string** inputs for the `Write-Output`
 cmdlet to process and output. A string is a simple data type that computers use. We will learn about
@@ -145,13 +141,13 @@ the user with the `-Prompt` parameter. Parameters allow the cmdlet to take input
 input is stored in a **variable** called `$name` and then we use the `Write-Output` cmdlet to
 display the custom message in the Cloud Shell terminal.
 
-We'll learn more about variables in a later module. For now, just think of them as a way to store
-something in it to make your code more flexible. Instead of having to type a name into every
-program, you can store a value in a variable and reuse it to get different results. You define a
-variable with the dollar symbol (`$`) at the beginning of a word. After the word, use an equal sign
-(`=`) followed by the value you want to store in the variable. In this example, we stored your name.
-Variables can be named anything, but it's best to name them something that helps you understand
-what it's storing and where to use it. For example, `$name` is storing your name.
+We'll learn more about variables in a later module. For now, just think of them as containers that
+store values to make your code more flexible. Instead of having to type a name into every program,
+you can store a value in a variable and reuse it to get different results. You define a variable
+with the dollar symbol (`$`) at the beginning of a word. After the word, use an equal sign (`=`)
+followed by the value you want to store in the variable. In the example above, we stored your name.
+Variables can be named anything, but it's best to name them something that helps you understand what
+it's storing and where to use it. For example, `$name` is storing your name.
 
 Many cmdlets work similarly to the example above. An input is provided to the cmdlet, the
 cmdlet does something, then the cmdlet provides an output. This can be something like writing

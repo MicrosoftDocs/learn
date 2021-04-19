@@ -1,7 +1,7 @@
 To understand how your code works, we need to talk about a few things. Like what a _program_ is, what
 a _programming language_ is, and how it communicates commands to your computer.
 
-## What is a Program
+## What is a program?
 
 A program is a set of instructions that complete computing tasks. The instructions are compiled into
 a format the computer can understand and then run by a _user_. A _user_ can be a person or another
@@ -33,7 +33,7 @@ A program can take different forms for different purposes. A program can be:
 Some programs, including ones you'll write, only need a few lines of code. But complex
 programs like operating systems need tens of thousands, sometimes millions of lines of code.
 
-## What is a programming language
+## What is a programming language?
 
 The job of a programming language is to enable a person to write instructions for a computer in a
 human-readable and understandable way. Computers understand things in a very different way than what
@@ -45,7 +45,7 @@ There are many programming languages and they all have different syntax. However
 your first programming language, many of the concepts you learn will carry into other languages
 making them easier to learn.
 
-## What is Syntax
+## What is syntax?
 
 Like any language, programming languages have their own grammatical rules to use the language
 effectively called **syntax**. The syntax of a programming language includes **keywords**,
@@ -76,7 +76,7 @@ run. Other languages like Python have what's called an interpreter that interpre
 computer and execute the code one line at a time as it's interpreting it. PowerShell works a little
 differently and a little similarly to both of these.
 
-PowerShell is compiled into an **AST** (Abstract Syntax Tree) first in memory and then run. You
+PowerShell is compiled into an **AST** (abstract syntax tree) first in memory and then run. You
 don't need to do a deep dive here to use PowerShell. All you need to know is that the computer
 checks your code first in the AST looking for major issues. Then, if everything is ok, your program
 is run by the computer without the need for a a compiled executable program. This is useful as it
