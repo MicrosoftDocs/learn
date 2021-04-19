@@ -2,10 +2,10 @@ PowerShell is a powerful, cross-platform task automation and configuration manag
 consists of a command-line shell and programming language. Among its uses, some of the common ones
 are:
 
-- Task Automation and orchestration
+- Task automation and orchestration
 - Configuration management
-- Server and Cloud management
-- Custom Tool Making
+- Server and cloud management
+- Custom tool making
 - Scripting
 
 PowerShell is a great language to learn whether you have prior programming experience or not. It's
