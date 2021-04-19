@@ -23,7 +23,6 @@ With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machi
     :::image type="icon" source="../media/icon-virtual-machine.png" border="false":::
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     :::image type="icon" source="../media/icon-scale-sets.png" border="false":::
@@ -36,7 +35,6 @@ With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machi
 
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column span="3":::
 
@@ -49,7 +47,6 @@ With [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machi
     :::image type="icon" source="../media/icon-container-instance.png" border="false":::
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column:::
     :::image type="icon" source="../media/icon-app-service.png" border="false":::
@@ -62,7 +59,6 @@ With [Azure App Service](https://azure.microsoft.com/services/app-service?azure-
 
   :::column-end:::
 :::row-end:::
-
 :::row:::
   :::column span="3":::
 

@@ -25,7 +25,7 @@ prerequisites: |
   - Basic familiarity with C# and Unity scripting
 iconUrl: /learn/achievements/render-model-azure-remote-rendering-unity.svg
 levels:
-- intermediate
+- beginner
 roles:
 - developer
 products:

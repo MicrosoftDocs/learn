@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-bot-with-bot-framework-composer.adaptive-clow
+title: Understand adaptive flow
+metadata:
+  title: Understand adaptive flow
+  description: "Understand adaptive flow"
+  ms.date: 04/05/2021
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-adaptive-flow.md)]

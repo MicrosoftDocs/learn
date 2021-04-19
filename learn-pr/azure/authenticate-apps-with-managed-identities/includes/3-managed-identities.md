@@ -1,6 +1,6 @@
 Azure managed identity is a feature of Azure Active Directory (Azure AD) that you can use free of charge. This feature automatically creates identities to allow apps to authenticate with Azure resources and services.
 
-Imagine that your company has moved all of its applications from on-premises servers to Azure-hosted virtual machines. The on-premises applications authenticated to Azure by using service principals. Now that you host the applications on virtual machines in Azure, you can use managed identities.
+Imagine that your company has moved all of its applications from on-premises servers to Azure-hosted virtual machines (VMs). The on-premises applications authenticated to Azure by using service principals. Now that you host the applications on VMs in Azure, you can use managed identities.
 
 In this unit, you'll explore the managed identity feature. You'll see how it works and what resources you can access in Azure.
 
@@ -34,23 +34,23 @@ The status of the managed identity is directly linked to the status of the resou
 
 ### User-assigned managed identity
 
-User-assigned managed identity is created as a standalone Azure resource. It's independent of any app. When user-assigned identity is provisioned, Azure creates a service principal just as it does for a system-assigned identity. 
+User-assigned managed identity is created as a standalone Azure resource. It's independent of any app. When user-assigned identity is provisioned, Azure creates a service principal just as it does for a system-assigned identity.
 
-However, a user-assigned identity isn't tied to a specific resource, so you can assign it to more than one application. For example, if your web app is deployed on 10 front-end VMs, you create a user-assigned managed identity for the app and then associate it with all 10 VMs. If you used system-assigned identity, you would need 10 identities, and then you would have to manage the access for each one.
+However, a user-assigned identity isn't tied to a specific resource, so you can assign it to more than one application. For example, if your web app is deployed on 10 front-end VMs, you create a user-assigned managed identity for the app, and then associate it with all 10 VMs. If you used system-assigned identity, you would need 10 identities, and then you would have to manage the access for each one.
 
-## Using managed identities with Azure resources
+## Use managed identities with Azure resources
 
-Your stock-tracking application retrieves database credentials from an Azure key vault. When the application ran on-premises, it used a service principal and certificates to access credentials in the vault. Now that you host the VM on Azure, you can use a system-assigned identity instead.
+Your stock-tracking application retrieves database credentials from an Azure Key Vault. When the application ran on-premises, it used a service principal and certificates to access credentials in the vault. Now that you host the VM on Azure, you can use a system-assigned identity instead.
 
 To set up a managed identity:
 
 1. In the Azure portal, go to the VM that hosts the app.
-1. On the overview page, under **Settings**, select **Identity**.
-1. Choose a system-assigned identity or a user-assigned identity. To do so, change the status to **On**. 
+1. On the overview page, in the left menu pane, under **Settings**, select **Identity**.
+1. Choose a system-assigned identity or a user-assigned identity. To do so, change the status to **On**.
 1. Save the changes.
 
-Next, the system reminds you that the server will be registered with Azure AD and that you can grant permissions to resources there.
+Next, the system reminds you that the server will be registered with Azure AD, and that you can grant permissions to resources there.
 
-You can always see the current managed identities for the subscription in Azure AD, on the **Enterprise applications** page. On the overview page, you can assign users and change permissions.
+You can always see the current managed identities for the subscription in Azure AD on the **Enterprise applications** pane. On the overview page, you can assign users and change permissions.
 
 :::image type="content" source="../media/3-managed-identity.png" alt-text="Screenshot of the Azure portal, showing the overview page for a managed identity." loc-scope="azure-active-directory-b2c":::

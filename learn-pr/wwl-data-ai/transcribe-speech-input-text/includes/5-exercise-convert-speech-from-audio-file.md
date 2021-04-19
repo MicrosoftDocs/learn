@@ -10,6 +10,8 @@ The environment for this exercise will make use of Visual Studio Code as the edi
 
 1. If you will be completing your coding with Python, ensure you have a [Python environment](https://www.python.org/downloads/) installed locally.
 1. Once you have Python installed, you will need to [install the extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) for VS Code.
+1. Use `pip` to install the [Cognitive Services Speech SDK](https://pypi.org/project/azure-cognitiveservices-speech/) package.
+1. You will also make use of a recorded .wav file in this exercise. Download the narration.wav file by [cloning this repo](https://github.com/MicrosoftLearning/AI-102-Process-Speech/tree/master/transcribe_speech_to_text) to your local computer. Once you have cloned the repo, either place the narration.wav file in a location where your code will be executed, or update the path in the code to match the location of the file.
 
 ### C#
 

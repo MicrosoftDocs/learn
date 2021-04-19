@@ -9,6 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
 summary: |
   Core solutions encompass a wide array of tools and services from Microsoft Azure. In this learning path, you'll be introduced to many of these tools and services and will be asked to help choose the best one for a given business scenario.
@@ -93,7 +94,6 @@ products:
 - azure-iot-hub
 - azure-iot-central
 modules:
-- learn.azure.intro-to-azure-fundamentals
 - learn.azure.ai-machine-learning-fundamentals
 - learn.azure.azure-devops-devtest-labs
 - learn.azure.monitoring-fundamentals

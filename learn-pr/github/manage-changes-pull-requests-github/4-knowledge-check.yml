@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "What is **not** a good reason to create a pull request?"
     choices:
-    - content: "You would like to receive feedback on prospective changes before merging your feature branch into `master`."
+    - content: "You would like to receive feedback on prospective changes before merging your feature branch into `main`."
       isCorrect: false
       explanation: "Pull requests are a great way to collaborate on proposed changes."
-    - content: "You want to merge your bug fix branch into `master`, but do not have permission."
+    - content: "You want to merge your bug fix branch into `main`, but do not have permission."
       isCorrect: false
       explanation: "Many projects protect important branches and require changes to be reviewed via pull request before approving."
-    - content: "Your branch cannot be merged into `master` due to upstream changes made since you created it. Creating a pull request will let the other contributor know they need to pull their changes out so you can put yours in."
+    - content: "Your branch cannot be merged into `main` due to upstream changes made since you created it. Creating a pull request will let the other contributor know they need to pull their changes out so you can put yours in."
       isCorrect: true
       explanation: "This is not how pull requests work. Also, the etiquette is for you to be sure your branch can be cleanly merged into the base before creating a pull request."
   - content: "How can you ensure that pull requests for a given area of the repository are not merged unless certain users or teams have approved?"

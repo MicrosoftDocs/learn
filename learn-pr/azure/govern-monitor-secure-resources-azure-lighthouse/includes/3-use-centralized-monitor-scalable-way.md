@@ -10,23 +10,22 @@ Relecloud provides managed services to multiple businesses more securely without
 
 ## Use Log Analytics workspaces
 
-To collect data across customer tenants, you’ll need to create Log Analytics workspaces in Azure.  These workspaces are separate environments that are used for data collection by Azure Monitor. Every workspace has its own configuration and repository for collected data. When you configure data sources with workspaces, the data will be stored in its assigned workspace.
+To collect data across customer tenants, you’ll need to create Log Analytics workspaces in Azure. These workspaces are separate environments that are used for data collection by Azure Monitor. Every workspace has its own configuration and repository for collected data. When you configure data sources with workspaces, the data will be stored in its assigned workspace.
 
-Microsoft recommends that you create workspaces directly in customer tenants. This will help ensure that each customer’s data remains in their tenant. This way, you achieve centralized monitoring for services and resources.
+We recommend that you create workspaces directly in customer tenants. This will help ensure that each customer’s data remains in their tenant. This way, you achieve centralized monitoring for services and resources.
 
 You can create Log Analytics workspaces through the Azure portal, Azure CLI, or Azure PowerShell.
 
-In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal:
-
+In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vU]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find, where applicable, additional information in captions.
+> This is a silent video. You'll find, where applicable, additional information in captions.
 
 ## Deploy policies to log data
 
-Policies help your company to stay compliant with corporate standards and its service level agreements with customers. After you've created the Log Analytics workspaces, you can deploy policies through Azure Policy to ensure that diagnostic information is always sent to the correct workspace in each tenant. You use Azure Policy to create and manage policies in Azure.  You take the following steps to create policies:
+Policies help your company to stay compliant with corporate standards and its service level agreements with customers. After you've created the Log Analytics workspaces, you can deploy policies through Azure Policy to ensure that diagnostic information is always sent to the correct workspace in each tenant. You use Azure Policy to create and manage policies in Azure. Perform the following steps to create policies:
 
 - Create a policy definition to specify what actions are enforced and under which conditions.
 - Create an assignment to specify which resources or subscription the policy definition should be enforced on.
@@ -34,15 +33,15 @@ You create policies using tools like the Azure portal, Azure CLI, and PowerShell
 
 Details of the policies will vary based on the customer and the resource types you're monitoring. You'll have to determine the policies you want to deploy depending on your needs.
 
-Your company provides different kinds of managed services for customers so you'll manage a variety of resources. You use the Azure Diagnostics Policy Generator community tool to apply policies across many different Azure resource types at the same time. The tool is [available on GitHub](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/tools/azure-diagnostics-policy-generator). <!--CE: Suggest amending this sentence to: 'There's a process you need to follow to configure and use this tool.--> There are different things you do to configure and use this tool. At a higher level, you perform the following steps:
+Your company provides different kinds of managed services for customers so you'll manage a variety of resources. You use the Azure Diagnostics Policy Generator community tool to apply policies across many different Azure resource types at the same time. The tool is [available on GitHub](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/tools/azure-diagnostics-policy-generator). There's a process you must follow to configure and use this tool. At a higher level, perform the following steps:
 
-1. Run the **Create-AzDiagPolicy.PS1** script using Azure PowerShell. This script creates policies for any Azure resource types that support Azure Diagnostics metrics and logging, and feeds data into Log Analytics or Event Hub for you. You run the following command in Azure PowerShell to execute this script and ensure diagnostics are always fed into Log Analytics:
+1. Run the **Create-AzDiagPolicy.PS1** script using Azure PowerShell. This script creates policies for any Azure resource types that support Azure Diagnostics metrics and logging, and feeds data into Log Analytics or Event Hub for you. You run the following command in Azure PowerShell to execute this script and ensure diagnostics are always fed into Log Analytics.
 
     ```azurepowershell
     .\Create-AzDiagPolicy.ps1 -ExportAll -ExportLA -ValidateJSON -ManagementGroup -AllRegions -ExportInitiative -InitiativeDisplayName "Azure Diagnostics Policy Initiative for a Log Analytics Workspace" -TemplateFileName 'YourTemplate'
     ```
 
-    When it finishes running, this script creates a Resource Manager template. The template will apply the policies across resources. You then deploy the template to Azure:
+    When it finishes running, this script creates a Resource Manager template. The template will apply the policies across resources. You then deploy the template to Azure.
 
     ```azurepowershell
     Select-AzSubscription -Subscription "<subscription-id>"
@@ -50,35 +49,34 @@ Your company provides different kinds of managed services for customers so you'l
     New-AzDeployment -Name "<Deployment Name>"-TemplateFile .\YourTemplate.json -Location 'West US' -Verbose
     ```
 
-1. Run the **Trigger-PolicyEvaluation.ps1** script to trigger an evaluation that returns information on compliance with the policies. Use the following command to trigger an evaluation at a subscription level:
+1. Run the **Trigger-PolicyEvaluation.ps1** script to trigger an evaluation that returns information on compliance with the policies. Run the following command to trigger an evaluation at a subscription level.
 
     ```azurepowershell
     .\Trigger-PolicyEvaluation.ps1 -SubscriptionId "<subscription-id>"
     ```
 
-1. Run the **Trigger-PolicyInitiativeRemediation.PS1** script. This script ensures that all policies receive remediation if they aren't compliant. It will launch a remediation process for every policy, to try, and bring all resources to full compliance with each one.  Use the following command to run the script at a subscription level:
+1. Run the **Trigger-PolicyInitiativeRemediation.PS1** script. This script ensures that all policies receive remediation if they aren't compliant. It will launch a remediation process for every policy, to try, and bring all resources to full compliance with each one. Run the following command to run the script at a subscription level.
 
     ```azurepowershell
     .\Trigger-PolicyInitiativeRemediation.ps1 -SubscriptionId "<subscription-id>"
     ```
 
-1. After you’ve executed the remediation script, use the Azure portal to review your remediation tasks, and look out for any other issues that need manual remediation:  
+1. After you’ve executed the remediation script, use the Azure portal to review your remediation tasks, and look out for any other issues that need manual remediation. 
 
 ### Analyze logged data
 
-When you've deployed policies, data collected will be logged to the workspaces created for each customer. You can analyze the data and get insight across all of your customers’ tenants using tools like Azure Monitor Workbooks:
+When you've deployed policies, data collected will be logged to the workspaces created for each customer. You can analyze the data and get insight across all of your customers’ tenants using tools like Azure Monitor Workbooks.
 
 :::image type="content" source="../media/3-analyzed-logged-data.png" alt-text="Analyze logged data":::
 
 Workbooks can be shared across the organization or with outside groups in the wider community.
 
-In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook and run it across customer workspaces:
-
+In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook, and run it across customer workspaces.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AZgz]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find additional information in captions.
+> This is a silent video. You'll find additional information in captions.
 
 ### Use multiple Log Analytics alerts
 
@@ -90,24 +88,24 @@ There's a template that creates multiple alerts based on Kusto Query Language (K
 
 You want to always be aware of when customer resources or subscriptions have been delegated to your tenant through Azure Lighthouse’s delegated resource management, or when delegations have been removed.
 
-You can use Azure’s activity log to monitor for delegation activity from customers. To access logs, you do the following:
+You can use Azure’s activity log to monitor for delegation activity from customers. To access logs, you do the following.
 
 ### Enable access to tenant scoped data
 
-You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant, to access activity log data.  This type of role can be assigned by any administrator user who has the Global administrator role, along with elevated access.
+You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant, to access activity log data. This type of role can be assigned by any administrator user who has the Global administrator role, along with elevated access.
 
-If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant:
+If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant.
 
 :::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access":::
 
-You then assign the *Monitoring Reader* role to the account you want to allow to access tenant-level data. This can be done through tools like Azure CLI, or Azure PowerShell. To assign a role using Azure PowerShell, run the following command:
+You then assign the *Monitoring Reader* role to the account you want to allow to access tenant-level data. This can be done through tools like Azure CLI, or Azure PowerShell. To assign a role using Azure PowerShell, run the following command.
 
 ```powershell
 # Log in first with Connect-AzAccount if you're not using Cloud Shell
 New-AzRoleAssignment -SignInName <yourLoginName> -Scope "/" -RoleDefinitionName "Monitoring Reader" -ApplicationId $servicePrincipal.ApplicationId
 ```
 
-Microsoft recommends that this is assigned to a service principal account rather than a single user, or group of users. The service principal account should only be used for this particular function and not for anything else.
+We recommend that this is assigned to a service principal account rather than a single user, or group of users. The service principal account should only be used for this particular function and not for anything else.
 
 Elevated access must be removed again after the role has been assigned to the service principal.
 
@@ -119,14 +117,14 @@ After you've created a service principal account that has the *Monitoring Reader
 
 The tenant activity log data returned contains useful information, including the following:
 
-- The ID of a delegated resource group or subscription
-- The tenant ID for a customer
-- Whether or not a delegation change was successful
+- ID of a delegated resource group or subscription
+- Tenant ID for a customer
+- Whether a delegation change was successful
 - The time and date when a change in delegation was logged
 
 You use an Azure PowerShell script to query the tenant activity log API in your managing tenant, and filter events related to customers who are registering or unregistering a delegation to your tenant. Write your script like this:
 
-1. Define the time frame (in this case, the last day). Get your current Azure context, and a token to make a call to the API:
+1. Define the time frame (in this case, the last day). Get your current Azure context, and a token to make a call to the API.
 
     ```powershell
     # Azure Lighthouse: Query Tenant Activity Log for registered or unregistered delegations for the last 1 day
@@ -154,7 +152,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     $list = Invoke-RestMethod @listOperations
     ```
 
-1. Aggregate all the tenant activity data:
+1. Aggregate all the tenant activity data.
 
     ```powershell
     # While you get data - continue fetching and add results 
@@ -167,7 +165,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     $showOperations = $data;
     ```
 
-1. Output information on any customer who has delegated resources to the Azure tenant:
+1. Output information on any customer who has delegated resources to the Azure tenant.
 
     ```powershell
     if ($showOperations.operationName.value -eq "Microsoft.Resources/tenants/register/action") {
@@ -189,7 +187,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     }
     ```
 
-    This helps you see details like the following:
+    This helps you see details like the following.
 
     |Detail  |Description  |
     |---------|---------|
@@ -199,7 +197,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     |CustomerDelegationStatus|The new status for the delegation of the resource|
     |EventTimeStamp|When the action took place|
 
-1. Output the same information on any customer who has unregistered delegated resources from your tenant:
+1. Output the same information on any customer who has unregistered delegated resources from your tenant.
 
     ```powershell
     if ($showOperations.operationName.value -eq "Microsoft.Resources/tenants/unregister/action") {
