@@ -32,9 +32,11 @@ cd petclinic
 sh deployPetClinicApp.sh
 ```
 
-## Load Data
+## Test the application
 
 Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
+
+![Real-time metrics](../media/4-petclinic.jpg)
 
 ## Next steps
 

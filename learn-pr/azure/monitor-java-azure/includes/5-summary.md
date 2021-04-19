@@ -1,18 +1,16 @@
-Congratulations! You've learned how to use Terraform to create automated pipelines.
+Congratulations! You've learned how to use Monitoring to for your Java Azure Applications.
 
-You've created an Azure App Service application and a MySQL database, and you've deployed a Spring Boot web application.
-
-Your company wanted to learn how to provision its existing Spring Boot Java web applications to Azure App Service.
+As an an infrastructure manager you were asked to monitor your Azure Java application and its dependencies.
 
 To that end, you've done the following actions:
 
-* You accessed and configured a sample Spring Boot web application.
+* Learnt about the different forms of Monitoring on Azure
 
-* You provisioned a MySQL database and an Azure App Service application by using Terraform and an automated workflow.
+* Build and deploy a Sample Microservices Application and configured it for Azure Application Performance Monitoring(APM).
 
-* You configured your GitHub repository to use an automated workflow to build and deploy your application on demand.
+* Monitored the application with Azure Application Insights.
 
-You're now able to recommend this architecture for your Spring Boot applications.
+You're now able to recommend this architecture for your Azure Java applications.
 
 ## Clean up your Azure resources
 
@@ -22,21 +20,10 @@ In the preceding processes, you created Azure resources. If you don't expect to 
 az group delete --name <your Resource Group Name> --yes
 ```
 
-If you created a Service Principal, delete the Service Principal by running the following commands in Azure Cloud Shell:
-
-```azurecli
-az ad sp delete --id <your Service Principal Name>
-```
-
-> [!IMPORTANT]
-> To avoid accruing unwanted charges, you must deprovision the Azure resources, Service Principal and automated workflows that you used in this module.
-
 ## Additional resources
 
-For more information about Terraform on Azure, see [Terraform on Azure documentation](https://docs.microsoft.com/azure/developer/terraform?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
+For more information on Azure Monitor, see [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
-For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
+For More information on Azure Spring Cloud, see [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
 
-For more information about GitHub Actions with Azure App Service, see [Deploy to App Service using GitHub Actions](https://docs.microsoft.com/azure/app-service/deploy-github-actions?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
-
-For more information about Azure Pipelines and Terraform, see [Azure Pipelines documentation](https://docs.microsoft.com/azure/devops/pipelines/release/automate-terraform?WT.mc_id=java-12761-ropreddy&WT.mc_id=java-334475​​​​​​​-ropreddy).
+For more information about using Azure with Java, see [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).

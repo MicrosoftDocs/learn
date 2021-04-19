@@ -2,14 +2,6 @@ In this exercise, you'll configure an the sample Application for Monitoring.
 
 # Monitor the Application
 
-## Real-time metrics
-
-Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
-
-![Real-time metrics](../media/4-petclinic.jpg)
-
-## Monitor microservice applications
-
 Open the Application Insights created by Azure Spring Cloud and start monitoring microservice applications.
 
 Navigate to the `Application Map` blade:
