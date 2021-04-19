@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.distributed
+title: Monitoring introduction
+metadata:
+  unitType: learning-content
+  title: Distributed monitoring
+  description: Distributed monitoring
+  ms.date: 4/8/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-distributed.md)]
