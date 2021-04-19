@@ -1,6 +1,6 @@
 Now that you've reviewed this module, you should be able to:
 
-- Explain how TypeScript how TypeScript is an improvement over JavaScript for web development.
+- Explain how TypeScript is an improvement over JavaScript for web development.
 - Select a TypeScript editor.
 - Install TypeScript.
 - Set up a TypeScript project in Visual Studio Code.
