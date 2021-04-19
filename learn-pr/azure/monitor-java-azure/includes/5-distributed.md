@@ -1,8 +1,11 @@
 In this unit, we look at Monitoring Distributed applications with OpenTelemetry.
 
-## What is OpenTelemetry?
+# What is OpenTelemetry?
 
 OpenTelemetry is an open source, vendor-agnostic, single distribution of libraries to provide metrics collection and distributed tracing for services.
+
+## What is the core API?
+
 The Azure core tracing package provides:
 
 - Context propagation, used to correlate activities and requests between services with an initial customer action.
@@ -81,7 +84,7 @@ System.out.println(resultCode.isSuccess());
 
 Some of the key concepts for the Azure Monitor exporter include:
 
-- [Opentelemetry][opentelemtry_spec]: OpenTelemetry is a set of libraries used to collect and export telemetry data
+- [OpenTelemetry][opentelemtry_spec]: OpenTelemetry is a set of libraries used to collect and export telemetry data
  (metrics, logs, and traces) for analysis in order to understand your software's performance and behavior.
 
 - [Instrumentation][instrumentation_library]: The ability to call the OpenTelemetry API directly by any application is
