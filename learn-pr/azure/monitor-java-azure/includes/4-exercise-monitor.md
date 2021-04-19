@@ -1,56 +1,69 @@
 In this exercise, you'll configure an the sample Application for Monitoring.
 
-## Monitor the Application
-
-We will illustrate this using a distributed version of Spring Petclinic. Navigate to the Application Map blade where you can see an incredible, holistic view of microservices that shows applications that are operating correctly (green) and those with bottlenecks (red) [Figure 1]. Developers can easily identify issues in their applications and quickly troubleshoot and fix them.
-
-## Performance of application dependencies
-
-Navigate to the Performance blade where you can see response times and request counts for operations exposed by your applications [Figure 2].
-Navigate to the Dependencies tab in the Performance blade where you can see all your dependencies and their response times and request counts [Figure 3].
-You can click a SQL call or a dependency to see the full end-to-end transaction in context [Figure 4].
-
-## Exceptions thrown by applications
-
-Navigate to the Exceptions tab in the Failures blade to see a collection of exceptions thrown by applications [Figure 5].
-
-## Microservice failures exceptions
-
-Simply select an exception and drill in for meaningful insights and actionable stack trace [Figure 6].
-
-## End-to-End transaction details
-
-Navigate to the Metrics blade to see all the metrics contributed by Spring Boot applications, Spring Cloud modules, and their dependencies. The chart below showcases gateway-requests contributed by Spring Cloud Gateway and hikaricp_connections contributed by JDBC [Figure 7]. Similarly, you can aggregate Spring Cloud Resilience4J metrics and visualize them.
-
-## custom metrics
-
-Spring Boot applications register a lot of core metrics – JVM, CPU, Tomcat, Logback, etc. You can use Micrometer to contribute your own custom metrics, say using the @Timed Micrometer annotation at a class level. You can then visualize those custom metrics in Application Insights. As an example, see how pet owners, pets, and their clinical visits are tracked by custom metrics below –you can also see how the pattern changes at 9 PM because applications are driving higher utilization when autoscaling kicked in [Figure 8].
-
-## Microservice availability
-
-You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This is a recurring test to monitor the availability and responsiveness of applications at regular intervals from anywhere across the globe. It can proactively alert you if your applications are not responding or if they respond too slowly. The chart below shows availability tests from across North America – West US, South Central, Central US, and East US [Figure 9].
+# Monitor the Application
 
 ## Real-time metrics
 
-Navigate to the Live Metrics blade where you can see live metrics practically in real-time, within only one second [Figure 10].
+Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
 
-When the **Application Insights** feature is enabled, you can:
+![Real-time metrics](../media/4-petclinic.jpg)
 
-In the left navigation pane, click **Application Insights** to jump to the **Overview** page of Application Insights. 
+## Monitor microservice applications
 
-* Click **Application Map** to see the status of calls between applications.
+Open the Application Insights created by Azure Spring Cloud and start monitoring microservice applications.
 
-* Click the link between customers-service and `petclinic` to see more details such as a query from SQL.
+Navigate to the `Application Map` blade:
 
-* In the left navigation pane, click **Performance** to see the performance data of all applications' operations, as well as dependencies and roles.
+![Application Map](../media/4-distributed-tracking-new-ai-agent.jpg)
 
-* In the left navigation pane, click **Failures** to see if something unexpected from your applications.
+Navigate to the `Performance` blade:
 
-* In the left navigation pane, click **Metrics** and select the namespace, you will see both Spring Boot metrics and custom metrics, if any.
+![Performance](../media/4-petclinic-microservices-performance.jpg)
 
-* In the left navigation pane, click **Live Metrics** to see the real time metrics for different dimensions.
+Navigate to the `Performance/Dependenices` blade - you can see the performance number for dependencies,
+particularly SQL calls:
 
-* In the left navigation pane, click **Availability** to monitor the availability and responsiveness of Web apps by creating Availability tests in Application Insights
+![Dependenices](../media/4-petclinic-microservices-insights-on-dependencies.jpg)
+
+Click on a SQL call to see the end-to-end transaction in context:
+
+![end-to-end](../media/4-petclinic-microservices-end-to-end-transaction-details.jpg)
+
+Navigate to the `Failures/Exceptions` blade - you can see a collection of exceptions:
+
+![Exceptions](../media/4-petclinic-microservices-failures-exceptions.jpg)
+
+Click on an exception to see the end-to-end transaction and stacktrace in context:
+
+![end-to-end transaction and stacktrace in context](../media/4-end-to-end-transaction-details.jpg)
+
+Navigate to the `Metrics` blade - you can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
+The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections) and `http_client_requests`.
+
+![gateway-requests](../media/4-petclinic-microservices-metrics.jpg)
+
+Spring Boot registers a lot number of core metrics: JVM, CPU, Tomcat, Logback...
+The Spring Boot auto-configuration enables the instrumentation of requests handled by Spring MVC.
+All those three REST controllers `OwnerResource`, `PetResource` and `VisitResource` have been instrumented by the `@Timed` Micrometer annotation at class level.
+
+* `customers-service` application has the following custom metrics enabled:
+  * @Timed: `petclinic.owner`
+  * @Timed: `petclinic.pet`
+* `visits-service` application has the following custom metrics enabled:
+  * @Timed: `petclinic.visit`
+
+You can see these custom metrics in the `Metrics` blade:
+
+![custom metrics](../media/4-petclinic-microservices-custom-metrics.jpg)
+
+You can use the Availability Test feature in Application Insights and monitor
+the availability of applications:
+
+![availability](../media/4-petclinic-microservices-availability.jpg)
+
+Navigate to the `Live Metrics` blade - you can see live metrics on screen with low latencies < 1 second:
+
+![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
 
 ## Next steps
 
