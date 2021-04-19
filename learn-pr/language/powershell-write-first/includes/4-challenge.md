@@ -1,4 +1,4 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain
+Code challenges throughout these modules reinforce what you've learned and help you gain
 confidence before moving on.
 
 ### Step 1: Close any open files in the Cloud Shell code editor

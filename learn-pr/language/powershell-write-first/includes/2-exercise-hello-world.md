@@ -24,7 +24,7 @@ write and run scripts.
     code HelloWorld.ps1
     ```
 
-    The `New-Item` command will create a new `.ps1` file in the current directory. The `.ps1` file
+    The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` file
     extension is the file extension for PowerShell scripts.
 
     The `code` command followed by the file name of the script you want to open will open the file in

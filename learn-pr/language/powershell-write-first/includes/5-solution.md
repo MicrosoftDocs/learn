@@ -19,5 +19,5 @@ If you were successful, congratulations! Continue on to the knowledge check in t
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, maybe you should review the previous units before
-> you continue on. All new ideas we discuss in other modules will depend on your understanding of
+> you continue on. All new ideas we discuss in other modules depend on your understanding of
 > the ideas that were presented in this module.

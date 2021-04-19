@@ -13,7 +13,7 @@ powerful and easy to learn because of its readability and focus on simplicity.
 
 The best way to learn how to code in any language is to _write_ as much code as possible. So, we
 encourage you to type along with the exercises in this module and others in this learning path.
-Typing the code yourself in each exercise and solving the coding challenges will accelerate your
+Typing the code yourself in each exercise and solving the coding challenges accelerate your
 learning and teach you small foundational concepts to build on with practice and exploration.
 
 ## Learning objectives
@@ -22,5 +22,5 @@ learning and teach you small foundational concepts to build on with practice and
 - Diagnose errors when you type code incorrectly
 - Identify different PowerShell elements like cmdlets, parameters, inputs, and outputs.
 
-These units will give you your first look at the PowerShell syntax. They provide invaluable insights
+These units give you your first look at the PowerShell syntax. They provide invaluable insights
 and introduce many new ideas, which will be expanded on in other modules.

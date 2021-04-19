@@ -5,10 +5,10 @@ a _programming language_ is, and how it communicates commands to your computer.
 
 A program is a set of instructions that complete computing tasks. The instructions are compiled into
 a format the computer can understand and then run by a _user_. A _user_ can be a person or another
-program. The computer will execute the instructions in order. One line at a time until there are no
+program. The computer executes the instructions in order. One line at a time until there are no
 more lines to execute or the program is explicitly told to stop.
 
-Even the most basic programs will do one or more of the following tasks:
+Even the most basic programs do one or more of the following tasks:
 
 - **Accepting Input** - Input includes information:
   - From a user typing on a keyboard or clicking on an interface
@@ -42,7 +42,7 @@ interfacing with computers to give them instructions. The instructions you write
 language is called "code".
 
 There are many programming languages and they all have different syntax. However, once you learn
-your first programming language, many of the concepts you learn will carry into other languages
+your first programming language, many of the concepts you learn can be carried into other languages
 making them easier to learn.
 
 ## What is syntax?
@@ -70,8 +70,8 @@ Computers aren't good at reading our programs in the way we write them. Programm
 to be translated into something the computer can understand. Different programming languages have a
 few ways of doing this.
 
-Many programming languages **compile** as an individual step. The user will write their code, run it
-through a special program called a compiler, and the compiler will produce an executable package to
+Many programming languages **compile** as an individual step. The user writes their code, run it
+through a special program called a compiler, and the compiler produces an executable package to
 run. Other languages like Python have what's called an interpreter that interpret the code for the
 computer and execute the code one line at a time as it's interpreting it. PowerShell works a little
 differently and a little similarly to both of these.
@@ -82,7 +82,7 @@ checks your code first in the AST looking for major issues. Then, if everything 
 is run by the computer without the need for a a compiled executable program. This is useful as it
 checks to make sure your code should run correctly before it tries to run in the computer itself
 where it could make changes and stop halfway due to a syntax error. As opposed to an interpreted
-language like Python that will start running the code until it finds something wrong in your syntax.
+language like Python that starts running the code until it finds something wrong in your syntax.
 
 ## Should I learn PowerShell first?
 
@@ -119,7 +119,7 @@ accessible in any PowerShell terminal including the Azure Cloud Shell terminal.
 Another great thing about PowerShell is that it comes with an integrated shell. The shell allows you
 to test your code and interact with the objects without having to run your code every time you want
 to test something. If you want to see if something works, you can type it right into the terminal to
-make sure your code will work as expected.
+make sure your code works as expected.
 
 PowerShell is also a useful tool in managing large-scale infrastructure. Since it's cross platform,
 you can use it in most environments.
