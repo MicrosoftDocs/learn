@@ -5,6 +5,7 @@ In the preceding exercise, you built the staging workflow for building and publi
 You'll build the tagged version by using a different workflow.
 
 In this exercise, you'll:
+
 - Build the Actions workflow
 - Create the trigger
 - Build and push the image
@@ -60,7 +61,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-1. Change the `name` key to `Build and push the tagged build to production`. 
+1. Change the `name` key to `Build and push the tagged build to production`.
 
    Your file should look like this example:
 
@@ -74,8 +75,8 @@ In this exercise, you'll:
 
 1. Change the default triggers in the `on` key.
 
-1. Remove the second trigger and leave only the `push` tags. 
-    
+1. Remove the second trigger and leave only the `push` tags.
+
     The keys should look like this example:
 
     ```yaml
@@ -107,7 +108,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template. 
+1. In the `steps` key, delete the last two commands, which are only examples from the template.
 
    Your file should look like this example:
 
@@ -137,7 +138,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
 
-1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
+1. Paste the copied YAML below the `- uses: actions/checkout@v2` key.
 
    Your YAML file should look like this example:
 
@@ -215,7 +216,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     |tags         |latest                                          |
 
     You can delete all the other keys because we won't use them in this exercise.
-    
+
     Your file should look like the following example:
 
     ```yaml
