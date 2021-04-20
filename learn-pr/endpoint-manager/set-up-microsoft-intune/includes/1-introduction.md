@@ -1,6 +1,6 @@
 The devices that the people at your organization use to be productive must be managed before you can give them access to your organization's resources. In addition, the same devices must be managed before you can configure the settings for those devices. You can use Microsoft Intune as a cloud-base endpoint management solution to manage both devices and apps.<p>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAoF9]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAoF9]
 
 Microsoft Intune, which is a part of Microsoft Endpoint Manager, provides the cloud infrastructure, the cloud-based mobile device management (MDM), the cloud-based mobile application management (MAM), and the cloud-based PC management for your organization. It lets you protect your organization by controlling features and settings on Android, Android Enterprise, iOS/iPadOS, macOS, and Windows 10 devices. It integrates closely with Azure Active Directory (Azure AD) for identity and access control and also Azure Information Protection to help protect your organization's data. If you have on-premises infrastructure, such as Exchange or an Active Directory, you can use Intune connectors to help you connect to external services. Intune is included in Microsoft's [Enterprise Mobility + Security (EMS) suite](https://www.microsoft.com/microsoft-365/enterprise-mobility-security?azure-portal=true).
 
