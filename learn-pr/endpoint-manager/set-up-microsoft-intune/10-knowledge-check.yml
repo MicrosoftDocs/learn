@@ -29,7 +29,7 @@ quiz:
     - content: "A tenant is a dedicated instance of Azure Active Directory (Azure AD) where your subscription to Intune is hosted. Your organization receives this tenant at the beginning of a relationship with Microsoft. It's in this Azure AD tenant that you register and manage your end user's devices and apps."
       isCorrect: true
       explanation: ""
-    - content: "A tenant doesn't related to device or app management."
+    - content: "A tenant isn't related to device or app management."
       isCorrect: false
       explanation: Your subscription to Intune is hosted by an Azure AD Tenant. The tenant represents your organization. It's in this Azure AD tenant that you register and manage your end user's devices and apps."
   - content: "Before you assign a role to a user in Intune, you must first assign the user an Intune license."
