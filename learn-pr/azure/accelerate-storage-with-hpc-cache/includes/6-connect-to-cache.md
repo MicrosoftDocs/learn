@@ -6,7 +6,7 @@ A **namespace** is a path that clients use to access storage. Client machines wi
 
 To add a new namespace, click the Namespace option in the left navigation. Press the "Add namespace path" button at the top.
 
-![Diagram showing the Namespace Path pane for Azure HPC Cache.](../media/hpc-cache-add-namespace.png)
+![Screenshot showing the Namespace Path pane for Azure HPC Cache.](../media/6-connect-to-cache-01-add-namespace.png)
 
 1. The namespace path must begin with the slash character (`/`). You could use something like `/hpc-cache/nfs-1` for example.
 1. Select the client access policy for this path from the dropdown menu.
@@ -29,7 +29,7 @@ NFS clients require network access, installed NFS utilities, and a local path fo
 
 Azure HPC Cache provides a `mount` command that you can copy and paste for your NFS clients.
 
-![Diagram showing the Connect to Cache settings for Azure HPC Cache.](../media/hpc-cache-connect-to-cache.png)
+![Screenshot showing the Connect to Cache settings for Azure HPC Cache.](../media/6-connect-to-cache-02-connect-to-cache.png)
 
 - With the cache open in the Azure Portal, click the "Mount Instructions" tab on the left.
 - In the "Client path" field, paste the full `sudo mkdir` command.

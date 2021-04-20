@@ -6,7 +6,7 @@ From the Azure Portal, click the HPC Cache resource. On the left navigation, cho
 
 An HPC Cache “storage target” is the storage location where your HPC data is kept like a NetApp or EMC Isilon appliance. Click the “Add Storage Target” button in the upper left.
 
-![Diagram showing the Add Storage Target pane for the Azure HPC Cache.](../media/hpc-cache-add-storage-target.png)
+![Screenshot showing the Add Storage Target pane for the Azure HPC Cache.](../media/5-connect-to-storage-01-add-storage-target.png)
 
 In the new pane, provide a name for your storage target. This name doesn’t have the strict requirements that other fields have and can include spaces.
 

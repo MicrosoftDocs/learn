@@ -1,14 +1,13 @@
-### YamlMime:ModuleUnit
 uid: learn.accelerate-storage-with-hpc-cache.connect-to-cache  
-title: Connect to the Cache
+title: Connect HPC Clients to HPC Cache
 metadata:
   unitType: learning-content  
-  title: Connect to the Cache # user input: module title for browser tab and search results
-  description: How to connect HPC clients to the HPC Cache # user input: a description for site search and SEO
+  title: Connect HPC Clients to HPC Cache
+  description: How to connect HPC clients to the HPC Cache
   ms.date: 3/17/2021  
   author: ronhogue  
   ms.author: rohogue  
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 2 # user input: the estimate time to complete the unit
+  ms.topic: interactive-tutorial
+durationInMinutes: 2
 content: |
   [!include[](includes/6-connect-to-cache.md)]
