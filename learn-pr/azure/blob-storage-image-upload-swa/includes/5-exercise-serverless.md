@@ -43,7 +43,14 @@ function generateSasToken(connectionString, container, permissions) {
 }
 ```
 
-Now it's time to implement the serverless function that will send the results from generateSasToken to the client. As you can see the function is quite basic:
+Then add the following `extractConnectionStringParts` function to your code:
+
+```javascript
+function extractConnectionStringParts() {
+}
+```
+
+Now it's time to implement the serverless function that will send the results from generateSasToken to the client:
 
 ```javascript
 module.exports = async function (context, req) {

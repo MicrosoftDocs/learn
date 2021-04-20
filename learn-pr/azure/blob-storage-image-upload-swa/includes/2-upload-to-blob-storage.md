@@ -10,4 +10,14 @@ Luckily, there's a solution for that. Add an Azure Functions backend that takes 
 
 :::image type="content" source="../media/architecture_2.png" alt-text="Static Web App and Blob Storage via Azure Functions":::
 
-Next you are going to setup your Blob Storage account.
+## Describe Containers
+
+describe the name of the container and explain that images are going to be stored there.
+
+## Describe Cross-Origin Resource Sharing
+
+Since you application lives in your company's domain name, while your Azure Blob Storage has a different location under yourcompany.azure.domain[FIX], for your frontend to be able to upload images to your storage account, you need to enable [Cross-Origin Resource Sharing](https://docs.microsoft.com/en-us/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) or CORS.
+
+CORS is required because web browsers have a security restriction called [same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) which prevents web pages from calling APIs in a different domain. By enabling CORS, you'll have a secure way to allow your app domain to make calls to your Azure Blob Storage account.
+
+Next you are going to setup your Blob Storage account, and enable CORS.

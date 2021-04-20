@@ -32,6 +32,7 @@ prerequisites: |
   -	Familiarity with Static Web Apps
   -	Familiarity with Azure Functions
   -	Node.js LTS and Visual Studio Code
+  - Azure Functions Core Tools installed
 units:
   - learn.blob-storage-image-upload-swa.1-introduction
   - learn.blob-storage-image-upload-swa.2-upload-to-blob-storage
