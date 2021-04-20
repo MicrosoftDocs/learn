@@ -6,7 +6,7 @@ Here, you'll learn how Azure HDInsight works. You'll learn all about the followi
 
 ## What is Apache Hadoop?
 
-Apache Hadoop <!--Andy, please verify edit--> is a cloud distributed data processing system that lies at the core of HDInsight. It consists of three components, which the following table describes.
+Apache Hadoop is a cloud distributed data processing system that lies at the core of HDInsight. It consists of three components, which the following table describes.
 
 | Apache Hadoop Component | Description                                                  |
 | ----------------------- | ------------------------------------------------------------ |
