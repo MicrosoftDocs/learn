@@ -29,6 +29,7 @@ Edit the deployPetClinicApp.sh and customize the below parameters for your envir
 
 ```bash
 cd petclinic
+az login
 sh deployPetClinicApp.sh
 ```
 

@@ -84,20 +84,18 @@ System.out.println(resultCode.isSuccess());
 
 Some of the key concepts for the Azure Monitor exporter include:
 
-- [OpenTelemetry][opentelemtry_spec]: OpenTelemetry is a set of libraries used to collect and export telemetry data
+- OpenTelemetry : OpenTelemetry is a set of libraries used to collect and export telemetry data
  (metrics, logs, and traces) for analysis in order to understand your software's performance and behavior.
 
-- [Instrumentation][instrumentation_library]: The ability to call the OpenTelemetry API directly by any application is
+- Instrumentation: The ability to call the OpenTelemetry API directly by any application is
  facilitated by instrumentation. A library that enables OpenTelemetry observability for another library is called an Instrumentation Library.
 
-- [Trace][trace_concept]: Trace refers to distributed tracing. It can be thought of as a directed acyclic graph (DAG) of Spans, where the edges between Spans are defined as parent/child relationship.
+- Trace: Trace refers to distributed tracing. It can be thought of as a directed acyclic graph (DAG) of Spans, where the edges between Spans are defined as parent/child relationship.
 
-- [Tracer Provider][tracer_provider]: Provides a `Tracer` for use by the given instrumentation library.
+- Tracer Provider: Provides a `Tracer` for use by the given instrumentation library.
 
-- [Span Processor][span_processor]: A span processor allows hooks for SDK's `Span` start and end method invocations. Follow the link for more information.
+- Span Processor: A span processor allows hooks for SDK's `Span` start and end method invocations. Follow the link for more information.
 
-- [Sampling][sampler_ref]: Sampling is a mechanism to control the noise and overhead introduced by OpenTelemetry by reducing the number of samples of traces collected and sent to the backend.
-
-For more information on the OpenTelemetry project, please review the [OpenTelemetry Specifications][opentelemetry_specification].
+- Sampling : Sampling is a mechanism to control the noise and overhead introduced by OpenTelemetry by reducing the number of samples of traces collected and sent to the backend.
 
 In the next exercise, we'll configure a sample application and set it up for OpenTelemetry.

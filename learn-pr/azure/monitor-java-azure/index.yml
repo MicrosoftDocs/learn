@@ -2,14 +2,14 @@
 uid: learn.monitor-java-azure
 metadata:
   moduleType: standard
-  title: Monitoring Java
-  description: Monitoring Java
+  title: Monitoring Java applications on Azure
+  description: Monitoring Java applications on Azure
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
 title: monitor-java-azure
-summary: Monitoring Java
+summary: Monitoring Java applications on Azure
 abstract: |
   By the end of this module, you can:
   - Get an understanding about monitoring Java Applications on Azure.
