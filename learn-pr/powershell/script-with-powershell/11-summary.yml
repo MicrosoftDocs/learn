@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.powershell.intro-to-powershell.9-summary
+uid: learn.powershell.scripting-with-powershell.11-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/7/2020
+  ms.date: 02/04/2021
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/11-summary.md)]
