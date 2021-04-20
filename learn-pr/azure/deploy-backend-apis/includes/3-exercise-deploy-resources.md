@@ -12,6 +12,7 @@ You'll then deploy an empty Azure Function app and configure its yaml file and G
 The first required step is to set up your development environment. Refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
 
 ## Deploy and configure Azure SQL Database
+
 In order to set up the database for the bus-catching scenario, you'll first need to deploy a database to work with. To deploy it, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll use Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
