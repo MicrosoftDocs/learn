@@ -13,15 +13,15 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
 1. Open Visual Studio and find the ASP.NET Core Web API app.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="Visual Studio Solution Opening":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="Visual Studio Solution Opening":::
 
 2. In **Solution Explorer**, right-click the project and select the **Manage NuGet Packages** menu.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Right-click Manage NuGet Packages":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Right-click Manage NuGet Packages":::
 
 3. In **NuGet Package Manager**, search `Swashbuckle.AspNetCore`. Select the package and install it.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="NuGet Package Manager":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="NuGet Package Manager":::
 
    The NuGet package has now been installed. Then close the **NuGet Package Manager** tab.
 
@@ -30,7 +30,7 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
 1. Open the `Startup.cs` file.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="File: Startup.cs":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="File: Startup.cs":::
 
 1. Add the following directive just above the line, `namespace InventoryManagement.ApiApp`.
 
@@ -81,30 +81,30 @@ In this exercise you're going to add Swagger and Swagger UI to an ASP.NET Core w
 
    You've just completed activating the OpenAPI document feature to your ASP.NET Core Web API app. Save the `Startup.cs` file. Your changes might look like the following screenshot.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png" alt-text="File Modified: Startup.cs":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-05.png" alt-text="File Modified: Startup.cs":::
 
 
 ## Generate the OpenAPI document file ##
 
 1. Click the debug button at the top-middle of Visual Studio.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-06.png" alt-text="Debug in Visual Studio":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-06.png" alt-text="Debug in Visual Studio":::
 
    It automatically opens your web browser and shows the Swagger UI page.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-07.png" alt-text="Swagger UI Page":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-07.png" alt-text="Swagger UI Page":::
 
    You may see the 404 error page. In this case, enter the URL, `https://localhost:<port_number>/swagger`, to your browser's address bar. In the screenshot below, the URL is `https://localhost:44371/swagger`, for example.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-08.png" alt-text="Page Not Found":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-08.png" alt-text="Page Not Found":::
 
 1. Click the link to open the OpenAPI document page.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-09.png" alt-text="Swagger UI Page for OpenAPI":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-09.png" alt-text="Swagger UI Page for OpenAPI":::
 
 1. The OpenAPI document is rendered on-the-fly.
 
-    :::image type="content" source="media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-10.png" alt-text="OpenAPI Document":::
+    :::image type="content" source="../media/3-exercise-activate-openapi-to-web-api-using-swashbuckle-10.png" alt-text="OpenAPI Document":::
 
 Your ASP.NET Core Web API app is now ready to produce the OpenAPI document.
 
