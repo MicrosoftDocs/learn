@@ -28,8 +28,6 @@ The VM creation experience in the portal is presented in a "wizard" format to wa
 
 :::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing the virtual machine creation experience in the Azure portal.":::
 
-After you fill in all the required options (identified with red stars), you can skip the remainder of the wizard experience and start creating the VM by selecting **Review + Create**.
-
 We'll start with the **Basics** section.
 
 ### Configure basic VM settings
