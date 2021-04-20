@@ -3,6 +3,8 @@ You're ready to connect to Earth's Azure Quantum services and start solving prob
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
+> [!NOTE] The cost of running this module in a Pay-As-You-Go subscription is approximately of 9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimation and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
+
 ## Install the quantum extension
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
