@@ -17,7 +17,7 @@ The distributed cache feature in Azure Cache for Redis helps improve your apps' 
 
 You can use the distributed cache feature to:
 
-- Handle spikes in traffic.
+- Manage spikes in traffic.
 - Cache and provide commonly accessed data to users.
 - Help reduce compute load on your databases.
 - Locate content geographically closer to users.
@@ -31,7 +31,7 @@ As indicated in the following graphic, Azure Cache for Redis can help improve pe
 
 Your session-oriented apps require the ability to store and access temporary session data when users sign in and remain active on your apps. The session store feature in Azure Cache for Redis:
 
-- Handles up to hundreds of thousands of simultaneous users.
+- Manages up to hundreds of thousands of simultaneous users.
 - Makes data-replication options available to help provide for maximum reliability.
 - Helps reduce costs, as it's typically more cost-effective and scalable than alternative database or storage options.
 
@@ -46,27 +46,27 @@ You can use the session store feature to:
 
 Apps built on microservices often need to asynchronously communicate. Azure Cache for Redis can implement a publish/subscribe or queue architecture that can help enable fast and reliable communication between these microservices. The Azure Cache for Redis message broker:
 
-- Provides for a great temporary data store with minimal overhead and cost.
+- Provides a temporary data store with minimal overhead and cost.
 - Supports TLS encryption for data in transit.
 - Provides network isolation for secure communication between your services.
 
 You can use the message broker feature to:
 
 - Publish news, financial data, or application updates to users.
-- Handle chat messages.
+- Manage chat messages.
 - Enable communication between microservices.
 
-In the following graphic, a number of group chats, notifications, and stock quotes are occurring. These are connected to the message broker feature in Azure Cache for Redis. This, in turn, is connected to Azure API Apps instances and Azure Web Apps. These elements provide access to the group chats, notifications, and stock quotes for connected client devices.
+In the following graphic, a number of group chats, notifications, and stock quotes are occurring. They're connected to the message-broker feature in Azure Cache for Redis. This feature, in turn, connects to Azure API Apps instances and Azure Web Apps. These elements provide access to the group chats, notifications, and stock quotes for connected client devices.
 
-:::image type="content" source="../media/message-broker.png" alt-text="A graphic that represents the message broker architecture in Azure Cache for Redis, as described in the preceding text.":::
+:::image type="content" source="../media/message-broker.png" alt-text="The message broker architecture in Azure Cache for Redis, as the preceding text describes.":::
 
 ## Cloud migration
 
-A critical issue for anyone planning to move away from an on-premises cache to a managed service is how to move their content to the managed service. Azure Cache for Redis helps to migrate to the cloud and also:
+If you're moving from an on-premises cache to a managed service, a critical factor is how to move content to the managed service. Azure Cache for Redis helps migrate data to the cloud and also:
 
 - Enables both import and export of RDB files.
 - Provides compatibility with open-source Redis to help simplify migration.
-- Provides a fully managed service that handles:
+- Provides a fully managed service that manages:
 
   - Patching
   - Updates
@@ -74,7 +74,7 @@ A critical issue for anyone planning to move away from an on-premises cache to a
   - Scaling
   - Setup
 
-You can use the cloud migration feature in Azure Cache for Redis to:
+You can use the cloud-migration feature in Azure Cache for Redis to:
 
 - Migrate your apps from your on-premises environment to the cloud.
-- Help modernize your current IaaS apps through the benefits of PaaS services.
+- Help modernize your current <!-- ID/SME: Please confirm both "IaaS" and "PaaS" have been spelled out either in Module 1 or 2. If not, please spell them out here for first reference. --> IaaS apps through the benefits of PaaS services.

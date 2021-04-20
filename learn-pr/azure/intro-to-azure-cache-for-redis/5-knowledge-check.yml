@@ -22,10 +22,10 @@ quiz:
       explanation: "Correct. Enterprise, Enterprise Flash, and Premium tiers are all ideal for critical workloads."
     - content: "Standard"
       isCorrect: false
-      explanation: "Incorrect. The Standard tier should only be used for non-critical workloads."
+      explanation: "Incorrect. Only use the Standard tier for noncritical workloads."
     - content: "Basic"
       isCorrect: false
-      explanation: "Incorrect. The Basic tier should only be used for non-critical workloads."
+      explanation: "Incorrect. Only use the Basic tier for noncritical workloads."
   - content: "A data engineer is planning a caching solution for an organization's apps. Which of the following tiers provides for high availability built on Redis Labs' Redis Enterprise?"
     choices:
     - content: "Standard"
@@ -37,7 +37,7 @@ quiz:
     - content: "Enterprise."
       isCorrect: true
       explanation: "Correct. This tier supports the required high-availability options, and is based on Redis Labs' Redis Enterprise software."
-  - content: "In which of the following use case scenarios is session store cache utilized?"
+  - content: "In which of the following use-case scenarios is session store cache utilized?"
     choices:
     - content: "To support cache-aside patterns"
       isCorrect: false
@@ -63,10 +63,10 @@ quiz:
     choices:
     - content: "It provides for 99.999% availability."
       isCorrect: false
-      explanation: "Incorrect. This is not a feature of geo-replication."
+      explanation: "Incorrect. It's not a feature of geo-replication."
     - content: "It includes a redundant pair of VMs to support automatic failover."
       isCorrect: false
-      explanation: "Incorrect. This is not a feature of geo-replication."
+      explanation: "Incorrect. It's not a feature of geo-replication."
     - content: "It creates global caches with local latency across regions, improving performance at all locations."
       isCorrect: true
-      explanation: "Correct. This is a feature of geo-replication."
+      explanation: "Correct. It's a feature of geo-replication."

@@ -1,36 +1,36 @@
-Let's start with a quick overview of Azure Cache for Redis to help you decide if it's a suitable solution for your organization.
+Let's start with a quick overview of Azure Cache for Redis. This information will help you decide if it's a suitable solution for your organization.
 
 ## What is Redis Cache?
 
-Redis Cache is a widely used, open-source caching solution. It's a key-value datastore running in memory. Because it runs in memory, it's very responsive.
+Redis cache is a widely used, open-source caching solution. It's a key-value datastore that runs in memory, so it's very responsive.
 
-Typically, organizations use Redis Cache to complement their database apps. By combining Redis with back-end databases, you can significantly improve the performance of your apps.
+Typically, organizations use Redis cache to complement their database apps. Combining Redis cache with back-end databases enables you to significantly improve your apps' performance.
 
 ## What should a caching solution do?
 
-Any caching solution should address the following four key requirements:
+Any caching solution should address four key requirements:
 
-- **Performance**. The primary requirement of any caching solution is to improve performance, even under high loads. Ideally, the caching solution should increase throughout and also reduce latency.
-- **Scalability**. It's important that the system is capable of responding to changes in load. In your fictional shoe company, sudden increases in demand might occur when you run sales promotions, or at specific times of the year. Scaling should be automatic, and take place without downtime.
-- **Availability**. It's vital that any caching solution is highly available. this will help ensure that your apps can deliver at peak performance, even when there are component failures.
-- **Support for geographic distribution**. The ability to provide the same performance and scaling benefits anywhere in the world is an important consideration. This can be challenging if your data is geographically dispersed.
+- **Performance**. <!-- ID/SME: We shouldn't be bolding for emphasis. I've seen this formatting in several modules now, so perhaps you've got different mandates that I'm not aware of? If so, please let me know. Otherwise, remove the bolding from these bulleted lists. --> The primary requirement for any caching solution is to improve performance, even under high loads. Ideally, it should increase throughout and reduce latency.
+- **Scalability**. A system must respond to load changes promptly. In your fictional shoe company, sudden increases in demand might occur when you run sales promotions or at specific times of the year. Scaling should be automatic and occur without downtime.
+- **Availability**. Any caching solution must be highly available. This helps ensure that your apps can deliver at peak performance, even if component failures occur.
+- **Support for geographic distribution**. It's essential that a caching solution provides the same performance and scaling benefits everywhere in the world. This can be challenging if your data is geographically dispersed.
 
 ## Azure Cache for Redis definition
 
-Azure Cache for Redis enables you to implement Redis Cache as a fully managed service.
+Azure Cache for Redis enables you to implement Redis cache as a fully managed service.
 
 > [!NOTE]
 > Azure Cache for Redis offers both Redis open-source (OSS Redis) and a commercial product from Redis Labs (Redis Enterprise) as a managed service, depending on the tier you select.
 
 Azure Cache for Redis provides the following application architecture patterns:
 
-- **Data cache**. Because databases are often too large to load directly into cache, it's common to use the *cache-aside* pattern. This pattern loads data into the cache only as and when needed.  
-- **Content cache**. Most webpages contain static items including headers, footers, and banners. These items don't change very often. By using an in-memory content cache, you can provide quick access to static content as compared to accessing the back-end datastores.
-- **Session store**. This pattern is often used with shopping carts or other data based on user history data, which a web application might want to associate with user cookies. Because storing too much data in a cookie can adversely affect performance, apps often use the cookie as a key to query the back-end database for the user data. Using an in-memory cache to store user session information is faster than working with the backend database.
-- **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to run. If a task contains long-running operations, these are often queued to be run in sequence. Azure Cache for Redis provides a distributed queue to support this application pattern.
+- **Data cache**. Databases often are too large to load directly into cache. That's why it's common to use the *cache-aside* pattern. It loads data into the cache only as needed.  
+- **Content cache**. Most webpages contain static items, such as headers, footers, and banners. These items don't change very often. By using an in-memory content cache, you can provide quick access to static content as compared to accessing back-end datastores.
+- **Session store**. This pattern is often used with shopping carts or other data based on user history data. The reason is that web applications often associate these with user cookies. Storing too much data in a cookie can adversely affect performance. The reason is because apps often use cookies to query a back-end database for user data. Using an in-memory cache to store user-session information is faster than working with the backend database.
+- **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to run. If a task contains long-running operations, they're typically queued to run in sequence. Azure Cache for Redis provides a distributed queue to support this application pattern.
 
    > [!NOTE]
-   > Longer running operations are queued to be processed in sequence, often by another server.
+   > Longer running operations are queued to process in sequence, often by another server.
 
 - **Distributed transactions**. Sometimes apps require a series of commands to run on a back-end datastore as a single operation. Azure Cache for Redis supports running a batch of commands as a single transaction.
 
@@ -39,17 +39,17 @@ Azure Cache for Redis provides the following application architecture patterns:
 
 ## Azure Cache for Redis tiers
 
-You can select from the following five tiers that are available for Azure Cache for Redis:
+You can select from the following five Azure Cache for Redis tiers:
 
-- The Basic tier runs on a single virtual machine (VM) and doesn't include an SLA. It is based on an OSS Redis cache.
+- The Basic tier runs on a single virtual machine (VM) and doesn't include a service-level agreement (SLA). This tier is based on an OSS Redis cache.
 - The Standard tier runs on two replicated VMs and is based on an OSS Redis cache.
 
    > [!IMPORTANT]
-   > Standard and Basic are both single-node caches. You should consider these tiers only for non-critical workloads.
+   > Standard and Basic are single-node caches. You should consider these tiers only for noncritical workloads.
 
-- The Premium tier is deployed on more powerful VMs and offers features such as higher throughput, lower latency, and better availability. It is based on an OSS Redis cache.
-- The Enterprise tier offers higher availability than the Premium tier and a high-performance cache powered by Redis Labs' Redis Enterprise software.
-- The Enterprise Flash tier offers a cost-effective alternative to the Enterprise tier and is also powered by Redis Labs' Redis Enterprise software. This tier extends Redis data storage to non-volatile memory, which reduces the overall per-GB memory cost.
+- The Premium tier is deployed on more powerful VMs. This tier offers features such as higher throughput, lower latency, and better availability. This tier is based on an OSS Redis cache.
+- The Enterprise tier offers higher availability than the Premium tier and a high-performance cache that's powered by Redis Labs' Redis Enterprise software.
+- The Enterprise Flash tier offers a cost-effective alternative to the Enterprise tier and is also powered by Redis Labs' Redis Enterprise software. This tier extends Redis data storage to nonvolatile memory, which reduces overall memory cost per gigabyte (GB).
 
 All tiers support the following features:
 
@@ -57,16 +57,16 @@ All tiers support the following features:
 - Network isolation
 - Scaling
 
-The Premium, Enterprise, and Enterprise Flash tiers also support additional advanced features such as:
+The Premium, Enterprise, and Enterprise Flash tiers also support other advanced features, including <!-- ID/SME: In this list below, the bold formatting is OK because they're features that you're bolding. -->:
 
 - **OSS Cluster**. Provides for high-availability and load distribution.
-- **Data persistence**. Allows you to persist data in Redis. This enables you to take snapshots and back up the data. You can then load these snapshots in the event of a hardware failure.
-- **Zone redundancy**.  Provides higher resilience and availability because the VMs are spread across multiple availability zones.
-- **Geo-replication**. Links together two Azure Cache for Redis instances and creates a data replication relationship. This replication provides a potential disaster recovery solution.
-- **Import/Export**.  Enables you to import data into or export data from Azure Cache for Redis by importing and exporting an Azure Cache for Redis Database (RDB) snapshot from a premium cache to a blob in an Azure Storage Account.
+- **Data persistence**. Allows you to persist data in Redis. This enables you to take snapshots and back up data. You can then load these snapshots should a hardware failure occur.
+- **Zone redundancy**. Provides higher resilience and availability because the VMs are spread across multiple availability zones.
+- **Geo-replication**. Links two Azure Cache for Redis instances and creates a data-replication relationship. This replication provides a potential disaster-recovery solution.
+- **Import/Export**. Enables you to import data into, or export data from, Azure Cache for Redis. You can import or export an Azure Cache for Redis Database (RDB) snapshot from a premium cache to an Azure Storage Account blob.
 
 The following features are only available in the Enterprise tiers:
 
 - **RediSearch**. Provides a powerful indexing and querying engine with a full-text search engine.
 - **RedisBloom**. Provides support for probabilistic data structures.
-- **RedisTimeSeries**. Enables you to ingest and query very large quantities of data with very high performance.
+- **RedisTimeSeries**. Enables you to ingest and query large quantities of data with very high performance.

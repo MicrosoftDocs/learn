@@ -1,5 +1,5 @@
 
-In this unit, we'll discuss how to determine if Azure Cache for Redis is a suitable caching solution for your organization. We'll evaluate Azure Cache for Redis against the following criteria:
+In this unit, we'll discuss how you can determine if Azure Cache for Redis is a suitable caching solution for your organization. We'll evaluate Azure Cache for Redis against the following criteria:
 
 - Simplicity
 - Reliability
@@ -7,21 +7,21 @@ In this unit, we'll discuss how to determine if Azure Cache for Redis is a suita
 
 ## Decision criteria
 
-To determine whether to use Azure Cache for Redis, use the criteria described in the following table.
+To determine whether to use Azure Cache for Redis, the following table provides useful criteria.
 
 | Criteria    | Analysis     |
 | ------------------------- | ---------------------------- |
-| Simplicity | A managed service offers many benefits such as provisioning, setup, scaling, updates, and patching. |
-| Reliability | It's vital that any caching solution is highly available. This helps ensure that your apps can deliver at peak performance, even when there are component failures. |
-| Scaling | It's important that the system is capable of responding to changes in load. Scaling should be automatic, and take place without downtime. |
+| Simplicity | A managed service offers several benefits, including provisioning, setup, scaling, updates, and patching. |
+| Reliability | It's vital that any caching solution is highly available. This helps ensure that your apps can deliver at peak performance, even if component failures occur. |
+| Scaling | It's important that the system can respond to changes in load. Scaling should be automatic and occur without downtime. |
 
 ## Apply the criteria
 
-Review the following questions when considering Azure Cache for Redis as your data integration solution.
+Review the following questions when considering Azure Cache for Redis as your data-integration solution.
 
 ### Do you want a managed service approach?
 
-When you use Azure Cache for Redis, you are implementing a fully managed service. This provides many benefits, including:
+When you use Azure Cache for Redis, you're implementing a fully managed service. This provides many benefits, including:
 
 - Automatically managed patching, updates, provisioning, configuration, setup, and scaling.
 - Implementation of Azure Monitor to track parameters and metrics within the cache, infrastructure, and network.
@@ -29,40 +29,40 @@ When you use Azure Cache for Redis, you are implementing a fully managed service
 
 ### Is reliability critical?
 
-Azure Cache for Redis provides several reliability and high availability features. These include OSS Cluster, data persistence, zone redundancy, and geo-replication.
+Azure Cache for Redis provides several reliability and high-availability features, including OSS Cluster, data persistence, zone redundancy, and geo-replication.
 
-Specifically, Azure Cache for Redis provides the following high availability capabilities:
+Specifically, Azure Cache for Redis has several high-availability capabilities, including that it:
 
-- It includes a redundant pair of VMs configured for automatic failover.
+- Includes a redundant pair of VMs configured for automatic failover.
 
    > [!NOTE]
-   > Excludes Basic tier.
+   > This excludes Basic tier.
 
-- It provides up to 99.999% availability in the Enterprise tiers.
-- It supports a zone-redundant configuration.
-- It supports active geo-replication to create global caches with local latency across regions.
+- Provides up to 99.999% availability in the Enterprise tiers.
+- Supports a zone-redundant configuration.
+- Supports active geo-replication to create global caches that have local latency across regions.
 
 ### Do you anticipate sudden changes in load?
 
-It's important that the system is capable of responding to changes in load. Sudden changes in demand might occur when you run sales promotions, or at specific times of the year. With Azure Cache for Redis, scaling is automatic, and occurs without downtime.
+It's important that the system can respond to changes in load. Sudden changes in demand might occur when you run sales promotions or at specific times of the year. Azure Cache for Redis provides automatic scaling that occurs without downtime.
 
 ## Summary
 
-In summary, consider implementing Azure Cache for Redis when you meet one or more of the following criteria:
+In summary, consider implementing Azure Cache for Redis when you:
 
-- You want to implement a caching solution for your apps that's based on industry standard technologies.
-- You don't want to worry about the underlying VMs or infrastructure, and want the simplicity of a fully managed service.
-- High availability is critical to your organization's business goals.
-- The system you select must be capable of responding automatically to both anticipated and unanticipated changes in demand.
-- You need the same performance and scaling benefits throughout the world.
+- Want to implement an app-caching solution that's based on industry standard technologies.
+- Don't want to worry about underlying VMs or infrastructure and want the simplicity of a fully managed service.
+- Consider high availability critical to your organization's business goals.
+- Want a system that can respond automatically to both anticipated and unanticipated changes in demand.
+- Need the same performance and scaling benefits throughout the world.
 
-When determining which tier to select, use the following guidance:
+When you're deciding which tier to select, you should choose the:
 
-- Choose the Basic or Standard tiers only for non-critical workloads.
-- Choose the Premium or Enterprise tiers when you require more performance.
-- Choose the Enterprise tiers when you:
+- Basic or Standard tiers only for noncritical workloads.
+- Premium or Enterprise tiers when you require more performance.
+- Enterprise tiers when you:
 
-  - Need higher availability than is available with the Premium tier.
+  - Need higher availability than the Premium tier offers.
   - Require RedisBloom, RediSearch, and RedisTimeSeries module integration.
 
-- Choose the Enterprise Flash tier when you want to reduce costs by using non-volatile memory.
+- Enterprise Flash tier when you want to reduce costs by using nonvolatile memory.
