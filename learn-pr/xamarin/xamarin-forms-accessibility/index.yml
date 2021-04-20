@@ -17,7 +17,7 @@ abstract: |
   - Improve keyboard accessibility by controlling tab order
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-  - [Introduction to disability and accessibility](https://docs.microsoft.com/en-us/learn/modules/intro-accessibility-disability/)
+  - [Introduction to disability and accessibility](https://docs.microsoft.com/learn/modules/intro-accessibility-disability/)
 iconUrl: /learn/achievements/xamarin/xamarin-forms-accessibility-badge.svg
 levels:
 - intermediate

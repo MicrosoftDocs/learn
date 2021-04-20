@@ -8,7 +8,7 @@ There are many additional enhancements to applications that can be done to impro
 - [Accessibility in Xamarin Apps](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility)
 - [Android Testing](https://docs.microsoft.com/xamarin/android/app-fundamentals/accessibility)
 - [iOS Testing](https://docs.microsoft.com/xamarin/ios/app-fundamentals/accessibility)
-- [Windows AccScope](https://docs.microsoft.com/en-us/windows/win32/winauto/accscope)
+- [Windows AccScope](https://docs.microsoft.com/windows/win32/winauto/accscope)
 - [Accessibility Checklist]( https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist)
 
 ## Learn more with a Channel 9 video series

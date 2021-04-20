@@ -362,3 +362,12 @@ groups:
       title: GitHub Actions
     - id: azure-devops
       title: Azure Pipelines
+- id: azure-devops-actions
+  title: Choose your platform
+  prompt: Choose your platform
+  pivots:
+    - id: vsstudio
+      title: Visual Studio 2019
+    - id: vsstudiomac
+      title: Visual Studio 2019 for Mac
+

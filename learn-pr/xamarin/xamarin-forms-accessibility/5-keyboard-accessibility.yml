@@ -38,6 +38,6 @@ quiz:
       - content: "Entry"
         isCorrect: false
         explanation: "Entry support TabIndex."
-      - content: "LabeledBy"
-        isCorrect: Toggle
+      - content: "Toggle"
+        isCorrect: false
         explanation: "Toggle supports TabIndex."

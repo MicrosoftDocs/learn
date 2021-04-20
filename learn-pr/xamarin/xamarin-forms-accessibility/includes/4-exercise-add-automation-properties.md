@@ -4,7 +4,7 @@ Let's start implementing the design for the app by creating a new project and sp
 
 Create a new Xamarin app:
 
-::: zone pivot="Visual Studio 2019"
+::: zone pivot="vstudio"
 - Open Visual Studio 2019.
 - Select **Create a new project**.
 - Select **Mobile** from the **Project type** drop-down.
@@ -13,7 +13,7 @@ Create a new Xamarin app:
 - Select the Blank template. Ensure Android and iOS are both selected, and click OK.
 ::: zone-end
 
-::: zone pivot="Visual Studio 2019 for Mac"
+::: zone pivot="vstudiomac"
 - Open Visual Studio 2019 for Mac
 - Select **New Project**
 - Select **Multiplatform** > **App** > **Blank Forms App** and click Next
