@@ -30,7 +30,7 @@ HDInsight provides several benefits to organizations working with big data. It i
    > [!TIP]
    > By creating clusters on demand, you can reduce your costs, paying only for what you use.
 
-- More secure. Enables you to protect your enterprise data assets through integration with:
+- Secure. Enables you to protect your enterprise data assets through integration with:
 
   - Azure Virtual Network
   - Azure encryption technologies
