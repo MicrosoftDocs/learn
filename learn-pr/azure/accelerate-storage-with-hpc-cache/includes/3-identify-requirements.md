@@ -27,7 +27,7 @@ Follow these steps to add the DNS server to the virtual network in the Azure por
 1. Select Custom
 1. Enter the DNS server's IP address in the field.
 
-![Screenshot showing how to add a custom DNS server to an existing virtual network.](../media/3-identity-requirements-01-.png)
+![Screenshot showing how to add a custom DNS server to an existing virtual network.](../media/3-identity-requirements-01-custom-DNS-steps.png)
 
 ### Define a Dedicated Subnet for HPC Cache
 
@@ -37,7 +37,7 @@ To provide high availability, the HPC Cache must be able to move IP addresses am
 
 If you’re running multiple caches, each needs its own, dedicate subnet.
 
-![Screenshot showing how to add a subnet to a virtual network. The new subnet uses a 26-bit mask.](../media/4-create-the-cache-03-review-and-create-tab.png)
+![Screenshot showing how to add a subnet to a virtual network. The new subnet uses a 26-bit mask.](../media/3-identity-requirements-02-add-cache-only-subnet.png)
 
 It’s highly recommended that a high-speed network connection like an ExpressRoute be in place between Azure and the data center where the storage is.
 

@@ -2,7 +2,7 @@ Now that we met the prerequisites, the next step is to create the HPC Cache in t
 
 From the Azure portal, type HPC in the search bar at the top. Click “HPC Caches” under the Services heading. Click the “New” button in the upper left or “Create hpc cache” button at the bottom to launch the HPC Cache creation wizard.
 
-![Diagram showing the Basics tab of the Azure HPC Cache creation wizard.](../media/4-create-the-cache-01-search-for-hpc.png)
+![Diagram showing how to search for the HPC Cache service.](../media/4-create-the-cache-01-search-for-hpc.png)
 
 ## Select the Azure Settings for HPC Cache
 
