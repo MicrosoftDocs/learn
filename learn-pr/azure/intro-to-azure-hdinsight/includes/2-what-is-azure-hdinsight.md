@@ -82,7 +82,7 @@ A data warehouse provides an organization with somewhere to store big data while
 
 In the following diagram, Apache Hadoop on HDInsight is used to gather and store data from a number of sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with BI tools. Power BI is used for data visualization.
 
-:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="A graphic that depicts the data warehousing scenario.":::
+:::image type="content" source="../media/architecture-data-warehouse.png" alt-text="A graphic that depicts the preceding scenario.":::
 
 Components in this scenario include:
 
