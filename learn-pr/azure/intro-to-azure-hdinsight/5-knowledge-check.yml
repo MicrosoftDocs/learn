@@ -26,9 +26,9 @@ quiz:
     - content: "MapReduce"
       isCorrect: false
       explanation: "Incorrect. MapReduce is a programming model that enables you to process and analyze data."
-  - content: "What type os file system does Apache Hadoop store data in?"
+  - content: "What type of file system does Apache Hadoop store data in?"
     choices:
-    - content: "It has no storage. Data is stored in memory."<!--Andy, please check edit here.-->
+    - content: "It has no storage. Data is stored in memory."
       isCorrect: false
       explanation: "Incorrect. Apache Hadoop requires physical storage to persist data."
     - content: "RDD"
