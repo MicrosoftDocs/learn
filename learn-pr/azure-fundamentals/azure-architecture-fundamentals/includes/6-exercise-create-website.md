@@ -104,7 +104,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     
     > [!NOTE]
     > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the preceding configuration.
-7.  Now, let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**. The **App Service plan** pane appears. :::image type="content" source="../media/config-app-service-plan-461ed8e0.png":::
+7.  Now, let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**. The **App Service plan** pane appears. :::image type="content" source="../media/config-app-service-plan-461ed8e0.png" alt-text="WordPress":::
     
 8.  Select **Create new**. :::image type="content" source="../media/new-app-service-plan-25cf5bdd.png" alt-text="Screenshot of the Azure portal showing the App Service plan pane with the Create new button highlighted.":::
      The **New App Service Plan** pane appears.
@@ -147,7 +147,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     :::image type="content" source="../media/new-service-plan-config-3995d241.png" alt-text="Screenshot of the Azure portal showing New App Service plan configuration with the Pricing tier button highlighted.":::
     
 10. The **Spec Picker** enables us to select a new pricing tier for our application. The pane opens to the **Production** tab, with the S1 pricing tier selected. Select a new pricing tier from the **Dev / Test** tab for our website.
-11. Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**. :::image type="content" source="../media/select-pricing-tier-a35df2f3.png":::
+11. Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**. :::image type="content" source="../media/select-pricing-tier-a35df2f3.png" alt-text="Spec Picker":::
     
 12. Back on the **New App Service Plan** pane, select **OK** to create the new plan.
 13. Finally, select **Create** to start the deployment of your new site.
@@ -164,12 +164,12 @@ We can track the progress of the deployment at any time.
 1.  Select the **Notifications** bell icon at the top of the portal. If your browser window width is smaller, it might be shown when you select the ellipsis (**...**) icon in the upper-right corner. :::image type="content" source="../media/notification-bell-d2710d82.png" alt-text="Screenshot of the Azure portal showing the top-right menu with the Notifications bell button highlighted.":::
     
 2.  Select **Deployment in progress** to see the details about all the resources that are created. :::image type="content" source="../media/notification-bell-info-bebdd609.png" alt-text="Screenshot of the Azure portal showing deployment notification in the Notifications list.":::
-     Notice how resources are listed as they're created and the status changes to a green check mark as each component in the deployment completes. :::image type="content" source="../media/deployment-progress-5e861a21.png":::
+     Notice how resources are listed as they're created and the status changes to a green check mark as each component in the deployment completes. :::image type="content" source="../media/deployment-progress-5e861a21.png" alt-text="Overview of your deployment.":::
     
-3.  After the deployment status message changes to **Your deployment is complete**, you'll notice the status in the **Notifications** dialog box changes to **Deployment succeeded**. Select **Go to resource** to go to the App Service overview. :::image type="content" source="../media/deployment-complete-98d39411.png":::
+3.  After the deployment status message changes to **Your deployment is complete**, you'll notice the status in the **Notifications** dialog box changes to **Deployment succeeded**. Select **Go to resource** to go to the App Service overview. :::image type="content" source="../media/deployment-complete-98d39411.png" alt-text="Deployment succeeded.":::
     
 4.  Find the **URL** in the **Overview** section. :::image type="content" source="../media/website-url-b2b6286d.png" alt-text="Screenshot of the Azure portal showing App Service Overview pane with URL location highlighted.":::
     
 5.  Copy the **URL** information by selecting the **Copy to clipboard** icon at the end of URL.
-6.  Open a new tab in your browser, paste this URL, and press Enter to browse to your new WordPress site. You can now configure your WordPress site, and add content. :::image type="content" source="../media/configure-wordpress-fd5cbfe7.png":::
+6.  Open a new tab in your browser, paste this URL, and press Enter to browse to your new WordPress site. You can now configure your WordPress site, and add content. :::image type="content" source="../media/configure-wordpress-fd5cbfe7.png" alt-text="Your new WordPress site":::
     
