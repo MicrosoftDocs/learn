@@ -16,48 +16,23 @@ For more details on how this is done in practice, check out Dave Wecker's talk o
 
 ![Diagram showing Azure Quantum Computing.](../media/6-azure-quantum-computing.png)
 
-**Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
-
-For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
-
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/honeywell.png" alt="Honeywell provider">
-
-- **Honeywell quantum solutions**: Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurement.
-
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/ionq_s.png" alt="IonQ">
-
-- **IonQ trapped-ion quantum computer**: Dynamically reconfigurable system for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.
-
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/quantum-circuits-inc_s.png" alt="Quantum 
-Circuits Inc.">
-
-- **Quantum Circuits, Inc.**: Fast and high-fidelity system with powerful real-time feedback to enable error correction.
-
-
 **Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
 
 Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
 
-![Diagram showing Azure Quantum optimization stack.](../media/6-azure-quantum-inspired-solutions.png)
+![Diagram showing Azure Quantum Computing with Q sharp.](../media/6-azure-quantum-inspired-solutions.png)
 
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/1qbit_s.png" alt="1QBit">
+**Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
-- **1Qloud**: Connecting intractable industry problems to innovative solutions.
- 
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/microsoft_n.png" alt="Microsoft">
+For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-- **Microsoft QIO**: Ground-breaking optimization algorithms inspired by decades of quantum research.
-
-<img src="//azurecomcdn.azureedge.net/cvt-40ef7c0371e2ae10d3601a00d1e8febdfb809f6171a788f3a979487acc43e507/images/shared/customers/toshiba_s.png" alt="Toshiba">
-
-- **Toshiba SBM**: Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
-
+![Diagram that lists companies that provide quantum hardware on Azure Quantum.](../media/6-azure-quantum-hardware.png)
 
 ## What are Azure Quantum Workspaces?
 
 Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use it.
 
-This resource is called a _workspace_, and is a collection of assets that are associated with executing a quantum or quantum-inspired workload. Examples of assets are the problem format, data, and compute target. Follow the [Get started with Azure Quantum module](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/) to start using Azure Quantum.
+This resource is called a _workspace_, and is a collection of assets that are associated with executing a quantum or quantum-inspired workload. Examples of assets are the problem format, data, and compute target.
 
 Here's a brief overview of some of the terminology that's associated with a quantum workspace.
 
@@ -86,3 +61,4 @@ Azure Quantum provides information about the state of your job and its execution
 **Billing**: When you enable a provider in your workspace, you also select the billing plan for that provider. The billing plan defines how you're billed for jobs against that provider.
 
 Each provider may have different billing plans and methods available. While you may only select a single billing plan for a specific provider in a single workspace, you can deploy to multiple workspaces within your Azure subscription.
+
