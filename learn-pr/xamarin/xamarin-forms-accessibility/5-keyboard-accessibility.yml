@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.xamarin-forms-accessibility.5-keyboard-accessibility
+metadata:
+  title: Keyboard accessibility with TabIndex
+  description: Learn how TabIndex can be used in Xamarin.Forms applications to improve accessibility.
+  ms.date: 04/20/2021
+  author: jamont
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Keyboard accessibility with TabIndex
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-keyboard-accessibility.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "By default what is the tab order for elements?"
+      choices:
+      - content: "From left to right on the screen."
+        isCorrect: false
+        explanation: "The order in which element appear on the screen is not specifically their tab order."
+      - content: "From top to bottom."
+        isCorrect: false
+        explanation: "The order in which element appear on the screen is not specifically their tab order."
+      - content: "How they are listed in XAML or progmatically added to a child collection."
+        isCorrect: true
+        explanation: "By default, the tab order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection."
+    - content: "What control does NOT support TabIndex?"
+      choices:
+      - content: "ListView"
+        isCorrect: true
+        explanation: "ListView is a container type control that displays cells and does support TabIndex"
+      - content: "Button"
+        isCorrect: false
+        explanation: "Button supports TabIndex."
+      - content: "Entry"
+        isCorrect: false
+        explanation: "Entry support TabIndex."
+      - content: "LabeledBy"
+        isCorrect: Toggle
+        explanation: "Toggle supports TabIndex."

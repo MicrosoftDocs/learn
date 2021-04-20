@@ -1,0 +1,75 @@
+To complete the project we must now implement a way to enter data for the users forename and surename and their managers.
+
+## Add data entry elements for names
+
+Replace `<!-- Report and Manager Information -->` with the following XAML:
+
+    ```xaml
+    <Grid
+        Margin="0,20,0,0"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,Auto,Auto">
+        <Label
+            AutomationProperties.IsInAccessibleTree="True"
+            HorizontalOptions="Center"
+            Text="You" />
+        <Label
+            Grid.Column="1"
+            AutomationProperties.IsInAccessibleTree="True"
+            HorizontalOptions="Center"
+            Text="Manager" />
+
+        <Entry Grid.Row="1" 
+               Placeholder="Enter forename"/>
+        <Entry
+            Grid.Row="1"
+            Grid.Column="1"
+            Placeholder="Enter forename"/>
+        
+        <Entry Grid.Row="2" 
+               Placeholder="Enter surname" />
+        <Entry
+            Grid.Row="2"
+            Grid.Column="1"
+            Placeholder="Enter surname" />
+    </Grid>
+    ```
+
+## Run the application
+
+When you run the application and use the screen reader to navigate the elements on the screen you will see that the default ordering is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
+
+![Default Row-based Tab Order](../media/default-tab-order.png)
+
+By default, the tab order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection. This is not an accessible order for data entry, we instead would prefer to go down the column to fill in the forename and then the surname of each person.
+
+## Set the tab order
+
+We can set the `TabIndex` on each of the `Entry` elements to correct the data entry accessibility of the names.
+
+
+```xaml
+<Entry Grid.Row="1" 
+        Placeholder="Enter forename"
+        TabIndex="1"/>
+<Entry
+    Grid.Row="1"
+    Grid.Column="1"
+    Placeholder="Enter forename"
+    TabIndex="3"/>
+        
+<Entry Grid.Row="2" 
+        Placeholder="Enter surname"
+        TabIndex="2"/>
+<Entry
+    Grid.Row="2"
+    Grid.Column="1"
+    Placeholder="Enter surname"
+    TabIndex="4"/>
+```
+
+Now, when you run the application you will see the new column-based tab ordering as navigating through the elements.
+
+![Column-based Tab Order](../media/correct-tab-order.png)
+
+We have now explored multiple ways to enhance the accessibility of the application. Let's recap what we have learned and see even more ways we can make apps accessible.

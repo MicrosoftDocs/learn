@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-xamarin.xamarin-forms-accessibility
+metadata:
+  title: Creating accessible apps with Xamarin.Forms
+  description: Learn how to enhance Xamarin.Forms apps with automation properties to improve support for screen readers to make apps more accessible.
+  ms.date: 04/20/2021
+  author: jamont
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+title: Creating accessibile apps with Xamarin.Forms
+summary: Enhance Xamarin.Forms elements accessibility with automation properties for screen readers.
+abstract: |
+  In this module, you will:
+  - Enable screen reader & navigation assistant tools
+  - Add automation properties to improve accessibility
+  - Improve keyboard accessibility by controlling tab order
+prerequisites: |
+  [!include[](../../includes/prerequisites.md)]
+  - [Introduction to disability and accessibility](https://docs.microsoft.com/en-us/learn/modules/intro-accessibility-disability/)
+iconUrl: /learn/achievements/xamarin/xamarin-forms-accessibility-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- xamarin
+- dotnet
+- vs
+units:
+- learn-xamarin.xamarin-forms-accessibility.1-introduction
+- learn-xamarin.xamarin-forms-accessibility.2-accessibility-features
+- learn-xamarin.xamarin-forms-accessibility.3-automation-properties
+- learn-xamarin.xamarin-forms-accessibility.4-exercise-add-automation-properties
+- learn-xamarin.xamarin-forms-accessibility.5-keyboard-accessibility
+- learn-xamarin.xamarin-forms-accessibility.6-exercise-keyboard-accessibility
+- learn-xamarin.xamarin-forms-accessibility.7-summary
+badge:
+  uid: learn-xamarin.xamarin-forms-accessibility.badge
