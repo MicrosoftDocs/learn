@@ -1,4 +1,4 @@
-Here, you'll learn how Azure works. You'll learn all about the following components and how they fit together to provide data control and management:
+Here, you'll learn how Azure HDInsight works. You'll learn all about the following components and how they fit together to provide data control and management:
 
 - Apache Hadoop
 - HDInsight storage
