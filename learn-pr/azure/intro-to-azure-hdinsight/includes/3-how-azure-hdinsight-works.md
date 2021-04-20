@@ -38,7 +38,7 @@ There are benefits in separating the storage component of the cluster from the p
 > [!IMPORTANT]
 > For Azure Storage, you must specify a blob container as the default file system.
 
-Providing a default file system helps ensure that HDInsight can resolve relative file references when searching for files.
+Providing a default file system ensures that HDInsight can resolve relative file references when searching for files.
 
 > [!TIP]
 > When you want to increase available storage, you can link and unlink additional file systems as required.
