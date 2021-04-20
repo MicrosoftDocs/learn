@@ -16,7 +16,7 @@ quiz:
   questions:
     - content: Using the help system, what command, or function, helps you paginate the response?
       choices:
-        - content: "`{your command} --help`"
+        - content: "`command --help`"
           explanation: Incorrect.
           isCorrect: false
         - content: "`Get-Help command`"
