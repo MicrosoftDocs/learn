@@ -8,7 +8,7 @@ The term *big data* is used to describe the vast volumes of both structured and 
 
 Azure HDInsight is a fully-managed, cloud-based open-source analytics service for enterprises. By using HDInsight, you can bring control and management to your big data. HDInsight:
 
-- Is cloud distribution of Hadoop components.<!--Andy, this bullet doesn't flow with the lead-in-->
+- Is a cloud distribution of Hadoop components.
 - Makes it easier, faster, and more cost-effective to process huge volumes of data.
 - Supports the use of open-source frameworks, such as:
 
