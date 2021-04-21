@@ -26,8 +26,7 @@ All three options require you to provide information such as the country or regi
 
 ## What is an application template?
 
-Application templates are industry-focused sample IoT solutions that are pre-populated with dashboards, simulated devices, and device templates. You can choose from the retail, energy, government, healthcare, or custom application templates. In this module, you use the custom application template to create an application and use the REST API.
-
+Application templates are industry-focused sample IoT solutions that are pre-populated with dashboards, simulated devices, and device templates. You can choose from the retail, energy, government, healthcare, or custom application templates. In this module, you use the **Custom application** template to create an application and use the REST API.
 ## How IoT Central authorizes REST API calls
 
 Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain either an _API token_ or a _bearer token_.
