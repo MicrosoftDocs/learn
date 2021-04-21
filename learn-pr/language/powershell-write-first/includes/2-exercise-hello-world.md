@@ -9,7 +9,7 @@ from a simple exercise like this.
 
 ### Step 1: Type the code into the Cloud Shell
 
-The Azure Cloud Shell provides an in-browser experience will help us in this tutorial approach. The
+The Azure Cloud Shell provides an in-browser experience helps us in this tutorial approach. The
 Azure Cloud Shell is on the right-hand side of the web page. This behaves like a normal PowerShell
 terminal window in a sandbox environment. You can type commands directly into the window, or run
 scripts you have written and get the results in the Cloud Shell.
@@ -86,7 +86,7 @@ In this example, I had written `Write-Outpu` instead of `Write-Output` and Power
 couldn't find the command I specified.
 
 Reading these errors are helpful in finding out what caused them. When you run a program and you get
-an error, the error will often have the line number where the issue occurred, a description of the
+an error, the error often has the line number where the issue occurred, a description of the
 error, and sometimes a suggestion to fix it.
 
 > [!NOTE]

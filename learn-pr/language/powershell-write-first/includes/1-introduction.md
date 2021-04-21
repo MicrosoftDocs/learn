@@ -9,7 +9,7 @@ are:
 - Scripting
 
 PowerShell is a great language to learn whether you have prior programming experience or not. It's
-powerful and easy to learn because of its readability and focus on simplicity.
+beginner friendly due to it's readability, focus on simplicity, and built-in help systems.
 
 The best way to learn how to code in any language is to _write_ as much code as possible. So, we
 encourage you to type along with the exercises in this module and others in this learning path.

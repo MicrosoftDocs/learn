@@ -84,28 +84,12 @@ checks to make sure your code should run correctly before it tries to run in the
 where it could make changes and stop halfway due to a syntax error. As opposed to an interpreted
 language like Python that starts running the code until it finds something wrong in your syntax.
 
-## Should I learn PowerShell first?
+## Exploring PowerShell
 
-With so many programming languages out there, you might wonder if PowerShell is a good language to
-learn programming. PowerShell is a great language to learn and very beginner-friendly. It's easily
-readable and PowerShell handles much of the heavy lifting. This allows you to focus on learning
-many of the core concepts of programming found in most languages including:
-
-- Using basic programming logic.
-- Creating program structure.
-- Building expressions and statements.
-- Working with data.
-- Programmatic problem solving.
-
-Many programming languages use the same elements and concepts to accomplish different goals.
-Learning these concepts with a beginner friendly language is a great first step. Later, you can
-learn other languages and focus on the parts that are different from PowerShell while already
-understanding many of the core concepts.
-
-Another of PowerShell's features that make it great for beginners is it's help system. The
-PowerShell help system gives you easy access to information about PowerShell commands. You can look
-up help for commands or PowerShell concepts using the `Get-Help` command. For example, If you want
-to see all details about the `Write-Output` command, you can type and run the following command:
+One of PowerShell's features is it's built-in help system. The PowerShell help system gives you easy
+access to information about PowerShell commands. You can look up help for commands or PowerShell
+concepts using the `Get-Help` command. For example, If you want to see all details about the
+`Write-Output` command, you can type and run the following command:
 
 ```powershell
 Get-Help -Name 'Write-Output' -Full
@@ -116,13 +100,13 @@ for. The `-Full` switch tells PowerShell to get all help information for the spe
 including a command description, parameter information, examples, and more. This is all
 accessible in any PowerShell terminal including the Azure Cloud Shell terminal.
 
+If you want to explore some of the commands PowerShell has to offer, you can use `Get-Command *` to
+see the full list of cmdlets available to you. The asterisk (`*`) is known as a **wildcard** in
+PowerShell and allows you to match patterns to find information more dynamically. In this case, it's
+used to get all available commands. You could use it to filter what commands you want to get. For
+example you could get all commands that have "User" in them with , `Get-Command *User*`.
+
 Another great thing about PowerShell is that it comes with an integrated shell. The shell allows you
-to test your code and interact with the objects without having to run your code every time you want
+to test your code and interact with the output without having to run your code every time you want
 to test something. If you want to see if something works, you can type it right into the terminal to
 make sure your code works as expected.
-
-PowerShell is also a useful tool in managing large-scale infrastructure. Since it's cross platform,
-you can use it in most environments.
-
-All of this together makes you PowerShell a great language to learn and very fun to use from the
-start.
