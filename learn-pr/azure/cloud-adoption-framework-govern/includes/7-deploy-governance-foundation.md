@@ -2,7 +2,7 @@ Deploying a cloud governance foundation accelerates your ability to govern your 
 
 ## What will you configure?
 
-This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you'll understand the *why* and *how* to configure management groups, subscription design, resource groups, and tagging. 
+This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you'll understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging. 
 
 ## Strategic considerations
 
