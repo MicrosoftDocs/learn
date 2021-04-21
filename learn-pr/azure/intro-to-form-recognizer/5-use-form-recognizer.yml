@@ -11,5 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/5-use-form-recognizer.md)]
