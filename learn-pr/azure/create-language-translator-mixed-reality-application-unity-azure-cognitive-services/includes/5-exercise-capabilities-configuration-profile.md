@@ -84,6 +84,9 @@ By default, the MRTK speech commands are configured to start automatically when 
 
     :::image type="content" source="../media/start-behavior.png" alt-text="Screenshot of the Speech Commands profile. The Start Behavior setting is highlighted. The Manual Start option is selected.":::
 
+> [!NOTE]
+> You can disable the Diagnostics bar by cloning the **Diagnostics** profile and unchecking the box **Show Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should continuously run at 60 FPS.
+
 ## Add capabilities
 
 To enable APIs or resources (such as a microphone) to access the app, you must enable the capability in the Unity Project Settings.
