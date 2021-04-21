@@ -26,10 +26,10 @@ Users can perform triage and root cause analysis using custom charts in Metrics 
 
 Users can be notified, take action and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
 
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Here, we'll discuss some examples of when you might want to use Azure Monitor to:
+* Collect data using Azure Monitor Metrics
+* Discuss Log Analytics usage with Azure Monitor
+* Visualize monitoring data
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ TODO: add your bulleted list of key things covered
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
 -->
 ## Decision criteria
-TODO: add your 3 lead-in sentences
+Collecting data with Azure Monitor Metrics allows you to view performance data in real-time. If you want to store the data for later evaluation, you would select the logging capability and use a Log Analytics Workspace to store the recorded data. Visualizing the data allows you to see the information in various formats, that you can choose.
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
@@ -74,7 +74,14 @@ TODO: add your 3 lead-in sentences
         | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
         |   |   |
 -->
-TODO: add your topic sentences(s)
+Let's look at the different mechanisms for monitoring and viewing your Azure resources.
+
+| Monitoring Option | Usage |
+| --- | --- |
+| Metrics | Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios. |
+| Logs | Log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. You can create and test queries using Log Analytics in the Azure portal. You can then either directly analyze the data using different tools or save queries for use with visualizations or alert rules. |
+| Visualizations | Azure Monitor has its own features for visualizing monitoring data and leverages other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal. Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. |
+
 
 <!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
 
@@ -95,23 +102,26 @@ TODO: add your topic sentences(s)
         Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
         Visual: <image preferred>
 -->
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Metrics
+Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios. The metrics explorer is built into the Azure portal, allowing you to focus on a specific resource to monitor. Data is presented in a chart or graph format.
 
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+:::image type="content" source="../media/metrics.png" alt-text="Depiction of a metrics data element feeding values into a chart that uses a line graph format and is available in the Azure portal for many resources. It is found under the Monitoring category.":::
 
-### <criterion>
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Logs
+Log data collected by Azure Monitor can be analyzed with queries to quickly retrieve, consolidate, and analyze collected data. You can create and test queries using Log Analytics in the Azure portal. You can then either directly analyze the data using different tools or save queries for use with visualizations or alert rules.
+
+Azure Monitor uses a version of the Kusto query language that is suitable for simple log queries but also includes advanced functionality such as aggregations, joins, and smart analytics.
+
+:::image type="content" source="../media/logs.png" alt-text="Depiction of log data feeding into a table display in Log Analytics":::
+
+### Visualizations
+Azure Monitor has its own features for visualizing monitoring data and leverages other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal.
+
+:::image type="content" source="../media/dashboard.png" alt-text="Depiction of an Azure dashboard that is displaying metrics in graph format for application performance metrics on the left and security incidents on the right.":::
+
+Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports in the Azure portal. They allow you to tap into multiple data sources from across Azure, and combine them into unified interactive experiences. Use workbooks provided with Insights or create your own from predefined templates.
+
+:::image type="content" source="../media/workbooks.png" alt-text="Depiction of three workbooks displaying logged data in various chart formats and table formats.":::
 
 <!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
 
