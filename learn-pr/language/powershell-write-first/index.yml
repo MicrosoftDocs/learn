@@ -11,14 +11,13 @@ metadata:
 title: Write your first PowerShell code
 summary: Getting started by writing code examples in to learn the basics of PowerShell!
 abstract: |
-  In this module, you will:
-  - Write your first lines of code in PowerShell
-  - Print messages to the console
-  - Take input from a user to print customized messages
-  - Identify different elements of PowerShell syntax
+  After completing this module you will be able to:
+  - Manage PowerShell inputs and outputs
+  - Diagnose errors when you type code incorrectly
+  - Identify different PowerShell elements like cmdlets, parameters, inputs, and outputs.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
+iconUrl: /learn/achievements/powershell/powershell-write-first-code.svg
 levels:
 - beginner
 roles:

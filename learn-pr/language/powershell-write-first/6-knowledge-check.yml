@@ -13,7 +13,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "how does PowerShell compile?"
+  - content: "How does PowerShell compile?"
     choices:
     - content: "You run a compiler as a step to output an executable program"
       isCorrect: false

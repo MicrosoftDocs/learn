@@ -1,11 +1,15 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain
+Code challenges throughout these modules reinforce what you've learned and help you gain
 confidence before moving on.
 
-### Step 1: Create a new file to write your code in
+### Step 1: Close any open files in the Cloud Shell code editor
 
-Create a new file named `GettingStarted.ps1` and use Visual Studio Code to open it.
+Press <kbd>Ctrl</kbd>+<kbd>q</kbd> to close any open files in the Cloud Shell code editor.
 
-### Step 2: Write code in the VSCode editor to display two messages
+### Step 2: Create a new file to write your code
+
+Create a new file named `GettingStarted.ps1` and use the Cloud Shell code editor to open it.
+
+### Step 3: Write code in the Cloud Shell code editor to display two messages
 
 Use the techniques you learned to print a message and take user input to reuse in a second message.
 In other words, you learned how to display a message in just one line of code. You also learned how
@@ -20,9 +24,9 @@ Todays date is <current date>.
 Today is the day <your name> began their PowerShell programming journey.
 ```
 
-### Step 3: Run the code
+### Step 4: Run the code
 
-Close the VSCode editor and run the script in the Cloud Shell.
+Close the code editor and run the script in the Cloud Shell.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to
 view a solution to this challenge.
