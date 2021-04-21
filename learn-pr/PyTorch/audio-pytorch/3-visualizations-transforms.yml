@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.audio-pytorch.visualizations-transforms
-title: Audio Transforms and Visualizations
+title: Audio transforms and visualizations
 metadata:
-  title: Audio Transforms and Visualizations
+  title: Audio transforms and visualizations
   description: Data visualization and transformation is an important part of every model. Now that we have our dataset downloaded, lets learn more about audio data visualization and transforming this dataset.
   author: cassieview
   ms.author: cassieb

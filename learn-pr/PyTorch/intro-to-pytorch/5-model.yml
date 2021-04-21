@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.intro-to-pytorch.model
-title: Building the Model Layers
+title: Building the model layers
 metadata:
-  title: Building the Model Layers
+  title: Building the model layers
   description: Neural networks comprise of layers/modules that perform operations on data. The torch.nn namespace provides all the building blocks you need to build your own neural network.
   author: cassieview
   ms.author: cassieb

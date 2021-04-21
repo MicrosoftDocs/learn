@@ -29,7 +29,7 @@ prerequisites: |
   - Basic understand of machine learning
 units:
 - learn.PyTorch.audio-pytorch.introduction
-- learn.PyTorch.audio-pytorch.understanding-audio-data
+- learn.PyTorch.audio-pytorch.understand-audio-data
 - learn.PyTorch.audio-pytorch.visualizations-transforms
 - learn.PyTorch.audio-pytorch.speech-model
 - learn.PyTorch.audio-pytorch.knowledge-check

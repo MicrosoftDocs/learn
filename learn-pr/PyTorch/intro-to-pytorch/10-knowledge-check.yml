@@ -15,10 +15,10 @@ quiz:
   questions:
     - content: "Which is true of Tensors?"
       choices:
-        - content: "A string type"
+        - content: "Tensors are a string type representing a vector."
           isCorrect: false
           explanation: "Incorrect"
-        - content: "Tensors are specialized data structure that are very similar to arrays and matrices"
+        - content: "Tensors are specialized data structures that are very similar to arrays and matrices."
           isCorrect: true
     - content: "What is the difference between a PyTorch `DataSet` and a PyTorch `DataLoader`"
       choices:

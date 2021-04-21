@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.intro-to-pytorch.autograd
-title: Automatic Differentiation
+title: Automatic differentiation
 metadata:
-  title: Automatic Differentiation
+  title: Automatic differentiation
   description: When training neural networks, the most frequently used algorithm is back propagation. In this algorithm, parameters (model weights) are adjusted according to the gradient of the loss function with respect to the given parameter.
   author: cassieview
   ms.author: cassieb

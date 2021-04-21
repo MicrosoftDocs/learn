@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.intro-to-pytorch.transforms
-title: Transforming the Data
+title: Transform the data
 metadata:
-  title: Transforming the Data
+  title: Transform the data
   description: Data does not always come in its final processed form that is required for training machine learning algorithms. We use transforms to perform some manipulation of the data and make it suitable for training.
   author: cassieview
   ms.author: cassieb
