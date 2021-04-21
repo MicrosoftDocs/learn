@@ -1,74 +1,72 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Catching the bus can be a frustrating task. You might find yourself running to catch it (and missing it) or waiting for a long time.
 
-    Goal: briefly summarize the key skill this unit will teach
+Modern day challenges make opportunities for modern applications. Whether you are seeing this scenario for the first time, or you have completed the other modules in the learning path, let's review the scenario and how the solution was constructed.
 
-    Heading: do not add an H1 or H2 title here, an auto-generated H1 will appear above this content
+## Real-time bus data
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Many cities provides public transportation data via General Transit Feed Specification (GTFS), that also supports a real-time feed GTFS Realtime Reference v2 (GTFS-RT). The feed is a JSON document that looks like the following sample (from [King County Metro](https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources.aspx) feed):
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+```JSON
+{
+      "id": "1618418866_4318",
+      "vehicle": {
+        "trip": {
+          "trip_id": "49195161",
+          "direction_id": 0,
+          "route_id": "100001",
+          "start_date": "20210414",
+          "schedule_relationship": "SCHEDULED"
+        },
+        "vehicle": {
+          "id": "4318",
+          "label": "4318"
+        },
+        "position": {
+          "latitude": 47.64524,
+          "longitude": -122.370171
+        },
+        "current_stop_sequence": 228,
+        "stop_id": "2010",
+        "current_status": "IN_TRANSIT_TO",
+        "timestamp": 1618418841
+      }
+    },
+```
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Knowing that such feed is available, the next thing to consider is how to be notified when a bus is 'close enough' to you. Then, you know that you have to start walking to the bus stop. One option to do that is to create a geofence around a couple of bus stops before yours. When a bus enters or exits that geofence, it would be ideal to get a notification. Checking a map is convenient to see if buses are on the way, but getting a notification let's you know it's about to arrive.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+## Architecture components
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Let's review a possible architecture that would support the challenges and goals discussed.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+:::image type="content" source="../media/2-catch-the-bus.svg" alt-text="Potential architecture for a solution to the catching the bus scenario.":::
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+The architecture uses several different services to minimize the amount of code you need to write, and to take advantage of the scalability and infrastructure benefits provided by Azure.
 
-    Goal: State concisely what's covered in this unit
+### Database service
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Azure SQL database provides support to many of the required technologies already.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Native JSON support will help in reducing the amount of code needed to manipulate data sent and received to and from the database. The JSON support also lends itself for future improvements due to JSON's flexible nature. And, last but not least, will help to make sure that you can efficiently pass to Azure SQL arrays of data, optimizing round-trips and reducing latency.
 
-<!-- 4. Image (highly recommended) ----------------------------------------------------------------
+Azure SQL also provides complete geospatial support, which is a great feature as manipulating geospatial data is not typically an easy task. With a fully featured geospatial engine within the database, you can avoid the complexity of integrating with external libraries, and you don't have to move data around to figure out, for example, if a bus is within a defined geofence. Azure SQL supports the Open Geospatial Consortium standards, so it is also easy to integrate data stored in Azure SQL with visualization libraries like OpenLayers.
 
-    Goal: Add a visual like an image, table, list, etc. that supports the topic sentence. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
--->
-TODO: add a visual
+All the aforementioned feature are built on the rock-solid foundations of the relational model, which has evolved through years of improvement to meet the requirement of modern applications. Azure SQL Database can be scalable up to 100TB with the Hyperscale tier or extremely cost-effective with the Serverless tier (supports auto-scaling and pause-and-resume). Azure SQL also supports columnstore indexes for blazing fast analytical queries, graph models to simplify complex object relationship management, and a state-of-the art query optimizer that is continuously improving and can handle even the most demanding workload, like the one required by today's massive multiplayer online gaming.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+With Azure SQL, it is also easy to access static data, like the route information provided by the GTFS standard, which might be stored in Azure Blob Storage. By using the `OPENROWSET` function, importing data from a text file can be done without the need of other services, keeping the solution complexity at minimum.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+### API service
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. A visual like an image, table, or list
+An API is needed to access and consume the GTFS feed, to notify a user if a bus has entered a geofence, and to serve data to a web application. Azure Functions has been selected as the service of choice. Azure Functions is a great service as its serverless nature allows you to focus on the code, leaving almost all infrastructural aspects to Azure Functions. Azure Functions provides support for different languages, so you can choose your preferred one or the most suitable one for the task you are working on, which follows a pure microservices approach.
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+### Notification service
 
-## H2 heading (pattern for simple topic)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-Paragraph (optional)
+To get a notification that a bus is within the geofence and you need to start to walk to the bus station, one option in Azure is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email to your Outlook account. Of course, you can also easily integrate with other external services like the well-known service, IFTTT.
 
-## H2 heading (pattern for complex topic)
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+### Web application hosting
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+To visualize geospatial data, which represents the geofences and bus positions on a map, you can create a static HTML page, using the well-known Vue.js framework and the OpenLayers library. The static page will need to fetch data from a server-side REST API that will be provided by another Azure Function. As both the client and the back end parts are needed to make the visualization page work, you can take advantage of Azure Static Web Apps. Azure Static Web Apps make it easy to develop and deploy the solution, since it combines the capabilities of Azure Web Apps and Azure Functions.
 
-<!-- Do not add a unit summary or references/links -->
+### Deployment automation
+
+As you've seen, the complete solution is made up of several moving parts: the back end service to pull data from the real-time feed, the database to store, process and serve data, and the front-end visualization solution which is composed of a static HTML file and a REST API endpoint. By using a CI/CD pipeline through GitHub Actions, you'll be able to manage the deployment of all the pieces, via GitHub and Visual Studio Code, as soon as you have finished committing your changes. Database changes, if there are any, along with Azure Functions and Azure Static Web Apps will be deployed in a fully automated and orchestrated way.

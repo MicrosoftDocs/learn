@@ -44,7 +44,6 @@ units:
 - learn.azure.automate-deployments-github-actions-azure.exercise-deploy-resources
 - learn.azure.automate-deployments-github-actions-azure.deep-dive-github-actions
 - learn.azure.automate-deployments-github-actions-azure.exercise-configure-github-deployments
-- learn.azure.automate-deployments-github-actions-azure.build-full-stack-app
 - learn.azure.automate-deployments-github-actions-azure.summary
 badge:  
   uid: learn.azure.automate-deployments-github-actions-azure.badge

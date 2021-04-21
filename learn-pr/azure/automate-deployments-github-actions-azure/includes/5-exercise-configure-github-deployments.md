@@ -1,4 +1,3 @@
-
 GitHub Actions are very useful for maintaining CI/CD for your applications.
 
 Here, you'll leverage GitHub Actions to configure and deploy the services you deployed in the previous exercise. You'll build out the entire solution for catching the bus and monitor it in action.
