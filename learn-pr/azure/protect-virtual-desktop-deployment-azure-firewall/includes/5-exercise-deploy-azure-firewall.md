@@ -56,53 +56,53 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+For production deployments, we recommend a hub and spoke model, where you create the firewall in its own virtual network. Then you peer that virtual network with virtual networks used by your workloads.
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host is using.
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create a subnet for Azure Firewall
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+1. Sign into the Azure portal using the same account you used in the previous exercise unit.
+1. Search for or select **Virtual networks**.
+1. Select the virtual network that your session host is using.
+1. Under **Settings**, select **Subnets** > **+ Subnet** to add a subnet.
+1. Enter the following information for the subnet.
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+    |Field |Value |
+    |---------|---------|
+    |Name    |  AzureFirewallSubnet    |
+    |Address range     |   10.0.1.0/26      |
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+    Leave the rest of the values as they are.
+1. Select **Save**.
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+## Deploy Azure Firewall
+
+[Deploy firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
+
+1. In the Azure portal, search for **Firewalls**.
+1. Select **+ Add** to create a firewall.
+1. Enter the following table to configure the firewall.
+
+   |Field |Value  |
+   |---------|---------|
+   |Subscription     |\<your subscription\>|
+   |Resource group     |learn-firewall-rg |
+   |Name     |learn-fw|
+   |Region     |Select the same location that you used previously|
+   |Firewall management|**Use Firewall rules (classic) to manage this firewall**|
+   |Choose a virtual network     |**Use existing**: **Test-FW-VN**|
+   |Public IP address     |**Add new**<br>**Name**:  **fw-pip**|
+
+5. Accept the other default values, then select **Review + create**.
+6. Review the summary, and then select **Create** to create the firewall.
+
+   This will take a few minutes to deploy.
+7. After deployment completes, go to the **learn-firewall-rg** resource group, and select the **learn-fw** firewall.
+8. Make a note of the firewall private and public IP addresses. You'll use these addresses later.
 
 ## Check your work
 <!-- Introduction paragraph -->
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
