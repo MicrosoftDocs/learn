@@ -5519,6 +5519,151 @@
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/5-summary.yml",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/2-set-up-local-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/2-set-up-local-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/3-find-missing-values.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/3-find-missing-values",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/4-drop-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/4-drop-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/5-check-for-outliers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/5-check-for-outliers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/6-check-data-distribution.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/6-check-data-distribution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/7-discover-bimodal-populations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/7-discover-bimodal-populations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/8-create-player-columns.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/8-create-player-columns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/9-impute-missing-data-part-1.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/9-impute-missing-data-part-1",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/10-impute-missing-data-part-2.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/10-impute-missing-data-part-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/11-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/12-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/predict-basketball-player-efficiency-ratings/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/predict-basketball-player-efficiency-ratings/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/2-set-up-local-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/2-set-up-local-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/3-prepare-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/3-prepare-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/4-create-machine-learning-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/4-create-machine-learning-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/5-machine-learning-create-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/5-machine-learning-create-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/6-create-starter-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/6-create-starter-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/7-codetour.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/7-codetour",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/8-initialize-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/8-initialize-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/9-add-players-to-bench.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/9-add-players-to-bench",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/10-add-stats-to-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/10-add-stats-to-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/11-move-players.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/11-move-players",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/12-update-stats.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/12-update-stats",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/13-finalize-web-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/13-finalize-web-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/14-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/14-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/15-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/15-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/",
+      "redirect_document_id": false
     }
   ]
 }
