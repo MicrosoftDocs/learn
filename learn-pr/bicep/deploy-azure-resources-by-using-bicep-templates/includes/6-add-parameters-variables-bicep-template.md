@@ -146,7 +146,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This is similar to the command you ran before.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `

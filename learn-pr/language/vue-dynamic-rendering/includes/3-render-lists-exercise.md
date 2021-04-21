@@ -8,7 +8,7 @@ You've been provided a starter repository for this module.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-vue-dynamic-render/
-    cd mslearn-vue-dynamic-render/2-dynamic-render
+    cd mslearn-vue-dynamic-render/start
     code .
     ```
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.scripting-with-powershell.3-exercise-scripting
+title: Exercise - Scripting
+metadata:
+  title: Exercise - Scripting
+  description: This first exercise teaches you how to write a backup script.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/04/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-scripting.md)]

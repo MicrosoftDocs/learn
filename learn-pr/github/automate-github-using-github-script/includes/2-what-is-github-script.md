@@ -2,7 +2,7 @@ Here, we discuss how GitHub Script enables you to automate common GitHub process
 
 ## What is GitHub Script? 
 
-[GitHub Script](https://github.com/actions/github-script?azure-portal=true) an action that provides an authenticated [octokit](https://octokit.github.io/rest.js/v17?azure-portal=true) client and allows JavaScript to be written directly in a workflow file. It runs in [Node.js](https://nodejs.org/?azure-portal=true), so you have the power of that platform available when writing scripts.
+[GitHub Script](https://github.com/actions/github-script?azure-portal=true) an action that provides an authenticated [octokit](https://octokit.github.io/rest.js/?azure-portal=true) client and allows JavaScript to be written directly in a workflow file. It runs in [Node.js](https://nodejs.org/?azure-portal=true), so you have the power of that platform available when writing scripts.
 
 ## What is octokit?
 
@@ -14,7 +14,7 @@ You've always been able to automate the GitHub API via octokit/rest.js, although
 
 The short answer is that it can do virtually anything with respect to automating GitHub. Not only do you have access to commits, pull requests, and issues, but you also have access to users, projects, and organizations. You can retrieve lists of commonly used files like popular licenses or `.gitignore` files. You can even render Markdown.
 
-If you're building something that integrates GitHub, the odds are good that you will find what you're looking for in [the full octokit/rest.js documentation](https://octokit.github.io/rest.js/v17?azure-portal=true).
+If you're building something that integrates GitHub, the odds are good that you will find what you're looking for in [the full octokit/rest.js documentation](https://octokit.github.io/rest.js/?azure-portal=true).
 
 ### How is using GitHub Script different from octokit/rest.js?
 
@@ -106,4 +106,4 @@ jobs:
             console.log(require(scriptPath)({context}))
 ```
 
-Check out [more GitHub Script examples](https://octokit.github.io/rest.js/v17?azure-portal=true).
+Check out [more GitHub Script examples](https://octokit.github.io/rest.js/?azure-portal=true).
