@@ -64,14 +64,6 @@ You'll see ```Running...``` in the terminal.
 
 [!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../shared/includes/bicep-exercise-deploy-powershell.md)]
 
-### Set the default resource group
-
-You can set the default resource group and omit the parameter from the rest of the Azure PowerShell commands in this exercise. Set this to the resource group created for you in the sandbox environment.
-
-```azurepowershell
-Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
-```
-
 ### Deploy the template to Azure
 
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
