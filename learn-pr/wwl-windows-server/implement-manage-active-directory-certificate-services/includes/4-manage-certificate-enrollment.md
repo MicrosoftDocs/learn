@@ -46,7 +46,7 @@ The following video demonstrates how to:
 The main steps in the process are:
 
 1. Create an AD DS environment. Create a single-domain AD DS forest.
-1. Deploy an Enterprise Root CA. Deploy an Enterprise Root CA.
+1. Deploy an Enterprise Root CA.
 1. Create a custom certificate template. Use the Certificate Templates console to duplicate the Web Server template.
 1. Configure the template so that it can be issued. Use the Certification Authority console, to make the template available for use.
 
