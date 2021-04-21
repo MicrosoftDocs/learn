@@ -5,8 +5,8 @@ metadata:
   title: Use common DataFrame methods
   description: "Use common DataFrame methods"
   ms.date: 05/15/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
