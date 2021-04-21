@@ -25,6 +25,8 @@ roles:
 - business-user
 products: 
 - azure
+- azure-stack-edge
+- azure-stack-hub
 units: 
 - learn.azure.design-secure-environment-government.1-introduction
 - learn.azure.design-secure-environment-government.2-discover-cloud-solutions
