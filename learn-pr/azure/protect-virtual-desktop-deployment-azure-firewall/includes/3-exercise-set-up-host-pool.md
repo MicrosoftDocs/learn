@@ -21,6 +21,7 @@ TODO: add your topic sentences(s)
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
 TODO: add your scenario sub-task
+
 TODO: add your scenario image
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
@@ -56,53 +57,146 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## [Chunk 1 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
 
-## [Chunk 2 heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create a resource group
 
-## [Chunk n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+   ```powershell
+    $resourceGroup = 'learn-firewall-rg'
+    $location = 'EastUS'
+    New-AzResourceGroup -Name $resourceGroup -Location $location
+   ```
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+   This list shows some location values you can use:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+## Create host pool for Windows Virtual Desktop
+
+Run the following command to create a host pool.
+
+   ```powershell
+    $hostPoolName = 'learn-host-pool'
+    $workspaceName = 'learn-workspace'
+    $appGroupName = 'learn-app-group'
+
+    New-AzWvdHostPool `
+    -Name $hostPoolName `
+    -ResourceGroupName $resourceGroup `
+    -WorkspaceName $workspaceName `
+    -HostPoolType Pooled `
+    -LoadBalancerType BreadthFirst `
+    -Location $location `
+    -DesktopAppGroupName $appGroupName 
+   ```
+
+## Create a registration token for the host pool
+
+Create a registration token to authorize a session host to join the host pool.
+
+1. Run the following command to create a registration token that'll expire in 4 hours.
+
+   ```powershell
+    New-AzWvdRegistrationInfo `
+    -ResourceGroupName $resourceGroup `
+    -HostPoolName $hostPoolName `
+    -ExpirationTime $((get-date).ToUniversalTime().AddHours(4).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ'))
+   ```
+
+1. Run the following command to get the registration token.
+
+   ```powershell
+    (Get-AzWvdRegistrationInfo `
+    -ResourceGroupName $resourceGroup `
+    -HostPoolName $hostPoolName).token
+   ```
+
+1. Copy the token to a note app like Notepad.  
+
+## Create a session host for the host pool
+
+Create an Azure VM to act as a session host for the host pool.
+
+1. Run the following command to set the user name and password for the administrator account on the VM. The password needs to be at least eight characters long and include a digit, an uppercase letter, a lowercase letter, and a special character. Write down the password because you'll need it later.
+
+    ```powershell
+    $cred = Get-Credential
+
+    ```
+
+1. Run the following command to create the VM using a Windows 10 image. (Check to see if host pool creates vNet & subnet)
+
+    ```powershell
+    New-Azvm `
+    -Name 'learn-vm-session-host' `
+    -Credential $cred `
+    -ResourceGroupName $resourceGroup `
+    -Size Standard_DS1_v2 `
+    -VirtualNetworkName myVnet `
+    -SubnetName mySubnet `
+    -Image "MicrosoftWindowsDesktop:Windows-10:rs5-enterprise-standard:latest" 
+
+    ```
+
+   Wait a couple of minutes for the VM to be created.
+
+## Connect to the VM by using remote desktop
+
+
+1. Get the public IP address of the VM by running the following command.
+
+    ```powershell
+    Get-AzPublicIpAddress -ResourceGroupName "myResourceGroup" | Select "IpAddress"
+    ```
+
+1. Run the following command to create a remote desktop session from your local computer. Replace "publicIpAddress" with the public IP address of your VM.
+
+    ```powershell
+    mstsc /v:publicIpAddress
+    ```
+
+1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
+1. Type in the username and password you used when you created the VM. Type the username as **localhost**\\*username*.
+
+You may receive a certificate warning during the sign-in process. Click **Yes** or **Continue** to create the connection
+
+## Register virtual machine with host pool
+
+Install the Windows Virtual Desktop agents to register the VM to the host pool.
+
+First, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
+
+1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
+1. Paste the link into a web browser session in the VM.
+1. Download and install the Windows Virtual Desktop Agent.
+1. When the installer asks you for the registration token, paste in the value you got after you created the token.
+1. If you no longer have the token value, rerun the following command in your Azure PowerShell session.
+
+   ```powershell
+    (Get-AzWvdRegistrationInfo `
+    -ResourceGroupName $resourceGroup `
+    -HostPoolName $hostPoolName).Token
+   ```
+
+1. Complete the installation.
+
+Next, install the  Windows Virtual Desktop Agent Bootloader. 
+
+1. Copy the link to the [Windows Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrHand).
+1. Paste the link into a web browser session in the VM.
+1. Download and install the Windows Virtual Desktop Agent Bootloader.
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+At this point, the virtual machine should be registered as a session host for the host pool. To verify it's registered, let's sign into the portal and check status of the VM in the host pool.
 
-<!-- Do not add a unit summary or references/links -->
+1. Sign into the Azure portal using the same account you used to create the host pool and VM.
+1. Search for or select **Windows Virtual Desktop**.
+1. Select **Host pools** > **learn-host-pool**.
+1. In the center pane, under **Virtual machines**, select **Total machines**.
+1. For **learn-vm-session-host**, review the **Status**.
+1. If you sucessfully registered the VM to the host pool, the **Status** value is **Available**.
+<!--TODO add screenshot-->
+
+
