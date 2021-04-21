@@ -2,7 +2,7 @@ The first step before implementing accessible features in the app is to turn on 
 
 ## Android screen reader
 
-TalkBack is a feature of Android that provides screen reader capabilities. It is included on most devices or can be downloaded directly from the Google Play app store. To enable TalkBack on your device follow these instructions:
+TalkBack is a feature of Android that provides screen reader capabilities. It is included on most devices or can be downloaded directly from the Google Play app store. Enable TalkBack on your device follow these instructions:
 
 - Open the **Settings** app on your Android device
 - Navigate or search for **Accessibility**
@@ -16,7 +16,7 @@ It is recommended to go through the TalkBack tutorial, which will launch automat
 
 ## iOS screen reader
 
-VoiceOver is Apple's screen reader technology that is available across iPhone, iPad, Mac, and other Apple devices. On certain devices it also supports braille through a connected braille display. To enable VoiceOver on your device follow these instructions:
+VoiceOver is Apple's screen reader technology that is available across iPhone, iPad, Mac, and other Apple devices. On certain devices, it also supports braille through a connected braille display. To enable VoiceOver on your device follow these instructions:
 
 - Open the **Settings** app on your iOS device
 - Navigate or search for **Accessibility**

@@ -2,17 +2,17 @@ The design of your app is a form that is used to collect project information. It
 
 ## Screen reader narration
 
-As mentioned in the previous section, each operating system has its own screen reader with their own unique behavior and configuration. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control when it recieves focus. This means that elements such as a `Label` or `Button` with the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in to help provide additional information to decide what elements should receive focus and additional text to be read back to the user.
+As mentioned in the previous section, each operating system has its own screen reader with their own unique behavior and configuration. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control when it receives focus. This means that elements such as a `Label` or `Button` with the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in to help provide additional information to decide what elements should receive focus and more text to be read back to the user.
 
 ## Automation Properties
 
-Xmarin.Forms provides four different properties that can enhance the screen reader for the user interface that displayed to the user. These are called `AutomationProperties` and are attached properties that can be added to any element: 
+Xamarin.Forms provides four different properties that can enhance the screen reader for the user interface that displayed to the user. These are called `AutomationProperties` and are attached properties that can be added to any element: 
 - `AutomationProperties.IsInAccessibleTree` - indicates whether the element is available to an accessible application.
 - `AutomationProperties.Name` - a short description of the element that serves as a speakable identifier for the element. 
 - `AutomationProperties.HelpText` - a longer description of the element, which can be thought of as tooltip text associated with the element. 
 - `AutomationProperties.LabeledBy` - allows another element to define accessibility information for the current element. 
 
-Screen readers also read different accessibility values. For example on an `Entry`:
+Screen readers also read different accessibility values. For example, on an `Entry`:
 
 - VoiceOver will read the `Placeholder` value of the `Entry`, followed by instructions for using the control.
 - TalkBack will read the `Placeholder` value of the `Entry`, followed by the `AutomationProperties.HelpText` value, followed by instructions for using the control.
@@ -34,7 +34,7 @@ AutomationProperties.SetIsInAccessibleTree(entry, true);
 
 ## Name
 
-This attached property is a short descritive text string that a screen reader users to announce an element. It should be sset for elements that have a meaning that is important for understanding the content or interacting with the user interface. It can be set on an element in XAML:
+This attached property is a short descriptive text string that a screen reader uses to announce an element. It should be set for elements that have a meaning that is important for understanding the content or interacting with the user interface. It can be set on an element in XAML:
 
 ```xaml
 <ActivityIndicator AutomationProperties.IsInAccessibleTree="true"
@@ -69,7 +69,7 @@ AutomationProperties.SetHelpText(button, "Tap to toggle the activity indicator")
 
 ## LabeledBy
 
-This attached proprety allows another element to specify information for accessibility for the current element. A common use case would be where a `Label` is placed above an `Entry` to represent what the user needs to enter. This can be set on an element in the XAML:
+This attached property allows another element to specify information for accessibility for the current element. A common use case would be where a `Label` is placed above an `Entry` to represent what the user needs to enter. This can be set on an element in the XAML:
 
 ```xaml
 <Label x:Name="label" Text="Enter your name: " />

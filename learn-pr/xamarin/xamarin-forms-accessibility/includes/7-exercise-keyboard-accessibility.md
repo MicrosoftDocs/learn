@@ -1,4 +1,4 @@
-To complete the project we must now implement a way to enter data for the users forename and surname and their managers.
+To complete the project, we must now implement a way to enter data for the users forename and surname and their managers.
 
 ## Add data entry elements for names
 
@@ -37,7 +37,7 @@ To complete the project we must now implement a way to enter data for the users 
 
 ## Run the application
 
-When you run the application and use the screen reader to navigate the elements on the screen you will see that the default ordering is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
+When you run the application and use the screen reader to navigate the elements on the screen, you will see that the default ordering is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
 
 ![Default Row-based Tab Order](../media/default-tab-order.png)
 
@@ -66,6 +66,14 @@ By default, the tab order of controls is the same order in which they are listed
     Grid.Column="1"
     Placeholder="Enter surname"
     TabIndex="4"/>
+```
+
+1. To ensure that the `Button` is read after the `Grid` with `Entry` elements add a `TabIndex` to the `Button`:
+
+```xaml
+<Button AutomationProperties.HelpText="Tap to submit project information to backend" 
+        Text="Submit"
+        TabIndex="5"/>
 ```
 
 Now, when you run the application you will see the new column-based tab ordering as navigating through the elements.

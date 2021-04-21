@@ -2,7 +2,7 @@ You needed to create an app that is accessible to users that is created with Xam
 
 In this module, you used Xamarin.Forms automation properties to control what elements are included and what information is read back by the screen reader. You also applied tab ordering to improve the screen reader and tabbing through the user interface in Xamarin.Forms apps. 
 
-There are many additional enhancements to applications that can be done to improve accessibility including layout and design of user interface elements, appropriate font sizes, and suitable color and contrast settings. For guidelines on issues to consider, see the [Accessibility Checklist](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist).
+There are many more enhancements to applications that can be done to improve accessibility including layout and design of user interface elements, appropriate font sizes, and suitable color and contrast settings. For guidelines on issues to consider, see the [Accessibility Checklist](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist).
 
 ## Accessibility Documentation
 - [Xamarin.Forms Accessibility](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/accessibility/)
