@@ -9,7 +9,7 @@ A certificate also contains the key pair, which consists of a private key and th
 - When content is encrypted with the public key, it can be decrypted only with the private key.
 - When content is encrypted with the private key, it can be decrypted only with the public key.
 - No other key is involved in the relationship between the keys from a single key pair.
-- The private key can#t be derived in a reasonable amount of time from a public key, and vice versa.
+- The private key can't be derived in a reasonable amount of time from a public key, and vice versa.
 
 As part of the certificate enrollment process, the client generates the public/private key pair. The client then sends the public key to CA, which confirms client information, signs it with its own private key, and then sends the certificate, which includes the client public key, back to the client.
 
