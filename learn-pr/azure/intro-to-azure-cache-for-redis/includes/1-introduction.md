@@ -8,7 +8,7 @@ As the following graphic illustrates, Azure Cache for Redis can help improve per
 
 Suppose you work for a company that makes athletic shoes. You sell these shoes on your website and have started analyzing website visits. You realize there's been a reduction in the percentage of visits that translate into sales. Closer inspection of data indicates that performance issues are causing potential customers to leave your website before making a purchase.
 
-Management wants you to resolve this issue and return your website sales to previous levels. You can use Azure Cache for Redis to solve this problem. It caches frequently accessed data in memory, so the <!-- ID/SME I rewrote this to tighten it. Is it indeed the "website" that won't have to repeatedly retrieve the same information or is is the "app"? Please confirm. --> website doesn't have to repeatedly retrieve the same information. This will result in improved website performance and sales.
+Management wants you to resolve this issue and return your website sales to previous levels. You can use Azure Cache for Redis to solve this problem. It caches frequently accessed data in memory, so the website doesn't have to repeatedly retrieve the same information. This will result in improved website performance and sales.
 
 ## What will we be doing?
 
