@@ -362,7 +362,7 @@ groups:
       title: GitHub Actions
     - id: azure-devops
       title: Azure Pipelines
-- id: azure-devops-actions
+- id: vs-vsmac
   title: Choose your platform
   prompt: Choose your platform
   pivots:

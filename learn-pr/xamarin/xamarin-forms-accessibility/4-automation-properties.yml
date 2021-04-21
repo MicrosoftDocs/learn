@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn-xamarin.xamarin-forms-accessibility.3-automation-properties
+uid: learn-xamarin.xamarin-forms-accessibility.4-automation-properties
 metadata:
-  title: Add Xamarin.Forms automation properties
+  title: Xamarin.Forms automation properties
   description: Learn how to improve accessibility with automation properties in Xamarin.Forms.
   ms.date: 04/20/2021
   author: jamont
   ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-title: Add Xamarin.Forms automation properties
+title: Xamarin.Forms automation properties
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-automation-properties.md)]
+  [!include[](includes/4-automation-properties.md)]
 quiz:
     title: Check your knowledge
     questions:

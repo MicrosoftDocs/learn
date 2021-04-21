@@ -1,39 +1,39 @@
-To complete the project we must now implement a way to enter data for the users forename and surename and their managers.
+To complete the project we must now implement a way to enter data for the users forename and surname and their managers.
 
 ## Add data entry elements for names
 
-Replace `<!-- Report and Manager Information -->` with the following XAML:
+1. Replace `<!-- Report and Manager Information -->` with the following XAML:
 
-    ```xaml
-    <Grid
-        Margin="0,20,0,0"
-        ColumnDefinitions="*,*"
-        RowDefinitions="Auto,Auto,Auto">
-        <Label
-            AutomationProperties.IsInAccessibleTree="True"
-            HorizontalOptions="Center"
-            Text="You" />
-        <Label
-            Grid.Column="1"
-            AutomationProperties.IsInAccessibleTree="True"
-            HorizontalOptions="Center"
-            Text="Manager" />
+```xaml
+<Grid
+    Margin="0,20,0,0"
+    ColumnDefinitions="*,*"
+    RowDefinitions="Auto,Auto,Auto">
+    <Label
+        AutomationProperties.IsInAccessibleTree="True"
+        HorizontalOptions="Center"
+        Text="You" />
+    <Label
+        Grid.Column="1"
+        AutomationProperties.IsInAccessibleTree="True"
+        HorizontalOptions="Center"
+        Text="Manager" />
 
-        <Entry Grid.Row="1" 
-               Placeholder="Enter forename"/>
-        <Entry
-            Grid.Row="1"
-            Grid.Column="1"
+    <Entry Grid.Row="1" 
             Placeholder="Enter forename"/>
+    <Entry
+        Grid.Row="1"
+        Grid.Column="1"
+        Placeholder="Enter forename"/>
         
-        <Entry Grid.Row="2" 
-               Placeholder="Enter surname" />
-        <Entry
-            Grid.Row="2"
-            Grid.Column="1"
+    <Entry Grid.Row="2" 
             Placeholder="Enter surname" />
-    </Grid>
-    ```
+    <Entry
+        Grid.Row="2"
+        Grid.Column="1"
+        Placeholder="Enter surname" />
+</Grid>
+```
 
 ## Run the application
 
@@ -45,7 +45,7 @@ By default, the tab order of controls is the same order in which they are listed
 
 ## Set the tab order
 
-We can set the `TabIndex` on each of the `Entry` elements to correct the data entry accessibility of the names.
+1. Set the `TabIndex` on each of the `Entry` elements to correct the data entry accessibility of the names.
 
 
 ```xaml

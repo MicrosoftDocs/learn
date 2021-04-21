@@ -5,25 +5,25 @@ Let's start implementing the design for the app by creating a new project and sp
 Create a new Xamarin app:
 
 ::: zone pivot="vstudio"
-- Open Visual Studio 2019.
-- Select **Create a new project**.
-- Select **Mobile** from the **Project type** drop-down.
-- Select the **Mobile App (Xamarin.Forms)** template and click **Next**.
-- Enter **AccessibleApp** as the project name and click **Create**.
-- Select the Blank template. Ensure Android and iOS are both selected, and click OK.
+1. Open Visual Studio 2019.
+1. Select **Create a new project**.
+1. Select **Mobile** from the **Project type** drop-down.
+1. Select the **Mobile App (Xamarin.Forms)** template and click **Next**.
+1. Enter **AccessibleApp** as the project name and click **Create**.
+1. Select the Blank template. Ensure Android and iOS are both selected, and click OK.
 ::: zone-end
 
 ::: zone pivot="vstudiomac"
-- Open Visual Studio 2019 for Mac
-- Select **New Project**
-- Select **Multiplatform** > **App** > **Blank Forms App** and click Next
-- Enter **AccessibleApp** as the app name, and click **Next**
-- Click **Create**
+1. Open Visual Studio 2019 for Mac
+1. Select **New Project**
+1. Select **Multiplatform** > **App** > **Blank Forms App** and click Next
+1. Enter **AccessibleApp** as the app name, and click **Next**
+1. Click **Create**
 ::: zone-end
 
 ## Create the data entry form
 
-To create a simple for we will use severl UI elements including `Label`, `Image`, `Entry`, and a `Button`.
+To create a simple for we will use several UI elements including `Label`, `Image`, `Entry`, and a `Button`.
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -52,7 +52,7 @@ To create a simple for we will use severl UI elements including `Label`, `Image`
 
 ## Run the application
 
-Run the application with the screen reader enabled on the operating system of your choice. Notice that on some platforms when you launch the application all contents will attempt to be read. Use gestures or a keyboard to tab through the items on the screen. Note the following:
+Run the application with the screen reader enabled on the operating system of your choice. Notice that on some platforms when you launch the application all elements will be read by the screen reader. Use gestures or a keyboard to tab through the items on the screen. Note the following:
 
 - `Image` does have any information as to what it is
 - `Entry` reads back a generic informatin
@@ -60,7 +60,9 @@ Run the application with the screen reader enabled on the operating system of yo
 
 ## Image accessibility
 
-To have the screen reader see the `Image` as a visible element we must set the `AutomationProperties.IsInAccessibleTree` property to `true`. Add the following property to the `Image`:
+To have the screen reader see the `Image` as a visible element we must set the `AutomationProperties.IsInAccessibleTree` property to `true`. 
+
+1. Add the following property to the `Image`:
 
 ```xaml
 AutomationProperties.IsInAccessibleTree="true"
@@ -71,11 +73,14 @@ We can provide additional information as to what the image is when it becomes fo
 AutomationProperties.Name="Image of .NET Bot"
 ```
 
-When you run the application again you will see that the image now is focused when gestured and "Image of .NET Bot" is read outloud.
+When you run the application again you will see that when the image gains focus, "Image of .NET Bot" is read outloud.
 
 ## Entry accessibility with LabelBy
 
-The `Entry` currently has no information about what the user should enter. There is a `Label` directly above the `Entry` which provides the descriptor and can be used as text that the screen reader can read out loud by using the `AutomationProperties.LabeledBy` property. Add the following property to the `Entry`:
+The `Entry` currently has no information about what the user should enter. There is a `Label` directly above the `Entry` which provides the descriptor and can be used as text that the screen reader can read out loud by using the `AutomationProperties.LabeledBy` property. 
+
+
+1. Add the following property to the `Entry`:
 
 ```xaml
 AutomationProperties.LabeledBy="{x:Reference LabelName}"
@@ -85,7 +90,9 @@ When you run the application again you hear "Project name" read outloud when the
 
 ## Improved Button descriptors
 
-When the `Button` is in focus "Submit button" is read outloud by the screen reader. We can provide additional context as to what will happen when the user taps the button by setting the `AutomationProperties.HelpText` property. Add the following properties to the `Button`:
+When the `Button` is in focus "Submit button" is read outloud by the screen reader. We can provide additional context as to what will happen when the user taps the button by setting the `AutomationProperties.HelpText` property. 
+
+1. Add the following properties to the `Button`:
 
 ```xaml
 AutomationProperties.Name="Submit Button"

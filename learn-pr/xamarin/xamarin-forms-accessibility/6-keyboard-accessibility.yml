@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn-xamarin.xamarin-forms-accessibility.5-keyboard-accessibility
+uid: learn-xamarin.xamarin-forms-accessibility.6-keyboard-accessibility
 metadata:
-  title: Add keyboard accessibility with TabIndex
+  title: Keyboard accessibility with TabIndex
   description: Learn how TabIndex can be used in Xamarin.Forms applications to improve accessibility.
   ms.date: 04/20/2021
   author: jamont
@@ -9,10 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   
-title: Add keyboard accessibility with TabIndex
+title: Keyboard accessibility with TabIndex
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-keyboard-accessibility.md)]
+  [!include[](includes/6-keyboard-accessibility.md)]
 quiz:
     title: Check your knowledge
     questions:
@@ -38,6 +38,6 @@ quiz:
       - content: "Entry"
         isCorrect: false
         explanation: "Entry support TabIndex."
-      - content: "Toggle"
+      - content: "Switch"
         isCorrect: false
-        explanation: "Toggle supports TabIndex."
+        explanation: "Switch supports TabIndex."

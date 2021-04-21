@@ -5,7 +5,7 @@ In this module, you used Xamarin.Forms automation properties to control what ele
 There are many additional enhancements to applications that can be done to improve accessibility including layout and design of user interface elements, appropriate font sizes, and suitable color and contrast settings. For guidelines on issues to consider, see the [Accessibility Checklist](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist).
 
 ## Accessibility Documentation
-- [Accessibility in Xamarin Apps](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility)
+- [Xamarin.Forms Accessibility](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/accessibility/)
 - [Android Testing](https://docs.microsoft.com/xamarin/android/app-fundamentals/accessibility)
 - [iOS Testing](https://docs.microsoft.com/xamarin/ios/app-fundamentals/accessibility)
 - [Windows AccScope](https://docs.microsoft.com/windows/win32/winauto/accscope)
