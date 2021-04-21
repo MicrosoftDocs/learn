@@ -62,20 +62,32 @@ The next step is to disable the Diagnostics bar. It's recommended that you keep 
 
 1. Select the **MixedRealityToolkit** object in the **Hierarchy** window. The MixedRealityToolkit's properties will display in the **Inspector** window.
 
+    :::image type="content" source="../media/mixedrealitytoolkit-object.png" alt-text="The mixed reality toolkit object is highlighted in the hierarchy window.":::
+
 1. In the **Inspector** window, select **DefaultMixedRealityToolkitConfigurationProfile**
+
+    :::image type="content" source="../media/defaultmixedrealitytoolkit-profile.png" alt-text="The default mixed reality toolkit configuration profile is highlighted in the hierarchy window.":::
 
 1. In the **Inspector** window, select **Clone** to clone the profile.
 
-1. In the **Cloning Profile** window, enter MRTKCubeConfigurationProfile for Profile Name.
+    :::image type="content" source="../media/clone-profile-one.png" alt-text="The clone button is highlighted in the hierarchy window.":::
+
+1. In the **Cloning Profile** window, enter **MRTKCubeConfigurationProfile** for **Profile Name**.
+
+    :::image type="content" source="../media/configuration-profile-name.png" alt-text="In the clone profile window, the profile name entered is m r t k cube configuration profile. The profile name is highlighted.":::
 
 1. Select **Clone**.
 
-1. In the **Inspector** window, select **Diagnostics**.
+1. In the **Inspector** window, select **Diagnostics**. In the **Diagnostics** settings, select **Clone** to clone the Diagnostics profile.
 
-1. In the **Diagnostics** settings, select **Clone** to clone the Diagnostics profile.
+    :::image type="content" source="../media/diagnostics-profile.png" alt-text="The diagnostics profile button is highlighted in the hierarchy window. The clone button is also highlighted.":::
 
 1. In the **Cloning Profile** window, enter **MRTKCubeDiagnosticsProfile** for **Profile Name**.
+
+    :::image type="content" source="../media/new-diagnostics-profile.png" alt-text="In the clone profile window, the profile name entered is mrtk cube diagnostics profile. The profile name is highlighted.":::
 
 1. Select **Clone**.
 
 1. In the **Diagnostics** settings, uncheck **Show Diagnostics**.
+
+    :::image type="content" source="../media/show-diagnostics.png" alt-text="The show diagnostics setting is highlighted. The box is unchecked.":::
