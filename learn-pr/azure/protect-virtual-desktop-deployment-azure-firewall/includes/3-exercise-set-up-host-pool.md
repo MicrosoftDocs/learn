@@ -72,7 +72,7 @@ Run the following command to create a resource group. Replace `EastUS` with the 
 
    [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-## Create host pool for Windows Virtual Desktop
+## Create a host pool for Windows Virtual Desktop
 
 Run the following command to create a host pool.
 
@@ -141,7 +141,7 @@ Create an Azure VM to act as a session host for the host pool.
 
    Wait a couple of minutes for the VM to be created.
 
-## Connect to the VM by using remote desktop
+## Connect to the VM by using a remote desktop session
 
 
 1. Get the public IP address of the VM by running the following command.
@@ -158,12 +158,13 @@ Create an Azure VM to act as a session host for the host pool.
 
 1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
 1. Type in the username and password you used when you created the VM. Type the username as **localhost**\\*username*.
+1. You may receive a certificate warning during the sign-in process. Click **Yes** or **Continue** to create the connection
 
-You may receive a certificate warning during the sign-in process. Click **Yes** or **Continue** to create the connection
-
-## Register virtual machine with host pool
+## Register the virtual machine with host pool
 
 Install the Windows Virtual Desktop agents to register the VM to the host pool.
+
+### Install the  Windows Virtual Desktop Agent
 
 First, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
 
@@ -180,6 +181,8 @@ First, install the  Windows Virtual Desktop Agent. You'll need the registration 
    ```
 
 1. Complete the installation.
+
+### Install the  Windows Virtual Desktop Agent Bootloader
 
 Next, install the  Windows Virtual Desktop Agent Bootloader. 
 
