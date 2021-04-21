@@ -36,7 +36,7 @@ This model extracts the information from worldwide passports and American driver
 
 This model extracts key information, such as the contact information, and compiles them in an organized JSON response.
 
-![Prebuilt ID example.](../media/overview-id.jpeg)
+![Prebuilt ID example.](../media/overview-business-card.jpeg)
 
 ## Custom models
 
