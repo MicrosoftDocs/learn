@@ -37,7 +37,7 @@ The CIO is working to change the policy, but the central operations and infrastr
 
 Demonstrating that these controls are in place will give the CIO confidence that the team is ready to migrate more complex, higher-risk workloads to the cloud. It also will provide the governance balance that's required.
 
-Unfortunately, "existing datacenters" governance requirement was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
+Unfortunately, the "existing datacenters" governance requirement was discovered only as the team prepared to deploy its first mission-critical workload to production. The policy has frozen the effort to migrate the company's current datacenters. More foresight would have helped the team address this policy sooner as they moved lower-risk workloads to production.
 
 The retail innovation team currently isn't affected by the governance policy, and it has been delivering new innovations in the cloud faster than expected. However, the same challenges will soon block the following teams and efforts:
 

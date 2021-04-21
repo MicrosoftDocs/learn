@@ -21,7 +21,7 @@ The Govern methodology provides a structured approach to building the governance
 
 ## Corporate policy
 
-*Governance* is a substantial topic, and it might be intimidating at first. Governance seeks to establish proper scope by mitigating tangible risks through corporate policy. 
+*Governance* is a big topic, and it might be intimidating at first. Governance seeks to establish the proper scope of corporate actions by mitigating tangible risks through corporate policy. 
 
 Corporate policies drive cloud governance. Proper corporate policy consists of three components:
 

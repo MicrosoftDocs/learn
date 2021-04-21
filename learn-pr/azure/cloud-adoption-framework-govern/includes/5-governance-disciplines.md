@@ -2,7 +2,7 @@ Common governance disciplines within cloud platforms inform policies, align tool
 
 The following table summarizes each discipline from the Govern methodology in the Cloud Adoption Framework:
 
-|  |  |
+| &nbsp; | &nbsp; |
 |--|--|
 | <br> :::image type="icon" source="../media/cost-management-icon.png"::: | <br> [Cost Management discipline](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/cost-management/?azure-portal=true): Cost is a primary concern for cloud users. Develop policies for cost control for all cloud platforms. |
 | <br> :::image type="icon" source="../media/security-baseline-icon.png"::: | <br> [Security Baseline discipline](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/security-baseline/?azure-portal=true): Security is a complex subject that's unique to each company. After security requirements are established, cloud governance policies and enforcement apply those requirements across network, data, and asset configurations.|
@@ -10,7 +10,7 @@ The following table summarizes each discipline from the Govern methodology in th
 | <br> :::image type="icon" source="../media/resource-consistency-icon.png"::: | <br> [Resource Consistency discipline](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/resource-consistency/?azure-portal=true): Cloud operations depend on consistent resource configuration. Through governance tooling, resources can be configured consistently to manage risks related to onboarding, drift, discoverability, and recovery. |
 | <br> :::image type="icon" source="../media/deployment-acceleration-icon.png"::: | <br> [Deployment Acceleration discipline](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/deployment-acceleration/?azure-portal=true): Centralization, standardization, and consistency in approaches to deployment and configuration improve governance practices. When provided through cloud-based governance tooling, they create a cloud factor that can accelerate deployment activities. |
 
-## Cost Management discipline
+### Cost Management discipline
 
 This discipline focuses on scaling the operational best practices for cost management across all workloads and assets in your portfolio.
 
@@ -18,9 +18,9 @@ This discipline would help Tailwind Traders address the following risk:
 
 - Overspending in the cloud.
 
-A future unit in this module will demonstrate how Tailwind Traders can add cost controls to its governance foundation.
+Later, we'll demonstrate how Tailwind Traders can add cost controls to its governance foundation.
 
-## Security Baseline discipline
+### Security Baseline discipline
 
 This discipline focuses on automating the application of security principles to ensure consistency across your environment.
 
@@ -33,7 +33,7 @@ This discipline would help Tailwind Traders address the following risks:
 - The organization not meeting security or compliance requirements.
 - Unauthorized access compromising systems or data.
 
-## Identity Baseline discipline
+### Identity Baseline discipline
 
 After you've established identity and access requirements for your cloud environment, this discipline ensures that those requirements are consistently applied to all workloads and assets.
 
@@ -45,7 +45,7 @@ This discipline would help Tailwind Traders to address the following risk:
 
 - Unauthorized access compromising systems or data.
 
-## Resource Consistency discipline
+### Resource Consistency discipline
 
 Resource consistency focuses on the initial organization of the resources that are required to establish a foundation for governance. In the long term, this discipline focuses on proper onboarding processes to ensure that all assets meet any operational support requirements.
 
@@ -57,9 +57,9 @@ This discipline would help Tailwind Traders address the following risks:
 
 - Operations management issues or oversights.
 
-A future unit in this module will apply this discipline to the early needs of our customer narrative for Tailwind Traders.
+Later, we'll apply this discipline to the early needs of our customer narrative for Tailwind Traders.
 
-## Deployment Acceleration discipline
+### Deployment Acceleration discipline
 
 Automating governance leads to automation in adoption. Providing infrastructure as code (IaC) templates to the various adoption teams helps them quickly deploy workloads into compliant, well-managed environments.
 

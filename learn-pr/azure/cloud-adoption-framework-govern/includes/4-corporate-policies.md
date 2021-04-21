@@ -1,10 +1,10 @@
 Poor governance policies create unnecessary constraints, and they might not protect the company. This unit evaluates ways to create proper, actionable corporate policies.
 
-### Example: Improper corporate policy
+## Tailwind Traders' improper corporate policy
 
 What's wrong with Tailwind Traders' existing policy, from the customer narrative?
 
-Tailwind policy: *"Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets."*
+Tailwind policy: *Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.*
 
 Corporate policies are designed to instruct teams on the best way to address tangible risks that the organization deems not tolerable. Corporate policies aren't designed to require a specific technical implementation.
 
@@ -25,7 +25,7 @@ As you'll see in the next unit, the Tailwind Traders policy on protected data fa
 
 Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud governance strategy begins with sound corporate policy. The following three-step process guides the iterative development of sound corporate policies:
 
-|  |  |
+| &nbsp; | &nbsp;  |
 |--|--|
 | <br> :::image type="icon" source="../media/business-risk.png"::: | <br> [Business risk](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/business-risk?Azure-portal=true): Investigate current cloud adoption plans and data classification to identify risks to the business. Work with the business to balance risk tolerance and mitigation costs. |
 | <br> :::image type="icon" source="../media/corporate-policy.png"::: | <br> [Policy and compliance](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/policy-compliance/policy-definition?policy-definition=true): Evaluate risk tolerance to inform minimally invasive policies that govern cloud adoption and manage risks. In some industries, third-party compliance affects initial policy creation. |
