@@ -4,7 +4,7 @@ metadata:
   title: 'Exercise - Data cleansing part 2 - Drop columns and rows'
   description: Drop columns and rows depending on the number of null values to create a more accurate dataset.
   ms.date: 03/10/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

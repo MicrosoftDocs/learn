@@ -4,7 +4,7 @@ metadata:
   title: Create a web app that uses data to make decisions on the basketball court
   description: "Create a web app by using JavaScript, Azure, GitHub, and Visual Studio Code to help the Tune Squad coach use data to make decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
   ms.date: 03/10/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
