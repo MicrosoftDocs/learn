@@ -16,3 +16,6 @@ Then you'll view your customer's resources using the Azure portal and your Conto
 
 ### Update a service offer using Azure Resource Manager templates
 Finally, you'll update and deploy a change to your service offer using PowerShell, to grant your user group permission to create new managed identities in your customer's subscription.
+
+> [!IMPORTANT]
+> When you have completed the deployment exercises in this lab **DO NOT CLOSE THE LAB ENVIRONMENT.** Instead, keep the lab running in a separate window, return to this course and continue with the next unit.
