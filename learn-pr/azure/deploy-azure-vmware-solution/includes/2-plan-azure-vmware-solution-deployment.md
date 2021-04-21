@@ -1,4 +1,4 @@
-Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed by using the Azure portal, the Azure CLI, or Azure PowerShell. AVS includes VMware vSphere, vCenter, vSAN, and NSX software. 
+Azure VMware Solution (AVS) delivers VMware-based private clouds in Azure. Private clouds contain clusters built with dedicated, bare-metal Azure hosts. The hosts are deployed and managed by using the Azure portal, the Azure CLI, or Azure PowerShell. AVS includes VMware vSphere, vCenter, vSAN, HCX, and NSX software. 
 
 AVS private-cloud hardware and software deployments are fully integrated and automated in Azure. At a high level, the following diagram shows the relationship between an on-premises VMware environment, AVS, and all Azure services that AVS can connect to.
 
@@ -27,7 +27,7 @@ Factor in the following Azure components before AVS deployment:
 | Region | AVS is deployable in Canada Central, East US, North Central US, West US, Australia East, West Europe, Japan East, and UK South. |
 | Resource name | The AVS resource name can't be longer than 14 characters. If it's longer than that, public IP addresses cannot be created to use with AVS. |
 | Host size | Host instance size is AV36: 36 cores, 576 GB of RAM, 15.36 TB of raw storage capacity, and a 3.2-TB NVMe cache.
-| Node count | The minimum number of hosts is 3. The maximum number of hosts is 16 per vSphere cluster. The maximum number of nodes in an Azure private cloud instance is 64. Clusters can be extended or shrunk as needed. Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
+| Node count | The minimum number of hosts is 3. The maximum number of hosts is 16 per vSphere cluster. The maximum number of nodes in an Azure private cloud instance is 96. Clusters can be extended or shrunk as needed. Minimum and maximum nodes need to be factored in as the environment extends or shrinks.
 | Azure virtual network | Create a new Azure virtual network or reuse an existing one.
 | Azure Bastion | Create a platform-as-a-service (PaaS) resource that provides seamless Remote Desktop Protocol (RDP) access to a jump host.
 | Jump host | Create an Azure VM (server or desktop) to use to access the vSphere environment after deployment.
@@ -115,7 +115,8 @@ Here are the VMware software versions used in new deployments of AVS private-clo
 | VCSA/vSphere/vCenter | 6.7 Update 3 |
 | ESXi | 6.7 Update 3 |
 | vSAN | 6.7 Update 3 |
-| NSX-T | 2.5 |
+| NSX-T | 3.1.1 |
+| HCX | 4.0 |
 
 Knowledge of the VMware versions gives customers an understanding of compatibility as it relates to on-premises environments.
 

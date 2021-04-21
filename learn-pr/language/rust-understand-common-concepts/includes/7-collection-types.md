@@ -60,7 +60,7 @@ Since the array length is known at compile time, Rust makes it impossible to bui
 Just like with arrays, you can use vectors with the type `Vec<T>` to store multiple values of the same type. Unlike arrays, vectors can grow or shrink at any time. This capability is implied in their size not being known at compile time, so Rust can't prevent you from accessing an invalid position in your vector.
 
 > [!NOTE]
-> You'll notice the syntax `<T>` often in Rust. These are generic type parameters. When we write `Vec<T>`, what we're indicating is a `Vec` type composed of some type `T`. The namew`T` is conventionally used as a type name for a type we don't yet know. When we actually create vectors, they'll have concrete types like `Vec<u32>` or `Vec<String>`.
+> You'll notice the syntax `<T>` often in Rust. These are generic type parameters. When we write `Vec<T>`, what we're indicating is a `Vec` type composed of some type `T`. The name`T` is conventionally used as a type name for a type we don't yet know. When we actually create vectors, they'll have concrete types like `Vec<u32>` or `Vec<String>`.
 
 You can use the `vec!` macro to initialize a vector.
 
