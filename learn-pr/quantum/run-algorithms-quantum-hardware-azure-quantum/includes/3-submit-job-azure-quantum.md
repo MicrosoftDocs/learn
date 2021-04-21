@@ -98,7 +98,7 @@ Next, you prepare your environment to submit the job by using the workspace you 
    az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
    > [!NOTE]
-   > azIf you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
+   > If you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
 
    You should obtain the data of your workspace as output.
 
