@@ -77,4 +77,4 @@ If you're moving from an on-premises cache to a managed service, a critical fact
 You can use the cloud-migration feature in Azure Cache for Redis to:
 
 - Migrate your apps from your on-premises environment to the cloud.
-- Help modernize your current <!-- ID/SME: Please confirm both "IaaS" and "PaaS" have been spelled out either in Module 1 or 2. If not, please spell them out here for first reference. --> IaaS apps through the benefits of PaaS services.
+- Help modernize your current infrastructure as a service (IaaS) apps through the benefits of platform as a service (PaaS) services.
