@@ -10,7 +10,7 @@ Typically, organizations use Redis cache to complement their database apps. Comb
 
 Any caching solution should address four key requirements:
 
-- **Performance**. <!-- ID/SME: We shouldn't be bolding for emphasis. I've seen this formatting in several modules now, so perhaps you've got different mandates that I'm not aware of? If so, please let me know. Otherwise, remove the bolding from these bulleted lists. --> The primary requirement for any caching solution is to improve performance, even under high loads. Ideally, it should increase throughout and reduce latency.
+- **Performance**. The primary requirement for any caching solution is to improve performance, even under high loads. Ideally, it should increase throughout and reduce latency.
 - **Scalability**. A system must respond to load changes promptly. In your fictional shoe company, sudden increases in demand might occur when you run sales promotions or at specific times of the year. Scaling should be automatic and occur without downtime.
 - **Availability**. Any caching solution must be highly available. This helps ensure that your apps can deliver at peak performance, even if component failures occur.
 - **Support for geographic distribution**. It's essential that a caching solution provides the same performance and scaling benefits everywhere in the world. This can be challenging if your data is geographically dispersed.
@@ -26,7 +26,7 @@ Azure Cache for Redis provides the following application architecture patterns:
 
 - **Data cache**. Databases often are too large to load directly into cache. That's why it's common to use the *cache-aside* pattern. It loads data into the cache only as needed.  
 - **Content cache**. Most webpages contain static items, such as headers, footers, and banners. These items don't change very often. By using an in-memory content cache, you can provide quick access to static content as compared to accessing back-end datastores.
-- **Session store**. This pattern is often used with shopping carts or other data based on user history data. The reason is that web applications often associate these with user cookies. Storing too much data in a cookie can adversely affect performance. The reason is because apps often use cookies to query a back-end database for user data. Using an in-memory cache to store user-session information is faster than working with the backend database.
+- **Session store**. This pattern is often used with shopping carts or other data based on user history data. The reason is that web applications often associate these with user cookies. Storing too much data in a cookie can adversely affect performance. The reason is that apps often use cookies to query a back-end database for user data. Using an in-memory cache to store user-session information is faster than working with the backend database.
 - **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to run. If a task contains long-running operations, they're typically queued to run in sequence. Azure Cache for Redis provides a distributed queue to support this application pattern.
 
    > [!NOTE]
@@ -57,7 +57,7 @@ All tiers support the following features:
 - Network isolation
 - Scaling
 
-The Premium, Enterprise, and Enterprise Flash tiers also support other advanced features, including <!-- ID/SME: In this list below, the bold formatting is OK because they're features that you're bolding. -->:
+The Premium, Enterprise, and Enterprise Flash tiers also support other advanced features, including:
 
 - **OSS Cluster**. Provides for high-availability and load distribution.
 - **Data persistence**. Allows you to persist data in Redis. This enables you to take snapshots and back up data. You can then load these snapshots should a hardware failure occur.
