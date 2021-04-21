@@ -15,7 +15,9 @@ abstract: |
   - Explain the basic concept and benefits of multi-tenant cloud services.
   - Describe how Azure helps customers follow data security requirements in the public sector.
   - Identify scenarios in which Azure could provide solutions for data in the public sector. 
-prerequisites: None
+prerequisites: |
+  - Familiarity with basic computing concepts and terminology.
+  - Familiarity with cloud computing. 
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - beginner

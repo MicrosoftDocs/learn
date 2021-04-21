@@ -10,4 +10,5 @@ In this module, you will learn to:
 
 ## Prerequisites
 
-None
+* Familiarity with basic computing concepts and terminology.
+* Familiarity with cloud computing.
