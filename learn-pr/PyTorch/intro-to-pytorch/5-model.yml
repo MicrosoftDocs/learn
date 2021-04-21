@@ -12,3 +12,14 @@ metadata:
 durationInMinutes: 15
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/5-model.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "The base class for all neural network modules in PyTorch is `torch.nn.Module`"
+      choices:
+        - content: "True"
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "False"
+          isCorrect: false
+          explanation: "Incorrect, the base class for all neural network modules in PyTorch is `torch.nn.Module`"

@@ -14,7 +14,6 @@ abstract: |
   In this module you will:
   - Learn about the complete ML workflow implemented in PyTorch.
   - Introduce the key concepts to building machine learning models.
-  - Build a Computer Vision model.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -24,7 +23,9 @@ roles:
 - student
 products:
 - azure
-prerequisites: Basic programming knowledge
+prerequisites: |
+  - Basic Python knowledge
+  - Basic knowledge about how to use Jupyter Notebooks
 units:
 - learn.PyTorch.intro-to-pytorch.introduction
 - learn.PyTorch.intro-to-pytorch.tensors
@@ -35,7 +36,6 @@ units:
 - learn.PyTorch.intro-to-pytorch.optimization
 - learn.PyTorch.intro-to-pytorch.inference
 - learn.PyTorch.intro-to-pytorch.ml-overview
-- learn.PyTorch.intro-to-pytorch.knowledge-check
 - learn.PyTorch.intro-to-pytorch.summary
 
 badge:

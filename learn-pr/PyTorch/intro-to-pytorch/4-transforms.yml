@@ -12,3 +12,17 @@ metadata:
 durationInMinutes: 5
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/4-transforms.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Transforms in PyTorch are designed to:"
+      choices:
+        - content: "perform some manipulation of the data to make it suitable for training"
+          isCorrect: true
+          explanation: "This is correct!"
+        - content: "convert input tensors into an output tensor that contains a prediction"
+          isCorrect: false
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"
+        - content: "convert data items into visual representations"
+          isCorrect: false
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"

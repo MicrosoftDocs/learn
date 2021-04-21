@@ -12,3 +12,20 @@ metadata:
 durationInMinutes: 8
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/8-inference.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is a PyTorch models' `state_dict`?"
+      choices:
+        - content: "It is a model's internal state dictionary that stores its current accuracy and loss values."
+          isCorrect: false
+          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
+        - content: "It is a model's internal state dictionary that stores versions of the data used for training."
+          isCorrect: false
+          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
+        - content: "It is a model's internal state dictionary that stores its internal layers."
+          isCorrect: false
+          explanation: "Incorrect, it is a model's internal state dictionary that stores learned parameters."
+        - content: "It is a model's internal state dictionary that stores learned parameters."
+          isCorrect: true
+          explanation: "Correct!"

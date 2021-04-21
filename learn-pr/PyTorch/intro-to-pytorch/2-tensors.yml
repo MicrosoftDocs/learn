@@ -12,3 +12,16 @@ metadata:
 durationInMinutes: 10
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/2-tensors.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which is true of Tensors?"
+      choices:
+        - content: "Tensors are a string type representing a vector."
+          isCorrect: false
+          explanation: "Incorrect"
+        - content: "Tensors are a mathematical value in Python to represent GPS coordinates."
+          isCorrect: false
+          explanation: "Incorrect"
+        - content: "Tensors are specialized data structures that are very similar to arrays and matrices."
+          isCorrect: true
