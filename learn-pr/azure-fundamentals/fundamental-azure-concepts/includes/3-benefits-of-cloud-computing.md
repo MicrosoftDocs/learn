@@ -12,18 +12,7 @@ There are several advantages that a cloud environment has over a physical enviro
  *  **Geo-distribution**: You can deploy apps and data to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region.
  *  **Disaster recovery**: By taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your apps with the confidence that comes from knowing that your data is safe in the event of disaster.
 
-## Cloud computing is a consumption-based model
-
-Cloud service providers operate on a *consumption-based model*, which means that end users only pay for the resources that they use. Whatever they use is what they pay for.
-
-A consumption-based model has many benefits, including:
-
- *  No upfront costs.
- *  No need to purchase and manage costly infrastructure that users might not use to its fullest.
- *  The ability to pay for additional resources when they are needed.
- *  The ability to stop paying for resources that are no longer needed.
-
-## Capital expenses vs. operating expenses
+## Capital expenses vs. operating expenses 
 
 There are two different types of expenses that you should consider:
 
@@ -35,3 +24,14 @@ In other words, when Tailwind Traders owns its infrastructure, it buys equipment
 Cloud services, on the other hand, are categorized as an OpEx, because of their consumption model. There's no asset for Tailwind Traders to amortize, and its cloud service provider (Azure) manages the costs that are associated with the purchase and lifespan of the physical equipment. As a result, OpEx has a direct impact on net profit, taxable income, and the associated expenses on the balance sheet.
 
 To summarize, CapEx requires significant up-front financial costs, as well as ongoing maintenance and support expenditures. By contrast, OpEx is a consumption-based model, so Tailwind Traders is only responsible for the cost of the computing resources that it uses.
+
+## Cloud computing is a consumption-based model
+
+Cloud service providers operate on a *consumption-based model*, which means that end users only pay for the resources that they use. Whatever they use is what they pay for.
+
+A consumption-based model has many benefits, including:
+
+ *  No upfront costs.
+ *  No need to purchase and manage costly infrastructure that users might not use to its fullest.
+ *  The ability to pay for additional resources when they are needed.
+ *  The ability to stop paying for resources that are no longer needed.

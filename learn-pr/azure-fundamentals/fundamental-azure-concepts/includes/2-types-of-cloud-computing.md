@@ -36,6 +36,22 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 :::row-end:::
 
 
-The following image illustrates several of the cloud computing concepts that are presented in this unit. In this example, several factors are demonstrated when you are considering where to deploy a database server in a hybrid cloud environment: as your resources move from on-premises to off-premises, your costs are reduced, and your administration requirements decrease.
+## Cloud model comparison
 
-:::image type="content" source="../media/cloud-computing-continuum-a4275a4b.png" alt-text="Illustration showing the cloud computing continuum.":::
+### Public cloud
+
+ *  No capital expenditures to scale up.
+ *  Applications can be quickly provisioned and deprovisioned.
+ *  Organizations pay only for what they use.
+
+### Private cloud
+
+ *  Hardware must be purchased for start-up and maintenance.
+ *  Organizations have complete control over resources and security.
+ *  Organizations are responsible for hardware maintenance and updates.
+
+### Hybrid cloud
+
+ *  Provides the most flexibility.
+ *  Organizations determine where to run their applications.
+ *  Organizations control security, compliance, or legal requirements.
