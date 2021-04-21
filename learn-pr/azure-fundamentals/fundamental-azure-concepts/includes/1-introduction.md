@@ -1,6 +1,6 @@
 You work in the IT department for Tailwind Traders, which has decided to migrate its applications and data to Microsoft Azure. You're aware that cloud computing will save your company time and money by migrating from your existing, on-premises, physical hardware, to a cloud solution. With this new solution, you'll only need to pay for the resources and computing time that you use.
 
-:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png":::
+:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="Tailwind Traders company logo.":::
 
 
 However, some of the cloud computing concepts are new to many members of your IT staff. They've been asking some specific questions about what cloud computing can do for them. For example, the team that manages Tailwind Traders' website wants to know how Azure improves the site's availability and scalability. The team that handles the deployment of new hardware is curious to see how cloud computing can make their deployment processes faster.

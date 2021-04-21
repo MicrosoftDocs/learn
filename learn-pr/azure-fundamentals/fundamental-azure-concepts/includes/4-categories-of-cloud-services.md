@@ -156,13 +156,8 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 :::row-end:::
 
 
-The following image illustrates several of the cloud computing concepts that are presented in this unit. In this example, several factors are demonstrated when you are considering where to deploy a database server in a Hybrid cloud environment: as your resources move from on-premises to off-premises, your costs are reduced, and your administration requirements decrease.
-
-
-:::image type="content" source="../media/cq5dam.web.1280.1280-eab7888b.png?ch_ck=1618505308000" alt-text="Illustration showing the cloud computing continuum.":::
-
-
 The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenant.
+
 
 :::image type="content" source="../media/shared-responsibility-76efbc1e.png" alt-text="Illustration showing the cloud responsibility model.":::
 !
