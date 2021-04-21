@@ -32,7 +32,6 @@ units:
 - learn.PyTorch.audio-pytorch.understand-audio-data
 - learn.PyTorch.audio-pytorch.visualizations-transforms
 - learn.PyTorch.audio-pytorch.speech-model
-- learn.PyTorch.audio-pytorch.knowledge-check
 - learn.PyTorch.audio-pytorch.summary
 
 badge:
