@@ -37,11 +37,11 @@ To complete the project, we must now implement a way to enter data for the users
 
 ## Run the application
 
-When you run the application and use the screen reader to navigate the elements on the screen, you will see that the default ordering is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
+When you run the application and use the screen reader to navigate the elements on the screen. The default ordering of the screen reader is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
 
 ![Default Row-based Tab Order](../media/default-tab-order.png)
 
-By default, the tab order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection. This is not an accessible order for data entry, we instead would prefer to go down the column to fill in the forename and then the surname of each person.
+The default tab order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection. This is not an accessible order for data entry. Instead we would prefer to go down the column to fill in the forename and then the surname of each person.
 
 ## Set the tab order
 

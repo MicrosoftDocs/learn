@@ -15,11 +15,11 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "In Xamarin.Forms, what property needs to be set to ensure an element is avialable to an accessible app?"
+    - content: "In Xamarin.Forms, what property needs to be set to ensure an element is available to an accessible app?"
       choices:
       - content: "IsAccessible"
         isCorrect: false
-        explanation: "This is not the name of an automation property."
+        explanation: "IsAccessible is not the name of an automation property."
       - content: "IsInAccessibleTree"
         isCorrect: true
         explanation: "Xamarin.Forms uses this automation property to set the underlying native platform accessibility flags to ensure the element is read by the screen reader."
@@ -29,7 +29,7 @@ quiz:
       - content: "LabeledBy"
         isCorrect: false
         explanation: "This is an automation property, but is used to allow another element to define accessibility information for the current element."
-    - content: "What is term used for the software that reads outloud elements on an application?"
+    - content: "What is term used for the software that reads out loud elements on an application?"
       choices:
       - content: "TalkBack"
         isCorrect: false
@@ -39,4 +39,4 @@ quiz:
         explanation: "This is the name of the screen reader on Windows."
       - content: "Screen reader"
         isCorrect: true
-        explanation: "A screen reader is available on the the different platforms for accessibility."
+        explanation: "A screen reader is available on the different platforms for accessibility."

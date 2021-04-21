@@ -8,7 +8,7 @@ metadata:
   ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-title: Create accessibile apps with Xamarin.Forms
+title: Create accessible apps with Xamarin.Forms
 summary: Enhance Xamarin.Forms elements accessibility with automation properties for screen readers.
 abstract: |
   By the end of this module, you'll be able to:

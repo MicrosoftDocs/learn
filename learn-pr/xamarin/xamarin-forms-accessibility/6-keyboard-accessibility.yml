@@ -24,7 +24,7 @@ quiz:
       - content: "From top to bottom."
         isCorrect: false
         explanation: "The order in which element appear on the screen is not specifically their tab order."
-      - content: "How they are listed in XAML or progmatically added to a child collection."
+      - content: "How they are listed in XAML or pragmatically added to a child collection."
         isCorrect: true
         explanation: "By default, the tab order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection."
     - content: "What control does NOT support TabIndex?"

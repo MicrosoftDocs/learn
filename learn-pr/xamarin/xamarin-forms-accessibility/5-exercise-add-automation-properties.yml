@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-accessibility.5-exercise-add-automation-properties
 metadata:
-  title: Excercise - Xamarin.Forms automation properties
-  description: Excercise - Xamarin.Forms automation properties
+  title: Exercise - Xamarin.Forms automation properties
+  description: Exercise - Xamarin.Forms automation properties
   ms.date: 04/20/2021
   author: jamont
   ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   zone_pivot_groups: vs-vsmac
-title: Excercise - Xamarin.Forms automation properties
+title: Exercise - Xamarin.Forms automation properties
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-add-automation-properties.md)]
