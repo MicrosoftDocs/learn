@@ -85,7 +85,7 @@ The following questions might help illustrate reasons for you to scale your subs
 
 Add existing subscriptions in each of the environment nodes to create clarity between production, development, and QA resources.
 
-:::image type="content" source="../media/add-context-sub.png" alt-text="Screenshot that shows adding a subscription to a management group in the Azure portal." border="false":::
+:::image type="content" source="../media/add-context-sub.png" alt-text="Screenshot that shows adding a subscription to a management group in the Azure portal.":::
 
 *Figure 5: Add a subscription to a management group.*
 
@@ -106,7 +106,7 @@ Management groups reflect your highest-priority organization structure. Tagging 
 
 You can apply Azure policies to all subscriptions in a management group. To understand the role of policy in your governance foundation, apply a policy to one of your management groups in the hierarchy.
 
-:::image type="content" source="../media/select-assign-policy.png" alt-text="Screenshot that shows assigning a policy in the Azure portal." border="false":::
+:::image type="content" source="../media/select-assign-policy.png" alt-text="Screenshot that shows assigning a policy in the Azure portal.":::
 
 *Figure 6: Assign a policy in the Azure portal.*
 

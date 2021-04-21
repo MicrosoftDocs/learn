@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Which comes first? What matters most?
   questions:
-  - content: To address the risks and concerns that were raised by the Tailwind Traders CIO, which of the following steps would you start with?
+  - content: To address the risks and concerns the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
