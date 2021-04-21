@@ -12,7 +12,7 @@ In this module, you'll:
 - Classify tangible risks based on the reference cloud adoption plan.
 - Integrate corporate policies to mitigate tangible risks.
 - List implementation strategies to mitigate risks.
-- Demonstrate one or more Azure Policy additions that implement those strategies.
+- Demonstrate Azure Policy additions that implement risk mitigation strategies.
 - Prioritize future governance investments.
 
 ## Prerequisites

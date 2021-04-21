@@ -19,7 +19,7 @@ The Govern methodology provides a structured approach to building the governance
 
 *Figure 1: The Govern methodology--define corporate policy and the five disciplines of cloud governance.*
 
-### Corporate policy
+## Corporate policy
 
 *Governance* is a substantial topic, and it might be intimidating at first. Governance seeks to establish proper scope by mitigating tangible risks through corporate policy. 
 
@@ -31,7 +31,7 @@ Corporate policies drive cloud governance. Proper corporate policy consists of t
 
 A focus on these components helps develop clear and actionable corporate policies. In the next unit, you'll see how to develop a proper corporate policy.
 
-### Governance disciplines
+## Governance disciplines
 
 Governance disciplines support corporate policies through a mixture of tools and human processes. Each of the following disciplines protects the organization from specific, defined potential pitfalls:
 
