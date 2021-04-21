@@ -40,4 +40,4 @@ Narrator is built directly into Windows to enable users to user their PC without
 
 - Press the **Windows logo key** + **Ctrl** + **N** to open Narrator settings, and then turn on the toggle under Use Narrator.
 
-It is recommended to go through the Narrator tutorial, which can be foun din the Narrator settings creen.
+It is recommended to go through the Narrator tutorial, which can be found in the Narrator settings screen.
