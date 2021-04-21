@@ -15,16 +15,3 @@ You learned how to describe the benefits and usage of:
  *  [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/?azure-portal=true)
  *  [Regions and availability zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
  *  [What are Azure management groups?](https://docs.microsoft.com/azure/governance/management-groups/overview?azure-portal=true)
-
-## Azure Fundamentals learning path
-
-This module is part of the Azure Fundamentals part 1: Describe core Azure concepts learning path, which is one of six learning paths for Azure Fundamentals.
-
-Here are the learning paths in this series:
-
- *  Azure Fundamentals part 1: Describe core Azure concepts
- *  Azure Fundamentals part 2: Describe core Azure services
- *  Azure Fundamentals part 3: Describe core solutions and management tools on Azure
- *  Azure Fundamentals part 4: Describe general security and network security features
- *  Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features
- *  Azure Fundamentals part 6: Describe Azure cost management and service level agreements
