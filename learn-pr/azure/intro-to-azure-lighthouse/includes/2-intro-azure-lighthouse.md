@@ -9,7 +9,9 @@ In this unit, you'll get an introduction to Azure Lighthouse, and the core featu
 
 ## What is Azure Lighthouse?
 
-One of the first things you find is that Azure Lighthouse is free, providing you have an existing Azure subscription. There is no cost to onboard a customer and no ongoing cost for any of the Azure Lighthouse capabilities. Azure Lighthouse has been designed to cater to the needs of service providers like Contoso. Lighthouse lets you manage your Azure customer's subscriptions and resources using your own Azure environment. As a result, it gives Contoso control from one single, consolidated view, displaying all of the customer's Azure resources that they have access to. The customer can also see which service providers have access to their resources and with which permissions.
+One of the first things you find is that Azure Lighthouse is free, providing you have an existing Azure subscription. There is no cost to onboard a customer and no ongoing cost for any of the Azure Lighthouse capabilities. 
+
+Azure Lighthouse has been designed to cater to the needs of service providers like Contoso. Lighthouse lets you manage your Azure customer's subscriptions and resources using your own Azure environment. As a result, it gives Contoso control from one single, consolidated view, displaying all of the customer's Azure resources that they have access to. The customer can also see which service providers have access to their resources and with which permissions.
 
 Contoso has experienced a recent increase in the number of customers wanting to use Azure and needing a quality-managed service. You think that a consolidated view across all of your customers will improve the delivery of your services and make it easier to see which resources need attention.
 

@@ -4,6 +4,10 @@ With delegated access in place, Azure Lighthouse lets you use many of the Azure 
 
 Because you have visibility of all of your customer's resources at the same time, with your own credentials, you can apply actions at scale or detect which customer resources need attention or remediation, without having to switch context and control panes.
 
+An example of the Azure portal All Resources blade showing network security groups from different customer subscriptions, that have been onboarded with Azure Lighthouse: 
+
+![Image showing All Resources with customer subscriptions and network security groups ](../media/7-all-resources.png)
+
 ## Hybrid resources with Azure Arc
 Azure Lighthouse also supports resources that are on-premises or in other clouds, using Azure Arc. So, along with your customer's Azure resources, you can also view and manage their Azure Arc enabled servers and Azure Arc enabled Kubernetes. [Learn more about Azure Arc](https://docs.microsoft.com/azure/azure-arc/).
 
