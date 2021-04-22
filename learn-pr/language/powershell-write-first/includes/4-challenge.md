@@ -3,7 +3,7 @@ confidence before moving on.
 
 ### Step 1: Close any open files in the Cloud Shell code editor
 
-Use the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>q</kbd> (<kbd>⌘+q</kbd> on macOS) to close any open
+1. Use the keyboard shortcut <kbd>Ctrl + q</kbd> (<kbd>⌘ + q</kbd> on macOS) to close any open
 files in the Cloud Shell code editor.
 
 ### Step 2: Create a new file to write your code
