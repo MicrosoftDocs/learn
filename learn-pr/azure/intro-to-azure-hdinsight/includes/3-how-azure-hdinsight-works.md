@@ -41,9 +41,9 @@ There are benefits in separating a cluster's storage component from the processi
 Providing a default file system ensures that HDInsight can resolve relative file references when searching for files.
 
 > [!TIP]
-> When you want to increase available storage, you can link and unlink additional file systems as required. <!-- ID/SME: Please confirm the changes I made to the alt text directly below." -->
+> When you want to increase available storage, you can link and unlink additional file systems as required.
 
-:::image type="content" source="../media/storage.png" alt-text="A diagram depicting the storage element from the previous diagram. It depicts multiple storage containers in a system.":::
+:::image type="content" source="../media/storage.png" alt-text="A diagram depicting the storage element from the previous diagram.":::
 
 ## How does processing work?
 
@@ -71,6 +71,6 @@ Both the head and worker nodes can connect directly to a locally attached HDFS o
 
 ### What does YARN do?
 
-The YARM <!-- ID/SME: Should it be "YARN"? -->performs resource management within an HDInsight cluster. When you're processing data, this service manages resources and job scheduling.
+The YARN performs resource management within an HDInsight cluster. When you're processing data, this service manages resources and job scheduling.
 
-YARN sits between the HDFS and the computation system of the HDInsight cluster. It works with the head node to help distribute a job across the cluster's worker nodes. This helps to ensure that the data processing jobs are parallelized <!-- ID/SME: Instead of "are parallelized" can we say "occur in parallel"? That's a really hard word to pronounce much less understand. -->.
+YARN sits between the HDFS and the computation system of the HDInsight cluster. It works with the head node to help distribute a job across the cluster's worker nodes. This helps to ensure that the data processing jobs occur in parallel.
