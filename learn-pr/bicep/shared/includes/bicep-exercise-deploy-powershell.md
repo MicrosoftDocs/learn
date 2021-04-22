@@ -1,14 +1,21 @@
+---
+author: johndowns
+ms.prod: learning-azure
+ms.topic: include
+ms.date: 04/22/2021
+ms.author: jodowns
+---
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you've [installed Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
 
 1. If the dropdown menu on the right of the terminal window says **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
 
-    :::image type="content" source="../media/4-pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu." border="true":::
+    :::image type="content" source="../media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with pwsh in the dropdown menu." border="true":::
 
    If not, select the dropdown menu, and choose **Select Default Shell**. Then select **pwsh** or **PowerShell**.
 
-    :::image type="content" source="../media/4-select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
+    :::image type="content" source="../media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, showing the select shell dropdown menu." border="true":::
 
 1. Select the plus sign (**+**) in the terminal to create a new terminal with *pwsh* or *PowerShell* as the shell.
 
