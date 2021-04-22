@@ -1,10 +1,9 @@
-This module covers the basics of programming languages. The topics covered here apply to most modern programming languages today. You will get a good understanding of what programming is, what languages are out there and what tools to use.
+This module covers the basics of programming languages. The topics included here apply to today's most modern languages. You'll learn what programming is, what programming languages are available out there, and what developer tools to use.
 
-## Learning Objectives
+## Learning objectives
 
-In this module, you will:
-
-- Explore the concept of programming.
-- Understand high and low-level programming.
-- Look at basic elements of a program.
-- Evaluate Useful software and tooling for the professional developer.
+  In this module, you will:
+  - Explore the concept of programming.
+  - Understand what high-level and low-level programming languages are.
+  - Learn about the basic elements of a program.
+  - Learn about the software and tools used by professional developers.
