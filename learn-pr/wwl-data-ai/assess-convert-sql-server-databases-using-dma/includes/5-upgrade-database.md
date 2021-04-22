@@ -2,7 +2,7 @@ Suppose you're a database administrator for a law firm. Having used the **Micros
 
 Most databases will be migrated to on-premises instances of SQL Server, but some will be migrated to Azure SQL Database. You also need to keep track of the databases you've migrated and report progress to your business managers. You've limited time to do the upgrades because some of the office locations are in different time zones. Upgrading the databases needs to be outside of office hours.
 
-You've considered taking backups and restoring them on the target instances. This approach is perfectly adequate but you realize that, because you need to migrate a large number of databases, this might take a long time. Manually migrating databases, using backup and restore, also requires that logins and users are migrated separately. As the database administrator, you'd also need to find the time to copy and fix any broken user accounts.  
+You've considered taking backups and restoring them on the target instances. This approach is perfectly adequate but you realize that, because you need to migrate a large number of databases, it might take a long time. Manually migrating databases, using backup and restore, also requires that logins and users are migrated separately. As the database administrator, you'd also need to find the time to copy and fix any broken user accounts.  
 
 You'll use the DMA, as this tool can migrate multiple databases in parallel, migrate logins, enable you to export the results, and create a custom report. Now you'll work through the required steps to use DMA to upgrade your databases.
 

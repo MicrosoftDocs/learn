@@ -1,4 +1,4 @@
-You're a database administrator for a law firm, and you need to upgrade several CRM databases to SQL Server 2019. The source databases include versions from SQL Server 2008R2 through to SQL Server 2016. You'll use the **Microsoft Data Migration Assistant (DMA)** to check the compatibility of these older databases before upgrading to SQL Server 2019. 
+You're a database administrator for a law firm, and you need to upgrade several CRM databases to SQL Server 2019. The source databases include versions from SQL Server 2008 R2 through to SQL Server 2016. You'll use the **Microsoft Data Migration Assistant (DMA)** to check the compatibility of these older databases before upgrading to SQL Server 2019. 
 
 In this exercise, you'll run the DMA compatibility and performance assessments on a SQL Server 2008 database, then view the results for a SQL Server 2019 target.
 
@@ -8,9 +8,9 @@ Continue by running the DMA and using it to assess the Adventure Works database:
 
 1. On the left, select the **menu** icon to display the flyout, and then select **+ New**.
 1. In the **New** flyout, leave the **Project type** as **Assessment**, and in the **Project name** box, type **`AdventureWorks 2008-2019`**.
-1. Leave the **Source server type** as **SQL Server**, in the **Target server type** list, select **SQL Server**, and then select **Create**.
+1. Leave the **Assessment type** as **Database Engine** and the **Source server type** as **SQL Server**. In the **Target server type** list, select **SQL Server**, and then select **Create**.
 1. On the **Options** tab, ensure the **Select target version** list is set to **SQL Server 2019 on Windows**.
-1. Select the **New features' recommendation** check box, and then select **Next**.
+1. Ensure that the **Compatibility Issues** checkbox is selected, and then select **Next**.
 1. On the **Connect to a server** flyout, in the **Server name** box, type **`localhost`**.
 1. Leave the **Authentication type** as **Windows Authentication**, clear the **Encrypt connection** check box, and then select **Connect**.
 1. In the **Add sources** flyout, select the **AdventureWorks2008R2** check box, and then select **Add**.

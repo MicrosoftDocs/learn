@@ -1,4 +1,4 @@
-In your law firm, you need to upgrade several CRM databases used by different teams to SQL Server 2019. These databases include versions from SQL Server 2008R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
+In your law firm, you need to upgrade several CRM databases used by different teams to SQL Server 2019. These databases include versions from SQL Server 2008 R2 through to SQL Server 2016. You've chosen the **Microsoft Data Migration Assistant (DMA)** to help with these upgrades. 
 
 In this exercise, you'll install the Data Migration Assistant.
 
@@ -31,6 +31,7 @@ In this exercise, you'll install the Data Migration Assistant.
 ## Download and restore your company's database
 
 1. On the task bar, select **Internet Explorer**.
+1. If the **Set up Internet Explorer 11** dialog box appears, select **Use recommended security, privacy, and compatibility settings**, and then select **OK**.
 1. In the address bar type  
 https://github.com/microsoft/sql-server-samples/releases/download/adventureworks2008r2/adventure-works-2008r2-oltp.bak, then press Enter.
 1. On the pop-up menu, select **Save As**, select the **Windows (C:)** drive on the left, and then select **Save**.
@@ -43,7 +44,7 @@ https://github.com/microsoft/sql-server-samples/releases/download/adventureworks
 
 ## Download the Data Migration Assistant
 
-1. Go to the [https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/master/DataMigrationAssistant.msi](https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/master/DataMigrationAssistant.msi), then select **Download**.
+1. Go to the [https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/main/DataMigrationAssistant5.3.msi](https://github.com/MicrosoftDocs/mslearn-assess-convert-sql-server-databases-using-dma-samples/blob/main/DataMigrationAssistant5.3.msi), then select **Download**.
 1. On the pop-up menu, select **Save**.
 
 ## Install the Data Migration Assistant
@@ -51,12 +52,11 @@ https://github.com/microsoft/sql-server-samples/releases/download/adventureworks
 Continue by using the installer to set up the Data Migration Assistant.
 
 1. Using **File Explorer**, go to **C:\\Users\\azureadmin\\Downloads**.
-1. Double-click **DataMigrationAssistant.exe**.
+1. Double-click **DataMigrationAssistant5.3.msi**.
 1. In the **Microsoft Data Migration Assistant Setup** window, on the **Welcome to the Microsoft Data Migration Assistant Setup Wizard** page, select **Next**.
 1. On the **End-User License Agreement** page, read the terms shown. If you agree to these terms, select the **I accept the terms in the License Agreement** check box, and then select **Next**.
-1. On the **Privacy Statement** page, select **Read Microsoft privacy statement online**. Read through this statement, and then close Internet Explorer.
-1. In the **Microsoft Data Migration Assistant Setup** window, select **Install**.
-1. On the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, when the installation has finished, select the **Launch Microsoft Data Migration Assistant** check box, and then select **Finish**. The **Data Migration Assistant** launches.
+1. On the **Privacy Statement** page, select **Install**.
+1. When the installation has finished, on the **Completed the Microsoft Data Migration Assistant Setup Wizard** page, select the **Launch Microsoft Data Migration Assistant** check box, and then select **Finish**. The **Data Migration Assistant** launches.
 
 > [!WARNING]
 > Do not deactivate the sandbox. This sandbox will continue to be used in the next unit.
