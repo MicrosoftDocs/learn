@@ -4,9 +4,9 @@ Your company has paid for a booth at a big Linux trade show. You plan a demo are
 
 ## Write a script that creates Virtual Machines
 
-Follow these steps in the Cloud Shell on the right to write the script:
+Follow these steps in Cloud Shell on the right to write the script:
 
-1. Switch to your home folder in the Cloud Shell.
+1. Switch to your home folder in Cloud Shell.
 
     ```powershell
     cd $HOME\clouddrive
@@ -34,7 +34,7 @@ Follow these steps in the Cloud Shell on the right to write the script:
     ```
 
     > [!NOTE]
-    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount` and this could be done in the script. However, in the Cloud Shell environment you will already be authenticated so this is unnecessary.
+    > Normally, you'd have to authenticate with Azure using your credentials using `Connect-AzAccount` and this could be done in the script. However, in Cloud Shell environment you will already be authenticated so this is unnecessary.
 
 1. Prompt for a username and password for the VM's admin account and capture the result in a variable:
 
@@ -88,7 +88,7 @@ Close the editor through the "..." context menu.
 1. Execute the script.
 
     ```powershell
-    .\ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
+    ./ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
     ```
 
 The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:

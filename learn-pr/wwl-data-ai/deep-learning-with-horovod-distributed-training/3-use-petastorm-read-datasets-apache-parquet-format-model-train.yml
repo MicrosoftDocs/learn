@@ -5,8 +5,8 @@ metadata:
   title: Use Petastorm to read datasets in Apache Parquet format with Horovod for distributed model training
   description: "Use Petastorm to read datasets in Apache Parquet format with Horovod for distributed model training"
   ms.date: 05/22/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
