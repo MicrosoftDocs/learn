@@ -12,17 +12,18 @@ There are several NLP tasks that we traditionally try to solve using neural netw
 * **Named Entity Recognition** (NER) is a task of extracting some entities from text, such as dates, addresses, people names, etc. Together with intent classification, NER is often used in dialog systems to extract parameters from user's utterance. 
 * A similar task of **keyword extraction** can be used to find the most meaningful words inside a text, which can then be used as tags.    
 * **Text Summarization** extracts the most meaningful pieces of text, giving a user a compressed version that contains most of the meaning. 
-* **Question Answering** is a task of extracting an answer from a piece of text. This model gets text fragment and a question as an input, and needs to find exact place within the text that contains answer. For example, the text "*John is a 22 year old student who loves to use Microsoft Learn*", and the question *How old is John* should provide us with the answer *22*.
+* **Question/Answer** is a task of extracting an answer from a piece of text. This model gets text fragment and a question as an input, and needs to find exact place within the text that contains answer. For example, the text "*John is a 22 year old student who loves to use Microsoft Learn*", and the question *How old is John* should provide us with the answer *22*.
 
-In this module, we will mostly focus on **text classification** task. However, we will learn all important concepts that we will need to handle more difficult tasks in the future.
+In this module, we will mostly focus on the **text classification** task. However, we'll learn all the important concepts needed to handle more difficult tasks in the future.
 
-# Learning objectives
+## Learning objectives
+
 - Understand some how text is processed for NLP tasks
 - Introduction to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
 - Learn about Attention Mechanisms
 - Learn how to build text classification models
 
-# Prerequisites
+## Prerequisites
 
 - Knowledge of Python
 - Basic understand of machine learning

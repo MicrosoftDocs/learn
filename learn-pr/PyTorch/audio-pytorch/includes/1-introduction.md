@@ -1,15 +1,26 @@
-Ever wonder how the voice assistants we use every day actually work? How do they understand the words that we say? When you think about voice assistants you have the first step which is speech to text, then the natural language processing (NLP) step which is the word embedding (turning words into numbers), then you have a classification of the utterance (what people say) to the intent (what they want the voice assistant to do). If you are following this learning path, you will have learned how the NLP part works already. 
+Have you ever wondered how the voice assistants we use everyday work? How do they understand the words that we say? 
 
-Now we want to look at how we get the text from the spoken audio. Of course audio classification can be used for many things, not just speech assistants. For example, in music you can classify genres, or detect illness by the tone in someone's voice, and even more applications that we haven't even thought of yet.
+We can break down the steps all voice assistants likely use:
 
-In this learn module we will be learning how to do audio classification with PyTorch. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial we will first break down how to understand audio data, from analog to digital representations, then we will build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image representation and then use computer vision to classify the word spoken! We will be building a simple model that can understand `yes` and `no`. The dataset we will be using is the open dataset [Speech Commands](https://pytorch.org/audio/stable/datasets.html#speechcommands) which is built into PyTorch [datasets](https://pytorch.org/audio/stable/datasets.html). This dataset has 36 total different words/sounds to be used for classification. Each utterance is stored as a one-second (or less) WAVE format file. We will only be using `yes` and `no` for a binary classification.
+1. First, the assistant must convert the speech to text.
+1. The text is run through a natural language processing (NLP) step, which turns the words into numeric data. We covered that earlier in the PyTorch learning path.
+1. Finally, there's a classification of the _utterance_ - what people say to the _intent_ - what they want the voice assistant to do.
 
-# Learning objectives
+In this module, we want to look at how we get the text from the spoken audio. Of course, audio classification is useful for many things, not just speech assistants. For example, in music, you can classify genres or detect illness by the tone in someone's voice, and even more applications that we haven't even thought of yet.
+
+We will be learning how to do audio classification with [PyTorch](https://pytorch.org/), a popular Python machine learning framework. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. This module will first break down how to understand audio data, from analog to digital representations; then, we will build the model using computer vision on the spectrogram images. 
+
+That's right! You can turn audio into an image representation and then use computer vision to classify the word spoken! 
+
+We will be building a simple model that can understand `yes` and `no`. The dataset we will be using is the open dataset [Speech Commands](https://pytorch.org/audio/stable/datasets.html#speechcommands) which is built into PyTorch [datasets](https://pytorch.org/audio/stable/datasets.html). This dataset has 36 total different words/sounds to be used for classification. Each utterance is stored as a one-second (or less) WAVE format file. We will only be using `yes` and `no` for binary classification.
+
+## Learning objectives
+
 - Understand some key features of audio data.
 - Introduction to how to build audio machine learning models.
 - Learn how to build a binary classification model from wave files.
 
-# Prerequisites
+## Prerequisites
 
 - Knowledge of Python
 - Basic understand of machine learning
