@@ -36,58 +36,37 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What parameters do you need to set, to have Azure Monitor start recording metrics on your resource?"
     choices:
-    - content: ""
+    - content: "None. Azure Monitor begins recording as soon as your resources are created."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure Monitor will begin collecting metrics on your resources as soon as they are created."
+    - content: "You must configure at least one Alert Rule, before Azure Monitor will record metrics."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. You do not need to configure any alerts or alert rules for Azure Monitor to begin collecting metrics data."
+    - content: "Associate the resource with a Log Analytics Workspace."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. The only requirement for Log Analytics Workspace association is if you decide to use the Logs in Azure Monitor. Basic metrics recording does not require Log Analytics Workspace association."
+  - content: "How can you drill down and modify the data displayed on a chart in the Overview page of your resource?"
     choices:
-    - content: ""
+    - content: "Select the chart, which opens it in the Metrics Explorer."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
+    - content: "Use the Diagnostic tools to drill into the data on the chart."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. The Diagnose and solve problems option, on the Overview page, helps with troubleshooting but is not intended for metrics evaluation."
+    - content: "Use the Log stream."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
+  - content: "What is the best way to aggregate metrics data into a single view?"
     choices:
-    - content: ""
+    - content: "Use the Dashboard option of Azure Monitor."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
+    - content: "Pin your charts to the Azure Dashboard."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. The Azure Dashboard is not the same as the Azure Monitor Dashboard. When you pin charts to the Azure Dashboard, they remain as separate charts, rather than an aggregation of the data in a single view."
+    - content: "Set up a Log Analytics Workspace."
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. A Log Analytics Workspace is required for the Log function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating visuals into a single view."
+  
