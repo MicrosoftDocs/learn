@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.nlp-pytorch.recurrent-networks
-title: Recurrent Neural Networks
+title: Capture patterns with recurrent neural networks
 metadata:
-  title: Recurrent Neural Networks
+  title: Capture patterns with recurrent neural networks
   description: While traditional fully-connected networks do not allow us to capture word order, RNN is a mechanism that can capture patterns in sequences. We show how to use RNN for text classification, and discuss different RNN architectures, such as LSTM and GRU.
   author: shwars
   ms.author: dmitryso

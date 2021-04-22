@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.nlp-pytorch.attention-transformers
-title: Attention Models and Transformers
+title: Attention models and transformers
 metadata:
-  title: Attention Models and Transformers
+  title: Attention models and transformers
   description: In this unit, we learn about the next step of evolution beyond recurrent networks - so-called transformer models, which are based on the mechanism of attention.
   author: shwars
   ms.author: dmitryso

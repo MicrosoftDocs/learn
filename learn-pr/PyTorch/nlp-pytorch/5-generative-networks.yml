@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.nlp-pytorch.generative-networks
-title: Generative Recurrent Networks
+title: Generate text with recurrent networks
 metadata:
-  title: Generative Recurrent Networks
+  title: Generate text with recurrent networks
   description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
   author: shwars
   ms.author: dmitryso
