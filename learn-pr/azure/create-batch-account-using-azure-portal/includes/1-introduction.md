@@ -5,7 +5,7 @@ Transcoding is compute-intensive, and you want to set up a system that can proce
 Best of all, with Azure you pay for only what you use!
 [!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
 
-In this module, you'll learn about common batch-processing workloads, You'll learn how to create application packages and containerized applications with Azure Batch accounts, pools, jobs, and tasks. You'll also learn how to enhance security for your Batch account by using virtual networks and private endpoints.
+In this module, you'll learn about common batch-processing workloads. You'll learn how to create application packages and containerized applications with Azure Batch accounts, pools, jobs, and tasks. You'll also learn how to enhance security for your Batch account by using virtual networks and private endpoints.
 
 ## Learning objectives
 
