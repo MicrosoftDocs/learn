@@ -10,8 +10,6 @@ A program can be anything that is written with code. A few examples of programs 
 - Games
 - Phone apps
 
-<!-- TODO: suggest we add some art here, mobile device or something showing a program running. -->
-
 Although it's possible to create a program without writing code, the underlying logic is interpreted to the device and that logic was most likely written with code. A program that runs or executes code is carrying out instructions. The device that you're currently using to read this module is running a program that prints it to your screen.
 
 > [!TIP]
