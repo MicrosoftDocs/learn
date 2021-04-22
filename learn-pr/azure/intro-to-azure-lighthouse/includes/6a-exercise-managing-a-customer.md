@@ -1,9 +1,7 @@
 In this exercise, you will apply what you've learned so far to the new customers you have onboarded. 
 
 > [!IMPORTANT]
-> Your own Microsoft Azure subscription is required to complete this exercise, but the exercise can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used.
->
-> [Sign up for a free trial](https://azure.microsoft.com/free/).
+> Return to the lab environment you have open from the previous exercise, as it contains pre-requisites needed for these scenarios.
 
 ## Exercise scenarios
 
