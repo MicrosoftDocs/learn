@@ -21,7 +21,6 @@ iconUrl: /learn/achievements/generic-badge.svg # TODO change
 levels:
 - beginner
 roles:
-# - Add relevant user role(s) (developer, data scientist, etc.)
 - student
 products:
 - vs
