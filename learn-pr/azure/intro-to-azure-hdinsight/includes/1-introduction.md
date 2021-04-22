@@ -1,22 +1,22 @@
-Many organizations today work with big data. Because of the huge volume and variety of this data and the speed of data generation, you need systems that help you manage and control this data. In the past, organizations attempted data control by using relational databases management systems. However, it's the functionality of open-source software, combined with the benefits of hosted platforms, that have begun to reap success. Azure HDInsight is the perfect example. You can use HDInsight to process big data in many scenarios, either with historical or real-time data.
+Many organizations today work with *big data*. The huge volume and variety of data, and the speed of data generation, necessitates having systems that help you manage and control it. In the past, organizations used relational databases-management systems to control data. However, organizations now want the functionality of open-source software combined with the benefits of hosted platforms. Azure HDInsight is the perfect example of this partnership. HDInsight enables you to process big data in many scenarios, using historical or real-time data.
 
-The following graphic depicts an overview of how you might use HDInsight. Various data sources are depicted, including IoT sensors, databases, and several Azure datastores. HDInsight processes the data from these locations, making it available in long-term storage, for real-time apps, and for additional analysis.
+The following graphic depicts an overview of how you might use HDInsight. It depicts several data sources, including <!-- ID/SME: Please confirm that "IoT" is spelled out for first reference in an earlier module. I seem to remember seeing it in another mod I edited. But please confirm and if it's not, spell it out for first reference here. -->IoT sensors, databases, and several Azure datastores. HDInsight processes data from these locations. It then makes it available in long-term storage for real-time apps and additional analysis.
 
-:::image type="content" source="../media/overview.png" alt-text="A graphic depicting the architecture of HDInsight in a typical organization.":::
+:::image type="content" source="../media/overview.png" alt-text="The architecture of HDInsight in a typical organization, depicting several data sources from which it manages big data.":::
 
 ## Example scenario
 
-Let's imagine you work for an organization that builds workloads that involve ingesting data for historical reporting and advanced analytics. Perhaps you also have streaming data that requires analysis. In this situation, you could consider HDInsight. Using HDInsight, all your data can be ingested into a single Data Lake location. You can then use the HDInsight to manage the following workloads:
+Let's imagine you work for an organization that builds workloads that ingest data for historical reporting and advanced analytics. Perhaps you also have streaming data that requires analysis. In this situation, you might want to consider using HDInsight. It enables ingestion of all data into a single Data Lake location. You can then use it to manage the following workloads:
 
 - Batch processing
-- Data Warehousing
-- Data Science operations
+- Data warehousing
+- Data-science operations
 - Streaming
 
 ## What will we be doing?
 
-By the end of this module, you'll be able to evaluate whether HDInsight can help your organization process big data. You'll also be able to describe how HDInsight uses popular open-source frameworks that support numerous data scenarios.
+By the end of this module, you'll be able to evaluate whether HDInsight can help your organization process big data. You'll also be able to describe how HDInsight uses popular open-source frameworks that support many data scenarios.
 
 ## What is the main goal?
 
-The main goal is to be able to determine if HDInsight is a suitable choice for your requirements for big-data processing.
+The main goal is to determine whether HDInsight is a suitable choice for your big-data processing requirements.
