@@ -2,18 +2,18 @@
 uid: learn.azure.automate-deployments-github-actions-azure  
 metadata:
   moduleType: standard  
-  title: Automate Node.js, .NET, and Python deployments with GitHub Actions and Azure
-  description: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions. This is the final module in the learning path that puts all of the pieces together, so if there are pieces you want to go deeper into, you can review the earlier modules.
+  title: Automate full-stack Node.js, .NET, and Python deployments with GitHub Actions and Azure
+  description: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions. This module is the final module in the learning path, so if there are pieces you want to go deeper into, you can review the earlier modules.
   ms.date: 3/24/2021  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: Automate Node.js, .NET, and Python deployments with GitHub Actions and Azure
-summary: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions. This is the final module in the learning path that puts all of the pieces together, so if there are pieces you want to go deeper into, you can review the earlier modules.
+title: Automate full-stack Node.js, .NET, and Python deployments with GitHub Actions and Azure
+summary: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions. This module is the final module in the learning path, so if there are pieces you want to go deeper into, you can review the earlier modules.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to: 
-    - Build multi-service solutions in Azure which leverage Azure SQL Database
-    - Create web applications quickly by leveraging Azure Static Web Apps
+    - Build multi-service solutions in Azure which use Azure SQL Database
+    - Create web applications quickly by use Azure Static Web Apps
     - Design APIs in any language with Azure Functions
     - Formulate GitHub Actions to build CI/CD for Azure applications and services
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
