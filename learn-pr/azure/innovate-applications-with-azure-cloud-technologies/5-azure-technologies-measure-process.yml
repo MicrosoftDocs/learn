@@ -1,50 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.innovate-applications-azure-cloud-technologies.5-azure-technologies-measure-process
 metadata:
-  title: Azure technologies for the measure process
-  description: TBD
-  ms.date: 12/03/2019
-  author: jamcneil
-  ms.author: jumcn
+  title: Azure technologies for measuring business impact
+  description: Using Azure Application Insights to support the measure step of the innovation lifecycle
+  ms.date: 03/01/2021
+  author: jomore
+  ms.author: jomore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure technologies for the measure process
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-azure-technologies-measure-process.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: TBD?
-    choices:
-    - content: A.
-      isCorrect: True
-      explanation: A.
-    - content: B.
-      isCorrect: false
-      explanation: B.
-    - content: C.
-      isCorrect: false
-      explanation: C.
-  - content: TBD?
-    choices:
-    - content: A.
-      isCorrect: false
-      explanation: A.
-    - content: B.
-      isCorrect: true
-      explanation: B.
-    - content: C.
-      isCorrect: false
-      explanation: C.
-  - content: TBD?
-    choices:
-    - content: A.
-      isCorrect: false
-      explanation: A.
-    - content: B.
-      isCorrect: false
-      explanation: B.
-    - content: C. 
-      isCorrect: true
-      explanation: C.
