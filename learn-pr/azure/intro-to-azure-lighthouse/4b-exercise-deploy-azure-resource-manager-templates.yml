@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 45
 azureSandbox: false
-labId: 93140
+labId: 93141
 content: |
   [!include[](includes/4b-exercise-deploy-azure-resource-manager-templates.md)]
   

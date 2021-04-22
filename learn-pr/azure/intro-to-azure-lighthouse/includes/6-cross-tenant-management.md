@@ -4,10 +4,13 @@ So far, you've learned how Azure Lighthouse streamlines the onboarding of Contos
 
 Staff from the service provider can list and manage customers with a current service offer, in the Azure portal of their own Azure subscription.
 In the **My Customers** page of Azure Lighthouse, they can display the customer's subscriptions, offers and delegated access, as provided in the Azure Resource Manager templates.
+![Image showing service provider view of their Customers in Azure Lighthouse](../media/6-my-customers.png)
 
 ## Viewing your service providers
 
-Customers who have accepted a services offer through the Azure Marketplace or by deploying an Azure Resource Manager template from their service provider, can view their accepted offer details via the ****Service Providers** page of Azure Lighthouse.
+Customers who have accepted a services offer through the Azure Marketplace or by deploying an Azure Resource Manager template from their service provider, can view their accepted offer details via the **Service Providers/Delegations** page of Azure Lighthouse.
+![Image showing customer view of their Service Providers in Azure Lighthouse](../media/6-my-service-providers.png)
+
 
 ## Auditing service provider activities inside the customer's subscription
 
