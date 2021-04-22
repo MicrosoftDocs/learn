@@ -18,7 +18,7 @@ Because the APIs for each application-level domain are not separated into indivi
 
 In some cases, you might develop an application as an N-tier architecture, but still do deployments as a monolith. By fully separating out each tier, you should deploy each independently. This involves the removal of shared dependencies, and a greater reliance on API calls between tiers. When done properly, this ensures your application deployments are flexible.
 
-Applications in an N-tier architecture often get deployed on VMs. This is a good first step, but evolving your application to use PaaS services provides numerous benefits in security, scalability, and administration. Often times, this evolution is overlooked, and N-tier architectures remain resident on VMs.
+Applications in an N-tier architecture often get deployed on VMs. This is a good first step, but evolving your application to use PaaS services provides numerous benefits in security, scalability, and administration. This evolution is often overlooked, and N-tier architectures remain resident on VMs.
 
 This is a classic architectural style, but in many scenarios it has been superseded by other modern design patterns, such as a microservices architecture. It's often worth investing some time to evaluate other architectures to see if they are a better fit for your application.
 
@@ -34,7 +34,7 @@ Let's look at ways to optimize an N-tier architecture for both performance and s
 
 #### Autoscaling
 
-With the application separated into tiers, we can use cloud features, such as autoscaling, to adapt to system load. As users or requests increase, use autoscaling at multiple tiers to add more resources to handle requests. As requests drop, autoscaling reduces the compute resources, also reducing your bill. Autoscaling makes it easy to ensure your users have the best experience, and that your costs remain low. Azure VM scale sets can be used for VM-based workloads, and many PaaS services, such as Azure App Service, have built in autoscaling capabilities.
+With the application separated into tiers, we can use cloud features, such as autoscaling, to adapt to system load. As users or requests increase, use autoscaling at multiple tiers to add more resources to handle requests. As requests drop, autoscaling reduces the compute resources, also reducing your bill. Autoscaling makes it easy to ensure your users have the best experience, and that your costs remain low. Azure Virtual Machine Scale Sets can be used for VM-based workloads, and many PaaS services, such as Azure App Service, have built-in autoscaling capabilities.
 
 #### Load balancing
 
