@@ -58,5 +58,3 @@ Navigate to the `Live Metrics` blade - you can see live metrics on screen with l
 ![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
 
 ## Next steps
-
-The next unit is a knowledge check to see what you've learned in this module.

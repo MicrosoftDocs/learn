@@ -8,4 +8,4 @@ OpenTelemetry is an open source, vendor-agnostic, single distribution of librari
 
 # UI monitoring
 
-In the next exercise, we'll configure a sample application and set it up for OpenTelemetry.
+The next unit is a knowledge check to see what you've learned in this module.

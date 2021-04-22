@@ -1,8 +1,9 @@
 In this unit, we look at Application performance monitoring concepts.
 
-# Enable the Java in-process monitoring agent with Azure Spring Cloud
+## Continuos Monitoring
 
-In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
+Continuous monitoring of applications in production environments is typically implemented with application performance management (APM) solutions that intelligently monitor, analyze, and manage cloud, on-premises, and hybrid applications and IT infrastructure. APM solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
+
 APM provides Visibility into all your applications with the following features:
 
 - Logs, exceptions, and metrics in the context of call paths offer meaningful insights and actionable information to speed root cause analysis.
@@ -11,7 +12,9 @@ APM provides Visibility into all your applications with the following features:
 - Custom metrics, allowing you to publish custom performance indicators or business-specific metrics and visualize deeper application and business insights.
 - Ability to browse, query, and alert on application metrics and logs.
 
-We'll illustrate APM by using a distributed reference application.
+# Enable the Java in-process monitoring agent with Azure Spring Cloud
+
+In this module, you'll use APM with Azure Spring Cloud as it offers in-depth performance monitoring without requiring code changes, recompiling, retesting, or redeployment.
 In the upcoming exercise, we'll activate APM on creation of our Azure Spring Cloud instance with the "--enable-java-agent" CLI option:
 
 ```bash
