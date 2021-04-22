@@ -50,7 +50,7 @@ The following categories summarize the processing scenarios for this data:
 
 - Batch processing
 - Data warehousing
-- Internet of Things (IoT)
+- IoT
 - Data science
 - Hybrid
 
@@ -80,7 +80,7 @@ A data warehouse provides an organization with somewhere to store big data while
 - Prepare your data for analysis.
 - Provide the prepared data in a structured format. You then can query the data by using analytical tools.
 
-The following diagram depicts how Apache Hadoop on HDInsight gathers and stores data from several sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with <!--ID/SME: Please confirm whether "BI" has been spelled out as "business intelligence (BI)for first reference. The Microsoft Cloud and AI Style Guide indicates that it should be spelled out for clarity on first reference. --> BI tools. Power BI is used for data visualization.
+The following diagram depicts how Apache Hadoop on HDInsight gathers and stores data from several sources. Apache Spark and Apache Hive prepare and analyze the data. Finally, the data is modeled for use with business intelligence (BI) tools. Power BI is used for data visualization.
 
 :::image type="content" source="../media/architecture-data-warehouse.png" alt-text="Depiction of how HDInsight helps several tools gather, store, and prepare data for analysis, and then facilitates data analysis by other tools.":::
 
