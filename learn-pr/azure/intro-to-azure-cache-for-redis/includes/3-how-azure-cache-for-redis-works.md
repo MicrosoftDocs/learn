@@ -56,7 +56,7 @@ You can use the message broker feature to:
 - Manage chat messages.
 - Enable communication between microservices.
 
-In the following graphic, a number of group chats, notifications, and stock quotes are occurring. They're connected to the message-broker feature in Azure Cache for Redis. This feature, in turn, connects to Azure API Apps instances and Azure Web Apps. These elements provide access to the group chats, notifications, and stock quotes for connected client devices.
+In the following graphic, a number of group chats, notifications, and stock quotes are occurring. They're connected to the message-broker feature in Azure Cache for Redis. This feature, in turn, connects to Azure API Apps instances and Azure web apps. These elements provide access to the group chats, notifications, and stock quotes for connected client devices.
 
 :::image type="content" source="../media/message-broker.png" alt-text="The message broker architecture in Azure Cache for Redis, as the preceding text describes.":::
 
