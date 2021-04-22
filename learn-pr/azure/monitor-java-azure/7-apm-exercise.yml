@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.exercise-monitor
-title: Enter exercise title
+title: Application performance monitoring exercise
 metadata:
   unitType: exercise
-  title: Monitoring exercise
-  description: Monitoring exercise
+  title: Application performance monitoring exercise
+  description: Application performance monitoring exercise
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-monitor.md)]
+  [!include[](includes/7-apm-exercise.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.logging-exercise
+title: Logging exercise
+metadata:
+  unitType: exercise
+  title: Logging exercise
+  description: Logging exercise
+  ms.date: 4/8/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-logging-exercise.md)]

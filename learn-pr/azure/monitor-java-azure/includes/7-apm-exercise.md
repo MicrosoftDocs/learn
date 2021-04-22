@@ -1,6 +1,6 @@
 In this exercise, you'll configure an the sample Application for Monitoring.
 
-# Monitor the Application
+## Monitor the Application
 
 Open the Application Insights created by Azure Spring Cloud and start monitoring microservice applications.
 
