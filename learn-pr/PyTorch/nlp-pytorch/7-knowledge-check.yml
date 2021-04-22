@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.nlp-pytorch.knowledge-check
-title: Knowledge check
+title: Check your knowledge
 metadata:
-  title: Knowledge check
+  title: Check your knowledge
   description: Check your knowledge
   ms.date: 03/16/2021
   author: shwars
@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 quiz:
-  title: Check your knowledge
   questions:
     - content: "Suppose your text corpus contains 80000 different words. What is typically done to reduce the dimensionality of input vector to neural classifier?"
       choices:
