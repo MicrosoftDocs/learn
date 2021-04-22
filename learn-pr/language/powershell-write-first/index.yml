@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write your first PowerShell code
-summary: Getting started by writing code examples in to learn the basics of PowerShell!
+summary: Getting started by writing code examples to learn the basics of programming in PowerShell!
 abstract: |
   After completing this module you will be able to:
   - Manage PowerShell inputs and outputs
