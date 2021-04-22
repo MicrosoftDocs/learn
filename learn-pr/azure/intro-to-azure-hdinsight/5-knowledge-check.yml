@@ -37,7 +37,7 @@ quiz:
     - content: "HDFS"
       isCorrect: true
       explanation: "Correct. HDFS is an acronym for Hadoop Distributed File System, which is the data store for a Hadoop system."
-  - content: "Which of the following is a parallel processing framework?"
+  - content: "Which of the following options is a parallel processing framework?"
     choices:
     - content: "Apache Hive"
       isCorrect: false
@@ -48,7 +48,7 @@ quiz:
     - content: "Apache Kafka"
       isCorrect: false
       explanation: "Incorrect. Apache Kafka is an event streaming platform."
-  - content: "In a Hadoop cluster on HDInsight, which of the following is responsible for processing data?"
+  - content: "In a Hadoop cluster on HDInsight, which of the following nodes is responsible for processing data?"
     choices:
     - content: "Head node"
       isCorrect: false

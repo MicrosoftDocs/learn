@@ -1,4 +1,4 @@
-Here, you'll learn how Azure HDInsight works. You'll learn all about the following components and how they fit together to provide data control and management:
+Here, you'll learn how Azure HDInsight works. You'll find out about the following components and how they fit together to provide data control and management:
 
 - Apache Hadoop
 - HDInsight storage
@@ -6,34 +6,34 @@ Here, you'll learn how Azure HDInsight works. You'll learn all about the followi
 
 ## What is Apache Hadoop?
 
-Apache Hadoop is a cloud distributed data processing system that lies at the core of HDInsight. It consists of three components, which the following table describes.
+Apache Hadoop is a cloud-distributed, data-processing system at the core of HDInsight. It has three components, which the following table describes.
 
-| Apache Hadoop Component | Description                                                  |
+| Apache Hadoop component | Description                                                  |
 | ----------------------- | ------------------------------------------------------------ |
-| HDFS              | The Apache Hadoop Distributed File System (HDFS) is used to provide storage for the system. |
-| YARN                    | The Apache Hadoop Yet Another Resource Negotiator (YARN) component provides the processing for the system. |
+| HDFS              | The Apache Hadoop Distributed File System (HDFS) provides storage for the Hadoop system. |
+| YARN                    | The Apache Hadoop Yet Another Resource Negotiator (YARN) component provides processing for the system. |
 | MapReduce           | MapReduce is a programming model that enables you to process and analyze data. |
 
 ### How do the components interact?
 
-The following diagram depicts a representation of the interaction between the storage and processing components in a typical Hadoop cluster in HDInsight. The following components are depicted:
+The following diagram depicts storage and processing components interacting in a typical HDInsight Hadoop cluster. It illustrates the following components:
 
-- Head node and worker node. Nodes in the cluster perform the processing.
-- Within the nodes, HDFS interacts with Windows Azure Storage Blob (WASB) storage.
-- Azure Blob storage is accessible to the two nodes. Default, linked storage, and unlinked storage is available, each supporting a number of containers.
+- The head node and worker nodes, which do the processing.
+- Multiple Windows Azure Storage Blob (WASB) storage centers, within the nodes. HDFS interacts with these containers.
+- Multiple default, linked, and unlinked storage containers. These are available to the two nodes.
 
-:::image type="content" source="../media/overall.png" alt-text="A diagram depicting the interactions described in the preceding text.":::
+:::image type="content" source="../media/overall.png" alt-text="A diagram that depicts the head and worder nodes in Hadoop, and then then multiple storage containers accessible to the nodes.":::
 
 Let's now examine how storage and processing work.
 
 ## How does storage work?
 
-The storage component of a cluster is not created automatically when you provision an HDInsight cluster. Instead, it is provided by an HDFS-compliant system such as:
+A cluster's storage component isn't created automatically when you provision an HDInsight cluster. Instead, it's provided by an HDFS-compliant system such as:
 
 - Azure Storage
 - Azure Data Lake
 
-There are benefits in separating the storage component of the cluster from the processing component. For example, you can safely delete any HDInsight clusters used only for computation without worrying about losing data. When you're adding an HDInsight cluster, you must define a default file system.
+There are benefits in separating a cluster's storage component from the processing component. For example, you can safely delete any HDInsight clusters used only for computation without worrying about losing data. When you're adding an HDInsight cluster, you must define a default file system.
 
 > [!IMPORTANT]
 > For Azure Storage, you must specify a blob container as the default file system.
@@ -43,34 +43,34 @@ Providing a default file system ensures that HDInsight can resolve relative file
 > [!TIP]
 > When you want to increase available storage, you can link and unlink additional file systems as required.
 
-:::image type="content" source="../media/storage.png" alt-text="A diagram depicting only the storage element from the previous diagram.":::
+:::image type="content" source="../media/storage.png" alt-text="A diagram depicting the storage element from the previous diagram.":::
 
 ## How does processing work?
 
-When processing data, the compute component of a Hadoop cluster on HDInsight is broken down into two logical areas. These are described in the following table.
+When processing data, a Hadoop cluster's compute component on HDInsight breaks into two logical areas. The following table describes these two areas.
 
 | Component   | Description                                                  |
 | ----------- | ------------------------------------------------------------ |
-| Head node   | The head node is responsible for accepting and managing client requests and passing the request to the worker nodes. |
-| Worker node | The worker nodes are responsible for processing the data.    |
+| Head node   | The head node accepts and manages client requests and passes the requests to the worker nodes. |
+| Worker node | The worker nodes process data.    |
 
 > [!NOTE]
 > The head node is sometimes referred to as a master node.
 
-Most clusters contain two head nodes. These are:
+Most clusters contain two head nodes, including:
 
-- An active head node. This node manages the client connections.
-- A passive head node. This node provides resilience in the event the active node should go offline.
+- An active head node, which manages client connections.
+- A passive head node, which provides resilience should the active node go offline.
 
 :::image type="content" source="../media/processing.png" alt-text="A diagram depicting the processing element in a typical Hadoop cluster.":::
 
-Both the head and worker nodes can connect either directly to a locally attached HDFS, or access data that is stored in Azure Blob or Azure Data Lake. The data managed is dependent on the following factors:
+Both the head and worker nodes can connect directly to a locally attached HDFS or access data that is stored in Azure Blob or Azure Data Lake. What data gets managed depends on two factors:
 
-- How the MapReduce programming model has defined how to work with the data
-- How the head node allocates the work
+- How the MapReduce programming model has defined how to work with the data.
+- How the head node allocates the work.
 
 ### What does YARN do?
 
-The YARM performs the resource management within an HDInsight cluster. When you're processing data, this service manages resources and job scheduling.
+The YARN performs resource management within an HDInsight cluster. When you're processing data, this service manages resources and job scheduling.
 
-YARN sits between the HDFS and the computation system of the HDInsight cluster. It works with the head node to help distribute the job across the worker nodes of the cluster. This helps to ensure that the data processing jobs are parallelized.
+YARN sits between the HDFS and the computation system of the HDInsight cluster. It works with the head node to help distribute a job across the cluster's worker nodes. This helps to ensure that the data processing jobs occur in parallel.
