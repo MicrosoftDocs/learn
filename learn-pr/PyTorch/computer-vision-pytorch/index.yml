@@ -30,9 +30,9 @@ prerequisites: |
 units:
 - learn.PyTorch.computer-vision-pytorch.introduction
 - learn.PyTorch.computer-vision-pytorch.image-data
-- learn.PyTorch.computer-vision-pytorch.training-dnn
-- learn.PyTorch.computer-vision-pytorch.multilayer-dnn
-- learn.PyTorch.computer-vision-pytorch.convolutional-nets
+- learn.PyTorch.computer-vision-pytorch.train-dense-neural-networks
+- learn.PyTorch.computer-vision-pytorch.multilayer-dense-neural-networks
+- learn.PyTorch.computer-vision-pconvolutional-networks
 - learn.PyTorch.computer-vision-pytorch.transfer-learning
 - learn.PyTorch.computer-vision-pytorch.mobilenet
 - learn.PyTorch.computer-vision-pytorch.knowledge-check

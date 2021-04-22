@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.PyTorch.computer-vision-pytorch.mobilenet
-title: MobileNet
+title: Solving vision problems with MobileNet
 metadata:
-  title: MobileNet
+  title: Solving vision problems with MobileNet
   description: MobileNet is a compact neural network architecture that can be used to solve computer vision problems on mobile and low-power devices. 
   author: shwars
   ms.author: dmitryso
