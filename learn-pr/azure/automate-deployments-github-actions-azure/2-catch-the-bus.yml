@@ -15,31 +15,31 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "What is Azure Functions used for in the bus-catching scenario?"
+    - content: "Which service(s) will be used to process real-time data and identify if a bus is within a geofence??"
       choices:
-      - content: "Azure Functions will store the real-time bus data"
+      - content: "Azure Functions"
         isCorrect: false
-        explanation: "The real-time bus data will be stored in Azure SQL Database."
-      - content: "Azure Functions will be used to get, store, and process the latest bus data"
+        explanation: "Azure Functions will get the data into the database. But another service will actually process if a bus is within a geofence."
+      - content: "Azure SQL Database"
+        isCorrect: false
+        explanation: "That's true, but another service required to get the real-time data into the database."
+      - content: "Azure Static Web Apps and Azure Functions"
+        isCorrect: false
+        explanation: "Azure Static Web Apps is not needed for this part of the solution."
+      - content: "Azure Functions and Azure SQL Database"
         isCorrect: true
         explanation: "That's correct!"
-      - content: "Azure Functions will be called when a bus enters or exits a geofence to send an email"
-        isCorrect: false
-        explanation: "Azure Logic Apps will be called when a bus enters or exits a geofence."
-      - content: "None of the above."
-        isCorrect: false
-        explanation: "Review the scenario again to understand the various pieces of the solution."
-    - content: "Which of the following is not true when describing Azure Functions?"
+    - content: "Azure Static Web Apps combines what two key services?"
       choices:
-      - content: "Azure Functions supports multiple languages including C#, Java, JavaScript, PowerShell, and Python"
+      - content: "Static web application hosting and Azure SQL Database"
         isCorrect: false
-        explanation: "This statement is true, and there are custom handlers if you want to use other languages."
-      - content: "Azure Functions scales automatically on demand."
-        isCorrect: false
-        explanation: "This statement is true, and you're only billed for what is needed."
-      - content: "Azure Functions responds to events including an HTTP request, new message on a queue, or a timer"
-        isCorrect: false
-        explanation: "This statement is true."
-      - content: "Azure Functions is a low-code/no-code development platform"
+        explanation: "Azure Static Web Apps supports static web application hosting."
+      - content: "Static web application hosting and Azure Functions"
         isCorrect: true
-        explanation: "Azure Functions is primarily code-based. Azure Logic Apps is a low-code/no-code development platform."
+        explanation: "That's correct!"
+      - content: "Dynamic web application hosting and Azure SQL Database"
+        isCorrect: false
+        explanation: "Azure Static Web Apps supports static web application hosting."
+      - content: "Dynamic web application hosting and Azure Functions"
+        isCorrect: false
+        explanation: "Azure Static Web Apps supports static web application hosting."
