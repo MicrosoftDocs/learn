@@ -3,7 +3,9 @@ In this exercise, you're going to see Form Recognizer in action by deploying a F
 To start, you'll need to activate the Sandbox above – just select the ‘Activate sandbox’ button and sign in, no payment or Azure subscription required. Though you're signed-in and have full admin access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, and won't cost you anything.
 
 ## Choose your demo experience
-You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. Or, since this is a resource you control, if you are interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure Portal, or even use Visual Studio remote debugging and step through. For more guided hans-on learning on Form Recognizer we have more Learn modules for you to check out. After learning more you can always come back here to apply what you've learned in the free sandbox.
+You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. Or, since this is a resource you control, if you are interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure Portal, or even use Visual Studio remote debugging and step through.
+
+For more guided hands-on learning on Form Recognizer we have more Learn modules for you to check out. After learning more you can always come back here to apply what you've learned in the free sandbox.
 
 ## Deploy Form Recognizer
 
@@ -19,13 +21,13 @@ To create the Form Recognizer resource and deploy the webapp, complete the follo
 
 2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't impact the running script.
 
-3. Activate the link to the URL displayed at the bottom of the shell. This will open the web app and let you use Form Recognizer. You can also use the following link, but remember, it won't work until the script finishes running: [fr-<rgn>[sandboxName]</rgn>.azurewebsites.net](https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net)
+3. Activate the link to the URL displayed at the bottom of the shell. This will open the web app and let you use Form Recognizer. You can also use the following link, but remember, it won't work until the script finishes running: [fr-<rgn>[sandboxName]</rgn>.azurewebsites.net](https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net?azure-portal=true)
 
 After you run the code, you can play around with Form Recognizer at your own pace.
 
 ## Optional: Browse or clone the code in GitHub
 
-The code deployed is open source (though not production ready). You can view the code, clone or fork the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer).
+The code deployed is open source (though not production ready). You can view the code, clone, or fork the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer).
 
 ## Optional: Review the resource in the Azure portal
 
