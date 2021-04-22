@@ -10,6 +10,6 @@ The data is stored in a statement called a *variable*. Variables are statements 
 
 ## Flow control
 
-There's a chance that some statements might not be executed by a device. This usually happens either by design, as written by the developer, or by accident, as the result of an unexpected error. 
+Some statements might not be executed by a device. This usually happens either by design, as written by the developer, or by accident, as the result of an unexpected error. 
 
-This type of control of an application makes it more robust and maintainable. Typically these changes in control happen when certain decisions are met. A common statement in modern programming languages, to control how a program is run, is the `if...else` statement. You'll learn more about this type of statement in subsequent lessons.
+Controlling the flow of an application makes it more robust and maintainable. Changes in control ordinarily occur when certain conditions are met. A common statement in modern programming languages, to control how a program is run, is the `if...else` statement. You'll learn more about this type of statement in subsequent lessons.
