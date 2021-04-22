@@ -100,7 +100,7 @@ Instead of looking for only *sales.json* files, the program needs to search for 
     dotnet run
     ```
   
-  The output now shows all .json and .txt files in any of the store ID directories.
+  The output now shows all .json files in any of the store ID directories.
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
