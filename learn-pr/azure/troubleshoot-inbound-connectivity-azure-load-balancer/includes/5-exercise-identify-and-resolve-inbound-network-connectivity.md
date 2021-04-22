@@ -51,7 +51,7 @@ The first step is to check that the virtual machines are running. Let's resolve 
 
 ### Test the appretailvm1 virtual machine
 
-You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly because they have private addresses that are only available to other virtual machines on the same subnet. First you connect to the jump box, which has a public IP address and is in the same subnet. Then you can ping the virtual machines from there.
+You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly because they have private addresses that are only available to other virtual machines on the same subnet. First, you connect to the jump box, which has a public IP address and is in the same subnet. Then, you can ping the virtual machines from there.
 
 1. Return to Cloud Shell.
 
@@ -117,7 +117,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
-1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
+1. Select **Load balancing rule** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
@@ -167,7 +167,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 1. Select **Inbound security rules**. Although there's a rule that allows incoming traffic from the load balancer running in the virtual network, there's no rule that permits traffic originating from outside the virtual network through port 80.
 
-1. Select **Add**.
+1. Select **Add**. The **Add inbound security rule** pane appears.
 
 1. Enter the following settings, and then select **Add**.
 
@@ -176,8 +176,9 @@ The problem might be caused by a network security rule blocking external traffic
     | Source | Any |
     | Source port ranges | \*  |
     | Destination | Any |
+    | Service | Custom |
     | Destination port ranges | 80 |
-    | Protocol | Tcp |
+    | Protocol | TCP |
     | Action | Allow |
     | Priority | 100 |
     | Name | Port_80 |
@@ -198,7 +199,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 ### Test the appretailvm2 virtual machine
 
-It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up and whether Load Balancer can connect to it.
+It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
 1. In Cloud Shell, sign in to the jump box again.
 
