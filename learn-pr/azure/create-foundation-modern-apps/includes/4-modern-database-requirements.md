@@ -8,17 +8,15 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+One of the core elements of a modern application is the ability to easily scale up or out in order to correctly respond to workload usage. Ability to easily update and evolve the solution, along with deterministic, automatic deployment are also foundational pillars of modern application development.
 
 ## Modern applications require modern databases
 
-One of the core element of a modern application is the ability to easily scale up or out in order to correctly respond to workload usage. Ability to easily update and evolve the solution, along with deterministic, automatic deployment are also foundational pillars of modern application development.
+Azure SQL database provides strong support to all these required features. If you need a future-proof, scalable, secure, and high-performance database, [Azure SQL Hyperscale](https://docs.microsoft.com/azure/azure-sql/database/service-tier-hyperscale) provides everything you need, and more. It can scale up to 100 TB and its distributed architecture make it easy to scale up and out. It's the ideal database for transactional and hybrid transactional-analytics workload.
 
-Azure SQL database provides strong support to all these required features. If you need a future-proof, scalable, secure and high-performance database, [Azure SQL Hyperscale](https://docs.microsoft.com/azure/azure-sql/database/service-tier-hyperscale) provide all of that, and more. It can scale up to 100 TB and its distributed architecture make it very easy to scale up and out. It's the ideal database for transactional and hybrid transactional-analytics workload.
+To support development and developers, you can use [Azure SQL Serverless](https://azure.microsoft.com/solutions/serverless/), that can automatically scale up and down with a defined range and can also auto-pause when not used, to give you the most cost-effective way to develop and test your solution. Given that the engine behind Azure SQL is always the same, moving to Azure SQL Serverless to Azure SQL Hyperscale will require no code changes and no extra effort.
 
-To support development and developers, you can use [Azure SQL Serverless](https://azure.microsoft.com/solutions/serverless/), that can automatically scale up and down with a defined range and can also auto-pause when not used, to give you the most cost-effective way to develop and test your solution. Given that the engine behind Azure SQL is always the same, moving to Azure SQL Serverless to Azure SQL Hyperscale will require no code changes and no additional effort.
-
-As the DevOps practice is now ubiquitous, it is very important for a modern solution to properly support and have a healthy CI/CD pipeline. Azure SQL natively supports GitHub Actions, that you'll be using to deploy the changes done to your development database to the test and production instances. This time using a "state based" approach. DevOps for Data is a very interesting topic, and you can learn more about it and the different options, starting from this [#DataExposed](https://www.youtube.com/playlist?list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR) video: [Using Azure Pipelines for Azure SQL Deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=26).
+As the DevOps practice is now ubiquitous, it is important for a modern solution to properly support and have a healthy CI/CD pipeline. Azure SQL natively supports GitHub Actions, that you'll be using to deploy the changes done to your development database to the test and production instances. This time using a "state based" approach. DevOps for Data is a very interesting topic, and you can learn more about it and the different options, starting from this [#DataExposed](https://www.youtube.com/playlist?list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR) video: [Using Azure Pipelines for Azure SQL Deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=26).
 
 ## Azure SQL Database as the modern database of choice
 
@@ -41,7 +39,7 @@ More samples on how you can use JSON in Azure SQL are available here: [Azure SQL
 
 ### Geospatial Support
 
-Azure SQL has a native [geospatial engine](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server?view=azuresqldb-current) that you can use to perform geospatial queries without the need to install external libraries or to move data outside the database, operation that will be very expensive for big volumes of data. Full support to the Open Geospatial Consortium (OGC) standard is provided, so that exporting data in formats immediately usable by libraries like [OpenLayers](https://openlayers.org/) is really straightforward.
+Azure SQL has a native [geospatial engine](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server?view=azuresqldb-current) that you can use to perform geospatial queries without the need to install external libraries or to move data outside the database, operation that will be expensive for significant volumes of data. Full support to the Open Geospatial Consortium (OGC) standard is provided, so that exporting data in formats immediately usable by libraries like [OpenLayers](https://openlayers.org/) is straightforward.
 
 Here's an example of how you can create a polygon - that will act as your geofence - and check if a point - that can represent a person or a bus, for example - is with the defined perimeter:
 
@@ -56,15 +54,15 @@ declare @p as geography = geography::STPointFromText('POINT(-122.13315058040392 
 select @p.STWithin(@bldg44)
 ```
 
-Since the used text format (the `POINT(-122.13315058040392 47.64101193601368)` for example) is a standard, knows as "Well-Known Text" format, it is possible to see this on a map just by copying and pasting the string. To test it yourself you can use the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).
+Since the used text format (the `POINT(-122.13315058040392 47.64101193601368)` for example) is a standard, knows as "Well-Known Text" format, it is possible to see the shape projected on a map just by copying and pasting the string. To test it yourself, you can use the [OpenStreetMap WKT Playground](https://clydedacruz.github.io/openstreetmap-wkt-playground/).
 
 ### Azure SQL is Future Proof
 
-During the lifetime of your application you'll find yourself willing to use different technologies to be as efficient as possible. For example you may want to use a Graph model to easily track and model complex network relationship, like then one that can be found in a social network or in a power grid.
+During the lifetime of your application you'll find yourself willing to use different technologies to be as efficient as possible. For example, you may want to use a Graph model to easily track and model complex network relationship, like then one that can be found in a social network or in a power grid.
 
 Or maybe you'll need to quickly aggregate vast amount of data, in order to calculate the growth rate of a certain value.
 
-In all these cases, and in many more, Azure SQL has you covered. It supports [Graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview?view=sql-server-ver15), [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15) and even [lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables) for the highest throughput (those tables are *literally* compiled data structures that are then loaded in-process for the fastest performance possible).
+In all these cases, and in many more, Azure SQL has you covered. It supports [Graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview?view=sql-server-ver15), [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15), and even [lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables) for the highest throughput (those tables are *literally* compiled data structures that are then loaded in-process for the fastest performance possible).
 
 All these features are available in the Azure SQL engine, so that you don't have to deal with the enormous challenge of data integration and management of different databases, unless you really want to.
 
@@ -72,7 +70,7 @@ All these features are available in the Azure SQL engine, so that you don't have
 
 You after started to learn what are the technologies that are available in Azure SQL to create modern microservices architecture, from JSON to geospatial data, all through scalability and CI/CD pipelines support.
 
-It's now time start to use everything you have just learned!
+It's now time start to use everything you have learned!
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 <!-- Do not add a unit summary or references/links -->
