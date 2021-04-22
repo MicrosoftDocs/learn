@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You will learn how to build a solution that leverages Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code and GitHub Actions. This is the final module in the learning path that puts all of the pieces together, so if there are pieces you want to go deeper into, you can review the earlier modules.
+  description: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution that solves the real-world scenario of catching the bus. You will learn how to build a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions. This module is the final module in the learning path, so if there are pieces you want to go deeper into, you should review the earlier modules.
   ms.date: 3/24/2021  
   author: amthomas46
   ms.author: antho

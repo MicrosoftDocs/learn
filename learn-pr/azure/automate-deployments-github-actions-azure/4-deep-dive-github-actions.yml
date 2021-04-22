@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.automate-deployments-github-actions-azure.deep-dive-github-actions
-title: Diving deeper into GitHub Actions
+title: Dive into GitHub Actions
 metadata:
   unitType: learning-content
-  title: Diving deeper into GitHub Actions
-  description: In this unit, we recap how we've used GitHub Actions in our scenario. We specifically discuss GitHub Actions for Azure SQL Database, GitHub secrets, and configuring yml files and monitoring deployments.
+  title: Dive into GitHub Actions
+  description: In this unit, we recap how we've used GitHub Actions in our scenario. We specifically discuss GitHub Actions for Azure SQL Database, GitHub secrets, and configuring YAML files and monitoring deployments.
   ms.date: 3/24/2021 
   author: amthomas46
   ms.author: antho
@@ -29,7 +29,7 @@ quiz:
       - content: "All of the above"
         isCorrect: true
         explanation: "That's correct!"
-    - content: "Which of the following is not something you might configure after deploying an Azure Static Web App?"
+    - content: "Which of the following items is not something you might configure after deploying an Azure Static Web App?"
       choices:
       - content: "The `app_location` path"
         isCorrect: false
@@ -42,4 +42,4 @@ quiz:
         explanation: "This statement is true. When you deploy, this token is generated and stored in your repository. There is no action for you to take."
       - content: "None of the above. You might configure all of the above options"
         isCorrect: false
-        explanation: "One option likely does not need to be configured."
+        explanation: "One option doesn't need to be further configured."

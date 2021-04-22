@@ -1,8 +1,8 @@
-Building serverless, full-stack applications is greatly simplified in Azure due to the number of serverless services and the integrations that exist between them. Doing all this with CI/CD in mind is easy with the support and integration of GitHub Actions and Azure Pipelines.
+Building serverless, full-stack applications are greatly simplified in Azure due to the number of serverless services and the integrations that exist between them. Doing all this with CI/CD in mind is easy with the support and integration of GitHub Actions and Azure Pipelines.
 
 ## Catching the bus
 
-Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you'll follow the scenario (and the development of a solution) of catching the bus. In the first three modules of the learning path, you dove into the pieces that make up the final solution architecture. In this module, you'll review the solution architecture and put it all together.
+Getting the timing right of heading to the bus stop is a challenge that most can relate to. More often than not, you either end up waiting for the bus or running to catch the bus and missing it. Throughout this module and the associated learning path, you follow the scenario of catching the bus. In the first three modules of the learning path, you dove into the pieces that make up the final solution architecture. In this module, you'll review the solution architecture and put it all together.
 
 ## What will we be doing?
 

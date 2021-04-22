@@ -1,14 +1,14 @@
 Setting up your environment and deploying some resources to start with is an important step in building full stack applications.
 
-Recall in the catching the bus sample, you'll leverage resources including Azure SQL Database, Azure Static Web Apps, Azure Functions, and Azure Logic Apps. In the previous modules of this learning path, you focused on the various elements that make up the solution. In this module, you'll deploy the entire solution.
+Recall in the catching the bus sample, you'll us resources including Azure SQL Database, Azure Static Web Apps, Azure Functions, and Azure Logic Apps. In the previous modules of this learning path, you focused on the various elements that make up the solution. In this module, you'll deploy the entire solution.
 
 ## Configure your environment
 
-The first required step is to set up your development environment. Please refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
+The first required step is to set up your development environment. Refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
 
 ## Deploy Azure SQL Database
 
-In order to set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To do this, you'll use the Azure Cloud Shell which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll leverage Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+To set up the database for the bus catching scenario, you'll first need to deploy a database to work with. To accomplish this task, you'll use the Azure Cloud Shell, which is on the right side of this page. The Azure Cloud Shell is also available through the Azure portal, and allows you to create and manage Azure resources. It comes preinstalled with various tools, including the Azure CLI, Azure PowerShell, and sqlcmd. In this exercise, you'll us Azure PowerShell, but you can accomplish the same tasks with the Azure CLI. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -107,7 +107,7 @@ Next, you'll deploy an Azure Function App.
     $storageAccountName = (Get-AzStorageAccount -ResourceGroup $resourceGroupName).StorageAccountName
     ```
 
-1. Run the following in the cloud shell to deploy the function in your language of choice.
+1. Run the following code in the Cloud Shell to deploy the function in your language of choice.
 
     ::: zone pivot="csharp"
 
@@ -148,7 +148,7 @@ Next, you'll deploy an Azure Function App.
 
 Next, you need to deploy the Azure Logic App that sends notifications using a combination of Azure PowerShell and ARM templates.
 
-1. Make note of your GitHub repository (e.g. https://github.com/[username]/serverless-full-stack-apps-azure-sql).
+1. Make note of your GitHub repository (for example, https://github.com/[username]/serverless-full-stack-apps-azure-sql).
 
 1. The following script clones the repository and deploys an Azure Logic App according to an ARM template.
 
@@ -158,7 +158,7 @@ Next, you need to deploy the Azure Logic App that sends notifications using a co
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
     $location = $resourceGroup.Location
     # Get the repository name
-    $appRepository = Read-Host "Enter your GitHub repository URL (e.g. https://github.com/[username]/serverless-full-stack-apps-azure-sql):"
+    $appRepository = Read-Host "Enter your GitHub repository URL (for example, https://github.com/[username]/serverless-full-stack-apps-azure-sql):"
     # Clone the repo - note this asks for the token
     $cloneRepository = git clone $appRepository
     # Get subscription ID 
@@ -168,6 +168,7 @@ Next, you need to deploy the Azure Logic App that sends notifications using a co
     az deployment group create --name DeployResources --resource-group $resourceGroupName `
         ` --template-file ./serverless-full-stack-apps-azure-sql/deployment-scripts/template.json `
         --parameters subscription_id=$subId location=$location  
+    Write-Host "Logic App deployed."
     ```
 
 ## Review and update the Logic App
@@ -185,15 +186,15 @@ The next step is to configure the Logic App and update the Application Setting f
 
 1. Sign in to an Outlook account that you have access to.
 
-1. Once successfully connected, you will see the email and it's contents. In the *To* field, enter the email address where you'd like to receive notifications.
+1. Once successfully connected, you'll see the email and its contents. In the *To* field, enter the email address where you'd like to receive notifications.
 
 1. Select **Save**.
 
-1. Select **When a HTTP request is received** and copy the **HTTP POST URL** and save it in a text file or notepad.
+1. Select **When an HTTP request is received** and copy the **HTTP POST URL** and save it in a text file or notepad.
 
 ## Review and update the Azure Function
 
-1. In a text file, determine the connection string that you will need to be able to connect to your Azure SQL Database. The format should be as follows:
+1. In a text file, determine the connection string that you'll need to be able to connect to your Azure SQL Database. The format should be as follows:
 
 ::: zone pivot="python"
 
@@ -223,7 +224,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. Under *Settings*, select **Configuration**.
 
-1. Select **+ New application setting** named **LogicAppUrl** and update the value with the Logic App POST URL you just copied.
+1. Select **+ New application setting** named **LogicAppUrl** and update the value with the Logic App POST URL you copied.
 
 1. Select **OK**.
 
@@ -231,7 +232,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 1. Select **OK**.
 
-1. Select **+ New application setting** named **AzureSQLConnectionString** and update the value with the connection string from step one.
+1. Select **+ New application setting** named **AzureSQLConnectionString** and update the value with the connection string from step 1.
 
 1. Select **OK**.
 
@@ -239,7 +240,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 
 ## Deploy an Azure Static Web App
 
-The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a future exercise, you will configure the application in the Azure portal and with GitHub Actions.
+The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a future exercise, you'll configure the application in the Azure portal and with GitHub Actions.
 
 1. In your GitHub account settings, near the bottom left, select **Developer settings** > **Personal access tokens** > **Generate new token** > **check all boxes** and generate the token. Make a note of the token as you'll need it shortly.
 
@@ -254,7 +255,7 @@ $location = $resourceGroup.Location
 # Azure static web app name
 $webAppName = $("bus-app$($uniqueID)")
 # Get the repository name
-$appRepository = Read-Host "Please enter the forked URL (e.g. https://github.com/<username>/serverless-full-stack-apps-azure-sql):"
+$appRepository = Read-Host "Please enter the forked URL (for example, https://github.com/<username>/serverless-full-stack-apps-azure-sql):"
 # Get user's GitHub personal access token
 $githubToken = (Read-Host "In your GitHub account settings, near the bottom left, select Developer settings > Personal access tokens > check all boxes and generate the token. Enter the token").ToString()
 # App service plan name
@@ -267,10 +268,11 @@ $appServicePlanName = (Get-AzAppServicePlan -resourceGroupName $resourceGroupNam
 # Deploy Azure static web app
 $staticWebApp = az staticwebapp create -n $webAppName -g $resourceGroupName `
     -s $appRepository -l 'westus2' -b main --token $githubToken
+Write-Host "Azure Static Web App deployed."
 ```
 
 > [!NOTE]
-> While Azure Static Web Apps are in public preview, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
+> While Azure Static Web Apps is in public preview, not all regions are available, which is why `westus2` is hard-coded above. To check other region availability, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=app-service).
 
 If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
