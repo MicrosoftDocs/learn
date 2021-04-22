@@ -25,7 +25,8 @@ roles:
 - student
 products:
 - dotnet
-- vs
+languages:
+- powershell
 units:
 - learn.languages.powershell-write-first.introduction
 - learn.languages.powershell-write-first.exercise-hello-world
