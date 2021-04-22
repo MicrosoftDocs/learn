@@ -1,3 +1,10 @@
+---
+author: johndowns
+ms.prod: learning-azure
+ms.topic: include
+ms.date: 04/22/2021
+ms.author: jodowns
+---
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) tools installed, and sign in with the same account that you used to activate the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu. This usually opens at the bottom of the screen.
