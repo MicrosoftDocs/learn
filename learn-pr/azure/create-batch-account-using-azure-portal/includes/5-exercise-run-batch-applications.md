@@ -16,9 +16,9 @@ In the Azure portal, application packages can be uploaded and managed in more fe
 
 1. Enter the following information:
 
-    * **Application Id**: Enter `ffmpeg` as the ID for your new application.
+    * **Application Id**: Enter **ffmpeg** as the ID for your new application.
 
-    * **Version**: Enter `4.3.1` as the version for the application package that you're uploading.
+    * **Version**: Enter **4.3.1** as the version for the application package that you're uploading.
 
     * **Application package**: Use the .zip file that you downloaded earlier.
 

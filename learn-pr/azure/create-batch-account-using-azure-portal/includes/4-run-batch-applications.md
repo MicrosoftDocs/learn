@@ -1,4 +1,4 @@
-## Run tasks concurrently using the Batch REST API
+## Run tasks concurrently by using the Batch REST API
 
 Azure Batch uses parallel tasks to split a job across compute nodes. Azure Batch is especially well suited to running large-scale parallel and high-performance computing batch jobs. The Batch service handles everything for you, which includes managing and scheduling all the nodes and applications that are required to run your scenarios.
 
@@ -25,7 +25,7 @@ At maximum, the `taskSlotsPerNode` property can be up to four times the number o
 > [!NOTE]
 > After the `taskSlotsPerNode` property has been set, it can't be modified. Changing it requires creating a new pool.
 
-Set the `RequiredSlots` property based on how much CPU, memory, or I/O intensive you expect a given task to be. Additionally, set the `taskSlotsPerNode` property based on how many tasks can run concurrently without degrading task execution times.
+Set the `RequiredSlots` property based on how much CPU, memory, or I/O intensive you expect a task to be. Additionally, set the `taskSlotsPerNode` property based on how many tasks can run concurrently without degrading task execution times.
 
 ## Add an application package and run a container application on Azure Batch
 

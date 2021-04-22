@@ -13,7 +13,7 @@ You can think of the diagram in two parts:
 - Your service
 - Batch as the compute platform behind it 
 
-Your service uses Azure as the platform for both completing computationally intensive work via Batch and retrieving results via Azure Storage. Behind the scenes, pools--the resources that jobs and tasks are executed on--are a collection of virtual machines. 
+Your service uses Azure as the platform for both completing computationally intensive work via Batch and retrieving results via Azure Storage. Behind the scenes, pools are collections of virtual machines. Pools are the resources that jobs and tasks are executed on. 
 
 Batch uses Azure Storage to fetch applications or data needed to complete a task on a virtual machine and then write task output. Your service can monitor jobs and task progress via Batch APIs. Your service can then retrieve results from Azure Storage after jobs and tasks are completed.
 
@@ -21,7 +21,7 @@ Batch uses Azure Storage to fetch applications or data needed to complete a task
 
 To run a Batch job, you need to add a pool to your Batch account. A pool contains compute nodes, which are required to run your Batch job. Compute nodes are virtual machines that process the tasks that compose a job. At the time of creation, you can specify the number, size, and operating system of nodes based on the demand.
 
-The Batch service needs to communicate to a Batch node agent that runs on each pool node. For example, the service instructs the node agent to run a task, stop a task, or get the files for a task. Communication with the pool node agent is enabled by one or more load balancers. The number of load balancers depends on the number of nodes in a pool. 
+The Batch service needs to communicate to a Batch node agent that runs on each pool node. For example, the service instructs the node agent to run a task, stop a task, or get the files for a task. One or more load balancers enable communication with the pool node agent. The number of load balancers depends on the number of nodes in a pool. 
 
 A load balancer forwards the communication to the desired pool node. Each node is addressed by a unique port number. By default, the load balancers have public IP addresses associated with them. 
 

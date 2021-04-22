@@ -36,11 +36,11 @@ To create a resource group in the Azure portal:
 
    :::image type="content" source="../media/3-create-storage-account.png" alt-text="Screenshot of the form for creating a storage account on the Basics tab.":::
 
-1. **Subscription**: Select the appropriate subscription that you want to use.
+1. For **Subscription**, select the appropriate subscription that you want to use.
 
-1. **Resource group**: Select the resource group that you created in the previous section (**BatchResourceGroup**).
+1. For **Resource group**, select the resource group that you created in the previous section (**BatchResourceGroup**).
 
-1. In the **Storage account name** field, enter a unique name. An example might be **cutifypets&lt;date&gt;&lt;your initials&gt;**.
+1. In the **Storage account name** box, enter a unique name. An example might be **cutifypets&lt;date&gt;&lt;your initials&gt;**.
 
     > [!NOTE]
     > Your storage account name must be globally unique, and only lowercase characters and numbers are allowed.
@@ -59,7 +59,7 @@ Here, you'll add input data for a Batch task that you'll use in the next exercis
 
 1. On the left, select **Containers** under **Blob Service**.
 
-1. Create a container by selecting the **Container** button. Name the container **input-data** and the set public access level as **Private**.
+1. Create a container by selecting the **Container** button. Name the container **input-data**, and set the public access level as **Private**.
 
     :::image type="content" source="../media/2-create-container.png" alt-text="Screenshot of the Containers page in the Azure portal, with the button for creating a container highlighted.":::
 
@@ -89,7 +89,7 @@ Next, you'll create the Azure Batch account and pool in a virtual network for yo
 
 1. Enter the following settings on the **Basics** tab, in the **Instance details** section:
 
-    * **Account name**: A name that's unique within the Azure region where the account is created. The account name can contain only lowercase characters or numbers, and it must be 3-24 characters in length.
+    * **Account name**: A name that's unique within the Azure region where the account is created. The account name can contain only lowercase characters or numbers, and it must be 3 to 24 characters in length.
 
     * **Location**: The Azure region in which to create the Batch account. Only the regions supported by your subscription and resource group are displayed as options.
 
@@ -97,7 +97,7 @@ Next, you'll create the Azure Batch account and pool in a virtual network for yo
 
    :::image type="content" source="../media/3-diagram-2.png" alt-text="A screenshot of the dialog for creating a storage account in the Azure portal.":::
 
-1. Select **Next: Advanced &gt;**, and then enter the following settings on the **Advanced** tab:
+1. Select **Next: Advanced**, and then enter the following settings on the **Advanced** tab:
 
     * **Identity type**: Leave as the default.
 
@@ -141,7 +141,7 @@ After you've created a virtual network and assigned a subnet to it, you can crea
     :::image type="content" source="../media/4-diagram-1.png" alt-text="A screenshot of the page for creating a virtual network in the Azure portal.":::
 
     > [!NOTE]
-    > If you had any unique IP address settings for your virtual network, you would select **Next : IP Addresses &gt;** and specify those settings on the **IP Addresses** tab.
+    > If you had any unique IP address settings for your virtual network, you would select **Next: IP Addresses** and specify those settings on the **IP Addresses** tab.
 
 1. Leave all the other options as their defaults. Then select **Review + create**, followed by **Create**.
 
