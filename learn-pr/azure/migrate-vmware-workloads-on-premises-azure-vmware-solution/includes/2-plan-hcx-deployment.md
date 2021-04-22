@@ -42,45 +42,21 @@ When the site pairing is set up, all required network ports need to be open for 
 
 You'll need to factor in the following network segments in the on-premises HCX environment:
 
-- Management network
-- Uplink network
-- vMotion network
-- Replication network
-
-### Management network segment
-
-Use the same management network as the on-premises VMware cluster for smaller environments. At a minimum, select two IPs on this network segment for HCX. Create a new /26 network segment for larger environments. From there, present that network segment as a port group to the on-premises VMware cluster.
-
-### Uplink network segment
-
-Use the same management network for the uplink network segment.
-
-### vMotion network segment
-
-Use the same network as vMotion by the on-premises VMware cluster. At a minimum, identify two IPs on this network segment for VMware HCX. You may need more IPs depending on the scale of the deployment. The vMotion network should be exposed a distributed virtual switch or vSwitch0. If it's not configured that way, you'll need to modify the configuration. VMware environments typically use non-routed network segments for vMotion, which doesn't cause a problem.
-
-### Replication network segment
-
-Use the same network segment as the management and uplink network segments. If the on-premises hosts use a dedicated replication VMkernel network, reserve two IP addresses in this network segment. Then use this replication VMkernel network for the replication network segment.
+| Network segment | Notes |
+| :-------------- | :---- |
+| Management network | Use the same management network as the on-premises VMware cluster for smaller environments. At a minimum, select two IPs on this network segment for HCX. Create a new /26 network segment for larger environments. From there, present that network segment as a port group to the on-premises VMware cluster. |
+Uplink network | Use the same management network for the uplink network segment. |
+| vMotion network | Use the same network as vMotion by the on-premises VMware cluster. At a minimum, identify two IPs on this network segment for VMware HCX. You may need more IPs depending on the scale of the deployment. The vMotion network should be exposed a distributed virtual switch or vSwitch0. If it's not configured that way, you'll need to modify the configuration. VMware environments typically use non-routed network segments for vMotion, which doesn't cause a problem.
+| Replication network | Use the same network segment as the management and uplink network segments. If the on-premises hosts use a dedicated replication VMkernel network, reserve two IP addresses in this network segment. Then use this replication VMkernel network for the replication network segment.
 
 ## Different migration types
 
 HCX offers a few different ways to migrate workloads:
 
-- Live migration
-- Cold migration
-- Bulk migration
-
-### Live migration
-
-HCX can transfer a powered on VM from an HCX-enabled vCenter to an HCX-enabled destination site. vMotion captures the VM's active memory, execution state, IP address, and MAC address. Migration duration depends on connectivity. The connectivity includes bandwidth available and the latency between both sites. In this migration scenario, the VM never powers off, there's no service disruption, and workloads remain online.
-
-### Cold migration
-
-Cold migration uses the same network path as VMware HCX vMotion to transfer a powered-off virtual machine. During a cold migration, the Virtual Machine IP address and MAC address are preserved.
-
-### Bulk migration
-
-The bulk migration option is designed for moving VMs in parallel. This migration type can be set to occur on a pre-defined schedule. The VM runs at the source site until the cutover begins. The service interruption with the bulk migration is equivalent to a reboot.
+| Migration type | Notes |
+| :------------- | :---- |
+| Live migration | HCX can transfer a powered on VM from an HCX-enabled vCenter to an HCX-enabled destination site. vMotion captures the VM's active memory, execution state, IP address, and MAC address. Migration duration depends on connectivity. The connectivity includes bandwidth available and the latency between both sites. In this migration scenario, the VM never powers off, there's no service disruption, and workloads remain online. |
+| Cold migration | Cold migration uses the same network path as VMware HCX vMotion to transfer a powered-off virtual machine. During a cold migration, the Virtual Machine IP address and MAC address are preserved. |
+| Bulk migration | The bulk migration option is designed for moving VMs in parallel. This migration type can be set to occur on a pre-defined schedule. The VM runs at the source site until the cutover begins. The service interruption with the bulk migration is equivalent to a reboot. |
 
 In the next unit, we'll cover how to deploy and install HCX so you can begin migrating workloads in Azure. All steps will be outlined so you can successfully deploy and install the service in your environment.

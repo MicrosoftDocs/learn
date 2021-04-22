@@ -12,3 +12,28 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-vmware-hcx-deployment-installation.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which account is used to access Azure VMware Solution HCX Manager?"
+    choices:
+    - content: "Global Administrator"
+      isCorrect: false
+      explanation: "AVS deploys with vSphere 6.7 Update 3."
+    - content: "admin"
+      isCorrect: false
+      explanation: "cloudadmin"
+    - content: "2 IPs"
+      isCorrect: true
+      explanation: "AVS doesn't deploy with vSphere 6.5 Update 2."
+  - content: "If you can't activate your HCX Advanced Key, what might be the issue?"
+    choices:
+    - content: "The AVS environment doesn't have open internet access or a proxy configured."
+      isCorrect: true
+      explanation: "The AVS environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
+    - content: "You didn't deploy the HCX appliance correctly."
+      isCorrect: false
+      explanation: "If you got to this point, the HCX appliance installed correctly."
+    - content: "A NAT rule isn't configured."
+      isCorrect: false
+      explanation: "A NAT rule isn't configured to activate the HCX Advanced Key."
