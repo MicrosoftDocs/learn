@@ -106,5 +106,6 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
 ## Notes
 
-Note any additional information that may be beneficial to this content such as links, reference material, etc.
 There is a wide range of materials and tools out there to help make you a better tester. Check out the [testing conceptual guidance](TBD) to learn more about best practices.
+
+For a more in-depth look at the Test Explorer and other Visual Studio testing tools check out the [Visual Studio Testing docs](https://docs.microsoft.com/visualstudio/test).
