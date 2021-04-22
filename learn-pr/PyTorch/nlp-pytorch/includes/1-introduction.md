@@ -5,6 +5,7 @@ We will focus on the fundamental aspects of representing NLP as tensors in PyTor
 ## Natural Language Tasks
 
 There are several NLP tasks that we traditionally try to solve using neural networks:
+
 * **Text Classification** is used when we need to classify text fragment into one of several pre-defined classes. Examples include e-mail spam detection, news categorization, assigning support request to one of the categories, and more. 
 * **Intent Classification** is one specific case of text classification, when we want to map input utterance in the conversational AI system into one of the intents that represent the actual meaning of the phrase, or intent of the user. 
 * **Sentiment Analysis** is a regression task, where we want to understand the degree of negativity of given piece of text. We may want to label texts in a dataset from the most negative (-1) to most positive ones (+1), and train a model that will output a number of "positiveness" of a text.
@@ -17,7 +18,7 @@ In this module, we will mostly focus on **text classification** task. However, w
 
 # Learning objectives
 - Understand some how text is processed for NLP tasks
-- Introduction to Recurrent Neural Netowrks (RNNs) and Generative Neural Networks (GNNs)
+- Introduction to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
 - Learn about Attention Mechanisms
 - Learn how to build text classification models
 

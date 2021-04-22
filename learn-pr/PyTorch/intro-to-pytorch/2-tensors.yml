@@ -3,7 +3,7 @@ uid: learn.PyTorch.intro-to-pytorch.tensors
 title: What are Tensors?
 metadata:
   title: What are Tensors?
-  description: Tensors are a specialized data structure that are very similar to arrays and matrices.
+  description: Tensors are specialized data structures that are similar to arrays and matrices.
   author: cassieview
   ms.author: cassieb
   ms.date: 04/14/2020
@@ -23,5 +23,5 @@ quiz:
         - content: "Tensors are a mathematical value in Python to represent GPS coordinates."
           isCorrect: false
           explanation: "Incorrect"
-        - content: "Tensors are specialized data structures that are very similar to arrays and matrices."
+        - content: "Tensors are specialized data structures that are similar to arrays and matrices."
           isCorrect: true
