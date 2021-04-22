@@ -46,7 +46,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-configuration-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the configuration profile.":::
 
 1. In the **Inspector** window, select **Input**.
 
@@ -62,7 +62,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-input-system-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted in the input system profile.":::
 
 1. In the **Input** settings, expand the **Speech** settings.
 
@@ -78,7 +78,7 @@ By default, the MRTK speech commands are configured to start automatically when 
 
 1. Select **Clone**.
 
-    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted.":::
+    :::image type="content" source="../media/select-clone-speech-commands-profile.png" alt-text="Screenshot of the Cloning Profile window. The Clone button is highlighted f or the speech commands profile.":::
 
 1. In the **Speech** settings, select **Manual Start** for **Start Behavior**.
 
