@@ -21,7 +21,7 @@ To assess and migrate servers, you should first discover machines in your on-pre
 The machine that runs the Azure Migrate appliance has the following requirements:
 
 - Windows Server 2016
-- 32 GB RAM
+- 32 GB of RAM
 - 8 vCPUs
 - 80 GB of free disk space
 
@@ -31,7 +31,7 @@ To assess and migrate databases, a link is provided to install Data Migration As
 
 ### Explore more scenarios
 
-**Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedized physical storage device with 100 TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
+**Explore more** includes links to tools to assess and migrate WebApps, Virtual Desktop Infrastructure, and data using Data Box. Azure Data Box is a ruggedized physical storage device with 100-TB capacity. The device is sent to a customer, the customer backs up their data to the device, and then the customer returns the Data Box device to Microsoft. When transferring many terabytes of data, physically sending the data is the most reliable and least expensive method.
 
 :::image type="content" source="../media/2-explore-more.png" alt-text="Screenshot of the Azure portal's Azure Migrate Overview Explore more screen." lightbox="../media/2-explore-more.png":::
 
@@ -86,7 +86,7 @@ Doing database upgrades can be a time-consuming task for administrators who mana
 
 You'll be using a virtual machine in later exercises. Run these commands to set up the machine so you can connect to it.
 
-1. In the Cloud Shell, create a VM. 
+1. In the Cloud Shell, create a VM.
 
     ```azurecli
     PASSWORD=$(openssl rand -base64 32)
@@ -100,7 +100,7 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
         --resource-group <rgn>[Sandbox resource group]</rgn>
     echo $PASSWORD
     ```
-    
+
 1. Make a note of this password as you'll need it to connect to the VM in the exercises.
 1. Open the RDP port to allow you to connect with a Remote Desktop Connection.
 
@@ -109,6 +109,22 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
         --port 3389 \
         --name SQL2019Server \
         --resource-group <rgn>[Sandbox resource group]</rgn>
+    ```
+
+1. Install the .NET framework runtime version 4.8 in the VM. This is required for DMA version 5.3. The command may take several minutes to complete:
+
+    ```azurecli
+    az vm run-command invoke \
+        --command-id RunPowerShellScript \
+        --name SQL2019Server \ 
+        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --scripts "Invoke-WebRequest 'https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/0fd66638cde16859462a6243a4629a50/ndp48-x86-x64-allos-enu.exe' -OutFile 'Net4.8.exe'; ./Net4.8.exe /q /norestart /ChainingPackage ADMINDEPLOYMENT"
+    ```
+
+1. Restart the VM to finish the installation:
+
+    ```azurecli
+    az vm restart --resource-group <rgn>[Sandbox resource group]</rgn> --name SQL2019Server
     ```
 
 > [!WARNING]
