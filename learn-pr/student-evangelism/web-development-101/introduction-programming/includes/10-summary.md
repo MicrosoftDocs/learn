@@ -6,7 +6,7 @@ Compare a few programming languages. What are some of the unique traits of JavaS
 
 Begin a study of the various languages available to programmers. Try to write a line of code in one language and then redo it in two others. What do you learn?
 
-You'll find many of the tools that a web developer might need on the [MDN documentation for client-side tooling](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview?azure-portal=true). To further your knowledge, on this site, try selecting three tools that weren't covered in this module, and explain why a web developer would use them. <!--Search for a tool that falls under this category and share its documentation. Do not use the same tool example on MDN docs.-->
+You'll find many of the tools that a web developer might need in the [MDN documentation for client-side tooling](https://developer.mozilla.org/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview?azure-portal=true). To further your knowledge, on this site, try selecting three tools that weren't covered in this module, and explain why a web developer would use them.
 
 -----
 
