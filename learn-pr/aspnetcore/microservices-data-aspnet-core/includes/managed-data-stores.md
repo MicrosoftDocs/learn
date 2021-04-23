@@ -6,7 +6,7 @@ The *:::no-loc text="eShopOnContainers":::* app uses five different databases:
 
 This example demonstrates it's possible to mix database types in a microservices architecture, and it's okay for a sample app or for dev/test environment, it isn't so for a production environment.
 
-Kubernetes was designed primarily for stateless workloads, which is precisely not the case for a database service. Kubernetes can also be used to handle stateful workloads, but it requires some extra work. You can also deploy a [SQL Server High Availability (HA) solution in a container on AKS](https://docs.microsoft.com/sql/linux/tutorial-sql-server-containers-kubernetes?view=sql-server-ver15).
+Kubernetes was designed primarily for stateless workloads, which is precisely not the case for a database service. Kubernetes can also be used to handle stateful workloads, but it requires some extra work. You can also deploy a [SQL Server High Availability (HA) solution in a container on AKS](/sql/linux/tutorial-sql-server-containers-kubernetes).
 
 In production environments, you typically handle the databases as services outside the cluster. You can configure a separate virtual machine (VM) or, more likely, a dedicated HA database cluster for each microservice.
 
@@ -16,7 +16,7 @@ In this module, you'll explore how to modify the *:::no-loc text="eShopOnContain
 
 ## Azure Cache for Redis
 
-[Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview) provides an in-memory data store based on the open-source software [Redis](https://redis.io/). When used as a cache, Redis improves the performance and scalability of systems that rely heavily on backend data stores. Frequently accessed data is copied to fast storage located close to the app. With Azure Cache for Redis, this fast storage is located in-memory instead of being loaded from disk by a database.
+[Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview) provides an in-memory data store based on the open-source software [Redis](https://redis.io/). When used as a cache, Redis improves the performance and scalability of systems that rely heavily on backend data stores. Frequently accessed data is copied to fast storage located close to the app. With Azure Cache for Redis, this fast storage is located in-memory instead of being loaded from disk by a database.
 
 Azure Cache for Redis can be used as a distributed data cache, session store, and message broker. App performance is improved by taking advantage of the Redis engine's low-latency, high-throughput performance.
 
@@ -31,30 +31,30 @@ Some key features for Azure Cache for Redis are:
 Redis is used in *:::no-loc text="eShopOnContainers":::* for:
 
 - Shopping cart storage.
-- [Data protection storage](https://docs.microsoft.com/aspnet/core/security/data-protection/introduction) (Key rings) for ASP.NET Core apps (Identity and WebSPA).
+- [Data protection storage](/aspnet/core/security/data-protection/introduction) (Key rings) for ASP.NET Core apps (Identity and WebSPA).
 - SignalR storage.
 
 ## Azure Cosmos DB
 
-[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction) is Microsoft's globally distributed database service for mission-critical apps. Azure Cosmos DB provides the following features:
+[Azure Cosmos DB](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/introduction) is Microsoft's globally distributed database service for mission-critical apps. Azure Cosmos DB provides the following features:
 
-- [Turn-key global distribution](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally)
-- [Elastic scaling of throughput and storage](https://docs.microsoft.com/azure/cosmos-db/partition-data) worldwide
+- [Turn-key global distribution](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/distribute-data-globally)
+- [Elastic scaling of throughput and storage](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/partition-data) worldwide
 - Single-digit millisecond latencies at the 99th percentile
-- [Five well-defined consistency levels](https://docs.microsoft.com/azure/cosmos-db/consistency-levels)
+- [Five well-defined consistency levels](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/consistency-levels)
 - Guaranteed high availability
 - [Industry-leading service-level agreements](https://azure.microsoft.com/support/legal/sla/cosmos-db/)
 
-Azure Cosmos DB is a [multi-model database](https://docs.microsoft.com/azure/cosmos-db/relational-nosql) that supports document, key-value, graph, and columnar data models. It [automatically indexes data](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) without requiring you to deal with schema and index management.
+Azure Cosmos DB is a [multi-model database](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/relational-nosql) that supports document, key-value, graph, and columnar data models. It [automatically indexes data](https://www.vldb.org/pvldb/vol8/p1668-shukla.pdf) without requiring you to deal with schema and index management.
 
 You can quickly create and query document, key-value, and graph databases. Each database type benefits from the global distribution and horizontal scale capabilities at the core of Cosmos DB.
 
 Multi-model means Azure Cosmos DB can have several "impersonations" that can implement both NoSQL and relational databases. From an API perspective, Cosmos DB can look like:
 
-- A [SQL Database](https://docs.microsoft.com/azure/cosmos-db/sql-query-getting-started)
-- A [MongoDB database](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
-- A [Cassandra database](https://docs.microsoft.com/azure/cosmos-db/cassandra-introduction)
-- A [Gremlin API graph database](https://docs.microsoft.com/azure/cosmos-db/graph-introduction)
-- An [Azure Table](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
+- A [SQL Database](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/sql-query-getting-started)
+- A [MongoDB database](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/mongodb-introduction)
+- A [Cassandra database](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/cassandra-introduction)
+- A [Gremlin API graph database](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/graph-introduction)
+- An [Azure Table](/sql/linux/tutorial-sql-server-containers-kubernetesazure/cosmos-db/table-introduction)
 
 You define the way a Cosmos DB looks like on creation time. The impersonations mentioned above support the corresponding wire protocols, so you can easily migrate your app with a simple connection string update.

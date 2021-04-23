@@ -3,9 +3,9 @@ uid: learn.microservices-data-aspnet-core
 metadata:
   title: Use managed data stores in a cloud-native ASP.NET Core microservices app
   description: This module guides you through implementing Azure-managed data stores in an ASP.NET Core microservices app.
-  author: scottaddie
-  ms.author: scaddie
-  ms.date: 01/19/2021
+  author: camsoper
+  ms.author: casoper
+  ms.date: 04/05/2021
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Use managed data stores in a cloud-native ASP.NET Core microservices app

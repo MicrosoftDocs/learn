@@ -7,6 +7,6 @@ metadata:
     service: identity
 data:
   # omitted for brevity
-  ConnectionString: Server=sqldata;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
+  DPConnectionString: basketdata
   # omitted for brevity
   
