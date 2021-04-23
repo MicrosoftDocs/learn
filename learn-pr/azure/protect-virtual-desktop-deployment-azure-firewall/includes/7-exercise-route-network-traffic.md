@@ -11,7 +11,10 @@ TODO: describe the end-state
 
 For the subnet used by the session host, configure the outbound default route to go through the firewall.
 
-1. In the Azure portal, search for and select **Route tables**.
+### Create route table
+
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise units.
+1. Search for and select **Route tables**.
 1. Select **+ New**.
 1. Use the following values.
 
@@ -20,32 +23,38 @@ For the subnet used by the session host, configure the outbound default route to
     |Subscription  |  Your subscription    |
     |Resource group    |   learn-firewall-rg    |
     |Region  |   Select the same location that you used previously.   |
-    |Name |   Firewall-route   |
+    |Name |   firewall-route   |
 
 1. Select **Review + create** > **Create**.
 
 After deployment completes, select **Go to resource**.
 
-1. On the Firewall-route page, select **Subnets** and then select **Associate**.
-1. Select **Virtual network** > **Test-FW-VN**.
-1. For **Subnet**, select **Workload-SN**. Make sure that you select only the **Workload-SN** subnet for this route, otherwise your firewall won't work correctly.
+### Associate route table to workload's subnet
 
-13. Select **OK**.
-14. Select **Routes** and then select **Add**.
-15. For **Route name**, type **fw-dg**.
-16. For **Address prefix**, type **0.0.0.0/0**.
-17. For **Next hop type**, select **Virtual appliance**.
+1. On firewall-route, under **Settings**, select **Subnets**.
+1. Select **Associate**.
+1. Select **Virtual network** > **learn-firewall-rg-vnet** (or sandbox rg).
+1. For **Subnet**, select **default**.  This is the subnet that your session host uses. Make sure that you select only the **default** subnet for this route, otherwise your firewall won't work correctly.
+1. Select **OK**.
 
-    Azure Firewall is actually a managed service, but virtual appliance works in this situation.
-18. For **Next hop address**, type the private IP address for the firewall that you noted previously.
-19. Select **OK**.
+### Add route to route table
 
-Configure WVD host pool subnet User Defined Route all traffic via Firewall (default route now points to firewall):
-    
-[Create a default route](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#create-a-default-route) - steps here include creating Firewall-route (in route tables) and then from that route associating with the WVD subnet.
+1. Under **Settings**, select **Routes**.
+1. Select **Add**.
+1. Enter the following values.
+
+    |Field |Value  |
+    |---------|---------|
+    |Route name    |  fw-dg       |
+    |Address prefix |  0.0.0.0/0       |
+    |Next hop type   |  Virtual appliance     |
+    |Next hop address   |  Paste in the private IP address for the firewall from previous exercise unit.    |
+
+11. Select **OK**.
 
 ## Create application rule collection
 
+<!--
 1. Create application rule collection (see [Configure application rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)) & 
     1. add rule to enable Windows VirtualDesktop FQDN tag
 	1. Source IP address range is host pool Vnet
@@ -55,41 +64,63 @@ Configure WVD host pool subnet User Defined Route all traffic via Firewall (defa
 	   - Allow https access from host pool subnet to specific URLs (in article).
 	   - 
 	   - 
-From tutorial:
+-->
 
-1. Open the **Test-FW-RG**, and select the **Test-FW01** firewall.
-1. On the **Test-FW01** page, under **Settings**, select **Rules (classic)**.
+
+1. Search for and select **Firewalls**.
+1. Select the **learn-fw** firewall.
+1. Under **Settings**, select **Rules (classic)**.
 1. Select the **Application rule collection** tab.
 1. Select **Add application rule collection**.
-1. For **Name**, type **App-Coll01**.
-1. For **Priority**, type **200**.
-1. For **Action**, select **Allow**.
-1. Under **Rules**, **Target FQDNs**, for **Name**, type **Allow-Google**.
-1. For **Source type**, select **IP address**.
-1. For **Source**, type **10.0.2.0/24**.
-1. For **Protocol:port**, type **http, https**.
-1. For **Target FQDNS**, type **`www.google.com`**
-1. Select **Add**.
+1. Enter the following information.
 
-Azure Firewall includes a built-in rule collection for infrastructure FQDNs that are allowed by default. These FQDNs are specific for the platform and can't be used for other purposes. 
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     app-coll01    |
+    |Priority    |    200     |
+    |Action     |  Allow       |
+1. Under **Rules**, in the **FQDNs tags** section, enter the following information.
+ 
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     allow-virtual-desktop    |
+    |Source type    | IP address        |
+    |Source     |  Source IP address range is host pool Vnet     |
+    |FQDN tags    |  Windows Virtual Desktop       |
+
+
+1. Select **Add**.
 
 ## Create network rule collection
 
+<!--
 1. Create network rule collection with specific rules (see last main bullet in [Host pool outbound access..](https://docs.microsoft.com/azure/firewall/protect-windows-virtual-desktop#host-pool-outbound-access-to-windows-virtual-desktop) & [Configure network rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)).
+1. 
+1. Create a network rule collection add the following rules:
 
-This is the network rule that allows outbound access to two IP addresses at port 53 (DNS).
+Allow DNS – allow traffic from your ADDS private IP address to * for TCP and UDP ports 53. (No DNS for exercise so this would be conceptual info.)
+Allow KMS – allow traffic from your Windows Virtual Desktop virtual machines to Windows Activation Service TCP port 1688. For more information about the destination IP addresses, see [Windows activation fails in forced tunneling scenario](https://docs.microsoft.com/troubleshoot/azure/virtual-machines/custom-routes-enable-kms-activation#solution)
+-->
+This is the network rule that allows outbound access to.... If this were a production deployment of Windows Virtual Desktop, you'd add a network rule to allow DNS to allow traffic from your ADDS private IP address to * for TCP and UDP ports 53. We don't have a domain controller set up. So you'll just add one rule to allow 
 
-1. Select the **Network rule collection** tab.
+1. On the learn-fw, select the **Network rule collection** tab.
 1. Select **Add network rule collection**.
-1. For **Name**, type **Net-Coll01**.
-1. For **Priority**, type **200**.
-5. For **Action**, select **Allow**.
-6. Under **Rules**, **IP addresses**, for **Name**, type **Allow-DNS**.
-7. For **Protocol**, select **UDP**.
-9. For **Source type**, select **IP address**.
+1. Enter the following information.
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     net-coll01    |
+    |Priority    |    200     |
+    |Action     |  Allow       |
+
+
+
+1. Under **Rules**, **IP addresses**, for **Name**, type **Allow-DNS**.
+1. For **Protocol**, select **UDP**.
+1. For **Source type**, select **IP address**.
 1. For **Source**, type **10.0.2.0/24**.
-2. For **Destination type** select **IP address**.
-3. For **Destination address**, type **209.244.0.3,209.244.0.4**
+1. For **Destination type** select **IP address**.
+1. For **Destination address**, type **209.244.0.3,209.244.0.4**
 
    These are public DNS servers operated by CenturyLink.
 1. For **Destination Ports**, type **53**.
