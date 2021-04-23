@@ -12,6 +12,7 @@ metadata:
 durationInMinutes: 45
 azureSandbox: false
 labId: 93141
+labModal: true
 content: |
   [!include[](includes/4b-exercise-deploy-azure-resource-manager-templates.md)]
   
