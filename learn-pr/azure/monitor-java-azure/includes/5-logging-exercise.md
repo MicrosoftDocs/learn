@@ -140,6 +140,10 @@ There are various methods to view logs and metrics as described under the follow
 
 ### Use Log Analytics
 
+There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We will focus here on Log Analytics as it's the most common one, and as it's integrated into Azure Spring Cloud.
+
+Log Analytics is part of Azure Monitor, which is well-integrated into Azure Spring Cloud and which we will also use for metrics monitoring.
+
 1. In the Azure portal, in the left pane, select **Log Analytics**.
 1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
 1. To open the **Log Search** pane, select **Logs**.
@@ -206,3 +210,5 @@ AppPlatformLogsforSpring
 | sort by count_per_app desc
 | render piechart
 ```
+
+In the next unit, we'll discuss Application Performance Monitoring (APM).
