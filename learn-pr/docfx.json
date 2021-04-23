@@ -889,22 +889,22 @@
                     "sv-se"
                 ],
                 "sports-machine-learning/**/*.yml": [
-                    "ar-sa"
+                    "ar-sa",
                     "de-de",
                     "es-es",
                     "fr-fr",
                     "it-it",
                     "ja-jp",
                     "ko-kr",
-                    "pt-br"
-                    "ru-ru"
+                    "pt-br",
+                    "ru-ru",
                     "zh-tw",
                     "cs-cz",
                     "pl-pl",
                     "tr-tr",
-                    "hu-hu"
-                    "nl-nl"
-                    "pt-pt"
+                    "hu-hu",
+                    "nl-nl",
+                    "pt-pt",
                     "sv-se"
                 ],
                 "windows/**/*.yml": [
