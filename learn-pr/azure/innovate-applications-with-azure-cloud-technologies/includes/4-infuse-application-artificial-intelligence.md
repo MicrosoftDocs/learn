@@ -1,11 +1,10 @@
-
-In this unit you will learn the importance of machine learning and artificial technologies in the innovation process and customer experience.
+In this unit, you will learn the importance of machine learning and artificial technologies in the innovation process and customer experience.
 
 ## Machine Learning and Artificial Intelligence to Create Value
 
 When evaluating which application features are going to enhance the user experience and thus increase business value, Machine Learning (ML) and Artificial Intelligence (AI) are great assets to improve the interaction with your customers and partners.
 
-Additionally to the transformation of its main e-commerce applications into a microservices architecture, Tailwind Traders is evaluating introducing new functionality that enhances the customer experience. Tailwind Traders has no data science skills: new staff will be hired in the future, but in the meantime quick wins should be identified that can help in improving the competitiveness of the company's web shop. Four possibilities are being evaluated:
+In addition to the transformation of its main e-commerce applications into a microservices architecture, Tailwind Traders is evaluating introducing new functionality that enhances the customer experience. Tailwind Traders has no data science skills. New staff will be hired in the future, but in the meantime, quick wins should be identified that can help in improving the competitiveness of the company's web shop. Four possibilities are being evaluated:
 
 - Embedding a recommendation engine to increase cross sales
 - Including a support chat to improve the user experience when problems arise
@@ -20,13 +19,13 @@ Azure offers some tools and services that can help organizations to build machin
 
 ### Azure Cognitive Services
 
-[Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/what-are-cognitive-services) are pre-built models that do not require machine learning expertise to introduce AI functionality to an application. Encompassing many different areas such as vision, speech, language, decision and search, Azure Cognitive Services are very easy to use, so that organizations without extensive machine learning skills can leverage the power of AI too.
+[Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/what-are-cognitive-services) are pre-built models that do not require machine learning expertise to introduce AI functionality to an application. Encompassing many different areas such as vision, speech, language, decision, and search, Azure Cognitive Services are easy to use, so organizations without extensive machine learning skills can use the power of AI too.
 
 Tailwind Traders sees a high potential in Azure Cognitive Services, since its data science department is not fully operational yet. These are the services that will be evaluated to innovate the e-commerce application:
 
-- **Personalizer**: this service can be used to learn which users prefer which products, and make fine-tuned, individual recommendations. Some customers will prefer products with quick delivery, others products on sale. Personalizer uses a type of Machine Learning algorithms called Reinforcement Learning, which does not require huge amounts of data to be trained. This is very interesting for Tailwind Traders, since that data does not exist yet.
+- **Personalizer**: this service can be used to learn which users prefer which products, and make fine-tuned, individual recommendations. Some customers will prefer products with quick delivery, others products on sale. Personalizer uses a type of Machine Learning algorithms called Reinforcement Learning, which does not require huge amounts of data to be trained. This is interesting for Tailwind Traders, since that data does not exist yet.
 - **Text Analytics**: many users write product reviews that could be analyzed, to find dissatisfied customers that express negative sentiments. Focusing on these customers would reduce customer churn, and increase loyalty.
-- **Translator**: product reviews can be a very effective sales tool, unfortunately they can only be leveraged by customers that understand the language they are written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user, independently of the their native language.
+- **Translator**: product reviews can be an effective sales tool, unfortunately they can only be leveraged by customers that understand the language they are written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user, independently of their native language.
 
 There are other Azure Cognitive Services that have potential for Tailwind Traders, but they decided to start with the previous three. The reason is the positive ratio between the potential increase business impact and the low effort that their introduction would require.
 
@@ -34,9 +33,9 @@ There are other Azure Cognitive Services that have potential for Tailwind Trader
 
 [Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search) powers the introduction of knowledge mining and flexible search engines into applications with little coding effort. Not only can it index massive amount of data, but it can add enrichments using Azure Cognitive Services to augment the information available to search.
 
-One of the areas where the Tailwind Traders application needs to be improved is the product search. Customers reportedly spend too long trying to find the product they are looking for. Replacing the existing search engine with Azure Cognitive Search will allow to expose rich search controls such as faceted navigation (multi category filters), relevance tuning and autocomplete.
+One of the areas where the Tailwind Traders application needs to be improved is the product search. Customers reportedly spend too long trying to find the product they are looking for. Replacing the existing search engine with Azure Cognitive Search will allow you to expose rich search controls such as faceted navigation (multi category filters), relevance tuning and autocomplete.
 
-Internet users are nowadays used to sophisticated search engines, so Tailwind Traders cannot afford to continue offering the existing, old-fashioned functionality in the present version of the e-commerce platform. Fortunately, Azure Cognitive Search is offered as a set of APIs that is extremely easy to use, and will allow creating a Minimum Viable Product very quickly.
+Internet users are used to sophisticated search engines, so Tailwind Traders cannot afford to continue offering the existing, old-fashioned functionality in the present version of the e-commerce platform. Fortunately, Azure Cognitive Search is offered as a set of APIs that is easy to use, and will allow creating a Minimum Viable Product quickly.
 
 ### Azure Conversational AI and Azure Bot Services
 
@@ -44,7 +43,7 @@ The next area where surveys have surfaced user dissatisfaction is in customer su
 
 Tailwind Traders is considering [Azure Bot Services](https://docs.microsoft.com/azure/bot-service) to implement a chat-based support system with which users can resolve their issues quicker, at a lower cost, and a better user experience. Azure Bot Services can be implemented using different languages like C#, JavaScript and Python. This makes it easier finding developers in the organization that can use a familiar programming language to create the new support chat functionality.
 
-Azure Bot Services can be implemented in a variety of channels, but Tailwind Traders is mostly interested in offering it as a web-based chat for users visiting the e-commerce web site.
+Azure Bot Services can be implemented in various channels, but Tailwind Traders is mostly interested in offering it as a web-based chat for users visiting the e-commerce web site.
 
 ### Azure Machine Learning
 
