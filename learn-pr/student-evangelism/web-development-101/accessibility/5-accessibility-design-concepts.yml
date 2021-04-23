@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.web-development-101.accessibility.accessibility-design-concepts
 metadata:
   title: Accessibility design concepts
-  description: Description #TODO 
+  description: The web is designed with a set of elements that you can use to describe things like titles, full-row containers, inline elements, and more. By using the elements correctly, you can leverage built-in functionality.
   ms.date: 03/30/2021 
   author: softchris
   ms.author: jelooper

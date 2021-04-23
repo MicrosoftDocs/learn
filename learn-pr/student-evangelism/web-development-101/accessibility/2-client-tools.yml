@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.web-development-101.accessibility.client-tools
 metadata:
   title: Client tools
-  description: Description #TODO 
+  description: This unit teaches you about different tools, such as screen readers and zoom, that are important when developing accessible web apps.
   ms.date: 03/30/2021 
   author: softchris
   ms.author: jelooper

@@ -1,6 +1,8 @@
-When a developer wants to learn something new, they'll most likely turn to documentation to learn how to use it. Developers rely on documentation often to guide them through how to use tools and languages properly, and also to gain deeper knowledge of how it works.
+When developers want to learn something new, they'll most likely turn to expert documentation. Expert documentation can guide them through how to use programming tools and languages properly, and help them gain deeper knowledge about how it all fits together.
 
-## Popular Documentation on Web Development
+## Popular web-development documentation
+
+The following resources are just two examples of documentation for developers:
 
 - Mozilla Developer Network
 - Frontend Masters

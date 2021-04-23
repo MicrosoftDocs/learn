@@ -1,15 +1,15 @@
-Running your programs on the Internet requires some sort of client. A common form of client is web browser, with which you can interact with the content. 
+Running your programs on the internet requires some sort of client to help you view the output. A common form of client is a web browser, with which you can view and interact with the content. 
 
-## Browser for the developer
+## Browsers for developers
 
-Web developers rely on the browser to observe how their code runs on the web, it's also used to view visual elements of a web page that are written in the editor, like HTML.
+Web developers rely on browsers to observe how their code runs on the web. Browsers are also used to view visual elements of a webpage that are written in the editor in languages such as HTML.
 
 ### Developer tools
 
-Many browsers come with developer tools (DevTools) that contain a set of helpful features and information to assist developers to collect and capture important insights about their application. For example: If a web page has errors, it's sometimes helpful to know when they occurred. DevTools in a browser can be configured to capture this information.
+Many browsers come with developer tools that contain helpful features and information to assist developers with collecting and capturing important insights about their applications. For example, if a webpage has errors, it's sometimes helpful to know when they occurred. Developer tools in a browser can be configured to capture this information.
 
-Popular browsers and DevTools:
+Here are some popular browsers and developer tools:
 
-- [Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium?WT.mc_id=academic-13441-cxa&azure-portal=true)
-- [Chrome](https://developers.google.com/web/tools/chrome-devtools/?azure-portal=true)
+- [Microsoft&nbsp;Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium?WT.mc_id=academic-13441-cxa&azure-portal=true)
+- [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/?azure-portal=true)
 - [Firefox](https://developer.mozilla.org/docs/Tools?azure-portal=true)
