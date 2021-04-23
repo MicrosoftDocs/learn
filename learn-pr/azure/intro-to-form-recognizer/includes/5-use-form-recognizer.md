@@ -2,8 +2,9 @@ In this exercise, you're going to see Form Recognizer in action by deploying a F
 
 To start, you'll need to activate the Sandbox above – just select the ‘Activate sandbox’ button and sign in, no payment or Azure subscription required. Though you're signed-in and have full admin access to the website and Azure resources, the resources in this exercise are created on Microsoft's subscription, and won't cost you anything.
 
-## Choose your demo experience
-You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. Or, since you fully control these resources, if you are interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure Portal, or even use Visual Studio remote debugging and step through.
+## Choose your learning experience
+
+You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. But you fully control these resources, so if you are interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure portal, or even use Visual Studio remote debugging and step through.
 
 For more guided hands-on learning on Form Recognizer we have more Learn modules for you to check out. After learning more you can always come back here to apply what you've learned in the free sandbox.
 
@@ -19,16 +20,39 @@ To create the Form Recognizer resource and deploy the webapp, complete the follo
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/main/scripts/deploy-in-sandbox.sh | bash
     ```
 
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't impact the running script.
+1. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't impact the running script.
 
-3. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Form Recognizer. You can also use the following link, but remember, it won't work until the script finishes running: [fr-<rgn>[sandboxName]</rgn>.azurewebsites.net](https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net?azure-portal=true)
+1. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Form Recognizer. You can also cut and paste the URL from here, but remember, it won't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
 
 After you run the code, you can play around with Form Recognizer at your own pace.
 
 ## Optional: Browse or clone the code in GitHub
 
-The code deployed is open source (though not production ready). You can view the code, clone, or fork the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer).
+The source code for this entire demo is available is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
 
-## Optional: Review the resource in the Azure portal
+You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer?azure-portal=true)
 
-If you’d like to look at the resources created in the Cloud Shell, you can browse them in the [Azure portal](https://portal.azure.com/?azure-portal=true#blade/HubsExtension/BrowseResourceGroups).
+An example of a good place to start browsing is [where we use the SDK to call the service](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/blob/b1fe4f309fc4ff9b240dc599b542e577a206ec0e/src/Services/InvoiceRecognizerService.cs?azure-portal=true#L26-L33):
+
+```csharp
+public async Task<RecognizedForm> Analyze(Uri invoiceUri)
+{
+    RecognizeInvoicesOperation operation = await GetClient().StartRecognizeInvoicesFromUriAsync(invoiceUri, OperationOptions);
+    Response<RecognizedFormCollection> operationResponse = await operation.WaitForCompletionAsync();
+    RecognizedFormCollection invoices = operationResponse.Value;
+
+    return ProcessResults(invoices);
+}
+```
+
+Notice that we use a convenience method specifically for `Invoice` since it's one of the built-in form types.
+
+## Optional: Review the resource in the CLI or Azure portal
+
+You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
+
+Or if you prefer a command line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources (there should only be one):
+
+```azurecli
+az cognitiveservices account list
+```
