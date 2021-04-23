@@ -19,7 +19,7 @@ Now you are ready to train on your image set.
 
 In the folder you downloaded, you'll find two folders, one labeled 'ice cream' and the other 'dalmatian'. Select the `+` icon in your Custom Vision AI project, and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
 
-![tagging](../media/tagging.png)
+![Add tagging](../media/tagging.png)
 
 You now have your twelve training images uploaded and tagged. Select the *gear* icon at the top, and select *Quick Training*. You will see the results with performance analyzed. Test your data on a new image of ice cream or a dalmatian. Here is one to try:
 
