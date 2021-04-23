@@ -397,7 +397,7 @@ achievements:
   title: Introduction to the Azure Data Science Virtual Machine
   summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
   iconUrl: /learn/achievements/data-ai/intro-to-azure-dsvm-badge.svg
-- uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio
+- uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.badge
   type: badge
   title: Integrate OpenAPI-enabled Web APIs with Azure API Management through Visual Studio
   summary: Learn how to add an OpenAPI-enabled Web API application to Azure API Management through Visual Studio.
