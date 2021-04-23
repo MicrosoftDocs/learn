@@ -9,7 +9,7 @@ metadata:
   author: amthomas46
   ms.author: antho  
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 20
+durationInMinutes: 25
 interactive: powershell
 azureSandbox: true
 content: |

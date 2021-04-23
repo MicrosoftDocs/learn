@@ -1,70 +1,52 @@
-<!-- 1. Restate the scenario problem --------------------------------------------------------------------------------
+Getting the timing right of heading to the bus stop is a challenge that most can relate to. In the module, you determined a possible solution architecture by analyzing the capabilities that various Azure services provide. The solution architecture included Azure SQL Database, Azure Functions, Azure Static Web Apps, Azure Logic Apps, and GitHub Actions.
 
-    Goal: Summarize the challenge(s) posed in the introduction scenario; be brief (1-2 sentences)
+After creating the solution architecture, the next step it to build a strong foundation for the application. Azure SQL Database is a modern database with the capabilities required for modern applications like catching the bus. Azure SQL Database supports JSON, geospatial, and GitHub Actions. This makes it not easy to meet the requirements of the scenario, but it also enables you to build a CI/CD pipeline from the start.
 
-    Heading: do not add an H1 or H2 title here, the auto-generated H1 will appear above this content automatically
+Azure SQL Database makes it easier to develop the foundations of applications like the serverless, full-stack application discussed for catching the bus. If you choose to complete the next module of the associated learning path, you'll revisit the solution architecture and dive into the API portion of the solution, which uses Azure Functions.
 
-    Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
+## References
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
--->
-TODO: restate the scenario problem
+There are many references for you to go as deep into the topics discussed as you want.
 
-<!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
+### Azure SQL Database is a modern database
 
-    Goal: Describe how you used the product to solve the problem(s) posed in the introduction scenario
+The following references are related to Azure SQL Database's modern capabilities.
 
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
+- [DataExposed](https://www.youtube.com/playlist?list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR)
+- [Video: Using Azure Pipelines for Azure SQL deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=26)
+- [10 reasons to use Azure SQL in your next project](https://devblogs.microsoft.com/azure-sql/10-reasons-to-use-azure-sql-in-your-next-project/).
+- [Azure SQL JSON support sample](https://github.com/yorek/azure-sql-db-samples/tree/master/samples/03-json)
+- [Geospatial support](https://docs.microsoft.com/sql/relational-databases/spatial/spatial-data-sql-server?view=azuresqldb-current) 
+- [OpenLayers library](https://openlayers.org/)library
+- [Graph models](https://docs.microsoft.com/sql/relational-databases/graphs/sql-graph-overview)
+- [Columnstore indexes](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview)
+- [Lock-free tables](https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
 
-    Recommended: format this as lead-in sentence(s) followed by a list
+### DevOps and Azure SQL Database
 
-    Example: "You did some research and found that Plain English is a good writing style for safety-critical communications. You applied several Plain English techniques to your instructions:
-        * Removed unnecessary words, which made your sentences easier to read even in a stressful situation like a fire.
-        * Made sure all sentences used the active voice, which made your content more direct.
-        * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
-        * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
- -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
+The following references will be very useful if you want to learn about DevOps generally and as it relates to Azure SQL Database.
 
-<!-- 3. Describe the experience without the product ---------------------------------------------------
+- [What is DevOps?](https://azure.microsoft.com/en-us/overview/what-is-devops/)
+- [CI/CD](https://en.wikipedia.org/wiki/CI/CD)
+- [GitHub Actions](https://github.com/features/actions)
+- [Azure DevOps](https://azure.microsoft.com/solutions/devops/)
+- [Video: Getting Started with DevOps for Azure SQL](https://www.youtube.com/watch?v=j7OnxOz7YDY&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=30)
+- [Video: Using Azure Pipelines for Azure SQL Deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=28)
+- [DevOps for Azure SQL](https://devblogs.microsoft.com/azure-sql/devops-for-azure-sql/).
+- [GitHub Action Types](https://github.com/marketplace?type=actions)
+- [Azure SQL Deploy Action](https://github.com/marketplace/actions/azure-sql-deploy)
+- [Azure DevOps Tasks](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops)
+- [Azure SQL Database Deployment Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops)
+- 
 
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
+#### Frameworks that support code first migrations
 
-    Heading: none; typically this will be a new paragraph
+- [.NET Core - Entity Framework](https://docs.microsoft.com/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli)
+- [Node - Sequelize](https://sequelize.org/master/manual/migrations.html)
+- [Node - Prisma](https://www.prisma.io/migrate/)
+- [Python - Django](https://docs.djangoproject.com/en/3.2/topics/migrations/)
+- [Python - SQLAlchemy Alembic](https://pypi.org/project/alembic/)
 
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
+## Other samples
 
- -->
-TODO: describe the experience without the product
-
-<!-- 4. Describe the business impact ----------------------------------------------------
-
-    Goal: explain the business impact of using the product to solve the problem
-
-    Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
-
-    Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
- -->
-TODO: describe the business impact
-
-<!-- 5. References (optional) ----------------------------------------------------
-
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: use an H2 of "References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-TODO: add an (optional) references section
-
-<!-- Do not include any other content -->
+A sample of a fully featured solution that shows how to use the Manual Script approach along with database unit testing options is available here: [Modern development: creating a REST API, via CI/CD and back](https://devblogs.microsoft.com/azure-sql/modern-development-creating-a-rest-api-via-ci-cd-and-back/).

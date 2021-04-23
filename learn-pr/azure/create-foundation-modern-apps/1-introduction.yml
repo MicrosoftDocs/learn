@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to leverage modern database capabilities to build a foundation for applications.
+  description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
   ms.date: 3/17/2021  
   author:   amthomas46
   ms.author: antho 

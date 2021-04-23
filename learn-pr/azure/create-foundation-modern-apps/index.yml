@@ -3,13 +3,13 @@ uid: learn.azure.create-foundation-modern-apps
 metadata:
   moduleType: standard  
   title: Create the foundation for modern applications
-  description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to leverage modern database capabilities to build a foundation for applications.
+  description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
   ms.date: 3/17/2021  
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: Create the foundation for modern applications
-summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to leverage modern database capabilities to build a foundation for applications.
+summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to ise modern database capabilities to build a foundation for applications.
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you will be able to: 
     - Create multi-service solutions from real-world scenarios
