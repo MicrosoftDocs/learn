@@ -6,7 +6,7 @@ For the most part, the Vue CLI has already created the files you need for your P
 
 Add a new file called `vue.config.js` to the root of your web app. This file will help Webpack filter files that stop service workers from being created.
 
-In that file, add this code:
+In that file, add the following code.
 
 ```JavaScript
 module.exports = {
@@ -24,6 +24,6 @@ Now, when you push your code to GitHub and it's built, a service worker should b
 
 ## Test the app
 
-To test your Lighthouse score, open your web app in a browser and open the Developer Tools. Navigate to Audit and create an audit report for your web app. You can test its offline capabilities by clicking `Application` in the Developer Tools area, then click `Service Workers`. Take your app offline by clicking the offline checkbox, then try the app. The model should perform inference well, as if it were online.
+To test your Lighthouse score, open your web app in a browser, and open the Developer Tools. Go to **Audit** and create an audit report for your web app. You can test its offline capabilities by selecting **Application** in the Developer Tools area, and then selecting **Service Workers**. Take your app offline by selecting the offline checkbox, and then try the app. The model should perform inference well, as if it were online.
 
-Try building a new model in Custom Vision AI with fresh images for testing and verification and then load your model again via your build process. The Service Worker should pick up the fact that there's a new model and alert you in console that it exists. When you refresh the screen, the new model should appear.
+Try building a new model in Custom Vision AI with fresh images for testing and verification, and then load your model again via your build process. The Service Worker should pick up the fact that there's a new model, and alert you in console that it exists. When you refresh the screen, the new model should appear.
