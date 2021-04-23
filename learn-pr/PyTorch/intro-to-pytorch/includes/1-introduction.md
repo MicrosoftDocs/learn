@@ -6,8 +6,9 @@ Before we jump into building the model you will be guided through a set of core 
 
 - Introduce the key concepts to building machine learning models
 - Build a Computer Vision model
-- Introduce you to building model with PyTorch API.
+- Introduce you to building models with PyTorch API.
 
 ## Prerequisites
 
-- Knowledge of Python
+- Basic Python knowledge
+- Basic knowledge about how to use Jupyter Notebooks
