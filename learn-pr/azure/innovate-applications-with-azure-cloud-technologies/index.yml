@@ -4,8 +4,8 @@ metadata:
   title: Innovate applications with Azure cloud technologies. 
   description: Innovation is a complex topic that encompasses many disciplines. The agility of public cloud allows to quicker innovation cycles and quicker hypothesis verification. Learn how to use Azure cloud technologies to sustain your organization's innovation requirements. 
   ms.date: 03/01/2021
-  author: jamcneil
-  ms.author: jumcn
+  author: jomore
+  ms.author: jomore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Innovate applications with Azure cloud technologies.
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Foundational understanding of cloud adoption 
   - Understanding of your organization's products, markets and customers 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/innovate-applications-azure-cloud-technologies.svg
 ratingEnabled: true
 levels:
 - intermediate
