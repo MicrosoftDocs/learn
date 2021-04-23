@@ -4,7 +4,7 @@ You have a web app, and it's been published to Azure. Now you can make sure that
 
 For the most part, the Vue CLI has already created the files you need for your Progressive Web App. If you look in the `/public/images/icons` folder, you'll find ready made icons so that a user can create a bookmark to the app on a desktop. The build process also creates a `service-workers.js` file to launch a service worker that takes care of offline capabilities. Make sure that a service worker can be created by adding one more file to your app: a `vue.config.js` file.
 
-Add a new file called `vue.config.js` to the root of your web app. This file will help Webpack filter files that stop service workers from being created.
+Add a new file called `vue.config.js` to the root of your web app. This file will help webpack filter files that stop service workers from being created.
 
 In that file, add the following code.
 
