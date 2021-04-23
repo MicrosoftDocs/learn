@@ -26,6 +26,7 @@ TODO: add your visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
+
 TODO: add your scenario
 TODO: add your image
 

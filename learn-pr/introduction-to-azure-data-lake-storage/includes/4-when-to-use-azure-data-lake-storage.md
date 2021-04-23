@@ -39,6 +39,7 @@ TODO: add your bulleted list of key things covered
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
 -->
 ## Decision criteria
+
 TODO: add your 3 lead-in sentences
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------

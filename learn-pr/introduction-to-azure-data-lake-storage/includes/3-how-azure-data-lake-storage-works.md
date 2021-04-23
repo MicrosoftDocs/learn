@@ -39,6 +39,7 @@ TODO: add your bulleted list of key things covered
 
 <!-- Pattern for simple topic -->
 ## H2 heading
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)

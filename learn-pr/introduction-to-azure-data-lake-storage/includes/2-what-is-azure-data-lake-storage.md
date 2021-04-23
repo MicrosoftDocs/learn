@@ -29,6 +29,7 @@ TODO: add your topic sentences(s)
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
 -->
 ## What is <concept>?
+
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element

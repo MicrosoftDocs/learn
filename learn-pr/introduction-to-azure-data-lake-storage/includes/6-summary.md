@@ -14,7 +14,7 @@
 
 -->
 TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+TODO: a bulleted list of the decision criteria
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
