@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. This is the component that is responsible for managing resources on a Hadoop cluster."
     - content: "Spark"
       isCorrect: false
-      explanation: "Spark is a type of Hadoop cluster implementation."
+      explanation: "Incorrect. Spark is a type of Hadoop cluster implementation."
     - content: "MapReduce"
       isCorrect: false
       explanation: "Incorrect. MapReduce is a programming model that enables you to process and analyze data."
