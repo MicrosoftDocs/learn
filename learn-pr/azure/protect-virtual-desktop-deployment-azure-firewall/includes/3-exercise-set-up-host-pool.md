@@ -41,6 +41,7 @@ Let's go to the Azure portal to quickly create a host pool.
    |Load balancing algorithm    | Breadth-first |
    |Max session limit    |2|
 1. Select **Review + create** > **Create**.
+
 <!-- These steps don't work without reinstalling Azure PowerShell module and resetting context so have to do this part in the portal.
 
 Run the following command to create a host pool.
@@ -95,7 +96,7 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-1. Run the following command to create the VM using a Windows 10 image. (Check to see if host pool creates vNet & subnet)
+1. Run the following command to create the VM using a Windows 10 Enterprise multi-session image.
 
     ```powershell
     New-Azvm `
@@ -105,7 +106,7 @@ Create an Azure VM to act as a session host for the host pool.
     -Size 'Standard_DS1_v2' `
     -VirtualNetworkName myVnet `
     -SubnetName mySubnet `
-    -Image "MicrosoftWindowsDesktop:Windows-10:rs5-enterprise-standard:latest" 
+    -Image "MicrosoftWindowsDesktop:Windows-10:20h1-evd-g2:latest" 
 
     ```
 
@@ -128,6 +129,7 @@ Create an Azure VM to act as a session host for the host pool.
 -->
 
 1. In the Azure portal, search for and select **Virtual machines**.
+1. Select **learn-host-vm**.
 1. Select **Connect** > **RDP**.
 1. Select **Download RDP File**.
 1. Open the RDP file from your browser.
@@ -173,13 +175,16 @@ Next, install the  Windows Virtual Desktop Agent Bootloader.
 
 ## Check your work
 
-At this point, the virtual machine should be registered as a session host for the host pool. To verify it's registered, let's sign into the portal and check status of the VM in the host pool.
+At this point, the virtual machine should be registered as a session host for the host pool. To verify it's registered, let's sign into the portal and check the VM in the host pool.
 
 1. In the Azure portal, search for or select **Windows Virtual Desktop**.
 1. Select **Host pools** > **learn-host-pool**.
 1. In the center pane, under **Virtual machines**, select **Total machines**.
-1. For **learn-vm-session-host**, review the **Status**.
-1. If you successfully registered the VM to the host pool, the **Status** value is **Available**.
+1. You see that **learn-host-vm** is registered with the host pool.
+1. Select **learn-host-vm**.
+1. Under **Status**, select **ViewDetails**.
+1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
+
 <!--TODO add screenshot-->
 
 
