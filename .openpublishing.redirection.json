@@ -5519,6 +5519,11 @@
       "source_path": "learn-pr/data-ai-cert/intro-to-azure-dsvm/5-summary.yml",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-data-science-virtual-machine",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-sql-apache-spark-pools-azure-synapse-analytics/",
+      "redirect_document_id": true
     }
   ]
 }
