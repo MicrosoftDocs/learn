@@ -47,11 +47,3 @@ Key scenarios that you can accomplish with a virtual network include:
 A subnet is a range of IP addresses in the virtual network. You can divide a virtual network into multiple subnets for organization and security. When you set up a virtual network, you specify the topology, including the available address spaces and subnets. If the virtual network will be connected to other virtual network or on-premises networks, you must select address ranges that don't overlap.
 
 There is no security boundary between subnets, so VMs in each subnet can talk to one another. But you can set up network security groups, which allow you to control the traffic flow to and from subnets and VMs.
-
-## Private endpoints for a Batch account
-
-Azure Private Link enables access to Azure platform as a service (PaaS) services and Azure-hosted, customer-owned services over a private endpoint in your virtual network. Private Link restricts access to a Batch account from within the virtual network or from any peered virtual network. Resources mapped to Private Link are also accessible on-premises over private peering through VPN or Azure ExpressRoute.
-
-To use private endpoints, you need to create a Batch account and configure it appropriately. Public network access configuration must be disabled. After you create the Batch account, you can create private endpoints and associate them with the account.
-
-By default, a private endpoint is an Azure Resource Manager resource. An Azure Resource Manager template (ARM template) defines the infrastructure and configuration that are required for deployment, without writing a sequence of programming commands. ARM template deployment helps to create the virtual network, the web app, the private endpoint, and the private DNS zone.
