@@ -113,7 +113,7 @@ Create an Azure VM to act as a session host for the host pool.
 
 ## Connect to the VM by using a remote desktop session
 
-<!-->
+<!--
 1. Get the public IP address of the VM by running the following command.
 
     ```powershell
