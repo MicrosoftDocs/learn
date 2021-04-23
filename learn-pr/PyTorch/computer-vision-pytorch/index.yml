@@ -11,10 +11,10 @@ metadata:
 title: Introduction to Computer Vision with PyTorch 
 summary:   In this module you will get an introduction to Computer Vision using one of the most popular deep learning frameworks, PyTorch! We will use image classification tasks to learn about convolutional neural networks, and then learn how pre-trained networks and transfer learning can improve our models and solve real-world problems.
 abstract: | 
-  - How to represent images as tensors and feed neural networks with images.
-  - How convolutional neural network architecture that can extract patterns from images
-  - How to use pre-trained networks to solve real-world problems, minimize number of required data samples and build more accurate models
-  - How to create low-profile networks that can be used on mobile and low power devices. 
+  - Learn how to build computer vision machine learning models
+  - Learn how to represent images as tensors
+  - Learn how to build Dense Neural Networks (DNNs) and Convolutional Neural Networks (CNNs)
+
 iconUrl: /learn/achievements/.svg
 levels:
 - beginner
