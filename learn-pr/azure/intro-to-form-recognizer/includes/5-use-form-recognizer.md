@@ -21,7 +21,7 @@ To create the Form Recognizer resource and deploy the webapp, complete the follo
 
 2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't impact the running script.
 
-3. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Form Recognizer. You can also use the following link, but remember, it won't work until the script finishes running: [fr-<rgn>[sandboxName]</rgn>.azurewebsites.net](https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net?azure-portal=true)
+3. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Form Recognizer. You can also use the following link, but remember, it won't work until the script finishes running: <a href="https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net" target="_blank">fr-<rgn>[sandboxName]</rgn>.azurewebsites.net</a>
 
 After you run the code, you can play around with Form Recognizer at your own pace.
 
