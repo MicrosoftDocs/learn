@@ -27,12 +27,12 @@ quiz:
       explanation: "Text like \"here\" and \"click here\" is indiscernible to a screen reader."
   - content: Which of the following is an appropriate use of ARIA (Accessible Rich Internet Applications) attributes?
     choices:
-    - content: To indicate to a screen reader that a `div` element is actually a `button`.
+    - content: To indicate to a screen reader that a `div` element is actually a `button` element.
       isCorrect: false
-      explanation: ARIA attributes aren't designed to be used to avoid semantic HTML.
+      explanation: ARIA attributes aren't designed for avoiding semantic HTML.
     - content: To provide different text for a screen reader to speak when link text reads "click here."
       isCorrect: false
-      explanation: ARIA attributes are not designed to be used to avoid creating good link text.
+      explanation: ARIA attributes aren't designed for avoiding the creation of good link text.
     - content: To give context to a screen reader when a control doesn't exist in semantic HTML, such as a tree.
       isCorrect: true
       explanation: ARIA attributes can provide context to a screen reader when you're creating custom controls that don't exist natively in HTML.

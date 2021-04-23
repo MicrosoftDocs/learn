@@ -9,13 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
 title: Learn the basics of web accessibility
-summary: There are various tools and reports at your disposal that can highlight issues that needs to be addressed. There are also standards like ARIA tags, for example, that will make your app usable by all. 
+summary: There are various tools and reports at your disposal that can highlight issues that need to be addressed. There are also standards like ARIA tags that will make your app usable by all. 
 abstract: | 
-  In this module, you will learn:
-  - Tools users use to navigate web pages.
-  - Tools developers use to ensure accessibility.
-  - Skills for ensuring your pages are accessible.
-prerequisites: none
+  In this module, you'll learn:
+  - Tools that users use to browse through webpages.
+  - Tools that developers use to ensure accessibility.
+  - Skills for ensuring that your pages are accessible.
+prerequisites: |
+  - A browser
+  - Basic knowledge of HTML and CSS
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
