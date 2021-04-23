@@ -1,6 +1,3 @@
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
-
 In this exercise, you'll update the Bicep template that you previously created so that it uses a module for the Azure App Service resources. Modules help to keep the intention of the main template clearer. You can reuse the App Service module in other templates if you choose to.
 
 During the process, you'll:

@@ -5664,6 +5664,11 @@
       "source_path": "learn-pr/student-evangelism/optimize-basketball-player-rest-breaks/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/optimize-basketball-player-rest-breaks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-sql-apache-spark-pools-azure-synapse-analytics/9-transfer-data-outside-synapse-workspace-using-sql-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-sql-apache-spark-pools-azure-synapse-analytics/",
+      "redirect_document_id": true
     }
   ]
 }
