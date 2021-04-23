@@ -1,4 +1,4 @@
-Two of the most common components on any webpage are links and images. These items have a profound impact on accessibility. Ensuring good link text and alt text is one of the first actionable steps that you can take to improve your pages for all users.
+Two of the most common components on any webpage are links and images. These items have a profound impact on accessibility. Ensuring good link text and alt text is one of the first steps that you can take to improve your pages for all users.
 
 ## Link text
 
@@ -12,11 +12,11 @@ Consider the two links in the following example text:
 > [!NOTE]
 > The two examples demonstrate what you should *not* use as a web developer.
 
-Although these links might seem fine for someone with full sight, they won't work as you might expect with a screen reader. Remember, screen readers read the text. If a URL appears in the text, the screen reader will read the URL. Generally speaking, the URL does not convey meaningful information and can sound annoying. You might have experienced this problem if your phone has ever audibly read a text message with a URL.
+Although these links might seem fine for someone with full sight, they won't work as you might expect with a screen reader. Remember, screen readers read the text. If a URL appears in the text, the screen reader will read the URL. In general, the URL does not convey meaningful information and can sound annoying. You might have experienced this problem if your phone has ever audibly read a text message with a URL.
 
 Screen readers also have the ability to read only the hyperlinks on a page, much in the same way that a sighted person would scan a page for links. If the link text is always "click here," all the user will hear is "click here, click here, click here, click here, click here, ..." All links are now indistinguishable from one another, which is a frustrating experience.
 
-The word "click" is also a problem, as not all users will click. Phone users will tap, keyboard users might select the Enter key or the Spacebar, and other clients will use other means.
+The word "click" is also a problem, because not all users will click. Phone users will tap, keyboard users might select the Enter key or the Spacebar, and other clients will use other means.
 
 We need to always use meaningful link text. Good link text briefly describes what's on the other side of the link. In the earlier example about little penguins, the link goes to the Wikipedia page about the species. The phrase *little penguins* would be perfect link text because it makes it clear what someone will learn about if they select the link:
 
@@ -38,7 +38,7 @@ This is a common layout for a page that shows information about various items in
 
 To support these types of scenarios, HTML supports a set of attributes known as [Accessible Rich Internet Applications (ARIA)](https://developer.mozilla.org/docs/Web/Accessibility/ARIA). You can use these attributes to provide more information to screen readers. 
 
-For example, you can use `aria-label` to describe a link when the format of the page doesn't allow you to. The description for widget might be set as:
+For example, you can use `aria-label` to describe a link when the format of the page doesn't allow you to. The description for *widget* might be set as:
 
 ``` html
 <a href="#" aria-label="Widget description">description</a>
@@ -63,4 +63,4 @@ Screen readers can't automatically read what's in an image. Ensuring that images
 Images that are purely decorative should have their `alt` attribute set to an empty string: `alt=""`. This setting prevents screen readers from unnecessarily announcing the decorative image.
 
 > [!NOTE]
-> As you might expect, search engines also can't understand what's in an image. They also use alt text. So once again, ensuring that your page is accessible provides bonuses!
+> As you might expect, search engines can't understand what's in an image. They rely on alt text. So once again, ensuring that your page is accessible provides bonuses!

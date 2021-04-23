@@ -1,4 +1,4 @@
-Accessibility is a relatively large topic. We can't cover it completely in a single Learn module. However, there are some core tenets that you'll want to implement in every page you create. Designing an accessible page from the start is *always* easier than going back to an existing page to make it accessible.
+Accessibility is a relatively large topic. We can't cover it completely in a single Learn module. However, there are some core tenets that you'll want to implement in every page you create. Designing an accessible page from the start is always easier than going back to an existing page to make it accessible.
 
 ## Use HTML the way it was designed
 
@@ -23,7 +23,7 @@ One of the great features of CSS is that it provides complete control over how t
 
 ## Consider the keyboard
 
-Some users can't use a mouse or trackpad/touchpad, instead relying on keyboard interactions to tab from one element to the next. It's important for your pages to present your content in logical order so a keyboard user can access each interactive element as they move down.
+Some users can't use a mouse or trackpad/touchpad. Instead, these users rely on keyboard interactions to tab from one element to the next. It's important for your pages to present your content in logical order so a keyboard user can access each interactive element as they move down.
 
 When a user moves through a page by tabbing, focus moves from one control to the next based on the order in which the controls are listed in the HTML source. The controls for your page should be listed in the HTML source in the order in which you expect the page to be browsed, while relying on CSS to lay out the page visually to users.
 
