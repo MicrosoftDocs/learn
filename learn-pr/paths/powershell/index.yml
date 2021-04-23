@@ -27,6 +27,7 @@ products:
 modules:
 - learn.powershell.intro-to-powershell
 - learn.powershell.connect-commands
+- learn.languages.powershell-write-first
 - learn.powershell.scripting-with-powershell
 trophy:
   uid: learn.powershell.powershell.trophy
