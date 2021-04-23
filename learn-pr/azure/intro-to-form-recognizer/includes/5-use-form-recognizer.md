@@ -29,9 +29,9 @@ After you run the code, you can play around with Form Recognizer at your own pac
 
 The source code for this entire demo is available is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
 
-You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer)
+You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer?azure-portal=true)
 
-An example of a good place to start browsing is [where we use the SDK to call the service](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/blob/b1fe4f309fc4ff9b240dc599b542e577a206ec0e/src/Services/InvoiceRecognizerService.cs#L26-L33):
+An example of a good place to start browsing is [where we use the SDK to call the service](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer/blob/b1fe4f309fc4ff9b240dc599b542e577a206ec0e/src/Services/InvoiceRecognizerService.cs?azure-portal=true#L26-L33):
 
 ```csharp
 public async Task<RecognizedForm> Analyze(Uri invoiceUri)
@@ -40,12 +40,18 @@ public async Task<RecognizedForm> Analyze(Uri invoiceUri)
     Response<RecognizedFormCollection> operationResponse = await operation.WaitForCompletionAsync();
     RecognizedFormCollection invoices = operationResponse.Value;
 
-
     return ProcessResults(invoices);
 }
 ```
 
+Notice that we use a convenience method specifically for `Invoice` since it's one of the built-in form types.
 
-## Optional: Review the resource in the Azure portal
+## Optional: Review the resource in the CLI or Azure portal
 
-If you’d like to look at the resources created in the Cloud Shell, you can browse them in the [Azure portal](https://portal.azure.com/?azure-portal=true#blade/HubsExtension/BrowseResourceGroups).
+You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
+
+Or if you prefer a command line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources (there should only be one):
+
+```azurecli
+az cognitiveservices account list
+```
