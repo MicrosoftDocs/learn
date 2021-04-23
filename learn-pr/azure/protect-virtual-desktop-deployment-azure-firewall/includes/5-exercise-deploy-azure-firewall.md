@@ -58,51 +58,51 @@ TODO: describe the end-state
 
 For production deployments, we recommend a hub and spoke model, where you create the firewall in its own virtual network. Then you peer that virtual network with virtual networks used by your workloads.
 
-To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host is using.
+To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host VM uses.
 
 ## Create a subnet for Azure Firewall
 
-1. Sign into the Azure portal using the same account you used in the previous exercise unit.
-1. Search for or select **Virtual networks**.
-1. Select the virtual network that your session host is using.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise unit.
+1. Search for and select **Virtual networks**.
+1. Select the virtual network that your session host is using (**learn-firewall-rg-vnet** or sandbox rg).
 1. Under **Settings**, select **Subnets** > **+ Subnet** to add a subnet.
 1. Enter the following information for the subnet.
 
     |Field |Value |
     |---------|---------|
     |Name    |  AzureFirewallSubnet    |
-    |Address range     |   10.0.1.0/26      |
+    |Address range     |   10.1.1.0/24      |
 
     Leave the rest of the values as they are.
 1. Select **Save**.
 
 ## Deploy Azure Firewall
 
-[Deploy firewall](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
-
-1. In the Azure portal, search for **Firewalls**.
+1. In the Azure portal, search for and select **Firewalls**.
 1. Select **+ Add** to create a firewall.
 1. Enter the following table to configure the firewall.
 
    |Field |Value  |
    |---------|---------|
-   |Subscription     |\<your subscription\>|
+   |Subscription     |Select your subscription|
    |Resource group     |learn-firewall-rg |
    |Name     |learn-fw|
    |Region     |Select the same location that you used previously|
-   |Firewall management|**Use Firewall rules (classic) to manage this firewall**|
-   |Choose a virtual network     |**Use existing**: **Test-FW-VN**|
-   |Public IP address     |**Add new**<br>**Name**:  **fw-pip**|
+   |Firewall management|Use Firewall rules (classic) to manage this firewall|
+   |Choose a virtual network     |Use existing: learn-firewall-rg-vnet (or sandbox generated)|
+   |Public IP address     |Add new<br>Name:  fw-pip|
 
-5. Accept the other default values, then select **Review + create**.
-6. Review the summary, and then select **Create** to create the firewall.
+    Leave the other field default values.
 
-   This will take a few minutes to deploy.
-7. After deployment completes, go to the **learn-firewall-rg** resource group, and select the **learn-fw** firewall.
-8. Make a note of the firewall private and public IP addresses. You'll use these addresses later.
+1. Select **Review + create** > **Create**.
+1. Wait a few minutes for the firewall to deploy.
+
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
+
+At this point, you have a Firewall deployed within it's own subnet and a public IP address. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
+
+1. After the deployment is complete, select **Go to resource**.
+1. In the center pane, you see the provisioning state **Succeeded**.
+1. From the right-hand side of the center pane, copy the **Firewall private IP address**.
+1. Select **fw-pip** and copy the **IP address**.
