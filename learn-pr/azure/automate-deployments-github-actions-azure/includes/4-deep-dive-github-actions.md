@@ -1,12 +1,12 @@
 GitHub Actions help you automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred. For example, every time someone creates a pull request for a repository, you can automatically run a command that executes a software testing script.
 
-Azure Pipelines is a similar service that automatically builds and tests code projects to make them available to others. It works with just about any language or project type and could be used in place of GitHub Actions in this solution if desired.
+Azure DevOps is a similar service that automatically builds and tests code projects to make them available to others. It works with just about any language or project type and could be used in place of GitHub Actions in this solution if desired.
 
-## Brief review of CI/CD
+## Brief review of DevOps and CI/CD
 
-Continuous Integration (CI) is the practice used by development teams to automate the merging and testing of code. Implementing CI helps to catch bugs early in the development cycle, which makes them less expensive to fix. Automated tests execute as part of the CI process to ensure quality. Artifacts are produced from CI systems and fed to release processes to drive frequent deployments. T
+DevOps is a combination of development (Dev) and operations (Ops). DevOps is the union of people, process, and technology to continually provide value to customers. Teams that adopt DevOps culture, practices, and tools become high-performing: building better products faster for greater customer satisfaction.
 
-Continuous Delivery (CD) is a process by which code is built, tested, and deployed to one or more test and production environments. Deploying and testing in multiple environments drives quality. CI systems produce the deployable artifacts including infrastructure and apps. Automated release processes consume these artifacts to release new versions and fixes to existing systems.
+A Continuous Integration and Continuous Delivery (CI/CD) pipeline is the backbone of a DevOps environment, and most Azure resources can be fully integrated with any CI/CD tool you choose. Two of the most common and widely tools used in Azure are GitHub Actions and Azure DevOps.
 
 ## CI/CD and catching the bus
 

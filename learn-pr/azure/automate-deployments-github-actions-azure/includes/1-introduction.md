@@ -1,4 +1,4 @@
-Building serverless, full-stack applications are greatly simplified in Azure due to the number of serverless services and the integrations that exist between them. Doing all this with CI/CD in mind is easy with the support and integration of GitHub Actions and Azure Pipelines.
+Building serverless, full-stack applications are greatly simplified in Azure due to the number of serverless services and the integrations that exist between them. Doing all this with CI/CD in mind is easy with the support and integration of GitHub Actions and Azure DevOps.
 
 ## Catching the bus
 
