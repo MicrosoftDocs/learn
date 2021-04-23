@@ -1,6 +1,6 @@
 Within an Apache Spark Pool, it is possible to configure a fixed size when you disable autoscaling. When you enable autoscale, you can set a minimum and maximum number of nodes in order to control the scale that you'd like. 
 
-Once you have enabled autoscale, Azure Synapse Analytics will monitor the resources of the load, and it will scale the number of nodes up or down. There will be continuouse monitoring depending on CPU usage, pending memory, free CPU, free memory, and the used memory per node when it comes to the metrics involved to make a decision to scale up or down. It checks these metrics every 30 seconds and makes scaling decisions based on the values. There's no extra charge for this feature.
+Once you have enabled autoscale, Azure Synapse Analytics will monitor the resources of the load, and it will scale the number of nodes up or down. There will be continuous monitoring depending on CPU usage, pending memory, free CPU, free memory, and the used memory per node when it comes to the metrics involved to make a decision to scale up or down. It checks these metrics every 30 seconds and makes scaling decisions based on the values. There's no extra charge for this feature.
 
 Below is a table that shows the metrics that autoscale enablement of the Apache Spark Pool within Azure Synapse analytics instance checks and collects:
 
