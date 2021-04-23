@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-data-lake-storage.summary
+uid: learn.introduction-to-azure-data-lake-storagesummary
 title: Summary
 metadata:
   unitType: summary
   title: # user input: module title for browser tab and search results
   description: # user input: a description for site search and SEO
   ms.date: 4/23/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: paulwp
+  ms.author: v-pmcfedries
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: # user input: the estimate time to complete the unit
 content: |
