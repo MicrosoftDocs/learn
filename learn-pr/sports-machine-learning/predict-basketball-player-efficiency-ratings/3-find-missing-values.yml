@@ -4,7 +4,7 @@ metadata:
   title: 'Exercise - Data cleansing part 1 - Find missing values'
   description: Explore the data and discover any missing values to reduce the data size for more accurate insights.
   ms.date: 03/10/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

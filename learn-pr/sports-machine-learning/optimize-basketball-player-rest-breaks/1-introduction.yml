@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.1-introduction
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.1-introduction
 metadata:
   title: Introduction
   description: Introduction
   ms.date: 03/10/2021
-  author: sguthals
+  author: drguthals
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
