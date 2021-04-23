@@ -14,4 +14,4 @@ Move through a couple of pages by using a screen reader. Open a website that has
 
 ## Credits
 
-This module was first published as a lesson in the [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners?azure-portal=true) curriculum by Azure Advocates. The author of the original lesson is Jasmine Greenaway.
+This module was first published as a lesson in the [Web Development for Beginners](https://github.com/microsoft/Web-Dev-For-Beginners?azure-portal=true) curriculum by Azure Advocates. The author of the original lesson is Christopher Harrison.
