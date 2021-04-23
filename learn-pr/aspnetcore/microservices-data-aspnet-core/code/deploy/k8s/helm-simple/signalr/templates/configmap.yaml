@@ -7,4 +7,5 @@ metadata:
     service: signalr
 data:
   # omitted for brevity
-  SignalrStoreConnectionString: basketdata
+  SignalrStoreConnectionString: eshop-redis-202104230000.redis.cache.windows.net:6380,password=[password],ssl=True,abortConnect=False
+  # omitted for brevity

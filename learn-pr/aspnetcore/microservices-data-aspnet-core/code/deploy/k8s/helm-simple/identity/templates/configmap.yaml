@@ -7,6 +7,6 @@ metadata:
     service: identity
 data:
   # omitted for brevity
-  DPConnectionString: basketdata
+  DPConnectionString: eshop-redis-202104230000.redis.cache.windows.net:6380,password=[password],ssl=True,abortConnect=False
   # omitted for brevity
   

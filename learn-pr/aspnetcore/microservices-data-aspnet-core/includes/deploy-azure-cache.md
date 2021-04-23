@@ -49,14 +49,10 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select the **:::no-loc text="CHECKOUT":::** button.
 
-1. Scroll to the bottom of the checkout page. Notice the presence of a discount coupon feature, formed by the following UI elements:
-    * **:::no-loc text="See Available Coupons":::** link
-    * **:::no-loc text="Coupon number":::** text box
-    * **:::no-loc text="APPLY":::** button
-
-    :::image type="content" source="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png" alt-text="Screenshot of the UI elements that make up the discount coupon feature." border="true" lightbox="../../microservices-configuration-aspnet-core/media/4-implement-feature-manager/discount-coupon-elements.png":::
+1. Observe **:::no-loc text=".NET BLUE HOODIE":::** is in the shopping bag.
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
+
 ## Create an Azure Cache for Redis instance
 
 1. Run the following command:
@@ -108,34 +104,7 @@ The following output appears:
 release "eshoplearn-basketdata" uninstalled
 ```
 
-To verify the basket service is no longer functional, run the following command:
-
-```bash
-kubectl get pods
-```
-
-A variation of the following output appears:
-
-```console
-NAME                               READY   STATUS    RESTARTS   AGE
-backgroundtasks-7f9698944d-gt229   1/1     Running   1          39m
-basket-79dc747b57-dtf9f            0/1     Running   1          39m
-catalog-66fccd7459-t4qjq           1/1     Running   3          39m
-coupon-67685b6cd9-7h865            1/1     Running   2          39m
-identity-5d749857fb-tlhzq          1/1     Running   2          38m
-nosqldata-7dc8bc5b69-8nrgw         1/1     Running   0          38m
-ordering-df5b7f6d5-nt6lh           1/1     Running   3          38m
-payment-8484d98c5c-r4klj           1/1     Running   1          38m
-rabbitmq-59b4b7cb67-kd96m          1/1     Running   0          38m
-seq-f499759dd-pwq6f                1/1     Running   0          38m
-signalr-5fbffd8ff4-q5xxl           1/1     Running   0          38m
-sqldata-5659946c-cvv8r             1/1     Running   0          38m
-webshoppingagg-7894bb8545-6c2f5    0/1     Running   0          38m
-webspa-796c77dd7-gxc94             1/1     Running   0          38m
-webstatus-575699d85-xp2m5          1/1     Running   0          38m
-```
-
-Note that the services beginning with `basket-` and `webshoppingagg-` are no longer in a "ready" state.
+To verify the basket service is no longer functional, check the *:::no-loc text="WebStatus":::* dashboard. Note that the **Web Shopping Aggregator GW HTTP Check** and **Basket HTTP Check** checks are failing.
 
 ## Remove in-memory caching from basket service
 
@@ -143,14 +112,31 @@ The in-memory caching currently used in the basket service will be replaced with
 
 In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*, apply the following changes:
 
-1. Delete the following line (use <kbd>Ctrl</kbd>+<kbd>f</kbd> to search):
+1. Find the following line (use <kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>f</kbd> to search):
 
     ```csharp
     services.AddSingleton<IBasketRepository, InMemoryBasketRepository>();
     ```
 
-<!-- TODO: finish writing these steps -->
+    Replace it with the following:
 
+    ```csharp
+    services.AddTransient<IBasketRepository, RedisBasketRepository>();
+    ```
+
+    The preceding code: **TODO**
+
+1. Replace the `// Add the ConnectionMultiplexer code...` comment with
+
+    ```csharp
+    services.AddSingleton<ConnectionMultiplexer>(sp =>
+    {
+        var settings = sp.GetRequiredService<IOptions<BasketSettings>>().Value;
+        return ConnectionMultiplexer.Connect(settings.ConnectionString);
+    });  
+    ```
+
+    The preceding code: **TODO**
 
 ## Reconfigure the affected projects
 
@@ -161,17 +147,17 @@ Update the ConfigMap files for the following projects that are using Redis:
 - SignalR service
 - WebSPA app
 
-In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory.
+In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory:
 
 ### Reconfigure the basket service
 
-In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from `basketdata` to the connection string from the creation script:
+In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
 Save your changes.
 
-At runtime, the connection string will be provided to the basket service as an environment variable. Within the code, the connection string is used by code in the following locations:
+At runtime, the connection string will be provided to the basket service as an environment variable. Within the code, the connection string is used by code in the following locations, illustrated below:
 
 *src/Services/Basket/Basket.API/Startup.cs*
 
@@ -187,7 +173,7 @@ At runtime, the connection string will be provided to the basket service as an e
 
 ### Reconfigure the identity service
 
-In *identity/templates/configmap.yaml*, update the `DPConnectionString` key's value to the connection string:
+In *identity/templates/configmap.yaml*, replace the the `DPConnectionString` key's value with the connection string, as in the following example:
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/identity/templates/configmap.yaml" highlight="10":::
 
@@ -197,7 +183,7 @@ The connection string is used in the `ConfigureServices` method of *src/Services
 
 ### Reconfigure the SignalR service
 
-In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value to the connection string:
+In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value to the connection string, as in the following example::
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
 
@@ -207,7 +193,7 @@ The connection string is used in the `ConfigureServices` method of *src/Services
 
 ### Reconfigure the WebSPA app
 
-In *webspa/templates/configmap.yaml*, update the `DPConnectionString` key's value to the connection string:
+In *webspa/templates/configmap.yaml*, update the `DPConnectionString` key's value to the connection string, as in the following example::
 
 :::code language="yaml" source="../code/deploy/k8s/helm-simple/webspa/templates/configmap.yaml" highlight="10":::
 
@@ -232,29 +218,33 @@ To deploy the updated *:::no-loc text="basket":::* service, build and publish a 
     > [!IMPORTANT]
     > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
 
-1. Run the following script to deploy the updated *:::no-loc text="WebSPA":::* app to AKS:
+1. Run the following script to deploy the updated *:::no-loc text="basket":::* service to AKS:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts webspa
+    deploy/k8s/deploy-application.sh --charts basket
     ```
 
-    The preceding script uses Helm to deploy the *:::no-loc text="WebSPA":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
+    The preceding script uses Helm to deploy the *:::no-loc text="basket":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the SPA's pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
     webspa-64786f994f-5fz7m           0/1     Terminating         0          22m
     webspa-84fb8f987-df8hk            0/1     ContainerCreating   0          1s
     ```
-You need to get the load balancer's IP address from the initial deployment. You can save it to an environment variable by running the following command:
 
-```bash
-eval $(cat ~/clouddrive/aspnet-learn/deploy-application-exports.txt)
-```
+1. Redeploy the *:::no-loc text="identity":::*, *:::no-loc text="signalr":::*, and *:::no-loc text="WebSPA":::* services configured with their new environment variables:
 
-Then just run the following script:
+    ```bash
+    ./deploy-application.sh --charts identity,signalr,webspa --registry eshopdev
+    ```
 
-```bash
-./deploy-application.sh --charts basket,identity,signalr,webspa
-```
+    Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the original images, and not your ACR instance. As in the previous step, the `kubectl get pods` command is executed:
 
-After a few minutes, when you see all services running in the *WebStatus* dashboard, run the app as you did before deleting the `basketdata` service to confirm it's working.
+    ```console
+    NAME                              READY   STATUS              RESTARTS   AGE
+    identity-676645fcf5-t9687         1/1     Running             0          25s
+    signalr-5486795b4f-qkgv7          0/1     Running             0          20s
+    webspa-67588b748-25mx             0/1     ContainerCreating   0          1s
+    ```
+
+When all the health checks return to a healthy status, sign out of run the app, then refresh your browser. Test the application as before to validate your changes were successful.

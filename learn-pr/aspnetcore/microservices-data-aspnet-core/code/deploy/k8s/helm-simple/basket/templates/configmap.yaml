@@ -7,5 +7,5 @@ metadata:
     service: basket
 data:
   # omitted for brevity
-  ConnectionString: basketdata
+  ConnectionString: eshop-redis-202104230000.redis.cache.windows.net:6380,password=[password],ssl=True,abortConnect=False
   # omitted for brevity
