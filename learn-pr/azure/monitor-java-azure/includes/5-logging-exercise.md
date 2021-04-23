@@ -21,7 +21,7 @@ If an app named customers-service has only one instance, you can view the log of
 az spring-cloud app logs -n customers-service
 ```
 
-This will return logs:
+This command will return logs:
 
 ```output
 ...
@@ -84,7 +84,7 @@ After your application is properly set up, your application console log will be 
 
 Using the diagnostics functionality of Azure Spring Cloud, you can analyze logs and metrics with any of the following services:
 
-* Use Azure Log Analytics, where the data is written to Azure Storage. There is a delay when exporting logs to Log Analytics.
+* Use Azure Log Analytics, where the data is written to Azure Storage. There's a delay when exporting logs to Log Analytics.
 * Save logs to a storage account  for auditing or manual inspection. You can specify the retention time (in days).
 * Stream logs to your event hub for ingestion by a third-party service or custom analytics solution.
 
@@ -117,7 +117,7 @@ Choose the log category and metric category you want to monitor.
 
 There are various methods to view logs and metrics as described under the following headings.
 
-### Use the Logs blade
+### Use the Log Search
 
 1. In the Azure portal, go to your Azure Spring Cloud instance.
 1. To open the **Log Search** pane, select **Logs**.
@@ -145,14 +145,14 @@ There are various methods to view logs and metrics as described under the follow
 1. To open the **Log Search** pane, select **Logs**.
 1. In the **Tables** search box,
 
-   * to view logs, enter a simple query such as:
+   * to view logs, enter a query such as:
 
     ```sql
     AppPlatformLogsforSpring
     | limit 50
     ```
 
-    * to view metrics, enter a simple query such as:
+    * to view metrics, enter a query such as:
 
     ```sql
     AzureMetrics
@@ -170,7 +170,7 @@ There are various methods to view logs and metrics as described under the follow
 
 ## Analyze the logs
 
-Application logs provide critical information and verbose logs about your application's health, performance, and more. In the next sections are some simple queries to help you understand your application's current and past states.
+Application logs provide critical information and verbose logs about your application's health, performance, and more. In the next sections are some  queries to help you understand your application's current and past states.
 
 ### Show application logs from Azure Spring Cloud
 
