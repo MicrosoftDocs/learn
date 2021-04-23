@@ -16,4 +16,4 @@ Tailwind Traders is using Azure to power their innovation engine in multiple way
 
 ## Next steps
 
-Read the [Cloud innovation in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/) documentation for more detailed information about the topics described in this module.
+Read the [Cloud innovation in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate?azure-portal=true) documentation for more detailed information about the topics described in this module.

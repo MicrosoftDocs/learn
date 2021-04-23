@@ -13,7 +13,7 @@ Innovation can be described as a hypothesis-based, iterative cycle. Upon identif
 
 After defining a problem in a measurable way, hypothesis can be formulated that are candidates to explaining and solving the problem. For example, a hypothesis in Tailwind Traders could be described as, "Adding ContosoPay to our supported payment platforms would decrease customer churn at the payment page from 23% to 10%". Now there is an idea on the table, and it is a matter of verifying its validity.
 
-Note that hypotheses should focus on adding value to customers, and hence improving their experience in their interactions with your organization. That is often known as "customer empathy": placing your customer at the center of your innovation, and primarily focusing on increasing value for them, and to you.
+Hypotheses should focus on adding value to customers, and hence improving their experience in their interactions with your organization. That is often known as "customer empathy": placing your customer at the center of your innovation, and primarily focusing on increasing value for them, and to you.
 
 There are many ways of validating a hypothesis without actually touching application code: customer surveys and market research are two examples of valuable information sources that can help to decide the validity of certain hypothesis. Checking these sources will allow to qualify your hypothesis, and actually build those with highest likelihood of accuracy and added business value.
 
@@ -35,4 +35,4 @@ It is important realizing that even if your hypothesis and assumptions were wron
 
 ## Where to look next
 
-The [Innovation Overview of the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/) is the best document to begin your exploration of how to innovate.
+The [Innovation Overview of the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate?azure-portal=true) is the best document to begin your exploration of how to innovate.
