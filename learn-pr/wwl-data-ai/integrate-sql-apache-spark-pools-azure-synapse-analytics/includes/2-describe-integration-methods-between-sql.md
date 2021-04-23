@@ -11,7 +11,7 @@ The Azure Synapse Apache Spark to Synapse SQL connector is designed to efficient
 
 In the existing approach, you often see the use of the JavaDataBaseConnectivity (JDBC) Application Programming Interface (API). The JDBC API opens the connection, filters, and applies projections, and Apache Spark reads the data serially. Given that two distributed systems such as Apache Spark and SQL pools are being used, using the JDBC API becomes a bottleneck with serial transfer of data.
 
-![Design SQL Apache Spark Integration](../media/existing-sql-spark-integration.png)
+![Existing SQL Apache Spark Integration](../media/existing-sql-spark-integration.png)
 
 Therefore, a new approach is to use both JDBC and PolyBase. First, the JDBC opens a connection and issues Create External Tables As Select (CETAS) statements and sends filters and projections. The filters and projections are then applied to the data warehouse and exports the data in parallel using PolyBase. Apache Spark reads the data in parallel based on the user-provisioned workspace and the default data lake storage.
 
