@@ -1,4 +1,4 @@
-Two of the most common components on any webpage are linkes and images. These items have a profound impact on accessibility. Ensuring good link text and alt text is one of the first actionable steps that you can take to improve your pages for all users.
+Two of the most common components on any webpage are links and images. These items have a profound impact on accessibility. Ensuring good link text and alt text is one of the first actionable steps that you can take to improve your pages for all users.
 
 ## Link text
 
@@ -34,7 +34,7 @@ Imagine the following product page:
 | Widget       | `[Description]('#')` | `[Order]('#')` |
 | Super widget | `[Description]('#')` | `[Order]('#')` |
 
-This is a pretty common layout for a page that shows information about various items in a table, with links to the description and order. Duplicating the text of description and order make sense for someone who's using a browser. However, someone who's using a screen reader would only hear the words *description* and *order* repeated without context.
+This is a common layout for a page that shows information about various items in a table, with links to the description and order. Duplicating the text of description and order make sense for someone who's using a browser. However, someone who's using a screen reader would only hear the words *description* and *order* repeated without context.
 
 To support these types of scenarios, HTML supports a set of attributes known as [Accessible Rich Internet Applications (ARIA)](https://developer.mozilla.org/docs/Web/Accessibility/ARIA). You can use these attributes to provide more information to screen readers. 
 

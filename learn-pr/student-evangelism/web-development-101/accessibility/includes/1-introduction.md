@@ -2,7 +2,7 @@ Ensuring that your webpage is accessible to all users and all clients is critica
 
 As a burgeoning web developer, you believe that learning how to ensure that your pages are accessible early on is important. It's always easier to build a page to be accessible than it is to retrofit it later. If you learn these skills when you first start down the path, they'll become natural. You can then create accessible pages and spot potential pitfalls.
 
-In this module, you'll learn:
+In this module, you'll learn about:
 
 - Tools that users use to browse through webpages.
 - Tools that developers use to ensure accessibility.
