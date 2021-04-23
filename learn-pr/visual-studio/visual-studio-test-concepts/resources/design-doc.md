@@ -49,9 +49,7 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
-
-    *Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)*
+    There are many reasons you may be interested in starting testing.Perhaps your manager/mentor/professor just asked you to add tests to your code. Maybe your company is interested in improving code quality and catching bugs faster. Maybe another developer asked what your code coverage is like in a discussion on code quality. Maybe the behavior of your app is growing quickly and you need a formal way to capture and check all functionality as your project continues to scale. This learning module will cover why we test and a brief introduction to testing software best practices. We'll go over different types of testing starting at the most fundamental level, unit tests. We'll also touch on various schools of thought around testing. There are limitless testing technologies out there, but no matter your language or software stack, this guidance should help you to get a grasp of the basic concepts and help you avoid common pitfalls.
 
 1. **Learning-content unit title**
 
