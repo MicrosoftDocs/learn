@@ -4,16 +4,16 @@ GitHub Actions is a powerful feature that empowers you to go from code to cloud 
 
 :::image type="content" source="../media/action-types.png" alt-text="Image that displays the three types of GitHub Actions; Docker, JavaScript, and composite run step actions." border="false":::
 
-Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks or by using actions shared by the GitHub community. Navigating through various actions you'll notice that there are three different types of actions: Docker container actions, JavaScript actions, and composite run steps actions. Let's take a closer look at each action type.
+Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks or by using actions shared by the GitHub community. Navigating through various actions you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
 
 ### Docker container actions
 
-Docker containers package the environment with the GitHub Actions code. This means that the action runs in a consistent and reliable environment because all of its dependencies are within that container. If the action needs to run in a specific environment configuration, then Docker containers are a good way to go because you can customize the operating system and tools. The downside is that because the job has to build and retrieve the container, Docker container actions are slower than JavaScript actions.
+Docker containers package the environment with the GitHub Actions code. This means that the action runs in a consistent and reliable environment because all of its dependencies are within that container. If the action needs to run in a specific environment configuration, then Docker containers are a good way to go because you can customize the operating system and tools. The downside is that because the job has to build and retrieve the container, Docker container actions are often slower than JavaScript actions.
 
 Before building a Docker container action, you should have some basic understanding of how to use environment variables and the Docker container filesystem. The steps to take to build a Docker container action are then minimal and straightforward:
 
 1. Create a `Dockerfile` to define the commands to assemble the Docker image.
-2. Create an `action.yml` metadata file to define the inputs and outputs of the action. Set the `runs: using:` keyword to `docker` and the `runs: image:` keyword to `Dockerfile` in the file.
+2. Create an `action.yml` metadata file to define the inputs and outputs of the action. Set the `runs: using:` value to `docker` and the `runs: image:` value to `Dockerfile` in the file.
 3. Create an `entrypoint.sh` file to describe the docker image.
 4. Commit and push your action to GitHub with the following files: `action.yml`, `entrypoint.sh`, `Dockerfile`, and `README.md`.
 
@@ -186,3 +186,4 @@ This text spans%0Aacross multiple lines
 ```
 
 In addition to workflow commands, you can set exit codes to set the status of an action. This is important because when you're working with jobs in a workflow, a failed exit code will halt all concurrent actions and cancel any future actions. If you are creating a JavaScript action, you can use the actions toolkit `@actions/core` package to log a message and set a failure exit code. If you are creating a Docker container action, you can set a failure exit code in your `entrypoint.sh` script.
+

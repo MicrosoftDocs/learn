@@ -25,7 +25,7 @@ quiz:
       explanation: "Run steps execute terminal commands within a runner."
     - content: "Docker container action"
       isCorrect: true
-      explanation: "Correct! Actions written in a language other than JavaScript must be placed inside of a Docker container."
+      explanation: "Actions written in a language other than JavaScript must be placed inside of a Docker container."
     - content: "Bash script"
       isCorrect: false
       explanation: "Bash scripts would either need to be run in Docker or as a parameter to a Run step."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Composite is not a required keyword for a valid `action.yml` file."
     - content: "name, runs, description"
       isCorrect: true
-      explanation: "Correct! These are the 3 required keywords for a valid `action.yml` file."
+      explanation: "These are the 3 required keywords for a valid `action.yml` file."
     - content: "name, description, branding"
       isCorrect: false
       explanation: "Branding is not a required keyword for a valid `action.yml` file."
@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: echo "::error::This is an error message"
       isCorrect: true
-      explanation: "Correct! This is the correct syntax for this workflow command."
+      explanation: "This is the correct syntax for this workflow command."
     - content: echo "error=This is an error message"
       isCorrect: false
       explanation: "This is improper syntax for a workflow command."
