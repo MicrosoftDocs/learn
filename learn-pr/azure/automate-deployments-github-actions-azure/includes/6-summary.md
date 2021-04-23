@@ -10,8 +10,8 @@ Throughout the module and the learning path, you learned how:
 
 ## References
 
-* [Catch the bus GitHub sample](aka.ms/catchthebus)
-* [Azure SQL fundamentals learning path](aka.ms/azuresqlfundamentals)
-* [Data Exposed (live and on-demand Azure Data-related series)](aka.ms/azuresqlyt)
-* [Azure SQL Database for Modern Developers (book)](aka.ms/azuresqlfordevelopers)
+* [Catch the bus GitHub sample](https://aka.ms/catchthebus)
+* [Azure SQL fundamentals learning path](https://aka.ms/azuresqlfundamentals)
+* [Data Exposed (live and on-demand Azure Data-related series)](https://aka.ms/azuresqlyt)
+* [Azure SQL Database for Modern Developers (book)](https://aka.ms/azuresqlfordevelopers)
 * [Azure SQL Developer Blog](https://devblogs.microsoft.com/azure-sql/)
