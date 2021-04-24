@@ -55,7 +55,7 @@ param appServiceAppName string = 'toy-product-launch-1'
 
 After you've declared a parameter, you can refer to it throughout the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
-:::code language="bicep" source="code/5-parameter-value.bicep" highlight="2":::
+:::code language="plaintext" source="code/5-parameter-value.bicep" highlight="2":::
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
@@ -98,7 +98,7 @@ If someone is deploying this template, they might choose to override the default
 
 You can now use the resource location parameter inside the template, like this:
 
-:::code language="bicep" source="code/5-variable-value.bicep" highlight="3":::
+:::code language="plaintext" source="code/5-variable-value.bicep" highlight="3":::
 
 ### Resource names
 
