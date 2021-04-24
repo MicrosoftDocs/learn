@@ -6,6 +6,8 @@ In the bus-catching scenario, an Azure Function will be used to do the data coll
 
 Azure Logic Apps allows you to automate and orchestrate tasks and workflows when you want to integrate apps, data, systems, and services across organizations. Azure Logic Apps is designed in a web-based designer and can execute logic without writing any code.
 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qhug]
+
 When comparing Azure Logic Apps and Azure Functions, besides Azure Logic Apps being low-code/no-code and Azure Functions being code-based, the primary difference is intent. Azure Functions is a serverless compute service, and Azure Logic Apps is intended to be a serverless orchestration service. You can call Azure Functions from Azure Logic Apps, and vice versa.
 
 ## Azure Logic Apps connectors
