@@ -121,12 +121,12 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
 units:
-- learn.introduction-to-azure-data-lake-storage.introduction
-- learn.introduction-to-azure-data-lake-storage.what-is-{product}
-- learn.introduction-to-azure-data-lake-storage.how-{product}-works
-- learn.introduction-to-azure-data-lake-storage.when-to-use-{product}
-- learn.introduction-to-azure-data-lake-storage.knowledge-check
-- learn.introduction-to-azure-data-lake-storage.summary
+- learn.introduction-to-azure-data-lake-storage.1-introduction
+- learn.introduction-to-azure-data-lake-storage.2-what-is-azure-data-lake-storage
+- learn.introduction-to-azure-data-lake-storage.3-how-azure-data-lake-storage-works
+- learn.introduction-to-azure-data-lake-storage.4-when-to-use-azure-data-lake-storage
+- learn.introduction-to-azure-data-lake-storage.5-knowledge-check
+- learn.introduction-to-azure-data-lake-storage.6-summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
