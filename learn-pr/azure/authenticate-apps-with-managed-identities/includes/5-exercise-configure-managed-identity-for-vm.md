@@ -1,6 +1,6 @@
 The VM that hosts your app has been deployed in Azure. You now need to enable a managed identity in the company's Azure subscription. The idea is to allow your stock-tracking app to access the Azure resources that it needs.
 
-In this unit, you'll create a system-assigned managed identity for your virtual machine. You'll see how to access Azure resources from inside the identity.
+In this unit, you'll create a system-assigned managed identity for your VM. You'll see how to access Azure resources from inside the identity.
 
 ## Set up the environment
 
@@ -78,17 +78,14 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
 
     At the prompt, type *yes*.
 
-1. For the next exercise, install .NET Core on the VM.
+1. For the next exercise, download and install the .NET Core version on the VM that will be used by the module's sample app.
 
     ```bash
-    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-    sudo dpkg -i packages-microsoft-prod.deb
-    sudo add-apt-repository universe
-    sudo apt-get update
-    sudo apt-get install apt-transport-https
-    sudo apt-get update
-    sudo apt-get install dotnet-sdk-3.1
+    sudo snap install dotnet-sdk --classic --channel=3.1
     ```
+
+    > [!NOTE]
+    > Installing the .NET Core SDK can take a few minutes to complete.
 
 1. Download the source code for this module's sample app.
 

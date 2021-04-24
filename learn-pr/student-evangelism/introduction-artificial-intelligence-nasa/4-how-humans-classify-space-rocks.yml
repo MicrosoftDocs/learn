@@ -1,11 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: >-
-  learn.student-evangelism.introduction-artificial-intelligence-nasa.4-how-humans-classify-space-rocks
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.4-how-humans-classify-space-rocks
 metadata:
   title: Classify space rocks like a human
   description: Learn about the process humans commonly use to classify things.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 04/11/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

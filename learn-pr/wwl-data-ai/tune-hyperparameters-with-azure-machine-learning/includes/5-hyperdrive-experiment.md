@@ -89,7 +89,7 @@ for child_run in run.get_children():
 You can also list all runs in descending order of performance like this:
 
 ```python
-for child_run in hyperdrive_.get_children_sorted_by_primary_metric():
+for child_run in hyperdrive_run.get_children_sorted_by_primary_metric():
     print(child_run)
 ```
 

@@ -42,4 +42,4 @@ When any attributes of a user or device change, the system evaluates all dynamic
 
 Monitoring privileged access is a key part of identity governance. When employees, vendors, and contractors are assigned administrative rights, there should be a governance process because of the potential for misuse.
 
-Azure AD Privileged Identity Management (PIM), provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.
+Azure AD Privileged Identity Management (PIM), provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Azure AD Premium P2.

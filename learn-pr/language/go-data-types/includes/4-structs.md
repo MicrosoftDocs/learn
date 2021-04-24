@@ -144,7 +144,7 @@ func main() {
             FirstName: "John",
         },
     }
-    employee.LastName = Doe
+    employee.LastName = "Doe"
     fmt.Println(employee.FirstName)
 }
 ```

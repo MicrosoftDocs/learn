@@ -2,7 +2,7 @@ You may work in an organization where much of the transformation logic is curren
 
 ## Azure-SSIS integration runtime
 
-In order to make use of the Azure-SSIS integration runtime, it is assumed that there is SSIS Catalog (SSISDD) deployed on a SQL Server SSIS instance. With that prerequisite met, the Azure-SSIS integration runtime is capable of:
+In order to make use of the Azure-SSIS integration runtime, it is assumed that there is SSIS Catalog (SSISDB) deployed on a SQL Server SSIS instance. With that prerequisite met, the Azure-SSIS integration runtime is capable of:
 
 - Lift and shift existing SSIS workloads
 
@@ -128,7 +128,7 @@ The alternative approach is to:
 
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration runtimes** page and select **Refresh**.
 
-    ![New linked service page](../media/linked-service-page.png)
+    ![Linked service page](../media/linked-service-page.png)
 
 
 

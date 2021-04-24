@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2021
+  ms.date: 03/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
@@ -49,7 +49,7 @@ quiz:
     - content: "They should use the Azure Cloud Succeed Framework."
       isCorrect: false
       explanation: "This option doesn't exist. Instead, use the Cloud Adoption Framework.​​​"
-  - content: "Within an organization there are many users who will need to access Azure, and perform different actions across various scopes. The admin wants implement action management at all scopes across Azure for the organization. What can the admin use to address this need?"
+  - content: "Within an organization, there are many users who will need to access Azure and perform different actions across various scopes. The admin wants to implement action management at all scopes across Azure for the organization. What can the admin use to address this need?"
     choices:
     - content: "Use Azure role-based access control (RBAC)"
       isCorrect: true

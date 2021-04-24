@@ -1,6 +1,6 @@
 The TypeScript compiler assumes, by default, that all parameters defined in a function are required. When a function is called, the TypeScript compiler verifies:
 
-- A value as been provided for each parameter.
+- A value has been provided for each parameter.
 - Only parameters that the function requires are passed to it.
 - The parameters are passed in the order in which they are defined in the function.
 
@@ -45,7 +45,7 @@ You can also assign default values to optional parameters. If a value is passed 
 In this example, `x` is required and `y` is optional. If value is not passed to `y`, the default value is `25`.
 
 ```typescript
-function addNumbers (x: number, y: 25): number {
+function addNumbers (x: number, y = 25): number {
    return x + y;
 }
 

@@ -63,7 +63,7 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Expand the **content** permissions.
 
-1. Select **Content.DeletegratedReader** and **Content.DelegatedWriter.**
+1. Select **Content.DelegatedReader** and **Content.DelegatedWriter.**
 
 1. Select **Add Permission.**
 

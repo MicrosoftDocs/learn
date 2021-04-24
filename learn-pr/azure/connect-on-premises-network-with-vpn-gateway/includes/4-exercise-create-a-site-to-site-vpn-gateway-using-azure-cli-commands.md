@@ -74,7 +74,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --no-wait
     ```
 
-1. Gateway creation will take several minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which enables you to monitor the progress.
+1. Gateway creation takes approximately 30+ minutes to complete. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which enables you to monitor the progress.
 
     ```azurecli
     watch -d -n 5 az network vnet-gateway list \
@@ -94,14 +94,13 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 ## Update the local network gateway IP references
 
 > [!IMPORTANT]
-> Your virtual network gateways must be successfully deployed before you start the next exercise.
+> Your virtual network gateways must be successfully deployed before you start the next exercise. A gateway can take up to 30+ minutes to complete. If the ProvisioningState does not show "Succeeded" yet, you need to wait.
 
-In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them. Use the following Azure CLI command to check whether both virtual network gateways have been created.
+In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them. Use the following Azure CLI command to check whether both virtual network gateways have been created.  The initial state will show **Updating**.  You want to see **Succeeded** on both VNG-Azure-VNet-1 and VNG-HQ-Network.
 
 ```azurecli
 az network vnet-gateway list \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --query "[?provisioningState=='Succeeded']" \
     --output table
 ```
 

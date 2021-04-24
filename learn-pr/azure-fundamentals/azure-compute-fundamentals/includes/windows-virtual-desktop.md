@@ -10,7 +10,7 @@ Windows Virtual Desktop on Azure is a desktop and application virtualization ser
 
 The following video gives you an overview of Windows Virtual Desktop.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LRpC]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LRpC]
 
 ## Why should you use Windows Virtual Desktop?
 

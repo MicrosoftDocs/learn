@@ -53,7 +53,7 @@ For your credit-checking web service, you want to use hybrid connections, not Wi
 
 1. In the Azure portal, from the upper left top pathway, select the relay you created earlier.
 
-1. In the left menu pane, under **Entities**, select **Hybrid Connections**, and from the upper menu bar, select **Hybrid Connection**. The **Create Hybrid Connection** panel appears.
+1. Select **Hybrid Connections**. The **Create Hybrid Connection** panel appears.
 
 1. In the **Name** box, enter **creditcheckconnection**. Leave **Requires Client Authentication** selected, and then select **Create**.
 

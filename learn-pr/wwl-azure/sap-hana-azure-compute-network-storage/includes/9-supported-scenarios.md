@@ -1,3 +1,5 @@
+## Supported HLI scenarios
+
 The HANA Large Instances support a variety architectural patterns to account for a wide range of business requirements. The supported scenarios include:
 
 * **Single node with one SID**- This topology supports one node in a scale up configuration with one SID. 
@@ -8,11 +10,11 @@ The HANA Large Instances support a variety architectural patterns to account for
 
 * **Single node with DR (Multipurpose)** - This topology supports one node in a scale up configuration with one or multiple SIDs with the storage-based replication to the DR site for a primary SID. At the DR site, HLI unit is used for QA instance while production operations are running from the primary site. At the time of DR failover (or failover test), QA instance at DR site is taken down.
 
-* **HSR with STONITH** - This topology support two nodes for the HANA System Replication (HSR) configuration. This configuration is only supported for single HANA instances on a node, which means that MCOS scenarios are not supported. At the time of authoring this course, this architecture is available only on Linux SUSE.
+* **HSR with STONITH** - This topology supports two nodes for the HANA System Replication (HSR) configuration. This configuration is only supported for single HANA instances on a node, which means that MCOS scenarios are not supported. At the time of authoring this course, this architecture is available only on Linux SUSE.
 
-* **HSR with DR (Normal / Multipurpose)** - This topology support two nodes for the HANA System Replication (HSR) configuration. Both the normal and multipurpose DR is supported. These configurations are only supported for single HANA instances on a node, which means that MCOS scenarios are not supported.
+* **HSR with DR (Normal / Multipurpose)** - This topology supports two nodes for the HANA System Replication (HSR) configuration. Both the normal and multipurpose DR is supported. These configurations are only supported for single HANA instances on a node, which means that MCOS scenarios are not supported.
 
-* **Host auto failover (1+1)** - This topology supports two nodes in a host auto failover configuration. There is one node with master/worker role and other as a standby. SAP Supports this scenario only for S/4 HANA. For details, refer to OSS note “2408419 - SAP S/4HANA - Multi-Node Support” 
+* **Host auto failover (1+1)** - This topology supports two nodes in a host auto failover configuration. There is one node with master/worker role and other as a standby. SAP Supports this scenario only for S/4HANA. For details, refer to OSS note “2408419 - SAP S/4HANA - Multi-Node Support” 
 
 * **Scale-out with standby** - This topology supports multiple nodes in a scale-out configuration. There is one node with master role, one or more nodes with worker role, and one or more nodes as standby.
 

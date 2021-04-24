@@ -10,7 +10,7 @@ Azure AD B2C is a service that you use to manage customer identities and their a
 
 ### Configure user journeys by using policies
 
-A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account or update their profile. You use policies in Azure AD B2C to configure user journeys. Policies help you detail journeys like profile creation, sign-in, or account editing for users. Azure AD B2C comes with preconfigured policies called *user flows* that control how people interact with your application.
+A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account, or update their profile. You use policies in Azure AD B2C to configure user journeys. Policies help you detail journeys like profile creation, sign-in, or account editing for users. Azure AD B2C comes with preconfigured policies called *user flows* that control how people interact with your application.
 
 User flows are used to configure:
 
@@ -36,7 +36,7 @@ Azure AD B2C also supports industry-standard OAuth 2.0 and OpenID Connect authen
 
 Use identity providers to let users sign in by using their social identities, such as a Microsoft account, Facebook, Twitter, or LinkedIn.
 
-You'll need to choose the identity providers that you want for your application. You can create your own identity provider, or choose from the list:
+You'll need to choose the identity providers that you want for your application. You can create your own identity provider, or choose from the list.
 
 ![List of identity providers](../media/2-identity-providers.png)
 
@@ -44,7 +44,7 @@ You'll need to choose the identity providers that you want for your application.
 
 You can change the look of the pages in your user flow. Write your own HTML and CSS or use built-in templates called *page layout templates*.
 
-You enable different page-layout templates in the Azure portal. Go to your user flow and select the template you want, as shown in the following screenshot. The template will be applied automatically.
+You enable different page layout templates in the Azure portal. Go to your user flow and select the template you want, as shown in the following screenshot. The template will be applied automatically.
 
 ![Set a page-layout template](../media/2-set-template.png)
 

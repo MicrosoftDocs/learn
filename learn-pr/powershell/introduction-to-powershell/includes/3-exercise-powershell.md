@@ -1,6 +1,8 @@
-To make sure your system is set up to work in PowerShell, run a command to verify your installation.  
+In this unit, you use Azure Cloud Shell on the right as your Linux terminal. You can access Cloud Shell through the Azure portal or at the [Cloud Shell sign-in](https://shell.azure.com). You don't have to install anything on your PC or laptop to use it.
 
-1. Type `$PSVersionTable` and then press Enter.
+To make sure your system is set up to work in PowerShell, run a command to verify your installation.
+
+1. Enter `$PSVersionTable`, and then select the **Enter** key.
 
    ```powershell
    $PSVersionTable
@@ -22,11 +24,11 @@ To make sure your system is set up to work in PowerShell, run a command to verif
     WSManStackVersion              3.0
    ```
 
-   The output is formatted as a table. It provides information about not only your version of PowerShell but also your platform and edition. 
+   The output is formatted as a table. It provides information about your version of PowerShell and also your platform and edition.
 
     For more information about your version of PowerShell, you can run a modified version of `$PSVersionTable`.
 
-1. Type `$PSVersionTable.PSVersion` and then press Enter.
+1. Enter `$PSVersionTable.PSVersion`, and then select the **Enter** key.
 
    ```powershell
    $PSVersionTable.PSVersion
@@ -40,6 +42,6 @@ To make sure your system is set up to work in PowerShell, run a command to verif
     7      0      3  
     ```
 
-    This output gives you more details about your version of PowerShell. 
+    This output gives you more details about your version of PowerShell.
 
-Notice that running `$PSVersionTable` results in output that looks like a table but is actually an object. So you can use a dot (`.`) to access a specific property like `PSVersion`.
+Running `$PSVersionTable` results in output that looks like a table but is actually an object. For this reason, you can use a period (`.`) to access a specific property like `PSVersion`.

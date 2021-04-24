@@ -1,20 +1,20 @@
-Learn how to ingest data using Apache Spark Notebooks in Azure Synapse Analytics.
+In this module, you will learn how to ingest data using Apache Spark notebooks in Azure Synapse Analytics.
 
 After completing this module, you will be able to:
 
-* Understand spark notebooks
-* Understand the use-cases for spark notebooks
-* Create a spark notebook in Azure Synapse Analytics
-* Discover supported languages in spark notebooks
-* Develop spark notebooks
-* Run spark notebooks
-* Load data in spark notebooks
-* Save spark notebooks
+* Understand Apache Spark notebooks
+* Understand the use-cases for Apache Spark notebooks
+* Create an Apache Spark notebook in Azure Synapse Analytics
+* Understand the supported languages in Apache Spark notebooks
+* Develop Apache Spark notebooks
+* Run Apache Spark notebooks
+* Load data into Apache Spark notebooks
+* Save Apache Spark notebooks
 
-## Prerequisite
+## Prerequisites
 
-Before taking this module, it is recommended that you complete the following modules:
+Before taking this module, it is recommended that you complete the following Microsoft Learn content:
 
-* Data Fundamentals
+* Azure Data Fundamentals
 * Introduction to Azure Data Factory
 * Introduction to Azure Synapse Analytics
