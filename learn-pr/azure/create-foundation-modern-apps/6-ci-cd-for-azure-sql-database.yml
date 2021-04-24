@@ -12,3 +12,34 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-ci-cd-for-azure-sql-database.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Which of the following approaches is not an approach for CI/CD in Azure SQL Database?"
+      choices:
+      - content: "Desired State"
+        isCorrect: false
+        explanation: "This approach was discussed."
+      - content: "Code First Migrations"
+        isCorrect: false
+        explanation: "This approach was discussed."
+      - content: "Data DevOps"
+        isCorrect: true
+        explanation: "That's correct, this is the overall topic, but not a specific approach."
+      - content: "Custom Scripts"
+        isCorrect: false
+        explanation: "This approach was discussed."
+    - content: "DevOps was defined as the union of three things. Which of the following options was not one of them?"
+      choices:
+      - content: "People"
+        isCorrect: false
+        explanation: "This option is one of the pieces, review the unit."
+      - content: "Processes"
+        isCorrect: false
+        explanation: "This option is one of the pieces, review the unit."
+      - content: "Plans"
+        isCorrect: true
+        explanation: "That's correct!"
+      - content: "Technology"
+        isCorrect: false
+        explanation: "This option is one of the pieces, review the unit."

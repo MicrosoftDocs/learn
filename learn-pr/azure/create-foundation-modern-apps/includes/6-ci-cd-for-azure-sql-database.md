@@ -16,7 +16,7 @@ To achieve that, there are usually three main approaches:
 
 ### Desired State
 
-With this approach, you take a snapshot of the structure, referred to as the desired state, of a reference database. Take the `bus-db` you deployed in an earlier exercise as an example. You can then use that snapshot to synchronize another target database, usually the test and the production database, to the desired state. A tool like [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage?view=sql-server-ver15) can be used to take the snapshot into a `.dacpac` file. When applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the one captured in the snapshot.
+With this approach, you take a snapshot of the structure, referred to as the desired state, of a reference database. Take the `bus-db` you deployed in an earlier exercise as an example. You can then use that snapshot to synchronize another target database, usually the test and the production database, to the desired state. A tool like [SqlPackage.exe](https://docs.microsoft.com/sql/tools/sqlpackage/sqlpackage) can be used to take the snapshot into a `.dacpac` file. When applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the one captured in the snapshot.
 
 This approach is used in this scenario as it is probably the easiest and the simplest of the three.
 

@@ -12,3 +12,34 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-architect-solution.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Which database service will be used to store, process, and serve the real-time bus data?"
+      choices:
+      - content: "Azure Functions"
+        isCorrect: false
+        explanation: "Azure Functions will get the data into the database. But another service will actually process if a bus is within a geofence."
+      - content: "Azure SQL Database"
+        isCorrect: true
+        explanation: "That's correct!"
+      - content: "Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "Azure SQL Managed Instance wasn't discussed in this unit. Azure SQL Managed Instance could be used, since it possesses the same engine, however, it does not support the serverless requirement."
+      - content: "SQL Server"
+        isCorrect: false
+        explanation: "SQL Server wasn't discussed in this unit. SQL Server could be used, since it possesses the same engine, however, it does not support the serverless requirement."
+    - content: "Which service will be used to notify users that a bus has entered the geofence?"
+      choices:
+      - content: "Azure Functions"
+        isCorrect: false
+        explanation: "Azure Functions will trigger the notification to be sent, but it will not send the notification."
+      - content: "Azure Logic Apps"
+        isCorrect: true
+        explanation: "That's correct!"
+      - content: "Azure SQL Database"
+        isCorrect: false
+        explanation: "This service will store and process the bus data."
+      - content: "Azure Static Web Apps"
+        isCorrect: false
+        explanation: "This service will host the website that contains the map with buses and geofences displayed."
