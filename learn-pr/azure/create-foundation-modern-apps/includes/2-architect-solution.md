@@ -61,7 +61,7 @@ An API is needed to access and consume the GTFS feed, to notify a user if a bus 
 
 ### Notification service
 
-To get a notification that a bus is within the geofence and you need to start to walk to the bus station, one option in Azure is to use [Azure Logic Apps]((https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)). Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. If you want, you can also easily integrate with other external services like the well-known service, IFTTT.
+To get a notification that a bus is within the geofence and you need to start to walk to the bus station, one option in Azure is to use [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview). Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. If you want, you can also easily integrate with other external services like the well-known service, IFTTT.
 
 ### Web application hosting
 
