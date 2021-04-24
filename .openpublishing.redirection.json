@@ -5672,17 +5672,17 @@
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/5-video-cross-tenant-management.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/6-cross-tenant-management/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/6-cross-tenant-management",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/6-video-publish-managed-service.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/5-video-publish-managed-service/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/5-video-publish-managed-service",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/10-summary/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/10-summary",
       "redirect_document_id": true
     }
   ]
