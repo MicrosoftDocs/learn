@@ -1,6 +1,6 @@
 As an aspiring Rust developer, you'll need to write Rust source code into text files.
 
-A Rust source file is a text file with a `.rs` file extension that you type all your Rust code into. After you save the code in your text file, you use the Rust compiler (`rustc`) or Cargo to compile your code into a program.
+A Rust source file is a text file with a *.rs* file extension that you type all your Rust code into. After you save the code in your text file, you use the Rust compiler (`rustc`) or Cargo to compile your code into a program.
 
 ## Tools to write Rust code
 
@@ -23,11 +23,11 @@ Here's how to download the installer from the Visual Studio Code website.
 
 Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true). The webpage displays logos for Windows, Linux, and Mac.
 
-Download the Windows installer. Most browsers give you the option to save the file to your local computer (usually in your **Downloads** folder), or to immediately run the installer file.
+Download the Windows installer. Most browsers give you the option to save the file to your local computer (usually in your *Downloads* folder), or to immediately run the installer file.
 
 ### Step 2 - Start the installer
 
-If you downloaded the installer, you might need to open File Explorer and go to your **Downloads** folder, or wherever your web browser saved the installer file.
+If you downloaded the installer, you might need to open File Explorer and go to your *Downloads* folder, or wherever your web browser saved the installer file.
 
 Double-click the installer file to start the installation process.
 
@@ -47,20 +47,20 @@ Here's how to download and install Visual Studio Code.
 
 Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true).
 
-The webpage displays logos for Windows, Linux, and Mac. Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your **Downloads** folder), or to immediately run the file.
+The webpage displays logos for Windows, Linux, and Mac. Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your *Downloads* folder), or to immediately run the file.
 
-Move the file to the **Applications** folder before you open it, as described in the next step.
+Move the file to the *Applications* folder before you open it, as described in the next step.
 
 ### Step 2 - Move the app from the Downloads folder to the Applications folder
 
-Open **Finder**. Drag the Visual Studio Code file from the **Downloads** stack on the **Dock** to the **Applications** folder in **Finder**.
+Open **Finder**. Drag the Visual Studio Code file from the **Downloads** stack on the **Dock** to the *Applications* folder in **Finder**.
 
 ### Step 3 - Start Visual Studio Code from the Applications folder
 
-Double-click the Visual Studio Code app from the **Applications** folder.
+Double-click the Visual Studio Code app from the *Applications* folder.
 
 > [!NOTE]
-> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the **Applications** folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
+> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the *Applications* folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
 
 ::: zone-end
 
@@ -78,7 +78,7 @@ The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, se
 
 ### Step 2 - Start the installer
 
-If you downloaded the installer, you might need to open your file explorer and go to your **Downloads** folder, or wherever your web browser saved the installer file.
+If you downloaded the installer, you might need to open your file explorer and go to your *Downloads* folder, or wherever your web browser saved the installer file.
 
 Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the **Software** application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 

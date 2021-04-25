@@ -12,10 +12,10 @@ cargo new hello-cargo
 
 This command generates a new directory named *hello-cargo* with a *src* subdirectory and adds two files:
 
-> hello-cargo
-> &nbsp;&nbsp;&nbsp;&nbsp; Cargo.toml
-> &nbsp;&nbsp;&nbsp;&nbsp; src
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main.rs
+> hello-cargo/ <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; Cargo.toml <br>
+> &nbsp;&nbsp;&nbsp;&nbsp; src/ <br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; main.rs 
 
 - The *Cargo.toml* file is the manifest file for Rust. It's where you keep metadata for your project and also any dependencies.
 - The *main.rs* file in the *src* subdirectory is where you'll write your application code.
