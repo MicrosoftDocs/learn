@@ -10,7 +10,10 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: azure
-prerequisites: None
+prerequisites: |
+  - Basic Python knowledge
+  - Basic knowledge about how to use Jupyter Notebooks
+  - Basic understanding of machine learning
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner

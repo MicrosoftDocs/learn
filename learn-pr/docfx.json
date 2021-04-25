@@ -231,8 +231,7 @@
                 "src": "pytorch",
                 "files": [
                     "**/*.yml",
-                    "**/*.md",
-                    "**/*.ipynb"
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**",
