@@ -29,7 +29,7 @@ If you don't have the build tools installed, follow these steps:
 
 1. In the Installation details pane on the right, make sure the following options are selected:
 
-   [Screenshot that shows the options to install with the Visual C plus plus build tools.](../media/install-visual-cpp-build-tools.png)
+   :::image type="content" source="../media/install-visual-cpp-build-tools.png" alt-text="Screenshot that shows the options to install with the Visual C plus plus build tools." lightbox="../media/install-visual-cpp-build-tools-large.png":::
 
 1. At the bottom right, select **Install**.
 
