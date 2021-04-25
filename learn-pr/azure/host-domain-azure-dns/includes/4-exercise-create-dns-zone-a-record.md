@@ -1,4 +1,4 @@
-In the previous unit, we described setting up and configuring the widewworldimports.com domain to point to your Azure hosting on Azure DNS.
+In the previous unit, we described setting up and configuring the wideworldimports.com domain to point to your Azure hosting on Azure DNS.
 
 In this unit, you'll:
 

@@ -1,8 +1,8 @@
-You need to develop a business continuity and disaster recovery plan so you can design an appropriate site recovery solution.
+You need to develop a business continuity and disaster recovery (BCDR) plan so you can design an appropriate site recovery solution.
 
 Your organization wants you to design a site recovery strategy for your applications. First, you need to understand the specific requirements involved in building site recovery for your hybrid environment. You need to also understand what tools are available in Azure to help you.
 
-In this unit, you'll learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You'll learn what requirements might be relevant with any PaaS services you might be using. You'll also learn how to plan for backup and disaster recovery. You'll also discover some of the Azure features that will help you to build a site recovery solution.
+In this unit, you'll learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You'll learn what requirements might be relevant with any Platform-as-a-Service (PaaS) services you might be using. You'll also learn how to plan for backup and disaster recovery (BCDR). You'll also discover some of the Azure features that will help you to build a site recovery solution.
 
 ### Business continuity and disaster recovery
 
@@ -16,7 +16,7 @@ Identify everyone who has a stake in your applications remaining functional. The
 
 Identify the infrastructure that composes the environment for your applications. This infrastructure is typically the virtual machines, network resources, storage resources, and any other services that run alongside them.
 
-## Identify recovery time objectives and recovery point objectives
+## Identify recovery point objectives and recovery time objectives
 
 Recovery point objective (RPO) refers to how much data loss is acceptable for your application in the event of a disaster. For example, if your application is down, you might find it's only acceptable for it to run on data that's less than half an hour old after recovery. Some applications can function with older data, but for others it's critical to always run on the freshest data possible.
 
@@ -24,17 +24,17 @@ Recovery time objective (RTO) is the maximum duration of acceptable downtime for
 
 ![An image depicting RPO as the loss of data, and RTO as the time to recover from disaster](../media/2-rto-rpo.png)
 
-The RTO and RPO for your application can be influenced by contractual or regulatory requirements. These may also vary per application. Less critical applications may have larger values for RPO/RTO, while more business critical applications may have a smaller tolerance for downtime and data loss. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
+The RPO and RTO for your application can be influenced by contractual or regulatory requirements. These may also vary per application. Less critical applications may have larger values for RPO/RTO, while more business critical applications may have a smaller tolerance for downtime and data loss. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
 
 ## Identify any PaaS requirements
 
-While you may have control over downtime and recovery for applications you manage, this may not be the case for platform-as-a-service (PaaS) services. Any PaaS services you use may have their own availability guarantees and recovery plans that you need to consider in your BCDR plan.
+While you may have control over downtime and recovery for applications you manage, this may not be the case for PaaS services. Any PaaS services you use may have their own availability guarantees and recovery plans that you need to consider in your BCDR plan.
 
 Identify and inventory the services you depend on, so you can incorporate their recovery capabilities into your BCDR plan. It's important to understand the relevant requirements, so you know how they affect the BCDR process.
 
 ## Site Recovery
 
-Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
+Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Azure Site Recovery has plans that help automate your disaster recovery by enabling you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers, and the overall effectiveness of the recovery process.
 
 ![An illustration showing the role of Azure Site Recovery in replicating the workloads on three virtual machines located in the East US to West US.](../media/2-asr.png)
 
@@ -60,10 +60,10 @@ An Availability Set is a logical grouping capability that you can use in Azure t
 
 Update domains ensure that a subset of your application's servers always remain running when the virtual machine hosts in an Azure datacenter require downtime for maintenance. Most updates can be performed with no impact to the VMs running on them, but there are occasions when this isn't possible. To ensure that updates don't happen to all VMs simultaneously, the Azure datacenter is logically sectioned into update domains. When a maintenance event, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through update domains. The use of sequencing updates using update domains ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
-Fault domains represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. Fault domains align to the physical separation of shared hardware in the datacenter. This includes power, cooling, and network hardware that supports the physical servers located in server racks. In the event the hardware that supports a server rack has become unavailable, only that rack of servers would be affected by the outage. By placing your VMs in an availability set, your VMs will be automatically spread across multiple FDs so that in the event of a hardware failure only part of your VMs will be impacted.
+Fault domains (FDs) represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. FDs align to the physical separation of shared hardware in the datacenter. This includes power, cooling, and network hardware that supports the physical servers located in server racks. In the event the hardware that supports a server rack has become unavailable, only that rack of servers would be affected by the outage. By placing your VMs in an availability set, your VMs will be automatically spread across multiple FDs so that in the event of a hardware failure only part of your VMs will be impacted.
 
 ### Availability zones
 
-Availability zones are independent physical datacenter locations within a region that include their own power, cooling, and networking. By taking availability zones into account when deploying resources, you can protect workloads from datacenter outages while retaining presence in a particular region. Services like virtual machines are *zonal services* and allow you to deploy them to specific zones within a region. Other services are *zone-redundant services* and will replicate across the availability zones in the specific Azure region. Both types ensure that within an Azure region there are no single points of failure.
+Availability zones are independent physical datacenter locations within a region that include their own power, cooling, and networking. By taking availability zones into account when deploying resources, you can protect workloads from datacenter outages while retaining presence in a particular region. Services like virtual machines are *zonal services*, and enable you to deploy them to specific zones within a region. Other services are *zone-redundant services*, and will replicate across the availability zones in the specific Azure region. Both types ensure that within an Azure region there are no single points of failure.
 
 ![Image showing three availability zones with a failure in one but no impact to the other two](../media/2-availability-zones.png)

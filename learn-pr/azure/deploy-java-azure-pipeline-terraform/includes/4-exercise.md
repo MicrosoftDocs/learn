@@ -1,4 +1,4 @@
-In this exercise, you'll configure GitHub Actions to provision your Terraform resources.
+In this exercise, you'll configure an automation workflow to provision your Terraform resources.
 
 ## Access the sample application
 
@@ -22,7 +22,7 @@ In this exercise, you'll create a GitHub repository from a template that contain
 
 ## Workflow
 
-Inside the project directory for the repository you've just created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
+Inside the project directory for the repository, you've created, you'll see a directory called *terraform* and, within it, a file called *main.tf*.
 
 Let's look at a few sections that you might use to define your module's configuration:
 
@@ -137,7 +137,9 @@ resource "azurerm_app_service" "main" {
 }
 ```
 
-## Set up your workflow
+::: zone pivot="github-actions"
+
+## Set up your GitHub Actions workflow with Terraform
 
 Let's provide your GitHub workflow access to your Azure account.
 
@@ -175,7 +177,8 @@ For this exercise, you need to store the following secrets:
 * `AZURE_TENANT_ID`
 
 To store the secrets, go to your forked GitHub repository, select **Settings**, and then select **Secrets** on the left pane.
-Create a GitHub secret for each of four secrets using the values returned the Azure service principal.
+
+Create four secrets using the values returned from the creation of the Service Principal.
 
 Be sure to store the secrets without the quotation marks (" "), as shown in the following screenshot:
 
@@ -183,11 +186,11 @@ Be sure to store the secrets without the quotation marks (" "), as shown in the 
 
 ## Workflow file
 
-Inside your project directory is a directory called *.github/workflows* and, within it, a file called *main.yml*.
+Inside your project directory, is a directory called *.github/workflows* and, within it, a file called *main.yml*.
 
-The *main.yml* file is a GitHub workflow. It uses the secret you've just configured to deploy your application to your Azure subscription.
+The *main.yml* file is a GitHub workflow. It uses the secret you've configured to deploy your application to your Azure subscription.
 
-In the *main.yml* workflow file is the following content:
+In the *main.yml* workflow file, you'll find the following content:
 
 ```yml
 name: TERRAFORM
@@ -232,7 +235,7 @@ jobs:
         run: terraform apply -auto-approve
 ```
 
-This workflow performs the following actions:
+This workflow does the following actions:
 
 - It checks whether the configuration is formatted properly.
 - It generates a plan for every pull request.
@@ -243,7 +246,7 @@ This workflow performs the following actions:
 
 ## Trigger the workflow
 
-Next, in your repository, trigger your GitHub action by doing the following:
+Next, in your repository, trigger your GitHub action by doing the following action:
 
 1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
 
@@ -279,11 +282,170 @@ Next, in your repository, trigger your GitHub action by doing the following:
 
 1. In the list of steps, expand **Terraform Apply**, and verify that:
   
-    * Terraform has created the resources and displays the Azure instance URL.
-    * Your Azure app instance is publicly available.
+- Terraform has created the resources and displays the Azure instance URL.
+- Your Azure app instance is publicly available.
 
     ![Screenshot showing that the Azure app instance is publicly available.](../media/4-template-url.png)
 
 ## Next steps
 
 In the next exercise, you'll use GitHub Actions to deploy a sample Spring Boot application.
+
+::: zone-end
+
+::: zone pivot="azure-devops"
+
+## Set up your application name and Azure resource group
+
+In your GitHub repository, edit your Azure resource names by doing the following action:
+
+1. In the built-in GitHub text editor, or in an editor of your choice, edit *terraform/variables.tf* as follows:
+
+   a. Change `"<CHANGE_ME_RESOURCE_GROUP>"` to your intended resource group name.  
+   b. Change `"<CHANGE_ME_APP_NAME>"` to your intended application name. Make sure that your application name is unique.
+
+    ```yaml
+    variable "resource_group" {
+      description = "The resource group"
+      default = "<CHANGE_ME_RESOURCE_GROUP>"
+    }
+
+    variable "application_name" {
+      description = "The Spring Boot application name"
+      default     = "CHANGE_ME_APP_NAME"
+    }
+
+    variable "location" {
+      description = "The Azure location where all resources in this example should be created"
+      default     = "westeurope"
+    }
+    ```
+
+1. Commit your changes
+
+## Create an Azure Pipeline to provision your Terraform resources
+
+In our Azure DevOps project, we'll create two separate pipelines for provisioning and build-and-deploy.
+The provisioning pipeline creates the Azure resources that will be released via the build-and-deploy pipeline at a later point.
+
+Let's create the first provisioning Pipeline:
+
+1. Choose your organization, and then select **New project**.
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Project Name | Required |
+   | Description | Optional |
+   | Visibility | Choose **Private** |
+   | Source control type | Choose **GIT** |  
+   | Work Item Process | Choose **Basic** |
+
+1. Select "Create" to create the project and open a welcome page.
+
+![Screenshot displaying the new Azure Project form.](../media/4-project.png)
+
+## Set up your Azure Pipeline Service Connection
+
+Let's give your Azure Pipeline access to your Azure account.
+
+1. In Azure DevOps, open the **Service connections** page from the project settings page
+
+1. Choose **+ New service connection** and select **Azure Resource Manager**.
+
+1. Specify the following parameters.
+
+   | Parameter | Description |
+   | --------- | ----------- |
+   | Connection Name | Required. The name you'll use to refer to this service connection in task properties. This name isn't the name of your Azure subscription. |
+   | Scope level | Select Azure Subscription. |
+   | Subscription | select an existing Azure subscription. |
+   | Resource Group | Leave empty to allow users to access all resources defined within the subscription |
+
+1. Select OK to create the connection
+
+## Create the Provision Pipeline
+
+> [!IMPORTANT]
+> This module's pre-requisites required the install of the  [Terraform Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks) - if you have not installed it before hand, your pipeline will not run.
+
+After setting up your project and connection to Azure, you'll need to create an Azure Pipeline to provision your terraform resources.
+
+In Azure DevOps, go to your Project, select "Pipelines" and select "New Pipeline" (Top-right corner).
+
+1. On the "**Connect**" tab - Select "**GitHub**" (YAML file).
+1. If prompted to authorize GitHub access, enter your GitHub Credentials and approve the access for Azure Pipelines with the requested privileges.
+1. On the "**Select**" tab - Select the GitHub Repository containing your Template.
+1. On the "**Configure**" tab - Select to use an "**Existing Azure Pipelines YAML file**".
+1. In the path, select "/azuredevops/provision.yml"
+1. Select **Continue** to go the "***Review**" tab and review your PipeLine
+
+![Screenshot displaying the new Azure Pipeline form.](../media/4-yaml.png)
+
+On the "Review your pipeline YAML" screen, let's inspect the Yaml file we'll use to create our Pipeline.
+
+```yml
+name: Provision Resources
+
+trigger: none
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+# Initialize the Terraform environment and bind to your Service Connection
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendServiceArm: $(serviceConnection)
+    backendAzureRmResourceGroupName: $(serviceConnection)
+    backendAzureRmStorageAccountName: $(serviceConnection)
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+
+# Apply the Terraform config and deploy to Azure
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    workingDirectory: $(Build.Repository.LocalPath)/terraform
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'tf/terraform.tfstate'
+    environmentServiceNameAzureRM: $(serviceConnection)
+```
+
+Let's look at some of the fields we use in the config:
+
+- **serviceConnection**: your Azure PipeLine Service Connection your setup previously.
+- **command**: your Terraform workflow command - **init** or **apply**.
+- **backendAzure**: required fields that are needed in a team environment to store shared state.
+
+Before you save and run the pipeline, we need to add the variable that will bind to your service connection:
+
+1. Select "Variables" (Top right) and add a variable named "serviceConnection" with the value as the name of your Service Connection.
+1. Select "okay" (bottom-right corner) to save the variable
+
+![Screenshot displaying the new Service Principal variable.](../media/4-service.png)
+
+Finally, select "**run**" (top-right corner) to save and run the pipeline
+
+## Watch the pipeline run
+
+Under Jobs, trace the build process through each of the steps.
+
+As your pipeline runs, watch as your first Terraform **init** stage, and then your second **apply** stage, go from blue (running) to green (completed). You can select the stages to watch your pipeline in action.
+
+![Screenshot displaying the new Azure Pipeline run.](../media/4-pipeline-run.png)
+
+> [!TIP]
+> Check your email. You might have already received a build notification with the results of your run. You can use these notifications to know whether each build passes or fails.
+
+## Next steps
+
+In the next exercise, you'll use Azure Pipelines to build and deploy your sample Spring Boot application.
+
+::: zone-end

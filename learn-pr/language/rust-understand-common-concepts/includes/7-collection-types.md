@@ -36,7 +36,7 @@ println!("second element of the array: {}", letters[1]); // prints 'b'
 
 In this example, the expression `letters[0]` will get the value `'a'`, because that's the value at index `[0]` in the array. The expression `letters[1]` will get the value `'b'` from index `[1]` in the array.
 
-If you try to access an element of an array that's out of bounds (past the end of the array), the compiled issues an error. For instance, the following code would fail to compile:
+If you try to access an element of an array that's out of bounds (past the end of the array), the compiler issues an error. For instance, the following code would fail to compile:
 
 ```rust
 println!("invalid array access: {}", letters[99]);  // our `letters` array has only 7 elements
@@ -60,7 +60,7 @@ Since the array length is known at compile time, Rust makes it impossible to bui
 Just like with arrays, you can use vectors with the type `Vec<T>` to store multiple values of the same type. Unlike arrays, vectors can grow or shrink at any time. This capability is implied in their size not being known at compile time, so Rust can't prevent you from accessing an invalid position in your vector.
 
 > [!NOTE]
-> You'll notice the syntax `<T>` often in Rust. These are generic type parameters. When we write `Vec<T>`, what we're indicating is a `Vec` type composed of some type `T`. The namew`T` is conventionally used as a type name for a type we don't yet know. When we actually create vectors, they'll have concrete types like `Vec<u32>` or `Vec<String>`.
+> You'll notice the syntax `<T>` often in Rust. These are generic type parameters. When we write `Vec<T>`, what we're indicating is a `Vec` type composed of some type `T`. The name`T` is conventionally used as a type name for a type we don't yet know. When we actually create vectors, they'll have concrete types like `Vec<u32>` or `Vec<String>`.
 
 You can use the `vec!` macro to initialize a vector.
 

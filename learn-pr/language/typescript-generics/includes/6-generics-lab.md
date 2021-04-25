@@ -18,7 +18,7 @@ The `DataStore` class contains utility functions that can store up to ten `strin
 
     ```typescript
     class DataStore<T> {
-        \\ ...
+        // existing code...
     }
     ```
 
