@@ -516,6 +516,17 @@
                 "dest": "modules"
             },
             {
+                "src": "pytorch",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg"
+                ],
+                "dest": "modules"
+            },            
+            {
                 "src": "student-evangelism",
                 "files": [
                     "**/*.gif",
