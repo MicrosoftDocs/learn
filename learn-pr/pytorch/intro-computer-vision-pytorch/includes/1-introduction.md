@@ -5,11 +5,14 @@ We'll start with an introduction to small Dense Neural Networks (DNNs), then bui
 
 ## Learning objectives
 
-- Introduction to how to build computer vision machine learning models
-- Introduction to training with Dense Neural Networks (DNNs)
-- Introduction to Convolutional Neural Networks (CNNs)
+In this module you will:
+
+- Learn how to build computer vision machine learning models
+- Learn how to represent images as tensors
+- Learn how to build Dense Neural Networks and Convolutional Neural Networks
 
 ## Prerequisites
 
-- Knowledge of Python
-- Basic understand of machine learning
+- Basic Python knowledge
+- Basic knowledge about how to use Jupyter Notebooks
+- Basic understanding of machine learning

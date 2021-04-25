@@ -11,10 +11,11 @@ metadata:
 title: Introduction to Natural Language Processing with PyTorch
 summary: In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experiences fast growth as a field, primarily because performance of the language models depend on their overall ability to "understand" text, and that can be trained in unsupervised manner on large text corpora. Thus, pre-trained text models such as BERT simplified many NLP tasks, and dramatically improved the performance.
 abstract: |
-  - How to represent text and feed it to neural networks
-  - How to represent meaning of text as number vector using embeddings
-  - About special neural network architectures (RNNs, LSTMs, etc.) that can extract sequential patterns
-  - The main idea behind state-of-the-art transformer architectures, attention, and how to use pre-trained transformer models to achieve higher accuracy of your NLP tasks 
+  In this module you will:
+  - Understand how text is processed for natural language processing tasks
+  - Get introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
+  - Learn about Attention Mechanisms
+  - Learn how to build text classification models  
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -24,7 +25,10 @@ roles:
 - student
 products:
 - azure
-prerequisites: None
+prerequisites: |
+  - Basic Python knowledge
+  - Basic knowledge about how to use Jupyter Notebooks
+  - Basic understanding of machine learning
 units:
 - learn.pytorch.intro-natural-language-processing.introduction
 - learn.pytorch.intro-natural-language-processing.representing-text

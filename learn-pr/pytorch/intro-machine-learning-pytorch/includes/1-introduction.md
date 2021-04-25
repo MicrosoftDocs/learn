@@ -6,10 +6,13 @@ Before we jump into building the model, you will learn a set of core concepts re
 
 ## Learning objectives
 
-- Introduce the key concepts to building machine learning models
-- Build a Computer Vision model
-- Introduce you to building model with PyTorch API.
+In this module you will:
+
+- Learn the key concepts used to build machine learning models
+- Learn how to build a Computer Vision model
+- Build models with the PyTorch API
 
 ## Prerequisites
 
-- Knowledge of Python
+- Basic Python knowledge
+- Basic knowledge about how to use Jupyter Notebooks

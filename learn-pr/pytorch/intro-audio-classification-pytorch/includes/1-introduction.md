@@ -16,11 +16,14 @@ We will be building a simple model that can understand `yes` and `no`. The datas
 
 ## Learning objectives
 
-- Understand some key features of audio data.
-- Introduction to how to build audio machine learning models.
-- Learn how to build a binary classification model from wave files.
+In this module you will:
+
+- Learn the basics of audio data
+- Learn how to visualize and transform audio data
+- Build a binary classification speech model that can recognize "yes" and "no"
 
 ## Prerequisites
 
-- Knowledge of Python
-- Basic understand of machine learning
+- Basic Python knowledge
+- Basic knowledge about how to use Jupyter Notebooks
+- Basic understanding of machine learning

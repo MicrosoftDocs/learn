@@ -18,12 +18,15 @@ In this module, we will mostly focus on the **text classification** task. Howeve
 
 ## Learning objectives
 
-- Understand some how text is processed for NLP tasks
-- Introduction to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
+In this module you will:
+
+- Understand how text is processed for natural language processing tasks
+- Get introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
 - Learn about Attention Mechanisms
-- Learn how to build text classification models
+- Learn how to build text classification models  
 
 ## Prerequisites
 
-- Knowledge of Python
-- Basic understand of machine learning
+- Basic Python knowledge
+- Basic knowledge about how to use Jupyter Notebooks
+- Basic understanding of machine learning

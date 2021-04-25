@@ -12,8 +12,9 @@ title: Introduction to PyTorch
 summary: Learn how to build machine learning models with PyTorch.
 abstract: |
   In this module you will:
-  - Learn about the complete ML workflow implemented in PyTorch.
-  - Introduce the key concepts to building machine learning models.
+  - Learn the key concepts used to build machine learning models
+  - Learn how to build a Computer Vision model
+  - Build models with the PyTorch API
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
