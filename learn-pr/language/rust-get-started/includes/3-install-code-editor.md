@@ -9,7 +9,7 @@ You typically write Rust syntax in a text file and save it to your local hard dr
 > [!TIP]
 > Avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. For example, don't write code in Microsoft Word or TextEdit on macOS. These programs have additional formatting instructions that the Rust compiler won't understand.
 
-Although you can use a text editor, you'll probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
+Although you can use a text editor, you'll probably want to use a tool that's better suited for the unique challenges of writing code. There are many options, but many developers rely on Visual Studio Code for this purpose. Visual Studio Code is free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate code, no matter which programming language you want to work with.
 
 Pick one of the following installation procedures, based on your operating system.
 
@@ -49,7 +49,7 @@ Go to the [Visual Studio Code download page](https://code.visualstudio.com/downl
 
 The webpage displays logos for Windows, Linux, and Mac. Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your **Downloads** folder), or to immediately run the file.
 
-You should move the file to the **Applications** folder before you open it, as described in the next step.
+Move the file to the **Applications** folder before you open it, as described in the next step.
 
 ### Step 2 - Move the app from the Downloads folder to the Applications folder
 
@@ -74,7 +74,7 @@ Here's how to download the installer from the Visual Studio Code website. You ca
 
 Go to the [Visual Studio Code download page](https://code.visualstudio.com/download?azure-portal=true).
 
-The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, select either the .deb installer (for Debian or Ubuntu distributions) or the .rpm installer (for Red Hat, Fedora, or SUSE distributions).
+The webpage displays logos for Windows, Linux, and Mac. Under the Linux logo, select either the **.deb** installer (for Debian or Ubuntu distributions) or the **.rpm** installer (for Red Hat, Fedora, or SUSE distributions).
 
 ### Step 2 - Start the installer
 
