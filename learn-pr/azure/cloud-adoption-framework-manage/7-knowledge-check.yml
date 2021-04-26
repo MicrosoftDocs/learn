@@ -26,7 +26,7 @@ quiz:
       explanation: The three keywords in a management baseline don't include owners.
   - content: What is a management baseline?
     choices:
-    - content: A policy to control a management a tool for a specific Azure resource
+    - content: A policy to control a management tool for a specific Azure resource
       isCorrect: false
       explanation: A management baseline is often one or more tools applied to all resources in the environment.
     - content: A free version of the Azure management suite
