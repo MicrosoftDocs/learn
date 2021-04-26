@@ -1,8 +1,8 @@
-In this unit, you will learn the importance of machine learning and artificial technologies in the innovation process and customer experience.
+In this unit, you'll learn the importance of machine learning and artificial technologies in the innovation process and customer experience.
 
-## Machine Learning and Artificial Intelligence to Create Value
+## Machine learning and AI to create value
 
-When evaluating which application features are going to enhance the user experience and thus increase business value, Machine Learning (ML) and Artificial Intelligence (AI) are great assets to improve the interaction with your customers and partners.
+When evaluating which application features are going to enhance the user experience and thus increase business value, machine learning (ML) and AI are great assets to improve the interaction with your customers and partners.
 
 In addition to the transformation of its main e-commerce applications into a microservices architecture, Tailwind Traders is evaluating introducing new functionality that enhances the customer experience. Tailwind Traders has no data science skills. New staff will be hired in the future, but in the meantime, quick wins should be identified that can help in improving the competitiveness of the company's web shop. Four possibilities are being evaluated:
 
@@ -11,11 +11,11 @@ In addition to the transformation of its main e-commerce applications into a mic
 - Redesign the search engine to shorten the time it takes customers to find products
 - Analyze product reviews to better understand customer's sentiment
 
-Tailwind Traders needs to evaluate which Azure technologies can help them to start their journey into infusing their applications with Machine Learning and Artificial Intelligence.
+Tailwind Traders needs to evaluate which Azure technologies can help the company to start its journey into infusing its applications with machine learning and AI.
 
 ## Machine Learning and Artificial Intelligence in Azure
 
-Azure offers some tools and services that can help organizations to build machine learning and artificial intelligence functionality in their applications quicker and at a lower cost.
+Azure offers some tools and services that can help organizations to build machine learning and artificial intelligence functionality in its applications quicker and at a lower cost.
 
 ### Azure Cognitive Services
 
@@ -27,7 +27,7 @@ Tailwind Traders sees a high potential in Azure Cognitive Services, since its da
 - **Text Analytics**: many users write product reviews that could be analyzed, to find dissatisfied customers that express negative sentiments. Focusing on these customers would reduce customer churn, and increase loyalty.
 - **Translator**: product reviews can be an effective sales tool, unfortunately they can only be leveraged by customers that understand the language they are written in. Using real-time translation services would allow Tailwind Traders to show product reviews to any user, independently of their native language.
 
-There are other Azure Cognitive Services that have potential for Tailwind Traders, but they decided to start with the previous three. The reason is the positive ratio between the potential increase business impact and the low effort that their introduction would require.
+There are other Azure Cognitive Services that have potential for Tailwind Traders, but the company decided to start with the previous three. The reason is the positive ratio between the potential increase business impact and the low effort that their introduction would require.
 
 ### Knowledge Mining and Azure Cognitive Search
 
@@ -47,7 +47,7 @@ Azure Bot Services can be implemented in various channels, but Tailwind Traders 
 
 ### Azure Machine Learning
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml?azure-portal=true) facilitate the process of creating custom Machine Learning models, deploying those models to production, and manage different versions of all deployed models across the organization.
+[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml?azure-portal=true) facilitates the process of creating custom Machine Learning models, deploying those models to production, and manage different versions of all deployed models across the organization.
 
 Azure Machine Learning makes the job of data scientists easier, by helping them to share experiment results and manage different models at scale. It can refine models with hyperparameter tuning and even create new ones with automated learning. Moreover, it can then deploy the selected models to Kubernetes clusters to offer highly scalable, enterprise-grade APIs that will run the organization's machine learning models in production.
 
@@ -61,4 +61,4 @@ Tailwind Traders has decided to use the Personalizer Azure Cognitive Service to 
 
 If the hypothesis is validated, the data science team that is currently being built would evolve the prototype with custom-built Machine Learning models built with Azure. An example is in [Build a Real-time Recommendation API on Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
 
-Additionally, Tailwind Traders has decided to validate the existing hypothesis around building a support chat with the Azure Bot Service, and improving the e-commerce site with Azure Cognitive Search. Both prototypes can be built with relatively low effort, so that Tailwind Traders starts their foray into Machine Learning and Artificial Intelligence at full speed.
+Additionally, Tailwind Traders has decided to validate the existing hypothesis around building a support chat with the Azure Bot Service, and improving the e-commerce site with Azure Cognitive Search. Both prototypes can be built with relatively low effort, so that Tailwind Traders starts its foray into machine learning and AI at full speed.
