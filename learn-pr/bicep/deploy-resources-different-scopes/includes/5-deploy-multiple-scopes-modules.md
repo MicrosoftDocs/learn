@@ -1,1 +1,2 @@
-TODO
+- The `scope` keyword on modules
+- Allowed combinations

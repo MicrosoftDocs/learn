@@ -28,58 +28,43 @@ durationInMinutes: # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: |
+      You need to create a role definition that will work throughout your whole organization.
+      You decide to deploy it using a Bicep template.
+      Which `targetScope` value should you use for the file?
     choices:
-    - content: ""
+    - content: `tenant()`
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: `subscription()`
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: Don't specify a `targetScope`.
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: TODO
+  - content: |
+      Which of these statements is true?
     choices:
-    - content: ""
+    - content: The `scope` keyword can be used on any resource.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: The `scope` keyword can only be used on modules.
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: The `scope` keyword can only be used on modules and extension resources.
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: TODO
+  - content: |
+      You have written a Bicep file that includes this line:<br />
+      `targetScope = tenant()`.<br />
+      Which of these statements is true?
     choices:
-    - content: ""
+    - content: The file can be used as a module within a template that deploys at tenant scope.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: The file can be used as a module within a template that deploys at management group scope.
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: The file can be used as a module within a template that deploys at resource group scope.
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: TODO

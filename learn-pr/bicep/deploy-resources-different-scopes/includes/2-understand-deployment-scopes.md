@@ -1,2 +1,3 @@
-* Tenant, management groups, and subscriptions
-* What resource IDs look like at each scope
+- Tenant, management groups, and subscriptions
+- Types of resources that can be deployed at each scope, and use cases
+- What resource IDs look like at each scope
