@@ -1,0 +1,4 @@
+- Scenario to show profile picture
+- Explain Scopes/permissions
+- MSAL acquire token with scopes, access token
+- Microsoft Graph API brief overview
