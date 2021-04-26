@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: 'Azure Monitor'
       isCorrect: false
-      explanation: 'Azure monitor is not used to retrieve the limits for compute resources.'
+      explanation: 'Azure Monitor is not used to retrieve the limits for compute resources.'
     - content: 'List Usage endpoint'
       isCorrect: true
       explanation: 'Correct.'
