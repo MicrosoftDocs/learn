@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-resources-different-scopes.understand-deployment-scopes
+title: Understand deployment scopes
+metadata:
+  unitType: learning-content
+  title: Understand deployment scopes
+  description: TODO
+  ms.date: 04/25/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 123
+content: |
+  [!include[](includes/2-understand-deployment-scopes.md)]

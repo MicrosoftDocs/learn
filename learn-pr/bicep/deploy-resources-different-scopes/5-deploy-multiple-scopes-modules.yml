@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes-modules
+title: Deploy at multiple scopes with modules
+metadata:
+  unitType: learning-content
+  title: Deploy at multiple scopes with modules
+  description: TODO
+  ms.date: 04/25/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 123
+content: |
+  [!include[](includes/5-deploy-multiple-scopes-modules.md)]

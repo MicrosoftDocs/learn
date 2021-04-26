@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-resources-different-scopes.deploy-templates-different-scopes
+title: Deploy templates at different scopes
+metadata:
+  unitType: learning-content
+  title: Deploy templates at different scopes
+  description: TODO
+  ms.date: 04/25/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 123
+content: |
+  [!include[](includes/3-deploy-templates-different-scopes.md)]

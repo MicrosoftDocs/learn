@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-resources-different-scopes.exercise-deploy-multiple-scopes-modules
+title: Exercise - Deploy at multiple scopes using modules
+metadata:
+  unitType: exercise
+  title: Exercise - Deploy at multiple scopes using modules
+  description: TODO
+  ms.date: 04/25/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 123
+content: |
+  [!include[](includes/6-exercise-deploy-multiple-scopes-modules.md)]

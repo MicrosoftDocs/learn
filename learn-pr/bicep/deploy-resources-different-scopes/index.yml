@@ -2,15 +2,15 @@
 uid: learn.azure.deploy-resources-different-scopes
 metadata:
   moduleType: standard
-  title: # user input: module title for browser tab and search results
-  description: # user input: a description for site search and SEO
+  title: Deploy resources to different scopes with Bicep
+  description: TODO
   ms.date: 04/25/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 title: Deploy resources to different scopes with Bicep
-summary: # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+summary: TODO
 abstract: |
   After completing this module, you'll be able to: 
     - Explain resource scopes including tenant-, management group-, and subscription-level resources.
@@ -37,8 +37,11 @@ products:
   - azure-resource-manager
 units:
 - learn.azure.deploy-resources-different-scopes.introduction
-- learn.azure.deploy-resources-different-scopes.learning-content
-- learn.azure.deploy-resources-different-scopes.exercise
+- learn.azure.deploy-resources-different-scopes.understand-deployment-scopes
+- learn.azure.deploy-resources-different-scopes.deploy-templates-different-scopes
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
+- learn.azure.deploy-resources-different-scopes.deploy-multiple-scopes-modules
+- learn.azure.deploy-resources-different-scopes.exercise-deploy-multiple-scopes-modules
 - learn.azure.deploy-resources-different-scopes.knowledge-check
 - learn.azure.deploy-resources-different-scopes.summary
 badge:
