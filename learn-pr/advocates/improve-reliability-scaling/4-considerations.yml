@@ -35,7 +35,7 @@ quiz:
       explanation: 'Correct. You may find you need to scale out less.'
     - content: 'scale up'
       isCorrect: false
-      explanation: 'It's best to first determine if there are issues in your application and service because you may find you do not need to scale.'
+      explanation: 'It is best to first determine if there are issues in your application and service because you may find you do not need to scale.'
     - content: 'increase soft service limits'
       isCorrect: false
-      explanation: 'It's best to first determine if issues in your application or service are causing you to consume more resources than you need.'
+      explanation: 'It is best to first determine if issues in your application or service are causing you to consume more resources than you need.'
