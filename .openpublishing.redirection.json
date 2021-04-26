@@ -5684,6 +5684,16 @@
       "source_path": "learn-pr/azure/intro-to-azure-lighthouse/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-lighthouse/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/3-install-rust.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-get-started/4-install-rust-build-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/4-install-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-get-started/3-install-code-editor",
+      "redirect_document_id": true
     }
   ]
 }
