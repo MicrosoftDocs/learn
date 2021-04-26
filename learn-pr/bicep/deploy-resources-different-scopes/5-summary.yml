@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-resources-different-scopes.summary
+uid: learn.azure.deploy-resources-different-scopes.summary
 title: Summary
 metadata:
   unitType: summary
   title: # user input: module title for browser tab and search results
   description: # user input: a description for site search and SEO
-  ms.date: 26/04/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  ms.date: 04/25/2021
+  author: johndowns
+  ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
 durationInMinutes: # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/5-summary.md)]
