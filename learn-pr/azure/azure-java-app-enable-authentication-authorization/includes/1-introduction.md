@@ -28,7 +28,7 @@ Guidance for content and exercise units:
 
 ## Learning objectives
 
-Imagine you are building a portal for employees in your company to access information about the company and resources for their work. You have built all the functionality and have a Java web application running. Now, you need to ensure that this application is only accessible to users within your organization.
+Imagine you are building a portal for employees in your company to access company information and helpful resources to perform their work. You need to ensure that this application is only accessible to users within your organization.You want to build a Java web application that signs in the employees with their work accounts and displays some information from their company profile. 
 
 Azure Active Directory (Azure AD) enables you to secure your applications by signing in users with their organizational accounts. The Microsoft Authentication Library (MSAL) provides various methods for developers to authenticate users and get authorized access to applications secured by Azure AD.
 

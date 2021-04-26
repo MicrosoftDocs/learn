@@ -6,6 +6,10 @@ See here for general guidance on content units: https://review.docs.microsoft.co
 
 -->
 
+You learn that your organization uses Azure Active Directory (Azure AD) as the Identity provider for authentication and authorization. 
+
+In this unit, you'll learn about authentication, authorization and what is supported in Azure AD.
+
 Azure AD provides authentication and authorization service by supporting modern authentication protocols such as OAuth 2.0 and OpenID Connect in a standards-compliant way. This allows you to use open-source libraries such as Microsoft Authentication Library (MSAL) and other standard-compliant libraries with Azure AD. Here is a brief summary of the distinction between authentication and authorization.
 
 ## Authentication
