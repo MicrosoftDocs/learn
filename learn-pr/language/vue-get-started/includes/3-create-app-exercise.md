@@ -8,7 +8,7 @@ In a terminal or command window, run the following commands.
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-vue-get-started/
-cd mslearn-vue-get-started/code/1-vue-get-started
+cd mslearn-vue-get-started/start
 code .
 ```
 

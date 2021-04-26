@@ -1,6 +1,3 @@
-> [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
-
 In this exercise, you'll update the Bicep template that you previously created so that it:
 - Accepts parameters for the resource locations and names.
 - Uses your business rules to select the right SKUs for the resources being deployed.
@@ -146,7 +143,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This snippet is the same code that you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell command in the terminal. This is similar to the command you ran before.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `

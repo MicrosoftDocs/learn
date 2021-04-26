@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/09/2021
+  ms.date: 04/23/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
@@ -14,17 +14,17 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is one of the possible ways to optimize a Spark Job?"
+  - content: "What is one of the possible ways to optimize an Apache Spark Job?"
     choices:
     - content: "Remove all nodes."
       isCorrect: false
-      explanation: "InCorrect. Incorrect, out of the options bucketing is the right answer, the way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
-    - content: "Remove the Spark Pool."
+      explanation: "Incorrect. Removing all nodes would mean there is no compute power to process the Apache Spark jobs."
+    - content: "Remove the Apache Spark Pool."
       isCorrect: false
-      explanation: "Incorrect, out of the options bucketing is the right answer, the way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
+      explanation: "Incorrect. Removing the Apache Spark pool removes the capability to process Apache Spark jobs."
     - content: "Use bucketing."
       isCorrect: true
-      explanation: "Correct, The way bucketed tables are optimized is because it's because the metadata about how it was bucketed and sorted are stored."
+      explanation: "Correct. Bucketed tables are optimized because it is a metadata operation about how the data is bucketed and sorted."
   - content: "What can cause a slower performance on join or shuffle jobs?"
     choices:
     - content: "Data skew."

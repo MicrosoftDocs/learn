@@ -5,7 +5,7 @@ metadata:
   description: "Integrate Azure Databricks with Azure Synapse"
   ms.date: 05/15/2020
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate Azure Databricks with Azure Synapse

@@ -36,7 +36,7 @@ println!("second element of the array: {}", letters[1]); // prints 'b'
 
 In this example, the expression `letters[0]` will get the value `'a'`, because that's the value at index `[0]` in the array. The expression `letters[1]` will get the value `'b'` from index `[1]` in the array.
 
-If you try to access an element of an array that's out of bounds (past the end of the array), the compiled issues an error. For instance, the following code would fail to compile:
+If you try to access an element of an array that's out of bounds (past the end of the array), the compiler issues an error. For instance, the following code would fail to compile:
 
 ```rust
 println!("invalid array access: {}", letters[99]);  // our `letters` array has only 7 elements

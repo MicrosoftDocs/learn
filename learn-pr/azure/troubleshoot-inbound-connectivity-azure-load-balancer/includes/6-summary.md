@@ -1,5 +1,4 @@
-In this module, you learned how to troubleshoot connectivity for Azure Load Balancer. You've reviewed common inbound connectivity issues with Load Balancer and learned how to resolve problems with virtual machine health probes.
-
+In this module, you learned how to troubleshoot connectivity for Azure Load Balancer. You've reviewed common inbound connectivity issues with Load Balancer, and learned how to resolve problems with virtual machine health probes.
 
 ## Clean up
 
