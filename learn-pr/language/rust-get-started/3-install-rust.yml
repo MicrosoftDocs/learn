@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.language.rust-get-started.4-install-rust-build-tools
+uid: learn.language.rust-get-started.3-install-rust
 metadata:
   title: Install Rust
   description: Install Rust before you can start programming.
@@ -11,4 +11,4 @@ metadata:
 title: Install Rust
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-install-rust-build-tools.md)]
+  [!include[](includes/3-install-rust.md)]
