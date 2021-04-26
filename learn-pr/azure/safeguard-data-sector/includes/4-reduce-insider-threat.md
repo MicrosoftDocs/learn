@@ -39,10 +39,10 @@ Customer Lockbox is automatically available to all customers who have an Azure s
 
 ## Guest VM crash dumps
 
-On each Azure node, there's a Hypervisor that runs directly over the hardware. It divides the node into a number of Guest Virtual Machines (VMs), as described in Microsoft [online documentation](https://docs.microsoft.com/azure/security/fundamentals/isolation-choices#compute-isolation). Each node also has one special Root VM, which runs the Host OS.
-
 :::row:::
 :::column span="2":::
+On each Azure node, there's a Hypervisor that runs directly over the hardware. It divides the node into a number of Guest Virtual Machines (VMs), as described in Microsoft [online documentation](https://docs.microsoft.com/azure/security/fundamentals/isolation-choices#compute-isolation). Each node also has one special Root VM, which runs the Host OS.
+
 When a Guest VM (customer VM) crashes, customer data may be contained inside a memory dump file on the Guest VM. By default, Microsoft engineers don't have access to Guest VMs and can't review crash dumps on Guest VMs without customer's approval. The same process involving explicit customer authorization is used to control access to Guest VM crash dumps if the customer requests that their VM crash be investigated. As described previously, access is gated by the JIT privileged access management system and Customer Lockbox so that all actions are logged and audited. The primary forcing function for deleting the memory dumps from Guest VMs is the routine process of VM reimaging that usually occurs at least every two months.
 :::column-end:::
 :::column span="2":::
