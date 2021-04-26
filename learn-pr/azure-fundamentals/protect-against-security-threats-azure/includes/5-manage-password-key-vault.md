@@ -87,7 +87,7 @@ Here, you access the password from Key Vault two times. First, you access it fro
 1. From Cloud Shell, run this command.
 
     > [!NOTE]
-    > Replace **<my-keyvault-NNN>** with the name you used earlier.
+    > Replace <**my-keyvault-NNN**> with the name you used earlier.
 
     ```azurecli
     az keyvault secret show \
