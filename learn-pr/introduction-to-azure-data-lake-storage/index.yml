@@ -36,7 +36,7 @@ title: Introduction to Azure Data Lake Storage
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "Describe how Azure Data Lake Storage enables the capture of any data type in one location for operations and analytics. Evaluate whether Azure Data Lake Storage can eliminate data silos, optimize costs, and protect data."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,8 +63,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether <product> is appropriate to <general product use case>.
-    - Describe how <features> of <product> work to <solve problem>.
+    - Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data.
+    - Describe how the scalability, security, and cost optimization of Azure Data Lake Storage work to create a secure, high-performance framework for your data analytics.
 ###########################################################################
 ###
 ### Prerequisites
@@ -87,9 +87,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - Basic knowledge of Azure, including Azure virtual networks and Azure virtual machines.
+  - Basic knowledge of big data concepts, including ingestion, blob storage, processing, and visualization.
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
@@ -109,6 +108,9 @@ levels:
 roles:
   - administrator
   - data-analyst
+  - data-engineer
+  - data-scientist
+  - database-administrator
 ###########################################################################
 ###
 ### Specify the covered product.
