@@ -27,7 +27,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 1. Select **Review + create** > **Create**.
 
-After deployment completes, select **Go to resource**.
+1. After deployment completes, select **Go to resource**.
 
 ### Associate route table to workload's subnet
 
@@ -54,6 +54,7 @@ After deployment completes, select **Go to resource**.
 
 ## Create application rule collection
 
+Create an application rule collection with rules to allow Windows Virtual Desktop access to several Fully Qualified Domain Names (FQDNs). 
 <!--
 1. Create application rule collection (see [Configure application rule](https://docs.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#configure-an-application-rule)) & 
     1. add rule to enable Windows VirtualDesktop FQDN tag
@@ -61,9 +62,8 @@ After deployment completes, select **Go to resource**.
 	1. Protocol is https
 	1. Destination is WindowsVirtualDesktop
 1. Need to explicitily allow in firewall application rules exact FQDNs you need - not all captured in     WindowsVirtualDesktop FQDN. 
-	   - Allow https access from host pool subnet to specific URLs (in article).
-	   - 
-	   - 
+	   - Allow https access from your host pool subnet to *xt.blob.core.windows.net, *eh.servicebus.windows.net and *xt.table.core.windows.net. These wildcard FQDNs enable the required access, but are less restrictive.
+
 -->
 
 
@@ -88,8 +88,19 @@ After deployment completes, select **Go to resource**.
     |Source     |  Source IP address range is host pool Vnet     |
     |FQDN tags    |  Windows Virtual Desktop       |
 
+1. Under **Rules**, in the **Target FQDNs** section, enter the following information.
+ 
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     allow-storage-service-bus-accounts    |
+    |Source type    | IP address        |
+    |Source     |  Source IP address range is host pool VNet     |
+    |Protocol:Port   |   https     |
+    |Target FQDNs   | *xt.blob.core.windows.net, *eh.servicebus.windows.net, *xt.table.core.windows.net   |
 
 1. Select **Add**.
+
+
 
 ## Create network rule collection
 
@@ -101,7 +112,9 @@ After deployment completes, select **Go to resource**.
 Allow DNS – allow traffic from your ADDS private IP address to * for TCP and UDP ports 53. (No DNS for exercise so this would be conceptual info.)
 Allow KMS – allow traffic from your Windows Virtual Desktop virtual machines to Windows Activation Service TCP port 1688. For more information about the destination IP addresses, see [Windows activation fails in forced tunneling scenario](https://docs.microsoft.com/troubleshoot/azure/virtual-machines/custom-routes-enable-kms-activation#solution)
 -->
-This is the network rule that allows outbound access to.... If this were a production deployment of Windows Virtual Desktop, you'd add a network rule to allow DNS to allow traffic from your ADDS private IP address to * for TCP and UDP ports 53. We don't have a domain controller set up. So you'll just add one rule to allow 
+Typically, in a production deployment, you'd create a network rule collection and add rules to allow both DNS and KMS. We don't have a domain controller for this exercise. So you'll just create a rule to allow traffic from your session host VM to Windows Activation Service TCP port 1688.
+
+
 
 1. On the learn-fw, select the **Network rule collection** tab.
 1. Select **Add network rule collection**.
@@ -115,15 +128,18 @@ This is the network rule that allows outbound access to.... If this were a produ
 
 
 
-1. Under **Rules**, **IP addresses**, for **Name**, type **Allow-DNS**.
-1. For **Protocol**, select **UDP**.
-1. For **Source type**, select **IP address**.
-1. For **Source**, type **10.0.2.0/24**.
-1. For **Destination type** select **IP address**.
-1. For **Destination address**, type **209.244.0.3,209.244.0.4**
+1. Under **Rules**, **IP addresses**,
 
-   These are public DNS servers operated by CenturyLink.
-1. For **Destination Ports**, type **53**.
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     Allow-KMS   |
+    |Protocol   |  TCP    |
+    |Source type    |  IP address       |
+    |Source   |    Source IP address range is host pool VNet       |
+    |Destination type  |        |
+    |Destination address  |  IP address       |
+    |Destination Ports  |  1688   |
+
 2. Select **Add**.
 
 ## Check your work
