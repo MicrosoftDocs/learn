@@ -23,7 +23,7 @@ and briefly review some basic concepts and terms related to scaling.
 The good news is that making your app more scalable may also make it more
 reliable. For example, if your system autoscales, then given a component
 failure on a single virtual machine, the autoscaling service will provision
-another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, if you’re leveraging
+another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, if you’re using
 higher-level services, such as Azure Storage that are inherently scalable,
 these services have been built to be reliable, so your data will be replicated.
 
@@ -77,8 +77,7 @@ basic concepts and fundamental terms related to scaling.
     resources.
 
 -   Autoscaling: Amount of resources is automatically adjusted by the
-    system based on the load. To be clear, because this is often
-    left out of our thinking, the amount is adjusted both up and down based
+    system based on the load. To be clear, the amount is adjusted both up and down based
     on either an increased or decreased load.
 
 -   DIY scale: Do-it-yourself scaling whereby you have to configure the
