@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.github-actions-ci.2b-github-actions-essential-features
-title: Essential features and techniques to customize your workflow
+title: Customize your workflow with environment variables and artifact data
 metadata:
-  title: Essential features and techniques to customize your workflow
+  title: Customize your workflow with environment variables and artifact data
   description: Learn how to use essential customization techniques such as using variables, running scripts, and sharing data and artifacts between jobs.
   ms.date: 04/13/2021
   author: a-a-ron
