@@ -11,4 +11,5 @@ In this module, you will:
 
 ## Prerequisites
 
- 
+* Familiarity with multi-tenant cloud services.
+* Familiarity with how Azure helps customers follow data sector requirements in the public sector.
