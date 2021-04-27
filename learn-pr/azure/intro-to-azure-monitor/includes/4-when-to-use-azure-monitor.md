@@ -1,16 +1,16 @@
-Use Azure Monitor when you need to collect, analyze, and act on availability, health, and performance telemetry for your applications and infra resources.  IT Ops, DevOps, and developer teams can use Azure Monitor for day-to-day operations, continuous monitoring, pre-production, and development phases of the app lifecycle.
+Use Azure Monitor when you need to collect, analyze, and act on availability, health, and performance telemetry for your applications and infrastructure resources.  IT Ops, DevOps, and developer teams can use Azure Monitor for day-to-day operations, continuous monitoring, pre-production, and development phases of the app lifecycle.
 
-Users can take advantage of Azure Monitor Insights for at-scale monitoring views to track performance across multiple resources and start investigations by drilling into the details of a single resource.
+Users can take advantage of **Azure Monitor Insights** for at-scale monitoring views to track performance across multiple resources and start investigations by drilling into the details of a single resource.
 
-Users can share reports with Azure Monitor workbooks and maintain operational awareness with dashboards.
+Users can share reports with **Azure Monitor** workbooks and maintain operational awareness with dashboards.
 
-Users can perform triage and root cause analysis using custom charts in Metrics Explorer or by analyzing logs with queries in Azure Monitor Logs.
+Users can perform triage and root cause analysis using custom charts in **Metrics Explorer** or by analyzing logs with queries in **Azure Monitor Logs**.
 
 Users can be notified, take action and scale their workloads in response to user-defined performance criteria or machine learning based thresholds.
 
 Here, we'll discuss some examples of when you might want to use Azure Monitor to:
 * Collect data using Azure Monitor Metrics
-* Discuss Log Analytics usage with Azure Monitor
+* Evaluate Log Analytics usage with Azure Monitor
 * Visualize monitoring data
 
 ## Decision criteria
