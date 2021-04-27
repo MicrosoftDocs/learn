@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-data-factory 
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure Data Factory
+  description: Evaluate whether Azure Data Factory can help you integrate your data sources. Describe how Azure Data Factory can ingest data from on-premises, multiple-cloud and SaaS data sources.
+  ms.date: 04/07/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial  
+title: Introduction to Azure Data Factory
+summary: Microsoft Azure Data Factory is a fully managed, serverless data integration service. It enables you to visually integrate data sources with more than 90 built-in, maintenance-free connectors. 
+abstract: |
+  By the end of this module, you will be able to: 
+    - Evaluate whether Azure Data Factory can help you integrate your data sources.
+    - Describe how Azure Data Factory can ingest data from on-premises, multiple-cloud and SaaS data sources.
+prerequisites: |
+  - Several years of experience working with data integration.
+  - Several years of experience working with Azure DBaaS platforms.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+products:
+  - azure
+  - azure-data-factory
+units:  
+- learn.intro-to-azure-data-factory.1-introduction
+- learn.intro-to-azure-data-factory.2-what-is-azure-data-factory
+- learn.intro-to-azure-data-factory.3-how-azure-data-factory-works
+- learn.intro-to-azure-data-factory.4-when-to-use-azure-data-factory
+- learn.intro-to-azure-data-factory.5-knowledge-check
+- learn.intro-to-azure-data-factory.6-summary
+badge:
+  uid: learn.intro-to-azure-data-factory.badge
