@@ -40,7 +40,7 @@ This part is also a bit relying on your performance throughout the interview pro
 
 However there is one thing to keep in mind, how valuable is the experience working for this particular company? Folks in the IT industry often take up a position for lower than they wanted to cause the experience is so valuable. Such experience will enable them to land a great job at the next employer.
 
-### How to argue for what you want
+### How to ask for what you want
 
 It's hard to advocate for yourself, but to get what you want, you need the employer to understand what value you bring to the company, regardless of wether it's for landing a role internally or a job. Do your research here what type of company you are dealing with to understand what their dream candidate looks like. Even ask the recruiter about it. It's possible that previous non-teh experience, like working with customer support could make you really valuable paired with your tech skills. At the end of the day, an employer wants a person, that cares for the product and its users rather than a robot that runs elegant code.
 
@@ -57,5 +57,12 @@ Remember that not everything is about money. Think of this part as negotiating a
 If you have offers from more than one company, try to compare the offers from the above mentioned items. Only you know what matters most to you.
 
 ## Follow up
+
+There's two types of following up, one between the interviews and after the last one. For example, if you first have a phone interview and pass that, you might be sent guidelines and preparation docs. At that point it's a good idea to contact the recruiter and tell them when you are ready to proceed to the next phase. If this is a large company they might given you anything from days, to weeks and months to prepare for the next phase, i.e the technical interview.
+
+> [!TIP]
+> Ask for estimated time for next phase in the interview process, it will help you plan and see how long you have.
+
+### After last interview
 
 One thing candidates often forget about is following up. An elegant, and nice thing to do, is to write back, right after the interview and thank for the opportunity, someone spent time and resources getting all these interviews and people together. It also gives the prospective employer a chance to come back to you if there are any updates. Also if you aren't picked this time, chances are they might come back to you in the future if new positions open up, everybody remembers the nice candidate. Also if you don't get picked, ask for feedback, trying to improve is the best thing do to here, adopt a _growth mindset_.

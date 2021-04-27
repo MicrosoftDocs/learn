@@ -6,7 +6,12 @@ You are already a winner. The interview step is a bit stressful but if you've ma
 
 ## Pre interview, take home assignment
 
-You might be asked to make a take home assignment. What's important to consider, creating such a sample, is that it should, first of all, solve the problem. Most likely you will send the company a link to where they can find your assignment solution, like GitHub for example. Your solution should fulfill the following:
+You might be asked to make a take home assignment. What's important to consider, creating such a sample, is that it should, first of all, solve the problem. Most likely you will send the company a link to where they can find your assignment solution, like GitHub for example. 
+
+> [!TIP]
+> If you're not sure about a requirement or how to interpret part of the task, reach out, ask for clarification. In fact, some companies make the task unclear on purpose and wants to see if the candidate will reach out, as it's seen as a plus if they do.
+
+Your solution should fulfill the following:
 
 - **Well-structured code**. You should divide up the code into reasonable number of files and components, nobody wants to see all code in one file. Think if someone were to maintain this code, how would they want it structured.
 - **Linted**. Linting is the process of ensuring the code looks the same, the important part isn't whether you use spaces or tabs to indent code, for example, it's that you are consistent. Tools should _lint_ for you, you shouldn't have to check every space, every semicolon etc. You might not fail the assignment on this factor, but it shows you care.
@@ -14,8 +19,16 @@ You might be asked to make a take home assignment. What's important to consider,
 - **Instructions on how to run it**. Instructions are a must have, double, and triple check that your instructions are correct. You might get one chance if they can't run the code, or none.
 - **Does it solve the task**. The code should solve the laid out problem.
 - **Considerations**. Are there considerations you've made, which ones? Let's say the assignment isn't clearly written, by you making assumptions on what is meant, you can get a pass, even if you hand in code that solves the problem differently than what the interviewers had in mind.
+- **The reasoning**. Probably the most important part of the task is testing how you got there. Interviewers might ask you that on an on-site interview but do provide such an explanation in the submitted task itself, it can be really valuable.
  can it be optimized/extended, how in that case? 
 - **Good looking GitHub README**. Build and run instructions should be in a README file, if you are using GitHub.
+
+### What if time is too tight?
+
+Sometimes life happens and you don't have a chance to finish a task in the alloted time. Don't worry, reach out at that point, most companies are really understanding and might give you more time, given that you explain the circumstances.
+
+> [!TIP]
+> Even if you don't finish the entire task, submit what you have. Usually it's not about solving the task anyway but to see your reasoning, don't give up. 
 
 ## Day before interview
 
@@ -45,7 +58,9 @@ There's generally two types of ways that the technical interview is carried out,
 - **Standard interview**, in the standard interview, the interviewers can ask questions on you take home exercise (if you did one) or contextual questions on a programming language or framework or some other questions to assess your level.
 
 ### Whiteboard interview
+
 > [!VIDEO https://www.youtube.com/embed/8Myx-vy0csM] 
+
 So we've established you will be standing in front of a whiteboard and try to explain yourself through the solution of a problem. Why this form of interviewing? The idea is to mimic your every day work life where it's common that you and many your colleagues are standing in front of a whiteboard and is trying to solve a problem together. This form of interviewing gives the interviewers a chance to hear your inner thought process. If this form of interview is carried out well, it's a collaborative exercise where interviewers and interviewee work together to solve a problem.
 
 How do I pass such an interview? Generally the more interviews you do, the better you become at it, but here's three tips:
@@ -55,6 +70,9 @@ How do I pass such an interview? Generally the more interviews you do, the bette
 - **Confidence**. The more certain you come across the better. We don't always get it right when we solve problem but you want to avoid coming across that you have no idea. With that said, saying I don't know to something is better. Sometimes there might be more than one problem to choose from to solve.
 
 You usually get an algorithmic problem in such an interview so check the links in the unit on preparing for those types of questions.
+
+> [!TIP]
+> If you get stuck, that's ok. Ask the interviewer for clues, they will most likely try to help. Be sure to listen to the feedback and incorporate that in the solution that you present.
 
 ### Standard interview
 

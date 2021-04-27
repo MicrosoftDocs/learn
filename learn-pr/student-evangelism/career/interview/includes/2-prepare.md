@@ -9,7 +9,7 @@ Depending on the size of the company, you might go through as little as two inte
 - **Coding interview**. In this interview, you are tested on your coding skills. There might be more than one, of this type of interview like a take home test and or questions over the phone. There's also an in-person version of this interview, where you either get asked new questions or is asked to explain code you've already written in a previous step. The people carrying out these interviews are most likely future colleagues from your intended team or from another team.
 - **System design**. If you are a little more senior, you are likely to encounter an interview type where your ability to design systems is assessed. The idea is to evaluate whether you understand how to build more complex applications that may have dependencies to other systems even.
 - **Manager**. You are likely to have an interview with a prospective manager. This is a chance for both you and a manager to assess one another. The manager wants to see if you are someone who would fit in the team. You on the other hand can see if this manager is someone you would like to work for.
-- **HR**. Usually at the end of the interview cycle, you are likely to have a talk to someone representing Human Relations, HR. Here you have the chance to ask questions on broader things you want to know about company culture, unions, and other practical information.
+- **HR**. At some part of the interview cycle, you are likely to have a talk to someone representing Human Relations, HR. Here you have the chance to ask questions on broader things you want to know about company culture, unions, and other practical information. If this happens in the beginning of the cycle, ask as many questions as you can, it helps you prepare for what's next.
 
 ## Preparing for the tech interviews
 
@@ -92,3 +92,30 @@ The best tip here in general, is to implement many small projects, that will mak
 
 - [40 JavaScript projects to build](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)
 - [Web Dev For Beginners](https://github.com/microsoft/Web-Dev-For-Beginners). 24 lessons with exercises. Seven major projects and available in 11+ languages.
+
+## Reach out
+
+It's great if you can spend as much time as possible preparing by trying to solve various problems. However, don't be afraid to reach out to the recruiter or recruitment team and ask for guidelines and materials. Having these kind of materials can help you focus on what this company feel is important. Some companies will send "how to prepare" material to the candidate, but if they don't, reach out. The worst thing you can hear, is no we don't have that, at least you know at that point. 
+
+> [!TIP]
+> Be brave ask for guidance and preparation content, it shows interest but will also increase the likelihood that you pass the interview.
+
+## General guidelines
+
+It's great if you can prepare as much as possible on things tech. One thing you mustn't forget about though is how to behave while at the interview. Also you have a right to expect a certain behavior from the company in turn. Let's start with you, knowing what to avoid might lead to an offer, but the opposite might lead to a "no hire" decision despite you being a star at algorithms. 
+
+- **Work history**. Ensure your work history is accounted for. If you have a gap in your resume, ensure there's a reasonable explanation like, you studied something, maybe it was a medical reason. It doesn't look good at all if there are gaps. This is something you can bring up on the interview and the company is likely to ask, so ensure you have answers prepared.
+- **Job hopping**. If you spend to short of time at each workplace then a lot of prospective employers will see that as a risk. Why should they spend resources and time on someone who's gone in 6 months for example. There are nuances to this, in the beginning of your career it's more forgiving if you jump around a little finding what you really like to do. In general, the longer your career is, the longer you are expected to stay. With that said the IT industry has quite short turn around. 2-3 years is still an ok time to stay at a company. You want to avoid < 1.5 years of tenure. Staying too long is also a risky behavior unless you move roles internally or advance to a higher level. There are many reasons why people switch companies, better pay, advancement, greater opportunity, sometimes you might need to stick it out a bit.
+- **Speaking ill of former employers**. I mean it's understandable that you sometimes don't get along with a former manager or people at your former workplace. The interview is not a time to bring that up usually, unless you need to explain a shorter tenure. If you have to bring it up, ensure you are speaking about it in terms of growth, what did you learn. 
+- **Be professional**. Be on time always, be ahead of time even. Sometimes the traffic is bad, if you know you are going to be late, let them know, email, phone, whatever works. Be polite and nice.
+- **Team player**. Being a developer, or most jobs in general, is about being a team player. As such you didn't do that big project all by yourself, do explain your part in it but try to not come off like you know everything and you did everything, be humble but confident.
+
+### What about the company
+
+We've talked about you and you being on your best behavior, but there's something to be said about the company as well. You have a right to be treated with respect. So what are things to look out for?
+
+- **Reputation**. The company has a bad reputation, wither by word of mouth or on sites ranking companies. You can do your homework and find this out before accepting an interview.
+- **Role unclear**. There's no clear idea of what your responsibilities are. If it's a startup you can somewhat to be expected to help out here and there. However, a large enterprise company should be able to be clear on this point.
+- **People speak ill of colleagues**. If folks you are interviewing with speaks ill of folks, on the same or other teams, that's really not good.
+- **No manager in the interview pipe**. If you're not meeting with a manager that looks strange is most likely a bad sign. A good manager will help you grow and not even be able to meet them before signing is less than ideal.
+- **Lack of respect**. You should be treated with respect. The company should respect you and your time, sudden cancellations of interviews or interviews that end abruptly are bad signs. Another bad sign is them not communicating after an interview, you have a right to know whether you got the job or not.
