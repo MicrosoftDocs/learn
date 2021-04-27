@@ -45,7 +45,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     ![Image of Visual Studio Code adding a new file to the Services folder]()
 
 
-1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create a in-memory pizza data service. Save your changes.
+1. Add the following code to *:::no-loc text="Services/PizzaService.cs":::* to create an in-memory pizza data service. Save your changes.
 
     ```csharp
     using ContosoPizza.Models;

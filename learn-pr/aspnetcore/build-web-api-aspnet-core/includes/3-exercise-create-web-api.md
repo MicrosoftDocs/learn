@@ -74,7 +74,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
     > [!IMPORTANT]
     > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps troubleshoot. As we make changes to the code we will need to stop the web API by pressing `CTRL+C` on the keyboard and re-running the `dotnet run` command.
 
-    In the future we will use only the `dotnet run` command as this command also will build our project if anything has changed.
+    In the future, we will use only the `dotnet run` command as this command also will build our project if anything has changed.
 
 1. Open a web browser and navigate to:
 
@@ -108,7 +108,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
   dotnet tool install -g Microsoft.dotnet-httprepl
   ```
 
-  The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command line tool that we will use to make HTTP requests to our web API.
+  The preceding command installs the .NET HTTP Read-Eval-Print Loop (REPL) command-line tool that we will use to make HTTP requests to our web API.
 
 1. Connect to our web API by running the following command:
   
@@ -123,7 +123,7 @@ To set up a .NET project to work with web API, we'll use Visual Studio Code. Vis
   (Disconnected)> connect http://localhost:5000
   ```
 
-1. Explore available enpoints by running the following command:
+1. Explore available endpoints by running the following command:
 
   ```dotnetcli
   ls

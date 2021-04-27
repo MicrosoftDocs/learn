@@ -53,7 +53,7 @@ A *controller* is a public class with one or more public methods known as *actio
 
 ## Get all pizzas
 
-The first REST verb that we need to implement is `GET` where a client could get all pizzas from the API. We can use the built in `[HttpGet]` attribute to define a method that will return the pizzas from our service.
+The first REST verb that we need to implement is `GET` where a client could get all pizzas from the API. We can use the built-in `[HttpGet]` attribute to define a method that will return the pizzas from our service.
 
 Replace the `// GET all action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
     
@@ -70,7 +70,7 @@ The preceding action:
 
 ## Retrieve a single pizza
 
-The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `id`. We can use the built in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service.
+The client may also want to request to get information about a specific pizza instead of the entire list. We can implement another `GET` action that requires an `id`. We can use the built-in `[HttpGet("{id}")]` attribute to define a method that will return the pizzas from our service.
 
 Replace the `// GET by Id action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
     

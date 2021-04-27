@@ -2,7 +2,7 @@ Let's continue extending our web API controller to add the ability to create(`PO
 
 ## Add a pizza
 
-To enable the endpoint to have the abilty for users to add pizza, we must implement the `POST` action using the `[HttpPost]`. By passing a `Pizza` into the method as a paramter, ASP.NET Core will automatically convert any `application/json` that is sent to the endpoint into a `Pizza` object. 
+To enable the endpoint to have the ability for users to add pizza, we must implement the `POST` action using the `[HttpPost]`. By passing a `Pizza` into the method as a parameter, ASP.NET Core will automatically convert any `application/json` that is sent to the endpoint into a `Pizza` object. 
 
 Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -34,7 +34,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Modify a pizza
 
-Modifying or updating a pizza in our inventory is similar to the `POST` method we just implemented, but will use the `[HttpPut]` attribute and take in the `id` in addition to the `Pizza` object that needs to be updated.
+Modifying or updating a pizza in our inventory is similar to the `POST` method we implemented, but will use the `[HttpPut]` attribute and take in the `id` in addition to the `Pizza` object that needs to be updated.
 
 Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -114,7 +114,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     dotnet run
     ```
 
-1.  Re-open the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **new Terminal** from the main menu.
+1.  Reopen the existing `httprepl` terminal or open new integrated terminal from Visual Studio Code by selecting **Terminal** > **new Terminal** from the main menu.
 
 1. If you opened a new terminal, connect to our web API by running the following command:
   
@@ -141,7 +141,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     ls
     ```
 
-    The preceeding command will output available APIs available for the `Pizza` endpoint:
+    The preceding command will output available APIs available for the `Pizza` endpoint:
 
     ```dotnetcli
         http://localhost:5000/Pizza> ls
@@ -187,7 +187,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     Server: Kestrel
     ```
 
-    To verify that the pizza was updated, we can re-run the `GET` action with the following command:
+    To verify that the pizza was updated, we can rerun the `GET` action with the following command:
 
     ```dotnetcli
     get 3
@@ -223,7 +223,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     Server: Kestrel
     ```
 
-    To verify that the pizza was remove, we can re-run the `GET` action with the following command:
+    To verify that the pizza was removed, we can rerun the `GET` action with the following command:
 
     ```dotnetcli
     get
@@ -252,4 +252,4 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
     ]
     ```
 
-We have now finished implementing and testing our newly created web API built with ASP.NET Core. Next, we will provide some best practices and additional learning modules.
+We have now finished implementing and testing our newly created web API built with ASP.NET Core. Next, we will provide some best practices and other learning modules.
