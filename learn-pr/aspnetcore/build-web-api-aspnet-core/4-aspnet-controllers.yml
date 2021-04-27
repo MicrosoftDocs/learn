@@ -8,7 +8,7 @@ metadata:
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Exercise - Implement CRUD operations
+title: ASP.NET Core Web API Controllers
 durationInMinutes: 4
 content: |
   [!include[](includes/4-aspnet-controllers.md)]
