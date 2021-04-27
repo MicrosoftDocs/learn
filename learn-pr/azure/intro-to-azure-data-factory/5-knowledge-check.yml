@@ -15,12 +15,12 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "When considering Azure Data Factory, which of the following statements about its components is true?"
+  - content: "When considering Azure Data Factory, which of the following statements about its components is accurate?"
     choices:
     - content: "Data movement is an example of a pipeline."
       isCorrect: false
       explanation: "Incorrect. Data movement is an example of an activity."
-    - content: "A dataset is used to represent a data store."
+    - content: "A data flow is used to represent a data store."
       isCorrect: false
       explanation: "Incorrect. A linked service represents a data store."
     - content: "A pipeline is a logical grouping of activities."

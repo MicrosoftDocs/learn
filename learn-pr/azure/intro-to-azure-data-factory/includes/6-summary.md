@@ -1,7 +1,7 @@
 Our goal in this module was to determine if Azure Data Factory would be a good choice for your data integration needs. You applied the following criteria to guide your decision:
 
 - Requirement for data integration
-- Coding skills
+- Coding resources
 - Support for multiple data sources
 - Serverless infrastructure
 

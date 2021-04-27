@@ -1,6 +1,6 @@
 Here, you'll learn about the components and interconnected systems of Azure Data Factory. You'll also learn more about how it works. This will help you determine how you can best use Azure Data Factory to meet your organization's requirements.
 
-Azure Data Factory is a collection of interconnected systems that combine to provide an end-to-end data analytics platform. In this unit, you'll learn about the following Azure Data Factory systems:
+Azure Data Factory is a collection of interconnected systems that combine to provide an end-to-end data analytics platform. In this unit, you'll learn about the following Azure Data Factory functions:
 
 - Connect and collect
 - Transform and enrich
@@ -16,9 +16,9 @@ You'll also learn about the key components of Azure Data Factory. These are:
 - Data flows
 - Integration runtimes
 
-## Azure Data Factory systems
+## Azure Data Factory functions
 
-Azure Data Factory consists of several systems that combine to provide your data engineers with a complete data analytics platform.
+Azure Data Factory consists of several functions that combine to provide your data engineers with a complete data analytics platform.
 
 ### Connect and collect
 
@@ -94,4 +94,11 @@ Azure Data Factory is comprised of the components described in the following tab
 | Data flows           | Enable your data engineers to develop data transformation logic without needing to write code. Data flows are run as activities within Azure Data Factory pipelines that use scaled-out Apache Spark clusters. |
 | Integration runtimes | Azure Data Factory uses the compute infrastructure to provide the following data integration capabilities across different network environments: data flow, data movement, activity dispatch, and SSIS package execution. In Azure Data Factory, an integration runtime provides the bridge between the activity and linked services. |
 
-These components work together to provide a complete end-to-end platform for data engineers.
+As indicated in the following graphic, these components work together to provide a complete end-to-end platform for data engineers. By using Data Factory, you can: 
+
+- Set triggers on-demand and schedule data processing based on your needs.
+- Associate a pipeline with a trigger, or manually start it as and when needed.  
+- Connect to linked services, such as on-premises apps and data, or Azure services via integration runtimes.
+- Monitor all of your pipeline runs natively in the Azure Data Factory user experience, or by using Azure Monitor. 
+
+:::image type="content" source="../media/adf-concepts.png" alt-text="A graphic depicts the interaction of the components described in the preceding table.":::
