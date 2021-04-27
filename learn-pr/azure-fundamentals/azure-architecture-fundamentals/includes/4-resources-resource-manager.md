@@ -30,7 +30,9 @@ When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource
 
 The following image shows the role Resource Manager plays in handling Azure requests.
 
+:::image type="content" source="../media/linkcheck_o-030b7d4d.gif":::
 :::image type="content" source="../media/consistent-management-layer-feef9259.png" alt-text="Diagram showing a Resource Manager request model.":::
+:::image type="content" source="../media/linkcheck_c-eacd4b8d.gif":::
 
 
 All capabilities that are available in the Azure portal are also available through PowerShell, the Azure CLI, REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
@@ -47,4 +49,4 @@ With Resource Manager, you can:
  *  Apply tags to resources to logically organize all the resources in your subscription.
  *  Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
 
-> \[!VIDEO https://www.microsoft.com/videoplayer/embed/RWyvOc\]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyvOc]
