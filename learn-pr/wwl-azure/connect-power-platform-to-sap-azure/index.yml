@@ -3,7 +3,7 @@ uid: learn.wwl.connect-power-platform-to-sap-azure
 metadata:
   title: Connect Power Platform to SAP on Azure
   description: "Connect Power Platform to SAP on Azure"
-  ms.date: 04/01/2021
+  ms.date: 04/12/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Describe and implement Microsoft Power Platform security and management policies, and monitor users and developers
 prerequisites: |
   Basic understanding of the Microsoft Power Platform. AZ-104 certification or equivalent knowledge. Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-sap-connect-power-platform.svg
 levels:
 - advanced
 roles:

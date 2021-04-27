@@ -3,7 +3,7 @@ uid: learn.language.rust-get-started.6-what-is-cargo
 metadata:
   title: What is Cargo?
   description: Learn about Cargo, the build system and package manager for Rust.
-  ms.date: 12/01/2020
+  ms.date: 04/26/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -11,15 +11,11 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
     ![Screenshot that shows the container settings for the web app with continuous deployment enabled](../media/7-continuous-deployment-annotated.png)
 
-    In the left menu pane, under **Services**, if you select **Webhooks** for your container registry, you'd see the newly configured webhook on the **Webhooks/Container registry** pane that appears.
-
-    ![Screenshot that shows the webhook for Container Registry](../media/7-acr-webhook.png)
-
 ## Update the web app and test the webhook
 
 ::: zone pivot="csharp"
 
-1. In the Azure Cloud Shell, go to the dotnet/SampleWeb/Pages folder. This folder contains the source code for the HTML pages that are displayed by the web app.
+1. In Azure Cloud Shell, go to the dotnet/SampleWeb/Pages folder. This folder contains the source code for the HTML pages that are displayed by the web app.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/dotnet/SampleWeb/Pages
@@ -59,13 +55,13 @@ The web app has been updated and redeployed automatically based on the new image
 
 ::: zone pivot="javascript"
 
-1. In the Azure Cloud Shell, go to the node/routes folder. This folder contains the source code that generates the pages that are displayed by the web app.
+1. In Azure Cloud Shell, go to the node/routes folder. This folder contains the source code that generates the pages that are displayed by the web app.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/node/routes
     ```
 
-1. Open `index.js` in the Cloud Shell editor.
+1. Open `index.js` in Cloud Shell editor.
 
     ```bash
     code index.js
@@ -81,14 +77,14 @@ The web app has been updated and redeployed automatically based on the new image
 
     Make sure to save the file when you are finished.
 
-1. In the Cloud Shell window, run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
+1. In Cloud Shell, run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/node
     az acr build --registry <container_registry_name> --image webimage .
     ```
 
-1. Go to the **Webhooks** pane of your container registry in the Azure portal, and select the single webhook in the list.
+1. In the left menu pane, under **Services**, select **Webhooks**. In the **Webhooks** pane of your container registry, and select the single webhook in the list.
 
 1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
 

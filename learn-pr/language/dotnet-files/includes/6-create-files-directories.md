@@ -16,7 +16,7 @@ If */stores/201* doesn't already exist, it will be created automatically. The `C
 
 ## Make sure directories exist
 
-Sometimes you'll need to check if a directory already exists. For example, you might need to check before you create a file in a specified directory to avoid an exception that could cause your program to stop abruptly.
+Sometimes, you'll need to check if a directory already exists. For example, you might need to check before you create a file in a specified directory to avoid an exception that could cause your program to stop abruptly.
 
 To see if a directory exists, you use the `Directory.Exists` method.
 

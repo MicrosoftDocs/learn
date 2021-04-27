@@ -24,4 +24,4 @@ The final stage in a simple Git workflow is to push changes to your remote. In t
 
     :::image type="content" source="../media/9-success.png" alt-text="Screenshot of the success message for push.":::
 
-Your commit has been pushed to origin/master.
+Your commit has been pushed to origin/main.

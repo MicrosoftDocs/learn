@@ -33,7 +33,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 1. Select **Review + create**, and after passing validation, then select **Create**.
 
-    Wait for the creation process to finish.
+    Wait for deployment to successfully complete.
 
 1. Select **Go to resource**.
 
@@ -45,7 +45,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
     :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. It shows fields such as the parent resource group, location, and DNS name.":::
 
-1. As an optional step, on the left nav bar, under the **Settings** section, examine some of the other features.
+1. As an optional step, on the left menu pane, under **Settings**, examine some of the other features.
 
     Although they're initially empty, here you'll find places where you can store keys, secrets, and certificates.
 
@@ -54,7 +54,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 ## Add a password to the key vault
 
-1. On the left nav bar, under **Settings**, select **Secrets**. Your key vault pane appears.
+1. On the left menu pane, under **Settings**, select **Secrets**. Your key vault pane appears.
 
 1. From the top menu bar, select **Generate/Import**. The **Create a secret** pane appears.
 
@@ -84,15 +84,15 @@ Here, you access the password from Key Vault two times. First, you access it fro
 
     :::image type="content" source="../media/5-portal-secret-value.png" alt-text="A screenshot of the Azure portal showing the secret value in the key vault.":::
 
-1. From the Cloud Shell pane to the side of the screen, run this command.
+1. From Cloud Shell, run this command.
 
     > [!NOTE]
-    > If you're not familiar with the Azure CLI, just follow along.
+    > Replace <**my-keyvault-NNN**> with the name you used earlier.
 
     ```azurecli
     az keyvault secret show \
       --name MyPassword \
-      --vault-name $(az keyvault list --query [0].name --output tsv) \
+      --vault-name <my-keyvault-NNN> \
       --query value \
       --output tsv
     ```

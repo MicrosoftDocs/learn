@@ -5,6 +5,7 @@ In the preceding exercise, you built the staging workflow for building and publi
 You'll build the tagged version by using a different workflow.
 
 In this exercise, you'll:
+
 - Build the Actions workflow
 - Create the trigger
 - Build and push the image
@@ -16,7 +17,7 @@ In this exercise, you'll:
 
 1. Below the header, select **set up a workflow yourself**.
 
-    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set up a workflow yourself link on the GitHub website.":::
+    :::image type="content" source="../media/6-1-actions-tab.png" alt-text="Screenshot that shows the Get started with GitHub Actions page and the Set-up a workflow yourself link on the GitHub website.":::
 
     The following file is shown in the GitHub editor:
 
@@ -60,7 +61,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-1. Change the `name` key to `Build and push the tagged build to production`. 
+1. Change the `name` key to `Build and push the tagged build to production`.
 
    Your file should look like this example:
 
@@ -74,8 +75,8 @@ In this exercise, you'll:
 
 1. Change the default triggers in the `on` key.
 
-1. Remove the second trigger and leave only the `push` tags. 
-    
+1. Remove the second trigger and leave only the `push` tags.
+
     The keys should look like this example:
 
     ```yaml
@@ -107,7 +108,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template. 
+1. In the `steps` key, delete the last two commands, which are only examples from the template.
 
    Your file should look like this example:
 
@@ -129,20 +130,19 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. In the right panel, search for **Build and push Docker images**. Select the first result published by Docker.
+1. In the right panel, search for **Docker Login**
 
-    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-1. In the panel for the search result item, select the copy icon to copy the usage YAML.
+    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login":::
 
-    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
+    > [!NOTE]
+    > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
 
-1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-   Your YAML file should look like this example:
-
-    ```yaml
-    name: Build and push the tagged build to production
+    ```yml
+    name: Build and push the latest build to production
 
     on:
       push:
@@ -156,70 +156,135 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
         steps:
           - uses: actions/checkout@v2
 
-          - name: Build and push Docker images
-            # You can pin to the exact commit or the version.
-            # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
-            uses: docker/build-push-action@v1.1.1
+          - name: Docker Login
+            # You may pin to the exact commit or the version.
+            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
+            uses: docker/login-action@v1.8.0
             with:
-              # Username used to log in to a Docker registry. If not set, no login occurs
-              username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
-              password: # optional
-              # Server address of Docker registry. If not set, it defaults to Docker Hub
+              # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
-              # Docker repository to tag the image with
-              repository:
-              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
+              # Username used to log against the Docker registry
+              username: # optional
+              # Password or personal access token used to log against the Docker registry
+              password: # optional
+              # Log out from the Docker registry at the end of a job
+              logout: # optional, default is true
+    ```
+
+1. Again, in the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
+
+    :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    Paste the copied YAML below the last key from the previously copied `docker-login` action.
+
+    Your YAML file should look like this example:
+
+    ```yaml
+    name: Build and push the latest build to production
+
+    on:
+      push:
+        tags:
+          - 'v*'
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Docker Login
+            # You may pin to the exact commit or the version.
+            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
+            uses: docker/login-action@v1.8.0
+            with:
+              # Server address of Docker registry. If not set then will default to Docker Hub
+              registry: # optional
+              # Username used to log against the Docker registry
+              username: # optional
+              # Password or personal access token used to log against the Docker registry
+              password: # optional
+              # Log out from the Docker registry at the end of a job
+              logout: # optional, default is true
+
+          - name: Build and push Docker images
+            # You may pin to the exact commit or the version.
+            # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
+            uses: docker/build-push-action@v2.4.0
+            with:
+              # List of extra privileged entitlement (eg. network.host,security.insecure)
+              allow: # optional
+              # List of build-time variables
+              build-args: # optional
+              # Builder instance
+              builder: # optional
+              # List of external cache sources for buildx (eg. user/app:cache, type=local,src=path/to/dir)
+              cache-from: # optional
+              # List of cache export destinations for buildx (eg. user/app:cache, type=local,dest=path/to/dir)
+              cache-to: # optional
+              # Build's context is the set of files located in the specified PATH or URL
+              context: # optional
+              # Path to the Dockerfile
+              file: # optional
+              # List of metadata for an image
+              labels: # optional
+              # Load is a shorthand for --output=type=docker
+              load: # optional, default is false
+              # Set the networking mode for the RUN instructions during build
+              network: # optional
+              # Do not use cache when building the image
+              no-cache: # optional, default is false
+              # List of output destinations (format: type=local,dest=path)
+              outputs: # optional
+              # List of target platforms for build
+              platforms: # optional
+              # Always attempt to pull a newer version of the image
+              pull: # optional, default is false
+              # Push is a shorthand for --output=type=registry
+              push: # optional, default is false
+              # List of secrets to expose to the build (eg. key=string, GIT_AUTH_TOKEN=mytoken)
+              secrets: # optional
+              # List of secret files to expose to the build (eg. key=filename, MY_SECRET=./secret.txt)
+              secret-files: # optional
+              # List of SSH agent socket or keys to expose to the build
+              ssh: # optional
+              # List of tags
               tags: # optional
-              # Automatically tags the built image with the Git reference as per the readme
-              tag_with_ref: # optional
-              # Automatically tags the built image with the Git short SHA as per the readme
-              tag_with_sha: # optional
-              # Path to the build context
-              path: # optional, default is .
-              # Path to the Dockerfile (Default is '{path}/Dockerfile')
-              dockerfile: # optional
               # Sets the target stage to build
               target: # optional
-              # Always attempt to pull a newer version of the image
-              always_pull: # optional
-              # Comma-delimited list of build-time variables
-              build_args: # optional
-              # Comma-delimited list of images to consider as cache sources
-              cache_froms: # optional
-              # Comma-delimited list of labels to add to the built image
-              labels: # optional
-              # Adds labels with Git repository information to the built image
-              add_git_labels: # optional
-              # Whether to push the image
-              push: # optional, default is true
+              # GitHub Token used to authenticate against a repository for Git context
+              github-token: # optional, default is ${{ github.token }}
     ```
 
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    This action gives you several options to adjust the usage. For more information, see the GitHub [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2.4.0?azure-portal=true).
 
 1. Rename the `name` key `Build and push production image`.
 
-1. You'll use only a handful of the parameters available for this action. Set the following actions and delete the others.
+1. You'll use only a handful of the parameters that are available for these actions.
 
     Add the values according to the following table:
 
-    |Key name     |Value                                           |
-    |-------------|------------------------------------------------|
-    |username     |`${{ secrets.ACR_LOGIN }}`                      |
-    |password     |`${{ secrets.ACR_PASSWORD }}`                   |
-    |registry     |`${{ secrets.ACR_NAME }}`                       |
-    |repository   |contoso-website                                 |
-    |tags         |latest                                          |
+    |Key name     | Used on action |Value                                           |
+    |-------------|--------|------------------------------------------------|
+    |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
+    |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
+    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
+    |repository   |`docker/build-and-push`|contoso-website                                 |
+    |tags         |`docker/build-and-push`|the version number obtained by `${GITHUB_REF#refs/tags}` |
+    |context      |`docker/build-and-push`|`.`                                             |
 
     You can delete all the other keys because we won't use them in this exercise.
-    
-    Your file should look like the following example:
+
+    Your file should look like this example:
 
     ```yaml
-    name: Build and push the tagged build to production
+    name: Build and push the latest build to production
 
     on:
       push:
@@ -233,22 +298,64 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
         steps:
           - uses: actions/checkout@v2
 
-          - name: Build and push production image
-            uses: docker/build-push-action@v1.1.1
+          - name: Docker Login
+            uses: docker/login-action@v1.8.0
             with:
+              registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
-              registry: ${{ secrets.ACR_NAME }}
+
+          - name: Build and push production images
+            uses: docker/build-push-action@v2.4.0
+            with:
+              context: .
+              tags: ${GITHUB_REF#refs/tags}
               repository: contoso-website
-              tag_with_ref: true
     ```
 
-    The `tag_with_ref` key is a handy parameter that automatically tags the image with the tag name. As described in the documentation, it:
+1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
 
-    - Automatically tags the built image with the git reference. The format of the tag depends on the type of git reference. All forward slashes are replaced with `-`.
-    - For pushes to a branch, the reference will be `refs/heads/{branch-name}` and the tag will be `{branch-name}`. If `{branch-name}` is master, the tag will be `latest`.
-    - For pull requests, the reference will be `refs/pull/{pull-request}` and the tag will be `pr-{pull-request}`.
-    - For git tags, the reference will be `refs/tags/{git-tag}` and the tag will be `{git-tag}`.
+    To set this action, copy the below snippet and paste it between the checkout and the login actions.
+
+    ```yml
+    - name: Set up Buildx
+      uses: docker/setup-buildx-action@v1
+    ```
+
+    Your final file should be like this:
+
+    ```yaml
+    name: Build and push the latest build to production
+
+    on:
+      push:
+        tags:
+          - 'v*'
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+
+          - name: Docker Login
+            uses: docker/login-action@v1.8.0
+            with:
+              registry: ${{ secrets.ACR_NAME }}
+              username: ${{ secrets.ACR_LOGIN }}
+              password: ${{ secrets.ACR_PASSWORD }}
+
+          - name: Build and push production images
+            uses: docker/build-push-action@v2.4.0
+            with:
+              context: .
+              tags: ${GITHUB_REF#refs/tags}
+              repository: contoso-website
+    ```
 
 1. To commit the changes, select the green **Start commit** button at the top right. Enter a description for the commit, and then select the **Commit new file** button.
 
