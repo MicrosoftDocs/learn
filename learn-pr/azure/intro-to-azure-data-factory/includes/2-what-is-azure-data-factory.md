@@ -36,7 +36,7 @@ Azure Data Factory is a cloud-based data integration service that's designed to 
 
 | Community                             | Description of community needs                               |
 | ------------------------------------- | ------------------------------------------------------------ |
-| Big data community                    | This community relies on technologies for managing large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure SQL Data Warehouse, Azure Blobs, Azure Data Lake, Azure HD Insight, Azure Databricks, and Azure Machine Learning. |
+| Big data community                    | This community relies on technologies for managing large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure SQL Data Warehouse, Azure Blobs, Azure Data Lake, Azure HDInsight, Azure Databricks, and Azure Machine Learning. |
 | Relational data warehousing community | This community typically relies on technologies such as Microsoft SQL Server. SQL Server Integration Services (SSIS) is often used to create SSIS packages. For this community, Azure Data Factory provides the ability to run SSIS packages on Azure, thereby letting them access both cloud and on-premises data services. |
 
 > [!NOTE]
