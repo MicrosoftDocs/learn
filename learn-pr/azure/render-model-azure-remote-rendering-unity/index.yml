@@ -2,7 +2,7 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
   title: Render a model with Azure Remote Rendering
-  description: Create an Azure Remote Rendering session and render a 3D model.
+  description: Create an Azure Remote Rendering session and render a 3D model to experience the power of mixed reality. You will create this project in Unity and can deploy to HoloLens. You can also integrate MRTK features where appropriate.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh

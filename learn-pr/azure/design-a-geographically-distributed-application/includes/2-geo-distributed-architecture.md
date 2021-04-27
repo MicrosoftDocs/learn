@@ -1,6 +1,6 @@
 Azure is a global system. By designing an architecture that is present in more than one Azure region, we can build an application that is resilient to even region-wide disasters.
 
-Your shipment tracking portal is scalable because it's built using a range of Azure resources that can scale. It's also resilient to many failures because its components can have multiple instances. However, your board of directors has become concerned a large-scale disaster could cause an interruption because the portal is entirely contained in the East US Azure region. You want to propose a modified architecture that can fail over to a second region if East US fails.
+Your shipment tracking portal is scalable because it's built using a range of Azure resources that can scale. It's also resilient to many failures because its components can have multiple instances. However, your board of directors has become concerned that a large-scale disaster could cause an interruption because the portal is entirely contained in the East US Azure region. You want to propose a modified architecture that can fail over to a second region if East US fails.
 
 Here, we'll learn how to adjust our application's architecture to support a geographically distributed application. We'll also see why such architecture is advantageous for business-critical applications.
 
@@ -14,7 +14,7 @@ The tracking portal's design is based on the reference architecture shown in the
 
 Notice how our application makes use of a single Azure resource group. This resource group enables us to group and manage all of our resources logically, and simplifies management. We chose to deploy this resource group to the East US region. Even though the resource group doesn't limit us to use the same Azure region for the included resources, we've decided to use the East US region for all resources deployed in our application.
 
-Our application uses three categories of Azure resources. Let's have a look at each category and see which resources are in use.
+Our application uses three categories of Azure resources. Let's have a look at each category, and see which resources are in use.
 
 ### Network components
 
@@ -24,7 +24,7 @@ The tracking portal uses the following networking services.
 | ---| ---|
 | **Azure DNS** | We've configured Azure DNS to host our DNS records in Azure. Azure DNS enables us to manage our DNS records using our Azure credentials in the Azure portal. |
 | **Application Gateway** | We've configured the Application Gateway load balancer to balance traffic between multiple instances of the web front end. This service is localized to one Azure region. |
-| **Azure CDN**  | We've configured Azure CDN to maximize the delivery of unsecured static content, such as graphics for our website's content. This global service caches static content at points of presence all around the world. |
+| **Azure CDN**  | We've configured Azure CDN to maximize the delivery of unsecured static content, such as graphics for our website's content. This global service caches static content at points of presence around the world. |
 |||
 
 ### Application components
@@ -34,12 +34,12 @@ The tracking portal uses the following services to support code, cache, and inte
 | Service | Description |
 | ---| ---|
 | **Azure Active Directory** | Users access the tracking portal using Azure AD accounts. The directory and account are automatically replicated globally. |
-| **Azure App Service** | The tracking portal uses two Azure App Services. The first runs a set of dynamic web pages and the second a web API. |
+| **Azure App Service** | The tracking portal uses two Azure App Services. The first runs a set of dynamic web pages, and the second a web API. |
 | **Azure Function Apps** | The tracking portal uses Azure Function Apps to run all background tasks. Some of these tasks run on a regular schedule, and other tasks operate on the messages in a queue. |
 | **Azure Storage Queues** | The tracking portal uses Azure Storage Queues in conjunction with Azure Function Apps. The tracking portal places generated messages onto the queue from where the Function apps process these messages.  |
 | **Redis cache** | The tracking portal uses a Redis cache between the front-end app service and the data storage systems to maximize the performance of queries. |
 | **Azure Blob Storage** | Static content, such as graphics and video files, are kept as Binary Large Objects (Blobs) in an Azure Storage account, and are delivered through the Azure CDN. |
-| **Azure Search** | We've enabled Azure Search on the tracking portal. Azure Search allows us to make all content searchable, and provide search suggestions and fuzzy search results to our users. |
+| **Azure Search** | We've enabled Azure Search on the tracking portal. Azure Search enables us to make all content searchable, and provide search suggestions and fuzzy search results to our users. |
 |||
 
 ### Data storage components
@@ -56,13 +56,13 @@ The tracking portal uses the following persisted storage services.
 
 The existing architecture for the tracking portal is designed to allow for scalability and availability.
 
-For example, if demand is high and responses to user web requests are slow, you can consider adding more instances of the front-end web app in the App Service. Here, the Application Gateway can route requests to these newly created instances.
+For example, if demand is high, and responses to user web requests are slow, you can consider adding more instances of the front-end web app in the App Service. Here, the Application Gateway can route requests to these newly created instances.
 
-However, there are scenarios in which our architectural design will have challenges to overcome or even fail. Let's have a look at each scenario to get a better understanding of the impact on the tracking portal.
+However, there are scenarios in which our architectural design will have challenges to overcome, or even fail. Let's have a look at each scenario to get a better understanding of the impact on the tracking portal.
 
 ### Regional failures
 
-Some significant events have the potential to interrupt an entire Azure region. Azure datacenters are designed to be highly resilient, but a massive weather event such as a hurricane or flood can disrupt service from the region.
+Some significant events have the potential to interrupt an entire Azure region. Azure datacenters are designed to be highly resilient, but a massive weather event, such as a hurricane or flood, can disrupt service from the region.
 
 These events are unusual occurrences, and many companies feel they can sustain that risk. However, the consequence of a regional failure disabling the tracking portal is of such a high-risk the company's executive team has decided to eliminate the risk.
 
@@ -114,11 +114,11 @@ Let's examine, at a high level, how you've modified the original architecture. W
 
 Azure DNS and Azure CDN are by default global systems and already resilient to regional failures. We'll leave them in place.
 
-When we create an Azure Application Gateway, we assign the service to a single region. We'll remove this vulnerability by replacing this service with Azure Front Door.  Front Door can poll multiple App Services and will handle the App Service failover from the East US region to the West US region.
+When we create an Azure Application Gateway, we assign the service to a single region. We'll remove this vulnerability by replacing this service with Azure Front Door. Front Door can poll multiple App Services, and will handle the App Service failover from the East US region to the West US region.
 
-### Application Services
+### Application services
 
-Azure AD is a global system and needs no modification.
+Azure AD is a global system, and needs no modification.
 
 Azure Storage accounts can be configured to replicate content to multiple regions. We'll use one of the geo-redundant storage options to change our configuration.
 
@@ -126,10 +126,10 @@ The other components, which include the App Service, Function Apps, the Redis ca
 
 ### Data storage
 
-Azure SQL Database and Azure Cosmos DB both support geo-replication of data to other regions.  We'll configure these services to replicate East US data to the equivalent services in West US.
+Azure SQL Database and Azure Cosmos DB both support geo-replication of data to other regions. We'll configure these services to replicate East US data to the equivalent services in West US.
 
 ## Regional pairs
 
 An Azure region is an area with a single geography that contains one or more Azure datacenters. All regions pair with other regions in the same geography. Within these pairs, updates and planned maintenance are done on only one region at a time. If there's a failure that affects multiple regions, at least one region in each pair is prioritized for rapid recovery.
 
-The best practice is to place a two-region architecture for your app on the two regions in a regional pair. As an example, East US pairs with West US. Our proposed design uses East US for its active region and West US for its standby region.
+The best practice is to place a two-region architecture for your app on the two regions in a regional pair. As an example, East US pairs with West US. Our proposed design uses East US for its active region, and West US for its standby region.

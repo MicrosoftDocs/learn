@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: summary
+  ms.date: 02/16/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]

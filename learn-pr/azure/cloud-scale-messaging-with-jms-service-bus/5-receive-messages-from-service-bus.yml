@@ -3,7 +3,7 @@ uid: learn.azure.cloud-scale-messaging-jms-service-bus.5-receive-messages-from-s
 title: Exercise - Receive messages from Azure Service Bus
 metadata:
   title: Exercise - Receive messages from Azure Service Bus
-  description: Write a Spring Boot app to receive messages to Azure Service Bus
+  description: Write a Spring Boot app to receive messages from Azure Service Bus.
   ms.date: 03/31/2021
   author: axisc
   ms.author: aschhab

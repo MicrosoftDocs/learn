@@ -21,7 +21,7 @@ The caller of the component sets props by using the same syntax as an HTML attri
 ```html
 <!-- inside parent component -->
 <template>
-    <user-display :name='Cheryl' :age='28'></user-display>
+    <user-display name='Cheryl' age='28'></user-display>
 </template>
 <script>
 import UserDisplay from './UserDisplay.vue';
@@ -36,7 +36,7 @@ export default {
 The values `Cheryl` and `28` are bound to the `name` and `age` property, respectively, through an attribute binding.
 
 > [!NOTE]
-> Vue.js will convert the component named `UserDisplay` into the kebab-cased `user-display`. Also, the colon (`:`) in front of each name indicates that we're setting a Vue.js property.
+> Vue.js will convert the component named `UserDisplay` into the kebab-cased `user-display`.
 
 ## Restricting types
 
@@ -61,7 +61,7 @@ Notice how you're creating a prop object with the types for `name` and `age`. Th
 
 ```html
 <!-- inside parent component -->
-<user-display :name='Cheryl' :age='28'></user-display>
+<user-display name='Cheryl' age='28'></user-display>
 ```
 
 However, if you set data types to values that don't match with the schema, like passing a number to `name`, you'll get a warning in the console. The warning will ask you to take action.

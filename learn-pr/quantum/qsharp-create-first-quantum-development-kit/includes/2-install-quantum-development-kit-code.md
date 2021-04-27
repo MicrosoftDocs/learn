@@ -54,19 +54,29 @@ To verify the installation, here you create a basic Q# application.
 Project templates enable you to quickly create Q# applications, libraries, and unit tests.
 
 1. In Visual Studio Code, on the **View** menu, select **Command Palette**.
+
+1. Enter **Q#: Install project templates**. The templates are installed successfully once the pop-up window appears on the bottom right corner:
+
+   ![Screenshot of pop-up installed templates.](../media/install_project_templates.png)
+
 1. Enter **Q#: Install command line project templates**.
+
 
 ### Create a project
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create new project**.
 
+
 > [!NOTE]
 > If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
 
 1. Select **Standalone console application**.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
-1. From the window that appears at the bottom, select **Open new project**.
+1. From the pop-up window that appears at the bottom right corner, select **Open new project**:
+
+   ![Screenshot of pop-up create project.](../media/create_new_project.png)
+
 1. From the **View** menu, select **Explorer**.
 
     You see two files: *QuantumHello.csproj* and *Program.qs*.
@@ -108,4 +118,6 @@ Great work. You just ran your first Q# program!
 You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
-> If you run into any issues with installation of the QDK, take a look at the [QDK documentaiton](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or to seek help for troubleshooting visit [GitHub issues](https://github.com/MicrosoftDocs/quantum-docs/issues).
+
+> If you run into any issues with installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or to seek help for troubleshooting visit [GitHub issues](https://github.com/MicrosoftDocs/quantum-docs/issues).
+

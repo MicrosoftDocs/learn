@@ -1,18 +1,20 @@
-You will now create a Spring Boot application that will send messages to a Service Bus queue.
+You'll now create a Spring Boot application that will send messages to an Azure Service Bus queue.
 
 ## Create a Spring Boot project
 
-To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the command line:
+To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the following command line:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d dependencies=web -d baseDir=spring-sender-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
-## Send messages to an Azure Service Bus queue
+## Send messages to a Service Bus queue
 
-### Add the maven dependency for Azure Service Bus Spring Boot Starter
+Now, let's send some messages to a Service Bus queue.
 
-In the `pom.xml` file in your `spring-sender-application`, add the below under dependencies:
+### Add the maven dependency for Service Bus Spring Boot Starter
+
+In the `pom.xml` file in your `spring-sender-application`, add the following command under dependencies:
 
 ```xml
 <dependencies>
@@ -28,7 +30,7 @@ In the `pom.xml` file in your `spring-sender-application`, add the below under d
 
 ### Add the configuration parameters
 
-In the `application.properties` file in your `spring-sender-application`, add the below parameters:
+In the `application.properties` file in your `spring-sender-application`, add the following parameters:
 
 ```java
 spring.jms.servicebus.connection-string=<xxxxx>
@@ -36,9 +38,9 @@ spring.jms.servicebus.idle-timeout=20000
 ```
 
 > [!NOTE]
-> Please be sure to insert custom values for the configuration.
+> Be sure to insert custom values for the configuration.
 >
-> To obtain the Service Bus connection string, run the below command on the Azure CLI and use the `Primary Connection String`.
+> To obtain the Service Bus connection string, run the following command on the Azure CLI and use the `Primary Connection String`.
 >
 >   ```bash
 >    az servicebus namespace authorization-rule keys list \
@@ -48,11 +50,11 @@ spring.jms.servicebus.idle-timeout=20000
 >   ```
 >
 
-### Add code to send messages to Azure Service Bus
+### Add code to send messages to Service Bus
 
-Next we will add the business logic to send messages to an Azure Service Bus queue.
+Next, we'll add the business logic to send messages to a Service Bus queue.
 
-In the directory `src/main/java/com/example/demo`, create a `SendController.java` file that has the below content:
+In the directory `src/main/java/com/example/demo`, create a `SendController.java` file that has the following content:
 
 ```java
 package com.example.demo;
@@ -81,13 +83,13 @@ public class SendController {
 
 ## Run the application locally
 
-You can now run your Spring Boot application by running the below command:
+You can now run your Spring Boot application by running the following command:
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Once the application start-up completes, you can click on the below links to send messages to the Service Bus queue.
+After the application startup completes, you can select the following links to send messages to the Service Bus queue.
 
 ```html
 http://localhost:8080/messages?message=Hello
@@ -97,14 +99,14 @@ http://localhost:8080/messages?message=HelloAgain
 http://localhost:8080/messages?message=HelloOnceAgain
 ```
 
-You can change the string value in the message query parameter and send any text to the Azure Service Bus queue.
+You can change the string value in the message query parameter and send any text to the Service Bus queue.
 
-The browser will display whatever is passed as the message query string parameter, which implies that the message has been accepted by Azure Service Bus.
+The browser will display whatever is passed as the message query string parameter, which implies that the message has been accepted by Service Bus.
 
-## See the messages on the Azure Service Bus queue
+## See the messages on the Service Bus queue
 
 > [!NOTE]
-> While viewing the messages helps understand the send side of the messages, this step is optional.
+> Although viewing the messages helps to understand the send side of the messages, this step is optional.
 >
 > These messages will be received in the next step of this tutorial.
 >
@@ -112,11 +114,11 @@ The browser will display whatever is passed as the message query string paramete
 You can proceed to view the messages in the Service Bus explorer in the Azure portal:
 
 1. Browse to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-2. Navigate to the specific Service Bus namespace.
-3. In the left menu navigation, click on **Queues**, and then select the appropriate queue (i.e. test-queue-jms for this demo).
-4. Then click on **Service Bus explorer** on the left navigation menu.
-5. Click on **Peek**, select **Queue**, and then hit the **Peek** button.
+1. Go to the specific Service Bus namespace.
+1. In the left pane, select **Queues**, and then select the appropriate queue. For example, the queue for this demo is **test-queue-jms**.
+1. In the left pane, select **Service Bus explorer**.
+1. Select **Peek**, select **Queue**, and then select **Peek**.
 
-Following the above steps should give the below view.
+After you finish the preceding steps, you should see this view:
 
 :::image type="content" source="../media/service-bus-explorer-peek-view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/service-bus-explorer-peek-view.png":::
