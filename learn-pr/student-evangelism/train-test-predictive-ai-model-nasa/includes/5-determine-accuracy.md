@@ -16,12 +16,12 @@ The following code calculates and displays the accuracy of our AI model to class
 The output displays the accuracy with 16 digits in the fractional part of the decimal:
 
 ```output
-0.8020833432674408
+0.935
 ```
 
-The output shows our model has 80% accuracy in making predictions. We want a high value. The higher the accuracy means the model is doing a good job of making predictions.
+The output shows our model has 93.5% accuracy in making predictions. We want a high value. The higher the accuracy means the model is doing a good job of making predictions.
 
-Even though 96% is high ((**Sarah** -- 96% shown in original text)), you can do a few things to increase the accuracy even more:
+Even though 93.5% is high, you can do a few things to increase the accuracy even more:
 
 - Add more images and continue training the AI model.
 - Increase the number of `epoch` training iterations for deep learning.
@@ -52,4 +52,3 @@ Now that you've created the neural network and tested the accuracy, save your mo
    ```python
    torch.save(model, 'aerialmodel.pth')
    ```
-
