@@ -85,7 +85,7 @@ Create an application rule collection with rules to allow Windows Virtual Deskto
     |---------|---------|
     |Name     |     allow-virtual-desktop    |
     |Source type    | IP address        |
-    |Source     |  Source IP address range is host pool Vnet     |
+    |Source     |   IP address of host pool VNet     |
     |FQDN tags    |  Windows Virtual Desktop       |
 
 1. Under **Rules**, in the **Target FQDNs** section, enter the following information.
@@ -94,7 +94,7 @@ Create an application rule collection with rules to allow Windows Virtual Deskto
     |---------|---------|
     |Name     |     allow-storage-service-bus-accounts    |
     |Source type    | IP address        |
-    |Source     |  Source IP address range is host pool VNet     |
+    |Source     |   IP address of host pool VNet     |
     |Protocol:Port   |   https     |
     |Target FQDNs   | *xt.blob.core.windows.net, *eh.servicebus.windows.net, *xt.table.core.windows.net   |
 
@@ -135,9 +135,9 @@ Typically, in a production deployment, you'd create a network rule collection an
     |Name     |     Allow-KMS   |
     |Protocol   |  TCP    |
     |Source type    |  IP address       |
-    |Source   |    Source IP address range is host pool VNet       |
-    |Destination type  |        |
-    |Destination address  |  IP address       |
+    |Source   |     IP address of host pool VNet       |
+    |Destination type  |  IP address       |
+    |Destination address  | Use the Azure Global KMS IP address: 23.102.135.246    |
     |Destination Ports  |  1688   |
 
 2. Select **Add**.
