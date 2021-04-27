@@ -1,3 +1,5 @@
+> [!VIDEO https://www.youtube.com/embed/tSebLz1hNpA]
+
 Variables are one of the fundamental building blocks of programs written in Python. Variables hold data in memory. They have names, and they can be referenced by name. Variables also have *types* which specify what type of data they can store, such as string and integer, and they can be used in expressions that use *operators* such as `+` and `-` to manipulate their values.
 
 In Python, a variable is declared and assigned a value using the assignment operator `=`. The variable being assigned to is on the left-hand side of the operator, and the value being assigned, which can be an expression such as `2 + 2` and can even include other variables, is on the right-hand side:
