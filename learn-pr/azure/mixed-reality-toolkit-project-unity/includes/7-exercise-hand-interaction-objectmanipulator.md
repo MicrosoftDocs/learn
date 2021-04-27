@@ -24,9 +24,9 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 ## Add a material to the Cube
 
-1. In the **Project** window, enter **MRTK_Standard_Blue** into the search bar.
+1. In the **Project** window, enter **MRTK_Standard_Blue** into the search bar. Change the Search location to **Packages**.
 
-    :::image type="content" source="../media/search-mrtk-standard-blue.png" alt-text="Screenshot of the Project window with the search bar highlighted. The phrase m r t k underscore standard underscore blue is entered into the search bar.":::
+    :::image type="content" source="../media/search-mrtk-standard-blue.png" alt-text="Screenshot of the Project window with the search bar highlighted. The phrase m r t k underscore standard underscore blue is entered into the search bar. The search location is highlighted. Packages is selected as the location.":::
 
 1. Select the **MRTK_Standard_Blue** material and drag onto the Cube. This will change the color of the cube to blue.
 
@@ -101,8 +101,6 @@ To scale an object, at least one hand needs to grab the object while the other i
 
 1. Grab the cube with the left hand by first pressing the **shift** key on your keyboard and using the mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube.
 
-    :::image type="content" source="../media/grab-left-hand.png" alt-text="Screenshot of the Game window with the blue cube in the center slightly lifted on the left side. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is grabbing the left middle side of the cube. The diagnostics tools display below the cube.":::
-
-1. While grabbing the cube with the left hand active, left click the mouse and drag to the left to increase the size of the cube. Likewise, to decrease the size of the cube, drag the mouse to the right.
+    While grabbing the cube with the left hand active, left click the mouse and drag to the left to increase the size of the cube. Likewise, to decrease the size of the cube, drag the mouse to the right.
 
     :::image type="content" source="../media/scale-cube.png" alt-text="Screenshot of the Game window with the blue cube slightly dragged to the left and larger in size. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is grabbing the lower left side of the cube. The diagnostics tools display below the cube.":::

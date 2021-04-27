@@ -1,16 +1,14 @@
-With the Rust programming language, you can build reliable and efficient systems software like networking software (such as web servers, mails servers, and web browsers) and systems software (such as compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography). You can also build games, command-line programs, web assembly programs, and applications meant for embedded devices.
+With the Rust programming language, you can build reliable and efficient systems software. Developers use Rust for networking software like web servers, mails servers, and web browsers. Rust is also present in compilers and interpreters, virtualization and software containers, databases, operating systems, and cryptography. You can use Rust to build games, command-line programs, web-assembly programs, and applications for embedded devices.
 
-Rust is a safe alternative to existing systems software languages like C and C++. Like C and C++, Rust does *not* have a large runtime or garbage collector, which contrasts it with almost all other modern languages. However, unlike C and C++, Rust guarantees memory safety. This means Rust prevents many of the bugs related to incorrect use of memory you encounter in C and C++. 
+Rust is a safe alternative to existing systems software languages like C and C++. Like C and C++, Rust *doesn't* have a large runtime or garbage collector, which contrasts it with almost all other modern languages. However, unlike C and C++, Rust guarantees memory safety. Rust prevents many of the bugs related to incorrect use of memory you might see in C and C++. 
 
-Rust strikes a unique balance among performance, safety, and expressivity. No matter what your programming background, you'll like find Rust has something to offer!
+Rust strikes a unique balance among performance, safety, and implementation expressions. No matter what your programming background, you'll likely find Rust has something to offer!
 
 ## What's the best way to learn Rust?
 
-Rust requires a bit of theoretical knowledge before being able to productively write Rust code on your own. Make sure to follow along with this course and/or other Rust learning resources before going off on your own. Once you reach a basic understanding of the language, you'll want to practice writing code as much as possible. Type along with the exercises in this module and the others in this learning path.
+Rust requires a bit of theoretical knowledge before you can productively write Rust code. Make sure to follow along with this course or other Rust learning resources before you start your development. After you reach a basic understanding of the language, practice writing code as much as possible. Type along with the exercises in this module and the others in this learning path.
 
-We'll begin by learning small, foundational concepts, which we'll then build on with continual
-practice and exploration. You'll build a few projects along the way, and by the end, you'll have a
-solid grasp of the language.
+We'll begin by learning the small, foundational concepts of the language. Then we'll build on the foundation with practice exercises and exploration. You'll create a few projects along the way, and by the end of the lesson, you'll have a solid grasp of the language.
 
 ## Learning objectives
 
