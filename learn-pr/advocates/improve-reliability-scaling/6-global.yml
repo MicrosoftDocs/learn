@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'If, after scaling up or implementing read replicas, your database resources still don’t meet the needs of your system, what is the next option?'
+  - content: 'If after scaling up or implementing read replicas, your database resources still don’t meet the needs of your system, what is the next option?'
     choices:
     - content: 'in-memory caching'
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: 'Decoupling is a change that can help with differing resource needs between different dependent services.'
     - content: 'sharding'
       isCorrect: true
-      explanation: 'Correct. This is a way to scale out our database resources.'
+      explanation: 'Correct. This technique is a way to scale out our database resources.'
 
   - content: 'What consistency model offers a linearizability guarantee?'
     choices:

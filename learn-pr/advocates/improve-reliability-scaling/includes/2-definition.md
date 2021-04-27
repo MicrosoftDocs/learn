@@ -1,6 +1,6 @@
 In the business world, growth can be beneficial. However, when growth happens too
 quickly, and when you haven’t adequately prepared for it, growth can create
-issues. One of those is the impact on the reliability of applications and
+issues. One of these issues is the impact on the reliability of applications and
 services that weren’t designed to handle a large increase in traffic.
 
 To your customers and users, an outage is an outage. They don’t know or
@@ -23,10 +23,9 @@ and briefly review some basic concepts and terms related to scaling.
 The good news is that making your app more scalable may also make it more
 reliable. For example, if your system autoscales, then given a component
 failure on a single virtual machine, the autoscaling service will provision
-another instance to meet your minimum virtual machine (VM) count requirements. This means
-your system is more reliable. In another example, if you’re leveraging
-higher-level services, such as Azure Storage, that are inherently scalable,
-these have been built to be reliable, so your data will be replicated.
+another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, if you’re leveraging
+higher-level services, such as Azure Storage that are inherently scalable,
+these services have been built to be reliable, so your data will be replicated.
 
 Here's an analogy: Think of the accessibility ramps that you often see
 outside buildings that were initially designed to accommodate people in
@@ -142,7 +141,7 @@ customers. With Cognitive services, we select the tier and that tier has a
 maximum number of requests per second. After we reach either of these, clients
 are going to be throttled.
 
-Will a big spike in traffic, perhaps due to a product launch, make us hit
+Will a significant spike in traffic, like launching a new product, make us hit
 these limits? Right now, we don’t know. This is another matter we'll
 review later in this module.
 

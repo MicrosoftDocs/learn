@@ -13,7 +13,7 @@ for this:
 -   Although there are probably plenty of resources in the cloud to meet
     your needs, not all of the services you consume scale automatically or
     are inherently scalable. Thus, you will need to be aware of service
-    limits, and know when you’re going to need to scale things up.
+    limits, and know when you’re going to need to scale up services and resources.
 
 -   Whereas cloud resources might be unlimited, your budget probably isn’t.
     You have to consider cost, and your friends in the Finance department
@@ -56,7 +56,7 @@ although you will still need to be aware of the measurements for cost
 reasons.
 
 Throughput is pre-provisioned, and you use a metric called _Request Units_
-to measure this. Request Units (RUs) are a mixture of memory, CPU, and IOPS.
+to measure this throughput. Request Units (RUs) are a mixture of memory, CPU, and IOPS.
 This gives you a single metric by which you can plan capacity. You
 provision RUs in increments of 100 RUs per second.
 

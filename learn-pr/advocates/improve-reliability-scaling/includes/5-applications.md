@@ -48,14 +48,14 @@ servers, App Service, or in containers.
 
 The product currently runs on a single VM, connected to a
 single Azure SQL database. You need to enable this VM to scale out. You can
-do this using Azure VM scale sets, which lets you create and
+do this using Azure virtual machine scale sets, which lets you create and
 manage a group of identical, load balanced VMs. Because you’ll now have more
 than one VM, you’ll need to introduce a load balancer to distribute traffic
 across the VMs.
 
 ### Virtual machine scale sets
 
-By leveraging VM scale sets over single VMs, you get a few benefits:
+By leveraging virtual machine scale sets over single VMs, you get a few benefits:
 
 -   You can autoscale based on host metrics, in-guest metrics, application
     insights, or by a schedule.
@@ -65,7 +65,7 @@ By leveraging VM scale sets over single VMs, you get a few benefits:
     application more reliable and protect it from datacenter failures. New
     instances within a scale set will be automatically evenly distributed
     across AZs.
--   Adding a load balancer becomes easier. VM scale sets
+-   Adding a load balancer becomes easier. Virtual machine scale sets
     support the use of Azure Load Balancer for basic Layer 4 traffic
     distribution and Azure Application Gateway for more advanced L7 traffic
     distribution and SSL termination.
