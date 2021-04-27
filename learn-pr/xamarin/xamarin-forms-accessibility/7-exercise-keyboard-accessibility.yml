@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-accessibility.7-exercise-keyboard-accessibility
 metadata:
-  title: Exercise - Keyboard accessibility with TabIndex
-  description: Exercise - Add keyboard accessibility with TabIndex
+  title: Exercise - View ordering and keyboard accessibility
+  description: Exercise - Optimize view ordering and keyboard accessibility
   ms.date: 04/20/2021
   author: jamont
   ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   
-title: Exercise - Keyboard accessibility with TabIndex
-durationInMinutes: 8
+title: Exercise - View ordering and keyboard accessibility
+durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-keyboard-accessibility.md)]

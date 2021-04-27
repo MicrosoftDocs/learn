@@ -67,6 +67,8 @@ AutomationProperties.SetIsInAccessibleTree(button, true);
 AutomationProperties.SetHelpText(button, "Tap to toggle the activity indicator");
 ```
 
+> Note: Each platform may have a different order of how the `HelpText` is read back to the user when using a screen reader.
+
 ## LabeledBy
 
 This attached property allows another element to specify information for accessibility for the current element. A common use case would be where a `Label` is placed above an `Entry` to represent what the user needs to enter. This can be set on an element in the XAML:
@@ -85,5 +87,7 @@ var entry = new Entry();
 AutomationProperties.SetIsInAccessibleTree(entry, true);
 AutomationProperties.SetLabeledBy(entry, nameLabel);
 ```
+
+> Note: The `AutomationProperties.LabeledByProperty` is not yet supported on iOS and the `AutomationProperties.NameProperty` must be used.
 
 Now that you have an understanding of the available automation properties that Xamarin.Forms provides we can start to implement some of them in our project.

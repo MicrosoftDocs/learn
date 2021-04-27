@@ -45,35 +45,25 @@ The default tab order of controls is the same order in which they are listed in 
 
 ## Set the tab order
 
-1. Set the `TabIndex` on each of the `Entry` elements to correct the data entry accessibility of the names.
+1. Reorder the `Entry` elements so they in the order in which the screen reader should read them back.
 
 
 ```xaml
 <Entry Grid.Row="1" 
-        Placeholder="Enter forename"
-        TabIndex="1"/>
+        Placeholder="Enter forename"/>
+        
+<Entry Grid.Row="2" 
+        Placeholder="Enter surname"/>
+
 <Entry
     Grid.Row="1"
     Grid.Column="1"
-    Placeholder="Enter forename"
-    TabIndex="3"/>
-        
-<Entry Grid.Row="2" 
-        Placeholder="Enter surname"
-        TabIndex="2"/>
+    Placeholder="Enter forename"/>
+
 <Entry
     Grid.Row="2"
     Grid.Column="1"
-    Placeholder="Enter surname"
-    TabIndex="4"/>
-```
-
-1. To ensure that the `Button` is read after the `Grid` with `Entry` elements add a `TabIndex` to the `Button`:
-
-```xaml
-<Button AutomationProperties.HelpText="Tap to submit project information to backend" 
-        Text="Submit"
-        TabIndex="5"/>
+    Placeholder="Enter surname"/>
 ```
 
 Now, when you run the application you will see the new column-based tab ordering as navigating through the elements.

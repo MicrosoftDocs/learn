@@ -80,10 +80,11 @@ When you run the application again you will see that when the image gains focus,
 The `Entry` currently has no information about what the user should enter. There is a `Label` directly above the `Entry`, which provides the descriptor and can be used as text that the screen reader can read out loud by using the `AutomationProperties.LabeledBy` property. 
 
 
-1. Add the following property to the `Entry`:
+1. Add the following properties to the `Entry`:
 
 ```xaml
 AutomationProperties.LabeledBy="{x:Reference LabelName}"
+AutomationProperties.Name="{OnPlatform iOS='Project name'}"
 ```
 
 When you run the application again, you hear "Project name" read out loud when the `Entry` is in focus.
