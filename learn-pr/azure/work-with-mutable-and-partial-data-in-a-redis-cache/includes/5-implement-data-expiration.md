@@ -30,7 +30,7 @@ else
 
 Let’s add an expiration of 15 seconds to both **MyKey1** and **MyKey2**.
 
-Add the following code before you commit the transaction:
+Add the following code before you commit the transaction.
 
 ```csharp
 //Add an expiration time
@@ -52,12 +52,12 @@ Now that we added the code to expire our data, let's run the program and check t
 
 1. Switch back to the Azure Cache for Redis console in the Azure portal.
 
-1. To verify that the data is still there, issue the following command:
+1. To verify that the data is still there, run the following command.
 
     ```console
     get MyKey1
     ```
 
-1. After 15 seconds, issue the command again. You should see that the data is no longer there.
+1. After 15 seconds, run the command again. You should see that the data is no longer there.
 
     ![Screenshot of the Azure Cache for Redis console showing the value of MyKey1 being nil](../media/6-redis-console-data-expiration.png)

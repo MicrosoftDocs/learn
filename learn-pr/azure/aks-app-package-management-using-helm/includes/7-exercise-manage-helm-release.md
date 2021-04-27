@@ -6,7 +6,7 @@ In this exercise, you'll customize an existing Helm chart to install, upgrade, r
 
 ## Review the Helm chart folder structure
 
-This exercise uses the `aspnet-core` Helm chart you installed earlier from the Azure Marketplace as a foundation to install a .NET Core Blazor Server app. The source code to the application is already downloaded as part of the AKS cluster creation exercise and available in the `clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src/drone-webapp` folder.
+This exercise uses the `aspnet-core` Helm chart you installed earlier from the Azure Marketplace as a foundation to install a .NET Core Blazor Server app. The source code to the application is already downloaded as part of the AKS cluster creation exercise and available in the `~clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src/drone-webapp` folder.
 
 If you completed previous exercise, you'll find a cache copy of the Helm chart in the `$HOME/.cache/helm/repository` folder in the Cloud Shell.
 
@@ -26,12 +26,12 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
 
     All Helm charts install from repositories are cached in this folder. If you're interested inspecting or modifying the contents of a chart, you can extract the zipped package from the cache folder and install the chart as a local chart.
 
-    For this exercise, the chart is already unpacked and available in the `clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src/drone-webapp-chart` folder.
+    For this exercise, the chart is already unpacked and available in the `~clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src/drone-webapp-chart` folder.
 
 1. Inspect the existing Helm chart by recursively listing all contents of the drone-webapp-chart folder.
 
     ```bash
-    cd clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src
+    cd ~/clouddrive/mslearn-aks/modules/learn-helm-deploy-aks/src
     find drone-webapp-chart/ -print
     ```
 
@@ -100,26 +100,12 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
           - bitnami-common
     ```
 
-    Notice the dependencies section at the bottom of the file. This information shows you that there's a subchart to the main chart. However, this chart isn't yet available.
+    Notice the dependencies section at the bottom of the file. This information shows you that there's a subchart to the main chart.
 
-1. Try to install the chart using the flowing `helm install` command.
-
-    ```bash
-    helm install drone-webapp ./drone-webapp-chart/
-    ```
-
-    The command should return a result similar to the following output.
-
-    ```output
-    Error: found in Chart.yaml, but missing in charts/ directory: common
-    ```
-
-    The reason for the error, is that Helm is expecting to find the `common` chart in the charts folder.
-
-1. Run the `helm dependency build` command to download the missing chart.
+1. Run the `helm dependency build` command to download and update all chart dependencies.
 
     ```bash
-    helm dependency build ./modules/learn-helm-deploy-aks/src/drone-webapp-chart
+    helm dependency build ./drone-webapp-chart
     ```
 
     The command should return a result similar to the following output.
@@ -145,7 +131,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     drone-webapp-chart/
     ...
     drone-webapp-chart/charts
-    drone-webapp-chart/charts/common-0.6.2.tgz
+    drone-webapp-chart/charts/common-0.10.0.tgz
     drone-webapp-chart/README.md
     drone-webapp-chart/templates
     drone-webapp-chart/templates/deployment.yaml
@@ -153,12 +139,12 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     drone-webapp-chart/values.yaml
     ```
 
-    A subchart named `common` is now available in the `charts/` folder. You can extract the contents of the `common-0.6.2.tgz` package if you're interested in its contents. However, unpacking the file isn't required to complete the installation of the chart.
+    An updated subchart named `common` is now available in the `charts/` folder. You can extract the contents of the `common-0.10.0.tgz` package if you're interested in its contents. However, unpacking the file isn't required to complete the installation of the chart.
 
     Here is the command to unpack the file and list the folder contents:
 
     ```bash
-    gzip -dc ./drone-webapp-chart/charts/common-0.6.2.tgz | tar -xf - -C ./drone-webapp-chart/charts/
+    gzip -dc ./drone-webapp-chart/charts/common-0.10.0.tgz | tar -xf - -C ./drone-webapp-chart/charts/
     find drone-webapp-chart/ -print
     ```
 
@@ -185,7 +171,7 @@ If you completed previous exercise, you'll find a cache copy of the Helm chart i
     drone-webapp-chart/charts/common/templates/_validations.tpl
     drone-webapp-chart/charts/common/templates/_warnings.tpl
     drone-webapp-chart/charts/common/values.yaml
-    drone-webapp-chart/charts/common-0.6.2.tgz
+    drone-webapp-chart/charts/common-0.10.0.tgz
     drone-webapp-chart/README.md
     drone-webapp-chart/templates
     drone-webapp-chart/templates/deployment.yaml

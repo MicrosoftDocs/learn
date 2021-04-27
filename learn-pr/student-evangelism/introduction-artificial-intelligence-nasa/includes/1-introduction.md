@@ -2,10 +2,10 @@ You're a geologist working for NASA. Your job is to let the astronauts know whic
 
 In this Microsoft Learn module, you'll learn what AI is, and you'll use some libraries that will help you create a program that classifies rocks. The final project uses Visual Studio Code, Python, and Jupyter Notebook to create an AI model that can identify the type of a rock in an image.
 
-The data is provided by NASA. Explore more interesting photos in NASA's [sample collection](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true).
+The data is provided by NASA. Explore more interesting photos in NASA's [sample collection][NASASamples].
 
 > [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/XoHR4p8AO9o?azure-portal=true) in a new tab.
+> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module][VideoWalkthrough] in a new tab.
 
 ## Learning objectives
 
@@ -19,5 +19,12 @@ In this module, you will:
 
 ## Prerequisites
 
-- Ability to write and run introductory Python programs
-- [Visual Studio Code, with the Python extension installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
+- Ability to write and run simple Python programs
+- [Visual Studio Code, with the Python extension installed][VSCodePython]
+
+
+<!-- Links -->
+
+[NASASamples]: https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true
+[VideoWalkthrough]: https://youtu.be/XoHR4p8AO9o?azure-portal=true
+[VSCodePython]: https://aka.ms/LearnOnVSCode?azure-portal=true
