@@ -24,6 +24,6 @@ We'll take a look at the importance of monitoring your Azure applications and in
 
 By the end of this session, you'll be able to;
 
-* Explain what Azure Monitor is
-* Briefly describe how it works
-* Explain sample scenarios where Azure Monitor is useful
+* Explain what Azure Monitor is.
+* Briefly describe how it works.
+* Explain sample scenarios where Azure Monitor is useful.
