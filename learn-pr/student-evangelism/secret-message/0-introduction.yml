@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.python-partnership.secret-message.introduction
+title: Introduction to using a secret message decoder
+metadata:
+  title: Introduction to using a secret message decoder
+  description: Learn how to use a secret message decoder and solve a cipher.
+  ms.date: 04/14/2021
+  author: drguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]

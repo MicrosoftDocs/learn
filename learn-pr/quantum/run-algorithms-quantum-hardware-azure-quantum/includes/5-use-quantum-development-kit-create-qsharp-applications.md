@@ -114,7 +114,7 @@ Now that you know what resources you need to run your job, you can test it on th
 1. Open the Azure CLI, and submit the job by using the following command:
 
    ```azurecli
-   az quantum job submit --target-id ionq.simulator -- --n-qubits 2 --idx-marked 1
+   az quantum job submit --target-id ionq.simulator --job-name MyGroversJob  -- --n-qubits 2 --idx-marked 1
    ```
 
    You should obtain something like this example:
@@ -162,6 +162,7 @@ az quantum job submit --target-id ionq.qpu -- --n-qubits 2 --idx-marked 1 --shot
 You might obtain a result similar to this example:
 
 ```output
+Result    Frequency
 --------  -----------  -------------------------
 [1,0]     0.60000000   ▐████████████           |
 [0,1]     0.40000000   ▐███████                |

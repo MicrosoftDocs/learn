@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you've learned.
+  ms.date: 04/16/2021
+  author: justinyoo
+  ms.author: juyoo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: Answer the following questions to see what you've learned
+  questions:
+  - content: To generate an OpenAPI documentation for your ASP.NET Core Web API, which NuGet package is the most popular?
+    choices:
+    - content: OpenAPI.NET
+      isCorrect: false
+      explanation: Swashbuckle is an open-source Swagger implementation used for generating Swagger documentation for .NET Core APIs using .NET reflection.
+    - content: Swashbuckle
+      isCorrect: true
+      explanation: Swashbuckle is an open-source Swagger implementation used for generating Swagger documentation for .NET Core APIs using .NET reflection.
+    - content: Swagger
+      isCorrect: false
+      explanation: Swashbuckle is an open-source Swagger implementation used for generating Swagger documentation for .NET Core APIs using .NET reflection.
+
+  - content: What could be the simplest way to publish your ASP.NET Core Web API app to Azure App Service?
+    choices:
+    - content: Right-click on Visual Studio and publish the application.
+      isCorrect: true
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+    - content: Use Azure portal to publish the application.
+      isCorrect: false
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+    - content: Use Azure PowerShell to publish the application.
+      isCorrect: false
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+    - content: Use Azure CLI to publish the application.
+      isCorrect: false
+      explanation: Visual Studio provides the capability to publish a Web API project directly to Azure App Service instance.
+
+  - content: While publishing your ASP.NET Core Web API app within Visual Studio, which is incorrect?
+    choices:
+    - content: You can create a new Azure App Service instance to publish the Web API app to Azure.
+      isCorrect: false
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app. You can also create a new Azure API Management instance within Visual Studio while publishing the Web API app.
+    - content: You can only use an existing Azure App Service instance to publish the Web API app.
+      isCorrect: true
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app. You can also create a new Azure API Management instance within Visual Studio while publishing the Web API app.
+    - content: While publishing the Web API app, you can use an existing App Service Plan or create a new one.
+      isCorrect: false
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app. You can also create a new Azure API Management instance within Visual Studio while publishing the Web API app.
+    - content: While publishing the Web API app, you can integrate it with an Azure API Management instance.
+      isCorrect: false
+      explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app. You can also create a new Azure API Management instance within Visual Studio while publishing the Web API app.

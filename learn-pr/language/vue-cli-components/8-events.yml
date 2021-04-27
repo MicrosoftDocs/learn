@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.vue-cli-components.8-events
+metadata:
+  title: Custom events for components
+  description: You can raise custom events from components.
+  ms.date: 03/01/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vue
+title: Custom events for components
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-events.md)]

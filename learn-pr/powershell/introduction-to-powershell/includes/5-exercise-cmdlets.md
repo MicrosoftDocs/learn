@@ -1,8 +1,10 @@
-In this exercise, you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight. It's learned command by command. You can speed up your learning by effectively using the core cmdlets.
+In this unit, you use Azure Cloud Shell on the right as your Linux terminal. You can access Cloud Shell through the Azure portal or the [Cloud Shell sign-in](https://shell.azure.com). You don't have to install anything on your PC or laptop to use it.
+
+Here you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight. It's learned command by command. You can speed up your learning by effectively using the core cmdlets.
 
 ## Locate a command
 
-Locate commands by using the `Get-Command` cmdlet. The cmdlet helps you search all of the cmdlets installed on your system. Use flags to narrow down your search results to just the cmdlets that fit your scenario. 
+Locate commands by using the `Get-Command` cmdlet. The cmdlet helps you search all of the cmdlets installed on your system. Use flags to narrow down your search results to just the cmdlets that fit your scenario.
 
 In this scenario, you're looking for a cmdlet that can help you work with files.
 
@@ -12,7 +14,7 @@ In this scenario, you're looking for a cmdlet that can help you work with files.
     Get-Command -Noun File*
     ```
 
-    The response shows something similar to the following text.
+    The response shows something similar to the following text:
 
     ```output
     CommandType     Name                                               Version    Source
@@ -30,7 +32,7 @@ In this scenario, you're looking for a cmdlet that can help you work with files.
    Get-Command -Verb Get -Noun File*
    ```
 
-   The result is similar to the following output.
+   The result is similar to the following output:
 
    ```output
    CommandType     Name                                               Version    Source
@@ -40,11 +42,11 @@ In this scenario, you're looking for a cmdlet that can help you work with files.
 
    This time, only one record matches your search because you specified both the `-Noun` parameter and the `-Verb` parameter. 
 
-Because the domain you work in is file management, you specified `File` as the noun. If you know what you want to do within that domain, you can specify `-Verb` parameters. By using one or possibly two parameters, you can quickly find the cmdlet that you need.  
+Because the domain you work in is file management, you specified `File` as the noun. If you know what you want to do within that domain, you can specify `-Verb` parameters. By using one or possibly two parameters, you can quickly find the cmdlet that you need.
 
 ## Use Get-Help to discover commands
 
-After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, or some example use cases. Use the `Get-Help` cmdlet to learn about cmdlets:
+After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, or some example use cases. Use the `Get-Help` cmdlet to learn about cmdlets.
 
 1. Run the command `Get-Help`.
 
@@ -52,7 +54,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
    Get-Help -Name Get-FileHash
    ```
 
-   This command produces an output similar to the following text.
+   This command produces an output similar to the following text:
 
    ```output
    NAME
@@ -77,15 +79,15 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
                go to https://go.microsoft.com/fwlink/?LinkId=517145.
    ```
 
-   Because this output is a difficult to read, you decide to use a less verbose alternative. That is, you use the `help` alias.
+   Because this output is difficult to read, you decide to use a less verbose alternative. That is, you use the `help` alias.
 
-1. Type the `help` command.
+1. Enter the `help` command.
 
    ```powershell
    help Get-FileHash
    ```
 
-   You now get a reduced version of the help output. It looks like the following text.
+   You now get a reduced version of the help output. It looks like the following text:
 
    ```output
    NAME
@@ -103,7 +105,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
         -Algorithm <string>
    ```
 
-   You can move through the results vertically, row by row, by using the arrow keys. To view the results page by page, use the spacebar.
+   You can move through the results vertically, row by row, by using the arrow keys. To view the results page by page, use the Spacebar.
 
 1. Run `help Get-FileHash -Examples`.
 
@@ -111,7 +113,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
    help Get-FileHash -Examples
    ```
 
-   The output looks like the following text.
+   The output looks like the following text:
 
    ```output
    NAME
@@ -137,7 +139,7 @@ After you find a cmdlet you want to use, you can learn more about it. For exampl
 
 ## Discover an object by using Get-Member
 
-In some scenarios, you'll need to manage processes on a machine. If you need to stop some of the processes, then you might want to track what processes are running, how much resources they're using, and what their process IDs are. You know that the cmdlet `Get-Process` lists information about processes. Now you want to find what other cmdlets work with processes and what a process consists of. 
+In some scenarios, you'll need to manage processes on a machine. If you need to stop some of the processes, then you might want to track what processes are running, how much resources they're using, and what their process IDs are. You know that the cmdlet `Get-Process` lists information about processes. Now you want to find what other cmdlets work with processes and what a process consists of.
 
 In this scenario, you'll use the `Get-Member` cmdlet.
 
@@ -155,7 +157,7 @@ In this scenario, you'll use the `Get-Member` cmdlet.
    Get-Process -Name {selected process name} | Get-Member
    ```
 
-   This command produces a long response that consists of all of the members, events, and methods. At this point, focus on the first line, which lists the following information.
+   This command produces a long response that consists of all of the members, events, and methods. At this point, focus on the first line, which lists the following information:
 
    ```output
    TypeName: System.Diagnostics.Process
@@ -169,7 +171,7 @@ In this scenario, you'll use the `Get-Member` cmdlet.
    Get-Command -ParameterType Process
    ```
 
-   This command produces a response similar to the following text.
+   This command produces a response similar to the following text:
 
    ```output
     CommandType     Name                                               Version    Source

@@ -12,15 +12,15 @@ By default, TDE is enabled for all newly deployed Azure SQL databases. It's impo
 
 Let's take a look in the portal at where TDE is configured on our _marketplaceDb_ database.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the search bar at the top of the portal, search for **marketplaceDb**, then select the database in the portal.
 
-1. In the left menu, in the **Security** section, select the **Transparent data encryption** option.
+1. In the left menu pane, under **Security**, select **Transparent data encryption**.
 
 1. In the data encryption option, verify that **Data encryption** is set to **On**. You should also see an encryption status of **Encrypted**.
 
-Since new databases are encrypted by default, we can be sure that our data is encrypted on disk from as soon as we create the database.
+Because new databases are encrypted by default, we can be sure that our data is encrypted on disk from as soon as we create the database.
 
 > [!NOTE]
 > Azure includes a built in service called Azure Security Center that gives you visibility into the security of your environment, including Azure SQL databases. Azure Security Center will flag any databases that don't have TDE enabled on them, giving you the ability to report and take action to secure your data.
@@ -31,7 +31,7 @@ You might have noticed when we ran our query in the previous unit that some of t
 
 Maybe we don't want our users to be able to see the full phone number or email address, but we'd still like to make a portion of the data available for customer service representatives to identify a customer. By using the dynamic data masking feature of Azure SQL Database, we can limit the data that is displayed to the user. Dynamic data masking is a policy-based security feature that hides the sensitive data in the result set of a query over designated database fields, while the data in the database is not changed.
 
-Data masking rules consist of the column to apply the mask to, and how the data should be masked. You can create your own masking format, or use one of the standard masks such as:
+Data masking rules consist of the column to apply the mask to, and how the data should be masked. You can create your own masking format, or use one of the standard masks, such as:
 
 - Default value, which displays the default value for that data type instead.
 - Credit card value, which only shows the last four digits of the number, converting all other numbers to lower case x’s.
@@ -43,17 +43,17 @@ When querying the columns, database administrators will still see the original v
 
 Let's take a look at how data masking would work in our _marketplaceDb_ database.
 
-1. While still in the portal on the _marketplaceDb_ database panel, in the **Security** section in the left menu select **Dynamic Data Masking**.
+1. While still in the portal on the _marketplaceDb_ database panel, in the left menu pane, under **Security**, select **Dynamic Data Masking**.
 
     The Masking rules screen shows a list of existing dynamic data masks, and recommendations for columns that should potentially have a dynamic data mask applied.
 
     ![Screenshot of the Azure portal showing a list of the recommended masks for the various database columns of a sample database.](../media/4-view-recommended-masked-columns.png)
 
-1. Let's add a mask for the phone number that only displays the last four digits. Click the **+ Add mask** button at the top to open the **Add masking rule** dialog.
+1. Let's add a mask for the phone number that only displays the last four digits. Select the **Add mask** button at the top to open the **Add masking rule** dialog box.
 
 1. Select the following values.
 
-    | _Setting_                | _Value_                                 |
+    | Setting                  | Value                                   |
     | ------------------------ | --------------------------------------- |
     | **Schema**               | SalesLT                                 |
     | **Table**                | Customer                                |
@@ -63,11 +63,11 @@ Let's take a look at how data masking would work in our _marketplaceDb_ database
     | **Padding String**       | XXX-XXX-                                |
     | **Exposed Suffix**       | 4                                       |
 
-    Click **Add** to add the masking rule.
+    Select **Add** to add the masking rule.
 
     ![Screenshot of the Azure portal showing the values to add a masking rule.](../media/4-add-masking-rule.png)
 
-1. Let's add one more for the email address. Click the **+ Add mask** button at the top again to open up the **Add masking rule** dialog.
+1. Let's add one more for the email address. Select the **Add mask** button at the top again to open up the **Add masking rule** dialog box.
 
     | _Setting_                | _Value_                                 |
     | ------------------------ | --------------------------------------- |
@@ -76,9 +76,9 @@ Let's take a look at how data masking would work in our _marketplaceDb_ database
     | **Column**               | EmailAddress (nvarchar)                 |
     | **Masking field format** | Email (aXXX@XXX.com)                    |
 
-    Click **Add** to add the masking rule.
+    Select **Add** to add the masking rule.
 
-1. Each new mask will be added to the masking rules list. Click the **Save** button to apply the masks.
+1. Each new mask will be added to the masking rules list. Select **Save** to apply the masks.
 
 Let's take a look at how data masking changes our query.
 

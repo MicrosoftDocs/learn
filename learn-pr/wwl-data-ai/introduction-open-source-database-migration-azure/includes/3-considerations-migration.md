@@ -63,7 +63,7 @@ In this case, an offline migration is possible because there's a long period whe
 
 ### Online migrations
 
-Now consider another database that supports a sales app. Sales staff are distributed around the world and also work at weekends. There isn't a period of low activity, the database is always busy and, if you take the database offline for a significant period, it will impact users. Sales activity is business-critical, so an interruption in service will have a direct affect on the organization's bottom line.
+Now consider another database that supports a sales app. Sales staff are distributed around the world and also work at weekends. There isn't a period of low activity, the database is always busy and, if you take the database offline for a significant period, it will impact users. Sales activity is business-critical, so an interruption in service will have a direct effect on the organization's bottom line.
 
 In cases like this, consider performing an online migration. In an online migration, downtime is limited to the time it takes to switch to the new database. Use a tool such as the Azure Data Migration Service to execute an online migration. Online migrations have the following differences to offline migrations:
 
