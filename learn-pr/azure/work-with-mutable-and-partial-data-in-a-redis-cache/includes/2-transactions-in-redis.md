@@ -2,7 +2,7 @@ There are times when you must guarantee that multiple operations execute togethe
 
 Here, we'll look at how to create a transaction in Azure Cache for Redis to guarantee that multiple operations are executed together.
 
-## Creating and running transactions
+## Create and run transactions
 
 Transactions in Redis work by queueing multiple commands to be executed as a group. When a transaction is executed, the commands queued inside of it are guaranteed to execute without any other commands from other clients interleaved between them.
 
