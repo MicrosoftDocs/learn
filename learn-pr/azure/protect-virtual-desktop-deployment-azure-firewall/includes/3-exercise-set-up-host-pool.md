@@ -22,6 +22,7 @@ In Azure Cloud Shell, run the following command to create a resource group. Repl
 
    [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
+
 ## Create a host pool for Windows Virtual Desktop
 
 Let's go to the Azure portal to quickly create a host pool. 
@@ -42,25 +43,6 @@ Let's go to the Azure portal to quickly create a host pool.
    |Max session limit    |2|
 1. Select **Review + create** > **Create**.
 
-<!-- These steps don't work without reinstalling Azure PowerShell module and resetting context so have to do this part in the portal.
-
-Run the following command to create a host pool.
-
-   ```powershell
-    $hostPoolName = 'learn-host-pool'
-    $workSpaceName = 'learn-workspace'
-    $appGroupName = 'learn-app-group'
-
-    New-AzWvdHostPool `
-    -Name $hostPoolName `
-    -ResourceGroupName $resourceGroup `
-    -WorkspaceName $workSpaceName `
-    -HostPoolType Pooled `
-    -LoadBalancerType BreadthFirst `
-    -Location $location `
-    -DesktopAppGroupName $appGroupName 
-   ```
--->
 ## Create a registration token for the host pool
 
 Create a registration token to authorize a session host to join the host pool.
@@ -85,6 +67,24 @@ Create a registration token to authorize a session host to join the host pool.
 
 1. Copy the token to a note app like Notepad.  
 
+## Create subnet and virtual network for session host
+
+In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
+
+   ```powershell
+   $subnetConfig = New-AzVirtualNetworkSubnetConfig `
+   -Name hostSubnet `
+   -AddressPrefix 10.0.0.0/24
+
+   $virtualNetwork = New-AzVirtualNetwork `
+   -Name hostVNet `
+   -AddressPrefix 10.0.0.0/16 `
+   -Location $location `
+   -ResourceGroupName $resourceGroup `
+   -Subnet $subnetConfig
+
+   ```
+
 ## Create a session host for the host pool
 
 Create an Azure VM to act as a session host for the host pool.
@@ -104,8 +104,8 @@ Create an Azure VM to act as a session host for the host pool.
     -Credential $cred `
     -ResourceGroupName $resourceGroup `
     -Size 'Standard_DS1_v2' `
-    -VirtualNetworkName myVnet `
-    -SubnetName mySubnet `
+    -VirtualNetworkName hostVNet `
+    -SubnetName hostSubnet `
     -Image "MicrosoftWindowsDesktop:Windows-10:20h1-evd-g2:latest" 
 
     ```
@@ -113,20 +113,6 @@ Create an Azure VM to act as a session host for the host pool.
    Wait a couple of minutes for the VM to be created.
 
 ## Connect to the VM by using a remote desktop session
-
-<!--
-1. Get the public IP address of the VM by running the following command.
-
-    ```powershell
-    Get-AzPublicIpAddress -ResourceGroupName $resourceGroup | Select "IpAddress"
-    ```
-
-1. Run the following command to create a remote desktop session from your local computer. Replace "publicIpAddress" with the public IP address of your VM.
-
-    ```powershell
-    mstsc /v:publicIpAddress
-    ```
--->
 
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.

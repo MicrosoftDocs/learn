@@ -60,12 +60,22 @@ For production deployments, we recommend a hub and spoke model, where you create
 
 To simplify the setup for this exercise, we'll create a subnet on the same virtual network that the session host VM uses.
 
-## Create a subnet for Azure Firewall
+## Create a virtual network and subnet for Azure Firewall
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise unit.
 1. Search for and select **Virtual networks**.
-1. Select the virtual network that your session host is using (**learn-firewall-rg-vnet** or sandbox rg).
-1. Under **Settings**, select **Subnets** > **+ Subnet** to add a subnet.
+1. Select **+ New**.
+1. Enter the following information.
+
+    |Field |Value  |
+    |---------|---------|
+    |Subscription     | Your subscription        |
+    |Resource group    | learn-firewall-rg        |
+    |Name    |         | firewallVNet
+    |Region     | Same region as your resource group      |
+
+1. Select the **IP Addresses** tab.
+1. Under **Subnet name**, select **default**.
 1. Enter the following information for the subnet.
 
     |Field |Value |
@@ -75,6 +85,9 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
 
     Leave the rest of the values as they are.
 1. Select **Save**.
+
+## Peer virtual networks
+
 
 ## Deploy Azure Firewall
 
