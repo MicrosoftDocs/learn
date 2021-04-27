@@ -43,7 +43,7 @@ write and run scripts.
     didn't enter it incorrectly. To do that, you need to run your code.
 
     > [!NOTE]
-    > You might be tempted to use the `Copy` button on the code sample to skip all the keystrokes. However, we encourage you to type this line of code yourself. Entering the code yourself builds muscle memory, and helps you gain insights that you wouldn't get otherwise.
+    > You might be tempted to use the `Copy` button on the code sample to skip all the keystrokes. However, we encourage you to enter this line of code yourself. Entering the code yourself builds muscle memory, and helps you gain insights that you wouldn't get otherwise.
 
 ### Step 2: Run the script
 
@@ -88,7 +88,7 @@ error, and sometimes a suggestion to fix it.
 
 > [!NOTE]
 > Not all errors are as easy to read and understand. Some might take a little bit of testing and
-> investigation to figure out what is causing the issue.
+> investigation to determine what is causing the issue.
 
 ### Step 4: Create a new file and write code to receive input
 
