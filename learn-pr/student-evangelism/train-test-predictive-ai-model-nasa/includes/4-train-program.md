@@ -41,57 +41,85 @@ Follow these steps to train the neural network in your AI model.
    > 
 
    ```python
-   # Set the initial number of iterations to search for associations
-   epochs = 5
-   steps = 0
-   running_loss = 0
-   print_every = 5
-   train_losses, test_losses = [], []
+# Set the initial number of iterations to search for associations
+epochs = 5
 
-   # Search for associations in the features
-   for epoch in range(epochs):
-       for inputs, labels in trainloader:
+# Steps tracks the current training step
+steps = 0
 
-           steps += 1
-           print('Training step ', steps)
-           inputs, labels = inputs.to(device), labels.to(device)
-           optimizer.zero_grad()
-           logps = model.forward(inputs)
-           loss = criterion(logps, labels)
-           loss.backward()
-           optimizer.step()
-           running_loss += loss.item()
+running_loss = 0
+print_every = 5
+train_losses, test_losses = [], []
 
-           if steps % print_every == 0:
-               test_loss = 0
-               accuracy = 0
-               model.eval()
+# Search for associations in the features
+for epoch in range(epochs):
+    # load in all of the image inputs and labels from the trainloader 
+    for inputs, labels in trainloader:
+        # Count each training step
+        steps += 1
+        print('Training step ', steps)
 
-               # Refine the accuracy of the prediction
-               with torch.no_grad():
-                   for inputs, labels in testloader:
-                       inputs, labels = inputs.to(device), labels.to(device)
-                       logps = model.forward(inputs)
-                       batch_loss = criterion(logps, labels)
-                       test_loss += batch_loss.item()
+        # Load the inputs and labels to the already selected device
+        inputs, labels = inputs.to(device), labels.to(device)
+
+        # Zero out gradients to avoid accumulations of gradiants across training iterations
+        optimizer.zero_grad()
+
+        # Calling forward will pass the images through the model, returning the log probabilities of each label
+        logps = model.forward(inputs)
+
+        # Run the log probabilities through the criterion to get the output graph
+        loss = criterion(logps, labels)
+
+        # Use the loss graph to compute gradients
+        loss.backward()
+
+        # Update the parameters based on the current gradient
+        optimizer.step()
+
+        # Add the actual loss number to our `running_loss` variable
+        running_loss += loss.item()
+
+        # Every 5 steps, evaluate the model
+        if steps % print_every == 0:
+            test_loss = 0
+            accuracy = 0
+            model.eval()
+
+            # Refine the accuracy of the prediction without updating the graiennts
+            with torch.no_grad():
+                for inputs, labels in testloader:
+                    inputs, labels = inputs.to(device), labels.to(device)
+                    logps = model.forward(inputs)
+                    batch_loss = criterion(logps, labels)
+                    test_loss += batch_loss.item()
+
+                    # Return a new tensor with the true probabilities
+                    ps = torch.exp(logps)
+
+                    # Return the largest probability and class of the new tensor along a given dimension
+                    top_p, top_class = ps.topk(1, dim=1)
+
+                    # Reshape the tensor to match the same shape as the top class
+                    equals = top_class == labels.view(*top_class.shape)
+
+                    # Compute the accuracy and add it to the running count
+                    accuracy += torch.mean(equals.type(torch.FloatTensor)).item()
+
+            # Append the training and testing losses
+            train_losses.append(running_loss/len(trainloader))
+            test_losses.append(test_loss/len(testloader))  
+
+            # Display the accuracy of the prediction with 3 digits in the fractional part of the decimal
+            print(f"Epoch {epoch+1}/{epochs}.. "
+                  f"Train loss: {running_loss/print_every:.3f}.. "
+                  f"Test loss: {test_loss/len(testloader):.3f}.. "
+                  f"Test accuracy: {accuracy/len(testloader):.3f}")
+
+            # Train the model
+            running_loss = 0
+            model.train()
                     
-                       ps = torch.exp(logps)
-                       top_p, top_class = ps.topk(1, dim=1)
-                       equals = top_class == labels.view(*top_class.shape)
-                       accuracy += torch.mean(equals.type(torch.FloatTensor)).item()
-
-               train_losses.append(running_loss/len(trainloader))
-               test_losses.append(test_loss/len(testloader))  
-            
-               # Display the accuracy of the prediction with 3 digits in the fractional part of the decimal
-               print(f"Epoch {epoch+1}/{epochs}.. "
-                     f"Train loss: {running_loss/print_every:.3f}.. "
-                     f"Test loss: {test_loss/len(testloader):.3f}.. "
-                     f"Test accuracy: {accuracy/len(testloader):.3f}")
-
-               # Train the model
-               running_loss = 0
-               model.train()
    ```
 
    As the build progresses, the output shows each training step and epoch completed:
@@ -139,7 +167,7 @@ Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
 
 The output shows the prediction accuracy for each epoch iteration with training and testing losses, and the test accuracy.
 
-Here are the results from our test with five epochs. Your specific results will differ because the computer chooses a set of random images for each test run.
+Here are the results from our test with five epochs. Your specific results will differ because the computer chooses a set of random images for each test run. This is what causes the fluctuation in test accuracy. Since a random image is chosen for each iteration, we can see that the training loss and testing loss (and therefore the accuracy) is dependent on the image chosen.
 
 Epoch | Training loss | Test loss | Test accuracy
 :---:|:---:|:---:|:---:
