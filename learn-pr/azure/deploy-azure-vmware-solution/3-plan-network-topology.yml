@@ -2,7 +2,7 @@
 uid: learn.deploy-azure-vmware-solution.plan-network-topology
 metadata:
   title: Plan network topology for Azure VMware Solution deployment
-  description: Plan network topology for Azure VMware Solution deployment
+  description: Plan network topology for Azure VMware Solution deployment.
   ms.date: 03/19/2021
   author: sbkuehn
   ms.author: shkuehn

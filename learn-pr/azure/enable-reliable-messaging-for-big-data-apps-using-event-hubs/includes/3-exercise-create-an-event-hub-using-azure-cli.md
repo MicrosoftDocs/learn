@@ -62,7 +62,7 @@ Now let's create your new Event Hub.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Create a new Event Hub running the `eventhub create` command. It needs the following parameters.
+1. Create a new Event Hub by running the `eventhub create` command. It needs the following parameters.
 
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
@@ -81,7 +81,7 @@ Now let's create your new Event Hub.
     az eventhubs eventhub create --name $HUB_NAME --namespace-name $NS_NAME
     ```
 
-1. View the details of your Event Hub running the `eventhub show` command. It needs the following parameters.
+1. View the details of your Event Hub by running the `eventhub show` command. It needs the following parameters.
 
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
@@ -98,13 +98,11 @@ Now let's create your new Event Hub.
 
 Next, let's see what this looks like in the Azure portal.
 
-1. Find your Event Hubs namespace using the Search bar at the top of portal.
+1. In the Search bar at the top of portal, enter *Event Hubs*. The **Event Hubs** pane appears.
 
 1. Select your namespace to open it.
 
-1. Select **Event Hubs namespace** under the **ENTITIES** section.
-
-1. Select **Event Hubs**.
+1. in the left menu pane, under **Entities**, select **Event Hubs**.
 
     Your Event Hub appears with a status of **Active**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
 

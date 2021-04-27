@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.8-initialize-app
+metadata:
+  title: Exercise - Write JavaScript code to initialize the web app with data from the machine learning model
+  description: Write JavaScript code to initialize the web app with data from the machine learning model
+  ms.date: 03/10/2021
+  author: drguthals 
+  ms.author: sguthals 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Write JavaScript code to initialize the web app with data from the machine learning model
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-initialize-app.md)]

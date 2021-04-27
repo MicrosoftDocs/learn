@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.create-batch-account-using-azure-portal
+metadata:
+  title: Create an Azure Batch account by using the Azure portal
+  description: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+  ms.date: 02/01/2021
+  author: prkannap
+  ms.author: prkannap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an Azure Batch account by using the Azure portal
+summary: Azure Batch is a service that enables you to run large-scale parallel and high-performance computing (HPC) applications efficiently in the cloud. There's no need to manage or configure infrastructure. Just schedule the job, allocate the resources you need, and let Batch take care of the rest.
+abstract: | 
+  After you complete this module, you'll be able to:
+  - Create an Azure Batch job by using the Azure portal
+  - Run an Azure Batch job by using the Azure portal  
+prerequisites: | 
+  - Working knowledge of Azure and the Azure portal
+  - Familiarity with Azure Batch accounts
+  - An Azure account with an active subscription
+iconUrl: /learn/achievements/create-batch-account-using-azure-portal.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-batch
+units:
+- learn.azure.create-batch-account-using-azure-portal.introduction
+- learn.azure.create-batch-account-using-azure-portal.create-azure-batch-account
+- learn.azure.create-batch-account-using-azure-portal.exercise-create-azure-batch-account
+- learn.azure.create-batch-account-using-azure-portal.run-batch-applications
+- learn.azure.create-batch-account-using-azure-portal.exercise-run-batch-applications
+- learn.azure.create-batch-account-using-azure-portal.azure-batch-security
+- learn.azure.create-batch-account-using-azure-portal.knowledge-check
+- learn.azure.create-batch-account-using-azure-portal.summary
+badge:
+  uid: learn.azure.create-batch-account-using-azure-portal.badge
