@@ -71,7 +71,7 @@ Identify the subtasks of *Learn about paths to modern endpoint management*
             - Intune network configuration requirements
             - Intune bandwidth considerations
 
-3. **Sign up for the Intune free trail**
+3. **Sign up for the Intune free trial**
    List the content that will enable the learner to understand this module:
     - Enabling objective
         - Your organization's endpoints will likely be focused to one or more of the following categories:

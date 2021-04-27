@@ -1,44 +1,26 @@
-In this section, you will learn about how, you can transfer data to or from a dedicated SQL pool using a Pyspark Connector. 
-If you're using the notebook experience from the Synapse Studio environment linked to your workspace resource, it is imperative to know that it is not required to use import statements. 
-Import statements are only required when you don't go through the integrated notebook experience. 
-In addition to the above, the Pyspark connector currently works only in scala.
+You can transfer data to and from a dedicated SQL pool using a Pyspark Connector, which currently works with Scala.
 
-The examples that are given in this article, only keep in mind that you use the integrated notebook experience. 
+Let's say that you have created or loaded a DataFrame called "pyspark_df", and then assume that you want to write that DataFrame into the data warehouse. How would you go about that task?
 
-So how does the pyspark connector work in order to transfer data to and from a dedicated SQL pool?
-Let's say that you have created or loaded a dataframe called "pyspark_df".
-Assume that you want to write that dataframe into the DataWarehouse.
-How would you go about that task?
-
-The first thing to do is to create a temp table using the dataframe in PySpark.
-Below you can find an example on how to do so:
+The first thing to do is to create a temporary table in a DataFrame in PySpark using the createOrReplaceTempView method
 
 ```py
 pyspark_df.createOrReplaceTempView("pysparkdftemptable")
 ```
-The parameter that is passed through is the temporary table name, which in this case is called: "pysparkdftemptable"
-We are still using the pyspark_df dataframe as you can see in the beginning of the statement. 
-
-Next, you would have to run a Scala cell in the PySpark notebook using magics (since we're using different languages and as mentioned above, it will only work in scala):
+The parameter that is passed through is the temporary table name, which in this case is called: "pysparkdftemptable". We are still using the pyspark_df DataFrame as you can see in the beginning of the statement. 
+Next, you would have to run a Scala cell in the PySpark notebook using magics (since we're using different languages, and it will only work in Scala):
 
 ```scala
 %%spark
 val scala_df = spark.sqlContext.sql ("select * from pysparkdftemptable")
-
 scala_df.write.sqlanalytics("sqlpool.dbo.PySparkTable", Constants.INTERNAL)
 ```
-By using val scala_df, we create a fixed value for the scala_dataframe. 
-In the statement, select * from pysparkdftemptable we basically say that we want all the data that we created in the temp table in the previous step, and passing this through by defining the scala_df that is now the same as the pysparkdftemptable. 
+By using "val scala_df", we create a fixed value for the scala_dataframe, and then use the statement "select * from pysparkdftemptable", that returns all the data that we created in the temporary table in the previous step, and storing it in a table named sqlpool.dbo.PySparkTable
 
 In the second line of the code, we specified following parameters:
-* DBName: sqlpool
-* Schema: dbo
-* TableName: PySparkTable
-* TableType: specification of the type of table, which has the value Constants.INTERNAL, which related to a  Managed table in the dedicated SQL pool.
+- **DBName**: The database name that in the example above is named sqlpool
+- **Schema**: The schema name that in the example above is named dbo
+- **TableName**: The table name that in the example above is named PySparkTable
+- **TableType**: Specifies the type of table, which has the value Constants.INTERNAL, which related to a managed table in the dedicated SQL pool.
 
-In the same way this was the write scenario, you can follow the steps to read the data too. 
-Keep in mind that you read the data using scala first. 
-Second, write it into a temp table. 
-Third, use Spark SQL in PySpark to query the temp table into a dataframe. 
-
-
+Should you wish to read data using the PySpark connector, keep in mind that you read the data using scala first, then write it into a temporary table. Finally you use the Spark SQL in PySpark to query the temporary table into a DataFrame.
