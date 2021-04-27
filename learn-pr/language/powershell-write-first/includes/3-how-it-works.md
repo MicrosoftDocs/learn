@@ -59,7 +59,7 @@ keywords you see while programming in PowerShell and in many other languages.
 the computer to perform specific mathematical, relational, or logical operations to produce a
 result.
 
-When you typed your code into the Cloud Shell terminal, you may have noticed small changes to the
+When you entered your code into Cloud Shell, you may have noticed small changes to the
 color of text and symbols. This is called **syntax highlighting**. It's helpful in reading what your
 code is doing and spotting mistakes in the syntax of your code. This feature is available and even
 more robust in many code editors like Visual Studio Code.
@@ -89,7 +89,7 @@ language like Python that starts running the code until it finds something wrong
 One of PowerShell's features is it's built-in help system. The PowerShell help system gives you easy
 access to information about PowerShell commands. You can look up help for commands or PowerShell
 concepts using the `Get-Help` command. For example, If you want to see all details about the
-`Write-Output` command, you can type and run the following command:
+`Write-Output` command, you can enter and run the following command.
 
 ```powershell
 Get-Help -Name 'Write-Output' -Full
@@ -98,7 +98,7 @@ Get-Help -Name 'Write-Output' -Full
 `Get-Help` is the command to run and `Write-Output` is the **Name** of the command to get help
 for. The `-Full` switch tells PowerShell to get all help information for the specified command
 including a command description, parameter information, examples, and more. This is all
-accessible in any PowerShell terminal including the Azure Cloud Shell terminal.
+accessible in any PowerShell terminal including Azure Cloud Shell terminal.
 
 If you want to explore some of the commands PowerShell has to offer, you can use `Get-Command *` to
 see the full list of cmdlets available to you. The asterisk (`*`) is known as a **wildcard** in
@@ -108,5 +108,5 @@ example you could get all commands that have "User" in them with , `Get-Command 
 
 Another great thing about PowerShell is that it comes with an integrated shell. The shell allows you
 to test your code and interact with the output without having to run your code every time you want
-to test something. If you want to see if something works, you can type it right into the terminal to
+to test something. If you want to see if something works, you can enter it directly into the terminal to
 make sure your code works as expected.
