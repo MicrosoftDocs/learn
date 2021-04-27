@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-data-lake-storage # Do not edit: uid must be gl
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Data Lake Storage          # Do not edit: title must be "Introduction to <product>"
-  description: ""                 # Copy your 'evaluate' Learning Objective here (see below)
+  description: "Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data."                 # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 4/23/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: paulwp      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: v-pmcfedries           # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -118,6 +118,9 @@ roles:
 ###
 products:
   - azure-data-lake
+  - azure-data-lake-analytics
+  - azure-data-lake-gen2
+  - azure-data-lake-storage
 ###########################################################################
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern

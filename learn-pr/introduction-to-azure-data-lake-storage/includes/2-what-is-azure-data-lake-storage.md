@@ -1,36 +1,8 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
-
-    Goal: briefly state that this unit will define the product.
-
-    Heading: none
-
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
-Let's begin with a quick look at Azure Data Lake Storage, including what it is and what are its core features. This overview should help you decide whether Azure Data Lake Storage is worth looking into as a solution for your company's data storage requirements.
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-
-    Heading:
-        "## What is <concept>?"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "<concept> is..." (ensure this is a definition, do not give use cases like "<concept> lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
+Let's begin with a quick look at Azure Data Lake Storage, including what it is and what are its core features. This overview should help you decide whether Azure Data Lake Storage is worth looking into as a solution for your company's big data storage requirements.
 
 ## What is a data lake?
 
-A data lake is a centralized repository that enables you to store all your data — both structured and unstructured — in a single location. With a data lake, there's no need to conform your data to fit an existing structure. Instead, you can store your data in its raw or native format, usually as files or as binary large objects (blobs).
+A *data lake* is a centralized repository that enables you to store all your data — both structured and unstructured — in a single location. With a data lake, there's no need to conform your data to fit an existing structure. Instead, you can store your data in its raw or native format, usually as files or as binary large objects (blobs).
 
 When evaluating whether a data lake is the right solution for your company, there are several elements to consider, as described in the following table.
 
@@ -44,107 +16,91 @@ When evaluating whether a data lake is the right solution for your company, ther
 
 A data lake enables your organization to quickly and easily store, access, and analyze a wide variety of data in a single location.
 
-<!-- 3. Define the product -------------------------------------------------------------
-
-    Goal:
-        Give a formal and precise definition of the product.
-
-    Heading:
-        "## Azure Data Lake Storage definition"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "Azure Data Lake Storage is..." (ensure this is a definition, do not give use cases like "Azure Data Lake Storage lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "Azure Logic Apps definition"
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
-
 ## Azure Data Lake Storage definition
 
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+Azure Data Lake Storage is a cloud-based, enterprise data lake solution engineered to store massive amounts of data in any format and to facilitate big data analytical workloads. Azure Data Lake Storage enables you to capture data of any size, type, and ingestion speed in a single location for easy access and analysis using a variety of frameworks.
 
-<!-- 4. Solve the scenario -------------------------------------------------------------
+> [!NOTE]
+> The current implementation of Azure's data lake storage service is Azure Data Lake Storage Gen2. You might see references to the previous implementation, Azure Data Lake Storage Gen1, which is scheduled to be retired on February 29, 2024.
 
-    Goal:
-        At a high level, describe how the Azure Data Lake Storage solves one of the customer tasks in your <scenario>.
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
+To help you understand Azure Data Lake Storage, you can examine the product from the following characteristics:
 
-    Heading:
-        "## How to <solve scenario>"
+- Data storage
+- Data access
+- Data costs
+- Data performance
+- Data security
+- Data redundancy
+- Data scalability
+- Data analysis
 
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the Azure Data Lake Storage solved the <scenario>.
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
+### Data Storage
 
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
+Azure Data Lake Storage can store any type of data using the native format of that data. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Also, Azure Data Lake Storage doesn't perform any special handling of data based on the type of data it stores. With support for any data format and unlimited data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
 
-## How to <solve scenario
+### Data Access
 
-TODO: Add your lead sentence
-TODO: Add your additional text
-TODO: Add your visual element
+Azure Data Lake Storage is primarily designed to work with Hadoop and all frameworks that use the Hadoop Distributed File System (HDFS) as their data access layer. Hadoop distributions include the Azure Blob File System (ABFS) driver, which enables many applications and frameworks to access Azure Blob Storage data directly.
 
-<!-- 5. Additional content (optional, as needed) ------------------------------------------------
+A key technology that enables Azure Data Lake Storage to provide high-performance data access at object storage scale and prices is the *hierarchical namespace*. A hierarchical namespace enables you to organize all the objects and files within your Azure Data Lake Storage account into a hierarchy of directories and nested subdirectories. In other words, your Azure Data Lake Storage data is organized in much the same way that files are organized on your computer.
 
-    Goal:
-        The section is a catch-all for any information not covered in the sections above.
-        Repeat the pattern here as many times as needed.
+### Data Costs
 
-    Possible topics:
-        - Key feature(s).
-        - Example use case in addition to the scenario.
-        - High-level of how practitioners use the product (e.g. there's an API and a web UI to support multiple use cases).
-        - Business value (e.g. it lets you do something that would be difficult to achieve without Azure Data Lake Storage).
+Azure Data Lake Storage is priced at Azure Blob Storage levels and builds on the powerful Azure Blob Storage capabilities like Automated Lifecycle Policy Management and Object Level tiering to manage big data storage costs. By using a hierarchical namespace, an Azure Data Lake Storage account provides the scalability and cost-effectiveness of object storage.
 
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote (image preferred).
+### Data Performance
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
+The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the time and cost of accessing data.
 
-<!-- Pattern for simple topic -->
-## H2 heading
+Azure Data Lake Storage supports high-throughput for input/output intensive analytics and data movement. In Azure Data Lake Storage, using all available throughput – the amount of data that can be read or written per second – is important to get the best performance. This is achieved by performing as many reads and writes in parallel as possible.
 
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+### Data Security
 
-<!-- Pattern for complex topic -->
-## H2 heading
+The Azure Data Lake Storage access control model supports both Azure role-based access control (Azure RBAC) and Portable Operating System Interface (POSIX) access control lists (ACLs). There are also a few extra security settings specific to Azure Data Lake Storage. You can set permissions either at the directory level or at the file level. All stored data is encrypted at rest using either Microsoft-managed or customer-managed encryption keys.
 
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
+You can configure security settings a number of ways, including the following:
 
-### H3 heading
+- Azure Storage Explorer
+- Azure command-line interface
+- Java
+- JavaScript (Node.js)
+- .NET
+- PowerShell
+- Python
+- REST API
 
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Data Redundancy
 
-### H3 heading
+Azure Data Lake Storage takes advantage of the Azure Blob replication models that provide data redundancy in a single data center with locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature ensures that your data is always available and protected if catastrophe strikes.
 
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Data Scalability
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Azure Data Lake Storage offers unlimited storage and can store a variety of data for analytics. It doesn't impose any limits on account sizes, file sizes, or the amount of data that can be stored in the data lake. Individual blobs and files can have sizes that range from a few kilobytes to a few petabytes. All of this means that Azure Data Lake Storage can easily and quickly scale up to meet the most demanding workloads, then just as easily scale back down when demand drops.
 
-<!-- Do not add a unit summary or references/links -->
+### Data Analysis
+
+Via ABFS, data analysis frameworks that use HDFS as their data access layer — such as the Apache Spark analytics engine and the Presto SQL query engine — have direct access to Azure Data Lake Storage data.
+
+In Azure, Data Lake Storage integrates with the following frameworks for analysis:
+
+- Azure Data Explorer
+- Azure HDInsight
+- Azure Machine Learning
+- Azure Stream Analytics
+- Azure Synapse Analytics
+- Power BI
+
+Azure Data Lake Storage is also integrated into a massive and mature analytics ecosystem associated with Azure Blob Storage.
+
+## How to prevent data silos
+
+Data silos occur when different data sources are stored in separate locations, each of which can only be accessed by a specific application or framework. For example, a business analyst or data scientist who wants to analyze both sales data and web server logs must perform the following general steps:
+
+1. Access one set of data.
+1. Query the data.
+1. Download the query results.
+1. Repeat steps 1 through 3 for each set of data.
+1. Process the downloaded data in a way that makes it possible to analyze the two data sets together.
+1. Analyze the processed data.
+
+That's a time-consuming, convoluted, and complex process. However, if all the required data is stored in Azure Data Lake Storage, the business analyst or data scientist can use their tool of choice — such as Power BI or Azure HDInsight — to work directly with all the data they need. Azure Data Lake Storage leaves it up to the individual analytic framework to interpret the data and define a schema at the time of the analysis.
