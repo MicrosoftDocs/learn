@@ -11,7 +11,7 @@
     Data stored in the cloud can grow at an exponential pace. To manage costs for your expanding storage needs, it's helpful to organize your data based on attributes like frequency of access and planned retention period. Data stored in the cloud can be different based on how it's generated, processed, and accessed over its lifetime. Some data is actively accessed and modified throughout its lifetime. Some data is accessed frequently early in its lifetime, with access dropping drastically as the data ages. Some data remains idle in the cloud and is rarely, if ever, accessed after it's stored. To accommodate these different access needs, Azure provides several *access tiers*, which you can use to balance your storage costs with your access needs.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-storage-tiers-a0322ad1.png":::
+    :::image type="content" source="../media/icon-storage-tiers-a0322ad1.png" alt-text="Azure Storage Tiers icon.":::
 
   :::column-end:::
 :::row-end:::

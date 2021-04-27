@@ -11,7 +11,7 @@
     Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block and Network File System (preview) protocols. Azure file shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Applications running in Azure virtual machines or cloud services can mount a file storage share to access file data, just as a desktop application would mount a typical SMB share. Any number of Azure virtual machines or roles can mount and access the file storage share simultaneously. Typical usage scenarios would be to share files anywhere in the world, diagnostic data, or application data sharing.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/icon-azure-files-c53adf24.png":::
+    :::image type="content" source="../media/icon-azure-files-c53adf24.png" alt-text="Azure Files icon.":::
 
   :::column-end:::
 :::row-end:::
