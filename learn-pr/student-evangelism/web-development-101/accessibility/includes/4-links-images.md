@@ -14,7 +14,7 @@ Consider the two links in the following example text:
 
 Although these links might seem fine for someone with full sight, they won't work as you might expect with a screen reader. Remember, screen readers read the text. If a URL appears in the text, the screen reader will read the URL. In general, the URL does not convey meaningful information and can sound annoying. You might have experienced this problem if your phone has ever audibly read a text message with a URL.
 
-Screen readers also have the ability to read only the hyperlinks on a page, much in the same way that a sighted person would scan a page for links. If the link text is always "click here," all the user will hear is "click here, click here, click here, click here, click here, ..." All links are now indistinguishable from one another, which is a frustrating experience.
+Screen readers also have the ability to read only the hyperlinks on a page, much in the same way that a sighted person would scan a page for links. If the link text is always "click here", all the user will hear is "click here, click here, click here, click here, click here, ..." All links are now indistinguishable from one another, which is a frustrating experience.
 
 The word "click" is also a problem, because not all users will click. Phone users will tap, keyboard users might select the Enter key or the Spacebar, and other clients will use other means.
 
