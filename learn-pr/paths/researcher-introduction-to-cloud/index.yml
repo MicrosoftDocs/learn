@@ -3,7 +3,7 @@ uid: learn.researcher-introduction-to-cloud
 hidden: true
 metadata:
   title: Introduction to the Azure Cloud for Researchers
-  description: TBD
+  description: After understanding the basics of the cloud, and being to provision Virtual Machines and Storage on Azure, you will be able to use those learning for research projects. 
   brand: azure
   ms.date: 04/19/2021
   author: MaximRouiller
@@ -11,9 +11,18 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to the Azure Cloud for Researchers
-summary: TBD
-prerequisites: None
-iconUrl: /learn/achievements/researcher-introduction-to-cloud.svg
+summary: |
+  After understanding the basics of the cloud, and being able to provision Virtual Machines and Storage on Azure, you will be able to use those learnings to help leverage your research projects. 
+
+  Upon completion of this learning path you will be able to:
+
+  * Understand the fundamental concepts of the cloud
+  * Create virtual machines to run research focused workloads
+  * Create and manage the right storage to keep your research data
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -29,10 +38,10 @@ modules:
 - learn.azure.azure-architecture-fundamentals
 - learn.azure.azure-database-fundamentals
 - learn.azure.azure-compute-fundamentals
-- learn.azure.azure-storage-fundamentals
 - learn.introduction-to-azure-virtual-machines
+- learn.azure.azure-storage-fundamentals
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
 - learn.choose-the-right-disk-storage-for-vm-workload
-trophy:
-  uid: learn.researcher-introduction-to-cloud.trophy
+# trophy:
+#   uid: learn.researcher-introduction-to-cloud.trophy
