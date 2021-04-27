@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.5-exercise-formatting
+title: Exercise - Format your output
+metadata:
+  title: Exercise - Format your output
+  description: In this exercise, you'll learn the difference between various formatting types, so that you can control the appearance of your output.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 02/16/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-format.md)]

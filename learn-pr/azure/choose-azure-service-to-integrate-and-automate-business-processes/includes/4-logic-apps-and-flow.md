@@ -16,7 +16,7 @@ This system has proved helpful when a customer asks for a bike with specific fra
 
 Your managing director wants to be able to understand clearly the workflow that you develop. There were problems in the past when documentation has not been kept in-sync with custom code and your director wants to see the process as it's implemented. 
 
-## Business Process
+## Business process
 
 You want to update the bike reservation and rental process on both campuses to the following workflow:
 
@@ -37,14 +37,14 @@ The details are as follows:
 
 This is a simplification of the entire process. For simplicity, we've omitted edge cases such as no bike with the desired frame size or features is available for rent. Perhaps you can think of other cases not covered by this simplified process.
 
-## Choosing a technology
+## Choose a technology
 
 Let's look at the Azure technologies available to implement the business process and integrate with the bike location database:
 
 - Microsoft Power Automate
 - Azure Logic Apps
 - Azure Functions
-- Azure Service Apps WebJobs
+- Azure App Service WebJobs
 
 You could use any of these technologies and others to build a workflow for this business process. Each technology can also integrate with any REST API, so you could also use any of these technologies to integrate with the bike location system. How then, can you choose?
 

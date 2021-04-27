@@ -5,8 +5,8 @@ metadata:
   title: 'Exercise: Build and evaluate a baseline machine learning model'
   description: "Exercise: Build and evaluate a baseline machine learning model"
   ms.date: 06/07/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
