@@ -3,9 +3,9 @@ Here, you will learn the basics of using a workflow to publish to GitHub Package
 
 ## Use a workflow to publish to GitHub Packages
 
-GitHub Packages enable you to safely publish and consume packages, store your packages alongside your code, and share your packages privately with your team or publicly with the open source community. You can also automate your packages with the use of GitHub Actions. 
+GitHub Packages enable you to securely publish and consume packages, store your packages alongside your code, and share your packages privately with your team or publicly with the open source community. You can also automate your packages with the use of GitHub Actions. 
 
-Below is an example of a simple workflow that runs whenever a new release is created in the repository. If the tests pass, then the package is published to GitHub Packages.
+Below is an example of a basic workflow that runs whenever a new release is created in the repository. If the tests pass, then the package is published to GitHub Packages.
 
 ```yml
 name: Node.js Package
