@@ -1,4 +1,4 @@
-In this exercise, you'll set up a preconfigured environment with a load balancer and create charts to monitor the health of the load balancer.
+In this exercise, you'll set up a preconfigured environment with a Load Balancer, and create charts to monitor the health of the Load Balancer.
 
 This exercise is optional. To complete it, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
@@ -93,13 +93,13 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Select **retailapprule**. The load balancer is configured to route traffic that arrives on port 80 at the front-end address to port 80 on machines in the back-end pool.
 
-1. Close the **retailapprule** page.
+1. Close the **retailapprule** pane.
 
 1. Under **Settings**, select **Health probes**.
 
 1. Select **retailapphealthprobe**. The health probe for the back-end pool also sends messages to port 80 to check that the application is available on each virtual machine.
 
-1. Close the **retailapphealthprobe** page.
+1. Close the **retailapphealthprobe** pane.
   
 ## Test the load balancer
 
@@ -132,7 +132,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
     The application should respond with a series of messages that indicate whether a response was received from *retailappvm1* or *retailappvm2*.
 
-1. Allow the application to run for five minutes. Select **Enter** to stop the application.
+1. Allow the application to run for five minutes. Press <kbd>Enter</kbd> to stop the application.
 
 ## Create charts to monitor metrics
 
@@ -150,8 +150,6 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Packet Count |
     | Aggregation | Avg |
-
-1. Select the **Finish editing** check box.
 
 1. At the top of the page, set the time range to **Last 30 minutes**. The chart should look similar to the one shown here. Note the peak value of the average packet count.
 
@@ -186,8 +184,6 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Data Path Availability |
     | Aggregation | Avg |
-
-1. Select the **Finish editing** check box.
 
 1. Set the time range to **Last 30 minutes**. The chart should report both statistics at 100 percent.
 

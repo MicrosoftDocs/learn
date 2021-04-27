@@ -3,21 +3,27 @@ Now that you've installed Rust, let's write your first Rust program. You'll prin
 ## Create a new directory to organize your code
 
 Start by creating a directory for storing all the code in this learning path
-(`rust-learning-path`), and then creating a new sub-directory to keep the source code for this exercise.
+(`rust-learning-path`), and then creating a new subdirectory to keep the source code for this exercise.
 
-For Linux, macOS, and PowerShell on Windows, enter this:
+For Linux, macOS, and PowerShell on Windows, run the following commands:
 
-    $ mkdir ~/rust-learning-path
-    $ cd ~/rust-learning-path
-    $ mkdir hello_world
-    $ cd hello_world
+```console
+mkdir ~/rust-learning-path
+cd ~/rust-learning-path
+mkdir hello_world
+cd hello_world
 
-For the Windows command prompt, enter this:
+```
 
-    > mkdir "%USERPROFILE%\rust-learning-path"
-    > cd /d "%USERPROFILE%\rust-learning-path"
-    > mkdir hello_world
-    > cd hello_world
+For the Windows command prompt, run the following commands:
+
+```console
+mkdir "%USERPROFILE%\rust-learning-path"
+cd /d "%USERPROFILE%\rust-learning-path"
+mkdir hello_world
+cd hello_world
+
+```
 
 ## Write your first Rust program
 
@@ -31,20 +37,28 @@ fn main() {
 
 ## Compile and run your program
 
-Now that you have your source code ready, you need to compile your program into an executable file. Back in your terminal window, enter the following commands to compile and run the file:
+Your source code is ready. Now it's time to compile your program into an executable file. Return to your terminal window and enter the following commands to compile and run the file.
 
-If you're on Linux or macOS:
+If you're on Linux or macOS, run the following commands:
 
-    $ rustc main.rs
-    $ ./main
-    Hello, world!
+```console
+rustc main.rs
+./main
 
-On Windows, enter the command `.\main.exe`, instead of `./main`:
+```
 
-    > rustc main.rs
-    > .\main.exe
-    Hello, world!
+On Windows, run the following commands:
 
-You should see `Hello, world!` printed out in the terminal.
+```console
+rustc main.rs
+.\main.exe
+
+```
+
+You should see the following output:
+
+```output
+Hello, world!
+```
 
 Congratulations, you've written your first Rust program!
