@@ -58,7 +58,7 @@ ARIA has numerous uses beyond adding text for screen readers to read for links. 
 
 ## Alt text for images
 
-As a general rule, screen readers are unable to read the contents of an image. While some may use artificial intelligence, the results generated may not be contextually accurate. Fortunately, ensuring that images are accessible doesn't take much work - it's what the `alt` attribute is all about. All meaningful images should have an `alt` attribute (known casually as *alt text*) to describe what they are or the information that they're trying to convey. 
+As a general rule, screen readers can't read the contents of an image. Although some might use artificial intelligence, the generated results might not be contextually accurate. Fortunately, ensuring that images are accessible doesn't take much work - it's what the `alt` attribute is all about. All meaningful images should have an `alt` attribute (known casually as *alt text*) to describe what they are or the information that they're trying to convey. 
 
 Images that are purely decorative should have their `alt` attribute set to an empty string: `alt=""`. This setting prevents screen readers from unnecessarily announcing the decorative image.
 
