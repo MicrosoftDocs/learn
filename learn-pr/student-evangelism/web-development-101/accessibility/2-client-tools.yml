@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101.accessibility.client-tools
 metadata:
-  title: Client tools
+  title: Surfing the web with more than a browser
   description: This unit teaches you about different tools, such as screen readers and zoom, that are important when developing accessible web apps.
   ms.date: 03/30/2021 
   author: softchris
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
-title: Client tools
+title: Surfing the web with more than a browser
 durationInMinutes: 1
 content: |
   [!include[](includes/2-client-tools.md)]

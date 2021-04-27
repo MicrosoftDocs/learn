@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.web-development-101.accessibility.links-images
 metadata:
-  title: Links and images
+  title: Ensuring links and images are accessible
   description: Links and images are very important topics, especially for folks with impaired vision. Designing links in a way that makes the content discoverable is imperative. By using ARIA tags on various elements, you can make your apps usable by all. Images should also come with an alternate description.
   ms.date: 03/30/2021 
   author: softchris
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-web-accessibility
-title: Links and images
+title: Ensuring links and images are accessible
 durationInMinutes: 1
 content: |
   [!include[](includes/4-links-images.md)]
