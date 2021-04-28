@@ -1,4 +1,4 @@
-You have registered your web application with Azure AD. You are now ready to add the authentication code to sign in users in your application. You look for a Java SDK that will handle the authentication and come across the Microsoft Authentication Library for Java.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication .
+You have registered your web application with Azure AD. You are now ready to add the authentication code to sign in users in your application. You look for a Java SDK that you can use to handle the authentication details and come across the Microsoft Authentication Library for Java.  In this unit, you will learn about the Microsoft Authentication Library for Java (MSAL4J) and how it helps with authentication.
 
 ## Microsoft Authentication Library for Java
 

@@ -42,5 +42,6 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 <!-- Bullet list copied from index.yml. If there are no prerequisites, remove this section -->
-- Have a basic understanding of running Java web application on Tomcat server
-- Beginner-level understanding of Azure Active Directory: Creating tenants and managing users in Azure AD 
+- Basic understanding of setting up and building Java web application with Maven 
+- Basic understanding of setting up and running Java web application on a Tomcat server
+- Beginner-level understanding of Azure Active Directory: Creating tenants and managing users in Azure AD
