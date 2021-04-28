@@ -20,7 +20,7 @@ quiz:
       - content: "To provide a backend server for a single-page-application (SPA) front-end such as Angular or React."
         isCorrect: false
         explanation: "This is a great use case for ASP.NET Core, since it can serve the initial HTML via Razor Pages, then handle client interactions via RESTful web APIs."
-      - content: "To provide date to a mobile client application using XML or JSON."
+      - content: "To provide data to a mobile client application using XML or JSON."
         isCorrect: false
         explanation: "Web APIs are commonly used to provide a back-end server for mobile client applications."
       - content: "To serve a traditional HTML based web application."
