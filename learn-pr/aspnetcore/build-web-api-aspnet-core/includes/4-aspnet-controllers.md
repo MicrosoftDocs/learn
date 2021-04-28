@@ -74,4 +74,6 @@ public class WeatherForecastController : ControllerBase
 
 The *:::no-loc text="WeatherForecastController":::* includes a single controller action, designated by the `[HttpGet]` attribute. This attribute routes HTTP GET requests to the `public IEnumerable<WeatherForecast> Get()`. That's why, in the previous exercise, you saw that requests to `http://localhost:5000/weatherforecast` caused the weather results to be returned. As you'll learn later in this module, there are some other common actions associated with a web API that performs *CRUD* operations (`GET`, `PUT`, `POST`, `DELETE`), but an API controller only needs to implement one controller action as seen in this example.
 
+In this case we are getting the full list of `WeatherForecast` returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET this can be achieved with the `[HttpGet("{id}")]` attributed, which we will implement in the next exercise.
+
 Now that you've learned the fundamental components of an web API controller, you're ready to create your own `PizzaController` in the next exercise.
