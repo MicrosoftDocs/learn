@@ -10,11 +10,9 @@ Tailwind Traders is using Azure to power its innovation engine in multiple ways:
 - The e-commerce platform will be re-engineered into a microservices architecture to facilitate introducing changes.
 - Tailwind Traders will containerize the microservices of the e-commerce platform and deploy them on Azure Kubernetes Service.
 - Tailwind Traders decided to use Azure machine learning and AI technologies to enrich its applications with a chat for customers to open support cases, a modern product search portal, and a recommendation engine that suggests additional offers to registered users.
-- The e-commerce website has been equipped with Azure Application Insights telemetry, which allows Tailwind Traders to gather data on the utilization of new features to confirm or reject hypotheses about the business value added by each innovation.
-- Tailwind Traders chose Microsoft Power BI to disseminate data across its organization. The goal is to ensure that decisions are data driven, and that a growth mindset becomes pervasive.
-
-This data-driven decision process allows Tailwind Traders to formulate, build, and verify innovation hypotheses quickly to continue improving its customer experience and business impact.
+- The e-commerce website has been equipped with Azure Application Insights telemetry, which allows Tailwind Traders to gather data on the utilization of new features to confirm or reject hypotheses about the business value that each innovation adds.
+- Tailwind Traders chose Microsoft Power BI to disseminate data across its organization. The goal is to ensure that decisions are data driven and that a growth mindset becomes pervasive. This data-driven decision process allows Tailwind Traders to formulate, build, and verify innovation hypotheses quickly to continue improving its customer experience and business impact.
 
 ## Next steps
 
-Read the [Cloud innovation in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate?azure-portal=true) documentation for more detailed information about the topics described in this module.
+For more information about the topics described in this module, read the [Cloud innovation in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate?azure-portal=true) documentation.
