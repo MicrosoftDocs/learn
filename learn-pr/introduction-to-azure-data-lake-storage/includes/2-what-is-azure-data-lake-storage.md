@@ -44,6 +44,9 @@ Azure Data Lake Storage is primarily designed to work with Hadoop and all framew
 
 A key technology that enables Azure Data Lake Storage to provide high-performance data access at object storage scale and prices is the *hierarchical namespace*. A hierarchical namespace enables you to organize all the objects and files within your Azure Data Lake Storage account into a hierarchy of directories and nested subdirectories. In other words, your Azure Data Lake Storage data is organized in much the same way that files are organized on your computer.
 
+> [!IMPORTANT]
+> The hierarchical namespace is *not* enabled by default. When you create a storage account, you must select the Enable Hierarchical Namespace check box. Note, as well, that you can't enable this feature on existing storage accounts, only on new storage accounts.
+
 ### Data Costs
 
 Azure Data Lake Storage is priced at Azure Blob Storage levels and builds on the powerful Azure Blob Storage capabilities like Automated Lifecycle Policy Management and Object Level tiering to manage big data storage costs. By using a hierarchical namespace, an Azure Data Lake Storage account provides the scalability and cost-effectiveness of object storage.
