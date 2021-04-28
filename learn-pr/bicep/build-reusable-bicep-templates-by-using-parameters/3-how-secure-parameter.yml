@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter  
+title: How to secure a parameter
+metadata:
+  unitType: learning-content  
+  title: How to secure a parameter
+  description: Learn how to secure parameters in Bicep file
+  ms.date: 04/21/2021  
+  author: wviriya  
+  ms.author: wviriya  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 2 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/3-how-secure-parameter.md)]

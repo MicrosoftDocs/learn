@@ -1,0 +1,83 @@
+{
+     "id": "/subscriptions/3d94ea93-25fb-480f-a274-071703b1f783/resourceGroups/learn-cb925230-7cde-4e04-a69a-122bb142048e/providers/Microsoft.KeyVault/vaults/bicep-mslearn-kv",
+     "location": "westus",
+     "name": "bicep-mslearn-kv",
+     "properties": {
+       "accessPolicies": [
+         {
+           "applicationId": null,
+           "objectId": "e0a2198f-46c5-45b4-8f98-18a7f6186618",
+           "permissions": {
+             "certificates": [
+               "get",
+               "list",
+               "delete",
+               "create",
+               "import",
+               "update",
+               "managecontacts",
+               "getissuers",
+               "listissuers",
+               "setissuers",
+               "deleteissuers",
+               "manageissuers",
+               "recover"
+             ],
+             "keys": [
+               "get",
+               "create",
+               "delete",
+               "list",
+               "update",
+               "import",
+               "backup",
+               "restore",
+               "recover"
+             ],
+             "secrets": [
+               "get",
+               "list",
+               "set",
+               "delete",
+               "backup",
+               "restore",
+               "recover"
+             ],
+             "storage": [
+               "get",
+               "list",
+               "delete",
+               "set",
+               "update",
+               "regeneratekey",
+               "setsas",
+               "listsas",
+               "getsas",
+               "deletesas"
+             ]
+           },
+           "tenantId": "604c1504-c6a3-4080-81aa-b33091104187"
+         }
+       ],
+       "createMode": null,
+       "enablePurgeProtection": null,
+       "enableRbacAuthorization": null,
+       "enableSoftDelete": true,
+       "enabledForDeployment": false,
+       "enabledForDiskEncryption": null,
+       "enabledForTemplateDeployment": true,
+       "networkAcls": null,
+       "privateEndpointConnections": null,
+       "provisioningState": "Succeeded",
+       "sku": {
+         "family": "A",
+         "name": "standard"
+       },
+       "softDeleteRetentionInDays": 90,
+       "tenantId": "604c1504-c6a3-4080-81aa-b33091104187",
+       "vaultUri": "https://bicep-mslearn-kv.vault.azure.net/"
+     },
+     "resourceGroup": "learn-cb925230-7cde-4e04-a69a-122bb142048e",
+     "tags": {},
+     "type": "Microsoft.KeyVault/vaults"
+   }

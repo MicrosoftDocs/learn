@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-reusable-bicep-templates-parameters.understand-parameters  
+title: Understand parameters 
+metadata:
+  unitType: learning-content  
+  title: Understand parameters
+  description: Lean how to use parameters in Bicep template
+  ms.date: 04/21/2021  
+  author: wviriya  
+  ms.author: wviriya  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 10 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/2-understand-parameters.md)]
