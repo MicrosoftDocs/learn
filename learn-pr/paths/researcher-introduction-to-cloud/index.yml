@@ -5,7 +5,7 @@ metadata:
   title: Introduction to the Azure Cloud for Researchers
   description: After understanding the basics of the cloud, and being to provision Virtual Machines and Storage on Azure, you will be able to use those learning for research projects. 
   brand: azure
-  ms.date: 04/19/2021
+  ms.date: 04/28/2021
   author: MaximRouiller
   ms.author: marouill
   ms.topic: interactive-tutorial

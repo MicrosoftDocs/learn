@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.researcher-extended-introduction-to-cloud
+hidden: true
+metadata:
+  title: An extended introduction to the Azure Cloud for Researchers
+  description: After understanding the basics of the cloud, and being to provision Virtual Machines and Storage on Azure, you will be able to use those learning for research projects. 
+  brand: azure
+  ms.date: 04/28/2021
+  author: MaximRouiller
+  ms.author: marouill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: An extended introduction to the Azure Cloud for Researchers
+summary: |
+  In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
+  
+  ## Learning objectives
+
+  Upon completion of this learning path you will be able to:
+
+  * Predict cloud cost and create a budget to limit your cloud consumption
+  * Secure your application secrets and your virtual machines against unauthorized access
+prerequisites: |
+  - You should be familiar with the fundamentals of the cloud.
+  - How to create virtual machines in Azure.
+  - How to select your storage based on how it's going to be used.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+- school-leader
+- higher-ed-educator
+products:
+- azure
+modules:
+- learn.azure.plan-manage-azure-costs
+- learn.azure.analyze-costs-create-budgets-azure-cost-management
+- learn.azure.protect-against-security-threats-azure
+- learn.azure.secure-network-connectivity-azure
+trophy:
+  uid: learn.researcher-extended-introduction-to-cloud.trophy
