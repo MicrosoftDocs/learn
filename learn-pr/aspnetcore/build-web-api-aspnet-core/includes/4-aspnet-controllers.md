@@ -63,9 +63,9 @@ There two important attributes applied to the *:::no-loc text="WeatherForecastCo
 public class WeatherForecastController : ControllerBase
 ```
 
-`[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix). Requests to `http://localhost:5000/weatherforecast` are handled by this controller.
-
 `[ApiController]` enables [opinionated behaviors](/aspnet/core/web-api/#apicontroller-attribute) that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses).
+
+`[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix). Requests to `http://localhost:5000/weatherforecast` are handled by this controller.
 
 > [!NOTE]
 > The route may contain static strings, as in `api/[controller]`. In this example, a request to `http://localhost:5000/api/weatherforecast` would be handled by this controller.
