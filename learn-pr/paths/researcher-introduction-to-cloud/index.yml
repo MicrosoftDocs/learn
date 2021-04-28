@@ -12,7 +12,9 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to the Azure Cloud for Researchers
 summary: |
-  After understanding the basics of the cloud, and being able to provision Virtual Machines and Storage on Azure, you will be able to use those learnings to help leverage your research projects. 
+  After understanding the basics of the cloud, and being able to provision Virtual Machines and Storage on Azure, you will be able to use those learnings to help leverage your research projects. We will go through the basic of the cloud and what services are available. Then, we're going to go over the basics of creating a virtual machine and how to use it. Finally, to persist our data we will review how to pick the best storage solution for our needs. 
+  
+  ## Learning objectives
 
   Upon completion of this learning path you will be able to:
 
