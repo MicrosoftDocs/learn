@@ -9,6 +9,6 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-durationInMinutes: 7
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-set-up-host-pool.md)]

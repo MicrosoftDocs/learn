@@ -95,7 +95,37 @@ TODO: describe the end-state
               ...
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
+## Create network rule collection
 
+Typically, in a production deployment, you'd create a network rule collection and add rules to allow both DNS and KMS. We don't have a domain controller for this exercise. So you'll just create a rule to allow traffic from your session host VM to Windows Activation Service TCP port 1688.
+
+
+
+1. On the learn-fw, select the **Network rule collection** tab.
+1. Select **Add network rule collection**.
+1. Enter the following information.
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     net-coll01    |
+    |Priority    |    200     |
+    |Action     |  Allow       |
+
+
+
+1. Under **Rules**, **IP addresses**,
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     Allow-KMS   |
+    |Protocol   |  TCP    |
+    |Source type    |  IP address       |
+    |Source   |     IP address of host pool VNet       |
+    |Destination type  |  IP address       |
+    |Destination address  | Use the Azure Global KMS IP address: 23.102.135.246    |
+    |Destination Ports  |  1688   |
+
+2. Select **Add**.
 ## Check your work
 <!-- Introduction paragraph -->
 1. <!-- Step 1 (if multiple steps are needed) -->
