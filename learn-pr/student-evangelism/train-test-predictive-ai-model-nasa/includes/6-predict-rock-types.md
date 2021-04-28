@@ -1,10 +1,11 @@
-Let's use our model to predict rock types. To predict the type of rock in a new image, we need to complete these steps:
+Let's use our model to predict rock types.
 
-- Step 1: Convert the new image to numbers using the `test_transforms` function you created to transform the images to the model
-- Step 2: Transform the image. Crop and resize the image to 224 &times; 224 pixels using the `unsqueeze` and `Variables` functions
-- Step 3: Extract the features and characteristics of the image by passing the image into the model
-- Step 4: Predict the type of rock that's shown in the image by using the associations we learned in Step 2 by finding the highest probability prediction from the model's results
+To predict the type of rock in a new image, we need to complete these steps:
 
+- Step 1: Convert the new image to numbers. Use the `test_transforms` function you created to transform the images to the model.
+- Step 2: Transform the image. Crop and resize the image to 224 &times; 224 pixels with the `unsqueeze` and `Variable` functions.
+- Step 3: Extract the features and characteristics of the image. Pass the image into the model to do the extractions.
+- Step 4: Predict the type of rock that's shown in the image. Use the associations we learned in Step 2 by finding the highest probability prediction from the model's results.
 
 
 ## Use the model to make predictions
@@ -32,4 +33,4 @@ Follow these steps to make predictions with the neural network in your AI model.
        return index
    ```
 
-Now that you have defined the image prediction function, you can move onto the final exercise where you will call this function to make a prediction of what type of rock is shown in an image.
+You've defined the image prediction function. Now you can continue to the final exercise and call this function to predict the type of rock in an image.

@@ -16,7 +16,7 @@ The following code calculates and displays the accuracy of our AI model to class
 The output displays the accuracy with 16 digits in the fractional part of the decimal:
 
 ```output
-0.935
+0.9354166686534882
 ```
 
 The output shows our model has 93.5% accuracy in making predictions. We want a high value. The higher the accuracy means the model is doing a good job of making predictions.
@@ -25,22 +25,6 @@ Even though 93.5% is high, you can do a few things to increase the accuracy even
 
 - Add more images and continue training the AI model.
 - Increase the number of `epoch` training iterations for deep learning.
-
-> [!Note]
-> **Sarah ToDo**
-> - 80% does not seem high to me... Original text said 96%, but didn't show any output
-> The output from the previous unit showed the following accuracies:
-> Epoch 1/5.. Train loss: 1.990.. Test loss: 0.472.. Test accuracy: 0.810
-> Epoch 2/5.. Train loss: 0.679.. Test loss: 0.372.. Test accuracy: 0.935
-> Epoch 2/5.. Train loss: 0.648.. Test loss: 0.595.. Test accuracy: 0.644
-> Epoch 3/5.. Train loss: 0.463.. Test loss: 0.444.. Test accuracy: 0.835
-> Epoch 4/5.. Train loss: 0.310.. Test loss: 0.202.. Test accuracy: 0.935
-> Epoch 4/5.. Train loss: 0.261.. Test loss: 0.184.. Test accuracy: 0.967
-> Epoch 5/5.. Train loss: 0.271.. Test loss: 0.172.. Test accuracy: 0.933
-> Epoch 5/5.. Train loss: 0.263.. Test loss: 0.372.. Test accuracy: 0.802
-> The highest accuracy in the output is 96.7%.
-> Not sure how to handle this one.
-> Should we just report the highest value to the students?
 
 
 ## Save the model

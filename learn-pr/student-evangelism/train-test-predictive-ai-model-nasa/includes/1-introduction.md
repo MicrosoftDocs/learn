@@ -10,11 +10,11 @@ In this Microsoft Learn module, you'll create an AI model with a neural network.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll learn:
 
-- Learn what neural networks are
-- Train an AI model
-- Test the model by having it classify various space rocks
+- What neural networks are, and how to build a neural network for an AI model
+- The steps to train an AI model
+- How to test a model by having it classify various space rocks
 
 
 ## Prerequisites

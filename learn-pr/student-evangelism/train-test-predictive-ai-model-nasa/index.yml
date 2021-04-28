@@ -3,7 +3,7 @@ uid: learn.student-evangelism.train-test-predictive-ai-model-nasa
 metadata:
   title: Classify types of space rocks in photos by using artificial intelligence
   description: Learn how to build an AI model to predict types of space rocks in images. Train and test your model by using random photos.
-  ms.date: 04/11/2021
+  ms.date: 04/28/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
