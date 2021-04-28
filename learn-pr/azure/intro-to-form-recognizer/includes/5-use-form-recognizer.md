@@ -4,9 +4,9 @@ To start, you'll need to activate the Sandbox above – just select the ‘Activ
 
 ## Choose your learning experience
 
-You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. But you fully control these resources, so if you are interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure portal, or even use Visual Studio remote debugging and step through.
+You'll have the option to treat this as a demo, and just see what you can do with Form Recognizer. But you fully control these resources, so if you're interested in peeking at the technical details, you can choose to dive deeper. Browse the code in github, check out the resources in the Azure portal, or even use Visual Studio remote debugging and step through.
 
-For more guided hands-on learning on Form Recognizer we have more Learn modules for you to check out. After learning more you can always come back here to apply what you've learned in the free sandbox.
+For more guided hands-on learning on Form Recognizer, we have more Learn modules for you to check out. After learning more you can always come back here to apply what you've learned in the free sandbox.
 
 ## Deploy Form Recognizer
 
@@ -28,7 +28,7 @@ After you run the code, you can play around with Form Recognizer at your own pac
 
 ## Optional: Browse or clone the code in GitHub
 
-The source code for this entire demo is available is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
+The source code for this entire demo is fully available. Browse it, use it to debug the demo app, or ignore it entirely. If you fork it and do something cool, let us know on Twitter @MicrosoftLearn.
 
 You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/mslearn-intro-to-form-recognizer?azure-portal=true)
 
@@ -51,7 +51,7 @@ Notice that we use a convenience method specifically for `Invoice` since it's on
 
 You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
 
-Or if you prefer a command line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources (there should only be one):
+Or if you prefer a command-line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources (there should only be one):
 
 ```azurecli
 az cognitiveservices account list
