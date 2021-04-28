@@ -1,4 +1,4 @@
-To complete the project, we must now implement a way to enter data for the users forename and surname and their managers.
+To complete the project, we must now implement a way to enter data for the user's and their manager's forenames and surnames.
 
 ## Add data entry elements for names
 

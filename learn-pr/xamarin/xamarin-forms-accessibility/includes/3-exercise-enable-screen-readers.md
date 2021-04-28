@@ -1,8 +1,8 @@
-The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through turning on how to turn on the screen reader for each operating system to test accessibility in the app.
+The first step before implementing accessible features in the app is to turn on the screen reader. Let's walk through how to turn on the screen reader for each operating system to test accessibility in the app.
 
-## Enable Android screen reader
+## Enable screen reader on Android
 
-TalkBack is a feature of Android that provides screen reader capabilities. It is included on most devices or can be downloaded directly from the Google Play app store. Enable TalkBack on your device follow these instructions:
+TalkBack is the primary screen reader used on Android. It is included on most devices and can be downloaded directly from the Google Play app store. Enable TalkBack on your device by following these instructions:
 
 1. Open the **Settings** app on your Android device
 1. Navigate or search for **Accessibility**
@@ -16,7 +16,7 @@ It is recommended to go through the TalkBack tutorial, which will launch automat
 
 ## Enable iOS screen reader
 
-VoiceOver is Apple's screen reader technology that is available across iPhone, iPad, Mac, and other Apple devices. On certain devices, it also supports braille through a connected braille display. To enable VoiceOver on your device follow these instructions:
+VoiceOver is Apple's main screen reader technology that is available across iPhone, iPad, Mac, and other Apple devices. To enable VoiceOver on your device, follow these instructions:
 
 1. Open the **Settings** app on your iOS device
 1. Navigate or search for **Accessibility**
@@ -30,7 +30,7 @@ It is recommended to go through the VoiceOver tutorial, which can be found by se
 
 ## Enable Windows screen reader
 
-Narrator is built directly into Windows to enable users to user their PC without a mouse to complete common tasks by reading and interacting with things on the screen like text and buttons. You can enable Narrator in the following ways:
+Narrator is a screen reader built directly into Windows to enable users to use their PC without a mouse to complete common tasks. You can enable Narrator in the following ways:
 
 - Press the **Windows logo key** + **Ctrl** + **Enter** together to start Narrator. Press these keys again to stop Narrator. (On older versions of Windows, the command was the **Windows logo key** + **Enter**.) On many keyboards, the Windows logo key is located on the bottom row of keys, to the left or right of the Alt key.
 

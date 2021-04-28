@@ -14,9 +14,9 @@ Create a new Xamarin app:
 ::: zone-end
 
 ::: zone pivot="vsstudiomac"
-1. Open Visual Studio 2019 for Mac
+1. Open Visual Studio for Mac
 1. Select **New Project**
-1. Select **Multiplatform** > **App** > **Blank Forms App** and select Next
+1. Select **Multiplatform** > **App** > **Blank Forms App** and select **Next**
 1. Enter **AccessibleApp** as the app name, and select **Next**
 1. Select **Create**
 ::: zone-end
@@ -52,15 +52,17 @@ To create a simple for we will use several UI elements including `Label`, `Image
 
 ## Run the application
 
-Run the application with the screen reader enabled on the operating system of your choice. Notice that on some platforms when you launch the application all elements will be read by the screen reader. Use gestures or a keyboard to tab through the items on the screen. Note:
+Run the application with the screen reader activated on the operating system of your choice. Notice that on some platforms, when you launch the application, all elements will be read by the screen reader. Use gestures or a keyboard to navigate through the items on the screen. 
+
+Note:
 
 - `Image` does have any information as to what it is
-- `Entry` reads back a generic information
+- `Entry` reads back generic information
 - `Button` reads the text of **Submit** out loud.
 
 ## Image accessibility
 
-To have the screen reader see the `Image` as a visible element we must set the `AutomationProperties.IsInAccessibleTree` property to `true`. 
+To have the screen reader see the `Image` as an accessible element we must set the `AutomationProperties.IsInAccessibleTree` property to `true`. 
 
 1. Add the following property to the `Image`:
 
@@ -96,13 +98,12 @@ When the `Button` is in focus "Submit button" is read out loud by the screen rea
 1. Add the following properties to the `Button`:
 
 ```xaml
-AutomationProperties.Name="Submit Button"
-AutomationProperties.HelpText="Tap to submit project information to backend"
+AutomationProperties.Name="Submit"
+AutomationProperties.HelpText="Submits project information to backend"
 ```
 
 When you run the application again, you will hear an improved description of the UI element and what will happen when it is pressed.
 
-We have now explored the built-in automation properties of Xamarin.Forms to add more context for elements on the screen that will be read out loud by screen readers. Next, we will explore tab ordering to provide a better experience when a user navigates through elements.
-
+We have now explored the built-in automation properties of Xamarin.Forms to add more context for elements on the screen that will be read out loud by screen readers. Next, we will explore accessible content ordering to provide a better experience when a user navigates through elements.
 
 

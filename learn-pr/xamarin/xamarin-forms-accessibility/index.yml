@@ -14,7 +14,7 @@ abstract: |
   By the end of this module, you'll be able to:
   - Enable screen reader & navigation assistant tools
   - Add automation properties to UI elements to improve accessibility
-  - Improve keyboard accessibility by controlling tab order
+  - Improve accessibility order with meaningful content ordering
 prerequisites: |
   - Familiarity with building and deploying Xamarin.Forms apps
   - Familiarity with the concepts of accessibility, disability, and inclusion

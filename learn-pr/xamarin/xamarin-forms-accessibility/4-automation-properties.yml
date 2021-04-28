@@ -25,18 +25,18 @@ quiz:
         explanation: "Xamarin.Forms uses this automation property to set the underlying native platform accessibility flags to ensure the element is read by the screen reader."
       - content: "Name"
         isCorrect: false
-        explanation: "Name is an automation property, but is a short description if the element is visible."
+        explanation: "Name is an automation property, but is used to specify a short description to be read by the screen reader."
       - content: "LabeledBy"
         isCorrect: false
-        explanation: "This is an automation property, but is used to allow another element to define accessibility information for the current element."
-    - content: "What is term used for the software that reads out loud elements on an application?"
+        explanation: "LabeledBy is an automation property, but is used to allow another element to define the screen reader description for the current element."
+    - content: "What is the term that refers to the feature which reads out loud the elements on an application?"
       choices:
       - content: "TalkBack"
         isCorrect: false
-        explanation: "This is the name of the screen reader on Android."
+        explanation: "This is the name of the primary screen reader for Android."
       - content: "Narrator"
         isCorrect: false
-        explanation: "This is the name of the screen reader on Windows."
+        explanation: "This is the name of the primary screen reader for Windows."
       - content: "Screen reader"
         isCorrect: true
         explanation: "A screen reader is available on the different platforms for accessibility."

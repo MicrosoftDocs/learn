@@ -1,6 +1,6 @@
-You needed to create an app that is accessible to users that is created with Xamarin.Forms. Automation properties and keyboard accessibility features of Xamarin.Forms enable you to enhance applications to make them more accessible when using screen readers. 
+You needed to create a Xamarin.Forms app that is accessible to users. Xamarin.Forms automation properties and intentional content ordering enabled you to enhance applications to make them more accessible.
 
-In this module, you used Xamarin.Forms automation properties to control what elements are included and what information is read back by the screen reader. You also applied element ordering to improve the screen reader and tabbing through the user interface in Xamarin.Forms apps. 
+In this module, you used Xamarin.Forms automation properties to control what elements are included and what information is read back by the screen reader. You also applied intentional content ordering to improve the screen reader and keyboard experience of Xamarin.Forms apps. 
 
 There are many more enhancements to applications that can be done to improve accessibility including layout and design of user interface elements, appropriate font sizes, and suitable color and contrast settings. For guidelines on issues to consider, see the [Accessibility Checklist](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist).
 
