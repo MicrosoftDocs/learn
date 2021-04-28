@@ -10,21 +10,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 123
 content: |
 quiz:
   questions:
@@ -33,10 +19,10 @@ quiz:
       You decide to deploy it using a Bicep template.
       Which `targetScope` value should you use for the file?
     choices:
-    - content: `tenant()`
+    - content: "`tenant()`"
       isCorrect: true
       explanation: TODO
-    - content: `subscription()`
+    - content: "`subscription()`"
       isCorrect: false
       explanation: TODO
     - content: Don't specify a `targetScope`.
