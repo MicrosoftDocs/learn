@@ -35,7 +35,7 @@ quiz:
     - content: "`Prompt` is a cmdlet and `Read-Host` is a parameter."
       isCorrect: false
       explanation: "Actually, the reverse is true. `Read-Host` is a cmdlet, and `Prompt` is a parameter."
-    - content: "You can use double quotes and single quotes to create a string."
+    - content: "You can enclose strings in either single or double quotation marks."
       isCorrect: true
       explanation: "Correct!"
     - content: "If you make a mistake when you write code, you have to delete it all and start over."
@@ -49,9 +49,9 @@ quiz:
     - content: "It's missing a semicolon at the end."
       isCorrect: false
       explanation: "PowerShell doesn't need semicolons to tell when a command is over."
-    - content: "The string should use single-quotes."
+    - content: "The string should be enclosed in single quotation marks."
       isCorrect: false
-      explanation: "A string can be surrounded by either single quotes or double quotes."
+      explanation: "You can enclose strings in either single or double quotation marks."
     - content: "Nothing is wrong with this command. It will run normally."
       isCorrect: true
       explanation: "Correct! PowerShell's relaxed behavior allows this command to run normally."
