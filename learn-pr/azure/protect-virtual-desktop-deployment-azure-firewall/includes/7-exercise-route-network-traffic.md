@@ -46,7 +46,8 @@ For the subnet used by the session host, configure the outbound default route to
 ### Add route to route table
 
 1. Under **Settings**, select **Routes**.
-:::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
+
+    :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
 1. Select **Add**.
 1. Enter the following values.
 
@@ -106,7 +107,10 @@ At this point, you've routed all network traffic for Windows Virtual Desktop thr
 1. In Cloud Shell, run the following command.
 
     ```powershell
-    "rdgateway", "rdbroker","rdweb"|%{Invoke-RestMethod -Method:Get -Uri https://$_.wvd.microsoft.com/api/health}|ft -Property Health,TimeStamp,ClusterUrl
+    "rdgateway", "rdbroker","rdweb"|% `
+    {Invoke-RestMethod -Method:Get `
+    -Uri https://$_.wvd.microsoft.com/api/health}|ft `
+    -Property Health,TimeStamp,ClusterUrl
      ```
 
 1. You should see something like the following results where all three component services are listed as healthy. 
