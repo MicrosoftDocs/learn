@@ -1,8 +1,8 @@
 ## Overview
 
-In this module, you'll learn how to use the AI extensibility capability of Azure Live Video Analytics on Azure IoT Edge. You will deploy a model on edge for detecting a person on the factory floor. You'll also learn about the capabilities of Live Video Analytics. You will be able to seamlessly deploy a custom model as a container on the edge and analyze a simulated live video feed. You'll use a pre-trained YOLO model and deploy the model as a container to your video analytics solution.
+In this module, you'll learn how to use the AI extensibility capability of Azure Live Video Analytics on Azure IoT Edge. You'll deploy a model on edge for detecting a person on the factory floor. You'll also learn about the capabilities of Live Video Analytics. You'll be able to seamlessly deploy a custom model as a container on the edge and analyze a simulated live video feed. You'll use a pre-trained YOLO model and deploy the model as a container to your video analytics solution.
 
-You will see how to:
+You'll see how to:
 
 - Set up the Azure resources
 - Set up edge workloads to the edge device
@@ -14,11 +14,11 @@ You use an Azure virtual machine (VM) as an IoT Edge device, and the video analy
 
 ## Sample
 
-This module uses an [employee safety video](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/EdgeSolution/modules/CVCaptureModule/videos/scenario5-total-customer-counting.mkv) file to simulate a live stream. To playback the video, you can use an application such as [a VLC media player](https://www.videolan.org/vlc/). Copy the video link and paste it. While you watch the video, you will notice the movement of people in the video.
+This module uses an [employee safety video](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/EdgeSolution/modules/CVCaptureModule/videos/scenario5-total-customer-counting.mkv) file to simulate a live stream. To play back the video, you can use an application such as [a VLC media player](https://www.videolan.org/vlc/). Copy the video link and paste it. While you watch the video, you'll notice the movement of people in the video.
 
 ## Solution workflow
 
-Firstly, in this module, you need to set up an edge device with the IoT Edge runtime installed. After you configure your device to IoT Hub, you will send the deployment manifest to your edge device. After the deployment manifest is sent to the edge, the IoTEdge agent running on your edge device gets new containers from the container registry and starts them on your edge device. The following modules will be deployed:
+Firstly, in this module, you need to set up an edge device with the IoT Edge runtime installed. After you configure your device to IoT Hub, you'll send the deployment manifest to your edge device. After the deployment manifest is sent to the edge, the IoTEdge agent running on your edge device gets new containers from the container registry and starts them on your edge device. The following modules will be deployed:
 
 - **Web Module**: The Web Module represents the leading web application that the user interacts with. For example, when you add your camera, the Web Module will manage the camera settings to the live video analytics module. When deployed, based on user setting, the web module can capture images automatically and send them to retrain using the customvision.ai application protocol interface(API). 
 
@@ -32,7 +32,9 @@ Firstly, in this module, you need to set up an edge device with the IoT Edge run
 
 ## Architecture
 
-Here is the end-to-end Video Analytics solution architecture.![img](https://lh5.googleusercontent.com/i8_vR0QLEmF0mnOkISK3skob8Q5WHHDvTs29wfzyqTOvejOLLktRMqZo3MJZV-cO2EVe_AxB5PsTccZAnR63VjJ6XSQo_aNo53gC2V8uhJny1VQLiG9tjfGgFjvjKb23nCcovC0)
+Here is the end-to-end Video Analytics solution architecture.
+
+[![img](../media/solution-architecture.png)](../media/solution-architecture.png)
 
 ## Define Azure products
 
@@ -40,9 +42,9 @@ You'll use the following components in the design of the solution:
 
 - **Azure IoT Hub:** Azure IoT Hub provides a cloud-hosted solution back end to connect most devices.
 
-- **Azure IoT Edge virtual machine:** The runtime installs the Azure IoT Edge virtual machine. In this module, you will open network port 8181 to enable communication between your virtual machine and web application.
+- **Azure IoT Edge virtual machine:** The runtime installs the Azure IoT Edge virtual machine. In this module, you'll open network port 8181 to enable communication between your virtual machine and web application.
 
-- **Live Video Analytics on IoT Edge:** An [IoT Edge module](about:blank) that has the functionality to be combined with other Azure edge modules such as Stream Analytics on IoT Edge, Cognitive Services on IoT Edge as well as Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
+- **Live Video Analytics on IoT Edge:** An [IoT Edge module](about:blank) that has the functionality to be combined with other Azure edge modules such as Stream Analytics on IoT Edge, Cognitive Services on IoT Edge and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
 
 - **Custom Vision Service:** Custom Vision lets you build, deploy, and improve your image classifiers. An image classifier is an AI service that applies labels (representing classes) to images based on their visual characteristics.
 
@@ -72,4 +74,4 @@ The overall module steps are for this solution:
 
 ## Conclusion
 
-After completing the module, your vision solution will be deployed to your edge device. You'll run a simulated live video stream. The solution will be deployed on the edge device to detect a person in real-time using a YOLO model and Live Video Analytics.
+After completing the module, your vision solution will be deployed to your edge device. You'll run a simulated live video stream. The solution will be deployed on the edge device to detect a person in real time using a YOLO model and Live Video Analytics.
