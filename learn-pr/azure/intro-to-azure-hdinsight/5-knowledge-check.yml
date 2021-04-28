@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight.5-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/11/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which Hadoop component is used to manage resources on a Hadoop system?"
+    choices:
+    - content: "YARN"
+      isCorrect: true
+      explanation: "Correct. This is the component that is responsible for managing resources on a Hadoop cluster."
+    - content: "Spark"
+      isCorrect: false
+      explanation: "Incorrect. Spark is a type of Hadoop cluster implementation."
+    - content: "MapReduce"
+      isCorrect: false
+      explanation: "Incorrect. MapReduce is a programming model that enables you to process and analyze data."
+  - content: "What type of file system does Apache Hadoop store data in?"
+    choices:
+    - content: "It has no storage. Data is stored in memory."
+      isCorrect: false
+      explanation: "Incorrect. Apache Hadoop requires physical storage to persist data."
+    - content: "RDD"
+      isCorrect: false
+      explanation: "Incorrect. RDD is an acronym for Resilient Distributed Dataset, which provides an in-memory data engine. A Hadoop system will persist data in storage. It's not an in-memory data platform technology."
+    - content: "HDFS"
+      isCorrect: true
+      explanation: "Correct. HDFS is an acronym for Hadoop Distributed File System, which is the data store for a Hadoop system."
+  - content: "Which of the following options is a parallel processing framework?"
+    choices:
+    - content: "Apache Hive"
+      isCorrect: false
+      explanation: "Incorrect. Apache Hive in HDInsight is a data warehouse system for Apache Hadoop."
+    - content: "Apache Spark"
+      isCorrect: true
+      explanation: "Correct. Apache Spark supports in-memory processing, which helps boost the performance of big-data analytic applications."
+    - content: "Apache Kafka"
+      isCorrect: false
+      explanation: "Incorrect. Apache Kafka is an event streaming platform."
+  - content: "In a Hadoop cluster on HDInsight, which of the following nodes is responsible for processing data?"
+    choices:
+    - content: "Head node"
+      isCorrect: false
+      explanation: "Incorrect. The head node is responsible for accepting and managing client requests and passing the request to the worker nodes."
+    - content: "Worker node"
+      isCorrect: true
+      explanation: "Correct. Worker nodes are responsible for processing data in a cluster."
+  - content: "Which of the following scenarios for big data processing enable an organization to prepare big data for further analysis?"
+    choices:
+    - content: "Data warehousing"
+      isCorrect: false
+      explanation: "Incorrect. Data warehousing provides an organization with somewhere to store big data while waiting to perform analysis on that data."
+    - content: "Data science"
+      isCorrect: false
+      explanation: "Incorrect. Data science enables an organization to ingest, engineer, model, and evaluate their big data."
+    - content: "Batch processing"
+      isCorrect: true
+      explanation: "Correct. Organizations use batch-processing jobs to prepare big data for further analysis."
