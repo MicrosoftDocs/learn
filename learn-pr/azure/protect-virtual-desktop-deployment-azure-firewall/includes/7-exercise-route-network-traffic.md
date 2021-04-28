@@ -15,7 +15,7 @@ For the subnet used by the session host, configure the outbound default route to
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used in the previous exercise units.
 1. Search for and select **Route tables**.
-1. Select **+ New**.
+1. Select **+ Add**.
 1. Use the following values.
 
     |Field |Value |
@@ -32,6 +32,7 @@ For the subnet used by the session host, configure the outbound default route to
 ### Associate route table to workload's subnet
 
 1. On firewall-route, under **Settings**, select **Subnets**.
+:::image type="content" source="../media/7-firewall-route-subnet.png" alt-text="Screenshot that shows the subnet option under settings for the firewall route.":::
 1. Select **Associate**.
 1. Select the following values.
 
@@ -45,6 +46,8 @@ For the subnet used by the session host, configure the outbound default route to
 ### Add route to route table
 
 1. Under **Settings**, select **Routes**.
+
+    :::image type="content" source="../media/7-firewall-route-routes.png" alt-text="Screenshot that shows the routes option under settings on the firewall route table.":::
 1. Select **Add**.
 1. Enter the following values.
 
@@ -64,7 +67,9 @@ Create an application rule collection with rules to allow Windows Virtual Deskto
 1. Search for and select **Firewalls**.
 1. Select the **learn-fw** firewall.
 1. Under **Settings**, select **Rules (classic)**.
+:::image type="content" source="../media/7-firewall-rules-classic.png" alt-text="Screenshot that shows the rules classic option under settings in the firewall.":::
 1. Select the **Application rule collection** tab > **Add application rule collection**.
+:::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection.png" alt-text="Screenshot that shows the application rule collection tab with the add application rule collection option.":::
 1. Enter the following information.
 
     |Field  |Value  |
@@ -91,6 +96,8 @@ Create an application rule collection with rules to allow Windows Virtual Deskto
     |Protocol:Port   |   https     |
     |Target FQDNs   | *xt.blob.core.windows.net, *eh.servicebus.windows.net, *xt.table.core.windows.net   |
 
+1. When you're done, the form looks like the following image.
+:::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows the application rule collection form filled out.":::
 1. Select **Add**.
 
 ## Check your work
@@ -100,7 +107,10 @@ At this point, you've routed all network traffic for Windows Virtual Desktop thr
 1. In Cloud Shell, run the following command.
 
     ```powershell
-    "rdgateway", "rdbroker","rdweb"|%{Invoke-RestMethod -Method:Get -Uri https://$_.wvd.microsoft.com/api/health}|ft -Property Health,TimeStamp,ClusterUrl
+    "rdgateway", "rdbroker","rdweb"|% `
+    {Invoke-RestMethod -Method:Get `
+    -Uri https://$_.wvd.microsoft.com/api/health}|ft `
+    -Property Health,TimeStamp,ClusterUrl
      ```
 
 1. You should see something like the following results where all three component services are listed as healthy. 
