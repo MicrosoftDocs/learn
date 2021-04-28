@@ -2,9 +2,9 @@ Let's continue extending our web API controller to add the ability to create(`PO
 
 ## Add a pizza
 
-To enable the endpoint to have the ability for users to add pizza, we must implement the `POST` action using the `[HttpPost]`. By passing a `Pizza` into the method as a parameter, ASP.NET Core will automatically convert any `application/json` that is sent to the endpoint into a `Pizza` object. 
+Let's enable a pizza to be added through our web API with a `POST` method.
 
-Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
+1. Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
 ```csharp
 [HttpPost]
@@ -34,9 +34,9 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Modify a pizza
 
-Modifying or updating a pizza in our inventory is similar to the `POST` method we implemented, but will use the `[HttpPut]` attribute and take in the `id` in addition to the `Pizza` object that needs to be updated.
+Let's enable a pizza to be updated through our web API with a `PUT` method.
 
-Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
+1. Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
 ```csharp
 [HttpPut("{id}")]
@@ -71,9 +71,9 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Remove a pizza
 
-One of the easier actions to implement is the `DELETE` action that takes in just the `id` of the pizza to remove from the in-memory cache.
+Let's enable a pizza to be removed through our web API with a `DELETE` method.
 
-Replace the `// DELETE action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
+1. Replace the `// DELETE action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
 ```csharp
 [HttpDelete("{id}")]
@@ -105,8 +105,6 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 |`NotFound`                   |404             |A pizza matching the provided `id` parameter doesn't exist in the in-memory.|
 
 ## Build and run the finished web API
-
-## Build and test the controller
 
 1. Build and start the web API by running the following command:
 
