@@ -12,7 +12,7 @@ Create a new file named *GettingStarted.ps1*, and use the Cloud Shell code edito
 
 Use the techniques you learned to print one message and then collect user input to reuse in a second message. In other words, you first learned how to display a message in just one line of code. You also learned how to request input from a user and then reuse that value to print a custom message. Use both techniques for this challenge.
 
-No matter how you do it, your code should produce somethink like the following output. In this example, replace the placeholder text \<*current date*> and \<*your name*> with values that you choose.
+No matter how you do it, your code should produce something like the following output. In this example, replace the placeholder text \<*current date*> and \<*your name*> with values that you choose.
 
 ```output
 Today's date is <current date>.
