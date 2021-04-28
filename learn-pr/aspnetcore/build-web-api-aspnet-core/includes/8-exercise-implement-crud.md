@@ -23,14 +23,7 @@ The preceding action:
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
-The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza.
-
-Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
-
-|ASP.NET Core<br>action result|HTTP status code|Description|
-|-----------------------------|----------------|-----------|
-|`CreatedAtAction`            |201             |The pizza was added to the in-memory cache.<br>The pizza is included in the response body in the media type as defined in the `accept` HTTP request header (JSON by default).|
-|`BadRequest` is implied      |400             |The request body's `pizza` object is invalid.|
+The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza, as explained in the previous unit.
 
 ## Modify a pizza
 
@@ -61,14 +54,6 @@ The preceding action:
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
-Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
-
-|ASP.NET Core<br>action result|HTTP status code|Description|
-|-----------------------------|----------------|-----------|
-|`NoContent`                  |204             |The pizza was updated in the in-memory cache.|
-|`BadRequest`                 |400             |The request body's `Id` value doesn't match the route's `id` value.|
-|`BadRequest` is implied      |400             |The request body's `Pizza` object is invalid.|
-
 ## Remove a pizza
 
 Let's enable a pizza to be removed through our web API with a `DELETE` method.
@@ -96,13 +81,6 @@ The preceding action:
 * Requires that `id` parameter's value is included in the URL segment after `pizza/`.
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
 * Queries the in-memory cache for a pizza matching the provided `id` parameter.
-
-Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
-
-|ASP.NET Core<br>action result|HTTP status code|Description|
-|-----------------------------|----------------|-----------|
-|`NoContent`                  |204             |The pizza was deleted from the in-memory cache.|
-|`NotFound`                   |404             |A pizza matching the provided `id` parameter doesn't exist in the in-memory.|
 
 ## Build and run the finished web API
 
