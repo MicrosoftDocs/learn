@@ -1,4 +1,4 @@
-One of the best ways to learn to code is to write many tiny programs. Writing smaller programs gets you grounded in the fundamentals of programming and important techniques that you'll use when you begin writing larger programs.
+One of the best ways to learn to code is to write many tiny programs. Writing smaller programs gets you grounded in the fundamentals of programming and important techniques that you'll apply when you begin writing larger programs.
 
 ## Write your first lines of code
 
@@ -19,7 +19,7 @@ In this module, you'll use a version of a code editor in Cloud Shell to write an
 
     The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` file name extension is the extension that's used for PowerShell scripts.
 
-    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and then save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of only the file name.
+    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and then save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of using only the file name.
 
 1. In the code editor window, type the following code:
 
@@ -27,7 +27,7 @@ In this module, you'll use a version of a code editor in Cloud Shell to write an
     Write-Output 'Hello World!'
     ```
 
-1. Use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS) to save the file.
+1. Use the <kbd>Ctrl+S</kbd> keyboard shortcut in Windows (or <kbd>⌘+S</kbd> on macOS) to save the file.
 
     We'll explain how and why it works soon. But first, you should run your code to ensure that you've typed it correctly.
 
@@ -43,7 +43,7 @@ To run the script, enter the following command in the Cloud Shell terminal:
 ```
 
 > [!NOTE]
-> Be sure to include the dot (`.`) at the beginning of a command. This tells PowerShell to run the script or file that's being called.
+> Be sure to include the dot (`.`) at the beginning of the command. This tells PowerShell to run the script or file that's being called.
 
 ### Step 3: Observe the result
 
@@ -90,7 +90,7 @@ Reading these errors is essential in helping you learn what caused them. When yo
     . ./HelloWorld.ps1
     ```
 
-1. At the prompt that asks you for your name, type your name, and then select <kbd>Enter</kbd>.
+1. At the prompt that asks for your name, type your name, and then select <kbd>Enter</kbd>.
 
     The output is a message with your name inserted. For example:
 
