@@ -8,7 +8,7 @@ After you've started the build phase to validate your innovation hypothesis, the
 - **Quick delivery of software features**: DevOps processes and tools embrace the concept of failing fast. Building MVPs or prototypes to quickly validate whether the feature being worked on goes in the right direction is core to the concept of DevOps.
 - **Reliable delivery of software features**: Change-averse organizations often associate quick changes with downtime. However, DevOps promises exactly the opposite: a quick change rate and a high level of reliability. This is possible by integrating testing in early stages of the development cycle, in a process called "shift to the left." 
 
-  If the development of a feature across time is seen as a line from left to right, a legacy development process would perform user validation and quality control at the end of the development cycle, or at the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
+  If the development of a feature across time is seen as a line from left to right, an legacy development process would perform user validation and quality control at the end of the development cycle, or at the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
 
 DevOps embodies the same core concepts of a healthy innovation culture. Adopting its methodology is key to get to an agile innovation cycle.
 
@@ -22,7 +22,7 @@ Microservices architectures are application patterns that exploit modularity. Ap
 
 A question that organizations often ask is what to do if an application is monolithic. Should the organization redesign the application into a microservices architecture before introducing innovation, or can the innovation and redesign processes run in parallel? There is no single answer to this question. It depends on the complexity and business relevance of the application under consideration.
 
-Tailwind Traders is confronted with this question when looking at introducing innovation in its e-commerce platform. The company decided to start a project to redesign the e-commerce application into a microservices architecture, because the application's business criticality justifies this effort. Not having a modular application would severely impair Tailwind Traders' ability to react to changing trends in the online market.
+Tailwind Traders confronted this question when looking at introducing innovation in its e-commerce platform. The company decided to start a project to redesign the e-commerce application into a microservices architecture, because the application's business criticality justified this effort. Not having a modular application would severely impair Tailwind Traders' ability to react to changing trends in the online market.
 
 However, Tailwind Traders has decided to tackle some of the major gaps in its platform at the same time. Waiting for the application redesign project to finish would mean losing significant market share to the new startups that are disrupting the ecommerce market right now.
 
@@ -60,7 +60,7 @@ Azure App Service supports various pricing models, including a serverless option
 
 The serverless model is interesting for innovating, because it allows deploying new microservices without incurring high monthly bills if the market doesn't accept them. This is another example of the fail-fast strategy, where innovation does not necessarily mean high expenses.
 
-Azure App Service also offers features that support DevOps-oriented deployments, such as web app slots. Slots are staging areas where you can deploy new features without affecting the production environment. This is great from an innovation perspective, because you can redirect a small selection of your customers to this new version of the application, and then validate whether your innovation hypothesis is correct or not. Eventually, if you want to promote the new code to production, you can "swap" slots so that the staging environment becomes the production version.
+Azure App Service also offers features that support DevOps-oriented deployments, such as web app slots. Slots are staging areas where you can deploy new features without affecting the production environment. This is great from an innovation perspective, because you can redirect a small selection of your customers to this new version of the application and then validate whether your innovation hypothesis is correct. Eventually, if you want to promote the new code to production, you can "swap" slots so that the staging environment becomes the production version.
 
 ## Summary
 
@@ -70,7 +70,7 @@ In this unit, you learned how technology can support innovation:
 - Applications can be rearchitected into microservices to allow innovating on their components individually, without affecting the rest.
 - Containers enable reliable application deployment across multiple platforms and environments.
 - Kubernetes is a cloud-agnostic orchestration platform to run containerized applications.
-- Azure App Service can run web-based workloads with minimum management overhead. It offers many features like serverless or application slots, targeted to speed up the innovation cycle.
+- Azure App Service can run web-based workloads with minimum management overhead. It offers many features, like serverless or application slots, to speed up the innovation cycle.
 
 Tailwind Traders has decided to start the redesign of its e-commerce application into a microservices architecture. The first application subsystem that it will separate from the "monolith" is the payment service, because this has been identified as a critical area where the competition is offering better value to customers. 
 
@@ -80,4 +80,4 @@ Because Tailwind Traders doesn't want to be dependent on any specific public clo
 
 ## Where to look next
 
-Many of the concepts in this unit are further articulated in the Cloud Adoption Framework sections [Empower adoption with digital invention](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/considerations/ci-cd?azure-portal=true) and [Kubernetes in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/kubernetes?azure-portal=true).
+Many of the concepts in this unit are further articulated in the Cloud Adoption Framework articles [Empower adoption with digital invention](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/considerations/ci-cd?azure-portal=true) and [Kubernetes in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/innovate/kubernetes?azure-portal=true).

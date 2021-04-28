@@ -58,7 +58,7 @@ quiz:
     - content: "Yes, only containerized applications can be innovated."
       isCorrect: false
       explanation: "Although containerization does ease testing and validation of new application code, non-containerized code can be innovated as well."
-    - content: No, because Kubernetes increases the operational complexity for an application."
+    - content: "No, because Kubernetes increases the operational complexity for an application."
       isCorrect: false
       explanation: "Although it's true that Kubernetes introduces some operational complexity, containerization accelerates the process of application development."
 

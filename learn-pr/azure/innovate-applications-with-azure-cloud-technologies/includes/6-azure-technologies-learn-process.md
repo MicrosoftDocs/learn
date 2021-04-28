@@ -3,7 +3,7 @@ In this unit, you'll learn how to apply the results of the measure step in the i
 
 ## Data democratization
 
-As you've learned in previous units, you can collect data from your customers by using multiple sources. These sources include micro surveys, utilization data derived by Azure Application Insights, and feature flags that customers can decide on their own to enable or disable. The more data you have, the better your decisions will be. However, you need a way to handle this ever-increasing flow of data.
+As you've learned in previous units, you can collect data from your customers by using multiple sources. These sources include micro surveys, utilization data derived by Azure Application Insights, and feature flags that customers can decide on their own to enable or disable. The more data you have, the better your decisions will be. But you need a way to handle this ever-increasing flow of data.
 
 In 2014, [Satya Nadella talked](https://blogs.microsoft.com/blog/2014/04/15/a-data-culture-for-everyone?azure-portal=true) about the importance of the data culture in an organization. He said that decisions shouldn't be made based on feelings or subjective opinions, but by using data to validate them. He also said that data should be available to every individual who needs it, and it should be easily converted into actionable insights to facilitate data-driven decisions.
 
@@ -22,10 +22,10 @@ The Azure platform covers the whole data lifecycle, which is fundamental for dat
 
 The Azure data ecosystem includes services and tools to migrate, ingest, store, and analyze data. The following list shows only a few of the mechanisms that you can use to process data and make it available for later sharing, in order to facilitate data-driven decision making:
 
-- **Data analytics**: [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is?azure-portal=true) is an enterprise analytics service that accelerates time-to-insight across data warehouses and big data systems. Azure Synapse Analytics brings together the best of:
+- **Data analytics**: [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is?azure-portal=true) is an enterprise analytics service that accelerates time-to-insight across data warehouses and big-data systems. Azure Synapse Analytics brings together the best of:
    - SQL technologies used in enterprise data warehousing
    - Spark technologies used for big data
-   - Pipelines for data integration and ETL (extract-transform-load) and ELT (extract-load-transform)
+   - Pipelines for data integration and ETL (extract, transform, load) and ELT (extract, load, transform)
    - Deep integration with other Microsoft services such as Power BI, Azure Cosmos DB, and Azure Machine Learning
 - **Data migration**: Data might be already stored in existing sources, but it needs to be migrated to a modern platform before it can be converted into actionable insights. [Azure Database Migration Service](https://docs.microsoft.com/azure/dms?azure-portal=true) contains tooling that helps with data migrations from systems such as SQL Server, PostgreSQL, Oracle, and MongoDB.
 - **Data processing**: Azure includes services to analyze and transform data streams with [Azure Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-introduction?azure-portal=true), and to run ETL processes at large scale with [Azure Data Factory](https://docs.microsoft.com/azure/data-factory?azure-portal=true).
@@ -54,7 +54,7 @@ The main problem of data centralization is scale at different levels. At the ris
 
 In today's world, data represents both a critical asset and a significant responsibility. Stored data often includes confidential information that can result in financial or personal damage if it's leaked or shared inappropriately. Storing and processing data implicitly means accepting that responsibility. Legal regulations can result in penalties for organizations that mishandle personal or confidential data.
 
-As a consequence, data governance is critical for any organization that has a goal of data democratization. The first step toward data governance is classifying data that needs to be treated in specific ways. As an example, these are the data categories that Microsoft uses internally for data classification:
+As a consequence, data governance is critical for any organization that has a goal of data democratization. The first step toward data governance is classifying data that needs to be treated in specific ways. As an example, Microsoft uses these data categories internally for data classification:
 
 - **Non-business**: Data from your personal life that doesn't belong to Microsoft.
 - **Public**: Business data that's freely available and approved for public consumption.
@@ -70,7 +70,7 @@ The next step after data classification is ensuring that each data category is p
 - **Data auditing**: Many regulatory compliance standards demand evidence of data protection mechanisms, by documenting who has done certain operations and accessed certain data. As described in [Auditing for Azure SQL Database and Azure Synapse Analytics](https://docs.microsoft.com/azure/azure-sql/database/auditing-overview?azure-portal=true), data auditing in Azure contemplates three aspects of auditing:
   - *Retain* an audit trail of selected events, where you can define categories of data actions to be audited.
   - *Report* on database activity, optionally with preconfigured reports and dashboards to get started quickly.
-  - *Analyze* reports, to uncover suspicious events, unusual activity, and trends.
+  - *Analyze* reports to uncover suspicious events, unusual activity, and trends.
 
 ## Growth mindset
 
