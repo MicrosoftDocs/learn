@@ -12,6 +12,3 @@ The following table depicts the relationship between HTTP action verbs, CRUD ope
 In addition to the action verbs in the preceding table, a web API in ASP.NET Core supports HEAD, OPTIONS, and PATCH.
 
 The following sections demonstrate how to support each of these four actions in the web API.
-
-
-// more stuff here like authentication? other attributes?

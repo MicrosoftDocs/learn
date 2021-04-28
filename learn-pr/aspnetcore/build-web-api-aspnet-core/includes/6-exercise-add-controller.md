@@ -43,13 +43,7 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    This class derives from `ControllerBase`, the base class for working with HTTP requests in MVC. The following attributes define its behavior:
-
-    * `[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix). Requests to `http://localhost:5000/pizza` are handled by this controller.
-    * `[ApiController]` enables opinionated behaviors that make it easier to build web APIs. Some behaviors include [parameter source inference](/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](/aspnet/core/web-api/#automatic-http-400-responses).
-
-    > [!NOTE]
-    > The route may contain static strings, as in `api/[controller]`. In that example, a request to `http://localhost:5000/api/pizza` would be handled by this controller.
+    As you learned previously, this class derives from *:::no-loc text="ControllerBase":::*, the base class for working with HTTP requests ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Since this controller class is named `PizzaController`, Requests to `http://localhost:5000/pizza` are handled by this controller.
 
 ## Get all pizzas
 
