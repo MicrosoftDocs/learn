@@ -22,7 +22,7 @@ prerequisites: |
   - An Azure Quantum workspace
 
   If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/quantum/solve-job-shop-optimization-azure-quantum.svg
 ratingEnabled: true
 levels:
 - intermediate

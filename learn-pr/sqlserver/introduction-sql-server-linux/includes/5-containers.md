@@ -17,7 +17,7 @@ VMs are larger and take longer to create but, because they have their own operat
 
 Containers are smaller, so they load much more quickly than VMs. However, if your host runs Linux Ubuntu, for example, all the containers on that computer must run the same version of Ubuntu. On a Linux host, you could install a container running Linux and Apache but your database container must also run Linux. This is possible as long as you run SQL Server 2017 or later.
 
-![Comparison of VMs versus Containers](../media/vm-vs-containers.png)
+![Diagram comparing the layers of software required to run VMs versus Containers.](../media/vm-vs-containers.png)
 
 On the host machine, you must install software such as Hyper-V or VirtualBox to host VMs. For containers, you can use the Docker system, CRI-O, rkt, and other container hosts.
 
@@ -39,6 +39,6 @@ Docker Swarm, Kubernetes, and other solutions can orchestrate containers. Orches
 
 One problem with databases running in containers is persistent storage. You must provide a storage location outside the container where the database can keep database files. Changes are then available to all containers in a cluster. If you use Kubernetes, you can use a persistent volume for this location.
 
-![A Kubernetes cluster running SQL Server](../media/kubernetes-sql.png)
+![Diagram of the a Kubernetes cluster running SQL Server and the relationship between nodes, pods, storage, replica sets, and the service.](../media/kubernetes-sql.png)
 
 First, create a persistent volume, and then add a persistent volume claim (PVC). Create a deployment manifest for SQL Server on Linux that uses the Microsoft created `mssql-server-linux` container image. The manifest also contains definitions for the PVC and a load balancer for the service, to guarantee a consistent IP address. Create the deployment and check that SQL Server is running inside a pod. With this setup complete, Kubernetes will bootstrap a new instance if the node fails. A simple test is to delete that pod and check a new one starts automatically.

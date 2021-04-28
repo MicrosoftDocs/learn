@@ -5,16 +5,16 @@ Suppose you're the lead developer for a print framing business. Your company dec
 
 You need an easy and standardized way of documenting each API, and hosting the documentation in a location that is accessible for the partners.
 
-In this module, you'll learn how to document an existing ASP.NET Core API using  Swagger/OpenAPI, Swashbuckle, and Swagger UI.
+In this module, you'll learn how to document an existing ASP.NET Core API using Swashbuckle, Swagger, Swagger UI, and OpenAPI.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Learn about Swagger/Open API and Swashbuckle.
-- Enable Swagger for an C#/ASP.NET Core API.
-- Enable Swashbuckle for an C#/ASP.NET Core API.
-- Generate and view API documentation, with Swagger.
+- Learn about Swashbuckle, OpenAPI, and Swagger UI.
+- Enable OpenAPI for an C#/ASP.NET Core API.
+- Use Swashbuckle in an C#/ASP.NET Core API.
+- Generate and view API documentation, with OpenAPI.
 
 ## Prerequisites
 

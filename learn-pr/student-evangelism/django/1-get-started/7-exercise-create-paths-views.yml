@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.django.get-started.exercise-create-paths-views
+title: Exercise - Create paths and views
+metadata:
+  title: Exercise - Create paths and views
+  description: Create paths and views in Django.
+  ms.date: 02/25/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-exercise-create-paths-views.md)]

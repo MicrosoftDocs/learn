@@ -6,7 +6,7 @@ In this unit, you'll learn about the commands and parameters that you'll need to
 
 To build a virtual machine that's publicly accessible via an external IP address, you'll also need to create several networking components: a Virtual Network, a public IP address, a Network Security Group (NSG) with rules, and a Network Interface (NIC).
 
-![Diagram showing the individual components needed to support a virtual machine: Virtual Network, Network Interface, NSG, Public IP, and Virtual Machine.](../media/2-vm-components.png)
+![Diagram showing the individual components needed to support a virtual machine.](../media/2-vm-components.png)
 
 ### Creating a virtual network
 
@@ -57,7 +57,7 @@ az network vnet create --help
 A few of the additional options that you might want to consider adding to your virtual network are:
 
 | Parameter | Description |
-|---|---|
+| --- | --- |
 | `--ddos-protection` | If you have a standard DDoS protection plan, set this parameter to `true` and supply the name with the `ddos-protection-plan` parameter. |
 | `--dns-servers` | Specify this option if you'd like to use different DNS servers. |
 

@@ -22,21 +22,19 @@ Let's create a function app in the Azure portal.
 
 1. Sign into the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
 
-1. In the portal menu, select **Create a resource**.
-
-    [!include[](../../includes/functions-classic-workaround.md)]
+1. Select **Create a resource**.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the top search bar, select **Compute**, and then select **Function App**.
+1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** pane appears.
 
-    The **Create Function App** page appears. On the **Basics** tab, enter the following values.
+1. On the **Basics** tab, enter the following values for each setting.
 
-    | Setting | Value  |
-    | ------ | ------- |
-    | **Project Details**  |
+    | Setting | Value |
+    | --- | --- |
+    | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
@@ -52,21 +50,21 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
 
-1. In the portal menu, select **Create a resource**.
+1. Select **Create a resource**.
 
     [!include[](../../includes/functions-classic-workaround.md)]
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. In the top search bar, search for **Function App**.
+1. In the left menu pane, select **Compute**, and then select **Function App**. The **Create Function App** page appears.
 
-    The **Create Function App** page appears. On the **Basics** tab, enter the following values.
+1. On the **Basics** tab, enter the following values for each setting.
 
-    | Setting | Value  |
-    | ------ | ------- |
+    | Setting | Value |
+    | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group              | "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
@@ -78,12 +76,8 @@ Let's create a function app in the Azure portal.
 
 ::: zone-end
 
-::: zone pivot="javascript"
-
 ## Verify your Azure function app
 
-1. When deployment completes, select **Go to resource**. Your Function App page appears.
+1. When deployment completes, select **Go to resource**. Your Function App pane appears.
 
 1. In the **Essentials** section, select the **URL** link to open it in a browser. A default web page appears that indicates your Function App is up and running.
-
-::: zone-end

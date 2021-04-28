@@ -14,9 +14,9 @@ namespace ExploringSuperposition {
         DumpMachine();
         mutable results = new Result[0];
         for q in qubits {
-               Message(" ");
-               set results += [M(q)];
-               DumpMachine();
+            Message(" ");
+            set results += [M(q)];
+            DumpMachine();
         }
         Message(" ");
         Message("Your random number is: ");

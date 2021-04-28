@@ -35,4 +35,4 @@ This dramatic optimization is especially significant for many big data analytics
 
 One of the reasons that object stores haven't historically supported a hierarchical namespace is that a hierarchical namespace limits scale. However, the Data Lake Storage Gen2 hierarchical namespace scales linearly and does not degrade either the data capacity or performance.
 
-Practically speaking if you are looking for the best performance for serverless SQL pool you should go for Azure Data Lake Storage Gen2 premium tier. Please note that this offer has the largest cost.
+Practically speaking, if you are looking for the best performance for serverless SQL pool you should go for Azure Data Lake Storage Gen2 premium tier. Please note that this offer has the largest cost.

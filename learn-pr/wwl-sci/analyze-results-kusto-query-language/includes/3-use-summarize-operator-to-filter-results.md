@@ -6,7 +6,7 @@ The following statement will return the most current row from the SecurityEvent 
 
 ```kusto
 SecurityEvent 
-| where Computer == "SQL12.NA.contosohotels.com"
+| where Computer == "SQL12.na.contosohotels.com"
 | summarize arg_max(TimeGenerated,*) by Computer
 
 ```
@@ -17,7 +17,7 @@ In this statement, the oldest SecurityEvent for the computer SQL12.NA.contosohot
 
 ```kusto
 SecurityEvent 
-| where Computer == "SQL12.NA.contosohotels.com"
+| where Computer == "SQL12.na.contosohotels.com"
 | summarize arg_min(TimeGenerated,*) by Computer
 
 ```

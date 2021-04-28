@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-work-with-components-and-data.9-summary
+metadata:
+  title: Summary
+  description: You explored how to create a component with properties. You added both a complex object and an array. You then added logic to display information dynamically.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

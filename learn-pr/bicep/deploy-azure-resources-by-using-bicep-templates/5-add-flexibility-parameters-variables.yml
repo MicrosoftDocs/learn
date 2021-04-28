@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-azure-resources-bicep.add-flexibility-parameters-variables
+title: Add flexibility by using parameters and variables
+metadata:
+  unitType: learning-content  
+  title: Add flexibility by using parameters and variables
+  description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
+  ms.date: 03/12/2021  
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-add-flexibility-parameters-variables.md)]

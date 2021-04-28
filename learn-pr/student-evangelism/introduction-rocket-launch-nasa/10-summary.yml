@@ -3,12 +3,12 @@ uid: learn.student-evangelism.introduction-rocket-launch-nasa.10-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 07/28/2020
-  author: angevin17
+  ms.date: 04/08/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 4
+durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
