@@ -19,12 +19,14 @@ Run the following commands in the Cloud Shell to add a device template in your I
 DEVICE_TEMPLATE=`curl https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/learn-rest-api/Refrigerated%20Truck.json`
 
 # Add the device template to your IoT Central application
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/deviceTemplates/dtmi:contoso:refrigerated_truck \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/deviceTemplates/dtmi:contoso:refrigerated_truck \
+  --url-parameters api-version=1.0 \
   --headers Authorization="$ADMIN_TOKEN" Content-Type=application/json \
   --body "$DEVICE_TEMPLATE"
 
 # List the display names of all your device templates
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/deviceTemplates \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/deviceTemplates \
+  --url-parameters api-version=1.0 \
   --headers Authorization="$ADMIN_TOKEN" \
   --query 'value[].displayName'
 
@@ -37,7 +39,8 @@ Now that you've added a device template that specifies the capabilities of the r
 Run the following commands in the Cloud Shell to add three simulated devices using the device template you added. The final command lists the devices you added and uses a query to simplify the output:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck-001 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -45,7 +48,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck
   "displayName": "Simulated refrigerated truck - 001"
 }'
 
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck-002 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-002 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -53,7 +57,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck
   "displayName": "Simulated refrigerated truck - 002"
 }'
 
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck-003 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-003 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -61,7 +66,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck
   "displayName": "Simulated refrigerated truck - 003"
 }'
 
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query 'value[].{ID:id, Type:template, Simulated:simulated, Provisioned:provisioned}' -o table
 ```
@@ -71,7 +77,8 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices \
 Run the following commands in the Cloud Shell to add three real devices using the device template you added. The final command lists the devices you added and uses a query to simplify the output:
 
 ```azurecli
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truck-001 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -79,7 +86,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truc
   "displayName": "Real refrigerated truck - 001"
 }'
 
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truck-002 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-002 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -87,7 +95,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truc
   "displayName": "Real refrigerated truck - 002"
 }'
 
-az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truck-003 \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-003 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "template": "dtmi:contoso:refrigerated_truck",
@@ -95,7 +104,8 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truc
   "displayName": "Real refrigerated truck - 003"
 }'
 
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" \
 --query 'value[].{ID:id, Type:template, Simulated:simulated, Provisioned:provisioned}' -o table
 ```
@@ -105,7 +115,8 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices \
 To connect a real device to your IoT Central application, you need the real device's credentials. You can use the REST API to retrieve the SAS key for a device from IoT Central as follows:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truck-003/credentials \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-003/credentials \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN"
 ```
 
@@ -114,14 +125,16 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/real-truc
 You can use the REST API to block and unblock devices. Blocking a device prevents it from connecting to your application. Run the following commands to block a device and then check the status values for your devices:
 
 ```azurecli
-az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/v1/devices/sim-truck-002 \
+az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-002 \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" \
 --body \
 '{
-  "disabled": true
+  "enabled": false
 }'
 
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/v1/devices \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices \
+--url-parameters api-version=1.0 \
 --headers Authorization="$OPERATOR_TOKEN" \
---query 'value[].{ID:id, Type:instanceOf, Blocked:disabled, Simulated:simulated, Provisioned:provisioned}' -o table
+--query 'value[].{ID:id, Type:instanceOf, Unblocked:enabled, Simulated:simulated, Provisioned:provisioned}' -o table
 ```

@@ -4,6 +4,6 @@ The IoT Central REST API lets you manage your IoT Central application and device
 
 Integrating the IoT Central application functionality into your existing fleet management application makes it much easier for operators and fleet managers to analyze and respond to data from your vehicles because they have everything they need in a single application.
 
-## Learn more with a Channel 9 video series
+## Learn more with sample applications
 
-- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
+- [Contoso drive companion experience overview](https://github.com/iot-for-all/companion-experiences-learning)
