@@ -94,22 +94,22 @@ The preceding action:
 
 1. If you opened a new terminal, connect to our web API by running the following command:
   
-  ```dotnetcli
-  httprepl http://localhost:5000
-  ```
-  Alternatively, run the following command at any time while the HttpRepl is running:
-
-  For example:
-
-  ```dotnetcli
-  (Disconnected)> connect http://localhost:5000
-  ```
-
-  Navigate to the Pizza endpoint by running the following command:
-
-  ```dotnetcli
-  cd Pizza
-  ```
+    ```dotnetcli
+    httprepl http://localhost:5000
+    ```
+    Alternatively, run the following command at any time while the HttpRepl is running:
+    
+    For example:
+    
+    ```dotnetcli
+    (Disconnected)> connect http://localhost:5000
+    ```
+    
+    Navigate to the Pizza endpoint by running the following command:
+    
+    ```dotnetcli
+    cd Pizza
+    ```
 
 1. Run the following command to see the new actions on the Pizza API:
 
@@ -128,26 +128,26 @@ The preceding action:
 
 1. Make a `POST` request to add a new pizza in the HttpRepl by using the following command:
 
-  ```dotnetcli
-  post -c "{"name":"Hawaii", "isGlutenFree":false}"
-  ```
-
-  The following command will make a `POST` request to add the new pizza to our inventory and then will return a list of all pizza back:
-
-  ```dotnetcli 
+    ```dotnetcli
+    post -c "{"name":"Hawaii", "isGlutenFree":false}"
+    ```
+    
+    The following command will make a `POST` request to add the new pizza to our inventory and then will return a list of all pizza back:
+    
+    ```dotnetcli 
     HTTP/1.1 201 Created
     Content-Type: application/json; charset=utf-8
     Date: Fri, 02 Apr 2021 23:23:09 GMT
     Location: http://localhost:5000/Pizza?id=3
     Server: Kestrel
     Transfer-Encoding: chunked
-
+    
     {
         "id": 3,
         "name": "Hawaii",
         "isGlutenFree": false
     }
-  ```
+    ```
 
 1. Let's update the new `Hawaii` pizza to a `Hawaiian` pizza with a `PUT` request with the following command:
 
