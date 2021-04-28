@@ -9,6 +9,6 @@ metadata:
   author: cwatson-cat 
   ms.author: cwatson 
   ms.topic: interactive-tutorial 
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-azure-firewall.md)]

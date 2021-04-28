@@ -81,13 +81,27 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
     |Field |Value |
     |---------|---------|
     |Name    |  AzureFirewallSubnet    |
-    |Address range     |   10.1.1.0/24      |
+    |Address range     |   10.1.0.0/24      |
 
     Leave the rest of the values as they are.
 1. Select **Save**.
+1. Select **Review + create** > **Create**.
+1. After the deployment is complete, select **Go to resource**.
 
 ## Peer virtual networks
 
+1. In the firewallVNet, on the left-hand side, select **Peerings**.
+1. Select **+ Add**.
+1. Enter the following information.
+
+    |Field |Value |
+    |---------|---------|
+    |Peering link name    |  firewallVNet-hostVNet   |
+    |Remote Peering link name     |   remote-firewallVNet-hostVNet      |
+    |Subscription     | Your subscription        |
+    |Virtual network    | hostVNet       |
+
+    Use the default values for the rest of the fields.
 
 ## Deploy Azure Firewall
 
@@ -102,10 +116,10 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
    |Name     |learn-fw|
    |Region     |Select the same location that you used previously|
    |Firewall management|Use Firewall rules (classic) to manage this firewall|
-   |Choose a virtual network     |Use existing: learn-firewall-rg-vnet (or sandbox generated)|
+   |Choose a virtual network     |Use existing: firewallVNet|
    |Public IP address     |Add new<br>Name:  fw-pip|
 
-    Leave the other field default values.
+    Use the default values for the rest of the fields.
 
 1. Select **Review + create** > **Create**.
 1. Wait a few minutes for the firewall to deploy.
@@ -113,9 +127,10 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
 
 ## Check your work
 
-At this point, you have a Firewall deployed within it's own subnet and a public IP address. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
+At this point, you have a Firewall deployed within it's own virtual network and you've peered that virtual network with the session host virtual network. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
 
 1. After the deployment is complete, select **Go to resource**.
 1. In the center pane, you see the provisioning state **Succeeded**.
 1. From the right-hand side of the center pane, copy the **Firewall private IP address**.
-1. Select **fw-pip** and copy the **IP address**.
+1. Select **fw-pip**.
+1. Copy the **IP address**.
