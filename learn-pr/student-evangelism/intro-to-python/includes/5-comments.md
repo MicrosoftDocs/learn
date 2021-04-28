@@ -1,5 +1,3 @@
-> [!VIDEO https://www.youtube.com/embed/kEuVvUc1Zec]
-
 Most programming languages support including comments in source code. Comments do not change what the code does when it runs; they're ignored by the compiler or interpreter. Instead they're used to explain how the code works or why it was written. Comments are a great way to document complicated code and to include TODOs reminding you to come back and do something later. You could, for example,  create a comment saying, "make sure this code works with empty strings."
 
 Python supports comments using the pound sign (or hash) followed by the text of the comment:
