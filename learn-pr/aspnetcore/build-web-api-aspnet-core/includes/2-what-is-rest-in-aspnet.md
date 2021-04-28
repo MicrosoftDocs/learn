@@ -21,3 +21,7 @@ ASP.NET lets you define routes and verbs inline with your code, using attributes
 ### HTTPS by default
 
 You don't deploy your apps without security, so why test them without security? ASP.NET provides first class support for HTTPS out of the box. Automatically generate a test certificate and easily import it to enable local HTTPS so you run, and debug, your apps the way they are intended to be... secured.
+
+### Share code & knowledge with .NET apps
+
+Leverage your .NET skills and ecosystem to share logic from your web API to other apps built with .NET including mobile, web, desktop, services, and more.
