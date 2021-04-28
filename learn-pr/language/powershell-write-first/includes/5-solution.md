@@ -10,7 +10,7 @@ Write-Output "Today is the day $name began their PowerShell programming journey.
 This code is only _one possible solution_. Your code could look different. However you wrote the code, you should have used `Read-Host` and `Write-Output` to produce the desired output.
 
 ```output
-Todays date is 02/05/2021.
+Today's date is 02/05/2021.
 Today is the day Chase began their PowerShell programming journey.
 ```
 
