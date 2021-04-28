@@ -20,7 +20,7 @@ Now that you’ve reviewed this module, you should be able to:
 * Learn more about [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview).
 * Learn more about [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview).
 * Learn more about [Azure Support Options](https://azure.microsoft.com/support/options/).
-* Learn more about [compliance documentation](https://docs.microsoft.com/azure/compliance/).
+* Learn more about [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/).
 * Learn more about [ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction).
 * Learn more about [Intel Software Guard Extensions](https://software.intel.com/content/www/us/en/develop/topics/software-guard-extensions.html).
 * Learn more about [Intelligent cloud and intelligent edge](https://azure.microsoft.com/overview/future-of-cloud/).
