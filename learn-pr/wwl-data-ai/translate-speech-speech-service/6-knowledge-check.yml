@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/26/2021
+  ms.date: 04/28/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "SpeechConfig"
       isCorrect: false
-      explanation: "Incorrect. Specify target languages in the TranslationConfig object."
-    - content: "TranslationConfig"
+      explanation: "Incorrect. Specify target languages in the SpeechTranslationConfig object."
+    - content: "SpeechTranslationConfig"
       isCorrect: true
-      explanation: "Correct. Specify target languages in the TranslationConfig object."
+      explanation: "Correct. Specify target languages in the SpeechTranslationConfig object."
     - content: "AudioConfig"
       isCorrect: false
-      explanation: "Incorrect. Specify target languages in the TranslationConfig object."
+      explanation: "Incorrect. Specify target languages in the SpeechTranslationConfig object."
   - content: "Which SDK object should you use as a proxy for the Translation API of Speech service?"
     choices:
     - content: "TranslationRecognizer"

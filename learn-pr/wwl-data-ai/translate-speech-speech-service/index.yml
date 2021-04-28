@@ -3,7 +3,7 @@ uid: learn.wwl.translate-speech-speech-service
 metadata:
   title: Translate speech with the speech service
   description: "Translate speech with the speech service"
-  ms.date: 04/26/2021
+  ms.date: 04/28/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -35,8 +35,8 @@ units:
 - learn.wwl.translate-speech-speech-service.speech-service
 - learn.wwl.translate-speech-speech-service.translate-speech-text
 - learn.wwl.translate-speech-speech-service.synthesize-translation
-- learn.wwl.translate-speech-speech-service.exercise-translate-speech
 - learn.wwl.translate-speech-speech-service.knowledge-check
+- learn.wwl.translate-speech-speech-service.exercise-translate-speech
 - learn.wwl.translate-speech-speech-service.summary
 badge:
   uid: learn.wwl.translate-speech-speech-service.badge
