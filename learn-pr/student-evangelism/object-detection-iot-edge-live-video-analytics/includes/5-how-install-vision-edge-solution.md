@@ -4,12 +4,12 @@ Shell.
 
 To do so, you use the [Live Video Analytics resources installer](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer) to deploy the required resources easily in your Azure subscription. This folder contains a bash script and other files listed below to create and set up Azure resources required to run the video analytics solution on IoT Edge.
 
-- [factory-ai-vision-install.sh](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/factory-ai-vision-install.sh) is a bash script intended to be used in the Azure cloud shell. This script makes use of the other files in the folder.
+- [factory-ai-vision-install.sh](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/factory-ai-vision-install.sh) is a bash script intended to be used in the Azure Cloud Shell. This script makes use of the other files in the folder.
 - [deploy-custom-vision-arm.json](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/deploy-custom-vision-arm.json) is an [Azure Resource Management template](about:blank) for deploying various resources in Azure required.
 - [deployment.template.json](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/deployment.lva.json) is a template the script uses to generate a [deployment manifest](about:blank), which can be used for deploying Live Video Analytics on IoT Edge module (and others).
 - [acs.zip](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/acs.zip) is an archive file format that contains bash script and other files.
 
-The installer is available in the [Github repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer). When you download [the acs.zip file](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/acs.zip), the following steps will be performed to build your solution using Azure Cloud Shell: 
+The installer is available in the [GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision/Installer). When you download [the acs.zip file](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/factory-ai-vision/Installer/acs.zip), the following steps will be performed to build your solution using Azure Cloud Shell: 
 
 1. Create a Custom Vision service
 2. Create an Azure Media Service

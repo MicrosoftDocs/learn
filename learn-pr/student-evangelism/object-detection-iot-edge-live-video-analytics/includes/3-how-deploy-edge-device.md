@@ -2,7 +2,7 @@
 
 In this module, we use an existing Ubuntu-based virtual machine to act as your IoT Edge device. Alternately, you could install the Azure IoT Edge runtime on your own physical Linux device (X64, ARM32, or ARM64) or on the Azure Stack device. Below we consider only the scenario of a virtual device.
 
-Firstly, we configure the device as an IoT Edge device and set up communications between IoT Edge and IoT Hub to run our module on the IoT Edge device. To set up the communication between the IoT Hub and IoT Edge, we provide a device connection string during the configuration. This string associates your physical device with the IoT Edge device identity in Azure. When your device is ready, you will open 8181 network port. This will set up a network connection between your web application and your edge device. Your video analytics-based application will be able to listen on that port.
+Firstly, we configure the device as an IoT Edge device and set up communications between IoT Edge and IoT Hub to run our module on the IoT Edge device. To set up the communication between the IoT Hub and IoT Edge, we provide a device connection string during the configuration. This string associates your physical device with the IoT Edge device identity in Azure. When your device is ready, you'll open 8181 network port. This will set up a network connection between your web application and your edge device. Your video analytics-based application will be able to listen on that port.
 
 Before you begin, if you don't have an active Azure subscription, you need to create a free account. You can use 30 days free trial, or you can create your pay-as-you-go subscription.
 
@@ -17,7 +17,7 @@ Hence, the steps we follow are:
 
 ## What is a Resource Group
 
-A Resource Group is a container that holds related resources for a solution. The resource group includes those resources that you want to manage as a group. You logically group related resources such as storage accounts, virtual networks, and virtual machines (VMs) to deploy, manage, and maintain them as a single entity.
+A Resource Group is a container that holds related resources for a solution. The resource group includes those resources that you want to manage as a group. You logically group-related resources such as storage accounts, virtual networks, and virtual machines (VMs) to deploy, manage, and maintain them as a single entity.
 
 ## How to create IoT Hub
 
@@ -26,7 +26,7 @@ Azure IoT Hub enables the communication between the virtual device and the cloud
 - Define a unique name of the IoT Hub
 - Choose the resource group to be deployed
 
-To create a new Azure IoT Hub with the Azure CLI, you'll use the **az iot hub create** command set. Note that only one free IoT hub instance is allowed in each subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.
+To create a new Azure IoT Hub with the Azure CLI, you'll use the **az iot hub create** command set. Only one free IoT hub instance is allowed in each subscription. The free level of IoT Hub works for this exercise. If you've used IoT Hub in the past and already have a free hub created, you can use that IoT hub.
 
 ## Register the IoT Edge device to IoT Hub
 
@@ -53,7 +53,7 @@ Once the deployment is complete, you can connect to your edge device and check t
 
 ## Add inbound security rule.
 
-Now that you have configured your edge device, you will need to add an inbound rule to allow network traffic between your device and your web application from the internet over TCP port 8181. To open port 8181, you will specify the following parameters:
+Now that you have configured your edge device, you'll need to add an inbound rule to allow network traffic between your device and your web application from the internet over TCP port 8181. To open port 8181, you'll specify the following parameters:
 
 - Define destination port ranges
 - Define a name for your security rule

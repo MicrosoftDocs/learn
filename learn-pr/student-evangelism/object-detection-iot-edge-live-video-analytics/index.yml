@@ -2,7 +2,7 @@
 uid: learn.oxford.object-detection-lva-edge-device
 metadata:
   title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
-  description: "University of Oxford"
+  description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
   ms.date: 4/27/2021
   author: leestott
   ms.author: leestott
