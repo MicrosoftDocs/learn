@@ -122,15 +122,12 @@ Create an Azure VM to act as a session host for the host pool.
 1. In the Azure portal, search for and select **Virtual machines**.
 1. Select **learn-host-vm**.
 1. Select **Connect** > **RDP**.
-1. Select **Download RDP File**.
-1. Open the RDP file from your browser.
-1. Select **Connect**.
-1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
+1. Select **Open file** > **Connect**.
+1. In the **Windows Security** window, select **More choices** > **Use a different account**.
 1. Enter the user name and the password you used when you created the VM, and then select **OK**.
-1. If you're asked to connect despite certificate errors, select **Yes**.
 1. In the **Windows Security** window, select **More choices**, and then select **Use a different account**.
-1. Type in the username and password you used when you created the VM. Type the username as **localhost**\\*username*.
-1. You may receive a certificate warning during the sign-in process. Click **Yes** or **Continue** to create the connection
+1. Type in the username and password you used when you created the VM.
+1. If you're asked to connect despite certificate errors, select **Yes**.
 
 ## Register the virtual machine with host pool
 
@@ -141,11 +138,11 @@ Install the Windows Virtual Desktop agents to register the VM to the host pool.
 First, install the  Windows Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
 
 1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
-1. Open a web browser session in the VM.
+1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. Select **Open file** to install the Windows Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
-1. If you no longer have the token value, run the following command in your Azure PowerShell session.
+1. If you no longer have the token value, run the following command in your Cloud Shell session.
 
    ```powershell
     (Get-AzWvdRegistrationInfo `
@@ -172,12 +169,11 @@ At this point, the virtual machine should be registered as a session host for th
 1. In the Azure portal, search for or select **Windows Virtual Desktop**.
 1. Select **Host pools** > **learn-host-pool**.
 1. In the center pane, under **Virtual machines**, select **Total machines**.
+:::image type="content" source="../media/3-host-pool-overview-vms.png" alt-text="Screenshot that shows the host pool overview page with the total machines button in the center pane.":::
 1. You see that **learn-host-vm** is registered with the host pool.
-1. Select **learn-host-vm**. 
+1. Select **learn-host-vm**.
 1. If you get a **Not found** error, wait a few minutes and try again.
 1. Under **Status**, select **ViewDetails**.
+:::image type="content" source="../media/3-host-pool-status.png" alt-text="Screenshot that shows the status of the host pool and the link to view status details.":::
 1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
-
-<!--TODO add screenshot-->
-
-
+:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details which show that the domain joined check failed but rest of checks succeeded.":::
