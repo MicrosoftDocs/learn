@@ -130,7 +130,8 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
 At this point, you have a Firewall deployed within it's own virtual network and you've peered that virtual network with the session host virtual network. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
 
 1. After the deployment is complete, select **Go to resource**.
-1. In the center pane, you see the provisioning state **Succeeded**.
+1. In the center pane, you see **Provisioning state: Succeeded**.
+:::image type="content" source="../media/5-firewall-overview-page.png" alt-text="Screenshot that shows the status and ip addresses for the firewall.":::
 1. From the right-hand side of the center pane, copy the **Firewall private IP address**.
 1. Select **fw-pip**.
 1. Copy the **IP address**.
