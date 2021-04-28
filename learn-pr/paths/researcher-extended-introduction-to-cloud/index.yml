@@ -3,7 +3,7 @@ uid: learn.researcher-extended-introduction-to-cloud
 hidden: true
 metadata:
   title: An extended introduction to the Azure Cloud for Researchers
-  description: After understanding the basics of the cloud, and being to provision Virtual Machines and Storage on Azure, you will be able to use those learning for research projects. 
+  description: In this extended version of a cloud introduction, we will cover how to ensure that your Azure consumption is planned and predictable through the use of cost prediction and budgets. Then, we're going to ensure that your application secrets and virtual machines are safe from unauthorized access.
   brand: azure
   ms.date: 04/28/2021
   author: MaximRouiller
