@@ -8,7 +8,7 @@ After you've started the build phase to validate your innovation hypothesis, the
 - **Quick delivery of software features**: DevOps processes and tools embrace the concept of failing fast. Building MVPs or prototypes to quickly validate whether the feature being worked on goes in the right direction is core to the concept of DevOps.
 - **Reliable delivery of software features**: Change-averse organizations often associate quick changes with downtime. However, DevOps promises exactly the opposite: a quick change rate and a high level of reliability. This is possible by integrating testing in early stages of the development cycle, in a process called "shift to the left." 
 
-  If the development of a feature across time is seen as a line from left to right, an legacy development process would perform user validation and quality control at the end of the development cycle, or at the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
+  If the development of a feature across time is seen as a line from left to right, a legacy development process would perform user validation and quality control at the end of the development cycle, or at the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
 
 DevOps embodies the same core concepts of a healthy innovation culture. Adopting its methodology is key to get to an agile innovation cycle.
 
