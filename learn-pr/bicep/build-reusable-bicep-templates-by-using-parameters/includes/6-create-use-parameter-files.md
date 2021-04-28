@@ -4,6 +4,7 @@ During the process, you'll:
 
 > [!div class="checklist"]
 
+> * Add secure parameters
 > * Create a parameter file.
 > * Test the deployment to ensure that the parameter file is valid.
 > * Create Azure Key Vault and secrets.
@@ -11,6 +12,16 @@ During the process, you'll:
 > * Re-test the deployment to ensure that the parameter file is still valid.
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+
+### Add secure parameters
+
+1. In the *main.bicep* file in Visual Studio Code, find a `location` parameter. Add `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters below the `location` parameter. When finished, the parameter section should look like this:
+
+    :::code language="json" source="code/6-add-secure-parameters.bicep" highlight="27-29,31-33":::
+
+    Notice that you're specifying value for each parameter except `solutionName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters.
+
+1. Save the changes to the file.
 
 ## Create a parameter file
 
@@ -38,46 +49,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       }
     }
     ```
-
-1. Review parameters in *main.bicep* file. The code should look like this:
-
-    ```bicep
-    @allowed([
-          'dev'
-          'test'
-          'prod'
-    ])
-    @description('Name of environment to deploy - only accept dev, test, and prod')
-    param environment string = 'dev'
-    
-    @minLength(5)
-    @maxLength(30)
-    @description('Unique name of solution you want to deploy')
-    param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
-    
-    @minValue(2)
-    @maxValue(10)
-    @description('Number of App Service Plan Instance to run at all time - allowed number between 2 and 10')
-    param appServicePlanInstanceCount int = 2
-    
-    @minLength(1)
-    @maxLength(64)
-    @description('Name of solution you want to deploy')
-    param sqlDatabaseName string = 'employeeDB'
-    
-    @description('Azure region where you want to deploy')
-    param location string = resourceGroup().location
-    
-    @secure()
-    @description('SQL admin login name')
-    param sqlServerAdministratorLogin string
-    
-    @secure()
-    @description('SQL admin login password')
-    param sqlServerAdministratorPassword string
-    ```
-
-    Notice that you're specifying value for each parameter except `solutionName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters.
 
 1. Save the changes to the file.
 

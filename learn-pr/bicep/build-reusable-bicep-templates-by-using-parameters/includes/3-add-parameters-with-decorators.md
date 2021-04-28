@@ -1,13 +1,13 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
 
-As part of the HR application migration, you decided to create a Bicep template to deploy Azure resources. In this exercise, you'll create Azure App Service plan, App Service App, and a SQL server and database. You'll appropriately apply decorators to each parameter.
+As part of the HR application migration, you decided to create a Bicep template to deploy Azure resources. In this exercise, you'll create Azure App Service plan and App Service App. You'll appropriately apply decorators to each parameter.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep template what include parameters and variables.
-> * Update the parameters with various decorators and secure some parameters.
+> * Update the parameters with various decorators.
 > * Test the deployment to ensure that the template is valid.
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
@@ -22,42 +22,19 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
     param environment string = 'dev'
     param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
     param appServicePlanInstanceCount int = 2
-    param sqlDatabaseName string = 'employeeDB'
     param location string = resourceGroup().location
-    param sqlServerAdministratorLogin string
-    param sqlServerAdministratorPassword string
 
     var appServicePlanName = '${environment}-${solutionName}-plan'
     var appServiceAppName = '${environment}-${solutionName}-app'
-    var sqlServerName = '${environment}-${solutionName}-sql'
     ```
 
     Notice that you're using `string` and `int` type parameters. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-    Also note that you're defining variables for the name of the Azure App Service plan, App Service App, and SQL server. However you're using parameters for the other names. App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. It's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+    Also note that you're defining variables for the name of the Azure App Service plan and App Service App. However you're using parameters for the other names. App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. It's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
 1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file:
 
-    ```bicep
-    resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
-      name: sqlServerName
-      location: location
-      properties: {
-        administratorLogin: sqlServerAdministratorLogin
-        administratorLoginPassword: sqlServerAdministratorPassword
-      }
-    }
-    
-    resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
-      parent: sqlServer
-      name: sqlDatabaseName
-      location: location
-      sku: {
-        name: 'Standard'
-        tier: 'Standard'
-      }
-    }
-    
+    ```bicep  
     resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
       name: appServicePlanName
       location: location
@@ -116,21 +93,16 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ### Restrict input length
 
-1. In the *main.bicep* file in Visual Studio Code, add `@minLength` and `@maxLength` decorators above `@description` decorator for `solutionName` parameter and sqlDatabaseName parameter. After you're done, both parameters should look like below:
+1. In the *main.bicep* file in Visual Studio Code, add `@minLength` and `@maxLength` decorators above `@description` decorator for `solutionName` parameter. After you're done, both parameters should look like below:
 
       ```bicep
       @minLength(5)
       @maxLength(30)
       @description('Unique name of solution you want to deploy')
       param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
-            
-      @minLength(1)
-      @maxLength(64)
-      @description('Name of solution you want to deploy')
-      param sqlDatabaseName string = 'employeeDB'
       ```
 
-      Notice that you're restricting character length of input value for both parameters. The solutionName parameter is used later in your Bicep code to assign value for variables. These variables are used for naming Azure App Service Plan, App Service App, and SQL server and must follow [Naming rules and restrictions for Azure Resources](/azure/azure-resource-manager/management/resource-name-rules).
+      Notice that you're restricting character length of input value for both parameters. The solutionName parameter is used later in your Bicep code to assign value for variables. These variables are used for naming Azure App Service Plan and App Service App must follow [Naming rules and restrictions for Azure Resources](/azure/azure-resource-manager/management/resource-name-rules).
 
 1. Save the changes to the file.
 
@@ -146,22 +118,6 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       ```
 
       Notice that you're accepting only number value between 2 and 10 for `appServicePlanInstanceCount` parameter.
-
-1. Save the changes to the file.
-
-### Secure parameter value
-
-1. In the *main.bicep* file in Visual Studio Code, add `@secure` decorators above `@description` decorator for both `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameter. When finished, both parameter should look like below:
-
-      ```bicep
-      @secure()
-      @description('The administrator login for the SQL server.)
-      param sqlServerAdministratorLogin string
-      
-      @secure()
-      @description('The administrator password for the SQL server.')
-      param sqlServerAdministratorPassword string
-      ```
 
 1. Save the changes to the file.
 
@@ -185,46 +141,13 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       @maxValue(10)
       @description('Number of App Service Plan Instance to run at all time - allowed number between 2 and 10')
       param appServicePlanInstanceCount int = 2
-      
-      @minLength(1)
-      @maxLength(64)
-      @description('Name of solution you want to deploy')
-      param sqlDatabaseName string = 'employeeDB'
-      
+            
       @description('Azure region where you want to deploy')
       param location string = resourceGroup().location
-      
-      @secure()
-      @description('The administrator login for the SQL server.)
-      param sqlServerAdministratorLogin string
-      
-      @secure()
-      @description('The administrator password for the SQL server.')
-      param sqlServerAdministratorPassword string
-      
+            
       var appServicePlanName = '${environment}-${solutionName}-plan'
       var appServiceAppName = '${environment}-${solutionName}-app'
-      var sqlServerName = '${environment}-${solutionName}-sql'
-      
-      resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
-        name: sqlServerName
-        location: location
-        properties: {
-          administratorLogin: sqlServerAdministratorLogin
-          administratorLoginPassword: sqlServerAdministratorPassword
-        }
-      }
-      
-      resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
-        parent: sqlServer
-        name: sqlDatabaseName
-        location: location
-        sku: {
-          name: 'Standard'
-          tier: 'Standard'
-        }
-      }
-      
+            
       resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
         name: appServicePlanName
         location: location
@@ -253,7 +176,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. SQL Database enforces password complexity. You must meet these [guidelines]((/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password. You don't need to specify all of the other parameter values because they have default values specified. This can take a minute or two to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. You don't need to specify all of the other parameter values because they have default values specified. This can take a minute or two to complete, and then you'll see a successful deployment.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -269,7 +192,7 @@ You'll see ```Running...``` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal.  You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify all of the other parameter values because they have default values specified. This can take a minute or two to complete, and then you'll see a successful deployment.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. You don't need to specify all of the other parameter values because they have default values specified. This can take a minute or two to complete, and then you'll see a successful deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -302,4 +225,4 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
-1. Notice that the App Service plan, App Service app, and Azure SQL Database have been deployed.
+1. Notice that the App Service plan and App Service app have been deployed.

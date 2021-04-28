@@ -10,6 +10,6 @@ metadata:
   ms.author: wviriya  
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 10 # user input: the estimate time to complete the unit
+durationInMinutes: 5 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-how-use-parameter-file-with-bicep.md)]
+  [!include[](includes/4-how-use-parameter-file-with-bicep.md)]

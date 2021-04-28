@@ -14,4 +14,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 15 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/4-add-parameters-with-decorators.md)]
+  [!include[](includes/3-add-parameters-with-decorators.md)]
