@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.defect-detection-edge-devices-lva.exercise-deploy-edge-device
+uid: learn.oxford.void-detection-edge-devices-lva.exercise-deploy-edge-device
 title: Exercise - Deploy an IoT Edge device
 metadata:
   title: Deploy an IoT Edge device
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 1 # dummy number at present
 content: |
-  [!include[](includes/4-deploy-edge-device.md)]
+  [!include[](includes/4-exercise-deploy-edge-device.md)]
