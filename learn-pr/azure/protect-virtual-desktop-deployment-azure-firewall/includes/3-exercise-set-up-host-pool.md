@@ -8,9 +8,14 @@ TODO: add your scenario image
 
 In this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Windows Virtual Desktop agents to register the VM to the host pool. You'll then have a Windows Virtual Desktop deployment that you can use in the rest of the module exercises.
 
+[!include[](../../../includes/azure-subscription-prerequisite.md)]
+
 ## Create a resource group
 
-In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1.  From the top right-hand side of the Azure portal, select **Cloud Shell**.
+1. Select **PowerShell**.
+1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 
    ```powershell
     $resourceGroup = 'learn-firewall-rg'
@@ -138,7 +143,7 @@ First, install the  Windows Virtual Desktop Agent. You'll need the registration 
 1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. Open a web browser session in the VM.
 1. Paste the link into a web browser.
-1. Select **Run** to install the Windows Virtual Desktop Agent.
+1. Select **Open file** to install the Windows Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, run the following command in your Azure PowerShell session.
 
@@ -156,8 +161,9 @@ Next, install the  Windows Virtual Desktop Agent Bootloader.
 
 1. Copy the link to the [Windows Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
-1. Select **Run** to install the Windows Virtual Desktop Agent Bootloader.
+1. Select **Open file** to install the Windows Virtual Desktop Agent Bootloader.
 1. Complete the installation.
+1. Close the remote desktop session.
 
 ## Check your work
 
@@ -167,7 +173,8 @@ At this point, the virtual machine should be registered as a session host for th
 1. Select **Host pools** > **learn-host-pool**.
 1. In the center pane, under **Virtual machines**, select **Total machines**.
 1. You see that **learn-host-vm** is registered with the host pool.
-1. Select **learn-host-vm**.
+1. Select **learn-host-vm**. 
+1. If you get a **Not found** error, wait a few minutes and try again.
 1. Under **Status**, select **ViewDetails**.
 1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
 

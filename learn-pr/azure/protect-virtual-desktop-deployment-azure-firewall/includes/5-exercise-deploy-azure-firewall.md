@@ -71,7 +71,7 @@ To simplify the setup for this exercise, we'll create a subnet on the same virtu
     |---------|---------|
     |Subscription     | Your subscription        |
     |Resource group    | learn-firewall-rg        |
-    |Name    |         | firewallVNet
+    |Name    |   firewallVNet      | 
     |Region     | Same region as your resource group      |
 
 1. Select the **IP Addresses** tab.
