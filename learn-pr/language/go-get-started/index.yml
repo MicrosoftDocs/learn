@@ -3,7 +3,7 @@ uid: learn.language.go-get-started
 metadata:
   title: Get started with Go
   description: Take your first steps with Go.
-  ms.date: 12/01/2020
+  ms.date: 04/14/2021
   author: meaghanlewis
   ms.author: shanama 
   ms.topic: interactive-tutorial
@@ -20,13 +20,14 @@ prerequisites: |
   - Familiarity with programming basics in general
   - Familiarity with at least one programming language
   - Familiarity with downloading and installing software from the internet
-iconUrl: /learn/achievements/go-get-started.svg
+iconUrl: /learn/achievements/go/go-get-started.svg
 levels:
 - beginner
 roles:
 - student
 products:
 - azure
+- vs-code
 units:
 - learn.language.go-get-started.0-introduction
 - learn.language.go-get-started.1-what-is-go

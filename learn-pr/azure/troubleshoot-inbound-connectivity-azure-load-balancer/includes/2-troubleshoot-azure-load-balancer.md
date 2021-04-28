@@ -19,9 +19,9 @@ Azure Load Balancer includes a number of components:
 - A health probe
 - A collection of VMs, typically in a virtual network
 
-The diagram shows how the various elements used by Load Balancer operate together.
+The following diagram shows how the various elements used by Load Balancer operate together.
 
-![Diagram showing the components of Azure Load Balancer](../media/2-LoadBalancer.png)
+![Diagram that shows the components of Azure Load Balancer.](../media/2-LoadBalancer.png)
 
 ### Front-end IP address and back-end pool
 
@@ -51,9 +51,9 @@ You define load-balancing rules to specify how requests directed toward each fro
 
 ### Health probes
 
-Load Balancer needs to determine whether each VM referenced by the back-end pool is available for handling requests. You add a health probe to do this. A health probe sends regular *ping* messages to a port that you specify for the VMs in the back-end pool. You provide a service on the VMs that responds to these ping messages, with an HTTP 200 (OK) message.
+Load Balancer needs to determine whether each VM referenced by the back-end pool is available for handling requests. You add a health probe to do this. A health probe sends regular *ping* messages to a port that you specify for the VMs in the back-end pool. You provide a service on the VMs that responds to these ping messages with an HTTP 200 (OK) message.
 
-When the VM fails to respond after a specified number of attempts, Load Balancer assumes it's unhealthy and removes it from the list of VMs that can accept user requests. The workload is then distributed among the remaining healthy VMs. Load Balancer continues to ping an unresponsive VM. If the VM starts to reply, it's added back into the list of healthy VMs and starts receiving user requests again.
+When the VM fails to respond after a specified number of attempts, Load Balancer assumes it's unhealthy, and removes it from the list of VMs that can accept user requests. The workload is then distributed among the remaining healthy VMs. Load Balancer continues to ping an unresponsive VM. If the VM starts to reply, it's added back into the list of healthy VMs, and starts receiving user requests again.
 
 If you don't provide a health probe, Load Balancer doesn't know whether a VM is healthy. Instead, it assumes that all VMs are responsive.
 
@@ -85,6 +85,6 @@ Probing issues result when one or more VMs in the back-end pool fail to respond 
 
 Data path issues occur when a Load Balancer is unable to route a client request to the application that runs on a VM in the back-end pool. Possible causes include:
 
-- A network security group rule or firewall is blocking the ports or IP addresses used by the application.
+- An NSG rule or firewall is blocking the ports or IP addresses used by the application.
 - A VM is down or not responding. The VM might be turned off or failing, or there's a security issue such as an expired certificate on the server.
 - The application isn't responding. The VMs might be overloaded, the application is listening on an incorrect port, or the application is crashing.

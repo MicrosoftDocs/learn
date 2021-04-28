@@ -2,20 +2,21 @@
 uid: learn.data-ai.introduction-to-data-streaming
 metadata:
   title: Work with data streams by using Azure Stream Analytics
-  description: Explore how Azure Stream Analytics integrates with your applications or Internet of Things devices to gain insights with real-time streaming data. 
-  ms.date: 01/31/2019
+  description: "Explore how Azure Stream Analytics integrates with your applications or Internet of Things devices to gain insights with real-time streaming data."
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with data streams by using Azure Stream Analytics
 summary: Explore how Azure Stream Analytics integrates with your applications or Internet of Things (IoT) devices to gain insights with real-time streaming data. Learn how to consume and analyze data streams and derive actionable results.
-abstract: | 
+abstract: |
   In this module, you will:
-  - Understand data streams.
-  - Understand event processing.
-  - Learn about processing events with Azure Stream Analytics.
-prerequisites: None
+    - Understand data streams.
+    - Understand event processing.
+    - Learn about processing events with Azure Stream Analytics.
+prerequisites: |
+  Before taking this module, it is recommended that you complete Data Fundamentals.
 iconUrl: /learn/achievements/data-ai/introduction-to-data-streaming-badge.svg
 levels:
 - beginner
@@ -29,6 +30,7 @@ units:
 - learn.data-ai.introduction-to-data-streaming.data-streams
 - learn.data-ai.introduction-to-data-streaming.event-processing
 - learn.data-ai.introduction-to-data-streaming.event-with-asa
+- learn.data-ai.introduction-to-data-streaming.knowledge-check
 - learn.data-ai.introduction-to-data-streaming.summary
 badge:
   uid: learn.data-ai.introduction-to-data-streaming.badge

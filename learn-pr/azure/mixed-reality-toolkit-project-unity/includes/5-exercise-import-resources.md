@@ -12,19 +12,27 @@ The Mixed Reality Toolkit provides a set of components and features which could 
 
 ## Import the MRTK Unity Foundation package
 
-1. Download the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases?azure-portal=true).
+1. In the Mixed Reality Feature Tool, for **Project path** use the **ellipsis** button to select the target location of the Unity project. After, select Discover Features.
 
-1. In the Unity menu, select **Assets** > **Import Package** > **Custom Package**.
+    :::image type="content" source="../media/feature-tool-project-path.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Project path field and Discover Features button are highlighted.":::
 
-    :::image type="content" source="../media/import-custom-package.png" alt-text="Screenshot of the Unity editor with the Assets menu expanded. The Import Package and Custom Package options are highlighted.":::
+1. Next, select the **Mixed Reality Toolkit Foundation 2.5x** or newer package within the feature package catalog.  After, select **Get Features**.
 
-1. In the **Import package...** window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** you downloaded and click **Open**.
+    :::image type="content" source="../media/feature-package-catalog.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Mixed Reality Toolkit Foundation package is highlighted. The Get Features button is also highlighted/":::
 
-    :::image type="content" source="../media/select-mrtk-package.png" alt-text="Screenshot of the Import package explorer window open. The Mixed Reality Toolkit foundation package is highlighted in the explorer. The Open button is highlighted.":::
+1. On the **Import Features** screen, select **Validate** to ensure the Unity project can successfully import the selected features. If successful, the message **No validation issues were detected** displays in a pop-up.
 
-1. In the **Import Unity Package window**, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets.
+    :::image type="content" source="../media/feature-tool-validate.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Validate button is highlighted.":::
 
-    :::image type="content" source="../media/import-mrtk.png" alt-text="Screenshot of the Import Unity Package window. The window displays the assets for the Mixed Reality Toolkit foundation 2 dot 4 dot 0 package. The All and Import buttons are highlighted.":::
+1. Select **Import** to import the package and dependencies.
+
+1. On the **Review and Approve** screen, select **Approve**.
+
+    :::image type="content" source="../media/feature-tool-approve.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Approve button is highlighted.":::
+
+1. After the project update is successful, select **Exit** on the **Unity Project Updated** screen. 
+
+The Unity project should now contain a **Packages** folder. Inside the **Packages** folder is the **Mixed Reality Toolkit Foundation** package and installed dependencies.
 
 ## Open the MRTK Project Configurator window
 
@@ -49,3 +57,37 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene. Two new objects are added to the Hierarchy: **MixedRealityToolkit** and **MixedRealityPlayspace**.
 
 :::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects.":::
+
+The next step is to disable the Diagnostics bar. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should continuously run at 60 FPS.
+
+1. Select the **MixedRealityToolkit** object in the **Hierarchy** window. The MixedRealityToolkit's properties will display in the **Inspector** window.
+
+    :::image type="content" source="../media/mixedrealitytoolkit-object.png" alt-text="The mixed reality toolkit object is highlighted in the hierarchy window.":::
+
+1. In the **Inspector** window, select **DefaultMixedRealityToolkitConfigurationProfile**
+
+    :::image type="content" source="../media/defaultmixedrealitytoolkit-profile.png" alt-text="The default mixed reality toolkit configuration profile is highlighted in the hierarchy window.":::
+
+1. In the **Inspector** window, select **Clone** to clone the profile.
+
+    :::image type="content" source="../media/clone-profile-one.png" alt-text="The clone button is highlighted in the hierarchy window.":::
+
+1. In the **Cloning Profile** window, enter **MRTKCubeConfigurationProfile** for **Profile Name**.
+
+    :::image type="content" source="../media/configuration-profile-name.png" alt-text="In the clone profile window, the profile name entered is m r t k cube configuration profile. The profile name is highlighted.":::
+
+1. Select **Clone**.
+
+1. In the **Inspector** window, select **Diagnostics**. In the **Diagnostics** settings, select **Clone** to clone the Diagnostics profile.
+
+    :::image type="content" source="../media/diagnostics-profile.png" alt-text="The diagnostics profile button is highlighted in the hierarchy window. The clone button is also highlighted.":::
+
+1. In the **Cloning Profile** window, enter **MRTKCubeDiagnosticsProfile** for **Profile Name**.
+
+    :::image type="content" source="../media/new-diagnostics-profile.png" alt-text="In the clone profile window, the profile name entered is mrtk cube diagnostics profile. The profile name is highlighted.":::
+
+1. Select **Clone**.
+
+1. In the **Diagnostics** settings, uncheck **Show Diagnostics**.
+
+    :::image type="content" source="../media/show-diagnostics.png" alt-text="The show diagnostics setting is highlighted. The box is unchecked.":::

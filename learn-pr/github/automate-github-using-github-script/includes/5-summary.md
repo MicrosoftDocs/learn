@@ -14,4 +14,4 @@ GitHub Script is great for interacting with GitHub from GitHub Actions. But what
 Here are some links to more information on the topics we discussed in this module.
 
 - [GitHub Script](https://github.com/actions/github-script?azure-portal=true)
-- [octokit](https://octokit.github.io/rest.js/v17?azure-portal=true)
+- [octokit](https://octokit.github.io/rest.js/?azure-portal=true)

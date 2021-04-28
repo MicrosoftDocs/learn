@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.react-get-started.2-javascript-xml
+metadata:
+  title: Introduction to JSX
+  description: JSX is a combination of JavaScript and XML. Use it to mix HTML and JavaScript in the same file. You can use JSX to create robust components and streamline your development process.
+  ms.date: 02/03/2021 
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-react
+title: Introduction to JSX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-javascript-xml.md)]

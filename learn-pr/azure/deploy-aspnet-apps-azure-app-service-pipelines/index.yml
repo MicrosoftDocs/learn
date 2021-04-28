@@ -24,7 +24,7 @@ prerequisites: |
   - An Azure Active Directory (Azure AD) tenant in which you have the Global Administrator role
   - An Azure DevOps organization in which you are the organization owner
   - An Azure GitHub account into which you can fork public GitHub repositories
-iconUrl: /learn/achievements/generic-badge.svg # Work with your contact on the Learn team to create badge art for the module.
+iconUrl: /learn/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg
 levels: 
 - intermediate
 roles:

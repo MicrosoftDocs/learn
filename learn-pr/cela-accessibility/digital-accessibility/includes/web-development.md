@@ -1,8 +1,8 @@
-There are several concepts, syntax, and elements to be aware of to make your web pages accessible for people of all abilities. This unit provides an overview of essential topics. To fully explore the details of making accessible websites, pursue the recommended resources.
+There are several concepts, syntax, and elements to be aware of to make your web pages accessible for people of all abilities. This unit provides an overview of essential topics. To fully explore the details about making accessible websites, see the recommended resources.
 
 ## HTML5 and ARIA
 
-HTML5 is the latest version of Hypertext Markup Language (HTML) and is recommended by the [World Wide Web Consortium (W3C)](https://www.w3.org/), an international community that develops web standards. For all intents and purposes, HTML5 is the current standard for the web and should be used to build the basic structure for your website. If you plan to create accessible websites, you should learn the syntax and tags for HTML5.
+HTML5 is the latest version of Hypertext Markup Language (HTML) and is recommended by the [World Wide Web Consortium (W3C)](https://www.w3.org/), an international community that develops web standards. For all intents and purposes, HTML5 is the current standard for the web, and should be used to build the basic structure for your website. If you plan to create accessible websites, you should learn the syntax and tags for HTML5.
 
 Accessible Rich Internet Applications (ARIA) is a technical specification that can work in tandem with HTML5 to help make web pages and applications more accessible. ARIA is not part of HTML5, but its attributes can be used in conjunction with HTML5 elements in certain instances.
 
@@ -13,7 +13,7 @@ For more information, learn more about [ARIA in HTML](https://www.w3.org/TR/html
 People who cannot see the visual cues of a web page rely on title and heading elements to understand how the page is structured. HTML5 has a series of sectioning elements that can clearly communicate the structure
 of a page: \<header\>, \<nav\>, \<main\>, and \<footer\>. If used properly, these HTML5 elements will help people using screen readers to navigate a web page.
 
-However, to maximize accessibility, it is best to use the HTML5 elements in conjunction with ARIA roles. ARIA roles include: role="banner", role="navigation", role="main", and role="contentinfo". These ARIA roles
+However, to maximize accessibility, it is best to use the HTML5 elements in conjunction with ARIA roles. ARIA roles include: role="banner", role="navigation", role="main", and role="contentinfo." These ARIA roles
 create a landmark structure that enables people using screen readers to quickly and easily navigate to a desired part of a web page. For example, rather than having to wait for the screen reader to narrate each element one-by-one, a person can skip to a specific landmark further down a web page right away.
 
 For more information, explore the W3C [ARIA Landmarks Example](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/main.html).
@@ -37,22 +37,22 @@ on. Ensure that text and images of text provide a color contrast ratio of at lea
  A few exceptions to this guideline include:
 
 - **Large Text**: Large-scale text (18-point regular or 14-point bold) and images of large-scale text can have a contrast ratio of 3:1.
-- **Incidentals**: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
+- **Incidentals**: Text or images of text that are part of an inactive user interface (UI) component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.
 - **Logotypes**: Text that is part of a logo or brand name has no minimum contrast requirement.
 
 :::image type="content" source="../media/large-text.png" alt-text="People viewing large text on a computer screen":::
 
-Figure 1. Large on-screen text for accessibility purposes
+Large on-screen text for accessibility purposes
 
 ## Data tables
 
-Data tables can be difficult for some assistive technology (AT) applications, such as screen readers. In order to make data tables as accessible as possible, when you use tables in your website be sure to do the following:
+Data tables can be difficult for some assistive technology (AT) applications, such as screen readers. To make data tables as accessible as possible, when you use tables in your website, be sure to do the following:
 
-- Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`)
-- Properly identify table headers (use the th element)
-- With complex tables (more than one row of headers), ensure headers are associated with the right data:
-- Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values row, col, rowgroup, or colgroup)
-- Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a headers attribute in each data cell
+- Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`).
+- Properly identify table headers (use the th element).
+- With complex tables (more than one row of headers), ensure headers are associated with the right data.
+- Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values row, col, rowgroup, or colgroup).
+- Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a headers attribute in each data cell.
 
 :::image type="content" source="../media/data-table-html.png" alt-text="Data table and its corresponding native HTML table elements":::
 
@@ -64,10 +64,10 @@ If error messages are not clearly identified, people using assistive technology 
 
 Ensure error messages are clearly indicated after validation by:
 
-- Using a consistent method to point out error messages
-- Identifying the field(s) in error
-- Identifying error fields at the beginning of the form, or
-- Identifying error fields in the label for each field
+- Using a consistent method to point out error messages.
+- Identifying the field(s) in error.
+- Identifying error fields at the beginning of the form.
+- Identifying error fields in the label for each field.
 
 Suggestions for alternative inputs must be provided when possible. However, this is not necessary when doing so would defeat the purpose of the form. For example, when the form is part of a test, a suggestion for alternative inputs could potentially provide a clue or answer to a question, which may not be appropriate.
 
@@ -79,24 +79,24 @@ People who use screen readers may navigate a web page by viewing a list of the w
 
 If several links on a web page have the same name but point to different URLs, people may become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
 
-If generic, non-descriptive link names appear out of context, such as in an "Additional Resources" list, a person who is using a screen reader will not have any context or understanding as to what the link is or why
+If generic, non-descriptive link names appear out of context, such as in an "Additional Resources" list, a person who is using a screen reader will not have any context or understanding as to what the link is, or why
 it has been provided. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
 
 **Accessible links example:**
 
 :::image type="content" source="../media/three-descriptive-link-names.png" alt-text="Web page with a series of three descriptive link names":::
 
-Figure 3. Series of descriptive link names
+Series of descriptive link names
 
 **Inaccessible links example:**
 
 :::image type="content" source="../media/three-nondescriptive-link-names.png" alt-text="Web page with a series of three generic, non-descriptive link names":::
 
-Figure 4. Series of generic, non-descriptive link names
+Series of generic, non-descriptive link names
 
 ## Images
 
-People who are blind cannot see images and rely on website developers and content authors to describe them.
+People who are blind cannot see images, and rely on website developers and content authors to describe them.
 
 People who have low vision may have difficulty reading an image of text because it is pixelated when magnified, or the contrast is not strong enough, or the image is too small.
 
@@ -118,7 +118,7 @@ code by adding a blank alt attribute.
 
 :::image type="content" source="../media/examples-of-nontext-elements.png" alt-text="Example of non-text elements requiring and not requiring descriptive alternative text attributes":::
 
-Figure 5. Example of image and decorative border
+Example of image and decorative border
 
 **Inaccessible example:**
 
@@ -128,7 +128,6 @@ Figure 5. Example of image and decorative border
 
 \<img src=\"border.gif\" alt=\"\" /\>
 
-The accessible example does not include any text; however, the fact that the alt attribute is included but shows no text indicates to someone using a screen reader that the image is decorative and does not contain
-critical information.
+The accessible example does not include any text; however, the fact that the alt attribute is included but shows no text indicates to someone using a screen reader that the image is decorative, and does not contain critical information.
 
-For more information on improving accessibility, explore the [W3C Inaccessible Home Page Before and After Demonstration](https://www.w3.org/WAI/demos/bad/before/home.html).
+For more information about improving accessibility, explore the [W3C Inaccessible Home Page Before and After Demonstration](https://www.w3.org/WAI/demos/bad/before/home.html).

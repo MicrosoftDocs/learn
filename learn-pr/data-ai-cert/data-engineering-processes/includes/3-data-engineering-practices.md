@@ -21,23 +21,23 @@ Extraction sources can include databases, files, and streams. Each source has un
 
 During the extraction process, data engineers define the data and its source:
 
-1. **Define the data source**: Identify source details such as the resource group, subscription, and identity information such as a key or secret.
+**Define the data source**: Identify source details such as the resource group, subscription, and identity information such as a key or secret.
 
-2. **Define the data**: Identify the data to be extracted. Define data by using a database query, a set of files, or an Azure Blob storage name for blob storage.
+**Define the data**: Identify the data to be extracted. Define data by using a database query, a set of files, or an Azure Blob storage name for blob storage.
 
 ### Transform
 
-3. **Define the data transformation**: Data transformation operations can include splitting, combining, deriving, adding, removing, or pivoting columns. Map fields between the data source and the data destination. You might also need to aggregate or merge data. 
+**Define the data transformation**: Data transformation operations can include splitting, combining, deriving, adding, removing, or pivoting columns. Map fields between the data source and the data destination. You might also need to aggregate or merge data. 
 
 ### Load
 
-4. **Define the destination**: During a load, many Azure destinations can accept data formatted as a JavaScript Object Notation (JSON), file, or blob. You might need to write code to interact with application APIs. 
+**Define the destination**: During a load, many Azure destinations can accept data formatted as a JavaScript Object Notation (JSON), file, or blob. You might need to write code to interact with application APIs. 
 
     Azure Data Factory offers built-in support for Azure Functions. You'll also find support for many programming languages, including Node.js, .NET, Python, and Java. Although Extensible Markup Language (XML) was common in the past, most systems have migrated to JSON because of its flexibility as a semistructured data type.
 
-5. **Start the job**: Test the ETL job in a development or test environment. Then migrate the job to a production environment to load the production system.
+**Start the job**: Test the ETL job in a development or test environment. Then migrate the job to a production environment to load the production system.
 
-6. **Monitor the job**: ETL operations can involve many complex processes. Set up a proactive and reactive monitoring system to provide information when things go wrong. Set up logging according to the technology that will use it.
+**Monitor the job**: ETL operations can involve many complex processes. Set up a proactive and reactive monitoring system to provide information when things go wrong. Set up logging according to the technology that will use it.
 
 ## ETL tools
 

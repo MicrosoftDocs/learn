@@ -28,7 +28,8 @@ Your network architect would like to ensure customers have the best performance.
         --name "WestUS" \
         --type azureEndpoints \
         --target-resource-id $WestId
-
+     ```
+     ```azurecli
     EastId=$(az network public-ip show \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name eastasia-vm-nic-pip \

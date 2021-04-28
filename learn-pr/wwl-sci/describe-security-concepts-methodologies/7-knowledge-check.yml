@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/10/2021
+  ms.date: 03/25/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -28,9 +29,9 @@ quiz:
       explanation: "That's incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
   - content: "Which of the following measures might an organization implement as part of the defense in-depth security methodology?"
     choices:
-    - content: "Locating servers at different locations in your organization."
+    - content: "Locating all its servers in a single physical location."
       isCorrect: false
-      explanation: "That's incorrect. Defense in-depth requires layered security, including physical security. Locating servers at different locations in your organization makes it difficult to provide adequate physical security."
+      explanation: "That's incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
     - content: "Multi-factor authentication for all users."
       isCorrect: true
       explanation: "That's correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
