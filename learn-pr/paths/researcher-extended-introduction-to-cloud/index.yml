@@ -33,6 +33,9 @@ roles:
 - higher-ed-educator
 products:
 - azure
+- azure-cost-management
+- azure-firewall
+- azure-key-vault
 modules:
 - learn.azure.plan-manage-azure-costs
 - learn.azure.analyze-costs-create-budgets-azure-cost-management
