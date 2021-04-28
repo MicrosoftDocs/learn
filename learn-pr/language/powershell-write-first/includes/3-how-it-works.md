@@ -41,7 +41,7 @@ Like any spoken or written language, programming languages have their own gramma
 
 *Operators* are special characters, such as parentheses (`()`) or equal signs (`=`). These characters tell the computer to perform specific mathematical, relational, or logical operations to produce a result.
 
-When you typed your code in the Cloud Shell terminal in the preceding unit, you might have noticed small changes to the color of the text and symbols. This color-coding is called *syntax highlighting*. As you're reading your code, syntax highlighting can help you spot any mistakes you might have made. This feature is available in and even more robust in many code editors, such as Visual Studio Code.
+When you typed your code in the Cloud Shell terminal in the preceding unit, you might have noticed small changes to the color of the text and symbols. This color coding is called *syntax highlighting*. As you're reading your code, syntax highlighting can help you spot any mistakes you might have made. This feature is available and even more robust in many code editors, such as Visual Studio Code.
 
 ## Compiling code in PowerShell
 

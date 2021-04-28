@@ -8,7 +8,7 @@ In this exercise, you'll follow a longstanding tradition among software develope
 
 Azure Cloud Shell provides an in-browser experience to support our tutorial approach. Cloud Shell is at the right side of the webpage. It behaves like a normal PowerShell terminal window, but in a sandbox environment. You can type commands directly in the window, or you can run scripts you've already written and get the results in Cloud Shell.
 
-In this module, you'll use an available version of a code editor in Cloud Shell to write and run scripts.
+In this module, you'll use a version of a code editor in Cloud Shell to write and run scripts.
 
 1. In the Cloud Shell terminal, type the following code:
 
@@ -19,7 +19,7 @@ In this module, you'll use an available version of a code editor in Cloud Shell 
 
     The `New-Item` command creates a new `.ps1` file in the current directory. The `.ps1` file name extension is the extension that's used for PowerShell scripts.
 
-    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of only the file name.
+    The `code` command followed by the file name of the script you want to work with opens the file in the Cloud Shell code editor. Another window opens that allows you to write and edit scripts and then save them to run in Cloud Shell. If you want to open a file that's stored in another location, you can define the full path instead of only the file name.
 
 1. In the code editor window, type the following code:
 
@@ -63,7 +63,7 @@ If an error occurs, it might look something like this:
 Write-Outpu: The term 'Write-Outpu' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
-In this example, PowerShell is telling me that I incorrectly wrote `Write-Outpu` instead of `Write-Output` and it can't find the command I specified.
+In this example, PowerShell is telling us that we incorrectly wrote `Write-Outpu` instead of `Write-Output`, and it can't find the command we specified.
 
 Reading these errors is essential in helping you learn what caused them. When you run a program and you get an error, the error often includes the line number where the issue occurred, a description of the error, and sometimes a suggestion for how to fix it.
 

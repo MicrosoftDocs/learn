@@ -1,6 +1,6 @@
 Code challenges throughout these modules reinforce what you've learned and help you gain confidence before you move on to the next lesson.
 
-### Step 1: Close any open files in the Cloud Shell code editor
+### Step 1: Close any open files in Cloud Shell code editor
 
 Use the keyboard shortcut <kbd>Ctrl+Q</kbd> (<kbd>⌘+Q</kbd> on macOS) to close any open files in the Cloud Shell code editor.
 
@@ -8,7 +8,7 @@ Use the keyboard shortcut <kbd>Ctrl+Q</kbd> (<kbd>⌘+Q</kbd> on macOS) to close
 
 Create a new file named *GettingStarted.ps1*, and use the Cloud Shell code editor to open it.
 
-### Step 3: Write code in the Cloud Shell code editor to display two messages
+### Step 3: Write code in Cloud Shell code editor to display two messages
 
 Use the techniques you learned to print one message and then collect user input to reuse in a second message. In other words, you first learned how to display a message in just one line of code. You also learned how to request input from a user and then reuse that value to print a custom message. Use both techniques for this challenge.
 
