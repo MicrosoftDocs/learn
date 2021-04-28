@@ -63,7 +63,7 @@ from azure.quantum import Workspace
 workspace = Workspace(
     resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
     location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
-
+)
 workspace.login()
 ```
 
