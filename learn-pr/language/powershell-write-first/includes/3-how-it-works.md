@@ -1,4 +1,4 @@
-To understand how code works, we need to talk about what a _program_ is, what a _programming language_ is, and how that language communicates commands to your computer.
+To help you understand how code works, we need to talk about what a _program_ is, what a _programming language_ is, and how that language communicates commands to your computer.
 
 ## What is a program?
 
@@ -25,7 +25,7 @@ A program can take different forms for different purposes. A program can be:
 - A script, such as an advanced macro that executes inside another program to automate certain functionality.
 - A combination of live code, equations, and data visualizations.
 
-Some programs, including those you'll write in this module, need only a few lines of code. But complex programs such as operating systems need tens of thousands, sometimes millions of lines of code.
+Some programs, including those you'll write in this module, need only a few lines of code. But complex programs such as operating systems need tens of thousands or sometimes millions of lines of code.
 
 ## What is a programming language?
 
@@ -45,7 +45,7 @@ When you typed your code in the Cloud Shell terminal in the preceding unit, you 
 
 ## Compiling code in PowerShell
 
-Computers aren't good at reading our programs in the way we write them. Programming languages need to be translated into a form that the computer can understand. Various programming languages have a few ways of doing this.
+Computers aren't good at reading our programs in the way we write them. Programming languages need to be translated into a form that the computer can understand. Programming languages have a variety of ways of doing this.
 
 Many programming languages *compile* code as an individual step. You write your code, run it through a special program called a compiler, and the compiler produces an executable package to run. 
 
