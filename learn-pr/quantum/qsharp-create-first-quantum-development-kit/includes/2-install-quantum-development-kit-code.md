@@ -31,7 +31,7 @@ The QDK also includes:
 
     The simulator is useful for trying out new ideas, debugging programs, and learning about quantum computing, but it's only suitable for programs that require relatively few qubits. (Don't worry, we'll explain what a qubit is later in the module.)
 
-    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (We'll discuss Azure Quantum later in this module.)
+    The simulator enables you to run quantum programs locally, on computers you use to write software. You can also target your programs to run on quantum hardware by using Azure Quantum. (See this [module](/learn/modules/get-started-azure-quantum?azure-portal=true) to learn more on Azure Quantum.)
 * Tools that help you integrate quantum programs with classical programs, including support for C#, F#, and Python. (Classical code enables you to work with the results from quantum computations.)
 
 ## Install the QDK for Visual Studio Code
@@ -115,7 +115,7 @@ Now let's run the program to verify that everything is set up correctly. You use
 
 Great work. You just ran your first Q# program!
 
-You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
+You likely noticed that this basic program doesn't involve any quantum computations. Next, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
 
