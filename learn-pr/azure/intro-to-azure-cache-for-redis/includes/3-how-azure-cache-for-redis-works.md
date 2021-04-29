@@ -1,6 +1,6 @@
 Here, you'll review the features of Azure Cache for Redis works and how they work together to help improve app functionality. This knowledge will help you decide whether you can use it in your organization.
 
-Azure Cache for Redis provides a number of features that help improve the performance and scalability of apps that rely heavily on back-end data stores. You'll learn what the following Azure Cache for Redis features do:
+Azure Cache for Redis provides a number of use-cases that help improve the performance and scalability of apps that rely heavily on back-end data stores. You'll learn what the following Azure Cache for Redis use-cases provide:
 
 - Distributed cache
 - Session store
@@ -9,13 +9,13 @@ Azure Cache for Redis provides a number of features that help improve the perfor
 
 ## Distributed cache
 
-The distributed cache feature in Azure Cache for Redis helps improve your apps' response times by copying frequently-accessed data to a cache. This cache has lower latency and provides for higher throughput than the primary datastore. The distributed cache feature:
+The distributed cache use-case in Azure Cache for Redis helps improve your apps' response times by copying frequently-accessed data to a cache. This cache has lower latency and provides for higher throughput than the primary datastore. The distributed cache feature:
 
 - Accelerates application responsiveness.
 - Helps reduce load on primary datastores and compute resources.
 - Integrates with many Azure databases, including Azure SQL and Azure Cosmos DB.
 
-You can use the distributed cache feature to:
+You can use distributed cache to:
 
 - Manage spikes in traffic.
 - Cache and provide commonly accessed data to users.
@@ -29,13 +29,13 @@ As indicated in the following graphic, Azure Cache for Redis can help improve pe
 
 ## Session store
 
-Your session-oriented apps require the ability to store and access temporary session data when users sign in and remain active on your apps. The session store feature in Azure Cache for Redis:
+Your session-oriented apps require the ability to store and access temporary session data when users sign in and remain active on your apps. The session store use-case in Azure Cache for Redis:
 
 - Manages up to hundreds of thousands of simultaneous users.
 - Makes data-replication options available to help provide for maximum reliability.
 - Helps reduce costs, as it's typically more cost-effective and scalable than alternative database or storage options.
 
-You can use the session store feature to:
+You can use session store to:
 
 - Help facilitate eCommerce shopping carts.
 - Store user cookies.
@@ -50,7 +50,7 @@ Apps built on microservices often need to asynchronously communicate. Azure Cach
 - Supports TLS encryption for data in transit.
 - Provides network isolation for secure communication between your services.
 
-You can use the message broker feature to:
+You can use the message broker use-case to:
 
 - Publish news, financial data, or application updates to users.
 - Manage chat messages.
@@ -74,7 +74,7 @@ If you're moving from an on-premises cache to a managed service, a critical fact
   - Scaling
   - Setup
 
-You can use the cloud-migration feature in Azure Cache for Redis to:
+You can use cloud-migration in Azure Cache for Redis to:
 
 - Migrate your apps from your on-premises environment to the cloud.
 - Help modernize your current infrastructure as a service (IaaS) apps through the benefits of platform as a service (PaaS) services.

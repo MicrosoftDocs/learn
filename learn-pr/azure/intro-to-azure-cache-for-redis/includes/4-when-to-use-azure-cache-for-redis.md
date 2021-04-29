@@ -29,7 +29,7 @@ When you use Azure Cache for Redis, you're implementing a fully managed service.
 
 ### Is reliability critical?
 
-Azure Cache for Redis provides several reliability and high-availability features, including OSS Cluster, data persistence, zone redundancy, and geo-replication.
+Azure Cache for Redis provides several reliability and high-availability features, including clustering, data persistence, zone redundancy, and geo-replication.
 
 Specifically, Azure Cache for Redis has several high-availability capabilities, including that it:
 
@@ -44,7 +44,7 @@ Specifically, Azure Cache for Redis has several high-availability capabilities, 
 
 ### Do you anticipate sudden changes in load?
 
-It's important that the system can respond to changes in load. Sudden changes in demand might occur when you run sales promotions or at specific times of the year. Azure Cache for Redis provides automatic scaling that occurs without downtime.
+It's important that the system can respond to changes in load. Sudden changes in demand might occur when you run sales promotions or at specific times of the year. Azure Cache for Redis can handle massive throughput and tens of thousands of concurrent users, allowing applications to handle unexpected traffic surges smoothly.
 
 ## Summary
 
@@ -58,11 +58,12 @@ In summary, consider implementing Azure Cache for Redis when you:
 
 When you're deciding which tier to select, you should choose the:
 
-- Basic or Standard tiers only for noncritical workloads.
+- Basic tiers only for noncritical workloads.
+- Standard tiers only for general purpose workloads
 - Premium or Enterprise tiers when you require more performance.
 - Enterprise tiers when you:
 
   - Need higher availability than the Premium tier offers.
-  - Require RedisBloom, RediSearch, and RedisTimeSeries module integration.
+  - Require Active geo-replication, RedisBloom, RediSearch, and RedisTimeSeries module integration.
 
 - Enterprise Flash tier when you want to reduce costs by using nonvolatile memory.

@@ -1,4 +1,4 @@
-Most enterprise apps use databases, which form the cornerstone of many modern apps. Making your databases as responsive as possible is vital. Azure Cache for Redis can help you improve your apps' performance and scalability. Azure Cache for Redis copies frequently accessed data and stores it in memory.
+Databases form the cornerstone of many enterprise apps. Making your databases as responsive as possible is vital for modern app development. Azure Cache for Redis can help you improve your apps' performance and scalability by copying frequently accessed data and storing it in memory.
 
 As the following graphic illustrates, Azure Cache for Redis can help improve performance in apps that interface with many database solutions, including Azure SQL Database, Azure Cosmos DB, and Azure Database for MySQL.
 

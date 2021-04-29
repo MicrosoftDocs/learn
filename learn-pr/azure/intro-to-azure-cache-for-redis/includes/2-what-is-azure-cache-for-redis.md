@@ -1,10 +1,10 @@
 Let's start with a quick overview of Azure Cache for Redis. This information will help you decide if it's a suitable solution for your organization.
 
-## What is Redis Cache?
+## What is Redis?
 
-Redis cache is a widely used, open-source caching solution. It's a key-value datastore that runs in memory, so it's very responsive.
+Redis is a widely used, open-source caching solution. It's a key-value datastore that runs in memory, so it's very responsive.
 
-Typically, organizations use Redis cache to complement their database apps. Combining Redis cache with back-end databases enables you to significantly improve your apps' performance.
+Typically, organizations use Redis to complement their database apps. Combining Redis with back-end databases enables you to significantly improve your apps' performance.
 
 ## What should a caching solution do?
 
@@ -17,7 +17,7 @@ Any caching solution should address four key requirements:
 
 ## Azure Cache for Redis definition
 
-Azure Cache for Redis enables you to implement Redis cache as a fully managed service.
+Azure Cache for Redis enables you to implement Redis as a fully managed service.
 
 > [!NOTE]
 > Azure Cache for Redis offers both Redis open-source (OSS Redis) and a commercial product from Redis Labs (Redis Enterprise) as a managed service, depending on the tier you select.
@@ -27,7 +27,7 @@ Azure Cache for Redis provides the following application architecture patterns:
 - **Data cache**. Databases often are too large to load directly into cache. That's why it's common to use the *cache-aside* pattern. It loads data into the cache only as needed.  
 - **Content cache**. Most webpages contain static items, such as headers, footers, and banners. These items don't change very often. By using an in-memory content cache, you can provide quick access to static content as compared to accessing back-end datastores.
 - **Session store**. This pattern is often used with shopping carts or other data based on user history data. The reason is that web applications often associate these with user cookies. Storing too much data in a cookie can adversely affect performance. The reason is that apps often use cookies to query a back-end database for user data. Using an in-memory cache to store user-session information is faster than working with the backend database.
-- **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to run. If a task contains long-running operations, they're typically queued to run in sequence. Azure Cache for Redis provides a distributed queue to support this application pattern.
+- **Job and message queuing**. Apps frequently add tasks to a queue. This occurs when the tasks might take a long time to run. If a task contains long-running operations, they're typically queued to run in sequence. Azure Cache for Redis provides publish/subscribe, message streaming, or queue architectures to support this application pattern.
 
    > [!NOTE]
    > Longer running operations are queued to process in sequence, often by another server.
@@ -53,13 +53,13 @@ You can select from the following five Azure Cache for Redis tiers:
 
 All tiers support the following features:
 
-- Data encryption
+- Data encryption in transit
 - Network isolation
 - Scaling
 
 The Premium, Enterprise, and Enterprise Flash tiers also support other advanced features, including:
 
-- **OSS Cluster**. Provides for high-availability and load distribution.
+- **Clustering**. Provides for high-availability and load distribution.
 - **Data persistence**. Allows you to persist data in Redis. This enables you to take snapshots and back up data. You can then load these snapshots should a hardware failure occur.
 - **Zone redundancy**. Provides higher resilience and availability because the VMs are spread across multiple availability zones.
 - **Geo-replication**. Links two Azure Cache for Redis instances and creates a data-replication relationship. This replication provides a potential disaster-recovery solution.
@@ -70,3 +70,4 @@ The following features are only available in the Enterprise tiers:
 - **RediSearch**. Provides a powerful indexing and querying engine with a full-text search engine.
 - **RedisBloom**. Provides support for probabilistic data structures.
 - **RedisTimeSeries**. Enables you to ingest and query large quantities of data with very high performance.
+- **Active Geo-Replication**. Implements conflict-free replicated data types, and supports writes to multiple cache instances. Manages merging of changes and conflict resolution when necessary.
