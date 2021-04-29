@@ -24,7 +24,7 @@ Now that you have reviewed this module, you should be able to:
 * Learn more about [ExpressRoute encryption options](https://docs.microsoft.com/azure/expressroute/expressroute-about-encryption?azure-portal=true).
 * Learn more about [ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction?azure-portal=true).
 * Learn more about [ExpressRoute locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers?azure-portal=true).
-* Learn more about [Intel Software Guard Extensions](https://software.intel.com/en-us/sgx?azure-portal=true).
+* Learn more about [Intel Software Guard Extensions](https://software.intel.com/sgx?azure-portal=true).
 * Learn more about [VPN encryption](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true).
 * Learn more about [Media Access Control Security](https://1.ieee802.org/security/802-1ae/?azure-portal=true).
 * Learn more about [Remote Desktop Protocol](https://docs.microsoft.com/windows/win32/termserv/remote-desktop-protocol?azure-portal=true).
