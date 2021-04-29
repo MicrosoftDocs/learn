@@ -5,7 +5,7 @@ Imagine that you work as a development lead at Tailwind Traders, a company that 
 
 You could ask to buy new equipment, but your department's budget is tight. You want to make a good impression with leadership, but you don't know how many servers are necessary for this project, and you don't want to buy more hardware than you need. Even if you were able to procure several servers, you'd need to invest a lot of time to set them up and install software.
 
-Ideally, you'd obtain the resources you need to do the work without too much administration and configure them to do the work. You'd also pay only for the compute resources you need while you're using them.
+Ideally, you would obtain the resources you need to do the work without too much administration and configure them to do the work. You'd also pay only for the compute resources you need while you're using them.
 
 This scenario is exactly what you can do in Azure. You can create compute resources, configure them to do the work that's needed, and pay for only what you use.
 
