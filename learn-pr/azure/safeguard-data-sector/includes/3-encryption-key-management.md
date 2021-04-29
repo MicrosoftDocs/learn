@@ -1,4 +1,4 @@
-Data encryption in the cloud is important to reduce risk and it's expected by government customers worldwide. End-to-end data encryption using advanced ciphers is a basic part of guaranteeing the confidentiality and integrity of customer data in the cloud. Azure helps customers protect their data through its entire lifecycle: at rest, in transit, or even in use. It also offers comprehensive encryption key management to help customers control their keys in the cloud.
+Data encryption in the cloud is an important tool to reduce risk and it's expected by government customers worldwide. End-to-end data encryption using advanced ciphers is a basic part of guaranteeing the confidentiality and integrity of customer data in the cloud. Azure helps customers protect their data through its entire lifecycle: at rest, in transit, or even in use. It also offers comprehensive encryption key management to help customers control their keys in the cloud.
 
 ## Data encryption at rest
 
@@ -14,9 +14,9 @@ Customer may choose from several options for [encrypting data in transit](https:
 * Azure Storage transactions can be forced to take place over HTTPS.
 * In-transit encryption for VMs can use the Remote Desktop Protocol (RDP) to enable TLS protection for remote sessions to Windows and Linux VMs in Azure. Alternatively, the Secure Shell (SSH) can be used for encrypted connections to Linux VMs running in Azure.
 * VPN encryption allows customers to use Azure VPN Gateway to send encrypted traffic between their Virtual Network (VNet) and their on-premises infrastructure across the public internet.
-* Express Route enables customers to create private connections between their on-premises infrastructure and Azure with several data encryption options.
+* ExpressRoute enables customers to create private connections between their on-premises infrastructure and Azure with several data encryption options.
 
-Data is protected as it moves between client systems and cloud services, regardless of the method clients use to connect. Customers should review Azure [best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices#protect-data-in-transit) for protecting data in transit. For key Azure services (for example, Azure SQL Database, SQL Managed Instance, and Azure Synapse Analytics), data encryption in transit is [enforced by default](https://docs.microsoft.com/azure/azure-sql/database/security-overview).
+Data is protected as it moves between client systems and cloud services, regardless of the method clients use to connect. Customers should review Azure [best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices#protect-data-in-transit) for protecting data in transit. For key Azure services (for example, Azure SQL Database, SQL Managed Instance, and Azure Synapse Analytics), data encryption in transit is [enforced by default](https://docs.microsoft.com/azure/azure-sql/database/security-overview#information-protection-and-encryption).
 
 ## Azure confidential computing
 
