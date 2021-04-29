@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "What is a benefit of multi-tenant cloud computing?"
     choices:
-    - content: "The multi-tenant allows customers to access each other’s applications."
+    - content: "The multi-tenant cloud allows customers to access each other’s applications."
       isCorrect: false
       explanation: "Incorrect: Azure uses logical isolation to segregate each customer's applications and data from those of others. This approach provides the scale and economic benefits of multi-tenant cloud services while preventing customers from accessing one another's data or applications."
     - content: "Hyperscale public cloud also offers many features that incorporate the latest cloud innovations."
@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct: Features, such as artificial intelligence, machine learning, IoT services, and intelligent edge, help government customers increase efficiency and unlock insights into their operations and performance."
     - content: "Applications and data are stored in multiple physical hardware components."
       isCorrect: false
-      explanation: "Multiple customer’s applications and data are stored on the same physical hardware."
+      explanation: "Incorrect: Multiple customer’s applications and data are stored on the same physical hardware."
     - content: "All data is stored on Azure cloud services."
       isCorrect: false
       explanation: "Incorrect: Azure Stack Hub and Azure Stack Edge allow customers to process highly sensitive data using a private or hybrid cloud."
