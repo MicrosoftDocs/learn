@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which account is used to access Azure VMware Solution HCX Manager?"
+  - content: "Which account is used to access the Azure VMware Solution HCX Manager?"
     choices:
     - content: "Global Administrator"
       isCorrect: false
-      explanation: "AVS deploys with vSphere 6.7 Update 3."
+      explanation: "he global administrator has access to all administrative features in the Azure Resource Manager portal."
     - content: "admin"
-      isCorrect: false
-      explanation: "cloudadmin"
-    - content: "2 IPs"
       isCorrect: true
-      explanation: "AVS doesn't deploy with vSphere 6.5 Update 2."
+      explanation: "admin is the account used to access the Azure VMware Solution HCX Manager."
+    - content: "cloudadmin"
+      isCorrect: false
+      explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter environment."
   - content: "If you can't activate your HCX Advanced Key, what might be the issue?"
     choices:
     - content: "The AVS environment doesn't have open internet access or a proxy configured."

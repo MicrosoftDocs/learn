@@ -25,8 +25,8 @@ quiz:
       explanation: "For the minimum deployment, 10 IPs is too many to assign to the HCX deployment on-premises."
     - content: "2 IPs"
       isCorrect: true
-      explanation: "At a minimum, identify two IPs on this network segment for the VMware HCX deployment. You might need a bigger number of IPs, depending on the scale of the deployment."
-  - content: "What version of vSphere on-premises is compatible with HCX 4.0, without needing another configuration?"
+      explanation: "At a minimum, identify two IPs in the on-premises network segment for the VMware HCX deployment. You might need a bigger number of IPs, depending on the scale of the deployment."
+  - content: "What version of vSphere on-premises is compatible with HCX 4.0 without needing extra configuration changes?"
     choices:
     - content: "vSphere 6.0"
       isCorrect: true
