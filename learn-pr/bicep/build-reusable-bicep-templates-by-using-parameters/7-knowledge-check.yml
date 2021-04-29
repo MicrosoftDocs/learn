@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "`alpha`"
       isCorrect: false
-      explanation: Default parameter values are overridden by parameter files, and parameter files are overridden by the values you specify explicitly when you deploy.
+      explanation: Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
     - content: "`bravo`"
       isCorrect: false
-      explanation: Default parameter values are overridden by parameter files, and parameter files are overridden by the values you specify explicitly when you deploy.
+      explanation: Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
     - content: "`charlie`"
       isCorrect: true
-      explanation: Default parameter values are overridden by parameter files, and parameter files are overridden by the values you specify explicitly when you deploy.
+      explanation: Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
   - content: Which of these values for the `projectName` parameter would result in a deployment error?
     choices:
     - content: "An empty string."
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: You can't view the value of the `apiKey` parameter for the deployment.
       isCorrect: true
-      explanation: The `apiKey` parameter has the `@secure()` decorator applied. This means that the parameter value is not available to you to view.
+      explanation: The `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
     - content: You can view the value of the `apiKey` parameter for this deployment by looking at the output of the deployment command.
       isCorrect: false
-      explanation: Normally the deployment command will show you the values of each parameter. However, the `apiKey` parameter has the `@secure()` decorator applied. This means that the parameter value is not available to you to view.
+      explanation: Normally the deployment command will show you the values of each parameter. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
     - content: You can view the value of the `apiKey` parameter for this deployment by using the Azure portal.
       isCorrect: false
-      explanation: Normally the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied. This means that the parameter value is not available to you to view.
+      explanation: Normally the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
