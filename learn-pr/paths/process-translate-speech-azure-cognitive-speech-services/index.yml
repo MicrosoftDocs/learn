@@ -26,7 +26,6 @@ products:
 - azure-cognitive-services
 modules:
 - learn.wwl.transcribe-speech-input-text
-- learn.wwl.synthesize-text-input-speech
 - learn.wwl.translate-speech-speech-service
 trophy:
   uid: learn.wwl.process-translate-speech-azure-cognitive-speech-services.trophy
