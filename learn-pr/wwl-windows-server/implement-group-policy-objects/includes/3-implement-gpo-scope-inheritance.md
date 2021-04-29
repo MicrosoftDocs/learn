@@ -92,7 +92,7 @@ Enforcement is useful when you must configure a GPO that defines a configuration
 
 To facilitate evaluation of GPO precedence, you can simply select an OU or domain, and then select the **Group Policy Inheritance** tab. This tab displays the resulting precedence of GPOs, accounting for GPO link, link order, inheritance blocking, and link enforcement.
 
-:::image type="content" source="../media/m8-group-policy-6.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Group Policy Inheritance tab for the Marketing OU. Four policies are displayed, two of which are Enforced from the domain.":::
+:::image type="content" source="../media/m8-group-policy-7.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Group Policy Inheritance tab for the Marketing OU. Four policies are displayed, two of which are Enforced from the domain.":::
 
 > [!IMPORTANT]
 > This tab doesn't account for policies that are linked to a site, for GPO security, or WMI filtering.

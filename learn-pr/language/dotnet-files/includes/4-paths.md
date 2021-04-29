@@ -28,7 +28,7 @@ Those directories are different on each operating system. It would be cumbersome
 
 The `System.Environment.SpecialFolder` enumeration specifies constants to retrieve paths to special system folders.
 
-The following code returns the current operating system's path to the equivalent of the Windows *My Documents* folder or the user's *HOME* directory if the code is running on Linux.
+The following code returns the current operating system's path to the equivalent of the Windows *My Documents* folder, or the user's *HOME* directory if the code is running on Linux.
 
 ```csharp
 string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -38,7 +38,7 @@ string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments
 
 Paths are a subject that comes up so frequently that .NET includes a class called `Path` specifically for working with paths.
 
-The `Path` class is located in the `System.IO` namespace shipped with .NET and doesn't need to be installed.
+The `Path` class is located in the `System.IO` namespace shipped with .NET, and doesn't need to be installed.
 
 ### Special path characters
 
@@ -72,11 +72,11 @@ Console.WriteLine(Path.Combine("stores","201")); // outputs: stores/201
 Remember, the reason why you would use the `Path.Combine` or `Path.DirectorySeparatorChar` class instead of hard-coding strings is that your program might be running on many different operating systems. The `Path` class will always format the paths correctly for whatever operating system it's running on.
 
 > [!TIP]
-> The `Path` class doesn't care whether or not things actually exist. Paths are conceptual, not physical. It's just building and parsing strings for you.
+> The `Path` class doesn't care whether things actually exist. Paths are conceptual, not physical. It's just building and parsing strings for you.
 
-### Determine file name extensions
+### Determine filename extensions
 
-The `Path` class can also tell you what the extension of a file name is. If you have a file and you want to identify if it's a JSON file or not, you can use the `Path.GetExtension` function.
+The `Path` class can also tell you what the extension of a filename is. If you have a file and you want to identify if it's a JSON file, you can use the `Path.GetExtension` function.
 
 ```csharp
 Console.WriteLine(Path.GetExtension("sales.json")); // outputs: .json
@@ -94,4 +94,4 @@ FileInfo info = new FileInfo(fileName);
 Console.WriteLine($"Full Name: {info.FullName}{Environment.NewLine}Directory: {info.Directory}{Environment.NewLine}Extension: {info.Extension}{Environment.NewLine}Create Date: {info.CreationTime}"); // And many more
 ```
 
-There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes. But these concepts are the core ones that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.
+There are many more useful properties and utility methods on the `Path`, `DirectoryInfo`, and `FileInfo` classes. These concepts are the core ones that you'll likely use most often. In the next exercise, you'll compose paths and identify .json files.

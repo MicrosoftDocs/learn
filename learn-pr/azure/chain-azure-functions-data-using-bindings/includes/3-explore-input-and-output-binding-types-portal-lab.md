@@ -30,7 +30,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use. |
     | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | **Publish** | _Code_ | Option to publish code files or a Docker container. |

@@ -57,7 +57,7 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
 
 1. Open the **index.js** file with an editor. If you are using the Cloud Shell, you can enter `code .` to open an editor.
 
-1. Paste the following program into the **index.js** file. You can use the **Ctrl+V** keyboard shortcut or right-click to paste.
+1. Paste the following program into the **index.js** file. You can press <kbd>Ctrl+V</kbd> or right-click to paste.
 
     ```javascript
     #!/usr/bin/env node
@@ -68,7 +68,8 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     
     main();
     ```
-1. Save the file. Use the "..." menu on the top-right corner of the Cloud Shell editor.
+
+1. Save the file. Select the "..." menu on the top-right corner of the Cloud Shell editor, and select **Save**.
 
 1. Run the app to make sure it executes correctly. It should display "Hello, World!" in the console.
 

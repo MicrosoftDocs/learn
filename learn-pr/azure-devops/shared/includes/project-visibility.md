@@ -10,6 +10,6 @@ For learning purposes, you don't need to change any of these settings right now.
 
 Later, you can use these resources to help you decide which option is best for your project:
 
-* [What is a public project?](https://docs.microsoft.com/azure/devops/organizations/public/about-public-projects?view=azure-devops&azure-portal=true)
-* [Quickstart: Change the project visibility, public or private](https://docs.microsoft.com/azure/devops/organizations/public/make-project-public?view=azure-devops&azure-portal=true)
+* [What is a public project?](https://docs.microsoft.com/azure/devops/organizations/public/about-public-projects?azure-portal=true)
+* [Quickstart: Change the project visibility, public or private](https://docs.microsoft.com/azure/devops/organizations/public/make-project-public?azure-portal=true)
 * [Setting repository visibility](https://help.github.com/github/administering-a-repository/setting-repository-visibility?azure-portal=true)

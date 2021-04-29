@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.typescript-namespaces-organize-code.6-lab
+title: Lab - Organize code with namespaces
+metadata:
+  title: Lab - Organize code with namespaces
+  description: Apply what you've learned to organize code with namespaces.
+  ms.date: 02/11/2021
+  author: GeekTrainer
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-lab.md)]

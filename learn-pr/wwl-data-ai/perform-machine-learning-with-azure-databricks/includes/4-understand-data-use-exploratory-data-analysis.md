@@ -1,4 +1,4 @@
-In your Azure Databricks workspace, open the **07-Machine-Learning** folder that you imported within your user folder.
+In your Azure Databricks workspace, open the **ml** folder that you imported within your user folder.
 
 Open the **3. Exploratory Analysis** notebook. Make sure you attach your cluster to the notebook before following the instructions and running the cells within.
 

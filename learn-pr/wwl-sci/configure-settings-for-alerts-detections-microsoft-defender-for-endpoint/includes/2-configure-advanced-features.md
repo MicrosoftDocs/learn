@@ -1,6 +1,6 @@
 The Advance features page in the Settings/General area provides the following alert and detection-related settings:
 
-The Advanced features area in General Settings area provides many an on/off switch for features within the product. The following are settings that are automation focused.
+The Advanced features area in General Settings area provides many an on/off switch for features within the product. The following are settings that are alert focused.
 
 | Feature| Description|
 | :--- | :--- |

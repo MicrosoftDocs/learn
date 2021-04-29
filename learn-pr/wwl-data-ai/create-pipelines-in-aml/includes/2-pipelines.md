@@ -8,7 +8,7 @@ You can publish a pipeline as a REST endpoint, enabling client applications to i
 
 ## Pipeline steps
 
-An Azure Machine Learning pipeline consists of one or more *steps* that perform tasks. There are many kinds of step supported by Azure Machine Learning pipelines, each with its own specialized purpose and configuration options.
+An Azure Machine Learning pipeline consists of one or more *steps* that perform tasks. There are many kinds of steps supported by Azure Machine Learning pipelines, each with its own specialized purpose and configuration options.
 
 Common kinds of step in an Azure Machine Learning pipeline include:
 

@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.secure-networking-infrastructure
+metadata:
+  title: Introduction to Secure Network Infrastructure with Azure network security
+  description: Learn to protect your network from cyber security attacks to secure your networking infrastructure.
+  ms.date: 04/20/2021
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Secure Network Infrastructure with Azure network security
+prerequisites: |
+  - Beginner-level knowledge of cloud computing, including scalability and availability. 
+  - Beginner-level knowledge of Azure, including Availability Zones, Azure virtual networks, and ExpressRoute. 
+  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, and network packets. 
+summary: |
+  Introduction to key Azure network security services to secure your networking infrastructure
+iconUrl: /learn/achievements/introduction-to-azure-networking-services.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- azure-firewall
+- azure-firewall-manager
+- azure-ddos-protection
+- azure-virtual-wan
+- azure-private-link
+modules:
+- introduction-azure-firewall
+- learn.intro-to-azure-firewall-manager
+- introduction-azure-ddos-protection
+- introduction-azure-virtual-wan
+- introduction-azure-private-link
+trophy:
+  uid: learn.secure-networking-infrastructure.trophy

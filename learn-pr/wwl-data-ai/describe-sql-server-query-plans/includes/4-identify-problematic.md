@@ -34,7 +34,7 @@ This query could be written to use a predicate that is SARGable. The optimizer w
 
 :::image type="content" source="../media/module-55-optimize-queries-final-08.png" alt-text="A Query and Execution Plan with a SARGable Predicate":::
 
-By changing the LEFT function into a LIKE, and index SEEK is used. 
+By changing the LEFT function into a LIKE, an index SEEK is used. 
 >[!NOTE]
 >The LIKE keyword, in this instance, does not have a wildcard on the left, so it is looking for cities that begin with M. , if it was “two-sided” or started with a wildcard (‘%M% or ‘%M’) it would be non-SARGable. The seek operation is estimated to return 1267 rows, or approximately 15% of the estimate for the query with the non-SARGable predicate.
 

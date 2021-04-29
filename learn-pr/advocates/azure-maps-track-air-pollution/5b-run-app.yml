@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.use-azure-maps-to-track-air-pollution.5b-run-app
+title: Exercise - Run the app
+metadata:
+  title: Exercise - Run the app
+  description: Run the app to show the map on a webpage and look at troubleshooting options.
+  author: jimbobbennett
+  ms.author: jabenn
+  ms.date: 02/05/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5b-run-app.md)]

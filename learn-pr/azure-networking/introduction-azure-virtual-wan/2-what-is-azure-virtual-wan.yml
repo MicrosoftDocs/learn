@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-virtual-wan.2-what-is-azure-virtual-wan
+title: What is Azure Virtual WAN?
+metadata:
+  title: What is Azure Virtual WAN?
+  description: Overview of Azure Virtual WAN and its features
+  ms.date: 02/10/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-azure-virtual-wan.md)]

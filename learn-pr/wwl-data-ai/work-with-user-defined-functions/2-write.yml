@@ -5,8 +5,8 @@ metadata:
   title: Write user defined functions
   description: "Write user defined functions"
   ms.date: 05/22/2020
-  author: wwlpublish
-  ms.author: chtestao
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -4,11 +4,11 @@ In this exercise, you'll create an Azure App Service instance to host a WordPres
 
 ## Azure terminology and concepts
 
-Before you get started, let's review and discuss some basic terms and concepts that you'll need to know when you create your website.
+Before getting started, let's review and describe some basic terms and concepts that you'll need to know when you create your website.
 
 ### What is App Service?
 
-App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows- and Linux-based environments.
+App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows-based and Linux-based environments.
 
 For this exercise, we want to create a website in less than the time it takes to eat lunch. So, we're not going to write any code. Instead, you'll deploy a predefined application from Azure Marketplace.
 
@@ -20,13 +20,13 @@ We're going to use one of the WordPress application options from Azure Marketpla
 
 ### Create resources in Azure
 
-Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The resource group allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. Keep in mind that you can also manage resources via a command line by using the Azure CLI. The Azure CLI is a useful option if you need to automate the process in the future.
+Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The resource group enables us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. Keep in mind that you can also manage resources via a command line by using the Azure CLI. The Azure CLI is a useful option if you need to automate the process in the future.
 
 In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
 
 ### Choose a location
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+[!include [Sandbox regions](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 ## Create a WordPress website
 
@@ -48,13 +48,13 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     [![Screenshot of the Azure portal showing search results for the term WordPress with the WordPress option highlighted.](../media/search-select-wordpress.png)](../media/search-select-wordpress-expanded.png#lightbox)
 
-1. In the pane that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app.
+1. In the **WordPress** pane that appears, you'll typically find more information about the item you're about to install, such as the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app. The **WordPress/Create** pane appears.
 
     [![Screenshot of the Azure portal showing WordPress resource type summary.](../media/create-site.png)](../media/create-site-expanded.png#lightbox)
 
-1. Several options to configure your deployment appear. Enter the following information:
+1. Several options appear to configure your deployment. Enter the following values for each setting.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
     | App name | Choose a unique value for the app name. It will form part of a fully qualified domain name (FQDN). |
     | Subscription | Make sure **Concierge Subscription** is selected. |
@@ -70,25 +70,29 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     > [!NOTE]
     > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the preceding configuration.
 
-1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**.
-    
+1. Now, let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/Location**. The **App Service plan** pane appears.
+
     :::image type="content" source="../media/config-app-service-plan.png" alt-text="Screenshot of the Azure portal showing WordPress App Service creation with App Service plan/Location button highlighted.":::
 
-1. In the **App Service plan** pane, select **Create new**.
+1. Select **Create new**.
 
     [![Screenshot of the Azure portal showing the App Service plan pane with the Create new button highlighted.](../media/new-app-service-plan.png)](../media/new-app-service-plan-expanded.png#lightbox)
 
-1. In the **New App Service plan** pane, enter a name for the new service plan.
+    The **New App Service Plan** pane appears.
 
-1. For **Location**, select **Central US** to make sure we choose a region that allows the service plan you'll choose. Normally, you'll select the region that's closest to your customers while offering the services you need.
+1. Enter the following values for each setting.
 
-1. Select **Pricing tier** to see the performance and feature options of the various types of service plans.
+    | Setting  | Value  |
+    |---|---|
+    | App Service plan | Choose a unique name for the new app service plan. |
+    | Location | Select **Central US** to make sure we choose a region that allows the service plan you'll choose. Normally, you'll select the region that's closest to your customers while offering the services you need. |
+    | Pricing tier | Select this option to see the performance and feature options of the various types of app service plans. The **Spec Picker** pane appears.
 
     [![Screenshot of the Azure portal showing New App Service plan configuration with the Pricing tier button highlighted.](../media/new-service-plan-config.png)](../media/new-service-plan-config-expanded.png#lightbox)
 
-1. The **Spec Picker** enables us to select a new pricing tier for our application. This screen opens to the **Production** tab, with the S1 pricing tier selected. We'll select a new pricing tier from the **Dev / Test** tab for our website.
+1. The **Spec Picker** enables us to select a new pricing tier for our application. The pane opens to the **Production** tab, with the S1 pricing tier selected. Select a new pricing tier from the **Dev / Test** tab for our website.
 
-    Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**.
+1. Select the **Dev / Test** tab, then select the **F1** pricing tier, and then select **Apply**.
 
     [![Screenshot of the Azure portal showing the App Service plan Spec Picker pane with the Dev / Test section selected and the free F1 tier and the Apply button highlighted.](../media/select-pricing-tier.png)](../media/select-pricing-tier-expanded.png#lightbox)
 

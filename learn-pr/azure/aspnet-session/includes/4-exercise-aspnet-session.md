@@ -18,11 +18,11 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
         --name $rediscachename `
         --resource-group $resourcegroupname `
         --sku Basic `
-        --vm-size c1
+        --vm-size c0
     ```
 
     <!--```PowerShell
-    New-AzRedisCache -ResourceGroupName $resourcegroupname -Name $rediscachename -Location $location -Sku Basic -Size c1 -Tag @{Name="SessionCache"}
+    New-AzRedisCache -ResourceGroupName $resourcegroupname -Name $rediscachename -Location $location -Sku Basic -Size c0 -Tag @{Name="SessionCache"}
     ```-->
 
 1. Run the following command to check the provisioning state of the cache. Repeat this command every 30 seconds until it displays the message **Succeeded**.

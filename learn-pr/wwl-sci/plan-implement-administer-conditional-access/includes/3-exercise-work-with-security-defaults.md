@@ -2,18 +2,18 @@
 
 To enable security defaults in your directory:
 
-1. Browse to the [Azure portal](https://portal.azure.com/) and sign in using a Global administrator account for the directory.
+1. Browse to the [Azure portal](https://portal.azure.com/) and sign as a security administrator, Conditional Access administrator, or global administrator.
 
 2. Select the Show portal menu hamburger icon and then select Azure Active Directory.
 
    > [!div class="mx-imgBorder"]
    > ![Azure portal menu with Azure Active Directory selected](../media/azure-portal-menu-azure-active-directory.png)
 
-3. In the left navigation, in the Manage section, select Properties.
+3. In the left navigation, in the Manage section, select **Properties**.
 
 4. At the bottom of the Properties blade, select **Manage Security defaults**.
 
-5. Set the **Enable security defaults** toggle to **Yes**.
+5. Set the **Enable Security defaults** toggle to **Yes**.
 
    This may already be enabled.
 

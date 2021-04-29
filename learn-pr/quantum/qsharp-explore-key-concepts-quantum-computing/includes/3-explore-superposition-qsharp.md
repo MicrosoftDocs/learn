@@ -207,7 +207,7 @@ instead of measuring one qubit three times.
 
     Here, we introduce three concepts:
 
-    * The `qubits` variable now represents a `Qubit` array that has a length of three. For more information about arrays in Q#, see the [QDK documentation](/quantum/user-guide/language/).
+    * The `qubits` variable now represents a `Qubit` array that has a length of three. For more information about arrays in Q#, see the [QDK documentation](/azure/quantum/user-guide/language/).
     * The operations [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
       [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
       are useful to measure and act on multiple qubits, and they use
@@ -255,7 +255,7 @@ instead of measuring one qubit three times.
 
     :::code language="qsharp" source="code/3-program-4.qs":::
 
-    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow?azure-portal=true).
+    Here, you use a `for` loop to act on each qubit sequentially. Q# has classical flow control capabilities. For more information about Q# flow control statements, see the [QDK documentation](https://docs.microsoft.com/azure/quantum/user-guide/libraries/standard/control-flow?azure-portal=true).
 
     Your output resembles this example:
 
