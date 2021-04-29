@@ -32,4 +32,4 @@ modules:
 - learn.student-evangelism.intro-to-python
 - learn.student-evangelism.python-object-oriented-programming
 trophy:
-  uid: learn.languages.python-applications
+  uid: learn.languages.python-applications.trophy
