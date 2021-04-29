@@ -26,7 +26,6 @@ For example, there's trapped ion quantum hardware from IonQ and Honeywell. There
 
 - **Quantum Circuits, Inc.**: Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
-
 **Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
 
 Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
@@ -38,7 +37,6 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 - **Microsoft QIO**: Ground-breaking optimization algorithms inspired by decades of quantum research.
 
 - **Toshiba SBM**: Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
-
 
 ## What are Azure Quantum Workspaces?
 
@@ -62,11 +60,11 @@ Every workspace comes with the Microsoft provider always enabled, and you can se
 
 A job consists of:
 
-* An ID that's unique within your workspace.
-* The provider that will execute your job.
-* The target that you'll execute your job on.
-* A name that you choose to help you organize your job.
-* Any input parameters that your target requires.
+- An ID that's unique within your workspace.
+- The provider that will execute your job.
+- The target that you'll execute your job on.
+- A name that you choose to help you organize your job.
+- Any input parameters that your target requires.
 
 Azure Quantum provides information about the state of your job and its execution history.
 

@@ -47,7 +47,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 
 ## Verify the installation
 
-To verify the installation, here you create a basic Q# application.
+To verify your installation, create a basic Q# application as shown below.
 
 ### Install the Quantum project templates
 
@@ -61,12 +61,10 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
 1. Enter **Q#: Install command line project templates**.
 
-
 ### Create a project
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create new project**.
-
 
 > [!NOTE]
 > If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
@@ -119,5 +117,4 @@ You likely noticed that this basic program doesn't involve any quantum computati
 
 > [!NOTE]
 
-> If you run into any issues with installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or to seek help for troubleshooting visit [GitHub issues](https://github.com/MicrosoftDocs/quantum-docs/issues).
-
+> If you run into any issues with the installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).
