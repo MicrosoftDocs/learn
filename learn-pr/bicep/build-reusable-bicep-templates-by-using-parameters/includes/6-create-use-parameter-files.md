@@ -19,7 +19,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
     :::code language="json" source="code/6-add-secure-parameters.bicep" highlight="22-35":::
 
-    Notice that you're specifying value for each parameter except `solutionName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters.
+    Notice that you're specifying value for each parameter except `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters.
 
 ### Add Azure SQL server and database
 
