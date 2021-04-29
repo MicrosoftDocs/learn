@@ -1,12 +1,19 @@
-In this exercise, you will configure the applications with permissions and use MSAL to access user profile information from the Microsoft Graph (MS Graph) API.
+In this exercise, you will configure the application with permissions and use MSAL to access user profile information from the Microsoft Graph (MS Graph) API.
 
-## Add MS Graph permissions to app registration
-1. In the app's registration screen, click on the **API permissions** blade in the left to open the page where we add access to the Apis that your application needs.
+## Add MS Graph permissions to App registration
+
+1. In the app's registration screen, click on the **API permissions** blade in the left to open the page where we add access to the APIs that your application needs.
    - Click the **Add permissions** button and then,
+
    - Ensure that the **Microsoft APIs** tab is selected.
-   - In the *Commonly used Microsoft APIs* section, click on **Microsoft Graph**
-   - In the **Delegated permissions** section, select the **User.Read** in the list. Use the search box if necessary.
+
+   - In the *Commonly used Microsoft APIs* section, click on **Microsoft Graph**.
+
+   - In the **Delegated permissions** section, select the **User.Read** in the list.  This particular permission is for accessing the information of the signed-in user from the `https://graph.microsoft.com/v1.0/me` endpoint.
+
    - Click on the **Add permissions** button in the bottom.
+
+   ![Screenshot of the API permissions blade on Azure AD app registration.](../media/api-permissions.png)
 
 ## Run the application
 
@@ -29,22 +36,18 @@ In this exercise, you will configure the applications with permissions and use M
 
 ## Overview of authentication code for MS Graph access
 
-### Call Graph
+1. In the `./src/main/resources/authentication.properties` file, the value of `aad.scopes` is set to the **User.Read** scope.
 
-When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Java Graph SDK), passing along the signed-in user's access token. The Graph client from hereon places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the  `/me` endpoint to yield details for the currently signed-in user.
+    Scopes tell Azure AD the level of access that the application is requesting and map to the permissions in the app registration. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes , the scopes consented to are encoded into the resulting `access_token` returned in the authentication response. 
 
-The following code is all that is required for an application developer to write for accessing the `/me` endpoint, provided that they already have a valid access token for Graph Service with the `User.Read` scope.
 
-  ```java
-  //CallGraphServlet.java
-  User user = GraphHelper.getGraphClient(contextAdapter).me().buildRequest().get();
-  ```
+2. When the user navigates to `/call_graph`, the application creates an instance of the IGraphServiceClient (Java Graph SDK), passing along the signed-in user's access token. The Graph client from hereon places the access token in the Authorization headers of its requests. The app then asks the Graph Client to call the  `/me` endpoint to yield details for the currently signed-in user.
 
-### Scopes
+    The following code is all that is required for an application developer to write for accessing the `/me` endpoint, provided that they already have a valid access token for Graph Service with the `User.Read` scope.
 
-- [Scopes](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) tell Azure AD the level of access that the application is requesting.
-- Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in.
-- If the user consents to one or more scopes and obtains a token, the scopes-consented-to are encoded into the resulting `access_token`.
-- Note the scope requested by the application by referring to [authentication.properties](./src/main/resources/authentication.properties). By default, the application sets the scopes value to `User.Read`.
-- This particular MS Graph API scope is for accessing the information of the currently-signed-in user. The graph endpoint for accessing this info is `https://graph.microsoft.com/v1.0/me`
-- Any valid requests made to this endpoint must bear an `access_token` that contains the scope `User.Read` in the Authorization header.
+    ```java
+    //CallGraphServlet.java
+    User user = GraphHelper.getGraphClient(contextAdapter).me().buildRequest().get();
+    ```
+
+
