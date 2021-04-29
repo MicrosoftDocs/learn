@@ -41,7 +41,7 @@ quiz:
     - content: "If you make a mistake when you write code, you have to delete it all and start over."
       isCorrect: false
       explanation: "One of the great things about software development is, if you make a mistake, you can fix it and no one has to know."
-  - content: "What is wrong with this line of code? `Read-host "What is wrong with this line of code?"`"
+  - content: 'What is wrong with this line of code? `Read-host "What is wrong with this line of code?"`'
     choices:
     - content: "The letter 'h' in `Read-host` should be uppercase."
       isCorrect: false
