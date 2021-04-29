@@ -54,23 +54,27 @@ Before you can do anything useful with Azure Data Lake Storage, you need to move
 
 For data that resides on a local computer, you can use any of the tools shown in the following table to send data from your computer to Azure Data Lake Storage:
 
-|Tool  |Description  |
-|---------|---------|
-|AzCopy     | A local command-line tool that you can use to transfer files (for example, `azcopy copy`*`local_path`* *`ADLS_uri`*). |
-|Azure CLI    | An Azure command-line tool for managing and working with Azure services, including uploading files (for example, `az storage fs file upload`*`local_path`* *`ADLS_path`*).  |
-|Azure PowerShell    | An Azure command-line utility that includes the `New-AzDataLakeGen2Item` cmdlet for uploading files to Azure Data Lake Storage (for example, `New-AzDataLakeGen2Item -Context`*`context`*`-FileSystem`*`filesystemName`*`-Path`*`$destPath`*`-Source`*`localPath`*`-Force`).  |
-|Azure Storage Explorer    | A standalone app for connecting to and managing Azure storage accounts, including uploading files. Storage Explorer is available for Windows, macOS, and Linux.  |
+| | |
+| --- | --- |
+|**Tool**  | **Description**  |
+|**AzCopy**     | A local command-line tool that you can use to transfer files (for example, `azcopy copy`*`local_path`* *`ADLS_uri`*). |
+|**Azure CLI**    | An Azure command-line tool for managing and working with Azure services, including uploading files (for example, `az storage fs file upload`*`local_path`* *`ADLS_path`*).  |
+|**Azure PowerShell**    | An Azure command-line utility that includes the `New-AzDataLakeGen2Item` cmdlet for uploading files to Azure Data Lake Storage (for example, `New-AzDataLakeGen2Item -Context`*`context`*`-FileSystem`*`filesystemName`*`-Path`*`$destPath`*`-Source`*`localPath`*`-Force`).  |
+|**Azure Storage Explorer**    | A standalone app for connecting to and managing Azure storage accounts, including uploading files. Storage Explorer is available for Windows, macOS, and Linux.  |
+| | |
 
 > [!IMPORTANT]
 > For most of these ingestion methods to work, your storage account must be using the hierarchical namespace.
 
 For Azure Storage Blob data, you can use any of the tools shown in the following table to copy blobs to Azure Data Lake Storage:
 
-|Tool  |Description  |
-|---------|---------|
-| AzCopy   | A local command-line tool that you can use to transfer blobs (for example, `azcopy copy`*`source_blob_uri`* *`dest_blob_uri`*).   |
-| Azure Data Factory   | An Azure data integration service for orchestrating data movement, which includes a Copy activity for copying blobs between data stores.   |
-| DistCp   | An Apache Hadoop command-line tool for copying data from an Azure HDInsight cluster to Azure Data Lake Storage (for example, `hadoop distcp`*`WASB_uri`* *`ADLS_uri`*).     |
+| | |
+| --- | --- |
+|**Tool**  | **Description**  |
+|**AzCopy**   | A local command-line tool that you can use to transfer blobs (for example, `azcopy copy`*`source_blob_uri`* *`dest_blob_uri`*).   |
+|**Azure Data Factory**   | An Azure data integration service for orchestrating data movement, which includes a Copy activity for copying blobs between data stores.   |
+|**DistCp**   | An Apache Hadoop command-line tool for copying data from an Azure HDInsight cluster to Azure Data Lake Storage (for example, `hadoop distcp`*`WASB_uri`* *`ADLS_uri`*).     |
+| | |
 
 ### Ingesting relational data
 
@@ -103,10 +107,12 @@ If your relational data is on-premises, Azure Data Factory can also work with mo
 
 Does your organization generate real-time streamed data from devices, sensors, or applications? If so, then you'll want to capture that data on an event-by-event basis as the data is generated and then ingest that data into Azure Data Lake Storage for processing and analysis. You can use the tools shown in the following table to ingest streamed data.
 
-|Tool  |Description  |
-|---------|---------|
-| Azure HDInsight Storm   | Uses Apache Storm on HDInsight to write data to HDFS on Azure Data Lake Storage. Apache Storm is a processing framework for real-time streaming data.   |
-| Azure Stream Analytics   | Uses an Azure Stream Analytics job that reads data from an Azure IoT Hub resource and outputs the job data to a blob on Azure Data Lake Storage.   |
+| | |
+| --- | --- |
+|**Tool**  | **Description**  |
+|**Azure HDInsight Storm**   | Uses Apache Storm on HDInsight to write data to HDFS on Azure Data Lake Storage. Apache Storm is a processing framework for real-time streaming data.   |
+|**Azure Stream Analytics**   | Uses an Azure Stream Analytics job that reads data from an Azure IoT Hub resource and outputs the job data to a blob on Azure Data Lake Storage.   |
+| | |
 
 ## Accessing stored data
 
@@ -120,15 +126,17 @@ The easiest way to access your data is to use Azure Storage Explorer. Storage Ex
 
 The PowerShell utility offers many cmdlets that are specific to Azure Data Lake Storage. (If you're new to PowerShell, a *cmdlet*—it's pronounced "command-let"—is a special command that you invoke in the PowerShell environment to implement a specific task or function.) To give you a flavor of what you can do in PowerShell, the following table lists a few cmdlets that are commonly used to access data in Azure Data Lake Storage.
 
-|Cmdlet  |Description  |
-|---------|---------|
-|Get-AzDataLakeGen2ChildItem    | Lists the subdirectories and files that reside in a directory or the filesystem root.   |
-|Get-AzDataLakeGen2Item   | Gets the details of a file or directory, including when it was last modified, what permissions are set, and which user is the owner.   |
-|Get-AzDataLakeGen2ItemContent    | Downloads an Azure Data Lake Storage file to a local file.   |
-|Move-AzDataLakeGen2Item    | Moves a file or directory to another a file or directory in the same storage account.   |
-|New-AzDataLakeGen2Item    | Creates a file or directory.    |
-|Remove-AzDataLakeGen2Item    | Deletes a file or directory.   |
-|Update-AzDataLakeGen2Item   | Updates the properties, metadata, permissions, or owner of a file or directory.   |
+| | |
+| --- | --- |
+|**Cmdlet**  | **Description**  |
+|**Get-AzDataLakeGen2ChildItem**    | Lists the subdirectories and files that reside in a directory or the filesystem root.   |
+|**Get-AzDataLakeGen2Item**   | Gets the details of a file or directory, including when it was last modified, what permissions are set, and which user is the owner.   |
+|**Get-AzDataLakeGen2ItemContent**    | Downloads an Azure Data Lake Storage file to a local file.   |
+|**Move-AzDataLakeGen2Item**    | Moves a file or directory to another a file or directory in the same storage account.   |
+|**New-AzDataLakeGen2Item**    | Creates a file or directory.    |
+|**Remove-AzDataLakeGen2Item**    | Deletes a file or directory.   |
+|**Update-AzDataLakeGen2Item**   | Updates the properties, metadata, permissions, or owner of a file or directory.   |
+| | |
 
 ### Other access methods
 
@@ -160,11 +168,13 @@ Azure RBAC uses role assignments to apply a collection of permissions to a secur
 
 The roles in the following table permit a security principal to access data in a storage account.
 
-|Role  |Description  |
-|---------|---------|
-|Storage Blob Data Owner    | This role assigns the security principal full access to blob storage containers and data. This access permits the security principal to set the owner on an item and to modify the ACLs of all items.    |
-Storage Blob Data Contributor    | This role assigns the security principal read, write, and delete access to blob storage containers and blobs. This access doesn't permit the security principal to set the ownership of an item, but it can modify the ACL of items that are owned by the security principal.    |
-Storage Blob Data Reader    | This role assigns the security principal only read and list permissions for blobs and blob storage containers.    |
+| | |
+| --- | --- |
+|**Role**  | **Description**  |
+|**Storage Blob Data Owner**    | This role assigns the security principal full access to blob storage containers and data. This access permits the security principal to set the owner on an item and to modify the ACLs of all items.    |
+|**Storage Blob Data Contributor**    | This role assigns the security principal read, write, and delete access to blob storage containers and blobs. This access doesn't permit the security principal to set the ownership of an item, but it can modify the ACL of items that are owned by the security principal.    |
+|**Storage Blob Data Reader**    | This role assigns the security principal only read and list permissions for blobs and blob storage containers.    |
+| | |
 
 You can assign roles using the Azure portal, Azure CLI, Azure PowerShell, Azure SDKs, or REST APIs.
 
@@ -174,22 +184,26 @@ You can associate a security principal with an access level for files and direct
 
 The following table lists the levels of permission that you can assign:
 
-|Permission  |Short form  | The security principal can  |
-|---------|---------|---------|
-|Read (R)    | R--    | Read the contents of a file    |
-|Write (W)    | -W-    | Write or append to a file    |
-|Execute (X)    | --X    | Not used at the file level in Azure Data Lake Storage; traverse the child items in a directory     |
-|Read + Execute    | R-X    | List the contents of a directory    |
-|Write + Execute    | -WX    | Create child items in a directory    |
+| | | |
+| --- | --- | --- |
+|**Permission**  | **Short form**  | **The security principal can**  |
+|**Read (R)**    | R--    | Read the contents of a file    |
+|**Write (W)**   | -W-    | Write or append to a file    |
+|**Execute (X)**   | --X    | Not used at the file level in Azure Data Lake Storage; traverse the child items in a directory     |
+|**Read + Execute**    | R-X    | List the contents of a directory    |
+|**Write + Execute**    | -WX    | Create child items in a directory    |
+| | | |
 
 The easiest way to set ACL permissions is to use Azure Storage Explorer. If you manage Azure Data Lake Storage via PowerShell, the following table lists the cmdlets you can use to work with ACLs in Azure Data Lake Storage.
 
-|Cmdlet  |Description  |
-|---------|---------|
-|Remove-AzDataLakeGen2AclRecursive    | Removes ACL permissions recursively on the specified path.    |
-|Set-AzDataLakeGen2AclRecursive    | Sets ACL permissions recursively on the specified path.   |
-|Set-AzDataLakeGen2ItemAclObject    | Creates or updates an Azure Data Lake Storage item ACL object, which you can use in the Update-AzDataLakeGen2Item cmdlet.|
-|Update-AzDataLakeGen2AclRecursive    | Updates ACL permissions recursively on the specified path.   |
+| | |
+| --- | --- |
+|**Cmdlet**  | **Description**  |
+|**Remove-AzDataLakeGen2AclRecursive**    | Removes ACL permissions recursively on the specified path.    |
+|**Set-AzDataLakeGen2AclRecursive**    | Sets ACL permissions recursively on the specified path.   |
+|**Set-AzDataLakeGen2ItemAclObject**    | Creates or updates an Azure Data Lake Storage item ACL object, which you can use in the Update-AzDataLakeGen2Item cmdlet.|
+|**Update-AzDataLakeGen2AclRecursive**    | Updates ACL permissions recursively on the specified path.   |
+| | |
 
 Besides Azure Storage Explorer and PowerShell, you can also use any of the following tools to set ACL permissions on your Azure Data Lake Storage data:
 

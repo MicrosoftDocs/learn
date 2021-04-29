@@ -118,7 +118,6 @@ roles:
 ###
 products:
   - azure-data-lake
-  - azure-data-lake-analytics
   - azure-data-lake-gen2
   - azure-data-lake-storage
 ###########################################################################

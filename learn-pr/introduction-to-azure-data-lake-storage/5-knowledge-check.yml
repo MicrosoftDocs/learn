@@ -36,58 +36,58 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following is an Azure Data Lake Storage feature that helps prevent data silos?"
     choices:
-    - content: ""
+    - content: "Accepts a variety of data types"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Data silos occur when different data sources are stored in separate locations. Azure Data Lake Storage stores all data types in a single location, which helps prevent data silos."
+    - content: "Hierarchical namespace"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "The hierarchical namespace allows for efficient data access and navigation, but that efficiency does nothing directly to prevent data silos."
+    - content: "Highly scalable"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Although Azure Data Lake Storage can quickly scale to meet any workload, that scalability does nothing directly to prevent data silos."
+  - content: "Which of the following tools would you use to ingest real-time data from an IoT device?"
     choices:
-    - content: ""
+    - content: "Azure Storage Explorer"
+      isCorrect: false
+      explanation: "You can use Azure Storage Explorer to ingest ad hoc data that resides on a local computer. Azure Storage Explorer does not ingest real-time data."
+    - content: "Azure Data Factory"
+      isCorrect: false
+      explanation: "You can use Azure Data Factory to ingest Azure Storage Blob data and data from an on-premises relational database management system. Azure Data Factory does not ingest real-time data."
+    - content: "Azure Stream Analytics"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure Stream Analytics reads data from an Azure IoT Hub resource and outputs the data to Azure Data Lake Storage."
+  - content: "A data administrator is considering the benefits of Azure Data Lake Storage to reduce costs. The administrator's organization currently runs an on-premises data warehouse that is becoming increasingly expensive. From the point of view of reducing TCO, which of the following statements is true?"
     choices:
-    - content: ""
+    - content: "Azure Data Lake Storage separates storage costs from compute costs, so as data volume grows, only storage requirements need to grow with the data."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Data Lake Storage runs on virtual hardware in the Azure cloud, so storage is massively scalable and completely separate from any compute hardware concerns."
+    - content: "Azure services such as Azure Stream Analytics, Azure HDInsight, and Azure Databricks are included in the cost of an Azure Data Lake Storage instance."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Instances of Azure services such as Azure Stream Analytics, Azure HDInsight, and Azure Databricks have their own pricing models and aren't included in the pricing of Azure Data Lake Storage."
+    - content: "With an Azure Data Lake Storage instance, you must pay extra for maintenance and backups of your data"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "There's not extra charge incurred for maintenance of any Azure hardware or for making backups of your data."
+  - content: "An administrator wants to tear down the data silos that are hampering the organization's ability to innovate and grow. The administrator is researching the features of Azure Data Lake Storage that help to eliminate data silos and increase data democratization. From the point of view of eliminating data silos, which of the following statements is true?"
     choices:
-    - content: ""
+    - content: "Azure Data Lake Storage gives users a single point of entry for accessing data."
+      isCorrect: false
+      explanation: "Azure Data Lake Storage offers many tools for accessing data, including Azure Data Explorer, command-line utilities such as PowerShell and Azure CLI, and the Azure portal."
+    - content: "Azure Data Lake Storage gives users access to all data formats."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Data Lake Storage uses a hierarchical namespace and blob storage to expose every type of stored data to exploration by users."
+    - content: "Azure Data Lake Storage gives all users complete access to all the data stored in the account."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Although all of an account's data is potentially available, Azure Data Lake Storage lets administrators apply security constraints such as role-based access control (RBAC) and access control lists (ACLs) to limit which security principals can view and modify data."
+  - content: "A senior data engineer wants to build a recommendation engine to suggest products to the organization's customers. The project requires multiple data sets, including overall purchases, purchases by customer, page views, search queries, and product ratings. From the point of view of building such an engine, which of the following statements is true?"
     choices:
-    - content: ""
+    - content: "The engineer requires access only to structured data, so it would be better to build this engine in a data warehouse."
+      isCorrect: false
+      explanation: "Although much of the project data is likely structured, data such as the web server page views and search queries are likely to be in a semi-structured format."
+    - content: "The project uses real-time data, so the engineer should consider using Azure Data Lake Storage because it can work with multiple Azure services that support real-time analytics."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Data Lake Storage can ingest real-time data from HDInsight Storm, Azure IoT Hub, Azure Event Hubs, or Azure Stream Analytics."
+    - content: "Azure Data Lake Storage cannot output data to a service that would accomplish the goal of this project."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Azure Data Lake Storage supports many Azure services, including Azure Databricks for transforming data and Azure Machine Learning for training and deploying ML models."
