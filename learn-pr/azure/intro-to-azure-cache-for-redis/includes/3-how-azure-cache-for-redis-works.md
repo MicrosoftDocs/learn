@@ -78,3 +78,12 @@ You can use cloud-migration in Azure Cache for Redis to:
 
 - Migrate your apps from your on-premises environment to the cloud.
 - Help modernize your current infrastructure as a service (IaaS) apps through the benefits of platform as a service (PaaS) services.
+
+A typical process proceeds as follows:
+
+1. From an existing on-premises Redis cache, you export the cache to an RDB file. 
+1. You create an Azure Cache for Redis instance.
+1. Next, you import the RDB into this instance.
+1. Finally, you configure your new application to point to your Azure Cache for Redis instance. 
+
+:::image type="content" source="../media/cloud-migrate.png" alt-text="The cloud migration architecture is displayed. It consists of on-premises Redis cache, and export RDB file, and two processes that import the RDB file.":::
