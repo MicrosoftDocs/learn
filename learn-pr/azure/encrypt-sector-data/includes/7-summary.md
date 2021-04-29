@@ -20,8 +20,8 @@ Now that you have reviewed this module, you should be able to:
 * Learn more about [customer-provided key](https://docs.microsoft.com/azure/storage/blobs/encryption-customer-provided-keys?azure-portal=true).
 * Learn more about [data encryption models](https://docs.microsoft.com/azure/security/fundamentals/encryption-models?azure-portal=true).
 * Learn more about [encryption at rest](https://docs.microsoft.com/azure/security/fundamentals/encryption-atrest?azure-portal=true).
-* Learn more about [encryption of data in transit](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit?azure-portal=true).
-* Learn more about [encryption options](https://docs.microsoft.com/azure/expressroute/expressroute-about-encryption?azure-portal=true).
+* Learn more about [encryption of data in transit](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview#encryption-of-data-in-transit).
+* Learn more about [ExpressRoute encryption options](https://docs.microsoft.com/azure/expressroute/expressroute-about-encryption?azure-portal=true).
 * Learn more about [ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction?azure-portal=true).
 * Learn more about [ExpressRoute locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations-providers?azure-portal=true).
 * Learn more about [Intel Software Guard Extensions](https://software.intel.com/en-us/sgx?azure-portal=true).
