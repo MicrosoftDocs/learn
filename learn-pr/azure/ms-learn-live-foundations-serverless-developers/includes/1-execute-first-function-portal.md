@@ -15,8 +15,8 @@ To create a new Function App in the sandbox environment:
 
 1. Select **Create a resource**, search for and select *Function App.* The **Create Function App** pane appears.
 
-> [!TIP]
-> For this demonstration, make sure you don't create a Linux server. Linux servers do not allow for the function editing within the portal.
+    > [!TIP]
+    > For this demonstration, make sure you don't create a Linux server. Linux servers do not allow for the function editing within the portal.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

@@ -1,5 +1,3 @@
-## Set up a local development environment
-
 When we choose to develop our function project locally, we're not running an emulator. The tools made available by Microsoft include the same components that also power the Functions infrastructure in Azure.
 
 The easiest way to leverage these tools is through Visual Studio Code, which you can run on Windows, Mac, and Linux.
