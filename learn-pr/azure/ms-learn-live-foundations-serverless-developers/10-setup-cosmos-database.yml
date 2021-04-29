@@ -19,7 +19,7 @@ metadata:
 azureSandbox: true
 interactive: bash
 
-durationInMinutes: 10
+durationInMinutes: 20
 
 content: |
   [!include[](includes/10-setup-cosmos-database.md)]

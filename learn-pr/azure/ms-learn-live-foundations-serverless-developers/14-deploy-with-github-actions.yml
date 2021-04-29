@@ -18,7 +18,7 @@ metadata:
 
 azureSandbox: true
 
-durationInMinutes: 5
+durationInMinutes: 10
 
 content: |
   [!include[](includes/14-deploy-with-github-actions.md)]
