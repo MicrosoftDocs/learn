@@ -60,7 +60,8 @@ Where other languages require every character to be precise, PowerShell is more 
 If an error occurs, it might look something like this:
 
 ```Output
-Write-Outpu: The term 'Write-Outpu' is not recognized as a name of a cmdlet, function, script file, or executable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Write-Outpu: The term 'Write-Outpu' is not recognized as a name of a cmdlet, function, script file, or executable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 ```
 
 In this example, PowerShell is telling us that we incorrectly wrote `Write-Outpu` instead of `Write-Output`, and it can't find the command we specified.
@@ -72,7 +73,7 @@ Reading these errors is essential in helping you learn what caused them. When yo
 
 ### Step 4: Create a new file and write code to receive input
 
-1. In the open *HelloWorld.ps1* file, *comment* the code you wrote in the editor by adding a number sign (`#`) before the command. Below the commented line, add the following lines of code:
+1. In the open *HelloWorld.ps1* file, *comment out* the code you wrote in the editor by adding a number sign (`#`) before the command. Below the commented line, add the following lines of code:
 
     ```powershell
     # Write-Output -InputObject 'Hello World!'
@@ -82,7 +83,7 @@ Reading these errors is essential in helping you learn what caused them. When yo
     ```
 
 > [!NOTE]
-> You create a code *comment* by prefixing a line of text with the number sign (`#`). This useful technique helps you prevent code from running right now without having to remove it entirely. You can also use comments to add information for yourself or others who read your code later. You can place comments anywhere in your code, and any text after the `#` on the same line is commented out.
+> You create a code *comment* by prefixing a line of text with the number sign (`#`). This useful technique helps you prevent certain code from running without having to remove it entirely. You can also use comments to add information for yourself or others who read your code later. You can place comments anywhere in your code, and any text after the `#` on the same line is commented out.
 
 1. Save the file, and then run the script by using the same command you used earlier:
 
