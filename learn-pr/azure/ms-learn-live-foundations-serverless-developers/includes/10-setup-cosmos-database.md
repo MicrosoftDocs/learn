@@ -37,7 +37,7 @@ The test data is using this format:
 
 1. Open [Azure portal](https://portal.azure.com) in your browser and select your subscription.
 
-1. Open Azure Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_). Select to use a *Bash* shell.
+1. Open Azure Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_). Select it to use a *Bash* shell.
 
 ### If you're using the Learn Live Sandbox
 

@@ -14,28 +14,28 @@ To change the HTTP action verb a function reacts to:
 
 1. Remove the verb `post` from the `methods` array.
 
-The file's content should look like this:
+    The file's content should look like this:
 
-```json
-{
-  "bindings": [
+    ```json
     {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": [
-        "get"
+      "bindings": [
+        {
+          "authLevel": "anonymous",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": [
+            "get"
+          ],
+        },
+        {
+          "type": "http",
+          "direction": "out",
+          "name": "res"
+        }
       ],
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
+      "scriptFile": "../dist/GetProduct/index.js"
     }
-  ],
-  "scriptFile": "../dist/GetProduct/index.js"
-}
-```
+    ```
 
 1. Build and run the project, and go to the URL shown in the output panel. You'll be able to access it with your browser. You can use cURL or PostMan to try and access the same URL using a `post` action, but it will fail.

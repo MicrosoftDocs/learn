@@ -23,11 +23,11 @@ To create a new Function App in the sandbox environment:
     | Setting | Value |
     |---------|---------|
     | **Project Details** |
-    | Subscription | **Concierge Subscription** |
+    | Subscription | Concierge Subscription |
     | Resource group | From the dropdown list, select the GUID of your sandbox resource group |
     | **Instance Details** |
     | Function App name | Use a globally unique name (for example, your initials + *functiontest* + a numeric value) |
-    | Publish | **Code** |
+    | Publish | Code |
     | Runtime stack | Node.js |
     | Version | 12 LTS |
     | Region | Central US |
@@ -36,7 +36,7 @@ To create a new Function App in the sandbox environment:
 
 1. When deployment is complete, select **Go to resource**. The **Function App** pane appears showing aspects of the Function App you just created. Think of the Function App as a workspace that contains our functions.
 
-### Add a Function
+### Add a function
 
 Let's add a function you can call via a URL.
 

@@ -43,7 +43,6 @@ To change the route of a function to support a dynamic binding expression:
 
 1. Build and run the project and navigate to the URL shown in the output panel.
 
-Before the change, our function was hosted at `/api/GetProduct`.
-Now, the new URL will be similar to `localhost:7071/api/product/{productId}`.
+    Before the change, our function was hosted at `/api/GetProduct`. Now, the new URL will be similar to `localhost:7071/api/product/{productId}`.
 
-Make sure to replace `{productId}` with an arbitrary character sequence.
+1. Make sure to replace `{productId}` with an arbitrary character sequence.

@@ -40,7 +40,7 @@ By the end of this exercise, you will have created a locally-running functions a
     - For every function, a sub-folder is created. Ours is called *GetProduct*.
     - Every folder contains an `index.ts` file with our code.
     - There is a `function.json` file with metadata, which we will look into later. It contains, among other things, the type of trigger our function is using.
-    - The `sample.dat` file is only used when test-running a function in the portal (https://github.com/Azure/Azure-Functions/issues/1241), and not relevant for us. You can delete it if you prefer to.
+    - The `sample.dat` file is only used when test-running a function in the portal (https://github.com/Azure/Azure-Functions/issues/1241), and not relevant for us. You can delete it, if you prefer.
 
 1. Inspect the code that was generated. Do you notice how it is similar to what we saw earlier in the portal?
 

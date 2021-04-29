@@ -1,6 +1,6 @@
 ## Set up a local development environment
 
-When we choose to develop our function project locally, we're not running an emulator: the tools made available by Microsoft include the same components that also power the Functions infrastructure on Azure.
+When we choose to develop our function project locally, we're not running an emulator. The tools made available by Microsoft include the same components that also power the Functions infrastructure in Azure.
 
 The easiest way to leverage these tools is through Visual Studio Code, which you can run on Windows, Mac, and Linux.
 
@@ -61,7 +61,7 @@ If you are planning to dive a bit deeper and explore Angular, debugging support 
 
 [Chrome debugger for Angular](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-### Optional: Angular Language Services Extension
+### Optional: Angular language services extension
 
 There are many extensions for Visual Studio Code that make Angular development easier. We found this one particularly useful:
 

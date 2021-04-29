@@ -20,7 +20,7 @@ Your code is on GitHub. To get a deployed version of the API functions project t
 
 1. Open the Azure portal, and create a new functions project performing the steps described in the earlier exercise *Create your first function*.
 
-1, Wait for the resource to be created and go to it.
+1. Wait for the resource to be created, and go to it.
 
 1. In the top menu bar, select **Get publish profile** in the overview screen of the function app to download the publishing profile. GitHub needs this to know where to deploy the code.
 

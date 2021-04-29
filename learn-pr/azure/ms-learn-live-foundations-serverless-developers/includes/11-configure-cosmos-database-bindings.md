@@ -32,11 +32,11 @@ To use an input binding to read product data from Cosmos DB:
 
 1. Enter *data* for the collection name.
 
-1. Use *CONNECTION_STRING* for the connection string setting.
+1. Enter *CONNECTION_STRING* for the connection string setting.
 
 1. If Visual Studio Code is logged in to the Azure user account, it can retrieve the connection string directly; otherwise, use the portal and get it there.
 
-1. Use *{productId}* for the Document ID.
+1. Enter *{productId}* for the Document ID.
 
 1. Enter *product* for the partition key value.
 
@@ -48,7 +48,7 @@ To use an input binding to read product data from Cosmos DB:
 
 1. Locate the line where you declared the `loadedProduct` variable, and assign data coming from Cosmos DB instead of the hardcoded JSON.
 
-    The `Context` object has a `bindings` property that contains the binding you configured earlier.
+    The `Context` object has a `bindings` property that contains the binding you previously configured.
 
     ```typescript
     // The product is read from the DB using an input binding.
@@ -62,9 +62,9 @@ To use an input binding to read product data from Cosmos DB:
 
     The easiest way to do this is to copy the binding information from function.json of `GetProduct` (singular), remove the `id` property, and paste it into the function.json file of `GetProducts`.
 
-    {
     ```json
-    "type": "cosmosDB",
+    {
+        "type": "cosmosDB",
         "direction": "in",
         "name": "inputProducts",
         "databaseName": "maindb",
