@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extract features from an image for AI processing
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/2-extract-features.md)]
