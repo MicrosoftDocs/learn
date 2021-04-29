@@ -1,11 +1,13 @@
 :::row:::
   :::column span="3":::
-Azure SQL Database is a relational database based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed, and secure database. You can use it to build data-driven applications and websites in the programming language of your choice, without needing to manage infrastructure.
+    Azure SQL Database is a relational database based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed, and secure database. You can use it to build data-driven applications and websites in the programming language of your choice, without needing to manage infrastructure.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/icon-service-SQL-Database.png" border="false":::
+    :::image type="content" source="../media/icon-service-SQL-Database-7c2a6248.png":::
+
   :::column-end:::
 :::row-end:::
+
 
 ## Features
 
@@ -19,6 +21,7 @@ You can use advanced query processing features, such as high-performance, in-mem
 
 Tailwind Traders currently uses several on-premises servers running SQL Server, which provide data storage for your public-facing website (for example, customer data, order history, and product catalogs). In addition, your on-premises servers running SQL Server also provide data storage for your internal-only training portal website. Tailwind Traders uses the website for new employee training materials (such as study materials, certification details, and training transcripts). The following illustration shows the types of data that your company might store in the Azure SQL Database training portal website.
 
-[![Diagram of Azure SQL Database in a training portal website.](../media/azure-sql.png)](../media/azure-sql-expanded.png#lightbox)
+:::image type="content" source="../media/azure-sql-45a3584a.png" alt-text="Diagram of Azure SQL Database in a training portal website.":::
+
 
 You can migrate your existing SQL Server databases with minimal downtime by using the Azure Database Migration Service. The Microsoft Data Migration Assistant can generate assessment reports that provide recommendations to help guide you through required changes prior to performing a migration. After you assess and resolve any remediation required, you're ready to begin the migration process. The Azure Database Migration Service performs all of the required steps. You just change the connection string in your apps.
