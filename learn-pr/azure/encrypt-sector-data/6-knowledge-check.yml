@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. Customers can configure Azure VPN Gateway to use custom IPSec/IKE policy with specific cryptographic algorithms and key strengths instead of relying on the default Azure policies."
     - content: "ExpressRoute encryption."
       isCorrect: false
-      explanation: "Incorrect. Azure ExpressRoute with several data encryption options, including MACsec that enables customers to store MACsec secrets in Azure Key Vault."
+      explanation: "Incorrect. Azure ExpressRoute provides several data encryption options, including MACsec that enables customers to store MACsec secrets in Azure Key Vault."
   - content: "What is a symmetric key stored in the database boot record for availability during recovery?"
     choices:
     - content: "Database Encryption Key (DEK)."
