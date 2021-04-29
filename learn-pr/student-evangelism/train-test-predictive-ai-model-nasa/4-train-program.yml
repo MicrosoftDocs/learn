@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Train a neural network to accurately classify space rocks in photos
-durationInMinutes: 6
+durationInMinutes: 12
 content: |
   [!include[](includes/4-train-program.md)]
