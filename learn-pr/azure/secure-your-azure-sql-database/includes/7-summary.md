@@ -1,4 +1,4 @@
-In this module, you've seen how Azure SQL Database provides a wide array of tools and features to secure your data. By using these tools and features, you can put multiple layers of defense in place to thwart attacks and keep your customer and business data secure.
+In this module, you've seen how Azure SQL Database provides a wide array of tools and features to secure your data. By using these tools and features, you can put multiple layers of defense in place to thwart attacks, and keep your customer and business data secure.
 
 You've learned how to:
 

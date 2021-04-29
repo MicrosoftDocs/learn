@@ -1,8 +1,11 @@
-In this part, you learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum explain what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+In this part, you learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum explain the personal data Microsoft collects, how Microsoft uses it, and for what purposes.
 
 For Tailwind Traders, understanding Microsoft's commitment to privacy helps ensure that their customer and application data will be protected.
 
-Let's begin with a brief look at the Microsoft Privacy Statement.
+Watch the following video to see an overview on how Microsoft runs on trust.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAaTE]
+
+Let's continue with a brief look at the Microsoft Privacy Statement and where to find it.
 
 ## What's in the Microsoft Privacy Statement?
 

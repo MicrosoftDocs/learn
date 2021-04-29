@@ -2,8 +2,6 @@ Keep in mind that the programs you ran here use a _simulator_ to mimic quantum b
 
 When you're ready to run your programs on quantum hardware, there's Azure Quantum, a quantum computing service that runs on Azure.
 
-Azure Quantum is currently in limited preview with select partners and customers. Here's an early look at what to expect.
-
 ## What's included on Azure Quantum?
 
 ![Diagram showing various Azure Quantum features.](../media/6-azure-quantum.png)
@@ -18,23 +16,35 @@ For more details on how this is done in practice, check out Dave Wecker's talk o
 
 ![Diagram showing Azure Quantum Computing.](../media/6-azure-quantum-computing.png)
 
-**Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
-
-Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
-
-![Diagram showing Azure Quantum Computing with Q sharp.](../media/6-azure-quantum-inspired-solutions.png)
-
 **Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
 For example, there's trapped ion quantum hardware from IonQ and Honeywell. There's also quantum hardware built from superconducting circuits from QCI.
 
-![Diagram that lists companies that provide quantum hardware on Azure Quantum.](../media/6-azure-quantum-hardware.png)
+- **Honeywell quantum solutions**: Trapped-ion system with high-fidelity, fully connected qubits, and the ability to perform mid-circuit measurement.
+
+- **IonQ trapped-ion quantum computer**: Dynamically reconfigurable system for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.
+
+- **Quantum Circuits, Inc.**: Fast and high-fidelity system with powerful real-time feedback to enable error correction.
+
+
+**Quantum-inspired solutions**: If you want to solve large, complex optimization problems at scale, then you can explore quantum-inspired solvers from Microsoft and partners such as 1QBit.
+
+Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
+
+![Diagram showing Azure Quantum optimization stack.](../media/6-azure-quantum-inspired-solutions.png)
+
+- **1Qloud**: Connecting intractable industry problems to innovative solutions.
+
+- **Microsoft QIO**: Ground-breaking optimization algorithms inspired by decades of quantum research.
+
+- **Toshiba SBM**: Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
+
 
 ## What are Azure Quantum Workspaces?
 
 Like other Azure services, you need to deploy an Azure Quantum resource into your Azure subscription in order to use it.
 
-This resource is called a _workspace_, and is a collection of assets that are associated with executing a quantum or quantum-inspired workload. Examples of assets are the problem format, data, and compute target.
+This resource is called a _workspace_, and is a collection of assets that are associated with executing a quantum or quantum-inspired workload. Examples of assets are the problem format, data, and compute target. Follow the [Get started with Azure Quantum module](https://docs.microsoft.com/learn/modules/get-started-azure-quantum/) to start using Azure Quantum.
 
 Here's a brief overview of some of the terminology that's associated with a quantum workspace.
 

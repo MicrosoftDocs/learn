@@ -14,17 +14,17 @@ content: |
   Choose the best response for each of the questions below. Then select **Check your answers**.
 quiz:
   questions:
-  - content: "What is the main difference between function parameters in TypeScript and function parameters in JavaScript?"
+  - content: "What is a difference between function parameters in TypeScript and function parameters in JavaScript?"
     choices:
-    - content: "TypeScript parameters can be required whereas JavaScript parameters are always optional."
+    - content: "TypeScript parameters are required by default, but can be made optional. JavaScript parameters are always optional."
       isCorrect: true
       explanation: "Correct! TypeScript parameters are required by default but can also be made optional. JavaScript parameters are always optional."
     - content: "TypeScript parameters are the same as JavaScript parameters."
       isCorrect: false
       explanation: "Incorrect. There are key differences between TypeScript and JavaScript parameters."
-    - content: "TypeScript parameters are required by default but can also be made optional. JavaScript parameters are always optional."
+    - content: "TypeScript parameters are always optional. JavaScript parameters are required by default but can be made optional."
       isCorrect: false
-      explanation: "Incorrect. While TypeScript parameters can be optional, JavaScript parameters are always optional."
+      explanation: "Incorrect. While TypeScript parameters are required by default but can be made optional, JavaScript parameters are always optional."
   - content: "What is a common use for an anonymous function?"
     choices:
     - content: "When you need to apply the same function signature to more than one function."

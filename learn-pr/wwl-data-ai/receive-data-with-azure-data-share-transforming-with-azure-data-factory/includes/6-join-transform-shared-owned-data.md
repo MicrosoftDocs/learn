@@ -26,5 +26,7 @@ In order to aggregate, you need to find a column that you’re going to use for 
 
 There are more ways to join datasets, but the most common one is an Inner join. 
 
-The different join types that are possible in the mapping data flow can be found here: join types.
+The different join types that are possible in the mapping data flow can be found here: [join types](https://docs.microsoft.com/azure/data-factory/data-flow-join)
+
+
 

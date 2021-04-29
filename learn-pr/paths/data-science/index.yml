@@ -6,8 +6,8 @@ metadata:
   description: With this learning path, get started with Azure Databricks for predictive and analytical Data Science techniques such as exploratory data analysis, text analytics, and deep learning.
   brand: azure
   ms.date: 01/31/2019
-  author: barlan
-  ms.author: barlan
+  author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extract knowledge and insights from your data with Azure Databricks

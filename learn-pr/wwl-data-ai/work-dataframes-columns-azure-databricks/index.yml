@@ -5,7 +5,7 @@ metadata:
   description: "Work with DataFrames columns in Azure Databricks"
   ms.date: 05/15/2020
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with DataFrames columns in Azure Databricks

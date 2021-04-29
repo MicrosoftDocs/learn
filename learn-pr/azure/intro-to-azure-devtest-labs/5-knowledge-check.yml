@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-devtest-labs.5-knowledge-check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: In this unit, you'll answer some questions based on a scenario to see what you've learned in this module.
+  ms.date: 04/09/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+title: Knowledge check
+durationInMinutes: 10
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your company wants to implement a custom image with a minimum of administrative effort. Which approach should you take?"
+    choices:
+    - content: "Use Azure Lab Services."
+      isCorrect: false
+      explanation: "You can't use Azure Lab Services for the practice environments, because it doesn't support custom virtual machine images."
+    - content: "Use Azure DevTest Labs."
+      isCorrect: true
+      explanation: "Azure DevTest Labs supports custom images and provides tools that make it easy to control your resource usage."
+    - content: "Configure a set of virtual machines by using a VHD image you create."
+      isCorrect: false
+      explanation: "This approach is likely to require much more administrative effort than using Azure DevTest Labs."
+  - content: "Your company wants to use DevTest Labs to install a required React JavaScript framework on the custom virtual machine image. Which approach should you use?"
+    choices:
+    - content: "Use artifacts."
+      isCorrect: true
+      explanation: "You can use artifacts to run installation scripts to set up your dependencies."
+    - content: "Use formulas."
+      isCorrect: false
+      explanation: "Formulas provide a base image as a starting point. They don't enable installation scripts."
+    - content: "Deploy a shell script to each virtual machine after it is provisioned."
+      isCorrect: false
+      explanation: "This approach is likely to require much more technical effort than using artifacts."
+  - content: "You want to cap the size of the virtual machines that can be created within a DevTest Labs environment. Which approach should you should use?"
+    choices:
+    - content: "Use formulas."
+      isCorrect: false
+      explanation: "Formulas are a way of building virtual machine images. They don't handle usage caps."
+    - content: "Use environments."
+      isCorrect: false
+      explanation: "Environments are templates that speed up image creation and associated PaaS resources. They don't handle usage caps."
+    - content: "Use policies."
+      isCorrect: true
+      explanation: "You can assign a maximum virtual machine size limit to the lab by using policies."
+  
+  
