@@ -5694,6 +5694,36 @@
       "source_path": "learn-pr/language/rust-get-started/4-install-visual-studio-code.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/rust-get-started/3-install-code-editor",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/2-overview-speech.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/3-create-speech-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/4-view-access-keys-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/5-exercise-convert-speech-from-audio-file.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/6-review-supported-languages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/transcribe-speech-input-text/7-optional-exercise-listen-incoming-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
+      "redirect_document_id": false
     }
   ]
 }
