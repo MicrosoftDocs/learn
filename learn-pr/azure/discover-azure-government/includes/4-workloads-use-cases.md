@@ -16,7 +16,7 @@ For most of these customers, Microsoft and its partners offer a customer-managed
 
 ## Machine learning model training
 
-[AI](https://docs.microsoft.com/learn/modules/azure-artificial-intelligence/1-introduction-to-azure-artificial-intelligence) holds tremendous potential for governments. [Machine learning](https://docs.microsoft.com/learn/modules/azure-artificial-intelligence/3-machine-learning) is a data science technique that allows computers to learn to use existing data, without being explicitly programmed, to forecast future behaviors, outcomes, and trends. Machine learning [technologies](https://docs.microsoft.com/azure/architecture/data-guide/technology-choices/data-science-and-machine-learning) can also discover patterns, anomalies, and predictions that can help governments in their missions. As technical barriers continue to fall, decision-makers face the opportunity to develop and explore transformative AI applications. There are five main vectors that can make it easier, faster, and cheaper to adopt machine learning:
+[AI](https://docs.microsoft.com/learn/modules/azure-artificial-intelligence/1-introduction-to-azure-artificial-intelligence) holds tremendous potential for governments. [Machine learning](https://docs.microsoft.com/learn/modules/azure-artificial-intelligence/3-machine-learning) is a data science technique that allows computers to learn to use existing data, without being explicitly programmed, to forecast future behaviors, outcomes, and trends. [Machine learning technologies](https://docs.microsoft.com/azure/architecture/data-guide/technology-choices/data-science-and-machine-learning) can also discover patterns, anomalies, and predictions that can help governments in their missions. As technical barriers continue to fall, decision-makers face the opportunity to develop and explore transformative AI applications. There are five main vectors that can make it easier, faster, and cheaper to adopt machine learning:
 
 * Unsupervised learning.
 * Reducing need for training data.
@@ -28,7 +28,7 @@ In the following sections, we expand on areas that can help government agencies 
 
 ## IoT analytics
 
-In recent years, we have been witnessing massive proliferation of Internet of Things (IoT) devices and sensors. In almost all cases, these sensors gather signals and data from the environments and conditions they're designed for. The spectrum of capabilities for IoT sensors expands from measuring the level of moisture in soil all the way to gathering intelligence at 18,000 feet altitude. The volume of data being collect and the many potential uses for it make data-analysis tools and procedures more important than ever.
+In recent years, we have been witnessing massive proliferation of Internet of Things (IoT) devices and sensors. In almost all cases, these sensors gather signals and data from the environments and conditions they're designed for. The spectrum of capabilities for IoT sensors expands from measuring the level of moisture in soil all the way to gathering intelligence at 5,000 meters altitude. The volume of data being collected and the many potential uses for it make data-analysis tools and procedures more important than ever.
 
 Governments are increasingly employing IoT devices for their missions, which could include maintenance predictions, borders monitoring, weather stations, smart meters, and field operations. In many cases, the data is often analyzed and inferred from where it's gathered. The main challenges of IoT analytics are: 
 
@@ -36,13 +36,13 @@ Governments are increasingly employing IoT devices for their missions, which cou
 * Analytics at the edge and often in disconnected scenarios.
 * Data and analysis aggregation.
 
-With innovative solutions such as [IoT Hub](https://azure.microsoft.com/services/iot-hub/) and [Azure Stack Edge](https://azure.microsoft.com/products/azure-stack/edge/), Azure services are well positioned to help governments with these challenges.
+With innovative solutions such as [Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) and [Azure Stack Edge](https://azure.microsoft.com/products/azure-stack/edge/), Azure services are well positioned to help governments with these challenges.
 
 ## Precision agriculture with Farm Beats
 
 Agriculture plays a vital role in most economies worldwide. In the US, over 70% of rural households depend on agriculture, which contributes about 17% to the total GDP and provides employment to over 60% of the population. In project [Farm Beats](https://www.microsoft.com/research/project/farmbeats-iot-agriculture/), we gather large amounts of data from farms that we couldn't get before, and then by applying AI and machine learning algorithms we can turn this data into actionable insights for farmers. We call this technique data-driven farming.
 
-What we mean by data-driven farming is the ability to map every farm and overlay it with data. For example, what is the soil moisture level 6 inches below soil, what is the soil temperature 6 inches below soil, and so on. These maps can then enable techniques, such as precision agriculture, which has been shown to improve yield, reduce costs, and benefit the environment.
+What we mean by data-driven farming is the ability to map every farm and overlay it with data. For example, what is the soil moisture level 15 cm below soil, what is the soil temperature 15 cm below soil, and so on. These maps can then enable techniques, such as precision agriculture, which has been shown to improve yield, reduce costs, and benefit the environment.
 
 Despite the fact the precision agriculture as a technique was proposed more than 30 years ago, it hasn't taken off. The biggest reason is the inability to capture large amounts of data from farms to accurately represent the conditions in the farm. Our goal as part of the Farm Beats project is to be able to accurately construct these precision maps at a fraction of the cost.
 
@@ -52,7 +52,7 @@ Synthetic data is data that is artificially created rather than generated by act
 
 * Overcoming restrictions: Real data may have usage constraints from privacy rules or other regulations. Synthetic data can replicate all important statistical properties of real data without exposing real data.
 * Scarcity: Providing data where real data doesn't exist for a given event.
-* Precision: Synthetic Data is perfectly labeled.
+* Precision: Synthetic data is perfectly labeled.
 * Quality: The quality of synthetic data can be precisely measured to fit the mission conditions.
 
 Synthetic data can exist in several forms, including text, audio, video, and hybrid.
