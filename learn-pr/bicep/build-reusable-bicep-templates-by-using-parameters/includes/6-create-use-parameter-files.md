@@ -13,13 +13,39 @@ During the process, you'll:
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-### Add secure parameters
+## Add secure parameters and database parameters
 
-1. In the *main.bicep* file in Visual Studio Code, find a `location` parameter. Add `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters below the `location` parameter. When finished, the parameter section should look like this:
+1. In the *main.bicep* file in Visual Studio Code, find a `location` parameter. Add `sqlDatabaseName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters below the `location` parameter. Also add a `sqlServerName` variable for the Azure SQL server name. When finished, the parameter section should look like this:
 
-    :::code language="json" source="code/6-add-secure-parameters.bicep" highlight="27-29,31-33":::
+    :::code language="json" source="code/6-add-secure-parameters.bicep" highlight="22-35":::
 
     Notice that you're specifying value for each parameter except `solutionName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters.
+
+### Add Azure SQL server and database
+
+1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file.
+
+    ```bicep
+
+    resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
+      name: sqlServerName
+      location: location
+      properties: {
+        administratorLogin: sqlServerAdministratorLogin
+        administratorLoginPassword: sqlServerAdministratorPassword
+      }
+    }
+    
+    resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
+      parent: sqlServer
+      name: sqlDatabaseName
+      location: location
+      sku: {
+        name: 'Standard'
+        tier: 'Standard'
+      }
+    }
+    ```
 
 1. Save the changes to the file.
 
@@ -34,7 +60,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-          "environment": {
+          "environmentName": {
               "value": "dev"
           },
           "appServicePlanInstanceCount": {

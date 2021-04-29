@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named *Microsoft Learn Sandbox*. You're also added to a special subscription named *Concierge Subscription*.
 
-As part of the HR application migration, you decided to create a Bicep template to deploy Azure resources. In this exercise, you'll create Azure App Service plan and App Service App. You'll appropriately apply decorators to each parameter.
+As part of the HR application migration, you decided to create a Bicep template to deploy Azure resources. In this exercise, you'll create Azure App Service plan and App Service app. You'll appropriately apply decorators to each parameter.
 
 During the process, you'll:
 
@@ -19,18 +19,18 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 1. Add the following content into the file. You'll deploy the template at the end of this exercise. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
     ```bicep
-    param environment string = 'dev'
+    param environmentName string = 'dev'
     param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
     param appServicePlanInstanceCount int = 2
     param location string = resourceGroup().location
 
-    var appServicePlanName = '${environment}-${solutionName}-plan'
-    var appServiceAppName = '${environment}-${solutionName}-app'
+    var appServicePlanName = '${environmentName}-${solutionName}-plan'
+    var appServiceAppName = '${environmentName}-${solutionName}-app'
     ```
 
     Notice that you're using `string` and `int` type parameters. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
-    Also note that you're defining variables for the name of the Azure App Service plan and App Service App. However you're using parameters for the other names. App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. It's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
+    Also note that you're defining variables for the name of the Azure App Service plan and App Service app. However you're using parameters for the other names. App Service apps need globally unique names, whereas App Service plans need to be unique only within their resource group. It's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
 1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file:
 
@@ -63,7 +63,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
     ```bicep
     @description('The name of the environment to deploy. This must be dev, test, or prod.')
-    param environment string
+    param environmentName string = 'dev'
   
     @description('The unique name of the solution to deploy.')
     param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
@@ -75,7 +75,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ### Control input values
 
-1. Your toy company requires that you deploy HR application to three environments - dev, test, and prod. In the *main.bicep* file in Visual Studio Code, insert `@allowed` decorator above `@description` decorator of environment parameter. After you're finished, the parameter should look like this:
+1. Your toy company requires that you deploy HR application to three environments - dev, test, and prod. In the *main.bicep* file in Visual Studio Code, insert `@allowed` decorator above `@description` decorator of `environmentName` parameter. After you're finished, the parameter should look like this:
 
       ```bicep
       @allowed([
@@ -84,16 +84,16 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
             'prod'
       ])
       @description('Name of environment to deploy - only accept dev, test, and prod')
-      param environment string
+      param environmentName string
       ```
 
-    Notice that you're limiting parameter value for environment parameter to only dev, test, and prod. You'll need to add new environment to this list if addition environment is requested.
+    Notice that you're limiting parameter value for `environmentName` parameter to only dev, test, and prod. You'll need to add new environment to this list if addition environment is requested.
 
 1. Save the changes to the file.
 
 ### Restrict input length
 
-1. In the *main.bicep* file in Visual Studio Code, add `@minLength` and `@maxLength` decorators above `@description` decorator for `solutionName` parameter. After you're done, both parameters should look like below:
+1. In the *main.bicep* file in Visual Studio Code, add `@minLength` and `@maxLength` decorators above `@description` decorator for `solutionName` parameter. After you're done, the parameter should look like below:
 
       ```bicep
       @minLength(5)
@@ -102,13 +102,13 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
       ```
 
-      Notice that you're restricting character length of input value for both parameters. The solutionName parameter is used later in your Bicep code to assign value for variables. These variables are used for naming Azure App Service Plan and App Service App must follow [Naming rules and restrictions for Azure Resources](/azure/azure-resource-manager/management/resource-name-rules).
+      Notice that you're restricting character length of input value for the parameter. The `solutionName` parameter is used later in your Bicep code to assign value for variables. These variables are used for naming Azure App Service plan and App Service app must follow [Naming rules and restrictions for Azure Resources](/azure/azure-resource-manager/management/resource-name-rules).
 
 1. Save the changes to the file.
 
 ### Limit number input
 
-1. In the *main.bicep* file in Visual Studio Code, add `@minValue` and `@maxValue` decorators above `@description` decorator for appServicePlanInstanceCount parameter. When completed, the parameter should look like this:
+1. In the *main.bicep* file in Visual Studio Code, add `@minValue` and `@maxValue` decorators above `@description` decorator for `appServicePlanInstanceCount` parameter. When completed, the parameter should look like this:
 
       ```bicep
       @minValue(2)
@@ -130,7 +130,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
             'prod'
       ])
       @description('Name of environment to deploy - only accept dev, test, and prod')
-      param environment string = 'dev'
+      param environmentName string = 'dev'
       
       @minLength(5)
       @maxLength(30)
@@ -145,8 +145,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
       @description('Azure region where you want to deploy')
       param location string = resourceGroup().location
             
-      var appServicePlanName = '${environment}-${solutionName}-plan'
-      var appServiceAppName = '${environment}-${solutionName}-app'
+      var appServicePlanName = '${environmentName}-${solutionName}-plan'
+      var appServiceAppName = '${environmentName}-${solutionName}-app'
             
       resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
         name: appServicePlanName

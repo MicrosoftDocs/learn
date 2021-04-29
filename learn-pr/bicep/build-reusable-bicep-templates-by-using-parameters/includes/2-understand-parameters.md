@@ -81,7 +81,7 @@ param resourceTags object = {
 
 Then, whenever we define a resource in our Bicep file, we can reference it:
 
-:::code language="plaintext" source="code/2-create-resources.bicep" highlight="2-4,11-13":::
+:::code language="plaintext" source="code/2-create-resources.bicep" highlight="4,13":::
 
 ### Arrays
 
@@ -143,7 +143,7 @@ param resourceName string
 > [!NOTE]
 > Only parameters of type string and array can have length constraints.
 
-When you work with numeric parameters, you may need to restrict the values that can be assigned. For example, your toy company has decided that whenever anybody deploys an App Service plan, they should always deploy at least two instances, but no more than ten instances of the plan. To meet the requirements, you can use decorator `@minValue(n)` to specify a minimum value and `@maxValue(n)` for a maximum value.
+When you work with numeric parameters, you may need to restrict the values that can be assigned. For example, your toy company has decided that whenever anybody deploys an App Service plan, they should always deploy at least two instances, but no more than ten instances of the plan. To meet the requirements, you can use decorator `@minValue` to specify a minimum value and `@maxValue` for a maximum value.
 
 The following example declares an integer parameter `appServicePlanInstanceCount` whose value can only be 2 and 10 (inclusive).
 

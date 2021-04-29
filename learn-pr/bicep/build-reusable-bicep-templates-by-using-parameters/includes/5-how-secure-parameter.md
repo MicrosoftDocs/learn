@@ -4,7 +4,7 @@ In this unit, you'll learn how to secure parameters. You may want to pass sensit
 
 Sometimes, you need to pass sensitive values into your deployments, like logins and passwords. To secure these values, use parameters with the `@secure` decorator. You can apply `@secure` decorator to only string or object type parameters.
 
-When you're prompted for a secure parameter, you can type in text as normal but the terminal will not display the text on your screen. The deployment logs also don't include any secure parameter values.
+When you're prompted for a secure parameter, you can type in text as normal, but the terminal will not display the text on your screen. The deployment logs also don't include any secure parameter values.
 
 As part of the HR application migration, you need to deploy an Azure SQL server and database. You will provision the server with an administrative login and password. These values are sensitive, and you need the deployment to be secured. Here is an example declaration to secure string parameters:
 
@@ -15,7 +15,7 @@ param sqlServerAdministratorLogin string
 param sqlServerAdministratorPassword string
 ```
 
-Note that both secure parameters don't have default value specified. When manually deploy the template using the Azure CLI or PowerShell, you'll get prompt to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. SQL Database enforces password complexity. You must meet these [guidelines]((/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password.
+Note that both secure parameters don't have default value specified. When manually deploy the template using the Azure CLI or PowerShell, you'll get prompt to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. SQL Database enforces password complexity. You must meet these [guidelines](/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password.
 
 > [!TIP]
 > * Always use parameters for usernames, passwords, API keys, certificates, and any other secrets.

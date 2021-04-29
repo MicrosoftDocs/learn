@@ -36,7 +36,7 @@ A parameter file looks like this:
 
 ## Review Bicep file
 
-Here is an example of parameters of a Bicep template to deploy Azure App Service plan and App Service App as part of HR application migration. It has many parameters you can provide during deployment.
+Here is an example of parameters of a Bicep template to deploy Azure App Service plan and App Service app as part of HR application migration. It has many parameters you can provide during deployment.
 
 ```bicep
 @allowed([
@@ -45,7 +45,7 @@ Here is an example of parameters of a Bicep template to deploy Azure App Service
       'prod'
 ])
 @description('Name of environment to deploy - only accept dev, test, and prod')
-param environment string
+param environmentName string
 
 @minLength(5)
 @maxLength(30)
@@ -68,14 +68,14 @@ Here is an example of a parameter file for a Bicep template shown in the first e
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "environment": {
+    "environmentName": {
       "value": "dev"
     }
   }
 }
 ```
 
-Consider the example above, you're providing value for the environment parameter. The other parameters will use their default value during deployment.
+Consider the example above, you're providing value for the `environmentName` parameter. The other parameters will use their default value during deployment.
 
 > [!Note]
 > Parameter names in parameter files are case-insensitive.
@@ -85,7 +85,7 @@ Consider the example above, you're providing value for the environment parameter
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "environment": {
+    "environmentName": {
       "value": "dev"
     },
     "appServicePlanInstanceCount": {
