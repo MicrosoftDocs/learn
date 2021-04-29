@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. Tactical Azure Stack Hub is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on."
     - content: "Hardware security module."
       isCorrect: false
-      explanation: "Incorrect. Hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers."
+      explanation: "Incorrect. Hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs controlled solely by customers."
   - content: "Which service provides physical servers that are used for only one Azure subscription?"
     choices:
     - content: "Azure Dedicated Host."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Correct. Azure Dedicated Host provides physical servers that can host one or more Azure VMs and are dedicated to one Azure subscription."
     - content: "Confidential computing."
       isCorrect: false
-      explanation: "Confidential computing offers encryption of data while it's in use, ensuring that data is always under customer control."
+      explanation: "Incorrect. Confidential computing offers encryption of data while it's in use, ensuring that data is always under customer control."
     - content: "Azure Stack Edge."
       isCorrect: false
       explanation: "Incorrect. Azure Stack Edge is an AI-enabled edge computing device with network data transfer capabilities."
