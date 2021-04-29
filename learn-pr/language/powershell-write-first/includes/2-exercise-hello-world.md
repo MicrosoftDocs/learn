@@ -103,7 +103,7 @@ Reading these errors is essential in helping you learn what caused them. When yo
 
 In this exercise, you invoked a *cmdlet* called `Write-Output`. Cmdlets are the main way you use PowerShell. The command syntax is a `Verb-Noun` format. This makes it easy to understand what the code is trying to do. The cmdlet's name is its intent. The code is doing something (verb) to a thing (noun).
 
-`Hello World!` and the congratulatory sentence are both *string* inputs for the `Write-Output` cmdlet to process and output. A string is a simple data type that computers use. You'll learn about data types in a later module.
+`Hello World!` and the congratulatory sentence are both *string* inputs for the `Write-Output` cmdlet to process and output. A string is a simple data type that computers use. In PowerShell, you can enclose strings in either single quotation marks (`''`) or double quotation marks (`""`). For our code, we'll use double quotation marks to allow PowerShell to display variable _values_ instead of variable _names_. You'll learn more about data types and how to define them in a later module.
 
 By using `Read-Host`, you can write a message to prompt a user for input. You define the message for the user with the `-Prompt` parameter. Parameters allow a cmdlet to take input from a user. You store the input in a *variable* called `$name`, and then you use the `Write-Output` cmdlet to display the custom message in the Cloud Shell terminal.
 
