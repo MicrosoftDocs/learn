@@ -41,7 +41,7 @@ Key enabling products that customers may find helpful when deploying top secret 
 
 * Use all recommended technologies for secret data.
 * [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview) enables customers to run workloads using the same architecture and APIs as in Azure while having a physically isolated network for their highest classification data.
-* [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-overview) allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
+* [Azure Stack Edge](https://docs.microsoft.com/azure/databox-online/azure-stack-edge-gpu-overview) allows the storage and processing of the highest classification data but also enables customers to upload resulting information or models directly to Azure. This approach creates a path for information sharing between domains that makes it easier and more secure.
 * [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf) addresses tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on.
 * User-provided hardware security modules (HSMs) allow customers to store their encryption keys and other secrets in HSMs deployed on-premises and controlled solely by customers.
 
