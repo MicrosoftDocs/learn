@@ -4,7 +4,7 @@ Now that you have improved the accessibility of the project data entry and image
 
 If an application does not provide appropriate keyboard access, it can create difficulty when using a screen reader. You may have experienced this when filling out a form online when you use the Tab key on your keyboard to move through the data fields. When you press the Tab key and the focus is not where you expect, this is an error in keyboard accessibility and makes use of the form or app more difficult.
 
-By default, the accessibility order of controls is the same order in which they are listed in XAML, or programmatically added to a child collection.
+By default, the accessibility order of controls is the same order in which they are listed in XAML, or added  layout. This means that a `StackLayout`'s accessibility order is based on the `Orientation` and a `Grid` is based on items added by row first.
 
 
 We will now take a look at how to optimize our layouts to be more accessible.

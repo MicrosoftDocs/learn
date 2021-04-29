@@ -12,12 +12,6 @@ Xamarin.Forms provides four different properties that can enhance the screen rea
 - `AutomationProperties.HelpText` - a longer description of the element, which can be thought of as tooltip text associated with the element. 
 - `AutomationProperties.LabeledBy` - allows another element to define accessibility information for the current element. 
 
-Screen readers also read different accessibility values. For example, on an `Entry`:
-
-- VoiceOver will read the `Placeholder` value of the `Entry`, followed by instructions for using the control.
-- TalkBack will read the `Placeholder` value of the `Entry`, followed by the `AutomationProperties.HelpText` value, followed by instructions for using the control.
-- Narrator will read the `AutomationProperties.LabeledBy` value of the Entry, followed by instructions on using the control.
-
 ## IsInAccessibleTree
 
 This attached property is a `boolean` that tells the operating system if the element should be accessible and visible to screen readers. It can be set on an element in XAML:

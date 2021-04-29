@@ -24,6 +24,6 @@ quiz:
       - content: "From top to bottom."
         isCorrect: false
         explanation: "The order in which elements appear on the screen is not the default accessibility order."
-      - content: "The order they are listed in XAML or programmatically added to a child collection."
+      - content: "The order they are listed in XAML or added to a layout."
         isCorrect: true
-        explanation: "By default, the accessibility order of controls is the same as the order in which they are listed in XAML, or programmatically added to a child collection."
+        explanation: "By default, the accessibility order of controls is the same as the order in which they are listed in XAML, or added to a layout."

@@ -89,6 +89,12 @@ AutomationProperties.LabeledBy="{x:Reference LabelName}"
 AutomationProperties.Name="{OnPlatform iOS='Project name'}"
 ```
 
+1. Setting accessible properties on the `Entry` means that the _Project name_ `Label` doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label`:
+
+```xaml
+AutomationProperties.IsInAccessibleTree="False"
+```
+
 When you run the application again, you hear "Project name" read out loud when the `Entry` is in focus.
 
 ## Improved Button descriptors
