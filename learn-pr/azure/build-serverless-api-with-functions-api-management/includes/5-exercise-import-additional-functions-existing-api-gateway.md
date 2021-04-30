@@ -8,13 +8,13 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **OrderFunction** Function App.
 
-1. In the left nav bar, under the **Functions** section, select **Functions**, and then select **OrderDetails**.
+1. In the left menu pane, under the **Functions** section, select **Functions**, and then select **OrderDetails**.
 
-1. In the left nav bar, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
+1. In the left menu pane, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="Order details code is displayed.":::
 
-    The Input/Output panel appears.
+    The Input/Output pane appears.
 
 1. On the **Input** tab, in the **HTTP method** dropdown, select **GET**, and then under **Query**, select **Add parameter**.
 
@@ -32,13 +32,13 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app UI. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, then select the App Service whose name begins with **ProductFunction**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, then select the App Service whose name begins with **OrderFunction**.
 
-1. In the left nav bar, under the **API** section, select **API Management**.
+1. In the left menu bar, under the **API** section, select **API Management**.
 
-1. On the top menu bar, select **Go to API Management**.
+1. On the top menu pane, select **Go to API Management**.
 
-1. In the left nav bar, under the **APIs** section, select **APIs**. In the **APIs** page for your API Management service, in the left nav bar, select **Add API**.
+1. In the left menu pane, under the **APIs** section, select **APIs**. In the **APIs** page for your API Management service, in the left menu pane, select **Add API**.
 
 1. In the **Add a new API** window, select **Function App**.
 
@@ -48,13 +48,13 @@ In this step, we'll add the Order function to the API Management resource that w
 
 1. To select your function, select **Browse**, and then select the **Function App** section.
 
-    ![Screenshot of the Import Azure Functions panel with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png)
+    ![Screenshot of the Import Azure Functions  with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png)
 
-    The **Select Azure Function App** panel appears.
+    The **Select Azure Function App** pane appears.
 
 1. In the list of Function Apps, select the **OrderFunction**, and then select **Select**.
 
-1. Ensure that **OrderDetails** is checked, and then select **Select**. The **Create from Function App** dialog reappears.
+1. Ensure that **OrderDetails** is checked, and then select **Select**. The **Create from Function App** dialog box reappears.
 
 1. In the **API URL suffix** field, enter **orders**, and then select **Create**.
 
@@ -64,7 +64,7 @@ In this step, we'll add the Order function to the API Management resource that w
 
 Now that we've added OrderDetails to our API, let's test it by using the API Management tools in the Azure portal.
 
-1. In the **APIs** window for your **API Management service** page that appears from the previous section, in the left nav bar, under **All APIs**, ensure that your *OrderFunction** API is selected.
+1. In the **APIs** window for your **API Management service** page that appears from the previous section, in the left menu pane, under **All APIs**, ensure that your *OrderFunction** API is selected.
 
 1. In the list of operations, select **GET OrderDetails**, and then select the **Test** tab.
 
@@ -88,9 +88,9 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
     GATEWAY_URL=<paste the URL here>
     ```
 
-1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left nav bar, under the **API** section, select **API Management**, and in the top menu bar, select **Go to API Management**.
+1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu bar, under the **API** section, select **API Management**, and in the top menu pane, select **Go to API Management**.
 
-1. In the left nav bar, under the **APIs** section, select **Subscriptions**. The **Subscriptions** page appears for your service instance.
+1. In the left menu pane, under the **APIs** section, select **Subscriptions**. The **Subscriptions** page appears for your service instance.
 
 1. To the far right of **Built-in all-access subscription**, select the ellipsis **...**, and then select **Show/hide keys**.
 

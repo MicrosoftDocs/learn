@@ -92,7 +92,7 @@ Four builds along with all their tests will produce quite a bit of log informati
 
 ```yml
 test:
-  runs-on: ubuntu-latest
+  runs-on: ${{ matrix.os }}
   strategy:
     matrix:
       os: [ubuntu-lastest, windows-2016]

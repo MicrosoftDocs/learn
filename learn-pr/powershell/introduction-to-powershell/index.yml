@@ -6,7 +6,7 @@ metadata:
     management. 
   ms.date: 12/7/2020
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to PowerShell
@@ -14,9 +14,8 @@ summary: Learn about the basics of PowerShell. This cross-platform command-line 
 abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
-  - Explore cmdlets. 
-  - Construct a sequence of cmdlets in a pipeline.
-  - Apply sound filtering and formatting principles to your commands. 
+  - Use commands to automate tasks.
+  - Leverage the _core_ cmdlets to discover commands and learn how they work. 
 iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
 levels:
   - beginner
@@ -36,8 +35,6 @@ units:
   - learn.powershell.intro-to-powershell.3-exercise-powershell
   - learn.powershell.intro-to-powershell.4-cmdlets
   - learn.powershell.intro-to-powershell.5-exercise-cmdlets
-  - learn.powershell.intro-to-powershell.6-pipe
-  - learn.powershell.intro-to-powershell.7-exercise-pipe
   - learn.powershell.intro-to-powershell.8-knowledge-check
   - learn.powershell.intro-to-powershell.9-summary
 badge:

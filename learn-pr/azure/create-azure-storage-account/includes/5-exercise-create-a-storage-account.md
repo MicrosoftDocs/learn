@@ -16,10 +16,9 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** pane appears.
 
+1. Select **Create.** The **Create storage account** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
-
-1. Select **Create**. The **Create storage account** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | ---- | ---- |
@@ -28,7 +27,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Resource group | ("<rgn>[sandbox resource group name]</rgn>") from the dropdown. |
     | **Instance details**| |
     | Storage account name | The name will be used to generate the public URL used to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
-    | Location | Select a location near to you in the dropdown from the dropdown. |
+    | Location | Select a location near to you in the dropdown. |
     | Performance | Standard. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Account kind | StorageV2 (general purpose v2) |
     | Redundancy | Locally redundant storage (LRS). In our case, the images and videos quickly become out-of-date and are removed from the site. As a result, there's little value to paying extra for global redundancy. If a catastrophic event results in data loss, you can restart the site with fresh content from your users. |
