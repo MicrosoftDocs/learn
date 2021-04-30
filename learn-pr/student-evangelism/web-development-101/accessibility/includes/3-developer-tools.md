@@ -12,7 +12,7 @@ Choosing the right colors to ensure that your page is accessible to all can be t
 - Compliance checkers:
   - Browser extensions to test a page:
     - [Edge: WCAG Color contrast checker](https://microsoftedge.microsoft.com/addons/detail/wcag-color-contrast-check/idahaggnlnekelhgplklhfpchbfdmkjp)
-    - [Firefox: WCAG Contrast checker](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/)
+    - [Firefox: WCAG Contrast checker](https://addons.mozilla.org/firefox/addon/wcag-contrast-checker/)
     - [Chrome: Colour Contrast Checker](https://chrome.google.com/webstore/detail/colour-contrast-checker/nmmjeclfkgjdomacpcflgdkgpphpmnfe)
   - Applications:
     - [Colour Contrast Analyser (CCA)](https://www.tpgi.com/color-contrast-checker/)
