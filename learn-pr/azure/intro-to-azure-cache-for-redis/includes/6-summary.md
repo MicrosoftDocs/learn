@@ -8,7 +8,7 @@ You applied these criteria to your fictional company that sells shoes on its web
 
 The criteria also helped you determine that Azure Cache for Redis is a suitable solution for enterprise organizations that use databases, the cornerstones of many modern apps. Azure Cache for Redis can help improve the performance and scalability of such apps.
 
-You also determined how Azure Cache for Redis provides critical low-latency and high-throughput data-storage solution for modern apps. You should now be able to determine whether Azure Cache for Redis can help improve the performance of your cloud apps.
+You also determined how Azure Cache for Redis provides critical low-latency and high-throughput data-storage solution for modern apps. You should now be able to determine whether Azure Cache for Redis can help improve the performance of your cloud apps. 
 
 ## References
 
