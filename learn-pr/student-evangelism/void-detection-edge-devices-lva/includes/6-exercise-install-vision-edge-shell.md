@@ -32,7 +32,7 @@ Perform the following steps in the Azure Cloud Shell environment.
 
 5. Once you create custom vision service information, make a note of **API key** and **Endpoint**.
 
-   [![The illustration shows the API key and endpoint.](../media/copy-apikey-endpoint.png)](../media/-copy-apikey-endpoint.png)
+   [![The illustration shows the API key and endpoint.](../media/copy-apikey-endpoint.png)](../media/copy-apikey-endpoint.png)
 
 6. Next you will be asked if you want to use Azure Live Video Analytics. Choose **yes** and it will create Azure Media Service.
 
