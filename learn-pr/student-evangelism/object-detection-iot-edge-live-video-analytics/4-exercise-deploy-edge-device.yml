@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.object-detection-lva-edge-device.exercise-deploy-edge-device
+title: Exercise - Deploy an IoT Edge device
+metadata:
+  title: Exercise - Deploy an IoT Edge device
+  description: In this section, we help learner to configure and deploy an IoT Edge device
+  ms.date: 05/01/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/4-exercise-deploy-edge-device.md)]
