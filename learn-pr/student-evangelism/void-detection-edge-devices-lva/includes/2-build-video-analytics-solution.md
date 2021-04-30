@@ -18,7 +18,7 @@ This module uses a [bottle shelf video](https://github.com/Azure-Samples/azure-i
 
 Firstly, you need to set up an edge device with the IoT Edge runtime installed. You'll create an IoT Hub that will send the deployment manifest to your edge device after you configure your device to IoT Hub.
 
-After the deployment manifest is sent, the IoTEdge agent running on your edge device gets new containers from the container registry and starts them on your edge device.
+After the deployment manifest is sent, the IoT Edge agent running on your edge device gets new containers from the container registry and starts them on your edge device.
 
 - **Web Module**: This module is the web application that the user interacts with, for example when you add your camera this Web Module will set the graph with all your camera settings to the live video analytics module. Web Module is based on user setting can capture images automatically and send them to retrain using customvision.ai application protocol interface(API).
 - **Live Video Analytics (LVA)**: This module will parse frames from all the cameras and send them to the Inference Module.
@@ -38,7 +38,7 @@ You'll use the following components in the design of the solution:
 - **Azure IoT Edge virtual machine:** It's a virtual machine to install the runtime. In this module, you'll open network port 8181 to enable communications between your virtual machine and the web application.
 - **Live Video Analytics on IoT Edge:** is an [IoT Edge module](https://docs.microsoft.com/azure/marketplace/iot-edge-module) that has functionality to be combined with other Azure edge modules. Examples of such modules include: Stream Analytics on IoT Edge, Cognitive Services on IoT Edge, and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
 - **Custom Vision Service:** Custom Vision lets you build, deploy, and improve your image classifiers. An image classifier is an AI service that applies labels (representing classes) to images based on their visual characteristics.
-- **Media Services: **Azure Media Services is a collection of cloud and edge media workflow services that enable you to build solutions that require live and batch video analytics, transcoding, multi-device delivery services, content protection, and live event broadcasting at scale.
+- **Media Services:** Azure Media Services is a collection of cloud and edge media workflow services that enable you to build solutions that require live and batch video analytics, transcoding, multi-device delivery services, content protection, and live event broadcasting at scale.
 
 ## Steps to follow
 

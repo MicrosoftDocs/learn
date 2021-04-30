@@ -9,11 +9,7 @@ You'll perform the following steps in Azure Cloud Shell. Before you start, you n
    ```
 
    > [!NOTE]
-   > This module uses the newest version of the Azure IoT extension, called `azure-iot`. The legacy version is called `azure-cli-iot-ext`. You should only have one version installed at a time. You can use the command `az extension list` to validate the currently installed extensions.
-   
-   > To see what extensions you have installed, use `az extension list`.
-   
-   > Use `az extension remove --name azure-cli-iot-ext` to remove the legacy version of the extension.
+   > This module uses the newest version of the Azure IoT extension, called `azure-iot`. You should only have one version installed at a time. You can use the command `az extension list` to validate the currently installed extensions. To remove the legacy version of the extension, use `az extension remove --name azure-cli-iot-ext` .
 
 
 2. Create a resource group to manage all the resources you use for this module. Give a name to your resource group.

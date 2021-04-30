@@ -1,5 +1,3 @@
-# Exercise - Deploy your solution
-
 In this exercise, you'll connect to Vision on Edge solution web application. Firstly, you'll add a camera that streams out the video. Then you'll capture images and tag objects. Finally, you'll deploy your solution which will identify the gaps in the shelf.
 
 ## Add a camera
