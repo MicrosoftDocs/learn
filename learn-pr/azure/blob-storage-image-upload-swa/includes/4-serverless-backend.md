@@ -13,9 +13,9 @@ SAS tokens can be generated for different kind of resources on Azure, and with v
 Once the SAS token and the URL have been generated, you serverless API will return a JSON object with the following format:
 
 ```javascript
-{    
-    sasKey: "sample sas key",
-    url: "sample URL"
+{
+  "sasKey": "sv=2020-06-12&se=2021-04-26T19%3A32%3A43Z&sr=c&sp=c&sig=<SecretSignature>",
+  "url": "https://uploadimages.blob.core.windows.net"
 }
 ```
 

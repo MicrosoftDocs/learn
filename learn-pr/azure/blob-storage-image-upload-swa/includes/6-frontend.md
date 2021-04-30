@@ -8,4 +8,8 @@ Your code will listen to the form's file `change` event to detect when the user 
 
 Since the upload function uses code from the `@azure/storage-blob` package, you will use `webpack` to extract the required functionality and make it ready to be used browser side. 
 
-Once the frontend is ready, you'll be able to test it locally using the Azure Functions Core Tools package. Let's move onto the exercise to build the frontend.
+Once the frontend is ready, you'll be able to test it locally using the Azure Functions Core Tools package.
+
+>To run your project locally make sure the Live Server VSCode extension is installed. You can obtain it from here: [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Also you will need [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=linux%2Ccsharp%2Cbash) installed. Finally, your node.js version should be 12.0.0. See [Develop Azure Functions by using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=nodejs) for more details.
+
+Let's move onto the exercise to build the frontend.
