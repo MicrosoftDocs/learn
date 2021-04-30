@@ -4,7 +4,7 @@ Type `ctrl+shift+p` to launch the command prompt type `Azure Functions: Create N
 
 Then go to the Azure Portal, navigate to your storage account, and copy the connection string.
 
-:::image type="content" source="../media/account_key.png" alt-text="Azure Portal Copy Account Key":::
+:::image type="content" source="../media/account_keys.png" alt-text="Azure Portal Copy Account Key":::
 
 Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
 

@@ -14,7 +14,7 @@ When using your blob storage account you'd want to organize your blobs inside co
 
 ## Describe Cross-Origin Resource Sharing
 
-Since you application lives in your company's domain name, a user won't be able to access your Azure Blob Storage account under `<StorageAccountName>.blob.core.windows.net`. This is due to a browser security feature called [same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) which prevents web pages from calling APIs in a different domain. for your frontend to be able to upload images to your storage account, you need to enable [Cross-Origin Resource Sharing](https://docs.microsoft.com/en-us/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) or CORS.
+Since you application lives in your company's domain name, a user won't be able to access your Azure Blob Storage account under `<StorageAccountName>.blob.core.windows.net`. This is due to a browser security feature called [same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) which prevents web pages from calling APIs in a different domain. for your frontend to be able to upload images to your storage account, you need to enable [Cross-Origin Resource Sharing](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services) or CORS.
 
 
 By enabling CORS, you'll have a secure way to allow your app domain to make calls to your Azure Blob Storage account.

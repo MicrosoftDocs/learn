@@ -104,7 +104,7 @@ Then it's time to run the frontend side of the project. For that you are going t
 
 Then right-click on your `index.html` file and select `Open with Live Server` from the contextual menu. Navigate to [http://localhost:5500/](http://localhost:5500/) to see your app running on the browser. It should look something like this:
 
-:::image type="content" source="../media/frontend.png" alt-text="API result in the browser":::
+:::image type="content" source="../media/frontend.png" alt-text="Frontend app in the browser":::
 
 Select an image for uploading, and then go to your storage account in Azure Portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot. 
 
