@@ -3,7 +3,7 @@ uid: learn.wwl.write-subqueries
 metadata:
   title: Write Subqueries in T-SQL
   description: "Write Subqueries in T-SQL"
-  ms.date: 04/23/2021
+  ms.date: 04/30/2021
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -44,4 +44,4 @@ units:
 - learn.wwl.write-subqueries.knowledge-check
 - learn.wwl.write-subqueries.summary
 badge:
-  uid: learn.wwl.write-select-statements-t-sql.badge
+  uid: learn.wwl.write-subqueries.badge
