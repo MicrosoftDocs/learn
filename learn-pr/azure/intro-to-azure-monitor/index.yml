@@ -36,7 +36,7 @@ title: intro to azure monitor
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master
 ###
-summary: ""
+summary: "Learn about Azure Monitor and how provides insights into your Azure resource performance and operations."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,8 +63,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether <product> is appropriate to <general product use case>.
-    - Describe how <features> of <product> work to <solve problem>.
+    - Evaluate whether Azure Monitor is appropriate for your Azure resource performance monitoring.
+    - Describe how the monitoring and reporting aspects of Azure Monitor work to provide insights into your resources hosted on Azure.
 ###########################################################################
 ###
 ### Prerequisites
@@ -87,9 +87,9 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - # Basic knowledge of Azure portal navigation
+  - # Basic knowledge of Azure resources
+  - # Basic knowledge of application and resource scaling considerations and performance considerations
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
