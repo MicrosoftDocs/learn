@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db  
+uid: learn.advanced-modeling-patterns-azure-cosmos-db  
 metadata:
   moduleType: standard  
   title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB
@@ -30,15 +30,15 @@ roles: # user input: add roles from role taxonomy (https://review.docs.microsoft
 products:  
   - azure-cosmos-db
 units:
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.introduction
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-data
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-set-up-environment
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.manage-referential-integrity-by-using-change-feed
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exrecise-use-change-feed
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.combine-different-entities-in-the-same-container
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-aggregates-in-the-same-container
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-denormalizing-aggregates-and-transactions
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.finalize-data-model
-- learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.summary
+- learn.advanced-modeling-patterns-azure-cosmos-db.introduction
+- learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
+- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-set-up-environment
+- learn.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
+- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
+- learn.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
+- learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-aggregates
+- learn.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
+- learn.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
+- learn.advanced-modeling-patterns-azure-cosmos-db.summary
 badge:  
-  uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.badge
+  uid: learn.advanced-modeling-patterns-azure-cosmos-db.badge

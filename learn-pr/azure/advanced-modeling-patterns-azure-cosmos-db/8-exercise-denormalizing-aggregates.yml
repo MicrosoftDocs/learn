@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exercise-denormalizing-aggregates-and-transactions
+uid: learn.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
 title: Denormalizing aggregates and transactions
 metadata: 
   title: Denormalizing aggregates and transactions
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-exercise-denormalizing-aggregates-and-transactions.md)]
+  [!include[](includes/8-exercise-denormalizing-aggregates.md)]

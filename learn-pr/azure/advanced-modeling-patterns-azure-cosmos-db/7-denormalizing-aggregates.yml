@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.denormalizing-aggregates-in-the-same-container
+uid: learn.advanced-modeling-patterns-azure-cosmos-db.denormalizing-aggregates
 title: Denormalizing aggregates in the same container
 metadata: 
   title: Denormalizing aggregates in the same container
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 05
 content: |
-  [!include[](includes/7-denormalizing-aggregates-in-the-same-container.md)]
+  [!include[](includes/7-denormalizing-aggregates.md)]

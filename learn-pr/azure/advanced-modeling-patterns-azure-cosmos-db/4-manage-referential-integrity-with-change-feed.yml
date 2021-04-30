@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.manage-referential-integrity-by-using-change-feed
+uid: learn.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
 title: Manage referential integrity by using Change Feed 
 metadata: 
   title: Manage referential integrity by using Change Feed
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 05
 content: |
-  [!include[](includes/4-manage-referential-integrity-by-using-change-feed.md)]
+  [!include[](includes/4-manage-referential-integrity-with-change-feed.md)]

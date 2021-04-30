@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.combine-different-entities-in-the-same-container
+uid: learn.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
 title: Combine different entities in the same container
 metadata: 
   title: Combine different entities in the same container
@@ -10,4 +10,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-combine-different-entities-in-the-same-container.md)]
+  [!include[](includes/6-combine-different-entities.md)]

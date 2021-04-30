@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.optimize-your-database-by-using-advanced-modeling-patterns-for-azure-cosmos-db.exrecise-use-change-feed
+uid: learn.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
 title: Use Change Feed to manage referential integrity
 metadata: 
   title: Use Change Feed to manage referential integrity
