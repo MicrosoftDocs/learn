@@ -6,7 +6,7 @@ In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio
 
 You'll now add a variable to store your storage account name expression in one place in the template.
 
-1. In Visual Studio Code, in the **azuredeploy.json** file, place your curser between the braces in the variables block ```"variables":{}```. Select the <kbd>Enter</kbd> key.
+1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor between the braces in the variables block ```"variables":{}```. Select the <kbd>Enter</kbd> key.
 1. Type **var** inside the braces. You see a list of related snippets. Select **arm-variable**:
 
    :::image type="content" source="../media/5-arm-variable.png" alt-text="Screenshot of Visual Studio Code that shows the snippets for Azure Resource Manager template variables." border="true":::

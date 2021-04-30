@@ -3,8 +3,8 @@ uid: learn.wwl.sap-hana-azure-compute-network-storage.expressroute-fast-path
 title: Expressroute fast path
 metadata:
   title: Expressroute fast path
-  description: Expressroute fast path
-  ms.date: 12/20/2019
+  description: "Expressroute fast path"
+  ms.date: 03/16/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

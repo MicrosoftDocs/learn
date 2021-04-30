@@ -3,8 +3,8 @@ uid: learn.wwl.create-azure-cognitive-search-solution.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your learning."
-  ms.date: 10/29/2020
+  description: "Knowledge check"
+  ms.date: 04/01/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -48,6 +48,17 @@ quiz:
     - content: "A suggester"
       isCorrect: false
       explanation: "Incorrect. A suggester does not map data to index fields."
+  - content: "You want to create a search solution that uses a built-in AI skill to determine the language in which each indexed document is written, and enrich the index with a field indicating the language. Which kind of Azure Cognitive Search object must you create?"
+    choices:
+    - content: "Synonym map"
+      isCorrect: false
+      explanation: "Incorrect. A synonym map does not integrate AI skills into the indexing process."
+    - content: "Skillset"
+      isCorrect: true
+      explanation: "Correct. A skillset enables you to define an enrichment pipeline composed of AI skills."
+    - content: "Scoring Profile"
+      isCorrect: false
+      explanation: "Incorrect. A scoring profile does not integrate AI skills into the indexing process."
   - content: "You want your search solution to show results in descending order of the file_size field value. What is the simplest way to accomplish this goal?"
     choices:
     - content: "Create a scoring profile that boosts results based on the file_size field"

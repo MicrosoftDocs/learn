@@ -1,16 +1,16 @@
 .NET contains built-in types for working with the file system that can be found in the `System.IO` namespace.
 
-Here you'll learn how to use the types in `System.IO` by using C# to read the file system to discover files and directories.
+Here, you'll learn how to use the types in `System.IO` by using C# to read the file system to discover files and directories.
 
 ## The scenario
 
 Large retailers often write data to files so that it can be processed later in batches.
 
-Tailwind Traders has each of its stores write its sales total to a file and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
+Tailwind Traders has each of its stores write its sales total to a file, and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
 
 ## Include the System.IO namespace
 
-In the .NET Framework, `System.IO` namespaces contain types to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.
+In the .NET, `System.IO` namespaces contain types to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.
 
 You can also use the types in the `System.IO` namespaces to read and write, both synchronously and asynchronously, data streams and files.
 

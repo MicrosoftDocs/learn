@@ -14,7 +14,7 @@ In this module, you'll explore the options available when choosing a relational 
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will:  
 
 * Identify relational Azure data services
 * Explore considerations in choosing a relational data service

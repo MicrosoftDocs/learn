@@ -14,7 +14,7 @@ You only need to edit the `fruit_basket` function in this exercise.
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
-    let mut basket = ??? ; // TODO: declare your hash map here.
+    let mut basket = todo!("declare your hash map here.");
 
     // Two bananas are already given for you :)
     basket.insert(String::from("banana"), 2);
@@ -27,16 +27,16 @@ fn fruit_basket() -> HashMap<String, u32> {
 fn main() {
     let basket = fruit_basket();
     assert!(
-    basket.len() >= 3,
-    "basket must have at least three types of fruits"
+        basket.len() >= 3,
+        "basket must have at least three types of fruits"
     );
     assert!(
-    basket.values().sum::<u32>() >= 5,
-    "basket must have at least five fruits"
+        basket.values().sum::<u32>() >= 5,
+        "basket must have at least five fruits"
     );
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8351e5ee4fc27335e54cdc027383f238?azure-portal=true).
+You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e906e5d5efe6a30b101e421fa7effd33?azure-portal=true).
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=43e50bc0e2f8bee361662f8575935b04?azure-portal=true).
+The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8b7a3a790b33df1c89e04c102715b7fe?azure-portal=true).

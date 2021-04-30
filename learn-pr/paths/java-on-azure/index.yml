@@ -51,8 +51,10 @@ modules:
 - learn.azure.deploy-event-driven-real-time
 - learn.azure.deploy-java-ee-app-to-app-service
 - learn.azure.deploy-java-azure-pipeline-terraform
+- learn.azure.cloud-scale-messaging-jms-service-bus
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis
 - learn.cosmos-db-java-app
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin
 trophy:

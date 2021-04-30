@@ -49,7 +49,7 @@ cd ..
 ## Test the project in the cloud
 
 1. Go to **Apps** in your Azure Spring Cloud instance.
-    1. Verify **todo-gateway** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Verify **todo-gateway** has a Registration status that says __1/1__. This shows that it is correctly registered in the Spring Cloud Service Registry.
     1. Select **todo-gateway** to have more information on the microservice.
 1. Copy/paste the public URL that is provided (there is a "Test Endpoint" like for microservices, but the gateway is directly exposed on the Internet, so let's use the public URL). Keep this URL handy for subsequent sections.
 

@@ -95,7 +95,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
 1. Under **Compute + storage**, select **Configure server**.
 
-1. Change **vCore** to two cores, increase the storage to **160 GB**, set the **Backup Retention Period** to **14 days**, and then select **OK**.15
+1. Change **vCore** to two cores, increase the storage to **160 GB**, set the **Backup Retention Period** to **14 days**, and then select **OK**.
 
 1. Back on the **Single server** page, under **Administrator account**, specify these values:
 

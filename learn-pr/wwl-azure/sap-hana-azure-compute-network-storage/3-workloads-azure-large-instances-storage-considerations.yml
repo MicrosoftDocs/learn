@@ -3,8 +3,8 @@ uid: learn.wwl.sap-hana-azure-compute-network-storage.sap-hana-workloads-azure-l
 title: Storage considerations
 metadata:
   title: Storage considerations
-  description: Storage considerations
-  ms.date: 12/20/2019
+  description: "Storage considerations"
+  ms.date: 03/16/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

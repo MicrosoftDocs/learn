@@ -89,7 +89,7 @@ There will be times when you need to have static values in your code, known as *
 For example, you can declare a constant like this:
 
 ```go
-const HTTPSatusOK = 200
+const HTTPStatusOK = 200
 ```
 
 As with variables, the type of a constant is inferred from the value assigned to it. In Go, constant names are typically written in MixedCased or all uppercase letters.
@@ -105,7 +105,7 @@ const (
 ```
 
 > [!NOTE]
-> Go has an interesting concept related to constants that's called *iota*, which we're not covering in this module. But you can learn more about it by looking at the [Go wiki on GitHub](https://github.com/golang/go/wiki/Iota). Just keep in mind that `iota` is a keyword that Go uses to simplify constant definitions when the values are sequential.
+> Go has an interesting concept related to constants that's called *iota*, which we're not covering in this module. But you can learn more about it by looking at the [Go wiki on GitHub](https://github.com/golang/go/wiki/Iota?azure-portal=true). Just keep in mind that `iota` is a keyword that Go uses to simplify constant definitions when the values are sequential.
 
 Although there are similarities between constants and variables, there are some key differences. For example, you can declare constants without using them. You won't get an error message. And you can't use the colon equal sign to declare constants. Go will complain if you do.
 

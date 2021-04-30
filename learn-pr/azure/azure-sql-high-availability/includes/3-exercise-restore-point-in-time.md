@@ -101,22 +101,23 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
 In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To use auditing in this way, you must first configure auditing.
 
-1. Go to the Azure portal, and then go to your Azure SQL database.
+1. Run the following to create a Log Analytics Workspace.
+
+    ```powershell
+    $WorkspaceName = "azuresql$($uniqueID)-la"
+    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
+    ```
+
+1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the left pane, under **Security**, select **Auditing**. Select **View server settings**. You can apply auditing at the server level. It then applies to all databases in the Azure SQL Database logical server.  
+1. On the left pane, under **Security**, select **Auditing**. Review the options, and then select **View server settings**.
 
-1. Set **Auditing** to **ON**.  
+1. Select **Enable Azure SQL Auditing**.  
 
-1. Select **Log Analytics (Preview)**, and then select **Configure**.  
-
-1. Select **Create New Workspace**.  
-
-1. Enter the information for the subscription, resource group, and location that you're using to complete this module. We recommend that you name your Log Analytics workspace **azuresql\<unique ID>-la**, filling in the unique ID for your resources. Select **OK**.  
-
-    It might take some time to validate and create your Log Analytics account. You should see it soon. 
+1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
 
 1. Select **Save**.  
 

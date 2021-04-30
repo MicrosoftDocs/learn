@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-bastion 
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure Bastion
+  description: Describe how Azure Bastion provides secure and seamless connectivity to your VMs directly in the Azure portal. Determine whether Azure Bastion can replace your administrative jump boxes.
+  ms.date: 03/12/2021             
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial  
+title: Introduction to Azure Bastion
+summary: Describe how Microsoft Azure can help to reduce the risk of unauthorized access to your cloud-based virtual machines (VMs). Evaluate whether Azure Bastion can help secure administrative access to your VMs.
+abstract: |
+  By the end of this module, you'll be able to: 
+    - Evaluate how Azure Bastion can help secure administrative access to your VMs.
+    - Describe how Azure reduces the risk of unauthorized access to your cloud-based VMs.
+prerequisites: |
+  - Experience performing remote administration using Remote Desktop Protocol (RDP) and Secure Shell (SSH)
+  - Experience administering hosted virtual machines
+  - Familiarity with remote administrative technologies and RDP/SSH protocols
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - auditor
+  - security-engineer
+  - technology-manager
+products:
+  - azure
+  - azure-bastion
+  - azure-virtual-network
+units:  
+- learn.intro-to-azure-bastion.1-introduction
+- learn.intro-to-azure-bastion.2-what-is-azure-bastion
+- learn.intro-to-azure-bastion.3-how-azure-bastion-works
+- learn.intro-to-azure-bastion.4-when-to-use-azure-bastion
+- learn.intro-to-azure-bastion.5-knowledge-check
+- learn.intro-to-azure-bastion.6-summary
+badge:
+  uid: learn.intro-to-azure-bastion.badge

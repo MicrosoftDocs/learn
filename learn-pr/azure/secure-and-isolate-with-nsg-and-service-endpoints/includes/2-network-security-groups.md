@@ -28,7 +28,7 @@ Rules have several properties:
 |---------|---------|
 |Name|A unique name within the network security group.|
 |Priority | A number between 100 and 4096. |
-|Source or destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group. |
+|Source and destination| Any, or an individual IP address, classless inter-domain routing (CIDR) block (10.0.0.0/24, for example), service tag, or app security group. |
 |Protocol     | TCP, UDP, or Any. |
 |Direction| Whether the rule applies to inbound, or outbound traffic.|
 |Port range     | An individual port or range of ports.  |
@@ -87,7 +87,7 @@ You can restrict access to many services. Microsoft manages the service tags (yo
 - **Internet** - Represents anything outside the virtual network address that is publicly reachable, including resources that have public IP addresses. One such resource is the Web Apps feature of Azure App Service.
 - **AzureTrafficManager** - Represents the IP address for Azure Traffic Manager.
 - **Storage** - Represents the IP address space for Azure Storage. You can specify whether traffic is allowed or denied. You can also specify if access is allowed only to a specific region, but you can't select individual storage accounts.
-- **SQL** - Represents the address for Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure SQL Data Warehouse services. You can specify whether traffic is allowed or denied, and you can limit to a specific region.
+- **SQL** - Represents the address for Azure SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure Synapse Analytics services. You can specify whether traffic is allowed or denied, and you can limit to a specific region.
 - **AppService** - Represents address prefixes for Azure App Service.
 
 ## App security groups

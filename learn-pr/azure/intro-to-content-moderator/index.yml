@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Content Moderator
-summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable.
+summary: Content Moderator checks text, image, and video content for material that is potentially offensive, risky, or otherwise undesirable in content.
 abstract: | 
   After completing this module, you will be able to:
   - Assess the benefits of Content Moderator
@@ -19,8 +19,8 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
-  - Basic familiarity with Azure Cognitive services
-iconUrl: /learn/achievements/generic-badge.svg
+  - Basic familiarity with Azure Cognitive Services
+iconUrl: /learn/achievements/intro-to-content-moderator.svg
 levels:
 - beginner
 roles:

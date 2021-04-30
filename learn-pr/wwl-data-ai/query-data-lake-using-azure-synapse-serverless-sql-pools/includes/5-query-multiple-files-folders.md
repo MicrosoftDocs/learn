@@ -1,6 +1,6 @@
-SQL serverless supports reading multiple files or folders by using wildcards, which are similar to [wildcards used in Windows OS]( https://docs.microsoft.com/previous-versions/windows/desktop/indexsrv/ms-dos-and-windows-wildcard-characters). However, greater flexibility is present since multiple wildcards are allowed.
+Serverless SQL pools supports reading multiple files or folders by using wildcards, which are similar to [wildcards used in Windows OS]( https://docs.microsoft.com/previous-versions/windows/desktop/indexsrv/ms-dos-and-windows-wildcard-characters). However, greater flexibility is present since multiple wildcards are allowed.
 
-Your first step is to create a database where you will execute the queries. Then initialize the objects by executing [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
+Your first step is to create a database where you will execute the queries. Then initialize the objects by executing the following [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples.
 
 You will use the folder csv/taxi to follow the sample queries. It contains NYC Taxi - Yellow Taxi Trip Records data from July 2016 to June 2018. Files in csv/taxi folder are named after years and month using the following pattern: yellow_tripdata_-.csv
 
