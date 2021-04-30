@@ -8,7 +8,7 @@ You'll see how to:
 - Deploy your solution
 - Examine and interpret the results
 
-You use an Azure virtual machine (VM) as an IoT Edge device and the video analytics solution is based on sample in the [GitHub repository]((https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision) ). 
+You use an Azure virtual machine (VM) as an IoT Edge device and the video analytics solution is based on sample in the [GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/factory-ai-vision). 
 
 ## Sample video
 
@@ -36,7 +36,7 @@ You'll use the following components in the design of the solution:
 
 - **Azure IoT Hub:** Azure IoT Hub provides a cloud-hosted solution back end to connect virtually any device.
 - **Azure IoT Edge virtual machine:** It's a virtual machine to install the runtime. In this module, you'll open network port 8181 to enable communications between your virtual machine and the web application.
-- **Live Video Analytics on IoT Edge:** is an [IoT Edge module](http://docs.microsoft.com/en-us/azure/marketplace/iot-edge-module) that has functionality to be combined with other Azure edge modules. Examples of such modules include: Stream Analytics on IoT Edge, Cognitive Services on IoT Edge, and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
+- **Live Video Analytics on IoT Edge:** is an [IoT Edge module](https://docs.microsoft.com/azure/marketplace/iot-edge-module) that has functionality to be combined with other Azure edge modules. Examples of such modules include: Stream Analytics on IoT Edge, Cognitive Services on IoT Edge, and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
 - **Custom Vision Service:** Custom Vision lets you build, deploy, and improve your image classifiers. An image classifier is an AI service that applies labels (representing classes) to images based on their visual characteristics.
 - **Media Services: **Azure Media Services is a collection of cloud and edge media workflow services that enable you to build solutions that require live and batch video analytics, transcoding, multi-device delivery services, content protection, and live event broadcasting at scale.
 
