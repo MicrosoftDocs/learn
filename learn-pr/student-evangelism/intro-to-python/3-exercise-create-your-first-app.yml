@@ -3,10 +3,10 @@ uid: learn.student-evangelism.intro-to-python.exercise-create-your-first-app
 title: Exercise - Create your first app
 metadata:
   title: Exercise - Create your first app
-  description: Use CPython to run a simple app and output a message to the console
+  description: Use Python to run an app and output a message to the console
   ms.date: 04/30/2019
   author: ShanaMatthews
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
