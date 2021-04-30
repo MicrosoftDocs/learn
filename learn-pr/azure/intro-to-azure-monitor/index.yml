@@ -12,7 +12,7 @@ metadata:
 ###
 ### Do not edit: title must be "Introduction to <product>"
 ###
-title: intro to azure monitor
+title: Intro to azure monitor
 ###########################################################################
 ###
 ### Summary
@@ -87,9 +87,9 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # Basic knowledge of Azure portal navigation
-  - # Basic knowledge of Azure resources
-  - # Basic knowledge of application and resource scaling considerations and performance considerations
+  - Basic knowledge of Azure portal navigation
+  - Basic knowledge of Azure resources
+  - Basic knowledge of application and resource scaling considerations and performance considerations
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
