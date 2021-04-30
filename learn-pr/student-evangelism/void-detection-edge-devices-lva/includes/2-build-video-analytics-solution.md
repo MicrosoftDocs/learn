@@ -1,6 +1,6 @@
-In this module, you'll learn how to use Azure Live Video Analytics on IoT Edge to deploy a model on the edge for detecting voids on the shelf. You'll also learn about the capabilities of Live Video Analytics to easily deploy a custom model as a container on the edge and analyze a simulated live video feed. You'll use Custom Vision to build and train a computer vision model by capturing and labeling a few images from the video feed.
+In this module, you'll learn how to use Azure Live Video Analytics on IoT Edge to deploy a model on the edge for detecting voids on the shelf. You'll also learn about the capabilities of Live Video Analytics easily to deploy a custom model as a container on the edge and analyze a simulated live video feed. You'll use Custom Vision to build and train a computer vision model by capturing and labeling a few images from the video feed.
 
-You will see how to:
+You'll see how to:
 
 - Set up the Azure resources
 - Set up edge workloads to the edge device
@@ -22,8 +22,8 @@ After the deployment manifest is sent, the IoTEdge agent running on your edge de
 
 - **Web Module**: This module is the web application that the user interacts with, for example when you add your camera this Web Module will set the graph with all your camera settings to the live video analytics module. Web Module is based on user setting can capture images automatically and send them to retrain using customvision.ai application protocol interface(API).
 - **Live Video Analytics (LVA)**: This module will parse frames from all the cameras and send them to the Inference Module.
-- **Inference Orchestrator:** This module sends frames to Predict Module and gets results. It also overlays results on the camera feed and sends a HTTP video stream out to Web Module and sends ML results to the Azure IoT hub.
-- **ML Predict Module:** This module runs customvision trained models using onnxruntime, it takes frames over HTTP or gRPC and sends JSON results.
+- **Inference Orchestrator:** This module sends frames to Predict Module and gets results. It also overlays results on the camera feed and sends an HTTP video stream out to Web Module and sends ML results to the Azure IoT hub.
+- **ML Predict Module:** This module runs custom vision trained models using onnxruntime, it takes frames over HTTP or gRPC and sends JSON results.
 - With **Live Video Analytics**, users can also allow Web Module to store videos based on inference results and push them to their provided media service account on Azure.
 
 ## Architecture
@@ -35,7 +35,7 @@ Here is the end-to-end Video Analytics solution architecture.
 You'll use the following components in the design of the solution:
 
 - **Azure IoT Hub:** Azure IoT Hub provides a cloud-hosted solution back end to connect virtually any device.
-- **Azure IoT Edge virtual machine:** It is a virtual machine to install the runtime. In this module, you will open network port 8181 to enable communications between your virtual machine and the web application.
+- **Azure IoT Edge virtual machine:** It's a virtual machine to install the runtime. In this module, you'll open network port 8181 to enable communications between your virtual machine and the web application.
 - **Live Video Analytics on IoT Edge:** is an [IoT Edge module](http://docs.microsoft.com/en-us/azure/marketplace/iot-edge-module) that has functionality to be combined with other Azure edge modules. Examples of such modules include: Stream Analytics on IoT Edge, Cognitive Services on IoT Edge, and Azure services in the cloud such as Media Services, Event Hub, Cognitive Services.
 - **Custom Vision Service:** Custom Vision lets you build, deploy, and improve your image classifiers. An image classifier is an AI service that applies labels (representing classes) to images based on their visual characteristics.
 - **Media Services: **Azure Media Services is a collection of cloud and edge media workflow services that enable you to build solutions that require live and batch video analytics, transcoding, multi-device delivery services, content protection, and live event broadcasting at scale.

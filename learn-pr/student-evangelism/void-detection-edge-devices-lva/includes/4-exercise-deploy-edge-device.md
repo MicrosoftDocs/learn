@@ -1,4 +1,4 @@
-You'll perform the following steps in Azure Cloud Shell. Before you start you need to have an active [Azure subscription](https://signup.azure.com/signup?offer=ms-azr-0044p&appId=102&ref=azureplat-generic&redirectURL=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fget-started%2Fwelcome-to-azure%2F&l=en-us&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88).
+You'll perform the following steps in Azure Cloud Shell. Before you start, you need to have an active [Azure subscription](https://signup.azure.com/signup?offer=ms-azr-0044p&appId=102&ref=azureplat-generic&redirectURL=https%3A%2F%2Fazure.microsoft.com%2Fen-us%2Fget-started%2Fwelcome-to-azure%2F&l=en-us&correlationId=3FCCAE4642E76FB009E6A1A1437E6E88).
 
 ## Create cloud resources
 
@@ -61,7 +61,7 @@ Register an IoT Edge device with your newly created IoT hub.
 
 ## Configure your IoT Edge device
 
-1. You will need to create ssh key for your deployment using Cloud Shell. The following command creates an SSH key pair using RSA encryption and a bit length of 4096:
+1. You'll need to create ssh key for your deployment using Cloud Shell. The following command creates an SSH key pair using RSA encryption and a bit length of 4096:
 
    ```
    ssh-keygen -m PEM -t rsa -b 4096
@@ -94,10 +94,10 @@ Register an IoT Edge device with your newly created IoT hub.
 
     [![The illustration shows how to add inbound port.](../media/add-port-rule.png)]() 
    
-3. Fill out 'Destination port ranges' and 'Name.' After this, you will see a pop-up telling you that it's creating the security rule 'Port_8181'.
+3. Fill out 'Destination port ranges' and 'Name.' After this, you'll see a pop-up telling you that it's creating the security rule 'Port_8181'.
   
     [![The illustration shows how to add inbound security port.](../media/create-security-rule.png)](../media/create-security-rule.png)
 
-4. Finally, you will see Port 8181 will be added. 
+4. Finally, you'll see Port 8181 will be added. 
 
     [![The illustration shows port 8181.](../media/port-8181.png)](../media/port-8181.png)

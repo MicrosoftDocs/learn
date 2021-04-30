@@ -54,11 +54,11 @@ Perform the following steps in the Azure Cloud Shell environment.
 
     [![The illustration shows the platform.](../media/choose-platform.png)](../media/choose-platform.png)
 
-11. You will be asked if your device have a GPU or not. Choose CPU as your Edge device doesn't have it.
+11. You will be asked if your device has a GPU or not. Choose CPU as your Edge device doesn't have it.
 
     [![The illustration shows devices.](../media/choose-device.png)](../media/choose-device.png)
 
-12. The installation will be started after. Please wait for couple minutes to complete the installation. You can check the deployment status on the [Azure portal](https://portal.azure.com/#home)
+12. The installation will be started after. You'll wait for couple minutes to complete the installation. You can check the deployment status on the [Azure portal](https://portal.azure.com/#home)
 
     [![The illustration shows deployment.](../media/create-deployment.png)](../media/create-deployment.png)
 

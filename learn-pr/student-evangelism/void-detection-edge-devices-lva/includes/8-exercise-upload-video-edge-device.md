@@ -55,4 +55,4 @@ Perform the following steps in Azure Cloud Shell.
 
 After uploading the video to RTSP simulator, you can access the RTSP stream of your video through ***rtsp://rtspsim:554/media/<video_name>***. 
 
-For this example, it'll be ***rtsp://rtspsim:554/media/scenario4-empty-shelf-alert.mkv***. Make a note of RTSP URL.
+For this example, it will be ***rtsp://rtspsim:554/media/scenario4-empty-shelf-alert.mkv***. Make a note of RTSP URL.

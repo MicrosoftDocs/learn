@@ -12,7 +12,7 @@ title: "Void detection on Edge devices with Live Video Analytics using own image
 summary: "Use a Live Video Analytics module on IoT Edge and deploy a Custom Vision machine learning solution to an IoT Edge device. The solution will identify void spaces in shelves. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |
     In this module, you will:
-    - Leverage Live Video Analytics to build video analytics solution with Custom Vision
+    - Use Live Video Analytics to build video analytics solution with Custom Vision
     - Deploy a set of modules to an IoT Edge virtual machine using the installer
     - Set up an application that uses the virtual device for rapid inference at the edge
     - Deploy a solution that will enable you to watch images with defects through a web application

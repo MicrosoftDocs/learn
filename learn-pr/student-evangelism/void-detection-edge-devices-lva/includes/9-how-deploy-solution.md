@@ -1,10 +1,10 @@
 So far, your edge device is configured to IoT Hub, and your edge modules are deployed and are running at your edge device.
 
-To deploy a Video Analytics solution with your images, you will need to connect the web module container to your device's IP address via port 8181. The Web module is the web application that the user interacts with.
+To deploy a Video Analytics solution with your images, you'll need to connect the web module container to your device's IP address via port 8181. The Web module is the web application that the user interacts with.
 
 After connecting the web application, you first need to add a camera to stream out the video file you uploaded to the RTSP simulator. To do that, you need to provide RTSP URL.
 
-Then you will manually capture images and tag objects as gaps. You need to capture at least 15 images to get a good result. 
+Then you'll manually capture images and tag objects as gaps. You need to capture at least 15 images to get a good result. 
 
 Finally, you'll deploy a task by providing your camera and object detail. 
 
