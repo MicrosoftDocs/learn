@@ -11,27 +11,45 @@ service components
 network connectivity
 
 -->
-## Managing Azure VMware Solutions
+Azure VMware Solution (AVS) provides you with private clouds that contain vSphere clusters, built from dedicated bare-metal Azure infrastructure. Keep managing your existing environments with the same VMware tools you already know while you modernize your applications using Azure services. 
 
-The Azure portal is used for deployment and several management operations. vCenter and NSX Manager are used to manage vSphere and NSX-T resources.  
+This unit you will cover the tools and services to manage, migrate, secure, and provide continuity of operations for your AVS environment. 
 
-Microsoft is responsible for the lifecycle management of VMware software (ESXi, vCenter, PSC, and NXS) in the Azure VMware Solution private cloud. 
+### Familiar and consistent VMware tools and technology
+Create operational consistency for admins as you continue to use VMware for resources running on Azure infrastructure including vSphere Client and NSX-T Manager. The Azure portal is used for deployment and several management operations. 
 
-The AVS software is upgraded on a schedule that tracks the software bundle's release from VMware. The upgrades do not require downtime. 
-The upgrade keeps the software within one version of the most recent software bundle release. The versions may differ from the most recent versions of the individual software components (ESXi, NSX-T, vCenter, vSAN).
+Access to vSphere, VMware HCX, and NSX-T are enabled during the Private Cloud deployment process. Credentials are registered in Azure connect to the private cluster hosts.
 
-Software updates include:
+### Seamless integration for Azure infrastructure resources 
+Easily scale and manage your infrastructure as your business needs it through the Azure portal and native tools. Add new nodes as required to increase compute and storage during peak times. And delete nodes seasonally when infrastructure demands are lower. 
 
-Patches - Security patches or bug fixes released by VMware
-Updates - Minor version change of a VMware stack component
-Upgrades - Major version change of a VMware stack component
-Microsoft tests a critical security patch as soon as it becomes available from VMware.
+Add and delete new clusters as required:
+
+- Min 3 nodes per cluster
+- Max 16 nodes in a vSphere cluster
+- Max 64 nodes to an Azure Private Cloud instance
+
+Once AVS is deployed into your subscription, Azure Monitor logs are generated automatically. Azure Monitor logs can provide the following data:
+
+- Collect logs on each of your VMs.
+- Download and install the MMA agent on Linux and Windows VMs.
+- Enable the Azure diagnostics extension.
+- Create and run new queries.
+- Run the same queries you usually run on your VMs
 
 
-##  Migration into Azure VMware Solutions
+
+###  Migration into Azure VMware Solutions
+Before to migrating to Azure VMware Solution (AVS), an assessment of on-premises servers in your VMware environment should be completed. One of the recommended tools for assessments is the Azure Migrate: Discovery and assessment tool. An AVS assessment can be created for servers in VMware environment only. There are three types of assessments you can create using Azure Migrate: Discovery and assessment. 
+
+|  Assessment Type | Details |
+| :---------- | :------------------ |
+| Azure VM |Assessments to migrate your on-premises servers to Azure virtual machines. You can assess your on-premises servers in VMware and Hyper-V environment, and physical servers for migration to Azure VMs using this assessment type.|
+| Azure SQL | Assessments to migrate your on-premises SQL servers from your VMware environment to Azure SQL Database or Azure SQL Managed Instance. |
+| Azure VMware Solution (AVS) | Assessments to migrate your on-premises servers to Azure VMware Solution (AVS). You can assess your on-premises servers in VMware environment for migration to Azure VMware Solution (AVS) using this assessment type |
 
 
-## Securing Azure VMware Solutions
+### Security and compliance with Azure VMware Solutions
 Azure VMware Solution private clouds use vSphere role-based access control for acesss and security. You can integrate vSphere SSO LDAP capabilities with Azure Active Directory. 
 
 In Azure VMware Solution, vCenter has a built-in local user called cloudadmin and assigned to the CloudAdmin role.  The CloudAdmin role has vCenter privileges that differ from other VMware cloud solutions.
@@ -43,3 +61,9 @@ In Azure VMware Solution, vCenter has a built-in local user called cloudadmin an
 - The private cloud user doesn't have access to and can't configure specific management components supported and managed by Microsoft. For example, clusters, hosts, datastores, and distributed virtual switches.
 
 vSan storage datastore security is provided by data-at-rest encryption that is turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted, wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately.
+
+### Continuity of Operations
+Azure VMware Solution provides application high availability and modernization with well-managed Azure Infrastructure designed for end-to-end High Availability. The Azure VMware Solution has built in redundancy with no single point of failure.
+
+
+ 

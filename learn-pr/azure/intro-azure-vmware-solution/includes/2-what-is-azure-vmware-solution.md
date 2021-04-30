@@ -17,17 +17,28 @@ Writing resources:
 - Use Acrolinx as you're writing content. You must have overall score of 80 to get PRs merged: https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-acrolinx-vscode?branch=master
 
 -->
+Azure VMware Solution is a VMware validated solution with on-going certification and testing of enhancements and upgrades. Microsoft manages and maintains the infrastructure and software, allowing you to focus on developing and running workloads that are critical to your business.
+
+
+
 ## Discover Azure VMware Solution
 
 Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution (AVS). AVS enables organizations to efficiently move existing VMware apps to Azure.
 
-With the Azure VMware Solution, you run your VMware estate or a single app on dedicated Azure infrastructure. AVS becomes a platform by which VMware workloads easily be modernized through integration with Azure services such as Azure Active Directory, Azure AI, and Analytics enabling new, intelligent experiences. 
+Azure VMware Solution (AVS) provides you with a dedicated, private cloud in Azure. The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services.
+
+The diagram above illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments. Network access from AVS to Azure services or networks provides reliable, high-speed integration of Azure service endpoints. ExpressRoute Global Reach connects your on-premises environment to your Azure VMware Solution private cloud, providing a unified experience for users and customers accessing AVS-based workloads.
+
+With the Azure VMware Solution, you run your VMware estate or a single app on dedicated Azure infrastructure. AVS becomes a platform by which VMware workloads easily be modernized through integration with Azure services such as :
+- Azure Active Directory
+- Azure AI
+- Analytics 
+- Azure Monitor
+
 
 AVS provides value to customers in six  core pillars:
 
-**Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements to that experience over time
-
-**Use Existing VMware investments. You can use all of your existing investments in VMware:
+**Unified Azure experience** Single portal interface on Azure with no connection to any third-party services. Allows customers to take advantage of a consistent Azure experience and benefits from the continual improvements to that experience over time. You can use all of your existing investments in VMware:
 - Training
 - Process management
 - Change management
@@ -41,15 +52,8 @@ AVS provides value to customers in six  core pillars:
 
 **Azure Hybrid Use Benefits** Maximize the value of existing Windows Server and SQL Server licenses. Save up to 80% with AHUB and Azure Reserved Instances
 
-## What is Azure VMware Solution
 
-Azure VMware Solution is a VMware validated solution with on-going certification and testing of enhancements and upgrades. Microsoft manages and maintains the infrastructure and software, allowing you to focus on developing and running workloads that are critical to your business.
-
-Azure VMware Solution (AVS) provides you with a dedicated, private cloud in Azure. The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services.
-
-The diagram above illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments. Network access from AVS to Azure services or networks provides reliable, high-speed integration of Azure service endpoints. ExpressRoute Global Reach connects your on-premises environment to your Azure VMware Solution private cloud, providing a unified experience for users and customers accessing AVS-based workloads.
-
-## Logical Architecture - Private clouds, clusters, hosts, and storage
+###  Private clouds, clusters, and hosts
 
 Private clouds contain vSAN clusters built with dedicated, bare-metal Azure hosts. Each private cloud can have multiple clusters managed by the same vCenter server and NSX-T Manager. Private clouds are installed and managed from within an Azure subscription. The number of private clouds within a subscription is scalable. Initially, there's a limit of one private cloud per subscription.
 
@@ -59,6 +63,7 @@ The high-end hosts have 576-GB RAM and dual Intel 18 core, 2.3-GHz processors. T
 
 The VMware software versions used in new deployments of Azure VMware Solution private clouds clusters are:
 
+
 | Software   | Version |
 | :---------- | :------------------ |
 | VCSA / vSphere / ESXi | 6.7 U3l|
@@ -67,7 +72,7 @@ The VMware software versions used in new deployments of Azure VMware Solution pr
 | NSX-T | 4.0 |
 NOTE: NSX-T is the only supported version of NSX. New clusters added to an existing private cloud, the currently running software version is applied
 
-## Private cloud networking
+### Private cloud networking
 The Azure VMware Solution private cloud environment can be accessible from on-premises and Azure-based resources.  The following services deliver the connectivity:
 
 - Azure ExpressRoute
@@ -88,12 +93,13 @@ There are two ways to interconnectivity in the Azure VMware Solution private clo
 During the deployment of a private cloud the private networks for management, provisioning, and vMotion get created. These private networks will be used to access vCenter and NSX-T Manager and virtual machine vMotion or deployment.
 
 
-## Private cloud storage
+### Private cloud storage
 
-Azure VMware Solution uses native, cluster-wide storage with VMware vSAN. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default.
+Azure VMware Solution uses native fully configured all-flash vSAN storage, local to the cluster. All local storage from each host in a cluster is used in a vSAN datastore and data-at-rest encryption enabled by default. De-duplication and compression are enabled on the vSAN datastore by default
 
-Local storage in each cluster host is used as part of a vSAN datastore. All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Local storage in cluster hosts is used in cluster-wide vSAN datastore. All datastores are created as part of a private cloud deployment and are available for use immediately.
+All diskgroups use an NVMe cache tier of 1.6 TB with the raw, per host, SSD-based capacity of 15.4 TB. Two disk groups are created on each node of the vSphere cluster. Each disk group contains one cache disk and three capacity disks. All datastores are created as part of a private cloud deployment and are available for use immediately.
 
+Policy is created on the vSphere cluster and applied to the vSAN datastore, determines how the VM storage objects are provisioned and allocated within the datastore to guarantee the required level of service. To maintain SLA, 25% spare capacity must be maintained on the vSAN datastore. 
 You can use Azure storage services in workloads running in your private cloud. The Azure storage services include:
 - Storage Accounts 
 - Table Storage
