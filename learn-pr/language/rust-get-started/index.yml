@@ -3,7 +3,7 @@ uid: learn.language.rust-get-started
 metadata:
   title: Get started with Rust
   description: Learn how to get started with Rust - set up the environment, write a program, and use the Cargo build system.
-  ms.date: 12/01/2020
+  ms.date: 04/26/2021
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -30,8 +30,8 @@ products:
 units:
 - learn.language.rust-get-started.1-introduction
 - learn.language.rust-get-started.2-what-is-rust
-- learn.language.rust-get-started.3-install-rust
-- learn.language.rust-get-started.4-install-visual-studio-code
+- learn.language.rust-get-started.3a-install-code-editor
+- learn.language.rust-get-started.4a-install-rust-build-tools
 - learn.language.rust-get-started.5-hello-world
 - learn.language.rust-get-started.6-what-is-cargo
 - learn.language.rust-get-started.7-hello-world-cargo
