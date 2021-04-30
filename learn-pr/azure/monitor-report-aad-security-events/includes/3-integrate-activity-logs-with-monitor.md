@@ -26,18 +26,18 @@ You know that Azure collects user data in the form of audit and sign-in log file
 
 Creating a Log Analytics workspace is straightforward.
 
-1. Sign in to your Azure portal or sandbox instance.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **All service** and, in the **Search** box, enter **log analytics**.
+1. Select **More service** and, in the **Search** box, enter **log analytics**.
 
-1. In the results list, select **Log Analytics workspaces**, and then select **Add** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
+1. In the results list, select **Log Analytics workspaces**, and then select **New** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
 
    a. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
    b. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
 
    The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
-1. Select **OK** to create the workspace.
+1. Select **Create** to create the workspace.
 
 You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
 

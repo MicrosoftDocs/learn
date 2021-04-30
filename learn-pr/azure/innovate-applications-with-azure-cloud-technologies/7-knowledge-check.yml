@@ -1,0 +1,99 @@
+### YamlMime:ModuleUnit
+uid: learn.innovate-applications-azure-cloud-technologies.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/23/2021
+  author: jomore
+  ms.author: jomore
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What are the main phases of the innovation lifecycle?"
+    choices:
+    - content: The waterfall process
+      isCorrect: false
+      explanation: "The waterfall process is typically too slow to result in an agile innovation lifecycle."
+    - content: Build, measure, learn
+      isCorrect: true
+      explanation: "This iterative process is the basic framework to run progressive innovations."
+    - content: Crawl, walk, run
+      isCorrect: false
+      explanation: "Although progressively increasing functionality and complexity is typically a good idea, it isn't necessarily related to the innovation process."
+
+  - content: "Why are microservices architectures often associated with innovation?"
+    choices:
+    - content: "Because microservices architectures are more secure than monolithic software"
+      isCorrect: false
+      explanation: "Security isn't the main differentiator between microservices and monolithic architectures. It's the way in which different application modules interact with each other."
+    - content: "Because they're based in Kubernetes"
+      isCorrect: false
+      explanation: "Although microservices architectures are often based in containerized software, it isn't a requirement."
+    - content: "Because they enable introducing new functionality in one microservice without affecting the rest"
+      isCorrect: true
+      explanation: "The ability to innovate on one microservice without having to touch the rest means that new functionality can be implemented quickly."
+
+  - content: "Why is adopting a DevOps culture critical to enable effective innovation?"
+    choices:
+    - content: "Because it enables testing in production"
+      isCorrect: false
+      explanation: "Actually, DevOps means the opposite: testing as early in the development process as possible, to make software rollouts a safer practice."
+    - content: "Because it uses GitHub"
+      isCorrect: false
+      explanation: "Although GitHub is a great tool to support your DevOps process, it's not the most important criterion in adopting a DevOps culture in an organization."
+    - content: "Because it enables bringing new functionality to applications both quickly and reliably"
+      isCorrect: true
+      explanation: "Deploying new features quickly and reliably allows you to validate or reject innovation hypotheses faster and more efficiently."
+
+  - content: "Is Kubernetes a requirement to innovate an application?"
+    choices:
+    - content: "No, but containerization can make the build step faster."
+      isCorrect: true
+      explanation: "Application containerization isn't essential for innovation. But it can ease testing and validation of new application code. As a consequence, it accelerates the innovation process."
+    - content: "Yes, only containerized applications can be innovated."
+      isCorrect: false
+      explanation: "Although containerization does ease testing and validation of new application code, non-containerized code can be innovated as well."
+    - content: "No, because Kubernetes increases the operational complexity for an application."
+      isCorrect: false
+      explanation: "Although it's true that Kubernetes introduces some operational complexity, containerization accelerates the process of application development."
+
+  - content: "Is it possible to build machine learning and AI into an application without data scientists?"
+    choices:
+    - content: "Yes, with Azure Kubernetes Service."
+      isCorrect: false
+      explanation: "Although Azure Kubernetes Service can help in the build process, and it can run any containerized application (including machine learning and AI), it's not essential to enrich an application with AI."
+    - content: "Yes, with prebuilt models such as Azure Cognitive Services."
+      isCorrect: true
+      explanation: "Azure Cognitive Services has prebuilt APIs ready to be embedded into any application without requiring data science skills."
+    - content: "No, a data science department is always required."
+      isCorrect: false
+      explanation: "Although it's true that data scientists can build powerful models adapted to each organization's needs, there are other options if no data science expertise is available."
+
+  - content: "Which Azure service allows the extraction of telemetry information from user activity to validate or reject innovation hypotheses?"
+    choices:
+    - content: "Azure DevOps"
+      isCorrect: false
+      explanation: "Azure DevOps is a great tool to support your DevOps process, but it doesn't include application performance management."
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Azure App Service is a great platform to run web-based applications, but it doesn't include reporting of application telemetry."
+    - content: "Azure Application Insights"
+      isCorrect: true
+      explanation: "Azure Application Insights can track how customers use an application, track how the application performs, and detect anomalies in application performance."
+
+  - content: "Why is data democratization critical for innovation?"
+    choices:
+    - content: "Because everybody can use spreadsheets"
+      isCorrect: false
+      explanation: "Although spreadsheets are common for data analysis, they're not great to share and democratize data."
+    - content: "Because hypothesis validation should be data driven"
+      isCorrect: true
+      explanation: "Ideally, all decisions in an organization should be driven by data, including the innovation process."
+    - content: "Because machine learning is the future"
+      isCorrect: false
+      explanation: "Although machine learning can uncover hidden data correlations, data-driven decisions don't need to be supported by sophisticated algorithms to be effective."

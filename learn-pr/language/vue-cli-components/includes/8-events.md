@@ -16,12 +16,12 @@ export default {
 
 ## Emit events
 
-You emit an event by using the `emit` function. If you want to emit an event that an HTML control has raised directly, you can perform this operation inline. Notice how you can emit the `userUpdated` event by registering the `click` event handler for a button:
+You emit an event by using the `$emit` function. If you want to emit an event that an HTML control has raised directly, you can perform this operation inline. Notice how you can emit the `userUpdated` event by registering the `click` event handler for a button:
 
 ```html
 <!-- inside the component's vue file -->
 <template>
-    <button @click="emit('userUpdated')">Save user</button>
+    <button @click="$emit('userUpdated')">Save user</button>
 </template>
 ```
 
@@ -51,10 +51,10 @@ export default {
 
 ## Emit events with data
 
-The component might need to return data to the parent through events. You can return any data by passing additional parameters to `emit` or `$emit`. If you want to indicate that the update was successful by returning `true`, you can update the call like this:
+The component might need to return data to the parent through events. You can return any data by passing additional parameters to `$emit`. If you want to indicate that the update was successful by returning `true`, you can update the call like this:
 
 ```html
-<button @click="emit('userUpdated', true)">Save user</button>
+<button @click="$emit('userUpdated', true)">Save user</button>
 ```
 
 Or you can use a method:

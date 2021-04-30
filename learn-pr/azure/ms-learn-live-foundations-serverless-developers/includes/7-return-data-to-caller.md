@@ -7,24 +7,28 @@ Use the context object to return JSON data to the caller.
 
 ## Instructions
 
-1. Create a variable called `loadedProduct` and assign an object including the properties shown below
-1. Assign an anonymous object to the `context.res` property
-1. Add the `status`, `header` and `body` properties and assign values as shown below
+To use the context object to return JSON data to the caller:
 
-```typescript
-const loadedProduct = {
-    id: productId,
-    name: "A product",
-    description: "First product to be returned - yay!"
-};
+1. Create a variable called `loadedProduct` and assign an object including the properties in the following code.
 
-context.res = {
-    status: 200,
-    headers: { "Content-Type": "application/json" },
-    body: {
-        product: loadedProduct
-    }
-};
-```
+1. Assign an anonymous object to the `context.res` property.
+
+1. Add the `status`, `header`, and `body` properties and assign values as follows.
+
+    ```typescript
+    const loadedProduct = {
+        id: productId,
+        name: "A product",
+        description: "First product to be returned - yay!"
+    };
+    
+    context.res = {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+        body: {
+            product: loadedProduct
+        }
+    };
+    ```
 
 You can run the function in the browser and see it return JSON data.
