@@ -1,19 +1,21 @@
-The Speech-to-Text aspect of the Speech service transcribes audio streams into text. Your application can display this text to the user or act upon it as command input. You can use this service either with an SDK client library (for supported platforms and languages) or a representational state transfer (REST) API. 
+The Speech service provides APIs that you can use to build speech-enabled applications. Specifically, the Speech service supports:
 
-With the Speech Service, you can:
+- **Speech-to-Text**: An API that enables *speech recognition* in which your application can accept spoken input.
+- **Text-to-Speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
+- **Speech Translation**: An API that you can use to translate spoken input into multiple languages.
+- **Speaker Recognition**: An API that enables your application to recognize individual speakers based on their voice.
+- **Intent Recognition**: An API that integrates with the **Language Understanding** service to determine the semantic meaning of spoken input.
 
-- Extend the reach of your applications across mobile, desktop, and web to provide speech-to-text transcription.
-- Easily translate to and from multiple, supported languages through the open REST interface of the Speech SDK. This API is a cloud-based automatic speech-translation service (also known as machine translation).
-- Perform Text-to-Speech operations that can accept text input and then output a spoken version of that text, using synthesized speech.
-- Perform entity recognition through integration with Language Understanding (LUIS)
-
-> [!NOTE]
-> This module requires an Azure subscription. Many of the services that you create and use may be free, but you'll need an active subscription or trial to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
+This module focuses on speech recognition and speech synthesis, which are core capabilities of any speech-enabled application.
 
 ## Learning objectives
 
-In this module, you'll: 
+In this module, you'll learn how to: 
 
-- Learn some of the capabilities of speech-to-text
-- Explore the Speech-to-Text service to convert an audio file to a text output
-- Explore the ability to convert speech from a microphone to a text output
+- Provision an Azure resource for the Speech service
+- Use the Speech-to-Text API to implement speech recognition
+- Use the Text-to-Speech API to implement speech synthesis
+- Configure audio format and voices
+- Use Speech Synthesis Markup Language (SSML)
+
+The units in the module include important conceptual information about the Speech service and how to use its API through one of the supported software development kits (SDKs), after which you'll be able to try the Speech service for yourself in a hands-on exercise. To complete the hands-on exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).

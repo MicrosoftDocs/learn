@@ -18,7 +18,7 @@ quiz:
 
   - content: 'Which can you use to manage a group of identical, load balanced VMs?'
     choices:
-    - content: 'a load balancer'
+    - content: 'Load balancer'
       isCorrect: false
       explanation: "A load balancer can sit in front of those VMs, but it won't manage them."
     - content: 'virtual hard disks (VHDs)'

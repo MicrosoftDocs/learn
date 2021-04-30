@@ -36,7 +36,7 @@ fn main() {
     };
 
     // Instantiate a tuple struct by passing the values in the same order as defined.
-    let origin = Point2D(0, 0)
+    let origin = Point2D(0, 0);
 
     // Instantiate a unit struct.
     let unit = Unit;
