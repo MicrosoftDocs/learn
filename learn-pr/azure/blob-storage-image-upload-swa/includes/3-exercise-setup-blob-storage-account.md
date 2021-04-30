@@ -1,5 +1,3 @@
-# Exercise: setup your Blob Storage account
-
 Log in to Azure portal and create an Azure Storage Account called `uploadimagesample` (feel free to use any other name you prefer). You can do that by clicking the big plus button that says "Create a new resource", and then type "Storage Account" in the "Search the Marketplace" bar.
 
 :::image type="content" source="../media/new_storage_account.png" alt-text="Create a new Storage account":::

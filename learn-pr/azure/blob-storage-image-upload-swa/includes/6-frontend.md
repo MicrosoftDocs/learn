@@ -1,5 +1,3 @@
-# Describe the Fronted
-
 For the frontend we are going to build an image upload form that will load a file from the user's computer, and then upload that file to your Azure BLob Storage account. 
 
 First you need to retrive your storage account URL, and the SAS Token from the serverless API you created in the previous exercise. To do that you will use the Axios JavaScript library to perform the API call that will retrieve those values. 

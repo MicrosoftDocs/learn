@@ -1,5 +1,3 @@
-# Exercise: create the image upload frontend
-
 Start by creating an `index.html` file in the root folder, and add the following code to it:
 
 ```html

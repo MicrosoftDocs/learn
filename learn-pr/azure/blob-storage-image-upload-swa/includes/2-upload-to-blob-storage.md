@@ -1,5 +1,3 @@
-# Describe uploading to Blob Storage
-
 You decided to store your users images on Azure Blob Storage, allowing them to upload images directly from their browsers. THe problem is if you have a storage backend that's accessed publicly via the browser, you want to restrict who's able to upload images there. By going the way of Azure Static Web Apps, you are presented with the problem of how to authenticate users towards Azure Blob Storage.
 
 As you can see in the following image, your frontend cannot access Blob Storage. Your storage account key resides in Azure, and for security reasons you cannot share that with the world. So what do you do?

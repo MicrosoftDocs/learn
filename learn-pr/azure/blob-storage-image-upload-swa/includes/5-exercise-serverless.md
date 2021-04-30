@@ -1,5 +1,3 @@
-# Exercise: Build your serverless backend
-
 Create project folder, call it `uploadimage`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed. 
 
 Type `ctrl+shift+p` to launch the command prompt type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.

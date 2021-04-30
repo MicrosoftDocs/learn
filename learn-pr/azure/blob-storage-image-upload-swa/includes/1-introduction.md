@@ -1,5 +1,3 @@
-# Introduction
-
 You run a photo sharing application and due to scalability requirements, you migrated your storage to the cloud. You need to allow your users to upload images directly from their browsers. This poses a security challenge. How to grant your users access to your storage backend without compromising the security of your data. You would like to find a way to allow your users to upload images while keeping your storage account safe.
 
 Using Shared Access Signatures, you could grant access to your storage account, but since every new user session will require a new Shared Access Signature, you need a way to generate them on demand.

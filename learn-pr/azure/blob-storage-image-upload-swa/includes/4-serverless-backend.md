@@ -1,5 +1,3 @@
-# Describe the Serverless Backend
-
 For a client to be able to use anonymous authentication when sending data to Azure Blob Storage, the storage backend needs to have a way to authorize their requests. This can be solved by proving users with a SAS token that once attached to their requests will let them upload images to the storage backend. You are going to create a serverless API that creates SAS tokens on demand.
 
 Your Azure Function will return a JSON object containing two values: a URL where images should be uploaded to, and a SAS token. The browser client will use these valies to authenticate upload requests.
