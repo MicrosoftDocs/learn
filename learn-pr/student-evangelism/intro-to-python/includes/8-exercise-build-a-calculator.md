@@ -1,6 +1,6 @@
 Now that you've experimented with reading input and creating variables, let's try a slightly more complicated Python program - a simple additive calculator.
 
-1. Let's create a new Python script file named **calc.py**. Close the editor if it's still open and type the following into the terminal window.
+1. Let's create a new Python script file named **calc.py**. Close the editor, if it's still open, and type the following code into the terminal window.
 
     ```bash
     code calc.py
@@ -18,7 +18,7 @@ Now that you've experimented with reading input and creating variables, let's tr
 
 1. Run your program and verify that it runs as you expect. If you get an error, see if you can identify what the issue is and correct it.
 
-1. Here's some example output - note that your output doesn't have to match this exactly, but it should be similar.
+1. Here's some example output - note that your output doesn't have to match the below output exactly, but it should be similar.
 
 ```output
 Enter the first number: 10

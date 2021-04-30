@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development
-title: Setup a Local Development Environment
+title: Set up a local development environment
 metadata:
-  title: Setup a Local Development Environment
-  description: Setup a Local Development Environment
+  title: Set up a local development environment
+  description: Set up a local development environment
   ms.date: 05/04/2020
   author: krumelur
   ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/2-setup-local-development.md)]
