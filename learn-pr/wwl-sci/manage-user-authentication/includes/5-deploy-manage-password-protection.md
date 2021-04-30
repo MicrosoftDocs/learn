@@ -135,7 +135,7 @@ The following core requirements apply:
 | Endpoint |  Purpose |
 | - | -|
 |  https://login.microsoftonline.com | Authentication requests |
-| https://enterpriseregistration.windows.net | Azure AD Password Protection functionality |
+| 'https://enterpriseregistration.windows.net' | Azure AD Password Protection functionality |
 
 ### Azure AD Password Protection DC agent
 

@@ -38,4 +38,4 @@ units:
 - learn.azure.azure-container-instances-sidecar.knowledge-check
 - learn.azure.azure-container-instances-sidecar.summary
 badge:
-  uid: learn.azure.azure-container-instances-sidecar.badge
+  uid: learn.azure.secure-apps-azure-container-instances-sidecar.badge
