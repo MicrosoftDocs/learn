@@ -9,7 +9,7 @@ After creating your Azure resource, you will need the following information to u
 
 You can view of these values on the **Keys and Endpoint** page for your resource in the Azure portal.
 
-> [! NOTE]
+> [!NOTE]
 > If you are currently using *Bing Speech* or the older *Translator Speech* API, Microsoft offers migration strategies for bringing your applications over to the Speech service.  Your Translator Speech access keys will not work on the new Speech services endpoints, which necessitate a migration to the new services.
 >
 > See the following resources for more information:
