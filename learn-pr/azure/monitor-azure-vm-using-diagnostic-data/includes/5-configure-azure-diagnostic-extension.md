@@ -10,11 +10,11 @@ The Azure Diagnostics extension allows you to collect real-time performance metr
 
 You can add the extension for Linux or Windows when you create the VM in Azure. In the **Monitoring** section, you set **OS guest diagnostics** to **On**.
 
-![Screenshot of the Create a VM Management page, showing the OS guest diagnostics option selected](../media/5-add-diagnostics-on-creation.png)
+![Screenshot of the Create a VM Management pane, showing the OS guest diagnostics option selected](../media/5-add-diagnostics-on-creation.png)
 
 If you've already created the VM, the easiest way to add the extension is by going to **Diagnostic settings** for the VM. Select the storage account, and then select **Enable guest-level monitoring**.
 
-![Screenshot of the diagnostic settings page, showing the enable page](../media/5-enable-diagnostics-portal.png)
+![Screenshot of the diagnostic settings pane, showing the enable pane](../media/5-enable-diagnostics-portal.png)
 
 You can also add the extension by using the Azure CLI or PowerShell. In the Azure CLI, you use the `az vm boot-diagnostics enable` command. In PowerShell, you use the `Set-AzVMBootDiagnostic` command.
 
@@ -33,13 +33,12 @@ You have different configuration options depending on the OS installed on the VM
 
 However, you can choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-You can configure the extension in the Azure portal. The configuration is changed in the same place for both operating systems, on the **Diagnostic settings** page.
+You can configure the extension in the Azure portal. The configuration is changed in the same place for both operating systems, on the **Diagnostic settings** pane.
 
-![Screenshot of the page for diagnostic settings](../media/5-diagnostics-settings-on.png)
+![Screenshot of the pane for diagnostic settings](../media/5-diagnostics-settings-on.png)
 
 Because each feature provides specific information, you choose the ones that meet your needs. When you've collected diagnostic logs for a VM, you have a few places where you can use them:
 
    - Keep the logs in a storage account for auditing or manual inspection of application issues.
    - Use other services to ingest the logs (Azure Event Hubs, Power BI).
    - Use Azure Monitor to analyze the logs.
-
