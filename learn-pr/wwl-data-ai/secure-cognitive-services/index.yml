@@ -5,7 +5,7 @@ metadata:
   description: "Learn how to secure Cognitive Services to prevent data loss and privacy violations for user data that may be a part of the solution."
   ms.date: 09/13/2020
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure Cognitive Services
