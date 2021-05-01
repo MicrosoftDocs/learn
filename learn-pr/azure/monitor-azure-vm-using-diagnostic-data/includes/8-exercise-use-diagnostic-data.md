@@ -22,7 +22,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Select the resource
 
-1. Under **Scope**, click the **Select resource** link.
+1. Under **Scope**, select the **Select resource** link.
 
 1. In the **Filter by resource type** field, select **Virtual machines**.
 

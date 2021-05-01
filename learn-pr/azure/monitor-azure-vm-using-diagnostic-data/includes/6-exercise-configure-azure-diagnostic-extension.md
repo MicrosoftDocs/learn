@@ -12,11 +12,11 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. Select the **monitored-linux-vm** virtual machine that you created.
 
-1. On the left, scroll down until you see the **Monitoring** section, and then select **Diagnostic settings**.
+1. In the left menu pane, under **Monitoring**, select **Diagnostic settings**. The **Diagnostics settings** pane appears for your virtual machine.
 
     ![Screenshot that shows the monitoring section for a VM](../media/6-scroll-to-monitoring.png)
 
-1. Select **Enable guest-level monitoring**.
+1. On the **Overview** tab, select **Enable guest-level monitoring**.
 
     ![Screenshot that shows the button for enabling guest-level monitoring](../media/6-enable-guest-level-monitoring.png)
 
@@ -38,7 +38,7 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 ## Create a custom KPI dashboard
 
-1. In the middle menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your VM.
+1. In the left menu pane, under **Monitoring**, select **Metrics**. The **Metrics** pane appears for your VM.
 
 1. Select the following values:
 
@@ -59,6 +59,7 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 1. In the **Dashboard name** field, enter **KPI Dashboard**.
 
     ![Screenshot that shows the "Pin to another dashboard" pane filled out](../media/6-create-dashboard.png)
+
 1. Select **Create and pin**. The **Metrics** pane reappears.
 
 ### Add a free memory percentage graph
@@ -89,7 +90,7 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
    |Field     |Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic)      |
+   |Metric Namespace    |   Guest (classic)   |
    |Metric     |   CPU percentage guest OS   |
    |Aggregation    |    Max     |
 
