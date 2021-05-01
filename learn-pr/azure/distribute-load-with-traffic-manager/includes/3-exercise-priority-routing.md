@@ -79,7 +79,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --output table
     ```
 
-## Test the app
+## Test the app 
 
 1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. Run the following commands to display the IP addresses for each of the resources we've created.
 
@@ -160,7 +160,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
     ```azurecli
     nslookup $(az network public-ip show \
                 --resource-group <rgn>Sandbox resource group </rgn> \
-                --name eastasia-vm-nic-pip \ 
+                --name eastasia-vm-nic-pip \
                 --query dnsSettings.fqdn \
                 --output tsv)
     ```
