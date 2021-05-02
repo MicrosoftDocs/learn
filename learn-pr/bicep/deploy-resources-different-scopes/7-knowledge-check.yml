@@ -19,36 +19,36 @@ quiz:
       You decide to deploy it using a Bicep template.
       Which `targetScope` value should you use for the file?
     choices:
-    - content: "`tenant()`"
-      isCorrect: true
-      explanation: TODO
-    - content: "`subscription()`"
+    - content: "`targetScope = 'tenant'`"
       isCorrect: false
       explanation: TODO
-    - content: Don't specify a `targetScope`.
+    - content: "`targetScope = 'managementGroup'`"
+      isCorrect: true
+      explanation: TODO
+    - content: "`targetScope = 'subscription'`"
       isCorrect: false
       explanation: TODO
   - content: |
       Which of these statements is true?
     choices:
     - content: The `scope` keyword can be used on any resource.
-      isCorrect: true
+      isCorrect: false
       explanation: TODO
     - content: The `scope` keyword can only be used on modules.
       isCorrect: false
       explanation: TODO
     - content: The `scope` keyword can only be used on modules and extension resources.
-      isCorrect: false
+      isCorrect: true
       explanation: TODO
   - content: |
       You have written a Bicep file that includes this line:<br />
-      `targetScope = tenant()`.<br />
+      `targetScope = managementGroup`<br />
       Which of these statements is true?
     choices:
-    - content: The file can be used as a module within a template that deploys at tenant scope.
+    - content: The file can be used as a module within a template that deploys at management group scope.
       isCorrect: true
       explanation: TODO
-    - content: The file can be used as a module within a template that deploys at management group scope.
+    - content: The file can be used as a module within a template that deploys at subscription scope.
       isCorrect: false
       explanation: TODO
     - content: The file can be used as a module within a template that deploys at resource group scope.
