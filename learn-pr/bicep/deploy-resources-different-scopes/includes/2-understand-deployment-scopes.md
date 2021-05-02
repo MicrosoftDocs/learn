@@ -30,30 +30,25 @@ You might deploy to a management group for these kinds of use cases:
 - You need to create Azure subscriptions.
   > [!NOTE]
   > Depending on your billing agreement with Microsoft, you may not be able to create subscriptions using infrastructure as code. TODO link
-- You want to create management groups. A single root management group is created by Azure, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups. TODO confirm - are MGs created using MG scoped deployments or tenant scoped deployments?
 - You need to grant access to all of the resources within any subscriptions that are within the management group hierarchy. For example, your cloud operations team might need to have some level of access to every subscription in your organization. You can create a role assignment at your root management group, which grants your cloud operations team access to everything in your environment.
   > [!CAUTION]
   > Be extremely careful when you grant access across a management group. Make sure your organization follows best practices regarding identity management and authentication, and don't grant access that isn't required.
 - You need to apply policies across your entire organization. For example, your organization might have a policy that resources cannot be created in certain geographic regions, under any circumstances. You might apply a policy to your root management group that will block creation of resources in that region.
 
+TODO note that MGs have to be initialized
+
 ## Tenant-scoped resources
 
-Tenant-scoped deployments can be used to create management groups. TODO confirm - are MGs created using MG scoped deployments or tenant scoped deployments?
+Tenant-scoped deployments can be used to create management groups. A single root management group is created by Azure, but you can create multiple levels of management groups underneath it. You can use Bicep to define your whole management group hierarchy. You can also assign subscriptions to management groups.
 
-TODO check if you can create subscriptions
+TODO confirm - are MGs created using MG scoped deployments or tenant scoped deployments?
+
+TODO check if you can create subscriptions at tenant scope or if that has to be done at MG scope
+
+TODO note that tenant deployments require special permission
 
 > [!TIP]
 > You can't create policies or role assignments at the tenant scope. However, if you need to grant access or apply policies across your whole organization, you can deploy these resources to the root management group.
-
-## Nesting deployments
-
-Sometimes you need to deploy across multiple levels of your hierarchy. Here are some situations where you might want to do this:
-
-- You create a resource group, which is a subscription-scoped resource, and then want to deploy a storage account and other Azure resources into that resource group.
-- You create a subscription within a management group, and then want to create a resource group in the newly created subscription with some key resources like a virtual network.
-- You create a management group hierarchy by using a tenant-scoped deployment, and then you want to create subscriptions within that hierarchy.
-
-Bicep enables you to create a deployment that works across multiple levels by using modules.
 
 ## Resource IDs
 
