@@ -2,8 +2,6 @@ Azure Quantum is a Microsoft Azure cloud service for running quantum computing p
 
 ## What's included on Azure Quantum?
 
-![Diagram showing various Azure Quantum features.](../media/6-azure-quantum.png)
-
 **Quantum computing**: If you're interested in developing quantum software, then Azure Quantum offers a suite of tools that help you express your algorithms using the Quantum Development Kit and Q#.
 
 There are tools for simulating your programs so that you can test the behavior and performance of your code. In addition, there are tools such as the resource estimator, which helps you understand the resources that your code would require. In terms of a quantum program, this can mean the types of quantum gates you use, the number of operations performed, or the number of qubits you need.
