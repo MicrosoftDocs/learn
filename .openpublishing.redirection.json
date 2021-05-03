@@ -5759,6 +5759,36 @@
       "source_path": "learn-pr/wwl-data-ai/synthesize-text-input-speech/3-synthesize-speech-audio-output.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/transcribe-speech-input-text/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/1-introduction-speech-translation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/2-translate-speech-text-microphone-input.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/3-translate-speech-different-language.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/4-translate-speech-multiple-target-languages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/translate-speech-speech-service/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/7-summary",
+      "redirect_document_id": true
     }
   ]
 }

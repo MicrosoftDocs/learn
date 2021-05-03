@@ -6,7 +6,7 @@ metadata:
   description: "Exercise - Analyze text with the Text Analytics service"
   ms.date: 04/27/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -2,7 +2,7 @@
 
 ## A little bit about Python
 
-Guido van Rossum created Python in 1991 and named it after the television show Money Python. Python is a high-level programming language, which means that, from the programmer's point of view, the code reads closer to a natural language (English) and therefore is easier to read and write. Python does the heavy lifting behind the scenes, to convert relatively natural language instructions into commands that a computer can execute.
+Guido van Rossum created Python in 1991 and named it after the television show Monty Python. Python is a high-level programming language, which means that, from the programmer's point of view, the code reads closer to a natural language (English) and therefore is easier to read and write. Python does the heavy lifting behind the scenes, to convert relatively natural language instructions into commands that a computer can execute.
 
 ## Why Python?
 
