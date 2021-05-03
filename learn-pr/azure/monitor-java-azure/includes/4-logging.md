@@ -2,20 +2,49 @@ In this unit, we'll look at Logging concepts.
 
 ## Introduction
 
-With your sample application setup, there are two ways to see logs: Log Streaming of real-time logs per app instance or Log Analytics for aggregated logs with advanced query capability.
+With your sample application setup, there are two ways to see logs: Log Streaming of real-time logs per app instance or Log Analytics for aggregated logs with advanced query capability. In this unit we will explore log streaming via the Azure CLI.
 
-## Streaming logs
+The log streaming feature allows developers to get real-time application logs in Azure CLI and know what’s happening with specified application instance running in Azure Spring Cloud.
 
-In Azure Spring Cloud, Spring developers can enable Log Analytics to view or query logs. The log streaming feature allows developers to get real-time application logs in Azure CLI and know what’s happening with specified application instance running in Azure Spring Cloud.
+### Log streaming
 
-## Log Analytics introduction
+You can use log streaming in the Azure CLI with the following command.
 
-Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces. The workspace defines the geographic location of the data, access rights defining which users can access data, and configuration settings such as the pricing tier and data retention.  
+```azurecli
+az spring-cloud app logs -n <application> -f
+```
 
-You must create at least one workspace to use Azure Monitor Logs. A single workspace may be sufficient for all of your monitoring data, or may choose to create multiple workspaces depending on your requirements. For example, you might have one workspace for your production data and another for testing.
+### Tail log for app with multiple instances
 
-## Log queries
+If multiple instances exist for the app named `app`, you can view the instance log by using the `-i/--instance` option.
 
-Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
+First, you can get the app instance names with following command.
+
+```azurecli
+az spring-cloud app show -n app --query properties.activeDeployment.properties.instances -o table
+```
+
+With results:
+
+```output
+Name                                         Status    DiscoveryStatus
+-------------------------------------------  --------  -----------------
+app-12-75cc4577fc-pw7hb  Running   UP
+app-12-75cc4577fc-8nt4m  Running   UP
+app-12-75cc4577fc-n25mh  Running   UP
+```
+
+Then, you can stream logs of an app instance with the option `-i/--instance` option:
+
+```azurecli
+az spring-cloud app logs -n app -i app-12-75cc4577fc-pw7hb
+```
+
+You can also get details of app instances from the Azure portal.  After selecting **Apps** in the left navigation pane of your Azure Spring Cloud service, select **App Instances**.
+
+> [!TIP]
+> Use `az spring-cloud app logs -h` to explore more parameters and log stream functionality.
+
+You will see output similar to the following example:
 
 In the next exercise, we'll configure logging for your Sample Spring application.

@@ -4,6 +4,14 @@ In this unit, we look at Monitoring the entire solution.
 
 ## Log analytics
 
+Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces. The workspace defines the geographic location of the data, access rights defining which users can access data, and configuration settings such as the pricing tier and data retention.  
+
+You must create at least one workspace to use Azure Monitor Logs. A single workspace may be sufficient for all of your monitoring data, or may choose to create multiple workspaces depending on your requirements. For example, you might have one workspace for your production data and another for testing.
+
+## Log queries
+
+Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
+
 ## Analyze the logs in Log Analytics
 
 After your application is properly set up, your application console log will be streamed to Log Analytics. The structure enables efficient query in Log Analytics.
