@@ -15,7 +15,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
-   :::code language="bicep" source="code/3-template.bicep" range="7,12,17,21-23,26-29" :::
+   :::code language="bicep" source="code/3-template.bicep" range="7,12,17,20-23,26-29" :::
 
    Notice that you're creating a number parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
 
@@ -35,7 +35,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar this:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10" ::: <!-- TODO -->
+   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
 
 1. Save the changes to the file.
 
