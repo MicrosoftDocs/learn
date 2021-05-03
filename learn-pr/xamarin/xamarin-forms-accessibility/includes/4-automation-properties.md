@@ -1,16 +1,16 @@
-The design of your app is a form that is used to collect project information. It has a visual image for the company, an entry for the project name, and a button to submit the project to the database.
+The design for the app you will be creating is a form used to collect project information. It includes a visual image for the company, an entry for the project name, and a button to submit the project to the database.
 
 ## Screen reader narration
 
-As mentioned in the previous section, each operating system has its own screen readers with their own unique behaviors and configurations. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control when it receives accessibility focus. This means that elements such as a `Label` or `Button` with the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in handy to help provide additional information about which elements should receive focus and what text should be read back to the user.
+As mentioned in the previous section, each operating system has its own screen readers with their own unique behaviors and configurations. Xamarin.Forms has properties that can be used to set the underlying native APIs for accessibility. Most screen readers will automatically read any text associated with a control that receives accessibility focus. This means that elements such as a `Label` or `Button` that have the `Text` property set will be accessible for the user. However, an `ImageButton`, `ActivityIndicator`, `Image`, and others may not be in the accessibility tree since no text is associated with them. This is where Xamarin.Forms automation properties come in handy to help provide additional information about which elements should receive accessibility focus and what text should be read back to the user.
 
 ## Automation Properties
 
-Xamarin.Forms provides four different properties that can enhance the screen reader for the user interface that displayed to the user. These are called `AutomationProperties` and are attached properties that can be added to any element: 
-- `AutomationProperties.IsInAccessibleTree` - indicates whether the element is reachable by screen readers.
-- `AutomationProperties.Name` - a short description of the element that serves as a speakable identifier for the element. 
-- `AutomationProperties.HelpText` - a longer description of the element, which can be thought of as tooltip text associated with the element. 
-- `AutomationProperties.LabeledBy` - allows another element to define accessibility information for the current element. 
+Xamarin.Forms provides four different properties that can enhance the screen reader experience. These are called `AutomationProperties` and are attached properties that can be added to any element: 
+- `AutomationProperties.IsInAccessibleTree` indicates whether or not the element is accessible by screen readers.
+- `AutomationProperties.Name` is a short description that serves as a speakable identifier for the element.
+- `AutomationProperties.HelpText` is a longer description of the element, which can be thought of as tooltip text associated with the element. 
+- `AutomationProperties.LabeledBy` allows another element to define the accessibility text for the current element. 
 
 ## IsInAccessibleTree
 
@@ -19,7 +19,7 @@ This attached property is a `boolean` that tells the operating system if the ele
 ```xaml
 <Entry AutomationProperties.IsInAccessibleTree="true" />
 ```
-Or it can be set in code directly:
+Or in the code-behind:
 
 ```csharp
 var entry = new Entry();
@@ -35,7 +35,7 @@ This attached property is a short descriptive text string that a screen reader u
                 AutomationProperties.Name="Progress indicator" />
 ```
 
-Or, it can be set in code directly:
+Or in the code-behind:
 	
 ```csharp
 var activityIndicator = new ActivityIndicator();
@@ -53,7 +53,7 @@ This attached property is a longer description of the element that can be though
     AutomationProperties.HelpText="Toggles the activity indicator" />
 ```
 
-Or, it can be set in code directly:
+Or in the code-behind:
 
 ```csharp
 var button = new Button { Text = "Toggle" };
@@ -61,7 +61,7 @@ AutomationProperties.SetIsInAccessibleTree(button, true);
 AutomationProperties.SetHelpText(button, "Toggles the activity indicator");
 ```
 
-> Note: Each platform may have a different order of how the `HelpText` is read back to the user when using a screen reader.
+> Note: Screen readers may differ in the order of how they read back the `HelpText`, among other accessible information.
 
 ## LabeledBy
 
@@ -73,7 +73,7 @@ This attached property allows another element to specify information for accessi
     AutomationProperties.LabeledBy="{x:Reference label}" />
 ```
 
-Or, it can be set in code directly:
+Or in the code-behind:
 
 ```csharp
 var nameLabel = new Label { Text = "Enter your name: " };
@@ -84,4 +84,4 @@ AutomationProperties.SetLabeledBy(entry, nameLabel);
 
 > Note: The `AutomationProperties.LabeledByProperty` is not yet supported on iOS and the `AutomationProperties.NameProperty` must be used.
 
-Now that you have an understanding of the available automation properties that Xamarin.Forms provides we can start to implement some of them in our project.
+Now that you have an understanding of the available automation properties that Xamarin.Forms provides, we can start to implement some of them in our project.

@@ -76,7 +76,7 @@ The default tab order of controls is the same order in which they are listed in 
     <Entry
         Grid.Row="1"
         Grid.Column="2"
-        Placeholder="Manager surname"/>
+        Placeholder="Manager's surname"/>
 </Grid>
 ```
 
@@ -87,4 +87,4 @@ Now, when you run the application you will see the new column-based accessibilit
 
 > Note: If you are interested in further manipulating the accessibility ordering, there are APIs that make this possible. However, it is advised to maintain logical and meaningful content ordering before leveraging those APIs.
 
-We have now explored multiple ways to enhance the accessibility of the application. Let's recap what we have learned and see even more ways we can make apps accessible.
+We have now explored multiple ways to enhance the accessibility of the application. Let's recap what we have learned and discover even more ways in which we can make apps app accessible.

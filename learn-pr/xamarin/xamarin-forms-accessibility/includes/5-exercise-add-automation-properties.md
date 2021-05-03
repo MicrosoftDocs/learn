@@ -23,7 +23,7 @@ Create a new Xamarin app:
 
 ## Create the data entry form
 
-To create a simple for we will use several UI elements including `Label`, `Image`, `Entry`, and a `Button`.
+To create a simple form, we will use several UI controls including `Label`, `Image`, `Entry`, and `Button`.
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -39,7 +39,7 @@ To create a simple for we will use several UI elements including `Label`, `Image
             HorizontalOptions="Center"
             Source="https://aka.ms/dotnetbot"
             WidthRequest="100" />
-        <Label  x:Name="LabelName" Text="Project name" />
+        <Label x:Name="LabelName" Text="Project name" />
         <Entry />
 
         <!-- Report and Manager Information -->
@@ -52,12 +52,12 @@ To create a simple for we will use several UI elements including `Label`, `Image
 
 ## Run the application
 
-Run the application with the screen reader activated on the operating system of your choice. Notice that on some platforms, when you launch the application, all elements will be read by the screen reader. Use gestures or a keyboard to navigate through the items on the screen. 
+Run the application with the screen reader activated on the operating system of your choice. Notice that on some platforms, when you launch the application, all elements will be read by the screen reader. Use touch gestures or a keyboard to navigate through the items on the screen. 
 
 Note:
 
-- `Image` does have any information as to what it is
-- `Entry` reads back generic information
+- `Image` does not have any information as to what it is.
+- `Entry` reads back generic information.
 - `Button` reads the text of **Submit** out loud.
 
 ## Image accessibility
@@ -89,7 +89,7 @@ AutomationProperties.LabeledBy="{x:Reference LabelName}"
 AutomationProperties.Name="{OnPlatform iOS='Project name'}"
 ```
 
-1. Setting accessible properties on the `Entry` means that the _Project name_ `Label` doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label`:
+2. Setting accessible properties on the `Entry` means that the _Project name_ `Label` doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label`:
 
 ```xaml
 AutomationProperties.IsInAccessibleTree="False"
@@ -99,7 +99,7 @@ When you run the application again, you hear "Project name" read out loud when t
 
 ## Improved Button descriptors
 
-When the `Button` is in focus "Submit button" is read out loud by the screen reader. We can provide more context as to what will happen when the user taps the button by setting the `AutomationProperties.HelpText` property. 
+When the `Button` is in focus, "Submit button" is read out loud by the screen reader. We can provide more context as to what will happen when the user taps the button, by setting the `AutomationProperties.HelpText` property. 
 
 1. Add the following properties to the `Button`:
 
@@ -108,8 +108,7 @@ AutomationProperties.Name="Submit"
 AutomationProperties.HelpText="Submits project information to backend"
 ```
 
-When you run the application again, you will hear an improved description of the UI element and what will happen when it is pressed.
+When you run the application again, you will hear an improved description of the UI element as well as context for what will happen when it is pressed.
 
-We have now explored the built-in automation properties of Xamarin.Forms to add more context for elements on the screen that will be read out loud by screen readers. Next, we will explore accessible content ordering to provide a better experience when a user navigates through elements.
-
+We have now explored the built-in automation properties of Xamarin.Forms that enable developers to add more context for on-screen elements that are accessible to screen readers. Next, we will explore accessible content ordering to provide a better experience when a user navigates through elements.
 
