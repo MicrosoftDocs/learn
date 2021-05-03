@@ -1,0 +1,1 @@
+By successfully completing your evaluation, you verified that Azure App Web Service on Azure Kubernetes with Arc will help minimize the operational burden as well as leverage the existing investment into Kubernetes yet gain the developer productivity of Azure App Service. 

@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-application-kubernetes-arc.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 05/01/2021
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: A?
+    choices:
+    - content: A
+      isCorrect: true
+      explanation: AA.
+    - content:  B
+      isCorrect: false
+      explanation:  BB.
+    - content: C
+      isCorrect: false
+      explanation: CC.
+    - content: D
+      isCorrect: false
+      explanation: DD.
+  - content: B?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation: AA.
+    - content: B.
+      isCorrect: true
+      explanation: BB.
+    - content: C.
+      isCorrect: false
+      explanation: CC.
+    - content: D.
+      isCorrect: false
+      explanation: DD.
+  - content: C?
+    choices:
+    - content: A.
+      isCorrect: false
+      explanation:  AA.
+    - content:  B.
+      isCorrect: false
+      explanation:  BB.
+    - content: C.
+      isCorrect: false
+      explanation: CC.
+    - content: D.
+      isCorrect: true
+      explanation: DD.
