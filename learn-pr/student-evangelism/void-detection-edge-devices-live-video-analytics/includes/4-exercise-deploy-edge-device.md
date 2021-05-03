@@ -82,13 +82,16 @@ Register an IoT Edge device with your newly created IoT hub.
 
    [![The illustration shows overview of custom template.](../media/custom-deployment-template.png)](../media/custom-deployment-template.png)
 
+   > [!NOTE]
+   > Make a note of **Admin Username** as you will use it to connect to your virtual machine at the next step.
+
 ## Open network port 8181
 
 1. Go to the "IoTEdgeResources" resource group and click on the virtual machine you created in the previous step.
 
 2. Go to Networking and click on 'Add Inbound Port Rule'.
 
-    [![The illustration shows how to add inbound port.](../media/add-port-rule.png)]() 
+    [![The illustration shows how to add inbound port.](../media/add-port-rule.png)](../media/add-port-rule.png) 
    
 3. Fill out 'Destination port ranges' and 'Name.' After this, you'll see a pop-up telling you that it's creating the security rule 'Port_8181'.
   

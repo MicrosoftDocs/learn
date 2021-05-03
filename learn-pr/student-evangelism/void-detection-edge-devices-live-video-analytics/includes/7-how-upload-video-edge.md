@@ -1,4 +1,4 @@
-In this unit, you'll learn how to upload sample video file to your edge device and copy the  video file to RTSP simulator instead of real camera. RTSP simulator that is deployed to your edge device in a docker container and it helps you stream the video file.
+In this unit, you'll learn how to upload sample video file to your edge device and copy the  video file to RTSP simulator instead of real camera. RTSP simulator is deployed to your edge device in a docker container, and it helps you stream the video file.
 
 The steps you follow:
 
