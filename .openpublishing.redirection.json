@@ -5790,6 +5790,7 @@
       "redirect_url": "https://docs.microsoft.com/learn/modules/translate-speech-speech-service/7-summary",
       "redirect_document_id": true
     },
+    {
       "source_path": "learn-pr/quantum/qsharp-create-first-quantum-development-kit/3-qsharp-structure.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/5-qsharp-structure",
       "redirect_document_id": true
