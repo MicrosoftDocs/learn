@@ -10,7 +10,7 @@ Using all these tools together helps you understand the features of a quantum co
 
 For more details on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/?azure-portal=true).
 
-![Diagram showing Azure Quantum Computing.](../media/6-azure-quantum-computing.png)
+![Diagram showing Azure Quantum Computing.](../media/2-azure-quantum-computing.png)
 
 **Quantum hardware**: After you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
@@ -26,7 +26,7 @@ For example, there's trapped ion quantum hardware from IonQ and Honeywell. There
 
 Solvers emulate certain processes from quantum physics by using classical hardware that's available today.
 
-![Diagram showing Azure Quantum optimization stack.](../media/6-azure-quantum-inspired-solutions.png)
+![Diagram showing Azure Quantum optimization stack.](../media/2-azure-quantum-inspired-solutions.png)
 
 - **1Qloud**: Connecting intractable industry problems to innovative solutions.
 
