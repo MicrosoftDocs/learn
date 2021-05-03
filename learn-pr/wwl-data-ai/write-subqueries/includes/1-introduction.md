@@ -4,6 +4,6 @@ Transact-SQL supports the creation of *subqueries*, in which an inner query retu
 
 In this module, you will learn how to:
 
-- Understand what subqueries are
+- Understand what subqueries are 
 - Use scalar or multi-valued subqueries
 - Use self-contained or correlated subqueries
