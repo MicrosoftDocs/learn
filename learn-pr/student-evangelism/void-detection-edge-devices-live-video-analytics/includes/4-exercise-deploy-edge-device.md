@@ -82,6 +82,9 @@ Register an IoT Edge device with your newly created IoT hub.
 
    [![The illustration shows overview of custom template.](../media/custom-deployment-template.png)](../media/custom-deployment-template.png)
 
+   > [!NOTE]
+   > Make a note of **Admin Username** as you will use it to connect to your virtual machine at the next step.
+
 ## Open network port 8181
 
 1. Go to the "IoTEdgeResources" resource group and click on the virtual machine you created in the previous step.
