@@ -3,11 +3,11 @@ uid: learn.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
 title: Finalize the data model
 metadata: 
   title: Finalize the data model
-  description: With the merging of the product categories and tags we have gone from nine relational tables to just three containers. All of them optimized to serve our e-commerce application efficiently and with the ability to scale to any size we need.
+  description: Finalize the data model
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 07
 content: |
   [!include[](includes/9-finalize-data-model.md)]

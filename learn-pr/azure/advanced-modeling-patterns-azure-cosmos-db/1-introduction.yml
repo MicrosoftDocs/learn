@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: This module will take you through the migration of data from a relational database to a NoSQL database in the context of a global sales application.
+  description: Introduction
   ms.date: 3/9/2021  
   author: markjbrown  
   ms.author: mjbrown  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial 
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]

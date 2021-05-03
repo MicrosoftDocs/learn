@@ -3,11 +3,11 @@ uid: learn.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
 title: Combine different entities in the same container
 metadata: 
   title: Combine different entities in the same container
-  description: Just like with the other entities we want to look at our operations and then make a decision on whether to embed or reference our related data.
+  description: Combine different entities in the same container.
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
   [!include[](includes/6-combine-different-entities.md)]

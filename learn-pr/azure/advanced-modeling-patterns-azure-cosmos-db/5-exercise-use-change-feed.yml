@@ -3,11 +3,11 @@ uid: learn.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
 title: Use Change Feed to manage referential integrity
 metadata: 
   title: Use Change Feed to manage referential integrity
-  description: In this exercise we will show how Change Feed can maintain referential integrity between two containers in Azure Cosmos DB.
+  description: Use Change Feed to manage referential integrity
   ms.date: 3/9/2021 
   author: markjbrown
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-use-change-feed.md)]

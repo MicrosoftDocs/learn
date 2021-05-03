@@ -3,11 +3,11 @@ uid: learn.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integri
 title: Manage referential integrity by using Change Feed 
 metadata: 
   title: Manage referential integrity by using Change Feed
-  description: Change Feed is an API that lives within every Cosmos DB container. Whenever data is inserted or updated to Cosmos DB, Change Feed streams these changes to an API that you can listen to.
+  description: Manage referential integrity by using Change Feed
   ms.date: 3/9/2021 
   author: markjbrown 
   ms.author: mjbrown 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
 durationInMinutes: 05
 content: |
   [!include[](includes/4-manage-referential-integrity-with-change-feed.md)]
