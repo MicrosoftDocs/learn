@@ -19,7 +19,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Familiarity with the basic Bicep template structure and syntax.
   - Familiarity with Azure, including the Azure portal, subscriptions, and resource groups.
-  - Understanding of Infrastructure as Code (IaC), and its benefits.
+  - Understanding of infrastructure as code, and its benefits.
   - Visual Studio Code installed locally.
   - Either:
       - The latest Azure CLI tools installed locally.
