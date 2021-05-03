@@ -111,7 +111,7 @@ After you pushed your changes, wait a few minutes for the build and deploy proce
 After your app is redeployed, you can test that the new restrictions are effective.
 
 1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-static-web-app-and-api** and select **Browse Site** to view app in your browser.
-1. If you're not logged in, you should see the message "Unauthorized" instead of the products list.
+1. If you're not logged in, you should see the message **Unauthorized** instead of the products list.
 1. Select **Google** in the authentication provider list to log in.
 1. You should see a 404 error page like this:
 

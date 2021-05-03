@@ -1,6 +1,6 @@
 Your shopping list web app needs a way to uniquely identify its users, and provide them a personal space to store the products.
 
-Authentication is way to verify the identity of an user that is trying to access an information system. We'll now look into authentication and how you can implement it in Azure Static Web Apps.
+Authentication is the way you'll verify the identity of a user that is trying to access an information system. We'll now look into authentication and how you can implement it in Azure Static Web Apps.
 
 ## Identity providers
 
@@ -75,7 +75,7 @@ The following example is an example response object:
 
 ### API functions
 
-All API functions available in Azure Static Web Apps have access to the same user information as your client application. The user data is passer to functions in the `x-ms-client-principal` HTTP header. The data is serialized as a JSON object and encoded in [Base64](https://www.wikipedia.org/wiki/Base64).
+All API functions available in Azure Static Web Apps have access to the same user information as your client application. The user data is passed to functions in the `x-ms-client-principal` HTTP header. The data is serialized as a JSON object and encoded in [Base64](https://www.wikipedia.org/wiki/Base64).
 
 The following example function shows how to read and return user information.
 
