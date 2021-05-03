@@ -13,7 +13,7 @@ Before deploying the HCX Connector appliance in the on-premises vCenter, the VMw
 
 1. Then select **Identity** under **Manage**.
 
-1. The URLs and user credentials for the AVS vCenter and NSX-T Manager will display.
+1. The URLs and user credentials for the AVS vCenter and NSX-T Manager will display. Use the copy feature to paste credential information into the web browser on the jump host VM.
 
      :::image type="content" source="../media/3-display-user-credentials-avs.png" alt-text="Screen shot of where to find the vCenter and NSX sign-in information in the Azure portal.":::
 
