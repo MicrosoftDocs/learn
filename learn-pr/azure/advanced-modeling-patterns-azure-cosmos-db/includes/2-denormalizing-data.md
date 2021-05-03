@@ -1,6 +1,11 @@
 In this section we are going to look at our product table from our relational database and model it for a NoSQL database. While we do this we are also going to look at the Many:Many relationship our Product table has with ProductTags.
 
-:::image type="content" source="../media/2-product-model.png" alt-text="product model" border="false":::
+:::image type="content" source="../media/2-product-model.png" alt-text="Diagram that shows the relationship between the product and product tags entities." border="false":::
+
+<!--TODOs:
+1. Update alt text for each illustration in every unit so that it follows accessibility guidelines: https://review.docs.microsoft.com/help/contribute/contribute-accessibility-multimedia?branch=master#alt-text-requirements-for-images  E.g. See example I've added in diagram above. Make sure you convey in words what the diagrams show either in alt text or in text near the diagram. 
+1. Make the units scan-able by breaking up the text with H2 headers. For example, see how I tried breaking up content in the first module: https://review.docs.microsoft.com/learn/modules/model-partition-data-azure-cosmos-db/3-identify-access-patterns?branch=pr-en-us-16075.
+1. Run Acrolinx for each unit and update content to fix issues. Units must have at least an overall score of 80. https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-acrolinx-vscode?branch=master-->
 
 Our initial model for Product just includes the fields from our relational table. However, our e-commerce application needs to display the product tags when we display a product page. We also will want to be able to query for products by product tags. This can be accommodated in one of two ways. We can store products in a product tags container or we could embed our tags in the product container.
 

@@ -47,6 +47,6 @@ TODO: add your activities
 
  -->
 
-By the end of this session, you'll be able to <TODO>
+By the end of this module, you'll be able to <TODO>
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

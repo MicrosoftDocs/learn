@@ -11,3 +11,28 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-combine-different-entities.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which characteristics must entities share that make them good candidates to store in the same container?"
+    choices: 
+    - content: "Same partition key"
+      isCorrect: false
+      explanation: "Explain why this is correct or incorrect."
+    - content: "Similar access patterns"
+      isCorrect: false
+      explanation: "Explain why this is correct or incorrect."
+    - content: "Same schema"
+      isCorrect: true
+      explanation: "Explain why this is correct or incorrect."
+  - content: "When mixing entities into the same container, what is required to distinguish the different entities when querying them?"
+    choices: 
+    - content: "A different id"
+      isCorrect: false
+      explanation: "Explain why this is correct or incorrect.."
+    - content: "It is not possible. You have to look at the query results."
+      isCorrect: true
+      explanation: "Explain why this is correct or incorrect."
+    - content: "A type property with a static value per entity."
+      isCorrect: false
+      explanation: "Explain why this is correct or incorrect."
