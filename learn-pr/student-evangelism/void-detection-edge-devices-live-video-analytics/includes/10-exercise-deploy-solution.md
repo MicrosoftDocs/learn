@@ -6,7 +6,7 @@ In this exercise, you'll connect to Vision on Edge solution through web applicat
 
 2. When you connect to Vision on Edge solution, click on **Home** page.
 
-   [![The illustration shows deployment.](../media/vision-on-edge.png)](../media/vision-on-edge.png)
+   [![The illustration shows edge solution.](../media/vision-on-edge.png)](../media/vision-on-edge.png)
 
 ## Capture the images and tag objects
 
@@ -20,27 +20,27 @@ In this exercise, you'll connect to Vision on Edge solution through web applicat
    - RTSP URL: Replace it with **rtsp://rtspsim:554/media/<replace_video_name>**
    - Location: Create a location or choose an existing one
    
-   [![The illustration shows deployment.](../media/add-camera.png)](../media/add-camera.png)
+   [![The illustration shows how to add camera.](../media/add-camera.png)](../media/add-camera.png)
 
 4. To capture images from your video stream, navigate to the **Images** page and click on Capture from camera.
 
-   [![The illustration shows deployment.](../media/images-page.png)](../media/images-page.png)
+   [![The illustration shows images page.](../media/images-page.png)](../media/images-page.png)
 
 5. You'll see that the video will start to be displayed. When you see the gap on the shelf, capture the image. Continue adding more images to improve your model. It's recommended to capture at least 15 images. Click on **Done** when you finish.
 
-   [![The illustration shows deployment.](../media/capture-image.png)](../media/capture-image.png)   
+   [![The illustration shows how to capture images.](../media/capture-image.png)](../media/capture-image.png)   
 
 6. Navigate to the **Objects** page and add an object to tag your image. In this example, we want to add a gap object.
 
-   [![The illustration shows deployment.](../media/add-object.png)](../media/add-object.png)
+   [![The illustration shows how to add an object.](../media/add-object.png)](../media/add-object.png)
 
 7. Go back to **Images**. Click on one of the images and drag a box around the object(in this case, gap) you want to tag and select gap object. Repeat the same step for all images and click **Done** when you finish.
 
-   [![The illustration shows deployment.](../media/tag-object.png)](../media/tag-object.png)
+   [![The illustration shows tag an object.](../media/tag-object.png)](../media/tag-object.png)
 
 8. You'll see that all the images you captured are tagged with gap objects.
 
-   [![The illustration shows deployment.](../media/tagged-images.png)](../media/tagged-images.png)
+   [![The illustration shows tagged images.](../media/tagged-images.png)](../media/tagged-images.png)
 
 ## Create a solution deployment
 
@@ -55,6 +55,6 @@ In this exercise, you'll connect to Vision on Edge solution through web applicat
 
 3. Click **Deploy**.
 
-   [![The illustration shows deployment.](../media/deploy-task.png)](../media/deploy-task.png)
+   [![The illustration shows how to deploy a task for your solution.](../media/deploy-task.png)](../media/deploy-task.png)
 
 4. You'll see that the gaps will be identified in the video stream.
