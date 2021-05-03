@@ -5,7 +5,7 @@ sandbox: true
 metadata:
   unitType: exercise  
   title: Exercise - Add parameters and their decorators # user input: module title for browser tab and search results
-  description: Learn how to build reusable templates by using parameters and decorators # user input: a description for site search and SEO
+  description: Learn about parameters and types, and how to apply decorators to document and restrict the values of your parameters.
   ms.date: 04/21/2021
   author: wviriya
   ms.author: wviriya

@@ -1,4 +1,4 @@
-Your company's Human Resources department is migrating an on-premises web application to Azure. The application will handle information about all of the employees of the toy company, so security is important.
+Your company's HR department is migrating an on-premises web application to Azure. The application will handle information about all of the employees of the toy company, so security is important.
 
 You've created a template that will deploy a website and database securely. This template is reusable for deploying across multiple environments in accordance with company's requirement.
 

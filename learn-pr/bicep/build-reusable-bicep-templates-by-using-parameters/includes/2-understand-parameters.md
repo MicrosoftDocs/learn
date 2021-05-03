@@ -61,15 +61,19 @@ Parameters in Bicep have one of the following types:
 Object parameters allow you to collect structured data in a single entity. An object can have multiple properties, each of different types. You can use objects within resource definitions, or within variables or expressions in your Bicep file. Here's an example of an object:
 
 ```bicep
-param configuration object = {
-  skuName: 'S1'
-  capacity: 3
+param appServicePlanSku object = {
+  name: 'F1'
+  tier: 'Free'
 }
 ```
 
 This parameter is an object with two properties: `skuName`, which is a string with a value of `S1`, and `capacity`, which is an integer with a value of `3`. Notice that each of the properties is on its own line.
 
-One example of where you might use an object parameter is for specifying resource tags. Azure allows us to attach custom tag metadata to the resources that we deploy, which we can use for identifying important information about a resource. Tags are useful for tracking information about which team owns a resource, and whether a resource is for a production or non-production environment. Typically we'll want to use different tags for each environment, but we want to reuse the same tag values on all the resources within our template. This means it's a good use for an object parameter, like this:
+When you refer to the parameter, you can refer just to individual properties by using a dot and then the property name:
+
+:::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
+
+Another example of where you might use an object parameter is for specifying resource tags. Azure allows us to attach custom tag metadata to the resources that we deploy, which we can use for identifying important information about a resource. Tags are useful for tracking information about which team owns a resource, and whether a resource is for a production or non-production environment. Typically we'll want to use different tags for each environment, but we want to reuse the same tag values on all the resources within our template. This means it's a good use for an object parameter, like this:
 
 ```bicep
 param resourceTags object = {
@@ -79,7 +83,7 @@ param resourceTags object = {
 }
 ```
 
-Then, whenever we define a resource in our Bicep file, we can reference it:
+Then, whenever we define a resource in our Bicep file, we can use it wherever we define the `tags` property:
 
 :::code language="plaintext" source="code/2-create-resources.bicep" highlight="4,13":::
 

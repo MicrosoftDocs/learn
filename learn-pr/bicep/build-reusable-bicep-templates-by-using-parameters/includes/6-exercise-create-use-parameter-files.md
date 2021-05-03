@@ -89,18 +89,23 @@ New-AzResourceGroupDeployment `
 Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
 
 > [!TIP]
-> When you choose a password for the secure parameters, they need to follow some rules:
+> When you choose enter the secure parameters, they need to follow some rules:
+> 
 > - `sqlServerAdministratorLogin` must not be a value like `admin` `root`, or another easily guessable name. It can only contain alphanumeric characters, and must start with a letter.
 > - `sqlServerAdministratorPassword` must be at least 8 characters long and includes lowercase letters, uppercase letters, numbers, and symbols. See the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity) for more information on the password complexity.
+> 
 > If the parameter values don't meet the requirements, Azure SQL won't deploy your server.
+> 
+> Also, make sure you keep a note of the login and password that you enter. You'll use them again shortly.
 
 ## Create a key vault and secrets
 
 Your toy company already has a key vault with the secrets they need for their deployments. To simulate this, we'll create a new key vault and some secrets to use.
 
-<!-- TODO check how this works if I already deployed using a different username/password -->
-
 In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands.
+
+> [!CAUTION]
+> Make sure you use the same login and password that you used in the previous step. If you don't, the deployment won't complete successfully.
 
 ::: zone pivot="cli"
 

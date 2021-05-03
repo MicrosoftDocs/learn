@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-reusable-bicep-templates-parameters.how-use-parameter-file-with-bicep  
-title: Create parameter files
+title: Provide values using parameter files
 metadata:
   unitType: learning-content  
-  title: Create parameter files
-  description: TODO
+  title: Provide values using parameter files
+  description: Learn about parameter files, and how parameter values can be provided to Bicep deployments.
   ms.date: 04/21/2021
   author: wviriya
   ms.author: wviriya

@@ -4,7 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction  
   title: Introduction
-  description: Learn how to use advance features of Bicep parameters
+  description: |
+    This module describes how you can use Bicep parameters to provide information into your template during each deployment.
+    You'll learn about parameter decorators, which make your parameters easy to understand and work with.
+    You'll also learn about the different ways that you can provide template parameter values,
+    and how to ensure these values are protected when you are working with secure information.
   ms.date: 04/21/2021
   author: wviriya
   ms.author: wviriya

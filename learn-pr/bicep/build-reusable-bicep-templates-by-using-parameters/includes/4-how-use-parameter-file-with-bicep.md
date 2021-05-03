@@ -9,11 +9,14 @@ _Parameter files_ make it easy to specify parameter values together as a set. Wi
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "appServicePlanSkuName": {
-      "value": "P1v3"
-    },
     "appServicePlanInstanceCount": {
       "value": 3
+    },
+    "appServicePlanSku": {
+      "value": {
+        "name": "P1v3",
+        "tier": "PremiumV3"
+      }
     },
     "cosmosDBAccountLocations": {
       "value": [
@@ -40,7 +43,7 @@ Let's look at each part of this in more detail:
     - Parameter names in parameter files are case-insensitive. If you have defined a parameter in your Bicep template named `appServicePlanSkuName`, you can use the name `AppServicePlanSKUName` in your parameters file and it will work.
     - Notice that the parameter value has to be specified as an object. The object has a property called `value` that defines the actual value you want to use.
 
-Generally you will create a parameter file for each environment. It's common to include an environment name in the name of the parameter file. For example, you might have parameter files named *main.parameters.dev.json* and *main.parameters.production.json* for your development and production environments.
+Generally you will create a parameter file for each environment. It's good practice to include the environment name in the name of the parameter file. For example, you might have parameter files named *main.parameters.dev.json* and *main.parameters.production.json* for your development and production environments.
 
 > [!TIP]
 > Make sure you only specify values for parameters that exist in your Bicep template. When you create a deployment, Azure will check your parameters and will tell you if you have tried to specify a value for a parameter it doesn't know about.
@@ -75,22 +78,28 @@ Let's see how this works. Here's an example Bicep file that defines three parame
 
 ```bicep
 param location string = resourceGroup().location
-param appServicePlanSkuName string = 'P1v3'
 param appServicePlanInstanceCount int = 1
+param appServicePlanSku object = {
+  name: 'F1'
+  tier: 'Free'
+}
 ```
 
-You can create a parameter file that overrides the value of two of the parameters:
+You can create a parameter file that overrides the value of two of the parameters but doesn't specify a value for the `location` parameter:
 
 ```json
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "appServicePlanSkuName": {
-      "value": "P2v3"
-    },
     "appServicePlanInstanceCount": {
       "value": 3
+    },
+    "appServicePlanSku": {
+      "value": {
+        "name": "P1v3",
+        "tier": "PremiumV3"
+      }
     }
   }
 }
@@ -98,7 +107,7 @@ You can create a parameter file that overrides the value of two of the parameter
 
 ::: zone pivot="cli"
 
-When you create the deployment, you override one of the parameter values. Like with parameter files, you use the `--parameters` argument, but you add the value you want to override as its own value:
+When you create the deployment, you can also override one of the parameter values. Like with parameter files, you use the `--parameters` argument, but you add the value you want to override as its own value:
 
 :::code language="azurecli" source="code/4-override.sh" highlight="4":::
 
@@ -115,7 +124,7 @@ When you create the deployment, you override one of the parameter values. You sp
 Let's look at what the values will be:
 
 - `location` will be the resource group's location. The Bicep file specifies this as a default value, and it's not overridden.
-- `appServicePlanSkuName` will be `P2v3`. The default value in the template is overridden by the parameter file.
+- `appServicePlanSku` will be an object with a `name` property set to `P1v3` and a `tier` of `PremiumV3`. The default value in the template is overridden by the parameter file.
 - `appServicePlanInstanceCount` will be `5`. The value specified at deployment time overrides the default value and the value in the parameter file.
 
 By using a mixture of the approaches to specify parameter values, you can avoid having to duplicate parameter values in lots of places, while still getting the flexibility to override it where you need to.

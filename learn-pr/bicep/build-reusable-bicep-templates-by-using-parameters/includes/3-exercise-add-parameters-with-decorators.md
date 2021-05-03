@@ -19,7 +19,8 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    Notice that you're creating a number parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
 
-   <!-- TODO restate the uniqueString() stuff here -->
+   > [!TIP]
+   > The `uniqueString()` function is useful for creating globally unique resource names. When it's used like in this example, it will give you a string that will be the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
    Also note that you're defining variables for the names of the Azure App Service plan and App Service app. The values for these variables include the values of some of the parameters you've specified. Parameter values can be overridden by the user executing the deployment, but variables can't be overridden.
 
