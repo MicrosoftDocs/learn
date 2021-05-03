@@ -37,5 +37,6 @@ JOIN SalesLT.ProductModel AS m
     ON p.ProductModelID = m.ProductModelID;
 ```
 
+
 > [!NOTE]
 > The ANSI SQL-92 syntax makes it more difficult to create accidental Cartesian products. Once the keyword JOIN has been added, a syntax error will be raised if an ON clause is missing, unless the JOIN is specified as a CROSS JOIN.
