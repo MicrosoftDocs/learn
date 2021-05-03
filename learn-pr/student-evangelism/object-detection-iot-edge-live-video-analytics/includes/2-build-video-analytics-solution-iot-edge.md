@@ -1,5 +1,3 @@
-## Overview
-
 In this module, you'll learn how to use the AI extensibility capability of Azure Live Video Analytics on Azure IoT Edge. You'll deploy a model on edge for detecting a person on the factory floor. You'll also learn about the capabilities of Live Video Analytics. You'll be able to seamlessly deploy a custom model as a container on the edge and analyze a simulated live video feed. You'll use a pre-trained YOLO model and deploy the model as a container to your video analytics solution.
 
 You'll see how to:

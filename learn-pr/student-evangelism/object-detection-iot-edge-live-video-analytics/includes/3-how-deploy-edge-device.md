@@ -1,6 +1,6 @@
-## Overview
-
 In this module, we use an existing Ubuntu-based virtual machine to act as your IoT Edge device. Alternately, you could install the Azure IoT Edge runtime on your own physical Linux device (X64, ARM32, or ARM64) or on the Azure Stack device. Below we consider only the scenario of a virtual device.
+
+## Overview
 
 Firstly, we configure the device as an IoT Edge device and set up communications between IoT Edge and IoT Hub to run our module on the IoT Edge device. To set up the communication between the IoT Hub and IoT Edge, we provide a device connection string during the configuration. This string associates your physical device with the IoT Edge device identity in Azure. When your device is ready, you'll open 8181 network port. This will set up a network connection between your web application and your edge device. Your video analytics-based application will be able to listen on that port.
 
@@ -39,7 +39,7 @@ To create a device in your hub, you'll use **az IoT hub device-identity create**
 
 ## How to configure your IoT Edge device
 
-The process of configuration of your IoT Edge device involves creating a new virtual machine and installing the IoT Edge runtime on it. In this scenario, you'll create your edge device using a pre-built template that takes the following parameters:
+The configuration of your IoT Edge device involves creating a new virtual machine and installing the IoT Edge runtime on it. In this scenario, you'll create your edge device using a pre-built template that takes the following parameters:
 
 - Choose a subscription
 - Choose the resource group to be deployed
