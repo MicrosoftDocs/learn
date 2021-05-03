@@ -5,22 +5,23 @@ fn main() {
   let a_number = 10;
   let a_boolean = true;
 
-  println!("the number is {}.", a_number);
-  println!("the boolean is {}.", a_boolean);
+  println!("The number is {}.", a_number);
+  println!("The boolean is {}.", a_boolean);
 }
 ```
 
-The `println` macro takes a string as a first argument and one extra argument for each `{}` inside that string and replaces them for the argument's display value.
+The `println` macro takes a string as a first argument and one extra argument for each `{}` inside that string and replaces them for the argument's display value. 
+
 
 > [!NOTE]
-> We won't cover Rust macros in this module. For now, you can think of the `println` macro as a function
-with a variable number of arguments.
+> We add the exclamation mark `!` when we call `println!` to let Rust know that we're using this function as a macro and not a normal method. We won't cover Rust macros in detail this module. For now, you can think of the `println!` macro as a function with a variable number of arguments. 
+
 
 The preceding example would print:
 
-> the number is 10.
+> The number is 10.
 
-> the boolean is true.
+> The boolean is true.
 
 ## Mutability
 
@@ -39,7 +40,7 @@ fn main() {
 }
 ```
 
-You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true). Select the **Run** button to run the code.
+You can see this error message for yourself in the [Rust Playground][RustPlay-errmsg]. Select the **Run** button to run the code.
 
 To mutate a value, we must first use the `mut` keyword to make a variable binding mutable instead.
 
@@ -56,9 +57,7 @@ This code compiles without errors because the variable `a_number` can now be mut
 
 ## Shadowing
 
-You can also declare a new variable with the same name as a previous variable, which creates a new
-binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous
-variable. The old variable still exists, but you can't refer to it in this scope anymore.
+You can also eclare a new variable with the same name as a previous variable, which creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
 
 The variable `number` from the preceding example doesn't need to be mutable. No mutation occurs because every operation creates a new variable while shadowing the previous one.
 
@@ -71,4 +70,9 @@ fn main() {
 }
 ```
 
-Can you guess the output? Visit the [Rust Playground to run this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true).
+Can you guess the output? Visit the [Rust Playground to run this example][RustPlay-shadow].
+
+
+<!-- Links -->
+[RustPlay-errmsg]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true
+[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true

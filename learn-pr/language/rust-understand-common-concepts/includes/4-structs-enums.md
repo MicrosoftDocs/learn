@@ -57,14 +57,16 @@ In the following example, we define an enum to classify a web event. Each varian
 
 ```rust
 enum WebEvent {
-    // An enum may either be unit-like,
+    // An enum csn be unit-like
     PageLoad,
     PageUnload,
-    // An enum can include characters and strings
+
+    // Or it can include characters and strings
     KeyPress(char),
     Paste(String),
-    // or include tuple structs
-    Click { x: i64, y: i64 },
+
+    // Or it can include tuple structs
+    Click { x: i64, y: i64 }
 }
 ```
 
