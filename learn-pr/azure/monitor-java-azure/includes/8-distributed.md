@@ -81,19 +81,25 @@ AppPlatformLogsforSpring
 | render piechart
 ```
 
-# Database
+# Database Monitoring
 
 Monitoring data about your servers helps you troubleshoot and optimize for your workload. Azure Database for MySQL provides various metrics that give insight into the behavior of your server.
 
 ## Metrics
 
-## Server logs
-
 ## Query Store
+
+Query Store is a feature that keeps track of query performance over time including query runtime statistics and wait events
 
 ## Query Performance Insight
 
+Query Performance Insight works in conjunction with Query Store to provide visualizations accessible from the Azure portal. These charts enable you to identify key queries that impact performance. Query Performance Insight is accessible in the Intelligent Performance section of your Azure Database for MySQL server's portal page.
+
+Query Performance Insight helps you to quickly identify what your longest running queries are, how they change over time, and what waits are affecting them.
+
 ## Performance Recommendations
+
+The Performance Recommendations feature identifies opportunities to improve workload performance. Performance Recommendations provides you with recommendations for creating new indexes that have the potential to improve the performance of your workloads. To produce index recommendations, the feature takes into consideration various database characteristics, including its schema and the workload as reported by Query Store
 
 # OpenTelemetry
 
