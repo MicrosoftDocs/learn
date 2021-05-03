@@ -90,7 +90,7 @@ steps:
         ${{ runner.os }}-npm-cache-
 ```
 
-In the above example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an id (`npm-cache` in this example) is useful when you are using the `restore-keys` fallback and have multiple caches.
+In the above example, the `path` is set to `~/.npm` and the `key` includes the runner's operating system and the SHA-256 hash of the `package-lock.json` file. Prefixing the key with an ID (`npm-cache` in this example) is useful when you are using the `restore-keys` fallback and have multiple caches.
 
 ## Pass artifact data between jobs
 
