@@ -1,26 +1,31 @@
 In this section we are going to look at our product table from our relational database and model it for a NoSQL database. While we do this we are also going to look at the Many:Many relationship our Product table has with ProductTags.
 
-    :::image type="content" source="../media/product-model.png" alt-text="product model":::
+:::image type="content" source="../media/2-product-model.png" alt-text="Diagram that shows the relationship between the product and product tags entities." border="false":::
+
+<!--TODOs:
+1. Update alt text for each illustration in every unit so that it follows accessibility guidelines: https://review.docs.microsoft.com/help/contribute/contribute-accessibility-multimedia?branch=master#alt-text-requirements-for-images  E.g. See example I've added in diagram above. Make sure you convey in words what the diagrams show either in alt text or in text near the diagram. 
+1. Make the units scan-able by breaking up the text with H2 headers. For example, see how I tried breaking up content in the first module: https://review.docs.microsoft.com/learn/modules/model-partition-data-azure-cosmos-db/3-identify-access-patterns?branch=pr-en-us-16075.
+1. Run Acrolinx for each unit and update content to fix issues. Units must have at least an overall score of 80. https://review.docs.microsoft.com/help/contribute/contribute-get-started-setup-acrolinx-vscode?branch=master-->
 
 Our initial model for Product just includes the fields from our relational table. However, our e-commerce application needs to display the product tags when we display a product page. We also will want to be able to query for products by product tags. This can be accommodated in one of two ways. We can store products in a product tags container or we could embed our tags in the product container.
 
 Given there are far fewer tags per product than products per tags, it makes more sense to embed the product tags in the product table. There is a 1:few relationship between each product and tags so this makes it a good candidate for embedding. We will also store our product data with embedded tags in our new product container. So our new product model will look like this.
 
-    :::image type="content" source="../media/product-tags-model-container.png" alt-text="product tags model container":::
+:::image type="content" source="../media/2-product-tags-model-container.png" alt-text="product tags model container" border="false":::
 
 Next we will select a partition key for the product container. Again, we need to look at the operations to be performed to decide on a partition key. This includes created and edit a product. As customers navigate the e-commerce site they will often do so by product category. This requires a query that filters products to display by category id. In order to make this a single-partition query with all products by category we will use `categoryId` as our partition key for our product container.
 
-    :::image type="content" source="../media/product-container-categoryId.png" alt-text="product container with category id":::
+:::image type="content" source="../media/2-product-container-categoryid.png" alt-text="product container with category id" border="false":::
 
 So `categoryId` is a good partition key that will allow us to retrieve all products in a category very efficiently and embedding tag ids allows us get the id's in our Many:Many relationship between products and tags easily. However, when we query for products, I not only need the product data but I also want to display the category name and we also need to display the tag names as well. How can we return the category name for each product, as well as the names for the product tags when we query for products?
 
 In order to achieve this we first need to do the following:
 
-    - Run our original query to return products for a category.
-    - Run a second query to return the product category's name.
-    - Then for every product returned by the first query, run a third query to get each product tag's name.
+- Run our original query to return products for a category.
+- Run a second query to return the product category's name.
+- Then for every product returned by the first query, run a third query to get each product tag's name.
 
-    :::image type="content" source="../media/product-category-and-tags-queries.png" alt-text="product category and tags queries":::
+:::image type="content" source="../media/2-product-category-and-tags-queries.png" alt-text="product category and tags queries" border="false":::
 
 Now this could work for us. However, it is not very scalable. Remember that in a NoSQL database there are no joins between containers so these are not an option for us. Also remember, for a NoSQL database, the objective is to reduce the number of requests by modeling data such that all the data needed by the application can be fetched in as few requests as possible.
 
@@ -28,4 +33,4 @@ The solution for us is to *denormalize* our data. With denormalization we are ab
 
 To denormalize our data here we will add additional properties including the name of the category as well as the name for each tag in our tags array. By doing this we now are able to retrieve all of the data we need to return to our clients in just a single request.
 
-    :::image type="content" source="../media/product-denormalized.png" alt-text="product denormalized":::
+:::image type="content" source="../media/2-product-denormalized.png" alt-text="product denormalized" border="false":::
