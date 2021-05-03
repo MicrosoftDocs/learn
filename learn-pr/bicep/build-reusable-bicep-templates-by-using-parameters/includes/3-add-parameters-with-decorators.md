@@ -55,8 +55,6 @@ Your toy company will deploy the HR application to three environments - dev, tes
 
 Your `solutionName` parameter is used to generate the names of resources. You want to enforce a minimum length of 5 characters and a maximum length of 30 characters.
 
-<!-- TODO check if you actually use 30 characters, does the template deploy? -->
-
 1. In the *main.bicep* file in Visual Studio Code, find the `solutionName` parameter. Add `@minLength` and `@maxLength` decorators below the `@description` decorator. After you're done, the parameter should look like below:
 
    :::code language="plaintext" source="code/3-template.bicep" range="9-12" highlight="2-3" :::

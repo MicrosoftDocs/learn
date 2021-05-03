@@ -89,7 +89,10 @@ New-AzResourceGroupDeployment `
 Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
 
 > [!TIP]
-> When you choose a password for the `sqlServerAdministratorPassword` parameter, make sure it's at least 8 characters long and includes lowercase letters, uppercase letters, numbers, and symbols. If the password doesn't meet the requirements, Azure SQL won't deploy your server. See the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity) for more information on the password complexity.
+> When you choose a password for the secure parameters, they need to follow some rules:
+> - `sqlServerAdministratorLogin` must not be a value like `admin` `root`, or another easily guessable name. It can only contain alphanumeric characters, and must start with a letter.
+> - `sqlServerAdministratorPassword` must be at least 8 characters long and includes lowercase letters, uppercase letters, numbers, and symbols. See the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity) for more information on the password complexity.
+> If the parameter values don't meet the requirements, Azure SQL won't deploy your server.
 
 ## Create a key vault and secrets
 
@@ -157,6 +160,12 @@ az keyvault show --name $keyVaultName --query id --output tsv
 ```
 
 ::: zone-end
+
+The resource ID will look something like this:
+
+```
+/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets
+```
 
 Copy the resource ID. You'll use this in the next step.
 

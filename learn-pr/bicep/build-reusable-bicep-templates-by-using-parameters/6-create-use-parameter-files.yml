@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-reusable-bicep-templates-parameters.create-use-parameter-files 
-title: Exercise - Add parameter files and secure parameters
+title: Exercise - Add a parameter file and secure parameters
 sandbox: true
 metadata:
   unitType: exercise  
-  title: Exercise - Add parameter files and secure parameters
+  title: Exercise - Add a parameter file and secure parameters
   description: TODO
   ms.date: 04/21/2021
   author: wviriya

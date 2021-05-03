@@ -12,6 +12,4 @@ Now, when you want to deploy your infrastructure for other environments, you can
 
 ## References
 
-- [Template reference for each Azure resource type](/azure/templates/)
-- [Template functions](/azure/azure-resource-manager/templates/template-functions)
-- [Azure resources naming rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules)
+- TODO

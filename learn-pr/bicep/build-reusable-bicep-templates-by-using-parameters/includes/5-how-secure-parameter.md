@@ -1,6 +1,7 @@
 Sometimes you need to pass sensitive values into your deployments, like logins, passwords, and API keys. However, you need to ensure these values are protected. In some situations you don't want the person who's creating the deployment to know the value at all. Other times, someone will enter the parameter value when they create the deployment, but you need to make sure the secret values aren't exposed or logged. In this unit, you'll learn about some approaches to follow to protect your parameters.
 
-TODO managed identities
+> [!TIP]
+> If you need to provide credentials like passwords and API keys then Bicep lets you do that using the approaches described here. However, an even better approach is to avoid using credentials entirely. [Managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) can enable the components of your solution to securely communicate with one another without any credentials. Managed identities are not available for every resource, but it's a good idea to use them wherever you can.
 
 ## Define secure parameters
 

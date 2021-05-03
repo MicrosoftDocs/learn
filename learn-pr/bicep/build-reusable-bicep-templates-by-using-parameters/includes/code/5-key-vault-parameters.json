@@ -5,7 +5,7 @@
       "sqlServerAdministratorLogin": {
         "reference": {
           "keyVault": {
-            "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLogin"
+            "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
           },
           "secretName": "sqlAdminLogin"
         }
@@ -13,7 +13,7 @@
       "sqlServerAdministratorPassword": {
         "reference": {
           "keyVault": {
-            "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLoginPassword"
+            "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/toysecrets"
           },
           "secretName": "sqlAdminLoginPassword"
         }
