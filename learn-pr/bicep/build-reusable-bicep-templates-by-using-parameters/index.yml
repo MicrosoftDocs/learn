@@ -36,10 +36,10 @@ products:
 units:  
 - learn.azure.build-reusable-bicep-templates-parameters.introduction
 - learn.azure.build-reusable-bicep-templates-parameters.understand-parameters
-- learn.azure.build-reusable-bicep-templates-parameters.add-parameters-with-decorators
+- learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators
 - learn.azure.build-reusable-bicep-templates-parameters.how-use-parameter-file-with-bicep
 - learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter
-- learn.azure.build-reusable-bicep-templates-parameters.create-use-parameter-files
+- learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-parameter-files
 - learn.azure.build-reusable-bicep-templates-parameters.knowledge-check
 - learn.azure.build-reusable-bicep-templates-parameters.summary
 badge:                 
