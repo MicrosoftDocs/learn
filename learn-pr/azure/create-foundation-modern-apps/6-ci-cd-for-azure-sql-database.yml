@@ -9,7 +9,7 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 10
+durationInMinutes: 05
 content: |
   [!include[](includes/6-ci-cd-for-azure-sql-database.md)]
 quiz:
