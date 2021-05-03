@@ -24,7 +24,7 @@ quiz:
     - content: "Highly scalable"
       isCorrect: false
       explanation: "Incorrect. Although Azure Data Lake Storage can quickly scale to meet any workload, that scalability does nothing directly to prevent data silos."
-  - content: "Which of the following tools helps to ingest real-time data from an IoT device?<!--Paul, I edited this because the Learn guide says to use third person in the questions-->"
+  - content: "Which of the following tools helps to ingest real-time data from an IoT device?"
     choices:
     - content: "Azure Storage Explorer"
       isCorrect: false

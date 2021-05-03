@@ -6,7 +6,7 @@ Modern organizations are data-generating machines that gather and produce massiv
 - Web server logs
 - JavaScript Object Notation (JSON) files
 
-How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight and Azure Data Lake Analytics can work directly with Azure Data Lake Storage <!--Paul, this next bit is a bit marketing-like. Could we cut that part out to say "...can work directly with Azure Data Lake Storage to process, analyze, and visualize that data."? -->to give you powerful, cost-effective, and secure tools to process, analyze, and visualize that data.
+How do you integrate these data types in a way that lets your company use and analyze all that data? You can use Azure Data Lake Storage to store a wide variety of data types in a single location. With all your data in one place, services such as Azure HDInsight and Azure Data Lake Analytics can work directly with Azure Data Lake Storage to process, analyze, and visualize that data.
 
 :::image type="content" source="../media/1-introduction-topic.png" alt-text="Network diagram of a hub virtual network, several spoke virtual networks, and an on-premises network, with all traffic to and from the internet passing through an Azure Firewall instance in the hub network.":::
 

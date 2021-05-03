@@ -37,13 +37,13 @@ To better understand Azure Data Lake Storage, you can examine its following char
 
 ### Data storage
 
-Azure Data Lake Storage can store any type of data by <!--Paul, I added the "by" here - please validate.-->using the native format of that data. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Also, Azure Data Lake Storage doesn't perform any special handling of data based on the type of data it stores. With support for any data format and unlimited data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
+Azure Data Lake Storage can store any type of data by using the native format of that data. You don't need to define a schema or perform any type of transformation on the data before ingesting the data. Also, Azure Data Lake Storage doesn't perform any special handling of data based on the type of data it stores. With support for any data format and unlimited data sizes, Azure Data Lake Storage can work with structured, semi-structured, and unstructured data.
 
 ### Data access
 
 Azure Data Lake Storage is primarily designed to work with Hadoop and all frameworks that use the Hadoop Distributed File System (HDFS) as their data access layer. Hadoop distributions include the Azure Blob File System (ABFS) driver, which enables many applications and frameworks to access Azure Blob Storage data directly.
 
-A key feature <!--Paul, I changed this to refer to it as a feature consistently.--> that enables Azure Data Lake Storage to provide high-performance data access at object storage scale and prices is *hierarchical namespace*. You can use this feature to organize all the objects and files within your Azure Data Lake Storage account into a hierarchy of directories and nested subdirectories. In other words, your Azure Data Lake Storage data is organized in much the same way that files are organized on your computer.
+A key feature that enables Azure Data Lake Storage to provide high-performance data access at object storage scale and prices is *hierarchical namespace*. You can use this feature to organize all the objects and files within your Azure Data Lake Storage account into a hierarchy of directories and nested subdirectories. In other words, your Azure Data Lake Storage data is organized in much the same way that files are organized on your computer.
 
 > [!IMPORTANT]
 > Hierarchical namespace is *not* enabled by default. When you create a storage account, you must select the **Enable Hierarchical Namespace** check box. Note, as well, that you can't enable this feature on existing storage accounts, only on new storage accounts.
@@ -54,7 +54,7 @@ Azure Data Lake Storage is priced at Azure Blob Storage levels. It builds on the
 
 ### Data performance
 
-The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed <!--Paul, please review edit, wasn't sure if "reducing time of accessing data" was accurate--> and cost of accessing data.
+The hierarchical namespace supported by Azure Data Lake Storage allows for efficient access and navigation. This architecture means that data processing requires fewer computational resources, which reduces both the speed and cost of accessing data.
 
 Azure Data Lake Storage supports high throughput for input/output intensive analytics and data movement. To get the best performance from Azure Data Lake Storage, it's important to use all the available throughput, which is the amount of data that can be read or written per second. Azure Data Lake Storage achieves throughput maximization by performing as many reads and writes in parallel as possible.
 
@@ -75,7 +75,7 @@ You can configure security settings a number of ways, including the following ap
 
 ### Data redundancy
 
-Azure Data Lake Storage takes advantage of the Azure Blob replication models that provide data redundancy in a single datacenter with locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature helps ensure that your data is always available and protected <!--can we say "in the event of an outage?"-->if catastrophe strikes.
+Azure Data Lake Storage takes advantage of the Azure Blob replication models that provide data redundancy in a single datacenter with locally redundant storage (LRS), or to a secondary region by using the Geo-redundant storage (GRS) option. This feature helps ensure that your data is always available and protected if there is an outage.
 
 ### Data scalability
 
@@ -83,7 +83,7 @@ Azure Data Lake Storage offers unlimited storage and can store a variety of data
 
 ### Data analysis
 
-<!--Paul, this sentence was a bit confusing. would this rewrite work? "Data analysis frameworks that use HDFS as their data access layer can directly access Azure Data Lake Storage data through ABFS. The Apache Spark analytics engine and the Presto SQL query engine are examples of such frameworks.—"-->Via ABFS, data analysis frameworks that use HDFS as their data access layer—such as the Apache Spark analytics engine and the Presto SQL query engine—have direct access to Azure Data Lake Storage data.
+Data analysis frameworks that use HDFS as their data access layer can directly access Azure Data Lake Storage data through ABFS. The Apache Spark analytics engine and the Presto SQL query engine are examples of such frameworks.
 
 In Azure, Data Lake Storage integrates with the following frameworks for analysis:
 
@@ -94,7 +94,8 @@ In Azure, Data Lake Storage integrates with the following frameworks for analysi
 - Azure Synapse Analytics
 - Microsoft Power BI
 
-<!--Paul, should we make this a note?-->Azure Data Lake Storage is also integrated into a massive and mature analytics ecosystem associated with Azure Blob Storage.
+> [!NOTE]
+> Azure Data Lake Storage is also integrated into a massive and mature analytics ecosystem associated with Azure Blob Storage.
 
 ## How to prevent data silos
 

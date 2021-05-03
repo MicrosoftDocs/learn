@@ -39,7 +39,7 @@ Traditional data warehouses have high TCO because:
 
 In comparison, Azure Data Lake Storage provides the following benefits:
 
-- It runs on virtual hardware on the Azure platform<!--MS style: The product descriptor is cloud platform or simply platform. Don't use Azure cloud or Azure Cloud. Don't use the Microsoft Cloud to refer to Azure.-->, so storage is scalable, fast, and reliable without incurring massive charges.
+- It runs on virtual hardware on the Azure platform, so storage is scalable, fast, and reliable without incurring massive charges.
 - All the software you need to ingest, process, and analyze data is available within your Azure subscription. You can use this software as needed and at a lower cost.
 - Data is unprocessed and usually resides in a hierarchical namespace, so it's easier and less expensive to make changes.
 - It separates storage costs from compute costs. As your data volume grows, only your storage requirements change. Paying for more cloud storage is far less expensive than adding hardware to store extra data.
@@ -56,7 +56,7 @@ First, let's review some of the reasons a traditional data warehouse might creat
 - Data exploration doesn't include data that's incompatible with or stored outside of the data warehouse.
 - If different types of data are stored in separate data warehouses, there's usually no straightforward or cost-effective way to share or combine these datasets.
 
-Azure Data Lake Storage overcomes all of the preceding data access barriers, i.e. it enables so-called *data democratization*. It does this by enabling your organization to store all your data formats, including raw data, in a single location. The elimination of data silos enables users to open a tool such as Azure Data Explorer and use it to access and work with every data item in their storage account.<!--Paul, please validate edits here.-->
+Azure Data Lake Storage overcomes all of the preceding data access barriers, i.e. it enables so-called *data democratization*. It does this by enabling your organization to store all your data formats, including raw data, in a single location. The elimination of data silos enables users to open a tool such as Azure Data Explorer and use it to access and work with every data item in their storage account.
 
 ### Data insights
 
@@ -93,7 +93,7 @@ By contrast, Azure Data Lake Storage was built with real-time data in mind:
 - You can ingest all your real-time data into your storage account.
 - Azure Data Lake Storage is format-agnostic and can therefore give analysts access to multiple data formats as needed.
 
-Besides these advantages, Azure Data Lake Storage is ideal for real-time analytics, because <!--Paul, please check if these edits are OK.--> you can output the ingested streaming data to various Azure services, such as Azure Machine Learning and Azure Stream Analytics.
+Besides these advantages, Azure Data Lake Storage is ideal for real-time analytics, because you can output the ingested streaming data to various Azure services, such as Azure Machine Learning and Azure Stream Analytics.
 
 ## Apply the criteria
 

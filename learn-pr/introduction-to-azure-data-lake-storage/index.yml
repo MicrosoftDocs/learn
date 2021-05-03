@@ -26,9 +26,7 @@ roles:
   - data-engineer
   - data-scientist
   - database-administrator
-products: <!--Paul, please review if the product list needs to be shortened further as per the call with Mark and Bob-->
-  - azure-data-lake
-  - azure-data-lake-gen2
+products:
   - azure-data-lake-storage
 units:
 - learn.introduction-to-azure-data-lake-storage.1-introduction
