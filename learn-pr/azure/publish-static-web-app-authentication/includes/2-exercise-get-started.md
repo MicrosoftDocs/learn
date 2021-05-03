@@ -9,24 +9,24 @@ Next, create a new repository by using a GitHub template repository. A series of
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
 1. If prompted for **Owner**, choose one of your GitHub accounts
-1. Name your repository **my-static-web-app**
+1. Name your repository **my-static-web-app-authn**
 1. Select **Create repository from template**
 
 ## Clone your app locally
 
-You just created a GitHub repository named **my-static-web-app** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
+You just created a GitHub repository named **my-static-web-app-authn** in your GitHub account. Next, you'll clone the repo and run the code locally on your computer.
 
 1. Open a terminal on your computer.
 1. Start by cloning the GitHub repository to your computer.
 
    ```bash
-   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app
+   git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-authn
    ```
 
 1. Go to the folder for your source code.
 
    ```bash
-   cd my-static-web-app
+   cd my-static-web-app-authn
    ```
 
 ### Configure CORS locally
