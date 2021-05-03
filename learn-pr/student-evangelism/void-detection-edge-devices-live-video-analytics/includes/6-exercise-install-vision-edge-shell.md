@@ -10,7 +10,7 @@ Perform the following steps in the Azure Cloud Shell environment.
 
    [![The illustration shows how to install installer.](../media/download-installer.png)](../media/download-installer.png)
 
-2. Unzip it.
+2. Unzip the installer.
 
    ```
    unzip -o acs.zip
@@ -29,6 +29,9 @@ Perform the following steps in the Azure Cloud Shell environment.
 4. You would be asked if you would like to use an existing Custom Vision Service. Choose **no** and go ahead to create a new one with the instruction.
    
    [![The illustration shows how to create custom vision service.](../media/create-custom-vision-service.png)](../media/create-custom-vision-service.png)
+
+   > [!NOTE]
+   > If you choose **yes**, you need to enter your Custom Vision API key and endpoint. You can find your training key [here](https://www.customvision.ai/projects#/setting).
 
 5. Once you create custom vision service information, make a note of **API key** and **Endpoint**.
 
@@ -63,3 +66,11 @@ Perform the following steps in the Azure Cloud Shell environment.
     [![The illustration shows deployment.](../media/create-deployment.png)](../media/create-deployment.png)
 
 13. Open your browser, connect to **http://YOUR_IP:8181**. You'll connect to the VisiononEdge solution.
+
+14. To find your Public IP address, go to the overview page of your virtual machine and copy it.
+
+    [![The illustration shows deployment.](../media/vm-overview.png)](../media/vm-overview.png)
+
+15. When you connect to the Vision on Edge solution, click on the Home page.
+
+    [![The illustration shows deployment.](../media/vision-on-edge.png)](../media/vision-on-edge.png)
