@@ -1,0 +1,22 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "sqlServerAdministratorLogin": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLogin"
+          },
+          "secretName": "sqlAdminLogin"
+        }
+      },
+      "sqlServerAdministratorPassword": {
+        "reference": {
+          "keyVault": {
+            "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLoginPassword"
+          },
+          "secretName": "sqlAdminLoginPassword"
+        }
+      }
+    }
+  }

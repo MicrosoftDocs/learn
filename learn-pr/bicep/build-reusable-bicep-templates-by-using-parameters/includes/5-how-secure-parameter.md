@@ -1,63 +1,44 @@
-In this unit, you'll learn how to secure parameters. You may want to pass sensitive value into Bicep as a parameter. When passing sensitive value, you want to avoid entering plaintext into a terminal. This leads to exposing of sensitive information. The value can be easily retrieved from the terminal command history and the deployment logs. You can protect sensitive value by applying the @secure decorator when declaring a parameter.
+Sometimes you need to pass sensitive values into your deployments, like logins, passwords, and API keys. However, you need to ensure these values are protected. In some situations you don't want the person who's creating the deployment to know the value at all. Other times, someone will enter the parameter value when they create the deployment, but you need to make sure the secret values aren't exposed or logged. In this unit, you'll learn about some approaches to follow to protect your parameters.
 
-## Secure parameters
+TODO managed identities
 
-Sometimes, you need to pass sensitive values into your deployments, like logins and passwords. To secure these values, use parameters with the `@secure` decorator. You can apply `@secure` decorator to only string or object type parameters.
+## Define secure parameters
 
-When you're prompted for a secure parameter, you can type in text as normal, but the terminal will not display the text on your screen. The deployment logs also don't include any secure parameter values.
+Bicep provides the `@secure` decorator, which you can apply to string and object parameters that contain secure values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal will not display the text on your screen.
 
-As part of the HR application migration, you need to deploy an Azure SQL server and database. You will provision the server with an administrative login and password. These values are sensitive, and you need the deployment to be secured. Here is an example declaration to secure string parameters:
+As part of the HR application migration, you need to deploy an Azure SQL server and database. You will provision the server with an administrative login and password. These values are sensitive, and you need the deployment to be secured. Here is an example declaration to create two string parameters for the SQL server details:
 
 ```bicep
 @secure()
 param sqlServerAdministratorLogin string
+
 @secure()
 param sqlServerAdministratorPassword string
 ```
 
-Note that both secure parameters don't have default value specified. When manually deploy the template using the Azure CLI or PowerShell, you'll get prompt to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. SQL Database enforces password complexity. You must meet these [guidelines](/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password.
+Note that both secure parameters don't have a default value specified. It's a good practice not to specify a default value for usernames, passwords, and other secrets. Otherwise, if someone deploys your template and doesn't realise they should override the value, they will weaken their security because they'll get a default value instead of something they've chosen themselves.
 
 > [!TIP]
-> * Always use parameters for usernames, passwords, API keys, certificates, and any other secrets.
-> * Use the `@secure` decorator for all secret parameters.
-> * Don't provide default values for usernames, passwords, or any other secure parameters.
-> * Make sure you never create an output for sensitive data. Output values can be accessed by anyone who has access to the deployment history.
+> You also need to ensure you don't create outputs for sensitive data. Output values can be accessed by anyone who has access to the deployment history.
 
-## Azure Key Vault integration
+## Avoid using parameter files for secrets
 
-You learn in the previous unit that parameter files are used in automated deployments. While you can explicitly specify a secure parameter's value in a parameters file, it's not a good practice. This can potentially expose your sensitive information. Often in automation, you'll check the parameter files into a source control repository, and you don't want to include secret values in these files. If someone gain access to your repository, the sensitive information can be exposed.
+As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You will often create parameter files for each environment you're deploying to. However, you should generally avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git, which lots of people might have access to in the future. You should never save sensitive data to version control systems.
+
+## Integrate with Azure Key Vault
 
 Azure Key Vault is a service designed to store and provide access to secrets. You can integrate your Bicep templates with Key Vault by using a parameter file with a reference to a Key Vault secret.
 
-You retrieve the value by referencing the key vault and secret in your parameter file. The value is never exposed because you only reference its key vault ID, which could even come from a different resource group or subscription.
+You retrieve the value by referring to the key vault and secret in your parameter file. The value is never exposed because you only reference its identifier, which itself isn't secret. When you deploy the template, Azure will contact the key vault and retrieve the data.
+
+> [!TIP]
+> You can refer to secrets in key vaults that are located in a different resource group or subscription than the one you're deploying to.
 
 :::image type="content" source="../media/5-parameter-file-key-vault.png" alt-text="Diagram that shows a parameter file reference Azure Key Vault and pass secret to Bicep template to deploy Azure resources" border="false":::
 
-Below is another example of a parameter file with Azure Key Vault references for the Bicep template shown in the above example:
+Here's a parameter file that uses Azure Key Vault references to look up the SQL server administrator login and password to use:
 
-```JSON
-{
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-    "sqlServerAdministratorLogin": {
-      "reference": {
-        "keyVault": {
-        "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLogin"
-        },
-        "secretName": "sqlAdminLogin"
-      }
-    },
-    "sqlServerAdministratorPassword": {
-      "reference": {
-        "keyVault": {
-        "id": "/subscriptions/c0c26c60-679b-49ca-91be-458adbaf4594/resourceGroups/PlatformResources/providers/Microsoft.KeyVault/vaults/sqlAdministratorLoginPassword"
-        },
-        "secretName": "sqlAdminLoginPassword"
-      }
-    }
-  }
-}
-```
+:::code language="json" source="code/5-key-vault-parameters.json" highlight="6-11,14-19":::
 
-Before you can run a deployment using the parameter file with Key Vault references, you must enable the key vault for template deployments. This allows Azure Resource Manager to access the key vault during template deployments. Also, the user who deploys the template must have permission to access the key vault. You'll learn how to do this in the next unit.
+> [!IMPORTANT]
+> To use Key Vault references, your key vaults must be configured to allow Resource Manager to access the data in the key vault during template deployments. Also, the user who deploys the template must have permission to access the key vault. You'll learn how to do this in the next unit.

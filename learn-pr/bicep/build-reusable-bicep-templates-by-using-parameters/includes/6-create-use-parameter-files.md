@@ -17,7 +17,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, find a `location` parameter. Add `sqlDatabaseName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters below the `location` parameter. Also add a `sqlServerName` variable for the Azure SQL server name. When finished, the parameter section should look like this:
 
-    :::code language="json" source="code/6-add-secure-parameters.bicep" highlight="22-35":::
+    :::code language="bicep" source="code/6-add-secure-parameters.bicep" highlight="22-35":::
 
     Notice that you're specifying value for each parameter except `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters.
 
@@ -105,6 +105,8 @@ New-AzResourceGroupDeployment `
 ::: zone-end
 
 Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since its default value are specified. You also don't need to specify the other parameter values because their values are specified in the parameter file.
+
+TODO SQL Database enforces password complexity. You must meet these [guidelines](/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password.
 
 ### Check your deployment
 
