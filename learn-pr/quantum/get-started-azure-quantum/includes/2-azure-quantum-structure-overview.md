@@ -36,7 +36,7 @@ Solvers emulate certain processes from quantum physics by using classical hardwa
 
 ## Azure subscription
 
-The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources. 
+The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources.
 
 A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/learn/modules/create-an-azure-account/?azure-portal=true)
 
