@@ -13,29 +13,23 @@ We'll update the routing configuration of our app to disable Facebook and Google
 
 1. Open the project in Visual Studio Code.
 
-::: zone pivot="angular"
+1. Open this file:
 
-1. Open the file `angular-app/staticwebapp.config.json`
+    ::: zone pivot="angular"
+    `angular-app/staticwebapp.config.json`
+    ::: zone-end
 
-::: zone-end
+    ::: zone pivot="react"
+    `react-app/staticwebapp.config.json`
+    ::: zone-end
 
-::: zone pivot="react"
+    ::: zone pivot="svelte"
+    `svelte-app/staticwebapp.config.json`
+    ::: zone-end
 
-1. Open the file `react-app/staticwebapp.config.json`
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-1. Open the file `svelte-app/staticwebapp.config.json`
-
-::: zone-end
-
-::: zone pivot="vue"
-
-1. Open the file `vue-app/staticwebapp.config.json`
-
-::: zone-end
+    ::: zone pivot="vue"
+    `vue-app/staticwebapp.config.json`
+    ::: zone-end
 
 1. At the root of the JSON object, add this routing configuration:
 
