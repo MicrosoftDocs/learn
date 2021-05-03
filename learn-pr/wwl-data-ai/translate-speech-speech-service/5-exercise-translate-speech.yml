@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-speech-speech-service.exercise-translate-speech
+title: Exercise - Translate speech
+metadata:
+  title: Exercise - Translate speech
+  description: "Exercise - Translate speech"
+  ms.date: 04/30/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 96281
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-translate-speech.md)]
