@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-reusable-bicep-templates-parameters.create-use-parameter-files 
-title: Exercise - Create and use parameter files
+title: Exercise - Add parameter files and secure parameters
 sandbox: true
 metadata:
   unitType: exercise  
-  title: Exercise - Create and use parameter files # user input: module title for browser tab and search results
-  description: Learn how to create and user parameter file with Bicep # user input: a description for site search and SEO
+  title: Exercise - Add parameter files and secure parameters
+  description: TODO
   ms.date: 04/21/2021
-  author: wviriya  
-  ms.author: wviriya  
+  author: wviriya
+  ms.author: wviriya
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
