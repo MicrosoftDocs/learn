@@ -199,30 +199,3 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 ```
 
 ::: zone-end
-
-## Verify the deployment
-
-The first time you deploy a Bicep template, you might want to use the Azure portal to verify that the deployment has finished successfully and to inspect the results.
-
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
-
-   1. Select your avatar in the upper-right corner of the page.
-   1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
-
-1. On the left-side panel, select **Resource groups**.
-
-1. Select **<rgn>[sandbox resource group name]</rgn>**.
-
-1. In **Overview**, you can see that one deployment succeeded.
-
-    :::image type="content" source="../media/4-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
-
-1. Select **1 Succeeded** to see the details of the deployment.
-
-    :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
-
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
-
-    :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
-
-1. Notice that the App Service plan and App Service app have been deployed.
