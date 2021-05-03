@@ -58,7 +58,7 @@ steps:
 
 #### Use a commit's SHA
 
-Tags are useful and widely used but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and cannot be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often times in Git you can abbreviate the SHA hash to the first several characters and Git will recognize the reference. If you are using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
+Tags are useful and widely used but one downside to using tags is that they can be deleted or moved. With Git, each commit receives a calculated SHA value, which is unique and cannot be modified. Using a commit SHA for versioning will give you the most reliable and secure way to version and use an action. However, often in Git you can abbreviate the SHA hash to the first several characters and Git will recognize the reference. If you are using the commit's SHA for release management, you need to use the full SHA value and not the abbreviated value.
 
 ```yml
 steps:
