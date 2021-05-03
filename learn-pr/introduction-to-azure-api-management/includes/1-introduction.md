@@ -10,8 +10,9 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+Making an application programming interface (API) available is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even a single API brings significant challenges on various fronts: onboarding users, handling revisions, implementing security, running analytics, and more. Now imagine that, like many of today's leading companies, your organization publishes multiple APIs for different types of users, including partners, developers, and employees. How do reduce the complexity inherent in having a large number of APIs? Azure API Management acts as a central repository for all your APIs that not only handles all your API traffic, but also offers intuitive portals for managing your APIs and surfacing them to developers, as well as tools for implementing security, handling revisions, and performing analytics.
+
+:::image type="content" source="../media/1-introduction.png" alt-text="Diagram showing multiple APIs connecting to multiple servers, where each API maintains its own set of users, security policies, and analytics data.":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -25,9 +26,10 @@ TODO: add your visual element
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
+
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+
+Suppose you work at a company that operates a food delivery platform. That is, consumers use your mobile app or website to browse the menus of multiple restaurants, place an order for the food they want, which your company then delivers. The backbone of your platform is a large collection of APIs. For example, you publish APIs that are used by your mobile app, your web app, your partner restaurants, the IoT devices on your delivery vehicles, your in-house development team, and your employees (such as business analysts). Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. Here you'll see how Azure API Management greatly simplifies and automates all aspects of publishing and maintaining APIs across the full API lifecycle.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -41,8 +43,14 @@ TODO: add your image
                 * **Branch**: what types of business logic can you add to your app?"
 
  -->
+
 ## What will we be doing?
-TODO: add your activities
+
+We'll examine Azure API Management from three main angles to help you decide if it's the right solution to reduce your company's API complexity:
+
+* **Gateway**: A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
+* **Administrators**: A graphical interface for all your APIs where you can manage users, set policies, create API products, and run analytics.
+* **Developers**: A portal that brings all your APIs into a single location for developers to read documentation, test an API, get API keys, see code samples, and run analytics.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -57,7 +65,9 @@ TODO: add your activities
     Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
 
  -->
+
 ## What is the main goal?
-By the end of this session, you'll be able to <TODO>
+
+By the end of this session, you'll be able to evaluate whether Azure API Management is the right solution for collecting your organization's many APIs under a single management umbrella.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

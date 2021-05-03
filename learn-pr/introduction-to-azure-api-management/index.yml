@@ -87,9 +87,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Basic knowledge of application programming interfaces
-  - Basic knowledge of API formats, including SOAP, REST, and OpenAPI
-  - Basic knowledge of Azure services such as virtual networks
+  - Basic knowledge of application programming interfaces, including API concepts such as SOAP, REST, and OpenAPI
+  - Basic knowledge of Azure services such as virtual networks and virtual machines
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
