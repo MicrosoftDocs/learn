@@ -12,24 +12,28 @@ param environmentName string = 'dev'
 param solutionName string = 'toyhr${uniqueString(resourceGroup().id)}'
 
 @description('The number of App Service plan instances to deploy.')
-@minValue(2)
+@minValue(1)
 @maxValue(10)
-param appServicePlanInstanceCount int = 2
+param appServicePlanInstanceCount int = 1
+
+@description('The name and tier of the App Service plan SKU to deploy.')
+param appServicePlanSku object = {
+  name: 'F1'
+  tier: 'Free'
+}
 
 @description('The location (Azure region) into which the resources should be deployed.')
 param location string = resourceGroup().location
     
 var appServicePlanName = '${environmentName}-${solutionName}-plan'
 var appServiceAppName = '${environmentName}-${solutionName}-app'
-var appServicePlanSkuName = 'F1'
-var appServicePlanSkuTier = 'Free'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   name: appServicePlanName
   location: location
   sku: {
-    name: appServicePlanSkuName
-    tier: appServicePlanSkuTier
+    name: appServicePlanSku.name
+    tier: appServicePlanSku.tier
     capacity: appServicePlanInstanceCount
   }
 }

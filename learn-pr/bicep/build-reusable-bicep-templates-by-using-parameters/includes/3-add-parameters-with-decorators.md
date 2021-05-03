@@ -15,9 +15,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
 
-   :::code language="bicep" source="code/3-template.bicep" range="7,12,17,20-25" :::
+   :::code language="bicep" source="code/3-template.bicep" range="7,12,17,21-23,26-29" :::
 
-   Notice that you're creating four parameters here. They use a mixture of `string` and `int` types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
+   Notice that you're creating a number parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
 
    <!-- TODO restate the uniqueString() stuff here -->
 
@@ -25,7 +25,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/3-template.bicep" range="27-44" :::
+   :::code language="bicep" source="code/3-template.bicep" range="31-48" :::
 
    Notice that the resources use the values of the parameters you defined above.
 
@@ -35,7 +35,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar this:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-20" highlight="1,4,7,10" :::
+   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10" ::: <!-- TODO -->
 
 1. Save the changes to the file.
 
@@ -63,7 +63,7 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 ### Limit numeric values
 
-You need to ensure that the `appServicePlanInstanceCount` parameter only allows values between 2 and 10.
+You need to ensure that the `appServicePlanInstanceCount` parameter only allows values between 1 and 10.
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators below the `@description` decorator. After you're done, the parameter should look like this:
 

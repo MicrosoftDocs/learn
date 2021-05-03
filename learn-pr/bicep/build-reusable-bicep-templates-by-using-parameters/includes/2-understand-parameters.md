@@ -136,7 +136,7 @@ param appServicePlanSkuName string
 > [!TIP]
 > You should use the `@allowed` decorator sparingly. If you do this too broadly, you might block valid deployments if you don't keeping the list up to date. The above example allows for only Premium v3 SKUs in production. However, if you need to use the same template to deploy some cheaper non-production environments, the list of allowed values might stop you from using other SKUs that you need to use.
 
-## Restricting the length and values of parameters
+## Restrict the length and values of parameters
 
 When you use string parameters you often need to limit the length of the string. Let's consider the example of Azure resource naming. All Azure resource types have limits around the length of names that can be used. It's a good practice to specify the minimum and maximum character length for a parameter to avoid errors later during deployment. You use the `@minLength` decorator to specify a minimum character length and the  `@maxLength` decorator for a maximum character length.
 
@@ -153,16 +153,16 @@ Notice that this parameter includes two decorators.
 > [!NOTE]
 > You can also apply the `@minLength` and `@maxLength` decorators to array parameters.
 
-When you work with numeric parameters, you may need to restrict the values that can be assigned. For example, your toy company has decided that whenever anybody deploys an App Service plan, they should always deploy at least two instances, but no more than ten instances of the plan. To meet the requirements, you can use the `@minValue` and `@maxValue` decorators to specify the minimum and maximum allowed values. The following example declares an integer parameter `appServicePlanInstanceCount` whose value can only be 2 and 10 (inclusive).
+When you work with numeric parameters, you may need to restrict the values that can be assigned. For example, your toy company has decided that whenever anybody deploys an App Service plan, they should always deploy at least one instance, but no more than ten instances of the plan. To meet the requirements, you can use the `@minValue` and `@maxValue` decorators to specify the minimum and maximum allowed values. The following example declares an integer parameter `appServicePlanInstanceCount` whose value can only be between 1 and 10 (inclusive).
 
 ```bicep
-@minValue(2)
+@minValue(1)
 @maxValue(10)
 param appServicePlanInstanceCount int
 ```
 
-> [!IMPORTANT]
-> Both value and length constraints are evaluated when the template is actually deployed. This means that if you provide a value that under or above the constraint, an error will not occur until you try to deploy the template.
+> [!NOTE]
+> Both value and length constraints are evaluated when the template is actually deployed. This means that if you provide a value that doesn't meet the requirements, an error will not occur until you try to deploy the template.
 
 ## Add descriptions to parameters
 
