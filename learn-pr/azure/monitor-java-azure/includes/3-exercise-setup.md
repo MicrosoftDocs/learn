@@ -41,4 +41,4 @@ Navigate to the URL provided by the previous command to open the Pet Clinic micr
 
 ## Next steps
 
-In the next exercise, you'll set up your sample application for Logging
+In the next exercise, you'll explore logging for your sample application.

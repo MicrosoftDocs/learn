@@ -1,8 +1,6 @@
-In this unit, we look at Monitoring end-to-end monitoring applications concepts.
+In this unit, we look at Monitoring the entire solution.
 
 # Introduction
-
-## Database
 
 ## Log analytics
 
@@ -12,9 +10,9 @@ After your application is properly set up, your application console log will be 
 
 ### Use Log Analytics
 
-There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We will focus here on Log Analytics as it's the most common one, and as it's integrated into Azure Spring Cloud.
+There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one, and as it's integrated into Azure Spring Cloud.
 
-Log Analytics is part of Azure Monitor, which is well-integrated into Azure Spring Cloud and which we will also use for metrics monitoring.
+Log Analytics is part of Azure Monitor, which is integrated into Azure Spring Cloud for metrics monitoring.
 
 1. In the Azure portal, in the left pane, select **Log Analytics**.
 1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
@@ -72,7 +70,7 @@ Use this query to find errors, or modify the query terms to find specific error 
 
 ### Show the number of errors and exceptions reported by your application over the last hour
 
-To create a pie chart that displays the number of errors and exceptions logged by your application in the last hour, run the following query:
+To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
 
 ```sql
 AppPlatformLogsforSpring
@@ -83,9 +81,31 @@ AppPlatformLogsforSpring
 | render piechart
 ```
 
-# What is OpenTelemetry?
+# Database
+
+Monitoring data about your servers helps you troubleshoot and optimize for your workload. Azure Database for MySQL provides various metrics that give insight into the behavior of your server.
+
+## Metrics
+
+## Server logs
+
+## Query Store
+
+## Query Performance Insight
+
+## Performance Recommendations
+
+# OpenTelemetry
 
 OpenTelemetry is an open source, vendor-agnostic, single distribution of libraries to provide metrics collection and distributed tracing for services.
+OpenTelemetry standardizes what telemetry data looks like and is a set of APIs, SDKs, tooling, and integrations that are designed for the creation and management of telemetry data such as traces, metrics, and logs.
+
+For new environments, OpenTelemetry is deployed as an agent on each host within an environment and configured to send telemetry data to the user’s desired back-end(s).
+For legacy environments, the OpenTelemetry supports many popular open-source wire formats including Jaeger, Prometheus, and Fluent Bit.
+
+## Integration with Azure
+
+Once OpenTelemetry data has been exported to Azure Monitor, you can access Application Insights and distributed traces and metrics.
 
 # UI monitoring
 

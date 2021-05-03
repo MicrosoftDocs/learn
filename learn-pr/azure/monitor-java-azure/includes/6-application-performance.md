@@ -23,3 +23,5 @@ az spring-cloud create --name ${SPRING_CLOUD_SERVICE} \
 --resource-group ${RESOURCE_GROUP} \
 --location ${REGION}
 ```
+
+In the next exercise, we'll explore Application Performance Monitoring for your Sample Spring application.
