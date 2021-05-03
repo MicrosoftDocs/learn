@@ -26,7 +26,7 @@ Such impressive speedups are one of the most promising aspects of quantum comput
 
 A decision tree model consists of a sequence of queries that are done adaptively, so the outcome of the previous tests can influence the next test. The decision tree model is useful in establishing lower and upper bounds for the complexity theory of algorithms.
 
-The real upper bound of query complexity for unstructured problems has been an open problem for more than 20 years. In a 1998 paper, [Beals et al.](https://doi.org/10.1145/502090.502097?azure-portal=true) showed that for any total Boolean function $f$, the maximum possible quantum speedup for an unstructured problem is power 6. This can be expressed as $D(ƒ) = Ο(Q(ƒ)^6)$, where $D(f)$ and $Q(f)$ are classical and quantum query complexity of a function $f$, respectively. 
+The real upper bound of query complexity for unstructured problems has been an open problem for more than 20 years. In a 1998 paper, [Beals et al.](https://doi.org/10.1145/502090.502097?azure-portal=true) showed that for any total Boolean function $f$, the maximum possible quantum speedup for an unstructured problem is power 6. This can be expressed as $D(ƒ) = Ο(Q(ƒ)^6)$, where $D(f)$ and $Q(f)$ are classical and quantum query complexity of a function $f$, respectively.
 
 However, at this time, the largest speedup known was only power 2, exhibited by Grover's algorithm. In a paper published in 2020, Microsoft researcher [Robin Kothari et al.](https://www.microsoft.com/research/publication/quantum-implications-of-huangs-sensitivity-theorem/?azure-portal=true) showed that the deterministic query complexity, D(f), is at most quartic in the quantum query complexity: $Q(f): D(f)=O(Q(f)^4)$.
 
