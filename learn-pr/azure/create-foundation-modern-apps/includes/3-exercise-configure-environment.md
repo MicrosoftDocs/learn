@@ -8,7 +8,7 @@ Here, you'll learn how to download the latest recommended tools and extensions. 
 
 ### Visual Studio Code
 
-Throughout the learning path, you'll use Visual Studio Code as your main IDE. If you have another IDE of choice, you are free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
+Throughout the learning path, you'll use Visual Studio Code as your main development tool. If you have another tool of choice, you are free to use it for the exercises, but note that the instructions will be catered to capabilities and options in Visual Studio Code.
 
 1. Visual Studio Code is available on all operating systems. Navigate to the [Visual Studio Code Download](https://code.visualstudio.com/Download) page and download/install the application applicable to your operating system.
 
@@ -16,12 +16,12 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 
 1. Open the **Extensions** blade from the left-hand taskbar. We recommend installing the following extensions:
 
-    1. Azure Account
-    1. Azure Functions
-    1. GitHub
-    1. Azure Resources
-    1. SQL Server (mssql)
-    1. Live Server
+    1. **Azure Account**: This extension allows you to authenticate to Azure.
+    1. **Azure Functions**: This extension allows you to manage Azure Functions.
+    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
+    1. **Azure Resources**: This extension allows you to manage Azure resources.
+    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
+    1. **Live Server**: This extension enables you to run web applications locally with ease.
 
 1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
 
@@ -41,7 +41,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main IDE. If
 
 ### Azure Data Studio
 
-Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities.
+Azure Data Studio is a source-open application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities. A notebook is a document ending in `.ipynb` which mixes runnable code cells and text cells in one file.
 
 1. Navigate to the [Azure Data Studio Download](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
 

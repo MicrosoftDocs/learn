@@ -36,4 +36,4 @@ Azure DevOps is a suite of products that provides full support to all DevOps asp
 
 GitHub Actions allow the definition of a CI/CD pipeline with the use of **Actions**, which are used to create the steps of the pipeline. An Action can be used to execute processes of almost any type. The Action **Azure SQL Deploy** allows you to deploy a `.dacpac` file.
 
-Azure SQL Actions will be used in this scenario due to their ease of use and implementation.
+Azure SQL Actions will be used in the following exercise to deploy and update the database's schema.

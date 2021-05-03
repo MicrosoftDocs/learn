@@ -43,6 +43,8 @@ Based on the scenario and the ideal solution, here's a possible architecture:
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take advantage as much as possible of the scalability and infrastructure benefits provided by Azure.
 
+There is a complete learning path dedicated to exploring each piece of the architecture. in this module, you'll focus on the database service.
+
 ### Database service
 
 [Azure SQL Database](https://azure.microsoft.com/services/azure-sql/) provides support to many of the required technologies already.
@@ -55,6 +57,7 @@ The aforementioned features are built on the rock-solid foundations of the relat
 
 With Azure SQL it is also easy to access static data, like the route information provided by the GTFS standard, that can be stored in an Azure Blob Storage account. By using the [OPENROWSET](https://docs.microsoft.com/sql/t-sql/functions/openrowset-transact-sql) function, importing data from a text file can be done without any other service, keeping solution complexity to a minimum.
 
+<!--
 ### API service
 
 An API is needed to access and consume the GTFS feed, to notify a user if a bus has entered a geofence, and to serve data to a web application.  [Azure Functions](https://azure.microsoft.com/services/functions/) has been selected as the service of choice. Azure Functions is a great service as its serverless nature allows you to focus on the code, leaving almost all infrastructural aspects to Azure Functions. Azure Functions provides support for different languages, so you can choose your preferred one or the most suitable one for the task you are working on, which follows a pure microservices approach.
@@ -69,4 +72,4 @@ To visualize geospatial data and project geofences and bus positions on a map, y
 
 ### Automation of deployment
 
-As you've seen, the complete solution is made up of several moving parts: the back-end service to pull data from the real-time feed, the database to store, process, and serve data, and the front-end visualization solution, which is composed of a static HTML file and a REST API endpoint. By using a CI/CD pipeline through [GitHub Actions](https://github.com/features/actions), you'll be able to manage the deployment of all the pieces, via GitHub and Visual Studio Code, as soon as you have finished committing your changes. Database changes, if there are any, along with Azure Functions and Azure Static Web Apps will be deployed in a fully automated and orchestrated way.
+As you've seen, the complete solution is made up of several moving parts: the back-end service to pull data from the real-time feed, the database to store, process, and serve data, and the front-end visualization solution, which is composed of a static HTML file and a REST API endpoint. By using a CI/CD pipeline through [GitHub Actions](https://github.com/features/actions), you'll be able to manage the deployment of all the pieces, via GitHub and Visual Studio Code, as soon as you have finished committing your changes. Database changes, if there are any, along with Azure Functions and Azure Static Web Apps will be deployed in a fully automated and orchestrated way. -->
