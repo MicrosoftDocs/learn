@@ -35,15 +35,15 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. Look at the version number on the first line, which starts with `azure-cli`.
 
-    - If the version number is version `2.20.0` or later, go to the next section ("Install the Bicep tooling").
+   - If the version number is version `2.20.0` or later, go to the next section ("Install the Bicep tooling").
 
-    - If the version number is later than `2.11.0` and earlier than `2.20.0`, update your Azure CLI version by using this command:
+   - If the version number is later than `2.11.0` and earlier than `2.20.0`, update your Azure CLI version by using this command:
+  
+      ```azurecli
+      az upgrade
+      ```
 
-        ```azurecli
-        az upgrade
-        ```
-
-    - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
+   - If the version number is earlier than `2.11.0`, you might need to [reinstall the Azure CLI](/cli/azure/install-azure-cli) to get the latest version.
 
 ### Install the Bicep tooling
 
