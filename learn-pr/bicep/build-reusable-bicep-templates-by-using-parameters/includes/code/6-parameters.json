@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "dev"
+    },
+    "appServicePlanInstanceCount": {
+      "value": 2
+    },
+    "location": {
+      "value": "westus"
+    },
+    "sqlServerAdministratorLogin": {
+      "reference": {
+        "keyVault": {
+          "id": "YOUR-KEY-VAULT-RESOURCE-ID"
+        },
+        "secretName": "sqlServerAdministratorLogin"
+      }
+    },
+    "sqlServerAdministratorPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "YOUR-KEY-VAULT-RESOURCE-ID"
+        },
+        "secretName": "sqlServerAdministratorPassword"
+      }
+    }
+  }
+}

@@ -1,190 +1,170 @@
-In this exercise, you'll create a parameter file that provide inputs to the Bicep template that you previously created. In the same parameter file, you'll also referencing Azure Key Vault to provide sensitive information.
+In this exercise, you'll create a parameter file that provide inputs to the Bicep template that you previously created. In the same parameter file, you'll also add Key Vault references to provide sensitive information.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-
-> * Add secure parameters
+> * Add some secure parameters.
 > * Create a parameter file.
 > * Test the deployment to ensure that the parameter file is valid.
-> * Create Azure Key Vault and secrets.
-> * Update the parameter file with Azure Key Vault references.
+> * Create a key vault and secrets.
+> * Update the parameter file to refer to the key vault secrets.
 > * Re-test the deployment to ensure that the parameter file is still valid.
 
 This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
-## Add secure parameters and database parameters
+## Add new parameters
 
-1. In the *main.bicep* file in Visual Studio Code, find a `location` parameter. Add `sqlDatabaseName`, `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters below the `location` parameter. Also add a `sqlServerName` variable for the Azure SQL server name. When finished, the parameter section should look like this:
+1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, and `sqlServerAdministratorPassword` parameters below the current parameter declarations. When you're finished, your parameter declarations should look like this:
 
-    :::code language="bicep" source="code/6-add-secure-parameters.bicep" highlight="22-35":::
+   :::code language="plaintext" source="code/6-template.bicep" range="1-28" highlight="22-28" :::
 
-    Notice that you're specifying value for each parameter except `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters.
+   Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters, since it's considered insecure to add default values for secure parameters.
 
-### Add Azure SQL server and database
+## Add new variables
+
+1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerName`, `sqlDatabaseName`, `sqlDatabaseSkuName`, and `sqlDatabaseSkuTier` variables under the existing variables. When you're finished, your variable declarations should look like this:
+
+   :::code language="plaintext" source="code/6-template.bicep" range="30-37" highlight="5-8" :::
+
+### Add SQL server and database
 
 1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file.
 
-    ```bicep
-
-    resource sqlServer 'Microsoft.Sql/servers@2020-11-01-preview' = {
-      name: sqlServerName
-      location: location
-      properties: {
-        administratorLogin: sqlServerAdministratorLogin
-        administratorLoginPassword: sqlServerAdministratorPassword
-      }
-    }
-    
-    resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-11-01-preview' = {
-      parent: sqlServer
-      name: sqlDatabaseName
-      location: location
-      sku: {
-        name: 'Standard'
-        tier: 'Standard'
-      }
-    }
-    ```
+   :::code language="bicep" source="code/6-template.bicep" range="58-75" :::
 
 1. Save the changes to the file.
 
 ## Create a parameter file
 
-1. Open Visual Studio Code, and open folder where _main.bicep_ is located. In the same folder, create a new file called _parameters.dev.json_.
+1. Open Visual Studio Code, and open the folder where the _main.bicep_ file is located. In the same folder, create a new file called _parameters.dev.json_.
 
-1. In *main.parameters.dev.json* file, add the following code:
+1. In the *main.parameters.dev.json* file, add the following code:
 
     ```json
     {
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {
-          "environmentName": {
-              "value": "dev"
-          },
-          "appServicePlanInstanceCount": {
-              "value": 2
-          },
-          "sqlDatabaseName": {
-              "value": "employeeDB"
-          },
-          "location": {
-              "value": "WestUS"
-          }
+        "environmentName": {
+            "value": "dev"
+        },
+        "appServicePlanInstanceCount": {
+            "value": 2
+        },
+        "location": {
+            "value": "westus"
+        }
       }
     }
     ```
 
 1. Save the changes to the file.
 
-## Deploy the Bicep template with parameter file
+## Deploy the Bicep template with the parameter file
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You are providing a parameter file along with a Bicep file this time.
+Run the following Azure CLI command in the terminal. Notice that you are providing a parameter file for the deployment.
 
 ```azurecli
 az deployment group create \
-    --template-file main.bicep \
-    --parameters main.parameters.dev.json
+  --template-file main.bicep \
+  --parameters main.parameters.dev.json
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You are providing a parameter file along with a Bicep file this time.
+Run the following Azure PowerShell command in the terminal. Notice that you are providing a parameter file for the deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
-    -TemplateFile main.bicep `
-    -TemplateParameterFile main.parameters.dev.json
+  -TemplateFile main.bicep `
+  -TemplateParameterFile main.parameters.dev.json
 ```
 
 ::: zone-end
 
-Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since its default value are specified. You also don't need to specify the other parameter values because their values are specified in the parameter file.
+Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
 
-TODO SQL Database enforces password complexity. You must meet these [guidelines](/sql/relational-databases/security/password-policy?view=sql-server-ver15#password-complexity) when entering the password.
+> [!TIP]
+> When you choose a password for the `sqlServerAdministratorPassword` parameter, make sure it's at least 8 characters long and includes lowercase letters, uppercase letters, numbers, and symbols. If the password doesn't meet the requirements, Azure SQL won't deploy your server. See the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity) for more information on the password complexity.
 
-### Check your deployment
+## Create a key vault and secrets
 
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
+Your toy company already has a key vault with the secrets they need for their deployments. To simulate this, we'll create a new key vault and some secrets to use.
 
-1. Select the **1 Succeeded** link.
+<!-- TODO check how this works if I already deployed using a different username/password -->
 
-1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
-
-    :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with App Service and Azure SQL Database resources listed with generated names." border="true":::
-
-1. Notice that the resources have been deployed.
-
-## Deploy Azure Key Vault and secrets
+In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands.
 
 ::: zone pivot="cli"
 
-The following Azure CLI samples show how to create the key vault, and add a secret. Replace $keyVaultName
+<!-- TODO check the syntax below is valid for bash -->
 
 ```azurecli
-az keyvault create \
-    --name $keyVaultName \
-    --enabled-for-template-deployment true
+$keyVaultName=YOUR-KEY-VAULT-NAME # A unique name for the key vault.
+$login=YOUR-LOGIN # The login that you used in the previous step.
+$password=YOUR-PASSWORD # The password that you used in the previous step.
 
-az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value "sqlAdmin"
+az keyvault create --name $keyVaultName --location westus --enabled-for-template-deployment true
+az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorLogin" --value $login
+az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value $password
+```
 
-az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministratorPassword" --value "$ql@dm!nP@$$w0rd"
+> [!NOTE]
+> Notice that you are setting the `--enabled-for-template-deployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault. Whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$keyVaultName = 'YOUR-KEY-VAULT-NAME' # A unique name for the key vault.
+$login = 'YOUR-LOGIN' # The login that you used in the previous step.
+$password = 'YOUR-PASSWORD' # The password that you used in the previous step.
+
+$sqlServerAdministratorLogin = ConvertTo-SecureString $login -AsPlainText -Force
+$sqlServerAdministratorPassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+New-AzKeyVault -VaultName $keyVaultName -Location westus -EnabledForTemplateDeployment
+Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $sqlServerAdministratorLogin
+Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $sqlServerAdministratorPassword
+```
+
+> [!NOTE]
+> Notice that you are setting the `-EnabledForTemplateDeployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault. Whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
+
+::: zone-end
+
+### Get the key vault's resource ID
+
+To be able to use the key vault secrets in your deployment, you need the resource ID of the vault. Run the following command to retrieve the key vault's resource ID.
+
+::: zone pivot="cli"
+
+```azurecli
+az keyvault show --name $keyVaultName --query id --output tsv
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-The following Azure PowerShell samples show how to create the key vault, and add a secret.
-
 ```azurepowershell
-New-AzKeyVault `
-    -VaultName $keyVaultName `
-    -EnabledForTemplateDeployment
-
-$sqlServerAdministratorLogin = ConvertTo-SecureString 'sqlAdmin' -AsPlainText -Force
-$sqlServerAdministratorPassword = ConvertTo-SecureString '$ql@dm!nP@$$w0rd' -AsPlainText -Force
-
-Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorLogin' -SecretValue $sqlServerAdministratorLogin
-
-Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassword' -SecretValue $sqlServerAdministratorPassword
-    ```
+(Get-AzKeyVault -Name $keyVaultName).ResourceId
+```
 
 ::: zone-end
 
-Once you successfully creating the key vault, you should get JSON output similar to below. Copy the value of `id` (highlighted) from the JSON output. This is your key vault id, and you'll need it later.
-
-:::code language="json" source="code/6-new-keyvault.json" highlight="2":::
-
-Notice that you are setting the --enabled-for-template-deployment setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault. You also must have the `Microsoft.KeyVault/vaults/deploy/action` permission for the scope of the resource group and key vault. The [Owner](/azure/role-based-access-control/built-in-roles#owner) and [Contributor](/azure/role-based-access-control/built-in-roles#contributor) roles both grant this access. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise.
+Copy the resource ID. You'll use this in the next step.
 
 ## Add key vault reference to parameter file
 
-1. In *main.parameters.dev.json* file, append the following code after `location` parameter. Make sure that you replace `<keyVaultId>` with the value of the key vault id you copied earlier.
+1. In *main.parameters.dev.json* file, append the following code after `location` parameter. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're done, your parameters file should look like this:
 
-```json
-"sqlServerAdministratorLogin": {
-    "reference": {
-        "keyVault": {
-            "id": "<keyVaultId>"
-            },
-        "secretName": "sqlServerAdministratorLogin"
-    }
-},
-"sqlServerAdministratorPassword": {
-    "reference": {
-        "keyVault": {
-            "id": "<keyVaultId>"
-            },
-        "secretName": "sqlServerAdministratorPassword"
-    }
-}
-```
+   :::code language="json" source="code/6-parameters.json" highlight="14-29" :::
 
 1. Save the changes to the file.
 
@@ -192,38 +172,26 @@ Notice that you are setting the --enabled-for-template-deployment setting on the
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You are providing a parameter file along with a Bicep file this time.
+Run the following Azure CLI command in the terminal. You are providing a parameter file along with a Bicep file.
 
 ```azurecli
 az deployment group create \
-    --template-file main.bicep \
-    --parameters main.parameters.dev.json
+  --template-file main.bicep \
+  --parameters main.parameters.dev.json
 ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You are providing a parameter file along with a Bicep file this time.
+Run the following Azure PowerShell command in the terminal. You are providing a parameter file along with a Bicep file.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
-    -TemplateFile main.bicep `
-    -TemplateParameterFile main.parameters.dev.json
-    ```
+  -TemplateFile main.bicep `
+  -TemplateParameterFile main.parameters.dev.json
+```
 
 ::: zone-end
 
-Notice that you're not prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment this time.
-
-### Check your deployment
-
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
-
-1. Select the **1 Succeeded** link.
-
-1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources.
-
-    :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with App Service and Azure SQL Database resources listed with generated names." border="true":::
-
-1. Notice that the resources have been deployed.
+Notice that you're not prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment this time. Azure retrieves the values from your key vault instead.
