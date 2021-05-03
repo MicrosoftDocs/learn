@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.advanced-modeling-patterns-azure-cosmos-db.exercise-set-up-environment
-title: Set up your environment and measure performance and costs when denormalizing data  
+title: Measure performance and costs when denormalizing data  
 metadata:
   unitType: exercise  
-  title: Set up your environment and measure performance and costs when denormalizing data
-  description: Set up your environment and measure performance and costs when denormalizing data 
+  title: Measure performance and costs when denormalizing data
+  description: Measure performance and costs when denormalizing data
   ms.date: 3/9/2021  
   author: markjbrown  
   ms.author: mjbrown  

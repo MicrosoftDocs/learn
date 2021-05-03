@@ -15,6 +15,13 @@ https://docs.microsoft.com/learn/modules/monitor-and-scale-cosmos-db/4-metrics
 
 ## Get RU/s for database-v2 model
 
+<!--
+See example on how to write this section from what I did in first module: https://review.docs.microsoft.com/en-us/learn/modules/model-partition-data-azure-cosmos-db/5-exercise-measure-performance?branch=NEW-model-partition-data-cosmos-db
+
+See this other unit for comparing operations:
+https://docs.microsoft.com/learn/modules/monitor-and-scale-cosmos-db/4-metrics
+-->
+
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Azure portal menu, or from the **Home** page, select **Azure Cosmos DB**.
 1. **Add steps to navigate to data explorer**.
@@ -36,8 +43,11 @@ https://docs.microsoft.com/learn/modules/monitor-and-scale-cosmos-db/4-metrics
 1. Select the product container > **New SQL Query**.
 1. Run the following query.
 
-- **product**: `SELECT * FROM c where c.categoryId = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"`
+    ```sql
+   SELECT * FROM c where c.categoryId = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"
+   ```
 
+1. The results will look something like the following image.
     :::image type="content" source="../media/3-product-query-v2.png" alt-text="product query in exercise":::
 
 1. Select **Query Stats**.
