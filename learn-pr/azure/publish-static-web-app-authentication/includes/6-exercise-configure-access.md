@@ -98,7 +98,7 @@ Before testing the result of this configuration, we'll redeploy our app.
 1. Type and select **Git: Push**
 1. Press <kbd>Enter</kbd>
 
-After you pushed your changes, wait a few minutes for the build and deploy process to run. The changes should be visible on your deployed app after that.
+After you pushed your changes, wait for the build and deploy process to run. The changes should be visible on your deployed app after that.
 
 ## Test the new restrictions
 

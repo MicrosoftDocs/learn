@@ -136,6 +136,14 @@ Leave this server running in the background. We'll now run the API and authentic
 
 1. Browse to `http://localhost:4280`
 
+The final port used by the SWA CLI is different than the one you've seen before, because it uses a reverse proxy to forward requests to the three different components:
+
+- Your framework development server
+- The authentication and authorization emulator
+- The API hosted by the Functions runtime
+
+:::image type="content" source="../media/swa-cli-architecture.png" alt-text="Static Web Apps CLI architecture":::
+
 Now let the application running while we modify the code.
 
 ## Get the user login status
@@ -912,7 +920,7 @@ You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in the termin
 1. Type and select **Git: Push**
 1. Press <kbd>Enter</kbd>
 
-After you pushed your changes, wait a few minutes for the build and deploy process to run. The changes should be visible on your deployed app after that.
+After you pushed your changes, wait for the build and deploy process to run. The changes should be visible on your deployed app after that.
 
 ## Next steps
 
