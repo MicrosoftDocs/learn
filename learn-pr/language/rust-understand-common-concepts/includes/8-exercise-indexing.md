@@ -13,6 +13,7 @@ You can put the expression for each required element where you see the placehold
 ```rust
 fn indexing_tuple() {
     let numbers = (1, 2, 3);
+    // TODO - Correct the syntax
     let second = todo!("Replace with the tuple indexing syntax");
 
     assert_eq!(
@@ -24,6 +25,7 @@ fn indexing_tuple() {
 
 fn indexing_array() {
     let characters = ['a', 'b', 'c', 'd', 'e'];
+    // TODO - Correct the syntax
     let letter_d = todo!("Replace with the array indexing syntax");
 
     assert_eq!(
@@ -34,6 +36,11 @@ fn indexing_array() {
 }
 ```
 
-You can run this code in your local computer, or use this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=f3dceec336bea3f171c88e54023238e4?azure-portal=true).
+You can run this code in your local computer, or use this [Rust Playground][RustPlay-exercise].
 
-The solution to this exercise is in this [Rust Playground link](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ae47e11d8fe08e78d66edf7c888d6d5?azure-portal=true).
+The solution to this exercise is in this [Rust Playground][RustPlay-answer].
+
+
+<!-- Links -->
+[RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=2088c492ed2b4af29db45558202fbb73?azure-portal=true
+[RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1ae47e11d8fe08e78d66edf7c888d6d5?azure-portal=true

@@ -2,11 +2,11 @@ Values can be bound to variables by using the `let` keyword.
 
 ```rust
 fn main() {
-  let a_number = 10;
-  let a_boolean = true;
+    let a_number = 10;
+    let a_boolean = true;
 
-  println!("The number is {}.", a_number);
-  println!("The boolean is {}.", a_boolean);
+    println!("The number is {}.", a_number);
+    println!("The boolean is {}.", a_boolean);
 }
 ```
 
@@ -33,10 +33,10 @@ error message from the compiler.
 
 ```rust
 fn main() {
-  let a_number = 10; // error: cannot assign twice to immutable variable `a_number`
-  println!("the number is {}.", a_number);
-  a_number = 15;
-  println!("and now the number is {}.", a_number);
+    let a_number = 10; // error: cannot assign twice to immutable variable `a_number`
+    println!("the number is {}.", a_number);
+    a_number = 15;
+    println!("and now the number is {}.", a_number);
 }
 ```
 
@@ -46,10 +46,10 @@ To mutate a value, we must first use the `mut` keyword to make a variable bindin
 
 ```rust
 fn main() {
-  let mut a_number = 10; // notice the `mut` keyword
-  println!("the number is {}.", a_number);
-  a_number = 15;
-  println!("and now the number is {}.", a_number);
+    let mut a_number = 10; // notice the `mut` keyword
+    println!("the number is {}.", a_number);
+    a_number = 15;
+    println!("and now the number is {}.", a_number);
 }
 ```
 
@@ -57,7 +57,7 @@ This code compiles without errors because the variable `a_number` can now be mut
 
 ## Shadowing
 
-You can also eclare a new variable with the same name as a previous variable, which creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
+You can also declare a new variable with the same name as a previous variable, which creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
 
 The variable `number` from the preceding example doesn't need to be mutable. No mutation occurs because every operation creates a new variable while shadowing the previous one.
 
