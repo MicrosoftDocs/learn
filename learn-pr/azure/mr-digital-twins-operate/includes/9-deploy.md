@@ -4,7 +4,7 @@ Now that you have built the base terrain for your Wind Farm experience, placed y
 
 When adjusting your build settings, be sure to **Add Open Scenes** if your Scene does not appear in the **Scenes in Build**.  Then be sure to select the Scene of interest before adjusting settings.  Select Universal Windows Platform as the target Platform. 
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 Once your app has been deployed, you can put on your HoloLens 2 and begin testing the experience.  The Start menu on HoloLens is where you'll open apps, see important status info, and access tools like the camera.  To open your app from the Start menu, simply select an app tile. You can also say the name of the app to open it.  
 
@@ -19,7 +19,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 
 1.	Summon the Site overview menu.  When running the build on the device, look at either of your hands with a flat palm facing upwards. This will show a floating UI panel with a button to show the Site Overview Panel. Click the button.  The Site overview panel will float and follow you as you walk around the map. 
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 2.	Centre on a turbine.  Use near or far interactions to select a turbine from the list. Click with the pointer or finger to centre the map on the turbine location.
 3.	Zoom in on the map.  Use **near** or **far** interactions to interact with the handle of the slider at the base of the map. Moving the slider to the left or right will change the current zoom level of the map
@@ -30,7 +30,7 @@ Once your app has been deployed, you can put on your HoloLens 2 and begin testin
 2.	Use the hand pointer to aim at a turbine model on the 3D Map. 
 3.	Use a click gesture to select the turbine and display its information panel. The information panel can also be displayed.
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Stop the DeviceSimulator
 

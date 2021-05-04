@@ -19,7 +19,7 @@ i.	Windows Command Prompt can be used, but syntax in this module follows PowerSh
 4.	Login to Azure by typing **az login** in the shell window and pressing **Enter**.  This will spawn a browser window and prompt for authentication. 
 i.	If the CLI fails to spawn the appropriate browser window, use the device code flow in your PowerShell window **az login --use-device-code**.  You will be returned a unique code.  [Open the device login page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal, into the website.
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Set reusable variables in PowerShell
 
@@ -36,7 +36,7 @@ i.	If the CLI fails to spawn the appropriate browser window, use the device code
 > [!TIP]
 > Save the output to a text file in a secure location.  You will need the credentials to configure the telemetry simulator application later.
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Obtain the ObjectID of the App Registration and the UserID
 1.	Create and set a variable for the ObjectID in PowerShell and press Enter.
@@ -48,7 +48,7 @@ i.	If the CLI fails to spawn the appropriate browser window, use the device code
 4.	Validate that the variable contains a GUID by using the echo command and then press Enter.  If not, examine your previous steps
 `echo $userid`
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Create the Azure Resource Group
 

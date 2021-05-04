@@ -24,15 +24,15 @@ A number of Prefabs have been created to accelerate the connectivity of your win
 1.	From the Project Panel, drag the **Assets > UIPrefabs > Prefabs > OperateSceneUI** to the Hierarchy Panel.
 2.	Position the UI elements in the same way you position any other asset,using the **Move Tool, Rotate Tool**, etc.
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 - Add ADT Connection Prefab
 1.	From the Project Panel, drag the **Assets > ADTPrefabs > ADTConnection** to the Hierarchy Panel.  
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
 
 ## Add ADT Turbine Alert Controller Prefab
 
 1.	From the Project Panel, drag the **Assets > ADTPrefabs > ADTTurbineAlertController** to the Hierarchy Panel.
 
-:::image type="content" source="" alt-text="":::
+<!-- :::image type="content" source="" alt-text=""::: -->
