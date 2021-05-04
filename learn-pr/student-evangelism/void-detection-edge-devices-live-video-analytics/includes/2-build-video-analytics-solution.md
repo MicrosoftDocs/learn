@@ -65,4 +65,4 @@ After completing the module, the vision solution will be deployed to your edge d
 
 Watch the following video to see brief introduction and understand Vision on Edge solution.
 
->[!VIDEO https://www.youtube.com/watch?v=17UW6veK7SA&ab_channel=MicrosoftIoTDevelopers]
+>[!VIDEO https://channel9.msdn.com/Shows/Internet-of-Things-Show/Rapidly-move-your-Vision-AI-project-to-production-with-VisionOnEdge/player]
