@@ -64,7 +64,7 @@ Does Azure Data Lake Storage facilitate the extraction of useful business intell
 - To control costs, the stored data is almost always a subset of the total data, so users might miss insights that rely on the unavailable data.
 - Data warehouses are generally configured to make it easier for business professionals to mine the data for insights. However, that ease of use usually means that users who want to dive deeper into the data—such as data scientists—are out of luck because the data they need is unavailable.
 
-Let's see how Azure Data Lake Storage compares to data warehouses. Azure Data Lake Storage:
+Let's review how Azure Data Lake Storage compares to data warehouses. Azure Data Lake Storage:
 
 - Doesn't process data in any way during ingestion, so there are no biases or restrictions introduced into the data.
 - Stores all the available data, whether it's raw, semi-structured, or structured.
