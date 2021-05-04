@@ -1,5 +1,3 @@
-Now that you understand some of the basics, it's your turn to build a quantum random number generator.
-
 Before using quantum computers to solve important problems, your first task is to improve current security protocols by creating random passwords.
 
 You're likely already familiar with the concept of a random number generator (RNG). Classical computers don't produce random numbers, but rather _pseudorandom_ numbers. A pseudorandom number generator generates a deterministic sequence of numbers based on some initial value, called a _seed_. To better approximate random values, this seed is often the current time from the CPU's clock.
