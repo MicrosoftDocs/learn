@@ -15,7 +15,9 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Create multi-service solutions from real-world scenarios
     - Demonstrate modern Azure SQL Database capabilities
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Azure Fundamentals
+  - Ability to navigate the Azure portal
+  - Familiarity with database concepts such as stored procedures and querying
+  - Familiarity with CI/CD concepts
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - intermediate
