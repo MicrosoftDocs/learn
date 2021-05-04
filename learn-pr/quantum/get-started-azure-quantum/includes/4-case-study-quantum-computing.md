@@ -14,7 +14,7 @@ The following sections describe case studies in applications of quantum computin
 
 ## Quantum speedups
 
-One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how large the speedup can be. Two well-known examples are [Grover's algorithm](https://wikipedia.org/wiki/Grover%27s_algorithm?azure-portal=true) and [Shor's algorithm](https://wikipedia.org/wiki/Shor's_algorithm), as mentioned in the module [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing/?azure-portal=true). These quantum algorithms yield a polynomial and exponential speedup, respectively, over their classical counterparts.
+One of the goals of quantum computing research is to study which problems can be solved by a quantum computer faster than a classical computer and how large the speedup can be. Two well-known examples are [Grover's algorithm](https://wikipedia.org/wiki/Grover%27s_algorithm?azure-portal=true) and [Shor's algorithm](https://wikipedia.org/wiki/Shor's_algorithm), as mentioned in the module [Explore the key concepts of quantum computing by using Q#](/learn/modules/qsharp-explore-key-concepts-quantum-computing/?azure-portal=true). These quantum algorithms yield a polynomial and an exponential speedup, respectively, over their classical counterparts.
 
 You might ask why some problems allow exponential speedup, whereas others allow only polynomial speedup. The answer lies in the structure of the input.
 
@@ -28,7 +28,7 @@ A decision tree model consists of a sequence of queries that are done adaptively
 
 The real upper bound of query complexity for unstructured problems has been an open problem for more than 20 years. In a 1998 paper, [Beals et al.](https://doi.org/10.1145/502090.502097?azure-portal=true) showed that for any total Boolean function $f$, the maximum possible quantum speedup for an unstructured problem is power 6. This can be expressed as $D(ƒ) = Ο(Q(ƒ)^6)$, where $D(f)$ and $Q(f)$ are classical and quantum query complexity of a function $f$, respectively.
 
-However, at this time, the largest speedup known was only power 2, exhibited by Grover's algorithm. In a paper published in 2020, Microsoft researcher [Robin Kothari et al.](https://www.microsoft.com/research/publication/quantum-implications-of-huangs-sensitivity-theorem/?azure-portal=true) showed that the deterministic query complexity, D(f), is at most quartic in the quantum query complexity: $Q(f): D(f)=O(Q(f)^4)$.
+However, at this time, the largest speedup known was only power 2, exhibited by Grover's algorithm. In a paper published in 2020, Microsoft researcher [Robin Kothari et al.](https://www.microsoft.com/research/publication/quantum-implications-of-huangs-sensitivity-theorem/?azure-portal=true) showed that the deterministic query complexity, $D(f)$, is at most quartic in the quantum query complexity: $Q(f): D(f)=O(Q(f)^4)$.
 
 The proof technique used in [Robin Kothari et al.](https://www.microsoft.com/research/publication/quantum-implications-of-huangs-sensitivity-theorem/?azure-portal=true)  can be used to resolve an old conjecture about quantum speedups for graph problems. A [graph](https://wikipedia.org/wiki/Graph_theory?azure-portal=true) is a mathematical structure that's used to model pairwise relations between objects. It's defined by a set of vertices and edges, where the edges establish the relations among the vertices.
 
@@ -36,7 +36,7 @@ Graph problems are a common source of algorithmic problems in computer science. 
 
 The query complexity of monotone graph properties remains unsolved to this day. However, their quantum analog has been resolved. If you haven't explored it already, there is a [module on solving graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true).
 
-With an understanding of the status quo of quantum computing and the future that it promises, you'll head back to the spaceship. You'll work with the navigation division to run Grover's algorithm in [another Azure Quantum module](/learn/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true) for routing between space stations.
+With an understanding of the status quo of quantum computing and the future that it promises, you'll head back to the spaceship. You'll work with the communications division to run Grover's algorithm in [another Azure Quantum module](/learn/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true) for assigning bandwidth ranges to space stations.
 
 ## Using quantum computers to address climate change
 
