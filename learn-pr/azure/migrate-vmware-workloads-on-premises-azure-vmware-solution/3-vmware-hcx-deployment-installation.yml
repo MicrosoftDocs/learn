@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which account is used to access the Azure VMware Solution HCX Manager?"
+  - content: "Which account is used to access the HCX Manager on-premises?"
     choices:
     - content: "Global Administrator"
       isCorrect: false
-      explanation: "he global administrator has access to all administrative features in the Azure Resource Manager portal."
+      explanation: "The Global Administrator has access to all administrative features in the Azure Resource Manager portal."
     - content: "admin"
       isCorrect: true
-      explanation: "admin is the account used to access the Azure VMware Solution HCX Manager."
+      explanation: "admin is the account used to access the HCX Manager on-premises."
     - content: "cloudadmin"
       isCorrect: false
-      explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter environment."
+      explanation: "cloudadmin is the account used to access the Azure VMware Solution vCenter and HCX environment in Azure."
   - content: "If you can't activate your HCX Advanced Key, what might be the issue?"
     choices:
     - content: "The AVS environment doesn't have open internet access or a proxy configured."
@@ -33,7 +33,7 @@ quiz:
       explanation: "The AVS environment needs open internet access or a proxy configured to activate the HCX Advanced Key."
     - content: "You didn't deploy the HCX appliance correctly."
       isCorrect: false
-      explanation: "If you got to this point, the HCX appliance installed correctly."
+      explanation: "If you got to this point, the HCX appliance deployed correctly."
     - content: "A NAT rule isn't configured."
       isCorrect: false
       explanation: "A NAT rule isn't configured to activate the HCX Advanced Key."
