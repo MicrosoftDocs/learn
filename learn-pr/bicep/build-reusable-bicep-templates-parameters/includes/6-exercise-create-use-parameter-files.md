@@ -14,11 +14,15 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Remove the default value for the App Service plan SKU
 
+To make your template work across environments, the App Service plan SKU details will be provided in a parameter file rather than by a default value.
+
 1. In the *main.bicep* file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value:
 
    :::code language="plaintext" source="code/6-template.bicep" range="19-20" highlight="2" :::
 
 ## Add new parameters
+
+Now you need to add a SQL server and database. First, you'll add parameters for the administrator login and password, and the database SKU. You'll set those later.
 
 1. In the *main.bicep* file in Visual Studio Code, add the `sqlServerAdministratorLogin`, `sqlServerAdministratorPassword`, and `sqlDatabaseSku` parameters below the current parameter declarations. When you're finished, your parameter declarations should look like this:
 
@@ -32,9 +36,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    :::code language="plaintext" source="code/6-template.bicep" range="36-39" highlight="3-4" :::
 
-### Add SQL server and database
+### Add SQL server and database resources
 
-1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file.
+1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
    :::code language="bicep" source="code/6-template.bicep" range="60-77" :::
 
@@ -42,7 +46,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 ## Create a parameter file
 
-1. Open Visual Studio Code, and open the folder where the _main.bicep_ file is located. In the same folder, create a new file called _parameters.dev.json_.
+1. Open Visual Studio Code, and open the folder where the _main.bicep_ file is located. In the same folder, create a new file called _main.parameters.dev.json_.
 
 1. In the *main.parameters.dev.json* file, add the following code:
 
@@ -79,23 +83,25 @@ New-AzResourceGroupDeployment `
 Notice that you're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` since it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
 
 > [!TIP]
-> When you choose enter the secure parameters, they need to follow some rules:
+> When you enter the secure parameters, the values you choose need to follow some rules:
 > 
-> - `sqlServerAdministratorLogin` must not be a value like `admin` `root`, or another easily guessable name. It can only contain alphanumeric characters, and must start with a letter.
+> - `sqlServerAdministratorLogin` must not be an easily guessable login name like `admin` or `root`. It can only contain alphanumeric characters, and must start with a letter.
 > - `sqlServerAdministratorPassword` must be at least 8 characters long and includes lowercase letters, uppercase letters, numbers, and symbols. See the [SQL Azure password policy](/sql/relational-databases/security/password-policy#password-complexity) for more information on the password complexity.
 > 
 > If the parameter values don't meet the requirements, Azure SQL won't deploy your server.
 > 
-> Also, make sure you keep a note of the login and password that you enter. You'll use them again shortly.
+> Also, **make sure you keep a note of the login and password that you enter**. You'll use them again shortly.
+
+The deployment may take a couple of minutes to finish.
 
 ## Create a key vault and secrets
 
-Your toy company already has a key vault with the secrets they need for their deployments. To simulate this, we'll create a new key vault and some secrets to use.
+Your toy company already has a key vault with the secrets they need for their deployments. To simulate this, you'll create a new key vault and add some secrets to use.
 
 In the terminal, execute the following commands to create the key vault and secrets. Update the variable values before you execute these commands.
 
 > [!CAUTION]
-> Make sure you use the same login and password that you used in the previous step. If you don't, the deployment won't complete successfully.
+> Make sure you use the same login and password that you used in the previous step. If you don't, the next deployment won't complete successfully.
 
 ::: zone pivot="cli"
 
@@ -110,7 +116,9 @@ az keyvault secret set --vault-name $keyVaultName --name "sqlServerAdministrator
 ```
 
 > [!NOTE]
-> Notice that you are setting the `--enabled-for-template-deployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault. Whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
+> Notice that you are setting the `--enabled-for-template-deployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
+>
+> Also, whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
 
 ::: zone-end
 
@@ -130,7 +138,9 @@ Set-AzKeyVaultSecret -VaultName $keyVaultName -Name 'sqlServerAdministratorPassw
 ```
 
 > [!NOTE]
-> Notice that you are setting the `-EnabledForTemplateDeployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault. Whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
+> Notice that you are setting the `-EnabledForTemplateDeployment` setting on the vault. This allows Azure to use the secrets from your vault during deployments. If you don't set this then, by default, your deployments can't access secrets in your vault.
+>
+> Also, whoever executes the deployment must also have permission to access the vault. Since you created the key vault, you're the owner so you won't have to explicitly grant the permission in this exercise. For your own vaults, [you need to grant access to the secrets](/azure/azure-resource-manager/templates/key-vault-parameter#grant-access-to-the-secrets).
 
 ::: zone-end
 
