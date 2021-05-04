@@ -3,7 +3,7 @@
 As part of the HR application migration, you are creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they will always contain the values you expect. During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a Bicep template that includes parameters and variables.
+> * Create a Bicep file that includes parameters and variables.
 > * Add decorators to the parameters.
 > * Test the deployment to ensure that the template is valid.
 
@@ -17,14 +17,14 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
    :::code language="bicep" source="code/3-template.bicep" range="7,12,17,20-23,26-29" :::
 
-   Notice that you're creating a number parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
+   Notice that you're creating several parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
 
    > [!TIP]
-   > The `uniqueString()` function is useful for creating globally unique resource names. When it's used like in this example, it will give you a string that will be the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
+   > The `uniqueString()` function is useful for creating globally unique resource names. It will return a string that will be the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
-   Also note that you're defining variables for the names of the Azure App Service plan and App Service app. The values for these variables include the values of some of the parameters you've specified. Parameter values can be overridden by the user executing the deployment, but variables can't be overridden.
+   Also notice that you're defining variables that construct the names of the Azure App Service plan and App Service app, and their values include some of the parameters you've specified. Parameter values can be overridden by the user executing the deployment, but the values of the variables can't be overridden.
 
-1. In the *main.bicep* file in Visual Studio Code, append the following code to the bottom of the file:
+1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
    :::code language="bicep" source="code/3-template.bicep" range="31-48" :::
 
@@ -48,7 +48,7 @@ Your toy company will deploy the HR application to three environments - dev, tes
 
    :::code language="plaintext" source="code/3-template.bicep" range="1-7" highlight="2-6" :::
 
-   Notice that you're limiting the parameter value for `environmentName` parameter to only `dev`, `test`, and `prod`. If more environments are needed in future, you'll need to update this list.
+   Notice that you're limiting the parameter value for `environmentName` parameter to only `dev`, `test`, and `prod`. If more environments are added in the future, you'll need to update this list.
 
 1. Save the changes to the file.
 
@@ -70,7 +70,7 @@ You need to ensure that the `appServicePlanInstanceCount` parameter only allows 
 
    :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
-   After you've completed all of the above changes, your final Bicep file should look like this:
+   After you've completed all of the above changes, your Bicep file should look like this:
 
    :::code language="bicep" source="code/3-template.bicep" :::
 
