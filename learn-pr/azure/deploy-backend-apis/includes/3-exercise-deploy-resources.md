@@ -1,15 +1,34 @@
 > [!IMPORTANT]
 > The language selected will be the language you need to use for the rest of module, so choose wisely!
 
-Setting up your environment and deploying some resources to start with is an important step in building full stack applications. 
+Setting up your environment and deploying some resources to start with is an important step in building full stack applications.
 
-Recall in the catching the bus sample, you'll use resources including Azure SQL Database, Azure Functions, and Azure Logic Apps. In the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database. Here, you'll redeploy Azure SQL Database with the required configurations.
+Recall in the catching the bus sample, you'll use resources including Azure SQL Database, Azure Functions, and Azure Logic Apps. Here, you'll deploy Azure SQL Database with the required configurations.
+
+> [!NOTE]
+> If you completed the previous module of this learning path, you built the foundation of the architecture with Azure SQL Database, and you're redeploying that here. If you did not complete the previous module, everything you need will be completed during this exercise.
 
 You'll then deploy an empty Azure Function app and configure its yaml file and GitHub secrets for CI/CD. The Azure Function will be completed and monitored in exercises later in this module.
 
 ## Configure your environment
 
-The first required step is to set up your development environment. Refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
+In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
+
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
+1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
+1. In Visual Studio Code, install the following extensions:
+    1. **Azure Account**: This extension allows you to authenticate to Azure.
+    1. **Azure Functions**: This extension allows you to manage Azure Functions.
+    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
+    1. **Azure Resources**: This extension allows you to manage Azure resources.
+    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
+    1. **Live Server**: This extension enables you to run web applications locally with ease.
+1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
+1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
+1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
+1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
+1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
+1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
 ## Deploy and configure Azure SQL Database
 
@@ -114,11 +133,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
 
 > [!TIP]
-> If you've already done this step in the previous module, you can choose to create an empty commit to push and kick off GitHub actions.
+> If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
 
 1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**.
 
-1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data, similar to how you did in the previous module.
+1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data.
 
     ```powershell
     bash
@@ -131,7 +150,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db
     ```
 
-1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, review the previous module.
+1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, you can optionally review the previous module in the associated learning path.
 
     ```sql
     ALTER DATABASE SCOPED CREDENTIAL AzureBlobCredentials
@@ -173,9 +192,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Deploy and configure the Azure Function app
 
-Now that your database and GitHub repository are configured, it's time to deploy an Azure Function app.
+Now that your database and GitHub repository are configured, it's time to deploy an Azure Function app. This Azure Function will be used to retrieve the real-time bus data, call Azure SQL Database, and call Azure Logic Apps.
 
-1. Next, configure your variables.
+1. First, configure your variables.
 
     ```powershell
     $resourceGroupName = "<rgn>[sandbox resource group name]</rgn>"

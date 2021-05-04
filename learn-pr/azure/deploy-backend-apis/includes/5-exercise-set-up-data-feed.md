@@ -1,6 +1,6 @@
 Azure Functions can be used to do things like retrieve the latest data from a feed.
 
-In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active GeoFence(s).
+In the bus-catching scenario, the real-time bus data needs to be processed and stored in Azure SQL Database. After the data is brought in, it needs to be analyzed to identify buses entering or exiting the active geofence(s).
 
 ## Run Azure Functions locally
 
@@ -75,7 +75,7 @@ The first step with any Azure Function project is to get your function running l
     func start
     ```
 
-1. You might notice that if a bus enters or exits a GeoFence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
+1. You might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
 
 1. Run **CTRL** + **C** in the terminal to stop the function.
 
@@ -145,4 +145,4 @@ Now that everything is deployed, it's time to monitor the results in the Azure p
 
 1. Review the results under the **Invocations** and **Logs** tabs. They should be similar to what you saw in the terminal when you ran the function locally.
 
-1. Just like locally, you might notice that if a bus enters or exits a GeoFence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
+1. Just like locally, you might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.

@@ -4,7 +4,9 @@ In order to accomplish this requirement, you must first learn about Azure Functi
 
 ## Serverless APIs
 
-Recall the bus-catching scenario, real-time data containing information about where buses are located is stored in a JSON file. In order to access this information, you could use an API to get the latest data. Once you have the latest data, it needs to be stored somewhere for processing. Processing the data involves checking for buses within the monitored routes and proximity to the monitored geofence(s). In this scenario, the geofence represents the area where you want to be notified that your bus is nearby. As the data is processed, any buses that are entering or exiting the geofence should result in a notification, for example, an email, stating that the specified bus and route is coming soon or has left. Azure Functions contains the capability to complete this task easily and integrate with other services that are required.
+In the bus-catching scenario, real-time data containing information about where buses are located is stored in a JSON document in accordance with the [General Transit Feed Specification (GTFS)](https://gtfs.org/). Many cities provide public transportation data via a real-time feed [GTFS real-time Reference v2 (GTFS-RT)](https://gtfs.org/reference/realtime/v2/).
+
+In order to access this information, you could use an API to get the latest data. Once you have the latest data, it needs to be stored somewhere for processing. Processing the data involves checking for buses within the monitored routes and proximity to the monitored geofence(s). In this scenario, the geofence represents the area where you want to be notified that your bus is nearby. As the data is processed, any buses that are entering or exiting the geofence should result in a notification, for example, an email, stating that the specified bus and route is coming soon or has left. Azure Functions contains the capability to complete this task easily and integrate with other services that are required.
 
 ## Azure Functions
 
@@ -26,3 +28,11 @@ In this scenario, an Azure Function will be used to do the data collection and p
 ### Integrating with Azure SQL Database
 
 Azure Functions supports many languages as mentioned above and so does Azure SQL, which includes Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure VM. Connecting and accessing Azure SQL Database from Azure Functions is as simple as obtaining the correct driver and formatting your connection strings accordingly.
+
+In this scenario, Azure Functions will store the data in Azure SQL Database. Azure Functions will also call Azure SQL Database to return the buses that are entering and exiting the geofence.
+
+## Deploying Azure Functions
+
+Azure Functions provides all the requirements to support the serverless API that's required in the bus-catching scenario. This Azure Function will be used to retrieve the real-time bus data, call Azure SQL Database, and call Azure Logic Apps.
+
+In the following exercise, after setting up some required resources, you'll deploy an Azure Function. You can deploy Azure Functions using the Azure portal, the Cloud Shell, or Visual Studio Code. In the exercise, you'll use the Cloud Shell.

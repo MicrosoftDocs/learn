@@ -10,7 +10,7 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial # do we need ms.topic?
   zone_pivot_groups: dev-lang-csharp-node-python
-durationInMinutes: 15
+durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |

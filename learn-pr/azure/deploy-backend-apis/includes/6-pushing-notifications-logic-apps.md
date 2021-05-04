@@ -1,6 +1,6 @@
-Azure Logic Apps is a low-code/no-code development platform hosted as a serverless cloud service. 
+Azure Logic Apps is a low-code/no-code development platform hosted as a serverless cloud service, which makes orchestrating connections between services and organizations simple.
 
-In the bus-catching scenario, an Azure Function will be used to do the data collection and processing of real-time bus data. Once the Azure Function detects that there is a bug entering or exiting the geofence, the function calls an Azure Logic App to send notifications in the form of an email. Creating this solution is simple with the help of Azure Logic Apps.
+Recall in the bus-catching scenario, once the Azure Function detects that there is a bus entering or exiting the geofence, it would be ideal for the final solution to push a notification to the application user. One option in Azure to accomplish this is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. Before implementing the bus-catching solution, you need to learn about Azure Logic Apps.
 
 ## Azure Logic Apps
 
