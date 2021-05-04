@@ -116,3 +116,5 @@ Congratulations! Now you know how to combine classical logic with Q# to create a
 ## Bonus exercise
 
 Modify the program to also require the generated random number to be greater than some minimum number, `min`, instead of zero.
+
+In the next unit, you will learn more about the structure Q# programs in general and the basic building blocks of quantum computing.
