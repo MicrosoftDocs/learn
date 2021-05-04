@@ -3,6 +3,9 @@ You're ready to connect to Earth's Azure Quantum services and start solving prob
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
+> [!NOTE]
+> The cost of running this module on IonQ in a Pay-As-You-Go subscription is approximately $9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimation and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
+
 ## Install the quantum extension
 
 Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
@@ -12,7 +15,7 @@ Azure Quantum uses the quantum extension for the Azure CLI to enable submitting 
 1. Open a command prompt, and then run the following command:
 
    ```azurecli
-   az extension add --source https://msquantumpublic.blob.core.windows.net/az-quantum-cli/quantum-latest-py3-none-any.whl
+   az extension add -n quantum
    ```
 
 ## Create a workspace
@@ -78,18 +81,34 @@ This program prepares a qubit in an even superposition and then measures it, sim
 
 Next, you prepare your environment to submit the job by using the workspace you created.
 
+1. Log in to Azure by running the following command:
+
+   ```azcli
+   az login
+   ```
+
+   A window in your browser will open for you to introduce your credentials.
+
+1. In case you have more than one subscription, you should choose the active subscription:
+
+   ```azcli
+   az account set --subscription <My Subscription ID>
+   ```
+
 1. Use `az quantum workspace set` to select the workspace you created as the default workspace. You also need to specify the resource group you created it in and the location of the workspace, for example:
 
    ```dotnetcli
    az quantum workspace set -g MyResourceGroup -w MyWorkspace -l MyLocation -o table
    ```
+   > [!NOTE]
+   > If you don't know some of the parameters, you can find them by running the command `az quantum workspace list -o table`.
 
    You should obtain the data of your workspace as output.
 
    ```output
-   Location     Name         ProvisioningState    ResourceGroup    Usable  
-   -----------  -----------  -------------------  ---------------  --------
-   MyLocation   MyWorkspace  Succeeded            MyResourceGroup  Yes  
+    Location    Name         ProvisioningState    ResourceGroup    StorageAccount      Usable
+    ----------  -----------  -------------------  ---------------  ------------------  --------
+    MyLocation  MyWorkspace  Succeeded            MyResourceGroup  /subscriptions/...  Yes
 
    ```
 
@@ -102,10 +121,10 @@ Next, you prepare your environment to submit the job by using the workspace you 
    You should obtain a list like this one:
 
    ```output
-   Provider    Target-id                                       Status     Average Queue Time
-   ----------  ----------------------------------------------  ---------  --------------------
-   ionq        ionq.qpu                                        Available  0
-   ionq        ionq.simulator                                  Available  0
+   Provider    Target-id       Current Availability   Average Queue Time
+   ---------   --------------  --------------------   -------------------
+   ionq        ionq.qpu        Available              0
+   ionq        ionq.simulator  Available              0
    ```
 
     > [!NOTE]
@@ -116,7 +135,6 @@ In this case, we see that IonQ has two different targets, a quantum processing u
 > [!NOTE]
 > Keep in mind that this code will work only on quantum computing targets, defined as the [Quantum Processing Units](https://docs.microsoft.com/azure/quantum/concepts-targets-in-azure-quantum). Optimization solvers won't be able to run this code. Specifically, any target whose identifier ends with `.cpu` or `.fpga` is an optimization target and won't be able to run this code. You can learn how to use optimization targets with our module [Solve optimization problems by using quantum-inspired optimization](https://docs.microsoft.com/learn/modules/solve-quantum-inspired-optimization-problems/).
 
-
 ## Simulate the program
 
 Before you run a program against real hardware, we recommend that you simulate it first, if possible, based on the number of qubits required. A simulation helps to ensure that your algorithm is doing what you want.
@@ -125,8 +143,10 @@ Run your program with `az quantum execute --target-id ionq.simulator -o table`. 
 
    ```azurecli
    az quantum execute --target-id ionq.simulator -o table
+   ```
 
-   ..
+You should obtain the following output:
+   ```output
    Result    Frequency
    --------  -----------  -------------------------
    0         0.50000000   ▐██████████             |
@@ -142,15 +162,15 @@ To run the program on hardware, we'll use the asynchronous job submission comman
 1. Run in the Azure command line:
 
    ```azurecli
-   az quantum job submit --target-id ionq.qpu -o table
+   az quantum job submit --target-id ionq.qpu --job-name MyQuantumRandomBit -o table
    ```
 
    Like the `execute` command, this command will compile and submit your program, but it won't wait until the execution is complete. We recommend this pattern for running against hardware, because you might need to wait a while for your job to finish. To get an idea of how long, you can run `az quantum target list -o table` as described. You should obtain something like this example:
 
    ```output
-   Name        Id                                    Status    Target    Submission time
-   ----------  ------------------------------------  --------  --------  ---------------------------------
-   QuantumRNG  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
+   Name                Id                                    Status    Target    Submission time
+   ------------------  ------------------------------------  --------  --------  ---------------------------------
+   MyQuantumRandomBit  yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy  Waiting   ionq.qpu  2020-10-22T22:41:27.8855301+00:00
    ```
 
 1. Track the status of your job by using the `az quantum job show` command. To check on the status, use the `az quantum job show` command. Make sure to replace the `job-id` parameter with the `Id` output by the previous command:
@@ -191,17 +211,20 @@ To change the number of shots, you need to specify a different value for the arg
 1. Set the number of shots to 1:
 
     ```azurecli
-    az quantum job submit --target-id ionq.qpu --shots 1 -o table
+    az quantum job submit --target-id ionq.qpu --job-name MyQuantumRandomBit2 --shots 1 -o table
     ```
 
 1. After the status of the job changes to `Succeeded`, extract the output of the job:
 
     ```azurecli
     az quantum job output -o table --job-id yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
+    ```
+
+   ```azurecli
     Result    Frequency
     --------  -----------  -------------------------
     1         1.00000000   ▐████████████████████   |
-    ```
+   ```
 
 In this case, we obtained `1` as the result of the bit generated by measuring the superposed qubit in the ion-trapped quantum computer.
 

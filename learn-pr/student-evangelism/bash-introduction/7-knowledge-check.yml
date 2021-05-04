@@ -4,7 +4,7 @@
   metadata:
     title: Knowledge check
     description: Check your knowledge about working with Bash.
-    ms.date: 01/31/2020
+    ms.date: 03/19/2021
     author: shanamatthews
     ms.author: shanama
     ms.topic: interactive-tutorial
@@ -24,11 +24,11 @@
       - content: "`ps -ef | grep scottgu > processes.txt`"
         isCorrect: true
         explanation: "Correct! The `ps -ef` command lists all running processes. The `grep` command searches for patterns in each file."
-    - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
+    - content: "Which of the following commands, called with the `-r` option, would you use to delete a subdirectory that isn't empty?"
       choices:
       - content: "`rm`"
         isCorrect: true
-        explanation: "Correct! Use the `rm` command to delete a subdirectory and everything in it."
+        explanation: "Correct! Use the `rm -r` command to delete a subdirectory and everything in it."
       - content: "`rmdir`"
         isCorrect: false
         explanation: "Incorrect. The `rmdir` command deletes only empty directories."

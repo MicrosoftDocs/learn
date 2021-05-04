@@ -3,7 +3,7 @@ uid: learn.wwl.windows-server-high-availability
 metadata:
   title: Windows Server high availability
   description: Windows Server high availability
-  ms.date: 02/05/2021
+  ms.date: 03/31/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   - Windows Server Hyper-V fundamentals.
 summary: |
   Learn to implement high availability Windows Server virtual machine (VM) workloads with Hyper-V Replica, Windows Server Failover Clustering, and Windows Server File Server high availability.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/windows-server-high-availability.svg
 levels:
 - intermediate
 roles:

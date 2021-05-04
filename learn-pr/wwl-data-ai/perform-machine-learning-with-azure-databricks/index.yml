@@ -5,7 +5,7 @@ metadata:
   description: "Perform machine learning with Azure Databricks"
   ms.date: 06/07/2020
   author: b-dstrod
-  ms.author: b-dstrod
+  ms.author: b-dstrodtman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform machine learning with Azure Databricks

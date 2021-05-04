@@ -61,12 +61,9 @@ from azure.quantum import Workspace
 
 # Copy the following settings for your workspace
 workspace = Workspace(
-    subscription_id=    "", # add your subscription_id
-    resource_group=     "", # add your resource_group
-    name=               "", # add your workspace name
-    location=           ""  # add your workspace location (for example, "westus")
+    resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
+    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
 )
-
 workspace.login()
 ```
 

@@ -19,7 +19,7 @@ func main() {
 When you run the preceding code, you get this output:
 
 ```output
-2020/12/19 13:39:17 Logging in Go!
+2020/12/19 13:39:17 Hey, I'm a log!
 ```
 
 By default, the `log.Print()` function includes the date and time as the log message's prefix. You could get the same behavior by using `fmt.Print()`, but you can do other things with the `log` package, like sending logs to a file. We'll look at more `log` package functionality later.
@@ -105,7 +105,7 @@ exit status 1
 
 You set the prefix once, and your logs will include information like the name of the function from which the log came.
 
-You can explore [other functions on the Go website](https://golang.org/pkg/log/).
+You can explore [other functions on the Go website](https://golang.org/pkg/log/?azure-portal=true).
 
 ## Logging to a file
 
@@ -140,7 +140,7 @@ When you run the preceding code, you don't see anything in the console. In your 
 
 ## Logging frameworks
 
-Finally, there might be times when the `log` package's functions aren't enough. You might find it helpful to use a logging framework instead of writing your own libraries. A few logging frameworks for Go are [Logrus](https://github.com/sirupsen/logrus), [zerolog](https://github.com/rs/zerolog), [zap](https://github.com/uber-go/zap), and [Apex](https://github.com/apex/log).
+Finally, there might be times when the `log` package's functions aren't enough. You might find it helpful to use a logging framework instead of writing your own libraries. A few logging frameworks for Go are [Logrus](https://github.com/sirupsen/logrus?azure-portal=true), [zerolog](https://github.com/rs/zerolog?azure-portal=true), [zap](https://github.com/uber-go/zap?azure-portal=true), and [Apex](https://github.com/apex/log?azure-portal=true).
 
 Let's explore what we can do with zerolog.
 
@@ -206,4 +206,4 @@ When you run the preceding code, you get this output:
 
 Notice how we added as a context the employee ID. It becomes part of the logline as another property. Also, it's important to highlight that the fields you include are strongly typed.
 
-You can implement other features with zerolog, like using leveled logging, using formatted stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog).
+You can implement other features with zerolog, like using leveled logging, using formatted stack traces, and using more than one logger instance to manage different outputs. For more information, see the [GitHub site](https://github.com/rs/zerolog?azure-portal=true).

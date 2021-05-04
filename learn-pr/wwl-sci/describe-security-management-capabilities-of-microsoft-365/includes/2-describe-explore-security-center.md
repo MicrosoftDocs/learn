@@ -1,8 +1,11 @@
-The Microsoft 365 security center is the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center helps security admins and security operations teams manage and protect their organization.
+The Microsoft 365 security center is the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps. Here you can view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center helps security admins and security operations teams manage and protect their organization.
 
 The Microsoft 365 security center home page shows many of the common cards that security teams need. The composition of cards and data depends on the user role. Because the Microsoft 365 security center uses role-based access control, different roles will see cards that are more meaningful to their day-to-day jobs.
 
 The Microsoft 365 security center allows admins to tailor the navigation pane to meet daily operational needs. Admins can customize the navigation pane to show or hide functions and services based on their specific preferences. Customization is specific to the individual admin, so other admins won’t see these changes. The Microsoft 365 security center navigation pane has these options:
+
+> [!NOTE]
+> The list below will continue to evolve with the public preview of the improved Microsoft 365 security center. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center.  [Learn more about what's changed](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide).
 
 - **Home**: Get an at-a-glance view of the overall security health of your organization.
 - **Incidents**: See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who was affected, and where the threat has gone.
@@ -18,4 +21,4 @@ The Microsoft 365 security center allows admins to tailor the navigation pane to
 > [!NOTE]
 > You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
 
-The new Microsoft 365 security center is a specialized workspace designed to meet the needs of security and compliance teams. The Microsoft 365 security center provides actionable insights to help reduce risks and safeguard your digital estate.
+The Microsoft 365 security center is a specialized workspace designed to meet the needs of security and compliance teams. The Microsoft 365 security center provides actionable insights to help reduce risks and safeguard your digital estate.

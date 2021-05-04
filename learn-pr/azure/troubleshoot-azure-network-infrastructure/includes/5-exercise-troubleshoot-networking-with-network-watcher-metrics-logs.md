@@ -6,13 +6,13 @@ In this unit, you'll troubleshoot by using Network Watcher metrics and logs. To 
 
 ## Register the Microsoft.Insights provider
 
-NSG flow logging requires the *Microsoft.Insights* provider. to register for that provider, complete the following steps.
+NSG flow logging requires the *Microsoft.Insights* provider. To register for that provider, complete the following steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
 
 1. In the Azure portal, search for, select **Subscriptions**, and then select your subscription.
 
-1. In the left nav bar, under the **Settings** section, select **Resource providers**.
+1. In the left menu pane, under **Settings**, select **Resource providers**. Your subscription's **Resource providers** pane appears.
 
 1. In the search bar, enter **microsoft.insights**.
 
@@ -24,9 +24,11 @@ NSG flow logging requires the *Microsoft.Insights* provider. to register for tha
 
 Now, create a storage account for the NSG flow logs.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**, and then select **Create**. The **Create storage account** panel appears.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage**, search for and select **Storage account**. The **Storage account** pane appears.
 
-1. On the **Basics** tab, fill in the following values for each setting.
+1. Select **Create**. The **Create storage account** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -40,7 +42,7 @@ Now, create a storage account for the NSG flow logs.
     | Account kind | StorageV2 |
     | Replication | Read-access geo-redundant storage |
 
-1. Go to the **Advanced** tab, and fill in this value.
+1. Go to the **Advanced** tab, and enter the following value for its setting.
 
     | Setting | Value |
     | --- | --- |
@@ -53,11 +55,11 @@ Now, create a storage account for the NSG flow logs.
 
 To view the NSG flow logs, you'll use Log Analytics.
 
-1. On the Azure portal menu or from the **Home** page, search for, and select **Log Analytics workspaces**. The **Log Analytics workspaces** panel appears.
+1. On the Azure portal menu or from the **Home** page, search for and select **Log Analytics Workspace**. The **Log Analytics Workspace** pane appears.
 
-1. On the top menu bar, select **New**. The **Create Log Analytics workspace** panel appears.
+1. Select **Create**. The **Create Log Analytics workspace** pane appears.
 
-1. On the **Basics** tab, fill in these values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
@@ -68,15 +70,15 @@ To view the NSG flow logs, you'll use Log Analytics.
     | Name | testsworkspace |
     | Region | Select the same region as your resource group |
 
-1. Select **Next : Pricing tier**. On the **Pricing tier** tab, fill in the following values for each setting.
+1. Select **Next : Pricing tier**. On the **Pricing tier** tab, enter the following value for the setting.
 
     | Setting | Value |
     | --- | --- |
     | **Pricing tier** |
-    | Pricing tier | Pay-as-you-go (Per GB) |
+    | Pricing tier | Pay-as-you-go (Per GB 2018) |
     | | |
 
-1. Select **Review + Create**, and then select **Create**.
+1. Select **Review + Create**, and after validation passes, select **Create**.
 
 ## Enable flow logs
 
@@ -84,7 +86,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 1. On the Azure portal menu, select **All resources**. Then, select the **MyNSG** network security group.
 
-1. Under **Monitoring**, select **NSG flow logs**.
+1. In the middle menu pane, under **Monitoring**, select **NSG flow logs**. The **MyNsg | NSG flow logs** pane appears.
 
 1. Select **MyNSG**, and then select **On**.
 
@@ -100,13 +102,13 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 Now, you're ready to generate some network traffic between VMs to catch in the flow log.
 
-1. On the Azure portal menu, select **All resources**, select **FrontendVM**, and then select **Connect**.
+1. On the Azure portal menu, select **All resources**, select **FrontendVM**, and from the top menu bar, select **Connect**.
 
-1. Select **Download RDP File**, and then select **OK**. If you see a warning about the publisher of the remote connection, select **Connect**.
+1. From the dropdown list, select **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
 1. Sign in with the username **azureuser** and the password you specified when you created the VM, and then select **Yes**.
 
-1. Open a PowerShell prompt, and then run this command.
+1. Open a PowerShell prompt, and run the following command.
 
     ```PowerShell
     Test-NetConnection 10.10.2.4 -port 80
@@ -118,9 +120,9 @@ The connection test fails after a few seconds.
 
 Now, let's use log analytics to view the NSG flow logs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, select **All services**. Then, select **Networking** > **Network Watcher**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, select **All services**. Then, under **Networking**, select **Network Watcher**.
 
-1. Under **Logs**, select **Traffic Analytics**.
+1. In the left menu pane, under **Logs**, select **Traffic Analytics**. The **Network Watcher | Traffic Analytics** pane appears.
 
 1. In the **Log Analytics workspace** dropdown, select **testworkspace**.
 
@@ -132,9 +134,9 @@ An NSG rule is blocking inbound traffic to the back end subnet from everywhere o
 
 1. On the Azure portal menu, select **All resources**, and then select **MyNsg**.
 
-1. Under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**.
+1. In the middle menu pane, under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**. The **MyNSGRule** pane appears.
 
-1. Change **Source** to be **Service Tag**, and configure **Source service tag** to be **Internet**.
+1. In the **Source** field, select **Service Tag** from the dropdown list, and in the **Source service tag** field, select **Internet** from the dropdown list.
 
 1. Select **Save**.
 
@@ -142,7 +144,7 @@ An NSG rule is blocking inbound traffic to the back end subnet from everywhere o
 
 Connections on port 80 should now work without problems.
 
-1. In the RDP client, connect to **FrontendVM**. At the PowerShell prompt, run this command.
+1. In the RDP client, connect to **FrontendVM**. At the PowerShell prompt, run the following command.
 
     ```PowerShell
     Test-NetConnection 10.10.2.4 -port 80
