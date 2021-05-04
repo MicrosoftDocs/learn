@@ -1,4 +1,4 @@
-_Parameters_ enable you to dynamically provide information to a template during deployment. You can make a Bicep template flexible and reusable by declaring parameters within your template. _Decorators_ provide a way to attach constraints and metadata to a parameter, which helps anyone using your templates to understand what information they need to provide. In this unit, you'll learn about parameter and decorators.
+_Parameters_ enable you to provide information to a Bicep template at deployment time. You can make a Bicep template flexible and reusable by declaring parameters within your template. _Decorators_ provide a way to attach constraints and metadata to a parameter, which helps anyone using your templates to understand what information they need to provide. In this unit, you'll learn about parameter and decorators.
 
 The HR department at your toy company is migrating an on-premises web application to Azure. The application will handle information about all of the employees of the toy company, so security is important. You need to deploy this infrastructure across three different environments, and each environment will have slightly different configuration.
 
@@ -73,7 +73,7 @@ When you refer to the parameter, you can refer just to individual properties by 
 
 :::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
 
-Another example of where you might use an object parameter is for specifying resource tags. Azure allows us to attach custom tag metadata to the resources that we deploy, which we can use for identifying important information about a resource. Tags are useful for tracking information about which team owns a resource, and whether a resource is for a production or non-production environment. Typically we'll want to use different tags for each environment, but we want to reuse the same tag values on all the resources within our template. This means it's a good use for an object parameter, like this:
+Another example of where you might use an object parameter is for specifying resource tags. Azure allows you to attach custom tag metadata to the resources that you deploy, which you can use for identifying important information about a resource. Tags are useful for tracking information about which team owns a resource, and whether a resource is for a production or non-production environment. Typically you'll use different tags for each environment, but you want to reuse the same tag values on all the resources within your template. This means it's a good use for an object parameter, like this:
 
 ```bicep
 param resourceTags object = {
@@ -83,7 +83,7 @@ param resourceTags object = {
 }
 ```
 
-Then, whenever we define a resource in our Bicep file, we can use it wherever we define the `tags` property:
+Then, whenever you define a resource in your Bicep file, you can use it wherever you define the `tags` property:
 
 :::code language="plaintext" source="code/2-create-resources.bicep" highlight="4,13":::
 
@@ -110,11 +110,11 @@ param cosmosDBAccountLocations array = [
 > [!TIP]
 > Notice this is an array of objects, and each object has a `locationName` property. This is what Cosmos DB expects. When you're working with a resource definition in Visual Studio Code, you can start by typing in resource properties so that you get IntelliSense from the Bicep tooling. You can create some example values using this approach, and once you're satisfied with the configuration, then you can move that section of Bicep code to the parameter. This allows you to substitute a hard-coded property for a parameter that can be changed during each deployment, while still ensuring that the resource is configured correctly.
 
-When we declare our Cosmos DB resource, we can now reference the array parameter:
+When you declare your Cosmos DB resource, you can now reference the array parameter:
 
 :::code language="plaintext" source="code/2-create-cosmosdb.bicep" highlight="5":::
 
-It's then easy for us to use a different parameter value for our development environment:
+It's then easy to use a different parameter value for your development environment:
 
 ```bicep
 param cosmosDBAccountLocations array = [

@@ -68,7 +68,7 @@ When you create a new deployment using the `New-AzResourceGroupDeployment` cmdle
 
 ## Override parameter values
 
-You've now learned about three ways to specify parameter values: default values, the command line, and parameter files. It's common to use different approaches to specify different values for the same parameter. You've already seen this when we worked with default values: if you specify a parameter's default value in a Bicep file, but then specify a different value using the command line, the command-line version takes priority. Let's look at how parameter files fit into this:
+You've now learned about three ways to specify parameter values: default values, the command line, and parameter files. It's common to use different approaches to specify different values for the same parameter. You've already seen this when you worked with default values: if you specify a parameter's default value in a Bicep file, but then specify a different value using the command line, the command-line version takes priority. Let's look at how parameter files fit into this:
 
 :::image type="content" source="../media/4-precedence.png" alt-text="Diagram that shows the order of precedence. Default values are overridden by parameter files, which are overridden by command-line parameter values." border="false":::
 
