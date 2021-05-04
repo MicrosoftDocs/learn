@@ -896,11 +896,11 @@ Everything is now in place, the final step is to test if everything is working a
 1. Enter `mslearn` as username and `1234` for the user ID.
 1. Select **Login**.
 
-After the login, you're redirected to the previous page. You can notice this time that the different login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
+After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
 
 Now that you checked that everything works as expected locally, it's time to deploy your changes.
 
-You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
+You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
 
 ## Deploy your changes
 
