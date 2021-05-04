@@ -4,7 +4,23 @@ Recall in the catching the bus sample, you'll us resources including Azure SQL D
 
 ## Configure your environment
 
-The first required step is to set up your development environment. Refer to the brief instructions [here](https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/3-exercise-configure-environment) to set up Visual Studio Code and Azure Data Studio. You'll also fork and clone the repository (if you haven't already).
+In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
+
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/Download).
+1. Download and install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools).
+1. In Visual Studio Code, install the following extensions:
+    1. **Azure Account**: This extension allows you to authenticate to Azure.
+    1. **Azure Functions**: This extension allows you to manage Azure Functions.
+    1. **GitHub**: This extension allows you to authenticate to GitHub and manage repositories.
+    1. **Azure Resources**: This extension allows you to manage Azure resources.
+    1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
+    1. **Live Server**: This extension enables you to run web applications locally with ease.
+1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
+1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
+1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
+1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
+1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
+1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
 ## Deploy Azure SQL Database
 

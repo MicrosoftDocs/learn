@@ -38,7 +38,7 @@ Next, you need to import the bus route information data into Azure SQL Database 
     sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db
     ```
 
-1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, review the previous module.
+1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data.
 
     ```sql
     ALTER DATABASE SCOPED CREDENTIAL AzureBlobCredentials
