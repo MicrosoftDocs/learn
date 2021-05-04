@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.object-detection-lva-edge-device.exercise-build-container-image
+title: Exercise - Build a container image with YOLO model and deploy it to IoT Edge
+metadata:
+  title: Exercise - Build a container image with YOLO model and deploy it to IoT Edge
+  description: In this section, we help learner build a container image and push it to edge device.
+  ms.date: 05/04/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 1 # dummy number at present
+content: |
+  [!include[](includes/10-exercise-build-container-image.md)]
