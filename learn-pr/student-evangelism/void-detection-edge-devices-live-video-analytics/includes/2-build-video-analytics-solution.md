@@ -62,3 +62,7 @@ The overall module steps are for this solution:
 ## Conclusion
 
 After completing the module, the vision solution will be deployed to your edge device to detect voids on a shelf using Custom Vision service and Live Video Analytics.
+
+Watch the following video to see brief introduction and understand Vision on Edge solution.
+
+>[!VIDEO https://www.youtube.com/watch?v=17UW6veK7SA&ab_channel=MicrosoftIoTDevelopers]
